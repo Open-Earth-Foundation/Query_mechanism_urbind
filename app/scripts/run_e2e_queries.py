@@ -1,0 +1,110 @@
+"""
+Brief: Run a batch of end-to-end questions through the pipeline.
+
+Inputs:
+- --questions-file: path to a newline-delimited questions file
+- --question: optional single question (can be passed multiple times)
+- --config: path to llm_config.yaml
+- --db-path: override source DB path
+- --db-url: override source DB URL
+- --markdown-path: override documents folder
+- OPENROUTER_API_KEY (env var)
+
+Outputs:
+- output/<run_id>/... artifacts for each question
+
+Usage (from project root):
+- python -m app.scripts.run_e2e_queries
+- python -m app.scripts.run_e2e_queries --questions-file assets/e2e_questions.txt
+- python -m app.scripts.run_e2e_queries --question "What initiatives exist for Munich?"
+"""
+
+from __future__ import annotations
+
+import argparse
+import logging
+import os
+import time
+from pathlib import Path
+
+# Disable OpenAI Agents tracing before importing to prevent 401 errors with OpenRouter
+# (OpenRouter keys are not recognized by OpenAI's tracing endpoint)
+os.environ.setdefault("OPENAI_AGENTS_DISABLE_TRACING", "1")
+
+from app.modules.orchestrator.module import run_pipeline
+from app.utils.config import load_config
+from app.utils.logging_config import setup_logger
+
+logger = logging.getLogger(__name__)
+
+
+def parse_args() -> argparse.Namespace:
+    """Parse CLI args."""
+    parser = argparse.ArgumentParser(description="Run end-to-end query batch.")
+    parser.add_argument(
+        "--questions-file",
+        default="assets/e2e_questions.txt",
+        help="Path to newline-delimited questions file.",
+    )
+    parser.add_argument(
+        "--question",
+        action="append",
+        help="Single question to run (can be repeated).",
+    )
+    parser.add_argument(
+        "--config", default="llm_config.yaml", help="Path to llm_config.yaml"
+    )
+    parser.add_argument("--db-path", help="Override source DB path.")
+    parser.add_argument("--db-url", help="Override source DB URL.")
+    parser.add_argument("--markdown-path", help="Override markdown documents path.")
+    return parser.parse_args()
+
+
+def load_questions(path: Path, overrides: list[str] | None) -> list[str]:
+    """Load questions from file and CLI overrides."""
+    questions: list[str] = []
+    if overrides:
+        questions.extend([q.strip() for q in overrides if q.strip()])
+
+    if path.exists():
+        for line in path.read_text(encoding="utf-8").splitlines():
+            cleaned = line.strip()
+            if not cleaned or cleaned.startswith("#"):
+                continue
+            questions.append(cleaned)
+
+    return questions
+
+
+def main() -> None:
+    """Script entry point."""
+    args = parse_args()
+    setup_logger()
+
+    config = load_config(Path(args.config))
+    if args.db_path:
+        config.source_db_path = Path(args.db_path)
+    if args.db_url:
+        config.source_db_url = args.db_url
+    if args.markdown_path:
+        config.markdown_dir = Path(args.markdown_path)
+
+    questions = load_questions(Path(args.questions_file), args.question)
+    if not questions:
+        logger.warning("No questions provided. Provide --question or a questions file.")
+        return
+
+    total_start = time.perf_counter()
+    logger.info("Starting batch of %d questions", len(questions))
+    for question in questions:
+        logger.info("Running question: %s", question)
+        start = time.perf_counter()
+        run_pipeline(question=question, config=config)
+        elapsed = time.perf_counter() - start
+        logger.info("Completed question in %.2f seconds", elapsed)
+    total_elapsed = time.perf_counter() - total_start
+    logger.info("Completed %d questions in %.2f seconds", len(questions), total_elapsed)
+
+
+if __name__ == "__main__":
+    main()

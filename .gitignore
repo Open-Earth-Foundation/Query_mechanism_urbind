@@ -144,6 +144,9 @@ ENV/
 env.bak/
 venv.bak/
 
+# Run artifacts
+output/
+
 # Spyder project settings
 .spyderproject
 .spyproject
