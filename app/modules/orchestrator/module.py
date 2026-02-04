@@ -1005,7 +1005,7 @@ def run_pipeline(
                 else:
                     markdown_payload = payload
             except (ValueError, RuntimeError, OSError, KeyError) as exc:
-                # These are expected exceptions from agent execution and file operations
+                # These are known, handled exceptions from agent execution and file operations that cause the run to fail
                 if task_name == "sql":
                     logger.exception("SQL execution failed")
                     run_logger.record_decision(
