@@ -101,7 +101,7 @@ Heidelberg
 
 Climate Neutrality Action Plan
 
-O
+6
 
 # 1 Introduction
 
@@ -179,7 +179,9 @@ Heidelberg city boundaries including land use
 
 Heidelberg
 
-Climate Neutrality Action Plan
+Climate Neutrality Action
+
+Plan
 
 #
 
@@ -365,8 +367,8 @@ Heidelberg
 Climate Neutrality Action Plan
 7
 
-|   |  |  | emphasised the necessity and urgency of committed and concrete action to limit the climate crisis. action to limit the climate crisis. As a result, discussions were held within the administration and with with key social and economic actors in a climate action and economic key players in a climate action group, how climate protection in Heidelberg can be advanced more quickly and ambitiously. At the same time, the municipal council adopted a The 30-point plan, the Climate Action Plan, contains the targets, priorities for action and concrete measures that have been collected since the declaration of the climate emergency. | neutrality goals more quickly.  |
-| --- | --- | --- | --- | --- |
+|   |  |  | emphasised the necessity and urgency of committed and concrete action to limit the climate crisis. action to limit the climate crisis. As a result, discussions were held within the administration and with with key social and economic actors in a climate action and economic key players in a climate action group, how climate protection in Heidelberg can be advanced more quickly and ambitiously. At the same time, the municipal council adopted a The 30-point plan, the Climate Action Plan, contains the targets, priorities for action and concrete measures that have been collected since the declaration of the climate emergency. | neutrality goals more quickly. |   |
+| --- | --- | --- | --- | --- | --- |
 8
 
 Heidelberg
@@ -900,7 +902,7 @@ Improvement of the quality of stay in summer  |
 |   | Tenant energy consulting | Consulting, contribution to climate justice  |
 |   | Rational use of energy" support program | Incentive for energy refurbishment with high ENergy standards  |
 |   | New construction quarters become plus-energy quarters | Energy concepts with high energy standards  |
-5
+3
 
 Heidelberg
 
@@ -2316,9 +2318,11 @@ C-3.1: Summary of interventions with cost implication (to be unpacked in Investm
 
 Heidelberg
 
-Climate Neutrality Action Plan
+Climate Neutrality Action
 
-C
+Plan
+
+#
 
 |  B-3-2: Financial indicators by sector  |   |   |   |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -2589,7 +2593,7 @@ Heidelberg
 
 Climate-Neutrality Commitments
 
-1
+O
 
 public transport in the region, incentives to switch to zero-emission drives and bicycles, but also city tolls or vehicle/parking space levies must be investigated.
 
@@ -2671,7 +2675,7 @@ Heidelberg
 
 Climate-Neutrality Commitments
 
-O
+4
 
 ![img-17.jpeg](img-17.jpeg)
 
@@ -2875,8 +2879,6 @@ Als Best-practise-Stadt Unterstützung des Landes einwerben
 Klimaschutzbildung an Universität und PH stärken
 Außerschulische und Erwachsenenbildung in Kooperation mit freien Trägern stärken
 
-![img-18.jpeg](img-18.jpeg)
-
 ### Energieeffizienz bei Produkten und Dienstleistungen
 Informationsangebote und Bewusstseinsbildung für energieeffiziente Produkte fördern
 Den Kauf energieeffizienter Produkte fördern
@@ -2903,7 +2905,7 @@ Wirtschaftliche Effizienzpotenziale umsetzen
 Bestandsgebäude energetisch sanieren
 Neubauplanungen energetisch optimieren
 
-## Mobility
+### Mobility
 Further optimize investment and planning practices
 Promote walking and cycling
 Secure and expand quality in public transport
@@ -2912,19 +2914,19 @@ Reduce car traffic in the long term
 Become politically active
 Develop soft tourism
 
-Energy supply, energy infrastructure and renewable energies
+### Energy supply, energy infrastructure and renewable energies
 Expand power generation from renewable energies
 Develop and promote combined heat and power generation and lower CO₂ emissions in district heating provision
 Expand heat supply from renewable energies
 Establish energy storage facilities to increase the use of renewable energies
 
-## Education
+### Education
 Maintain and further strengthen municipal programmes in the medium term
 Acquire financial support from the State as a best practice city
 Strengthen climate protection education at university and PH
 Strengthen extracurricular and adult education in cooperation with independent providers
 
-Energy-efficient construction and retrofits
+### Energy-efficient construction and retrofits
 Increase renovation rate
 Lower insulation restrictions
 Encourage deep retrofits

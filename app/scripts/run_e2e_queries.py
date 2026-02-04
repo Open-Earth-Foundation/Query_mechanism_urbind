@@ -5,6 +5,7 @@ Inputs:
 - --questions-file: path to a newline-delimited questions file
 - --question: optional single question (can be passed multiple times)
 - --config: path to llm_config.yaml
+- --enable-sql: enable SQL lookups (disabled by default)
 - --db-path: override source DB path
 - --db-url: override source DB URL
 - --markdown-path: override documents folder
@@ -17,6 +18,7 @@ Usage (from project root):
 - python -m app.scripts.run_e2e_queries
 - python -m app.scripts.run_e2e_queries --questions-file assets/e2e_questions.txt
 - python -m app.scripts.run_e2e_queries --question "What initiatives exist for Munich?"
+- python -m app.scripts.run_e2e_queries --enable-sql --db-path path/to/source.db
 """
 
 from __future__ import annotations
@@ -54,6 +56,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--config", default="llm_config.yaml", help="Path to llm_config.yaml"
     )
+    parser.add_argument(
+        "--enable-sql",
+        action="store_true",
+        help="Enable SQL lookups (disabled by default).",
+    )
     parser.add_argument("--db-path", help="Override source DB path.")
     parser.add_argument("--db-url", help="Override source DB URL.")
     parser.add_argument("--markdown-path", help="Override markdown documents path.")
@@ -88,6 +95,8 @@ def main() -> None:
         config.source_db_url = args.db_url
     if args.markdown_path:
         config.markdown_dir = Path(args.markdown_path)
+    if args.enable_sql:
+        config.enable_sql = True
 
     questions = load_questions(Path(args.questions_file), args.question)
     if not questions:

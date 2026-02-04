@@ -24,3 +24,4 @@ writer:
   context_window_tokens: 400000
   input_token_reserve: 20000
 openrouter_base_url: "https://openrouter.ai/api/v1"
+enable_sql: false

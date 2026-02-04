@@ -5,6 +5,7 @@ Inputs:
 - --question: user question to answer
 - --run-id: optional run identifier
 - --config: path to llm_config.yaml
+- --enable-sql: enable SQL lookups (disabled by default)
 - --db-path: override source DB path
 - --db-url: override source DB URL
 - --markdown-path: override documents folder
@@ -16,6 +17,7 @@ Outputs:
 
 Usage (from project root):
 - python -m app.scripts.run_pipeline --question "..."
+- python -m app.scripts.run_pipeline --enable-sql --question "..." --db-path path/to/source.db
 """
 
 from __future__ import annotations
@@ -44,6 +46,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--config", default="llm_config.yaml", help="Path to llm_config.yaml"
     )
+    parser.add_argument(
+        "--enable-sql",
+        action="store_true",
+        help="Enable SQL lookups (disabled by default).",
+    )
     parser.add_argument("--db-path", help="Override source DB path.")
     parser.add_argument("--db-url", help="Override source DB URL.")
     parser.add_argument("--markdown-path", help="Override markdown documents path.")
@@ -62,6 +69,8 @@ def main() -> None:
         config.source_db_url = args.db_url
     if args.markdown_path:
         config.markdown_dir = Path(args.markdown_path)
+    if args.enable_sql:
+        config.enable_sql = True
 
     logger.info("Starting pipeline")
     run_pipeline(question=args.question, config=config, run_id=args.run_id)

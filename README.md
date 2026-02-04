@@ -1,10 +1,10 @@
 # Query Mechanism Urbind
 
-Multi-agent document builder that answers user questions by combining SQL data and Markdown sources. It orchestrates a SQL Researcher, Markdown Researcher, and Writer with OpenAI Agents, and logs every run artifact for inspection.
+Multi-agent document builder that answers user questions by combining SQL data (optional; disabled by default) and Markdown sources. It orchestrates a SQL Researcher, Markdown Researcher, and Writer with OpenAI Agents, and logs every run artifact for inspection.
 
 ## Requirements
 - Python 3.10+
-- Local SQLite source DB derived from `app/db_models/`
+- Local SQLite source DB derived from `app/db_models/` (required only when SQL is enabled)
 - `OPENROUTER_API_KEY` in environment
 
 ## Install
@@ -30,10 +30,11 @@ uv pip install -e .
 - `.env` should define `OPENROUTER_API_KEY` (do not commit it).
 - Optional environment overrides:
 - `RUNS_DIR`
-- `DATABASE_URL` (used as source DB)
+- `ENABLE_SQL` (set to true to enable SQL by default)
+- `SOURCE_DB_PATH`
+- `DATABASE_URL` (used as source DB and by `test_db_connection`)
 - `MARKDOWN_DIR`
 - `LOG_LEVEL`
-- `DATABASE_URL` (for `test_db_connection` script)
 - `OPENROUTER_BASE_URL` (optional override)
 
 Example `.env.example` is provided.
@@ -70,19 +71,26 @@ writer:
   context_window_tokens: 256000
   input_token_reserve: 2000
 openrouter_base_url: "https://openrouter.ai/api/v1"
+enable_sql: false
 ```
 
 ## Run (local)
 
 ```
 python -m app.scripts.run_pipeline --question "What initiatives exist for Munich?" \
+  --markdown-path documents
+```
+
+Enable SQL (SQLite):
+```
+python -m app.scripts.run_pipeline --enable-sql --question "What initiatives exist for Munich?" \
   --db-path path/to/source.db \
   --markdown-path documents
 ```
 
 Using Postgres (via DATABASE_URL):
 ```
-python -m app.scripts.run_pipeline --question "..." \
+python -m app.scripts.run_pipeline --enable-sql --question "..." \
   --db-url "postgresql+psycopg://user:pass@localhost:5432/dbname" \
   --markdown-path documents
 ```
@@ -92,7 +100,7 @@ python -m app.scripts.run_pipeline --question "..." \
 ```
 python -m app.scripts.run_e2e_queries
 python -m app.scripts.run_e2e_queries --questions-file assets/e2e_questions.txt
-python -m app.scripts.run_e2e_queries --db-url "postgresql+psycopg://user:pass@localhost:5432/dbname"
+python -m app.scripts.run_e2e_queries --enable-sql --db-url "postgresql+psycopg://user:pass@localhost:5432/dbname"
 ```
 
 ## Test DB connection
@@ -105,9 +113,9 @@ Artifacts are written under `output/<run_id>/`:
 - `run.json`
 - `run.log`
 - `context_bundle.json`
-- `schema_summary.json`
-- `city_list.json`
-- `sql/queries.json`, `sql/results.json`, `sql/results_full.json`
+- `schema_summary.json` (when SQL is enabled)
+- `city_list.json` (when SQL is enabled)
+- `sql/queries.json`, `sql/results.json`, `sql/results_full.json` (when SQL is enabled)
 - `markdown/excerpts.json`
 - `drafts/draft_01.md`
 - `final.md`
@@ -125,6 +133,7 @@ docker run -it --rm \
   -v ${PWD}:/app \
   --env-file .env \
   query-mechanism-urbind \
+  --enable-sql \
   --question "What initiatives exist for Munich?" \
   --db-path /app/path/to/source.db \
   --markdown-path /app/documents

@@ -141,7 +141,6 @@ Climate Neutrality Action Plan
 C
 
 ![img-0.jpeg](img-0.jpeg)
-
 New governance structure transition team and the work with the ecosystem via the Local Green Deal Platform (House of Change – activity in the Pilot Cities CoLAB – Committed to Local Climate Action Building)
 
 # UNDERSTANDING THE SYSTEM
@@ -462,14 +461,12 @@ With a variety of measures, the sewage treatment plant EBS is gradually implemen
 
 Green district heating: up to  $30\%$  of the annual heating requirements in Mannheim and the region already come from climate-friendly energies over the district heating grid of  $592~\mathrm{km}$ : In Mannheim alone, more than 60 percent of households, or 120,000 households, use the environmentally friendly district heating. The thermal waste incineration plant is operated using highly efficient cogeneration.
 STADT MANNHEIM
-
 Climate Neutrality Action Plan
-
 C
 
 We use the resultant heat to supply steam to neighboring industries and feed it into the district heating grid in Mannheim and the surrounding region.
 
-# Measure 5: Buildings
+## Measure 5: Buildings
 
 Energy efficient Refurbishment of the Housing Stock: The GBG housing company consistently pursues the goal of sustainably improving the energy efficiency and CO2 emissions of its building stock: Within the framework of modernisation measures, the existing buildings concerned are comprehensively upgraded in terms of energy efficiency, the heating systems are renewed/optimised. In the period 2010- 2019, GBG modernized the energy systems of around 4,250 apartments and equipped them with a modern heating system. For these apartments, GBG was able to reduce the demand for heating by 43% and CO2 emissions by 69%. The wave of redevelopment continues in the neighbourhoods.
 
@@ -493,6 +490,8 @@ NOTE: Table A-1.3. It is not clear what additional information is required in ta
 For 84% of total GHG emissions in Germany currently result from energy consumption. Industrial processes, agriculture and waste (and wastewater) are the main contributors to the remaining 16% of GHG emissions.
 
 In municipal GHG accounting, the focus is currently on accounting for energy-related GHG emissions. This is partly due to the low availability of data at the municipal level. Data relevant for balancing (animal numbers, industrial process data) are not available on an annual or municipality-specific basis. Also, not all methodological questions have been conclusively clarified (e.g. allocation of GHG emissions from waste water). Initial proposals for a simplified presentation were presented in the Practical Guide to Communal Climate Protection in order to show the relationship between energetic and non-energetic emissions in a descriptive balance sheet information: Non-energy GHG emissions in the Mannheim urban area.
+
+8
 STADT MANNHEIM
 Climate Neutrality Action Plan
 9
@@ -691,7 +690,7 @@ Climate Neutrality Action Plan
 |  Policy | EU | EU-Klimaschutzpaket: Fit For 55 | https://www.consiliu m.europa.eu/de/poli cies/green-deal/fit- for-55-the-eu-plan- for-a-green- transition/ | "Fit for 55" refers to the EU's target to reduce net greenhouse gas emissions by at least 55% by 2030.
 
 The EU's energy ministers, parliament and commission have taken important decisions for climate protection: Around three quarters of all European CO2 emissions will in future be included in emissions trading - from 2027 also those from heat and transport. The expansion of solar and wind energy is to be massively accelerated throughout the EU. |   |
-|  Strategy | EU | EU Green Deal |  | https://ec.europa.eu/commission/pre sscorer/detail/de/ip_21_3541 |   |
+|  Strategy | EU | EU Green Deal |  | https://ec.europa.eu/commission/pre sscorner/detail/de/ip_21_3541 |   |
 |  Policy | EU | REPowerEU |  | Adaptation to climate change in Mannheim" concept In addition to climate protection goals, the City of Mannheim also pursues adaptation to the unavoidable consequences of climate change. The Climate Protection Department has set out on the path to becoming a resilient city through the concept "Adapting to Climate Change in Mannheim" (V117/2019), the mission statement "Mannheim 2030" and the emergency plan. The concept "Adaptation to Climate Change in Mannheim", which was adopted by the city council in April 2019, was developed in a broad-based participation process with | European government s must implement the measures proposed by the Commission in the REPowerE U plan. Following the Extraordinary European Council of 30 and 31 May 2022,  |
 STADT MANNHEIM
 Climate Neutrality Action Plan
@@ -1112,7 +1111,6 @@ Climate Neutrality Action Plan
 # "PROJECT: ENERGY-EFFICIENT NEIGHBOURHOOD REFURBISHMENT SWOT ANALYSIS"
 
 ## Strengths
-
 Close dovetailing with climate protection at the city (strategy, finance, personnel, expertise)
 10 years of experience, expertise in the team, various disciplines, integrated thematic approach
 Linking advice and funding provision "from a single source
@@ -1123,7 +1121,6 @@ On-site presence and advice
 Joint Redevelopment Team /City/Agency/MVV Regioplan
 
 ## Weaknesses
-
 Making better use of the link to urban regeneration issues
 Personnel capacities limited
 Contribution to the energy transition/heat transition sufficient?
@@ -1133,7 +1130,6 @@ Local funding programme "sold out" before the end of the year
 Too little budget to promote multi-family housing
 
 ## Opportunities
-
 Policy support through district orientation (district advisory council BBR, neighbourhood management of the city)
 Shareholders City/MVV/GBG can support
 Use networking of actors, multipliers in the district
@@ -1144,7 +1140,6 @@ Decarbonisation of district heating
 Consumption-dependent tariffs, CO2 budget as control
 
 ## Risks
-
 KFW programme material funds too low, no investments possible
 Funding not certain, changes all the time
 Legal framework conditions can change, EEG, GEG
@@ -1163,9 +1158,12 @@ Climate Neutrality Action Plan
 
 0
 
-# "PROJECT: MANNHEIM MAKES ROOM FOR GREEN!" SWOT ANALYSIS
+# "PROJECT: MANNHEIM MAKES ROOM FOR GREEN!"
+
+# SWOT ANALYSIS
 
 ## Strengths
+
 Anchoring in the concept: "Adaptation to Climate Change in Mannheim" and in the "Mannheim 2030" mission statement
 Implementation of the Urgent Action Plan - Urban Green CO2 Line
 Expanded communication strategy to raise awareness
@@ -1173,6 +1171,7 @@ Competent, free advice from the climate protection agency team
 Joint thematic treatment in the neighbourhoods, redevelopment and greening in combination
 
 ## Weaknesses
+
 Gravel gardens Problem: Nature conservation/building law unresolved
 Difficulty of implementation to check the ban on gravel gardens (lack of staff)
 Specification of greening in development plans (construction height for roof greening; façade greening)
@@ -1181,6 +1180,7 @@ Funding pots often exhausted quickly due to high demand
 Fixing green roofs and solar installations problematic
 
 ## Opportunities
+
 Potential analysis shows further areas for green roofs
 Increase of the budget by the city
 Great demand for the funding programme, trend topic
@@ -1194,6 +1194,7 @@ Environmental education and raising awareness among the population
 Involvement of local initiatives
 
 ## Risks
+
 Reservations among the population, e.g. damage to buildings, vermin, maintenance effort
 Horticulturists, planners and architects do not follow suit
 Competing requirements for buildings and areas
@@ -1204,7 +1205,9 @@ Tenants usually have no influence on greening
 Professional planning required
 Safety aspects, e.g. escape routes
 
-# "PROJECT: MANNHEIM MAKES ROOM FOR GREEN!" ACTOR ANALYSIS
+# "PROJECT: MANNHEIM MAKES ROOM FOR GREEN!"
+
+# ACTOR ANALYSIS
 
 ![img-0.jpeg](img-0.jpeg)
 STADT MANNHEIM
@@ -1328,7 +1331,6 @@ Prohibitive investment costs
 Climatic limitations/challenges: extreme heat and heavy rain falls, drought
 
 Sector specific:
-
 Energy: High initial capital costs, Unfavourable power pricing rules, Lack of enabling energy policy at Member State level, Restrictions on siting and construction,
 
 Transport: High initial capital costs, People's time and economic constraints in the use of public transport, Infrastructural and planning barriers to active travel (lack of side walks, cycling lanes, etc.); Psychosocial barriers to public transport use (risk of transmission of infections, exposure to crime and verbal offense)
@@ -1661,10 +1663,14 @@ We have filled Table B-1.1. in CoLAB: → attached as Excel sheet
 
 Here as an overview as pdf of the Excel sheet from CoLAB – it is exactly the same table as B-1.1. (It is only to show that it does exist – not readable here, but in the attachment)
 
-|  Probability (B-1.1) (In the attachment)  |   |   |   |   |   |   |   |   |
+|  Probability (B-1.1) with 20000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000  |   |   |   |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Description | Description | Description | Description | Description | Description | Description | Description | Description  |
-|  1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.2 | 1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.2 | 1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.2 | 1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.2 | 1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.2 | 1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.2 | 1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.2 | 1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.2  |   |
+|  Name of geocopy | E-mail address | Date of geocopy (date of date) | Number of records (number of files) | Number of records (number of files) | Description of records (number of files) | Description of records (number of files) | Description of records (number of files) | Description of records (number of files)  |
+|  Open Egglands | E-mail address | Date of open eaglands (date of date) | Number of records (number of files) | Number of records (number of files) | Description of records (number of files) | Description of records (number of files) | Description of records (number of files) | Description of records (number of files)  |
+|  Open Egglands | E-mail address | Date of open eaglands (date of date) | Number of records (number of files) | Number of records (number of files) | Description of records (number of files) | Description of records (number of files) | Description of records (number of files) | Description of records (number of files)  |
+|  Open Egglands | E-mail address | Date of open eaglands (date of date) | Number of records (number of files) | Number of records (number of files) | Description of records (number of files) | Description of records (number of files) | Description of records (number of files) | Description of records (number of files)  |
+|  Open Egglands | E-mail address | Date of open eaglands (date of date) | Number of records (number of files) | Number of records (number of files) | Description of records (number of files) | Description of records (number of files) | Description of records (number of files) | Description of records (number of files)  |
+|  Open Egglands | E-mail address | Date of open eaglands (date of date) | Number of records (number of files) | Number of records (number of files) | Description of records (number of files) | Description of records (number of files) | Description of records (number of files) | Description of records (number of files)  |
 STADT MANNHEIM
 
 Climate Neutrality Action Plan
@@ -1909,7 +1915,7 @@ STADT MANNHEIM
 
 Climate Neutrality Action Plan
 
-C
+#
 
 ![img-0.jpeg](img-0.jpeg)
 
@@ -1924,7 +1930,7 @@ At least one measure per field of action
 Measures for all groups of actors in urban society (municipal administration, citizens, companies)
 Assessment of the services for relevance, chances of implementation and speed
 
-# ACTION FIELDS SECAP 2030 – TOP MEASURES (INTERVENTIONS 100CNC) - IMPACT CASCADE CO2 REDUCTION
+# ACTION FIELDS SECAP 2030 - TOP MEASURES (INTERVENTIONS 100CNC) - IMPACT CASCADE CO2 REDUCTION
 
 Municipal administration
 Private households
@@ -2052,7 +2058,7 @@ Biowaste becomes energy: production of climate neutral methane for heat generati
 
 # 100CNC Interventions Other Areas
 
-Sustainable lifestyle: Reusable's campaign: climate-friendly food
+Sustainable lifestyle: Reusable's campaign climate-friendly food
 
 ![img-2.jpeg](img-2.jpeg)
 
@@ -2092,7 +2098,7 @@ Climate Neutrality Action Plan
 
 O
 
-provided extensive Mannheim-specific mobility indicators. In addition, the Wuppertal Institute had already developed a methodology and a tool for the ERS to estimate the mitigation effect of transportrelated climate protection measures.
+provided extensive Mannheim-specific mobility indicators. In addition, the Wuppertal Institute had already developed a methodology and a tool for the ERS to estimate the mitigation effect of transport-related climate protection measures.
 
 The field of action "energy production" is not considered separately according to the present municipal accounting methodology. Likewise, neither emissions from land use change nor natural emission sinks, such as afforestation, are accounted for, which would affect the fields of action "land use" and "green-blue infrastructure". The contributions to climate neutrality, which are nevertheless relevant but not always quantifiable, are therefore presented separately in the descriptions of the fields of action.
 
@@ -2107,7 +2113,7 @@ Energy savings can be achieved through different measures and by different actor
 In the field of action industry: Measure 1: Exploit energy efficiency potentials
 In the field of action trade, commerce, services: Module 1: Energy and resource efficiency in companies
 In the field of action Private Households: Measure 2: Renovation offensive
-In the field of action of local administrationModule 1: Climate-neutral properties and Module 3: Climate protection in public spaces
+In the field of action of local administration/Module 1: Climate-neutral properties and Module 3: Climate protection in public spaces
 
 In addition, a broad-based energy-saving campaign is to be launched, which will highlight behaviour-related ways of saving energy through proper heating and ventilation, electricity-saving measures and energy-saving mobility.
 
@@ -2153,8 +2159,8 @@ The measure has a direct link to social aspects in that it can help particularly
 
 Good practice examples
 
-Municipal savings measures in response to the declaration of the "gas" emergency plan (part level: https://www.mannheim.de/be/press/dealt-mannheim-ranfrigt-utreal-um-verdiene-emagingsemessnahmen)
-City of Mannheim: Establishment of various information services on the energy crisis (https://www.mannheim.de/BRE/9980/gas-cabins/Evangelising)
+Municipal savings measures in response to the declaration of the "gas" emergency plan (part level: https://www.mannheim.de/be/press/death-mannheim-ranfrigt-utreal-um-verdiene-energiegareneonahme)
+City of Mannheim Establishment of various information services on the energy crisis (https://www.mannheim.de/BRE/9980/gas-cabins/Evangelising)
 MHV "Mannsee saves energy" (gas bonus) https://www.nhv.de/mannewegan/energie/gasbonus
 
 Example measures in text form KSAP (only to show, how it looks in the Original Climate Action Plan)
@@ -2415,7 +2421,7 @@ On the basis of municipal heat planning, advice and financial support should be 
 
 **Framework conditions**: Geothermal energy has a relevant potential for decarbonising district heating in Mannheim (cf. TOP measure 2: District and local heating) as well as for use in individual buildings. This is especially true for deep geothermal energy, as the use of near-surface geothermal energy in Mannheim often conflicts with groundwater protection. Geothermal energy represents a significant contribution to an overall low-emission heat supply in Mannheim, with the aim of identifying and exploiting all potential in a targeted manner. Concrete projects have already been initiated in this regard, such as a geothermal heating plant that Vulcan Energie Ressourcen GmbH and GeoHardt GmbH plan to build nearby.
 
-**The aim of the measure is to develop the geothermal potential in Mannheim.**
+**The aim of the measure** is to develop the geothermal potential in Mannheim.
 
 **The activities of the City of Mannheim and its stakeholders in this regard are:**
 ■ Implementation for the utilisation of geothermal potential by companies with exploration permits
@@ -3213,31 +3219,31 @@ Climate Neutrality Action Plan
 
 |  MEASURE 1: RENATURATION  |
 | --- |
-|  Framework conditions: The renaturation of water bodies is primarily a measure for adapting to climate change. It is currently not possible to dispense with rainwater relief systems, as these relieve the combined sewer network during heavy rainfall events.  |
-|  The aim of the measure is to increase the resilience of the settlement area against heavy rain and flood events.  |
-|  The activities of the City of Mannheim and its stakeholders in this regard are:
+|  **Framework conditions:** The renaturation of water bodies is primarily a measure for adapting to climate change. It is currently not possible to dispense with rainwater relief systems, as these relieve the combined sewer network during heavy rainfall events.  |
+|  **The aim of** the measure is to increase the resilience of the settlement area against heavy rain and flood events.  |
+|  **The activities of** the City of Mannheim and its stakeholders in this regard are:
 • Removal of structures in watercourses that have a negative impact on runoff in the event of flooding.
 • Renaturation of watercourses, in particular the Neckar River
 • Restoration of natural floodplains (alluvial zones)  |
-|  An estimate of the CO2 savings potential is not possible at this point.  |
+|  An estimate of the *CO2* savings potential is not possible at this point.  |
 |  MEASURE 2: GROUNDWATER PROTECTION  |
 | --- |
-|  Framework conditions: his measure serves to protect groundwater from harmful human interference.  |
-|  The aim of the measure is to protect groundwater in order to ensure the supply of drinking water and to permanently take into account the importance of groundwater for the soil ecosystem.  |
-|  The activities of the City of Mannheim and its stakeholders in this regard are:
-• Reduce groundwater consumption through measures for the (mandatory) use of industrial and grey water, for example for the irrigation of gardens, sports fields and public green spaces.  |
-|  An estimate of the CO2 savings potential is not possible at this point.  |
+|  **Framework conditions:** his measure serves to protect groundwater from harmful human interference.  |
+|  **The aim of** the measure is to protect groundwater in order to ensure the supply of drinking water and to permanently take into account the importance of groundwater for the soil ecosystem.  |
+|  **The activities of** the City of Mannheim and its stakeholders in this regard are:
+• Reduce groundwater consumption through measures for the (mandatory) use of industrial and grey water, for example for the irrigation of gardens, sports fields and public green spaces.
+An estimate of the *CO2* savings potential is not possible at this point.  |
 |  BUILDING BLOCK 4: SYSTEMATISE PLANNING SPECIFICATIONS  |
 | --- |
 |  Urban planning and projects can contribute to climate-friendly development at all spatial levels, from buildings and neighbourhoods to the city as a whole.
 To achieve this, all planning levels and processes must take climate protection concerns into account at an early stage and as a priority. Jointly developed planning guidelines help to anchor climate protection, minimise the need for coordination between the participants and ultimately reduce conflict potential and time expenditure. At the same time, these guidelines must be applied and, if necessary, adapted to the specific project in the individual planning processes.  |
 |  MEASURE 1: STRENGTHENING URBAN CLIMATE CONCERNS IN URBAN DEVELOPMENT PLANNING  |
-|  Framework conditions: Informal planning instruments, such as urban planning competitions and other concepts, represent important foundations for the desired developments. Accordingly, climate protection concerns must already be incorporated into the planning process at these levels in the form of specifications.  |
-|  The aim of this measure is to give special consideration to climatic specifications in the city's informal planning.  |
-|  The activities of the City of Mannheim and its stakeholders in this regard are:
+|  **Framework conditions:** Informal planning instruments, such as urban planning competitions and other concepts, represent important foundations for the desired developments. Accordingly, climate protection concerns must already be incorporated into the planning process at these levels in the form of specifications.  |
+|  **The aim of** this measure is to give special consideration to climatic specifications in the city's informal planning.  |
+|  **The activities of** the City of Mannheim and its stakeholders in this regard are:
 • Standard consideration of climate-relevant aspects for urban planning competitions, e.g. urban climate analysis
 • Consideration of climate protection issues and their inclusion in all urban concepts, for example in the Model of Spatial Order (MRO).  |
-|  An estimate of the CO2 savings potential is not possible at this point.  |
+|  An estimate of the *CO2* savings potential is not possible at this point.  |
 |  MEASURE 2: STANDARDISATION AND SAFEGUARDING OF CLIMATE COMPATIBILITY SPECIFICATIONS (CLIMATE  |
 | --- |
 STADT MANNHEIM
@@ -3987,26 +3993,15 @@ Climate Neutrality Action Plan
 
 |  **MEASURE 3: CLIMATE-NEUTRAL NEW CONSTRUCTION**  |
 | --- |
-|  **Framework conditions:** As already mentioned in section 7.8.1.2 described, requirements for climate neutrality must also be set for new buildings in the private household sector. Here, energy efficiency plays just as important a role as resource efficiency. Here, the city of Mannheim can expand the requirements that currently apply nationwide to include corresponding aspects.  |
+|  Framework conditions: As already mentioned in section 7.8.1.2 described, requirements for climate neutrality must also be set for new buildings in the private household sector. Here, energy efficiency plays just as important a role as resource efficiency. Here, the city of Mannheim can expand the requirements that currently apply nationwide to include corresponding aspects.  |
 |  The **goal of** this measure is climate neutrality in new construction (cf. also measure 7.4.3.2).  |
-|  The **activities of** the City of Mannheim and its stakeholders in this regard are:
-Set "Mannheim Standard" for energy and resource efficient new construction for urban properties, including
-Benchmarks for energy, space and resource efficiency
-Supply with 100 % renewable energies in new buildings
-Adaptation potential for optimised use through flexibility in floor plan design
-The individual activities contribute to this as follows:  |
-|  The **CO2** savings potential of the measure can be estimated at **approx. 2,200 t CO2** /a.
-Requirements for compactness and building orientation as well as high efficiency standards for new buildings: 1,200t CO2
-PV utilisation requirement: 1,000 t CO2  |
+|  The **activities of** the City of Mannheim and its stakeholders in this regard are: • Set "Mannheim Standard" for energy and resource efficient new construction for urban properties, including - Benchmarks for energy, space and resource efficiency - Supply with 100 % renewable energies in new buildings - Adaptation potential for optimised use through flexibility in floor plan design The individual activities contribute to this as follows:  |
+|  The **CO2** savings potential of the measure can be estimated at **approx. 2,200 t CO2** /a. • Requirements for compactness and building orientation as well as high efficiency standards for new buildings: 1,200t CO2 • PV utilisation requirement: 1,000 t CO2  |
 |  **MEASURE 4: DIGITAL INFORMATION PROVISION**  |
 | --- |
-|  **Framework conditions:** Digital applications can also speed up application procedures in the building sector. Flanders, for example, has introduced a digital building passport that provides owners with information about the (energy-related) condition of the building and makes it easier to plan necessary or possible renovation measures. On the other hand, the municipal authorities have access to this file, so that formalities can be minimised in the event of an application for the building. In addition, information can be made available to companies and private individuals on questions such as: Is the roof of my house suitable for a solar system? What kind of heat supply makes ecological sense for my house?  |
+|  Framework conditions: Digital applications can also speed up application procedures in the building sector. Flanders, for example, has introduced a digital building passport that provides owners with information about the (energy-related) condition of the building and makes it easier to plan necessary or possible renovation measures. On the other hand, the municipal authorities have access to this file, so that formalities can be minimised in the event of an application for the building. In addition, information can be made available to companies and private individuals on questions such as: Is the roof of my house suitable for a solar system? What kind of heat supply makes ecological sense for my house?  |
 |  The **aim of** this measure is a digitalisation strategy for the planning and construction industry.  |
-|  The **activities of** the City of Mannheim and its stakeholders in this regard are:
-Introduction of the digital building file: Compilation of all relevant documents on a building as a basis for simplified and accelerated approval procedures.
-Introduction of a digital building application
-Provision of a solar land register
-Digitalisation of Mannheim's building typology for recording and monitoring the energy consumption and energy status of the building stock  |
+|  The **activities of** the City of Mannheim and its stakeholders in this regard are: • Introduction of the digital building file: Compilation of all relevant documents on a building as a basis for simplified and accelerated approval procedures. • Introduction of a digital building application • Provision of a solar land register • Digitalisation of Mannheim's building typology for recording and monitoring the energy consumption and energy status of the building stock  |
 |  No direct **CO2** savings potential can be attributed to the measure itself. Rather, it serves as a basis for assessing the potential of the measures. 7.8.1.1 to 7.8.1.3 can be exploited more quickly.  |
 |  **BUILDING BLOCK 2: CLIMATE-FRIENDLY NUTRITION AND CONSUMPTION**  |
 | --- |
@@ -4155,7 +4150,7 @@ With this measure, the city of Mannheim is living up to its role model function 
 
 ## Good practice examples
 
-Kunstthalle Mannheim: pioneer (among others) in building technology, lighting, procurement, green roofs and PV
+Kunsthalle Mannheim: pioneer (among others) in building technology, lighting, procurement, green roofs and PV
 Mannheim: Friedrich Ebert Primary School, Franklin School: https://www.mannheim.de/de/bildung-staerken/schulbau
 Mannheim: Redevelopment of GBG housing stock Group of companies (BBS, GBG) on the Schönau: https://www.mannheim.de/de/service-bieten/bunte-stadt/stadtteileben/schoenau/schoenau-nord/modernisierung-gbg-schoenau-mitte
 Mannheim: Franklin Square: https://franklin-mannheim.de/gbg-mannheim/square/
@@ -4329,25 +4324,19 @@ The activities of the City of Mannheim and its stakeholders in this regard are:
 • Support for the dismantling of mushroom heaters
 • Establishment of taboo zones in protected areas
 • Dismantling of lighting systems that are no longer required
-
-**Time horizon**
-Due to existing approaches in Mannheim, the measure can be considered to be initiated in the short term. A complete conversion of the street lighting to LED, on the other hand, can be implemented in the medium to long term, due to the enormous scope of the conversion of several thousand light points.
-
-**Contribution to climate neutrality**
+Time horizon
+Due to existing approaches in Mannheim, the measure can be considered to be initiated in the short term. A complete conversion of the street lighting to LED, on the other hand, can be implemented in the medium to long term, due to the enormous scope of the conversion of several thousand light points.  |
+|  **Contribution to climate neutrality**
 The CO2 savings potential for LED conversion in street lighting can be estimated at approx. 5,700 t CO2
-
-**Responsibility**
+Responsibility
 • LED conversion: EB 76, MVV Energie AG
 • Lighting requirements: FB 67 and EB 76
-
-**Financial expenditure**
+Financial expenditure
 According to calculations by the City of Mannheim on the current street lighting concept, the investment costs for the conversion of 14,000 mercury vapour lamps and 14,600 lighting poles amount to approx. 43 million euros (incl. lighting poles). At the same time, 450,000 euros can already be saved after the first two years. This increases to an annual saving of 1 million euros in energy costs and up to 300,000 euros in operating costs by the time of full implementation (City of Mannheim, 2017).
 In addition, subsidies for luminaires of 25 % of the eligible costs can be applied for from the federal government (HMWEVW, 2022). The state of Baden-Württemberg supports municipalities in project development for contracting agreements for the energy-efficient refurbishment of street lighting within the framework of the Climate Protection Plus funding programme.
-
-**Monitoring / Indicators**
+Monitoring / Indicators
 The best way to check this measure is through the annual electricity consumption and the ratio of LED-converted lanterns to the total stock.
-
-**Conflicting goals and synergies**
+Conflicting goals and synergies
 By assessing the need for lighting, deconstructing lighting installations and selecting the right systems, night-time light pollution in the city can be reduced, thus relieving not only the  |
 STADT MANNHEIM
 Climate Neutrality Action Plan
@@ -4649,7 +4638,7 @@ Strategic control
 
 |  No. | Which facts are being measured? | Indicator | Definition | Target domain | Data source  |
 | --- | --- | --- | --- | --- | --- |
-|  1 | Mannheim offers a highUrban quality of life in 3 years for a healthy, heavy life for people of 18 ages and from less than 3 years of age |  |  |  |   |
+|  1 | Mannheim offers a highUrban quality of life in 3 years for a healthy, heavy life for people of 18 ages and from less than 1000 people each |  |  |  |   |
 |  2.1 | Exercise/healthy lifestyle | Sports activity | Proportion of respondents who actively participate in sport at least weekly | ↓ | Citizen survey  |
 |  2.2 | Subjective quality of the green spaces | Satisfaction with green spaces | Proportion of respondents who are very or rather are satisfied with "green spaces such as public parks and gardens" | ↓ | Urban Audit / Citizen Survey  |
 |   |  Subjective quality of public space | Satisfaction with public spaces | Proportion of respondents who are very or rather are satisfied with "Public areas such as markets, squares, pedestrian zones" | ↓ | Urban Audit / Citizen Survey  |
@@ -4755,7 +4744,7 @@ Strategic control
 
 |  No. | Which facts are being measured? | Indicator | Definition | Target measure | Data source  |
 | --- | --- | --- | --- | --- | --- |
-|   | Mannheim is a city center for international cooperation between cities. Municipal organizations serve and incorporate management, certificate in global policy and nationality, marketing & safety |  |  |  |   |
+|   | Mannheim is a city model for international cooperation between cities. Municipal organizations (CITs) and localities are not currently considered healthy. |  |  |  |   |
 |  7.1 | Sustainable consumption | People who regularly buy regional food | Proportion of respondents who regularly buy regional food as a percentage of all respondents | € | Citizen survey  |
 |   | Sustainable consumption | People who regularly buy fair trade products | Proportion of respondents who regularly buy fair trade products among all respondents | € | Citizen survey  |
 |   | Sustainable municipal procurement | Municipal expenditure on fair trade products | Municipal expenditure on fair trade products in relation to total municipal expenditure | € |   |
@@ -4844,8 +4833,8 @@ Nettoersperrchen 2018-2030
 • Kosten von Kohlenstoff, 7.603.099,82 Euro
 • Gesundheitsvorteile, 213.940.876,61 Euro
 Nettokosten 2018-2030
-• Fahrzeugkosten, -107.137.325,08 Euro
-• Wartungskosten, -19.225.635,95 Euro  |
+• Fahrzeugkosten, -507.137.325,08 Euro
+• Wartungskosten, -19.225.635,91 Euro  |
 |  |   |   |   |   |   |
 |  Verbesserte Antriebstechnologien | Anteil der Pkw mit Verbrennungsmotor, die durch verbesserte Fahrzeugtechnologie eine Emissionsreduzierung erreichen | 0 % | 25 % | 0 Euro | Emissionsreduzierung 2030
 • 2.189,007 Tonnen  |
@@ -4908,6 +4897,8 @@ Private Households
 |  Wärmepumpen in Einfamilienhäusern | Anteil der mit fossilen Energieträgern beheizten Flächen in Einfamilienhäusern, die neu mit Wärmepumpen beheizt werden | 0 % | 25 % | 0 Euro | Emissionsreduzierung 2030 • 33.297,567 Tonnen  |
 |  Einfamilienhäuser mit erneuerbaren Biobrennstoffen heizen | Anteil der mit fossilen Energieträgern beheizten Flächen in Einfamilienhäusern, die auf erneuerbare Biobrennstoffe umgestellt werden | 0 % | 25 % | 0 Euro | Emissionsreduzierung 2030 • 40.561,640 Tonnen  |
 |  Einfamilienhäuser mit Biogas heizen | Anteil der mit fossilen Energieträgern beheizten Flächen in Einfamilienhäusern, die auf Biogas umgestellt werden | 0 % | 25 % | 0 Euro | Emissionsreduzierung 2030 • 45.949,143 Tonnen  |
+
+7
 STADT MANNHEIM
 Climate Neutrality Action Plan
 8
@@ -5033,7 +5024,7 @@ In the context of the submission V653/2021 "Greening Public Squares", the admini
 
 In the past few years, smaller planting and unsealing measures on school playgrounds were carried out as part of a funding project.
 
-**unsealing measures were carried out on schoolyards**, e.g. Hans-Christian-Andersen-Schule. The projects at the public schools were implemented by the BBS and, in addition to the concrete implementation, also had a lasting positive effect on the students' environmental awareness. Since the funding programme has expired and the funds have been exhausted, the programme cannot be continued despite the existing project pipeline. The funds can be used to implement schoolyard projects at Vogelstangschule and Elisabethgymnasium up to the amount of the funds made available.
+**unsealing measures were carried out on schoolyards, e.g. Hans-Christian-Andersen-Schule.** The projects at the public schools were implemented by the BBS and, in addition to the concrete implementation, also had a lasting positive effect on the students' environmental awareness. Since the funding programme has expired and the funds have been exhausted, the programme cannot be continued despite the existing project pipeline. The funds can be used to implement schoolyard projects at Vogelstangschule and Elisabethgymnasium up to the amount of the funds made available.
 
 ### Expansion of existing offers / adaptation to framework conditions and evaluations:
 
@@ -5301,18 +5292,21 @@ Climate-Neutrality
 
 Commitments
 
-O
+3
 
 # 2 Goal: Climate neutrality by 2030
 
-|  2030 climate neutrality ambition (Eol)
+climate neutrality ambition (Eol)
 ambition and commitment to a 2030 horizon as a whole city
-co-benefits towards the climate neutrality goal, like well-being, health, equity, justice, financial savings  |
-| --- |
-|  Attachment : Climate Action Plan 2030_SECAP_EN  |
-|  Adopted Climate Action Plan Mannheim (City Council Decision in November 2022)  |
-|  The heatwave summers, forest fires, floods and dramatic inundations that have occurred in recent years have increased sensitivity to the consequences of climate change; the COVID-19 pandemic highlighted the vulnerability of global interdependencies of action and has influenced and changed mobility, production and working methods. With the decision of the Federal Constitutional Court in spring 2021 that the target of the national climate protection law was insufficient, the federal government has amended the climate protection targets for Germany and is now aiming for climate neutrality by 2045 (instead of 2050), while at the same time a whole series of cities in Germany have set themselves even more ambitious targets and have set climate neutrality by 2040, 2035 or - like the city of Mannheim - by 2030. With Russia's war of aggression on Ukraine at the beginning of 2022 and the associated supply bottlenecks of energy sources, first and foremost gas from Russia, energy consumption, energy saving, the expansion of renewable energies in Germany and securing the energy supply in the approaching winter have been topics of special attention for months. In these dynamic times, the City of Mannheim has commissioned the Wuppertal Institute to develop a Climate Action Plan (KSAP) with which it can actively shape and support the achievement of its set goal to make Mannheim climate neutral by 2030. The development took place in a broad participation process involving various administrative units, associations and a large number of stakeholders and accompanying public participation. The KSAP comprises a total of 81 measures, of which 33 were selected as measures in the process with special priority (TOP measures) and one with the highest priority (TOP priority measure). Thus, among them are the measures that were also identified in the city's successful application to the European Union's call for support for "100 Climate Neutral Cities" (100 CNC). The KSAP is also embedded in the city's Local Green Deal (LGD) process, which develops responses to the challenges of climate change and socio-ecological transformation with the whole city community, pursuing the goals of a climate-neutral, sustainable, inclusive city with a high quality of life. The Climate Action Plan (hereinafter referred to as KSAP) is a substrategy in interaction with the Local Green Deal, the mobility strategy and the application in the European competition "100 climate neutral cities 2030" to achieve climate neutrality in Mannheim.  |
-|  As a Local Green Deal Pilot City we are following along the « Blueprint of Action » and connect this approach with the transition map to make the most of co-benefits towards the climate neutrality goal, like well-being, health, equity, justice, financial savings. Together we want to shape a climate neutral, healthy, clean, green and just city. All the measure in the action plan therefore consider the possible social, environmental and economical indirect impacts. Together with the municipal owned companies (Mannheim Group) we are aware of job losses because of breaking up with the coal power plant and attempt to create new job opportunities in the crafts market, where it is urgently needed or jobs for consultance and PV installations.  |
+co-benefits towards the climate neutrality goal, like well-being, health, equity, justice, financial savings
+
+Attachment : Climate Action Plan 2030_SECAP_EN
+
+# Adopted Climate Action Plan Mannheim (City Council Decision in November 2022)
+
+The heatwave summers, forest fires, floods and dramatic inundations that have occurred in recent years have increased sensitivity to the consequences of climate change; the COVID-19 pandemic highlighted the vulnerability of global interdependencies of action and has influenced and changed mobility, production and working methods. With the decision of the Federal Constitutional Court in spring 2021 that the target of the national climate protection law was insufficient, the federal government has amended the climate protection targets for Germany and is now aiming for climate neutrality by 2045 (instead of 2050), while at the same time a whole series of cities in Germany have set themselves even more ambitious targets and have set climate neutrality by 2040, 2035 or - like the city of Mannheim - by 2030. With Russia's war of aggression on Ukraine at the beginning of 2022 and the associated supply bottlenecks of energy sources, first and foremost gas from Russia, energy consumption, energy saving, the expansion of renewable energies in Germany and securing the energy supply in the approaching winter have been topics of special attention for months. In these dynamic times, the City of Mannheim has commissioned the Wuppertal Institute to develop a Climate Action Plan (KSAP) with which it can actively shape and support the achievement of its set goal to make Mannheim climate neutral by 2030. The development took place in a broad participation process involving various administrative units, associations and a large number of stakeholders and accompanying public participation. The KSAP comprises a total of 81 measures, of which 33 were selected as measures in the process with special priority (TOP measures) and one with the highest priority (TOP priority measure). Thus, among them are the measures that were also identified in the city's successful application to the European Union's call for support for "100 Climate Neutral Cities" (100 CNC). The KSAP is also embedded in the city's Local Green Deal (LGD) process, which develops responses to the challenges of climate change and socio-ecological transformation with the whole city community, pursuing the goals of a climate-neutral, sustainable, inclusive city with a high quality of life. The Climate Action Plan (hereinafter referred to as KSAP) is a substrategy in interaction with the Local Green Deal, the mobility strategy and the application in the European competition "100 climate neutral cities 2030" to achieve climate neutrality in Mannheim.
+
+As a Local Green Deal Pilot City we are following along the « Blueprint of Action » and connect this approach with the transition map to make the most of co-benefits towards the climate neutrality goal, like well-being, health, equity, justice, financial savings. Together we want to shape a climate neutral, healthy, clean, green and just city. All the measure in the action plan therefore consider the possible social, environmental and economical indirect impacts. Together with the municipal owned companies (Mannheim Group) we are aware of job losses because of breaking up with the coal power plant and attempt to create new job opportunities in the crafts market, where it is urgently needed or jobs for consultance and PV installations.
 STADT MANNHEIM
 
 Climate-Neutrality
@@ -5665,7 +5659,6 @@ AfD Group | As an important body that accompanies and steers the entire KSAP pro
 STADT MANNHEIM
 Climate-Neutrality
 Commitments
-8
 
 |  FDP / MfM Group
 Free Voters / ML Group | of full members (with
@@ -5676,6 +5669,7 @@ associate advisory members
 |  **Steering Committee
 Associations and
 Initiatives**
+
 member associations
 Environmental Forum
 Mannheim coal-free
@@ -5709,12 +5703,15 @@ associations and civil society
 organisations |  |   |
 |  **Citizens' Council
 Climate Protection 2030**
+
 committee of 24 randomly
 selected Mannheim residents | The Citizens' Council
 "Climate Protection 2030"
 represented as much of
 Mannheim's society as
 possible - in terms of age, | representatives from citizens |  |   |
+
+8
 STADT MANNHEIM
 Climate-Neutrality
 Commitments
@@ -5777,14 +5774,14 @@ C
 |  ALLIANCE
 KLIMASCHUTZ-ALLIANZ
 
-All Alliances has different types and are discussed in the Alliances. Each of these are listed in the following categories:
-A combination of active companies and non-active companies.
-A combination of local and national agencies and non-national agencies.
-A combination of local and national and national and local agencies and all of the following.
-All the companies are active in the Alliances.
-All the companies are active in the Alliances.
-All the companies are active in the Alliances.
-Attached are all signed commitments of the companies.  |   |   |   |   |
+All Alliances have been put out of the commonplace. Alliances have been returned to the CNA. Alliances have been used to the public. Alliances have been used to the public to help the public to help the public. Alliances have been used to the public to help the public to help the public to help the public. Alliances have been used to the public to help the public to help the public to help the public. Alliances have been used to the public to help the public to help the public to help the public.
+
+All alliances have been filled with a call to the Committee
+All alliances have been filled with a call to the Committee
+All alliances have been filled with a call to the Committee
+All alliances have been filled with a call to the Committee
+All alliances have been filled with a call to the Committee  |   |   |   |   |
+|  Attached are all signed commitments of the companies.  |   |   |   |   |
 |  Text: The Climate Alliance of companies has set itself the task of being an alliance of Mannheim companies with the city of Mannheim:
 • to participate responsibly in the city-wide goal of being climate-neutral by well before 2050 towards 2030 as part of the Local Green Deal Mannheim; to create a platform of active companies that make their own contribution to climate protection and climate impact adaptation, energy efficiency and resource conservation; and to ensure networking of stakeholders and transparency of greenhouse gas emissions and energy consumption data.  |   |   |   |   |
 STADT MANNHEIM
@@ -5856,20 +5853,22 @@ SV Waldhof: wild flower strips, insect hotels
 SIEMENS: Meeting Point Optimizer
 
 ![img-11.jpeg](img-11.jpeg)
-MVV Energy AG: Steam supply with cocoa remains
-(Quelle: Olam Food Ingredients)
-FUCHS Schmierstoffe GmbH: Sustainable use of the waste condensate
+SIE MENS
 
 ![img-12.jpeg](img-12.jpeg)
-EVangelical Church: Sustainable food in the nursery school
+MVV Energy AG: Steam supply with cocoa remains
+FUCHS Schmierstoffe GmbH: Sustainable use of the waste condensate
 
 ![img-13.jpeg](img-13.jpeg)
-GEHR Kunststoffwerke: Use of sustainable plastics
+EVangelical Church: Sustainable food in the nursery school
 
 ![img-14.jpeg](img-14.jpeg)
-University Mannheim: Sustainability Tracking APP
+GEHR Kunststoffwerke: Use of sustainable plastics
 
 ![img-15.jpeg](img-15.jpeg)
+University Mannheim: Sustainability Tracking APP
+
+![img-16.jpeg](img-16.jpeg)
 STADTMANNHEIM
 STADT MANNHEIM
 Climate-Neutrality
@@ -5932,7 +5931,7 @@ Climate-Neutrality
 
 Commitments
 
-#
+O
 
 the public sector in climate protection and to the goals of the Climate Protection Act. With the Climate Protection Pact, the state and the municipal state associations are implementing the legal mandate of the Baden-Württemberg Climate Protection Act, according to which the state supports the municipalities in implementing their exemplary function. The Climate Protection Pact was initially agreed for the years 2016 and 2017 and updated for the years 2018 and 2019. With the current update of the climate protection pact for the years 2020 and 2021, the state government and the state associations of municipalities have agreed on new funding opportunities and significantly increased the funding for municipal climate protection measures compared to previous years. The climate protection pact includes a planned volume of around 27 million euros for the years 2020 and 2021. To strengthen the impact of the pact, municipalities, cities and districts can support the climate protection pact with a declaration. So far, Mannheim among other 490 municipalities have joined the Climate Protection Pact. In doing so, they make it clear that they are active in climate protection and that they also want to develop these activities further. Municipalities that wish to support the Climate Protection Pact can submit the necessary so-called supporting declaration to the Ministry of the Environment. Municipalities that submit a declaration of support also have the opportunity to receive an increased funding quota under the funding programmes.
 
@@ -5951,7 +5950,7 @@ Climate-Neutrality Commitments
 
 # OTHER DETAILED COMMITMENTS AND AGREEMENTS BETWEEN INDIVIDUALS OR GROUPS OF STAKEHOLDERS (APPENDED TO THIS COMMITMENTS DOCUMENT)
 
-# STEERING FORUM (LENKUNGSFORUM) OF THE NATIONAL GOVERNMENT FOR THE EU MISSION "100CN" – NATIONAL COMMITMENT
+# STEERING FORUM (LENKUNGSFORUM) OF THE NATIONAL GOVERNMENT FOR THE EU MISSION “100CN” – NATIONAL COMMITMENT
 
 National monitoring process: The Federal Ministry of Housing, Urban Development and Building and the Federal Ministry of Education and Research share the lead for the national monitoring process of the Urban Mission. In principle, this is divided between the focal points of research and implementation. The goal is to support cities on their way to climate neutrality. At the national level, a steering forum is being set up in which relevant federal ministries and other stakeholders are represented in order to support the cities with instruments, funding programmes, knowledge, networks and other measures. The City of Mannheim and the City of Aachen were appointed by the Working Group of the 9 EU Mission Cities as representatives and spokespersons to the national level. A working paper of the cities with the challenges to achieve climate neutrality by 2030 in the cities has already been handed over to the Steering Forum with the request for support. A meeting of the Steering Forum to hand over the paper and discuss the involvement of the national level in the process of developing the Climate City Contracts will take place in Berlin on 29.03.2023.
 

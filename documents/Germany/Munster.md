@@ -515,7 +515,7 @@ STADT MÜNSTER
 
 Climate Neutrality Action Plan
 
-2
+C
 
 neutrality projects. Topic coordinators (Themenkoordinatoren) form the link between specialist departments and topic owners (Themenpaten). Topic coordinators collect information from specialist departments and identify interfaces between individual projects across all fields of action. The process is supported by the Climate Office (see also Module C-1).
 
@@ -528,6 +528,8 @@ From project to principle - this maxim underpins Münster's climate protection s
 Prioritising implementation of climate protection strategies and measures is carried out by Münster City Council and the City Administration Administrative Board. Climate protection-related information is currently being developed for both bodies, such as a budget template and the climate protection overview board, intended to provide transparent support for the decision-making process.
 
 The implementation status of climate protection strategies and measures is reviewed internally by the Administrative Board every three months through a reporting system. The city's annual energy and greenhouse gas inventory provides information on Münster's current position with regard to the 2030 climate neutrality target.
+
+2
 STADT MÜNSTER
 
 Climate Neutrality Action Plan
@@ -582,27 +584,10 @@ Climate Neutrality Action Plan
 
 Table 5 A-1.2: Emission factors
 
-|  RE Heat | 43 |  |  |   |
+|  A-1.2: Emission factors applied  |   |   |   |   |
 | --- | --- | --- | --- | --- |
-|  Electricity |  | 1,067 |  |   |
-|  Transport |  |  |  | 1,803  |
-|  Fossil fuels | 1,656 |  |  |   |
-|  Renewable fuels | 113 |  |  |   |
-|  Electricity |  | 34 |  |   |
-|  Waste |  |  |  | No information on energy consumption, see A-1.4  |
-|  Industrial Process and Product1 Use (IPPU) |  |  |  | 629  |
-|  Natural gas |  | 434 |  |   |
-|  District heating |  | 2 |  |   |
-|  Heating oil | 5 |  |  |   |
-|  Electricity |  | 188 |  |   |
-|  Agricultural, Forestry and Land Use2 (AFOLU) |  |  |  | No energy-related emissions, see A-1.4  |
-|  Source: Municipal energy and CO2 inventory for 2021; DNK report, AWM  |   |   |   |   |
-
-# A-1.2: Emission factors applied
-
-(Please specify for primary energy type and GHG emission factor according to methodology used).
-
-BISKO stands for Bilanzierungssystematik Kommunal (municipal accounting system) and is a methodology for municipal final energy consumption and greenhouse gas emissions accounting. It was developed as part of a federal research project, is recognised by funding bodies such as the Municipal Directive and is used by many cities in Germany. More detailed information can be found in the updated BISKO methodology paper (https://www.energieatlas.rlp.de/earp/fileadmin/THG-Bilanzierung/Bilder/BISKO_Methodenpapier_kurz_ifeu_Nov19.pdf). The BISKO system takes into account greenhouse gas emissions (in  $\mathrm{CO}_{2}$  equivalent) of  $\mathrm{CO}_{2}$ ,  $\mathrm{CH}_{4}$  and  $\mathrm{N}_{2}\mathrm{O}$ . It does not account for F-gases.
+|  (Please specify for primary energy type and GHG emission factor according to methodology used).  |   |   |   |   |
+|  BISKO stands for Bilanzierungssystematik Kommunal (municipal accounting system) and is a methodology for municipal final energy consumption and greenhouse gas emissions accounting. It was developed as part of a federal research project, is recognised by funding bodies such as the Municipal Directive and is used by many cities in Germany. More detailed information can be found in the updated BISKO methodology paper (https://www.energieatlas.rlp.de/earp/fileadmin/THG-Bilanzierung/Bilder/BISKO_Methodenpapier_kurz_ifeu_Nov19.pdf). The BISKO system takes into account greenhouse gas emissions (in CO2 equivalent) of CO2, CH4 and N2O. It does not account for F-gases.  |   |   |   |   |
 STADT
 
 MÜNSTER
@@ -1055,13 +1040,9 @@ Münster's standard for climate-friendly construction sets out the following req
 Requirements for residential buildings | The measure will reduce | • Münster is a rapidly growing city  |
 
 0
-STADT
-
-MÜNSTER
+STADT MÜNSTER
 
 Climate Neutrality Action Plan
-
-#
 
 A-2.1: List of relevant policies, strategies &amp; regulations
 
@@ -1078,6 +1059,8 @@ solar standard
 For new residential buildings, a photovoltaic system with a minimum output of 1 kilowatt peak (kWp) per residential unit must be installed on or near the building. As a rule, however, the economically optimum result is achieved with significantly larger systems. Building owners or planning and specialist companies are free to optimise the design. The requirements of the solar standard are also deemed to be met if a corresponding system for solar energy utilisation is installed and operated by a third party (municipal utility, citizens' energy cooperative, etc.) on or near the building or outbuilding.
 
 Requirements for non-residential buildings | emissions in the new construction sector to almost zero | • The measure avoids the additional emissions (heat + proportionate electricity) caused by growth  |
+
+1
 STADT
 
 MÜNSTER
@@ -1104,8 +1087,6 @@ MÜNSTER
 
 Climate Neutrality Action Plan
 
-#
-
 A-2.1: List of relevant policies, strategies &amp; regulations
 
 |  Type | Level | Name & Title | Description | Relevance | Need for action  |
@@ -1114,7 +1095,9 @@ A-2.1: List of relevant policies, strategies &amp; regulations
 • Combined solar thermal-photovoltaic systems (PVT systems) that produce both heat and electricity
 For ST systems, this calculation is based on gross collector area, for PV and PVT systems on module area. Building owners or planning and specialist companies are free to optimise the design.
 The requirements of the solar standard are also deemed to be met if a corresponding solar energy utilisation system is installed and operated by a third party (public utility company, citizens' energy cooperative, etc.) on or near the building or outbuilding. |  |   |
-|  Policy | local | Climate-friendly urban development: Guidelines for climate-friendly urban land-use planning | This guideline aims to firmly embed climate protection and climate adaptation in building land development and to make taking them into account compulsory (in both residential and mixed-use areas with primarily residential construction, and in other area categories). This applies from site selection to urban and open space planning configuration through to planning regulations and contractual provisions. In future, this approach will also be extended to land allocation, structural realisation and subsequent demolition. This first guideline is intended to serve as a practical aid for urban land-use planning and is also intended to provide all employees of the City Administration Münster entrusted involved in the development of building land, project owners and commissioned planning offices with information for their role: https://www.stadt-muenster.de/sessionnet/sessionnetbi/get-file.php?id=526516&type=do | Very relevant | See A-2.2: Description & assessment of policies  |
+|  Policy | local | Climate-friendly urban development: Guidelines for climate-friendly urban land-use planning | This guideline aims to firmly embed climate protection and climate adaptation in building land development and to make taking them into account compulsory (in both residential and mixed-use areas with primarily residential construction, and in other area categories). This applies from site selection to urban and open space planning configuration through to planning regulations and contractual provisions. In future, this approach will also be extended to land allocation, structural realisation and subsequent demolition. This first guideline is intended to serve as a practical aid for urban land-use planning and is also intended to provide all employees of the City Administration Münster entrusted involved in the development of building land, project owners and commissioned planning offices with information for their role: https://www.stadt-muenster.de/sessionnet/begleitfilie.php?id=526516&type=do | Very relevant | See A-2.2: Description & assessment of policies  |
+
+3
 STADT
 
 MÜNSTER
@@ -1129,7 +1112,7 @@ A-2.1: List of relevant policies, strategies &amp; regulations
 | --- | --- | --- | --- | --- | --- |
 |  Strategy | local | Building guidelines 2020: climate protection and sustainability. Münster's path to climate neutrality | Münster is aiming to become climate-neutral by 2030. Achieving this goal means in particular targeting municipal buildings. Buildings account for 33% of the increase in CO2 emissions. In August 2020, the Council therefore passed a resolution to reduce the energy consumption of municipal buildings by 50% and CO2 emissions by 70% by 2030. Our building guidelines have therefore been fundamentally revised and adapted to the goal of climate neutrality by 2030. There are binding quality criteria and guidelines for everyone involved in the construction process for municipal buildings, both for new builds and for conversion and deep renovation measures. The building guidelines apply to all municipal buildings. The goal is a building stock aligned with climate protection and sustainability: https://www.stadt-muenster.de/fileadmin/user_upload/stadt-muenster/23_immobilien/pdf/Gebaeudeleitlinien_2020_komplett.pdf | Very relevant | See A-2.2: Description & assessment of policies  |
 |  Policy | local | Energy utilisation planning | To chart a course to climate neutrality by 2030, the City of Münster is drawing up an energy utilisation plan (ENP) intended as a long-term foundation for planning a sustainable heat supply, The plan will be updated regularly. This was approved by the Council at a June 2023 council meeting. Under the leadership of the Climate Office, the Administration is setting up an inter-departmental working group with the participation of Stadtwerke Münster and Stadtnetze Münster. The energy utilisation plan should be available by the end of 2024. Although federal legislation is expected to make municipal heat planning mandatory at the end of 2023/beginning of 2024, the City of Münster, wants to shape the process proactively. Thanks to the | Very relevant | See A-2.2: Description & assessment of policies  |
-|   |  |  | programming of the City of Münster. The Administration is setting up an inter-departmental working group with the participation of Stadtwerke Münster and Stadtnetze Münster. The energy utilisation plan should be available by the end of 2024. The City of Münster is also available by the end of 2024. |  |   |
+|   |  |  | programme for the development of a sustainable environment. The plan will be updated regularly. The Council will be available by the end of 2024. The energy utilisation plan should be available by the end of 2024. |  |   |
 STADT
 
 MÜNSTER
@@ -1184,7 +1167,7 @@ A-2.1: List of relevant policies, strategies &amp; regulations
 https://mobil-in-muenster.de/c/masterplan-mobilitaet-muenster-2035/ |  |   |
 |  Strategy | local | Clean air plan | https://www.stadt-muenster.de/sessionnet/sessionnetbi/getfile.php?id=350959&type=do |  |   |
 |  Strategy |  |  | 10 areas of action have been added to and 15 areas of action have been removed from the 2017 noise action plan. These changes are the result of changes in population data and adjustments or improvements to the noise calculation model: https://www.stadt-muenster.de/sessionnet/sessionnetbi/getfile.php?id=473630&type=do |  |   |
-|  Strategy | local | Abfall-wirtschafts betriebe Münster: | This vision aims to make Münster cleaner and largely waste-free, but it also aims to improve environmental protections, and realise more togetherness and more regional added value. "Together" is a key word in our Vision 2030 and everything that we have already initiated and will implement in the future is part of this vision: by the end of this decade, we want Münster to have evolved into a capital of waste prevention. In concrete terms, this means there should be no more waste, only recyclable | Very relevant | See A-2.2: Description & assessment of policies  |
+|  Strategy | local | Abfall-wirtschaftsbetriebe Münster: | This vision aims to make Münster cleaner and largely waste-free, but it also aims to improve environmental protections, and realise more togetherness and more regional added value. "Together" is a key word in our Vision 2030 and everything that we have already initiated and will implement in the future is part of this vision: by the end of this decade, we want Münster to have evolved into a capital of waste prevention. In concrete terms, this means there should be no more waste, only recyclable | Very relevant | See A-2.2: Description & assessment of policies  |
 
 7
 STADT MÜNSTER
@@ -2005,7 +1988,7 @@ STADT MÜNSTER
 
 Climate Neutrality Action Plan
 
-#
+O
 
 During development of the Climate City Contract, all stakeholders in Münster society are therefore invited and encouraged to commit to the goal of "climate neutrality for Münster" within their scope of action. For companies and institutional stakeholders, that means climate protection projects and measures developed and/or implemented within their company or institution, such as converting their vehicle fleet to electromobility, building energy-efficiency improvements or setting up climate-friendly services. This also includes creating and implementing entire climate protection concepts or transformation roadmaps, or developing and testing innovations that make an important contribution to the climate transition. It also includes public relations work or communication measures, such as education programmes, awareness-raising campaigns or advisory services that promote climate protection. For citizens and civil society, this includes climate protection projects and measures implemented in their own lives, such as energy-efficiency improvements to their homes, getting rid of a car or using social media to raise awareness of climate protection issues. Projects and measures implemented in initiatives and associations also play an important role. The range of activities through which Münster society is supporting the City of Münster on its path to climate neutrality by 2030 is also reflected in the contributions to the first version of the Climate City Contract (see Signatories table in the Commitment). Activating Münster society will be a key element of the "Münster is becoming a climate city" process over the next few years.
 
@@ -2628,10 +2611,11 @@ Climate Neutrality Action Plan
 
 4
 
-|  B-2.1: Description of action portfolios - textual or visual  |   |   |
-| --- | --- | --- |
+B-2.1: Description of action portfolios - textual or visual
+
 |  Fields of action | Portfolio description  |   |
-|   | List of actions | Descriptions  |
+| --- | --- | --- |
+|   |  List of actions | Descriptions  |
 |   |  | rental costs". To this end, the politicians are calling for the development and establishment of an independent construction investment controlling. In particular, this should serve to keep an eye on investment costs and to assess which cost increases are actually necessary. In addition, controlling should take a critical look at the demands of individual offices and examine the extent to which these are actually necessary. Politics, real estate management and individual offices are currently not able to check this independently.  |
 |  Climate budget | Development of a climate budget | Steering by the budget is to be combined with an assessment of climate impacts.
 The climate budget tool is intended to help us understand the impact of decisions regarding investments and financing on the climate.
@@ -2848,8 +2832,10 @@ Governance and policy  |
 |   |  Action scale & addressed entities | City-wide supply of electricity  |
 |   |  Involved stakeholders | Stadtwerke Münster, other municipalities, citizens  |
 |   |  Comments on implementation | Implemented until 2030
+
 Current status:
 • By the end of 2023, Stadtwerke Münster will already be generating 92 GWh of wind energy with its own turbines.
+
 Next steps:
 • Authorisation in accordance with the BIm-SchG for 1 wind turbine in Lemgo with a nominal output of 5.7 MW (2024)
 • Start of construction and commissioning of at least one of three planned wind turbines in Südlohn Eschlohn/Wellschat with a total nominal output of 17.1 MW (2024)
@@ -3226,11 +3212,9 @@ Exchange with anchor customers  |
 |   |  Removed/substituted energy, volume, or fuel type | Fossil Fuel  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | Currently no quantification possible  |
 |   |  Total costs and costs by CO2e unit | Currently no quantification possible  |
-
-B-2.2: Individual action outlines
-
-|  (Fill out one sheet per intervention/project)  |   |   |
+|  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
+|  (Fill out one sheet per intervention/project)  |   |   |
 |  Action outline | Action name | Integrated area concept MS: Settlement, open/green spaces and locations for RE in balance  |
 |   |  Action type | Governance and regulation  |
 |   |  Action description | With the Integrated Area Concept for Münster (IFM), the city is proactively focussing on future  |
@@ -3259,25 +3243,24 @@ STADT MÜNSTER
 
 Climate Neutrality Action Plan
 
-C
+3
 
-|   | Removed/substituted energy, volume, or fuel type | none as an informal basis for planning; this will only be realised at a later date  |
-| --- | --- | --- |
-|   |  GHG emissions reduction estimate (total) per emission source sector | • CO2e reduction potential - estimated utilisation of potential 50 % wind energy: total potential 84 MW capacity new build -> 42 MW capacity structural implementation -> 105 GWh/a (at 2,500 full utilisation hours/a) -> 38,850 t CO2e reduction/a (with emissions of 10 t CO2e/GWh wind power at 380 t CO2e/GWh averaged electricity mix)
-• 25 % FF solar: total potential 2,500 ha -> 625 ha structural implementation -> 377 GWh/a (at 0.67 MWp/ha and 900 MWh/MWp and a) -> 128,150 t CO2e reduction/a (with emissions of 40 t CO2e/GWh solar power minus 380 t CO2e/GWh averaged electricity mix)  |
-|   |  Total costs and costs by CO2e unit | Processing costs: EUR 230,000  |
+|  Removed/substituted energy, volume, or fuel type | none as an informal basis for planning; this will only be realised at a later date  |
+| --- | --- |
+|  GHG emissions reduction estimate (total) per emission source sector | • CO_{2}e reduction potential - estimated utilisation of potential 50 % wind energy: total potential 84 MW capacity new build -> 42 MW capacity structural implementation -> 105 GWh/a (at 2,500 full utilisation hours/a) -> 38,850 t CO_{2}e reduction/a (with emissions of 10 t CO_{2}e/GWh wind power at 380 t CO_{2}e/GWh averaged electricity mix)
+• 25 % FF solar: total potential 2,500 ha -> 625 ha structural implementation -> 377 GWh/a (at 0.67 MWp/ha and 900 MWh/MWp and a) -> 128,150 t CO_{2}e reduction/a (with emissions of 40 t CO_{2}e/GWh solar power minus 380 t CO_{2}e/GWh averaged electricity mix)  |
+|  Total costs and costs by CO_{2}e unit | Processing costs: EUR 230,000  |
 
-B-2.2: Individual action outlines
+## B-2.2: Individual action outlines
 
-|  (Fill out one sheet per intervention/project)  |   |   |
-| --- | --- | --- |
+(Fill out one sheet per intervention/project)
+
 |  Action outline | Action name | Fibre optic expansion Münster  |
+| --- | --- | --- |
 |   |  Action type | Technical intervention  |
 |   |  Action description | Target 2030:
 An efficient fibre optic supply will become even more decisive as a location factor for Münster in the future, which is why Stadtwerke Münster is also ensuring the "digital heartbeat" of its city. By 2030, 80% of households in Münster are to be supplied with fibre optic connections. To this end, Stadtwerke Münster has agreed a comprehensive cooperation with Deutsche Telekom, among others, in which Stadtwerke will contribute its expertise for laying the fibre optic lines and Telekom will provide its own expertise.
 Due to its higher efficiency, fibre optic technology consumes significantly less electricity than copper-based networks (up to 17 times less electricity). As a result, Stadtwerke Münster's fi-  |
-
-3
 STADT MÜNSTER
 
 Climate Neutrality Action Plan
@@ -3723,7 +3706,7 @@ City as a role model  |
 |  Impact & cost | Generated renewable energy (if applicable) | None  |
 |   |  Removed/substituted energy, volume, or fuel type | Saving fossil fuels, shifting motorised private transport to eco-mobility not quantifiable/ measurable  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | approx. 6,300 tonnes  |
-|   |  Total costs and costs by CO2e unit | Not specified  |
+|   |  Total costs and costs by CO_{2}e unit | Not specified  |
 |  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
 |  (Fill out one sheet per intervention/project)  |   |   |
@@ -3823,7 +3806,6 @@ B-2.2: Individual action outlines
 |  Action outline | Action name | Socio-ecological criteria for procurement  |
 |   |  Action type | Procurement actions  |
 |   |  Action description | On 7 September 2022, the Council commissioned the First Mayor to set up a joint working group of politicians and representatives from the city administration in order to develop socio-  |
-|   | action description | on 10 September 2022, the Council was introduced to the City of Münster by the Council and the Council was introduced to the City of Münster by the Council. The Council is also introduced to the City of Münster by the Council and the Council is introduced to the City of Münster by the Council. The Council is also introduced to the City of Münster by the Council and the Council is introduced to the City of Münster by the Council. The Council is also introduced to the City of Münster by the Council and the Council is introduced to the City of Münster by the Council. The Council is also introduced to the City of Münster by the Council and the Council is introduced to the City of Münster by the Council. The Council is also introduced to the City of Münster by the Council  |
 STADT MÜNSTER
 
 Climate Neutrality Action Plan
@@ -4499,7 +4481,7 @@ Climate Neutrality Action
 
 Plan
 
-#
+C
 
 |   | Involved stakeholders | Companies, universities, North Westphalia Chamber of Industry and Commerce, Münster Chamber of Crafts, Münster Industrial Community, Strong City Centre Initiative, etc.  |
 | --- | --- | --- |
@@ -4508,9 +4490,11 @@ Plan
 |   |  Removed/substituted energy, volume, or fuel type | Not applicable  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | Not applicable  |
 |   |  Total costs and costs by CO2e unit | Not specified  |
-|  B-2.2: Individual action outlines  |   |   |
-| --- | --- | --- |
+
+B-2.2: Individual action outlines
+
 |  (Fill out one sheet per intervention/project)  |   |   |
+| --- | --- | --- |
 |  Action outline | Action name | Business & Technology Development Office for the City of Muenster : Information events, workshops, podcast  |
 |   |  Action type | Social participation and awareness campaigns  |
 |   |  Action description | Information events, workshops, podcast on sustainability and climate protection organised by the Business & Technology Development Office for the City of Muenster  |
@@ -4522,6 +4506,8 @@ Plan
 |   |  Involved stakeholders | Companies  |
 |   |  Comments on implementation | Efficiency Forum Economy 2024; topic planning 2024: CO2 balancing, sustainability reporting  |
 |  Impact & cost | Generated renewable energy (if applicable) | Not applicable  |
+
+8
 STADT
 
 MÜNSTER
@@ -4700,15 +4686,15 @@ STADT MÜNSTER
 
 Climate Neutrality Action Plan
 
-#
+7
 
-Local compensation through reforestation
+# Local compensation through reforestation
 
-There is no general answer to the question of how much  $\mathrm{CO}_{2}$  can be stored by planting a tree. How much and how quickly a tree can bind carbon dioxide depends on various factors such as species, age, wood density, climate, soil quality and water supply. However, it is possible to come close to a statement based on certain assumptions.
+There is no general answer to the question of how much CO₂ can be stored by planting a tree. How much and how quickly a tree can bind carbon dioxide depends on various factors such as species, age, wood density, climate, soil quality and water supply. However, it is possible to come close to a statement based on certain assumptions.
 
-Assuming a normally grown beech tree with a height of 23 metres and a certain circumference, it can store around 550 kilograms of dry matter in its leaves, branches and trunk. With an estimated additional ten per cent stored in the biomass of the roots, a total of around 600 kilograms of dry matter is bound - this corresponds to the storage of one tonne of  $\mathrm{CO}_{2}$ . Due to the production and release of oxygen during photosynthesis, the amount of  $\mathrm{CO}_{2}$  stored exceeds the dry mass.
+Assuming a normally grown beech tree with a height of 23 metres and a certain circumference, it can store around 550 kilograms of dry matter in its leaves, branches and trunk. With an estimated additional ten per cent stored in the biomass of the roots, a total of around 600 kilograms of dry matter is bound - this corresponds to the storage of one tonne of CO₂. Due to the production and release of oxygen during photosynthesis, the amount of CO₂ stored exceeds the dry mass.
 
-In order to absorb one tonne of  $\mathrm{CO}_{2}$ , a beech tree must grow for around 80 years. Converted to one year, the tree can store 12.5 kilograms of  $\mathrm{CO}_{2}$ . This means that around 80 trees are needed to offset one tonne of  $\mathrm{CO}_{2}$  per year. However, it should be noted that trees tend to accumulate little biomass in the first few years after planting. It is only with increasing age that more  $\mathrm{CO}_{2}$  can be bound.
+In order to absorb one tonne of CO₂, a beech tree must grow for around 80 years. Converted to one year, the tree can store 12.5 kilograms of CO₂. This means that around 80 trees are needed to offset one tonne of CO₂ per year. However, it should be noted that trees tend to accumulate little biomass in the first few years after planting. It is only with increasing age that more CO₂ can be bound.
 
 The following table shows a rough estimate of the space required and the costs if the remaining amount is fully compensated by reforestation on the urban area.
 
@@ -4716,8 +4702,8 @@ Table 22 Space required for afforestation as a compensation measure
 
 |  Assessment of space requirements | Unit | Result  |   |
 | --- | --- | --- | --- |
-|  Unavoidable greenhouse gases | [tCO2eq/a] | 90.000 |   |
-|  Storage 81 beeches | [tCO2eq/a] | 0,0125 |   |
+|  Unavoidable greenhouse gases | [tCO₂eq/a] | 90.000 |   |
+|  Storage 81 beeches | [tCO₂eq/a] | 0,0125 |   |
 |  Demand trees | [-] | 7.200.000 |   |
 |  Squad afforestation | [Trees/ha] | 1.230 |   |
 |  Space requirement | [ha] | 5.850 |   |
@@ -4726,11 +4712,11 @@ Table 22 Space required for afforestation as a compensation measure
 |  Forest stock Münster | [ha] | 4.860 |   |
 |  Costs (min. to max.) | [€/ha] | 1.500 | 3.500  |
 |  Total costs | [€] | 8.775.000 | 20.475.000  |
-|  Specific costs | [€/tCO2] | 98 | 228  |
+|  Specific costs | [€/tCO₂] | 98 | 228  |
 
 Source: Münster Climate Neutrality 2030 concept study, p. 47 (appendix)
 
-In this calculation example, it should be noted that the actual space requirement and the associated costs may be lower. This is due to the fact that in addition to the beech as the main tree species, secondary tree species are also planted between the beech trees in the selected group afforestation. As these also bind  $\mathrm{CO}_{2}$ , which was not taken into account in the present calculation, this could result in lower costs in the future
+In this calculation example, it should be noted that the actual space requirement and the associated costs may be lower. This is due to the fact that in addition to the beech as the main tree species, secondary tree species are also planted between the beech trees in the selected group afforestation. As these also bind CO₂, which was not taken into account in the present calculation, this could result in lower costs in the future
 
 Soil is an indispensable asset not only against this background, but above all due to its diverse functions in the ecosystem. Its loss cannot be compensated for. Münster has been involved in the "Alliance
 STADT MÜNSTER
@@ -4989,11 +4975,6 @@ Table 29 B-3.2: Indicator Metadata - Transport &amp; Mobility
 |  Does the indicator measure indirect impacts (i.e., co-benefits)? | [no]  |
 |  If yes, which co-benefit does it measure? | Not applicable  |
 |  Can the indicator be used for monitoring impact pathways? | yes  |
-|  Can the indicator be used for monitoring indirect effects? | No  |
-|  Is there a specific indicator that is used to monitor the impact of the change in the transport/mobility sector? | No  |
-|  Is there a specific indicator that is used to monitor the impact of the change in the transport/mobility sector? | No  |
-|  Is there a specific indicator that is used to monitor the impact of the change in the transport/mobility sector? | No  |
-|  Is there a specific indicator that is used to monitor the impact of the change in the transport/mobility sector? | No  |
 STADT
 
 MUNSTER
@@ -5019,11 +5000,11 @@ Table 30 B-3.2: Indicator Metadata - Waste and Circular Economy
 |  Does the indicator measure indirect impacts (i.e., co-benefits)? | [no]  |
 |  If yes, which co-benefit does it measure? | Not applicable  |
 |  Can the indicator be used for monitoring impact pathways? | [no]  |
-|  Can the indicator be used for monitoring indirect effects? (i.e., reduction in greenhouse gas emissions?) | [no]  |
-|  Is the indicator used for monitoring indirect effects (i.e., reduction in greenhouse gas emissions)? | Yes  |
-|  Is the indicator used for monitoring indirect effects (i.e., reduction in greenhouse gas emissions)? | No  |
-|  Is the indicator used for monitoring indirect effects (i.e., reduction in greenhouse gas emissions)? | No  |
-|  Is the indicator used for monitoring indirect effects (i.e., no change in the indicator) | No  |
+|  Can the indicator be used for monitoring indirect effects? | [no]  |
+|  Is the indicator used to monitor or monitor the effects? | Yes  |
+|  Is the indicator used to monitor or monitor the effects of other indicators (e.g., CO2, CO2) | Yes  |
+|  Is the indicator used to monitor or monitor the effects of other indicators (e.g., CO2, CO2) | Yes  |
+|  Is the indicator used to monitor or monitor the effects of other indicators (e.g., CO2, CO2) | Yes  |
 STADT
 
 MUNSTER
@@ -5270,14 +5251,16 @@ Climate Neutrality Action Plan
 
 #
 
+![img-28.jpeg](img-28.jpeg)
 Figure 28 Münster greenhouse gas emissions - trend and target by sector
 GHG emissions Münster, trend and target, by sector
-![img-28.jpeg](img-28.jpeg)
+
 Source: In house figure based on the energy and greenhouse gas inventory for Münster
 
+![img-29.jpeg](img-29.jpeg)
 Figure 29 Greenhouse gas inventory - annual emissions and budgets by fields of action
 Greenhouse gas balance - annual emissions and budgets by area of action
-![img-29.jpeg](img-29.jpeg)
+
 Source: In house figure based on the energy and greenhouse gas inventory for Münster
 STADT MÜNSTER
 
@@ -5841,7 +5824,7 @@ STADT MÜNSTER
 
 Climate-Neutrality Commitments
 
-#
+9
 
 A legal framework consistent with an expansion in renewable energy generation needs to be created (federal government)
 The human resources needed for energy-efficient refurbishment need to be available, particularly in the skilled building trades and building completion (commerce).
@@ -5892,6 +5875,8 @@ To this end, the wind turbine portfolio will be doubled to 42 wind turbines by 2
 STADT MÜNSTER
 
 Climate-Neutrality Commitments
+
+1
 
 Authorisation in accordance with the BlmSchG for 1 wind turbine in Lemgo with a nominal output of 5.7 MW (2024)
 Construction start and commissioning of at least one of three planned wind turbines in Südlohn Eschlohn/Wellschat with a total nominal output of 17.1 MW (2024)
@@ -6160,9 +6145,9 @@ STADT MÜNSTER
 
 Climate-Neutrality Commitments
 
-|   | interdisciplinary basis. The Advisory Board has represented a broad consensus in Münster society that climate protection needs to be a core issue that’s addressed by a large number of stakeholders working closely with politicians and the City Administration. Through its initiatives, reports and discussions with a wide variety of stakeholders, the Climate Advisory Board contributes to more effective climate protection and motivates others to aim for more ambitious climate protection. The Climate Advisory Board further considers itself to have a responsibility to provide critical advice and support to politicians, the administration and Münster society in general. In doing so, it can direct attention to the big picture in all its complexity. With this in mind, it will continue to critically monitor the Climate City Contract as a whole, develop proposals for modifications and continuously review to what extent Münster is on the path to achieving climate neutrality. |  |  |  |   |
+|   | interdisciplinary basis. The Advisory Board has represented a broad consensus in Münster society that climate protection needs to be a core issue that's addressed by a large number of stakeholders working closely with politicians and the City Administration. Through its initiatives, reports and discussions with a wide variety of stakeholders, the Climate Advisory Board contributes to more effective climate protection and motivates others to aim for more ambitious climate protection. The Climate Advisory Board further considers itself to have a responsibility to provide critical advice and support to politicians, the administration and Münster society in general. In doing so, it can direct attention to the big picture in all its complexity. With this in mind, it will continue to critically monitor the Climate City Contract as a whole, develop proposals for modifications and continuously review to what extent Münster is on the path to achieving climate neutrality. |  |  |  |   |
 | --- | --- | --- | --- | --- | --- |
-|  Knubel GmbH & Co. KG | Car dealer Knubel has been working in the energy management field since 2013, when it participated in Volkswagen’s Future Climate programme. It has since implemented the following:
+|  Knubel GmbH & Co. KG | Car dealer Knubel has been working in the energy management field since 2013, when it participated in Volkswagen's Future Climate programme. It has since implemented the following:
 installed three CHP units in their car dealerships;
 converted all of their eleven car dealerships to LED lighting; | Business, local | Limited Partnership with Limited Company as General Partner (Gesellschaft mit beschränkter Haftung & Compagnie Kommanditgesellschaft) | Werner Oesterbeck | Managing director  |
 
@@ -6292,7 +6277,7 @@ STADT MÜNSTER
 
 Climate-Neutrality Commitments
 
-|   | heating. In future, they will therefore focus on improving energy efficiency of their service centre, branch and other buildings. They are developing a roadmap for improving the energy footprint of their building stock. As a financial services company, Sparkasse Münsterland Ost believes that the most effective contribution it can make to climate protection in their business is with their local customers. In particular by providing funding for climate-friendly investments, ranging from energy-efficiency improvements to private homes to the transformation of entire business models for their commercial customers. In addition to granting loans and arranging public subsidies, they are increasingly focusing on raising awareness and providing advice on sustainability issues. In 2024, Sparkasse is once again supporting non-profit organisations and initiatives to realise sustainable ideas through its "sustainable together" funding campaign. A total of 100,000 euros is available for this purpose. CO₂ reduction in business operations, transformation advice for customers and the targeted promotion of voluntary climate protection projects - this trio of measures is Sparkasse Münsterland Ost's contribution to the Climate City Agreement.  |
+|   | heating. In future, they will therefore focus on improving energy efficiency of their service centre, branch and other buildings. They are developing a roadmap for improving the energy footprint of their building stock. As a financial services company, Sparkasse Münsterland Ost believes that the most effective contribution it can make to climate protection in their business is with their local customers. In particular by providing funding for climate-friendly investments, ranging from energy-efficiency improvements to private homes to the transformation of entire business models for their commercial customers. In addition to granting loans and arranging public subsidies, they are increasingly focusing on raising awareness and providing advice on sustainability issues. In 2024, Sparkasse is once again supporting non-profit organisations and initiatives to realise sustainable ideas through its "sustainable together" funding campaign. A total of 100,000 euros is available for this purpose. CO_{2} reduction in business operations, transformation advice for customers and the targeted promotion of voluntary climate protection projects - this trio of measures is Sparkasse Münsterland Ost's contribution to the Climate City Agreement.  |
 | --- | --- |
 
 9
@@ -6697,6 +6682,7 @@ Mit der Verabschiedung des Konzeptes im Sommer 2024 durch den Diözesanrat setzt
 
 Das Klimaschutzkonzept wird gefördert vom Bundesministerium für Wirtschaft und Klimaschutz aufgrund eines Beschlusses des Deutschen Bundestages.
 
+J. Telgmann
 Jasmin Telgmann
 Klimaschutzmanagerin
 Klimastadt-Vertrag – Beiträge aus der Stadtgesellschaft
@@ -7004,8 +6990,7 @@ Ansprechperson
 Thomas Hülsdau
 
 Transformationsziel
-Das Ziel unseres Transformationsfahrplans
-ist es, bis 2030 klimaneutral zu sein.
+Das Ziel unseres Transformationsfahrplans ist es, bis 2030 klimaneutral zu sein.
 
 Wir bekennen uns dazu, die Emissionen aus der Verbrennung fossiler Energieträger durch eigene Anlagen und Fahrzeuge bis zum Jahr 2030 auf Null zu reduzieren und 100 % des elektrischen Stroms aus erneuerbaren Quellen zu beziehen. Die Verbrennung fossiler Energieträger erfolgt bei Hengst Filtration im Wesentlichen in Form von Erdgas zur Beheizung von Produktions- und Lagerhallen und Büros sowie in diversen Produktionsprozessen. Diese Verbrennungsprozesse werden wir bis zum Jahr 2030 nach und nach substituieren oder derart umgestalten, dass keine fossilen Energieträger mehr verbrannt werden. Dazu starten wir in 2023 mit der Erarbeitung eines Transformationskonzeptes für die Standorte Münster und Nordwalde, in denen der größte Erdgasverbrauch der Hengst Gruppe zu verzeichnen ist.
 
@@ -7707,7 +7692,7 @@ Unser Haus wird dieses Jahr sowohl die Lüftungsanlagen in Restaurant und Küche
 P. Nilsson
 Patricia Nilsson
 General Manager
-.
+“哈，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，你是个小伙子，
 Klimastadt-Vertrag – Beiträge aus der Stadtgesellschaft
 Beiträge Unternehmen &amp; Institutionen
 
@@ -7734,8 +7719,6 @@ Dieser Bericht definiert klare Nachhaltigkeitsziele und dokumentiert Fortschritt
 Der Nachhaltigkeitsbericht dient zudem als Kommunikationsmittel, um bei Stakeholdern wie Kund*innen, Investor*innen und der Öffentlichkeit Transparenz zu schaffen, das Engagement für Nachhaltigkeit zu demonstrieren und Vertrauen zu stärken. Mit diesem Bericht bekräftigt die Peter Rose Garten- und Landschaftsbau GmbH ihr Engagement für die Umwelt und leistet einen wesentlichen Beitrag zur Erreichung der Klimaneutralität in Münster.
 
 Das Unternehmen positioniert sich damit zusätzlich als Vorreiter in der grünen Branche.
-
-![img-75.jpeg](img-75.jpeg)
 
 Peter Rose
 Geschäftsführung
@@ -7773,7 +7756,7 @@ Martin-John Kortmoller
 Website
 www.schoenergie.de
 
-![img-76.jpeg](img-76.jpeg)
+![img-75.jpeg](img-75.jpeg)
 
 Wir sind ein Unternehmen welches Photovoltaik-Anlagen mit Batteriespeicher-Systemen und Ladeinfrastruktur für Privat-, Gewerbe- und Industriekunden hier in Münster anbietet und schlüsselfertig baut. Zusätzlich wird die vollständige Entwicklung und der Betrieb von Photovoltaik Freiflächen-Anlagen im Raum Münster, realisiert. Somit ist es möglich durch in Münster und Umgebung installierte Photovoltaik-Anlagen, erneuerbare Energie zu erzeugen, direkt vor Ort zu verbrauchen und lokal zu vermarkten. Für 2024 ist es das Ziel, Photovoltaik-Anlagen mit einer Leistung von ca. 1.300 kWp zu installieren. Die erzeugte Strommenge entspricht ca. 1,170 Mio. Kilowattstunden Solarstrom und somit eine Reduktion der fossilen Stromerzeugung und eine Einsparung von ca. 930 Tonnen CO₂.
 
@@ -7789,7 +7772,7 @@ Ein weiterer Austausch von Verbrennerfahrzeugen findet in diesem Jahr statt. Dur
 
 Ergänzend unterstützt die öko-dynamische Steuerung die priorisierte Nutzung des durch die Photovoltaik-Anlage erzeugten Stroms. Diese Maßnahmen führen zu einer erheblichen Einsparung von CO₂-Emissionen sowie einer entsprechenden Entlastung des Versorgernetzes.
 
-![img-77.jpeg](img-77.jpeg)
+![img-76.jpeg](img-76.jpeg)
 
 Erik Schöller
 Geschäftsführung
@@ -7815,7 +7798,7 @@ www.sinn-kongress.de
 
 Münsters Kongress für Soziale Innovationen
 
-![img-78.jpeg](img-78.jpeg)
+![img-77.jpeg](img-77.jpeg)
 
 Eine zukunftsfähige Gesellschaft ist eine sozial gerechte und ökologisch tragfähige Gesellschaft. Sie überwindet die vielfältigen, sich gegenseitig verstärkenden Krisen unserer Zeit. Sie erreicht Engagement, Kreativität und einen tiefgreifenden Wandel unserer Lebens- und Wirtschaftsweise.
 
@@ -7823,7 +7806,7 @@ S!NN – Münsters Kongress für Soziale Innovationen – lädt Münsteraner*inn
 
 diese erreichen können. S!NN bedeutet, mit Neugier, Optimismus, Konstruktivität und Lernbereitschaft eigene Schritte zu gehen. Kritisch und selbstreflexiv, aber immer wertschätzend und neugierig auf Veränderung. Von Wirtschaftsverbänden über Politik und Wissenschaft bis hin zu NGOs – gemeinsam zuhören und diskutieren, voneinander lernen und sich gegenseitig inspirieren. Mit Keynotes, Panel-Talks und interaktiven Workshops. Mit großzügigen Vernetzungslandschaften, mit Kunst &amp; Kultur und in Selbstlernräumen. S!NN ist kein Kongress wie jeder andere. S!NN ist ein Möglichkeitsraum für eine nachhaltige Zukunft. Mit dem S!NN-Kongress vernetzen wir Menschen, die sich die ökosoziale Transformation zur Aufgabe gemacht haben. Von Wirtschaft und Wissenschaft über Politik bis hin zur engagierten Zivilgesellschaft – wir bringen alle zusammen, die mit Neugier und Optimismus an nachhaltigen Lösungen für unsere Zukunft arbeiten. Positive Beiträge zur Klimaneutralität müssen von der Gesellschaft getragen werden. Veranstaltungen wie der S!NN-Kongress sorgen dafür, dass Menschen und Organisationen mitgenommen werden. Sie sind der Nährboden, sie machen mehrheitsfähig und wirken in den Alltag hinein. Hier entstehen Lösungen für den Wandel zur klimaneutralen Stadt. Nicht in einer akademischen Blase, sondern in der Mitte der Gesellschaft.
 
-![img-79.jpeg](img-79.jpeg)
+![img-78.jpeg](img-78.jpeg)
 
 Björn Fischer
 
@@ -7845,7 +7828,7 @@ www.sparkasse-muensterland-ost.de
 Sparkasse
 Münsterland Ost
 
-![img-80.jpeg](img-80.jpeg)
+![img-79.jpeg](img-79.jpeg)
 
 Die Sparkasse Münsterland Ost zählt zu den Großsparkassen in Deutschland. Die Nähe zu ihren Kundinnen und Kunden zeichnet sie aus. Vertrauen und Verlässlichkeit sind die Leitplanken ihres Handelns.
 
@@ -7879,7 +7862,7 @@ Mit der Förderaktion „gemeinsam nachhaltig“ unterstützt die Sparkasse in 2
 
 $\mathrm{CO}_{2}$-Reduktion im Geschäftsbetrieb, Transformationsberatung von Kundinnen und Kunden und die gezielte Förderung von ehrenamtlichen Klimaschutzprojekten – mit diesem Maßnahmen-Trio leistet die Sparkasse Münsterland Ost ihren Beitrag zum Klimastadt-Vertrag.
 
-![img-81.jpeg](img-81.jpeg)
+![img-80.jpeg](img-80.jpeg)
 
 Klaus Richter
 Vorstandsvorsitzender
@@ -7923,7 +7906,7 @@ Linus Weistropp
 Website
 www.superbiomarkt.de
 
-![img-82.jpeg](img-82.jpeg)
+![img-81.jpeg](img-81.jpeg)
 
 Für uns ist Energiesparen und ein ressourcenschonender Umgang seit jeher in unserer DNA fest verwurzelt.
 
@@ -7961,7 +7944,7 @@ Bei C2C geht es darum, Materialien von Anfang an im Produktdesign sowie im Nutzu
 
 Letztlich soll ein Wissenstransfer zu diesen Konzepten die Zirkularität im Handwerk nicht nur fördern, sondern auch befähigen. Dieser Ort hat das Potenzial, eine starke Wirkung im Rahmen der gesamtstädtischen Kreislaufstrategie für Münster zu entfalten, indem von dort aus auch kommunale Material- und Stoffströme von der öffentlichen Hand organisiert werden können. Insgesamt bieten die Handwerkshöfe eine inspirierende Plattform für zirkuläre Wertschöpfung. So können der schonende und zirkuläre Umgang mit Ressourcen sowie der interdisziplinäre Wissensaustausch gefördert werden.
 
-![img-83.jpeg](img-83.jpeg)
+![img-82.jpeg](img-82.jpeg)
 
 Fabian Bergfort
 CEO &amp; CO-Founder
@@ -7979,7 +7962,7 @@ www.fh-muenster.de
 Ansprechperson
 Timo Adiek
 
-![img-84.jpeg](img-84.jpeg)
+![img-83.jpeg](img-83.jpeg)
 
 ## Social Entrepreneurship Education:
 
@@ -8021,7 +8004,7 @@ Nico Schäfer
 Website
 www.uni-muenster.de
 
-![img-85.jpeg](img-85.jpeg)
+![img-84.jpeg](img-84.jpeg)
 
 Universität Münster
 
@@ -8049,7 +8032,7 @@ versität die Funktion wahr, Nachhaltigkeitsforschung, -lehre und -transfer fach
 
 Transfer definiert die Universität Münster als Übernahme ihrer zivilgesellschaftlichen Verantwortung in allen Gesellschaftsbereichen. Um diesem Anspruch gerecht zu werden, tritt die Universität Münster in den intensiven Austausch mit gesellschaftlichen Akteur*innen. Transferaktivitäten unter dem Gesichtspunkt der Nachhaltigkeit sind am Gemeinwohl orientiert und liefern einen Beitrag zur partizipativen (Weiter-)Entwicklung der Gesellschaft hin zu einer sozial-ökologisch nachhaltigen Lebensweise. Mit ihrem Transfer leistet die Universität Münster einen Beitrag, Bildung für Nachhaltige Entwicklung auch außeruniversitär zu vermitteln. Ein zentrales Instrument hierfür ist der jährlich stattfindende Nachhaltigkeitstag (Campus Earth) der Universität. Weitere Informationen erhalten Sie unter: www.uni-muenster.de/profil/nachhaltigkeit/strategie/index.html
 
-![img-86.jpeg](img-86.jpeg)
+![img-85.jpeg](img-85.jpeg)
 Klimastadt-Vertrag – Beiträge aus der Stadtgesellschaft
 Beiträge Unternehmen &amp; Institutionen
 
@@ -8064,7 +8047,7 @@ Lucienne Usztics |   |
 
 Das UKM hat sich im Rahmen der Nationalen Klimaschutzinitiative und mit einer Förderung durch das Bundesklimaschutzministerium auf den Weg gemacht ein Klimaschutzkonzept für das UKM zu erstellen. Dieses sieht vor, den Ist-Zustand der Energieverbräuche und Treibhausgasemissionen zu erheben, Potentiale zu ermitteln, Ziele, Strategien und Handlungsfelder zu definieren, konkrete Klimaschutzmaßnahmen auszuarbeiten, aufzuzeigen wie Akteure und Akteurinnen einbezogen werden können und wie die Verstetigung, das Controlling sowie die Kommunikation im Klimaschutzmanagement erfolgen sollte. Finale Ziele sind es ein Klimaschutzmanagement aufzubauen, Klimaschutz in der Unternehmenskultur zu verankern und nationale sowie lokale Klimaschutzziele zu unterstützen.
 
-![img-87.jpeg](img-87.jpeg)
+![img-86.jpeg](img-86.jpeg)
 Klimastadt-Vertrag – Beiträge aus der Stadtgesellschaft
 
 Beiträge Unternehmen &amp; Institutionen
@@ -8112,16 +8095,16 @@ Nachhaltigkeitsquoten bei den Eigenanlagen.
 
 Detaillierte Ausführungen der Nachhaltigkeitsbemühungen finden sich im jährlichen Nachhaltigkeits- und Geschäftsbericht (https://jahresbericht.vbmn.de).
 
-![img-88.jpeg](img-88.jpeg)
+![img-87.jpeg](img-87.jpeg)
 
-![img-89.jpeg](img-89.jpeg)
+![img-88.jpeg](img-88.jpeg)
 Klimastadt-Vertrag – Beiträge aus der Stadtgesellschaft
 
 Beiträge Unternehmen &amp; Institutionen
 
 # Umfangreiche Klimamaßnahmen in vielen Bereichen
 
-![img-90.jpeg](img-90.jpeg)
+![img-89.jpeg](img-89.jpeg)
 
 Unternehmen
 
@@ -8135,7 +8118,7 @@ Website
 
 www.weicon.de
 
-![img-91.jpeg](img-91.jpeg)
+![img-90.jpeg](img-90.jpeg)
 
 ## Verantwortungsvoller Umgang mit Energie
 
@@ -8171,7 +8154,7 @@ FSC-zertifizierte Papierhandtücher
 Verzicht auf Werbemittel, alternativ jährliche Spenden an soziale Projekte (lokal und international)
 Eigene rein vegetarische Kantine für Mitarbeitende und benachbarte Firmen
 
-![img-92.jpeg](img-92.jpeg)
+![img-91.jpeg](img-91.jpeg)
 Klimastadt-Vertrag – Beiträge aus der Stadtgesellschaft
 Beiträge Unternehmen &amp; Institutionen
 
@@ -8189,7 +8172,7 @@ Wir wollen bis 2045 klimaneutral sein.
 Website
 www.westfalen.com
 
-![img-93.jpeg](img-93.jpeg)
+![img-92.jpeg](img-92.jpeg)
 
 # Westfalen
 
@@ -8260,7 +8243,7 @@ Beiträge für den Klimastadt-Vertrag
 
 Beiträge Initiativen, Vereine &amp; Bürger*innen
 
-![img-94.jpeg](img-94.jpeg)
+![img-93.jpeg](img-93.jpeg)
 Klimastadt-Vertrag – Beiträge aus der Stadtgesellschaft
 Beiträge Initiativen, Vereine &amp; Bürger*innen
 
@@ -8290,9 +8273,9 @@ Dr. Sebastian Köffer
 Website
 www.digitalhub.ms
 
-![img-95.jpeg](img-95.jpeg)
+![img-94.jpeg](img-94.jpeg)
 
-![img-96.jpeg](img-96.jpeg)
+![img-95.jpeg](img-95.jpeg)
 
 Der Digital Hub münsterLAND mit seinem angeschlossenen FabLab Makerspace bietet eine offene Experimentier- und Testumgebung für digitale Projekte und Vorhaben. Das Ganze ist eingebettet in eine regionale Community zur Vernetzung von Startups, Unternehmen und Hochschulen und bietet die physische und digitale Infrastruktur für Innovationsprojekte, eigene Ideen und einen Anlaufpunkt zum Austausch mit anderen Vordenker*innen und Macher*innen. Auf diese Weise trägt die offene Werkstatt zur Förderung einer Kultur der Nachhaltigkeit und Innovation bei, die für das Erreichen der Klimaneutralität in Großstädten unerlässlich ist. Unter anderem lassen sich folgende Beiträge festhalten:
 
@@ -8387,9 +8370,9 @@ Move and Meet e. V.
 Ansprechperson
 Laura Verweyen
 
-![img-97.jpeg](img-97.jpeg)
+![img-96.jpeg](img-96.jpeg)
 
-![img-98.jpeg](img-98.jpeg)
+![img-97.jpeg](img-97.jpeg)
 
 Das Projekt „Bike and Meet“ läuft seit Sommer 2022. Es wird vom Verein Move and Meet e. V. geleitet und in Kooperation mit der AWO/Stadtteilbüro Coerde und dem Verein Bike Bridge e. V. durchgeführt. Das Projekt umfasst:
 
@@ -8457,7 +8440,7 @@ Julia von Hayn
 Website
 www.stadt-muenster.de/klima/klimafreundlich-leben
 
-![img-99.jpeg](img-99.jpeg)
+![img-98.jpeg](img-98.jpeg)
 
 Der Klimaschutz ist eine gesellschaftliche Aufgabe, für die jede*r Einzelne Verantwortung trägt und zu der alle einen Beitrag leisten können und müssen. Viele Bürger*innen möchten nachhaltiger leben, deshalb ist es so wichtig, dies bestenfalls allen Menschen zu ermöglichen. Oftmals fehlt im persönlichen Umfeld der Impuls oder eine konkrete Strategie, um vom Wollen ins Handeln zu kommen. Das ist jedoch zwingend notwendig, um Klimaschutz auch im persönlichen Alltag umsetzen zu können.
 
@@ -8499,7 +8482,7 @@ Dorothee Speich
 
 Hiermit bitten wir, die Nachbarschaftsinitiative Platanenpower, das Grundstück an der Wolbecker Straße 140 (frühere Aral Tankstelle) zu entsiegeln und dort einen Tiny Forest nach der Methode von Akira Miyazaki anzulegen. 2019 rief die Stadt Münster den Klimanotstand aus und setzte sich zum Ziel bis 2030 Klimaneutralität zu erreichen. Die Stadt ging damit eine Selbstverpflichtung ein, in Zukunft bei allen Entscheidungen den Klimaschutz stärker zu berücksichtigen. Jetzt steht eine Entscheidung an, wie dieses Grundstück weiter genutzt wird. Hier an diesem Grundstück kann die Stadt Münster deutlich machen, wie ernst sie ihrer Verpflichtung nachkommen wollen. In einem Beschluss des Ausschusses für Umwelt, Klima und Bauen Anfang 2021 haben die Fraktionen für neue Baugebiete festgelegt, dass Vorgarten grundsätzlich als bepflanzte Fläche zu gestalten sind. Die Stadt Münster hielt fest, dass die klimatischen Unterschiede zwischen grünen Vorgarten und versiegelter Fläche/Schotter kein subjektives Empfinden, sondern auch Ergebnis einer Modelluntersuchung des Landes Hessen ist. Tagsüber lagen hierbei auf Schotterflächen die Temperaturen meist um 10 Grad höher als über der Pflanzfläche. Jetzt hat die Stadt Münster eine großartige Gelegenheit ihr Engagement und die Ernsthaftigkeit für den Klimaschutz zu beweisen. Es geht nicht um einen Vorgarten, es geht um eine Fläche von über 600 qm. Gerade dort gibt es ein sehr hohes Verkehrsaufkommen, eine dichte Besiedlung / Versiegelung. Wir bitten darum, dass die Stadt Münster den Mut hat, wie auch andere Städte, zum Beispiel Herford oder Almere in den Niederlanden, genau dort wo man aus dem Grundstück viel Profit erzielen könnte, den Bewohnenden eine kleine,
 
-ökologisch wichtige Oase zu geben. Nein, keine fünf Stadtbäume für je 2.000 €, sondern eine Fläche, die nach der Anlage und zwei bis drei Jahren leichter Pflege keine weiteren laufenden Kosten erzeugt. Wir benötigen innerhalb der Stadt Flächen für Grün und Lebensqualität, keine Ausgleichsflächen. Hier könnte etwas bislang Neues entstehen, dass die Lebensqualität, dem Klimaschutz, der biologischen Vielfalt, der Luftreinhaltung und dem Gewässerschutz zuträglich ist. 2019 hat der Rat die Stadt Münster verpflichtet, sich regelmäßig mit den Auswirkungen und Folgen der CO₂-Emissionen zu befassen, und sich über die Maßnahmen zur Verringerung informieren zu lassen. Daher fordern wir die Stadt Münster auf jetzt uns Bürgern und Bürgerinnen der Stadt Münster anhand dieses Grundstücks zu zeigen, wie ernsthaft und ehrlich Sie der Verpflichtung nach dem Ausruf des Klimanotstandes 2019 nachkommen. Bislang nimmt Münster mit der stärksten Flächenbodenversiegelung in NRW den schlechten vierten Platz* ein. Es wäre jetzt ein guter Zeitpunkt damit zu beginnen, das gesteckte Ziel Klimaneutralität 2030 anzugehen.
+ökologisch wichtige Oase zu geben. Nein, keine fünf Stadtbäume für je 2.000 €, sondern eine Fläche, die nach der Anlage und zwei bis drei Jahren leichter Pflege keine weiteren laufenden Kosten erzeugt. Wir benötigen innerhalb der Stadt Flächen für Grün und Lebensqualität, keine Ausgleichsflächen. Hier könnte etwas bislang Neues entstehen, dass die Lebensqualität, dem Klimaschutz, der biologischen Vielfalt, der Luftreinhaltung und dem Gewässerschutz zuträglich ist. 2019 hat der Rat die Stadt Münster verpflichtet, sich regelmäßig mit den Auswirkungen und Folgen der CO₂-Emissionen zu befassen, und sich über die Maßnahmen zur Verringerung informieren zu lassen. Daher fordern wir die Stadt Münster auf jetzt uns Bürgern und Bürgerinnen der Stadt Münster anhand dieses Grundstückes zu zeigen, wie ernsthaft und ehrlich Sie der Verpflichtung nach dem Ausruf des Klimanotstandes 2019 nachkommen. Bislang nimmt Münster mit der stärksten Flächenbodenversiegelung in NRW den schlechten vierten Platz* ein. Es wäre jetzt ein guter Zeitpunkt damit zu beginnen, das gesteckte Ziel Klimaneutralität 2030 anzugehen.
 
 Unsere persönlichen Beiträge zur Umsetzung des Vorhabens sind folgende:
 
@@ -8546,14 +8529,14 @@ Wir sind als Homo sapiens, wie alle wissen, zu weit gegangen. Also müssen wir r
 
 Was habe ich gemacht: Als 1. habe ich mein Auto verschenkt und ein Fahrrad gekauft 2. bin ich aus der Kirche ausgetreten 3. bin ich Vegetarier (ovo-lakto) geworden 4. Habe ich die Grünen mit aufgebaut (Im Ökoländbau gejobt) 5. Permakultur gelernt 6. Nichtraucher geworden usw. Heute als Rentner, lebe ich auf 35 m² mein Stromverbrauch beträgt ca: 850 kWh und ich heize nie: „Mittelwohnung"!
 
-Sport: Tischtennis (Mo.) zusätzlich radele ich in die Stadt zum Bioladen. Heute, bei 10 Grad Celsius, sehe ich wie seit Jahren, etliche Läden die Türen sperrangelweit auf haben und die Fußgängerzone mit heizen!? Was ich tun kann, tue ich.
+Sport: Tischtennis (Mo.) zusätzlich radele ich in die Stadt zum Bioladen. Heute, bei 10 Grad Celsius, sehe ich wie seit Jahren, etliche Läden die Türen sperrangelweit aufhaben und die Fußgängerzone mit heizen!? Was ich tun kann, tue ich.
 
 # Bewusster Holzverbrauch
 
 Bürgerin
 Monique Eberhardt
 
-![img-100.jpeg](img-100.jpeg)
+![img-99.jpeg](img-99.jpeg)
 
 Ich verbrauche wenig(er) Holz und will einen Forst zum Naturwald werden lassen. Ich kaufe bevorzugt gebrauchte Möbel aus Holz, nutze ein Reise-Bidet sowie recyceltes Toiletten- und Schreibpapier. Formulare fülle ich gerne online aus und erhalte die Lohn-abrechnungen digital. Ich versuche Transport-Kartons wiederzuverwenden oder zu vermeiden. So müssen weniger Bäume gefällt werden und Kohlenstoff in ihrer Biomasse und unter ihnen im Boden bleibt gespeichert. Von Holzplantage zum lebendigem Wald. In Zukunft möchte ich einen Forst kaufen und ihn auch über meinem Tod hinaus naturnah absichern lassen (nur spazieren, Pilze &amp; Beeren &amp; Kräuter sammeln, Survival-Wochenende und Waldbaden), sodass sich langsam ein Naturwald mit vielen Tonnen CO₂ in Stämmen, Totholz und Boden entwickeln kann.
 Klimastadt-Vertrag – Beiträge aus der Stadtgesellschaft
@@ -8566,7 +8549,7 @@ Bürger
 
 Bernd Genheimer
 
-![img-101.jpeg](img-101.jpeg)
+![img-100.jpeg](img-100.jpeg)
 
 Ein ausgearbeiteter Plan hilft mir mein eigenes zu Hause (und das jedes anderen motivierten Bürgers und jeder anderen motivierten Bürgerin, egal ob gemietet oder im Eigentum) klimaneutral und nachhaltig zu gestalten. Basierend auf den 17 Nachhaltigkeitszielen der UN fokussiere ich mich auf das Machbare, gestalte Strategien und Aktionen, messen deren Erfolg und begebe mich Schritt für Schritt in eine nachhaltige Zukunft.
 
@@ -8655,7 +8638,7 @@ Bürger
 
 Jochen Witt
 
-![img-102.jpeg](img-102.jpeg)
+![img-101.jpeg](img-101.jpeg)
 
 ## Projekt-Ziel
 
@@ -8663,9 +8646,9 @@ Erstellung einer ersten Machbarkeitsstudie, ob der Endenergiebedarf von Münster
 
 Im Folgenden beschreibe ich mein geplantes Vorgehen. Die [#] sind dabei nicht als Quellenhinweise zu verstehen, sondern beziehen sich auf meine Annahmen und Vorschläge und sollen eine Diskussion im Falle einer Kontaktaufnahme erleichtern (siehe unten).
 
-Zunächst soll der Bedarf analysiert werden, der sich meinen Berechnungen zufolge wie folgt darstellt: Münster hat zur Zeit einen jährlichen Endenergiebedarf von 6.156 GWh [#1]. Dies entspricht etwa der Energiemenge, die ein 2/3 Atomkraftwerk liefert [#2]. Um diese Energiemenge mit Solarpanelen zu decken, bräuchte man für die Solarparks ein Drittel der
+Zunächst soll der Bedarf analysiert werden, der sich meinen Berechnungen zufolge wie folgt darstellt: Münster hat zur Zeit einen jährlichen Endenergiebedarf von 6.156 GWh [#1]. Dies entspricht etwa der Energiemenge, die ein ⅔ Atomkraftwerk liefert [#2]. Um diese Energiemenge mit Solarpanelen zu decken, bräuchte man für die Solarparks ein Drittel der
 
-gesamten Stadtfläche [#3]. Es fehlt auch die Fläche, um diesen Energiebedarf mit Windkraftanlagen (WKA) zu decken, denn dann bräuchte man pro qkm der Stadtfläche 1 WKA mit 160 m Nabenhöhe, höher als der Kölner Dom [#4]. Missverständnisse entstehen häufig, weil die projektierten „80 % Deckung des Energiebedarfs durch Erneuerbare Energien“ sich nicht auf den Endenergiebedarf beziehen, sondern nur auf Strom – der daran einen Anteil von etwa 1/3 hat [#5]. Zu lösen ist auch das Problem, dass Sonne und Wind Variabilitäten aufweisen, die sie nicht grundlastfähig machen.
+gesamten Stadtfläche [#3]. Es fehlt auch die Fläche, um diesen Energiebedarf mit Windkraftanlagen (WKA) zu decken, denn dann bräuchte man pro qkm der Stadtfläche 1 WKA mit 160 m Nabenhöhe, höher als der Kölner Dom [#4]. Missverständnisse entstehen häufig, weil die projektierten „80 % Deckung des Energiebedarfs durch Erneuerbare Energien“ sich nicht auf den Endenergiebedarf beziehen, sondern nur auf Strom – der daran einen Anteil von etwa ⅓ hat [#5]. Zu lösen ist auch das Problem, dass Sonne und Wind Variabilitäten aufweisen, die sie nicht grundlastfähig machen.
 
 ## Besonderheit des von mir vertretenen Ansatzes
 

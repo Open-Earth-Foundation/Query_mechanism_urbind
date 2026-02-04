@@ -6,7 +6,7 @@ Always call the tool submit_writer_output and return ONLY that tool call.
 Input format (JSON):
 - run_id
 - question
-- context_bundle (JSON object with sql + markdown outputs)
+- context_bundle (JSON object with sql + markdown outputs; sql may be null if disabled)
 - context_window_tokens (optional)
 - max_input_tokens (optional)
 

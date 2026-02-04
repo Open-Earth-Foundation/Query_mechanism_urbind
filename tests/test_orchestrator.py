@@ -2,7 +2,15 @@ import json
 import sqlite3
 from pathlib import Path
 
-from app.utils.config import AppConfig, AgentConfig, MarkdownResearcherConfig, OrchestratorConfig, SqlResearcherConfig
+import pytest
+
+from app.utils.config import (
+    AppConfig,
+    AgentConfig,
+    MarkdownResearcherConfig,
+    OrchestratorConfig,
+    SqlResearcherConfig,
+)
 from app.modules.orchestrator.module import run_pipeline
 from app.modules.orchestrator.models import OrchestratorDecision
 from app.modules.sql_researcher.models import SqlQuery, SqlQueryPlan
@@ -10,14 +18,28 @@ from app.modules.markdown_researcher.models import MarkdownExcerpt, MarkdownRese
 from app.modules.writer.models import WriterOutput
 
 
-def _stub_sql_plan(question, schema_summary, city_names, run_id, config, api_key, **_kwargs):
+def _stub_sql_plan(
+    question: str,
+    schema_summary: dict,
+    city_names: list[str],
+    run_id: str,
+    config: AppConfig,
+    api_key: str,
+    **_kwargs: dict[str, object],
+) -> SqlQueryPlan:
     return SqlQueryPlan(
         run_id=run_id,
         queries=[SqlQuery(query_id="q1", query="SELECT cityName FROM City")],
     )
 
 
-def _stub_markdown(question, documents, run_id, config, api_key):
+def _stub_markdown(
+    question: str,
+    documents: list[dict[str, str]],
+    run_id: str,
+    config: AppConfig,
+    api_key: str,
+) -> MarkdownResearchResult:
     excerpt = MarkdownExcerpt(
         snippet="Sample",
         city_name="Munich",
@@ -27,15 +49,29 @@ def _stub_markdown(question, documents, run_id, config, api_key):
     return MarkdownResearchResult(run_id=run_id, excerpts=[excerpt])
 
 
-def _stub_decision(question, context_bundle, run_id, config, api_key):
+def _stub_decision(
+    question: str,
+    context_bundle: dict,
+    run_id: str,
+    config: AppConfig,
+    api_key: str,
+) -> OrchestratorDecision:
     return OrchestratorDecision(run_id=run_id, action="write", reason="Enough")
 
 
-def _stub_writer(question, context_bundle, run_id, config, api_key):
+def _stub_writer(
+    question: str,
+    context_bundle: dict,
+    run_id: str,
+    config: AppConfig,
+    api_key: str,
+) -> WriterOutput:
     return WriterOutput(run_id=run_id, content="# Answer\n\nStub")
 
 
-def test_run_pipeline_creates_artifacts(tmp_path, monkeypatch):
+def test_run_pipeline_creates_artifacts(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
     monkeypatch.setenv("OPENROUTER_API_KEY", "test")
 
     db_path = tmp_path / "source.db"
@@ -57,6 +93,7 @@ def test_run_pipeline_creates_artifacts(tmp_path, monkeypatch):
         runs_dir=tmp_path / "output",
         source_db_path=db_path,
         markdown_dir=docs_dir,
+        enable_sql=True,
     )
 
     paths = run_pipeline(
@@ -72,3 +109,37 @@ def test_run_pipeline_creates_artifacts(tmp_path, monkeypatch):
     run_log = json.loads(paths.run_log.read_text(encoding="utf-8"))
     assert run_log["status"] == "completed"
     assert Path(run_log["artifacts"]["final_output"]).exists()
+
+
+def test_run_pipeline_sql_disabled_skips_db(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    monkeypatch.setenv("OPENROUTER_API_KEY", "test")
+
+    docs_dir = tmp_path / "documents"
+    docs_dir.mkdir()
+    (docs_dir / "Munich.md").write_text("# Munich\n\nSample", encoding="utf-8")
+
+    config = AppConfig(
+        orchestrator=OrchestratorConfig(model="test", context_bundle_name="context_bundle.json"),
+        sql_researcher=SqlResearcherConfig(model="test", max_result_tokens=100000),
+        markdown_researcher=MarkdownResearcherConfig(model="test"),
+        writer=AgentConfig(model="test"),
+        runs_dir=tmp_path / "output",
+        source_db_path=tmp_path / "missing.db",
+        markdown_dir=docs_dir,
+        enable_sql=False,
+    )
+
+    paths = run_pipeline(
+        question="What initiatives exist for Munich?",
+        config=config,
+        sql_plan_func=_stub_sql_plan,
+        markdown_func=_stub_markdown,
+        decide_func=_stub_decision,
+        writer_func=_stub_writer,
+    )
+
+    assert paths.final_output.exists()
+    run_log = json.loads(paths.run_log.read_text(encoding="utf-8"))
+    assert run_log["status"] == "completed"
