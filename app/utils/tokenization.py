@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Optional
-
 import tiktoken
 
 
@@ -32,11 +30,11 @@ def chunk_text(text: str, max_tokens: int, overlap_tokens: int = 0) -> list[str]
 
 
 def get_max_input_tokens(
-    context_window_tokens: Optional[int],
-    max_output_tokens: Optional[int],
+    context_window_tokens: int | None,
+    max_output_tokens: int | None,
     input_token_reserve: int,
-    max_input_tokens: Optional[int],
-) -> Optional[int]:
+    max_input_tokens: int | None,
+) -> int | None:
     if max_input_tokens is not None:
         return max_input_tokens
     if context_window_tokens is None:
