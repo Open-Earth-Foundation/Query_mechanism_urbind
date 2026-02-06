@@ -1,4 +1,5 @@
-# NZ Cities Climate Contracts - Initial Scan Part 2: Finance, Governance & Engagement
+# Net Zero Cities Climate Contracts - Initial Scan Part 2: Finance, Governance & Engagement
+
 
 ## 1. Finance
 What budgets or funding have the cities appropriated to undertake the initiative?
@@ -12,8 +13,12 @@ What governance challenges or successes are most frequently cited (e.g., politic
 Is there anything in the Climate Contracts where the cities articulate capability needs, policy and/or regulatory changes?
 
 ## 3. Collective Analysis & Cross-City Patterns
-What is the aggregated ambition across all NZ cities for climate neutrality and emissions reduction?
-What common transformation domains and initiatives span across multiple NZ cities?
+
+### Portfolio-Level Ambition and Alignment
+What is the aggregated ambition across all Net Zero Cities for climate neutrality and emissions reduction?
+What common transformation domains and initiatives span across multiple Net Zero Cities?
+
+### Systemic Dependencies and Sequencing
 What are the most critical systemic linkages or dependencies that affect timing and cost across the city portfolio?
 To what extent are NZ cities utilizing shared financing mechanisms or exploring consortium-based funding approaches?
 What are the key differences in climate strategies between different city typologies within the NZ context?

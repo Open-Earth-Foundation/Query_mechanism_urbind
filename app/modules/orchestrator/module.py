@@ -469,23 +469,22 @@ def _run_orchestration_loop(
                 return result
             continue
 
-        # Handle markdown decision
+        # Handle markdown decision (disabled after initial run)
         if decision.action == "run_markdown":
-            follow_up = decision.follow_up_question or question
-            result = handle_markdown_decision(
-                follow_up,
-                documents,
+            logger.info(
+                "Orchestrator requested markdown re-run; skipping and writing with existing context."
+            )
+            result = handle_write_decision(
+                question,
+                context_bundle,
                 paths,
                 run_logger,
                 run_log_handler,
+                writer_func,
                 config,
                 api_key,
-                markdown_func,
-                write_json,
             )
-            if result:
-                return result
-            continue
+            return result
 
         # Handle stop decision
         if decision.action == "stop":

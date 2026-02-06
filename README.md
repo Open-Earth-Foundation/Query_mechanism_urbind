@@ -35,6 +35,7 @@ uv pip install -e .
 - `DATABASE_URL` (used as source DB and by `test_db_connection`)
 - `MARKDOWN_DIR`
 - `LOG_LEVEL`
+- `LOG_LLM_PAYLOAD` (set to true to log full LLM request/response payloads)
 - `OPENROUTER_BASE_URL` (optional override)
 
 Example `.env.example` is provided.

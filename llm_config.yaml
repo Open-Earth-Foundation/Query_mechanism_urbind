@@ -13,12 +13,14 @@ markdown_researcher:
   model: "x-ai/grok-4.1-fast"
   context_window_tokens: 400000
   input_token_reserve: 20000
-  max_chunk_tokens: 100000
+  max_chunk_tokens: 50000
   chunk_overlap_tokens: 2000
-  max_workers: 4
+  max_workers: 1
   max_retries: 2
   retry_base_seconds: 0.8
   retry_max_seconds: 6.0
+  request_backoff_base_seconds: 2.0
+  request_backoff_max_seconds: 10.0
 writer:
   model: "openai/gpt-5.2"
   context_window_tokens: 400000

@@ -37,6 +37,8 @@ class MarkdownResearcherConfig(AgentConfig):
     max_retries: int = 2
     retry_base_seconds: float = 0.8
     retry_max_seconds: float = 6.0
+    request_backoff_base_seconds: float = 2.0
+    request_backoff_max_seconds: float = 10.0
 
 
 class AppConfig(BaseModel):

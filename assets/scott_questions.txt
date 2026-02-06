@@ -1,4 +1,6 @@
-# NZ Cities Climate Contracts - Initial Scan Part 1: Targets, Priorities & Projects
+# Net Zero Cities Climate Contracts - Initial Scan Part 1: Targets, Priorities & Projects
+
+> **Note:** NZ / NZC = **Net Zero Cities** (not New Zealand)
 
 ## 1. Targets & Priorities
 What targets have cities set for each opportunity transformation?
@@ -17,6 +19,15 @@ How are pilot projects being scaled into citywide programs?
 What monitoring or verification systems are in place to track performance and impact?
 
 ## 3. Contextual Factors and City Characteristics (Part 1)
+
+### Overview of City Typologies and Differentiation
 What are differences in initiatives visible based upon size, population demographics, characteristics and physical dimensions of the city, age of infrastructure, city economics (budgets, capital investment, GDP, employment, inflation, tax rates), business climate, etc.?
+
+### City Typology Analysis and Patterns
 Are certain city typologies (e.g., coastal, industrial, post-industrial, rapidly urbanizing) more likely to pursue specific transformation opportunities?
-Along these lines is there a way to test the cohort constructs Urban Future has developed?
+
+### Urban Future Cohort Constructs Testing
+Along these lines is there a way to test the cohort constructs Urban Future has developed? Specifically:
+- How do the Net Zero Cities cluster based on these typologies?
+- Can we validate the Urban Future classification framework against actual climate strategy choices observed in the contracts?
+- Are there common patterns within typology cohorts that transcend individual city differences?

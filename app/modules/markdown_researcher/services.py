@@ -1,11 +1,10 @@
 from __future__ import annotations
 
-import json
 import logging
 from pathlib import Path
 
 from app.utils.config import MarkdownResearcherConfig
-from app.utils.tokenization import chunk_text, count_tokens, get_max_input_tokens
+from app.utils.tokenization import chunk_text, get_max_input_tokens
 
 logger = logging.getLogger(__name__)
 
@@ -26,10 +25,6 @@ def _resolve_chunk_tokens(config: MarkdownResearcherConfig) -> int:
     return 12000
 
 
-def _document_token_count(document: dict[str, str]) -> int:
-    return count_tokens(json.dumps(document, ensure_ascii=True))
-
-
 def split_documents_by_city(
     documents: list[dict[str, str]],
 ) -> dict[str, list[dict[str, str]]]:
@@ -41,37 +36,6 @@ def split_documents_by_city(
             by_city[city_name] = []
         by_city[city_name].append(doc)
     return by_city
-
-
-def split_documents_by_token_budget(
-    documents: list[dict[str, str]],
-    max_input_tokens: int | None,
-) -> list[list[dict[str, str]]]:
-    if not documents:
-        return [[]]
-    if max_input_tokens is None or max_input_tokens <= 0:
-        return [documents]
-
-    batches: list[list[dict[str, str]]] = []
-    current: list[dict[str, str]] = []
-    current_tokens = 0
-
-    for document in documents:
-        doc_tokens = _document_token_count(document)
-        if current and current_tokens + doc_tokens > max_input_tokens:
-            batches.append(current)
-            current = []
-            current_tokens = 0
-        if doc_tokens > max_input_tokens:
-            logger.warning("Skipping markdown chunk that exceeds token budget.")
-            continue
-        current.append(document)
-        current_tokens += doc_tokens
-
-    if current:
-        batches.append(current)
-
-    return batches
 
 
 def load_markdown_documents(
@@ -111,6 +75,5 @@ def load_markdown_documents(
 
 __all__ = [
     "load_markdown_documents",
-    "split_documents_by_token_budget",
     "split_documents_by_city",
 ]
