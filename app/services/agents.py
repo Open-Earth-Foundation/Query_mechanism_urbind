@@ -22,8 +22,6 @@ from openai import AsyncOpenAI, DefaultAsyncHttpxClient
 
 logger = logging.getLogger(__name__)
 
-_openai_http_clients: dict[int, httpx.AsyncClient] = {}
-_openai_client_cache: dict[tuple[str, str | None, int | None, int], AsyncOpenAI] = {}
 _thread_local = threading.local()
 
 if sys.platform.startswith("win"):
@@ -93,15 +91,23 @@ async def _log_http_error_response(response: httpx.Response) -> None:
 
 
 def _get_openai_http_client() -> httpx.AsyncClient:
-    """Return a per-thread HTTP client with error logging hooks."""
-    thread_id = threading.get_ident()
-    client = _openai_http_clients.get(thread_id)
+    """Return a thread-local HTTP client with error logging hooks."""
+    client = getattr(_thread_local, "openai_http_client", None)
     if client is None:
         client = DefaultAsyncHttpxClient(
             event_hooks={"response": [_log_http_error_response]},
         )
-        _openai_http_clients[thread_id] = client
+        _thread_local.openai_http_client = client
     return client
+
+
+def _get_thread_openai_client_cache() -> dict[tuple[str, str | None, int | None], AsyncOpenAI]:
+    """Return a thread-local cache for OpenAI clients."""
+    cache = getattr(_thread_local, "openai_client_cache", None)
+    if cache is None:
+        cache = {}
+        _thread_local.openai_client_cache = cache
+    return cache
 
 
 def _get_openai_client(
@@ -109,10 +115,10 @@ def _get_openai_client(
     base_url: str | None,
     max_retries: int | None = None,
 ) -> AsyncOpenAI:
-    """Return a per-thread cached OpenAI client configured for error logging."""
-    thread_id = threading.get_ident()
-    cache_key = (api_key, base_url, max_retries, thread_id)
-    client = _openai_client_cache.get(cache_key)
+    """Return a thread-local cached OpenAI client configured for error logging."""
+    cache_key = (api_key, base_url, max_retries)
+    cache = _get_thread_openai_client_cache()
+    client = cache.get(cache_key)
     if client is None:
         kwargs: dict[str, Any] = {
             "api_key": api_key,
@@ -122,7 +128,7 @@ def _get_openai_client(
         if max_retries is not None:
             kwargs["max_retries"] = max_retries
         client = AsyncOpenAI(**kwargs)
-        _openai_client_cache[cache_key] = client
+        cache[cache_key] = client
     return client
 
 

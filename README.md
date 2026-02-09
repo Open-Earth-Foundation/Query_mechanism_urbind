@@ -104,6 +104,8 @@ python -m app.scripts.run_pipeline --enable-sql --question "What initiatives exi
 
 ## End-to-end batch queries
 
+When `--question` is provided, it overrides `--questions-file` and only the CLI question(s) are executed.
+
 ```
 python -m app.scripts.run_e2e_queries
 python -m app.scripts.run_e2e_queries --questions-file assets/e2e_questions.txt

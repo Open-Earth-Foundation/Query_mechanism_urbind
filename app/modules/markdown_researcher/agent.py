@@ -244,6 +244,11 @@ def _doc_city_name(document: dict[str, str]) -> str:
     return ""
 
 
+def _format_batch_failure(city_name: str, batch_index: int, reason: str) -> str:
+    """Build a compact failure marker for a city batch."""
+    return f"{city_name}#batch{batch_index}: {reason}"
+
+
 def build_markdown_agent(config: AppConfig, api_key: str) -> Agent:
     """Build the markdown researcher agent with structured output and forced tool calls."""
     prompt_path = (
@@ -289,7 +294,7 @@ def extract_markdown_excerpts(
     api_key: str,
     log_llm_payload: bool = False,
 ) -> MarkdownResearchResult:
-    """Extract markdown excerpts relevant to the question."""
+    """Extract markdown excerpts relevant to the question with graceful partial-failure handling."""
     _thread_local = threading.local()
 
     def _get_thread_agent() -> Agent:
@@ -314,6 +319,7 @@ def extract_markdown_excerpts(
     collected: list[MarkdownExcerpt] = []
     seen: set[tuple[str, str, str]] = set()
     first_error: ErrorInfo | None = None
+    failed_batches: list[str] = []
     any_success = False
     max_turns_exceeded = False
 
@@ -402,6 +408,10 @@ def extract_markdown_excerpts(
                     "Markdown extraction for %s batch %s hit max turns limit.",
                     city_name,
                     batch_index,
+                )
+                error = ErrorInfo(
+                    code="MARKDOWN_MAX_TURNS_EXCEEDED",
+                    message="Markdown extraction exceeded max turns for this city batch.",
                 )
                 return city_name, batch_index, excerpts, error, success
             except Exception as exc:  # noqa: BLE001
@@ -520,6 +530,18 @@ def extract_markdown_excerpts(
         for batch_index, batch in enumerate(batches, start=1):
             all_tasks.append((city_name, batch_index, batch))
 
+    if not all_tasks:
+        logger.warning("No markdown batches available for extraction.")
+        return MarkdownResearchResult(
+            status="success",
+            excerpts=[],
+            error=ErrorInfo(
+                code="MARKDOWN_NO_BATCHES",
+                message="No markdown batches were available for extraction.",
+                details=["No markdown documents were provided."],
+            ),
+        )
+
     # Process all city batches with request-level backoff
     configured_workers = max(config.markdown_researcher.max_workers, 1)
     max_workers = min(configured_workers, max(len(all_tasks), 1))
@@ -574,24 +596,59 @@ def extract_markdown_excerpts(
                         if key not in seen:
                             seen.add(key)
                             collected.append(excerpt)
-                elif error and not first_error:
-                    first_error = error
+                elif error:
+                    failed_batches.append(
+                        _format_batch_failure(city_name, batch_idx, error.code)
+                    )
+                    if error.code == "MARKDOWN_MAX_TURNS_EXCEEDED":
+                        max_turns_exceeded = True
+                    if not first_error:
+                        first_error = error
             except Exception as exc:  # noqa: BLE001
                 logger.exception("Markdown batch processing failed")
+                city_name, batch_idx = futures[future]
+                failed_batches.append(
+                    _format_batch_failure(city_name, batch_idx, type(exc).__name__)
+                )
                 if not first_error:
                     first_error = ErrorInfo(
                         code="MARKDOWN_BATCH_ERROR",
                         message=f"Markdown batch processing failed: {str(exc)}",
                     )
 
-    # If we have any successful results, return them (even if partial due to max turns)
-    if any_success or collected:
+    if any_success:
         logger.info(
             "Markdown extraction completed. Collected %d excerpts%s",
             len(collected),
             " (partial due to max turns)" if max_turns_exceeded else "",
         )
-        return MarkdownResearchResult(excerpts=collected)
+        if failed_batches:
+            return MarkdownResearchResult(
+                status="success",
+                excerpts=collected,
+                error=ErrorInfo(
+                    code="MARKDOWN_PARTIAL_BATCH_FAILURE",
+                    message="Some markdown city batches failed; returning partial results.",
+                    details=failed_batches,
+                ),
+            )
+        return MarkdownResearchResult(status="success", excerpts=collected)
+
+    if failed_batches:
+        message = "No excerpts extracted; all markdown batches failed."
+        if max_turns_exceeded:
+            message = (
+                "No excerpts extracted; markdown batches exceeded max turns or failed."
+            )
+        return MarkdownResearchResult(
+            status="success",
+            excerpts=[],
+            error=ErrorInfo(
+                code="MARKDOWN_ALL_BATCHES_FAILED",
+                message=message,
+                details=failed_batches,
+            ),
+        )
 
     if first_error:
         return MarkdownResearchResult(
@@ -599,7 +656,15 @@ def extract_markdown_excerpts(
             error=first_error,
         )
 
-    raise ValueError("Markdown researcher did not return structured excerpts.")
+    return MarkdownResearchResult(
+        status="success",
+        excerpts=[],
+        error=ErrorInfo(
+            code="MARKDOWN_EMPTY_RESULT",
+            message="Markdown researcher returned no excerpts.",
+            details=["No excerpts were produced and no explicit failures were captured."],
+        ),
+    )
 
 
 __all__ = [

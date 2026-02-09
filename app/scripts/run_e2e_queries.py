@@ -3,7 +3,7 @@ Brief: Run a batch of end-to-end questions through the pipeline.
 
 Inputs:
 - --questions-file: path to a newline-delimited questions file
-- --question: optional single question (can be passed multiple times)
+- --question: optional single question (can be passed multiple times); overrides --questions-file when provided
 - --config: path to llm_config.yaml
 - --enable-sql: enable SQL lookups (disabled by default)
 - --db-path: override source DB path
@@ -53,7 +53,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--question",
         action="append",
-        help="Single question to run (can be repeated).",
+        help="Single question to run (can be repeated). Overrides --questions-file when provided.",
     )
     parser.add_argument(
         "--config", default="llm_config.yaml", help="Path to llm_config.yaml"
@@ -82,11 +82,11 @@ def parse_args() -> argparse.Namespace:
 
 
 def load_questions(path: Path, overrides: list[str] | None) -> list[str]:
-    """Load questions from file and CLI overrides."""
-    questions: list[str] = []
+    """Load questions from file unless CLI overrides are provided."""
     if overrides:
-        questions.extend([q.strip() for q in overrides if q.strip()])
+        return [q.strip() for q in overrides if q.strip()]
 
+    questions: list[str] = []
     if path.exists():
         for line in path.read_text(encoding="utf-8").splitlines():
             cleaned = line.strip()
