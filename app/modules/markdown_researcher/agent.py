@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import ast
 import json
 import logging
 import random
@@ -12,7 +11,6 @@ from pathlib import Path
 from agents import Agent, function_tool
 from agents.exceptions import MaxTurnsExceeded
 from openai import APIConnectionError
-from pydantic import ValidationError
 
 from app.models import ErrorInfo
 from app.modules.markdown_researcher.models import (
@@ -21,6 +19,10 @@ from app.modules.markdown_researcher.models import (
 )
 from app.modules.markdown_researcher.services import (
     split_documents_by_city,
+)
+from app.modules.markdown_researcher.utils import (
+    coerce_markdown_result,
+    format_batch_failure,
 )
 from app.services.agents import (
     build_model_settings,
@@ -33,163 +35,6 @@ from app.utils.tokenization import get_max_input_tokens
 
 
 logger = logging.getLogger(__name__)
-
-
-_PY_STRING_LITERAL = r"(?:'[^'\\]*(?:\\.[^'\\]*)*'|\"[^\"\\]*(?:\\.[^\"\\]*)*\")"
-_EXCERPT_REPR_PATTERN = re.compile(
-    rf"MarkdownExcerpt\(\s*snippet=(?P<snippet>{_PY_STRING_LITERAL})\s*,\s*"
-    rf"city_name=(?P<city_name>{_PY_STRING_LITERAL})\s*,\s*"
-    rf"answer=(?P<answer>{_PY_STRING_LITERAL})\s*,\s*"
-    rf"relevant=(?P<relevant>{_PY_STRING_LITERAL})\s*\)",
-    re.DOTALL,
-)
-_STATUS_REPR_PATTERN = re.compile(
-    r"status\s*=\s*(?P<status>'success'|'error'|\"success\"|\"error\")"
-)
-_MISSING_INPUT_MARKERS = (
-    "missing input",
-    "input not provided",
-    "no input",
-    "no documents",
-    "documents not provided",
-    "question not provided",
-    "city_name not provided",
-    "need the input",
-    "wait for input",
-    "awaiting input",
-    "without input",
-)
-
-
-def _parse_markdown_result_repr(text: str) -> MarkdownResearchResult | None:
-    """Parse a MarkdownResearchResult repr-like string into a model."""
-    status = "success"
-    status_match = _STATUS_REPR_PATTERN.search(text)
-    if status_match:
-        try:
-            status = ast.literal_eval(status_match.group("status"))
-        except Exception as exc:
-            logger.debug("Failed to parse status from repr: %s", exc)
-            status = "success"
-    if status not in ("success", "error"):
-        status = "success"
-
-    error = None
-
-    excerpts: list[MarkdownExcerpt] = []
-    for match in _EXCERPT_REPR_PATTERN.finditer(text):
-        try:
-            snippet = ast.literal_eval(match.group("snippet"))
-            city_name = ast.literal_eval(match.group("city_name"))
-            answer = ast.literal_eval(match.group("answer"))
-            relevant = ast.literal_eval(match.group("relevant"))
-            excerpts.append(
-                MarkdownExcerpt(
-                    snippet=str(snippet),
-                    city_name=str(city_name),
-                    answer=str(answer),
-                    relevant=str(relevant),
-                )
-            )
-        except Exception as exc:
-            logger.debug("Failed to parse excerpt from repr: %s", exc)
-            continue
-
-    if not excerpts and not status_match and error is None:
-        return None
-
-    return MarkdownResearchResult(status=status, excerpts=excerpts, error=error)
-
-
-def _coerce_markdown_result(output: object) -> MarkdownResearchResult | None:
-    """Coerce raw tool output into a MarkdownResearchResult when possible."""
-    if output.__class__.__name__ == "MarkdownResearchResult":
-        return output
-    if isinstance(output, MarkdownResearchResult):
-        return output
-
-    if isinstance(output, str):
-        try:
-            return MarkdownResearchResult.model_validate_json(output)
-        except ValidationError:
-            pass
-        try:
-            parsed = ast.literal_eval(output)
-        except (ValueError, SyntaxError):
-            parsed = None
-        if parsed is not None:
-            return _coerce_markdown_result(parsed)
-        return _parse_markdown_result_repr(output)
-
-    if isinstance(output, dict):
-        if "arguments" in output:
-            return _coerce_markdown_result(output["arguments"])
-        if "result" in output:
-            return _coerce_markdown_result(output["result"])
-        try:
-            return MarkdownResearchResult.model_validate(output)
-        except ValidationError as exc:
-            logger.debug("Dict coercion failed: %s", exc)
-            return None
-
-    model_dump = getattr(output, "model_dump", None)
-    if callable(model_dump):
-        return _coerce_markdown_result(model_dump())
-
-    value_dict = getattr(output, "__dict__", None)
-    if isinstance(value_dict, dict):
-        filtered = {
-            key: item
-            for key, item in value_dict.items()
-            if not str(key).startswith("_")
-        }
-        return _coerce_markdown_result(filtered)
-
-    parsed_repr = _parse_markdown_result_repr(str(output))
-    if parsed_repr is not None:
-        return parsed_repr
-
-    logger.debug(
-        "No matching coercion strategy for output type: %s", type(output).__name__
-    )
-    return None
-
-
-def _get_field(target: object, key: str) -> object | None:
-    if isinstance(target, dict):
-        return target.get(key)
-    return getattr(target, key, None)
-
-
-def _text_indicates_missing_input(text: str) -> bool:
-    lowered = text.lower()
-    return any(marker in lowered for marker in _MISSING_INPUT_MARKERS)
-
-
-def _error_indicates_missing_input(error: ErrorInfo | None) -> bool:
-    if error is None:
-        return False
-    parts: list[str] = [error.code, error.message]
-    if isinstance(error.details, list):
-        parts.extend(str(item) for item in error.details)
-    elif error.details is not None:
-        parts.append(str(error.details))
-    return _text_indicates_missing_input(" ".join(parts))
-
-
-def _doc_city_name(document: dict[str, str]) -> str:
-    city_name = document.get("city_name")
-    if city_name:
-        return str(city_name)
-    path_value = document.get("path", "")
-    if path_value:
-        return Path(str(path_value)).stem
-    return ""
-
-
-def _format_batch_failure(city_name: str, batch_index: int, reason: str) -> str:
-    """Build a compact failure marker for a city batch."""
-    return f"{city_name}#batch{batch_index}: {reason}"
 
 
 def build_markdown_agent(config: AppConfig, api_key: str) -> Agent:
@@ -316,19 +161,13 @@ def extract_markdown_excerpts(
                 )
                 # Get the final output - handle all format variations
                 final_output = run_result.final_output
-                output = _coerce_markdown_result(final_output)
+                output = coerce_markdown_result(final_output)
                 retryable_bad_output_reason = None
                 if output is None:
                     retryable_bad_output_reason = "output_none"
                 elif output.status == "error":
                     if output.error is None:
                         retryable_bad_output_reason = "status_error_without_error"
-                    elif _error_indicates_missing_input(output.error):
-                        retryable_bad_output_reason = "missing_input_error"
-                elif output.error is not None and _error_indicates_missing_input(
-                    output.error
-                ):
-                    retryable_bad_output_reason = "missing_input_error"
 
                 if retryable_bad_output_reason and attempt < max_retries:
                     logger.warning(
@@ -401,23 +240,6 @@ def extract_markdown_excerpts(
             )
             return city_name, batch_index, excerpts, error, success
 
-        if retryable_bad_output_reason == "missing_input_error":
-            logger.warning(
-                "Markdown %s batch %s reported missing input after retries: %s",
-                city_name,
-                batch_index,
-                output.error,
-            )
-            error = output.error
-            if error is None:
-                error = ErrorInfo(
-                    code="MARKDOWN_MISSING_INPUT",
-                    message=(
-                        "Markdown researcher reported missing input after retries."
-                    ),
-                )
-            return city_name, batch_index, excerpts, error, success
-
         if output.status == "error":
             logger.warning(
                 "Markdown %s batch %s returned error: %s",
@@ -466,43 +288,19 @@ def extract_markdown_excerpts(
             ),
         )
 
-    # Process all city batches with request-level backoff
+    # Process all city batches with worker-level rate limiting
     configured_workers = max(config.markdown_researcher.max_workers, 1)
     max_workers = min(configured_workers, max(len(all_tasks), 1))
-    request_backoff_base = max(
-        config.markdown_researcher.request_backoff_base_seconds, 0.1
-    )
-    request_backoff_max = max(
-        config.markdown_researcher.request_backoff_max_seconds, request_backoff_base
-    )
 
     logger.info(
-        "Processing %d markdown batches with %d worker(s), request backoff: %.1f-%.1f seconds",
+        "Processing %d markdown batches with %d worker(s)",
         len(all_tasks),
         max_workers,
-        request_backoff_base,
-        request_backoff_max,
     )
 
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
         futures = {}
-        for task_index, (city_name, batch_idx, batch) in enumerate(all_tasks):
-            # Add request-level backoff between submissions to avoid overwhelming the API
-            if task_index > 0:
-                delay = min(
-                    request_backoff_max,
-                    request_backoff_base * (2 ** (task_index // max_workers)),
-                )
-                jitter = random.uniform(0.0, delay * 0.1)
-                actual_delay = delay + jitter
-                logger.debug(
-                    "Request backoff before batch %d/%d: %.2f seconds",
-                    task_index + 1,
-                    len(all_tasks),
-                    actual_delay,
-                )
-                time.sleep(actual_delay)
-
+        for city_name, batch_idx, batch in all_tasks:
             future = executor.submit(_process_city_batch, city_name, batch_idx, batch)
             futures[future] = (city_name, batch_idx)
 
@@ -522,7 +320,7 @@ def extract_markdown_excerpts(
                             collected.append(excerpt)
                 elif error:
                     failed_batches.append(
-                        _format_batch_failure(city_name, batch_idx, error.code)
+                        format_batch_failure(city_name, batch_idx, error.code)
                     )
                     if error.code == "MARKDOWN_MAX_TURNS_EXCEEDED":
                         max_turns_exceeded = True
@@ -532,7 +330,7 @@ def extract_markdown_excerpts(
                 logger.exception("Markdown batch processing failed")
                 city_name, batch_idx = futures[future]
                 failed_batches.append(
-                    _format_batch_failure(city_name, batch_idx, type(exc).__name__)
+                    format_batch_failure(city_name, batch_idx, type(exc).__name__)
                 )
                 if not first_error:
                     first_error = ErrorInfo(
