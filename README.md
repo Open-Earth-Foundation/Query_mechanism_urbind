@@ -157,6 +157,26 @@ docker run -it --rm \
 pytest
 ```
 
+## Async API smoke test (pre-frontend)
+
+Use this script to validate the async backend lifecycle contract before frontend integration:
+
+- `POST /api/v1/runs`
+- `GET /api/v1/runs/{run_id}/status`
+- `GET /api/v1/runs/{run_id}/output`
+- `GET /api/v1/runs/{run_id}/context`
+
+```
+python -m app.scripts.test_async_backend_flow --question "What are main climate initiatives?"
+python -m app.scripts.test_async_backend_flow \
+  --base-url http://127.0.0.1:8000 \
+  --question "What initiatives exist for Munich?" \
+  --poll-interval-seconds 3 \
+  --max-wait-seconds 1200
+```
+
+Smoke-test artifacts are written to `output/api_smoke_tests/<run_id>/`.
+
 ## Token analysis utilities
 
 ```
