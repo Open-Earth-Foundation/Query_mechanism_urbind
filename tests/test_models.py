@@ -1,9 +1,5 @@
 from app.models import ErrorInfo
-from app.modules.markdown_researcher.models import (
-    MarkdownCityScope,
-    MarkdownExcerpt,
-    MarkdownResearchResult,
-)
+from app.modules.markdown_researcher.models import MarkdownExcerpt, MarkdownResearchResult
 from app.modules.orchestrator.models import OrchestratorDecision
 from app.modules.sql_researcher.models import SqlQuery, SqlQueryPlan, SqlQueryResult, SqlResearchResult
 from app.modules.writer.models import WriterOutput
@@ -34,8 +30,7 @@ def test_model_validation() -> None:
         answer="Sample answer",
         relevant="yes",
     )
-    scope = MarkdownCityScope(run_id="run1", scope="subset", city_names=["Munich"])
-    md_result = MarkdownResearchResult(run_id="run1", excerpts=[excerpt], city_scope=scope)
+    md_result = MarkdownResearchResult(run_id="run1", excerpts=[excerpt])
 
     decision = OrchestratorDecision(run_id="run1", action="write", reason="Enough data")
 
@@ -44,7 +39,6 @@ def test_model_validation() -> None:
     assert plan.run_id == "run1"
     assert research.total_token_count == 3
     assert md_result.excerpts[0].city_name == "Munich"
-    assert md_result.city_scope and md_result.city_scope.scope == "subset"
     assert decision.action == "write"
     assert writer.content.startswith("#")
 

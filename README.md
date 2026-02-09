@@ -35,7 +35,6 @@ uv pip install -e .
 - `DATABASE_URL` (used as source DB and by `test_db_connection`)
 - `MARKDOWN_DIR`
 - `LOG_LEVEL`
-- `LOG_LLM_PAYLOAD` (set to true to log full LLM request/response payloads)
 - `OPENROUTER_BASE_URL` (optional override)
 
 Example `.env.example` is provided.
@@ -82,6 +81,13 @@ python -m app.scripts.run_pipeline --question "What initiatives exist for Munich
   --markdown-path documents
 ```
 
+Log full LLM payloads:
+```
+python -m app.scripts.run_pipeline --question "What initiatives exist for Munich?" \
+  --markdown-path documents \
+  --log-llm-payload
+```
+
 Enable SQL (SQLite):
 ```
 python -m app.scripts.run_pipeline --enable-sql --question "What initiatives exist for Munich?" \
@@ -102,6 +108,7 @@ python -m app.scripts.run_pipeline --enable-sql --question "..." \
 python -m app.scripts.run_e2e_queries
 python -m app.scripts.run_e2e_queries --questions-file assets/e2e_questions.txt
 python -m app.scripts.run_e2e_queries --enable-sql --db-url "postgresql+psycopg://user:pass@localhost:5432/dbname"
+python -m app.scripts.run_e2e_queries --question "What initiatives exist for Munich?" --log-llm-payload
 ```
 
 ## Test DB connection

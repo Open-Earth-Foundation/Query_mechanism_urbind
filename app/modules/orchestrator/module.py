@@ -166,6 +166,7 @@ def _execute_sql_plan(
     db_client: DbClient,
     config: AppConfig,
     api_key: str,
+    log_llm_payload: bool,
     schema_summary: dict,
     city_names: list[str],
     identifiers: list[str],
@@ -184,6 +185,7 @@ def _execute_sql_plan(
         db_client: Database client
         config: App configuration
         api_key: API key for agents
+        log_llm_payload: Whether to log full LLM request/response payloads
         schema_summary: Database schema for reference
         city_names: Cities for context
         identifiers: Database identifiers for SQL sanitization
@@ -216,6 +218,7 @@ def _execute_sql_plan(
                 sql_execution_errors=sql_errors,
                 previous_queries=[query.model_dump() for query in sql_plan.queries],
                 per_city_focus=True,
+                log_llm_payload=log_llm_payload,
             )
             if retry_plan.status != "error":
                 sql_plan = retry_plan
@@ -237,6 +240,7 @@ def _run_sql_rounds(
     db_client: DbClient,
     config: AppConfig,
     api_key: str,
+    log_llm_payload: bool,
     schema_summary: dict,
     city_names: list[str],
     identifiers: list[str],
@@ -254,6 +258,7 @@ def _run_sql_rounds(
         db_client: Database client
         config: App configuration
         api_key: API key for agents
+        log_llm_payload: Whether to log full LLM request/response payloads
         schema_summary: Database schema for reference
         city_names: Cities for context
         identifiers: Database identifiers for SQL sanitization
@@ -278,6 +283,7 @@ def _run_sql_rounds(
             db_client,
             config,
             api_key,
+            log_llm_payload,
             schema_summary,
             city_names,
             identifiers,
@@ -311,6 +317,7 @@ def _run_sql_rounds(
             sql_results_summary=summary,
             previous_queries=[query.model_dump() for query in current_plan.queries],
             per_city_focus=True,
+            log_llm_payload=log_llm_payload,
         )
 
         if next_plan.status == "error" or not next_plan.queries:
@@ -334,6 +341,7 @@ def _run_orchestration_loop(
     run_log_handler: logging.FileHandler,
     config: AppConfig,
     api_key: str,
+    log_llm_payload: bool,
     schema_summary: dict,
     city_names: list[str],
     identifiers: list[str],
@@ -361,6 +369,7 @@ def _run_orchestration_loop(
         run_log_handler: File handler for run logs
         config: App configuration
         api_key: API key for agents
+        log_llm_payload: Whether to log full LLM request/response payloads
         schema_summary: Database schema
         city_names: Cities for context
         identifiers: Database identifiers
@@ -383,7 +392,12 @@ def _run_orchestration_loop(
 
         context_bundle = load_context_bundle(paths)
         decision = decide_func(
-            question, context_bundle, paths.base_dir.name, config, api_key
+            question,
+            context_bundle,
+            paths.base_dir.name,
+            config,
+            api_key,
+            log_llm_payload=log_llm_payload,
         )
         run_logger.record_decision(decision.model_dump())
         logger.debug("Orchestrator decision: action=%s", decision.action)
@@ -405,6 +419,7 @@ def _run_orchestration_loop(
                 writer_func,
                 config,
                 api_key,
+                log_llm_payload=log_llm_payload,
             )
             return result
 
@@ -423,6 +438,7 @@ def _run_orchestration_loop(
                     api_key,
                     markdown_func,
                     write_json,
+                    log_llm_payload=log_llm_payload,
                 )
                 if result:
                     return result
@@ -449,6 +465,7 @@ def _run_orchestration_loop(
                     db_client,
                     config,
                     api_key,
+                    log_llm_payload,
                     schema_summary,
                     city_names,
                     identifiers,
@@ -464,6 +481,7 @@ def _run_orchestration_loop(
                     ).model_dump()
                 ),
                 write_json,
+                log_llm_payload=log_llm_payload,
             )
             if result:
                 return result
@@ -483,6 +501,7 @@ def _run_orchestration_loop(
                 writer_func,
                 config,
                 api_key,
+                log_llm_payload=log_llm_payload,
             )
             return result
 
@@ -500,7 +519,12 @@ def _run_orchestration_loop(
     context_bundle = load_context_bundle(paths)
     try:
         writer_output = writer_func(
-            question, context_bundle, paths.base_dir.name, config, api_key
+            question,
+            context_bundle,
+            paths.base_dir.name,
+            config,
+            api_key,
+            log_llm_payload=log_llm_payload,
         )
         write_draft_and_final(
             question,
@@ -535,6 +559,7 @@ def run_pipeline(
     question: str,
     config: AppConfig,
     run_id: str | None = None,
+    log_llm_payload: bool = False,
     sql_plan_func: Callable[..., SqlQueryPlan] = plan_sql_queries,
     markdown_func: Callable[..., MarkdownResearchResult] = extract_markdown_excerpts,
     decide_func: Callable[..., OrchestratorDecision] = decide_next_action,
@@ -549,6 +574,7 @@ def run_pipeline(
         question: User question to answer
         config: Application configuration
         run_id: Optional run identifier
+        log_llm_payload: Whether to log full LLM request/response payloads
         sql_plan_func: SQL planning function (default: plan_sql_queries)
         markdown_func: Markdown extraction function (default: extract_markdown_excerpts)
         decide_func: Orchestration decision function (default: decide_next_action)
@@ -601,6 +627,7 @@ def run_pipeline(
             config,
             api_key,
             per_city_focus=True,
+            log_llm_payload=log_llm_payload,
         )
         if sql_plan.status == "error":
             return {"status": "error", "plan": sql_plan}
@@ -610,6 +637,7 @@ def run_pipeline(
             db_client,
             config,
             api_key,
+            log_llm_payload,
             schema_summary,
             city_names,
             identifiers,
@@ -636,7 +664,12 @@ def run_pipeline(
             config.markdown_dir, config.markdown_researcher
         )
         markdown_result = markdown_func(
-            question, documents, paths.base_dir.name, config, api_key
+            question,
+            documents,
+            paths.base_dir.name,
+            config,
+            api_key,
+            log_llm_payload=log_llm_payload,
         )
         return {"documents": documents, "result": markdown_result}
 
@@ -737,6 +770,7 @@ def run_pipeline(
         run_log_handler=run_log_handler,
         config=config,
         api_key=api_key,
+        log_llm_payload=log_llm_payload,
         schema_summary=schema_summary,
         city_names=city_names,
         identifiers=identifiers,

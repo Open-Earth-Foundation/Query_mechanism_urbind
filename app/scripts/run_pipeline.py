@@ -9,6 +9,7 @@ Inputs:
 - --db-path: override source DB path
 - --db-url: override source DB URL
 - --markdown-path: override documents folder
+- --log-llm-payload: log full LLM request/response payloads
 - OPENROUTER_API_KEY (env var)
 
 Outputs:
@@ -54,6 +55,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--db-path", help="Override source DB path.")
     parser.add_argument("--db-url", help="Override source DB URL.")
     parser.add_argument("--markdown-path", help="Override markdown documents path.")
+    parser.add_argument(
+        "--log-llm-payload",
+        action="store_true",
+        help="Log full LLM request/response payloads.",
+    )
     return parser.parse_args()
 
 
@@ -73,7 +79,12 @@ def main() -> None:
         config.enable_sql = True
 
     logger.info("Starting pipeline")
-    run_pipeline(question=args.question, config=config, run_id=args.run_id)
+    run_pipeline(
+        question=args.question,
+        config=config,
+        run_id=args.run_id,
+        log_llm_payload=args.log_llm_payload,
+    )
 
 
 if __name__ == "__main__":

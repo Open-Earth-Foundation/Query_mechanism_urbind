@@ -18,6 +18,9 @@ Rules:
 - All documents in this batch are from the same city.
 - Decide whether each chunk contains information useful for answering the question.
 - If relevant, extract a concise snippet and a short direct answer tied to that snippet.
+- The answer MUST be fully supported by the snippet. Do not add facts, numbers, or claims that do not appear in the snippet.
+- If the answer needs a fact, make sure the snippet explicitly contains it. Expand the snippet as needed to include every fact you use.
+- Mark relevant="no" if you cannot fully support the answer with the snippet.
 - If not relevant, you may omit the chunk or return relevant="no" with an empty answer.
 - Keep snippets short and factual.
 - Always echo the provided run_id in the output.

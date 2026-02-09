@@ -13,6 +13,7 @@ from app.utils.tokenization import get_max_input_tokens
 
 
 def build_orchestrator_agent(config: AppConfig, api_key: str) -> Agent:
+    """Build the orchestrator agent."""
     prompt_path = Path(__file__).resolve().parents[2] / "prompts" / "orchestrator_system.md"
     instructions = load_prompt(prompt_path)
     model = build_openrouter_model(config.orchestrator.model, api_key, config.openrouter_base_url)
@@ -42,7 +43,9 @@ def decide_next_action(
     run_id: str,
     config: AppConfig,
     api_key: str,
+    log_llm_payload: bool = False,
 ) -> OrchestratorDecision:
+    """Run the orchestrator to decide the next action."""
     agent = build_orchestrator_agent(config, api_key)
     payload = {
         "run_id": run_id,
@@ -57,7 +60,11 @@ def decide_next_action(
             config.orchestrator.max_input_tokens,
         ),
     }
-    result = run_agent_sync(agent, json.dumps(payload, ensure_ascii=True))
+    result = run_agent_sync(
+        agent,
+        json.dumps(payload, ensure_ascii=True),
+        log_llm_payload=log_llm_payload,
+    )
     output = result.final_output
     if isinstance(output, OrchestratorDecision):
         return output

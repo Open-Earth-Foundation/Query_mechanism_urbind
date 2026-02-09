@@ -10,8 +10,8 @@ sql_researcher:
   max_result_tokens: 100000
   pre_orchestrator_rounds: 2
 markdown_researcher:
-  model: "x-ai/grok-4.1-fast"
-  context_window_tokens: 400000
+  model: "openrouter/pony-alpha"
+  context_window_tokens: 200000
   input_token_reserve: 10000
   max_chunk_tokens: 50000
   chunk_overlap_tokens: 2000

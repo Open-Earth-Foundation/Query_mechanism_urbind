@@ -14,6 +14,7 @@ from app.utils.tokenization import get_max_input_tokens
 
 
 def build_sql_agent(config: AppConfig, api_key: str) -> Agent:
+    """Build the SQL researcher agent."""
     prompt_path = Path(__file__).resolve().parents[2] / "prompts" / "sql_researcher_system.md"
     instructions = load_prompt(prompt_path)
     model = build_openrouter_model(config.sql_researcher.model, api_key, config.openrouter_base_url)
@@ -48,7 +49,9 @@ def plan_sql_queries(
     previous_queries: list[dict[str, object]] | None = None,
     sql_results_summary: list[dict[str, object]] | None = None,
     per_city_focus: bool | None = None,
+    log_llm_payload: bool = False,
 ) -> SqlQueryPlan:
+    """Generate a SQL query plan for the current question."""
     agent = build_sql_agent(config, api_key)
     table_catalog = build_table_catalog(schema_summary)
     payload: dict[str, object] = {
@@ -72,7 +75,11 @@ def plan_sql_queries(
         payload["previous_queries"] = previous_queries
     if sql_results_summary:
         payload["sql_results_summary"] = sql_results_summary
-    result = run_agent_sync(agent, json.dumps(payload, ensure_ascii=True))
+    result = run_agent_sync(
+        agent,
+        json.dumps(payload, ensure_ascii=True),
+        log_llm_payload=log_llm_payload,
+    )
     output = result.final_output
     if not isinstance(output, SqlQueryPlan):
         raise ValueError("SQL researcher did not return a structured query plan.")
@@ -84,7 +91,11 @@ def plan_sql_queries(
             "previous_queries": [query.model_dump() for query in output.queries],
             "validation_errors": validation_errors,
         }
-        retry_result = run_agent_sync(agent, json.dumps(retry_payload, ensure_ascii=True))
+        retry_result = run_agent_sync(
+            agent,
+            json.dumps(retry_payload, ensure_ascii=True),
+            log_llm_payload=log_llm_payload,
+        )
         retry_output = retry_result.final_output
         if isinstance(retry_output, SqlQueryPlan):
             output = retry_output

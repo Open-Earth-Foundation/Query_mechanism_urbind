@@ -29,6 +29,7 @@ def handle_write_decision(
     writer_func: Callable[..., WriterOutput],
     config: AppConfig,
     api_key: str,
+    log_llm_payload: bool = False,
 ) -> RunPaths | None:
     """
     Execute write decision to generate final output.
@@ -42,13 +43,19 @@ def handle_write_decision(
         writer_func: Function to call for writing
         config: Application configuration
         api_key: API key for external services
+        log_llm_payload: Whether to log full LLM request/response payloads
 
     Returns:
         Run paths if successful, None to continue iteration
     """
     try:
         writer_output = writer_func(
-            question, context_bundle, paths.base_dir.name, config, api_key
+            question,
+            context_bundle,
+            paths.base_dir.name,
+            config,
+            api_key,
+            log_llm_payload=log_llm_payload,
         )
         write_draft_and_final(
             question,
@@ -90,6 +97,7 @@ def handle_sql_decision(
     cap_results_func: Callable,
     run_logger_update_sql_bundle: Callable,
     write_json_func: Callable,
+    log_llm_payload: bool = False,
 ) -> RunPaths | None:
     """
     Execute SQL decision to run additional queries.
@@ -108,6 +116,7 @@ def handle_sql_decision(
         cap_results_func: Function to cap results to token limit
         run_logger_update_sql_bundle: Function to update SQL bundle in logger
         write_json_func: Function to write JSON files
+        log_llm_payload: Whether to log full LLM request/response payloads
 
     Returns:
         Run paths if error occurred, None to continue iteration
@@ -122,6 +131,7 @@ def handle_sql_decision(
             config,
             api_key,
             per_city_focus=True,
+            log_llm_payload=log_llm_payload,
         )
         write_json_func(paths.sql_queries, sql_plan.model_dump())
         run_logger.record_artifact("sql_queries", paths.sql_queries)
@@ -177,6 +187,7 @@ def handle_markdown_decision(
     api_key: str,
     markdown_func: Callable[..., MarkdownResearchResult],
     write_json_func: Callable,
+    log_llm_payload: bool = False,
 ) -> RunPaths | None:
     """
     Execute markdown decision to extract additional excerpts.
@@ -191,13 +202,19 @@ def handle_markdown_decision(
         api_key: API key for external services
         markdown_func: Function to extract markdown excerpts
         write_json_func: Function to write JSON files
+        log_llm_payload: Whether to log full LLM request/response payloads
 
     Returns:
         Run paths if error occurred, None to continue iteration
     """
     try:
         markdown_result = markdown_func(
-            follow_up_question, documents, paths.base_dir.name, config, api_key
+            follow_up_question,
+            documents,
+            paths.base_dir.name,
+            config,
+            api_key,
+            log_llm_payload=log_llm_payload,
         )
         write_json_func(paths.markdown_excerpts, markdown_result.model_dump())
         run_logger.record_artifact("markdown_excerpts", paths.markdown_excerpts)

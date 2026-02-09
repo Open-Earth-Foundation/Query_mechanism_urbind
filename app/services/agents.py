@@ -4,10 +4,10 @@ import asyncio
 import dataclasses
 import json
 import logging
-import os
 from collections.abc import Mapping, Sequence
 from typing import Any
 
+import httpx
 from agents import Agent, ModelSettings, Runner
 from agents.exceptions import MaxTurnsExceeded
 from agents.items import ModelResponse, TResponseInputItem
@@ -16,16 +16,94 @@ from agents.models.openai_provider import OpenAIProvider
 from agents.result import RunResult
 from agents.run_context import RunContextWrapper
 from agents.tool import Tool
+from openai import AsyncOpenAI, DefaultAsyncHttpxClient
 
 logger = logging.getLogger(__name__)
 
+_openai_http_client: httpx.AsyncClient | None = None
+_openai_client_cache: dict[tuple[str, str | None], AsyncOpenAI] = {}
 
-def _env_truthy(name: str) -> bool:
-    value = os.getenv(name)
-    if value is None:
-        return False
-    normalized = value.strip().lower()
-    return normalized in {"1", "true", "yes", "y", "on"}
+
+def _truncate_text(value: str, max_chars: int = 500) -> str:
+    """Trim long strings for log safety."""
+    if len(value) <= max_chars:
+        return value
+    return f"{value[:max_chars]}..."
+
+
+def _extract_error_payload(response: httpx.Response) -> str | None:
+    """Extract a compact error payload from an HTTP response."""
+    content_type = response.headers.get("content-type", "")
+    if "application/json" not in content_type.lower():
+        return None
+    try:
+        data = response.json()
+    except Exception:  # noqa: BLE001
+        return None
+    if isinstance(data, dict):
+        data = data.get("error", data)
+    return _truncate_text(_dump_payload(data))
+
+
+def _format_http_error_details(response: httpx.Response) -> str:
+    """Format useful error details for HTTP error logging."""
+    parts: list[str] = []
+    request_id = response.headers.get("x-request-id")
+    retry_after = response.headers.get("retry-after")
+    should_retry = response.headers.get("x-should-retry")
+    error_payload = _extract_error_payload(response)
+
+    if request_id:
+        parts.append(f"request_id={request_id}")
+    if retry_after:
+        parts.append(f"retry_after={retry_after}")
+    if should_retry:
+        parts.append(f"should_retry={should_retry}")
+    if error_payload:
+        parts.append(f"error={error_payload}")
+
+    return ", ".join(parts)
+
+
+async def _log_http_error_response(response: httpx.Response) -> None:
+    """Log reasons for HTTP errors, including retry hints."""
+    if response.status_code < 400:
+        return
+    request = response.request
+    details = _format_http_error_details(response)
+    suffix = f" ({details})" if details else ""
+    logger.warning(
+        "OpenAI HTTP error response: %s %s -> %s %s%s",
+        request.method,
+        request.url,
+        response.status_code,
+        response.reason_phrase,
+        suffix,
+    )
+
+
+def _get_openai_http_client() -> httpx.AsyncClient:
+    """Return a shared HTTP client with error logging hooks."""
+    global _openai_http_client
+    if _openai_http_client is None:
+        _openai_http_client = DefaultAsyncHttpxClient(
+            event_hooks={"response": [_log_http_error_response]},
+        )
+    return _openai_http_client
+
+
+def _get_openai_client(api_key: str, base_url: str | None) -> AsyncOpenAI:
+    """Return a cached OpenAI client configured for error logging."""
+    cache_key = (api_key, base_url)
+    client = _openai_client_cache.get(cache_key)
+    if client is None:
+        client = AsyncOpenAI(
+            api_key=api_key,
+            base_url=base_url,
+            http_client=_get_openai_http_client(),
+        )
+        _openai_client_cache[cache_key] = client
+    return client
 
 
 def _safe_serialize(value: Any) -> Any:
@@ -231,10 +309,12 @@ class LlmPayloadLoggingHooks(RunHooksBase[Any, Agent[Any]]):
         assistant_text: list[str] = []
         for output in response.output:
             assistant_text.extend(_extract_text_from_output_item(output))
+        output_items = response.output
         response_payload = {
             "response_id": response.response_id,
             "usage": response.usage,
             "assistant_text": assistant_text,
+            "output": output_items,
         }
         payload = {
             "event": "llm_end",
@@ -257,17 +337,25 @@ def build_model_settings(
 
 
 def build_openrouter_model(model_name: str, api_key: str, base_url: str | None):
-    provider = OpenAIProvider(api_key=api_key, base_url=base_url)
+    """Build an OpenRouter-backed model with HTTP error logging enabled."""
+    client = _get_openai_client(api_key, base_url)
+    provider = OpenAIProvider(openai_client=client)
     return provider.get_model(model_name)
 
 
-def run_agent_sync(agent: Agent, input_data: str, max_turns: int = 3) -> RunResult:
+def run_agent_sync(
+    agent: Agent,
+    input_data: str,
+    max_turns: int = 3,
+    log_llm_payload: bool = False,
+) -> RunResult:
     """Run an agent synchronously with optional max_turns limit.
 
     Args:
         agent: The agent to run
         input_data: The input data as a JSON string
         max_turns: Maximum number of turns before gracefully stopping (default: 3)
+        log_llm_payload: Whether to log full LLM request/response payloads
 
     Returns:
         The agent's final output
@@ -276,7 +364,7 @@ def run_agent_sync(agent: Agent, input_data: str, max_turns: int = 3) -> RunResu
         Only re-raises exceptions other than MaxTurnsExceeded
     """
     hooks_list: list[RunHooksBase[Any, Agent[Any]]] = [LlmUsageLoggingHooks()]
-    if _env_truthy("LOG_LLM_PAYLOAD"):
+    if log_llm_payload:
         hooks_list.append(LlmPayloadLoggingHooks())
     hooks: RunHooksBase[Any, Agent[Any]] | None = CompositeRunHooks(hooks_list)
     try:

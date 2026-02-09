@@ -13,6 +13,7 @@ from app.utils.tokenization import get_max_input_tokens
 
 
 def build_writer_agent(config: AppConfig, api_key: str) -> Agent:
+    """Build the writer agent."""
     prompt_path = Path(__file__).resolve().parents[2] / "prompts" / "writer_system.md"
     instructions = load_prompt(prompt_path)
     model = build_openrouter_model(config.writer.model, api_key, config.openrouter_base_url)
@@ -39,7 +40,9 @@ def write_markdown(
     run_id: str,
     config: AppConfig,
     api_key: str,
+    log_llm_payload: bool = False,
 ) -> WriterOutput:
+    """Generate the final markdown answer."""
     agent = build_writer_agent(config, api_key)
     payload = {
         "run_id": run_id,
@@ -53,7 +56,11 @@ def write_markdown(
             config.writer.max_input_tokens,
         ),
     }
-    result = run_agent_sync(agent, json.dumps(payload, ensure_ascii=True))
+    result = run_agent_sync(
+        agent,
+        json.dumps(payload, ensure_ascii=True),
+        log_llm_payload=log_llm_payload,
+    )
     output = result.final_output
     if isinstance(output, WriterOutput):
         return output

@@ -10,10 +10,10 @@ from pathlib import Path
 from agents import Agent, function_tool
 from agents.exceptions import MaxTurnsExceeded
 from openai import APIConnectionError
+from pydantic import ValidationError
 
 from app.models import ErrorInfo
 from app.modules.markdown_researcher.models import (
-    MarkdownCityScope,
     MarkdownExcerpt,
     MarkdownResearchResult,
 )
@@ -33,6 +33,26 @@ from app.utils.tokenization import get_max_input_tokens
 logger = logging.getLogger(__name__)
 
 
+def _coerce_markdown_result(output: object) -> MarkdownResearchResult | None:
+    """Coerce raw tool output into a MarkdownResearchResult when possible."""
+    if isinstance(output, MarkdownResearchResult):
+        return output
+    if isinstance(output, str):
+        try:
+            parsed = json.loads(output)
+        except json.JSONDecodeError:
+            return None
+        return _coerce_markdown_result(parsed)
+    if isinstance(output, dict):
+        try:
+            return MarkdownResearchResult.model_validate(output)
+        except ValidationError as exc:
+            logger.warning("Markdown output validation failed: %s", exc.errors())
+            return None
+    return None
+    return None
+
+
 def _doc_city_name(document: dict[str, str]) -> str:
     city_name = document.get("city_name")
     if city_name:
@@ -41,50 +61,6 @@ def _doc_city_name(document: dict[str, str]) -> str:
     if path_value:
         return Path(str(path_value)).stem
     return ""
-
-
-def _extract_available_cities(documents: list[dict[str, str]]) -> list[str]:
-    cities: set[str] = set()
-    for document in documents:
-        city_name = _doc_city_name(document).strip()
-        if city_name:
-            cities.add(city_name)
-    return sorted(cities)
-
-
-def _normalize_city_scope(
-    scope: MarkdownCityScope, available_cities: list[str]
-) -> MarkdownCityScope:
-    if scope.scope != "subset" or not scope.city_names:
-        return scope.model_copy(update={"scope": "all", "city_names": []})
-
-    lookup = {city.lower(): city for city in available_cities}
-    matched: list[str] = []
-    for name in scope.city_names:
-        key = str(name).strip().lower()
-        if key in lookup:
-            matched.append(lookup[key])
-    if not matched:
-        logger.warning("Markdown city scope returned no matches; using all documents.")
-        return scope.model_copy(update={"scope": "all", "city_names": []})
-    return scope.model_copy(update={"city_names": matched})
-
-
-def _filter_documents_by_city_scope(
-    documents: list[dict[str, str]], scope: MarkdownCityScope | None
-) -> list[dict[str, str]]:
-    if scope is None or scope.scope != "subset":
-        return documents
-    allowed = {city.lower() for city in scope.city_names}
-    filtered = [
-        document
-        for document in documents
-        if _doc_city_name(document).strip().lower() in allowed
-    ]
-    if not filtered:
-        logger.warning("No markdown documents matched city scope; using all documents.")
-        return documents
-    return filtered
 
 
 def build_markdown_agent(config: AppConfig, api_key: str) -> Agent:
@@ -121,89 +97,18 @@ def build_markdown_agent(config: AppConfig, api_key: str) -> Agent:
     )
 
 
-def build_markdown_city_scope_agent(config: AppConfig, api_key: str) -> Agent:
-    prompt_path = (
-        Path(__file__).resolve().parents[2]
-        / "prompts"
-        / "markdown_city_scope_system.md"
-    )
-    instructions = load_prompt(prompt_path)
-    model = build_openrouter_model(
-        config.markdown_researcher.model,
-        api_key,
-        config.openrouter_base_url,
-    )
-    settings = build_model_settings(
-        config.markdown_researcher.temperature,
-        config.markdown_researcher.max_output_tokens,
-    )
-
-    @function_tool(strict_mode=False)
-    def submit_markdown_city_scope(result: MarkdownCityScope) -> MarkdownCityScope:
-        return result
-
-    return Agent(
-        name="Markdown City Scope",
-        instructions=instructions,
-        model=model,
-        model_settings=settings,
-        tools=[submit_markdown_city_scope],
-        output_type=MarkdownCityScope,
-        tool_use_behavior="stop_on_first_tool",
-    )
-
-
-def decide_markdown_city_scope(
-    question: str,
-    available_cities: list[str],
-    run_id: str,
-    config: AppConfig,
-    api_key: str,
-) -> MarkdownCityScope:
-    agent = build_markdown_city_scope_agent(config, api_key)
-    payload = {
-        "run_id": run_id,
-        "question": question,
-        "available_cities": available_cities,
-    }
-    result = run_agent_sync(agent, json.dumps(payload, ensure_ascii=True))
-    output = result.final_output
-    if isinstance(output, MarkdownCityScope):
-        return output
-    raise ValueError("Markdown city scope did not return a structured decision.")
-
-
 def extract_markdown_excerpts(
     question: str,
     documents: list[dict[str, str]],
     run_id: str,
     config: AppConfig,
     api_key: str,
+    log_llm_payload: bool = False,
 ) -> MarkdownResearchResult:
+    """Extract markdown excerpts relevant to the question."""
     agent = build_markdown_agent(config, api_key)
-    city_scope: MarkdownCityScope | None = None
-    available_cities = _extract_available_cities(documents)
-    if available_cities:
-        try:
-            city_scope = decide_markdown_city_scope(
-                question,
-                available_cities,
-                run_id,
-                config,
-                api_key,
-            )
-            city_scope = _normalize_city_scope(city_scope, available_cities)
-            documents = _filter_documents_by_city_scope(documents, city_scope)
-        except Exception as exc:  # noqa: BLE001
-            logger.exception("Markdown city scope selection failed")
-            city_scope = MarkdownCityScope(
-                status="error",
-                run_id=run_id,
-                scope="all",
-                city_names=[],
-                reason="City scope selection failed",
-                error=ErrorInfo(code="MARKDOWN_CITY_SCOPE_ERROR", message=str(exc)),
-            )
+    # Skip city scope selection - process all documents directly
+    logger.info("Processing all documents without city scope filtering")
 
     # Group documents by city
     documents_by_city = split_documents_by_city(documents)
@@ -256,7 +161,11 @@ def extract_markdown_excerpts(
 
         for attempt in range(max_retries + 1):
             try:
-                result = run_agent_sync(agent, json.dumps(payload, ensure_ascii=True))
+                result = run_agent_sync(
+                    agent,
+                    json.dumps(payload, ensure_ascii=True),
+                    log_llm_payload=log_llm_payload,
+                )
                 break
             except MaxTurnsExceeded:
                 logger.warning(
@@ -286,8 +195,8 @@ def extract_markdown_excerpts(
                 )
                 raise
 
-        output = result.final_output
-        if not isinstance(output, MarkdownResearchResult):
+        output = _coerce_markdown_result(result.final_output)
+        if not output:
             logger.warning(
                 "Markdown %s batch %s returned invalid output",
                 city_name,
@@ -388,7 +297,6 @@ def extract_markdown_excerpts(
         return MarkdownResearchResult(
             run_id=run_id,
             excerpts=collected,
-            city_scope=city_scope,
         )
 
     if first_error:
@@ -396,7 +304,6 @@ def extract_markdown_excerpts(
             status="error",
             run_id=run_id,
             error=first_error,
-            city_scope=city_scope,
         )
 
     raise ValueError("Markdown researcher did not return structured excerpts.")
@@ -404,7 +311,5 @@ def extract_markdown_excerpts(
 
 __all__ = [
     "build_markdown_agent",
-    "build_markdown_city_scope_agent",
-    "decide_markdown_city_scope",
     "extract_markdown_excerpts",
 ]
