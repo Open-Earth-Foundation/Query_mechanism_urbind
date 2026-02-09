@@ -13,7 +13,10 @@ from app.modules.markdown_researcher.models import MarkdownResearchResult
 from app.modules.markdown_researcher.services import load_markdown_documents
 from app.modules.orchestrator.agent import decide_next_action
 from app.modules.orchestrator.models import OrchestratorDecision
-from app.modules.orchestrator.utils.error_handlers import handle_task_error
+from app.modules.orchestrator.utils.error_handlers import (
+    detach_run_file_logger,
+    handle_task_error,
+)
 from app.modules.orchestrator.utils.handlers import (
     handle_markdown_decision,
     handle_sql_decision,
@@ -55,13 +58,6 @@ def _attach_run_file_logger(run_dir: Path) -> logging.FileHandler:
     )
     logging.getLogger().addHandler(handler)
     return handler
-
-
-def _detach_run_file_logger(handler: logging.FileHandler) -> None:
-    """Remove and close file handler from root logger."""
-    root_logger = logging.getLogger()
-    root_logger.removeHandler(handler)
-    handler.close()
 
 
 def _fetch_city_list(db_client: DbClient, max_rows: int = 500) -> list[str]:
@@ -402,7 +398,7 @@ def _run_orchestration_loop(
         if decision.status == "error":
             logger.error("Orchestrator decision failed")
             run_logger.finalize("failed", finish_reason="decision_error")
-            _detach_run_file_logger(run_log_handler)
+            detach_run_file_logger(run_log_handler)
             return paths
 
         # Handle write decision
@@ -443,7 +439,7 @@ def _run_orchestration_loop(
             if db_client is None:
                 logger.error("SQL enabled but no database client is available")
                 run_logger.finalize("failed", finish_reason="sql_execution_failed")
-                _detach_run_file_logger(run_log_handler)
+                detach_run_file_logger(run_log_handler)
                 return paths
             follow_up = decision.follow_up_question or question
             result = handle_sql_decision(
@@ -506,7 +502,7 @@ def _run_orchestration_loop(
         if decision.action == "stop":
             logger.info("Orchestrator decided to stop")
             run_logger.finalize("stopped", finish_reason="stopped_by_orchestrator")
-            _detach_run_file_logger(run_log_handler)
+            detach_run_file_logger(run_log_handler)
             return paths
 
     # Fallback writer after max iterations
@@ -534,7 +530,7 @@ def _run_orchestration_loop(
             final_output_path=paths.final_output,
             finish_reason="completed_with_gaps (max iterations)",
         )
-        _detach_run_file_logger(run_log_handler)
+        detach_run_file_logger(run_log_handler)
         return paths
     except (ValueError, RuntimeError, OSError) as exc:
         logger.exception("Fallback writer failed")
@@ -547,7 +543,7 @@ def _run_orchestration_loop(
             }
         )
         run_logger.finalize("failed", finish_reason="max_iterations_exceeded")
-        _detach_run_file_logger(run_log_handler)
+        detach_run_file_logger(run_log_handler)
         return paths
 
 
@@ -690,11 +686,11 @@ def run_pipeline(
 
     if sql_enabled and not sql_payload:
         run_logger.finalize("failed", finish_reason="sql_execution_failed")
-        _detach_run_file_logger(run_log_handler)
+        detach_run_file_logger(run_log_handler)
         return paths
     if not markdown_payload:
         run_logger.finalize("failed", finish_reason="markdown_extraction_failed")
-        _detach_run_file_logger(run_log_handler)
+        detach_run_file_logger(run_log_handler)
         return paths
 
     if sql_enabled and sql_payload and sql_payload.get("status") == "error":
@@ -702,7 +698,7 @@ def run_pipeline(
         if isinstance(sql_plan, SqlQueryPlan):
             run_logger.record_decision(sql_plan.model_dump())
         run_logger.finalize("failed", finish_reason="sql_plan_error")
-        _detach_run_file_logger(run_log_handler)
+        detach_run_file_logger(run_log_handler)
         return paths
 
     if sql_enabled and sql_payload:
@@ -745,11 +741,11 @@ def run_pipeline(
         if markdown_result.status == "error":
             run_logger.record_decision(markdown_result.model_dump())
             run_logger.finalize("failed", finish_reason="markdown_result_error")
-            _detach_run_file_logger(run_log_handler)
+            detach_run_file_logger(run_log_handler)
             return paths
     else:
         run_logger.finalize("failed", finish_reason="markdown_extraction_failed")
-        _detach_run_file_logger(run_log_handler)
+        detach_run_file_logger(run_log_handler)
         return paths
 
     # Run orchestration loop

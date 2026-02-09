@@ -4,7 +4,6 @@ import ast
 import json
 import logging
 import random
-import re
 import threading
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -178,62 +177,6 @@ def _error_indicates_missing_input(error: ErrorInfo | None) -> bool:
     return _text_indicates_missing_input(" ".join(parts))
 
 
-def _extract_reasoning_texts(run_result: object) -> list[str]:
-    raw_responses = _get_field(run_result, "raw_responses")
-    if not isinstance(raw_responses, list):
-        return []
-
-    reasoning_texts: list[str] = []
-    for response in raw_responses:
-        output_items = _get_field(response, "output")
-        if not isinstance(output_items, list):
-            continue
-        for item in output_items:
-            if _get_field(item, "type") != "reasoning":
-                continue
-            content = _get_field(item, "content")
-            if isinstance(content, list):
-                for part in content:
-                    text = _get_field(part, "text")
-                    if text:
-                        reasoning_texts.append(str(text))
-            text = _get_field(item, "text")
-            if text:
-                reasoning_texts.append(str(text))
-    return reasoning_texts
-
-
-def _reasoned_about_content(
-    run_result: object,
-    question: str,
-    city_name: str,
-) -> bool:
-    reasoning_texts = _extract_reasoning_texts(run_result)
-    if not reasoning_texts:
-        return False
-    combined = " ".join(reasoning_texts)
-    if _text_indicates_missing_input(combined):
-        return False
-
-    lowered = combined.lower()
-    question_tokens = [
-        token for token in re.split(r"\W+", question.lower()) if len(token) >= 4
-    ]
-    overlap_count = sum(1 for token in set(question_tokens) if token in lowered)
-    has_city = city_name.lower() in lowered
-    has_analysis_terms = any(
-        marker in lowered
-        for marker in (
-            "extract",
-            "excerpt",
-            "snippet",
-            "document",
-            "climate initiative",
-        )
-    )
-    return has_analysis_terms and (has_city or overlap_count >= 2)
-
-
 def _doc_city_name(document: dict[str, str]) -> str:
     city_name = document.get("city_name")
     if city_name:
@@ -386,10 +329,6 @@ def extract_markdown_excerpts(
                     output.error
                 ):
                     retryable_bad_output_reason = "missing_input_error"
-                elif not output.excerpts and _reasoned_about_content(
-                    run_result, question, city_name
-                ):
-                    retryable_bad_output_reason = "empty_excerpts_after_reasoning"
 
                 if retryable_bad_output_reason and attempt < max_retries:
                     logger.warning(
@@ -477,21 +416,6 @@ def extract_markdown_excerpts(
                         "Markdown researcher reported missing input after retries."
                     ),
                 )
-            return city_name, batch_index, excerpts, error, success
-
-        if retryable_bad_output_reason == "empty_excerpts_after_reasoning":
-            logger.warning(
-                "Markdown %s batch %s returned empty excerpts after reasoning over content.",
-                city_name,
-                batch_index,
-            )
-            error = ErrorInfo(
-                code="MARKDOWN_EMPTY_EXCERPTS",
-                message=(
-                    "Markdown researcher produced reasoning about the provided content "
-                    "but returned no excerpts."
-                ),
-            )
             return city_name, batch_index, excerpts, error, success
 
         if output.status == "error":
