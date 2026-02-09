@@ -25,5 +25,10 @@ writer:
   model: "openai/gpt-5.2"
   context_window_tokens: 400000
   input_token_reserve: 20000
+chat:
+  model: "openai/gpt-5.2"
+  context_window_tokens: 400000
+  input_token_reserve: 20000
+  max_history_messages: 24
 openrouter_base_url: "https://openrouter.ai/api/v1"
 enable_sql: false

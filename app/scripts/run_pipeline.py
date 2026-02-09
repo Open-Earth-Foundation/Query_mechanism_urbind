@@ -26,12 +26,7 @@ from __future__ import annotations
 
 import argparse
 import logging
-import os
 from pathlib import Path
-
-# Disable OpenAI Agents tracing before importing to prevent 401 errors with OpenRouter
-# (OpenRouter keys are not recognized by OpenAI's tracing endpoint)
-os.environ.setdefault("OPENAI_AGENTS_DISABLE_TRACING", "1")
 
 from app.modules.orchestrator.module import run_pipeline
 from app.utils.config import load_config

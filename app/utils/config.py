@@ -41,6 +41,10 @@ class MarkdownResearcherConfig(AgentConfig):
     request_backoff_max_seconds: float = 10.0
 
 
+class ChatConfig(AgentConfig):
+    max_history_messages: int = 24
+
+
 class AppConfig(BaseModel):
     model_config = ConfigDict(arbitrary_types_allowed=True)
 
@@ -48,6 +52,7 @@ class AppConfig(BaseModel):
     sql_researcher: SqlResearcherConfig
     markdown_researcher: MarkdownResearcherConfig
     writer: AgentConfig
+    chat: ChatConfig = Field(default_factory=lambda: ChatConfig(model="openai/gpt-5.2"))
     openrouter_base_url: str = "https://openrouter.ai/api/v1"
     runs_dir: Path = Field(default_factory=lambda: Path("output"))
     source_db_path: Path = Field(default_factory=lambda: Path("data/source.db"))
@@ -130,6 +135,7 @@ __all__ = [
     "OrchestratorConfig",
     "SqlResearcherConfig",
     "MarkdownResearcherConfig",
+    "ChatConfig",
     "AppConfig",
     "load_config",
     "get_openrouter_api_key",

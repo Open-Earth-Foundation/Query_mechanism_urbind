@@ -523,7 +523,6 @@ def _run_orchestration_loop(
             writer_output.content,
             paths,
             run_logger,
-            finish_reason="completed_with_gaps (max iterations)",
         )
         run_logger.finalize(
             "completed_with_gaps",
@@ -552,6 +551,7 @@ def run_pipeline(
     config: AppConfig,
     run_id: str | None = None,
     log_llm_payload: bool = True,
+    api_key_override: str | None = None,
     sql_plan_func: Callable[..., SqlQueryPlan] = plan_sql_queries,
     markdown_func: Callable[..., MarkdownResearchResult] = extract_markdown_excerpts,
     decide_func: Callable[..., OrchestratorDecision] = decide_next_action,
@@ -567,6 +567,7 @@ def run_pipeline(
         config: Application configuration
         run_id: Optional run identifier
         log_llm_payload: Whether to log full LLM request/response payloads
+        api_key_override: Optional OpenRouter API key override for this run
         sql_plan_func: SQL planning function (default: plan_sql_queries)
         markdown_func: Markdown extraction function (default: extract_markdown_excerpts)
         decide_func: Orchestration decision function (default: decide_next_action)
@@ -575,7 +576,11 @@ def run_pipeline(
     Returns:
         Run paths containing output artifacts
     """
-    api_key = get_openrouter_api_key()
+    api_key = (
+        api_key_override.strip()
+        if isinstance(api_key_override, str) and api_key_override.strip()
+        else get_openrouter_api_key()
+    )
     run_id_value = run_id or build_run_id()
     paths = create_run_paths(
         config.runs_dir, run_id_value, config.orchestrator.context_bundle_name

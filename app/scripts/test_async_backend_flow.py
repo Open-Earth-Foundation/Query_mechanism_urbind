@@ -6,7 +6,7 @@ Inputs:
   - `--base-url`: Backend base URL (for example `http://127.0.0.1:8000`).
   - `--question`: Question sent to `POST /api/v1/runs`.
   - `--run-id`: Optional run id to request.
-  - `--enable-sql`: Request SQL-enabled execution.
+  - `--cities`: Optional comma-separated city names to limit processed markdown files.
   - `--markdown-path`: Optional markdown directory override sent to backend.
   - `--config-path`: Optional config path override sent to backend.
   - `--log-llm-payload`: Request backend LLM payload logging.
@@ -14,6 +14,10 @@ Inputs:
   - `--status-path-template`: Status endpoint template with `{run_id}`.
   - `--output-path-template`: Output endpoint template with `{run_id}`.
   - `--context-path-template`: Context endpoint template with `{run_id}`.
+  - `--chat-sessions-path-template`: Chat sessions endpoint template with `{run_id}`.
+  - `--chat-message-path-template`: Chat message endpoint template with `{run_id}` and `{conversation_id}`.
+  - `--exercise-chat`: Validate chat session + message endpoints after document generation.
+  - `--chat-message`: Chat prompt used for endpoint validation when `--exercise-chat` is enabled.
   - `--poll-interval-seconds`: Poll interval for status checks.
   - `--max-wait-seconds`: Max time to wait for terminal status.
   - `--request-timeout-seconds`: HTTP timeout per request.
@@ -31,6 +35,8 @@ Outputs:
   - `smoke_status_history.json`
   - `smoke_output.json`
   - `smoke_context.json`
+  - `smoke_chat_session.json` (when `--exercise-chat`)
+  - `smoke_chat_message.json` (when `--exercise-chat`)
   - `smoke_summary.json`
 
 Usage (from project root):
@@ -80,9 +86,8 @@ def parse_args() -> argparse.Namespace:
         help="Optional run id to request.",
     )
     parser.add_argument(
-        "--enable-sql",
-        action="store_true",
-        help="Request SQL-enabled execution.",
+        "--cities",
+        help="Optional comma-separated city names for backend filtering.",
     )
     parser.add_argument(
         "--markdown-path",
@@ -117,6 +122,27 @@ def parse_args() -> argparse.Namespace:
         "--context-path-template",
         default="/api/v1/runs/{run_id}/context",
         help="Context endpoint path template containing {run_id}.",
+    )
+    parser.add_argument(
+        "--chat-sessions-path-template",
+        default="/api/v1/runs/{run_id}/chat/sessions",
+        help="Chat sessions endpoint path template containing {run_id}.",
+    )
+    parser.add_argument(
+        "--chat-message-path-template",
+        default="/api/v1/runs/{run_id}/chat/sessions/{conversation_id}/messages",
+        help="Chat message endpoint template containing {run_id} and {conversation_id}.",
+    )
+    parser.add_argument(
+        "--exercise-chat",
+        action="store_true",
+        default=False,
+        help="Validate backend chat endpoints after run completion.",
+    )
+    parser.add_argument(
+        "--chat-message",
+        default="Summarize the context bundle in three bullets.",
+        help="Prompt sent to chat endpoint when --exercise-chat is enabled.",
     )
     parser.add_argument(
         "--poll-interval-seconds",
@@ -253,11 +279,12 @@ def _build_start_payload(args: argparse.Namespace) -> dict[str, object]:
     """Build trigger endpoint payload from CLI args."""
     payload: dict[str, object] = {
         "question": args.question,
-        "enable_sql": args.enable_sql,
         "log_llm_payload": args.log_llm_payload,
     }
     if args.run_id:
         payload["run_id"] = args.run_id
+    if args.cities:
+        payload["cities"] = [item.strip() for item in args.cities.split(",") if item.strip()]
     if args.markdown_path:
         payload["markdown_path"] = args.markdown_path
     if args.config_path:
@@ -318,6 +345,26 @@ def _validate_context_payload(payload: dict[str, object]) -> None:
     raise RuntimeError("Context response must include `context_bundle` as an object.")
 
 
+def _validate_chat_session_payload(payload: dict[str, object]) -> str:
+    """Validate chat session creation payload and return conversation id."""
+    conversation_id = payload.get("conversation_id")
+    if not isinstance(conversation_id, str) or not conversation_id.strip():
+        raise RuntimeError("Chat session response must include `conversation_id`.")
+    return conversation_id
+
+
+def _validate_chat_message_payload(payload: dict[str, object]) -> None:
+    """Validate chat message response payload."""
+    assistant_message = payload.get("assistant_message")
+    if not isinstance(assistant_message, dict):
+        raise RuntimeError("Chat message response must include `assistant_message`.")
+    content = assistant_message.get("content")
+    if not isinstance(content, str) or not content.strip():
+        raise RuntimeError(
+            "Chat message response must include non-empty assistant content."
+        )
+
+
 def main() -> None:
     """Script entry point."""
     args = parse_args()
@@ -359,6 +406,9 @@ def main() -> None:
             base_url,
             args.context_path_template.format(run_id=run_id),
         )
+        chat_sessions_url = _join_url(
+            base_url, args.chat_sessions_path_template.format(run_id=run_id)
+        )
 
         logger.info("Started run_id=%s", run_id)
         logger.info("Polling status endpoint: %s", status_url)
@@ -393,6 +443,37 @@ def main() -> None:
         _write_json(run_artifacts_dir / "smoke_status_history.json", status_history)
         _write_json(run_artifacts_dir / "smoke_output.json", output_response)
         _write_json(run_artifacts_dir / "smoke_context.json", context_response)
+
+        chat_session_response: dict[str, object] | None = None
+        chat_message_response: dict[str, object] | None = None
+        if args.exercise_chat:
+            _, chat_session_response = _request_json(
+                "POST",
+                chat_sessions_url,
+                timeout_seconds=args.request_timeout_seconds,
+                payload={},
+            )
+            conversation_id = _validate_chat_session_payload(chat_session_response)
+            chat_message_url = _join_url(
+                base_url,
+                args.chat_message_path_template.format(
+                    run_id=run_id, conversation_id=conversation_id
+                ),
+            )
+            _, chat_message_response = _request_json(
+                "POST",
+                chat_message_url,
+                timeout_seconds=args.request_timeout_seconds,
+                payload={"content": args.chat_message},
+            )
+            _validate_chat_message_payload(chat_message_response)
+            _write_json(
+                run_artifacts_dir / "smoke_chat_session.json", chat_session_response
+            )
+            _write_json(
+                run_artifacts_dir / "smoke_chat_message.json", chat_message_response
+            )
+
         _write_json(
             run_artifacts_dir / "smoke_summary.json",
             {
@@ -402,9 +483,13 @@ def main() -> None:
                 "status_url": status_url,
                 "output_url": output_url,
                 "context_url": context_url,
+                "chat_sessions_url": chat_sessions_url,
+                "chat_exercised": args.exercise_chat,
                 "accepted_terminal_statuses": sorted(accepted_statuses),
                 "artifacts_dir": str(run_artifacts_dir),
                 "final_status_payload": final_status_payload,
+                "chat_session_response": chat_session_response,
+                "chat_message_response": chat_message_response,
             },
         )
 

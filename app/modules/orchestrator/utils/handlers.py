@@ -64,7 +64,6 @@ def handle_write_decision(
             writer_output.content,
             paths,
             run_logger,
-            finish_reason="completed (write)",
         )
         run_logger.finalize(
             "completed",

@@ -48,24 +48,20 @@ def write_draft_and_final(
     content: str,
     paths: RunPaths,
     run_logger: RunLogger,
-    finish_reason: str = "completed",
 ) -> None:
     """
     Write draft and final output files.
 
-    Creates both a numbered draft and final output file with question header
-    and finish reason footer.
+    Creates both a numbered draft and final output file with a question header.
 
     Args:
         question: Original user question
         content: Generated content
         paths: Run paths for output
         run_logger: Logger for recording artifacts
-        finish_reason: Reason for finishing (included in output)
     """
     question_header = f"# Question\n{question}\n\n"
-    finish_note = f"\n\n---\nFinish reason: {finish_reason}\n"
-    rendered_content = f"{question_header}{content}{finish_note}"
+    rendered_content = f"{question_header}{content}"
 
     draft_index = len(run_logger.run_log.get("drafts", [])) + 1
     draft_path = paths.drafts_dir / f"draft_{draft_index:02d}.md"

@@ -1,0 +1,74 @@
+{
+  "groups": [
+    {
+      "id": "dach-core",
+      "name": "DACH Core",
+      "description": "German-speaking and nearby core cities.",
+      "cities": [
+        "Aachen",
+        "Dresden",
+        "Heidelberg",
+        "Leipzig",
+        "Mannheim",
+        "Munich",
+        "Munster"
+      ]
+    },
+    {
+      "id": "nordic-cluster",
+      "name": "Nordic Cluster",
+      "description": "Nordic and Baltic climate-focused cities.",
+      "cities": [
+        "Aarhus",
+        "Espoo",
+        "Lahti",
+        "Oslo",
+        "Stavanger",
+        "Tampere",
+        "Umea",
+        "Vilnius"
+      ]
+    },
+    {
+      "id": "iberian-arc",
+      "name": "Iberian Arc",
+      "description": "Iberian Peninsula and nearby western cities.",
+      "cities": [
+        "Guimaraes",
+        "Lisbon",
+        "Porto",
+        "Seville",
+        "Vitoria_Gasteiz",
+        "Zaragoza"
+      ]
+    },
+    {
+      "id": "central-eastern",
+      "name": "Central and Eastern Europe",
+      "description": "Cities across central/eastern Europe.",
+      "cities": [
+        "Bratislava",
+        "Cluj_Napoca",
+        "Krakow",
+        "Kranj",
+        "Lodz",
+        "Rzeszow",
+        "Velenje",
+        "Warszawa",
+        "Wroclaw"
+      ]
+    },
+    {
+      "id": "western-mixed",
+      "name": "Western Mixed",
+      "description": "Western Europe cross-country sample.",
+      "cities": [
+        "Dublin",
+        "Nantes",
+        "Rotterdam",
+        "Rome",
+        "Turin"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    image: query-mechanism-backend:latest
+    container_name: query-mechanism-backend
+    env_file:
+      - .env
+    environment:
+      RUNS_DIR: /data/output
+      MARKDOWN_DIR: /data/documents
+      LLM_CONFIG_PATH: /data/config/llm_config.yaml
+      CITY_GROUPS_PATH: /data/config/city_groups.json
+      API_CORS_ORIGINS: http://localhost:3000,http://127.0.0.1:3000
+      LOG_LEVEL: INFO
+    volumes:
+      - ./documents:/data/documents
+      - ./output:/data/output
+      - ./llm_config.yaml:/data/config/llm_config.yaml:ro
+      - ./app/api/assets/city_groups.json:/data/config/city_groups.json:ro
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        NEXT_PUBLIC_API_BASE_URL: http://localhost:8000
+    image: query-mechanism-frontend:latest
+    container_name: query-mechanism-frontend
+    environment:
+      NEXT_PUBLIC_API_BASE_URL: http://localhost:8000
+    depends_on:
+      - backend
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
