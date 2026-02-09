@@ -10,6 +10,7 @@ logger = logging.getLogger(__name__)
 
 
 def _resolve_chunk_tokens(config: MarkdownResearcherConfig) -> int:
+    """Resolve the effective chunk token budget for markdown splitting."""
     max_input_tokens = get_max_input_tokens(
         config.context_window_tokens,
         config.max_output_tokens,
@@ -28,7 +29,14 @@ def _resolve_chunk_tokens(config: MarkdownResearcherConfig) -> int:
 def split_documents_by_city(
     documents: list[dict[str, str]],
 ) -> dict[str, list[dict[str, str]]]:
-    """Group documents by city name."""
+    """Group documents by the precomputed ``city_name`` key.
+
+    Note:
+    - City identity is intentionally based on filename stem (set by
+      ``load_markdown_documents``), not directory structure.
+    - Documents from different folders with the same stem are intentionally
+      merged into one city bucket.
+    """
     by_city: dict[str, list[dict[str, str]]] = {}
     for doc in documents:
         city_name = doc.get("city_name", "unknown")
@@ -42,6 +50,15 @@ def load_markdown_documents(
     markdown_dir: Path,
     config: MarkdownResearcherConfig,
 ) -> list[dict[str, str]]:
+    """Load and chunk markdown files for the researcher input payload.
+
+    Behavior:
+    - Recursively discovers ``*.md`` files under ``markdown_dir``.
+    - Assigns ``city_name`` from ``Path.stem`` intentionally, so files with the
+      same stem in different subdirectories map to the same logical city.
+    - Returns one entry per chunk, preserving ``path``, ``city_name``, and
+      chunk metadata.
+    """
     if not markdown_dir.exists():
         raise FileNotFoundError(f"Markdown directory not found: {markdown_dir}")
 
