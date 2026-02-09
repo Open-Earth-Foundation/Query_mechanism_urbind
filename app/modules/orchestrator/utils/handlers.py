@@ -14,7 +14,10 @@ if TYPE_CHECKING:
     from app.utils.paths import RunPaths
     from app.modules.sql_researcher.models import SqlQueryPlan
 
-from app.modules.orchestrator.utils.error_handlers import handle_orchestration_error
+from app.modules.orchestrator.utils.error_handlers import (
+    detach_run_file_logger,
+    handle_orchestration_error,
+)
 from app.modules.orchestrator.utils.io import write_draft_and_final
 
 logger = logging.getLogger(__name__)
@@ -68,7 +71,7 @@ def handle_write_decision(
             final_output_path=paths.final_output,
             finish_reason="completed (write)",
         )
-        run_log_handler.close()
+        detach_run_file_logger(run_log_handler)
         return paths
     except (ValueError, RuntimeError, OSError) as exc:
         return handle_orchestration_error(
@@ -137,7 +140,7 @@ def handle_sql_decision(
         if sql_plan.status == "error":
             run_logger.record_decision(sql_plan.model_dump())
             run_logger.finalize("failed", finish_reason="sql_plan_error")
-            run_log_handler.close()
+            detach_run_file_logger(run_log_handler)
             return paths
 
         # Executes planned queries
@@ -220,7 +223,7 @@ def handle_markdown_decision(
         if markdown_result.status == "error":
             run_logger.record_decision(markdown_result.model_dump())
             run_logger.finalize("failed", finish_reason="markdown_result_error")
-            run_log_handler.close()
+            detach_run_file_logger(run_log_handler)
             return paths
 
         return None  # Continue iteration

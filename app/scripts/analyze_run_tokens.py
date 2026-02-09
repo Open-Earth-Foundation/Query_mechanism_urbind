@@ -22,17 +22,14 @@ Usage (from project root):
 from __future__ import annotations
 
 import argparse
+import json
 import logging
-import re
+from collections.abc import Mapping
 from pathlib import Path
 
 from app.utils.logging_config import setup_logger
 
 logger = logging.getLogger(__name__)
-
-_INPUT_TOKEN_PATTERN = re.compile(r'"input_tokens"\s*:\s*(\d+)')
-_OUTPUT_TOKEN_PATTERN = re.compile(r'"output_tokens"\s*:\s*(\d+)')
-_REASONING_TOKEN_PATTERN = re.compile(r'"reasoning_tokens"\s*:\s*(\d+)')
 
 
 def parse_args() -> argparse.Namespace:
@@ -65,8 +62,55 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
-def _extract_token_values(pattern: re.Pattern[str], content: str) -> list[int]:
-    return [int(value) for value in pattern.findall(content)]
+def _extract_token_value(usage: Mapping[str, object], keys: list[str]) -> int:
+    """Return the first numeric token value found for the provided key aliases."""
+    for key in keys:
+        value = usage.get(key)
+        if isinstance(value, (int, float)):
+            return int(value)
+    return 0
+
+
+def _extract_reasoning_tokens(usage: Mapping[str, object]) -> int:
+    """Extract reasoning tokens from usage payloads when available."""
+    details = usage.get("output_tokens_details")
+    if isinstance(details, Mapping):
+        reasoning_tokens = details.get("reasoning_tokens")
+        if isinstance(reasoning_tokens, (int, float)):
+            return int(reasoning_tokens)
+    return _extract_token_value(usage, ["reasoning_tokens"])
+
+
+def _parse_llm_usage_lines(run_log_path: Path) -> tuple[int, int, int, int]:
+    """Parse only LLM_USAGE lines from run.log and return aggregate token totals."""
+    call_count = 0
+    total_input = 0
+    total_output = 0
+    total_reasoning = 0
+
+    with run_log_path.open("r", encoding="utf-8", errors="replace") as handle:
+        for line in handle:
+            if "LLM_USAGE " not in line:
+                continue
+            payload = line.split("LLM_USAGE ", 1)[1].strip()
+            try:
+                data = json.loads(payload)
+            except json.JSONDecodeError:
+                continue
+            usage = data.get("usage")
+            if not isinstance(usage, Mapping):
+                continue
+
+            call_count += 1
+            total_input += _extract_token_value(
+                usage, ["input_tokens", "prompt_tokens"]
+            )
+            total_output += _extract_token_value(
+                usage, ["output_tokens", "completion_tokens"]
+            )
+            total_reasoning += _extract_reasoning_tokens(usage)
+
+    return call_count, total_input, total_output, total_reasoning
 
 
 def summarize_run_log(
@@ -79,15 +123,9 @@ def summarize_run_log(
     if not run_log_path.exists():
         raise FileNotFoundError(f"Run log file not found: {run_log_path}")
 
-    content = run_log_path.read_text(encoding="utf-8")
-    input_tokens = _extract_token_values(_INPUT_TOKEN_PATTERN, content)
-    output_tokens = _extract_token_values(_OUTPUT_TOKEN_PATTERN, content)
-    reasoning_tokens = _extract_token_values(_REASONING_TOKEN_PATTERN, content)
-
-    call_count = max(len(input_tokens), len(output_tokens))
-    total_input = sum(input_tokens)
-    total_output = sum(output_tokens)
-    total_reasoning = sum(reasoning_tokens)
+    call_count, total_input, total_output, total_reasoning = _parse_llm_usage_lines(
+        run_log_path
+    )
 
     input_cost = total_input / 1_000_000 * input_price_per_1m
     output_cost = total_output / 1_000_000 * output_price_per_1m
@@ -120,4 +158,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

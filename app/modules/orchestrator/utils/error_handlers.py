@@ -8,6 +8,13 @@ from app.utils.paths import RunPaths
 logger = logging.getLogger(__name__)
 
 
+def detach_run_file_logger(run_log_handler: logging.FileHandler) -> None:
+    """Safely remove and close a run-specific file handler from the root logger."""
+    root_logger = logging.getLogger()
+    root_logger.removeHandler(run_log_handler)
+    run_log_handler.close()
+
+
 def handle_orchestration_error(
     run_logger: RunLogger,
     run_log_handler: logging.FileHandler,
@@ -44,7 +51,7 @@ def handle_orchestration_error(
         }
     )
     run_logger.finalize("failed", finish_reason=reason)
-    run_log_handler.close()
+    detach_run_file_logger(run_log_handler)
     return paths
 
 
@@ -90,4 +97,4 @@ def handle_task_error(
         )
 
 
-__all__ = ["handle_orchestration_error", "handle_task_error"]
+__all__ = ["detach_run_file_logger", "handle_orchestration_error", "handle_task_error"]
