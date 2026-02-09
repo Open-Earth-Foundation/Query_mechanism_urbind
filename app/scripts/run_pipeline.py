@@ -58,15 +58,10 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--markdown-path", help="Override markdown documents path.")
     parser.add_argument(
         "--log-llm-payload",
-        action="store_true",
+        action=argparse.BooleanOptionalAction,
         default=True,
-        help="Log full LLM request/response payloads (default: on).",
-    )
-    parser.add_argument(
-        "--no-log-llm-payload",
-        action="store_false",
         dest="log_llm_payload",
-        help="Disable LLM payload logging.",
+        help="Enable or disable logging of full LLM request/response payloads (default: on).",
     )
     return parser.parse_args()
 
