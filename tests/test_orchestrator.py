@@ -22,13 +22,11 @@ def _stub_sql_plan(
     question: str,
     schema_summary: dict,
     city_names: list[str],
-    run_id: str,
     config: AppConfig,
     api_key: str,
     **_kwargs: dict[str, object],
 ) -> SqlQueryPlan:
     return SqlQueryPlan(
-        run_id=run_id,
         queries=[SqlQuery(query_id="q1", query="SELECT cityName FROM City")],
     )
 
@@ -36,7 +34,6 @@ def _stub_sql_plan(
 def _stub_markdown(
     question: str,
     documents: list[dict[str, str]],
-    run_id: str,
     config: AppConfig,
     api_key: str,
 ) -> MarkdownResearchResult:
@@ -46,27 +43,25 @@ def _stub_markdown(
         answer="Stub answer",
         relevant="yes",
     )
-    return MarkdownResearchResult(run_id=run_id, excerpts=[excerpt])
+    return MarkdownResearchResult(excerpts=[excerpt])
 
 
 def _stub_decision(
     question: str,
     context_bundle: dict,
-    run_id: str,
     config: AppConfig,
     api_key: str,
 ) -> OrchestratorDecision:
-    return OrchestratorDecision(run_id=run_id, action="write", reason="Enough")
+    return OrchestratorDecision(action="write", reason="Enough")
 
 
 def _stub_writer(
     question: str,
     context_bundle: dict,
-    run_id: str,
     config: AppConfig,
     api_key: str,
 ) -> WriterOutput:
-    return WriterOutput(run_id=run_id, content="# Answer\n\nStub")
+    return WriterOutput(content="# Answer\n\nStub")
 
 
 def test_run_pipeline_creates_artifacts(

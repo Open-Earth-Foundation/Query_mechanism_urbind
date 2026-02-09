@@ -40,7 +40,6 @@ def build_orchestrator_agent(config: AppConfig, api_key: str) -> Agent:
 def decide_next_action(
     question: str,
     context_bundle: dict,
-    run_id: str,
     config: AppConfig,
     api_key: str,
     log_llm_payload: bool = False,
@@ -48,7 +47,6 @@ def decide_next_action(
     """Run the orchestrator to decide the next action."""
     agent = build_orchestrator_agent(config, api_key)
     payload = {
-        "run_id": run_id,
         "question": question,
         "context_bundle": context_bundle,
         "sql_enabled": config.enable_sql,

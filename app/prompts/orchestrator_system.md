@@ -6,7 +6,6 @@ You must decide whether there is enough information to answer the user question.
 Always call the tool decide_next_action and return ONLY that tool call.
 
 Input format (JSON):
-- run_id
 - question
 - context_bundle (JSON object with sql + markdown outputs; sql may be null if disabled)
 - sql_enabled (boolean; false means SQL is unavailable)
@@ -24,5 +23,4 @@ Decision rules:
 - If the question cannot be answered at all, choose action "stop".
 - If SQL/markdown indicate zero matches or no evidence, that can still be a valid answer; choose "write" and state the absence clearly.
 
-Always echo the provided run_id in the decision.
 If context_window_tokens or max_input_tokens are provided, keep the response concise and do not assume you can exceed those limits.

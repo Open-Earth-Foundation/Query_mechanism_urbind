@@ -4,6 +4,8 @@ import asyncio
 import dataclasses
 import json
 import logging
+import sys
+import threading
 from collections.abc import Mapping, Sequence
 from typing import Any
 
@@ -20,8 +22,16 @@ from openai import AsyncOpenAI, DefaultAsyncHttpxClient
 
 logger = logging.getLogger(__name__)
 
-_openai_http_client: httpx.AsyncClient | None = None
-_openai_client_cache: dict[tuple[str, str | None], AsyncOpenAI] = {}
+_openai_http_clients: dict[int, httpx.AsyncClient] = {}
+_openai_client_cache: dict[tuple[str, str | None, int | None, int], AsyncOpenAI] = {}
+_thread_local = threading.local()
+
+if sys.platform.startswith("win"):
+    # Avoid Proactor-specific transport-close races when running many short LLM calls.
+    try:
+        asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())  # type: ignore[attr-defined]
+    except Exception:  # noqa: BLE001
+        pass
 
 
 def _truncate_text(value: str, max_chars: int = 500) -> str:
@@ -83,25 +93,35 @@ async def _log_http_error_response(response: httpx.Response) -> None:
 
 
 def _get_openai_http_client() -> httpx.AsyncClient:
-    """Return a shared HTTP client with error logging hooks."""
-    global _openai_http_client
-    if _openai_http_client is None:
-        _openai_http_client = DefaultAsyncHttpxClient(
+    """Return a per-thread HTTP client with error logging hooks."""
+    thread_id = threading.get_ident()
+    client = _openai_http_clients.get(thread_id)
+    if client is None:
+        client = DefaultAsyncHttpxClient(
             event_hooks={"response": [_log_http_error_response]},
         )
-    return _openai_http_client
+        _openai_http_clients[thread_id] = client
+    return client
 
 
-def _get_openai_client(api_key: str, base_url: str | None) -> AsyncOpenAI:
-    """Return a cached OpenAI client configured for error logging."""
-    cache_key = (api_key, base_url)
+def _get_openai_client(
+    api_key: str,
+    base_url: str | None,
+    max_retries: int | None = None,
+) -> AsyncOpenAI:
+    """Return a per-thread cached OpenAI client configured for error logging."""
+    thread_id = threading.get_ident()
+    cache_key = (api_key, base_url, max_retries, thread_id)
     client = _openai_client_cache.get(cache_key)
     if client is None:
-        client = AsyncOpenAI(
-            api_key=api_key,
-            base_url=base_url,
-            http_client=_get_openai_http_client(),
-        )
+        kwargs: dict[str, Any] = {
+            "api_key": api_key,
+            "base_url": base_url,
+            "http_client": _get_openai_http_client(),
+        }
+        if max_retries is not None:
+            kwargs["max_retries"] = max_retries
+        client = AsyncOpenAI(**kwargs)
         _openai_client_cache[cache_key] = client
     return client
 
@@ -336,9 +356,14 @@ def build_model_settings(
     return ModelSettings(**settings_kwargs)
 
 
-def build_openrouter_model(model_name: str, api_key: str, base_url: str | None):
+def build_openrouter_model(
+    model_name: str,
+    api_key: str,
+    base_url: str | None,
+    client_max_retries: int | None = None,
+):
     """Build an OpenRouter-backed model with HTTP error logging enabled."""
-    client = _get_openai_client(api_key, base_url)
+    client = _get_openai_client(api_key, base_url, max_retries=client_max_retries)
     provider = OpenAIProvider(openai_client=client)
     return provider.get_model(model_name)
 
@@ -367,8 +392,17 @@ def run_agent_sync(
     if log_llm_payload:
         hooks_list.append(LlmPayloadLoggingHooks())
     hooks: RunHooksBase[Any, Agent[Any]] | None = CompositeRunHooks(hooks_list)
+
+    loop = getattr(_thread_local, "loop", None)
+    if loop is None or loop.is_closed():
+        loop = asyncio.new_event_loop()
+        _thread_local.loop = loop
+        asyncio.set_event_loop(loop)
+
     try:
-        return asyncio.run(Runner.run(agent, input_data, max_turns=max_turns, hooks=hooks))
+        return loop.run_until_complete(
+            Runner.run(agent, input_data, max_turns=max_turns, hooks=hooks)
+        )
     except MaxTurnsExceeded as exc:
         logger.warning(
             "Agent exceeded max turns (%d). Gracefully stopping with partial results.",

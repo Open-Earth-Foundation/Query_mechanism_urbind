@@ -3,6 +3,7 @@
 Multi-agent document builder that answers user questions by combining SQL data (optional; disabled by default) and Markdown sources. It orchestrates a SQL Researcher, Markdown Researcher, and Writer with OpenAI Agents, and logs every run artifact for inspection.
 
 ## Requirements
+
 - Python 3.10+
 - Local SQLite source DB derived from `app/db_models/` (required only when SQL is enabled)
 - `OPENROUTER_API_KEY` in environment
@@ -10,16 +11,19 @@ Multi-agent document builder that answers user questions by combining SQL data (
 ## Install
 
 ### pip
+
 ```
 pip install -e .
 ```
 
 If you prefer a frozen requirements file:
+
 ```
 pip install -r requirements.txt
 ```
 
 ### uv
+
 ```
 uv pip install -e .
 ```
@@ -45,6 +49,7 @@ Default output directory is `output/` (override with `RUNS_DIR`).
 Schema summary for SQL generation is derived from `app/db_models/`.
 
 Example `llm_config.yaml`:
+
 ```
 orchestrator:
   model: "moonshotai/kimi-k2.5"
@@ -81,24 +86,19 @@ python -m app.scripts.run_pipeline --question "What initiatives exist for Munich
   --markdown-path documents
 ```
 
-Log full LLM payloads:
+Disable LLM payload logging:
+
 ```
 python -m app.scripts.run_pipeline --question "What initiatives exist for Munich?" \
   --markdown-path documents \
-  --log-llm-payload
+  --no-log-llm-payload
 ```
 
 Enable SQL (SQLite):
+
 ```
 python -m app.scripts.run_pipeline --enable-sql --question "What initiatives exist for Munich?" \
   --db-path path/to/source.db \
-  --markdown-path documents
-```
-
-Using Postgres (via DATABASE_URL):
-```
-python -m app.scripts.run_pipeline --enable-sql --question "..." \
-  --db-url "postgresql+psycopg://user:pass@localhost:5432/dbname" \
   --markdown-path documents
 ```
 
@@ -107,8 +107,7 @@ python -m app.scripts.run_pipeline --enable-sql --question "..." \
 ```
 python -m app.scripts.run_e2e_queries
 python -m app.scripts.run_e2e_queries --questions-file assets/e2e_questions.txt
-python -m app.scripts.run_e2e_queries --enable-sql --db-url "postgresql+psycopg://user:pass@localhost:5432/dbname"
-python -m app.scripts.run_e2e_queries --question "What initiatives exist for Munich?" --log-llm-payload
+python -m app.scripts.run_e2e_queries --question "What initiatives exist for Munich?" --no-log-llm-payload
 ```
 
 ## Test DB connection
@@ -118,6 +117,7 @@ python -m app.scripts.test_db_connection
 ```
 
 Artifacts are written under `output/<run_id>/`:
+
 - `run.json`
 - `run.log`
 - `context_bundle.json`
@@ -131,11 +131,13 @@ Artifacts are written under `output/<run_id>/`:
 ## Run (Docker)
 
 Build:
+
 ```
 docker build -t query-mechanism-urbind .
 ```
 
 Run:
+
 ```
 docker run -it --rm \
   -v ${PWD}:/app \

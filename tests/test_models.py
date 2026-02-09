@@ -7,7 +7,7 @@ from app.modules.writer.models import WriterOutput
 
 def test_model_validation() -> None:
     query = SqlQuery(query_id="q1", query="SELECT 1")
-    plan = SqlQueryPlan(run_id="run1", queries=[query])
+    plan = SqlQueryPlan(queries=[query])
     result = SqlQueryResult(
         query_id="q1",
         columns=["value"],
@@ -17,7 +17,6 @@ def test_model_validation() -> None:
         token_count=3,
     )
     research = SqlResearchResult(
-        run_id="run1",
         queries=[query],
         results=[result],
         total_token_count=3,
@@ -30,13 +29,13 @@ def test_model_validation() -> None:
         answer="Sample answer",
         relevant="yes",
     )
-    md_result = MarkdownResearchResult(run_id="run1", excerpts=[excerpt])
+    md_result = MarkdownResearchResult(excerpts=[excerpt])
 
-    decision = OrchestratorDecision(run_id="run1", action="write", reason="Enough data")
+    decision = OrchestratorDecision(action="write", reason="Enough data")
 
-    writer = WriterOutput(run_id="run1", content="# Answer")
+    writer = WriterOutput(content="# Answer")
 
-    assert plan.run_id == "run1"
+    assert plan.queries[0].query == "SELECT 1"
     assert research.total_token_count == 3
     assert md_result.excerpts[0].city_name == "Munich"
     assert decision.action == "write"

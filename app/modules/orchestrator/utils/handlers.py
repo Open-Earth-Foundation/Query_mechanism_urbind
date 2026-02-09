@@ -52,7 +52,6 @@ def handle_write_decision(
         writer_output = writer_func(
             question,
             context_bundle,
-            paths.base_dir.name,
             config,
             api_key,
             log_llm_payload=log_llm_payload,
@@ -127,7 +126,6 @@ def handle_sql_decision(
             follow_up_question,
             schema_summary,
             city_names,
-            paths.base_dir.name,
             config,
             api_key,
             per_city_focus=True,
@@ -211,7 +209,6 @@ def handle_markdown_decision(
         markdown_result = markdown_func(
             follow_up_question,
             documents,
-            paths.base_dir.name,
             config,
             api_key,
             log_llm_payload=log_llm_payload,

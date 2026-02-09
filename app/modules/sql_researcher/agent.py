@@ -42,7 +42,6 @@ def plan_sql_queries(
     question: str,
     schema_summary: dict,
     city_names: list[str],
-    run_id: str,
     config: AppConfig,
     api_key: str,
     sql_execution_errors: list[dict[str, object]] | None = None,
@@ -55,7 +54,6 @@ def plan_sql_queries(
     agent = build_sql_agent(config, api_key)
     table_catalog = build_table_catalog(schema_summary)
     payload: dict[str, object] = {
-        "run_id": run_id,
         "question": question,
         "schema_summary": schema_summary,
         "table_catalog": table_catalog,

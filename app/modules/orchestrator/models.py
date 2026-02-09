@@ -10,7 +10,6 @@ from app.models import ErrorInfo
 
 class OrchestratorDecision(BaseModel):
     status: Literal["success", "error"] = "success"
-    run_id: str
     created_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
     action: Literal["write", "run_sql", "run_markdown", "stop"]
     reason: str

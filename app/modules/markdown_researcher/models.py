@@ -1,9 +1,8 @@
 from __future__ import annotations
 
-from datetime import datetime, timezone
 from typing import Literal
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel
 
 from app.models import ErrorInfo
 
@@ -17,8 +16,6 @@ class MarkdownExcerpt(BaseModel):
 
 class MarkdownResearchResult(BaseModel):
     status: Literal["success", "error"] = "success"
-    run_id: str
-    created_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
     excerpts: list[MarkdownExcerpt] = []
     error: ErrorInfo | None = None
 

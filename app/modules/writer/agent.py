@@ -37,7 +37,6 @@ def build_writer_agent(config: AppConfig, api_key: str) -> Agent:
 def write_markdown(
     question: str,
     context_bundle: dict,
-    run_id: str,
     config: AppConfig,
     api_key: str,
     log_llm_payload: bool = False,
@@ -45,7 +44,6 @@ def write_markdown(
     """Generate the final markdown answer."""
     agent = build_writer_agent(config, api_key)
     payload = {
-        "run_id": run_id,
         "question": question,
         "context_bundle": context_bundle,
         "context_window_tokens": config.writer.context_window_tokens,

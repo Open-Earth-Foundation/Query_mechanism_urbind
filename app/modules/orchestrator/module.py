@@ -394,7 +394,6 @@ def _run_orchestration_loop(
         decision = decide_func(
             question,
             context_bundle,
-            paths.base_dir.name,
             config,
             api_key,
             log_llm_payload=log_llm_payload,
@@ -477,7 +476,7 @@ def _run_orchestration_loop(
                 cap_results_func,
                 lambda plan, results, tokens, truncated: run_logger.update_sql_bundle(
                     build_sql_research_result(
-                        paths.base_dir.name, plan.queries, results, tokens, truncated
+                        plan.queries, results, tokens, truncated
                     ).model_dump()
                 ),
                 write_json,
@@ -559,7 +558,7 @@ def run_pipeline(
     question: str,
     config: AppConfig,
     run_id: str | None = None,
-    log_llm_payload: bool = False,
+    log_llm_payload: bool = True,
     sql_plan_func: Callable[..., SqlQueryPlan] = plan_sql_queries,
     markdown_func: Callable[..., MarkdownResearchResult] = extract_markdown_excerpts,
     decide_func: Callable[..., OrchestratorDecision] = decide_next_action,
@@ -623,7 +622,6 @@ def run_pipeline(
             question,
             schema_summary,
             city_names,
-            paths.base_dir.name,
             config,
             api_key,
             per_city_focus=True,
@@ -666,7 +664,6 @@ def run_pipeline(
         markdown_result = markdown_func(
             question,
             documents,
-            paths.base_dir.name,
             config,
             api_key,
             log_llm_payload=log_llm_payload,
@@ -734,7 +731,6 @@ def run_pipeline(
         run_logger.record_artifact("sql_results", paths.sql_results)
 
         sql_result = build_sql_research_result(
-            run_id=paths.base_dir.name,
             queries=sql_plan.queries,
             results=capped_results,
             total_tokens=total_tokens,

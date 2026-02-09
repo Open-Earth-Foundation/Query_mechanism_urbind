@@ -10,7 +10,6 @@ from app.models import ErrorInfo
 
 class WriterOutput(BaseModel):
     status: Literal["success", "error"] = "success"
-    run_id: str
     created_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
     content: str
     output_path: str | None = None

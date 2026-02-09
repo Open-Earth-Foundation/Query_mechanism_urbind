@@ -479,14 +479,13 @@ def cap_results(
 
 
 def build_sql_research_result(
-    run_id: str,
     queries: list[SqlQuery],
     results: list[SqlQueryResult],
     total_tokens: int,
     truncated: bool,
 ) -> SqlResearchResult:
+    """Build a structured SQL research result bundle."""
     return SqlResearchResult(
-        run_id=run_id,
         queries=queries,
         results=results,
         total_token_count=total_tokens,

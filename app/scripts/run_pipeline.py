@@ -9,7 +9,8 @@ Inputs:
 - --db-path: override source DB path
 - --db-url: override source DB URL
 - --markdown-path: override documents folder
-- --log-llm-payload: log full LLM request/response payloads
+- --log-llm-payload: log full LLM request/response payloads (default: on)
+- --no-log-llm-payload: disable LLM payload logging
 - OPENROUTER_API_KEY (env var)
 
 Outputs:
@@ -58,7 +59,14 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--log-llm-payload",
         action="store_true",
-        help="Log full LLM request/response payloads.",
+        default=True,
+        help="Log full LLM request/response payloads (default: on).",
+    )
+    parser.add_argument(
+        "--no-log-llm-payload",
+        action="store_false",
+        dest="log_llm_payload",
+        help="Disable LLM payload logging.",
     )
     return parser.parse_args()
 
