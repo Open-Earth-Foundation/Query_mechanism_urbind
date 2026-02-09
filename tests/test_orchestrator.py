@@ -36,6 +36,7 @@ def _stub_markdown(
     documents: list[dict[str, str]],
     config: AppConfig,
     api_key: str,
+    **_kwargs: dict[str, object],
 ) -> MarkdownResearchResult:
     excerpt = MarkdownExcerpt(
         snippet="Sample",
@@ -51,8 +52,19 @@ def _stub_decision(
     context_bundle: dict,
     config: AppConfig,
     api_key: str,
+    **_kwargs: dict[str, object],
 ) -> OrchestratorDecision:
     return OrchestratorDecision(action="write", reason="Enough")
+
+
+def _stub_decision_run_sql(
+    question: str,
+    context_bundle: dict,
+    config: AppConfig,
+    api_key: str,
+    **_kwargs: dict[str, object],
+) -> OrchestratorDecision:
+    return OrchestratorDecision(action="run_sql", reason="Need more data")
 
 
 def _stub_writer(
@@ -60,6 +72,7 @@ def _stub_writer(
     context_bundle: dict,
     config: AppConfig,
     api_key: str,
+    **_kwargs: dict[str, object],
 ) -> WriterOutput:
     return WriterOutput(content="# Answer\n\nStub")
 
@@ -138,3 +151,38 @@ def test_run_pipeline_sql_disabled_skips_db(
     assert paths.final_output.exists()
     run_log = json.loads(paths.run_log.read_text(encoding="utf-8"))
     assert run_log["status"] == "completed"
+
+
+def test_run_pipeline_fallback_writer_with_sql_disabled(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    monkeypatch.setenv("OPENROUTER_API_KEY", "test")
+
+    docs_dir = tmp_path / "documents"
+    docs_dir.mkdir()
+    (docs_dir / "Munich.md").write_text("# Munich\n\nSample", encoding="utf-8")
+
+    config = AppConfig(
+        orchestrator=OrchestratorConfig(model="test", context_bundle_name="context_bundle.json"),
+        sql_researcher=SqlResearcherConfig(model="test", max_result_tokens=100000),
+        markdown_researcher=MarkdownResearcherConfig(model="test"),
+        writer=AgentConfig(model="test"),
+        runs_dir=tmp_path / "output",
+        source_db_path=tmp_path / "missing.db",
+        markdown_dir=docs_dir,
+        enable_sql=False,
+    )
+
+    paths = run_pipeline(
+        question="What initiatives exist for Munich?",
+        config=config,
+        sql_plan_func=_stub_sql_plan,
+        markdown_func=_stub_markdown,
+        decide_func=_stub_decision_run_sql,
+        writer_func=_stub_writer,
+    )
+
+    assert paths.final_output.exists()
+    run_log = json.loads(paths.run_log.read_text(encoding="utf-8"))
+    assert run_log["status"] == "completed_with_gaps"
+    assert run_log["finish_reason"] == "completed_with_gaps (max iterations)"

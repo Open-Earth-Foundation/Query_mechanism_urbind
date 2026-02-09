@@ -212,7 +212,6 @@ def _execute_sql_plan(
                 question,
                 schema_summary,
                 city_names,
-                paths.base_dir.name,
                 config,
                 api_key,
                 sql_execution_errors=sql_errors,
@@ -311,7 +310,6 @@ def _run_sql_rounds(
             question,
             schema_summary,
             city_names,
-            paths.base_dir.name,
             config,
             api_key,
             sql_results_summary=summary,
@@ -520,7 +518,6 @@ def _run_orchestration_loop(
         writer_output = writer_func(
             question,
             context_bundle,
-            paths.base_dir.name,
             config,
             api_key,
             log_llm_payload=log_llm_payload,

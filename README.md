@@ -155,6 +155,14 @@ docker run -it --rm \
 pytest
 ```
 
+## Token analysis utilities
+
+```
+python -m app.scripts.analyze_run_tokens --run-log output/<run_id>/run.log
+python -m app.scripts.calculate_tokens --documents-dir documents --recursive
+python -m app.scripts.temp_analyze --run-log output/<run_id>/run.log
+```
+
 ## Common workflows
 
 - Update model names in `llm_config.yaml`.
