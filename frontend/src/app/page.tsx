@@ -12,6 +12,7 @@ import {
   Sparkles,
 } from "lucide-react";
 
+import { AssumptionsWorkspace } from "@/components/assumptions-workspace";
 import { ContextChatWorkspace } from "@/components/context-chat-workspace";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -74,6 +75,7 @@ export default function Home() {
 
   const [chatEnabled, setChatEnabled] = useState(false);
   const [chatOpen, setChatOpen] = useState(false);
+  const [assumptionsOpen, setAssumptionsOpen] = useState(false);
 
   const runId = runResponse?.run_id ?? null;
   const statusValue = runStatus?.status ?? runResponse?.status ?? null;
@@ -309,6 +311,7 @@ export default function Home() {
     setRunStatus(null);
     setChatEnabled(false);
     setChatOpen(false);
+    setAssumptionsOpen(false);
 
     try {
       const payload = await startRun({
@@ -586,7 +589,13 @@ export default function Home() {
             </CardContent>
           </Card>
 
-          {chatOpen && chatEnabled && documentReady && runId ? (
+          {assumptionsOpen && documentReady && runId ? (
+            <AssumptionsWorkspace
+              runId={runId}
+              enabled={documentReady}
+              onClose={() => setAssumptionsOpen(false)}
+            />
+          ) : chatOpen && chatEnabled && documentReady && runId ? (
             <ContextChatWorkspace
               runId={runId}
               enabled={chatEnabled && documentReady}
@@ -619,14 +628,31 @@ export default function Home() {
                 {documentReady ? (
                   <>
                     <div className="mb-3 flex justify-end">
-                      <Button
-                        type="button"
-                        onClick={() => setChatOpen(true)}
-                        disabled={!chatEnabled || !runId}
-                      >
-                        <MessageSquareText className="h-4 w-4" />
-                        Open Context Chat
-                      </Button>
+                      <div className="flex gap-2">
+                        <Button
+                          type="button"
+                          variant="outline"
+                          onClick={() => {
+                            setChatOpen(false);
+                            setAssumptionsOpen(true);
+                          }}
+                          disabled={!runId}
+                        >
+                          <Sparkles className="h-4 w-4" />
+                          Assumptions Review
+                        </Button>
+                        <Button
+                          type="button"
+                          onClick={() => {
+                            setAssumptionsOpen(false);
+                            setChatOpen(true);
+                          }}
+                          disabled={!chatEnabled || !runId}
+                        >
+                          <MessageSquareText className="h-4 w-4" />
+                          Open Context Chat
+                        </Button>
+                      </div>
                     </div>
                     <article className="document-markdown rounded-md border border-slate-200 bg-white p-5 shadow-inner">
                       <ReactMarkdown>{runOutput.content}</ReactMarkdown>

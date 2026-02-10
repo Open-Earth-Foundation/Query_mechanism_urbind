@@ -11,7 +11,7 @@ from typing import AsyncIterator
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.api.routes import chat_router, cities_router, runs_router
+from app.api.routes import assumptions_router, chat_router, cities_router, runs_router
 from app.api.services import ChatMemoryStore, RunExecutor, RunStore
 from app.utils.logging_config import setup_logger
 
@@ -126,6 +126,7 @@ def create_app(
     app.include_router(runs_router, prefix="/api/v1", tags=["runs"])
     app.include_router(cities_router, prefix="/api/v1", tags=["cities"])
     app.include_router(chat_router, prefix="/api/v1", tags=["chat"])
+    app.include_router(assumptions_router, prefix="/api/v1", tags=["assumptions"])
 
     @app.get("/healthz")
     def healthcheck() -> dict[str, str]:

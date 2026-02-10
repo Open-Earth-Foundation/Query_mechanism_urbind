@@ -104,6 +104,10 @@ chat:
   context_window_tokens: 400000
   input_token_reserve: 20000
   max_history_messages: 24
+assumptions_reviewer:
+  model: "openai/gpt-5.2"
+  temperature: 0.1
+  max_output_tokens: 8000
 openrouter_base_url: "https://openrouter.ai/api/v1"
 enable_sql: false
 ```
@@ -166,6 +170,9 @@ Core endpoints:
 - `GET /api/v1/runs/{run_id}/chat/sessions/{conversation_id}/contexts`
 - `PUT /api/v1/runs/{run_id}/chat/sessions/{conversation_id}/contexts`
 - `POST /api/v1/runs/{run_id}/chat/sessions/{conversation_id}/messages`
+- `POST /api/v1/runs/{run_id}/assumptions/discover` (two-pass missing-data extraction + verification)
+- `POST /api/v1/runs/{run_id}/assumptions/apply` (apply edited assumptions and regenerate document)
+- `GET /api/v1/runs/{run_id}/assumptions/latest` (load latest assumptions artifacts for a run)
 
 `POST /api/v1/runs` accepts optional city filtering:
 
@@ -226,6 +233,10 @@ NEXT_PUBLIC_API_BASE_URL=http://127.0.0.1:8000
 
 Frontend supports three city scope modes in the build form: all cities, predefined group, and manual selection.
 Clicking `Open Context Chat` switches to a dedicated chat workspace (not a chat modal), and `Manage Contexts` opens a popup for multi-context selection.
+Clicking `Assumptions Review` opens a dedicated workspace where:
+- `Find Missing Data` runs two LLM passes (extract + verification).
+- Missing items are grouped by city with editable `proposed_number`.
+- `Regenerate` writes a revised assumptions-based document artifact.
 
 Example file is available at `frontend/.env.example`.
 
@@ -276,6 +287,10 @@ Artifacts are written under `output/<run_id>/`:
 - `drafts/draft_01.md`
 - `final.md`
 - `chat/<conversation_id>.json` (created when context chat sessions are used)
+- `assumptions/discovered.json` (two-pass extraction output)
+- `assumptions/edited.json` (user-edited assumptions payload)
+- `assumptions/revised_context_bundle.json` (context + assumptions merge)
+- `assumptions/final_with_assumptions.md` (regenerated document)
 
 ## Run (Docker)
 

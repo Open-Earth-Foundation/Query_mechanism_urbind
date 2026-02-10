@@ -76,6 +76,32 @@ class RunContextResponse(BaseModel):
     context_bundle_path: str
 
 
+class MissingDataItem(BaseModel):
+    """Single missing-data item inferred from run output and context."""
+
+    city: str = Field(min_length=1)
+    missing_description: str = Field(min_length=1)
+    proposed_number: float | int | None = None
+
+
+class AssumptionsPayload(BaseModel):
+    """Editable assumptions payload submitted by frontend users."""
+
+    model_config = ConfigDict(extra="forbid")
+
+    items: list[MissingDataItem] = Field(min_length=1)
+    rewrite_instructions: str | None = None
+
+
+class RegenerationResult(BaseModel):
+    """Response body after assumptions-based document regeneration."""
+
+    run_id: str
+    revised_output_path: str
+    revised_content: str
+    assumptions_path: str
+
+
 class CityListResponse(BaseModel):
     """Response body listing available cities from markdown sources."""
 
@@ -206,6 +232,9 @@ __all__ = [
     "RunStatusResponse",
     "RunOutputResponse",
     "RunContextResponse",
+    "MissingDataItem",
+    "AssumptionsPayload",
+    "RegenerationResult",
     "CityListResponse",
     "CityGroup",
     "CityGroupListResponse",

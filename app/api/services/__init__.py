@@ -5,6 +5,16 @@ from app.api.services.chat_memory import (
     ChatSessionExistsError,
     ChatSessionNotFoundError,
 )
+from app.api.services.assumptions_review import (
+    apply_assumptions_and_regenerate,
+    apply_assumptions_to_context,
+    dedupe_missing_data_items,
+    discover_missing_data,
+    discover_missing_data_for_run,
+    group_missing_data_by_city,
+    load_latest_assumptions_payload,
+    rewrite_document_with_assumptions,
+)
 from app.api.services.city_catalog import (
     build_city_subset,
     index_city_markdown_files,
@@ -47,4 +57,12 @@ __all__ = [
     "RunRecord",
     "RunStore",
     "StartRunCommand",
+    "apply_assumptions_and_regenerate",
+    "apply_assumptions_to_context",
+    "dedupe_missing_data_items",
+    "discover_missing_data",
+    "discover_missing_data_for_run",
+    "group_missing_data_by_city",
+    "load_latest_assumptions_payload",
+    "rewrite_document_with_assumptions",
 ]

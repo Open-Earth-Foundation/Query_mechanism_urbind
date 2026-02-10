@@ -45,6 +45,10 @@ class ChatConfig(AgentConfig):
     max_history_messages: int = 24
 
 
+class AssumptionsReviewerConfig(AgentConfig):
+    """Configuration for two-pass missing-data discovery."""
+
+
 class AppConfig(BaseModel):
     model_config = ConfigDict(arbitrary_types_allowed=True)
 
@@ -53,6 +57,9 @@ class AppConfig(BaseModel):
     markdown_researcher: MarkdownResearcherConfig
     writer: AgentConfig
     chat: ChatConfig = Field(default_factory=lambda: ChatConfig(model="openai/gpt-5.2"))
+    assumptions_reviewer: AssumptionsReviewerConfig = Field(
+        default_factory=lambda: AssumptionsReviewerConfig(model="openai/gpt-5.2")
+    )
     openrouter_base_url: str = "https://openrouter.ai/api/v1"
     runs_dir: Path = Field(default_factory=lambda: Path("output"))
     source_db_path: Path = Field(default_factory=lambda: Path("data/source.db"))
@@ -136,6 +143,7 @@ __all__ = [
     "SqlResearcherConfig",
     "MarkdownResearcherConfig",
     "ChatConfig",
+    "AssumptionsReviewerConfig",
     "AppConfig",
     "load_config",
     "get_openrouter_api_key",
