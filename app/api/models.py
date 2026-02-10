@@ -76,12 +76,26 @@ class RunContextResponse(BaseModel):
     context_bundle_path: str
 
 
+class RunSummary(BaseModel):
+    """Minimal run metadata used by run picker UI."""
+
+    run_id: str
+    question: str
+
+
+class RunListResponse(BaseModel):
+    """Response body listing known runs from backend storage."""
+
+    runs: list[RunSummary]
+    total: int
+
+
 class MissingDataItem(BaseModel):
     """Single missing-data item inferred from run output and context."""
 
     city: str = Field(min_length=1)
     missing_description: str = Field(min_length=1)
-    proposed_number: float | int | None = None
+    proposed_number: float | int | str | None = None
 
 
 class AssumptionsPayload(BaseModel):
@@ -91,15 +105,16 @@ class AssumptionsPayload(BaseModel):
 
     items: list[MissingDataItem] = Field(min_length=1)
     rewrite_instructions: str | None = None
+    persist_artifacts: bool = False
 
 
 class RegenerationResult(BaseModel):
     """Response body after assumptions-based document regeneration."""
 
     run_id: str
-    revised_output_path: str
+    revised_output_path: str | None = None
     revised_content: str
-    assumptions_path: str
+    assumptions_path: str | None = None
 
 
 class CityListResponse(BaseModel):
@@ -232,6 +247,8 @@ __all__ = [
     "RunStatusResponse",
     "RunOutputResponse",
     "RunContextResponse",
+    "RunSummary",
+    "RunListResponse",
     "MissingDataItem",
     "AssumptionsPayload",
     "RegenerationResult",

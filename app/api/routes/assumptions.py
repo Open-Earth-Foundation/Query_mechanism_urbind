@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from fastapi import APIRouter, Header, HTTPException, Request, status
+from fastapi import APIRouter, Header, HTTPException, Query, Request, status
 from openai import APIStatusError, AuthenticationError
 
 from app.api.models import AssumptionsPayload, RegenerationResult
@@ -108,6 +108,10 @@ def _raise_llm_http_error(exc: Exception) -> None:
 def discover_run_assumptions(
     run_id: str,
     request: Request,
+    persist_artifacts: bool = Query(
+        default=False,
+        description="Persist discovered assumptions artifact under output/<run_id>/assumptions.",
+    ),
     x_openrouter_api_key: str | None = Header(
         default=None, alias="X-OpenRouter-Api-Key"
     ),
@@ -121,6 +125,7 @@ def discover_run_assumptions(
             run_store=run_store,
             run_record=run_record,
             config=config,
+            persist_artifacts=persist_artifacts,
             api_key_override=api_key_override,
         )
     except ValueError as exc:
@@ -153,6 +158,7 @@ def apply_run_assumptions(
             run_record=run_record,
             payload=payload,
             config=config,
+            persist_artifacts=payload.persist_artifacts,
             api_key_override=api_key_override,
         )
     except ValueError as exc:

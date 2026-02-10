@@ -4,6 +4,8 @@ from __future__ import annotations
 
 import json
 import logging
+import os
+import re
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
@@ -15,9 +17,122 @@ from app.utils.tokenization import count_tokens, get_encoding
 
 logger = logging.getLogger(__name__)
 
-CHAT_PROMPT_TOKEN_CAP = 300_000
+DEFAULT_CHAT_PROMPT_TOKEN_CAP = 250_000
+MIN_CHAT_PROMPT_TOKEN_CAP = 20_000
+CHAT_PROMPT_TOKEN_CAP_ENV = "CHAT_PROMPT_TOKEN_CAP"
+DEFAULT_CHAT_PROVIDER_TIMEOUT_SECONDS = 50.0
+CHAT_PROVIDER_TIMEOUT_SECONDS_ENV = "CHAT_PROVIDER_TIMEOUT_SECONDS"
 CHAT_PROMPT_TOKEN_BUFFER = 2_000
 MIN_CONTEXT_SECTION_TOKENS = 1_200
+CHAT_CONTEXT_CHUNK_TARGET_TOKENS = 1_200
+CHAT_CONTEXT_CHUNK_OVERLAP_TOKENS = 200
+CHAT_CONTEXT_MAX_CHUNKS_PER_SOURCE = 24
+CHAT_CONTEXT_BASE_CHUNKS_PER_RUN = 2
+CHAT_TERM_PATTERN = re.compile(r"[A-Za-z0-9_]{3,}")
+CHAT_STOPWORDS = frozenset(
+    {
+        "about",
+        "after",
+        "again",
+        "all",
+        "also",
+        "and",
+        "any",
+        "are",
+        "been",
+        "before",
+        "between",
+        "but",
+        "can",
+        "for",
+        "from",
+        "has",
+        "have",
+        "how",
+        "into",
+        "its",
+        "more",
+        "not",
+        "now",
+        "only",
+        "our",
+        "out",
+        "over",
+        "same",
+        "some",
+        "than",
+        "that",
+        "the",
+        "their",
+        "them",
+        "there",
+        "these",
+        "they",
+        "this",
+        "those",
+        "use",
+        "using",
+        "what",
+        "when",
+        "where",
+        "which",
+        "with",
+        "would",
+        "your",
+    }
+)
+
+
+def _resolve_chat_prompt_token_cap() -> int:
+    """Resolve chat prompt token cap from environment with safe bounds."""
+    raw_value = os.getenv(CHAT_PROMPT_TOKEN_CAP_ENV, "").strip()
+    if not raw_value:
+        return DEFAULT_CHAT_PROMPT_TOKEN_CAP
+
+    try:
+        parsed = int(raw_value)
+    except ValueError:
+        logger.warning(
+            "Invalid %s=%r; using default %d",
+            CHAT_PROMPT_TOKEN_CAP_ENV,
+            raw_value,
+            DEFAULT_CHAT_PROMPT_TOKEN_CAP,
+        )
+        return DEFAULT_CHAT_PROMPT_TOKEN_CAP
+
+    if parsed < MIN_CHAT_PROMPT_TOKEN_CAP:
+        logger.warning(
+            "%s=%d is below minimum %d; using minimum.",
+            CHAT_PROMPT_TOKEN_CAP_ENV,
+            parsed,
+            MIN_CHAT_PROMPT_TOKEN_CAP,
+        )
+        return MIN_CHAT_PROMPT_TOKEN_CAP
+    return parsed
+
+
+CHAT_PROMPT_TOKEN_CAP = _resolve_chat_prompt_token_cap()
+
+
+def _resolve_chat_provider_timeout_seconds() -> float:
+    """Resolve provider timeout from environment with safe minimum."""
+    raw_value = os.getenv(CHAT_PROVIDER_TIMEOUT_SECONDS_ENV, "").strip()
+    if not raw_value:
+        return DEFAULT_CHAT_PROVIDER_TIMEOUT_SECONDS
+    try:
+        parsed = float(raw_value)
+    except ValueError:
+        logger.warning(
+            "Invalid %s=%r; using default %.1f",
+            CHAT_PROVIDER_TIMEOUT_SECONDS_ENV,
+            raw_value,
+            DEFAULT_CHAT_PROVIDER_TIMEOUT_SECONDS,
+        )
+        return DEFAULT_CHAT_PROVIDER_TIMEOUT_SECONDS
+    return max(5.0, parsed)
+
+
+CHAT_PROVIDER_TIMEOUT_SECONDS = _resolve_chat_provider_timeout_seconds()
 
 
 @dataclass(frozen=True)
@@ -58,7 +173,11 @@ def generate_context_chat_reply(
         if isinstance(api_key_override, str) and api_key_override.strip()
         else get_openrouter_api_key()
     )
-    client = OpenAI(api_key=api_key, base_url=config.openrouter_base_url)
+    client = OpenAI(
+        api_key=api_key,
+        base_url=config.openrouter_base_url,
+        timeout=CHAT_PROVIDER_TIMEOUT_SECONDS,
+    )
 
     normalized_contexts = _normalize_contexts(contexts)
     if not normalized_contexts:
@@ -78,9 +197,11 @@ def generate_context_chat_reply(
         user_content=user_content,
         token_cap=token_cap,
     )
+    query_focus = _build_query_focus_text(user_content, bounded_history)
     context_block, included_context_ids, excluded_context_ids = _render_context_block(
         normalized_contexts,
         context_budget,
+        query_focus,
     )
     system_prompt = _compose_system_prompt(prompt_header, context_block)
 
@@ -189,7 +310,7 @@ def _build_system_prompt_header(original_question: str) -> str:
         "1. Ground every factual claim in provided context sources.\n"
         "2. If information is missing or uncertain, say so clearly.\n"
         "3. Compare sources when useful and call out contradictions.\n"
-        "4. Use concise, practical markdown output.\n"
+        "4. Always respond in valid markdown. Prefer headings, bullets, and tables for numeric data.\n"
         "5. Never mention internal paths or backend implementation details.\n"
         "6. When citing evidence, reference source run ids like [run:20260209_1757].\n\n"
         f"Original build question:\n{original_question.strip()}"
@@ -219,45 +340,197 @@ def _compute_context_budget(
     return max(remaining, 8_000)
 
 
+@dataclass(frozen=True)
+class _ScoredContextChunk:
+    """Single scored context chunk candidate used for prompt pooling."""
+
+    run_id: str
+    run_question: str
+    source_label: str
+    language: str
+    ordinal: int
+    content: str
+    score: float
+
+
+def _build_query_focus_text(user_content: str, history: list[dict[str, str]]) -> str:
+    """Build compact query focus text from latest user inputs."""
+    recent_user_messages = [
+        item["content"] for item in history if item.get("role") == "user"
+    ]
+    recent_user_messages = recent_user_messages[-2:]
+    return "\n".join(recent_user_messages + [user_content.strip()])
+
+
 def _render_context_block(
     contexts: list[ChatContextSource],
     max_tokens: int,
+    query_focus: str,
 ) -> tuple[str, list[str], list[str]]:
-    """Serialize selected contexts with token-bound truncation."""
-    sections: list[str] = []
-    included_ids: list[str] = []
-    excluded_ids: list[str] = []
-    remaining = max_tokens
+    """Serialize contexts fully when possible, otherwise switch to pooled excerpts."""
+    full_sections = [
+        _serialize_context(index, context)
+        for index, context in enumerate(contexts, start=1)
+    ]
+    full_tokens = sum(count_tokens(section) for section in full_sections)
+    if full_tokens <= max_tokens:
+        return (
+            "\n\n".join(full_sections),
+            [context.run_id for context in contexts],
+            [],
+        )
+    return _render_pooled_context_block(contexts, max_tokens, query_focus)
 
-    for index, context in enumerate(contexts, start=1):
-        serialized = _serialize_context(index, context)
+
+def _render_pooled_context_block(
+    contexts: list[ChatContextSource],
+    max_tokens: int,
+    query_focus: str,
+) -> tuple[str, list[str], list[str]]:
+    """Render a pooled context block with high-signal excerpts from each run."""
+    query_terms = _extract_terms(query_focus)
+    candidates_by_run: dict[str, list[_ScoredContextChunk]] = {}
+    for context in contexts:
+        candidates_by_run[context.run_id] = _build_scored_chunks(context, query_terms)
+
+    sections: list[str] = []
+    selected_ids: list[str] = []
+    remaining = max_tokens
+    used_chunk_ids: set[tuple[str, str, int]] = set()
+
+    for context in contexts:
+        run_candidates = candidates_by_run.get(context.run_id, [])
+        picked_for_run = 0
+        for chunk in run_candidates:
+            chunk_id = (chunk.run_id, chunk.source_label, chunk.ordinal)
+            if chunk_id in used_chunk_ids:
+                continue
+            serialized = _serialize_chunk(chunk)
+            serialized_tokens = count_tokens(serialized)
+            if serialized_tokens <= remaining:
+                sections.append(serialized)
+                selected_ids.append(chunk.run_id)
+                used_chunk_ids.add(chunk_id)
+                remaining -= serialized_tokens
+                picked_for_run += 1
+            elif picked_for_run == 0 and remaining >= MIN_CONTEXT_SECTION_TOKENS:
+                sections.append(_truncate_to_tokens(serialized, remaining))
+                selected_ids.append(chunk.run_id)
+                used_chunk_ids.add(chunk_id)
+                remaining = 0
+                picked_for_run += 1
+                break
+            if picked_for_run >= CHAT_CONTEXT_BASE_CHUNKS_PER_RUN:
+                break
+        if remaining < MIN_CONTEXT_SECTION_TOKENS:
+            break
+
+    remaining_candidates: list[_ScoredContextChunk] = []
+    for run_candidates in candidates_by_run.values():
+        for chunk in run_candidates:
+            chunk_id = (chunk.run_id, chunk.source_label, chunk.ordinal)
+            if chunk_id not in used_chunk_ids:
+                remaining_candidates.append(chunk)
+    remaining_candidates.sort(key=lambda chunk: (-chunk.score, chunk.run_id, chunk.ordinal))
+
+    for chunk in remaining_candidates:
+        if remaining < MIN_CONTEXT_SECTION_TOKENS:
+            break
+        serialized = _serialize_chunk(chunk)
         serialized_tokens = count_tokens(serialized)
-        if serialized_tokens <= remaining:
-            sections.append(serialized)
-            included_ids.append(context.run_id)
-            remaining -= serialized_tokens
+        if serialized_tokens > remaining:
             continue
-        if remaining >= MIN_CONTEXT_SECTION_TOKENS:
-            truncated = _truncate_to_tokens(serialized, remaining)
-            sections.append(truncated)
-            included_ids.append(context.run_id)
-            remaining = 0
-            continue
-        excluded_ids.append(context.run_id)
+        sections.append(serialized)
+        selected_ids.append(chunk.run_id)
+        remaining -= serialized_tokens
 
     if not sections:
-        sections.append(
+        pooled_text = (
             "No context sources could fit within token budget. "
             "Ask the user to reduce the selected contexts."
         )
+        return pooled_text, [], [context.run_id for context in contexts]
 
+    included_ids = _dedupe_preserve_order(selected_ids)
+    included_set = set(included_ids)
+    excluded_ids = [context.run_id for context in contexts if context.run_id not in included_set]
+    sections.insert(
+        0,
+        "Context pooling mode: full documents plus bundles exceeded token budget, "
+        "so this prompt includes top-ranked excerpts selected from all chosen runs.",
+    )
     if excluded_ids:
         sections.append(
-            "Excluded due to token budget: "
+            "Runs excluded due to token budget: "
             + ", ".join(f"[run:{run_id}]" for run_id in excluded_ids)
         )
-
     return "\n\n".join(sections), included_ids, excluded_ids
+
+
+def _build_scored_chunks(
+    context: ChatContextSource,
+    query_terms: set[str],
+) -> list[_ScoredContextChunk]:
+    """Build scored chunk candidates from final markdown and context bundle."""
+    chunks: list[_ScoredContextChunk] = []
+    final_chunks = _chunk_text_by_tokens(
+        context.final_document.strip(),
+        target_tokens=CHAT_CONTEXT_CHUNK_TARGET_TOKENS,
+        overlap_tokens=CHAT_CONTEXT_CHUNK_OVERLAP_TOKENS,
+        max_chunks=CHAT_CONTEXT_MAX_CHUNKS_PER_SOURCE,
+    )
+    for index, chunk_text in enumerate(final_chunks, start=1):
+        chunks.append(
+            _ScoredContextChunk(
+                run_id=context.run_id,
+                run_question=context.question,
+                source_label="final_document",
+                language="markdown",
+                ordinal=index,
+                content=chunk_text,
+                score=_score_chunk(chunk_text, query_terms, base_weight=1.0),
+            )
+        )
+
+    serialized_bundle = json.dumps(
+        context.context_bundle,
+        ensure_ascii=True,
+        default=str,
+        separators=(",", ":"),
+        sort_keys=True,
+    )
+    bundle_chunks = _chunk_text_by_tokens(
+        serialized_bundle,
+        target_tokens=CHAT_CONTEXT_CHUNK_TARGET_TOKENS,
+        overlap_tokens=CHAT_CONTEXT_CHUNK_OVERLAP_TOKENS,
+        max_chunks=CHAT_CONTEXT_MAX_CHUNKS_PER_SOURCE,
+    )
+    for index, chunk_text in enumerate(bundle_chunks, start=1):
+        chunks.append(
+            _ScoredContextChunk(
+                run_id=context.run_id,
+                run_question=context.question,
+                source_label="context_bundle",
+                language="json",
+                ordinal=index,
+                content=chunk_text,
+                score=_score_chunk(chunk_text, query_terms, base_weight=0.9),
+            )
+        )
+
+    chunks.sort(key=lambda chunk: (-chunk.score, chunk.source_label, chunk.ordinal))
+    return chunks
+
+
+def _serialize_chunk(chunk: _ScoredContextChunk) -> str:
+    """Serialize one selected context chunk."""
+    return (
+        f"### Source [run:{chunk.run_id}] {chunk.source_label} excerpt {chunk.ordinal}\n"
+        f"Run question: {chunk.run_question or '(not provided)'}\n"
+        f"```{chunk.language}\n"
+        f"{chunk.content}\n"
+        "```"
+    )
 
 
 def _serialize_context(index: int, context: ChatContextSource) -> str:
@@ -266,7 +539,8 @@ def _serialize_context(index: int, context: ChatContextSource) -> str:
         context.context_bundle,
         ensure_ascii=True,
         default=str,
-        indent=2,
+        separators=(",", ":"),
+        sort_keys=True,
     )
     return (
         f"### Source {index} [run:{context.run_id}]\n"
@@ -280,6 +554,72 @@ def _serialize_context(index: int, context: ChatContextSource) -> str:
         f"{serialized_bundle}\n"
         "```"
     )
+
+
+def _dedupe_preserve_order(values: list[str]) -> list[str]:
+    """Return values de-duplicated while preserving input order."""
+    deduped: list[str] = []
+    seen: set[str] = set()
+    for value in values:
+        if value in seen:
+            continue
+        deduped.append(value)
+        seen.add(value)
+    return deduped
+
+
+def _extract_terms(value: str) -> set[str]:
+    """Extract normalized keyword terms for simple lexical scoring."""
+    terms: set[str] = set()
+    for match in CHAT_TERM_PATTERN.findall(value.lower()):
+        if match in CHAT_STOPWORDS:
+            continue
+        terms.add(match)
+    return terms
+
+
+def _score_chunk(content: str, query_terms: set[str], base_weight: float) -> float:
+    """Score one chunk against query terms with overlap and frequency signals."""
+    if not query_terms:
+        return base_weight
+    chunk_terms = _extract_terms(content)
+    overlap = len(chunk_terms & query_terms)
+    lowered_content = content.lower()
+    frequency_score = 0.0
+    for term in query_terms:
+        frequency_score += min(3.0, float(lowered_content.count(term)))
+    return base_weight + (overlap * 2.5) + (frequency_score * 0.35)
+
+
+def _chunk_text_by_tokens(
+    value: str,
+    target_tokens: int,
+    overlap_tokens: int,
+    max_chunks: int,
+) -> list[str]:
+    """Split text into overlapping token chunks for retrieval-style pooling."""
+    stripped = value.strip()
+    if not stripped:
+        return []
+    encoding = get_encoding()
+    tokens = encoding.encode(stripped)
+    if not tokens:
+        return []
+    if len(tokens) <= target_tokens:
+        return [stripped]
+
+    step = max(1, target_tokens - overlap_tokens)
+    chunks: list[str] = []
+    start_index = 0
+    while start_index < len(tokens) and len(chunks) < max_chunks:
+        end_index = min(start_index + target_tokens, len(tokens))
+        chunk_text = encoding.decode(tokens[start_index:end_index]).strip()
+        if chunk_text:
+            chunks.append(chunk_text)
+        if end_index >= len(tokens):
+            break
+        start_index += step
+    return chunks
 
 
 def _build_messages(

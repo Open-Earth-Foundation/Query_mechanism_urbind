@@ -1,0 +1,49 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: urbind-query-mechanism-backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: urbind-query-mechanism-backend
+  template:
+    metadata:
+      labels:
+        app: urbind-query-mechanism-backend
+    spec:
+      containers:
+        - name: backend
+          image: ghcr.io/open-earth-foundation/urbind-query-mechanism-backend:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8000
+              name: http
+          envFrom:
+            - configMapRef:
+                name: urbind-query-mechanism-backend-config
+          env:
+            - name: OPENROUTER_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: urbind-query-mechanism-backend-secrets
+                  key: OPENROUTER_API_KEY
+          volumeMounts:
+            - name: output-volume
+              mountPath: /data/output
+          readinessProbe:
+            httpGet:
+              path: /
+              port: http
+            initialDelaySeconds: 10
+            periodSeconds: 15
+          livenessProbe:
+            httpGet:
+              path: /
+              port: http
+            initialDelaySeconds: 30
+            periodSeconds: 20
+      volumes:
+        - name: output-volume
+          persistentVolumeClaim:
+            claimName: urbind-query-mechanism-backend-output

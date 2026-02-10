@@ -77,6 +77,7 @@ def discover_missing_data_for_run(
     run_store: RunStore,
     run_record: RunRecord,
     config: AppConfig,
+    persist_artifacts: bool = False,
     api_key_override: str | None = None,
 ) -> dict[str, object]:
     """Discover missing data for one completed run and persist discovery artifact."""
@@ -107,22 +108,23 @@ def discover_missing_data_for_run(
     ]
     grouped = group_missing_data_by_city(final_items)
 
-    assumptions_dir = _assumptions_dir(run_store, run_record.run_id)
-    assumptions_dir.mkdir(parents=True, exist_ok=True)
-    discovered_path = assumptions_dir / "discovered.json"
-    persisted = {
-        "run_id": run_record.run_id,
-        **discovery_payload,
-        "grouped_by_city": {
-            city: [item.model_dump() for item in city_items]
-            for city, city_items in grouped.items()
-        },
-    }
-    _write_json(discovered_path, persisted)
-    _update_run_log_artifacts(
-        run_store.runs_dir / run_record.run_id / "run.json",
-        {"assumptions_discovered": str(discovered_path)},
-    )
+    if persist_artifacts:
+        assumptions_dir = _assumptions_dir(run_store, run_record.run_id)
+        assumptions_dir.mkdir(parents=True, exist_ok=True)
+        discovered_path = assumptions_dir / "discovered.json"
+        persisted = {
+            "run_id": run_record.run_id,
+            **discovery_payload,
+            "grouped_by_city": {
+                city: [item.model_dump() for item in city_items]
+                for city, city_items in grouped.items()
+            },
+        }
+        _write_json(discovered_path, persisted)
+        _update_run_log_artifacts(
+            run_store.runs_dir / run_record.run_id / "run.json",
+            {"assumptions_discovered": str(discovered_path)},
+        )
 
     return {
         "run_id": run_record.run_id,
@@ -175,6 +177,7 @@ def apply_assumptions_and_regenerate(
     run_record: RunRecord,
     payload: AssumptionsPayload,
     config: AppConfig,
+    persist_artifacts: bool = False,
     api_key_override: str | None = None,
 ) -> RegenerationResult:
     """Persist edited assumptions, regenerate document, and return revised output metadata."""
@@ -186,21 +189,6 @@ def apply_assumptions_and_regenerate(
     context_bundle = load_context_bundle(context_bundle_path)
     revised_context_bundle = apply_assumptions_to_context(context_bundle, payload)
 
-    assumptions_dir = _assumptions_dir(run_store, run_record.run_id)
-    assumptions_dir.mkdir(parents=True, exist_ok=True)
-
-    edited_path = assumptions_dir / "edited.json"
-    _write_json(
-        edited_path,
-        {
-            "run_id": run_record.run_id,
-            "edited_at": datetime.now(timezone.utc).isoformat(),
-            **payload.model_dump(),
-        },
-    )
-    revised_context_path = assumptions_dir / "revised_context_bundle.json"
-    _write_json(revised_context_path, revised_context_bundle)
-
     revised_document = rewrite_document_with_assumptions(
         original_question=run_record.question,
         assumptions_payload=payload,
@@ -208,23 +196,45 @@ def apply_assumptions_and_regenerate(
         config=config,
         api_key_override=api_key_override,
     )
-    revised_output_path = assumptions_dir / "final_with_assumptions.md"
     rendered = f"# Question\n{run_record.question.strip()}\n\n{revised_document.strip()}\n"
-    revised_output_path.write_text(rendered, encoding="utf-8")
 
-    _update_run_log_artifacts(
-        run_store.runs_dir / run_record.run_id / "run.json",
-        {
-            "assumptions_edited": str(edited_path),
-            "assumptions_revised_context_bundle": str(revised_context_path),
-            "assumptions_final_output": str(revised_output_path),
-        },
-    )
+    revised_output_path: str | None = None
+    assumptions_path: str | None = None
+    if persist_artifacts:
+        assumptions_dir = _assumptions_dir(run_store, run_record.run_id)
+        assumptions_dir.mkdir(parents=True, exist_ok=True)
+
+        edited_path = assumptions_dir / "edited.json"
+        _write_json(
+            edited_path,
+            {
+                "run_id": run_record.run_id,
+                "edited_at": datetime.now(timezone.utc).isoformat(),
+                **payload.model_dump(),
+            },
+        )
+        revised_context_path = assumptions_dir / "revised_context_bundle.json"
+        _write_json(revised_context_path, revised_context_bundle)
+
+        revised_output_file_path = assumptions_dir / "final_with_assumptions.md"
+        revised_output_file_path.write_text(rendered, encoding="utf-8")
+        revised_output_path = str(revised_output_file_path)
+        assumptions_path = str(edited_path)
+
+        _update_run_log_artifacts(
+            run_store.runs_dir / run_record.run_id / "run.json",
+            {
+                "assumptions_edited": assumptions_path,
+                "assumptions_revised_context_bundle": str(revised_context_path),
+                "assumptions_final_output": revised_output_path,
+            },
+        )
+
     return RegenerationResult(
         run_id=run_record.run_id,
-        revised_output_path=str(revised_output_path),
+        revised_output_path=revised_output_path,
         revised_content=rendered,
-        assumptions_path=str(edited_path),
+        assumptions_path=assumptions_path,
     )
 
 
@@ -357,7 +367,7 @@ def _build_discovery_messages(
         "Rules:\n"
         "1. Output only fields: city, missing_description, proposed_number.\n"
         "2. Do not output run_id, grouped fields, paths, status, or explanations.\n"
-        "3. proposed_number may be null when no safe estimate is available.\n"
+        "3. proposed_number may be a number, short free-text assumption, or null.\n"
         "4. Keep one missing fact per item.\n"
         "5. Focus on city-level quantitative gaps needed for actionable recommendations.\n"
     )

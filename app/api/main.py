@@ -128,6 +128,11 @@ def create_app(
     app.include_router(chat_router, prefix="/api/v1", tags=["chat"])
     app.include_router(assumptions_router, prefix="/api/v1", tags=["assumptions"])
 
+    @app.get("/")
+    def root() -> dict[str, str]:
+        """Root health endpoint used by default health checks."""
+        return {"status": "ok", "service": "query-mechanism-backend"}
+
     @app.get("/healthz")
     def healthcheck() -> dict[str, str]:
         """Healthcheck endpoint."""

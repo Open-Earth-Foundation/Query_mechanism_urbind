@@ -1,7 +1,8 @@
 "use client";
 
-import { FormEvent, useEffect, useMemo, useState } from "react";
+import { FormEvent, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import {
   ArrowLeft,
   Loader2,
@@ -41,13 +42,14 @@ interface ContextChatWorkspaceProps {
   onClose: () => void;
 }
 
-const DEFAULT_CONTEXT_TOKEN_CAP = 300000;
+const DEFAULT_CONTEXT_TOKEN_CAP = 250000;
 
 export function ContextChatWorkspace({
   runId,
   enabled,
   onClose,
 }: ContextChatWorkspaceProps) {
+  const messageScrollAreaRef = useRef<HTMLDivElement | null>(null);
   const [conversationId, setConversationId] = useState<string | null>(null);
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [sessionContexts, setSessionContexts] =
@@ -157,6 +159,27 @@ export function ContextChatWorkspace({
       [...messages].sort((a, b) => a.created_at.localeCompare(b.created_at)),
     [messages],
   );
+
+  const scrollMessagesToBottom = useCallback((): void => {
+    const root = messageScrollAreaRef.current;
+    if (!root) {
+      return;
+    }
+    const viewport = root.querySelector<HTMLDivElement>(
+      "[data-radix-scroll-area-viewport]",
+    );
+    if (!viewport) {
+      return;
+    }
+    viewport.scrollTop = viewport.scrollHeight;
+  }, []);
+
+  useEffect(() => {
+    const handle = window.requestAnimationFrame(() => {
+      scrollMessagesToBottom();
+    });
+    return () => window.cancelAnimationFrame(handle);
+  }, [scrollMessagesToBottom, sortedMessages.length, isSending, pendingPrompt]);
 
   const contextById = useMemo(() => {
     const mapping = new Map<string, ChatContextSummary>();
@@ -351,7 +374,10 @@ export function ContextChatWorkspace({
         </CardHeader>
 
         <CardContent className="space-y-4">
-          <ScrollArea className="h-[52vh] rounded-md border border-slate-200 px-5 py-4">
+          <ScrollArea
+            ref={messageScrollAreaRef}
+            className="h-[52vh] rounded-md border border-slate-200 px-5 py-4"
+          >
             {isBootstrapping ? (
               <div className="flex items-center gap-2 text-sm text-slate-600">
                 <Loader2 className="h-4 w-4 animate-spin" />
@@ -377,7 +403,9 @@ export function ContextChatWorkspace({
                     </p>
                     {message.role === "assistant" ? (
                       <div className="chat-markdown text-sm leading-relaxed">
-                        <ReactMarkdown>{message.content}</ReactMarkdown>
+                        <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                          {message.content}
+                        </ReactMarkdown>
                       </div>
                     ) : (
                       <p className="whitespace-pre-wrap leading-relaxed">{message.content}</p>

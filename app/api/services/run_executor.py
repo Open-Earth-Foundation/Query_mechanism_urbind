@@ -5,6 +5,7 @@ from __future__ import annotations
 import json
 import logging
 import re
+import shutil
 from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass
 from pathlib import Path
@@ -82,7 +83,7 @@ class RunExecutor:
                 config.enable_sql,
             )
             if command.cities:
-                subset_dir = config.runs_dir / run_id / "selected_markdown"
+                subset_dir = _prepare_selected_markdown_dir(config.runs_dir, run_id)
                 copied_files = build_city_subset(
                     source_markdown_dir=base_markdown_dir,
                     target_markdown_dir=subset_dir,
@@ -267,6 +268,15 @@ def _resolve_artifact_path(raw_value: object, fallback: Path | None) -> Path | N
             candidate = Path.cwd() / candidate
         return candidate
     return fallback
+
+
+def _prepare_selected_markdown_dir(runs_dir: Path, run_id: str) -> Path:
+    """Create a clean temp directory for city-scoped markdown copies."""
+    subset_dir = runs_dir / "_selected_markdown" / run_id
+    if subset_dir.exists():
+        shutil.rmtree(subset_dir, ignore_errors=True)
+    subset_dir.mkdir(parents=True, exist_ok=True)
+    return subset_dir
 
 
 __all__ = ["RunExecutor", "StartRunCommand"]

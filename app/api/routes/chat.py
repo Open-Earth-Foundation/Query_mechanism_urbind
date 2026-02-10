@@ -8,7 +8,7 @@ from pathlib import Path
 from typing import Any
 
 from fastapi import APIRouter, Header, HTTPException, Request, status
-from openai import APIStatusError, AuthenticationError
+from openai import APIStatusError, APITimeoutError, AuthenticationError
 
 from app.api.models import (
     ChatContextCatalogResponse,
@@ -559,6 +559,14 @@ def send_chat_message(
         chat_kwargs["api_key_override"] = api_key_override
     try:
         assistant_text = generate_context_chat_reply(**chat_kwargs)
+    except APITimeoutError as exc:
+        raise HTTPException(
+            status_code=status.HTTP_504_GATEWAY_TIMEOUT,
+            detail=(
+                "Chat request timed out at provider. "
+                "Reduce selected contexts or retry."
+            ),
+        ) from exc
     except AuthenticationError as exc:
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,

@@ -11,8 +11,10 @@ from fastapi import APIRouter, Header, HTTPException, Request, status
 from app.api.models import (
     CreateRunRequest,
     CreateRunResponse,
+    RunListResponse,
     RunContextResponse,
     RunOutputResponse,
+    RunSummary,
     RunStatusResponse,
 )
 from app.api.services import (
@@ -112,6 +114,21 @@ def create_run(
         output_url=str(request.url_for("get_run_output", run_id=record.run_id)),
         context_url=str(request.url_for("get_run_context", run_id=record.run_id)),
     )
+
+
+@router.get("/runs", response_model=RunListResponse)
+def list_runs(request: Request) -> RunListResponse:
+    """List runs with run_id and original question."""
+    run_store = _get_run_store(request)
+    records = run_store.list_runs()
+    runs = [
+        RunSummary(
+            run_id=record.run_id,
+            question=record.question,
+        )
+        for record in records
+    ]
+    return RunListResponse(runs=runs, total=len(runs))
 
 
 @router.get(

@@ -41,6 +41,10 @@ function toEditableItem(item: MissingDataItem): EditableMissingDataItem {
   };
 }
 
+function _looksLikePlainNumber(value: string): boolean {
+  return /^[-+]?\d+(\.\d+)?$/.test(value);
+}
+
 export function AssumptionsWorkspace({
   runId,
   enabled,
@@ -114,15 +118,14 @@ export function AssumptionsWorkspace({
         };
       }
       const parsed = Number(trimmed);
-      if (Number.isNaN(parsed)) {
-        throw new Error(
-          `Invalid number for ${item.city}: "${item.proposed_number_input}".`,
-        );
-      }
+      const proposedValue =
+        _looksLikePlainNumber(trimmed) && Number.isFinite(parsed)
+          ? parsed
+          : trimmed;
       return {
         city: item.city,
         missing_description: item.missing_description,
-        proposed_number: parsed,
+        proposed_number: proposedValue,
       };
     });
   }
@@ -138,6 +141,7 @@ export function AssumptionsWorkspace({
       const response = await applyRunAssumptions(runId, {
         items,
         rewrite_instructions: rewriteInstructions.trim() || undefined,
+        persist_artifacts: false,
       });
       setRevisedContent(response.revised_content);
       setRevisedOutputPath(response.revised_output_path);
@@ -219,14 +223,14 @@ export function AssumptionsWorkspace({
                         >
                           <p className="mb-2 text-sm text-slate-800">{item.missing_description}</p>
                           <Label className="mb-1 block text-xs text-slate-600">
-                            Proposed number
+                            Proposed value (number or text)
                           </Label>
                           <Input
                             value={item.proposed_number_input}
                             onChange={(event) =>
                               updateItemNumber(index, event.target.value)
                             }
-                            placeholder="Leave empty if unknown"
+                            placeholder="Example: 1200 or about 90%"
                           />
                         </div>
                       );
@@ -257,6 +261,9 @@ export function AssumptionsWorkspace({
           {isRegenerating ? <Loader2 className="h-4 w-4 animate-spin" /> : null}
           Regenerate
         </Button>
+        <p className="text-xs text-slate-500">
+          Assumptions are ephemeral by default and are not stored in run artifacts.
+        </p>
 
         {revisedContent ? (
           <div className="space-y-2">

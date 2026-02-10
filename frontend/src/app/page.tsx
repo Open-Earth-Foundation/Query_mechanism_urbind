@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import {
   AlertTriangle,
@@ -27,11 +27,13 @@ import {
   CreateRunResponse,
   RunContextResponse,
   RunOutputResponse,
+  RunSummary,
   RunStatus,
   RunStatusResponse,
   apiBaseUrl,
   fetchCities,
   fetchCityGroups,
+  fetchRuns,
   fetchRunContext,
   fetchRunOutput,
   fetchRunStatus,
@@ -48,6 +50,7 @@ const TERMINAL_STATUSES: RunStatus[] = [
 
 type CityScopeMode = "all" | "group" | "manual";
 const USER_API_KEY_STORAGE_KEY = "openrouter_user_api_key";
+const LAST_RUN_ID_STORAGE_KEY = "last_run_id";
 
 export default function Home() {
   const [question, setQuestion] = useState("");
@@ -69,6 +72,11 @@ export default function Home() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isPolling, setIsPolling] = useState(false);
   const [runError, setRunError] = useState<string | null>(null);
+  const [availableRuns, setAvailableRuns] = useState<RunSummary[]>([]);
+  const [selectedExistingRunId, setSelectedExistingRunId] = useState("");
+  const [isLoadingRuns, setIsLoadingRuns] = useState(false);
+  const [runsError, setRunsError] = useState<string | null>(null);
+  const [isLoadingSelectedRun, setIsLoadingSelectedRun] = useState(false);
   const [userApiKey, setUserApiKeyInput] = useState("");
   const [usingCustomApiKey, setUsingCustomApiKey] = useState(false);
   const [apiKeyNote, setApiKeyNote] = useState<string | null>(null);
@@ -95,6 +103,116 @@ export default function Home() {
     setUserApiKey(cleaned);
     setUsingCustomApiKey(true);
   }, []);
+
+  const hydrateRunById = useCallback(async (targetRunId: string): Promise<void> => {
+    const trimmedRunId = targetRunId.trim();
+    if (!trimmedRunId) {
+      return;
+    }
+    const statusPayload = await fetchRunStatus(trimmedRunId);
+    setRunResponse({
+      run_id: trimmedRunId,
+      status: statusPayload.status,
+      status_url: `${apiBaseUrl}/api/v1/runs/${trimmedRunId}/status`,
+      output_url: `${apiBaseUrl}/api/v1/runs/${trimmedRunId}/output`,
+      context_url: `${apiBaseUrl}/api/v1/runs/${trimmedRunId}/context`,
+    });
+    setRunStatus(statusPayload);
+    setRunOutput(null);
+    setRunContext(null);
+
+    if (
+      statusPayload.status === "completed" ||
+      statusPayload.status === "completed_with_gaps"
+    ) {
+      const [outputPayload, contextPayload] = await Promise.all([
+        fetchRunOutput(trimmedRunId),
+        fetchRunContext(trimmedRunId),
+      ]);
+      setRunOutput(outputPayload);
+      setRunContext(contextPayload);
+    }
+    if (typeof window !== "undefined") {
+      window.localStorage.setItem(LAST_RUN_ID_STORAGE_KEY, trimmedRunId);
+    }
+    setSelectedExistingRunId(trimmedRunId);
+  }, []);
+
+  const refreshRunList = useCallback(
+    async (preferredRunId?: string): Promise<void> => {
+      setIsLoadingRuns(true);
+      setRunsError(null);
+      try {
+        const payload = await fetchRuns();
+        setAvailableRuns(payload.runs);
+        setSelectedExistingRunId((current) => {
+          const preferred = (preferredRunId ?? current).trim();
+          if (preferred && payload.runs.some((run) => run.run_id === preferred)) {
+            return preferred;
+          }
+          if (payload.runs.length > 0) {
+            return payload.runs[0].run_id;
+          }
+          return "";
+        });
+      } catch (error) {
+        setRunsError(error instanceof Error ? error.message : "Failed to load runs.");
+      } finally {
+        setIsLoadingRuns(false);
+      }
+    },
+    [],
+  );
+
+  async function handleLoadExistingRun(): Promise<void> {
+    const trimmed = selectedExistingRunId.trim();
+    if (!trimmed || isLoadingSelectedRun) {
+      return;
+    }
+    setIsLoadingSelectedRun(true);
+    setRunError(null);
+    setChatOpen(false);
+    setAssumptionsOpen(false);
+    try {
+      await hydrateRunById(trimmed);
+    } catch (error) {
+      setRunError(
+        error instanceof Error ? error.message : "Failed to load selected run.",
+      );
+    } finally {
+      setIsLoadingSelectedRun(false);
+    }
+  }
+
+  useEffect(() => {
+    void refreshRunList();
+  }, [refreshRunList]);
+
+  useEffect(() => {
+    if (typeof window === "undefined") {
+      return;
+    }
+    const storedRunId = (window.localStorage.getItem(LAST_RUN_ID_STORAGE_KEY) ?? "").trim();
+    if (!storedRunId) {
+      return;
+    }
+    setSelectedExistingRunId(storedRunId);
+    let cancelled = false;
+    setIsLoadingSelectedRun(true);
+    void refreshRunList(storedRunId);
+    hydrateRunById(storedRunId)
+      .catch(() => {
+        // Ignore stale run ids on startup; user can load another run manually.
+      })
+      .finally(() => {
+        if (!cancelled) {
+          setIsLoadingSelectedRun(false);
+        }
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [refreshRunList, hydrateRunById]);
 
   useEffect(() => {
     let cancelled = false;
@@ -319,6 +437,11 @@ export default function Home() {
         cities: scopeMode === "all" ? undefined : scopedCities,
       });
       setRunResponse(payload);
+      setSelectedExistingRunId(payload.run_id);
+      if (typeof window !== "undefined") {
+        window.localStorage.setItem(LAST_RUN_ID_STORAGE_KEY, payload.run_id);
+      }
+      void refreshRunList(payload.run_id);
       const initialStatus = await fetchRunStatus(payload.run_id);
       setRunStatus(initialStatus);
     } catch (error) {
@@ -328,6 +451,15 @@ export default function Home() {
     } finally {
       setIsSubmitting(false);
     }
+  }
+
+  function formatRunOptionLabel(run: RunSummary): string {
+    const compactQuestion = run.question.replace(/\s+/g, " ").trim();
+    const preview =
+      compactQuestion.length > 56
+        ? `${compactQuestion.slice(0, 53)}...`
+        : compactQuestion;
+    return `${run.run_id} | ${preview || "No question"}`;
   }
 
   const isTerminal = !!statusValue && TERMINAL_STATUSES.includes(statusValue);
@@ -380,6 +512,59 @@ export default function Home() {
                   onChange={(event) => setQuestion(event.target.value)}
                   className="min-h-32"
                 />
+              </div>
+
+              <div className="space-y-2">
+                <div className="flex items-center justify-between">
+                  <Label htmlFor="existing-run">Load Existing Run</Label>
+                  <Button
+                    type="button"
+                    variant="ghost"
+                    size="sm"
+                    onClick={() => void refreshRunList(selectedExistingRunId)}
+                    disabled={isLoadingRuns}
+                    className="h-7 px-2 text-xs"
+                  >
+                    {isLoadingRuns ? <Loader2 className="h-3.5 w-3.5 animate-spin" /> : null}
+                    Refresh
+                  </Button>
+                </div>
+                <div className="flex gap-2">
+                  <select
+                    id="existing-run"
+                    value={selectedExistingRunId}
+                    onChange={(event) => setSelectedExistingRunId(event.target.value)}
+                    disabled={isLoadingRuns || availableRuns.length === 0}
+                    className="h-11 w-full rounded-md border border-slate-300 bg-white px-3 text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-slate-300 disabled:cursor-not-allowed disabled:bg-slate-100"
+                  >
+                    {availableRuns.length === 0 ? (
+                      <option value="">
+                        {isLoadingRuns ? "Loading runs..." : "No runs found"}
+                      </option>
+                    ) : null}
+                    {availableRuns.map((run) => (
+                      <option key={run.run_id} value={run.run_id}>
+                        {formatRunOptionLabel(run)}
+                      </option>
+                    ))}
+                  </select>
+                  <Button
+                    type="button"
+                    variant="outline"
+                    onClick={() => void handleLoadExistingRun()}
+                    disabled={isLoadingSelectedRun || !selectedExistingRunId.trim()}
+                  >
+                    {isLoadingSelectedRun ? <Loader2 className="h-4 w-4 animate-spin" /> : null}
+                    Load
+                  </Button>
+                </div>
+                <p className="text-xs text-slate-500">
+                  {availableRuns.length} runs discovered in backend storage.
+                </p>
+                {runsError ? <p className="text-xs text-red-600">{runsError}</p> : null}
+                <p className="text-xs text-slate-500">
+                  Reopen a previous run without re-running the full pipeline.
+                </p>
               </div>
 
               <div className="space-y-2">

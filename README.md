@@ -42,6 +42,8 @@ uv pip install -e .
 - `LOG_LEVEL`
 - `OPENROUTER_BASE_URL` (optional override)
 - `API_RUN_WORKERS` (optional FastAPI background worker count; default: 2)
+- `CHAT_PROMPT_TOKEN_CAP` (optional context chat prompt cap; default: `250000`)
+- `CHAT_PROVIDER_TIMEOUT_SECONDS` (optional context chat provider timeout; default: `50`)
 - `API_CORS_ORIGINS` (optional comma-separated origins for frontend; default includes localhost:3000/3001)
 - `LLM_CONFIG_PATH` (optional API config file path; default: `llm_config.yaml`)
 - `CITY_GROUPS_PATH` (optional city groups JSON path; default: `app/api/assets/city_groups.json`)
@@ -157,7 +159,9 @@ SQL is force-disabled in the API execution path for now.
 
 Core endpoints:
 
+- `GET /` (root health endpoint)
 - `POST /api/v1/runs`
+- `GET /api/v1/runs` (list discovered runs as `run_id` + `question`)
 - `GET /api/v1/runs/{run_id}/status`
 - `GET /api/v1/runs/{run_id}/output`
 - `GET /api/v1/runs/{run_id}/context`
@@ -171,8 +175,8 @@ Core endpoints:
 - `PUT /api/v1/runs/{run_id}/chat/sessions/{conversation_id}/contexts`
 - `POST /api/v1/runs/{run_id}/chat/sessions/{conversation_id}/messages`
 - `POST /api/v1/runs/{run_id}/assumptions/discover` (two-pass missing-data extraction + verification)
-- `POST /api/v1/runs/{run_id}/assumptions/apply` (apply edited assumptions and regenerate document)
-- `GET /api/v1/runs/{run_id}/assumptions/latest` (load latest assumptions artifacts for a run)
+- `POST /api/v1/runs/{run_id}/assumptions/apply` (apply edited assumptions and regenerate document; ephemeral by default)
+- `GET /api/v1/runs/{run_id}/assumptions/latest` (load latest assumptions artifacts for a run; only when persisted)
 
 `POST /api/v1/runs` accepts optional city filtering:
 
@@ -198,7 +202,8 @@ Context chat notes:
 - Run outputs are persisted under `output/<run_id>/final.md` and `output/<run_id>/context_bundle.json`.
 - Chat sessions persist under `output/<run_id>/chat/<conversation_id>.json`.
 - Context manager supports selecting multiple completed run contexts.
-- Selected context payload is capped at `300000` tokens to keep prompts within practical limits for the 400k model setup.
+- Chat first tries full-context prompting; when token budget is exceeded, it switches to excerpt pooling across all selected runs.
+- Prompt budget defaults to `250000` tokens (`CHAT_PROMPT_TOKEN_CAP`) and switches to pooled excerpts if full context exceeds this budget.
 
 Run API in Docker:
 
@@ -235,17 +240,19 @@ Frontend supports three city scope modes in the build form: all cities, predefin
 Clicking `Open Context Chat` switches to a dedicated chat workspace (not a chat modal), and `Manage Contexts` opens a popup for multi-context selection.
 Clicking `Assumptions Review` opens a dedicated workspace where:
 - `Find Missing Data` runs two LLM passes (extract + verification).
-- Missing items are grouped by city with editable `proposed_number`.
-- `Regenerate` writes a revised assumptions-based document artifact.
+- Missing items are grouped by city with editable `proposed_number` (number or free-form text).
+- `Regenerate` returns revised content without persisting assumptions by default.
+The `Load Existing Run` picker reads `run_id` + `question` from `GET /api/v1/runs`, then loads selected run artifacts through the standard run endpoints.
 
 Example file is available at `frontend/.env.example`.
 
 Run frontend in Docker:
 
 ```
-docker build -f frontend/Dockerfile -t query-mechanism-frontend ./frontend
+docker build -f frontend/Dockerfile \
+  --build-arg NEXT_PUBLIC_API_BASE_URL=https://query-mechanism-api.openearth.dev \
+  -t query-mechanism-frontend ./frontend
 docker run -it --rm -p 3000:3000 \
-  -e NEXT_PUBLIC_API_BASE_URL=http://localhost:8000 \
   query-mechanism-frontend
 ```
 
@@ -269,6 +276,26 @@ After startup:
 - Frontend: `http://localhost:3000`
 - Backend API docs: `http://localhost:8000/docs`
 
+## Manual EKS deployment
+
+For manual GHCR + EKS deployment without GitHub Actions, use `urbind-query-mechanism.md`.
+It includes exact build/push commands and `kubectl` apply steps for the manifests in `k8s/`.
+
+## GitHub Actions deployment
+
+Automated deployment workflow is available at `.github/workflows/deploy.yml`.
+It triggers automatically when a PR to `main` is merged, or via manual dispatch.
+
+Required repository secrets:
+- `AWS_ACCESS_KEY_ID_EKS_DEV_USER`
+- `AWS_SECRET_ACCESS_KEY_EKS_DEV_USER`
+- `EKS_DEV_NAME`
+- `OPENROUTER_API_KEY`
+
+Optional repository variables:
+- `EKS_DEV_REGION` (default `us-east-1`)
+- `FRONTEND_API_BASE_URL` (default `https://urbind-query-mechanism-api.openearth.dev`)
+
 ## Test DB connection
 
 ```
@@ -287,10 +314,10 @@ Artifacts are written under `output/<run_id>/`:
 - `drafts/draft_01.md`
 - `final.md`
 - `chat/<conversation_id>.json` (created when context chat sessions are used)
-- `assumptions/discovered.json` (two-pass extraction output)
-- `assumptions/edited.json` (user-edited assumptions payload)
-- `assumptions/revised_context_bundle.json` (context + assumptions merge)
-- `assumptions/final_with_assumptions.md` (regenerated document)
+- `assumptions/discovered.json` (two-pass extraction output; only when `persist_artifacts=true`)
+- `assumptions/edited.json` (user-edited assumptions payload; only when `persist_artifacts=true`)
+- `assumptions/revised_context_bundle.json` (context + assumptions merge; only when `persist_artifacts=true`)
+- `assumptions/final_with_assumptions.md` (regenerated document; only when `persist_artifacts=true`)
 
 ## Run (Docker)
 

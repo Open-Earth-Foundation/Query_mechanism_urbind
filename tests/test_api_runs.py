@@ -178,6 +178,38 @@ def test_api_status_not_found(tmp_path: Path) -> None:
         assert response.status_code == 404
 
 
+def test_api_root_healthcheck(tmp_path: Path) -> None:
+    app = create_app(runs_dir=tmp_path / "output", max_workers=1)
+    with TestClient(app) as client:
+        response = client.get("/")
+        assert response.status_code == 200
+        payload = response.json()
+        assert payload["status"] == "ok"
+
+
+def test_api_list_runs_reads_artifact_folders(tmp_path: Path) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    config = _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+    _write_success_artifacts(
+        question="Historic run from artifact folder",
+        run_id="run-from-folder",
+        config=config,
+    )
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        response = client.get("/api/v1/runs")
+        assert response.status_code == 200
+        payload = response.json()
+        assert payload["total"] == 1
+        assert payload["runs"][0]["run_id"] == "run-from-folder"
+        assert (
+            payload["runs"][0]["question"] == "Historic run from artifact folder"
+        )
+
+
 def test_api_output_returns_conflict_while_running(
     tmp_path: Path, monkeypatch: pytest.MonkeyPatch
 ) -> None:
@@ -302,8 +334,76 @@ def test_api_run_filters_markdown_by_selected_cities(
         assert start.status_code == 202
         terminal = _poll_until_terminal(client, "run-berlin")
         assert terminal["status"] == "completed"
+        listed_runs = client.get("/api/v1/runs")
+        assert listed_runs.status_code == 200
+        listed_ids = [item["run_id"] for item in listed_runs.json()["runs"]]
+        assert listed_ids == ["run-berlin"]
 
     assert captured_files == ["Berlin.md"]
+
+
+def test_api_list_runs_deduplicates_legacy_alias_records(tmp_path: Path) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+
+    state_dir = runs_dir / "_api_state"
+    state_dir.mkdir(parents=True, exist_ok=True)
+    legacy_run_dir = runs_dir / "legacy-run_01"
+    legacy_run_dir.mkdir(parents=True, exist_ok=True)
+    run_log_path = legacy_run_dir / "run.json"
+    started_at = datetime.now(timezone.utc).isoformat()
+    completed_at = datetime.now(timezone.utc).isoformat()
+
+    run_log_path.write_text(
+        json.dumps(
+            {
+                "run_id": "legacy-run_01",
+                "question": "Legacy alias run",
+                "status": "completed",
+                "started_at": started_at,
+                "completed_at": completed_at,
+                "finish_reason": "completed (write)",
+                "artifacts": {
+                    "context_bundle": str(legacy_run_dir / "context_bundle.json"),
+                    "final_output": str(legacy_run_dir / "final.md"),
+                },
+            },
+            ensure_ascii=True,
+            indent=2,
+        ),
+        encoding="utf-8",
+    )
+
+    shared_payload = {
+        "question": "Legacy alias run",
+        "status": "completed",
+        "started_at": started_at,
+        "completed_at": completed_at,
+        "finish_reason": "completed (write)",
+        "error": None,
+        "final_output_path": str(legacy_run_dir / "final.md"),
+        "context_bundle_path": str(legacy_run_dir / "context_bundle.json"),
+        "run_log_path": str(run_log_path),
+    }
+    (state_dir / "legacy-run.json").write_text(
+        json.dumps({"run_id": "legacy-run", **shared_payload}, ensure_ascii=True, indent=2),
+        encoding="utf-8",
+    )
+    (state_dir / "legacy-run_01.json").write_text(
+        json.dumps(
+            {"run_id": "legacy-run_01", **shared_payload}, ensure_ascii=True, indent=2
+        ),
+        encoding="utf-8",
+    )
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        listed_runs = client.get("/api/v1/runs")
+        assert listed_runs.status_code == 200
+        payload = listed_runs.json()
+        assert payload["total"] == 1
+        assert payload["runs"][0]["run_id"] == "legacy-run"
 
 
 def test_api_run_supports_header_api_key_override(

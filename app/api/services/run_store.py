@@ -286,11 +286,138 @@ class RunStore:
                 run_id = path.stem
                 if run_id not in self._records:
                     self._get_or_hydrate_locked(run_id)
+            self._load_runs_from_artifact_dirs_locked()
+            records = self._exclude_legacy_alias_records_locked(
+                list(self._records.values())
+            )
             return sorted(
-                self._records.values(),
+                records,
                 key=lambda record: record.started_at,
                 reverse=True,
             )
+
+    def _exclude_legacy_alias_records_locked(
+        self, records: list[RunRecord]
+    ) -> list[RunRecord]:
+        """Drop known alias ids from legacy `_01` artifact naming collisions."""
+        folder_owner: dict[str, str] = {}
+        for record in records:
+            if record.run_log_path is None:
+                continue
+            folder_name = record.run_log_path.parent.name
+            existing_owner = folder_owner.get(folder_name)
+            if existing_owner is None:
+                folder_owner[folder_name] = record.run_id
+                continue
+            if existing_owner == folder_name and record.run_id != folder_name:
+                folder_owner[folder_name] = record.run_id
+
+        alias_run_ids = {
+            folder_name
+            for folder_name, owner_run_id in folder_owner.items()
+            if owner_run_id != folder_name
+        }
+        if not alias_run_ids:
+            return records
+        return [record for record in records if record.run_id not in alias_run_ids]
+
+    def _load_runs_from_artifact_dirs_locked(self) -> None:
+        """Hydrate runs directly from artifact folders when state snapshots are missing."""
+        for run_log_path in self._runs_dir.glob("*/run.json"):
+            self._hydrate_from_run_log_locked(run_log_path)
+
+    def _hydrate_from_run_log_locked(self, run_log_path: Path) -> RunRecord | None:
+        """Create a run record from a run.json artifact when possible."""
+        if not run_log_path.exists():
+            return None
+        if self._has_record_for_run_folder_locked(run_log_path.parent.name):
+            return None
+
+        run_log = _read_json(run_log_path)
+        if run_log is None:
+            return None
+
+        run_id_raw = run_log.get("run_id")
+        run_id = (
+            run_id_raw.strip()
+            if isinstance(run_id_raw, str) and run_id_raw.strip()
+            else run_log_path.parent.name
+        )
+        if run_id in self._records:
+            return self._records[run_id]
+
+        status = _coerce_status(run_log.get("status")) or "failed"
+        started_at = _parse_datetime(str(run_log.get("started_at"))) or _utc_now()
+        completed_at: datetime | None = None
+        completed_raw = run_log.get("completed_at")
+        if isinstance(completed_raw, str):
+            completed_at = _parse_datetime(completed_raw)
+
+        finish_reason_raw = run_log.get("finish_reason")
+        finish_reason = finish_reason_raw if isinstance(finish_reason_raw, str) else None
+
+        artifacts = run_log.get("artifacts")
+        final_output_path: Path | None = None
+        context_bundle_path: Path | None = None
+        if isinstance(artifacts, dict):
+            final_output_path = self._resolve_artifact_path_from_log(
+                artifacts.get("final_output"), run_log_path.parent
+            )
+            context_bundle_path = self._resolve_artifact_path_from_log(
+                artifacts.get("context_bundle"), run_log_path.parent
+            )
+        if final_output_path is None:
+            fallback_final = run_log_path.parent / "final.md"
+            if fallback_final.exists():
+                final_output_path = fallback_final
+        if context_bundle_path is None:
+            fallback_context = run_log_path.parent / "context_bundle.json"
+            if fallback_context.exists():
+                context_bundle_path = fallback_context
+
+        question_raw = run_log.get("question")
+        question = question_raw if isinstance(question_raw, str) else ""
+
+        record = RunRecord(
+            run_id=run_id,
+            question=question,
+            status=status,
+            started_at=started_at,
+            completed_at=completed_at,
+            finish_reason=finish_reason,
+            error=None,
+            final_output_path=final_output_path,
+            context_bundle_path=context_bundle_path,
+            run_log_path=run_log_path,
+        )
+        self._records[run_id] = record
+        self._persist_record_locked(record)
+        return record
+
+    def _has_record_for_run_folder_locked(self, folder_name: str) -> bool:
+        """Return True when a record already points to the same artifact folder."""
+        for record in self._records.values():
+            if record.run_log_path is None:
+                continue
+            if record.run_log_path.parent.name == folder_name:
+                return True
+        return False
+
+    def _resolve_artifact_path_from_log(
+        self, raw_path: object, run_dir: Path
+    ) -> Path | None:
+        """Resolve artifact path from run.json and fallback to local run folder."""
+        if not isinstance(raw_path, str) or not raw_path.strip():
+            return None
+        candidate = Path(raw_path)
+        if not candidate.is_absolute():
+            return run_dir / candidate
+        if candidate.exists():
+            return candidate
+        fallback = run_dir / candidate.name
+        if fallback.exists():
+            return fallback
+        return candidate
 
     def _load_state_files(self) -> None:
         """Load persisted API state snapshots into memory."""
@@ -378,10 +505,12 @@ class RunStore:
         if isinstance(artifacts, dict):
             final_raw = artifacts.get("final_output")
             context_raw = artifacts.get("context_bundle")
-            if isinstance(final_raw, str):
-                final_output_path = Path(final_raw)
-            if isinstance(context_raw, str):
-                context_bundle_path = Path(context_raw)
+            final_output_path = self._resolve_artifact_path_from_log(
+                final_raw, run_log_path.parent
+            )
+            context_bundle_path = self._resolve_artifact_path_from_log(
+                context_raw, run_log_path.parent
+            )
         if final_output_path is None:
             fallback_final = self._runs_dir / run_id / "final.md"
             if fallback_final.exists():

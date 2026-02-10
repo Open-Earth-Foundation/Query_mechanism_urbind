@@ -7,6 +7,7 @@ import pytest
 from fastapi.testclient import TestClient
 
 from app.api.main import create_app
+from app.api.services.context_chat import CHAT_PROMPT_TOKEN_CAP
 from app.utils.config import (
     AgentConfig,
     AppConfig,
@@ -102,7 +103,7 @@ def test_chat_session_lifecycle(tmp_path: Path, monkeypatch: pytest.MonkeyPatch)
         history: list[dict[str, str]],
         user_content: str,
         config: AppConfig,
-        token_cap: int = 300000,
+        token_cap: int = CHAT_PROMPT_TOKEN_CAP,
     ) -> str:
         assert isinstance(original_question, str) and original_question
         assert isinstance(contexts, list) and contexts
@@ -110,7 +111,7 @@ def test_chat_session_lifecycle(tmp_path: Path, monkeypatch: pytest.MonkeyPatch)
         assert isinstance(contexts[0].get("context_bundle"), dict)
         assert isinstance(history, list)
         assert config.chat.model == "openai/gpt-5.2"
-        assert token_cap == 300000
+        assert token_cap == CHAT_PROMPT_TOKEN_CAP
         return f"Echo: {user_content}"
 
     monkeypatch.setattr("app.api.services.run_executor.load_config", _stub_load_config)
@@ -140,10 +141,21 @@ def test_chat_session_lifecycle(tmp_path: Path, monkeypatch: pytest.MonkeyPatch)
         send_payload = send_message.json()
         assert send_payload["assistant_message"]["content"] == "Echo: What was the context?"
 
+        send_second_message = client.post(
+            f"/api/v1/runs/run-chat/chat/sessions/{conversation_id}/messages",
+            json={"content": "List only numeric targets in markdown table format."},
+        )
+        assert send_second_message.status_code == 200
+        send_second_payload = send_second_message.json()
+        assert (
+            send_second_payload["assistant_message"]["content"]
+            == "Echo: List only numeric targets in markdown table format."
+        )
+
         fetch_session = client.get(f"/api/v1/runs/run-chat/chat/sessions/{conversation_id}")
         assert fetch_session.status_code == 200
         fetch_payload = fetch_session.json()
-        assert len(fetch_payload["messages"]) == 2
+        assert len(fetch_payload["messages"]) == 4
         assert fetch_payload["messages"][0]["role"] == "user"
         assert fetch_payload["messages"][1]["role"] == "assistant"
 
@@ -153,7 +165,7 @@ def test_chat_session_lifecycle(tmp_path: Path, monkeypatch: pytest.MonkeyPatch)
         assert session_contexts.status_code == 200
         session_contexts_payload = session_contexts.json()
         assert session_contexts_payload["context_run_ids"] == ["run-chat"]
-        assert session_contexts_payload["token_cap"] == 300000
+        assert session_contexts_payload["token_cap"] == CHAT_PROMPT_TOKEN_CAP
         assert session_contexts_payload["total_tokens"] > 0
 
         update_contexts = client.put(
@@ -216,7 +228,7 @@ def test_chat_supports_header_api_key_override(
         history: list[dict[str, str]],
         user_content: str,
         config: AppConfig,
-        token_cap: int = 300000,
+        token_cap: int = CHAT_PROMPT_TOKEN_CAP,
         api_key_override: str | None = None,
     ) -> str:
         assert isinstance(original_question, str)

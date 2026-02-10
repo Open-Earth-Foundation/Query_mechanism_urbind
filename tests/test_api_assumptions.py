@@ -7,8 +7,12 @@ from fastapi.testclient import TestClient
 
 from app.api.main import create_app
 from app.api.models import AssumptionsPayload, MissingDataItem, RegenerationResult
-from app.api.services.assumptions_review import discover_missing_data
+from app.api.services.assumptions_review import (
+    apply_assumptions_and_regenerate,
+    discover_missing_data,
+)
 from app.api.services.run_store import RunStore
+from app.modules.writer.models import WriterOutput
 from app.utils.config import (
     AgentConfig,
     AppConfig,
@@ -200,6 +204,94 @@ def test_assumptions_apply_regeneration_returns_payload(
         payload = response.json()
         assert payload["run_id"] == "run-assumptions"
         assert payload["assumptions_path"].endswith("edited.json")
+
+
+def test_assumptions_apply_accepts_free_form_value(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    config = _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        _create_completed_run(
+            run_store=client.app.state.run_store,
+            config=config,
+            run_id="run-assumptions",
+            question="Build assumptions run",
+        )
+        monkeypatch.setattr(
+            "app.api.routes.assumptions.apply_assumptions_and_regenerate",
+            lambda **_: RegenerationResult(
+                run_id="run-assumptions",
+                revised_output_path="output/run-assumptions/assumptions/final_with_assumptions.md",
+                revised_content="# Revised",
+                assumptions_path="output/run-assumptions/assumptions/edited.json",
+            ),
+        )
+        response = client.post(
+            "/api/v1/runs/run-assumptions/assumptions/apply",
+            json={
+                "items": [
+                    {
+                        "city": "Aachen",
+                        "missing_description": "Share of electricity from renewable sources",
+                        "proposed_number": "almost all of the city electricity about 90%",
+                    }
+                ]
+            },
+        )
+        assert response.status_code == 200
+        payload = response.json()
+        assert payload["run_id"] == "run-assumptions"
+
+
+def test_apply_assumptions_does_not_persist_by_default(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    config = _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+    run_store = RunStore(runs_dir)
+    _create_completed_run(
+        run_store=run_store,
+        config=config,
+        run_id="run-assumptions",
+        question="Build assumptions run",
+    )
+    run_record = run_store.get_run("run-assumptions")
+    assert run_record is not None
+
+    monkeypatch.setattr(
+        "app.api.services.assumptions_review.write_markdown",
+        lambda **_: WriterOutput(content="# Revised body"),
+    )
+
+    result = apply_assumptions_and_regenerate(
+        run_store=run_store,
+        run_record=run_record,
+        payload=AssumptionsPayload(
+            items=[
+                MissingDataItem(
+                    city="Aachen",
+                    missing_description="Missing share value",
+                    proposed_number="about 90%",
+                )
+            ]
+        ),
+        config=config,
+        persist_artifacts=False,
+        api_key_override="sk-or-v1-test-key",
+    )
+
+    assert result.run_id == "run-assumptions"
+    assert result.revised_output_path is None
+    assert result.assumptions_path is None
+    assert "# Revised body" in result.revised_content
+    assert not (runs_dir / "run-assumptions" / "assumptions").exists()
 
 
 def test_discover_missing_data_runs_two_pass_merge(
