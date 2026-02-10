@@ -189,6 +189,7 @@ Skills included:
 - `simplify-after-change`: **Mandatory** after any code change. Simplifies the changed code, removes unnecessary complexity, and keeps behavior identical.
 - `docs-after-change`: **Mandatory** after any code change. Keeps docstrings/README/architecture accurate.
 - `script-quality-gate`: Use when adding/changing a runnable script or CLI entrypoint.
+- `prompt-schema-authoring`: Use when creating/updating agent prompts to enforce `<role>/<task>/<input>/<output>` structure and model-aligned output contracts.
 - `repo-doc-audit`: One-off full repo documentation audit (**manual** via `/repo-doc-audit`).
 
 ### Mandatory after code changes
