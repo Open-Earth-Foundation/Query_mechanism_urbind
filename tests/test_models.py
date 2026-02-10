@@ -1,6 +1,12 @@
+import pytest
+from pydantic import ValidationError
+
 from app.models import ErrorInfo
 from app.modules.markdown_researcher.models import MarkdownExcerpt, MarkdownResearchResult
-from app.modules.orchestrator.models import OrchestratorDecision
+from app.modules.orchestrator.models import (
+    OrchestratorDecision,
+    ResearchQuestionRefinement,
+)
 from app.modules.sql_researcher.models import SqlQuery, SqlQueryPlan, SqlQueryResult, SqlResearchResult
 from app.modules.writer.models import WriterOutput
 
@@ -32,6 +38,9 @@ def test_model_validation() -> None:
     md_result = MarkdownResearchResult(excerpts=[excerpt])
 
     decision = OrchestratorDecision(action="write", reason="Enough data")
+    refinement = ResearchQuestionRefinement(
+        research_question="For Munich, list documented initiatives with evidence."
+    )
 
     writer = WriterOutput(content="# Answer")
 
@@ -39,6 +48,7 @@ def test_model_validation() -> None:
     assert research.total_token_count == 3
     assert md_result.excerpts[0].city_name == "Munich"
     assert decision.action == "write"
+    assert refinement.research_question.startswith("For Munich")
     assert writer.content.startswith("#")
 
     error = ErrorInfo(code="E1", message="fail")
@@ -56,3 +66,8 @@ def test_markdown_excerpt_accepts_legacy_answer_field() -> None:
     )
 
     assert excerpt.partial_answer == "Munich has 43 existing public chargers."
+
+
+def test_orchestrator_decision_rejects_legacy_actions() -> None:
+    with pytest.raises(ValidationError):
+        OrchestratorDecision(action="run_sql", reason="Need more data")

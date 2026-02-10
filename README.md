@@ -49,6 +49,7 @@ Environment variables (`.env`):
 - `OPENROUTER_BASE_URL` (optional, default `https://openrouter.ai/api/v1`): custom OpenRouter-compatible base URL.
 
 CLI flags override `.env` values for a given run (for example `--db-path`, `--db-url`, `--markdown-path`, `--enable-sql`).
+Use `--city` (repeatable) to load markdown only for selected city files (matched by filename stem).
 
 Example `.env.example` is provided.
 
@@ -131,6 +132,15 @@ python -m app.scripts.run_pipeline --question "What initiatives exist for Munich
   --markdown-path documents
 ```
 
+Limit to selected cities only:
+
+```
+python -m app.scripts.run_pipeline --question "What initiatives exist for Munich and Leipzig?" \
+  --markdown-path documents \
+  --city Munich \
+  --city Leipzig
+```
+
 Disable LLM payload logging:
 
 ```
@@ -155,6 +165,7 @@ When `--question` is provided, it overrides `--questions-file` and only the CLI 
 python -m app.scripts.run_e2e_queries
 python -m app.scripts.run_e2e_queries --questions-file assets/e2e_questions.txt
 python -m app.scripts.run_e2e_queries --question "What initiatives exist for Munich?" --no-log-llm-payload
+python -m app.scripts.run_e2e_queries --question "What initiatives exist for Munich and Leipzig?" --markdown-path documents --city Munich --city Leipzig
 ```
 
 ## Test DB connection
@@ -168,6 +179,7 @@ Artifacts are written under `output/<run_id>/`:
 - `run.json`
 - `run.log`
 - `context_bundle.json`
+- `research_question.json` (orchestrator-refined research version of the user question)
 - `schema_summary.json` (when SQL is enabled)
 - `city_list.json` (when SQL is enabled)
 - `sql/queries.json`, `sql/results.json`, `sql/results_full.json` (when SQL is enabled)

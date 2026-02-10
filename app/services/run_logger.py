@@ -28,6 +28,7 @@ class RunLogger:
         self.context_bundle: dict[str, Any] = {
             "sql": None,
             "markdown": None,
+            "research_question": question,
             "drafts": [],
             "final": None,
         }
@@ -275,6 +276,10 @@ class RunLogger:
 
     def update_markdown_bundle(self, markdown_payload: dict[str, Any]) -> None:
         self.context_bundle["markdown"] = markdown_payload
+        self.write_context_bundle()
+
+    def update_research_question(self, research_question: str) -> None:
+        self.context_bundle["research_question"] = research_question
         self.write_context_bundle()
 
     def finalize(

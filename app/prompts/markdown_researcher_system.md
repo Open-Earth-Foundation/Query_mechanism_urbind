@@ -20,12 +20,9 @@ Never include reasoning text outside the tool call.
 Input is a JSON object with:
 - `question` (str)
 - `city_name` (str): current city for this batch
-- `documents` (list[object]): each item has
-  - `path` (str)
-  - `city_name` (str)
-  - `content` (str)
+- `content` (str): markdown chunk content for this call
 
-All documents in one call belong to one city.
+Each call currently processes one chunk at a time.
 </input>
 
 <output>
@@ -33,7 +30,6 @@ You must call tool `submit_markdown_excerpts` and pass a JSON object (not a JSON
 Return only that tool call.
 
 The tool argument must match `MarkdownResearchResult`:
-- `status` (`"success"` | `"error"`)
 - `excerpts` (list[`MarkdownExcerpt`])
 - `error` (`ErrorInfo` | `null`)
 
@@ -54,16 +50,15 @@ Rules for `partial_answer`:
 - Must be self-contained (resolve city/initiative/entity names explicitly).
 - Must not use meta phrasing such as "the answer is", "this chunk says", "based on the snippet".
 - Must not add facts that are absent from the snippet.
+- Snippets and partial answers must be single-line strings (replace newlines/tabs with spaces).
 
-Status and error:
-- Normal completion, including zero relevant excerpts: `status="success"`, `error=null`.
-- Use `status="error"` only for critical unrecoverable batch failure.
-- Partial/degraded result may still use `status="success"` with non-null `error`.
+Error handling:
+- Normal completion should use `error=null`.
+- Use non-null `error` only for critical or partial/degraded batch behavior.
 </output>
 
 <example_output>
 {
-  "status": "success",
   "excerpts": [
     {
       "snippet": "The city has deployed 43 public EV charging points as of 2024.",
@@ -75,4 +70,3 @@ Status and error:
   "error": null
 }
 </example_output>
-

@@ -125,15 +125,17 @@ def extract_markdown_excerpts(
         batch_index: int,
         batch: list[dict[str, str]],
     ) -> tuple[str, int, list[MarkdownExcerpt], ErrorInfo | None, bool]:
-        """Process a single city batch and return excerpts."""
+        """Process a single city batch (currently one chunk) and return excerpts."""
         excerpts: list[MarkdownExcerpt] = []
         error: ErrorInfo | None = None
         success = False
 
+        # Current architecture sends one chunk per agent call to keep payloads small and predictable.
+        chunk_content = batch[0].get("content", "") if batch else ""
         payload = {
             "question": question,
             "city_name": city_name,
-            "documents": batch,
+            "content": chunk_content,
         }
         max_retries = max(config.markdown_researcher.max_retries, 0)
         retry_base = max(config.markdown_researcher.retry_base_seconds, 0.1)
@@ -263,6 +265,7 @@ def extract_markdown_excerpts(
             city_name,
             len(city_documents),
         )
+        # Intentionally one chunk per batch to reduce per-call context size.
         batches = [[document] for document in city_documents]
         for batch_index, batch in enumerate(batches, start=1):
             all_tasks.append((city_name, batch_index, batch))

@@ -16,7 +16,6 @@ class SqlQuery(BaseModel):
 
 class SqlQueryPlan(BaseModel):
     status: Literal["success", "error"] = "success"
-    created_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
     queries: list[SqlQuery] = []
     error: ErrorInfo | None = None
 

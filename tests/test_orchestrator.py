@@ -13,7 +13,10 @@ from app.utils.config import (
     SqlResearcherConfig,
 )
 from app.modules.orchestrator.module import run_pipeline
-from app.modules.orchestrator.models import OrchestratorDecision
+from app.modules.orchestrator.models import (
+    OrchestratorDecision,
+    ResearchQuestionRefinement,
+)
 from app.modules.sql_researcher.models import SqlQuery, SqlQueryPlan
 from app.modules.markdown_researcher.models import MarkdownExcerpt, MarkdownResearchResult
 from app.modules.writer.models import WriterOutput
@@ -49,6 +52,15 @@ def _stub_markdown(
     return MarkdownResearchResult(excerpts=[excerpt])
 
 
+def _stub_refine_question(
+    question: str,
+    config: AppConfig,
+    api_key: str,
+    **_kwargs: dict[str, object],
+) -> ResearchQuestionRefinement:
+    return ResearchQuestionRefinement(research_question=question)
+
+
 def _stub_decision(
     question: str,
     context_bundle: dict,
@@ -59,14 +71,14 @@ def _stub_decision(
     return OrchestratorDecision(action="write", reason="Enough")
 
 
-def _stub_decision_run_sql(
+def _stub_decision_stop(
     question: str,
     context_bundle: dict,
     config: AppConfig,
     api_key: str,
     **_kwargs: dict[str, object],
 ) -> OrchestratorDecision:
-    return OrchestratorDecision(action="run_sql", reason="Need more data")
+    return OrchestratorDecision(action="stop", reason="No answer possible")
 
 
 def _stub_writer(
@@ -119,6 +131,7 @@ def test_run_pipeline_creates_artifacts(
         config=config,
         sql_plan_func=_stub_sql_plan,
         markdown_func=_stub_markdown,
+        refine_question_func=_stub_refine_question,
         decide_func=_stub_decision,
         writer_func=_stub_writer,
     )
@@ -154,6 +167,7 @@ def test_run_pipeline_sql_disabled_skips_db(
         config=config,
         sql_plan_func=_stub_sql_plan,
         markdown_func=_stub_markdown,
+        refine_question_func=_stub_refine_question,
         decide_func=_stub_decision,
         writer_func=_stub_writer,
     )
@@ -163,7 +177,7 @@ def test_run_pipeline_sql_disabled_skips_db(
     assert run_log["status"] == "completed"
 
 
-def test_run_pipeline_fallback_writer_with_sql_disabled(
+def test_run_pipeline_stop_with_sql_disabled(
     tmp_path: Path, monkeypatch: pytest.MonkeyPatch
 ) -> None:
     monkeypatch.setenv("OPENROUTER_API_KEY", "test")
@@ -188,14 +202,15 @@ def test_run_pipeline_fallback_writer_with_sql_disabled(
         config=config,
         sql_plan_func=_stub_sql_plan,
         markdown_func=_stub_markdown,
-        decide_func=_stub_decision_run_sql,
+        refine_question_func=_stub_refine_question,
+        decide_func=_stub_decision_stop,
         writer_func=_stub_writer,
     )
 
-    assert paths.final_output.exists()
+    assert not paths.final_output.exists()
     run_log = json.loads(paths.run_log.read_text(encoding="utf-8"))
-    assert run_log["status"] == "completed_with_gaps"
-    assert run_log["finish_reason"] == "completed_with_gaps (max iterations)"
+    assert run_log["status"] == "stopped"
+    assert run_log["finish_reason"] == "stopped_by_orchestrator"
 
 
 def test_run_pipeline_detaches_run_log_handler(
@@ -227,6 +242,7 @@ def test_run_pipeline_detaches_run_log_handler(
             run_id="run1",
             sql_plan_func=_stub_sql_plan,
             markdown_func=_stub_markdown,
+            refine_question_func=_stub_refine_question,
             decide_func=_stub_decision,
             writer_func=_stub_writer,
         )
@@ -244,6 +260,7 @@ def test_run_pipeline_detaches_run_log_handler(
             run_id="run2",
             sql_plan_func=_stub_sql_plan,
             markdown_func=_stub_markdown,
+            refine_question_func=_stub_refine_question,
             decide_func=_stub_decision,
             writer_func=_stub_writer,
         )
@@ -260,3 +277,67 @@ def test_run_pipeline_detaches_run_log_handler(
         assert "MARKER_AFTER_RUN2" not in first_log
     finally:
         _reset_root_handlers()
+
+
+def test_run_pipeline_refines_question_before_markdown(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    monkeypatch.setenv("OPENROUTER_API_KEY", "test")
+
+    docs_dir = tmp_path / "documents"
+    docs_dir.mkdir()
+    (docs_dir / "Munich.md").write_text("# Munich\n\nSample", encoding="utf-8")
+
+    config = AppConfig(
+        orchestrator=OrchestratorConfig(model="test", context_bundle_name="context_bundle.json"),
+        sql_researcher=SqlResearcherConfig(model="test", max_result_tokens=100000),
+        markdown_researcher=MarkdownResearcherConfig(model="test"),
+        writer=AgentConfig(model="test"),
+        runs_dir=tmp_path / "output",
+        source_db_path=tmp_path / "missing.db",
+        markdown_dir=docs_dir,
+        enable_sql=False,
+    )
+
+    captured: dict[str, str] = {}
+
+    def _refine_for_test(
+        question: str,
+        config: AppConfig,
+        api_key: str,
+        **_kwargs: dict[str, object],
+    ) -> ResearchQuestionRefinement:
+        return ResearchQuestionRefinement(
+            research_question="For Munich, list concrete documented initiatives with direct evidence."
+        )
+
+    def _capture_markdown_question(
+        question: str,
+        documents: list[dict[str, str]],
+        config: AppConfig,
+        api_key: str,
+        **_kwargs: dict[str, object],
+    ) -> MarkdownResearchResult:
+        captured["question"] = question
+        return _stub_markdown(question, documents, config, api_key, **_kwargs)
+
+    paths = run_pipeline(
+        question="What initiatives exist for Munich?",
+        config=config,
+        sql_plan_func=_stub_sql_plan,
+        markdown_func=_capture_markdown_question,
+        refine_question_func=_refine_for_test,
+        decide_func=_stub_decision,
+        writer_func=_stub_writer,
+    )
+
+    assert paths.final_output.exists()
+    assert (
+        captured["question"]
+        == "For Munich, list concrete documented initiatives with direct evidence."
+    )
+    context_bundle = json.loads(paths.context_bundle.read_text(encoding="utf-8"))
+    assert (
+        context_bundle["research_question"]
+        == "For Munich, list concrete documented initiatives with direct evidence."
+    )

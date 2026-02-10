@@ -15,7 +15,7 @@ Never output free text outside the tool call.
 Input is a JSON object with:
 - `question` (str)
 - `context_bundle` (object): contains SQL and markdown outputs; SQL may be null if disabled
-- `sql_enabled` (bool): false means SQL is unavailable
+- `sql_enabled` (bool): informational only; SQL research is already finished before this decision
 - `context_window_tokens` (optional int)
 - `max_input_tokens` (optional int)
 </input>
@@ -26,17 +26,15 @@ Return only that tool call.
 
 The tool argument must match `OrchestratorDecision`:
 - `status` (`"success"` | `"error"`)
-- `action` (`"write"` | `"run_sql"` | `"stop"`)
+- `action` (`"write"` | `"stop"`)
 - `reason` (str)
 - `confidence` (optional float)
 - `follow_up_question` (optional str)
 - `error` (`ErrorInfo` | `null`)
 
 Action policy:
-- `run_markdown` is intentionally disabled in this architecture because markdown extraction runs once before orchestration.
-- If `sql_enabled=false`, never choose `run_sql`.
+- SQL/markdown research is already executed before this decision.
 - Prefer `write` when available evidence supports an answer.
-- Use `run_sql` only when SQL is enabled and additional SQL evidence is required.
 - Use `stop` only when the question cannot be answered at all.
 
 Evidence policy:
