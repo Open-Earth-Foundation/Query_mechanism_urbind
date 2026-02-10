@@ -9,10 +9,10 @@ from app.modules.writer.models import WriterOutput
 from app.services.agents import build_model_settings, build_openrouter_model, run_agent_sync
 from app.utils.config import AppConfig
 from app.utils.prompts import load_prompt
-from app.utils.tokenization import get_max_input_tokens
 
 
 def build_writer_agent(config: AppConfig, api_key: str) -> Agent:
+    """Build the writer agent."""
     prompt_path = Path(__file__).resolve().parents[2] / "prompts" / "writer_system.md"
     instructions = load_prompt(prompt_path)
     model = build_openrouter_model(config.writer.model, api_key, config.openrouter_base_url)
@@ -36,24 +36,21 @@ def build_writer_agent(config: AppConfig, api_key: str) -> Agent:
 def write_markdown(
     question: str,
     context_bundle: dict,
-    run_id: str,
     config: AppConfig,
     api_key: str,
+    log_llm_payload: bool = False,
 ) -> WriterOutput:
+    """Generate the final markdown answer."""
     agent = build_writer_agent(config, api_key)
     payload = {
-        "run_id": run_id,
         "question": question,
         "context_bundle": context_bundle,
-        "context_window_tokens": config.writer.context_window_tokens,
-        "max_input_tokens": get_max_input_tokens(
-            config.writer.context_window_tokens,
-            config.writer.max_output_tokens,
-            config.writer.input_token_reserve,
-            config.writer.max_input_tokens,
-        ),
     }
-    result = run_agent_sync(agent, json.dumps(payload, ensure_ascii=True))
+    result = run_agent_sync(
+        agent,
+        json.dumps(payload, ensure_ascii=True),
+        log_llm_payload=log_llm_payload,
+    )
     output = result.final_output
     if isinstance(output, WriterOutput):
         return output

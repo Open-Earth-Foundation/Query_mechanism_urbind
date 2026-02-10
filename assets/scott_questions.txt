@@ -1,0 +1,33 @@
+# Net Zero Cities Climate Contracts - Initial Scan Part 1: Targets, Priorities & Projects
+
+> **Note:** NZ / NZC = **Net Zero Cities** (not New Zealand)
+
+## 1. Targets & Priorities
+What targets have cities set for each opportunity transformation?
+What are the range of initiatives being proposed in each domain?
+To the extent they are discernible, what factors underlie the choices they are making? What trade-offs are being considered in prioritizing certain opportunities over others?
+To what extent are the targets time-bound, measurable, and integrated into formal city planning documents?
+What systemic linkages or sequencing are featured in the plans that are deterministic of timing, cost, etc.?
+
+## 2. Projects and Transformation Opportunities
+What announcements of climate infrastructure projects are underway by transformation opportunity and how are they affecting a transition to climate neutrality? To the extent possible, describe the range of projects featured?
+What measurable progress has been achieved relative to the projects underway (e.g., temperature reduction, reduction in CO2 or GHG emissions, community benefit, cost reduction, etc.)?
+By initiative, what are the aggregated estimates of lower carbon target and cost to affect the transition?
+Are there specific examples cited that enables estimating aggregate demand for green technologies built up on a project-by-project basis, e.g., number of tons of green cement or green steel or clean energy being utilized?
+Which sectors (mobility, buildings, energy, waste, nature-based solutions) are leading in implementation, and why?
+How are pilot projects being scaled into citywide programs?
+What monitoring or verification systems are in place to track performance and impact?
+
+## 3. Contextual Factors and City Characteristics (Part 1)
+
+### Overview of City Typologies and Differentiation
+What are differences in initiatives visible based upon size, population demographics, characteristics and physical dimensions of the city, age of infrastructure, city economics (budgets, capital investment, GDP, employment, inflation, tax rates), business climate, etc.?
+
+### City Typology Analysis and Patterns
+Are certain city typologies (e.g., coastal, industrial, post-industrial, rapidly urbanizing) more likely to pursue specific transformation opportunities?
+
+### Urban Future Cohort Constructs Testing
+Along these lines is there a way to test the cohort constructs Urban Future has developed? Specifically:
+- How do the Net Zero Cities cluster based on these typologies?
+- Can we validate the Urban Future classification framework against actual climate strategy choices observed in the contracts?
+- Are there common patterns within typology cohorts that transcend individual city differences?

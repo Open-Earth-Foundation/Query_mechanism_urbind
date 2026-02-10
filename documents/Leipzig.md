@@ -6,7 +6,9 @@ EU MISSION PLATFORM | CLIMATE NEUTRAL AND SMART CITIES
 
 # 2030 Climate Neutrality Action Plan
 
-# 2030 Climate Neutrality Action Plan Leipzig
+# 2030 Climate Neutrality Action Plan
+
+# Leipzig
 
 ![img-0.jpeg](img-0.jpeg)
 
@@ -508,9 +510,7 @@ The calculation of the reduction targets for the individual sectors is based on 
 |  Stationary energy and buildings | Reduction by 469,667 | Reduction by 567,150 | -  |
 |  Activities | Climate-friendly heat systems by integrating high shares of RE (district heating, heat pumps) combined with an ambitious rate of renovation (public and private sect. ~ 3 % p.a.) | Switch to renewable power supply and integrating RE on building facades and roofs-tops (private and public) | -  |
 |  Transport | Reduction by 432,667 | Reduction by 32.127 | -  |
-|  Activity | Supporting environmental transport options (pedestrian, bike, public transport)
-Increasing rate of alternative drives in the private mobility share | 100 % RE for public transport (electrified tram and bus fleet)
-Expand charging infrastructure for private electric mobility | -  |
+|  Activity | Supporting environmental transport options (pedestrian, bike, public transport); Increasing rate of alternative drives in the private mobility share | 100 % RE for public transport (electrified tram and bus fleet); Expand charging infrastructure for private electric mobility | -  |
 |  Waste | Reduction by 50 % | Reduction by 50 % | -  |
 |  Activity | Zero Waste Strategy | Zero Waste Strategy | -  |
 |  Industrial Process and Product Use | Reduction by 181,082 | Reduction by 377,956 | -  |
@@ -528,7 +528,7 @@ Climate Neutrality Action Plan
 |  EU | European Green Deal | With the European Green Deal, the 27 EU member states want to become climate-neutral by 2050. As a first step, greenhouse gas emissions are to be reduced by at least 55% by 2030 compared to 1990 levels. In order to achieve this goal, the economy and society must be reorganised in many areas. | strategy  |
 |  EU | New Leipzig Charter | The new Leipzig Charter, as a strategic framework for integrated and sustainable urban development geared towards the common good, anchors the basic principle of joint development of projects and programmes in a joint dialogue between all stakeholders. | strategy  |
 |  national | Federal Climate Protection Act (KSG) | The Federal Climate Protection Act (KSG) is a German federal law designed to ensure the fulfilment of national climate protection targets and compliance with European targets. The Climate Protection Act enshrines the climate protection and sector targets set out in the Climate Protection Plan 2050 in law for the first time: greenhouse gas emissions are to be reduced by at least 65% below the comparable figure for 1990 by 2030 and by at least 88% by 2040. Net greenhouse gas neutrality is to be achieved by 2045. The law also sets annual reduction targets for the period up to 2040. For various sectors of the economy, maximum quantities of emissions are specified per year until 2030. | regulation  |
-|  national | Heat Planning and Decarbonisation of Heating Networks Act (WPG) | The law lays the foundations for the introduction of binding and comprehensive heat planning in Germany. The aim is to convert the heat supply to greenhouse gas neutrality in order to help achieve the German government's climate protection targets by 2045. (Source: https://www.bmwsb.bund.de/SharedDocs/gesetzgebungsverfahren/Webs/BMWSB/DE/kommunale-waermeplanung.html). To this end, the WPG and the Building Energy Act are interlinked. | regulation  |
+|  national | Heat Planning and Decarbonisation of Heating Networks Act (WPG) | The law lays the foundations for the introduction of binding and comprehensive heat planning in Germany. The aim is to convert the heat supply to greenhouse gas neutrality in order to help achieve the German government's climate protection targets by 2045. (Source: https://www.bmwsb.bund.de/SharedDocs/gesetzgebungsverfahren/Webs/BMWSB/DE/kommunale-e-waermeplanung.html). To this end, the WPG and the Building Energy Act are interlinked. | regulation  |
 |  national | Federal subsidy for efficient heating networks (BEW) | The BEW promotes the construction of new heating grids with a high proportion of renewable energies and the decarbonisation of existing grids. The BEW creates incentives for heating network operators to invest in the construction of new heating networks with a high proportion of renewable energies and to decarbonise existing networks. The funding pursues a systemic approach that focuses on the heating network as a whole and aims to reliably support the time-consuming conversion of existing networks to | regulation  |
 City of Leipzig
 Climate Neutrality Action Plan
@@ -800,7 +800,7 @@ At the same time, the area targets for wind energy are being defined at regional
 With the aim of realising the vision of zero waste - i.e. the preservation of all resources through responsible production, consumption, reuse and recovery of products, packaging and materials without incineration and without disposal on land, in water or in the air that endangers the environment or human health - in the city of Leipzig, the municipal cleaning entity is developing a city-wide zero waste strategy and concrete measures in a zero waste concept.
 City of Leipzig
 Climate Neutrality Action Plan
-C
+5
 
 The core objectives of the Zero Waste Strategy for the City of Leipzig are:
 
@@ -1271,23 +1271,24 @@ Climate Neutrality Action Plan Guidance
 |  Minority Strategy 2030 |   | Development of a Municipal cycling development plan 2030+ | Expansion of bicycle lanes and public parking capacities (goal: 23%; cycling traffic) |  |   |
 |  Network extension tramway district of Thekla |   | Network extension of bus lines | Explanation of bus lines |  |   |
 |  Procurement of 17 new e-buses |   | 400 new stations for intermodal mobility | 400 new stations for intermodal mobility |  |   |
-|  Efforts make specific energy/ stations for energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ |   | 80 km/h pilot search, expansion of e-charging stations | 40 km/h pilot search, expansion of e-charging stations |  |   |
-|  ENERGY AND HEAT SUPPLY |   | Construction of a solar thermal plant in Leipzig Lauren | Expansion district heating network | Continued expansion district heating network | KSA2 ENERGY AND HEAT SUPPLY  |
-|  Development of a concept for municipal energy/heat supply |   | Construction of the PV plant: Seelanzen-Energy Mountain (30 MW) | Expansion of renewable energies: construction of at least 400 MW of electricity generation capacity | Continued expansion of renewable energies (PV, wind) including storage possibilities | V5.1 Decentralization of existing electricity and heat supply through decentralized SE expansion as well as in open space for large-scale PV and solar thermal systems.  |
-|  Construction of a heat storage facility in Leipzig-West |   | Development and piloting of virtual power plant for demand-driven energy supply | Expansion of energy storage capacities for a secure and ecological energy supply | Leaping is a "hydrogen city" | V5.2 Green hydrogen closes the gap to carbon-neutral mobility and heat supply.  |
-|  Construction of a heat storage facility in Leipzig-West |   | Construction of a heat storage facility in Leipzig-West | Development of a hydrogen infrastructure |  |   |
-|  INSTAINABLE LAND USE |   | Identification and utilization of area potentials e.g. for the generation of RE electricity/heat; mobility/trampart, blue-green infrastructure | Continuous evaluation of the plie (advantages of competing land-use potentials | Climate protection in urban development and urban planning | KSA3 SUSTAINABLE LAND-USE  |
-|  CLIMATE-PRIENDLY UREEN-BLUE INFRASTRUCTURE |   | Development of a digital green space management system | Expansion/Strengthen biotope network in Leipzig/Expanding forest areas | Expansion/Strengthen biotope network in Leipzig/Expanding forest areas | V5.1 Leaping expanded its green spaces and water bodies for the preservation of livelihood.  |
-|  CLIMATE-PRIENDLY URBAN INSTRUCT DEVELOPMENT |   | Development of a standard model for climate-friendly neighborhood development Urban Data Platform and Digital Tools for Climate-friendly urban development | Climate protection in urban development and urban planning | Climate-friendly redevelopment of urban quarters | KSA5 CLIMATE-FRIENDLY URBAN DISTRICT DEV.  |
-|  CLIMATE-MINITIAL CITY ADMINISTRATION |   | Concept "Climate Neutral City Administration 2030" | Energies: reto-holistic and energy saving measures in municipal buildings and production of renewable energy | Poly decortesized municipal building mesh | V5.1.1 Leaping integrated climate protection and adaptation measures into sustainable, energy-efficient, and climate- smart urban district development.  |
-|  Climate and environmental protection |   | Estimating the "grey energy" for municipal construction projects, increasing renovation rate | Constitutional of greenhouse gas accounting in procurement | Eigenplan and identification of the vehicle | KSA6 CLIMATE-NEUTRAL CITY ADMINISTRATION  |
-|  Climate and environmental protection |   | Development of a municipal energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ | Eigenplan and identification of the vehicle | Eigenplan and identification of the vehicle | V5.1.1 Sustainable energy-efficient and energy-efficient energy-efficient energy-efficient energy-efficient energy-efficient energy-efficient energy-efficient energy-efficient energy-efficient energy-efficient energy-efficient energy-efficient energy-efficient energy-efficient energy-efficient energy  |
-|  REGIONAL CIRCULAR ECONOMY |   | Development of a municipal Zero Waste Strategy | Implementation of zero waste management in the city | Zero Waste City certificate | V5.1.1 Sustainable energy-efficient and energy-efficient energy-efficient energy-efficient energy-efficient energy-efficient energy-efficient energy-efficient energy-efficient energy-efficient energy-efficient energy  |
-|  INSTAINABLE NUTRITION |   | Development of a municipal nutrition strategy | Diverse projects and activities for implementing the nutrition strategy, e.g. urban orchards and vegetable fields; Awareness-raising and information measures on conscious consumption and food waste | Changing activities to support the transition of the local food system | KSA3 SUSTAINABLE NUTRITION  |
-|  CLIMATE PROTECTION |   | Development of a municipal nutrition strategy | Diverse projects and activities for implementing the nutrition strategy, e.g. urban orchards and vegetable fields; Awareness-raising and information measures on conscious consumption and food waste | Changing activities to support the transition of the local food system | V5.1.1 Sustainable energy-efficient and energy-efficient energy-efficient energy-efficient energy-efficient energy-efficient energy-efficient energy-efficient energy  |
-|  CLIMATE PROTECTION DISTIATIVE |   | Development of the Climate City Contract | Implementation and update of Climate City Contract |  | KSA9 CLIMATE EDUCATION  |
-|  CLIMATE PROTECTION DISTIATIVE |   | Networking and encouraging climate action | Networking and encouraging climate action |  | V5.1.1 Climate action is the overriding common objective in Leipzig's urban society.  |
-|  CLIMATE PROTECTION DISTIATIVE |   | Initiation of new funding and supporting programs for SMEs | Initiation of new funding and supporting programs for SMEs |  | V5.1.1 Climate-friendly behaviour is the new normal.  |
+|  Efforts make specific energy/ stations for energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ |   | 60 km/h pilot project to improve the energy efficiency of the city's energy supply | 40 km/h pilot project, expansion of e-charging stations |  |   |
+|  ENERGY AND HEAT SUPPLY |   | Construction of a solar thermal plant in Leining Lacons | Expansion district heating network | Continued expansion district heating network | KSA2 ENERGY AND HEAT SUPPLY  |
+|  Development of a concept for municipal energy/heat supply |   | Construction of the PV plant: Seekausen Energy Mountain (30 MW) | Expansion of renewable energies: construction of at least 400 MW of electricity generation capacity | Continued expansion of renewable energies (PV, wind) including storage possibilities | V5.1 Decentralization of existing electricity and heat supply through decentralized SE expansion as well as in open space for large-scale PV and solar thermal systems.  |
+|  Construction of a heat storage facility in Leining West |   | Development and piloting of virtual power plant for demand-driven energy supply | Expansion of energy storage capacities for a secure and ecological energy supply | Leining is a "hydrogen city" | V5.2 Green hydrogen closes the gap to carbon-neutral mobility and heat supply.  |
+|  Construction of a heat storage facility in Leining West |   | Construction of a heat storage facility in Leining West | Development of a hydrogen infrastructure |  |   |
+|  INSTAINABLE LAND USE |   | Identification and utilization of area potentials e.g. for the generation of RE electricity/heat, mobility/transport, blue-green infrastructure | Continuous evaluation of the plie (advantages of competing land-use potentials | Climate protection in urban development and urban planning | KSA3 SUSTAINABLE LAND-USE  |
+|  CLIMATE-PRIENDLY UREEN-BLUE INFRASTRUCTURE |   | Development of a digital green space management system | Expansion/Strengthen biotope network in Leining/Espanding forest areas | Expansion/Strengthen biotope network in Leining/Espanding forest areas | V5.1 Leining expanded its green spaces and water bodies for the preservation of livelihood.  |
+|  CLIMATE-PRIENDLY URBAN INSTRUCT DEVELOPMENT |   | Development of a standard model for climate-friendly neighborhood development Urban Data Platform and Digital Twin for Climate-friendly urban development | Climate protection in urban development and urban planning | Climate-friendly redevelopment of urban quarters | KSA5 CLIMATE-FRIENDLY URBAN DISTRICT DEV.  |
+|  CLIMATE-MINITIAL CITY ADMINISTRATION |   | Concept "Climate Neutral City Administration 2030" | Energies: reto-holistic and energy saving measures in municipal buildings and production of renewable energy | Poly decortesized municipal building mesh | V5.1. Leining integrated climate protection and adaptation measures into sustainable, energy-efficient, and climate- smart urban district development.  |
+|  Climate and environmental protection |   | Estimating the "grey energy" for municipal construction projects, increasing renovation rate | Conduction of greenhouse gas accounting in procurement | Eigenplan and electrification of the vehicle | KSA6 CLIMATE-NEUTRAL CITY ADMINISTRATION  |
+|  Climate and environmental protection |   | Development of a municipal energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ energy/ | Conduction of greenhouse gas accounting in procurement | Eigenplan and electrification of the vehicle | V5.1. Sustainability as the top priority goal is reflected in the regulatory framework, for example, in laws and strategies.  |
+|  REGIONAL CIRCULAR ECONOMY |   | Development of a municipal ECO/eco 2030 | Development of a municipal ECO/eco 2030 | Development of ECO/eco 2030 | KSA7 CIRCULAR ECONOMY  |
+|  INSTAINABLE NUTRITION |   | Development of a municipal nutrition strategy | Diverse projects and activities for implementing the nutrition strategy, e.g. urban orchards and vegetable fields; Awareness-raising and information measures on conscious consumption and food waste | Ongoing activities to support the transition of the local food system | V5.1. Sustainable configuration of the urban food landscape for food and climate justice.  |
+|  INSTAINABLE NUTRITION |   | Development of a municipal nutrition strategy | Diverse projects and activities for implementing the nutrition strategy, e.g. urban orchards and vegetable fields; Awareness-raising and information measures on conscious consumption and food waste | Ongoing activities to support the transition of the local food system | KSA9 CULTURATE EDUCATION  |
+|  CLIMATE EDUCATION |   | Climate education campaign: Information and awareness-raising services, events, campaigns, and advice for businesses and private households. |  |  | V5.1 Climate action is the overriding common objective in Leining's urban society.  |
+|  CLIMATE PROTECTION INITIATIVE |   | Development of the Climate City Contract | Implementation and update of Climate City Contract |  | V5.1 Climate-friendly behaviour is the new normal.  |
+|  CLIMATE PROTECTION INITIATIVE |   | Networking and encouraging climate action | Networking and encouraging climate action |  | KSA10 CLIMATE PROTECTION INITIATIVE  |
+|  CLIMATE PROTECTION INITIATIVE |   | Initiation of new funding and supporting programs for SMEs | Initiation of new funding and supporting programs for SMEs |  | V5.1 V5.1 Leining's urban society is supported in implementing concrete climate protection measures and networking for even more collaborative Climate Action.  |
 Climate Neutrality Action Plan Guidance
 
 G
@@ -1701,9 +1702,7 @@ Climate Neutrality Action Plan
 |  Action outline | Action name | Combined heat and power plant Leipzig South  |
 |   |  Action type | Bridging technology, cornerstone for hydrogen utilisation  |
 |   |  Action description | The combination of gas turbines with state-of-the-art burner technology and hot water generators plus associated catalytic converters enable operation with minimal nitrogen oxide and carbon monoxide emissions.
-
 Thanks to the rigid coupling of the gas turbines with the hot water generators, the power plant is only in operation when the heat generated in Leipzig is being utilised. For the most part, the new power plant is only utilised when renewable energies from wind and sun are not available in sufficient quantities.
-
 The gas turbines used can burn high proportions of green hydrogen, so that in future, electricity and heat generation can be switched completely to renewable technologies.  |
 |  Reference to impact pathway | Field of action | Energy systems  |
 |   |  Systemic lever | Technology and Infrastructure  |
@@ -1828,9 +1827,13 @@ Funding organisations
 Landowners (>500 parcels)
 Other Municipalities  |
 |   |  Comments on implementation - consider mentioning resources, timelines, milestones | Planning approval decision targeted for 2024 Construction phase 2025-27 with commissioning from Q4/27  |
-City of Leipzig
-Climate Neutrality Action Plan
 0
+
+City of Leipzig
+
+Climate Neutrality Action Plan
+
+#
 
 Impact &amp; cost
 
@@ -1850,14 +1853,17 @@ Climate Neutrality Action Plan
 |  Action outline | Action name | Solar thermal energy Lausen  |
 | --- | --- | --- |
 |   |  Action type | Sustainable energy production  |
-|   |  Action description | Step by step, renewable energy systems will provide more energy for the city's district heating supply. An important part of this is Germany's largest solar thermal plant, which has now been given the go-ahead by Leipzig municipal utilities. Around 65,000 m2 gross collector area on around 10 ha are planned, which are connected to the district heating system. A flock of sheep will be used on site to cultivate the greenery under and between the collectors with native flower mixtures and the extensive planting of shrubs, hedges and fruit trees.  |
+|   |  Action description | Step by step, renewable energy systems will provide more energy for the city's district heating supply. An important part of this is Germany's largest solar thermal plant, which has now been given the go-ahead by Leipzig municipal utilities.
+Around 65,000 m2 gross collector area on around 10 ha are planned, which are connected to the district heating system.
+A flock of sheep will be used on site to cultivate the greenery under and between the collectors with native flower mixtures and the extensive planting of shrubs, hedges and fruit trees.  |
 |  Reference to impact pathway | Field of action | Energy systems  |
 |   |  Systemic lever | Technology and Infrastructure  |
 |   |  Outcome (according to module B-1.1) | not applicable  |
 |  Implementation | Responsible bodies/person for implementation | Leipzig municipal utilities  |
 |   |  Action scale & addressed entities | City-wide scale  |
 |   |  Involved stakeholders | Ritter XL Solar Administration L-Group  |
-|   |  Comments on implementation - consider mentioning resources, timelines, milestones | Construction started at the beginning of 2024 The plant is supposed to be completed at the end of 2025/beginning of 2026  |
+|   |  Comments on implementation - consider mentioning resources, timelines, milestones | Construction started at the beginning of 2024
+The plant is supposed to be completed at the end of 2025/beginning of 2026  |
 |  Impact & cost | Generated renewable energy (if applicable) | Approx. 26 GWh/year  |
 |   |  Removed/substituted energy, volume, or fuel type | Lignite, natural gas  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | Around 7,000 tonnes of CO2 eq. avoided  |
@@ -2008,19 +2014,19 @@ City of Leipzig
 Climate Neutrality Action Plan
 9
 
-|  11 Identifying and Utilising Land Potential for Renewable Energy-Based Power and Heat Generation  |   |   |
-| --- | --- | --- |
-|  Action outline | Action name | Identifying and Utilising Land Potential for Renewable Energy-Based Power and Heat Generation  |
-|  Action outline | Action type | Research & Concept  |
-|   |  Action description | In order to develop a city-wide heating strategy and the ongoing search by Leipzig municipal utilities for locations for the generation of electricity from renewable energies urgently the preparation of an energy concept (I.1), including a city-wide area concept for renewable energies is implemented. The area analysis should prioritise the possibilities for energy generation on existing buildings/parking spaces etc.. Only then should previously undeveloped but currently unused areas (e.g. derelict land, landfill sites) be included in the analysis. The suitability of agricultural land needs to be considered in the context of other land requirements of the growing city, e.g. for new housing, for new industrial estates, for organic farming, for mitigation measures. As a result, an integrated city-wide land use concept is required to provide the basis for the phasing out of fossil fuel energy generation in the medium to long term. In this context, options for energy production outside the city of Leipzig should also be considered).  |
-|   |  Field of action | Energy systems  |
-|  Implementation | Systemic lever | Technology & infrastructure  |
-|   |  Outcome (according to module B-1.1) | not applicable  |
-|   |  Responsible bodies/person for implementation | Office for City Planning, Office for Sustainable Development and Climate Protection Office for Sustainable Development and Climate Protection, Mayor's Department II Mayor's Department, Office for Municipal Real Estate, Leipzig municipal utilities  |
-|  Implementing | Action scale & addressed entities | City-wide scale  |
-|   |  Involved stakeholders | Administration
-L-Group  |
-|   |  Comments on implementation - consider mentioning resources, timelines, milestones | • Potential analysis of suitable and available areas for the utilisation of renewable energies  |
+| 11 Identifying and Utilising Land Potential for Renewable Energy-Based Power and Heat Generation |
+| --- |
+| Action outline | Action name | Identifying and Utilising Land Potential for Renewable Energy-Based Power and Heat Generation |
+| Reference to impact pathway | Action type | Research & Concept |
+| Action description | In order to develop a city-wide heating strategy and the ongoing search by Leipzig municipal utilities for locations for the generation of electricity from renewable energies urgently the preparation of an energy concept (I.1), including a city-wide area concept for renewable energies is implemented. The area analysis should prioritise the possibilities for energy generation on existing buildings/parking spaces etc.. Only then should previously undeveloped but currently unused areas (e.g. derelict land, landfill sites) be included in the analysis. The suitability of agricultural land needs to be considered in the context of other land requirements of the growing city, e.g. for new housing, for new industrial estates, for organic farming, for mitigation measures. As a result, an integrated city-wide land use concept is required to provide the basis for the phasing out of fossil fuel energy generation in the medium to long term. In this context, options for energy production outside the city of Leipzig should also be considered). |
+| Field of action | Energy systems |
+| Implementation | Systemic lever | Technology & infrastructure |
+| Outcome (according to module B-1.1) | not applicable |
+| Comments on implementation - consider mentioning resources, timelines, milestones | Responsible bodies/person for implementation | Office for City Planning, Office for Sustainable Development and Climate Protection Office for Sustainable Development and Climate Protection, Mayor's Department II Mayor's Department, Office for Municipal Real Estate, Leipzig municipal utilities |
+| Action scale & addressed entities | City-wide scale |
+| Involved stakeholders | Administration
+L-Group |
+| Comments on implementation - consider mentioning resources, timelines, milestones | • Potential analysis of suitable and available areas for the utilisation of renewable energies |
 City of Leipzig
 Climate Neutrality Action Plan
 0
@@ -2183,10 +2189,12 @@ Climate Neutrality Action Plan
 
 9
 
-|  16 Extension of tram network  |   |   |
-| --- | --- | --- |
-|  (Fill out one sheet per intervention/project)  |   |   |
+# 16 Extension of tram network
+
+(Fill out one sheet per intervention/project)
+
 |  Action outline | Action name | Extension of tram network  |
+| --- | --- | --- |
 |   |  Action type | Changing the modal split  |
 |   |  Action description | The measure connects new residential areas to an attractive public transport system and is the basis for increasing the share of public transport in transport choices and passenger numbers. Efficient, barrier-free public transport ensures the participation of all social groups, is conducive to equal opportunities and increases the attractiveness of the city
 
@@ -2263,15 +2271,17 @@ Climate Neutrality Action Plan
 |   |  Involved stakeholders | Administration
 L-Group  |
 |   |  Comments on implementation - consider mentioning | -  |
+City of Leipzig
+Climate Neutrality Action Plan
 4
 
 |   | resources, timelines, milestones |   |
 | --- | --- | --- |
 |  Impact & cost | Generated renewable energy (if applicable) | not applicable  |
-|   | Removed/substituted energy, volume, or fuel type | not applicable  |
-|   | GHG emissions reduction estimate (total) per emission source sector | not quantifiable  |
-|   | GHG emissions compensated (natural or technological sinks) | not quantifiable  |
-|   | Total costs and costs by CO2e unit | 225,000 Euro/year  |
+|   |  Removed/substituted energy, volume, or fuel type | not applicable  |
+|   |  GHG emissions reduction estimate (total) per emission source sector | not quantifiable  |
+|   |  GHG emissions compensated (natural or technological sinks) | not quantifiable  |
+|   |  Total costs and costs by CO2e unit | 225,000 Euro/year  |
 City of Leipzig
 Climate Neutrality Action Plan
 5
@@ -2486,9 +2496,7 @@ Climate Neutrality Action Plan
 |   |  GHG emissions compensated (natural or technological sinks) | not quantifiable  |
 |   |  Total costs and costs by CO2e unit | not quantifiable  |
 City of Leipzig
-
 Climate Neutrality Action Plan
-
 6
 
 |  26 Integration of Mobility Concepts for low-car districts  |   |   |
@@ -2674,7 +2682,9 @@ Climate Neutrality Action Plan
 |   |  GHG emissions compensated (natural or technological sinks) | not quantifiable  |
 |   |  Total costs and costs by CO2e unit | not quantifiable  |
 City of Leipzig
+
 Climate Neutrality Action Plan
+
 6
 
 # 31 Towards a circular economy
@@ -3232,10 +3242,9 @@ Climate Neutrality Action Plan
 
 4
 
-# 46 Integrated Industrial Development Leipzig North
-
-|  Action outline | Action name | Sustainable industrial estate and transport development in Leipzig's northern region  |
+|  46 Integrated Industrial Development Leipzig North  |   |   |
 | --- | --- | --- |
+|  Action outline | Action name | Sustainable industrial estate and transport development in Leipzig's northern region  |
 |   |  Action type | Sustainable urban development  |
 |   |  Action description | With the establishment of large companies, the northern area of Leipzig has developed into one of the most important and dynamic business locations in the metropolitan region of central Germany. Against this backdrop, it is important to ensure the long-term sustainable development of Leipzig's northern region and to harmonise economic interests, the design of future mobility and climate protection.  |
 |  Reference to impact pathway | Field of action | Sustainable urban development  |
@@ -3731,7 +3740,7 @@ B-2.5: Summary of action fields - private actors
 |  Total | 557.284 (Total amount may differ from 100% due to rounding)  |
 City of Leipzig
 Climate Neutrality Action Plan
-C
+9
 
 # B-2 .6: Summary strategy for residual emissions
 
@@ -3746,8 +3755,6 @@ The monitoring of the Climate City Contract is based on a holistic approach that
 Findings from other cities as well as national and international bodies (German Association of Cities, Eurocities, Climate Alliance, EU Mission 100 Climate Neutral and Smart Cities, StronGER Cities, Smart City Community model projects) are also incorporated to ensure that Leipzig is always at the cutting edge of technological, socio-political and scientific developments.
 
 key indicators were selected and are explained below. The City of Leipzig does not use any indicators from the recognised platforms (CDP/ SCIS/ Covenant of OBMs) to monitor its climate protection measures.
-
-9
 Climate Neutrality Action Plan Guidance
 
 Key indicators - overview
@@ -3969,7 +3976,7 @@ Climate Neutrality Action Plan
 | --- | --- |
 |  Indicator Unit | kWh  |
 |  Definition of | A measured trend of the energy a resident consumes in Kwh. Comparisons can be made on a quarterly or yearly basis.  |
-|  Calculation | total energy demand devided by number of inhabitants  |
+|  Calculation | total energy demand divided by number of inhabitants  |
 |  Indicator Context |   |
 |  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | no  |
 |  If yes, which emission source sectors does it measure? | Stationary energy  |
@@ -4377,29 +4384,29 @@ Climate Neutrality Action Plan
 |  Calculation | Average users of the EnAct4CleanCities Pilot City Mission project were used to calculate the number of people involved in the capacity building activities (i.e., awareness campaigns for increasing awareness of social innovation for climate neutrality (citizens, urban stakeholders, etc.).  |
 |  Calculation | Average users of the EnAct4CleanCities Pilot City Mission project were used to calculate the number of people involved in the capacity building activities (i.e., awareness campaigns for increasing awareness of social innovation for climate neutrality (citizens, urban stakeholders, etc.).  |
 City of Leipzig
-
 Climate Neutrality Action Plan
-
-#
+C
 
 |  Calculation | Number of people involved in EnAct 4CleanCities acitivites  |
 | --- | --- |
-|  Indicator Context |   |
+|  **Indicator Context** |   |
 |  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | no  |
 |  If yes, which emission source sectors does it measure? |   |
 |  Does the indicator measure indirect impacts (i.e., co-benefits)? | no  |
 |  If yes, which co-benefit does it measure? | Digital tools and services as a way to engage and activate citizens towards climate friendly behavior  |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | [yes/no] yes  |
 |  If yes, which action and impact pathway is it relevant for? | other/engagement  |
-|  Data requirements |   |
+|  **Data requirements** |   |
 |  Expected data source | Tbd. E.g. participants in campaigns, no. of downloads of climate challenges in Leipzig App  |
 |  Is the data source local or regional/national? | local  |
 |  Expected availability | To be confirmed  |
 |  Suggested collection interval | Once, 2025 (project duration 2024-2026)  |
 
-# Timeline:
+## Timeline:
 
 An update of the CCC is planned every two years. The CCC will be monitored in connection with the preparation of the biennial implementation report on the ECSP. It will therefore be carried out for the first time in mid-2026.
+
+9
 City of Leipzig
 Climate Neutrality Action Plan
 C
@@ -5007,11 +5014,16 @@ responsible land use by striving for net zero sealing by 2030,
 climate-neutral energy and heat supply and
 a regional circular economy, which is supported by our zero-waste strategy and our local nutrition strategy.
 City of Leipzig
-Climate neutrality commitments 2030
+
+Climate neutrality commitments
+
+0
+
+C
 
 Our Sustainable Mobility Strategy 2030 focuses on eco-mobility and our Green City Masterplan ensures a healthy living environment characterized by our vibrant green-blue infrastructure. These instruments and plans allow us to promote our rich biodiversity, become climate resilient, ensure socio-spatial access for all and support active mobility and healthy people. As a city administration, we support local projects in our society through our climate protection campaign with advice and funding, promote climate education and lead by example with our concept for a climate-neutral city administration in 2035. This concept aims to raise awareness and to train employees, to transform our procurement system, to convert our vehicle fleet and renovate our municipal buildings with a particular focus on our renovation roadmap for daycare and school buildings.
 
-## GOVERNANCE
+# GOVERNANCE
 
 To accelerate the implementation process, the Office for Sustainable Development and Climate Protection (RNK) was founded in 2020 following the declaration of climate emergency in 2019. The RNK coordinates the city's climate protection process in a co-creative process involving political stakeholders, the scientific community, businesses, civil society and citizens. The backbone is formed by the Climate Protection Core Team, which assembles ten climate protection managers in the Departments of Urban Development, Mobility, Building Management, Urban Greenery and Water, Digitalisation and Internal Organisation, Sport, Environmental Protection, Economic Development, Strategic Cultural Policy and the Department for Sustainable Development and Climate Protection. The core team implements cross-sectional, integrated and agile working methods on climate protection and sustainability issues throughout the administration.
 

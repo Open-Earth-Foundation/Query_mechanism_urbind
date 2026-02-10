@@ -5,6 +5,7 @@ import logging
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
+from collections.abc import Mapping
 
 from app.utils.paths import RunPaths
 
@@ -27,6 +28,7 @@ class RunLogger:
         self.context_bundle: dict[str, Any] = {
             "sql": None,
             "markdown": None,
+            "research_question": question,
             "drafts": [],
             "final": None,
         }
@@ -94,6 +96,77 @@ class RunLogger:
             return f"(omitted {size} bytes; see {path})"
         return path.read_text(encoding="utf-8")
 
+    def _extract_usage_value(self, usage: Mapping[str, Any], keys: list[str]) -> int | None:
+        for key in keys:
+            value = usage.get(key)
+            if isinstance(value, (int, float)):
+                return int(value)
+        return None
+
+    def _summarize_llm_usage(self) -> dict[str, Any] | None:
+        run_log_path = self.run_paths.base_dir / "run.log"
+        if not run_log_path.exists():
+            return None
+
+        totals = {"total_tokens": 0, "input_tokens": 0, "output_tokens": 0}
+        per_agent: dict[str, dict[str, int]] = {}
+        calls = 0
+
+        with run_log_path.open("r", encoding="utf-8", errors="replace") as handle:
+            for line in handle:
+                if "LLM_USAGE " not in line:
+                    continue
+                payload = line.split("LLM_USAGE ", 1)[1].strip()
+                try:
+                    data = json.loads(payload)
+                except json.JSONDecodeError:
+                    continue
+                usage = data.get("usage")
+                if not isinstance(usage, Mapping):
+                    continue
+                agent = str(data.get("agent") or "unknown")
+                input_tokens = self._extract_usage_value(
+                    usage, ["input_tokens", "prompt_tokens"]
+                )
+                output_tokens = self._extract_usage_value(
+                    usage, ["output_tokens", "completion_tokens"]
+                )
+                total_tokens = self._extract_usage_value(
+                    usage, ["total_tokens", "total"]
+                )
+
+                if total_tokens is None and input_tokens is not None and output_tokens is not None:
+                    total_tokens = input_tokens + output_tokens
+
+                if total_tokens is None:
+                    continue
+
+                calls += 1
+                totals["total_tokens"] += total_tokens
+                if input_tokens is not None:
+                    totals["input_tokens"] += input_tokens
+                if output_tokens is not None:
+                    totals["output_tokens"] += output_tokens
+
+                agent_totals = per_agent.setdefault(
+                    agent,
+                    {"total_tokens": 0, "input_tokens": 0, "output_tokens": 0},
+                )
+                agent_totals["total_tokens"] += total_tokens
+                if input_tokens is not None:
+                    agent_totals["input_tokens"] += input_tokens
+                if output_tokens is not None:
+                    agent_totals["output_tokens"] += output_tokens
+
+        if calls == 0:
+            return None
+
+        return {
+            "calls": calls,
+            "totals": totals,
+            "per_agent": per_agent,
+        }
+
     def write_text_log(self) -> None:
         lines: list[str] = []
         lines.append("RUN SUMMARY")
@@ -103,6 +176,9 @@ class RunLogger:
         lines.append(f"Finish reason: {self.run_log.get('finish_reason', 'n/a')}")
         lines.append(f"Started: {self.run_log.get('started_at')}")
         lines.append(f"Completed: {self.run_log.get('completed_at')}")
+        llm_usage = self.run_log.get("llm_usage")
+        if llm_usage:
+            lines.append(f"LLM Usage: {json.dumps(llm_usage, ensure_ascii=True)}")
         lines.append("")
 
         lines.append("ARTIFACTS")
@@ -202,6 +278,10 @@ class RunLogger:
         self.context_bundle["markdown"] = markdown_payload
         self.write_context_bundle()
 
+    def update_research_question(self, research_question: str) -> None:
+        self.context_bundle["research_question"] = research_question
+        self.write_context_bundle()
+
     def finalize(
         self,
         status: str,
@@ -212,6 +292,10 @@ class RunLogger:
         self.run_log["completed_at"] = datetime.now(timezone.utc).isoformat()
         if finish_reason:
             self.run_log["finish_reason"] = finish_reason
+        usage_summary = self._summarize_llm_usage()
+        if usage_summary:
+            self.run_log["llm_usage"] = usage_summary
+            logger.info("LLM_USAGE_SUMMARY %s", json.dumps(usage_summary, ensure_ascii=True))
         self.run_log["artifacts"]["run_summary"] = str(self.run_paths.run_summary)
         if final_output_path:
             self.run_log["artifacts"]["final_output"] = str(final_output_path)

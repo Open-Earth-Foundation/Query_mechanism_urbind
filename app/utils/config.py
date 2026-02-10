@@ -37,6 +37,8 @@ class MarkdownResearcherConfig(AgentConfig):
     max_retries: int = 2
     retry_base_seconds: float = 0.8
     retry_max_seconds: float = 6.0
+    request_backoff_base_seconds: float = 2.0
+    request_backoff_max_seconds: float = 10.0
 
 
 class AppConfig(BaseModel):
@@ -51,6 +53,18 @@ class AppConfig(BaseModel):
     source_db_path: Path = Field(default_factory=lambda: Path("data/source.db"))
     source_db_url: str | None = None
     markdown_dir: Path = Field(default_factory=lambda: Path("documents"))
+    enable_sql: bool = False
+
+
+def _parse_env_bool(value: str | None) -> bool | None:
+    if value is None:
+        return None
+    normalized = value.strip().lower()
+    if normalized in {"1", "true", "yes", "y", "on"}:
+        return True
+    if normalized in {"0", "false", "no", "n", "off"}:
+        return False
+    return None
 
 
 def load_config(config_path: Optional[Path] = None) -> AppConfig:
@@ -67,6 +81,7 @@ def load_config(config_path: Optional[Path] = None) -> AppConfig:
     markdown_dir = os.getenv("MARKDOWN_DIR")
     openrouter_base_url = os.getenv("OPENROUTER_BASE_URL")
     database_url = os.getenv("DATABASE_URL")
+    enable_sql = os.getenv("ENABLE_SQL")
 
     if runs_dir:
         config.runs_dir = Path(runs_dir)
@@ -78,6 +93,10 @@ def load_config(config_path: Optional[Path] = None) -> AppConfig:
         config.openrouter_base_url = openrouter_base_url
     if database_url:
         config.source_db_url = database_url
+    if enable_sql is not None:
+        parsed = _parse_env_bool(enable_sql)
+        if parsed is not None:
+            config.enable_sql = parsed
 
     return config
 

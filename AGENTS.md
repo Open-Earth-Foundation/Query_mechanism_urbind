@@ -26,7 +26,7 @@ Every repo must have a `README.md` with:
 Every script intended to be executed must include a **top-level docstring** describing:
 
 - What the script does (brief)
-- Inputs (files, env vars, CLI args)
+- Inputs (files, env vars, CLI args) with **enough detail to be self-explanatory**
 - Outputs (files, stdout, DB writes, API responses)
 - Usage examples (run as a module)
 
@@ -38,6 +38,11 @@ Brief: <one-liner description>
 
 Inputs:
 - <list inputs, files, env vars, args>
+- CLI args: list each `--flag` with a short description of what it does and the expected format.
+  - Example: `--input-dir`: Directory containing JSON files produced by the previous step.
+  - Example: `--mode`: `validate` (no writes) or `apply` (writes enabled).
+- Files/paths: describe expected structure/patterns (e.g. "directory of JSON lists").
+- Env vars: list required env vars and what they control (do not include secrets).
 
 Outputs:
 - <files, stdout, DB writes, API responses, etc.>
@@ -171,6 +176,32 @@ __all__ = ["setup_logger"]
 
 - Strictly use **absolute imports**, for example `from utils.foo import bar`. Do not use relative imports.
 - Always run scripts as modules using `python -m ...` from the project root.
+- **Never use wildcard imports** (`from module import *`). Always explicitly name the functions, classes, or objects you are importing.
+  - Bad: `from utils.helpers import *`
+  - Good: `from utils.helpers import parse_config, validate_input`
+
+## Cursor Agent Skills (project-level)
+
+This repo includes **project-level Cursor skills** under `.cursor/skills/` (version-controlled). These skills are available to anyone who checks out the repository and opens it in Cursor. See [Cursor Skills docs](https://cursor.com/docs/context/skills).
+
+Skills included:
+
+- `simplify-after-change`: **Mandatory** after any code change. Simplifies the changed code, removes unnecessary complexity, and keeps behavior identical.
+- `docs-after-change`: **Mandatory** after any code change. Keeps docstrings/README/architecture accurate.
+- `script-quality-gate`: Use when adding/changing a runnable script or CLI entrypoint.
+- `prompt-schema-authoring`: Use when creating/updating agent prompts to enforce `<role>/<task>/<input>/<output>` structure and model-aligned output contracts.
+- `repo-doc-audit`: One-off full repo documentation audit (**manual** via `/repo-doc-audit`).
+
+### Mandatory after code changes
+
+After **any code change** (add/edit/delete/rename), you must apply BOTH skills before ending your turn:
+
+1. `simplify-after-change`
+2. `docs-after-change`
+
+If you intentionally skip a mandatory skill, leave a one-line justification in your response message.
+
+---
 
 ### Prefer clarity over cleverness
 
