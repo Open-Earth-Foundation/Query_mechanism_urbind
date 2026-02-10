@@ -31,7 +31,6 @@ from app.services.agents import (
 )
 from app.utils.config import AppConfig
 from app.utils.prompts import load_prompt
-from app.utils.tokenization import get_max_input_tokens
 
 
 logger = logging.getLogger(__name__)
@@ -97,12 +96,6 @@ def extract_markdown_excerpts(
 
     # Group documents by city
     documents_by_city = split_documents_by_city(documents)
-    max_input_tokens = get_max_input_tokens(
-        config.markdown_researcher.context_window_tokens,
-        config.markdown_researcher.max_output_tokens,
-        config.markdown_researcher.input_token_reserve,
-        config.markdown_researcher.max_input_tokens,
-    )
 
     collected: list[MarkdownExcerpt] = []
     seen: set[tuple[str, str, str]] = set()
@@ -141,8 +134,6 @@ def extract_markdown_excerpts(
             "question": question,
             "city_name": city_name,
             "documents": batch,
-            "context_window_tokens": config.markdown_researcher.context_window_tokens,
-            "max_input_tokens": max_input_tokens,
         }
         max_retries = max(config.markdown_researcher.max_retries, 0)
         retry_base = max(config.markdown_researcher.retry_base_seconds, 0.1)
@@ -313,7 +304,7 @@ def extract_markdown_excerpts(
                         key = (
                             excerpt.city_name.strip().lower(),
                             excerpt.snippet.strip(),
-                            excerpt.answer.strip(),
+                            excerpt.partial_answer.strip(),
                         )
                         if key not in seen:
                             seen.add(key)

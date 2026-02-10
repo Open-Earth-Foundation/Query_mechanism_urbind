@@ -480,23 +480,8 @@ def _run_orchestration_loop(
                 return result
             continue
 
-        # Handle markdown decision (disabled after initial run)
-        if decision.action == "run_markdown":
-            logger.info(
-                "Orchestrator requested markdown re-run; skipping and writing with existing context."
-            )
-            result = handle_write_decision(
-                question,
-                context_bundle,
-                paths,
-                run_logger,
-                run_log_handler,
-                writer_func,
-                config,
-                api_key,
-                log_llm_payload=log_llm_payload,
-            )
-            return result
+        # run_markdown is intentionally disabled in current architecture.
+        # Legacy run_markdown outputs are normalized to "write" in OrchestratorDecision.
 
         # Handle stop decision
         if decision.action == "stop":

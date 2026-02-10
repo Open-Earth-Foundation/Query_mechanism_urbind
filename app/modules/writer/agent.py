@@ -9,7 +9,6 @@ from app.modules.writer.models import WriterOutput
 from app.services.agents import build_model_settings, build_openrouter_model, run_agent_sync
 from app.utils.config import AppConfig
 from app.utils.prompts import load_prompt
-from app.utils.tokenization import get_max_input_tokens
 
 
 def build_writer_agent(config: AppConfig, api_key: str) -> Agent:
@@ -46,13 +45,6 @@ def write_markdown(
     payload = {
         "question": question,
         "context_bundle": context_bundle,
-        "context_window_tokens": config.writer.context_window_tokens,
-        "max_input_tokens": get_max_input_tokens(
-            config.writer.context_window_tokens,
-            config.writer.max_output_tokens,
-            config.writer.input_token_reserve,
-            config.writer.max_input_tokens,
-        ),
     }
     result = run_agent_sync(
         agent,

@@ -43,7 +43,7 @@ def _stub_markdown(
     excerpt = MarkdownExcerpt(
         snippet="Sample",
         city_name="Munich",
-        answer="Stub answer",
+        partial_answer="Stub answer",
         relevant="yes",
     )
     return MarkdownResearchResult(excerpts=[excerpt])

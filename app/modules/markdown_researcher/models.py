@@ -10,7 +10,7 @@ from app.models import ErrorInfo
 class MarkdownExcerpt(BaseModel):
     snippet: str
     city_name: str
-    answer: str
+    partial_answer: str
     relevant: Literal["yes", "no"]
 
 

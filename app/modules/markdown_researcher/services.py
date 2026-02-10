@@ -56,8 +56,7 @@ def load_markdown_documents(
     - Recursively discovers ``*.md`` files under ``markdown_dir``.
     - Assigns ``city_name`` from ``Path.stem`` intentionally, so files with the
       same stem in different subdirectories map to the same logical city.
-    - Returns one entry per chunk, preserving ``path``, ``city_name``, and
-      chunk metadata.
+    - Returns one entry per chunk with ``path``, ``city_name``, and ``content``.
     """
     if not markdown_dir.exists():
         raise FileNotFoundError(f"Markdown directory not found: {markdown_dir}")
@@ -76,14 +75,11 @@ def load_markdown_documents(
         city_name = path.stem
         content = path.read_text(encoding="utf-8")
         chunks = chunk_text(content, max_chunk_tokens, config.chunk_overlap_tokens)
-        total_chunks = len(chunks)
-        for idx, chunk in enumerate(chunks, start=1):
+        for chunk in chunks:
             entry = {
                 "path": str(path),
                 "city_name": city_name,
                 "content": chunk,
-                "chunk_index": idx,
-                "chunk_count": total_chunks,
             }
             docs.append(entry)
 

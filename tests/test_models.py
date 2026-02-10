@@ -26,7 +26,7 @@ def test_model_validation() -> None:
     excerpt = MarkdownExcerpt(
         snippet="Hello",
         city_name="Munich",
-        answer="Sample answer",
+        partial_answer="Sample answer",
         relevant="yes",
     )
     md_result = MarkdownResearchResult(excerpts=[excerpt])
@@ -43,3 +43,16 @@ def test_model_validation() -> None:
 
     error = ErrorInfo(code="E1", message="fail")
     assert error.code == "E1"
+
+
+def test_markdown_excerpt_accepts_legacy_answer_field() -> None:
+    excerpt = MarkdownExcerpt.model_validate(
+        {
+            "snippet": "City report excerpt",
+            "city_name": "Munich",
+            "answer": "The answer is: Munich has 43 existing public chargers.",
+            "relevant": "yes",
+        }
+    )
+
+    assert excerpt.partial_answer == "Munich has 43 existing public chargers."
