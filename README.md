@@ -4,7 +4,7 @@ Multi-agent document builder that answers user questions by combining SQL data (
 
 ## Requirements
 
-- Python 3.10+
+- Python 3.11.x
 - Local SQLite source DB derived from `app/db_models/` (required only when SQL is enabled)
 - `OPENROUTER_API_KEY` in environment
 
