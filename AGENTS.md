@@ -17,7 +17,7 @@ This repository contains a single AI project. All contributions must optimize fo
 Every repo must have a `README.md` with:
 
 - A short description of the project
-- Install instructions using `pip` or `uv`
+- Install instructions using `uv`
 - Run instructions (local and Docker), including required environment variables, for example: `docker run ... --env-file ...`
 - Common workflows, for example running `pytest`
 
@@ -193,8 +193,13 @@ __all__ = ["setup_logger"]
 
 ## Dependencies
 
-- `pyproject.toml` is the source of truth for dependencies.
-- If you also maintain `requirements.txt` files for `pip`, they must be kept in sync with `pyproject.toml` and documented in `README.md`.
+- **`pyproject.toml` is the only source of truth for dependencies.** Do not create or maintain `requirements.txt` files.
+- Use `uv` for all dependency management:
+  - `uv add package-name` - add production dependencies
+  - `uv add --dev package-name` - add development dependencies (e.g., pytest, testing tools)
+  - `uv sync` - install all dependencies in `.venv`
+- Commit `uv.lock` to version control for reproducible builds.
+- Update `README.md` to document the `uv` workflow for users.
 - Prefer not adding new dependencies unless necessary.
 
 ---

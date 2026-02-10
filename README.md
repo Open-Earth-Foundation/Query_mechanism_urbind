@@ -60,31 +60,70 @@ Schema summary for SQL generation is derived from `app/db_models/`.
 Example `llm_config.yaml`:
 ```
 orchestrator:
-  model: "moonshotai/kimi-k2.5"
+  model: "openai/gpt-5.2"
   context_bundle_name: "context_bundle.json"
-  context_window_tokens: 256000
-  input_token_reserve: 2000
+  context_window_tokens: 400000
+  input_token_reserve: 20000
 sql_researcher:
-  model: "moonshotai/kimi-k2.5"
-  max_result_tokens: 100000
-  context_window_tokens: 256000
-  input_token_reserve: 2000
-markdown_researcher:
-  model: "openai/gpt-5-mini"
+  model: "openai/gpt-5.2"
   context_window_tokens: 400000
   input_token_reserve: 2000
-  max_chunk_tokens: 120000
-  chunk_overlap_tokens: 200
-  max_workers: 2
+  max_result_tokens: 100000
+  pre_orchestrator_rounds: 2
+markdown_researcher:
+  model: "x-ai/grok-4.1-fast"
+  context_window_tokens: 400000
+  input_token_reserve: 20000
+  max_chunk_tokens: 100000
+  chunk_overlap_tokens: 2000
+  max_workers: 4
   max_retries: 2
   retry_base_seconds: 0.8
   retry_max_seconds: 6.0
 writer:
-  model: "moonshotai/kimi-k2.5"
-  context_window_tokens: 256000
-  input_token_reserve: 2000
+  model: "openai/gpt-5.2"
+  context_window_tokens: 400000
+  input_token_reserve: 20000
 openrouter_base_url: "https://openrouter.ai/api/v1"
 ```
+
+### How token settings affect runtime
+
+Shared budget calculation used across agents (`app/utils/tokenization.py`):
+
+```text
+if max_input_tokens is set:
+    effective_max_input_tokens = max_input_tokens
+elif context_window_tokens is set:
+    effective_max_input_tokens = max(
+        context_window_tokens - input_token_reserve - max_output_tokens,
+        0,
+    )
+else:
+    effective_max_input_tokens = None
+```
+
+`max_output_tokens` is treated as `0` in this formula when omitted.
+
+Config values and effect:
+
+- `context_window_tokens`: Input to budget calculation; also sent to agents in payload for prompt guidance.
+- `input_token_reserve`: Safety margin subtracted from context window so the prompt does not try to consume the entire window.
+- `max_output_tokens`: Model generation cap (when set) and also subtracted from input budget.
+- `max_input_tokens`: Explicit override. If set, it bypasses the formula above.
+- `markdown_researcher.max_chunk_tokens`: Hard cap for markdown chunk size before sending chunks to the markdown agent.
+- `markdown_researcher.chunk_overlap_tokens`: Token overlap between consecutive markdown chunks.
+- `sql_researcher.max_result_tokens`: Hard cap on total SQL result tokens included in the context bundle.
+
+Truncation and skip behavior (explicit):
+
+- SQL results are capped by `sql_researcher.max_result_tokens` in `cap_results()`.
+- When the cap is reached, remaining rows are excluded from capped SQL output, and remaining query results are not added to that capped bundle.
+- SQL truncation is recorded in structured artifacts via `truncation_applied` (bundle-level) and `truncated` (result-level).
+- Full SQL results are still saved to `output/<run_id>/sql/results_full.json`; capped results are saved to `output/<run_id>/sql/results.json`.
+- Markdown chunks that exceed the current input budget are skipped with warning log: `Skipping markdown chunk that exceeds token budget.`
+- Markdown files above `max_file_bytes` are skipped with warning log: `Skipping large markdown file: <path>`.
+- There is currently no dedicated warning line specifically for SQL token-cap truncation; use the truncation flags and artifacts above to detect it.
 
 ## Run (local)
 
