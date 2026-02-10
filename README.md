@@ -3,25 +3,39 @@
 Multi-agent document builder that answers user questions by combining SQL data and Markdown sources. It orchestrates a SQL Researcher, Markdown Researcher, and Writer with OpenAI Agents, and logs every run artifact for inspection.
 
 ## Requirements
-- Python 3.10+
+- Python 3.10+ (see `pyproject.toml`)
 - Local SQLite source DB derived from `app/db_models/`
 - `OPENROUTER_API_KEY` in environment
 
 ## Install
 
-### pip
-```
-pip install -e .
+This project uses `uv` for dependency management. If you don't have it installed, [install uv](https://docs.astral.sh/uv/getting-started/installation/).
+
+### Development setup
+
+```bash
+uv sync
 ```
 
-If you prefer a frozen requirements file:
-```
-pip install -r requirements.txt
+This installs both production and dev dependencies (including pytest).
+
+### Add dependencies
+
+Production:
+```bash
+uv add package-name
 ```
 
-### uv
+Development (e.g., testing tools):
+```bash
+uv add --dev package-name
 ```
-uv pip install -e .
+
+### Sync environment
+
+After pulling changes with updated dependencies:
+```bash
+uv sync
 ```
 
 ## Configuration

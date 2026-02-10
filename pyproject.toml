@@ -3,7 +3,7 @@ name = "query-mechanism-urbind"
 version = "0.1.0"
 description = "Multi-agent document builder combining SQL and Markdown sources."
 readme = "README.md"
-requires-python = "==3.11.*"
+requires-python = ">=3.10"
 
 dependencies = [
   "openai-agents>=0.7.0",
