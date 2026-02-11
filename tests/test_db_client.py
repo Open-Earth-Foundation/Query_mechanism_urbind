@@ -2,7 +2,7 @@ import sqlite3
 
 import pytest
 
-from app.services.db_client import SQLiteClient, get_db_client, is_select_query
+from backend.services.db_client import SQLiteClient, get_db_client, is_select_query
 
 
 def test_is_select_query() -> None:

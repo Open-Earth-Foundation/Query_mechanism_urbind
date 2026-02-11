@@ -3,7 +3,7 @@ from pathlib import Path
 
 from fastapi.testclient import TestClient
 
-from app.api.main import create_app
+from backend.api.main import create_app
 
 
 def test_cities_endpoint_lists_unique_markdown_stems(tmp_path: Path) -> None:

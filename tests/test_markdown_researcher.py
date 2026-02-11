@@ -3,10 +3,10 @@ import json
 from agents.exceptions import MaxTurnsExceeded
 from pytest import MonkeyPatch
 
-from app.modules.markdown_researcher import agent as markdown_agent
-from app.modules.markdown_researcher.agent import extract_markdown_excerpts
-from app.modules.markdown_researcher.models import MarkdownExcerpt, MarkdownResearchResult
-from app.utils.config import (
+from backend.modules.markdown_researcher import agent as markdown_agent
+from backend.modules.markdown_researcher.agent import extract_markdown_excerpts
+from backend.modules.markdown_researcher.models import MarkdownExcerpt, MarkdownResearchResult
+from backend.utils.config import (
     AgentConfig,
     AppConfig,
     MarkdownResearcherConfig,

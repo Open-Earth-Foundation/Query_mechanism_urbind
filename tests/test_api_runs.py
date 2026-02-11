@@ -7,16 +7,16 @@ from pathlib import Path
 import pytest
 from fastapi.testclient import TestClient
 
-from app.api.main import create_app
-from app.api.services.run_store import TERMINAL_STATUSES
-from app.utils.config import (
+from backend.api.main import create_app
+from backend.api.services.run_store import TERMINAL_STATUSES
+from backend.utils.config import (
     AgentConfig,
     AppConfig,
     MarkdownResearcherConfig,
     OrchestratorConfig,
     SqlResearcherConfig,
 )
-from app.utils.paths import RunPaths, create_run_paths
+from backend.utils.paths import RunPaths, create_run_paths
 
 
 def _build_config(runs_dir: Path, markdown_dir: Path) -> AppConfig:
@@ -105,8 +105,8 @@ def test_api_run_lifecycle_success(tmp_path: Path, monkeypatch: pytest.MonkeyPat
         assert isinstance(log_llm_payload, bool)
         return _write_success_artifacts(question=question, run_id=run_id, config=config)
 
-    monkeypatch.setattr("app.api.services.run_executor.load_config", _stub_load_config)
-    monkeypatch.setattr("app.api.services.run_executor.run_pipeline", _stub_run_pipeline)
+    monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
+    monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
 
     app = create_app(runs_dir=runs_dir, max_workers=2)
     with TestClient(app) as client:
@@ -153,8 +153,8 @@ def test_api_duplicate_run_id_returns_conflict(
         assert run_id is not None
         return _write_success_artifacts(question=question, run_id=run_id, config=config)
 
-    monkeypatch.setattr("app.api.services.run_executor.load_config", _stub_load_config)
-    monkeypatch.setattr("app.api.services.run_executor.run_pipeline", _stub_run_pipeline)
+    monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
+    monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
 
     app = create_app(runs_dir=runs_dir, max_workers=1)
     with TestClient(app) as client:
@@ -233,8 +233,8 @@ def test_api_output_returns_conflict_while_running(
         release.wait(timeout=2)
         return _write_success_artifacts(question=question, run_id=run_id, config=config)
 
-    monkeypatch.setattr("app.api.services.run_executor.load_config", _stub_load_config)
-    monkeypatch.setattr("app.api.services.run_executor.run_pipeline", _slow_run_pipeline)
+    monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
+    monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _slow_run_pipeline)
 
     app = create_app(runs_dir=runs_dir, max_workers=1)
     with TestClient(app) as client:
@@ -269,9 +269,9 @@ def test_api_failed_run(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None
     ) -> RunPaths:
         raise RuntimeError("simulated pipeline failure")
 
-    monkeypatch.setattr("app.api.services.run_executor.load_config", _stub_load_config)
+    monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
     monkeypatch.setattr(
-        "app.api.services.run_executor.run_pipeline", _failing_run_pipeline
+        "backend.api.services.run_executor.run_pipeline", _failing_run_pipeline
     )
 
     app = create_app(runs_dir=runs_dir, max_workers=1)
@@ -318,8 +318,8 @@ def test_api_run_filters_markdown_by_selected_cities(
         )
         return _write_success_artifacts(question=question, run_id=run_id, config=config)
 
-    monkeypatch.setattr("app.api.services.run_executor.load_config", _stub_load_config)
-    monkeypatch.setattr("app.api.services.run_executor.run_pipeline", _stub_run_pipeline)
+    monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
+    monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
 
     app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
     with TestClient(app) as client:
@@ -428,8 +428,8 @@ def test_api_run_supports_header_api_key_override(
         captured_api_key["value"] = api_key_override
         return _write_success_artifacts(question=question, run_id=run_id, config=config)
 
-    monkeypatch.setattr("app.api.services.run_executor.load_config", _stub_load_config)
-    monkeypatch.setattr("app.api.services.run_executor.run_pipeline", _stub_run_pipeline)
+    monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
+    monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
 
     app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
     with TestClient(app) as client:
@@ -465,9 +465,9 @@ def test_api_key_error_is_reported_with_sanitized_message(
             "Incorrect API key provided: sk-or-v1-abcdefghijklmnopqrstuv0123456789"
         )
 
-    monkeypatch.setattr("app.api.services.run_executor.load_config", _stub_load_config)
+    monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
     monkeypatch.setattr(
-        "app.api.services.run_executor.run_pipeline", _failing_run_pipeline
+        "backend.api.services.run_executor.run_pipeline", _failing_run_pipeline
     )
 
     app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)

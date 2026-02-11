@@ -38,7 +38,7 @@ This flow should make missing data explicit in the final answer instead of silen
 
 ### 3.1 Data Models (Pydantic)
 
-Keep schemas minimal in `app/api/models.py`:
+Keep schemas minimal in `backend/api/models.py`:
 
 - `MissingDataItem`
   - `city: str`
@@ -86,7 +86,7 @@ Backend responsibilities (deterministic, non-LLM):
 
 ### 3.2 New API Endpoints
 
-Add a dedicated router, for example `app/api/routes/assumptions.py`:
+Add a dedicated router, for example `backend/api/routes/assumptions.py`:
 
 - `POST /api/v1/runs/{run_id}/assumptions/discover`
   - Loads run question + final output + context bundle
@@ -101,11 +101,11 @@ Add a dedicated router, for example `app/api/routes/assumptions.py`:
 - Optional: `GET /api/v1/runs/{run_id}/assumptions/latest`
   - Returns last discovered/edited assumptions without re-running model
 
-Register this router in `app/api/main.py`.
+Register this router in `backend/api/main.py`.
 
 ### 3.3 Service Layer
 
-Add `app/api/services/assumptions_review.py` with focused functions:
+Add `backend/api/services/assumptions_review.py` with focused functions:
 
 - `discover_missing_data(...) -> list[MissingDataItem]`
 - `group_missing_data_by_city(...) -> dict[str, list[MissingDataItem]]`
@@ -168,7 +168,7 @@ Add an assumptions model section in config:
   - temperature: low
   - max_output_tokens tuned for structured JSON output
 
-Update `AppConfig` in `app/utils/config.py` to load this section.
+Update `AppConfig` in `backend/utils/config.py` to load this section.
 
 Prompt contract for discovery call:
 

@@ -48,7 +48,7 @@ Outputs:
 - <files, stdout, DB writes, API responses, etc.>
 
 Usage (from project root):
-- python -m app.scripts.<script_name> --arg1 ...
+- python -m backend.scripts.<script_name> --arg1 ...
 """
 ```
 
@@ -91,7 +91,7 @@ Any script that can be executed standalone must:
 import argparse
 import logging
 
-from app.utils.logging_config import setup_logger
+from backend.utils.logging_config import setup_logger
 
 logger = logging.getLogger(__name__)
 
@@ -121,14 +121,14 @@ if __name__ == "__main__":
 
 ### Prefer reuse over duplication
 
-- If logic is reusable, it belongs in `app/utils/` (global) or `app/modules/<module>/utils/` (local).
+- If logic is reusable, it belongs in `backend/utils/` (global) or `backend/modules/<module>/utils/` (local).
 - Do not copy or paste functions across scripts.
 - Import shared helpers instead.
 
 ### Logging is required
 
-- Use Python’s `logging` module, do not use `print`, except in rare CLI UX cases where it is explicitly intended.
-- Use `app/utils/logging_config.py` to configure logging.
+- Use Pythonâ€™s `logging` module, do not use `print`, except in rare CLI UX cases where it is explicitly intended.
+- Use `backend/utils/logging_config.py` to configure logging.
 - `logging_config.py` usually contains the following code:
 
 ```python

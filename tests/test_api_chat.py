@@ -6,9 +6,9 @@ from pathlib import Path
 import pytest
 from fastapi.testclient import TestClient
 
-from app.api.main import create_app
-from app.api.services.context_chat import CHAT_PROMPT_TOKEN_CAP
-from app.utils.config import (
+from backend.api.main import create_app
+from backend.api.services.context_chat import CHAT_PROMPT_TOKEN_CAP
+from backend.utils.config import (
     AgentConfig,
     AppConfig,
     ChatConfig,
@@ -16,7 +16,7 @@ from app.utils.config import (
     OrchestratorConfig,
     SqlResearcherConfig,
 )
-from app.utils.paths import RunPaths, create_run_paths
+from backend.utils.paths import RunPaths, create_run_paths
 
 
 def _build_config(runs_dir: Path, markdown_dir: Path) -> AppConfig:
@@ -114,9 +114,9 @@ def test_chat_session_lifecycle(tmp_path: Path, monkeypatch: pytest.MonkeyPatch)
         assert token_cap == CHAT_PROMPT_TOKEN_CAP
         return f"Echo: {user_content}"
 
-    monkeypatch.setattr("app.api.services.run_executor.load_config", _stub_load_config)
-    monkeypatch.setattr("app.api.services.run_executor.run_pipeline", _stub_run_pipeline)
-    monkeypatch.setattr("app.api.routes.chat.generate_context_chat_reply", _stub_generate_reply)
+    monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
+    monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
+    monkeypatch.setattr("backend.api.routes.chat.generate_context_chat_reply", _stub_generate_reply)
 
     app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
     with TestClient(app) as client:
@@ -236,9 +236,9 @@ def test_chat_supports_header_api_key_override(
         captured_key["value"] = api_key_override
         return "Header key response"
 
-    monkeypatch.setattr("app.api.services.run_executor.load_config", _stub_load_config)
-    monkeypatch.setattr("app.api.services.run_executor.run_pipeline", _stub_run_pipeline)
-    monkeypatch.setattr("app.api.routes.chat.generate_context_chat_reply", _stub_generate_reply)
+    monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
+    monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
+    monkeypatch.setattr("backend.api.routes.chat.generate_context_chat_reply", _stub_generate_reply)
 
     app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
     with TestClient(app) as client:
@@ -283,8 +283,8 @@ def test_chat_context_update_rejects_unknown_context_run(
         assert run_id is not None
         return _write_success_artifacts(question, run_id, config)
 
-    monkeypatch.setattr("app.api.services.run_executor.load_config", _stub_load_config)
-    monkeypatch.setattr("app.api.services.run_executor.run_pipeline", _stub_run_pipeline)
+    monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
+    monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
 
     app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
     with TestClient(app) as client:

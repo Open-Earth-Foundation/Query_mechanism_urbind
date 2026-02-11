@@ -1,8 +1,8 @@
-from app.models import ErrorInfo
-from app.modules.markdown_researcher.models import MarkdownExcerpt, MarkdownResearchResult
-from app.modules.orchestrator.models import OrchestratorDecision
-from app.modules.sql_researcher.models import SqlQuery, SqlQueryPlan, SqlQueryResult, SqlResearchResult
-from app.modules.writer.models import WriterOutput
+from backend.models import ErrorInfo
+from backend.modules.markdown_researcher.models import MarkdownExcerpt, MarkdownResearchResult
+from backend.modules.orchestrator.models import OrchestratorDecision
+from backend.modules.sql_researcher.models import SqlQuery, SqlQueryPlan, SqlQueryResult, SqlResearchResult
+from backend.modules.writer.models import WriterOutput
 
 
 def test_model_validation() -> None:

@@ -6,7 +6,7 @@ Multi-agent document builder that answers user questions by combining SQL data (
 
 - Python 3.10+
 - Node.js 20+ (frontend)
-- Local SQLite source DB derived from `app/db_models/` (required only when SQL is enabled)
+- Local SQLite source DB derived from `backend/db_models/` (required only when SQL is enabled)
 - `OPENROUTER_API_KEY` in environment
 
 ## Install
@@ -46,7 +46,7 @@ uv pip install -e .
 - `CHAT_PROVIDER_TIMEOUT_SECONDS` (optional context chat provider timeout; default: `50`)
 - `API_CORS_ORIGINS` (optional comma-separated origins for frontend; default includes localhost:3000/3001)
 - `LLM_CONFIG_PATH` (optional API config file path; default: `llm_config.yaml`)
-- `CITY_GROUPS_PATH` (optional city groups JSON path; default: `app/api/assets/city_groups.json`)
+- `CITY_GROUPS_PATH` (optional city groups JSON path; default: `backend/api/assets/city_groups.json`)
 
 Example `.env.example` is provided.
 
@@ -72,7 +72,7 @@ If key authentication fails:
 - UI shows the error so the user can switch key and retry.
 
 Default output directory is `output/` (override with `RUNS_DIR`).
-Schema summary for SQL generation is derived from `app/db_models/`.
+Schema summary for SQL generation is derived from `backend/db_models/`.
 
 Example `llm_config.yaml`:
 
@@ -117,14 +117,14 @@ enable_sql: false
 ## Run (local)
 
 ```
-python -m app.scripts.run_pipeline --question "What initiatives exist for Munich?" \
+python -m backend.scripts.run_pipeline --question "What initiatives exist for Munich?" \
   --markdown-path documents
 ```
 
 Disable LLM payload logging:
 
 ```
-python -m app.scripts.run_pipeline --question "What initiatives exist for Munich?" \
+python -m backend.scripts.run_pipeline --question "What initiatives exist for Munich?" \
   --markdown-path documents \
   --no-log-llm-payload
 ```
@@ -132,7 +132,7 @@ python -m app.scripts.run_pipeline --question "What initiatives exist for Munich
 Enable SQL (SQLite):
 
 ```
-python -m app.scripts.run_pipeline --enable-sql --question "What initiatives exist for Munich?" \
+python -m backend.scripts.run_pipeline --enable-sql --question "What initiatives exist for Munich?" \
   --db-path path/to/source.db \
   --markdown-path documents
 ```
@@ -142,9 +142,9 @@ python -m app.scripts.run_pipeline --enable-sql --question "What initiatives exi
 When `--question` is provided, it overrides `--questions-file` and only the CLI question(s) are executed.
 
 ```
-python -m app.scripts.run_e2e_queries
-python -m app.scripts.run_e2e_queries --questions-file assets/e2e_questions.txt
-python -m app.scripts.run_e2e_queries --question "What initiatives exist for Munich?" --no-log-llm-payload
+python -m backend.scripts.run_e2e_queries
+python -m backend.scripts.run_e2e_queries --questions-file assets/e2e_questions.txt
+python -m backend.scripts.run_e2e_queries --question "What initiatives exist for Munich?" --no-log-llm-payload
 ```
 
 ## Run API (local)
@@ -152,7 +152,7 @@ python -m app.scripts.run_e2e_queries --question "What initiatives exist for Mun
 Start FastAPI backend:
 
 ```
-python -m uvicorn app.api.main:app --host 0.0.0.0 --port 8000
+python -m uvicorn backend.api.main:app --host 0.0.0.0 --port 8000
 ```
 
 SQL is force-disabled in the API execution path for now.
@@ -218,7 +218,7 @@ docker run -it --rm -p 8000:8000 \
   -v ${PWD}/documents:/data/documents \
   -v ${PWD}/output:/data/output \
   -v ${PWD}/llm_config.yaml:/data/config/llm_config.yaml:ro \
-  -v ${PWD}/app/api/assets/city_groups.json:/data/config/city_groups.json:ro \
+  -v ${PWD}/backend/api/assets/city_groups.json:/data/config/city_groups.json:ro \
   query-mechanism-backend
 ```
 
@@ -263,7 +263,7 @@ Use the included `docker-compose.yml` to run both services together with persist
 - Host `./documents` -> container `/data/documents` (markdown sources)
 - Host `./output` -> container `/data/output` (run artifacts, final docs, context bundles, chat memory)
 - Host `./llm_config.yaml` -> container `/data/config/llm_config.yaml`
-- Host `./app/api/assets/city_groups.json` -> container `/data/config/city_groups.json`
+- Host `./backend/api/assets/city_groups.json` -> container `/data/config/city_groups.json`
 
 Commands:
 
@@ -299,7 +299,7 @@ Optional repository variables:
 ## Test DB connection
 
 ```
-python -m app.scripts.test_db_connection
+python -m backend.scripts.test_db_connection
 ```
 
 Artifacts are written under `output/<run_id>/`:
@@ -356,8 +356,8 @@ Use this script to validate the async backend lifecycle contract before frontend
 - `GET /api/v1/runs/{run_id}/context`
 
 ```
-python -m app.scripts.test_async_backend_flow --question "What are main climate initiatives?"
-python -m app.scripts.test_async_backend_flow \
+python -m backend.scripts.test_async_backend_flow --question "What are main climate initiatives?"
+python -m backend.scripts.test_async_backend_flow \
   --base-url http://127.0.0.1:8000 \
   --question "What initiatives exist for Munich?" \
   --cities Munich,Berlin \
@@ -371,9 +371,9 @@ Smoke-test artifacts are written to `output/api_smoke_tests/<run_id>/`.
 ## Token analysis utilities
 
 ```
-python -m app.scripts.analyze_run_tokens --run-log output/<run_id>/run.log
-python -m app.scripts.calculate_tokens --documents-dir documents --recursive
-python -m app.scripts.temp_analyze --run-log output/<run_id>/run.log
+python -m backend.scripts.analyze_run_tokens --run-log output/<run_id>/run.log
+python -m backend.scripts.calculate_tokens --documents-dir documents --recursive
+python -m backend.scripts.temp_analyze --run-log output/<run_id>/run.log
 ```
 
 ## Common workflows

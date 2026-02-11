@@ -5,19 +5,19 @@ from pathlib import Path
 
 import pytest
 
-from app.utils.config import (
+from backend.utils.config import (
     AppConfig,
     AgentConfig,
     MarkdownResearcherConfig,
     OrchestratorConfig,
     SqlResearcherConfig,
 )
-from app.modules.orchestrator.module import run_pipeline
-from app.modules.orchestrator.models import OrchestratorDecision
-from app.modules.sql_researcher.models import SqlQuery, SqlQueryPlan
-from app.modules.markdown_researcher.models import MarkdownExcerpt, MarkdownResearchResult
-from app.modules.writer.models import WriterOutput
-from app.utils.logging_config import setup_logger
+from backend.modules.orchestrator.module import run_pipeline
+from backend.modules.orchestrator.models import OrchestratorDecision
+from backend.modules.sql_researcher.models import SqlQuery, SqlQueryPlan
+from backend.modules.markdown_researcher.models import MarkdownExcerpt, MarkdownResearchResult
+from backend.modules.writer.models import WriterOutput
+from backend.utils.logging_config import setup_logger
 
 
 def _stub_sql_plan(

@@ -5,15 +5,15 @@ from pathlib import Path
 import pytest
 from fastapi.testclient import TestClient
 
-from app.api.main import create_app
-from app.api.models import AssumptionsPayload, MissingDataItem, RegenerationResult
-from app.api.services.assumptions_review import (
+from backend.api.main import create_app
+from backend.api.models import AssumptionsPayload, MissingDataItem, RegenerationResult
+from backend.api.services.assumptions_review import (
     apply_assumptions_and_regenerate,
     discover_missing_data,
 )
-from app.api.services.run_store import RunStore
-from app.modules.writer.models import WriterOutput
-from app.utils.config import (
+from backend.api.services.run_store import RunStore
+from backend.modules.writer.models import WriterOutput
+from backend.utils.config import (
     AgentConfig,
     AppConfig,
     ChatConfig,
@@ -21,7 +21,7 @@ from app.utils.config import (
     OrchestratorConfig,
     SqlResearcherConfig,
 )
-from app.utils.paths import RunPaths, create_run_paths
+from backend.utils.paths import RunPaths, create_run_paths
 
 
 def _build_config(runs_dir: Path, markdown_dir: Path) -> AppConfig:
@@ -111,7 +111,7 @@ def test_assumptions_discover_returns_payload(
         )
 
         monkeypatch.setattr(
-            "app.api.routes.assumptions.discover_missing_data_for_run",
+            "backend.api.routes.assumptions.discover_missing_data_for_run",
             lambda **_: {
                 "run_id": "run-assumptions",
                 "items": [
@@ -180,7 +180,7 @@ def test_assumptions_apply_regeneration_returns_payload(
             question="Build assumptions run",
         )
         monkeypatch.setattr(
-            "app.api.routes.assumptions.apply_assumptions_and_regenerate",
+            "backend.api.routes.assumptions.apply_assumptions_and_regenerate",
             lambda **_: RegenerationResult(
                 run_id="run-assumptions",
                 revised_output_path="output/run-assumptions/assumptions/final_with_assumptions.md",
@@ -223,7 +223,7 @@ def test_assumptions_apply_accepts_free_form_value(
             question="Build assumptions run",
         )
         monkeypatch.setattr(
-            "app.api.routes.assumptions.apply_assumptions_and_regenerate",
+            "backend.api.routes.assumptions.apply_assumptions_and_regenerate",
             lambda **_: RegenerationResult(
                 run_id="run-assumptions",
                 revised_output_path="output/run-assumptions/assumptions/final_with_assumptions.md",
@@ -266,7 +266,7 @@ def test_apply_assumptions_does_not_persist_by_default(
     assert run_record is not None
 
     monkeypatch.setattr(
-        "app.api.services.assumptions_review.write_markdown",
+        "backend.api.services.assumptions_review.write_markdown",
         lambda **_: WriterOutput(content="# Revised body"),
     )
 
@@ -334,7 +334,7 @@ def test_discover_missing_data_runs_two_pass_merge(
         ]
 
     monkeypatch.setattr(
-        "app.api.services.assumptions_review._run_discovery_pass",
+        "backend.api.services.assumptions_review._run_discovery_pass",
         _stub_run_pass,
     )
     payload = discover_missing_data(

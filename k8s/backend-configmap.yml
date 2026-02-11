@@ -7,7 +7,7 @@ data:
   RUNS_DIR: "/data/output"
   MARKDOWN_DIR: "/app/documents"
   LLM_CONFIG_PATH: "/app/llm_config.yaml"
-  CITY_GROUPS_PATH: "/app/app/api/assets/city_groups.json"
+  CITY_GROUPS_PATH: "/app/backend/api/assets/city_groups.json"
   OPENROUTER_BASE_URL: "https://openrouter.ai/api/v1"
   API_RUN_WORKERS: "2"
   CHAT_PROMPT_TOKEN_CAP: "250000"
