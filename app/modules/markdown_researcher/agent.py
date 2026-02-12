@@ -149,7 +149,7 @@ def extract_markdown_excerpts(
                 agent = _get_thread_agent()
                 run_result = run_agent_sync(
                     agent,
-                    json.dumps(payload, ensure_ascii=True),
+                    json.dumps(payload, ensure_ascii=False),
                     log_llm_payload=log_llm_payload,
                 )
                 # Get the final output - handle all format variations
@@ -252,8 +252,6 @@ def extract_markdown_excerpts(
             return city_name, batch_index, excerpts, error, success
         success = True
         for excerpt in output.excerpts:
-            if excerpt.relevant != "yes":
-                continue
             excerpts.append(excerpt)
         return city_name, batch_index, excerpts, error, success
 

@@ -11,7 +11,6 @@ class MarkdownExcerpt(BaseModel):
     quote: str
     city_name: str
     partial_answer: str
-    relevant: Literal["yes", "no"]
 
 
 class MarkdownResearchResult(BaseModel):

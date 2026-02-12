@@ -26,6 +26,12 @@ The tool argument must match `WriterOutput`:
 - `content` (str): final user-facing markdown answer
 
 Content quality requirements:
+- Always begin with this structured evidence header:
+  - `Files inspected: <comma-separated city names>` using `context_bundle.markdown.inspected_cities` (if missing/empty, write `none`).
+  - `Extracted excerpts: <number>` using `context_bundle.markdown.excerpt_count` (treat missing/invalid as `0`).
+- Decision text after the header:
+  - If `excerpt_count == 0`, do not attempt to answer the question. Clearly state that no relevant evidence was found in the provided sources and that you cannot provide a grounded answer.
+  - If `excerpt_count > 0`, include a short line before the answer body stating that the answer is grounded in those excerpts from the listed cities.
 - Ground all claims in `context_bundle`; do not invent facts.
 - When evidence is partial or uncertain, state limitations clearly and keep claims bounded.
 - If `context_bundle.markdown.status="success"` and `context_bundle.markdown.error` is non-null, include a brief limitation note.

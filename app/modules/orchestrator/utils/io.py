@@ -23,7 +23,7 @@ def write_json(path: Path, payload: object) -> None:
         payload: Object to serialize as JSON
     """
     path.write_text(
-        json.dumps(payload, indent=2, ensure_ascii=True, default=str),
+        json.dumps(payload, indent=2, ensure_ascii=False, default=str),
         encoding="utf-8",
     )
 

@@ -50,13 +50,13 @@ class RunLogger:
 
     def write_run_log(self) -> None:
         self.run_paths.run_log.write_text(
-            json.dumps(self.run_log, indent=2, ensure_ascii=True, default=str),
+            json.dumps(self.run_log, indent=2, ensure_ascii=False, default=str),
             encoding="utf-8",
         )
 
     def write_context_bundle(self) -> None:
         self.run_paths.context_bundle.write_text(
-            json.dumps(self.context_bundle, indent=2, ensure_ascii=True, default=str),
+            json.dumps(self.context_bundle, indent=2, ensure_ascii=False, default=str),
             encoding="utf-8",
         )
 
@@ -71,7 +71,7 @@ class RunLogger:
     def _format_json(self, payload: object | None) -> str:
         if payload is None:
             return "(missing)"
-        return json.dumps(payload, indent=2, ensure_ascii=True, default=str)
+        return json.dumps(payload, indent=2, ensure_ascii=False, default=str)
 
     def _summarize_sql_results(self, payload: object | None) -> str:
         if not isinstance(payload, list):
@@ -242,11 +242,11 @@ class RunLogger:
             lines.append(f"Refined question: {inputs.get('refined_question', self.context_bundle.get('research_question'))}")
             lines.append(
                 "Selected cities (planned): "
-                f"{json.dumps(inputs.get('selected_cities_planned', []), ensure_ascii=True)}"
+                f"{json.dumps(inputs.get('selected_cities_planned', []), ensure_ascii=False)}"
             )
             lines.append(
                 "Selected cities (found): "
-                f"{json.dumps(inputs.get('selected_cities_found', []), ensure_ascii=True)}"
+                f"{json.dumps(inputs.get('selected_cities_found', []), ensure_ascii=False)}"
             )
             lines.append(f"Markdown dir: {inputs.get('markdown_dir') or '(unknown)'}")
             lines.append(f"Markdown file count: {inputs.get('markdown_file_count', 0)}")
@@ -258,7 +258,7 @@ class RunLogger:
         lines.append(f"Total runtime: {self._format_total_runtime()}")
         llm_usage = self.run_log.get("llm_usage")
         if llm_usage:
-            lines.append(f"LLM Usage: {json.dumps(llm_usage, ensure_ascii=True)}")
+            lines.append(f"LLM Usage: {json.dumps(llm_usage, ensure_ascii=False)}")
         lines.append("")
 
         lines.append("ARTIFACTS")
@@ -406,7 +406,7 @@ class RunLogger:
         usage_summary = self._summarize_llm_usage()
         if usage_summary:
             self.run_log["llm_usage"] = usage_summary
-            logger.info("LLM_USAGE_SUMMARY %s", json.dumps(usage_summary, ensure_ascii=True))
+            logger.info("LLM_USAGE_SUMMARY %s", json.dumps(usage_summary, ensure_ascii=False))
         self.run_log["artifacts"]["run_summary"] = str(self.run_paths.run_summary)
         if final_output_path:
             self.run_log["artifacts"]["final_output"] = str(final_output_path)

@@ -37,13 +37,11 @@ Each `MarkdownExcerpt` must include:
 - `quote` (str): verbatim supporting text extracted from the chunk, single line.
 - `city_name` (str): must equal input `city_name`.
 - `partial_answer` (str): short, self-contained factual statement supported by `quote`, single line.
-- `relevant` (`"yes"` | `"no"`).
 
-Rules for `relevant`:
-- Use `"yes"` when the chunk directly supports a useful partial answer for the user question.
-- Use `"no"` when the chunk does not contain sufficient support.
-- If `relevant="no"`, `partial_answer` should be an empty string.
-- You may omit non-relevant chunks instead of returning `relevant="no"` entries.
+Relevance rules:
+- Return excerpts only when the chunk directly supports a useful partial answer for the user question.
+- If the chunk is not relevant, return no excerpt for that chunk.
+- Keep city grounding strict: for city-specific questions, do not return excerpts that only support a different city.
 
 Rules for `partial_answer`:
 - Must be fully supported by the quote.
@@ -63,8 +61,7 @@ Error handling:
     {
       "quote": "The city has deployed 43 public EV charging points as of 2024.",
       "city_name": "Munich",
-      "partial_answer": "Munich reports 43 public EV charging points as of 2024.",
-      "relevant": "yes"
+      "partial_answer": "Munich reports 43 public EV charging points as of 2024."
     }
   ],
   "error": null

@@ -33,7 +33,6 @@ def test_model_validation() -> None:
         quote="Munich has deployed 43 existing public chargers as of 2024.",
         city_name="Munich",
         partial_answer="Munich has deployed 43 existing public chargers as of 2024.",
-        relevant="yes",
     )
     md_result = MarkdownResearchResult(excerpts=[excerpt])
 
@@ -61,7 +60,6 @@ def test_markdown_excerpt_accepts_quote_and_partial_answer_fields() -> None:
             "quote": "Munich has deployed 43 existing public chargers as of 2024.",
             "city_name": "Munich",
             "partial_answer": "Munich has deployed 43 existing public chargers as of 2024.",
-            "relevant": "yes",
         }
     )
 

@@ -9,7 +9,6 @@ def test_coerce_markdown_result_accepts_partial_answer_field() -> None:
                 "quote": "Munich has deployed 43 existing public chargers as of 2024.",
                 "city_name": "Munich",
                 "partial_answer": "Munich has deployed 43 existing public chargers as of 2024.",
-                "relevant": "yes",
             }
         ],
         "error": None,
@@ -34,7 +33,6 @@ def test_coerce_markdown_result_rejects_legacy_answer_field() -> None:
                 "quote": "Munich has deployed 43 existing public chargers as of 2024.",
                 "city_name": "Munich",
                 "answer": "Munich has deployed 43 existing public chargers as of 2024.",
-                "relevant": "yes",
             }
         ],
         "error": None,
