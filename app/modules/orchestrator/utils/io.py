@@ -43,7 +43,7 @@ def load_context_bundle(paths: RunPaths) -> dict:
     return json.loads(paths.context_bundle.read_text(encoding="utf-8"))
 
 
-def write_draft_and_final(
+def write_final_output(
     question: str,
     content: str,
     paths: RunPaths,
@@ -51,10 +51,7 @@ def write_draft_and_final(
     finish_reason: str = "completed",
 ) -> None:
     """
-    Write draft and final output files.
-
-    Creates both a numbered draft and final output file with question header
-    and finish reason footer.
+    Write the final output file.
 
     Args:
         question: Original user question
@@ -66,12 +63,6 @@ def write_draft_and_final(
     question_header = f"# Question\n{question}\n\n"
     finish_note = f"\n\n---\nFinish reason: {finish_reason}\n"
     rendered_content = f"{question_header}{content}{finish_note}"
-
-    draft_index = len(run_logger.run_log.get("drafts", [])) + 1
-    draft_path = paths.drafts_dir / f"draft_{draft_index:02d}.md"
-    draft_path.write_text(rendered_content, encoding="utf-8")
-    run_logger.record_draft(draft_path)
-
     final_path = paths.final_output
     final_path.write_text(rendered_content, encoding="utf-8")
     run_logger.record_artifact("final_output", final_path)
@@ -80,5 +71,5 @@ def write_draft_and_final(
 __all__ = [
     "write_json",
     "load_context_bundle",
-    "write_draft_and_final",
+    "write_final_output",
 ]

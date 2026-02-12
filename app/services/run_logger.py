@@ -23,13 +23,11 @@ class RunLogger:
             "completed_at": None,
             "decisions": [],
             "artifacts": {},
-            "drafts": [],
         }
         self.context_bundle: dict[str, Any] = {
             "sql": None,
             "markdown": None,
             "research_question": question,
-            "drafts": [],
             "final": None,
         }
 
@@ -41,7 +39,6 @@ class RunLogger:
         self.run_paths.base_dir.mkdir(parents=True, exist_ok=True)
         self.run_paths.sql_dir.mkdir(parents=True, exist_ok=True)
         self.run_paths.markdown_dir.mkdir(parents=True, exist_ok=True)
-        self.run_paths.drafts_dir.mkdir(parents=True, exist_ok=True)
 
     def write_run_log(self) -> None:
         self.run_paths.run_log.write_text(
@@ -102,6 +99,24 @@ class RunLogger:
             if isinstance(value, (int, float)):
                 return int(value)
         return None
+
+    def _format_total_runtime(self) -> str:
+        """Return elapsed runtime in seconds from run start/end timestamps."""
+        started_raw = self.run_log.get("started_at")
+        completed_raw = self.run_log.get("completed_at")
+        if not isinstance(started_raw, str) or not isinstance(completed_raw, str):
+            return "n/a"
+        try:
+            started_dt = datetime.fromisoformat(started_raw)
+            completed_dt = datetime.fromisoformat(completed_raw)
+        except ValueError:
+            return "n/a"
+
+        elapsed_seconds = (completed_dt - started_dt).total_seconds()
+        if elapsed_seconds < 0:
+            return "n/a"
+
+        return f"{elapsed_seconds:.3f} seconds"
 
     def _summarize_llm_usage(self) -> dict[str, Any] | None:
         run_log_path = self.run_paths.base_dir / "run.log"
@@ -176,6 +191,7 @@ class RunLogger:
         lines.append(f"Finish reason: {self.run_log.get('finish_reason', 'n/a')}")
         lines.append(f"Started: {self.run_log.get('started_at')}")
         lines.append(f"Completed: {self.run_log.get('completed_at')}")
+        lines.append(f"Total runtime: {self._format_total_runtime()}")
         llm_usage = self.run_log.get("llm_usage")
         if llm_usage:
             lines.append(f"LLM Usage: {json.dumps(llm_usage, ensure_ascii=True)}")
@@ -236,16 +252,6 @@ class RunLogger:
         lines.append(self._format_json(markdown_payload))
         lines.append("")
 
-        drafts = self.run_log.get("drafts", [])
-        lines.append("DRAFTS (LLM)")
-        if drafts:
-            for draft in drafts:
-                lines.append(f"--- Draft: {draft} ---")
-                lines.append(self._read_text_file(Path(draft)))
-        else:
-            lines.append("(none)")
-        lines.append("")
-
         final_output = self.run_log.get("artifacts", {}).get("final_output")
         lines.append("FINAL_OUTPUT (LLM)")
         if final_output:
@@ -263,12 +269,6 @@ class RunLogger:
     def record_artifact(self, name: str, path: Path) -> None:
         self.run_log["artifacts"][name] = str(path)
         self.write_run_log()
-
-    def record_draft(self, path: Path) -> None:
-        self.run_log["drafts"].append(str(path))
-        self.context_bundle["drafts"].append(str(path))
-        self.write_run_log()
-        self.write_context_bundle()
 
     def update_sql_bundle(self, sql_payload: dict[str, Any]) -> None:
         self.context_bundle["sql"] = sql_payload

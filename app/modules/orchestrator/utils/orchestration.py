@@ -9,7 +9,7 @@ from app.modules.orchestrator.utils.error_handlers import detach_run_file_logger
 from app.modules.orchestrator.utils.handlers import handle_write_decision
 from app.modules.orchestrator.utils.io import (
     load_context_bundle,
-    write_draft_and_final,
+    write_final_output,
 )
 from app.modules.writer.models import WriterOutput
 from app.services.run_logger import RunLogger
@@ -120,7 +120,7 @@ def run_orchestration_loop(
             api_key,
             log_llm_payload=log_llm_payload,
         )
-        write_draft_and_final(
+        write_final_output(
             question,
             writer_output.content,
             paths,

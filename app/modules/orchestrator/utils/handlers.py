@@ -15,7 +15,7 @@ from app.modules.orchestrator.utils.error_handlers import (
     detach_run_file_logger,
     handle_orchestration_error,
 )
-from app.modules.orchestrator.utils.io import write_draft_and_final
+from app.modules.orchestrator.utils.io import write_final_output
 
 
 def handle_write_decision(
@@ -54,7 +54,7 @@ def handle_write_decision(
             api_key,
             log_llm_payload=log_llm_payload,
         )
-        write_draft_and_final(
+        write_final_output(
             question,
             writer_output.content,
             paths,
