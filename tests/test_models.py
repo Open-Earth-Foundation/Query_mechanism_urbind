@@ -30,9 +30,9 @@ def test_model_validation() -> None:
     )
 
     excerpt = MarkdownExcerpt(
-        snippet="Hello",
+        quote="Munich has deployed 43 existing public chargers as of 2024.",
         city_name="Munich",
-        partial_answer="Sample answer",
+        partial_answer="Munich has deployed 43 existing public chargers as of 2024.",
         relevant="yes",
     )
     md_result = MarkdownResearchResult(excerpts=[excerpt])
@@ -55,17 +55,20 @@ def test_model_validation() -> None:
     assert error.code == "E1"
 
 
-def test_markdown_excerpt_accepts_legacy_answer_field() -> None:
+def test_markdown_excerpt_accepts_quote_and_partial_answer_fields() -> None:
     excerpt = MarkdownExcerpt.model_validate(
         {
-            "snippet": "City report excerpt",
+            "quote": "Munich has deployed 43 existing public chargers as of 2024.",
             "city_name": "Munich",
-            "answer": "The answer is: Munich has 43 existing public chargers.",
+            "partial_answer": "Munich has deployed 43 existing public chargers as of 2024.",
             "relevant": "yes",
         }
     )
 
-    assert excerpt.partial_answer == "Munich has 43 existing public chargers."
+    assert (
+        excerpt.partial_answer
+        == "Munich has deployed 43 existing public chargers as of 2024."
+    )
 
 
 def test_orchestrator_decision_rejects_legacy_actions() -> None:
