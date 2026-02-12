@@ -306,7 +306,7 @@ def extract_markdown_excerpts(
                     for excerpt in excerpts:
                         key = (
                             excerpt.city_name.strip().lower(),
-                            excerpt.snippet.strip(),
+                            excerpt.quote.strip(),
                             excerpt.partial_answer.strip(),
                         )
                         if key not in seen:

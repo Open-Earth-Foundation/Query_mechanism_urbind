@@ -8,7 +8,7 @@ from app.models import ErrorInfo
 
 
 class MarkdownExcerpt(BaseModel):
-    snippet: str
+    quote: str
     city_name: str
     partial_answer: str
     relevant: Literal["yes", "no"]

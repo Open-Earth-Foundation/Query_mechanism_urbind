@@ -187,6 +187,13 @@ Artifacts are written under `output/<run_id>/`:
 - `drafts/draft_01.md`
 - `final.md`
 
+`markdown/excerpts.json` entries include:
+
+- `quote`: verbatim extracted supporting text from markdown.
+- `city_name`: city identifier for the excerpt.
+- `partial_answer`: concise fact grounded in the quote.
+- `relevant`: `"yes"` or `"no"` relevance marker.
+
 ## Run (Docker)
 
 Build:
