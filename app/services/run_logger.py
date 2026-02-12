@@ -17,7 +17,15 @@ class RunLogger:
         self.run_paths = run_paths
         self.run_log: dict[str, Any] = {
             "run_id": run_paths.base_dir.name,
-            "question": question,
+            "inputs": {
+                "initial_question": question,
+                "refined_question": question,
+                "selected_cities_planned": [],
+                "selected_cities_found": [],
+                "markdown_dir": None,
+                "markdown_file_count": 0,
+                "markdown_chunk_count": 0,
+            },
             "status": "started",
             "started_at": datetime.now(timezone.utc).isoformat(),
             "completed_at": None,
@@ -84,6 +92,46 @@ class RunLogger:
                 + (f" | error={error}" if error else "")
             )
         return "\n".join(lines) if lines else "(empty)"
+
+    def _summarize_markdown_failures(self, payload: object | None) -> dict[str, Any] | None:
+        """Build an aggregate failure summary from markdown error details."""
+        if not isinstance(payload, dict):
+            return None
+        error_payload = payload.get("error")
+        if not isinstance(error_payload, dict):
+            return None
+
+        by_code: dict[str, int] = {}
+        by_city: dict[str, int] = {}
+        details = error_payload.get("details")
+        if isinstance(details, list):
+            for entry in details:
+                if not isinstance(entry, str):
+                    continue
+                city_part, separator, reason_part = entry.partition(":")
+                if not separator:
+                    continue
+                city_name, _, _batch_info = city_part.partition("#batch")
+                reason = reason_part.strip()
+                city = city_name.strip()
+                if reason:
+                    by_code[reason] = by_code.get(reason, 0) + 1
+                if city:
+                    by_city[city] = by_city.get(city, 0) + 1
+
+        if not by_code:
+            code = error_payload.get("code")
+            if isinstance(code, str) and code:
+                by_code[code] = 1
+
+        if not by_code and not by_city:
+            return None
+
+        return {
+            "total_failed_batches": sum(by_code.values()) if by_code else 0,
+            "by_code": dict(sorted(by_code.items())),
+            "by_city": dict(sorted(by_city.items())),
+        }
 
     def _read_text_file(self, path: Path, max_bytes: int = 200_000) -> str:
         if not path.exists():
@@ -186,7 +234,23 @@ class RunLogger:
         lines: list[str] = []
         lines.append("RUN SUMMARY")
         lines.append(f"Run ID: {self.run_log.get('run_id')}")
-        lines.append(f"Question: {self.run_log.get('question')}")
+        inputs = self.run_log.get("inputs", {})
+        if isinstance(inputs, dict):
+            lines.append(
+                f"Question: {inputs.get('initial_question', '(missing)')}"
+            )
+            lines.append(f"Refined question: {inputs.get('refined_question', self.context_bundle.get('research_question'))}")
+            lines.append(
+                "Selected cities (planned): "
+                f"{json.dumps(inputs.get('selected_cities_planned', []), ensure_ascii=True)}"
+            )
+            lines.append(
+                "Selected cities (found): "
+                f"{json.dumps(inputs.get('selected_cities_found', []), ensure_ascii=True)}"
+            )
+            lines.append(f"Markdown dir: {inputs.get('markdown_dir') or '(unknown)'}")
+            lines.append(f"Markdown file count: {inputs.get('markdown_file_count', 0)}")
+            lines.append(f"Markdown chunk count: {inputs.get('markdown_chunk_count', 0)}")
         lines.append(f"Status: {self.run_log.get('status')}")
         lines.append(f"Finish reason: {self.run_log.get('finish_reason', 'n/a')}")
         lines.append(f"Started: {self.run_log.get('started_at')}")
@@ -251,6 +315,9 @@ class RunLogger:
         lines.append("MARKDOWN_EXCERPTS (LLM)")
         lines.append(self._format_json(markdown_payload))
         lines.append("")
+        lines.append("MARKDOWN_FAILURE_SUMMARY")
+        lines.append(self._format_json(self._summarize_markdown_failures(markdown_payload)))
+        lines.append("")
 
         final_output = self.run_log.get("artifacts", {}).get("final_output")
         lines.append("FINAL_OUTPUT (LLM)")
@@ -280,7 +347,51 @@ class RunLogger:
 
     def update_research_question(self, research_question: str) -> None:
         self.context_bundle["research_question"] = research_question
+        inputs = self.run_log.get("inputs")
+        if isinstance(inputs, dict):
+            inputs["refined_question"] = research_question
+            self.run_log["inputs"] = inputs
+            self.write_run_log()
         self.write_context_bundle()
+
+    def record_markdown_inputs(
+        self,
+        markdown_dir: Path,
+        selected_cities_planned: list[str] | None,
+        documents: list[dict[str, str]],
+    ) -> None:
+        """Capture markdown input snapshot for reproducible run summaries."""
+        planned = sorted(
+            {
+                city.strip()
+                for city in (selected_cities_planned or [])
+                if isinstance(city, str) and city.strip()
+            }
+        )
+        found = sorted(
+            {
+                str(doc.get("city_name", "")).strip()
+                for doc in documents
+                if str(doc.get("city_name", "")).strip()
+            }
+        )
+        file_count = len(
+            {
+                str(doc.get("path", "")).strip()
+                for doc in documents
+                if str(doc.get("path", "")).strip()
+            }
+        )
+        inputs = self.run_log.get("inputs")
+        if not isinstance(inputs, dict):
+            inputs = {}
+        inputs["selected_cities_planned"] = planned
+        inputs["selected_cities_found"] = found
+        inputs["markdown_dir"] = str(markdown_dir)
+        inputs["markdown_file_count"] = file_count
+        inputs["markdown_chunk_count"] = len(documents)
+        self.run_log["inputs"] = inputs
+        self.write_run_log()
 
     def finalize(
         self,

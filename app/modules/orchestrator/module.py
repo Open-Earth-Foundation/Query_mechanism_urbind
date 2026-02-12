@@ -194,6 +194,11 @@ def run_pipeline(
             config.markdown_researcher,
             selected_cities=selected_cities,
         )
+        run_logger.record_markdown_inputs(
+            markdown_dir=config.markdown_dir,
+            selected_cities_planned=selected_cities,
+            documents=documents,
+        )
         markdown_result = markdown_func(
             research_question,
             documents,
