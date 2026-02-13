@@ -170,7 +170,7 @@ def _safe_serialize(value: Any) -> Any:
 
 def _dump_payload(payload: Any) -> str:
     try:
-        return json.dumps(_safe_serialize(payload), ensure_ascii=True)
+        return json.dumps(_safe_serialize(payload), ensure_ascii=False)
     except Exception:  # noqa: BLE001
         return str(payload)
 

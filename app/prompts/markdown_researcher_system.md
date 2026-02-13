@@ -10,8 +10,8 @@ Extract chunk-level evidence from markdown documents for one city.
 Your output is not the final user answer. It is partial evidence that a downstream writer will synthesize.
 
 For each relevant chunk, produce:
-1. A supporting snippet.
-2. A self-contained partial answer grounded only in that snippet.
+1. A supporting quote.
+2. A self-contained partial answer grounded only in that quote.
 
 Never include reasoning text outside the tool call.
 </task>
@@ -34,23 +34,21 @@ The tool argument must match `MarkdownResearchResult`:
 - `error` (`ErrorInfo` | `null`)
 
 Each `MarkdownExcerpt` must include:
-- `snippet` (str): exact supporting text, single line.
+- `quote` (str): verbatim supporting text extracted from the chunk, single line.
 - `city_name` (str): must equal input `city_name`.
-- `partial_answer` (str): short, self-contained factual statement supported by `snippet`, single line.
-- `relevant` (`"yes"` | `"no"`).
+- `partial_answer` (str): short, self-contained factual statement supported by `quote`, single line.
 
-Rules for `relevant`:
-- Use `"yes"` when the chunk directly supports a useful partial answer for the user question.
-- Use `"no"` when the chunk does not contain sufficient support.
-- If `relevant="no"`, `partial_answer` should be an empty string.
-- You may omit non-relevant chunks instead of returning `relevant="no"` entries.
+Relevance rules:
+- Return excerpts only when the chunk directly supports a useful partial answer for the user question.
+- If the chunk is not relevant, return no excerpt for that chunk.
+- Keep city grounding strict: for city-specific questions, do not return excerpts that only support a different city.
 
 Rules for `partial_answer`:
-- Must be fully supported by the snippet.
+- Must be fully supported by the quote.
 - Must be self-contained (resolve city/initiative/entity names explicitly).
-- Must not use meta phrasing such as "the answer is", "this chunk says", "based on the snippet".
-- Must not add facts that are absent from the snippet.
-- Snippets and partial answers must be single-line strings (replace newlines/tabs with spaces).
+- Must not use meta phrasing such as "the answer is", "this chunk says", "based on the quote".
+- Must not add facts that are absent from the quote.
+- Quotes and partial answers must be single-line strings (replace newlines/tabs with spaces).
 
 Error handling:
 - Normal completion should use `error=null`.
@@ -61,10 +59,9 @@ Error handling:
 {
   "excerpts": [
     {
-      "snippet": "The city has deployed 43 public EV charging points as of 2024.",
+      "quote": "The city has deployed 43 public EV charging points as of 2024.",
       "city_name": "Munich",
-      "partial_answer": "Munich reports 43 public EV charging points as of 2024.",
-      "relevant": "yes"
+      "partial_answer": "Munich reports 43 public EV charging points as of 2024."
     }
   ],
   "error": null

@@ -11,25 +11,22 @@ import psycopg
 from app.modules.markdown_researcher.agent import extract_markdown_excerpts
 from app.modules.markdown_researcher.models import MarkdownResearchResult
 from app.modules.markdown_researcher.services import load_markdown_documents
-from app.modules.orchestrator.agent import decide_next_action, refine_research_question
+from app.modules.orchestrator.agent import refine_research_question
 from app.modules.orchestrator.models import (
-    OrchestratorDecision,
     ResearchQuestionRefinement,
 )
 from app.modules.orchestrator.utils import (
     attach_run_file_logger,
     collect_identifiers,
     fetch_city_list,
+    handle_write_decision,
     handle_task_error,
-    run_orchestration_loop,
     run_sql_rounds,
 )
 from app.modules.orchestrator.utils.error_handlers import (
     detach_run_file_logger,
 )
 from app.modules.orchestrator.utils.io import (
-    load_context_bundle,
-    write_draft_and_final,
     write_json,
 )
 from app.modules.sql_researcher.agent import plan_sql_queries
@@ -37,7 +34,6 @@ from app.modules.sql_researcher.models import SqlQueryPlan
 from app.modules.sql_researcher.services import (
     build_sql_research_result,
     cap_results,
-    execute_queries,
 )
 from app.modules.writer.agent import write_markdown
 from app.modules.writer.models import WriterOutput
@@ -61,13 +57,12 @@ def run_pipeline(
     refine_question_func: Callable[
         ..., ResearchQuestionRefinement
     ] = refine_research_question,
-    decide_func: Callable[..., OrchestratorDecision] = decide_next_action,
     writer_func: Callable[..., WriterOutput] = write_markdown,
 ) -> RunPaths:
     """
     Run the multi-agent document builder pipeline.
 
-    Orchestrates SQL research (when enabled), markdown extraction, and document writing in an agentic loop.
+    Orchestrates SQL research (when enabled), markdown extraction, and final writing.
 
     Args:
         question: User question to answer
@@ -78,7 +73,6 @@ def run_pipeline(
         sql_plan_func: SQL planning function (default: plan_sql_queries)
         markdown_func: Markdown extraction function (default: extract_markdown_excerpts)
         refine_question_func: Question refinement function (default: refine_research_question)
-        decide_func: Orchestration decision function (default: decide_next_action)
         writer_func: Document writing function (default: write_markdown)
 
     Returns:
@@ -192,19 +186,24 @@ def run_pipeline(
         }
 
     def _run_initial_markdown() -> dict[str, object]:
-        documents = load_markdown_documents(
+        markdown_chunks = load_markdown_documents(
             config.markdown_dir,
             config.markdown_researcher,
             selected_cities=selected_cities,
         )
+        run_logger.record_markdown_inputs(
+            markdown_dir=config.markdown_dir,
+            selected_cities_planned=selected_cities,
+            markdown_chunks=markdown_chunks,
+        )
         markdown_result = markdown_func(
             research_question,
-            documents,
+            markdown_chunks,
             config,
             api_key,
             log_llm_payload=log_llm_payload,
         )
-        return {"documents": documents, "result": markdown_result}
+        return {"markdown_chunks": markdown_chunks, "result": markdown_result}
 
     sql_payload: dict[str, object] | None = None
     markdown_payload: dict[str, object] | None = None
@@ -275,12 +274,27 @@ def run_pipeline(
         run_logger.update_sql_bundle(sql_result.model_dump())
 
     # Process and log initial markdown results
-    documents = markdown_payload["documents"]
+    markdown_chunks = markdown_payload["markdown_chunks"]
     markdown_result = markdown_payload["result"]
     if isinstance(markdown_result, MarkdownResearchResult):
-        write_json(paths.markdown_excerpts, markdown_result.model_dump())
+        markdown_bundle = markdown_result.model_dump()
+        inspected_cities = sorted(
+            {
+                str(document.get("city_name", "")).strip()
+                for document in markdown_chunks
+                if str(document.get("city_name", "")).strip()
+            }
+        )
+        markdown_bundle["inspected_cities"] = inspected_cities
+        excerpts = markdown_bundle.get("excerpts", [])
+        if isinstance(excerpts, list):
+            markdown_bundle["excerpt_count"] = len(excerpts)
+        else:
+            markdown_bundle["excerpt_count"] = 0
+
+        write_json(paths.markdown_excerpts, markdown_bundle)
         run_logger.record_artifact("markdown_excerpts", paths.markdown_excerpts)
-        run_logger.update_markdown_bundle(markdown_result.model_dump())
+        run_logger.update_markdown_bundle(markdown_bundle)
         if markdown_result.status == "error":
             run_logger.record_decision(markdown_result.model_dump())
             run_logger.finalize("failed", finish_reason="markdown_result_error")
@@ -291,19 +305,20 @@ def run_pipeline(
         detach_run_file_logger(run_log_handler)
         return paths
 
-    # Run orchestration loop
-    return run_orchestration_loop(
+    # Write final output directly from the prepared context bundle.
+    context_bundle = run_logger.context_bundle
+    result = handle_write_decision(
         question,
-        max_iterations=4,
+        context_bundle,
         paths=paths,
         run_logger=run_logger,
         run_log_handler=run_log_handler,
         config=config,
         api_key=api_key,
         log_llm_payload=log_llm_payload,
-        decide_func=decide_func,
         writer_func=writer_func,
     )
+    return result if result is not None else paths
 
 
 __all__ = ["run_pipeline"]

@@ -62,10 +62,9 @@ def test_markdown_returns_partial_success_with_city_failure_markers(
                 MarkdownResearchResult(
                     excerpts=[
                         MarkdownExcerpt(
-                            snippet="snippet",
+                            quote="City A allocated EUR 1.2 million to retrofit public buildings in 2024.",
                             city_name="A",
-                            partial_answer="answer",
-                            relevant="yes",
+                            partial_answer="City A allocated EUR 1.2 million to retrofit public buildings in 2024.",
                         )
                     ]
                 )

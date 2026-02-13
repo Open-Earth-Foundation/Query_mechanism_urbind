@@ -14,7 +14,6 @@ from app.utils.config import (
 )
 from app.modules.orchestrator.module import run_pipeline
 from app.modules.orchestrator.models import (
-    OrchestratorDecision,
     ResearchQuestionRefinement,
 )
 from app.modules.sql_researcher.models import SqlQuery, SqlQueryPlan
@@ -44,10 +43,9 @@ def _stub_markdown(
     **_kwargs: dict[str, object],
 ) -> MarkdownResearchResult:
     excerpt = MarkdownExcerpt(
-        snippet="Sample",
+        quote="Munich has deployed 43 existing public chargers as of 2024.",
         city_name="Munich",
-        partial_answer="Stub answer",
-        relevant="yes",
+        partial_answer="Munich has deployed 43 existing public chargers as of 2024.",
     )
     return MarkdownResearchResult(excerpts=[excerpt])
 
@@ -59,26 +57,6 @@ def _stub_refine_question(
     **_kwargs: dict[str, object],
 ) -> ResearchQuestionRefinement:
     return ResearchQuestionRefinement(research_question=question)
-
-
-def _stub_decision(
-    question: str,
-    context_bundle: dict,
-    config: AppConfig,
-    api_key: str,
-    **_kwargs: dict[str, object],
-) -> OrchestratorDecision:
-    return OrchestratorDecision(action="write", reason="Enough")
-
-
-def _stub_decision_stop(
-    question: str,
-    context_bundle: dict,
-    config: AppConfig,
-    api_key: str,
-    **_kwargs: dict[str, object],
-) -> OrchestratorDecision:
-    return OrchestratorDecision(action="stop", reason="No answer possible")
 
 
 def _stub_writer(
@@ -132,7 +110,6 @@ def test_run_pipeline_creates_artifacts(
         sql_plan_func=_stub_sql_plan,
         markdown_func=_stub_markdown,
         refine_question_func=_stub_refine_question,
-        decide_func=_stub_decision,
         writer_func=_stub_writer,
     )
 
@@ -168,7 +145,6 @@ def test_run_pipeline_sql_disabled_skips_db(
         sql_plan_func=_stub_sql_plan,
         markdown_func=_stub_markdown,
         refine_question_func=_stub_refine_question,
-        decide_func=_stub_decision,
         writer_func=_stub_writer,
     )
 
@@ -177,7 +153,7 @@ def test_run_pipeline_sql_disabled_skips_db(
     assert run_log["status"] == "completed"
 
 
-def test_run_pipeline_stop_with_sql_disabled(
+def test_run_pipeline_writes_output_with_sql_disabled(
     tmp_path: Path, monkeypatch: pytest.MonkeyPatch
 ) -> None:
     monkeypatch.setenv("OPENROUTER_API_KEY", "test")
@@ -203,14 +179,13 @@ def test_run_pipeline_stop_with_sql_disabled(
         sql_plan_func=_stub_sql_plan,
         markdown_func=_stub_markdown,
         refine_question_func=_stub_refine_question,
-        decide_func=_stub_decision_stop,
         writer_func=_stub_writer,
     )
 
-    assert not paths.final_output.exists()
+    assert paths.final_output.exists()
     run_log = json.loads(paths.run_log.read_text(encoding="utf-8"))
-    assert run_log["status"] == "stopped"
-    assert run_log["finish_reason"] == "stopped_by_orchestrator"
+    assert run_log["status"] == "completed"
+    assert run_log["finish_reason"] == "completed (write)"
 
 
 def test_run_pipeline_detaches_run_log_handler(
@@ -243,7 +218,6 @@ def test_run_pipeline_detaches_run_log_handler(
             sql_plan_func=_stub_sql_plan,
             markdown_func=_stub_markdown,
             refine_question_func=_stub_refine_question,
-            decide_func=_stub_decision,
             writer_func=_stub_writer,
         )
         first_run_log_path = str(first_paths.base_dir / "run.log")
@@ -261,7 +235,6 @@ def test_run_pipeline_detaches_run_log_handler(
             sql_plan_func=_stub_sql_plan,
             markdown_func=_stub_markdown,
             refine_question_func=_stub_refine_question,
-            decide_func=_stub_decision,
             writer_func=_stub_writer,
         )
         second_run_log_path = str(second_paths.base_dir / "run.log")
@@ -327,7 +300,6 @@ def test_run_pipeline_refines_question_before_markdown(
         sql_plan_func=_stub_sql_plan,
         markdown_func=_capture_markdown_question,
         refine_question_func=_refine_for_test,
-        decide_func=_stub_decision,
         writer_func=_stub_writer,
     )
 
@@ -341,3 +313,138 @@ def test_run_pipeline_refines_question_before_markdown(
         context_bundle["research_question"]
         == "For Munich, list concrete documented initiatives with direct evidence."
     )
+
+
+def test_run_pipeline_end_to_end_propagates_query_markdown_and_writer_output(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    monkeypatch.setenv("OPENROUTER_API_KEY", "test")
+
+    docs_dir = tmp_path / "documents"
+    docs_dir.mkdir()
+    (docs_dir / "Munich.md").write_text("# Munich\n\nSample", encoding="utf-8")
+
+    config = AppConfig(
+        orchestrator=OrchestratorConfig(model="test", context_bundle_name="context_bundle.json"),
+        sql_researcher=SqlResearcherConfig(model="test", max_result_tokens=100000),
+        markdown_researcher=MarkdownResearcherConfig(model="test"),
+        writer=AgentConfig(model="test"),
+        runs_dir=tmp_path / "output",
+        source_db_path=tmp_path / "missing.db",
+        markdown_dir=docs_dir,
+        enable_sql=False,
+    )
+
+    input_question = "What initiatives exist for Munich?"
+    refined_question = "For Munich, list concrete documented initiatives with direct evidence."
+    expected_quote = "Munich has deployed 43 existing public chargers as of 2024."
+    expected_partial_answer = (
+        "Munich has deployed 43 existing public chargers as of 2024."
+    )
+    observed: dict[str, object] = {}
+
+    def _refine_for_test(
+        question: str,
+        config: AppConfig,
+        api_key: str,
+        **_kwargs: dict[str, object],
+    ) -> ResearchQuestionRefinement:
+        assert question == input_question
+        return ResearchQuestionRefinement(research_question=refined_question)
+
+    def _markdown_for_test(
+        question: str,
+        documents: list[dict[str, str]],
+        config: AppConfig,
+        api_key: str,
+        **_kwargs: dict[str, object],
+    ) -> MarkdownResearchResult:
+        observed["markdown_question"] = question
+        observed["markdown_documents"] = documents
+        return MarkdownResearchResult(
+            excerpts=[
+                MarkdownExcerpt(
+                    quote=expected_quote,
+                    city_name="Munich",
+                    partial_answer=expected_partial_answer,
+                )
+            ]
+        )
+
+    def _writer_for_test(
+        question: str,
+        context_bundle: dict,
+        config: AppConfig,
+        api_key: str,
+        **_kwargs: dict[str, object],
+    ) -> WriterOutput:
+        observed["writer_question"] = question
+        observed["writer_context_bundle"] = context_bundle
+        excerpt = context_bundle["markdown"]["excerpts"][0]
+        content = f"# Answer\n\n{excerpt['partial_answer']}"
+        return WriterOutput(content=content)
+
+    paths = run_pipeline(
+        question=input_question,
+        config=config,
+        sql_plan_func=_stub_sql_plan,
+        markdown_func=_markdown_for_test,
+        refine_question_func=_refine_for_test,
+        writer_func=_writer_for_test,
+    )
+
+    assert paths.final_output.exists()
+    assert observed["markdown_question"] == refined_question
+    assert observed["writer_question"] == input_question
+
+    markdown_documents = observed["markdown_documents"]
+    assert isinstance(markdown_documents, list)
+    assert len(markdown_documents) == 1
+
+    writer_bundle = observed["writer_context_bundle"]
+    assert isinstance(writer_bundle, dict)
+    markdown_bundle = writer_bundle["markdown"]
+    assert isinstance(markdown_bundle, dict)
+    assert markdown_bundle["status"] == "success"
+    assert markdown_bundle["inspected_cities"] == ["Munich"]
+    assert markdown_bundle["excerpt_count"] == 1
+    excerpts = markdown_bundle["excerpts"]
+    assert isinstance(excerpts, list)
+    assert len(excerpts) == 1
+    first_excerpt = excerpts[0]
+    assert "quote" in first_excerpt
+    assert "partial_answer" in first_excerpt
+    assert "snippet" not in first_excerpt
+    assert first_excerpt["quote"] == expected_quote
+    assert first_excerpt["partial_answer"] == expected_partial_answer
+
+    assert writer_bundle["markdown"] == markdown_bundle
+
+    final_output = paths.final_output.read_text(encoding="utf-8")
+    assert f"# Question\n{input_question}\n\n" in final_output
+    assert expected_partial_answer in final_output
+
+    persisted_context_bundle = json.loads(paths.context_bundle.read_text(encoding="utf-8"))
+    assert persisted_context_bundle["research_question"] == refined_question
+    persisted_markdown = persisted_context_bundle["markdown"]
+    assert isinstance(persisted_markdown, dict)
+    assert persisted_markdown["inspected_cities"] == ["Munich"]
+    assert persisted_markdown["excerpt_count"] == 1
+    assert persisted_markdown["excerpts"][0]["quote"] == expected_quote
+    assert persisted_markdown["excerpts"][0]["partial_answer"] == expected_partial_answer
+
+    markdown_artifact = json.loads(paths.markdown_excerpts.read_text(encoding="utf-8"))
+    assert markdown_artifact["inspected_cities"] == ["Munich"]
+    assert markdown_artifact["excerpt_count"] == 1
+    artifact_excerpt = markdown_artifact["excerpts"][0]
+    assert "quote" in artifact_excerpt
+    assert "partial_answer" in artifact_excerpt
+    assert "snippet" not in artifact_excerpt
+
+    run_log = json.loads(paths.run_log.read_text(encoding="utf-8"))
+    assert run_log["inputs"]["markdown_chunk_count"] == 1
+    assert run_log["inputs"]["markdown_excerpt_count"] == 1
+
+    run_summary = paths.run_summary.read_text(encoding="utf-8")
+    assert "Markdown chunk count: 1" in run_summary
+    assert "Markdown excerpt count: 1" in run_summary

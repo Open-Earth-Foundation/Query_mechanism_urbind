@@ -19,7 +19,7 @@ logger = logging.getLogger(__name__)
 # these patterns are not used. Kept in case we switch to frameworks without strict output typing.
 # _PY_STRING_LITERAL = r"(?:'[^'\\]*(?:\\.[^'\\]*)*'|\"[^\"\\]*(?:\\.[^\"\\]*)*\")"
 # _EXCERPT_REPR_PATTERN = re.compile(
-#     rf"MarkdownExcerpt\(\s*snippet=(?P<snippet>{_PY_STRING_LITERAL})\s*,\s*"
+#     rf"MarkdownExcerpt\(\s*quote=(?P<quote>{_PY_STRING_LITERAL})\s*,\s*"
 #     rf"city_name=(?P<city_name>{_PY_STRING_LITERAL})\s*,\s*"
 #     rf"(?:partial_answer|answer)=(?P<partial_answer>{_PY_STRING_LITERAL})\s*,\s*"
 #     rf"relevant=(?P<relevant>{_PY_STRING_LITERAL})\s*\)",
@@ -54,13 +54,13 @@ logger = logging.getLogger(__name__)
 #     excerpts: list[MarkdownExcerpt] = []
 #     for match in _EXCERPT_REPR_PATTERN.finditer(text):
 #         try:
-#             snippet = ast.literal_eval(match.group("snippet"))
+#             quote = ast.literal_eval(match.group("quote"))
 #             city_name = ast.literal_eval(match.group("city_name"))
 #             partial_answer = ast.literal_eval(match.group("partial_answer"))
 #             relevant = ast.literal_eval(match.group("relevant"))
 #             excerpts.append(
 #                 MarkdownExcerpt(
-#                     snippet=str(snippet),
+#                     quote=str(quote),
 #                     city_name=str(city_name),
 #                     partial_answer=str(partial_answer),
 #                     relevant=str(relevant),

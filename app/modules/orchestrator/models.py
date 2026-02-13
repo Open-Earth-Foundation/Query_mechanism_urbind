@@ -12,7 +12,6 @@ class OrchestratorDecision(BaseModel):
     action: Literal["write", "stop"]
     reason: str
     confidence: float | None = None
-    follow_up_question: str | None = None
     error: ErrorInfo | None = None
 
 

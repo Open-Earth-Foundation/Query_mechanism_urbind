@@ -38,7 +38,6 @@ class RunPaths:
     sql_results_full: Path
     markdown_dir: Path
     markdown_excerpts: Path
-    drafts_dir: Path
     final_output: Path
 
 
@@ -46,7 +45,6 @@ def create_run_paths(runs_dir: Path, run_id: str, context_bundle_name: str) -> R
     base_dir = ensure_run_dir(runs_dir, run_id)
     sql_dir = base_dir / "sql"
     markdown_dir = base_dir / "markdown"
-    drafts_dir = base_dir / "drafts"
 
     return RunPaths(
         base_dir=base_dir,
@@ -62,7 +60,6 @@ def create_run_paths(runs_dir: Path, run_id: str, context_bundle_name: str) -> R
         sql_results_full=sql_dir / "results_full.json",
         markdown_dir=markdown_dir,
         markdown_excerpts=markdown_dir / "excerpts.json",
-        drafts_dir=drafts_dir,
         final_output=base_dir / "final.md",
     )
 

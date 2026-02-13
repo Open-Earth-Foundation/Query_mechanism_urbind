@@ -96,7 +96,7 @@ def decide_next_action(
     }
     result = run_agent_sync(
         agent,
-        json.dumps(payload, ensure_ascii=True),
+        json.dumps(payload, ensure_ascii=False),
         log_llm_payload=log_llm_payload,
     )
     output = result.final_output
@@ -125,7 +125,7 @@ def refine_research_question(
     }
     result = run_agent_sync(
         agent,
-        json.dumps(payload, ensure_ascii=True),
+        json.dumps(payload, ensure_ascii=False),
         log_llm_payload=log_llm_payload,
     )
     output = result.final_output

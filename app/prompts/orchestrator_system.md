@@ -29,7 +29,6 @@ The tool argument must match `OrchestratorDecision`:
 - `action` (`"write"` | `"stop"`)
 - `reason` (str)
 - `confidence` (optional float)
-- `follow_up_question` (optional str)
 - `error` (`ErrorInfo` | `null`)
 
 Action policy:
@@ -51,7 +50,6 @@ If token limits are provided, keep `reason` concise and focused.
   "action": "write",
   "reason": "Available markdown and SQL evidence are sufficient to produce a grounded response.",
   "confidence": 0.83,
-  "follow_up_question": null,
   "error": null
 }
 </example_output>

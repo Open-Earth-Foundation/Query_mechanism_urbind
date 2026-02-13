@@ -75,7 +75,7 @@ def plan_sql_queries(
         payload["sql_results_summary"] = sql_results_summary
     result = run_agent_sync(
         agent,
-        json.dumps(payload, ensure_ascii=True),
+        json.dumps(payload, ensure_ascii=False),
         log_llm_payload=log_llm_payload,
     )
     output = result.final_output
@@ -91,7 +91,7 @@ def plan_sql_queries(
         }
         retry_result = run_agent_sync(
             agent,
-            json.dumps(retry_payload, ensure_ascii=True),
+            json.dumps(retry_payload, ensure_ascii=False),
             log_llm_payload=log_llm_payload,
         )
         retry_output = retry_result.final_output
