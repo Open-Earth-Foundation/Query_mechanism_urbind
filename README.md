@@ -175,7 +175,8 @@ flowchart TD
 What each stage does:
 
 - Orchestrator receives the input question and creates a research-oriented question.
-- Extractor reads markdown documents and returns evidence excerpts selected by the markdown researcher; `excerpt_count` is recorded for transparency.
+- Extractor reads markdown documents in chunks and returns evidence excerpts selected by the markdown researcher.
+- `markdown_chunk_count` tracks how many chunk inputs were processed; `excerpt_count` (also logged as `markdown_excerpt_count` in run metadata) tracks how many evidence snippets were extracted from those chunks.
 - Context bundle is updated with extracted evidence for downstream writing.
 - Orchestrator hands the prepared context bundle directly to the writer.
 - Writer uses the context bundle and writes final output text to `output/<run_id>/final.md`. The response starts with an evidence preface (based on `excerpt_count`); when `excerpt_count=0`, it returns a "no evidence found" response.
@@ -201,7 +202,7 @@ Artifacts are written under `output/<run_id>/`:
 
 - `run.json`: machine-readable run metadata (status, timestamps, artifacts, decisions).
 - `run.log`: detailed runtime logs, including per-agent `LLM_USAGE` lines.
-- `run_summary.txt`: human-readable consolidated report. Header includes `Started`, `Completed`, and explicit `Total runtime` in seconds, plus `LLM Usage` totals/per-agent. It also captures an input snapshot (`initial question`, `refined question`, `selected cities` planned/found, markdown dir/file/chunk counts) and a `MARKDOWN_FAILURE_SUMMARY` aggregated from batch failures.
+- `run_summary.txt`: human-readable consolidated report. Header includes `Started`, `Completed`, and explicit `Total runtime` in seconds, plus `LLM Usage` totals/per-agent. It also captures an input snapshot (`initial question`, `refined question`, `selected cities` planned/found, markdown dir/file/chunk/excerpt counts) and a `MARKDOWN_FAILURE_SUMMARY` aggregated from batch failures.
 - `context_bundle.json`: payload passed between agents (`sql`, `markdown`, `research_question`, final path).
 - `research_question.json`: orchestrator-refined research version of the user question.
 - `schema_summary.json` (when SQL is enabled): schema digest derived from `app/db_models/`.
@@ -222,6 +223,12 @@ Artifacts are written under `output/<run_id>/`:
 - `partial_answer`: concise fact grounded in the quote.
 - `inspected_cities` (bundle-level): city names inspected by markdown extraction.
 - `excerpt_count` (bundle-level): number of extracted excerpts included in the bundle.
+
+Count semantics:
+
+- `markdown_chunk_count` (run input snapshot): number of markdown chunks sent to the markdown researcher.
+- `excerpt_count` (markdown bundle): number of extracted evidence snippets returned by the markdown researcher.
+- `markdown_excerpt_count` (run input snapshot): mirrors `excerpt_count` so summary and run metadata can show chunk count and excerpt count side by side.
 
 ## Run (Docker)
 

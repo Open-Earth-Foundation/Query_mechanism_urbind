@@ -440,3 +440,11 @@ def test_run_pipeline_end_to_end_propagates_query_markdown_and_writer_output(
     assert "quote" in artifact_excerpt
     assert "partial_answer" in artifact_excerpt
     assert "snippet" not in artifact_excerpt
+
+    run_log = json.loads(paths.run_log.read_text(encoding="utf-8"))
+    assert run_log["inputs"]["markdown_chunk_count"] == 1
+    assert run_log["inputs"]["markdown_excerpt_count"] == 1
+
+    run_summary = paths.run_summary.read_text(encoding="utf-8")
+    assert "Markdown chunk count: 1" in run_summary
+    assert "Markdown excerpt count: 1" in run_summary

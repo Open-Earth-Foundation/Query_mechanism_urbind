@@ -186,7 +186,7 @@ def run_pipeline(
         }
 
     def _run_initial_markdown() -> dict[str, object]:
-        documents = load_markdown_documents(
+        markdown_chunks = load_markdown_documents(
             config.markdown_dir,
             config.markdown_researcher,
             selected_cities=selected_cities,
@@ -194,16 +194,16 @@ def run_pipeline(
         run_logger.record_markdown_inputs(
             markdown_dir=config.markdown_dir,
             selected_cities_planned=selected_cities,
-            documents=documents,
+            markdown_chunks=markdown_chunks,
         )
         markdown_result = markdown_func(
             research_question,
-            documents,
+            markdown_chunks,
             config,
             api_key,
             log_llm_payload=log_llm_payload,
         )
-        return {"documents": documents, "result": markdown_result}
+        return {"markdown_chunks": markdown_chunks, "result": markdown_result}
 
     sql_payload: dict[str, object] | None = None
     markdown_payload: dict[str, object] | None = None
@@ -274,14 +274,14 @@ def run_pipeline(
         run_logger.update_sql_bundle(sql_result.model_dump())
 
     # Process and log initial markdown results
-    documents = markdown_payload["documents"]
+    markdown_chunks = markdown_payload["markdown_chunks"]
     markdown_result = markdown_payload["result"]
     if isinstance(markdown_result, MarkdownResearchResult):
         markdown_bundle = markdown_result.model_dump()
         inspected_cities = sorted(
             {
                 str(document.get("city_name", "")).strip()
-                for document in documents
+                for document in markdown_chunks
                 if str(document.get("city_name", "")).strip()
             }
         )

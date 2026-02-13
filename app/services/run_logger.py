@@ -25,6 +25,7 @@ class RunLogger:
                 "markdown_dir": None,
                 "markdown_file_count": 0,
                 "markdown_chunk_count": 0,
+                "markdown_excerpt_count": 0,
             },
             "status": "started",
             "started_at": datetime.now(timezone.utc).isoformat(),
@@ -251,6 +252,7 @@ class RunLogger:
             lines.append(f"Markdown dir: {inputs.get('markdown_dir') or '(unknown)'}")
             lines.append(f"Markdown file count: {inputs.get('markdown_file_count', 0)}")
             lines.append(f"Markdown chunk count: {inputs.get('markdown_chunk_count', 0)}")
+            lines.append(f"Markdown excerpt count: {inputs.get('markdown_excerpt_count', 0)}")
         lines.append(f"Status: {self.run_log.get('status')}")
         lines.append(f"Finish reason: {self.run_log.get('finish_reason', 'n/a')}")
         lines.append(f"Started: {self.run_log.get('started_at')}")
@@ -342,7 +344,15 @@ class RunLogger:
         self.write_context_bundle()
 
     def update_markdown_bundle(self, markdown_payload: dict[str, Any]) -> None:
+        """Persist markdown payload and sync excerpt count in run inputs."""
         self.context_bundle["markdown"] = markdown_payload
+        excerpt_count = markdown_payload.get("excerpt_count", 0)
+        normalized_excerpt_count = excerpt_count if isinstance(excerpt_count, int) else 0
+        inputs = self.run_log.get("inputs")
+        if isinstance(inputs, dict):
+            inputs["markdown_excerpt_count"] = normalized_excerpt_count
+            self.run_log["inputs"] = inputs
+            self.write_run_log()
         self.write_context_bundle()
 
     def update_research_question(self, research_question: str) -> None:
@@ -358,9 +368,12 @@ class RunLogger:
         self,
         markdown_dir: Path,
         selected_cities_planned: list[str] | None,
-        documents: list[dict[str, str]],
+        markdown_chunks: list[dict[str, str]],
     ) -> None:
-        """Capture markdown input snapshot for reproducible run summaries."""
+        """Capture markdown input snapshot for reproducible run summaries.
+
+        ``markdown_chunks`` is expected to contain one entry per chunk.
+        """
         planned = sorted(
             {
                 city.strip()
@@ -371,14 +384,14 @@ class RunLogger:
         found = sorted(
             {
                 str(doc.get("city_name", "")).strip()
-                for doc in documents
+                for doc in markdown_chunks
                 if str(doc.get("city_name", "")).strip()
             }
         )
         file_count = len(
             {
                 str(doc.get("path", "")).strip()
-                for doc in documents
+                for doc in markdown_chunks
                 if str(doc.get("path", "")).strip()
             }
         )
@@ -389,7 +402,8 @@ class RunLogger:
         inputs["selected_cities_found"] = found
         inputs["markdown_dir"] = str(markdown_dir)
         inputs["markdown_file_count"] = file_count
-        inputs["markdown_chunk_count"] = len(documents)
+        inputs["markdown_chunk_count"] = len(markdown_chunks)
+        inputs["markdown_excerpt_count"] = 0
         self.run_log["inputs"] = inputs
         self.write_run_log()
 
