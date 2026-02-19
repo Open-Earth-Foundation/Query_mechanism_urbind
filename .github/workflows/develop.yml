@@ -28,7 +28,7 @@ on:
     types: [opened, synchronize, reopened]
 
 concurrency:
-  group: urbind-query-mechanism-main-${{ github.event_name }}-${{ github.event.pull_request.number || github.ref_name }}
+  group: ${{ github.event.repository.name }}-main-${{ github.event_name }}-${{ github.event.pull_request.number || github.ref_name }}
   cancel-in-progress: true
 
 jobs:
@@ -68,7 +68,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       REGISTRY: ghcr.io
-      REPOSITORY: open-earth-foundation/urbind-query-mechanism-backend
+      REPOSITORY: ${{ github.repository }}-backend
     outputs:
       backend_image: ${{ steps.meta.outputs.backend_image }}
     steps:
@@ -109,7 +109,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       REGISTRY: ghcr.io
-      REPOSITORY: open-earth-foundation/urbind-query-mechanism-frontend
+      REPOSITORY: ${{ github.repository }}-frontend
     outputs:
       frontend_image: ${{ steps.meta.outputs.frontend_image }}
       frontend_api_base_url: ${{ steps.meta.outputs.frontend_api_base_url }}
@@ -124,7 +124,7 @@ jobs:
           COMMIT_HASH=$(git rev-parse --short HEAD)
           API_BASE="${{ vars.FRONTEND_API_BASE_URL }}"
           if [ -z "$API_BASE" ]; then
-            API_BASE="https://urbind-query-mechanism-api.openearth.dev"
+            API_BASE="https://query-mechanism-urbind-api.openearth.dev"
           fi
           echo "frontend_image=${{ env.REGISTRY }}/${{ env.REPOSITORY }}:${COMMIT_HASH}" >> "$GITHUB_OUTPUT"
           echo "frontend_api_base_url=$API_BASE" >> "$GITHUB_OUTPUT"
