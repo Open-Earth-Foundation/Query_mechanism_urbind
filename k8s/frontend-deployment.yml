@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: ghcr.io/open-earth-foundation/urbind-query-mechanism-frontend:dev
+          image: ghcr.io/open-earth-foundation/query_mechanism_urbind-frontend:dev
           imagePullPolicy: Always
           ports:
             - containerPort: 3000

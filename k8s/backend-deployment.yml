@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: ghcr.io/open-earth-foundation/urbind-query-mechanism-backend:dev
+          image: ghcr.io/open-earth-foundation/query_mechanism_urbind-backend:dev
           imagePullPolicy: Always
           ports:
             - containerPort: 8000
