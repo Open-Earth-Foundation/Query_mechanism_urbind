@@ -23,7 +23,7 @@ echo "<your_github_pat>" | docker login ghcr.io -u "<your_github_username>" --pa
 Windows/Linux (`amd64`):
 
 ```powershell
-docker buildx build --platform linux/amd64 -f Dockerfile.backend -t ghcr.io/open-earth-foundation/urbind-query-mechanism-backend:latest --push .
+docker buildx build --platform linux/amd64 -f backend/Dockerfile -t ghcr.io/open-earth-foundation/urbind-query-mechanism-backend:latest --push .
 ```
 
 ## 4. Build and Push Frontend Image
@@ -138,7 +138,7 @@ Expected:
 ## 14. Update Release (Manual Repeat)
 
 ```powershell
-docker buildx build --platform linux/amd64 -f Dockerfile.backend -t ghcr.io/open-earth-foundation/urbind-query-mechanism-backend:latest --push .
+docker buildx build --platform linux/amd64 -f backend/Dockerfile -t ghcr.io/open-earth-foundation/urbind-query-mechanism-backend:latest --push .
 docker buildx build --platform linux/amd64 -f frontend/Dockerfile --build-arg NEXT_PUBLIC_API_BASE_URL=https://urbind-query-mechanism-api.openearth.dev -t ghcr.io/open-earth-foundation/urbind-query-mechanism-frontend:latest --push ./frontend
 
 kubectl set image deployment/urbind-query-mechanism-backend backend=ghcr.io/open-earth-foundation/urbind-query-mechanism-backend:latest

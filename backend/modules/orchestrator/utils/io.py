@@ -23,7 +23,7 @@ def write_json(path: Path, payload: object) -> None:
         payload: Object to serialize as JSON
     """
     path.write_text(
-        json.dumps(payload, indent=2, ensure_ascii=True, default=str),
+        json.dumps(payload, indent=2, ensure_ascii=False, default=str),
         encoding="utf-8",
     )
 
@@ -43,31 +43,26 @@ def load_context_bundle(paths: RunPaths) -> dict:
     return json.loads(paths.context_bundle.read_text(encoding="utf-8"))
 
 
-def write_draft_and_final(
+def write_final_output(
     question: str,
     content: str,
     paths: RunPaths,
     run_logger: RunLogger,
+    finish_reason: str = "completed",
 ) -> None:
     """
-    Write draft and final output files.
-
-    Creates both a numbered draft and final output file with a question header.
+    Write the final output file.
 
     Args:
         question: Original user question
         content: Generated content
         paths: Run paths for output
         run_logger: Logger for recording artifacts
+        finish_reason: Finish reason for the output
     """
     question_header = f"# Question\n{question}\n\n"
-    rendered_content = f"{question_header}{content}"
-
-    draft_index = len(run_logger.run_log.get("drafts", [])) + 1
-    draft_path = paths.drafts_dir / f"draft_{draft_index:02d}.md"
-    draft_path.write_text(rendered_content, encoding="utf-8")
-    run_logger.record_draft(draft_path)
-
+    finish_note = f"\n\n---\nFinish reason: {finish_reason}\n"
+    rendered_content = f"{question_header}{content}{finish_note}"
     final_path = paths.final_output
     final_path.write_text(rendered_content, encoding="utf-8")
     run_logger.record_artifact("final_output", final_path)
@@ -76,5 +71,5 @@ def write_draft_and_final(
 __all__ = [
     "write_json",
     "load_context_bundle",
-    "write_draft_and_final",
+    "write_final_output",
 ]

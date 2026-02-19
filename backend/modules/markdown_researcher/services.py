@@ -49,21 +49,26 @@ def split_documents_by_city(
 def load_markdown_documents(
     markdown_dir: Path,
     config: MarkdownResearcherConfig,
+    selected_cities: list[str] | None = None,
 ) -> list[dict[str, str]]:
     """Load and chunk markdown files for the researcher input payload.
 
     Behavior:
     - Recursively discovers ``*.md`` files under ``markdown_dir``.
+    - Optionally filters files by ``selected_cities`` (matched against ``Path.stem``,
+      case-insensitive).
     - Assigns ``city_name`` from ``Path.stem`` intentionally, so files with the
       same stem in different subdirectories map to the same logical city.
-    - Returns one entry per chunk, preserving ``path``, ``city_name``, and
-      chunk metadata.
+    - Returns one entry per chunk with ``path``, ``city_name``, and ``content``.
     """
     if not markdown_dir.exists():
         raise FileNotFoundError(f"Markdown directory not found: {markdown_dir}")
 
     docs: list[dict[str, str]] = []
     files = sorted(markdown_dir.rglob("*.md"))
+    if selected_cities:
+        requested = {city.strip().casefold() for city in selected_cities if city.strip()}
+        files = [path for path in files if path.stem.casefold() in requested]
     if len(files) > config.max_files:
         files = files[: config.max_files]
 
@@ -76,14 +81,11 @@ def load_markdown_documents(
         city_name = path.stem
         content = path.read_text(encoding="utf-8")
         chunks = chunk_text(content, max_chunk_tokens, config.chunk_overlap_tokens)
-        total_chunks = len(chunks)
-        for idx, chunk in enumerate(chunks, start=1):
+        for chunk in chunks:
             entry = {
                 "path": str(path),
                 "city_name": city_name,
                 "content": chunk,
-                "chunk_index": idx,
-                "chunk_count": total_chunks,
             }
             docs.append(entry)
 

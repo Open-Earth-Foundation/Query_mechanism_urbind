@@ -4,53 +4,64 @@ Multi-agent document builder that answers user questions by combining SQL data (
 
 ## Requirements
 
-- Python 3.10+
+- Python 3.11+
 - Node.js 20+ (frontend)
 - Local SQLite source DB derived from `backend/db_models/` (required only when SQL is enabled)
 - `OPENROUTER_API_KEY` in environment
 
 ## Install
 
-### pip
+We use `uv` for dependency management with `pyproject.toml` as the single source of truth. Install dependencies with:
 
-```
-pip install -e .
-```
-
-If you prefer a frozen requirements file:
-
-```
-pip install -r requirements.txt
+```bash
+uv sync
 ```
 
-### uv
+To add a new production dependency:
 
+```bash
+uv add package-name
 ```
-uv pip install -e .
+
+To add a development dependency (e.g., pytest):
+
+```bash
+uv add --dev package-name
 ```
+
+The `uv.lock` file is committed to ensure reproducible builds.
 
 ## Configuration
 
 - `llm_config.yaml` stores model names and settings.
-- `.env` can define `OPENROUTER_API_KEY` (do not commit it).
-- Optional environment overrides:
-- `RUNS_DIR`
-- `ENABLE_SQL` (set to true to enable SQL by default)
-- `SOURCE_DB_PATH`
-- `DATABASE_URL` (used as source DB and by `test_db_connection`)
-- `MARKDOWN_DIR`
-- `LOG_LEVEL`
-- `OPENROUTER_BASE_URL` (optional override)
-- `API_RUN_WORKERS` (optional FastAPI background worker count; default: 2)
-- `CHAT_PROMPT_TOKEN_CAP` (optional context chat prompt cap; default: `250000`)
-- `CHAT_PROVIDER_TIMEOUT_SECONDS` (optional context chat provider timeout; default: `50`)
-- `API_CORS_ORIGINS` (optional comma-separated origins for frontend; default includes localhost:3000/3001)
-- `LLM_CONFIG_PATH` (optional API config file path; default: `llm_config.yaml`)
-- `CITY_GROUPS_PATH` (optional city groups JSON path; default: `backend/api/assets/city_groups.json`)
+- Copy `.env.example` to `.env` and fill in values for your environment.
+- `.env` is loaded automatically via `python-dotenv` in the scripts.
+- Do not commit `.env`.
+
+Environment variables (`.env`):
+
+- `OPENROUTER_API_KEY` (required): API key used for all LLM calls via OpenRouter.
+- `ENABLE_SQL` (optional, default `false`): enables SQL mode by default for pipeline runs.
+- `DATABASE_URL` (optional): Postgres source database URL. When set, it is used instead of SQLite (`SOURCE_DB_PATH`). Also used by `python -m backend.scripts.test_db_connection`.
+- `SOURCE_DB_PATH` (optional, default `data/source.db`): SQLite source DB path used when `DATABASE_URL` is not set.
+- `MARKDOWN_DIR` (optional, default `documents`): default directory scanned for markdown files.
+- `RUNS_DIR` (optional, default `output`): base directory for run artifacts.
+- `LOG_LEVEL` (optional, default `INFO`): logging verbosity (`DEBUG`, `INFO`, `WARNING`, `ERROR`).
+- `OPENROUTER_BASE_URL` (optional, default `https://openrouter.ai/api/v1`): custom OpenRouter-compatible base URL.
+- `API_RUN_WORKERS` (optional, default `2`): FastAPI async background worker count.
+- `CHAT_PROMPT_TOKEN_CAP` (optional, default `250000`): token cap for context chat prompt assembly.
+- `CHAT_PROVIDER_TIMEOUT_SECONDS` (optional, default `50`): provider timeout for context chat.
+- `API_CORS_ORIGINS` (optional): comma-separated frontend origins for API CORS.
+- `LLM_CONFIG_PATH` (optional, default `llm_config.yaml`): API config file path.
+- `CITY_GROUPS_PATH` (optional, default `backend/api/assets/city_groups.json`): city groups catalog JSON path.
+
+CLI flags override `.env` values for a given run (for example `--db-path`, `--db-url`, `--markdown-path`, `--enable-sql`).
+Use `--city` (repeatable) to load markdown only for selected city files (matched by filename stem).
 
 Example `.env.example` is provided.
 
-`.env` is loaded automatically via `python-dotenv` when running scripts.
+Default output directory is `output/` (unless overridden by `RUNS_DIR`).
+Schema summary for SQL generation is derived from `backend/db_models/`.
 
 ## API key setup (important)
 
@@ -59,20 +70,17 @@ You have two supported options:
 1. Backend default key (server-side):
 - Put key in root `.env`:
   - `OPENROUTER_API_KEY=...`
-- Use this when the deployment should use one shared server key.
+- Use this when deployment should use one shared server key.
 
 2. User-provided key (frontend, per browser):
-- In the app UI, use `OpenRouter API Key (Optional)` input and click `Use This Key`.
-- This key is stored in browser `localStorage` and sent in header `X-OpenRouter-Api-Key`.
-- Use this when users should pay with their own key instead of a shared backend key.
+- In the app UI, use `OpenRouter API Key (Optional)` and click `Use This Key`.
+- This key is stored in browser `localStorage` and sent as `X-OpenRouter-Api-Key`.
+- Use this when users should provide their own key instead of a shared backend key.
 
 If key authentication fails:
 - runs finish with `error.code = API_KEY_ERROR`
 - chat endpoints return `401` with a key-specific message
-- UI shows the error so the user can switch key and retry.
-
-Default output directory is `output/` (override with `RUNS_DIR`).
-Schema summary for SQL generation is derived from `backend/db_models/`.
+- UI surfaces the error so users can switch key and retry.
 
 Example `llm_config.yaml`:
 
@@ -114,11 +122,58 @@ openrouter_base_url: "https://openrouter.ai/api/v1"
 enable_sql: false
 ```
 
+### How token and size limits are applied
+
+Shared input-budget logic (used by orchestrator, SQL researcher, markdown researcher, and writer):
+
+```text
+if max_input_tokens is set:
+    effective_max_input_tokens = max_input_tokens
+elif context_window_tokens is set:
+    effective_max_input_tokens = max(context_window_tokens - input_token_reserve - max_output_tokens, 0)
+else:
+    effective_max_input_tokens = None
+```
+
+`max_output_tokens` is treated as `0` when omitted.
+
+What each key controls:
+
+- `context_window_tokens`: Provides the model context-window assumption used for budget calculation.
+- `input_token_reserve`: Safety margin kept free for system/tool overhead; subtracted from the available input budget.
+- `max_output_tokens`: Output cap (when set) and also subtracted from input budget.
+- `max_input_tokens`: Hard override for input budget; if set, it takes precedence over the formula above.
+- `sql_researcher.max_result_tokens`: Hard cap for SQL rows included in the capped SQL bundle passed downstream.
+- `markdown_researcher.max_chunk_tokens`: Hard cap for each markdown chunk size.
+- `markdown_researcher.chunk_overlap_tokens`: Token overlap between neighboring chunks.
+
+How this influences runtime behavior:
+
+- SQL results are token-capped in `cap_results()`. Once the cap is hit, remaining rows are excluded from the capped payload.
+- SQL truncation is recorded as `truncation_applied` in the SQL bundle and `truncated` in SQL result items.
+- Full SQL output is still written to `output/<run_id>/sql/results_full.json`; capped SQL is written to `output/<run_id>/sql/results.json`.
+- Markdown content is chunked first, then batched by token budget. Chunks larger than the current batch budget are skipped.
+- Oversized markdown files are skipped when they exceed `max_file_bytes`.
+
+Visibility and warnings:
+
+- Markdown budget/file skips emit warnings in logs.
+- SQL token-cap truncation currently does not emit a dedicated warning line; detect it via `truncation_applied`/`truncated` and by comparing `sql/results.json` vs `sql/results_full.json`.
+
 ## Run (local)
 
 ```
 python -m backend.scripts.run_pipeline --question "What initiatives exist for Munich?" \
   --markdown-path documents
+```
+
+Limit to selected cities only:
+
+```
+python -m backend.scripts.run_pipeline --question "What initiatives exist for Munich and Leipzig?" \
+  --markdown-path documents \
+  --city Munich \
+  --city Leipzig
 ```
 
 Disable LLM payload logging:
@@ -137,6 +192,30 @@ python -m backend.scripts.run_pipeline --enable-sql --question "What initiatives
   --markdown-path documents
 ```
 
+## Happy-path workflow (no SQL)
+
+High-level flow from user input to final output text when `ENABLE_SQL=false`:
+
+```mermaid
+flowchart TD
+    A[User question + CLI/config input] --> B[run_pipeline in orchestrator module]
+    B --> C[Refine question into research_question]
+    C --> D[Load markdown documents]
+    D --> E[Markdown extractor: extract_markdown_excerpts]
+    E --> F[Store markdown bundle in context_bundle.json<br/>(excerpts + excerpt_count)]
+    F --> G[Writer: write_markdown]
+    G --> H[Write final.md and finalize run<br/>(writer includes evidence preface)]
+```
+
+What each stage does:
+
+- Orchestrator receives the input question and creates a research-oriented question.
+- Extractor reads markdown documents in chunks and returns evidence excerpts selected by the markdown researcher.
+- `markdown_chunk_count` tracks how many chunk inputs were processed; `excerpt_count` (also logged as `markdown_excerpt_count` in run metadata) tracks how many evidence snippets were extracted from those chunks.
+- Context bundle is updated with extracted evidence for downstream writing.
+- Orchestrator hands the prepared context bundle directly to the writer.
+- Writer uses the context bundle and writes final output text to `output/<run_id>/final.md`. The response starts with an evidence preface (based on `excerpt_count`); when `excerpt_count=0`, it returns a "no evidence found" response.
+
 ## End-to-end batch queries
 
 When `--question` is provided, it overrides `--questions-file` and only the CLI question(s) are executed.
@@ -145,6 +224,7 @@ When `--question` is provided, it overrides `--questions-file` and only the CLI 
 python -m backend.scripts.run_e2e_queries
 python -m backend.scripts.run_e2e_queries --questions-file assets/e2e_questions.txt
 python -m backend.scripts.run_e2e_queries --question "What initiatives exist for Munich?" --no-log-llm-payload
+python -m backend.scripts.run_e2e_queries --question "What initiatives exist for Munich and Leipzig?" --markdown-path documents --city Munich --city Leipzig
 ```
 
 ## Run API (local)
@@ -208,7 +288,7 @@ Context chat notes:
 Run API in Docker:
 
 ```
-docker build -f Dockerfile.backend -t query-mechanism-backend .
+docker build -f backend/Dockerfile -t query-mechanism-backend .
 docker run -it --rm -p 8000:8000 \
   --env-file .env \
   -e RUNS_DIR=/data/output \
@@ -304,20 +384,41 @@ python -m backend.scripts.test_db_connection
 
 Artifacts are written under `output/<run_id>/`:
 
-- `run.json`
-- `run.log`
-- `context_bundle.json`
-- `schema_summary.json` (when SQL is enabled)
-- `city_list.json` (when SQL is enabled)
-- `sql/queries.json`, `sql/results.json`, `sql/results_full.json` (when SQL is enabled)
-- `markdown/excerpts.json`
-- `drafts/draft_01.md`
-- `final.md`
+- `run.json`: machine-readable run metadata (status, timestamps, artifacts, decisions).
+- `run.log`: detailed runtime logs, including per-agent `LLM_USAGE` lines.
+- `run_summary.txt`: human-readable consolidated report. Header includes `Started`, `Completed`, and explicit `Total runtime` in seconds, plus `LLM Usage` totals/per-agent. It also captures an input snapshot (`initial question`, `refined question`, `selected cities` planned/found, markdown dir/file/chunk/excerpt counts) and a `MARKDOWN_FAILURE_SUMMARY` aggregated from batch failures.
+- `context_bundle.json`: payload passed between agents (`sql`, `markdown`, `research_question`, final path).
+- `research_question.json`: orchestrator-refined research version of the user question.
+- `schema_summary.json` (when SQL is enabled): schema digest derived from `backend/db_models/`.
+- `city_list.json` (when SQL is enabled): city names fetched from the source DB.
+- `sql/queries.json` (when SQL is enabled): SQL plan generated by the SQL researcher.
+- `sql/results_full.json` (when SQL is enabled): uncapped SQL execution results.
+- `sql/results.json` (when SQL is enabled): token-capped SQL results sent downstream.
+- `markdown/excerpts.json`: markdown researcher evidence bundle. Includes `excerpts` (items with `quote`, `city_name`, `partial_answer`), `inspected_cities` (city names present in inspected markdown inputs), and `excerpt_count` (count of extracted excerpts).
+- `final.md`: final delivered markdown output. Content format is:
+  1) `# Question` heading with the original user question,
+  2) generated markdown answer body from the writer,
+  3) footer line `Finish reason: ...`.
+
+`markdown/excerpts.json` excerpt entries include:
+
+- `quote`: verbatim extracted supporting text from markdown.
+- `city_name`: city identifier for the excerpt.
+- `partial_answer`: concise fact grounded in the quote.
+- `inspected_cities` (bundle-level): city names inspected by markdown extraction.
+- `excerpt_count` (bundle-level): number of extracted excerpts included in the bundle.
+
 - `chat/<conversation_id>.json` (created when context chat sessions are used)
 - `assumptions/discovered.json` (two-pass extraction output; only when `persist_artifacts=true`)
 - `assumptions/edited.json` (user-edited assumptions payload; only when `persist_artifacts=true`)
 - `assumptions/revised_context_bundle.json` (context + assumptions merge; only when `persist_artifacts=true`)
 - `assumptions/final_with_assumptions.md` (regenerated document; only when `persist_artifacts=true`)
+
+Count semantics:
+
+- `markdown_chunk_count` (run input snapshot): number of markdown chunks sent to the markdown researcher.
+- `excerpt_count` (markdown bundle): number of extracted evidence snippets returned by the markdown researcher.
+- `markdown_excerpt_count` (run input snapshot): mirrors `excerpt_count` so summary and run metadata can show chunk count and excerpt count side by side.
 
 ## Run (Docker)
 

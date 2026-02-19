@@ -1,7 +1,21 @@
+import pytest
+from pydantic import ValidationError
+
 from backend.models import ErrorInfo
-from backend.modules.markdown_researcher.models import MarkdownExcerpt, MarkdownResearchResult
-from backend.modules.orchestrator.models import OrchestratorDecision
-from backend.modules.sql_researcher.models import SqlQuery, SqlQueryPlan, SqlQueryResult, SqlResearchResult
+from backend.modules.markdown_researcher.models import (
+    MarkdownExcerpt,
+    MarkdownResearchResult,
+)
+from backend.modules.orchestrator.models import (
+    OrchestratorDecision,
+    ResearchQuestionRefinement,
+)
+from backend.modules.sql_researcher.models import (
+    SqlQuery,
+    SqlQueryPlan,
+    SqlQueryResult,
+    SqlResearchResult,
+)
 from backend.modules.writer.models import WriterOutput
 
 
@@ -24,14 +38,16 @@ def test_model_validation() -> None:
     )
 
     excerpt = MarkdownExcerpt(
-        snippet="Hello",
+        quote="Munich has deployed 43 existing public chargers as of 2024.",
         city_name="Munich",
-        answer="Sample answer",
-        relevant="yes",
+        partial_answer="Munich has deployed 43 existing public chargers as of 2024.",
     )
     md_result = MarkdownResearchResult(excerpts=[excerpt])
 
     decision = OrchestratorDecision(action="write", reason="Enough data")
+    refinement = ResearchQuestionRefinement(
+        research_question="For Munich, list documented initiatives with evidence."
+    )
 
     writer = WriterOutput(content="# Answer")
 
@@ -39,7 +55,28 @@ def test_model_validation() -> None:
     assert research.total_token_count == 3
     assert md_result.excerpts[0].city_name == "Munich"
     assert decision.action == "write"
+    assert refinement.research_question.startswith("For Munich")
     assert writer.content.startswith("#")
 
     error = ErrorInfo(code="E1", message="fail")
     assert error.code == "E1"
+
+
+def test_markdown_excerpt_accepts_quote_and_partial_answer_fields() -> None:
+    excerpt = MarkdownExcerpt.model_validate(
+        {
+            "quote": "Munich has deployed 43 existing public chargers as of 2024.",
+            "city_name": "Munich",
+            "partial_answer": "Munich has deployed 43 existing public chargers as of 2024.",
+        }
+    )
+
+    assert (
+        excerpt.partial_answer
+        == "Munich has deployed 43 existing public chargers as of 2024."
+    )
+
+
+def test_orchestrator_decision_rejects_legacy_actions() -> None:
+    with pytest.raises(ValidationError):
+        OrchestratorDecision(action="run_sql", reason="Need more data")

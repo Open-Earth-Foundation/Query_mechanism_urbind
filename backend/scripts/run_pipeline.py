@@ -9,6 +9,7 @@ Inputs:
 - --db-path: override source DB path
 - --db-url: override source DB URL
 - --markdown-path: override documents folder
+- --city: limit markdown loading to selected city names (repeatable)
 - --log-llm-payload: log full LLM request/response payloads (default: on)
 - --no-log-llm-payload: disable LLM payload logging
 - OPENROUTER_API_KEY (env var)
@@ -18,8 +19,10 @@ Outputs:
 - output/<run_id>/final.md
 
 Usage (from project root):
+
 - python -m backend.scripts.run_pipeline --question "..."
 - python -m backend.scripts.run_pipeline --enable-sql --question "..." --db-path path/to/source.db
+- python -m backend.scripts.run_pipeline --question "..." --city Munich --city Leipzig
 """
 
 from __future__ import annotations
@@ -52,16 +55,16 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--db-url", help="Override source DB URL.")
     parser.add_argument("--markdown-path", help="Override markdown documents path.")
     parser.add_argument(
-        "--log-llm-payload",
-        action="store_true",
-        default=True,
-        help="Log full LLM request/response payloads (default: on).",
+        "--city",
+        action="append",
+        help="Limit markdown loading to selected city names (repeatable).",
     )
     parser.add_argument(
-        "--no-log-llm-payload",
-        action="store_false",
+        "--log-llm-payload",
+        action=argparse.BooleanOptionalAction,
+        default=True,
         dest="log_llm_payload",
-        help="Disable LLM payload logging.",
+        help="Enable or disable logging of full LLM request/response payloads (default: on).",
     )
     return parser.parse_args()
 
@@ -87,6 +90,7 @@ def main() -> None:
         config=config,
         run_id=args.run_id,
         log_llm_payload=args.log_llm_payload,
+        selected_cities=args.city,
     )
 
 

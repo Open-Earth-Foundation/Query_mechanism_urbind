@@ -9,6 +9,7 @@ Inputs:
 - --db-path: override source DB path
 - --db-url: override source DB URL
 - --markdown-path: override documents folder
+- --city: limit markdown loading to selected city names (repeatable)
 - --log-llm-payload: log full LLM request/response payloads (default: on)
 - --no-log-llm-payload: disable LLM payload logging
 - OPENROUTER_API_KEY (env var)
@@ -17,9 +18,11 @@ Outputs:
 - output/<run_id>/... artifacts for each question
 
 Usage (from project root):
+
 - python -m backend.scripts.run_e2e_queries
 - python -m backend.scripts.run_e2e_queries --questions-file assets/e2e_questions.txt
 - python -m backend.scripts.run_e2e_queries --question "What initiatives exist for Munich?"
+- python -m backend.scripts.run_e2e_queries --question "What initiatives exist for Munich and Leipzig?" --city Munich --city Leipzig
 - python -m backend.scripts.run_e2e_queries --enable-sql --db-path path/to/source.db
 """
 
@@ -61,6 +64,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--db-path", help="Override source DB path.")
     parser.add_argument("--db-url", help="Override source DB URL.")
     parser.add_argument("--markdown-path", help="Override markdown documents path.")
+    parser.add_argument(
+        "--city",
+        action="append",
+        help="Limit markdown loading to selected city names (repeatable).",
+    )
     parser.add_argument(
         "--log-llm-payload",
         action="store_true",
@@ -121,6 +129,7 @@ def main() -> None:
             question=question,
             config=config,
             log_llm_payload=args.log_llm_payload,
+            selected_cities=args.city,
         )
         elapsed = time.perf_counter() - start
         logger.info("Completed question in %.2f seconds", elapsed)

@@ -44,15 +44,11 @@ def test_markdown_returns_partial_success_with_city_failure_markers(
             "path": "A.md",
             "city_name": "A",
             "content": "A content",
-            "chunk_index": 1,
-            "chunk_count": 1,
         },
         {
             "path": "B.md",
             "city_name": "B",
             "content": "B content",
-            "chunk_index": 1,
-            "chunk_count": 1,
         },
     ]
 
@@ -66,10 +62,9 @@ def test_markdown_returns_partial_success_with_city_failure_markers(
                 MarkdownResearchResult(
                     excerpts=[
                         MarkdownExcerpt(
-                            snippet="snippet",
+                            quote="City A allocated EUR 1.2 million to retrofit public buildings in 2024.",
                             city_name="A",
-                            answer="answer",
-                            relevant="yes",
+                            partial_answer="City A allocated EUR 1.2 million to retrofit public buildings in 2024.",
                         )
                     ]
                 )
@@ -97,8 +92,6 @@ def test_markdown_returns_success_when_all_batches_hit_max_turns(
             "path": "OnlyCity.md",
             "city_name": "OnlyCity",
             "content": "content",
-            "chunk_index": 1,
-            "chunk_count": 1,
         }
     ]
 

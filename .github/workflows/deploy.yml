@@ -11,7 +11,7 @@ on:
       - "app/**"
       - "frontend/**"
       - "k8s/**"
-      - "Dockerfile.backend"
+      - "backend/Dockerfile"
       - "frontend/Dockerfile"
       - ".github/workflows/deploy.yml"
 
@@ -55,7 +55,7 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: .
-          file: ./Dockerfile.backend
+          file: ./backend/Dockerfile
           push: true
           tags: |
             ${{ steps.meta.outputs.backend_image }}

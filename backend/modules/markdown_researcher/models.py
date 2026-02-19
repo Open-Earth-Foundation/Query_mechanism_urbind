@@ -8,10 +8,9 @@ from backend.models import ErrorInfo
 
 
 class MarkdownExcerpt(BaseModel):
-    snippet: str
+    quote: str
     city_name: str
-    answer: str
-    relevant: Literal["yes", "no"]
+    partial_answer: str
 
 
 class MarkdownResearchResult(BaseModel):

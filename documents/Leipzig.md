@@ -510,7 +510,7 @@ The calculation of the reduction targets for the individual sectors is based on 
 |  Stationary energy and buildings | Reduction by 469,667 | Reduction by 567,150 | -  |
 |  Activities | Climate-friendly heat systems by integrating high shares of RE (district heating, heat pumps) combined with an ambitious rate of renovation (public and private sect. ~ 3 % p.a.) | Switch to renewable power supply and integrating RE on building facades and roofs-tops (private and public) | -  |
 |  Transport | Reduction by 432,667 | Reduction by 32.127 | -  |
-|  Activity | Supporting environmental transport options (pedestrian, bike, public transport)Increasing rate of alternative drives in the private mobility share | 100 % RE for public transport (electrified tram and bus fleet)Expand charging infrastructure for private electric mobility | -  |
+|  Activity | Supporting environmental transport options (pedestrian, bike, public transport); Increasing rate of alternative drives in the private mobility share | 100 % RE for public transport (electrified tram and bus fleet); Expand charging infrastructure for private electric mobility | -  |
 |  Waste | Reduction by 50 % | Reduction by 50 % | -  |
 |  Activity | Zero Waste Strategy | Zero Waste Strategy | -  |
 |  Industrial Process and Product Use | Reduction by 181,082 | Reduction by 377,956 | -  |

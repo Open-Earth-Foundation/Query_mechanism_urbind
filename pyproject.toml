@@ -3,30 +3,23 @@ name = "query-mechanism-urbind"
 version = "0.1.0"
 description = "Multi-agent document builder combining SQL and Markdown sources."
 readme = "README.md"
-requires-python = "==3.11.*"
+requires-python = ">=3.11"
 
 dependencies = [
   "openai-agents==0.6.2",
   "openai==2.16.0",
   "fastapi==0.115.12",
   "uvicorn==0.38.0",
+  "httpx==0.28.1",
   "psycopg[binary]==3.3.2",
   "pydantic==2.12.5",
   "PyYAML==6.0.3",
   "python-dotenv==1.2.1",
+  "SQLAlchemy==2.0.38",
   "tiktoken==0.12.0",
 ]
 
-[project.optional-dependencies]
-dev = ["pytest==8.3.5"]
-
-[build-system]
-requires = ["setuptools>=68"]
-build-backend = "setuptools.build_meta"
-
-[tool.setuptools]
-include-package-data = true
-
-[tool.setuptools.packages.find]
-where = ["."]
-include = ["backend*"]
+[dependency-groups]
+dev = [
+  "pytest==8.3.5",
+]

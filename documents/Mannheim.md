@@ -691,7 +691,7 @@ Climate Neutrality Action Plan
 |  Policy | EU | EU-Klimaschutzpaket: Fit For 55 | https://www.consiliu m.europa.eu/de/poli cies/green-deal/fit- for-55-the-eu-plan- for-a-green- transition/ | "Fit for 55" refers to the EU's target to reduce net greenhouse gas emissions by at least 55% by 2030.
 
 The EU's energy ministers, parliament and commission have taken important decisions for climate protection: Around three quarters of all European CO2 emissions will in future be included in emissions trading - from 2027 also those from heat and transport. The expansion of solar and wind energy is to be massively accelerated throughout the EU. |   |
-|  Strategy | EU | EU Green Deal |  | https://ec.europa.eu/commission/pre sscorer/detail/de/ip_21_3541 |   |
+|  Strategy | EU | EU Green Deal |  | https://ec.europa.eu/commission/presscorner/detail/de/ip_21_3541 |   |
 |  Policy | EU | REPowerEU |  | Adaptation to climate change in Mannheim" concept In addition to climate protection goals, the City of Mannheim also pursues adaptation to the unavoidable consequences of climate change. The Climate Protection Department has set out on the path to becoming a resilient city through the concept "Adapting to Climate Change in Mannheim" (V117/2019), the mission statement "Mannheim 2030" and the emergency plan. The concept "Adaptation to Climate Change in Mannheim", which was adopted by the city council in April 2019, was developed in a broad-based participation process with | European government s must implement the measures proposed by the Commission in the REPowerE U plan. Following the Extraordinary European Council of 30 and 31 May 2022,  |
 STADT MANNHEIM
 Climate Neutrality Action Plan

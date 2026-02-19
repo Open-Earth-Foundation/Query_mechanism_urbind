@@ -144,8 +144,8 @@ export function AssumptionsWorkspace({
         persist_artifacts: false,
       });
       setRevisedContent(response.revised_content);
-      setRevisedOutputPath(response.revised_output_path);
-      setAssumptionsPath(response.assumptions_path);
+      setRevisedOutputPath(response.revised_output_path ?? null);
+      setAssumptionsPath(response.assumptions_path ?? null);
     } catch (error) {
       setErrorMessage(
         error instanceof Error ? error.message : "Failed to regenerate document.",
