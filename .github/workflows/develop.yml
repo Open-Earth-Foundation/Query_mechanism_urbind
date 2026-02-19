@@ -98,6 +98,9 @@ jobs:
           tags: |
             ${{ steps.meta.outputs.backend_image }}
             ${{ env.REGISTRY }}/${{ env.REPOSITORY }}:dev
+          labels: |
+            org.opencontainers.image.source: https://github.com/${{ github.repository }}
+            org.opencontainers.image.revision: ${{ github.sha }}
 
   build_frontend:
     name: Build frontend image
@@ -147,6 +150,9 @@ jobs:
           tags: |
             ${{ steps.meta.outputs.frontend_image }}
             ${{ env.REGISTRY }}/${{ env.REPOSITORY }}:dev
+          labels: |
+            org.opencontainers.image.source: https://github.com/${{ github.repository }}
+            org.opencontainers.image.revision: ${{ github.sha }}
 
   deploy:
     name: Deploy to EKS
