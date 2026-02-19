@@ -8,7 +8,7 @@ RUN pip install --no-cache-dir uv
 WORKDIR /app
 
 # Install locked dependencies first for better build caching.
-COPY pyproject.toml uv.lock README.md /app/
+COPY pyproject.toml uv.lock /app/
 RUN uv sync --frozen --no-dev --no-install-project
 
 # Copy project sources and runtime assets, then install the local project.

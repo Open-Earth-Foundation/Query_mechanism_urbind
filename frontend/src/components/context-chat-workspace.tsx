@@ -115,7 +115,34 @@ export function ContextChatWorkspace({
         if (cancelled) {
           return;
         }
-        let sessionId = existing.conversations.at(-1) ?? null;
+        let sessionId: string | null = null;
+        if (existing.conversations.length > 0) {
+          // Fetch all sessions to sort by updated_at (most recent first)
+          // Use allSettled to handle partial failures (e.g., corrupted session files)
+          const results = await Promise.allSettled(
+            existing.conversations.map((id) => fetchChatSession(activeRunId, id)),
+          );
+          if (cancelled) {
+            return;
+          }
+          // Filter to only successful fetches and extract the session data
+          const sessionsWithMetadata = results
+            .filter(
+              (result): result is PromiseFulfilledResult<Awaited<ReturnType<typeof fetchChatSession>>> =>
+                result.status === "fulfilled",
+            )
+            .map((result) => result.value);
+          if (sessionsWithMetadata.length > 0) {
+            // Sort by updated_at descending (most recent first)
+            sessionsWithMetadata.sort((a, b) =>
+              b.updated_at.localeCompare(a.updated_at),
+            );
+            const mostRecent = sessionsWithMetadata[0];
+            sessionId = mostRecent.conversation_id;
+            setMessages(mostRecent.messages);
+          }
+          // If all sessions failed to load, fall through to create a new one
+        }
         if (!sessionId) {
           const created = await createChatSession(activeRunId);
           if (cancelled) {
@@ -123,12 +150,6 @@ export function ContextChatWorkspace({
           }
           sessionId = created.conversation_id;
           setMessages(created.messages);
-        } else {
-          const session = await fetchChatSession(activeRunId, sessionId);
-          if (cancelled) {
-            return;
-          }
-          setMessages(session.messages);
         }
         setConversationId(sessionId);
         if (sessionId) {

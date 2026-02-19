@@ -6,7 +6,6 @@ on:
     branches:
       - main
     paths:
-      - "app/**"
       - "backend/**"
       - "frontend/**"
       - "k8s/**"
@@ -17,7 +16,6 @@ on:
     branches:
       - main
     paths:
-      - "app/**"
       - "backend/**"
       - "frontend/**"
       - "k8s/**"
