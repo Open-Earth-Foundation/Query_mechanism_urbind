@@ -54,6 +54,14 @@ Environment variables (`.env`):
 - `API_CORS_ORIGINS` (optional): comma-separated frontend origins for API CORS.
 - `LLM_CONFIG_PATH` (optional, default `llm_config.yaml`): API config file path.
 - `CITY_GROUPS_PATH` (optional, default `backend/api/assets/city_groups.json`): city groups catalog JSON path.
+- `VECTOR_STORE_ENABLED` (optional, default `false`): enables local Chroma markdown indexing flows.
+- `CHROMA_PERSIST_PATH` (optional, default `.chroma`): local Chroma persistence directory.
+- `CHROMA_COLLECTION_NAME` (optional, default `markdown_chunks`): Chroma collection used for markdown chunks.
+- `EMBEDDING_MODEL` (optional, default `text-embedding-3-large`): embedding model for vector index build/update.
+- `EMBEDDING_CHUNK_TOKENS` (optional, default `800`): chunk token budget for markdown packing.
+- `EMBEDDING_CHUNK_OVERLAP_TOKENS` (optional, default `80`): chunk overlap token budget.
+- `TABLE_ROW_GROUP_MAX_ROWS` (optional, default `25`): max rows per split group for oversized markdown tables.
+- `INDEX_MANIFEST_PATH` (optional, default `.chroma/index_manifest.json`): JSON manifest path for incremental updates.
 
 CLI flags override `.env` values for a given run (for example `--db-path`, `--db-url`, `--markdown-path`, `--enable-sql`).
 Use `--city` (repeatable) to load markdown only for selected city files (matched by filename stem).
@@ -475,6 +483,54 @@ python -m backend.scripts.analyze_run_tokens --run-log output/<run_id>/run.log
 python -m backend.scripts.calculate_tokens --documents-dir documents --recursive
 python -m backend.scripts.temp_analyze --run-log output/<run_id>/run.log
 ```
+
+## Vector store indexing utilities
+
+Build markdown index from scratch:
+
+```
+python -m backend.scripts.build_markdown_index --docs-dir documents
+```
+
+Dry-run build that also writes chunks to JSON for inspection (no embeddings, no Chroma writes):
+
+```
+python -m backend.scripts.build_markdown_index --docs-dir documents --dry-run --write-chunks-json output/vector_index_dryrun/chunks.json
+```
+
+Incrementally update existing index:
+
+```
+python -m backend.scripts.update_markdown_index --docs-dir documents
+```
+
+Inspect indexed chunks:
+
+```
+python -m backend.scripts.inspect_markdown_index --city Munich --limit 20
+python -m backend.scripts.inspect_markdown_index --where block_type=table --limit 20
+python -m backend.scripts.inspect_markdown_index --show-id <chunk_id>
+```
+
+Run chunking benchmark (manual/long-running, not part of default test loop):
+
+```
+python -m backend.scripts.benchmark_chunking_strategy --docs-dir documents --sample-size 25 --seed 42
+```
+
+Benchmark outputs are written under `output/chunk_benchmarks/<timestamp>/`:
+
+- `benchmark.json`: full machine-readable metrics, counts, per-file stats, sampled docs.
+- `report.md`: human-readable summary with final score, metric breakdown, and sampled-document list.
+
+Metrics reported:
+
+- `final_accuracy_score`: **overall scalar score** in \[0, 1\], combining the individual metrics below using fixed weights.
+- `caption_linkage_rate`: **caption attachment quality** – fraction of source tables with `Table ...` captions whose caption text is attached as `table_title` on at least one table chunk.
+- `table_header_valid_rate`: **table structure quality** – fraction of table chunks whose `raw_text` parses as a valid markdown header row followed by a separator row.
+- `table_detection_rate`: **table recall proxy** – detected table chunks divided by the number of source tables, capped at 1.0 (can exceed 1.0 before capping when large tables are split into multiple chunks).
+- `heading_alignment_rate`: **section alignment quality** – fraction of chunks where `heading_path` matches the heading stack implied by the source at `start_line`.
+- `token_budget_compliance_rate`: **chunk-size budget compliance** – fraction of chunks whose `token_count` is within the configured chunk token budget.
 
 ## Common workflows
 

@@ -49,6 +49,19 @@ class AssumptionsReviewerConfig(AgentConfig):
     """Configuration for two-pass missing-data discovery."""
 
 
+class VectorStoreConfig(BaseModel):
+    enabled: bool = False
+    chroma_persist_path: Path = Field(default_factory=lambda: Path(".chroma"))
+    chroma_collection_name: str = "markdown_chunks"
+    embedding_model: str = "text-embedding-3-large"
+    embedding_chunk_tokens: int = 800
+    embedding_chunk_overlap_tokens: int = 80
+    table_row_group_max_rows: int = 25
+    index_manifest_path: Path = Field(
+        default_factory=lambda: Path(".chroma/index_manifest.json")
+    )
+
+
 class AppConfig(BaseModel):
     model_config = ConfigDict(arbitrary_types_allowed=True)
 
@@ -60,6 +73,7 @@ class AppConfig(BaseModel):
     assumptions_reviewer: AssumptionsReviewerConfig = Field(
         default_factory=lambda: AssumptionsReviewerConfig(model="openai/gpt-5.2")
     )
+    vector_store: VectorStoreConfig = Field(default_factory=VectorStoreConfig)
     openrouter_base_url: str = "https://openrouter.ai/api/v1"
     runs_dir: Path = Field(default_factory=lambda: Path("output"))
     source_db_path: Path = Field(default_factory=lambda: Path("data/source.db"))
@@ -94,6 +108,14 @@ def load_config(config_path: Optional[Path] = None) -> AppConfig:
     openrouter_base_url = os.getenv("OPENROUTER_BASE_URL")
     database_url = os.getenv("DATABASE_URL")
     enable_sql = os.getenv("ENABLE_SQL")
+    vector_store_enabled = os.getenv("VECTOR_STORE_ENABLED")
+    chroma_persist_path = os.getenv("CHROMA_PERSIST_PATH")
+    chroma_collection_name = os.getenv("CHROMA_COLLECTION_NAME")
+    embedding_model = os.getenv("EMBEDDING_MODEL")
+    embedding_chunk_tokens = os.getenv("EMBEDDING_CHUNK_TOKENS")
+    embedding_chunk_overlap_tokens = os.getenv("EMBEDDING_CHUNK_OVERLAP_TOKENS")
+    table_row_group_max_rows = os.getenv("TABLE_ROW_GROUP_MAX_ROWS")
+    index_manifest_path = os.getenv("INDEX_MANIFEST_PATH")
 
     if runs_dir:
         config.runs_dir = Path(runs_dir)
@@ -109,6 +131,26 @@ def load_config(config_path: Optional[Path] = None) -> AppConfig:
         parsed = _parse_env_bool(enable_sql)
         if parsed is not None:
             config.enable_sql = parsed
+    if vector_store_enabled is not None:
+        parsed = _parse_env_bool(vector_store_enabled)
+        if parsed is not None:
+            config.vector_store.enabled = parsed
+    if chroma_persist_path:
+        config.vector_store.chroma_persist_path = Path(chroma_persist_path)
+    if chroma_collection_name:
+        config.vector_store.chroma_collection_name = chroma_collection_name
+    if embedding_model:
+        config.vector_store.embedding_model = embedding_model
+    if embedding_chunk_tokens:
+        config.vector_store.embedding_chunk_tokens = int(embedding_chunk_tokens)
+    if embedding_chunk_overlap_tokens:
+        config.vector_store.embedding_chunk_overlap_tokens = int(
+            embedding_chunk_overlap_tokens
+        )
+    if table_row_group_max_rows:
+        config.vector_store.table_row_group_max_rows = int(table_row_group_max_rows)
+    if index_manifest_path:
+        config.vector_store.index_manifest_path = Path(index_manifest_path)
 
     return config
 
@@ -144,6 +186,7 @@ __all__ = [
     "MarkdownResearcherConfig",
     "ChatConfig",
     "AssumptionsReviewerConfig",
+    "VectorStoreConfig",
     "AppConfig",
     "load_config",
     "get_openrouter_api_key",
