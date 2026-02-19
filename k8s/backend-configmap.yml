@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: urbind-query-mechanism-backend-config
+  namespace: default
+data:
+  PORT: "8000"
+  RUNS_DIR: "/data/output"
+  MARKDOWN_DIR: "/app/documents"
+  LLM_CONFIG_PATH: "/app/llm_config.yaml"
+  CITY_GROUPS_PATH: "/app/backend/api/assets/city_groups.json"
+  OPENROUTER_BASE_URL: "https://openrouter.ai/api/v1"
+  API_RUN_WORKERS: "2"
+  CHAT_PROMPT_TOKEN_CAP: "250000"
+  CHAT_PROVIDER_TIMEOUT_SECONDS: "50"
+  LOG_LEVEL: "INFO"
+  API_CORS_ORIGINS: "https://urbind-query-mechanism.openearth.dev"

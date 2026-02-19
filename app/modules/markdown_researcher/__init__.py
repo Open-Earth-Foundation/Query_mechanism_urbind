@@ -1,1 +1,0 @@
-"""Markdown researcher module."""

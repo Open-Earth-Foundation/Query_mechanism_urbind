@@ -1,7 +1,7 @@
 from pathlib import Path
 
-from app.modules.markdown_researcher.services import load_markdown_documents
-from app.utils.config import MarkdownResearcherConfig
+from backend.modules.markdown_researcher.services import load_markdown_documents
+from backend.utils.config import MarkdownResearcherConfig
 
 
 def test_load_markdown_documents_filters_selected_cities(tmp_path: Path) -> None:

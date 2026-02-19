@@ -4,8 +4,9 @@ Multi-agent document builder that answers user questions by combining SQL data (
 
 ## Requirements
 
-- Python 3.11.x
-- Local SQLite source DB derived from `app/db_models/` (required only when SQL is enabled)
+- Python 3.11+
+- Node.js 20+ (frontend)
+- Local SQLite source DB derived from `backend/db_models/` (required only when SQL is enabled)
 - `OPENROUTER_API_KEY` in environment
 
 ## Install
@@ -41,12 +42,18 @@ Environment variables (`.env`):
 
 - `OPENROUTER_API_KEY` (required): API key used for all LLM calls via OpenRouter.
 - `ENABLE_SQL` (optional, default `false`): enables SQL mode by default for pipeline runs.
-- `DATABASE_URL` (optional): Postgres source database URL. When set, it is used instead of SQLite (`SOURCE_DB_PATH`). Also used by `python -m app.scripts.test_db_connection`.
+- `DATABASE_URL` (optional): Postgres source database URL. When set, it is used instead of SQLite (`SOURCE_DB_PATH`). Also used by `python -m backend.scripts.test_db_connection`.
 - `SOURCE_DB_PATH` (optional, default `data/source.db`): SQLite source DB path used when `DATABASE_URL` is not set.
 - `MARKDOWN_DIR` (optional, default `documents`): default directory scanned for markdown files.
 - `RUNS_DIR` (optional, default `output`): base directory for run artifacts.
 - `LOG_LEVEL` (optional, default `INFO`): logging verbosity (`DEBUG`, `INFO`, `WARNING`, `ERROR`).
 - `OPENROUTER_BASE_URL` (optional, default `https://openrouter.ai/api/v1`): custom OpenRouter-compatible base URL.
+- `API_RUN_WORKERS` (optional, default `2`): FastAPI async background worker count.
+- `CHAT_PROMPT_TOKEN_CAP` (optional, default `250000`): token cap for context chat prompt assembly.
+- `CHAT_PROVIDER_TIMEOUT_SECONDS` (optional, default `50`): provider timeout for context chat.
+- `API_CORS_ORIGINS` (optional): comma-separated frontend origins for API CORS.
+- `LLM_CONFIG_PATH` (optional, default `llm_config.yaml`): API config file path.
+- `CITY_GROUPS_PATH` (optional, default `backend/api/assets/city_groups.json`): city groups catalog JSON path.
 
 CLI flags override `.env` values for a given run (for example `--db-path`, `--db-url`, `--markdown-path`, `--enable-sql`).
 Use `--city` (repeatable) to load markdown only for selected city files (matched by filename stem).
@@ -54,7 +61,26 @@ Use `--city` (repeatable) to load markdown only for selected city files (matched
 Example `.env.example` is provided.
 
 Default output directory is `output/` (unless overridden by `RUNS_DIR`).
-Schema summary for SQL generation is derived from `app/db_models/`.
+Schema summary for SQL generation is derived from `backend/db_models/`.
+
+## API key setup (important)
+
+You have two supported options:
+
+1. Backend default key (server-side):
+- Put key in root `.env`:
+  - `OPENROUTER_API_KEY=...`
+- Use this when deployment should use one shared server key.
+
+2. User-provided key (frontend, per browser):
+- In the app UI, use `OpenRouter API Key (Optional)` and click `Use This Key`.
+- This key is stored in browser `localStorage` and sent as `X-OpenRouter-Api-Key`.
+- Use this when users should provide their own key instead of a shared backend key.
+
+If key authentication fails:
+- runs finish with `error.code = API_KEY_ERROR`
+- chat endpoints return `401` with a key-specific message
+- UI surfaces the error so users can switch key and retry.
 
 Example `llm_config.yaml`:
 
@@ -83,6 +109,15 @@ writer:
   model: "moonshotai/kimi-k2.5"
   context_window_tokens: 256000
   input_token_reserve: 2000
+chat:
+  model: "openai/gpt-5.2"
+  context_window_tokens: 400000
+  input_token_reserve: 20000
+  max_history_messages: 24
+assumptions_reviewer:
+  model: "openai/gpt-5.2"
+  temperature: 0.1
+  max_output_tokens: 8000
 openrouter_base_url: "https://openrouter.ai/api/v1"
 enable_sql: false
 ```
@@ -128,14 +163,14 @@ Visibility and warnings:
 ## Run (local)
 
 ```
-python -m app.scripts.run_pipeline --question "What initiatives exist for Munich?" \
+python -m backend.scripts.run_pipeline --question "What initiatives exist for Munich?" \
   --markdown-path documents
 ```
 
 Limit to selected cities only:
 
 ```
-python -m app.scripts.run_pipeline --question "What initiatives exist for Munich and Leipzig?" \
+python -m backend.scripts.run_pipeline --question "What initiatives exist for Munich and Leipzig?" \
   --markdown-path documents \
   --city Munich \
   --city Leipzig
@@ -144,7 +179,7 @@ python -m app.scripts.run_pipeline --question "What initiatives exist for Munich
 Disable LLM payload logging:
 
 ```
-python -m app.scripts.run_pipeline --question "What initiatives exist for Munich?" \
+python -m backend.scripts.run_pipeline --question "What initiatives exist for Munich?" \
   --markdown-path documents \
   --no-log-llm-payload
 ```
@@ -152,7 +187,7 @@ python -m app.scripts.run_pipeline --question "What initiatives exist for Munich
 Enable SQL (SQLite):
 
 ```
-python -m app.scripts.run_pipeline --enable-sql --question "What initiatives exist for Munich?" \
+python -m backend.scripts.run_pipeline --enable-sql --question "What initiatives exist for Munich?" \
   --db-path path/to/source.db \
   --markdown-path documents
 ```
@@ -186,16 +221,165 @@ What each stage does:
 When `--question` is provided, it overrides `--questions-file` and only the CLI question(s) are executed.
 
 ```
-python -m app.scripts.run_e2e_queries
-python -m app.scripts.run_e2e_queries --questions-file assets/e2e_questions.txt
-python -m app.scripts.run_e2e_queries --question "What initiatives exist for Munich?" --no-log-llm-payload
-python -m app.scripts.run_e2e_queries --question "What initiatives exist for Munich and Leipzig?" --markdown-path documents --city Munich --city Leipzig
+python -m backend.scripts.run_e2e_queries
+python -m backend.scripts.run_e2e_queries --questions-file assets/e2e_questions.txt
+python -m backend.scripts.run_e2e_queries --question "What initiatives exist for Munich?" --no-log-llm-payload
+python -m backend.scripts.run_e2e_queries --question "What initiatives exist for Munich and Leipzig?" --markdown-path documents --city Munich --city Leipzig
 ```
+
+## Run API (local)
+
+Start FastAPI backend:
+
+```
+python -m uvicorn backend.api.main:app --host 0.0.0.0 --port 8000
+```
+
+SQL is force-disabled in the API execution path for now.
+
+Core endpoints:
+
+- `GET /` (root health endpoint)
+- `POST /api/v1/runs`
+- `GET /api/v1/runs` (list discovered runs as `run_id` + `question`)
+- `GET /api/v1/runs/{run_id}/status`
+- `GET /api/v1/runs/{run_id}/output`
+- `GET /api/v1/runs/{run_id}/context`
+- `GET /api/v1/cities` (city names from markdown filenames in `MARKDOWN_DIR`, without `.md`)
+- `GET /api/v1/city-groups` (predefined city groups filtered to currently available markdown cities)
+- `GET /api/v1/chat/contexts` (catalog of completed run contexts with token counts)
+- `GET /api/v1/runs/{run_id}/chat/sessions`
+- `POST /api/v1/runs/{run_id}/chat/sessions`
+- `GET /api/v1/runs/{run_id}/chat/sessions/{conversation_id}`
+- `GET /api/v1/runs/{run_id}/chat/sessions/{conversation_id}/contexts`
+- `PUT /api/v1/runs/{run_id}/chat/sessions/{conversation_id}/contexts`
+- `POST /api/v1/runs/{run_id}/chat/sessions/{conversation_id}/messages`
+- `POST /api/v1/runs/{run_id}/assumptions/discover` (two-pass missing-data extraction + verification)
+- `POST /api/v1/runs/{run_id}/assumptions/apply` (apply edited assumptions and regenerate document; ephemeral by default)
+- `GET /api/v1/runs/{run_id}/assumptions/latest` (load latest assumptions artifacts for a run; only when persisted)
+
+`POST /api/v1/runs` accepts optional city filtering:
+
+```json
+{
+  "question": "Build a report for selected cities",
+  "cities": ["Munich", "Berlin"]
+}
+```
+
+Optional header for user-owned key (without backend default key):
+
+```
+X-OpenRouter-Api-Key: sk-or-v1-...
+```
+
+Frontend scope options map directly to this:
+- `all`: omit `cities` in payload (backend processes all markdown cities)
+- `group`: send cities from a predefined group from `/api/v1/city-groups`
+- `manual`: send explicit city list selected one-by-one
+
+Context chat notes:
+- Run outputs are persisted under `output/<run_id>/final.md` and `output/<run_id>/context_bundle.json`.
+- Chat sessions persist under `output/<run_id>/chat/<conversation_id>.json`.
+- Context manager supports selecting multiple completed run contexts.
+- Chat first tries full-context prompting; when token budget is exceeded, it switches to excerpt pooling across all selected runs.
+- Prompt budget defaults to `250000` tokens (`CHAT_PROMPT_TOKEN_CAP`) and switches to pooled excerpts if full context exceeds this budget.
+
+Run API in Docker:
+
+```
+docker build -f backend/Dockerfile -t query-mechanism-backend .
+docker run -it --rm -p 8000:8000 \
+  --env-file .env \
+  -e RUNS_DIR=/data/output \
+  -e MARKDOWN_DIR=/data/documents \
+  -e LLM_CONFIG_PATH=/data/config/llm_config.yaml \
+  -e CITY_GROUPS_PATH=/data/config/city_groups.json \
+  -v ${PWD}/documents:/data/documents \
+  -v ${PWD}/output:/data/output \
+  -v ${PWD}/llm_config.yaml:/data/config/llm_config.yaml:ro \
+  -v ${PWD}/backend/api/assets/city_groups.json:/data/config/city_groups.json:ro \
+  query-mechanism-backend
+```
+
+## Run frontend (shadcn/Next.js)
+
+```
+cd frontend
+npm install
+npm run dev
+```
+
+Optional frontend env:
+
+```
+NEXT_PUBLIC_API_BASE_URL=http://127.0.0.1:8000
+```
+
+Frontend supports three city scope modes in the build form: all cities, predefined group, and manual selection.
+Clicking `Open Context Chat` switches to a dedicated chat workspace (not a chat modal), and `Manage Contexts` opens a popup for multi-context selection.
+Clicking `Assumptions Review` opens a dedicated workspace where:
+- `Find Missing Data` runs two LLM passes (extract + verification).
+- Missing items are grouped by city with editable `proposed_number` (number or free-form text).
+- `Regenerate` returns revised content without persisting assumptions by default.
+The `Load Existing Run` picker reads `run_id` + `question` from `GET /api/v1/runs`, then loads selected run artifacts through the standard run endpoints.
+
+Example file is available at `frontend/.env.example`.
+
+Run frontend in Docker:
+
+```
+docker build -f frontend/Dockerfile \
+  --build-arg NEXT_PUBLIC_API_BASE_URL=https://query-mechanism-api.openearth.dev \
+  -t query-mechanism-frontend ./frontend
+docker run -it --rm -p 3000:3000 \
+  query-mechanism-frontend
+```
+
+## Docker Compose (backend + frontend)
+
+Use the included `docker-compose.yml` to run both services together with persisted data directories:
+
+- Host `./documents` -> container `/data/documents` (markdown sources)
+- Host `./output` -> container `/data/output` (run artifacts, final docs, context bundles, chat memory)
+- Host `./llm_config.yaml` -> container `/data/config/llm_config.yaml`
+- Host `./backend/api/assets/city_groups.json` -> container `/data/config/city_groups.json`
+
+Commands:
+
+```
+docker compose up --build
+docker compose down
+```
+
+After startup:
+- Frontend: `http://localhost:3000`
+- Backend API docs: `http://localhost:8000/docs`
+
+## Manual EKS deployment
+
+For manual GHCR + EKS deployment without GitHub Actions, use `urbind-query-mechanism.md`.
+It includes exact build/push commands and `kubectl` apply steps for the manifests in `k8s/`.
+
+## GitHub Actions deployment
+
+Automated development workflow is available at `.github/workflows/develop.yml`.
+It runs tests for PRs targeting `main` and for pushes to `main`; image build and EKS deploy run only on `main` branch runs (push/manual dispatch).
+
+Required repository secrets:
+- `AWS_ACCESS_KEY_ID_EKS_DEV_USER`
+- `AWS_SECRET_ACCESS_KEY_EKS_DEV_USER`
+- `EKS_DEV_NAME`
+- `OPENROUTER_API_KEY`
+
+Optional repository variables:
+- `EKS_DEV_REGION` (default `us-east-1`)
+- `FRONTEND_API_BASE_URL` (default `https://urbind-query-mechanism-api.openearth.dev`)
 
 ## Test DB connection
 
 ```
-python -m app.scripts.test_db_connection
+python -m backend.scripts.test_db_connection
 ```
 
 Artifacts are written under `output/<run_id>/`:
@@ -205,7 +389,7 @@ Artifacts are written under `output/<run_id>/`:
 - `run_summary.txt`: human-readable consolidated report. Header includes `Started`, `Completed`, and explicit `Total runtime` in seconds, plus `LLM Usage` totals/per-agent. It also captures an input snapshot (`initial question`, `refined question`, `selected cities` planned/found, markdown dir/file/chunk/excerpt counts) and a `MARKDOWN_FAILURE_SUMMARY` aggregated from batch failures.
 - `context_bundle.json`: payload passed between agents (`sql`, `markdown`, `research_question`, final path).
 - `research_question.json`: orchestrator-refined research version of the user question.
-- `schema_summary.json` (when SQL is enabled): schema digest derived from `app/db_models/`.
+- `schema_summary.json` (when SQL is enabled): schema digest derived from `backend/db_models/`.
 - `city_list.json` (when SQL is enabled): city names fetched from the source DB.
 - `sql/queries.json` (when SQL is enabled): SQL plan generated by the SQL researcher.
 - `sql/results_full.json` (when SQL is enabled): uncapped SQL execution results.
@@ -224,31 +408,36 @@ Artifacts are written under `output/<run_id>/`:
 - `inspected_cities` (bundle-level): city names inspected by markdown extraction.
 - `excerpt_count` (bundle-level): number of extracted excerpts included in the bundle.
 
+- `chat/<conversation_id>.json` (created when context chat sessions are used)
+- `assumptions/discovered.json` (two-pass extraction output; only when `persist_artifacts=true`)
+- `assumptions/edited.json` (user-edited assumptions payload; only when `persist_artifacts=true`)
+- `assumptions/revised_context_bundle.json` (context + assumptions merge; only when `persist_artifacts=true`)
+- `assumptions/final_with_assumptions.md` (regenerated document; only when `persist_artifacts=true`)
+
 Count semantics:
 
 - `markdown_chunk_count` (run input snapshot): number of markdown chunks sent to the markdown researcher.
 - `excerpt_count` (markdown bundle): number of extracted evidence snippets returned by the markdown researcher.
 - `markdown_excerpt_count` (run input snapshot): mirrors `excerpt_count` so summary and run metadata can show chunk count and excerpt count side by side.
 
-## Run (Docker)
+## Docker images (manual)
 
-Build:
+This repository ships two service images (no single root Dockerfile image):
+
+- Backend image: `backend/Dockerfile`
+- Frontend image: `frontend/Dockerfile`
+
+Build commands:
 
 ```
-docker build -t query-mechanism-urbind .
+docker build -f backend/Dockerfile -t query-mechanism-backend .
+docker build -f frontend/Dockerfile -t query-mechanism-frontend ./frontend
 ```
 
-Run:
+For local multi-service runs, prefer Docker Compose:
 
 ```
-docker run -it --rm \
-  -v ${PWD}:/app \
-  --env-file .env \
-  query-mechanism-urbind \
-  --enable-sql \
-  --question "What initiatives exist for Munich?" \
-  --db-path /app/path/to/source.db \
-  --markdown-path /app/documents
+docker compose up --build
 ```
 
 ## Tests
@@ -257,12 +446,34 @@ docker run -it --rm \
 pytest
 ```
 
+## Async API smoke test (pre-frontend)
+
+Use this script to validate the async backend lifecycle contract before frontend integration:
+
+- `POST /api/v1/runs`
+- `GET /api/v1/runs/{run_id}/status`
+- `GET /api/v1/runs/{run_id}/output`
+- `GET /api/v1/runs/{run_id}/context`
+
+```
+python -m backend.scripts.test_async_backend_flow --question "What are main climate initiatives?"
+python -m backend.scripts.test_async_backend_flow \
+  --base-url http://127.0.0.1:8000 \
+  --question "What initiatives exist for Munich?" \
+  --cities Munich,Berlin \
+  --exercise-chat \
+  --poll-interval-seconds 3 \
+  --max-wait-seconds 1200
+```
+
+Smoke-test artifacts are written to `output/api_smoke_tests/<run_id>/`.
+
 ## Token analysis utilities
 
 ```
-python -m app.scripts.analyze_run_tokens --run-log output/<run_id>/run.log
-python -m app.scripts.calculate_tokens --documents-dir documents --recursive
-python -m app.scripts.temp_analyze --run-log output/<run_id>/run.log
+python -m backend.scripts.analyze_run_tokens --run-log output/<run_id>/run.log
+python -m backend.scripts.calculate_tokens --documents-dir documents --recursive
+python -m backend.scripts.temp_analyze --run-log output/<run_id>/run.log
 ```
 
 ## Common workflows

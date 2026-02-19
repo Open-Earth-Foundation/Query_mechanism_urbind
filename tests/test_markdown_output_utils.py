@@ -1,4 +1,4 @@
-from app.modules.markdown_researcher.utils.output import coerce_markdown_result
+from backend.modules.markdown_researcher.utils.output import coerce_markdown_result
 
 
 def test_coerce_markdown_result_accepts_partial_answer_field() -> None:

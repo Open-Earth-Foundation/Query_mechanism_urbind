@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from app.scripts.run_e2e_queries import load_questions
+from backend.scripts.run_e2e_queries import load_questions
 
 
 def test_load_questions_uses_overrides_only_when_provided(tmp_path: Path) -> None:

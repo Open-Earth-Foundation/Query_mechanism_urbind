@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-from app.scripts.analyze_run_tokens import _parse_llm_usage_lines
+from backend.scripts.analyze_run_tokens import _parse_llm_usage_lines
 
 
 def test_parse_llm_usage_lines_ignores_non_usage_entries(tmp_path: Path) -> None:
