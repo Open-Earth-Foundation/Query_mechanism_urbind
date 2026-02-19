@@ -23,7 +23,7 @@ echo "<your_github_pat>" | docker login ghcr.io -u "<your_github_username>" --pa
 Windows/Linux (`amd64`):
 
 ```powershell
-docker buildx build --platform linux/amd64 -f backend/Dockerfile -t ghcr.io/open-earth-foundation/urbind-query-mechanism-backend:dev --push .
+docker buildx build --platform linux/amd64 -f backend/Dockerfile -t ghcr.io/open-earth-foundation/query_mechanism_urbind-backend:dev --push .
 ```
 
 ## 4. Build and Push Frontend Image
@@ -31,7 +31,7 @@ docker buildx build --platform linux/amd64 -f backend/Dockerfile -t ghcr.io/open
 Windows/Linux (`amd64`):
 
 ```powershell
-docker buildx build --platform linux/amd64 -f frontend/Dockerfile --build-arg NEXT_PUBLIC_API_BASE_URL=https://urbind-query-mechanism-api.openearth.dev -t ghcr.io/open-earth-foundation/urbind-query-mechanism-frontend:dev --push ./frontend
+docker buildx build --platform linux/amd64 -f frontend/Dockerfile --build-arg NEXT_PUBLIC_API_BASE_URL=https://urbind-query-mechanism-api.openearth.dev -t ghcr.io/open-earth-foundation/query_mechanism_urbind-frontend:dev --push ./frontend
 ```
 
 ## 5. Make Packages Public in GHCR
@@ -63,11 +63,14 @@ kubectl apply -f k8s/frontend-deployment.yml
 kubectl apply -f k8s/frontend-service.yml
 ```
 
+Note: the backend deployment uses `strategy: Recreate` because it mounts a `ReadWriteOnce`
+PVC (`urbind-query-mechanism-backend-output`). This avoids `Multi-Attach` rollout failures.
+
 ## 9. Pin Deployment Images
 
 ```powershell
-kubectl set image deployment/urbind-query-mechanism-backend backend=ghcr.io/open-earth-foundation/urbind-query-mechanism-backend:dev
-kubectl set image deployment/urbind-query-mechanism-frontend frontend=ghcr.io/open-earth-foundation/urbind-query-mechanism-frontend:dev
+kubectl set image deployment/urbind-query-mechanism-backend backend=ghcr.io/open-earth-foundation/query_mechanism_urbind-backend:dev
+kubectl set image deployment/urbind-query-mechanism-frontend frontend=ghcr.io/open-earth-foundation/query_mechanism_urbind-frontend:dev
 ```
 
 ## 10. Wait for Rollout
@@ -138,11 +141,11 @@ Expected:
 ## 14. Update Release (Manual Repeat)
 
 ```powershell
-docker buildx build --platform linux/amd64 -f backend/Dockerfile -t ghcr.io/open-earth-foundation/urbind-query-mechanism-backend:dev --push .
-docker buildx build --platform linux/amd64 -f frontend/Dockerfile --build-arg NEXT_PUBLIC_API_BASE_URL=https://urbind-query-mechanism-api.openearth.dev -t ghcr.io/open-earth-foundation/urbind-query-mechanism-frontend:dev --push ./frontend
+docker buildx build --platform linux/amd64 -f backend/Dockerfile -t ghcr.io/open-earth-foundation/query_mechanism_urbind-backend:dev --push .
+docker buildx build --platform linux/amd64 -f frontend/Dockerfile --build-arg NEXT_PUBLIC_API_BASE_URL=https://urbind-query-mechanism-api.openearth.dev -t ghcr.io/open-earth-foundation/query_mechanism_urbind-frontend:dev --push ./frontend
 
-kubectl set image deployment/urbind-query-mechanism-backend backend=ghcr.io/open-earth-foundation/urbind-query-mechanism-backend:dev
-kubectl set image deployment/urbind-query-mechanism-frontend frontend=ghcr.io/open-earth-foundation/urbind-query-mechanism-frontend:dev
+kubectl set image deployment/urbind-query-mechanism-backend backend=ghcr.io/open-earth-foundation/query_mechanism_urbind-backend:dev
+kubectl set image deployment/urbind-query-mechanism-frontend frontend=ghcr.io/open-earth-foundation/query_mechanism_urbind-frontend:dev
 
 kubectl rollout status deployment/urbind-query-mechanism-backend
 kubectl rollout status deployment/urbind-query-mechanism-frontend
@@ -155,9 +158,9 @@ This repository includes `.github/workflows/develop.yml`.
 It does:
 
 1. Build and push backend image to GHCR:
-   `ghcr.io/open-earth-foundation/urbind-query-mechanism-backend:<sha>` and `:dev`
+   `ghcr.io/open-earth-foundation/query_mechanism_urbind-backend:<sha>` and `:dev`
 2. Build and push frontend image to GHCR:
-   `ghcr.io/open-earth-foundation/urbind-query-mechanism-frontend:<sha>` and `:dev`
+   `ghcr.io/open-earth-foundation/query_mechanism_urbind-frontend:<sha>` and `:dev`
 3. Connect to EKS and apply manifests from `k8s/`
 4. Update deployment images and wait for rollout
 

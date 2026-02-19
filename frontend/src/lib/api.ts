@@ -174,10 +174,19 @@ const configuredBaseUrl = (
     process?: { env?: { NEXT_PUBLIC_API_BASE_URL?: string } };
   }
 ).process?.env?.NEXT_PUBLIC_API_BASE_URL?.trim();
+
+function resolveFallbackApiBaseUrl(): string {
+  const locationHost = globalThis.location?.hostname?.toLowerCase() ?? "";
+  if (locationHost === "localhost" || locationHost === "127.0.0.1") {
+    return "http://127.0.0.1:8000";
+  }
+  return "https://urbind-query-mechanism-api.openearth.dev";
+}
+
 export const apiBaseUrl = (
   configuredBaseUrl && configuredBaseUrl.length > 0
     ? configuredBaseUrl
-    : "http://127.0.0.1:8000"
+    : resolveFallbackApiBaseUrl()
 ).replace(/\/+$/, "");
 
 let userApiKey: string | null = null;
