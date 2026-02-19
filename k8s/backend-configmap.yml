@@ -2,6 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: urbind-query-mechanism-backend-config
+  namespace: default
 data:
   PORT: "8000"
   RUNS_DIR: "/data/output"

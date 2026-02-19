@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: urbind-query-mechanism-frontend
+  namespace: default
 spec:
   replicas: 1
   selector:
@@ -14,7 +15,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: ghcr.io/open-earth-foundation/urbind-query-mechanism-frontend:latest
+          image: ghcr.io/open-earth-foundation/urbind-query-mechanism-frontend:dev
           imagePullPolicy: Always
           ports:
             - containerPort: 3000
@@ -22,15 +23,36 @@ spec:
           env:
             - name: PORT
               value: "3000"
+          resources:
+            requests:
+              cpu: "50m"
+              memory: "128Mi"
+              ephemeral-storage: "128Mi"
+            limits:
+              cpu: "200m"
+              memory: "256Mi"
+              ephemeral-storage: "256Mi"
           readinessProbe:
             httpGet:
               path: /
               port: http
-            initialDelaySeconds: 10
-            periodSeconds: 15
+            initialDelaySeconds: 5
+            periodSeconds: 5
+            timeoutSeconds: 2
+            failureThreshold: 3
+            successThreshold: 1
           livenessProbe:
             httpGet:
               path: /
               port: http
             initialDelaySeconds: 30
-            periodSeconds: 20
+            periodSeconds: 10
+            timeoutSeconds: 2
+            failureThreshold: 3
+          startupProbe:
+            httpGet:
+              path: /
+              port: http
+            periodSeconds: 10
+            timeoutSeconds: 2
+            failureThreshold: 30

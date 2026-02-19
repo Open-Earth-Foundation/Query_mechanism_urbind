@@ -23,7 +23,7 @@ echo "<your_github_pat>" | docker login ghcr.io -u "<your_github_username>" --pa
 Windows/Linux (`amd64`):
 
 ```powershell
-docker buildx build --platform linux/amd64 -f backend/Dockerfile -t ghcr.io/open-earth-foundation/urbind-query-mechanism-backend:latest --push .
+docker buildx build --platform linux/amd64 -f backend/Dockerfile -t ghcr.io/open-earth-foundation/urbind-query-mechanism-backend:dev --push .
 ```
 
 ## 4. Build and Push Frontend Image
@@ -31,7 +31,7 @@ docker buildx build --platform linux/amd64 -f backend/Dockerfile -t ghcr.io/open
 Windows/Linux (`amd64`):
 
 ```powershell
-docker buildx build --platform linux/amd64 -f frontend/Dockerfile --build-arg NEXT_PUBLIC_API_BASE_URL=https://urbind-query-mechanism-api.openearth.dev -t ghcr.io/open-earth-foundation/urbind-query-mechanism-frontend:latest --push ./frontend
+docker buildx build --platform linux/amd64 -f frontend/Dockerfile --build-arg NEXT_PUBLIC_API_BASE_URL=https://urbind-query-mechanism-api.openearth.dev -t ghcr.io/open-earth-foundation/urbind-query-mechanism-frontend:dev --push ./frontend
 ```
 
 ## 5. Make Packages Public in GHCR
@@ -66,8 +66,8 @@ kubectl apply -f k8s/frontend-service.yml
 ## 9. Pin Deployment Images
 
 ```powershell
-kubectl set image deployment/urbind-query-mechanism-backend backend=ghcr.io/open-earth-foundation/urbind-query-mechanism-backend:latest
-kubectl set image deployment/urbind-query-mechanism-frontend frontend=ghcr.io/open-earth-foundation/urbind-query-mechanism-frontend:latest
+kubectl set image deployment/urbind-query-mechanism-backend backend=ghcr.io/open-earth-foundation/urbind-query-mechanism-backend:dev
+kubectl set image deployment/urbind-query-mechanism-frontend frontend=ghcr.io/open-earth-foundation/urbind-query-mechanism-frontend:dev
 ```
 
 ## 10. Wait for Rollout
@@ -138,11 +138,11 @@ Expected:
 ## 14. Update Release (Manual Repeat)
 
 ```powershell
-docker buildx build --platform linux/amd64 -f backend/Dockerfile -t ghcr.io/open-earth-foundation/urbind-query-mechanism-backend:latest --push .
-docker buildx build --platform linux/amd64 -f frontend/Dockerfile --build-arg NEXT_PUBLIC_API_BASE_URL=https://urbind-query-mechanism-api.openearth.dev -t ghcr.io/open-earth-foundation/urbind-query-mechanism-frontend:latest --push ./frontend
+docker buildx build --platform linux/amd64 -f backend/Dockerfile -t ghcr.io/open-earth-foundation/urbind-query-mechanism-backend:dev --push .
+docker buildx build --platform linux/amd64 -f frontend/Dockerfile --build-arg NEXT_PUBLIC_API_BASE_URL=https://urbind-query-mechanism-api.openearth.dev -t ghcr.io/open-earth-foundation/urbind-query-mechanism-frontend:dev --push ./frontend
 
-kubectl set image deployment/urbind-query-mechanism-backend backend=ghcr.io/open-earth-foundation/urbind-query-mechanism-backend:latest
-kubectl set image deployment/urbind-query-mechanism-frontend frontend=ghcr.io/open-earth-foundation/urbind-query-mechanism-frontend:latest
+kubectl set image deployment/urbind-query-mechanism-backend backend=ghcr.io/open-earth-foundation/urbind-query-mechanism-backend:dev
+kubectl set image deployment/urbind-query-mechanism-frontend frontend=ghcr.io/open-earth-foundation/urbind-query-mechanism-frontend:dev
 
 kubectl rollout status deployment/urbind-query-mechanism-backend
 kubectl rollout status deployment/urbind-query-mechanism-frontend
@@ -150,14 +150,14 @@ kubectl rollout status deployment/urbind-query-mechanism-frontend
 
 ## 15. GitHub Actions (Automated Deploy)
 
-This repository includes `.github/workflows/deploy.yml`.
+This repository includes `.github/workflows/develop.yml`.
 
 It does:
 
 1. Build and push backend image to GHCR:
-   `ghcr.io/open-earth-foundation/urbind-query-mechanism-backend:<sha>` and `:latest`
+   `ghcr.io/open-earth-foundation/urbind-query-mechanism-backend:<sha>` and `:dev`
 2. Build and push frontend image to GHCR:
-   `ghcr.io/open-earth-foundation/urbind-query-mechanism-frontend:<sha>` and `:latest`
+   `ghcr.io/open-earth-foundation/urbind-query-mechanism-frontend:<sha>` and `:dev`
 3. Connect to EKS and apply manifests from `k8s/`
 4. Update deployment images and wait for rollout
 
@@ -175,5 +175,5 @@ Optional GitHub repository variables:
 
 How to use:
 
-1. Merge a PR into `main`, or
-2. Run manually in GitHub UI: `Actions` -> `Deploy urbind-query-mechanism` -> `Run workflow`
+1. Open a PR to `main` (tests run), then merge to `main` to trigger build + deploy.
+2. Or run manually in GitHub UI: `Actions` -> `Dev - Test, Build, and Deploy urbind-query-mechanism` -> `Run workflow`.

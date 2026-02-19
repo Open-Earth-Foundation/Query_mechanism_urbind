@@ -363,8 +363,8 @@ It includes exact build/push commands and `kubectl` apply steps for the manifest
 
 ## GitHub Actions deployment
 
-Automated deployment workflow is available at `.github/workflows/deploy.yml`.
-It triggers automatically when a PR to `main` is merged, or via manual dispatch.
+Automated development workflow is available at `.github/workflows/develop.yml`.
+It runs tests for PRs targeting `main` and for pushes to `main`; image build and EKS deploy run only on `main` branch runs (push/manual dispatch).
 
 Required repository secrets:
 - `AWS_ACCESS_KEY_ID_EKS_DEV_USER`
@@ -420,25 +420,24 @@ Count semantics:
 - `excerpt_count` (markdown bundle): number of extracted evidence snippets returned by the markdown researcher.
 - `markdown_excerpt_count` (run input snapshot): mirrors `excerpt_count` so summary and run metadata can show chunk count and excerpt count side by side.
 
-## Run (Docker)
+## Docker images (manual)
 
-Build:
+This repository ships two service images (no single root Dockerfile image):
+
+- Backend image: `backend/Dockerfile`
+- Frontend image: `frontend/Dockerfile`
+
+Build commands:
 
 ```
-docker build -t query-mechanism-urbind .
+docker build -f backend/Dockerfile -t query-mechanism-backend .
+docker build -f frontend/Dockerfile -t query-mechanism-frontend ./frontend
 ```
 
-Run:
+For local multi-service runs, prefer Docker Compose:
 
 ```
-docker run -it --rm \
-  -v ${PWD}:/app \
-  --env-file .env \
-  query-mechanism-urbind \
-  --enable-sql \
-  --question "What initiatives exist for Munich?" \
-  --db-path /app/path/to/source.db \
-  --markdown-path /app/documents
+docker compose up --build
 ```
 
 ## Tests
