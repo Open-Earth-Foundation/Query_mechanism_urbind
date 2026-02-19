@@ -63,6 +63,9 @@ kubectl apply -f k8s/frontend-deployment.yml
 kubectl apply -f k8s/frontend-service.yml
 ```
 
+Note: the backend deployment uses `strategy: Recreate` because it mounts a `ReadWriteOnce`
+PVC (`urbind-query-mechanism-backend-output`). This avoids `Multi-Attach` rollout failures.
+
 ## 9. Pin Deployment Images
 
 ```powershell
