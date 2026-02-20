@@ -96,5 +96,18 @@ class ChromaStore:
             where=where,
         )
 
+    def query_by_embedding(
+        self,
+        query_embeddings: list[list[float]],
+        n_results: int,
+        where: dict[str, Any] | None = None,
+    ) -> dict[str, Any]:
+        """Run similarity query using precomputed query embeddings."""
+        return self.get_collection().query(
+            query_embeddings=query_embeddings,
+            n_results=n_results,
+            where=where,
+        )
+
 
 __all__ = ["ChromaStore", "get_client"]

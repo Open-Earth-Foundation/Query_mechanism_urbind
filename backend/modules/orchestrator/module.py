@@ -35,6 +35,11 @@ from backend.modules.sql_researcher.services import (
     build_sql_research_result,
     cap_results,
 )
+from backend.modules.vector_store.indexer import update_markdown_index
+from backend.modules.vector_store.retriever import (
+    as_markdown_documents,
+    retrieve_chunks_for_queries,
+)
 from backend.modules.writer.agent import write_markdown
 from backend.modules.writer.models import WriterOutput
 from backend.services.db_client import DbClient, get_db_client
@@ -89,6 +94,7 @@ def run_pipeline(
 
     # First step in the chain: rewrite the user question into a research-ready form.
     research_question = question
+    retrieval_queries: list[str] = [question]
     try:
         refinement = refine_question_func(
             question,
@@ -103,6 +109,23 @@ def run_pipeline(
             logger.warning(
                 "Research question refinement returned empty output; using original question."
             )
+        retrieval_query_candidates = [query.strip() for query in refinement.retrieval_queries]
+        combined_queries = [question] + [
+            candidate_query
+            for candidate_query in retrieval_query_candidates
+            if candidate_query
+        ]
+        deduped_queries: list[str] = []
+        seen_queries: set[str] = set()
+        for query_candidate in combined_queries:
+            key = query_candidate.casefold()
+            if key in seen_queries:
+                continue
+            seen_queries.add(key)
+            deduped_queries.append(query_candidate)
+            if len(deduped_queries) >= 3:
+                break
+        retrieval_queries = deduped_queries or [question]
     except (ValueError, RuntimeError, OSError, KeyError, TypeError) as exc:
         logger.warning(
             "Research question refinement failed; using original question. error=%s",
@@ -115,6 +138,7 @@ def run_pipeline(
         {
             "original_question": question,
             "research_question": research_question,
+            "retrieval_queries": retrieval_queries,
         },
     )
     run_logger.record_artifact("research_question", paths.research_question)
@@ -186,15 +210,55 @@ def run_pipeline(
         }
 
     def _run_initial_markdown() -> dict[str, object]:
-        markdown_chunks = load_markdown_documents(
-            config.markdown_dir,
-            config.markdown_researcher,
-            selected_cities=selected_cities,
-        )
+        markdown_source_mode = "standard_chunking"
+        markdown_chunks: list[dict[str, str]]
+        if config.vector_store.enabled:
+            markdown_source_mode = "vector_store_retrieval"
+            if config.vector_store.auto_update_on_run:
+                update_markdown_index(
+                    config=config,
+                    docs_dir=config.markdown_dir,
+                    selected_cities=selected_cities,
+                    dry_run=False,
+                )
+            retrieved_chunks, retrieval_meta = retrieve_chunks_for_queries(
+                queries=retrieval_queries,
+                config=config,
+                docs_dir=config.markdown_dir,
+                selected_cities=selected_cities,
+            )
+            markdown_chunks = as_markdown_documents(retrieved_chunks)
+            retrieval_payload = {
+                "queries": retrieval_queries,
+                "selected_cities": selected_cities or [],
+                "retrieved_count": len(retrieved_chunks),
+                "meta": retrieval_meta,
+                "chunks": [
+                    {
+                        "chunk_id": chunk.chunk_id,
+                        "city_name": chunk.city_name,
+                        "source_path": chunk.source_path,
+                        "heading_path": chunk.heading_path,
+                        "block_type": chunk.block_type,
+                        "distance": chunk.distance,
+                    }
+                    for chunk in retrieved_chunks
+                ],
+            }
+            retrieval_path = paths.markdown_dir / "retrieval.json"
+            write_json(retrieval_path, retrieval_payload)
+            run_logger.record_artifact("markdown_retrieval", retrieval_path)
+        else:
+            markdown_chunks = load_markdown_documents(
+                config.markdown_dir,
+                config.markdown_researcher,
+                selected_cities=selected_cities,
+            )
         run_logger.record_markdown_inputs(
             markdown_dir=config.markdown_dir,
             selected_cities_planned=selected_cities,
             markdown_chunks=markdown_chunks,
+            markdown_source_mode=markdown_source_mode,
         )
         markdown_result = markdown_func(
             research_question,
@@ -203,7 +267,12 @@ def run_pipeline(
             api_key,
             log_llm_payload=log_llm_payload,
         )
-        return {"markdown_chunks": markdown_chunks, "result": markdown_result}
+        return {
+            "markdown_chunks": markdown_chunks,
+            "result": markdown_result,
+            "retrieval_queries": retrieval_queries,
+            "markdown_source_mode": markdown_source_mode,
+        }
 
     sql_payload: dict[str, object] | None = None
     markdown_payload: dict[str, object] | None = None
@@ -278,6 +347,13 @@ def run_pipeline(
     markdown_result = markdown_payload["result"]
     if isinstance(markdown_result, MarkdownResearchResult):
         markdown_bundle = markdown_result.model_dump()
+        source_mode = str(markdown_payload.get("markdown_source_mode", "standard_chunking"))
+        markdown_bundle["retrieval_mode"] = source_mode
+        if source_mode == "vector_store_retrieval":
+            markdown_bundle["retrieval_queries"] = markdown_payload.get(
+                "retrieval_queries",
+                [],
+            )
         inspected_cities = sorted(
             {
                 str(document.get("city_name", "")).strip()

@@ -15,6 +15,13 @@ class VectorStoreSettings:
     chunk_tokens: int
     chunk_overlap_tokens: int
     table_row_group_max_rows: int
+    retrieval_max_distance: float | None
+    retrieval_fallback_min_chunks_per_city_query: int
+    retrieval_max_chunks_per_city_query: int
+    retrieval_max_chunks_per_city: int | None
+    context_window_chunks: int
+    table_context_window_chunks: int
+    auto_update_on_run: bool
     manifest_path: Path
 
 
@@ -29,6 +36,13 @@ def get_vector_store_settings(config: AppConfig) -> VectorStoreSettings:
         chunk_tokens=vector_store.embedding_chunk_tokens,
         chunk_overlap_tokens=vector_store.embedding_chunk_overlap_tokens,
         table_row_group_max_rows=vector_store.table_row_group_max_rows,
+        retrieval_max_distance=vector_store.retrieval_max_distance,
+        retrieval_fallback_min_chunks_per_city_query=vector_store.retrieval_fallback_min_chunks_per_city_query,
+        retrieval_max_chunks_per_city_query=vector_store.retrieval_max_chunks_per_city_query,
+        retrieval_max_chunks_per_city=vector_store.retrieval_max_chunks_per_city,
+        context_window_chunks=vector_store.context_window_chunks,
+        table_context_window_chunks=vector_store.table_context_window_chunks,
+        auto_update_on_run=vector_store.auto_update_on_run,
         manifest_path=vector_store.index_manifest_path,
     )
 

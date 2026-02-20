@@ -61,6 +61,16 @@ Environment variables (`.env`):
 - `EMBEDDING_CHUNK_TOKENS` (optional, default `800`): chunk token budget for markdown packing.
 - `EMBEDDING_CHUNK_OVERLAP_TOKENS` (optional, default `80`): chunk overlap token budget.
 - `TABLE_ROW_GROUP_MAX_ROWS` (optional, default `25`): max rows per split group for oversized markdown tables.
+- `MARKDOWN_BATCH_MAX_CHUNKS` (optional, default `4`): hard cap on number of markdown chunks sent in one markdown researcher request.
+- `MARKDOWN_BATCH_MAX_INPUT_TOKENS` (optional): explicit token budget per markdown researcher batch. If unset, an adaptive budget is derived from `EMBEDDING_CHUNK_TOKENS`, `MARKDOWN_BATCH_MAX_CHUNKS`, and `MARKDOWN_BATCH_OVERHEAD_TOKENS`.
+- `MARKDOWN_BATCH_OVERHEAD_TOKENS` (optional, default `600`): reserved prompt/payload overhead used by adaptive markdown batching.
+- `VECTOR_STORE_RETRIEVAL_MAX_DISTANCE` (optional): Chroma distance cutoff; only chunks with `distance <= cutoff` are kept.
+- `VECTOR_STORE_RETRIEVAL_MAX_CHUNKS_PER_CITY_QUERY` (optional, default `100`): max candidates fetched per city/query before distance filtering/top-up.
+- `VECTOR_STORE_RETRIEVAL_FALLBACK_MIN_CHUNKS_PER_CITY_QUERY` (optional, default `20`): minimum returned per city/query (top-up target when too few pass `VECTOR_STORE_RETRIEVAL_MAX_DISTANCE`).
+- `VECTOR_STORE_RETRIEVAL_MAX_CHUNKS_PER_CITY` (optional): final per-city cap after query merge and neighbor expansion.
+- `VECTOR_STORE_CONTEXT_WINDOW_CHUNKS` (optional, default `1`): number of neighboring chunks to include around each retrieved chunk.
+- `VECTOR_STORE_TABLE_CONTEXT_WINDOW_CHUNKS` (optional, default `2`): neighbor chunk window for table chunks.
+- `VECTOR_STORE_AUTO_UPDATE_ON_RUN` (optional, default `false`): if `true`, run an incremental index update before retrieval.
 - `INDEX_MANIFEST_PATH` (optional, default `.chroma/index_manifest.json`): JSON manifest path for incremental updates.
 
 CLI flags override `.env` values for a given run (for example `--db-path`, `--db-url`, `--markdown-path`, `--enable-sql`).
@@ -70,6 +80,53 @@ Example `.env.example` is provided.
 
 Default output directory is `output/` (unless overridden by `RUNS_DIR`).
 Schema summary for SQL generation is derived from `backend/db_models/`.
+
+### Vector retrieval sizing and thresholds
+
+When vector retrieval is enabled, retrieval runs per city and per query (original + refined variants), then merges and expands context.
+
+- For each (city × query), the retriever:
+  - fetches up to `VECTOR_STORE_RETRIEVAL_MAX_CHUNKS_PER_CITY_QUERY` candidates from Chroma (ranked by increasing distance);
+  - if `VECTOR_STORE_RETRIEVAL_MAX_DISTANCE` is set, it first keeps only candidates with `distance <= cutoff`;
+  - if fewer than `VECTOR_STORE_RETRIEVAL_FALLBACK_MIN_CHUNKS_PER_CITY_QUERY` pass the cutoff, it **tops up** with the next-best candidates (above the cutoff) until it reaches the fallback minimum (or runs out of candidates).
+- After per-(city × query) retrieval:
+  - results are merged across queries within a city (dedupe by `chunk_id`, keep the smallest distance);
+  - neighbor chunks are added by `chunk_index` window (same file/city);
+  - optionally, `VECTOR_STORE_RETRIEVAL_MAX_CHUNKS_PER_CITY` caps the final chunks per city after merge + neighbor expansion.
+- `VECTOR_STORE_RETRIEVAL_MAX_DISTANCE` is the strictness control:
+  - smaller value = stricter matching, fewer chunks;
+  - larger value = higher recall, more chunks.
+
+Important distinction between the “max” knobs:
+
+- `VECTOR_STORE_RETRIEVAL_MAX_CHUNKS_PER_CITY_QUERY` controls the **candidate pool size per (city × query)** *before* distance filtering/top-up.
+  - If this is too small, you may not have enough candidates to top up to the fallback minimum.
+- `VECTOR_STORE_RETRIEVAL_MAX_CHUNKS_PER_CITY` controls the **final per-city cap** *after* query-merge and neighbor expansion.
+  - Use it as a latency/cost guardrail; setting it too low can drop context neighbors or even primary hits with weaker distances.
+
+Distance scale note:
+
+- Do not assume distance is always in `[0, 1]`. It depends on collection metric and embedding characteristics.
+- `0` means identical vectors; values above `0` are increasingly dissimilar.
+- A cutoff of `0` is the strictest setting and usually returns very few (often zero) chunks, not all chunks.
+
+How to estimate chunk counts:
+
+- **Minimum (practical):**
+  - per (city × query): approximately `min(VECTOR_STORE_RETRIEVAL_FALLBACK_MIN_CHUNKS_PER_CITY_QUERY, available_chunks_total)`, before merge/neighbor expansion.
+- **Maximum (practical):**
+  - per (city × query): `VECTOR_STORE_RETRIEVAL_MAX_CHUNKS_PER_CITY_QUERY`, before merge/neighbor expansion;
+  - bounded by `VECTOR_STORE_RETRIEVAL_MAX_CHUNKS_PER_CITY` if set;
+  - otherwise depends on distance cutoff + number of merged queries + neighbor expansion windows.
+
+Recommended tuning workflow:
+
+1. Start recall-friendly:
+   - leave `VECTOR_STORE_RETRIEVAL_MAX_DISTANCE` empty, or set a permissive value;
+   - set `VECTOR_STORE_RETRIEVAL_FALLBACK_MIN_CHUNKS_PER_CITY_QUERY` to a meaningful fallback (for example 20-40).
+2. Run and inspect `output/<run_id>/markdown/retrieval.json` for returned distances and counts.
+3. Set/tighten `VECTOR_STORE_RETRIEVAL_MAX_DISTANCE` based on observed distance distribution.
+4. Add `VECTOR_STORE_RETRIEVAL_MAX_CHUNKS_PER_CITY` only if latency/cost grows too much.
 
 ## API key setup (important)
 
@@ -218,7 +275,10 @@ flowchart TD
 What each stage does:
 
 - Orchestrator receives the input question and creates a research-oriented question.
-- Extractor reads markdown documents in chunks and returns evidence excerpts selected by the markdown researcher.
+- Extractor input source is configurable:
+  - default path: markdown files are token-chunked directly from disk;
+  - vector path (`VECTOR_STORE_ENABLED=true`): per-city, distance-thresholded chunks are retrieved from Chroma using explicit query embeddings.
+- Markdown researcher returns evidence excerpts selected from whichever chunk source was used.
 - `markdown_chunk_count` tracks how many chunk inputs were processed; `excerpt_count` (also logged as `markdown_excerpt_count` in run metadata) tracks how many evidence snippets were extracted from those chunks.
 - Context bundle is updated with extracted evidence for downstream writing.
 - Orchestrator hands the prepared context bundle directly to the writer.
@@ -403,6 +463,7 @@ Artifacts are written under `output/<run_id>/`:
 - `sql/results_full.json` (when SQL is enabled): uncapped SQL execution results.
 - `sql/results.json` (when SQL is enabled): token-capped SQL results sent downstream.
 - `markdown/excerpts.json`: markdown researcher evidence bundle. Includes `excerpts` (items with `quote`, `city_name`, `partial_answer`), `inspected_cities` (city names present in inspected markdown inputs), and `excerpt_count` (count of extracted excerpts).
+- `markdown/retrieval.json` (when `VECTOR_STORE_ENABLED=true`): vector retrieval inputs and results summary. Includes the final retrieval query list, optional city filter, retrieval tuning metadata (cutoffs/caps), and per-chunk summaries (`chunk_id`, `city_name`, `source_path`, `heading_path`, `block_type`, `distance`).
 - `final.md`: final delivered markdown output. Content format is:
   1) `# Question` heading with the original user question,
   2) generated markdown answer body from the writer,
@@ -491,6 +552,19 @@ Build markdown index from scratch:
 ```
 python -m backend.scripts.build_markdown_index --docs-dir documents
 ```
+
+Analyze retrieval distance distributions (to help choose `VECTOR_STORE_RETRIEVAL_MAX_DISTANCE`):
+
+```
+python -m backend.scripts.analyze_retrieval_distances --runs-dir output
+python -m backend.scripts.analyze_retrieval_distances --city Munich --city Leipzig --thresholds "0.5,1.0,2.0" --show-per-run
+```
+
+How to use the output:
+
+- Start with `VECTOR_STORE_RETRIEVAL_MAX_DISTANCE` empty (no distance filtering) and run a few representative queries.
+- Run the analysis script and look at the overall/per-city percentiles.
+- Pick a cutoff that keeps the bulk of “good” chunks (often somewhere around the p90–p99 region for your corpus), then iterate.
 
 Dry-run build that also writes chunks to JSON for inspection (no embeddings, no Chroma writes):
 

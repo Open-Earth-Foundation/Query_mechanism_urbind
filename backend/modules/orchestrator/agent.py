@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 import json
 from pathlib import Path
@@ -119,7 +119,7 @@ def refine_research_question(
     api_key: str,
     log_llm_payload: bool = False,
 ) -> ResearchQuestionRefinement:
-    """Rewrite the original user question into a research-ready question."""
+    """Return a lightly refined research question plus retrieval query variants."""
     agent = build_research_question_agent(config, api_key)
     payload = {
         "question": question,

@@ -56,6 +56,6 @@ class RetrievedChunk:
     source_path: str
     heading_path: str
     block_type: str
-    score: float
+    distance: float
     chunk_id: str
     metadata: dict[str, str | int | float | bool | None] = field(default_factory=dict)

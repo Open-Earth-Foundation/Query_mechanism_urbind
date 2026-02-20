@@ -18,6 +18,7 @@ from backend.modules.markdown_researcher.models import (
     MarkdownResearchResult,
 )
 from backend.modules.markdown_researcher.services import (
+    build_city_batches,
     split_documents_by_city,
 )
 from backend.modules.markdown_researcher.utils import (
@@ -31,9 +32,31 @@ from backend.services.agents import (
 )
 from backend.utils.config import AppConfig
 from backend.utils.prompts import load_prompt
+from backend.utils.tokenization import get_max_input_tokens
 
 
 logger = logging.getLogger(__name__)
+
+
+def _resolve_batch_input_token_limit(config: AppConfig) -> int:
+    """Resolve batch input token budget with adaptive defaults."""
+    configured_limit = config.markdown_researcher.batch_max_input_tokens
+    max_chunks = max(config.markdown_researcher.batch_max_chunks, 1)
+    overhead = max(config.markdown_researcher.batch_overhead_tokens, 0)
+    adaptive_limit = (
+        config.vector_store.embedding_chunk_tokens * max_chunks + overhead
+    )
+    batch_limit = configured_limit if configured_limit is not None else adaptive_limit
+
+    model_input_limit = get_max_input_tokens(
+        config.markdown_researcher.context_window_tokens,
+        config.markdown_researcher.max_output_tokens,
+        config.markdown_researcher.input_token_reserve,
+        config.markdown_researcher.max_input_tokens,
+    )
+    if model_input_limit is None:
+        return max(batch_limit, 1)
+    return max(min(batch_limit, model_input_limit), 1)
 
 
 def build_markdown_agent(config: AppConfig, api_key: str) -> Agent:
@@ -125,17 +148,26 @@ def extract_markdown_excerpts(
         batch_index: int,
         batch: list[dict[str, str]],
     ) -> tuple[str, int, list[MarkdownExcerpt], ErrorInfo | None, bool]:
-        """Process a single city batch (currently one chunk) and return excerpts."""
+        """Process one city batch and return excerpts."""
         excerpts: list[MarkdownExcerpt] = []
         error: ErrorInfo | None = None
         success = False
 
-        # Current architecture sends one chunk per agent call to keep payloads small and predictable.
-        chunk_content = batch[0].get("content", "") if batch else ""
+        chunks_payload = [
+            {
+                "chunk_id": str(document.get("chunk_id", "")),
+                "path": str(document.get("path", "")),
+                "heading_path": str(document.get("heading_path", "")),
+                "block_type": str(document.get("block_type", "")),
+                "distance": str(document.get("distance", "")),
+                "content": str(document.get("content", "")),
+            }
+            for document in batch
+        ]
         payload = {
             "question": question,
             "city_name": city_name,
-            "content": chunk_content,
+            "chunks": chunks_payload,
         }
         max_retries = max(config.markdown_researcher.max_retries, 0)
         retry_base = max(config.markdown_researcher.retry_base_seconds, 0.1)
@@ -255,18 +287,17 @@ def extract_markdown_excerpts(
             excerpts.append(excerpt)
         return city_name, batch_index, excerpts, error, success
 
-    # Build list of all city batches to process
-    all_tasks: list[tuple[str, int, list[dict[str, str]]]] = []
+    batch_max_chunks = max(config.markdown_researcher.batch_max_chunks, 1)
+    batch_token_limit = _resolve_batch_input_token_limit(config)
     for city_name, city_documents in sorted(documents_by_city.items()):
-        logger.info(
-            "Preparing markdown for city %s (%d chunks)",
-            city_name,
-            len(city_documents),
-        )
-        # Intentionally one chunk per batch to reduce per-call context size.
-        batches = [[document] for document in city_documents]
-        for batch_index, batch in enumerate(batches, start=1):
-            all_tasks.append((city_name, batch_index, batch))
+        logger.info("Preparing markdown for city %s (%d chunks)", city_name, len(city_documents))
+
+    # Build list of city-scoped batches under token/chunk limits.
+    all_tasks = build_city_batches(
+        documents_by_city=documents_by_city,
+        max_batch_input_tokens=batch_token_limit,
+        max_batch_chunks=batch_max_chunks,
+    )
 
     if not all_tasks:
         logger.warning("No markdown batches available for extraction.")
@@ -285,9 +316,11 @@ def extract_markdown_excerpts(
     max_workers = min(configured_workers, max(len(all_tasks), 1))
 
     logger.info(
-        "Processing %d markdown batches with %d worker(s)",
+        "Processing %d markdown batches with %d worker(s) [max_chunks=%d, token_limit=%d]",
         len(all_tasks),
         max_workers,
+        batch_max_chunks,
+        batch_token_limit,
     )
 
     with ThreadPoolExecutor(max_workers=max_workers) as executor:

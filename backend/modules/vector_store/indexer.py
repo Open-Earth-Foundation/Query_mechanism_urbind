@@ -21,7 +21,7 @@ from backend.modules.vector_store.manifest import (
     save_manifest,
 )
 from backend.modules.vector_store.markdown_blocks import parse_markdown_blocks
-from backend.modules.vector_store.models import EmbeddingProvider, IndexedChunk, RetrievedChunk
+from backend.modules.vector_store.models import EmbeddingProvider, IndexedChunk
 from backend.utils.config import AppConfig, load_config
 
 logger = logging.getLogger(__name__)
@@ -369,52 +369,9 @@ def ensure_index_up_to_date(docs_dir: str) -> None:
     )
 
 
-def retrieve_top_k(
-    query: str,
-    city_filter: list[str] | None,
-    k: int,
-) -> list[RetrievedChunk]:
-    """Retrieve top-k chunks from Chroma for a query."""
-    config = load_config()
-    settings = get_vector_store_settings(config)
-    where: dict[str, object] | None = None
-    if city_filter:
-        where = {"city_name": {"$in": city_filter}}
-
-    store = ChromaStore(settings.persist_path, settings.collection_name)
-    result = store.query(query_texts=[query], n_results=max(k, 1), where=where)
-
-    ids = result.get("ids", [[]])[0] if result.get("ids") else []
-    metadatas = result.get("metadatas", [[]])[0] if result.get("metadatas") else []
-    distances = result.get("distances", [[]])[0] if result.get("distances") else []
-    chunks: list[RetrievedChunk] = []
-    for chunk_id, metadata, distance in zip(ids, metadatas, distances, strict=False):
-        if not isinstance(metadata, dict):
-            continue
-        score = 1.0 / (1.0 + float(distance))
-        chunks.append(
-            RetrievedChunk(
-                city_name=str(metadata.get("city_name", "")),
-                raw_text=str(metadata.get("raw_text", "")),
-                source_path=str(metadata.get("source_path", "")),
-                heading_path=str(metadata.get("heading_path", "")),
-                block_type=str(metadata.get("block_type", "")),
-                score=score,
-                chunk_id=str(chunk_id),
-                metadata={
-                    key: value
-                    for key, value in metadata.items()
-                    if isinstance(value, (str, int, float, bool)) or value is None
-                },
-            )
-        )
-    return chunks
-
-
 __all__ = [
     "IndexStats",
     "build_markdown_index",
     "ensure_index_up_to_date",
-    "retrieve_top_k",
     "update_markdown_index",
 ]

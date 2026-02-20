@@ -29,11 +29,15 @@ Content quality requirements:
 - Always begin with this structured evidence header (each item must be on a separate line):
   - `Files inspected: <comma-separated city names>` using `context_bundle.markdown.inspected_cities` (if missing/empty, write `none`).
   - `Extracted excerpts: <number>` using `context_bundle.markdown.excerpt_count` (treat missing/invalid as `0`).
+  - `Retrieval mode: <mode>` using `context_bundle.markdown.retrieval_mode` (default `standard_chunking`).
+  - `Retrieval queries used: <query1 | query2 | query3>` using `context_bundle.markdown.retrieval_queries` (if missing/empty, write `none`).
   
   Format example:
   ```
   Files inspected: Porto
   Extracted excerpts: 35
+  Retrieval mode: vector_store_retrieval
+  Retrieval queries used: compare ev charging porto | porto charging targets timeline | porto retrofit budget metrics
   ```
 - Decision text after the header:
   - If `excerpt_count == 0`, do not attempt to answer the question. Clearly state that no relevant evidence was found in the provided sources and that you cannot provide a grounded answer.
