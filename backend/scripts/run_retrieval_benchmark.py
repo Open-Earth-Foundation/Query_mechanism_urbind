@@ -10,6 +10,8 @@ Inputs:
   - --questions-file: Newline-delimited benchmark questions file (default: backend/benchmarks/prompts/retrieval_questions.txt).
   - --city: Optional city filter; repeatable.
   - --repetitions: Number of repetitions per question per mode (default: 1).
+  - --use-query-overrides/--no-use-query-overrides: Enable/disable fixed retrieval queries for benchmark stability (default: enabled).
+  - --query-overrides: JSON file mapping benchmark question -> canonical query + retrieval queries (default: backend/benchmarks/prompts/retrieval_query_overrides.json).
   - --log-llm-payload/--no-log-llm-payload: Enable/disable full LLM payload logging (default: off).
 - Files/paths:
   - Env files use dotenv KEY=VALUE format.
@@ -43,6 +45,9 @@ logger = logging.getLogger(__name__)
 DEFAULT_BASE_ENV_FILE = Path("backend/benchmarks/config/base.env")
 DEFAULT_STANDARD_ENV_FILE = Path("backend/benchmarks/config/mode_standard.env")
 DEFAULT_VECTOR_ENV_FILE = Path("backend/benchmarks/config/mode_vector.env")
+DEFAULT_QUERY_OVERRIDES_FILE = Path(
+    "backend/benchmarks/prompts/retrieval_query_overrides.json"
+)
 
 
 def parse_args() -> argparse.Namespace:
@@ -86,6 +91,17 @@ def parse_args() -> argparse.Namespace:
         help="Repetitions per question per mode.",
     )
     parser.add_argument(
+        "--use-query-overrides",
+        action=argparse.BooleanOptionalAction,
+        default=True,
+        help="Use fixed benchmark retrieval queries from --query-overrides.",
+    )
+    parser.add_argument(
+        "--query-overrides",
+        default=str(DEFAULT_QUERY_OVERRIDES_FILE),
+        help="JSON file mapping question -> canonical query + retrieval queries.",
+    )
+    parser.add_argument(
         "--log-llm-payload",
         action=argparse.BooleanOptionalAction,
         default=False,
@@ -126,6 +142,8 @@ def main() -> None:
         selected_cities=args.city or [],
         repetitions=args.repetitions,
         mode_configs=mode_configs,
+        use_query_overrides=bool(args.use_query_overrides),
+        query_overrides_path=Path(args.query_overrides) if args.query_overrides else None,
         log_llm_payload=args.log_llm_payload,
     )
 

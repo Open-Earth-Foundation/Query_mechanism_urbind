@@ -1,0 +1,26 @@
+{
+  "Compare EV charging and building retrofit initiatives in Munster, Leipzig, and Mannheim.": {
+    "canonical_research_query": "Compare EV charging and building retrofit initiatives in the selected cities.",
+    "retrieval_queries": [
+      "Compare EV charging and building retrofit initiatives in the selected cities.",
+      "EV charging infrastructure initiatives programs incentives public chargers fast charging regulations building retrofit initiatives energy efficiency renovation heat pumps funding",
+      "EV charging targets number of charging points timelines budgets KPIs building retrofit targets renovation rates energy savings CO2 reduction metrics monitoring reports"
+    ]
+  },
+  "For Munster, Leipzig, and Mannheim, list the most concrete quantified charging targets, budgets, and timelines.": {
+    "canonical_research_query": "For the selected cities, list the most concrete, quantified EV charging targets, budgets, and timelines.",
+    "retrieval_queries": [
+      "For the selected cities, list the most concrete, quantified EV charging targets, budgets, and timelines.",
+      "EV charging infrastructure targets budgets timelines deployment plan funding program quantitative commitments",
+      "number of charging points targets by year budget amounts funding sources CAPEX OPEX timelines milestones KPIs table"
+    ]
+  },
+  "For Munster, Leipzig, and Mannheim, summarize the most important initiatives and programs for reaching carbon net zero.": {
+    "canonical_research_query": "For the selected cities, summarize the most important initiatives and programs for reaching carbon net zero.",
+    "retrieval_queries": [
+      "For the selected cities, summarize the most important initiatives and programs for reaching carbon net zero.",
+      "net zero climate neutrality initiatives programs strategy action plan sectors buildings transport energy industry governance funding",
+      "climate neutrality targets years milestones CO2 reduction metrics indicators monitoring reporting budgets program timelines"
+    ]
+  }
+}
