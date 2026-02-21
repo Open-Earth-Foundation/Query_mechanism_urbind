@@ -351,12 +351,10 @@ class LlmPayloadLoggingHooks(RunHooksBase[Any, Agent[Any]]):
         self._log_payload(payload)
 
 
-def build_model_settings(
-    temperature: float | None, max_output_tokens: int | None
-) -> ModelSettings:
+def build_model_settings(temperature: float | None, max_output_tokens: int | None) -> ModelSettings:
     settings_kwargs: dict[str, Any] = {"include_usage": True}
-    if temperature is not None:
-        settings_kwargs["temperature"] = temperature
+    resolved_temperature = 0.0 if temperature is None else float(temperature)
+    settings_kwargs["temperature"] = resolved_temperature
     if max_output_tokens is not None:
         settings_kwargs["max_output_tokens"] = max_output_tokens
     return ModelSettings(**settings_kwargs)

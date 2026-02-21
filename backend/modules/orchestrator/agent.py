@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 import json
 from pathlib import Path
@@ -117,12 +117,14 @@ def refine_research_question(
     question: str,
     config: AppConfig,
     api_key: str,
+    selected_cities: list[str] | None = None,
     log_llm_payload: bool = False,
 ) -> ResearchQuestionRefinement:
-    """Rewrite the original user question into a research-ready question."""
+    """Return a lightly refined research question plus retrieval query variants."""
     agent = build_research_question_agent(config, api_key)
     payload = {
         "question": question,
+        "selected_cities": selected_cities or [],
         "context_window_tokens": config.orchestrator.context_window_tokens,
         "max_input_tokens": get_max_input_tokens(
             config.orchestrator.context_window_tokens,

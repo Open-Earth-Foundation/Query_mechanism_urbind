@@ -143,6 +143,7 @@ venv.bak/
 
 # Run artifacts
 output/
+.chroma/
 
 # Spyder project settings
 .spyderproject

@@ -1,4 +1,4 @@
-﻿"""Background executor for async backend runs."""
+"""Background executor for async backend runs."""
 
 from __future__ import annotations
 
@@ -116,6 +116,7 @@ class RunExecutor:
                 "config": config,
                 "run_id": run_id,
                 "log_llm_payload": command.log_llm_payload,
+                "selected_cities": command.cities,
             }
             if command.api_key is not None:
                 pipeline_kwargs["api_key_override"] = command.api_key

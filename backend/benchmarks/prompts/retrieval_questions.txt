@@ -1,0 +1,6 @@
+# Keep this list short for fast benchmarking.
+# Every non-empty, non-comment line is one benchmark question.
+
+Compare EV charging and building retrofit initiatives in Munster, Leipzig, and Mannheim.
+For Munster, Leipzig, and Mannheim, list the most concrete quantified charging targets, budgets, and timelines.
+For Munster, Leipzig, and Mannheim, summarize the most important initiatives and programs for reaching carbon net zero.

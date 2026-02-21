@@ -8,6 +8,7 @@ requires-python = ">=3.11"
 dependencies = [
   "openai-agents==0.6.2",
   "openai==2.16.0",
+  "chromadb",
   "fastapi==0.115.12",
   "uvicorn==0.38.0",
   "httpx==0.28.1",
