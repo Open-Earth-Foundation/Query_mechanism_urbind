@@ -372,7 +372,7 @@ class RunLogger:
         self,
         markdown_dir: Path,
         selected_cities_planned: list[str] | None,
-        markdown_chunks: list[dict[str, str]],
+        markdown_chunks: list[dict[str, object]],
         markdown_source_mode: str = "standard_chunking",
     ) -> None:
         """Capture markdown input snapshot for reproducible run summaries.

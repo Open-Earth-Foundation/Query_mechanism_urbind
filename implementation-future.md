@@ -32,6 +32,7 @@ This repo has implemented the core “Retriever + orchestrator integration” pl
   - `.env.example` and `README.md` document the env vars and tuning behavior.
 - **B) Retriever module (`backend/modules/vector_store/retriever.py`)**: **Done**
   - Query embedding is computed in code, and Chroma is queried by embedding.
+  - Query embeddings are batched via one reusable embedding provider instance.
   - Adapter exists: `as_markdown_documents(...)`.
 - **C) Chroma query-by-embedding API**: **Done**
   - `backend/modules/vector_store/chroma_store.py::query_by_embedding(...)` exists and is used by the retriever.
@@ -44,7 +45,27 @@ This repo has implemented the core “Retriever + orchestrator integration” pl
   - **Still missing (nice-to-have)**: surface retrieval knob values (fallback/min/max/cutoffs) directly in `run.json` inputs (some of this is present inside `markdown/retrieval.json` already).
 - **Testing**: **Done**
   - `tests/test_vector_store_retriever.py` covers adapter + distance cutoff/top-up + neighbor expansion behavior.
+  - Retriever tests cover manifest-backed city resolution and fail-fast behavior when manifest is missing.
   - `tests/test_orchestrator.py` covers the orchestrator toggle path and verifies `retrieval.json` creation.
+
+---
+
+## Recently implemented (high-ROI wins now completed)
+
+### 1) Neighbor expansion batching: **Done**
+
+- `_expand_neighbors()` now batches Chroma lookups per `(city_name, source_path)` group and requested `chunk_index` set.
+- Behavior is preserved: neighbors are still added with the originating seed distance and chunk dedupe semantics remain unchanged.
+
+### 2) Manifest-backed city discovery for vector retrieval: **Done**
+
+- When `selected_cities` is not provided, retriever now derives cities from `index_manifest.json` (indexed state), not `docs_dir.rglob("*.md")` (filesystem state).
+- Retrieval now fails fast with a clear error if the manifest is missing/empty, and selected cities are validated against indexed manifest cities.
+
+### 3) Batched query embeddings with provider reuse: **Done**
+
+- Retriever now embeds all normalized retrieval queries in one call using the same provider pattern as the indexer.
+- This reduces outbound embedding calls and improves latency stability without changing retrieval quality logic.
 
 ---
 
@@ -76,13 +97,13 @@ To keep retrieval accuracy stable (and to keep performance predictable), the vec
 
 ---
 
-## Top priorities (big gains)
+## Remaining top priorities (big gains)
 
 ### 1) Global city gating (avoid “query every city”)
 
 **Problem**
 
-When `selected_cities` is not provided, the retriever resolves cities by scanning markdown files and then runs retrieval **for each city × each query**. This creates:
+When `selected_cities` is not provided, the retriever can still run retrieval **for each indexed city × each query**. On large corpora, this creates:
 
 - **Latency blowups**: too many Chroma queries (and neighbor expansions).
 - **Lower accuracy**: “forced coverage” across irrelevant cities adds noise and distracts the markdown agent.
@@ -108,7 +129,7 @@ Add a two-stage retrieval strategy:
 
 ---
 
-### 2) Fix neighbor expansion (remove per-neighbor Chroma `get()` calls)
+### 2) ~~Fix neighbor expansion (remove per-neighbor Chroma `get()` calls)~~ **Done**
 
 **Problem**
 
@@ -198,11 +219,11 @@ Start minimal: lexical search can run over an in-memory index or a lightweight o
 
 ---
 
-### 5) Remove filesystem scan dependency from vector retrieval
+### 5) ~~Remove filesystem scan dependency from vector retrieval~~ **Done**
 
 **Problem**
 
-The retriever currently uses `docs_dir.rglob("*.md")` to enumerate cities when `selected_cities` is missing. This adds avoidable I/O and couples retrieval behavior to filesystem state rather than index state.
+The retriever previously used `docs_dir.rglob("*.md")` to enumerate cities when `selected_cities` was missing. That added avoidable I/O and coupled retrieval behavior to filesystem state rather than index state.
 
 **Proposed change**
 
@@ -214,11 +235,11 @@ Use the index’s canonical sources:
 **Acceptance criteria**
 
 - Retrieval runs without scanning the documents folder when `VECTOR_STORE_ENABLED=true`.
-- If manifest is missing or stale, fail fast with a clear error (unless auto-update is enabled).
+- If manifest is missing, empty, or selected cities are not indexed, fail fast with a clear error (unless auto-update is enabled before retrieval).
 
 ---
 
-### 6) Batch query embeddings and reuse embedding provider
+### 6) ~~Batch query embeddings and reuse embedding provider~~ **Done**
 
 **Problem**
 
@@ -288,14 +309,13 @@ Add a small offline evaluation harness:
 
 ---
 
-## Suggested execution order (fastest ROI first)
+## Suggested execution order (fastest ROI first, updated)
 
-1. **Neighbor expansion batching** (speed win, low risk, behavior-preserving).
-2. **Global city gating** (speed + quality win, moderate change).
-3. **Global retrieval budget** (predictability win, moderate change).
-4. **Reranking** (biggest accuracy win, needs careful cost control).
+1. **Evaluation harness** (enables safe iteration and catches retrieval regressions).
+2. **Global city gating** (speed + quality win, moderate change; validate with harness).
+3. **Global retrieval budget** (predictability win, moderate change; keep conservative defaults).
+4. **Reranking** (biggest quality upside, needs careful cost control and measurement).
 5. **Hybrid retrieval** (accuracy/recall win, may require extra indexing work).
-6. **Evaluation harness** (enables safe iteration across all of the above).
 
 ---
 

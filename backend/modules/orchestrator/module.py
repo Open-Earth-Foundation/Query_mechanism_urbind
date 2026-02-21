@@ -10,7 +10,12 @@ import psycopg
 
 from backend.modules.markdown_researcher.agent import extract_markdown_excerpts
 from backend.modules.markdown_researcher.models import MarkdownResearchResult
-from backend.modules.markdown_researcher.services import load_markdown_documents
+from backend.modules.markdown_researcher.services import (
+    build_city_batches,
+    load_markdown_documents,
+    resolve_batch_input_token_limit,
+    split_documents_by_city,
+)
 from backend.modules.orchestrator.agent import refine_research_question
 from backend.modules.orchestrator.models import (
     ResearchQuestionRefinement,
@@ -47,6 +52,7 @@ from backend.services.run_logger import RunLogger
 from backend.services.schema_registry import load_schema
 from backend.utils.config import AppConfig, get_openrouter_api_key
 from backend.utils.paths import RunPaths, build_run_id, create_run_paths
+from backend.utils.tokenization import count_tokens
 
 logger = logging.getLogger(__name__)
 
@@ -93,24 +99,25 @@ def run_pipeline(
     run_log_handler = attach_run_file_logger(paths.base_dir)
 
     # First step in the chain: rewrite the user question into a research-ready form.
-    research_question = question
-    retrieval_queries: list[str] = [question]
+    canonical_research_query = question
+    retrieval_queries: list[str] = [canonical_research_query]
     try:
         refinement = refine_question_func(
             question,
             config,
             api_key,
+            selected_cities=selected_cities,
             log_llm_payload=log_llm_payload,
         )
         candidate = refinement.research_question.strip()
         if candidate:
-            research_question = candidate
+            canonical_research_query = candidate
         else:
             logger.warning(
                 "Research question refinement returned empty output; using original question."
             )
         retrieval_query_candidates = [query.strip() for query in refinement.retrieval_queries]
-        combined_queries = [question] + [
+        combined_queries = [canonical_research_query] + [
             candidate_query
             for candidate_query in retrieval_query_candidates
             if candidate_query
@@ -125,19 +132,19 @@ def run_pipeline(
             deduped_queries.append(query_candidate)
             if len(deduped_queries) >= 3:
                 break
-        retrieval_queries = deduped_queries or [question]
+        retrieval_queries = deduped_queries or [canonical_research_query]
     except (ValueError, RuntimeError, OSError, KeyError, TypeError) as exc:
         logger.warning(
             "Research question refinement failed; using original question. error=%s",
             exc,
         )
 
-    run_logger.update_research_question(research_question)
+    run_logger.update_research_question(canonical_research_query)
     write_json(
         paths.research_question,
         {
             "original_question": question,
-            "research_question": research_question,
+            "canonical_research_query": canonical_research_query,
             "retrieval_queries": retrieval_queries,
         },
     )
@@ -171,7 +178,7 @@ def run_pipeline(
     # Run initial SQL and markdown in parallel
     def _run_initial_sql() -> dict[str, object]:
         sql_plan = sql_plan_func(
-            research_question,
+            canonical_research_query,
             schema_summary,
             city_names,
             config,
@@ -182,7 +189,7 @@ def run_pipeline(
         if sql_plan.status == "error":
             return {"status": "error", "plan": sql_plan}
         sql_plan, full_results, sql_rounds = run_sql_rounds(
-            research_question,
+            canonical_research_query,
             sql_plan,
             db_client,
             config,
@@ -211,7 +218,7 @@ def run_pipeline(
 
     def _run_initial_markdown() -> dict[str, object]:
         markdown_source_mode = "standard_chunking"
-        markdown_chunks: list[dict[str, str]]
+        markdown_chunks: list[dict[str, object]]
         if config.vector_store.enabled:
             markdown_source_mode = "vector_store_retrieval"
             if config.vector_store.auto_update_on_run:
@@ -260,8 +267,44 @@ def run_pipeline(
             markdown_chunks=markdown_chunks,
             markdown_source_mode=markdown_source_mode,
         )
+        documents_by_city = split_documents_by_city(markdown_chunks)
+        batch_max_chunks = int(max(config.markdown_researcher.batch_max_chunks, 1))
+        batch_token_limit = int(resolve_batch_input_token_limit(config))
+        batch_plan = build_city_batches(
+            documents_by_city=documents_by_city,
+            max_batch_input_tokens=batch_token_limit,
+            max_batch_chunks=batch_max_chunks,
+        )
+        batches_payload = {
+            "batch_max_chunks": batch_max_chunks,
+            "batch_max_input_tokens": batch_token_limit,
+            "cities": sorted(documents_by_city.keys()),
+            "batches": [
+                {
+                    "city_name": city_name,
+                    "batch_index": batch_index,
+                    "chunk_count": len(batch),
+                    "estimated_tokens": sum(
+                        max(count_tokens(str(item.get("content", ""))), 0) for item in batch
+                    ),
+                    "chunks": [
+                        {
+                            "chunk_id": str(item.get("chunk_id", "")),
+                            "path": str(item.get("path", "")),
+                            "chunk_index": item.get("chunk_index"),
+                            "distance": item.get("distance"),
+                        }
+                        for item in batch
+                    ],
+                }
+                for city_name, batch_index, batch in batch_plan
+            ],
+        }
+        batches_path = paths.markdown_dir / "batches.json"
+        write_json(batches_path, batches_payload)
+        run_logger.record_artifact("markdown_batches", batches_path)
         markdown_result = markdown_func(
-            research_question,
+            canonical_research_query,
             markdown_chunks,
             config,
             api_key,

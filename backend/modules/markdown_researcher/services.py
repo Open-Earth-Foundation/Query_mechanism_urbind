@@ -5,7 +5,7 @@ from pathlib import Path
 from typing import Callable
 
 from backend.modules.vector_store.manifest import build_chunk_id, compute_content_hash
-from backend.utils.config import MarkdownResearcherConfig
+from backend.utils.config import AppConfig, MarkdownResearcherConfig
 from backend.utils.tokenization import count_tokens, chunk_text, get_max_input_tokens
 
 logger = logging.getLogger(__name__)
@@ -37,8 +37,8 @@ def _resolve_chunk_tokens(config: MarkdownResearcherConfig) -> int:
 
 
 def split_documents_by_city(
-    documents: list[dict[str, str]],
-) -> dict[str, list[dict[str, str]]]:
+    documents: list[dict[str, object]],
+) -> dict[str, list[dict[str, object]]]:
     """Group documents by the precomputed ``city_name`` key.
 
     Note:
@@ -47,20 +47,40 @@ def split_documents_by_city(
     - Documents from different folders with the same stem are intentionally
       merged into one city bucket.
     """
-    by_city: dict[str, list[dict[str, str]]] = {}
+    by_city: dict[str, list[dict[str, object]]] = {}
     for doc in documents:
-        city_name = doc.get("city_name", "unknown")
+        raw_city = doc.get("city_name", "unknown")
+        city_name = str(raw_city).strip() or "unknown"
         if city_name not in by_city:
             by_city[city_name] = []
         by_city[city_name].append(doc)
     return by_city
 
 
+def resolve_batch_input_token_limit(config: AppConfig) -> int:
+    """Resolve batch input token budget with adaptive defaults."""
+    configured_limit = config.markdown_researcher.batch_max_input_tokens
+    max_chunks = max(config.markdown_researcher.batch_max_chunks, 1)
+    overhead = max(config.markdown_researcher.batch_overhead_tokens, 0)
+    adaptive_limit = config.vector_store.embedding_chunk_tokens * max_chunks + overhead
+    batch_limit = configured_limit if configured_limit is not None else adaptive_limit
+
+    model_input_limit = get_max_input_tokens(
+        config.markdown_researcher.context_window_tokens,
+        config.markdown_researcher.max_output_tokens,
+        config.markdown_researcher.input_token_reserve,
+        config.markdown_researcher.max_input_tokens,
+    )
+    if model_input_limit is None:
+        return max(batch_limit, 1)
+    return max(min(batch_limit, model_input_limit), 1)
+
+
 def load_markdown_documents(
     markdown_dir: Path,
     config: MarkdownResearcherConfig,
     selected_cities: list[str] | None = None,
-) -> list[dict[str, str]]:
+) -> list[dict[str, object]]:
     """Load and chunk markdown files for the researcher input payload.
 
     Behavior:
@@ -69,13 +89,13 @@ def load_markdown_documents(
       case-insensitive).
     - Assigns ``city_name`` from ``Path.stem`` intentionally, so files with the
       same stem in different subdirectories map to the same logical city.
-    - Returns one entry per chunk with ``path``, ``city_name``, ``content``, and
-      deterministic ``chunk_id``.
+    - Returns one entry per chunk with ``path``, ``city_name``, ``content``,
+      deterministic ``chunk_id``, and file-local ``chunk_index``.
     """
     if not markdown_dir.exists():
         raise FileNotFoundError(f"Markdown directory not found: {markdown_dir}")
 
-    docs: list[dict[str, str]] = []
+    docs: list[dict[str, object]] = []
     files = sorted(markdown_dir.rglob("*.md"))
     if selected_cities:
         requested = {city.strip().casefold() for city in selected_cities if city.strip()}
@@ -105,29 +125,54 @@ def load_markdown_documents(
                 "city_name": city_name,
                 "content": chunk,
                 "chunk_id": chunk_id,
+                "chunk_index": chunk_index,
             }
             docs.append(entry)
 
     return docs
 
 
+def _parse_chunk_index(value: object) -> int:
+    """Parse chunk index into a sortable int with safe fallback."""
+    if isinstance(value, int):
+        return value
+    if isinstance(value, str):
+        try:
+            return int(value.strip())
+        except ValueError:
+            return 1_000_000_000
+    return 1_000_000_000
+
+
+def _document_sequence_key(document: dict[str, object]) -> tuple[str, int]:
+    """Sort key that preserves file order when chunk indices are file-local."""
+    path = str(document.get("path", "")).strip()
+    chunk_index = _parse_chunk_index(document.get("chunk_index"))
+    return path, chunk_index
+
+
 def build_city_batches(
-    documents_by_city: dict[str, list[dict[str, str]]],
+    documents_by_city: dict[str, list[dict[str, object]]],
     max_batch_input_tokens: int,
     max_batch_chunks: int,
     token_counter: Callable[[str], int] = count_tokens,
-) -> list[tuple[str, int, list[dict[str, str]]]]:
-    """Build deterministic city-scoped batches under token/chunk limits."""
+) -> list[tuple[str, int, list[dict[str, object]]]]:
+    """Build deterministic city-scoped batches under token/chunk limits.
+
+    Documents within each city are ordered by (path, chunk_index) before batching so
+    that chunks from the same file are processed in sequence.
+    """
     safe_max_chunks = max(max_batch_chunks, 1)
     safe_max_tokens = max(max_batch_input_tokens, 1)
-    tasks: list[tuple[str, int, list[dict[str, str]]]] = []
+    tasks: list[tuple[str, int, list[dict[str, object]]]] = []
 
     for city_name, city_documents in sorted(documents_by_city.items()):
-        batches: list[list[dict[str, str]]] = []
-        current_batch: list[dict[str, str]] = []
+        ordered_documents = sorted(city_documents, key=_document_sequence_key)
+        batches: list[list[dict[str, object]]] = []
+        current_batch: list[dict[str, object]] = []
         current_tokens = 0
 
-        for document in city_documents:
+        for document in ordered_documents:
             content = str(document.get("content", ""))
             document_tokens = max(token_counter(content), 0)
             exceeds_limits = bool(current_batch) and (
@@ -161,6 +206,7 @@ def build_city_batches(
 
 __all__ = [
     "build_city_batches",
+    "resolve_batch_input_token_limit",
     "load_markdown_documents",
     "split_documents_by_city",
 ]

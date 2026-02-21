@@ -9,6 +9,7 @@ except ImportError:  # pragma: no cover - exercised in environments without chro
     chromadb = None  # type: ignore[assignment]
 
 Collection = Any
+MAX_UPSERT_BATCH_SIZE = 5000
 
 from backend.modules.vector_store.models import IndexedChunk
 
@@ -43,22 +44,24 @@ class ChromaStore:
         self._client.get_or_create_collection(name=self._collection_name)
 
     def upsert(self, chunks: list[IndexedChunk]) -> None:
-        """Upsert indexed chunks into Chroma collection."""
+        """Upsert indexed chunks into Chroma collection in safe batches."""
         if not chunks:
             return
         collection = self.get_collection()
-        ids = [chunk.chunk_id for chunk in chunks]
-        documents = [chunk.document for chunk in chunks]
-        metadatas = [chunk.metadata for chunk in chunks]
-        embeddings = [chunk.embedding for chunk in chunks if chunk.embedding is not None]
-        payload: dict[str, Any] = {
-            "ids": ids,
-            "documents": documents,
-            "metadatas": metadatas,
-        }
-        if len(embeddings) == len(chunks):
-            payload["embeddings"] = embeddings
-        collection.upsert(**payload)
+        for start in range(0, len(chunks), MAX_UPSERT_BATCH_SIZE):
+            batch = chunks[start : start + MAX_UPSERT_BATCH_SIZE]
+            ids = [chunk.chunk_id for chunk in batch]
+            documents = [chunk.document for chunk in batch]
+            metadatas = [chunk.metadata for chunk in batch]
+            embeddings = [chunk.embedding for chunk in batch if chunk.embedding is not None]
+            payload: dict[str, Any] = {
+                "ids": ids,
+                "documents": documents,
+                "metadatas": metadatas,
+            }
+            if len(embeddings) == len(batch):
+                payload["embeddings"] = embeddings
+            collection.upsert(**payload)
 
     def delete(self, ids: list[str]) -> None:
         """Delete chunks by id."""

@@ -1,12 +1,11 @@
 from __future__ import annotations
 
-import os
-from typing import Any
 from pathlib import Path
-
-from openai import OpenAI
+from typing import Any
 
 from backend.modules.vector_store.chroma_store import ChromaStore
+from backend.modules.vector_store.indexer import OpenAIEmbeddingProvider
+from backend.modules.vector_store.manifest import load_manifest
 from backend.modules.vector_store.models import RetrievedChunk
 from backend.utils.config import AppConfig
 
@@ -45,22 +44,47 @@ def _normalize_cities(cities: list[str] | None) -> list[str]:
     return normalized
 
 
-def _embed_query_text(query: str, config: AppConfig) -> list[float]:
-    """Embed one retrieval query with configured embedding model."""
-    api_key = os.getenv("OPENAI_API_KEY") or os.getenv("OPENROUTER_API_KEY")
-    if not api_key:
-        raise EnvironmentError("OPENAI_API_KEY or OPENROUTER_API_KEY must be set.")
-    base_url = (
-        os.getenv("OPENAI_BASE_URL")
-        or os.getenv("OPENROUTER_BASE_URL")
-        or config.openrouter_base_url
+def _load_manifest_cities(config: AppConfig) -> list[str]:
+    """Load and validate city names from the vector-store manifest."""
+    manifest_path = config.vector_store.index_manifest_path
+    if not manifest_path.exists():
+        raise FileNotFoundError(
+            "Vector store manifest not found at "
+            f"{manifest_path}. Build or update the index before retrieval."
+        )
+    manifest = load_manifest(manifest_path)
+    files = manifest.get("files")
+    if not isinstance(files, dict) or not files:
+        raise ValueError(
+            "Vector store manifest has no indexed files. "
+            "Build or update the index before retrieval."
+        )
+    cities = sorted(
+        {
+            Path(str(source_path)).stem.strip()
+            for source_path in files
+            if Path(str(source_path)).stem.strip()
+        }
     )
-    client = OpenAI(api_key=api_key, base_url=base_url)
-    response = client.embeddings.create(
+    if not cities:
+        raise ValueError(
+            "Vector store manifest does not include any city files. "
+            "Build or update the index before retrieval."
+        )
+    return cities
+
+
+def _embed_queries(queries: list[str], config: AppConfig) -> dict[str, list[float]]:
+    """Embed retrieval queries in one batch using a reusable provider."""
+    provider = OpenAIEmbeddingProvider(
         model=config.vector_store.embedding_model,
-        input=[query],
+        base_url=config.openrouter_base_url,
     )
-    return response.data[0].embedding
+    embeddings = provider.embed_texts(queries)
+    return {
+        query_text: embedding
+        for query_text, embedding in zip(queries, embeddings, strict=True)
+    }
 
 
 def _extract_query_rows(payload: dict[str, Any]) -> list[dict[str, Any]]:
@@ -106,20 +130,23 @@ def _to_retrieved_chunk(row: dict[str, Any]) -> RetrievedChunk:
     )
 
 
-def _resolve_city_list(docs_dir: Path, selected_cities: list[str] | None) -> list[str]:
-    """Resolve retrieval city list; always operate at city level."""
+def _resolve_city_list(config: AppConfig, selected_cities: list[str] | None) -> list[str]:
+    """Resolve retrieval city list with manifest-backed fail-fast validation."""
+    manifest_cities = _load_manifest_cities(config)
     normalized = _normalize_cities(selected_cities)
-    if normalized:
-        return normalized
-    if not docs_dir.exists():
-        return []
-    return sorted(
-        {
-            path.stem.strip()
-            for path in docs_dir.rglob("*.md")
-            if path.stem.strip()
-        }
-    )
+    if not normalized:
+        return manifest_cities
+
+    manifest_keys = {city.casefold() for city in manifest_cities}
+    missing_cities = [
+        city for city in normalized if city.casefold() not in manifest_keys
+    ]
+    if missing_cities:
+        raise ValueError(
+            "Selected cities are not indexed in vector store manifest: "
+            f"{', '.join(missing_cities)}. Build/update the index or adjust selected cities."
+        )
+    return normalized
 
 
 def _passes_distance_threshold(distance: float, max_distance: float | None) -> bool:
@@ -198,8 +225,12 @@ def _expand_neighbors(
     context_window_chunks: int,
     table_context_window_chunks: int,
 ) -> None:
-    """Expand retrieval context by adding neighboring chunks from same file."""
+    """Expand retrieval context by adding neighboring chunks from same file.
+
+    Uses one batched Chroma ``get`` per (city_name, source_path) group.
+    """
     seed_rows = list(rows_by_id.values())
+    seeds_by_group: dict[tuple[str, str], list[dict[str, Any]]] = {}
     for row in seed_rows:
         metadata = row.get("metadata", {})
         if not isinstance(metadata, dict):
@@ -210,35 +241,73 @@ def _expand_neighbors(
         if not source_path or not city_name or not isinstance(raw_index, int):
             continue
 
-        is_table = str(metadata.get("block_type", "")) == "table"
-        window = table_context_window_chunks if is_table else context_window_chunks
-        for candidate_index in range(raw_index - window, raw_index + window + 1):
-            if candidate_index < 0:
+        group_key = (city_name, source_path)
+        seeds_by_group.setdefault(group_key, []).append(row)
+
+    for (city_name, source_path), grouped_seeds in seeds_by_group.items():
+        required_indices: set[int] = set()
+        for seed in grouped_seeds:
+            seed_metadata = seed.get("metadata", {})
+            if not isinstance(seed_metadata, dict):
                 continue
-            payload = store.get(
-                where={
-                    "$and": [
-                        {"city_name": city_name},
-                        {"source_path": source_path},
-                        {"chunk_index": candidate_index},
-                    ]
-                },
-                limit=1,
-            )
-            candidates = _parse_get_rows(payload)
-            for candidate in candidates:
-                chunk_id = str(candidate["chunk_id"])
-                if chunk_id in rows_by_id:
+            raw_index = seed_metadata.get("chunk_index")
+            if not isinstance(raw_index, int):
+                continue
+            is_table = str(seed_metadata.get("block_type", "")) == "table"
+            window = table_context_window_chunks if is_table else context_window_chunks
+            for candidate_index in range(raw_index - window, raw_index + window + 1):
+                if candidate_index >= 0:
+                    required_indices.add(candidate_index)
+        if not required_indices:
+            continue
+
+        payload = store.get(
+            where={
+                "$and": [
+                    {"city_name": city_name},
+                    {"source_path": source_path},
+                    {"chunk_index": {"$in": sorted(required_indices)}},
+                ]
+            },
+            limit=max(len(required_indices), 1),
+        )
+        candidates_by_index: dict[int, list[dict[str, Any]]] = {}
+        for candidate in _parse_get_rows(payload):
+            metadata_candidate = candidate.get("metadata", {})
+            if not isinstance(metadata_candidate, dict):
+                continue
+            chunk_index = metadata_candidate.get("chunk_index")
+            if not isinstance(chunk_index, int):
+                continue
+            candidates_by_index.setdefault(chunk_index, []).append(candidate)
+
+        for seed in grouped_seeds:
+            seed_metadata = seed.get("metadata", {})
+            if not isinstance(seed_metadata, dict):
+                continue
+            raw_index = seed_metadata.get("chunk_index")
+            if not isinstance(raw_index, int):
+                continue
+            is_table = str(seed_metadata.get("block_type", "")) == "table"
+            window = table_context_window_chunks if is_table else context_window_chunks
+            for candidate_index in range(raw_index - window, raw_index + window + 1):
+                if candidate_index < 0:
                     continue
-                metadata_candidate = candidate["metadata"]
-                if not isinstance(metadata_candidate, dict):
-                    continue
-                rows_by_id[chunk_id] = {
-                    "chunk_id": chunk_id,
-                    "metadata": metadata_candidate,
-                    "distance": float(row["distance"]),
-                    "retrieval_query_id": str(row.get("retrieval_query_id", "neighbor")),
-                }
+                for candidate in candidates_by_index.get(candidate_index, []):
+                    chunk_id = str(candidate["chunk_id"])
+                    if chunk_id in rows_by_id:
+                        continue
+                    metadata_candidate = candidate["metadata"]
+                    if not isinstance(metadata_candidate, dict):
+                        continue
+                    rows_by_id[chunk_id] = {
+                        "chunk_id": chunk_id,
+                        "metadata": metadata_candidate,
+                        "distance": float(seed["distance"]),
+                        "retrieval_query_id": str(
+                            seed.get("retrieval_query_id", "neighbor")
+                        ),
+                    }
 
 
 def retrieve_top_k_chunks(
@@ -264,8 +333,9 @@ def retrieve_chunks_for_queries(
     selected_cities: list[str] | None,
 ) -> tuple[list[RetrievedChunk], dict[str, Any]]:
     """Retrieve chunks across cities and multiple aligned queries."""
+    del docs_dir
     normalized_queries = _normalize_queries(queries)
-    cities = _resolve_city_list(docs_dir, selected_cities)
+    cities = _resolve_city_list(config, selected_cities)
     if not normalized_queries or not cities:
         return [], {"queries": normalized_queries, "cities": cities, "per_city": []}
 
@@ -281,9 +351,7 @@ def retrieve_chunks_for_queries(
         persist_path=config.vector_store.chroma_persist_path,
         collection_name=config.vector_store.chroma_collection_name,
     )
-    query_embeddings = {
-        query_text: _embed_query_text(query_text, config) for query_text in normalized_queries
-    }
+    query_embeddings = _embed_queries(normalized_queries, config)
 
     rows_by_id: dict[str, dict[str, Any]] = {}
     per_city_stats: list[dict[str, Any]] = []
@@ -360,10 +428,15 @@ def retrieve_chunks_for_queries(
     )
 
 
-def as_markdown_documents(chunks: list[RetrievedChunk]) -> list[dict[str, str]]:
-    """Map retrieved chunks into markdown researcher input shape."""
-    documents: list[dict[str, str]] = []
+def as_markdown_documents(chunks: list[RetrievedChunk]) -> list[dict[str, object]]:
+    """Map retrieved chunks into markdown researcher input shape.
+
+    Includes ``chunk_index`` when available so downstream batching can preserve file order.
+    """
+    documents: list[dict[str, object]] = []
     for chunk in chunks:
+        chunk_index = chunk.metadata.get("chunk_index")
+        resolved_chunk_index = chunk_index if isinstance(chunk_index, int) else None
         documents.append(
             {
                 "path": chunk.source_path,
@@ -373,6 +446,7 @@ def as_markdown_documents(chunks: list[RetrievedChunk]) -> list[dict[str, str]]:
                 "distance": f"{chunk.distance:.6f}",
                 "heading_path": chunk.heading_path,
                 "block_type": chunk.block_type,
+                "chunk_index": resolved_chunk_index,
             }
         )
     return documents

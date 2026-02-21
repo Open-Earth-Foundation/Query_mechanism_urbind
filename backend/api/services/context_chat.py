@@ -1,4 +1,4 @@
-﻿"""LLM-backed context chat over one or more stored run contexts."""
+"""LLM-backed context chat over one or more stored run contexts."""
 
 from __future__ import annotations
 
@@ -222,8 +222,7 @@ def generate_context_chat_reply(
         "model": config.chat.model,
         "messages": messages,
     }
-    if config.chat.temperature is not None:
-        request_kwargs["temperature"] = config.chat.temperature
+    request_kwargs["temperature"] = float(config.chat.temperature)
     if config.chat.max_output_tokens is not None:
         request_kwargs["max_tokens"] = config.chat.max_output_tokens
 

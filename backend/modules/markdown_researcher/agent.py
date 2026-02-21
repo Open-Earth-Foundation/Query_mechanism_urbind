@@ -19,6 +19,7 @@ from backend.modules.markdown_researcher.models import (
 )
 from backend.modules.markdown_researcher.services import (
     build_city_batches,
+    resolve_batch_input_token_limit,
     split_documents_by_city,
 )
 from backend.modules.markdown_researcher.utils import (
@@ -32,31 +33,7 @@ from backend.services.agents import (
 )
 from backend.utils.config import AppConfig
 from backend.utils.prompts import load_prompt
-from backend.utils.tokenization import get_max_input_tokens
-
-
 logger = logging.getLogger(__name__)
-
-
-def _resolve_batch_input_token_limit(config: AppConfig) -> int:
-    """Resolve batch input token budget with adaptive defaults."""
-    configured_limit = config.markdown_researcher.batch_max_input_tokens
-    max_chunks = max(config.markdown_researcher.batch_max_chunks, 1)
-    overhead = max(config.markdown_researcher.batch_overhead_tokens, 0)
-    adaptive_limit = (
-        config.vector_store.embedding_chunk_tokens * max_chunks + overhead
-    )
-    batch_limit = configured_limit if configured_limit is not None else adaptive_limit
-
-    model_input_limit = get_max_input_tokens(
-        config.markdown_researcher.context_window_tokens,
-        config.markdown_researcher.max_output_tokens,
-        config.markdown_researcher.input_token_reserve,
-        config.markdown_researcher.max_input_tokens,
-    )
-    if model_input_limit is None:
-        return max(batch_limit, 1)
-    return max(min(batch_limit, model_input_limit), 1)
 
 
 def build_markdown_agent(config: AppConfig, api_key: str) -> Agent:
@@ -99,7 +76,7 @@ def build_markdown_agent(config: AppConfig, api_key: str) -> Agent:
 
 def extract_markdown_excerpts(
     question: str,
-    documents: list[dict[str, str]],
+    documents: list[dict[str, object]],
     config: AppConfig,
     api_key: str,
     log_llm_payload: bool = False,
@@ -146,7 +123,7 @@ def extract_markdown_excerpts(
     def _process_city_batch(
         city_name: str,
         batch_index: int,
-        batch: list[dict[str, str]],
+        batch: list[dict[str, object]],
     ) -> tuple[str, int, list[MarkdownExcerpt], ErrorInfo | None, bool]:
         """Process one city batch and return excerpts."""
         excerpts: list[MarkdownExcerpt] = []
@@ -288,7 +265,7 @@ def extract_markdown_excerpts(
         return city_name, batch_index, excerpts, error, success
 
     batch_max_chunks = max(config.markdown_researcher.batch_max_chunks, 1)
-    batch_token_limit = _resolve_batch_input_token_limit(config)
+    batch_token_limit = resolve_batch_input_token_limit(config)
     for city_name, city_documents in sorted(documents_by_city.items()):
         logger.info("Preparing markdown for city %s (%d chunks)", city_name, len(city_documents))
 

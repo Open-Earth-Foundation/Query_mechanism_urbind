@@ -11,7 +11,7 @@ from pydantic import BaseModel, ConfigDict, Field
 
 class AgentConfig(BaseModel):
     model: str
-    temperature: Optional[float] = None
+    temperature: float = 0.0
     max_output_tokens: Optional[int] = None
     context_window_tokens: Optional[int] = None
     max_input_tokens: Optional[int] = None

@@ -1,9 +1,12 @@
+import pytest
+
 from backend.modules.vector_store.models import RetrievedChunk
 from backend.modules.vector_store import retriever as retriever_module
 from backend.modules.vector_store.retriever import (
     as_markdown_documents,
     retrieve_chunks_for_queries,
 )
+from backend.modules.vector_store.manifest import save_manifest
 from backend.utils.config import (
     AgentConfig,
     AppConfig,
@@ -98,47 +101,52 @@ def test_retrieve_chunks_for_queries_applies_distance_floor_and_neighbor_expansi
             }
 
         def get(self, where, limit):
-            del limit
+            assert limit >= 1
             clauses = where.get("$and", [])
-            chunk_index = None
+            requested_indices: list[int] = []
             for clause in clauses:
-                if isinstance(clause, dict) and "chunk_index" in clause:
-                    chunk_index = clause["chunk_index"]
-                    break
-            if chunk_index == 9:
-                return {
-                    "ids": ["chunk-9"],
-                    "metadatas": [
-                        {
-                            "city_name": "Munich",
-                            "raw_text": "neighbor chunk 9",
-                            "source_path": "documents/Munich.md",
-                            "heading_path": "H1",
-                            "block_type": "paragraph",
-                            "chunk_index": 9,
-                        }
-                    ],
-                }
-            if chunk_index == 11:
-                return {
-                    "ids": ["chunk-11"],
-                    "metadatas": [
-                        {
-                            "city_name": "Munich",
-                            "raw_text": "neighbor chunk 11",
-                            "source_path": "documents/Munich.md",
-                            "heading_path": "H1",
-                            "block_type": "table",
-                            "chunk_index": 11,
-                        }
-                    ],
-                }
-            return {"ids": [], "metadatas": []}
+                if not isinstance(clause, dict) or "chunk_index" not in clause:
+                    continue
+                chunk_index_clause = clause["chunk_index"]
+                if isinstance(chunk_index_clause, dict):
+                    values = chunk_index_clause.get("$in", [])
+                    if isinstance(values, list):
+                        requested_indices = [
+                            value for value in values if isinstance(value, int)
+                        ]
+                break
+            ids: list[str] = []
+            metadatas: list[dict[str, object]] = []
+            if 9 in requested_indices:
+                ids.append("chunk-9")
+                metadatas.append(
+                    {
+                        "city_name": "Munich",
+                        "raw_text": "neighbor chunk 9",
+                        "source_path": "documents/Munich.md",
+                        "heading_path": "H1",
+                        "block_type": "paragraph",
+                        "chunk_index": 9,
+                    }
+                )
+            if 11 in requested_indices:
+                ids.append("chunk-11")
+                metadatas.append(
+                    {
+                        "city_name": "Munich",
+                        "raw_text": "neighbor chunk 11",
+                        "source_path": "documents/Munich.md",
+                        "heading_path": "H1",
+                        "block_type": "table",
+                        "chunk_index": 11,
+                    }
+                )
+            return {"ids": ids, "metadatas": metadatas}
 
     monkeypatch.setattr(
         retriever_module,
-        "_embed_query_text",
-        lambda query, config: [0.01, 0.02],  # noqa: ARG005
+        "_embed_queries",
+        lambda queries, config: {query: [0.01, 0.02] for query in queries},  # noqa: ARG005
     )
     monkeypatch.setattr(
         retriever_module,
@@ -202,8 +210,8 @@ def test_retrieve_chunks_for_queries_falls_back_to_top_n_when_no_chunks_pass_dis
 
     monkeypatch.setattr(
         retriever_module,
-        "_embed_query_text",
-        lambda query, config: [0.01, 0.02],  # noqa: ARG005
+        "_embed_queries",
+        lambda queries, config: {query: [0.01, 0.02] for query in queries},  # noqa: ARG005
     )
     monkeypatch.setattr(
         retriever_module,
@@ -270,8 +278,8 @@ def test_retrieve_chunks_for_queries_tops_up_when_too_few_chunks_pass_distance(
 
     monkeypatch.setattr(
         retriever_module,
-        "_embed_query_text",
-        lambda query, config: [0.01, 0.02],  # noqa: ARG005
+        "_embed_queries",
+        lambda queries, config: {query: [0.01, 0.02] for query in queries},  # noqa: ARG005
     )
     monkeypatch.setattr(
         retriever_module,
@@ -287,3 +295,115 @@ def test_retrieve_chunks_for_queries_tops_up_when_too_few_chunks_pass_distance(
     )
 
     assert [chunk.chunk_id for chunk in chunks] == ["chunk-10", "chunk-11"]
+
+
+def test_retrieve_chunks_for_queries_uses_manifest_cities_when_not_selected(
+    monkeypatch,
+    tmp_path,
+) -> None:
+    config = _build_test_config()
+    config.vector_store.index_manifest_path = tmp_path / "index_manifest.json"
+    save_manifest(
+        config.vector_store.index_manifest_path,
+        {
+            "files": {
+                "documents/Munich.md": {"file_hash": "h1", "chunk_ids": ["chunk-1"]},
+            }
+        },
+    )
+
+    class _FakeStore:
+        def query_by_embedding(self, query_embeddings, n_results, where):
+            del query_embeddings, n_results
+            assert where == {"city_name": "Munich"}
+            return {
+                "ids": [["chunk-1"]],
+                "metadatas": [[
+                    {
+                        "city_name": "Munich",
+                        "raw_text": "manifest city chunk",
+                        "source_path": "documents/Munich.md",
+                        "heading_path": "H1",
+                        "block_type": "paragraph",
+                        "chunk_index": 1,
+                    },
+                ]],
+                "distances": [[0.1]],
+            }
+
+        def get(self, where, limit):
+            del where, limit
+            return {"ids": [], "metadatas": []}
+
+    monkeypatch.setattr(
+        retriever_module,
+        "_embed_queries",
+        lambda queries, config: {query: [0.01, 0.02] for query in queries},  # noqa: ARG005
+    )
+    monkeypatch.setattr(
+        retriever_module,
+        "ChromaStore",
+        lambda persist_path, collection_name: _FakeStore(),  # noqa: ARG005
+    )
+
+    chunks, meta = retrieve_chunks_for_queries(
+        queries=["original question"],
+        config=config,
+        docs_dir=tmp_path / "documents",
+        selected_cities=None,
+    )
+
+    assert [chunk.chunk_id for chunk in chunks] == ["chunk-1"]
+    assert meta["cities"] == ["Munich"]
+
+
+def test_retrieve_chunks_for_queries_fails_fast_when_manifest_missing(
+    monkeypatch,
+    tmp_path,
+) -> None:
+    config = _build_test_config()
+    config.vector_store.index_manifest_path = tmp_path / "missing_manifest.json"
+
+    monkeypatch.setattr(
+        retriever_module,
+        "_embed_queries",
+        lambda queries, config: {query: [0.01, 0.02] for query in queries},  # noqa: ARG005
+    )
+
+    with pytest.raises(FileNotFoundError):
+        retrieve_chunks_for_queries(
+            queries=["original question"],
+            config=config,
+            docs_dir=tmp_path / "documents",
+            selected_cities=None,
+        )
+
+
+def test_retrieve_chunks_for_queries_fails_when_selected_city_not_indexed(
+    monkeypatch,
+    tmp_path,
+) -> None:
+    config = _build_test_config()
+    config.vector_store.index_manifest_path = tmp_path / "index_manifest.json"
+    save_manifest(
+        config.vector_store.index_manifest_path,
+        {
+            "files": {
+                "documents/Munich.md": {"file_hash": "h1", "chunk_ids": ["chunk-1"]},
+            }
+        },
+    )
+
+    monkeypatch.setattr(
+        retriever_module,
+        "_embed_queries",
+        lambda queries, config: {query: [0.01, 0.02] for query in queries},  # noqa: ARG005
+    )
+
+    with pytest.raises(ValueError, match="not indexed"):
+        retrieve_chunks_for_queries(
+            queries=["original question"],
+            config=config,
+            docs_dir=tmp_path / "documents",
+            selected_cities=["Berlin"],
+        )
