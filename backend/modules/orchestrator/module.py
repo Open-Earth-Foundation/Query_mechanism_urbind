@@ -262,6 +262,11 @@ def run_pipeline(
                 config.markdown_researcher,
                 selected_cities=selected_cities,
             )
+        logger.info(
+            "run_id=%s markdown_source_mode=%s",
+            run_id,
+            markdown_source_mode,
+        )
         run_logger.record_markdown_inputs(
             markdown_dir=config.markdown_dir,
             selected_cities_planned=selected_cities,

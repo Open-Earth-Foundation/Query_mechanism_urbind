@@ -60,12 +60,12 @@ class VectorStoreConfig(BaseModel):
     embedding_chunk_tokens: int = 800
     embedding_chunk_overlap_tokens: int = 80
     table_row_group_max_rows: int = 25
-    retrieval_max_distance: float | None = None
+    retrieval_max_distance: float | None = 1.0
     retrieval_fallback_min_chunks_per_city_query: int = 20
-    retrieval_max_chunks_per_city_query: int = 100
-    retrieval_max_chunks_per_city: int | None = None
-    context_window_chunks: int = 1
-    table_context_window_chunks: int = 2
+    retrieval_max_chunks_per_city_query: int = 60
+    retrieval_max_chunks_per_city: int | None = 300
+    context_window_chunks: int = 0
+    table_context_window_chunks: int = 1
     auto_update_on_run: bool = False
     index_manifest_path: Path = Field(
         default_factory=lambda: Path(".chroma/index_manifest.json")

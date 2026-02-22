@@ -1,4 +1,4 @@
-﻿"""FastAPI application entrypoint for async run lifecycle API."""
+"""FastAPI application entrypoint for async run lifecycle API."""
 
 from __future__ import annotations
 
@@ -13,6 +13,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from backend.api.routes import assumptions_router, chat_router, cities_router, runs_router
 from backend.api.services import ChatMemoryStore, RunExecutor, RunStore
+from backend.utils.config import load_config
 from backend.utils.logging_config import setup_logger
 
 logger = logging.getLogger(__name__)
@@ -96,6 +97,17 @@ def create_app(
     @asynccontextmanager
     async def lifespan(app: FastAPI) -> AsyncIterator[None]:
         logger.info("API startup: initializing run store and worker pool")
+        if resolved_config_path.exists():
+            try:
+                startup_config = load_config(resolved_config_path)
+                mode = (
+                    "vector_store_retrieval"
+                    if startup_config.vector_store.enabled
+                    else "standard_chunking"
+                )
+                logger.info("API startup: markdown_source_mode=%s", mode)
+            except Exception as e:  # noqa: BLE001
+                logger.warning("API startup: could not load config for mode log: %s", e)
         run_store = RunStore(resolved_runs_dir)
         chat_memory_store = ChatMemoryStore(resolved_runs_dir)
         run_executor = RunExecutor(run_store=run_store, max_workers=resolved_workers)

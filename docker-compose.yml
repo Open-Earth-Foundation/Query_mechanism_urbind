@@ -10,6 +10,8 @@ services:
     environment:
       RUNS_DIR: /data/output
       MARKDOWN_DIR: /data/documents
+      CHROMA_PERSIST_PATH: /data/chroma
+      INDEX_MANIFEST_PATH: /data/chroma/index_manifest.json
       LLM_CONFIG_PATH: /data/config/llm_config.yaml
       CITY_GROUPS_PATH: /data/config/city_groups.json
       API_CORS_ORIGINS: http://localhost:3000,http://127.0.0.1:3000
@@ -17,6 +19,7 @@ services:
     volumes:
       - ./documents:/data/documents
       - ./output:/data/output
+      - ./.chroma:/data/chroma
       - ./llm_config.yaml:/data/config/llm_config.yaml:ro
       - ./backend/api/assets/city_groups.json:/data/config/city_groups.json:ro
     ports:

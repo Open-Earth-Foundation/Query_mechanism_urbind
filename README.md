@@ -64,19 +64,19 @@ Environment variables (`.env`):
 - `MARKDOWN_BATCH_MAX_CHUNKS` (optional, default `4`): hard cap on number of markdown chunks sent in one markdown researcher request.
 - `MARKDOWN_BATCH_MAX_INPUT_TOKENS` (optional): explicit token budget per markdown researcher batch. If unset, an adaptive budget is derived from `EMBEDDING_CHUNK_TOKENS`, `MARKDOWN_BATCH_MAX_CHUNKS`, and `MARKDOWN_BATCH_OVERHEAD_TOKENS`.
 - `MARKDOWN_BATCH_OVERHEAD_TOKENS` (optional, default `600`): reserved prompt/payload overhead used by adaptive markdown batching.
-- `VECTOR_STORE_RETRIEVAL_MAX_DISTANCE` (optional): Chroma distance cutoff; only chunks with `distance <= cutoff` are kept.
-- `VECTOR_STORE_RETRIEVAL_MAX_CHUNKS_PER_CITY_QUERY` (optional, default `100`): max candidates fetched per city/query before distance filtering/top-up.
+- `VECTOR_STORE_RETRIEVAL_MAX_DISTANCE` (optional, default `1.0`): Chroma distance cutoff; only chunks with `distance <= cutoff` are kept.
+- `VECTOR_STORE_RETRIEVAL_MAX_CHUNKS_PER_CITY_QUERY` (optional, default `60`): max candidates fetched per city/query before distance filtering/top-up.
 - `VECTOR_STORE_RETRIEVAL_FALLBACK_MIN_CHUNKS_PER_CITY_QUERY` (optional, default `20`): minimum returned per city/query (top-up target when too few pass `VECTOR_STORE_RETRIEVAL_MAX_DISTANCE`).
-- `VECTOR_STORE_RETRIEVAL_MAX_CHUNKS_PER_CITY` (optional): final per-city cap after query merge and neighbor expansion.
-- `VECTOR_STORE_CONTEXT_WINDOW_CHUNKS` (optional, default `1`): number of neighboring chunks to include around each retrieved chunk.
-- `VECTOR_STORE_TABLE_CONTEXT_WINDOW_CHUNKS` (optional, default `2`): neighbor chunk window for table chunks.
+- `VECTOR_STORE_RETRIEVAL_MAX_CHUNKS_PER_CITY` (optional, default `300`): final per-city cap after query merge and neighbor expansion.
+- `VECTOR_STORE_CONTEXT_WINDOW_CHUNKS` (optional, default `0`): number of neighboring chunks to include around each retrieved chunk.
+- `VECTOR_STORE_TABLE_CONTEXT_WINDOW_CHUNKS` (optional, default `1`): neighbor chunk window for table chunks.
 - `VECTOR_STORE_AUTO_UPDATE_ON_RUN` (optional, default `false`): if `true`, run an incremental index update before retrieval.
 - `INDEX_MANIFEST_PATH` (optional, default `.chroma/index_manifest.json`): JSON manifest path for incremental updates.
 
 CLI flags override `.env` values for a given run (for example `--db-path`, `--db-url`, `--markdown-path`, `--enable-sql`).
 Use `--city` (repeatable) to load markdown only for selected city files. City filters are normalized case-insensitively to backend `city_key` values (for example `Munich`, `MUNICH`, and `munich` all resolve to `munich`).
 
-Example `.env.example` is provided.
+Example `.env.example` is provided. Vector-store retriever defaults in `.env.example` match `backend/benchmarks/config` (base.env + mode_vector.env); use those files as the reference when tuning.
 
 Default output directory is `output/` (unless overridden by `RUNS_DIR`).
 Schema summary for SQL generation is derived from `backend/db_models/`.
@@ -99,9 +99,9 @@ When vector retrieval is enabled, retrieval runs per city and per query (origina
 
 Important distinction between the “max” knobs:
 
-- `VECTOR_STORE_RETRIEVAL_MAX_CHUNKS_PER_CITY_QUERY` controls the **candidate pool size per (city × query)** *before* distance filtering/top-up.
+- `VECTOR_STORE_RETRIEVAL_MAX_CHUNKS_PER_CITY_QUERY` controls the **candidate pool size per (city × query)** _before_ distance filtering/top-up.
   - If this is too small, you may not have enough candidates to top up to the fallback minimum.
-- `VECTOR_STORE_RETRIEVAL_MAX_CHUNKS_PER_CITY` controls the **final per-city cap** *after* query-merge and neighbor expansion.
+- `VECTOR_STORE_RETRIEVAL_MAX_CHUNKS_PER_CITY` controls the **final per-city cap** _after_ query-merge and neighbor expansion.
   - Use it as a latency/cost guardrail; setting it too low can drop context neighbors or even primary hits with weaker distances.
 
 Distance scale note:
@@ -133,16 +133,19 @@ Recommended tuning workflow:
 You have two supported options:
 
 1. Backend default key (server-side):
+
 - Put key in root `.env`:
   - `OPENROUTER_API_KEY=...`
 - Use this when deployment should use one shared server key.
 
 2. User-provided key (frontend, per browser):
+
 - In the app UI, use `OpenRouter API Key (Optional)` and click `Use This Key`.
 - This key is stored in browser `localStorage` and sent as `X-OpenRouter-Api-Key`.
 - Use this when users should provide their own key instead of a shared backend key.
 
 If key authentication fails:
+
 - runs finish with `error.code = API_KEY_ERROR`
 - chat endpoints return `401` with a key-specific message
 - UI surfaces the error so users can switch key and retry.
@@ -304,12 +307,12 @@ python -m backend.scripts.run_e2e_queries --question "What initiatives exist for
 
 Use this benchmark to compare standard markdown chunking (`VECTOR_STORE_ENABLED=false`) against vector-store retrieval (`VECTOR_STORE_ENABLED=true`) without changing normal runtime behavior.
 
-Configuration and prompts are intentionally separated under `backend/benchmarks/`:
+Configuration and prompts are intentionally separated under `backend/benchmarks/`. The benchmark config is the **reference for vector-store settings** (paths, retriever knobs); `.env.example` and local dev should align with it.
 
 - `backend/benchmarks/prompts/retrieval_questions.txt`: benchmark question set.
-- `backend/benchmarks/config/base.env`: shared benchmark env overrides.
+- `backend/benchmarks/config/base.env`: shared benchmark env (Chroma paths, auto-update off).
 - `backend/benchmarks/config/mode_standard.env`: standard-mode overrides.
-- `backend/benchmarks/config/mode_vector.env`: vector-mode overrides.
+- `backend/benchmarks/config/mode_vector.env`: vector-mode overrides (retrieval knobs).
 
 Command example:
 
@@ -391,11 +394,13 @@ X-OpenRouter-Api-Key: sk-or-v1-...
 ```
 
 Frontend scope options map directly to this:
+
 - `all`: omit `cities` in payload (backend processes all markdown cities)
 - `group`: send cities from a predefined group from `/api/v1/city-groups`
 - `manual`: send explicit city list selected one-by-one
 
 Context chat notes:
+
 - Run outputs are persisted under `output/<run_id>/final.md` and `output/<run_id>/context_bundle.json`.
 - Chat sessions persist under `output/<run_id>/chat/<conversation_id>.json`.
 - Context manager supports selecting multiple completed run contexts.
@@ -436,10 +441,11 @@ NEXT_PUBLIC_API_BASE_URL=http://127.0.0.1:8000
 Frontend supports three city scope modes in the build form: all cities, predefined group, and manual selection.
 Clicking `Open Context Chat` switches to a dedicated chat workspace (not a chat modal), and `Manage Contexts` opens a popup for multi-context selection.
 Clicking `Assumptions Review` opens a dedicated workspace where:
+
 - `Find Missing Data` runs two LLM passes (extract + verification).
 - Missing items are grouped by city with editable `proposed_number` (number or free-form text).
 - `Regenerate` returns revised content without persisting assumptions by default.
-The `Load Existing Run` picker reads `run_id` + `question` from `GET /api/v1/runs`, then loads selected run artifacts through the standard run endpoints.
+  The `Load Existing Run` picker reads `run_id` + `question` from `GET /api/v1/runs`, then loads selected run artifacts through the standard run endpoints.
 
 Example file is available at `frontend/.env.example`.
 
@@ -470,6 +476,7 @@ docker compose down
 ```
 
 After startup:
+
 - Frontend: `http://localhost:3000`
 - Backend API docs: `http://localhost:8000/docs`
 
@@ -484,12 +491,14 @@ Automated development workflow is available at `.github/workflows/develop.yml`.
 It runs tests for PRs targeting `main` and for pushes to `main`; image build and EKS deploy run only on `main` branch runs (push/manual dispatch).
 
 Required repository secrets:
+
 - `AWS_ACCESS_KEY_ID_EKS_DEV_USER`
 - `AWS_SECRET_ACCESS_KEY_EKS_DEV_USER`
 - `EKS_DEV_NAME`
 - `OPENROUTER_API_KEY`
 
 Optional repository variables:
+
 - `EKS_DEV_REGION` (default `us-east-1`)
 - `FRONTEND_API_BASE_URL` (default `https://urbind-query-mechanism-api.openearth.dev`)
 
@@ -518,9 +527,9 @@ Artifacts are written under `output/<run_id>/`:
 - `markdown/retrieval.json` (when `VECTOR_STORE_ENABLED=true`): vector retrieval inputs and results summary. Includes the final retrieval query list, optional city filter, retrieval tuning metadata (cutoffs/caps), and per-chunk summaries (`chunk_id`, `city_name`, `city_key`, `source_path`, `heading_path`, `block_type`, `distance`).
 - `markdown/batches.json`: markdown batching plan used for the markdown researcher calls. Includes per-city batch indices, estimated tokens, and chunk ordering fields (`path`, `chunk_index`, `chunk_id`), making it easy to inspect how chunks were grouped into LLM requests.
 - `final.md`: final delivered markdown output. Content format is:
-  1) `# Question` heading with the original user question,
-  2) generated markdown answer body from the writer,
-  3) footer line `Finish reason: ...`.
+  1. `# Question` heading with the original user question,
+  2. generated markdown answer body from the writer,
+  3. footer line `Finish reason: ...`.
 
 `markdown/excerpts.json` excerpt entries include:
 
