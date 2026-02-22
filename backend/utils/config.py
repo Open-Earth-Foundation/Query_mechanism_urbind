@@ -103,6 +103,22 @@ def _parse_env_bool(value: str | None) -> bool | None:
     return None
 
 
+def _parse_env_int(var_name: str, value: str) -> int:
+    """Parse an integer env var and raise a clear error on invalid values."""
+    try:
+        return int(value)
+    except ValueError as exc:
+        raise ValueError(f"{var_name} must be a valid integer, got {value!r}.") from exc
+
+
+def _parse_env_float(var_name: str, value: str) -> float:
+    """Parse a float env var and raise a clear error on invalid values."""
+    try:
+        return float(value)
+    except ValueError as exc:
+        raise ValueError(f"{var_name} must be a valid float, got {value!r}.") from exc
+
+
 def load_config(config_path: Optional[Path] = None) -> AppConfig:
     load_dotenv()
     path = config_path or Path("llm_config.yaml")
@@ -172,43 +188,65 @@ def load_config(config_path: Optional[Path] = None) -> AppConfig:
     if embedding_model:
         config.vector_store.embedding_model = embedding_model
     if embedding_chunk_tokens:
-        config.vector_store.embedding_chunk_tokens = int(embedding_chunk_tokens)
+        config.vector_store.embedding_chunk_tokens = _parse_env_int(
+            "EMBEDDING_CHUNK_TOKENS",
+            embedding_chunk_tokens,
+        )
     if embedding_chunk_overlap_tokens:
-        config.vector_store.embedding_chunk_overlap_tokens = int(
-            embedding_chunk_overlap_tokens
+        config.vector_store.embedding_chunk_overlap_tokens = _parse_env_int(
+            "EMBEDDING_CHUNK_OVERLAP_TOKENS",
+            embedding_chunk_overlap_tokens,
         )
     if table_row_group_max_rows:
-        config.vector_store.table_row_group_max_rows = int(table_row_group_max_rows)
+        config.vector_store.table_row_group_max_rows = _parse_env_int(
+            "TABLE_ROW_GROUP_MAX_ROWS",
+            table_row_group_max_rows,
+        )
     if markdown_batch_max_chunks:
-        config.markdown_researcher.batch_max_chunks = int(markdown_batch_max_chunks)
+        config.markdown_researcher.batch_max_chunks = _parse_env_int(
+            "MARKDOWN_BATCH_MAX_CHUNKS",
+            markdown_batch_max_chunks,
+        )
     if markdown_batch_max_input_tokens:
-        config.markdown_researcher.batch_max_input_tokens = int(
-            markdown_batch_max_input_tokens
+        config.markdown_researcher.batch_max_input_tokens = _parse_env_int(
+            "MARKDOWN_BATCH_MAX_INPUT_TOKENS",
+            markdown_batch_max_input_tokens,
         )
     if markdown_batch_overhead_tokens:
-        config.markdown_researcher.batch_overhead_tokens = int(
-            markdown_batch_overhead_tokens
+        config.markdown_researcher.batch_overhead_tokens = _parse_env_int(
+            "MARKDOWN_BATCH_OVERHEAD_TOKENS",
+            markdown_batch_overhead_tokens,
         )
     if vector_store_retrieval_max_distance:
-        config.vector_store.retrieval_max_distance = float(
-            vector_store_retrieval_max_distance
+        config.vector_store.retrieval_max_distance = _parse_env_float(
+            "VECTOR_STORE_RETRIEVAL_MAX_DISTANCE",
+            vector_store_retrieval_max_distance,
         )
     if vector_store_retrieval_fallback_min_chunks_per_city_query:
-        value = int(vector_store_retrieval_fallback_min_chunks_per_city_query)
+        value = _parse_env_int(
+            "VECTOR_STORE_RETRIEVAL_FALLBACK_MIN_CHUNKS_PER_CITY_QUERY",
+            vector_store_retrieval_fallback_min_chunks_per_city_query,
+        )
         config.vector_store.retrieval_fallback_min_chunks_per_city_query = value
     if vector_store_retrieval_max_chunks_per_city_query:
-        config.vector_store.retrieval_max_chunks_per_city_query = int(
-            vector_store_retrieval_max_chunks_per_city_query
+        config.vector_store.retrieval_max_chunks_per_city_query = _parse_env_int(
+            "VECTOR_STORE_RETRIEVAL_MAX_CHUNKS_PER_CITY_QUERY",
+            vector_store_retrieval_max_chunks_per_city_query,
         )
     if vector_store_retrieval_max_chunks_per_city:
-        config.vector_store.retrieval_max_chunks_per_city = int(
-            vector_store_retrieval_max_chunks_per_city
+        config.vector_store.retrieval_max_chunks_per_city = _parse_env_int(
+            "VECTOR_STORE_RETRIEVAL_MAX_CHUNKS_PER_CITY",
+            vector_store_retrieval_max_chunks_per_city,
         )
     if vector_store_context_window_chunks:
-        config.vector_store.context_window_chunks = int(vector_store_context_window_chunks)
+        config.vector_store.context_window_chunks = _parse_env_int(
+            "VECTOR_STORE_CONTEXT_WINDOW_CHUNKS",
+            vector_store_context_window_chunks,
+        )
     if vector_store_table_context_window_chunks:
-        config.vector_store.table_context_window_chunks = int(
-            vector_store_table_context_window_chunks
+        config.vector_store.table_context_window_chunks = _parse_env_int(
+            "VECTOR_STORE_TABLE_CONTEXT_WINDOW_CHUNKS",
+            vector_store_table_context_window_chunks,
         )
     if vector_store_auto_update_on_run is not None:
         parsed = _parse_env_bool(vector_store_auto_update_on_run)

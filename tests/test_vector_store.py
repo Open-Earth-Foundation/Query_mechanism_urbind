@@ -2,7 +2,12 @@ from __future__ import annotations
 
 from pathlib import Path
 
+import pytest
+
+from backend.modules.vector_store import chroma_store as chroma_store_module
+from backend.modules.vector_store.chroma_store import ChromaStore
 from backend.modules.vector_store.indexer import update_markdown_index
+from backend.modules.vector_store.manifest import load_manifest
 from backend.modules.vector_store.manifest import build_chunk_id
 from backend.modules.vector_store.markdown_blocks import parse_markdown_blocks
 from backend.modules.vector_store.chunk_packer import pack_blocks
@@ -212,3 +217,126 @@ def test_pack_blocks_keeps_tables_as_table_chunks() -> None:
     assert table_chunks
     assert all("| --- | --- |" in chunk.raw_text for chunk in table_chunks)
     assert all(chunk.table_title is not None for chunk in table_chunks)
+
+
+def test_reset_collection_ignores_collection_not_found_error(monkeypatch) -> None:
+    """Reset ignores missing-collection deletion errors and still recreates it."""
+
+    class FakeCollectionNotFoundError(Exception):
+        pass
+
+    class FakeClient:
+        def __init__(self) -> None:
+            self.recreated = False
+
+        def delete_collection(self, name: str) -> None:
+            del name
+            raise FakeCollectionNotFoundError("Collection not found")
+
+        def get_or_create_collection(self, name: str) -> dict[str, str]:
+            del name
+            self.recreated = True
+            return {}
+
+    monkeypatch.setattr(
+        chroma_store_module,
+        "COLLECTION_NOT_FOUND_ERROR_TYPES",
+        (FakeCollectionNotFoundError,),
+    )
+    store = ChromaStore.__new__(ChromaStore)
+    store._client = FakeClient()
+    store._collection_name = "test"
+
+    store.reset_collection()
+
+    assert store._client.recreated is True
+
+
+def test_reset_collection_reraises_unexpected_delete_errors(monkeypatch) -> None:
+    """Reset propagates delete failures that are not missing-collection errors."""
+
+    class FakeClient:
+        def delete_collection(self, name: str) -> None:
+            del name
+            raise RuntimeError("Permission denied")
+
+        def get_or_create_collection(self, name: str) -> dict[str, str]:
+            del name
+            return {}
+
+    monkeypatch.setattr(chroma_store_module, "COLLECTION_NOT_FOUND_ERROR_TYPES", ())
+    store = ChromaStore.__new__(ChromaStore)
+    store._client = FakeClient()
+    store._collection_name = "test"
+
+    with pytest.raises(RuntimeError, match="Permission denied"):
+        store.reset_collection()
+
+
+def test_update_markdown_index_filtered_city_does_not_delete_other_manifest_entries(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Filtered update only deletes removed files within the selected city scope."""
+    docs_dir = tmp_path / "documents"
+    docs_dir.mkdir(parents=True)
+    munich_path = docs_dir / "Munich.md"
+    berlin_path = docs_dir / "Berlin.md"
+    munich_path.write_text("# Munich\n\nCurrent content.", encoding="utf-8")
+    config = _build_config(tmp_path)
+
+    # Seed manifest with one selected-city entry and one unrelated-city entry.
+    config.vector_store.index_manifest_path.parent.mkdir(parents=True, exist_ok=True)
+    config.vector_store.index_manifest_path.write_text(
+        """
+{
+  "files": {
+    "%s": {"file_hash": "old-munich", "chunk_ids": ["old-m-1"]},
+    "%s": {"file_hash": "old-berlin", "chunk_ids": ["old-b-1"]}
+  }
+}
+"""
+        % (munich_path.as_posix(), berlin_path.as_posix()),
+        encoding="utf-8",
+    )
+
+    class FakeStore:
+        delete_calls: list[list[str]] = []
+        upsert_calls: list[int] = []
+
+        def __init__(self, persist_path: Path, collection_name: str) -> None:
+            self.persist_path = persist_path
+            self.collection_name = collection_name
+
+        def delete(self, ids: list[str]) -> None:
+            self.delete_calls.append(ids)
+
+        def upsert(self, chunks) -> None:
+            self.upsert_calls.append(len(chunks))
+
+    class FakeEmbeddingProvider:
+        def __init__(self, model: str, base_url: str | None = None) -> None:
+            self.model = model
+            self.base_url = base_url
+
+        def embed_texts(self, texts: list[str]) -> list[list[float]]:
+            return [[0.1, 0.2, 0.3] for _ in texts]
+
+    monkeypatch.setattr("backend.modules.vector_store.indexer.ChromaStore", FakeStore)
+    monkeypatch.setattr(
+        "backend.modules.vector_store.indexer.OpenAIEmbeddingProvider",
+        FakeEmbeddingProvider,
+    )
+
+    stats = update_markdown_index(
+        config=config,
+        docs_dir=docs_dir,
+        selected_cities=["Munich"],
+        dry_run=False,
+    )
+
+    assert stats.files_deleted == 0
+    assert ["old-b-1"] not in FakeStore.delete_calls
+    manifest = load_manifest(config.vector_store.index_manifest_path)
+    files = manifest.get("files", {})
+    assert berlin_path.as_posix() in files

@@ -14,6 +14,37 @@ MAX_UPSERT_BATCH_SIZE = 5000
 from backend.modules.vector_store.models import IndexedChunk
 
 
+def _resolve_collection_not_found_error_types() -> tuple[type[BaseException], ...]:
+    """Resolve Chroma error types that represent a missing collection."""
+    if chromadb is None:
+        return ()
+    errors_module = getattr(chromadb, "errors", None)
+    if errors_module is None:
+        return ()
+    types: list[type[BaseException]] = []
+    for name in ("NotFoundError", "CollectionNotFoundError", "InvalidCollectionException"):
+        candidate = getattr(errors_module, name, None)
+        if isinstance(candidate, type) and issubclass(candidate, BaseException):
+            types.append(candidate)
+    return tuple(types)
+
+
+COLLECTION_NOT_FOUND_ERROR_TYPES = _resolve_collection_not_found_error_types()
+
+
+def _is_collection_not_found_error(error: Exception) -> bool:
+    """Return True when delete failure is a collection-not-found condition."""
+    if COLLECTION_NOT_FOUND_ERROR_TYPES and isinstance(
+        error, COLLECTION_NOT_FOUND_ERROR_TYPES
+    ):
+        return True
+    message = str(error).strip().lower()
+    return (
+        "collection" in message
+        and ("not found" in message or "does not exist" in message)
+    )
+
+
 def get_client(persist_path: Path):
     """Create a persistent Chroma client for a local path."""
     if chromadb is None:
@@ -39,8 +70,9 @@ class ChromaStore:
         """Delete and recreate collection for full rebuild."""
         try:
             self._client.delete_collection(name=self._collection_name)
-        except Exception:  # noqa: BLE001
-            pass
+        except Exception as exc:  # noqa: BLE001
+            if not _is_collection_not_found_error(exc):
+                raise
         self._client.get_or_create_collection(name=self._collection_name)
 
     def upsert(self, chunks: list[IndexedChunk]) -> None:

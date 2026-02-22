@@ -197,6 +197,11 @@ def _apply_manifest_file_entry(
     }
 
 
+def _source_city_key(source_path: str) -> str:
+    """Return normalized city key derived from a manifest source path."""
+    return Path(str(source_path)).stem.strip().casefold()
+
+
 def build_markdown_index(
     config: AppConfig,
     docs_dir: Path,
@@ -321,7 +326,19 @@ def update_markdown_index(
         changed_chunks.extend(chunks)
         files_changed += 1
 
-    removed_sources = sorted(set(files_section.keys()) - set(current_source_map.keys()))
+    current_source_keys = set(current_source_map.keys())
+    if selected_cities:
+        selected_city_keys = {
+            city.strip().casefold() for city in selected_cities if city.strip()
+        }
+        manifest_sources_in_scope = {
+            source_path
+            for source_path in files_section.keys()
+            if _source_city_key(source_path) in selected_city_keys
+        }
+        removed_sources = sorted(manifest_sources_in_scope - current_source_keys)
+    else:
+        removed_sources = sorted(set(files_section.keys()) - current_source_keys)
     for source_path in removed_sources:
         chunk_ids = files_section[source_path].get("chunk_ids", [])
         if chunk_ids and not dry_run:
