@@ -99,10 +99,12 @@ def test_api_run_lifecycle_success(tmp_path: Path, monkeypatch: pytest.MonkeyPat
         config: AppConfig,
         run_id: str | None = None,
         log_llm_payload: bool = True,
+        selected_cities: list[str] | None = None,
     ) -> RunPaths:
         assert config.enable_sql is False
         assert run_id is not None
         assert isinstance(log_llm_payload, bool)
+        assert selected_cities is None
         return _write_success_artifacts(question=question, run_id=run_id, config=config)
 
     monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
@@ -149,8 +151,10 @@ def test_api_duplicate_run_id_returns_conflict(
         config: AppConfig,
         run_id: str | None = None,
         log_llm_payload: bool = True,
+        selected_cities: list[str] | None = None,
     ) -> RunPaths:
         assert run_id is not None
+        assert selected_cities is None
         return _write_success_artifacts(question=question, run_id=run_id, config=config)
 
     monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
@@ -227,8 +231,10 @@ def test_api_output_returns_conflict_while_running(
         config: AppConfig,
         run_id: str | None = None,
         log_llm_payload: bool = True,
+        selected_cities: list[str] | None = None,
     ) -> RunPaths:
         assert run_id is not None
+        assert selected_cities is None
         started.set()
         release.wait(timeout=2)
         return _write_success_artifacts(question=question, run_id=run_id, config=config)
@@ -266,7 +272,9 @@ def test_api_failed_run(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None
         config: AppConfig,
         run_id: str | None = None,
         log_llm_payload: bool = True,
+        selected_cities: list[str] | None = None,
     ) -> RunPaths:
+        assert selected_cities is None
         raise RuntimeError("simulated pipeline failure")
 
     monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
@@ -311,8 +319,10 @@ def test_api_run_filters_markdown_by_selected_cities(
         config: AppConfig,
         run_id: str | None = None,
         log_llm_payload: bool = True,
+        selected_cities: list[str] | None = None,
     ) -> RunPaths:
         assert run_id is not None
+        assert selected_cities == ["berlin"]
         captured_files.extend(
             sorted(path.name for path in config.markdown_dir.rglob("*.md"))
         )
@@ -423,8 +433,10 @@ def test_api_run_supports_header_api_key_override(
         run_id: str | None = None,
         log_llm_payload: bool = True,
         api_key_override: str | None = None,
+        selected_cities: list[str] | None = None,
     ) -> RunPaths:
         assert run_id is not None
+        assert selected_cities is None
         captured_api_key["value"] = api_key_override
         return _write_success_artifacts(question=question, run_id=run_id, config=config)
 
@@ -460,7 +472,9 @@ def test_api_key_error_is_reported_with_sanitized_message(
         config: AppConfig,
         run_id: str | None = None,
         log_llm_payload: bool = True,
+        selected_cities: list[str] | None = None,
     ) -> RunPaths:
+        assert selected_cities is None
         raise RuntimeError(
             "Incorrect API key provided: sk-or-v1-abcdefghijklmnopqrstuv0123456789"
         )

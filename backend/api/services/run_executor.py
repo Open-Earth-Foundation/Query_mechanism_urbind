@@ -1,4 +1,4 @@
-﻿"""Background executor for async backend runs."""
+"""Background executor for async backend runs."""
 
 from __future__ import annotations
 
@@ -14,6 +14,7 @@ from backend.api.models import RunError, RunStatus
 from backend.api.services.city_catalog import build_city_subset
 from backend.api.services.run_store import RunRecord, RunStore, TERMINAL_STATUSES
 from backend.modules.orchestrator.module import run_pipeline
+from backend.utils.city_normalization import normalize_city_keys
 from backend.utils.config import load_config
 from backend.utils.paths import RunPaths
 
@@ -44,20 +45,30 @@ class RunExecutor:
 
     def submit(self, command: StartRunCommand) -> RunRecord:
         """Create queued run state and dispatch worker thread."""
+        normalized_cities = normalize_city_keys(command.cities)
+        resolved_command = StartRunCommand(
+            question=command.question,
+            requested_run_id=command.requested_run_id,
+            cities=normalized_cities or None,
+            config_path=command.config_path,
+            markdown_path=command.markdown_path,
+            log_llm_payload=command.log_llm_payload,
+            api_key=command.api_key,
+        )
         record = self._run_store.create_queued_run(
-            question=command.question, requested_run_id=command.requested_run_id
+            question=resolved_command.question, requested_run_id=resolved_command.requested_run_id
         )
         logger.info(
             "Run accepted run_id=%s cities=%s config_path=%s markdown_path=%s log_llm_payload=%s api_key_override=%s",
             record.run_id,
-            len(command.cities) if command.cities else "all",
-            command.config_path,
-            command.markdown_path,
-            command.log_llm_payload,
-            command.api_key is not None,
+            len(resolved_command.cities) if resolved_command.cities else "all",
+            resolved_command.config_path,
+            resolved_command.markdown_path,
+            resolved_command.log_llm_payload,
+            resolved_command.api_key is not None,
         )
         self._executor.submit(
-            self._execute, record.run_id, command.question, command
+            self._execute, record.run_id, resolved_command.question, resolved_command
         )
         return record
 
@@ -116,6 +127,7 @@ class RunExecutor:
                 "config": config,
                 "run_id": run_id,
                 "log_llm_payload": command.log_llm_payload,
+                "selected_cities": command.cities,
             }
             if command.api_key is not None:
                 pipeline_kwargs["api_key_override"] = command.api_key

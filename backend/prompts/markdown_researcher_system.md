@@ -20,9 +20,13 @@ Never include reasoning text outside the tool call.
 Input is a JSON object with:
 - `question` (str)
 - `city_name` (str): current city for this batch
-- `content` (str): markdown chunk content for this call
-
-Each call currently processes one chunk at a time.
+- `chunks` (list[object]): markdown chunks for this call. Each object contains:
+  - `chunk_id` (str): deterministic chunk identifier
+  - `path` (str): source markdown path
+  - `heading_path` (str): heading location when available
+  - `block_type` (str): optional block type metadata
+  - `distance` (str): optional retrieval distance metadata
+  - `content` (str): markdown chunk content
 </input>
 
 <output>
@@ -37,10 +41,11 @@ Each `MarkdownExcerpt` must include:
 - `quote` (str): verbatim supporting text extracted from the chunk, single line.
 - `city_name` (str): must equal input `city_name`.
 - `partial_answer` (str): short, self-contained factual statement supported by `quote`, single line.
+- `source_chunk_ids` (list[str]): one or more `chunk_id` values from input `chunks` that support the excerpt.
 
 Relevance rules:
 - Return excerpts only when the chunk directly supports a useful partial answer for the user question.
-- If the chunk is not relevant, return no excerpt for that chunk.
+- If a chunk is not relevant, do not cite its `chunk_id`.
 - Keep city grounding strict: for city-specific questions, do not return excerpts that only support a different city.
 
 Rules for `partial_answer`:
@@ -49,6 +54,7 @@ Rules for `partial_answer`:
 - Must not use meta phrasing such as "the answer is", "this chunk says", "based on the quote".
 - Must not add facts that are absent from the quote.
 - Quotes and partial answers must be single-line strings (replace newlines/tabs with spaces).
+- `source_chunk_ids` must contain only IDs from input `chunks`; never invent IDs.
 
 Error handling:
 - Normal completion should use `error=null`.
@@ -61,7 +67,8 @@ Error handling:
     {
       "quote": "The city has deployed 43 public EV charging points as of 2024.",
       "city_name": "Munich",
-      "partial_answer": "Munich reports 43 public EV charging points as of 2024."
+      "partial_answer": "Munich reports 43 public EV charging points as of 2024.",
+      "source_chunk_ids": ["chunk_123example"]
     }
   ],
   "error": null

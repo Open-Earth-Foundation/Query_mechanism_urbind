@@ -10,7 +10,12 @@ import psycopg
 
 from backend.modules.markdown_researcher.agent import extract_markdown_excerpts
 from backend.modules.markdown_researcher.models import MarkdownResearchResult
-from backend.modules.markdown_researcher.services import load_markdown_documents
+from backend.modules.markdown_researcher.services import (
+    build_city_batches,
+    load_markdown_documents,
+    resolve_batch_input_token_limit,
+    split_documents_by_city,
+)
 from backend.modules.orchestrator.agent import refine_research_question
 from backend.modules.orchestrator.models import (
     ResearchQuestionRefinement,
@@ -35,6 +40,11 @@ from backend.modules.sql_researcher.services import (
     build_sql_research_result,
     cap_results,
 )
+from backend.modules.vector_store.indexer import update_markdown_index
+from backend.modules.vector_store.retriever import (
+    as_markdown_documents,
+    retrieve_chunks_for_queries,
+)
 from backend.modules.writer.agent import write_markdown
 from backend.modules.writer.models import WriterOutput
 from backend.services.db_client import DbClient, get_db_client
@@ -42,6 +52,7 @@ from backend.services.run_logger import RunLogger
 from backend.services.schema_registry import load_schema
 from backend.utils.config import AppConfig, get_openrouter_api_key
 from backend.utils.paths import RunPaths, build_run_id, create_run_paths
+from backend.utils.tokenization import count_tokens
 
 logger = logging.getLogger(__name__)
 
@@ -88,33 +99,53 @@ def run_pipeline(
     run_log_handler = attach_run_file_logger(paths.base_dir)
 
     # First step in the chain: rewrite the user question into a research-ready form.
-    research_question = question
+    canonical_research_query = question
+    retrieval_queries: list[str] = [canonical_research_query]
     try:
         refinement = refine_question_func(
             question,
             config,
             api_key,
+            selected_cities=selected_cities,
             log_llm_payload=log_llm_payload,
         )
         candidate = refinement.research_question.strip()
         if candidate:
-            research_question = candidate
+            canonical_research_query = candidate
         else:
             logger.warning(
                 "Research question refinement returned empty output; using original question."
             )
+        retrieval_query_candidates = [query.strip() for query in refinement.retrieval_queries]
+        combined_queries = [canonical_research_query] + [
+            candidate_query
+            for candidate_query in retrieval_query_candidates
+            if candidate_query
+        ]
+        deduped_queries: list[str] = []
+        seen_queries: set[str] = set()
+        for query_candidate in combined_queries:
+            key = query_candidate.casefold()
+            if key in seen_queries:
+                continue
+            seen_queries.add(key)
+            deduped_queries.append(query_candidate)
+            if len(deduped_queries) >= 3:
+                break
+        retrieval_queries = deduped_queries or [canonical_research_query]
     except (ValueError, RuntimeError, OSError, KeyError, TypeError) as exc:
         logger.warning(
             "Research question refinement failed; using original question. error=%s",
             exc,
         )
 
-    run_logger.update_research_question(research_question)
+    run_logger.update_research_question(canonical_research_query)
     write_json(
         paths.research_question,
         {
             "original_question": question,
-            "research_question": research_question,
+            "canonical_research_query": canonical_research_query,
+            "retrieval_queries": retrieval_queries,
         },
     )
     run_logger.record_artifact("research_question", paths.research_question)
@@ -147,7 +178,7 @@ def run_pipeline(
     # Run initial SQL and markdown in parallel
     def _run_initial_sql() -> dict[str, object]:
         sql_plan = sql_plan_func(
-            research_question,
+            canonical_research_query,
             schema_summary,
             city_names,
             config,
@@ -158,7 +189,7 @@ def run_pipeline(
         if sql_plan.status == "error":
             return {"status": "error", "plan": sql_plan}
         sql_plan, full_results, sql_rounds = run_sql_rounds(
-            research_question,
+            canonical_research_query,
             sql_plan,
             db_client,
             config,
@@ -186,24 +217,111 @@ def run_pipeline(
         }
 
     def _run_initial_markdown() -> dict[str, object]:
-        markdown_chunks = load_markdown_documents(
-            config.markdown_dir,
-            config.markdown_researcher,
-            selected_cities=selected_cities,
+        markdown_source_mode = "standard_chunking"
+        markdown_chunks: list[dict[str, object]]
+        if config.vector_store.enabled:
+            markdown_source_mode = "vector_store_retrieval"
+            if config.vector_store.auto_update_on_run:
+                update_markdown_index(
+                    config=config,
+                    docs_dir=config.markdown_dir,
+                    selected_cities=selected_cities,
+                    dry_run=False,
+                )
+            retrieved_chunks, retrieval_meta = retrieve_chunks_for_queries(
+                queries=retrieval_queries,
+                config=config,
+                docs_dir=config.markdown_dir,
+                selected_cities=selected_cities,
+            )
+            markdown_chunks = as_markdown_documents(retrieved_chunks)
+            retrieval_payload = {
+                "queries": retrieval_queries,
+                "selected_cities": selected_cities or [],
+                "retrieved_count": len(retrieved_chunks),
+                "meta": retrieval_meta,
+                "chunks": [
+                    {
+                        "chunk_id": chunk.chunk_id,
+                        "city_name": chunk.city_name,
+                        "city_key": str(chunk.metadata.get("city_key", "")),
+                        "source_path": chunk.source_path,
+                        "heading_path": chunk.heading_path,
+                        "block_type": chunk.block_type,
+                        "distance": chunk.distance,
+                    }
+                    for chunk in retrieved_chunks
+                ],
+            }
+            retrieval_path = paths.markdown_dir / "retrieval.json"
+            write_json(retrieval_path, retrieval_payload)
+            run_logger.record_artifact("markdown_retrieval", retrieval_path)
+        else:
+            markdown_chunks = load_markdown_documents(
+                config.markdown_dir,
+                config.markdown_researcher,
+                selected_cities=selected_cities,
+            )
+        logger.info(
+            "run_id=%s markdown_source_mode=%s",
+            run_id,
+            markdown_source_mode,
         )
         run_logger.record_markdown_inputs(
             markdown_dir=config.markdown_dir,
             selected_cities_planned=selected_cities,
             markdown_chunks=markdown_chunks,
+            markdown_source_mode=markdown_source_mode,
         )
+        documents_by_city = split_documents_by_city(markdown_chunks)
+        batch_max_chunks = int(max(config.markdown_researcher.batch_max_chunks, 1))
+        batch_token_limit = int(resolve_batch_input_token_limit(config))
+        batch_plan = build_city_batches(
+            documents_by_city=documents_by_city,
+            max_batch_input_tokens=batch_token_limit,
+            max_batch_chunks=batch_max_chunks,
+        )
+        batches_payload = {
+            "batch_max_chunks": batch_max_chunks,
+            "batch_max_input_tokens": batch_token_limit,
+            "cities": sorted(documents_by_city.keys()),
+            "batches": [
+                {
+                    "city_name": city_name,
+                    "batch_index": batch_index,
+                    "chunk_count": len(batch),
+                    "estimated_tokens": sum(
+                        max(count_tokens(str(item.get("content", ""))), 0) for item in batch
+                    ),
+                    "chunks": [
+                        {
+                            "chunk_id": str(item.get("chunk_id", "")),
+                            "path": str(item.get("path", "")),
+                            "chunk_index": item.get("chunk_index"),
+                            "distance": item.get("distance"),
+                        }
+                        for item in batch
+                    ],
+                }
+                for city_name, batch_index, batch in batch_plan
+            ],
+        }
+        batches_path = paths.markdown_dir / "batches.json"
+        write_json(batches_path, batches_payload)
+        run_logger.record_artifact("markdown_batches", batches_path)
         markdown_result = markdown_func(
-            research_question,
+            canonical_research_query,
             markdown_chunks,
             config,
             api_key,
             log_llm_payload=log_llm_payload,
         )
-        return {"markdown_chunks": markdown_chunks, "result": markdown_result}
+        return {
+            "markdown_chunks": markdown_chunks,
+            "result": markdown_result,
+            "retrieval_queries": retrieval_queries,
+            "markdown_source_mode": markdown_source_mode,
+        }
 
     sql_payload: dict[str, object] | None = None
     markdown_payload: dict[str, object] | None = None
@@ -278,14 +396,31 @@ def run_pipeline(
     markdown_result = markdown_payload["result"]
     if isinstance(markdown_result, MarkdownResearchResult):
         markdown_bundle = markdown_result.model_dump()
+        source_mode = str(markdown_payload.get("markdown_source_mode", "standard_chunking"))
+        markdown_bundle["retrieval_mode"] = source_mode
+        if source_mode == "vector_store_retrieval":
+            markdown_bundle["retrieval_queries"] = markdown_payload.get(
+                "retrieval_queries",
+                [],
+            )
         inspected_cities = sorted(
             {
-                str(document.get("city_name", "")).strip()
+                str(document.get("city_key", "")).strip()
                 for document in markdown_chunks
-                if str(document.get("city_name", "")).strip()
+                if str(document.get("city_key", "")).strip()
             }
         )
         markdown_bundle["inspected_cities"] = inspected_cities
+        # Display names for evidence header (e.g. "Aachen" not "aachen")
+        key_to_name: dict[str, str] = {}
+        for document in markdown_chunks:
+            key = str(document.get("city_key", "")).strip()
+            name = document.get("city_name")
+            if key and key not in key_to_name:
+                key_to_name[key] = str(name).strip() if name else key
+        markdown_bundle["inspected_city_names"] = [
+            key_to_name[k] for k in inspected_cities if k in key_to_name
+        ]
         excerpts = markdown_bundle.get("excerpts", [])
         if isinstance(excerpts, list):
             markdown_bundle["excerpt_count"] = len(excerpts)

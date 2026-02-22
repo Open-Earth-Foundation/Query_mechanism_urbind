@@ -169,6 +169,27 @@ export interface SendChatMessageResponse {
   assistant_message: ChatMessage;
 }
 
+function normalizeCityKey(value: string): string {
+  return value.trim().toLocaleLowerCase();
+}
+
+function normalizeCityKeys(values?: string[]): string[] | undefined {
+  if (!values || values.length === 0) {
+    return undefined;
+  }
+  const normalized: string[] = [];
+  const seen = new Set<string>();
+  values.forEach((value) => {
+    const key = normalizeCityKey(value);
+    if (!key || seen.has(key)) {
+      return;
+    }
+    seen.add(key);
+    normalized.push(key);
+  });
+  return normalized.length > 0 ? normalized : undefined;
+}
+
 const configuredBaseUrl = (
   globalThis as {
     process?: { env?: { NEXT_PUBLIC_API_BASE_URL?: string } };
@@ -241,11 +262,15 @@ export async function fetchRuns(): Promise<RunListResponse> {
 }
 
 export async function startRun(payload: CreateRunRequest): Promise<CreateRunResponse> {
+  const normalizedPayload: CreateRunRequest = {
+    ...payload,
+    cities: normalizeCityKeys(payload.cities),
+  };
   return requestJson<CreateRunResponse>(
     "/api/v1/runs",
     {
       method: "POST",
-      body: JSON.stringify(payload),
+      body: JSON.stringify(normalizedPayload),
     },
     true,
   );

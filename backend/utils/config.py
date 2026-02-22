@@ -11,7 +11,7 @@ from pydantic import BaseModel, ConfigDict, Field
 
 class AgentConfig(BaseModel):
     model: str
-    temperature: Optional[float] = None
+    temperature: float = 0.0
     max_output_tokens: Optional[int] = None
     context_window_tokens: Optional[int] = None
     max_input_tokens: Optional[int] = None
@@ -33,6 +33,9 @@ class MarkdownResearcherConfig(AgentConfig):
     max_file_bytes: int = 5_000_000
     max_chunk_tokens: Optional[int] = None
     chunk_overlap_tokens: int = 200
+    batch_max_chunks: int = 4
+    batch_max_input_tokens: Optional[int] = None
+    batch_overhead_tokens: int = 600
     max_workers: int = 2
     max_retries: int = 2
     retry_base_seconds: float = 0.8
@@ -49,6 +52,26 @@ class AssumptionsReviewerConfig(AgentConfig):
     """Configuration for two-pass missing-data discovery."""
 
 
+class VectorStoreConfig(BaseModel):
+    enabled: bool = False
+    chroma_persist_path: Path = Field(default_factory=lambda: Path(".chroma"))
+    chroma_collection_name: str = "markdown_chunks"
+    embedding_model: str = "text-embedding-3-large"
+    embedding_chunk_tokens: int = 800
+    embedding_chunk_overlap_tokens: int = 80
+    table_row_group_max_rows: int = 25
+    retrieval_max_distance: float | None = 1.0
+    retrieval_fallback_min_chunks_per_city_query: int = 20
+    retrieval_max_chunks_per_city_query: int = 60
+    retrieval_max_chunks_per_city: int | None = 300
+    context_window_chunks: int = 0
+    table_context_window_chunks: int = 1
+    auto_update_on_run: bool = False
+    index_manifest_path: Path = Field(
+        default_factory=lambda: Path(".chroma/index_manifest.json")
+    )
+
+
 class AppConfig(BaseModel):
     model_config = ConfigDict(arbitrary_types_allowed=True)
 
@@ -60,6 +83,7 @@ class AppConfig(BaseModel):
     assumptions_reviewer: AssumptionsReviewerConfig = Field(
         default_factory=lambda: AssumptionsReviewerConfig(model="openai/gpt-5.2")
     )
+    vector_store: VectorStoreConfig = Field(default_factory=VectorStoreConfig)
     openrouter_base_url: str = "https://openrouter.ai/api/v1"
     runs_dir: Path = Field(default_factory=lambda: Path("output"))
     source_db_path: Path = Field(default_factory=lambda: Path("data/source.db"))
@@ -79,6 +103,22 @@ def _parse_env_bool(value: str | None) -> bool | None:
     return None
 
 
+def _parse_env_int(var_name: str, value: str) -> int:
+    """Parse an integer env var and raise a clear error on invalid values."""
+    try:
+        return int(value)
+    except ValueError as exc:
+        raise ValueError(f"{var_name} must be a valid integer, got {value!r}.") from exc
+
+
+def _parse_env_float(var_name: str, value: str) -> float:
+    """Parse a float env var and raise a clear error on invalid values."""
+    try:
+        return float(value)
+    except ValueError as exc:
+        raise ValueError(f"{var_name} must be a valid float, got {value!r}.") from exc
+
+
 def load_config(config_path: Optional[Path] = None) -> AppConfig:
     load_dotenv()
     path = config_path or Path("llm_config.yaml")
@@ -94,6 +134,34 @@ def load_config(config_path: Optional[Path] = None) -> AppConfig:
     openrouter_base_url = os.getenv("OPENROUTER_BASE_URL")
     database_url = os.getenv("DATABASE_URL")
     enable_sql = os.getenv("ENABLE_SQL")
+    vector_store_enabled = os.getenv("VECTOR_STORE_ENABLED")
+    chroma_persist_path = os.getenv("CHROMA_PERSIST_PATH")
+    chroma_collection_name = os.getenv("CHROMA_COLLECTION_NAME")
+    embedding_model = os.getenv("EMBEDDING_MODEL")
+    embedding_chunk_tokens = os.getenv("EMBEDDING_CHUNK_TOKENS")
+    embedding_chunk_overlap_tokens = os.getenv("EMBEDDING_CHUNK_OVERLAP_TOKENS")
+    table_row_group_max_rows = os.getenv("TABLE_ROW_GROUP_MAX_ROWS")
+    markdown_batch_max_chunks = os.getenv("MARKDOWN_BATCH_MAX_CHUNKS")
+    markdown_batch_max_input_tokens = os.getenv("MARKDOWN_BATCH_MAX_INPUT_TOKENS")
+    markdown_batch_overhead_tokens = os.getenv("MARKDOWN_BATCH_OVERHEAD_TOKENS")
+    vector_store_retrieval_max_distance = os.getenv(
+        "VECTOR_STORE_RETRIEVAL_MAX_DISTANCE"
+    )
+    vector_store_retrieval_fallback_min_chunks_per_city_query = os.getenv(
+        "VECTOR_STORE_RETRIEVAL_FALLBACK_MIN_CHUNKS_PER_CITY_QUERY"
+    )
+    vector_store_retrieval_max_chunks_per_city_query = os.getenv(
+        "VECTOR_STORE_RETRIEVAL_MAX_CHUNKS_PER_CITY_QUERY"
+    )
+    vector_store_retrieval_max_chunks_per_city = os.getenv(
+        "VECTOR_STORE_RETRIEVAL_MAX_CHUNKS_PER_CITY"
+    )
+    vector_store_context_window_chunks = os.getenv("VECTOR_STORE_CONTEXT_WINDOW_CHUNKS")
+    vector_store_table_context_window_chunks = os.getenv(
+        "VECTOR_STORE_TABLE_CONTEXT_WINDOW_CHUNKS"
+    )
+    vector_store_auto_update_on_run = os.getenv("VECTOR_STORE_AUTO_UPDATE_ON_RUN")
+    index_manifest_path = os.getenv("INDEX_MANIFEST_PATH")
 
     if runs_dir:
         config.runs_dir = Path(runs_dir)
@@ -109,6 +177,83 @@ def load_config(config_path: Optional[Path] = None) -> AppConfig:
         parsed = _parse_env_bool(enable_sql)
         if parsed is not None:
             config.enable_sql = parsed
+    if vector_store_enabled is not None:
+        parsed = _parse_env_bool(vector_store_enabled)
+        if parsed is not None:
+            config.vector_store.enabled = parsed
+    if chroma_persist_path:
+        config.vector_store.chroma_persist_path = Path(chroma_persist_path)
+    if chroma_collection_name:
+        config.vector_store.chroma_collection_name = chroma_collection_name
+    if embedding_model:
+        config.vector_store.embedding_model = embedding_model
+    if embedding_chunk_tokens:
+        config.vector_store.embedding_chunk_tokens = _parse_env_int(
+            "EMBEDDING_CHUNK_TOKENS",
+            embedding_chunk_tokens,
+        )
+    if embedding_chunk_overlap_tokens:
+        config.vector_store.embedding_chunk_overlap_tokens = _parse_env_int(
+            "EMBEDDING_CHUNK_OVERLAP_TOKENS",
+            embedding_chunk_overlap_tokens,
+        )
+    if table_row_group_max_rows:
+        config.vector_store.table_row_group_max_rows = _parse_env_int(
+            "TABLE_ROW_GROUP_MAX_ROWS",
+            table_row_group_max_rows,
+        )
+    if markdown_batch_max_chunks:
+        config.markdown_researcher.batch_max_chunks = _parse_env_int(
+            "MARKDOWN_BATCH_MAX_CHUNKS",
+            markdown_batch_max_chunks,
+        )
+    if markdown_batch_max_input_tokens:
+        config.markdown_researcher.batch_max_input_tokens = _parse_env_int(
+            "MARKDOWN_BATCH_MAX_INPUT_TOKENS",
+            markdown_batch_max_input_tokens,
+        )
+    if markdown_batch_overhead_tokens:
+        config.markdown_researcher.batch_overhead_tokens = _parse_env_int(
+            "MARKDOWN_BATCH_OVERHEAD_TOKENS",
+            markdown_batch_overhead_tokens,
+        )
+    if vector_store_retrieval_max_distance:
+        config.vector_store.retrieval_max_distance = _parse_env_float(
+            "VECTOR_STORE_RETRIEVAL_MAX_DISTANCE",
+            vector_store_retrieval_max_distance,
+        )
+    if vector_store_retrieval_fallback_min_chunks_per_city_query:
+        value = _parse_env_int(
+            "VECTOR_STORE_RETRIEVAL_FALLBACK_MIN_CHUNKS_PER_CITY_QUERY",
+            vector_store_retrieval_fallback_min_chunks_per_city_query,
+        )
+        config.vector_store.retrieval_fallback_min_chunks_per_city_query = value
+    if vector_store_retrieval_max_chunks_per_city_query:
+        config.vector_store.retrieval_max_chunks_per_city_query = _parse_env_int(
+            "VECTOR_STORE_RETRIEVAL_MAX_CHUNKS_PER_CITY_QUERY",
+            vector_store_retrieval_max_chunks_per_city_query,
+        )
+    if vector_store_retrieval_max_chunks_per_city:
+        config.vector_store.retrieval_max_chunks_per_city = _parse_env_int(
+            "VECTOR_STORE_RETRIEVAL_MAX_CHUNKS_PER_CITY",
+            vector_store_retrieval_max_chunks_per_city,
+        )
+    if vector_store_context_window_chunks:
+        config.vector_store.context_window_chunks = _parse_env_int(
+            "VECTOR_STORE_CONTEXT_WINDOW_CHUNKS",
+            vector_store_context_window_chunks,
+        )
+    if vector_store_table_context_window_chunks:
+        config.vector_store.table_context_window_chunks = _parse_env_int(
+            "VECTOR_STORE_TABLE_CONTEXT_WINDOW_CHUNKS",
+            vector_store_table_context_window_chunks,
+        )
+    if vector_store_auto_update_on_run is not None:
+        parsed = _parse_env_bool(vector_store_auto_update_on_run)
+        if parsed is not None:
+            config.vector_store.auto_update_on_run = parsed
+    if index_manifest_path:
+        config.vector_store.index_manifest_path = Path(index_manifest_path)
 
     return config
 
@@ -144,6 +289,7 @@ __all__ = [
     "MarkdownResearcherConfig",
     "ChatConfig",
     "AssumptionsReviewerConfig",
+    "VectorStoreConfig",
     "AppConfig",
     "load_config",
     "get_openrouter_api_key",

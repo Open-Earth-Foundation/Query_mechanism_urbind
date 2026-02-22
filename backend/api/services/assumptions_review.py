@@ -1,4 +1,4 @@
-﻿"""Services for discovering and applying missing-data assumptions per run."""
+"""Services for discovering and applying missing-data assumptions per run."""
 
 from __future__ import annotations
 
@@ -324,8 +324,7 @@ def _run_discovery_pass(
         "model": config.assumptions_reviewer.model,
         "messages": messages,
     }
-    if config.assumptions_reviewer.temperature is not None:
-        request_kwargs["temperature"] = config.assumptions_reviewer.temperature
+    request_kwargs["temperature"] = float(config.assumptions_reviewer.temperature)
     if config.assumptions_reviewer.max_output_tokens is not None:
         request_kwargs["max_tokens"] = config.assumptions_reviewer.max_output_tokens
 

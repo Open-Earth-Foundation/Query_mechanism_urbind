@@ -1,0 +1,111 @@
+# One-off Job: build the markdown vector index into the backend PVC (under /data/chroma).
+# The backend deployment uses the same PVC and CHROMA_PERSIST_PATH, so after this Job
+# completes, the running backend will read the index from /data/chroma.
+#
+# Prerequisites:
+#   - Backend ConfigMap and Secret exist (same as for the backend deployment).
+#   - PVC urbind-query-mechanism-backend-output exists and is bound.
+#   - Backend image contains documents under /app/documents (or override MARKDOWN_DIR
+#     and ensure that path is available in the Job).
+#
+# When to run (avoid concurrent use of the vector store):
+#
+#   The Job does a full rebuild (reset + bulk write). The backend must not read from
+#   the same Chroma path while the Job is writing, or you can get lock errors or
+#   inconsistent state. Prefer one of these approaches:
+#
+#   - Scale the backend to 0, run the Job, then scale back up:
+#       kubectl scale deployment urbind-query-mechanism-backend --replicas=0
+#       kubectl apply -f k8s/backend-build-vector-index-job.yml
+#       kubectl logs job/urbind-query-mechanism-build-vector-index -f
+#       kubectl scale deployment urbind-query-mechanism-backend --replicas=1
+#
+#   - Run the Job right after a new deploy, before enabling VECTOR_STORE_ENABLED
+#     (or when vector store is not yet in use).
+#
+#   - Run during a maintenance window; accept that retrieval may fail or be
+#     inconsistent until the Job completes.
+#
+# How to run:
+#
+#   1. Apply the Job (creates the Job in the cluster):
+#
+#        kubectl apply -f k8s/backend-build-vector-index-job.yml
+#
+#   2. Watch until it completes (or fails):
+#
+#        kubectl get jobs -l app=urbind-query-mechanism-build-vector-index
+#        kubectl logs job/urbind-query-mechanism-build-vector-index -f
+#
+#   3. On success, the vector store is populated at /data/chroma on the PVC. The
+#      backend deployment (if it mounts the same PVC at /data/chroma) will use it
+#      when VECTOR_STORE_ENABLED is true.
+#
+#   4. If the Job fails, get logs from the (kept) failed pod:
+#
+#        kubectl get pods -l job-name=urbind-query-mechanism-build-vector-index
+#        kubectl logs <pod-name>
+#
+#   5. To re-run (e.g. after documents or code change), delete the Job and apply again:
+#
+#        kubectl delete job urbind-query-mechanism-build-vector-index
+#        kubectl apply -f k8s/backend-build-vector-index-job.yml
+#
+# Optional: use a specific namespace:
+#
+#        kubectl apply -f k8s/backend-build-vector-index-job.yml -n <namespace>
+#        kubectl delete job urbind-query-mechanism-build-vector-index -n <namespace>
+#
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: urbind-query-mechanism-build-vector-index
+  namespace: default
+  labels:
+    app: urbind-query-mechanism-build-vector-index
+spec:
+  ttlSecondsAfterFinished: 86400
+  backoffLimit: 0
+  template:
+    metadata:
+      labels:
+        app: urbind-query-mechanism-build-vector-index
+    spec:
+      # Never: keep the failed pod so logs can be read after failure.
+      restartPolicy: Never
+      containers:
+        - name: build-index
+          image: ghcr.io/open-earth-foundation/query_mechanism_urbind-backend:dev
+          imagePullPolicy: Always
+          envFrom:
+            - configMapRef:
+                name: urbind-query-mechanism-backend-config
+          env:
+            - name: PYTHONPATH
+              value: /app
+            - name: OPENROUTER_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: urbind-query-mechanism-backend-secrets
+                  key: OPENROUTER_API_KEY
+          # Shell ensures PYTHONPATH is set before python runs (image may not expose it to child processes).
+          command:
+            - sh
+            - -c
+            - "export PYTHONPATH=/app && exec python -m backend.scripts.build_markdown_index --docs-dir /app/documents"
+          volumeMounts:
+            - name: output-volume
+              mountPath: /data/chroma
+              subPath: chroma
+          resources:
+            requests:
+              cpu: "500m"
+              memory: "512Mi"
+            limits:
+              cpu: "2000m"
+              memory: "2Gi"
+      volumes:
+        - name: output-volume
+          persistentVolumeClaim:
+            claimName: urbind-query-mechanism-backend-output

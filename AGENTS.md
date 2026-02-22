@@ -259,6 +259,7 @@ docker run -it --rm -p 8000:8000 --env-file .env my-great-app
 When making changes:
 
 - Keep changes minimal and scoped to the task.
+- Do not add backward-compatibility layers, legacy adapters, or dual-path behavior unless the user explicitly requests backward compatibility.
 - Respect the existing folder structure and move files if they are in the wrong place.
 - Update `README.md` if setup or run behavior changes.
 - If you add a runnable script, ensure it follows the standalone script rules.

@@ -93,8 +93,10 @@ def test_chat_session_lifecycle(tmp_path: Path, monkeypatch: pytest.MonkeyPatch)
         config: AppConfig,
         run_id: str | None = None,
         log_llm_payload: bool = True,
+        selected_cities: list[str] | None = None,
     ) -> RunPaths:
         assert run_id is not None
+        assert selected_cities is None
         return _write_success_artifacts(question, run_id, config)
 
     def _stub_generate_reply(
@@ -218,8 +220,10 @@ def test_chat_supports_header_api_key_override(
         config: AppConfig,
         run_id: str | None = None,
         log_llm_payload: bool = True,
+        selected_cities: list[str] | None = None,
     ) -> RunPaths:
         assert run_id is not None
+        assert selected_cities is None
         return _write_success_artifacts(question, run_id, config)
 
     def _stub_generate_reply(
@@ -279,8 +283,10 @@ def test_chat_context_update_rejects_unknown_context_run(
         config: AppConfig,
         run_id: str | None = None,
         log_llm_payload: bool = True,
+        selected_cities: list[str] | None = None,
     ) -> RunPaths:
         assert run_id is not None
+        assert selected_cities is None
         return _write_success_artifacts(question, run_id, config)
 
     monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)

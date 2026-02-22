@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 import json
 import logging
@@ -26,6 +26,7 @@ class RunLogger:
                 "markdown_file_count": 0,
                 "markdown_chunk_count": 0,
                 "markdown_excerpt_count": 0,
+                "markdown_source_mode": "standard_chunking",
             },
             "status": "started",
             "started_at": datetime.now(timezone.utc).isoformat(),
@@ -253,6 +254,9 @@ class RunLogger:
             lines.append(f"Markdown file count: {inputs.get('markdown_file_count', 0)}")
             lines.append(f"Markdown chunk count: {inputs.get('markdown_chunk_count', 0)}")
             lines.append(f"Markdown excerpt count: {inputs.get('markdown_excerpt_count', 0)}")
+            lines.append(
+                f"Markdown source mode: {inputs.get('markdown_source_mode', 'standard_chunking')}"
+            )
         lines.append(f"Status: {self.run_log.get('status')}")
         lines.append(f"Finish reason: {self.run_log.get('finish_reason', 'n/a')}")
         lines.append(f"Started: {self.run_log.get('started_at')}")
@@ -368,11 +372,14 @@ class RunLogger:
         self,
         markdown_dir: Path,
         selected_cities_planned: list[str] | None,
-        markdown_chunks: list[dict[str, str]],
+        markdown_chunks: list[dict[str, object]],
+        markdown_source_mode: str = "standard_chunking",
     ) -> None:
         """Capture markdown input snapshot for reproducible run summaries.
 
         ``markdown_chunks`` is expected to contain one entry per chunk.
+        ``markdown_source_mode`` identifies whether chunks came from standard
+        file chunking or vector store retrieval.
         """
         planned = sorted(
             {
@@ -383,9 +390,9 @@ class RunLogger:
         )
         found = sorted(
             {
-                str(doc.get("city_name", "")).strip()
+                str(doc.get("city_key", "")).strip()
                 for doc in markdown_chunks
-                if str(doc.get("city_name", "")).strip()
+                if str(doc.get("city_key", "")).strip()
             }
         )
         file_count = len(
@@ -404,6 +411,7 @@ class RunLogger:
         inputs["markdown_file_count"] = file_count
         inputs["markdown_chunk_count"] = len(markdown_chunks)
         inputs["markdown_excerpt_count"] = 0
+        inputs["markdown_source_mode"] = markdown_source_mode
         self.run_log["inputs"] = inputs
         self.write_run_log()
 
