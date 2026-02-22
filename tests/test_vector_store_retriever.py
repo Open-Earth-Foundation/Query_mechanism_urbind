@@ -40,6 +40,7 @@ def test_as_markdown_documents_maps_required_fields() -> None:
             "distance": "0.231234",
             "heading_path": "Mobility > Charging",
             "block_type": "table",
+            "chunk_index": None,
         }
     ]
 
