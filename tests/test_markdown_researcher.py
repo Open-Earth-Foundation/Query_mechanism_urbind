@@ -57,7 +57,7 @@ def test_markdown_returns_partial_success_with_city_failure_markers(
     def _fake_run_agent_sync(_agent: object, input_data: str, **_kwargs: object) -> _FakeRunResult:
         payload = json.loads(input_data)
         city_name = payload["city_name"]
-        if city_name == "A":
+        if str(city_name).casefold() == "a":
             return _FakeRunResult(
                 MarkdownResearchResult(
                     excerpts=[
@@ -80,7 +80,7 @@ def test_markdown_returns_partial_success_with_city_failure_markers(
     assert result.error is not None
     assert result.error.code == "MARKDOWN_PARTIAL_BATCH_FAILURE"
     assert result.error.details is not None
-    assert "B#batch1: MARKDOWN_MAX_TURNS_EXCEEDED" in result.error.details
+    assert "b#batch1: MARKDOWN_MAX_TURNS_EXCEEDED" in result.error.details
 
 
 def test_markdown_returns_success_when_all_batches_hit_max_turns(
@@ -109,7 +109,7 @@ def test_markdown_returns_success_when_all_batches_hit_max_turns(
     assert result.error is not None
     assert result.error.code == "MARKDOWN_ALL_BATCHES_FAILED"
     assert result.error.details is not None
-    assert "OnlyCity#batch1: MARKDOWN_MAX_TURNS_EXCEEDED" in result.error.details
+    assert "onlycity#batch1: MARKDOWN_MAX_TURNS_EXCEEDED" in result.error.details
 
 
 def test_markdown_payload_batches_keep_city_chunk_integrity(
@@ -167,9 +167,9 @@ def test_markdown_payload_batches_keep_city_chunk_integrity(
         chunks = payload["chunks"]
         assert 1 <= len(chunks) <= 2
         for chunk in chunks:
-            if city_name == "A":
+            if str(city_name).casefold() == "a":
                 assert chunk["chunk_id"].startswith("a")
-            if city_name == "B":
+            if str(city_name).casefold() == "b":
                 assert chunk["chunk_id"].startswith("b")
             seen_chunk_ids.append(chunk["chunk_id"])
 

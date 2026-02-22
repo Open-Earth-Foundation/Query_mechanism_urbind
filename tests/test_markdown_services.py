@@ -21,6 +21,7 @@ def test_load_markdown_documents_filters_selected_cities(tmp_path: Path) -> None
 
     assert docs
     assert all(doc["city_name"] == "Munich" for doc in docs)
+    assert all(doc["city_key"] == "munich" for doc in docs)
 
 
 def test_load_markdown_documents_city_filter_is_case_insensitive(
@@ -37,6 +38,7 @@ def test_load_markdown_documents_city_filter_is_case_insensitive(
 
     assert docs
     assert all(doc["city_name"] == "Munich" for doc in docs)
+    assert all(doc["city_key"] == "munich" for doc in docs)
 
 
 def test_load_markdown_documents_adds_stable_chunk_ids(tmp_path: Path) -> None:
@@ -70,8 +72,15 @@ def test_build_city_batches_respects_city_and_limits() -> None:
         token_counter=len,
     )
 
-    for city_name, _batch_index, batch in batches:
-        assert all(str(doc["city_name"]) == city_name for doc in batch)
+    for city_key, _batch_index, batch in batches:
+        assert all(
+            (
+                str(doc.get("city_key", "")).strip().lower()
+                or str(doc.get("city_name", "")).strip().lower()
+            )
+            == city_key
+            for doc in batch
+        )
         assert len(batch) <= 2
         assert sum(len(str(doc["content"])) for doc in batch) <= 5
 

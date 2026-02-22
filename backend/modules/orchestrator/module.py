@@ -244,6 +244,7 @@ def run_pipeline(
                     {
                         "chunk_id": chunk.chunk_id,
                         "city_name": chunk.city_name,
+                        "city_key": str(chunk.metadata.get("city_key", "")),
                         "source_path": chunk.source_path,
                         "heading_path": chunk.heading_path,
                         "block_type": chunk.block_type,
@@ -399,9 +400,15 @@ def run_pipeline(
             )
         inspected_cities = sorted(
             {
-                str(document.get("city_name", "")).strip()
+                (
+                    str(document.get("city_key", "")).strip()
+                    or str(document.get("city_name", "")).strip()
+                )
                 for document in markdown_chunks
-                if str(document.get("city_name", "")).strip()
+                if (
+                    str(document.get("city_key", "")).strip()
+                    or str(document.get("city_name", "")).strip()
+                )
             }
         )
         markdown_bundle["inspected_cities"] = inspected_cities

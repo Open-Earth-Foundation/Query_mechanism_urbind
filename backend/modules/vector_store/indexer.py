@@ -22,6 +22,7 @@ from backend.modules.vector_store.manifest import (
 )
 from backend.modules.vector_store.markdown_blocks import parse_markdown_blocks
 from backend.modules.vector_store.models import EmbeddingProvider, IndexedChunk
+from backend.utils.city_normalization import normalize_city_key
 from backend.utils.config import AppConfig, load_config
 
 logger = logging.getLogger(__name__)
@@ -110,7 +111,8 @@ def _build_indexed_chunks_for_file(
         table_row_group_max_rows=settings.table_row_group_max_rows,
     )
     source_path = _source_path(file_path, project_root)
-    city_name = file_path.stem
+    city_name = file_path.stem.strip()
+    city_key = normalize_city_key(city_name)
     timestamp = _now_iso()
     indexed: list[IndexedChunk] = []
 
@@ -123,6 +125,7 @@ def _build_indexed_chunks_for_file(
         )
         metadata: dict[str, str | int | float | bool | None] = {
             "city_name": city_name,
+            "city_key": city_key,
             "source_path": source_path,
             "block_type": packed.block_type,
             "heading_path": packed.heading_path,
@@ -199,7 +202,7 @@ def _apply_manifest_file_entry(
 
 def _source_city_key(source_path: str) -> str:
     """Return normalized city key derived from a manifest source path."""
-    return Path(str(source_path)).stem.strip().casefold()
+    return normalize_city_key(Path(str(source_path)).stem)
 
 
 def build_markdown_index(

@@ -7,6 +7,8 @@ import shutil
 from pathlib import Path
 from typing import Any
 
+from backend.utils.city_normalization import normalize_city_key
+
 
 def list_city_names(markdown_dir: Path) -> list[str]:
     """Return unique city names based on markdown file stems."""
@@ -30,7 +32,7 @@ def index_city_markdown_files(markdown_dir: Path) -> dict[str, list[Path]]:
     for markdown_file in sorted(markdown_dir.rglob("*.md")):
         if not markdown_file.is_file():
             continue
-        key = markdown_file.stem.casefold()
+        key = normalize_city_key(markdown_file.stem)
         index.setdefault(key, []).append(markdown_file)
     return index
 
@@ -43,7 +45,7 @@ def build_city_subset(
     """Copy selected city markdown files into a run-local subset directory."""
     index = index_city_markdown_files(source_markdown_dir)
     requested = {
-        city.strip().casefold()
+        normalize_city_key(city)
         for city in selected_cities
         if isinstance(city, str) and city.strip()
     }
@@ -79,7 +81,7 @@ def load_city_groups(groups_path: Path, available_cities: list[str]) -> list[dic
     if not isinstance(raw_groups, list):
         return []
 
-    available_by_key = {city.casefold(): city for city in available_cities}
+    available_by_key = {normalize_city_key(city): city for city in available_cities}
     groups: list[dict[str, object]] = []
     seen_ids: set[str] = set()
 
@@ -116,7 +118,7 @@ def _normalize_group_item(
     for city in cities_raw:
         if not isinstance(city, str):
             continue
-        city_key = city.strip().casefold()
+        city_key = normalize_city_key(city)
         if not city_key or city_key in seen_city_keys:
             continue
         if city_key in available_by_key:

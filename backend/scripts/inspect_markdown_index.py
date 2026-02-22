@@ -29,6 +29,7 @@ from pathlib import Path
 from typing import Any
 
 from backend.modules.vector_store.chroma_store import ChromaStore
+from backend.utils.city_normalization import normalize_city_key
 from backend.utils.config import load_config
 from backend.utils.logging_config import setup_logger
 
@@ -40,7 +41,7 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Inspect markdown vector index.")
     parser.add_argument("--persist-path", help="Override vector store persistence path.")
     parser.add_argument("--collection", help="Override Chroma collection name.")
-    parser.add_argument("--city", help="Filter by city_name metadata.")
+    parser.add_argument("--city", help="Filter by city key/name (case-insensitive).")
     parser.add_argument("--where", help="Filter by metadata key=value.")
     parser.add_argument("--contains", help="Client-side raw_text contains filter.")
     parser.add_argument("--show-id", help="Show one specific chunk by id.")
@@ -100,7 +101,7 @@ def main() -> None:
 
     where = _parse_where(args.where)
     if args.city:
-        where = {"city_name": args.city}
+        where = {"city_key": normalize_city_key(args.city)}
     payload = store.get(where=where, limit=max(args.limit, 1))
     rows = _iter_rows(payload)
     if args.contains:
@@ -114,9 +115,10 @@ def main() -> None:
     for row in rows:
         metadata = row["metadata"]
         logger.info(
-            "id=%s city=%s type=%s source=%s heading=%s tokens=%s",
+            "id=%s city=%s city_key=%s type=%s source=%s heading=%s tokens=%s",
             row["id"],
             metadata.get("city_name", ""),
+            metadata.get("city_key", ""),
             metadata.get("block_type", ""),
             metadata.get("source_path", ""),
             metadata.get("heading_path", ""),

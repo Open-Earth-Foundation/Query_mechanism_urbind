@@ -29,6 +29,7 @@ from pathlib import Path
 from typing import Any
 
 from backend.modules.vector_store.chroma_store import ChromaStore
+from backend.utils.city_normalization import normalize_city_key
 from backend.utils.config import load_config
 from backend.utils.logging_config import setup_logger
 
@@ -42,7 +43,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--chunk-id", help="Show one specific chunk by chunk_id.")
     parser.add_argument("--min-distance", type=float, help="Filter by minimum distance.")
     parser.add_argument("--max-distance", type=float, help="Filter by maximum distance.")
-    parser.add_argument("--city", help="Filter by city_name.")
+    parser.add_argument("--city", help="Filter by city key/name (case-insensitive).")
     parser.add_argument("--limit", type=int, default=10, help="Maximum chunks to show.")
     parser.add_argument(
         "--show-content", action="store_true", default=True, help="Include raw_text content."
@@ -87,6 +88,8 @@ def format_chunk_display(
     lines.append("=" * 80)
     lines.append(f"Chunk ID: {retrieval_chunk['chunk_id']}")
     lines.append(f"City: {retrieval_chunk['city_name']}")
+    if retrieval_chunk.get("city_key"):
+        lines.append(f"City Key: {retrieval_chunk['city_key']}")
     lines.append(f"Source: {retrieval_chunk['source_path']}")
     lines.append(f"Heading: {retrieval_chunk['heading_path']}")
     lines.append(f"Block Type: {retrieval_chunk['block_type']}")
@@ -135,7 +138,15 @@ def main() -> None:
             logger.warning("Chunk not found: %s", args.chunk_id)
             return
     if args.city:
-        filtered_chunks = [c for c in filtered_chunks if c.get("city_name") == args.city]
+        requested_city_key = normalize_city_key(args.city)
+        filtered_chunks = [
+            c
+            for c in filtered_chunks
+            if normalize_city_key(
+                str(c.get("city_key", "")).strip() or str(c.get("city_name", "")).strip()
+            )
+            == requested_city_key
+        ]
     if args.min_distance is not None:
         filtered_chunks = [
             c

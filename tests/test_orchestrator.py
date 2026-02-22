@@ -476,7 +476,7 @@ def test_run_pipeline_end_to_end_propagates_query_markdown_and_writer_output(
     markdown_bundle = writer_bundle["markdown"]
     assert isinstance(markdown_bundle, dict)
     assert markdown_bundle["status"] == "success"
-    assert markdown_bundle["inspected_cities"] == ["Munich"]
+    assert markdown_bundle["inspected_cities"] == ["munich"]
     assert markdown_bundle["excerpt_count"] == 1
     excerpts = markdown_bundle["excerpts"]
     assert isinstance(excerpts, list)
@@ -498,13 +498,13 @@ def test_run_pipeline_end_to_end_propagates_query_markdown_and_writer_output(
     assert persisted_context_bundle["research_question"] == refined_question
     persisted_markdown = persisted_context_bundle["markdown"]
     assert isinstance(persisted_markdown, dict)
-    assert persisted_markdown["inspected_cities"] == ["Munich"]
+    assert persisted_markdown["inspected_cities"] == ["munich"]
     assert persisted_markdown["excerpt_count"] == 1
     assert persisted_markdown["excerpts"][0]["quote"] == expected_quote
     assert persisted_markdown["excerpts"][0]["partial_answer"] == expected_partial_answer
 
     markdown_artifact = json.loads(paths.markdown_excerpts.read_text(encoding="utf-8"))
-    assert markdown_artifact["inspected_cities"] == ["Munich"]
+    assert markdown_artifact["inspected_cities"] == ["munich"]
     assert markdown_artifact["excerpt_count"] == 1
     artifact_excerpt = markdown_artifact["excerpts"][0]
     assert "quote" in artifact_excerpt

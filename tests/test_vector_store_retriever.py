@@ -35,6 +35,7 @@ def test_as_markdown_documents_maps_required_fields() -> None:
         {
             "path": "documents/Munich.md",
             "city_name": "Munich",
+            "city_key": "munich",
             "content": "## Initiative\nEvidence block",
             "chunk_id": "munich-1",
             "distance": "0.231234",
@@ -74,12 +75,13 @@ def test_retrieve_chunks_for_queries_applies_distance_floor_and_neighbor_expansi
     class _FakeStore:
         def query_by_embedding(self, query_embeddings, n_results, where):
             del query_embeddings
-            assert where == {"city_name": "Munich"}
+            assert where == {"city_key": "munich"}
             return {
                 "ids": [["chunk-10", "chunk-11", "chunk-12"]],
                 "metadatas": [[
                     {
                         "city_name": "Munich",
+                        "city_key": "munich",
                         "raw_text": "primary chunk 10",
                         "source_path": "documents/Munich.md",
                         "heading_path": "H1",
@@ -88,6 +90,7 @@ def test_retrieve_chunks_for_queries_applies_distance_floor_and_neighbor_expansi
                     },
                     {
                         "city_name": "Munich",
+                        "city_key": "munich",
                         "raw_text": "primary chunk 11",
                         "source_path": "documents/Munich.md",
                         "heading_path": "H1",
@@ -96,6 +99,7 @@ def test_retrieve_chunks_for_queries_applies_distance_floor_and_neighbor_expansi
                     },
                     {
                         "city_name": "Munich",
+                        "city_key": "munich",
                         "raw_text": "too far chunk 12",
                         "source_path": "documents/Munich.md",
                         "heading_path": "H1",
@@ -128,6 +132,7 @@ def test_retrieve_chunks_for_queries_applies_distance_floor_and_neighbor_expansi
                 metadatas.append(
                     {
                         "city_name": "Munich",
+                        "city_key": "munich",
                         "raw_text": "neighbor chunk 9",
                         "source_path": "documents/Munich.md",
                         "heading_path": "H1",
@@ -140,6 +145,7 @@ def test_retrieve_chunks_for_queries_applies_distance_floor_and_neighbor_expansi
                 metadatas.append(
                     {
                         "city_name": "Munich",
+                        "city_key": "munich",
                         "raw_text": "neighbor chunk 11",
                         "source_path": "documents/Munich.md",
                         "heading_path": "H1",
@@ -191,12 +197,13 @@ def test_retrieve_chunks_for_queries_falls_back_to_top_n_when_no_chunks_pass_dis
         def query_by_embedding(self, query_embeddings, n_results, where):
             del query_embeddings
             assert n_results == 3
-            assert where == {"city_name": "Munich"}
+            assert where == {"city_key": "munich"}
             return {
                 "ids": [["chunk-1", "chunk-2"]],
                 "metadatas": [[
                     {
                         "city_name": "Munich",
+                        "city_key": "munich",
                         "raw_text": "fallback chunk 1",
                         "source_path": "documents/Munich.md",
                         "heading_path": "H1",
@@ -205,6 +212,7 @@ def test_retrieve_chunks_for_queries_falls_back_to_top_n_when_no_chunks_pass_dis
                     },
                     {
                         "city_name": "Munich",
+                        "city_key": "munich",
                         "raw_text": "fallback chunk 2",
                         "source_path": "documents/Munich.md",
                         "heading_path": "H1",
@@ -256,12 +264,13 @@ def test_retrieve_chunks_for_queries_tops_up_when_too_few_chunks_pass_distance(
         def query_by_embedding(self, query_embeddings, n_results, where):
             del query_embeddings
             assert n_results == 3
-            assert where == {"city_name": "Munich"}
+            assert where == {"city_key": "munich"}
             return {
                 "ids": [["chunk-10", "chunk-11", "chunk-12"]],
                 "metadatas": [[
                     {
                         "city_name": "Munich",
+                        "city_key": "munich",
                         "raw_text": "pass chunk 10",
                         "source_path": "documents/Munich.md",
                         "heading_path": "H1",
@@ -270,6 +279,7 @@ def test_retrieve_chunks_for_queries_tops_up_when_too_few_chunks_pass_distance(
                     },
                     {
                         "city_name": "Munich",
+                        "city_key": "munich",
                         "raw_text": "top-up chunk 11",
                         "source_path": "documents/Munich.md",
                         "heading_path": "H1",
@@ -278,6 +288,7 @@ def test_retrieve_chunks_for_queries_tops_up_when_too_few_chunks_pass_distance(
                     },
                     {
                         "city_name": "Munich",
+                        "city_key": "munich",
                         "raw_text": "top-up chunk 12",
                         "source_path": "documents/Munich.md",
                         "heading_path": "H1",
@@ -331,12 +342,13 @@ def test_retrieve_chunks_for_queries_uses_manifest_cities_when_not_selected(
     class _FakeStore:
         def query_by_embedding(self, query_embeddings, n_results, where):
             del query_embeddings, n_results
-            assert where == {"city_name": "Munich"}
+            assert where == {"city_key": "munich"}
             return {
                 "ids": [["chunk-1"]],
                 "metadatas": [[
                     {
                         "city_name": "Munich",
+                        "city_key": "munich",
                         "raw_text": "manifest city chunk",
                         "source_path": "documents/Munich.md",
                         "heading_path": "H1",
@@ -370,7 +382,7 @@ def test_retrieve_chunks_for_queries_uses_manifest_cities_when_not_selected(
     )
 
     assert [chunk.chunk_id for chunk in chunks] == ["chunk-1"]
-    assert meta["cities"] == ["Munich"]
+    assert meta["cities"] == ["munich"]
 
 
 def test_retrieve_chunks_for_queries_fails_fast_when_manifest_missing(

@@ -322,7 +322,7 @@ def test_api_run_filters_markdown_by_selected_cities(
         selected_cities: list[str] | None = None,
     ) -> RunPaths:
         assert run_id is not None
-        assert selected_cities == ["Berlin"]
+        assert selected_cities == ["berlin"]
         captured_files.extend(
             sorted(path.name for path in config.markdown_dir.rglob("*.md"))
         )

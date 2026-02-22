@@ -5,6 +5,7 @@ from pathlib import Path
 from typing import Callable
 
 from backend.modules.vector_store.manifest import build_chunk_id, compute_content_hash
+from backend.utils.city_normalization import normalize_city_key
 from backend.utils.config import AppConfig, MarkdownResearcherConfig
 from backend.utils.tokenization import count_tokens, chunk_text, get_max_input_tokens
 
@@ -39,7 +40,7 @@ def _resolve_chunk_tokens(config: MarkdownResearcherConfig) -> int:
 def split_documents_by_city(
     documents: list[dict[str, object]],
 ) -> dict[str, list[dict[str, object]]]:
-    """Group documents by the precomputed ``city_name`` key.
+    """Group documents by normalized ``city_key``.
 
     Note:
     - City identity is intentionally based on filename stem (set by
@@ -49,11 +50,15 @@ def split_documents_by_city(
     """
     by_city: dict[str, list[dict[str, object]]] = {}
     for doc in documents:
-        raw_city = doc.get("city_name", "unknown")
-        city_name = str(raw_city).strip() or "unknown"
-        if city_name not in by_city:
-            by_city[city_name] = []
-        by_city[city_name].append(doc)
+        raw_city_key = doc.get("city_key")
+        if isinstance(raw_city_key, str) and raw_city_key.strip():
+            city_key = normalize_city_key(raw_city_key)
+        else:
+            raw_city = doc.get("city_name", "unknown")
+            city_key = normalize_city_key(str(raw_city)) or "unknown"
+        if city_key not in by_city:
+            by_city[city_key] = []
+        by_city[city_key].append(doc)
     return by_city
 
 
@@ -111,6 +116,7 @@ def load_markdown_documents(
             logger.warning("Skipping large markdown file: %s", path)
             continue
         city_name = path.stem
+        city_key = normalize_city_key(city_name)
         content = path.read_text(encoding="utf-8")
         source_path = _chunk_source_path(path, project_root)
         chunks = chunk_text(content, max_chunk_tokens, config.chunk_overlap_tokens)
@@ -123,6 +129,7 @@ def load_markdown_documents(
             entry = {
                 "path": str(path),
                 "city_name": city_name,
+                "city_key": city_key,
                 "content": chunk,
                 "chunk_id": chunk_id,
                 "chunk_index": chunk_index,

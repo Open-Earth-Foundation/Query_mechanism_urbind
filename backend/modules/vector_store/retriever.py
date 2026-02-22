@@ -7,6 +7,7 @@ from backend.modules.vector_store.chroma_store import ChromaStore
 from backend.modules.vector_store.indexer import OpenAIEmbeddingProvider
 from backend.modules.vector_store.manifest import load_manifest
 from backend.modules.vector_store.models import RetrievedChunk
+from backend.utils.city_normalization import normalize_city_key, normalize_city_keys
 from backend.utils.config import AppConfig
 
 
@@ -27,25 +28,12 @@ def _normalize_queries(queries: list[str]) -> list[str]:
 
 
 def _normalize_cities(cities: list[str] | None) -> list[str]:
-    """Normalize and de-duplicate city names while preserving order."""
-    if not cities:
-        return []
-    normalized: list[str] = []
-    seen: set[str] = set()
-    for city in cities:
-        candidate = city.strip()
-        if not candidate:
-            continue
-        key = candidate.casefold()
-        if key in seen:
-            continue
-        seen.add(key)
-        normalized.append(candidate)
-    return normalized
+    """Normalize and de-duplicate city names to internal city keys."""
+    return normalize_city_keys(cities)
 
 
-def _load_manifest_cities(config: AppConfig) -> list[str]:
-    """Load and validate city names from the vector-store manifest."""
+def _load_manifest_cities(config: AppConfig) -> dict[str, str]:
+    """Load and validate city keys from the vector-store manifest."""
     manifest_path = config.vector_store.index_manifest_path
     if not manifest_path.exists():
         raise FileNotFoundError(
@@ -59,19 +47,19 @@ def _load_manifest_cities(config: AppConfig) -> list[str]:
             "Vector store manifest has no indexed files. "
             "Build or update the index before retrieval."
         )
-    cities = sorted(
-        {
-            Path(str(source_path)).stem.strip()
-            for source_path in files
-            if Path(str(source_path)).stem.strip()
-        }
-    )
-    if not cities:
+    city_display_by_key: dict[str, str] = {}
+    for source_path in files:
+        display_name = Path(str(source_path)).stem.strip()
+        city_key = normalize_city_key(display_name)
+        if not city_key:
+            continue
+        city_display_by_key.setdefault(city_key, display_name)
+    if not city_display_by_key:
         raise ValueError(
             "Vector store manifest does not include any city files. "
             "Build or update the index before retrieval."
         )
-    return cities
+    return city_display_by_key
 
 
 def _embed_queries(queries: list[str], config: AppConfig) -> dict[str, list[float]]:
@@ -114,8 +102,11 @@ def _to_retrieved_chunk(row: dict[str, Any]) -> RetrievedChunk:
     """Convert one query row into RetrievedChunk."""
     metadata = row["metadata"]
     distance_value = float(row["distance"])
+    city_name = str(metadata.get("city_name", "")).strip()
+    if not city_name:
+        city_name = str(metadata.get("city_key", "")).strip()
     return RetrievedChunk(
-        city_name=str(metadata.get("city_name", "")),
+        city_name=city_name,
         raw_text=str(metadata.get("raw_text", "")),
         source_path=str(metadata.get("source_path", "")),
         heading_path=str(metadata.get("heading_path", "")),
@@ -130,23 +121,27 @@ def _to_retrieved_chunk(row: dict[str, Any]) -> RetrievedChunk:
     )
 
 
-def _resolve_city_list(config: AppConfig, selected_cities: list[str] | None) -> list[str]:
-    """Resolve retrieval city list with manifest-backed fail-fast validation."""
-    manifest_cities = _load_manifest_cities(config)
+def _resolve_city_list(
+    config: AppConfig,
+    selected_cities: list[str] | None,
+) -> tuple[list[str], dict[str, str]]:
+    """Resolve retrieval city keys with manifest-backed fail-fast validation."""
+    manifest_city_display_by_key = _load_manifest_cities(config)
     normalized = _normalize_cities(selected_cities)
     if not normalized:
-        return manifest_cities
+        city_keys = sorted(manifest_city_display_by_key.keys())
+        return city_keys, manifest_city_display_by_key
 
-    manifest_keys = {city.casefold() for city in manifest_cities}
+    manifest_keys = set(manifest_city_display_by_key.keys())
     missing_cities = [
-        city for city in normalized if city.casefold() not in manifest_keys
+        city for city in normalized if city not in manifest_keys
     ]
     if missing_cities:
         raise ValueError(
             "Selected cities are not indexed in vector store manifest: "
             f"{', '.join(missing_cities)}. Build/update the index or adjust selected cities."
         )
-    return normalized
+    return normalized, manifest_city_display_by_key
 
 
 def _passes_distance_threshold(distance: float, max_distance: float | None) -> bool:
@@ -159,7 +154,7 @@ def _passes_distance_threshold(distance: float, max_distance: float | None) -> b
 def _retrieve_for_city_query(
     store: ChromaStore,
     query_embedding: list[float],
-    city_name: str,
+    city_key: str,
     fallback_min_chunks_per_city_query: int,
     max_chunks_per_city_query: int,
     max_distance: float | None,
@@ -169,7 +164,7 @@ def _retrieve_for_city_query(
     payload = store.query_by_embedding(
         query_embeddings=[query_embedding],
         n_results=candidate_n_results,
-        where={"city_name": city_name},
+        where={"city_key": city_key},
     )
     rows = _extract_query_rows(payload)
     passing = [
@@ -236,15 +231,17 @@ def _expand_neighbors(
         if not isinstance(metadata, dict):
             continue
         source_path = str(metadata.get("source_path", "")).strip()
-        city_name = str(metadata.get("city_name", "")).strip()
+        city_key = str(metadata.get("city_key", "")).strip()
+        if not city_key:
+            city_key = normalize_city_key(str(metadata.get("city_name", "")))
         raw_index = metadata.get("chunk_index")
-        if not source_path or not city_name or not isinstance(raw_index, int):
+        if not source_path or not city_key or not isinstance(raw_index, int):
             continue
 
-        group_key = (city_name, source_path)
+        group_key = (city_key, source_path)
         seeds_by_group.setdefault(group_key, []).append(row)
 
-    for (city_name, source_path), grouped_seeds in seeds_by_group.items():
+    for (city_key, source_path), grouped_seeds in seeds_by_group.items():
         required_indices: set[int] = set()
         for seed in grouped_seeds:
             seed_metadata = seed.get("metadata", {})
@@ -264,7 +261,7 @@ def _expand_neighbors(
         payload = store.get(
             where={
                 "$and": [
-                    {"city_name": city_name},
+                    {"city_key": city_key},
                     {"source_path": source_path},
                     {"chunk_index": {"$in": sorted(required_indices)}},
                 ]
@@ -335,9 +332,9 @@ def retrieve_chunks_for_queries(
     """Retrieve chunks across cities and multiple aligned queries."""
     del docs_dir
     normalized_queries = _normalize_queries(queries)
-    cities = _resolve_city_list(config, selected_cities)
-    if not normalized_queries or not cities:
-        return [], {"queries": normalized_queries, "cities": cities, "per_city": []}
+    city_keys, city_display_by_key = _resolve_city_list(config, selected_cities)
+    if not normalized_queries or not city_keys:
+        return [], {"queries": normalized_queries, "cities": city_keys, "per_city": []}
 
     fallback_min_chunks_per_city_query = max(
         config.vector_store.retrieval_fallback_min_chunks_per_city_query, 1
@@ -355,7 +352,8 @@ def retrieve_chunks_for_queries(
 
     rows_by_id: dict[str, dict[str, Any]] = {}
     per_city_stats: list[dict[str, Any]] = []
-    for city_name in cities:
+    for city_key in city_keys:
+        city_name = city_display_by_key.get(city_key, city_key)
         city_rows: dict[str, dict[str, Any]] = {}
         query_stats: list[dict[str, Any]] = []
         for index, query_text in enumerate(normalized_queries, start=1):
@@ -363,7 +361,7 @@ def retrieve_chunks_for_queries(
             rows = _retrieve_for_city_query(
                 store=store,
                 query_embedding=query_embeddings[query_text],
-                city_name=city_name,
+                city_key=city_key,
                 fallback_min_chunks_per_city_query=fallback_min_chunks_per_city_query,
                 max_chunks_per_city_query=max_chunks_per_city_query,
                 max_distance=config.vector_store.retrieval_max_distance,
@@ -383,6 +381,7 @@ def retrieve_chunks_for_queries(
         )
         per_city_stats.append(
             {
+                    "city_key": city_key,
                 "city_name": city_name,
                 "retrieved_unique_chunks": len(city_rows),
                 "query_stats": query_stats,
@@ -404,10 +403,13 @@ def retrieve_chunks_for_queries(
         selected: list[RetrievedChunk] = []
         counts: dict[str, int] = {}
         for chunk in chunks:
-            current = counts.get(chunk.city_name, 0)
+            city_key = normalize_city_key(
+                str(chunk.metadata.get("city_key", "")).strip() or chunk.city_name
+            )
+            current = counts.get(city_key, 0)
             if current >= max_chunks_per_city:
                 continue
-            counts[chunk.city_name] = current + 1
+            counts[city_key] = current + 1
             selected.append(chunk)
         chunks = selected
 
@@ -415,7 +417,7 @@ def retrieve_chunks_for_queries(
         chunks,
         {
             "queries": normalized_queries,
-            "cities": cities,
+            "cities": city_keys,
             "per_city": per_city_stats,
             "max_distance": config.vector_store.retrieval_max_distance,
             "fallback_min_chunks_per_city_query": fallback_min_chunks_per_city_query,
@@ -437,10 +439,17 @@ def as_markdown_documents(chunks: list[RetrievedChunk]) -> list[dict[str, object
     for chunk in chunks:
         chunk_index = chunk.metadata.get("chunk_index")
         resolved_chunk_index = chunk_index if isinstance(chunk_index, int) else None
+        city_key = chunk.metadata.get("city_key")
+        resolved_city_key = (
+            str(city_key).strip()
+            if isinstance(city_key, str) and str(city_key).strip()
+            else normalize_city_key(chunk.city_name)
+        )
         documents.append(
             {
                 "path": chunk.source_path,
                 "city_name": chunk.city_name,
+                "city_key": resolved_city_key,
                 "content": chunk.raw_text,
                 "chunk_id": chunk.chunk_id,
                 "distance": f"{chunk.distance:.6f}",
