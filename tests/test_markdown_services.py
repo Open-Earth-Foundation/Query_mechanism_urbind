@@ -57,11 +57,11 @@ def test_load_markdown_documents_adds_stable_chunk_ids(tmp_path: Path) -> None:
 
 def test_build_city_batches_respects_city_and_limits() -> None:
     documents = [
-        {"city_name": "Leipzig", "chunk_id": "l1", "content": "aa"},
-        {"city_name": "Leipzig", "chunk_id": "l2", "content": "bbb"},
-        {"city_name": "Leipzig", "chunk_id": "l3", "content": "cccc"},
-        {"city_name": "Munich", "chunk_id": "m1", "content": "aa"},
-        {"city_name": "Munich", "chunk_id": "m2", "content": "bbb"},
+        {"city_name": "Leipzig", "city_key": "leipzig", "chunk_id": "l1", "content": "aa"},
+        {"city_name": "Leipzig", "city_key": "leipzig", "chunk_id": "l2", "content": "bbb"},
+        {"city_name": "Leipzig", "city_key": "leipzig", "chunk_id": "l3", "content": "cccc"},
+        {"city_name": "Munich", "city_key": "munich", "chunk_id": "m1", "content": "aa"},
+        {"city_name": "Munich", "city_key": "munich", "chunk_id": "m2", "content": "bbb"},
     ]
     by_city = split_documents_by_city(documents)
 
@@ -73,14 +73,7 @@ def test_build_city_batches_respects_city_and_limits() -> None:
     )
 
     for city_key, _batch_index, batch in batches:
-        assert all(
-            (
-                str(doc.get("city_key", "")).strip().lower()
-                or str(doc.get("city_name", "")).strip().lower()
-            )
-            == city_key
-            for doc in batch
-        )
+        assert all(str(doc.get("city_key", "")).strip().lower() == city_key for doc in batch)
         assert len(batch) <= 2
         assert sum(len(str(doc["content"])) for doc in batch) <= 5
 
@@ -90,9 +83,9 @@ def test_build_city_batches_respects_city_and_limits() -> None:
 
 def test_build_city_batches_keeps_oversized_chunk_singleton() -> None:
     documents = [
-        {"city_name": "Leipzig", "chunk_id": "l1", "content": "small"},
-        {"city_name": "Leipzig", "chunk_id": "l2", "content": "oversized"},
-        {"city_name": "Leipzig", "chunk_id": "l3", "content": "tiny"},
+        {"city_name": "Leipzig", "city_key": "leipzig", "chunk_id": "l1", "content": "small"},
+        {"city_name": "Leipzig", "city_key": "leipzig", "chunk_id": "l2", "content": "oversized"},
+        {"city_name": "Leipzig", "city_key": "leipzig", "chunk_id": "l3", "content": "tiny"},
     ]
     by_city = split_documents_by_city(documents)
 

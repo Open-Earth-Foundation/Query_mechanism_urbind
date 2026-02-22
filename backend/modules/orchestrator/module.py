@@ -400,15 +400,9 @@ def run_pipeline(
             )
         inspected_cities = sorted(
             {
-                (
-                    str(document.get("city_key", "")).strip()
-                    or str(document.get("city_name", "")).strip()
-                )
+                str(document.get("city_key", "")).strip()
                 for document in markdown_chunks
-                if (
-                    str(document.get("city_key", "")).strip()
-                    or str(document.get("city_name", "")).strip()
-                )
+                if str(document.get("city_key", "")).strip()
             }
         )
         markdown_bundle["inspected_cities"] = inspected_cities

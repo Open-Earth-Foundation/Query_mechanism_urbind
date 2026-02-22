@@ -103,8 +103,6 @@ def _to_retrieved_chunk(row: dict[str, Any]) -> RetrievedChunk:
     metadata = row["metadata"]
     distance_value = float(row["distance"])
     city_name = str(metadata.get("city_name", "")).strip()
-    if not city_name:
-        city_name = str(metadata.get("city_key", "")).strip()
     return RetrievedChunk(
         city_name=city_name,
         raw_text=str(metadata.get("raw_text", "")),
@@ -222,7 +220,7 @@ def _expand_neighbors(
 ) -> None:
     """Expand retrieval context by adding neighboring chunks from same file.
 
-    Uses one batched Chroma ``get`` per (city_name, source_path) group.
+    Uses one batched Chroma ``get`` per (city_key, source_path) group.
     """
     seed_rows = list(rows_by_id.values())
     seeds_by_group: dict[tuple[str, str], list[dict[str, Any]]] = {}
@@ -232,8 +230,6 @@ def _expand_neighbors(
             continue
         source_path = str(metadata.get("source_path", "")).strip()
         city_key = str(metadata.get("city_key", "")).strip()
-        if not city_key:
-            city_key = normalize_city_key(str(metadata.get("city_name", "")))
         raw_index = metadata.get("chunk_index")
         if not source_path or not city_key or not isinstance(raw_index, int):
             continue
@@ -403,9 +399,7 @@ def retrieve_chunks_for_queries(
         selected: list[RetrievedChunk] = []
         counts: dict[str, int] = {}
         for chunk in chunks:
-            city_key = normalize_city_key(
-                str(chunk.metadata.get("city_key", "")).strip() or chunk.city_name
-            )
+            city_key = str(chunk.metadata.get("city_key", "")).strip()
             current = counts.get(city_key, 0)
             if current >= max_chunks_per_city:
                 continue
@@ -440,11 +434,9 @@ def as_markdown_documents(chunks: list[RetrievedChunk]) -> list[dict[str, object
         chunk_index = chunk.metadata.get("chunk_index")
         resolved_chunk_index = chunk_index if isinstance(chunk_index, int) else None
         city_key = chunk.metadata.get("city_key")
-        resolved_city_key = (
-            str(city_key).strip()
-            if isinstance(city_key, str) and str(city_key).strip()
-            else normalize_city_key(chunk.city_name)
-        )
+        if not isinstance(city_key, str) or not city_key.strip():
+            raise ValueError("Retrieved chunk is missing required metadata.city_key.")
+        resolved_city_key = str(city_key).strip()
         documents.append(
             {
                 "path": chunk.source_path,

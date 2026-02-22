@@ -7,7 +7,7 @@ Inputs:
   - --chunk-id: Show one specific chunk by chunk_id.
   - --min-distance: Filter chunks by minimum distance.
   - --max-distance: Filter chunks by maximum distance.
-  - --city: Filter by city_name.
+  - --city: Filter by normalized city key/name (case-insensitive).
   - --limit: Maximum chunks to show (default: 10).
   - --show-content: Include full raw_text content (default: true).
   - --config: Path to llm_config.yaml (default: llm_config.yaml).
@@ -142,10 +142,7 @@ def main() -> None:
         filtered_chunks = [
             c
             for c in filtered_chunks
-            if normalize_city_key(
-                str(c.get("city_key", "")).strip() or str(c.get("city_name", "")).strip()
-            )
-            == requested_city_key
+            if normalize_city_key(str(c.get("city_key", "")).strip()) == requested_city_key
         ]
     if args.min_distance is not None:
         filtered_chunks = [

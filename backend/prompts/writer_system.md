@@ -27,7 +27,7 @@ The tool argument must match `WriterOutput`:
 
 Content quality requirements:
 - Always begin with this structured evidence header (each item must be on a separate line):
-  - `Files inspected: <comma-separated city names>` using `context_bundle.markdown.inspected_cities` (if missing/empty, write `none`).
+  - `Files inspected: <comma-separated city identifiers>` using `context_bundle.markdown.inspected_cities` (if missing/empty, write `none`). These are normalized backend city keys (for example `munich`).
   - `Extracted excerpts: <number>` using `context_bundle.markdown.excerpt_count` (treat missing/invalid as `0`).
   - `Retrieval mode: <mode>` using `context_bundle.markdown.retrieval_mode` (default `standard_chunking`).
   - `Retrieval queries used: <query1 | query2 | query3>` using `context_bundle.markdown.retrieval_queries` (if missing/empty, write `none`).

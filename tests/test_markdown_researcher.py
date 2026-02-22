@@ -43,11 +43,13 @@ def test_markdown_returns_partial_success_with_city_failure_markers(
         {
             "path": "A.md",
             "city_name": "A",
+            "city_key": "a",
             "content": "A content",
         },
         {
             "path": "B.md",
             "city_name": "B",
+            "city_key": "b",
             "content": "B content",
         },
     ]
@@ -91,6 +93,7 @@ def test_markdown_returns_success_when_all_batches_hit_max_turns(
         {
             "path": "OnlyCity.md",
             "city_name": "OnlyCity",
+            "city_key": "onlycity",
             "content": "content",
         }
     ]
@@ -122,24 +125,28 @@ def test_markdown_payload_batches_keep_city_chunk_integrity(
         {
             "path": "A.md",
             "city_name": "A",
+            "city_key": "a",
             "content": "alpha",
             "chunk_id": "a1",
         },
         {
             "path": "A.md",
             "city_name": "A",
+            "city_key": "a",
             "content": "beta",
             "chunk_id": "a2",
         },
         {
             "path": "A.md",
             "city_name": "A",
+            "city_key": "a",
             "content": "gamma",
             "chunk_id": "a3",
         },
         {
             "path": "B.md",
             "city_name": "B",
+            "city_key": "b",
             "content": "delta",
             "chunk_id": "b1",
         },

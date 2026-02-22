@@ -51,11 +51,11 @@ def split_documents_by_city(
     by_city: dict[str, list[dict[str, object]]] = {}
     for doc in documents:
         raw_city_key = doc.get("city_key")
-        if isinstance(raw_city_key, str) and raw_city_key.strip():
-            city_key = normalize_city_key(raw_city_key)
-        else:
-            raw_city = doc.get("city_name", "unknown")
-            city_key = normalize_city_key(str(raw_city)) or "unknown"
+        if not isinstance(raw_city_key, str) or not raw_city_key.strip():
+            raise ValueError("Document is missing required city_key.")
+        city_key = normalize_city_key(raw_city_key)
+        if not city_key:
+            raise ValueError("Document city_key resolves to an empty value.")
         if city_key not in by_city:
             by_city[city_key] = []
         by_city[city_key].append(doc)

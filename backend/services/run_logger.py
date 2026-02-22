@@ -390,15 +390,9 @@ class RunLogger:
         )
         found = sorted(
             {
-                (
-                    str(doc.get("city_key", "")).strip()
-                    or str(doc.get("city_name", "")).strip()
-                )
+                str(doc.get("city_key", "")).strip()
                 for doc in markdown_chunks
-                if (
-                    str(doc.get("city_key", "")).strip()
-                    or str(doc.get("city_name", "")).strip()
-                )
+                if str(doc.get("city_key", "")).strip()
             }
         )
         file_count = len(

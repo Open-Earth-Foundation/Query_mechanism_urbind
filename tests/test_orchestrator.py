@@ -563,6 +563,7 @@ def test_run_pipeline_vector_store_enabled_uses_retriever(
                     block_type="paragraph",
                     distance=0.111111,
                     chunk_id="chunk-1",
+                    metadata={"city_key": "munich"},
                 )
             ],
             {"queries": queries, "per_city": []},

@@ -5,7 +5,7 @@ Inputs:
 - CLI args:
   - --persist-path: Chroma persistence directory override.
   - --collection: Chroma collection name override.
-  - --city: Filter by city_name.
+  - --city: Filter by normalized city key/name (case-insensitive).
   - --where: Simple metadata filter key=value.
   - --contains: Client-side text filter against raw_text.
   - --show-id: Show one specific chunk by chunk id.

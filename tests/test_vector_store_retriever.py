@@ -26,6 +26,7 @@ def test_as_markdown_documents_maps_required_fields() -> None:
             block_type="table",
             distance=0.231234,
             chunk_id="munich-1",
+            metadata={"city_key": "munich"},
         )
     ]
 
