@@ -411,6 +411,16 @@ def run_pipeline(
             }
         )
         markdown_bundle["inspected_cities"] = inspected_cities
+        # Display names for evidence header (e.g. "Aachen" not "aachen")
+        key_to_name: dict[str, str] = {}
+        for document in markdown_chunks:
+            key = str(document.get("city_key", "")).strip()
+            name = document.get("city_name")
+            if key and key not in key_to_name:
+                key_to_name[key] = str(name).strip() if name else key
+        markdown_bundle["inspected_city_names"] = [
+            key_to_name[k] for k in inspected_cities if k in key_to_name
+        ]
         excerpts = markdown_bundle.get("excerpts", [])
         if isinstance(excerpts, list):
             markdown_bundle["excerpt_count"] = len(excerpts)

@@ -23,22 +23,29 @@ You must call tool `submit_writer_output` and pass a JSON object (not a JSON str
 Return only that tool call.
 
 The tool argument must match `WriterOutput`:
+
 - `content` (str): final user-facing markdown answer
 
 Content quality requirements:
-- Always begin with this structured evidence header (each item must be on a separate line):
-  - `Files inspected: <comma-separated city identifiers>` using `context_bundle.markdown.inspected_cities` (if missing/empty, write `none`). These are normalized backend city keys (for example `munich`).
-  - `Extracted excerpts: <number>` using `context_bundle.markdown.excerpt_count` (treat missing/invalid as `0`).
-  - `Retrieval mode: <mode>` using `context_bundle.markdown.retrieval_mode` (default `standard_chunking`).
-  - `Retrieval queries used: <query1 | query2 | query3>` using `context_bundle.markdown.retrieval_queries` (if missing/empty, write `none`).
-  
+
+- Always begin with this structured evidence header. Put each of the four lines on its own line (no concatenation). Use `context_bundle.markdown.inspected_city_names` for display (e.g. Aachen); if missing, fall back to `context_bundle.markdown.inspected_cities`.
+  - Line 1: `Files inspected: <comma-separated city display names>` (e.g. Aachen, Munich).
+  - Line 2: `Extracted excerpts: <number>` from `context_bundle.markdown.excerpt_count` (treat missing/invalid as `0`).
+  - Line 3: `Retrieval mode: <mode>` from `context_bundle.markdown.retrieval_mode` (default `standard_chunking`).
+  - Line 4: `Retrieval queries used:` then list each query from `context_bundle.markdown.retrieval_queries` on its own line (one query per line; if missing/empty, leave blank).
+
   Format example:
+
   ```
   Files inspected: Porto
   Extracted excerpts: 35
   Retrieval mode: vector_store_retrieval
-  Retrieval queries used: compare ev charging porto | porto charging targets timeline | porto retrofit budget metrics
+  Retrieval queries used:
+  Q1: What initiatives and policies does Aachen have to support rooftop solar PV
+  Q2: rooftop solar PV policy incentives subsidies grants permitting building code municipal program installations
+  Q3: rooftop solar PV targets capacity (kW/MW) number of installations timeline 2030 metrics progress reports budget figures
   ```
+
 - Decision text after the header:
   - If `excerpt_count == 0`, do not attempt to answer the question. Clearly state that no relevant evidence was found in the provided sources and that you cannot provide a grounded answer.
   - If `excerpt_count > 0`, include a short line before the answer body stating that the answer is grounded in those excerpts from the listed cities.
@@ -49,10 +56,10 @@ Content quality requirements:
 - For plans/initiatives/policies, explain what, why, how, scope, timelines, targets, and outcomes when available.
 - For missing numeric values, do not estimate; clearly state that exact figures are unavailable.
 - Use clear heading structure and readable paragraphs.
-</output>
+  </output>
 
 <example_output>
 {
-  "content": "# Climate Initiatives in Munich\n\nMunich reports 43 public EV charging points as of 2024 and links this to its broader transport decarbonization program.\n\n## Current Evidence\n\nThe available documents show infrastructure deployment and policy intent, but some implementation details remain incomplete.\n\n## Limitation\n\nSome city batches returned partial markdown extraction results, so coverage may be incomplete for specific sub-programs."
+"content": "# Climate Initiatives in Munich\n\nMunich reports 43 public EV charging points as of 2024 and links this to its broader transport decarbonization program.\n\n## Current Evidence\n\nThe available documents show infrastructure deployment and policy intent, but some implementation details remain incomplete.\n\n## Limitation\n\nSome city batches returned partial markdown extraction results, so coverage may be incomplete for specific sub-programs."
 }
 </example_output>

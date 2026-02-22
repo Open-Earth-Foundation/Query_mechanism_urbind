@@ -324,9 +324,24 @@ Useful flags:
 
 - `--questions-file backend/benchmarks/prompts/retrieval_questions.txt`
 - `--repetitions 2`
+- `--mode vector_store` — run only vector retrieval (no standard chunking). The benchmark runs every question in the questions file; `--repetitions N` runs each question N times per mode (total runs = questions × repetitions × modes).
+
+**Vector-only reproducibility (same query and same revised retrieval queries):** To run the vector strategy multiple times with the exact same question and the exact same refined retrieval queries (e.g. to check outcome stability):
+
+1. Run the pipeline once to get a run with the desired question and cities, e.g. `python -m backend.scripts.run_pipeline --question "What does Aachen do for PV rooftop?" --city Aachen --markdown-path documents`. Note the run id and open `output/<run_id>/research_question.json`.
+2. Create a one-line questions file (e.g. `my_questions.txt`) containing exactly the `original_question` from that run.
+3. Create a query-overrides JSON (e.g. `my_overrides.json`) with one key: the same `original_question` string; value: `{"canonical_research_query": "<from research_question.json>", "retrieval_queries": [<from research_question.json>]}`. You can copy these fields from `research_question.json`.
+4. Run the benchmark in vector-only mode with fixed queries and several repetitions:
+
+   ```
+   python -m backend.scripts.run_retrieval_benchmark --questions-file my_questions.txt --query-overrides my_overrides.json --mode vector_store --repetitions 5 --city Aachen
+   ```
+
+   Each run will use the same refined question and retrieval queries; only retrieval, extraction, and writing are re-executed. Compare `output/benchmarks/<benchmark_id>/runs/vector_store/*/final.md` (and optionally `retrieval.json`, `excerpts.json`) across repetitions.
 
 Benchmark behavior notes:
 
+- The benchmark runs all questions from the questions file (not a single query repeated N times). Run IDs use `rNN` = repetition and `qNN` = question index (e.g. `vector_store_r01_q02` = repetition 1, second question). For identical queries across all runs, use a one-line questions file.
 - The script always loads benchmark env files from `backend/benchmarks/config/`.
 - The benchmark is runtime-only; it does not build/update the vector index.
 - Vector mode uses the existing default Chroma store/collection unless overridden in your main environment.

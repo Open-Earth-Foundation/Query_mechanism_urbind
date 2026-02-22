@@ -1,6 +1,13 @@
 """
 Brief: Benchmark standard chunking versus vector-store retrieval.
 
+Behavior: The benchmark runs every question from the questions file (not a single
+query repeated N times). For each question it runs that question `repetitions`
+times per mode. So total runs = len(questions) * repetitions * len(modes). Run IDs
+use rNN = repetition index and qNN = question index (e.g. vector_store_r01_q02 =
+repetition 1, second question). To get identical queries across all runs, use a
+questions file with only one question.
+
 Inputs:
 - CLI args:
   - --benchmark-id: Optional benchmark id. Defaults to UTC timestamp when omitted.
@@ -10,6 +17,7 @@ Inputs:
   - --questions-file: Newline-delimited benchmark questions file (default: backend/benchmarks/prompts/retrieval_questions.txt).
   - --city: Optional city filter; repeatable.
   - --repetitions: Number of repetitions per question per mode (default: 1).
+  - --mode: Run only these modes; repeatable; choices: standard_chunking, vector_store. Default: both.
   - --use-query-overrides/--no-use-query-overrides: Enable/disable fixed retrieval queries for benchmark stability (default: enabled).
   - --query-overrides: JSON file mapping benchmark question -> canonical query + retrieval queries (default: backend/benchmarks/prompts/retrieval_query_overrides.json).
   - --log-llm-payload/--no-log-llm-payload: Enable/disable full LLM payload logging (default: off).
@@ -26,6 +34,9 @@ Outputs:
 
 Usage (from project root):
 - python -m backend.scripts.run_retrieval_benchmark --city Munster --city Leipzig --city Mannheim
+- python -m backend.scripts.run_retrieval_benchmark --mode vector_store --repetitions 5 --questions-file my_questions.txt --query-overrides my_overrides.json --city Aachen
+- python -m backend.scripts.run_retrieval_benchmark --mode vector_store --repetitions 2
+  (uses default backend/benchmarks/prompts/retrieval_questions.txt and retrieval_query_overrides.json)
 """
 
 from __future__ import annotations
@@ -91,6 +102,12 @@ def parse_args() -> argparse.Namespace:
         help="Repetitions per question per mode.",
     )
     parser.add_argument(
+        "--mode",
+        action="append",
+        choices=["standard_chunking", "vector_store"],
+        help="Benchmark mode(s) to run. Default: both. Repeat to run multiple modes.",
+    )
+    parser.add_argument(
         "--use-query-overrides",
         action=argparse.BooleanOptionalAction,
         default=True,
@@ -122,7 +139,7 @@ def main() -> None:
 
     benchmark_id = args.benchmark_id if args.benchmark_id else _default_benchmark_id()
 
-    mode_configs = [
+    all_mode_configs = [
         BenchmarkModeConfig(
             name="standard_chunking",
             env_files=[DEFAULT_BASE_ENV_FILE, DEFAULT_STANDARD_ENV_FILE],
@@ -132,6 +149,12 @@ def main() -> None:
             env_files=[DEFAULT_BASE_ENV_FILE, DEFAULT_VECTOR_ENV_FILE],
         ),
     ]
+    modes = args.mode or []
+    mode_configs = (
+        [m for m in all_mode_configs if m.name in modes]
+        if modes
+        else all_mode_configs
+    )
 
     report = run_retrieval_strategy_benchmark(
         benchmark_id=benchmark_id,
