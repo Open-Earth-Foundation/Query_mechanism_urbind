@@ -64,6 +64,11 @@ def test_retrieve_chunks_for_queries_applies_distance_floor_and_neighbor_expansi
     tmp_path,
 ) -> None:
     config = _build_test_config()
+    config.vector_store.index_manifest_path = tmp_path / "index_manifest.json"
+    save_manifest(
+        config.vector_store.index_manifest_path,
+        {"files": {"documents/Munich.md": {"file_hash": "h1", "chunk_ids": ["chunk-9", "chunk-10", "chunk-11", "chunk-12"]}}},
+    )
 
     class _FakeStore:
         def query_by_embedding(self, query_embeddings, n_results, where):
@@ -174,6 +179,11 @@ def test_retrieve_chunks_for_queries_falls_back_to_top_n_when_no_chunks_pass_dis
     tmp_path,
 ) -> None:
     config = _build_test_config()
+    config.vector_store.index_manifest_path = tmp_path / "index_manifest.json"
+    save_manifest(
+        config.vector_store.index_manifest_path,
+        {"files": {"documents/Munich.md": {"file_hash": "h1", "chunk_ids": ["chunk-1", "chunk-2"]}}},
+    )
     config.vector_store.retrieval_max_distance = 0.01
 
     class _FakeStore:
@@ -234,6 +244,11 @@ def test_retrieve_chunks_for_queries_tops_up_when_too_few_chunks_pass_distance(
     tmp_path,
 ) -> None:
     config = _build_test_config()
+    config.vector_store.index_manifest_path = tmp_path / "index_manifest.json"
+    save_manifest(
+        config.vector_store.index_manifest_path,
+        {"files": {"documents/Munich.md": {"file_hash": "h1", "chunk_ids": ["chunk-10", "chunk-11", "chunk-12"]}}},
+    )
     config.vector_store.retrieval_max_distance = 0.2
 
     class _FakeStore:
