@@ -18,6 +18,14 @@ spec:
       containers:
         - name: backend
           image: ghcr.io/open-earth-foundation/query_mechanism_urbind-backend:dev
+          # Same securityContext as build-vector-index Job so /data/chroma (and /data/output) are readable.
+          securityContext:
+            runAsUser: 0
+            runAsGroup: 0
+            allowPrivilegeEscalation: false
+            capabilities:
+              add:
+                - DAC_READ_SEARCH
           imagePullPolicy: Always
           ports:
             - containerPort: 8000
@@ -33,10 +41,7 @@ spec:
                   key: OPENROUTER_API_KEY
           volumeMounts:
             - name: output-volume
-              mountPath: /data/output
-            - name: output-volume
-              mountPath: /data/chroma
-              subPath: chroma
+              mountPath: /data
           resources:
             requests:
               cpu: "100m"

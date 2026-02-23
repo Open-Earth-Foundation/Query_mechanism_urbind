@@ -12,6 +12,8 @@ Inputs:
   - --config: Path to llm_config.yaml (default: llm_config.yaml).
 - Env vars:
   - OPENAI_API_KEY or OPENROUTER_API_KEY: key for embeddings when not in dry-run mode.
+  - CHROMA_PERSIST_PATH, INDEX_MANIFEST_PATH (optional): in Kubernetes the build-vector-index Job
+    uses the backend ConfigMap; typically /data/chroma and /data/chroma/index_manifest.json.
 
 Outputs:
 - Chroma collection persisted to disk (unless --dry-run).

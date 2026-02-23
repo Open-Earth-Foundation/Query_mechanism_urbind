@@ -1,6 +1,12 @@
-# One-off Job: build the markdown vector index into the backend PVC (under /data/chroma).
-# The backend deployment uses the same PVC and CHROMA_PERSIST_PATH, so after this Job
-# completes, the running backend will read the index from /data/chroma.
+# One-off Job: build the markdown vector index into the backend PVC at /data/chroma.
+#
+# Setup:
+#   - PVC is mounted once at /data (no subPath), same as the backend deployment.
+#   - Job creates /data/chroma and /data/output if missing (umask 022) then runs
+#     python -m backend.scripts.build_markdown_index (venv from PATH, PYTHONPATH=/app).
+#   - securityContext: runAsUser 0, runAsGroup 0, allowPrivilegeEscalation false,
+#     DAC_READ_SEARCH so the Job can read/write /data. The backend deployment uses
+#     the same securityContext so both pods see the same ownership for /data/chroma.
 #
 # Prerequisites:
 #   - Backend ConfigMap and Secret exist (same as for the backend deployment).
@@ -37,9 +43,8 @@
 #        kubectl get jobs -l app=urbind-query-mechanism-build-vector-index
 #        kubectl logs job/urbind-query-mechanism-build-vector-index -f
 #
-#   3. On success, the vector store is populated at /data/chroma on the PVC. The
-#      backend deployment (if it mounts the same PVC at /data/chroma) will use it
-#      when VECTOR_STORE_ENABLED is true.
+#   3. On success, the vector store is at /data/chroma (same single /data mount as backend).
+#      Restart the backend after: kubectl rollout restart deployment urbind-query-mechanism-backend
 #
 #   4. If the Job fails, get logs from the (kept) failed pod:
 #
@@ -56,6 +61,11 @@
 #        kubectl apply -f k8s/backend-build-vector-index-job.yml -n <namespace>
 #        kubectl delete job urbind-query-mechanism-build-vector-index -n <namespace>
 #
+# Inspect from cluster (check manifest in backend pod):
+#
+#        kubectl exec deployment/urbind-query-mechanism-backend -- ls -la /data/chroma
+#        kubectl exec deployment/urbind-query-mechanism-backend -- test -r /data/chroma/index_manifest.json && echo "exists and readable" || echo "missing or not readable"
+#
 ---
 apiVersion: batch/v1
 kind: Job
@@ -67,16 +77,25 @@ metadata:
 spec:
   ttlSecondsAfterFinished: 86400
   backoffLimit: 0
+  activeDeadlineSeconds: 3600
   template:
     metadata:
       labels:
         app: urbind-query-mechanism-build-vector-index
     spec:
-      # Never: keep the failed pod so logs can be read after failure.
       restartPolicy: Never
+      automountServiceAccountToken: false
       containers:
         - name: build-index
           image: ghcr.io/open-earth-foundation/query_mechanism_urbind-backend:dev
+          # Match backend deployment securityContext so /data/chroma written here is readable by backend.
+          securityContext:
+            runAsUser: 0
+            runAsGroup: 0
+            allowPrivilegeEscalation: false
+            capabilities:
+              add:
+                - DAC_READ_SEARCH
           imagePullPolicy: Always
           envFrom:
             - configMapRef:
@@ -89,22 +108,36 @@ spec:
                 secretKeyRef:
                   name: urbind-query-mechanism-backend-secrets
                   key: OPENROUTER_API_KEY
-          # Shell ensures PYTHONPATH is set before python runs (image may not expose it to child processes).
+          workingDir: /app
           command:
             - sh
             - -c
-            - "export PYTHONPATH=/app && exec python -m backend.scripts.build_markdown_index --docs-dir /app/documents"
+            - |
+              set -eu
+              echo "[job] id:"; id
+              echo "[job] python:"; which python || true; python -V
+
+              umask 022
+              mkdir -p /data/chroma /data/output
+
+              echo "[job] build index"
+              python -m backend.scripts.build_markdown_index --docs-dir /app/documents
+
+              echo "[job] verify manifest"
+              ls -la /data/chroma | head -200 || true
+              test -r /data/chroma/index_manifest.json
+              head -c 200 /data/chroma/index_manifest.json || true
+              echo "[job] done"
           volumeMounts:
             - name: output-volume
-              mountPath: /data/chroma
-              subPath: chroma
+              mountPath: /data
           resources:
             requests:
               cpu: "500m"
-              memory: "512Mi"
+              memory: "2Gi"
             limits:
               cpu: "2000m"
-              memory: "2Gi"
+              memory: "4Gi"
       volumes:
         - name: output-volume
           persistentVolumeClaim:

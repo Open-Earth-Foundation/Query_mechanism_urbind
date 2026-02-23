@@ -655,6 +655,18 @@ Incrementally update existing index:
 python -m backend.scripts.update_markdown_index --docs-dir documents
 ```
 
+**Building the vector index on Kubernetes:** The backend and the one-off build Job share the same PVC mounted once at `/data` (no subPath). Both use the same `securityContext` (runAsUser 0, DAC_READ_SEARCH) so the Job can write `/data/chroma` and the backend can read it. Apply the Job from the repo root (see `k8s/backend-build-vector-index-job.yml` header for full steps):
+
+```bash
+kubectl scale deployment urbind-query-mechanism-backend --replicas=0
+kubectl apply -f k8s/backend-build-vector-index-job.yml
+kubectl logs job/urbind-query-mechanism-build-vector-index -f
+kubectl scale deployment urbind-query-mechanism-backend --replicas=1
+```
+
+Scaling down the backend to 0 ensures no concurrent reads/writes to the vector index.
+Paths on the PVC are `/data/output` (run artifacts) and `/data/chroma` (vector index and manifest). Restart the backend after the Job completes so it picks up the new index.
+
 Inspect indexed chunks:
 
 ```
