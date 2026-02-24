@@ -92,7 +92,7 @@ Table 3. Outputs from the Ideas Canvas from the waste and circular economy works
 Table 4. Impact Pathways of the Municipality of Guimarães (Table B-1.1) ... 243
 Guimarães 2030
 Climate Neutrality Action Plan
-O
+5
 
 # List of figures
 
@@ -107,9 +107,9 @@ Figure 8. How to co-create a portfolio for the Municipality of Guimarães 18
 Figure 9. City boundaries and systems 22
 Figure 10. Baseline Inventory (2019) - Emissions breakdown by sector 23
 Figure 11. Baseline Inventory (2019) - Emissions breakdown by energy source 23
-Figure 12. Baseline Inventory (2019) – energy sectorial flows (MWh). 24
-Figure 13. Baseline Inventory (2019) – energy sectorial flows (%). 24
-Figure 14. Baseline Inventory (BI) vs Economic Model (EM). 25
+Figure 12. Baseline Inventory (2019) – energy sectorial flows (MWh) 24
+Figure 13. Baseline Inventory (2019) – energy sectorial flows (%) 24
+Figure 14. Baseline Inventory (BI) vs Economic Model (EM) 25
 Figure 15. Ten years' journey to climate neutrality: key facts 65
 Figure 16. Zero emissions mobility: How Guimarães is making Public Transport accessible and inclusive for all 68
 Figure 17. Stakeholders mapping and analysis. 92
@@ -646,9 +646,11 @@ A-2.1: List of relevant policies, strategies and regulations
 |  Plan | Local | Guimarães Master Plan - 2015 | Strategic urban planning document that outlines the development and land use policies for the municipality. It provides a framework for guiding urban growth, preserving natural resources, and promoting sustainable development. This Master Plan has a long-term vision as it shapes the municipality's physical development for years to come. Finally, it has also a policy coordination framework aiming at coordinate various policies related to land use, transportation, energy, and environment. | By guiding the planning of the territory, it promotes sustainable urban planning, optimising infrastructures, green areas, protecting heritage, among others. This contributes to climate neutrality through the outline of sustainable land use, transportation planning with the incorporation of transportation policies that prioritise public transport and alternative sustainable transportation modes, provisions and enhancement of green spaces, energy efficiency and building design, renewable energy integration, waste management and |   |
 
 0
-Guimarães 2030 Guimarães Green Transition
-
+Guimarães
+0
+Green Transition
 Climate Neutrality Action Plan
+C
 
 A-2.1: List of relevant policies, strategies and regulations
 
@@ -661,11 +663,12 @@ A-2.1: List of relevant policies, strategies and regulations
 |  Plan | Local | Zero Waste Plan | Address waste management challenges and promote sustainable | A zero-waste plan is crucial to reduce GHG emissions. Minimises waste across |   |
 
 1
-Guimarães 2030 Guimarães 2020 Greer Transition
-
+Guimarães 2030 Guimarães 2020
+Green Transition
 Climate Neutrality Action Plan
+2
 
-A-2.1: List of relevant policies, strategies and regulations
+# A-2.1: List of relevant policies, strategies and regulations
 
 |  Type | Level | Name and Title | Description | Relevance | Need for action  |
 | --- | --- | --- | --- | --- | --- |
@@ -673,8 +676,6 @@ A-2.1: List of relevant policies, strategies and regulations
 |  Plan | Local | Guimarães Action Plan 2018-2021 - Child Friendly City | The Municipality of Guimarães systematically and continuously promotes actions for children and with children. In recent years, several public policy initiatives promoted by and in the municipality of Guimarães have relied on the active participation of children. | A Child Friendly City is relevant when addressing GHG emissions. It promotes sustainable practices in transport, waste green spaces and others reducing pollution. By creating safe and healthy environments, it indirectly contributes to climate neutrality. |   |
 |  Plan | Local | Booklet of best-case practices for Sustainability: Eco-innovation | Encourage good practices in various areas related to sustainable development and environmental protection. The manual covers a wide range of topics and provides practical guidelines and recommendations for individuals, businesses, and organisations to adopt eco-friendly and sustainable behaviours. | It empowers local authorities, businesses, residents, and other stakeholders to adopt sustainable behaviours, technologies and practises that collectively contribute to achieving community carbon neutrality. The content of the handbook can be used as a reference for implementing measures that, not only reduce emissions, but also improve the overall quality of life of residents and promote a more resilient and environmentally aware community. |   |
 |  Plan | Local | Social Development Plan | The plan addresses social challenges and promote the well-being and quality of life of its residents. It covers the | A Social Development Plan for Inclusive Growth is relevant because, by improving access to opportunities, and reducing |   |
-
-2
 Guimarães 2030
 
 Climate Neutrality Action Plan
@@ -745,8 +746,9 @@ Sustainability in Guimarães (GS): Development of projects with the Landscape La
 Guimarães
 0
 Green Transition
-Climate Neutrality Action Plan
-C
+Climate Neutrality Action
+Plan
+7
 
 A-2.1: List of relevant policies, strategies and regulations
 
@@ -755,8 +757,6 @@ A-2.1: List of relevant policies, strategies and regulations
 |  Pact | National | Portuguese Plastics Pact | Platform that aims to create a compromise between the different players in the national plastics value chain, setting ambitious goals and objectives for 2025 with the intention to solve plastic-related problems. | The pact is relevant for municipalities as it promotes the responsible use of plastics, it minimises production and disposal, reducing product embedded emissions. This reduces many environmental impacts contributes to climate change mitigation and encourages more sustainable practices. |   |
 |  Pact | Local | Green City Accord – Clean and Healthy Cities for Europe | Volunteer movement of European cities and their mayors to promote their cities to be more green, clean, and healthy. | Guimarães' decision to join the Green City Accord demonstrates its commitment to aligning with European environmental initiatives, which often play a vital role in advancing climate neutrality goals. In terms of relevancy for climate neutrality, the holistic sustainability approach - green areas, air quality, waste management, and sustainable transport – allows for a multifaceted approach required for achieving climate neutrality. |   |
 |  Pact | Local | European Circular Cities Declaration | Signatories commit to a circular recovery and a more resilient future. | The European circular declaration is relevant in promoting circular economy. By minimising waste and consumption, finding new ways to improve throughout the value chain and lifecycle, it reduces the GHG emissions and contributes to climate neutrality by optimising resources and encouraging sustainable practices at every product/service stage. |   |
-
-7
 Guimarães 2030
 
 Climate Neutrality Action Plan
@@ -789,7 +789,7 @@ A-2.1: List of relevant policies, strategies and regulations
 9
 Guimarães
 0
-Green Transition
+Green transition
 Climate Neutrality Action Plan
 C
 
@@ -801,6 +801,8 @@ A-2.1: List of relevant policies, strategies and regulations
 |  Project | Regional | Greentour: Circular Economy and Sustainable Tourism in the SUDOE region | Improve management methods in the natural and cultural heritage. | It is relevant as it reduces GHG emissions in tourist establishments. It minimises waste, encourages eco-friendly practices, and promotes energy and water efficiency, contributing to climate neutrality and a more responsible and resilient tourism sector. |   |
 |  Project | Regional / Local | Ave, Selho, Vizela para todos | Rehabilitation of the municipality's main body of water. | The project embraces the entire community of Guimarães, which wishes to contribute to the protection of the Ave River as a common natural heritage and extends to other municipalities. The conservation of water resources, the natural heritage of the region, as well the biodiversity within is a must towards the climate neutrality. |   |
 |  Project | National | CApt2: National network for water circularity | Promotes a cooperative and cocreated governance model with water management and circularity policies, bring together citizens, stakeholders, and public authorities. | By promoting collaborative and circular water management, it minimises waste and energy, while involving the community and authorities. This is crucial in reducing GHG emissions and contributes to climate neutrality, water resilience and sustainable resource practices. |   |
+
+0
 Guimarães 2030 Guimarães Green Transition
 
 Climate Neutrality Action Plan
@@ -899,11 +901,9 @@ A-2.1: List of relevant policies, strategies and regulations
 |  Policy | Local | Guimarães 2030 Governance Ecosystem | Reinforces the role of the city as accelerator of green community-led transformation through establishing multidisciplinary, science-based, and participative processes, building bridges between academia, citizens, and political decision-makers. | The policy strengthens the municipality's goal to become climate neutral by promoting collaboration, science-based decision-making, community engagement and inclusive policies. It puts the city as a catalyst for green change - accelerates progress towards climate neutrality and | Mention on Module-C1  |
 
 7
-Guimarães
-0
-Green Transition
+Guimarães 2030
+
 Climate Neutrality Action Plan
-O
 
 A-2.1: List of relevant policies, strategies and regulations
 
@@ -912,13 +912,11 @@ A-2.1: List of relevant policies, strategies and regulations
 |   |  |  |  | promotes a resilient and sustainable future. |   |
 |  Policy | Local | Energy communities | Through the EUCF investment concept, the municipality is embarking on a multi-phase project that aims to foster renewable energy communities, educate citizens about energy transition, install solar panels in public spaces, and develop photovoltaic systems in industrial parks and social housing, all of which collectively contribute to reducing GHG emissions, increasing renewable energy production, and advancing climate neutrality goals. | The establishment of renewable energy communities, improving energy efficiency in public buildings and the use of photovoltaic systems in commercial areas and social housing allows for a more just transition towards a climate neutral municipality. These initiatives contribute to a significant reduction in GHG emissions, an increase in renewable energy production and an overall transition to a more sustainable and climate-neutral urban environment. |   |
 |  Policy | Local | Re-Ruralisation and Eco-villages | The establishment of eco-villages aims, not only to promote renaturation, but also to create projects with greater resilience and lower impact (self-sufficiency, circular economy, and waste management). The project started in 2020 and will be completed in 2027. It includes several phases, such as the creation of a plan for the revitalisation of rural areas, the creation of a dataset of plots and houses to be sold or rented in areas with low population density, subsidies for staying and moving to these areas, | This policy addresses environmental concerns but also creates a foundation for sustainable living, resource management, and community resilience, all of which are vital components of a climate-neutral municipality. Additionally, it deals with a part of the territory that is more vulnerable (rural areas) and incentivises the socio-economic flourishment of these areas in Guimarães. |   |
-
-8
 Guimarães
 0
 Green Transition
 Climate Neutrality Action Plan
-O
+C
 
 A-2.1: List of relevant policies, strategies and regulations
 
@@ -929,7 +927,7 @@ A-2.1: List of relevant policies, strategies and regulations
 |  Policy | Local | Municipal Transport Plan | Concession for regular public passenger transport by the Guimabus company. Currently, the Guimabus fleet has 26 electric buses out of 80, and the aim is to update it until it becomes a 100% electric fleet. | The urban transport plan's focus on electric and potentially hydrogen-powered buses contributes significantly to Guimarães' goal of climate neutrality. It addresses reducing emissions, improving air quality, promoting sustainable transport, technology leadership and energy efficiency. This initiative serves as an outstanding example of how sustainable public transport can be an important driver of a city's efforts towards climate neutrality. |   |
 
 9
-Guimarães 2030 Guimarães Green Transition
+Guimarães 2030
 
 Climate Neutrality Action Plan
 
@@ -984,19 +982,19 @@ A-2.1: List of relevant policies, strategies and regulations
 |  Programme | Regional | Adapt4City: Climate Change Awareness Program in the Quadrilátero Urbano | Implement a concerted and inclusive communication and awareness strategy that promotes environmental and climate literacy in the Quadrilátero Urbano territory. | The programme helps to create a climate-conscious and engaged community that actively supports and participates in the community's climate neutrality efforts. By targeting families, schools, institutions and businesses, the programme addresses multiple dimensions of the community. It also provides community support (participatory and open engagement) and promotes environmental and climate literacy by equipping individuals and organisations with knowledge and skills to effectively contribute to climate neutrality efforts. This holistic approach ensures a |   |
 
 3
-Guimarães 2030
-Green Transition
-Climate Neutrality Action Plan
-4
+Guimarães 2030 Guimarães Green Transition
 
-# A-2.1: List of relevant policies, strategies and regulations
+Climate Neutrality Action Plan
+
+A-2.1: List of relevant policies, strategies and regulations
 
 |  Type | Level | Name and Title | Description | Relevance | Need for action  |
 | --- | --- | --- | --- | --- | --- |
 |   |  |  |  | more comprehensive and integrated approach to achieving climate neutrality. |   |
 |  Programme / Netwwork | National | ClimAdaPT.Local | National network of municipalities to support climate change adaption through humanitarian, inclusive, innovative, and sustainable matters. | Promoting local adaptation to climate change in Portugal is one way to significantly impact municipalities' climate neutrality efforts: Municipalities and other entities are encouraged to engage with their communities; climate change mitigation efforts, creating a comprehensive framework to address both aspects of climate change mitigation; climate change adaptation often includes strategies that align with climate neutrality goals; community resilience; collaboration can extend to joint climate change mitigation projects, resource sharing and knowledge exchange; local innovation; education and awareness; and collective impact. |   |
-|  Programme | National | Agenda 21 Location | Local Agenda 21 encourages local authorities to take initiatives for sustainable development. It recognises that many of the issues and solutions addressed in Agenda 21 relate to local activities and emphasises the crucial role of local authorities in achieving its goals. The establishment of Local Agenda 21 programmes aims to improve sustainability at the local level | Through an integrated approach, the Agenda 21 assumes a holistic approach to sustainable development, considering social, economic and environmental factors. This helped the municipality to identify opportunities to reduce GHG across sectors (energy, transportation, waste management, and land use).
-Local Action is also key for this programme, since it encourages local |   |
+|  Programme | National | Agenda 21 Location | Local Agenda 21 encourages local authorities to take initiatives for sustainable development. It recognises that many of the issues and solutions addressed in Agenda 21 relate to local activities and emphasises the crucial role of local authorities in achieving its goals. The establishment of Local Agenda 21 programmes aims to improve sustainability at the local level | Through an integrated approach, the Agenda 21 assumes a holistic approach to sustainable development, considering social, economic and environmental factors. This helped the municipality to identify opportunities to reduce GHG across sectors (energy, transportation, waste management, and land use). Local Action is also key for this programme, since it encourages local |   |
+
+4
 Guimarães 2030
 
 Climate Neutrality Action Plan
@@ -1386,7 +1384,7 @@ Climate Neutrality Action Plan
 
 # 3.3 Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
 
-Module A-3 "Systemic Barriers and Opportunities to 2030 Climate Neutrality" 2030* documents the expansion of the stakeholder mapping conducted in the previous section, which led to the identification of systemic barriers and opportunities.
+Module A-3 “Systemic Barriers and Opportunities to 2030 Climate Neutrality” 2030* documents the expansion of the stakeholder mapping conducted in the previous section, which led to the identification of systemic barriers and opportunities.
 
 It is imperative to emphasise that the Municipality of Guimarães is committed to regularly updating its systems and stakeholder mapping. This commitment stems from the recognition that engaging with stakeholders in the Climate City Contract (CCC) is an ongoing and dynamic process. The municipality aspires to gather as much support as possible for its ambitious goals. Notably, several stakeholders, including companies, organisations, universities, associations, and more, have already demonstrated their commitment to the 2030 Guimarães vision by endorsing the Guimarães' Climate City Pact. This signifies their interest in aligning and actively participating in the CCC, making them noteworthy additions to the stakeholder mapping. These pioneering stakeholders are working alongside with the municipality to advance towards climate neutrality.
 
@@ -2161,10 +2159,10 @@ Climate Neutrality Action Plan
 C
 Industry
 ![img-0.jpeg](img-0.jpeg)
-Guimarães Guimaraes
-Guimarães Guimaraes
-Guimaraes Guimarães
-Guimaraes Guimarães
+Guimarães Guimarães
+Guimarães
+Energy and quality
+Energy &amp; Energy
 5
 Guimarães 2030
 
@@ -2776,8 +2774,7 @@ Guimabus
 CIM do Ave
 Landscape Laboratory of Guimarães  |
 |   |  Action scale and addressed entities | Action scale: this action intends to be implemented on District C and then expand to the territory. Addressed entities: citizens and community in general  |
-|   |  Involved stakeholders | Citizens
-Local businesses, e.g., with increased pedestrian and cycling habits, local businesses, especially those  |
+|   |  Involved stakeholders | Citizens Local businesses, e.g., with increased pedestrian and cycling habits, local businesses, especially those  |
 Guimarães 2030
 
 Climate Neutrality Action Plan
@@ -2830,7 +2827,8 @@ Public Transports of Braga  |
 
 Addressed entities: citizens, Municipality of Guimarães and Braga, CIM do Ave e do Cávado  |
 |   |  Involved stakeholders | Citizens Municipality Guimarães and Municipality of Braga National Ministry of Infrastructure and Housing CIM do Ave e do Cávado  |
-|   | Comments on implementation | It is important to emphasise that this is a long-term action, that involves regional and national actors. Guimarães intends to explore the opportunities to improve the mobility and transportation systems that will connect the municipality with the future High-Speed station in Braga.
+|   | Comments on implementation | It is important to emphasise that this is a long-term action, that involves regional and national actors.
+Guimarães intends to explore the opportunities to improve the mobility and transportation systems that will connect the municipality with the future High-Speed station in Braga.
 
 The Municipality of Guimarães, in collaboration with TRENMO (a spin-off company from University of Porto), emitted studies to support the decision for the interconnectivity of Guimarães with the network High-Speed railway. (For more information about the  |
 Guimarães
@@ -2970,7 +2968,7 @@ B-2.2: Individual action outlines
 |  Implementation | Responsible bodies/person for implementation | Municipality of Guimarães:- Municipal Directorate for Intervention Territory, Environment and Climate Action:- Department of Urban Services and Environment Urban Services Division:- Mobility division.Tratave.ResinorteVITRUS  |
 |   |  Action scale and addressed entities | Action scale: cover the waste collection routes on the municipality.Addressed entities: municipality, waste fleet collection of Guimarães  |
 |   |  Involved stakeholders | Municipality of Guimarães ResinorteVITRUSTratave  |
-|   |  Comments on implementation | The implementation of this action implies the support from the Tratave since it is the entity responsible for the management and operation of the public drainage, purification, and destination of industrial and domestic wastewater from the municipalities of Guimarães, Vizela, Vila Nova de Famalicão, Santo Tirso and Trofa. As such, Tratave would be in charge to create an installation for an aerobic digestion of sludge in wastewater treatment plants.In Portugal the Dourogs company took already the first steps to introduce biomethane (a gas produced from a renewable source that can replace natural gas) and injected into the Portugal gas network.Also, regarding the environmental policy in waste, Portuguese regulations, policies, and plans, (e.g., Roadmap to Carbon Neutrality 2050, and the  |
+|   |  Comments on implementation | The implementation of this action implies the support from the Tratave since it is the entity responsible for the management and operation of the public drainage, purification, and destination of industrial and domestic wastewater from the municipalities of Guimarães, Vizela, Vila Nova de Famalicão, Santo Tirso and Trofa. As such, Tratave would be in charge to create an installation for an aerobic digestion of sludge in wastewater treatment plants.In Portugal the Dourogás company took already the first steps to introduce biomethane (a gas produced from a renewable source that can replace natural gas) and injected into the Portugal gas network.Also, regarding the environmental policy in waste, Portuguese regulations, policies, and plans, (e.g., Roadmap to Carbon Neutrality 2050, and the  |
 Guimarães 2030
 
 Climate Neutrality Action Plan
@@ -3148,7 +3146,7 @@ Climate Neutrality Action Plan
 
 B-2.2: Individual action outlines
 
-|  2nd priority action  |   |   |
+|  2ndpriority action  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | New circular business models  |
 |   |  Action type | Other interventions: business models  |
@@ -3167,7 +3165,7 @@ B-2.2: Individual action outlines
 
 B-2.2: Individual action outlines
 
-|  2nd priority action  |   |   |
+|  2ndpriority action  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | Business symbiosis  |
 |   |  Action type | Other interventions  |
@@ -3180,7 +3178,7 @@ Climate Neutrality Action Plan
 
 B-2.2: Individual action outlines
 
-|  2nd priority action  |   |   |
+|  2ndpriority action  |   |   |
 | --- | --- | --- |
 |   |  | To support businesses in this endeavour, matchmaking and marketplace activities will be implemented alongside other engagement strategies. These activities provide platforms for networking, connect businesses with potential collaborative partners and provide opportunities to secure funding to support their circular economy initiatives.  |
 |  Reference to impact pathway | Field of action | Waste and circular economy  |
@@ -3197,7 +3195,7 @@ B-2.2: Individual action outlines
 
 B-2.2: Individual action outlines
 
-|  2nd priority action  |   |   |
+|  2ndpriority action  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | Green areas  |
 |   |  Action type | Nature-based solutions  |
@@ -3509,7 +3507,7 @@ B-2.2: Individual action outlines
 | --- | --- | --- |
 |  Action outline | Action name | Green hydrogen for Guimarães' industry  |
 |   |  Action type | Technical interventions  |
-|   |  Action description | This action consists in the injection of green hydrogen, locally produced with renewable electricity through electrolyzers (approximately 40 MW of peak power), producing over 45 000 tons of H2/year and achieving a blending ratio of 20% of this renewable gas into the natural gas industrial pipelines.  |
+|   |  Action description | This action consists in the injection of green hydrogen, locally produced with renewable electricity through electrolysers (approximately 40 MW of peak power), producing over 45 000 tons of H2/year and achieving a blending ratio of 20% of this renewable gas into the natural gas industrial pipelines.  |
 |  Reference to impact pathway | Field of action | Industry  |
 |   |  Systemic lever | Technology/infrastructure  |
 |   |  Outcome (according to module B-1.1) | • Guimarães' industries adopt blended options of hydrogen and natural gas.  |
@@ -3583,7 +3581,7 @@ Guimarães industry
 National Government
 Municipality of Guimarães  |
 |   |  Comments on implementation | This action should be implemented by the industry.
-The Municipality of Guimarães is merely a facilitator and does not have authority to obligate industries to implement this action since industries are private entities. Guimarães seeks to inspire industries to explore clean and sustainable energy sources, because industry has a considerable share on the municipality' emissions.
+The Municipality of Guimarães is merely a facilitator and does not have authority to obligate industries to implement this action since industries are private entities. Guimarães seeks to inspire industries to explore clean and sustainable energy sources, because industry has a considerable share on the municipality’ emissions.
 To use biogas (and biomethane) would require several investments that would have to be financially  |
 Guimarães 2030
 
@@ -3751,7 +3749,7 @@ B-2.2: Individual action outlines
 |   |  Action description | The action of the digital twin aims to provide the aspect of technological simulation for the community to be able to predict and plan the response to actions and system implementations before applying solutions in the field. The intention is to use a digital and virtual image that enables data integration, virtual image creation, real-time monitoring, simulation, urban planning and resource management.  |
 |  Reference to impact pathway | Field of action | Cross-cutting (energy systems and built environment)  |
 |   |  Systemic lever | Learning and capabilities  |
-|   |  Outcome (according to module B-1.1) | Collaboration with experts, data collection, and technology integration. Creation of a digital twin model, data integration, simulation, and accessibility.  |
+|   |  Outcome (according to module B-1.1) | • Collaboration with experts, data collection, and technology integration. Creation of a digital twin model, data integration, simulation, and accessibility.  |
 |  Implementation | Responsible bodies/person for implementation | Municipality of Guimarães: - Municipal Directorate for Intervention Territory, Environment and Climate Action: - Energy efficiency department Department of Culture, Economy, and Innovation: - Intelligent Systems Development Division  |
 |   |  Action scale and addressed entities | Action scale: territory of Guimarães Addressed entities: Municipality of Guimarães  |
 |   |  Involved stakeholders | IT and smart cities companies Technology providers and service companies Research and Academic Institutions, e.g., University of Minho City planners Data and analytics experts  |
@@ -3867,25 +3865,27 @@ Climate Neutrality Action Plan
 
 #
 
-| B-3.1: Impact Pathways |
-| --- |
+B-3.1: Impact Pathways
+
 | Entry Points (Actions) | Action/ project | Indicator No. | Indicator name (unit.) |  | Target values |
-|  | 2025 | 2027 |
-|  | transportation modes |  |  |  |  |  |
-| Bundling actions to uptake public transports: Bus Rapid Transit (BRT) and promotion of public transports | Bus Rapid Bundling actions to uptake public transports: Bus Rapid Transit (BRT) and promotion of public transports | 7 | GHG emission from transport (kt CO2equivalent) |  | 3,5 | 7 |
-| 8 | N. of passengers per km per day (number) |  | 25% | 50% |
-| Sustainable delivery services | Pilot project - District C | Sustainable delivery services | 9 | GHG emission from delivery services (ktCO2equivalent) |  | 8 | 12 |
-| Electric mobility shift: private passenger vehicles | Electric mobility shift: private passenger vehicles | 10 | GHG emission from private vehicles (ktCO2equivalent) |  | 2 | 6 |
-| 11 | N. of private electric vehicles |  | 1% | 18% |
-| Electric mobility shift: light goods, and heavy-duty vehicles | Electric mobility shift: light goods, and heavy-duty vehicles | 12 | GHG emission from light goods, and heavy-duty vehicles (ktCO2equivalent) |  | 9 | 15 |
-| Buses green conversion | Buses green conversion | 13 | GHG emission from public buses (ktCO2equivalent) |  | 31% | 50% |
-| Conversion of the urban solid waste collection fleet | Conversion of the urban solid waste collection fleet | 14 | GHG emission from waste collection fleet (ktCO2equivalent) |  | 0,2 | 0,3 |
-| Carpooling and car sharing | Carpooling and car sharing | 15 | GHG emission from carpooling and car sharing (ktCO2equivalent) |  | 1 | 1,5 |
-| Alternative sustainable transportation modes | Pilot project - District C | Alternative sustainable transportation modes | 16 | N. of private vehicles crossing the city (number) |  | N/A | N/A |
-| Bundling actions to uptake public transports: Bus Rapid Transit (BRT) and promotion of public transports | Bus Rapid Bundling actions to uptake public transports: Bus Rapid Transit (BRT) and promotion of public transports |  | N/A | N/A |
-| Carpooling and car sharing | Carpooling and car sharing |  | 1,4 | 1,4 |
+| --- | --- | --- | --- | --- | --- |
+|  | 2025 | 2027 | 2030 |
+|  | transportation modes |  |  |  |  |  |  |
+| Bundling actions to uptake public transports: Bus Rapid Transit (BRT) and promotion of public transports | Bus Rapid Bundling actions to uptake public transports: Bus Rapid Transit (BRT) and promotion of public transports | 7 | GHG emission from transport (kt CO2 equivalent) | 3,5 | 7 | 14 |
+| 8 | N. of passengers per km per day (number) | 25% | 50% | 75% |
+| Sustainable delivery services | Pilot project - District C | Sustainable delivery services | 9 | GHG emission from delivery services (ktCO2 equivalent) | 8 | 12 | 23 |
+| Electric mobility shift: private passenger vehicles | Electric mobility shift: private passenger vehicles | 10 | GHG emission from private vehicles (ktCO2 equivalent) | 2 | 6 | 13 |
+| 11 | N. of private electric vehicles | 1% | 18% | 36% |
+| Electric mobility shift: light goods, and heavy-duty vehicles | Electric mobility shift: light goods, and heavy-duty vehicles | 12 | GHG emission from light goods, and heavy-duty vehicles (ktCO2 equivalent) | 9 | 15 | 20 |
+| Buses green conversion | Buses green conversion | 13 | GHG emission from public buses (ktCO2 equivalent) | 31% | 50% | 100% |
+| Conversion of the urban solid waste collection fleet | Conversion of the urban solid waste collection fleet | 14 | GHG emission from waste collection fleet (ktCO2 equivalent) | 0,2 | 0,3 | 1 |
+| Carpooling and car sharing | Carpooling and car sharing | 15 | GHG emission from carpooling and car sharing (ktCO2 equivalent) | 1 | 1,5 | 3 |
+| Alternative sustainable transportation modes | Pilot project - District C | Alternative sustainable transportation modes | 16 | N. of private vehicles crossing the city (number) | N/A | N/A | N/A |
+| Bundling actions to uptake public transports: Bus Rapid Transit (BRT) and promotion of public transports | Bus Rapid Bundling actions to uptake public transports: Bus Rapid Transit (BRT) and promotion of public transports | N/A | N/A | N/A | N/A |
+| Carpooling and car sharing | Carpooling and car sharing | 1,4 | 1,4 | 1,5 |
 | Waste and circular economy |
-| Biowaste recovery | Pilot project - District C | | 17 | Biowaste collection rate (%) |  | 20% | 40% |
+| Biowaste recovery | Pilot project - District C | | 17 | Biowaste collection rate (%) |  | 20% | 40% | 60% |
+|  | Biowaste collection and storage |  |  |  |  |  |  |
 Guimarães
 0
 0
@@ -3895,21 +3895,21 @@ Climate Neutrality Action Plan
 
 B-3.1: Impact Pathways
 
-| Entry Points (Actions) | Action/ project | Indicator No. | Indicator name (unit.) |  | Target values |
-| --- | --- | --- | --- | --- | --- |
-|  | 2025 | 2027 | 2030 |
-|  | Biowaste upgrade |  |  |  |  |  |  |
+| Entry Points (Actions) | Action/ project | Indicator No. | Indicator name (unit.) | Target values |
+| --- | --- | --- | --- | --- |
+|  |  |  |  | 2025 | 2027 | 2030 |
+|  | Biowaste upgrade |  |  |  |  |  |
 | Undifferentiated urban waste reduction | Pilot project - District C | Undifferentiated urban waste reduction | 18 | Undifferentiated urban waste rate (%) | 55% | 75% | 95% |
 | Waste production reduction | Pilot project - District C | Waste production reduction | 19 | Waste production amount (%) | 20% | 40% | 60% |
 | Recycling upgrade | Pilot project - District C | Recycling upgrade | 20 | Recycling rate (%) | 65% | 80% | 95% |
-| Biowaste recovery | Pilot project - District C | Biowaste upgrade | 21 | GHG emissions from waste per year (ktCO_{2} equivalent) |  | 5 | 8 | 10 |
+| Biowaste recovery | Pilot project - District C | Biowaste upgrade | 21 | GHG emissions from waste per year (ktCO_{2} equivalent) | 5 | 8 | 10 |
 | Undifferentiated urban waste reduction | Pilot project - District C | Undifferentiated urban waste reduction |
 | Waste production reduction | Pilot project - District C | Waste production reduction | 22 |
 | Recycling upgrade | Pilot project - District C | Recycling upgrade | 23 |
-| New circular business models | Pilot project - District C | New circular business models | 24 | New circular city start-ups (number of contracts signed) |  | 65 | 80 | 110 |
-| Business symbiosis | Pilot project - District C | Business symbiosis | 25 | Matchmaking (record of matchmaking activities/pitches) |  | 50 | 100 | 150 |
+| New circular business models | Pilot project - District C | New circular business models | 24 | New circular city start-ups (number of contracts signed) | 65 | 80 | 110 |
+| Business symbiosis | Pilot project - District C | Business symbiosis | 25 | Matchmaking (record of matchmaking activities/pitches) | 50 | 100 | 150 |
 | Green infrastructure and nature-based solutions |
-| Green areas | Pilot project - District C | Green areas | 26 | Negative emissions through natural sinks^{1} |  | N/A | N/A | N/A |
+| Green areas | Pilot project - District C | Green areas | 26 | Negative emissions through natural sinks^{1} | N/A | N/A | N/A |
 | Green belt | Pilot project - District C | Green belt | N/A | N/A | N/A |
 | Biodiversity conservation and restoration | Biodiversity conservation and restoration | 27 | Change in the n. of fauna and flora native species in the city (km restored riparian corridors) | 1 | 35 | 65 |
 
@@ -4081,34 +4081,28 @@ B-3.2: Indicator Metadata
 |  If yes, which NZC impact pathway is it relevant for? | It is expected that the training programme will improve the knowledge and skills of municipal staff in relation to energy efficiency projects, and climate change in general, leading to an improved ability to identify and meet the needs of the community, resulting in more efficient and retrofitting of buildings concerning energy related projects, which in turn will have an impact on the overall performance and effectiveness of municipal staff and on the number of projects (see Module B-1 Climate Neutrality Scenarios and Impact Pathways).  |
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | no  |
 |  Data requirements |   |
-Guimarães
-0
-0
-Unimr Transfion
+Guimarães 2030
 
 Climate Neutrality Action Plan
 
-#
+2
 
-B-3.2: Indicator Metadata
-
-|  Expected data source | Inquiries to municipal staff  |
+|  B-3.2: Indicator Metadata  |   |
 | --- | --- |
+|  Expected data source | Inquiries to municipal staff  |
 |  Expected availability | annually  |
 |  Suggested collection interval | annually  |
-|  References |   |
+|  References  |   |
 |  Deliverables describing the indicator | N/A  |
 |  Other indicator systems using this indicator | Deliverables associated with NZC pilot city programme – District C  |
-
-B-3.2: Indicator Metadata
-
-|  Action name | Guidance for heritage energy efficiency renovation  |
+|  B-3.2: Indicator Metadata  |   |
 | --- | --- |
+|  Action name | Guidance for heritage energy efficiency renovation  |
 |  Indicator Name | Booklet guide on heritage energy efficiency renovation  |
 |  Indicator Unit | # booklet  |
 |  Definition | The indicator refers to the quantification of listed buildings that have undergone a comprehensive energy retrofit as part of the guidance for heritage energy efficiency renovation built on District C. This indicator accounts the creation of the booklet guide for historical buildings regarding energy efficiency practices.  |
 |  Calculation | N/A  |
-|  Indicator Context |   |
+|  Indicator Context  |   |
 |  Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | no  |
 |  If yes, which emission source sectors does it impact? | N/A  |
 |  Does the indicator measure indirect impacts (i.e., co-benefits)? | yes  |
@@ -4116,11 +4110,11 @@ B-3.2: Indicator Metadata
 |  Can the indicator be used for monitoring impact pathways? | yes  |
 |  If yes, which NZC impact pathway is it relevant for? | It is expected that an increase in expertise on heritage conservation and energy efficiency will be achieved at an early stage, which will later translate into an improvement in the energy efficiency of the historic buildings of Guimarães, a challenge faced by the municipality. The impact is to improve the resilience of the historic buildings to climate change and future energy challenges, set a positive example for other cities, promote sustainable practises, and strengthen cultural identity and appreciation for heritage conservation and sustainable development (see Module B-1 Climate Neutrality Scenarios and Impact PathwaysModule B-3 Indicators for Monitoring, Evaluation and Learning).  |
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | no  |
-|  Data requirements |   |
+|  Data requirements  |   |
 |  Expected data source | Municipality of Guimarães, publication records, heritage sites  |
 |  Expected availability | annually  |
 |  Suggested collection interval | annually  |
-|  References |   |
+|  References  |   |
 |  Deliverables describing the indicator | N/A  |
 |  Other indicator systems using this indicator | Deliverables associated with NZC pilot city programme – District C  |
 Guimarães 2030
@@ -4458,22 +4452,18 @@ Plan
 |  References  |   |
 |  Deliverables describing the indicator | N/A  |
 |  Other indicator systems using this indicator | N/A  |
-Guimarães
-0
-0
-Unim
-Climate Neutrality Action
-Plan
-O
+Guimarães 2030
 
-# -3.2: Indicator Metadata
+Climate Neutrality Action Plan
 
-|  Action name | Biowaste recovery  |
+#
+
+|  -3.2: Indicator Metadata  |   |
 | --- | --- |
+|  Action name | Biowaste recovery  |
 |  Indicator Name | Biowaste collection rate  |
 |  Indicator Unit | %  |
-|  Definition | This indicator comes from the pilot city project - District C, more specifically the District C Impact Framework, NZC Pilot Cities Programme. This intervention comes from the District C pilot project of the Municipality of Guimarães, which consists of expand the biowaste recovery that has been ongoing on the municipality. This entails the expansion of the areas at the territory where the biowaste is being collected and the use of the biowaste. To maintain coherence between the CCC and the NZC Pilot Cities Programme, the municipality decided to keep the selected indicator in this case.
-It assesses the progress and effectiveness of the collection of biowaste in Guimarães aimed at improving the collection of biowaste from the waste stream. As bio-waste is organic and decomposable, it can be kept out of landfills and recovered through composting or recycling processes, as well to produce biofuels.  |
+|  Definition | This indicator comes from the pilot city project - District C, more specifically the District C Impact Framework, NZC Pilot Cities Programme. This intervention comes from the District C pilot project of the Municipality of Guimarães, which consists of expand the biowaste recovery that has been ongoing on the municipality. This entails the expansion of the areas at the territory where the biowaste is being collected and the use of the biowaste. To maintain coherence between the CCC and the NZC Pilot Cities Programme, the municipality decided to keep the selected indicator in this case. It assesses the progress and effectiveness of the collection of biowaste in Guimarães aimed at improving the collection of biowaste from the waste stream. As bio-waste is organic and decomposable, it can be kept out of landfills and recovered through composting or recycling processes, as well to produce biofuels.  |
 |  Calculation | To calculate this indicator is necessary to take a reference year (baseline) and access the increase of biowaste collection in the subsequent years.  |
 |  Indicator Context |   |
 |  Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | no  |
@@ -4482,16 +4472,14 @@ It assesses the progress and effectiveness of the collection of biowaste in Guim
 |  If yes, which co-benefit does it measure? | Improved waste management and efficiency  |
 |  Can the indicator be used for monitoring impact pathways? | yes  |
 |  If yes, which NZC impact pathway is it relevant for? | Through the biowaste recovery, Guimarães will be able to repurpose it, and to do a selective collection. This will result in improved waste management and efficiency, create green jobs, as well reduce GHG emissions (see Module B-1 Climate Neutrality Scenarios and Impact Pathways).  |
-|  Is the indicator captured by the existing CDP/SCIS/Covenant of Mayors platforms? | yes  |
+|  Is the indicator captured by the existing CDP/SCIS/ Covenant of Mayors platforms? | yes  |
 |  Data requirements |   |
 |  Expected data source | Data bases from the Municipality of Guimarães, VITRUS, Resinorte  |
 |  Expected availability | annually  |
 |  Suggested collection interval | annually  |
 |  References |   |
-|  Deliverables describing the indicator | Deliverables associated with NZC pilot city programme – District C  |
+|  Deliverables describing the indicator | Deliverables associated with NZC pilot city programme - District C  |
 |  Other indicator systems using this indicator | Undifferentiated urban waste reduction, Waste production reduction, Recycling upgrade  |
-
-2
 Guimarães
 0
 Climate Neutrality Action
@@ -4716,18 +4704,16 @@ It would involve the assessment and calculation of carbon sequestration rate, ca
 Guimarães
 0
 0
-GrÃ³s do Brasil
-(4)
+Unian Turnhout
 Climate Neutrality Action
 Plan
-O
+9
 
-B-3.2: Indicator Metadata
-
-|  Action name | Green belt  |
+|  B-3.2: Indicator Metadata  |   |
 | --- | --- |
+|  Action name | Green belt  |
 |  Indicator Name | Negative emissions through natural sinks  |
-|  Indicator Unit | t CO₂ equivalents / year  |
+|  Indicator Unit | t CO_{2} equivalents / year  |
 |  Definition | This intervention is also from the pilot city project District C, NZC pilot city programme.
 
 It is important to note, that the Municipality of Guimarães for the interventions under the Greenhouse Gas domain, and more specifically from the Carbon Capture and Residual Emissions sub-domain will opt for a different indicator from the one that was selected for the pilot city project (NZC Pilot Cities Programme Indicator Set). This is due to the fact that the green areas, green belt, biodiversity conservation and restoration, and urban private community gardens are interventions that fit into the definition of “negative emissions through natural sinks” indicator instead of the “amount of permanent sequestration of GHG within city boundary” (the one that was chose at the time of the refinement of the District C). At the time, it was not available this indicator (negative emissions through natural sinks) to choose from the set list.
@@ -4735,7 +4721,7 @@ It is important to note, that the Municipality of Guimarães for the interventio
 This indicator will account for negative emissions through the deployment of a green belt around the surroundings of the city.  |
 |  Calculation | To calculate this indicator is necessary to estimate the amount of carbon dioxide absorbed by the green belt which contributes to carbon sequestration.
 
-It would involve the assessment and calculation the carbon sequestration rate and convert to CO₂ equivalent.  |
+It would involve the assessment and calculation the carbon sequestration rate and convert to CO_{2} equivalent.  |
 |  Indicator Context |   |
 |  Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | yes  |
 |  If yes, which emission source sectors does it impact? | Green infrastructure and nature-based solutions  |
@@ -4751,39 +4737,50 @@ It would involve the assessment and calculation the carbon sequestration rate an
 |  References |   |
 |  Deliverables describing the indicator | Deliverables associated with NZC pilot city programme – District C  |
 |  Other indicator systems using this indicator | Green areas, Biodiversity conservation and restoration, Urban private community gardens  |
-
-9
 Guimarães 2030
 
 Climate Neutrality Action Plan
 
 0
 
-|  B-3.2: Indicator Metadata  |   |
-| --- | --- |
+B-3.2: Indicator Metadata
+
 |  Action name | Biodiversity conservation and restoration  |
+| --- | --- |
 |  Indicator Name | Change in the n. of fauna and flora native species in the city  |
 |  Indicator Unit | km restored riparian corridors  |
 |  Definition | It measures the diversity and abundance of native plant and animal species within the ecosystems in Guimarães through the restored riparian corridors.  |
 |  Calculation | To determine this indicator is necessary to define the specific ecosystem, habitat, and geographical area for which the municipality intends to identify the indicator. Then conduct an initial assessment or survey of the native animal and plant species present in the target area. Develop a monitoring plan that specifies the frequency and methods for ongoing data collection. Compile all data collected over time to create a comprehensive inventory of native animal and plant species in the target area and the increased of kilometres of restored riparian corridors (that will have an impact on the fauna and flora conservation). Proceed to regular monitoring, data analysis, and reporting.  |
-|  Indicator Context  |   |
+
+Indicator Context
+
+|  Indicator Context |   |
+| --- | --- |
 |  Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | no  |
 |  If yes, which emission source sectors does it impact? | N/A  |
 |  Does the indicator measure indirect impacts (i.e., co-benefits)? | yes  |
 |  If yes, which co-benefit does it measure? | Improved nature restoration, Increased non-invasive species and pollinators  |
 |  Can the indicator be used for monitoring impact pathways? | yes  |
 |  If yes, which NZC impact pathway is it relevant for? | Improving biodiversity in Guimarães allows for the reconciliation of flora and fauna various species on the territory, improving the resilience of the biodiversity ecosystems as a late outcome. As positive impacts, it can be named an improvement of nature restoration, and decease of non-invasive species and enhancement of pollinators (see Module B-1 Climate Neutrality Scenarios and Impact PathwaysModule B-3 Indicators for Monitoring, Evaluation and Learning).  |
-|  Is the indicator captured by the existing CDP/SCIS/ Covenant of Mayors platforms? | yes  |
-|  Data requirements  |   |
+|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | yes  |
+
+Data requirements
+
 |  Expected data source | Data from the Landscape Laboratory of Guimarães  |
+| --- | --- |
 |  Expected availability | annually  |
 |  Suggested collection interval | annually  |
-|  References  |   |
+
+References
+
 |  Deliverables describing the indicator | N/A  |
-|  Other indicator systems using this indicator | N/A  |
-|  B-3.2: Indicator Metadata  |   |
 | --- | --- |
+|  Other indicator systems using this indicator | N/A  |
+
+B-3.2: Indicator Metadata
+
 |  Action name | Urban private community gardens  |
+| --- | --- |
 |  Indicator Name | Urban private gardens in use  |
 |  Indicator Unit | Record of registered areas (ha) / community gardens (ha)  |
 |  Definition | This indicator measures the number and use of private urban gardens established or expanded as part of a broader urban agriculture/farm initiative among the community in Guimarães.  |
@@ -5104,15 +5101,13 @@ Guimarães
 0
 Unimc
 0
-IcNet
-IcNet
-IcNet
-IcNet
-0
+Ic
 
-# 2030 Climate Neutrality Action Plan
+Climate Neutrality Action Plan
 
-## B-3.2: Indicator Metadata
+#
+
+B-3.2: Indicator Metadata
 
 |  If yes, which emission source sectors does it impact? | N/A  |
 | --- | --- |
@@ -5129,7 +5124,7 @@ IcNet
 |  Deliverables describing the indicator | N/A  |
 |  Other indicator systems using this indicator | N/A  |
 
-## B-3.2: Indicator Metadata
+B-3.2: Indicator Metadata
 
 |  Action name | Promotion of sustainable industry in partnership with relevant industry associations  |
 | --- | --- |
@@ -5473,12 +5468,9 @@ Residents
 Workers | The goal is to involve citizens in co-creating solutions for climate neutrality and improving quality of life first in District C, and then replicate towards a larger area of Guimarães.
 Through co-creation processes, a sustainability matrix will | Improved sense of belonging,
 Improved social cohesion  |
-Guimarães
-0
-0
-Green transition
+Guimarães 2030
+
 Climate Neutrality Action Plan
-C
 
 C.2.1: Enabling social innovation interventions
 
@@ -5496,8 +5488,6 @@ Citizens | To foster a greater sense of belonging, digital experiences will be c
 These experiences will provide insights into the territory evolution and highlight its positive changes.
 Additionally, data collected from various activities will be shared during these events to promote transparency, | Improved climate issues awareness
 Enhanced citizen and communities' participation  |
-
-4
 Guimarães
 0
 0
@@ -5585,7 +5575,7 @@ Guimarães
 0
 Green transition
 Climate Neutrality Action Plan
-C.
+C
 
 C.2.1: Enabling social innovation interventions
 
@@ -5911,8 +5901,6 @@ Guimarães 2030
 
 Climate Neutrality Action Plan
 
-O
-
 C-3.1: Summary of interventions with cost implication
 
 |  Action | Responsible entity and person | Start/end date | Impact (GHG reduction in kt tonCO2e / co-benefit) | Total cost estimated²  |
@@ -5990,14 +5978,14 @@ Plan
 |  C-3.1: Summary of interventions with cost implication  |   |   |   |   |
 | --- | --- | --- | --- | --- |
 |  Action | Responsible entity and person | Start/end date | Impact (GHG reduction in kt tonCO2e / co-benefit) | Total cost estimated2  |
-|  Continuous impact measurement and quality optimisation | Municipality of Guimarães | On going | Improved Data Collection and Analysis Improved sense of belonging and social inclusion | € (120) m  |
+|  Continuous impact measurement and quality optimisation | Municipality of Guimarães | On going | Improved Data Collection and AnalysisImproved sense of belonging and social inclusion | € (120) m  |
 |  Social and other innovation Interventions  |   |   |   |   |
-|  Participatory budget | Municipality of Guimarães | On going | Improved sense of belonging and social inclusion Sectoral collaboration Economic benefits | € (550) m  |
-|  Community Climate Challenge | Municipality of Guimarães Landscape Laboratory of Guimarães | 2024 | Improved sense of belonging and social inclusion, Entrepreneurship, Fight energy poverty, Sectoral collaboration, Economic benefits  |   |
-|  Placemaking | Municipality of Guimarães Landscape Laboratory of Guimarães | On going | Improved sense of belonging and social inclusion, Sectoral collaboration, Economic benefits  |   |
-|  Deployment of the Citizen Pact | Municipality of Guimarães | 2023 | Improved sense of belonging and social inclusion, Local economic activity, and connectivity  |   |
-|  Co-creation process - citizens auscultation | Municipality of Guimarães, Landscape Laboratory of Guimarães | On going | Improved sense of belonging, Improved social cohesion  |   |
-|  Immersive Experiences | Municipality of Guimarães, Landscape Laboratory of Guimarães Mission Structure 2030 | On going | Improved climate issues awareness Enhanced citizen and  |   |
+|  Participatory budget | Municipality of Guimarães | On going | Improved sense of belonging and social inclusionSectoral collaborationEconomic benefits | € (550) m  |
+|  Community Climate Challenge | Municipality of GuimarãesLandscape Laboratory of Guimarães | 2024 | Improved sense of belonging and social inclusion,Entrepreneurship,Fight energy poverty,Sectoral collaboration,Economic benefits  |   |
+|  Placemaking | Municipality of GuimarãesLandscape Laboratory of Guimarães | On going | Improved sense of belonging and social inclusion,Sectoral collaboration,Economic benefits  |   |
+|  Deployment of the Citizen Pact | Municipality of Guimarães | 2023 | Improved sense of belonging and social inclusion,Local economic activity, and connectivity  |   |
+|  Co-creation process - citizens auscultation | Municipality of Guimarães,Landscape Laboratory of Guimarães | On going | Improved sense of belonging,Improved social cohesion  |   |
+|  Immersive Experiences | Municipality of Guimarães,Landscape Laboratory of GuimarãesMission Structure 2030 | On going | Improved climate issues awarenessEnhanced citizen and  |   |
 Guimarães 2030
 
 Climate Neutrality Action Plan
@@ -6031,20 +6019,18 @@ C-3.1: Summary of interventions with cost implication
 | --- | --- | --- | --- | --- |
 |   |  |  | Increase resource efficiency
 Economic benefits |   |
-|  Pegadas Programme | Municipality of Guimarães, Landscape Laboratory of Guimarães |  | Enhanced citizen participation and social capacities
+|  Pegadas Programme | Municipality of Guimarães, Landscape Laboratory of Guimarães |   | Enhanced citizen participation and social capacities
 Increased awareness of social and environmental issues
 Improved access to information, awareness, and behaviour change
 Increase resource efficiency
 Increase biodiversity impacts | € (600) m  |
-|  Poliniza-te | Landscape Laboratory of Guimarães |  | Improve awareness and on climate and biodiversity issues,
+|  Poliniza-te | Landscape Laboratory of Guimarães |   | Improve awareness and on climate and biodiversity issues,
 Increase biodiversity impacts | € (100) m  |
-|  Rural Base Incubator | Municipality of Guimarães Landscape Laboratory of Guimarães |  | Entrepreneurship,
+|  Rural Base Incubator | Municipality of Guimarães Landscape Laboratory of Guimarães |   | Entrepreneurship,
 Increased urban forestry
 Rural adaptation to climate change
 Improved land-use and management practices
 Increased access to green jobs and skill | € (75) m  |
-
-4
 Guimarães 2030
 
 Climate Neutrality Action Plan
@@ -6284,8 +6270,6 @@ B-1.1: Impact Pathways
 |   |   |   |   |  LO2.5: Implementation of carbon-free delivery with at least one stakeholder in tested area, e.g., District C.  |   |   |   |
 |   |   |  EP: Electric mobility shift: private passenger vehicles | EC: Map of potential users/beneficiaries of electric mobility users and engagement. | LO: Widespread of electric mobility. Conversion of diesel and gasoline vehicles to electric ones: - Combustion passenger vehicles | I: Reduced GHG emissions | 11 kt CO2e | I: Improved air quality, Reduced noise pollution, Increased technological readiness and rate of adoption  |
 |   |   |  EP: Electric mobility shift: light goods, and heavy-duty vehicles | EC: Map of light duty and heavy-duty vehicles owned by the municipality and create engagement with stakeholders that | LO: Widespread of electric mobility. Conversion of diesel and gasoline vehicles to electric ones: - Light goods vehicles (100%) - Heavy goods vehicles (88%) | I: Reduced GHG emissions | 20 kt CO2e | I: Improved air quality, Reduced noise pollution, Increased technological readiness and rate of adoption  |
-|  |   |   |   |   |   |   |   |
-|   |   |   |   |  LO: Widespread of electric mobility. Conversion of diesel and gasoline vehicles to electric ones: - Heavy goods vehicles (100%) - Heavy goods vehicles (88%)  |   |   |   |
 Guimarães
 0
 Green Transition
@@ -6668,23 +6652,29 @@ Biodiversity Patrollers: the goal is to engage the entire community, especially 
 Guimarães + Forest: aims to raise awareness of native forests and the importance of their preservation, with a focus on thematic areas such as nature, biodiversity, green spaces, air quality, noise, climate change, landscape, and agroforestry techniques, as well as areas related to civic rights for the protection and creation of a more diverse, healthy, and harmonious natural environment. Under the scope of this project more than 10000 trees were planted in the territory including general public, schools and the private sector.
 
 L
-Climate-Neutrality Commitments
+9
+
+Climate-Neutrality
+
+Commitments
+
+G
 
 # Engagement with global and European initiatives:
 
-**Circular PSP**: Guimarães was selected as a pilot city for the Circular Cities and Regions Initiative. Under the framework of the Governance Ecosystem Guimarães 2030, which links the City Hall, academia, citizens and private business, a task force was set to integrate three domains: innovation, waste and resources, citizens' awareness and mobilisation. It is Horizon Europe that aims to improve the access to innovative circular solutions, to facilitate investment and innovation through better use of available public budgets, innovative financing schemes and sourcing the local potential.
+Circular PSP: Guimarães was selected as a pilot city for the Circular Cities and Regions Initiative. Under the framework of the Governance Ecosystem Guimarães 2030, which links the City Hall, academia, citizens and private business, a task force was set to integrate three domains: innovation, waste and resources, citizens' awareness and mobilisation. It is Horizon Europe that aims to improve the access to innovative circular solutions, to facilitate investment and innovation through better use of available public budgets, innovative financing schemes and sourcing the local potential.
 
-**Let's Go Circular and BiodiverCity**: As part of the URBACT, Municipality of Guimarães intends to develop a digital platform, or APP, to test the viability of a virtual solution to promote sustainable urban development. The project develops with the interaction between various areas of municipal intervention, namely between the Municipal Divisions of Social Action, Environmental and Economic Development and Intelligent and Information System, in 2023 Municipality of Guimarães has been selected to two Action Planning Networks: Let's Go Circular and BiodiverCity.
+Let's Go Circular and BiodiverCity: As part of the URBACT, Municipality of Guimarães intends to develop a digital platform, or APP, to test the viability of a virtual solution to promote sustainable urban development. The project develops with the interaction between various areas of municipal intervention, namely between the Municipal Divisions of Social Action, Environmental and Economic Development and Intelligent and Information System, in 2023 Municipality of Guimarães has been selected to two Action Planning Networks: Let's Go Circular and BiodiverCity.
 
-**DISTENDER**: H2020 project aims to achieve a better understanding on the links between climate change impacts and risks, mitigation, and adaptation options. It will deliver an integrated analysis of climate change impacts and risks, mitigation pathways and adaptation strategies, into a single framework heling understand and quantify their interactions. The outputs will provide further assistance in decision making towards climate neutrality. The Municipality of Guimarães is a case study where the developments of the project are to be tested in.
+DISTENDER: H2020 project aims to achieve a better understanding on the links between climate change impacts and risks, mitigation, and adaptation options. It will deliver an integrated analysis of climate change impacts and risks, mitigation pathways and adaptation strategies, into a single framework heling understand and quantify their interactions. The outputs will provide further assistance in decision making towards climate neutrality. The Municipality of Guimarães is a case study where the developments of the project are to be tested in.
 
-**EUCF**: grant supports the Municipality of Guimarães to create an investment concept to finance to efficient public lighting, renewable energy communities and mitigation of energy poverty in the region.
+EUCF: grant supports the Municipality of Guimarães to create an investment concept to finance to efficient public lighting, renewable energy communities and mitigation of energy poverty in the region.
 
-**Greentour**: INTERREG Sudoe project - aims to improve natural and cultural heritage management methods through the implementation of networks and joint experimentation, developing methodologies and actions to promote the circular economy in the tourism sector.
+Greentour: INTERREG Sudoe project - aims to improve natural and cultural heritage management methods through the implementation of networks and joint experimentation, developing methodologies and actions to promote the circular economy in the tourism sector.
 
-**SW-UP Sport for Women in Urban Places**: mission to complement the initiatives that are underway all over Europe and that promote women participation in sport and physical activity but will pay special attention to the barriers that women face, namely in the design of more accessible, safe, and friendly urban environments to sports practice.
+SW-UP Sport for Women in Urban Places: mission to complement the initiatives that are underway all over Europe and that promote women participation in sport and physical activity but will pay special attention to the barriers that women face, namely in the design of more accessible, safe, and friendly urban environments to sports practice.
 
-**CCRI Circular Cities Regions Initiative**: In 2022, the Municipality of Guimarães joined the Circular Cities and Regions Initiative as a Pilot to inspire cities in their transition to the circular economy. Guimarães is prioritizing the implementation of circular systemic solutions, which includes promoting the Bioeconomy - an area that holds significant importance within their local context. In June 2023, the first roadmap was completed using the CCRI Methodology, providing valuable policy and decision guidance to accelerate the development and implementation of Circular Systemic Solutions at the local level.
+CCRI Circular Cities Regions Initiative: In 2022, the Municipality of Guimarães joined the Circular Cities and Regions Initiative as a Pilot to inspire cities in their transition to the circular economy. Guimarães is prioritizing the implementation of circular systemic solutions, which includes promoting the Bioeconomy - an area that holds significant importance within their local context. In June 2023, the first roadmap was completed using the CCRI Methodology, providing valuable policy and decision guidance to accelerate the development and implementation of Circular Systemic Solutions at the local level.
 
 # Key local programmes:
 
@@ -6764,7 +6754,7 @@ The Municipality of Guimarães wants to continue working on its goals, so the CC
 
 As far as exclusion sectors are concerned, GHG emissions are quantified in CO₂ equivalents (CO₂, CH₄ and NO₂), according to the Expression of Interest of the Mission for Climate Neutral and Smart Cities. The lack of other GHG quantifications is due to the Industrial Processes and Product Use (IPPU) sector. It is pointed out that it is difficult to collect data on IPUU, due to the lack of experts and technicians, disclosure information from industry, and the lack of inventories.
 
-Agriculture, forestry, and other land use (AFOLU) is another sector for which Guimarães did not provided data yet. However, the data is currently being analysed and the city hopes to be able to report it soon.
+Agriculture, forestry, and other land use (AFOLU) is another sector for which Guimarães did not provide data yet. However, the data is currently being analysed and the city hopes to be able to report it soon.
 
 As mentioned above, the 2030 climate neutrality target is supported by the mayor and other relevant stakeholders. It is worth noting that the transport sector and industry are the largest sources of emissions (2019), so the municipality wants to include these sectors because of their importance to the climate neutrality pathway.
 

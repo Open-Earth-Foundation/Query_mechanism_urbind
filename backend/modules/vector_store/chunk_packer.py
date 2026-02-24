@@ -178,11 +178,17 @@ def pack_blocks(
         table_title = None
         if chunk_type == "table":
             table_title = first_block.table_title
-            embedding_text = summarize_table_for_embedding(
-                raw_table=raw_text,
-                heading_path=first_block.heading_path,
-                table_title=table_title,
-            )
+            max_preview = 5
+            while True:
+                embedding_text = summarize_table_for_embedding(
+                    raw_table=raw_text,
+                    heading_path=first_block.heading_path,
+                    table_title=table_title,
+                    max_preview_rows=max_preview,
+                )
+                if count_tokens(embedding_text) <= max_tokens or max_preview == 0:
+                    break
+                max_preview -= 1
             table_id = first_block.table_id
             row_group_index = first_block.row_group_index
         chunks.append(

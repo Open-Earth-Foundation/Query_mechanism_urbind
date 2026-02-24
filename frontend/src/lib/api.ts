@@ -51,6 +51,16 @@ export interface RunContextResponse {
   context_bundle_path: string;
 }
 
+export interface RunReferenceResponse {
+  run_id: string;
+  ref_id: string;
+  excerpt_index: number;
+  city_name: string;
+  quote: string;
+  partial_answer: string;
+  source_chunk_ids: string[];
+}
+
 export interface RunSummary {
   run_id: string;
   question: string;
@@ -286,6 +296,15 @@ export async function fetchRunOutput(runId: string): Promise<RunOutputResponse> 
 
 export async function fetchRunContext(runId: string): Promise<RunContextResponse> {
   return requestJson<RunContextResponse>(`/api/v1/runs/${encodeURIComponent(runId)}/context`);
+}
+
+export async function fetchRunReference(
+  runId: string,
+  refId: string,
+): Promise<RunReferenceResponse> {
+  return requestJson<RunReferenceResponse>(
+    `/api/v1/runs/${encodeURIComponent(runId)}/references/${encodeURIComponent(refId)}`,
+  );
 }
 
 export async function fetchCities(): Promise<CityListResponse> {

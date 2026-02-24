@@ -76,6 +76,18 @@ class RunContextResponse(BaseModel):
     context_bundle_path: str
 
 
+class RunReferenceResponse(BaseModel):
+    """Response body for one run-scoped markdown reference lookup."""
+
+    run_id: str
+    ref_id: str
+    excerpt_index: int
+    city_name: str
+    quote: str
+    partial_answer: str
+    source_chunk_ids: list[str]
+
+
 class RunSummary(BaseModel):
     """Minimal run metadata used by run picker UI."""
 
@@ -247,6 +259,7 @@ __all__ = [
     "RunStatusResponse",
     "RunOutputResponse",
     "RunContextResponse",
+    "RunReferenceResponse",
     "RunSummary",
     "RunListResponse",
     "MissingDataItem",

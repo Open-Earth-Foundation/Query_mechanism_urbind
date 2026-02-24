@@ -49,6 +49,10 @@ Content quality requirements:
 - Decision text after the header:
   - If `excerpt_count == 0`, do not attempt to answer the question. Clearly state that no relevant evidence was found in the provided sources and that you cannot provide a grounded answer.
   - If `excerpt_count > 0`, include a short line before the answer body stating that the answer is grounded in those excerpts from the listed cities.
+- Citation rules (critical when `excerpt_count > 0`):
+  - Every factual statement must be immediately followed by one or more reference ids, e.g. `... [ref_1]` or `... [ref_1][ref_3]`.
+  - Allowed reference ids are only those provided in `context_bundle.markdown.excerpts[].ref_id`.
+  - Do not invent reference ids and do not use any citation format other than `[ref_n]`.
 - Ground all claims in `context_bundle`; do not invent facts.
 - When evidence is partial or uncertain, state limitations clearly and keep claims bounded.
 - If `context_bundle.markdown.status="success"` and `context_bundle.markdown.error` is non-null, include a brief limitation note.

@@ -55,9 +55,14 @@ Environment variables (`.env`):
 - `LLM_CONFIG_PATH` (optional, default `llm_config.yaml`): API config file path.
 - `CITY_GROUPS_PATH` (optional, default `backend/api/assets/city_groups.json`): city groups catalog JSON path.
 - `VECTOR_STORE_ENABLED` (optional, default `false`): enables local Chroma markdown indexing flows.
+- `ANONYMIZED_TELEMETRY` (optional, default `FALSE`): disables Chroma anonymized telemetry when set to `FALSE`.
 - `CHROMA_PERSIST_PATH` (optional, default `.chroma`): local Chroma persistence directory.
 - `CHROMA_COLLECTION_NAME` (optional, default `markdown_chunks`): Chroma collection used for markdown chunks.
 - `EMBEDDING_MODEL` (optional, default `text-embedding-3-large`): embedding model for vector index build/update.
+- `EMBEDDING_BATCH_SIZE` (optional, default `100`): number of markdown chunks embedded per provider request.
+- `EMBEDDING_MAX_RETRIES` (optional, default `3`): retry count for failed/empty embedding responses before fallback.
+- `EMBEDDING_RETRY_BASE_SECONDS` (optional, default `0.8`): exponential backoff base delay between embedding retries.
+- `EMBEDDING_RETRY_MAX_SECONDS` (optional, default `8.0`): maximum backoff delay between embedding retries.
 - `EMBEDDING_CHUNK_TOKENS` (optional, default `800`): chunk token budget for markdown packing.
 - `EMBEDDING_CHUNK_OVERLAP_TOKENS` (optional, default `80`): chunk overlap token budget.
 - `TABLE_ROW_GROUP_MAX_ROWS` (optional, default `25`): max rows per split group for oversized markdown tables.
@@ -380,6 +385,7 @@ Core endpoints:
 - `GET /api/v1/runs/{run_id}/status`
 - `GET /api/v1/runs/{run_id}/output`
 - `GET /api/v1/runs/{run_id}/context`
+- `GET /api/v1/runs/{run_id}/references/{ref_id}` (resolve one citation reference such as `ref_1`)
 - `GET /api/v1/cities` (city names from markdown filenames in `MARKDOWN_DIR`, without `.md`)
 - `GET /api/v1/city-groups` (predefined city groups filtered to currently available markdown cities)
 - `GET /api/v1/chat/contexts` (catalog of completed run contexts with token counts)
@@ -539,6 +545,7 @@ Artifacts are written under `output/<run_id>/`:
 - `sql/results_full.json` (when SQL is enabled): uncapped SQL execution results.
 - `sql/results.json` (when SQL is enabled): token-capped SQL results sent downstream.
 - `markdown/excerpts.json`: markdown researcher evidence bundle. Includes `excerpts` (items with `quote`, `city_name`, `partial_answer`), `inspected_cities` (normalized backend city keys present in inspected markdown inputs), and `excerpt_count` (count of extracted excerpts).
+- `markdown/references.json`: run-local citation map generated from markdown excerpts. Includes sequential `ref_n` entries with `excerpt_index`, `city_name`, `quote`, `partial_answer`, and `source_chunk_ids`.
 - `markdown/retrieval.json` (when `VECTOR_STORE_ENABLED=true`): vector retrieval inputs and results summary. Includes the final retrieval query list, optional city filter, retrieval tuning metadata (cutoffs/caps), and per-chunk summaries (`chunk_id`, `city_name`, `city_key`, `source_path`, `heading_path`, `block_type`, `distance`).
 - `markdown/batches.json`: markdown batching plan used for the markdown researcher calls. Includes per-city batch indices, estimated tokens, and chunk ordering fields (`path`, `chunk_index`, `chunk_id`), making it easy to inspect how chunks were grouped into LLM requests.
 - `final.md`: final delivered markdown output. Content format is:
@@ -551,6 +558,7 @@ Artifacts are written under `output/<run_id>/`:
 - `quote`: verbatim extracted supporting text from markdown.
 - `city_name`: city identifier for the excerpt.
 - `partial_answer`: concise fact grounded in the quote.
+- `ref_id`: sequential run-local citation id (`ref_1`, `ref_2`, ...), used by writer output and frontend reference lookups.
 - `inspected_cities` (bundle-level): normalized backend city keys inspected by markdown extraction.
 - `excerpt_count` (bundle-level): number of extracted excerpts included in the bundle.
 

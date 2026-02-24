@@ -1,7 +1,6 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import ReactMarkdown from "react-markdown";
 import { ArrowLeft, Loader2, RefreshCw, Sparkles } from "lucide-react";
 
 import {
@@ -10,6 +9,7 @@ import {
   applyRunAssumptions,
   discoverRunAssumptions,
 } from "@/lib/api";
+import { MarkdownWithReferences } from "@/components/markdown-with-references";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -272,7 +272,7 @@ export function AssumptionsWorkspace({
               {assumptionsPath ? ` | Assumptions: ${assumptionsPath}` : ""}
             </p>
             <article className="document-markdown rounded-md border border-slate-200 bg-white p-5 shadow-inner">
-              <ReactMarkdown>{revisedContent}</ReactMarkdown>
+              <MarkdownWithReferences content={revisedContent} runId={runId} />
             </article>
           </div>
         ) : null}

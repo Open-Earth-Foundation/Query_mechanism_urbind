@@ -59,6 +59,78 @@ body {
   padding: 0.9rem;
 }
 
+.citation-ref-link {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  color: #0f4a9d;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  cursor: pointer;
+  font: inherit;
+}
+
+.citation-ref-link:hover {
+  color: #0d3f85;
+}
+
+.citation-popover {
+  position: fixed;
+  z-index: 70;
+  width: min(360px, calc(100vw - 24px));
+  border: 1px solid #d9e2f2;
+  border-radius: 0.65rem;
+  background: #ffffff;
+  box-shadow: 0 16px 32px rgba(16, 24, 38, 0.2);
+  padding: 0.75rem;
+}
+
+.citation-popover-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.citation-popover-close {
+  border: 1px solid #d9e2f2;
+  border-radius: 0.4rem;
+  background: #f8fbff;
+  color: #1d2737;
+  padding: 0.1rem 0.45rem;
+  font-size: 0.78rem;
+  cursor: pointer;
+}
+
+.citation-popover-body {
+  display: grid;
+  gap: 0.45rem;
+  font-size: 0.84rem;
+  line-height: 1.45;
+  color: #1d2737;
+}
+
+.citation-popover-body p {
+  margin: 0;
+}
+
+.citation-popover-label {
+  font-weight: 600;
+}
+
+.citation-popover-muted {
+  margin: 0;
+  font-size: 0.84rem;
+  color: #4e5e76;
+}
+
+.citation-popover-error {
+  margin: 0;
+  font-size: 0.84rem;
+  color: #b42318;
+}
+
 .chat-markdown {
   color: #1d2737;
   line-height: 1.65;

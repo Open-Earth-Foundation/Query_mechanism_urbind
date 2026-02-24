@@ -69,10 +69,12 @@ def _embed_queries(queries: list[str], config: AppConfig) -> dict[str, list[floa
         base_url=config.openrouter_base_url,
     )
     embeddings = provider.embed_texts(queries)
-    return {
-        query_text: embedding
-        for query_text, embedding in zip(queries, embeddings, strict=True)
-    }
+    result: dict[str, list[float]] = {}
+    for query_text, embedding in zip(queries, embeddings, strict=True):
+        if embedding is None:
+            raise ValueError(f"Failed to embed query: {query_text!r}")
+        result[query_text] = embedding
+    return result
 
 
 def _extract_query_rows(payload: dict[str, Any]) -> list[dict[str, Any]]:

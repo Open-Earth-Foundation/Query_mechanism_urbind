@@ -57,6 +57,10 @@ class VectorStoreConfig(BaseModel):
     chroma_persist_path: Path = Field(default_factory=lambda: Path(".chroma"))
     chroma_collection_name: str = "markdown_chunks"
     embedding_model: str = "text-embedding-3-large"
+    embedding_batch_size: int = 100
+    embedding_max_retries: int = 3
+    embedding_retry_base_seconds: float = 0.8
+    embedding_retry_max_seconds: float = 8.0
     embedding_chunk_tokens: int = 800
     embedding_chunk_overlap_tokens: int = 80
     table_row_group_max_rows: int = 25
@@ -138,6 +142,10 @@ def load_config(config_path: Optional[Path] = None) -> AppConfig:
     chroma_persist_path = os.getenv("CHROMA_PERSIST_PATH")
     chroma_collection_name = os.getenv("CHROMA_COLLECTION_NAME")
     embedding_model = os.getenv("EMBEDDING_MODEL")
+    embedding_batch_size = os.getenv("EMBEDDING_BATCH_SIZE")
+    embedding_max_retries = os.getenv("EMBEDDING_MAX_RETRIES")
+    embedding_retry_base_seconds = os.getenv("EMBEDDING_RETRY_BASE_SECONDS")
+    embedding_retry_max_seconds = os.getenv("EMBEDDING_RETRY_MAX_SECONDS")
     embedding_chunk_tokens = os.getenv("EMBEDDING_CHUNK_TOKENS")
     embedding_chunk_overlap_tokens = os.getenv("EMBEDDING_CHUNK_OVERLAP_TOKENS")
     table_row_group_max_rows = os.getenv("TABLE_ROW_GROUP_MAX_ROWS")
@@ -187,6 +195,26 @@ def load_config(config_path: Optional[Path] = None) -> AppConfig:
         config.vector_store.chroma_collection_name = chroma_collection_name
     if embedding_model:
         config.vector_store.embedding_model = embedding_model
+    if embedding_batch_size:
+        config.vector_store.embedding_batch_size = _parse_env_int(
+            "EMBEDDING_BATCH_SIZE",
+            embedding_batch_size,
+        )
+    if embedding_max_retries:
+        config.vector_store.embedding_max_retries = _parse_env_int(
+            "EMBEDDING_MAX_RETRIES",
+            embedding_max_retries,
+        )
+    if embedding_retry_base_seconds:
+        config.vector_store.embedding_retry_base_seconds = _parse_env_float(
+            "EMBEDDING_RETRY_BASE_SECONDS",
+            embedding_retry_base_seconds,
+        )
+    if embedding_retry_max_seconds:
+        config.vector_store.embedding_retry_max_seconds = _parse_env_float(
+            "EMBEDDING_RETRY_MAX_SECONDS",
+            embedding_retry_max_seconds,
+        )
     if embedding_chunk_tokens:
         config.vector_store.embedding_chunk_tokens = _parse_env_int(
             "EMBEDDING_CHUNK_TOKENS",

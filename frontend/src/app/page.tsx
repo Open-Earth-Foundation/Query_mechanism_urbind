@@ -1,7 +1,6 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useState } from "react";
-import ReactMarkdown from "react-markdown";
 import {
   AlertTriangle,
   CheckCircle2,
@@ -14,6 +13,7 @@ import {
 
 import { AssumptionsWorkspace } from "@/components/assumptions-workspace";
 import { ContextChatWorkspace } from "@/components/context-chat-workspace";
+import { MarkdownWithReferences } from "@/components/markdown-with-references";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -840,7 +840,10 @@ export default function Home() {
                       </div>
                     </div>
                     <article className="document-markdown rounded-md border border-slate-200 bg-white p-5 shadow-inner">
-                      <ReactMarkdown>{runOutput.content}</ReactMarkdown>
+                      <MarkdownWithReferences
+                        content={runOutput.content}
+                        runId={runId}
+                      />
                     </article>
                   </>
                 ) : isLongWait ? (

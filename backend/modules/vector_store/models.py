@@ -10,8 +10,14 @@ BlockType = Literal["paragraph", "table", "list", "code"]
 class EmbeddingProvider(Protocol):
     """Interface for pluggable embedding providers."""
 
-    def embed_texts(self, texts: list[str]) -> list[list[float]]:
-        """Embed a list of texts."""
+    def embed_texts(self, texts: list[str]) -> list[list[float] | None]:
+        """Embed a list of texts.
+
+        Returns one entry per input text. An entry is ``None`` when the text
+        permanently failed to embed after all retries (e.g. oversized input
+        that the provider silently rejects). Callers must handle ``None``
+        entries explicitly.
+        """
 
 
 @dataclass(frozen=True)

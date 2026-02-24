@@ -6,12 +6,13 @@ import pytest
 
 from backend.modules.vector_store import chroma_store as chroma_store_module
 from backend.modules.vector_store.chroma_store import ChromaStore
-from backend.modules.vector_store.indexer import update_markdown_index
+from backend.modules.vector_store.indexer import OpenAIEmbeddingProvider, update_markdown_index
 from backend.modules.vector_store.manifest import load_manifest
 from backend.modules.vector_store.manifest import build_chunk_id
 from backend.modules.vector_store.markdown_blocks import parse_markdown_blocks
 from backend.modules.vector_store.chunk_packer import pack_blocks
 from backend.modules.vector_store.table_utils import split_markdown_table_by_row_groups
+from backend.utils.tokenization import count_tokens
 from backend.utils.config import (
     AgentConfig,
     AppConfig,
@@ -166,11 +167,23 @@ def test_manifest_update_skips_unchanged_and_updates_changed(
             self.upsert_calls.append(len(chunks))
 
     class FakeEmbeddingProvider:
-        def __init__(self, model: str, base_url: str | None = None) -> None:
+        def __init__(
+            self,
+            model: str,
+            base_url: str | None = None,
+            batch_size: int = 100,
+            max_retries: int = 3,
+            retry_base_seconds: float = 0.8,
+            retry_max_seconds: float = 8.0,
+        ) -> None:
             self.model = model
             self.base_url = base_url
+            self.batch_size = batch_size
+            self.max_retries = max_retries
+            self.retry_base_seconds = retry_base_seconds
+            self.retry_max_seconds = retry_max_seconds
 
-        def embed_texts(self, texts: list[str]) -> list[list[float]]:
+        def embed_texts(self, texts: list[str]) -> list[list[float] | None]:
             return [[0.1, 0.2, 0.3] for _ in texts]
 
     monkeypatch.setattr("backend.modules.vector_store.indexer.ChromaStore", FakeStore)
@@ -315,11 +328,23 @@ def test_update_markdown_index_filtered_city_does_not_delete_other_manifest_entr
             self.upsert_calls.append(len(chunks))
 
     class FakeEmbeddingProvider:
-        def __init__(self, model: str, base_url: str | None = None) -> None:
+        def __init__(
+            self,
+            model: str,
+            base_url: str | None = None,
+            batch_size: int = 100,
+            max_retries: int = 3,
+            retry_base_seconds: float = 0.8,
+            retry_max_seconds: float = 8.0,
+        ) -> None:
             self.model = model
             self.base_url = base_url
+            self.batch_size = batch_size
+            self.max_retries = max_retries
+            self.retry_base_seconds = retry_base_seconds
+            self.retry_max_seconds = retry_max_seconds
 
-        def embed_texts(self, texts: list[str]) -> list[list[float]]:
+        def embed_texts(self, texts: list[str]) -> list[list[float] | None]:
             return [[0.1, 0.2, 0.3] for _ in texts]
 
     monkeypatch.setattr("backend.modules.vector_store.indexer.ChromaStore", FakeStore)
@@ -340,3 +365,154 @@ def test_update_markdown_index_filtered_city_does_not_delete_other_manifest_entr
     manifest = load_manifest(config.vector_store.index_manifest_path)
     files = manifest.get("files", {})
     assert berlin_path.as_posix() in files
+
+
+def test_openai_embedding_provider_retries_empty_batch_response(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Provider retries when batch response has missing embeddings."""
+    monkeypatch.setenv("OPENAI_API_KEY", "test-key")
+
+    class FakeEmbeddingItem:
+        def __init__(self, embedding: list[float]) -> None:
+            self.embedding = embedding
+
+    class FakeResponse:
+        def __init__(self, embeddings: list[list[float]]) -> None:
+            self.data = [FakeEmbeddingItem(embedding) for embedding in embeddings]
+
+    class FakeEmbeddingsApi:
+        call_count = 0
+
+        def create(self, model: str, input: list[str]) -> FakeResponse:
+            del model
+            self.__class__.call_count += 1
+            if self.__class__.call_count == 1:
+                return FakeResponse([])
+            return FakeResponse([[float(index)] for index in range(len(input))])
+
+    class FakeOpenAIClient:
+        def __init__(self, api_key: str, base_url: str | None = None) -> None:
+            del api_key, base_url
+            self.embeddings = FakeEmbeddingsApi()
+
+    monkeypatch.setattr("backend.modules.vector_store.indexer.OpenAI", FakeOpenAIClient)
+    provider = OpenAIEmbeddingProvider(
+        model="test-embedding",
+        batch_size=10,
+        max_retries=1,
+        retry_base_seconds=0.0,
+        retry_max_seconds=0.0,
+    )
+    vectors = provider.embed_texts(["a", "b", "c"])
+    assert len(vectors) == 3
+    assert FakeEmbeddingsApi.call_count == 2
+
+
+def test_openai_embedding_provider_falls_back_to_single_item_requests(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Provider falls back to per-item embedding when full batch keeps failing."""
+    monkeypatch.setenv("OPENAI_API_KEY", "test-key")
+
+    class FakeEmbeddingItem:
+        def __init__(self, embedding: list[float]) -> None:
+            self.embedding = embedding
+
+    class FakeResponse:
+        def __init__(self, embeddings: list[list[float]]) -> None:
+            self.data = [FakeEmbeddingItem(embedding) for embedding in embeddings]
+
+    class FakeEmbeddingsApi:
+        call_count = 0
+
+        def create(self, model: str, input: list[str]) -> FakeResponse:
+            del model
+            self.__class__.call_count += 1
+            if len(input) > 1:
+                raise ValueError("No embedding data received")
+            return FakeResponse([[float(len(input[0]))]])
+
+    class FakeOpenAIClient:
+        def __init__(self, api_key: str, base_url: str | None = None) -> None:
+            del api_key, base_url
+            self.embeddings = FakeEmbeddingsApi()
+
+    monkeypatch.setattr("backend.modules.vector_store.indexer.OpenAI", FakeOpenAIClient)
+    provider = OpenAIEmbeddingProvider(
+        model="test-embedding",
+        batch_size=10,
+        max_retries=1,
+        retry_base_seconds=0.0,
+        retry_max_seconds=0.0,
+    )
+    vectors = provider.embed_texts(["alpha", "bb"])
+    assert vectors == [[5.0], [2.0]]
+    assert FakeEmbeddingsApi.call_count == 4
+
+
+def test_openai_embedding_provider_returns_none_for_permanently_failing_items(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """embed_texts returns None for items that never succeed, not raise."""
+    monkeypatch.setenv("OPENAI_API_KEY", "test-key")
+
+    BAD_TEXT = "bad"
+
+    class FakeEmbeddingItem:
+        def __init__(self, embedding: list[float]) -> None:
+            self.embedding = embedding
+
+    class FakeResponse:
+        def __init__(self, embeddings: list[list[float]]) -> None:
+            self.data = [FakeEmbeddingItem(e) for e in embeddings]
+
+    class FakeEmbeddingsApi:
+        def create(self, model: str, input: list[str]) -> FakeResponse:
+            del model
+            if any(t == BAD_TEXT for t in input):
+                raise ValueError("No embedding data received")
+            return FakeResponse([[1.0] for _ in input])
+
+    class FakeOpenAIClient:
+        def __init__(self, api_key: str, base_url: str | None = None) -> None:
+            del api_key, base_url
+            self.embeddings = FakeEmbeddingsApi()
+
+    monkeypatch.setattr("backend.modules.vector_store.indexer.OpenAI", FakeOpenAIClient)
+    provider = OpenAIEmbeddingProvider(
+        model="test-embedding",
+        batch_size=10,
+        max_retries=1,
+        retry_base_seconds=0.0,
+        retry_max_seconds=0.0,
+    )
+    vectors = provider.embed_texts(["good1", BAD_TEXT, "good2"])
+    assert len(vectors) == 3
+    assert vectors[0] == [1.0]
+    assert vectors[1] is None
+    assert vectors[2] == [1.0]
+
+
+def test_pack_blocks_table_embedding_text_bounded_by_max_tokens() -> None:
+    """Table embedding_text does not exceed max_tokens even with very wide rows."""
+    wide_cell = "x" * 300
+    text = "\n".join(
+        [
+            "# Section",
+            "",
+            f"| Col A | Col B | Col C |",
+            f"| --- | --- | --- |",
+            *[f"| {wide_cell} | {wide_cell} | {wide_cell} |" for _ in range(10)],
+        ]
+    )
+    blocks = parse_markdown_blocks(text)
+    max_tokens = 80
+    chunks = pack_blocks(blocks=blocks, max_tokens=max_tokens, overlap_tokens=0)
+    table_chunks = [c for c in chunks if c.block_type == "table"]
+    assert table_chunks, "Expected at least one table chunk"
+    for chunk in table_chunks:
+        assert count_tokens(chunk.embedding_text) <= max_tokens, (
+            f"embedding_text exceeds max_tokens={max_tokens}: "
+            f"{count_tokens(chunk.embedding_text)} tokens"
+        )

@@ -68,6 +68,24 @@ def _write_success_artifacts(question: str, run_id: str, config: AppConfig) -> R
     return paths
 
 
+def _write_markdown_reference_artifacts(
+    paths: RunPaths,
+    references_payload: dict[str, object] | None = None,
+    excerpts_payload: dict[str, object] | None = None,
+) -> None:
+    paths.markdown_dir.mkdir(parents=True, exist_ok=True)
+    if references_payload is not None:
+        paths.markdown_references.write_text(
+            json.dumps(references_payload, ensure_ascii=True, indent=2),
+            encoding="utf-8",
+        )
+    if excerpts_payload is not None:
+        paths.markdown_excerpts.write_text(
+            json.dumps(excerpts_payload, ensure_ascii=True, indent=2),
+            encoding="utf-8",
+        )
+
+
 def _poll_until_terminal(
     client: TestClient,
     run_id: str,
@@ -134,6 +152,138 @@ def test_api_run_lifecycle_success(tmp_path: Path, monkeypatch: pytest.MonkeyPat
         context_payload = context_response.json()
         assert context_payload["status"] == "completed"
         assert isinstance(context_payload["context_bundle"], dict)
+
+
+def test_api_get_run_reference_returns_record_from_references_artifact(
+    tmp_path: Path,
+) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    config = _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+    paths = _write_success_artifacts(
+        question="Reference lookup run",
+        run_id="run-reference",
+        config=config,
+    )
+    _write_markdown_reference_artifacts(
+        paths=paths,
+        references_payload={
+            "run_id": "run-reference",
+            "reference_count": 1,
+            "references": [
+                {
+                    "ref_id": "ref_1",
+                    "excerpt_index": 0,
+                    "city_name": "Leipzig",
+                    "quote": "Leipzig plans to expand charging infrastructure.",
+                    "partial_answer": "Leipzig plans charging infrastructure expansion.",
+                    "source_chunk_ids": ["chunk_leipzig_1"],
+                }
+            ],
+        },
+    )
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        response = client.get("/api/v1/runs/run-reference/references/ref_1")
+        assert response.status_code == 200
+        payload = response.json()
+        assert payload["run_id"] == "run-reference"
+        assert payload["ref_id"] == "ref_1"
+        assert payload["excerpt_index"] == 0
+        assert payload["city_name"] == "Leipzig"
+        assert payload["source_chunk_ids"] == ["chunk_leipzig_1"]
+
+
+def test_api_get_run_reference_returns_not_found_for_unknown_ref(
+    tmp_path: Path,
+) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    config = _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+    paths = _write_success_artifacts(
+        question="Unknown reference lookup run",
+        run_id="run-reference-missing",
+        config=config,
+    )
+    _write_markdown_reference_artifacts(
+        paths=paths,
+        references_payload={
+            "run_id": "run-reference-missing",
+            "reference_count": 1,
+            "references": [
+                {
+                    "ref_id": "ref_1",
+                    "excerpt_index": 0,
+                    "city_name": "Leipzig",
+                    "quote": "Leipzig plans to expand charging infrastructure.",
+                    "partial_answer": "Leipzig plans charging infrastructure expansion.",
+                    "source_chunk_ids": ["chunk_leipzig_1"],
+                }
+            ],
+        },
+    )
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        response = client.get("/api/v1/runs/run-reference-missing/references/ref_2")
+        assert response.status_code == 404
+
+
+def test_api_get_run_reference_falls_back_to_excerpts_when_references_missing(
+    tmp_path: Path,
+) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    config = _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+    paths = _write_success_artifacts(
+        question="Fallback reference lookup run",
+        run_id="run-reference-fallback",
+        config=config,
+    )
+    _write_markdown_reference_artifacts(
+        paths=paths,
+        excerpts_payload={
+            "status": "success",
+            "excerpts": [
+                {
+                    "city_name": "Munich",
+                    "quote": "Munich has 43 charging points as of 2024.",
+                    "partial_answer": "Munich reports 43 charging points as of 2024.",
+                    "source_chunk_ids": ["chunk_munich_1"],
+                }
+            ],
+        },
+    )
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        response = client.get("/api/v1/runs/run-reference-fallback/references/ref_1")
+        assert response.status_code == 200
+        payload = response.json()
+        assert payload["ref_id"] == "ref_1"
+        assert payload["city_name"] == "Munich"
+        assert payload["source_chunk_ids"] == ["chunk_munich_1"]
+
+
+def test_api_get_run_reference_rejects_invalid_ref_format(tmp_path: Path) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    config = _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+    _write_success_artifacts(
+        question="Invalid reference id run",
+        run_id="run-reference-invalid",
+        config=config,
+    )
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        response = client.get("/api/v1/runs/run-reference-invalid/references/ref_x")
+        assert response.status_code == 400
 
 
 def test_api_duplicate_run_id_returns_conflict(

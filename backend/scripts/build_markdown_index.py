@@ -12,6 +12,9 @@ Inputs:
   - --config: Path to llm_config.yaml (default: llm_config.yaml).
 - Env vars:
   - OPENAI_API_KEY or OPENROUTER_API_KEY: key for embeddings when not in dry-run mode.
+  - ANONYMIZED_TELEMETRY (optional, default false): disables Chroma telemetry when set to false.
+  - EMBEDDING_BATCH_SIZE, EMBEDDING_MAX_RETRIES, EMBEDDING_RETRY_BASE_SECONDS,
+    EMBEDDING_RETRY_MAX_SECONDS (optional): embedding request batching and retry behavior.
   - CHROMA_PERSIST_PATH, INDEX_MANIFEST_PATH (optional): in Kubernetes the build-vector-index Job
     uses the backend ConfigMap; typically /data/chroma and /data/chroma/index_manifest.json.
 

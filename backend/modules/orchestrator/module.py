@@ -22,6 +22,7 @@ from backend.modules.orchestrator.models import (
 )
 from backend.modules.orchestrator.utils import (
     attach_run_file_logger,
+    build_markdown_references,
     collect_identifiers,
     fetch_city_list,
     handle_write_decision,
@@ -423,8 +424,22 @@ def run_pipeline(
         ]
         excerpts = markdown_bundle.get("excerpts", [])
         if isinstance(excerpts, list):
-            markdown_bundle["excerpt_count"] = len(excerpts)
+            excerpt_entries = [
+                excerpt for excerpt in excerpts if isinstance(excerpt, dict)
+            ]
+            enriched_excerpts, references_payload = build_markdown_references(
+                run_id=run_id_value,
+                excerpts=excerpt_entries,
+            )
+            markdown_bundle["excerpts"] = enriched_excerpts
+            markdown_bundle["excerpt_count"] = len(enriched_excerpts)
+            write_json(paths.markdown_references, references_payload)
+            run_logger.record_artifact(
+                "markdown_references",
+                paths.markdown_references,
+            )
         else:
+            markdown_bundle["excerpts"] = []
             markdown_bundle["excerpt_count"] = 0
 
         write_json(paths.markdown_excerpts, markdown_bundle)

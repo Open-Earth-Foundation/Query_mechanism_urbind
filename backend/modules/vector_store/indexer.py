@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import logging
 import os
+import time
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
@@ -45,7 +46,15 @@ class IndexStats:
 class OpenAIEmbeddingProvider(EmbeddingProvider):
     """Embedding provider backed by OpenAI-compatible embeddings API."""
 
-    def __init__(self, model: str, base_url: str | None = None) -> None:
+    def __init__(
+        self,
+        model: str,
+        base_url: str | None = None,
+        batch_size: int = 100,
+        max_retries: int = 3,
+        retry_base_seconds: float = 0.8,
+        retry_max_seconds: float = 8.0,
+    ) -> None:
         api_key = os.getenv("OPENAI_API_KEY") or os.getenv("OPENROUTER_API_KEY")
         if not api_key:
             raise EnvironmentError("OPENAI_API_KEY or OPENROUTER_API_KEY must be set.")
@@ -57,16 +66,98 @@ class OpenAIEmbeddingProvider(EmbeddingProvider):
         )
         self._model = model
         self._client = OpenAI(api_key=api_key, base_url=resolved_base_url)
+        self._batch_size = max(batch_size, 1)
+        self._max_retries = max(max_retries, 0)
+        self._retry_base_seconds = max(retry_base_seconds, 0.0)
+        self._retry_max_seconds = max(retry_max_seconds, self._retry_base_seconds)
 
-    def embed_texts(self, texts: list[str]) -> list[list[float]]:
+    def _embed_batch_once(self, texts: list[str]) -> list[list[float]]:
+        """Send one embeddings request and validate response length."""
+        try:
+            response = self._client.embeddings.create(model=self._model, input=texts)
+        except Exception as exc:
+            if "No embedding data" in str(exc):
+                try:
+                    raw = self._client.with_raw_response.embeddings.create(model=self._model, input=texts)
+                    msg = f"No embedding data received. Provider error: {raw.http_response.text}. Texts lengths: {[len(t) for t in texts]}"
+                except Exception as e2:
+                    msg = f"No embedding data received. Texts lengths: {[len(t) for t in texts]}. Also failed to get raw response: {e2}"
+                raise ValueError(msg) from exc
+            raise
+        embeddings = [item.embedding for item in response.data]
+        if len(embeddings) != len(texts):
+            raise ValueError(
+                "Embedding response length mismatch: "
+                f"requested={len(texts)} received={len(embeddings)}"
+            )
+        return embeddings
+
+    def _embed_batch_with_retries(self, texts: list[str]) -> list[list[float]]:
+        """Retry one batch with exponential backoff for transient provider failures."""
+        last_error: Exception | None = None
+        attempts = self._max_retries + 1
+        for attempt in range(1, attempts + 1):
+            try:
+                return self._embed_batch_once(texts)
+            except Exception as exc:
+                last_error = exc
+                if attempt >= attempts:
+                    break
+                sleep_seconds = min(
+                    self._retry_base_seconds * (2 ** (attempt - 1)),
+                    self._retry_max_seconds,
+                )
+                logger.warning(
+                    "Embedding request failed for batch_size=%d (attempt %d/%d): %s",
+                    len(texts),
+                    attempt,
+                    attempts,
+                    exc,
+                )
+                if sleep_seconds > 0:
+                    time.sleep(sleep_seconds)
+        assert last_error is not None
+        raise last_error
+
+    def _embed_batch_one_by_one(self, texts: list[str]) -> list[list[float] | None]:
+        """Fallback path: embed texts individually to isolate bad batch payloads.
+
+        Returns ``None`` for any text that permanently fails after all retries
+        so the caller can decide whether to skip or raise.
+        """
+        vectors: list[list[float] | None] = []
+        for text in texts:
+            try:
+                vectors.extend(self._embed_batch_with_retries([text]))
+            except Exception as exc:
+                logger.error(
+                    "Permanently skipping text (char_len=%d) after all retries: %s",
+                    len(text),
+                    exc,
+                )
+                vectors.append(None)
+        return vectors
+
+    def embed_texts(self, texts: list[str]) -> list[list[float] | None]:
+        """Embed input texts with retries and per-item fallback.
+
+        Returns one entry per input text. ``None`` means the text permanently
+        failed to embed and the caller should skip that item.
+        """
         if not texts:
             return []
-        vectors: list[list[float]] = []
-        batch_size = 100
-        for start in range(0, len(texts), batch_size):
-            batch = texts[start : start + batch_size]
-            response = self._client.embeddings.create(model=self._model, input=batch)
-            vectors.extend([item.embedding for item in response.data])
+        vectors: list[list[float] | None] = []
+        for start in range(0, len(texts), self._batch_size):
+            batch = texts[start : start + self._batch_size]
+            try:
+                vectors.extend(self._embed_batch_with_retries(batch))
+            except Exception as exc:
+                logger.warning(
+                    "Embedding batch failed after retries; retrying per item for batch_size=%d: %s",
+                    len(batch),
+                    exc,
+                )
+                vectors.extend(self._embed_batch_one_by_one(batch))
         return vectors
 
 
@@ -169,12 +260,22 @@ def _collect_token_stats(chunks: list[IndexedChunk]) -> tuple[int, float, int]:
 
 
 def _embed_chunks(chunks: list[IndexedChunk], provider: EmbeddingProvider) -> list[IndexedChunk]:
-    """Attach embeddings to chunk objects using provider output."""
+    """Attach embeddings to chunk objects using provider output.
+
+    Chunks whose embedding permanently failed (``None``) are logged and
+    dropped so a single bad chunk never aborts the whole indexing run.
+    """
     if not chunks:
         return []
     embeddings = provider.embed_texts([chunk.document for chunk in chunks])
     embedded: list[IndexedChunk] = []
     for chunk, embedding in zip(chunks, embeddings, strict=True):
+        if embedding is None:
+            logger.error(
+                "Chunk %s could not be embedded and will not be indexed",
+                chunk.chunk_id,
+            )
+            continue
         embedded.append(
             IndexedChunk(
                 chunk_id=chunk.chunk_id,
@@ -255,7 +356,14 @@ def build_markdown_index(
         chunks_dump_path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
 
     if all_chunks and not dry_run:
-        provider = OpenAIEmbeddingProvider(settings.embedding_model, config.openrouter_base_url)
+        provider = OpenAIEmbeddingProvider(
+            model=settings.embedding_model,
+            base_url=config.openrouter_base_url,
+            batch_size=settings.embedding_batch_size,
+            max_retries=settings.embedding_max_retries,
+            retry_base_seconds=settings.embedding_retry_base_seconds,
+            retry_max_seconds=settings.embedding_retry_max_seconds,
+        )
         store.upsert(_embed_chunks(all_chunks, provider))
     if not dry_run:
         save_manifest(settings.manifest_path, manifest)
@@ -350,7 +458,14 @@ def update_markdown_index(
         files_deleted += 1
 
     if changed_chunks and not dry_run:
-        provider = OpenAIEmbeddingProvider(settings.embedding_model, config.openrouter_base_url)
+        provider = OpenAIEmbeddingProvider(
+            model=settings.embedding_model,
+            base_url=config.openrouter_base_url,
+            batch_size=settings.embedding_batch_size,
+            max_retries=settings.embedding_max_retries,
+            retry_base_seconds=settings.embedding_retry_base_seconds,
+            retry_max_seconds=settings.embedding_retry_max_seconds,
+        )
         store.upsert(_embed_chunks(changed_chunks, provider))
     if not dry_run:
         save_manifest(settings.manifest_path, manifest)
