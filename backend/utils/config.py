@@ -57,6 +57,7 @@ class VectorStoreConfig(BaseModel):
     chroma_persist_path: Path = Field(default_factory=lambda: Path(".chroma"))
     chroma_collection_name: str = "markdown_chunks"
     embedding_model: str = "text-embedding-3-large"
+    embedding_max_input_tokens: int | None = 8000
     embedding_batch_size: int = 100
     embedding_max_retries: int = 3
     embedding_retry_base_seconds: float = 0.8
@@ -142,6 +143,7 @@ def load_config(config_path: Optional[Path] = None) -> AppConfig:
     chroma_persist_path = os.getenv("CHROMA_PERSIST_PATH")
     chroma_collection_name = os.getenv("CHROMA_COLLECTION_NAME")
     embedding_model = os.getenv("EMBEDDING_MODEL")
+    embedding_max_input_tokens = os.getenv("EMBEDDING_MAX_INPUT_TOKENS")
     embedding_batch_size = os.getenv("EMBEDDING_BATCH_SIZE")
     embedding_max_retries = os.getenv("EMBEDDING_MAX_RETRIES")
     embedding_retry_base_seconds = os.getenv("EMBEDDING_RETRY_BASE_SECONDS")
@@ -195,6 +197,16 @@ def load_config(config_path: Optional[Path] = None) -> AppConfig:
         config.vector_store.chroma_collection_name = chroma_collection_name
     if embedding_model:
         config.vector_store.embedding_model = embedding_model
+    if embedding_max_input_tokens:
+        parsed_embedding_max_input_tokens = _parse_env_int(
+            "EMBEDDING_MAX_INPUT_TOKENS",
+            embedding_max_input_tokens,
+        )
+        config.vector_store.embedding_max_input_tokens = (
+            parsed_embedding_max_input_tokens
+            if parsed_embedding_max_input_tokens > 0
+            else None
+        )
     if embedding_batch_size:
         config.vector_store.embedding_batch_size = _parse_env_int(
             "EMBEDDING_BATCH_SIZE",

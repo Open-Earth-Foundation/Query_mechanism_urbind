@@ -44,6 +44,7 @@ vector_store:
   chroma_persist_path: ".chroma"
   chroma_collection_name: "markdown_chunks"
   embedding_model: "text-embedding-3-large"
+  embedding_max_input_tokens: 8000
   embedding_chunk_tokens: 800
   embedding_chunk_overlap_tokens: 80
   table_row_group_max_rows: 25

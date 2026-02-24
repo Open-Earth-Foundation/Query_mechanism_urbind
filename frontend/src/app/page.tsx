@@ -37,6 +37,7 @@ import {
   fetchRunContext,
   fetchRunOutput,
   fetchRunStatus,
+  getApiBaseUrl,
   setUserApiKey,
   startRun,
 } from "@/lib/api";
@@ -84,6 +85,7 @@ export default function Home() {
   const [chatEnabled, setChatEnabled] = useState(false);
   const [chatOpen, setChatOpen] = useState(false);
   const [assumptionsOpen, setAssumptionsOpen] = useState(false);
+  const [resolvedApiBaseUrl, setResolvedApiBaseUrl] = useState(apiBaseUrl);
 
   const runId = runResponse?.run_id ?? null;
   const statusValue = runStatus?.status ?? runResponse?.status ?? null;
@@ -104,6 +106,10 @@ export default function Home() {
     setUsingCustomApiKey(true);
   }, []);
 
+  useEffect(() => {
+    setResolvedApiBaseUrl(getApiBaseUrl());
+  }, []);
+
   const hydrateRunById = useCallback(async (targetRunId: string): Promise<void> => {
     const trimmedRunId = targetRunId.trim();
     if (!trimmedRunId) {
@@ -113,9 +119,9 @@ export default function Home() {
     setRunResponse({
       run_id: trimmedRunId,
       status: statusPayload.status,
-      status_url: `${apiBaseUrl}/api/v1/runs/${trimmedRunId}/status`,
-      output_url: `${apiBaseUrl}/api/v1/runs/${trimmedRunId}/output`,
-      context_url: `${apiBaseUrl}/api/v1/runs/${trimmedRunId}/context`,
+      status_url: `${getApiBaseUrl()}/api/v1/runs/${trimmedRunId}/status`,
+      output_url: `${getApiBaseUrl()}/api/v1/runs/${trimmedRunId}/output`,
+      context_url: `${getApiBaseUrl()}/api/v1/runs/${trimmedRunId}/context`,
     });
     setRunStatus(statusPayload);
     setRunOutput(null);
@@ -492,7 +498,7 @@ export default function Home() {
                 This flow is document-first. You submit a build run, wait for completion, review the generated document, then switch into context chat workspace.
               </p>
             </div>
-            <Badge variant="outline">API: {apiBaseUrl}</Badge>
+            <Badge variant="outline">API: {resolvedApiBaseUrl}</Badge>
           </div>
         </header>
 

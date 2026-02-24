@@ -12,6 +12,7 @@ class VectorStoreSettings:
     persist_path: Path
     collection_name: str
     embedding_model: str
+    embedding_max_input_tokens: int | None
     embedding_batch_size: int
     embedding_max_retries: int
     embedding_retry_base_seconds: float
@@ -37,6 +38,7 @@ def get_vector_store_settings(config: AppConfig) -> VectorStoreSettings:
         persist_path=vector_store.chroma_persist_path,
         collection_name=vector_store.chroma_collection_name,
         embedding_model=vector_store.embedding_model,
+        embedding_max_input_tokens=vector_store.embedding_max_input_tokens,
         embedding_batch_size=vector_store.embedding_batch_size,
         embedding_max_retries=vector_store.embedding_max_retries,
         embedding_retry_base_seconds=vector_store.embedding_retry_base_seconds,

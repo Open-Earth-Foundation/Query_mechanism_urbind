@@ -175,6 +175,7 @@ def test_manifest_update_skips_unchanged_and_updates_changed(
             max_retries: int = 3,
             retry_base_seconds: float = 0.8,
             retry_max_seconds: float = 8.0,
+            max_input_tokens: int | None = None,
         ) -> None:
             self.model = model
             self.base_url = base_url
@@ -182,6 +183,7 @@ def test_manifest_update_skips_unchanged_and_updates_changed(
             self.max_retries = max_retries
             self.retry_base_seconds = retry_base_seconds
             self.retry_max_seconds = retry_max_seconds
+            self.max_input_tokens = max_input_tokens
 
         def embed_texts(self, texts: list[str]) -> list[list[float] | None]:
             return [[0.1, 0.2, 0.3] for _ in texts]
@@ -230,6 +232,53 @@ def test_pack_blocks_keeps_tables_as_table_chunks() -> None:
     assert table_chunks
     assert all("| --- | --- |" in chunk.raw_text for chunk in table_chunks)
     assert all(chunk.table_title is not None for chunk in table_chunks)
+
+
+def test_pack_blocks_splits_single_oversized_non_table_block() -> None:
+    """Single oversized non-table block is split to keep all chunks under budget."""
+    oversized_paragraph = " ".join(["longtoken"] * 2500)
+    text = "\n".join(
+        [
+            "# Section",
+            "",
+            oversized_paragraph,
+        ]
+    )
+    blocks = parse_markdown_blocks(text)
+    max_tokens = 200
+    chunks = pack_blocks(blocks=blocks, max_tokens=max_tokens, overlap_tokens=0)
+    assert count_tokens(oversized_paragraph) > max_tokens
+    assert len(chunks) > 1
+    assert all(count_tokens(chunk.raw_text) <= max_tokens for chunk in chunks)
+    assert all(count_tokens(chunk.embedding_text) <= max_tokens for chunk in chunks)
+
+
+def test_pack_blocks_splits_single_oversized_code_block() -> None:
+    """Single oversized fenced code block is split to keep all code chunks under budget."""
+    code_payload = "\n".join(
+        f'{{"index": {index}, "value": "{("longtoken " * 20).strip()}"}}'
+        for index in range(600)
+    )
+    text = "\n".join(
+        [
+            "# Section",
+            "",
+            "```json",
+            code_payload,
+            "```",
+        ]
+    )
+    blocks = parse_markdown_blocks(text)
+    code_blocks = [block for block in blocks if block.block_type == "code"]
+    assert len(code_blocks) == 1
+    max_tokens = 200
+    assert count_tokens(code_blocks[0].text) > max_tokens
+
+    chunks = pack_blocks(blocks=blocks, max_tokens=max_tokens, overlap_tokens=0)
+    code_chunks = [chunk for chunk in chunks if chunk.block_type == "code"]
+    assert len(code_chunks) > 1
+    assert all(count_tokens(chunk.raw_text) <= max_tokens for chunk in code_chunks)
+    assert all(count_tokens(chunk.embedding_text) <= max_tokens for chunk in code_chunks)
 
 
 def test_reset_collection_ignores_collection_not_found_error(monkeypatch) -> None:
@@ -336,6 +385,7 @@ def test_update_markdown_index_filtered_city_does_not_delete_other_manifest_entr
             max_retries: int = 3,
             retry_base_seconds: float = 0.8,
             retry_max_seconds: float = 8.0,
+            max_input_tokens: int | None = None,
         ) -> None:
             self.model = model
             self.base_url = base_url
@@ -343,6 +393,7 @@ def test_update_markdown_index_filtered_city_does_not_delete_other_manifest_entr
             self.max_retries = max_retries
             self.retry_base_seconds = retry_base_seconds
             self.retry_max_seconds = retry_max_seconds
+            self.max_input_tokens = max_input_tokens
 
         def embed_texts(self, texts: list[str]) -> list[list[float] | None]:
             return [[0.1, 0.2, 0.3] for _ in texts]
@@ -492,6 +543,53 @@ def test_openai_embedding_provider_returns_none_for_permanently_failing_items(
     assert vectors[0] == [1.0]
     assert vectors[1] is None
     assert vectors[2] == [1.0]
+
+
+def test_openai_embedding_provider_truncates_texts_over_max_input_tokens(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Provider trims oversized texts to max_input_tokens before API calls."""
+    monkeypatch.setenv("OPENAI_API_KEY", "test-key")
+
+    class FakeEmbeddingItem:
+        def __init__(self, embedding: list[float]) -> None:
+            self.embedding = embedding
+
+    class FakeResponse:
+        def __init__(self, embeddings: list[list[float]]) -> None:
+            self.data = [FakeEmbeddingItem(embedding) for embedding in embeddings]
+
+    class FakeEmbeddingsApi:
+        captured_inputs: list[str] = []
+
+        def create(self, model: str, input: list[str]) -> FakeResponse:
+            del model
+            self.__class__.captured_inputs.extend(input)
+            return FakeResponse([[1.0] for _ in input])
+
+    class FakeOpenAIClient:
+        def __init__(self, api_key: str, base_url: str | None = None) -> None:
+            del api_key, base_url
+            self.embeddings = FakeEmbeddingsApi()
+
+    monkeypatch.setattr("backend.modules.vector_store.indexer.OpenAI", FakeOpenAIClient)
+    provider = OpenAIEmbeddingProvider(
+        model="test-embedding",
+        batch_size=10,
+        max_retries=0,
+        retry_base_seconds=0.0,
+        retry_max_seconds=0.0,
+        max_input_tokens=20,
+    )
+    oversized_text = " ".join(["longtoken"] * 300)
+    assert count_tokens(oversized_text) > 20
+
+    vectors = provider.embed_texts([oversized_text, "ok"])
+
+    assert vectors == [[1.0], [1.0]]
+    assert len(FakeEmbeddingsApi.captured_inputs) == 2
+    assert count_tokens(FakeEmbeddingsApi.captured_inputs[0]) <= 20
+    assert FakeEmbeddingsApi.captured_inputs[0] != oversized_text
 
 
 def test_pack_blocks_table_embedding_text_bounded_by_max_tokens() -> None:

@@ -200,25 +200,41 @@ function normalizeCityKeys(values?: string[]): string[] | undefined {
   return normalized.length > 0 ? normalized : undefined;
 }
 
-const configuredBaseUrl = (
-  globalThis as {
-    process?: { env?: { NEXT_PUBLIC_API_BASE_URL?: string } };
-  }
-).process?.env?.NEXT_PUBLIC_API_BASE_URL?.trim();
+const configuredBaseUrl = process.env.NEXT_PUBLIC_API_BASE_URL?.trim() ?? "";
+const LOCAL_API_BASE_URL = "http://127.0.0.1:8000";
+const DEFAULT_API_BASE_URL = "https://urbind-query-mechanism-api.openearth.dev";
 
-function resolveFallbackApiBaseUrl(): string {
-  const locationHost = globalThis.location?.hostname?.toLowerCase() ?? "";
-  if (locationHost === "localhost" || locationHost === "127.0.0.1") {
-    return "http://127.0.0.1:8000";
-  }
-  return "https://urbind-query-mechanism-api.openearth.dev";
+function normalizeBaseUrl(baseUrl: string): string {
+  return baseUrl.replace(/\/+$/, "");
 }
 
-export const apiBaseUrl = (
-  configuredBaseUrl && configuredBaseUrl.length > 0
-    ? configuredBaseUrl
-    : resolveFallbackApiBaseUrl()
-).replace(/\/+$/, "");
+function resolveClientFallbackApiBaseUrl(): string {
+  const locationHost = globalThis.location?.hostname?.toLowerCase() ?? "";
+  if (locationHost === "localhost" || locationHost === "127.0.0.1") {
+    return LOCAL_API_BASE_URL;
+  }
+  if (locationHost.endsWith(".openearth.dev")) {
+    return DEFAULT_API_BASE_URL;
+  }
+  if (locationHost.length > 0) {
+    return `http://${locationHost}:8000`;
+  }
+  return DEFAULT_API_BASE_URL;
+}
+
+export const apiBaseUrl = normalizeBaseUrl(
+  configuredBaseUrl.length > 0 ? configuredBaseUrl : DEFAULT_API_BASE_URL,
+);
+
+export function getApiBaseUrl(): string {
+  if (configuredBaseUrl.length > 0) {
+    return normalizeBaseUrl(configuredBaseUrl);
+  }
+  if (typeof window !== "undefined") {
+    return normalizeBaseUrl(resolveClientFallbackApiBaseUrl());
+  }
+  return apiBaseUrl;
+}
 
 let userApiKey: string | null = null;
 
@@ -243,7 +259,7 @@ async function requestJson<T>(
   init?: RequestInit,
   includeJsonContentType = false,
 ): Promise<T> {
-  const response = await fetch(`${apiBaseUrl}${path}`, {
+  const response = await fetch(`${getApiBaseUrl()}${path}`, {
     ...init,
     headers: {
       ...buildHeaders(includeJsonContentType),

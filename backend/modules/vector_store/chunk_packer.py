@@ -8,7 +8,7 @@ from backend.modules.vector_store.table_utils import (
     split_markdown_table_by_row_groups,
     summarize_table_for_embedding,
 )
-from backend.utils.tokenization import count_tokens
+from backend.utils.tokenization import chunk_text, count_tokens
 
 
 def _build_table_id(block: MdBlock) -> str:
@@ -117,18 +117,40 @@ def _split_large_table_block(
     return split_blocks
 
 
+def _split_large_non_table_block(block: MdBlock, max_tokens: int) -> list[MdBlock]:
+    """Split one oversized non-table block into token-bounded blocks."""
+    split_blocks: list[MdBlock] = []
+    for chunk in chunk_text(block.text, max_tokens=max_tokens, overlap_tokens=0):
+        if not chunk.strip():
+            continue
+        split_blocks.append(
+            MdBlock(
+                block_type=block.block_type,
+                text=chunk,
+                heading_path=block.heading_path,
+                start_line=block.start_line,
+                end_line=block.end_line,
+            )
+        )
+    return split_blocks or [block]
+
+
 def _normalize_blocks_for_budget(
     blocks: list[MdBlock],
     max_tokens: int,
     max_rows_per_group: int,
 ) -> list[MdBlock]:
-    """Replace oversized tables with row-grouped table blocks."""
+    """Replace oversized blocks with budget-compliant split blocks."""
     normalized: list[MdBlock] = []
     for block in blocks:
-        if block.block_type == "table" and count_tokens(block.text) > max_tokens:
+        block_tokens = count_tokens(block.text)
+        if block.block_type == "table" and block_tokens > max_tokens:
             normalized.extend(
                 _split_large_table_block(block, max_tokens, max_rows_per_group)
             )
+            continue
+        if block.block_type != "table" and block_tokens > max_tokens:
+            normalized.extend(_split_large_non_table_block(block, max_tokens))
             continue
         normalized.append(block)
     return normalized
@@ -207,6 +229,20 @@ def pack_blocks(
             )
         )
 
+    def collect_overlap_blocks(previous_blocks: list[MdBlock]) -> list[MdBlock]:
+        """Collect trailing blocks up to the configured overlap token budget."""
+        if overlap_tokens <= 0:
+            return []
+        overlap_blocks: list[MdBlock] = []
+        overlap_budget = 0
+        for previous_block in reversed(previous_blocks):
+            block_tokens = count_tokens(previous_block.text)
+            if overlap_blocks and overlap_budget + block_tokens > overlap_tokens:
+                break
+            overlap_blocks.insert(0, previous_block)
+            overlap_budget += block_tokens
+        return overlap_blocks
+
     for block in normalized_blocks:
         if not block.text.strip():
             continue
@@ -231,20 +267,22 @@ def pack_blocks(
         candidate_text = _join_block_texts(candidate_blocks)
         if not candidate_text:
             continue
-        if current_blocks and count_tokens(candidate_text) > max_tokens:
-            flush_chunk(current_blocks)
-            if overlap_tokens > 0:
-                overlap_blocks: list[MdBlock] = []
-                overlap_budget = 0
-                for previous_block in reversed(current_blocks):
-                    block_tokens = count_tokens(previous_block.text)
-                    if overlap_blocks and overlap_budget + block_tokens > overlap_tokens:
-                        break
-                    overlap_blocks.insert(0, previous_block)
-                    overlap_budget += block_tokens
-                current_blocks = overlap_blocks
-            else:
+        if count_tokens(candidate_text) > max_tokens:
+            if current_blocks:
+                previous_blocks = current_blocks
+                flush_chunk(previous_blocks)
+                current_blocks = collect_overlap_blocks(previous_blocks)
+                while current_blocks and count_tokens(
+                    _join_block_texts([*current_blocks, block])
+                ) > max_tokens:
+                    current_blocks.pop(0)
+                candidate_blocks = [*current_blocks, block]
+                candidate_text = _join_block_texts(candidate_blocks)
+            if candidate_text and count_tokens(candidate_text) > max_tokens:
+                for split_block in _split_large_non_table_block(block, max_tokens):
+                    flush_chunk([split_block])
                 current_blocks = []
+                continue
         current_blocks.append(block)
 
     flush_chunk(current_blocks)

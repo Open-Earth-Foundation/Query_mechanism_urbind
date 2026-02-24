@@ -8,6 +8,7 @@ from contextlib import asynccontextmanager
 from pathlib import Path
 from typing import AsyncIterator
 
+from dotenv import load_dotenv
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -79,6 +80,7 @@ def create_app(
     city_groups_path: Path | None = None,
 ) -> FastAPI:
     """Create FastAPI app instance."""
+    load_dotenv()
     setup_logger()
     resolved_runs_dir = _resolve_runs_dir(runs_dir)
     resolved_workers = _resolve_worker_count(max_workers)
@@ -135,6 +137,7 @@ def create_app(
         allow_methods=["*"],
         allow_headers=["*"],
     )
+    logger.info("CORS allow_origins=%s", _resolve_cors_origins())
     app.include_router(runs_router, prefix="/api/v1", tags=["runs"])
     app.include_router(cities_router, prefix="/api/v1", tags=["cities"])
     app.include_router(chat_router, prefix="/api/v1", tags=["chat"])

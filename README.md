@@ -59,6 +59,7 @@ Environment variables (`.env`):
 - `CHROMA_PERSIST_PATH` (optional, default `.chroma`): local Chroma persistence directory.
 - `CHROMA_COLLECTION_NAME` (optional, default `markdown_chunks`): Chroma collection used for markdown chunks.
 - `EMBEDDING_MODEL` (optional, default `text-embedding-3-large`): embedding model for vector index build/update.
+- `vector_store.embedding_max_input_tokens` in `llm_config.yaml` (default `8000`): hard per-text token cap before embedding requests; oversized texts are truncated to this limit. (`EMBEDDING_MAX_INPUT_TOKENS` env override is still supported.)
 - `EMBEDDING_BATCH_SIZE` (optional, default `100`): number of markdown chunks embedded per provider request.
 - `EMBEDDING_MAX_RETRIES` (optional, default `3`): retry count for failed/empty embedding responses before fallback.
 - `EMBEDDING_RETRY_BASE_SECONDS` (optional, default `0.8`): exponential backoff base delay between embedding retries.

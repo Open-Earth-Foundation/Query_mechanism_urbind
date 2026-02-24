@@ -48,3 +48,29 @@ def test_load_config_raises_clear_error_for_invalid_float_env(
 
     with pytest.raises(ValueError, match="VECTOR_STORE_RETRIEVAL_MAX_DISTANCE"):
         load_config(config_path)
+
+
+def test_load_config_reads_embedding_max_input_tokens_env(
+    monkeypatch: pytest.MonkeyPatch,
+    tmp_path: Path,
+) -> None:
+    """Embedding max input token cap can be configured from environment."""
+    config_path = _write_minimal_config(tmp_path)
+    monkeypatch.setenv("EMBEDDING_MAX_INPUT_TOKENS", "7000")
+
+    config = load_config(config_path)
+
+    assert config.vector_store.embedding_max_input_tokens == 7000
+
+
+def test_load_config_treats_non_positive_embedding_max_input_tokens_as_disabled(
+    monkeypatch: pytest.MonkeyPatch,
+    tmp_path: Path,
+) -> None:
+    """Non-positive embedding max input token env values disable the hard cap."""
+    config_path = _write_minimal_config(tmp_path)
+    monkeypatch.setenv("EMBEDDING_MAX_INPUT_TOKENS", "0")
+
+    config = load_config(config_path)
+
+    assert config.vector_store.embedding_max_input_tokens is None

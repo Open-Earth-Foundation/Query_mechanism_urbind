@@ -1,6 +1,7 @@
 "use client";
 
 import { MouseEvent, useEffect, useMemo, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
@@ -18,15 +19,22 @@ interface MarkdownWithReferencesProps {
   className?: string;
 }
 
-const REFERENCE_TOKEN_PATTERN = /\[(ref_\d+)\]/g;
-const REFERENCE_HREF_PREFIX = "ref://";
+const REFERENCE_TOKEN_PATTERN = /\[(ref_\d+)\](?!\()|(?<![\w[/])(ref_\d+)\b/g;
+const REFERENCE_HREF_PREFIX = "#ref-";
 const POPOVER_WIDTH_PX = 360;
 const POPOVER_MARGIN_PX = 12;
+const POPOVER_ESTIMATED_HEIGHT_PX = 280;
 
 function _toReferenceMarkdown(content: string): string {
   return content.replace(
     REFERENCE_TOKEN_PATTERN,
-    (_match, refId: string) => `[${refId}](${REFERENCE_HREF_PREFIX}${refId})`,
+    (_match, bracketedRefId: string | undefined, bareRefId: string | undefined) => {
+      const refId = bracketedRefId ?? bareRefId;
+      if (!refId) {
+        return _match;
+      }
+      return `[${refId}](${REFERENCE_HREF_PREFIX}${refId})`;
+    },
   );
 }
 
@@ -36,6 +44,18 @@ function _resolvePopoverLeft(left: number): number {
     POPOVER_MARGIN_PX,
   );
   return Math.min(Math.max(left, POPOVER_MARGIN_PX), maxLeft);
+}
+
+function _resolvePopoverTop(top: number, bottom: number): number {
+  const preferredTop = bottom + 8;
+  const maxTop = Math.max(
+    window.innerHeight - POPOVER_ESTIMATED_HEIGHT_PX - POPOVER_MARGIN_PX,
+    POPOVER_MARGIN_PX,
+  );
+  if (preferredTop <= maxTop) {
+    return preferredTop;
+  }
+  return Math.max(top - POPOVER_ESTIMATED_HEIGHT_PX - 8, POPOVER_MARGIN_PX);
 }
 
 export function MarkdownWithReferences({
@@ -108,7 +128,7 @@ export function MarkdownWithReferences({
     const targetRect = event.currentTarget.getBoundingClientRect();
     setActivePopover({
       refId,
-      top: targetRect.bottom + 8,
+      top: _resolvePopoverTop(targetRect.top, targetRect.bottom),
       left: _resolvePopoverLeft(targetRect.left),
     });
     setReferenceError(null);
@@ -158,7 +178,11 @@ export function MarkdownWithReferences({
                 );
               }
               return (
-                <a href={href} target="_blank" rel="noreferrer">
+                <a
+                  href={href}
+                  target={/^https?:\/\//i.test(href ?? "") ? "_blank" : undefined}
+                  rel={/^https?:\/\//i.test(href ?? "") ? "noreferrer" : undefined}
+                >
                   {children}
                 </a>
               );
@@ -169,58 +193,51 @@ export function MarkdownWithReferences({
         </ReactMarkdown>
       </div>
 
-      {activePopover ? (
-        <div
-          ref={popoverRef}
-          className="citation-popover"
-          style={{ top: `${activePopover.top}px`, left: `${activePopover.left}px` }}
-        >
-          <div className="citation-popover-header">
-            <strong>{activePopover.refId}</strong>
-            <button
-              type="button"
-              className="citation-popover-close"
-              onClick={() => {
-                setActivePopover(null);
-                setReferenceError(null);
-              }}
+      {activePopover
+        ? createPortal(
+            <div
+              ref={popoverRef}
+              className="citation-popover"
+              style={{ top: `${activePopover.top}px`, left: `${activePopover.left}px` }}
             >
-              Close
-            </button>
-          </div>
+              <div className="citation-popover-header">
+                <strong>{activePopover.refId}</strong>
+                <button
+                  type="button"
+                  className="citation-popover-close"
+                  onClick={() => {
+                    setActivePopover(null);
+                    setReferenceError(null);
+                  }}
+                >
+                  Close
+                </button>
+              </div>
 
-          {loadingRefId === activePopover.refId && !activeReference ? (
-            <p className="citation-popover-muted">Loading reference...</p>
-          ) : null}
+              {loadingRefId === activePopover.refId && !activeReference ? (
+                <p className="citation-popover-muted">Loading reference...</p>
+              ) : null}
 
-          {referenceError ? (
-            <p className="citation-popover-error">{referenceError}</p>
-          ) : null}
+              {referenceError ? (
+                <p className="citation-popover-error">{referenceError}</p>
+              ) : null}
 
-          {!referenceError && activeReference ? (
-            <div className="citation-popover-body">
-              <p>
-                <span className="citation-popover-label">City:</span>{" "}
-                {activeReference.city_name || "(unknown)"}
-              </p>
-              <p>
-                <span className="citation-popover-label">Quote:</span>{" "}
-                {activeReference.quote || "(empty quote)"}
-              </p>
-              <p>
-                <span className="citation-popover-label">Partial answer:</span>{" "}
-                {activeReference.partial_answer || "(empty partial answer)"}
-              </p>
-              <p>
-                <span className="citation-popover-label">Chunk ids:</span>{" "}
-                {activeReference.source_chunk_ids.length > 0
-                  ? activeReference.source_chunk_ids.join(", ")
-                  : "(none)"}
-              </p>
-            </div>
-          ) : null}
-        </div>
-      ) : null}
+              {!referenceError && activeReference ? (
+                <div className="citation-popover-body">
+                  <p>
+                    <span className="citation-popover-label">City:</span>{" "}
+                    {activeReference.city_name || "(unknown)"}
+                  </p>
+                  <p>
+                    <span className="citation-popover-label">Quote:</span>{" "}
+                    {activeReference.quote || "(empty quote)"}
+                  </p>
+                </div>
+              ) : null}
+            </div>,
+            document.body,
+          )
+        : null}
     </>
   );
 }

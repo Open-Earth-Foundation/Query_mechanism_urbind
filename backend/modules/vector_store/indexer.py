@@ -25,6 +25,7 @@ from backend.modules.vector_store.markdown_blocks import parse_markdown_blocks
 from backend.modules.vector_store.models import EmbeddingProvider, IndexedChunk
 from backend.utils.city_normalization import normalize_city_key
 from backend.utils.config import AppConfig, load_config
+from backend.utils.tokenization import chunk_text, count_tokens
 
 logger = logging.getLogger(__name__)
 
@@ -54,6 +55,7 @@ class OpenAIEmbeddingProvider(EmbeddingProvider):
         max_retries: int = 3,
         retry_base_seconds: float = 0.8,
         retry_max_seconds: float = 8.0,
+        max_input_tokens: int | None = 8000,
     ) -> None:
         api_key = os.getenv("OPENAI_API_KEY") or os.getenv("OPENROUTER_API_KEY")
         if not api_key:
@@ -70,6 +72,29 @@ class OpenAIEmbeddingProvider(EmbeddingProvider):
         self._max_retries = max(max_retries, 0)
         self._retry_base_seconds = max(retry_base_seconds, 0.0)
         self._retry_max_seconds = max(retry_max_seconds, self._retry_base_seconds)
+        self._max_input_tokens = (
+            max_input_tokens if max_input_tokens is not None and max_input_tokens > 0 else None
+        )
+
+    def _trim_text_to_input_limit(self, text: str) -> str:
+        """Trim one text to provider input limit when configured."""
+        if self._max_input_tokens is None:
+            return text
+        token_count = count_tokens(text)
+        if token_count <= self._max_input_tokens:
+            return text
+        truncated = chunk_text(text, max_tokens=self._max_input_tokens, overlap_tokens=0)[0]
+        logger.warning(
+            "Embedding input exceeded token limit; truncating model=%s original_tokens=%d "
+            "truncated_tokens=%d original_chars=%d truncated_chars=%d max_input_tokens=%d",
+            self._model,
+            token_count,
+            count_tokens(truncated),
+            len(text),
+            len(truncated),
+            self._max_input_tokens,
+        )
+        return truncated
 
     def _embed_batch_once(self, texts: list[str]) -> list[list[float]]:
         """Send one embeddings request and validate response length."""
@@ -77,11 +102,21 @@ class OpenAIEmbeddingProvider(EmbeddingProvider):
             response = self._client.embeddings.create(model=self._model, input=texts)
         except Exception as exc:
             if "No embedding data" in str(exc):
+                text_lengths = [len(text) for text in texts]
+                token_lengths = [count_tokens(text) for text in texts]
                 try:
                     raw = self._client.with_raw_response.embeddings.create(model=self._model, input=texts)
-                    msg = f"No embedding data received. Provider error: {raw.http_response.text}. Texts lengths: {[len(t) for t in texts]}"
+                    msg = (
+                        "No embedding data received. "
+                        f"Provider error: {raw.http_response.text}. "
+                        f"Texts lengths: {text_lengths}. Texts token lengths: {token_lengths}"
+                    )
                 except Exception as e2:
-                    msg = f"No embedding data received. Texts lengths: {[len(t) for t in texts]}. Also failed to get raw response: {e2}"
+                    msg = (
+                        "No embedding data received. "
+                        f"Texts lengths: {text_lengths}. Texts token lengths: {token_lengths}. "
+                        f"Also failed to get raw response: {e2}"
+                    )
                 raise ValueError(msg) from exc
             raise
         embeddings = [item.embedding for item in response.data]
@@ -146,9 +181,10 @@ class OpenAIEmbeddingProvider(EmbeddingProvider):
         """
         if not texts:
             return []
+        prepared_texts = [self._trim_text_to_input_limit(text) for text in texts]
         vectors: list[list[float] | None] = []
-        for start in range(0, len(texts), self._batch_size):
-            batch = texts[start : start + self._batch_size]
+        for start in range(0, len(prepared_texts), self._batch_size):
+            batch = prepared_texts[start : start + self._batch_size]
             try:
                 vectors.extend(self._embed_batch_with_retries(batch))
             except Exception as exc:
@@ -363,6 +399,7 @@ def build_markdown_index(
             max_retries=settings.embedding_max_retries,
             retry_base_seconds=settings.embedding_retry_base_seconds,
             retry_max_seconds=settings.embedding_retry_max_seconds,
+            max_input_tokens=settings.embedding_max_input_tokens,
         )
         store.upsert(_embed_chunks(all_chunks, provider))
     if not dry_run:
@@ -465,6 +502,7 @@ def update_markdown_index(
             max_retries=settings.embedding_max_retries,
             retry_base_seconds=settings.embedding_retry_base_seconds,
             retry_max_seconds=settings.embedding_retry_max_seconds,
+            max_input_tokens=settings.embedding_max_input_tokens,
         )
         store.upsert(_embed_chunks(changed_chunks, provider))
     if not dry_run:

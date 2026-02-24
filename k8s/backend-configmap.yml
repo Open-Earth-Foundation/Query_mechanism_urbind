@@ -27,4 +27,4 @@ data:
   CHAT_PROMPT_TOKEN_CAP: "250000"
   CHAT_PROVIDER_TIMEOUT_SECONDS: "50"
   LOG_LEVEL: "INFO"
-  API_CORS_ORIGINS: "https://urbind-query-mechanism.openearth.dev"
+  API_CORS_ORIGINS: "https://urbind-query-mechanism.openearth.dev,http://192.168.0.244:3000,http://localhost:3000,http://127.0.0.1:3000"

@@ -67,6 +67,7 @@ def _embed_queries(queries: list[str], config: AppConfig) -> dict[str, list[floa
     provider = OpenAIEmbeddingProvider(
         model=config.vector_store.embedding_model,
         base_url=config.openrouter_base_url,
+        max_input_tokens=config.vector_store.embedding_max_input_tokens,
     )
     embeddings = provider.embed_texts(queries)
     result: dict[str, list[float]] = {}

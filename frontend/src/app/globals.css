@@ -76,8 +76,10 @@ body {
 
 .citation-popover {
   position: fixed;
-  z-index: 70;
+  z-index: 9999;
   width: min(360px, calc(100vw - 24px));
+  max-height: min(420px, calc(100vh - 24px));
+  overflow-y: auto;
   border: 1px solid #d9e2f2;
   border-radius: 0.65rem;
   background: #ffffff;
