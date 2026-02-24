@@ -16,6 +16,7 @@ Outputs:
 - Upserts changed/new files and deletes removed-file chunks in Chroma.
 - Updates manifest file (unless --dry-run).
 - Log output with changed/unchanged/deleted file stats.
+- Non-zero exit on embedding failures; no delete/upsert/manifest write is committed.
 
 Usage (from project root):
 - python -m backend.scripts.update_markdown_index --docs-dir documents

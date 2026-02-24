@@ -639,6 +639,8 @@ Build markdown index from scratch:
 python -m backend.scripts.build_markdown_index --docs-dir documents
 ```
 
+The build now fails fast on embedding failures and exits non-zero before any collection reset or manifest write.
+
 Analyze retrieval distance distributions (to help choose `VECTOR_STORE_RETRIEVAL_MAX_DISTANCE`):
 
 ```
@@ -663,6 +665,8 @@ Incrementally update existing index:
 ```
 python -m backend.scripts.update_markdown_index --docs-dir documents
 ```
+
+The update now fails fast on embedding failures and exits non-zero before any delete/upsert/manifest-write commit.
 
 **Building the vector index on Kubernetes:** The backend and the one-off build Job share the same PVC mounted once at `/data` (no subPath). Both use the same `securityContext` (runAsUser 0, DAC_READ_SEARCH) so the Job can write `/data/chroma` and the backend can read it. Apply the Job from the repo root (see `k8s/backend-build-vector-index-job.yml` header for full steps):
 

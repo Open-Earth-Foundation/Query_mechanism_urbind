@@ -22,6 +22,7 @@ Outputs:
 - Chroma collection persisted to disk (unless --dry-run).
 - Manifest file at vector store manifest path (unless --dry-run).
 - Log output with file/chunk/token statistics.
+- Non-zero exit on embedding failures; no collection reset or manifest write is committed.
 
 Usage (from project root):
 - python -m backend.scripts.build_markdown_index --docs-dir documents

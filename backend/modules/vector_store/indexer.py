@@ -44,6 +44,10 @@ class IndexStats:
     dry_run: bool
 
 
+class EmbeddingIndexingError(RuntimeError):
+    """Raised when one or more chunks fail to embed during index operations."""
+
+
 class OpenAIEmbeddingProvider(EmbeddingProvider):
     """Embedding provider backed by OpenAI-compatible embeddings API."""
 
@@ -295,23 +299,48 @@ def _collect_token_stats(chunks: list[IndexedChunk]) -> tuple[int, float, int]:
     return min(token_counts), sum(token_counts) / len(token_counts), max(token_counts)
 
 
-def _embed_chunks(chunks: list[IndexedChunk], provider: EmbeddingProvider) -> list[IndexedChunk]:
+def _embed_chunks(
+    chunks: list[IndexedChunk],
+    provider: EmbeddingProvider,
+    operation_name: str,
+) -> list[IndexedChunk]:
     """Attach embeddings to chunk objects using provider output.
 
-    Chunks whose embedding permanently failed (``None``) are logged and
-    dropped so a single bad chunk never aborts the whole indexing run.
+    Any permanently failed embedding (``None``) aborts the operation to avoid
+    partial index state and manifest/vector drift.
     """
     if not chunks:
         return []
     embeddings = provider.embed_texts([chunk.document for chunk in chunks])
-    embedded: list[IndexedChunk] = []
+    if len(embeddings) != len(chunks):
+        raise EmbeddingIndexingError(
+            f"{operation_name} aborted due to embedding response size mismatch: "
+            f"chunks={len(chunks)} embeddings={len(embeddings)}"
+        )
+
+    failed_chunks: list[IndexedChunk] = []
     for chunk, embedding in zip(chunks, embeddings, strict=True):
         if embedding is None:
-            logger.error(
-                "Chunk %s could not be embedded and will not be indexed",
-                chunk.chunk_id,
-            )
-            continue
+            failed_chunks.append(chunk)
+    if failed_chunks:
+        sample = ", ".join(
+            f"{chunk.chunk_id}@{chunk.metadata.get('source_path', '<unknown>')}"
+            for chunk in failed_chunks[:5]
+        )
+        logger.error(
+            "%s aborted due to embedding failures failed=%d total=%d sample=%s",
+            operation_name,
+            len(failed_chunks),
+            len(chunks),
+            sample,
+        )
+        raise EmbeddingIndexingError(
+            f"{operation_name} aborted due to embedding failures "
+            f"(failed={len(failed_chunks)}, total={len(chunks)})."
+        )
+
+    embedded: list[IndexedChunk] = []
+    for chunk, embedding in zip(chunks, embeddings, strict=True):
         embedded.append(
             IndexedChunk(
                 chunk_id=chunk.chunk_id,
@@ -353,9 +382,6 @@ def build_markdown_index(
     settings = get_vector_store_settings(config)
     project_root = Path.cwd()
     files = _iter_markdown_files(docs_dir, selected_cities=selected_cities)
-    store = ChromaStore(settings.persist_path, settings.collection_name)
-    if not dry_run:
-        store.reset_collection()
 
     manifest = {"files": {}}
     mark_manifest_updated(
@@ -391,6 +417,7 @@ def build_markdown_index(
         chunks_dump_path.parent.mkdir(parents=True, exist_ok=True)
         chunks_dump_path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
 
+    embedded_chunks: list[IndexedChunk] = []
     if all_chunks and not dry_run:
         provider = OpenAIEmbeddingProvider(
             model=settings.embedding_model,
@@ -401,8 +428,16 @@ def build_markdown_index(
             retry_max_seconds=settings.embedding_retry_max_seconds,
             max_input_tokens=settings.embedding_max_input_tokens,
         )
-        store.upsert(_embed_chunks(all_chunks, provider))
+        embedded_chunks = _embed_chunks(
+            all_chunks,
+            provider,
+            operation_name="Index build",
+        )
     if not dry_run:
+        store = ChromaStore(settings.persist_path, settings.collection_name)
+        store.reset_collection()
+        if embedded_chunks:
+            store.upsert(embedded_chunks)
         save_manifest(settings.manifest_path, manifest)
 
     min_tokens, avg_tokens, max_tokens = _collect_token_stats(all_chunks)
@@ -441,7 +476,6 @@ def update_markdown_index(
     )
     files_section: dict[str, dict] = manifest.setdefault("files", {})
 
-    store = ChromaStore(settings.persist_path, settings.collection_name)
     current_files = _iter_markdown_files(docs_dir, selected_cities=selected_cities)
     current_source_map = {_source_path(path, project_root): path for path in current_files}
 
@@ -449,6 +483,8 @@ def update_markdown_index(
     files_changed = 0
     files_unchanged = 0
     files_deleted = 0
+    changed_entries: dict[str, tuple[str, list[str]]] = {}
+    previous_ids_by_source: dict[str, list[str]] = {}
 
     for source_path, file_path in current_source_map.items():
         content = file_path.read_text(encoding="utf-8")
@@ -461,16 +497,11 @@ def update_markdown_index(
         previous_chunk_ids = (
             previous.get("chunk_ids", []) if isinstance(previous, dict) else []
         )
-        if previous_chunk_ids and not dry_run:
-            store.delete([str(chunk_id) for chunk_id in previous_chunk_ids])
 
         file_hash, chunks = _build_indexed_chunks_for_file(file_path, settings, project_root)
-        _apply_manifest_file_entry(
-            manifest=manifest,
-            source_path=source_path,
-            file_hash=file_hash,
-            chunk_ids=[chunk.chunk_id for chunk in chunks],
-        )
+        chunk_ids = [chunk.chunk_id for chunk in chunks]
+        changed_entries[source_path] = (file_hash, chunk_ids)
+        previous_ids_by_source[source_path] = [str(chunk_id) for chunk_id in previous_chunk_ids]
         changed_chunks.extend(chunks)
         files_changed += 1
 
@@ -487,13 +518,16 @@ def update_markdown_index(
         removed_sources = sorted(manifest_sources_in_scope - current_source_keys)
     else:
         removed_sources = sorted(set(files_section.keys()) - current_source_keys)
-    for source_path in removed_sources:
-        chunk_ids = files_section[source_path].get("chunk_ids", [])
-        if chunk_ids and not dry_run:
-            store.delete([str(chunk_id) for chunk_id in chunk_ids])
-        files_section.pop(source_path, None)
-        files_deleted += 1
+    removed_ids_by_source: dict[str, list[str]] = {
+        source_path: [
+            str(chunk_id)
+            for chunk_id in files_section[source_path].get("chunk_ids", [])
+        ]
+        for source_path in removed_sources
+    }
+    files_deleted = len(removed_sources)
 
+    embedded_changed_chunks: list[IndexedChunk] = []
     if changed_chunks and not dry_run:
         provider = OpenAIEmbeddingProvider(
             model=settings.embedding_model,
@@ -504,8 +538,28 @@ def update_markdown_index(
             retry_max_seconds=settings.embedding_retry_max_seconds,
             max_input_tokens=settings.embedding_max_input_tokens,
         )
-        store.upsert(_embed_chunks(changed_chunks, provider))
+        embedded_changed_chunks = _embed_chunks(
+            changed_chunks,
+            provider,
+            operation_name="Index update",
+        )
     if not dry_run:
+        store = ChromaStore(settings.persist_path, settings.collection_name)
+        if embedded_changed_chunks:
+            store.upsert(embedded_changed_chunks)
+        for source_path, chunk_ids in previous_ids_by_source.items():
+            if chunk_ids:
+                store.delete(chunk_ids)
+            file_hash, new_chunk_ids = changed_entries[source_path]
+            files_section[source_path] = {
+                "file_hash": file_hash,
+                "chunk_ids": new_chunk_ids,
+            }
+        for source_path in removed_sources:
+            chunk_ids = removed_ids_by_source[source_path]
+            if chunk_ids:
+                store.delete(chunk_ids)
+            files_section.pop(source_path, None)
         save_manifest(settings.manifest_path, manifest)
 
     min_tokens, avg_tokens, max_tokens = _collect_token_stats(changed_chunks)

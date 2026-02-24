@@ -58,24 +58,53 @@ function _resolvePopoverTop(top: number, bottom: number): number {
   return Math.max(top - POPOVER_ESTIMATED_HEIGHT_PX - 8, POPOVER_MARGIN_PX);
 }
 
+function _buildReferenceCacheKey(runId: string | null, refId: string): string {
+  return `${runId ?? "__no_run__"}::${refId}`;
+}
+
 export function MarkdownWithReferences({
   content,
   runId,
   className,
 }: MarkdownWithReferencesProps) {
   const popoverRef = useRef<HTMLDivElement | null>(null);
+  const activePopoverRef = useRef<ReferencePopoverState | null>(null);
+  const runIdRef = useRef<string | null>(runId);
+  const activeRequestKeyRef = useRef<string | null>(null);
   const [referenceCache, setReferenceCache] = useState<
     Record<string, RunReferenceResponse>
   >({});
   const [activePopover, setActivePopover] = useState<ReferencePopoverState | null>(
     null,
   );
-  const [loadingRefId, setLoadingRefId] = useState<string | null>(null);
+  const [loadingRequestKey, setLoadingRequestKey] = useState<string | null>(null);
   const [referenceError, setReferenceError] = useState<string | null>(null);
 
   const markdownContent = useMemo(() => _toReferenceMarkdown(content), [content]);
+  const activeReferenceCacheKey =
+    activePopover !== null
+      ? _buildReferenceCacheKey(runId, activePopover.refId)
+      : null;
   const activeReference =
-    activePopover !== null ? referenceCache[activePopover.refId] : undefined;
+    activeReferenceCacheKey !== null
+      ? referenceCache[activeReferenceCacheKey]
+      : undefined;
+
+  useEffect(() => {
+    activePopoverRef.current = activePopover;
+  }, [activePopover]);
+
+  useEffect(() => {
+    runIdRef.current = runId;
+  }, [runId]);
+
+  useEffect(() => {
+    activeRequestKeyRef.current = null;
+    setActivePopover(null);
+    setLoadingRequestKey(null);
+    setReferenceError(null);
+    setReferenceCache({});
+  }, [runId]);
 
   useEffect(() => {
     if (!activePopover) {
@@ -132,25 +161,42 @@ export function MarkdownWithReferences({
       left: _resolvePopoverLeft(targetRect.left),
     });
     setReferenceError(null);
+    const requestKey = _buildReferenceCacheKey(runId, refId);
 
     if (!runId) {
       setReferenceError("Run id is missing, so this reference cannot be loaded.");
       return;
     }
-    if (referenceCache[refId]) {
+    if (referenceCache[requestKey]) {
       return;
     }
 
-    setLoadingRefId(refId);
+    activeRequestKeyRef.current = requestKey;
+    setLoadingRequestKey(requestKey);
     try {
       const reference = await fetchRunReference(runId, refId);
-      setReferenceCache((current) => ({ ...current, [refId]: reference }));
+      setReferenceCache((current) => ({ ...current, [requestKey]: reference }));
     } catch (error) {
-      setReferenceError(
-        error instanceof Error ? error.message : "Failed to load reference.",
-      );
+      const activePopoverState = activePopoverRef.current;
+      const activePopoverKey =
+        activePopoverState !== null
+          ? _buildReferenceCacheKey(runIdRef.current, activePopoverState.refId)
+          : null;
+      if (
+        activeRequestKeyRef.current === requestKey &&
+        activePopoverKey === requestKey
+      ) {
+        setReferenceError(
+          error instanceof Error ? error.message : "Failed to load reference.",
+        );
+      }
     } finally {
-      setLoadingRefId((current) => (current === refId ? null : current));
+      if (activeRequestKeyRef.current === requestKey) {
+        activeRequestKeyRef.current = null;
+      }
+      setLoadingRequestKey((current) =>
+        current === requestKey ? null : current,
+      );
     }
   }
 
@@ -214,7 +260,7 @@ export function MarkdownWithReferences({
                 </button>
               </div>
 
-              {loadingRefId === activePopover.refId && !activeReference ? (
+              {loadingRequestKey === activeReferenceCacheKey && !activeReference ? (
                 <p className="citation-popover-muted">Loading reference...</p>
               ) : null}
 
