@@ -1428,7 +1428,7 @@ Climate Neutrality Action Plan
 |  Fields of action | Systemic levers | Early changes (1-2 years)
 Up to 2025 | Late outcomes (3-4 years)
 | Direct impacts (Emission reductions) | Indirect impacts (Co-benefits)  |
-|   | Social innovation | Initiation and support provided to circular economy private -public partnership solutions in industries, SMEs, pubic services, farming and their value chains | Innovative local based circular economy solutions, actions, symbiosis and initiatives jointly developed by industry, farmers, the City, NGOs and citizens implemented |  | Local deployment of material cycle  |
+|   | Social innovation | Initiation and support provided to circular economy private -public partnership solutions in industries, SMEs, public services, farming and their value chains | Innovative local based circular economy solutions, actions, symbiosis and initiatives jointly developed by industry, farmers, the City, NGOs and citizens implemented |  | Local deployment of material cycle  |
 |  Green infrastructure and nature-based solutions | Governance & Policy | Protected and better managed urban green infrastructure in the surface of 4 km² | Protected and better managed urban green infrastructure in the surface of 12 km² | Sequestration of 7.628 t of CO₂ | Land use management practices  |
 |   |   |   |   |   |  Urban heat island (UHI) effect reduced  |
 |   |  Learning & capabilities | Upskilling & standards for green and climate neutral urban planning and construction | Green Spatial Plan enforcing climate neutral measures adopted and implemented |   | Increased quality of life  |
