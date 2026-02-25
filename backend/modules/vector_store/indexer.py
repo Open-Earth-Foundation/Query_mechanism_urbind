@@ -548,9 +548,13 @@ def update_markdown_index(
         if embedded_changed_chunks:
             store.upsert(embedded_changed_chunks)
         for source_path, chunk_ids in previous_ids_by_source.items():
-            if chunk_ids:
-                store.delete(chunk_ids)
             file_hash, new_chunk_ids = changed_entries[source_path]
+            new_chunk_id_set = set(new_chunk_ids)
+            stale_chunk_ids = [
+                chunk_id for chunk_id in chunk_ids if chunk_id not in new_chunk_id_set
+            ]
+            if stale_chunk_ids:
+                store.delete(stale_chunk_ids)
             files_section[source_path] = {
                 "file_hash": file_hash,
                 "chunk_ids": new_chunk_ids,

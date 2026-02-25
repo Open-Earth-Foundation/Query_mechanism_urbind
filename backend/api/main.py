@@ -27,18 +27,6 @@ def _resolve_runs_dir(runs_dir: Path | None) -> Path:
     return Path(os.getenv("RUNS_DIR", "output"))
 
 
-def _resolve_worker_count(max_workers: int | None) -> int:
-    """Resolve worker count from argument or API_RUN_WORKERS environment variable."""
-    if max_workers is not None:
-        return max(1, max_workers)
-    raw = os.getenv("API_RUN_WORKERS", "2").strip()
-    try:
-        parsed = int(raw)
-    except ValueError:
-        return 2
-    return max(1, parsed)
-
-
 def _resolve_markdown_dir(markdown_dir: Path | None) -> Path:
     """Resolve markdown directory from explicit argument or environment."""
     if markdown_dir is not None:
@@ -63,18 +51,8 @@ def _resolve_city_groups_path(city_groups_path: Path | None) -> Path:
     return Path(__file__).resolve().parent / "assets" / "city_groups.json"
 
 
-def _resolve_cors_origins() -> list[str]:
-    """Resolve allowed CORS origins for browser frontend."""
-    raw = os.getenv(
-        "API_CORS_ORIGINS",
-        "http://127.0.0.1:3000,http://localhost:3000,http://127.0.0.1:3001,http://localhost:3001",
-    )
-    return [item.strip() for item in raw.split(",") if item.strip()]
-
-
 def create_app(
     runs_dir: Path | None = None,
-    max_workers: int | None = None,
     markdown_dir: Path | None = None,
     config_path: Path | None = None,
     city_groups_path: Path | None = None,
@@ -83,7 +61,7 @@ def create_app(
     load_dotenv()
     setup_logger()
     resolved_runs_dir = _resolve_runs_dir(runs_dir)
-    resolved_workers = _resolve_worker_count(max_workers)
+    resolved_workers = 2
     resolved_markdown_dir = _resolve_markdown_dir(markdown_dir)
     resolved_config_path = _resolve_config_path(config_path)
     resolved_city_groups_path = _resolve_city_groups_path(city_groups_path)
@@ -132,12 +110,12 @@ def create_app(
     )
     app.add_middleware(
         CORSMiddleware,
-        allow_origins=_resolve_cors_origins(),
+        allow_origins=["*"],
         allow_credentials=True,
         allow_methods=["*"],
         allow_headers=["*"],
     )
-    logger.info("CORS allow_origins=%s", _resolve_cors_origins())
+    logger.info("CORS allow_origins=*")
     app.include_router(runs_router, prefix="/api/v1", tags=["runs"])
     app.include_router(cities_router, prefix="/api/v1", tags=["cities"])
     app.include_router(chat_router, prefix="/api/v1", tags=["chat"])

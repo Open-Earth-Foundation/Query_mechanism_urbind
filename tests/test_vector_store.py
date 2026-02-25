@@ -14,6 +14,7 @@ from backend.modules.vector_store.indexer import (
 from backend.modules.vector_store.manifest import load_manifest
 from backend.modules.vector_store.manifest import build_chunk_id
 from backend.modules.vector_store.markdown_blocks import parse_markdown_blocks
+from backend.modules.vector_store.models import IndexedChunk
 from backend.modules.vector_store.chunk_packer import pack_blocks
 from backend.modules.vector_store.table_utils import split_markdown_table_by_row_groups
 from backend.utils.tokenization import count_tokens
@@ -649,6 +650,107 @@ def test_update_markdown_index_upserts_before_deleting_old_chunks(
     assert "upsert" in FakeStore.operations
     assert "delete" in FakeStore.operations
     assert FakeStore.operations.index("upsert") < FakeStore.operations.index("delete")
+
+
+def test_update_markdown_index_deletes_only_stale_old_ids_when_chunks_overlap(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Changed-file updates keep overlapping ids and delete only old-only ids."""
+    docs_dir = tmp_path / "documents"
+    docs_dir.mkdir(parents=True)
+    munich_path = docs_dir / "Munich.md"
+    munich_path.write_text("# Munich\n\nLatest content.", encoding="utf-8")
+    config = _build_config(tmp_path)
+
+    config.vector_store.index_manifest_path.parent.mkdir(parents=True, exist_ok=True)
+    config.vector_store.index_manifest_path.write_text(
+        """
+{
+  "files": {
+    "%s": {"file_hash": "outdated", "chunk_ids": ["chunk_keep", "chunk_old_only"]}
+  }
+}
+"""
+        % munich_path.as_posix(),
+        encoding="utf-8",
+    )
+
+    class FakeStore:
+        delete_calls: list[list[str]] = []
+        upsert_chunk_ids: list[list[str]] = []
+
+        def __init__(self, persist_path: Path, collection_name: str) -> None:
+            self.persist_path = persist_path
+            self.collection_name = collection_name
+
+        def upsert(self, chunks) -> None:
+            self.upsert_chunk_ids.append([chunk.chunk_id for chunk in chunks])
+
+        def delete(self, ids: list[str]) -> None:
+            self.delete_calls.append(ids)
+
+    class FakeEmbeddingProvider:
+        def __init__(
+            self,
+            model: str,
+            base_url: str | None = None,
+            batch_size: int = 100,
+            max_retries: int = 3,
+            retry_base_seconds: float = 0.8,
+            retry_max_seconds: float = 8.0,
+            max_input_tokens: int | None = None,
+        ) -> None:
+            self.model = model
+            self.base_url = base_url
+            self.batch_size = batch_size
+            self.max_retries = max_retries
+            self.retry_base_seconds = retry_base_seconds
+            self.retry_max_seconds = retry_max_seconds
+            self.max_input_tokens = max_input_tokens
+
+        def embed_texts(self, texts: list[str]) -> list[list[float] | None]:
+            return [[0.1, 0.2, 0.3] for _ in texts]
+
+    def _fake_build_indexed_chunks_for_file(*_args, **_kwargs) -> tuple[str, list[IndexedChunk]]:
+        return (
+            "new-file-hash",
+            [
+                IndexedChunk(
+                    chunk_id="chunk_keep",
+                    document="new content keep",
+                    metadata={"source_path": munich_path.as_posix()},
+                ),
+                IndexedChunk(
+                    chunk_id="chunk_new_only",
+                    document="new content only",
+                    metadata={"source_path": munich_path.as_posix()},
+                ),
+            ],
+        )
+
+    monkeypatch.setattr("backend.modules.vector_store.indexer.ChromaStore", FakeStore)
+    monkeypatch.setattr(
+        "backend.modules.vector_store.indexer.OpenAIEmbeddingProvider",
+        FakeEmbeddingProvider,
+    )
+    monkeypatch.setattr(
+        "backend.modules.vector_store.indexer._build_indexed_chunks_for_file",
+        _fake_build_indexed_chunks_for_file,
+    )
+
+    update_markdown_index(
+        config=config,
+        docs_dir=docs_dir,
+        selected_cities=["Munich"],
+        dry_run=False,
+    )
+
+    assert FakeStore.upsert_chunk_ids == [["chunk_keep", "chunk_new_only"]]
+    assert FakeStore.delete_calls == [["chunk_old_only"]]
+    manifest = load_manifest(config.vector_store.index_manifest_path)
+    files = manifest.get("files", {})
+    assert files[munich_path.as_posix()]["chunk_ids"] == ["chunk_keep", "chunk_new_only"]
 
 
 def test_openai_embedding_provider_retries_empty_batch_response(
