@@ -3146,7 +3146,7 @@ Climate Neutrality Action Plan
 
 B-2.2: Individual action outlines
 
-|  2ndpriority action  |   |   |
+|  2nd priority action  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | New circular business models  |
 |   |  Action type | Other interventions: business models  |
