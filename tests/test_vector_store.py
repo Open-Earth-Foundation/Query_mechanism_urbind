@@ -949,3 +949,28 @@ def test_pack_blocks_table_embedding_text_bounded_by_max_tokens() -> None:
             f"embedding_text exceeds max_tokens={max_tokens}: "
             f"{count_tokens(chunk.embedding_text)} tokens"
         )
+
+
+def test_pack_blocks_table_embedding_text_hard_caps_oversized_summary_prefix() -> None:
+    """Table embedding_text stays bounded when heading/title context is very long."""
+    long_heading = "# " + ("verylongtoken " * 200)
+    text = "\n".join(
+        [
+            long_heading,
+            "",
+            "| Col A | Col B |",
+            "| --- | --- |",
+            "| 1 | 2 |",
+        ]
+    )
+    blocks = parse_markdown_blocks(text)
+    max_tokens = 40
+
+    chunks = pack_blocks(blocks=blocks, max_tokens=max_tokens, overlap_tokens=0)
+    table_chunks = [chunk for chunk in chunks if chunk.block_type == "table"]
+    assert table_chunks, "Expected at least one table chunk"
+    for chunk in table_chunks:
+        assert count_tokens(chunk.embedding_text) <= max_tokens, (
+            f"embedding_text exceeds max_tokens={max_tokens}: "
+            f"{count_tokens(chunk.embedding_text)} tokens"
+        )

@@ -12,12 +12,19 @@ from dotenv import load_dotenv
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from backend.api.routes import assumptions_router, chat_router, cities_router, runs_router
+from backend.api.routes import (
+    assumptions_router,
+    chat_router,
+    cities_router,
+    runs_router,
+)
 from backend.api.services import ChatMemoryStore, RunExecutor, RunStore
 from backend.utils.config import load_config
 from backend.utils.logging_config import setup_logger
 
 logger = logging.getLogger(__name__)
+# this is responsible for how many runs we can run per instance
+DEFAULT_API_RUN_WORKERS = 2
 
 
 def _resolve_runs_dir(runs_dir: Path | None) -> Path:
@@ -25,6 +32,13 @@ def _resolve_runs_dir(runs_dir: Path | None) -> Path:
     if runs_dir is not None:
         return runs_dir
     return Path(os.getenv("RUNS_DIR", "output"))
+
+
+def _resolve_worker_count(max_workers: int | None) -> int:
+    """Resolve worker count from explicit argument or hardcoded default."""
+    if max_workers is None:
+        return DEFAULT_API_RUN_WORKERS
+    return max(1, max_workers)
 
 
 def _resolve_markdown_dir(markdown_dir: Path | None) -> Path:
@@ -53,6 +67,7 @@ def _resolve_city_groups_path(city_groups_path: Path | None) -> Path:
 
 def create_app(
     runs_dir: Path | None = None,
+    max_workers: int | None = None,
     markdown_dir: Path | None = None,
     config_path: Path | None = None,
     city_groups_path: Path | None = None,
@@ -61,7 +76,7 @@ def create_app(
     load_dotenv()
     setup_logger()
     resolved_runs_dir = _resolve_runs_dir(runs_dir)
-    resolved_workers = 2
+    resolved_workers = _resolve_worker_count(max_workers)
     resolved_markdown_dir = _resolve_markdown_dir(markdown_dir)
     resolved_config_path = _resolve_config_path(config_path)
     resolved_city_groups_path = _resolve_city_groups_path(city_groups_path)

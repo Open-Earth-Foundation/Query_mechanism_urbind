@@ -34,6 +34,7 @@ The `uv.lock` file is committed to ensure reproducible builds.
 ## Configuration
 
 - `llm_config.yaml` stores model names and settings.
+- Markdown researcher batching knobs are configured in `llm_config.yaml` under `markdown_researcher` (`batch_max_chunks`, `batch_max_input_tokens`, `batch_overhead_tokens`).
 - Copy `.env.example` to `.env` and fill in values for your environment.
 - `.env` is loaded automatically via `python-dotenv` in the scripts.
 - Do not commit `.env`.
@@ -48,7 +49,6 @@ Environment variables (`.env`):
 - `RUNS_DIR` (optional, default `output`): base directory for run artifacts.
 - `LOG_LEVEL` (optional, default `INFO`): logging verbosity (`DEBUG`, `INFO`, `WARNING`, `ERROR`).
 - `OPENROUTER_BASE_URL` (optional, default `https://openrouter.ai/api/v1`): custom OpenRouter-compatible base URL.
-- `API_RUN_WORKERS` (optional, default `2`): FastAPI async background worker count.
 - `CHAT_PROMPT_TOKEN_CAP` (optional, default `250000`): token cap for context chat prompt assembly.
 - `CHAT_PROVIDER_TIMEOUT_SECONDS` (optional, default `50`): provider timeout for context chat.
 - `API_CORS_ORIGINS` (optional): comma-separated frontend origins for API CORS.
@@ -58,31 +58,12 @@ Environment variables (`.env`):
 - `ANONYMIZED_TELEMETRY` (optional, default `FALSE`): disables Chroma anonymized telemetry when set to `FALSE`.
 - `CHROMA_PERSIST_PATH` (optional, default `.chroma`): local Chroma persistence directory.
 - `CHROMA_COLLECTION_NAME` (optional, default `markdown_chunks`): Chroma collection used for markdown chunks.
-- `EMBEDDING_MODEL` (optional, default `text-embedding-3-large`): embedding model for vector index build/update.
-- `vector_store.embedding_max_input_tokens` in `llm_config.yaml` (default `8000`): hard per-text token cap before embedding requests; oversized texts are truncated to this limit. (`EMBEDDING_MAX_INPUT_TOKENS` env override is still supported.)
-- `EMBEDDING_BATCH_SIZE` (optional, default `100`): number of markdown chunks embedded per provider request.
-- `EMBEDDING_MAX_RETRIES` (optional, default `3`): retry count for failed/empty embedding responses before fallback.
-- `EMBEDDING_RETRY_BASE_SECONDS` (optional, default `0.8`): exponential backoff base delay between embedding retries.
-- `EMBEDDING_RETRY_MAX_SECONDS` (optional, default `8.0`): maximum backoff delay between embedding retries.
-- `EMBEDDING_CHUNK_TOKENS` (optional, default `800`): chunk token budget for markdown packing.
-- `EMBEDDING_CHUNK_OVERLAP_TOKENS` (optional, default `80`): chunk overlap token budget.
-- `TABLE_ROW_GROUP_MAX_ROWS` (optional, default `25`): max rows per split group for oversized markdown tables.
-- `MARKDOWN_BATCH_MAX_CHUNKS` (optional, default `4`): hard cap on number of markdown chunks sent in one markdown researcher request.
-- `MARKDOWN_BATCH_MAX_INPUT_TOKENS` (optional): explicit token budget per markdown researcher batch. If unset, an adaptive budget is derived from `EMBEDDING_CHUNK_TOKENS`, `MARKDOWN_BATCH_MAX_CHUNKS`, and `MARKDOWN_BATCH_OVERHEAD_TOKENS`.
-- `MARKDOWN_BATCH_OVERHEAD_TOKENS` (optional, default `600`): reserved prompt/payload overhead used by adaptive markdown batching.
-- `VECTOR_STORE_RETRIEVAL_MAX_DISTANCE` (optional, default `1.0`): Chroma distance cutoff; only chunks with `distance <= cutoff` are kept.
-- `VECTOR_STORE_RETRIEVAL_MAX_CHUNKS_PER_CITY_QUERY` (optional, default `60`): max candidates fetched per city/query before distance filtering/top-up.
-- `VECTOR_STORE_RETRIEVAL_FALLBACK_MIN_CHUNKS_PER_CITY_QUERY` (optional, default `20`): minimum returned per city/query (top-up target when too few pass `VECTOR_STORE_RETRIEVAL_MAX_DISTANCE`).
-- `VECTOR_STORE_RETRIEVAL_MAX_CHUNKS_PER_CITY` (optional, default `300`): final per-city cap after query merge and neighbor expansion.
-- `VECTOR_STORE_CONTEXT_WINDOW_CHUNKS` (optional, default `0`): number of neighboring chunks to include around each retrieved chunk.
-- `VECTOR_STORE_TABLE_CONTEXT_WINDOW_CHUNKS` (optional, default `1`): neighbor chunk window for table chunks.
-- `VECTOR_STORE_AUTO_UPDATE_ON_RUN` (optional, default `false`): if `true`, run an incremental index update before retrieval.
-- `INDEX_MANIFEST_PATH` (optional, default `.chroma/index_manifest.json`): JSON manifest path for incremental updates.
+- Vector-store embedding and retrieval tuning is configured in `llm_config.yaml` under `vector_store.*` (for example `embedding_model`, `embedding_max_input_tokens`, `retrieval_max_distance`, `auto_update_on_run`, `index_manifest_path`).
 
 CLI flags override `.env` values for a given run (for example `--db-path`, `--db-url`, `--markdown-path`, `--enable-sql`).
 Use `--city` (repeatable) to load markdown only for selected city files. City filters are normalized case-insensitively to backend `city_key` values (for example `Munich`, `MUNICH`, and `munich` all resolve to `munich`).
 
-Example `.env.example` is provided. Vector-store retriever defaults in `.env.example` match `backend/benchmarks/config` (base.env + mode_vector.env); use those files as the reference when tuning.
+Example `.env.example` is provided. Use `llm_config.yaml` as the source of truth for vector-store and markdown batching tuning.
 
 Default output directory is `output/` (unless overridden by `RUNS_DIR`).
 Schema summary for SQL generation is derived from `backend/db_models/`.
@@ -92,22 +73,22 @@ Schema summary for SQL generation is derived from `backend/db_models/`.
 When vector retrieval is enabled, retrieval runs per city and per query (original + refined variants), then merges and expands context.
 
 - For each (city × query), the retriever:
-  - fetches up to `VECTOR_STORE_RETRIEVAL_MAX_CHUNKS_PER_CITY_QUERY` candidates from Chroma (ranked by increasing distance);
-  - if `VECTOR_STORE_RETRIEVAL_MAX_DISTANCE` is set, it first keeps only candidates with `distance <= cutoff`;
-  - if fewer than `VECTOR_STORE_RETRIEVAL_FALLBACK_MIN_CHUNKS_PER_CITY_QUERY` pass the cutoff, it **tops up** with the next-best candidates (above the cutoff) until it reaches the fallback minimum (or runs out of candidates).
+  - fetches up to `vector_store.retrieval_max_chunks_per_city_query` candidates from Chroma (ranked by increasing distance);
+  - if `vector_store.retrieval_max_distance` is set, it first keeps only candidates with `distance <= cutoff`;
+  - if fewer than `vector_store.retrieval_fallback_min_chunks_per_city_query` pass the cutoff, it **tops up** with the next-best candidates (above the cutoff) until it reaches the fallback minimum (or runs out of candidates).
 - After per-(city × query) retrieval:
   - results are merged across queries within a city (dedupe by `chunk_id`, keep the smallest distance);
   - neighbor chunks are added by `chunk_index` window (same file/city);
-  - optionally, `VECTOR_STORE_RETRIEVAL_MAX_CHUNKS_PER_CITY` caps the final chunks per city after merge + neighbor expansion.
-- `VECTOR_STORE_RETRIEVAL_MAX_DISTANCE` is the strictness control:
+  - optionally, `vector_store.retrieval_max_chunks_per_city` caps the final chunks per city after merge + neighbor expansion.
+- `vector_store.retrieval_max_distance` is the strictness control:
   - smaller value = stricter matching, fewer chunks;
   - larger value = higher recall, more chunks.
 
 Important distinction between the “max” knobs:
 
-- `VECTOR_STORE_RETRIEVAL_MAX_CHUNKS_PER_CITY_QUERY` controls the **candidate pool size per (city × query)** _before_ distance filtering/top-up.
+- `vector_store.retrieval_max_chunks_per_city_query` controls the **candidate pool size per (city × query)** _before_ distance filtering/top-up.
   - If this is too small, you may not have enough candidates to top up to the fallback minimum.
-- `VECTOR_STORE_RETRIEVAL_MAX_CHUNKS_PER_CITY` controls the **final per-city cap** _after_ query-merge and neighbor expansion.
+- `vector_store.retrieval_max_chunks_per_city` controls the **final per-city cap** _after_ query-merge and neighbor expansion.
   - Use it as a latency/cost guardrail; setting it too low can drop context neighbors or even primary hits with weaker distances.
 
 Distance scale note:
@@ -119,20 +100,20 @@ Distance scale note:
 How to estimate chunk counts:
 
 - **Minimum (practical):**
-  - per (city × query): approximately `min(VECTOR_STORE_RETRIEVAL_FALLBACK_MIN_CHUNKS_PER_CITY_QUERY, available_chunks_total)`, before merge/neighbor expansion.
+  - per (city × query): approximately `min(vector_store.retrieval_fallback_min_chunks_per_city_query, available_chunks_total)`, before merge/neighbor expansion.
 - **Maximum (practical):**
-  - per (city × query): `VECTOR_STORE_RETRIEVAL_MAX_CHUNKS_PER_CITY_QUERY`, before merge/neighbor expansion;
-  - bounded by `VECTOR_STORE_RETRIEVAL_MAX_CHUNKS_PER_CITY` if set;
+  - per (city × query): `vector_store.retrieval_max_chunks_per_city_query`, before merge/neighbor expansion;
+  - bounded by `vector_store.retrieval_max_chunks_per_city` if set;
   - otherwise depends on distance cutoff + number of merged queries + neighbor expansion windows.
 
 Recommended tuning workflow:
 
 1. Start recall-friendly:
-   - leave `VECTOR_STORE_RETRIEVAL_MAX_DISTANCE` empty, or set a permissive value;
-   - set `VECTOR_STORE_RETRIEVAL_FALLBACK_MIN_CHUNKS_PER_CITY_QUERY` to a meaningful fallback (for example 20-40).
+   - leave `vector_store.retrieval_max_distance` empty, or set a permissive value;
+   - set `vector_store.retrieval_fallback_min_chunks_per_city_query` to a meaningful fallback (for example 20-40).
 2. Run and inspect `output/<run_id>/markdown/retrieval.json` for returned distances and counts.
-3. Set/tighten `VECTOR_STORE_RETRIEVAL_MAX_DISTANCE` based on observed distance distribution.
-4. Add `VECTOR_STORE_RETRIEVAL_MAX_CHUNKS_PER_CITY` only if latency/cost grows too much.
+3. Set/tighten `vector_store.retrieval_max_distance` based on observed distance distribution.
+4. Add `vector_store.retrieval_max_chunks_per_city` only if latency/cost grows too much.
 
 ## API key setup (important)
 
@@ -178,6 +159,9 @@ markdown_researcher:
   input_token_reserve: 2000
   max_chunk_tokens: 120000
   chunk_overlap_tokens: 200
+  batch_max_chunks: 16
+  batch_max_input_tokens: null
+  batch_overhead_tokens: 600
   max_workers: 2
   max_retries: 2
   retry_base_seconds: 0.8
@@ -225,6 +209,9 @@ What each key controls:
 - `sql_researcher.max_result_tokens`: Hard cap for SQL rows included in the capped SQL bundle passed downstream.
 - `markdown_researcher.max_chunk_tokens`: Hard cap for each markdown chunk size.
 - `markdown_researcher.chunk_overlap_tokens`: Token overlap between neighboring chunks.
+- `markdown_researcher.batch_max_chunks`: Hard cap on chunk count per markdown researcher request batch.
+- `markdown_researcher.batch_max_input_tokens`: Optional explicit token budget per markdown researcher request batch.
+- `markdown_researcher.batch_overhead_tokens`: Reserved prompt/payload overhead used when adaptive markdown batch token budget is calculated.
 
 How this influences runtime behavior:
 
@@ -313,12 +300,12 @@ python -m backend.scripts.run_e2e_queries --question "What initiatives exist for
 
 Use this benchmark to compare standard markdown chunking (`VECTOR_STORE_ENABLED=false`) against vector-store retrieval (`VECTOR_STORE_ENABLED=true`) without changing normal runtime behavior.
 
-Configuration and prompts are intentionally separated under `backend/benchmarks/`. The benchmark config is the **reference for vector-store settings** (paths, retriever knobs); `.env.example` and local dev should align with it.
+Configuration and prompts are intentionally separated under `backend/benchmarks/`. Benchmark env files select runtime mode (`standard_chunking` vs `vector_store`), while vector-store tuning remains in `llm_config.yaml` (`vector_store.*`).
 
 - `backend/benchmarks/prompts/retrieval_questions.txt`: benchmark question set.
-- `backend/benchmarks/config/base.env`: shared benchmark env (Chroma paths, auto-update off).
-- `backend/benchmarks/config/mode_standard.env`: standard-mode overrides.
-- `backend/benchmarks/config/mode_vector.env`: vector-mode overrides (retrieval knobs).
+- `backend/benchmarks/config/base.env`: shared benchmark env.
+- `backend/benchmarks/config/mode_standard.env`: standard-mode toggle.
+- `backend/benchmarks/config/mode_vector.env`: vector-mode toggle.
 
 Command example:
 
@@ -641,7 +628,7 @@ python -m backend.scripts.build_markdown_index --docs-dir documents
 
 The build now fails fast on embedding failures and exits non-zero before any collection reset or manifest write.
 
-Analyze retrieval distance distributions (to help choose `VECTOR_STORE_RETRIEVAL_MAX_DISTANCE`):
+Analyze retrieval distance distributions (to help choose `vector_store.retrieval_max_distance`):
 
 ```
 python -m backend.scripts.analyze_retrieval_distances --runs-dir output
@@ -650,7 +637,7 @@ python -m backend.scripts.analyze_retrieval_distances --city Munich --city Leipz
 
 How to use the output:
 
-- Start with `VECTOR_STORE_RETRIEVAL_MAX_DISTANCE` empty (no distance filtering) and run a few representative queries.
+- Start with `vector_store.retrieval_max_distance` empty (no distance filtering) and run a few representative queries.
 - Run the analysis script and look at the overall/per-city percentiles.
 - Pick a cutoff that keeps the bulk of “good” chunks (often somewhere around the p90–p99 region for your corpus), then iterate.
 

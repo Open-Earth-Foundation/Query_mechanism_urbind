@@ -26,51 +26,65 @@ def _write_minimal_config(tmp_path: Path) -> Path:
     return config_path
 
 
-def test_load_config_raises_clear_error_for_invalid_int_env(
+def test_load_config_ignores_removed_vector_store_env_overrides(
     monkeypatch: pytest.MonkeyPatch,
     tmp_path: Path,
 ) -> None:
-    """Invalid integer env values raise errors that include the env var name."""
+    """Vector-store tuning env vars are ignored in favor of llm_config.yaml values."""
     config_path = _write_minimal_config(tmp_path)
     monkeypatch.setenv("EMBEDDING_CHUNK_TOKENS", "abc")
-
-    with pytest.raises(ValueError, match="EMBEDDING_CHUNK_TOKENS"):
-        load_config(config_path)
-
-
-def test_load_config_raises_clear_error_for_invalid_float_env(
-    monkeypatch: pytest.MonkeyPatch,
-    tmp_path: Path,
-) -> None:
-    """Invalid float env values raise errors that include the env var name."""
-    config_path = _write_minimal_config(tmp_path)
     monkeypatch.setenv("VECTOR_STORE_RETRIEVAL_MAX_DISTANCE", "not-a-float")
-
-    with pytest.raises(ValueError, match="VECTOR_STORE_RETRIEVAL_MAX_DISTANCE"):
-        load_config(config_path)
-
-
-def test_load_config_reads_embedding_max_input_tokens_env(
-    monkeypatch: pytest.MonkeyPatch,
-    tmp_path: Path,
-) -> None:
-    """Embedding max input token cap can be configured from environment."""
-    config_path = _write_minimal_config(tmp_path)
     monkeypatch.setenv("EMBEDDING_MAX_INPUT_TOKENS", "7000")
 
     config = load_config(config_path)
 
-    assert config.vector_store.embedding_max_input_tokens == 7000
+    assert config.vector_store.embedding_chunk_tokens == 800
+    assert config.vector_store.retrieval_max_distance == 1.0
+    assert config.vector_store.embedding_max_input_tokens == 8000
 
 
-def test_load_config_treats_non_positive_embedding_max_input_tokens_as_disabled(
+def test_load_config_applies_chroma_persist_path_env_and_derives_manifest_path(
     monkeypatch: pytest.MonkeyPatch,
     tmp_path: Path,
 ) -> None:
-    """Non-positive embedding max input token env values disable the hard cap."""
+    """CHROMA_PERSIST_PATH env override updates both store root and default manifest path."""
     config_path = _write_minimal_config(tmp_path)
-    monkeypatch.setenv("EMBEDDING_MAX_INPUT_TOKENS", "0")
+    chroma_path = tmp_path / "custom-chroma"
+    monkeypatch.setenv("CHROMA_PERSIST_PATH", str(chroma_path))
 
     config = load_config(config_path)
 
-    assert config.vector_store.embedding_max_input_tokens is None
+    assert config.vector_store.chroma_persist_path == chroma_path
+    assert config.vector_store.index_manifest_path == chroma_path / "index_manifest.json"
+
+
+def test_load_config_reads_vector_store_settings_from_yaml(
+    tmp_path: Path,
+) -> None:
+    """Vector-store retrieval and embedding knobs are loaded from llm_config.yaml."""
+    config_path = tmp_path / "llm_config.yaml"
+    config_path.write_text(
+        "\n".join(
+            [
+                "orchestrator:",
+                "  model: test-model",
+                "sql_researcher:",
+                "  model: test-model",
+                "markdown_researcher:",
+                "  model: test-model",
+                "writer:",
+                "  model: test-model",
+                "vector_store:",
+                "  embedding_model: custom-embedding-model",
+                "  retrieval_max_distance: 0.75",
+                "  retrieval_max_chunks_per_city_query: 42",
+            ]
+        ),
+        encoding="utf-8",
+    )
+
+    config = load_config(config_path)
+
+    assert config.vector_store.embedding_model == "custom-embedding-model"
+    assert config.vector_store.retrieval_max_distance == 0.75
+    assert config.vector_store.retrieval_max_chunks_per_city_query == 42

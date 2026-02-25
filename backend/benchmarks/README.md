@@ -23,6 +23,10 @@ If a key appears in both, the mode-specific value wins.
 
 - Vector benchmark mode uses the existing default Chroma store/collection unless
   overridden in the main environment.
+- Vector-store retrieval/embedding tuning is read from `llm_config.yaml`
+  (`vector_store.*`), not benchmark env files.
+- Markdown researcher batch sizing is read from `llm_config.yaml`
+  (`markdown_researcher.batch_*`), not benchmark env files.
 - Benchmark runs do not build/update vector index; they measure runtime behavior
   with the currently available index.
 - To reduce run-to-run variance in retrieval behavior, the benchmark script can use

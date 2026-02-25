@@ -18,6 +18,9 @@ markdown_researcher:
   input_token_reserve: 10000
   max_chunk_tokens: 40000
   chunk_overlap_tokens: 2000
+  batch_max_chunks: 16
+  batch_max_input_tokens: null
+  batch_overhead_tokens: 600
   max_workers: 4
   max_retries: 2
   retry_base_seconds: 0.8
@@ -45,9 +48,20 @@ vector_store:
   chroma_collection_name: "markdown_chunks"
   embedding_model: "text-embedding-3-large"
   embedding_max_input_tokens: 8000
+  embedding_batch_size: 100
+  embedding_max_retries: 3
+  embedding_retry_base_seconds: 0.8
+  embedding_retry_max_seconds: 8.0
   embedding_chunk_tokens: 800
   embedding_chunk_overlap_tokens: 80
   table_row_group_max_rows: 25
+  retrieval_max_distance: 1.0
+  retrieval_fallback_min_chunks_per_city_query: 20
+  retrieval_max_chunks_per_city_query: 60
+  retrieval_max_chunks_per_city: 300
+  context_window_chunks: 0
+  table_context_window_chunks: 1
+  auto_update_on_run: false
   index_manifest_path: ".chroma/index_manifest.json"
 openrouter_base_url: "https://openrouter.ai/api/v1"
 enable_sql: false

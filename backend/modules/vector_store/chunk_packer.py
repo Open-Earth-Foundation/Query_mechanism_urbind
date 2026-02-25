@@ -161,6 +161,16 @@ def _join_block_texts(blocks: list[MdBlock]) -> str:
     return "\n\n".join(block.text.strip() for block in blocks if block.text.strip()).strip()
 
 
+def _truncate_to_token_budget(text: str, max_tokens: int) -> str:
+    """Hard-cap text to a token budget using tokenizer-safe boundaries."""
+    if max_tokens <= 0:
+        return ""
+    if count_tokens(text) <= max_tokens:
+        return text
+    token_chunks = chunk_text(text, max_tokens=max_tokens, overlap_tokens=0)
+    return token_chunks[0].strip() if token_chunks else ""
+
+
 def pack_blocks(
     blocks: list[MdBlock],
     max_tokens: int,
@@ -211,6 +221,7 @@ def pack_blocks(
                 if count_tokens(embedding_text) <= max_tokens or max_preview == 0:
                     break
                 max_preview -= 1
+            embedding_text = _truncate_to_token_budget(embedding_text, max_tokens)
             table_id = first_block.table_id
             row_group_index = first_block.row_group_index
         chunks.append(
