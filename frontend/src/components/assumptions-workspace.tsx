@@ -17,6 +17,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Textarea } from "@/components/ui/textarea";
+import { formatCityLabel } from "@/lib/utils";
 
 interface AssumptionsWorkspaceProps {
   runId: string;
@@ -211,7 +212,7 @@ export function AssumptionsWorkspace({
               {groupedItems.map(([city, entries]) => (
                 <section key={city} className="space-y-2">
                   <div className="flex items-center gap-2">
-                    <Badge variant="outline">{city}</Badge>
+                    <Badge variant="outline">{formatCityLabel(city)}</Badge>
                     <span className="text-xs text-slate-500">{entries.length} items</span>
                   </div>
                   <div className="space-y-2">

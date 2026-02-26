@@ -24,6 +24,7 @@ import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
 import { Switch } from "@/components/ui/switch";
 import { Textarea } from "@/components/ui/textarea";
+import { formatCityLabel } from "@/lib/utils";
 import {
   CityGroup,
   CreateRunResponse,
@@ -728,7 +729,7 @@ export default function Home() {
                               </p>
                             ) : null}
                             <p className="mt-1 text-xs text-slate-600">
-                              Cities: {selectedGroup.cities.join(", ")}
+                              Cities: {selectedGroup.cities.map(formatCityLabel).join(", ")}
                             </p>
                           </div>
                         ) : null}
@@ -765,7 +766,7 @@ export default function Home() {
                                 onClick={() => toggleCity(city)}
                                 className="h-8 rounded-full px-3"
                               >
-                                {city}
+                                {formatCityLabel(city)}
                               </Button>
                             );
                           })}
