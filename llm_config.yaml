@@ -16,7 +16,7 @@ markdown_researcher:
   temperature: 0.0
   # Optional Grok-only setting. Do not set this for non-Grok models.
   # Unsupported models/providers may reject the request if this is enabled.
-  reasoning_effort: "none"
+  reasoning_effort: "low"
   context_window_tokens: 200000
   input_token_reserve: 10000
   max_chunk_tokens: 40000
