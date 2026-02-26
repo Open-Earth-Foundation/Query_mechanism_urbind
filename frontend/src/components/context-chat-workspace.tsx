@@ -1,8 +1,6 @@
 "use client";
 
 import { FormEvent, useCallback, useEffect, useMemo, useRef, useState } from "react";
-import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
 import {
   ArrowLeft,
   Loader2,
@@ -23,6 +21,7 @@ import {
   sendChatMessage,
   updateChatSessionContexts,
 } from "@/lib/api";
+import { MarkdownWithReferences } from "@/components/markdown-with-references";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -424,9 +423,17 @@ export function ContextChatWorkspace({
                     </p>
                     {message.role === "assistant" ? (
                       <div className="chat-markdown text-sm leading-relaxed">
-                        <ReactMarkdown remarkPlugins={[remarkGfm]}>
-                          {message.content}
-                        </ReactMarkdown>
+                        <MarkdownWithReferences
+                          content={message.content}
+                          runId={runId}
+                          chatCitations={message.citations}
+                          prefetchRunReferences={false}
+                        />
+                        {message.citation_warning ? (
+                          <p className="mt-2 text-xs text-amber-700">
+                            {message.citation_warning}
+                          </p>
+                        ) : null}
                       </div>
                     ) : (
                       <p className="whitespace-pre-wrap leading-relaxed">{message.content}</p>

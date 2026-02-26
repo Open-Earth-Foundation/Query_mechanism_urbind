@@ -35,6 +35,7 @@ The `uv.lock` file is committed to ensure reproducible builds.
 
 - `llm_config.yaml` stores model names and settings.
 - Markdown researcher batching knobs are configured in `llm_config.yaml` under `markdown_researcher` (`batch_max_chunks`, `batch_max_input_tokens`, `batch_overhead_tokens`).
+- Optional `markdown_researcher.reasoning_effort` can be set for Grok reasoning control (for example `"none"`), but this is model/provider-specific and may fail on unsupported models.
 - Copy `.env.example` to `.env` and fill in values for your environment.
 - `.env` is loaded automatically via `python-dotenv` in the scripts.
 - Do not commit `.env`.
@@ -155,6 +156,8 @@ sql_researcher:
 markdown_researcher:
   model: "openai/gpt-5-mini"
   temperature: 0.0
+  # Optional Grok-only setting. Unsupported models/providers may reject requests.
+  # reasoning_effort: "none"
   context_window_tokens: 400000
   input_token_reserve: 2000
   max_chunk_tokens: 120000
@@ -212,6 +215,7 @@ What each key controls:
 - `markdown_researcher.batch_max_chunks`: Hard cap on chunk count per markdown researcher request batch.
 - `markdown_researcher.batch_max_input_tokens`: Optional explicit token budget per markdown researcher request batch.
 - `markdown_researcher.batch_overhead_tokens`: Reserved prompt/payload overhead used when adaptive markdown batch token budget is calculated.
+- `markdown_researcher.reasoning_effort`: Optional reasoning effort hint for Grok-compatible models (for example `none`, `low`, `medium`, `high`); avoid setting this for models/providers that do not support reasoning controls.
 
 How this influences runtime behavior:
 
@@ -373,7 +377,8 @@ Core endpoints:
 - `GET /api/v1/runs/{run_id}/status`
 - `GET /api/v1/runs/{run_id}/output`
 - `GET /api/v1/runs/{run_id}/context`
-- `GET /api/v1/runs/{run_id}/references/{ref_id}` (resolve one citation reference such as `ref_1`)
+- `GET /api/v1/runs/{run_id}/references` (canonical citation endpoint; supports optional query params `ref_id` and `include_quote`)
+- `GET /api/v1/runs/{run_id}/references/{ref_id}` (compatibility alias for one reference with quote payload)
 - `GET /api/v1/cities` (city names from markdown filenames in `MARKDOWN_DIR`, without `.md`)
 - `GET /api/v1/city-groups` (predefined city groups filtered to currently available markdown cities)
 - `GET /api/v1/chat/contexts` (catalog of completed run contexts with token counts)
@@ -413,8 +418,11 @@ Context chat notes:
 - Run outputs are persisted under `output/<run_id>/final.md` and `output/<run_id>/context_bundle.json`.
 - Chat sessions persist under `output/<run_id>/chat/<conversation_id>.json`.
 - Context manager supports selecting multiple completed run contexts.
-- Chat first tries full-context prompting; when token budget is exceeded, it switches to excerpt pooling across all selected runs.
+- Chat builds a deterministic synthetic citation catalog from selected context bundles and requires assistant citations in `[ref_n]` format.
+- Chat prompt citation context contains only `ref_id`, `city_name`, `quote`, and `partial_answer` (no chunk ids and no internal source ids).
+- Assistant messages persist citation metadata (`source_run_id`, `source_ref_id`) for deterministic click-to-quote resolution in frontend.
 - Prompt budget defaults to `250000` tokens (`CHAT_PROMPT_TOKEN_CAP`) and switches to pooled excerpts if full context exceeds this budget.
+- `include_quote=false` on `/references` is the default for lightweight city-label rendering; quote payload is fetched on click using `include_quote=true`.
 
 Run API in Docker:
 
@@ -449,6 +457,7 @@ NEXT_PUBLIC_API_BASE_URL=http://127.0.0.1:8000
 
 Frontend supports three city scope modes in the build form: all cities, predefined group, and manual selection.
 Clicking `Open Context Chat` switches to a dedicated chat workspace (not a chat modal), and `Manage Contexts` opens a popup for multi-context selection.
+Document and chat citations render as compact city labels; clicking a label loads and shows only the source quote.
 Clicking `Assumptions Review` opens a dedicated workspace where:
 
 - `Find Missing Data` runs two LLM passes (extract + verification).

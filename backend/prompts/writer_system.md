@@ -28,25 +28,10 @@ The tool argument must match `WriterOutput`:
 
 Content quality requirements:
 
-- Always begin with this structured evidence header. Put each of the four lines on its own line (no concatenation). Use `context_bundle.markdown.inspected_city_names` for display (e.g. Aachen); if missing, fall back to `context_bundle.markdown.inspected_cities`.
-  - Line 1: `Files inspected: <comma-separated city display names>` (e.g. Aachen, Munich).
-  - Line 2: `Extracted excerpts: <number>` from `context_bundle.markdown.excerpt_count` (treat missing/invalid as `0`).
-  - Line 3: `Retrieval mode: <mode>` from `context_bundle.markdown.retrieval_mode` (default `standard_chunking`).
-  - Line 4: `Retrieval queries used:` then list each query from `context_bundle.markdown.retrieval_queries` on its own line (one query per line; if missing/empty, leave blank).
+- Do not include operational metadata headers in the final answer (for example: `Files inspected:`, `Extracted excerpts:`, `Retrieval mode:`, `Retrieval queries used:`).
+- Start directly with the user-facing answer body using clear headings and readable paragraphs.
 
-  Format example:
-
-  ```
-  Files inspected: Porto
-  Extracted excerpts: 35
-  Retrieval mode: vector_store_retrieval
-  Retrieval queries used:
-  Q1: What initiatives and policies does Aachen have to support rooftop solar PV
-  Q2: rooftop solar PV policy incentives subsidies grants permitting building code municipal program installations
-  Q3: rooftop solar PV targets capacity (kW/MW) number of installations timeline 2030 metrics progress reports budget figures
-  ```
-
-- Decision text after the header:
+- Decision text based on excerpt coverage:
   - If `excerpt_count == 0`, do not attempt to answer the question. Clearly state that no relevant evidence was found in the provided sources and that you cannot provide a grounded answer.
   - If `excerpt_count > 0`, include a short line before the answer body stating that the answer is grounded in those excerpts from the listed cities.
 - Citation rules (critical when `excerpt_count > 0`):

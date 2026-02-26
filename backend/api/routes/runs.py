@@ -6,11 +6,13 @@ import json
 import logging
 from pathlib import Path
 
-from fastapi import APIRouter, Header, HTTPException, Request, status
+from fastapi import APIRouter, Header, HTTPException, Query, Request, status
 
 from backend.api.models import (
     CreateRunRequest,
     CreateRunResponse,
+    RunReferenceItem,
+    RunReferenceListResponse,
     RunReferenceResponse,
     RunListResponse,
     RunContextResponse,
@@ -259,6 +261,41 @@ def get_run_context(run_id: str, request: Request) -> RunContextResponse:
 
 
 @router.get(
+    "/runs/{run_id}/references",
+    name="list_run_references",
+    response_model=RunReferenceListResponse,
+    response_model_exclude_none=True,
+)
+def list_run_references(
+    run_id: str,
+    request: Request,
+    ref_id: str | None = Query(
+        default=None,
+        description="Optional `ref_n` id filter. When omitted, all references are returned.",
+    ),
+    include_quote: bool = Query(
+        default=False,
+        description=(
+            "When false (default), only lightweight citation fields are returned for "
+            "inline label rendering. Set true to include quote payload for click-to-inspect UX."
+        ),
+    ),
+) -> RunReferenceListResponse:
+    """Return run-scoped references for document/chat citation rendering."""
+    items = _resolve_run_reference_items(
+        run_id=run_id,
+        request=request,
+        ref_id=ref_id,
+        include_quote=include_quote,
+    )
+    return RunReferenceListResponse(
+        run_id=run_id,
+        reference_count=len(items),
+        references=items,
+    )
+
+
+@router.get(
     "/runs/{run_id}/references/{ref_id}",
     name="get_run_reference",
     response_model=RunReferenceResponse,
@@ -268,8 +305,34 @@ def get_run_reference(
     ref_id: str,
     request: Request,
 ) -> RunReferenceResponse:
-    """Return one markdown reference record for a completed run."""
-    if not is_valid_ref_id(ref_id):
+    """Compatibility alias for fetching one reference with quote payload."""
+    items = _resolve_run_reference_items(
+        run_id=run_id,
+        request=request,
+        ref_id=ref_id,
+        include_quote=True,
+    )
+    item = items[0]
+    return RunReferenceResponse(
+        run_id=run_id,
+        ref_id=item.ref_id,
+        excerpt_index=item.excerpt_index,
+        city_name=item.city_name,
+        quote=item.quote or "",
+        partial_answer=item.partial_answer or "",
+        source_chunk_ids=item.source_chunk_ids or [],
+    )
+
+
+def _resolve_run_reference_items(
+    run_id: str,
+    request: Request,
+    ref_id: str | None,
+    include_quote: bool,
+) -> list[RunReferenceItem]:
+    """Resolve run references with optional `ref_id` filter and quote payload."""
+    normalized_ref_id = (ref_id or "").strip()
+    if normalized_ref_id and not is_valid_ref_id(normalized_ref_id):
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
             detail="ref_id must match format `ref_<positive_integer>`.",
@@ -277,33 +340,46 @@ def get_run_reference(
 
     run_store, record = _require_completed_run(run_id, request)
     run_dir = _resolve_run_dir(record, run_store.runs_dir, run_id)
-    references = _load_reference_records(run_dir, run_id)
-    if not references:
+    records = _load_reference_records(run_dir, run_id)
+    if not records:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
             detail=f"No markdown references available for run `{run_id}`.",
         )
 
-    for reference in references:
-        candidate_ref_id = str(reference.get("ref_id", "")).strip()
-        if candidate_ref_id != ref_id:
+    items: list[RunReferenceItem] = []
+    for item in records:
+        normalized = _build_run_reference_item(record=item, include_quote=include_quote)
+        if not is_valid_ref_id(normalized.ref_id):
             continue
-        return RunReferenceResponse(
-            run_id=run_id,
-            ref_id=ref_id,
-            excerpt_index=_parse_excerpt_index(reference.get("excerpt_index")),
-            city_name=str(reference.get("city_name", "")),
-            quote=str(reference.get("quote", "")),
-            partial_answer=str(reference.get("partial_answer", "")),
-            source_chunk_ids=_normalize_source_chunk_ids(
-                reference.get("source_chunk_ids")
-            ),
-        )
+        items.append(normalized)
+    items.sort(key=lambda item: (item.excerpt_index, item.ref_id))
 
-    raise HTTPException(
-        status_code=status.HTTP_404_NOT_FOUND,
-        detail=f"Reference `{ref_id}` was not found for run `{run_id}`.",
+    if normalized_ref_id:
+        filtered = [item for item in items if item.ref_id == normalized_ref_id]
+        if not filtered:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"Reference `{normalized_ref_id}` was not found for run `{run_id}`.",
+            )
+        return filtered
+    return items
+
+
+def _build_run_reference_item(
+    record: dict[str, object], include_quote: bool
+) -> RunReferenceItem:
+    """Normalize one raw reference record into API response shape."""
+    item = RunReferenceItem(
+        ref_id=str(record.get("ref_id", "")).strip(),
+        excerpt_index=_parse_excerpt_index(record.get("excerpt_index")),
+        city_name=str(record.get("city_name", "")).strip(),
     )
+    if include_quote:
+        item.quote = str(record.get("quote", ""))
+        item.partial_answer = str(record.get("partial_answer", ""))
+        item.source_chunk_ids = _normalize_source_chunk_ids(record.get("source_chunk_ids"))
+    return item
 
 
 def _resolve_output_path(path: Path | None, runs_dir: Path, run_id: str) -> Path | None:

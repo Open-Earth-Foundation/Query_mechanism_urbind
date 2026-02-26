@@ -14,11 +14,16 @@ sql_researcher:
 markdown_researcher:
   model: "x-ai/grok-4.1-fast"
   temperature: 0.0
+  # Optional Grok-only setting. Do not set this for non-Grok models.
+  # Unsupported models/providers may reject the request if this is enabled.
+  reasoning_effort: "none"
   context_window_tokens: 200000
   input_token_reserve: 10000
   max_chunk_tokens: 40000
   chunk_overlap_tokens: 2000
-  batch_max_chunks: 16
+  # try this and how much it drops the time
+  # every 16 chunks is adding ~13k tokens
+  batch_max_chunks: 32
   batch_max_input_tokens: null
   batch_overhead_tokens: 600
   max_workers: 4
@@ -43,7 +48,7 @@ assumptions_reviewer:
   temperature: 0.0
   max_output_tokens: 8000
 vector_store:
-  enabled: false
+  enabled: true
   chroma_persist_path: ".chroma"
   chroma_collection_name: "markdown_chunks"
   embedding_model: "text-embedding-3-large"

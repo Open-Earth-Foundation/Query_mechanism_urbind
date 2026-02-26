@@ -7,6 +7,8 @@ import {
   CircleDashed,
   Loader2,
   MessageSquareText,
+  PanelLeftClose,
+  PanelLeftOpen,
   RefreshCw,
   Sparkles,
 } from "lucide-react";
@@ -52,6 +54,7 @@ const TERMINAL_STATUSES: RunStatus[] = [
 type CityScopeMode = "all" | "group" | "manual";
 const USER_API_KEY_STORAGE_KEY = "openrouter_user_api_key";
 const LAST_RUN_ID_STORAGE_KEY = "last_run_id";
+const CONTROLS_COLLAPSED_STORAGE_KEY = "build_controls_collapsed";
 
 export default function Home() {
   const [question, setQuestion] = useState("");
@@ -85,6 +88,7 @@ export default function Home() {
   const [chatEnabled, setChatEnabled] = useState(false);
   const [chatOpen, setChatOpen] = useState(false);
   const [assumptionsOpen, setAssumptionsOpen] = useState(false);
+  const [isControlsCollapsed, setIsControlsCollapsed] = useState(false);
   const [resolvedApiBaseUrl, setResolvedApiBaseUrl] = useState(apiBaseUrl);
 
   const runId = runResponse?.run_id ?? null;
@@ -105,6 +109,24 @@ export default function Home() {
     setUserApiKey(cleaned);
     setUsingCustomApiKey(true);
   }, []);
+
+  useEffect(() => {
+    if (typeof window === "undefined") {
+      return;
+    }
+    const stored = window.localStorage.getItem(CONTROLS_COLLAPSED_STORAGE_KEY);
+    setIsControlsCollapsed(stored === "1");
+  }, []);
+
+  useEffect(() => {
+    if (typeof window === "undefined") {
+      return;
+    }
+    window.localStorage.setItem(
+      CONTROLS_COLLAPSED_STORAGE_KEY,
+      isControlsCollapsed ? "1" : "0",
+    );
+  }, [isControlsCollapsed]);
 
   useEffect(() => {
     setResolvedApiBaseUrl(getApiBaseUrl());
@@ -502,13 +524,40 @@ export default function Home() {
           </div>
         </header>
 
-        <main className="grid gap-6 lg:grid-cols-[420px_1fr]">
-          <Card className="h-fit border-slate-300">
-            <CardHeader>
-              <CardTitle>Build Controls</CardTitle>
-              <CardDescription>Select scope and trigger a long-running build.</CardDescription>
-            </CardHeader>
-            <CardContent className="space-y-5">
+        <Button
+          type="button"
+          variant="outline"
+          size="sm"
+          onClick={() => setIsControlsCollapsed((current) => !current)}
+          aria-label={isControlsCollapsed ? "Show controls panel" : "Hide controls panel"}
+          className="group fixed left-0 top-1/2 z-40 h-10 w-10 -translate-y-1/2 justify-start gap-2 overflow-hidden rounded-l-none rounded-r-full border border-slate-300 bg-white/90 px-3 text-slate-700 shadow-sm backdrop-blur-sm transition-all duration-300 ease-out hover:w-40 focus-visible:w-40"
+        >
+          <span className="shrink-0">
+            {isControlsCollapsed ? (
+              <PanelLeftOpen className="h-4 w-4" />
+            ) : (
+              <PanelLeftClose className="h-4 w-4" />
+            )}
+          </span>
+          <span className="max-w-0 overflow-hidden whitespace-nowrap text-xs font-medium opacity-0 transition-all duration-300 ease-out group-hover:max-w-24 group-hover:opacity-100 group-focus-visible:max-w-24 group-focus-visible:opacity-100">
+            {isControlsCollapsed ? "Show Controls" : "Hide Controls"}
+          </span>
+        </Button>
+
+        <main className="flex flex-col gap-6 lg:flex-row">
+          <div
+            className={`overflow-hidden transition-[width,opacity,transform] duration-300 ease-in-out lg:shrink-0 ${
+              isControlsCollapsed
+                ? "lg:w-0 lg:-translate-x-4 lg:opacity-0 lg:pointer-events-none"
+                : "lg:w-[26rem] lg:translate-x-0 lg:opacity-100"
+            }`}
+          >
+            <Card className="h-fit border-slate-300">
+              <CardHeader>
+                <CardTitle>Build Controls</CardTitle>
+                <CardDescription>Select scope and trigger a long-running build.</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-5">
               <div className="space-y-2">
                 <Label htmlFor="question">Question</Label>
                 <Textarea
@@ -777,109 +826,116 @@ export default function Home() {
                 ) : null}
                 {runError ? <p className="text-sm text-red-600">{runError}</p> : null}
               </div>
-            </CardContent>
-          </Card>
-
-          {assumptionsOpen && documentReady && runId ? (
-            <AssumptionsWorkspace
-              runId={runId}
-              enabled={documentReady}
-              onClose={() => setAssumptionsOpen(false)}
-            />
-          ) : chatOpen && chatEnabled && documentReady && runId ? (
-            <ContextChatWorkspace
-              runId={runId}
-              enabled={chatEnabled && documentReady}
-              onClose={() => setChatOpen(false)}
-            />
-          ) : (
-            <Card className="border-slate-300">
-              <CardHeader className="pb-4">
-                <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-                  <div>
-                    <CardTitle>Generated Document</CardTitle>
-                    <CardDescription>
-                      The main answer is rendered as a report. Context chat opens as a dedicated workspace.
-                    </CardDescription>
-                  </div>
-                  <div className="flex items-center gap-3 rounded-full border border-slate-200 bg-slate-50 px-3 py-2">
-                    <Label htmlFor="chat-toggle" className="text-xs uppercase tracking-[0.14em] text-slate-600">
-                      Context Chat
-                    </Label>
-                    <Switch
-                      id="chat-toggle"
-                      checked={chatEnabled}
-                      onCheckedChange={setChatEnabled}
-                      disabled={disableChatSwitch}
-                    />
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent>
-                {documentReady ? (
-                  <>
-                    <div className="mb-3 flex justify-end">
-                      <div className="flex gap-2">
-                        <Button
-                          type="button"
-                          variant="outline"
-                          onClick={() => {
-                            setChatOpen(false);
-                            setAssumptionsOpen(true);
-                          }}
-                          disabled={!runId}
-                        >
-                          <Sparkles className="h-4 w-4" />
-                          Assumptions Review
-                        </Button>
-                        <Button
-                          type="button"
-                          onClick={() => {
-                            setAssumptionsOpen(false);
-                            setChatOpen(true);
-                          }}
-                          disabled={!chatEnabled || !runId}
-                        >
-                          <MessageSquareText className="h-4 w-4" />
-                          Open Context Chat
-                        </Button>
-                      </div>
-                    </div>
-                    <article className="document-markdown rounded-md border border-slate-200 bg-white p-5 shadow-inner">
-                      <MarkdownWithReferences
-                        content={runOutput.content}
-                        runId={runId}
-                      />
-                    </article>
-                  </>
-                ) : isLongWait ? (
-                  <div className="space-y-3 rounded-md border border-slate-200 bg-white p-6">
-                    <div className="flex items-center gap-2 text-slate-700">
-                      <Loader2 className="h-4 w-4 animate-spin" />
-                      Generating document...
-                    </div>
-                    <div className="space-y-2">
-                      <div className="h-2 animate-pulse rounded bg-slate-200" />
-                      <div className="h-2 w-11/12 animate-pulse rounded bg-slate-200" />
-                      <div className="h-2 w-10/12 animate-pulse rounded bg-slate-200" />
-                      <div className="h-2 w-8/12 animate-pulse rounded bg-slate-200" />
-                    </div>
-                  </div>
-                ) : (
-                  <div className="rounded-md border border-dashed border-slate-300 bg-white p-8 text-center text-slate-600">
-                    <p className="text-base font-medium">Document output will appear here.</p>
-                    <p className="mt-1 text-sm">Submit a run from the left panel to start building.</p>
-                  </div>
-                )}
-
-                {runContext ? (
-                  <p className="mt-4 text-xs text-slate-500">
-                    Context bundle loaded from: {runContext.context_bundle_path}
-                  </p>
-                ) : null}
               </CardContent>
             </Card>
-          )}
+          </div>
+
+          <div className="min-w-0 flex-1">
+            {assumptionsOpen && documentReady && runId ? (
+              <AssumptionsWorkspace
+                runId={runId}
+                enabled={documentReady}
+                onClose={() => setAssumptionsOpen(false)}
+              />
+            ) : chatOpen && chatEnabled && documentReady && runId ? (
+              <ContextChatWorkspace
+                runId={runId}
+                enabled={chatEnabled && documentReady}
+                onClose={() => setChatOpen(false)}
+              />
+            ) : (
+              <Card className="border-slate-300">
+                <CardHeader className="pb-4">
+                  <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+                    <div>
+                      <CardTitle>Generated Document</CardTitle>
+                      <CardDescription>
+                        The main answer is rendered as a report. Context chat opens as a dedicated workspace.
+                      </CardDescription>
+                    </div>
+                    <div className="flex items-center gap-3 rounded-full border border-slate-200 bg-slate-50 px-3 py-2">
+                      <Label htmlFor="chat-toggle" className="text-xs uppercase tracking-[0.14em] text-slate-600">
+                        Context Chat
+                      </Label>
+                      <Switch
+                        id="chat-toggle"
+                        checked={chatEnabled}
+                        onCheckedChange={setChatEnabled}
+                        disabled={disableChatSwitch}
+                      />
+                    </div>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  {documentReady ? (
+                    <>
+                      <div className="mb-3 flex justify-end">
+                        <div className="flex gap-2">
+                          <Button
+                            type="button"
+                            variant="outline"
+                            onClick={() => {
+                              setChatOpen(false);
+                              setAssumptionsOpen(true);
+                            }}
+                            disabled={!runId}
+                          >
+                            <Sparkles className="h-4 w-4" />
+                            Assumptions Review
+                          </Button>
+                          <Button
+                            type="button"
+                            onClick={() => {
+                              setAssumptionsOpen(false);
+                              setChatOpen(true);
+                            }}
+                            disabled={!chatEnabled || !runId}
+                          >
+                            <MessageSquareText className="h-4 w-4" />
+                            Open Context Chat
+                          </Button>
+                        </div>
+                      </div>
+                      <article className="document-markdown rounded-md border border-slate-200 bg-white p-5 shadow-inner">
+                        <MarkdownWithReferences
+                          content={runOutput.content}
+                          runId={runId}
+                        />
+                      </article>
+                    </>
+                  ) : isLongWait ? (
+                    <div className="space-y-3 rounded-md border border-slate-200 bg-white p-6">
+                      <div className="flex items-center gap-2 text-slate-700">
+                        <Loader2 className="h-4 w-4 animate-spin" />
+                        Generating document...
+                      </div>
+                      <div className="space-y-2">
+                        <div className="h-2 animate-pulse rounded bg-slate-200" />
+                        <div className="h-2 w-11/12 animate-pulse rounded bg-slate-200" />
+                        <div className="h-2 w-10/12 animate-pulse rounded bg-slate-200" />
+                        <div className="h-2 w-8/12 animate-pulse rounded bg-slate-200" />
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="rounded-md border border-dashed border-slate-300 bg-white p-8 text-center text-slate-600">
+                      <p className="text-base font-medium">Document output will appear here.</p>
+                      <p className="mt-1 text-sm">
+                        {isControlsCollapsed
+                          ? "Open Build Controls to start a run."
+                          : "Submit a run from the left panel to start building."}
+                      </p>
+                    </div>
+                  )}
+
+                  {runContext ? (
+                    <p className="mt-4 text-xs text-slate-500">
+                      Context bundle loaded from: {runContext.context_bundle_path}
+                    </p>
+                  ) : null}
+                </CardContent>
+              </Card>
+            )}
+          </div>
         </main>
       </div>
 

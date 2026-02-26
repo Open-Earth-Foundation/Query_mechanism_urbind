@@ -53,6 +53,8 @@ def build_markdown_agent(config: AppConfig, api_key: str) -> Agent:
     settings = build_model_settings(
         config.markdown_researcher.temperature,
         config.markdown_researcher.max_output_tokens,
+        # Grok-specific optional override; unsupported models/providers may reject this.
+        reasoning_effort=config.markdown_researcher.reasoning_effort,
     )
     settings.tool_choice = "submit_markdown_excerpts"
     settings.parallel_tool_calls = False

@@ -61,6 +61,21 @@ export interface RunReferenceResponse {
   source_chunk_ids: string[];
 }
 
+export interface RunReferenceListItem {
+  ref_id: string;
+  excerpt_index: number;
+  city_name: string;
+  quote?: string | null;
+  partial_answer?: string | null;
+  source_chunk_ids?: string[] | null;
+}
+
+export interface RunReferenceListResponse {
+  run_id: string;
+  reference_count: number;
+  references: RunReferenceListItem[];
+}
+
 export interface RunSummary {
   run_id: string;
   question: string;
@@ -123,10 +138,19 @@ export interface ApplyAssumptionsResponse {
 
 export type ChatRole = "user" | "assistant";
 
+export interface ChatCitation {
+  ref_id: string;
+  city_name: string;
+  source_run_id: string;
+  source_ref_id: string;
+}
+
 export interface ChatMessage {
   role: ChatRole;
   content: string;
   created_at: string;
+  citations?: ChatCitation[] | null;
+  citation_warning?: string | null;
 }
 
 export interface ChatSessionResponse {
@@ -318,9 +342,42 @@ export async function fetchRunReference(
   runId: string,
   refId: string,
 ): Promise<RunReferenceResponse> {
-  return requestJson<RunReferenceResponse>(
-    `/api/v1/runs/${encodeURIComponent(runId)}/references/${encodeURIComponent(refId)}`,
-  );
+  const payload = await fetchRunReferences(runId, {
+    refId,
+    includeQuote: true,
+  });
+  const reference = payload.references[0];
+  if (!reference) {
+    throw new Error(`Reference ${refId} was not found for run ${runId}.`);
+  }
+  return {
+    run_id: runId,
+    ref_id: reference.ref_id,
+    excerpt_index: reference.excerpt_index,
+    city_name: reference.city_name,
+    quote: reference.quote ?? "",
+    partial_answer: reference.partial_answer ?? "",
+    source_chunk_ids: reference.source_chunk_ids ?? [],
+  };
+}
+
+export async function fetchRunReferences(
+  runId: string,
+  options?: {
+    refId?: string;
+    includeQuote?: boolean;
+  },
+): Promise<RunReferenceListResponse> {
+  const params = new URLSearchParams();
+  if (options?.refId) {
+    params.set("ref_id", options.refId);
+  }
+  if (options?.includeQuote) {
+    params.set("include_quote", "true");
+  }
+  const suffix = params.toString();
+  const path = `/api/v1/runs/${encodeURIComponent(runId)}/references${suffix ? `?${suffix}` : ""}`;
+  return requestJson<RunReferenceListResponse>(path);
 }
 
 export async function fetchCities(): Promise<CityListResponse> {

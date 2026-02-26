@@ -1,22 +1,45 @@
 "use client";
 
-import { MouseEvent, useEffect, useMemo, useRef, useState } from "react";
+import {
+  Children,
+  MouseEvent,
+  ReactNode,
+  isValidElement,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
 import { createPortal } from "react-dom";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
-import { RunReferenceResponse, fetchRunReference } from "@/lib/api";
+import {
+  ChatCitation,
+  RunReferenceListItem,
+  fetchRunReferences,
+} from "@/lib/api";
 
 interface ReferencePopoverState {
   refId: string;
+  sourceRunId: string | null;
+  sourceRefId: string | null;
   top: number;
   left: number;
+}
+
+interface CitationPointer {
+  cityName: string;
+  sourceRunId: string | null;
+  sourceRefId: string | null;
 }
 
 interface MarkdownWithReferencesProps {
   content: string;
   runId: string | null;
   className?: string;
+  chatCitations?: ChatCitation[] | null;
+  prefetchRunReferences?: boolean;
 }
 
 const REFERENCE_TOKEN_PATTERN = /\[(ref_\d+)\](?!\()|(?<![\w[/])(ref_\d+)\b/g;
@@ -24,6 +47,115 @@ const REFERENCE_HREF_PREFIX = "#ref-";
 const POPOVER_WIDTH_PX = 360;
 const POPOVER_MARGIN_PX = 12;
 const POPOVER_ESTIMATED_HEIGHT_PX = 280;
+
+interface CitationGroupToggleProps {
+  citations: ReactNode[];
+}
+
+function CitationGroupToggle({ citations }: CitationGroupToggleProps) {
+  const [isOpen, setIsOpen] = useState(false);
+  return (
+    <span className="citation-group">
+      <button
+        type="button"
+        className="citation-group-toggle"
+        aria-expanded={isOpen}
+        onClick={() => setIsOpen((current) => !current)}
+      >
+        <span>Source</span>
+        <span className="citation-group-arrow" aria-hidden="true">
+          &gt;
+        </span>
+      </button>
+      {isOpen ? (
+        <span className="citation-group-list">
+          {citations.map((citation, index) => (
+            <span key={index} className="citation-group-item">
+              {citation}
+            </span>
+          ))}
+        </span>
+      ) : null}
+    </span>
+  );
+}
+
+function _isWhitespaceTextNode(node: ReactNode): boolean {
+  return typeof node === "string" && node.trim().length === 0;
+}
+
+function _isCitationRefNode(node: ReactNode): boolean {
+  if (!isValidElement(node)) {
+    return false;
+  }
+  const props = node.props as Record<string, unknown> | undefined;
+  const marker = props?.["data-reference-link"];
+  return marker === "true" || marker === true;
+}
+
+function _collapseCitationRuns(children: ReactNode): ReactNode[] {
+  const nodes = Children.toArray(children);
+  const collapsed: ReactNode[] = [];
+  let index = 0;
+
+  while (index < nodes.length) {
+    const current = nodes[index];
+    if (!_isCitationRefNode(current)) {
+      collapsed.push(current);
+      index += 1;
+      continue;
+    }
+
+    const run: ReactNode[] = [current];
+    let cursor = index + 1;
+    while (cursor < nodes.length) {
+      const next = nodes[cursor];
+      if (
+        _isWhitespaceTextNode(next) &&
+        cursor + 1 < nodes.length &&
+        _isCitationRefNode(nodes[cursor + 1])
+      ) {
+        run.push(nodes[cursor + 1]);
+        cursor += 2;
+        continue;
+      }
+      if (_isCitationRefNode(next)) {
+        run.push(next);
+        cursor += 1;
+        continue;
+      }
+      break;
+    }
+
+    if (run.length > 1) {
+      collapsed.push(
+        <CitationGroupToggle
+          key={`citation-group-${index}`}
+          citations={run}
+        />,
+      );
+    } else {
+      collapsed.push(current);
+    }
+    index = cursor;
+  }
+
+  return collapsed;
+}
+
+function _toPlainText(node: ReactNode): string {
+  if (typeof node === "string" || typeof node === "number") {
+    return String(node);
+  }
+  if (Array.isArray(node)) {
+    return node.map(_toPlainText).join("");
+  }
+  if (node && typeof node === "object" && "props" in node) {
+    const childNode = (node as { props?: { children?: ReactNode } }).props?.children;
+    return _toPlainText(childNode);
+  }
+  return "";
+}
 
 function _toReferenceMarkdown(content: string): string {
   return content.replace(
@@ -58,21 +190,50 @@ function _resolvePopoverTop(top: number, bottom: number): number {
   return Math.max(top - POPOVER_ESTIMATED_HEIGHT_PX - 8, POPOVER_MARGIN_PX);
 }
 
-function _buildReferenceCacheKey(runId: string | null, refId: string): string {
-  return `${runId ?? "__no_run__"}::${refId}`;
+function _buildReferenceCacheKey(
+  runId: string | null,
+  refId: string | null,
+): string {
+  return `${runId ?? "__no_run__"}::${refId ?? "__no_ref__"}`;
+}
+
+function _normalizeCityLabel(value: string): string {
+  const trimmed = value.trim();
+  if (!trimmed) {
+    return "Source";
+  }
+  return trimmed
+    .replace(/[_-]+/g, " ")
+    .replace(/\s+/g, " ")
+    .replace(/\b\w/g, (char) => char.toUpperCase());
+}
+
+function _referenceItemToPointer(
+  item: RunReferenceListItem,
+  runId: string,
+): CitationPointer {
+  return {
+    cityName: _normalizeCityLabel(item.city_name ?? ""),
+    sourceRunId: runId,
+    sourceRefId: item.ref_id,
+  };
 }
 
 export function MarkdownWithReferences({
   content,
   runId,
   className,
+  chatCitations,
+  prefetchRunReferences = true,
 }: MarkdownWithReferencesProps) {
   const popoverRef = useRef<HTMLDivElement | null>(null);
   const activePopoverRef = useRef<ReferencePopoverState | null>(null);
-  const runIdRef = useRef<string | null>(runId);
   const activeRequestKeyRef = useRef<string | null>(null);
   const [referenceCache, setReferenceCache] = useState<
-    Record<string, RunReferenceResponse>
+    Record<string, RunReferenceListItem>
+  >({});
+  const [runReferencePointers, setRunReferencePointers] = useState<
+    Record<string, CitationPointer>
   >({});
   const [activePopover, setActivePopover] = useState<ReferencePopoverState | null>(
     null,
@@ -81,9 +242,31 @@ export function MarkdownWithReferences({
   const [referenceError, setReferenceError] = useState<string | null>(null);
 
   const markdownContent = useMemo(() => _toReferenceMarkdown(content), [content]);
+
+  const chatCitationPointers = useMemo(() => {
+    const mapping: Record<string, CitationPointer> = {};
+    (chatCitations ?? []).forEach((citation) => {
+      const refId = citation.ref_id?.trim();
+      if (!refId) {
+        return;
+      }
+      mapping[refId] = {
+        cityName: _normalizeCityLabel(citation.city_name ?? ""),
+        sourceRunId: citation.source_run_id?.trim() || runId,
+        sourceRefId: citation.source_ref_id?.trim() || refId,
+      };
+    });
+    return mapping;
+  }, [chatCitations, runId]);
+
+  const citationPointers = useMemo(
+    () => ({ ...runReferencePointers, ...chatCitationPointers }),
+    [chatCitationPointers, runReferencePointers],
+  );
+
   const activeReferenceCacheKey =
     activePopover !== null
-      ? _buildReferenceCacheKey(runId, activePopover.refId)
+      ? _buildReferenceCacheKey(activePopover.sourceRunId, activePopover.sourceRefId)
       : null;
   const activeReference =
     activeReferenceCacheKey !== null
@@ -95,16 +278,39 @@ export function MarkdownWithReferences({
   }, [activePopover]);
 
   useEffect(() => {
-    runIdRef.current = runId;
-  }, [runId]);
-
-  useEffect(() => {
     activeRequestKeyRef.current = null;
     setActivePopover(null);
     setLoadingRequestKey(null);
     setReferenceError(null);
     setReferenceCache({});
-  }, [runId]);
+    setRunReferencePointers({});
+  }, [runId, chatCitations]);
+
+  useEffect(() => {
+    if (!prefetchRunReferences || !runId) {
+      return;
+    }
+    let cancelled = false;
+    fetchRunReferences(runId)
+      .then((payload) => {
+        if (cancelled) {
+          return;
+        }
+        const pointers: Record<string, CitationPointer> = {};
+        payload.references.forEach((item) => {
+          pointers[item.ref_id] = _referenceItemToPointer(item, runId);
+        });
+        setRunReferencePointers(pointers);
+      })
+      .catch(() => {
+        if (!cancelled) {
+          setRunReferencePointers({});
+        }
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [prefetchRunReferences, runId]);
 
   useEffect(() => {
     if (!activePopover) {
@@ -148,6 +354,10 @@ export function MarkdownWithReferences({
   ): Promise<void> {
     event.preventDefault();
 
+    const pointer = citationPointers[refId];
+    const sourceRunId = pointer?.sourceRunId ?? runId;
+    const sourceRefId = pointer?.sourceRefId ?? refId;
+
     if (activePopover?.refId === refId) {
       setActivePopover(null);
       setReferenceError(null);
@@ -157,14 +367,16 @@ export function MarkdownWithReferences({
     const targetRect = event.currentTarget.getBoundingClientRect();
     setActivePopover({
       refId,
+      sourceRunId,
+      sourceRefId,
       top: _resolvePopoverTop(targetRect.top, targetRect.bottom),
       left: _resolvePopoverLeft(targetRect.left),
     });
     setReferenceError(null);
-    const requestKey = _buildReferenceCacheKey(runId, refId);
+    const requestKey = _buildReferenceCacheKey(sourceRunId, sourceRefId);
 
-    if (!runId) {
-      setReferenceError("Run id is missing, so this reference cannot be loaded.");
+    if (!sourceRunId || !sourceRefId) {
+      setReferenceError("Reference source is missing, so this quote cannot be loaded.");
       return;
     }
     if (referenceCache[requestKey]) {
@@ -174,13 +386,23 @@ export function MarkdownWithReferences({
     activeRequestKeyRef.current = requestKey;
     setLoadingRequestKey(requestKey);
     try {
-      const reference = await fetchRunReference(runId, refId);
+      const payload = await fetchRunReferences(sourceRunId, {
+        refId: sourceRefId,
+        includeQuote: true,
+      });
+      const reference = payload.references[0];
+      if (!reference) {
+        throw new Error("Reference was not found.");
+      }
       setReferenceCache((current) => ({ ...current, [requestKey]: reference }));
     } catch (error) {
       const activePopoverState = activePopoverRef.current;
       const activePopoverKey =
         activePopoverState !== null
-          ? _buildReferenceCacheKey(runIdRef.current, activePopoverState.refId)
+          ? _buildReferenceCacheKey(
+              activePopoverState.sourceRunId,
+              activePopoverState.sourceRefId,
+            )
           : null;
       if (
         activeRequestKeyRef.current === requestKey &&
@@ -200,12 +422,39 @@ export function MarkdownWithReferences({
     }
   }
 
+  function renderReferenceLabel(refId: string): string {
+    const pointer = citationPointers[refId];
+    if (pointer?.cityName) {
+      return pointer.cityName;
+    }
+    return "Source";
+  }
+
   return (
     <>
       <div className={className}>
         <ReactMarkdown
           remarkPlugins={[remarkGfm]}
           components={{
+            h1: ({ children }) => {
+              const isQuestionHeading =
+                _toPlainText(children).trim().toLowerCase() === "question";
+              if (isQuestionHeading) {
+                return <h1 className="document-question-heading">{children}</h1>;
+              }
+              return <h1>{children}</h1>;
+            },
+            p: ({ children }) => <p>{_collapseCitationRuns(children)}</p>,
+            li: ({ children }) => <li>{_collapseCitationRuns(children)}</li>,
+            table: ({ children }) => (
+              <div className="markdown-table-wrap">
+                <table className="markdown-table">{children}</table>
+              </div>
+            ),
+            th: ({ children }) => <th className="markdown-table-head">{children}</th>,
+            td: ({ children }) => (
+              <td className="markdown-table-cell">{_collapseCitationRuns(children)}</td>
+            ),
             a: ({ href, children }) => {
               if (
                 typeof href === "string" &&
@@ -218,8 +467,9 @@ export function MarkdownWithReferences({
                     className="citation-ref-link"
                     data-reference-link="true"
                     onClick={(event) => void handleReferenceClick(event, refId)}
+                    title={refId}
                   >
-                    {children}
+                    <span className="citation-ref-city">{renderReferenceLabel(refId)}</span>
                   </button>
                 );
               }
@@ -247,7 +497,6 @@ export function MarkdownWithReferences({
               style={{ top: `${activePopover.top}px`, left: `${activePopover.left}px` }}
             >
               <div className="citation-popover-header">
-                <strong>{activePopover.refId}</strong>
                 <button
                   type="button"
                   className="citation-popover-close"
@@ -261,7 +510,7 @@ export function MarkdownWithReferences({
               </div>
 
               {loadingRequestKey === activeReferenceCacheKey && !activeReference ? (
-                <p className="citation-popover-muted">Loading reference...</p>
+                <p className="citation-popover-muted">Loading quote...</p>
               ) : null}
 
               {referenceError ? (
@@ -270,14 +519,7 @@ export function MarkdownWithReferences({
 
               {!referenceError && activeReference ? (
                 <div className="citation-popover-body">
-                  <p>
-                    <span className="citation-popover-label">City:</span>{" "}
-                    {activeReference.city_name || "(unknown)"}
-                  </p>
-                  <p>
-                    <span className="citation-popover-label">Quote:</span>{" "}
-                    {activeReference.quote || "(empty quote)"}
-                  </p>
+                  <p>{activeReference.quote?.trim() || "(empty quote)"}</p>
                 </div>
               ) : null}
             </div>,

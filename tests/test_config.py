@@ -1,6 +1,7 @@
 from pathlib import Path
 
 import pytest
+from pydantic import ValidationError
 
 from backend.utils.config import load_config
 
@@ -88,3 +89,56 @@ def test_load_config_reads_vector_store_settings_from_yaml(
     assert config.vector_store.embedding_model == "custom-embedding-model"
     assert config.vector_store.retrieval_max_distance == 0.75
     assert config.vector_store.retrieval_max_chunks_per_city_query == 42
+
+
+def test_load_config_reads_markdown_reasoning_effort_from_yaml(
+    tmp_path: Path,
+) -> None:
+    """Markdown reasoning effort is loaded when configured."""
+    config_path = tmp_path / "llm_config.yaml"
+    config_path.write_text(
+        "\n".join(
+            [
+                "orchestrator:",
+                "  model: test-model",
+                "sql_researcher:",
+                "  model: test-model",
+                "markdown_researcher:",
+                "  model: x-ai/grok-4.1-fast",
+                "  reasoning_effort: none",
+                "writer:",
+                "  model: test-model",
+            ]
+        ),
+        encoding="utf-8",
+    )
+
+    config = load_config(config_path)
+
+    assert config.markdown_researcher.reasoning_effort == "none"
+
+
+def test_load_config_rejects_invalid_markdown_reasoning_effort(
+    tmp_path: Path,
+) -> None:
+    """Invalid markdown reasoning effort values are rejected."""
+    config_path = tmp_path / "llm_config.yaml"
+    config_path.write_text(
+        "\n".join(
+            [
+                "orchestrator:",
+                "  model: test-model",
+                "sql_researcher:",
+                "  model: test-model",
+                "markdown_researcher:",
+                "  model: x-ai/grok-4.1-fast",
+                "  reasoning_effort: ultra",
+                "writer:",
+                "  model: test-model",
+            ]
+        ),
+        encoding="utf-8",
+    )
+
+    with pytest.raises(ValidationError):
+        load_config(config_path)

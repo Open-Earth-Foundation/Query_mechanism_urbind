@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import os
 from pathlib import Path
-from typing import Optional
+from typing import Literal, Optional
 
 import yaml
 from dotenv import load_dotenv
@@ -29,6 +29,7 @@ class SqlResearcherConfig(AgentConfig):
 
 
 class MarkdownResearcherConfig(AgentConfig):
+    reasoning_effort: Literal["none", "minimal", "low", "medium", "high", "xhigh"] | None = None
     max_files: int = 200
     max_file_bytes: int = 5_000_000
     max_chunk_tokens: Optional[int] = None

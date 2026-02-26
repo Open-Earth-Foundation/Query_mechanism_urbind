@@ -6,11 +6,14 @@ from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
 from typing import Any
+import re
+import logging
 
 from fastapi import APIRouter, Header, HTTPException, Request, status
 from openai import APIStatusError, APITimeoutError, AuthenticationError
 
 from backend.api.models import (
+    ChatCitation,
     ChatContextCatalogResponse,
     ChatContextSummary,
     ChatMessage,
@@ -34,10 +37,13 @@ from backend.api.services import (
     load_context_bundle,
     load_final_document,
 )
+from backend.modules.orchestrator.utils.references import is_valid_ref_id
 from backend.utils.config import load_config
 from backend.utils.tokenization import count_tokens
 
 router = APIRouter()
+logger = logging.getLogger(__name__)
+_REF_TOKEN_PATTERN = re.compile(r"\[(ref_[1-9]\d*)\]")
 
 
 def _resolve_api_key_override(raw: str | None) -> str | None:
@@ -83,6 +89,18 @@ class _LoadedContext:
             bundle_tokens=self.bundle_tokens,
             total_tokens=self.total_tokens,
         )
+
+
+@dataclass(frozen=True)
+class _ChatCitationEntry:
+    """Deterministic chat citation mapping entry."""
+
+    ref_id: str
+    city_name: str
+    quote: str
+    partial_answer: str
+    source_run_id: str
+    source_ref_id: str
 
 
 def _get_run_store(request: Request) -> RunStore:
@@ -211,15 +229,44 @@ def _as_message(payload: object) -> ChatMessage:
     role = payload.get("role")
     content = payload.get("content")
     created_at = payload.get("created_at")
+    citation_warning = payload.get("citation_warning")
     if role not in {"user", "assistant"}:
         raise ValueError("Invalid message role.")
     if not isinstance(content, str):
         raise ValueError("Invalid message content.")
+    citations = _as_chat_citations(payload.get("citations"))
     return ChatMessage(
         role=role,
         content=content,
         created_at=_as_datetime(created_at),
+        citations=citations,
+        citation_warning=str(citation_warning) if isinstance(citation_warning, str) else None,
     )
+
+
+def _as_chat_citations(value: object) -> list[ChatCitation] | None:
+    """Normalize optional assistant citation metadata from persisted messages."""
+    if not isinstance(value, list):
+        return None
+    citations: list[ChatCitation] = []
+    for item in value:
+        if not isinstance(item, dict):
+            continue
+        ref_id = str(item.get("ref_id", "")).strip()
+        city_name = str(item.get("city_name", "")).strip()
+        source_run_id = str(item.get("source_run_id", "")).strip()
+        source_ref_id = str(item.get("source_ref_id", "")).strip()
+        if not ref_id or not source_run_id or not source_ref_id:
+            continue
+        citations.append(
+            ChatCitation(
+                ref_id=ref_id,
+                city_name=city_name,
+                source_run_id=source_run_id,
+                source_ref_id=source_ref_id,
+            )
+        )
+    return citations if citations else None
 
 
 def _as_session_response(payload: dict[str, object]) -> ChatSessionResponse:
@@ -323,6 +370,95 @@ def _build_session_contexts_response(
         excluded_context_run_ids=excluded_ids,
         is_capped=len(excluded_ids) > 0,
     )
+
+
+def _build_chat_citation_entries(
+    contexts: list[_LoadedContext],
+) -> list[_ChatCitationEntry]:
+    """Build deterministic synthetic chat citations from selected run contexts."""
+    entries: list[_ChatCitationEntry] = []
+    synthetic_index = 1
+    for context in contexts:
+        markdown_payload = context.context_bundle.get("markdown")
+        if not isinstance(markdown_payload, dict):
+            continue
+        raw_excerpts = markdown_payload.get("excerpts")
+        if not isinstance(raw_excerpts, list):
+            continue
+        for excerpt_index, raw_excerpt in enumerate(raw_excerpts):
+            if not isinstance(raw_excerpt, dict):
+                continue
+            source_ref_id = str(raw_excerpt.get("ref_id", "")).strip()
+            if not source_ref_id:
+                source_ref_id = f"ref_{excerpt_index + 1}"
+            if not is_valid_ref_id(source_ref_id):
+                continue
+            quote = str(raw_excerpt.get("quote", "")).strip()
+            partial_answer = str(raw_excerpt.get("partial_answer", "")).strip()
+            if not quote and not partial_answer:
+                continue
+            entries.append(
+                _ChatCitationEntry(
+                    ref_id=f"ref_{synthetic_index}",
+                    city_name=str(raw_excerpt.get("city_name", "")).strip(),
+                    quote=quote,
+                    partial_answer=partial_answer,
+                    source_run_id=context.run_id,
+                    source_ref_id=source_ref_id,
+                )
+            )
+            synthetic_index += 1
+    return entries
+
+
+def _build_llm_citation_catalog(
+    entries: list[_ChatCitationEntry],
+) -> list[dict[str, str]]:
+    """Build LLM-facing citation catalog with no internal identifiers."""
+    return [
+        {
+            "ref_id": entry.ref_id,
+            "city_name": entry.city_name,
+            "quote": entry.quote,
+            "partial_answer": entry.partial_answer,
+        }
+        for entry in entries
+    ]
+
+
+def _extract_ordered_ref_ids(content: str) -> list[str]:
+    """Extract citation refs preserving mention order with de-duplication."""
+    ordered: list[str] = []
+    seen: set[str] = set()
+    for match in _REF_TOKEN_PATTERN.finditer(content):
+        ref_id = match.group(1).strip()
+        if ref_id in seen:
+            continue
+        seen.add(ref_id)
+        ordered.append(ref_id)
+    return ordered
+
+
+def _resolve_assistant_citations(
+    content: str,
+    entries_by_ref_id: dict[str, _ChatCitationEntry],
+) -> tuple[list[dict[str, str]], bool]:
+    """Resolve assistant citations and return validity status."""
+    ordered_refs = _extract_ordered_ref_ids(content)
+    resolved: list[dict[str, str]] = []
+    for ref_id in ordered_refs:
+        entry = entries_by_ref_id.get(ref_id)
+        if entry is None:
+            continue
+        resolved.append(
+            {
+                "ref_id": entry.ref_id,
+                "city_name": entry.city_name,
+                "source_run_id": entry.source_run_id,
+                "source_ref_id": entry.source_ref_id,
+            }
+        )
+    return resolved, len(resolved) > 0
 
 
 @router.get(
@@ -509,7 +645,7 @@ def send_chat_message(
     except ChatSessionNotFoundError as exc:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=str(exc)) from exc
 
-    selected_ids, loaded_contexts, excluded_ids = _resolve_session_contexts(
+    _selected_ids, loaded_contexts, excluded_ids = _resolve_session_contexts(
         run_store,
         session,
         fallback_run_id=run_id,
@@ -538,6 +674,10 @@ def send_chat_message(
     config = load_config(Path(config_path))
     config.enable_sql = False
 
+    citation_entries = _build_chat_citation_entries(loaded_contexts)
+    citation_entries_by_ref_id = {entry.ref_id: entry for entry in citation_entries}
+    llm_citation_catalog = _build_llm_citation_catalog(citation_entries)
+
     api_key_override = _resolve_api_key_override(x_openrouter_api_key)
     chat_kwargs: dict[str, object] = {
         "original_question": run_record.question,
@@ -554,11 +694,35 @@ def send_chat_message(
         "user_content": payload.content,
         "config": config,
         "token_cap": CHAT_PROMPT_TOKEN_CAP,
+        "citation_catalog": llm_citation_catalog,
     }
     if api_key_override is not None:
         chat_kwargs["api_key_override"] = api_key_override
+
+    assistant_citations: list[dict[str, str]] = []
+    assistant_citation_warning: str | None = None
     try:
         assistant_text = generate_context_chat_reply(**chat_kwargs)
+        assistant_citations, has_valid_citations = _resolve_assistant_citations(
+            assistant_text,
+            citation_entries_by_ref_id,
+        )
+        if citation_entries and not has_valid_citations:
+            retry_kwargs = {**chat_kwargs, "retry_missing_citation": True}
+            assistant_text = generate_context_chat_reply(**retry_kwargs)
+            assistant_citations, has_valid_citations = _resolve_assistant_citations(
+                assistant_text,
+                citation_entries_by_ref_id,
+            )
+            if not has_valid_citations:
+                assistant_citation_warning = (
+                    "Assistant response is missing valid [ref_n] citations."
+                )
+                logger.warning(
+                    "Context chat response missing valid [ref_n] citations after retry run_id=%s conversation_id=%s",
+                    run_id,
+                    conversation_id,
+                )
     except APITimeoutError as exc:
         raise HTTPException(
             status_code=status.HTTP_504_GATEWAY_TIMEOUT,
@@ -601,6 +765,8 @@ def send_chat_message(
         conversation_id=conversation_id,
         user_content=payload.content,
         assistant_content=assistant_text,
+        assistant_citations=assistant_citations or None,
+        assistant_citation_warning=assistant_citation_warning,
     )
 
     if excluded_ids:

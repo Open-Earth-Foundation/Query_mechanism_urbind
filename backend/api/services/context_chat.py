@@ -28,6 +28,7 @@ CHAT_CONTEXT_CHUNK_TARGET_TOKENS = 1_200
 CHAT_CONTEXT_CHUNK_OVERLAP_TOKENS = 200
 CHAT_CONTEXT_MAX_CHUNKS_PER_SOURCE = 24
 CHAT_CONTEXT_BASE_CHUNKS_PER_RUN = 2
+CHAT_REF_ID_PATTERN = re.compile(r"^ref_[1-9]\d*$")
 CHAT_TERM_PATTERN = re.compile(r"[A-Za-z0-9_]{3,}")
 CHAT_STOPWORDS = frozenset(
     {
@@ -166,6 +167,8 @@ def generate_context_chat_reply(
     config: AppConfig,
     token_cap: int = CHAT_PROMPT_TOKEN_CAP,
     api_key_override: str | None = None,
+    citation_catalog: list[dict[str, str]] | None = None,
+    retry_missing_citation: bool = False,
 ) -> str:
     """Generate assistant reply grounded in selected run contexts."""
     api_key = (
@@ -190,19 +193,29 @@ def generate_context_chat_reply(
     else:
         bounded_history = []
 
-    prompt_header = _build_system_prompt_header(original_question)
+    normalized_citations = _normalize_citation_catalog(citation_catalog)
+    prompt_header = _build_system_prompt_header(
+        original_question=original_question,
+        allowed_ref_ids=[item["ref_id"] for item in normalized_citations],
+        retry_missing_citation=retry_missing_citation,
+    )
     context_budget = _compute_context_budget(
         prompt_header=prompt_header,
         history=bounded_history,
         user_content=user_content,
         token_cap=token_cap,
     )
-    query_focus = _build_query_focus_text(user_content, bounded_history)
-    context_block, included_context_ids, excluded_context_ids = _render_context_block(
-        normalized_contexts,
-        context_budget,
-        query_focus,
-    )
+    if normalized_citations:
+        context_block = _render_citation_catalog_block(normalized_citations)
+        included_context_ids = [context.run_id for context in normalized_contexts]
+        excluded_context_ids: list[str] = []
+    else:
+        query_focus = _build_query_focus_text(user_content, bounded_history)
+        context_block, included_context_ids, excluded_context_ids = _render_context_block(
+            normalized_contexts,
+            context_budget,
+            query_focus,
+        )
     system_prompt = _compose_system_prompt(prompt_header, context_block)
 
     messages = _build_messages(system_prompt, bounded_history, user_content)
@@ -280,6 +293,37 @@ def _normalize_contexts(raw_contexts: list[dict[str, Any]]) -> list[ChatContextS
     return normalized
 
 
+def _normalize_citation_catalog(
+    raw_catalog: list[dict[str, str]] | None,
+) -> list[dict[str, str]]:
+    """Normalize citation catalog entries provided by caller."""
+    if not isinstance(raw_catalog, list):
+        return []
+    normalized: list[dict[str, str]] = []
+    seen: set[str] = set()
+    for item in raw_catalog:
+        if not isinstance(item, dict):
+            continue
+        ref_id = str(item.get("ref_id", "")).strip()
+        if not ref_id or ref_id in seen or not CHAT_REF_ID_PATTERN.fullmatch(ref_id):
+            continue
+        city_name = str(item.get("city_name", "")).strip()
+        quote = str(item.get("quote", "")).strip()
+        partial_answer = str(item.get("partial_answer", "")).strip()
+        if not quote and not partial_answer:
+            continue
+        normalized.append(
+            {
+                "ref_id": ref_id,
+                "city_name": city_name,
+                "quote": quote,
+                "partial_answer": partial_answer,
+            }
+        )
+        seen.add(ref_id)
+    return normalized
+
+
 def _normalize_history(history: list[dict[str, str]]) -> list[dict[str, str]]:
     """Normalize history to user/assistant content pairs."""
     normalized: list[dict[str, str]] = []
@@ -299,19 +343,53 @@ def _normalize_history(history: list[dict[str, str]]) -> list[dict[str, str]]:
     return normalized
 
 
-def _build_system_prompt_header(original_question: str) -> str:
+def _render_citation_catalog_block(citation_catalog: list[dict[str, str]]) -> str:
+    """Serialize citation catalog into prompt-safe markdown context."""
+    lines = ["### Citation evidence catalog"]
+    for item in citation_catalog:
+        ref_id = item["ref_id"]
+        city_name = item["city_name"] or "(unknown city)"
+        quote = item["quote"] or "(empty quote)"
+        partial_answer = item["partial_answer"] or "(empty partial answer)"
+        lines.append(
+            "\n".join(
+                [
+                    f"- [{ref_id}] City: {city_name}",
+                    f"  Quote: {quote}",
+                    f"  Partial answer: {partial_answer}",
+                ]
+            )
+        )
+    return "\n".join(lines)
+
+
+def _build_system_prompt_header(
+    original_question: str,
+    allowed_ref_ids: list[str],
+    retry_missing_citation: bool,
+) -> str:
     """Build stable system prompt prefix."""
+    allowed_refs_text = ", ".join(allowed_ref_ids) if allowed_ref_ids else "(none provided)"
+    retry_note = (
+        "Prior response failed citation requirements. Rewrite the full answer and ensure "
+        "every factual claim is immediately followed by one or more valid [ref_n] citations.\n"
+        if retry_missing_citation
+        else ""
+    )
     return (
         "You are the Context Analyst for a document-builder workflow.\n"
         "Your job is to answer follow-up questions using only the supplied context sources.\n"
-        "Each source comes from a completed run and includes: final markdown document + context bundle JSON.\n\n"
+        "Each source comes from a completed run and includes curated citation evidence.\n\n"
         "Rules:\n"
         "1. Ground every factual claim in provided context sources.\n"
         "2. If information is missing or uncertain, say so clearly.\n"
         "3. Compare sources when useful and call out contradictions.\n"
         "4. Always respond in valid markdown. Prefer headings, bullets, and tables for numeric data.\n"
         "5. Never mention internal paths or backend implementation details.\n"
-        "6. When citing evidence, reference source run ids like [run:20260209_1757].\n\n"
+        "6. Cite factual claims using only [ref_n] tokens from the allowed reference list.\n"
+        "7. Do not invent references and do not use any citation format other than [ref_n].\n"
+        f"Allowed references for this turn: {allowed_refs_text}\n\n"
+        f"{retry_note}"
         f"Original build question:\n{original_question.strip()}"
     )
 
