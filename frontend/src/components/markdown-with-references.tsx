@@ -11,6 +11,7 @@ import {
   useState,
 } from "react";
 import { createPortal } from "react-dom";
+import { ChevronRight } from "lucide-react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
@@ -54,18 +55,21 @@ interface CitationGroupToggleProps {
 
 function CitationGroupToggle({ citations }: CitationGroupToggleProps) {
   const [isOpen, setIsOpen] = useState(false);
+  const label = citations.length > 1 ? "Sources" : "Source";
   return (
     <span className="citation-group">
       <button
         type="button"
-        className="citation-group-toggle"
+        className={`citation-group-toggle${isOpen ? " citation-group-toggle-open" : ""}`}
         aria-expanded={isOpen}
+        aria-label={isOpen ? `Hide ${label.toLowerCase()}` : `Show ${label.toLowerCase()}`}
         onClick={() => setIsOpen((current) => !current)}
       >
-        <span>Source</span>
-        <span className="citation-group-arrow" aria-hidden="true">
-          &gt;
-        </span>
+        {!isOpen ? <span className="citation-group-label">{label}</span> : null}
+        <ChevronRight
+          className="citation-group-arrow"
+          aria-hidden="true"
+        />
       </button>
       {isOpen ? (
         <span className="citation-group-list">
@@ -90,7 +94,21 @@ function _isCitationRefNode(node: ReactNode): boolean {
   }
   const props = node.props as Record<string, unknown> | undefined;
   const marker = props?.["data-reference-link"];
-  return marker === "true" || marker === true;
+  if (marker === "true" || marker === true) {
+    return true;
+  }
+  const href = typeof props?.href === "string" ? props.href : "";
+  return href.startsWith(REFERENCE_HREF_PREFIX);
+}
+
+function _isCitationSeparatorNode(node: ReactNode): boolean {
+  if (_isWhitespaceTextNode(node)) {
+    return true;
+  }
+  if (typeof node !== "string") {
+    return false;
+  }
+  return /^[\s,;|/._-]*$/.test(node);
 }
 
 function _collapseCitationRuns(children: ReactNode): ReactNode[] {
@@ -111,7 +129,7 @@ function _collapseCitationRuns(children: ReactNode): ReactNode[] {
     while (cursor < nodes.length) {
       const next = nodes[cursor];
       if (
-        _isWhitespaceTextNode(next) &&
+        _isCitationSeparatorNode(next) &&
         cursor + 1 < nodes.length &&
         _isCitationRefNode(nodes[cursor + 1])
       ) {
