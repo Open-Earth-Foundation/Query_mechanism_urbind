@@ -87,7 +87,18 @@ class OpenAIEmbeddingProvider(EmbeddingProvider):
         token_count = count_tokens(text)
         if token_count <= self._max_input_tokens:
             return text
-        truncated = chunk_text(text, max_tokens=self._max_input_tokens, overlap_tokens=0)[0]
+        chunks = chunk_text(text, max_tokens=self._max_input_tokens, overlap_tokens=0)
+        if not chunks:
+            logger.warning(
+                "Embedding input exceeded token limit but chunk_text returned no chunks; "
+                "model=%s original_tokens=%d original_chars=%d max_input_tokens=%d",
+                self._model,
+                token_count,
+                len(text),
+                self._max_input_tokens,
+            )
+            return ""
+        truncated = chunks[0]
         logger.warning(
             "Embedding input exceeded token limit; truncating model=%s original_tokens=%d "
             "truncated_tokens=%d original_chars=%d truncated_chars=%d max_input_tokens=%d",
