@@ -216,12 +216,16 @@ function _buildReferenceCacheKey(
   return `${runId ?? "__no_run__"}::${refId ?? "__no_ref__"}`;
 }
 
+function _formatCitationCityName(value: string | null | undefined): string {
+  return formatCityLabel(value ?? "") || "Source";
+}
+
 function _referenceItemToPointer(
   item: RunReferenceListItem,
   runId: string,
 ): CitationPointer {
   return {
-    cityName: formatCityLabel(item.city_name ?? "") || "Source",
+    cityName: _formatCitationCityName(item.city_name),
     sourceRunId: runId,
     sourceRefId: item.ref_id,
   };
@@ -259,7 +263,7 @@ export function MarkdownWithReferences({
         return;
       }
       mapping[refId] = {
-        cityName: formatCityLabel(citation.city_name ?? "") || "Source",
+        cityName: _formatCitationCityName(citation.city_name),
         sourceRunId: citation.source_run_id?.trim() || runId,
         sourceRefId: citation.source_ref_id?.trim() || refId,
       };
@@ -432,10 +436,7 @@ export function MarkdownWithReferences({
 
   function renderReferenceLabel(refId: string): string {
     const pointer = citationPointers[refId];
-    if (pointer?.cityName) {
-      return pointer.cityName;
-    }
-    return "Source";
+    return pointer?.cityName ?? "Source";
   }
 
   return (
