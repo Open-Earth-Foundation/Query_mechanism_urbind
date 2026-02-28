@@ -111,7 +111,6 @@ Table 15: C.1.2: Relations between governance innovations, systems, and impact p
 Table 16: C.2.1: Relations between social innovations, systems, and impact pathways ... 129
 CITY OF KRANJ
 Climate Neutrality Action Plan
-C
 
 # Abbreviations and acronyms
 
@@ -292,7 +291,6 @@ CITY OF KRANJ
 
 Climate Neutrality Action Plan
 
-C
 
 ![img-0.jpeg](img-0.jpeg)
 Figure 4: City of Kranj macro-location in Europe
@@ -306,7 +304,6 @@ Figure 6: City of Kranj administrative boundary
 #
 CITY OF KRANJ
 Climate Neutrality Action Plan
-C
 
 ![img-0.jpeg](img-0.jpeg)
 Figure 7: City of Kranj traffic network
@@ -693,7 +690,6 @@ Sustainable Energy and Climate Action Plan of Gorenjska Region (SECAP) is based 
 4
 CITY OF KRANJ
 Climate Neutrality Action Plan
-C
 
 → tackling energy poverty locally.
 
@@ -890,7 +886,6 @@ Table 7: City’s baseline emissions, emissions gap, emissions reduction and res
 * Energy systems (as field of action) is added in the table as to comply with the structure of the Action Portfolio. ** The values in column 5 stand for estimated and quantified emissions resulting from the concrete actions presented by fields of intervention from the Action Portfolio in Part 3.
 CITY OF KRANJ
 Climate Neutrality Action Plan
-C
 
 # 2.3 Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
 
@@ -2937,7 +2932,6 @@ Anticipated changes in IPCC methodologies will most likely impact the reduction 
 Restoration of forests with new tree species (higher emphasise on leaves instead of conifers) more efficient as envisaged by actions – consequently higher sequestration from forests as anticipated.
 CITY OF KRANJ
 Climate Neutrality Action Plan
-C
 
 # 3.3 Module B-3 Indicators for Monitoring, Evaluation and Learning
 
@@ -3797,7 +3791,6 @@ CITY OF KRANJ
 
 Climate Neutrality Action Plan
 
-C
 
 # 4 Part C – Enabling Climate Neutrality by 2030
 
@@ -3822,7 +3815,6 @@ CITY OF KRANJ
 
 Climate Neutrality Action Plan
 
-C
 
 for smart city. SCCNSC is continuously open to partners who have significant impact on Kranj climate targets.
 
@@ -4046,7 +4038,6 @@ Increased social cohesion  |
 0
 CITY OF KRANJ
 Climate Neutrality Action Plan
-C
 
 C.2.1: Relations between social innovations, systems, and impact pathways
 
@@ -4126,7 +4117,6 @@ Climate Neutrality Action Plan
 Figure 21: Social, smart city and other innovation interventions
 CITY OF KRANJ
 Climate Neutrality Action Plan
-C
 
 # 4.3 Module C-3 Financing of Action Portfolio
 
@@ -4160,7 +4150,6 @@ Concessioners | 2018-2030 | Mobility & transport | 4.797 t | 14.093.000  |
 |  2.3. Cycling and walking network | CoKA, Office for Economic Affairs and Traffic, Department of Traffic | 2018-2030 | Mobility & transport | 183 t | 7.250.000  |
 CITY OF KRANJ
 Climate Neutrality Action Plan
-C
 
 C-3.1: Summary of interventions with cost implication (to be unpacked in Investment Plan)
 
@@ -4193,7 +4182,6 @@ CoKA, Office for Economic Affairs and Traffic, Department of Economic Affairs | 
 6
 CITY OF KRANJ
 Climate Neutrality Action Plan
-C
 
 C-3.1: Summary of interventions with cost implication (to be unpacked in Investment Plan)
 
@@ -4424,7 +4412,6 @@ CITY OF KRANJ
 
 Climate Neutrality Action Plan
 
-C
 
 # ANNEX 2: Climate City Contract Co-creative Participatory Process of the City of Kranj
 
@@ -4438,7 +4425,6 @@ The City of Kranj is aware that achieving climate neutrality by 2030 requires ch
 Figure 1: City of Kranj CCC partnership governance structure
 CITY OF KRANJ
 Climate Neutrality Action Plan
-C
 
 # Members of the Strategic Council of City of Kranj for Climate Neutral and Smart Community
 
@@ -4537,7 +4523,6 @@ Climate Neutrality Action Plan
 ![img-6.jpeg](img-6.jpeg)
 CITY OF KRANJ
 Climate Neutrality Action Plan
-C
 
 # CITIZENS and ORGANISATION SURVEYS
 
@@ -4554,7 +4539,6 @@ CITY OF KRANJ
 
 Climate Neutrality Action Plan
 
-C
 
 ![img-0.jpeg](img-0.jpeg)
 
@@ -4576,7 +4560,6 @@ o sharing the information about the establishment of the Strategic Council for C
 the visit of Mr. Child in Ljubljana;
 CITY OF KRANJ
 Climate Neutrality Action Plan
-C
 
 o signing the Climate Neutrality Commitments with stakeholders.
 
@@ -4599,7 +4582,6 @@ CITY OF KRANJ
 
 Climate Neutrality Action Plan
 
-C
 
 ![img-0.jpeg](img-0.jpeg)
 
@@ -4621,7 +4603,6 @@ CITY OF KRANJ
 
 Climate Neutrality Action Plan
 
-C
 
 ![img-0.jpeg](img-0.jpeg)
 Figure 4: KR'POVEJ distribution of citizens initiatives in the territory
@@ -4637,7 +4618,6 @@ CITY OF KRANJ
 
 Climate Neutrality Action Plan
 
-C
 
 ![img-0.jpeg](img-0.jpeg)
 Figure 5: Overview of the citizens surveys in the period 2020-2023
