@@ -6,12 +6,18 @@ import pytest
 
 from backend.modules.vector_store import chroma_store as chroma_store_module
 from backend.modules.vector_store.chroma_store import ChromaStore
-from backend.modules.vector_store.indexer import update_markdown_index
+from backend.modules.vector_store.indexer import (
+    OpenAIEmbeddingProvider,
+    build_markdown_index,
+    update_markdown_index,
+)
 from backend.modules.vector_store.manifest import load_manifest
 from backend.modules.vector_store.manifest import build_chunk_id
 from backend.modules.vector_store.markdown_blocks import parse_markdown_blocks
+from backend.modules.vector_store.models import IndexedChunk
 from backend.modules.vector_store.chunk_packer import pack_blocks
 from backend.modules.vector_store.table_utils import split_markdown_table_by_row_groups
+from backend.utils.tokenization import count_tokens
 from backend.utils.config import (
     AgentConfig,
     AppConfig,
@@ -166,11 +172,25 @@ def test_manifest_update_skips_unchanged_and_updates_changed(
             self.upsert_calls.append(len(chunks))
 
     class FakeEmbeddingProvider:
-        def __init__(self, model: str, base_url: str | None = None) -> None:
+        def __init__(
+            self,
+            model: str,
+            base_url: str | None = None,
+            batch_size: int = 100,
+            max_retries: int = 3,
+            retry_base_seconds: float = 0.8,
+            retry_max_seconds: float = 8.0,
+            max_input_tokens: int | None = None,
+        ) -> None:
             self.model = model
             self.base_url = base_url
+            self.batch_size = batch_size
+            self.max_retries = max_retries
+            self.retry_base_seconds = retry_base_seconds
+            self.retry_max_seconds = retry_max_seconds
+            self.max_input_tokens = max_input_tokens
 
-        def embed_texts(self, texts: list[str]) -> list[list[float]]:
+        def embed_texts(self, texts: list[str]) -> list[list[float] | None]:
             return [[0.1, 0.2, 0.3] for _ in texts]
 
     monkeypatch.setattr("backend.modules.vector_store.indexer.ChromaStore", FakeStore)
@@ -217,6 +237,53 @@ def test_pack_blocks_keeps_tables_as_table_chunks() -> None:
     assert table_chunks
     assert all("| --- | --- |" in chunk.raw_text for chunk in table_chunks)
     assert all(chunk.table_title is not None for chunk in table_chunks)
+
+
+def test_pack_blocks_splits_single_oversized_non_table_block() -> None:
+    """Single oversized non-table block is split to keep all chunks under budget."""
+    oversized_paragraph = " ".join(["longtoken"] * 2500)
+    text = "\n".join(
+        [
+            "# Section",
+            "",
+            oversized_paragraph,
+        ]
+    )
+    blocks = parse_markdown_blocks(text)
+    max_tokens = 200
+    chunks = pack_blocks(blocks=blocks, max_tokens=max_tokens, overlap_tokens=0)
+    assert count_tokens(oversized_paragraph) > max_tokens
+    assert len(chunks) > 1
+    assert all(count_tokens(chunk.raw_text) <= max_tokens for chunk in chunks)
+    assert all(count_tokens(chunk.embedding_text) <= max_tokens for chunk in chunks)
+
+
+def test_pack_blocks_splits_single_oversized_code_block() -> None:
+    """Single oversized fenced code block is split to keep all code chunks under budget."""
+    code_payload = "\n".join(
+        f'{{"index": {index}, "value": "{("longtoken " * 20).strip()}"}}'
+        for index in range(600)
+    )
+    text = "\n".join(
+        [
+            "# Section",
+            "",
+            "```json",
+            code_payload,
+            "```",
+        ]
+    )
+    blocks = parse_markdown_blocks(text)
+    code_blocks = [block for block in blocks if block.block_type == "code"]
+    assert len(code_blocks) == 1
+    max_tokens = 200
+    assert count_tokens(code_blocks[0].text) > max_tokens
+
+    chunks = pack_blocks(blocks=blocks, max_tokens=max_tokens, overlap_tokens=0)
+    code_chunks = [chunk for chunk in chunks if chunk.block_type == "code"]
+    assert len(code_chunks) > 1
+    assert all(count_tokens(chunk.raw_text) <= max_tokens for chunk in code_chunks)
+    assert all(count_tokens(chunk.embedding_text) <= max_tokens for chunk in code_chunks)
 
 
 def test_reset_collection_ignores_collection_not_found_error(monkeypatch) -> None:
@@ -315,11 +382,25 @@ def test_update_markdown_index_filtered_city_does_not_delete_other_manifest_entr
             self.upsert_calls.append(len(chunks))
 
     class FakeEmbeddingProvider:
-        def __init__(self, model: str, base_url: str | None = None) -> None:
+        def __init__(
+            self,
+            model: str,
+            base_url: str | None = None,
+            batch_size: int = 100,
+            max_retries: int = 3,
+            retry_base_seconds: float = 0.8,
+            retry_max_seconds: float = 8.0,
+            max_input_tokens: int | None = None,
+        ) -> None:
             self.model = model
             self.base_url = base_url
+            self.batch_size = batch_size
+            self.max_retries = max_retries
+            self.retry_base_seconds = retry_base_seconds
+            self.retry_max_seconds = retry_max_seconds
+            self.max_input_tokens = max_input_tokens
 
-        def embed_texts(self, texts: list[str]) -> list[list[float]]:
+        def embed_texts(self, texts: list[str]) -> list[list[float] | None]:
             return [[0.1, 0.2, 0.3] for _ in texts]
 
     monkeypatch.setattr("backend.modules.vector_store.indexer.ChromaStore", FakeStore)
@@ -340,3 +421,556 @@ def test_update_markdown_index_filtered_city_does_not_delete_other_manifest_entr
     manifest = load_manifest(config.vector_store.index_manifest_path)
     files = manifest.get("files", {})
     assert berlin_path.as_posix() in files
+
+
+def test_update_markdown_index_embedding_failure_aborts_before_delete_and_manifest_write(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Embedding failures abort update before vector deletes and manifest writes."""
+    docs_dir = tmp_path / "documents"
+    docs_dir.mkdir(parents=True)
+    munich_path = docs_dir / "Munich.md"
+    munich_path.write_text("# Munich\n\nUpdated content.", encoding="utf-8")
+    config = _build_config(tmp_path)
+
+    manifest_text = (
+        "{\n"
+        '  "files": {\n'
+        f'    "{munich_path.as_posix()}": '
+        '{"file_hash": "old-munich-hash", "chunk_ids": ["old-munich-1"]}\n'
+        "  }\n"
+        "}\n"
+    )
+    config.vector_store.index_manifest_path.parent.mkdir(parents=True, exist_ok=True)
+    config.vector_store.index_manifest_path.write_text(manifest_text, encoding="utf-8")
+
+    class FakeStore:
+        delete_calls: list[list[str]] = []
+        upsert_calls: list[int] = []
+
+        def __init__(self, persist_path: Path, collection_name: str) -> None:
+            self.persist_path = persist_path
+            self.collection_name = collection_name
+
+        def delete(self, ids: list[str]) -> None:
+            self.delete_calls.append(ids)
+
+        def upsert(self, chunks) -> None:
+            self.upsert_calls.append(len(chunks))
+
+    class FakeEmbeddingProvider:
+        def __init__(
+            self,
+            model: str,
+            base_url: str | None = None,
+            batch_size: int = 100,
+            max_retries: int = 3,
+            retry_base_seconds: float = 0.8,
+            retry_max_seconds: float = 8.0,
+            max_input_tokens: int | None = None,
+        ) -> None:
+            self.model = model
+            self.base_url = base_url
+            self.batch_size = batch_size
+            self.max_retries = max_retries
+            self.retry_base_seconds = retry_base_seconds
+            self.retry_max_seconds = retry_max_seconds
+            self.max_input_tokens = max_input_tokens
+
+        def embed_texts(self, texts: list[str]) -> list[list[float] | None]:
+            return [None for _ in texts]
+
+    monkeypatch.setattr("backend.modules.vector_store.indexer.ChromaStore", FakeStore)
+    monkeypatch.setattr(
+        "backend.modules.vector_store.indexer.OpenAIEmbeddingProvider",
+        FakeEmbeddingProvider,
+    )
+
+    with pytest.raises(RuntimeError, match="Index update aborted due to embedding failures"):
+        update_markdown_index(
+            config=config,
+            docs_dir=docs_dir,
+            selected_cities=["Munich"],
+            dry_run=False,
+        )
+
+    assert FakeStore.upsert_calls == []
+    assert FakeStore.delete_calls == []
+    assert (
+        config.vector_store.index_manifest_path.read_text(encoding="utf-8")
+        == manifest_text
+    )
+
+
+def test_build_markdown_index_embedding_failure_aborts_before_reset_and_manifest_write(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Embedding failures abort full build before collection reset and manifest writes."""
+    docs_dir = tmp_path / "documents"
+    docs_dir.mkdir(parents=True)
+    (docs_dir / "Munich.md").write_text("# Munich\n\nBuild content.", encoding="utf-8")
+    config = _build_config(tmp_path)
+
+    sentinel_manifest = '{"unchanged": true}\n'
+    config.vector_store.index_manifest_path.parent.mkdir(parents=True, exist_ok=True)
+    config.vector_store.index_manifest_path.write_text(
+        sentinel_manifest,
+        encoding="utf-8",
+    )
+
+    class FakeStore:
+        reset_calls = 0
+        upsert_calls: list[int] = []
+
+        def __init__(self, persist_path: Path, collection_name: str) -> None:
+            self.persist_path = persist_path
+            self.collection_name = collection_name
+
+        def reset_collection(self) -> None:
+            self.__class__.reset_calls += 1
+
+        def upsert(self, chunks) -> None:
+            self.upsert_calls.append(len(chunks))
+
+    class FakeEmbeddingProvider:
+        def __init__(
+            self,
+            model: str,
+            base_url: str | None = None,
+            batch_size: int = 100,
+            max_retries: int = 3,
+            retry_base_seconds: float = 0.8,
+            retry_max_seconds: float = 8.0,
+            max_input_tokens: int | None = None,
+        ) -> None:
+            self.model = model
+            self.base_url = base_url
+            self.batch_size = batch_size
+            self.max_retries = max_retries
+            self.retry_base_seconds = retry_base_seconds
+            self.retry_max_seconds = retry_max_seconds
+            self.max_input_tokens = max_input_tokens
+
+        def embed_texts(self, texts: list[str]) -> list[list[float] | None]:
+            return [None for _ in texts]
+
+    monkeypatch.setattr("backend.modules.vector_store.indexer.ChromaStore", FakeStore)
+    monkeypatch.setattr(
+        "backend.modules.vector_store.indexer.OpenAIEmbeddingProvider",
+        FakeEmbeddingProvider,
+    )
+
+    with pytest.raises(RuntimeError, match="Index build aborted due to embedding failures"):
+        build_markdown_index(config=config, docs_dir=docs_dir, dry_run=False)
+
+    assert FakeStore.reset_calls == 0
+    assert FakeStore.upsert_calls == []
+    assert (
+        config.vector_store.index_manifest_path.read_text(encoding="utf-8")
+        == sentinel_manifest
+    )
+
+
+def test_update_markdown_index_upserts_before_deleting_old_chunks(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Successful updates write new vectors before deleting stale chunk ids."""
+    docs_dir = tmp_path / "documents"
+    docs_dir.mkdir(parents=True)
+    munich_path = docs_dir / "Munich.md"
+    munich_path.write_text("# Munich\n\nLatest content.", encoding="utf-8")
+    config = _build_config(tmp_path)
+
+    config.vector_store.index_manifest_path.parent.mkdir(parents=True, exist_ok=True)
+    config.vector_store.index_manifest_path.write_text(
+        """
+{
+  "files": {
+    "%s": {"file_hash": "outdated", "chunk_ids": ["old-chunk-1"]}
+  }
+}
+"""
+        % munich_path.as_posix(),
+        encoding="utf-8",
+    )
+
+    class FakeStore:
+        operations: list[str] = []
+
+        def __init__(self, persist_path: Path, collection_name: str) -> None:
+            self.persist_path = persist_path
+            self.collection_name = collection_name
+
+        def upsert(self, chunks) -> None:
+            del chunks
+            self.operations.append("upsert")
+
+        def delete(self, ids: list[str]) -> None:
+            del ids
+            self.operations.append("delete")
+
+    class FakeEmbeddingProvider:
+        def __init__(
+            self,
+            model: str,
+            base_url: str | None = None,
+            batch_size: int = 100,
+            max_retries: int = 3,
+            retry_base_seconds: float = 0.8,
+            retry_max_seconds: float = 8.0,
+            max_input_tokens: int | None = None,
+        ) -> None:
+            self.model = model
+            self.base_url = base_url
+            self.batch_size = batch_size
+            self.max_retries = max_retries
+            self.retry_base_seconds = retry_base_seconds
+            self.retry_max_seconds = retry_max_seconds
+            self.max_input_tokens = max_input_tokens
+
+        def embed_texts(self, texts: list[str]) -> list[list[float] | None]:
+            return [[0.1, 0.2, 0.3] for _ in texts]
+
+    monkeypatch.setattr("backend.modules.vector_store.indexer.ChromaStore", FakeStore)
+    monkeypatch.setattr(
+        "backend.modules.vector_store.indexer.OpenAIEmbeddingProvider",
+        FakeEmbeddingProvider,
+    )
+
+    update_markdown_index(
+        config=config,
+        docs_dir=docs_dir,
+        selected_cities=["Munich"],
+        dry_run=False,
+    )
+
+    assert "upsert" in FakeStore.operations
+    assert "delete" in FakeStore.operations
+    assert FakeStore.operations.index("upsert") < FakeStore.operations.index("delete")
+
+
+def test_update_markdown_index_deletes_only_stale_old_ids_when_chunks_overlap(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Changed-file updates keep overlapping ids and delete only old-only ids."""
+    docs_dir = tmp_path / "documents"
+    docs_dir.mkdir(parents=True)
+    munich_path = docs_dir / "Munich.md"
+    munich_path.write_text("# Munich\n\nLatest content.", encoding="utf-8")
+    config = _build_config(tmp_path)
+
+    config.vector_store.index_manifest_path.parent.mkdir(parents=True, exist_ok=True)
+    config.vector_store.index_manifest_path.write_text(
+        """
+{
+  "files": {
+    "%s": {"file_hash": "outdated", "chunk_ids": ["chunk_keep", "chunk_old_only"]}
+  }
+}
+"""
+        % munich_path.as_posix(),
+        encoding="utf-8",
+    )
+
+    class FakeStore:
+        delete_calls: list[list[str]] = []
+        upsert_chunk_ids: list[list[str]] = []
+
+        def __init__(self, persist_path: Path, collection_name: str) -> None:
+            self.persist_path = persist_path
+            self.collection_name = collection_name
+
+        def upsert(self, chunks) -> None:
+            self.upsert_chunk_ids.append([chunk.chunk_id for chunk in chunks])
+
+        def delete(self, ids: list[str]) -> None:
+            self.delete_calls.append(ids)
+
+    class FakeEmbeddingProvider:
+        def __init__(
+            self,
+            model: str,
+            base_url: str | None = None,
+            batch_size: int = 100,
+            max_retries: int = 3,
+            retry_base_seconds: float = 0.8,
+            retry_max_seconds: float = 8.0,
+            max_input_tokens: int | None = None,
+        ) -> None:
+            self.model = model
+            self.base_url = base_url
+            self.batch_size = batch_size
+            self.max_retries = max_retries
+            self.retry_base_seconds = retry_base_seconds
+            self.retry_max_seconds = retry_max_seconds
+            self.max_input_tokens = max_input_tokens
+
+        def embed_texts(self, texts: list[str]) -> list[list[float] | None]:
+            return [[0.1, 0.2, 0.3] for _ in texts]
+
+    def _fake_build_indexed_chunks_for_file(*_args, **_kwargs) -> tuple[str, list[IndexedChunk]]:
+        return (
+            "new-file-hash",
+            [
+                IndexedChunk(
+                    chunk_id="chunk_keep",
+                    document="new content keep",
+                    metadata={"source_path": munich_path.as_posix()},
+                ),
+                IndexedChunk(
+                    chunk_id="chunk_new_only",
+                    document="new content only",
+                    metadata={"source_path": munich_path.as_posix()},
+                ),
+            ],
+        )
+
+    monkeypatch.setattr("backend.modules.vector_store.indexer.ChromaStore", FakeStore)
+    monkeypatch.setattr(
+        "backend.modules.vector_store.indexer.OpenAIEmbeddingProvider",
+        FakeEmbeddingProvider,
+    )
+    monkeypatch.setattr(
+        "backend.modules.vector_store.indexer._build_indexed_chunks_for_file",
+        _fake_build_indexed_chunks_for_file,
+    )
+
+    update_markdown_index(
+        config=config,
+        docs_dir=docs_dir,
+        selected_cities=["Munich"],
+        dry_run=False,
+    )
+
+    assert FakeStore.upsert_chunk_ids == [["chunk_keep", "chunk_new_only"]]
+    assert FakeStore.delete_calls == [["chunk_old_only"]]
+    manifest = load_manifest(config.vector_store.index_manifest_path)
+    files = manifest.get("files", {})
+    assert files[munich_path.as_posix()]["chunk_ids"] == ["chunk_keep", "chunk_new_only"]
+
+
+def test_openai_embedding_provider_retries_empty_batch_response(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Provider retries when batch response has missing embeddings."""
+    monkeypatch.setenv("OPENAI_API_KEY", "test-key")
+
+    class FakeEmbeddingItem:
+        def __init__(self, embedding: list[float]) -> None:
+            self.embedding = embedding
+
+    class FakeResponse:
+        def __init__(self, embeddings: list[list[float]]) -> None:
+            self.data = [FakeEmbeddingItem(embedding) for embedding in embeddings]
+
+    class FakeEmbeddingsApi:
+        call_count = 0
+
+        def create(self, model: str, input: list[str]) -> FakeResponse:
+            del model
+            self.__class__.call_count += 1
+            if self.__class__.call_count == 1:
+                return FakeResponse([])
+            return FakeResponse([[float(index)] for index in range(len(input))])
+
+    class FakeOpenAIClient:
+        def __init__(self, api_key: str, base_url: str | None = None) -> None:
+            del api_key, base_url
+            self.embeddings = FakeEmbeddingsApi()
+
+    monkeypatch.setattr("backend.modules.vector_store.indexer.OpenAI", FakeOpenAIClient)
+    provider = OpenAIEmbeddingProvider(
+        model="test-embedding",
+        batch_size=10,
+        max_retries=1,
+        retry_base_seconds=0.0,
+        retry_max_seconds=0.0,
+    )
+    vectors = provider.embed_texts(["a", "b", "c"])
+    assert len(vectors) == 3
+    assert FakeEmbeddingsApi.call_count == 2
+
+
+def test_openai_embedding_provider_falls_back_to_single_item_requests(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Provider falls back to per-item embedding when full batch keeps failing."""
+    monkeypatch.setenv("OPENAI_API_KEY", "test-key")
+
+    class FakeEmbeddingItem:
+        def __init__(self, embedding: list[float]) -> None:
+            self.embedding = embedding
+
+    class FakeResponse:
+        def __init__(self, embeddings: list[list[float]]) -> None:
+            self.data = [FakeEmbeddingItem(embedding) for embedding in embeddings]
+
+    class FakeEmbeddingsApi:
+        call_count = 0
+
+        def create(self, model: str, input: list[str]) -> FakeResponse:
+            del model
+            self.__class__.call_count += 1
+            if len(input) > 1:
+                raise ValueError("No embedding data received")
+            return FakeResponse([[float(len(input[0]))]])
+
+    class FakeOpenAIClient:
+        def __init__(self, api_key: str, base_url: str | None = None) -> None:
+            del api_key, base_url
+            self.embeddings = FakeEmbeddingsApi()
+
+    monkeypatch.setattr("backend.modules.vector_store.indexer.OpenAI", FakeOpenAIClient)
+    provider = OpenAIEmbeddingProvider(
+        model="test-embedding",
+        batch_size=10,
+        max_retries=1,
+        retry_base_seconds=0.0,
+        retry_max_seconds=0.0,
+    )
+    vectors = provider.embed_texts(["alpha", "bb"])
+    assert vectors == [[5.0], [2.0]]
+    assert FakeEmbeddingsApi.call_count == 4
+
+
+def test_openai_embedding_provider_returns_none_for_permanently_failing_items(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """embed_texts returns None for items that never succeed, not raise."""
+    monkeypatch.setenv("OPENAI_API_KEY", "test-key")
+
+    BAD_TEXT = "bad"
+
+    class FakeEmbeddingItem:
+        def __init__(self, embedding: list[float]) -> None:
+            self.embedding = embedding
+
+    class FakeResponse:
+        def __init__(self, embeddings: list[list[float]]) -> None:
+            self.data = [FakeEmbeddingItem(e) for e in embeddings]
+
+    class FakeEmbeddingsApi:
+        def create(self, model: str, input: list[str]) -> FakeResponse:
+            del model
+            if any(t == BAD_TEXT for t in input):
+                raise ValueError("No embedding data received")
+            return FakeResponse([[1.0] for _ in input])
+
+    class FakeOpenAIClient:
+        def __init__(self, api_key: str, base_url: str | None = None) -> None:
+            del api_key, base_url
+            self.embeddings = FakeEmbeddingsApi()
+
+    monkeypatch.setattr("backend.modules.vector_store.indexer.OpenAI", FakeOpenAIClient)
+    provider = OpenAIEmbeddingProvider(
+        model="test-embedding",
+        batch_size=10,
+        max_retries=1,
+        retry_base_seconds=0.0,
+        retry_max_seconds=0.0,
+    )
+    vectors = provider.embed_texts(["good1", BAD_TEXT, "good2"])
+    assert len(vectors) == 3
+    assert vectors[0] == [1.0]
+    assert vectors[1] is None
+    assert vectors[2] == [1.0]
+
+
+def test_openai_embedding_provider_truncates_texts_over_max_input_tokens(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Provider trims oversized texts to max_input_tokens before API calls."""
+    monkeypatch.setenv("OPENAI_API_KEY", "test-key")
+
+    class FakeEmbeddingItem:
+        def __init__(self, embedding: list[float]) -> None:
+            self.embedding = embedding
+
+    class FakeResponse:
+        def __init__(self, embeddings: list[list[float]]) -> None:
+            self.data = [FakeEmbeddingItem(embedding) for embedding in embeddings]
+
+    class FakeEmbeddingsApi:
+        captured_inputs: list[str] = []
+
+        def create(self, model: str, input: list[str]) -> FakeResponse:
+            del model
+            self.__class__.captured_inputs.extend(input)
+            return FakeResponse([[1.0] for _ in input])
+
+    class FakeOpenAIClient:
+        def __init__(self, api_key: str, base_url: str | None = None) -> None:
+            del api_key, base_url
+            self.embeddings = FakeEmbeddingsApi()
+
+    monkeypatch.setattr("backend.modules.vector_store.indexer.OpenAI", FakeOpenAIClient)
+    provider = OpenAIEmbeddingProvider(
+        model="test-embedding",
+        batch_size=10,
+        max_retries=0,
+        retry_base_seconds=0.0,
+        retry_max_seconds=0.0,
+        max_input_tokens=20,
+    )
+    oversized_text = " ".join(["longtoken"] * 300)
+    assert count_tokens(oversized_text) > 20
+
+    vectors = provider.embed_texts([oversized_text, "ok"])
+
+    assert vectors == [[1.0], [1.0]]
+    assert len(FakeEmbeddingsApi.captured_inputs) == 2
+    assert count_tokens(FakeEmbeddingsApi.captured_inputs[0]) <= 20
+    assert FakeEmbeddingsApi.captured_inputs[0] != oversized_text
+
+
+def test_pack_blocks_table_embedding_text_bounded_by_max_tokens() -> None:
+    """Table embedding_text does not exceed max_tokens even with very wide rows."""
+    wide_cell = "x" * 300
+    text = "\n".join(
+        [
+            "# Section",
+            "",
+            f"| Col A | Col B | Col C |",
+            f"| --- | --- | --- |",
+            *[f"| {wide_cell} | {wide_cell} | {wide_cell} |" for _ in range(10)],
+        ]
+    )
+    blocks = parse_markdown_blocks(text)
+    max_tokens = 80
+    chunks = pack_blocks(blocks=blocks, max_tokens=max_tokens, overlap_tokens=0)
+    table_chunks = [c for c in chunks if c.block_type == "table"]
+    assert table_chunks, "Expected at least one table chunk"
+    for chunk in table_chunks:
+        assert count_tokens(chunk.embedding_text) <= max_tokens, (
+            f"embedding_text exceeds max_tokens={max_tokens}: "
+            f"{count_tokens(chunk.embedding_text)} tokens"
+        )
+
+
+def test_pack_blocks_table_embedding_text_hard_caps_oversized_summary_prefix() -> None:
+    """Table embedding_text stays bounded when heading/title context is very long."""
+    long_heading = "# " + ("verylongtoken " * 200)
+    text = "\n".join(
+        [
+            long_heading,
+            "",
+            "| Col A | Col B |",
+            "| --- | --- |",
+            "| 1 | 2 |",
+        ]
+    )
+    blocks = parse_markdown_blocks(text)
+    max_tokens = 40
+
+    chunks = pack_blocks(blocks=blocks, max_tokens=max_tokens, overlap_tokens=0)
+    table_chunks = [chunk for chunk in chunks if chunk.block_type == "table"]
+    assert table_chunks, "Expected at least one table chunk"
+    for chunk in table_chunks:
+        assert count_tokens(chunk.embedding_text) <= max_tokens, (
+            f"embedding_text exceeds max_tokens={max_tokens}: "
+            f"{count_tokens(chunk.embedding_text)} tokens"
+        )

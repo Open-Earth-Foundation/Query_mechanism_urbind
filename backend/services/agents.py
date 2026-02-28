@@ -7,7 +7,7 @@ import logging
 import sys
 import threading
 from collections.abc import Mapping, Sequence
-from typing import Any
+from typing import Any, Literal
 
 import httpx
 from agents import Agent, ModelSettings, Runner
@@ -21,6 +21,8 @@ from agents.tool import Tool
 from openai import AsyncOpenAI, DefaultAsyncHttpxClient
 
 logger = logging.getLogger(__name__)
+
+ReasoningEffort = Literal["none", "minimal", "low", "medium", "high", "xhigh"]
 
 _thread_local = threading.local()
 
@@ -351,12 +353,19 @@ class LlmPayloadLoggingHooks(RunHooksBase[Any, Agent[Any]]):
         self._log_payload(payload)
 
 
-def build_model_settings(temperature: float | None, max_output_tokens: int | None) -> ModelSettings:
+def build_model_settings(
+    temperature: float | None,
+    max_output_tokens: int | None,
+    reasoning_effort: ReasoningEffort | None = None,
+) -> ModelSettings:
+    """Build model settings shared by all agent invocations."""
     settings_kwargs: dict[str, Any] = {"include_usage": True}
     resolved_temperature = 0.0 if temperature is None else float(temperature)
     settings_kwargs["temperature"] = resolved_temperature
     if max_output_tokens is not None:
         settings_kwargs["max_output_tokens"] = max_output_tokens
+    if reasoning_effort is not None:
+        settings_kwargs["reasoning"] = {"effort": reasoning_effort}
     return ModelSettings(**settings_kwargs)
 
 

@@ -100,6 +100,8 @@ class ChatMemoryStore:
         conversation_id: str,
         user_content: str,
         assistant_content: str,
+        assistant_citations: list[dict[str, str]] | None = None,
+        assistant_citation_warning: str | None = None,
     ) -> tuple[dict[str, Any], dict[str, Any], dict[str, Any]]:
         """Append a user/assistant turn and persist session."""
         path = self._session_path(run_id, conversation_id)
@@ -124,6 +126,10 @@ class ChatMemoryStore:
                 "content": assistant_content,
                 "created_at": _utc_now_iso(),
             }
+            if assistant_citations:
+                assistant_message["citations"] = assistant_citations
+            if assistant_citation_warning:
+                assistant_message["citation_warning"] = assistant_citation_warning
             messages.append(user_message)
             messages.append(assistant_message)
             payload["updated_at"] = assistant_message["created_at"]

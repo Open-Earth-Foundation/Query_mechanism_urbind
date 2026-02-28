@@ -1,7 +1,6 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import ReactMarkdown from "react-markdown";
 import { ArrowLeft, Loader2, RefreshCw, Sparkles } from "lucide-react";
 
 import {
@@ -10,6 +9,7 @@ import {
   applyRunAssumptions,
   discoverRunAssumptions,
 } from "@/lib/api";
+import { MarkdownWithReferences } from "@/components/markdown-with-references";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -17,6 +17,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Textarea } from "@/components/ui/textarea";
+import { formatCityLabel } from "@/lib/utils";
 
 interface AssumptionsWorkspaceProps {
   runId: string;
@@ -211,7 +212,7 @@ export function AssumptionsWorkspace({
               {groupedItems.map(([city, entries]) => (
                 <section key={city} className="space-y-2">
                   <div className="flex items-center gap-2">
-                    <Badge variant="outline">{city}</Badge>
+                    <Badge variant="outline">{formatCityLabel(city)}</Badge>
                     <span className="text-xs text-slate-500">{entries.length} items</span>
                   </div>
                   <div className="space-y-2">
@@ -272,7 +273,7 @@ export function AssumptionsWorkspace({
               {assumptionsPath ? ` | Assumptions: ${assumptionsPath}` : ""}
             </p>
             <article className="document-markdown rounded-md border border-slate-200 bg-white p-5 shadow-inner">
-              <ReactMarkdown>{revisedContent}</ReactMarkdown>
+              <MarkdownWithReferences content={revisedContent} runId={runId} />
             </article>
           </div>
         ) : null}

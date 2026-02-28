@@ -76,6 +76,37 @@ class RunContextResponse(BaseModel):
     context_bundle_path: str
 
 
+class RunReferenceResponse(BaseModel):
+    """Response body for one run-scoped markdown reference lookup."""
+
+    run_id: str
+    ref_id: str
+    excerpt_index: int
+    city_name: str
+    quote: str
+    partial_answer: str
+    source_chunk_ids: list[str]
+
+
+class RunReferenceItem(BaseModel):
+    """Single run-scoped reference item from list endpoint."""
+
+    ref_id: str
+    excerpt_index: int
+    city_name: str
+    quote: str | None = None
+    partial_answer: str | None = None
+    source_chunk_ids: list[str] | None = None
+
+
+class RunReferenceListResponse(BaseModel):
+    """Response body for run-scoped markdown references."""
+
+    run_id: str
+    reference_count: int
+    references: list[RunReferenceItem]
+
+
 class RunSummary(BaseModel):
     """Minimal run metadata used by run picker UI."""
 
@@ -145,12 +176,23 @@ class CityGroupListResponse(BaseModel):
 ChatRole = Literal["user", "assistant"]
 
 
+class ChatCitation(BaseModel):
+    """Assistant citation metadata for deterministic frontend resolution."""
+
+    ref_id: str
+    city_name: str
+    source_run_id: str
+    source_ref_id: str
+
+
 class ChatMessage(BaseModel):
     """Single chat message in persisted conversation memory."""
 
     role: ChatRole
     content: str
     created_at: datetime
+    citations: list[ChatCitation] | None = None
+    citation_warning: str | None = None
 
 
 class CreateChatSessionRequest(BaseModel):
@@ -247,6 +289,9 @@ __all__ = [
     "RunStatusResponse",
     "RunOutputResponse",
     "RunContextResponse",
+    "RunReferenceResponse",
+    "RunReferenceItem",
+    "RunReferenceListResponse",
     "RunSummary",
     "RunListResponse",
     "MissingDataItem",
@@ -256,6 +301,7 @@ __all__ = [
     "CityGroup",
     "CityGroupListResponse",
     "ChatRole",
+    "ChatCitation",
     "ChatMessage",
     "CreateChatSessionRequest",
     "ChatSessionResponse",

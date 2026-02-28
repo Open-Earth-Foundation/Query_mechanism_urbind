@@ -111,7 +111,6 @@ Table 15: C.1.2: Relations between governance innovations, systems, and impact p
 Table 16: C.2.1: Relations between social innovations, systems, and impact pathways ... 129
 CITY OF KRANJ
 Climate Neutrality Action Plan
-C
 
 # Abbreviations and acronyms
 
@@ -292,23 +291,19 @@ CITY OF KRANJ
 
 Climate Neutrality Action Plan
 
-Map
 
 ![img-0.jpeg](img-0.jpeg)
 Figure 4: City of Kranj macro-location in Europe
 
 ![img-1.jpeg](img-1.jpeg)
-Figure 5: City of Kranj in Gorenjska region and Slovenia
+Map
 
 ![img-2.jpeg](img-2.jpeg)
+Figure 5: City of Kranj in Gorenjska region and Slovenia
 Figure 6: City of Kranj administrative boundary
 #
-
 CITY OF KRANJ
-
 Climate Neutrality Action Plan
-
-#
 
 ![img-0.jpeg](img-0.jpeg)
 Figure 7: City of Kranj traffic network
@@ -425,13 +420,14 @@ t CO₂
 MWh/year
 CITY OF KRANJ
 Climate Neutrality Action Plan
+6
 
 → Direct emissions (Scope 1): 67.346 t CO₂ equivalent/year
 → Indirect emissions from purchased electricity, produced from non-renewable resources (Scope 2): 722 t CO₂ equivalent/year
 
 Total emissions: 68.068 t CO₂ equivalent/year
 
-# Waste sector
+## Waste sector
 
 In the City of Kranj, the waste sector is a significant contributor to the greenhouse gas emissions. For assessing GHG emissions from waste The First Order of Decay (FOD) method was applied in this assessment, offering a nuanced understanding of emissions over time, especially from waste, undergoing decomposition in landfills.
 
@@ -439,12 +435,12 @@ The primary data source for this analysis was Komunala Kranj d.o.o., the company
 
 For the specified year, energy consumption in the waste sector of Kranj was as follows: diesel consumption was 1.785 MWh, and the indirect energy consumed from electrical energy was 1.085 MWh. Considerable emissions in the form of methane are being released from closed Tenetiše landfill. This data is under the consistent surveillance of the National Laboratory of Health, Environment and Food, ensuring its accuracy and yearly revision.
 
-WASTE SECTOR
-BASE YEAR 2018
-TOTAL CO₂ EMISSIONS:
-t CO₂
-TOTAL ENERGY USE:
-MWh/year
+> **WASTE SECTOR**
+> **BASE YEAR 2018**
+> **TOTAL CO₂ EMISSIONS:**
+> 26.754 t CO₂
+> **TOTAL ENERGY USE:**
+> 2.870 MWh/year
 
 In conclusion, while waste management in Kranj is commendably efficient, its environmental impact indicates areas for further improvement. The adoption of more sustainable energy sources and advanced waste management techniques could significantly reduce the sector's GHG emissions.
 
@@ -492,6 +488,8 @@ t CO₂
 Forestry and Land Use:
 t CO₂
 AFOLU = 50.923 t CO₂
+
+7
 CITY OF KRANJ
 Climate Neutrality Action Plan
 
@@ -692,7 +690,6 @@ Sustainable Energy and Climate Action Plan of Gorenjska Region (SECAP) is based 
 4
 CITY OF KRANJ
 Climate Neutrality Action Plan
-C
 
 → tackling energy poverty locally.
 
@@ -852,7 +849,6 @@ Measures already adjusted to the net zero emission 2030 targets.  |
 |  Strategy & Action Plan | Local | Zero Waste Strategy (2021) | Strategy defines steps and activities to shift toward a waste free society and environmental justice for the | Relevant measures, incentives and solutions to reduce amount of waste generation at the source, to change | Zero waste targets considered in the AP.  |
 CITY OF KRANJ
 Climate Neutrality Action Plan
-4
 
 |   |  |  | benefit of people, the planet and competitive business environment. | resource management from linear to circular economy, to change consumer behaviour and exchanging good practices, enhance know how and promote knowledge dissemination.
 
@@ -867,13 +863,13 @@ Proposals for municipal urban plan.
 
 **IMPACT:**
 Supporting interventions and activities in the CCC Action Plan. | Strategy to be significantly updated to new technologies and EU Cities Mission targets by 2030.  |
+
+4
 CITY OF KRANJ
 
 Climate Neutrality Action Plan
 
-#
-
-Table 7: City's baseline emissions, emissions gap, emissions reduction and residual emissions
+Table 7: City’s baseline emissions, emissions gap, emissions reduction and residual emissions
 
 |  A-2.1 Emission Gap | (1) Baseline emissions (2018) | (2) Emissions Reduction Target 2030 |   | (3) Emission reduction through other Action Plans |   | (4) Emissions Gap |   | (5) Emissions reduction through the CCC Action Plan to address the Gap |   | (6) Residual emissions  |   |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -890,7 +886,6 @@ Table 7: City's baseline emissions, emissions gap, emissions reduction and resid
 * Energy systems (as field of action) is added in the table as to comply with the structure of the Action Portfolio. ** The values in column 5 stand for estimated and quantified emissions resulting from the concrete actions presented by fields of intervention from the Action Portfolio in Part 3.
 CITY OF KRANJ
 Climate Neutrality Action Plan
-C
 
 # 2.3 Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
 
@@ -918,16 +913,20 @@ Climate Neutrality Action Plan
 
 ![img-0.jpeg](img-0.jpeg)
 Figure 13: Stakeholder Mapping
+#
+
 CITY OF KRANJ
 
 Climate Neutrality Action Plan
+
+#
 
 Table 8: A-3.2: Systems &amp; stakeholder mapping
 
 |  A-3.2: Systems & stakeholder mapping  |   |   |   |   |
 | --- | --- | --- | --- | --- |
 |  System | Stakeholders | Network | Influence on the city's climate neutrality ambition | Interest  |
-|  INFRASTRUCTURE – road, rail, bike and pedestrian network - and operation | The City of Kranj - City Administration - Office for Economic Affairs and Traffic, Department for Traffic - Joint Office for Urban planning | Local Authority | According to the Local Self-Government Act, the Municipality is responsible for local road, bike and pedestrian network planning, maintenance and operation. The mayor of Kranj has set up and leads the Strategic Council for Climate Neutral and Smart City of Kranj (SCCNSC) whereas all City Administration departments have nominated their staff in the Transition Team (TT) and participate in the Action Plan design and implementation. Influence on city climate neutrality by 2030: Local roads – high Sustainable mobility - cycling and walking – high The City has defined its future road network policy in the Municipal Spatial Plan (2014, 4th amendment preparation is underway) emphasizing the reduction and calming of the traffic in the city centre and improvement of the city ring and entrance roads. Both interventions are much interlinked in terms of improved traffic management. However, the ring roads (incl. cycling network) are of regional character and thus investments and operation fall under the national jurisdiction. In this respect, the City's influence on the overall traffic flows through infrastructure is limited. The City therefore focuses on the sustainable mobility measures where its impact is higher. Further to the Integrated Sustainable Mobility Strategy of City of Kranj (2017) and Comprehensive Study of Cycling Connections, Stationary Traffic and One-Way Connections with a Proposal for Sustainable Mobility Measures in the City of Kranj (2023), actions such as rearrangement of the inner road network into one-way streets, broadening of the spaces for pedestrians and bikers, completing the cycling network and building the missing bridging facilities are proposed. Regardless the municipal jurisdiction, the lack of funds, time consuming planning and citizens' acceptance jeopardize the mobility goals of the city. | High While noise and daily traffic congestions impede citizens' life quality, transport also contributes the most to the City's GHG emissions. It is of City of Kranj's high interest to address the traffic infrastructure and management challenges.  |
+|  INFRASTRUCTURE - road, rail, bike and pedestrian network - and operation | The City of Kranj - City Administration - Office for Economic Affairs and Traffic, Department for Traffic - Joint Office for Urban planning | Local Authority | According to the Local Self-Government Act, the Municipality is responsible for local road, bike and pedestrian network planning, maintenance and operation. The mayor of Kranj has set up and leads the Strategic Council for Climate Neutral and Smart City of Kranj (SCCNSC) whereas all City Administration departments have nominated their staff in the Transition Team (TT) and participate in the Action Plan design and implementation. Influence on city climate neutrality by 2030: Local roads - high Sustainable mobility - cycling and walking - high The City has defined its future road network policy in the Municipal Spatial Plan (2014, 4th amendment preparation is underway) emphasizing the reduction and calming of the traffic in the city centre and improvement of the city ring and entrance roads. Both interventions are much interlinked in terms of improved traffic management. However, the ring roads (incl. cycling network) are of regional character and thus investments and operation fall under the national jurisdiction. In this respect, the City's influence on the overall traffic flows through infrastructure is limited. The City therefore focuses on the sustainable mobility measures where its impact is higher. Further to the Integrated Sustainable Mobility Strategy of City of Kranj (2017) and Comprehensive Study of Cycling Connections, Stationary Traffic and One-Way Connections with a Proposal for Sustainable Mobility Measures in the City of Kranj (2023), actions such as rearrangement of the inner road network into one-way streets, broadening of the spaces for pedestrians and bikers, completing the cycling network and building the missing bridging facilities are proposed. Regardless the municipal jurisdiction, the lack of funds, time consuming planning and citizens' acceptance jeopardize the mobility goals of the city. | High While noise and daily traffic congestions impede citizens' life quality, transport also contributes the most to the City's GHG emissions. It is of City of Kranj's high interest to address the traffic infrastructure and management challenges.  |
 CITY OF KRANJ
 Climate Neutrality Action Plan
 
@@ -1312,10 +1311,10 @@ Possible approach: integration of CCC actions and decarbonisation principles in 
 **Capacities of Kranj smart city platform** potentials for increased digitalisation of services and use of real-time data
 Possible solutions: CCC monitoring and citizens engagement (one stop shop) tools to be digitalised as a priority.
 
-**Competent and empowered transition team**, partner network and project/action management teams
+**Competent and empowered transition team,** partner network and project/action management teams
 Possible solutions: exploit the leadership capacities for motivation of key people for driving the change.  |
 |  **Processes**
-**Political changes, controversy or rejection of implementing measures by city council**
+**Political changes,** controversy or rejection of implementing measures by city council
 Possible solutions: continuous dialog and reporting to with the City Council.
 
 **Citizens can create uncertain policy-making environments.**
@@ -1396,6 +1395,7 @@ Up to 2025 | Late outcomes (3-4 years)
 |   |  Technology & infrastructure |   |   |   |   |
 CITY OF KRANJ
 Climate Neutrality Action Plan
+6
 
 |  B-1.1: Impact Pathways  |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- |
@@ -1413,8 +1413,6 @@ Up to 2025 | Late outcomes (3-4 years)
 |   |   | New technologies for energy and resource efficiency water supply system implemented – reduction to max 25% leakages | New technologies for energy and resource efficiency in water supply system implemented – reduction to max 15% leakages |  | Water savings – reduced leakages  |
 |   |  Learnings & capabilities | Centre for Circular Economy Zarta – re-cycle, re-use and circular solution demonstration one stop shop in place | Centre for Circular Economy Zarta – re-cycle, re-use and circular solution demonstration one stop shop in operation |  | Cost savings  |
 |   |   |  |  |  | New green jobs generation  |
-
-6
 CITY OF KRANJ
 Climate Neutrality Action Plan
 7
@@ -1589,28 +1587,7 @@ Reduction of watersupply
 90% (40) of residential multi-unit buildings and 25% (2.500) houses energy-efficiency rehabilitated
 150.000 m2 brownfields regenerated
 
-6.000 m2 green areas improved/ extended
-Farmers introducing plant and low-emission livestock production
-
-4 km2 of green infr. managed
-Upskilling &amp; standards for green spatial planing introduced
-10.000 m2 green areas improved/ extended
-
-100% (40) of city + 1 state owned buildings energy-efficiency rehabilitated
-85% of residential multi-unit buildings and 10% (1.000) houses energy-efficiency rehabilitated
-50.000 m2 brownfields regenerated
-
-# Early
-
-# change
-
-# (2025)
-
-60% RES in district heating
-+ 20 MWh solar and hydro
-90% energy efficient and remote managed public lighting
-
-1. 6.000 personal cars
+6.000 personal cars
 30% (-4.726 cars) reduced car commuting
 Cyclist &amp; walkers friendly infrastructure (92 km)
 100% electric/hydrogen munic. vehicles
@@ -1628,8 +1605,20 @@ Reduction of watersupply
 
 # INFLUENTATION
 
-# 1.1 Phase out fossil fuel in district heating
+# NATURE BASED SOLUTIONS
 
+100% (40) of city + 6 state owned buildings energy-efficiency rehabilitated
+85% of residential multi-unit buildings and 10% (1.000) houses energy-efficiency rehabilitated
+50.000 m2 brownfields regenerated
+
+1. 4 km2 of green infr. managed
+Green spatial plan in force
+50.000 m2 green areas improved/ extended
+Farmers introducing plant and low-emission livestock production
+
+# Actions
+
+1 Phase out fossil fuel in district heating
 Utilisation of waste heat from ind. And commercial facilities
 Solar electricity production
 Hydro electricity production
@@ -1637,48 +1626,55 @@ Upgrade of electric grid
 Energy-efficient and smart public lighting
 Energy co-operatives
 
-1.00% (40) of city + 6 state owned buildings energy-efficiency rehabilitated
+1 "One car by household" programme incl. parking, CSM
+Smart multimodal public transport system
+Cycling and walking network
+Car-free areas, shared spaces, one-way streets and P+R
+EV &amp; hydrogen charging infr.
+EV &amp; hydrogen powered municipal vehicles
+Reduced transit traffic
+
+1 Zero Waste programme
+Smart waste management
+Centre for Circular Economy
+Kranj Circular City joint public-private innovation actions
+Energy and resource efficiency in water supply
+
+1 Sustainable management of green and blue infrastructure system
+Greening the municipal spatial planning
+Green areas and green roofs
+Promotion of plant and low-emission livestock production
+Urban agriculture programme
+
+100% (40) of city + 1 state owned buildings energy-efficiency rehabilitated
 85% of residential multi-unit buildings and 10% (1.000) houses energy-efficiency rehabilitated
 50.000 m2 brownfields regenerated
 
-# 1.2 Utilisation of waste heat from ind. And commercial facilities
+Energy-efficiency renovation of public buildings
+Energy-efficiency of residential buildings in urban and semi-urban neighbourhoods
+Integrated, smart and climate neutral re-development of urban brownfield areas
 
-Solar electricity production
-Hydro electricity production
-Upgrade of electric grid
-Energy-efficient and smart public lighting
-Energy co-operatives
+# Government
 
-1.00% (40) of city + 1 state owned buildings energy-efficiency rehabilitated
-85% of residential multi-unit buildings and 10% (1.000) houses energy-efficiency rehabilitated
-50.000 m2 brownfields regenerated
+# External
 
-# 1.3 Solar electricity production
+# External
 
-Hydro electricity production
-Upgrade of electric grid
-Energy-efficient and smart public lighting
-Energy co-operatives
+# External
 
-Kranj Climate neutral and smart city ECOSYSTEM
+# External
 
-Citizens' and investors' ONE-STOP-SHOP programme
+# External
 
-SMART KRANJ PLATFROM
+# External
 
-COMPETENCES AND KNOWLEDGE - BASE
+# External
 
-CITY REGULATORY &amp; POLICY FRAMEWORK
+# External
 
-SMART KRANJ PLATFROM
+# External
 
-Climate neutral and smart
-
-CITY DISTRICTS (RE) DEVELOPMENT MODELS
-
-GREENING THE PARTICIPATORY BUDGET
-
-Figure 14 : City of Kranj climate neutrality impact pathway
+#
 #
 
 CITY OF KRANJ
@@ -1831,7 +1827,9 @@ Climate Neutrality Action Plan
 | --- | --- | --- |
 |  Action outline | Action name | 1.2 Utilization of waste heat from industry and commercial facilities for Kranj district heating and cooling system  |
 |   |  Action type | Hard intervention (infrastructure)  |
-|   |  Action description | The major industrial area in Kranj (Labore) annually generates significant residual heat from rubber technological processes although the enterprises continuously invest in new technologies and energy measures. Further potential of waste heat is also observed at other commercial areas. The studies made so far anticipate that utilization of waste heat from these sources for the purpose of Kranj district heating and cooling is feasible. Thus, the action envisages implementation of: - 1 plant with annual production of av. 40.000 MWh and - corresponding transporting network.  |
+|   |  Action description | The major industrial area in Kranj (Labore) annually generates significant residual heat from rubber technological processes although the enterprises continuously invest in new technologies and energy measures. Further potential of waste heat is also observed at other commercial areas. The studies made so far anticipate that utilization of waste heat from these sources for the purpose of Kranj district heating and cooling is feasible. Thus, the action envisages implementation of:
+1 plant with annual production of av. 40.000 MWh and
+corresponding transporting network.  |
 CITY OF KRANJ
 Climate Neutrality Action Plan
 
@@ -1963,17 +1961,17 @@ Climate Neutrality Action Plan
 (5) New construction and regular maintenance increased use of LED lamps and extend remote management.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Energy systems  |
-|   | Systemic lever | Technology/ Infrastructure  |
-|   | Outcome (according to module B-1.1) | 100% efficient, compliant and remotely managed public lighting  |
+|   |  Systemic lever | Technology/ Infrastructure  |
+|   |  Outcome (according to module B-1.1) | 100% efficient, compliant and remotely managed public lighting  |
 |  Implementation | Responsible bodies/person for implementation | City Municipality Kranj  |
-|   | Action scale & addressed entities | NA  |
-|   | Involved stakeholders | Concessioner District local communities (KS)  |
-|   | Comments on implementation – consider mentioning resources, timelines, milestones | /  |
+|   |  Action scale & addressed entities | NA  |
+|   |  Involved stakeholders | Concessioner District local communities (KS)  |
+|   |  Comments on implementation – consider mentioning resources, timelines, milestones | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | NA  |
-|   | Removed/substituted energy, volume, or fuel type | Electrical energy: 800 MWh/year  |
-|   | GHG emissions reduction estimate (total) per emission source sector | 286 tonnes CO₂/year  |
-|   | GHG emissions compensated (natural or technological sinks) | /  |
-|   | Total costs and costs by CO₂eq unit | € 2.500.000
+|   |  Removed/substituted energy, volume, or fuel type | Electrical energy: 800 MWh/year  |
+|   |  GHG emissions reduction estimate (total) per emission source sector | 286 tonnes CO₂/year  |
+|   |  GHG emissions compensated (natural or technological sinks) | /  |
+|   |  Total costs and costs by CO₂eq unit | € 2.500.000
 € 8.729 /t CO₂  |
 |  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
@@ -1987,6 +1985,7 @@ At least 1 energy co-operative with an investment in RES plant in the capacity o
 |   |  Outcome (according to module B-1.1) | Increased electricity production from RES – PV + 5.500 MWh  |
 CITY OF KRANJ
 Climate Neutrality Action Plan
+3
 
 |  Implementation | Responsible bodies/person for implementation | LEAG Local Energy Agency of Gorenjska  |
 | --- | --- | --- |
@@ -2082,8 +2081,7 @@ Climate Neutrality Action Plan
 
 (3) Expansion of car-sharing including social innovation initiatives with unused car-fleet of municipality, businesses, schools, clubs etc.
 
-(4) Further extension of city e-bike system from current 29 bike stations with 330 lockers and 200 bikes (125 classical, 75 e-bikes, 2 e-cargo bikes).
-https://www.krskolesom.si/
+(4) Further extension of city e-bike system from current 29 bike stations with 330 lockers and 200 bikes (125 classical, 75 e-bikes, 2 e-cargo bikes). https://www.krskolesom.si/
 
 (5) Digital integration of urban mobility modes into one single product providing optimisation of routing system, commuting application, smart parking system etc. (MaaS application).  |
 | --- | --- | --- |
@@ -2122,13 +2120,13 @@ B-2.2: Individual action outlines
 
 In 2018, there were 32,8 km of cycling paths (71 km, 01/ 2023) and 79,226 km (2022) of sidewalks and walking paths (note: excluding hiking and mountain biking trails).
 
-This action thus focuses on elimination of key barriers in the city's cycling and walking network as identified in the recent study⁴.
+This action thus focuses on elimination of key barriers in the city's cycling and walking network as identified in the recent study^{4}.
 
 (1) Completion of the gaps in the cycling and walking network within the urban area of Kranj.
 (2) Bridging facilities over the rivers Sava and Kokra to better connect river banks for cyclists and walkers and to overcome the elevation between the valley bottom and the city.
 (3) Improving cycling and pedestrian connections and safety between Kranj centre, business parks, suburbs in the outer ring of the city and rural hinterland.  |
 
-⁴ Lot 6: ELENA Mobility Slovenia – Sustainable mobility programme in Slovenia, Number of project: 22_1060 ELENA Kranj Contract: »Mobility study of the City of Kranj - lot 6: Comprehensive study of cycling connections, stationary traffic and one-way connections with a proposal for sustainable mobility measures in the City of Kranj« No. 371-0020/2022-12, PNZ and luz, January 2023)
+Lot 6: ELENA Mobility Slovenia – Sustainable mobility programme in Slovenia, Number of project: 22_1060 ELENA Kranj Contract: »Mobility study of the City of Kranj - lot 6: Comprehensive study of cycling connections, stationary traffic and one-way connections with a proposal for sustainable mobility measures in the City of Kranj« No. 371-0020/2022-12, PNZ and luz, January 2023)
 
 7
 CITY OF KRANJ
@@ -2328,7 +2326,7 @@ Local media  |
 |   |  Removed/substituted energy, volume, or fuel type | Diesel: 221 MWh/year  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 64 t CO₂/year from transport
 t CO₂/year less from incineration  |
-|  Impact | GHG emissions compensated (natural or technological sinks) | /  |
+|   |  GHG emissions compensated (natural or technological sinks) | /  |
 |   |  Total costs and costs by CO₂eq unit | € 350.000 total cost
 € 532/t CO₂  |
 
@@ -2341,6 +2339,8 @@ Hard intervention (infrastructure)  |
 |   |  Action description | Aiming at reducing carbon emission (from driving distance) and improving the waste management efficiency in collecting and re-distributing waste, digitization of Kranj waste management system and reallocation of waste transfer station is foreseen. The action involves:
 (1) Digitization of waste transport
 container tracking, intelligent routing and collection planning...,  |
+
+4
 CITY OF KRANJ
 Climate Neutrality Action Plan
 
@@ -2486,7 +2486,6 @@ Climate Neutrality Action Plan
 (6) Establishing quality operational management of municipal forests (City  |
 CITY OF KRANJ
 Climate Neutrality Action Plan
-0
 
 |   |  | as a role model for sustainable forest management for other passive owners);
 (7) Local promotion campaigns for active sustainable forest management among private forest owners.  |
@@ -2514,9 +2513,11 @@ Local communities  |
 |   |  GHG emissions compensated (natural or technological sinks) | 7.560 t CO₂/year (sequestration estimated at 5,6 km² of urban forests)  |
 |   |  Total costs and costs by CO₂eq unit | € 770.000 – total cost
 € 102/t CO₂  |
-|  B-2.2: Individual action outlines  |   |   |
-| --- | --- | --- |
+
+B-2.2: Individual action outlines
+
 |  Action outline | Action name | 4.2 Greening the municipal spatial planning  |
+| --- | --- | --- |
 |   |  Action type | Soft intervention (change management of natural resources) – compensation measure  |
 |   |  Action description | Spatial planning is one of the key municipal regulatory tools for embedding climate neutral objectives into the urban development of both, future public and private investors. Therefore, the action is promoting and introducing diverse green standards that go beyond the existing regulations, into the municipal spatial planning procedures and plans such as:  |
 CITY OF KRANJ
@@ -2689,37 +2690,35 @@ Democracy & participation  |
 Report on gardening, april 2023
 CITY OF KRANJ
 Climate Neutrality Action Plan
+7
 
-|   |  | Public service institutions (schools, elderly home, kindergartens)
+|   | Public service institutions (schools, elderly home, kindergartens)
 Local restaurants and hotels
 NGOs Sorško polje, Beekeeping associations, Komunala Kranj – Municipal Utility Company
 Concessioner for maintenance of green areas
 CTRP Kranj
 BSC Kranj – RDA Gorenjska  |
-| --- | --- | --- |
-|   | Comments on implementation – consider mentioning resources, timelines, milestones | /  |
-|  Impact & cost | Generated renewable energy (if applicable) | NA  |
-|   | Removed/substituted energy, volume, or fuel type | NA  |
-|   | GHG emissions reduction estimate (total) per emission source sector | /  |
-|   | GHG emissions compensated (natural or technological sinks) | Partly considered above in 4.1 and 4.3.  |
-|   | Total costs and costs by CO2eq unit | € 4.194.000 – total costs
-€ 0/t CO2 (Indirect impact with significant co-benefits)  |
+| --- | --- |
+|   |  Comments on implementation – consider mentioning resources, timelines, milestones  |
+|  Impact & cost | Generated renewable energy (if applicable)  |
+|   |  Removed/substituted energy, volume, or fuel type  |
+|   |  GHG emissions reduction estimate (total) per emission source sector  |
+|   |  GHG emissions compensated (natural or technological sinks)  |
+|   |  Total costs and costs by CO₂eq unit  |
 
-## Built Environment
+# Built Environment
 
-### B-2.2: Individual action outlines
+B-2.2: Individual action outlines
 
 |  Action outline | Action name | 5.1. Energy-efficiency renovation of public buildings  |
 | --- | --- | --- |
-|   | Action type | Hard intervention (infrastructure)  |
-|   | Action description | The integrated energy-efficiency renovation programme of public buildings at the territory of City of Kranj includes:
+|   |  Action type | Hard intervention (infrastructure)  |
+|   |  Action description | The integrated energy-efficiency renovation programme of public buildings at the territory of City of Kranj includes:
 
 (1) Energy-efficiency renovation of 40 municipal buildings following a PPP business model (2018-2022: 21, 2023-2024: 19). Wherever possible energy-efficiency measures are complemented by other measures improving the property lifespan, climate and earthquake safety, accessibility and greening.
 
 (2) Energy-efficiency renovation of state-owned buildings in the territory of Kranj
 In the period 2018-2022 major energy-efficiency renovations were undertaken in the education district Zlato polje contributing to 1.000.000 kWh savings per year. Further to national investment plan, the Government foresees energy-retrofit of 6 state owned premises located in Kranj between 2023-2030: maternity hospital, NLZOH laboratories, Vocational upper-secondary school, Regional Court, Cultural  |
-
-7
 CITY OF KRANJ
 Climate Neutrality Action Plan
 8
@@ -2895,7 +2894,7 @@ Biodegradable waste: Even with comprehensive recycling and waste reduction progr
 Technical challenges: Complete capture and utilization of gases from waste, particularly in existing landfills is technologically complex.
 Consumer behaviour: Not all individuals or businesses may comply with recycling and composting schemes, leading to higher amounts of GHG-emitting waste.
 
-## Strategy:
+# Strategy:
 
 Initiating an open dialog with citizens on the potential and eventual acceptance of incineration of commercial waste for district heating – renewable energy production.
 
@@ -2919,7 +2918,7 @@ Promoting piloting carbon storage technologies in industrial processes, in parti
 
 # Agriculture, Forestry and Land Use (AFOLU)
 
-Residual emissions after implementation of proposed actions: 10.185 tonnes CO₂/year
+## Residual emissions after implementation of proposed actions: 10.185 tonnes CO₂/year
 
 There are significant externalities that influence the future emissions in the AFOLU sector and impact the estimated residual emissions:
 
@@ -2933,7 +2932,6 @@ Anticipated changes in IPCC methodologies will most likely impact the reduction 
 Restoration of forests with new tree species (higher emphasise on leaves instead of conifers) more efficient as envisaged by actions – consequently higher sequestration from forests as anticipated.
 CITY OF KRANJ
 Climate Neutrality Action Plan
-C
 
 # 3.3 Module B-3 Indicators for Monitoring, Evaluation and Learning
 
@@ -2950,7 +2948,7 @@ Table 13: B-3.1: Impact Pathways
 |  OUTCOME: District heating and cooling system running primarily on RES and waste heat | 1.1, 1.2 | OI 1.1 | RES and waste heat in city district heating (annual %) |  | 60% | 70% | 90%  |
 |  IMAPCT: Energy self-sufficiency and security |   | II 1.1 |   |   |   |   |   |
 |   |   |  |   |   |   |   |   |
-|  IMPACT: Urban heat island effect reduced |  | II 1.4 | Temperature at detected heat islands (°C) |  |  |  | ↓  |
+|  IMPACT: Urban heat island effect reduced | II 1.4 | Temperature at detected heat islands (°C) |  |  |  |  | ↓  |
 |  OUTCOME: Increased energy production from RES | 1.3, 1.4, 1.5, 1.7 | OI 1.2 | Production of green electricity (MWh) |  | 20.000 | 30.000 | 55.000  |
 |  OUTCOME: Energy co-operatives in place |   |  |   |   |   |   |   |
 |  IMAPCT: Energy self-sufficiency and security |   | II 1.1 |   |   |   |   |   |
@@ -3344,7 +3342,7 @@ Climate Neutrality Action Plan
 |  Indicator Context  |   |
 |  Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | No  |
 |  If yes, which emission source sectors does it impact? | /  |
-|  Does the indicator measure indirect impacts (i.e., co- benefits)? | Yes  |
+|  Does the indicator measure indirect impacts (i.e., co-benefits)? | Yes  |
 |  If yes, which co-benefit does it measure? | Road safety  |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
 |  If yes, which action and impact pathway is it relevant for? | Road safety  |
@@ -3366,7 +3364,7 @@ Climate Neutrality Action Plan
 |  Indicator Context  |   |
 |  Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | No  |
 |  If yes, which emission source sectors does it impact? | /  |
-|  Does the indicator measure indirect impacts (i.e., co- benefits)? | Yes  |
+|  Does the indicator measure indirect impacts (i.e., co-benefits)? | Yes  |
 |  If yes, which co-benefit does it measure? | Increased quality of life/ Livability  |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
 |  If yes, which action and impact pathway is it relevant for? | Increased quality of life/ Livability  |
@@ -3397,7 +3395,7 @@ Climate Neutrality Action Plan
 |  If yes, which co-benefit does it measure? | Reduced noise pollution  |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
 |  If yes, which action and impact pathway is it relevant for? | Mobility and Transport: Reduced noise pollution Improved citizens health  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No  |
+|  Is the indicator captured by the existing CDP/SCIS/ Covenant of Mayors platforms? | No  |
 |  Data requirements |   |
 |  Expected data source | Annual report from direct monitoring.  |
 |  Is the data source local or regional/national? | Local  |
@@ -3419,7 +3417,7 @@ Climate Neutrality Action Plan
 |  If yes, which co-benefit does it measure? | Waste management efficiency  |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
 |  If yes, which action and impact pathway is it relevant for? | Waste and Circular Economy: Increased capacities of circular economy and reduction of waste  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No  |
+|  Is the indicator captured by the existing CDP/SCIS/ Covenant of Mayors platforms? | No  |
 |  Data requirements |   |
 |  Expected data source | Annual report of the City utility company Komunala Kranj.  |
 |  Is the data source local or regional/national? | Local  |
@@ -3546,7 +3544,7 @@ Climate Neutrality Action Plan
 |  If yes, which co-benefit does it measure? | New green jobs generation  |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
 |  If yes, which action and impact pathway is it relevant for? | Waste and Circular Economy: New green jobs generation  |
-|  Is the indicator captured by the existing CDP/SCIS/ Covenant of Mayors platforms? | No  |
+|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No  |
 |  Data requirements |   |
 |  Expected data source | AJPES, SURS.  |
 |  Is the data source local or regional/national? | National  |
@@ -3571,7 +3569,7 @@ Climate Neutrality Action Plan
 |  If yes, which co-benefit does it measure? | Biodiversity preservation  |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
 |  If yes, which action and impact pathway is it relevant for? | Green infrastructure and nature-based solutions: Protected and better managed urban green infrastructure Biodiversity preservation  |
-|  Is the indicator captured by the existing CDP/SCIS/ Covenant of Mayors platforms? | No  |
+|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No  |
 |  Data requirements |   |
 |  Expected data source | City of Kranj Administration  |
 |  Is the data source local or regional/national? | Local  |
@@ -3701,13 +3699,13 @@ Climate Neutrality Action Plan
 |  Indicator Context  |   |
 |  Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | Yes (input data)  |
 |  If yes, which emission source sectors does it impact? | Built environment  |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | Yes  |
+|  Does the indicator measure indirect impacts (i.e., co- benefits)? | Yes  |
 |  If yes, which co-benefit does it measure? | Cost savings from energy
 Increased quality of life/ Livability
 Increased social cohesion  |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
 |  If yes, which action and impact pathway is it relevant for? | Built environment: Energy-efficiency of residential buildings in urban and semi-urban neighbourhoods + above co-benefits  |
-|  Is the indicator captured by the existing CDP/SCIS/ Covenant of Mayors platforms? | No  |
+|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No  |
 |  Data requirements  |   |
 |  Expected data source | City of Kranj Administration, Domplan – facility manager  |
 |  Is the data source local or regional/national? | Local  |
@@ -3725,13 +3723,13 @@ Increased social cohesion  |
 |  Indicator Context  |   |
 |  Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | Yes (input data)  |
 |  If yes, which emission source sectors does it impact? | Built environment  |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | Yes  |
+|  Does the indicator measure indirect impacts (i.e., co- benefits)? | Yes  |
 |  If yes, which co-benefit does it measure? | Cost savings from energy
 Increased quality of life/ Livability
 Increased social cohesion  |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
 |  If yes, which action and impact pathway is it relevant for? | Built environment: Energy-efficiency of residential buildings in urban and semi-urban neighbourhoods + above co-benefits/impacts  |
-|  Is the indicator captured by the existing CDP/SCIS/ Covenant of Mayors platforms? | No  |
+|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No  |
 |  Data requirements  |   |
 |  Expected data source | Eco Fund  |
 |  Is the data source local or regional/national? | National  |
@@ -3793,7 +3791,6 @@ CITY OF KRANJ
 
 Climate Neutrality Action Plan
 
-C
 
 # 4 Part C – Enabling Climate Neutrality by 2030
 
@@ -3818,7 +3815,6 @@ CITY OF KRANJ
 
 Climate Neutrality Action Plan
 
-C
 
 for smart city. SCCNSC is continuously open to partners who have significant impact on Kranj climate targets.
 
@@ -4042,7 +4038,6 @@ Increased social cohesion  |
 0
 CITY OF KRANJ
 Climate Neutrality Action Plan
-C
 
 C.2.1: Relations between social innovations, systems, and impact pathways
 
@@ -4083,7 +4078,7 @@ Tailor made events and awareness rising actions in collaboration with local CCC 
 
 # SMART KRANJ – INTEGRATED DIGITAL PLATFORM for climate transition management and citizen services
 
-After the adoption of Integrated Sustainable Urban Development Strategy of Kranj in 2016 and supported by Kranj Digital Strategy in 2020, the City of Kranj has been systematically building up and connecting processes, platforms, data and services into a single digital environment to support management of the smart city functions, improving the quality of life of citizens and visitors, provide better and more efficient services for the citizens as well as to support city's transition to climate neutrality. The intervention is thus cantered around three main components:
+After the adoption of Integrated Sustainable Urban Development Strategy of Kranj in 2016 and supported by Kranj Digital Strategy in 2020, the City of Kranj has been systematically building up and connecting processes, platforms, data and services into a single digital environment to support management of the smart city functions, improving the quality of life of citizens and visitors, provide better and more efficient services for the citizens as well as to support city's transition to climate neutrality. The intervention is thus centered around three main components:
 
 Smart Kranj Digital Platform with technologies that enable connection and data usage of various utility and service providers (transport, waste, natural disasters, air quality, energy consumption, events, health, citizens participation, household and financial data, surveys) for management and monitoring of city green transition, including public carbon footprint dashboard, and introducing different policy measures and related behavioural changes and interactions in the community.
 MaaS App – providing new services for citizens, primarily those easing the transition to climate neutrality for citizens (city public transport route planner, smart parking, smart waste, smart cycling etc.) or enabling incentives for behavioural changes and proactive interaction with users (benefits for one-car households, walkers and bikers etc.).
@@ -4122,7 +4117,6 @@ Climate Neutrality Action Plan
 Figure 21: Social, smart city and other innovation interventions
 CITY OF KRANJ
 Climate Neutrality Action Plan
-C
 
 # 4.3 Module C-3 Financing of Action Portfolio
 
@@ -4156,7 +4150,6 @@ Concessioners | 2018-2030 | Mobility & transport | 4.797 t | 14.093.000  |
 |  2.3. Cycling and walking network | CoKA, Office for Economic Affairs and Traffic, Department of Traffic | 2018-2030 | Mobility & transport | 183 t | 7.250.000  |
 CITY OF KRANJ
 Climate Neutrality Action Plan
-C
 
 C-3.1: Summary of interventions with cost implication (to be unpacked in Investment Plan)
 
@@ -4185,9 +4178,10 @@ Komunala Kranj (public utility company) | 2018-2030 | Waste & circular economy |
 |  4.2. Greening the municipal spatial planning | CoKA, Joint Office for Spatial planning | 2023-2028 | Green infrastructure & nature-based solutions | / Support action. | 500.000  |
 |  4.3. Green areas and green roofs | CoKA, Project Office
 CoKA, Office for Economic Affairs and Traffic, Department of Economic Affairs | 2023-2030 | Green infrastructure & nature-based solutions | 68 t | 5.000.000  |
+
+6
 CITY OF KRANJ
 Climate Neutrality Action Plan
-C
 
 C-3.1: Summary of interventions with cost implication (to be unpacked in Investment Plan)
 
@@ -4282,7 +4276,8 @@ CITY OF KRANJ
 Climate Neutrality Action Plan
 2
 
-|  SECTOR | MEASUREMENTS | TARGETS 2030 – COMPARED TO 2005 AND DRAFT NECP (update in progress)  |
+|  SECTOR | MEASUREMENTS | TARGETS 2030 – COMPARED TO 2005 AND DRAFT NECP
+(update in progress)  |
 | --- | --- | --- |
 |   | → increase the share of renewables in final consumption. | energy products excluding electricity and district heat), prohibition of sale and installation of new boilers using fuel oil after 2022. (DRAFT NECP no changes)
 → At least 30 % share of RES (including waste heat) in industry, (DRAFT NECP no changes)
@@ -4417,7 +4412,6 @@ CITY OF KRANJ
 
 Climate Neutrality Action Plan
 
-C
 
 # ANNEX 2: Climate City Contract Co-creative Participatory Process of the City of Kranj
 
@@ -4431,7 +4425,6 @@ The City of Kranj is aware that achieving climate neutrality by 2030 requires ch
 Figure 1: City of Kranj CCC partnership governance structure
 CITY OF KRANJ
 Climate Neutrality Action Plan
-C
 
 # Members of the Strategic Council of City of Kranj for Climate Neutral and Smart Community
 
@@ -4495,16 +4488,13 @@ Operational level is represented by the Transition Team (TT), composed of 20 sen
 
 These governance structures will remain in function throughout the CCC implementation period. If necessary, the membership will be enhanced with stakeholders and professionals in the fields that might appear as a gap (representatives of the government, representatives of certain most affected communities, NGOs etc.).
 
-## THE CCC CO-CREATION PARTICIPATIVE PROCESSES
+# THE CCC CO-CREATION PARTICIPATIVE PROCESSES
 
 The Climate Commitment process and document is a result of a joint effort. From the start, it has been designed as a co-creative and participatory process, running form the beginning of 2023 until recently (February 2024). As climate neutrality is rather a new topic to address among the stakeholders, citizens and CoKA, the initial activation was needed. The process was designed in a way to systematically target different groups using different approaches. The engagement started within CoKA, setting new governance structures, and was gradually extended externally in the following order:
 
 ) Firstly, stakeholders with direct impact on the reduction of GHG emissions were approached and invited to join the SCCNSC, individual interviews and thematic workshops were conducted (for those not included in the SCCNSC, in particular governmental bodies) and technical meetings with utility providers were executed.
-
 ) Secondly, stakeholders with targeted specialised competences and knowledge base in green transitions by participation were engaged in the focus group workshops and consultation meetings (e.g. institutes, university, high schools).
-
 ) Thirdly, stakeholders with greater reach to general public such as the main city library, health centre, schools, sport centre, kindergartens were engaged in tailor made workshops and presentations.
-
 ) Finally, citizens and specific target groups (the youth, businesses) were addressed through open survey, focus group workshops, communication activities, and organisation of joint public events.
 #
 
@@ -4533,7 +4523,6 @@ Climate Neutrality Action Plan
 ![img-6.jpeg](img-6.jpeg)
 CITY OF KRANJ
 Climate Neutrality Action Plan
-C
 
 # CITIZENS and ORGANISATION SURVEYS
 
@@ -4550,7 +4539,6 @@ CITY OF KRANJ
 
 Climate Neutrality Action Plan
 
-C
 
 ![img-0.jpeg](img-0.jpeg)
 
@@ -4572,7 +4560,6 @@ o sharing the information about the establishment of the Strategic Council for C
 the visit of Mr. Child in Ljubljana;
 CITY OF KRANJ
 Climate Neutrality Action Plan
-C
 
 o signing the Climate Neutrality Commitments with stakeholders.
 
@@ -4595,7 +4582,6 @@ CITY OF KRANJ
 
 Climate Neutrality Action Plan
 
-C
 
 ![img-0.jpeg](img-0.jpeg)
 
@@ -4617,7 +4603,6 @@ CITY OF KRANJ
 
 Climate Neutrality Action Plan
 
-C
 
 ![img-0.jpeg](img-0.jpeg)
 Figure 4: KR'POVEJ distribution of citizens initiatives in the territory
@@ -4633,7 +4618,6 @@ CITY OF KRANJ
 
 Climate Neutrality Action Plan
 
-C
 
 ![img-0.jpeg](img-0.jpeg)
 Figure 5: Overview of the citizens surveys in the period 2020-2023
@@ -4973,7 +4957,9 @@ Express joint commitment / agreement for all parties who sign this 2030 Climate 
 We, the undersigned, hereby commit to help make the City of Kranj climate neutral by 2030. We agree on the joint ambition and commitments, as formulated in the City of Kranj’s Climate City Contract.
 
 Date of signature
+
 Name
+
 Signature
 
 Mayor of City X

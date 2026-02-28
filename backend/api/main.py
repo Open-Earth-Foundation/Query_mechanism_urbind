@@ -8,15 +8,23 @@ from contextlib import asynccontextmanager
 from pathlib import Path
 from typing import AsyncIterator
 
+from dotenv import load_dotenv
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from backend.api.routes import assumptions_router, chat_router, cities_router, runs_router
+from backend.api.routes import (
+    assumptions_router,
+    chat_router,
+    cities_router,
+    runs_router,
+)
 from backend.api.services import ChatMemoryStore, RunExecutor, RunStore
 from backend.utils.config import load_config
 from backend.utils.logging_config import setup_logger
 
 logger = logging.getLogger(__name__)
+# this is responsible for how many runs we can run per instance
+DEFAULT_API_RUN_WORKERS = 2
 
 
 def _resolve_runs_dir(runs_dir: Path | None) -> Path:
@@ -27,15 +35,10 @@ def _resolve_runs_dir(runs_dir: Path | None) -> Path:
 
 
 def _resolve_worker_count(max_workers: int | None) -> int:
-    """Resolve worker count from argument or API_RUN_WORKERS environment variable."""
-    if max_workers is not None:
-        return max(1, max_workers)
-    raw = os.getenv("API_RUN_WORKERS", "2").strip()
-    try:
-        parsed = int(raw)
-    except ValueError:
-        return 2
-    return max(1, parsed)
+    """Resolve worker count from explicit argument or hardcoded default."""
+    if max_workers is None:
+        return DEFAULT_API_RUN_WORKERS
+    return max(1, max_workers)
 
 
 def _resolve_markdown_dir(markdown_dir: Path | None) -> Path:
@@ -62,15 +65,6 @@ def _resolve_city_groups_path(city_groups_path: Path | None) -> Path:
     return Path(__file__).resolve().parent / "assets" / "city_groups.json"
 
 
-def _resolve_cors_origins() -> list[str]:
-    """Resolve allowed CORS origins for browser frontend."""
-    raw = os.getenv(
-        "API_CORS_ORIGINS",
-        "http://127.0.0.1:3000,http://localhost:3000,http://127.0.0.1:3001,http://localhost:3001",
-    )
-    return [item.strip() for item in raw.split(",") if item.strip()]
-
-
 def create_app(
     runs_dir: Path | None = None,
     max_workers: int | None = None,
@@ -79,6 +73,7 @@ def create_app(
     city_groups_path: Path | None = None,
 ) -> FastAPI:
     """Create FastAPI app instance."""
+    load_dotenv()
     setup_logger()
     resolved_runs_dir = _resolve_runs_dir(runs_dir)
     resolved_workers = _resolve_worker_count(max_workers)
@@ -130,11 +125,12 @@ def create_app(
     )
     app.add_middleware(
         CORSMiddleware,
-        allow_origins=_resolve_cors_origins(),
+        allow_origins=["*"],
         allow_credentials=True,
         allow_methods=["*"],
         allow_headers=["*"],
     )
+    logger.info("CORS allow_origins=*")
     app.include_router(runs_router, prefix="/api/v1", tags=["runs"])
     app.include_router(cities_router, prefix="/api/v1", tags=["cities"])
     app.include_router(chat_router, prefix="/api/v1", tags=["chat"])

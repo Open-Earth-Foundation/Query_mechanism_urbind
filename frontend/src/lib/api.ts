@@ -51,6 +51,31 @@ export interface RunContextResponse {
   context_bundle_path: string;
 }
 
+export interface RunReferenceResponse {
+  run_id: string;
+  ref_id: string;
+  excerpt_index: number;
+  city_name: string;
+  quote: string;
+  partial_answer: string;
+  source_chunk_ids: string[];
+}
+
+export interface RunReferenceListItem {
+  ref_id: string;
+  excerpt_index: number;
+  city_name: string;
+  quote?: string | null;
+  partial_answer?: string | null;
+  source_chunk_ids?: string[] | null;
+}
+
+export interface RunReferenceListResponse {
+  run_id: string;
+  reference_count: number;
+  references: RunReferenceListItem[];
+}
+
 export interface RunSummary {
   run_id: string;
   question: string;
@@ -113,10 +138,19 @@ export interface ApplyAssumptionsResponse {
 
 export type ChatRole = "user" | "assistant";
 
+export interface ChatCitation {
+  ref_id: string;
+  city_name: string;
+  source_run_id: string;
+  source_ref_id: string;
+}
+
 export interface ChatMessage {
   role: ChatRole;
   content: string;
   created_at: string;
+  citations?: ChatCitation[] | null;
+  citation_warning?: string | null;
 }
 
 export interface ChatSessionResponse {
@@ -190,25 +224,41 @@ function normalizeCityKeys(values?: string[]): string[] | undefined {
   return normalized.length > 0 ? normalized : undefined;
 }
 
-const configuredBaseUrl = (
-  globalThis as {
-    process?: { env?: { NEXT_PUBLIC_API_BASE_URL?: string } };
-  }
-).process?.env?.NEXT_PUBLIC_API_BASE_URL?.trim();
+const configuredBaseUrl = process.env.NEXT_PUBLIC_API_BASE_URL?.trim() ?? "";
+const LOCAL_API_BASE_URL = "http://127.0.0.1:8000";
+const DEFAULT_API_BASE_URL = "https://urbind-query-mechanism-api.openearth.dev";
 
-function resolveFallbackApiBaseUrl(): string {
-  const locationHost = globalThis.location?.hostname?.toLowerCase() ?? "";
-  if (locationHost === "localhost" || locationHost === "127.0.0.1") {
-    return "http://127.0.0.1:8000";
-  }
-  return "https://urbind-query-mechanism-api.openearth.dev";
+function normalizeBaseUrl(baseUrl: string): string {
+  return baseUrl.replace(/\/+$/, "");
 }
 
-export const apiBaseUrl = (
-  configuredBaseUrl && configuredBaseUrl.length > 0
-    ? configuredBaseUrl
-    : resolveFallbackApiBaseUrl()
-).replace(/\/+$/, "");
+function resolveClientFallbackApiBaseUrl(): string {
+  const locationHost = globalThis.location?.hostname?.toLowerCase() ?? "";
+  if (locationHost === "localhost" || locationHost === "127.0.0.1") {
+    return LOCAL_API_BASE_URL;
+  }
+  if (locationHost.endsWith(".openearth.dev")) {
+    return DEFAULT_API_BASE_URL;
+  }
+  if (locationHost.length > 0) {
+    return `http://${locationHost}:8000`;
+  }
+  return DEFAULT_API_BASE_URL;
+}
+
+export const apiBaseUrl = normalizeBaseUrl(
+  configuredBaseUrl.length > 0 ? configuredBaseUrl : DEFAULT_API_BASE_URL,
+);
+
+export function getApiBaseUrl(): string {
+  if (configuredBaseUrl.length > 0) {
+    return normalizeBaseUrl(configuredBaseUrl);
+  }
+  if (typeof window !== "undefined") {
+    return normalizeBaseUrl(resolveClientFallbackApiBaseUrl());
+  }
+  return apiBaseUrl;
+}
 
 let userApiKey: string | null = null;
 
@@ -233,7 +283,7 @@ async function requestJson<T>(
   init?: RequestInit,
   includeJsonContentType = false,
 ): Promise<T> {
-  const response = await fetch(`${apiBaseUrl}${path}`, {
+  const response = await fetch(`${getApiBaseUrl()}${path}`, {
     ...init,
     headers: {
       ...buildHeaders(includeJsonContentType),
@@ -286,6 +336,48 @@ export async function fetchRunOutput(runId: string): Promise<RunOutputResponse> 
 
 export async function fetchRunContext(runId: string): Promise<RunContextResponse> {
   return requestJson<RunContextResponse>(`/api/v1/runs/${encodeURIComponent(runId)}/context`);
+}
+
+export async function fetchRunReference(
+  runId: string,
+  refId: string,
+): Promise<RunReferenceResponse> {
+  const payload = await fetchRunReferences(runId, {
+    refId,
+    includeQuote: true,
+  });
+  const reference = payload.references[0];
+  if (!reference) {
+    throw new Error(`Reference ${refId} was not found for run ${runId}.`);
+  }
+  return {
+    run_id: runId,
+    ref_id: reference.ref_id,
+    excerpt_index: reference.excerpt_index,
+    city_name: reference.city_name,
+    quote: reference.quote ?? "",
+    partial_answer: reference.partial_answer ?? "",
+    source_chunk_ids: reference.source_chunk_ids ?? [],
+  };
+}
+
+export async function fetchRunReferences(
+  runId: string,
+  options?: {
+    refId?: string;
+    includeQuote?: boolean;
+  },
+): Promise<RunReferenceListResponse> {
+  const params = new URLSearchParams();
+  if (options?.refId) {
+    params.set("ref_id", options.refId);
+  }
+  if (options?.includeQuote) {
+    params.set("include_quote", "true");
+  }
+  const suffix = params.toString();
+  const path = `/api/v1/runs/${encodeURIComponent(runId)}/references${suffix ? `?${suffix}` : ""}`;
+  return requestJson<RunReferenceListResponse>(path);
 }
 
 export async function fetchCities(): Promise<CityListResponse> {

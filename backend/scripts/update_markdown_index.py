@@ -16,6 +16,7 @@ Outputs:
 - Upserts changed/new files and deletes removed-file chunks in Chroma.
 - Updates manifest file (unless --dry-run).
 - Log output with changed/unchanged/deleted file stats.
+- Non-zero exit on embedding failures; no delete/upsert/manifest write is committed.
 
 Usage (from project root):
 - python -m backend.scripts.update_markdown_index --docs-dir documents
@@ -66,7 +67,12 @@ def main() -> None:
     setup_logger()
     config = load_config(Path(args.config))
     if args.persist_path:
+        manifest_default = Path(".chroma/index_manifest.json")
         config.vector_store.chroma_persist_path = Path(args.persist_path)
+        if config.vector_store.index_manifest_path == manifest_default:
+            config.vector_store.index_manifest_path = (
+                config.vector_store.chroma_persist_path / "index_manifest.json"
+            )
     if args.collection:
         config.vector_store.chroma_collection_name = args.collection
     stats = update_markdown_index(

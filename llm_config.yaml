@@ -14,10 +14,18 @@ sql_researcher:
 markdown_researcher:
   model: "x-ai/grok-4.1-fast"
   temperature: 0.0
+  # Optional Grok-only setting. Do not set this for non-Grok models.
+  # Unsupported models/providers may reject the request if this is enabled.
+  reasoning_effort: "low"
   context_window_tokens: 200000
   input_token_reserve: 10000
   max_chunk_tokens: 40000
   chunk_overlap_tokens: 2000
+  # try this and how much it drops the time
+  # every 16 chunks is adding ~13k tokens
+  batch_max_chunks: 32
+  batch_max_input_tokens: null
+  batch_overhead_tokens: 600
   max_workers: 4
   max_retries: 2
   retry_base_seconds: 0.8
@@ -40,13 +48,25 @@ assumptions_reviewer:
   temperature: 0.0
   max_output_tokens: 8000
 vector_store:
-  enabled: false
+  enabled: true
   chroma_persist_path: ".chroma"
   chroma_collection_name: "markdown_chunks"
   embedding_model: "text-embedding-3-large"
+  embedding_max_input_tokens: 8000
+  embedding_batch_size: 100
+  embedding_max_retries: 3
+  embedding_retry_base_seconds: 0.8
+  embedding_retry_max_seconds: 8.0
   embedding_chunk_tokens: 800
   embedding_chunk_overlap_tokens: 80
   table_row_group_max_rows: 25
+  retrieval_max_distance: 1.0
+  retrieval_fallback_min_chunks_per_city_query: 20
+  retrieval_max_chunks_per_city_query: 60
+  retrieval_max_chunks_per_city: 300
+  context_window_chunks: 0
+  table_context_window_chunks: 1
+  auto_update_on_run: false
   index_manifest_path: ".chroma/index_manifest.json"
 openrouter_base_url: "https://openrouter.ai/api/v1"
 enable_sql: false

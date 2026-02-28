@@ -9,7 +9,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 from agents import Agent, function_tool
-from agents.exceptions import MaxTurnsExceeded
+from agents.exceptions import MaxTurnsExceeded, ModelBehaviorError
 from openai import APIConnectionError
 
 from backend.models import ErrorInfo
@@ -53,6 +53,8 @@ def build_markdown_agent(config: AppConfig, api_key: str) -> Agent:
     settings = build_model_settings(
         config.markdown_researcher.temperature,
         config.markdown_researcher.max_output_tokens,
+        # Grok-specific optional override; unsupported models/providers may reject this.
+        reasoning_effort=config.markdown_researcher.reasoning_effort,
     )
     settings.tool_choice = "submit_markdown_excerpts"
     settings.parallel_tool_calls = False
@@ -112,6 +114,10 @@ def extract_markdown_excerpts(
             return True
         # Treat JSON validation errors as retryable (LLM output may succeed on retry)
         if isinstance(exc, ValueError) and "Invalid JSON" in str(exc):
+            return True
+        # Malformed model output (e.g. XML-style function calls instead of JSON) is
+        # transient and worth retrying.
+        if isinstance(exc, ModelBehaviorError):
             return True
         return False
 

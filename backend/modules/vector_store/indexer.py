@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import logging
 import os
+import time
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
@@ -24,6 +25,7 @@ from backend.modules.vector_store.markdown_blocks import parse_markdown_blocks
 from backend.modules.vector_store.models import EmbeddingProvider, IndexedChunk
 from backend.utils.city_normalization import normalize_city_key
 from backend.utils.config import AppConfig, load_config
+from backend.utils.tokenization import chunk_text, count_tokens
 
 logger = logging.getLogger(__name__)
 
@@ -42,10 +44,23 @@ class IndexStats:
     dry_run: bool
 
 
+class EmbeddingIndexingError(RuntimeError):
+    """Raised when one or more chunks fail to embed during index operations."""
+
+
 class OpenAIEmbeddingProvider(EmbeddingProvider):
     """Embedding provider backed by OpenAI-compatible embeddings API."""
 
-    def __init__(self, model: str, base_url: str | None = None) -> None:
+    def __init__(
+        self,
+        model: str,
+        base_url: str | None = None,
+        batch_size: int = 100,
+        max_retries: int = 3,
+        retry_base_seconds: float = 0.8,
+        retry_max_seconds: float = 8.0,
+        max_input_tokens: int | None = 8000,
+    ) -> None:
         api_key = os.getenv("OPENAI_API_KEY") or os.getenv("OPENROUTER_API_KEY")
         if not api_key:
             raise EnvironmentError("OPENAI_API_KEY or OPENROUTER_API_KEY must be set.")
@@ -57,16 +72,143 @@ class OpenAIEmbeddingProvider(EmbeddingProvider):
         )
         self._model = model
         self._client = OpenAI(api_key=api_key, base_url=resolved_base_url)
+        self._batch_size = max(batch_size, 1)
+        self._max_retries = max(max_retries, 0)
+        self._retry_base_seconds = max(retry_base_seconds, 0.0)
+        self._retry_max_seconds = max(retry_max_seconds, self._retry_base_seconds)
+        self._max_input_tokens = (
+            max_input_tokens if max_input_tokens is not None and max_input_tokens > 0 else None
+        )
 
-    def embed_texts(self, texts: list[str]) -> list[list[float]]:
+    def _trim_text_to_input_limit(self, text: str) -> str:
+        """Trim one text to provider input limit when configured."""
+        if self._max_input_tokens is None:
+            return text
+        token_count = count_tokens(text)
+        if token_count <= self._max_input_tokens:
+            return text
+        chunks = chunk_text(text, max_tokens=self._max_input_tokens, overlap_tokens=0)
+        if not chunks:
+            logger.warning(
+                "Embedding input exceeded token limit but chunk_text returned no chunks; "
+                "model=%s original_tokens=%d original_chars=%d max_input_tokens=%d",
+                self._model,
+                token_count,
+                len(text),
+                self._max_input_tokens,
+            )
+            return ""
+        truncated = chunks[0]
+        logger.warning(
+            "Embedding input exceeded token limit; truncating model=%s original_tokens=%d "
+            "truncated_tokens=%d original_chars=%d truncated_chars=%d max_input_tokens=%d",
+            self._model,
+            token_count,
+            count_tokens(truncated),
+            len(text),
+            len(truncated),
+            self._max_input_tokens,
+        )
+        return truncated
+
+    def _embed_batch_once(self, texts: list[str]) -> list[list[float]]:
+        """Send one embeddings request and validate response length."""
+        try:
+            response = self._client.embeddings.create(model=self._model, input=texts)
+        except Exception as exc:
+            if "No embedding data" in str(exc):
+                text_lengths = [len(text) for text in texts]
+                token_lengths = [count_tokens(text) for text in texts]
+                try:
+                    raw = self._client.with_raw_response.embeddings.create(model=self._model, input=texts)
+                    msg = (
+                        "No embedding data received. "
+                        f"Provider error: {raw.http_response.text}. "
+                        f"Texts lengths: {text_lengths}. Texts token lengths: {token_lengths}"
+                    )
+                except Exception as e2:
+                    msg = (
+                        "No embedding data received. "
+                        f"Texts lengths: {text_lengths}. Texts token lengths: {token_lengths}. "
+                        f"Also failed to get raw response: {e2}"
+                    )
+                raise ValueError(msg) from exc
+            raise
+        embeddings = [item.embedding for item in response.data]
+        if len(embeddings) != len(texts):
+            raise ValueError(
+                "Embedding response length mismatch: "
+                f"requested={len(texts)} received={len(embeddings)}"
+            )
+        return embeddings
+
+    def _embed_batch_with_retries(self, texts: list[str]) -> list[list[float]]:
+        """Retry one batch with exponential backoff for transient provider failures."""
+        last_error: Exception | None = None
+        attempts = self._max_retries + 1
+        for attempt in range(1, attempts + 1):
+            try:
+                return self._embed_batch_once(texts)
+            except Exception as exc:
+                last_error = exc
+                if attempt >= attempts:
+                    break
+                sleep_seconds = min(
+                    self._retry_base_seconds * (2 ** (attempt - 1)),
+                    self._retry_max_seconds,
+                )
+                logger.warning(
+                    "Embedding request failed for batch_size=%d (attempt %d/%d): %s",
+                    len(texts),
+                    attempt,
+                    attempts,
+                    exc,
+                )
+                if sleep_seconds > 0:
+                    time.sleep(sleep_seconds)
+        assert last_error is not None
+        raise last_error
+
+    def _embed_batch_one_by_one(self, texts: list[str]) -> list[list[float] | None]:
+        """Fallback path: embed texts individually to isolate bad batch payloads.
+
+        Returns ``None`` for any text that permanently fails after all retries
+        so the caller can decide whether to skip or raise.
+        """
+        vectors: list[list[float] | None] = []
+        for text in texts:
+            try:
+                vectors.extend(self._embed_batch_with_retries([text]))
+            except Exception as exc:
+                logger.error(
+                    "Permanently skipping text (char_len=%d) after all retries: %s",
+                    len(text),
+                    exc,
+                )
+                vectors.append(None)
+        return vectors
+
+    def embed_texts(self, texts: list[str]) -> list[list[float] | None]:
+        """Embed input texts with retries and per-item fallback.
+
+        Returns one entry per input text. ``None`` means the text permanently
+        failed to embed and the caller should skip that item.
+        """
         if not texts:
             return []
-        vectors: list[list[float]] = []
-        batch_size = 100
-        for start in range(0, len(texts), batch_size):
-            batch = texts[start : start + batch_size]
-            response = self._client.embeddings.create(model=self._model, input=batch)
-            vectors.extend([item.embedding for item in response.data])
+        prepared_texts = [self._trim_text_to_input_limit(text) for text in texts]
+        vectors: list[list[float] | None] = []
+        for start in range(0, len(prepared_texts), self._batch_size):
+            batch = prepared_texts[start : start + self._batch_size]
+            try:
+                vectors.extend(self._embed_batch_with_retries(batch))
+            except Exception as exc:
+                logger.warning(
+                    "Embedding batch failed after retries; retrying per item for batch_size=%d: %s",
+                    len(batch),
+                    exc,
+                )
+                vectors.extend(self._embed_batch_one_by_one(batch))
         return vectors
 
 
@@ -168,11 +310,46 @@ def _collect_token_stats(chunks: list[IndexedChunk]) -> tuple[int, float, int]:
     return min(token_counts), sum(token_counts) / len(token_counts), max(token_counts)
 
 
-def _embed_chunks(chunks: list[IndexedChunk], provider: EmbeddingProvider) -> list[IndexedChunk]:
-    """Attach embeddings to chunk objects using provider output."""
+def _embed_chunks(
+    chunks: list[IndexedChunk],
+    provider: EmbeddingProvider,
+    operation_name: str,
+) -> list[IndexedChunk]:
+    """Attach embeddings to chunk objects using provider output.
+
+    Any permanently failed embedding (``None``) aborts the operation to avoid
+    partial index state and manifest/vector drift.
+    """
     if not chunks:
         return []
     embeddings = provider.embed_texts([chunk.document for chunk in chunks])
+    if len(embeddings) != len(chunks):
+        raise EmbeddingIndexingError(
+            f"{operation_name} aborted due to embedding response size mismatch: "
+            f"chunks={len(chunks)} embeddings={len(embeddings)}"
+        )
+
+    failed_chunks: list[IndexedChunk] = []
+    for chunk, embedding in zip(chunks, embeddings, strict=True):
+        if embedding is None:
+            failed_chunks.append(chunk)
+    if failed_chunks:
+        sample = ", ".join(
+            f"{chunk.chunk_id}@{chunk.metadata.get('source_path', '<unknown>')}"
+            for chunk in failed_chunks[:5]
+        )
+        logger.error(
+            "%s aborted due to embedding failures failed=%d total=%d sample=%s",
+            operation_name,
+            len(failed_chunks),
+            len(chunks),
+            sample,
+        )
+        raise EmbeddingIndexingError(
+            f"{operation_name} aborted due to embedding failures "
+            f"(failed={len(failed_chunks)}, total={len(chunks)})."
+        )
+
     embedded: list[IndexedChunk] = []
     for chunk, embedding in zip(chunks, embeddings, strict=True):
         embedded.append(
@@ -216,9 +393,6 @@ def build_markdown_index(
     settings = get_vector_store_settings(config)
     project_root = Path.cwd()
     files = _iter_markdown_files(docs_dir, selected_cities=selected_cities)
-    store = ChromaStore(settings.persist_path, settings.collection_name)
-    if not dry_run:
-        store.reset_collection()
 
     manifest = {"files": {}}
     mark_manifest_updated(
@@ -254,10 +428,27 @@ def build_markdown_index(
         chunks_dump_path.parent.mkdir(parents=True, exist_ok=True)
         chunks_dump_path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
 
+    embedded_chunks: list[IndexedChunk] = []
     if all_chunks and not dry_run:
-        provider = OpenAIEmbeddingProvider(settings.embedding_model, config.openrouter_base_url)
-        store.upsert(_embed_chunks(all_chunks, provider))
+        provider = OpenAIEmbeddingProvider(
+            model=settings.embedding_model,
+            base_url=config.openrouter_base_url,
+            batch_size=settings.embedding_batch_size,
+            max_retries=settings.embedding_max_retries,
+            retry_base_seconds=settings.embedding_retry_base_seconds,
+            retry_max_seconds=settings.embedding_retry_max_seconds,
+            max_input_tokens=settings.embedding_max_input_tokens,
+        )
+        embedded_chunks = _embed_chunks(
+            all_chunks,
+            provider,
+            operation_name="Index build",
+        )
     if not dry_run:
+        store = ChromaStore(settings.persist_path, settings.collection_name)
+        store.reset_collection()
+        if embedded_chunks:
+            store.upsert(embedded_chunks)
         save_manifest(settings.manifest_path, manifest)
 
     min_tokens, avg_tokens, max_tokens = _collect_token_stats(all_chunks)
@@ -296,7 +487,6 @@ def update_markdown_index(
     )
     files_section: dict[str, dict] = manifest.setdefault("files", {})
 
-    store = ChromaStore(settings.persist_path, settings.collection_name)
     current_files = _iter_markdown_files(docs_dir, selected_cities=selected_cities)
     current_source_map = {_source_path(path, project_root): path for path in current_files}
 
@@ -304,6 +494,8 @@ def update_markdown_index(
     files_changed = 0
     files_unchanged = 0
     files_deleted = 0
+    changed_entries: dict[str, tuple[str, list[str]]] = {}
+    previous_ids_by_source: dict[str, list[str]] = {}
 
     for source_path, file_path in current_source_map.items():
         content = file_path.read_text(encoding="utf-8")
@@ -316,16 +508,11 @@ def update_markdown_index(
         previous_chunk_ids = (
             previous.get("chunk_ids", []) if isinstance(previous, dict) else []
         )
-        if previous_chunk_ids and not dry_run:
-            store.delete([str(chunk_id) for chunk_id in previous_chunk_ids])
 
         file_hash, chunks = _build_indexed_chunks_for_file(file_path, settings, project_root)
-        _apply_manifest_file_entry(
-            manifest=manifest,
-            source_path=source_path,
-            file_hash=file_hash,
-            chunk_ids=[chunk.chunk_id for chunk in chunks],
-        )
+        chunk_ids = [chunk.chunk_id for chunk in chunks]
+        changed_entries[source_path] = (file_hash, chunk_ids)
+        previous_ids_by_source[source_path] = [str(chunk_id) for chunk_id in previous_chunk_ids]
         changed_chunks.extend(chunks)
         files_changed += 1
 
@@ -342,17 +529,52 @@ def update_markdown_index(
         removed_sources = sorted(manifest_sources_in_scope - current_source_keys)
     else:
         removed_sources = sorted(set(files_section.keys()) - current_source_keys)
-    for source_path in removed_sources:
-        chunk_ids = files_section[source_path].get("chunk_ids", [])
-        if chunk_ids and not dry_run:
-            store.delete([str(chunk_id) for chunk_id in chunk_ids])
-        files_section.pop(source_path, None)
-        files_deleted += 1
+    removed_ids_by_source: dict[str, list[str]] = {
+        source_path: [
+            str(chunk_id)
+            for chunk_id in files_section[source_path].get("chunk_ids", [])
+        ]
+        for source_path in removed_sources
+    }
+    files_deleted = len(removed_sources)
 
+    embedded_changed_chunks: list[IndexedChunk] = []
     if changed_chunks and not dry_run:
-        provider = OpenAIEmbeddingProvider(settings.embedding_model, config.openrouter_base_url)
-        store.upsert(_embed_chunks(changed_chunks, provider))
+        provider = OpenAIEmbeddingProvider(
+            model=settings.embedding_model,
+            base_url=config.openrouter_base_url,
+            batch_size=settings.embedding_batch_size,
+            max_retries=settings.embedding_max_retries,
+            retry_base_seconds=settings.embedding_retry_base_seconds,
+            retry_max_seconds=settings.embedding_retry_max_seconds,
+            max_input_tokens=settings.embedding_max_input_tokens,
+        )
+        embedded_changed_chunks = _embed_chunks(
+            changed_chunks,
+            provider,
+            operation_name="Index update",
+        )
     if not dry_run:
+        store = ChromaStore(settings.persist_path, settings.collection_name)
+        if embedded_changed_chunks:
+            store.upsert(embedded_changed_chunks)
+        for source_path, chunk_ids in previous_ids_by_source.items():
+            file_hash, new_chunk_ids = changed_entries[source_path]
+            new_chunk_id_set = set(new_chunk_ids)
+            stale_chunk_ids = [
+                chunk_id for chunk_id in chunk_ids if chunk_id not in new_chunk_id_set
+            ]
+            if stale_chunk_ids:
+                store.delete(stale_chunk_ids)
+            files_section[source_path] = {
+                "file_hash": file_hash,
+                "chunk_ids": new_chunk_ids,
+            }
+        for source_path in removed_sources:
+            chunk_ids = removed_ids_by_source[source_path]
+            if chunk_ids:
+                store.delete(chunk_ids)
+            files_section.pop(source_path, None)
         save_manifest(settings.manifest_path, manifest)
 
     min_tokens, avg_tokens, max_tokens = _collect_token_stats(changed_chunks)

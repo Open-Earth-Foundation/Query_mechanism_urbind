@@ -509,11 +509,21 @@ def test_run_pipeline_end_to_end_propagates_query_markdown_and_writer_output(
     artifact_excerpt = markdown_artifact["excerpts"][0]
     assert "quote" in artifact_excerpt
     assert "partial_answer" in artifact_excerpt
+    assert "ref_id" in artifact_excerpt
+    assert artifact_excerpt["ref_id"] == "ref_1"
     assert "snippet" not in artifact_excerpt
+
+    references_payload = json.loads(paths.markdown_references.read_text(encoding="utf-8"))
+    assert references_payload["run_id"] == paths.base_dir.name
+    assert references_payload["reference_count"] == 1
+    assert references_payload["references"][0]["ref_id"] == "ref_1"
+    assert references_payload["references"][0]["excerpt_index"] == 0
+    assert references_payload["references"][0]["quote"] == expected_quote
 
     run_log = json.loads(paths.run_log.read_text(encoding="utf-8"))
     assert run_log["inputs"]["markdown_chunk_count"] == 1
     assert run_log["inputs"]["markdown_excerpt_count"] == 1
+    assert "markdown_references" in run_log["artifacts"]
 
     run_summary = paths.run_summary.read_text(encoding="utf-8")
     assert "Markdown chunk count: 1" in run_summary
