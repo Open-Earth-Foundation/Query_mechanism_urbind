@@ -438,12 +438,12 @@ The primary data source for this analysis was Komunala Kranj d.o.o., the company
 
 For the specified year, energy consumption in the waste sector of Kranj was as follows: diesel consumption was 1.785 MWh, and the indirect energy consumed from electrical energy was 1.085 MWh. Considerable emissions in the form of methane are being released from closed Tenetiše landfill. This data is under the consistent surveillance of the National Laboratory of Health, Environment and Food, ensuring its accuracy and yearly revision.
 
-&gt; **WASTE SECTOR**
-&gt; **BASE YEAR 2018**
-&gt; **TOTAL CO₂ EMISSIONS:**
-&gt; 26.754 t CO₂
-&gt; **TOTAL ENERGY USE:**
-&gt; 2.870 MWh/year
+> **WASTE SECTOR**
+> **BASE YEAR 2018**
+> **TOTAL CO₂ EMISSIONS:**
+> 26.754 t CO₂
+> **TOTAL ENERGY USE:**
+> 2.870 MWh/year
 
 In conclusion, while waste management in Kranj is commendably efficient, its environmental impact indicates areas for further improvement. The adoption of more sustainable energy sources and advanced waste management techniques could significantly reduce the sector's GHG emissions.
 
