@@ -33,7 +33,7 @@ Content quality requirements:
 
 - Decision text based on excerpt coverage:
   - If `excerpt_count == 0`, do not attempt to answer the question. Clearly state that no relevant evidence was found in the provided sources and that you cannot provide a grounded answer.
-  - If `excerpt_count > 0`, include a short line before the answer body stating that the answer is grounded in those excerpts from the listed cities.
+  - If `excerpt_count > 0`, include a short closing line at the very end of the answer body stating that the answer is grounded in those excerpts from the listed cities.
 - Citation rules (critical when `excerpt_count > 0`):
   - Every factual statement must be immediately followed by one or more reference ids, e.g. `... [ref_1]` or `... [ref_1][ref_3]`.
   - Allowed reference ids are only those provided in `context_bundle.markdown.excerpts[].ref_id`.

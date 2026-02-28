@@ -9,7 +9,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 from agents import Agent, function_tool
-from agents.exceptions import MaxTurnsExceeded
+from agents.exceptions import MaxTurnsExceeded, ModelBehaviorError
 from openai import APIConnectionError
 
 from backend.models import ErrorInfo
@@ -114,6 +114,10 @@ def extract_markdown_excerpts(
             return True
         # Treat JSON validation errors as retryable (LLM output may succeed on retry)
         if isinstance(exc, ValueError) and "Invalid JSON" in str(exc):
+            return True
+        # Malformed model output (e.g. XML-style function calls instead of JSON) is
+        # transient and worth retrying.
+        if isinstance(exc, ModelBehaviorError):
             return True
         return False
 

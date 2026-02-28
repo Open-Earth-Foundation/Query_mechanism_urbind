@@ -370,12 +370,14 @@ def _build_system_prompt_header(
 ) -> str:
     """Build stable system prompt prefix."""
     allowed_refs_text = ", ".join(allowed_ref_ids) if allowed_ref_ids else "(none provided)"
-    retry_note = (
-        "Prior response failed citation requirements. Rewrite the full answer and ensure "
-        "every factual claim is immediately followed by one or more valid [ref_n] citations.\n"
-        if retry_missing_citation
-        else ""
-    )
+    if retry_missing_citation:
+        retry_note = (
+            "Prior response failed citation requirements. Rewrite the full answer and ensure "
+            "every factual claim is immediately followed by one or more valid [ref_n] citations.\n"
+        )
+    else:
+        retry_note = ""
+    stripped_original_question = original_question.strip()
     return (
         "You are the Context Analyst for a document-builder workflow.\n"
         "Your job is to answer follow-up questions using only the supplied context sources.\n"
@@ -390,7 +392,7 @@ def _build_system_prompt_header(
         "7. Do not invent references and do not use any citation format other than [ref_n].\n"
         f"Allowed references for this turn: {allowed_refs_text}\n\n"
         f"{retry_note}"
-        f"Original build question:\n{original_question.strip()}"
+        f"Original build question:\n{stripped_original_question}"
     )
 
 

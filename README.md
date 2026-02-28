@@ -664,6 +664,13 @@ python -m backend.scripts.update_markdown_index --docs-dir documents
 
 The update now fails fast on embedding failures and exits non-zero before any delete/upsert/manifest-write commit.
 
+Check manifest and Chroma DB status:
+
+```
+python -m backend.scripts.check_vector_index
+python -m backend.scripts.check_vector_index --no-show-files
+```
+
 **Building the vector index on Kubernetes:** The backend and the one-off build Job share the same PVC mounted once at `/data` (no subPath). Both use the same `securityContext` (runAsUser 0, DAC_READ_SEARCH) so the Job can write `/data/chroma` and the backend can read it. Apply the Job from the repo root (see `k8s/backend-build-vector-index-job.yml` header for full steps):
 
 ```bash
