@@ -17,7 +17,6 @@ Commitments
 ![img-0.jpeg](img-0.jpeg)
 
 - City of The Hague
-  | &lt; CONTENTS
   Climate City Contract - Commitments
 
 # Commitments
@@ -46,7 +45,6 @@ Next Steps 25
 Disclaimer
 
 All pictures used in this document are property of the Municipality of The Hague or under licence of Getty-images.
-&lt; CONTENTS
 
 Climate City Contract - Commitments
 
@@ -71,7 +69,6 @@ The HKA is the result of an intensive participation process that the city enthus
 Arjen Kapteijns, Alderman for Energy Transition, Mobility, and Resources on behalf of the council of mayor and aldermen
 
 Amsterdam, Eindhoven &amp; Helmond, Groningen, Rotterdam, and Utrecht.
-&lt; CONTENTS
 
 Climate City Contract - Commitments
 
@@ -105,7 +102,6 @@ The city has created a Guide to Climate-Proofing The Hague, which is designed fo
 
 NetZeroCities is a European consortium of 16 parties financed by the European Commission to implement the 100CNSC mission. This is financed under Horizon Europe.
 There are 112 participating cities: 100 within the European Union and 12 from associated countries.
-&lt; CONTENTS
 
 Climate City Contract - Commitments
 
@@ -123,7 +119,6 @@ The Hague is also a lively and fast-growing city. The Hague currently has more t
 more than 600.000 by 2030. This makes it the third largest city in the Netherlands and the largest Dutch city by the sea, with eleven kilometres of coastline. Our economy is home to approximately 70.000 companies, including a wide array of local, national, and international start- and scale-ups.
 
 The Hague offers a unique mix of urban life and valuable nature. The city has eleven ecozones and The Hague's dunes are part of the Hollandse Duinen (Dutch Dunes) National Park.
-&lt; CONTENTS
 
 Climate City Contract - Commitments
 
@@ -171,7 +166,6 @@ Along with the ambition of climate neutrality by 2030, The Hague is also committ
 The Netherlands is one of the 196 states that signed the Paris Climate Agreement in 2015. This sets the target of a 49 percent greenhouse gas emission reduction in 2030 compared to 1990. In the Netherlands, this has been translated into the National Climate Agreement and has since be re-established to the aim to reduce emissions by 60 percent in 2030. In 2020, the European Union also re-established its climate goals with the European Climate Law: a climate-neutral EU by 2050 and reducing $\mathrm{CO}_{2}$ emissions by 55 percent by 2030. The Hague is committed to these national and international goals.
 
 The municipality has an important role in tackling inequality in the city, and the transitions required for a future-proof city create opportunities to address this. The City of The Hague is committed to ensuring that subsidies predominantly benefit the people who need them most, so that everyone can participate in the climate transition. And the municipality prioritises making the most urbanised neighbourhoods of The Hague greener, making vulnerable neighbourhoods healthier and more liveable. This ensures that climate neutrality and climate justice go hand in hand. Because every resident of The Hague has the right to a future-proof, safe and healthy place to reside and to work.
-&lt; CONTENTS
 
 Climate City Contract - Commitments
 
@@ -218,7 +212,6 @@ The transition from a linear economy with a continuous demand for finite resourc
 ## Sustainable built environment
 
 Working towards a city that is both sustainable and future-proof. This city is climate-neutral and resistant to the effects of climate change, such as heat stress and flooding, and at the same time accessible, safe, and pleasant to live and stay in. The sustainable city is green and healthy for people, plants, and animals.
-&lt; CONTENTS
 
 Climate City Contract - Commitments
 
@@ -253,7 +246,6 @@ To achieve this strategic priority, The Hague still has a lot of work to do. It 
 reduction this could yield has not yet been properly calculated. However, we do know that the construction sector uses large quantities of materials, that we have a significant housing shortage, and that we are expected to see a steady grow in population, further increasing the need for construction. In 2024, the municipality will formulate clear ambitions for the sustainable use of materials in new construction. This priority will be more clearly defined in the next CCC (2026).
 
 ¹⁰ Strategic priorities as defined in the CCC guidelines 'should be meaningful changes that will have a profound impact on reducing GHG emissions in [our] city'.
-&lt; CONTENTS
 
 Climate City Contract - Commitments
 
@@ -269,7 +261,6 @@ Figure 4: Participants of a climate round table listen to a presentation
 The Hague Climate Agreement (or Haags Klimaatakkoord, in short: HKA) is an important document in the transition to a climate-neutral city. With the HKA, The Hague wants to create momentum and a joint agenda together with companies, organisations, and residents to take concrete steps towards a climate-neutral city in the years to come.
 
 To create the Climate Agreement, the municipality started a participation process with parties in the city in April 2023. This included professional organisations such as housing associations, the regional transport company, the water company, universities and colleges, as well as active resident initiatives, such as energy and car-sharing cooperatives. The international community is also involved and non-profit organisations, embassies and representations have participated in an English-
-&lt; CONTENTS
 
 Climate City Contract - Commitments
 
@@ -297,7 +288,6 @@ With the Spullenbak, The Hague is contributing to the circular economy of the fu
 These are then reused, for example, for floor finishing. Used egg cartons go to an organic farm, old tools are given a makeover and go to schools and craftsmen in developing countries, and wastepaper is used as filling for sleeping bags in the local hedgehog shelter.
 
 The Spullenbak was established in 2022. After a pilot in several neighbourhoods across The Hague, today, everyone in the city can request a Spullenbak for free. When the bin is full, users can make an appointment online to have it collected and exchanged for an empty one. More than a thousand households in The Hague currently have a Spullenbak at home, and dozens of companies, social entrepreneurs, and social institutions are also participating.
-&lt; CONTENTS
 
 Climate City Contract - Commitments
 
@@ -336,7 +326,6 @@ The share of locally generated sustainable energy is increasing rapidly. However
 longer fit into the grid, which hinders the energy transition. A local and smart energy network that applies digital innovations to monitor, predict, and control energy generation and consumption and that has the possibilities for energy storage can help reduce the peak load on the electricity grid.
 
 The municipality currently manages the local network as part of Living Lab Scheveningen and also is its only user. In the next phase, other users such as local businesses can be connected as well. Eventually, a local energy cooperative with grid users will be responsible for the management of the network. This way, we will learn important lessons on how to organise the network of the future together.
-&lt; CONTENTS
 
 Climate City Contract - Commitments
 
