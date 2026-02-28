@@ -20,6 +20,7 @@ import {
   RunReferenceListItem,
   fetchRunReferences,
 } from "@/lib/api";
+import { formatCityLabel } from "@/lib/utils";
 
 interface ReferencePopoverState {
   refId: string;
@@ -215,23 +216,12 @@ function _buildReferenceCacheKey(
   return `${runId ?? "__no_run__"}::${refId ?? "__no_ref__"}`;
 }
 
-function _normalizeCityLabel(value: string): string {
-  const trimmed = value.trim();
-  if (!trimmed) {
-    return "Source";
-  }
-  return trimmed
-    .replace(/[_-]+/g, " ")
-    .replace(/\s+/g, " ")
-    .replace(/\b\w/g, (char) => char.toUpperCase());
-}
-
 function _referenceItemToPointer(
   item: RunReferenceListItem,
   runId: string,
 ): CitationPointer {
   return {
-    cityName: _normalizeCityLabel(item.city_name ?? ""),
+    cityName: formatCityLabel(item.city_name ?? "") || "Source",
     sourceRunId: runId,
     sourceRefId: item.ref_id,
   };
@@ -269,7 +259,7 @@ export function MarkdownWithReferences({
         return;
       }
       mapping[refId] = {
-        cityName: _normalizeCityLabel(citation.city_name ?? ""),
+        cityName: formatCityLabel(citation.city_name ?? "") || "Source",
         sourceRunId: citation.source_run_id?.trim() || runId,
         sourceRefId: citation.source_ref_id?.trim() || refId,
       };
