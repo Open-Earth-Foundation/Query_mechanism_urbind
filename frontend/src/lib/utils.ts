@@ -10,6 +10,9 @@ export function formatCityLabel(value: string): string {
   if (!trimmed) {
     return "";
   }
-  return `${trimmed.charAt(0).toLocaleUpperCase()}${trimmed.slice(1)}`;
+  return trimmed
+    .replace(/[_-]+/g, " ")
+    .replace(/\s+/g, " ")
+    .replace(/\b\w/g, (char) => char.toUpperCase());
 }
 
