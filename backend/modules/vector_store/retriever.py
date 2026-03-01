@@ -7,8 +7,9 @@ from backend.modules.vector_store.chroma_store import ChromaStore
 from backend.modules.vector_store.indexer import OpenAIEmbeddingProvider
 from backend.modules.vector_store.manifest import load_manifest
 from backend.modules.vector_store.models import RetrievedChunk
-from backend.utils.city_normalization import normalize_city_key, normalize_city_keys
+from backend.utils.city_normalization import format_city_stem, normalize_city_key, normalize_city_keys
 from backend.utils.config import AppConfig
+from backend.utils.retry import RetrySettings, call_with_retries
 
 
 def _normalize_queries(queries: list[str]) -> list[str]:
@@ -49,7 +50,7 @@ def _load_manifest_cities(config: AppConfig) -> dict[str, str]:
         )
     city_display_by_key: dict[str, str] = {}
     for source_path in files:
-        display_name = Path(str(source_path)).stem.strip()
+        display_name = format_city_stem(Path(str(source_path)).stem)
         city_key = normalize_city_key(display_name)
         if not city_key:
             continue
@@ -156,16 +157,30 @@ def _retrieve_for_city_query(
     store: ChromaStore,
     query_embedding: list[float],
     city_key: str,
+    query_id: str,
     fallback_min_chunks_per_city_query: int,
     max_chunks_per_city_query: int,
     max_distance: float | None,
+    retry_settings: RetrySettings,
+    run_id: str | None = None,
 ) -> list[dict[str, Any]]:
     """Retrieve rows for one city and one query with distance-first + top-up."""
     candidate_n_results = max(max_chunks_per_city_query, 1)
-    payload = store.query_by_embedding(
-        query_embeddings=[query_embedding],
-        n_results=candidate_n_results,
-        where={"city_key": city_key},
+    payload = call_with_retries(
+        lambda: store.query_by_embedding(
+            query_embeddings=[query_embedding],
+            n_results=candidate_n_results,
+            where={"city_key": city_key},
+        ),
+        operation="vector_retrieval.query_by_embedding",
+        retry_settings=retry_settings,
+        should_retry=lambda _exc: True,
+        run_id=run_id,
+        context={
+            "city_key": city_key,
+            "query_id": query_id,
+            "n_results": candidate_n_results,
+        },
     )
     rows = _extract_query_rows(payload)
     passing = [
@@ -220,6 +235,8 @@ def _expand_neighbors(
     rows_by_id: dict[str, dict[str, Any]],
     context_window_chunks: int,
     table_context_window_chunks: int,
+    retry_settings: RetrySettings,
+    run_id: str | None = None,
 ) -> None:
     """Expand retrieval context by adding neighboring chunks from same file.
 
@@ -257,15 +274,26 @@ def _expand_neighbors(
         if not required_indices:
             continue
 
-        payload = store.get(
-            where={
-                "$and": [
-                    {"city_key": city_key},
-                    {"source_path": source_path},
-                    {"chunk_index": {"$in": sorted(required_indices)}},
-                ]
+        payload = call_with_retries(
+            lambda: store.get(
+                where={
+                    "$and": [
+                        {"city_key": city_key},
+                        {"source_path": source_path},
+                        {"chunk_index": {"$in": sorted(required_indices)}},
+                    ]
+                },
+                limit=max(len(required_indices), 1),
+            ),
+            operation="vector_retrieval.get_neighbors",
+            retry_settings=retry_settings,
+            should_retry=lambda _exc: True,
+            run_id=run_id,
+            context={
+                "city_key": city_key,
+                "source_path": source_path,
+                "required_indices_count": len(required_indices),
             },
-            limit=max(len(required_indices), 1),
         )
         candidates_by_index: dict[int, list[dict[str, Any]]] = {}
         for candidate in _parse_get_rows(payload):
@@ -311,6 +339,7 @@ def retrieve_top_k_chunks(
     config: AppConfig,
     city_filter: list[str] | None,
     k: int,
+    run_id: str | None = None,
 ) -> list[RetrievedChunk]:
     """Compatibility helper that runs one-query city-level retrieval."""
     chunks, _meta = retrieve_chunks_for_queries(
@@ -318,6 +347,7 @@ def retrieve_top_k_chunks(
         config=config,
         docs_dir=config.markdown_dir,
         selected_cities=city_filter,
+        run_id=run_id,
     )
     return chunks[: max(k, 1)]
 
@@ -327,6 +357,7 @@ def retrieve_chunks_for_queries(
     config: AppConfig,
     docs_dir: Path,
     selected_cities: list[str] | None,
+    run_id: str | None = None,
 ) -> tuple[list[RetrievedChunk], dict[str, Any]]:
     """Retrieve chunks across cities and multiple aligned queries."""
     del docs_dir
@@ -347,6 +378,11 @@ def retrieve_chunks_for_queries(
         persist_path=config.vector_store.chroma_persist_path,
         collection_name=config.vector_store.chroma_collection_name,
     )
+    retry_settings = RetrySettings.bounded(
+        max_attempts=config.retry.max_attempts,
+        backoff_base_seconds=config.retry.backoff_base_seconds,
+        backoff_max_seconds=config.retry.backoff_max_seconds,
+    )
     query_embeddings = _embed_queries(normalized_queries, config)
 
     rows_by_id: dict[str, dict[str, Any]] = {}
@@ -361,9 +397,12 @@ def retrieve_chunks_for_queries(
                 store=store,
                 query_embedding=query_embeddings[query_text],
                 city_key=city_key,
+                query_id=query_id,
                 fallback_min_chunks_per_city_query=fallback_min_chunks_per_city_query,
                 max_chunks_per_city_query=max_chunks_per_city_query,
                 max_distance=config.vector_store.retrieval_max_distance,
+                retry_settings=retry_settings,
+                run_id=run_id,
             )
             _merge_rows_best_distance(city_rows, rows, query_id)
             query_stats.append(
@@ -392,6 +431,8 @@ def retrieve_chunks_for_queries(
         rows_by_id=rows_by_id,
         context_window_chunks=max(config.vector_store.context_window_chunks, 0),
         table_context_window_chunks=max(config.vector_store.table_context_window_chunks, 0),
+        retry_settings=retry_settings,
+        run_id=run_id,
     )
 
     chunks = [_to_retrieved_chunk(row) for row in rows_by_id.values()]

@@ -8,6 +8,7 @@ from pathlib import Path
 from typing import Any
 import re
 import logging
+import time
 
 from fastapi import APIRouter, Header, HTTPException, Request, status
 from openai import APIStatusError, APITimeoutError, AuthenticationError
@@ -38,7 +39,14 @@ from backend.api.services import (
     load_final_document,
 )
 from backend.modules.orchestrator.utils.references import is_valid_ref_id
+from backend.utils.city_normalization import format_city_stem
 from backend.utils.config import load_config
+from backend.utils.retry import (
+    RetrySettings,
+    compute_retry_delay_seconds,
+    log_retry_event,
+    log_retry_exhausted,
+)
 from backend.utils.tokenization import count_tokens
 
 router = APIRouter()
@@ -400,7 +408,7 @@ def _build_chat_citation_entries(
             entries.append(
                 _ChatCitationEntry(
                     ref_id=f"ref_{synthetic_index}",
-                    city_name=str(raw_excerpt.get("city_name", "")).strip(),
+                    city_name=format_city_stem(str(raw_excerpt.get("city_name", "")).strip()),
                     quote=quote,
                     partial_answer=partial_answer,
                     source_run_id=context.run_id,
@@ -695,6 +703,7 @@ def send_chat_message(
         "config": config,
         "token_cap": CHAT_PROMPT_TOKEN_CAP,
         "citation_catalog": llm_citation_catalog,
+        "run_id": run_id,
     }
     if api_key_override is not None:
         chat_kwargs["api_key_override"] = api_key_override
@@ -702,27 +711,62 @@ def send_chat_message(
     assistant_citations: list[dict[str, str]] = []
     assistant_citation_warning: str | None = None
     try:
-        assistant_text = generate_context_chat_reply(**chat_kwargs)
-        assistant_citations, has_valid_citations = _resolve_assistant_citations(
-            assistant_text,
-            citation_entries_by_ref_id,
+        retry_settings = RetrySettings.bounded(
+            max_attempts=config.retry.max_attempts,
+            backoff_base_seconds=config.retry.backoff_base_seconds,
+            backoff_max_seconds=config.retry.backoff_max_seconds,
         )
-        if citation_entries and not has_valid_citations:
-            retry_kwargs = {**chat_kwargs, "retry_missing_citation": True}
-            assistant_text = generate_context_chat_reply(**retry_kwargs)
+        max_attempts = retry_settings.max_attempts
+        assistant_text = ""
+        has_valid_citations = not citation_entries
+        for attempt in range(1, max_attempts + 1):
+            attempt_kwargs = dict(chat_kwargs)
+            if attempt > 1:
+                attempt_kwargs["retry_missing_citation"] = True
+            assistant_text = generate_context_chat_reply(**attempt_kwargs)
             assistant_citations, has_valid_citations = _resolve_assistant_citations(
                 assistant_text,
                 citation_entries_by_ref_id,
             )
-            if not has_valid_citations:
-                assistant_citation_warning = (
+            if has_valid_citations:
+                break
+            if attempt < max_attempts:
+                delay_seconds = compute_retry_delay_seconds(attempt, retry_settings)
+                log_retry_event(
+                    operation="chat.citation_coverage",
+                    run_id=run_id,
+                    attempt=attempt,
+                    max_attempts=max_attempts,
+                    error_type="MissingCitationCoverage",
+                    error_message=(
+                        "Assistant response is missing valid [ref_n] citations."
+                    ),
+                    next_backoff_seconds=delay_seconds,
+                    context={"conversation_id": conversation_id},
+                )
+                if delay_seconds > 0:
+                    time.sleep(delay_seconds)
+                continue
+            log_retry_exhausted(
+                operation="chat.citation_coverage",
+                run_id=run_id,
+                attempt=attempt,
+                max_attempts=max_attempts,
+                error_type="MissingCitationCoverage",
+                error_message=(
                     "Assistant response is missing valid [ref_n] citations."
-                )
-                logger.warning(
-                    "Context chat response missing valid [ref_n] citations after retry run_id=%s conversation_id=%s",
-                    run_id,
-                    conversation_id,
-                )
+                ),
+                context={"conversation_id": conversation_id},
+            )
+            assistant_citation_warning = (
+                "Assistant response is missing valid [ref_n] citations."
+            )
+            logger.warning(
+                "Context chat response missing valid [ref_n] citations run_id=%s conversation_id=%s attempts=%d",
+                run_id,
+                conversation_id,
+                max_attempts,
+            )
     except APITimeoutError as exc:
         raise HTTPException(
             status_code=status.HTTP_504_GATEWAY_TIMEOUT,

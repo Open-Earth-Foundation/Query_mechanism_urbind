@@ -8,12 +8,15 @@ import re
 import shutil
 from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass
+from datetime import datetime, timezone
 from pathlib import Path
+from typing import Literal
 
 from backend.api.models import RunError, RunStatus
 from backend.api.services.city_catalog import build_city_subset
 from backend.api.services.run_store import RunRecord, RunStore, TERMINAL_STATUSES
 from backend.modules.orchestrator.module import run_pipeline
+from backend.services.error_log_artifact import write_error_log_artifact
 from backend.utils.city_normalization import normalize_city_keys
 from backend.utils.config import load_config
 from backend.utils.paths import RunPaths
@@ -32,6 +35,7 @@ class StartRunCommand:
     markdown_path: str | None = None
     log_llm_payload: bool = False
     api_key: str | None = None
+    analysis_mode: Literal["aggregate", "city_by_city"] = "aggregate"
 
 
 class RunExecutor:
@@ -54,16 +58,18 @@ class RunExecutor:
             markdown_path=command.markdown_path,
             log_llm_payload=command.log_llm_payload,
             api_key=command.api_key,
+            analysis_mode=command.analysis_mode,
         )
         record = self._run_store.create_queued_run(
             question=resolved_command.question, requested_run_id=resolved_command.requested_run_id
         )
         logger.info(
-            "Run accepted run_id=%s cities=%s config_path=%s markdown_path=%s log_llm_payload=%s api_key_override=%s",
+            "Run accepted run_id=%s cities=%s config_path=%s markdown_path=%s analysis_mode=%s log_llm_payload=%s api_key_override=%s",
             record.run_id,
             len(resolved_command.cities) if resolved_command.cities else "all",
             resolved_command.config_path,
             resolved_command.markdown_path,
+            resolved_command.analysis_mode,
             resolved_command.log_llm_payload,
             resolved_command.api_key is not None,
         )
@@ -131,6 +137,7 @@ class RunExecutor:
             }
             if command.api_key is not None:
                 pipeline_kwargs["api_key_override"] = command.api_key
+            pipeline_kwargs["analysis_mode"] = command.analysis_mode
             run_paths = run_pipeline(**pipeline_kwargs)
             logger.info(
                 "Run pipeline finished run_id=%s run_log=%s",
@@ -161,11 +168,19 @@ class RunExecutor:
             if _looks_like_api_key_error(normalized_message):
                 error_code = "API_KEY_ERROR"
                 finish_reason = "api_key_error"
+            run_log_path = _persist_executor_failure_artifacts(
+                runs_dir=self._run_store.runs_dir,
+                run_id=run_id,
+                error_code=error_code,
+                error_message=normalized_message,
+                finish_reason=finish_reason,
+            )
             self._run_store.mark_terminal(
                 run_id=run_id,
                 status="failed",
                 finish_reason=finish_reason,
                 error=RunError(code=error_code, message=normalized_message),
+                run_log_path=run_log_path,
             )
 
 
@@ -289,6 +304,58 @@ def _prepare_selected_markdown_dir(runs_dir: Path, run_id: str) -> Path:
         shutil.rmtree(subset_dir, ignore_errors=True)
     subset_dir.mkdir(parents=True, exist_ok=True)
     return subset_dir
+
+
+def _persist_executor_failure_artifacts(
+    runs_dir: Path,
+    run_id: str,
+    *,
+    error_code: str,
+    error_message: str,
+    finish_reason: str,
+) -> Path | None:
+    """Backfill failure metadata when pipeline exits before run finalization."""
+    run_dir = runs_dir / run_id
+    run_log_path = run_dir / "run.json"
+    if not run_dir.exists():
+        return None
+
+    error_log_path = write_error_log_artifact(
+        run_dir / "run.log", run_dir / "error_log.txt"
+    )
+    run_payload = _read_run_log_payload(run_log_path)
+    if run_payload is None:
+        run_payload = {
+            "run_id": run_id,
+            "status": "started",
+            "started_at": datetime.now(timezone.utc).isoformat(),
+            "completed_at": None,
+            "decisions": [],
+            "artifacts": {},
+        }
+
+    run_payload["status"] = "failed"
+    run_payload["completed_at"] = datetime.now(timezone.utc).isoformat()
+    run_payload["finish_reason"] = finish_reason
+    run_payload["error"] = {"code": error_code, "message": error_message}
+
+    artifacts = run_payload.get("artifacts")
+    if not isinstance(artifacts, dict):
+        artifacts = {}
+    if error_log_path is not None:
+        artifacts["error_log"] = str(error_log_path)
+    run_payload["artifacts"] = artifacts
+
+    try:
+        run_log_path.parent.mkdir(parents=True, exist_ok=True)
+        run_log_path.write_text(
+            json.dumps(run_payload, indent=2, ensure_ascii=False, default=str),
+            encoding="utf-8",
+        )
+    except OSError:
+        logger.exception("Failed to persist fallback run.json for run_id=%s", run_id)
+        return None
+    return run_log_path
 
 
 __all__ = ["RunExecutor", "StartRunCommand"]

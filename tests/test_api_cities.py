@@ -112,3 +112,52 @@ def test_city_groups_endpoint_returns_empty_when_file_missing(tmp_path: Path) ->
         assert payload["total"] == 0
         assert payload["groups"] == []
         assert payload["groups_path"] == str(missing_groups)
+
+
+def test_default_city_groups_catalog_exposes_all_12_regional_groups(tmp_path: Path) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+
+    seed_cities = [
+        "Aachen",
+        "Amsterdam",
+        "Dublin",
+        "Paris",
+        "Lisbon",
+        "Rome",
+        "Stockholm",
+        "Helsinki",
+        "Riga",
+        "Krakow",
+        "Bratislava",
+        "Athens",
+    ]
+    for city in seed_cities:
+        (markdown_dir / f"{city}.md").write_text(f"# {city}", encoding="utf-8")
+
+    app = create_app(
+        runs_dir=runs_dir,
+        max_workers=1,
+        markdown_dir=markdown_dir,
+    )
+    with TestClient(app) as client:
+        response = client.get("/api/v1/city-groups")
+        assert response.status_code == 200
+        payload = response.json()
+        assert payload["total"] == 12
+        ids = {group["id"] for group in payload["groups"]}
+        assert ids == {
+            "dach-germany",
+            "benelux-lux",
+            "uk-ireland",
+            "france-core",
+            "iberia",
+            "italy-core",
+            "scandinavia",
+            "finland-iceland",
+            "baltics",
+            "poland",
+            "central-europe",
+            "balkans-east-med",
+        }

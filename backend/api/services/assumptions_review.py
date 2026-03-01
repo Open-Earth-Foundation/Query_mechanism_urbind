@@ -325,6 +325,8 @@ def _run_discovery_pass(
         "messages": messages,
     }
     request_kwargs["temperature"] = float(config.assumptions_reviewer.temperature)
+    if config.assumptions_reviewer.reasoning_effort is not None:
+        request_kwargs["reasoning_effort"] = config.assumptions_reviewer.reasoning_effort
     if config.assumptions_reviewer.max_output_tokens is not None:
         request_kwargs["max_tokens"] = config.assumptions_reviewer.max_output_tokens
 

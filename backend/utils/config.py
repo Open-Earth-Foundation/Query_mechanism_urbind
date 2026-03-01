@@ -8,6 +8,10 @@ import yaml
 from dotenv import load_dotenv
 from pydantic import BaseModel, ConfigDict, Field
 
+from backend.utils.retry import DEFAULT_MAX_ATTEMPTS
+
+ReasoningEffort = Literal["none", "minimal", "low", "medium", "high", "xhigh"]
+
 
 class AgentConfig(BaseModel):
     model: str
@@ -16,6 +20,8 @@ class AgentConfig(BaseModel):
     context_window_tokens: Optional[int] = None
     max_input_tokens: Optional[int] = None
     input_token_reserve: int = 2000
+    max_turns: int = 10
+    reasoning_effort: ReasoningEffort | None = None
 
 
 class OrchestratorConfig(AgentConfig):
@@ -29,7 +35,6 @@ class SqlResearcherConfig(AgentConfig):
 
 
 class MarkdownResearcherConfig(AgentConfig):
-    reasoning_effort: Literal["none", "minimal", "low", "medium", "high", "xhigh"] | None = None
     max_files: int = 200
     max_file_bytes: int = 5_000_000
     max_chunk_tokens: Optional[int] = None
@@ -38,9 +43,6 @@ class MarkdownResearcherConfig(AgentConfig):
     batch_max_input_tokens: Optional[int] = None
     batch_overhead_tokens: int = 600
     max_workers: int = 2
-    max_retries: int = 2
-    retry_base_seconds: float = 0.8
-    retry_max_seconds: float = 6.0
     request_backoff_base_seconds: float = 2.0
     request_backoff_max_seconds: float = 10.0
 
@@ -60,9 +62,6 @@ class VectorStoreConfig(BaseModel):
     embedding_model: str = "text-embedding-3-large"
     embedding_max_input_tokens: int | None = 8000
     embedding_batch_size: int = 100
-    embedding_max_retries: int = 3
-    embedding_retry_base_seconds: float = 0.8
-    embedding_retry_max_seconds: float = 8.0
     embedding_chunk_tokens: int = 800
     embedding_chunk_overlap_tokens: int = 80
     table_row_group_max_rows: int = 25
@@ -78,6 +77,14 @@ class VectorStoreConfig(BaseModel):
     )
 
 
+class RetryConfig(BaseModel):
+    """Shared retry policy for LLM and retrieval operations."""
+
+    max_attempts: int = DEFAULT_MAX_ATTEMPTS
+    backoff_base_seconds: float = 0.8
+    backoff_max_seconds: float = 8.0
+
+
 class AppConfig(BaseModel):
     model_config = ConfigDict(arbitrary_types_allowed=True)
 
@@ -89,6 +96,7 @@ class AppConfig(BaseModel):
     assumptions_reviewer: AssumptionsReviewerConfig = Field(
         default_factory=lambda: AssumptionsReviewerConfig(model="openai/gpt-5.2")
     )
+    retry: RetryConfig = Field(default_factory=RetryConfig)
     vector_store: VectorStoreConfig = Field(default_factory=VectorStoreConfig)
     openrouter_base_url: str = "https://openrouter.ai/api/v1"
     runs_dir: Path = Field(default_factory=lambda: Path("output"))
@@ -189,6 +197,7 @@ __all__ = [
     "MarkdownResearcherConfig",
     "ChatConfig",
     "AssumptionsReviewerConfig",
+    "RetryConfig",
     "VectorStoreConfig",
     "AppConfig",
     "load_config",

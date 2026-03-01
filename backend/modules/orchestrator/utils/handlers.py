@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import inspect
 import logging
 from typing import TYPE_CHECKING, Callable
 
@@ -51,12 +52,16 @@ def handle_write_decision(
         Run paths if successful, None to continue iteration
     """
     try:
+        writer_kwargs: dict[str, object] = {"log_llm_payload": log_llm_payload}
+        writer_signature = inspect.signature(writer_func)
+        if "run_id" in writer_signature.parameters:
+            writer_kwargs["run_id"] = paths.base_dir.name
         writer_output = writer_func(
             question,
             context_bundle,
             config,
             api_key,
-            log_llm_payload=log_llm_payload,
+            **writer_kwargs,
         )
         write_final_output(
             question,

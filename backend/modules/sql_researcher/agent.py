@@ -17,10 +17,16 @@ def build_sql_agent(config: AppConfig, api_key: str) -> Agent:
     """Build the SQL researcher agent."""
     prompt_path = Path(__file__).resolve().parents[2] / "prompts" / "sql_researcher_system.md"
     instructions = load_prompt(prompt_path)
-    model = build_openrouter_model(config.sql_researcher.model, api_key, config.openrouter_base_url)
+    model = build_openrouter_model(
+        config.sql_researcher.model,
+        api_key,
+        config.openrouter_base_url,
+        client_max_retries=max(config.retry.max_attempts - 1, 0),
+    )
     settings = build_model_settings(
         config.sql_researcher.temperature,
         config.sql_researcher.max_output_tokens,
+        reasoning_effort=config.sql_researcher.reasoning_effort,
     )
 
     @function_tool
@@ -76,6 +82,7 @@ def plan_sql_queries(
     result = run_agent_sync(
         agent,
         json.dumps(payload, ensure_ascii=False),
+        max_turns=config.retry.max_attempts,
         log_llm_payload=log_llm_payload,
     )
     output = result.final_output
@@ -92,6 +99,7 @@ def plan_sql_queries(
         retry_result = run_agent_sync(
             agent,
             json.dumps(retry_payload, ensure_ascii=False),
+            max_turns=config.retry.max_attempts,
             log_llm_payload=log_llm_payload,
         )
         retry_output = retry_result.final_output

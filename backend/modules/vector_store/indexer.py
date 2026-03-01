@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import logging
 import os
-import time
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
@@ -23,8 +22,9 @@ from backend.modules.vector_store.manifest import (
 )
 from backend.modules.vector_store.markdown_blocks import parse_markdown_blocks
 from backend.modules.vector_store.models import EmbeddingProvider, IndexedChunk
-from backend.utils.city_normalization import normalize_city_key
+from backend.utils.city_normalization import format_city_stem, normalize_city_key
 from backend.utils.config import AppConfig, load_config
+from backend.utils.retry import RetrySettings, call_with_retries
 from backend.utils.tokenization import chunk_text, count_tokens
 
 logger = logging.getLogger(__name__)
@@ -144,30 +144,18 @@ class OpenAIEmbeddingProvider(EmbeddingProvider):
 
     def _embed_batch_with_retries(self, texts: list[str]) -> list[list[float]]:
         """Retry one batch with exponential backoff for transient provider failures."""
-        last_error: Exception | None = None
-        attempts = self._max_retries + 1
-        for attempt in range(1, attempts + 1):
-            try:
-                return self._embed_batch_once(texts)
-            except Exception as exc:
-                last_error = exc
-                if attempt >= attempts:
-                    break
-                sleep_seconds = min(
-                    self._retry_base_seconds * (2 ** (attempt - 1)),
-                    self._retry_max_seconds,
-                )
-                logger.warning(
-                    "Embedding request failed for batch_size=%d (attempt %d/%d): %s",
-                    len(texts),
-                    attempt,
-                    attempts,
-                    exc,
-                )
-                if sleep_seconds > 0:
-                    time.sleep(sleep_seconds)
-        assert last_error is not None
-        raise last_error
+        retry_settings = RetrySettings.bounded(
+            max_attempts=self._max_retries + 1,
+            backoff_base_seconds=self._retry_base_seconds,
+            backoff_max_seconds=self._retry_max_seconds,
+        )
+        return call_with_retries(
+            lambda: self._embed_batch_once(texts),
+            operation="vector_embedding.batch",
+            retry_settings=retry_settings,
+            should_retry=lambda _exc: True,
+            context={"batch_size": len(texts)},
+        )
 
     def _embed_batch_one_by_one(self, texts: list[str]) -> list[list[float] | None]:
         """Fallback path: embed texts individually to isolate bad batch payloads.
@@ -253,7 +241,7 @@ def _build_indexed_chunks_for_file(
         table_row_group_max_rows=settings.table_row_group_max_rows,
     )
     source_path = _source_path(file_path, project_root)
-    city_name = file_path.stem.strip()
+    city_name = format_city_stem(file_path.stem)
     city_key = normalize_city_key(city_name)
     timestamp = _now_iso()
     indexed: list[IndexedChunk] = []

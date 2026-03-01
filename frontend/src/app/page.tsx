@@ -53,6 +53,7 @@ const TERMINAL_STATUSES: RunStatus[] = [
 ];
 
 type CityScopeMode = "all" | "group" | "manual";
+type AnalysisMode = "aggregate" | "city_by_city";
 const USER_API_KEY_STORAGE_KEY = "openrouter_user_api_key";
 const LAST_RUN_ID_STORAGE_KEY = "last_run_id";
 const CONTROLS_COLLAPSED_STORAGE_KEY = "build_controls_collapsed";
@@ -60,6 +61,7 @@ const CONTROLS_COLLAPSED_STORAGE_KEY = "build_controls_collapsed";
 export default function Home() {
   const [question, setQuestion] = useState("");
   const [scopeMode, setScopeMode] = useState<CityScopeMode>("all");
+  const [analysisMode, setAnalysisMode] = useState<AnalysisMode>("aggregate");
   const [cityFilter, setCityFilter] = useState("");
   const [cities, setCities] = useState<string[]>([]);
   const [selectedCities, setSelectedCities] = useState<string[]>([]);
@@ -315,13 +317,16 @@ export default function Home() {
       return;
     }
     let cancelled = false;
+    let nextPollHandle: ReturnType<typeof setTimeout> | null = null;
+    let activeController: AbortController | null = null;
     setIsPolling(true);
 
-    const timer = setInterval(() => {
+    const pollOnce = (): void => {
       if (cancelled) {
         return;
       }
-      fetchRunStatus(runId)
+      activeController = new AbortController();
+      fetchRunStatus(runId, { signal: activeController.signal })
         .then((payload) => {
           if (cancelled) {
             return;
@@ -332,13 +337,30 @@ export default function Home() {
           if (cancelled) {
             return;
           }
+          if (error instanceof DOMException && error.name === "AbortError") {
+            return;
+          }
           setRunError(error instanceof Error ? error.message : "Status polling failed.");
+        })
+        .finally(() => {
+          activeController = null;
+          if (cancelled) {
+            return;
+          }
+          nextPollHandle = setTimeout(() => {
+            pollOnce();
+          }, 2500);
         });
-    }, 2500);
+    };
+
+    pollOnce();
 
     return () => {
       cancelled = true;
-      clearInterval(timer);
+      if (nextPollHandle) {
+        clearTimeout(nextPollHandle);
+      }
+      activeController?.abort();
       setIsPolling(false);
     };
   }, [runId, statusValue]);
@@ -464,6 +486,7 @@ export default function Home() {
       const payload = await startRun({
         question: trimmed,
         cities: scopeMode === "all" ? undefined : scopedCities,
+        analysis_mode: analysisMode,
       });
       setRunResponse(payload);
       setSelectedExistingRunId(payload.run_id);
@@ -777,13 +800,45 @@ export default function Home() {
                 ) : null}
               </div>
 
+              <div className="space-y-3 rounded-md border border-slate-200 p-3">
+                <div className="flex items-center justify-between">
+                  <Label>Answer mode</Label>
+                  <Badge variant="secondary">
+                    {analysisMode === "aggregate" ? "Aggregate Mode" : "City-by-City Mode"}
+                  </Badge>
+                </div>
+                <div className="grid grid-cols-2 gap-2">
+                  <Button
+                    type="button"
+                    variant={analysisMode === "aggregate" ? "default" : "outline"}
+                    onClick={() => setAnalysisMode("aggregate")}
+                    className="w-full"
+                  >
+                    Aggregate Mode
+                  </Button>
+                  <Button
+                    type="button"
+                    variant={analysisMode === "city_by_city" ? "default" : "outline"}
+                    onClick={() => setAnalysisMode("city_by_city")}
+                    className="w-full"
+                  >
+                    City-by-City Mode
+                  </Button>
+                </div>
+                <p className="text-xs text-slate-600">
+                  {analysisMode === "aggregate"
+                    ? "One integrated answer across selected cities."
+                    : "One city section at a time; similarities at the end."}
+                </p>
+              </div>
+
               <Button
                 onClick={handleBuildDocument}
                 disabled={isSubmitting || !question.trim() || !hasValidScope}
                 className="w-full"
               >
                 {isSubmitting ? <Loader2 className="h-4 w-4 animate-spin" /> : <Sparkles className="h-4 w-4" />}
-                Start Document Build
+                Generate Report
               </Button>
 
               <Separator />

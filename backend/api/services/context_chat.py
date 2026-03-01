@@ -10,8 +10,10 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
-from openai import OpenAI
+from openai import APIConnectionError, APIStatusError, APITimeoutError, OpenAI
 
+from backend.tools.calculator import sum_numbers
+from backend.utils.retry import RetrySettings, call_with_retries
 from backend.utils.config import AppConfig, get_openrouter_api_key
 from backend.utils.tokenization import count_tokens, get_encoding
 
@@ -28,6 +30,7 @@ CHAT_CONTEXT_CHUNK_TARGET_TOKENS = 1_200
 CHAT_CONTEXT_CHUNK_OVERLAP_TOKENS = 200
 CHAT_CONTEXT_MAX_CHUNKS_PER_SOURCE = 24
 CHAT_CONTEXT_BASE_CHUNKS_PER_RUN = 2
+CHAT_CALCULATOR_TOOL_NAME = "sum_numbers"
 CHAT_REF_ID_PATTERN = re.compile(r"^ref_[1-9]\d*$")
 CHAT_TERM_PATTERN = re.compile(r"[A-Za-z0-9_]{3,}")
 CHAT_STOPWORDS = frozenset(
@@ -135,6 +138,28 @@ def _resolve_chat_provider_timeout_seconds() -> float:
 
 CHAT_PROVIDER_TIMEOUT_SECONDS = _resolve_chat_provider_timeout_seconds()
 
+CHAT_TOOL_DEFINITIONS: list[dict[str, object]] = [
+    {
+        "type": "function",
+        "function": {
+            "name": CHAT_CALCULATOR_TOOL_NAME,
+            "description": "Return arithmetic sum of a list of numbers.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "numbers": {
+                        "type": "array",
+                        "items": {"type": "number"},
+                        "description": "List of integer/float values to sum.",
+                    }
+                },
+                "required": ["numbers"],
+                "additionalProperties": False,
+            },
+        },
+    }
+]
+
 
 @dataclass(frozen=True)
 class ChatContextSource:
@@ -169,6 +194,7 @@ def generate_context_chat_reply(
     api_key_override: str | None = None,
     citation_catalog: list[dict[str, str]] | None = None,
     retry_missing_citation: bool = False,
+    run_id: str | None = None,
 ) -> str:
     """Generate assistant reply grounded in selected run contexts."""
     api_key = (
@@ -256,13 +282,16 @@ def generate_context_chat_reply(
         system_prompt = _truncate_to_tokens(system_prompt, max_system_tokens)
         messages = _build_messages(system_prompt, bounded_history, user_content)
 
-    request_kwargs: dict[str, object] = {
+    base_request_kwargs: dict[str, object] = {
         "model": config.chat.model,
-        "messages": messages,
+        "temperature": float(config.chat.temperature),
+        "tools": CHAT_TOOL_DEFINITIONS,
+        "tool_choice": "auto",
     }
-    request_kwargs["temperature"] = float(config.chat.temperature)
+    if config.chat.reasoning_effort is not None:
+        base_request_kwargs["reasoning_effort"] = config.chat.reasoning_effort
     if config.chat.max_output_tokens is not None:
-        request_kwargs["max_tokens"] = config.chat.max_output_tokens
+        base_request_kwargs["max_tokens"] = config.chat.max_output_tokens
 
     logger.info(
         "Context chat request model=%s contexts=%s excluded=%s estimated_prompt_tokens=%d token_cap=%d",
@@ -272,7 +301,25 @@ def generate_context_chat_reply(
         _estimate_messages_tokens(messages),
         token_cap,
     )
-    response = client.chat.completions.create(**request_kwargs)
+    retry_settings = RetrySettings.bounded(
+        max_attempts=config.retry.max_attempts,
+        backoff_base_seconds=config.retry.backoff_base_seconds,
+        backoff_max_seconds=config.retry.backoff_max_seconds,
+    )
+
+    response = call_with_retries(
+        lambda: _run_chat_completion_with_tools(
+            client=client,
+            messages=messages,
+            request_kwargs=base_request_kwargs,
+            max_tool_rounds=retry_settings.max_attempts,
+        ),
+        operation="chat.completion",
+        retry_settings=retry_settings,
+        should_retry=_is_retryable_chat_error,
+        run_id=run_id,
+        context={"context_count": len(included_context_ids)},
+    )
     if not response.choices:
         raise ValueError("Chat model returned no choices.")
     message = response.choices[0].message
@@ -287,6 +334,122 @@ def generate_context_chat_reply(
     if not cleaned:
         raise ValueError("Chat model returned empty content.")
     return cleaned
+
+
+def _is_retryable_chat_error(exc: Exception) -> bool:
+    """Return True for transient provider failures worth retrying."""
+    if isinstance(exc, (APITimeoutError, APIConnectionError)):
+        return True
+    if isinstance(exc, APIStatusError):
+        return exc.status_code in {408, 409, 425, 429, 500, 502, 503, 504}
+    return False
+
+
+def _normalize_sum_numbers_args(raw_arguments: str | None) -> list[float]:
+    """Parse calculator tool arguments and coerce to float list."""
+    if not raw_arguments:
+        raise ValueError("Tool arguments are empty.")
+    parsed = json.loads(raw_arguments)
+    if not isinstance(parsed, dict):
+        raise ValueError("Tool arguments must be a JSON object.")
+    raw_numbers = parsed.get("numbers")
+    if not isinstance(raw_numbers, list):
+        raise ValueError("Tool arguments must include list field `numbers`.")
+    return [float(value) for value in raw_numbers]
+
+
+def _run_chat_completion_with_tools(
+    *,
+    client: OpenAI,
+    messages: list[dict[str, str]],
+    request_kwargs: dict[str, object],
+    max_tool_rounds: int,
+) -> Any:
+    """Execute chat completion and resolve tool calls in-process."""
+    working_messages: list[dict[str, Any]] = [dict(message) for message in messages]
+    resolved_max_rounds = max(int(max_tool_rounds), 1)
+    for tool_round in range(1, resolved_max_rounds + 1):
+        response = client.chat.completions.create(
+            messages=working_messages,
+            **request_kwargs,
+        )
+        if not response.choices:
+            return response
+        message = response.choices[0].message
+        tool_calls = getattr(message, "tool_calls", None) or []
+        if not tool_calls:
+            return response
+
+        serialized_tool_calls: list[dict[str, Any]] = []
+        for tool_call in tool_calls:
+            function_payload = getattr(tool_call, "function", None)
+            function_name = str(getattr(function_payload, "name", "") or "").strip()
+            function_arguments = str(getattr(function_payload, "arguments", "") or "")
+            serialized_tool_calls.append(
+                {
+                    "id": str(getattr(tool_call, "id", "")),
+                    "type": "function",
+                    "function": {
+                        "name": function_name,
+                        "arguments": function_arguments,
+                    },
+                }
+            )
+
+        working_messages.append(
+            {
+                "role": "assistant",
+                "content": str(message.content or ""),
+                "tool_calls": serialized_tool_calls,
+            }
+        )
+
+        for tool_call in serialized_tool_calls:
+            tool_name = str(tool_call.get("function", {}).get("name", "")).strip()
+            tool_id = str(tool_call.get("id", "")).strip()
+            tool_arguments = str(
+                tool_call.get("function", {}).get("arguments", "")
+            ).strip()
+            if not tool_id:
+                continue
+            logger.info(
+                "CHAT_TOOL_CALL round=%d tool=%s tool_call_id=%s",
+                tool_round,
+                tool_name,
+                tool_id,
+            )
+            tool_result: dict[str, object]
+            if tool_name != CHAT_CALCULATOR_TOOL_NAME:
+                tool_result = {"error": f"Unsupported tool: {tool_name}"}
+                logger.warning(
+                    "CHAT_TOOL_CALL_UNSUPPORTED round=%d tool=%s tool_call_id=%s",
+                    tool_round,
+                    tool_name,
+                    tool_id,
+                )
+            else:
+                try:
+                    numbers = _normalize_sum_numbers_args(tool_arguments)
+                    tool_result = {"result": sum_numbers(numbers, source="context_chat")}
+                except Exception as exc:  # noqa: BLE001
+                    tool_result = {"error": str(exc)}
+                    logger.exception(
+                        "CHAT_TOOL_CALL_ERROR round=%d tool=%s tool_call_id=%s",
+                        tool_round,
+                        tool_name,
+                        tool_id,
+                    )
+            working_messages.append(
+                {
+                    "role": "tool",
+                    "tool_call_id": tool_id,
+                    "name": tool_name,
+                    "content": json.dumps(tool_result, ensure_ascii=False),
+                }
+            )
+    raise ValueError(
+        f"Chat tool-call loop exceeded maximum rounds ({resolved_max_rounds})."
+    )
 
 
 def _normalize_contexts(raw_contexts: list[dict[str, Any]]) -> list[ChatContextSource]:
@@ -460,6 +623,7 @@ def _build_system_prompt_header(
         "6. If a citation evidence catalog is provided, cite factual claims using only [ref_n] tokens present in that catalog.\n"
         "7. Do not invent references and do not use any citation format other than [ref_n].\n"
         "8. If no citation evidence catalog entries are available for this turn, explain that you cannot provide a fully grounded cited answer.\n\n"
+        "9. If arithmetic is needed and a calculator tool is available, use it instead of mental math.\n\n"
         f"{retry_note}"
         f"Original build question:\n{stripped_original_question}"
     )

@@ -7,6 +7,7 @@ from fastapi.testclient import TestClient
 
 from backend.api.main import create_app
 from backend.api.models import AssumptionsPayload, MissingDataItem, RegenerationResult
+from backend.api.services import assumptions_review
 from backend.api.services.assumptions_review import (
     apply_assumptions_and_regenerate,
     discover_missing_data,
@@ -347,6 +348,55 @@ def test_discover_missing_data_runs_two_pass_merge(
     assert payload["verification_summary"]["first_pass_count"] == 1
     assert payload["verification_summary"]["added_in_verification"] == 1
     assert len(payload["items"]) == 2
+
+
+def test_run_discovery_pass_forwards_reasoning_effort(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    config = _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+    config.assumptions_reviewer.reasoning_effort = "high"
+    captured_request: dict[str, object] = {}
+
+    class _StubCompletions:
+        def create(self, **kwargs: object) -> object:
+            captured_request.update(kwargs)
+            return type(
+                "Response",
+                (),
+                {
+                    "choices": [
+                        type(
+                            "Choice",
+                            (),
+                            {"message": type("Message", (), {"content": '{"items": []}'})()},
+                        )()
+                    ]
+                },
+            )()
+
+    class _StubChat:
+        completions = _StubCompletions()
+
+    class _StubOpenAI:
+        def __init__(self, **_kwargs: object) -> None:
+            self.chat = _StubChat()
+
+    monkeypatch.setattr(assumptions_review, "OpenAI", _StubOpenAI)
+    items = assumptions_review._run_discovery_pass(
+        pass_name="extract",
+        question="Question",
+        final_document="# Final",
+        context_bundle={"markdown": {"status": "success"}},
+        existing_items=[],
+        config=config,
+        api_key_override="sk-or-v1-test",
+    )
+
+    assert items == []
+    assert captured_request["model"] == config.assumptions_reviewer.model
+    assert captured_request["reasoning_effort"] == "high"
 
 
 def test_assumptions_payload_requires_items() -> None:

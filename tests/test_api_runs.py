@@ -68,6 +68,39 @@ def _write_success_artifacts(question: str, run_id: str, config: AppConfig) -> R
     return paths
 
 
+def _write_started_artifacts_with_error_log_input(
+    question: str,
+    run_id: str,
+    config: AppConfig,
+) -> RunPaths:
+    paths = create_run_paths(config.runs_dir, run_id, config.orchestrator.context_bundle_name)
+    paths.base_dir.mkdir(parents=True, exist_ok=True)
+    run_log_payload = {
+        "run_id": run_id,
+        "question": question,
+        "status": "started",
+        "started_at": datetime.now(timezone.utc).isoformat(),
+        "completed_at": None,
+        "decisions": [],
+        "artifacts": {},
+    }
+    paths.run_log.write_text(
+        json.dumps(run_log_payload, ensure_ascii=True, indent=2),
+        encoding="utf-8",
+    )
+    (paths.base_dir / "run.log").write_text(
+        "\n".join(
+            [
+                "2026-01-01 00:00:00 worker.py:10 - INFO - setup",
+                "2026-01-01 00:00:01 worker.py:11 - ERROR - writer crashed",
+                "2026-01-01 00:00:02 worker.py:12 - CRITICAL - aborting run",
+            ]
+        ),
+        encoding="utf-8",
+    )
+    return paths
+
+
 def _write_markdown_reference_artifacts(
     paths: RunPaths,
     references_payload: dict[str, object] | None = None,
@@ -117,11 +150,15 @@ def test_api_run_lifecycle_success(tmp_path: Path, monkeypatch: pytest.MonkeyPat
         config: AppConfig,
         run_id: str | None = None,
         log_llm_payload: bool = True,
+        analysis_mode: str = "aggregate",
+        api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
     ) -> RunPaths:
         assert config.enable_sql is False
         assert run_id is not None
         assert isinstance(log_llm_payload, bool)
+        assert analysis_mode == "aggregate"
+        assert api_key_override is None
         assert selected_cities is None
         return _write_success_artifacts(question=question, run_id=run_id, config=config)
 
@@ -407,9 +444,13 @@ def test_api_duplicate_run_id_returns_conflict(
         config: AppConfig,
         run_id: str | None = None,
         log_llm_payload: bool = True,
+        analysis_mode: str = "aggregate",
+        api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
     ) -> RunPaths:
         assert run_id is not None
+        assert analysis_mode == "aggregate"
+        assert api_key_override is None
         assert selected_cities is None
         return _write_success_artifacts(question=question, run_id=run_id, config=config)
 
@@ -487,9 +528,13 @@ def test_api_output_returns_conflict_while_running(
         config: AppConfig,
         run_id: str | None = None,
         log_llm_payload: bool = True,
+        analysis_mode: str = "aggregate",
+        api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
     ) -> RunPaths:
         assert run_id is not None
+        assert analysis_mode == "aggregate"
+        assert api_key_override is None
         assert selected_cities is None
         started.set()
         release.wait(timeout=2)
@@ -528,8 +573,12 @@ def test_api_failed_run(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None
         config: AppConfig,
         run_id: str | None = None,
         log_llm_payload: bool = True,
+        analysis_mode: str = "aggregate",
+        api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
     ) -> RunPaths:
+        assert analysis_mode == "aggregate"
+        assert api_key_override is None
         assert selected_cities is None
         raise RuntimeError("simulated pipeline failure")
 
@@ -557,6 +606,69 @@ def test_api_failed_run(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None
         assert context_response.status_code == 409
 
 
+def test_api_failed_run_writes_error_log_snapshot_for_executor_failures(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+
+    def _stub_load_config(_path: Path | None = None) -> AppConfig:
+        return _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+
+    def _failing_run_pipeline(
+        question: str,
+        config: AppConfig,
+        run_id: str | None = None,
+        log_llm_payload: bool = True,
+        analysis_mode: str = "aggregate",
+        api_key_override: str | None = None,
+        selected_cities: list[str] | None = None,
+    ) -> RunPaths:
+        assert run_id is not None
+        assert analysis_mode == "aggregate"
+        assert api_key_override is None
+        assert selected_cities is None
+        _write_started_artifacts_with_error_log_input(
+            question=question,
+            run_id=run_id,
+            config=config,
+        )
+        raise RuntimeError("simulated pipeline failure")
+
+    monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
+    monkeypatch.setattr(
+        "backend.api.services.run_executor.run_pipeline", _failing_run_pipeline
+    )
+
+    app = create_app(runs_dir=runs_dir, max_workers=1)
+    with TestClient(app) as client:
+        start = client.post(
+            "/api/v1/runs",
+            json={
+                "question": "Failure should still emit error_log",
+                "run_id": "run-failed-with-error-log",
+            },
+        )
+        assert start.status_code == 202
+        terminal = _poll_until_terminal(client, "run-failed-with-error-log")
+        assert terminal["status"] == "failed"
+        assert terminal["error"]["code"] == "RUN_EXECUTION_ERROR"
+
+    run_dir = runs_dir / "run-failed-with-error-log"
+    error_log_path = run_dir / "error_log.txt"
+    assert error_log_path.exists()
+    error_lines = error_log_path.read_text(encoding="utf-8")
+    assert " - ERROR - writer crashed" in error_lines
+    assert " - CRITICAL - aborting run" in error_lines
+
+    run_log_payload = json.loads((run_dir / "run.json").read_text(encoding="utf-8"))
+    assert run_log_payload["status"] == "failed"
+    assert run_log_payload["finish_reason"] == "run_execution_error"
+    assert run_log_payload["error"]["code"] == "RUN_EXECUTION_ERROR"
+    assert run_log_payload["artifacts"]["error_log"] == str(error_log_path)
+
+
 def test_api_run_filters_markdown_by_selected_cities(
     tmp_path: Path, monkeypatch: pytest.MonkeyPatch
 ) -> None:
@@ -575,9 +687,13 @@ def test_api_run_filters_markdown_by_selected_cities(
         config: AppConfig,
         run_id: str | None = None,
         log_llm_payload: bool = True,
+        analysis_mode: str = "aggregate",
+        api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
     ) -> RunPaths:
         assert run_id is not None
+        assert analysis_mode == "aggregate"
+        assert api_key_override is None
         assert selected_cities == ["berlin"]
         captured_files.extend(
             sorted(path.name for path in config.markdown_dir.rglob("*.md"))
@@ -606,6 +722,72 @@ def test_api_run_filters_markdown_by_selected_cities(
         assert listed_ids == ["run-berlin"]
 
     assert captured_files == ["Berlin.md"]
+
+
+def test_api_run_analysis_mode_defaults_and_passes_explicit_value(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    captured_modes: list[str] = []
+
+    def _stub_load_config(_path: Path | None = None) -> AppConfig:
+        return _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+
+    def _stub_run_pipeline(
+        question: str,
+        config: AppConfig,
+        run_id: str | None = None,
+        log_llm_payload: bool = True,
+        analysis_mode: str = "aggregate",
+        api_key_override: str | None = None,
+        selected_cities: list[str] | None = None,
+    ) -> RunPaths:
+        assert run_id is not None
+        assert selected_cities is None
+        assert api_key_override is None
+        captured_modes.append(analysis_mode)
+        return _write_success_artifacts(question=question, run_id=run_id, config=config)
+
+    monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
+    monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        default_start = client.post(
+            "/api/v1/runs",
+            json={"question": "Default mode", "run_id": "run-mode-default"},
+        )
+        assert default_start.status_code == 202
+        _poll_until_terminal(client, "run-mode-default")
+
+        explicit_start = client.post(
+            "/api/v1/runs",
+            json={
+                "question": "City mode",
+                "run_id": "run-mode-city-by-city",
+                "analysis_mode": "city_by_city",
+            },
+        )
+        assert explicit_start.status_code == 202
+        _poll_until_terminal(client, "run-mode-city-by-city")
+
+    assert captured_modes == ["aggregate", "city_by_city"]
+
+
+def test_api_run_rejects_invalid_analysis_mode(tmp_path: Path) -> None:
+    app = create_app(runs_dir=tmp_path / "output", max_workers=1)
+    with TestClient(app) as client:
+        response = client.post(
+            "/api/v1/runs",
+            json={
+                "question": "Invalid mode",
+                "run_id": "run-invalid-mode",
+                "analysis_mode": "invalid_mode",
+            },
+        )
+        assert response.status_code == 422
 
 
 def test_api_list_runs_deduplicates_legacy_alias_records(tmp_path: Path) -> None:
@@ -688,10 +870,12 @@ def test_api_run_supports_header_api_key_override(
         config: AppConfig,
         run_id: str | None = None,
         log_llm_payload: bool = True,
+        analysis_mode: str = "aggregate",
         api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
     ) -> RunPaths:
         assert run_id is not None
+        assert analysis_mode == "aggregate"
         assert selected_cities is None
         captured_api_key["value"] = api_key_override
         return _write_success_artifacts(question=question, run_id=run_id, config=config)
@@ -728,8 +912,12 @@ def test_api_key_error_is_reported_with_sanitized_message(
         config: AppConfig,
         run_id: str | None = None,
         log_llm_payload: bool = True,
+        analysis_mode: str = "aggregate",
+        api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
     ) -> RunPaths:
+        assert analysis_mode == "aggregate"
+        assert api_key_override is None
         assert selected_cities is None
         raise RuntimeError(
             "Incorrect API key provided: sk-or-v1-abcdefghijklmnopqrstuv0123456789"

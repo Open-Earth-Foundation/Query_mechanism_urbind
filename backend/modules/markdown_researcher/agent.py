@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import json
 import logging
-import random
 import threading
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -33,6 +32,12 @@ from backend.services.agents import (
 )
 from backend.utils.config import AppConfig
 from backend.utils.prompts import load_prompt
+from backend.utils.retry import (
+    RetrySettings,
+    compute_retry_delay_seconds,
+    log_retry_event,
+    log_retry_exhausted,
+)
 logger = logging.getLogger(__name__)
 
 
@@ -48,7 +53,7 @@ def build_markdown_agent(config: AppConfig, api_key: str) -> Agent:
         config.markdown_researcher.model,
         api_key,
         config.openrouter_base_url,
-        client_max_retries=0,
+        client_max_retries=max(config.retry.max_attempts - 1, 0),
     )
     settings = build_model_settings(
         config.markdown_researcher.temperature,
@@ -82,6 +87,7 @@ def extract_markdown_excerpts(
     config: AppConfig,
     api_key: str,
     log_llm_payload: bool = False,
+    run_id: str | None = None,
 ) -> MarkdownResearchResult:
     """Extract markdown excerpts relevant to the question with graceful partial-failure handling."""
     _thread_local = threading.local()
@@ -121,11 +127,6 @@ def extract_markdown_excerpts(
             return True
         return False
 
-    def _sleep_backoff(attempt: int, base: float, max_delay: float) -> None:
-        delay = min(max_delay, base * (2**attempt))
-        jitter = random.uniform(0.0, delay * 0.1)
-        time.sleep(delay + jitter)
-
     def _process_city_batch(
         city_name: str,
         batch_index: int,
@@ -152,19 +153,23 @@ def extract_markdown_excerpts(
             "city_name": city_name,
             "chunks": chunks_payload,
         }
-        max_retries = max(config.markdown_researcher.max_retries, 0)
-        retry_base = max(config.markdown_researcher.retry_base_seconds, 0.1)
-        retry_max = max(config.markdown_researcher.retry_max_seconds, retry_base)
+        retry_settings = RetrySettings.bounded(
+            max_attempts=config.retry.max_attempts,
+            backoff_base_seconds=config.retry.backoff_base_seconds,
+            backoff_max_seconds=config.retry.backoff_max_seconds,
+        )
+        max_attempts = retry_settings.max_attempts
         run_result = None
         output: MarkdownResearchResult | None = None
         retryable_bad_output_reason: str | None = None
 
-        for attempt in range(max_retries + 1):
+        for attempt in range(1, max_attempts + 1):
             try:
                 agent = _get_thread_agent()
                 run_result = run_agent_sync(
                     agent,
                     json.dumps(payload, ensure_ascii=False),
+                    max_turns=config.retry.max_attempts,
                     log_llm_payload=log_llm_payload,
                 )
                 # Get the final output - handle all format variations
@@ -177,17 +182,31 @@ def extract_markdown_excerpts(
                     if output.error is None:
                         retryable_bad_output_reason = "status_error_without_error"
 
-                if retryable_bad_output_reason and attempt < max_retries:
-                    logger.warning(
-                        "Markdown %s batch %s returned retryable bad output (%s) (attempt %d/%d); retrying.",
-                        city_name,
-                        batch_index,
-                        retryable_bad_output_reason,
-                        attempt + 1,
-                        max_retries + 1,
+                if retryable_bad_output_reason and attempt < max_attempts:
+                    delay_seconds = compute_retry_delay_seconds(attempt, retry_settings)
+                    log_retry_event(
+                        operation="markdown.batch_extraction",
+                        run_id=run_id,
+                        attempt=attempt,
+                        max_attempts=max_attempts,
+                        error_type="RetryableBadOutput",
+                        error_message=retryable_bad_output_reason,
+                        next_backoff_seconds=delay_seconds,
+                        context={"city_name": city_name, "batch_index": batch_index},
                     )
-                    _sleep_backoff(attempt, retry_base, retry_max)
+                    if delay_seconds > 0:
+                        time.sleep(delay_seconds)
                     continue
+                if retryable_bad_output_reason and attempt >= max_attempts:
+                    log_retry_exhausted(
+                        operation="markdown.batch_extraction",
+                        run_id=run_id,
+                        attempt=attempt,
+                        max_attempts=max_attempts,
+                        error_type="RetryableBadOutput",
+                        error_message=retryable_bad_output_reason,
+                        context={"city_name": city_name, "batch_index": batch_index},
+                    )
                 break
             except MaxTurnsExceeded:
                 logger.warning(
@@ -201,19 +220,31 @@ def extract_markdown_excerpts(
                 )
                 return city_name, batch_index, excerpts, error, success
             except Exception as exc:  # noqa: BLE001
-                if attempt < max_retries and _is_retryable_error(exc):
-                    logger.warning(
-                        "Markdown %s batch %s failed (attempt %d/%d); retrying. error=%s: %s",
-                        city_name,
-                        batch_index,
-                        attempt + 1,
-                        max_retries + 1,
-                        type(exc).__name__,
-                        str(exc),
-                        exc_info=True,
+                if attempt < max_attempts and _is_retryable_error(exc):
+                    delay_seconds = compute_retry_delay_seconds(attempt, retry_settings)
+                    log_retry_event(
+                        operation="markdown.batch_extraction",
+                        run_id=run_id,
+                        attempt=attempt,
+                        max_attempts=max_attempts,
+                        error_type=type(exc).__name__,
+                        error_message=str(exc),
+                        next_backoff_seconds=delay_seconds,
+                        context={"city_name": city_name, "batch_index": batch_index},
                     )
-                    _sleep_backoff(attempt, retry_base, retry_max)
+                    if delay_seconds > 0:
+                        time.sleep(delay_seconds)
                     continue
+                if _is_retryable_error(exc):
+                    log_retry_exhausted(
+                        operation="markdown.batch_extraction",
+                        run_id=run_id,
+                        attempt=attempt,
+                        max_attempts=max_attempts,
+                        error_type=type(exc).__name__,
+                        error_message=str(exc),
+                        context={"city_name": city_name, "batch_index": batch_index},
+                    )
                 logger.exception(
                     "Markdown %s batch %s failed with non-retryable error.",
                     city_name,

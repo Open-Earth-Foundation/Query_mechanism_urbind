@@ -440,12 +440,23 @@ export function ContextChatWorkspace({
                     )}
                   </div>
                 ))}
+                {isSending && pendingPrompt ? (
+                  <div className="ml-8 rounded-lg bg-slate-900 p-3 text-sm text-white">
+                    <p className="mb-1 text-xs font-semibold uppercase tracking-wide opacity-75">
+                      user
+                    </p>
+                    <p className="whitespace-pre-wrap leading-relaxed">{pendingPrompt}</p>
+                  </div>
+                ) : null}
                 {isSending ? (
-                  <div className="mr-8 rounded-lg border border-teal-100 bg-teal-50 p-3 text-sm text-slate-900">
+                  <div className="mr-8 rounded-lg border border-teal-100 bg-teal-50 p-3 text-slate-900">
                     <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-teal-800">
                       assistant
                     </p>
-                    <div className="mb-2 inline-flex items-center gap-2 text-teal-800">
+                    <p className="mb-2 text-base font-semibold text-teal-900">
+                      Processing your question...
+                    </p>
+                    <div className="inline-flex items-center gap-2 text-xs text-teal-800">
                       <span>Thinking</span>
                       <span className="chat-thinking-dots" aria-hidden="true">
                         <span className="chat-thinking-dot" />
@@ -453,11 +464,6 @@ export function ContextChatWorkspace({
                         <span className="chat-thinking-dot" />
                       </span>
                     </div>
-                    {pendingPrompt ? (
-                      <p className="text-xs text-slate-600">
-                        Working on: {pendingPrompt}
-                      </p>
-                    ) : null}
                   </div>
                 ) : null}
               </div>

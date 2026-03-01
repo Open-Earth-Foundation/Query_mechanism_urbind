@@ -2,8 +2,9 @@ from __future__ import annotations
 
 import logging
 import sqlite3
+import inspect
 from pathlib import Path
-from typing import Callable
+from typing import Callable, Literal
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import psycopg
@@ -52,6 +53,7 @@ from backend.services.db_client import DbClient, get_db_client
 from backend.services.run_logger import RunLogger
 from backend.services.schema_registry import load_schema
 from backend.utils.config import AppConfig, get_openrouter_api_key
+from backend.utils.city_normalization import format_city_stem, normalize_city_key
 from backend.utils.paths import RunPaths, build_run_id, create_run_paths
 from backend.utils.tokenization import count_tokens
 
@@ -64,6 +66,8 @@ def run_pipeline(
     run_id: str | None = None,
     log_llm_payload: bool = True,
     selected_cities: list[str] | None = None,
+    analysis_mode: Literal["aggregate", "city_by_city"] = "aggregate",
+    api_key_override: str | None = None,
     sql_plan_func: Callable[..., SqlQueryPlan] = plan_sql_queries,
     markdown_func: Callable[..., MarkdownResearchResult] = extract_markdown_excerpts,
     refine_question_func: Callable[
@@ -82,6 +86,8 @@ def run_pipeline(
         run_id: Optional run identifier
         log_llm_payload: Whether to log full LLM request/response payloads
         selected_cities: Optional list of city names to limit markdown document loading
+        analysis_mode: Writer synthesis mode ("aggregate" | "city_by_city")
+        api_key_override: Optional per-run API key override
         sql_plan_func: SQL planning function (default: plan_sql_queries)
         markdown_func: Markdown extraction function (default: extract_markdown_excerpts)
         refine_question_func: Question refinement function (default: refine_research_question)
@@ -89,13 +95,23 @@ def run_pipeline(
 
     Returns:
         Run paths containing output artifacts
+
+    Raises:
+        Exception: Any unexpected exception from the write phase is re-raised after
+            ``run_logger.finalize("failed")`` and log handler teardown have run, so
+            that ``error_log.txt`` and ``run.json`` are always written on failure.
     """
-    api_key = get_openrouter_api_key()
+    api_key = (
+        api_key_override.strip()
+        if isinstance(api_key_override, str) and api_key_override.strip()
+        else get_openrouter_api_key()
+    )
     run_id_value = run_id or build_run_id()
     paths = create_run_paths(
         config.runs_dir, run_id_value, config.orchestrator.context_bundle_name
     )
     run_logger = RunLogger(paths, question)
+    run_logger.update_analysis_mode(analysis_mode)
     run_logger.record_artifact("context_bundle", paths.context_bundle)
     run_log_handler = attach_run_file_logger(paths.base_dir)
 
@@ -229,11 +245,17 @@ def run_pipeline(
                     selected_cities=selected_cities,
                     dry_run=False,
                 )
+            retrieval_kwargs: dict[str, object] = {
+                "queries": retrieval_queries,
+                "config": config,
+                "docs_dir": config.markdown_dir,
+                "selected_cities": selected_cities,
+            }
+            retriever_signature = inspect.signature(retrieve_chunks_for_queries)
+            if "run_id" in retriever_signature.parameters:
+                retrieval_kwargs["run_id"] = run_id_value
             retrieved_chunks, retrieval_meta = retrieve_chunks_for_queries(
-                queries=retrieval_queries,
-                config=config,
-                docs_dir=config.markdown_dir,
-                selected_cities=selected_cities,
+                **retrieval_kwargs
             )
             markdown_chunks = as_markdown_documents(retrieved_chunks)
             retrieval_payload = {
@@ -273,6 +295,7 @@ def run_pipeline(
             selected_cities_planned=selected_cities,
             markdown_chunks=markdown_chunks,
             markdown_source_mode=markdown_source_mode,
+            analysis_mode=analysis_mode,
         )
         documents_by_city = split_documents_by_city(markdown_chunks)
         batch_max_chunks = int(max(config.markdown_researcher.batch_max_chunks, 1))
@@ -310,12 +333,18 @@ def run_pipeline(
         batches_path = paths.markdown_dir / "batches.json"
         write_json(batches_path, batches_payload)
         run_logger.record_artifact("markdown_batches", batches_path)
+        markdown_kwargs: dict[str, object] = {
+            "log_llm_payload": log_llm_payload,
+        }
+        markdown_signature = inspect.signature(markdown_func)
+        if "run_id" in markdown_signature.parameters:
+            markdown_kwargs["run_id"] = run_id_value
         markdown_result = markdown_func(
             canonical_research_query,
             markdown_chunks,
             config,
             api_key,
-            log_llm_payload=log_llm_payload,
+            **markdown_kwargs,
         )
         return {
             "markdown_chunks": markdown_chunks,
@@ -399,6 +428,7 @@ def run_pipeline(
         markdown_bundle = markdown_result.model_dump()
         source_mode = str(markdown_payload.get("markdown_source_mode", "standard_chunking"))
         markdown_bundle["retrieval_mode"] = source_mode
+        markdown_bundle["analysis_mode"] = analysis_mode
         if source_mode == "vector_store_retrieval":
             markdown_bundle["retrieval_queries"] = markdown_payload.get(
                 "retrieval_queries",
@@ -418,10 +448,25 @@ def run_pipeline(
             key = str(document.get("city_key", "")).strip()
             name = document.get("city_name")
             if key and key not in key_to_name:
-                key_to_name[key] = str(name).strip() if name else key
+                key_to_name[key] = format_city_stem(str(name).strip()) if name else format_city_stem(key)
         markdown_bundle["inspected_city_names"] = [
             key_to_name[k] for k in inspected_cities if k in key_to_name
         ]
+        selected_city_keys = sorted(
+            {
+                normalize_city_key(city)
+                for city in (selected_cities or [])
+                if isinstance(city, str) and city.strip()
+            }
+        )
+        markdown_bundle["selected_cities"] = selected_city_keys
+        if selected_city_keys:
+            markdown_bundle["selected_city_names"] = [
+                key_to_name.get(key, format_city_stem(key))
+                for key in selected_city_keys
+            ]
+        else:
+            markdown_bundle["selected_city_names"] = markdown_bundle["inspected_city_names"]
         excerpts = markdown_bundle.get("excerpts", [])
         if isinstance(excerpts, list):
             excerpt_entries = [
@@ -457,18 +502,25 @@ def run_pipeline(
 
     # Write final output directly from the prepared context bundle.
     context_bundle = run_logger.context_bundle
-    result = handle_write_decision(
-        question,
-        context_bundle,
-        paths=paths,
-        run_logger=run_logger,
-        run_log_handler=run_log_handler,
-        config=config,
-        api_key=api_key,
-        log_llm_payload=log_llm_payload,
-        writer_func=writer_func,
-    )
-    return result if result is not None else paths
+    context_bundle["analysis_mode"] = analysis_mode
+    try:
+        result = handle_write_decision(
+            question,
+            context_bundle,
+            paths=paths,
+            run_logger=run_logger,
+            run_log_handler=run_log_handler,
+            config=config,
+            api_key=api_key,
+            log_llm_payload=log_llm_payload,
+            writer_func=writer_func,
+        )
+        return result if result is not None else paths
+    except Exception:
+        logger.exception("Unexpected error during write decision for run_id=%s", run_id_value)
+        run_logger.finalize("failed", finish_reason="writer_unexpected_error")
+        detach_run_file_logger(run_log_handler)
+        raise
 
 
 __all__ = ["run_pipeline"]

@@ -108,11 +108,12 @@ def create_run(
 ) -> CreateRunResponse:
     """Queue a new asynchronous run."""
     logger.info(
-        "API create_run received run_id=%s cities=%s config_path=%s markdown_path=%s api_key_override=%s",
+        "API create_run received run_id=%s cities=%s config_path=%s markdown_path=%s analysis_mode=%s api_key_override=%s",
         payload.run_id,
         len(payload.cities) if payload.cities else "all",
         payload.config_path,
         payload.markdown_path,
+        payload.analysis_mode,
         x_openrouter_api_key is not None,
     )
     run_executor = _get_run_executor(request)
@@ -127,6 +128,7 @@ def create_run(
                 markdown_path=payload.markdown_path,
                 log_llm_payload=payload.log_llm_payload,
                 api_key=api_key_override,
+                analysis_mode=payload.analysis_mode,
             )
         )
     except DuplicateRunIdError as exc:

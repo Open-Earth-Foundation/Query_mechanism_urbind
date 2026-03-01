@@ -1,12 +1,26 @@
+#TODO make a options in frontend to choose between aggregation and single markdown processing
+#TODO adjust prompts for options in frontend
+#TODO make it more visisble for retries so we can see this is the same attempt and error
+#TODO have an error log extracted from the run.log and saved alongside the run output in otuput
+#TODO while we process a question we cannot see it before it finished it should be at the top
+#TODO the message in chat while we wait for the answer is smaller then thinking it should be the other way around
+#TODO add a calculator tool that an llm can use for writer and the agent answering in the chat
+#TODO get if the llm have included refs for all the cities that were processed in the answer if not show the previous answer the excerpts and the city that it has missed and prompt to reconsider also those
+#TODO add an explicit mention that llm should write at the end the list of cities it considered during the research and answering please
+#TODO adjust the prompts to explicitly mention that the llm should use the calculator tool if it is available and relevant
+#TODO adjust the writer prompt to explicitly consider all of the cities
+
 orchestrator:
   model: "openai/gpt-5.2"
   temperature: 0.0
+  reasoning_effort: "high"
   context_bundle_name: "context_bundle.json"
   context_window_tokens: 400000
   input_token_reserve: 20000
 sql_researcher:
   model: "openai/gpt-5.2"
   temperature: 0.0
+  reasoning_effort: "high"
   context_window_tokens: 400000
   input_token_reserve: 2000
   max_result_tokens: 100000
@@ -35,17 +49,21 @@ markdown_researcher:
 writer:
   model: "openai/gpt-5.2"
   temperature: 0.0
+  reasoning_effort: "high"
   context_window_tokens: 400000
   input_token_reserve: 20000
+  max_turns: 10
 chat:
   model: "openai/gpt-5.2"
   temperature: 0.0
+  reasoning_effort: "high"
   context_window_tokens: 400000
   input_token_reserve: 20000
   max_history_messages: 24
 assumptions_reviewer:
   model: "openai/gpt-5.2"
   temperature: 0.0
+  reasoning_effort: "high"
   max_output_tokens: 8000
 vector_store:
   enabled: true

@@ -35,6 +35,7 @@ The `uv.lock` file is committed to ensure reproducible builds.
 
 - `llm_config.yaml` stores model names and settings.
 - Markdown researcher batching knobs are configured in `llm_config.yaml` under `markdown_researcher` (`batch_max_chunks`, `batch_max_input_tokens`, `batch_overhead_tokens`).
+- Retry policy is centralized in top-level `retry` in `llm_config.yaml` (`max_attempts`, `backoff_base_seconds`, `backoff_max_seconds`) and is shared across LLM calls, agent max-turn limits, chat tool-call loop limits, and vector retrieval operations.
 - Optional `markdown_researcher.reasoning_effort` can be set for Grok reasoning control (for example `"none"`), but this is model/provider-specific and may fail on unsupported models.
 - Copy `.env.example` to `.env` and fill in values for your environment.
 - `.env` is loaded automatically via `python-dotenv` in the scripts.
@@ -165,9 +166,6 @@ markdown_researcher:
   batch_max_input_tokens: null
   batch_overhead_tokens: 600
   max_workers: 2
-  max_retries: 2
-  retry_base_seconds: 0.8
-  retry_max_seconds: 6.0
 writer:
   model: "moonshotai/kimi-k2.5"
   temperature: 0.0
@@ -183,6 +181,10 @@ assumptions_reviewer:
   model: "openai/gpt-5.2"
   temperature: 0.0
   max_output_tokens: 8000
+retry:
+  max_attempts: 5
+  backoff_base_seconds: 0.8
+  backoff_max_seconds: 8.0
 openrouter_base_url: "https://openrouter.ai/api/v1"
 enable_sql: false
 ```
@@ -396,9 +398,14 @@ Core endpoints:
 ```json
 {
   "question": "Build a report for selected cities",
-  "cities": ["Munich", "Berlin"]
+  "cities": ["Munich", "Berlin"],
+  "analysis_mode": "aggregate"
 }
 ```
+
+`analysis_mode` values:
+- `aggregate` (default): one integrated synthesis across selected cities.
+- `city_by_city`: one city section at a time with similarities/comparison at the end.
 
 Optional header for user-owned key (without backend default key):
 
@@ -455,6 +462,7 @@ NEXT_PUBLIC_API_BASE_URL=http://127.0.0.1:8000
 ```
 
 Frontend supports three city scope modes in the build form: all cities, predefined group, and manual selection.
+Frontend also supports two answer modes: `Aggregate Mode` and `City-by-City Mode` (sent as `analysis_mode` in run requests).
 Clicking `Open Context Chat` switches to a dedicated chat workspace (not a chat modal), and `Manage Contexts` opens a popup for multi-context selection.
 Document and chat citations render as compact city labels; clicking a label loads and shows only the source quote.
 Clicking `Assumptions Review` opens a dedicated workspace where:
@@ -527,10 +535,11 @@ python -m backend.scripts.test_db_connection
 
 Artifacts are written under `output/<run_id>/`:
 
-- `run.json`: machine-readable run metadata (status, timestamps, artifacts, decisions).
+- `run.json`: machine-readable run metadata (status, timestamps, artifacts, decisions), including `inputs.analysis_mode` and `artifacts.error_log` when available.
 - `run.log`: detailed runtime logs, including per-agent `LLM_USAGE` lines.
+- `error_log.txt`: extracted error-focused log view from `run.log` (`ERROR`, `CRITICAL`, and exhausted retry events).
 - `run_summary.txt`: human-readable consolidated report. Header includes `Started`, `Completed`, and explicit `Total runtime` in seconds, plus `LLM Usage` totals/per-agent. It also captures an input snapshot (`initial question`, `refined question`, `selected cities` planned/found, markdown dir/file/chunk/excerpt counts) and a `MARKDOWN_FAILURE_SUMMARY` aggregated from batch failures.
-- `context_bundle.json`: payload passed between agents (`sql`, `markdown`, `research_question`, final path).
+- `context_bundle.json`: payload passed between agents (`sql`, `markdown`, `research_question`, `analysis_mode`, final path).
 - `research_question.json`: orchestrator-refined research payload. Includes:
   - `original_question`: raw user question.
   - `canonical_research_query`: canonical refined question.

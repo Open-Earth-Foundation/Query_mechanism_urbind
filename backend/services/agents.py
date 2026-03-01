@@ -20,6 +20,8 @@ from agents.run_context import RunContextWrapper
 from agents.tool import Tool
 from openai import AsyncOpenAI, DefaultAsyncHttpxClient
 
+from backend.utils.retry import DEFAULT_MAX_ATTEMPTS
+
 logger = logging.getLogger(__name__)
 
 ReasoningEffort = Literal["none", "minimal", "low", "medium", "high", "xhigh"]
@@ -212,6 +214,90 @@ def _extract_text_from_output_item(item: Any) -> list[str]:
     return texts
 
 
+def _extract_response_tool_calls(response: Any) -> list[dict[str, str]]:
+    """Collect compact function-call details from one model response."""
+    tool_calls: list[dict[str, str]] = []
+    output_items = _get_field(response, "output")
+    if not isinstance(output_items, list):
+        return tool_calls
+
+    for output_item in output_items:
+        if _get_field(output_item, "type") != "function_call":
+            continue
+        tool_name = str(_get_field(output_item, "name") or "").strip()
+        call_id = str(_get_field(output_item, "call_id") or _get_field(output_item, "id") or "")
+        arguments = str(_get_field(output_item, "arguments") or "")
+        tool_calls.append(
+            {
+                "name": tool_name or "unknown_tool",
+                "call_id": call_id,
+                "arguments_preview": _truncate_text(arguments, max_chars=200),
+            }
+        )
+    return tool_calls
+
+
+def _build_turn_summary(turn_number: int, response: Any) -> dict[str, object]:
+    """Build a compact summary for a single agent turn."""
+    turn: dict[str, object] = {"turn": turn_number}
+    output_items = _get_field(response, "output")
+    if not isinstance(output_items, list):
+        return turn
+
+    output_types = [str(_get_field(item, "type") or "unknown") for item in output_items]
+    turn["output_types"] = output_types
+
+    tool_calls = _extract_response_tool_calls(response)
+    if tool_calls:
+        turn["tool_calls"] = tool_calls
+
+    text_parts: list[str] = []
+    for item in output_items:
+        text_parts.extend(_extract_text_from_output_item(item))
+    if text_parts:
+        turn["text_preview"] = _truncate_text(" ".join(text_parts), max_chars=200)
+
+    return turn
+
+
+def _build_max_turns_diagnostics(
+    exc: MaxTurnsExceeded,
+    *,
+    fallback_agent_name: str,
+    max_turns: int,
+) -> dict[str, object]:
+    """Build structured per-turn diagnostics for MaxTurnsExceeded exceptions."""
+    payload: dict[str, object] = {
+        "agent": fallback_agent_name,
+        "max_turns": max_turns,
+    }
+    run_data = getattr(exc, "run_data", None)
+    if run_data is None:
+        payload["details"] = "run_data_unavailable"
+        return payload
+
+    resolved_agent = getattr(run_data, "last_agent", None)
+    payload["agent"] = str(getattr(resolved_agent, "name", fallback_agent_name))
+
+    raw_responses = list(getattr(run_data, "raw_responses", []) or [])
+    payload["response_count"] = len(raw_responses)
+
+    tool_call_counts: dict[str, int] = {}
+    turns: list[dict[str, object]] = []
+    for i, response in enumerate(raw_responses, start=1):
+        turn_summary = _build_turn_summary(i, response)
+        turns.append(turn_summary)
+        for tool_call in _extract_response_tool_calls(response):
+            name = tool_call["name"]
+            tool_call_counts[name] = tool_call_counts.get(name, 0) + 1
+
+    if tool_call_counts:
+        payload["tool_call_counts"] = tool_call_counts
+    payload["turns"] = turns
+
+    return payload
+
+
 class CompositeRunHooks(RunHooksBase[Any, Agent[Any]]):
     """Fan-out hook calls to multiple RunHooks instances."""
 
@@ -384,7 +470,7 @@ def build_openrouter_model(
 def run_agent_sync(
     agent: Agent,
     input_data: str,
-    max_turns: int = 3,
+    max_turns: int = DEFAULT_MAX_ATTEMPTS,
     log_llm_payload: bool = False,
 ) -> RunResult:
     """Run an agent synchronously with optional max_turns limit.
@@ -392,14 +478,14 @@ def run_agent_sync(
     Args:
         agent: The agent to run
         input_data: The input data as a JSON string
-        max_turns: Maximum number of turns before gracefully stopping (default: 3)
+        max_turns: Maximum number of turns before gracefully stopping
         log_llm_payload: Whether to log full LLM request/response payloads
 
     Returns:
         The agent's final output
 
     Raises:
-        Only re-raises exceptions other than MaxTurnsExceeded
+        MaxTurnsExceeded: The run exceeded the configured turn budget.
     """
     hooks_list: list[RunHooksBase[Any, Agent[Any]]] = [LlmUsageLoggingHooks()]
     if log_llm_payload:
@@ -417,12 +503,16 @@ def run_agent_sync(
             Runner.run(agent, input_data, max_turns=max_turns, hooks=hooks)
         )
     except MaxTurnsExceeded as exc:
+        diagnostics = _build_max_turns_diagnostics(
+            exc,
+            fallback_agent_name=agent.name,
+            max_turns=max_turns,
+        )
+        logger.warning("AGENT_MAX_TURNS_DIAGNOSTICS %s", _dump_payload(diagnostics))
         logger.warning(
             "Agent exceeded max turns (%d). Gracefully stopping with partial results.",
             max_turns,
         )
-        # Return None to signal that the agent hit max turns
-        # The caller should handle this appropriately
         raise
 
 

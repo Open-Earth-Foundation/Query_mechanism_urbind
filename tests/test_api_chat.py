@@ -98,9 +98,13 @@ def test_chat_session_lifecycle(tmp_path: Path, monkeypatch: pytest.MonkeyPatch)
         config: AppConfig,
         run_id: str | None = None,
         log_llm_payload: bool = True,
+        analysis_mode: str = "aggregate",
+        api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
     ) -> RunPaths:
         assert run_id is not None
+        assert analysis_mode == "aggregate"
+        assert api_key_override is None
         assert selected_cities is None
         return _write_success_artifacts(question, run_id, config)
 
@@ -113,6 +117,7 @@ def test_chat_session_lifecycle(tmp_path: Path, monkeypatch: pytest.MonkeyPatch)
         token_cap: int = CHAT_PROMPT_TOKEN_CAP,
         citation_catalog: list[dict[str, str]] | None = None,
         retry_missing_citation: bool = False,
+        run_id: str | None = None,
     ) -> str:
         assert isinstance(original_question, str) and original_question
         assert isinstance(contexts, list) and contexts
@@ -123,6 +128,7 @@ def test_chat_session_lifecycle(tmp_path: Path, monkeypatch: pytest.MonkeyPatch)
         assert token_cap == CHAT_PROMPT_TOKEN_CAP
         assert isinstance(citation_catalog, list)
         assert isinstance(retry_missing_citation, bool)
+        assert run_id == "run-chat"
         return f"Echo: {user_content}"
 
     monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
@@ -229,9 +235,11 @@ def test_chat_supports_header_api_key_override(
         config: AppConfig,
         run_id: str | None = None,
         log_llm_payload: bool = True,
+        analysis_mode: str = "aggregate",
         selected_cities: list[str] | None = None,
     ) -> RunPaths:
         assert run_id is not None
+        assert analysis_mode == "aggregate"
         assert selected_cities is None
         return _write_success_artifacts(question, run_id, config)
 
@@ -245,11 +253,13 @@ def test_chat_supports_header_api_key_override(
         api_key_override: str | None = None,
         citation_catalog: list[dict[str, str]] | None = None,
         retry_missing_citation: bool = False,
+        run_id: str | None = None,
     ) -> str:
         assert isinstance(original_question, str)
         assert isinstance(contexts, list) and contexts
         assert isinstance(citation_catalog, list)
         assert isinstance(retry_missing_citation, bool)
+        assert run_id == "run-chat-header"
         captured_key["value"] = api_key_override
         return "Header key response"
 
@@ -296,9 +306,13 @@ def test_chat_context_update_rejects_unknown_context_run(
         config: AppConfig,
         run_id: str | None = None,
         log_llm_payload: bool = True,
+        analysis_mode: str = "aggregate",
+        api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
     ) -> RunPaths:
         assert run_id is not None
+        assert analysis_mode == "aggregate"
+        assert api_key_override is None
         assert selected_cities is None
         return _write_success_artifacts(question, run_id, config)
 
@@ -341,9 +355,13 @@ def test_chat_builds_prompt_safe_citation_catalog_and_persists_mapping(
         config: AppConfig,
         run_id: str | None = None,
         log_llm_payload: bool = True,
+        analysis_mode: str = "aggregate",
+        api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
     ) -> RunPaths:
         assert run_id is not None
+        assert analysis_mode == "aggregate"
+        assert api_key_override is None
         assert selected_cities is None
         excerpts = [
             {
@@ -365,6 +383,7 @@ def test_chat_builds_prompt_safe_citation_catalog_and_persists_mapping(
         token_cap: int = CHAT_PROMPT_TOKEN_CAP,
         citation_catalog: list[dict[str, str]] | None = None,
         retry_missing_citation: bool = False,
+        run_id: str | None = None,
     ) -> str:
         assert isinstance(original_question, str)
         assert isinstance(contexts, list) and contexts
@@ -374,6 +393,7 @@ def test_chat_builds_prompt_safe_citation_catalog_and_persists_mapping(
         assert isinstance(citation_catalog, list) and citation_catalog
         captured_catalog[:] = citation_catalog
         assert not retry_missing_citation
+        assert run_id == "run-chat-citations"
         return "Seville plans charging expansion. [ref_1]"
 
     monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
@@ -401,7 +421,7 @@ def test_chat_builds_prompt_safe_citation_catalog_and_persists_mapping(
         payload = send_message.json()
         citations = payload["assistant_message"]["citations"]
         assert citations[0]["ref_id"] == "ref_1"
-        assert citations[0]["city_name"] == "seville"
+        assert citations[0]["city_name"] == "Seville"
         assert citations[0]["source_run_id"] == "run-chat-citations"
         assert citations[0]["source_ref_id"] == "ref_7"
 
@@ -429,9 +449,13 @@ def test_chat_retries_once_when_first_reply_has_no_valid_citations(
         config: AppConfig,
         run_id: str | None = None,
         log_llm_payload: bool = True,
+        analysis_mode: str = "aggregate",
+        api_key_override: str | None = None,
         selected_cities: list[str] | None = None,
     ) -> RunPaths:
         assert run_id is not None
+        assert analysis_mode == "aggregate"
+        assert api_key_override is None
         assert selected_cities is None
         excerpts = [
             {
@@ -453,8 +477,10 @@ def test_chat_retries_once_when_first_reply_has_no_valid_citations(
         token_cap: int = CHAT_PROMPT_TOKEN_CAP,
         citation_catalog: list[dict[str, str]] | None = None,
         retry_missing_citation: bool = False,
+        run_id: str | None = None,
     ) -> str:
         assert isinstance(citation_catalog, list) and citation_catalog
+        assert run_id == "run-chat-retry"
         call_log.append(retry_missing_citation)
         if retry_missing_citation:
             return "Porto targets 35% by 2030. [ref_1]"
