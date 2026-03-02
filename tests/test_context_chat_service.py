@@ -37,13 +37,17 @@ def test_fit_citation_catalog_to_budget_prunes_refs() -> None:
     fixed_tokens = context_chat._estimate_messages_tokens(
         [{"role": "user", "content": user_content}]
     )
+    from backend.utils.config import load_config
+    
+    config = load_config()
+    prompt_token_buffer = config.chat.prompt_token_buffer
     first_entry_budget = (
         count_tokens(context_chat._render_citation_catalog_block(citation_catalog[:1])) + 20
     )
     token_cap = (
         fixed_tokens
         + count_tokens(prompt_header)
-        + context_chat.CHAT_PROMPT_TOKEN_BUFFER
+        + prompt_token_buffer
         + first_entry_budget
     )
 
@@ -53,6 +57,7 @@ def test_fit_citation_catalog_to_budget_prunes_refs() -> None:
         history=[],
         user_content=user_content,
         token_cap=token_cap,
+        prompt_token_buffer=prompt_token_buffer,
     )
 
     assert [item["ref_id"] for item in fitted] == ["ref_1"]
@@ -130,9 +135,11 @@ def test_generate_context_chat_reply_forwards_reasoning_effort(
     assert captured_request_kwargs["reasoning_effort"] == "high"
 
 
-def test_generate_context_chat_reply_rejects_over_hard_token_cap(
+def test_generate_context_chat_reply_rejects_citation_path_over_token_cap(
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
+    """When using citations, a message that exceeds the hard token cap raises an error."""
+
     class _DummyResponse:
         choices = [type("Choice", (), {"message": type("Message", (), {"content": "ok"})()})()]
 
@@ -151,12 +158,6 @@ def test_generate_context_chat_reply_rejects_over_hard_token_cap(
         "_run_chat_completion_with_tools",
         _stub_run_chat_completion_with_tools,
     )
-    monkeypatch.setattr(
-        context_chat,
-        "_estimate_messages_tokens",
-        lambda _messages: context_chat.MAX_CHAT_CONTEXT_TOTAL_TOKENS + 1,
-    )
-
     config = AppConfig(
         orchestrator=OrchestratorConfig(model="test-model", context_bundle_name="context_bundle.json"),
         sql_researcher=SqlResearcherConfig(model="test-model"),
@@ -168,6 +169,15 @@ def test_generate_context_chat_reply_rejects_over_hard_token_cap(
         enable_sql=False,
     )
 
+    monkeypatch.setattr(
+        context_chat,
+        "_estimate_messages_tokens",
+        lambda _messages: config.chat.max_context_total_tokens + 1,
+    )
+
+    citation_catalog = [
+        {"ref_id": "ref_1", "city_name": "Munich", "quote": "evidence", "partial_answer": "answer"}
+    ]
     with pytest.raises(ValueError, match="Chat context exceeds token budget"):
         context_chat.generate_context_chat_reply(
             original_question="Question",
@@ -182,7 +192,7 @@ def test_generate_context_chat_reply_rejects_over_hard_token_cap(
             history=[],
             user_content="Answer briefly.",
             config=config,
-            token_cap=context_chat.MAX_CHAT_CONTEXT_TOTAL_TOKENS + 30_000,
+            token_cap=config.chat.max_context_total_tokens + 30_000,
             api_key_override="sk-or-v1-test",
-            citation_catalog=[],
+            citation_catalog=citation_catalog,
         )

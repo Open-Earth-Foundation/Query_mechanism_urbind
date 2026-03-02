@@ -8,8 +8,6 @@ import yaml
 from dotenv import load_dotenv
 from pydantic import BaseModel, ConfigDict, Field
 
-from backend.utils.retry import DEFAULT_MAX_ATTEMPTS
-
 ReasoningEffort = Literal["none", "minimal", "low", "medium", "high", "xhigh"]
 
 
@@ -49,6 +47,12 @@ class MarkdownResearcherConfig(AgentConfig):
 
 class ChatConfig(AgentConfig):
     max_history_messages: int = 12
+    max_context_total_tokens: int = 220_000
+    min_prompt_token_cap: int = 20_000
+    provider_timeout_seconds: float = 50.0
+    prompt_token_buffer: int = 2_000
+    multi_pass_threshold_tokens: int = 200_000
+    multi_pass_chunk_tokens: int = 150_000
 
 
 class AssumptionsReviewerConfig(AgentConfig):
@@ -80,7 +84,7 @@ class VectorStoreConfig(BaseModel):
 class RetryConfig(BaseModel):
     """Shared retry policy for LLM and retrieval operations."""
 
-    max_attempts: int = DEFAULT_MAX_ATTEMPTS
+    max_attempts: int = 5
     backoff_base_seconds: float = 0.8
     backoff_max_seconds: float = 8.0
 

@@ -20,7 +20,6 @@ from agents.run_context import RunContextWrapper
 from agents.tool import Tool
 from openai import AsyncOpenAI, DefaultAsyncHttpxClient
 
-from backend.utils.retry import DEFAULT_MAX_ATTEMPTS
 
 logger = logging.getLogger(__name__)
 
@@ -470,7 +469,7 @@ def build_openrouter_model(
 def run_agent_sync(
     agent: Agent,
     input_data: str,
-    max_turns: int = DEFAULT_MAX_ATTEMPTS,
+    max_turns: int = 10,
     log_llm_payload: bool = False,
 ) -> RunResult:
     """Run an agent synchronously with optional max_turns limit.

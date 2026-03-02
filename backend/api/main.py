@@ -118,6 +118,14 @@ def create_app(
         run_executor.shutdown(wait=True)
         logger.info("API shutdown complete")
 
+    cors_origins_raw = os.getenv("API_CORS_ORIGINS", "")
+    allowed_origins = [o.strip() for o in cors_origins_raw.split(",") if o.strip()]
+    # Wildcard origin cannot be combined with allow_credentials=True (CORS spec).
+    # When explicit origins are configured, credentials are permitted.
+    using_wildcard = not allowed_origins
+    if using_wildcard:
+        allowed_origins = ["*"]
+
     app = FastAPI(
         title="Query Mechanism Backend API",
         version="0.1.0",
@@ -125,12 +133,12 @@ def create_app(
     )
     app.add_middleware(
         CORSMiddleware,
-        allow_origins=["*"],
-        allow_credentials=True,
+        allow_origins=allowed_origins,
+        allow_credentials=not using_wildcard,
         allow_methods=["*"],
         allow_headers=["*"],
     )
-    logger.info("CORS allow_origins=*")
+    logger.info("CORS allow_origins=%s allow_credentials=%s", allowed_origins, not using_wildcard)
     app.include_router(runs_router, prefix="/api/v1", tags=["runs"])
     app.include_router(cities_router, prefix="/api/v1", tags=["cities"])
     app.include_router(chat_router, prefix="/api/v1", tags=["chat"])
