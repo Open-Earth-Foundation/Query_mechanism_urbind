@@ -38,7 +38,6 @@ def test_fit_citation_catalog_to_budget_prunes_refs() -> None:
         [{"role": "user", "content": user_content}]
     )
     from backend.utils.config import load_config
-    
     config = load_config()
     prompt_token_buffer = config.chat.prompt_token_buffer
     first_entry_budget = (
