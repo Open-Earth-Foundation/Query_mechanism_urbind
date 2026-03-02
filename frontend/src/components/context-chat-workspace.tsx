@@ -49,6 +49,7 @@ export function ContextChatWorkspace({
   onClose,
 }: ContextChatWorkspaceProps) {
   const messageScrollAreaRef = useRef<HTMLDivElement | null>(null);
+  const sendLockRef = useRef(false);
   const [conversationId, setConversationId] = useState<string | null>(null);
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [sessionContexts, setSessionContexts] =
@@ -80,6 +81,7 @@ export function ContextChatWorkspace({
     setContextCatalog([]);
     setManagerSelection([]);
     setCatalogError(null);
+    sendLockRef.current = false;
   }, [runId]);
 
   async function loadSessionContexts(
@@ -221,13 +223,14 @@ export function ContextChatWorkspace({
 
   async function handleSend(event: FormEvent<HTMLFormElement>): Promise<void> {
     event.preventDefault();
-    if (!runId || !conversationId || isSending) {
+    if (!runId || !conversationId || isSending || sendLockRef.current) {
       return;
     }
     const value = inputValue.trim();
     if (!value) {
       return;
     }
+    sendLockRef.current = true;
     setIsSending(true);
     setErrorMessage(null);
     setInputValue("");
@@ -244,10 +247,11 @@ export function ContextChatWorkspace({
       setErrorMessage(
         error instanceof Error ? error.message : "Message send failed.",
       );
-      setInputValue(value);
+      setInputValue((current) => (current.trim() ? current : value));
     } finally {
       setPendingPrompt(null);
       setIsSending(false);
+      sendLockRef.current = false;
     }
   }
 
@@ -330,6 +334,7 @@ export function ContextChatWorkspace({
     }
   }
 
+  const disabledInput = !canChat || !conversationId || isBootstrapping;
   const disabledSend = !canChat || !conversationId || isSending || isBootstrapping;
   const hasVisibleMessages =
     sortedMessages.length > 0 || (isSending && !!pendingPrompt);
@@ -477,7 +482,7 @@ export function ContextChatWorkspace({
               placeholder="Ask follow-up questions grounded in selected contexts..."
               value={inputValue}
               onChange={(event) => setInputValue(event.target.value)}
-              disabled={disabledSend}
+              disabled={disabledInput}
             />
             <div className="flex items-center justify-between gap-3">
               {errorMessage ? (
