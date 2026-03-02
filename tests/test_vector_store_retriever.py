@@ -436,3 +436,130 @@ def test_retrieve_chunks_for_queries_fails_when_selected_city_not_indexed(
             docs_dir=tmp_path / "documents",
             selected_cities=["Berlin"],
         )
+
+
+def test_retrieve_chunks_for_queries_retries_query_by_embedding_until_success(
+    monkeypatch,
+    tmp_path,
+) -> None:
+    config = _build_test_config()
+    config.retry.max_attempts = 5
+    config.vector_store.context_window_chunks = 0
+    config.vector_store.table_context_window_chunks = 0
+    config.vector_store.index_manifest_path = tmp_path / "index_manifest.json"
+    save_manifest(
+        config.vector_store.index_manifest_path,
+        {"files": {"documents/Munich.md": {"file_hash": "h1", "chunk_ids": ["chunk-1"]}}},
+    )
+
+    call_counts = {"query": 0}
+
+    class _FakeStore:
+        def query_by_embedding(self, query_embeddings, n_results, where):
+            del query_embeddings, n_results
+            call_counts["query"] += 1
+            assert where == {"city_key": "munich"}
+            if call_counts["query"] < 3:
+                raise RuntimeError("temporary query failure")
+            return {
+                "ids": [["chunk-1"]],
+                "metadatas": [[
+                    {
+                        "city_name": "Munich",
+                        "city_key": "munich",
+                        "raw_text": "retried query chunk",
+                        "source_path": "documents/Munich.md",
+                        "heading_path": "H1",
+                        "block_type": "paragraph",
+                        "chunk_index": 1,
+                    }
+                ]],
+                "distances": [[0.1]],
+            }
+
+        def get(self, where, limit):
+            del where, limit
+            return {"ids": [], "metadatas": []}
+
+    monkeypatch.setattr(
+        retriever_module,
+        "_embed_queries",
+        lambda queries, config: {query: [0.01, 0.02] for query in queries},  # noqa: ARG005
+    )
+    monkeypatch.setattr(
+        retriever_module,
+        "ChromaStore",
+        lambda persist_path, collection_name: _FakeStore(),  # noqa: ARG005
+    )
+
+    chunks, _meta = retrieve_chunks_for_queries(
+        queries=["original question"],
+        config=config,
+        docs_dir=tmp_path / "documents",
+        selected_cities=["Munich"],
+    )
+
+    assert [chunk.chunk_id for chunk in chunks] == ["chunk-1"]
+    assert call_counts["query"] == 3
+
+
+def test_retrieve_chunks_for_queries_retries_neighbor_get_and_raises_after_max_attempts(
+    monkeypatch,
+    tmp_path,
+) -> None:
+    config = _build_test_config()
+    config.retry.max_attempts = 5
+    config.vector_store.context_window_chunks = 1
+    config.vector_store.table_context_window_chunks = 1
+    config.vector_store.index_manifest_path = tmp_path / "index_manifest.json"
+    save_manifest(
+        config.vector_store.index_manifest_path,
+        {"files": {"documents/Munich.md": {"file_hash": "h1", "chunk_ids": ["chunk-1"]}}},
+    )
+
+    call_counts = {"get": 0}
+
+    class _FakeStore:
+        def query_by_embedding(self, query_embeddings, n_results, where):
+            del query_embeddings, n_results
+            assert where == {"city_key": "munich"}
+            return {
+                "ids": [["chunk-1"]],
+                "metadatas": [[
+                    {
+                        "city_name": "Munich",
+                        "city_key": "munich",
+                        "raw_text": "seed chunk",
+                        "source_path": "documents/Munich.md",
+                        "heading_path": "H1",
+                        "block_type": "paragraph",
+                        "chunk_index": 1,
+                    }
+                ]],
+                "distances": [[0.1]],
+            }
+
+        def get(self, where, limit):
+            del where, limit
+            call_counts["get"] += 1
+            raise RuntimeError("temporary get failure")
+
+    monkeypatch.setattr(
+        retriever_module,
+        "_embed_queries",
+        lambda queries, config: {query: [0.01, 0.02] for query in queries},  # noqa: ARG005
+    )
+    monkeypatch.setattr(
+        retriever_module,
+        "ChromaStore",
+        lambda persist_path, collection_name: _FakeStore(),  # noqa: ARG005
+    )
+
+    with pytest.raises(RuntimeError, match="temporary get failure"):
+        retrieve_chunks_for_queries(
+            queries=["original question"],
+            config=config,
+            docs_dir=tmp_path / "documents",
+            selected_cities=["Munich"],
+        )
+    assert call_counts["get"] == config.retry.max_attempts

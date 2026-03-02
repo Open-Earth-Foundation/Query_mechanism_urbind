@@ -7,7 +7,7 @@ import shutil
 from pathlib import Path
 from typing import Any
 
-from backend.utils.city_normalization import normalize_city_key
+from backend.utils.city_normalization import format_city_stem, normalize_city_key
 
 
 def list_city_names(markdown_dir: Path) -> list[str]:
@@ -15,12 +15,16 @@ def list_city_names(markdown_dir: Path) -> list[str]:
     if not markdown_dir.exists():
         return []
 
-    names = {
-        markdown_file.stem
-        for markdown_file in markdown_dir.rglob("*.md")
-        if markdown_file.is_file()
-    }
-    return sorted(names, key=str.casefold)
+    names_by_key: dict[str, str] = {}
+    for markdown_file in markdown_dir.rglob("*.md"):
+        if not markdown_file.is_file():
+            continue
+        stem = markdown_file.stem
+        key = normalize_city_key(stem)
+        if not key:
+            continue
+        names_by_key.setdefault(key, format_city_stem(stem))
+    return sorted(names_by_key.values(), key=str.casefold)
 
 
 def index_city_markdown_files(markdown_dir: Path) -> dict[str, list[Path]]:

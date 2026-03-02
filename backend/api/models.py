@@ -15,6 +15,7 @@ RunStatus = Literal[
     "failed",
     "stopped",
 ]
+AnalysisMode = Literal["aggregate", "city_by_city"]
 
 
 class RunError(BaseModel):
@@ -35,6 +36,7 @@ class CreateRunRequest(BaseModel):
     config_path: str | None = None
     markdown_path: str | None = None
     log_llm_payload: bool = False
+    analysis_mode: AnalysisMode = "aggregate"
 
 
 class CreateRunResponse(BaseModel):
@@ -283,6 +285,7 @@ class SendChatMessageResponse(BaseModel):
 
 __all__ = [
     "RunStatus",
+    "AnalysisMode",
     "RunError",
     "CreateRunRequest",
     "CreateRunResponse",

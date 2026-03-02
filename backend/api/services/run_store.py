@@ -166,16 +166,31 @@ def _coerce_status(value: str | None) -> RunStatus | None:
     return None
 
 
+def _extract_question_from_run_log(run_log: dict[str, Any]) -> str:
+    """Extract display question from run log using modern and legacy fields."""
+    question_raw = run_log.get("question")
+    if isinstance(question_raw, str) and question_raw.strip():
+        return question_raw.strip()
+
+    inputs_raw = run_log.get("inputs")
+    if isinstance(inputs_raw, dict):
+        initial_question = inputs_raw.get("initial_question")
+        if isinstance(initial_question, str) and initial_question.strip():
+            return initial_question.strip()
+        refined_question = inputs_raw.get("refined_question")
+        if isinstance(refined_question, str) and refined_question.strip():
+            return refined_question.strip()
+
+    return ""
+
+
 class RunStore:
     """Persisted in-memory store used by API routes and background workers."""
 
     def __init__(self, runs_dir: Path) -> None:
         self._runs_dir = runs_dir
-        self._state_dir = runs_dir / "_api_state"
         self._lock = threading.Lock()
         self._records: dict[str, RunRecord] = {}
-        self._state_dir.mkdir(parents=True, exist_ok=True)
-        self._load_state_files()
 
     @property
     def runs_dir(self) -> Path:
@@ -282,11 +297,8 @@ class RunStore:
     def list_runs(self) -> list[RunRecord]:
         """Return all known runs sorted by newest first."""
         with self._lock:
-            for path in self._state_dir.glob("*.json"):
-                run_id = path.stem
-                if run_id not in self._records:
-                    self._get_or_hydrate_locked(run_id)
             self._load_runs_from_artifact_dirs_locked()
+            self._prune_stale_terminal_records_locked()
             records = self._exclude_legacy_alias_records_locked(
                 list(self._records.values())
             )
@@ -295,6 +307,28 @@ class RunStore:
                 key=lambda record: record.started_at,
                 reverse=True,
             )
+
+    def _prune_stale_terminal_records_locked(self) -> None:
+        """Drop terminal records whose run artifacts are missing from runs directory."""
+        stale_run_ids: list[str] = []
+        for run_id, record in self._records.items():
+            if record.status in IN_PROGRESS_STATUSES:
+                continue
+            if self._resolve_existing_run_log_path(record) is not None:
+                continue
+            stale_run_ids.append(run_id)
+
+        for run_id in stale_run_ids:
+            self._records.pop(run_id, None)
+
+    def _resolve_existing_run_log_path(self, record: RunRecord) -> Path | None:
+        """Resolve existing run.json path for a record, if present on disk."""
+        if record.run_log_path is not None and record.run_log_path.exists():
+            return record.run_log_path
+        fallback = self._runs_dir / record.run_id / "run.json"
+        if fallback.exists():
+            return fallback
+        return None
 
     def _exclude_legacy_alias_records_locked(
         self, records: list[RunRecord]
@@ -375,8 +409,7 @@ class RunStore:
             if fallback_context.exists():
                 context_bundle_path = fallback_context
 
-        question_raw = run_log.get("question")
-        question = question_raw if isinstance(question_raw, str) else ""
+        question = _extract_question_from_run_log(run_log)
 
         record = RunRecord(
             run_id=run_id,
@@ -411,24 +444,19 @@ class RunStore:
             return None
         candidate = Path(raw_path)
         if not candidate.is_absolute():
-            return run_dir / candidate
+            local_candidate = run_dir / candidate
+            if local_candidate.exists():
+                return local_candidate
+            name_fallback = run_dir / candidate.name
+            if name_fallback.exists():
+                return name_fallback
+            return local_candidate
         if candidate.exists():
             return candidate
         fallback = run_dir / candidate.name
         if fallback.exists():
             return fallback
         return candidate
-
-    def _load_state_files(self) -> None:
-        """Load persisted API state snapshots into memory."""
-        for path in self._state_dir.glob("*.json"):
-            payload = _read_json(path)
-            if payload is None:
-                continue
-            record = RunRecord.from_payload(payload)
-            if record is None:
-                continue
-            self._records[record.run_id] = record
 
     def _normalize_run_id(self, run_id: str) -> str:
         """Validate and normalize candidate run id."""
@@ -464,8 +492,6 @@ class RunStore:
         """Check if run id is already in store or existing artifacts."""
         if run_id in self._records:
             return True
-        if (self._state_dir / f"{run_id}.json").exists():
-            return True
         if (self._runs_dir / run_id).exists():
             return True
         return False
@@ -475,14 +501,6 @@ class RunStore:
         existing = self._records.get(run_id)
         if existing is not None:
             return existing
-
-        state_path = self._state_dir / f"{run_id}.json"
-        payload = _read_json(state_path)
-        if payload is not None:
-            record = RunRecord.from_payload(payload)
-            if record is not None:
-                self._records[run_id] = record
-                return record
 
         run_log_path = self._runs_dir / run_id / "run.json"
         run_log = _read_json(run_log_path)
@@ -522,7 +540,7 @@ class RunStore:
 
         record = RunRecord(
             run_id=run_id,
-            question=str(run_log.get("question") or ""),
+            question=_extract_question_from_run_log(run_log),
             status=status,
             started_at=started_at,
             completed_at=completed_at,
@@ -537,13 +555,8 @@ class RunStore:
         return record
 
     def _persist_record_locked(self, record: RunRecord) -> None:
-        """Persist run record to API state file (and run directory when available)."""
+        """Persist run record to run-local state file when run directory exists."""
         payload = record.to_payload()
-        state_path = self._state_dir / f"{record.run_id}.json"
-        try:
-            _write_json(state_path, payload)
-        except OSError:
-            logger.exception("Failed to persist API state for run_id=%s", record.run_id)
 
         run_dir = self._runs_dir / record.run_id
         if run_dir.exists():

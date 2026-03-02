@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 import logging
 import os
+import re
 import statistics
 from contextlib import contextmanager
 from dataclasses import asdict, dataclass
@@ -20,6 +21,9 @@ from backend.utils.config import get_openrouter_api_key, load_config
 
 logger = logging.getLogger(__name__)
 
+_HTTP_STATUS_RE = re.compile(r"->\s*(\d{3})\b")
+_HTTP_429_RE = re.compile(r"HTTP/\d(?:\.\d)?\s+429\b", re.IGNORECASE)
+
 
 @dataclass(frozen=True)
 class BenchmarkModeConfig:
@@ -30,18 +34,38 @@ class BenchmarkModeConfig:
 
 
 @dataclass(frozen=True)
+class BenchmarkMarkdownConfig:
+    """Benchmark markdown batching and concurrency settings."""
+
+    name: str
+    batch_max_chunks: int
+    max_workers: int
+
+
+@dataclass(frozen=True)
 class BenchmarkQuestionResult:
     """Per-run benchmark measurement for one question and mode."""
 
     mode: str
+    markdown_config: str
+    batch_max_chunks: int
+    max_workers: int
     repetition: int
     question: str
     run_id: str
     runtime_seconds: float
+    tokens_per_second: float
     llm_calls: int
     total_tokens: int
     input_tokens: int
     output_tokens: int
+    llm_issue_total: int
+    llm_not_working_count: int
+    llm_rate_limit_count: int
+    llm_http_error_count: int
+    llm_retry_exhausted_count: int
+    llm_max_turns_count: int
+    llm_bad_output_count: int
     markdown_chunk_count: int
     markdown_excerpt_count: int
     markdown_source_mode: str
@@ -63,10 +87,18 @@ class BenchmarkReport:
     docs_dir: str
     repetitions: int
     mode_configs: list[dict[str, object]]
+    markdown_configs: list[dict[str, object]]
     results: list[BenchmarkQuestionResult]
     mode_summary: dict[str, dict[str, float]]
+    mode_config_summary: dict[str, dict[str, float]]
     judge_results: list[dict[str, object]]
     judge_summary: dict[str, dict[str, float]]
+    judge_mode_config_summary: dict[str, dict[str, float]]
+
+
+def _mode_config_key(mode_name: str, markdown_config_name: str) -> str:
+    """Build a stable summary key for (mode, markdown config)."""
+    return f"{mode_name} | {markdown_config_name}"
 
 
 def _load_env_overrides(files: list[Path]) -> dict[str, str]:
@@ -192,8 +224,88 @@ def _compute_runtime_seconds(started_at: str, completed_at: str) -> float:
     return max((completed - started).total_seconds(), 0.0)
 
 
+def _parse_structured_log_payload(line: str, marker: str) -> dict[str, object] | None:
+    """Parse JSON payload that follows a structured log marker."""
+    if marker not in line:
+        return None
+    payload_raw = line.split(marker, 1)[1].strip()
+    try:
+        payload = json.loads(payload_raw)
+    except json.JSONDecodeError:
+        return None
+    if isinstance(payload, dict):
+        return payload
+    return None
+
+
+def _has_rate_limit_signal(value: str) -> bool:
+    """Return True when text indicates a rate-limit style failure."""
+    lowered = value.casefold()
+    return "rate limit" in lowered or "ratelimit" in lowered or "429" in lowered
+
+
+def _collect_llm_issue_counts(run_text_log: Path) -> dict[str, int]:
+    """Count benchmark-relevant LLM issue signals from run.log."""
+    counts: dict[str, int] = {
+        "rate_limit_count": 0,
+        "not_working_count": 0,
+        "http_error_count": 0,
+        "retry_exhausted_count": 0,
+        "max_turns_count": 0,
+        "bad_output_count": 0,
+    }
+    if not run_text_log.exists():
+        return counts
+
+    fallback_max_turns_hits = 0
+    with run_text_log.open("r", encoding="utf-8", errors="replace") as handle:
+        for line in handle:
+            lowered = line.casefold()
+            if "openai http error response:" in lowered:
+                counts["http_error_count"] += 1
+                status_match = _HTTP_STATUS_RE.search(line)
+                if status_match and status_match.group(1) == "429":
+                    counts["rate_limit_count"] += 1
+                else:
+                    counts["not_working_count"] += 1
+            elif _HTTP_429_RE.search(line):
+                counts["rate_limit_count"] += 1
+
+            if "RETRY_EXHAUSTED " in line:
+                counts["retry_exhausted_count"] += 1
+                payload = _parse_structured_log_payload(line, "RETRY_EXHAUSTED ")
+                if payload is None:
+                    counts["not_working_count"] += 1
+                    continue
+
+                error_type = str(payload.get("error_type", "")).strip()
+                error_message = str(payload.get("error_message", "")).strip()
+                is_rate_limited = _has_rate_limit_signal(
+                    error_type
+                ) or _has_rate_limit_signal(error_message)
+                if is_rate_limited:
+                    counts["rate_limit_count"] += 1
+                else:
+                    counts["not_working_count"] += 1
+                if error_type == "RetryableBadOutput":
+                    counts["bad_output_count"] += 1
+
+            if "AGENT_MAX_TURNS_DIAGNOSTICS " in line:
+                counts["max_turns_count"] += 1
+                counts["not_working_count"] += 1
+            elif "hit max turns limit" in lowered:
+                fallback_max_turns_hits += 1
+
+    if counts["max_turns_count"] == 0 and fallback_max_turns_hits > 0:
+        counts["max_turns_count"] = fallback_max_turns_hits
+        counts["not_working_count"] += fallback_max_turns_hits
+
+    return counts
+
+
 def _run_mode_question(
     mode_name: str,
+    markdown_config: BenchmarkMarkdownConfig,
     question: str,
     repetition: int,
     run_index: int,
@@ -211,7 +323,15 @@ def _run_mode_question(
         config.enable_sql = False
         config.markdown_dir = docs_dir
         config.runs_dir = runs_dir
-        run_id = f"{mode_name}_r{repetition:02d}_q{run_index:02d}_{_timestamp_slug()}"
+        config.markdown_researcher.batch_max_chunks = max(
+            int(markdown_config.batch_max_chunks),
+            1,
+        )
+        config.markdown_researcher.max_workers = max(int(markdown_config.max_workers), 1)
+        run_id = (
+            f"{mode_name}_{markdown_config.name}_"
+            f"r{repetition:02d}_q{run_index:02d}_{_timestamp_slug()}"
+        )
         pipeline_kwargs: dict[str, object] = {
             "question": question,
             "config": config,
@@ -226,19 +346,39 @@ def _run_mode_question(
     usage = run_log.get("llm_usage", {})
     totals = usage.get("totals", {})
     inputs = run_log.get("inputs", {})
+    runtime_seconds = _compute_runtime_seconds(
+        str(run_log.get("started_at", "")),
+        str(run_log.get("completed_at", "")),
+    )
+    total_tokens = int(totals.get("total_tokens", 0))
+    tokens_per_second = (float(total_tokens) / runtime_seconds) if runtime_seconds > 0 else 0.0
+
+    run_text_log = run_paths.run_log.parent / "run.log"
+    issue_counts = _collect_llm_issue_counts(run_text_log)
+    rate_limit_count = int(issue_counts["rate_limit_count"])
+    not_working_count = int(issue_counts["not_working_count"])
+
     return BenchmarkQuestionResult(
         mode=mode_name,
+        markdown_config=markdown_config.name,
+        batch_max_chunks=int(markdown_config.batch_max_chunks),
+        max_workers=int(markdown_config.max_workers),
         repetition=repetition,
         question=question,
         run_id=run_log.get("run_id", run_id),
-        runtime_seconds=_compute_runtime_seconds(
-            str(run_log.get("started_at", "")),
-            str(run_log.get("completed_at", "")),
-        ),
+        runtime_seconds=runtime_seconds,
+        tokens_per_second=tokens_per_second,
         llm_calls=int(usage.get("calls", 0)),
-        total_tokens=int(totals.get("total_tokens", 0)),
+        total_tokens=total_tokens,
         input_tokens=int(totals.get("input_tokens", 0)),
         output_tokens=int(totals.get("output_tokens", 0)),
+        llm_issue_total=rate_limit_count + not_working_count,
+        llm_not_working_count=not_working_count,
+        llm_rate_limit_count=rate_limit_count,
+        llm_http_error_count=int(issue_counts["http_error_count"]),
+        llm_retry_exhausted_count=int(issue_counts["retry_exhausted_count"]),
+        llm_max_turns_count=int(issue_counts["max_turns_count"]),
+        llm_bad_output_count=int(issue_counts["bad_output_count"]),
         markdown_chunk_count=int(inputs.get("markdown_chunk_count", 0)),
         markdown_excerpt_count=int(inputs.get("markdown_excerpt_count", 0)),
         markdown_source_mode=str(inputs.get("markdown_source_mode", "unknown")),
@@ -248,26 +388,69 @@ def _run_mode_question(
     )
 
 
+def _summarize_result_rows(
+    mode_results: list[BenchmarkQuestionResult],
+) -> dict[str, float]:
+    """Aggregate means/medians for a homogeneous group of benchmark runs."""
+    runtimes = [row.runtime_seconds for row in mode_results]
+    tokens = [float(row.total_tokens) for row in mode_results]
+    tokens_per_second = [row.tokens_per_second for row in mode_results]
+    excerpts = [float(row.markdown_excerpt_count) for row in mode_results]
+    chunks = [float(row.markdown_chunk_count) for row in mode_results]
+    llm_issues = [float(row.llm_issue_total) for row in mode_results]
+    llm_rate_limits = [float(row.llm_rate_limit_count) for row in mode_results]
+    llm_not_working = [float(row.llm_not_working_count) for row in mode_results]
+    llm_retry_exhausted = [float(row.llm_retry_exhausted_count) for row in mode_results]
+    llm_max_turns = [float(row.llm_max_turns_count) for row in mode_results]
+    runs_with_issues = float(sum(1 for row in mode_results if row.llm_issue_total > 0))
+
+    return {
+        "runs": float(len(mode_results)),
+        "runtime_seconds_mean": statistics.fmean(runtimes),
+        "runtime_seconds_median": statistics.median(runtimes),
+        "total_tokens_mean": statistics.fmean(tokens),
+        "total_tokens_median": statistics.median(tokens),
+        "tokens_per_second_mean": statistics.fmean(tokens_per_second),
+        "tokens_per_second_median": statistics.median(tokens_per_second),
+        "markdown_excerpt_count_mean": statistics.fmean(excerpts),
+        "markdown_chunk_count_mean": statistics.fmean(chunks),
+        "llm_issue_total": float(sum(llm_issues)),
+        "llm_issue_mean_per_run": statistics.fmean(llm_issues),
+        "llm_issue_run_rate": runs_with_issues / float(len(mode_results)),
+        "llm_rate_limit_total": float(sum(llm_rate_limits)),
+        "llm_not_working_total": float(sum(llm_not_working)),
+        "llm_retry_exhausted_total": float(sum(llm_retry_exhausted)),
+        "llm_max_turns_total": float(sum(llm_max_turns)),
+    }
+
+
 def _summarize_mode(results: list[BenchmarkQuestionResult]) -> dict[str, dict[str, float]]:
-    """Aggregate per-mode medians and means for key metrics."""
+    """Aggregate benchmark metrics per mode (across all markdown configs)."""
     grouped: dict[str, list[BenchmarkQuestionResult]] = {}
     for result in results:
         grouped.setdefault(result.mode, []).append(result)
+
     summary: dict[str, dict[str, float]] = {}
     for mode_name, mode_results in grouped.items():
-        runtimes = [row.runtime_seconds for row in mode_results]
-        tokens = [float(row.total_tokens) for row in mode_results]
-        excerpts = [float(row.markdown_excerpt_count) for row in mode_results]
-        chunks = [float(row.markdown_chunk_count) for row in mode_results]
-        summary[mode_name] = {
-            "runs": float(len(mode_results)),
-            "runtime_seconds_mean": statistics.fmean(runtimes),
-            "runtime_seconds_median": statistics.median(runtimes),
-            "total_tokens_mean": statistics.fmean(tokens),
-            "total_tokens_median": statistics.median(tokens),
-            "markdown_excerpt_count_mean": statistics.fmean(excerpts),
-            "markdown_chunk_count_mean": statistics.fmean(chunks),
-        }
+        summary[mode_name] = _summarize_result_rows(mode_results)
+    return summary
+
+
+def _summarize_mode_config(
+    results: list[BenchmarkQuestionResult],
+) -> dict[str, dict[str, float]]:
+    """Aggregate benchmark metrics per (mode, markdown config)."""
+    grouped: dict[str, list[BenchmarkQuestionResult]] = {}
+    for result in results:
+        key = _mode_config_key(result.mode, result.markdown_config)
+        grouped.setdefault(key, []).append(result)
+
+    summary: dict[str, dict[str, float]] = {}
+    for key, mode_results in grouped.items():
+        row = _summarize_result_rows(mode_results)
+        row["batch_max_chunks"] = float(mode_results[0].batch_max_chunks)
+        row["max_workers"] = float(mode_results[0].max_workers)
+        summary[key] = row
     return summary
 
 
@@ -283,10 +466,43 @@ def _write_markdown_report(path: Path, report: BenchmarkReport) -> None:
         f"- Selected cities: {', '.join(report.selected_cities) if report.selected_cities else '(all)'}",
         f"- Repetitions: {report.repetitions}",
     ]
+    lines.extend(["", "## Markdown benchmark configs", ""])
+    for config in report.markdown_configs:
+        lines.append(
+            "- "
+            f"{config['name']}: batch_max_chunks={config['batch_max_chunks']} "
+            f"max_workers={config['max_workers']}"
+        )
     lines.extend(["", "## Questions", ""])
     lines.extend([f"- {question}" for question in report.questions])
-    lines.extend(["", "## Mode summary", ""])
-    for mode_name, metrics in report.mode_summary.items():
+    lines.extend(["", "## Mode + config summary", ""])
+    for key, metrics in sorted(report.mode_config_summary.items()):
+        lines.extend(
+            [
+                f"### {key}",
+                "",
+                f"- Batch max chunks: {int(metrics['batch_max_chunks'])}",
+                f"- Max workers: {int(metrics['max_workers'])}",
+                f"- Runs: {int(metrics['runs'])}",
+                f"- Runtime mean (s): {metrics['runtime_seconds_mean']:.2f}",
+                f"- Runtime median (s): {metrics['runtime_seconds_median']:.2f}",
+                f"- Tokens/sec mean: {metrics['tokens_per_second_mean']:.2f}",
+                f"- Tokens/sec median: {metrics['tokens_per_second_median']:.2f}",
+                f"- Total tokens mean: {metrics['total_tokens_mean']:.0f}",
+                f"- Chunk count mean: {metrics['markdown_chunk_count_mean']:.1f}",
+                f"- Excerpt count mean: {metrics['markdown_excerpt_count_mean']:.1f}",
+                f"- LLM issues total: {int(metrics['llm_issue_total'])}",
+                f"- LLM issue mean/run: {metrics['llm_issue_mean_per_run']:.2f}",
+                f"- LLM issue run-rate: {metrics['llm_issue_run_rate']:.2%}",
+                f"- Rate limit issues total: {int(metrics['llm_rate_limit_total'])}",
+                f"- Non-working LLM issues total: {int(metrics['llm_not_working_total'])}",
+                f"- Retry exhausted total: {int(metrics['llm_retry_exhausted_total'])}",
+                f"- Max turns total: {int(metrics['llm_max_turns_total'])}",
+                "",
+            ]
+        )
+    lines.extend(["## Mode summary", ""])
+    for mode_name, metrics in sorted(report.mode_summary.items()):
         lines.extend(
             [
                 f"### {mode_name}",
@@ -294,16 +510,30 @@ def _write_markdown_report(path: Path, report: BenchmarkReport) -> None:
                 f"- Runs: {int(metrics['runs'])}",
                 f"- Runtime mean (s): {metrics['runtime_seconds_mean']:.2f}",
                 f"- Runtime median (s): {metrics['runtime_seconds_median']:.2f}",
-                f"- Total tokens mean: {metrics['total_tokens_mean']:.0f}",
-                f"- Total tokens median: {metrics['total_tokens_median']:.0f}",
-                f"- Chunk count mean: {metrics['markdown_chunk_count_mean']:.1f}",
-                f"- Excerpt count mean: {metrics['markdown_excerpt_count_mean']:.1f}",
+                f"- Tokens/sec mean: {metrics['tokens_per_second_mean']:.2f}",
+                f"- LLM issues total: {int(metrics['llm_issue_total'])}",
                 "",
             ]
         )
+
+    if report.judge_mode_config_summary:
+        lines.extend(["## Judge mode + config summary", ""])
+        for key, metrics in sorted(report.judge_mode_config_summary.items()):
+            lines.extend(
+                [
+                    f"### {key}",
+                    "",
+                    f"- Mean judge score: {metrics['mean_judge_score']:.2f}",
+                    f"- Median judge score: {metrics['median_judge_score']:.2f}",
+                    f"- Wins: {int(metrics['wins'])}",
+                    f"- Ties: {int(metrics['ties'])}",
+                    "",
+                ]
+            )
+
     if report.judge_summary:
-        lines.extend(["## Judge summary", ""])
-        for mode_name, metrics in report.judge_summary.items():
+        lines.extend(["## Judge mode summary", ""])
+        for mode_name, metrics in sorted(report.judge_summary.items()):
             lines.extend(
                 [
                     f"### {mode_name}",
@@ -315,14 +545,19 @@ def _write_markdown_report(path: Path, report: BenchmarkReport) -> None:
                     "",
                 ]
             )
+
     lines.extend(["## Run details", ""])
     for result in report.results:
         lines.extend(
             [
                 (
-                    f"- Mode={result.mode} rep={result.repetition} run_id={result.run_id} "
-                    f"runtime={result.runtime_seconds:.2f}s tokens={result.total_tokens} "
-                    f"chunks={result.markdown_chunk_count} excerpts={result.markdown_excerpt_count}"
+                    f"- Mode={result.mode} config={result.markdown_config} "
+                    f"batch={result.batch_max_chunks} workers={result.max_workers} "
+                    f"rep={result.repetition} run_id={result.run_id} "
+                    f"runtime={result.runtime_seconds:.2f}s "
+                    f"tokens={result.total_tokens} tokens_per_s={result.tokens_per_second:.2f} "
+                    f"issues={result.llm_issue_total} rate_limit={result.llm_rate_limit_count} "
+                    f"not_working={result.llm_not_working_count}"
                 ),
                 f"  - Question: {result.question}",
                 f"  - Final output: {result.final_output_path}",
@@ -336,6 +571,8 @@ def _write_markdown_report(path: Path, report: BenchmarkReport) -> None:
                 [
                     (
                         f"- Question={row['question']} rep={row['repetition']} "
+                        f"config={row['markdown_config']} "
+                        f"batch={row['batch_max_chunks']} workers={row['max_workers']} "
                         f"{row['left_label']}={row['left_total_score']} "
                         f"{row['right_label']}={row['right_total_score']} "
                         f"winner={row['winner']} confidence={row['confidence']:.2f}"
@@ -349,10 +586,10 @@ def _write_markdown_report(path: Path, report: BenchmarkReport) -> None:
 def _build_judge_pairs(
     results: list[BenchmarkQuestionResult],
 ) -> list[tuple[BenchmarkQuestionResult, BenchmarkQuestionResult]]:
-    """Pair standard and vector outputs by question+repetition."""
-    by_key: dict[tuple[str, int], dict[str, BenchmarkQuestionResult]] = {}
+    """Pair standard and vector outputs by question+repetition+markdown config."""
+    by_key: dict[tuple[str, int, str], dict[str, BenchmarkQuestionResult]] = {}
     for result in results:
-        key = (result.question, result.repetition)
+        key = (result.question, result.repetition, result.markdown_config)
         slot = by_key.setdefault(key, {})
         slot[result.mode] = result
     pairs: list[tuple[BenchmarkQuestionResult, BenchmarkQuestionResult]] = []
@@ -365,16 +602,39 @@ def _build_judge_pairs(
     return pairs
 
 
+def _summarize_judge_scores(
+    scores_by_group: dict[str, list[float]],
+    wins_by_group: dict[str, int],
+    ties_by_group: dict[str, int],
+) -> dict[str, dict[str, float]]:
+    """Aggregate judge scores into mean/median/win/tie stats."""
+    summary: dict[str, dict[str, float]] = {}
+    for group_name, scores in scores_by_group.items():
+        if not scores:
+            continue
+        summary[group_name] = {
+            "mean_judge_score": statistics.fmean(scores),
+            "median_judge_score": statistics.median(scores),
+            "wins": float(wins_by_group.get(group_name, 0)),
+            "ties": float(ties_by_group.get(group_name, 0)),
+        }
+    return summary
+
+
 def _run_benchmark_judging(
     *,
     results: list[BenchmarkQuestionResult],
     config_path: Path,
     log_llm_payload: bool,
-) -> tuple[list[dict[str, object]], dict[str, dict[str, float]]]:
-    """Run pairwise LLM-as-judge comparisons and aggregate by mode."""
+) -> tuple[
+    list[dict[str, object]],
+    dict[str, dict[str, float]],
+    dict[str, dict[str, float]],
+]:
+    """Run pairwise LLM-as-judge comparisons and aggregate score summaries."""
     pairs = _build_judge_pairs(results)
     if not pairs:
-        return [], {}
+        return [], {}, {}
 
     config = load_config(config_path)
     api_key = get_openrouter_api_key()
@@ -382,6 +642,9 @@ def _run_benchmark_judging(
     scores_by_mode: dict[str, list[float]] = {"standard_chunking": [], "vector_store": []}
     wins_by_mode: dict[str, int] = {"standard_chunking": 0, "vector_store": 0}
     ties_by_mode: dict[str, int] = {"standard_chunking": 0, "vector_store": 0}
+    scores_by_mode_config: dict[str, list[float]] = {}
+    wins_by_mode_config: dict[str, int] = {}
+    ties_by_mode_config: dict[str, int] = {}
 
     for left, right in pairs:
         left_text = Path(left.final_output_path).read_text(encoding="utf-8")
@@ -396,20 +659,43 @@ def _run_benchmark_judging(
             api_key=api_key,
             log_llm_payload=log_llm_payload,
         )
+        left_mode_config = _mode_config_key(left.mode, left.markdown_config)
+        right_mode_config = _mode_config_key(right.mode, right.markdown_config)
         scores_by_mode[left.mode].append(float(evaluation.left.total_score))
         scores_by_mode[right.mode].append(float(evaluation.right.total_score))
+        scores_by_mode_config.setdefault(left_mode_config, []).append(
+            float(evaluation.left.total_score)
+        )
+        scores_by_mode_config.setdefault(right_mode_config, []).append(
+            float(evaluation.right.total_score)
+        )
         if evaluation.winner == "left":
             wins_by_mode[left.mode] += 1
+            wins_by_mode_config[left_mode_config] = (
+                wins_by_mode_config.get(left_mode_config, 0) + 1
+            )
         elif evaluation.winner == "right":
             wins_by_mode[right.mode] += 1
+            wins_by_mode_config[right_mode_config] = (
+                wins_by_mode_config.get(right_mode_config, 0) + 1
+            )
         else:
             ties_by_mode[left.mode] += 1
             ties_by_mode[right.mode] += 1
+            ties_by_mode_config[left_mode_config] = (
+                ties_by_mode_config.get(left_mode_config, 0) + 1
+            )
+            ties_by_mode_config[right_mode_config] = (
+                ties_by_mode_config.get(right_mode_config, 0) + 1
+            )
 
         rows.append(
             {
                 "question": left.question,
                 "repetition": left.repetition,
+                "markdown_config": left.markdown_config,
+                "batch_max_chunks": left.batch_max_chunks,
+                "max_workers": left.max_workers,
                 "left_label": evaluation.left_label,
                 "right_label": evaluation.right_label,
                 "left_total_score": evaluation.left.total_score,
@@ -422,17 +708,17 @@ def _run_benchmark_judging(
             }
         )
 
-    summary: dict[str, dict[str, float]] = {}
-    for mode_name, mode_scores in scores_by_mode.items():
-        if not mode_scores:
-            continue
-        summary[mode_name] = {
-            "mean_judge_score": statistics.fmean(mode_scores),
-            "median_judge_score": statistics.median(mode_scores),
-            "wins": float(wins_by_mode[mode_name]),
-            "ties": float(ties_by_mode[mode_name]),
-        }
-    return rows, summary
+    judge_summary = _summarize_judge_scores(
+        scores_by_mode,
+        wins_by_mode,
+        ties_by_mode,
+    )
+    judge_mode_config_summary = _summarize_judge_scores(
+        scores_by_mode_config,
+        wins_by_mode_config,
+        ties_by_mode_config,
+    )
+    return rows, judge_summary, judge_mode_config_summary
 
 
 def run_retrieval_strategy_benchmark(
@@ -444,15 +730,18 @@ def run_retrieval_strategy_benchmark(
     selected_cities: list[str],
     repetitions: int,
     mode_configs: list[BenchmarkModeConfig],
+    markdown_configs: list[BenchmarkMarkdownConfig],
     use_query_overrides: bool,
     query_overrides_path: Path | None,
     log_llm_payload: bool,
 ) -> BenchmarkReport:
-    """Execute retrieval strategy benchmark for standard and vector modes."""
+    """Execute retrieval strategy benchmark for configured modes and markdown options."""
     if repetitions < 1:
         raise ValueError("repetitions must be >= 1")
     if not mode_configs:
         raise ValueError("At least one benchmark mode is required.")
+    if not markdown_configs:
+        raise ValueError("At least one markdown benchmark config is required.")
 
     questions = _load_questions(questions_file)
     query_overrides: dict[str, ResearchQuestionRefinement] | None = None
@@ -475,33 +764,42 @@ def run_retrieval_strategy_benchmark(
     results: list[BenchmarkQuestionResult] = []
     for repetition in range(1, repetitions + 1):
         for question_index, question in enumerate(questions, start=1):
-            for mode in mode_configs:
-                env_overrides = _load_env_overrides(mode.env_files)
-                mode_runs_dir = benchmark_root / "runs" / mode.name
-                mode_runs_dir.mkdir(parents=True, exist_ok=True)
-                logger.info(
-                    "Benchmark run mode=%s repetition=%d question_index=%d",
-                    mode.name,
-                    repetition,
-                    question_index,
-                )
-                result = _run_mode_question(
-                    mode_name=mode.name,
-                    question=question,
-                    repetition=repetition,
-                    run_index=question_index,
-                    config_path=config_path,
-                    docs_dir=docs_dir,
-                    runs_dir=mode_runs_dir,
-                    selected_cities=selected_cities,
-                    log_llm_payload=log_llm_payload,
-                    env_overrides=env_overrides,
-                    refine_question_func=fixed_refiner,
-                )
-                results.append(result)
+            for markdown_config in markdown_configs:
+                for mode in mode_configs:
+                    env_overrides = _load_env_overrides(mode.env_files)
+                    mode_runs_dir = benchmark_root / "runs" / mode.name
+                    mode_runs_dir.mkdir(parents=True, exist_ok=True)
+                    logger.info(
+                        (
+                            "Benchmark run mode=%s config=%s batch=%d workers=%d "
+                            "repetition=%d question_index=%d"
+                        ),
+                        mode.name,
+                        markdown_config.name,
+                        markdown_config.batch_max_chunks,
+                        markdown_config.max_workers,
+                        repetition,
+                        question_index,
+                    )
+                    result = _run_mode_question(
+                        mode_name=mode.name,
+                        markdown_config=markdown_config,
+                        question=question,
+                        repetition=repetition,
+                        run_index=question_index,
+                        config_path=config_path,
+                        docs_dir=docs_dir,
+                        runs_dir=mode_runs_dir,
+                        selected_cities=selected_cities,
+                        log_llm_payload=log_llm_payload,
+                        env_overrides=env_overrides,
+                        refine_question_func=fixed_refiner,
+                    )
+                    results.append(result)
 
     mode_summary = _summarize_mode(results)
-    judge_results, judge_summary = _run_benchmark_judging(
+    mode_config_summary = _summarize_mode_config(results)
+    judge_results, judge_summary, judge_mode_config_summary = _run_benchmark_judging(
         results=results,
         config_path=config_path,
         log_llm_payload=log_llm_payload,
@@ -519,10 +817,20 @@ def run_retrieval_strategy_benchmark(
             {"name": mode.name, "env_files": [str(path) for path in mode.env_files]}
             for mode in mode_configs
         ],
+        markdown_configs=[
+            {
+                "name": cfg.name,
+                "batch_max_chunks": cfg.batch_max_chunks,
+                "max_workers": cfg.max_workers,
+            }
+            for cfg in markdown_configs
+        ],
         results=results,
         mode_summary=mode_summary,
+        mode_config_summary=mode_config_summary,
         judge_results=judge_results,
         judge_summary=judge_summary,
+        judge_mode_config_summary=judge_mode_config_summary,
     )
 
     report_json_path = benchmark_root / "benchmark_report.json"
@@ -540,6 +848,7 @@ def run_retrieval_strategy_benchmark(
 
 __all__ = [
     "BenchmarkModeConfig",
+    "BenchmarkMarkdownConfig",
     "BenchmarkQuestionResult",
     "BenchmarkReport",
     "run_retrieval_strategy_benchmark",

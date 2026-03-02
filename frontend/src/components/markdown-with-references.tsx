@@ -52,10 +52,11 @@ const POPOVER_ESTIMATED_HEIGHT_PX = 280;
 
 interface CitationGroupToggleProps {
   citations: ReactNode[];
+  isOpen: boolean;
+  onToggle: () => void;
 }
 
-function CitationGroupToggle({ citations }: CitationGroupToggleProps) {
-  const [isOpen, setIsOpen] = useState(false);
+function CitationGroupToggle({ citations, isOpen, onToggle }: CitationGroupToggleProps) {
   const label = citations.length > 1 ? "Sources" : "Source";
   return (
     <span className="citation-group">
@@ -64,7 +65,7 @@ function CitationGroupToggle({ citations }: CitationGroupToggleProps) {
         className={`citation-group-toggle${isOpen ? " citation-group-toggle-open" : ""}`}
         aria-expanded={isOpen}
         aria-label={isOpen ? `Hide ${label.toLowerCase()}` : `Show ${label.toLowerCase()}`}
-        onClick={() => setIsOpen((current) => !current)}
+        onClick={onToggle}
       >
         {!isOpen ? <span className="citation-group-label">{label}</span> : null}
         <ChevronRight
@@ -112,7 +113,59 @@ function _isCitationSeparatorNode(node: ReactNode): boolean {
   return /^[\s,;|/._-]*$/.test(node);
 }
 
-function _collapseCitationRuns(children: ReactNode): ReactNode[] {
+function _extractCitationRefId(node: ReactNode): string | null {
+  if (!isValidElement(node)) {
+    return null;
+  }
+  const props = node.props as Record<string, unknown> | undefined;
+  const title = props?.title;
+  if (typeof title === "string") {
+    const trimmed = title.trim();
+    if (/^ref_[1-9]\d*$/.test(trimmed)) {
+      return trimmed;
+    }
+  }
+  const href = typeof props?.href === "string" ? props.href : "";
+  if (!href.startsWith(REFERENCE_HREF_PREFIX)) {
+    return null;
+  }
+  const refId = href.slice(REFERENCE_HREF_PREFIX.length).trim();
+  return /^ref_[1-9]\d*$/.test(refId) ? refId : null;
+}
+
+function _buildCitationGroupId(
+  allNodes: ReactNode[],
+  runNodes: ReactNode[],
+  runStartIndex: number,
+): string {
+  const runRefIds = runNodes
+    .map((node) => _extractCitationRefId(node))
+    .filter((value): value is string => value !== null);
+  const runSignature =
+    runRefIds.length === runNodes.length && runRefIds.length > 0
+      ? runRefIds.join("|")
+      : `group-${runStartIndex}`;
+  const contextStart = Math.max(0, runStartIndex - 2);
+  const contextEnd = Math.min(allNodes.length, runStartIndex + runNodes.length + 2);
+  const contextSignature = allNodes
+    .slice(contextStart, contextEnd)
+    .map((node) => _extractCitationRefId(node) ?? _toPlainText(node))
+    .join(" ")
+    .replace(/\s+/g, " ")
+    .trim()
+    .slice(0, 160);
+  return `${runSignature}::${runStartIndex}::${contextSignature}`;
+}
+
+interface CitationGroupStateHandlers {
+  isGroupOpen: (groupId: string) => boolean;
+  toggleGroup: (groupId: string) => void;
+}
+
+function _collapseCitationRuns(
+  children: ReactNode,
+  groupStateHandlers?: CitationGroupStateHandlers,
+): ReactNode[] {
   const nodes = Children.toArray(children);
   const collapsed: ReactNode[] = [];
   let index = 0;
@@ -147,10 +200,15 @@ function _collapseCitationRuns(children: ReactNode): ReactNode[] {
     }
 
     if (run.length > 1) {
+      const groupId = _buildCitationGroupId(nodes, run, index);
       collapsed.push(
         <CitationGroupToggle
-          key={`citation-group-${index}`}
+          key={`citation-group-${groupId}`}
           citations={run}
+          isOpen={groupStateHandlers?.isGroupOpen(groupId) ?? false}
+          onToggle={() => {
+            groupStateHandlers?.toggleGroup(groupId);
+          }}
         />,
       );
     } else {
@@ -250,6 +308,9 @@ export function MarkdownWithReferences({
   const [activePopover, setActivePopover] = useState<ReferencePopoverState | null>(
     null,
   );
+  const [openCitationGroups, setOpenCitationGroups] = useState<Record<string, boolean>>(
+    {},
+  );
   const [loadingRequestKey, setLoadingRequestKey] = useState<string | null>(null);
   const [referenceError, setReferenceError] = useState<string | null>(null);
 
@@ -292,6 +353,7 @@ export function MarkdownWithReferences({
   useEffect(() => {
     activeRequestKeyRef.current = null;
     setActivePopover(null);
+    setOpenCitationGroups({});
     setLoadingRequestKey(null);
     setReferenceError(null);
     setReferenceCache({});
@@ -439,6 +501,17 @@ export function MarkdownWithReferences({
     return pointer?.cityName ?? "Source";
   }
 
+  function isCitationGroupOpen(groupId: string): boolean {
+    return openCitationGroups[groupId] === true;
+  }
+
+  function toggleCitationGroup(groupId: string): void {
+    setOpenCitationGroups((current) => ({
+      ...current,
+      [groupId]: !current[groupId],
+    }));
+  }
+
   return (
     <>
       <div className={className}>
@@ -453,8 +526,22 @@ export function MarkdownWithReferences({
               }
               return <h1>{children}</h1>;
             },
-            p: ({ children }) => <p>{_collapseCitationRuns(children)}</p>,
-            li: ({ children }) => <li>{_collapseCitationRuns(children)}</li>,
+            p: ({ children }) => (
+              <p>
+                {_collapseCitationRuns(children, {
+                  isGroupOpen: isCitationGroupOpen,
+                  toggleGroup: toggleCitationGroup,
+                })}
+              </p>
+            ),
+            li: ({ children }) => (
+              <li>
+                {_collapseCitationRuns(children, {
+                  isGroupOpen: isCitationGroupOpen,
+                  toggleGroup: toggleCitationGroup,
+                })}
+              </li>
+            ),
             table: ({ children }) => (
               <div className="markdown-table-wrap">
                 <table className="markdown-table">{children}</table>
@@ -462,7 +549,12 @@ export function MarkdownWithReferences({
             ),
             th: ({ children }) => <th className="markdown-table-head">{children}</th>,
             td: ({ children }) => (
-              <td className="markdown-table-cell">{_collapseCitationRuns(children)}</td>
+              <td className="markdown-table-cell">
+                {_collapseCitationRuns(children, {
+                  isGroupOpen: isCitationGroupOpen,
+                  toggleGroup: toggleCitationGroup,
+                })}
+              </td>
             ),
             a: ({ href, children }) => {
               if (

@@ -28,6 +28,7 @@ class RunPaths:
     base_dir: Path
     run_log: Path
     run_summary: Path
+    error_log: Path
     context_bundle: Path
     research_question: Path
     schema_summary: Path
@@ -51,6 +52,7 @@ def create_run_paths(runs_dir: Path, run_id: str, context_bundle_name: str) -> R
         base_dir=base_dir,
         run_log=base_dir / "run.json",
         run_summary=base_dir / "run_summary.txt",
+        error_log=base_dir / "error_log.txt",
         context_bundle=base_dir / context_bundle_name,
         research_question=base_dir / "research_question.json",
         schema_summary=base_dir / "schema_summary.json",

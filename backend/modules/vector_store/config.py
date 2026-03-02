@@ -33,6 +33,7 @@ class VectorStoreSettings:
 def get_vector_store_settings(config: AppConfig) -> VectorStoreSettings:
     """Map app config into vector store settings dataclass."""
     vector_store = config.vector_store
+    max_embedding_retries = max(config.retry.max_attempts - 1, 0)
     return VectorStoreSettings(
         enabled=vector_store.enabled,
         persist_path=vector_store.chroma_persist_path,
@@ -40,9 +41,9 @@ def get_vector_store_settings(config: AppConfig) -> VectorStoreSettings:
         embedding_model=vector_store.embedding_model,
         embedding_max_input_tokens=vector_store.embedding_max_input_tokens,
         embedding_batch_size=vector_store.embedding_batch_size,
-        embedding_max_retries=vector_store.embedding_max_retries,
-        embedding_retry_base_seconds=vector_store.embedding_retry_base_seconds,
-        embedding_retry_max_seconds=vector_store.embedding_retry_max_seconds,
+        embedding_max_retries=max_embedding_retries,
+        embedding_retry_base_seconds=config.retry.backoff_base_seconds,
+        embedding_retry_max_seconds=config.retry.backoff_max_seconds,
         chunk_tokens=vector_store.embedding_chunk_tokens,
         chunk_overlap_tokens=vector_store.embedding_chunk_overlap_tokens,
         table_row_group_max_rows=vector_store.table_row_group_max_rows,

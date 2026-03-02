@@ -35,6 +35,7 @@ The `uv.lock` file is committed to ensure reproducible builds.
 
 - `llm_config.yaml` stores model names and settings.
 - Markdown researcher batching knobs are configured in `llm_config.yaml` under `markdown_researcher` (`batch_max_chunks`, `batch_max_input_tokens`, `batch_overhead_tokens`).
+- Retry policy is centralized in top-level `retry` in `llm_config.yaml` (`max_attempts`, `backoff_base_seconds`, `backoff_max_seconds`) and is shared across LLM calls, agent max-turn limits, chat tool-call loop limits, and vector retrieval operations.
 - Optional `markdown_researcher.reasoning_effort` can be set for Grok reasoning control (for example `"none"`), but this is model/provider-specific and may fail on unsupported models.
 - Copy `.env.example` to `.env` and fill in values for your environment.
 - `.env` is loaded automatically via `python-dotenv` in the scripts.
@@ -117,25 +118,17 @@ Recommended tuning workflow:
 
 ## API key setup (important)
 
-You have two supported options:
-
-1. Backend default key (server-side):
+Current UI flow uses the backend default key:
 
 - Put key in root `.env`:
   - `OPENROUTER_API_KEY=...`
 - Use this when deployment should use one shared server key.
 
-2. User-provided key (frontend, per browser):
-
-- In the app UI, use `OpenRouter API Key (Optional)` and click `Use This Key`.
-- This key is stored in browser `localStorage` and sent as `X-OpenRouter-Api-Key`.
-- Use this when users should provide their own key instead of a shared backend key.
-
 If key authentication fails:
 
 - runs finish with `error.code = API_KEY_ERROR`
 - chat endpoints return `401` with a key-specific message
-- UI surfaces the error so users can switch key and retry.
+- UI surfaces the error so backend credentials can be fixed and the run retried.
 
 Example `llm_config.yaml`:
 
@@ -161,13 +154,10 @@ markdown_researcher:
   input_token_reserve: 2000
   max_chunk_tokens: 120000
   chunk_overlap_tokens: 200
-  batch_max_chunks: 16
+  batch_max_chunks: 32
   batch_max_input_tokens: null
   batch_overhead_tokens: 600
-  max_workers: 2
-  max_retries: 2
-  retry_base_seconds: 0.8
-  retry_max_seconds: 6.0
+  max_workers: 8
 writer:
   model: "moonshotai/kimi-k2.5"
   temperature: 0.0
@@ -183,6 +173,10 @@ assumptions_reviewer:
   model: "openai/gpt-5.2"
   temperature: 0.0
   max_output_tokens: 8000
+retry:
+  max_attempts: 5
+  backoff_base_seconds: 0.8
+  backoff_max_seconds: 8.0
 openrouter_base_url: "https://openrouter.ai/api/v1"
 enable_sql: false
 ```
@@ -320,7 +314,9 @@ Useful flags:
 
 - `--questions-file backend/benchmarks/prompts/retrieval_questions.txt`
 - `--repetitions 2`
-- `--mode vector_store` — run only vector retrieval (no standard chunking). The benchmark runs every question in the questions file; `--repetitions N` runs each question N times per mode (total runs = questions × repetitions × modes).
+- `--mode vector_store` — run only vector retrieval (no standard chunking).
+- `--markdown-option 16:8 --markdown-option 32:4 --markdown-option 32:8` — run explicit markdown benchmark options (`batch_max_chunks:max_workers`).
+- The benchmark runs every question in the questions file; `--repetitions N` runs each question N times per mode and markdown option (total runs = questions × repetitions × modes × markdown_options).
 
 **Vector-only reproducibility (same query and same revised retrieval queries):** To run the vector strategy multiple times with the exact same question and the exact same refined retrieval queries (e.g. to check outcome stability):
 
@@ -337,16 +333,20 @@ Useful flags:
 
 Benchmark behavior notes:
 
-- The benchmark runs all questions from the questions file (not a single query repeated N times). Run IDs use `rNN` = repetition and `qNN` = question index (e.g. `vector_store_r01_q02` = repetition 1, second question). For identical queries across all runs, use a one-line questions file.
+- The benchmark runs all questions from the questions file (not a single query repeated N times).
+- Run IDs include repetition/question indices and markdown benchmark option, for example `vector_store_b32_w8_r01_q02_...`.
+- Default markdown benchmark options are `16:8`, `32:4`, and `32:8`.
+- For identical queries across all runs, use a one-line questions file.
 - The script always loads benchmark env files from `backend/benchmarks/config/`.
 - The benchmark is runtime-only; it does not build/update the vector index.
 - Vector mode uses the existing default Chroma store/collection unless overridden in your main environment.
-- The benchmark also runs LLM-as-judge scoring (`openai/gpt-5.2`) per matched standard-vs-vector run pair.
+- The benchmark also runs LLM-as-judge scoring (`openai/gpt-5.2`) per matched standard-vs-vector run pair within the same markdown option.
+- The benchmark report includes speed metrics (`runtime`, `tokens/sec`) and LLM issue counters (rate limits, retries exhausted, max-turns, and non-working calls).
 
 Outputs are written to `output/benchmarks/<benchmark_id>/`:
 
 - `benchmark_report.json`: machine-readable benchmark results.
-- `benchmark_report.md`: human-readable summary with runtime/tokens and judge score summaries.
+- `benchmark_report.md`: human-readable summary with runtime/tokens/sec, judge score summaries, and LLM issue counters.
 - `runs/<mode>/<run_id>/...`: original pipeline artifacts for each benchmark run.
 
 Standalone judge command for any two outputs:
@@ -372,7 +372,7 @@ Core endpoints:
 
 - `GET /` (root health endpoint)
 - `POST /api/v1/runs`
-- `GET /api/v1/runs` (list discovered runs as `run_id` + `question`)
+- `GET /api/v1/runs` (list discovered runs as `run_id` + `question`; refreshed from `RUNS_DIR/*/run.json` artifact folders on each request, plus currently queued/running in-memory runs)
 - `GET /api/v1/runs/{run_id}/status`
 - `GET /api/v1/runs/{run_id}/output`
 - `GET /api/v1/runs/{run_id}/context`
@@ -396,9 +396,14 @@ Core endpoints:
 ```json
 {
   "question": "Build a report for selected cities",
-  "cities": ["Munich", "Berlin"]
+  "cities": ["Munich", "Berlin"],
+  "analysis_mode": "aggregate"
 }
 ```
+
+`analysis_mode` values:
+- `aggregate` (default): one integrated synthesis across selected cities.
+- `city_by_city`: one city section at a time with similarities/comparison at the end.
 
 Optional header for user-owned key (without backend default key):
 
@@ -455,14 +460,17 @@ NEXT_PUBLIC_API_BASE_URL=http://127.0.0.1:8000
 ```
 
 Frontend supports three city scope modes in the build form: all cities, predefined group, and manual selection.
-Clicking `Open Context Chat` switches to a dedicated chat workspace (not a chat modal), and `Manage Contexts` opens a popup for multi-context selection.
+Frontend also supports two answer modes: `Aggregate Mode` and `City-by-City Mode` (sent as `analysis_mode` in run requests).
+Clicking `Chat About the Answer` switches to a dedicated chat workspace (not a chat modal).
 Document and chat citations render as compact city labels; clicking a label loads and shows only the source quote.
-Clicking `Assumptions Review` opens a dedicated workspace where:
+The `Load Previous Answer` picker reads `run_id` + `question` from `GET /api/v1/runs`, then loads selected run artifacts through the standard run endpoints.
 
-- `Find Missing Data` runs two LLM passes (extract + verification).
-- Missing items are grouped by city with editable `proposed_number` (number or free-form text).
-- `Regenerate` returns revised content without persisting assumptions by default.
-  The `Load Existing Run` picker reads `run_id` + `question` from `GET /api/v1/runs`, then loads selected run artifacts through the standard run endpoints.
+Hidden but implemented features (buttons temporarily hidden):
+
+- `Assumptions Review` workspace: `Find Missing Data` runs two LLM passes (extract + verification), missing items are editable by city, and `Regenerate` returns revised content without persisting assumptions by default.
+- `Manage Contexts` in chat workspace: switching/combining multiple completed run contexts with token-cap enforcement.
+- Frontend user-owned OpenRouter key controls: `OpenRouter API Key (Optional)`, `Use This Key`, and `Clear` are implemented but hidden in the current UI; API-level support remains available via `X-OpenRouter-Api-Key`.
+- Chat token metrics in UI (`total_tokens`, `token_cap`, and per-context token counts) are implemented but hidden for regular users; planned to be shown in a future dev mode.
 
 Example file is available at `frontend/.env.example`.
 
@@ -527,10 +535,11 @@ python -m backend.scripts.test_db_connection
 
 Artifacts are written under `output/<run_id>/`:
 
-- `run.json`: machine-readable run metadata (status, timestamps, artifacts, decisions).
-- `run.log`: detailed runtime logs, including per-agent `LLM_USAGE` lines.
+- `run.json`: machine-readable run metadata (status, timestamps, artifacts, decisions), including `inputs.analysis_mode` and `artifacts.error_log` when available.
+- `run.log`: detailed runtime logs, including per-agent `LLM_USAGE` lines and writer city-citation coverage checkpoints (`WRITER_CITATION_COVERAGE`, with `coverage_ratio` such as `33/33`).
+- `error_log.txt`: extracted error-focused log view from `run.log` (`ERROR`, `CRITICAL`, and exhausted retry events).
 - `run_summary.txt`: human-readable consolidated report. Header includes `Started`, `Completed`, and explicit `Total runtime` in seconds, plus `LLM Usage` totals/per-agent. It also captures an input snapshot (`initial question`, `refined question`, `selected cities` planned/found, markdown dir/file/chunk/excerpt counts) and a `MARKDOWN_FAILURE_SUMMARY` aggregated from batch failures.
-- `context_bundle.json`: payload passed between agents (`sql`, `markdown`, `research_question`, final path).
+- `context_bundle.json`: payload passed between agents (`sql`, `markdown`, `research_question`, `analysis_mode`, final path).
 - `research_question.json`: orchestrator-refined research payload. Includes:
   - `original_question`: raw user question.
   - `canonical_research_query`: canonical refined question.

@@ -118,6 +118,45 @@ def test_load_config_reads_markdown_reasoning_effort_from_yaml(
     assert config.markdown_researcher.reasoning_effort == "none"
 
 
+def test_load_config_reads_agent_reasoning_effort_for_gpt_modules(
+    tmp_path: Path,
+) -> None:
+    """Agent-level reasoning effort is loaded for non-markdown GPT modules."""
+    config_path = tmp_path / "llm_config.yaml"
+    config_path.write_text(
+        "\n".join(
+            [
+                "orchestrator:",
+                "  model: openai/gpt-5.2",
+                "  reasoning_effort: high",
+                "sql_researcher:",
+                "  model: openai/gpt-5.2",
+                "  reasoning_effort: high",
+                "markdown_researcher:",
+                "  model: x-ai/grok-4.1-fast",
+                "writer:",
+                "  model: openai/gpt-5.2",
+                "  reasoning_effort: high",
+                "chat:",
+                "  model: openai/gpt-5.2",
+                "  reasoning_effort: high",
+                "assumptions_reviewer:",
+                "  model: openai/gpt-5.2",
+                "  reasoning_effort: high",
+            ]
+        ),
+        encoding="utf-8",
+    )
+
+    config = load_config(config_path)
+
+    assert config.orchestrator.reasoning_effort == "high"
+    assert config.sql_researcher.reasoning_effort == "high"
+    assert config.writer.reasoning_effort == "high"
+    assert config.chat.reasoning_effort == "high"
+    assert config.assumptions_reviewer.reasoning_effort == "high"
+
+
 def test_load_config_rejects_invalid_markdown_reasoning_effort(
     tmp_path: Path,
 ) -> None:
@@ -142,3 +181,53 @@ def test_load_config_rejects_invalid_markdown_reasoning_effort(
 
     with pytest.raises(ValidationError):
         load_config(config_path)
+
+
+def test_load_config_uses_central_retry_defaults(tmp_path: Path) -> None:
+    """Retry settings default to centralized values when omitted."""
+    config_path = _write_minimal_config(tmp_path)
+
+    config = load_config(config_path)
+
+    assert config.retry.max_attempts == 5
+    assert config.retry.backoff_base_seconds == 0.8
+    assert config.retry.backoff_max_seconds == 8.0
+
+
+def test_load_config_defaults_chat_history_to_twelve(tmp_path: Path) -> None:
+    """Chat history defaults to 12 messages when chat config is omitted."""
+    config_path = _write_minimal_config(tmp_path)
+
+    config = load_config(config_path)
+
+    assert config.chat.max_history_messages == 12
+
+
+def test_load_config_reads_central_retry_settings_from_yaml(tmp_path: Path) -> None:
+    """Retry settings can be overridden via top-level retry config."""
+    config_path = tmp_path / "llm_config.yaml"
+    config_path.write_text(
+        "\n".join(
+            [
+                "orchestrator:",
+                "  model: test-model",
+                "sql_researcher:",
+                "  model: test-model",
+                "markdown_researcher:",
+                "  model: test-model",
+                "writer:",
+                "  model: test-model",
+                "retry:",
+                "  max_attempts: 7",
+                "  backoff_base_seconds: 0.25",
+                "  backoff_max_seconds: 3.5",
+            ]
+        ),
+        encoding="utf-8",
+    )
+
+    config = load_config(config_path)
+
+    assert config.retry.max_attempts == 7
+    assert config.retry.backoff_base_seconds == 0.25
+    assert config.retry.backoff_max_seconds == 3.5

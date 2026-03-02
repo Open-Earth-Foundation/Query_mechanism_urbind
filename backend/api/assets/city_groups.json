@@ -1,9 +1,9 @@
 {
   "groups": [
     {
-      "id": "dach-core",
-      "name": "DACH Core",
-      "description": "German-speaking and nearby core cities.",
+      "id": "dach-germany",
+      "name": "DACH & Germany Core",
+      "description": "Aachen, Dresden, Heidelberg, Leipzig, Mannheim, Munich, Munster, Klagenfurt.",
       "cities": [
         "Aachen",
         "Dresden",
@@ -11,63 +11,179 @@
         "Leipzig",
         "Mannheim",
         "Munich",
-        "Munster"
+        "Munster",
+        "Klagenfurt"
       ]
     },
     {
-      "id": "nordic-cluster",
-      "name": "Nordic Cluster",
-      "description": "Nordic and Baltic climate-focused cities.",
+      "id": "benelux-lux",
+      "name": "Benelux & Luxembourg",
+      "description": "Amsterdam, Antwerp, Eindhoven, Groningen, Leuven, Rotterdam, The_Hague, Differdange.",
       "cities": [
-        "Aarhus",
-        "Espoo",
-        "Lahti",
-        "Oslo",
-        "Stavanger",
-        "Tampere",
-        "Umea",
-        "Vilnius"
+        "Amsterdam",
+        "Antwerp",
+        "Eindhoven",
+        "Groningen",
+        "Leuven",
+        "Rotterdam",
+        "The_Hague",
+        "Differdange"
       ]
     },
     {
-      "id": "iberian-arc",
-      "name": "Iberian Arc",
-      "description": "Iberian Peninsula and nearby western cities.",
+      "id": "uk-ireland",
+      "name": "UK & Ireland",
+      "description": "Bristol, Cork, Dublin, Glasgow.",
       "cities": [
-        "Guimaraes",
-        "Lisbon",
-        "Porto",
+        "Bristol",
+        "Cork",
+        "Dublin",
+        "Glasgow"
+      ]
+    },
+    {
+      "id": "france-core",
+      "name": "France Core Cities",
+      "description": "Angers, Bordeaux, Dijon, Dunkirk, Grenoble, Lyon, Marseille, Nantes, Paris.",
+      "cities": [
+        "Angers",
+        "Bordeaux",
+        "Dijon",
+        "Dunkirk",
+        "Grenoble",
+        "Lyon",
+        "Marseille",
+        "Nantes",
+        "Paris"
+      ]
+    },
+    {
+      "id": "iberia",
+      "name": "Iberian Cities",
+      "description": "Barcelona, Madrid, Valencia, Seville, Vitoria_Gasteiz, Zaragoza, Valladolid, Lisbon, Porto, Guimaraes.",
+      "cities": [
+        "Barcelona",
+        "Madrid",
+        "Valencia",
         "Seville",
         "Vitoria_Gasteiz",
-        "Zaragoza"
+        "Zaragoza",
+        "Valladolid",
+        "Lisbon",
+        "Porto",
+        "Guimaraes"
       ]
     },
     {
-      "id": "central-eastern",
-      "name": "Central and Eastern Europe",
-      "description": "Cities across central/eastern Europe.",
+      "id": "italy-core",
+      "name": "Italy Core Cities",
+      "description": "Bergamo, Bologna, Florence, Milan, Padova, Parma, Prato, Rome, Turin.",
       "cities": [
-        "Bratislava",
-        "Cluj_Napoca",
+        "Bergamo",
+        "Bologna",
+        "Florence",
+        "Milan",
+        "Padova",
+        "Parma",
+        "Prato",
+        "Rome",
+        "Turin"
+      ]
+    },
+    {
+      "id": "scandinavia",
+      "name": "Scandinavia",
+      "description": "Aarhus, Copenhagen, Gothenburg, Malmo, Lund, Helsingborg, Oslo, Stavanger, Trondheim, Stockholm, Gavle, Umea, Sonderborg.",
+      "cities": [
+        "Aarhus",
+        "Copenhagen",
+        "Gothenburg",
+        "Malmo",
+        "Lund",
+        "Helsingborg",
+        "Oslo",
+        "Stavanger",
+        "Trondheim",
+        "Stockholm",
+        "Gavle",
+        "Umea",
+        "Sonderborg"
+      ]
+    },
+    {
+      "id": "finland-iceland",
+      "name": "Finland & Iceland",
+      "description": "Espoo, Lahti, Lappeenranta, Tampere, Turku, Helsinki, Reykjavik.",
+      "cities": [
+        "Espoo",
+        "Lahti",
+        "Lappeenranta",
+        "Tampere",
+        "Turku",
+        "Helsinki",
+        "Reykjavik"
+      ]
+    },
+    {
+      "id": "baltics",
+      "name": "Baltic Cities",
+      "description": "Riga, Liepaja, Vilnius, Taurage.",
+      "cities": [
+        "Riga",
+        "Liepaja",
+        "Vilnius",
+        "Taurage"
+      ]
+    },
+    {
+      "id": "poland",
+      "name": "Poland Cities",
+      "description": "Krakow, Lodz, Rzeszow, Warszawa, Wroclaw.",
+      "cities": [
         "Krakow",
-        "Kranj",
         "Lodz",
         "Rzeszow",
-        "Velenje",
         "Warszawa",
         "Wroclaw"
       ]
     },
     {
-      "id": "western-mixed",
-      "name": "Western Mixed",
-      "description": "Western Europe cross-country sample.",
+      "id": "central-europe",
+      "name": "Central Europe",
+      "description": "Bratislava, Budapest, Kosice, Miskolc, Pecs, Liberec, Bucharest, Cluj_Napoca, Suceava.",
       "cities": [
-        "Dublin",
-        "Nantes",
-        "Rotterdam",
-        "Rome",
-        "Turin"
+        "Bratislava",
+        "Budapest",
+        "Kosice",
+        "Miskolc",
+        "Pecs",
+        "Liberec",
+        "Bucharest",
+        "Cluj_Napoca",
+        "Suceava"
+      ]
+    },
+    {
+      "id": "balkans-east-med",
+      "name": "Balkans & Eastern Mediterranean",
+      "description": "Athens, Ioannina, Kalamata, Kozani, Thessaloniki, Trikala, Istanbul, Izmir, Limassol, Eilat, Ljubljana, Kranj, Velenje, Zagreb, Sofia, Gabrovo.",
+      "cities": [
+        "Athens",
+        "Ioannina",
+        "Kalamata",
+        "Kozani",
+        "Thessaloniki",
+        "Trikala",
+        "Istanbul",
+        "Izmir",
+        "Limassol",
+        "Eilat",
+        "Ljubljana",
+        "Kranj",
+        "Velenje",
+        "Zagreb",
+        "Sofia",
+        "Gabrovo"
       ]
     }
   ]

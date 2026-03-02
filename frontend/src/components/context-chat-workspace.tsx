@@ -5,7 +5,6 @@ import {
   ArrowLeft,
   Loader2,
   SendHorizonal,
-  Settings2,
   Sparkles,
 } from "lucide-react";
 
@@ -49,6 +48,7 @@ export function ContextChatWorkspace({
   onClose,
 }: ContextChatWorkspaceProps) {
   const messageScrollAreaRef = useRef<HTMLDivElement | null>(null);
+  const sendLockRef = useRef(false);
   const [conversationId, setConversationId] = useState<string | null>(null);
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [sessionContexts, setSessionContexts] =
@@ -80,6 +80,7 @@ export function ContextChatWorkspace({
     setContextCatalog([]);
     setManagerSelection([]);
     setCatalogError(null);
+    sendLockRef.current = false;
   }, [runId]);
 
   async function loadSessionContexts(
@@ -221,13 +222,14 @@ export function ContextChatWorkspace({
 
   async function handleSend(event: FormEvent<HTMLFormElement>): Promise<void> {
     event.preventDefault();
-    if (!runId || !conversationId || isSending) {
+    if (!runId || !conversationId || isSending || sendLockRef.current) {
       return;
     }
     const value = inputValue.trim();
     if (!value) {
       return;
     }
+    sendLockRef.current = true;
     setIsSending(true);
     setErrorMessage(null);
     setInputValue("");
@@ -244,10 +246,11 @@ export function ContextChatWorkspace({
       setErrorMessage(
         error instanceof Error ? error.message : "Message send failed.",
       );
-      setInputValue(value);
+      setInputValue((current) => (current.trim() ? current : value));
     } finally {
       setPendingPrompt(null);
       setIsSending(false);
+      sendLockRef.current = false;
     }
   }
 
@@ -330,7 +333,10 @@ export function ContextChatWorkspace({
     }
   }
 
+  const disabledInput = !canChat || !conversationId || isBootstrapping;
   const disabledSend = !canChat || !conversationId || isSending || isBootstrapping;
+  const hasVisibleMessages =
+    sortedMessages.length > 0 || (isSending && !!pendingPrompt);
 
   return (
     <>
@@ -346,7 +352,7 @@ export function ContextChatWorkspace({
                 Multi-context chat grounded in saved run outputs and context bundles.
               </CardDescription>
             </div>
-            <div className="flex flex-wrap items-center gap-2">
+            <div className="ml-auto flex flex-col items-end gap-2">
               {conversationId ? (
                 <Badge variant="outline">Session: {conversationId.slice(0, 8)}</Badge>
               ) : null}
@@ -354,30 +360,18 @@ export function ContextChatWorkspace({
                 <ArrowLeft className="h-4 w-4" />
                 Back to Document
               </Button>
-              <Button
-                type="button"
-                size="sm"
-                variant="outline"
-                onClick={() => setIsContextManagerOpen(true)}
-                disabled={!conversationId || isBootstrapping}
-              >
-                <Settings2 className="h-4 w-4" />
-                Manage Contexts
-              </Button>
             </div>
           </div>
 
           {sessionContexts ? (
             <div className="space-y-2 rounded-md border border-slate-200 bg-slate-50 p-3 text-xs text-slate-700">
               <p>
-                Active contexts: {sessionContexts.contexts.length} | Tokens:{" "}
-                {sessionContexts.total_tokens.toLocaleString()} /{" "}
-                {sessionContexts.token_cap.toLocaleString()}
+                Active contexts: {sessionContexts.contexts.length}
               </p>
               <div className="flex flex-wrap gap-2">
                 {sessionContexts.contexts.map((context) => (
                   <Badge key={context.run_id} variant="secondary">
-                    {context.run_id} ({context.total_tokens.toLocaleString()})
+                    {context.run_id}
                   </Badge>
                 ))}
               </div>
@@ -403,7 +397,7 @@ export function ContextChatWorkspace({
                 <Loader2 className="h-4 w-4 animate-spin" />
                 Preparing conversation memory...
               </div>
-            ) : sortedMessages.length === 0 ? (
+            ) : !hasVisibleMessages ? (
               <p className="text-sm text-slate-600">
                 No chat messages yet. Ask about assumptions, compare runs, or request a narrower summary.
               </p>
@@ -440,12 +434,23 @@ export function ContextChatWorkspace({
                     )}
                   </div>
                 ))}
+                {isSending && pendingPrompt ? (
+                  <div className="ml-8 rounded-lg bg-slate-900 p-3 text-sm text-white">
+                    <p className="mb-1 text-xs font-semibold uppercase tracking-wide opacity-75">
+                      user
+                    </p>
+                    <p className="whitespace-pre-wrap leading-relaxed">{pendingPrompt}</p>
+                  </div>
+                ) : null}
                 {isSending ? (
-                  <div className="mr-8 rounded-lg border border-teal-100 bg-teal-50 p-3 text-sm text-slate-900">
+                  <div className="mr-8 rounded-lg border border-teal-100 bg-teal-50 p-3 text-slate-900">
                     <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-teal-800">
                       assistant
                     </p>
-                    <div className="mb-2 inline-flex items-center gap-2 text-teal-800">
+                    <p className="mb-2 text-base font-semibold text-teal-900">
+                      Processing your question...
+                    </p>
+                    <div className="inline-flex items-center gap-2 text-xs text-teal-800">
                       <span>Thinking</span>
                       <span className="chat-thinking-dots" aria-hidden="true">
                         <span className="chat-thinking-dot" />
@@ -453,11 +458,6 @@ export function ContextChatWorkspace({
                         <span className="chat-thinking-dot" />
                       </span>
                     </div>
-                    {pendingPrompt ? (
-                      <p className="text-xs text-slate-600">
-                        Working on: {pendingPrompt}
-                      </p>
-                    ) : null}
                   </div>
                 ) : null}
               </div>
@@ -469,7 +469,7 @@ export function ContextChatWorkspace({
               placeholder="Ask follow-up questions grounded in selected contexts..."
               value={inputValue}
               onChange={(event) => setInputValue(event.target.value)}
-              disabled={disabledSend}
+              disabled={disabledInput}
             />
             <div className="flex items-center justify-between gap-3">
               {errorMessage ? (

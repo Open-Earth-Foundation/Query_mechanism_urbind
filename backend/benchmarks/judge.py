@@ -25,8 +25,13 @@ def build_benchmark_judge_agent(config: AppConfig, api_key: str) -> Agent:
         BENCHMARK_JUDGE_MODEL,
         api_key,
         config.openrouter_base_url,
+        client_max_retries=max(config.retry.max_attempts - 1, 0),
     )
-    settings = build_model_settings(temperature=0.0, max_output_tokens=1200)
+    settings = build_model_settings(
+        temperature=0.0,
+        max_output_tokens=1200,
+        reasoning_effort="high",
+    )
 
     @function_tool
     def submit_benchmark_judgement(
@@ -68,6 +73,7 @@ def judge_final_outputs(
     result = run_agent_sync(
         agent,
         json.dumps(payload, ensure_ascii=False),
+        max_turns=config.retry.max_attempts,
         log_llm_payload=log_llm_payload,
     )
     output = result.final_output

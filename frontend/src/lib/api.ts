@@ -15,6 +15,7 @@ export interface CreateRunRequest {
   question: string;
   run_id?: string;
   cities?: string[];
+  analysis_mode?: "aggregate" | "city_by_city";
   config_path?: string;
   markdown_path?: string;
   log_llm_payload?: boolean;
@@ -227,6 +228,9 @@ function normalizeCityKeys(values?: string[]): string[] | undefined {
 const configuredBaseUrl = process.env.NEXT_PUBLIC_API_BASE_URL?.trim() ?? "";
 const LOCAL_API_BASE_URL = "http://127.0.0.1:8000";
 const DEFAULT_API_BASE_URL = "https://urbind-query-mechanism-api.openearth.dev";
+const DEFAULT_REQUEST_TIMEOUT_MS = 120_000;
+const RUN_LIST_REQUEST_TIMEOUT_MS = 12_000;
+const STATUS_REQUEST_TIMEOUT_MS = 10_000;
 
 function normalizeBaseUrl(baseUrl: string): string {
   return baseUrl.replace(/\/+$/, "");
@@ -282,14 +286,45 @@ async function requestJson<T>(
   path: string,
   init?: RequestInit,
   includeJsonContentType = false,
+  timeoutMs = DEFAULT_REQUEST_TIMEOUT_MS,
 ): Promise<T> {
-  const response = await fetch(`${getApiBaseUrl()}${path}`, {
-    ...init,
-    headers: {
-      ...buildHeaders(includeJsonContentType),
-      ...(init?.headers ?? {}),
-    },
-  });
+  const timeoutController = new AbortController();
+  const externalSignal = init?.signal;
+  const onExternalAbort = (): void => {
+    timeoutController.abort();
+  };
+  if (externalSignal) {
+    if (externalSignal.aborted) {
+      timeoutController.abort();
+    } else {
+      externalSignal.addEventListener("abort", onExternalAbort, { once: true });
+    }
+  }
+  const timeoutHandle = setTimeout(() => {
+    timeoutController.abort();
+  }, timeoutMs);
+  let response: Response;
+  try {
+    response = await fetch(`${getApiBaseUrl()}${path}`, {
+      ...init,
+      signal: timeoutController.signal,
+      headers: {
+        ...buildHeaders(includeJsonContentType),
+        ...(init?.headers ?? {}),
+      },
+    });
+  } catch (error) {
+    if (error instanceof DOMException && error.name === "AbortError") {
+      if (externalSignal?.aborted) {
+        throw error;
+      }
+      throw new Error(`Request timeout after ${Math.round(timeoutMs / 1000)}s.`);
+    }
+    throw error;
+  } finally {
+    clearTimeout(timeoutHandle);
+    externalSignal?.removeEventListener("abort", onExternalAbort);
+  }
 
   if (!response.ok) {
     let message = `Request failed (${response.status})`;
@@ -307,8 +342,13 @@ async function requestJson<T>(
   return (await response.json()) as T;
 }
 
-export async function fetchRuns(): Promise<RunListResponse> {
-  return requestJson<RunListResponse>("/api/v1/runs");
+export async function fetchRuns(options?: { signal?: AbortSignal }): Promise<RunListResponse> {
+  return requestJson<RunListResponse>(
+    "/api/v1/runs",
+    { signal: options?.signal },
+    false,
+    RUN_LIST_REQUEST_TIMEOUT_MS,
+  );
 }
 
 export async function startRun(payload: CreateRunRequest): Promise<CreateRunResponse> {
@@ -326,8 +366,16 @@ export async function startRun(payload: CreateRunRequest): Promise<CreateRunResp
   );
 }
 
-export async function fetchRunStatus(runId: string): Promise<RunStatusResponse> {
-  return requestJson<RunStatusResponse>(`/api/v1/runs/${encodeURIComponent(runId)}/status`);
+export async function fetchRunStatus(
+  runId: string,
+  options?: { signal?: AbortSignal },
+): Promise<RunStatusResponse> {
+  return requestJson<RunStatusResponse>(
+    `/api/v1/runs/${encodeURIComponent(runId)}/status`,
+    { signal: options?.signal },
+    false,
+    STATUS_REQUEST_TIMEOUT_MS,
+  );
 }
 
 export async function fetchRunOutput(runId: string): Promise<RunOutputResponse> {

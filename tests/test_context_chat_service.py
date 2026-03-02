@@ -1,4 +1,16 @@
+from pathlib import Path
+
+import pytest
+
 from backend.api.services import context_chat
+from backend.utils.config import (
+    AgentConfig,
+    AppConfig,
+    ChatConfig,
+    MarkdownResearcherConfig,
+    OrchestratorConfig,
+    SqlResearcherConfig,
+)
 from backend.utils.tokenization import count_tokens
 
 
@@ -58,3 +70,119 @@ def test_system_prompt_header_avoids_inline_allowed_ref_list() -> None:
     )
     assert "Allowed references for this turn:" not in header
     assert "present in that catalog" in header
+    assert "calculator tool is available" in header
+
+
+def test_generate_context_chat_reply_forwards_reasoning_effort(
+    monkeypatch,
+) -> None:
+    captured_request_kwargs: dict[str, object] = {}
+
+    class _DummyResponse:
+        choices = [type("Choice", (), {"message": type("Message", (), {"content": "ok"})()})()]
+
+    def _stub_run_chat_completion_with_tools(
+        *,
+        client: object,
+        messages: list[dict[str, str]],
+        request_kwargs: dict[str, object],
+        max_tool_rounds: int,
+    ) -> object:
+        _ = client, messages, max_tool_rounds
+        captured_request_kwargs.update(request_kwargs)
+        return _DummyResponse()
+
+    monkeypatch.setattr(
+        context_chat,
+        "_run_chat_completion_with_tools",
+        _stub_run_chat_completion_with_tools,
+    )
+
+    config = AppConfig(
+        orchestrator=OrchestratorConfig(model="test-model", context_bundle_name="context_bundle.json"),
+        sql_researcher=SqlResearcherConfig(model="test-model"),
+        markdown_researcher=MarkdownResearcherConfig(model="test-model"),
+        writer=AgentConfig(model="test-model"),
+        chat=ChatConfig(model="openai/gpt-5.2", reasoning_effort="high"),
+        runs_dir=Path("output"),
+        markdown_dir=Path("documents"),
+        enable_sql=False,
+    )
+    result = context_chat.generate_context_chat_reply(
+        original_question="Question",
+        contexts=[
+            {
+                "run_id": "run-1",
+                "question": "Question",
+                "final_document": "# Final",
+                "context_bundle": {"markdown": {"status": "success", "excerpts": []}},
+            }
+        ],
+        history=[],
+        user_content="Answer briefly.",
+        config=config,
+        api_key_override="sk-or-v1-test",
+        citation_catalog=[],
+    )
+
+    assert result == "ok"
+    assert captured_request_kwargs["model"] == "openai/gpt-5.2"
+    assert captured_request_kwargs["reasoning_effort"] == "high"
+
+
+def test_generate_context_chat_reply_rejects_over_hard_token_cap(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    class _DummyResponse:
+        choices = [type("Choice", (), {"message": type("Message", (), {"content": "ok"})()})()]
+
+    def _stub_run_chat_completion_with_tools(
+        *,
+        client: object,
+        messages: list[dict[str, str]],
+        request_kwargs: dict[str, object],
+        max_tool_rounds: int,
+    ) -> object:
+        _ = client, messages, request_kwargs, max_tool_rounds
+        return _DummyResponse()
+
+    monkeypatch.setattr(
+        context_chat,
+        "_run_chat_completion_with_tools",
+        _stub_run_chat_completion_with_tools,
+    )
+    monkeypatch.setattr(
+        context_chat,
+        "_estimate_messages_tokens",
+        lambda _messages: context_chat.MAX_CHAT_CONTEXT_TOTAL_TOKENS + 1,
+    )
+
+    config = AppConfig(
+        orchestrator=OrchestratorConfig(model="test-model", context_bundle_name="context_bundle.json"),
+        sql_researcher=SqlResearcherConfig(model="test-model"),
+        markdown_researcher=MarkdownResearcherConfig(model="test-model"),
+        writer=AgentConfig(model="test-model"),
+        chat=ChatConfig(model="openai/gpt-5.2", reasoning_effort="high"),
+        runs_dir=Path("output"),
+        markdown_dir=Path("documents"),
+        enable_sql=False,
+    )
+
+    with pytest.raises(ValueError, match="Chat context exceeds token budget"):
+        context_chat.generate_context_chat_reply(
+            original_question="Question",
+            contexts=[
+                {
+                    "run_id": "run-1",
+                    "question": "Question",
+                    "final_document": "# Final",
+                    "context_bundle": {"markdown": {"status": "success", "excerpts": []}},
+                }
+            ],
+            history=[],
+            user_content="Answer briefly.",
+            config=config,
+            token_cap=context_chat.MAX_CHAT_CONTEXT_TOTAL_TOKENS + 30_000,
+            api_key_override="sk-or-v1-test",
+            citation_catalog=[],
+        )

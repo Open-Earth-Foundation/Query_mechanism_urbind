@@ -26,11 +26,15 @@ def build_orchestrator_agent(config: AppConfig, api_key: str) -> Agent:
     )
     instructions = load_prompt(prompt_path)
     model = build_openrouter_model(
-        config.orchestrator.model, api_key, config.openrouter_base_url
+        config.orchestrator.model,
+        api_key,
+        config.openrouter_base_url,
+        client_max_retries=max(config.retry.max_attempts - 1, 0),
     )
     settings = build_model_settings(
         config.orchestrator.temperature,
         config.orchestrator.max_output_tokens,
+        reasoning_effort=config.orchestrator.reasoning_effort,
     )
 
     @function_tool
@@ -57,11 +61,15 @@ def build_research_question_agent(config: AppConfig, api_key: str) -> Agent:
     )
     instructions = load_prompt(prompt_path)
     model = build_openrouter_model(
-        config.orchestrator.model, api_key, config.openrouter_base_url
+        config.orchestrator.model,
+        api_key,
+        config.openrouter_base_url,
+        client_max_retries=max(config.retry.max_attempts - 1, 0),
     )
     settings = build_model_settings(
         config.orchestrator.temperature,
         config.orchestrator.max_output_tokens,
+        reasoning_effort=config.orchestrator.reasoning_effort,
     )
 
     @function_tool
@@ -105,6 +113,7 @@ def decide_next_action(
     result = run_agent_sync(
         agent,
         json.dumps(payload, ensure_ascii=False),
+        max_turns=config.retry.max_attempts,
         log_llm_payload=log_llm_payload,
     )
     output = result.final_output
@@ -136,6 +145,7 @@ def refine_research_question(
     result = run_agent_sync(
         agent,
         json.dumps(payload, ensure_ascii=False),
+        max_turns=config.retry.max_attempts,
         log_llm_payload=log_llm_payload,
     )
     output = result.final_output

@@ -7,6 +7,7 @@ from pathlib import Path
 from typing import Any
 from collections.abc import Mapping
 
+from backend.services.error_log_artifact import write_error_log_artifact
 from backend.utils.paths import RunPaths
 
 logger = logging.getLogger(__name__)
@@ -27,6 +28,7 @@ class RunLogger:
                 "markdown_chunk_count": 0,
                 "markdown_excerpt_count": 0,
                 "markdown_source_mode": "standard_chunking",
+                "analysis_mode": "aggregate",
             },
             "status": "started",
             "started_at": datetime.now(timezone.utc).isoformat(),
@@ -39,6 +41,7 @@ class RunLogger:
             "markdown": None,
             "research_question": question,
             "final": None,
+            "analysis_mode": "aggregate",
         }
 
         self._ensure_dirs()
@@ -232,6 +235,51 @@ class RunLogger:
             "per_agent": per_agent,
         }
 
+    def _summarize_retry_events(self) -> dict[str, object] | None:
+        """Build a compact retry summary from run.log RETRY_* lines."""
+        run_log_path = self.run_paths.base_dir / "run.log"
+        if not run_log_path.exists():
+            return None
+
+        total_events = 0
+        exhausted_events = 0
+        by_operation: dict[str, int] = {}
+
+        with run_log_path.open("r", encoding="utf-8", errors="replace") as handle:
+            for line in handle:
+                marker = None
+                if "RETRY_EVENT " in line:
+                    marker = "RETRY_EVENT "
+                elif "RETRY_EXHAUSTED " in line:
+                    marker = "RETRY_EXHAUSTED "
+                if marker is None:
+                    continue
+                payload_raw = line.split(marker, 1)[1].strip()
+                try:
+                    payload = json.loads(payload_raw)
+                except json.JSONDecodeError:
+                    continue
+                if not isinstance(payload, dict):
+                    continue
+                operation = str(payload.get("operation", "unknown")).strip() or "unknown"
+                by_operation[operation] = by_operation.get(operation, 0) + 1
+                total_events += 1
+                if marker == "RETRY_EXHAUSTED ":
+                    exhausted_events += 1
+
+        if total_events == 0:
+            return None
+        return {
+            "total_events": total_events,
+            "exhausted_events": exhausted_events,
+            "by_operation": dict(sorted(by_operation.items())),
+        }
+
+    def _write_error_log_artifact(self) -> Path | None:
+        """Extract ERROR/CRITICAL and exhausted retry lines to error_log.txt."""
+        run_log_path = self.run_paths.base_dir / "run.log"
+        return write_error_log_artifact(run_log_path, self.run_paths.error_log)
+
     def write_text_log(self) -> None:
         lines: list[str] = []
         lines.append("RUN SUMMARY")
@@ -265,6 +313,9 @@ class RunLogger:
         llm_usage = self.run_log.get("llm_usage")
         if llm_usage:
             lines.append(f"LLM Usage: {json.dumps(llm_usage, ensure_ascii=False)}")
+        retry_summary = self.run_log.get("retry_summary")
+        if retry_summary:
+            lines.append(f"Retry Summary: {json.dumps(retry_summary, ensure_ascii=False)}")
         lines.append("")
 
         lines.append("ARTIFACTS")
@@ -368,12 +419,25 @@ class RunLogger:
             self.write_run_log()
         self.write_context_bundle()
 
+    def update_analysis_mode(self, analysis_mode: str) -> None:
+        """Persist selected analysis mode in run log and context bundle."""
+        normalized = analysis_mode.strip() if isinstance(analysis_mode, str) else ""
+        resolved = normalized if normalized else "aggregate"
+        inputs = self.run_log.get("inputs")
+        if isinstance(inputs, dict):
+            inputs["analysis_mode"] = resolved
+            self.run_log["inputs"] = inputs
+            self.write_run_log()
+        self.context_bundle["analysis_mode"] = resolved
+        self.write_context_bundle()
+
     def record_markdown_inputs(
         self,
         markdown_dir: Path,
         selected_cities_planned: list[str] | None,
         markdown_chunks: list[dict[str, object]],
         markdown_source_mode: str = "standard_chunking",
+        analysis_mode: str = "aggregate",
     ) -> None:
         """Capture markdown input snapshot for reproducible run summaries.
 
@@ -412,6 +476,7 @@ class RunLogger:
         inputs["markdown_chunk_count"] = len(markdown_chunks)
         inputs["markdown_excerpt_count"] = 0
         inputs["markdown_source_mode"] = markdown_source_mode
+        inputs["analysis_mode"] = analysis_mode
         self.run_log["inputs"] = inputs
         self.write_run_log()
 
@@ -429,7 +494,14 @@ class RunLogger:
         if usage_summary:
             self.run_log["llm_usage"] = usage_summary
             logger.info("LLM_USAGE_SUMMARY %s", json.dumps(usage_summary, ensure_ascii=False))
+        retry_summary = self._summarize_retry_events()
+        if retry_summary:
+            self.run_log["retry_summary"] = retry_summary
+            logger.info("RETRY_SUMMARY %s", json.dumps(retry_summary, ensure_ascii=False))
         self.run_log["artifacts"]["run_summary"] = str(self.run_paths.run_summary)
+        error_log_path = self._write_error_log_artifact()
+        if error_log_path is not None:
+            self.run_log["artifacts"]["error_log"] = str(error_log_path)
         if final_output_path:
             self.run_log["artifacts"]["final_output"] = str(final_output_path)
             self.context_bundle["final"] = str(final_output_path)

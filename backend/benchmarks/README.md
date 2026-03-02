@@ -25,13 +25,19 @@ If a key appears in both, the mode-specific value wins.
   overridden in the main environment.
 - Vector-store retrieval/embedding tuning is read from `llm_config.yaml`
   (`vector_store.*`), not benchmark env files.
-- Markdown researcher batch sizing is read from `llm_config.yaml`
-  (`markdown_researcher.batch_*`), not benchmark env files.
+- Markdown researcher benchmark sizing/concurrency is configured from benchmark CLI
+  options (`--markdown-option <batch_max_chunks>:<max_workers>`).
+- Default benchmark markdown options are:
+  - `16:8`
+  - `32:4`
+  - `32:8`
 - Benchmark runs do not build/update vector index; they measure runtime behavior
   with the currently available index.
 - To reduce run-to-run variance in retrieval behavior, the benchmark script can use
   fixed canonical + retrieval queries from `prompts/retrieval_query_overrides.json`.
 - Benchmark includes LLM-as-judge scoring (OpenRouter `openai/gpt-5.2`) for each
-  standard-vs-vector pair on the same question/repetition.
+  standard-vs-vector pair on the same question/repetition/markdown option.
+- Benchmark report includes speed metrics (runtime + tokens/sec) and LLM issue
+  counters (rate limits, retry exhausted, max-turns, and non-working calls).
 - For ad-hoc comparison of two files, use:
   `python -m backend.scripts.judge_final_outputs --left-final <path_a> --right-final <path_b> --question "..."`

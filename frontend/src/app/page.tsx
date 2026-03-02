@@ -22,7 +22,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
-import { Switch } from "@/components/ui/switch";
 import { Textarea } from "@/components/ui/textarea";
 import { formatCityLabel } from "@/lib/utils";
 import {
@@ -33,7 +32,6 @@ import {
   RunSummary,
   RunStatus,
   RunStatusResponse,
-  apiBaseUrl,
   fetchCities,
   fetchCityGroups,
   fetchRuns,
@@ -41,7 +39,6 @@ import {
   fetchRunOutput,
   fetchRunStatus,
   getApiBaseUrl,
-  setUserApiKey,
   startRun,
 } from "@/lib/api";
 
@@ -53,13 +50,14 @@ const TERMINAL_STATUSES: RunStatus[] = [
 ];
 
 type CityScopeMode = "all" | "group" | "manual";
-const USER_API_KEY_STORAGE_KEY = "openrouter_user_api_key";
+type AnalysisMode = "aggregate" | "city_by_city";
 const LAST_RUN_ID_STORAGE_KEY = "last_run_id";
 const CONTROLS_COLLAPSED_STORAGE_KEY = "build_controls_collapsed";
 
 export default function Home() {
   const [question, setQuestion] = useState("");
   const [scopeMode, setScopeMode] = useState<CityScopeMode>("all");
+  const [analysisMode, setAnalysisMode] = useState<AnalysisMode>("aggregate");
   const [cityFilter, setCityFilter] = useState("");
   const [cities, setCities] = useState<string[]>([]);
   const [selectedCities, setSelectedCities] = useState<string[]>([]);
@@ -82,34 +80,15 @@ export default function Home() {
   const [isLoadingRuns, setIsLoadingRuns] = useState(false);
   const [runsError, setRunsError] = useState<string | null>(null);
   const [isLoadingSelectedRun, setIsLoadingSelectedRun] = useState(false);
-  const [userApiKey, setUserApiKeyInput] = useState("");
-  const [usingCustomApiKey, setUsingCustomApiKey] = useState(false);
-  const [apiKeyNote, setApiKeyNote] = useState<string | null>(null);
 
-  const [chatEnabled, setChatEnabled] = useState(false);
   const [chatOpen, setChatOpen] = useState(false);
   const [assumptionsOpen, setAssumptionsOpen] = useState(false);
   const [isControlsCollapsed, setIsControlsCollapsed] = useState(false);
-  const [resolvedApiBaseUrl, setResolvedApiBaseUrl] = useState(apiBaseUrl);
 
   const runId = runResponse?.run_id ?? null;
   const statusValue = runStatus?.status ?? runResponse?.status ?? null;
   const canFetchArtifacts = statusValue === "completed" || statusValue === "completed_with_gaps";
   const documentReady = !!runOutput?.content && canFetchArtifacts;
-
-  useEffect(() => {
-    if (typeof window === "undefined") {
-      return;
-    }
-    const stored = window.localStorage.getItem(USER_API_KEY_STORAGE_KEY) ?? "";
-    const cleaned = stored.trim();
-    if (!cleaned) {
-      return;
-    }
-    setUserApiKeyInput(cleaned);
-    setUserApiKey(cleaned);
-    setUsingCustomApiKey(true);
-  }, []);
 
   useEffect(() => {
     if (typeof window === "undefined") {
@@ -128,10 +107,6 @@ export default function Home() {
       isControlsCollapsed ? "1" : "0",
     );
   }, [isControlsCollapsed]);
-
-  useEffect(() => {
-    setResolvedApiBaseUrl(getApiBaseUrl());
-  }, []);
 
   const hydrateRunById = useCallback(async (targetRunId: string): Promise<void> => {
     const trimmedRunId = targetRunId.trim();
@@ -315,13 +290,16 @@ export default function Home() {
       return;
     }
     let cancelled = false;
+    let nextPollHandle: ReturnType<typeof setTimeout> | null = null;
+    let activeController: AbortController | null = null;
     setIsPolling(true);
 
-    const timer = setInterval(() => {
+    const pollOnce = (): void => {
       if (cancelled) {
         return;
       }
-      fetchRunStatus(runId)
+      activeController = new AbortController();
+      fetchRunStatus(runId, { signal: activeController.signal })
         .then((payload) => {
           if (cancelled) {
             return;
@@ -332,13 +310,30 @@ export default function Home() {
           if (cancelled) {
             return;
           }
+          if (error instanceof DOMException && error.name === "AbortError") {
+            return;
+          }
           setRunError(error instanceof Error ? error.message : "Status polling failed.");
+        })
+        .finally(() => {
+          activeController = null;
+          if (cancelled) {
+            return;
+          }
+          nextPollHandle = setTimeout(() => {
+            pollOnce();
+          }, 2500);
         });
-    }, 2500);
+    };
+
+    pollOnce();
 
     return () => {
       cancelled = true;
-      clearInterval(timer);
+      if (nextPollHandle) {
+        clearTimeout(nextPollHandle);
+      }
+      activeController?.abort();
       setIsPolling(false);
     };
   }, [runId, statusValue]);
@@ -410,30 +405,6 @@ export default function Home() {
     );
   }
 
-  function applyUserApiKey(): void {
-    const cleaned = userApiKey.trim();
-    if (!cleaned) {
-      setApiKeyNote("Enter an OpenRouter key or clear custom key mode.");
-      return;
-    }
-    if (typeof window !== "undefined") {
-      window.localStorage.setItem(USER_API_KEY_STORAGE_KEY, cleaned);
-    }
-    setUserApiKey(cleaned);
-    setUsingCustomApiKey(true);
-    setApiKeyNote("Custom API key applied for this browser.");
-  }
-
-  function clearUserApiKey(): void {
-    if (typeof window !== "undefined") {
-      window.localStorage.removeItem(USER_API_KEY_STORAGE_KEY);
-    }
-    setUserApiKey(null);
-    setUsingCustomApiKey(false);
-    setUserApiKeyInput("");
-    setApiKeyNote("Custom API key cleared. Backend default key will be used.");
-  }
-
   async function handleBuildDocument(): Promise<void> {
     const trimmed = question.trim();
     if (!trimmed || isSubmitting) {
@@ -456,7 +427,6 @@ export default function Home() {
     setRunContext(null);
     setRunResponse(null);
     setRunStatus(null);
-    setChatEnabled(false);
     setChatOpen(false);
     setAssumptionsOpen(false);
 
@@ -464,6 +434,7 @@ export default function Home() {
       const payload = await startRun({
         question: trimmed,
         cities: scopeMode === "all" ? undefined : scopedCities,
+        analysis_mode: analysisMode,
       });
       setRunResponse(payload);
       setSelectedExistingRunId(payload.run_id);
@@ -493,7 +464,6 @@ export default function Home() {
 
   const isTerminal = !!statusValue && TERMINAL_STATUSES.includes(statusValue);
   const isLongWait = !!statusValue && ["queued", "running"].includes(statusValue);
-  const disableChatSwitch = !documentReady;
   const hasValidScope =
     scopeMode === "all" ||
     (scopeMode === "group"
@@ -521,7 +491,6 @@ export default function Home() {
                 This flow is document-first. You submit a build run, wait for completion, review the generated document, then switch into context chat workspace.
               </p>
             </div>
-            <Badge variant="outline">API: {resolvedApiBaseUrl}</Badge>
           </div>
         </header>
 
@@ -572,7 +541,7 @@ export default function Home() {
 
               <div className="space-y-2">
                 <div className="flex items-center justify-between">
-                  <Label htmlFor="existing-run">Load Existing Run</Label>
+                  <Label htmlFor="existing-run">Load Previous Answer</Label>
                   <Button
                     type="button"
                     variant="ghost"
@@ -619,36 +588,8 @@ export default function Home() {
                 </p>
                 {runsError ? <p className="text-xs text-red-600">{runsError}</p> : null}
                 <p className="text-xs text-slate-500">
-                  Reopen a previous run without re-running the full pipeline.
+                  Load a previous answer without re-running the full pipeline.
                 </p>
-              </div>
-
-              <div className="space-y-2">
-                <div className="flex items-center justify-between">
-                  <Label htmlFor="user-api-key">OpenRouter API Key (Optional)</Label>
-                  <Badge variant={usingCustomApiKey ? "default" : "secondary"}>
-                    {usingCustomApiKey ? "custom key active" : "using backend key"}
-                  </Badge>
-                </div>
-                <Input
-                  id="user-api-key"
-                  type="password"
-                  placeholder="sk-or-v1-..."
-                  value={userApiKey}
-                  onChange={(event) => setUserApiKeyInput(event.target.value)}
-                />
-                <div className="flex gap-2">
-                  <Button type="button" size="sm" onClick={applyUserApiKey}>
-                    Use This Key
-                  </Button>
-                  <Button type="button" size="sm" variant="outline" onClick={clearUserApiKey}>
-                    Clear
-                  </Button>
-                </div>
-                <p className="text-xs text-slate-500">
-                  Key is stored locally in your browser and sent as request header. If empty, backend environment key is used.
-                </p>
-                {apiKeyNote ? <p className="text-xs text-slate-600">{apiKeyNote}</p> : null}
               </div>
 
               <div className="space-y-3">
@@ -685,7 +626,7 @@ export default function Home() {
 
                 {scopeMode === "all" ? (
                   <div className="rounded-md border border-slate-200 bg-slate-50 p-3 text-sm text-slate-700">
-                    The backend will process all available city markdown files.
+                    This will process all cities and take a lot of time.
                   </div>
                 ) : null}
 
@@ -777,13 +718,45 @@ export default function Home() {
                 ) : null}
               </div>
 
+              <div className="space-y-3 rounded-md border border-slate-200 p-3">
+                <div className="flex items-center justify-between">
+                  <Label>Answer mode</Label>
+                  <Badge variant="secondary">
+                    {analysisMode === "aggregate" ? "Aggregate Mode" : "City-by-City Mode"}
+                  </Badge>
+                </div>
+                <div className="grid grid-cols-2 gap-2">
+                  <Button
+                    type="button"
+                    variant={analysisMode === "aggregate" ? "default" : "outline"}
+                    onClick={() => setAnalysisMode("aggregate")}
+                    className="w-full"
+                  >
+                    Aggregate Mode
+                  </Button>
+                  <Button
+                    type="button"
+                    variant={analysisMode === "city_by_city" ? "default" : "outline"}
+                    onClick={() => setAnalysisMode("city_by_city")}
+                    className="w-full"
+                  >
+                    City-by-City Mode
+                  </Button>
+                </div>
+                <p className="text-xs text-slate-600">
+                  {analysisMode === "aggregate"
+                    ? "One integrated answer across selected cities."
+                    : "Aswering one city section at a time; similarities at the end."}
+                </p>
+              </div>
+
               <Button
                 onClick={handleBuildDocument}
                 disabled={isSubmitting || !question.trim() || !hasValidScope}
                 className="w-full"
               >
                 {isSubmitting ? <Loader2 className="h-4 w-4 animate-spin" /> : <Sparkles className="h-4 w-4" />}
-                Start Document Build
+                Generate Report
               </Button>
 
               <Separator />
@@ -820,7 +793,7 @@ export default function Home() {
                     ) : null}
                     {hasApiKeyIssue ? (
                       <p className="mt-1 text-xs text-amber-700">
-                        API key issue detected. Set/switch key above and retry the run.
+                        API key issue detected. Verify backend OpenRouter credentials and retry the run.
                       </p>
                     ) : null}
                   </div>
@@ -838,32 +811,21 @@ export default function Home() {
                 enabled={documentReady}
                 onClose={() => setAssumptionsOpen(false)}
               />
-            ) : chatOpen && chatEnabled && documentReady && runId ? (
+            ) : chatOpen && documentReady && runId ? (
               <ContextChatWorkspace
                 runId={runId}
-                enabled={chatEnabled && documentReady}
+                enabled={documentReady}
                 onClose={() => setChatOpen(false)}
               />
             ) : (
               <Card className="border-slate-300">
                 <CardHeader className="pb-4">
-                  <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+                  <div>
                     <div>
                       <CardTitle>Generated Document</CardTitle>
                       <CardDescription>
                         The main answer is rendered as a report. Context chat opens as a dedicated workspace.
                       </CardDescription>
-                    </div>
-                    <div className="flex items-center gap-3 rounded-full border border-slate-200 bg-slate-50 px-3 py-2">
-                      <Label htmlFor="chat-toggle" className="text-xs uppercase tracking-[0.14em] text-slate-600">
-                        Context Chat
-                      </Label>
-                      <Switch
-                        id="chat-toggle"
-                        checked={chatEnabled}
-                        onCheckedChange={setChatEnabled}
-                        disabled={disableChatSwitch}
-                      />
                     </div>
                   </div>
                 </CardHeader>
@@ -874,26 +836,14 @@ export default function Home() {
                         <div className="flex gap-2">
                           <Button
                             type="button"
-                            variant="outline"
-                            onClick={() => {
-                              setChatOpen(false);
-                              setAssumptionsOpen(true);
-                            }}
-                            disabled={!runId}
-                          >
-                            <Sparkles className="h-4 w-4" />
-                            Assumptions Review
-                          </Button>
-                          <Button
-                            type="button"
                             onClick={() => {
                               setAssumptionsOpen(false);
                               setChatOpen(true);
                             }}
-                            disabled={!chatEnabled || !runId}
+                            disabled={!runId}
                           >
                             <MessageSquareText className="h-4 w-4" />
-                            Open Context Chat
+                            Chat About the Answer
                           </Button>
                         </div>
                       </div>
