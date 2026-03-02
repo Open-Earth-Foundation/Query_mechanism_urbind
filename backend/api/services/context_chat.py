@@ -65,19 +65,13 @@ def _resolve_chat_prompt_token_cap(
     return parsed
 
 
-def _init_chat_prompt_token_cap() -> int:
-    """Initialize chat prompt token cap from config and environment."""
-    from backend.utils.config import load_config
-    
-    config = load_config()
+def resolve_chat_token_cap(config: AppConfig) -> int:
+    """Return effective token cap by applying any env override to config defaults."""
     return _resolve_chat_prompt_token_cap(
         default=config.chat.max_context_total_tokens,
         minimum=config.chat.min_prompt_token_cap,
         maximum=config.chat.max_context_total_tokens,
     )
-
-
-CHAT_PROMPT_TOKEN_CAP = _init_chat_prompt_token_cap()
 
 
 def _resolve_chat_provider_timeout_seconds(default: float) -> float:
@@ -97,16 +91,6 @@ def _resolve_chat_provider_timeout_seconds(default: float) -> float:
         return default
     return max(5.0, parsed)
 
-
-def _init_chat_provider_timeout_seconds() -> float:
-    """Initialize provider timeout from config and environment."""
-    from backend.utils.config import load_config
-    
-    config = load_config()
-    return _resolve_chat_provider_timeout_seconds(config.chat.provider_timeout_seconds)
-
-
-CHAT_PROVIDER_TIMEOUT_SECONDS = _init_chat_provider_timeout_seconds()
 
 CHAT_TOOL_DEFINITIONS: list[dict[str, object]] = [
     {
@@ -160,18 +144,19 @@ def generate_context_chat_reply(
     history: list[dict[str, str]],
     user_content: str,
     config: AppConfig,
-    token_cap: int = CHAT_PROMPT_TOKEN_CAP,
+    token_cap: int = 0,
     api_key_override: str | None = None,
     citation_catalog: list[dict[str, str]] | None = None,
     retry_missing_citation: bool = False,
     run_id: str | None = None,
 ) -> str:
     """Generate assistant reply grounded in selected run contexts."""
-    requested_token_cap = int(token_cap)
+    resolved_cap = int(token_cap) if token_cap > 0 else resolve_chat_token_cap(config)
     effective_token_cap = max(
         config.chat.min_prompt_token_cap,
-        min(requested_token_cap, config.chat.max_context_total_tokens),
+        min(resolved_cap, config.chat.max_context_total_tokens),
     )
+    timeout = _resolve_chat_provider_timeout_seconds(config.chat.provider_timeout_seconds)
 
     api_key = (
         api_key_override.strip()
@@ -181,7 +166,7 @@ def generate_context_chat_reply(
     client = OpenAI(
         api_key=api_key,
         base_url=config.openrouter_base_url,
-        timeout=CHAT_PROVIDER_TIMEOUT_SECONDS,
+        timeout=timeout,
     )
 
     normalized_contexts = _normalize_contexts(contexts)
@@ -256,7 +241,7 @@ def generate_context_chat_reply(
             config.chat.model,
             included_context_ids,
             estimated_prompt_tokens,
-            requested_token_cap,
+            resolved_cap,
             effective_token_cap,
         )
         return _run_single_pass(
@@ -277,7 +262,7 @@ def generate_context_chat_reply(
         included_context_ids,
         context_tokens,
         config.chat.multi_pass_threshold_tokens,
-        requested_token_cap,
+        resolved_cap,
         effective_token_cap,
     )
 
@@ -818,7 +803,7 @@ def _truncate_to_tokens(value: str, max_tokens: int) -> str:
 
 __all__ = [
     "ChatContextSource",
-    "CHAT_PROMPT_TOKEN_CAP",
+    "resolve_chat_token_cap",
     "generate_context_chat_reply",
     "load_context_bundle",
     "load_final_document",

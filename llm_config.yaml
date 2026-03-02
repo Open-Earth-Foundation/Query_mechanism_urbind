@@ -47,7 +47,7 @@ chat:
   max_history_messages: 12
   max_context_total_tokens: 220000
   min_prompt_token_cap: 20000
-  provider_timeout_seconds: 50.0
+  provider_timeout_seconds: 60.0
   prompt_token_buffer: 2000
   multi_pass_threshold_tokens: 200000
   multi_pass_chunk_tokens: 150000
