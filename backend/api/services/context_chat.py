@@ -12,14 +12,22 @@ from typing import Any, cast
 from openai import APIConnectionError, APIStatusError, APITimeoutError, OpenAI
 from openai.types.chat import ChatCompletionMessageParam
 
-from backend.tools.calculator import sum_numbers
+from backend.tools.calculator import (
+    divide_numbers,
+    multiply_numbers,
+    subtract_numbers,
+    sum_numbers,
+)
 from backend.utils.retry import RetrySettings, call_with_retries
 from backend.utils.config import AppConfig, get_openrouter_api_key
 from backend.utils.tokenization import count_tokens, get_encoding
 
 logger = logging.getLogger(__name__)
 
-CHAT_CALCULATOR_TOOL_NAME = "sum_numbers"
+CHAT_SUM_TOOL_NAME = "sum_numbers"
+CHAT_SUBTRACT_TOOL_NAME = "subtract_numbers"
+CHAT_MULTIPLY_TOOL_NAME = "multiply_numbers"
+CHAT_DIVIDE_TOOL_NAME = "divide_numbers"
 CHAT_REF_ID_PATTERN = re.compile(r"^ref_[1-9]\d*$")
 
 
@@ -32,7 +40,7 @@ CHAT_TOOL_DEFINITIONS: list[dict[str, object]] = [
     {
         "type": "function",
         "function": {
-            "name": CHAT_CALCULATOR_TOOL_NAME,
+            "name": CHAT_SUM_TOOL_NAME,
             "description": "Return arithmetic sum of a list of numbers.",
             "parameters": {
                 "type": "object",
@@ -47,7 +55,70 @@ CHAT_TOOL_DEFINITIONS: list[dict[str, object]] = [
                 "additionalProperties": False,
             },
         },
-    }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": CHAT_SUBTRACT_TOOL_NAME,
+            "description": "Subtract one number from another.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "minuend": {
+                        "type": "number",
+                        "description": "Starting numeric value.",
+                    },
+                    "subtrahend": {
+                        "type": "number",
+                        "description": "Numeric value to subtract from the minuend.",
+                    },
+                },
+                "required": ["minuend", "subtrahend"],
+                "additionalProperties": False,
+            },
+        },
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": CHAT_MULTIPLY_TOOL_NAME,
+            "description": "Return arithmetic product of a list of numbers.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "numbers": {
+                        "type": "array",
+                        "items": {"type": "number"},
+                        "description": "List of integer/float values to multiply.",
+                    }
+                },
+                "required": ["numbers"],
+                "additionalProperties": False,
+            },
+        },
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": CHAT_DIVIDE_TOOL_NAME,
+            "description": "Divide one number by another.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "dividend": {
+                        "type": "number",
+                        "description": "Numeric value being divided.",
+                    },
+                    "divisor": {
+                        "type": "number",
+                        "description": "Numeric value to divide by. Must not be zero.",
+                    },
+                },
+                "required": ["dividend", "divisor"],
+                "additionalProperties": False,
+            },
+        },
+    },
 ]
 
 
@@ -427,17 +498,55 @@ def _compose_enhancement_prompt(
     )
 
 
-def _normalize_sum_numbers_args(raw_arguments: str | None) -> list[float]:
-    """Parse calculator tool arguments and coerce to float list."""
+def _parse_tool_arguments(raw_arguments: str | None) -> dict[str, object]:
+    """Parse tool arguments into a JSON object."""
     if not raw_arguments:
         raise ValueError("Tool arguments are empty.")
-    parsed = json.loads(raw_arguments)
+    try:
+        parsed = json.loads(raw_arguments)
+    except json.JSONDecodeError as exc:
+        raise ValueError("Tool arguments must be valid JSON.") from exc
     if not isinstance(parsed, dict):
         raise ValueError("Tool arguments must be a JSON object.")
+    return parsed
+
+
+def _normalize_sum_numbers_args(raw_arguments: str | None) -> list[float]:
+    """Parse sum tool arguments and coerce to float list."""
+    parsed = _parse_tool_arguments(raw_arguments)
     raw_numbers = parsed.get("numbers")
     if not isinstance(raw_numbers, list):
         raise ValueError("Tool arguments must include list field `numbers`.")
     return [float(value) for value in raw_numbers]
+
+
+def _normalize_subtract_numbers_args(raw_arguments: str | None) -> tuple[float, float]:
+    """Parse subtract tool arguments and coerce to numeric operands."""
+    parsed = _parse_tool_arguments(raw_arguments)
+    if "minuend" not in parsed:
+        raise ValueError("Tool arguments must include numeric field `minuend`.")
+    if "subtrahend" not in parsed:
+        raise ValueError("Tool arguments must include numeric field `subtrahend`.")
+    return (float(parsed["minuend"]), float(parsed["subtrahend"]))
+
+
+def _normalize_multiply_numbers_args(raw_arguments: str | None) -> list[float]:
+    """Parse multiply tool arguments and coerce to float list."""
+    parsed = _parse_tool_arguments(raw_arguments)
+    raw_numbers = parsed.get("numbers")
+    if not isinstance(raw_numbers, list):
+        raise ValueError("Tool arguments must include list field `numbers`.")
+    return [float(value) for value in raw_numbers]
+
+
+def _normalize_divide_numbers_args(raw_arguments: str | None) -> tuple[float, float]:
+    """Parse divide tool arguments and coerce to numeric operands."""
+    parsed = _parse_tool_arguments(raw_arguments)
+    if "dividend" not in parsed:
+        raise ValueError("Tool arguments must include numeric field `dividend`.")
+    if "divisor" not in parsed:
+        raise ValueError("Tool arguments must include numeric field `divisor`.")
+    return (float(parsed["dividend"]), float(parsed["divisor"]))
 
 
 def _run_chat_completion_with_tools(
@@ -501,26 +610,47 @@ def _run_chat_completion_with_tools(
                 tool_id,
             )
             tool_result: dict[str, object]
-            if tool_name != CHAT_CALCULATOR_TOOL_NAME:
-                tool_result = {"error": f"Unsupported tool: {tool_name}"}
-                logger.warning(
-                    "CHAT_TOOL_CALL_UNSUPPORTED round=%d tool=%s tool_call_id=%s",
-                    tool_round,
-                    tool_name,
-                    tool_id,
-                )
-            else:
-                try:
+            try:
+                if tool_name == CHAT_SUM_TOOL_NAME:
                     numbers = _normalize_sum_numbers_args(tool_arguments)
                     tool_result = {"result": sum_numbers(numbers, source="context_chat")}
-                except Exception as exc:  # noqa: BLE001
-                    tool_result = {"error": str(exc)}
-                    logger.exception(
-                        "CHAT_TOOL_CALL_ERROR round=%d tool=%s tool_call_id=%s",
+                elif tool_name == CHAT_SUBTRACT_TOOL_NAME:
+                    minuend, subtrahend = _normalize_subtract_numbers_args(tool_arguments)
+                    tool_result = {
+                        "result": subtract_numbers(
+                            minuend,
+                            subtrahend,
+                            source="context_chat",
+                        )
+                    }
+                elif tool_name == CHAT_MULTIPLY_TOOL_NAME:
+                    numbers = _normalize_multiply_numbers_args(tool_arguments)
+                    tool_result = {"result": multiply_numbers(numbers, source="context_chat")}
+                elif tool_name == CHAT_DIVIDE_TOOL_NAME:
+                    dividend, divisor = _normalize_divide_numbers_args(tool_arguments)
+                    tool_result = {
+                        "result": divide_numbers(
+                            dividend,
+                            divisor,
+                            source="context_chat",
+                        )
+                    }
+                else:
+                    tool_result = {"error": f"Unsupported tool: {tool_name}"}
+                    logger.warning(
+                        "CHAT_TOOL_CALL_UNSUPPORTED round=%d tool=%s tool_call_id=%s",
                         tool_round,
                         tool_name,
                         tool_id,
                     )
+            except Exception as exc:  # noqa: BLE001
+                tool_result = {"error": str(exc)}
+                logger.exception(
+                    "CHAT_TOOL_CALL_ERROR round=%d tool=%s tool_call_id=%s",
+                    tool_round,
+                    tool_name,
+                    tool_id,
+                )
             working_messages.append(
                 {
                     "role": "tool",
@@ -708,7 +838,7 @@ def _build_system_prompt_header(
         "6. If a citation evidence catalog is provided, cite factual claims using only [ref_n] tokens present in that catalog.\n"
         "7. Do not invent references and do not use any citation format other than [ref_n].\n"
         "8. If no citation evidence catalog entries are available for this turn, explain that you cannot provide a fully grounded cited answer.\n\n"
-        "9. If arithmetic is needed and a calculator tool is available, use it instead of mental math.\n\n"
+        "9. If arithmetic is needed and calculator tools are available, use them instead of mental math.\n\n"
         f"{retry_note}"
         f"Original build question:\n{stripped_original_question}"
     )

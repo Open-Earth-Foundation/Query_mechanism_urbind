@@ -12,9 +12,6 @@ City of Aarhus
 ![img-0.jpeg](img-0.jpeg)
 
 NetZeroCities has received funding from the H2020 Research and Innovation Programme under the grant agreement n°101036519.
-CITY OF AARHUS
-Climate Neutrality Action Plan
-O
 
 # Table of Contents
 
@@ -37,9 +34,6 @@ Module C-1 Governance Innovation Interventions ... 86
 Module C-2 Social Innovation Interventions ... 89
 Outlook and next steps ... 97
 Additional sources of information ... 98
-CITY OF AARHUS
-Climate Neutrality Action Plan
-C
 
 # Summary
 
@@ -54,9 +48,6 @@ The CCC 2030 Climate Neutrality Action Plan is structured into five parts:
 The first part sets the scene of Aarhus and outlines the political and site-specific conditions for realising the 2030 climate neutrality vision. The second part accounts for the current state of climate action in Aarhus. The third part describes pathways towards climate neutrality by 2030, reflections on MEL-processes. The fourth part showcases governance and social innovation interventions enabling the 2030 climate neutrality transition. Finally, the fifth part provides a list of areas for improvements to be included in future iterations.
 
 With the action plan, Aarhus demonstrates a path to achieve its high ambitions and joins a small group of municipalities in the world that aim for CO₂ neutrality in 2030. The preparatory work for the CCC action plan has been made in close collaboration with key stakeholders, including citizens, interest organisations, businesses and industries, knowledge institutions, regional and international partners, other cities and municipalities, all of whom will also play a crucial role in the implementation of the many actions and initiatives outlined in the plan.
-CITY OF AARHUS
-Climate Neutrality Action Plan
-4
 
 # List of figures
 
@@ -102,9 +93,6 @@ B-3.2b: Indicator Metadata ... 80
 B-3.2c: Indicator Metadata ... 81
 C.1.2: Relations between governance innovations, systems, and impact pathways ... 86
 C.2.1 Relations between social innovations, systems, and impact pathways ... 90
-CITY OF AARHUS
-Climate Neutrality Action Plan
-5
 
 # Abbreviations and acronyms
 
@@ -152,9 +140,6 @@ Climate Neutrality Action Plan
 |  SDG | Sustainable Development Goals  |
 |  SME | Small and Medium size Enterprises  |
 |  UN | United Nations  |
-CITY OF AARHUS
-Climate Neutrality Action Plan
-6
 
 # 1 Introduction
 
@@ -171,11 +156,6 @@ On the international scene, an important step has been taken with the Paris Agre
 In Aarhus, climate change is experienced mainly as floods from the sea, lakes, streams, cloudbursts and groundwater rises. Aarhus lies close to the coast on a slightly raised bank and has through its urban development spread down into river valleys and other low-lying areas. Aarhus is therefore particularly vulnerable to weather conditions, which climate change is making increasingly extreme. Particularly threatened are Aarhus' low-lying city centre, areas close to groundwater at risk of flooding and existing buildings along the coast exposed to storm surges.
 
 Like other western countries and cities, Denmark and Aarhus have a large climate burden compared to the size of population, especially due to a high consumption. According to CONCITO's updated assessment of Denmark's global consumption-based emissions, each Dane emits an average of 13 tonnes of CO₂e annually, which is about twice as much as an average world citizen, and it far exceed
-CITY OF AARHUS
-
-Climate Neutrality Action Plan
-
-7
 
 the sub-3 tonnes per global citizen required by 2030 to meet the Paris Agreement’s ambitious 1.5-degree target. The large climate burden gives a special obligation to make an extra effort to reduce $\mathrm{CO}_{2}$ emissions as quickly and efficiently as possible.
 
@@ -195,9 +175,6 @@ Energy, incl. carbon capture: 405,000 tonnes (scope 1 and 2)
 Transport: 319,000 tonnes (scope 1 and 2)
 AFOLU: 79,000 tonnes (scope 1 and 2)
 Landfill and wastewater: 46,000 tonnes (scope 1 and 2)
-CITY OF AARHUS
-Climate Neutrality Action Plan
-8
 
 With the Climate Strategy Agreement: 2025-2030, the coalition parties also decided to set emission reduction targets for the largest emission domains within scope 3:
 
@@ -226,8 +203,6 @@ The city of Aarhus consists of a combination of both rural, urban and peri-urban
 The combination of urban, peri-urban and rural areas provides Aarhus with a unique space of opportunity. The large land areas, for example, offer opportunities for the establishment of larger renewable energy facilities, biogenic parks, and afforestation.
 
 However, these opportunities also come with a range of challenges and complexities that arise from, for example, decreasing property values because of neighbouring renewable energy (RE) plant, the battle for land, as well as a potentially unequal distribution between neighbourhoods with high emissions and neighbourhoods with space for RE. In addition, the green transition will create a fundamentally different allocation of land areas with less agriculture and livestock in favour of more RE plants, forests and other nature.
-CITY OF AARHUS
-Climate Neutrality Action Plan
 
 This poses special requirements for the green energy transition, with integrated thinking and synergies between domains, internally coordinated collaboration, and the breaking down of organizational barriers, as well as the involvement of and cooperation with stakeholders to ensure democratic participation and a just transition.
 
@@ -249,9 +224,6 @@ The development of new climate actions in Aarhus builds on the notion that a tho
 This document constitutes the first draft of the CCC 2030 Climate Neutrality Action Plan. This first draft builds on the Climate Strategy Agreement: 2025-2030 and the extensive background material on which the agreement is partly based (including learnings from the Climate Action Plan 2021-2024). The final Climate Action Plan 2025-2030 is expected to be submitted to the City Council at the end of 2024. This time lag between the City Council's endorsement of the final Climate Action Plan and the deadline for
 
 ¹ Although the transport and mobility sector accounts for the second highest level of emissions in Aarhus in 2030 and therefore naturally constitutes a significant strategic focus area, it is not included as a strategic focus area in the first edition of the CCC Action Plan due separate political and budget negotiation processes. Please note in this connection, that actions related to green urban mobility was not a strategic priority in the CCC Mission Expression of Interest.
-CITY OF AARHUS
-
-Climate Neutrality Action Plan
 
 #
 
@@ -276,8 +248,6 @@ In this CCC 2030 Climate Neutrality Action Plan, ongoing weaknesses and deficien
 Figure 2: Map of Aarhus (source: Technical Services and Environment, Aarhus, 2020)
 
 An important principle in the Climate Strategy Agreement: 2025-2030 concerns taking responsibility for and setting targets for the most significant sources of consumption-based emissions (i.e. related to Food, Construction and Urban Development):
-CITY OF AARHUS
-Climate Neutrality Action Plan
 
 A large proportion of the greenhouse gas emissions in Aarhus are generated by our consumption. The consumption of food and beverages accounts for 26% of emissions from Danish households – second only to transport. The most effective individual factor in relation to reducing CO₂e emissions from our food consumption is a shift from red meat toward a more plant-based diet.
 
@@ -286,11 +256,6 @@ Aarhus must take the lead and, together with business and industry, initiate amb
 Aarhus also have a special obligation to take the lead and set ambitious targets for municipal construction projects. At the beginning of 2023, the Aarhus City Council pledged that all new construction over 1,000 m² will comply with the low-emission class standard, which means a threshold value of max. 8 kg CO₂e/m²/pr. year in 2024, falling to 5 kg CO₂e/m²/pr. year in 2030. The City of Aarhus has started working with LCA assessment tools. LCA assessment tools will contribute to making Scope 3 reductions in construction projects possible by enabling calculation of emissions from the building materials used, for example.
 
 Finally, The City of Aarhus must take the lead when it comes to the green transition. The Climate Strategy Agreement: 2025-2030 sets an ambitious reduction target for the City of Aarhus' consumption-based climate footprint of 50% by the end of 2035. The municipality must lead the way with a major cultural transformation regarding consumption, while at the same time promoting a greener supplier market in Denmark, to the benefit of the City of Aarhus and the country's public and private sectors. The City of Aarhus makes DKK 8 billion in purchases annually, which emits approx. 24,000 tonnes CO₂ in Scopes 1 and 2 in addition to approx. 250,000 tonnes CO₂ in Scope 3 not including the entities.
-
-1
-CITY OF AARHUS
-Climate Neutrality Action Plan
-2
 
 # 2 Part A – Current State of Climate Action
 
@@ -328,9 +293,6 @@ Table A-1.2 shows which GWP factors, Aarhus has applied in calculating the GHG i
 |  1 t. CO₂e | 27 t. CO₂e | 273 t. CO₂e | 14.800 t. CO₂e | * | *  |
 
 * SF₆ and NF₃ are also included in the inventory. There is no specific GWP for these gases as they are included in a combination of F-gases. Following the national accounting a sum-calculation of all F-gases is computed. Included in this computation are also HFC and PFC gases.
-CITY OF AARHUS
-Climate Neutrality Action Plan
-3
 
 Table A-1.3 below gives an overview of GHG emissions from different source sectors.
 
@@ -370,9 +332,6 @@ Table A-1.4 gives an overview of energy usage and emissions related to energy us
 |  Electricity import (fossil based)* | 646 | 44 | 148  |   |
 |  Total** |  |  | 1.247  |   |
 |  |   |   |   |   |
-CITY OF AARHUS
-
-Climate Neutrality Action Plan
 
 #
 
@@ -395,10 +354,6 @@ Note: GHG-emissions are calculated as three-year averages following recommendati
 Figure A-1.2: shows a visual representation of the 2022-inventory with more detailed sub-sectors.
 #
 
-CITY OF AARHUS
-
-Climate Neutrality Action Plan
-
 #
 
 ![img-0.jpeg](img-0.jpeg)
@@ -411,9 +366,6 @@ Based on the inventory, Aarhus Municipality has prepared a BAU scenario up to 20
 The impact pathways are designed based on the inventory and BAU scenario prepared before the methodical changes. It is expected that the calculation related to the impact pathways are also updated during the fall of 2024.
 
 Existing policies, plans etc. in the municipality have not been considered in the BAU scenario. After the preparation of the BAU scenario, there were some methodical changes to the calculation of the inventory. The BAU scenario has not been updated after these changes, which implies that the BAU scenario is not completely aligned with the inventory. It is expected, that the BAU scenario will be updated during the fall of 2024.
-CITY OF AARHUS
-Climate Neutrality Action Plan
-C
 
 The BAU scenario is based on the Energy and Transportation sectors. For the sectors Waste, IPPU and AFOLU, it is assumed that emissions will be at 2022-level up to 2030.
 
@@ -439,11 +391,6 @@ Figure A-1.3: BAU scenario
 The jump in emissions around 2021-2023 is due to a fire at a power plant in Aarhus, which meant that the plant had to use a large amount of coal instead of biomaterials in the district heating system.
 
 Scope 3 emissions
-
-6
-CITY OF AARHUS
-Climate Neutrality Action Plan
-7
 
 Due to lack of data collection in Denmark (and other countries) it is impossible to make precise calculations of scope 3 emissions at a municipal level. Aarhus Municipality has estimated the consumer-based emissions based on national accounts.
 
@@ -478,8 +425,6 @@ A-1.6: Consumer-based GHG emissions from public consumption by consumer category
 |   | mio. t. CO2e  |   |
 |  Hospitals, etc. | 0,03 | 0,07  |
 |  Nursing homes, day care centres, etc. | 0,02 | 0,03  |
-CITY OF AARHUS
-Climate Neutrality Action Plan
 
 |  Education | 0,02 | 0,02  |
 | --- | --- | --- |
@@ -515,9 +460,6 @@ The City of Aarhus must take the lead when it comes to the green transition. The
 For the climate group there is no delay in the data collection, which implies that the inventory for 2023 has already been made. All figures in this section are for 2023.
 
 The climate group emitted 45.000 tonnes of $\mathrm{CO}_{2}\mathrm{e}$ in 2023. The figure below illustrates which categories and sectors are causing these emissions as well as the historical development in emissions for the climate group.
-CITY OF AARHUS
-
-Climate Neutrality Action Plan
 
 #
 
@@ -539,9 +481,6 @@ Figure A-1.5: Climate group – BAU scenario
 # 2.2 Module A-2 Current Policies and Strategies Assessment
 
 The development of local climate actions takes place in interaction with the region and the state, as well as with the EU and international network and experts. Aarhus' CO2 targets and climate actions
-CITY OF AARHUS
-Climate Neutrality Action Plan
-0
 
 are developed with a close eye to the framework conditions set by national, regional, and European legislations, regulations, and directives.
 
@@ -560,8 +499,6 @@ Since 2020, a number of political agreements have been made to ensure a market-b
 The Planning Act in Denmark and The Building Regulations constitute the overall framework for an appropriate development of the whole country, for creating and conserving of valuable buildings, settlements, urban environments and landscape, for maintaining the status of the open coasts, for preventing of pollution of air, water and soil and noise nuisance as well as for involving the public in the planning process as much as possible. The purpose states that the Planning Act "shall ensure that the overall planning synthesizes the interests of society with respect to land use and contributes to protecting the country's nature and environment, so that sustainable development of society with respect for people's living conditions and for the conservation of wildlife and vegetation is secured". (The Planning Act: Consolidated Act No 813 of 21 June 2007).
 
 Current legislation prevents the possibility of using areas multifunctionally. The Green Tripartite, which consists of the Government, Agriculture &amp; Food, the Food Federation NNF, Danish Metal, Danish Industry and the National Association of Municipalities is, however, set to reach an agreement on
-CITY OF AARHUS
-Climate Neutrality Action Plan
 
 principles for recommendations and solutions on how to create areas in the future where agriculture, nature, renewable energy and recreational areas can coexist. In August 2024, the Government presented a new Ministry for Green Tripartite, which will, among other things, be responsible for climate analysis in the agricultural area, development of green technologies and bioeconomy, and it must ensure progress and implementation of the agreed initiatives in the green tripartite. There is, thus, a great deal of political attention to ensure the right political leeway for the municipalities' green transition, including the opportunities associated with multifunctional land use.
 
@@ -583,13 +520,6 @@ The tax system targets energy supply, industry, and non-road transport. The expe
 
 In Aarhus, this corresponds to a reduction of 26,000 tonnes from energy, 70,000 tonnes from transport, and 11,000 tonnes from industrial processes.
 
-1
-CITY OF AARHUS
-
-Climate Neutrality Action Plan
-
-C
-
 ![img-0.jpeg](img-0.jpeg)
 
 # Green Tax Reform 2:
@@ -605,9 +535,6 @@ In Aarhus, this corresponds to a reduction of 15,000 tonnes of  $\mathrm{CO}_{2}
 # Mileage-Based Road Tax for Trucks:
 
 In 2022, the Danish Parliament decided to introduce road taxes for trucks starting in 2025. The taxes are based on a kilometre-based system, where the amount depends on how much  $\mathrm{CO}_{2}\mathrm{e}$  each individual truck emits. Green trucks will pay the least in taxes. The average tax rate will be approximately DKK 1.20 per kilometre in 2030.
-CITY OF AARHUS
-
-Climate Neutrality Action Plan
 
 #
 
@@ -628,8 +555,6 @@ Under the agreement, it has been decided to increase the diesel tax by 50 øre p
 Denmark consists of five regions, which are divided into 98 municipalities. Aarhus Municipality is part of the Central Denmark Region, which comprises a total of 19 municipalities. The region covers an area of 13.008 sq km with a population of 1.365.688. Aarhus is actively involved in the regional and national collaboration among the regions and municipalities in the development and implementation of climate plans under the auspices of DK2020 and the regional partnership Climate Alliance.
 
 The purpose of DK2020 and the Climate Alliance is to assist all Danish municipalities in developing a local climate action plan and support concrete climate action that meets the objectives of the Paris
-CITY OF AARHUS
-Climate Neutrality Action Plan
 
 Agreement and contributes to the government’s 70% target. The association RealDania, together with the international city network C40, is behind DK2020. A partnership agreement between RealDania, Local Government Denmark (KL), and the five regions gives all Danish municipalities the opportunity to become part of DK2020.
 
@@ -648,8 +573,6 @@ Learnings and experiences from the previous plan are integrated into the politic
 ## Climate Strategy Agreement 2025-2030
 
 On April 29, a majority of the Aarhus City Council settled on a broad political agreement on Climate Strategy, entitled Climate Neutral Aarhus 2030. The agreement on climate strategy for 2025-2030 provides the framework conditions for reaching the goal of CO₂ neutrality. The agreement sets CO₂ goals and directions for the largest emission domains within both scope 1, 2 and 3 and marks a political decision on a high level of ambition and provides a political mandate to prioritize concrete implementation.
-CITY OF AARHUS
-Climate Neutrality Action Plan
 
 A decisive event that paved the way for the climate strategy was the adoption of a climate-economic approach by a majority in the City Council in the budget settlement for 2024. This is in line with the key principle of the State Climate Act, which sets forth the necessity of a cost-effective realization of the climate targets. A climate-economic approach involves prioritizing the initiatives that generate the greatest possible $\mathrm{CO}_{2}$ reduction for the money. This will provide the best prospects of reaching the 2030 target and making a genuine difference for the climate.
 
@@ -670,8 +593,6 @@ The political mandate for wicked problems identifies seven wicked problems which
 ## Upcoming Green Mobility Plan
 
 The political negotiations concerning the prioritization of technologies and distribution of $\mathrm{CO}_{2}$ reductions within the transport sector, and which will set the direction for the development of a Green Mobility Plan is currently in process. At present time, the coalition parties participating in the
-CITY OF AARHUS
-Climate Neutrality Action Plan
 
 agreement on climate strategy for 2025-2030 agree that the point of departure for the green mobility plan is an annual reduction of road transport of 270,000 tonnes CO₂ towards 2030. This means that the target for the transport sector account for a total maximum of CO₂ emissions of 230,000 tonnes annually in 2030, considering improvement achieved via the national framework conditions. In addition, there will be a reduction of 44,000 tonnes from aviation and shipping as well as 5,000 tonnes from sustainable soil handling.
 
@@ -693,11 +614,6 @@ The waste plan 2021-2026 'Towards a circular Aarhus' provides a significant cont
 
 The Wastewater Plan 2021-2026 is developed in collaboration with Aarhus Vand and designates a number of concrete strategies and action areas for handling wastewater and rainwater. The wastewater plan describes the existing wastewater conditions and contains a comprehensive overview of the planned activities, investments and strategies in the wastewater area. It is a goal that water management must be done sustainably while at the same time increasingly use resources and produce energy. We create good urban spaces with blue and green recreational qualities at the same time as we adapt to the climate and create time and space for the water. The new plan also establishes the framework for how citizens, companies and developers must handle rainwater and wastewater on
 
-6
-CITY OF AARHUS
-Climate Neutrality Action Plan
-7
-
 their own land, just as it describes minimum requirements for cleaning domestic wastewater in areas outside the sewered area, called the open country.
 
 As a framework for the municipality's continued work with nature and greenery, Technology Services and Environment has prepared "A greener Aarhus – Aarhus Municipality's policy for nature and greenery". The framework replaces a number of previously more specific policies and plans for nature and greenery. The goal has been to create an overarching and clear political framework and direction and thus also a better basis for synergies and priorities. "A greener Aarhus" interacts with a number of other policies and strategies on how the good life can unfold in attractive and sustainable settings. The policy has therefore been consulted in selected forums and in the magistrates' departments and has been adjusted on the basis of the consultation. "A greener Aarhus" must also be seen in the context of the municipal plan, which translates the policy's ambitions and goals into concrete guidelines and frameworks for the use of land.
@@ -713,8 +629,6 @@ The Children and Young People's Climate Plan sets the direction for and presents
 On a more general level, the list of relevant policies, strategies and frameworks point towards the following strengths and challenges, respectively:
 
 ## Identified strengths
-CITY OF AARHUS
-Climate Neutrality Action Plan
 
 The climate is a high priority in Denmark, and Aarhus plays a significant role in achieving the national policy goals. The broad political majority behind the recently adopted Climate Strategy Agreement: 2025-2030 shows that the climate also has a high local priority. It shows that the climate work has a strong political mandate.
 
@@ -734,19 +648,12 @@ Administratively, it ensures that the municipality's operations are managed by d
 
 However, the work with climate (and other wicked problems that require transversal, interdisciplinary and multistakeholder collaboration) challenges the magistrates-model and therefore requires special attention.
 
-8
-CITY OF AARHUS
-
-Climate Neutrality Action Plan
-
 A-2.1: Emissions Reduction Target 2030 and Residual Emissions
 
 |   | (1) Baseline emissions | (2) Emissions Reduction Target 2030 |   | (3) Emission reduction through other Action Plans |   | (4) Emissions Gap |   | (5) Emissions reduction through the CCC Action Plan to address the Gap |   | (6) Residual emissions  |   |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |   | Baseline emissions (ideally not older than 2018) - referring to the inventory used for target setting | The emissions reduction target for 2030 ideally achieves a minimum 80% reduction from the baseline, as reported in Section 2 of the Commitments document of the CCC. The overall target should be absolute or net-zero (i.e. including the compensation of any residual emissions). |   | These are the emissions reductions that would be achieved through existing policies, and plans, outlined in Section A-2.1. Those actions are by definition not part of the action portfolio in section B. If they are fully or partially incorporated in module B-2, their associated reduction potential should be referenced in column (5) and not be included here. WARNING if the baseline is a BAU scenario: If the BAU modelling includes any of these existing measures, please also do not include the associated emissions reduction in this column as otherwise it would be double counted. |   | (4) = (2) - (3) |   | This column is used to present the already quantified emission reduction associated with the action portfolios outlined in module B-2. Ideally, this equals the gap. If the there is a difference between the reduction potential of the actions specified in module B-2 (for instance because their reduction potential has not been fully estimated or because additional measures will be identified in future iterations), the CCC AP should be explicit about this difference and explain how the difference will be closed. In principle, as long as the difference has not been addressed, it would be considered as part of the residual emissions. |   | (6) = (1) - (2)  |   |
 |   | 1990 (absolute) (t. CO2e) | Frozen policy 2030 (absolute) (t. CO2e) | (absolute) | (%) | (absolute) | (%) | (absolute) | (%) | (absolute) | (%) | (absolute)  |
-CITY OF AARHUS
-Climate Neutrality Action Plan
 
 |  Buildings | 2.102.000 | 172.000 | 2.026.000 | 96% | 26.000 | 1% | 146.000 | 7% | 70.000 | 3% | 76.000 | 4%  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -760,10 +667,7 @@ Climate Neutrality Action Plan
 |   |   |  The remaining 12% is expected to be offset by the construction of a CCS plant. See more in Table B-2.3.  |   |   |   |   |   |   |   |   |   |   |
 |   |   |  This table only includes scope 1 and 2 emissions, because the city's climate neutrality target is within these scopes.  |   |   |   |   |   |   |   |   |   |   |
 
-0
 Climate Neutrality Action Plan Guidance
-
-3
 
 # 2.3 Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
 
@@ -790,8 +694,6 @@ Accordingly, a total of 849,000 tonnes of $\mathrm{CO}_{2}\mathrm{e}$ in Scope 1
 The domains and areas listed above are closely linked and influence each other. This means, for example, that the transformation of the energy system is influenced by and intervenes in land use, which in turn has a close link to the food area. It is therefore crucial to consider the cross-cutting synergies and challenges when designing the action portfolio.
 
 Today, $82\%$ of the supply in Aarhus comes from renewable energy sources, including biomass, which covers $63\%$ of the need for energy. $17\%$ of the energy is still covered by fossil energy, which is the source of emissions of $466,000~\mathrm{t} / \mathrm{CO}_{2}$ distributed between electricity imports, as well as the burning of coal, oil and waste.
-CITY OF AARHUS
-Climate Neutrality Action Plan
 
 In the 2030 projection, the energy area makes up 1/3 of the total emissions in Aarhus, if no efforts are initiated in this area. It is therefore crucial to take ambitious steps to ensure that the energy sector becomes $\mathrm{CO}_{2}$-neutral by 2030.
 
@@ -814,9 +716,6 @@ Multi-functional land use
 
 ² Please see previews review of current policies, particularly the potentials associated with the The Green Tripartite.
 ³ Please notice that The Green Mobility Plan was negotiated separately and with its own budget in August 2024. The Climate Strategy Agreement sets the overall $\mathrm{CO}_{2}$ target for the Green Mobility Plan but does not specify it's content. Although the transport and mobility domain accounts for the second highest level of emissions in Aarhus in 2030 and therefore naturally constitutes a significant strategic focus area, it is not included as a strategic focus area in this current first edition of the CCC Action Plan and consequently only peripherally included in the subsequent sections.
-CITY OF AARHUS
-Climate Neutrality Action Plan
-3
 
 Transversal approach to the green energy transition
 Green Partnerships
@@ -836,8 +735,6 @@ In 2022, the energy sector in Aarhus emitted 698,000 tonnes  $\mathrm{CO}_{2}\ma
 To achieve climate neutrality in 2030, the coalition parties have agreed that the energy sector must contribute negative emissions of approx. -259,000 tonnes  $\mathrm{CO}_{2}\mathrm{e}$ . This corresponds to a reduction of approximately 405,000 tonnes of  $\mathrm{CO}_{2}\mathrm{e}$  incl.  $\mathrm{CO}_{2}$  capture and storage. At the same time, power consumption will increase significantly in future. It is thus crucial that we expand renewable energy capacity to meet the demand for power in Aarhus and ensure security of supply. Aarhus must increase the amount of power generated within the municipality to secure supply and meet future needs.
 
 To ensure enough green energy for future needs, it is important to view the entire energy sector as a cohesive and interrelated, interacting system. This involves securing a sustainable energy mix, expansion of renewable energy facilities, carbon capture and storage, and energy efficiency improvements. Below, the barriers and opportunities associated with ensuring enough green energy for future needs are reviewed.
-CITY OF AARHUS
-Climate Neutrality Action Plan
 
 # A-3.1: Enough green energy for future needs: barriers and opportunities
 
@@ -861,9 +758,6 @@ Climate Neutrality Action Plan
 |  There is a large potential economic gain from energy efficiency improvements. The Confederation of Danish Industry (DI) estimates that a 15% energy saving will have a socio-economic gain of 12 billion DKK in Denmark as a whole. | Financial  |
 
 Key stakeholders include e.g.: Kredsløb, citizens and local communities, private companies, investors, Ørsted, public institutions, builders and contractors, Energispiring, local co-generation plants.
-CITY OF AARHUS
-Climate Neutrality Action Plan
-5
 
 # Multi-functional land use
 
@@ -883,8 +777,6 @@ To fulfil the political objectives of a comprehensive green transition as well a
 |  The municipality is only the authority on the facilities (stables, manure storage, etc.) and not the agricultural land. The municipality also cannot deviate from the general legislation in the area, so any initiative will be based on voluntariness, which underlines the importance of maintaining good cooperation between the municipality and the industry | Infrastructural/Technological  |
 |  Barriers may be that pyrolysis requires significant amounts of electricity and the degree of sustainability therefore depends on there being enough green electricity in the grid. As well as the full effect is only achieved if the uptake of excess heat is ensured. | Infrastructural/Technological  |
 |  Climate-optimized food production is a complex process with many different interests, and it is necessary to establish strong climate partnerships between local municipalities and stakeholders within | Behavioural and Social  |
-CITY OF AARHUS
-Climate Neutrality Action Plan
 
 |  agriculture and land use to coordinate efforts and optimize the food system as a whole. |   |
 | --- | --- |
@@ -905,11 +797,6 @@ Key stakeholders include e.g.: Seges, Velas and other interest organizations tha
 
 CO₂e emissions from the energy domain rank among the primary concerns for Aarhus, closely paralleled by emissions from transportation, which are intrinsically intertwined with the energy dynamics. Agriculture, Forestry, and Other Land Use (AFOLU) follow as the third-largest contributor, even though agriculture plays a relatively small role in Aarhus compared to more rural municipalities. Nevertheless, local farmers in Aarhus have livestock of more than 5,500 cows and 600,000 pigs, and agricultural byproducts (slurry, manure, residues) from these farms provide feedstock for the generation of local biogas in villages like Spørring. This can play a role in diminishing emissions associated with the city's energy production and consumption.
 
-6
-CITY OF AARHUS
-Climate Neutrality Action Plan
-7
-
 A fragmented approach to energy and land use planning has historically led to failed investments, incomplete projects, and suboptimal solutions.
 
 |  A-3.3: A transversal approach to the green transition: barriers and opportunities  |   |
@@ -920,8 +807,6 @@ A fragmented approach to energy and land use planning has historically led to fa
 |  Lack of internal capacity building among public officers in the Aarhus Administration. There is currently a lack of critical intersections between existing practices and the necessary climate initiatives among public officers. Thus, it is difficult to integrate climate considerations into the core tasks of local planning, environmental assessments, and citizen engagement, as the current processes and methods are not necessarily in line with climate targets. Specifically, the employees lack experiences when it comes to technical sector-coupling in the domains of Energy and Land use but also in terms of co-creation with citizens and external stakeholders. | Organisational  |
 |  Opportunities | Category  |
 |  A fundamental need for rethinking how energy projects more rapidly and innovatively are rolled out across the municipality. To overcome this systemically, there is a need for a reflexive model for governance that involves stakeholders and citizens in an iterative process throughout its activities. | Institutional/Regulatory + Behavioural and Social  |
-CITY OF AARHUS
-Climate Neutrality Action Plan
 
 |  To overcome the barrier concerning local opposition (NIMBY) against industrial energy facilities, a comprehensive co-creation effort is required, which includes adding value to the community to compensate the local community e.g. with better infrastructure, green recreative areas, sports facilities, etc. | Behavioural and Social  |
 | --- | --- |
@@ -938,11 +823,6 @@ At the same time, one of the areas that has the highest potential to break down 
 Below, the strategic opportunities associated with entering and facilitating new green partnerships and strategic multi-stakeholder relationships are listed and exemplified with current practice. The list is structured according to how different stakeholders can support different systemic levers.
 
 Systemic levers are the structural means of actions that preconditions the realization of direct CO₂-reductions and fall first and foremost within the categories of 1) Governance &amp; Policy, 2) Technology
-
-8
-CITY OF AARHUS
-Climate Neutrality Action Plan
-9
 
 &amp; Infrastructure, 3) Finance &amp; Business Models, 4) Democracy, Social Innovation &amp; Change, and 5) Learning &amp; Capabilities:
 
@@ -972,8 +852,6 @@ Citizens and local communities: engage and mobilise the public, not only invitin
 An example of how the systemic lever Democracy, Social Innovation and Change is driven by citizen and stakeholder involvement in the climate work is Climate Living Labs, which is open-source approach to innovation. Climate Living Labs is a Public-Private-People Participation model with a people-oriented approach where all stakeholders including government, cultural institutions, knowledge institutions private sector and civil society work together on a particular problem, issue or challenge relevant for a geographically defined area.
 
 ) Learning &amp; Capabilities, e.g.:
-CITY OF AARHUS
-Climate Neutrality Action Plan
 
 Knowledge institutions: research in new management models for handling and facilitating green transition processes and development of educational programs and further educations with inclusion of sustainability related issues, competence development/further training
 Businesses and industries: understand current practices and key challenges concerning capacity and capabilities to ensure relevant and applied research projects and teaching programs.
@@ -981,13 +859,6 @@ Businesses and industries: understand current practices and key challenges conce
 Examples of how the systemic lever Learning &amp; Capabilities gains from collaborations, include the partnership Energispring Aarhus, where building owners, together with Kredsløb, focus on energy savings through knowledge sharing and close collaboration. The partnership also includes Aarhus University; Another example is the partnership between the municipality and VIA university collage on the Green Academy. The Green Academy offers highly educated unemployed people in Aarhus a further training in sustainability, the green transition and related issues with a combination of theory and practice. The course participants act as green agents who can make a difference in the companies and organizations where they are employed. The partnership also includes internship agreements with companies.
 
 In Aarhus, we are already well underway. We are engaged in a range of collaborations and corporations, and we have formalized strong partnerships as part of the Aarhus Climate Plan 2021-2024. With the CCC 2030 Climate Neutrality Action Plan, we will continue to strengthen and expand partnerships and collaborations with business and industries, knowledge institutions, cultural institutions, civil society and citizens.
-
-0
-CITY OF AARHUS
-
-Climate Neutrality Action Plan
-
-1
 
 # 3 Part B – Pathways towards Climate Neutrality by 2030
 
@@ -1002,9 +873,6 @@ The figure shows how the preparation and development of the Climate Action Plan 
 Consultation at the action plan level includes – in addition to the mandatory public hearing process, where all citizens are invited to comment on the content of the climate plan to ensure that any undiscovered challenges or economic, social, or cultural biases of the climate plan are identified, and that input and comments of a more general nature are heard – more dialogue-based consultation processes. Examples include workshops with relevant NGOs, grassroots movements, and advocacy groups, workshops with Community Councils, and recommendations from the Climate Citizen Assembly.
 
 With regards to consulting more specific groupings, three target groups were identified prior to the upcoming work on the new climate plan. These were assessed as particularly relevant to involve through separate measure, as there were found difficult to reach by means of the established consultation activities. The three target groups are 1) Aarhus' green associations and communities, 2)
-CITY OF AARHUS
-Climate Neutrality Action Plan
-2
 
 Families with children and 3) Children (10-12 years). Through various involvement activities and workshops, a number of recommendations for Aarhus' climate work have been collected and reported (see links in additional sources of information list).
 
@@ -1029,9 +897,6 @@ To gather knowledge about motivations and barriers for more climate-smart habits
 To create opportunities for dialogue between families with children in selected local areas and between the families with children and the municipality, with a focus on green measures in communities in local areas.
 
 The activities targeted at families with children were organized to make it easy and attractive for busy families with children to participate. A focal point was to reach families with children who were averagely or lower interested in climate issues, as well as families of non-Danish ethnicity, as these groups are often difficult to reach in municipal involvement processes. Therefore, the events for families with children were held at local libraries, which are easily accessible and naturally form part
-CITY OF AARHUS
-Climate Neutrality Action Plan
-3
 
 of the families' everyday life. Two out of three local libraries were in areas with many families of non-Danish ethnicity. Three 'carve, talk and soup' (in Danish: "snit, snak og suppe") events were held at three local libraries: Beder library, Hasle library and Gellerup library. Residents of the respective local areas were invited to a free event, where they had the opportunity to carve Halloween pumpkin, eat pumpkin soup and talk about climate and eat cake – while the children were offered to play with Lego. The framework of the local libraries helped to create an informal atmosphere and dialogue, while climate conversation menus with introductory climate questions as well as questions within Transport, Food and Consumption gave direction to the conversations.
 
@@ -1053,9 +918,6 @@ At the Green Festival, the Aarhus Libraries also held a children's election, whe
 Approx. 110 children aged 10 to 12 build their climate ideas in LEGO, while approx. 260 children voted in the children's election.
 
 Co-creation at the action level involves closer collaborations with those actors who have direct or indirect influence on the effect of the action. This includes formal events and workshops, but also ongoing dialogue and sparring, for example with relevant organisations, privately and publicly-owned companies, cultural institutions, and – at a more practice level – professional staff in the municipality's institutions (e.g., home economics teachers). Finally, it includes stakeholder engagement efforts where stakeholders actively and directly contribute to climate solutions. Examples of the latter includes The Climate Alliance Aarhus (a business partnership aiming to jointly achieve Aarhus' goal of CO2
-CITY OF AARHUS
-Climate Neutrality Action Plan
-4
 
 neutrality) and The Green Academy (an educational partnership aimed at further educating unemployed academics to becoming “Green Change Agents” who helps local companies in their green transformation). Aarhus Municipality also has a strong portfolio of ongoing green projects which builds on co-creation processes with key stakeholders (including citizens), e.g. the CO-SHAPE project which aims to create shared value for all parties when planning for renewable energy plants in peri-urban areas.
 
@@ -1066,8 +928,6 @@ The climate challenge is a wicked problem that affects virtually all aspects of 
 In this connection, Climate Living Lab is an important tool. The Climate Strategy Agreement 2025-2030 emphasizes the necessity as well as the value of actively involving citizens and other stakeholders in the development and implementation of green climate solutions in Climate Living Labs. Living lab is a recognized innovation and design method, based on the idea of open innovation and user-centered design close to the lives of citizens and businesses. Experiences show that there are many and great benefits to be gained the earlier and more actively citizens and other actors are involved in the development of green climate solutions. The specific Climate Living Labs will be designed, implemented and “lived out” in close collaboration with important local actors (e.g. local community councils, citizens, business and research institutions) to ensure that everyone who can and will be affected by the green solutions is given an active voice. The specific Climate Living Labs will be developed with the implementation of the climate plan 2025-2030, and it is therefore not possible at this time to account for the details. However, future iterations will outline their specific actions and experiences related hereto as they are lived out.
 
 Involving local citizens is also an important principle from an economic perspective. For example, the so-called Oplandspulje is based on the principles of participatory budgets, which is a method for allocating municipal funds. The Oplandspulje aims to develop the local areas outside the Ring Road and in the urban and peri-urban areas of Aarhus, focusing on increased citizenship, participation, engagement, and urban development. Here, it is the citizens of a local area who propose how an earmarked budget should be used for a specific, defined area within a predetermined theme. The citizens of the local area then vote on the submitted proposals, and based on the voting, the solution(s) that can be realized within the allocated budget are selected. The proposals include projects that support the green transition, e.g. initiatives that aims at improving biodiversity.
-CITY OF AARHUS
-Climate Neutrality Action Plan
 
 The model of stakeholder collaboration and co-creation is politically and strategically supported by a range of local governance and value frameworks (c. Module A-2 Current Policies and Strategies Assessment), including:
 
@@ -1087,9 +947,6 @@ Climate neutrality scenarios and impact pathways are based on the Climate Strate
 ## 3.1 Module B-1 Climate Neutrality Scenarios and Impact Pathways
 
 As an integrated part of working with the EU Mission for 100 Climate-neutral &amp; Smart Cities and the CCC action plan – and not least as a natural extension of the previous years' climate actions in Aarhus – Aarhus is increasing its attention towards co-benefits of the climate transition. The more difficult and comprehensive actions towards $\mathrm{CO}_{2}\mathrm{e}$ reductions become, the more important it is to focus on the co-benefits that the green transition brings with it and thus formulate a value-based vision beyond $\mathrm{CO}_{2}$
-CITY OF AARHUS
-Climate Neutrality Action Plan
-6
 
 reductions. The green transition of Aarhus should not only contribute to realizing the national and international CO₂ goals. It must also pave the way for creating value for citizens, businesses and communities, thus, act as a lever for the Aarhus goals (cf. 1: Introduction). In other words: How can the Aarhus Goals be translated into the climate agenda and how can the climate transition contribute with value to Aarhus being a good city for everyone.
 
@@ -1097,21 +954,15 @@ The table below outlines the Aarhus Goals and suggests how they can be translate
 
 |  B-1.1: How can the climate transition act as a lever the Aarhus goals? |   | Alignment to the NZC co-benefit domain framework  |
 | --- | --- | --- |
-|  1: A city with a place for everyone | e.g. by creating a city with space to learn and develop. A city where all citizens have the best opportunities, conditions and prerequisites to join the green transition. A city that invites all stakeholders to engage in dialogue about the climate - even when it's difficult.
-Or as exemplified in the EU CO-SHAPE-project, funded as part of Aarhus' participation in the Mission, where citizens, architects, local farmers, civil servants, and the agricultural collaborate. | Social Inclusion, Innovation, Democracy and Cultural Impact Co-Benefits  |
-|  2: A city of community and fellowship | e.g. by creating a city where green development is something we co-create and co-shape, and where new ideas are cultivated and tried out in non-traditional ways of working. A city where fellowship is a key path to rethinking the possibilities for living in and developing our city together.
-Or as exemplified in CO-SHAPE, by co-creating a comprehensive plan for peri-urban area with locals a diverse group of stakeholders. | Social Inclusion, Innovation, Democracy and Cultural Impact Co-Benefits  |
-|  3: A city where everyone is healthy, and everyone thrives | e.g. by creating a city where green lifestyles promote health, well-being and security. A city that offers the best conditions for sustainable living.
-Or as exemplified in CO-SHAPE, where plans are made with the agricultural sector to ensure practices that are beneficial for groundwater protection, such as the planting of grass protein. | Public Health & Environment  |
+|  1: A city with a place for everyone | e.g. by creating a city with space to learn and develop. A city where all citizens have the best opportunities, conditions and prerequisites to join the green transition. A city that invites all stakeholders to engage in dialogue about the climate - even when it's difficult. Or as exemplified in the EU CO-SHAPE-project, funded as part of Aarhus' participation in the Mission, where citizens, architects, local farmers, civil servants, and the agricultural collaborate. | Social Inclusion, Innovation, Democracy and Cultural Impact Co-Benefits  |
+|  2: A city of community and fellowship | e.g. by creating a city where green development is something we co-create and co-shape, and where new ideas are cultivated and tried out in non-traditional ways of working. A city where fellowship is a key path to rethinking the possibilities for living in and developing our city together. Or as exemplified in CO-SHAPE, by co-creating a comprehensive plan for peri-urban area with locals a diverse group of stakeholders. | Social Inclusion, Innovation, Democracy and Cultural Impact Co-Benefits  |
+|  3: A city where everyone is healthy, and everyone thrives | e.g. by creating a city where green lifestyles promote health, well-being and security. A city that offers the best conditions for sustainable living. Or as exemplified in CO-SHAPE, where plans are made with the agricultural sector to ensure practices that are beneficial for groundwater protection, such as the planting of grass protein. | Public Health & Environment  |
 |  4: A growing city with a strong private sector | e.g. by creating a city with sustainable growth, green partnerships and innovations driven by new sustainable business models and green workplaces. | Economy  |
-CITY OF AARHUS
-Climate Neutrality Action Plan
 
 |   | Or as exemplified in CO-SHAPE, where extensive sector coupling is facilitated and avenues for new technologies regarding PtX and pyrolysis are explored. |   |
 | --- | --- | --- |
-|  5: A sustainable city with good urban and local environment | e.g. by creating a city with thriving local areas in both urban, peri-urban and rural areas, where biodiversity and recreational areas are in focus. A city with good conditions for both people, animals, nature and water
+|  5: A sustainable city with good urban and local environment | e.g. by creating a city with thriving local areas in both urban, peri-urban and rural areas, where biodiversity and recreational areas are in focus. A city with good conditions for both people, animals, nature and water Or as exemplified in CO-SHAPE, where comprehensive planning ensures that the transformation of Spørring adds value back to the locals by e.g. increasing liveability and developing green areas. | Resource Efficiency + Biodiversity  |
 
-Or as exemplified in CO-SHAPE, where comprehensive planning ensures that the transformation of Spørring adds value back to the locals by e.g. increasing liveability and developing green areas. | Resource Efficiency + Biodiversity  |
 
 The Aarhus goals have been developed in collaboration with the citizens and serve as the benchmark for the City Council's decisions, for the strategic directions and tactical plans that are developed by the city administration, for the everyday work of the municipal employees, and not least as a value framework for practicing Aarhus citizenship. With a direct link between the Aarhus goals and the CCC Action Plan, we can ensure a continued strong focus on Aarhus as a good city for everyone. And we can ensure that everyone works in the same direction.
 
@@ -1129,136 +980,47 @@ Please note that the impact pathways have not been politically endorsed and shou
 |   |   | Facilitate networks and forums between central (local) players in the energy field |  |   |
 |   |  Technology/infrastructure + finance/funding + Governance & policy | Kredsleb must submit a recommendation for an overall CO_{2} capture project to Aarhus Municipality, after which Aarhus City Council, as the owner, can choose to approve the installation of the facility. | 335.000 tonnes CO_{2e} | Large public investment creating jobs in the municipality (4)  |
 |   | Carbon Capture and Storage | The city council's proceedings will include the position on the municipal guarantee and framework for the responsible sale of CO_{2} credits, which |  |   |
-CITY OF AARHUS
-Climate Neutrality Action Plan
 
 |   |  | ensures the necessary financing of the CO_{2} capture project |  |   |
 | --- | --- | --- | --- | --- |
 |   |   | Aarhus Municipality, as an authority, will have to process the associated local plan and environmental assessment of the project |  |   |
 |   |   | Aarhus Municipality, as the owner of Kredsløb, must also approve the CO_{2} capture project at a general meeting before the project can be started |  |   |
 |   |   | The project is expected to be processed before November 2025, when there is a deadline for applying for support in the state-funded CCS pool. |  |   |
-|   |  Technology/infrastructure
-**Phasing out oil from the district heating system** | Prepare material regarding adoption of the Green Heating System of the Future.
-Prepare Energy Plan 2025-2045 regarding adoption by Aarhus City Council after public consultation.
-Authority processing and implementation of the many elements in the Green Heating System of the Future (heat pumps, geothermal, etc.) | 28.000 tonnes CO_{2e} | Improved air quality (5 + 3)
-Increased energy security  |
-|  Democracy/participation + Governance & policy
-**Installing wind & solar** | Identify improvement opportunities and success criteria for RE case processing in collaboration with developers, citizens and landowners.
-Prepare an addendum to Municipal Plan 2025, where the planning supports the expansion of 1,600 hectares of solar cells and eight wind turbines to an even greater extent, i.a. in the form of clarifying guidelines for prioritizing area considerations when expanding renewable energy.
-Develop and implement a new planning model for RE by the end of 2026 at the latest.
-Support political processing of local planning cases corresponding to 1,600 hectares of solar and eight wind turbines. | 12.000 tonnes CO_{2e} | Installing wind & solar in Aarhus is done with close involvement of local communities, which improves citizen & communities' participation (2 + 5)  |   |
-|  Technology/infrastructure + democracy/participation
-**Biogen Energy Park*** | Is described as part of the Green infrastructure & nature-based solutions field of action | 14.000 tonnes CO_{2e} | Improved land use management practices, where conventional agriculture is being replaced by grass (5 + 3)
-Improved dialogue and |   |
-
-8
-CITY OF AARHUS
-Climate Neutrality Action Plan
+|   |  Technology/infrastructure **Phasing out oil from the district heating system** | Prepare material regarding adoption of the Green Heating System of the Future. Prepare Energy Plan 2025-2045 regarding adoption by Aarhus City Council after public consultation. Authority processing and implementation of the many elements in the Green Heating System of the Future (heat pumps, geothermal, etc.) | 28.000 tonnes CO_{2e} | Improved air quality (5 + 3) Increased energy security  |
+|  Democracy/participation + Governance & policy **Installing wind & solar** | Identify improvement opportunities and success criteria for RE case processing in collaboration with developers, citizens and landowners. Prepare an addendum to Municipal Plan 2025, where the planning supports the expansion of 1,600 hectares of solar cells and eight wind turbines to an even greater extent, i.a. in the form of clarifying guidelines for prioritizing area considerations when expanding renewable energy. Develop and implement a new planning model for RE by the end of 2026 at the latest. Support political processing of local planning cases corresponding to 1,600 hectares of solar and eight wind turbines. | 12.000 tonnes CO_{2e} | Installing wind & solar in Aarhus is done with close involvement of local communities, which improves citizen & communities' participation (2 + 5)  |   |
+|  Technology/infrastructure + democracy/participation **Biogen Energy Park*** | Is described as part of the Green infrastructure & nature-based solutions field of action | 14.000 tonnes CO_{2e} | Improved land use management practices, where conventional agriculture is being replaced by grass (5 + 3) Improved dialogue and |   |
 
 |   |  |  |  | relationship building with key stakeholders (2 + 4)  |
 | --- | --- | --- | --- | --- |
-|   |  Democracy/participation
-**Energy efficiency improvements** | Prepare an analysis that maps energy efficiency potentials and reduction paths in Aarhus
-Represent Aarhus' interests on the national stage.
-Scale and intensify the collaboration in Energispring 2.0
-Exchange and incorporate experience in relation to the EU project LIFE Act | 16.000 tonnes CO₂e | A larger share of public buildings will be equipped with building energy management systems (4)
-Citizens will be involved in co-creation of climate neutrality actions, as they are to carry out energy efficiency improvements at home (1)  |
-|   |  Governance & policy + democracy/participation
-**Energy efficient buildings** | Prepare data-based comparison across municipal buildings, etc. to support an overview of water, heat and electricity consumption.
-Cooperation with the private sector regarding development of new methods for reducing energy consumption.
-Advocate for support the work on the infrastructure of our power grid | 500 tonnes CO₂e | Improved management practice and stakeholder collaboration (2 + 3 + 4)  |
-|  Mobility & transport | Governance & policy
-**Sustainable soil management** | Evaluate the implementation of sustainable land management in planning processes in management as well as the need for further measures,
-Prepare a catalogue of methods to reduce the amount of surplus land in building and construction projects
-Analyse and describe suitable locations for land tipping in Aarhus Municipality, as well as prepare a business case for two suitable locations | 5.000 tonnes CO₂e | Improved road safety and noise pollution (5 + 3)
-Improved air quality (5 + 3)  |
-|   |  Technology/infrastructure
-**Sustainable shipping & aviation** | Project-oriented dialogue with shipping and aviation players in and around Aarhus Municipality
-Map the opportunity space, including decided and potential reduction measures.
-Prepare decision proposals and possibly mutually binding agreements. | 44.000 tonnes CO₂e | Improved air quality (5)
-Innovative fuels (4)  |
+|   |  Democracy/participation **Energy efficiency improvements** | Prepare an analysis that maps energy efficiency potentials and reduction paths in Aarhus Represent Aarhus' interests on the national stage. Scale and intensify the collaboration in Energispring 2.0 Exchange and incorporate experience in relation to the EU project LIFE Act | 16.000 tonnes CO₂e | A larger share of public buildings will be equipped with building energy management systems (4) Citizens will be involved in co-creation of climate neutrality actions, as they are to carry out energy efficiency improvements at home (1)  |
+|   |  Governance & policy + democracy/participation **Energy efficient buildings** | Prepare data-based comparison across municipal buildings, etc. to support an overview of water, heat and electricity consumption. Cooperation with the private sector regarding development of new methods for reducing energy consumption. Advocate for support the work on the infrastructure of our power grid | 500 tonnes CO₂e | Improved management practice and stakeholder collaboration (2 + 3 + 4)  |
+|  Mobility & transport | Governance & policy **Sustainable soil management** | Evaluate the implementation of sustainable land management in planning processes in management as well as the need for further measures, Prepare a catalogue of methods to reduce the amount of surplus land in building and construction projects Analyse and describe suitable locations for land tipping in Aarhus Municipality, as well as prepare a business case for two suitable locations | 5.000 tonnes CO₂e | Improved road safety and noise pollution (5 + 3) Improved air quality (5 + 3)  |
+|   |  Technology/infrastructure **Sustainable shipping & aviation** | Project-oriented dialogue with shipping and aviation players in and around Aarhus Municipality Map the opportunity space, including decided and potential reduction measures. Prepare decision proposals and possibly mutually binding agreements. | 44.000 tonnes CO₂e | Improved air quality (5) Innovative fuels (4)  |
 |   |  Green Mobility Plan | These are described in the green mobility plan and do not appear in the current CCC Action Plan | 270.000 tonnes CO₂e | Improved road safety and noise pollution (5 + 3)  |
-
-9
-CITY OF AARHUS
-Climate Neutrality Action Plan
 
 |   |  |  |  | Improved air quality (5 + 3)  |
 | --- | --- | --- | --- | --- |
-|   |  Learning & capabilities + Technology/infrastructure
-**Municipal emission-free machinery and transportation** | Optimize driving and the size of the fleet
-Expand and introduce car sharing across magistrates' departments
-Introduce an emission-free car fleet and work machines
-Develop emission-free services from Aarhus Municipality's Entrepreneurship Department
-Introduce requirements for the purchase of emission-free contractor services | 3100 tonnes CO₂e | More green spaces in the city (5 + 3)  |
-|  Waste & circular economy | Technology/infrastructure
-**Construction of a new water management plant and installing biocovers at landfills** | TBD | 40.000 tonnes CO₂e | Reduced leakage (3)  |
-|  Materials in the industrial sector | Learning & capabilities + Technology/infrastructure
-**Reducing material use and using more sustainable materials in the industrial sector** | TBD | 6.000 tonnes CO₂e | Improved waste management and efficiency (4)
-Better deployment of material cycles and circular economy (4)  |
-|  Green infrastructure & nature-based solutions | Governance & policy + democracy/participation + finance & funding
-**Afforestation** | Plan and realize 8,000 ha of forest and nature in collaboration with landowners, utility companies, agricultural businesses and investors
-Prepare a financing model for overall realization and operation, and secure municipal co-financing
-Establish up to 1,000 ha of municipal forest and nature in the Water and Nature Parks together with companies and the Climate Forest Foundation
-Work so that, for example, the funds in Denmark's Green Area Fund contribute as much as possible to Aarhus Municipality | 30.000 tonnes CO₂e | An increase in urban and near-urban forestry & plantation (5)
-Closer ecological habitat connection (5)
-Nature restoration (5)
-Private-public partnerships (4)  |
+|   |  Learning & capabilities + Technology/infrastructure **Municipal emission-free machinery and transportation** | Optimize driving and the size of the fleet Expand and introduce car sharing across magistrates' departments Introduce an emission-free car fleet and work machines Develop emission-free services from Aarhus Municipality's Entrepreneurship Department Introduce requirements for the purchase of emission-free contractor services | 3100 tonnes CO₂e | More green spaces in the city (5 + 3)  |
+|  Waste & circular economy | Technology/infrastructure **Construction of a new water management plant and installing biocovers at landfills** | TBD | 40.000 tonnes CO₂e | Reduced leakage (3)  |
+|  Materials in the industrial sector | Learning & capabilities + Technology/infrastructure **Reducing material use and using more sustainable materials in the industrial sector** | TBD | 6.000 tonnes CO₂e | Improved waste management and efficiency (4) Better deployment of material cycles and circular economy (4)  |
+|  Green infrastructure & nature-based solutions | Governance & policy + democracy/participation + finance & funding **Afforestation** | Plan and realize 8,000 ha of forest and nature in collaboration with landowners, utility companies, agricultural businesses and investors Prepare a financing model for overall realization and operation, and secure municipal co-financing Establish up to 1,000 ha of municipal forest and nature in the Water and Nature Parks together with companies and the Climate Forest Foundation Work so that, for example, the funds in Denmark's Green Area Fund contribute as much as possible to Aarhus Municipality | 30.000 tonnes CO₂e | An increase in urban and near-urban forestry & plantation (5) Closer ecological habitat connection (5) Nature restoration (5) Private-public partnerships (4)  |
 
-0
-CITY OF AARHUS
-Climate Neutrality Action Plan
-1
-
-|   |  | Cooperation with Agricultural Organizations and SEGES on demonstration projects
-Search for new opportunities for co-financing municipal and private forests and nature, for example through new business concepts and the development of green business models
-Test methods for establishing nature and forest that can change objectives and delivery over the coming decades |  |   |
+|   |  | Cooperation with Agricultural Organizations and SEGES on demonstration projects Search for new opportunities for co-financing municipal and private forests and nature, for example through new business concepts and the development of green business models Test methods for establishing nature and forest that can change objectives and delivery over the coming decades |  |   |
 | --- | --- | --- | --- | --- |
-|   |  Technology/infrastructure + democracy/participation
-**Set-aside of peat soils** | Preliminary investigation of 500 ha (expected) more through state-funded low-lying schemes
-Preliminary study of 300 ha of municipally funded low-lying climate projects
-Investigation of the possibilities and consequences in relation to the purchase of buildings, stables, etc.
-Build closer cooperation with the agricultural industry on how we succeed with the common climate agenda through dialogue meetings
-Take care of interests in relation to the legal framework and government schemes in order to achieve a single-entry point to search for multifunctional projects with added value for climate, biodiversity, etc. | 15.000 tonnes CO₂e | Nature restoration (5)
-Reduction of nitrogen discharged into streams and groundwater (5 + 3)
-Better sea and water environments (5 + 3)
-Private-public partnerships (4)  |
-|   | Learning & capabilities + Governance & policy + democracy/participation
-**Climate supervisions of farms** | Continue preparation of climate action plans for crop and livestock farming from 2025.
-Explain the possibilities and incentive structures for changed land use from 2025.
-Establish partnerships with relevant actors within agriculture and across sectors.
-Continually guide and be in dialogue with farms about green conversion options and changed land use. | 1.000 tonnes CO₂e | Improving ecological awareness (1 + 5)
-Private-public partnerships (4)  |
-|   |  Technology/infrastructure
-**Biogen Energy Park*** | Prepare planning basis for the location of the technical facilities in the area around Baanlev Biogas, via e.g. involvement of local citizens and landowners as well as operators of the facility
-Facilitate dialogues and enter into collaborations with relevant stakeholders, including operators who build and operate the technical facilities in the energy park, as well as potential buyers of the end products. | 33.000 tonnes CO₂e | Improved land use management practices, where conventional agriculture is being replaced by grass (5 + 3)
-Improved dialogue and relationship building with key  |
-CITY OF AARHUS
-Climate Neutrality Action Plan
-2
+|   |  Technology/infrastructure + democracy/participation **Set-aside of peat soils** | Preliminary investigation of 500 ha (expected) more through state-funded low-lying schemes Preliminary study of 300 ha of municipally funded low-lying climate projects Investigation of the possibilities and consequences in relation to the purchase of buildings, stables, etc. Build closer cooperation with the agricultural industry on how we succeed with the common climate agenda through dialogue meetings Take care of interests in relation to the legal framework and government schemes in order to achieve a single-entry point to search for multifunctional projects with added value for climate, biodiversity, etc. | 15.000 tonnes CO₂e | Nature restoration (5) Reduction of nitrogen discharged into streams and groundwater (5 + 3) Better sea and water environments (5 + 3) Private-public partnerships (4)  |
+|   | Learning & capabilities + Governance & policy + democracy/participation **Climate supervisions of farms** | Continue preparation of climate action plans for crop and livestock farming from 2025. Explain the possibilities and incentive structures for changed land use from 2025. Establish partnerships with relevant actors within agriculture and across sectors. Continually guide and be in dialogue with farms about green conversion options and changed land use. | 1.000 tonnes CO₂e | Improving ecological awareness (1 + 5) Private-public partnerships (4)  |
+|   |  Technology/infrastructure **Biogen Energy Park*** | Prepare planning basis for the location of the technical facilities in the area around Baanlev Biogas, via e.g. involvement of local citizens and landowners as well as operators of the facility Facilitate dialogues and enter into collaborations with relevant stakeholders, including operators who build and operate the technical facilities in the energy park, as well as potential buyers of the end products. | 33.000 tonnes CO₂e | Improved land use management practices, where conventional agriculture is being replaced by grass (5 + 3) Improved dialogue and relationship building with key  |
 
 |   |  | Establish collaborations with local farmers and agricultural organizations on especially incentive structures in relation to grass cultivation as well as the supply of livestock manure and crop residues to the biogas plant. |  | stakeholders (1 + 2)  |
 | --- | --- | --- | --- | --- |
 |  City, Country and Construction | Governance & policy | Implement the Climate Agreement in Municipal Plan 2025 | 0 | TBD  |
-|   |  Climate strategic planning | Concept development in relation to Climate strategic planning
-Method development in relation to Climate strategic planning
-Develop climate strategies through local community planning
-Implement relevant climate initiatives in Thematic Plans
-Represent interests in relation to the state framework in planning law, sector legislation and building law |  |   |
+|   |  Climate strategic planning | Concept development in relation to Climate strategic planning Method development in relation to Climate strategic planning Develop climate strategies through local community planning Implement relevant climate initiatives in Thematic Plans Represent interests in relation to the state framework in planning law, sector legislation and building law |  |   |
 |   |  Governance & policy | Implement the Climate Agreement in Municipal Plan 2025 |  |   |
-|   |  Local community planning of the open country | Concept development in relation to climate strategic local community planning
-Method development in relation to climate strategic local community planning
-Develop climate strategies through local community planning
-Implement relevant climate initiatives in Thematic Plans |  |   |
-|   |  Learning & capabilities + democracy/participation | Enter project partnerships around PIER 3
-Establish and/or further develop collaborations in already established network constellations within the built environment |  |   |
+|   |  Local community planning of the open country | Concept development in relation to climate strategic local community planning Method development in relation to climate strategic local community planning Develop climate strategies through local community planning Implement relevant climate initiatives in Thematic Plans |  |   |
+|   |  Learning & capabilities + democracy/participation | Enter project partnerships around PIER 3 Establish and/or further develop collaborations in already established network constellations within the built environment |  |   |
 |   |  Partnerships with relevant players in the construction field |  |  |   |
-CITY OF AARHUS
-Climate Neutrality Action Plan
-3
 
-|   | Learning & capabilities + democracy/participation + Governance & policy
-**Climate-efficient buildings** | Ensure continuous fulfilment and communication of climate requirements for municipal construction
+|   | Learning & capabilities + democracy/participation + Governance & policy **Climate-efficient buildings** | Ensure continuous fulfilment and communication of climate requirements for municipal construction |
 
 Carrying out pilot projects with a focus on testing materials, methods etc., as well as subsequent evaluation of the pilot projects
 
@@ -1272,16 +1034,14 @@ Concept development on the possibility of a central risk fund for unforeseen exp
 
 Prepares ongoing analyses of municipal administration buildings
 
-Maintain Strategic Property Portfolio  |
+Maintain Strategic Property Portfolio
 | --- | --- | --- |
-|   | Learning & capabilities + democracy/participation + Governance & policy
-**Resource-efficient buildings** | Prepare and actively use material catalogue
+|   | Learning & capabilities + democracy/participation + Governance & policy **Resource-efficient buildings** | Prepare and actively use material catalogue |
 
 Carry out relevant pilot projects
 
-Prepare statements of a building's positive value for the local environment  |
-|   | Learning & capabilities + democracy/participation + Governance & policy
-**Circular buildings** | Map and assess materials' potential for reuse, recycling, resale or disposal
+Prepare statements of a building's positive value for the local environment
+|   | Learning & capabilities + democracy/participation + Governance & policy **Circular buildings** | Map and assess materials' potential for reuse, recycling, resale or disposal |
 
 Strengthen the database of resources in existing buildings on the online platform
 
@@ -1291,9 +1051,7 @@ Prepare environmental and resource mapping of existing buildings and own project
 
 Develop a resource register in existing buildings
 
-Develop a strategy for the selective demolition of Aarhus Municipality's buildings  |
-CITY OF AARHUS
-Climate Neutrality Action Plan
+Develop a strategy for the selective demolition of Aarhus Municipality's buildings
 
 * Biogen Energy Park is described in the Energy systems as well as in the Green infrastructure &amp; nature-based solutions sectors. The energy park will cause CO₂e reductions in both sectors.
 
@@ -1302,63 +1060,23 @@ B-1.1b: Impact Pathways (scope 3)
 |  Fields of action | Systemic levers | Changes and outcomes (Process deliveries) | Direct impacts (Emission reductions | Indirect impacts (co-benefits)  |
 | --- | --- | --- | --- | --- |
 |  Mobility & transport | Municipal sustainable facilities | TBD | 2.500-3.500 tonnes CO₂e | TBD  |
-|  Green infrastructure & nature-based solutions | Technology/infrastructure
-Biogen Energy Park | Described in the Green infrastructure & nature-based solutions field of action | 6.000 tonnes CO₂e | Improved land use management practices, where conventional agriculture is being replaced by grass (5 + 3)
-Improved dialogue and relationship building with key stakeholders (1 + 2)  |
-CITY OF AARHUS
-Climate Neutrality Action Plan
+|  Green infrastructure & nature-based solutions | Technology/infrastructure Biogen Energy Park | Described in the Green infrastructure & nature-based solutions field of action | 6.000 tonnes CO₂e | Improved land use management practices, where conventional agriculture is being replaced by grass (5 + 3) Improved dialogue and relationship building with key stakeholders (1 + 2)  |
 
-|  A climate-friendly food system | Partnership with food actors
-Climate-friendly food and habits
-Transformation of the food production system
-Climate policy food strategy | Please see elaborated impact pathway etc. for the climate-friendly food system field of action, Table B-2.3 | 20.000-30.000 tonnes CO₂e |   |
+|  A climate-friendly food system | Partnership with food actors Climate-friendly food and habits Transformation of the food production system Climate policy food strategy | Please see elaborated impact pathway etc. for the climate-friendly food system field of action, Table B-2.3 | 20.000-30.000 tonnes CO₂e |   |
 | --- | --- | --- | --- | --- |
-|  Waste & circular economy | Technology/infrastructure + social innovation
-Circular resources | TBD | 12.000-15.000 tonnes CO₂e | Reducing material use and improving circular economy (1 + 4)  |
-|  Collaborating Aarhus | Democracy/participation + learning & capabilities
-The Climate Alliance Aarhus | Further develop existing working groups and the strategic level, including developing new "products" such as guides, recommendations, commitment paper, etc., which other companies can join/use.
-Disseminate Klimaalliance Aarhus' "products" to the wider business community, including the SME segment in relation to make knowledge and resources available.
-Develop "products" such as guides, recommendations, commitment papers, etc., which contribute to efforts in the other emission domains, including supporting other domain areas through company involvement and collaborations.
-Spread awareness of the Climate Alliance Aarhus, including strengthening communication efforts. | TBD | Improving conditions for number of skilled green jobs (4)
-Facilitating improved businesses' behaviour changes towards low carbon practices (4)  |
-|   | Democracy/participation + learning & capabilities + finance & funding
-Green investment fond | Support relevant projects that contribute to green solutions and CO₂ savings in Aarhus Municipality.
-Develop an application form that can facilitate the application procedures for both the Municipality and the applicant. | TBD | TBD  |
+|  Waste & circular economy | Technology/infrastructure + social innovation Circular resources | TBD | 12.000-15.000 tonnes CO₂e | Reducing material use and improving circular economy (1 + 4)  |
+|  Collaborating Aarhus | Democracy/participation + learning & capabilities The Climate Alliance Aarhus | Further develop existing working groups and the strategic level, including developing new "products" such as guides, recommendations, commitment paper, etc., which other companies can join/use. Disseminate Klimaalliance Aarhus' "products" to the wider business community, including the SME segment in relation to make knowledge and resources available. Develop "products" such as guides, recommendations, commitment papers, etc., which contribute to efforts in the other emission domains, including supporting other domain areas through company involvement and collaborations. Spread awareness of the Climate Alliance Aarhus, including strengthening communication efforts. | TBD | Improving conditions for number of skilled green jobs (4) Facilitating improved businesses' behaviour changes towards low carbon practices (4)  |
+|   | Democracy/participation + learning & capabilities + finance & funding Green investment fond | Support relevant projects that contribute to green solutions and CO₂ savings in Aarhus Municipality. Develop an application form that can facilitate the application procedures for both the Municipality and the applicant. | TBD | TBD  |
 
-5
-CITY OF AARHUS
-Climate Neutrality Action Plan
-6
-
-|   |  | Develop a reporting form that can facilitate reporting procedures for both the Municipality and the applicant.
-Prepare CO_{2} calculations and/or probability of CO_{2} reductions in the projects that receive support.
-Spread awareness of The Green Investment Pool, including strengthening communication efforts. |  |   |
+|   |  | Develop a reporting form that can facilitate reporting procedures for both the Municipality and the applicant. Prepare CO_{2} calculations and/or probability of CO_{2} reductions in the projects that receive support. Spread awareness of The Green Investment Pool, including strengthening communication efforts. |  |   |
 | --- | --- | --- | --- | --- |
-|   |  Democracy/participation + learning & capabilities
-**Improving sustainable thinking in SME’s** | Ensure that companies get help to kick-start or work further with their green transition through three annual courses of the Green Academy up to and including 2028.
-Include knowledge and guidance on climate action in the authority-based dialogue with the Aarhus companies in connection with environmental supervision.
-Spread knowledge about the green transition among companies through local networks, including making relevant projects visible. | 8.500 tonnes CO_{2}e | Improving conditions for local entrepreneurship & local businesses (4)  |
-|   |  Democracy/participation + learning & capabilities
-**Climate Living Labs** | Prepare the city council's recommendation on the disbursement of funds between MTM and MKB
-Develop a cooperation model for how the Climate Secretariat and MKB jointly locate, define and prioritize efforts, target groups and areas
-Search for relevant domains for the development and implementation of Klima Living Labs, including uncovering geographical areas and actors
-Develop methods and best practice for involving citizens and civil society
-Search for fund opportunities | TBD | TBD  |
-|   |  learning & capabilities + finance & funding
-**International outlook** | Attract funds for and foreign investments in Aarhus climate solutions and transversal projects.
-Support externally funded projects.
-Strengthen collaboration with and the benefits of international collaborations (e.g. 100 cities) through visible participation at conferences and events, sparring on best practice and joint applications for unique projects.
-Strengthen participation in leading international networks and partnerships such as ICLEI, C40 and IPCC. | TBD | Branding of Aarhus as a climate frontrunner (4)
-Key focus on ensuring a just transition (1 + 2)  |
-CITY OF AARHUS
-Climate Neutrality Action Plan
+|   |  Democracy/participation + learning & capabilities **Improving sustainable thinking in SME’s** | Ensure that companies get help to kick-start or work further with their green transition through three annual courses of the Green Academy up to and including 2028. Include knowledge and guidance on climate action in the authority-based dialogue with the Aarhus companies in connection with environmental supervision. Spread knowledge about the green transition among companies through local networks, including making relevant projects visible. | 8.500 tonnes CO_{2}e | Improving conditions for local entrepreneurship & local businesses (4)  |
+|   |  Democracy/participation + learning & capabilities **Climate Living Labs** | Prepare the city council's recommendation on the disbursement of funds between MTM and MKB Develop a cooperation model for how the Climate Secretariat and MKB jointly locate, define and prioritize efforts, target groups and areas Search for relevant domains for the development and implementation of Klima Living Labs, including uncovering geographical areas and actors Develop methods and best practice for involving citizens and civil society Search for fund opportunities | TBD | TBD  |
+|   |  learning & capabilities + finance & funding **International outlook** | Attract funds for and foreign investments in Aarhus climate solutions and transversal projects. Support externally funded projects. Strengthen collaboration with and the benefits of international collaborations (e.g. 100 cities) through visible participation at conferences and events, sparring on best practice and joint applications for unique projects. Strengthen participation in leading international networks and partnerships such as ICLEI, C40 and IPCC. | TBD | Branding of Aarhus as a climate frontrunner (4) Key focus on ensuring a just transition (1 + 2)  |
 
-|   |  | Look after Aarhus' green interests in Europe, e.g. via active use of the regional office CDEU, European partnerships and dialogues with EU authorities and institutions.
-Ensure the visibility of a green Aarhus in connection with the Danish EU presidency in the second half of 2025.
-Re-establish and upgrade Aarhus Municipality's delegation service to promote partner visits, raise their quality and improve the benefit from them. |  |   |
+|   |  | Look after Aarhus' green interests in Europe, e.g. via active use of the regional office CDEU, European partnerships and dialogues with EU authorities and institutions. Ensure the visibility of a green Aarhus in connection with the Danish EU presidency in the second half of 2025. Re-establish and upgrade Aarhus Municipality's delegation service to promote partner visits, raise their quality and improve the benefit from them. |  |   |
 | --- | --- | --- | --- | --- |
-|   |  Learning & capabilities
-Active ownership in relation to green transition in the municipally owned companies | Work strategically and focused to enable companies owned by Aarhus Municipality to prepare CO2 accountings that outline the path towards CO2 neutrality in 2030. | TBD | TBD  |
+|   |  Learning & capabilities Active ownership in relation to green transition in the municipally owned companies | Work strategically and focused to enable companies owned by Aarhus Municipality to prepare CO2 accountings that outline the path towards CO2 neutrality in 2030. | TBD | TBD  |
 |  Total |  |  | 47.000-59.500 tonnes CO2e |   |
 
 # 3.2 Module B-2 Climate Neutrality Portfolio Design
@@ -1370,16 +1088,12 @@ B-2.1: Description of action portfolios
 |  Fields of action | Portfolio description  |   |
 | --- | --- | --- |
 |   |  List of actions | Descriptions  |
-|  Energy system | The Green District Heating of the future | The Green District Heating of the Future project is a prerequisite for reducing the use of biomass for heating in 2030 and represents a significant contribution to phasing out coal. In particular, the Green District Heating of the Future will contribute to phasing out wood pellets as fuel, which currently account for 1.5 million tonnes of CO2. The coalition parties agree that Kredsløb, the municipal utility, should pursue technologies that enable the greatest possible reduction in biomass fuels.
-Geothermic district heating will make it possible to exploit heat from subterranean water as a sustainable source of energy that is available every day, all year round. Kredsløb and Innargi have drilled two test wells, one on the Port of Aarhus and one in Skejby. Results from both test wells have been positive, and the project will continue. The  |
-CITY OF AARHUS
-Climate Neutrality Action Plan
+|  Energy system | The Green District Heating of the future | The Green District Heating of the Future project is a prerequisite for reducing the use of biomass for heating in 2030 and represents a significant contribution to phasing out coal. In particular, the Green District Heating of the Future will contribute to phasing out wood pellets as fuel, which currently account for 1.5 million tonnes of CO2. The coalition parties agree that Kredsløb, the municipal utility, should pursue technologies that enable the greatest possible reduction in biomass fuels. Geothermic district heating will make it possible to exploit heat from subterranean water as a sustainable source of energy that is available every day, all year round. Kredsløb and Innargi have drilled two test wells, one on the Port of Aarhus and one in Skejby. Results from both test wells have been positive, and the project will continue. The  |
 
-|   |  | objective is to begin supplying geothermal heat to residents of Aarhus in the fall of 2025.
+|   |  | objective is to begin supplying geothermal heat to residents of Aarhus in the fall of 2025. In the long-term, the objective is a heating system in Aarhus that does not use any biomass that is not captured using CCS, except for necessary waste incineration. The coalition parties recognize that hay biomass in Lisbjerg will continue to be a component of the district heating system for some years. The Green District Heating of the Future project will lead to a 28,000 tonnes reduction of CO_{2} in 2030.  |
 
-In the long-term, the objective is a heating system in Aarhus that does not use any biomass that is not captured using CCS, except for necessary waste incineration. The coalition parties recognize that hay biomass in Lisbjerg will continue to be a component of the district heating system for some years. The Green District Heating of the Future project will lead to a 28,000 tonnes reduction of CO_{2} in 2030.  |
 | --- | --- | --- |
-|   |  Accelerated deployment of sustainable energy (Solar and wind)* | Nationally, the target is to quadruple onshore sustainable energy production by 2030. The coalition parties agree that the City of Aarhus must contribute to reaching this target. The City Council has already earmarked 1,200 ha for the establishment of renewable energy facilities (RE) in the form of solar energy. The earmarked locations are to be fully exploited, corresponding to installation of solar panels with the target of producing 1,000 GWh annually in total.
+|   |  Accelerated deployment of sustainable energy (Solar and wind)* | Nationally, the target is to quadruple onshore sustainable energy production by 2030. The coalition parties agree that the City of Aarhus must contribute to reaching this target. The City Council has already earmarked 1,200 ha for the establishment of renewable energy facilities (RE) in the form of solar energy. The earmarked locations are to be fully exploited, corresponding to installation of solar panels with the target of producing 1,000 GWh annually in total. |
 
 The coalition parties agree that it is necessary to find many locations as possible for solar energy, and that installing solar panels in areas with vulnerable groundwater reserves would be advantageous, as this will achieve synergy effects. The coalition parties agree that the solar panels must be installed so as to prevent seepage of substances harmful to groundwater. The coalition parties agree that the ambition is to earmark an additional 400 ha for solar cells, and that possible locations will be explored in connection with the drafting of the 2025 municipal plan. In connection with the drafting of the municipal plan, new and more flexible tools must be explored in connection with the selection of locations.
 
@@ -1391,13 +1105,9 @@ Site identification for and installation of three additional wind turbines remai
 
 Installing new wind turbines may involve purchase or expropriation of homes in the countryside in a radius of 600 m to the wind turbine area (for wind turbines with a total height of 150 m), in addition to deprioritizing buffer zones around larger towns.
 
-The coalition parties request that Technical Services and Environment explores the possibilities for and consequences of a new model for RE planning that can deliver greater speed in land-use planning, clear prioritization of different land-use considerations and to a higher degree accommodate citizen-driven energy communities. Designation of sites for solar cells, for example, would take place in dialogue with  |
+The coalition parties request that Technical Services and Environment explores the possibilities for and consequences of a new model for RE planning that can deliver greater speed in land-use planning, clear prioritization of different land-use considerations and to a higher degree accommodate citizen-driven energy communities. Designation of sites for solar cells, for example, would take place in dialogue with
 
-8
-CITY OF AARHUS
-Climate Neutrality Action Plan
-
-|   |  | private actors and relevant stakeholders, including the agricultural sector.
+|   |  | private actors and relevant stakeholders, including the agricultural sector. |
 
 It is estimated that the combination of 1,600 hectares of solar energy and 10 new wind turbines combined would lead to a reduction in CO_{2} emissions of 12,000 tonnes in 2030 and generate approx. 1,450 GWh annually, which corresponds to about 50% of Aarhus’ projected electricity consumption in 2030.
 
@@ -1405,38 +1115,30 @@ The coalition parties aim for Aarhus to generate more of its own electricity in 
 
 The coalition parties note that Technical Services and Environment has already received a considerable number of applications for the installation of solar cells. In 2022, the City Council allocated DKK 7 million annually for RE case processing in the period 2023-2027. The coalition parties agree to extend the RE case- processing effort, and the coalition parties request that Technical Services and Environment speed up regulatory processing and increase simultaneous citizen involvement.
 
-The coalition parties note that the national energy crisis staff (NEKST) intends to reduce barriers to faster deployment of RE. The coalition parties also agree that green funding pools should benefit local communities and neighbours of RE installations to an even greater extent, including with a focus on biodiversity, and that steps should be taken towards increasing the available forms of neighbour compensation, for example through sale of electricity from RE installations to their neighbours.  |
+The coalition parties note that the national energy crisis staff (NEKST) intends to reduce barriers to faster deployment of RE. The coalition parties also agree that green funding pools should benefit local communities and neighbours of RE installations to an even greater extent, including with a focus on biodiversity, and that steps should be taken towards increasing the available forms of neighbour compensation, for example through sale of electricity from RE installations to their neighbours.
 | --- | --- | --- |
-|   |  Carbon Capture and Storage* | A CO_{2} capture facility at the Lisbjerg Plant is projected to be able to capture approx. 335,000 CO_{2}e annually. CCS is thus a decisive factor in our efforts to achieve climate neutrality in 2030 and contribute to negative emissions from the energy sector. The coalition parties agree that Kredsløb must apply to establish a CCS facility, including that the City of Aarhus may provide a municipal guarantee in connection with the construction project. The coalition parties emphasize the importance of collaboration with external partners in this connection, as well as the expectation that operations achieve financial equilibrium, government funding is considered.
+|   |  Carbon Capture and Storage* | A CO_{2} capture facility at the Lisbjerg Plant is projected to be able to capture approx. 335,000 CO_{2}e annually. CCS is thus a decisive factor in our efforts to achieve climate neutrality in 2030 and contribute to negative emissions from the energy sector. The coalition parties agree that Kredsløb must apply to establish a CCS facility, including that the City of Aarhus may provide a municipal guarantee in connection with the construction project. The coalition parties emphasize the importance of collaboration with external partners in this connection, as well as the expectation that operations achieve financial equilibrium, government funding is considered. |
 
 Because the by-laws for Kredsløb stipulate that owner approval is necessary for investments over DKK 500 million, the City Council will have to make a final decision on the approval of the Circuit’s CCS facility. If needed, a municipal guarantee will be considered at the same time.
 
-A prerequisite for the introduction of CSS is that Kredsløb must be able to sell CO_{2} credits to ensure the financial viability of the project. Of the 335,000 tonnes of CO_{2}e captured, approx. 25% will come from fossil sources and 75% from biogenic sources. The coalition parties support allowing Kredsløb to sell CO_{2} credits from biogenic sources to help finance the project. The coalition parties agree that the market for CO_{2} credits is immature, that principles for CO_{2} credits must be developed, and that the City Council will be responsible for setting the framework for the responsible sale of credits that will continue to ensure the necessary financing. The coalition parties also support  |
+A prerequisite for the introduction of CSS is that Kredsløb must be able to sell CO_{2} credits to ensure the financial viability of the project. Of the 335,000 tonnes of CO_{2}e captured, approx. 25% will come from fossil sources and 75% from biogenic sources. The coalition parties support allowing Kredsløb to sell CO_{2} credits from biogenic sources to help finance the project. The coalition parties agree that the market for CO_{2} credits is immature, that principles for CO_{2} credits must be developed, and that the City Council will be responsible for setting the framework for the responsible sale of credits that will continue to ensure the necessary financing. The coalition parties also support
 
-9
-CITY OF AARHUS
-Climate Neutrality Action Plan
-
-|  |  | Kredsløb applying for funding from the government operating grant pool to help fund the startup of CSS.
+|  |  | Kredsløb applying for funding from the government operating grant pool to help fund the startup of CSS. |
 
 The coalition parties also acknowledge that the effectiveness of CCS facilities has not yet been demonstrated on a large scale, and that there is a risk regarding technology, transport and storage. The adoption of CCS technology is thus associated with significant uncertainty. For this reason, the coalition parties request that Kredsløb, Technical Services and Environment and the Mayor's Department provide regular status reports to the City Council on the progress of the project, including if it is considered necessary to discuss risks with the coalition parties.
 
 The coalition parties will also explore the possibilities for additional CCS projects elsewhere in the municipality than at the Lisbjerg Plant. Additional CSS facilities could potentially reduce the municipality's total C02 emissions. The coalition parties agree that additional CSS facilities must not impose restrictions on the phasing out of biomass in connection with the Green District Heating of the Future.
 
-For this reason, the coalition parties request that Technical Services and Environment and the Mayor's Department explore potential synergies between the Lisbjerg Plant and potential additional CSS facilities elsewhere in the municipality, including but not limited to in connection with the biogenic energy park or in connection with private point sources. CO2 reduction from additional CCS facilities will be included in the CO2 buffer. A status report must be submitted to the coalition parties in the third quarter of 2024. |
+For this reason, the coalition parties request that Technical Services and Environment and the Mayor's Department explore potential synergies between the Lisbjerg Plant and potential additional CSS facilities elsewhere in the municipality, including but not limited to in connection with the biogenic energy park or in connection with private point sources. CO2 reduction from additional CCS facilities will be included in the CO2 buffer. A status report must be submitted to the coalition parties in the third quarter of 2024.
 | --- | --- | --- |
-| Energy efficiency improvements | Through the Aa+ project, the City of Aarhus has implemented ambitious energy-efficiency retrofits. With the formation of Aarhus Ejendomme, it is now possible to carry out additional energy-efficiency retrofits on an even larger scale and contribute to the implementation of the EU's energy efficiency directive, which sets a target of overall energy savings from all buildings of 11.7% for the period 2024-2030. This goal applies to society as a whole and includes citizens and businesses in addition to the municipality. To achieve this target, a partnership with business and industry to reduce energy consumption will be established. In addition, the municipality will launch a public information campaign focussing on energy-efficiency retrofits. In total, energy efficiency retrofits will lead to a reduction of 16,000 tonnes of CO2e annually.
+| Energy efficiency improvements | Through the Aa+ project, the City of Aarhus has implemented ambitious energy-efficiency retrofits. With the formation of Aarhus Ejendomme, it is now possible to carry out additional energy-efficiency retrofits on an even larger scale and contribute to the implementation of the EU's energy efficiency directive, which sets a target of overall energy savings from all buildings of 11.7% for the period 2024-2030. This goal applies to society as a whole and includes citizens and businesses in addition to the municipality. To achieve this target, a partnership with business and industry to reduce energy consumption will be established. In addition, the municipality will launch a public information campaign focussing on energy-efficiency retrofits. In total, energy efficiency retrofits will lead to a reduction of 16,000 tonnes of CO2e annually. |
 
 The City of Aarhus has taken the lead and has already formed a solar cell entity that will install solar cells on the roofs of all municipal buildings where this is financially feasible. The solar cell entity is expected to install 71,000 m2 solar cells on about double the roof area. Electricity production from 2029 with 71,000 m2 is estimated at 12.8 GWh annually. The projected CO2e reduction in 2030 is estimated at approx. 100 tonnes.
 
-The private sector is taking a proactive approach and is offering installation of solar cells on existing private detached houses. The City of Aarhus will launch a website that can calculate the solar cell potential for all roof surfaces in the municipality, including private homes. The coalition parties are committed to promoting the expansion of solar cells in all new and existing urban and commercial zones, and to this end a partnership will be established between the City of Aarhus and relevant contractors, developers, and advisers. The coalition parties are also committed to providing support for the installation of solar cells on the roofs of housing associations and cooperatives. The coalition parties will also work to ensure that the state provides the necessary national framework for a rapid energy efficiency effort, including solar cells on roofs. |
+The private sector is taking a proactive approach and is offering installation of solar cells on existing private detached houses. The City of Aarhus will launch a website that can calculate the solar cell potential for all roof surfaces in the municipality, including private homes. The coalition parties are committed to promoting the expansion of solar cells in all new and existing urban and commercial zones, and to this end a partnership will be established between the City of Aarhus and relevant contractors, developers, and advisers. The coalition parties are also committed to providing support for the installation of solar cells on the roofs of housing associations and cooperatives. The coalition parties will also work to ensure that the state provides the necessary national framework for a rapid energy efficiency effort, including solar cells on roofs.
 | Transport & Mobility | Green Mobility Plan (please consult the Additional sources | The transport sector will account for two-thirds of all CO2 emissions in the 2030 projections. This means that it will be the largest source of CO2 emissions in the City of Aarhus. Even though more residents are |
 
-0
-CITY OF AARHUS
-Climate Neutrality Action Plan
-
-|   | of information-list for link to the Green Mobility Plan Agreement, Dec 2024) | driving EVs, most busses are electric and air transportation has gotten greener, the transport sector emitted 729,000 tonnes of CO_{2}e in 2022. With changes in the framework conditions for transport, the transport sector will still emit 549,000 tonnes in 2030. To reach the goal of climate neutrality in Aarhus, a transition from fossil transport to greener forms of transport is necessary: collective transport, cycling and walking, along with EVs.
+|   | of information-list for link to the Green Mobility Plan Agreement, Dec 2024) | driving EVs, most busses are electric and air transportation has gotten greener, the transport sector emitted 729,000 tonnes of CO_{2}e in 2022. With changes in the framework conditions for transport, the transport sector will still emit 549,000 tonnes in 2030. To reach the goal of climate neutrality in Aarhus, a transition from fossil transport to greener forms of transport is necessary: collective transport, cycling and walking, along with EVs. |
 
 Being able to get around easily and quickly is decisive for the quality of everyday life in the City of Aarhus – whether it's the commute to work, the bike ride to school or a walk in the city centre. A reduction of CO_{2} from transport must take the mobility perspective into account, to ensure a focus on promoting accessibility and a high-quality urban environment for residents, commuters and visitors.
 
@@ -1448,18 +1150,13 @@ The coalition parties also agree that the prerequisite for the green mobility pl
 
 The coalition parties see the development in the number of EVs as positive, and thus it is assumed that at least 37% of all vehicles in Aarhus in 2030 will be EVs, which will result in an additional reduction in CO_{2} emissions of 56,000 tonnes annually. This reduction will be included in the mobility negotiations. If this assumption is not realised, the shortfall will have to be made up within the transport sector. A transition to EVs will not lead to any improvements in mobility.
 
-The coalition parties agree that emissions from the transport sector are significant in relation to consumption-based emissions. The coalition parties thus request that Technical Services and Environment and the Mayor's Department draft a recommendation during the first year of the climate action plan that sets out proposal for the development of a data-based baseline for achieving reductions win consumption-based emissions in the transport sector.  |
+The coalition parties agree that emissions from the transport sector are significant in relation to consumption-based emissions. The coalition parties thus request that Technical Services and Environment and the Mayor's Department draft a recommendation during the first year of the climate action plan that sets out proposal for the development of a data-based baseline for achieving reductions win consumption-based emissions in the transport sector.
 | --- | --- | --- |
 |   |  Sustainable soil management | Please note that actions covering this area is not further described in the Climate Strategy Agreement: 2025-2030.  |
 |   |  Sustainable aviation and shipping | Emissions from aviation and shipping will, according to projections, account for approx. 30% of the transport sector's emissions in 2030. The coalition parties thus agree to work to promote the electrification of the aviation and shipping to the greatest possible extent, and for the replacement of fossil fuels by more climate-friendly alternatives. The coalition parties agree to reduce emissions by 15-30% annual from 2030 onwards through partnerships with actors in the industry.  |
 |  Agriculture, Forestry and Land use | Conversion to forest and nature | The conversion of agricultural land into forest and natural habitats can be achieved, among other things, through the establishment of 'blue-green parks'. These parks protect groundwater, reduce nutrient leaching and provide recreational opportunities and water retention capacity. The coalition parties agree to earmark a total of 8,000 ha  |
 
-1
-CITY OF AARHUS
-Climate Neutrality Action Plan
-2
-
-|  | (including existing natural habitats) as blue-green parks in the 2025 municipal plan. The blue-green parks will mean the conversion of 4,000 ha of agricultural land to natural habitats, woodland and other groundwater-protective uses. The coalition parties agree to earmark an additional 4,000 ha, bringing the total ambition for woodland and natural habits in Aarhus to 16,000 ha, which corresponds to one-third of the municipality's area. To achieve this, it will be necessary to think in terms of multi-functional land use, with multiple uses on the same site.
+|  | (including existing natural habitats) as blue-green parks in the 2025 municipal plan. The blue-green parks will mean the conversion of 4,000 ha of agricultural land to natural habitats, woodland and other groundwater-protective uses. The coalition parties agree to earmark an additional 4,000 ha, bringing the total ambition for woodland and natural habits in Aarhus to 16,000 ha, which corresponds to one-third of the municipality's area. To achieve this, it will be necessary to think in terms of multi-functional land use, with multiple uses on the same site. |
 
 The coalition parties acknowledge that a transformation of this scale will take time and will be difficult. These targets will be reached through a collaboration with landowners, agriculture and businesses. The coalition parties request Aarhus Vand to contribute to the realisation of the blue-green parks in the earmarked areas, and that groundwater protection measures are implemented in these areas. In addition, the coalition parties also require Technical Services and Environment to present an ambitious, balanced strategy for groundwater protection within a radius of 300 m from a water bore in connection with the 2025 municipal plan, and that this strategy become the basis for the practice of both Technical Services and Environment and Aarhus Vand with respect to groundwater protection.
 
@@ -1471,104 +1168,76 @@ The conciliation parties agree to initiate the establishment of 2,500 ha of unto
 
 In addition, private commercial forestation projects on 1,200 ha of privately-owned sensitive soils outside the blue-green parks, as well as 300 ha of forest in the 'Green Denmark Map'. In addition, the possibility of establishing an additional 300 ha of commercial forest will be explored. The CO2 reductions from this will be included in the CO2 buffer. Commercial forests will be established with a view to partnerships with the private sector to make us of these forests, for example in construction. A priority will be placed on planting untouched forests as close to urban areas as possible, to enable residents to use them for recreational purposes to the greatest extent, while also maintaining a focus on biodiversity.
 
-It is estimated that multifunctional forests will sequester 15 tonnes of CO2e per ha annually, a total of 60,000 tonnes CO2e annually; the full effect will only be achieved after many years of growth. The carbon sequestration effect in 2030 is estimated at 30,000 tonnes of CO2 annually, depending on the speed of establishment, the land on which the forest is established and the type of forest. Reforestation has a long-lasting effect and is costly. See the section on the funds for the land fund regarding financing |
+It is estimated that multifunctional forests will sequester 15 tonnes of CO2e per ha annually, a total of 60,000 tonnes CO2e annually; the full effect will only be achieved after many years of growth. The carbon sequestration effect in 2030 is estimated at 30,000 tonnes of CO2 annually, depending on the speed of establishment, the land on which the forest is established and the type of forest. Reforestation has a long-lasting effect and is costly. See the section on the funds for the land fund regarding financing
 | --- | --- |
 | Set-aside of lowland soils | When carbon-rich lowland soils are drained for cultivation, they are oxygenated, and emit large amounts of greenhouse gases to the atmosphere. The City of Aarhus has already planned the set-aside of specific areas on 500 ha of lowland soils: the lowland soils will be |
-CITY OF AARHUS
-Climate Neutrality Action Plan
 
-|   |  | taken out of cultivation and the water table will be raised in these areas in order to reduce CO_{2} emissions from agriculture.
+|   |  | taken out of cultivation and the water table will be raised in these areas in order to reduce CO_{2} emissions from agriculture. |
 
 The coalition parties agree to a more ambitious target for set-aside of lowland soils, from 500 ha to 1,300 ha of lowland soils, in addition to ensuring rapid processing of applications by the City of Aarhus. It is expected that 1,000 ha will be financed by the state and 300 ha financed by the City of Aarhus.
 
-The projects are conditional on voluntary agreements being made with the local landowners. The possibilities and consequences in relation to purchasing buildings and stables and the like are also being explored. The initiative will lead to an annual reduction in CO_{2}e of 15,000 tonnes in 2030. Technical Service and Environment estimates that over a number of years, it will become necessary to add approx. DKK 200 million to the land fund. See the section on funding for the land fund in relation to assigning funding.  |
+The projects are conditional on voluntary agreements being made with the local landowners. The possibilities and consequences in relation to purchasing buildings and stables and the like are also being explored. The initiative will lead to an annual reduction in CO_{2}e of 15,000 tonnes in 2030. Technical Service and Environment estimates that over a number of years, it will become necessary to add approx. DKK 200 million to the land fund. See the section on funding for the land fund in relation to assigning funding.
 | --- | --- | --- |
 |   |  Holistic planning | The green transition of the countryside will require that all initiatives are implemented at once within a very few years before 2030. The coalition parties agree that a tool must be developed to support the creation of a master plan for the countryside that will facilitate the implementation of nature restoration projects, local development plans, development projects and construction projections within geographically defined locations.  |
-|   |  Biogenic Energy Park* | Biogenic energy parks use biological materials as fuel to produce energy, for example manure from livestock, crop residues or other organic waste. A biogenic plant can contribute to strengthening the link between agriculture and the energy sector.
+|   |  Biogenic Energy Park* | Biogenic energy parks use biological materials as fuel to produce energy, for example manure from livestock, crop residues or other organic waste. A biogenic plant can contribute to strengthening the link between agriculture and the energy sector. |
 
 The coalition parties agree to work to promote the establishment of a pyrolysis plant that can sequester up to 50% of the biomass carbon in biochar, which means it will not be returned to the atmosphere, in addition to a grass protein plant that produces a sustainable feed for swine. It is estimated that the annual CO_{2}e effect will be approximately 47,000 tonnes of CO_{2}e in Scopes 1+2 and 6,000 tonnes in Scope 3.
 
-At the same time, the coalition parties will also explore the possibility of implementing CO_{2} capture in connection with the establishment of the biogenic energy park. In addition, it must be ensured that any emissions of environmentally harmful substances must remain below threshold values.  |
-|   |  Agricultural climate planning and monitoring | Agriculture in the City of Aarhus emits approx. 61,500 tonnes of CO_{2}e. Reductions can be achieved by strengthening the dialogue between agriculture and the municipality, including by having climate as a recurring element in monitoring and regulatory approval process. Climate action plans for both livestock and crop-producing farms must also be developed. A partnership with central players in the agricultural sector and across municipalities and industries must be established with a view to promoting climate-optimized food production.
+At the same time, the coalition parties will also explore the possibility of implementing CO_{2} capture in connection with the establishment of the biogenic energy park. In addition, it must be ensured that any emissions of environmentally harmful substances must remain below threshold values.
+|   |  Agricultural climate planning and monitoring | Agriculture in the City of Aarhus emits approx. 61,500 tonnes of CO_{2}e. Reductions can be achieved by strengthening the dialogue between agriculture and the municipality, including by having climate as a recurring element in monitoring and regulatory approval process. Climate action plans for both livestock and crop-producing farms must also be developed. A partnership with central players in the agricultural sector and across municipalities and industries must be established with a view to promoting climate-optimized food production. The coalition parties agree that Agro Food Park in Skejby has great potential to lead the play towards the food system of the future. The coalition parties are thus prepared to promote a new ‘Climate, Health and Food Systems Valley’ in Skejby with a view to maintaining the Aarhus region’s position as a world leader in this area. A reduction of 1,000 tonnes of CO_{2}e annually is estimated by 2030.  |
 
-The coalition parties agree that Agro Food Park in Skejby has great potential to lead the play towards the food system of the future. The coalition parties are thus prepared to promote a new ‘Climate, Health and Food Systems Valley’ in Skejby with a view to maintaining the Aarhus region’s position as a world leader in this area. A reduction of 1,000 tonnes of CO_{2}e annually is estimated by 2030.  |
-|  Waste and Industrial Processes | Biocover, ReWater and industrial processes | It is estimated that on an annual basis, approx. 25,000 tonnes of CO_{2}e are emitted from landfills, 13,000 tonnes of CO_{2}e from wastewater, 9,500 tonnes of CO_{2}e from composting, 23,500 tonnes of CO_{2}e from leakage and 6,000 tonnes of CO_{2}e from fires. This amounts to significant emissions.
+|  Waste and Industrial Processes | Biocover, ReWater and industrial processes | It is estimated that on an annual basis, approx. 25,000 tonnes of CO_{2}e are emitted from landfills, 13,000 tonnes of CO_{2}e from wastewater, 9,500 tonnes of CO_{2}e from composting, 23,500 tonnes of CO_{2}e from leakage and 6,000 tonnes of CO_{2}e from fires. This amounts to significant emissions. The data necessary for targeted reduction initiatives is not currently available. The coalition partners thus agree that a process must be initiated to generate better local data, and that on the background of  |
 
-The data necessary for targeted reduction initiatives is not currently available. The coalition partners thus agree that a process must be initiated to generate better local data, and that on the background of  |
 
-3
-CITY OF AARHUS
-Climate Neutrality Action Plan
-
-|   |  | this new precise data, initiatives must be put in place to help reduce the CO_{2}e emissions from the specific sources.
+|   |  | this new precise data, initiatives must be put in place to help reduce the CO_{2}e emissions from the specific sources. |
 
 Old landfills can potentially release large amounts of methane, which is a potent greenhouse gas. As a mitigation technology, a biocover can be put in place: a meter-thick layer of compost is spread over the area, which then breaks the methane down into water and CO_{2}. The possibility of a partnership with Kredsleb will be investigated, with a view to using biocovers to reduce emissions.
 
 The coalition partners agree on the target of an approx. 46,000 metric ton CO_{2}e reduction annually in 2030. This target assumes that ReWater is realized, and that it is possible to reduce virtually all emissions from landfills by means of biocovers, in addition to the assumption that emissions from this domain will be significantly reduce in the greenhouse gas emissions report when local data becomes available.
 
-By working more intensively with the waste hierarchy and waste generation, the City of Aarhus can move towards phasing out waste through a greater focus on recycling and reuse rather than disposal, in addition to behavioural design and new habits. The coalition parties agree that a circularity policy must be developed for the City of Aarhus as a client in connection with construction projects, and that the City of Arhus must support business and industry in developing circular solutions through industrial symbioses. This initiative will result in an annual reduction of approx. 14,000 tonnes CO_{2} in scope 3.  |
+By working more intensively with the waste hierarchy and waste generation, the City of Aarhus can move towards phasing out waste through a greater focus on recycling and reuse rather than disposal, in addition to behavioural design and new habits. The coalition parties agree that a circularity policy must be developed for the City of Aarhus as a client in connection with construction projects, and that the City of Arhus must support business and industry in developing circular solutions through industrial symbioses. This initiative will result in an annual reduction of approx. 14,000 tonnes CO_{2} in scope 3.
 | --- | --- | --- |
-|  A climate-friendly food system | Partnerships with the food industry | Danish agriculture and the food industry have a significant role to play in achieving climate neutrality. In recognition of this, efforts must be made to establish partnerships with the food industry. For example, a partnership with Agro Food Park can attract companies and institutions that create sustainable solutions for the food industry, both in Denmark and abroad. The coalition parties are committed to supporting Agro Food Park in establishing concrete partnerships, for example with regard to land use, drought/water issues, soil health and resilience, biodiversity, regenerative agriculture (conversion of cultivation methods), sustainable building materials based on the products of nature and the automatization and AI-driven digitalization of agriculture, in addition to project development through national and EU partnerships with relevant cluster organisations.
+|  A climate-friendly food system | Partnerships with the food industry | Danish agriculture and the food industry have a significant role to play in achieving climate neutrality. In recognition of this, efforts must be made to establish partnerships with the food industry. For example, a partnership with Agro Food Park can attract companies and institutions that create sustainable solutions for the food industry, both in Denmark and abroad. The coalition parties are committed to supporting Agro Food Park in establishing concrete partnerships, for example with regard to land use, drought/water issues, soil health and resilience, biodiversity, regenerative agriculture (conversion of cultivation methods), sustainable building materials based on the products of nature and the automatization and AI-driven digitalization of agriculture, in addition to project development through national and EU partnerships with relevant cluster organisations. The coalition parties agree that Agro Food Park is to be expanded to include companies within health and renewable energy, in addition to food and agriculture. The coalition parties request an investigation into whether Agro Food Park's locations outside the municipal plan development area might be used in future for renewable energy production that can contribute to the City of Aarhus' climate targets and strategy. A working group is to be established comprised of Agro Food Park, the Mayor's Department and Technical Services and Environment, with a view to ensuring alignment between the municipality's climate targets and business policy objectives, the development potential of Agro Food Park and the physical development of the area, including the municipal planning framework.  |
 
-The coalition parties agree that Agro Food Park is to be expanded to include companies within health and renewable energy, in addition to food and agriculture. The coalition parties request an investigation into whether Agro Food Park's locations outside the municipal plan development area might be used in future for renewable energy production that can contribute to the City of Aarhus' climate targets and strategy. A working group is to be established comprised of Agro Food Park, the Mayor's Department and Technical Services and Environment, with a view to ensuring alignment between the municipality's climate targets and business policy objectives, the development potential of Agro Food Park and the physical development of the area, including the municipal planning framework.  |
 |   | Climate-friendly food habits* | Food production is under great pressure today. The municipality must take the lead by promoting climate-friendly dietary habits and skills among children and young people through enhanced education in primary school, in addition to providing support for climate-friendly food communities in the municipality. 'Climate-friendly meals and sustainable food habits' is included in the terms of reference for the committee on climate and sustainability; there is potential for synergy here. The Department of Children and Young People, the Department of Health and Care and the Department of Social Affairs and Employment are all working with climate plans aimed at children, the elderly and marginalized populations, for example, which include climate-friendly diets and foods.  |
-
-4
-CITY OF AARHUS
-Climate Neutrality Action Plan
 
 |   | Transformation of the food system | The City of Aarhus can help support the transformation of agricultural production by contributing to the test and development of new cultivation concepts and business models on agricultural sites within the municipality. In addition, local sustainable food value chains can be supported, with a view to promoting more plant-based production and sale. If more Aarhus residents follow the official dietary guidelines, a significant annual CO_{2}e reduction in Scope 3 can be achieved.  |
 | --- | --- | --- |
-|  Construction & Urban development | Climate-strategic municipal and urban planning
-Partnerships with the building industry | Aarhus is a good and attractive city, and a growing city as well, both in terms of population and jobs. Analyses show that urban growth with new construction can be climate-positive, as long as elements like housing typologies, collective waste and heating systems, collective traffic and ridesharing develop in line with population growth. The coalition parties agree on an ambition to achieve sustainable urban development, but that Aarhus must continue to accommodate social balance with a focus on social cohesion and an inclusive, diverse city with more families with children. The coalition parties will promote the continuation of a sustainable urban development in Aarhus in connection with the 2025 municipal plan.
+|  Construction & Urban development | Climate-strategic municipal and urban planning Partnerships with the building industry | Aarhus is a good and attractive city, and a growing city as well, both in terms of population and jobs. Analyses show that urban growth with new construction can be climate-positive, as long as elements like housing typologies, collective waste and heating systems, collective traffic and ridesharing develop in line with population growth. The coalition parties agree on an ambition to achieve sustainable urban development, but that Aarhus must continue to accommodate social balance with a focus on social cohesion and an inclusive, diverse city with more families with children. The coalition parties will promote the continuation of a sustainable urban development in Aarhus in connection with the 2025 municipal plan. |
 
 If the City of Aarhus is to succeed in reducing emissions from construction, more tools will be necessary. The national legislative framework, in the form of the planning act and the building regulations, are not ambitious enough. Agreements can be made with private construction project clients and developers, and the coalition parties will engage in targeted political advocacy with a view to securing statutory authority for achieving climate targets. The coalition parties thus agree that the City of Aarhus will accede to the Reduction Roadmap with a view to promoting more climate-friendly building regulations.
 
-The coalition parties are committed to supporting new partnerships with the construction industry in Aarhus, as well as consultancy and research, in order to promote sustainable construction projects. The City of Aarhus must take the lead with our own construction projects and develop concrete solutions to serve as inspiration for others.  |
-|   |  Municipal construction | In relation to the municipality's own buildings, the best square meters are the ones we do not build. For this reason, the coalition parties aim for Aarhus Ejendomme to reduce the municipality's administrative square meters by at least 10-15%, and to review the total property portfolio from a climate-conscious perspective in addition to new ways of working, in the form of more remote work. The coalition parties agree to revisit the target for the number of administrative square meters in 2026, once an activity-based layout has been implemented, including a consideration of whether further reductions in administrative square meters are possible.
+The coalition parties are committed to supporting new partnerships with the construction industry in Aarhus, as well as consultancy and research, in order to promote sustainable construction projects. The City of Aarhus must take the lead with our own construction projects and develop concrete solutions to serve as inspiration for others.
+|   |  Municipal construction | In relation to the municipality's own buildings, the best square meters are the ones we do not build. For this reason, the coalition parties aim for Aarhus Ejendomme to reduce the municipality's administrative square meters by at least 10-15%, and to review the total property portfolio from a climate-conscious perspective in addition to new ways of working, in the form of more remote work. The coalition parties agree to revisit the target for the number of administrative square meters in 2026, once an activity-based layout has been implemented, including a consideration of whether further reductions in administrative square meters are possible. |
 
 The coalition parties agree that the municipality must build fewer new structures, renovate more structures and increase the geographical consolidation of services across functions. Aarhus Ejendomme must take an ambitious approach to meeting new needs in new ways based on the most climate-friendly model when it comes to the municipality's building needs. The coalition parties thus agree that Aarhus Ejendomme must make targeted use of CO_{2} budgets in the City of Aarhus in relation to municipal construction projects. The coalition parties agree that the Mayor's Department and Technical Services and Environment must present a recommendation that sets out a target for municipal construction projects, which includes a focus on requirement and the future frameworks for construction of structures such as schools, nursing homes and sports facilities.
 
 The coalition parties agree that the municipality – within the framework of the Reduction Roadmap – has a special obligation to take the lead and set ambitious targets for municipal construction projects.
 
-At the beginning of 2023, the Aarhus City Council pledged that all new construction over 1,000 m2 will comply with the low-emission class  |
+At the beginning of 2023, the Aarhus City Council pledged that all new construction over 1,000 m2 will comply with the low-emission class
 
-5
-CITY OF AARHUS
-Climate Neutrality Action Plan
+|   |  | standard, which means a threshold value of max. 8 kg CO₂e/m2/pr. year in 2024, falling to 5 kg CO₂e/m2/pr. year in 2030. The City of Aarhus has started working with LCA assessment tools. LCA assessment tools will contribute to making Scope 3 reductions in construction projects possible by enabling calculation of emissions form the building materials used, for example. The recommendation must also illuminate implications for other political priorities, for example prioritizing sports, health and/or education initiatives, as well as social balance and attracting more families with children to the city, including whether there may be a need to continue to exempt certain construction projects, such as sports club-financed sports facilities from the requirements, based on a climate-economic approach and drawing on the funding pool for climate-friendly construction.  |
 
-|   |  | standard, which means a threshold value of max. 8 kg CO₂e/m2/pr. year in 2024, falling to 5 kg CO₂e/m2/pr. year in 2030. The City of Aarhus has started working with LCA assessment tools. LCA assessment tools will contribute to making Scope 3 reductions in construction projects possible by enabling calculation of emissions form the building materials used, for example.
-
-The recommendation must also illuminate implications for other political priorities, for example prioritizing sports, health and/or education initiatives, as well as social balance and attracting more families with children to the city, including whether there may be a need to continue to exempt certain construction projects, such as sports club-financed sports facilities from the requirements, based on a climate-economic approach and drawing on the funding pool for climate-friendly construction.  |
 | --- | --- | --- |
-|  Collaborating Aarhus | The Climate Alliance Aarhus* | The City of Aarhus must provide support for the green transition in business and industry by facilitating partnerships across industries and between businesses of different sizes, herby creating a platform for knowledge, innovation and action.
+|  Collaborating Aarhus | The Climate Alliance Aarhus* | The City of Aarhus must provide support for the green transition in business and industry by facilitating partnerships across industries and between businesses of different sizes, herby creating a platform for knowledge, innovation and action. Climate Alliance Aarhus is a business partnership that mobilizes and engages the business community around Aarhus in the green transition. Going forward, it will address topics such as data and digitalization, green procurement, circular economy, ESG reporting/SBTI and green competencies, etc. The City of Aarhus aims to take the lead as a climate-friendly organisation and, through its own ESG reporting, lead the way for small and medium-sized enterprises (SMEs) in the municipality through new concepts.  |
 
-Climate Alliance Aarhus is a business partnership that mobilizes and engages the business community around Aarhus in the green transition. Going forward, it will address topics such as data and digitalization, green procurement, circular economy, ESG reporting/SBTI and green competencies, etc. The City of Aarhus aims to take the lead as a climate-friendly organisation and, through its own ESG reporting, lead the way for small and medium-sized enterprises (SMEs) in the municipality through new concepts.  |
 |   |  Circular resources | The business community has an important role to play in the development of green solutions that can contribute to reaching our climate targets. We will continue to give companies the opportunity to exploit the innovation power and synergy between companies and the City of Aarhus through the ‘green investment pool’, thus actively contributing to the development of green solutions as well as testing and proof of concept. SMEs in particular need support, and so the City of Aarhus, through the exercise of its regulatory powers, highlight initiatives that contribute to the provision of the knowledge and resources needed to launch a green transition to SMEs.  |
 |   |  Green innovation fond | A focus on circular resources is essential for the green transition in business and industry. Supporting companies in their efforts to minimize, sort, recycle and reuse waste and ensure that regulatory processes support and develop this work has great potential.  |
 |   |  SMEs and climate actions |   |
 |   |  Climate Living Labs | There is a need to break new ground in the dialogue with and involvement of citizens and civil society. With Climate Living Labs, we transform local areas in Aarhus into a ‘living laboratory’ for the development, implementation and testing of green climate solutions, where the solutions must reside and live in close cooperation with the area’s citizens, civil society, business and public actors. Climate solutions and green innovation is thus not just something we talk about or imagine how it will be, but something we develop together, testing in everyday life and continually optimizing and scaling. The initiative is carried out by Technology and Environment in collaboration with Culture and Civic Services, who will jointly submit a recommendation on disbursement of the funds  |
 
-6
-CITY OF AARHUS
-Climate Neutrality Action Plan
-
 |   | International outlook | The climate knows no boundaries. That is why we depend on strong partnerships and international collaborations. Aarhus has come a long way with international cooperation, and Aarhus Municipality wants to strengthen international efforts and work purposefully to mark Aarhus as a green beacon on the world map. The parties to the settlement will continue the work in the EU's 100 city cooperation in order to ensure through this exporting the technologies and approaches we have found locally as well as obtaining the latest knowledge from outside. The settlement parties also want to re-establish the delegation service in order to ensure that visitor cities, interest organisations, etc. get the greatest possible value from a visit to Aarhus.  |
 | --- | --- | --- |
-|  Climate Group | A target for consumption-based emissions | The City of Aarhus must take the lead when it comes to the green transition. The coalition parties agree to set an ambitious reduction target for the City of Aarhus' consumption-based climate footprint of 50% by the end of 2035. The municipality will achieve this reduction through three reduction tracks: initiatives already launched, reduced and more circular consumption and green strategic partnerships. Taken together, these tracks will achieve a reduction of 100,000 tonnes CO₂ from consumption-based emissions in 2030, increasing to 138,500 tonnes CO₂ in 2035. Specifically, strategies are being worked on that can translate the objectives into initiatives that will be evaluated annually. At the same time, the impact of a climate-economic approach of a forced transition must be assessed, including the importance for the level of services in the areas of social welfare in particular.
+|  Climate Group | A target for consumption-based emissions | The City of Aarhus must take the lead when it comes to the green transition. The coalition parties agree to set an ambitious reduction target for the City of Aarhus' consumption-based climate footprint of 50% by the end of 2035. The municipality will achieve this reduction through three reduction tracks: initiatives already launched, reduced and more circular consumption and green strategic partnerships. Taken together, these tracks will achieve a reduction of 100,000 tonnes CO₂ from consumption-based emissions in 2030, increasing to 138,500 tonnes CO₂ in 2035. Specifically, strategies are being worked on that can translate the objectives into initiatives that will be evaluated annually. At the same time, the impact of a climate-economic approach of a forced transition must be assessed, including the importance for the level of services in the areas of social welfare in particular. |
 
 The municipality must lead the way with a major cultural transformation in regard to consumption, while at the same time promoting a greener supplier market in Denmark, to the benefit of the City of Aarhus and the country's public and private sectors. In addition, the coalition parties will explore the possibilities of achieving Scope 3 reductions in the municipality's entities through owner strategies, and concrete targets will be set for this. The coalition parties agree that these entities must comply with the City of Aarhus' climate objectives.
 
-The City of Aarhus makes DKK 8 billion in purchases annually, which emits approx. 24,000 tonnes CO₂ in Scopes 1 and 2 in addition to approx. 250,000 tonnes CO₂ in Scope 3 not including the entities. By mapping the group's total consumption-based emissions, it will be possible to develop recommendations for the optimization of consumption, enabling the municipality to be a frontrunner in the market with regard to green specifications for goods and services as well as circular economy.  |
-|   |  Climate policy food strategy | The City of Aarhus' climate policy food strategy has set a target of a 25% reduction in CO₂e from the food products purchased for municipal food services. A 20% reduction has been achieved since 2019. The coalition parties agree to extend and expand the strategy, with a greater focus on food waste, concrete targets for purchasing specific foods, such as food, legumes, fruit and vegetables, climate taxes and new methods of measurement and procurement agreements.
+The City of Aarhus makes DKK 8 billion in purchases annually, which emits approx. 24,000 tonnes CO₂ in Scopes 1 and 2 in addition to approx. 250,000 tonnes CO₂ in Scope 3 not including the entities. By mapping the group's total consumption-based emissions, it will be possible to develop recommendations for the optimization of consumption, enabling the municipality to be a frontrunner in the market with regard to green specifications for goods and services as well as circular economy.
+|   |  Climate policy food strategy | The City of Aarhus' climate policy food strategy has set a target of a 25% reduction in CO₂e from the food products purchased for municipal food services. A 20% reduction has been achieved since 2019. The coalition parties agree to extend and expand the strategy, with a greater focus on food waste, concrete targets for purchasing specific foods, such as food, legumes, fruit and vegetables, climate taxes and new methods of measurement and procurement agreements. |
 
 The Climate Council estimates that if everyone follows the official dietary guidelines, emissions from food production and consumption can be significantly reduced. This would lead to a reduction in CO₂e of approx. 5,000 tonnes in 2030 in Scope 3.
 
-The coalition parties note that the municipality's consumption of beef has fallen by 33% since the introduction of CO₂ taxes in 2022. The coalition parties agree that work on CO₂ taxes in connection with the procurement portal are to continue, and that in 2025, the Mayor's Department must present a recommendation to the City Council describing how this work can be continued, based on the positive experiences gained up this point, with a focus on food literacy in schools and daycare centres, but that special consideration for the elderly in assistant cares homes may be shown  |
-
-7
-CITY OF AARHUS
-Climate Neutrality Action Plan
+The coalition parties note that the municipality's consumption of beef has fallen by 33% since the introduction of CO₂ taxes in 2022. The coalition parties agree that work on CO₂ taxes in connection with the procurement portal are to continue, and that in 2025, the Mayor's Department must present a recommendation to the City Council describing how this work can be continued, based on the positive experiences gained up this point, with a focus on food literacy in schools and daycare centres, but that special consideration for the elderly in assistant cares homes may be shown
 
 |   | Zero-emissions vehicle fleet in the City of Aarhus | The municipality's fleet of passenger cars and small vans must be fossil-free in 2025. These efforts can be strengthened through harmonized rules and behavioural changes, in addition to artificial intelligence. An investigation must also be made of whether ride sharing can contribute to the green transition. Simulations have shown that vehicular transportation needs can be met with up to 15% fewer vehicles than today. The municipality has developed a tool called FleetOptimiser in collaboration with other municipalities, and results have been positive from the last eighteen months of use. The coalition parties agree to extend the project, which is set to expire at the end of 2024. The coalition parties also agree to explore the possibility of using transport allowances to encourage municipal employees to choose green modes of transportation.  |
 | --- | --- | --- |
@@ -1588,8 +1257,6 @@ Please also see table B-2.3 for an even further elaboration of the field of acti
 |   |  Systemic lever | Technology  |
 |   |  Outcome (according to module B-1.1) | Absorption of 335.000 tonnes of CO2e.  |
 |  Implementation | Responsible bodies/person for implementation | Kredsløb (municipal utility company)  |
-CITY OF AARHUS
-Climate Neutrality Action Plan
 
 |   | Action scale & addressed entities | The district heating system  |
 | --- | --- | --- |
@@ -1605,23 +1272,20 @@ Climate Neutrality Action Plan
 
 |  Action outline | Action name | Biogen Energy Park  |
 | --- | --- | --- |
-|   | Action description | In the biogen energy park, livestock manure and plant residues are converted to energy in the form of biogas, pyrolysis gas, liquid biofuels, electricity and heat.
+|   | Action description | In the biogen energy park, livestock manure and plant residues are converted to energy in the form of biogas, pyrolysis gas, liquid biofuels, electricity and heat. |
 
 Besides the biogas facility, the park will include a grass protein plant and a pyrolysis plant.
 
-In a Pilot Cities project ‘CO-SHAPE’, Aarhus tests the application of a co-creation model in the establishment of the energy park.  |
+In a Pilot Cities project ‘CO-SHAPE’, Aarhus tests the application of a co-creation model in the establishment of the energy park.
 |  Reference to impact pathway | Field of action | Green infrastructure & nature-based solutions  |
 |   | Systemic lever | Technology/infrastructure + democracy/participation  |
-|   | Outcome (according to module B-1.1) | Reduction of 47.000 tonnes of CO₂e.
+|   | Outcome (according to module B-1.1) | Reduction of 47.000 tonnes of CO₂e. Storage of CO₂e in the form of biochar.  |
 
-Storage of CO₂e in the form of biochar.  |
 |  Implementation | Responsible bodies/person for implementation | The technical department in close collaboration with investors and the local community  |
 |   | Action scale & addressed entities |   |
 |   | Involved stakeholders | The local community and farmers  |
 |   | Comments on implementation – consider mentioning resources, timelines, milestones | The business case for the project looks very promising and it is highly expected that the energy park is constructed within 4-5 years.  |
 |  Impact & cost | Generated renewable energy (if applicable) | Yes  |
-CITY OF AARHUS
-Climate Neutrality Action Plan
 
 |   | Removed/substituted energy, volume, or fuel type | Yes. Natural gas is substituted with biogas.  |
 | --- | --- | --- |
@@ -1631,16 +1295,15 @@ Climate Neutrality Action Plan
 |  B-2.2c: Individual action outlines  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | Installing wind and solar  |
-|   | Action description | Aarhus Municipality has designated 1.200 ha. for the installation of solar and plan to designate 400 ha. more. Further, areas for a number of windmills are designated as well.
+|   | Action description | Aarhus Municipality has designated 1.200 ha. for the installation of solar and plan to designate 400 ha. more. Further, areas for a number of windmills are designated as well. The city council emphasises, that the planning process must be flexible and have a clear focus on how to create value for local communities with close involvement of citizens.  |
 
-The city council emphasises, that the planning process must be flexible and have a clear focus on how to create value for local communities with close involvement of citizens.  |
 |  Reference to impact pathway | Field of action | Energy system  |
 |   | Systemic lever | Democracy/participation  |
-|   | Outcome (according to module B-1.1) | Increase in electricity stemming from RES by more than 1 GW with an expected production of more than 1.000 GWh.
+|   | Outcome (according to module B-1.1) | Increase in electricity stemming from RES by more than 1 GW with an expected production of more than 1.000 GWh. |
 
 tonnes CO₂.
 
-The CO₂ reduction is relatively low. The calculation is based on the national expectations of the energy mix in 2030. Without extension of RES in Denmark, the outcome will be higher.  |
+The CO₂ reduction is relatively low. The calculation is based on the national expectations of the energy mix in 2030. Without extension of RES in Denmark, the outcome will be higher.
 |  Implementation | Responsible bodies/person for implementation | The technical department of Aarhus Municipality  |
 |   | Action scale & addressed entities |   |
 |   | Involved stakeholders | Local communities, landowners and investors  |
@@ -1649,18 +1312,12 @@ The CO₂ reduction is relatively low. The calculation is based on the national 
 |   | Removed/substituted energy, volume, or fuel type | RES will substitute a mix of coal-, oil-, and biomass-based electricity.  |
 |   | GHG emissions reduction estimate (total) per emission source sector | 12.000 tonnes CO₂.  |
 
-0
-CITY OF AARHUS
-Climate Neutrality Action Plan
-1
-
 # B-2.2d: Individual action outlines
 
 |  Action outline | Action name | The Climate Alliance Aarhus  |
 | --- | --- | --- |
-|   | Action description | The alliance is a central and successful business partnership which mobilizes and engages the business community around Aarhus. The Climate Alliance will be further developed to perform and scale CO2 reducing initiatives.
+|   | Action description | The alliance is a central and successful business partnership which mobilizes and engages the business community around Aarhus. The Climate Alliance will be further developed to perform and scale CO2 reducing initiatives. There are great potentials in the alliance, as it works with themes such as data and digitalisation, sustainable procurements, circular economy, ESG reporting/SBTi and green skills.  |
 
-There are great potentials in the alliance, as it works with themes such as data and digitalisation, sustainable procurements, circular economy, ESG reporting/SBTi and green skills.  |
 |  Reference to impact pathway | Field of action | Collaboration with green businesses  |
 |   | Systemic lever | Democracy/participation + learning & capabilities  |
 |   | Outcome (according to module B-1.1) | Improving businesses’ behaviour changes towards low carbon practices  |
@@ -1679,24 +1336,19 @@ There are great potentials in the alliance, as it works with themes such as data
 |  Action outline | Action name | Climate-friendly food and habits  |
 | --- | --- | --- |
 |   | Action description | Aarhus Municipality will support a change in the design of and approach to agricultural production by contributing to testing and  |
-CITY OF AARHUS
-Climate Neutrality Action Plan
 
-|   |  | development of new cultivation concepts and business models on agricultural areas in the municipality.
+|   |  | development of new cultivation concepts and business models on agricultural areas in the municipality. In addition, the municipality can support local sustainable food value chains with a view to promoting more plant-based production and marketing.  |
 
-In addition, the municipality can support local sustainable food value chains with a view to promoting more plant-based production and marketing.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | A climate-friendly food system  |
 |   | Systemic lever | Social innovation + learning & capabilities  |
-|   | Outcome (according to module B-1.1) | It is expected that a minimum of 10% more citizens in Aarhus will eat according to national dietary guidelines.
+|   | Outcome (according to module B-1.1) | It is expected that a minimum of 10% more citizens in Aarhus will eat according to national dietary guidelines. This will result in CO_{2} reductions in scope 3 of 20.000-30.000 tonnes.  |
 
-This will result in CO_{2} reductions in scope 3 of 20.000-30.000 tonnes.  |
 |  Implementation | Responsible bodies/person for implementation | The technical department of Aarhus Municipality  |
 |   | Action scale & addressed entities |   |
 |   | Involved stakeholders | Citizens, local business, retail stores, farmers  |
-|   | Comments on implementation – consider mentioning resources, timelines, milestones | The outcome is reached by entering partnerships with Agro Food Park, agriculture, agricultural organisations, food producers, retail stores, restaurants, etc.
+|   | Comments on implementation – consider mentioning resources, timelines, milestones | The outcome is reached by entering partnerships with Agro Food Park, agriculture, agricultural organisations, food producers, retail stores, restaurants, etc. In 2030 a tax on CO_{2} from non-energy related processed in agriculture will be implemented in Denmark, which will naturally lead to more sustainable ways of producing food.  |
 
-In 2030 a tax on CO_{2} from non-energy related processed in agriculture will be implemented in Denmark, which will naturally lead to more sustainable ways of producing food.  |
 |  Impact & cost | Generated renewable energy (if applicable) |   |
 |   | Removed/substituted energy, volume, or fuel type |   |
 |   | GHG emissions reduction estimate (total) per emission source sector | 20.000-30.000 tonnes (scope 3)  |
@@ -1709,11 +1361,6 @@ There is a reason why the example takes point of departure in the Climate-Friend
 
 First of all, the example highlights  $\mathrm{CO}_{2}$  reductions in Scope 3 as a particular area of interest due to its embedding in the transition of the energy system, including the requirement for multifunctional land
 
-2
-CITY OF AARHUS
-Climate Neutrality Action Plan
-3
-
 use and including the demand for new cultivation methods and fewer livestock. If such a transformation is to succeed, it requires not only that the energy we consume is green, but that citizen and other actors support the transformation and the implications it has for our lifestyles and everyday living. If we are to grow new, climate-friendly crops, it requires that there is a market and a demand for such. And that requires the citizens to change behaviour. Further it requires that business and the food industry work together in innovating new products and sustainable business models. In other words, transitioning the food system is embedded as a premise underlying all strategic focus areas.
 
 Secondly, the example shows how actions related to Aarhus Municipality as a Climate Group (the action entitled Climate policy food strategy) is closely intertwined with actions that reaches beyond the municipality viewed as its own entity. Both to ensure that the municipal administration ‘walk the talk’ when it comes to the green transition and to ensure that the municipality’s experiences from practice provides important learnings to other actors within the agriculture and food community.
@@ -1725,7 +1372,7 @@ Please note that because the final climate plan has not yet been submitted to th
 |  B-2.3: Impact pathway for the field of action Climate-friendly Food System  |   |   |
 | --- | --- | --- |
 |  ACTION 1: Partnership with food actors  |   |   |
-|  Annual CO_{2} reduction: 7.000 tonnes (based on estimations)
+|  Annual CO_{2} reduction: 7.000 tonnes (based on estimations) |
 
 Management:
 The action is anchored in Circular Resources, Technology & Environment, and is implemented in close collaboration with Business and Sustainable Development, the Mayor's Department.
@@ -1738,11 +1385,9 @@ Key stakeholders:
 ○ External partners are Agro Food Park as well as a large number of companies and knowledge institutions, e.g. SEGES, Innovation Center for Organic Agriculture and others. Furthermore, cooperation with the national “cluster organisations” is expected, e.g. Food & Bio Cluster Denmark, as well as business organizations and interest organisations.
 
 Related actions:
-All actions under the “Climate-friendly food system” is closely related to each other. In addition, demand for coordination and collaboration with other actions in the Climate Plan, especially with the Climate Alliance Aarhus.  |   |   |
+All actions under the “Climate-friendly food system” is closely related to each other. In addition, demand for coordination and collaboration with other actions in the Climate Plan, especially with the Climate Alliance Aarhus.  |   |
 |  Action description | Steps towards change | Co-benefits  |
 |  The transition to a more climate-friendly food system builds on co-creating new, innovative solutions that reduce CO_{2} emissions in companies’ food production, or new products that enable | Formulate presentations to potential collaboration partners stating possible objectives and lighthouse projects based on the | Contributes to a boost of entrepreneurship and local green companies, which in the long run will  |
-CITY OF AARHUS
-Climate Neutrality Action Plan
 
 consumers to eat more climate-friendly. Here, Aarhus Municipality can contribute to the transformation of the food industry, as the cluster is strongly represented in Aarhus.
 
@@ -1777,18 +1422,14 @@ All actions under the "Climate-friendly food system" is closely related to each 
 
 |  Short action description | Steps towards change | Co-benefits  |
 | --- | --- | --- |
-|  With the goal of taking responsibility for the largest consumption-based emissions, Aarhus Municipality seeks to create increased knowledge and motivation among the citizens of Aarhus about the value of climate-friendly food. However, it is difficult to change behavior related to food and meals, as this is deeply rooted in our culture.
+|  With the goal of taking responsibility for the largest consumption-based emissions, Aarhus Municipality seeks to create increased knowledge and motivation among the citizens of Aarhus about the value of climate-friendly food. However, it is difficult to change behavior related to food and meals, as this is deeply rooted in our culture. |
 
 It is important to start an early effort aimed at children and young people, for the future generations to gain an understanding of the connection between the climate and the food we eat. | Building collaboration with internal and external actors to create a common direction.
 Initiate initiatives that strengthen green food education and food culture among children and young people.
 Develop a model for green food communities in collaboration with local NGOs, interest organizations and civic groups, etc.
 Secure a data basis in the area so that development | Significant health benefits, which will also have a positive effect on the economy.
 
-In addition, there are positive effects for well-being, as food can contribute to strengthening social communities.  |
-
-4
-CITY OF AARHUS
-Climate Neutrality Action Plan
+In addition, there are positive effects for well-being, as food can contribute to strengthening social communities.
 
 The municipality will also support green food communities. Social relationships and communities have a big impact on citizens' food choices and motivation, and therefore green communal eating can act as a lever to get more people to eat more plant-based food and less meat. In collaboration with various organisations, Aarhus Municipality must therefore facilitate local food communities.
 
@@ -1822,24 +1463,12 @@ All actions under the "Climate-friendly food system" is closely related to each 
 |  Aarhus Municipality will support a change in the layout and approach to agricultural production by contributing to testing and development. In addition, Aarhus Municipality will support local, sustainable food value chains with a view to promoting more plant-based production and marketing. New solutions require new thinking. This must be done in dialogue with and involving the citizens as well as the various strong knowledge and | Search for collaborations and opportunities, including projects with external funding, where Aarhus Municipality can be included as a relevant knowledge and/or implementation partner. |   |
 |   |  Share knowledge and spar with other municipalities about the climatic possibilities and potentials |   |
 
-5
-CITY OF AARHUS
-Climate Neutrality Action Plan
-
 |  innovation environments within the food and agriculture area that are based in Aarhus. | in agriculture for a green transition, e.g. in connection with the LifeACT project. |   |
 | --- | --- | --- |
 |  **ACTION 4: Climate policy food strategy**  |   |   |
-|  **Annual CO_{2} reduction:** 4.250 tonnes (based on estimations)
-**Management:**
-Managed by Procurement & Supply (the Mayor’s Department)
-**Systemic lever:** Governance & Policy and Finance & Business Models
-**Key stakeholders:**
-○ All internal departments in the magistrates
-○ External wholesalers, manufacturers, other municipalities. The Danish Veterinary and Food Administration, various organizations and project partners.
-**Related actions:**
-All actions under the "Climate-friendly food system" is closely related to each other. Also closely related to the other actions under Climate Group.  |   |   |
+|  **Annual CO_{2} reduction:** 4.250 tonnes (based on estimations) **Management:** Managed by Procurement & Supply (the Mayor’s Department) **Systemic lever:** Governance & Policy and Finance & Business Models **Key stakeholders:** ○ All internal departments in the magistrates ○ External wholesalers, manufacturers, other municipalities. The Danish Veterinary and Food Administration, various organizations and project partners. **Related actions:** All actions under the "Climate-friendly food system" is closely related to each other. Also closely related to the other actions under Climate Group.  |   |   |
 |  Short action description | Steps towards change | Co-benefits  |
-|  As a partner, Aarhus Municipality makes a strong contribution to developing a climate-friendly food system in society, and can also, as a purchaser, play a major role in ensuring greater production and use of climate-friendly food.
+|  As a partner, Aarhus Municipality makes a strong contribution to developing a climate-friendly food system in society, and can also, as a purchaser, play a major role in ensuring greater production and use of climate-friendly food. |
 
 By taking the lead in offering climate-friendly food in canteens and the municipality’s institutions, the municipality is a lever for a more climate-friendly food system in society. It increases awareness of green food and contributes to normalizing this among the citizens of Aarhus.
 
@@ -1849,15 +1478,10 @@ For the food professionals to work even more with green meals, it requires struc
 
 Indicators and new targets are being developed, taking into account care homes and specialized services where other recommendations apply. | Develop and implement a cross-cutting Climate Policy Food Strategy 2026-2030 (to be approved by the City Council in 2025). | According to the Climate Council, eating according to the climate-friendly dietary advice has a positive effect on both health (and thus the economy), well-being and learning, which at the same time has a large CO_{2}e effect.
 
-A demand for more plant-based foods will affect agricultural production and land requirements (it requires less land than meat production).  |
+A demand for more plant-based foods will affect agricultural production and land requirements (it requires less land than meat production).
 |   |  Develop indicators and targets for Climate Policy Food Strategy 2026-2030 and annual follow-ups.  |   |
 |   |  Support internal and external partnerships to achieve goals.  |   |
 |   |  Apply for project funds.  |   |
-
-6
-CITY OF AARHUS
-Climate Neutrality Action Plan
-7
 
 # B-2.4: Summary strategy for residual emissions
 
@@ -1886,9 +1510,6 @@ The residual emissions from waste are mainly emissions from wastewater. The wate
 ## 4) IPPU
 
 The main emission source within IPPU is cooling and air conditioning. It is not expected that these emissions will decrease significantly in the short term.
-CITY OF AARHUS
-Climate Neutrality Action Plan
-8
 
 # 5) AFOLU
 
@@ -1910,8 +1531,6 @@ B-3.1: Impact Pathways
 | --- | --- | --- | --- |
 |  Reduced emissions |  | Total scope 1+2 emissions | Neutrality in 2030  |
 |   |   |  Emissions per capita | TBD  |
-CITY OF AARHUS
-Climate Neutrality Action Plan
 
 Below are three examples of indicator metadata. All indicators are followed up annually or more often.
 
@@ -1941,9 +1560,6 @@ Below are three examples of indicator metadata. All indicators are followed up a
 |  Reducing material use | Reducing material use and using more sustainable materials in the industrial sector | Total collected waste within city boundaries (tonnes), e.g. divided into categories; metal, plastics, wood, concrete etc. | TBD  |
 |  More nature | Afforestation | Number of ha. forest and nature | 16.000 ha of forest and nature, hereof 2.500 untouched forest  |
 |   | Set-aside of peat soils |  |   |
-CITY OF AARHUS
-Climate Neutrality Action Plan
-0
 
 |  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
 | --- | --- |
@@ -1972,16 +1588,13 @@ Climate Neutrality Action Plan
 |  If yes, which action and impact pathway is it relevant for? | The overall action plan  |
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | Yes  |
 |  Data requirements |   |
-|  Expected data source | Emissions data compiled in GHG protocol for cities. Bases on local data as well as regional and national statistics.
-Population statistics from Statistics Denmark.  |
+|  Expected data source | Emissions data compiled in GHG protocol for cities. Bases on local data as well as regional and national statistics. Population statistics from Statistics Denmark.  |
 |  Is the data source local or regional/national? | Both  |
 |  Expected availability | Certain  |
 |  Suggested collection interval | Annually  |
 |  References |   |
 |  Deliverables describing the indicator |   |
 |  Other indicator systems using this indicator |   |
-CITY OF AARHUS
-Climate Neutrality Action Plan
 
 |  B-3.2c: Indicator Metadata  |   |
 | --- | --- |
@@ -2008,27 +1621,17 @@ Climate Neutrality Action Plan
 
 Aarhus has established a strong data analytical and climate economic approach to climate work. The procedures can, however, be strengthened with regards to the use of indicators on the effects beyond direct emission reductions. The outcomes (or process deliveries) described in the impact pathways all describe relevant indicators (cf. table B-1.1a + B-1.1b), e.g. number of partnerships, number of graduates from the Green Academy etc. However, we have not currently set specific targets for all the indicators for all actions. An important future task is therefore to set specific targets – qualitative as well as quantitative – for these. Correspondingly, as we do not currently have a complete overview of data sources, an important future task is to identify relevant and accessible data sources. This process could benefit from collaboration with relevant stakeholders. An example of stakeholder collaborations on indicators and data access is related to the monitoring of changed food habits; not only the food served in the municipality's own institutions, but also the spill-over effect that climate actions targeted the municipal institutions have on the food behaviour in the families at home. One way could be to track changes in food buying behaviour using data from local supermarkets. Access to these data would require close cooperation with the supermarkets.
 
-1
-CITY OF AARHUS
-Climate Neutrality Action Plan
-
 In addition to measuring the direct and indirect impact on $\mathrm{CO}_{2}$ emissions, the Aarhus goals act as an overall framework for the categorization of co-benefits (cf. table B-1.1). The Aarhus goals are continuously monitored based on the following indicators:
 
 |  B-3.3: The Aarhus Goals and current indicators  |   |
 | --- | --- |
 |  The Aarhus Goals | Indicators  |
 |  Aarhus must be a good city for everyone | Measured through a survey with focus on whether the citizens of Aarhus perceive and experience Aarhus as a good city for everyone regardless of age and stage in life and whether they feel a high degree citizenship  |
-|  A city with a place for everyone | ○ Self-sufficiency, including difference between vulnerable groups compared to everyone
-○ Youth education  |
-|  A city of community and fellowship | ○ Citizenship
-○ Loneliness, including difference between vulnerable groups compared to everyone,
-○ Security  |
-|  A city where everyone is healthy, and everyone thrives | ○ Mean lifespan/remaining lifespan, including difference between vulnerable groups compared to everyone
-○ Well-being  |
-|  A growing city with a strong private sector | ○ GDP for Business Region Aarhus
-○ New workplaces  |
-|  A sustainable city with good urban and local environment | ○ Climate
-○ Mobility  |
+|  A city with a place for everyone | ○ Self-sufficiency, including difference between vulnerable groups compared to everyone ○ Youth education  |
+|  A city of community and fellowship | ○ Citizenship ○ Loneliness, including difference between vulnerable groups compared to everyone, ○ Security  |
+|  A city where everyone is healthy, and everyone thrives | ○ Mean lifespan/remaining lifespan, including difference between vulnerable groups compared to everyone ○ Well-being  |
+|  A growing city with a strong private sector | ○ GDP for Business Region Aarhus ○ New workplaces  |
+|  A sustainable city with good urban and local environment | ○ Climate ○ Mobility  |
 
 Continuous follow-up is carried out. The two goals "Aarhus must be a good city for everyone" and the indicator of "Citizenship" are followed-up with a survey among the population of Aarhus, while other indicators are monitored with data from e.g. Aarhus i Tal (see reference list).
 
@@ -2037,10 +1640,6 @@ The strategic alignment between the Aarhus Goals and co-benefits enables measuri
 The green transition must not create greater economic and social inequality. In the Aarhus goals, there is an explicit focus on creating a city for everyone, regardless of social status, gender, age, religion, ethnicity. The goal of being a good city for everyone is developed with the following vision:
 
 "A city with space to unfold and develop. A city where everyone has the opportunity to take responsibility for their own life and utilize their own abilities. A city where we collectively help those who need it. A city with space for difference and diversity".
-
-2
-CITY OF AARHUS
-Climate Neutrality Action Plan
 
 The established indicators for the goals A city with a place for everyone, A city of community and fellowship and A city where everyone is healthy, and everyone thrives have a special focus on ensuring the best conditions for vulnerable groups, as can be seen from the table above.
 
@@ -2063,15 +1662,7 @@ Current reporting practices, thus, also includes the possibility to evaluate spe
 
 As the impact pathways become even more developed and as indicators for both outcomes and co-benefits become more and more precise, there is also a need to update and refine the current reporting practice. A practice that considers and is designed to capture the special challenges and action portfolios that are part of the CCC 2030 Climate Neutrality Climate Plan. A practice that for
 
-3
-CITY OF AARHUS
-Climate Neutrality Action Plan
-4
-
 example does not just follow a fixed annual cycle, but rather gives the individual project manager the opportunity to monitor the indicators, adjust continuously and act accordingly.
-CITY OF AARHUS
-Climate Neutrality Action Plan
-5
 
 # 4 Part C – Enabling Climate Neutrality by 2030
 
@@ -2085,11 +1676,6 @@ Aarhus can act through the role as a supplier in the areas where they supply cit
 Finally, Aarhus can act as a facilitator for the transition in areas where their direct influence is limited. As an inspirer and opinion former, municipalities can indirectly influence emissions from actors such as citizens, businesses and organizations that live or act in the municipality's geographical area. This role can be unfolded through partnerships with e.g., businesses and educational institutions, dialogue with citizens and developers or activation of local communities.
 
 The figure below illustrates the four different roles with regards to influence and emission reduction potential and shows how municipalities typically have the greatest influence through their role as a company and the least in their role as a facilitator, but conversely, they can affect the largest emissions as a facilitator. It is therefore important for municipalities to bring all these roles into play if they are to support the overall transition in the society.
-CITY OF AARHUS
-
-Climate Neutrality Action Plan
-
-C
 
 ![img-0.jpeg](img-0.jpeg)
 Figure A-3.1: The roles of the City of Aarhus with regards to influence and emission reduction potential (source: CONCITO)
@@ -2105,9 +1691,6 @@ The group of directors has the overall responsibility for the implementation of 
 The table below provides examples of governance innovations enabling the green transition. The asterisks in the table mark the actions that are further elaborated below.
 
 # C.1.2: Relations between governance innovations, systems, and impact pathways
-CITY OF AARHUS
-Climate Neutrality Action Plan
-7
 
 |  Intervention name | Description | Relevant to the barriers and opportunities associated with | Leadership and stakeholders involved | Enabling impact and co-benefits  |
 | --- | --- | --- | --- | --- |
@@ -2116,8 +1699,6 @@ Climate Neutrality Action Plan
 |  Center for Innovation in Aarhus (CFIA) | An internal innovation unit, which supports municipal innovation projects from idea to implementation by means of a human centred mindset and design driven methodologies and processes | Democracy & Participation Learning & Capabilities and Social innovation | Collaborates across the municipal departments and with both internal and external stakeholders | Involves citizens, local businesses, politicians, employees and civil society in transition processes through co-creation and involvement strategies to ensure a just transition  |
 |  Co-citizenship | An organizational unit under the Technical Services and Environment Department, which operate operates out in the field among citizens and other actors | Democracy & Participation Learning & Capabilities and Social innovation | Collaborates with both internal and external stakeholders | Facilitates multi-stakeholder dialogue, and develops and scale new approaches and methods for citizen involvement and empowerment to ensure democratic participation and a just transition  |
 |  The Wicked Problem-collaborations | A cross-magisterial collaboration to ensure that the thoughts and methodologies behind the wicked problems are | Learning & Capabilities, Governance & Policy and Social Innovation | Managed by the Mayor's Department and includes employees from all magistrates | Provides a forum for knowledge sharing and collaboration on de dilemmas associated to wicked problems and has an eye for their transversal interconnectedness. Initiates new approaches and trial actions to climate challenges and other wicked problems  |
-CITY OF AARHUS
-Climate Neutrality Action Plan
 
 |   | integrated into practice |  |  |   |
 | --- | --- | --- | --- | --- |
@@ -2127,11 +1708,6 @@ Climate Neutrality Action Plan
 |  Creative Circular Cities | A transnational constellation that supplies municipalities, business support organisations and NGOs in the Baltic Sea Region with guidelines and tools to involve Cultural and Creative Sectors and Industries (CCSI) into the circular transition | Learning & Capabilities, Governance & Policy and Social Innovation | Creative Circular Cities initiates a transnational co-creation process, in which six demo cities jointly develop & test Cultural and Creative Sectors and Industries-driven approaches for an integrated circular transition. In each city, local authorities, business support organisations and NGOs are involved | Induces a “system change” at the local level that includes both the production & the consumption side of Circular Economy by launching enabling environments for CCSI-driven circular transition, and promoting “circular lifestyles” with CCSI assistance  |
 
 The Climate Secretariat: Ensuring a coherent climate plan and continuous learning
-
-8
-CITY OF AARHUS
-Climate Neutrality Action Plan
-9
 
 The Climate Secretariat is an organisational unit under Technical Services and Environment and plays a key role with regards to the overall coordination and project management of the climate action plan as well as to ensuring a close dialogue with key internal and external stakeholders in preparing the climate action plan.
 
@@ -2148,9 +1724,6 @@ As a municipality, we primarily have direct means and tools to influence our own
 Therefore, to succeed, the green transition requires broad support from all actors. Aarhus is therefore committed to involve citizens, civil society, companies, employers, trade unions and employer organization, and other actors in the climate efforts. With the many value framework (including The Aarhus Compass. Less System. More Citizen, The Collaboration Compass, A new Aarhus model for collaboration as well as The political mandate for wicked problems), the City of Aarhus has proven a will to actively prioritize citizen involvement, dialogue and stakeholder collaboration. Both in the process of developing the climate plan and subsequently, in implementing the climate plan.
 
 A number of dialogue activities and workshops have preceded the planning of the climate plan. In addition to the experiences gained from previous climate action plans' dialogue activities and stakeholder involvement, which have naturally been carried forward into the background material that forms the basis of The Climate Strategy Agreement, the Climate Secretariat and Technical Services and Environment have, among other things, held the Annual Conference for Climate Action 2023 (targeted employees in Aarhus Municipality, businesses, citizens, universities and educational institutions, and important decision makers), The Business Conference 2024 (e.g. with special focus on Citizen
-CITY OF AARHUS
-Climate Neutrality Action Plan
-0
 
 Involvement in urban development), and NGO Workshops, inviting local NGOs to discuss and learn about local green initiatives.
 
@@ -2165,8 +1738,6 @@ C.2.1 Relations between social innovations, systems, and impact pathways
 |  Climate Citizen Assembly | Consists of 36 local citizens who discuss values, themes and solutions to specific climate issues. Originates from the Climate Action Plan 2021-2024 | Democracy & Participation | A representative group of citizens and the city council | Contributes to, informs and qualifies the city's climate actions to ensure citizen involvement and democratic processes  |
 |  Community Councils | Aarhus consists of 34 community councils representing their local communities. They are one of the main actors in the follow-up of the city council's goals for citizen involvement and co-citizenship. The community councils are also a forum for discussing local issues, and they can be catalysts for local activities, events etc. | Democracy & Participation | A community council is an umbrella organization for parish councils, schools, libraries, kindergartens, landowners' and residents' associations, sports clubs and local branches of youth organizations | Ensures a direct link between the citizens and the political system. Involves of local interests in all matters of importance to the local area. Ensures local anchoring of green initiatives. Involves the knowledge and resources available locally in the municipality. Ensures that information and debate proposals from the municipality reach the citizens  |
 |  Climate Living Labs* | An upcoming collaboration with the city's many and diverse actors, | Governance & Policy, Democracy & Participation, Learning & | Technical Service and Environment and Culture and Citizens' | Facilitates dialogue and cooperation between the actors in the geographically appointed areas and brings them together on the climate agenda. Develops  |
-CITY OF AARHUS
-Climate Neutrality Action Plan
 
 |   | based on open-source innovations and co-creation processes | Capabilities, and Social innovation, | Services. Aims to engage all relevant stakeholders in multi-collaborations in selected geographical areas | solutions that benefit both the area's residents and other actors as well as the climate  |
 | --- | --- | --- | --- | --- |
@@ -2175,10 +1746,6 @@ Climate Neutrality Action Plan
 |  The Green Academy* | A collaboration between Culture and Citizens’ Service and Technical Services and Environment and the Business Academy Aarhus aimed at further educating unemployed academics to becoming “Green Change Agents” | Learning & Capabilities and Social innovation | Unemployed academics, companies, Culture and Citizens’ Service and Technical Services and Environment and the Business Academy Aarhus | Develops a workforce qualified to take part in the green transition, facilitates and enables companies to handle green transition processes, promotes the green agenda and creates value for the company  |
 |  CO-SHAPE* | A Pilot Cities project where Aarhus tests the application of a co-creation model in the establishment of the energy park | Governance & Policy, Democracy & Participation, Learning & Capabilities | City of Aarhus, Citizens, private developers, Energinet, Landowners, Aarhus School of Architecture | Develops and test co-creation models for new and comprehensive planning methods, replicable to similar urban typologies  |
 |  LIFE ACT* | A partnership project funded by the SU’s LIFE program | Governance & Policy, Democracy & Participation, Learning & Capabilities | The Central Denmark Region (including Aarhus Municipality) is the lead partner. The five Danish regions, 27 Danish municipalities and the Central Denmark EU office (CDEU) are behind the | Facilitates collaboration across municipalities and contributes to knowledge and experience being gained and disseminated in order to create the greatest possible capacity building for all relevant actors  |
-
-1
-CITY OF AARHUS
-Climate Neutrality Action Plan
 
 |   |  |  | project as well as a range of associated partners (universities and educational institutions) |   |
 | --- | --- | --- | --- | --- |
@@ -2197,11 +1764,6 @@ We need to get the companies and public workplaces involved to reach the goal of
 The Climate Alliance is a partnership between the local companies, institutions and public workplaces to jointly achieve Aarhus' goal of $\mathrm{CO}_{2}$ neutrality in 2030. The Climate Alliance Aarhus was adopted as part of the 2020 budget settlement.
 
 The partnership creates a space for development and innovation where companies and public organizations (incl. Aarhus Municipality) come together to identify and define common issues, build common knowledge, launch tests and trials, develop recommendations and commit to common goals and actions that reduce the companies' and urban society's $\mathrm{CO}_{2}$ emissions.
-
-2
-CITY OF AARHUS
-Climate Neutrality Action Plan
-3
 
 The work is driven by the companies but organized and initiated by the Mayor's Department.
 
@@ -2228,9 +1790,6 @@ The City of Aarhus and Aarhus University are prerequisites for each other and wi
 The partnership agreement designates a number of strategic areas of action, including climate efforts and sustainability. Under the headline of climate efforts and sustainability, the collaboration between AU and AK involves the exchange of knowledge and experience and the initiation of joint initiatives.
 
 Topics for collaboration and formulation of goals can be an overall goal of reducing CO₂ emissions through, e.g.:
-CITY OF AARHUS
-Climate Neutrality Action Plan
-4
 
 collaboration on the inclusion of scope 3 in the organizations' climate accounts,
 collaboration in the Climate Alliance (Aarhus) and Energispring,
@@ -2255,8 +1814,6 @@ The Green Academy eliminates the barriers related to:
 A lack of competencies and resources among SMEs preventing them from taking part in the green transition.
 
 ## CO-SHAPE: Co-creating, co-designing and co-planning
-CITY OF AARHUS
-Climate Neutrality Action Plan
 
 As cities experience increased pressure on land use and the need to produce renewables locally, CO-SHAPE tests the application of a co-creation model in the establishment of Energy Park Spørring in a peri-urban area of Aarhus Municipality. By engaging locals, energy developers, the authorities, and architects, CO-SHAPE pilots a co-designing approach to planning the landscape through synergistic renewable energy sources and sustainable land use. CO-SHAPE plays a major role in the transition of the area and contributes substantially to Aarhus' net-zero goals by 2030.
 
@@ -2283,8 +1840,6 @@ All of Denmark's 98 municipalities have climate action plans compatible with the
 LIFE ACT is created to act on this and includes e.g.:
 
 Money to develop solutions that do not yet exist.
-CITY OF AARHUS
-Climate Neutrality Action Plan
 
 Better collaboration on how existing solutions can be adapted to current needs.
 Development of a better framework for collaboration across disciplines and geography.
@@ -2297,11 +1852,6 @@ The project has a total budget of just over DKK 200 million (approx. € 27 mil.
 
 Indirect positive impacts include e.g. collaborative synergies, sharing of knowledge and experiences, capacity building for all relevant actors, promotion of the green agenda.
 
-6
-CITY OF AARHUS
-Climate Neutrality Action Plan
-7
-
 # 5 Outlook and next steps
 
 This document constitutes the first draft of the CCC Action Plan and builds on the Climate Strategy Agreement: 2025-2030 and the extensive background material on which the agreement is partly based. The final climate action plan is expected to be submitted to the City Council at the end of 2024. This time lag between the City Council's endorsement of the final Climate Action Plan and the deadline for the CCC Action Plan means that this current first draft has certain shortcomings,
@@ -2313,9 +1863,6 @@ Ensure an even further integration of the climate actions into the Aarhus Goals,
 Assess the need for supplementary – qualitative as well as quantitative – indicators for monitoring specific co-benefits, and secure relevant and accessible data sources.
 Update and refine the current reporting practice to comply with the special challenges and action portfolios that are part of the CCC 2030 Climate Neutrality Climate Plan. Currently, considerations are made with regards to the possibility to develop a digital application, which allows for real-time monitoring and invites to reflexive learning and continuous adjustments.
 Elaborate in detail on all climate actions – including those related to mobility (cf. the Green Mobility Agreement, August 2024) – when the coalition parties have approved the total climate action portfolio.
-CITY OF AARHUS
-Climate Neutrality Action Plan
-8
 
 # 6 Additional sources of information
 
@@ -2343,13 +1890,10 @@ The extensive background material on which The Climate Strategy Agreement: 2025-
 The mandate for Climate and Sustainability as a Wicked Problem (in Danish): Den globale klimakrise 2023 (aarhus.dk)
 The plast strategy 2020-2025 (in Danish): Plaststrategi Aarhus kommune (e-pages.dk)
 The shared narrative about Aarhus Municipality's work with climate, biodiversity and afforestation (in Danish): En del af løsningen (aarhus.dk)
-CITY OF AARHUS
-Climate Neutrality Action Plan
 
 The waste plan 2021-2026 (in Danish): affaldsplan_2021-2026_paavejmodcirkulaertaarhus.pdf
 The Wastewater Plan 2021-2026 (in Danish): spildevandsplan_2021-2026-vedtaget-25-maj-2022.pdf
 
-9
 NET ZERO CITIES
 EU MISSION PLATFORM | CLIMATE NEUTRAL AND SMART CITIES
 
@@ -2366,7 +1910,6 @@ EU MISSION PLATFORM | CLIMATE NEUTRAL AND SMART CITIES
 The content of this document reflects only the author's view. The European Commission is not responsible for any use that may be made of the information it contains.
 
 ZeroCities has received funding from the H2020 Research and Innovation Fund under the grant agreement n°101036519.
-CITY OF AARHUS
 Climate-Neutrality Commitments
 
 # Table of contents
@@ -2378,7 +1921,6 @@ Strategic priorities ... 10
 Process and underlying principles ... 14
 Signatories ... 17
 Appendix 1: Individual / Cluster Signatory Commitments (to be added before submitting the Climate City Contract) ... 20
-CITY OF AARHUS
 Climate-Neutrality Commitments
 
 # 1 Introduction
@@ -2396,7 +1938,6 @@ On the international scene, an important step has been taken with the Paris Agre
 In Aarhus, climate change is experienced mainly as floods from the sea, lakes, streams, cloudbursts and groundwater rises. Aarhus lies close to the coast on a slightly raised bank and has through its urban development spread down into river valleys and other low-lying areas. We are therefore particularly vulnerable to weather conditions, which climate change is making increasingly extreme. Particularly threatened are Aarhus' low-lying city centre, areas close to groundwater at risk of flooding and existing buildings along the coast exposed to storm surges.
 
 Like other western countries, Denmark and Aarhus have a large climate burden in relation to our population, especially due to our high consumption. According to CONCITO's updated assessment of Denmark's global consumption-based emissions, each Dane emits an average of 13 tonnes of CO2e
-CITY OF AARHUS
 Climate-Neutrality Commitments
 
 annually, which is about twice as much as an average world citizen, and it far exceed the sub-3 tonnes per global citizen required by 2030 to meet the Paris Agreement’s ambitious 1.5-degree target. The large climate burden gives a special obligation to make an extra effort to reduce CO2 emissions as quickly and efficiently as possible.
@@ -2414,8 +1955,6 @@ One of such trailblazing endeavours where green interventions walk hand in hand 
 
 Reaching net zero emissions requires a large portion of will and courage. And it requires action and cooperation. Politically, administratively and not least collaboratively between the city’s many actors. We have a strong tradition in Aarhus to jointly develop the city – and on developing a green city. We
 
-4
-CITY OF AARHUS
 Climate-Neutrality Commitments
 
 have proven this with the previous climate action plans, with concrete projects like e.g. CO-SHAPE, and we will continue to do so with the new climate action plan.
@@ -2424,7 +1963,6 @@ The recent political settlement for a CO2-neutral Aarhus in 2030, reiterated the
 
 ![img-0.jpeg](img-0.jpeg)
 Aarhus Climate Summit with citizens, 14 November 2023
-CITY OF AARHUS
 
 Climate-Neutrality Commitments
 
@@ -2441,11 +1979,8 @@ The figure below provides a visual representation of the 2022-inventory divided 
 
 ![img-1.jpeg](img-1.jpeg)
 (Note: The visualisation of the detailed 2022-inventory only exists in a Danish version)
-CITY OF AARHUS
 
 Climate-Neutrality Commitments
-
-7
 
 Projections show that with the current pace of climate efforts, we fail to achieve the goal of CO2 neutrality by 2030. With the already adopted initiatives and the new national framework conditions, Aarhus will lack reducing approximately 846,000 tons of CO2 by 2030 to make our emissions within the municipal boundary (scope 1 and 2) reach net zero:
 
@@ -2468,11 +2003,8 @@ With the Climate Strategy Agreement, The City of Aarhus has decided to set emiss
 
 Construction and urban development: 40,000 tonnes (scope 3)
 Food: 24,000 tonnes (scope 3)
-CITY OF AARHUS
 
 Climate-Neutrality Commitments
-
-8
 
 Finally, the City of Aarhus has decided to lead by example when it comes to the green transition. Viewed as its own entity (labelled "climate group"), the City of Aarhus emitted 45.091 tonnes of CO2e in 2023. The figure below illustrates which categories and sectors are causing these emissions as well as the historical development in emissions for the climate group.
 
@@ -2489,7 +2021,6 @@ Climate Group: 138,000 (scope 3)
 Accordingly, a total of 849,000 tonnes of CO2e in Scope 1 and 2 will thus be saved annually, which will enable Aarhus to achieve climate neutrality in 2030. In addition, a total reduction of 202,500 tonnes of CO2e in Scope 3 will be achieved. The difference between the politically set CO2 target and the total CO2 reduction is thus due to the expectation of mitigating more CO2 than is emitted.
 
 As an integrated part of working with the EU Mission for 100 Climate-neutral &amp; Smart Cities and the CCC action plan – and not least as a natural extension of the previous years' climate actions in Aarhus
-CITY OF AARHUS
 Climate-Neutrality Commitments
 
 – the municipality is currently working on defining co-benefits. The more difficult and comprehensive actions towards CO2e reductions become, the more important it is to focus on the co-benefits that the green transition brings with it and thus formulate a value-based vision beyond CO2 reductions.
@@ -2498,17 +2029,11 @@ The green transition of Aarhus should not only contribute to realizing the natio
 
 |  How can the climate transition act as a lever the Aarhus Goals?  |   |
 | --- | --- |
-|  A city with a place for everyone | e.g. by creating a city with space to learn and develop. A city where all citizens have the best opportunities, conditions and prerequisites to join the green transition. A city that invites all stakeholders to engage in dialogue about the climate - even when it's difficult.
-Or as exemplified in CO-SHAPE, funded as part of Aarhus' participation in the Mission, where citizens, architects, local farmers, civil servants, and the agricultural collaborate.  |
-|  A city of community and fellowship | e.g. by creating a city where green development is something we co-create and co-shape, and where new ideas are cultivated and tried out in non-traditional ways of working. A city where fellowship is a key path to rethinking the possibilities for living in and developing our city together.
-Or as exemplified in CO-SHAPE, by co-creating a comprehensive plan for peri-urban area with locals a diverse group of stakeholders.  |
-|  A city where everyone is healthy, and everyone thrives | e.g. by creating a city where green lifestyles promote health, well-being and security. A city that offers the best conditions for sustainable living.
-Or as exemplified in CO-SHAPE, where plans are made with the agricultural sector to ensure practices that are beneficial for groundwater protection, such as the planting of grass protein.  |
-|  A growing city with a strong private sector | e.g. by creating a city with sustainable growth, green partnerships and innovations driven by new sustainable business models and green workplaces.
-Or as exemplified in CO-SHAPE, where extensive sector coupling is facilitated and avenues for new technologies regarding PtX and pyrolysis are explored.  |
-|  A sustainable city with good urban and local environment | e.g. by creating a city with thriving local areas in both urban, peri-urban and rural areas, where biodiversity and recreational areas are in focus. A city with good conditions for both people, animals, nature and water
-Or as exemplified in CO-SHAPE, where comprehensive planning ensures that the transformation of Spørring adds value back to the locals by e.g. increasing liveability and developing green areas.  |
-CITY OF AARHUS
+|  A city with a place for everyone | e.g. by creating a city with space to learn and develop. A city where all citizens have the best opportunities, conditions and prerequisites to join the green transition. A city that invites all stakeholders to engage in dialogue about the climate - even when it's difficult. Or as exemplified in CO-SHAPE, funded as part of Aarhus' participation in the Mission, where citizens, architects, local farmers, civil servants, and the agricultural collaborate.  |
+|  A city of community and fellowship | e.g. by creating a city where green development is something we co-create and co-shape, and where new ideas are cultivated and tried out in non-traditional ways of working. A city where fellowship is a key path to rethinking the possibilities for living in and developing our city together. Or as exemplified in CO-SHAPE, by co-creating a comprehensive plan for peri-urban area with locals a diverse group of stakeholders.  |
+|  A city where everyone is healthy, and everyone thrives | e.g. by creating a city where green lifestyles promote health, well-being and security. A city that offers the best conditions for sustainable living. Or as exemplified in CO-SHAPE, where plans are made with the agricultural sector to ensure practices that are beneficial for groundwater protection, such as the planting of grass protein.  |
+|  A growing city with a strong private sector | e.g. by creating a city with sustainable growth, green partnerships and innovations driven by new sustainable business models and green workplaces. Or as exemplified in CO-SHAPE, where extensive sector coupling is facilitated and avenues for new technologies regarding PtX and pyrolysis are explored.  |
+|  A sustainable city with good urban and local environment | e.g. by creating a city with thriving local areas in both urban, peri-urban and rural areas, where biodiversity and recreational areas are in focus. A city with good conditions for both people, animals, nature and water Or as exemplified in CO-SHAPE, where comprehensive planning ensures that the transformation of Spørring adds value back to the locals by e.g. increasing liveability and developing green areas.  |
 Climate-Neutrality Commitments
 
 The Aarhus goals have been developed in collaboration with the citizens and serve as the benchmark for the City Council's decisions, for the strategic directions and tactical plans that are developed by the city administration, for the everyday work of the municipal employees, and not least for practicing active Aarhus citizenship. With a direct link between the Aarhus goals and the CCC Action Plan, we therefore ensure a continued strong focus on Aarhus as a good city for everyone. And we ensure that everyone works together, for a sustainable city and for a sustainable future.
@@ -2516,8 +2041,6 @@ The Aarhus goals have been developed in collaboration with the citizens and serv
 ![img-0.jpeg](img-0.jpeg)
 Aarhus District Heating Utility, Studstrup
 
-0
-CITY OF AARHUS
 Climate-Neutrality Commitments
 
 # 3 Strategic priorities
@@ -2537,7 +2060,6 @@ But the green energy transition requires space, and the open spaces in Aarhus ar
 The city of Aarhus consists of a combination of both rural, urban and peri-urban areas. This combination provides Aarhus with a unique space of opportunity. The large land areas, for example, offer opportunities for the establishment of larger renewable energy facilities, biogenic parks, and afforestation.
 
 ¹ It should be mentioned that the legislation in this connection prevents the possibility of using areas multifunctionally. The Green Tripartite, which consists of the Government, Agriculture &amp; Food, the Food Federation NNF, Danish Metal, Danish Industry and the National Association of Municipalities must, however, reach an agreement on principles for recommendations and solutions on how to create areas in the future where agriculture, nature, renewable energy and recreational areas can coexist. Note further in this connection that in August 2024 the Government presented a new Ministry for Green Tripartite, which will, among other things, be responsible for climate analysis in the agricultural area, development of green technologies and bioeconomy and it must ensure progress and implementation of the agreed initiatives in the green tripartite. There is thus a great deal of political attention to ensure the right political leeway for the municipalities' green transition, including the opportunities associated with multifunctional land use.
-CITY OF AARHUS
 Climate-Neutrality Commitments
 
 However, these opportunities also come with a range of challenges and complexities that arise from, for example, decreasing property values because of neighbouring VE plant, the battle for land, and multi-functional land use, as well as a potentially unequal distribution between neighbourhoods with high emissions and neighbourhoods with space for renewable energy (RE). In addition, the green transition will create a fundamentally different allocation of land areas with less agriculture and animal husbandry in favour of more renewable energy plants, forests and other nature.
@@ -2561,7 +2083,6 @@ Below, the strategic opportunities associated with entering and facilitating new
 Businesses: understand the specific challenges and opportunities that the green transition brings with it in relation to various industries
 
 ² Although the transport and mobility sector accounts for the second highest level of emissions in Aarhus in 2030 and therefore naturally constitutes a significant strategic focus area, it is not included as a strategic focus area in the first edition of the CCC Action Plan due separate political and budget negotiation processes.
-CITY OF AARHUS
 Climate-Neutrality Commitments
 
 NGOs and interest organisations: secure that the interests of various actors are accommodated in the political and organizational processes
@@ -2587,8 +2108,6 @@ Citizens and local communities: engage and mobilise the public, not only invitin
 
 An example of how the systemic lever Democracy, Social Innovation and Change is driven by citizen and stakeholder involvement in the climate work is Climate Living Labs, which is open-source approach to innovation. Climate Living Labs is a Public-Private-People Participation model with a people-oriented approach where all stakeholders including government, cultural institutions, knowledge institutions private sector and civil society work together on a particular problem, issue or challenge relevant for a geographically defined area.
 
-3
-CITY OF AARHUS
 Climate-Neutrality Commitments
 
 ) Learning &amp; Capabilities, e.g.:
@@ -2601,7 +2120,6 @@ In Aarhus, we are already well underway. We are engaged in a range of collaborat
 
 ![img-0.jpeg](img-0.jpeg)
 The Infinite Bridge, Aarhus
-CITY OF AARHUS
 Climate-Neutrality Commitments
 
 # 4 Process and principles
@@ -2620,8 +2138,6 @@ The annual follow-up also contains a recommendation on whether new climate initi
 
 In the CCC Action Plan, weaknesses and deficiencies have been identified, especially within the area of Monitoring, Evaluation, and Learning. Despite a well-established data analytical and climate-economic procedural approach to climate work in Aarhus, there is a need for further strengthening and prioritizing this area in future iterations.
 
-5
-CITY OF AARHUS
 Climate-Neutrality Commitments
 
 It is crucial that all actors take collective ownership and that we develop common solutions for our city together if the green transition is to succeed. As a municipality, we therefore have an important role in ensuring the best possible frameworks, structures and conditions for cooperation on the green transition – in both urban, peri-urban and rural communities, for the citizens and for businesses.
@@ -2634,8 +2150,6 @@ Partnerships and strategic collaborations play a central role for the climate wo
 
 We look forward to making the plan a reality. Together!
 
-6
-CITY OF AARHUS
 Climate-Neutrality Commitments
 
 # 5 Signatories
@@ -2655,7 +2169,6 @@ The table below enlists the signatories³ who are committing to this CCC, and th
 ³ Climate City Contract signatories may be individuals or organisations. They ideally include national and/or regional governments, for example concrete agreements/ commitments made through the multi-level governance engagement processes supported by NetZeroCities, CapaCities, and other emerging national level initiatives.
 
 ⁴ Please mention if the organisation is active at local, regional, national, or international level.
-CITY OF AARHUS
 Climate-Neutrality Commitments
 
 |  AURA Energy | National | Company | Carten Höegh Christiansen | CEO  |
@@ -2674,7 +2187,6 @@ AARHUS KOMMUNE
 CLIMATE STRATEGY AGREEMENT: 2025-2030
 
 Aarhus, 29 April 2024
-2
 
 CLIMATE STRATEGY AGREEMENT: 2025-2030 ... 3
 
@@ -2755,10 +2267,8 @@ The political agreement will be implemented in the form of a climate action plan
 
 It is vital that we ensure that real reductions are achieved as quickly as possible, so that we set our course towards climate neutrality from the very beginning. To this end, the coalition parties agree to revisit the climate effort annually. On the background of the annual greenhouse gas emissions report and frozen policy prognoses, the coalition parties will consider any necessary adjustments and new
 
-3
 actions on the journey towards climate neutrality in 2030.
 
-4
 # Strategic focus areas
 
 ![img-0.jpeg](img-0.jpeg)
@@ -2770,7 +2280,6 @@ LANDFILLS AND WASTEWATER
 FOOD
 CONSTRUCTION AND URBAN DEVELOPMENT
 CITIZENS AND THE
-6
 
 BUSINESS COMMUNITY
 
@@ -2795,7 +2304,6 @@ In the long-term, the objective is a heating system in Aarhus that does not use 
 
 A C02 capture facility at the Lisbjerg Plant is projected to be able to capture approx. 335,000 CO2e annually. CCS is thus a decisive factor in our efforts to achieve climate neutrality in 2030 and contribute to negative emissions from the energy sector. The coalition parties agree that Kredsløb must apply to establish a CCS facility, including that the City of Aarhus may provide a municipal guarantee in connection with the construction project. The coalition parties emphasize the importance of collaboration with external partners in this connection, as well as the expectation that operations achieve financial equilibrium, government funding taken into account.
 
-7
 Due to the fact that the by-laws for Kredsløb stipulate that owner approval is necessary for investments over DKK 500 million, the City Council will have to make a final decision on the approval of the Circuit's CCS facility. If needed, a municipal guarantee will be considered at the same time.
 
 A prerequisite for the introduction of CSS is that Kredsløb must be able to sell C02 credits in order to ensure the financial viability of the project. Of the 335,000 metric tons of C02e captured, approx. 25% will come from fossil sources and 75% from biogenic sources. The coalition parties support allowing Kredsløb to sell C02 credits from biogenic sources to help finance the project. The coalition parties agree that the market for C02 credits is immature, that principles for C02 credits must be developed, and that the City Council will be responsible for setting the framework for the responsible sale of credits that will continue to ensure the necessary financing. The coalition parties also support Kredsløb applying for funding from the government operating grant pool in order to help fund the start-up of CSS.
@@ -2814,10 +2322,8 @@ The coalition parties agree that it is necessary to find many locations as possi
 
 A number of the 20 wind turbines that currently provide Aarhus with green power are inadequate or obsolete. The coalition parties agree to replace the existing wind turbines in the municipality with new turbines on the same sites, and in this connection to promote dialogue with the owners of the turbines
 
-8
 and work to promote better framework conditions that provide incentives for owners to invest in new,
 
-9
 modern wind turbines. Replacing 5 existing wind turbines and installing 2 new 150-meter wind turbines on existing sites would generate enough power for an additional 2,500 households (10 MW).
 
 The coalition parties also agree that in connection with the drafting of the 2025 municipal plan, sites for wind turbines will be proposed with a view to installing an additional 8 new wind turbines in the City of Aarhus that would be able to generate power for an additional 16,000 households (40 MW) in Aarhus. Sites in Vosnæs and Kasted have already been earmarked with capacity for a total of 5 wind turbines. The Danish Liberal Party has previous expressed opposition to the installation of wind turbines in Vosnæs and Kasted but accepts that the majority agrees to continue work towards installing wind turbines in these locations.
@@ -2838,9 +2344,6 @@ The coalition parties note that Technical Services and Environment has already r
 
 The coalition parties note that the national energy crisis staff (NEKST) intends to reduce barriers to faster deployment of RE. The coalition parties also agree that green funding pools should benefit local communities and neighbors of RE installations to an even greater extent, including with a focus on biodiversity, and that steps should be taken towards increasing the available forms of neighbor compensation, for example through sale of electricity from RE installations to their neighbors.
 
-0
-1
-
 # Energy efficiency improvements and solar cells on roofs
 
 Through the Aa+ project, the City of Aarhus has implemented ambitious energy-efficiency retrofits. With the formation of Aarhus Ejendomme, it is now possible to carry out additional energy-efficiency retrofits on an even larger scale and contribute to the implementation of the EU's energy efficiency directive, which sets a target of overall energy savings from all buildings of 11.7% for the period 2024-2030. This goal applies to society as a whole and includes citizens and businesses in addition to the municipality. To achieve this target, a partnership with business and industry to reduce energy consumption will be established. In addition, the municipality will launch a public information campaign focussing on energy-efficiency retrofits. In total, energy efficiency retrofits will lead to a reduction of 16,000 metric tons of CO2e annually.
@@ -2852,7 +2355,6 @@ The private sector is taking a proactive approach and is offering installation o
 # Biogenic energy park
 
 Biogenic energy parks use biological materials as fuel to produce energy, for example manure from livestock, crop residues or other organic waste. A biogenic plant can contribute to strengthening the link between agriculture and the energy sector. The coalition parties agree to work to promote the establishment of a pyrolysis plant that can sequester up to 50% of the biomass carbon in biochar, which means it will not be returned to the atmosphere, in addition to a grass protein plant that produces a sustainable feed for swine. It is estimated that the annual CO2e effect will be approximately 47,000 metric tons of CO2e in Scopes 1+2 and 6,000 metric tons in Scope 3. At the same time, the coalition parties will also explore the possibility of implementing CO2 capture in connection with the establishment of the biogenic energy park. In addition, it must be ensured that any emissions of environmentally harmful substances must remain below threshold values.
-2
 
 # TRANSPORT
 
@@ -2877,11 +2379,7 @@ The coalition parties see the development in the number of EVs as positive, and 
 The coalition parties agree that emissions from the transport sector are significant in relation to consumption-based emissions. The coalition parties thus request that Technical Services and Environment and the Mayor's Department draft a recommendation during the first year of the climate
 action plan that sets out proposal for the development of a data-based baseline for achieving reductions win consumption-based emissions in the transport sector.
 
-3
 Emissions from aviation and shipping will, according to projections, account for approx. 30% of the transport sector's emissions in 2030. The coalition parties thus agree to work to promote the electrification of the aviation and shipping to the greatest possible extent, and for the replacement of fossil fuels by more climate-friendly alternatives. The coalition parties agree to reduce emissions by 15-30% annual from 2030 onwards through partnerships with actors in the industry.
-
-4
-5
 
 ![img-0.jpeg](img-0.jpeg)
 
@@ -2906,9 +2404,6 @@ In addition, the possibility of establishing an additional 300 ha of commercial 
 It is estimated that multifunctional forests will sequester 15 metric tons of CO2e per ha annually, a total of 60,000 metric tons CO2e annually; the full effect will only be achieved after many years of growth. The carbon sequestration effect in 2030 is estimated at 30,000 metric tons of CO2 annually,
 depending on the speed of establishment, the land on which the forest is established and the type of forest. Reforestation has a long-lasting effect and is costly. See the section on the funds for the land fund regarding financing.
 
-6
-7
-
 # Set-aside of lowland soils and holistic planning
 
 When carbon-rich lowland soils are drained for cultivation, they are oxygenated, and emit large amounts of greenhouse gases to the atmosphere. The City of Aarhus has already planned the set-aside of specific areas on 500 ha of lowland soils: the lowland soils will be taken out of cultivation and the water table will be raised in these areas in order to reduce CO2 emissions from agriculture.
@@ -2924,7 +2419,6 @@ The green transition of the countryside will require that all initiatives are im
 Agriculture in the City of Aarhus emits approx. 61,500 metric tons of CO2e. Reductions can be achieved by strengthening the dialogue between agriculture and the municipality, including by having climate as a recurring element in monitoring and regulatory approval process. Climate action plans for both livestock and crop-producing farms must also be developed. A partnership with central players in the agricultural sector and across municipalities and industries must be established with a view to promoting climate-optimized food production.
 
 The coalition parties agree that Agro Food Park in Skejby has great potential to lead the play towards the food system of the future. The coalition parties are thus prepared to promote a new 'Climate, Health and Food Systems Valley' in Skejby with a view to maintaining the Aarhus region's position as a world leader in this area. A reduction of 1,000 metric tons of CO2e annually is estimated by 2030.
-8
 
 LANDFILLS AND WASTEWATER
 
@@ -2939,7 +2433,6 @@ The coalition partners agree on the target of an approx. 46,000 metric ton Co2e 
 # An Aarhus with less waste
 
 By working more intensively with the waste hierarchy and waste generation, the City of Aarhus can move towards phasing out waste through a greater focus on recycling and reuse rather than disposal, in addition to behavioural design and new habits. The coalition parties agree that a circularity policy must be developed for the City of Aarhus as a client in connection with construction projects, and that the City of Aarhus must support business and industry in developing circular solutions through industrial symbioses. This initiative will result in an annual reduction of approx. 14,000 metric tons CO2 in scope 3.
-9
 
 FOOD
 
@@ -2962,9 +2455,6 @@ Food production is under great pressure today. The municipality must take the le
 The City of Aarhus can help support the transformation of agricultural production by contributing to the test and development of new cultivation concepts and business models on agricultural sites within
 the municipality. In addition, local sustainable food value chains can be supported, with a view to promoting more plant-based production and sale. If more Aarhus residents follow the official dietary guidelines, a significant annual CO2e reduction in Scope 3 can be achieved.
 
-0
-1
-
 # INSTRUCTION AND URBAN DEVELOPMENT
 
 ## Sustainable urban development
@@ -2986,13 +2476,9 @@ The coalition parties agree that the municipality must build fewer new structure
 The coalition parties agree that the municipality – within the framework of the Reduction Roadmap – has a special obligation to take the lead and set ambitious targets for municipal construction projects.
 At the beginning of 2023, the Aarhus City Council pledged that all new construction over 1,000 m2 will comply with the low-emission class standard, which means a threshold value of max. 8 kg CO2e/m2/pr. year in 2024, falling to 5 kg CO2e/m2/pr. year in 2030. The City of Aarhus has started working with LCA assessment tools. LCA assessment tools will contribute to making
 
-2
 Scope 3 reductions in construction projects possible by enabling calculation of emissions from the building materials used, for example.
 
 The recommendation must also illuminate implications for other political priorities, for example prioritizing sports, health and/or education initiatives, as well as social balance and attracting more families with children to the city, including whether there may be a need to continue to exempt certain construction projects, such as sports club-financed sports facilities from the requirements, based on a climate-economic approach and drawing on the funding pool for climate-friendly construction.
-
-3
-4
 
 # CITIZENS AND THE BUSINESS COMMUNITY
 
@@ -3015,7 +2501,6 @@ A focus on circular resources is essential for the green transition in business 
 ## International efforts
 
 The climate knows no boundaries. This means that we are dependent on strong partnerships and international collaboration. Aarhus has made good progress on international collaboration on climate, and the City of Aarhus will strengthen international efforts and work to put Aarhus on the map as a climate frontrunner. The coalition parties will continue participation in the EU's '100 Cities' mission, both in order to ensure the export of the technologies and approaches we have discovered here and to get access to the latest knowledge from elsewhere. The coalition parties support the re-establishment of the delegation service in order to ensure that visiting cities, special interest organisation and others get the maximum possible benefit of a visit to Aarhus.
-5
 
 # Climate LivingLabs
 
@@ -3043,7 +2528,6 @@ The coalition parties note that the municipality's consumption of beef has falle
 The municipality's fleet of passenger cars and small vans must be fossil-free in 2025. These efforts can be strengthened through harmonized rules and behavioral changes, in addition to artificial
 intelligence. An investigation must also be made of whether ride sharing can contribute to the green transition. Simulations have shown that vehicular transportation needs can be met with up to 15% fewer vehicles than today. The municipality has developed a tool called
 
-7
 FleetOptimiser in collaboration with other municipalities, and results have been positive from the last eighteen months of use. The coalition parties agree to extend the project, which is set to expire at the end of 2024. The coalition parties also agree to explore the possibility of using transport allowances to encourage municipal employees to choose green modes of transportation.
 
 ## Circular Aarhus and frugal consumption
@@ -3054,7 +2538,6 @@ FleetOptimiser in collaboration with other municipalities, and results have been
 
 The construction unit uses heavy machinery, including trucks, excavators and sweepers. Charging infrastructure has been installed in the unit, and the process of conversion to electrically powered machines is well underway. The coalition parties agree that the construction unit must, as far as possible, be CO2-neutral in 2030. However, this requires the generation of solar power for the machines, and the use of HVO fuel for the heaviest machinery. The conversion to CO2-neutrality in the construction unit must take place on the background of an assessment of the costs of such a transition, in terms of the costs of the new machines relative to the CO2 savings. In addition, it is necessary to investigate whether a green transition of the machinery used can be carried out more efficiently through cooperation with external partners.
 
-8
 NATIONAL FRAMEWORK CONDITIONS
 
 ## New national framework conditions
@@ -3070,9 +2553,6 @@ It is also a prerequisite that the state adopts the necessary frameworks in rega
 According to the latest national agreement on the partial implementation of the 'green fund' concluded on 15 April 2024, DKK 625 million have been allocated to reforestation in the period 2024-2027. Whether the municipalities will receive any of this funding is not yet known, as the agreement states that the allocation of the funding will be decided based on a proposal from the government, and must be viewed in connection with the coming forest plan. However, if the municipalities receive any of this funding, the City of Aarhus, based on the usual allocation key, can expect to receive approx 6.1%, corresponding to approx. DKK 40 million.
 
 Under the agreement, it has been decided to increase the diesel tax by 50 øre per liter from 2025. The agreement is expected to reduce emissions by 16,000 metric tons CO2e in the City of Aarhus, which has been included in the baseline in the section on transport. In addition, the agreement allocates funds for the green transition of agriculture (funds for methane-reducing feed, etc.), which, it must be assumed, will be granted to the industry and not to municipalities, as well as plant-based foods, in regard to which there is an obvious link to Scope 3, but in regard to which the funds will go to the plant-based food fund, which finances innovation projects in the food sector.
-
-9
-0
 
 FINANCING AND FOLLOW-UP
 
@@ -3117,7 +2597,6 @@ Reforestation has a long-lasting effect and is costly. Technical Services and En
 In addition, with the agreement on partial implementation of the 'green fund', a total of DKK 625 million has been allocated to reforestation in the period 2024-2027. Assuming that these funds are distributed to the municipalities in accordance with the standard allocation key, it is to be expected that the City of Aarhus will receive the equivalent of approx. DKK 40 million. The coalition parties
 agree that these funds will be added to the land fund.
 
-2
 The coalition parties also agree on an initial allocation of DKK 20 million to the land fund – which is expected to correspond to 80-100 ha – in a one-off grant earmarked set-aside of lowland soils. The financing for these funds must be found in connection with the budget negotiations.
 
 A total of DKK 50 million will be added to the land fund; in addition to the DKK 30 million for reforestation, DKK 20 million will be allocated for the purchase of lowland soils. In addition, an additional DKK 40 million from the state green fund may be accessible. The coalition parties will work to influence the national frameworks in order to ensure the necessary legislation and financing. At the same time, the coalition parties request that Technical Services and Environment takes action to explore the possibilities for additional external financing with a view to obtaining at least DKK 75 million in co-financing. In addition, there may be substantial unfunded items in the form of lost revenue and compensation for expropriation. The coalition parties agree to allocate funding to cover these items.
@@ -3132,7 +2611,6 @@ The coalition parties agreed to seek external funding for the initiatives, inclu
 
 The agreement on the climate plan for 2025-2030 should be considered a draft budget from the coalition parties for budget negotiations in the context of the 2025 budget, and the parties of the City Council will thus be in a position to prioritize all or some of the elements from the new political agreement in the budget negotiations.
 
-3
 # PARTICIPATION IN THE AGREEMENT
 
 The parties agree that participation in the agreement regarding the climate strategy for 2025-2030 is binding, and that the parties jointly assume responsibility for the agreement as a whole. This means that, in the exceptional event that one party desires an amendment to the agreement, the proposed amendment must be submitted to the parties to the agreement for negotiation, and agreement is a precondition for the presentation of any proposed amendment.
@@ -3146,8 +2624,6 @@ The parties also agree in principle to endorse the final climate action plan whe
 
 Climate Action Plan 2021-2024
 
-CITY OF AARHUS
-
 ![img-1.jpeg](img-1.jpeg)
 
 APPROVED
@@ -3155,7 +2631,6 @@ APPROVED
 DIK2020
 
 BY C40 &amp; CONCIO
-2
 
 # CONTENTS
 
@@ -3177,7 +2652,6 @@ A green organisation...42
 Leading a Community in change...48
 Platform for joint transition...49
 Collaboration without boundaries...51
-3
 
 # INTRODUCTION
 
@@ -3200,7 +2674,6 @@ Bünyamin Simsek
 Technical and Environmental Councillor, Aarhus Municipality
 
 ![img-0.jpeg](img-0.jpeg)
-4
 
 # A DECADE OF LOCAL CLIMATE ACTION
 
@@ -3214,7 +2687,6 @@ Major changes have been made in the energy sector in particular and with that, a
 CO₂-Emissions for Aarhus as a society
 
 ![img-1.jpeg](img-1.jpeg)
-5
 
 # Transport
 
@@ -3229,7 +2701,6 @@ Through work with strategic energy planning, it has also become apparent that pr
 Becoming a carbon neutral society is no longer enough to solve the climate crisis. Although we have put a lot of effort into reducing emissions, too much $\mathrm{CO}_{2}$ has been released into the atmosphere to avoid severe climate change. In order to meet the goals of the Paris Agreement, this challenge must be taken seriously. Therefore, the preparation and construction of facilities for future large-scale $\mathrm{CO}_{2}$ capture is also an important aspect of the coming period.
 
 ![img-0.jpeg](img-0.jpeg)
-6
 
 # VISION AND ACTION
 
@@ -3240,7 +2711,6 @@ Many pieces of the puzzle must be placed in the green transition before we reach
 COMBINED CLIMATE INITIATIVES
 
 ![img-1.jpeg](img-1.jpeg)
-7
 
 # CLIMATE GOALS
 
@@ -3285,7 +2755,6 @@ When you take a closer look at the transition, there are many other important be
 "Additional effects" is a comprehensive description of the effects that focus areas have in addition to a reduction in direct $\mathrm{CO}_{2}$ emissions (Scope 2).
 
 ![img-0.jpeg](img-0.jpeg)
-0
 
 # SPECIAL FOCUS ON THE GREEN INDUSTRY
 
@@ -3300,7 +2769,6 @@ Cooperation with educational institutions on future climate-competent workforces
 Develop cluster- and innovation environments locally and nationally
 Through partnerships and safeguarding interests with relevant stakeholders that create value for everyone
 Have an international outlook
-1
 
 # UNITED FOR THE GREEN TRANSITION
 
@@ -3381,7 +2849,6 @@ Geothermal energy in Aarhus
 Test of seawater heat pump in Aarhus Ø
 
 ![img-0.jpeg](img-0.jpeg)
-5
 
 # The efficient and flexible energy system
 
@@ -3482,7 +2949,6 @@ HIGH
 Positive derived effects
 
 LOW
-0
 
 # TRANSPORT AND MOBILITY
 
@@ -3524,7 +2990,6 @@ The bicycle action plan
 Collective traffic plan
 
 ![img-0.jpeg](img-0.jpeg)
-1
 
 # Change of technology and fuels
 
@@ -3563,7 +3028,6 @@ TM-11 Replacement of Road Lighting for LED
 
 Charging infrastructure strategy
 Lighting strategy
-2
 
 TRANSPORT
 
@@ -3650,7 +3114,6 @@ MEDIUM
 Positive derived effects
 
 MEDIUM
-6
 
 # CONSTRUCTION AND URBAN DEVELOPMENT
 
@@ -3697,7 +3160,6 @@ BB-4 Climate Forum
 Business plan
 
 ![img-0.jpeg](img-0.jpeg)
-7
 
 # The circular city
 
@@ -3744,7 +3206,6 @@ CONSTRUCTION AND URBAN DEVELOPMENT
 |  BB-7 | CO₂ neutral construction sites  |
 |  BB-8 | Climate-neutral construction strategy  |
 |  BB-9 | Climate-friendly social housing strategy  |
-9
 
 # CLIMATE RELAY
 
@@ -3830,7 +3291,6 @@ IL-4 Solar energy for industrial companies
 IL-5 Alternative sources of liquid gas
 IL-6 Strengthened supervision and dialogue with industry
 IL-7 Circular economy and symbiosis
-3
 
 # Knowledge and cooperation
 
@@ -3873,7 +3333,6 @@ Knowledge and cooperation
 
 |  IL-8 | Green agents of change for industrial and agricultural concerns  |
 | --- | --- |
-5
 
 # CLIMATE RELAY
 
@@ -3912,7 +3371,6 @@ In close cooperation with the research and education sector, Aarhus Municipality
 Up to and including 2024, the focus will be on innovation, partnerships and funding within the climate area, as well as development of Aarhus as a leading innovation platform, test and demonstration city for green solutions. Strengthening the knowledge of citizens and companies is a prerequisite for companies to find employees with the necessary qualifications within climate, green transition and innovation. In order to increase drive towards the green transition in Aarhus, access to and opportunities for active participation in decisions are being strengthened through the consultation portal, the Danish Council of Citizens and the public budgets.
 
 ![img-0.jpeg](img-0.jpeg)
-8
 
 TRANSFORMING AARHUS
 
@@ -3941,7 +3399,6 @@ Energy strategy Aarhus
 Climate alliance
 GoGreen Delegations service
 Acces Cities and collaboration with Pittsburgh, USA
-9
 
 # Knowledge and capability
 
@@ -3986,7 +3443,6 @@ AO-7 Measurement and communication – ensure and make results more visible
 Citizenship policy
 
 ![img-0.jpeg](img-0.jpeg)
-0
 
 TRANSFORMING
 
@@ -3998,8 +3454,7 @@ OVERVIEW OF INITIATIVES
 
 |  AO-1 | Promoting innovation in climate change and green transition  |
 | --- | --- |
-|  AO-2 | Strengthened exports of climate solutions and branding of Aarhus
-asa climate-friendly city  |
+|  AO-2 | Strengthened exports of climate solutions and branding of Aarhus asa climate-friendly city  |
 
 ## Knowledge and capability
 
@@ -4013,7 +3468,6 @@ asa climate-friendly city  |
 | --- | --- |
 |  AO-6 | Partnerships – knowledge-sharing and strong collaborations  |
 |  AO-7 | Measurement and communication – ensure and visualise results  |
-1
 
 # CLIMATE RELAY
 
@@ -4102,7 +3556,6 @@ KA-6 Changed workflows, digitisation, data and surveys in the workplace
 KA-7 Communication and climate at eye level
 
 ![img-0.jpeg](img-0.jpeg)
-5
 
 # Fossil-free municipal transport
 
@@ -4169,7 +3622,6 @@ A GREEN ORGANISATION
 |  KA-14 | Requirements, tools and methods for operation and climate-conscious solutions in construction  |
 |  KA-15 | Buildings as a framework for employees' daily climate efforts  |
 |  KA-16 | Green ownership  |
-7
 
 # CLIMATE COLLEAGUE
 
@@ -4188,7 +3640,6 @@ At Sabro-Korsvejens Skole, this is worked on at two levels. Themes are based on 
 "Once a year we have an 'international week' where all the students at the school work on the same topic. For example, recycling and sustainable entrepreneurship have been the focal point. In this way, you can work with what is appropriate for the individual age group in the different classes. At the same time, pupils see what the other pupils have worked on at the end of the week. It gives a sense of community and ownership of the challenges we face," says Birthe Jason.
 
 ![img-1.jpeg](img-1.jpeg)
-8
 
 # LEADING CHANGE IN THE COMMUNITY
 
@@ -4197,7 +3648,6 @@ Climate action is one of the biggest projects for change in modern times. All pa
 ![img-0.jpeg](img-0.jpeg)
 
 Progress and results of the initiative are communicated through a variety of media, gathered together under gogreenwithaarhus.dk
-9
 
 # PLATFORM FOR GREEN TRANSITION
 
@@ -4216,7 +3666,6 @@ Go Green Delegation Service
 GoGreenWithAarhUs
 
 ![img-0.jpeg](img-0.jpeg)
-0
 ![img-0.jpeg](img-0.jpeg)
 # COLLABORATION ACROSS BORDERS
 
@@ -4231,8 +3680,6 @@ The Climate Action Plan and related documents have been prepared in collaboratio
 
 ![img-0.jpeg](img-0.jpeg)
 ![img-0.jpeg](img-0.jpeg)
-
-3
 
 ![img-1.jpeg](img-1.jpeg)
 
