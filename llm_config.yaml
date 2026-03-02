@@ -35,9 +35,6 @@ markdown_researcher:
   batch_max_input_tokens: null
   batch_overhead_tokens: 600
   max_workers: 8
-  max_retries: 2
-  retry_base_seconds: 0.8
-  retry_max_seconds: 6.0
   request_backoff_base_seconds: 0.5
   request_backoff_max_seconds: 2.0
 writer:
