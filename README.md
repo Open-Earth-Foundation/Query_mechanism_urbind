@@ -118,25 +118,17 @@ Recommended tuning workflow:
 
 ## API key setup (important)
 
-You have two supported options:
-
-1. Backend default key (server-side):
+Current UI flow uses the backend default key:
 
 - Put key in root `.env`:
   - `OPENROUTER_API_KEY=...`
 - Use this when deployment should use one shared server key.
 
-2. User-provided key (frontend, per browser):
-
-- In the app UI, use `OpenRouter API Key (Optional)` and click `Use This Key`.
-- This key is stored in browser `localStorage` and sent as `X-OpenRouter-Api-Key`.
-- Use this when users should provide their own key instead of a shared backend key.
-
 If key authentication fails:
 
 - runs finish with `error.code = API_KEY_ERROR`
 - chat endpoints return `401` with a key-specific message
-- UI surfaces the error so users can switch key and retry.
+- UI surfaces the error so backend credentials can be fixed and the run retried.
 
 Example `llm_config.yaml`:
 
@@ -162,10 +154,10 @@ markdown_researcher:
   input_token_reserve: 2000
   max_chunk_tokens: 120000
   chunk_overlap_tokens: 200
-  batch_max_chunks: 16
+  batch_max_chunks: 32
   batch_max_input_tokens: null
   batch_overhead_tokens: 600
-  max_workers: 2
+  max_workers: 8
 writer:
   model: "moonshotai/kimi-k2.5"
   temperature: 0.0
@@ -322,7 +314,9 @@ Useful flags:
 
 - `--questions-file backend/benchmarks/prompts/retrieval_questions.txt`
 - `--repetitions 2`
-- `--mode vector_store` — run only vector retrieval (no standard chunking). The benchmark runs every question in the questions file; `--repetitions N` runs each question N times per mode (total runs = questions × repetitions × modes).
+- `--mode vector_store` — run only vector retrieval (no standard chunking).
+- `--markdown-option 16:8 --markdown-option 32:4 --markdown-option 32:8` — run explicit markdown benchmark options (`batch_max_chunks:max_workers`).
+- The benchmark runs every question in the questions file; `--repetitions N` runs each question N times per mode and markdown option (total runs = questions × repetitions × modes × markdown_options).
 
 **Vector-only reproducibility (same query and same revised retrieval queries):** To run the vector strategy multiple times with the exact same question and the exact same refined retrieval queries (e.g. to check outcome stability):
 
@@ -339,16 +333,20 @@ Useful flags:
 
 Benchmark behavior notes:
 
-- The benchmark runs all questions from the questions file (not a single query repeated N times). Run IDs use `rNN` = repetition and `qNN` = question index (e.g. `vector_store_r01_q02` = repetition 1, second question). For identical queries across all runs, use a one-line questions file.
+- The benchmark runs all questions from the questions file (not a single query repeated N times).
+- Run IDs include repetition/question indices and markdown benchmark option, for example `vector_store_b32_w8_r01_q02_...`.
+- Default markdown benchmark options are `16:8`, `32:4`, and `32:8`.
+- For identical queries across all runs, use a one-line questions file.
 - The script always loads benchmark env files from `backend/benchmarks/config/`.
 - The benchmark is runtime-only; it does not build/update the vector index.
 - Vector mode uses the existing default Chroma store/collection unless overridden in your main environment.
-- The benchmark also runs LLM-as-judge scoring (`openai/gpt-5.2`) per matched standard-vs-vector run pair.
+- The benchmark also runs LLM-as-judge scoring (`openai/gpt-5.2`) per matched standard-vs-vector run pair within the same markdown option.
+- The benchmark report includes speed metrics (`runtime`, `tokens/sec`) and LLM issue counters (rate limits, retries exhausted, max-turns, and non-working calls).
 
 Outputs are written to `output/benchmarks/<benchmark_id>/`:
 
 - `benchmark_report.json`: machine-readable benchmark results.
-- `benchmark_report.md`: human-readable summary with runtime/tokens and judge score summaries.
+- `benchmark_report.md`: human-readable summary with runtime/tokens/sec, judge score summaries, and LLM issue counters.
 - `runs/<mode>/<run_id>/...`: original pipeline artifacts for each benchmark run.
 
 Standalone judge command for any two outputs:
@@ -463,14 +461,16 @@ NEXT_PUBLIC_API_BASE_URL=http://127.0.0.1:8000
 
 Frontend supports three city scope modes in the build form: all cities, predefined group, and manual selection.
 Frontend also supports two answer modes: `Aggregate Mode` and `City-by-City Mode` (sent as `analysis_mode` in run requests).
-Clicking `Open Context Chat` switches to a dedicated chat workspace (not a chat modal), and `Manage Contexts` opens a popup for multi-context selection.
+Clicking `Chat About the Answer` switches to a dedicated chat workspace (not a chat modal).
 Document and chat citations render as compact city labels; clicking a label loads and shows only the source quote.
-Clicking `Assumptions Review` opens a dedicated workspace where:
+The `Load Previous Answer` picker reads `run_id` + `question` from `GET /api/v1/runs`, then loads selected run artifacts through the standard run endpoints.
 
-- `Find Missing Data` runs two LLM passes (extract + verification).
-- Missing items are grouped by city with editable `proposed_number` (number or free-form text).
-- `Regenerate` returns revised content without persisting assumptions by default.
-  The `Load Existing Run` picker reads `run_id` + `question` from `GET /api/v1/runs`, then loads selected run artifacts through the standard run endpoints.
+Hidden but implemented features (buttons temporarily hidden):
+
+- `Assumptions Review` workspace: `Find Missing Data` runs two LLM passes (extract + verification), missing items are editable by city, and `Regenerate` returns revised content without persisting assumptions by default.
+- `Manage Contexts` in chat workspace: switching/combining multiple completed run contexts with token-cap enforcement.
+- Frontend user-owned OpenRouter key controls: `OpenRouter API Key (Optional)`, `Use This Key`, and `Clear` are implemented but hidden in the current UI; API-level support remains available via `X-OpenRouter-Api-Key`.
+- Chat token metrics in UI (`total_tokens`, `token_cap`, and per-context token counts) are implemented but hidden for regular users; planned to be shown in a future dev mode.
 
 Example file is available at `frontend/.env.example`.
 

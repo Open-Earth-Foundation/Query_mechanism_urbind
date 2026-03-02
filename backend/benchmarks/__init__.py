@@ -1,4 +1,5 @@
 from backend.benchmarks.runner import (
+    BenchmarkMarkdownConfig,
     BenchmarkModeConfig,
     BenchmarkQuestionResult,
     BenchmarkReport,
@@ -6,6 +7,7 @@ from backend.benchmarks.runner import (
 )
 
 __all__ = [
+    "BenchmarkMarkdownConfig",
     "BenchmarkModeConfig",
     "BenchmarkQuestionResult",
     "BenchmarkReport",

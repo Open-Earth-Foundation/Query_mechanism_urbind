@@ -5,7 +5,6 @@ import {
   ArrowLeft,
   Loader2,
   SendHorizonal,
-  Settings2,
   Sparkles,
 } from "lucide-react";
 
@@ -353,7 +352,7 @@ export function ContextChatWorkspace({
                 Multi-context chat grounded in saved run outputs and context bundles.
               </CardDescription>
             </div>
-            <div className="flex flex-wrap items-center gap-2">
+            <div className="ml-auto flex flex-col items-end gap-2">
               {conversationId ? (
                 <Badge variant="outline">Session: {conversationId.slice(0, 8)}</Badge>
               ) : null}
@@ -361,30 +360,18 @@ export function ContextChatWorkspace({
                 <ArrowLeft className="h-4 w-4" />
                 Back to Document
               </Button>
-              <Button
-                type="button"
-                size="sm"
-                variant="outline"
-                onClick={() => setIsContextManagerOpen(true)}
-                disabled={!conversationId || isBootstrapping}
-              >
-                <Settings2 className="h-4 w-4" />
-                Manage Contexts
-              </Button>
             </div>
           </div>
 
           {sessionContexts ? (
             <div className="space-y-2 rounded-md border border-slate-200 bg-slate-50 p-3 text-xs text-slate-700">
               <p>
-                Active contexts: {sessionContexts.contexts.length} | Tokens:{" "}
-                {sessionContexts.total_tokens.toLocaleString()} /{" "}
-                {sessionContexts.token_cap.toLocaleString()}
+                Active contexts: {sessionContexts.contexts.length}
               </p>
               <div className="flex flex-wrap gap-2">
                 {sessionContexts.contexts.map((context) => (
                   <Badge key={context.run_id} variant="secondary">
-                    {context.run_id} ({context.total_tokens.toLocaleString()})
+                    {context.run_id}
                   </Badge>
                 ))}
               </div>
