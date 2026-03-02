@@ -122,7 +122,7 @@ def create_app(
     allowed_origins = [o.strip() for o in cors_origins_raw.split(",") if o.strip()]
     # Wildcard origin cannot be combined with allow_credentials=True (CORS spec).
     # When explicit origins are configured, credentials are permitted.
-    using_wildcard = not allowed_origins
+    using_wildcard = not allowed_origins or "*" in allowed_origins
     if using_wildcard:
         allowed_origins = ["*"]
 

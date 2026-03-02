@@ -4,13 +4,13 @@ from __future__ import annotations
 
 import json
 import logging
-import os
 import re
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any
+from typing import Any, cast
 
 from openai import APIConnectionError, APIStatusError, APITimeoutError, OpenAI
+from openai.types.chat import ChatCompletionMessageParam
 
 from backend.tools.calculator import sum_numbers
 from backend.utils.retry import RetrySettings, call_with_retries
@@ -19,77 +19,13 @@ from backend.utils.tokenization import count_tokens, get_encoding
 
 logger = logging.getLogger(__name__)
 
-CHAT_PROMPT_TOKEN_CAP_ENV = "CHAT_PROMPT_TOKEN_CAP"
-CHAT_PROVIDER_TIMEOUT_SECONDS_ENV = "CHAT_PROVIDER_TIMEOUT_SECONDS"
 CHAT_CALCULATOR_TOOL_NAME = "sum_numbers"
 CHAT_REF_ID_PATTERN = re.compile(r"^ref_[1-9]\d*$")
 
 
-def _resolve_chat_prompt_token_cap(
-    default: int,
-    minimum: int,
-    maximum: int,
-) -> int:
-    """Resolve chat prompt token cap from environment with safe bounds."""
-    raw_value = os.getenv(CHAT_PROMPT_TOKEN_CAP_ENV, "").strip()
-    if not raw_value:
-        return default
-
-    try:
-        parsed = int(raw_value)
-    except ValueError:
-        logger.warning(
-            "Invalid %s=%r; using default %d",
-            CHAT_PROMPT_TOKEN_CAP_ENV,
-            raw_value,
-            default,
-        )
-        return default
-
-    if parsed < minimum:
-        logger.warning(
-            "%s=%d is below minimum %d; using minimum.",
-            CHAT_PROMPT_TOKEN_CAP_ENV,
-            parsed,
-            minimum,
-        )
-        return minimum
-    if parsed > maximum:
-        logger.warning(
-            "%s=%d exceeds hard maximum %d; using hard maximum.",
-            CHAT_PROMPT_TOKEN_CAP_ENV,
-            parsed,
-            maximum,
-        )
-        return maximum
-    return parsed
-
-
 def resolve_chat_token_cap(config: AppConfig) -> int:
-    """Return effective token cap by applying any env override to config defaults."""
-    return _resolve_chat_prompt_token_cap(
-        default=config.chat.max_context_total_tokens,
-        minimum=config.chat.min_prompt_token_cap,
-        maximum=config.chat.max_context_total_tokens,
-    )
-
-
-def _resolve_chat_provider_timeout_seconds(default: float) -> float:
-    """Resolve provider timeout from environment with safe minimum."""
-    raw_value = os.getenv(CHAT_PROVIDER_TIMEOUT_SECONDS_ENV, "").strip()
-    if not raw_value:
-        return default
-    try:
-        parsed = float(raw_value)
-    except ValueError:
-        logger.warning(
-            "Invalid %s=%r; using default %.1f",
-            CHAT_PROVIDER_TIMEOUT_SECONDS_ENV,
-            raw_value,
-            default,
-        )
-        return default
-    return max(5.0, parsed)
+    """Return the token cap for chat prompts from config."""
+    return config.chat.max_context_total_tokens
 
 
 CHAT_TOOL_DEFINITIONS: list[dict[str, object]] = [
@@ -156,7 +92,7 @@ def generate_context_chat_reply(
         config.chat.min_prompt_token_cap,
         min(resolved_cap, config.chat.max_context_total_tokens),
     )
-    timeout = _resolve_chat_provider_timeout_seconds(config.chat.provider_timeout_seconds)
+    timeout = config.chat.provider_timeout_seconds
 
     api_key = (
         api_key_override.strip()
@@ -186,7 +122,7 @@ def generate_context_chat_reply(
         retry_missing_citation=retry_missing_citation,
     )
 
-    base_request_kwargs: dict[str, object] = {
+    base_request_kwargs: dict[str, Any] = {
         "model": config.chat.model,
         "temperature": float(config.chat.temperature),
         "tools": CHAT_TOOL_DEFINITIONS,
@@ -269,6 +205,16 @@ def generate_context_chat_reply(
     if context_tokens <= config.chat.multi_pass_threshold_tokens:
         system_prompt = _compose_system_prompt(prompt_header, serialized_contexts)
         messages = _build_messages(system_prompt, bounded_history, user_content)
+        while _estimate_messages_tokens(messages) > effective_token_cap and bounded_history:
+            bounded_history = bounded_history[1:]
+            messages = _build_messages(system_prompt, bounded_history, user_content)
+        estimated_prompt_tokens = _estimate_messages_tokens(messages)
+        if estimated_prompt_tokens > effective_token_cap:
+            raise ValueError(
+                f"Chat context exceeds token budget after trimming history "
+                f"({estimated_prompt_tokens} > {effective_token_cap}). "
+                "Reduce selected contexts or shorten messages."
+            )
         return _run_single_pass(
             client=client,
             messages=messages,
@@ -284,6 +230,8 @@ def generate_context_chat_reply(
         bounded_history=bounded_history,
         user_content=user_content,
         chunk_tokens=config.chat.multi_pass_chunk_tokens,
+        effective_token_cap=effective_token_cap,
+        prompt_token_buffer=config.chat.prompt_token_buffer,
         client=client,
         request_kwargs=base_request_kwargs,
         retry_settings=retry_settings,
@@ -321,7 +269,7 @@ def _run_single_pass(
     *,
     client: OpenAI,
     messages: list[dict[str, Any]],
-    request_kwargs: dict[str, object],
+    request_kwargs: dict[str, Any],
     retry_settings: RetrySettings,
     run_id: str | None,
     context_count: int,
@@ -350,8 +298,10 @@ def _run_multi_pass(
     bounded_history: list[dict[str, str]],
     user_content: str,
     chunk_tokens: int,
+    effective_token_cap: int,
+    prompt_token_buffer: int,
     client: OpenAI,
-    request_kwargs: dict[str, object],
+    request_kwargs: dict[str, Any],
     retry_settings: RetrySettings,
     run_id: str | None,
     context_count: int,
@@ -360,23 +310,67 @@ def _run_multi_pass(
 
     Pass 1: first chunk → initial answer.
     Pass 2+: previous answer + next chunk → enhanced answer.
+
+    Chunk size is clamped so that every initial pass fits within effective_token_cap.
+    Enhancement passes additionally truncate previous_answer when needed.
     """
-    chunks = _split_text_by_tokens(serialized_contexts, chunk_tokens)
+    # Compute fixed overhead for an initial pass (no context yet).
+    # This accounts for prompt_header, history, user_content, and message framing.
+    empty_initial_messages = _build_messages(
+        _compose_system_prompt(prompt_header, ""),
+        bounded_history,
+        user_content,
+    )
+    base_overhead = _estimate_messages_tokens(empty_initial_messages) + prompt_token_buffer
+    safe_chunk_tokens = max(1, min(chunk_tokens, effective_token_cap - base_overhead))
+    if safe_chunk_tokens < chunk_tokens:
+        logger.info(
+            "Multi-pass chat: clamping chunk_tokens %d -> %d to fit effective_token_cap=%d",
+            chunk_tokens,
+            safe_chunk_tokens,
+            effective_token_cap,
+        )
+
+    chunks = _split_text_by_tokens(serialized_contexts, safe_chunk_tokens)
     logger.info(
         "Multi-pass chat: context split into %d chunks of ~%d tokens each",
         len(chunks),
-        chunk_tokens,
+        safe_chunk_tokens,
     )
+
     current_answer: str | None = None
     for pass_index, chunk in enumerate(chunks, start=1):
         if current_answer is None:
             system_prompt = _compose_system_prompt(prompt_header, chunk)
         else:
+            # Compute how many tokens are available for previous_answer in this pass.
+            # Use an empty previous_answer to measure the fixed enhancement overhead.
+            empty_enhancement = _compose_enhancement_prompt(
+                prompt_header=prompt_header,
+                previous_answer="",
+                additional_context=chunk,
+            )
+            empty_enhancement_tokens = _estimate_messages_tokens(
+                _build_messages(empty_enhancement, bounded_history, user_content)
+            )
+            available_for_answer = (
+                effective_token_cap - empty_enhancement_tokens - prompt_token_buffer
+            )
+            if count_tokens(current_answer) > available_for_answer:
+                logger.warning(
+                    "Multi-pass chat pass %d: truncating previous_answer to %d tokens "
+                    "to fit effective_token_cap=%d",
+                    pass_index,
+                    max(0, available_for_answer),
+                    effective_token_cap,
+                )
+                current_answer = _truncate_to_tokens(current_answer, max(0, available_for_answer))
             system_prompt = _compose_enhancement_prompt(
                 prompt_header=prompt_header,
                 previous_answer=current_answer,
                 additional_context=chunk,
             )
+
         messages = _build_messages(system_prompt, bounded_history, user_content)
         logger.info("Multi-pass chat: running pass %d/%d", pass_index, len(chunks))
         current_answer = _run_single_pass(
@@ -387,6 +381,7 @@ def _run_multi_pass(
             run_id=run_id,
             context_count=context_count,
         )
+
     if current_answer is None:
         raise ValueError("Multi-pass chat produced no answer.")
     return current_answer
@@ -449,7 +444,7 @@ def _run_chat_completion_with_tools(
     *,
     client: OpenAI,
     messages: list[dict[str, str]],
-    request_kwargs: dict[str, object],
+    request_kwargs: dict[str, Any],
     max_tool_rounds: int,
 ) -> Any:
     """Execute chat completion and resolve tool calls in-process."""
@@ -457,7 +452,7 @@ def _run_chat_completion_with_tools(
     resolved_max_rounds = max(int(max_tool_rounds), 1)
     for tool_round in range(1, resolved_max_rounds + 1):
         response = client.chat.completions.create(
-            messages=working_messages,
+            messages=cast(list[ChatCompletionMessageParam], working_messages),
             **request_kwargs,
         )
         if not response.choices:
