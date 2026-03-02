@@ -63,8 +63,8 @@ Figure A-3.1: The roles of the City of Aarhus with regards to influence and emis
 
 # List of tables
 
-: Population, area and population density of the city of Aarhus ... 8
-: Climate Neutrality Target by 2030 ... 10
+1-1.1: Population, area and population density of the city of Aarhus ... 8
+1-1.2: Climate Neutrality Target by 2030 ... 10
 A-1.1: Sources and sectors of GHG emissions ... 12
 A-1.2: GWP factors applied ... 12
 A-1.3: GHG emissions by source sectors ... 13
@@ -1385,7 +1385,7 @@ Key stakeholders:
 ○ External partners are Agro Food Park as well as a large number of companies and knowledge institutions, e.g. SEGES, Innovation Center for Organic Agriculture and others. Furthermore, cooperation with the national “cluster organisations” is expected, e.g. Food & Bio Cluster Denmark, as well as business organizations and interest organisations.
 
 Related actions:
-All actions under the “Climate-friendly food system” is closely related to each other. In addition, demand for coordination and collaboration with other actions in the Climate Plan, especially with the Climate Alliance Aarhus.  |   |
+All actions under the “Climate-friendly food system” is closely related to each other. In addition, demand for coordination and collaboration with other actions in the Climate Plan, especially with the Climate Alliance Aarhus.
 |  Action description | Steps towards change | Co-benefits  |
 |  The transition to a more climate-friendly food system builds on co-creating new, innovative solutions that reduce CO_{2} emissions in companies’ food production, or new products that enable | Formulate presentations to potential collaboration partners stating possible objectives and lighthouse projects based on the | Contributes to a boost of entrepreneurship and local green companies, which in the long run will  |
 
