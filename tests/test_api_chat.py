@@ -7,7 +7,6 @@ import pytest
 from fastapi.testclient import TestClient
 
 from backend.api.main import create_app
-from backend.api.services.context_chat import CHAT_PROMPT_TOKEN_CAP
 from backend.utils.config import (
     AgentConfig,
     AppConfig,
@@ -114,7 +113,7 @@ def test_chat_session_lifecycle(tmp_path: Path, monkeypatch: pytest.MonkeyPatch)
         history: list[dict[str, str]],
         user_content: str,
         config: AppConfig,
-        token_cap: int = CHAT_PROMPT_TOKEN_CAP,
+        token_cap: int = 0,
         citation_catalog: list[dict[str, str]] | None = None,
         retry_missing_citation: bool = False,
         run_id: str | None = None,
@@ -125,7 +124,7 @@ def test_chat_session_lifecycle(tmp_path: Path, monkeypatch: pytest.MonkeyPatch)
         assert isinstance(contexts[0].get("context_bundle"), dict)
         assert isinstance(history, list)
         assert config.chat.model == "openai/gpt-5.2"
-        assert token_cap == CHAT_PROMPT_TOKEN_CAP
+        assert token_cap == config.chat.max_context_total_tokens
         assert isinstance(citation_catalog, list)
         assert isinstance(retry_missing_citation, bool)
         assert run_id == "run-chat"
@@ -182,7 +181,7 @@ def test_chat_session_lifecycle(tmp_path: Path, monkeypatch: pytest.MonkeyPatch)
         assert session_contexts.status_code == 200
         session_contexts_payload = session_contexts.json()
         assert session_contexts_payload["context_run_ids"] == ["run-chat"]
-        assert session_contexts_payload["token_cap"] == CHAT_PROMPT_TOKEN_CAP
+        assert session_contexts_payload["token_cap"] == 220_000
         assert session_contexts_payload["total_tokens"] > 0
 
         update_contexts = client.put(
@@ -249,7 +248,7 @@ def test_chat_supports_header_api_key_override(
         history: list[dict[str, str]],
         user_content: str,
         config: AppConfig,
-        token_cap: int = CHAT_PROMPT_TOKEN_CAP,
+        token_cap: int = 0,
         api_key_override: str | None = None,
         citation_catalog: list[dict[str, str]] | None = None,
         retry_missing_citation: bool = False,
@@ -380,7 +379,7 @@ def test_chat_builds_prompt_safe_citation_catalog_and_persists_mapping(
         history: list[dict[str, str]],
         user_content: str,
         config: AppConfig,
-        token_cap: int = CHAT_PROMPT_TOKEN_CAP,
+        token_cap: int = 0,
         citation_catalog: list[dict[str, str]] | None = None,
         retry_missing_citation: bool = False,
         run_id: str | None = None,
@@ -389,7 +388,7 @@ def test_chat_builds_prompt_safe_citation_catalog_and_persists_mapping(
         assert isinstance(contexts, list) and contexts
         assert isinstance(history, list)
         assert config.chat.model == "openai/gpt-5.2"
-        assert token_cap == CHAT_PROMPT_TOKEN_CAP
+        assert token_cap == config.chat.max_context_total_tokens
         assert isinstance(citation_catalog, list) and citation_catalog
         captured_catalog[:] = citation_catalog
         assert not retry_missing_citation
@@ -474,7 +473,7 @@ def test_chat_retries_once_when_first_reply_has_no_valid_citations(
         history: list[dict[str, str]],
         user_content: str,
         config: AppConfig,
-        token_cap: int = CHAT_PROMPT_TOKEN_CAP,
+        token_cap: int = 0,
         citation_catalog: list[dict[str, str]] | None = None,
         retry_missing_citation: bool = False,
         run_id: str | None = None,

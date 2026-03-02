@@ -53,6 +53,9 @@ class BenchmarkQuestionResult:
     repetition: int
     question: str
     run_id: str
+    success: bool
+    error_type: str
+    error_message: str
     runtime_seconds: float
     tokens_per_second: float
     llm_calls: int
@@ -219,8 +222,17 @@ def _compute_runtime_seconds(started_at: str, completed_at: str) -> float:
     """Compute wall-clock runtime from ISO timestamps."""
     if not started_at or not completed_at:
         return 0.0
-    started = datetime.fromisoformat(started_at)
-    completed = datetime.fromisoformat(completed_at)
+    started_text = str(started_at).strip()
+    completed_text = str(completed_at).strip()
+    if not started_text or not completed_text:
+        return 0.0
+    if started_text.casefold() == "none" or completed_text.casefold() == "none":
+        return 0.0
+    try:
+        started = datetime.fromisoformat(started_text)
+        completed = datetime.fromisoformat(completed_text)
+    except ValueError:
+        return 0.0
     return max((completed - started).total_seconds(), 0.0)
 
 
@@ -303,12 +315,99 @@ def _collect_llm_issue_counts(run_text_log: Path) -> dict[str, int]:
     return counts
 
 
+def _load_run_log_json(path: Path) -> dict[str, object]:
+    """Load run.json payload when present, otherwise return an empty mapping."""
+    if not path.exists():
+        return {}
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {}
+    if isinstance(payload, dict):
+        return payload
+    return {}
+
+
+def _build_failed_result(
+    *,
+    mode_name: str,
+    markdown_config: BenchmarkMarkdownConfig,
+    question: str,
+    repetition: int,
+    run_id: str,
+    run_dir: Path,
+    error: Exception,
+) -> BenchmarkQuestionResult:
+    """Build a benchmark result row for a failed run and retain issue counters."""
+    run_log_json_path = run_dir / "run.json"
+    run_text_log_path = run_dir / "run.log"
+    run_summary_path = run_dir / "run_summary.txt"
+    final_output_path = run_dir / "final.md"
+
+    run_log = _load_run_log_json(run_log_json_path)
+    usage = run_log.get("llm_usage", {})
+    totals = usage.get("totals", {})
+    inputs = run_log.get("inputs", {})
+    runtime_seconds = _compute_runtime_seconds(
+        str(run_log.get("started_at", "")),
+        str(run_log.get("completed_at", "")),
+    )
+    total_tokens = int(totals.get("total_tokens", 0))
+    tokens_per_second = (float(total_tokens) / runtime_seconds) if runtime_seconds > 0 else 0.0
+
+    issue_counts = _collect_llm_issue_counts(run_text_log_path)
+    exception_text = f"{type(error).__name__}: {error}"
+    if sum(issue_counts.values()) == 0:
+        if _has_rate_limit_signal(exception_text):
+            issue_counts["rate_limit_count"] += 1
+        else:
+            issue_counts["not_working_count"] += 1
+        if re.search(r"\b[45]\d{2}\b", exception_text):
+            issue_counts["http_error_count"] += 1
+
+    rate_limit_count = int(issue_counts["rate_limit_count"])
+    not_working_count = int(issue_counts["not_working_count"])
+
+    return BenchmarkQuestionResult(
+        mode=mode_name,
+        markdown_config=markdown_config.name,
+        batch_max_chunks=int(markdown_config.batch_max_chunks),
+        max_workers=int(markdown_config.max_workers),
+        repetition=repetition,
+        question=question,
+        run_id=str(run_log.get("run_id", run_id)),
+        success=False,
+        error_type=type(error).__name__,
+        error_message=str(error),
+        runtime_seconds=runtime_seconds,
+        tokens_per_second=tokens_per_second,
+        llm_calls=int(usage.get("calls", 0)),
+        total_tokens=total_tokens,
+        input_tokens=int(totals.get("input_tokens", 0)),
+        output_tokens=int(totals.get("output_tokens", 0)),
+        llm_issue_total=rate_limit_count + not_working_count,
+        llm_not_working_count=not_working_count,
+        llm_rate_limit_count=rate_limit_count,
+        llm_http_error_count=int(issue_counts["http_error_count"]),
+        llm_retry_exhausted_count=int(issue_counts["retry_exhausted_count"]),
+        llm_max_turns_count=int(issue_counts["max_turns_count"]),
+        llm_bad_output_count=int(issue_counts["bad_output_count"]),
+        markdown_chunk_count=int(inputs.get("markdown_chunk_count", 0)),
+        markdown_excerpt_count=int(inputs.get("markdown_excerpt_count", 0)),
+        markdown_source_mode=str(inputs.get("markdown_source_mode", "unknown")),
+        final_output_path=str(final_output_path),
+        run_summary_path=str(run_summary_path),
+        run_log_path=str(run_log_json_path),
+    )
+
+
 def _run_mode_question(
     mode_name: str,
     markdown_config: BenchmarkMarkdownConfig,
     question: str,
     repetition: int,
     run_index: int,
+    run_id: str,
     config_path: Path,
     docs_dir: Path,
     runs_dir: Path,
@@ -328,10 +427,6 @@ def _run_mode_question(
             1,
         )
         config.markdown_researcher.max_workers = max(int(markdown_config.max_workers), 1)
-        run_id = (
-            f"{mode_name}_{markdown_config.name}_"
-            f"r{repetition:02d}_q{run_index:02d}_{_timestamp_slug()}"
-        )
         pipeline_kwargs: dict[str, object] = {
             "question": question,
             "config": config,
@@ -366,6 +461,9 @@ def _run_mode_question(
         repetition=repetition,
         question=question,
         run_id=run_log.get("run_id", run_id),
+        success=True,
+        error_type="",
+        error_message="",
         runtime_seconds=runtime_seconds,
         tokens_per_second=tokens_per_second,
         llm_calls=int(usage.get("calls", 0)),
@@ -392,20 +490,30 @@ def _summarize_result_rows(
     mode_results: list[BenchmarkQuestionResult],
 ) -> dict[str, float]:
     """Aggregate means/medians for a homogeneous group of benchmark runs."""
-    runtimes = [row.runtime_seconds for row in mode_results]
-    tokens = [float(row.total_tokens) for row in mode_results]
-    tokens_per_second = [row.tokens_per_second for row in mode_results]
-    excerpts = [float(row.markdown_excerpt_count) for row in mode_results]
-    chunks = [float(row.markdown_chunk_count) for row in mode_results]
+    successful_runs = [row for row in mode_results if row.success]
+    sample_rows = successful_runs if successful_runs else mode_results
+    runtimes = [row.runtime_seconds for row in sample_rows]
+    tokens = [float(row.total_tokens) for row in sample_rows]
+    tokens_per_second = [row.tokens_per_second for row in sample_rows]
+    excerpts = [float(row.markdown_excerpt_count) for row in sample_rows]
+    chunks = [float(row.markdown_chunk_count) for row in sample_rows]
     llm_issues = [float(row.llm_issue_total) for row in mode_results]
     llm_rate_limits = [float(row.llm_rate_limit_count) for row in mode_results]
     llm_not_working = [float(row.llm_not_working_count) for row in mode_results]
     llm_retry_exhausted = [float(row.llm_retry_exhausted_count) for row in mode_results]
     llm_max_turns = [float(row.llm_max_turns_count) for row in mode_results]
     runs_with_issues = float(sum(1 for row in mode_results if row.llm_issue_total > 0))
+    runs_total = len(mode_results)
+    runs_succeeded = len(successful_runs)
+    runs_failed = runs_total - runs_succeeded
 
     return {
-        "runs": float(len(mode_results)),
+        "runs": float(runs_total),
+        "runs_succeeded": float(runs_succeeded),
+        "runs_failed": float(runs_failed),
+        "success_rate": (
+            float(runs_succeeded) / float(runs_total) if runs_total > 0 else 0.0
+        ),
         "runtime_seconds_mean": statistics.fmean(runtimes),
         "runtime_seconds_median": statistics.median(runtimes),
         "total_tokens_mean": statistics.fmean(tokens),
@@ -484,6 +592,9 @@ def _write_markdown_report(path: Path, report: BenchmarkReport) -> None:
                 f"- Batch max chunks: {int(metrics['batch_max_chunks'])}",
                 f"- Max workers: {int(metrics['max_workers'])}",
                 f"- Runs: {int(metrics['runs'])}",
+                f"- Successful runs: {int(metrics['runs_succeeded'])}",
+                f"- Failed runs: {int(metrics['runs_failed'])}",
+                f"- Success rate: {metrics['success_rate']:.2%}",
                 f"- Runtime mean (s): {metrics['runtime_seconds_mean']:.2f}",
                 f"- Runtime median (s): {metrics['runtime_seconds_median']:.2f}",
                 f"- Tokens/sec mean: {metrics['tokens_per_second_mean']:.2f}",
@@ -508,6 +619,9 @@ def _write_markdown_report(path: Path, report: BenchmarkReport) -> None:
                 f"### {mode_name}",
                 "",
                 f"- Runs: {int(metrics['runs'])}",
+                f"- Successful runs: {int(metrics['runs_succeeded'])}",
+                f"- Failed runs: {int(metrics['runs_failed'])}",
+                f"- Success rate: {metrics['success_rate']:.2%}",
                 f"- Runtime mean (s): {metrics['runtime_seconds_mean']:.2f}",
                 f"- Runtime median (s): {metrics['runtime_seconds_median']:.2f}",
                 f"- Tokens/sec mean: {metrics['tokens_per_second_mean']:.2f}",
@@ -554,6 +668,7 @@ def _write_markdown_report(path: Path, report: BenchmarkReport) -> None:
                     f"- Mode={result.mode} config={result.markdown_config} "
                     f"batch={result.batch_max_chunks} workers={result.max_workers} "
                     f"rep={result.repetition} run_id={result.run_id} "
+                    f"status={'ok' if result.success else 'failed'} "
                     f"runtime={result.runtime_seconds:.2f}s "
                     f"tokens={result.total_tokens} tokens_per_s={result.tokens_per_second:.2f} "
                     f"issues={result.llm_issue_total} rate_limit={result.llm_rate_limit_count} "
@@ -564,6 +679,10 @@ def _write_markdown_report(path: Path, report: BenchmarkReport) -> None:
                 f"  - Run summary: {result.run_summary_path}",
             ]
         )
+        if not result.success:
+            lines.append(
+                f"  - Error: {result.error_type}: {result.error_message}"
+            )
     if report.judge_results:
         lines.extend(["", "## Judge run details", ""])
         for row in report.judge_results:
@@ -589,6 +708,14 @@ def _build_judge_pairs(
     """Pair standard and vector outputs by question+repetition+markdown config."""
     by_key: dict[tuple[str, int, str], dict[str, BenchmarkQuestionResult]] = {}
     for result in results:
+        if not result.success:
+            continue
+        if not Path(result.final_output_path).exists():
+            logger.warning(
+                "Skipping judge candidate with missing final output file: %s",
+                result.final_output_path,
+            )
+            continue
         key = (result.question, result.repetition, result.markdown_config)
         slot = by_key.setdefault(key, {})
         slot[result.mode] = result
@@ -647,18 +774,27 @@ def _run_benchmark_judging(
     ties_by_mode_config: dict[str, int] = {}
 
     for left, right in pairs:
-        left_text = Path(left.final_output_path).read_text(encoding="utf-8")
-        right_text = Path(right.final_output_path).read_text(encoding="utf-8")
-        evaluation: BenchmarkJudgeEvaluation = judge_final_outputs(
-            question=left.question,
-            left_label=left.mode,
-            left_text=left_text,
-            right_label=right.mode,
-            right_text=right_text,
-            config=config,
-            api_key=api_key,
-            log_llm_payload=log_llm_payload,
-        )
+        try:
+            left_text = Path(left.final_output_path).read_text(encoding="utf-8")
+            right_text = Path(right.final_output_path).read_text(encoding="utf-8")
+            evaluation: BenchmarkJudgeEvaluation = judge_final_outputs(
+                question=left.question,
+                left_label=left.mode,
+                left_text=left_text,
+                right_label=right.mode,
+                right_text=right_text,
+                config=config,
+                api_key=api_key,
+                log_llm_payload=log_llm_payload,
+            )
+        except Exception:  # noqa: BLE001
+            logger.exception(
+                "Judge evaluation failed question=%s repetition=%d config=%s",
+                left.question,
+                left.repetition,
+                left.markdown_config,
+            )
+            continue
         left_mode_config = _mode_config_key(left.mode, left.markdown_config)
         right_mode_config = _mode_config_key(right.mode, right.markdown_config)
         scores_by_mode[left.mode].append(float(evaluation.left.total_score))
@@ -769,32 +905,55 @@ def run_retrieval_strategy_benchmark(
                     env_overrides = _load_env_overrides(mode.env_files)
                     mode_runs_dir = benchmark_root / "runs" / mode.name
                     mode_runs_dir.mkdir(parents=True, exist_ok=True)
+                    run_id = (
+                        f"{mode.name}_{markdown_config.name}_"
+                        f"r{repetition:02d}_q{question_index:02d}_{_timestamp_slug()}"
+                    )
                     logger.info(
                         (
-                            "Benchmark run mode=%s config=%s batch=%d workers=%d "
+                            "Benchmark run mode=%s config=%s batch=%d workers=%d run_id=%s "
                             "repetition=%d question_index=%d"
                         ),
                         mode.name,
                         markdown_config.name,
                         markdown_config.batch_max_chunks,
                         markdown_config.max_workers,
+                        run_id,
                         repetition,
                         question_index,
                     )
-                    result = _run_mode_question(
-                        mode_name=mode.name,
-                        markdown_config=markdown_config,
-                        question=question,
-                        repetition=repetition,
-                        run_index=question_index,
-                        config_path=config_path,
-                        docs_dir=docs_dir,
-                        runs_dir=mode_runs_dir,
-                        selected_cities=selected_cities,
-                        log_llm_payload=log_llm_payload,
-                        env_overrides=env_overrides,
-                        refine_question_func=fixed_refiner,
-                    )
+                    try:
+                        result = _run_mode_question(
+                            mode_name=mode.name,
+                            markdown_config=markdown_config,
+                            question=question,
+                            repetition=repetition,
+                            run_index=question_index,
+                            run_id=run_id,
+                            config_path=config_path,
+                            docs_dir=docs_dir,
+                            runs_dir=mode_runs_dir,
+                            selected_cities=selected_cities,
+                            log_llm_payload=log_llm_payload,
+                            env_overrides=env_overrides,
+                            refine_question_func=fixed_refiner,
+                        )
+                    except Exception as exc:  # noqa: BLE001
+                        logger.exception(
+                            "Benchmark run failed mode=%s config=%s run_id=%s",
+                            mode.name,
+                            markdown_config.name,
+                            run_id,
+                        )
+                        result = _build_failed_result(
+                            mode_name=mode.name,
+                            markdown_config=markdown_config,
+                            question=question,
+                            repetition=repetition,
+                            run_id=run_id,
+                            run_dir=mode_runs_dir / run_id,
+                            error=exc,
+                        )
                     results.append(result)
 
     mode_summary = _summarize_mode(results)

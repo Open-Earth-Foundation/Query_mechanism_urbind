@@ -381,6 +381,13 @@ def build_markdown_index(
     settings = get_vector_store_settings(config)
     project_root = Path.cwd()
     files = _iter_markdown_files(docs_dir, selected_cities=selected_cities)
+    total_files = len(files)
+    logger.info(
+        "Index build started docs_total=%d docs_dir=%s dry_run=%s",
+        total_files,
+        docs_dir,
+        dry_run,
+    )
 
     manifest = {"files": {}}
     mark_manifest_updated(
@@ -392,7 +399,7 @@ def build_markdown_index(
     all_chunks: list[IndexedChunk] = []
     files_indexed = 0
 
-    for file_path in files:
+    for index, file_path in enumerate(files, start=1):
         file_hash, chunks = _build_indexed_chunks_for_file(file_path, settings, project_root)
         source_path = _source_path(file_path, project_root)
         _apply_manifest_file_entry(
@@ -403,6 +410,13 @@ def build_markdown_index(
         )
         all_chunks.extend(chunks)
         files_indexed += 1
+        logger.info(
+            "Index build progress documents=%d/%d source=%s chunks=%d",
+            index,
+            total_files,
+            source_path,
+            len(chunks),
+        )
 
     if chunks_dump_path is not None and all_chunks:
         payload = [
@@ -418,6 +432,10 @@ def build_markdown_index(
 
     embedded_chunks: list[IndexedChunk] = []
     if all_chunks and not dry_run:
+        logger.info(
+            "Index build embedding started chunks_total=%d",
+            len(all_chunks),
+        )
         provider = OpenAIEmbeddingProvider(
             model=settings.embedding_model,
             base_url=config.openrouter_base_url,
@@ -432,12 +450,25 @@ def build_markdown_index(
             provider,
             operation_name="Index build",
         )
+        logger.info(
+            "Index build embedding finished chunks_total=%d",
+            len(embedded_chunks),
+        )
     if not dry_run:
+        logger.info(
+            "Index build persist started collection=%s persist_path=%s",
+            settings.collection_name,
+            settings.persist_path,
+        )
         store = ChromaStore(settings.persist_path, settings.collection_name)
         store.reset_collection()
         if embedded_chunks:
             store.upsert(embedded_chunks)
         save_manifest(settings.manifest_path, manifest)
+        logger.info(
+            "Index build persist finished manifest_path=%s",
+            settings.manifest_path,
+        )
 
     min_tokens, avg_tokens, max_tokens = _collect_token_stats(all_chunks)
     table_chunks = len(
@@ -477,6 +508,13 @@ def update_markdown_index(
 
     current_files = _iter_markdown_files(docs_dir, selected_cities=selected_cities)
     current_source_map = {_source_path(path, project_root): path for path in current_files}
+    total_files = len(current_source_map)
+    logger.info(
+        "Index update started docs_total=%d docs_dir=%s dry_run=%s",
+        total_files,
+        docs_dir,
+        dry_run,
+    )
 
     changed_chunks: list[IndexedChunk] = []
     files_changed = 0
@@ -485,12 +523,18 @@ def update_markdown_index(
     changed_entries: dict[str, tuple[str, list[str]]] = {}
     previous_ids_by_source: dict[str, list[str]] = {}
 
-    for source_path, file_path in current_source_map.items():
+    for index, (source_path, file_path) in enumerate(current_source_map.items(), start=1):
         content = file_path.read_text(encoding="utf-8")
         current_hash = compute_file_hash(content)
         previous = files_section.get(source_path)
         if previous and previous.get("file_hash") == current_hash:
             files_unchanged += 1
+            logger.info(
+                "Index update progress documents=%d/%d source=%s status=unchanged",
+                index,
+                total_files,
+                source_path,
+            )
             continue
 
         previous_chunk_ids = (
@@ -503,6 +547,13 @@ def update_markdown_index(
         previous_ids_by_source[source_path] = [str(chunk_id) for chunk_id in previous_chunk_ids]
         changed_chunks.extend(chunks)
         files_changed += 1
+        logger.info(
+            "Index update progress documents=%d/%d source=%s status=changed chunks=%d",
+            index,
+            total_files,
+            source_path,
+            len(chunks),
+        )
 
     current_source_keys = set(current_source_map.keys())
     if selected_cities:

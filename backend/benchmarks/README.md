@@ -39,5 +39,7 @@ If a key appears in both, the mode-specific value wins.
   standard-vs-vector pair on the same question/repetition/markdown option.
 - Benchmark report includes speed metrics (runtime + tokens/sec) and LLM issue
   counters (rate limits, retry exhausted, max-turns, and non-working calls).
+- Failed runs are kept in the report with error details and issue counters, and
+  benchmark execution continues with remaining runs.
 - For ad-hoc comparison of two files, use:
   `python -m backend.scripts.judge_final_outputs --left-final <path_a> --right-final <path_b> --question "..."`

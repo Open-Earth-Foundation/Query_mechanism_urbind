@@ -76,12 +76,24 @@ metadata:
     app: urbind-query-mechanism-build-vector-index
 spec:
   ttlSecondsAfterFinished: 86400
-  backoffLimit: 0
+  # Allow retries when nodes are disrupted during long index builds.
+  backoffLimit: 3
+  # Required alongside podFailurePolicy on this cluster.
+  podReplacementPolicy: Failed
+  # Ignore disruption-target failures (evictions/drains) so they do not consume retries.
+  podFailurePolicy:
+    rules:
+      - action: Ignore
+        onPodConditions:
+          - type: DisruptionTarget
   activeDeadlineSeconds: 3600
   template:
     metadata:
       labels:
         app: urbind-query-mechanism-build-vector-index
+      annotations:
+        # Ask Karpenter not to voluntarily disrupt this long-running one-off job.
+        karpenter.sh/do-not-disrupt: "true"
     spec:
       restartPolicy: Never
       automountServiceAccountToken: false
@@ -134,10 +146,10 @@ spec:
           resources:
             requests:
               cpu: "500m"
-              memory: "2Gi"
+              memory: "12Gi"
             limits:
-              cpu: "2000m"
-              memory: "4Gi"
+              cpu: "1000m"
+              memory: "16Gi"
       volumes:
         - name: output-volume
           persistentVolumeClaim:

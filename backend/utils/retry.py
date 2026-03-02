@@ -9,8 +9,7 @@ from typing import Callable, TypeVar
 
 logger = logging.getLogger(__name__)
 
-T = TypeVar("T")
-DEFAULT_MAX_ATTEMPTS = 5
+T = TypeVar("T")  # Generic type variable for call_with_retries; allows the function to work with any return type while preserving type safety
 
 
 @dataclass(frozen=True)
@@ -170,7 +169,6 @@ def call_with_retries(
 
 
 __all__ = [
-    "DEFAULT_MAX_ATTEMPTS",
     "RetrySettings",
     "compute_retry_delay_seconds",
     "log_retry_event",

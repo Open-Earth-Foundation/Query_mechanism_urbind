@@ -4,13 +4,13 @@ from __future__ import annotations
 
 import json
 import logging
-import os
 import re
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any
+from typing import Any, cast
 
 from openai import APIConnectionError, APIStatusError, APITimeoutError, OpenAI
+from openai.types.chat import ChatCompletionMessageParam
 
 from backend.tools.calculator import sum_numbers
 from backend.utils.retry import RetrySettings, call_with_retries
@@ -19,133 +19,14 @@ from backend.utils.tokenization import count_tokens, get_encoding
 
 logger = logging.getLogger(__name__)
 
-MAX_CHAT_CONTEXT_TOTAL_TOKENS = 220_000
-DEFAULT_CHAT_PROMPT_TOKEN_CAP = MAX_CHAT_CONTEXT_TOTAL_TOKENS
-MIN_CHAT_PROMPT_TOKEN_CAP = 20_000
-CHAT_PROMPT_TOKEN_CAP_ENV = "CHAT_PROMPT_TOKEN_CAP"
-DEFAULT_CHAT_PROVIDER_TIMEOUT_SECONDS = 50.0
-CHAT_PROVIDER_TIMEOUT_SECONDS_ENV = "CHAT_PROVIDER_TIMEOUT_SECONDS"
-CHAT_PROMPT_TOKEN_BUFFER = 2_000
-MIN_CONTEXT_SECTION_TOKENS = 1_200
-CHAT_CONTEXT_CHUNK_TARGET_TOKENS = 1_200
-CHAT_CONTEXT_CHUNK_OVERLAP_TOKENS = 200
-CHAT_CONTEXT_MAX_CHUNKS_PER_SOURCE = 24
-CHAT_CONTEXT_BASE_CHUNKS_PER_RUN = 2
 CHAT_CALCULATOR_TOOL_NAME = "sum_numbers"
 CHAT_REF_ID_PATTERN = re.compile(r"^ref_[1-9]\d*$")
-CHAT_TERM_PATTERN = re.compile(r"[A-Za-z0-9_]{3,}")
-CHAT_STOPWORDS = frozenset(
-    {
-        "about",
-        "after",
-        "again",
-        "all",
-        "also",
-        "and",
-        "any",
-        "are",
-        "been",
-        "before",
-        "between",
-        "but",
-        "can",
-        "for",
-        "from",
-        "has",
-        "have",
-        "how",
-        "into",
-        "its",
-        "more",
-        "not",
-        "now",
-        "only",
-        "our",
-        "out",
-        "over",
-        "same",
-        "some",
-        "than",
-        "that",
-        "the",
-        "their",
-        "them",
-        "there",
-        "these",
-        "they",
-        "this",
-        "those",
-        "use",
-        "using",
-        "what",
-        "when",
-        "where",
-        "which",
-        "with",
-        "would",
-        "your",
-    }
-)
 
 
-def _resolve_chat_prompt_token_cap() -> int:
-    """Resolve chat prompt token cap from environment with safe bounds."""
-    raw_value = os.getenv(CHAT_PROMPT_TOKEN_CAP_ENV, "").strip()
-    if not raw_value:
-        return DEFAULT_CHAT_PROMPT_TOKEN_CAP
+def resolve_chat_token_cap(config: AppConfig) -> int:
+    """Return the token cap for chat prompts from config."""
+    return config.chat.max_context_total_tokens
 
-    try:
-        parsed = int(raw_value)
-    except ValueError:
-        logger.warning(
-            "Invalid %s=%r; using default %d",
-            CHAT_PROMPT_TOKEN_CAP_ENV,
-            raw_value,
-            DEFAULT_CHAT_PROMPT_TOKEN_CAP,
-        )
-        return DEFAULT_CHAT_PROMPT_TOKEN_CAP
-
-    if parsed < MIN_CHAT_PROMPT_TOKEN_CAP:
-        logger.warning(
-            "%s=%d is below minimum %d; using minimum.",
-            CHAT_PROMPT_TOKEN_CAP_ENV,
-            parsed,
-            MIN_CHAT_PROMPT_TOKEN_CAP,
-        )
-        return MIN_CHAT_PROMPT_TOKEN_CAP
-    if parsed > MAX_CHAT_CONTEXT_TOTAL_TOKENS:
-        logger.warning(
-            "%s=%d exceeds hard maximum %d; using hard maximum.",
-            CHAT_PROMPT_TOKEN_CAP_ENV,
-            parsed,
-            MAX_CHAT_CONTEXT_TOTAL_TOKENS,
-        )
-        return MAX_CHAT_CONTEXT_TOTAL_TOKENS
-    return parsed
-
-
-CHAT_PROMPT_TOKEN_CAP = _resolve_chat_prompt_token_cap()
-
-
-def _resolve_chat_provider_timeout_seconds() -> float:
-    """Resolve provider timeout from environment with safe minimum."""
-    raw_value = os.getenv(CHAT_PROVIDER_TIMEOUT_SECONDS_ENV, "").strip()
-    if not raw_value:
-        return DEFAULT_CHAT_PROVIDER_TIMEOUT_SECONDS
-    try:
-        parsed = float(raw_value)
-    except ValueError:
-        logger.warning(
-            "Invalid %s=%r; using default %.1f",
-            CHAT_PROVIDER_TIMEOUT_SECONDS_ENV,
-            raw_value,
-            DEFAULT_CHAT_PROVIDER_TIMEOUT_SECONDS,
-        )
-        return DEFAULT_CHAT_PROVIDER_TIMEOUT_SECONDS
-    return max(5.0, parsed)
-
-
-CHAT_PROVIDER_TIMEOUT_SECONDS = _resolve_chat_provider_timeout_seconds()
 
 CHAT_TOOL_DEFINITIONS: list[dict[str, object]] = [
     {
@@ -199,18 +80,19 @@ def generate_context_chat_reply(
     history: list[dict[str, str]],
     user_content: str,
     config: AppConfig,
-    token_cap: int = CHAT_PROMPT_TOKEN_CAP,
+    token_cap: int = 0,
     api_key_override: str | None = None,
     citation_catalog: list[dict[str, str]] | None = None,
     retry_missing_citation: bool = False,
     run_id: str | None = None,
 ) -> str:
     """Generate assistant reply grounded in selected run contexts."""
-    requested_token_cap = int(token_cap)
+    resolved_cap = int(token_cap) if token_cap > 0 else resolve_chat_token_cap(config)
     effective_token_cap = max(
-        MIN_CHAT_PROMPT_TOKEN_CAP,
-        min(requested_token_cap, MAX_CHAT_CONTEXT_TOTAL_TOKENS),
+        config.chat.min_prompt_token_cap,
+        min(resolved_cap, config.chat.max_context_total_tokens),
     )
+    timeout = config.chat.provider_timeout_seconds
 
     api_key = (
         api_key_override.strip()
@@ -220,7 +102,7 @@ def generate_context_chat_reply(
     client = OpenAI(
         api_key=api_key,
         base_url=config.openrouter_base_url,
-        timeout=CHAT_PROVIDER_TIMEOUT_SECONDS,
+        timeout=timeout,
     )
 
     normalized_contexts = _normalize_contexts(contexts)
@@ -239,76 +121,8 @@ def generate_context_chat_reply(
         original_question=original_question,
         retry_missing_citation=retry_missing_citation,
     )
-    if normalized_citations:
-        context_block = _build_fitted_citation_context_block(
-            citation_catalog=normalized_citations,
-            prompt_header=prompt_header,
-            history=bounded_history,
-            user_content=user_content,
-            token_cap=effective_token_cap,
-        )
-        included_context_ids = [context.run_id for context in normalized_contexts]
-        excluded_context_ids: list[str] = []
-    else:
-        context_budget = _compute_context_budget(
-            prompt_header=prompt_header,
-            history=bounded_history,
-            user_content=user_content,
-            token_cap=effective_token_cap,
-        )
-        query_focus = _build_query_focus_text(user_content, bounded_history)
-        context_block, included_context_ids, excluded_context_ids = _render_context_block(
-            normalized_contexts,
-            context_budget,
-            query_focus,
-        )
-    system_prompt = _compose_system_prompt(prompt_header, context_block)
 
-    messages = _build_messages(system_prompt, bounded_history, user_content)
-    while _estimate_messages_tokens(messages) > effective_token_cap and bounded_history:
-        bounded_history = bounded_history[1:]
-        if normalized_citations:
-            context_block = _build_fitted_citation_context_block(
-                citation_catalog=normalized_citations,
-                prompt_header=prompt_header,
-                history=bounded_history,
-                user_content=user_content,
-                token_cap=effective_token_cap,
-            )
-            system_prompt = _compose_system_prompt(prompt_header, context_block)
-        messages = _build_messages(system_prompt, bounded_history, user_content)
-
-    if _estimate_messages_tokens(messages) > effective_token_cap and normalized_citations:
-        context_block = _build_fitted_citation_context_block(
-            citation_catalog=normalized_citations,
-            prompt_header=prompt_header,
-            history=bounded_history,
-            user_content=user_content,
-            token_cap=effective_token_cap,
-        )
-        system_prompt = _compose_system_prompt(prompt_header, context_block)
-        messages = _build_messages(system_prompt, bounded_history, user_content)
-
-    if _estimate_messages_tokens(messages) > effective_token_cap:
-        fixed_tokens = _estimate_messages_tokens(
-            [{"role": "user", "content": user_content}] + bounded_history
-        )
-        max_system_tokens = max(
-            effective_token_cap - fixed_tokens - CHAT_PROMPT_TOKEN_BUFFER,
-            2_000,
-        )
-        system_prompt = _truncate_to_tokens(system_prompt, max_system_tokens)
-        messages = _build_messages(system_prompt, bounded_history, user_content)
-
-    estimated_prompt_tokens = _estimate_messages_tokens(messages)
-    if estimated_prompt_tokens > effective_token_cap:
-        raise ValueError(
-            "Chat context exceeds token budget after trimming "
-            f"({estimated_prompt_tokens} > {effective_token_cap}). "
-            "Reduce selected contexts or shorten history/messages."
-        )
-
-    base_request_kwargs: dict[str, object] = {
+    base_request_kwargs: dict[str, Any] = {
         "model": config.chat.model,
         "temperature": float(config.chat.temperature),
         "tools": CHAT_TOOL_DEFINITIONS,
@@ -319,49 +133,111 @@ def generate_context_chat_reply(
     if config.chat.max_output_tokens is not None:
         base_request_kwargs["max_tokens"] = config.chat.max_output_tokens
 
-    logger.info(
-        "Context chat request model=%s contexts=%s excluded=%s "
-        "estimated_prompt_tokens=%d token_cap=%d effective_token_cap=%d",
-        config.chat.model,
-        included_context_ids,
-        excluded_context_ids,
-        estimated_prompt_tokens,
-        requested_token_cap,
-        effective_token_cap,
-    )
     retry_settings = RetrySettings.bounded(
         max_attempts=config.retry.max_attempts,
         backoff_base_seconds=config.retry.backoff_base_seconds,
         backoff_max_seconds=config.retry.backoff_max_seconds,
     )
 
-    response = call_with_retries(
-        lambda: _run_chat_completion_with_tools(
+    included_context_ids = [context.run_id for context in normalized_contexts]
+
+    if normalized_citations:
+        context_block = _build_fitted_citation_context_block(
+            citation_catalog=normalized_citations,
+            prompt_header=prompt_header,
+            history=bounded_history,
+            user_content=user_content,
+            token_cap=effective_token_cap,
+            prompt_token_buffer=config.chat.prompt_token_buffer,
+        )
+        system_prompt = _compose_system_prompt(prompt_header, context_block)
+        messages = _build_messages(system_prompt, bounded_history, user_content)
+        while _estimate_messages_tokens(messages) > effective_token_cap and bounded_history:
+            bounded_history = bounded_history[1:]
+            context_block = _build_fitted_citation_context_block(
+                citation_catalog=normalized_citations,
+                prompt_header=prompt_header,
+                history=bounded_history,
+                user_content=user_content,
+                token_cap=effective_token_cap,
+                prompt_token_buffer=config.chat.prompt_token_buffer,
+            )
+            system_prompt = _compose_system_prompt(prompt_header, context_block)
+            messages = _build_messages(system_prompt, bounded_history, user_content)
+        estimated_prompt_tokens = _estimate_messages_tokens(messages)
+        if estimated_prompt_tokens > effective_token_cap:
+            raise ValueError(
+                "Chat context exceeds token budget after trimming "
+                f"({estimated_prompt_tokens} > {effective_token_cap}). "
+                "Reduce selected contexts or shorten history/messages."
+            )
+        logger.info(
+            "Context chat request model=%s contexts=%s estimated_prompt_tokens=%d "
+            "token_cap=%d effective_token_cap=%d",
+            config.chat.model,
+            included_context_ids,
+            estimated_prompt_tokens,
+            resolved_cap,
+            effective_token_cap,
+        )
+        return _run_single_pass(
             client=client,
             messages=messages,
             request_kwargs=base_request_kwargs,
-            max_tool_rounds=retry_settings.max_attempts,
-        ),
-        operation="chat.completion",
-        retry_settings=retry_settings,
-        should_retry=_is_retryable_chat_error,
-        run_id=run_id,
-        context={"context_count": len(included_context_ids)},
+            retry_settings=retry_settings,
+            run_id=run_id,
+            context_count=len(included_context_ids),
+        )
+
+    serialized_contexts = _serialize_all_contexts(normalized_contexts)
+    context_tokens = count_tokens(serialized_contexts)
+    logger.info(
+        "Context chat request model=%s contexts=%s context_tokens=%d "
+        "threshold=%d token_cap=%d effective_token_cap=%d",
+        config.chat.model,
+        included_context_ids,
+        context_tokens,
+        config.chat.multi_pass_threshold_tokens,
+        resolved_cap,
+        effective_token_cap,
     )
-    if not response.choices:
-        raise ValueError("Chat model returned no choices.")
-    message = response.choices[0].message
-    content = message.content or ""
-    if isinstance(content, list):
-        text_parts = []
-        for part in content:
-            if hasattr(part, "text") and isinstance(part.text, str):
-                text_parts.append(part.text)
-        content = "".join(text_parts)
-    cleaned = str(content).strip()
-    if not cleaned:
-        raise ValueError("Chat model returned empty content.")
-    return cleaned
+
+    if context_tokens <= config.chat.multi_pass_threshold_tokens:
+        system_prompt = _compose_system_prompt(prompt_header, serialized_contexts)
+        messages = _build_messages(system_prompt, bounded_history, user_content)
+        while _estimate_messages_tokens(messages) > effective_token_cap and bounded_history:
+            bounded_history = bounded_history[1:]
+            messages = _build_messages(system_prompt, bounded_history, user_content)
+        estimated_prompt_tokens = _estimate_messages_tokens(messages)
+        if estimated_prompt_tokens > effective_token_cap:
+            raise ValueError(
+                f"Chat context exceeds token budget after trimming history "
+                f"({estimated_prompt_tokens} > {effective_token_cap}). "
+                "Reduce selected contexts or shorten messages."
+            )
+        return _run_single_pass(
+            client=client,
+            messages=messages,
+            request_kwargs=base_request_kwargs,
+            retry_settings=retry_settings,
+            run_id=run_id,
+            context_count=len(included_context_ids),
+        )
+
+    return _run_multi_pass(
+        serialized_contexts=serialized_contexts,
+        prompt_header=prompt_header,
+        bounded_history=bounded_history,
+        user_content=user_content,
+        chunk_tokens=config.chat.multi_pass_chunk_tokens,
+        effective_token_cap=effective_token_cap,
+        prompt_token_buffer=config.chat.prompt_token_buffer,
+        client=client,
+        request_kwargs=base_request_kwargs,
+        retry_settings=retry_settings,
+        run_id=run_id,
+        context_count=len(included_context_ids),
+    )
 
 
 def _is_retryable_chat_error(exc: Exception) -> bool:
@@ -371,6 +247,184 @@ def _is_retryable_chat_error(exc: Exception) -> bool:
     if isinstance(exc, APIStatusError):
         return exc.status_code in {408, 409, 425, 429, 500, 502, 503, 504}
     return False
+
+
+def _extract_response_text(response: Any) -> str:
+    """Extract cleaned text content from a chat completion response."""
+    if not response.choices:
+        raise ValueError("Chat model returned no choices.")
+    message = response.choices[0].message
+    content = message.content or ""
+    if isinstance(content, list):
+        content = "".join(
+            part.text for part in content if hasattr(part, "text") and isinstance(part.text, str)
+        )
+    cleaned = str(content).strip()
+    if not cleaned:
+        raise ValueError("Chat model returned empty content.")
+    return cleaned
+
+
+def _run_single_pass(
+    *,
+    client: OpenAI,
+    messages: list[dict[str, Any]],
+    request_kwargs: dict[str, Any],
+    retry_settings: RetrySettings,
+    run_id: str | None,
+    context_count: int,
+) -> str:
+    """Run a single chat completion pass and return the text reply."""
+    response = call_with_retries(
+        lambda: _run_chat_completion_with_tools(
+            client=client,
+            messages=messages,
+            request_kwargs=request_kwargs,
+            max_tool_rounds=retry_settings.max_attempts,
+        ),
+        operation="chat.completion",
+        retry_settings=retry_settings,
+        should_retry=_is_retryable_chat_error,
+        run_id=run_id,
+        context={"context_count": context_count},
+    )
+    return _extract_response_text(response)
+
+
+def _run_multi_pass(
+    *,
+    serialized_contexts: str,
+    prompt_header: str,
+    bounded_history: list[dict[str, str]],
+    user_content: str,
+    chunk_tokens: int,
+    effective_token_cap: int,
+    prompt_token_buffer: int,
+    client: OpenAI,
+    request_kwargs: dict[str, Any],
+    retry_settings: RetrySettings,
+    run_id: str | None,
+    context_count: int,
+) -> str:
+    """Split large context into chunks and refine the answer across multiple passes.
+
+    Pass 1: first chunk → initial answer.
+    Pass 2+: previous answer + next chunk → enhanced answer.
+
+    Chunk size is clamped so that every initial pass fits within effective_token_cap.
+    Enhancement passes additionally truncate previous_answer when needed.
+    """
+    # Compute fixed overhead for an initial pass (no context yet).
+    # This accounts for prompt_header, history, user_content, and message framing.
+    empty_initial_messages = _build_messages(
+        _compose_system_prompt(prompt_header, ""),
+        bounded_history,
+        user_content,
+    )
+    base_overhead = _estimate_messages_tokens(empty_initial_messages) + prompt_token_buffer
+    safe_chunk_tokens = max(1, min(chunk_tokens, effective_token_cap - base_overhead))
+    if safe_chunk_tokens < chunk_tokens:
+        logger.info(
+            "Multi-pass chat: clamping chunk_tokens %d -> %d to fit effective_token_cap=%d",
+            chunk_tokens,
+            safe_chunk_tokens,
+            effective_token_cap,
+        )
+
+    chunks = _split_text_by_tokens(serialized_contexts, safe_chunk_tokens)
+    logger.info(
+        "Multi-pass chat: context split into %d chunks of ~%d tokens each",
+        len(chunks),
+        safe_chunk_tokens,
+    )
+
+    current_answer: str | None = None
+    for pass_index, chunk in enumerate(chunks, start=1):
+        if current_answer is None:
+            system_prompt = _compose_system_prompt(prompt_header, chunk)
+        else:
+            # Compute how many tokens are available for previous_answer in this pass.
+            # Use an empty previous_answer to measure the fixed enhancement overhead.
+            empty_enhancement = _compose_enhancement_prompt(
+                prompt_header=prompt_header,
+                previous_answer="",
+                additional_context=chunk,
+            )
+            empty_enhancement_tokens = _estimate_messages_tokens(
+                _build_messages(empty_enhancement, bounded_history, user_content)
+            )
+            available_for_answer = (
+                effective_token_cap - empty_enhancement_tokens - prompt_token_buffer
+            )
+            if count_tokens(current_answer) > available_for_answer:
+                logger.warning(
+                    "Multi-pass chat pass %d: truncating previous_answer to %d tokens "
+                    "to fit effective_token_cap=%d",
+                    pass_index,
+                    max(0, available_for_answer),
+                    effective_token_cap,
+                )
+                current_answer = _truncate_to_tokens(current_answer, max(0, available_for_answer))
+            system_prompt = _compose_enhancement_prompt(
+                prompt_header=prompt_header,
+                previous_answer=current_answer,
+                additional_context=chunk,
+            )
+
+        messages = _build_messages(system_prompt, bounded_history, user_content)
+        logger.info("Multi-pass chat: running pass %d/%d", pass_index, len(chunks))
+        current_answer = _run_single_pass(
+            client=client,
+            messages=messages,
+            request_kwargs=request_kwargs,
+            retry_settings=retry_settings,
+            run_id=run_id,
+            context_count=context_count,
+        )
+
+    if current_answer is None:
+        raise ValueError("Multi-pass chat produced no answer.")
+    return current_answer
+
+
+def _split_text_by_tokens(value: str, chunk_tokens: int) -> list[str]:
+    """Split text into sequential non-overlapping chunks of ~chunk_tokens tokens."""
+    stripped = value.strip()
+    if not stripped:
+        return []
+    encoding = get_encoding()
+    tokens = encoding.encode(stripped)
+    if len(tokens) <= chunk_tokens:
+        return [stripped]
+    chunks: list[str] = []
+    start = 0
+    while start < len(tokens):
+        end = min(start + chunk_tokens, len(tokens))
+        chunks.append(encoding.decode(tokens[start:end]).strip())
+        start = end
+    return [c for c in chunks if c]
+
+
+def _compose_enhancement_prompt(
+    *,
+    prompt_header: str,
+    previous_answer: str,
+    additional_context: str,
+) -> str:
+    """Build system prompt for a multi-pass enhancement turn."""
+    return (
+        f"{prompt_header}\n\n"
+        "You previously produced the following answer based on partial context data:\n\n"
+        "---\n"
+        f"{previous_answer}\n"
+        "---\n\n"
+        "Below is an additional batch of context data not yet seen. "
+        "Enhance and refine your answer by incorporating the new information. "
+        "Keep everything from the initial answer that remains accurate, "
+        "and add or correct details based on this new data.\n\n"
+        "Additional context sources:\n"
+        f"{additional_context}"
+    )
 
 
 def _normalize_sum_numbers_args(raw_arguments: str | None) -> list[float]:
@@ -390,7 +444,7 @@ def _run_chat_completion_with_tools(
     *,
     client: OpenAI,
     messages: list[dict[str, str]],
-    request_kwargs: dict[str, object],
+    request_kwargs: dict[str, Any],
     max_tool_rounds: int,
 ) -> Any:
     """Execute chat completion and resolve tool calls in-process."""
@@ -398,7 +452,7 @@ def _run_chat_completion_with_tools(
     resolved_max_rounds = max(int(max_tool_rounds), 1)
     for tool_round in range(1, resolved_max_rounds + 1):
         response = client.chat.completions.create(
-            messages=working_messages,
+            messages=cast(list[ChatCompletionMessageParam], working_messages),
             **request_kwargs,
         )
         if not response.choices:
@@ -565,11 +619,12 @@ def _fit_citation_catalog_to_budget(
     history: list[dict[str, str]],
     user_content: str,
     token_cap: int,
+    prompt_token_buffer: int,
 ) -> list[dict[str, str]]:
     """Keep only citation entries that fit the strict prompt budget."""
     fixed_messages = [{"role": "user", "content": user_content}] + history
     fixed_tokens = _estimate_messages_tokens(fixed_messages)
-    strict_budget = token_cap - fixed_tokens - count_tokens(prompt_header) - CHAT_PROMPT_TOKEN_BUFFER
+    strict_budget = token_cap - fixed_tokens - count_tokens(prompt_header) - prompt_token_buffer
     if strict_budget <= 0:
         return []
 
@@ -588,6 +643,7 @@ def _build_fitted_citation_context_block(
     history: list[dict[str, str]],
     user_content: str,
     token_cap: int,
+    prompt_token_buffer: int,
 ) -> str:
     """Render citation context block after budget-aware catalog pruning."""
     fitted = _fit_citation_catalog_to_budget(
@@ -596,6 +652,7 @@ def _build_fitted_citation_context_block(
         history=history,
         user_content=user_content,
         token_cap=token_cap,
+        prompt_token_buffer=prompt_token_buffer,
     )
     return _render_citation_catalog_block(fitted)
 
@@ -666,211 +723,14 @@ def _compose_system_prompt(header: str, context_block: str) -> str:
     )
 
 
-def _compute_context_budget(
-    prompt_header: str,
-    history: list[dict[str, str]],
-    user_content: str,
-    token_cap: int,
-) -> int:
-    """Compute remaining token budget for serialized contexts."""
-    fixed_messages = [{"role": "user", "content": user_content}] + history
-    fixed_tokens = _estimate_messages_tokens(fixed_messages)
-    header_tokens = count_tokens(prompt_header)
-    remaining = token_cap - fixed_tokens - header_tokens - CHAT_PROMPT_TOKEN_BUFFER
-    return max(remaining, 8_000)
 
-
-@dataclass(frozen=True)
-class _ScoredContextChunk:
-    """Single scored context chunk candidate used for prompt pooling."""
-
-    run_id: str
-    run_question: str
-    source_label: str
-    language: str
-    ordinal: int
-    content: str
-    score: float
-
-
-def _build_query_focus_text(user_content: str, history: list[dict[str, str]]) -> str:
-    """Build compact query focus text from latest user inputs."""
-    recent_user_messages = [
-        item["content"] for item in history if item.get("role") == "user"
-    ]
-    recent_user_messages = recent_user_messages[-2:]
-    return "\n".join(recent_user_messages + [user_content.strip()])
-
-
-def _render_context_block(
-    contexts: list[ChatContextSource],
-    max_tokens: int,
-    query_focus: str,
-) -> tuple[str, list[str], list[str]]:
-    """Serialize contexts fully when possible, otherwise switch to pooled excerpts."""
-    full_sections = [
+def _serialize_all_contexts(contexts: list[ChatContextSource]) -> str:
+    """Serialize all context sources into a single string."""
+    sections = [
         _serialize_context(index, context)
         for index, context in enumerate(contexts, start=1)
     ]
-    full_tokens = sum(count_tokens(section) for section in full_sections)
-    if full_tokens <= max_tokens:
-        return (
-            "\n\n".join(full_sections),
-            [context.run_id for context in contexts],
-            [],
-        )
-    return _render_pooled_context_block(contexts, max_tokens, query_focus)
-
-
-def _render_pooled_context_block(
-    contexts: list[ChatContextSource],
-    max_tokens: int,
-    query_focus: str,
-) -> tuple[str, list[str], list[str]]:
-    """Render a pooled context block with high-signal excerpts from each run."""
-    query_terms = _extract_terms(query_focus)
-    candidates_by_run: dict[str, list[_ScoredContextChunk]] = {}
-    for context in contexts:
-        candidates_by_run[context.run_id] = _build_scored_chunks(context, query_terms)
-
-    sections: list[str] = []
-    selected_ids: list[str] = []
-    remaining = max_tokens
-    used_chunk_ids: set[tuple[str, str, int]] = set()
-
-    for context in contexts:
-        run_candidates = candidates_by_run.get(context.run_id, [])
-        picked_for_run = 0
-        for chunk in run_candidates:
-            chunk_id = (chunk.run_id, chunk.source_label, chunk.ordinal)
-            if chunk_id in used_chunk_ids:
-                continue
-            serialized = _serialize_chunk(chunk)
-            serialized_tokens = count_tokens(serialized)
-            if serialized_tokens <= remaining:
-                sections.append(serialized)
-                selected_ids.append(chunk.run_id)
-                used_chunk_ids.add(chunk_id)
-                remaining -= serialized_tokens
-                picked_for_run += 1
-            elif picked_for_run == 0 and remaining >= MIN_CONTEXT_SECTION_TOKENS:
-                sections.append(_truncate_to_tokens(serialized, remaining))
-                selected_ids.append(chunk.run_id)
-                used_chunk_ids.add(chunk_id)
-                remaining = 0
-                picked_for_run += 1
-                break
-            if picked_for_run >= CHAT_CONTEXT_BASE_CHUNKS_PER_RUN:
-                break
-        if remaining < MIN_CONTEXT_SECTION_TOKENS:
-            break
-
-    remaining_candidates: list[_ScoredContextChunk] = []
-    for run_candidates in candidates_by_run.values():
-        for chunk in run_candidates:
-            chunk_id = (chunk.run_id, chunk.source_label, chunk.ordinal)
-            if chunk_id not in used_chunk_ids:
-                remaining_candidates.append(chunk)
-    remaining_candidates.sort(key=lambda chunk: (-chunk.score, chunk.run_id, chunk.ordinal))
-
-    for chunk in remaining_candidates:
-        if remaining < MIN_CONTEXT_SECTION_TOKENS:
-            break
-        serialized = _serialize_chunk(chunk)
-        serialized_tokens = count_tokens(serialized)
-        if serialized_tokens > remaining:
-            continue
-        sections.append(serialized)
-        selected_ids.append(chunk.run_id)
-        remaining -= serialized_tokens
-
-    if not sections:
-        pooled_text = (
-            "No context sources could fit within token budget. "
-            "Ask the user to reduce the selected contexts."
-        )
-        return pooled_text, [], [context.run_id for context in contexts]
-
-    included_ids = _dedupe_preserve_order(selected_ids)
-    included_set = set(included_ids)
-    excluded_ids = [context.run_id for context in contexts if context.run_id not in included_set]
-    sections.insert(
-        0,
-        "Context pooling mode: full documents plus bundles exceeded token budget, "
-        "so this prompt includes top-ranked excerpts selected from all chosen runs.",
-    )
-    if excluded_ids:
-        sections.append(
-            "Runs excluded due to token budget: "
-            + ", ".join(f"[run:{run_id}]" for run_id in excluded_ids)
-        )
-    return "\n\n".join(sections), included_ids, excluded_ids
-
-
-def _build_scored_chunks(
-    context: ChatContextSource,
-    query_terms: set[str],
-) -> list[_ScoredContextChunk]:
-    """Build scored chunk candidates from final markdown and context bundle."""
-    chunks: list[_ScoredContextChunk] = []
-    final_chunks = _chunk_text_by_tokens(
-        context.final_document.strip(),
-        target_tokens=CHAT_CONTEXT_CHUNK_TARGET_TOKENS,
-        overlap_tokens=CHAT_CONTEXT_CHUNK_OVERLAP_TOKENS,
-        max_chunks=CHAT_CONTEXT_MAX_CHUNKS_PER_SOURCE,
-    )
-    for index, chunk_text in enumerate(final_chunks, start=1):
-        chunks.append(
-            _ScoredContextChunk(
-                run_id=context.run_id,
-                run_question=context.question,
-                source_label="final_document",
-                language="markdown",
-                ordinal=index,
-                content=chunk_text,
-                score=_score_chunk(chunk_text, query_terms, base_weight=1.0),
-            )
-        )
-
-    serialized_bundle = json.dumps(
-        context.context_bundle,
-        ensure_ascii=True,
-        default=str,
-        separators=(",", ":"),
-        sort_keys=True,
-    )
-    bundle_chunks = _chunk_text_by_tokens(
-        serialized_bundle,
-        target_tokens=CHAT_CONTEXT_CHUNK_TARGET_TOKENS,
-        overlap_tokens=CHAT_CONTEXT_CHUNK_OVERLAP_TOKENS,
-        max_chunks=CHAT_CONTEXT_MAX_CHUNKS_PER_SOURCE,
-    )
-    for index, chunk_text in enumerate(bundle_chunks, start=1):
-        chunks.append(
-            _ScoredContextChunk(
-                run_id=context.run_id,
-                run_question=context.question,
-                source_label="context_bundle",
-                language="json",
-                ordinal=index,
-                content=chunk_text,
-                score=_score_chunk(chunk_text, query_terms, base_weight=0.9),
-            )
-        )
-
-    chunks.sort(key=lambda chunk: (-chunk.score, chunk.source_label, chunk.ordinal))
-    return chunks
-
-
-def _serialize_chunk(chunk: _ScoredContextChunk) -> str:
-    """Serialize one selected context chunk."""
-    return (
-        f"### Source [run:{chunk.run_id}] {chunk.source_label} excerpt {chunk.ordinal}\n"
-        f"Run question: {chunk.run_question or '(not provided)'}\n"
-        f"```{chunk.language}\n"
-        f"{chunk.content}\n"
-        "```"
-    )
+    return "\n\n".join(sections)
 
 
 def _serialize_context(index: int, context: ChatContextSource) -> str:
@@ -895,71 +755,6 @@ def _serialize_context(index: int, context: ChatContextSource) -> str:
         "```"
     )
 
-
-def _dedupe_preserve_order(values: list[str]) -> list[str]:
-    """Return values de-duplicated while preserving input order."""
-    deduped: list[str] = []
-    seen: set[str] = set()
-    for value in values:
-        if value in seen:
-            continue
-        deduped.append(value)
-        seen.add(value)
-    return deduped
-
-
-def _extract_terms(value: str) -> set[str]:
-    """Extract normalized keyword terms for simple lexical scoring."""
-    terms: set[str] = set()
-    for match in CHAT_TERM_PATTERN.findall(value.lower()):
-        if match in CHAT_STOPWORDS:
-            continue
-        terms.add(match)
-    return terms
-
-
-def _score_chunk(content: str, query_terms: set[str], base_weight: float) -> float:
-    """Score one chunk against query terms with overlap and frequency signals."""
-    if not query_terms:
-        return base_weight
-    chunk_terms = _extract_terms(content)
-    overlap = len(chunk_terms & query_terms)
-    lowered_content = content.lower()
-    frequency_score = 0.0
-    for term in query_terms:
-        frequency_score += min(3.0, float(lowered_content.count(term)))
-    return base_weight + (overlap * 2.5) + (frequency_score * 0.35)
-
-
-def _chunk_text_by_tokens(
-    value: str,
-    target_tokens: int,
-    overlap_tokens: int,
-    max_chunks: int,
-) -> list[str]:
-    """Split text into overlapping token chunks for retrieval-style pooling."""
-    stripped = value.strip()
-    if not stripped:
-        return []
-    encoding = get_encoding()
-    tokens = encoding.encode(stripped)
-    if not tokens:
-        return []
-    if len(tokens) <= target_tokens:
-        return [stripped]
-
-    step = max(1, target_tokens - overlap_tokens)
-    chunks: list[str] = []
-    start_index = 0
-    while start_index < len(tokens) and len(chunks) < max_chunks:
-        end_index = min(start_index + target_tokens, len(tokens))
-        chunk_text = encoding.decode(tokens[start_index:end_index]).strip()
-        if chunk_text:
-            chunks.append(chunk_text)
-        if end_index >= len(tokens):
-            break
-        start_index += step
-    return chunks
 
 
 def _build_messages(
@@ -1003,8 +798,7 @@ def _truncate_to_tokens(value: str, max_tokens: int) -> str:
 
 __all__ = [
     "ChatContextSource",
-    "CHAT_PROMPT_TOKEN_CAP",
-    "MAX_CHAT_CONTEXT_TOTAL_TOKENS",
+    "resolve_chat_token_cap",
     "generate_context_chat_reply",
     "load_context_bundle",
     "load_final_document",

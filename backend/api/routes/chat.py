@@ -1,4 +1,4 @@
-﻿"""Run-scoped context chat endpoints."""
+"""Run-scoped context chat endpoints."""
 
 from __future__ import annotations
 
@@ -27,7 +27,6 @@ from backend.api.models import (
     UpdateChatContextsRequest,
 )
 from backend.api.services import (
-    CHAT_PROMPT_TOKEN_CAP,
     ChatMemoryStore,
     ChatSessionExistsError,
     ChatSessionNotFoundError,
@@ -37,10 +36,11 @@ from backend.api.services import (
     generate_context_chat_reply,
     load_context_bundle,
     load_final_document,
+    resolve_chat_token_cap,
 )
 from backend.modules.orchestrator.utils.references import is_valid_ref_id
 from backend.utils.city_normalization import format_city_stem
-from backend.utils.config import load_config
+from backend.utils.config import AppConfig, load_config
 from backend.utils.retry import (
     RetrySettings,
     compute_retry_delay_seconds,
@@ -131,6 +131,12 @@ def _get_chat_memory_store(request: Request) -> ChatMemoryStore:
             detail="Chat memory store is not initialized.",
         )
     return store
+
+
+def _load_request_config(request: Request) -> AppConfig:
+    """Load AppConfig using the config path resolved at API startup."""
+    config_path = getattr(request.app.state, "config_path", Path("llm_config.yaml"))
+    return load_config(Path(config_path))
 
 
 def _require_chat_ready_run(run_id: str, request: Request) -> tuple[RunStore, RunRecord]:
@@ -348,6 +354,7 @@ def _resolve_session_contexts(
     run_store: RunStore,
     session: dict[str, object],
     fallback_run_id: str,
+    token_cap: int,
 ) -> tuple[list[str], list[_LoadedContext], list[str]]:
     """Resolve selected contexts for a chat session with token cap applied."""
     selected_ids = _selected_context_run_ids(session, fallback_run_id)
@@ -358,7 +365,7 @@ def _resolve_session_contexts(
             loaded_contexts.append(_load_context_for_run_id(run_store, context_run_id))
         except ValueError:
             excluded.append(context_run_id)
-    included, cap_excluded = _apply_context_token_cap(loaded_contexts, CHAT_PROMPT_TOKEN_CAP)
+    included, cap_excluded = _apply_context_token_cap(loaded_contexts, token_cap)
     excluded.extend(cap_excluded)
     return selected_ids, included, excluded
 
@@ -368,12 +375,14 @@ def _build_session_contexts_response(
     conversation_id: str,
     run_store: RunStore,
     session: dict[str, object],
+    token_cap: int,
 ) -> ChatSessionContextsResponse:
     """Build session context payload for API response."""
     selected_ids, included_contexts, excluded_ids = _resolve_session_contexts(
         run_store,
         session,
         fallback_run_id=run_id,
+        token_cap=token_cap,
     )
     total_tokens = sum(context.total_tokens for context in included_contexts)
     return ChatSessionContextsResponse(
@@ -382,7 +391,7 @@ def _build_session_contexts_response(
         context_run_ids=selected_ids,
         contexts=[context.to_summary() for context in included_contexts],
         total_tokens=total_tokens,
-        token_cap=CHAT_PROMPT_TOKEN_CAP,
+        token_cap=token_cap,
         excluded_context_run_ids=excluded_ids,
         is_capped=len(excluded_ids) > 0,
     )
@@ -486,10 +495,11 @@ def list_chat_contexts(request: Request) -> ChatContextCatalogResponse:
     """List all available completed run contexts for chat selection."""
     run_store = _get_run_store(request)
     contexts = _available_contexts(run_store)
+    config = _load_request_config(request)
     return ChatContextCatalogResponse(
         contexts=[context.to_summary() for context in contexts],
         total=len(contexts),
-        token_cap=CHAT_PROMPT_TOKEN_CAP,
+        token_cap=resolve_chat_token_cap(config),
     )
 
 
@@ -570,7 +580,8 @@ def get_chat_session_contexts(
         session = store.get_session(run_id, conversation_id)
     except ChatSessionNotFoundError as exc:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=str(exc)) from exc
-    return _build_session_contexts_response(run_id, conversation_id, run_store, session)
+    config = _load_request_config(request)
+    return _build_session_contexts_response(run_id, conversation_id, run_store, session, resolve_chat_token_cap(config))
 
 
 @router.put(
@@ -591,6 +602,9 @@ def update_chat_session_contexts(
         _ = store.get_session(run_id, conversation_id)
     except ChatSessionNotFoundError as exc:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=str(exc)) from exc
+
+    config = _load_request_config(request)
+    token_cap = resolve_chat_token_cap(config)
 
     available = {context.run_id: context for context in _available_contexts(run_store)}
     requested: list[str] = []
@@ -618,12 +632,12 @@ def update_chat_session_contexts(
         )
 
     total_tokens = sum(available[run_id_value].total_tokens for run_id_value in requested)
-    if total_tokens > CHAT_PROMPT_TOKEN_CAP:
+    if total_tokens > token_cap:
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
             detail=(
                 f"Selected contexts total {total_tokens} tokens, "
-                f"which exceeds the {CHAT_PROMPT_TOKEN_CAP} token cap."
+                f"which exceeds the {token_cap} token cap."
             ),
         )
 
@@ -636,7 +650,7 @@ def update_chat_session_contexts(
     except ValueError as exc:
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=str(exc)) from exc
 
-    return _build_session_contexts_response(run_id, conversation_id, run_store, session)
+    return _build_session_contexts_response(run_id, conversation_id, run_store, session, token_cap)
 
 
 @router.post(
@@ -661,10 +675,15 @@ def send_chat_message(
     except ChatSessionNotFoundError as exc:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=str(exc)) from exc
 
+    config = _load_request_config(request)
+    config.enable_sql = False
+    token_cap = resolve_chat_token_cap(config)
+
     _selected_ids, loaded_contexts, excluded_ids = _resolve_session_contexts(
         run_store,
         session,
         fallback_run_id=run_id,
+        token_cap=token_cap,
     )
     if not loaded_contexts:
         raise HTTPException(
@@ -686,10 +705,6 @@ def send_chat_message(
             if role in {"user", "assistant"} and isinstance(content, str):
                 history.append({"role": role, "content": content})
 
-    config_path = getattr(request.app.state, "config_path", Path("llm_config.yaml"))
-    config = load_config(Path(config_path))
-    config.enable_sql = False
-
     citation_entries = _build_chat_citation_entries(loaded_contexts)
     citation_entries_by_ref_id = {entry.ref_id: entry for entry in citation_entries}
     llm_citation_catalog = _build_llm_citation_catalog(citation_entries)
@@ -709,7 +724,7 @@ def send_chat_message(
         "history": history,
         "user_content": payload.content,
         "config": config,
-        "token_cap": CHAT_PROMPT_TOKEN_CAP,
+        "token_cap": token_cap,
         "citation_catalog": llm_citation_catalog,
         "run_id": run_id,
     }

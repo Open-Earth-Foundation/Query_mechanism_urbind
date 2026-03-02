@@ -1,4 +1,4 @@
-﻿"""Service layer for FastAPI run lifecycle endpoints."""
+"""Service layer for FastAPI run lifecycle endpoints."""
 
 from backend.api.services.chat_memory import (
     ChatMemoryStore,
@@ -22,10 +22,10 @@ from backend.api.services.city_catalog import (
     load_city_groups,
 )
 from backend.api.services.context_chat import (
-    CHAT_PROMPT_TOKEN_CAP,
     generate_context_chat_reply,
     load_context_bundle,
     load_final_document,
+    resolve_chat_token_cap,
 )
 from backend.api.services.run_executor import RunExecutor, StartRunCommand
 from backend.api.services.run_store import (
@@ -49,7 +49,7 @@ __all__ = [
     "index_city_markdown_files",
     "list_city_names",
     "load_city_groups",
-    "CHAT_PROMPT_TOKEN_CAP",
+    "resolve_chat_token_cap",
     "generate_context_chat_reply",
     "load_context_bundle",
     "load_final_document",
