@@ -4,7 +4,12 @@ from pathlib import Path
 
 import pytest
 
-from backend.benchmarks.runner import _collect_llm_issue_counts
+from backend.benchmarks.runner import (
+    BenchmarkMarkdownConfig,
+    BenchmarkModeConfig,
+    _collect_llm_issue_counts,
+    run_retrieval_strategy_benchmark,
+)
 from backend.scripts.run_retrieval_benchmark import _build_markdown_configs
 
 
@@ -69,3 +74,47 @@ def test_collect_llm_issue_counts_uses_max_turns_fallback(tmp_path: Path) -> Non
     counts = _collect_llm_issue_counts(run_log)
     assert counts["max_turns_count"] == 1
     assert counts["not_working_count"] == 1
+
+
+def test_benchmark_continues_when_run_fails(monkeypatch: pytest.MonkeyPatch, tmp_path: Path) -> None:
+    monkeypatch.setattr(
+        "backend.benchmarks.runner._load_questions",
+        lambda _path: ["Test question"],
+    )
+    monkeypatch.setattr(
+        "backend.benchmarks.runner._load_env_overrides",
+        lambda _files: {},
+    )
+    monkeypatch.setattr(
+        "backend.benchmarks.runner._run_mode_question",
+        lambda **_kwargs: (_ for _ in ()).throw(RuntimeError("429 Too Many Requests")),
+    )
+    monkeypatch.setattr(
+        "backend.benchmarks.runner._run_benchmark_judging",
+        lambda **_kwargs: ([], {}, {}),
+    )
+
+    report = run_retrieval_strategy_benchmark(
+        benchmark_id="test_benchmark",
+        output_dir=tmp_path / "output",
+        config_path=tmp_path / "llm_config.yaml",
+        docs_dir=tmp_path / "docs",
+        questions_file=tmp_path / "questions.txt",
+        selected_cities=[],
+        repetitions=1,
+        mode_configs=[BenchmarkModeConfig(name="standard_chunking", env_files=[])],
+        markdown_configs=[
+            BenchmarkMarkdownConfig(name="b16_w8", batch_max_chunks=16, max_workers=8)
+        ],
+        use_query_overrides=False,
+        query_overrides_path=None,
+        log_llm_payload=False,
+    )
+
+    assert len(report.results) == 1
+    row = report.results[0]
+    assert row.success is False
+    assert row.llm_rate_limit_count == 1
+    assert row.llm_not_working_count == 0
+    assert row.llm_issue_total == 1
+    assert report.mode_config_summary["standard_chunking | b16_w8"]["runs_failed"] == 1.0

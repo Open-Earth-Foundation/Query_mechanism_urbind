@@ -342,6 +342,7 @@ Benchmark behavior notes:
 - Vector mode uses the existing default Chroma store/collection unless overridden in your main environment.
 - The benchmark also runs LLM-as-judge scoring (`openai/gpt-5.2`) per matched standard-vs-vector run pair within the same markdown option.
 - The benchmark report includes speed metrics (`runtime`, `tokens/sec`) and LLM issue counters (rate limits, retries exhausted, max-turns, and non-working calls).
+- Individual run failures are recorded and counted (instead of aborting the full matrix); summaries include success rate and failed run count.
 
 Outputs are written to `output/benchmarks/<benchmark_id>/`:
 
@@ -690,6 +691,7 @@ kubectl scale deployment urbind-query-mechanism-backend --replicas=1
 
 Scaling down the backend to 0 ensures no concurrent reads/writes to the vector index.
 Paths on the PVC are `/data/output` (run artifacts) and `/data/chroma` (vector index and manifest). Restart the backend after the Job completes so it picks up the new index.
+The Job manifest includes disruption resilience for long runs (`karpenter.sh/do-not-disrupt: "true"`, `backoffLimit: 3`, and `podFailurePolicy` that ignores `DisruptionTarget` pod failures).
 
 Inspect indexed chunks:
 

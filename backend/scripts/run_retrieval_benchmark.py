@@ -7,6 +7,8 @@ times per mode and markdown benchmark option (`batch_max_chunks:max_workers`).
 So total runs = len(questions) * repetitions * len(modes) * len(markdown options).
 Run IDs use rNN = repetition index and qNN = question index. To get identical
 queries across all runs, use a questions file with only one question.
+Runs that fail due LLM/provider errors are recorded as failed rows with issue
+counts and do not abort the remaining benchmark matrix.
 
 Inputs:
 - CLI args:
@@ -245,6 +247,7 @@ def main() -> None:
             (
                 "ModeConfig=%s runtime_median=%.2fs tokens_median=%.0f "
                 "tokens_per_s_median=%.2f chunks_mean=%.1f excerpts_mean=%.1f "
+                "success_rate=%.2f%% failed_runs=%.0f "
                 "llm_issues=%.0f rate_limits=%.0f not_working=%.0f"
             ),
             key,
@@ -253,6 +256,8 @@ def main() -> None:
             summary["tokens_per_second_median"],
             summary["markdown_chunk_count_mean"],
             summary["markdown_excerpt_count_mean"],
+            summary["success_rate"] * 100.0,
+            summary["runs_failed"],
             summary["llm_issue_total"],
             summary["llm_rate_limit_total"],
             summary["llm_not_working_total"],
