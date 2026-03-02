@@ -331,6 +331,8 @@ export function ContextChatWorkspace({
   }
 
   const disabledSend = !canChat || !conversationId || isSending || isBootstrapping;
+  const hasVisibleMessages =
+    sortedMessages.length > 0 || (isSending && !!pendingPrompt);
 
   return (
     <>
@@ -403,7 +405,7 @@ export function ContextChatWorkspace({
                 <Loader2 className="h-4 w-4 animate-spin" />
                 Preparing conversation memory...
               </div>
-            ) : sortedMessages.length === 0 ? (
+            ) : !hasVisibleMessages ? (
               <p className="text-sm text-slate-600">
                 No chat messages yet. Ask about assumptions, compare runs, or request a narrower summary.
               </p>

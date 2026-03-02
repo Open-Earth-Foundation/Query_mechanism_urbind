@@ -1,4 +1,5 @@
 import json
+import shutil
 import threading
 import time
 from datetime import datetime, timezone
@@ -472,6 +473,61 @@ def test_api_duplicate_run_id_returns_conflict(
         assert second.status_code == 409
 
 
+def test_api_run_id_is_not_blocked_by_stale_api_state_snapshot(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    state_dir = runs_dir / "_api_state"
+    state_dir.mkdir(parents=True, exist_ok=True)
+    (state_dir / "stale-run.json").write_text(
+        json.dumps(
+            {
+                "run_id": "stale-run",
+                "question": "stale",
+                "status": "failed",
+                "started_at": datetime.now(timezone.utc).isoformat(),
+                "completed_at": datetime.now(timezone.utc).isoformat(),
+            },
+            ensure_ascii=True,
+            indent=2,
+        ),
+        encoding="utf-8",
+    )
+
+    def _stub_load_config(_path: Path | None = None) -> AppConfig:
+        return _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+
+    def _stub_run_pipeline(
+        question: str,
+        config: AppConfig,
+        run_id: str | None = None,
+        log_llm_payload: bool = True,
+        analysis_mode: str = "aggregate",
+        api_key_override: str | None = None,
+        selected_cities: list[str] | None = None,
+    ) -> RunPaths:
+        assert run_id is not None
+        assert analysis_mode == "aggregate"
+        assert api_key_override is None
+        assert selected_cities is None
+        return _write_success_artifacts(question=question, run_id=run_id, config=config)
+
+    monkeypatch.setattr("backend.api.services.run_executor.load_config", _stub_load_config)
+    monkeypatch.setattr("backend.api.services.run_executor.run_pipeline", _stub_run_pipeline)
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        start = client.post(
+            "/api/v1/runs",
+            json={"question": "reuse stale id", "run_id": "stale-run"},
+        )
+        assert start.status_code == 202
+        terminal = _poll_until_terminal(client, "stale-run")
+        assert terminal["status"] == "completed"
+
+
 def test_api_status_not_found(tmp_path: Path) -> None:
     app = create_app(runs_dir=tmp_path / "output", max_workers=1)
     with TestClient(app) as client:
@@ -509,6 +565,102 @@ def test_api_list_runs_reads_artifact_folders(tmp_path: Path) -> None:
         assert (
             payload["runs"][0]["question"] == "Historic run from artifact folder"
         )
+
+
+def test_api_list_runs_reads_question_from_inputs_when_root_question_missing(
+    tmp_path: Path,
+) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+
+    run_dir = runs_dir / "run-inputs-question"
+    run_dir.mkdir(parents=True, exist_ok=True)
+    run_payload = {
+        "run_id": "run-inputs-question",
+        "inputs": {
+            "initial_question": "Question sourced from inputs.initial_question",
+            "refined_question": "Refined fallback question",
+        },
+        "status": "completed",
+        "started_at": datetime.now(timezone.utc).isoformat(),
+        "completed_at": datetime.now(timezone.utc).isoformat(),
+    }
+    (run_dir / "run.json").write_text(
+        json.dumps(run_payload, ensure_ascii=True, indent=2),
+        encoding="utf-8",
+    )
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        response = client.get("/api/v1/runs")
+        assert response.status_code == 200
+        payload = response.json()
+        assert payload["total"] == 1
+        assert payload["runs"][0]["run_id"] == "run-inputs-question"
+        assert (
+            payload["runs"][0]["question"]
+            == "Question sourced from inputs.initial_question"
+        )
+
+
+def test_api_output_and_context_resolve_stale_container_artifact_paths(
+    tmp_path: Path,
+) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    config = _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+    run_id = "run-stale-paths"
+    paths = _write_success_artifacts(
+        question="Historic run with stale artifact paths",
+        run_id=run_id,
+        config=config,
+    )
+    run_payload = json.loads(paths.run_log.read_text(encoding="utf-8"))
+    run_payload["artifacts"]["final_output"] = f"/data/output/{run_id}/final.md"
+    run_payload["artifacts"]["context_bundle"] = f"/data/output/{run_id}/context_bundle.json"
+    paths.run_log.write_text(
+        json.dumps(run_payload, ensure_ascii=True, indent=2),
+        encoding="utf-8",
+    )
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        output_response = client.get(f"/api/v1/runs/{run_id}/output")
+        assert output_response.status_code == 200
+        assert "Stub answer" in output_response.json()["content"]
+
+        context_response = client.get(f"/api/v1/runs/{run_id}/context")
+        assert context_response.status_code == 200
+        assert isinstance(context_response.json()["context_bundle"], dict)
+
+
+def test_api_list_runs_drops_entry_after_artifact_folder_is_deleted(tmp_path: Path) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    config = _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+    paths = _write_success_artifacts(
+        question="Run to be deleted from disk",
+        run_id="run-deleted",
+        config=config,
+    )
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        before_delete = client.get("/api/v1/runs")
+        assert before_delete.status_code == 200
+        before_payload = before_delete.json()
+        assert before_payload["total"] == 1
+        assert before_payload["runs"][0]["run_id"] == "run-deleted"
+
+        shutil.rmtree(paths.base_dir)
+
+        after_delete = client.get("/api/v1/runs")
+        assert after_delete.status_code == 200
+        after_payload = after_delete.json()
+        assert after_payload["total"] == 0
 
 
 def test_api_output_returns_conflict_while_running(
@@ -790,7 +942,7 @@ def test_api_run_rejects_invalid_analysis_mode(tmp_path: Path) -> None:
         assert response.status_code == 422
 
 
-def test_api_list_runs_deduplicates_legacy_alias_records(tmp_path: Path) -> None:
+def test_api_list_runs_ignores_stale_api_state_and_uses_artifact_folder(tmp_path: Path) -> None:
     runs_dir = tmp_path / "output"
     markdown_dir = tmp_path / "documents"
     markdown_dir.mkdir(parents=True, exist_ok=True)
@@ -834,6 +986,7 @@ def test_api_list_runs_deduplicates_legacy_alias_records(tmp_path: Path) -> None
         "context_bundle_path": str(legacy_run_dir / "context_bundle.json"),
         "run_log_path": str(run_log_path),
     }
+    # Stale API-state alias should be ignored in favor of artifact folder discovery.
     (state_dir / "legacy-run.json").write_text(
         json.dumps({"run_id": "legacy-run", **shared_payload}, ensure_ascii=True, indent=2),
         encoding="utf-8",
@@ -851,7 +1004,7 @@ def test_api_list_runs_deduplicates_legacy_alias_records(tmp_path: Path) -> None
         assert listed_runs.status_code == 200
         payload = listed_runs.json()
         assert payload["total"] == 1
-        assert payload["runs"][0]["run_id"] == "legacy-run"
+        assert payload["runs"][0]["run_id"] == "legacy-run_01"
 
 
 def test_api_run_supports_header_api_key_override(

@@ -512,10 +512,16 @@ def _resolve_final_output_path(
     raw_path: Path | None,
 ) -> Path:
     """Resolve final output path and ensure artifact exists."""
-    candidate = raw_path if raw_path is not None else run_store.runs_dir / run_id / "final.md"
-    if not candidate.exists():
-        raise ValueError(f"Final output is missing for run `{run_id}`.")
-    return candidate
+    run_dir = run_store.runs_dir / run_id
+    candidates: list[Path] = []
+    if raw_path is not None:
+        candidates.append(raw_path)
+        candidates.append(run_dir / raw_path.name)
+    candidates.append(run_dir / "final.md")
+    for candidate in candidates:
+        if candidate.exists():
+            return candidate
+    raise ValueError(f"Final output is missing for run `{run_id}`.")
 
 
 def _resolve_context_bundle_path(
@@ -524,14 +530,16 @@ def _resolve_context_bundle_path(
     raw_path: Path | None,
 ) -> Path:
     """Resolve context bundle path and ensure artifact exists."""
-    candidate = (
-        raw_path
-        if raw_path is not None
-        else run_store.runs_dir / run_id / "context_bundle.json"
-    )
-    if not candidate.exists():
-        raise ValueError(f"Context bundle is missing for run `{run_id}`.")
-    return candidate
+    run_dir = run_store.runs_dir / run_id
+    candidates: list[Path] = []
+    if raw_path is not None:
+        candidates.append(raw_path)
+        candidates.append(run_dir / raw_path.name)
+    candidates.append(run_dir / "context_bundle.json")
+    for candidate in candidates:
+        if candidate.exists():
+            return candidate
+    raise ValueError(f"Context bundle is missing for run `{run_id}`.")
 
 
 def _assumptions_dir(run_store: RunStore, run_id: str) -> Path:

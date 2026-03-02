@@ -386,21 +386,29 @@ def _build_run_reference_item(
 
 def _resolve_output_path(path: Path | None, runs_dir: Path, run_id: str) -> Path | None:
     """Resolve final output path with run directory fallback."""
+    run_dir = runs_dir / run_id
+    candidates: list[Path] = []
     if path is not None:
-        return path
-    fallback = runs_dir / run_id / "final.md"
-    if fallback.exists():
-        return fallback
+        candidates.append(path)
+        candidates.append(run_dir / path.name)
+    candidates.append(run_dir / "final.md")
+    for candidate in candidates:
+        if candidate.exists():
+            return candidate
     return None
 
 
 def _resolve_context_path(path: Path | None, runs_dir: Path, run_id: str) -> Path | None:
     """Resolve context bundle path with run directory fallback."""
+    run_dir = runs_dir / run_id
+    candidates: list[Path] = []
     if path is not None:
-        return path
-    fallback = runs_dir / run_id / "context_bundle.json"
-    if fallback.exists():
-        return fallback
+        candidates.append(path)
+        candidates.append(run_dir / path.name)
+    candidates.append(run_dir / "context_bundle.json")
+    for candidate in candidates:
+        if candidate.exists():
+            return candidate
     return None
 
 

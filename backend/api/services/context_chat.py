@@ -19,7 +19,8 @@ from backend.utils.tokenization import count_tokens, get_encoding
 
 logger = logging.getLogger(__name__)
 
-DEFAULT_CHAT_PROMPT_TOKEN_CAP = 250_000
+MAX_CHAT_CONTEXT_TOTAL_TOKENS = 220_000
+DEFAULT_CHAT_PROMPT_TOKEN_CAP = MAX_CHAT_CONTEXT_TOTAL_TOKENS
 MIN_CHAT_PROMPT_TOKEN_CAP = 20_000
 CHAT_PROMPT_TOKEN_CAP_ENV = "CHAT_PROMPT_TOKEN_CAP"
 DEFAULT_CHAT_PROVIDER_TIMEOUT_SECONDS = 50.0
@@ -112,6 +113,14 @@ def _resolve_chat_prompt_token_cap() -> int:
             MIN_CHAT_PROMPT_TOKEN_CAP,
         )
         return MIN_CHAT_PROMPT_TOKEN_CAP
+    if parsed > MAX_CHAT_CONTEXT_TOTAL_TOKENS:
+        logger.warning(
+            "%s=%d exceeds hard maximum %d; using hard maximum.",
+            CHAT_PROMPT_TOKEN_CAP_ENV,
+            parsed,
+            MAX_CHAT_CONTEXT_TOTAL_TOKENS,
+        )
+        return MAX_CHAT_CONTEXT_TOTAL_TOKENS
     return parsed
 
 
@@ -197,6 +206,12 @@ def generate_context_chat_reply(
     run_id: str | None = None,
 ) -> str:
     """Generate assistant reply grounded in selected run contexts."""
+    requested_token_cap = int(token_cap)
+    effective_token_cap = max(
+        MIN_CHAT_PROMPT_TOKEN_CAP,
+        min(requested_token_cap, MAX_CHAT_CONTEXT_TOTAL_TOKENS),
+    )
+
     api_key = (
         api_key_override.strip()
         if isinstance(api_key_override, str) and api_key_override.strip()
@@ -230,7 +245,7 @@ def generate_context_chat_reply(
             prompt_header=prompt_header,
             history=bounded_history,
             user_content=user_content,
-            token_cap=token_cap,
+            token_cap=effective_token_cap,
         )
         included_context_ids = [context.run_id for context in normalized_contexts]
         excluded_context_ids: list[str] = []
@@ -239,7 +254,7 @@ def generate_context_chat_reply(
             prompt_header=prompt_header,
             history=bounded_history,
             user_content=user_content,
-            token_cap=token_cap,
+            token_cap=effective_token_cap,
         )
         query_focus = _build_query_focus_text(user_content, bounded_history)
         context_block, included_context_ids, excluded_context_ids = _render_context_block(
@@ -250,7 +265,7 @@ def generate_context_chat_reply(
     system_prompt = _compose_system_prompt(prompt_header, context_block)
 
     messages = _build_messages(system_prompt, bounded_history, user_content)
-    while _estimate_messages_tokens(messages) > token_cap and bounded_history:
+    while _estimate_messages_tokens(messages) > effective_token_cap and bounded_history:
         bounded_history = bounded_history[1:]
         if normalized_citations:
             context_block = _build_fitted_citation_context_block(
@@ -258,29 +273,40 @@ def generate_context_chat_reply(
                 prompt_header=prompt_header,
                 history=bounded_history,
                 user_content=user_content,
-                token_cap=token_cap,
+                token_cap=effective_token_cap,
             )
             system_prompt = _compose_system_prompt(prompt_header, context_block)
         messages = _build_messages(system_prompt, bounded_history, user_content)
 
-    if _estimate_messages_tokens(messages) > token_cap and normalized_citations:
+    if _estimate_messages_tokens(messages) > effective_token_cap and normalized_citations:
         context_block = _build_fitted_citation_context_block(
             citation_catalog=normalized_citations,
             prompt_header=prompt_header,
             history=bounded_history,
             user_content=user_content,
-            token_cap=token_cap,
+            token_cap=effective_token_cap,
         )
         system_prompt = _compose_system_prompt(prompt_header, context_block)
         messages = _build_messages(system_prompt, bounded_history, user_content)
 
-    if _estimate_messages_tokens(messages) > token_cap:
+    if _estimate_messages_tokens(messages) > effective_token_cap:
         fixed_tokens = _estimate_messages_tokens(
             [{"role": "user", "content": user_content}] + bounded_history
         )
-        max_system_tokens = max(token_cap - fixed_tokens - CHAT_PROMPT_TOKEN_BUFFER, 2_000)
+        max_system_tokens = max(
+            effective_token_cap - fixed_tokens - CHAT_PROMPT_TOKEN_BUFFER,
+            2_000,
+        )
         system_prompt = _truncate_to_tokens(system_prompt, max_system_tokens)
         messages = _build_messages(system_prompt, bounded_history, user_content)
+
+    estimated_prompt_tokens = _estimate_messages_tokens(messages)
+    if estimated_prompt_tokens > effective_token_cap:
+        raise ValueError(
+            "Chat context exceeds token budget after trimming "
+            f"({estimated_prompt_tokens} > {effective_token_cap}). "
+            "Reduce selected contexts or shorten history/messages."
+        )
 
     base_request_kwargs: dict[str, object] = {
         "model": config.chat.model,
@@ -294,12 +320,14 @@ def generate_context_chat_reply(
         base_request_kwargs["max_tokens"] = config.chat.max_output_tokens
 
     logger.info(
-        "Context chat request model=%s contexts=%s excluded=%s estimated_prompt_tokens=%d token_cap=%d",
+        "Context chat request model=%s contexts=%s excluded=%s "
+        "estimated_prompt_tokens=%d token_cap=%d effective_token_cap=%d",
         config.chat.model,
         included_context_ids,
         excluded_context_ids,
-        _estimate_messages_tokens(messages),
-        token_cap,
+        estimated_prompt_tokens,
+        requested_token_cap,
+        effective_token_cap,
     )
     retry_settings = RetrySettings.bounded(
         max_attempts=config.retry.max_attempts,
@@ -976,6 +1004,7 @@ def _truncate_to_tokens(value: str, max_tokens: int) -> str:
 __all__ = [
     "ChatContextSource",
     "CHAT_PROMPT_TOKEN_CAP",
+    "MAX_CHAT_CONTEXT_TOTAL_TOKENS",
     "generate_context_chat_reply",
     "load_context_bundle",
     "load_final_document",

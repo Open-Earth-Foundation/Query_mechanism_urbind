@@ -194,6 +194,15 @@ def test_load_config_uses_central_retry_defaults(tmp_path: Path) -> None:
     assert config.retry.backoff_max_seconds == 8.0
 
 
+def test_load_config_defaults_chat_history_to_twelve(tmp_path: Path) -> None:
+    """Chat history defaults to 12 messages when chat config is omitted."""
+    config_path = _write_minimal_config(tmp_path)
+
+    config = load_config(config_path)
+
+    assert config.chat.max_history_messages == 12
+
+
 def test_load_config_reads_central_retry_settings_from_yaml(tmp_path: Path) -> None:
     """Retry settings can be overridden via top-level retry config."""
     config_path = tmp_path / "llm_config.yaml"

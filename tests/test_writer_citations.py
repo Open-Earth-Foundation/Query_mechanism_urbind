@@ -21,6 +21,20 @@ class _FakeRunResult:
         self.final_output = final_output
 
 
+def _extract_coverage_payloads(records: list[logging.LogRecord]) -> list[dict[str, object]]:
+    """Parse WRITER_CITATION_COVERAGE payloads from captured logs."""
+    payloads: list[dict[str, object]] = []
+    for record in records:
+        message = record.message
+        if not message.startswith("WRITER_CITATION_COVERAGE "):
+            continue
+        payload_raw = message.split("WRITER_CITATION_COVERAGE ", 1)[1].strip()
+        payload = json.loads(payload_raw)
+        if isinstance(payload, dict):
+            payloads.append(payload)
+    return payloads
+
+
 def _build_test_config(tmp_path: Path) -> AppConfig:
     return AppConfig(
         orchestrator=OrchestratorConfig(
@@ -125,6 +139,7 @@ def test_writer_logs_warning_when_unknown_ref_is_used(
 def test_writer_retries_when_city_citation_coverage_is_missing(
     tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,
+    caplog: pytest.LogCaptureFixture,
 ) -> None:
     config = _build_test_config(tmp_path)
     context_bundle: dict[str, object] = {
@@ -168,6 +183,7 @@ def test_writer_retries_when_city_citation_coverage_is_missing(
         return _FakeRunResult(output)
 
     monkeypatch.setattr(writer_agent, "run_agent_sync", _fake_run_agent_sync)
+    caplog.set_level(logging.INFO, logger=writer_agent.__name__)
 
     output = writer_agent.write_markdown(
         question="Summarize city charging evidence.",
@@ -185,6 +201,15 @@ def test_writer_retries_when_city_citation_coverage_is_missing(
     assert "## Cities considered" in output.content
     assert "- Munich" in output.content
     assert "- Berlin" in output.content
+    coverage_payloads = _extract_coverage_payloads(caplog.records)
+    assert any(
+        payload.get("status") == "retrying" and payload.get("coverage_ratio") == "1/2"
+        for payload in coverage_payloads
+    )
+    assert any(
+        payload.get("status") == "confirmed" and payload.get("coverage_ratio") == "2/2"
+        for payload in coverage_payloads
+    )
 
 
 def test_writer_appends_no_evidence_section_for_selected_city_without_excerpts(
@@ -234,6 +259,7 @@ def test_writer_appends_no_evidence_section_for_selected_city_without_excerpts(
 def test_writer_does_not_retry_for_layout_when_city_coverage_is_complete(
     tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,
+    caplog: pytest.LogCaptureFixture,
 ) -> None:
     config = _build_test_config(tmp_path)
     context_bundle: dict[str, object] = {
@@ -289,6 +315,7 @@ def test_writer_does_not_retry_for_layout_when_city_coverage_is_complete(
         return _FakeRunResult(responses.pop(0))
 
     monkeypatch.setattr(writer_agent, "run_agent_sync", _fake_run_agent_sync)
+    caplog.set_level(logging.INFO, logger=writer_agent.__name__)
 
     output = writer_agent.write_markdown(
         question="What are shared needs and quantities?",
@@ -303,6 +330,11 @@ def test_writer_does_not_retry_for_layout_when_city_coverage_is_complete(
     assert "reconsideration" not in captured_inputs[0]
     assert "## What" in output.content
     assert "## Cities considered" in output.content
+    coverage_payloads = _extract_coverage_payloads(caplog.records)
+    assert any(
+        payload.get("status") == "confirmed" and payload.get("coverage_ratio") == "2/2"
+        for payload in coverage_payloads
+    )
 
 
 def test_writer_allows_city_by_city_layout_when_question_explicitly_requests_it(

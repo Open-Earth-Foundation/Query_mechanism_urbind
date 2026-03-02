@@ -374,7 +374,7 @@ Core endpoints:
 
 - `GET /` (root health endpoint)
 - `POST /api/v1/runs`
-- `GET /api/v1/runs` (list discovered runs as `run_id` + `question`)
+- `GET /api/v1/runs` (list discovered runs as `run_id` + `question`; refreshed from `RUNS_DIR/*/run.json` artifact folders on each request, plus currently queued/running in-memory runs)
 - `GET /api/v1/runs/{run_id}/status`
 - `GET /api/v1/runs/{run_id}/output`
 - `GET /api/v1/runs/{run_id}/context`
@@ -536,7 +536,7 @@ python -m backend.scripts.test_db_connection
 Artifacts are written under `output/<run_id>/`:
 
 - `run.json`: machine-readable run metadata (status, timestamps, artifacts, decisions), including `inputs.analysis_mode` and `artifacts.error_log` when available.
-- `run.log`: detailed runtime logs, including per-agent `LLM_USAGE` lines.
+- `run.log`: detailed runtime logs, including per-agent `LLM_USAGE` lines and writer city-citation coverage checkpoints (`WRITER_CITATION_COVERAGE`, with `coverage_ratio` such as `33/33`).
 - `error_log.txt`: extracted error-focused log view from `run.log` (`ERROR`, `CRITICAL`, and exhausted retry events).
 - `run_summary.txt`: human-readable consolidated report. Header includes `Started`, `Completed`, and explicit `Total runtime` in seconds, plus `LLM Usage` totals/per-agent. It also captures an input snapshot (`initial question`, `refined question`, `selected cities` planned/found, markdown dir/file/chunk/excerpt counts) and a `MARKDOWN_FAILURE_SUMMARY` aggregated from batch failures.
 - `context_bundle.json`: payload passed between agents (`sql`, `markdown`, `research_question`, `analysis_mode`, final path).

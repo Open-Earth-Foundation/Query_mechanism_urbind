@@ -196,13 +196,13 @@ def extract_cited_ref_ids(content: str) -> set[str]:
     return {token for token in extract_reference_tokens(content) if is_valid_ref_id(token)}
 
 
-def extract_missing_coverage(
+def extract_city_coverage_sets(
     *,
     content: str,
     markdown_bundle: dict[str, object],
     selected_city_names: list[str],
-) -> tuple[list[str], list[str], dict[str, str]]:
-    """Return missing citation-coverage city keys and no-evidence city keys."""
+) -> tuple[list[str], list[str], list[str], dict[str, str]]:
+    """Return required, missing, and no-evidence city keys plus display-name mapping."""
     ref_to_city_key, city_display_by_key = extract_ref_city_mapping(markdown_bundle)
     excerpt_city_keys = set(city_display_by_key.keys())
     selected_city_keys: set[str] = set()
@@ -223,6 +223,23 @@ def extract_missing_coverage(
     }
     missing_coverage_keys = [key for key in required_city_keys if key not in covered_city_keys]
     no_evidence_keys = sorted(selected_city_keys - excerpt_city_keys)
+    return required_city_keys, missing_coverage_keys, no_evidence_keys, city_display_by_key
+
+
+def extract_missing_coverage(
+    *,
+    content: str,
+    markdown_bundle: dict[str, object],
+    selected_city_names: list[str],
+) -> tuple[list[str], list[str], dict[str, str]]:
+    """Return missing citation-coverage city keys and no-evidence city keys."""
+    _required_city_keys, missing_coverage_keys, no_evidence_keys, city_display_by_key = (
+        extract_city_coverage_sets(
+            content=content,
+            markdown_bundle=markdown_bundle,
+            selected_city_names=selected_city_names,
+        )
+    )
     return missing_coverage_keys, no_evidence_keys, city_display_by_key
 
 
@@ -353,6 +370,7 @@ def validate_writer_citations(content: str, context_bundle: dict[str, object]) -
 
 __all__ = [
     "append_sections",
+    "extract_city_coverage_sets",
     "extract_markdown_bundle",
     "extract_missing_city_excerpts",
     "extract_missing_coverage",

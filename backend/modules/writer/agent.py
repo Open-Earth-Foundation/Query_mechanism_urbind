@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import logging
 import time
 from pathlib import Path
 
@@ -9,9 +10,9 @@ from agents import Agent, function_tool
 from backend.modules.writer.models import WriterOutput
 from backend.modules.writer.utils.markdown_helpers import (
     append_sections,
+    extract_city_coverage_sets,
     extract_markdown_bundle,
     extract_missing_city_excerpts,
-    extract_missing_coverage,
     extract_ref_city_mapping,
     extract_selected_city_names,
     render_cities_considered_section,
@@ -34,6 +35,8 @@ from backend.utils.retry import (
     log_retry_event,
     log_retry_exhausted,
 )
+
+logger = logging.getLogger(__name__)
 
 
 def _resolve_writer_prompt_path(analysis_mode: str) -> Path:
@@ -154,11 +157,19 @@ def write_markdown(
             log_llm_payload=log_llm_payload,
         )
 
-        missing_coverage_keys, no_evidence_keys, city_display_by_key = extract_missing_coverage(
+        (
+            required_city_keys,
+            missing_coverage_keys,
+            no_evidence_keys,
+            city_display_by_key,
+        ) = extract_city_coverage_sets(
             content=output.content,
             markdown_bundle=markdown_bundle,
             selected_city_names=selected_city_names,
         )
+        confirmed_city_count = len(required_city_keys) - len(missing_coverage_keys)
+        required_city_count = len(required_city_keys)
+        coverage_ratio = f"{confirmed_city_count}/{required_city_count}"
         no_evidence_names = [
             city_display_by_key.get(city_key, format_city_display_name(city_key))
             for city_key in no_evidence_keys
@@ -174,6 +185,22 @@ def write_markdown(
         validate_writer_citations(content, context_bundle)
 
         if not missing_coverage_keys:
+            logger.info(
+                "WRITER_CITATION_COVERAGE %s",
+                json.dumps(
+                    {
+                        "run_id": run_id or "unknown",
+                        "attempt": attempt,
+                        "max_attempts": max_attempts,
+                        "status": "confirmed",
+                        "coverage_confirmed": confirmed_city_count,
+                        "coverage_required": required_city_count,
+                        "coverage_ratio": coverage_ratio,
+                        "analysis_mode": analysis_mode,
+                    },
+                    ensure_ascii=False,
+                ),
+            )
             return WriterOutput(content=content)
 
         previous_answer = content
@@ -182,11 +209,29 @@ def write_markdown(
             city_display_by_key.get(city_key, format_city_display_name(city_key))
             for city_key in missing_city_keys
         ]
+        coverage_status = "retrying" if attempt < max_attempts else "exhausted"
+        logger.warning(
+            "WRITER_CITATION_COVERAGE %s",
+            json.dumps(
+                {
+                    "run_id": run_id or "unknown",
+                    "attempt": attempt,
+                    "max_attempts": max_attempts,
+                    "status": coverage_status,
+                    "coverage_confirmed": confirmed_city_count,
+                    "coverage_required": required_city_count,
+                    "coverage_ratio": coverage_ratio,
+                    "missing_cities": missing_city_names,
+                    "analysis_mode": analysis_mode,
+                },
+                ensure_ascii=False,
+            ),
+        )
         if attempt < max_attempts:
             delay_seconds = compute_retry_delay_seconds(attempt, retry_settings)
             retry_error_type = "MissingCityCitationCoverage"
             retry_error_message = (
-                "Writer output does not include citation coverage for all required cities: "
+                f"Writer city citation coverage is {coverage_ratio}; retrying missing cities: "
                 + ", ".join(missing_city_names)
             )
             log_retry_event(
@@ -199,6 +244,9 @@ def write_markdown(
                 next_backoff_seconds=delay_seconds,
                 context={
                     "missing_cities": missing_city_names,
+                    "coverage_confirmed": confirmed_city_count,
+                    "coverage_required": required_city_count,
+                    "coverage_ratio": coverage_ratio,
                     "analysis_mode": analysis_mode,
                 },
             )
@@ -208,7 +256,7 @@ def write_markdown(
 
         exhausted_error_type = "MissingCityCitationCoverage"
         exhausted_error_message = (
-            "Writer output still misses citation coverage for cities: "
+            f"Writer city citation coverage remains {coverage_ratio}; missing cities: "
             + ", ".join(missing_city_names)
         )
         log_retry_exhausted(
@@ -220,6 +268,9 @@ def write_markdown(
             error_message=exhausted_error_message,
             context={
                 "missing_cities": missing_city_names,
+                "coverage_confirmed": confirmed_city_count,
+                "coverage_required": required_city_count,
+                "coverage_ratio": coverage_ratio,
                 "analysis_mode": analysis_mode,
             },
         )

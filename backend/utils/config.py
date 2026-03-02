@@ -48,7 +48,7 @@ class MarkdownResearcherConfig(AgentConfig):
 
 
 class ChatConfig(AgentConfig):
-    max_history_messages: int = 24
+    max_history_messages: int = 12
 
 
 class AssumptionsReviewerConfig(AgentConfig):
