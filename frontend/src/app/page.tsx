@@ -322,7 +322,7 @@ export default function Home() {
           }
           nextPollHandle = setTimeout(() => {
             pollOnce();
-          }, 2500);
+          }, 5000);
         });
     };
 

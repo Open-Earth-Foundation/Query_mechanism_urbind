@@ -291,6 +291,7 @@ def test_apply_assumptions_does_not_persist_by_default(
     assert result.run_id == "run-assumptions"
     assert result.revised_output_path is None
     assert result.assumptions_path is None
+    assert result.revised_content.startswith("# Question\n> Build assumptions run\n\n")
     assert "# Revised body" in result.revised_content
     assert not (runs_dir / "run-assumptions" / "assumptions").exists()
 

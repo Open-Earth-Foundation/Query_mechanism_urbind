@@ -231,3 +231,38 @@ def test_load_config_reads_central_retry_settings_from_yaml(tmp_path: Path) -> N
     assert config.retry.max_attempts == 7
     assert config.retry.backoff_base_seconds == 0.25
     assert config.retry.backoff_max_seconds == 3.5
+
+
+def test_load_config_reads_calculation_researcher_settings_from_yaml(
+    tmp_path: Path,
+) -> None:
+    """Calculation subagent settings are loaded from llm_config.yaml."""
+    config_path = tmp_path / "llm_config.yaml"
+    config_path.write_text(
+        "\n".join(
+            [
+                "orchestrator:",
+                "  model: test-model",
+                "sql_researcher:",
+                "  model: test-model",
+                "markdown_researcher:",
+                "  model: test-model",
+                "writer:",
+                "  model: writer-model",
+                "  temperature: 0.1",
+                "calculation_researcher:",
+                "  model: writer-model",
+                "  temperature: 0.1",
+                "  max_turns: 30",
+                "  max_tool_calls: 50",
+            ]
+        ),
+        encoding="utf-8",
+    )
+
+    config = load_config(config_path)
+
+    assert config.calculation_researcher.model == "writer-model"
+    assert config.calculation_researcher.temperature == 0.1
+    assert config.calculation_researcher.max_turns == 30
+    assert config.calculation_researcher.max_tool_calls == 50

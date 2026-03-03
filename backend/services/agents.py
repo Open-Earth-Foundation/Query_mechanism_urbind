@@ -25,6 +25,19 @@ logger = logging.getLogger(__name__)
 
 ReasoningEffort = Literal["none", "minimal", "low", "medium", "high", "xhigh"]
 
+
+class MaxToolCallsExceeded(RuntimeError):
+    """Raised when an agent run exceeds the configured tool-call budget."""
+
+    def __init__(self, *, max_tool_calls: int, observed_tool_calls: int) -> None:
+        self.max_tool_calls = int(max_tool_calls)
+        self.observed_tool_calls = int(observed_tool_calls)
+        super().__init__(
+            "Agent exceeded max tool calls "
+            f"({self.max_tool_calls}); observed={self.observed_tool_calls}."
+        )
+
+
 _thread_local = threading.local()
 
 if sys.platform.startswith("win"):
@@ -438,6 +451,28 @@ class LlmPayloadLoggingHooks(RunHooksBase[Any, Agent[Any]]):
         self._log_payload(payload)
 
 
+class ToolCallLimitHooks(RunHooksBase[Any, Agent[Any]]):
+    """Enforce a hard limit on tool calls for one agent run."""
+
+    def __init__(self, max_tool_calls: int) -> None:
+        self._max_tool_calls = max(int(max_tool_calls), 1)
+        self.tool_calls = 0
+
+    async def on_tool_start(
+        self,
+        context: RunContextWrapper[Any],
+        agent: Agent[Any],
+        tool: Tool,
+    ) -> None:
+        _ = context, agent, tool
+        self.tool_calls += 1
+        if self.tool_calls > self._max_tool_calls:
+            raise MaxToolCallsExceeded(
+                max_tool_calls=self._max_tool_calls,
+                observed_tool_calls=self.tool_calls,
+            )
+
+
 def build_model_settings(
     temperature: float | None,
     max_output_tokens: int | None,
@@ -470,6 +505,7 @@ def run_agent_sync(
     agent: Agent,
     input_data: str,
     max_turns: int = 10,
+    max_tool_calls: int | None = None,
     log_llm_payload: bool = False,
 ) -> RunResult:
     """Run an agent synchronously with optional max_turns limit.
@@ -478,6 +514,7 @@ def run_agent_sync(
         agent: The agent to run
         input_data: The input data as a JSON string
         max_turns: Maximum number of turns before gracefully stopping
+        max_tool_calls: Optional maximum number of tool calls allowed in one run
         log_llm_payload: Whether to log full LLM request/response payloads
 
     Returns:
@@ -485,11 +522,51 @@ def run_agent_sync(
 
     Raises:
         MaxTurnsExceeded: The run exceeded the configured turn budget.
+        MaxToolCallsExceeded: The run exceeded the configured tool-call budget.
     """
     hooks_list: list[RunHooksBase[Any, Agent[Any]]] = [LlmUsageLoggingHooks()]
+    if max_tool_calls is not None:
+        hooks_list.append(ToolCallLimitHooks(max_tool_calls=max_tool_calls))
     if log_llm_payload:
         hooks_list.append(LlmPayloadLoggingHooks())
     hooks: RunHooksBase[Any, Agent[Any]] | None = CompositeRunHooks(hooks_list)
+
+    # Nested sync calls (for example writer tool -> subagent) run inside an active
+    # event loop. In that case, execute the agent on a dedicated worker thread.
+    in_running_loop = False
+    try:
+        asyncio.get_running_loop()
+    except RuntimeError:
+        pass
+    else:
+        in_running_loop = True
+    if in_running_loop:
+        result_holder: dict[str, RunResult] = {}
+        error_holder: dict[str, BaseException] = {}
+
+        def _run_on_worker_thread() -> None:
+            worker_loop = asyncio.new_event_loop()
+            try:
+                asyncio.set_event_loop(worker_loop)
+                result_holder["result"] = worker_loop.run_until_complete(
+                    Runner.run(agent, input_data, max_turns=max_turns, hooks=hooks)
+                )
+            except BaseException as exc:  # pragma: no cover - re-raised in caller thread
+                error_holder["error"] = exc
+            finally:
+                worker_loop.close()
+                asyncio.set_event_loop(None)
+
+        worker = threading.Thread(
+            target=_run_on_worker_thread,
+            name="agent-runner-sync-worker",
+            daemon=True,
+        )
+        worker.start()
+        worker.join()
+        if error_holder:
+            raise error_holder["error"]
+        return result_holder["result"]
 
     loop = getattr(_thread_local, "loop", None)
     if loop is None or loop.is_closed():
@@ -513,6 +590,24 @@ def run_agent_sync(
             max_turns,
         )
         raise
+    except MaxToolCallsExceeded as exc:
+        diagnostics = {
+            "agent": agent.name,
+            "max_tool_calls": exc.max_tool_calls,
+            "observed_tool_calls": exc.observed_tool_calls,
+        }
+        logger.warning("AGENT_MAX_TOOL_CALLS_DIAGNOSTICS %s", _dump_payload(diagnostics))
+        logger.warning(
+            "Agent exceeded max tool calls (%d). Gracefully stopping with partial results.",
+            exc.max_tool_calls,
+        )
+        raise
 
 
-__all__ = ["build_model_settings", "build_openrouter_model", "run_agent_sync"]
+__all__ = [
+    "MaxToolCallsExceeded",
+    "ToolCallLimitHooks",
+    "build_model_settings",
+    "build_openrouter_model",
+    "run_agent_sync",
+]

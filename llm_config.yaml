@@ -56,6 +56,14 @@ assumptions_reviewer:
   temperature: 0.0
   reasoning_effort: "high"
   max_output_tokens: 8000
+calculation_researcher:
+  model: "openai/gpt-5.2"
+  temperature: 0.0
+  reasoning_effort: "high"
+  context_window_tokens: 400000
+  input_token_reserve: 20000
+  max_turns: 30
+  max_tool_calls: 50
 vector_store:
   enabled: true
   chroma_persist_path: ".chroma"

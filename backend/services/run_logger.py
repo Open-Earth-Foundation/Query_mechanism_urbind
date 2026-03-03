@@ -376,6 +376,11 @@ class RunLogger:
         lines.append(self._format_json(self._summarize_markdown_failures(markdown_payload)))
         lines.append("")
 
+        calculations_payload = self._read_json_file(self.run_paths.calculations)
+        lines.append("CALCULATIONS (LLM)")
+        lines.append(self._format_json(calculations_payload))
+        lines.append("")
+
         final_output = self.run_log.get("artifacts", {}).get("final_output")
         lines.append("FINAL_OUTPUT (LLM)")
         if final_output:

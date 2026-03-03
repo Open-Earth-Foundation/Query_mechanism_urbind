@@ -59,6 +59,12 @@ class AssumptionsReviewerConfig(AgentConfig):
     """Configuration for two-pass missing-data discovery."""
 
 
+class CalculationResearcherConfig(AgentConfig):
+    """Configuration for writer-delegated numeric calculation subagent."""
+
+    max_tool_calls: int = 50
+
+
 class VectorStoreConfig(BaseModel):
     enabled: bool = False
     chroma_persist_path: Path = Field(default_factory=lambda: Path(".chroma"))
@@ -99,6 +105,9 @@ class AppConfig(BaseModel):
     chat: ChatConfig = Field(default_factory=lambda: ChatConfig(model="openai/gpt-5.2"))
     assumptions_reviewer: AssumptionsReviewerConfig = Field(
         default_factory=lambda: AssumptionsReviewerConfig(model="openai/gpt-5.2")
+    )
+    calculation_researcher: CalculationResearcherConfig = Field(
+        default_factory=lambda: CalculationResearcherConfig(model="openai/gpt-5.2")
     )
     retry: RetryConfig = Field(default_factory=RetryConfig)
     vector_store: VectorStoreConfig = Field(default_factory=VectorStoreConfig)
@@ -201,6 +210,7 @@ __all__ = [
     "MarkdownResearcherConfig",
     "ChatConfig",
     "AssumptionsReviewerConfig",
+    "CalculationResearcherConfig",
     "RetryConfig",
     "VectorStoreConfig",
     "AppConfig",

@@ -63,6 +63,8 @@ def handle_write_decision(
             api_key,
             **writer_kwargs,
         )
+        if paths.calculations.exists():
+            run_logger.record_artifact("calculations", paths.calculations)
         write_final_output(
             question,
             writer_output.content,

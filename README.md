@@ -36,6 +36,7 @@ The `uv.lock` file is committed to ensure reproducible builds.
 - `llm_config.yaml` stores model names and settings.
 - Markdown researcher batching knobs are configured in `llm_config.yaml` under `markdown_researcher` (`batch_max_chunks`, `batch_max_input_tokens`, `batch_overhead_tokens`).
 - Retry policy is centralized in top-level `retry` in `llm_config.yaml` (`max_attempts`, `backoff_base_seconds`, `backoff_max_seconds`) and is shared across LLM calls, agent max-turn limits, chat tool-call loop limits, and vector retrieval operations.
+- Writer delegates numeric aggregations to a dedicated `calculation_researcher` subagent. Configure it in `llm_config.yaml` under `calculation_researcher` (`model`, `temperature`, `max_turns`, `max_tool_calls`).
 - Optional `markdown_researcher.reasoning_effort` can be set for Grok reasoning control (for example `"none"`), but this is model/provider-specific and may fail on unsupported models.
 - Copy `.env.example` to `.env` and fill in values for your environment.
 - `.env` is loaded automatically via `python-dotenv` in the scripts.
@@ -551,6 +552,7 @@ Artifacts are written under `output/<run_id>/`:
 - `sql/results_full.json` (when SQL is enabled): uncapped SQL execution results.
 - `sql/results.json` (when SQL is enabled): token-capped SQL results sent downstream.
 - `markdown/excerpts.json`: markdown researcher evidence bundle. Includes `excerpts` (items with `quote`, `city_name`, `partial_answer`), `inspected_cities` (normalized backend city keys present in inspected markdown inputs), and `excerpt_count` (count of extracted excerpts).
+- `markdown/calculations.json`: writer-delegated calculation subagent requests and structured outputs (metric totals, coverage, assumptions, and policy-only city summaries).
 - `markdown/references.json`: run-local citation map generated from markdown excerpts. Includes sequential `ref_n` entries with `excerpt_index`, `city_name`, `quote`, `partial_answer`, and `source_chunk_ids`.
 - `markdown/retrieval.json` (when `VECTOR_STORE_ENABLED=true`): vector retrieval inputs and results summary. Includes the final retrieval query list, optional city filter, retrieval tuning metadata (cutoffs/caps), and per-chunk summaries (`chunk_id`, `city_name`, `city_key`, `source_path`, `heading_path`, `block_type`, `distance`).
 - `markdown/batches.json`: markdown batching plan used for the markdown researcher calls. Includes per-city batch indices, estimated tokens, and chunk ordering fields (`path`, `chunk_index`, `chunk_id`), making it easy to inspect how chunks were grouped into LLM requests.

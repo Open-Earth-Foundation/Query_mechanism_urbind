@@ -7,6 +7,8 @@ import logging
 from pathlib import Path
 from typing import TYPE_CHECKING
 
+from backend.utils.markdown import render_question_section
+
 if TYPE_CHECKING:
     from backend.services.run_logger import RunLogger
     from backend.utils.paths import RunPaths
@@ -60,7 +62,7 @@ def write_final_output(
         run_logger: Logger for recording artifacts
         finish_reason: Finish reason for the output
     """
-    question_header = f"# Question\n{question}\n\n"
+    question_header = render_question_section(question)
     finish_note = f"\n\n---\nFinish reason: {finish_reason}\n"
     rendered_content = f"{question_header}{content}{finish_note}"
     final_path = paths.final_output

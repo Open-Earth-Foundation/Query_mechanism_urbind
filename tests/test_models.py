@@ -2,6 +2,10 @@ import pytest
 from pydantic import ValidationError
 
 from backend.models import ErrorInfo
+from backend.modules.calculation_researcher.models import (
+    CalculationRequest,
+    CalculationSubagentOutput,
+)
 from backend.modules.markdown_researcher.models import (
     MarkdownExcerpt,
     MarkdownResearchResult,
@@ -80,3 +84,44 @@ def test_markdown_excerpt_accepts_quote_and_partial_answer_fields() -> None:
 def test_orchestrator_decision_rejects_legacy_actions() -> None:
     with pytest.raises(ValidationError):
         OrchestratorDecision(action="run_sql", reason="Need more data")
+
+
+def test_calculation_request_requires_target_year_for_user_specified_rule() -> None:
+    with pytest.raises(ValidationError):
+        CalculationRequest(
+            calculation_goal="Calculate total electric cars.",
+            metric_name="electric cars",
+            operation="sum",
+            city_scope=["Munich"],
+            inclusion_rule="registered passenger EV stock",
+            exclusion_rule="municipal fleet",
+            year_rule="user_specified_year",
+            target_year=None,
+            unit_rule="vehicles_count",
+        )
+
+
+def test_calculation_subagent_output_rejects_invalid_ref_ids() -> None:
+    with pytest.raises(ValidationError):
+        CalculationSubagentOutput(
+            status="success",
+            metric_name="electric cars",
+            operation="sum",
+            total_value=10,
+            unit="vehicles_count",
+            coverage_observed=1,
+            coverage_total=1,
+            included_cities=[
+                {
+                    "city_name": "Munich",
+                    "year": 2024,
+                    "value": 10,
+                    "unit": "vehicles_count",
+                    "ref_ids": ["ref_invalid"],
+                }
+            ],
+            excluded_policy_cities=[],
+            assumptions=[],
+            final_ref_ids=["ref_1"],
+            error=None,
+        )

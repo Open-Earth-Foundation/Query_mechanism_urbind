@@ -18,6 +18,7 @@ from backend.api.services.context_chat import load_context_bundle, load_final_do
 from backend.api.services.run_store import RunRecord, RunStore
 from backend.modules.writer.agent import write_markdown
 from backend.utils.config import AppConfig, get_openrouter_api_key
+from backend.utils.markdown import render_question_section
 
 logger = logging.getLogger(__name__)
 
@@ -196,7 +197,7 @@ def apply_assumptions_and_regenerate(
         config=config,
         api_key_override=api_key_override,
     )
-    rendered = f"# Question\n{run_record.question.strip()}\n\n{revised_document.strip()}\n"
+    rendered = f"{render_question_section(run_record.question)}{revised_document.strip()}\n"
 
     revised_output_path: str | None = None
     assumptions_path: str | None = None

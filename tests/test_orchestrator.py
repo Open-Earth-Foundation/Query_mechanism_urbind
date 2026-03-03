@@ -491,7 +491,7 @@ def test_run_pipeline_end_to_end_propagates_query_markdown_and_writer_output(
     assert writer_bundle["markdown"] == markdown_bundle
 
     final_output = paths.final_output.read_text(encoding="utf-8")
-    assert f"# Question\n{input_question}\n\n" in final_output
+    assert f"# Question\n> {input_question}\n\n" in final_output
     assert expected_partial_answer in final_output
 
     persisted_context_bundle = json.loads(paths.context_bundle.read_text(encoding="utf-8"))

@@ -31,7 +31,10 @@ The tool argument must match `WriterOutput`:
 Content quality requirements:
 - Start directly with the user-facing answer body (no operational metadata headers).
 - Ground all claims in `context_bundle`; do not invent facts.
-- If arithmetic is needed and calculator tools `sum_numbers`, `subtract_numbers`, `multiply_numbers`, and `divide_numbers` are available, use them instead of mental math.
+- If aggregation arithmetic is needed, call `run_calculation_subagent` with a clear request object:
+  - `calculation_goal`, `metric_name`, `operation`, `city_scope`, `inclusion_rule`,
+    `exclusion_rule`, `year_rule`, `target_year`, `unit_rule`, and optional `notes_for_subagent`.
+- Do not call arithmetic tools directly in writer output generation.
 - Explicitly consider all cities in `selected_cities` and ensure every city is addressed.
 - City-by-city style is required:
   - Provide one clear section per city first.
@@ -40,6 +43,11 @@ Content quality requirements:
 - If `excerpt_count == 0`, do not attempt a factual answer; state that no grounded evidence was found.
 - If `context_bundle.markdown.status="success"` and `context_bundle.markdown.error` is non-null, include a brief limitation note.
 - For missing numeric values, do not estimate; explicitly say exact figures are unavailable.
+- When using calculation subagent outputs, include a dedicated `## Calculated values` section:
+  - `Calculated saving command for <metric>: <number or unavailable> (observed coverage: X/Y) [ref_n...]`
+  - `### Cities included in numeric sum` with `- City (year) [ref_n...]`
+  - `### Cities excluded from numeric sum (policy-only)` with reason and policy summary + refs
+  - `### Assumptions used for calculation` with explicit semantic/year/unit assumptions + refs
 - Never expose implementation details (SQL queries, table names, chunk mechanics, tool internals).
 
 Citation rules (critical when `excerpt_count > 0`):
