@@ -320,17 +320,15 @@ Climate Neutrality Action Plan
 
 #
 
-|  Stationary energy (named Buildings) | Included | Included Scope 2 covers electricity only | /  |
-| --- | --- | --- | --- |
-|  Transport | Included | Included | /  |
-|  Energy industry | Included | / | /  |
-|  Waste/wastewater | Excluded | Not applicable | Not applicable  |
-|  IPPU | Excluded | Not applicable | /  |
-|  AFOLU | Excluded | Not applicable | /  |
-|  Geographical boundary | Same as city administrative boundary | Smaller than city administrative boundary | Larger than city administrative boundary  |
-|  (Tick correct option) | X |  |   |
-|  Specify excluded/additional areas |  | Required information | Required information  |
-|  |   |   |   |
+Stationary energy (named Buildings) | Included | Included Scope 2 covers electricity only | /
+Transport | Included | Included | /
+Energy industry | Included | / | /
+Waste/wastewater | Excluded | Not applicable | Not applicable
+IPPU | Excluded | Not applicable | /
+AFOLU | Excluded | Not applicable | /
+Geographical boundary | Same as city administrative boundary | Smaller than city administrative boundary | Larger than city administrative boundary
+(Tick correct option) | X
+Specify excluded/additional areas | Required information | Required information
 
 Neutrality objectives concern all territory of the metropolis.
 
@@ -762,28 +760,27 @@ Climate Neutrality Action Plan
 
 We therefore fully agree to consider 2022 as the reference year for the FAASST project in the evaluation section.
 
-|  A-1.1: Final energy use by source sectors  |   |   |   |
-| --- | --- | --- | --- |
-|  Base year | 2010  |   |   |
-|  Unit | MWh  |   |   |
-|   | Scope 1 | Scope 2 | Scope 3  |
-|  Buildings | 2 244 513 | 1 244 677 | -  |
-|  (Fuel type/energy used) | Oil products: 187 834
+A-1.1: Final energy use by source sectors
+Base year | 2010
+Unit | MWh
+Scope 1 | Scope 2 | Scope 3
+Buildings | 2 244 513 | 1 244 677 | -
+(Fuel type/energy used) | Oil products: 187 834
 Natural Gas: 1 767 826
 Renewable Energies: 102 147
 Heating networks: 186 705 | Electricity (network): 1 244 677 | /  |
-|  Transport | 1 276 911 | 31 272 | /  |
-|  (Fuel type/energy used) | Oil products: 1 084 203
+Transport | 1 276 911 | 31 272 | /
+(Fuel type/energy used) | Oil products: 1 084 203
 Natural gas: 3 453
 Renewable energies: 67 493 | Electricity: 31 272 | /  |
-|  Waste | 279 139 | / | /  |
-|  (Fuel type/energy used) | Renewable energies: 139 570
+Waste | 279 139 | / | /
+(Fuel type/energy used) | Renewable energies: 139 570
 Other energies: 139 570 | / | /  |
-|  Industrial Process and ProductUse (IPPU) | 376 099 | 299 726 | /  |
-|  (Fuel type/energy used) | Oil products: 134 738
+Industrial Process and ProductUse (IPPU) | 376 099 | 299 726 | /
+(Fuel type/energy used) | Oil products: 134 738
 Natural gas: 241 361 | Electricity: 299 726 | /  |
-|  Agricultural, Forestry and Land Use (AFOLU) | 17 591 | 2 372 |   |
-|  (Fuel type/energy used) | Oil products: 11 154
+Agricultural, Forestry and Land Use (AFOLU) | 17 591 | 2 372
+(Fuel type/energy used) | Oil products: 11 154
 Natural gas: 3 798
 Other energies: 2 640 | Electricity: 2 372 | /  |
 |  A-1.1: Final energy use by source sectors  |   |   |   |
@@ -797,26 +794,25 @@ bion
 Climate Neutrality Action Plan
 C
 
-|   | Natural Gas: 929 103
+Natural Gas: 929 103
 Renewable Energies:92 813
 Heating networks: 430 715 |  |   |
-| --- | --- | --- | --- |
-|  Transport | 1 248 014 | 21 712 | /  |
-|  (Fuel type/
+Transport | 1 248 014 | 21 712 | /
+(Fuel type/
 energy used) | Oil products: 1 124 103
 Natural gas: 16 016
 Renewable Energies: 107 896 | Electricity: 21 712 | /  |
-|  Waste | 360 377 | / | /  |
-|  (Fuel type/
+Waste | 360 377 | / | /
+(Fuel type/
 energy used) | Renewable energies: 180 189
 Other renewable energies: 180 189 | / | /  |
-|  Industrial Process and Product Use (IPPU) | 263 817 | 285 464 |   |
-|  (Fuel type/
+Industrial Process and Product Use (IPPU) | 263 817 | 285 464
+(Fuel type/
 energy used) | Oil products: 109 345
 Natural gas: 152 974
 Renewable Energies: 1 498 | / | /  |
-|  Agricultural, Forestry and Land Use (AFOLU) | 16 278 | 1 814 | /  |
-|  (Fuel type/
+Agricultural, Forestry and Land Use (AFOLU) | 16 278 | 1 814 | /
+(Fuel type/
 energy used) | Oil products: 11 145
 Natural gas: 2 549
 Other Renewable Energies: 2 584 | Electricity: 1 814 | /  |
@@ -842,35 +838,33 @@ Climate Neutrality Action Plan
 
 #
 
-|  Agricultural, Forestry and Land Use (AFOLU) | 13 049 | 187 | / | 13 236  |
-| --- | --- | --- | --- | --- |
-|  Total | 946 195 | 124 664 | / | 1 070 859  |
-|  A-1.3: GHG emissions by source sectors  |   |   |   |   |
-| --- | --- | --- | --- | --- |
-|  Base year | 2022  |   |   |   |
-|  Unit | tCO2eq  |   |   |   |
-|   | Scope 1 | Scope 2 | Scope 3 | Total  |
-|  Buildings | 253 371 | 44 701 | / | 298 072  |
-|  (Fuel type/ energy used) | Oil products: 26 567
+Agricultural, Forestry and Land Use (AFOLU) | 13 049 | 187 | / | 13 236
+Total | 946 195 | 124 664 | / | 1 070 859
+A-1.3: GHG emissions by source sectors
+Base year | 2022
+Unit | tCO2eq
+Scope 1 | Scope 2 | Scope 3 | Total
+Buildings | 253 371 | 44 701 | / | 298 072
+(Fuel type/ energy used) | Oil products: 26 567
 Natural Gas: 195 219
 Heating networks: 31 585 | Electricity: 44 701 |  |   |
-|  Transport | 307 270 | 919 | / | 308 189  |
-|  (Fuel type/ energy used) | Oil products: 303 849
+Transport | 307 270 | 919 | / | 308 189
+(Fuel type/ energy used) | Oil products: 303 849
 Natural Gas: 3 421 | Electricity: 919 |  |   |
-|  Energy Industry | 54 039 | / | / | 54 039  |
-|  (Fuel type/ energy used) | Natural Gas: 11 211
+Energy Industry | 54 039 | / | / | 54 039
+(Fuel type/ energy used) | Natural Gas: 11 211
 Thermal renewable Energies:42 828 | / |  |   |
-|  Waste | 73 267 | / | / | 73 267  |
-|  (Fuel type/ energy used) | Thermal renewable Energies:73 267 |  |  |   |
-|  Industrial Process and Product Use (IPPU) | 65 395 | 11 902 | / | 77 297  |
-|  (Fuel type/ energy used) | Oil products: 32 132
+Waste | 73 267 | / | / | 73 267
+(Fuel type/ energy used) | Thermal renewable Energies:73 267
+Industrial Process and Product Use (IPPU) | 65 395 | 11 902 | / | 77 297
+(Fuel type/ energy used) | Oil products: 32 132
 Natural Gas: 33 263 | Electricity: 11 902 |  |   |
-|  Agricultural, Forestry and Land Use (AFOLU) | 9 377 | 92 | / | 9 469  |
-|  (Fuel type/ energy used) | Oil products: 3 282
+Agricultural, Forestry and Land Use (AFOLU) | 9 377 | 92 | / | 9 469
+(Fuel type/ energy used) | Oil products: 3 282
 Natural Gas: 518
 Other fuel: 1 272
 Non-energy: 4 304 | Electricity : 92 |  |   |
-|  Total | 762 719 | 57 614 | / | 820 333  |
+Total | 762 719 | 57 614 | / | 820 333
 DJON Alphaprote
 
 Climate Neutrality Action Plan
@@ -1082,12 +1076,11 @@ Climate Neutrality Action Plan
 
 0
 
-|   | on water resources |  |   |
-| --- | --- | --- | --- |
-|  Sustainable agriculture | Prodij ‘Eat Better, Produce Better’ programme | In process | Joint contract for the preparation and supply of meals for school restaurants, out-of-school facilities and early childhood facilities for 23 cities of the metropolis  |
-|   |  Dijon sustainable food 2030 “Chouette cantine” programm | In process | Food transition towards local, quality production, including processing and distribution. Food is sourced from six producers on the Manger bio Bourgogne-Franche-Comté platform, five in the Côte-d'Or, one in the Jura and one in the Bourgogne-Franche-Comté region.  |
-|   |   | In process | Since 2022, the ‘Chouette cantine’ programme has been studying children's food satisfaction using a system of satisfaction terminals. It also the importance of awareness-raising awareness-raising workshops among schoolchildren.  |
-|  Health and living environment | Local health contract 2024-2028 | In process | Improving access to rights and healthcare, in particular by developing coordinated practice and experimenting with health mediation in areas with the most vulnerable populations :
+on water resources
+Sustainable agriculture | Prodij ‘Eat Better, Produce Better’ programme | In process | Joint contract for the preparation and supply of meals for school restaurants, out-of-school facilities and early childhood facilities for 23 cities of the metropolis
+Dijon sustainable food 2030 “Chouette cantine” programm | In process | Food transition towards local, quality production, including processing and distribution. Food is sourced from six producers on the Manger bio Bourgogne-Franche-Comté platform, five in the Côte-d'Or, one in the Jura and one in the Bourgogne-Franche-Comté region.
+In process | Since 2022, the ‘Chouette cantine’ programme has been studying children's food satisfaction using a system of satisfaction terminals. It also the importance of awareness-raising awareness-raising workshops among schoolchildren.
+Health and living environment | Local health contract 2024-2028 | In process | Improving access to rights and healthcare, in particular by developing coordinated practice and experimenting with health mediation in areas with the most vulnerable populations :
 Promoting mental health by deploying awareness-raising and training initiatives and training, and by strengthening the mobile home care team (EMAS);
 Promoting the health of children and young people in the following areas: parenting, psychosocial skills, nutrition and addictive behaviour;
 Invest in environmental health, particularly in the fields of run-down housing, indoor air quality and vector-borne infectious diseases;
@@ -1226,17 +1219,16 @@ Climate Neutrality Action Plan
 
 7
 
-|  Difficulty of access and lack of skills linked to data, methodological differences between players, construction of different indicators which makes it difficult for players to work together. | Development of shared solutions  |
-| --- | --- |
-|  Importance of the number of players and residents involved in the climate transition to achieve objectives | Rely on volunteers and implement a long-term commitment strategy, diversifying mobilization partners and approaches.
+Difficulty of access and lack of skills linked to data, methodological differences between players, construction of different indicators which makes it difficult for players to work together. | Development of shared solutions
+Importance of the number of players and residents involved in the climate transition to achieve objectives | Rely on volunteers and implement a long-term commitment strategy, diversifying mobilization partners and approaches.
 Developing shared solutions  |
-|  The climate transition requires a great deal of research and innovation. | Strengthen capacity to work on innovative projects  |
-|  A number of issues go beyond the geographical boundaries of the region | Developing extra-territorial cooperation  |
-|  A system of standards that has not been updated, slowing down the deployment of high-impact actions (e.g., the sizing of installations must now take into account the climatic rigor defined several years earlier). | Lobbying for changes to current standards  |
-|  Instability and volatility of energy prices | Mutualized approach, setting up collective self-consumption systems, with long-term purchase contracts, storage systems and energy management systems.  |
-|  Recruitment difficulties in the transition professions | Attractiveness and training of new professions or evolution of existing professions  |
-|  National regulations | Lobbying to change laws  |
-|  Public procurement contracts do not allow us to promote the purchase of local products and to work on local and sustainable supply chains (e.g. food products). | Allow local authorities to make food purchases by mutual agreement, using short, sustainable channels.  |
+The climate transition requires a great deal of research and innovation. | Strengthen capacity to work on innovative projects
+A number of issues go beyond the geographical boundaries of the region | Developing extra-territorial cooperation
+A system of standards that has not been updated, slowing down the deployment of high-impact actions (e.g., the sizing of installations must now take into account the climatic rigor defined several years earlier). | Lobbying for changes to current standards
+Instability and volatility of energy prices | Mutualized approach, setting up collective self-consumption systems, with long-term purchase contracts, storage systems and energy management systems.
+Recruitment difficulties in the transition professions | Attractiveness and training of new professions or evolution of existing professions
+National regulations | Lobbying to change laws
+Public procurement contracts do not allow us to promote the purchase of local products and to work on local and sustainable supply chains (e.g. food products). | Allow local authorities to make food purchases by mutual agreement, using short, sustainable channels.
 
 # Systemic transition management:
 
@@ -1303,17 +1295,16 @@ This approach also makes it possible to **consolidate an overall vision of terri
 
 This multi-levers approach recognizes that the ecological transition cannot succeed through technical innovation or regulation alone, but requires the coordinated activation of different modes of transformation. Levers act as catalysts which, together, remove barriers to implementation and create the conditions for systemic change.
 
-|  **Technological solutions, implementation techniques** | Ex: heat pump
+**Technological solutions, implementation techniques** | Ex: heat pump
 Ex: tree planting | **Systemic action levers (x 5)**  |
-| --- | --- | --- |
-|  **Governance (policy and regulation)** | Ex: Partnerships, contractualization (Climate and Biodiversity Contract, for example)
+**Governance (policy and regulation)** | Ex: Partnerships, contractualization (Climate and Biodiversity Contract, for example)
 Ex: Data sharing
 Ex: ZFE or ZAN or PLUI-HD |   |
-|  **Social innovation, new uses** | e.g. car-sharing applications
+**Social innovation, new uses** | e.g. car-sharing applications
 E.g.: complementary services at mobility hubs
 E.g.: raising awareness and encouraging action on mitigation and adaptation issues (climate fresco) |   |
-|  **Financing and business models, legal structures, purchasing clauses** | e.g. transport on demand, mobility as a service |   |
-|  **Sectors and capacities** | E.g.: experiments in real-life conditions, innovations (Response project)
+**Financing and business models, legal structures, purchasing clauses** | e.g. transport on demand, mobility as a service
+**Sectors and capacities** | E.g.: experiments in real-life conditions, innovations (Response project)
 E.g.: training in transition professions, recruitment, network of expertise |   |
 
 The expected benefits defined by NetZeroCities: GHG &amp; energy, health &amp; environment, social, economic, resources and biodiversity
@@ -1466,8 +1457,8 @@ Ability to be challenged throughout the project by the EU, local stakeholders an
 Shared management of Action Plan actions difficult to structure and coordinate.
 Insufficient cross-functional coordination between metropolitan departments, hampered by organizational silos
 Lack of project vision within the local authority to lead the transition (climate transition is a project)  |
-|  Opportunities | Threats  |
-|  - Continuous improvement of the methodological base (CMCB, IP, etc.)
+Opportunities | Threats
+- Continuous improvement of the methodological base (CMCB, IP, etc.)
 Ongoing development of cooperation, with recurrent analysis of changes in the scope of players involved
 The MCCB is a powerful lever for the development of future cooperation projects, providing strategic and integrated management of project portfolios.
 Pursue the dynamic of responding to European calls for tenders in order to continuously strengthen and refine our strategic and methodological approach
@@ -1739,24 +1730,23 @@ C
 
 Table summarising the pathways/action sheets and their main links with the objectives.
 
-| AXES | AREAS | OBJECTIVES OF THE CLIMATE AND BIODIVERSITY PLAN | N° | ACTION SHEETS | Organisation responsible for the action sheet |
-| --- | --- | --- | --- | --- | --- |
-| Mitigation | Neutrality 2030 | MOBILITY | Contribute to a gradual reduction in the role of the car in the daily lives of residents | 1 | Developing active mobility and encouraging calmer public spaces | Dijon Métropole - Mobility Department |
-| 2 | Developing public transport services | Dijon Métropole - Mobility Department |
-| 3 | Development of low-carbon and carbon-free vehicles | Dijon Métropole - Energy strategy department |
-| Encourage the development of solutions to reduce and optimise commuter and freight flows by car | 4 | Developing sustainable urban logistics | Dijon Métropole - Territory and projects department |
-| 5 | Developing a coordinated transport offer for the urban area | Dijon Métropole - Territory and projects department |
-| HOUSING AND BUILDINGS | Reducing energy consumption and greenhouse gas emissions from buildings | 6 | Decarbonising and reducing energy consumption in existing homes | Dijon Métropole - Housing department |
-| 7 | Decarbonising and reducing energy consumption in the tertiary and industrial sectors (excluding processes) | Dijon Métropole - Energy strategy department |
-| Develop, renovate and build to enhance ecological functions and biodiversity | 8 | Reducing the climate and biodiversity impacts of development and construction projects (public spaces and buildings) | Dijon Métropole - PLUI Department |
-| 9 | Developing renewable electricity generation | Dijon Métropole - Energy strategy department |
-| PROD ENERGIE | Developing local production of renewable and recovered energy sources | 10 | Developing renewable gas production | Dijon Métropole - Energy strategy department |
-| 11 | Developing the production of renewable thermal energy | Dijon Métropole - Buildings and Energy Department |
-| 12 | Development of energy management | Dijon Métropole - Urban Ecology Department |
-| Controlling the impact of the development of renewable energies on resources |  | Included in the action sheets responding to the first objective in the energy production field | Dijon Métropole - Energy strategy department |
-|  |  | PROD CONSO GOODS & SERVICES | Adopting consumption patterns that emit less greenhouse gas, are more respectful of resources and reduce our waste production | 13 | Encouraging the consumption of local products and supporting changes in behaviour | Dijon Métropole - Public procurement department |
-| Supporting the reduction of the environmental impact of the activities of local businesses | 14 | Promoting the circular economy, reducing the impact of industrial processes on the climate, biodiversity, resources and health | Dijon Métropole - Waste recycling department |
-| ACDI ANIMATIONS AREAS | Promoting low-carbon farming practices throughout the urban area that preserve and enhance biodiversity |  | Included in the action sheet for the food sector | Dijon Métropole - Sustainable Food Department |
+AXES | AREAS | OBJECTIVES OF THE CLIMATE AND BIODIVERSITY PLAN | N° | ACTION SHEETS | Organisation responsible for the action sheet
+Mitigation | Neutrality 2030 | MOBILITY | Contribute to a gradual reduction in the role of the car in the daily lives of residents | 1 | Developing active mobility and encouraging calmer public spaces | Dijon Métropole - Mobility Department
+2 | Developing public transport services | Dijon Métropole - Mobility Department
+3 | Development of low-carbon and carbon-free vehicles | Dijon Métropole - Energy strategy department
+Encourage the development of solutions to reduce and optimise commuter and freight flows by car | 4 | Developing sustainable urban logistics | Dijon Métropole - Territory and projects department
+5 | Developing a coordinated transport offer for the urban area | Dijon Métropole - Territory and projects department
+HOUSING AND BUILDINGS | Reducing energy consumption and greenhouse gas emissions from buildings | 6 | Decarbonising and reducing energy consumption in existing homes | Dijon Métropole - Housing department
+7 | Decarbonising and reducing energy consumption in the tertiary and industrial sectors (excluding processes) | Dijon Métropole - Energy strategy department
+Develop, renovate and build to enhance ecological functions and biodiversity | 8 | Reducing the climate and biodiversity impacts of development and construction projects (public spaces and buildings) | Dijon Métropole - PLUI Department
+9 | Developing renewable electricity generation | Dijon Métropole - Energy strategy department
+PROD ENERGIE | Developing local production of renewable and recovered energy sources | 10 | Developing renewable gas production | Dijon Métropole - Energy strategy department
+11 | Developing the production of renewable thermal energy | Dijon Métropole - Buildings and Energy Department
+12 | Development of energy management | Dijon Métropole - Urban Ecology Department
+Controlling the impact of the development of renewable energies on resources | Included in the action sheets responding to the first objective in the energy production field | Dijon Métropole - Energy strategy department
+PROD CONSO GOODS & SERVICES | Adopting consumption patterns that emit less greenhouse gas, are more respectful of resources and reduce our waste production | 13 | Encouraging the consumption of local products and supporting changes in behaviour | Dijon Métropole - Public procurement department
+Supporting the reduction of the environmental impact of the activities of local businesses | 14 | Promoting the circular economy, reducing the impact of industrial processes on the climate, biodiversity, resources and health | Dijon Métropole - Waste recycling department
+ACDI ANIMATIONS AREAS | Promoting low-carbon farming practices throughout the urban area that preserve and enhance biodiversity | Included in the action sheet for the food sector | Dijon Métropole - Sustainable Food Department
 0
 
 Dijon
@@ -1795,22 +1785,21 @@ Plan
 
 Table of expected effects by objective
 
-|  | Objectives | Expected systemic effects |
-| --- | --- | --- |
-|  | Energy-efficient renovation of buildings | -Space planning and construction of efficient buildings | -Flexibility and control of usage | -Development of renewable energies (electricity, gas, heat) | -Optimising and decarbonising mobility flows within the region | -Reducing, optimising and decarbonising incoming and outgoing mobility flows (commuting by car and freight) | Promoting alternative modes of consumption and waste management | Promoting alternative ways of producing and managing waste | -Development of new ways of managing nature areas | -Developments to protect water resources in our region | -Supporting those most vulnerable to change | -Supporting economic players in tackling the challenges of decarbonisation | -Strengthening our resilience to better manage the hazards associated with climate change and the increasing scarcity and erosion of resources | -Development favourable to the development of natural ecosystem functions |
-| neutrality 2030 | Contribute to a gradual reduction in the role of the car in the daily lives of residents |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| Encourage the development of solutions to reduce and optimise commuter and freight flows by car |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| Reducing energy consumption and greenhouse gas emissions from buildings |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| Develop, renovate and build to enhance ecological functions and biodiversity |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| Developing local production of renewable and recovered energy sources |  |  |  |  |  |  |  |  |  |  |  |  |  |
-|  | Controlling the impact of the development of renewable energies on resources |  |  |  |  |  |  |  |  |  |  |  |  |  |
-|  | Adapting consumption patterns that emit less greenhouse gas, are more respectful of resources and reduce our waste production |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| Helping to reduce the environmental impact of the region's industries |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| Encouraging low-carbon farming practices throughout the urban area that preserve and enhance biodiversity |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| Promoting ecological management of public and private natural spaces and maintaining carbon sinks |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| Restore the natural cycle of rainwater in our region and use it sustainably |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| Adapting our water consumption to availability, reducing it and optimising its use |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| Promoting healthy, sustainable food accessible to all |  |  |  |  |  |  |  |  |  |  |  |  |  |
+Objectives | Expected systemic effects
+Energy-efficient renovation of buildings | -Space planning and construction of efficient buildings | -Flexibility and control of usage | -Development of renewable energies (electricity, gas, heat) | -Optimising and decarbonising mobility flows within the region | -Reducing, optimising and decarbonising incoming and outgoing mobility flows (commuting by car and freight) | Promoting alternative modes of consumption and waste management | Promoting alternative ways of producing and managing waste | -Development of new ways of managing nature areas | -Developments to protect water resources in our region | -Supporting those most vulnerable to change | -Supporting economic players in tackling the challenges of decarbonisation | -Strengthening our resilience to better manage the hazards associated with climate change and the increasing scarcity and erosion of resources | -Development favourable to the development of natural ecosystem functions
+neutrality 2030 | Contribute to a gradual reduction in the role of the car in the daily lives of residents
+Encourage the development of solutions to reduce and optimise commuter and freight flows by car
+Reducing energy consumption and greenhouse gas emissions from buildings
+Develop, renovate and build to enhance ecological functions and biodiversity
+Developing local production of renewable and recovered energy sources
+Controlling the impact of the development of renewable energies on resources
+Adapting consumption patterns that emit less greenhouse gas, are more respectful of resources and reduce our waste production
+Helping to reduce the environmental impact of the region's industries
+Encouraging low-carbon farming practices throughout the urban area that preserve and enhance biodiversity
+Promoting ecological management of public and private natural spaces and maintaining carbon sinks
+Restore the natural cycle of rainwater in our region and use it sustainably
+Adapting our water consumption to availability, reducing it and optimising its use
+Promoting healthy, sustainable food accessible to all
 bion
 milapole
 
@@ -1818,19 +1807,18 @@ Climate Neutrality Action Plan
 
 C
 
-|  | Objectives | Expected systemic effects |
-| --- | --- | --- |
-|  | Energy-efficient renovation of buildings | -Space planning and construction of efficient buildings | -Flexibility and control of usage | -Development of renewable energies (electricity, gas, heat) | -Optimising and decarbonising mobility flows within the region | -Reducing, optimising and decarbonising incoming and outgoing mobility flows (commuting by car and freight) | -Promoting alternative modes of consumption and waste management | -Promoting alternative ways of producing and managing waste | -Development of new ways of managing nature areas | -Developments to protect water resources in our region | -Supporting those most vulnerable to change | -Supporting economic players in tackling the challenges of decarbonisation | -Strengthening our resilience to better manage the hazards associated with climate change and the increasing scarcity and erosion of resources | -Development favourable to the development of natural ecosystem functions |
-| Co-benefits | Increase the proportion of local supplies and ensure that producers are fairly remunerated |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| Adapting metropolitan public policies to vulnerabilities linked to environmental crises |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| Supporting residents most at risk |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| Stimulating and supporting the decarbonisation of economic activities and reducing their impact on the environment |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| Promoting a sustainable economic development model that creates wealth throughout the urban area |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| Supporting professional transitions and the attractiveness of professions |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| Promoting a culture of risk and hazard management in our region |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| Offering everyone a resilient, healthy region with a high quality of life |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| Strengthening and improving the quality of our ecological continuity and ecosystem services |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| Making biodiversity an ally in the transition of our region |  |  |  |  |  |  |  |  |  |  |  |  |  |
+Objectives | Expected systemic effects
+Energy-efficient renovation of buildings | -Space planning and construction of efficient buildings | -Flexibility and control of usage | -Development of renewable energies (electricity, gas, heat) | -Optimising and decarbonising mobility flows within the region | -Reducing, optimising and decarbonising incoming and outgoing mobility flows (commuting by car and freight) | -Promoting alternative modes of consumption and waste management | -Promoting alternative ways of producing and managing waste | -Development of new ways of managing nature areas | -Developments to protect water resources in our region | -Supporting those most vulnerable to change | -Supporting economic players in tackling the challenges of decarbonisation | -Strengthening our resilience to better manage the hazards associated with climate change and the increasing scarcity and erosion of resources | -Development favourable to the development of natural ecosystem functions
+Co-benefits | Increase the proportion of local supplies and ensure that producers are fairly remunerated
+Adapting metropolitan public policies to vulnerabilities linked to environmental crises
+Supporting residents most at risk
+Stimulating and supporting the decarbonisation of economic activities and reducing their impact on the environment
+Promoting a sustainable economic development model that creates wealth throughout the urban area
+Supporting professional transitions and the attractiveness of professions
+Promoting a culture of risk and hazard management in our region
+Offering everyone a resilient, healthy region with a high quality of life
+Strengthening and improving the quality of our ecological continuity and ecosystem services
+Making biodiversity an ally in the transition of our region
 buon
 
 provincie
@@ -1843,42 +1831,34 @@ Plan
 
 Table of expected effects by pathway/action sheets
 
-|   |   | Energy-efficient renovation of buildings | -Space planning and construction of efficient buildings | -Flexibility and control of usage | -Development of renewable energies (electricity, gas, heat) | -Optimising and decarbonising mobility flows within the region | -Reducing, optimising and decarbonising incoming and outgoing mobility flows (commuting by car and freight) | -Promoting alternative modes of consumption and waste management | -Promoting alternative ways of producing and managing waste | -Development of new ways of managing nature areas | -Development of new ways of managing nature areas | -Developments to protect water resources in our region | -Supporting those most vulnerable to change | -Supporting economic players in tackling the challenges of decarbonisation | Strengthening our resilience to better manage the hazards associated with climate change and the increasing scarcity and erosion of resources | Development favourable to the development of natural ecosystem functions  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  N° | ACTION SHEETS | Assessment of the expected systemic effects of the actions  |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|  1 | Developing active mobility and encouraging calmer public spaces |  | yes |  | yes | yes | yes | yes | yes |  | yes | yes | yes | yes | yes | yes  |
-|  2 | Developing public transport services |  |  | yes | yes | yes | yes | yes |  |  |  | yes |  | yes |  |   |
-|  3 | Development of low-carbon and carbon-free vehicles |  |  |  |  | yes | yes | yes |  |  |  | yes | yes | yes |  |   |
-|  4 | Developing sustainable urban logistics |  | yes |  | yes | yes | yes | yes |  |  |  |  | yes |  |  |   |
-|  5 | Developing a coordinated transport offer for the urban area |  | yes | yes | yes | yes | yes | yes | yes |  | yes | yes | yes |  |  |   |
-|  |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|  6 | Decarbonising and reducing energy consumption in existing homes | yes |  | yes | yes | yes |  | yes | yes |  | yes | yes | yes | yes |  |   |
-|  7 | Decarbonising and reducing energy consumption in the tertiary and industrial sectors (excluding processes) | yes |  | yes | yes | yes |  | yes | yes |  | yes | yes | yes | yes |  |   |
-|  8 | Reducing the climate and biodiversity impacts of development and construction projects (public spaces and buildings) |  | yes |  | yes | yes |  | yes | yes | yes | yes | yes | yes | yes | yes |   |
-|  |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|  9 | Developing renewable electricity generation | yes | yes | yes | yes | yes |  |  | yes |  |  | yes | yes | yes |  |   |
-|  10 | Developing renewable gas production | yes |  | yes | yes | yes |  | yes | yes |  |  |  | yes | yes | yes |   |
+Energy-efficient renovation of buildings | -Space planning and construction of efficient buildings | -Flexibility and control of usage | -Development of renewable energies (electricity, gas, heat) | -Optimising and decarbonising mobility flows within the region | -Reducing, optimising and decarbonising incoming and outgoing mobility flows (commuting by car and freight) | -Promoting alternative modes of consumption and waste management | -Promoting alternative ways of producing and managing waste | -Development of new ways of managing nature areas | -Development of new ways of managing nature areas | -Developments to protect water resources in our region | -Supporting those most vulnerable to change | -Supporting economic players in tackling the challenges of decarbonisation | Strengthening our resilience to better manage the hazards associated with climate change and the increasing scarcity and erosion of resources | Development favourable to the development of natural ecosystem functions
+N° | ACTION SHEETS | Assessment of the expected systemic effects of the actions
+1 | Developing active mobility and encouraging calmer public spaces | yes | yes | yes | yes | yes | yes | yes | yes | yes | yes | yes | yes
+2 | Developing public transport services | yes | yes | yes | yes | yes | yes | yes
+3 | Development of low-carbon and carbon-free vehicles | yes | yes | yes | yes | yes | yes
+4 | Developing sustainable urban logistics | yes | yes | yes | yes | yes | yes
+5 | Developing a coordinated transport offer for the urban area | yes | yes | yes | yes | yes | yes | yes | yes | yes | yes
+6 | Decarbonising and reducing energy consumption in existing homes | yes | yes | yes | yes | yes | yes | yes | yes | yes | yes
+7 | Decarbonising and reducing energy consumption in the tertiary and industrial sectors (excluding processes) | yes | yes | yes | yes | yes | yes | yes | yes | yes | yes
+8 | Reducing the climate and biodiversity impacts of development and construction projects (public spaces and buildings) | yes | yes | yes | yes | yes | yes | yes | yes | yes | yes | yes
+9 | Developing renewable electricity generation | yes | yes | yes | yes | yes | yes | yes | yes | yes
+10 | Developing renewable gas production | yes | yes | yes | yes | yes | yes | yes | yes | yes
 bujon
 perespole
 Climate Neutrality Action
 Plan
 C
 
-|   |   | Energy-efficient renovation of buildings | -Space planning and construction of efficient buildings | -Flexibility and control of usage | Development of renewable energies (electricity, gas, heat) | -Optimising and decarbonising mobility flows within the region | -Reducing, optimising and decarbonising incoming and outgoing mobility flows (commuting by car and freight) | -Promoting alternative modes of consumption and waste management | -Promoting alternative ways of producing and managing waste | -Development of new ways of managing nature areas | Development of new ways of managing nature areas | Development of new ways of managing nature areas | -Supporting those most vulnerable to change | -Supporting economic players in tackling the challenges of decarbonisation | Strengthening our resilience to better manage the hazards associated with climate change and the increasing scarcity and erosion of resources | -Development favourable to the development of natural ecosystem functions  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  N° | ACTION SHEETS | Assessment of the expected systemic effects of the actions  |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|  11 | Developing the production of renewable thermal energy | yes | yes | yes | yes |  |  | yes | yes |  |  | yes | yes | yes | yes | yes  |
-|  12 | Development of energy management | yes | yes | yes |  | yes |  | yes | yes |  |  | yes | yes | yes |  |   |
-|   |  Included in the action sheets responding to the first objective in the energy production field |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|  |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|  13 | Encouraging the consumption of local products and supporting changes in behaviour | yes | yes |  | yes | yes | yes | yes | yes | yes | yes | yes | yes | yes | yes | yes  |
-|  14 | Promoting the circular economy, reducing the impact of industrial processes on the climate, biodiversity, resources and health | yes | yes | yes |  |  |  | yes | yes |  |  | yes | yes | yes |  |   |
-|   |  |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|   | Included in the action sheet for the food sector |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|   |  Included in the action sheet for services to nature |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|   |  |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|  15 | Planning the management of water resources and adapting infrastructures | yes | yes |  |  |  |  | yes |  | yes | yes | yes |  | yes | yes | yes  |
-|  |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+Energy-efficient renovation of buildings | -Space planning and construction of efficient buildings | -Flexibility and control of usage | Development of renewable energies (electricity, gas, heat) | -Optimising and decarbonising mobility flows within the region | -Reducing, optimising and decarbonising incoming and outgoing mobility flows (commuting by car and freight) | -Promoting alternative modes of consumption and waste management | -Promoting alternative ways of producing and managing waste | -Development of new ways of managing nature areas | Development of new ways of managing nature areas | Development of new ways of managing nature areas | -Supporting those most vulnerable to change | -Supporting economic players in tackling the challenges of decarbonisation | Strengthening our resilience to better manage the hazards associated with climate change and the increasing scarcity and erosion of resources | -Development favourable to the development of natural ecosystem functions
+N° | ACTION SHEETS | Assessment of the expected systemic effects of the actions
+11 | Developing the production of renewable thermal energy | yes | yes | yes | yes | yes | yes | yes | yes | yes | yes | yes
+12 | Development of energy management | yes | yes | yes | yes | yes | yes | yes | yes | yes
+Included in the action sheets responding to the first objective in the energy production field
+13 | Encouraging the consumption of local products and supporting changes in behaviour | yes | yes | yes | yes | yes | yes | yes | yes | yes | yes | yes | yes | yes | yes
+14 | Promoting the circular economy, reducing the impact of industrial processes on the climate, biodiversity, resources and health | yes | yes | yes | yes | yes | yes | yes | yes
+Included in the action sheet for the food sector
+Included in the action sheet for services to nature
+15 | Planning the management of water resources and adapting infrastructures | yes | yes | yes | yes | yes | yes | yes | yes | yes
 
 8
 bujon
@@ -1917,19 +1897,17 @@ Climate Neutrality Action Plan
 
 O
 
-|  Dijon Metropolis - CCC / Action Plan - Transition Pathway  |   |   |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  number |   | name  |   |   |   |   |   |
-|  Action sheet number | 1 | Action sheet name | Developing active mobility and encourage the calming of public spaces  |   |   |   |   |
-|  manager |   | domain |   | period |   | progress  |   |
-|  Person responsible for the action sheet | Dijon métropole - Mobility Department | Main area | Mobility | Action period | 2024-2030 | Advancement | Implementation  |
-|  |   |   |   |   |   |   |   |
-|  Trajectory  |   |   |   |   |   |   |   |
-|  Action description |   | The development of active mobility and the calming of public spaces aim to promote sustainable modes of transport, such as walking and cycling, while reducing motorized traffic. This involves creating appropriate infrastructure (cycle paths, pedestrian zones), implementing safety measures (speed reduction, pedestrian facilities) and improving accessibility. The aim is to create a healthier, more pleasant and convivial urban environment, while reducing pollution and strengthening social ties.  |   |   |   |   |   |
-|  Stakeholders involved | 0 | Dijon métropole | 0 | Actors socio-economic players | 0 | Municipalities and extra-territorial institutional players  |   |
-|   |   |  0 | Municipalities and institutional players |  | Residents & users |  | Actors socio-economic actors  |
-|  Main milestones |   | 2026 | Progress report and new program | 2028 | Progress report | 2030 | Completion  |
-|  Financial estimate |   | Estimated cost 2030 Ambitious scenario | 454 000 000 € | Estimated cost 2030 Neutrality scenario | 790 000 000 € | Cost in € / tCO2 (Ambitious) | 22 200 €  |
+Dijon Metropolis - CCC / Action Plan - Transition Pathway
+number | name
+Action sheet number | 1 | Action sheet name | Developing active mobility and encourage the calming of public spaces
+manager | domain | period | progress
+Person responsible for the action sheet | Dijon métropole - Mobility Department | Main area | Mobility | Action period | 2024-2030 | Advancement | Implementation
+Trajectory
+Action description | The development of active mobility and the calming of public spaces aim to promote sustainable modes of transport, such as walking and cycling, while reducing motorized traffic. This involves creating appropriate infrastructure (cycle paths, pedestrian zones), implementing safety measures (speed reduction, pedestrian facilities) and improving accessibility. The aim is to create a healthier, more pleasant and convivial urban environment, while reducing pollution and strengthening social ties.
+Stakeholders involved | 0 | Dijon métropole | 0 | Actors socio-economic players | 0 | Municipalities and extra-territorial institutional players
+0 | Municipalities and institutional players | Residents & users | Actors socio-economic actors
+Main milestones | 2026 | Progress report and new program | 2028 | Progress report | 2030 | Completion
+Financial estimate | Estimated cost 2030 Ambitious scenario | 454 000 000 € | Estimated cost 2030 Neutrality scenario | 790 000 000 € | Cost in € / tCO2 (Ambitious) | 22 200 €
 Climate Neutrality Action Plan
 
 2
@@ -1971,14 +1949,11 @@ Climate Neutrality Action Plan
 
 # Key policies, documents or strategic studies
 
-|  Dijon Métropole | Projects of public spaces modernization (October 30, rue Monge) | Dijon Métropole | Programm of public spaces modernization | PLUi-HD | Plan local d'urbanisme (regulatory) | Divia | Divia as a global mobility operator on the territory  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  project3 |  | project4 |  | document3 |  | document4 |   |
-|  Dijon Métropole / VNF | Development of the Burgundy canal in the Dijon metropolitan area - Mobility section |  |  | SD Mobilités | Active mobility master plan (strategy and programming) |  |   |
-|  project5 |  | project6 |  | document5 |  | document6 |   |
-|  |   |   |   |   |   |   |   |
-|  project7 |  | project8 |  | document7 |  | document8 |   |
-|  |   |   |   |   |   |   |   |
+Dijon Métropole | Projects of public spaces modernization (October 30, rue Monge) | Dijon Métropole | Programm of public spaces modernization | PLUi-HD | Plan local d'urbanisme (regulatory) | Divia | Divia as a global mobility operator on the territory
+project3 | project4 | document3 | document4
+Dijon Métropole / VNF | Development of the Burgundy canal in the Dijon metropolitan area - Mobility section | SD Mobilités | Active mobility master plan (strategy and programming)
+project5 | project6 | document5 | document6
+project7 | project8 | document7 | document8
 buon
 
 Climate Neutrality Action Plan
@@ -2003,18 +1978,16 @@ Climate Neutrality Action Plan
 
 #
 
-|  Dijon Metropolis - CCC / Action Plan - Transition Pathway  |   |   |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  ,number  |   |   |   |   |   |   |   |
-|  Action sheet number | 1 | Action sheet name | Developing active mobility and encourage the calming of public spaces  |   |   |   |   |
-|  Person responsible for the action sheet | Dijon métropole - Mobility Department | Main area | Mobility | Action period | 2024-2030 | Advancement | Implementation  |
-|  Systemic action levers to mobilize  |   |   |   |   |   |   |   |
-|  Social innovation &amp; social change | social1 | social2 | social3 |  |  |  |   |
-|   |  Develop services to facilitate bicycle use: secure bicycle racks and parking, repair and inflation stations/workshops, with priority given to locations close to people's homes. | Deploy repair and inflation stations/workshops | Study the reduction of flows and speeds by neighborhood |  |  |  |   |
-|   |  social4 | social5 | social6 |  |  |  |   |
-|  Capacity &amp; capabilities | Raising residents' awareness of active mobility | capacites1 | capacites2 | capacites3 |  |  |   |
-|   |  working on data / active mobility | capacites4 | capacites5 | capacites6 |  |  |   |
-|   |  |   |   |   |   |   |   |
+Dijon Metropolis - CCC / Action Plan - Transition Pathway
+,number
+Action sheet number | 1 | Action sheet name | Developing active mobility and encourage the calming of public spaces
+Person responsible for the action sheet | Dijon métropole - Mobility Department | Main area | Mobility | Action period | 2024-2030 | Advancement | Implementation
+Systemic action levers to mobilize
+Social innovation &amp; social change | social1 | social2 | social3
+Develop services to facilitate bicycle use: secure bicycle racks and parking, repair and inflation stations/workshops, with priority given to locations close to people's homes. | Deploy repair and inflation stations/workshops | Study the reduction of flows and speeds by neighborhood
+social4 | social5 | social6
+Capacity &amp; capabilities | Raising residents' awareness of active mobility | capacites1 | capacites2 | capacites3
+working on data / active mobility | capacites4 | capacites5 | capacites6
 buon
 
 Climate Neutrality Action Plan
@@ -2038,14 +2011,11 @@ Climate Neutrality Action Plan
 
 # Impacts &amp; Co-benefits
 
-|  Domain | Indicator | Objective 2030 | Unit | Reference | Reference year  |
-| --- | --- | --- | --- | --- | --- |
-|  Greenhouse gases | GHG emission savings | 20 460 | tCO2eq |  |   |
-|  Greenhouse gases | Development of electric-assist bicycles | 0,5 | GWh / year |  |   |
-|  Social inclusion | Bicycle modal share | 12 | % | 2 | 2016  |
-|  Social inclusion | Pedestrian modal share | 30 | % | 30 | 2016  |
-|  |   |   |   |   |   |
-|  |   |   |   |   |   |
+Domain | Indicator | Objective 2030 | Unit | Reference | Reference year
+Greenhouse gases | GHG emission savings | 20 460 | tCO2eq
+Greenhouse gases | Development of electric-assist bicycles | 0,5 | GWh / year
+Social inclusion | Bicycle modal share | 12 | % | 2 | 2016
+Social inclusion | Pedestrian modal share | 30 | % | 30 | 2016
 buon
 
 Climate Neutrality Action Plan
@@ -2064,18 +2034,13 @@ Climate Neutrality Action Plan
 
 # Attenuation
 
-|  MOBILITY | 0 | Contribute to a gradual reduction in the role of the car in the daily lives of residents | 0 | Promote the development of solutions to reduce and optimize commuter and freight flows by car  |
-| --- | --- | --- | --- | --- |
-|  BUILDING | contribution3 | contribution4  |
-| --- | --- | --- |
-|   | Reduce energy consumption and greenhouse gas emissions in buildings | 0 Develop, renovate and build to enhance ecological functions and biodiversity  |
-|  POWER GENERATION | contribution5 | contribution6  |
-| --- | --- | --- |
-|   | Developing the local production of renewable and recovered energies | Controlling the impact of renewable energy development on resources  |
-|  PRODUCTION AND CONSUMPTION OF GOODS AND SERVICES | 0 | Adopt consumption patterns that emit less greenhouse gas, are more respectful of resources and reduce our waste production | 0 | Reducing the environmental impact of local industries  |
-| --- | --- | --- | --- | --- |
-|  AGRICULTURE AND NATURE | 0 | Promote low-carbon agricultural practices throughout the urban area that preserve and enhance biodiversity | 0 | Promote ecological management of public and private natural areas and maintain carbon sinks  |
-| --- | --- | --- | --- | --- |
+MOBILITY | 0 | Contribute to a gradual reduction in the role of the car in the daily lives of residents | 0 | Promote the development of solutions to reduce and optimize commuter and freight flows by car
+BUILDING | contribution3 | contribution4
+Reduce energy consumption and greenhouse gas emissions in buildings | 0 Develop, renovate and build to enhance ecological functions and biodiversity
+POWER GENERATION | contribution5 | contribution6
+Developing the local production of renewable and recovered energies | Controlling the impact of renewable energy development on resources
+PRODUCTION AND CONSUMPTION OF GOODS AND SERVICES | 0 | Adopt consumption patterns that emit less greenhouse gas, are more respectful of resources and reduce our waste production | 0 | Reducing the environmental impact of local industries
+AGRICULTURE AND NATURE | 0 | Promote low-carbon agricultural practices throughout the urban area that preserve and enhance biodiversity | 0 | Promote ecological management of public and private natural areas and maintain carbon sinks
 Climate Neutrality Action Plan
 
 8
@@ -2090,23 +2055,22 @@ Climate Neutrality Action Plan
 
 # Adaptation
 
-|  WATER | contribution11
+WATER | contribution11
 O | Restore the natural cycle of stormwater on our territory and use it sustainably | contribution12
 O | Adapting our water consumption to availability, reducing it and optimizing its use  |
-| --- | --- | --- | --- | --- |
-|  SUSTAINABLE FOOD | contribution13
+SUSTAINABLE FOOD | contribution13
 O | Promoting healthy, sustainable food accessible to all | contribution14
 O | Increase local sourcing and guarantee fair remuneration for producers  |
-|  SOCIAL JUSTICE | contribution15
+SOCIAL JUSTICE | contribution15
 O | Adapting metropolitan public policies to subversibilities linked to environmental crises | contribution16
 O | Supporting residents most at risk  |
-|  ECONOMIC MUTATIONS | contribution17
+ECONOMIC MUTATIONS | contribution17
 O | Stimulating and supporting the decarbonization of economic activities and reducing their impact on the environment | contribution18
 O | Promote a sustainable economic development model that creates wealth throughout the urban area  |
-|  HEALTH, LIVING ENVIRONMENT, QUALITY OF LIFE | contribution20
+HEALTH, LIVING ENVIRONMENT, QUALITY OF LIFE | contribution20
 O | Promoting a culture of risk and hazard management in our territory | contribution21
 O | Offering everyone a resilient, healthy region with a high quality of life  |
-|  SERVICES PROVIDED BY NATURE | contribution22
+SERVICES PROVIDED BY NATURE | contribution22
 O | Strengthening and improving the quality of our ecological continuity and ecosystem services | contribution23
 O | Making biodiversity an ally in our region's transition  |
 buon
@@ -2127,10 +2091,8 @@ Climate Neutrality Action Plan
 
 SHARDED GOVERNANCE
 
-|  contribution24  |
-| --- |
-|  contribution25  |
-| --- |
+contribution24
+contribution25
 
 EXTRA-TERRITORIAL COOPERATION
 
@@ -2222,51 +2184,43 @@ Climate Neutrality Action Plan
 
 # Key policies, documents or strategic studies
 
-|  Dijon Métropole | Tranway extension | Dijon Métropole | Transport on Demand | PLUi-HD | Plan local d'urbanisme (regulatory) | Divia | Divia as a global mobility operator on the territory  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|   | project3 |  | project4 |  | document3 |  | document4  |
-|  |   |   |   |   |   |   |   |
-|   | project5 |  | project6 |  | document5 |  | document6  |
-|  |   |   |   |   |   |   |   |
-|   | project7 |  | project8 |  | document7 |  | document8  |
-|  |   |   |   |   |   |   |   |
+Dijon Métropole | Tranway extension | Dijon Métropole | Transport on Demand | PLUi-HD | Plan local d'urbanisme (regulatory) | Divia | Divia as a global mobility operator on the territory
+project3 | project4 | document3 | document4
+project5 | project6 | document5 | document6
+project7 | project8 | document7 | document8
 buon
 
 Climate Neutrality Action Plan
 
 #
 
-|  Dijon Metropolis - CCC / Action Plan - Transition Pathway  |   |   |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  number  |   |   |   |   |   |   |   |
-|  Action sheet number | 2 | Action sheet name | Development of public transit services  |   |   |   |   |
-|  Person responsible for the action sheet | Dijon métropole - Mobility Department | main area | Mobility | Action period | 2024-2030 | Advancement | Under study  |
-|  Systemic action levers to mobilize  |   |   |   |   |   |   |   |
-|  Technology | Improve existing services (times, distances) for each means of public transport (bus, streetcar) | Improving modal shift services between public transport |   | Experiment with draining, low-carbon, light-colored asphalt for public transit stops  |   |   |   |
-|   |  Instruct | Inches5 |   | Inches6  |   |   |   |
-|   |  Improving PRM access to public transport | Developing PV production to power transport infrastructure |   |   |   |   |   |
-|  Governance, policy & regulation | Develop the mobility payment: increase the mobility payment rate above 2.2% (lobbying the French government + consultation with local companies). | Develop inter-company mobility plans, particularly in large employment areas |   | Maintain an attractive rail transport offer for long-distance travel (TGV, TER)  |   |   |   |
-|   |  governance4 | governance2 |   | governance3  |   |   |   |
-|   |  |   |   |   |   |   |   |
+Dijon Metropolis - CCC / Action Plan - Transition Pathway
+number
+Action sheet number | 2 | Action sheet name | Development of public transit services
+Person responsible for the action sheet | Dijon métropole - Mobility Department | main area | Mobility | Action period | 2024-2030 | Advancement | Under study
+Systemic action levers to mobilize
+Technology | Improve existing services (times, distances) for each means of public transport (bus, streetcar) | Improving modal shift services between public transport | Experiment with draining, low-carbon, light-colored asphalt for public transit stops
+Instruct | Inches5 | Inches6
+Improving PRM access to public transport | Developing PV production to power transport infrastructure
+Governance, policy & regulation | Develop the mobility payment: increase the mobility payment rate above 2.2% (lobbying the French government + consultation with local companies). | Develop inter-company mobility plans, particularly in large employment areas | Maintain an attractive rail transport offer for long-distance travel (TGV, TER)
+governance4 | governance2 | governance3
 buon
 
 Climate Neutrality Action Plan
 
 #
 
-|  Dijon Metropolis - CCC / Action Plan - Transition Pathway  |   |   |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  ,number  |   |   |   |   |   |   |   |
-|  Action sheet number | 2 | Action sheet name | Development of public transit services  |   |   |   |   |
-|  Person responsible for the action sheet | Dijon métropole - Mobility Department | Manager | Man are | domain | period | Action period | progress  |
-|   |  | Mobilty |  |  | 2024-2030 | Advancement | Under study  |
-|  Systemic action levers to mobilize  |   |   |   |   |   |   |   |
-|  Social innovation &amp; social change | socia1 | socia2 | socia3 |  |  |  |   |
-|   |  Development of on-demand transport | Raising residents' awareness of car vs. public transport modal shift |  |  |  |  |   |
-|  Capacity &amp; capabilities | socia4 | socia5 | socia6 |  |  |  |   |
-|   |  capacitec1 | capacitec2 | capacitec3 |  |  |  |   |
-|  Structuring data on public transport mobility | capacitec4 | capacitec5 | capacitec6 |  |  |  |   |
-|   |  |   |   |   |   |   |   |
+Dijon Metropolis - CCC / Action Plan - Transition Pathway
+,number
+Action sheet number | 2 | Action sheet name | Development of public transit services
+Person responsible for the action sheet | Dijon métropole - Mobility Department | Manager | Man are | domain | period | Action period | progress
+Mobilty | 2024-2030 | Advancement | Under study
+Systemic action levers to mobilize
+Social innovation &amp; social change | socia1 | socia2 | socia3
+Development of on-demand transport | Raising residents' awareness of car vs. public transport modal shift
+Capacity &amp; capabilities | socia4 | socia5 | socia6
+capacitec1 | capacitec2 | capacitec3
+Structuring data on public transport mobility | capacitec4 | capacitec5 | capacitec6
 buon
 
 Climate Neutrality Action Plan
@@ -2290,14 +2244,10 @@ Climate Neutrality Action Plan
 
 # Impacts &amp; Co-benefits
 
-|  Domain | Indicator | Objective 2030 | Unit | Reference | Reference year  |
-| --- | --- | --- | --- | --- | --- |
-|  Greenhouse gases | GHG emission savings | 10 230 | tCO2eq |  |   |
-|  Greenhouse gases | Light rail development (power consumption) | 1,5 | GWh / year |  |   |
-|  Social inclusion | Modal share of public transport | 20 | % |  |   |
-|  |   |   |   |   |   |
-|  |   |   |   |   |   |
-|  |   |   |   |   |   |
+Domain | Indicator | Objective 2030 | Unit | Reference | Reference year
+Greenhouse gases | GHG emission savings | 10 230 | tCO2eq
+Greenhouse gases | Light rail development (power consumption) | 1,5 | GWh / year
+Social inclusion | Modal share of public transport | 20 | %
 Climate Neutrality Action Plan
 
 6
@@ -2334,23 +2284,22 @@ Climate Neutrality Action Plan
 
 # Adaptation
 
-|  WATER | contribution11
+WATER | contribution11
 O | Restore the natural cycle of stormwater on our territory and use it sustainably | contribution12
 O | Adapting our water consumption to availability, reducing it and optimizing its use  |
-| --- | --- | --- | --- | --- |
-|  SUSTAINABLE FOOD | contribution13
+SUSTAINABLE FOOD | contribution13
 O | Promoting healthy, sustainable food accessible to all | contribution14
 O | Increase local sourcing and guarantee fair remuneration for producers  |
-|  SOCIAL JUSTICE | contribution15
+SOCIAL JUSTICE | contribution15
 O | Adapting metropolitan public policies to vulnerabilities linked to environmental crises | contribution16
 O | Supporting residents most at risk  |
-|  ECONOMIC MUTATIONS | contribution17
+ECONOMIC MUTATIONS | contribution17
 O | Stimulating and supporting the decarbonization of economic activities and reducing their impact on the environment | contribution18
 O | Promote a sustainable economic development model that creates wealth throughout the urban area  |
-|  HEALTH, LIVING ENVIRONMENT, QUALITY OF LIFE | contribution20
+HEALTH, LIVING ENVIRONMENT, QUALITY OF LIFE | contribution20
 O | Promoting a culture of risk and hazard management in our territory | contribution21
 O | Offering everyone a resilient, healthy region with a high quality of life  |
-|  SERVICES PROVIDED BY NATURE | contribution22
+SERVICES PROVIDED BY NATURE | contribution22
 O | Strengthening and improving the quality of our ecological continuity and ecosystem services | contribution23
 O | Making biodiversity an ally in our region's transition  |
 buon
@@ -2447,60 +2396,53 @@ Climate Neutrality Action Plan
 
 #
 
-|  Dijon Metropolis - CCC / Action Plan - Transition Pathway  |   |   |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  number  |   |   |   |   |   |   |   |
-|  Action sheet number | 3 | Action sheet name | Development of low-carbon and carbon-free vehicles  |   |   |   |   |
-|  Person responsible for the action sheet | manage | domain | domain | period | process | process | process  |
-|  Person responsible for the action sheet | Dijon métropole - Energy Strategy Department | Main area | Mobility | Action period | 2024-2030 | Advancement | In progress  |
-|  Main reference projects identified in the region |   |   |   | Key policies, documents or strategic studies  |   |   |   |
-|  Dijon Métropole | peqect1 | Dijon Métropole | peqect2 | document1 | document2 | document2 | document2  |
-|  Dijon Métropole | Devabonization of bus fleet | Dijon Métropole | Decabonization of metropolitan service fleet |  |  |  |   |
-|  Private and public players | peqect3 | Dijon Métropole | peqect4 | document3 | document4 | document4 | document4  |
-|  Dijon Métropole | Decabonization of the service fleet of partners involved into the Metropolitan Climate &amp; Biodiversity Contract |  |  |  |  |  |   |
-|  project5 |  | project6 |  | document5 |  | document5 |   |
-|  |   |   |   |   |   |   |   |
-|  project7 |  | project8 |  | document7 |  | document8 |   |
-|  |   |   |   |   |   |   |   |
+Dijon Metropolis - CCC / Action Plan - Transition Pathway
+number
+Action sheet number | 3 | Action sheet name | Development of low-carbon and carbon-free vehicles
+Person responsible for the action sheet | manage | domain | domain | period | process | process | process
+Person responsible for the action sheet | Dijon métropole - Energy Strategy Department | Main area | Mobility | Action period | 2024-2030 | Advancement | In progress
+Main reference projects identified in the region | Key policies, documents or strategic studies
+Dijon Métropole | peqect1 | Dijon Métropole | peqect2 | document1 | document2 | document2 | document2
+Dijon Métropole | Devabonization of bus fleet | Dijon Métropole | Decabonization of metropolitan service fleet
+Private and public players | peqect3 | Dijon Métropole | peqect4 | document3 | document4 | document4 | document4
+Dijon Métropole | Decabonization of the service fleet of partners involved into the Metropolitan Climate &amp; Biodiversity Contract
+project5 | project6 | document5 | document5
+project7 | project8 | document7 | document8
 buon
 
 Climate Neutrality Action Plan
 
 #
 
-|  Dijon Metropolis - CCC / Action Plan - Transition Pathway  |   |   |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  ,number  |   |   |   |   |   |   |   |
-|  Action sheet number | 3 | Action sheet name | Development of low-carbon and carbon-free vehicles  |   |   |   |   |
-|  ,manager  |   |   |   |   |   |   |   |
-|  Person responsible for the action sheet | Dijon métropole - Energy Strategy Department | Man area | Mobilty | Action period | 2024-2030 | Advancement | In progress  |
-|  Systemic action levers to mobilize  |   |   |   |   |   |   |   |
-|  Technology | ,technol1 |   | ,technol2 |   | ,technol3  |   |   |
-|   |  Decarbonizing public transport |   | Decarbonizing car-sharing vehicles |   | Decarbonizing corporate fleet vehicles  |   |   |
-|   |  ,technol4 |   | ,technol5 |   | ,technol6  |   |   |
-|  Governance, policy &amp; regulation | Decarbonizing private vehicles |   |  |   |   |   |   |
-|   |  ,governance1 |   | ,governance2 |   | ,governance3  |   |   |
-|   |  Encourage the use of small vehicles |   | Continue lobbying for the financing of electro-mobility vehicles (hydrogen in particular) |   |   |   |   |
-|   | ,governance4 |   | ,governance5 |   | ,governance6  |   |   |
-|   |  |   |   |   |   |   |   |
+Dijon Metropolis - CCC / Action Plan - Transition Pathway
+,number
+Action sheet number | 3 | Action sheet name | Development of low-carbon and carbon-free vehicles
+,manager
+Person responsible for the action sheet | Dijon métropole - Energy Strategy Department | Man area | Mobilty | Action period | 2024-2030 | Advancement | In progress
+Systemic action levers to mobilize
+Technology | ,technol1 | ,technol2 | ,technol3
+Decarbonizing public transport | Decarbonizing car-sharing vehicles | Decarbonizing corporate fleet vehicles
+,technol4 | ,technol5 | ,technol6
+Governance, policy &amp; regulation | Decarbonizing private vehicles
+,governance1 | ,governance2 | ,governance3
+Encourage the use of small vehicles | Continue lobbying for the financing of electro-mobility vehicles (hydrogen in particular)
+,governance4 | ,governance5 | ,governance6
 buon
 
 Climate Neutrality Action Plan
 
 #
 
-|  Dijon Metropolis - CCC / Action Plan - Transition Pathway  |   |   |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  number  |   |   |   |   |   |   |   |
-|  Action sheet number | 3 | Action sheet name | Development of low-carbon and carbon-free vehicles  |   |   |   |   |
-|  Person responsible for the action sheet | Dijon métropole - Energy Strategy Department | Manager | Manh area | Mobility | Action period | 2024-2030 | Agreement  |
-|  Systemic action levers to mobilize  |   |   |   |   |   |   |   |
-|  Social innovation &amp; social change | socia1 | socia2 | socia3 |  |  |  |   |
-|   |  Strengthen the car-sharing offer and promote car sharing | Encourage carpooling, in particular by using company networks | Encouraging telecommuting and reducing the number of kilometers traveled |  |  |  |   |
-|   |  socia4 | socia5 | socia6 |  |  |  |   |
-|  Capacity &amp; capabilities | capacites1 | capacites2 | capacites3 |  |  |  |   |
-|   |  Structuring energy and mobility sectors (including renewable energies and eco-construction) | Experiment with V2G charging stations (storage) charging company vehicles and a car-sharing vehicle. | capacites4 |  |  |  |   |
-|   |  |   |   |   |   |   |   |
+Dijon Metropolis - CCC / Action Plan - Transition Pathway
+number
+Action sheet number | 3 | Action sheet name | Development of low-carbon and carbon-free vehicles
+Person responsible for the action sheet | Dijon métropole - Energy Strategy Department | Manager | Manh area | Mobility | Action period | 2024-2030 | Agreement
+Systemic action levers to mobilize
+Social innovation &amp; social change | socia1 | socia2 | socia3
+Strengthen the car-sharing offer and promote car sharing | Encourage carpooling, in particular by using company networks | Encouraging telecommuting and reducing the number of kilometers traveled
+socia4 | socia5 | socia6
+Capacity &amp; capabilities | capacites1 | capacites2 | capacites3
+Structuring energy and mobility sectors (including renewable energies and eco-construction) | Experiment with V2G charging stations (storage) charging company vehicles and a car-sharing vehicle. | capacites4
 buon
 
 Climate Neutrality Action Plan
@@ -2669,17 +2611,15 @@ Climate Neutrality Action Plan
 
 #
 
-|  Dijon Metropolis - CCC / Action Plan - Transition Pathway  |   |   |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  number  |   |   |   |   |   |   |   |
-|  Action sheet number | 4 | Action sheet name | Developing sustainable urban logistics  |   |   |   |   |
-|  Person responsible for the action sheet | Dijon métropole - Territory and Projects Department | main area | Mobility | Action period | 2024-2030 | advancement | Under study  |
-|  Main reference projects identified in the region |   |   |   | Key policies, documents or strategic studies  |   |   |   |
-|  Dijon Métropole and private logistics players | experimentation of Urban Logistics solutions |  | project2 | LUDIC | Urban Logistics Charter LUDIC |  | document3  |
-|   | project3 |  | project4 |  | document3 |  | document4  |
-|   | project5 |  | project6 |  | document5 |  | document6  |
-|   | project7 |  | project8 |  | document7 |  | document8  |
-|  |   |   |   |   |   |   |   |
+Dijon Metropolis - CCC / Action Plan - Transition Pathway
+number
+Action sheet number | 4 | Action sheet name | Developing sustainable urban logistics
+Person responsible for the action sheet | Dijon métropole - Territory and Projects Department | main area | Mobility | Action period | 2024-2030 | advancement | Under study
+Main reference projects identified in the region | Key policies, documents or strategic studies
+Dijon Métropole and private logistics players | experimentation of Urban Logistics solutions | project2 | LUDIC | Urban Logistics Charter LUDIC | document3
+project3 | project4 | document3 | document4
+project5 | project6 | document5 | document6
+project7 | project8 | document7 | document8
 buon
 
 Climate Neutrality Action Plan
@@ -2893,34 +2833,30 @@ Climate Neutrality Action Plan
 
 #
 
-|  Dijon Metropolis - CCC / Action Plan - Transition Pathway  |   |   |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  number  |   |   |   |   |   |   |   |
-|  Action sheet number | 5 | Action sheet name | Development of a coordinated transport offer across the urban area  |   |   |   |   |
-|  Person responsible for the action sheet | Dijon métropole - Territory and Projects Department | main area | Mobility | Action period | 2024-2030 | Advancement | Not started  |
-|  Systemic action levers to mobilize  |   |   |   |   |   |   |   |
-|  Technology | Study the deployment of a network of energy-mobility hubs in line with local usage, enabling structured intermodality throughout the urban area. |   | technology2 | technology2 |  |  |   |
-|   |  technology1 |   | technology5 | technology5 |  |  |   |
-|   |  governance1 |   | governance2 | governance3 |  |  |   |
-|  Governance, policy &amp; regulation | Coordinate the deployment of sustainable mobility services throughout the urban area, in partnership with the region and the dreal, and in consultation with the EPCIs of the urban area and the département. |   | governance4 | governance5 |  |  |   |
-|   |  |   |   |   |   |   |   |
+Dijon Metropolis - CCC / Action Plan - Transition Pathway
+number
+Action sheet number | 5 | Action sheet name | Development of a coordinated transport offer across the urban area
+Person responsible for the action sheet | Dijon métropole - Territory and Projects Department | main area | Mobility | Action period | 2024-2030 | Advancement | Not started
+Systemic action levers to mobilize
+Technology | Study the deployment of a network of energy-mobility hubs in line with local usage, enabling structured intermodality throughout the urban area. | technology2 | technology2
+technology1 | technology5 | technology5
+governance1 | governance2 | governance3
+Governance, policy &amp; regulation | Coordinate the deployment of sustainable mobility services throughout the urban area, in partnership with the region and the dreal, and in consultation with the EPCIs of the urban area and the département. | governance4 | governance5
 buon
 
 Climate Neutrality Action Plan
 
 #
 
-|  Dijon Metropolis - CCC / Action Plan - Transition Pathway  |   |   |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  ,number  |   |   |   |   |   |   |   |
-|  Action sheet number | 5 | Action sheet name | Development of a coordinated transport offer across the urban area  |   |   |   |   |
-|  Person responsible for the action sheet | Dijon métropole - Territory and Projects Department | Manager | Manfred | Action period | 2024-2030 | Advancement | Not started  |
-|  Systemic action levers to mobilize  |   |   |   |   |   |   |   |
-|  Social innovation &amp; social change | social1 | social2 | social3 |  |  |  |   |
-|   |  Supporting the development of new services that encourage new mobility uses to replace car-pooling | social4 | social5 | social6 |  |  |   |
-|   |  capacites1 | capacites2 | capacites3 |  |  |  |   |
-|  Capacity &amp; capabilities | improving shared knowledge of the mobility needs of urban area residents | capacites4 | capacites5 | capacites6 |  |  |   |
-|   |  |   |   |   |   |   |   |
+Dijon Metropolis - CCC / Action Plan - Transition Pathway
+,number
+Action sheet number | 5 | Action sheet name | Development of a coordinated transport offer across the urban area
+Person responsible for the action sheet | Dijon métropole - Territory and Projects Department | Manager | Manfred | Action period | 2024-2030 | Advancement | Not started
+Systemic action levers to mobilize
+Social innovation &amp; social change | social1 | social2 | social3
+Supporting the development of new services that encourage new mobility uses to replace car-pooling | social4 | social5 | social6
+capacites1 | capacites2 | capacites3
+Capacity &amp; capabilities | improving shared knowledge of the mobility needs of urban area residents | capacites4 | capacites5 | capacites6
 buon
 
 Climate Neutrality Action Plan
@@ -2937,21 +2873,14 @@ Climate Neutrality Action Plan
 
 # Systemic action levers
 
-|  Finance & business models | finance1 | finance2 | finance3  |
-| --- | --- | --- | --- |
-|   |  Accompany the deployment of new economic services based on the development of new forms of mobility and the expansion of mobility needs. | finance4 | finance5  |
-|   |  |   |   |
+Finance & business models | finance1 | finance2 | finance3
+Accompany the deployment of new economic services based on the development of new forms of mobility and the expansion of mobility needs. | finance4 | finance5
 
 # Impacts &amp; Co-benefits
 
-|  Domain | Indicator | Objective 2030 | Unit | Reference | Reference year  |
-| --- | --- | --- | --- | --- | --- |
-|  Greenhouse gases | GHG emission savings | 20 460 | tCO2eq |  |   |
-|  Greenhouse gases | Reducing the flow of light vehicles commuting on their own | -10 | % |  |   |
-|  |   |   |   |   |   |
-|  |   |   |   |   |   |
-|  |   |   |   |   |   |
-|  |   |   |   |   |   |
+Domain | Indicator | Objective 2030 | Unit | Reference | Reference year
+Greenhouse gases | GHG emission savings | 20 460 | tCO2eq
+Greenhouse gases | Reducing the flow of light vehicles commuting on their own | -10 | %
 buon
 
 Climate Neutrality Action Plan
@@ -3078,15 +3007,12 @@ Climate Neutrality Action Plan
 
 # Key policies, documents or strategic studies
 
-|  Social landlords, Dijon Métropole, Region, State, private owners | getect1
+Social landlords, Dijon Métropole, Region, State, private owners | getect1
 Metropolitan actions: Renoveco and SEM habitat funds | Social landlords, Dijon Métropole | Response project | Urban planning | Eco-districts and urban design practices | RENOVECO | Renoveco Urban renovation program  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|   | project3 |  | project4 |  | document3 |  | document4  |
-|   |  |  |  | PLU-HD | PLU/HD - local urban plan (regulatory) |  |   |
-|   | project5 |  | project6 |  | document5 |  | document6  |
-|  |   |   |   |   |   |   |   |
-|   | project7 |  | project8 |  | document7 |  | document8  |
-|  |   |   |   |   |   |   |   |
+project3 | project4 | document3 | document4
+PLU-HD | PLU/HD - local urban plan (regulatory)
+project5 | project6 | document5 | document6
+project7 | project8 | document7 | document8
 
 8
 buon
@@ -3177,16 +3103,11 @@ Climate Neutrality Action Plan
 
 # Attenuation
 
-|  MOBILITY | 0 | Contribute to a gradual reduction in the role of the car in the daily lives of residents | 0 | Promote the development of solutions to reduce and optimize commuter and freight flows by car  |
-| --- | --- | --- | --- | --- |
-|  BUILDING | 0 | Reduce energy consumption and greenhouse gas emissions in buildings | 0 | Develop, renovate and build to enhance ecological functions and biodiversity  |
-| --- | --- | --- | --- | --- |
-|  POWER GENERATION | 0 | Developing the local production of renewable and recovered energies | contributant6  |
-| --- | --- | --- | --- |
-|  PRODUCTION AND CONSUMPTION OF GOODS AND SERVICES | 0 | Adopt consumption patterns that emit less greenhouse gas, are more respectful of resources and reduce our waste production | 0 | Reducing the environmental impact of local industries  |
-| --- | --- | --- | --- | --- |
-|  AGRICULTURE AND NATURE | 0 | Promote low-carbon agricultural practices throughout the urban area that preserve and enhance biodiversity | 0 | Promote ecological management of public and private natural areas and maintain carbon sinks  |
-| --- | --- | --- | --- | --- |
+MOBILITY | 0 | Contribute to a gradual reduction in the role of the car in the daily lives of residents | 0 | Promote the development of solutions to reduce and optimize commuter and freight flows by car
+BUILDING | 0 | Reduce energy consumption and greenhouse gas emissions in buildings | 0 | Develop, renovate and build to enhance ecological functions and biodiversity
+POWER GENERATION | 0 | Developing the local production of renewable and recovered energies | contributant6
+PRODUCTION AND CONSUMPTION OF GOODS AND SERVICES | 0 | Adopt consumption patterns that emit less greenhouse gas, are more respectful of resources and reduce our waste production | 0 | Reducing the environmental impact of local industries
+AGRICULTURE AND NATURE | 0 | Promote low-carbon agricultural practices throughout the urban area that preserve and enhance biodiversity | 0 | Promote ecological management of public and private natural areas and maintain carbon sinks
 Climate Neutrality Action Plan
 
 9
@@ -3310,14 +3231,10 @@ Climate Neutrality Action Plan
 
 # Key policies, documents or strategic studies
 
-|  Dijon Métropole | Programm of metropolitan building renovation | Private and public players | Building renovation projects of partners involved into the Metropolitan Climate &amp; Biodiversity Contract | PLUI-HD | PLUIHD - local urban plan (regulatory) | SCOT | SCOT - Territorial Coherence Scheme  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|   | project3 |  | project4 |  | document3 |  | document4  |
-|  |   |   |   |   |   |   |   |
-|   | project5 |  | project6 |  | document5 |  | document6  |
-|  |   |   |   |   |   |   |   |
-|   | project7 |  | project8 |  | document7 |  | document8  |
-|  |   |   |   |   |   |   |   |
+Dijon Métropole | Programm of metropolitan building renovation | Private and public players | Building renovation projects of partners involved into the Metropolitan Climate &amp; Biodiversity Contract | PLUI-HD | PLUIHD - local urban plan (regulatory) | SCOT | SCOT - Territorial Coherence Scheme
+project3 | project4 | document3 | document4
+project5 | project6 | document5 | document6
+project7 | project8 | document7 | document8
 buon
 
 Climate Neutrality Action Plan
@@ -3472,18 +3389,16 @@ Climate Neutrality Action Plan
 
 #
 
-|  Dijon Metropolis - CCC / Action Plan - Transition Pathway  |   |   |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  number |   | name  |   |   |   |   |   |
-|  Action sheet number | 8 | Action sheet name | Reducing the climate and biodiversity impacts of development and construction projects (public spaces and buildings)  |   |   |   |   |
-|  management |   | domain | period |   | progress  |   |   |
-|  Person responsible for the action sheet | Dijon métropole - Direction PLUI-HD | Main area | Building | Action period | 2024-2030 | Advancement | Under study  |
-|  |   |   |   |   |   |   |   |
-|  Action description |   | Reducing the climate and biodiversity impacts of development and construction projects involves integrating sustainable practices into the design and construction of infrastructure, public spaces and buildings. This includes the use of environmentally-friendly materials, the preservation of local ecosystems, stormwater management, and the consideration of climate issues in urban planning. The aim is to minimize the environmental footprint of projects, promote resilience in the face of climate change, and protect biodiversity, while creating healthy, pleasant living spaces for users.  |   |   |   |   |   |
-|  Stakeholders involved | 0 | Dijon metropole | 0 | Actors socio-economic players |  | Municipalities and extra-territorial institutional players  |   |
-|   |   |  0 | Municipalities and institutional players | 0 | Residents & users |  | Actors socio-economic actors  |
-|  Main milestones |   | 2026 | Delivery of studies | 2026 | Start of field infiltration experiments | 2027 | Project start-up  |
-|  Financial estimate |   | Estimated cost 2030 Ambitious scenario | 404 600 000 € | Estimated cost 2030 Neutrality scenario | 732 200 000 € | Cost in € / tCO2 (Ambitious) | 30 300 €  |
+Dijon Metropolis - CCC / Action Plan - Transition Pathway
+number | name
+Action sheet number | 8 | Action sheet name | Reducing the climate and biodiversity impacts of development and construction projects (public spaces and buildings)
+management | domain | period | progress
+Person responsible for the action sheet | Dijon métropole - Direction PLUI-HD | Main area | Building | Action period | 2024-2030 | Advancement | Under study
+Action description | Reducing the climate and biodiversity impacts of development and construction projects involves integrating sustainable practices into the design and construction of infrastructure, public spaces and buildings. This includes the use of environmentally-friendly materials, the preservation of local ecosystems, stormwater management, and the consideration of climate issues in urban planning. The aim is to minimize the environmental footprint of projects, promote resilience in the face of climate change, and protect biodiversity, while creating healthy, pleasant living spaces for users.
+Stakeholders involved | 0 | Dijon metropole | 0 | Actors socio-economic players | Municipalities and extra-territorial institutional players
+0 | Municipalities and institutional players | 0 | Residents & users | Actors socio-economic actors
+Main milestones | 2026 | Delivery of studies | 2026 | Start of field infiltration experiments | 2027 | Project start-up
+Financial estimate | Estimated cost 2030 Ambitious scenario | 404 600 000 € | Estimated cost 2030 Neutrality scenario | 732 200 000 € | Cost in € / tCO2 (Ambitious) | 30 300 €
 buon
 
 Climate Neutrality Action Plan
@@ -3527,14 +3442,11 @@ Climate Neutrality Action Plan
 
 # Key policies, documents or strategic studies
 
-|  private owners, condominiums, Dijon Métropole | Micro-projects plint-based infiltration | Dijon metropole | Eco-district porte Agripa | PLUI-HD | PLUIHD - local urban plan (regulatory) | SCOT | SCOT - Territorial Coherence Scheme  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  project3 |  | project4 |  | document3 |  | document4 |   |
-|  Dijon metropole | Development of the southern entrance to the town |  |  |  |  |  |   |
-|  project5 |  | project6 |  | document5 |  | document6 |   |
-|  |   |   |   |   |   |   |   |
-|  project7 |  | project8 |  | document7 |  | document8 |   |
-|  |   |   |   |   |   |   |   |
+private owners, condominiums, Dijon Métropole | Micro-projects plint-based infiltration | Dijon metropole | Eco-district porte Agripa | PLUI-HD | PLUIHD - local urban plan (regulatory) | SCOT | SCOT - Territorial Coherence Scheme
+project3 | project4 | document3 | document4
+Dijon metropole | Development of the southern entrance to the town
+project5 | project6 | document5 | document6
+project7 | project8 | document7 | document8
 buon
 
 Climate Neutrality Action Plan
@@ -3623,16 +3535,11 @@ Climate Neutrality Action Plan
 
 # Attenuation
 
-|  MOBILITY | 0 | Contribute to a gradual reduction in the role of the car in the daily lives of residents |  | Promote the development of solutions to reduce and optimize commuter and freight flows by car  |
-| --- | --- | --- | --- | --- |
-|  BUILDING | 0 | Reduce energy consumption and greenhouse gas emissions in buildings | 0 | Develop, renovate and build to enhance ecological functions and biodiversity  |
-| --- | --- | --- | --- | --- |
-|  POWER GENERATION | 0 | Developing the local production of renewable and recovered energies | 0 | Controlling the impact of renewable energy development on resources  |
-| --- | --- | --- | --- | --- |
-|  PRODUCTION AND CONSUMPTION OF GOODS AND SERVICES | 0 | Adopt consumption patterns that emit less greenhouse gas, are more respectful of resources and reduce our waste production | 0 | Reducing the environmental impact of local industries  |
-| --- | --- | --- | --- | --- |
-|  AGRICULTURE AND NATURE |  | Promote low-carbon agricultural practices throughout the urban area that preserve and enhance biodiversity |  | Promote ecological management of public and private natural areas and maintain carbon sinks  |
-| --- | --- | --- | --- | --- |
+MOBILITY | 0 | Contribute to a gradual reduction in the role of the car in the daily lives of residents | Promote the development of solutions to reduce and optimize commuter and freight flows by car
+BUILDING | 0 | Reduce energy consumption and greenhouse gas emissions in buildings | 0 | Develop, renovate and build to enhance ecological functions and biodiversity
+POWER GENERATION | 0 | Developing the local production of renewable and recovered energies | 0 | Controlling the impact of renewable energy development on resources
+PRODUCTION AND CONSUMPTION OF GOODS AND SERVICES | 0 | Adopt consumption patterns that emit less greenhouse gas, are more respectful of resources and reduce our waste production | 0 | Reducing the environmental impact of local industries
+AGRICULTURE AND NATURE | Promote low-carbon agricultural practices throughout the urban area that preserve and enhance biodiversity | Promote ecological management of public and private natural areas and maintain carbon sinks
 buon
 
 Climate Neutrality Action Plan
@@ -3736,18 +3643,15 @@ Climate Neutrality Action Plan
 
 # Key policies, documents or strategic studies
 
-|  pnpct1 | pnpct2 | document1 | document2  |
-| --- | --- | --- | --- |
-|  Dijon Métropole, Private players | Airport photovoltaic power plant / BA 102 | Dijon Métropole, Private players | Photovoltaic power plant CET Sud  |
-|  SDE | Energy master plan (strategic and programming) | SEM ENERGIES | Mixed Economy Company dedicated to renewable energies and energy transition  |
-|  pnpct3 | pnpct4 | document3 | document4  |
-|  Dijon Métropole, Private players | Collective self-consumption loop on the Chevigny / Excellence 2000 business park | Dijon Métropole Private players | Collective self-consumption loop on the Longvic / Oscara business park  |
-|  |   |   |   |
-|  pnpct5 | pnpct6 | document5 | document6  |
-|  Dijon Métropole, Private players | Collective self-consumption loop on CHU / UB zone | Dijon métropole, City of Dijon | Solarisation of the built and non-built heritage of Dijon Métropole and the City of Dijon  |
-|  |   |   |   |
-|  pnpct7 | pnpct8 | document7 | document8  |
-|  Dijon Métropole, Private players | Agronov zone agrivoltaic project |  |   |
+pnpct1 | pnpct2 | document1 | document2
+Dijon Métropole, Private players | Airport photovoltaic power plant / BA 102 | Dijon Métropole, Private players | Photovoltaic power plant CET Sud
+SDE | Energy master plan (strategic and programming) | SEM ENERGIES | Mixed Economy Company dedicated to renewable energies and energy transition
+pnpct3 | pnpct4 | document3 | document4
+Dijon Métropole, Private players | Collective self-consumption loop on the Chevigny / Excellence 2000 business park | Dijon Métropole Private players | Collective self-consumption loop on the Longvic / Oscara business park
+pnpct5 | pnpct6 | document5 | document6
+Dijon Métropole, Private players | Collective self-consumption loop on CHU / UB zone | Dijon métropole, City of Dijon | Solarisation of the built and non-built heritage of Dijon Métropole and the City of Dijon
+pnpct7 | pnpct8 | document7 | document8
+Dijon Métropole, Private players | Agronov zone agrivoltaic project
 buon
 
 Climate Neutrality Action Plan
@@ -3805,14 +3709,12 @@ Climate Neutrality Action Plan
 
 # Impacts &amp; Co-benefits
 
-|  Domain | Indicator | Objective 2030 | Unit | Reference | Reference year  |
-| --- | --- | --- | --- | --- | --- |
-|  Greenhouse gases | GHG emission savings | 0 | tCO2eq |  |   |
-|  Resources | Ground-mounted solar PV | 110 | GWh / year |  |   |
-|  Resources | Sealing PV roofs | 7 | GWh / year |  |   |
-|  Resources | Solar PV parking lot shading | 32 | GWh / year |  |   |
-|  Resources | Waste - heat cogeneration | -54 | GWh / year |  |   |
-|  |   |   |   |   |   |
+Domain | Indicator | Objective 2030 | Unit | Reference | Reference year
+Greenhouse gases | GHG emission savings | 0 | tCO2eq
+Resources | Ground-mounted solar PV | 110 | GWh / year
+Resources | Sealing PV roofs | 7 | GWh / year
+Resources | Solar PV parking lot shading | 32 | GWh / year
+Resources | Waste - heat cogeneration | -54 | GWh / year
 buon
 
 Climate Neutrality Action Plan
@@ -3831,21 +3733,16 @@ Climate Neutrality Action Plan
 
 # Attenuation
 
-|  MOBILITY | contribution1 | contribution2  |
-| --- | --- | --- |
-|   | Contribute to a gradual reduction in the role of the car in the daily lives of residents | Promote the development of solutions to reduce and optimize commuter and freight flows by car  |
-|  BUILDING | contribution3 | contribution4  |
-| --- | --- | --- |
-|   | Reduce energy consumption and greenhouse gas emissions in buildings | Develop, renovate and build to enhance ecological functions and biodiversity  |
-|  POWER GENERATION | contribution5 | contribution6  |
-| --- | --- | --- |
-|   | Developing the local production of renewable and recovered energies | Controlling the impact of renewable energy development on resources  |
-|  PRODUCTION AND CONSUMPTION OF GOODS AND SERVICES | contribution7 | contribution8  |
-| --- | --- | --- |
-|   | Adopt consumption patterns that emit less greenhouse gas, are more respectful of resources and reduce our waste production | Reducing the environmental impact of local industries  |
-|  AGRICULTURE AND NATURE | contribution9 | contribution10  |
-| --- | --- | --- |
-|   | Promote low-carbon agricultural practices throughout the urban area that preserve and enhance biodiversity | Promote ecological management of public and private natural areas and maintain carbon sinks  |
+MOBILITY | contribution1 | contribution2
+Contribute to a gradual reduction in the role of the car in the daily lives of residents | Promote the development of solutions to reduce and optimize commuter and freight flows by car
+BUILDING | contribution3 | contribution4
+Reduce energy consumption and greenhouse gas emissions in buildings | Develop, renovate and build to enhance ecological functions and biodiversity
+POWER GENERATION | contribution5 | contribution6
+Developing the local production of renewable and recovered energies | Controlling the impact of renewable energy development on resources
+PRODUCTION AND CONSUMPTION OF GOODS AND SERVICES | contribution7 | contribution8
+Adopt consumption patterns that emit less greenhouse gas, are more respectful of resources and reduce our waste production | Reducing the environmental impact of local industries
+AGRICULTURE AND NATURE | contribution9 | contribution10
+Promote low-carbon agricultural practices throughout the urban area that preserve and enhance biodiversity | Promote ecological management of public and private natural areas and maintain carbon sinks
 Climate Neutrality Action Plan
 
 0
@@ -3965,31 +3862,26 @@ Climate Neutrality Action Plan
 
 # Key policies, documents or strategic studies
 
-|  project1 |   | project2 |   | document1 |   | document2  |   |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  Dijon Métropole | Biomethane production from Sewage Water Treatment Plant | Dijon Métropole, Private players | Hydrogen production stations | SDE | Energy master plan (strategic and programming) | SEM ENERGIES | Mixed Economy Company dedicated to renewable energies and energy transition  |
-|  project3 |   | project4 |   | document3 |   | document4  |   |
-|  Private players | Agricultural methanisation unit |  |  |  |  |  |   |
-|  project5 |   | project6 |   | document5 |   | document6  |   |
-|  |   |   |   |   |   |   |   |
-|  project7 |   | project8 |   | document7 |   | document8  |   |
-|  |   |   |   |   |   |   |   |
+project1 | project2 | document1 | document2
+Dijon Métropole | Biomethane production from Sewage Water Treatment Plant | Dijon Métropole, Private players | Hydrogen production stations | SDE | Energy master plan (strategic and programming) | SEM ENERGIES | Mixed Economy Company dedicated to renewable energies and energy transition
+project3 | project4 | document3 | document4
+Private players | Agricultural methanisation unit
+project5 | project6 | document5 | document6
+project7 | project8 | document7 | document8
 buon
 
 Climate Neutrality Action Plan
 
 #
 
-|  Dijon Metropolis - CCC / Action Plan - Transition Pathway  |   |   |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  ,number  |   |   |   |   |   |   |   |
-|  Action sheet number | 10 | Action sheet name | Development of renewable gas production  |   |   |   |   |
-|  Person responsible for the action sheet | Dijon métropole - Energy Strategy Department | Manager | Man area | Power generation | Action period | 2024-2030 | Advancement  |
-|  Systemic action levers to mobilize  |   |   |   |   |   |   |   |
-|  Technology | Development of methane gas energy | Hydrogen energy development | governance2 | governance3 |  |  |   |
-|   |  Develop a strategy for adapting the gas network to changing usage patterns | governance2 | governance3 |  |  |  |   |
-|   |  |   |   |   |   |   |   |
-|  Governance, policy &amp; regulation |  |  |  |  |  |  |   |
+Dijon Metropolis - CCC / Action Plan - Transition Pathway
+,number
+Action sheet number | 10 | Action sheet name | Development of renewable gas production
+Person responsible for the action sheet | Dijon métropole - Energy Strategy Department | Manager | Man area | Power generation | Action period | 2024-2030 | Advancement
+Systemic action levers to mobilize
+Technology | Development of methane gas energy | Hydrogen energy development | governance2 | governance3
+Develop a strategy for adapting the gas network to changing usage patterns | governance2 | governance3
+Governance, policy &amp; regulation
 buon
 
 Climate Neutrality Action Plan
@@ -4032,14 +3924,11 @@ Climate Neutrality Action Plan
 
 # Impacts &amp; Co-benefits
 
-|  Domain | Indicator | Objective 2030 | Unit | Reference | Reference year  |
-| --- | --- | --- | --- | --- | --- |
-|  Greenhouse gases | GHG emission savings | 0 | tCO2eq |  |   |
-|  Greenhouse gases | ENR rate GAS network | 15 | % |  |   |
-|  Resources | Mathemization - biogas | 30 | GWh / year |  |   |
-|  Resources | Hydrogen | 18 | GWh / year |  |   |
-|  |   |   |   |   |   |
-|  |   |   |   |   |   |
+Domain | Indicator | Objective 2030 | Unit | Reference | Reference year
+Greenhouse gases | GHG emission savings | 0 | tCO2eq
+Greenhouse gases | ENR rate GAS network | 15 | %
+Resources | Mathemization - biogas | 30 | GWh / year
+Resources | Hydrogen | 18 | GWh / year
 buon
 
 Climate Neutrality Action Plan
@@ -4058,21 +3947,16 @@ Climate Neutrality Action Plan
 
 # Attenuation
 
-|  MOBILITY | contribution1 | contribution2  |
-| --- | --- | --- |
-|   | Contribute to a gradual reduction in the role of the car in the daily lives of residents | Promote the development of solutions to reduce and optimize commuter and freight flows by car  |
-|  BUILDING | contribution3 | contribution4  |
-| --- | --- | --- |
-|   | Reduce energy consumption and greenhouse gas emissions in buildings | Develop, renovate and build to enhance ecological functions and biodiversity  |
-|  POWER GENERATION | contribution5 | contribution6  |
-| --- | --- | --- |
-|   | Developing the local production of renewable and recovered energies | Controlling the impact of renewable energy development on resources  |
-|  PRODUCTION AND CONSUMPTION OF GOODS AND SERVICES | contribution7 | contribution8  |
-| --- | --- | --- |
-|   | Adopt consumption patterns that emit less greenhouse gas, are more respectful of resources and reduce our waste production | Reducing the environmental impact of local industries  |
-|  AGRICULTURE AND NATURE | contribution9 | contribution10  |
-| --- | --- | --- |
-|   | Promote low-carbon agricultural practices throughout the urban area that preserve and enhance biodiversity | Promote ecological management of public and private natural areas and maintain carbon sinks  |
+MOBILITY | contribution1 | contribution2
+Contribute to a gradual reduction in the role of the car in the daily lives of residents | Promote the development of solutions to reduce and optimize commuter and freight flows by car
+BUILDING | contribution3 | contribution4
+Reduce energy consumption and greenhouse gas emissions in buildings | Develop, renovate and build to enhance ecological functions and biodiversity
+POWER GENERATION | contribution5 | contribution6
+Developing the local production of renewable and recovered energies | Controlling the impact of renewable energy development on resources
+PRODUCTION AND CONSUMPTION OF GOODS AND SERVICES | contribution7 | contribution8
+Adopt consumption patterns that emit less greenhouse gas, are more respectful of resources and reduce our waste production | Reducing the environmental impact of local industries
+AGRICULTURE AND NATURE | contribution9 | contribution10
+Promote low-carbon agricultural practices throughout the urban area that preserve and enhance biodiversity | Promote ecological management of public and private natural areas and maintain carbon sinks
 Climate Neutrality Action Plan
 
 9
@@ -4182,15 +4066,12 @@ Climate Neutrality Action Plan
 
 # Key policies, documents or strategic studies
 
-|  project1 |   | project2 |   | document1 |   | document2  |   |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  Dijon Métropole, Private players | New heat production unit in southern Dijon / buffer storage / industrial waste heat recovery | Dijon Métropole, Private players | New heat production unit in eastern Dijon / buffer storage / industrial waste heat recovery | SDE | Energy master plan (strategic and programming) | SEM ENERGIES | Mixed Economy Company dedicated to renewable energies and energy transition  |
-|  project3 |   | project4 |   | document3 |   | document4  |   |
-|  Dijon Métropole | Renovation of the UVE / buffer storage / recovery of waste heat Zone Activité Cap Nord |  |  | SD RCU | Master plan for heating networks (strategic & programming) |  |   |
-|  project5 |   | project6 |   | document5 |   | document6  |   |
-|  |   |   |   |   |   |   |   |
-|  project7 |   | project8 |   | document7 |   | document8  |   |
-|  |   |   |   |   |   |   |   |
+project1 | project2 | document1 | document2
+Dijon Métropole, Private players | New heat production unit in southern Dijon / buffer storage / industrial waste heat recovery | Dijon Métropole, Private players | New heat production unit in eastern Dijon / buffer storage / industrial waste heat recovery | SDE | Energy master plan (strategic and programming) | SEM ENERGIES | Mixed Economy Company dedicated to renewable energies and energy transition
+project3 | project4 | document3 | document4
+Dijon Métropole | Renovation of the UVE / buffer storage / recovery of waste heat Zone Activité Cap Nord | SD RCU | Master plan for heating networks (strategic & programming)
+project5 | project6 | document5 | document6
+project7 | project8 | document7 | document8
 buon
 
 Climate Neutrality Action Plan
@@ -4252,14 +4133,12 @@ Climate Neutrality Action Plan
 
 # Impacts &amp; Co-benefits
 
-|  Domain | Indicator | Objective 2030 | Unit | Reference | Reference year  |
-| --- | --- | --- | --- | --- | --- |
-|  Greenhouse gases | GHG emission savings | 19 440 | tCO2eq |  |   |
-|  Resources | Increase in ENR RCU rate | 10 | % |  |   |
-|  Resources | Solar thermal roofing | 2 | GWh / year |  |   |
-|  Resources | Aerothermal / heat pump | 92 | GWh / year |  |   |
-|  Resources | Geothermal heat | 2 | GWh / year |  |   |
-|  |   |   |   |   |   |
+Domain | Indicator | Objective 2030 | Unit | Reference | Reference year
+Greenhouse gases | GHG emission savings | 19 440 | tCO2eq
+Resources | Increase in ENR RCU rate | 10 | %
+Resources | Solar thermal roofing | 2 | GWh / year
+Resources | Aerothermal / heat pump | 92 | GWh / year
+Resources | Geothermal heat | 2 | GWh / year
 Climate Neutrality Action Plan
 
 7
@@ -4276,21 +4155,16 @@ Climate Neutrality Action Plan
 
 # Attenuation
 
-|  MOBILITY | contribution1 | contribution2  |
-| --- | --- | --- |
-|   | Contribute to a gradual reduction in the role of the car in the daily lives of residents | Promote the development of solutions to reduce and optimize commuter and freight flows by car  |
-|  BUILDING | contribution3 | contribution4  |
-| --- | --- | --- |
-|   | Reduce energy consumption and greenhouse gas emissions in buildings | Develop, renovate and build to enhance ecological functions and biodiversity  |
-|  POWER GENERATION | contribution5 | contribution6  |
-| --- | --- | --- |
-|   | Developing the local production of renewable and recovered energies | Controlling the impact of renewable energy development on resources  |
-|  PRODUCTION AND CONSUMPTION OF GOODS AND SERVICES | contribution7 | contribution8  |
-| --- | --- | --- |
-|   | Adopt consumption patterns that emit less greenhouse gas, are more respectful of resources and reduce our waste production | Reducing the environmental impact of local industries  |
-|  AGRICULTURE AND NATURE | contribution9 | contribution10  |
-| --- | --- | --- |
-|   | Promote low-carbon agricultural practices throughout the urban area that preserve and enhance biodiversity | Promote ecological management of public and private natural areas and maintain carbon sinks  |
+MOBILITY | contribution1 | contribution2
+Contribute to a gradual reduction in the role of the car in the daily lives of residents | Promote the development of solutions to reduce and optimize commuter and freight flows by car
+BUILDING | contribution3 | contribution4
+Reduce energy consumption and greenhouse gas emissions in buildings | Develop, renovate and build to enhance ecological functions and biodiversity
+POWER GENERATION | contribution5 | contribution6
+Developing the local production of renewable and recovered energies | Controlling the impact of renewable energy development on resources
+PRODUCTION AND CONSUMPTION OF GOODS AND SERVICES | contribution7 | contribution8
+Adopt consumption patterns that emit less greenhouse gas, are more respectful of resources and reduce our waste production | Reducing the environmental impact of local industries
+AGRICULTURE AND NATURE | contribution9 | contribution10
+Promote low-carbon agricultural practices throughout the urban area that preserve and enhance biodiversity | Promote ecological management of public and private natural areas and maintain carbon sinks
 
 7
 Climate Neutrality Action Plan
@@ -4460,14 +4334,11 @@ Climate Neutrality Action Plan
 
 # Impacts &amp;amp; Co-benefits
 
-|  Domain | Indicator | Objective 2030 | Unit | Reference | Reference year  |
-| --- | --- | --- | --- | --- | --- |
-|  Greenhouse gases | GHG emission savings | 4 860 | tCO2eq |  |   |
-|  Greenhouse gases | Daily storage capacity % electricity consumption | 5 | % |  |   |
-|  Greenhouse gases | daily storage capacity % heat consumption | 5 | % |  |   |
-|  Greenhouse gases | Reducing the capacity of heating systems | 100 | MW |  |   |
-|  |   |   |   |   |   |
-|  |   |   |   |   |   |
+Domain | Indicator | Objective 2030 | Unit | Reference | Reference year
+Greenhouse gases | GHG emission savings | 4 860 | tCO2eq
+Greenhouse gases | Daily storage capacity % electricity consumption | 5 | %
+Greenhouse gases | daily storage capacity % heat consumption | 5 | %
+Greenhouse gases | Reducing the capacity of heating systems | 100 | MW
 Climate Neutrality Action Plan
 
 6
@@ -4484,21 +4355,16 @@ Climate Neutrality Action Plan
 
 # Attenuation
 
-|  MOBILITY | contribution1 | contribution2  |
-| --- | --- | --- |
-|   | Contribute to a gradual reduction in the role of the car in the daily lives of residents | Promote the development of solutions to reduce and optimize commuter and freight flows by car  |
-|  BUILDING | contribution3 | contribution4  |
-| --- | --- | --- |
-|   | Reduce energy consumption and greenhouse gas emissions in buildings | Develop, renovate and build to enhance ecological functions and biodiversity  |
-|  POWER GENERATION | contribution5 | contribution6  |
-| --- | --- | --- |
-|   | Developing the local production of renewable and recovered energies | Controlling the impact of renewable energy development on resources  |
-|  PRODUCTION AND CONSUMPTION OF GOODS AND SERVICES | contribution7 | contribution8  |
-| --- | --- | --- |
-|   | Adopt consumption patterns that emit less greenhouse gas, are more respectful of resources and reduce our waste production | Reducing the environmental impact of local industries  |
-|  AGRICULTURE AND NATURE | contribution9 | contribution10  |
-| --- | --- | --- |
-|   | Promote low-carbon agricultural practices throughout the urban area that preserve and enhance biodiversity | Promote ecological management of public and private natural areas and maintain carbon sinks  |
+MOBILITY | contribution1 | contribution2
+Contribute to a gradual reduction in the role of the car in the daily lives of residents | Promote the development of solutions to reduce and optimize commuter and freight flows by car
+BUILDING | contribution3 | contribution4
+Reduce energy consumption and greenhouse gas emissions in buildings | Develop, renovate and build to enhance ecological functions and biodiversity
+POWER GENERATION | contribution5 | contribution6
+Developing the local production of renewable and recovered energies | Controlling the impact of renewable energy development on resources
+PRODUCTION AND CONSUMPTION OF GOODS AND SERVICES | contribution7 | contribution8
+Adopt consumption patterns that emit less greenhouse gas, are more respectful of resources and reduce our waste production | Reducing the environmental impact of local industries
+AGRICULTURE AND NATURE | contribution9 | contribution10
+Promote low-carbon agricultural practices throughout the urban area that preserve and enhance biodiversity | Promote ecological management of public and private natural areas and maintain carbon sinks
 Climate Neutrality Action Plan
 
 7
@@ -4643,14 +4509,11 @@ Climate Neutrality Action Plan
 
 Key policies, documents or strategic studies
 
-|  Dijon Métropole and its communes | Collective energy purchase in metropolitan area |  | project1 |  | SPASER - scheme to promote socially and economically responsible public procurement | undertaking responsible public procurement and promote working groups to elaborate sustainable and local requirements provisions | Prodig 'Eat Better, Produce Better' program | Joint contract for the preparation and supply of meals for school restaurants, out-of-school facilities and early childhood facilities for 23 cities of the metropolis  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|   | project3 |  | project4 |  | document3 |  | document4 |   |
-|   |  |  |  |  | Dijon sustainable food 2030 | Food transition towards local, quality production, including processing and distribution. | Territory Industry | supporting the transition to a green industry, developing industrial sectors and expertise  |
-|   | project5 |  | project6 |  | document5 |  | document6 |   |
-|  |   |   |   |   |   |   |   |   |
-|   | project7 |  | project8 |  | document7 |  | document8 |   |
-|  |   |   |   |   |   |   |   |   |
+Dijon Métropole and its communes | Collective energy purchase in metropolitan area | project1 | SPASER - scheme to promote socially and economically responsible public procurement | undertaking responsible public procurement and promote working groups to elaborate sustainable and local requirements provisions | Prodig 'Eat Better, Produce Better' program | Joint contract for the preparation and supply of meals for school restaurants, out-of-school facilities and early childhood facilities for 23 cities of the metropolis
+project3 | project4 | document3 | document4
+Dijon sustainable food 2030 | Food transition towards local, quality production, including processing and distribution. | Territory Industry | supporting the transition to a green industry, developing industrial sectors and expertise
+project5 | project6 | document5 | document6
+project7 | project8 | document7 | document8
 buon
 
 Climate Neutrality Action Plan
@@ -4710,14 +4573,10 @@ Climate Neutrality Action Plan
 
 # Impacts &amp;Co-benefits
 
-|  Domain | Indicator | Objective 2030 | Unit | Reference | Reference year  |
-| --- | --- | --- | --- | --- | --- |
-|  Greenhouse gases | Reducing GHG waste | -51 | % |  |   |
-|  Greenhouse gases | Waste energy reduction | -16 | % |  |   |
-|  Resources | Reduction of household and similar waste [HWW] | -15 | % |  |   |
-|  |   |   |   |   |   |
-|  |   |   |   |   |   |
-|  |   |   |   |   |   |
+Domain | Indicator | Objective 2030 | Unit | Reference | Reference year
+Greenhouse gases | Reducing GHG waste | -51 | %
+Greenhouse gases | Waste energy reduction | -16 | %
+Resources | Reduction of household and similar waste [HWW] | -15 | %
 Climate Neutrality Action Plan
 
 5
@@ -4734,20 +4593,15 @@ Climate Neutrality Action Plan
 
 # Attenuation
 
-|  MOBILITY | contribution1 | contribution2  |
-| --- | --- | --- |
-|   | Contribute to a gradual reduction in the role of the car in the daily lives of residents | Promote the development of solutions to reduce and optimize commuter and freight flows by car  |
-|  BUILDING | contribution3 | contribution4  |
-| --- | --- | --- |
-|   | Reduce energy consumption and greenhouse gas emissions in buildings | Develop, renovate and build to enhance ecological functions and biodiversity  |
-|  POWER GENERATION | contribution5 | contribution6  |
-| --- | --- | --- |
-|   | Developing the local production of renewable and recovered energies | Controlling the impact of renewable energy development on resources  |
-|  PRODUCTION AND CONSUMPTION OF GOODS AND SERVICES | Contribution7 | contribution8  |
-| --- | --- | --- |
-|   | Adopt consumption patterns that emit less greenhouse gas, are more respectful of resources and reduce our waste production | Reducing the environmental impact of local industries  |
-|  AGRICULTURE AND NATURE | contribution9 | promote low-carbon agricultural practices throughout the urban area that preserve and enhance biodiversity | Promote ecological management of public and private natural areas and maintain carbon sinks  |
-| --- | --- | --- | --- |
+MOBILITY | contribution1 | contribution2
+Contribute to a gradual reduction in the role of the car in the daily lives of residents | Promote the development of solutions to reduce and optimize commuter and freight flows by car
+BUILDING | contribution3 | contribution4
+Reduce energy consumption and greenhouse gas emissions in buildings | Develop, renovate and build to enhance ecological functions and biodiversity
+POWER GENERATION | contribution5 | contribution6
+Developing the local production of renewable and recovered energies | Controlling the impact of renewable energy development on resources
+PRODUCTION AND CONSUMPTION OF GOODS AND SERVICES | Contribution7 | contribution8
+Adopt consumption patterns that emit less greenhouse gas, are more respectful of resources and reduce our waste production | Reducing the environmental impact of local industries
+AGRICULTURE AND NATURE | contribution9 | promote low-carbon agricultural practices throughout the urban area that preserve and enhance biodiversity | Promote ecological management of public and private natural areas and maintain carbon sinks
 Climate Neutrality Action Plan
 
 6
@@ -4785,10 +4639,8 @@ Climate Neutrality Action Plan
 
 ## SHARED GOVERNANCE
 
-|  contribution24 | O | Developing and strengthening areas of cooperation and response construction  |
-| --- | --- | --- |
-|  contribution25 | O | Putting science, research and innovation at the service of public policy  |
-| --- | --- | --- |
+contribution24 | O | Developing and strengthening areas of cooperation and response construction
+contribution25 | O | Putting science, research and innovation at the service of public policy
 
 ## EXTRA-TERRITORIAL COOPERATION
 
@@ -4803,10 +4655,8 @@ Climate Neutrality Action Plan
 
 ## SHARING KNOWLEDGE AND SKILLS
 
-|  contribution29 | O | Building and sharing a common culture of climate and biodiversity in the region  |
-| --- | --- | --- |
-|  contribution30 | O | Sharing and leveraging experience to accelerate the transition  |
-| --- | --- | --- |
+contribution29 | O | Building and sharing a common culture of climate and biodiversity in the region
+contribution30 | O | Sharing and leveraging experience to accelerate the transition
 
 7
 Climate Neutrality Action Plan
@@ -4887,15 +4737,11 @@ Climate Neutrality Action Plan
 
 # Key policies, documents or strategic studies
 
-|  project1 |   | project2 |   | document1 |   | document2  |   |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  Dijon Métropole | Modernisation of the household waste incineration and energy recovery center | Dijon Métropole | Modernisation of the sorting center | Territory Industry | supporting the transition to a green industry, developing industrial sectors and expertise | Territorial Objective Contract (COT) with ADEME | Scheme proposed by the French Agency for Ecological Transition to accelerate changes in internal practices  |
-|   | project3 |  | project4 |  | document3 |  | document4  |
-|  |   |   |   |   |   |   |   |
-|   | project5 |  | project6 |  | document5 |  | document6  |
-|  |   |   |   |   |   |   |   |
-|   | project7 |  | project8 |  | document7 |  | document8  |
-|  |   |   |   |   |   |   |   |
+project1 | project2 | document1 | document2
+Dijon Métropole | Modernisation of the household waste incineration and energy recovery center | Dijon Métropole | Modernisation of the sorting center | Territory Industry | supporting the transition to a green industry, developing industrial sectors and expertise | Territorial Objective Contract (COT) with ADEME | Scheme proposed by the French Agency for Ecological Transition to accelerate changes in internal practices
+project3 | project4 | document3 | document4
+project5 | project6 | document5 | document6
+project7 | project8 | document7 | document8
 buon
 
 Climate Neutrality Action Plan
@@ -4961,14 +4807,10 @@ Climate Neutrality Action Plan
 
 # Impacts &amp; Co-benefits
 
-|  Domain | Indicator | Objective 2030 | Unit | Reference | Reference year  |
-| --- | --- | --- | --- | --- | --- |
-|  Greenhouse gases | GHG reduction industry | -54 | % |  |   |
-|  Greenhouse gases | Reduction Energy industry | -119 | GWh / year |  |   |
-|  Resources | Reduction in the quantity of waste from economic activities per unit of value produced | -5 | % |  |   |
-|  |   |   |   |   |   |
-|  |   |   |   |   |   |
-|  |   |   |   |   |   |
+Domain | Indicator | Objective 2030 | Unit | Reference | Reference year
+Greenhouse gases | GHG reduction industry | -54 | %
+Greenhouse gases | Reduction Energy industry | -119 | GWh / year
+Resources | Reduction in the quantity of waste from economic activities per unit of value produced | -5 | %
 Climate Neutrality Action Plan
 
 4
@@ -4985,19 +4827,14 @@ Climate Neutrality Action Plan
 
 # Attenuation
 
-|  MOBILITY | contribution1 | contribution2  |
-| --- | --- | --- |
-|   | Contribute to a gradual reduction in the role of the car in the daily lives of residents | Promote the development of solutions to reduce and optimize commuter and freight flows by car  |
-|  BUILDING | contribution3 | contribution4  |
-| --- | --- | --- |
-|   | Reduce energy consumption and greenhouse gas emissions in buildings | Develop, renovate and build to enhance ecological functions and biodiversity  |
-|  POWER GENERATION | contribution5 | contribution6  |
-| --- | --- | --- |
-|   | Developing the local production of renewable and recovered energies | Controlling the impact of renewable energy development on resources  |
-|  PRODUCTION AND CONSUMPTION OF GOODS AND SERVICES | ○ | Adopt consumption patterns that emit less greenhouse gas, are more respectful of resources and reduce our waste production | ○ | Reducing the environmental impact of local industries  |
-| --- | --- | --- | --- | --- |
-|  AGRICULTURE AND NATURE | ○ | Promote low-carbon agricultural practices throughout the urban area that preserve and enhance biodiversity | ○ | Promote ecological management of public and private natural areas and maintain carbon sinks  |
-| --- | --- | --- | --- | --- |
+MOBILITY | contribution1 | contribution2
+Contribute to a gradual reduction in the role of the car in the daily lives of residents | Promote the development of solutions to reduce and optimize commuter and freight flows by car
+BUILDING | contribution3 | contribution4
+Reduce energy consumption and greenhouse gas emissions in buildings | Develop, renovate and build to enhance ecological functions and biodiversity
+POWER GENERATION | contribution5 | contribution6
+Developing the local production of renewable and recovered energies | Controlling the impact of renewable energy development on resources
+PRODUCTION AND CONSUMPTION OF GOODS AND SERVICES | ○ | Adopt consumption patterns that emit less greenhouse gas, are more respectful of resources and reduce our waste production | ○ | Reducing the environmental impact of local industries
+AGRICULTURE AND NATURE | ○ | Promote low-carbon agricultural practices throughout the urban area that preserve and enhance biodiversity | ○ | Promote ecological management of public and private natural areas and maintain carbon sinks
 Climate Neutrality Action Plan
 
 5
@@ -5116,12 +4953,10 @@ Climate Neutrality Action Plan
 
 # Key policies, documents or strategic studies
 
-|  Dijon Métropole | Continuous improvement of water production units | Dijon Métropole | Continuous improvement of sewage water treatment unites | SAGE de l'Ouche, de la Vouge et de la Tille | Comprehensive water management policy on a watershed scale (protecting aquatic environments and satisfying water uses) | SEMOP Odivea | Public-private partnership dedicated to water production, distribution and treatment  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  Dijon Métropole | Renewal of drinking water and wastewater networks |  | project4 | Anticipating the effects of climate change on water resources | Prospective study to anticipate the effects of climate change and define an adaptation strategy |  | document5  |
-|   | project5 |  | project6 |  | document5 |  | document6  |
-|   | project7 |  | project8 |  | document7 |  | document8  |
-|  |   |   |   |   |   |   |   |
+Dijon Métropole | Continuous improvement of water production units | Dijon Métropole | Continuous improvement of sewage water treatment unites | SAGE de l'Ouche, de la Vouge et de la Tille | Comprehensive water management policy on a watershed scale (protecting aquatic environments and satisfying water uses) | SEMOP Odivea | Public-private partnership dedicated to water production, distribution and treatment
+Dijon Métropole | Renewal of drinking water and wastewater networks | project4 | Anticipating the effects of climate change on water resources | Prospective study to anticipate the effects of climate change and define an adaptation strategy | document5
+project5 | project6 | document5 | document6
+project7 | project8 | document7 | document8
 Climate Neutrality Action Plan
 
 0
@@ -5183,14 +5018,8 @@ Climate Neutrality Action Plan
 
 # Impacts &amp; Co-benefits
 
-|  Domain | Indicator | Objective 2030 | Unit | Reference | Reference year  |
-| --- | --- | --- | --- | --- | --- |
-|  Resources | Network efficiency | 90 | % |  |   |
-|  |   |   |   |   |   |
-|  |   |   |   |   |   |
-|  |   |   |   |   |   |
-|  |   |   |   |   |   |
-|  |   |   |   |   |   |
+Domain | Indicator | Objective 2030 | Unit | Reference | Reference year
+Resources | Network efficiency | 90 | %
 Climate Neutrality Action Plan
 
 0
@@ -5207,20 +5036,15 @@ Climate Neutrality Action Plan
 
 # Attenuation
 
-|  Mobility | contribution1 | contribution2  |
-| --- | --- | --- |
-|   | Contribute to a gradual reduction in the role of the car in the daily lives of residents | Promote the development of solutions to reduce and optimize commuter and freight flows by car  |
-|  BUILDING | contribution3 | contribution4  |
-| --- | --- | --- |
-|   | Reduce energy consumption and greenhouse gas emissions in buildings | Develop, renovate and build to enhance ecological functions and biodiversity  |
-|  POWER GENERATION | contribution5 | contribution6  |
-| --- | --- | --- |
-|   | Developing the local production of renewable and recovered energies | Controlling the impact of renewable energy development on resources  |
-|  PRODUCTION AND CONSUMPTION OF GOODS AND SERVICES | contribution7 | contribution8  |
-| --- | --- | --- |
-|   | Adapt consumption patterns that emit less greenhouse gas, are more respectful of resources and reduce our waste production | Reducing the environmental impact of local industries  |
-|  AGRICULTURE AND NATURE | contribution9 | promote low-carbon agricultural practices throughout the urban area that preserve and enhance biodiversity | Promote ecological management of public and private natural areas and maintain carbon sinks  |
-| --- | --- | --- | --- |
+Mobility | contribution1 | contribution2
+Contribute to a gradual reduction in the role of the car in the daily lives of residents | Promote the development of solutions to reduce and optimize commuter and freight flows by car
+BUILDING | contribution3 | contribution4
+Reduce energy consumption and greenhouse gas emissions in buildings | Develop, renovate and build to enhance ecological functions and biodiversity
+POWER GENERATION | contribution5 | contribution6
+Developing the local production of renewable and recovered energies | Controlling the impact of renewable energy development on resources
+PRODUCTION AND CONSUMPTION OF GOODS AND SERVICES | contribution7 | contribution8
+Adapt consumption patterns that emit less greenhouse gas, are more respectful of resources and reduce our waste production | Reducing the environmental impact of local industries
+AGRICULTURE AND NATURE | contribution9 | promote low-carbon agricultural practices throughout the urban area that preserve and enhance biodiversity | Promote ecological management of public and private natural areas and maintain carbon sinks
 Climate Neutrality Action Plan
 
 4
@@ -5235,20 +5059,19 @@ Climate Neutrality Action Plan
 
 # Adaptation
 
-|  WATER | contribution11
+WATER | contribution11
 O | Restore the natural cycle of stormwater on our territory and use it sustainably | contribution12
 O | Adapting our water consumption to availability, reducing it and optimizing its use  |
-| --- | --- | --- | --- | --- |
-|  SUSTAINABLE FOOD | contribution13 | Promoting healthy, sustainable food accessible to all | contribution14 | Increase local sourcing and guarantee fair remuneration for producers  |
-|  SOCIAL JUSTICE | contribution15
+SUSTAINABLE FOOD | contribution13 | Promoting healthy, sustainable food accessible to all | contribution14 | Increase local sourcing and guarantee fair remuneration for producers
+SOCIAL JUSTICE | contribution15
 O | Adapting metropolitan public policies to vulnerabilities linked to environmental crises | contribution16
 O | Supporting residents most at risk  |
-|  ECONOMIC MUTATIONS | contribution17 | Stimulating and supporting the decarbonization of economic activities and reducing their impact on the environment | contribution18
+ECONOMIC MUTATIONS | contribution17 | Stimulating and supporting the decarbonization of economic activities and reducing their impact on the environment | contribution18
 O | Promote a sustainable economic development model that creates wealth throughout the urban area  |
-|  HEALTH, LIVING ENVIRONMENT, QUALITY OF LIFE | contribution20
+HEALTH, LIVING ENVIRONMENT, QUALITY OF LIFE | contribution20
 O | Promoting a culture of risk and hazard management in our territory | contribution21
 O | Offering everyone a resilient, healthy region with a high quality of life  |
-|  SERVICES PROVIDED BY NATURE | contribution22 | Strengthening and improving the quality of our ecological continuity and ecosystem services | contribution23
+SERVICES PROVIDED BY NATURE | contribution22 | Strengthening and improving the quality of our ecological continuity and ecosystem services | contribution23
 O | Making biodiversity on ally in our region's transition  |
 Climate Neutrality Action Plan
 
@@ -5284,12 +5107,10 @@ Climate Neutrality Action Plan
 
 ## SHARING KNOWLEDGE AND SKILLS
 
-|  contribution29  |   |
-| --- | --- |
-|  O | Building and sharing a common culture of climate and biodiversity in the region  |
-|  contribution30  |   |
-| --- | --- |
-|  O | Sharing and leveraging experience to accelerate the transition  |
+contribution29
+O | Building and sharing a common culture of climate and biodiversity in the region
+contribution30
+O | Sharing and leveraging experience to accelerate the transition
 Climate Neutrality Action Plan
 
 6
@@ -5396,19 +5217,17 @@ Climate Neutrality Action Plan
 
 #
 
-|  Dijon Metropolis - CCC / Action Plan - Transition Pathway  |   |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- | --- |
-|  number  |   |   |   |   |   |   |
-|  Action sheet number | 16 | Action sheet name | Supporting local, environmentally-friendly food production  |   |   |   |
-|  Person responsible for the action sheet | Dijon métropole - Sustainable Food Department | Manager | Almanac | Sustainable Food | Action period | 2024-2030  |
-|  |   |   |   |   |   |   |
-|  Systemic action levers to mobilize  |   |   |   |   |   |   |
-|  Social innovation &amp; social change | social1 | social2 | social3 |  |  |   |
-|   |  Promotion of quality agriculture, such as organic farming, permaculture and agroforestry, to encourage biodiversity and soil regeneration. | Encourage the creation of community gardens where residents can grow crops together, strengthen social ties and raise awareness of sustainable agriculture. | Set up local composting programs and reduce food waste |  |  |   |
-|   |  social4 | social5 | social6 |  |  |   |
-|  Capacity &amp; capabilities | Set up school and community programs to raise awareness of sustainable agriculture and local food issues among young people and families. | capacitec1 | capacitec2 | capacitec3 |  |   |
-|   |  create networks where farmers can exchange and conserve seeds and inputs adapted to local conditions and that promote biodiversity. | Setting up digital platforms to link producers and consumers, facilitating access to local products and reducing the number of intermediaries. | Reinforcing the quality of products used to distribute food to the needy |  |  |   |
-|   |  capacitec4 | capacitec5 | capacitec6 |  |  |   |
+Dijon Metropolis - CCC / Action Plan - Transition Pathway
+number
+Action sheet number | 16 | Action sheet name | Supporting local, environmentally-friendly food production
+Person responsible for the action sheet | Dijon métropole - Sustainable Food Department | Manager | Almanac | Sustainable Food | Action period | 2024-2030
+Systemic action levers to mobilize
+Social innovation &amp; social change | social1 | social2 | social3
+Promotion of quality agriculture, such as organic farming, permaculture and agroforestry, to encourage biodiversity and soil regeneration. | Encourage the creation of community gardens where residents can grow crops together, strengthen social ties and raise awareness of sustainable agriculture. | Set up local composting programs and reduce food waste
+social4 | social5 | social6
+Capacity &amp; capabilities | Set up school and community programs to raise awareness of sustainable agriculture and local food issues among young people and families. | capacitec1 | capacitec2 | capacitec3
+create networks where farmers can exchange and conserve seeds and inputs adapted to local conditions and that promote biodiversity. | Setting up digital platforms to link producers and consumers, facilitating access to local products and reducing the number of intermediaries. | Reinforcing the quality of products used to distribute food to the needy
+capacitec4 | capacitec5 | capacitec6
 buon
 
 Climate Neutrality Action Plan
@@ -5640,14 +5459,12 @@ Climate Neutrality Action Plan
 
 # Impacts &amp;amp; Co-benefits
 
-|  Domain | Indicator | Objective 2030 | Unit | Reference | Reference year  |
-| --- | --- | --- | --- | --- | --- |
-|  Health | PM2.5 concentration | 6 | (μg/m3) annual average |  |   |
-|  Health | PM10 concentration | 15 | (μg/m3) annual average |  |   |
-|  Health | NO2 concentration | 15 | (μg/m3) annual average |  |   |
-|  Health | Ozone concentration | 120 | (μg/m3) 8-hour average / day |  |   |
-|  Health | Impact of hot days | 80 | number of days per year &gt; 25°C |  |   |
-|  |   |   |   |   |   |
+Domain | Indicator | Objective 2030 | Unit | Reference | Reference year
+Health | PM2.5 concentration | 6 | (μg/m3) annual average
+Health | PM10 concentration | 15 | (μg/m3) annual average
+Health | NO2 concentration | 15 | (μg/m3) annual average
+Health | Ozone concentration | 120 | (μg/m3) 8-hour average / day
+Health | Impact of hot days | 80 | number of days per year &gt; 25°C
 Climate Neutrality Action Plan
 
 Climate Neutrality Action Plan
@@ -5666,21 +5483,16 @@ Climate Neutrality Action Plan
 
 # Attenuation
 
-|  MOBILITY | contribution1 | contribution2  |
-| --- | --- | --- |
-|   | Contribute to a gradual reduction in the role of the car in the daily lives of residents | Promote the development of solutions to reduce and optimize commuter and freight flows by car  |
-|  BUILDING | contribution3 | contribution4  |
-| --- | --- | --- |
-|   | Reduce energy consumption and greenhouse gas emissions in buildings | O Develop, renovate and build to enhance ecological functions and biodiversity  |
-|  POWER GENERATION | contribution5 | contribution6  |
-| --- | --- | --- |
-|   | Developing the local production of renewable and recovered energies | Controlling the impact of renewable energy development on resources  |
-|  PRODUCTION AND CONSUMPTION OF GOODS AND SERVICES | contribution7 | contribution8  |
-| --- | --- | --- |
-|   | Adopt consumption patterns that emit less greenhouse gas, are more respectful of resources and reduce our waste production | Reducing the environmental impact of local industries  |
-|  AGRICULTURE AND NATURE | contribution9 | contribution10  |
-| --- | --- | --- |
-|   | Promote low-carbon agricultural practices throughout the urban area that preserve and enhance biodiversity | O Promote ecological management of public and private natural areas and maintain carbon sinks  |
+MOBILITY | contribution1 | contribution2
+Contribute to a gradual reduction in the role of the car in the daily lives of residents | Promote the development of solutions to reduce and optimize commuter and freight flows by car
+BUILDING | contribution3 | contribution4
+Reduce energy consumption and greenhouse gas emissions in buildings | O Develop, renovate and build to enhance ecological functions and biodiversity
+POWER GENERATION | contribution5 | contribution6
+Developing the local production of renewable and recovered energies | Controlling the impact of renewable energy development on resources
+PRODUCTION AND CONSUMPTION OF GOODS AND SERVICES | contribution7 | contribution8
+Adopt consumption patterns that emit less greenhouse gas, are more respectful of resources and reduce our waste production | Reducing the environmental impact of local industries
+AGRICULTURE AND NATURE | contribution9 | contribution10
+Promote low-carbon agricultural practices throughout the urban area that preserve and enhance biodiversity | O Promote ecological management of public and private natural areas and maintain carbon sinks
 Climate Neutrality Action Plan
 
 Climate Neutrality Action Plan
@@ -5783,15 +5595,13 @@ Climate Neutrality Action Plan
 
 # Key policies, documents or strategic studies
 
-|  Dijon Métropole | Sentinel bee program | Dijon Métropole | "Territoires engagés pour la nature" program | document1 | PLU/HD | document2 | document2  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|   |  |  |  | PLUI-HD | PLU/HD - local urban plan (regulatory) | SCOT | SCOT - Territorial Coherence Scheme  |
-|   | project3 |  | project4 | document5 | ECO garden label | document6 | document6  |
-|   |  |  |  | Communication and recognition tool for the public, maintenance crews and elected representatives | JET Cities - Boosting Green Workforce in cities | Supporting the development of training and skills to accelerate the implementation of the ecological transition |   |
-|   | project5 |  | project6 | document5 | Open2Horizon #Biodiversity Innovation Challenge | document6 | document6  |
-|   |  |  |  | develop an innovative solution for analyzing and visualizing the region's biodiversity | "Expert Soils" and "Soil change" projects | Territorial studies concerning the brown grid which encompasses all types of soil, whether natural, agricultural, forestry or even urban |   |
-|   | project7 |  | project8 | document7 |  | document8 |   |
-|  |   |   |   |   |   |   |   |
+Dijon Métropole | Sentinel bee program | Dijon Métropole | "Territoires engagés pour la nature" program | document1 | PLU/HD | document2 | document2
+PLUI-HD | PLU/HD - local urban plan (regulatory) | SCOT | SCOT - Territorial Coherence Scheme
+project3 | project4 | document5 | ECO garden label | document6 | document6
+Communication and recognition tool for the public, maintenance crews and elected representatives | JET Cities - Boosting Green Workforce in cities | Supporting the development of training and skills to accelerate the implementation of the ecological transition
+project5 | project6 | document5 | Open2Horizon #Biodiversity Innovation Challenge | document6 | document6
+develop an innovative solution for analyzing and visualizing the region's biodiversity | "Expert Soils" and "Soil change" projects | Territorial studies concerning the brown grid which encompasses all types of soil, whether natural, agricultural, forestry or even urban
+project7 | project8 | document7 | document8
 buon
 
 Climate Neutrality Action Plan
@@ -5852,14 +5662,8 @@ Climate Neutrality Action Plan
 
 # Impacts &amp; Co-benefits
 
-|  Domain | Indicator | Objective 2030 | Unit | Reference | Reference year  |
-| --- | --- | --- | --- | --- | --- |
-|  Resources | Public and private parks, natural areas | 32 | % | 32 | 2022  |
-|  |   |   |   |   |   |
-|  |   |   |   |   |   |
-|  |   |   |   |   |   |
-|  |   |   |   |   |   |
-|  |   |   |   |   |   |
+Domain | Indicator | Objective 2030 | Unit | Reference | Reference year
+Resources | Public and private parks, natural areas | 32 | % | 32 | 2022
 buon
 
 Climate Neutrality Action Plan
@@ -5878,21 +5682,16 @@ Climate Neutrality Action Plan
 
 # Attenuation
 
-|  MOBILITY | contribution1 | contribution2  |
-| --- | --- | --- |
-|   | Contribute to a gradual reduction in the role of the car in the daily lives of residents | Promote the development of solutions to reduce and optimize commuter and freight flows by car  |
-|  BUILDING | contribution3 | contribution4  |
-| --- | --- | --- |
-|   | Reduce energy consumption and greenhouse gas emissions in buildings | Develop, renovate and build to enhance ecological functions and biodiversity  |
-|  POWER GENERATION | contribution5 | contribution6  |
-| --- | --- | --- |
-|   | Developing the local production of renewable and recovered energies | Controlling the impact of renewable energy development on resources  |
-|  PRODUCTION AND CONSUMPTION OF GOODS AND SERVICES | contribution7 | contribution8  |
-| --- | --- | --- |
-|   | Adopt consumption patterns that emit less greenhouse gas, are more respectful of measures and reduce our waste production | Reducing the environmental impact of local industries  |
-|  AGRICULTURE AND NATURE | contribution9 | contribution10  |
-| --- | --- | --- |
-|   | Promote low-carbon agricultural practices throughout the urban area that preserve and enhance biodiversity | O Promote ecological management of public and private natural areas and maintain carbon sinks  |
+MOBILITY | contribution1 | contribution2
+Contribute to a gradual reduction in the role of the car in the daily lives of residents | Promote the development of solutions to reduce and optimize commuter and freight flows by car
+BUILDING | contribution3 | contribution4
+Reduce energy consumption and greenhouse gas emissions in buildings | Develop, renovate and build to enhance ecological functions and biodiversity
+POWER GENERATION | contribution5 | contribution6
+Developing the local production of renewable and recovered energies | Controlling the impact of renewable energy development on resources
+PRODUCTION AND CONSUMPTION OF GOODS AND SERVICES | contribution7 | contribution8
+Adopt consumption patterns that emit less greenhouse gas, are more respectful of measures and reduce our waste production | Reducing the environmental impact of local industries
+AGRICULTURE AND NATURE | contribution9 | contribution10
+Promote low-carbon agricultural practices throughout the urban area that preserve and enhance biodiversity | O Promote ecological management of public and private natural areas and maintain carbon sinks
 Climate Neutrality Action Plan
 
 1
@@ -5907,23 +5706,22 @@ Climate Neutrality Action Plan
 
 # Adaptation
 
-|  WATER | contribution11
+WATER | contribution11
 O | Restore the natural cycle of stormwater on our territory and use it sustainably | contribution12
 O | Adapting our water consumption to availability, reducing it and optimizing its use  |
-| --- | --- | --- | --- | --- |
-|  SUSTAINABLE FOOD | contribution13
+SUSTAINABLE FOOD | contribution13
 O | Promoting healthy, sustainable food accessible to all | contribution14
 O | Increase local sourcing and guarantee fair remuneration for producers  |
-|  SOCIAL JUSTICE | contribution15
+SOCIAL JUSTICE | contribution15
 O | Adapting metropolitan public policies to vulnerabilities linked to environmental crises | contribution16
 O | Supporting residents most at risk  |
-|  ECONOMIC MUTATIONS | contribution17
+ECONOMIC MUTATIONS | contribution17
 O | Stimulating and supporting the decarbonization of economic activities and reducing their impact on the environment | contribution18
 O | Promote a sustainable economic development model that creates wealth throughout the urban area  |
-|  HEALTH, LIVING ENVIRONMENT, QUALITY OF LIFE | contribution20
+HEALTH, LIVING ENVIRONMENT, QUALITY OF LIFE | contribution20
 O | Promoting a culture of risk and hazard management in our territory | contribution21
 O | Offering everyone a resilient, healthy region with a high quality of life  |
-|  SERVICES PROVIDED BY NATURE | contribution22
+SERVICES PROVIDED BY NATURE | contribution22
 O | Strengthening and improving the quality of our ecological continuity and ecosystem services | contribution23
 O | Making biodiversity on ally in our region's transition  |
 Climate Neutrality Action Plan
@@ -6162,44 +5960,34 @@ Climate Neutrality Action Plan
 
 Module B-2 Climate Neutrality Portfolio Design
 
-|  B-2.1: Description of action portfolios and B-2.2: Individual action outlines - MOBILITY portfolio  |   |   |   |   |   |   |   |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Fields of Action | Action / Indicator | Main Capital Intensive Projects | Project description | Place | Capex (€) | Direct impacts (Emission reductions) | Cost Effectiveness | Generated renewable energy | Co-benefits identified | Responsible bodies/person | Stakeholders involved | Estimated operation date  |
-|   |  |  |  |  |  | ICO2eq saved | (EUR/ICO2e) | GWh |  |  |  |   |
-|  Mobility | Developing active mobility and encouraging calmer public spaces | Projects of public spaces modernization (30 Octobre, rue Monge) | Green areas, cycle lanes | Dijon | 20 000 000 € | 1 023 | 19 550 € | - | Public health improvement Noise reduction Air quality improvement Traffic fluidification Improved purchasing power | Dijon Metropolis |  | 2025  |
-|   |   |  Programm of public spaces modernization | Green areas, cycle lanes | Metropolis area | 30 000 000 € | 3 069 | 9 775 € | - | Public health improvement Noise reduction Air quality improvement Traffic fluidification Improved purchasing power | Dijon Metropolis |  | 2030  |
-|   |   |  Development of the Burgundy canal in the Dijon metropolitan area - Mobility section | development of sites to accommodate cyclists and cycle tourists, development of the banks of the canal for soft mobility, development of cycle connections, urban river logistics, etc. | Metropolis area | 10 000 000 € | 1 023 | 9 775 € | - | Public health improvement Noise reduction Air quality improvement Traffic fluidification Improved purchasing power | Dijon Metropolis | Public Sector | 2030  |
-|   |   |  |   |   |   |   |   |   |   |   |   |   |
-|   |  Developing public transport services | Tramway extension | Increasing number of stations and frequency | Metropolis area | 100 000 000 € | 2 046 | 48 875 € | - | Energy efficiency Improved purchasing power | Dijon Metropolis |  | 2030  |
-|   |   |  Transport on Demand | Proposing customized services to increase public transport use | Metropolis area | 60 000 000 € | 2 046 | 29 325 € | - | Energy efficiency Improved purchasing power | Dijon Metropolis |  | 2030  |
-|   |   |  |   |   |   |   |   |   |   |   |   |   |
-|   |  Development of live carbon and carbon-free vehicles | Deauthorization of bus fleet | 100% carbon-free buses by 2035 (172 electric and H2 buses) | Metropolis area | 190 000 000 € | 18 414 | 10 318 € | 1,00 | Energy efficiency Noise reduction Air quality improvement Jobs conversion | Dijon Metropolis |  | 2035  |
-|   |   |  Decabonization of metropolitan service fleet | H2 heavy duty vehicles, electric and H2 service vehicles | Metropolis area | 5 000 000 € | 2 302 | 2 172 € | - | Energy efficiency Noise reduction | Dijon Metropolis |  | 2035  |
-|   |   |  of partners involved into the Metropolitan Climate & Biodiversity | H2 heavy duty vehicles, electric and H2 service vehicles | Metropolis area | 10 000 000 € | 4 604 | 2 172 € | - | Energy efficiency Noise reduction Air quality improvement | Public Sector Private Sector | Dijon Metropolis | 2035  |
-|   |   |  |   |   |   |   |   |   |   |   |   |   |
-|   |  Developing sustainable urban logistics | Experimentation of Urban Logistics solutions | Studying the implementation of a cycling hub as part of the interlud / ludic charter | Dijon | 5 000 000 € | 256 | 19 550 € | - | Energy efficiency Noise reduction Air quality improvement | Private Sector | Dijon Metropolis | 2028  |
-|   |   |  |   |   |   |   |   |   |   |   |   |   |
-|   |  Developing a coordinated transport offer for the urban area | Experimentation of Energy Mobility hubs | Propose multimodal transportation zone with development of electrical charge systems | Dijon | 5 000 000 € | 1 023 | 4 888 € | 1,00 | Territorial cooperation enhancement Energy efficiency Traffic fluidification | Private Sector | Dijon Metropolis | 2028  |
-|   |   |  Schéma Express Regional Metropolitan (SENM) | Improve services between the city centre and its suburban area by strengthening rail services and other modes | Metropolis area | 20 000 000 € | 3 069 | 6 517 € | - | Territorial cooperation enhancement Energy efficiency Traffic fluidification | Public Sector | Dijon Metropolis | 2030  |
-|  |   |   |   |   |   |   |   |   |   |   |   |   |
+B-2.1: Description of action portfolios and B-2.2: Individual action outlines - MOBILITY portfolio
+Fields of Action | Action / Indicator | Main Capital Intensive Projects | Project description | Place | Capex (€) | Direct impacts (Emission reductions) | Cost Effectiveness | Generated renewable energy | Co-benefits identified | Responsible bodies/person | Stakeholders involved | Estimated operation date
+ICO2eq saved | (EUR/ICO2e) | GWh
+Mobility | Developing active mobility and encouraging calmer public spaces | Projects of public spaces modernization (30 Octobre, rue Monge) | Green areas, cycle lanes | Dijon | 20 000 000 € | 1 023 | 19 550 € | - | Public health improvement Noise reduction Air quality improvement Traffic fluidification Improved purchasing power | Dijon Metropolis | 2025
+Programm of public spaces modernization | Green areas, cycle lanes | Metropolis area | 30 000 000 € | 3 069 | 9 775 € | - | Public health improvement Noise reduction Air quality improvement Traffic fluidification Improved purchasing power | Dijon Metropolis | 2030
+Development of the Burgundy canal in the Dijon metropolitan area - Mobility section | development of sites to accommodate cyclists and cycle tourists, development of the banks of the canal for soft mobility, development of cycle connections, urban river logistics, etc. | Metropolis area | 10 000 000 € | 1 023 | 9 775 € | - | Public health improvement Noise reduction Air quality improvement Traffic fluidification Improved purchasing power | Dijon Metropolis | Public Sector | 2030
+Developing public transport services | Tramway extension | Increasing number of stations and frequency | Metropolis area | 100 000 000 € | 2 046 | 48 875 € | - | Energy efficiency Improved purchasing power | Dijon Metropolis | 2030
+Transport on Demand | Proposing customized services to increase public transport use | Metropolis area | 60 000 000 € | 2 046 | 29 325 € | - | Energy efficiency Improved purchasing power | Dijon Metropolis | 2030
+Development of live carbon and carbon-free vehicles | Deauthorization of bus fleet | 100% carbon-free buses by 2035 (172 electric and H2 buses) | Metropolis area | 190 000 000 € | 18 414 | 10 318 € | 1,00 | Energy efficiency Noise reduction Air quality improvement Jobs conversion | Dijon Metropolis | 2035
+Decabonization of metropolitan service fleet | H2 heavy duty vehicles, electric and H2 service vehicles | Metropolis area | 5 000 000 € | 2 302 | 2 172 € | - | Energy efficiency Noise reduction | Dijon Metropolis | 2035
+of partners involved into the Metropolitan Climate & Biodiversity | H2 heavy duty vehicles, electric and H2 service vehicles | Metropolis area | 10 000 000 € | 4 604 | 2 172 € | - | Energy efficiency Noise reduction Air quality improvement | Public Sector Private Sector | Dijon Metropolis | 2035
+Developing sustainable urban logistics | Experimentation of Urban Logistics solutions | Studying the implementation of a cycling hub as part of the interlud / ludic charter | Dijon | 5 000 000 € | 256 | 19 550 € | - | Energy efficiency Noise reduction Air quality improvement | Private Sector | Dijon Metropolis | 2028
+Developing a coordinated transport offer for the urban area | Experimentation of Energy Mobility hubs | Propose multimodal transportation zone with development of electrical charge systems | Dijon | 5 000 000 € | 1 023 | 4 888 € | 1,00 | Territorial cooperation enhancement Energy efficiency Traffic fluidification | Private Sector | Dijon Metropolis | 2028
+Schéma Express Regional Metropolitan (SENM) | Improve services between the city centre and its suburban area by strengthening rail services and other modes | Metropolis area | 20 000 000 € | 3 069 | 6 517 € | - | Territorial cooperation enhancement Energy efficiency Traffic fluidification | Public Sector | Dijon Metropolis | 2030
 Climate Neutrality Action Plan
 
 Module B-2 Climate Neutrality Portfolio Design
 
-|  B-2.1: Description of action portfolios and B-2.2: Individual action outlines - BUILDING portfolio  |   |   |   |   |   |   |   |   |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Fields of Action | Action / Indicator | Main Capital Intensive Projects | Project description | Place | Capex (€) | Direct impacts (Emission reductions) | Cost Effectiveness | Generated renewable energy | Co-benefits identified |  | Responsible bodies/person | Stakeholders involved | Estimated operation date  |
-|   |  |  |  |  |  | ICO2eq saved | (EUR/ICO2e) | GWh |  |  |  |  |   |
-|  Housing and Buildings | Decarbonising and reducing energy consumption in existing homes | Metropolitan actions: Renoveco and SEM habitat funds | Organising and managing local engineering resources to boost building renovation | Metropolis area | 66 000 000 € | 22 798 | 2 895 € | - | Housing improvement Energy efficiency Jobs creation |  | Dijon Metropolis |  | 2030  |
-|   |   |  Response project | Involved in the ecological transition, residents are invited to define their needs, monitor the implementation and test innovations in the fields of intelligent buildings, electric mobility, renewable energy storage, etc. | Dijon | 40 000 000 € | 3 800 | 10 527 € | 4,00 | Housing improvement Energy efficiency Jobs creation Promoting circular economy |  | Dijon Metropolis | Public Sector | 2030  |
-|   |   |  |   |   |   |   |   |   |   |   |   |   |   |
-|   |  Decarbonising and reducing energy consumption in the tertiary and industrial sectors (excluding processes) | Programs of metropolitan building renovation | Insulation, energy management | Dijon | 150 000 000 € | 4 400 | 34 094 € | 4,00 | Energy efficiency Jobs creation Promoting circular economy |  | Dijon Metropolis |  | 2030  |
-|   |   |  Building renovation projects of partners involved into the Metropolitan Climate & Biodiversity Contract | Insulation, energy management | Dijon | 70 000 000 € | 4 400 | 15 911 € | 8,00 | Energy efficiency Jobs creation Promoting circular economy |  | Private Sector Public Sector | Dijon Metropolis | 2030  |
-|   |   |  |   |   |   |   |   |   |   |   |   |   |   |
-|   |  Reducing the climate and biodiversity impacts of development and construction projects (public spaces and buildings) | Micro-projects plot-based infiltration | Support projects that promote water and biodiversity (revegetation, infiltration, deconnection of wastewater, creation of cool islands, etc.) | Dijon | 18 000 000 € | 4 000 | 4 500 € | - | Biodiversity preservation Water management Saving ressources Citizen mobilization |  | Dijon Metropolis | Citizens | 2030  |
-|   |   |  Eco-district porte Agripa | Restructuration of the East radiation area with the aim of improving mobility, quality of life, and housing renovation | Dijon | 30 000 000 € | 4 000 | 7 501 € | 2,00 | Biodiversity preservation Water management Saving ressources Citizen mobilization |  | Dijon Metropolis | Private Sector Public Sector | 2035  |
-|   |   |  Development of the southern entrance to the town | Restructuration of the South responsihood area with the aim of improving mobility, quality of life, and housing renovation | Dijon | 50 000 000 € | 4 000 | 12 501 € | 2,00 | Biodiversity preservation Water management Saving resources Citizen mobilization |  | Dijon Metropolis | Private Sector Public Sector | 2035  |
-|   |   |  |   |   |   |   |   |   |   |   |   |   |   |
+B-2.1: Description of action portfolios and B-2.2: Individual action outlines - BUILDING portfolio
+Fields of Action | Action / Indicator | Main Capital Intensive Projects | Project description | Place | Capex (€) | Direct impacts (Emission reductions) | Cost Effectiveness | Generated renewable energy | Co-benefits identified | Responsible bodies/person | Stakeholders involved | Estimated operation date
+ICO2eq saved | (EUR/ICO2e) | GWh
+Housing and Buildings | Decarbonising and reducing energy consumption in existing homes | Metropolitan actions: Renoveco and SEM habitat funds | Organising and managing local engineering resources to boost building renovation | Metropolis area | 66 000 000 € | 22 798 | 2 895 € | - | Housing improvement Energy efficiency Jobs creation | Dijon Metropolis | 2030
+Response project | Involved in the ecological transition, residents are invited to define their needs, monitor the implementation and test innovations in the fields of intelligent buildings, electric mobility, renewable energy storage, etc. | Dijon | 40 000 000 € | 3 800 | 10 527 € | 4,00 | Housing improvement Energy efficiency Jobs creation Promoting circular economy | Dijon Metropolis | Public Sector | 2030
+Decarbonising and reducing energy consumption in the tertiary and industrial sectors (excluding processes) | Programs of metropolitan building renovation | Insulation, energy management | Dijon | 150 000 000 € | 4 400 | 34 094 € | 4,00 | Energy efficiency Jobs creation Promoting circular economy | Dijon Metropolis | 2030
+Building renovation projects of partners involved into the Metropolitan Climate & Biodiversity Contract | Insulation, energy management | Dijon | 70 000 000 € | 4 400 | 15 911 € | 8,00 | Energy efficiency Jobs creation Promoting circular economy | Private Sector Public Sector | Dijon Metropolis | 2030
+Reducing the climate and biodiversity impacts of development and construction projects (public spaces and buildings) | Micro-projects plot-based infiltration | Support projects that promote water and biodiversity (revegetation, infiltration, deconnection of wastewater, creation of cool islands, etc.) | Dijon | 18 000 000 € | 4 000 | 4 500 € | - | Biodiversity preservation Water management Saving ressources Citizen mobilization | Dijon Metropolis | Citizens | 2030
+Eco-district porte Agripa | Restructuration of the East radiation area with the aim of improving mobility, quality of life, and housing renovation | Dijon | 30 000 000 € | 4 000 | 7 501 € | 2,00 | Biodiversity preservation Water management Saving ressources Citizen mobilization | Dijon Metropolis | Private Sector Public Sector | 2035
+Development of the southern entrance to the town | Restructuration of the South responsihood area with the aim of improving mobility, quality of life, and housing renovation | Dijon | 50 000 000 € | 4 000 | 12 501 € | 2,00 | Biodiversity preservation Water management Saving resources Citizen mobilization | Dijon Metropolis | Private Sector Public Sector | 2035
 Climate Neutrality Action Plan
 
 3
@@ -6210,76 +5998,69 @@ Climate Neutrality Action Plan
 
 B-2.1: Description of action portfolios and B-2.2: Individual action outlines - ENERGY portfolio
 
-|  Fields of Action | Action / Indicator | Main Capital Intensive Projects | Project description | Place | Capex (€) | Direct Impacts (Emission reductions) | Cost Effectiveness | Generated renewable energy | Co-benefits identified |  | Responsible bodies/person | Stakeholders involved | Estimated operation date  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|   |  |  |  |  |  | ICO2eq saved | (EUR/ICO2e) | GWh |  |  |  |  |   |
-|  Energy Production | Developing renewable electricity generation | Airport photovoltaic power plant / BA 102 | Grid resale via CRE call for tenders | Ouges | 120 000 000 € | - |  | 120,00 | Territorial cooperation enhancement Jobs creation |  | Dijon Metropolis / SEM Energies |  | 2030  |
-|   |   |  Photovoltaic power plant CET Sud | Grid resale via CRE call for tenders | Dijon | 20 000 000 € | - |  | 20,00 | Territorial cooperation enhancement Jobs creation |  | Dijon Metropolis / SEM Energies |  | 2030  |
-|   |   |  Collective self-consumption loop on the Chevigny / Excellence 2000 business park | Collective self-consumption (industry and local authorities) | Chevigny Saint Sauveur | 20 000 000 € | - |  | 20,00 | Territorial cooperation enhancement Jobs creation |  | Dijon Metropolis / SEM Energies |  | 2030  |
-|   |   |  Collective self-consumption loop on the Longvic / Oscars business park | Collective self-consumption (industry and local authorities) | Longvic | 20 000 000 € | - |  | 20,00 | Territorial cooperation enhancement Jobs creation |  | Dijon Metropolis / SEM Energies |  | 2030  |
-|   |   |  Collective self-consumption loop on CHU / UB zone | Collective self-consumption (industry and local authorities) | Dijon | 20 000 000 € | - |  | 20,00 | Territorial cooperation enhancement Jobs creation |  | Dijon Metropolis / SEM Energies |  | 2030  |
-|   |   |  Solarisation of the built and non-built heritage of Dijon Métropole and the City of Dijon | Collective self-consumption (metropolitan uses) | Dijon | 20 000 000 € | - |  | 20,00 | Territorial cooperation enhancement Jobs creation |  | Dijon Metropolis / SEM Energies |  | 2030  |
-|   |   |  Agronov zone agrivoltac project | Resale to the grid and collective self-consumption (Agronov, farmers, MegaPom) | Bretenière | 10 000 000 € | - |  | 10,00 | Territorial cooperation enhancement Jobs creation |  | Dijon Metropolis / SEM Energies |  | 2030  |
-|   |  Developing renewable gas production | Biomethane production from Sewage Water Treatment Plant | Resale to the grid | Ouges | 10 000 000 € | - |  | 10,00 | Territorial cooperation enhancement Jobs creation |  | Dijon Metropolis |  | 2025  |
-|   |   |  Hydrogen production stations | Bus and garbage truck ecosystem supplied by the H2 stations | Dijon | 30 000 000 € | - |  | 30,00 | Territorial cooperation enhancement Jobs creation |  | Dijon Metropolis / SRM Energies | Private sector | 2028  |
-|   |   |  Agricultural methanisation unit | Resale to the grid | Magny sur Tille | 40 000 000 € | - |  | 40,00 | Territorial cooperation enhancement Jobs creation |  | Private sector | Dijon Metropolis | 2028  |
-|   |  Developing the production of renewable thermal energy | New heat production unit in southern Dijon / buffer storage / industrial waste heat recovery | Supply of industrial heat to Chendve, supply of heat to RCU Sodien, supply of tertiary/residential heat to ave R Camiz + supply of industrial heat to Longvic/Oscara | Chendve | 50 000 000 € | 6 221 | 8 038 € | 50,00 | Territorial cooperation enhancement Jobs creation |  | Dijon Metropolis / SEM Energies | Private sector | 2030  |
-|   |   |  New heat production unit in eastern Dijon / buffer storage / industrial waste heat recovery | Industrial heat supply 2A Excellence 2000, industrial heat supply 2A Chevigny Est, tertiary/residential heat supply Chevigny, connection RCU Dijon Energies | Chevigny Saint Sauveur | 50 000 000 € | 6 221 | 8 038 € | 50,00 | Territorial cooperation enhancement Jobs creation |  | Dijon Metropolis / SEM Energies | Private sector | 2030  |
-|   |   |  Renovation of the UVE / buffer storage / recovery of waste heat Zone Activité Cap Nord | Metropolitan Heating Network | Dijon | 45 000 000 € | 6 221 | 7 234 € | 45,00 | Territorial cooperation enhancement Jobs creation |  | Dijon Metropolis |  | 2030  |
-|   |  Development of energy management | Dijon metropolis building energy consumption and production management | Energy management system | Dijon | 5 000 000 € | 486 | 10 288 € | - | Energy savings |  | Dijon Metropolis |  | 2030  |
-|   |   |  Public and Private building energy consumption and production management | Energy management system | Dijon | 20 000 000 € | 486 | 41 152 € | - | Energy savings |  | Private Sector Public Sector |  | 2030  |
-|   |   |  |   |   |   |   |   |   |   |   |   |   |   |
+Fields of Action | Action / Indicator | Main Capital Intensive Projects | Project description | Place | Capex (€) | Direct Impacts (Emission reductions) | Cost Effectiveness | Generated renewable energy | Co-benefits identified | Responsible bodies/person | Stakeholders involved | Estimated operation date
+ICO2eq saved | (EUR/ICO2e) | GWh
+Energy Production | Developing renewable electricity generation | Airport photovoltaic power plant / BA 102 | Grid resale via CRE call for tenders | Ouges | 120 000 000 € | - | 120,00 | Territorial cooperation enhancement Jobs creation | Dijon Metropolis / SEM Energies | 2030
+Photovoltaic power plant CET Sud | Grid resale via CRE call for tenders | Dijon | 20 000 000 € | - | 20,00 | Territorial cooperation enhancement Jobs creation | Dijon Metropolis / SEM Energies | 2030
+Collective self-consumption loop on the Chevigny / Excellence 2000 business park | Collective self-consumption (industry and local authorities) | Chevigny Saint Sauveur | 20 000 000 € | - | 20,00 | Territorial cooperation enhancement Jobs creation | Dijon Metropolis / SEM Energies | 2030
+Collective self-consumption loop on the Longvic / Oscars business park | Collective self-consumption (industry and local authorities) | Longvic | 20 000 000 € | - | 20,00 | Territorial cooperation enhancement Jobs creation | Dijon Metropolis / SEM Energies | 2030
+Collective self-consumption loop on CHU / UB zone | Collective self-consumption (industry and local authorities) | Dijon | 20 000 000 € | - | 20,00 | Territorial cooperation enhancement Jobs creation | Dijon Metropolis / SEM Energies | 2030
+Solarisation of the built and non-built heritage of Dijon Métropole and the City of Dijon | Collective self-consumption (metropolitan uses) | Dijon | 20 000 000 € | - | 20,00 | Territorial cooperation enhancement Jobs creation | Dijon Metropolis / SEM Energies | 2030
+Agronov zone agrivoltac project | Resale to the grid and collective self-consumption (Agronov, farmers, MegaPom) | Bretenière | 10 000 000 € | - | 10,00 | Territorial cooperation enhancement Jobs creation | Dijon Metropolis / SEM Energies | 2030
+Developing renewable gas production | Biomethane production from Sewage Water Treatment Plant | Resale to the grid | Ouges | 10 000 000 € | - | 10,00 | Territorial cooperation enhancement Jobs creation | Dijon Metropolis | 2025
+Hydrogen production stations | Bus and garbage truck ecosystem supplied by the H2 stations | Dijon | 30 000 000 € | - | 30,00 | Territorial cooperation enhancement Jobs creation | Dijon Metropolis / SRM Energies | Private sector | 2028
+Agricultural methanisation unit | Resale to the grid | Magny sur Tille | 40 000 000 € | - | 40,00 | Territorial cooperation enhancement Jobs creation | Private sector | Dijon Metropolis | 2028
+Developing the production of renewable thermal energy | New heat production unit in southern Dijon / buffer storage / industrial waste heat recovery | Supply of industrial heat to Chendve, supply of heat to RCU Sodien, supply of tertiary/residential heat to ave R Camiz + supply of industrial heat to Longvic/Oscara | Chendve | 50 000 000 € | 6 221 | 8 038 € | 50,00 | Territorial cooperation enhancement Jobs creation | Dijon Metropolis / SEM Energies | Private sector | 2030
+New heat production unit in eastern Dijon / buffer storage / industrial waste heat recovery | Industrial heat supply 2A Excellence 2000, industrial heat supply 2A Chevigny Est, tertiary/residential heat supply Chevigny, connection RCU Dijon Energies | Chevigny Saint Sauveur | 50 000 000 € | 6 221 | 8 038 € | 50,00 | Territorial cooperation enhancement Jobs creation | Dijon Metropolis / SEM Energies | Private sector | 2030
+Renovation of the UVE / buffer storage / recovery of waste heat Zone Activité Cap Nord | Metropolitan Heating Network | Dijon | 45 000 000 € | 6 221 | 7 234 € | 45,00 | Territorial cooperation enhancement Jobs creation | Dijon Metropolis | 2030
+Development of energy management | Dijon metropolis building energy consumption and production management | Energy management system | Dijon | 5 000 000 € | 486 | 10 288 € | - | Energy savings | Dijon Metropolis | 2030
+Public and Private building energy consumption and production management | Energy management system | Dijon | 20 000 000 € | 486 | 41 152 € | - | Energy savings | Private Sector Public Sector | 2030
 Climate Neutrality Action Plan
 
 Module B-2 Climate Neutrality Portfolio Design
 
-|  B-2.1: Description of action portfolios and B-2.2: Individual action outlines - OTHER SECTORS portfolio  |   |   |   |   |   |   |   |   |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Fields of Action | Action / Indicator | Main Capital Intensive Projects | Project description | Place | Capex (€) | Direct Impacts (Emission reductions) | Cost Effectiveness | Generated renewable energy | Co-benefits identified | Responsible bodies/person | Stakeholders involved | Estimated operation date |   |
-|   |  |  |  |  |  | IICO2eq saved | (EUR/ICO2e) | GWh |  |  |  |  |   |
-|  Production and consummation of good and services | Unmanaging the consumption of local products and supporting changes in industries | Collective energy purchase in metropolitan area | Consolidating municipal energy needs and purchasing | Metropolitan area | 1 200 000 € | - | - | - | Jobs creation
+B-2.1: Description of action portfolios and B-2.2: Individual action outlines - OTHER SECTORS portfolio
+Fields of Action | Action / Indicator | Main Capital Intensive Projects | Project description | Place | Capex (€) | Direct Impacts (Emission reductions) | Cost Effectiveness | Generated renewable energy | Co-benefits identified | Responsible bodies/person | Stakeholders involved | Estimated operation date
+IICO2eq saved | (EUR/ICO2e) | GWh
+Production and consummation of good and services | Unmanaging the consumption of local products and supporting changes in industries | Collective energy purchase in metropolitan area | Consolidating municipal energy needs and purchasing | Metropolitan area | 1 200 000 € | - | - | - | Jobs creation
 Saving ressources | Dijon Metropolis | Public Sector | 2030 |   |
-|   |   |   |  |  |  | - |  |  |  |  |  |  |   |
-|   |  Promoting the circular economy reducing the impact of industrial processes on the climate, biodiversity, resources and | Modernisation of the household waste incineration and energy recovery centre | maintain treatment capacity to cover needs arising from the closure of landfill sites | Dijon | 120 000 000 € | - | - | - | Jobs creation
+Promoting the circular economy reducing the impact of industrial processes on the climate, biodiversity, resources and | Modernisation of the household waste incineration and energy recovery centre | maintain treatment capacity to cover needs arising from the closure of landfill sites | Dijon | 120 000 000 € | - | - | - | Jobs creation
 Saving ressources | Dijon Metropolis |  | 2030 |   |
-|   |   |  Modernisation of the sorting centre | Increased sorting capacity (quality and quantity) | Dijon | 35 000 000 € | - | - | - | Jobs creation
+Modernisation of the sorting centre | Increased sorting capacity (quality and quantity) | Dijon | 35 000 000 € | - | - | - | Jobs creation
 Saving ressources | Dijon Metropolis |  | 2025 |   |
-|   |   |   |  |  |  | - |  |  |  |  |  |  |   |
-|  Water | Planning the management of water resources and adapting infrastructures | Continuous improvement of water production units | Improving drinking water production capacity | Metropolitan area | 12 000 000 € | - | - | - | Biodiversity preservation
+Water | Planning the management of water resources and adapting infrastructures | Continuous improvement of water production units | Improving drinking water production capacity | Metropolitan area | 12 000 000 € | - | - | - | Biodiversity preservation
 Water management
 Saving resources
 Citizen mobilization | Dijon Metropolis |  | 2030 |   |
-|   |   |  Continuous improvement of sewage water treatment units | Improving wastewater treatment capacity | Metropolitan area | 12 000 000 € | - | - | - | Biodiversity preservation
+Continuous improvement of sewage water treatment units | Improving wastewater treatment capacity | Metropolitan area | 12 000 000 € | - | - | - | Biodiversity preservation
 Water management
 Saving resources
 Citizen mobilization | Dijon Metropolis |  | 2030 |   |
-|   |   |  Renewal of drinking water and wastewater networks | Improving network capacity | Metropolitan area | 12 000 000 € | - | - | - | Biodiversity preservation
+Renewal of drinking water and wastewater networks | Improving network capacity | Metropolitan area | 12 000 000 € | - | - | - | Biodiversity preservation
 Water management
 Saving resources
 Citizen mobilization | Dijon Metropolis |  | 2030 |   |
-|  Sustainable agriculture | Supporting local, environmentally friendly food production | Metropolitan vegetable factory | structuring the economic model linking local producers and local consumers | Ouges | 5 000 000 € | - | - | - | Jobs creation
+Sustainable agriculture | Supporting local, environmentally friendly food production | Metropolitan vegetable factory | structuring the economic model linking local producers and local consumers | Ouges | 5 000 000 € | - | - | - | Jobs creation
 Saving resources
 Water management | Dijon Metropolis |  | 2030 |   |
-|   |   |  Collective catering in metropolitan area | Consolidating municipal catering services to promote sustainable food | Metropolitan area | 1 200 000 € | - | - | - | Jobs creation
+Collective catering in metropolitan area | Consolidating municipal catering services to promote sustainable food | Metropolitan area | 1 200 000 € | - | - | - | Jobs creation
 Saving resources
 Water management | Dijon Metropolis |  | 2026 |   |
-|   |   |   |  |  |  | - |  |  |  |  |  |  |   |
-|  Health and living environment | Reducing vulnerability to natural and health risks exacerbated by climate change | Energy and Climate Platform | Maintaining energy consumption, greenhouse gas emissions, air quality and urban heat islands | Metropolitan area | 1 200 000 € | - | - | - | Public health improvement
+Health and living environment | Reducing vulnerability to natural and health risks exacerbated by climate change | Energy and Climate Platform | Maintaining energy consumption, greenhouse gas emissions, air quality and urban heat islands | Metropolitan area | 1 200 000 € | - | - | - | Public health improvement
 Improved purchasing power
 Saving resources | Dijon Metropolis | Private Sector
 Public Sector | 2030 |   |
-|   |   |  Programm of public spaces vegetalization | Planting trees when modernizing public spaces | Metropolis area | 1 200 000 € | - | - | - | Public health improvement
+Programm of public spaces vegetalization | Planting trees when modernizing public spaces | Metropolis area | 1 200 000 € | - | - | - | Public health improvement
 Improved purchasing power
 Saving resources | Dijon Metropolis |  | 2030 |   |
-|  Services provided by nature | Strengthening biodiversity and natural ecosystems in the region | Sentinel bee programme | Safeguarding biodiversity by protecting bees and wild pollinators | Metropolitan area | 1 200 000 € | - | - | - | Territorial cooperation enhancement
+Services provided by nature | Strengthening biodiversity and natural ecosystems in the region | Sentinel bee programme | Safeguarding biodiversity by protecting bees and wild pollinators | Metropolitan area | 1 200 000 € | - | - | - | Territorial cooperation enhancement
 Biodiversity preservation
 Water management | Dijon Metropolis | Private Sector
 Public Sector | 2030 |   |
-|   |   |  Combines engagable pour la nature programme | Integrating biodiversity conservation issues into operational work through dedicated action plan | Metropolis area | 1 200 000 € | - | - | - | Territorial cooperation enhancement
+Combines engagable pour la nature programme | Integrating biodiversity conservation issues into operational work through dedicated action plan | Metropolis area | 1 200 000 € | - | - | - | Territorial cooperation enhancement
 Biodiversity preservation
 Water management | Dijon Metropolis | Private Sector
 Public Sector | 2030 |   |
-|   |   |   |  |  |  | - |  |  |  |  |  |  |   |
 buon
 
 Climate Neutrality Action
@@ -6301,13 +6082,11 @@ Climate Neutrality Action Plan
 
 #
 
-|  Fields of Action | Action / Indicator | Main Risk Identified | Description of Risk | Risk Priority | Mitigation of Risk  |
-| --- | --- | --- | --- | --- | --- |
-|  Housing and Buildings | Decarbonising and reducing energy consumption in existing homes | Financial accessibility | Cost of works: The renovations required to improve energy efficiency can represent a substantial investment, which can be a barrier for many homeowners, particularly those on low incomes. Appropriateness of support: Subsidies and financial incentives must be sufficient and well-targeted to encourage renovations, but there are often gaps in their availability or effectiveness. Regional disparities: Household resources and capacities vary considerably from one region to another, which can lead to inequalities in access to low-carbon housing. Complexity of the work: Managing renovation projects can be complex and require specific skills, making it difficult for some homeowners to navigate the process. Temporary disruption: Renovation work can cause inconvenience to occupants, and poor management can lead to delays or extra costs. | Listed actions have systemic effects | Implement comprehensive energy retrofit programs with: financial incentives, home energy audits, targeted programs, training and certification, awareness campaigns and community Engagement  |
-|   |  Decarbonising and reducing energy consumption in the tertiary and industrial sectors (excluding processes) | Managing the costs and investments required to implement effective solutions | High levels of investment: Energy retrofits, the adoption of new technologies (such as more efficient heating or lighting systems), and the integration of renewable energy can require significant investment, which can be difficult to justify for some businesses. Uncertain returns on investment: Energy savings can take time to materialise, and businesses may be reluctant to commit to expenditure with no guarantee of a quick return, especially in an uncertain economic climate. Technical complexity: Implementing decarbonisation solutions may require specific technical skills, and companies may not have the necessary resources to manage these changes. Operational disruption: Renovation work or the installation of new technologies can lead to business interruptions, which can affect productivity and revenues. Regulatory compliance: Businesses must navigate an evolving regulatory landscape, and new or changing requirements can create additional uncertainties and challenges. | Listed actions have systemic effects | Implement comprehensive sustainability and energy management programs including: energy efficiency audits, incentives for upgrades, employee training and engagement, decarbonization roadmaps, renewable energy integration, monitoring and reporting  |
-|   |  Reducing the climate and biodiversity impacts of development and construction projects (public spaces and buildings) | Difficulty in effectively integrating these objectives into the planning and design processes | Conflicts of interest: Economic and development priorities may conflict with environmental objectives, leading to inappropriate trade-offs in project design. Lack of awareness and training: Those involved in planning and construction may not have a sufficient understanding of climate and biodiversity issues, which can lead to ill-informed decisions. Regulatory complexity: Navigating an evolving regulatory framework for environmental protection can be difficult, and new requirements can complicate the project approval process. Impact assessment: Environmental impact assessment may be insufficient or incomplete, leading to negative consequences for climate and biodiversity after construction. Additional costs: Solutions aimed at reducing environmental impacts can be perceived as additional costs, which can act as a brake on the adoption of sustainable practices | Listed actions have systemic effects | An integrated and collaborative approach, involving environmental experts, town planners and stakeholders, to ensure that sustainability objectives are fully integrated from the earliest stages of planning  |
-|   | Developing renewable electricity generation | Intermittent production | Variability of production: Renewable energy sources, such as wind and solar power, are dependent on weather conditions, which can lead to fluctuations in the amount of energy produced. Supply management: Intermittency can complicate power grid management, requiring efficient storage solutions and demand management systems to balance supply and demand. Inadequate infrastructure: Existing electricity grids may not be adapted to efficiently integrate a growing share of renewable energy, requiring significant investment in infrastructure. Storage and flexibility costs: The development of storage technologies (such as batteries) and flexible solutions (such as gas-fired power stations that can be brought on stream quickly) may represent an additional cost. Social and environmental acceptability: Renewable energy projects may encounter local resistance, particularly due to concerns about the impact on the landscape, biodiversity or health. | Listed actions have systemic effects | Involving local communities in the project planning and implementation process  |
-|   |  |   |   |   |   |
+Fields of Action | Action / Indicator | Main Risk Identified | Description of Risk | Risk Priority | Mitigation of Risk
+Housing and Buildings | Decarbonising and reducing energy consumption in existing homes | Financial accessibility | Cost of works: The renovations required to improve energy efficiency can represent a substantial investment, which can be a barrier for many homeowners, particularly those on low incomes. Appropriateness of support: Subsidies and financial incentives must be sufficient and well-targeted to encourage renovations, but there are often gaps in their availability or effectiveness. Regional disparities: Household resources and capacities vary considerably from one region to another, which can lead to inequalities in access to low-carbon housing. Complexity of the work: Managing renovation projects can be complex and require specific skills, making it difficult for some homeowners to navigate the process. Temporary disruption: Renovation work can cause inconvenience to occupants, and poor management can lead to delays or extra costs. | Listed actions have systemic effects | Implement comprehensive energy retrofit programs with: financial incentives, home energy audits, targeted programs, training and certification, awareness campaigns and community Engagement
+Decarbonising and reducing energy consumption in the tertiary and industrial sectors (excluding processes) | Managing the costs and investments required to implement effective solutions | High levels of investment: Energy retrofits, the adoption of new technologies (such as more efficient heating or lighting systems), and the integration of renewable energy can require significant investment, which can be difficult to justify for some businesses. Uncertain returns on investment: Energy savings can take time to materialise, and businesses may be reluctant to commit to expenditure with no guarantee of a quick return, especially in an uncertain economic climate. Technical complexity: Implementing decarbonisation solutions may require specific technical skills, and companies may not have the necessary resources to manage these changes. Operational disruption: Renovation work or the installation of new technologies can lead to business interruptions, which can affect productivity and revenues. Regulatory compliance: Businesses must navigate an evolving regulatory landscape, and new or changing requirements can create additional uncertainties and challenges. | Listed actions have systemic effects | Implement comprehensive sustainability and energy management programs including: energy efficiency audits, incentives for upgrades, employee training and engagement, decarbonization roadmaps, renewable energy integration, monitoring and reporting
+Reducing the climate and biodiversity impacts of development and construction projects (public spaces and buildings) | Difficulty in effectively integrating these objectives into the planning and design processes | Conflicts of interest: Economic and development priorities may conflict with environmental objectives, leading to inappropriate trade-offs in project design. Lack of awareness and training: Those involved in planning and construction may not have a sufficient understanding of climate and biodiversity issues, which can lead to ill-informed decisions. Regulatory complexity: Navigating an evolving regulatory framework for environmental protection can be difficult, and new requirements can complicate the project approval process. Impact assessment: Environmental impact assessment may be insufficient or incomplete, leading to negative consequences for climate and biodiversity after construction. Additional costs: Solutions aimed at reducing environmental impacts can be perceived as additional costs, which can act as a brake on the adoption of sustainable practices | Listed actions have systemic effects | An integrated and collaborative approach, involving environmental experts, town planners and stakeholders, to ensure that sustainability objectives are fully integrated from the earliest stages of planning
+Developing renewable electricity generation | Intermittent production | Variability of production: Renewable energy sources, such as wind and solar power, are dependent on weather conditions, which can lead to fluctuations in the amount of energy produced. Supply management: Intermittency can complicate power grid management, requiring efficient storage solutions and demand management systems to balance supply and demand. Inadequate infrastructure: Existing electricity grids may not be adapted to efficiently integrate a growing share of renewable energy, requiring significant investment in infrastructure. Storage and flexibility costs: The development of storage technologies (such as batteries) and flexible solutions (such as gas-fired power stations that can be brought on stream quickly) may represent an additional cost. Social and environmental acceptability: Renewable energy projects may encounter local resistance, particularly due to concerns about the impact on the landscape, biodiversity or health. | Listed actions have systemic effects | Involving local communities in the project planning and implementation process
 buon
 
 Climate Neutrality Action Plan
@@ -6387,18 +6166,15 @@ In order to optimize the opportunities identified during the identification of p
 
 This matrix guides the setting of strategic priorities and implementation plans, identifying high-impact, high-probability opportunities as essential catalysts for accelerating the transition :
 
-|  Impact level  |   |
-| --- | --- |
-|  Low | AverageImportant  |
-|  |   |
+Impact level
+Low | AverageImportant
 DJON
 Climate Neutrality Action Plan
 7
 
-|  Probability level | Average |  | Develop the economic potential of the co-benefits of climate transition projects
+Probability level | Average | Develop the economic potential of the co-benefits of climate transition projects
 Strengthen and unify a global territorial vision to guide action | Massify and pool financing by aggregating resources among stakeholders  |
-| --- | --- | --- | --- | --- |
-|   |  High | Capitalize on user experience to improve the projects of local economic players. |  | Foster innovation in project financing through public-private partnerships
+High | Capitalize on user experience to improve the projects of local economic players. | Foster innovation in project financing through public-private partnerships
 Compare and challenge this working approach by collaborating with European partners  |
 |  Opportunities | Impact of the opportunity | Impact level | Probability level | Priority level | Deployment strategy  |
 | --- | --- | --- | --- | --- | --- |
@@ -6424,9 +6200,8 @@ This approach makes it easier to focus action on the most crucial risks, while f
 |  Probability level | Low |  |  |   |   |
 |   |  Average |  | Conflicts of interest between the public and private sectors (land, energy, etc.) lead to tensions and complicate partnerships. | Fluctuating stakeholder, political and regulatory changes exacerbate cooperation problems
 Unfavorable presentation of the investments required to bring project portfolios to fruition may jeopardize political approval of the budget or the willingness of potential investors  |   |
-|   |  High |  | Fragmented stakeholder/actor approaches, lack of common vision and inability to optimize value creation | Restrictive regulatory environment hinders long-term planning  |   |
-|  Threaths | Risk impact | Impact level | Probability level | Priority level | Deployment strategy  |
-| --- | --- | --- | --- | --- | --- |
+High | Fragmented stakeholder/actor approaches, lack of common vision and inability to optimize value creation | Restrictive regulatory environment hinders long-term planning
+Threaths | Risk impact | Impact level | Probability level | Priority level | Deployment strategy
 DJON MÉTROPOLE
 
 Climate Neutrality Action Plan
@@ -6467,26 +6242,25 @@ Organising regional governance and facilitating investment in renewable energy p
 | --- | --- | --- | --- | --- |
 |  Defining the level of comfort and maintenance | By use with agents | By infrastructure with operators and users | Organising feedback between public and private sector asset managers
 Organising the deployment of energy-saving measures |   |
-|  Building awareness and training | The agents | Agents and customers
+Building awareness and training | The agents | Agents and customers
 Users | Reviewing standards of construction and use in the light of changes in climate and access to resources
 Examining uses according to seasonality
 Studying solutions for postponing consumption
 Studying and developing load shedding solutions |   |
-|  Monitor performance | Energy Management System | Integrating monitoring into the Energy and Climate Platform | Question gains (avoid “rebound effects”)
+Monitor performance | Energy Management System | Integrating monitoring into the Energy and Climate Platform | Question gains (avoid “rebound effects”)
 Integrating monitoring into the Energy and Climate Platform |   |
-|  Sharing and optimising uses |  |  | Work on recovering waste energy
+Sharing and optimising uses | Work on recovering waste energy
 Setting up energy renovation projects at neighbourhood level (Response duplication)
 Developing energy storage and energy management solutions in the region | Coordinating and structuring sustainable mobility and freight services across the urban area  |
-|  Actions to be taken by the local authority | On internal assets | On managed infrastructures | With local players | With players from outside the region  |
-| --- | --- | --- | --- | --- |
-|  Electricity generation | Car parks and roofs | Car parks and roofs
+Actions to be taken by the local authority | On internal assets | On managed infrastructures | With local players | With players from outside the region
+Electricity generation | Car parks and roofs | Car parks and roofs
 Brownfield sites
 Self-consumption | Organisation of collective self-consumption projects
 Facilitating the development of projects | Structuring energy purchases with remote producers  |
-|  Gas production |  | Methanisation
+Gas production | Methanisation
 WWTP
 Hydrogen Project | Facilitating the development of projects | Structuring biomethane or hydrogen purchases with distant producers  |
-|  Heat production | Connection to the RCU | Heat production
+Heat production | Connection to the RCU | Heat production
 RCU
 Studying an RFU | Work on the deployment of RCUs dedicated to industrial uses (and work on heat recovery).
 Encourage the production of heat by heat pumps or other renewable sources | Structuring biomass purchases with distant producers (private forest management plan)  |
@@ -6937,16 +6711,15 @@ DIMETROPOLE
 Climate Neutrality Action Plan
 5
 
-|  Committee (COTECH) | produces implementation recommendations
+Committee (COTECH) | produces implementation recommendations
 Contributes to structuring transition engineering | Difficult access and lack of data-related co-skills
 Methodological differences between players
 Levers : Development of shared solutions
 Strengthening capacity to work on innovative projects
 Sharing knowledge | Directorates of the metropolis
 Directors responsible for the Climate Transition Executive Directorate | engineering and the implementation of PC&B projects with a view to continuous improvement | methodological set-up is systemic.  |
-| --- | --- | --- | --- | --- | --- |
-|  CCC Management bodies (internal and external)  |   |   |   |   |   |
-|  PC&B Monitoring Committee (COSUI) | Overall monitoring of PC&B progress
+CCC Management bodies (internal and external)
+PC&B Monitoring Committee (COSUI) | Overall monitoring of PC&B progress
 Once a year, every year | Barriers overcome : The large number of players involved
 Partial understanding of the issues
 Silos between local players
@@ -6955,7 +6728,7 @@ Long-term commitment strategy | Invited internal players: managers, employees, d
 Invited external players: regional and departmental representatives, socio-economic players, public players, partners, etc.
 The forum is open to all those who wish to attend. | Ensure transparency and accountability
 Strengthen coordination and territorial commitment | See sections 3.1 and 3.2, as the methodological set-up is systemic.  |
-|  Steering Committee of the Metropolitan Contract for Climate and Biodiversity (Copil CMCB) | Annual meeting to monitor current contributions in €/points against targets
+Steering Committee of the Metropolitan Contract for Climate and Biodiversity (Copil CMCB) | Annual meeting to monitor current contributions in €/points against targets
 Held in June, once a year | Barriers overcome : Financing actions
 Methodological differences between players
 Levers : Developing innovative financing solutions
@@ -6967,14 +6740,13 @@ DIMYMORALE
 Climate Neutrality Action Plan
 0
 
-|   |  | Realistic planning
+Realistic planning
 Obstacles overcome :
 Difficult access to skills
 Methodological differences between players
 Levers : Strengthening capacity to work on innovative projects
 Development of shared solutions |  |  |   |
-| --- | --- | --- | --- | --- | --- |
-|  **Prefiguration Operator Committee (POC) Pilot Cities** | Regular updates with partners on communications, cooperative projects and engineering.
+**Prefiguration Operator Committee (POC) Pilot Cities** | Regular updates with partners on communications, cooperative projects and engineering.
 Adjust planning and group meetings
 Propose work topics to CoTech
 Held every 3 months | Barriers overcome :
@@ -6985,7 +6757,7 @@ Development of shared solutions | At least one representative per Pilot Cities p
 The project team, made up of the people in charge of steering the Pilot Cities program at DM's Climate TransitionExecutive Directorate; EDF, EIFER and Europtimum
 The elected representative for Climate Transition | Prefiguring new territorial governance
 Define and implement a new territorial engineering system | See sections 3.1 and 3.2, as the methodological set-up is systemic.  |
-|  **Workshops and working groups** | Workshops or working groups are held within existing bodies, or in addition to them, depending on needs and availability.
+**Workshops and working groups** | Workshops or working groups are held within existing bodies, or in addition to them, depending on needs and availability.
 They provide an opportunity for collective reflection, exchange and debate on a predefined subject on which needs | Barriers overcome :
 Complexity of issues and actions
 Methodological differences between players
@@ -7004,32 +6776,30 @@ Climate Neutrality Action Plan
 
 7
 
-|   | have been expressed. (e.g.: identifying and challenging Dijon Métropole's work on transition management). | Strengthening cooperation | - NZC representative
+have been expressed. (e.g.: identifying and challenging Dijon Métropole's work on transition management). | Strengthening cooperation | - NZC representative
 Transition project team members from other European cities (Bristol, Lund, Leuven, Barcelona)
 GNE Finance | subject, according to the expressed needs.
 Compare and challenge the way in which European cities manage the transition on their territory in order to identify the best ways of working. |   |
-| --- | --- | --- | --- | --- | --- |
 DIJON
 
 Climate Neutrality Action Plan
 
-|  Fields of Action | Action / Indicator | Main Risk Identified | Description of Risk | Risk Priority | Mitigation of Risk  |
-| --- | --- | --- | --- | --- | --- |
-|  Mobility | Developing active mobility and encouraging calmer public spaces | Safety | If the infrastructure is not adapted, this can lead to accidents, particularly between cyclists, pedestrians and motor vehicles.
+Fields of Action | Action / Indicator | Main Risk Identified | Description of Risk | Risk Priority | Mitigation of Risk
+Mobility | Developing active mobility and encouraging calmer public spaces | Safety | If the infrastructure is not adapted, this can lead to accidents, particularly between cyclists, pedestrians and motor vehicles.
 In addition, there is a risk of inequality of access: certain populations may not benefit from the facilities if they are not designed with their needs in mind. Finally, resistance to change may also emerge, particularly from users accustomed to the car, which may complicate the transition to more sustainable modes of transport. | Listed actions have systemic effects | Do a global combination of: improving Infrastructure actions, traffic Calming measures, urban planification, public awareness campaigns  |
-|   |  Developing public transport services | Public acceptance | The main risk associated with developing public transport services in urban areas is the issue of public acceptance. If new lines or services do not meet the needs of users or are not perceived as reliable, this can lead to low usage, which compromises the economic viability of the system.
+Developing public transport services | Public acceptance | The main risk associated with developing public transport services in urban areas is the issue of public acceptance. If new lines or services do not meet the needs of users or are not perceived as reliable, this can lead to low usage, which compromises the economic viability of the system.
 What's more, major investment is often required to develop this offer, and if users fail to turn up, this can lead to financial losses and political tensions. Problems with intermodality and connections with other modes of transport can also reduce the system's effectiveness. | Listed actions have systemic effects | Do a global combination of: various mode of transports integration, high quality infrastructures investments, user centric services design, real-time information system development, safety and security enhancements, keep fares affordable, settle public engagement  |
-|   |  Development of low-carbon and carbon-free vehicles | Technological transition and the infrastructure needed to support it | Inadequate infrastructure: A lack of charging points for electric vehicles or appropriate facilities for other types of carbon-free vehicles may limit their uptake.
+Development of low-carbon and carbon-free vehicles | Technological transition and the infrastructure needed to support it | Inadequate infrastructure: A lack of charging points for electric vehicles or appropriate facilities for other types of carbon-free vehicles may limit their uptake.
 Initial costs: Decarbonised vehicles may have higher purchase costs, which may deter some consumers, especially if financial incentives are not sufficient.
 Supply of materials: Increased demand for battery materials (such as lithium or cobalt) may lead to supply problems and raise ethical issues relating to extraction.
 Industry transition: Traditional manufacturers of combustion vehicles will have to adapt, which may lead to job losses and economic tensions in certain regions.
 Public acceptance: There may be reticence or concerns about the performance and reliability of these new vehicles. | Listed actions have systemic effects | Create a supportive ecosystem that encourages adoption and infrastructure development by charging infrastructure development, public transport electrification, Research and Development funding, public awareness campaign  |
-|   |  Developing sustainable urban logistics | Complex coordination between the various players involved. | Intermodal collaboration: The need to synchronise different modes of transport (electric vehicles, cargo bikes, public transport) can be difficult, especially with private and public players.
+Developing sustainable urban logistics | Complex coordination between the various players involved. | Intermodal collaboration: The need to synchronise different modes of transport (electric vehicles, cargo bikes, public transport) can be difficult, especially with private and public players.
 Implementation costs: The development of suitable infrastructure (such as specific delivery zones or collection points) can require considerable investment, which may hold back the initiative.
 Resistance to change: Companies may be reluctant to change their logistics practices, particularly if they fear it will affect their efficiency or costs.
 Fairness: Ensuring fair accessibility for all players, including small businesses and underserved areas, can be a challenge.
 Regulation: Unstable regulations can create uncertainty for businesses, making long-term planning difficult. | Listed actions have systemic effects | Integrated and collaborative approach  |
-|   |  Developing a coordinated transport offer for the urban area | Harmonise the various existing transport systems, which may belong to several authorities or operators | Organisational complexity: Coordination between several players, such as municipalities, regions and private operators, can lead to conflicts of interest and communication difficulties.
+Developing a coordinated transport offer for the urban area | Harmonise the various existing transport systems, which may belong to several authorities or operators | Organisational complexity: Coordination between several players, such as municipalities, regions and private operators, can lead to conflicts of interest and communication difficulties.
 Disparate infrastructures: Differences in infrastructure and technology can complicate the integration of transport systems, making the user experience less seamless.
 Funding and budget: Securing adequate funding and allocating costs between different entities can be complex, especially if the benefits are not immediately visible.
 User acceptance: Users may be reluctant to change their transport habits if the new offer is not perceived as more convenient or advantageous.
@@ -7038,24 +6808,23 @@ bion
 Climate Neutrality Action Plan
 C
 
-|  Fields of Action | Action / Indicator | Main Risk Identified | Description of Risk | Risk Priority | Mitigation of Risk  |
-| --- | --- | --- | --- | --- | --- |
-|  Housing and Buildings | Decarbonising and reducing energy consumption in existing homes | Financial accessibility | Cost of works: The renovations required to improve energy efficiency can represent a substantial investment, which can be a barrier for many homeowners, particularly those on low incomes.
+Fields of Action | Action / Indicator | Main Risk Identified | Description of Risk | Risk Priority | Mitigation of Risk
+Housing and Buildings | Decarbonising and reducing energy consumption in existing homes | Financial accessibility | Cost of works: The renovations required to improve energy efficiency can represent a substantial investment, which can be a barrier for many homeowners, particularly those on low incomes.
 Appropriateness of support: Subsidies and financial incentives must be sufficient and well-targeted to encourage renovations, but there are often gaps in their availability or effectiveness.
 Regional disparities: Household resources and capacities vary considerably from one region to another, which can lead to inequalities in access to low-carbon housing.
 Complexity of the work: Managing renovation projects can be complex and require specific skills, making it difficult for some homeowners to navigate the process.
 Temporary disruption: Renovation work can cause inconvenience to occupants, and poor management can lead to delays or extra costs. | Listed actions have systemic effects | Implement comprehensive energy retrofit programs with: financial incentives, home energy audits, targeted programs, training and certification, awareness campaigns and community Engagement  |
-|   |  Decarbonising and reducing energy consumption in the tertiary and industrial sectors (excluding processes) | Managing the costs and investments required to implement effective solutions | High levels of investment: Energy retrofits, the adoption of new technologies (such as more efficient heating or lighting systems), and the integration of renewable energy can require significant investment, which can be difficult to justify for some businesses.
+Decarbonising and reducing energy consumption in the tertiary and industrial sectors (excluding processes) | Managing the costs and investments required to implement effective solutions | High levels of investment: Energy retrofits, the adoption of new technologies (such as more efficient heating or lighting systems), and the integration of renewable energy can require significant investment, which can be difficult to justify for some businesses.
 Uncertain returns on investment: Energy savings can take time to materialise, and businesses may be reluctant to commit to expenditure with no guarantee of a quick return, especially in an uncertain economic climate.
 Technical complexity: Implementing decarbonisation solutions may require specific technical skills, and companies may not have the necessary resources to manage these changes.
 Operational disruption: Renovation work or the installation of new technologies can lead to business interruptions, which can affect productivity and revenues.
 Regulatory compliance: Businesses must navigate an evolving regulatory landscape, and new or changing requirements can create additional uncertainties and challenges. | Listed actions have systemic effects | Implement comprehensive sustainability and energy management programs including: energy efficiency audits, incentives for upgrades, employee training and engagement, decarbonization roadmaps, renewable energy integration, monitoring and reporting  |
-|   |  Reducing the climate and biodiversity impacts of development and construction projects (public spaces and buildings) | Difficulty in effectively integrating these objectives into the planning and design processes | Conflicts of interest: Economic and development priorities may conflict with environmental objectives, leading to inappropriate trade-offs in project design.
+Reducing the climate and biodiversity impacts of development and construction projects (public spaces and buildings) | Difficulty in effectively integrating these objectives into the planning and design processes | Conflicts of interest: Economic and development priorities may conflict with environmental objectives, leading to inappropriate trade-offs in project design.
 Lack of awareness and training: Those involved in planning and construction may not have a sufficient understanding of climate and biodiversity issues, which can lead to ill-informed decisions.
 Regulatory complexity: Navigating an evolving regulatory framework for environmental protection can be difficult, and new requirements can complicate the project approval process.
 Impact assessment: Environmental impact assessment may be insufficient or incomplete, leading to negative consequences for climate and biodiversity after construction.
 Additional costs: Solutions aimed at reducing environmental impacts can be perceived as additional costs, which can act as a brake on the adoption of sustainable practices | Listed actions have systemic effects | An integrated and collaborative approach, involving environmental experts, town planners and stakeholders, to ensure that sustainability objectives are fully integrated from the earliest stages of planning  |
-|   | Developing renewable electricity generation | Intermittent production | Variability of production: Renewable energy sources, such as wind and solar power, are dependent on weather conditions, which can lead to fluctuations in the amount of energy produced.
+Developing renewable electricity generation | Intermittent production | Variability of production: Renewable energy sources, such as wind and solar power, are dependent on weather conditions, which can lead to fluctuations in the amount of energy produced.
 Supply management: Intermittency can complicate power grid management, requiring efficient storage solutions and demand management systems to balance supply and demand.
 Inadequate infrastructure: Existing electricity grids may not be adapted to efficiently integrate a growing share of renewable energy, requiring significant investment in infrastructure.
 Storage and flexibility costs: The development of storage technologies (such as batteries) and flexible solutions (such as gas-fired power stations that can be brought on stream quickly) may represent an additional cost.
@@ -7064,24 +6833,23 @@ Social and environmental acceptability: Renewable energy projects may encounter 
 9
 Climate Neutrality Action Plan
 
-|  Fields of Action | Action / Indicator | Main Risk Identified | Description of Risk | Risk Priority | Mitigation of Risk  |
-| --- | --- | --- | --- | --- | --- |
-|  Energy production | Developing renewable gas production | The complexity and cost of the infrastructure required for its production, distribution and use | High investment costs: Renewable gas production facilities, as well as transmission and distribution infrastructure, require high levels of investment, which may hamper large-scale development.
+Fields of Action | Action / Indicator | Main Risk Identified | Description of Risk | Risk Priority | Mitigation of Risk
+Energy production | Developing renewable gas production | The complexity and cost of the infrastructure required for its production, distribution and use | High investment costs: Renewable gas production facilities, as well as transmission and distribution infrastructure, require high levels of investment, which may hamper large-scale development.
 Immature technology: Some renewable gas production technologies are still in the development phase, which may lead to uncertainty as to their long-term efficiency and profitability.
 Competition with other uses: Biomethane production may compete with land use for agriculture or biodiversity conservation, raising questions about sustainability.
 Social acceptability: Renewable gas production projects may give rise to local concerns about environmental impacts, such as noise pollution or waste management.
 Regulations and standards: Regulations surrounding the production and use of renewable gas can be complex and constantly evolving, which can create uncertainty for investors and developers. | Listed actions have systemic effects | Promote supportive policies, encourage research and development, and engage with local communities to ensure acceptance of projects  |
-|   |  Developing the production of renewable thermal energy | Resource management and the environmental impact associated with their use | Sustainability of resources: The production of thermal energy from biomass can raise questions about the sustainability of raw material sources, particularly if they come from intensive agricultural practices that damage biodiversity or soil quality.
+Developing the production of renewable thermal energy | Resource management and the environmental impact associated with their use | Sustainability of resources: The production of thermal energy from biomass can raise questions about the sustainability of raw material sources, particularly if they come from intensive agricultural practices that damage biodiversity or soil quality.
 Greenhouse gas emissions: Although renewable thermal energies are generally considered to be more sustainable, their use can still result in emissions, particularly when biomass is burnt, if it is not managed appropriately.
 Social acceptability: Thermal energy projects, particularly those involving biomass, may encounter local resistance due to concerns about environmental impact, noise pollution or land use.
 Installation and operating costs: The infrastructure needed to produce renewable thermal energy can require significant investment, and it can be expensive to operate, depending on the resources available.
 Regulatory complexity: Regulatory frameworks for renewable thermal power generation can vary considerably, creating uncertainty for investors and developers. | Listed actions have systemic effects | Adopt sustainable management practices, promote clear policies and engage with local stakeholders from the earliest stages of project development.  |
-|   |  Development of energy management | Resistance to change within organisations | Organisational culture: Employees and management may be reluctant to adopt new energy management practices or technologies, especially if this requires adjustments to their day-to-day working habits.
+Development of energy management | Resistance to change within organisations | Organisational culture: Employees and management may be reluctant to adopt new energy management practices or technologies, especially if this requires adjustments to their day-to-day working habits.
 Lack of awareness: Lack of training and information on the benefits of energy management can limit the commitment and motivation of teams to get involved in these initiatives.
 Upfront investment: The costs associated with implementing energy management systems (such as software or metering equipment) can be perceived as a barrier, especially in organisations with tight budgets.
 Data and technology: Successful energy management relies on the collection and analysis of accurate data. Faulty systems or incomplete data can hamper decision-making and the effectiveness of actions taken.
 Evaluating results: It can be difficult to quantify the benefits of energy management, which makes it difficult to justify efforts and investments to stakeholders. | Listed actions have systemic effects | Promote an energy culture within the organisation, provide appropriate training and clearly demonstrate the economic and environmental benefits of energy management initiatives  |
-|  Production and | Encouraging the consumption of local products and supporting changes in behaviour | Consumer resistance to change | Entrenched habits: Consumers often have well-established habits regarding their food and consumption choices, and it can be difficult to encourage them to adopt new practices, even if these are more sustainable.
+Production and | Encouraging the consumption of local products and supporting changes in behaviour | Consumer resistance to change | Entrenched habits: Consumers often have well-established habits regarding their food and consumption choices, and it can be difficult to encourage them to adopt new practices, even if these are more sustainable.
 Perception of cost: Local products are sometimes perceived as more expensive than imported ones, which can deter consumers, especially those with budget constraints.
 Availability and accessibility: The availability of local products may be limited, particularly in certain regions or at certain times of the year, making it difficult for them to be widely adopted.
 Awareness and information: A lack of awareness of the environmental and socio-economic benefits of local consumption can lead to low motivation to change behaviour.
@@ -7090,29 +6858,28 @@ Social inequalities: Encouraging the consumption of local products can exacerbat
 0
 Climate Neutrality Action Plan
 
-|  Fields of Action | Action / Indicator | Main Risk Identified | Description of Risk | Risk Priority | Mitigation of Risk  |
-| --- | --- | --- | --- | --- | --- |
-|  Consommation or good and services | Promoting the circular economy, reducing the impact of industrial processes on the climate, biodiversity, resources and health | Difficulty in integrating new business models into existing structures | Resistance to change: Companies may be reluctant to change their established practices, especially if they perceive these changes as costly or disruptive to their operations.
+Fields of Action | Action / Indicator | Main Risk Identified | Description of Risk | Risk Priority | Mitigation of Risk
+Consommation or good and services | Promoting the circular economy, reducing the impact of industrial processes on the climate, biodiversity, resources and health | Difficulty in integrating new business models into existing structures | Resistance to change: Companies may be reluctant to change their established practices, especially if they perceive these changes as costly or disruptive to their operations.
 Initial investment: The transition to more sustainable processes often requires significant investment in new technology or infrastructure, which can be a barrier, particularly for small and medium-sized businesses.
 Complexity of implementation: The circular economy involves complex changes to the supply chain and resource management, which can make the transition difficult to plan and execute.
 Lack of awareness and training: Employees may not be sufficiently trained or informed about circular economy principles, which can limit their commitment and effectiveness in implementing new practices.
 Impact assessment: Measuring the results of the transition to a circular economy can be complex, making it difficult to demonstrate the economic and environmental benefits to stakeholders. | Listed actions have systemic effects | Engage all stakeholders, provide financial and technical support, and promote a culture of innovation and sustainability within organisations  |
-|  Water | Planning the management of water resources and adapting infrastructures | Climate uncertainty and variations in water availability | Resource variability: Climate change can lead to unpredictable fluctuations in the availability of water resources, making long-term infrastructure planning difficult.
+Water | Planning the management of water resources and adapting infrastructures | Climate uncertainty and variations in water availability | Resource variability: Climate change can lead to unpredictable fluctuations in the availability of water resources, making long-term infrastructure planning difficult.
 High adaptation costs: Upgrading or building resilient infrastructure can require significant investment, which can be a barrier for some communities, especially in times of budget constraints.
 Social acceptability: Adaptation projects can raise concerns within communities, particularly because of potential impacts on the environment or biodiversity, which can lead to opposition.
 Coordination between stakeholders: Water resource management involves a large number of stakeholders (local authorities, farmers, industry, etc.), and coordination between them can be complex.
 Assessing future needs: Anticipating future demand for water, particularly taking into account population growth and changes in use, can be difficult, which can lead to mismatches between supply and demand. | Listed actions have systemic effects | Adopting an integrated and adaptive approach, involving stakeholders from the outset and using reliable data to guide planning and decision-making  |
-|  Sustainable agriculture | Supporting local, environmentally-friendly food production | Economic viability of these initiatives | Production costs: Ecological production methods can be more expensive than conventional practices, which can make local products less competitive in terms of market price.
+Sustainable agriculture | Supporting local, environmentally-friendly food production | Economic viability of these initiatives | Production costs: Ecological production methods can be more expensive than conventional practices, which can make local products less competitive in terms of market price.
 Market access: Local producers may find it difficult to access wider markets, due to competition with large agri-food companies or the lack of suitable distribution networks.
 Seasonality and availability: Local production is often subject to seasonal constraints, which can lead to fluctuations in product availability, making it difficult to meet consumer expectations.
 Consumer awareness: Consumers may not be sufficiently informed about the benefits of local, environmentally-friendly production, which may limit demand for these products.
 Inequalities of access: Support initiatives may not benefit all producers equally, creating disparities between farmers and exacerbating social inequalities. | Listed actions have systemic effects | Promote financial support programmes, raise consumer awareness of the benefits of local products and encourage distribution models that facilitate market access for local producers  |
-|  Health and living environment | Reducing vulnerability to natural and health risks exacerbated by climate change | Complexity and uncertainty in planning and implementing adaptation measures | High costs: The investment required to strengthen infrastructure and improve resilience can be considerable, posing budgetary challenges, particularly for local authorities.
+Health and living environment | Reducing vulnerability to natural and health risks exacerbated by climate change | Complexity and uncertainty in planning and implementing adaptation measures | High costs: The investment required to strengthen infrastructure and improve resilience can be considerable, posing budgetary challenges, particularly for local authorities.
 Uncertainty of future impacts: Predicting the effects of climate change is complex, and projections can vary. This makes it difficult to assess the most effective measures to implement.
 Conflicting priorities: Limited resources can lead to conflicts of interest between different stakeholders, with each group having its own priorities in terms of adaptation or risk reduction.
 Awareness and community involvement: There may be a lack of awareness among populations about the risks associated with climate change and the measures needed to reduce their vulnerability, which may hinder the implementation of effective strategies.
 Social inequalities: The most vulnerable groups may not benefit equally from adaptation measures, exacerbating existing inequalities. | Listed actions have systemic effects | Develop and implement comprehensive resilience and adaptation strategies, which include : risk assessments, community engagement, strengthening infrastructure, Public Health initiatives, education and awareness, ecosystem restoration, policy frameworks  |
-|  Services provided by nature | Strengthening biodiversity and natural ecosystems in the region | Competition for space and resources, which can lead to conflicts of use | Planning conflicts: The integration of green spaces and biodiversity initiatives may conflict with other urban needs, such as housing development or transport infrastructure.
+Services provided by nature | Strengthening biodiversity and natural ecosystems in the region | Competition for space and resources, which can lead to conflicts of use | Planning conflicts: The integration of green spaces and biodiversity initiatives may conflict with other urban needs, such as housing development or transport infrastructure.
 Maintenance costs: Projects to enhance biodiversity may require ongoing maintenance and financial resources, which can be a challenge for local authorities.
 Social acceptability: Some initiatives may meet with resistance from local residents, particularly if they are perceived as neglecting immediate community needs (such as accessibility or safety).
 Impact on local species: Introducing new species or creating new habitats can have unforeseen consequences on existing ecosystems, particularly by disturbing local species or encouraging invasive species.
@@ -7325,10 +7092,8 @@ Climate Neutrality Action Plan
 
 The annexes contain any textual or visual material to the 2030 Climate Neutrality Action Plan as necessary.
 
-|  Appendix n° | Appendix Name | Comment  |
-| --- | --- | --- |
-|  CCC – Concil decision – Climate and Biodiversity plan | CCC – Concil decision – Commitments | CCC – Concil decision – Investment plan  |
-|  |   |   |
+Appendix n° | Appendix Name | Comment
+CCC – Concil decision – Climate and Biodiversity plan | CCC – Concil decision – Commitments | CCC – Concil decision – Investment plan
 Accusé de réception - Ministère de l'Intérieur
 DM20240926_5-DE
 Accusé certifié exécutoire

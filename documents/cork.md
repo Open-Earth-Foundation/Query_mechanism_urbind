@@ -69,41 +69,40 @@ O
 
 # List of figures
 
-| Figure | Figure title | Page |
-| --- | --- | --- |
-| Figure 1 | Relationship between the Cork City CAP and CCC | 13 |
-| Figure 2 | POBAL Deprivation Index 2022 | 15 |
-| Figure 3 | UCC REACHOUT Climate Vulnerability Index | 16 |
-| Figure 4 | Cork City Baseline Emissions Inventory, Sectoral Emissions; UCC, 2023 | 21 |
-| Figure 5 | Cork City Climate Change Risk Assessment Future Climate Risk; KPMG 2023 | 22 |
-| Figure 6 | Cork City Climate Change Risk Assessment, Future Impacts; KPMG, 2023 | 22 |
-| Figure 7 | Implementation, Monitoring, Evaluation and Learning Structure | 24 |
-| Figure 8 | Cork City Council administrative area with 843 Small Areas shown within boundary | 27 |
-| Figure 9 | All Sector Emissions per km sq | 36 |
-| Figure 10 | All Sectors Emissions | 36 |
-| Figure 11 | Domestic Buildings Emissions | 37 |
-| Figure 12 | Commercial and Industrial Buildings Emissions | 37 |
-| Figure 13 | Public Sector Emissions | 38 |
-| Figure 14 | Transport Emissions | 38 |
-| Figure 15 | Waste Emissions | 39 |
-| Figure 16 | AFOLU Emissions | 39 |
-| Figure 17 | Indicators / targets | Environmental Protection Agency | 55 |
-| Figure 18 | Emissions reduction actions through CAP 2024-2029 and the CCC | 58 |
-| Figure 19 | Emissions Gap Visualisation | 59 |
-| Figure 20 | Distribution of Central Government Funding in Europe 2022 | 61 |
-| Figure 21 | Cork City Stakeholder Universe | 79 |
-| Figure 22 | Cork City Stakeholder Universe aligned with Strategic Priorities of the CCC | 80 |
-| Figure 23 | Summary of systemic levers applied in each emissions domain | 91 |
-| Figure 24 | Total estimated cost and impact of retrofitting the domestic building stock in Cork City | 92 |
-| Figure 25 | Growth in Transport Emissions to 2030 | 94 |
-| Figure 26 | Estimate of Cost and Emissions Impact of Electrification of the Private Care Fleet in Cork City | 94 |
-| Figure 27 | Kolb's Cycle of Reflective Learning | 198 |
-| Figure 28 | Cork City CCC - a phased approach | 199 |
-| Figure 29 | Cork City Expanded Participatory Governance Model | 204 |
-| Figure 30 | Current Membership of the Climate Neutral Cork Leadership Group | 205 |
-| Figure 31 | Established Co-Creation Process | 206 |
-| Figure 32 | Possible Innovative Mechanisms to be included in the Co-Creation Process | 207 |
-| Figure 33 | UCC REACHOUT Climate Vulnerability Index | 220 |
+Figure | Figure title | Page
+Figure 1 | Relationship between the Cork City CAP and CCC | 13
+Figure 2 | POBAL Deprivation Index 2022 | 15
+Figure 3 | UCC REACHOUT Climate Vulnerability Index | 16
+Figure 4 | Cork City Baseline Emissions Inventory, Sectoral Emissions; UCC, 2023 | 21
+Figure 5 | Cork City Climate Change Risk Assessment Future Climate Risk; KPMG 2023 | 22
+Figure 6 | Cork City Climate Change Risk Assessment, Future Impacts; KPMG, 2023 | 22
+Figure 7 | Implementation, Monitoring, Evaluation and Learning Structure | 24
+Figure 8 | Cork City Council administrative area with 843 Small Areas shown within boundary | 27
+Figure 9 | All Sector Emissions per km sq | 36
+Figure 10 | All Sectors Emissions | 36
+Figure 11 | Domestic Buildings Emissions | 37
+Figure 12 | Commercial and Industrial Buildings Emissions | 37
+Figure 13 | Public Sector Emissions | 38
+Figure 14 | Transport Emissions | 38
+Figure 15 | Waste Emissions | 39
+Figure 16 | AFOLU Emissions | 39
+Figure 17 | Indicators / targets | Environmental Protection Agency | 55
+Figure 18 | Emissions reduction actions through CAP 2024-2029 and the CCC | 58
+Figure 19 | Emissions Gap Visualisation | 59
+Figure 20 | Distribution of Central Government Funding in Europe 2022 | 61
+Figure 21 | Cork City Stakeholder Universe | 79
+Figure 22 | Cork City Stakeholder Universe aligned with Strategic Priorities of the CCC | 80
+Figure 23 | Summary of systemic levers applied in each emissions domain | 91
+Figure 24 | Total estimated cost and impact of retrofitting the domestic building stock in Cork City | 92
+Figure 25 | Growth in Transport Emissions to 2030 | 94
+Figure 26 | Estimate of Cost and Emissions Impact of Electrification of the Private Care Fleet in Cork City | 94
+Figure 27 | Kolb's Cycle of Reflective Learning | 198
+Figure 28 | Cork City CCC - a phased approach | 199
+Figure 29 | Cork City Expanded Participatory Governance Model | 204
+Figure 30 | Current Membership of the Climate Neutral Cork Leadership Group | 205
+Figure 31 | Established Co-Creation Process | 206
+Figure 32 | Possible Innovative Mechanisms to be included in the Co-Creation Process | 207
+Figure 33 | UCC REACHOUT Climate Vulnerability Index | 220
 Coatings Cabinet Discal - David Lee Queen
 
 Climate Neutrality Action Plan
@@ -801,21 +800,20 @@ O
 
 # A-1.2: Emission factors applied (C &amp; C Checklist 13)
 
-|  Total primary energy requirement can be calculated by applying primary energy (PE) conversion factors, which vary by fuel type, to total final consumption values. The table below shows the latest PE factors. Historic factors can be found in the SEAl conversion and emission factors spreadsheet. With the exception of the PE factor for electricity, all of the factors provided by SEAl are default values, which provide an approximation of primary energy requirement for each fuel. The PE factor for electricity is calculated based on the primary energy inputs to electrical power generation during the year.  |   |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- | --- |
-|  Electricity Generation:  |   |   |   |   |   |   |
-|  Primary energy input per unit of electricity generated, before subtracting own use of electricity in power plants, and transmission & distribution losses. Electricity imports are not included in the calculation of this factor.  |   |   |   |   |   |   |
-|  Primary Energy Value 2018 - 1.751
+Total primary energy requirement can be calculated by applying primary energy (PE) conversion factors, which vary by fuel type, to total final consumption values. The table below shows the latest PE factors. Historic factors can be found in the SEAl conversion and emission factors spreadsheet. With the exception of the PE factor for electricity, all of the factors provided by SEAl are default values, which provide an approximation of primary energy requirement for each fuel. The PE factor for electricity is calculated based on the primary energy inputs to electrical power generation during the year.
+Electricity Generation:
+Primary energy input per unit of electricity generated, before subtracting own use of electricity in power plants, and transmission & distribution losses. Electricity imports are not included in the calculation of this factor.
+Primary Energy Value 2018 - 1.751
 Emission Factor - 344.5  |   |   |   |   |   |   |
-|  Electricity Consumption:  |   |   |   |   |   |   |
-|  Primary energy input per unit of available final energy consumption. Electricity imports are not included in the calculation of this factor.  |   |   |   |   |   |   |
-|  Primary Energy Value 2018 - 1.940
+Electricity Consumption:
+Primary energy input per unit of available final energy consumption. Electricity imports are not included in the calculation of this factor.
+Primary Energy Value 2018 - 1.940
 Emission Factor 2018 - 387.3  |   |   |   |   |   |   |
-|  For calculation in t or MWh of primary energy  |   |   |   |   |   |   |
-|  The Methodology used to compile the figures below is from a national report known as Ireland's Final Greenhouse Gas Emissions. This report is compiled by the Environmental Protection Agency. In previous Inventory reports GWPs from the 4th IPCC assessment report (AR4) were used. Ireland's National emissions reduction objective, carbon budgets and European target under the European Sharing Regulation are all now estimated on an AR5 basis, and this change simplifies the assessment of progress towards these targets. GWPs allow methane, nitrous oxide and other greenhouse gases to be expressed in CO2 equivalent terms based (for Inventory reporting) on a 100-year time horizon. The SEAl also provides common Conversions Factors for use in Ireland.  |   |   |   |   |   |   |
-|  Primary energy/ energy source  |   |   |   |   |   |   |
-|  Primary Energy/ Energy Source | Carbon Dioxide (CO2) | Methane (CH4) | Nitrous Oxide (N2O) | F-gases (hydrofluorocarbons and perfluorocarbons) | Sulphur hexafluoride (SF6) | Nitrogen trifluoride (NF3)  |
-|  387.3 gCO2/kWh | 1 | 28 | 265 | HFCs 4-12,400 | 23500 | 16100  |
+For calculation in t or MWh of primary energy
+The Methodology used to compile the figures below is from a national report known as Ireland's Final Greenhouse Gas Emissions. This report is compiled by the Environmental Protection Agency. In previous Inventory reports GWPs from the 4th IPCC assessment report (AR4) were used. Ireland's National emissions reduction objective, carbon budgets and European target under the European Sharing Regulation are all now estimated on an AR5 basis, and this change simplifies the assessment of progress towards these targets. GWPs allow methane, nitrous oxide and other greenhouse gases to be expressed in CO2 equivalent terms based (for Inventory reporting) on a 100-year time horizon. The SEAl also provides common Conversions Factors for use in Ireland.
+Primary energy/ energy source
+Primary Energy/ Energy Source | Carbon Dioxide (CO2) | Methane (CH4) | Nitrous Oxide (N2O) | F-gases (hydrofluorocarbons and perfluorocarbons) | Sulphur hexafluoride (SF6) | Nitrogen trifluoride (NF3)
+387.3 gCO2/kWh | 1 | 28 | 265 | HFCs 4-12,400 | 23500 | 16100
 
 Utilising the small area analysis it is possible to present emissions in total and by sector on a geographical basis, as follows:
 #
@@ -1001,20 +999,19 @@ Climate Neutrality Action Plan
 
 O
 
-|  A-2.1 List of relevant policies, strategies and regulations  |   |   |   |
-| --- | --- | --- | --- |
-|  Info | Description | Relevance | Need for Action  |
-|  **Type:**
+A-2.1 List of relevant policies, strategies and regulations
+Info | Description | Relevance | Need for Action
+**Type:**
 Budget | The Climate Action and Low Carbon Development Amendment Act 2021 established sectoral emissions ceilings for most, but not all, critical sectors, in national, 5-year, carbon budgets. These set out limits to the total amount of emissions measured in tonnes of CO_{2} equivalent that can be emitted by the country within the time frame. If the budget limits in any period are not achieved, any deficit must be made up in the next period. | The CCAC 2023 Annual Review has warned that Ireland will not meet its first (2021-2025) and second (2026-2030) emissions budgets. Staying within carbon budgets is essential to remain on track to meeting national and international policy goals. | While cities are not explicitly incorporated into the carbon budgets the sectors of greatest significance to their economic and social viability are. There is a strong motivation to adopt measures at the local level that enhance our national capacity to meet our carbon budgets. Carbon budgets at the city level may be adopted as control measures in future.  |
-|  **Level:**
+**Level:**
 National |  |  |   |
-|  **Title:**
+**Title:**
 Carbon Budgets |  |  |   |
-|  **Type:**
+**Type:**
 Plan | Plans for a “whole of government, whole of society” approach to the governance and conservation of biodiversity. The aim is to ensure that every citizen, community, business, local authority, semi-state and state agency has an awareness of biodiversity and its importance, and of the implications of its loss, while also understanding how they can act to address the biodiversity emergency as part of a renewed national effort to “act for nature”. The National Biodiversity Action Plan takes into consideration the enactment of the Climate Action and Low Carbon Development (Amendment) Act 2021 which sets out a legislative requirement to achieve a climate resilient, biodiversity rich and carbon neutral economy in Ireland by no later than the end of 2050 | Requires Local Authorities to address the related biodiversity emergency in its climate action. | Requirement to ensure the impact of climate actions, and other policy measures, on biodiversity to ensure, at worst, no net loss from development, at best, integrated restoration of biodiversity.  |
-|  **Level:**
+**Level:**
 National |  |  |   |
-|  **Title:**
+**Title:**
 National Biodiversity Action Plan 2023-2030 |  |  |   |
 
 Continued →
@@ -1475,16 +1472,15 @@ Climate Neutrality Action Plan
 
 0
 
-|  A-3.2: Systems & stakeholder mapping  |   |   |   |
-| --- | --- | --- | --- |
-|  System | Stakeholders and Networks | Influence on the city’s climate neutrality ambition | Interest in the city’s climate neutrality ambition  |
-|  Built Environment and Energy | Construction Industry Federation (CIF) * ** | The Construction Federation Ireland is the construction sector's representative body. | High
+A-3.2: Systems & stakeholder mapping
+System | Stakeholders and Networks | Influence on the city’s climate neutrality ambition | Interest in the city’s climate neutrality ambition
+Built Environment and Energy | Construction Industry Federation (CIF) * ** | The Construction Federation Ireland is the construction sector's representative body. | High
 Development of decarbonisation projects and awareness raising for the construction industry.  |
-|   |  Land Development Agency | The LDA is a commercial, state sponsored body that has been created to coordinate land wi9thin public control to provide affordable and social homes and build communities across Ireland | High
+Land Development Agency | The LDA is a commercial, state sponsored body that has been created to coordinate land wi9thin public control to provide affordable and social homes and build communities across Ireland | High
 As a body whose purpose is to maximise the supply of affordable and social homes on public land, the LDA will be important to ensure sustainable practices such as near net zero housing, compact growth and innovative resilient projects are progressed.  |
-|   |  Office of Public Works | The OPW is a government agency, which manages most of the Irish State's property portfolio, including hundreds of owned and rented Government offices and police properties, oversees National Monuments and directly manages some heritage properties, and is the lead State engineering agency, with a special focus on flood risk management | High
+Office of Public Works | The OPW is a government agency, which manages most of the Irish State's property portfolio, including hundreds of owned and rented Government offices and police properties, oversees National Monuments and directly manages some heritage properties, and is the lead State engineering agency, with a special focus on flood risk management | High
 The OPW is an essential agency for adaptation projects with a particular focus on Flood risk management and defences and providing a coordinated approach to Adaptation.  |
-|  Transport and Mobility | National Transport Agency | The NTA is responsible for developing and implementing strategies to provide high quality, accessible, sustainable transport across Ireland. The NTA also leads the development of transport strategies in Cork. | High
+Transport and Mobility | National Transport Agency | The NTA is responsible for developing and implementing strategies to provide high quality, accessible, sustainable transport across Ireland. The NTA also leads the development of transport strategies in Cork. | High
 The NTA will be essential to the rollout of the Cork Metropolitan Area Transport Plan and the implementation of Cork Bus Connects. These are the seminal strategies to provide for sustainable transport within Cork City. The NTA is also the primary funding body for sustainable transport infrastructure.  |
 
 Continued →
@@ -1492,18 +1488,17 @@ Coatings Cabinet Ores
 Climate Neutrality Action Plan
 O
 
-|  A-3.2: Systems & stakeholder mapping  |   |   |   |
-| --- | --- | --- | --- |
-|  System | Stakeholders and Networks | Influence on the city’s climate neutrality ambition | Interest in the city’s climate neutrality ambition  |
-|  Transport and Mobility | Transport Infrastructure Ireland (TII) | The TII is a state agency dealing with road and public transport infrastructure. | High
+A-3.2: Systems & stakeholder mapping
+System | Stakeholders and Networks | Influence on the city’s climate neutrality ambition | Interest in the city’s climate neutrality ambition
+Transport and Mobility | Transport Infrastructure Ireland (TII) | The TII is a state agency dealing with road and public transport infrastructure. | High
 The TII provides and maintains infrastructure of national strategic influence across the state including roads and light rail.  |
-|   |  Department of Transport (DoT) | The DoT sets transport policy nationally. | High
+Department of Transport (DoT) | The DoT sets transport policy nationally. | High
 Creation of policy with the aim of increasing the pace of decarbonisation within transport institutions in the city  |
-|   |  Irish Rail * | Irish Rail is the national agency responsible for maintaining and operating the rail network across the state. | High
+Irish Rail * | Irish Rail is the national agency responsible for maintaining and operating the rail network across the state. | High
 Irish Rail is an important partner in providing sustainable transport to the city form commuter towns allowing for greater user choice. Irish Rail is also providing for a lower emission fleet.  |
-|   |  Bus Eireann * | Bus Eireann is the national bus operator. | High
+Bus Eireann * | Bus Eireann is the national bus operator. | High
 Bus Eireann is an important partner in providing sustainable transport within the city city and from commuter towns allowing for greater user choice. Bus Eireann is also providing for a lower emission fleet.  |
-|   |  Port of Cork Company | The Port of Cork Company is the commercial semi-state company responsible for the operation of the Port of Cork which is one of the three Ports of National Significance (Tier 1) in Ireland. | High
+Port of Cork Company | The Port of Cork Company is the commercial semi-state company responsible for the operation of the Port of Cork which is one of the three Ports of National Significance (Tier 1) in Ireland. | High
 The Port of Cork is an essential infrastructure node for the transport of green energy cargoes and transition fuels and the provision of future energy security. The Port of Cork will also place decarbonisation at the centre of future infrastructure development to respond to the national emissions targets.  |
 
 Continued →
@@ -2135,23 +2130,22 @@ Climate Neutrality Action Plan
 
 O
 
-|  B-2.1: Description of action portfolios - textual or visual
+B-2.1: Description of action portfolios - textual or visual
 (C & C Checklist 9) (C & C Checklist 14) (C & C Checklist 16) (C & C Checklist 20)  |   |   |
-| --- | --- | --- |
-|  Fields of action | Portfolio description |   |
-|   |  List of actions | Descriptions  |
-|  Transport & Mobility | Reallocation of Road Space (TM/1/AC/D) | Prioritisation of sustainable and shared road use types on existing arteries, including priority lanes for low and zero emission vehicles, public and active transport, and low and zero emission vehicle mandates.  |
-|   |  Support for EV purchase and use (TM/2/AC/A) | Review and reform of national and local tax breaks, benefit schemes or subsidies (full or partial) to aid in the purchase of zero emissions vehicles.  |
-|   |  Traffic Management (TM/2/AC/B) | Review feeder road speed limits citywide and extend 30 Km/h limit where public support exists; prioritise safety and comfort of active travel, public transport users and pedestrians; modify operation of traffic signals to prioritise safety and comfort of active travel and public transport users.  |
-|   |  Parking Strategy (TM/2/AC/C) | Review all aspects of parking policy in city centre and suburban areas, including development standards, to assess potential of parking policy on travel choices. Increase the provision of bike parking facilities citywide.  |
-|   |  Shared Mobility (TM/3/AC/A) | Implement micro-mobility strategy to increase car sharing and shared active and sustainable travel resources.  |
-|   |  Licensing access for NZEV to the city (TM/3/AC/B) | Assess impact of licencing goods and service vehicle (e.g. taxis) access to the city, favouring NZEV.  |
-|   |  Carpooling for Cork (TM/4/AC/A) | Promote participation in carpooling scheme for Cork, employer incentives for increased occupancy of commuter vehicles within city and to/from Cork County.  |
-|   |  Smart Travel Plans (TM/4/AC/B) | A practical package of measures to promote sustainable travel access to specific institutions e.g. schools, hospitals, places of work.  |
-|   |  Community Engagement for Demand Management (TM/4/AC/C) | Local-level consultation and engagement for low-traffic neighbourhoods, speed limits, remote working supports and other measures to influence travel choices and mode shift.  |
-|   |  Finance for Electrification (TM/5/AC/A) | Advocate for new and increased supports for transition to NZEV in the new and second-hand vehicle markets.  |
-|   |  Road pricing (TM/5/AC/B) | Review options and co-create with road users on local innovations in road use and public transport pricing.  |
-|   |  Scrapage scheme for active travel (TM/5/AC/C) | Trial scrapage scheme for cars to e-bike, annual travel passes or alternative.  |
+Fields of action | Portfolio description
+List of actions | Descriptions
+Transport & Mobility | Reallocation of Road Space (TM/1/AC/D) | Prioritisation of sustainable and shared road use types on existing arteries, including priority lanes for low and zero emission vehicles, public and active transport, and low and zero emission vehicle mandates.
+Support for EV purchase and use (TM/2/AC/A) | Review and reform of national and local tax breaks, benefit schemes or subsidies (full or partial) to aid in the purchase of zero emissions vehicles.
+Traffic Management (TM/2/AC/B) | Review feeder road speed limits citywide and extend 30 Km/h limit where public support exists; prioritise safety and comfort of active travel, public transport users and pedestrians; modify operation of traffic signals to prioritise safety and comfort of active travel and public transport users.
+Parking Strategy (TM/2/AC/C) | Review all aspects of parking policy in city centre and suburban areas, including development standards, to assess potential of parking policy on travel choices. Increase the provision of bike parking facilities citywide.
+Shared Mobility (TM/3/AC/A) | Implement micro-mobility strategy to increase car sharing and shared active and sustainable travel resources.
+Licensing access for NZEV to the city (TM/3/AC/B) | Assess impact of licencing goods and service vehicle (e.g. taxis) access to the city, favouring NZEV.
+Carpooling for Cork (TM/4/AC/A) | Promote participation in carpooling scheme for Cork, employer incentives for increased occupancy of commuter vehicles within city and to/from Cork County.
+Smart Travel Plans (TM/4/AC/B) | A practical package of measures to promote sustainable travel access to specific institutions e.g. schools, hospitals, places of work.
+Community Engagement for Demand Management (TM/4/AC/C) | Local-level consultation and engagement for low-traffic neighbourhoods, speed limits, remote working supports and other measures to influence travel choices and mode shift.
+Finance for Electrification (TM/5/AC/A) | Advocate for new and increased supports for transition to NZEV in the new and second-hand vehicle markets.
+Road pricing (TM/5/AC/B) | Review options and co-create with road users on local innovations in road use and public transport pricing.
+Scrapage scheme for active travel (TM/5/AC/C) | Trial scrapage scheme for cars to e-bike, annual travel passes or alternative.
 
 Continued →
 D
@@ -2226,29 +2220,28 @@ Climate Neutrality Action Plan
 
 # B.2.2 Individual Actions List
 
-|  BEE/1/AC/A  |   |
-| --- | --- |
-|  Action name | Decarbonise 80% of Cork City's domestic and commercial building stock  |
-|  Action type | Construction  |
-|  Action description | Mobilise public and private sector for massive acceleration of retrofitting and construction of new NZEB dwellings.
+BEE/1/AC/A
+Action name | Decarbonise 80% of Cork City's domestic and commercial building stock
+Action type | Construction
+Action description | Mobilise public and private sector for massive acceleration of retrofitting and construction of new NZEB dwellings.
 See BEE/2/AC/A below for details on our planned mechanism for mobilisation of effort in the built environment.  |
-|  Field of action | BEE  |
-|  Systemic lever | 1: Technology and Infrastructure  |
-|  Outcome (according to module B-1.1) | In.1 GHG from Stationery Energy (Domestic),
+Field of action | BEE
+Systemic lever | 1: Technology and Infrastructure
+Outcome (according to module B-1.1) | In.1 GHG from Stationery Energy (Domestic),
 In.2 GHG from Stationery Energy (Commercial / Industrial / IPPU),
 In.6 GHG from public sector, and
 In.7 GHG from Grid Supplied Energy.  |
-|  Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3),
+Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3),
 In.12 Wellbeing of citizens (Likert Scale),
 In.16 Energy consumption per household (kWh),
 In.19 Public capital invested in climate action projects (€ million),
 and
 In.18 Green jobs (#),  |
-|  Involved stakeholders | Building owners, Cork City Council, CIF, SEAI, Universities, National Mirror Group, and Homeowners.  |
-|  GHG emissions reduction estimate (total) per emission source sector | 1,650,676 t CO2 eq  |
-|  Total cost and cost per t CO2 eq | €3.887 billion (exclusive of €1.650 billion in government incentives);
+Involved stakeholders | Building owners, Cork City Council, CIF, SEAI, Universities, National Mirror Group, and Homeowners.
+GHG emissions reduction estimate (total) per emission source sector | 1,650,676 t CO2 eq
+Total cost and cost per t CO2 eq | €3.887 billion (exclusive of €1.650 billion in government incentives);
 €2,355 per t CO2 eq  |
-|  AUTOMATICAL CONSTRUCTION AUTOMATICS AUTOMATICS AUTOMATICS  |   |
+AUTOMATICAL CONSTRUCTION AUTOMATICS AUTOMATICS AUTOMATICS
 Coe
 
 Coordinate Software: Disposal
@@ -2280,44 +2273,40 @@ Deutsche Zellforsch. Chemie
 
 C
 
-|  BEE/1/AC/C  |   |
-| --- | --- |
-|  Action outline | Review standards and cost factors, pilot and scale retrofitting and RES installation in older buildings that are subject to conservation criteria.  |
-|  Action type | Construction  |
-|  Action description | Review and update standards, test and scale cost effective retrofit and RES for the approximately 9000 older buildings subject to conservation criteria within the city boundary.  |
-|  Field of action | BEE  |
-|  Systemic lever | 1.Technology and Infrastructure  |
-|  Outcome (according to module B-1.1) | In.1 GHG from Stationery Energy (Domestic),
+BEE/1/AC/C
+Action outline | Review standards and cost factors, pilot and scale retrofitting and RES installation in older buildings that are subject to conservation criteria.
+Action type | Construction
+Action description | Review and update standards, test and scale cost effective retrofit and RES for the approximately 9000 older buildings subject to conservation criteria within the city boundary.
+Field of action | BEE
+Systemic lever | 1.Technology and Infrastructure
+Outcome (according to module B-1.1) | In.1 GHG from Stationery Energy (Domestic),
 In.2 GHG from Stationery Energy (Commercial / Industrial / IPPU), and
 In.6 GHG from Public Sector.  |
-|  Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3),
+Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3),
 In.12 Wellbeing of citizens (Likert Scale),
 Energy consumption per household (kWh), and
 In.19 Public capital invested in climate action projects (€ million).  |
-|  Involved stakeholders | Building owners, Cork City Council, CIF, SEAI, National Mirror Group, IGBC, Professional Bodies.  |
-|  |   |
+Involved stakeholders | Building owners, Cork City Council, CIF, SEAI, National Mirror Group, IGBC, Professional Bodies.
 Coordinate Software Financial
 Care City Council
 Climate Neutrality Action Plan
 8
 
-|  BEE/1/AC/D  |   |
-| --- | --- |
-|  Action outline | Utility Construction Coordination  |
-|  Action type | Construction  |
-|  Action description | City-level coordination with developers and utilities for efficient enabling infrastructure development  |
-|  Field of action | BEE  |
-|  Systemic lever | 1: Technology and Infrastructure  |
-|  Outcome (according to module B-1.1) | In.1 GHG from Stationery Energy (Domestic),
+BEE/1/AC/D
+Action outline | Utility Construction Coordination
+Action type | Construction
+Action description | City-level coordination with developers and utilities for efficient enabling infrastructure development
+Field of action | BEE
+Systemic lever | 1: Technology and Infrastructure
+Outcome (according to module B-1.1) | In.1 GHG from Stationery Energy (Domestic),
 In.2 GHG from Stationery Energy (Commercial / Industrial / IPPU),
 In.7 GHG from Grid Supplied Energy, and
 In.6 GHG from public sector  |
-|  Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3),
+Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3),
 In.12 Wellbeing of citizens (Likert Scale),
 In.16 Energy consumption per household (kWh), and
 In.19 Public capital invested in climate action projects (€ million)  |
-|  Involved stakeholders | Cork City Council, CIF, Irish Water, ESB Networks, Ervia, EirGrid, CRU, Professional Bodies.  |
-|  |   |
+Involved stakeholders | Cork City Council, CIF, Irish Water, ESB Networks, Ervia, EirGrid, CRU, Professional Bodies.
 Coe
 
 Coordinate (without ) Financial
@@ -2328,23 +2317,22 @@ Climate Neutrality Action Plan
 
 #
 
-|  BEE/1/AC/E  |   |
-| --- | --- |
-|  Action outline | Introduction of Building Information Modelling (BIM) in capital projects
+BEE/1/AC/E
+Action outline | Introduction of Building Information Modelling (BIM) in capital projects
 Action name  |
-|  Action type | Construction  |
-|  Action description | Progressive and cascading introduction of BIM from 2024 in projects > €100 million, extended to projects of < €1 million in the next four years, to measure and control embodied carbon in construction of new infrastructure through leveraging public procurement  |
-|  Field of action | BEE  |
-|  Systemic lever | 1.Technology and infrastructure  |
-|  Outcome (according to module B-1.1) | In.1 GHG from Stationery Energy (Domestic),
+Action type | Construction
+Action description | Progressive and cascading introduction of BIM from 2024 in projects > €100 million, extended to projects of < €1 million in the next four years, to measure and control embodied carbon in construction of new infrastructure through leveraging public procurement
+Field of action | BEE
+Systemic lever | 1.Technology and infrastructure
+Outcome (according to module B-1.1) | In.1 GHG from Stationery Energy (Domestic),
 In.2 GHG from Stationery Energy (Commercial / Industrial / IPPU), and
 In.6 GHG from public sector.  |
-|  Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3),
+Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3),
 In.12 Wellbeing of citizens (Likert Scale),
 In.16 Energy consumption per household (kWh), and
 In.19 Public capital invested in climate action projects (€ million).  |
-|  Involved Stakeholders | Cork City Council, CIF, IGBC, Professional Bodies.  |
-|  BEE/1/AC/E  |   |
+Involved Stakeholders | Cork City Council, CIF, IGBC, Professional Bodies.
+BEE/1/AC/E
 图
 
 Deutsche Uebersicht Chemische Uebersicht
@@ -2406,25 +2394,24 @@ Climate Neutrality Action Plan
 
 3
 
-|  BEE/3/AC/B  |   |
-| --- | --- |
-|  Action outline | Promote Sufficiency and Co-operation in Energy Use  |
-|  Action type | Public education and empowerment, citizen cooperation, resource sharing and repurposing  |
-|  Action description | Scale up findings from EU programme “FEEL” for widespread adoption of the concept of sufficiency in energy use.  |
-|  Field of action | BEE  |
-|  Systemic lever | 3. Social Innovation  |
-|  Outcome (according to module B-1.1) | In.1 GHG from Stationery Energy (Domestic),
+BEE/3/AC/B
+Action outline | Promote Sufficiency and Co-operation in Energy Use
+Action type | Public education and empowerment, citizen cooperation, resource sharing and repurposing
+Action description | Scale up findings from EU programme “FEEL” for widespread adoption of the concept of sufficiency in energy use.
+Field of action | BEE
+Systemic lever | 3. Social Innovation
+Outcome (according to module B-1.1) | In.1 GHG from Stationery Energy (Domestic),
 In.2 GHG from Stationery Energy (Commercial / Industrial / IPPU),
 In.7 GHG from Grid Supplied Energy, and
 In.6 GHG from public sector.  |
-|  Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3),
+Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3),
 In.12 Wellbeing of citizens (Likert Scale),
 In.16 Energy consumption per household (kWh),
 In.19 Public capital invested in climate action projects (€ million),
 In.14 Citizen involvement in co-design / co-creation of climate actions (#), and
 In.23 Citizen's awareness regarding sustainability and the environment (Likert Scale).  |
-|  Involved stakeholders | Cork City Council, ESB Networks, SEAI, DECC, PPN, Universities, Voluntary sector, Landlords, Tenants, homeowners, citizens.  |
-|  Involved by:
+Involved stakeholders | Cork City Council, ESB Networks, SEAI, DECC, PPN, Universities, Voluntary sector, Landlords, Tenants, homeowners, citizens.
+Involved by:
 ☑ COOPERATIVE
 ☑ BUSINESS
 ☑ WATER
@@ -2434,65 +2421,60 @@ Cane City Council
 Climate Neutrality Action Plan
 4
 
-|  BEE/4/AC/A  |   |
-| --- | --- |
-|  Action outline | Expansion of Sustainable Energy Communities (SEC) and Better Energy Communities (BEC)  |
-|  Action type | Participation  |
-|  Action description | Build demand and participation in area-based SEC to develop energy master plans, and support transition to BEC to implement preferred local solutions to energy efficiency and RES  |
-|  Field of action | BEE  |
-|  Systemic lever | 4: Democracy and Participation  |
-|  Outcome (according to module B-1.1) | In.1 GHG from Stationery Energy (Domestic),
+BEE/4/AC/A
+Action outline | Expansion of Sustainable Energy Communities (SEC) and Better Energy Communities (BEC)
+Action type | Participation
+Action description | Build demand and participation in area-based SEC to develop energy master plans, and support transition to BEC to implement preferred local solutions to energy efficiency and RES
+Field of action | BEE
+Systemic lever | 4: Democracy and Participation
+Outcome (according to module B-1.1) | In.1 GHG from Stationery Energy (Domestic),
 In.2 GHG from Stationery Energy (Commercial / Industrial / IPPU), and
 In.6 GHG from public sector.  |
-|  Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3),
+Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3),
 In.12 Wellbeing of citizens (Likert Scale),
 In.16 Energy consumption per household (kWh),
 In.19 Public capital invested in climate action projects (€ million),
 In.14 Citizen involvement in co-design / co-creation of climate actions (#) and
 In.23 Citizen's awareness regarding sustainability and the environment (Likert Scale).  |
-|  Involved stakeholders | Cork City Council, SEAI, PPN.  |
-|  INFORMATION CONTAINED IN THIS CONTEXT
+Involved stakeholders | Cork City Council, SEAI, PPN.
+INFORMATION CONTAINED IN THIS CONTEXT
 CONTINUE ON  |   |
 Coatings Labiard. Discoat
 Care City Council
 Climate Neutrality Action Plan
 5
 
-|  BEE/4/AC/B  |   |
-| --- | --- |
-|  Action outline | Decision Support  |
-|  Action type | Advisory Services  |
-|  Action description | Support consumer retrofitting and RES investment choices through provision of bespoke, building-specific and impartial advice on the most energy efficient solutions and sequencing.  |
-|  Field of action | BEE  |
-|  Systemic lever | 4: Democracy and Participation  |
-|  Outcome (according to module B-1.1) | In.1 GHG from Stationery Energy (Domestic), and
+BEE/4/AC/B
+Action outline | Decision Support
+Action type | Advisory Services
+Action description | Support consumer retrofitting and RES investment choices through provision of bespoke, building-specific and impartial advice on the most energy efficient solutions and sequencing.
+Field of action | BEE
+Systemic lever | 4: Democracy and Participation
+Outcome (according to module B-1.1) | In.1 GHG from Stationery Energy (Domestic), and
 In.2 GHG from Stationery Energy (Commercial / Industrial / IPPU).  |
-|  Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 µg/m3; PM10 # of days; NO2 µg/m3),
+Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 µg/m3; PM10 # of days; NO2 µg/m3),
 In.12 Wellbeing of citizens (Likert Scale),
 In.16 Energy consumption per household (kWh), and
 In.19 Public capital invested in climate action projects (€ million).  |
-|  Involved stakeholders | Cork City Council, SEAI, PPN.  |
-|  |   |
+Involved stakeholders | Cork City Council, SEAI, PPN.
 6
 
 Deutsche Oplizak-Desertion
 Climate Neutrality Action Plan
 
-|  BEE/4/AC/C  |   |
-| --- | --- |
-|  Action outline | Contagious Retrofitting and RES  |
-|  Action type | Communications Campaign  |
-|  Action description | Consumer-created content-based communications campaign for individuals to showcase the retrofitting and RES projects and their impact, online and in-person events  |
-|  Field of action | BEE  |
-|  Systemic lever | 4: Democracy and Participation  |
-|  Outcome (according to module B-1.1) | In.1 GHG from Stationery Energy (Domestic), and
+BEE/4/AC/C
+Action outline | Contagious Retrofitting and RES
+Action type | Communications Campaign
+Action description | Consumer-created content-based communications campaign for individuals to showcase the retrofitting and RES projects and their impact, online and in-person events
+Field of action | BEE
+Systemic lever | 4: Democracy and Participation
+Outcome (according to module B-1.1) | In.1 GHG from Stationery Energy (Domestic), and
 In.2 GHG from Stationery Energy (Commercial / Industrial / IPPU).  |
-|  Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3),
+Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3),
 In.12 Wellbeing of citizens (Likert Scale),
 In.16 Energy consumption per household (kWh), and
 In.19 Public capital invested in climate action projects (€ million).  |
-|  Involved stakeholders | Cork City Council, SEAI, PPN.  |
-|  |   |
+Involved stakeholders | Cork City Council, SEAI, PPN.
 7
 
 Deutsche Oplizak-Übersal
@@ -2502,21 +2484,19 @@ Climate Neutrality Action Plan
 
 C
 
-|  BEE/S/AC/A  |   |
-| --- | --- |
-|  Action outline | Financing Options for Retrofitting and RES  |
-|  Action type | Communications Campaign  |
-|  Action description | Publicise low-cost finance and grant opportunities for retrofitting and RES. Pilot and scale funding with zero-upfront cost to building owners.  |
-|  Field of action | BEE  |
-|  Systemic lever | 5: Finance and Funding  |
-|  Outcome (according to module B-1.1) | In.1 GHG from Stationery Energy (Domestic), and
+BEE/S/AC/A
+Action outline | Financing Options for Retrofitting and RES
+Action type | Communications Campaign
+Action description | Publicise low-cost finance and grant opportunities for retrofitting and RES. Pilot and scale funding with zero-upfront cost to building owners.
+Field of action | BEE
+Systemic lever | 5: Finance and Funding
+Outcome (according to module B-1.1) | In.1 GHG from Stationery Energy (Domestic), and
 In.2 GHG from Stationery Energy (Commercial / Industrial / IPPU).  |
-|  Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3),
+Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3),
 In.12 Wellbeing of citizens (Likert Scale),
 In.16 Energy consumption per household (kWh), and
 In.19 Public capital invested in climate action projects (€ million).  |
-|  Involved stakeholders | Cork City Council, SEAI, Financial Institutions, PPN.  |
-|  |   |
+Involved stakeholders | Cork City Council, SEAI, Financial Institutions, PPN.
 8
 
 Deutsche Oplizak-Übersal
@@ -2526,21 +2506,19 @@ Climate Neutrality Action Plan
 
 O
 
-|  BEE/S/AC/B  |   |
-| --- | --- |
-|  Action outline | Coordinated grant support  |
-|  Action type | Coordination  |
-|  Action description | Case management approach for qualifying applicants to maximise grant support from all relevant public sources to offset capital costs for building owners.  |
-|  Field of action | BEE  |
-|  Systemic lever | 5: Finance and Funding  |
-|  Outcome (according to module B-1.1) | In.1 GHG from Stationery Energy (Domestic), and
+BEE/S/AC/B
+Action outline | Coordinated grant support
+Action type | Coordination
+Action description | Case management approach for qualifying applicants to maximise grant support from all relevant public sources to offset capital costs for building owners.
+Field of action | BEE
+Systemic lever | 5: Finance and Funding
+Outcome (according to module B-1.1) | In.1 GHG from Stationery Energy (Domestic), and
 In.2 GHG from Stationery Energy (Commercial / Industrial / IPPU).  |
-|  Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3),
+Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3),
 In.12 Wellbeing of citizens (Likert Scale).
 In.16 Energy consumption per household (kWh), and
 In.19 Public capital invested in climate action projects (€ million).  |
-|  Involved stakeholders | Cork City Council, SEAI.  |
-|  |   |
+Involved stakeholders | Cork City Council, SEAI.
 图
 
 Deutsche Oplizak Clinical Care City Council
@@ -2566,22 +2544,20 @@ Climate Neutrality Action Plan
 
 0
 
-|  BEE/6/AC/B  |   |
-| --- | --- |
-|  Action outline | Expanding Qualified Retrofitting and RES workforce  |
-|  Action type | Training and Apprenticeships  |
-|  Action description | Increase capacity to train a local workforce for retrofitting and RES through formal training and apprenticeship support for on-the-job workforce development  |
-|  Field of action | BEE  |
-|  Systemic lever | 6: Learning and Capabilities  |
-|  Outcome (according to module B-1.1) | In.1 GHG from Stationery Energy (Domestic), In.2 GHG from Stationery Energy (Commercial / Industrial / IPPU), and
+BEE/6/AC/B
+Action outline | Expanding Qualified Retrofitting and RES workforce
+Action type | Training and Apprenticeships
+Action description | Increase capacity to train a local workforce for retrofitting and RES through formal training and apprenticeship support for on-the-job workforce development
+Field of action | BEE
+Systemic lever | 6: Learning and Capabilities
+Outcome (according to module B-1.1) | In.1 GHG from Stationery Energy (Domestic), In.2 GHG from Stationery Energy (Commercial / Industrial / IPPU), and
 In.6 GHG from public sector.  |
-|  Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3),
+Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3),
 In.12 Wellbeing of citizens (Likert Scale),
 In.16 Energy consumption per household (kWh),
 In.19 Public capital invested in climate action projects (€ million),) and
 In.18 Green jobs (#)  |
-|  Involved stakeholders | CETB, CIF, Dept of Housing, DECC, National Mirror Group.  |
-|  |   |
+Involved stakeholders | CETB, CIF, Dept of Housing, DECC, National Mirror Group.
 图
 
 Deutsche Oekopharmakological University
@@ -2649,19 +2625,17 @@ Climate Neutrality Action Plan
 
 #
 
-|  TM/1/AC/D  |   |
-| --- | --- |
-|  Action outline | Reallocation of Road Space  |
-|  Action type | Infrastructure  |
-|  Action description | Prioritisation of sustainable and shared road use types on existing arteries, including priority lanes for low and zero emission vehicles, public and active transport, and low and zero emission vehicle mandates.  |
-|  Field of action | TM  |
-|  Systemic lever | 1: Technology and Infrastructure  |
-|  Outcome (according to module B-1.1) | In.3 GHG from Transport.  |
-|  Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3),
+TM/1/AC/D
+Action outline | Reallocation of Road Space
+Action type | Infrastructure
+Action description | Prioritisation of sustainable and shared road use types on existing arteries, including priority lanes for low and zero emission vehicles, public and active transport, and low and zero emission vehicle mandates.
+Field of action | TM
+Systemic lever | 1: Technology and Infrastructure
+Outcome (according to module B-1.1) | In.3 GHG from Transport.
+Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3),
 In.12 Wellbeing of Citizens (Likert Scale), and
 In.17 Modal share of active and public transport (%)  |
-|  Involved stakeholder | Cork City Council, NTA  |
-|  |   |
+Involved stakeholder | Cork City Council, NTA
 5
 
 Deutsche Oplizak-Desertion
@@ -2671,20 +2645,18 @@ Climate Neutrality Action Plan
 
 #
 
-|  TM/2/AC/A  |   |
-| --- | --- |
-|  Action outline | Support for EV purchase and use  |
-|  Action type | Public incentives  |
-|  Action description | Review and reform of national and local tax breaks, benefit schemes or subsidies (full or partial) to aid in the purchase of zero emissions vehicles  |
-|  Field of action | TM  |
-|  Systemic lever | 2: Governance and Policy  |
-|  Outcome (according to module B-1.1) | In.3 GHG from Transport.  |
-|  Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3),
+TM/2/AC/A
+Action outline | Support for EV purchase and use
+Action type | Public incentives
+Action description | Review and reform of national and local tax breaks, benefit schemes or subsidies (full or partial) to aid in the purchase of zero emissions vehicles
+Field of action | TM
+Systemic lever | 2: Governance and Policy
+Outcome (according to module B-1.1) | In.3 GHG from Transport.
+Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3),
 In.12 Wellbeing of citizens (Likert Scale),
 In.19 Public capital invested in climate action projects (€ million), and
 In.18 Green Jobs (#).  |
-|  Involved stakeholder | Cork City Council, National Mirror Group, NTA.  |
-|  |   |
+Involved stakeholder | Cork City Council, National Mirror Group, NTA.
 6
 
 Deutsche Oplizak-Planck-
@@ -2694,17 +2666,15 @@ Climate Neutrality Action Plan
 
 #
 
-|  TM/2/AC/B  |   |
-| --- | --- |
-|  Action outline | Traffic Management  |
-|  Action type | Policy and Planning  |
-|  Action description | Implement findings of the government's Speed Limit Review citywide and extend 30 Km/h limit; prioritise safety and comfort of active travel, public transport users and pedestrians; modify operation of traffic signals to prioritise safety and comfort of active travel and public transport users.  |
-|  Field of action | TM  |
-|  Systemic lever | 2. Governance & Policy  |
-|  Outcome (according to module B-1.1) | In.3 GHG from Transport.  |
-|  Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3), and In.12 Wellbeing of citizens (Likert Scale).  |
-|  Involved stakeholders | Cork City Council, NTA.  |
-|  |   |
+TM/2/AC/B
+Action outline | Traffic Management
+Action type | Policy and Planning
+Action description | Implement findings of the government's Speed Limit Review citywide and extend 30 Km/h limit; prioritise safety and comfort of active travel, public transport users and pedestrians; modify operation of traffic signals to prioritise safety and comfort of active travel and public transport users.
+Field of action | TM
+Systemic lever | 2. Governance & Policy
+Outcome (according to module B-1.1) | In.3 GHG from Transport.
+Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3), and In.12 Wellbeing of citizens (Likert Scale).
+Involved stakeholders | Cork City Council, NTA.
 7
 
 Deutsche Oplizak Clinical
@@ -2715,17 +2685,15 @@ Climate Neutrality Action Plan
 
 #
 
-|  TM/2/AC/C  |   |
-| --- | --- |
-|  Action outline | Parking Strategy  |
-|  Action type | Policy and Planning  |
-|  Action description | Review all aspects of parking policy in city centre and suburban areas, including development standards, to assess potential of parking policy on travel choices. Increase the provision of bike parking facilities citywide.  |
-|  Field of action | TM  |
-|  Systemic lever | 2.Governance & Policy  |
-|  Outcome (according to module B-1.1) | In.3 GHG from Transport.  |
-|  Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3), In.12 Wellbeing of citizens (Likert Scale), and In.17 Modal share of active and public transport (%)  |
-|  Involved stakeholders | Cork City Council, NTA.  |
-|  |   |
+TM/2/AC/C
+Action outline | Parking Strategy
+Action type | Policy and Planning
+Action description | Review all aspects of parking policy in city centre and suburban areas, including development standards, to assess potential of parking policy on travel choices. Increase the provision of bike parking facilities citywide.
+Field of action | TM
+Systemic lever | 2.Governance & Policy
+Outcome (according to module B-1.1) | In.3 GHG from Transport.
+Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3), In.12 Wellbeing of citizens (Likert Scale), and In.17 Modal share of active and public transport (%)
+Involved stakeholders | Cork City Council, NTA.
 8
 
 Deutsche Oplizak-Shareal
@@ -2736,20 +2704,19 @@ Climate Neutrality Action Plan
 
 #
 
-|  TM/3/AC/A  |   |
-| --- | --- |
-|  Action outline | Shared Mobility  |
-|  Action type | Transport as a service  |
-|  Action description | Implement micro-mobility strategy to increase car sharing and shared active and sustainable travel resources  |
-|  Field of action | TM  |
-|  Systemic lever | 3: Social Innovation  |
-|  Outcome (according to module B-1.1) | In.3 GHG from Transport.  |
-|  Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3),
+TM/3/AC/A
+Action outline | Shared Mobility
+Action type | Transport as a service
+Action description | Implement micro-mobility strategy to increase car sharing and shared active and sustainable travel resources
+Field of action | TM
+Systemic lever | 3: Social Innovation
+Outcome (according to module B-1.1) | In.3 GHG from Transport.
+Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3),
 In.12 Wellbeing of citizens (Likert Scale),
 In.19 Public capital invested in climate action projects (€ million), and
 In.17 Modal share of active and public transport (%)  |
-|  Involved stakeholders | Cork City Council, NTA.  |
-|  111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111  |   |
+Involved stakeholders | Cork City Council, NTA.
+111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
 9
 
 Deutsche Oplizak Disposi
@@ -2759,17 +2726,15 @@ Climate Neutrality Action Plan
 
 O
 
-|  TM/3/AC/B  |   |
-| --- | --- |
-|  Action outline | Licensing access for NZEV to the city  |
-|  Action type | Regulation  |
-|  Action description | Assess impact of licencing goods and service vehicle (e.g. taxis) access to the city and suburbs, favouring NZEV  |
-|  Field of action | TM  |
-|  Systemic lever | 3: Social Innovation  |
-|  Outcome (according to module B-1.1) | In.3 GHG from Transport.  |
-|  Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3), and In.12 Wellbeing of citizens (Likert Scale).  |
-|  Involved stakeholders | Cork City Council, NTA, National Mirror Group  |
-|  |   |
+TM/3/AC/B
+Action outline | Licensing access for NZEV to the city
+Action type | Regulation
+Action description | Assess impact of licencing goods and service vehicle (e.g. taxis) access to the city and suburbs, favouring NZEV
+Field of action | TM
+Systemic lever | 3: Social Innovation
+Outcome (according to module B-1.1) | In.3 GHG from Transport.
+Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3), and In.12 Wellbeing of citizens (Likert Scale).
+Involved stakeholders | Cork City Council, NTA, National Mirror Group
 0
 
 Deutsche Oplizak Clinical
@@ -2780,41 +2745,37 @@ Climate Neutrality Action Plan
 
 #
 
-|  TM/4/AC/A  |   |
-| --- | --- |
-|  Action outline | Carpooling for Cork  |
-|  Action type | Ride sharing  |
-|  Action description | Promote participation in carpooling scheme for Cork, employer incentives for increased occupancy of commuter vehicles within city and to/from Cork County  |
-|  Field of action | TM  |
-|  Systemic lever | 4: Democracy and Participation  |
-|  Outcome (according to module B-1.1) | In.3 GHG from Transport.  |
-|  Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3),
+TM/4/AC/A
+Action outline | Carpooling for Cork
+Action type | Ride sharing
+Action description | Promote participation in carpooling scheme for Cork, employer incentives for increased occupancy of commuter vehicles within city and to/from Cork County
+Field of action | TM
+Systemic lever | 4: Democracy and Participation
+Outcome (according to module B-1.1) | In.3 GHG from Transport.
+Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3),
 In.12 Wellbeing of Citizens (Likert Scale),
 In.23 Citizen's awareness regarding sustainability and the environment (Likert Scale),
 In.14 Citizen involvement in co-design / co-creation of climate actions (#), and
 In.17 Modal share of active and public transport (%)  |
-|  Involved stakeholders | Cork City Council, Cork County Council, PPN, CBA, Cork Chamber, IBEC.  |
-|  |   |
+Involved stakeholders | Cork City Council, Cork County Council, PPN, CBA, Cork Chamber, IBEC.
 Coatbanks Caliteq &amp; Charcoal
 Cane Clay Council
 Climate Neutrality Action Plan
 1
 
-|  TM/4/AC/A  |   |
-| --- | --- |
-|  Action outline | Carpooling for Cork  |
-|  Action type | Ride sharing  |
-|  Action description | Promote participation in carpooling scheme for Cork, employer incentives for increased occupancy of commuter vehicles within city and to/from Cork County  |
-|  Field of action | TM  |
-|  Systemic lever | 4: Democracy and Participation  |
-|  Outcome (according to module B-1.1) | In.3 GHG from Transport.  |
-|  Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 µg/m3; PM10 # of days; NO2 µg/m3),
+TM/4/AC/A
+Action outline | Carpooling for Cork
+Action type | Ride sharing
+Action description | Promote participation in carpooling scheme for Cork, employer incentives for increased occupancy of commuter vehicles within city and to/from Cork County
+Field of action | TM
+Systemic lever | 4: Democracy and Participation
+Outcome (according to module B-1.1) | In.3 GHG from Transport.
+Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 µg/m3; PM10 # of days; NO2 µg/m3),
 In.12 Wellbeing of Citizens (Likert Scale),
 In.23 Citizen's awareness regarding sustainability and the environment (Likert Scale),
 In.14 Citizen involvement in co-design / co-creation of climate actions (#), and
 In.17 Modal share of active and public transport (%)  |
-|  Involved stakeholders | Cork City Council, Cork County Council, PPN, CBA, Cork Chamber, IBEC.  |
-|  |   |
+Involved stakeholders | Cork City Council, Cork County Council, PPN, CBA, Cork Chamber, IBEC.
 图
 
 Centre de Recherche en Energie
@@ -2833,74 +2794,66 @@ Climate Neutrality Action Plan
 
 #
 
-|  TM/4/AC/B  |   |
-| --- | --- |
-|  Action outline | Smart Travel Plans  |
-|  Action type | Sustainable access to specific institutions  |
-|  Action description | A practical package of measures to promote sustainable travel access to specific institutions e.g. schools, hospitals, places of work  |
-|  Field of action | TM  |
-|  Systemic lever | 4: Democracy and Participation  |
-|  Outcome (according to module B-1.1) | In.3 GHG from Transport.  |
-|  Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3), In.12 Wellbeing of citizens (Likert Scale), In.19 Public capital invested in climate action projects (€ million), In.23 Citizen's awareness regarding sustainability and the environment (Likert Scale), and In.17 Modal share of active and public transport (%).  |
-|  Involved stakeholders | Cork City Council, NTA.  |
-|  |   |
+TM/4/AC/B
+Action outline | Smart Travel Plans
+Action type | Sustainable access to specific institutions
+Action description | A practical package of measures to promote sustainable travel access to specific institutions e.g. schools, hospitals, places of work
+Field of action | TM
+Systemic lever | 4: Democracy and Participation
+Outcome (according to module B-1.1) | In.3 GHG from Transport.
+Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3), In.12 Wellbeing of citizens (Likert Scale), In.19 Public capital invested in climate action projects (€ million), In.23 Citizen's awareness regarding sustainability and the environment (Likert Scale), and In.17 Modal share of active and public transport (%).
+Involved stakeholders | Cork City Council, NTA.
 Coatbanks Caliteq &amp; Charcoal
 Lake City Council
 Climate Neutrality Action Plan
 3
 
-|  TM/4/AC/C  |   |
-| --- | --- |
-|  Action outline | Community Engagement for Demand Management  |
-|  Action type | Engagement and Participation  |
-|  Action description | Local-level consultation and engagement for low-traffic neighbourhoods, speed limits, remote working supports and other measures to influence travel choices and mode shift  |
-|  Field of action | TM  |
-|  Systemic lever | 4: Democracy and Participation  |
-|  Outcome (according to module B-1.1) | In.3 GHG from Transport.  |
-|  Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 µg/m3; PM10 # of days; NO2 µg/m3),
+TM/4/AC/C
+Action outline | Community Engagement for Demand Management
+Action type | Engagement and Participation
+Action description | Local-level consultation and engagement for low-traffic neighbourhoods, speed limits, remote working supports and other measures to influence travel choices and mode shift
+Field of action | TM
+Systemic lever | 4: Democracy and Participation
+Outcome (according to module B-1.1) | In.3 GHG from Transport.
+Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 µg/m3; PM10 # of days; NO2 µg/m3),
 In.12 Wellbeing of citizens (Likert Scale),
 In.23 Citizen’s awareness regarding sustainability and the environment (Likert Scale),
 In.14 Citizen involvement in co-design / co-creation of climate actions (#), and
 In.17 Modal share of active and public transport (%).  |
-|  Involved stakeholder | Cork City Council, NTA, PPN  |
-|  |   |
+Involved stakeholder | Cork City Council, NTA, PPN
 4
 
 Deutsche Oplizak-Desertion
 Climate Neutrality Action Plan
 
-|  TM/5/AC/A  |   |
-| --- | --- |
-|  Action outline | Finance for Electrification  |
-|  Action type | Advocacy  |
-|  Action description | Advocate for new and increased supports for transition to NZEV in the new and second-hand vehicle markets  |
-|  Field of action | TM  |
-|  Systemic lever | 5: Finance and Funding  |
-|  Outcome (according to module B-1.1) | In.3 GHG from Transport.  |
-|  Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3),
+TM/5/AC/A
+Action outline | Finance for Electrification
+Action type | Advocacy
+Action description | Advocate for new and increased supports for transition to NZEV in the new and second-hand vehicle markets
+Field of action | TM
+Systemic lever | 5: Finance and Funding
+Outcome (according to module B-1.1) | In.3 GHG from Transport.
+Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3),
 In. 12 Wellbeing of citizens (Likert Scale), and
 In.19 Public capital invested in climate action projects (€ million).  |
-|  Involved stakeholders | Cork City Council, National Mirror Group, NTA, Financial Institutions.  |
-|  |   |
+Involved stakeholders | Cork City Council, National Mirror Group, NTA, Financial Institutions.
 5
 
 Deutsche Oplizak-Desertion
 Climate Neutrality Action Plan
 
-|  TM/5/AC/B  |   |
-| --- | --- |
-|  Action outline | Road Pricing  |
-|  Action type | Policy analysis and planning  |
-|  Action description | Review options on local innovations in road use and public transport pricing  |
-|  Field of action | TM  |
-|  Systemic lever | 5: Finance and Funding  |
-|  Outcome (according to module B-1.1) | In.3 GHG from Transport.  |
-|  Indirect Impacts (Co-benefits) (according to module B-1.1) | In10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3),
+TM/5/AC/B
+Action outline | Road Pricing
+Action type | Policy analysis and planning
+Action description | Review options on local innovations in road use and public transport pricing
+Field of action | TM
+Systemic lever | 5: Finance and Funding
+Outcome (according to module B-1.1) | In.3 GHG from Transport.
+Indirect Impacts (Co-benefits) (according to module B-1.1) | In10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3),
 In.12 Wellbeing of citizens (Likert Scale),
 In.14 Citizen involvement in co-design / co-creation of climate actions (#), and
 In.17 Modal share of active and public transport (%)  |
-|  Involved stakeholders | Cork City Council, TII, PPN, NTA.  |
-|  |   |
+Involved stakeholders | Cork City Council, TII, PPN, NTA.
 6
 
 Deutsche Oplizak-Desertion
@@ -2910,20 +2863,19 @@ Climate Neutrality Action Plan
 
 #
 
-|  TM/5/AC/C  |   |
-| --- | --- |
-|  Action outline | Scrappage scheme for active travel  |
-|  Action type | Modal shift  |
-|  Action description | Trial scrappage scheme for cars to e-bike, annual travel passes or alternative  |
-|  Field of action | TM  |
-|  Systemic lever | 5: Finance and Funding  |
-|  Outcome (according to module B-1.1) | In.3 GHG from Transport. cc  |
-|  Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3),
+TM/5/AC/C
+Action outline | Scrappage scheme for active travel
+Action type | Modal shift
+Action description | Trial scrappage scheme for cars to e-bike, annual travel passes or alternative
+Field of action | TM
+Systemic lever | 5: Finance and Funding
+Outcome (according to module B-1.1) | In.3 GHG from Transport. cc
+Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3),
 In.12 Wellbeing of citizens (Likert Scale),
 In.19 Public capital invested in climate action projects (€ million), and
 In.17 Modal share of active and public transport (%)  |
-|  Involved stakeholders | Cork City Council, NTA, Bus Eireann, Irish Rail.  |
-|  ASSOCIATE COMPETITIVE ASSOCIATION COMPANY OF MEDIUM  |   |
+Involved stakeholders | Cork City Council, NTA, Bus Eireann, Irish Rail.
+ASSOCIATE COMPETITIVE ASSOCIATION COMPANY OF MEDIUM
 图
 
 Climate Neutrality Action Plan
@@ -2991,22 +2943,21 @@ Climate Neutrality Action Plan
 
 C
 
-|  NERM/1/AC/B  |   |
-| --- | --- |
-|  Action outline | Increased access to green space  |
-|  Action type | Public realm  |
-|  Action description | Implementation of NW Regional Park, Bishop Lucey Park and other green spaces planned, increasing tree cover and number of green installations on street  |
-|  Field of action | NERM  |
-|  Systemic lever | 1: Technology and Infrastructure  |
-|  Outcome (according to module B-1.1) | In.8 Residual emissions permanently sequestered, and
+NERM/1/AC/B
+Action outline | Increased access to green space
+Action type | Public realm
+Action description | Implementation of NW Regional Park, Bishop Lucey Park and other green spaces planned, increasing tree cover and number of green installations on street
+Field of action | NERM
+Systemic lever | 1: Technology and Infrastructure
+Outcome (according to module B-1.1) | In.8 Residual emissions permanently sequestered, and
 In.9 Negative emissions through natural sinks.  |
-|  Indirect Impacts (Co-benefits) (according to module B-1.1) | In.22 % of tree canopy within the city (% of municipal area),
+Indirect Impacts (Co-benefits) (according to module B-1.1) | In.22 % of tree canopy within the city (% of municipal area),
 In.11 Urban Heat Island Effect (oC UHImax),
 In.13 Green Spaces (Ha/100,000),
 In.17 Public capital invested in climate action projects (€ million),
 In.12 Wellbeing of citizens (Likert Scale), and
 In.10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3).  |
-|  Involved stakeholders | Cork City Council  |
+Involved stakeholders | Cork City Council
 
 ![img-0.jpeg](img-0.jpeg)
 
@@ -3018,24 +2969,22 @@ CNA City Council
 Climate Neutrality Action Plan
 O
 
-|  NERM/2/AC/A  |   |
-| --- | --- |
-|  Action outline | Policy Enforcement for Nature  |
-|  Action type | Regulation and Enforcement  |
-|  Action description | Increase Cork City Council capacity to enforce conditions in favour of no-net loss and nature positive outcomes development, increase developer knowledge and awareness  |
-|  Field of action | NERM  |
-|  Systemic lever | 2: Governance and Policy  |
-|  Outcome (according to module B-1.1) | In.8 Residual emissions permanently sequestered, and
+NERM/2/AC/A
+Action outline | Policy Enforcement for Nature
+Action type | Regulation and Enforcement
+Action description | Increase Cork City Council capacity to enforce conditions in favour of no-net loss and nature positive outcomes development, increase developer knowledge and awareness
+Field of action | NERM
+Systemic lever | 2: Governance and Policy
+Outcome (according to module B-1.1) | In.8 Residual emissions permanently sequestered, and
 In.9 Negative emissions through natural sinks.  |
-|  Indirect Impacts (Co-benefits) (according to module B-1.1) | In.22 % of tree canopy within the city (% of municipal area),
+Indirect Impacts (Co-benefits) (according to module B-1.1) | In.22 % of tree canopy within the city (% of municipal area),
 In.13 Green Spaces (Ha/100,000),
 In.11 Urban Heat Island Effect (oC UHImax),
 In.19 Public capital invested in climate action projects (€ million),
 In.10 Wellbeing of citizens (Likert Scale),
 In.23 Citizen's awareness regarding sustainability and the environment (Likert Scale), and
 In.10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3).  |
-|  Involved stakeholders | Cork City Council, CIF, National Mirror Group.  |
-|  |   |
+Involved stakeholders | Cork City Council, CIF, National Mirror Group.
 2
 
 Deutsche Oplizak Clinical
@@ -3043,20 +2992,19 @@ Care City Council
 Climate Neutrality Action Plan
 C
 
-|  NERM/4/AC/A  |   |
-| --- | --- |
-|  Action outline | Growing the circular economy  |
-|  Action type | Promotion and coordination  |
-|  Action description | Increase access to public, social enterprise-based and commercial circular economy opportunities, raise awareness of reduce / reuse / recycle, build intuitional and individual capacity for circularity  |
-|  Field of action | NERM  |
-|  Systemic lever | 4: Democracy and Participation  |
-|  Outcome (according to module B-1.1) | In.4 GHG from Waste.  |
-|  Indirect Impacts (Co-benefits) (according to module B-1.1) | In.23 Citizen's awareness regarding sustainability and the environment (Likert Scale),
+NERM/4/AC/A
+Action outline | Growing the circular economy
+Action type | Promotion and coordination
+Action description | Increase access to public, social enterprise-based and commercial circular economy opportunities, raise awareness of reduce / reuse / recycle, build intuitional and individual capacity for circularity
+Field of action | NERM
+Systemic lever | 4: Democracy and Participation
+Outcome (according to module B-1.1) | In.4 GHG from Waste.
+Indirect Impacts (Co-benefits) (according to module B-1.1) | In.23 Citizen's awareness regarding sustainability and the environment (Likert Scale),
 In.20 Recycling rate of municipal waste (%), Green jobs (#),
 In.15 Funding for Social Innovation initiatives for climate neutrality (€), and
 In.19 Public capital invested in climate action projects (€ million).  |
-|  Involved stakeholders | Cork City Council, PPN, CBA, Cork Chamber.  |
-|  Personnel
+Involved stakeholders | Cork City Council, PPN, CBA, Cork Chamber.
+Personnel
 for
 concurrent
 or
@@ -3092,23 +3040,21 @@ Climate Neutrality Action Plan
 
 C
 
-|  NERM/5/AC/A  |   |
-| --- | --- |
-|  Action outline | Incentives and supports for greening our city  |
-|  Action type | Grant support and incentives programme  |
-|  Action description | Innovative incentives and supports to individuals, community organisations and businesses to implement bio-diversity measures within their own properties e.g. green roofs, back-garden re-wilding, habitat protection / creation  |
-|  Field of action | NERM  |
-|  Systemic lever | 5: Finance and Funding  |
-|  Outcome (according to module B-1.1) | In.8 Residual emissions permanently sequestered, and
+NERM/5/AC/A
+Action outline | Incentives and supports for greening our city
+Action type | Grant support and incentives programme
+Action description | Innovative incentives and supports to individuals, community organisations and businesses to implement bio-diversity measures within their own properties e.g. green roofs, back-garden re-wilding, habitat protection / creation
+Field of action | NERM
+Systemic lever | 5: Finance and Funding
+Outcome (according to module B-1.1) | In.8 Residual emissions permanently sequestered, and
 In.9 Negative emissions through natural sinks.  |
-|  Indirect Impacts (Co-benefits) (according to module B-1.1) | In.22 % of tree canopy within the city (% of municipal area),
+Indirect Impacts (Co-benefits) (according to module B-1.1) | In.22 % of tree canopy within the city (% of municipal area),
 In.11 Urban Heat Island Effect (oC UHImax),
 In.13 Green Spaces (Ha/100,000),
 In.19 Public capital invested in climate action projects (€ million),
 In.12 Wellbeing of citizens (Likert Scale), and
 In.10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3).  |
-|  Involved stakeholder | Cork City Council, PPN, Cork Healthy Cities.  |
-|  |   |
+Involved stakeholder | Cork City Council, PPN, Cork Healthy Cities.
 5
 
 Deutsche Oplizak Clinical
@@ -3116,19 +3062,18 @@ Care City Council
 Climate Neutrality Action Plan
 C
 
-| NERM/6/AC/A |
-| --- |
-| Action outline | Increasing knowledge and awareness of biodiversity in our city |
-| Action type | Communications campaign |
-| Action description | Work with academia and civil society to promote knowledge and awareness of the biodiversity in our city and its importance to healthy and resilient communities. |
-| Field of action | NERM |
-| Systemic lever | 6: Learning and Capabilities |
-| Outcome (according to module B-1.1) | In.9 Negative emissions through natural sinks, and
+NERM/6/AC/A
+Action outline | Increasing knowledge and awareness of biodiversity in our city
+Action type | Communications campaign
+Action description | Work with academia and civil society to promote knowledge and awareness of the biodiversity in our city and its importance to healthy and resilient communities.
+Field of action | NERM
+Systemic lever | 6: Learning and Capabilities
+Outcome (according to module B-1.1) | In.9 Negative emissions through natural sinks, and
 In.4 GHG from Waste |
-| Indirect Impacts (Co-benefits) (according to module B-1.1) | In.23 Citizen's awareness regarding sustainability and the environment (Likert Scale),
+Indirect Impacts (Co-benefits) (according to module B-1.1) | In.23 Citizen's awareness regarding sustainability and the environment (Likert Scale),
 In.12 Wellbeing of citizens (Likert Scale), and
 In.19 Public capital invested in climate action projects (€ million). |
-| Involved stakeholders | Cork City Council, Universities, CETB, PPN. |
+Involved stakeholders | Cork City Council, Universities, CETB, PPN.
 6
 
 Deutsche Oplizak-Desertion
@@ -3138,14 +3083,13 @@ Climate Neutrality Action Plan
 
 #
 
-|  CP/2/AC/A  |   |
-| --- | --- |
-|  Action outline | Innovative Citizen Participation  |
-|  Action type | Policy implementation  |
-|  Action description | Trial implementation of novel local level consultation / co-creation / decision-making fora in the city  |
-|  Field of action | CP  |
-|  Systemic lever | 2: Governance and Policy  |
-|  Outcome (according to module B-1.1) | In.1 GHG from Stationery Energy (Domestic),
+CP/2/AC/A
+Action outline | Innovative Citizen Participation
+Action type | Policy implementation
+Action description | Trial implementation of novel local level consultation / co-creation / decision-making fora in the city
+Field of action | CP
+Systemic lever | 2: Governance and Policy
+Outcome (according to module B-1.1) | In.1 GHG from Stationery Energy (Domestic),
 In.2 GHG from Stationery Energy (Commercial / Industrial / IPPU),
 In.3 GHG from Transport,
 In.4 GHG from Waste,
@@ -3153,13 +3097,13 @@ In.8 Residual emissions permanently sequestered,
 In.9 Negative emissions through natural sinks,
 In.7 GHG from Grid Supplied Energy, and
 In.5 GHG from AFOLU.  |
-|  Indirect Impacts (Co-benefits) (according to module B-1.1) | In.14 Citizen involvement in co-design / co-creation of climate actions (#),
+Indirect Impacts (Co-benefits) (according to module B-1.1) | In.14 Citizen involvement in co-design / co-creation of climate actions (#),
 In.23 Citizen's awareness regarding sustainability and the environment (Likert Scale),
 In.10 Wellbeing of citizens (Likert Scale),
 In.15 Funding for Social Innovation initiatives for climate neutrality (€), and
 In.19 Public capital invested in climate action projects (€ million).  |
-|  Involved stakeholder | Cork City Council, Climate Neutral Cork Leadership Group.  |
-|  1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1  |   |
+Involved stakeholder | Cork City Council, Climate Neutral Cork Leadership Group.
+1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1
 7
 
 Deutsche Oekopharmakological University
@@ -3168,26 +3112,25 @@ Climate Neutrality Action Plan
 
 #
 
-|  CP/3/AC/A  |   |
-| --- | --- |
-|  Action outline | Community Stewardship  |
-|  Action type | Management and use of public space  |
-|  Action description | Establish contracts and fee relationships with community organisations and other groups for the medium-term management and use of public space for climate positive actions  |
-|  Field of action | CP  |
-|  Systemic lever | 3: Social Innovation  |
-|  Outcome (according to module B-1.1) | In.2 GHG from Stationery Energy (Commercial / Industrial / IPPU),
+CP/3/AC/A
+Action outline | Community Stewardship
+Action type | Management and use of public space
+Action description | Establish contracts and fee relationships with community organisations and other groups for the medium-term management and use of public space for climate positive actions
+Field of action | CP
+Systemic lever | 3: Social Innovation
+Outcome (according to module B-1.1) | In.2 GHG from Stationery Energy (Commercial / Industrial / IPPU),
 In.3 GHG from Transport,
 In.4 GHG from Waste,
 In.8 Residual emissions permanently sequestered,
 In.9 Negative emissions through natural sinks, and
 In.5 GHG from AFOLU.  |
-|  Indirect Impacts (Co-benefits) (according to module B-1.1) | In.14 Citizen involvement in co-design / co-creation of climate actions (#),
+Indirect Impacts (Co-benefits) (according to module B-1.1) | In.14 Citizen involvement in co-design / co-creation of climate actions (#),
 In.23 Citizen's awareness regarding sustainability and the environment (Likert Scale),
 In.10 Wellbeing of citizens (Likert Scale),
 In.15 Funding for Social Innovation initiatives for climate neutrality (€), and
 In.19 Public capital invested in climate action projects (€ million).  |
-|  Involved stakeholders | Cork City Council, PPN.  |
-|  1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1  |   |
+Involved stakeholders | Cork City Council, PPN.
+1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1
 8
 
 Deutsche Oplizak-Planck-
@@ -3197,14 +3140,13 @@ Climate Neutrality Action Plan
 
 C
 
-|  CP/4/AC/A  |   |
-| --- | --- |
-|  Action outline | Climate Neutral Cork Public Platform  |
-|  Action type | Collaborative community  |
-|  Action description | Build and launch Platform website and initiate events programme, including Climate Neutral Cork Conference  |
-|  Field of action | CP  |
-|  Systemic lever | 4: Democracy and Participation  |
-|  Outcome (according to module B-1.1) | In.1 GHG from Stationery Energy (Domestic),
+CP/4/AC/A
+Action outline | Climate Neutral Cork Public Platform
+Action type | Collaborative community
+Action description | Build and launch Platform website and initiate events programme, including Climate Neutral Cork Conference
+Field of action | CP
+Systemic lever | 4: Democracy and Participation
+Outcome (according to module B-1.1) | In.1 GHG from Stationery Energy (Domestic),
 In.2 GHG from Stationery Energy (Commercial / Industrial / IPPU),
 In.3 GHG from Transport,
 In.4 GHG from Waste,
@@ -3213,12 +3155,11 @@ In.9 Negative emissions through natural sinks,
 In.4 GHG from Waste,
 In.6 GHG from Public Sector, and
 In.5 GHG from AFOLU.  |
-|  Indirect Impacts (Co-benefits) (according to module B-1.1) | In.14 Citizen involvement in co-design / co-creation of climate actions (#),
+Indirect Impacts (Co-benefits) (according to module B-1.1) | In.14 Citizen involvement in co-design / co-creation of climate actions (#),
 In.23 Citizen's awareness regarding sustainability and the environment (Likert Scale),
 In.10 Wellbeing of citizens (Likert Scale), and
 In.19 Public capital invested in climate action projects (€ million).  |
-|  Involved Stakeholder | Cork City Council, Climate Neutral Cork Leadership Group.  |
-|  |   |
+Involved Stakeholder | Cork City Council, Climate Neutral Cork Leadership Group.
 9
 
 Deutsche Oplimati-Diurese
@@ -3226,25 +3167,23 @@ Care City Council
 
 Climate Neutrality Action Plan
 
-|  CP/5/AC/A  |   |
-| --- | --- |
-|  Action outline | Community Climate Action Fund  |
-|  Action type | Community finance  |
-|  Action description | Sustain and increase funding for community-based climate action citywide  |
-|  Field of action | CP  |
-|  Systemic lever | 5: Finance and Funding  |
-|  Outcome (according to module B-1.1) | In.2 GHG from Stationery Energy (Commercial / Industrial / IPPU),
+CP/5/AC/A
+Action outline | Community Climate Action Fund
+Action type | Community finance
+Action description | Sustain and increase funding for community-based climate action citywide
+Field of action | CP
+Systemic lever | 5: Finance and Funding
+Outcome (according to module B-1.1) | In.2 GHG from Stationery Energy (Commercial / Industrial / IPPU),
 In.3 GHG from Transport,
 In.4 GHG from Waste, Residual emissions permanently sequestered,
 In.9 Negative emissions through natural sinks, and
 In.5 GHG from AFOLU.  |
-|  Indirect Impacts (Co-benefits) (according to module B-1.1) | In.14 Citizen involvement in co-design / co-creation of climate actions (#),
+Indirect Impacts (Co-benefits) (according to module B-1.1) | In.14 Citizen involvement in co-design / co-creation of climate actions (#),
 In.23 Citizen's awareness regarding sustainability and the environment (Likert Scale),
 In.12 Wellbeing of citizens (Likert Scale),
 In.19 Public capital invested in climate action projects (€ million), and
 In.15 Funding for Social Innovation initiatives for climate neutrality (€).  |
-|  Involved stakeholders | Cork City Council, Community Groups.  |
-|  |   |
+Involved stakeholders | Cork City Council, Community Groups.
 0
 
 Deutsche Oplizak Disposi
@@ -3252,24 +3191,23 @@ Sive Ulysses
 
 Climate Neutrality Action Plan
 
-|  CP/6/AC/A  |   |
-| --- | --- |
-|  Action outline | Climate Literacy  |
-|  Action type | Educational campaign  |
-|  Action description | Scale up support for climate literacy through the Cork Learning Cities / Learning Neighbourhoods networks  |
-|  Field of action | CP  |
-|  Systemic lever | 6: Learning and Capabilities  |
-|  Outcome (according to module B-1.1) | In.1 GHG from Stationery Energy (Domestic),
+CP/6/AC/A
+Action outline | Climate Literacy
+Action type | Educational campaign
+Action description | Scale up support for climate literacy through the Cork Learning Cities / Learning Neighbourhoods networks
+Field of action | CP
+Systemic lever | 6: Learning and Capabilities
+Outcome (according to module B-1.1) | In.1 GHG from Stationery Energy (Domestic),
 In.2 GHG from Stationery Energy (Commercial / Industrial / IPPU),
 In.3 GHG from Transport,
 In.4 GHG from Waste,
 In.8 Residual emissions permanently sequestered,
 In.9 Negative emissions through natural sinks, and
 In.5 GHG from AFOLU.  |
-|  Indirect Impacts (Co-benefits) (according to module B-1.1) | In.23 Citizen's awareness regarding sustainability and the environment (Likert Scale),
+Indirect Impacts (Co-benefits) (according to module B-1.1) | In.23 Citizen's awareness regarding sustainability and the environment (Likert Scale),
 In.12 Wellbeing of citizens (Likert Scale), and
 In.19 Public capital invested in climate action projects (€ million).  |
-|  Involved stakeholders | Cork City Council, Cork Learning Cities.  |
+Involved stakeholders | Cork City Council, Cork Learning Cities.
 1
 
 Deutsche Oplizak-Desertion
@@ -3296,22 +3234,20 @@ Climate Neutrality Action Plan
 
 2
 
-|  GL/2/AC/A  |   |
-| --- | --- |
-|  Action outline | Public Sector Influencing  |
-|  Action type | Communications campaign  |
-|  Action description | Share knowledge and experience of innovation for public sector decarbonisation through events, communications and demonstrations e.g. Cork City Council experience with ELENA EIB support  |
-|  Field of action | GL  |
-|  Systemic lever | Governance & Policy  |
-|  Outcome (according to module B-1.1) | In.1 GHG from Stationery Energy (Domestic),
+GL/2/AC/A
+Action outline | Public Sector Influencing
+Action type | Communications campaign
+Action description | Share knowledge and experience of innovation for public sector decarbonisation through events, communications and demonstrations e.g. Cork City Council experience with ELENA EIB support
+Field of action | GL
+Systemic lever | Governance & Policy
+Outcome (according to module B-1.1) | In.1 GHG from Stationery Energy (Domestic),
 In.2 GHG from Stationery Energy (Commercial / Industrial / IPPU), and
 In.6 GHG from Public Sector  |
-|  Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3),
+Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3),
 In.12 Wellbeing of citizens (Likert Scale),
 In.19 Public capital invested in climate action projects (€ million), and
 In.23 Citizen's awareness regarding sustainability and the environment (Likert Scale).  |
-|  Involved stakeholder | Cork City Council, Climate Neutral Cork Leadership Group, LGMA/CCMA.  |
-|  |   |
+Involved stakeholder | Cork City Council, Climate Neutral Cork Leadership Group, LGMA/CCMA.
 3
 
 Deutsche Oplizak Disposi
@@ -3321,14 +3257,13 @@ Climate Neutrality Action Plan
 
 O
 
-|  GL/3/AC/A  |   |
-| --- | --- |
-|  Action outline | Applying Behavioural Insights in Cork's Climate Transition  |
-|  Action type | New ways of working  |
-|  Action description | Building capacity of City Council and partner staff to understand techniques and insights from behavioural science and to apply them in their work in all sectors  |
-|  Field of action | GL  |
-|  Systemic lever | 3: Social Innovation  |
-|  Outcome (according to module B-1.1) | In.1 GHG from Stationery Energy (Domestic),
+GL/3/AC/A
+Action outline | Applying Behavioural Insights in Cork's Climate Transition
+Action type | New ways of working
+Action description | Building capacity of City Council and partner staff to understand techniques and insights from behavioural science and to apply them in their work in all sectors
+Field of action | GL
+Systemic lever | 3: Social Innovation
+Outcome (according to module B-1.1) | In.1 GHG from Stationery Energy (Domestic),
 In.2 GHG from Stationery Energy (Commercial / Industrial / IPPU),
 In. 3 GHG from Transport,
 In.4 GHG from Waste,
@@ -3336,23 +3271,21 @@ In.8 Residual emissions permanently sequestered,
 In.9 Negative emissions through natural sinks,
 In.6 GHG from Public Sector and
 In.5 GHG from AFOLU.  |
-|  Indirect Impacts (Co-benefits) (according to module B-1.1) | In.19 Public capital invested in climate action projects (€ million).  |
-|  Involved stakeholders | Cork City Council, Net Zero Cities, Universities, Climate Neutral Cork Leadership Group, Climate Neutral Cork Public Platform.  |
-|  |   |
+Indirect Impacts (Co-benefits) (according to module B-1.1) | In.19 Public capital invested in climate action projects (€ million).
+Involved stakeholders | Cork City Council, Net Zero Cities, Universities, Climate Neutral Cork Leadership Group, Climate Neutral Cork Public Platform.
 4
 
 Deutsche Laktosat-Übersal
 DSH-USA (Suisse)
 Climate Neutrality Action Plan
 
-|  GL/4/AC/A  |   |
-| --- | --- |
-|  Action outline | Advocacy for Decentralisation of the Climate Transition  |
-|  Action type | Advocacy  |
-|  Action description | Working with partners including the Southern Regional Assembly, CCMA and LGMA to advocate for the decentralisation of more funding decisions and policy choices to the local government level to accelerate progress on the transition  |
-|  Field of action | GL  |
-|  Systemic lever | 4: Democracy and Participation  |
-|  Outcome (according to module B-1.1) | In.1 GHG from Stationery Energy (Domestic),
+GL/4/AC/A
+Action outline | Advocacy for Decentralisation of the Climate Transition
+Action type | Advocacy
+Action description | Working with partners including the Southern Regional Assembly, CCMA and LGMA to advocate for the decentralisation of more funding decisions and policy choices to the local government level to accelerate progress on the transition
+Field of action | GL
+Systemic lever | 4: Democracy and Participation
+Outcome (according to module B-1.1) | In.1 GHG from Stationery Energy (Domestic),
 In.2 GHG from Stationery Energy (Commercial / Industrial / IPPU),
 In.3 GHG from Transport,
 In.4 GHG from Waste,
@@ -3361,11 +3294,10 @@ In.9 Negative emissions through natural sinks,
 In.7 GHG from grid supplied energy,
 In.6 GHG from Public Sector and
 In.5 GHG from AFOLU.  |
-|  Indirect Impacts (Co-benefits) (according to module B-1.1) | In.19 Public capital invested in climate action projects (€ million), and
+Indirect Impacts (Co-benefits) (according to module B-1.1) | In.19 Public capital invested in climate action projects (€ million), and
 In.15 Funding for Social Innovation initiatives for climate neutrality (€), and
 In.21 Brownfield use (% of km²).  |
-|  Involved stakeholders | Cork City Council, Southern Regional Assembly, LGMA/CCMA, National Mirror Group.  |
-|  |   |
+Involved stakeholders | Cork City Council, Southern Regional Assembly, LGMA/CCMA, National Mirror Group.
 5
 
 Deutsche Oplizak Disposi
@@ -3375,14 +3307,13 @@ Climate Neutrality Action Plan
 
 O
 
-|  GL/4/AC/B  |   |
-| --- | --- |
-|  Action outline | Diversity = Collective Wisdom  |
-|  Action type | Community Participation  |
-|  Action description | Restless effort to increase participation in the Climate Neutral Cork Leadership Group and Public Platform  |
-|  Field of action | GL  |
-|  Systemic lever | 4: Democracy and Participation  |
-|  Outcome (according to module B-1.1) | In.1 GHG from Stationery Energy (Domestic),
+GL/4/AC/B
+Action outline | Diversity = Collective Wisdom
+Action type | Community Participation
+Action description | Restless effort to increase participation in the Climate Neutral Cork Leadership Group and Public Platform
+Field of action | GL
+Systemic lever | 4: Democracy and Participation
+Outcome (according to module B-1.1) | In.1 GHG from Stationery Energy (Domestic),
 In.2 GHG from Stationery Energy (Commercial / Industrial / IPPU),
 In.3 GHG from Transport,
 In.4 GHG from Waste,
@@ -3391,13 +3322,12 @@ In.9 Negative emissions through natural sinks,
 In.7 GHG from grid supplied energy,
 In.6 GHG from Public Sector and
 In.5 GHG from AFOLU.  |
-|  Indirect Impacts (Co-benefits) (according to module B-1.1) | In.19 Public capital invested in climate action projects (€ million),
+Indirect Impacts (Co-benefits) (according to module B-1.1) | In.19 Public capital invested in climate action projects (€ million),
 In.15 Funding for Social Innovation initiatives for climate neutrality (€),
 In.21 Brownfield use (% of km²),
 In.23 Citizen's awareness regarding sustainability and the environment (Likert Scale), and
 In.14 Citizen involvement in co-design / co-creation of climate actions (#).  |
-|  Involved stakeholders | Cork City Council, Climate Neutral Cork Leadership Group.  |
-|  |   |
+Involved stakeholders | Cork City Council, Climate Neutral Cork Leadership Group.
 Coe
 
 Cooperative Colloquially Clinical
@@ -3428,14 +3358,13 @@ Climate Neutrality Action Plan
 
 O
 
-|  GL/5/AC/B  |   |
-| --- | --- |
-|  Action outline | Bundling of bankable projects in Local Green Deals  |
-|  Action type | Finance  |
-|  Action description | Consolidate portfolios of bankable projects from multiple partners in sector specific Local Green Deals to achieve an investable scale of opportunity  |
-|  Field of action | GL  |
-|  Systemic lever | 5: Finance and Funding  |
-|  Outcome (according to module B-1.1) | In.1 GHG from Stationery Energy (Domestic),
+GL/5/AC/B
+Action outline | Bundling of bankable projects in Local Green Deals
+Action type | Finance
+Action description | Consolidate portfolios of bankable projects from multiple partners in sector specific Local Green Deals to achieve an investable scale of opportunity
+Field of action | GL
+Systemic lever | 5: Finance and Funding
+Outcome (according to module B-1.1) | In.1 GHG from Stationery Energy (Domestic),
 In.2 GHG from Stationery Energy (Commercial / Industrial / IPPU),
 In.3 GHG from Transport,
 In.4 GHG from Waste,
@@ -3444,9 +3373,8 @@ In.9 Negative emissions through natural sinks,
 In.7 GHG from grid supplied energy,
 In.6 GHG from Public Sector and
 In.5 GHG from AFOLU.  |
-|  Indirect Impacts (Co-benefits) (according to module B-1.1) | In.19 Public capital invested in climate action projects (€ million).  |
-|  Involved stakeholders | Cork City Council, Climate Neutral Cork Leadership Group, Financial Institutions, National Mirror Group, other business, public sector and community stakeholders.  |
-|  |   |
+Indirect Impacts (Co-benefits) (according to module B-1.1) | In.19 Public capital invested in climate action projects (€ million).
+Involved stakeholders | Cork City Council, Climate Neutral Cork Leadership Group, Financial Institutions, National Mirror Group, other business, public sector and community stakeholders.
 8
 
 Deutsche Oplizak-Übersal
@@ -3456,72 +3384,64 @@ Climate Neutrality Action Plan
 
 O
 
-|  GL/6/AC/A  |   |
-| --- | --- |
-|  Action outline | Workforce of the Future  |
-|  Action type | Learning and Development  |
-|  Action description | Fully implement the Cork City Council People Strategy and Learning and Development Strategy to mainstream climate knowledge, skills and competencies throughout the organisation  |
-|  Field of action | GL  |
-|  Systemic lever | 6: Learning and Capabilities  |
-|  Outcome (according to module B-1.1) | In.6 GHG from Public Sector  |
-|  Indirect Impacts (Co-benefits) (according to module B-1.1) | In.19 Public capital invested in climate action projects (€ million).  |
-|  Involved stakeholders | Cork City Council, Universities.  |
-|  |   |
+GL/6/AC/A
+Action outline | Workforce of the Future
+Action type | Learning and Development
+Action description | Fully implement the Cork City Council People Strategy and Learning and Development Strategy to mainstream climate knowledge, skills and competencies throughout the organisation
+Field of action | GL
+Systemic lever | 6: Learning and Capabilities
+Outcome (according to module B-1.1) | In.6 GHG from Public Sector
+Indirect Impacts (Co-benefits) (according to module B-1.1) | In.19 Public capital invested in climate action projects (€ million).
+Involved stakeholders | Cork City Council, Universities.
 9
 
 Deutsche Laktasek Glausal
 Care City Council
 Climate Neutrality Action Plan
 
-|  RE/1/AC/A  |   |
-| --- | --- |
-|  Action outline | Investigating and applying carbon capture and storage at scale  |
-|  Action type | Piloting CCS infrastructure  |
-|  Action description | This is a new area of technology. Cork City Council will investigate potential solutions and project ideas and develop them for future iterations of the CCC  |
-|  Field of action | RE  |
-|  Systemic lever | 1: Technology and Infrastructure  |
-|  Outcomes (according to module B-1.1) | In.8 Residual emissions permanently sequestered.  |
-|  Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3),
+RE/1/AC/A
+Action outline | Investigating and applying carbon capture and storage at scale
+Action type | Piloting CCS infrastructure
+Action description | This is a new area of technology. Cork City Council will investigate potential solutions and project ideas and develop them for future iterations of the CCC
+Field of action | RE
+Systemic lever | 1: Technology and Infrastructure
+Outcomes (according to module B-1.1) | In.8 Residual emissions permanently sequestered.
+Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3),
 In.12 Wellbeing of citizens (Likert Scale)  |
-|  Involved stakeholders | Universities; Cork Chamber, Cork Business Association, National Mirror Group  |
-|  |   |
+Involved stakeholders | Universities; Cork Chamber, Cork Business Association, National Mirror Group
 0
 
 Deutsche Oplizak-Desertion
 Climate Neutrality Action Plan
 
-|  RE/2/AC/A  |   |
-| --- | --- |
-|  Action outline | Investigating out-of-boundary sequestration  |
-|  Action type | Sequestration  |
-|  Action description | Investigate the potential of sequestration of Cork City emissions out-of-boundary. The city is completely surrounded by County Cork, the largest county in Ireland, which is largely rural and with high potential for sequestration. Specific projects will be proposed in the next iteration of the CCC  |
-|  Field of action | RE  |
-|  Systemic lever | 2: Governance and Policy  |
-|  Outcome (according to module B-1.1) | In.8 Residual emissions permanently sequestered, and
+RE/2/AC/A
+Action outline | Investigating out-of-boundary sequestration
+Action type | Sequestration
+Action description | Investigate the potential of sequestration of Cork City emissions out-of-boundary. The city is completely surrounded by County Cork, the largest county in Ireland, which is largely rural and with high potential for sequestration. Specific projects will be proposed in the next iteration of the CCC
+Field of action | RE
+Systemic lever | 2: Governance and Policy
+Outcome (according to module B-1.1) | In.8 Residual emissions permanently sequestered, and
 In.9 Negative emissions through natural sinks.  |
-|  Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3), and
+Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3), and
 In.12 Wellbeing of citizens (Likert Scale).  |
-|  Involved stakeholders | Cork City Council, Cork County Council, Cork Chamber, National Mirror Group  |
-|  |   |
+Involved stakeholders | Cork City Council, Cork County Council, Cork Chamber, National Mirror Group
 Coatings Labiard, Charcoal Line City Council
 
 Climate Neutrality Action Plan
 
 1
 
-|  RE/6/AC/A  |   |
-| --- | --- |
-|  Action outline | Promoting participation in the European Emissions Trading Scheme  |
-|  Action type | Learning and capability development  |
-|  Action description | Supporting enterprises to join the ETS if they meet the threshold through knowledge sharing and technical support  |
-|  Field of action | RE  |
-|  Systemic lever | 6: Learning and Capabilities  |
-|  Outcome (according to module B-1.1) | In.8 Residual emissions permanently sequestered and
+RE/6/AC/A
+Action outline | Promoting participation in the European Emissions Trading Scheme
+Action type | Learning and capability development
+Action description | Supporting enterprises to join the ETS if they meet the threshold through knowledge sharing and technical support
+Field of action | RE
+Systemic lever | 6: Learning and Capabilities
+Outcome (according to module B-1.1) | In.8 Residual emissions permanently sequestered and
 In.9 Negative emissions through natural sinks.  |
-|  Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3), and
+Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3), and
 In.12 Wellbeing of citizens (Likert Scale)  |
-|  Involved stakeholders | Universities; Cork Chamber, Cork Business Association, National Mirror Group  |
-|  |   |
+Involved stakeholders | Universities; Cork Chamber, Cork Business Association, National Mirror Group
 2
 
 Deutsche Oplizak Clinical
@@ -3532,18 +3452,16 @@ Climate Neutrality Action Plan
 
 O
 
-|  RE/6/AC/B  |   |
-| --- | --- |
-|  Action outline | Measuring GHG Sequestration in the City  |
-|  Action type | Research  |
-|  Action description | Developing a methodology to measure sequestration within the city boundary  |
-|  Field of action | RE  |
-|  Systemic lever | 6: Learning and Capabilities  |
-|  Outcome (according to module B-1.1) | In.8 Residual emissions permanently sequestered.  |
-|  Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3),
+RE/6/AC/B
+Action outline | Measuring GHG Sequestration in the City
+Action type | Research
+Action description | Developing a methodology to measure sequestration within the city boundary
+Field of action | RE
+Systemic lever | 6: Learning and Capabilities
+Outcome (according to module B-1.1) | In.8 Residual emissions permanently sequestered.
+Indirect Impacts (Co-benefits) (according to module B-1.1) | In.10 Improved Air Quality (PM2.5 μg/m3; PM10 # of days; NO2 μg/m3),
 In.12 Wellbeing of citizens (Likert Scale)  |
-|  Involved stakeholder | Universities; Cork City Council, Cork Chamber, Cork Business Association, National Mirror Group  |
-|  |   |
+Involved stakeholder | Universities; Cork City Council, Cork Chamber, Cork Business Association, National Mirror Group
 #
 Deutsche Zellbanks Disease
 CMLC The Clamins
@@ -3582,10 +3500,9 @@ Climate Neutrality Action Plan
 
 5
 
-|  B-3.1: Impact Pathways (C & C Checklist 24)  |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- |
-|  Impacts Pathways addressed | Action/ project | Indicator No. (unique identified) | Indicator name |  | Target values 2030  |
-|  BEE
+B-3.1: Impact Pathways (C & C Checklist 24)
+Impacts Pathways addressed | Action/ project | Indicator No. (unique identified) | Indicator name | Target values 2030
+BEE
 CP
 GL | BEE/1/AC/A
 BEE/1/AC/B
@@ -3612,7 +3529,7 @@ GL/4/AC/A
 GL/4/AC/B
 GL/5/AC/A
 GL/5/AC/B | In. 1 | GHG from Stationery Energy (Domestic) | T CO_{2} eq | 353,707  |
-|  BEE
+BEE
 CP
 GL | BEE/1/AC/A
 BEE/1/AC/B
@@ -3647,10 +3564,9 @@ Cane City Council
 Climate Neutrality Action Plan
 O
 
-|  B-3.1: Impact Pathways (C & C Checklist 24)  |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- |
-|  Impacts Pathways addressed | Action/ project | Indicator No. (unique identified) | Indicator name |  | Target values 2030  |
-|  TM
+B-3.1: Impact Pathways (C & C Checklist 24)
+Impacts Pathways addressed | Action/ project | Indicator No. (unique identified) | Indicator name | Target values 2030
+TM
 CP
 GL | TM/1/AC/A
 TM/1/AC/B
@@ -3679,7 +3595,7 @@ GL/4/AC/A
 GL/4/AC/B
 GL/5/AC/A
 GL/5/AC/B | In. 3 | GHG from Transport | T CO_{2} eq | 308,800  |
-|  NERM
+NERM
 CP
 GL | NERM/4/AC/A
 NERM/4/AC/B
@@ -3693,7 +3609,7 @@ GL/4/AC/A
 GL/4/AC/B
 GL/5/AC/A
 GL/5/AC/B | In. 4 | GHG from Waste | T CO_{2} eq | 23,253  |
-|  NERM
+NERM
 CP
 GL | NERM/4/AC/B
 CP/2/AC/A
@@ -3882,10 +3798,9 @@ Climate Neutrality Action Plan
 
 3
 
-|  B-3.1: Impact Pathways (C & C Checklist 24)  |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- |
-|  Impacts Pathways addressed | Action/ project | Indicator No. (unique identified) | Indicator name |  | Target values 2030  |
-|  BEE
+B-3.1: Impact Pathways (C & C Checklist 24)
+Impacts Pathways addressed | Action/ project | Indicator No. (unique identified) | Indicator name | Target values 2030
+BEE
 TM
 NERM
 GL
@@ -3934,8 +3849,8 @@ GL/4/AC/B
 GL/5/AC/A
 GL/5/AC/B
 GL/6/AC/A | In. 19 | Public capital invested in climate action projects | € million | TBD  |
-|  NERM | NERM/4/AC/A | In. 20 | Recycling rate of municipal waste | % | TBD  |
-|  BEE
+NERM | NERM/4/AC/A | In. 20 | Recycling rate of municipal waste | % | TBD
+BEE
 GL | BEE/3/AC/A
 GL/4/AC/A
 GL/4/AC/B | In. 21 | Brownfield use | % of km2 | TBD  |
@@ -5357,7 +5272,7 @@ The sectoral breakdown of emissions for Cork City and within the DZ are quite di
 
 ## Ireland
 
-|  43%
+43%
 Agriculture,
 Land Use &
 Fishing | 17%
@@ -5368,17 +5283,16 @@ Commercial
 Services &
 Industry | 1%
 Waste  |
-| --- | --- | --- | --- | --- |
-|   |   |   |   |  1%
+1%
 Public
 Services  |
-|   |  |  | 10%
+10%
 Household | 1%
 F-gases  |
 
 ## Cork City
 
-|  34%
+34%
 Household | 29%
 Transport | 22%
 Commercial
@@ -5389,13 +5303,12 @@ Services | 6%
 Agriculture,
 Land Use &
 Fishing  |
-| --- | --- | --- | --- | --- |
-|   |   |   |   |  2%
+2%
 Waste  |
 
 ## Cork City Decarbonisation Zone
 
-|  45%
+45%
 Public
 Services | 25%
 Household | 18%
@@ -5404,8 +5317,6 @@ Commercial
 Services &
 Industry | 3%
 Waste  |
-| --- | --- | --- | --- | --- |
-|   |   |   |  |   |
 
 Figure 12. GHG emissions by sector in 2018 nationally [6], for Cork City and for Cork City's Decarbonisation Zone.
 .

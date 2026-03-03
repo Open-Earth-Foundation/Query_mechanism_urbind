@@ -111,48 +111,47 @@ Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality
 
 The list of figures identifies the titles and locations (page numbers) of all visual elements: figures, drawings, photos, maps, etc. used in the CCC Action Plan.
 
-| Figure N° | Figure title | Page N° |
-| --- | --- | --- |
-| Figure 1 | Climate Neutrality Target by 2030 | 8 |
-| Figure 2 | Industrial-port zone on Greater Dunkirk | 8 |
-| Figure 3 | List of Greater Dunkirk's networks, linked to climate transition | 10 |
-| Figure 4 | Greenhouse gas considered according to environmental approaches | 12 |
-| Figure 5 | Evolution of the distribution of energy consumption by sector between 2019 and 2050 | 14 |
-| Figure 6 | Map of Greater Dunkirk territory's stakeholders | 15 |
-| Figure 7 | Origins of emissions of greenhouse gases | 18 |
-| Figure 8 | BILAN CARBONE® | Greenhouse gas emissions by category, in tCO₂e | 20 |
-| Figure 9 | Greenhouse gas emissions on Greater Dunkirk | 21 |
-| Figure 10 | Greenhouse gas emissions on Greater Dunkirk | 21 |
-| Figure 11 | BILAN CARBONE® | Greenhouse gas emissions by category, in tCO₂e | 22 |
-| Figure 12 | Greenhouse gas emissions of industrial processes by city (tCO₂e) | 23 |
-| Figure 13 | Greenhouse gas emissions of energy industries by city (ktCO₂e) | 24 |
-| Figure 14 | Traffic data on highways and other main roads. Annual daily average and percentage of heavyweight trucks | 25 |
-| Figure 15 | Types of freight transport | 25 |
-| Figure 16 | Greenhouse gas emissions of freight transport by city (ktCO₂e) | 26 |
-| Figure 17 | Greenhouse gas emissions of individual and passenger transport by city (ktCO₂e) | 27 |
-| Figure 18 | Repartition of greenhouse gas emission of individual and passenger transport | 27 |
-| Figure 19 | Greenhouse gas emissions of inputs by city (ktCO₂e) | 28 |
-| Figure 20 | Greenhouse gas emissions of housing by city (ktCO₂e) | 29 |
-| Figure 21 | Greenhouse gas emissions repartition by energy of tertiary sector | 29 |
-| Figure 22 | Greenhouse gas emissions of tertiary sector by city (ktCO₂e) | 30 |
-| Figure 23 | Greenhouse gas emissions of construction and roads by city (ktCO₂e) | 31 |
-| Figure 24 | Greenhouse gas emissions repartition in housing sector | 31 |
-| Figure 25 | Greenhouse gas emissions of agriculture and fishing by city (ktCO₂e) | 32 |
-| Figure 26 | Greenhouse gas emissions repartition in housing sector | 32 |
-| Figure 27 | Greenhouse gas emissions repartition in waste sector | 32 |
-| Figure 28 | Ecosystem of plans and diagrams surrounding the PCAET (ADEME) | 36 |
-| Figure 29 | Synthesis of the French framework | 37 |
-| Figure 30 | Energy transition and green growth law | 38 |
-| Figure 31 | Energy-climate law | 40 |
-| Figure 32 | Evolution of greenhouse gas emissions and greenhouse gas sinks in France between 1990 and 2050 (MtCO₂e) Inventaire CITEPA 2018 et scénario SNBC révisée (neutralité carbone) | 41 |
-| Figure 33 | Multi-year planning of energy | 42 |
-| Figure 34 | Reduction targets set for France (From 2030) | 43 |
-| Figure 35 | Target for reducing regional energy consumption (SRADDET Hauts-de-France 2020) | 45 |
-| Figure 36 | Target for reducing regional greenhouse gas emissions by sector (SRADDET Hauts-de-France 2020) | 46 |
-| Figure 37 | Summary of legislative (State) and regional objectives by sector | 46 |
-| Figure 38 | Prospective assessment of emissions in Nord-Pas-de-Calais area between 2008 and 2015 (ATMO Nord-Pas-de-Calais) | 51 |
-| Figure 39 | Mapping of the industrial territory to be covered | 56 |
-| Figure 40 | Infographic presenting the DKarbonation project | 57 |
+Figure N° | Figure title | Page N°
+Figure 1 | Climate Neutrality Target by 2030 | 8
+Figure 2 | Industrial-port zone on Greater Dunkirk | 8
+Figure 3 | List of Greater Dunkirk's networks, linked to climate transition | 10
+Figure 4 | Greenhouse gas considered according to environmental approaches | 12
+Figure 5 | Evolution of the distribution of energy consumption by sector between 2019 and 2050 | 14
+Figure 6 | Map of Greater Dunkirk territory's stakeholders | 15
+Figure 7 | Origins of emissions of greenhouse gases | 18
+Figure 8 | BILAN CARBONE® | Greenhouse gas emissions by category, in tCO₂e | 20
+Figure 9 | Greenhouse gas emissions on Greater Dunkirk | 21
+Figure 10 | Greenhouse gas emissions on Greater Dunkirk | 21
+Figure 11 | BILAN CARBONE® | Greenhouse gas emissions by category, in tCO₂e | 22
+Figure 12 | Greenhouse gas emissions of industrial processes by city (tCO₂e) | 23
+Figure 13 | Greenhouse gas emissions of energy industries by city (ktCO₂e) | 24
+Figure 14 | Traffic data on highways and other main roads. Annual daily average and percentage of heavyweight trucks | 25
+Figure 15 | Types of freight transport | 25
+Figure 16 | Greenhouse gas emissions of freight transport by city (ktCO₂e) | 26
+Figure 17 | Greenhouse gas emissions of individual and passenger transport by city (ktCO₂e) | 27
+Figure 18 | Repartition of greenhouse gas emission of individual and passenger transport | 27
+Figure 19 | Greenhouse gas emissions of inputs by city (ktCO₂e) | 28
+Figure 20 | Greenhouse gas emissions of housing by city (ktCO₂e) | 29
+Figure 21 | Greenhouse gas emissions repartition by energy of tertiary sector | 29
+Figure 22 | Greenhouse gas emissions of tertiary sector by city (ktCO₂e) | 30
+Figure 23 | Greenhouse gas emissions of construction and roads by city (ktCO₂e) | 31
+Figure 24 | Greenhouse gas emissions repartition in housing sector | 31
+Figure 25 | Greenhouse gas emissions of agriculture and fishing by city (ktCO₂e) | 32
+Figure 26 | Greenhouse gas emissions repartition in housing sector | 32
+Figure 27 | Greenhouse gas emissions repartition in waste sector | 32
+Figure 28 | Ecosystem of plans and diagrams surrounding the PCAET (ADEME) | 36
+Figure 29 | Synthesis of the French framework | 37
+Figure 30 | Energy transition and green growth law | 38
+Figure 31 | Energy-climate law | 40
+Figure 32 | Evolution of greenhouse gas emissions and greenhouse gas sinks in France between 1990 and 2050 (MtCO₂e) Inventaire CITEPA 2018 et scénario SNBC révisée (neutralité carbone) | 41
+Figure 33 | Multi-year planning of energy | 42
+Figure 34 | Reduction targets set for France (From 2030) | 43
+Figure 35 | Target for reducing regional energy consumption (SRADDET Hauts-de-France 2020) | 45
+Figure 36 | Target for reducing regional greenhouse gas emissions by sector (SRADDET Hauts-de-France 2020) | 46
+Figure 37 | Summary of legislative (State) and regional objectives by sector | 46
+Figure 38 | Prospective assessment of emissions in Nord-Pas-de-Calais area between 2008 and 2015 (ATMO Nord-Pas-de-Calais) | 51
+Figure 39 | Mapping of the industrial territory to be covered | 56
+Figure 40 | Infographic presenting the DKarbonation project | 57
 
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 # Abbreviations and acronyms
@@ -262,12 +261,11 @@ Co-designing a portfolio of actions
 
 Greater Dunkirk understands that concerted effort from all sectors is vital to achieving climate neutrality. By joining the 112 Climate-Neutral and Smart Cities Mission, the municipality signals its strong commitment to this goal. The Climate City Contract will serve as a roadmap to align local initiatives and investments with this ambitious vision.
 
-|  Build a strong mandate | Within city government | Set up / strengthen the internal team  |
-| --- | --- | --- |
-|   |   |  Mobilise ressources and capacity  |
-|   |  Within the local ecosystem | Develop a multi-aco Transition team  |
-|   |   |  Build new collaborative governance structures and networks  |
-|   |  With the other government levels | Strengthen buy-in
+Build a strong mandate | Within city government | Set up / strengthen the internal team
+Mobilise ressources and capacity
+Within the local ecosystem | Develop a multi-aco Transition team
+Build new collaborative governance structures and networks
+With the other government levels | Strengthen buy-in
 Clarify mutual commitments  |
 
 Greater Dunkirk is fully committed to the ecological transition. Thanks to a structured organization centered around a department dedicated to sustainable cities and a specialized service for climate, air, and energy transition, it has already raised awareness among a large portion of its employees about the challenges of climate change. The Territorial Climate Air Energy Plan (PCAET) has strengthened this dynamic by integrating all the services of Greater Dunkirk.
@@ -357,26 +355,25 @@ GHG emissions inventory
 
 The scope looked into for the GHG inventory is shown in the table below :
 
-|   |   | Mayors convention | Climate Air Energy territorial plan | Cit'ergie | Carbon footprint  |
-| --- | --- | --- | --- | --- | --- |
-|  Environmental approach |   | Convention des Maires
+Mayors convention | Climate Air Energy territorial plan | Cit'ergie | Carbon footprint
+Environmental approach | Convention des Maires
 Pour une énergie locale durable | PLAN CLIMAT
 AIR ENERGIE DU DUNKERGUOIS
 en énergies naturelles pour mieux faire échoir | Cit'ergie
 European Energy Award | BC
 BILAN CARBONS*  |
-|  Greenhouse gas GH Protocol | Carbon dioxide (CO₂) | ☑ | ☑ | ☑ | ☑  |
-|   |  Methane (CH₄) | ☑ | ☑ | ☑ | ☑  |
-|   |  Nitrous oxide (N₂O) | ☑ | ☑ | ☑ | ☑  |
-|   |  Hydro fluorocarbons (HFC) | ☑ | ☑ | ☑ | ☑  |
-|   |  Per fluorocarbons (PFC) | ☑ | ☑ | ☑ | ☑  |
-|   |  Sulfur hexafluoride (SF₆) | ☑ | ☑ | ☑ | ☑  |
-|   |  Nitrogen trifluoride (NF₃) | ☑ | ☑ |  |   |
-|  Business sectors | Transport | Scope 1 to 2 | Scope 1 to 3 | Scope 1 to 3 | Scope 1 to 3  |
-|   |  Construction | Scope 1 to 2 | Scope 1 to 3 | Scope 1 to 3 | Scope 1 to 3  |
-|   |  Industry | Scope 1 | Scope 1 to 3 |  | Scope 1 to 3  |
-|   |  Agriculture | Scope 1 | Scope 1 to 3 |  | Scope 1 to 3  |
-|   |  Waste | Scope 1 to 3 | Scope 1 to 3 | Scope 1 to 3 | Scope 1 to 3  |
+Greenhouse gas GH Protocol | Carbon dioxide (CO₂) | ☑ | ☑ | ☑ | ☑
+Methane (CH₄) | ☑ | ☑ | ☑ | ☑
+Nitrous oxide (N₂O) | ☑ | ☑ | ☑ | ☑
+Hydro fluorocarbons (HFC) | ☑ | ☑ | ☑ | ☑
+Per fluorocarbons (PFC) | ☑ | ☑ | ☑ | ☑
+Sulfur hexafluoride (SF₆) | ☑ | ☑ | ☑ | ☑
+Nitrogen trifluoride (NF₃) | ☑ | ☑
+Business sectors | Transport | Scope 1 to 2 | Scope 1 to 3 | Scope 1 to 3 | Scope 1 to 3
+Construction | Scope 1 to 2 | Scope 1 to 3 | Scope 1 to 3 | Scope 1 to 3
+Industry | Scope 1 | Scope 1 to 3 | Scope 1 to 3
+Agriculture | Scope 1 | Scope 1 to 3 | Scope 1 to 3
+Waste | Scope 1 to 3 | Scope 1 to 3 | Scope 1 to 3 | Scope 1 to 3
 
 Figure 4 : Greenhouse gas considered according to environmental approaches
 
@@ -539,22 +536,20 @@ Following the signing of the Covenant of Mayors in April 2008, Greater Dunkirk (
 
 Greater Dunkirk's various initiatives support efforts to combat and adapt to climate change. The table below outlines the main initiatives that structure the Community's "energy/climate" policy.
 
-|   | Mayors convention | Climate Air Energy territorial plan | Cit’ergie | Carbon footprint  |
-| --- | --- | --- | --- | --- |
-|  |   |   |   |   |
-|  Nature | Political commitment | Strategic orientation and action program for the territory | Label of excellence and action program | Accounting carbon tool  |
-|  Perimeter | 7 sectors | 10 work areas | 6 domains | All Greater Dunkirk and territory activities  |
-|  Regulatory obligations |  |  |  |   |
-|  Monitoring indicators | • Fossil energy
+Mayors convention | Climate Air Energy territorial plan | Cit’ergie | Carbon footprint
+Nature | Political commitment | Strategic orientation and action program for the territory | Label of excellence and action program | Accounting carbon tool
+Perimeter | 7 sectors | 10 work areas | 6 domains | All Greater Dunkirk and territory activities
+Regulatory obligations
+Monitoring indicators | • Fossil energy
 • CO₂ impact of energy
 • renewable energy production | • CO₂ impact (fixed, direct and indirect sources)
 • production of renewable energy
 • adaptation measures
 • awareness-raising | 58 indicators (imposed by the label) | Those imposed by the Bilan carbone® method  |
-|  Approval date / completion | Signed in april 2008 | PCET : oct. 2009
+Approval date / completion | Signed in april 2008 | PCET : oct. 2009
 PCAET : nov. 2015 | Cit’ergie : jan. 2010
 Cit’ergie gold : dec. 2013, renewal in 2018 | 2009, 2012, 2015, 2018  |
-|  Minimum frequency of revaluation | 2 years | 6 years | 4 years | 3 years  |
+Minimum frequency of revaluation | 2 years | 6 years | 4 years | 3 years
 
 ## 2.1.3 Updating Greater Dunkirk GHG emissions report
 
@@ -1335,127 +1330,125 @@ Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality
 ## 2.3 Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
 
 To streamline the discussions, the transition team has chosen to focus on five core systems that can be replicated across all areas of action. By focusing on these systems—technical, institutional, financial, social and behavioural, and political—we can effectively develop strategies for improvement, whether we're examining a specific field or the overall system itself.
-| Sector | System | Description | Stakeholders | Level of influence on economic | Level of interest in the industry | Who else should be involved | Collaboration? |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| Transport/Volatility | Technical | Develop public transport, develop and implement a walking plan, encourage soft mobility (carpool parking, etc.) | Greater Dunkirk | High | High | Regional express transport | Collaboration - Greater Dunkirk's thoughts on the needs of employees who visit businesses in the area |
-| Companies | Medium | Medium |
-| Citizens | Medium | Medium |
-| Mobility organizing authorities | Medium | Medium |
-| State | High | High |
-| Chamber of Commerce and Industry | Medium | Medium |
-| Urbanism agency | High | High |
-| Encouraging people to share the road (active design, pavements, active modes) | Greater Dunkirk | Medium | Medium |
-| Region | Medium | Medium |
-| Department | Medium | Medium |
-| Controlling parking supply | Greater Dunkirk | High | High |
-| Port of Dunkirk | High | High |
-| State | Medium | High |
-| Adapting new modes of transport to existing facilities | Greater Dunkirk | High | High | With the project urbanisop |
-| Bus priority on the road (via a tool called gertrude) | Greater Dunkirk | High | High |  |
-| Institutional | Introduce regulations to limit the use of private cars and encourage the electrification of vehicle fleets | Greater Dunkirk | High | High |  |  |
-| State | Medium | Medium |
-| Region and department | Medium | Medium |
-| Environment Agency to assess the impact of mobility policies | Medium | Medium |
-| Financial | Subsidise the purchase of bicycles, introduce free public transport for everyone | Greater Dunkirk | High | High | Region, department and state | Free bus paid for in part by company contributions to Greater Dunkirk |
-| Companies | Medium | Medium |  |
-| Social and behavioural | Raising public awareness of the challenges of climate change and promoting new ways of getting around | Greater Dunkirk | High | High | Region, department and state |  |
-| Companies | Medium | Medium |  |  |
-| Association | High | High |  |  |
-| Political | The desire to build the city within the city, also to optimise travel | Greater Dunkirk | High | High |  |  |
-| Construction companies | High | Medium |  |  |
-| Waste - sorting | Technical | Selective collection, sorting centres, sorting technologies, energy recovery | Greater Dunkirk | High | High |  | Eco-organisms (CITEO, ALCOM,...) |
-| TRESELEC | Medium | Medium |  |  |
-| PAPREC Energie 69 | High | High |  |  |
-| Institutional | Regulations on waste sorting, local programme for the prevention of household and similar waste, partnerships with the social and solidarity economy (e.g. PPE kits) | Greater Dunkirk | High | High |  |  |
-| Social economy structure (Court/pouce, Papillons Blancs, APEJL, CETIDE,..) | Medium | Medium |  |  |
-| Financial | Household waste tax, economies of scale, ecopal | Greater Dunkirk | High | High |  |  |
-| Citizens | High | Medium |  |  |
-| Ecopal | High | High |  |  |
-| Eco-organisms (CITEO, ALCOM,...) | High | High |  |  |
-| Social and behavioural | Awareness-raising, education, communication | Greater Dunkirk | High | High |  |  |
-| Citizens | High | Medium |  |  |
-| Companies | Medium | Medium |  |  |
-| Association | High | High |  |  |
-| Political | Support for local initiatives, recycling targets, prevention | Greater Dunkirk | High | High |  |  |
-| Association | Medium | Medium |  |  |
-| Companies | High | High |  |  |
-| ADEME | High | High |  |  |
-| Eco-organisms (CITEO, ALCOM,...) | High | High |  |  |
-| Waste - Collection | Technical | Collection vehicles, collection routes | Greater Dunkirk | High | High |  | ADEME |
-| Institutional | Appropriate frequency of collection | Greater Dunkirk | High | High |  |  |
-| Financial | Charges for waste collection | Greater Dunkirk | High | High |  |  |
-| Social and behavioural | Information/awareness/communication, satisfaction survey | Greater Dunkirk | High | High |  |  |
-| Higher education structures (University, Territories, Cities, Environment & Society Lab, ELCIMAL) | High | High |  |  |
-| Political | Support for local initiatives, recycling targets, prevention. | Greater Dunkirk | High | High |  | ADEME |
-| Eco-organisms (CITEO, ALCOM,...) | High | High |  |  |
-| Habitat | Technical | Renovation, energy efficiency (insulation, heating, ventilation), renewable energies | Greater Dunkirk | High | High |  |  |
-| Social landlords | Medium | Medium |  |  |
-| Landlords who rent | Medium | Medium |  |  |
-| Landlords living in | High | Low |  |  |
-| Construction companies | Medium | Medium |  |  |
-| Institutional | Regulations, financial aid, renovation plan | Greater Dunkirk | High | High |  | A structure for labelling, monitoring |
-| Construction companies | Medium | Medium |  |  |
-| Financial | Financial aid, eco-winning with a focus on the savings made through renovation work | Greater Dunkirk | High | High | Community centre | Popular education, challenges/experiments |
-| Citizens | High | Low |  |  |
-| Social and behavioural | Awareness-raising and support for private individuals | Greater Dunkirk | Medium | High | Community centre | Education populaire, défis/expérimentations |
-| France Rénov | Medium | High |  |  |
-| ANAH | Medium | High |  |  |
-| Political | Partnerships, renovation objectives | Greater Dunkirk | Medium | Medium |  | Coordination of systems |
-| France Rénov | Medium | High |  |  |
-| ANAH | Medium | High |  |  |
-| Housing | Technical | Sustainable construction, innovation and bioclimatic thinking | Architects | High | High | More construction companies | Projects/Proof of concept |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| Construction companies | Medium | Medium |
-| Researchers | High | High |
-| Institutional | PLU and PLUiHD, financial aid, building regulations | Greater Dunkirk | High | High |  |  |
-| State | High | High |  |  |
-| Financial | Financial aid, eco-winning with a focus on the savings made through renovation work | Greater Dunkirk | Medium | High | Community centre |  |
-| Système social et comportemental | Awareness-raising and support for private individuals | Greater Dunkirk | Medium | High | Community centre |  |
-| France Rénov | Medium | High |  |
-| ANAH | Medium | High |  |
-| Political | Construction objectives, building the city on the city, rehabilitating brownfield sites, social diversity, partnerships with social landlords, etc. | Greater Dunkirk | High | High |  |  |
-| Social landlords | Medium | Medium |  |  |
-| Energy | Technical | Energy production (solar, biomass, wind), distribution networks, energy storage, district heating, green hydrogen | Greater Dunkirk | High | High | Waste Recovery Department | Constructive collaboration to move the region towards decarbonization in the form of a heat supply agreement between Greater Dunkirk, the RCU managers and industrial companies. |
-| Industries | Medium | Medium |
-| Electricity system (Enedis and EDF) | Medium | Medium |
-| Gas system (GRDF) | Medium | Medium |
-| Heating power (Dalkia and Engle) | Medium | Medium |
-| SEM energy Hauts-de-France | Medium | Medium |
-| Developers | Medium | Medium |
-| Residents as producers of renewable energy | High | High |
-| Institutional | PCAET, collaboration between local players and individuals, label | Greater Dunkirk | High | High |  |  |
-| Industries | Medium | Medium |
-| Electricity system (Enedis and EDF) | Medium | Medium |
-| Gas system (GRDF) | Medium | Medium |
-| Heating power (Dalkia and Engle) | Medium | Medium |
-| SEM energy Hauts-de-France | Medium | Medium |
-| Developers | Medium | Medium |
-| Financial | Financial aid (feed-in tariff), subsidies, energy performance contracts | Greater Dunkirk | High | High |  |  |
-| Region and Department | Medium | Medium |  |  |
-| Social and behavioural | Awareness-raising and support for private individuals | Greater Dunkirk | High | High | For the district heating: representatives (technical or elected) of the Towns | Interaction in the form of a public meeting or participation by the City in the committee monitoring the operation of the district heating |
-| Industries | Medium | Medium |
-| Electricity system (Enedis and EDF) | High | High |
-| Gas system (GRDF) | High | High |
-| Heating power (Dalkia and Engle) | High | High |
-| Developers | High | High |
-| Political | Eco-transition objectives, support for innovative projects | Greater Dunkirk | High | High |  |  |
-| Biodiversity | Technical | Identification of natural environments, ecological corridors, habitat restoration | Greater Dunkirk | High | High |  | Collaboration by agreement |
-| Biodiversity expert group (GON, CBNBI, CPIE, fishing federation, CRRG...) | Medium | Medium |  |
-| Institutional | Management plans, regulations, carbon credits, labels | Greater Dunkirk | High | High |  | Collaboration by agreement except with design offices (service) |
-| Biodiversity expert group (GON, CBNBI, CPIE, fishing federation, CRRG...) | Medium | Medium |  |
-| Financial | Agriculture, eco-tourism, Banque des territoires | Greater Dunkirk | High | High |  | Collaboration by agreement |
-| CDC B | High | High |  |
-| Social and behavioural | Education, awareness-raising, communication, eco-tourism | Greater Dunkirk | Medium | High |  | Collaboration by agreement |
-| Association (Permanent centre for environmental initiatives) | High | High |  |
-| Political | Biodiversity objectives, taking biodiv into account in projects of all sizes, monitoring and evaluation | Greater Dunkirk | High | High |  |
-| Water management | Technical | Water quality monitoring, WWTP management (river management and flood prevention) | Greater Dunkirk | High | High |  |
-| Wateringues Intercommunal Institution | High | High |  |  |
-| Institutional | Master plan for water development and management (SDAGE) management of aquatic environments and flood prevention (Gémapi), PLUiHD, EU water framework decree | Greater Dunkirk | High | High |  |  |
-| Wateringues Intercommunal Institution | High | High |  |  |
-| Financial | Investment in WWTP, network upgrading/maintenance/renewal | Greater Dunkirk | High | High |  |  |
-| Dunkirk water Union | High | High |  |  |
-| Social and behavioural | Liaison with industry to limit their use of water, education about risks and rational water management | Greater Dunkirk | High | High | Dunkirk water Union |  |
-| Political | Monitoring and assessment, investment, sanitation pricing, GEMAPI tax | Greater Dunkirk | High | High |  |  |
+Sector | System | Description | Stakeholders | Level of influence on economic | Level of interest in the industry | Who else should be involved | Collaboration?
+Transport/Volatility | Technical | Develop public transport, develop and implement a walking plan, encourage soft mobility (carpool parking, etc.) | Greater Dunkirk | High | High | Regional express transport | Collaboration - Greater Dunkirk's thoughts on the needs of employees who visit businesses in the area
+Companies | Medium | Medium
+Citizens | Medium | Medium
+Mobility organizing authorities | Medium | Medium
+State | High | High
+Chamber of Commerce and Industry | Medium | Medium
+Urbanism agency | High | High
+Encouraging people to share the road (active design, pavements, active modes) | Greater Dunkirk | Medium | Medium
+Region | Medium | Medium
+Department | Medium | Medium
+Controlling parking supply | Greater Dunkirk | High | High
+Port of Dunkirk | High | High
+State | Medium | High
+Adapting new modes of transport to existing facilities | Greater Dunkirk | High | High | With the project urbanisop
+Bus priority on the road (via a tool called gertrude) | Greater Dunkirk | High | High
+Institutional | Introduce regulations to limit the use of private cars and encourage the electrification of vehicle fleets | Greater Dunkirk | High | High
+State | Medium | Medium
+Region and department | Medium | Medium
+Environment Agency to assess the impact of mobility policies | Medium | Medium
+Financial | Subsidise the purchase of bicycles, introduce free public transport for everyone | Greater Dunkirk | High | High | Region, department and state | Free bus paid for in part by company contributions to Greater Dunkirk
+Companies | Medium | Medium
+Social and behavioural | Raising public awareness of the challenges of climate change and promoting new ways of getting around | Greater Dunkirk | High | High | Region, department and state
+Companies | Medium | Medium
+Association | High | High
+Political | The desire to build the city within the city, also to optimise travel | Greater Dunkirk | High | High
+Construction companies | High | Medium
+Waste - sorting | Technical | Selective collection, sorting centres, sorting technologies, energy recovery | Greater Dunkirk | High | High | Eco-organisms (CITEO, ALCOM,...)
+TRESELEC | Medium | Medium
+PAPREC Energie 69 | High | High
+Institutional | Regulations on waste sorting, local programme for the prevention of household and similar waste, partnerships with the social and solidarity economy (e.g. PPE kits) | Greater Dunkirk | High | High
+Social economy structure (Court/pouce, Papillons Blancs, APEJL, CETIDE,..) | Medium | Medium
+Financial | Household waste tax, economies of scale, ecopal | Greater Dunkirk | High | High
+Citizens | High | Medium
+Ecopal | High | High
+Eco-organisms (CITEO, ALCOM,...) | High | High
+Social and behavioural | Awareness-raising, education, communication | Greater Dunkirk | High | High
+Citizens | High | Medium
+Companies | Medium | Medium
+Association | High | High
+Political | Support for local initiatives, recycling targets, prevention | Greater Dunkirk | High | High
+Association | Medium | Medium
+Companies | High | High
+ADEME | High | High
+Eco-organisms (CITEO, ALCOM,...) | High | High
+Waste - Collection | Technical | Collection vehicles, collection routes | Greater Dunkirk | High | High | ADEME
+Institutional | Appropriate frequency of collection | Greater Dunkirk | High | High
+Financial | Charges for waste collection | Greater Dunkirk | High | High
+Social and behavioural | Information/awareness/communication, satisfaction survey | Greater Dunkirk | High | High
+Higher education structures (University, Territories, Cities, Environment & Society Lab, ELCIMAL) | High | High
+Political | Support for local initiatives, recycling targets, prevention. | Greater Dunkirk | High | High | ADEME
+Eco-organisms (CITEO, ALCOM,...) | High | High
+Habitat | Technical | Renovation, energy efficiency (insulation, heating, ventilation), renewable energies | Greater Dunkirk | High | High
+Social landlords | Medium | Medium
+Landlords who rent | Medium | Medium
+Landlords living in | High | Low
+Construction companies | Medium | Medium
+Institutional | Regulations, financial aid, renovation plan | Greater Dunkirk | High | High | A structure for labelling, monitoring
+Construction companies | Medium | Medium
+Financial | Financial aid, eco-winning with a focus on the savings made through renovation work | Greater Dunkirk | High | High | Community centre | Popular education, challenges/experiments
+Citizens | High | Low
+Social and behavioural | Awareness-raising and support for private individuals | Greater Dunkirk | Medium | High | Community centre | Education populaire, défis/expérimentations
+France Rénov | Medium | High
+ANAH | Medium | High
+Political | Partnerships, renovation objectives | Greater Dunkirk | Medium | Medium | Coordination of systems
+France Rénov | Medium | High
+ANAH | Medium | High
+Housing | Technical | Sustainable construction, innovation and bioclimatic thinking | Architects | High | High | More construction companies | Projects/Proof of concept
+Construction companies | Medium | Medium
+Researchers | High | High
+Institutional | PLU and PLUiHD, financial aid, building regulations | Greater Dunkirk | High | High
+State | High | High
+Financial | Financial aid, eco-winning with a focus on the savings made through renovation work | Greater Dunkirk | Medium | High | Community centre
+Système social et comportemental | Awareness-raising and support for private individuals | Greater Dunkirk | Medium | High | Community centre
+France Rénov | Medium | High
+ANAH | Medium | High
+Political | Construction objectives, building the city on the city, rehabilitating brownfield sites, social diversity, partnerships with social landlords, etc. | Greater Dunkirk | High | High
+Social landlords | Medium | Medium
+Energy | Technical | Energy production (solar, biomass, wind), distribution networks, energy storage, district heating, green hydrogen | Greater Dunkirk | High | High | Waste Recovery Department | Constructive collaboration to move the region towards decarbonization in the form of a heat supply agreement between Greater Dunkirk, the RCU managers and industrial companies.
+Industries | Medium | Medium
+Electricity system (Enedis and EDF) | Medium | Medium
+Gas system (GRDF) | Medium | Medium
+Heating power (Dalkia and Engle) | Medium | Medium
+SEM energy Hauts-de-France | Medium | Medium
+Developers | Medium | Medium
+Residents as producers of renewable energy | High | High
+Institutional | PCAET, collaboration between local players and individuals, label | Greater Dunkirk | High | High
+Industries | Medium | Medium
+Electricity system (Enedis and EDF) | Medium | Medium
+Gas system (GRDF) | Medium | Medium
+Heating power (Dalkia and Engle) | Medium | Medium
+SEM energy Hauts-de-France | Medium | Medium
+Developers | Medium | Medium
+Financial | Financial aid (feed-in tariff), subsidies, energy performance contracts | Greater Dunkirk | High | High
+Region and Department | Medium | Medium
+Social and behavioural | Awareness-raising and support for private individuals | Greater Dunkirk | High | High | For the district heating: representatives (technical or elected) of the Towns | Interaction in the form of a public meeting or participation by the City in the committee monitoring the operation of the district heating
+Industries | Medium | Medium
+Electricity system (Enedis and EDF) | High | High
+Gas system (GRDF) | High | High
+Heating power (Dalkia and Engle) | High | High
+Developers | High | High
+Political | Eco-transition objectives, support for innovative projects | Greater Dunkirk | High | High
+Biodiversity | Technical | Identification of natural environments, ecological corridors, habitat restoration | Greater Dunkirk | High | High | Collaboration by agreement
+Biodiversity expert group (GON, CBNBI, CPIE, fishing federation, CRRG...) | Medium | Medium
+Institutional | Management plans, regulations, carbon credits, labels | Greater Dunkirk | High | High | Collaboration by agreement except with design offices (service)
+Biodiversity expert group (GON, CBNBI, CPIE, fishing federation, CRRG...) | Medium | Medium
+Financial | Agriculture, eco-tourism, Banque des territoires | Greater Dunkirk | High | High | Collaboration by agreement
+CDC B | High | High
+Social and behavioural | Education, awareness-raising, communication, eco-tourism | Greater Dunkirk | Medium | High | Collaboration by agreement
+Association (Permanent centre for environmental initiatives) | High | High
+Political | Biodiversity objectives, taking biodiv into account in projects of all sizes, monitoring and evaluation | Greater Dunkirk | High | High
+Water management | Technical | Water quality monitoring, WWTP management (river management and flood prevention) | Greater Dunkirk | High | High
+Wateringues Intercommunal Institution | High | High
+Institutional | Master plan for water development and management (SDAGE) management of aquatic environments and flood prevention (Gémapi), PLUiHD, EU water framework decree | Greater Dunkirk | High | High
+Wateringues Intercommunal Institution | High | High
+Financial | Investment in WWTP, network upgrading/maintenance/renewal | Greater Dunkirk | High | High
+Dunkirk water Union | High | High
+Social and behavioural | Liaison with industry to limit their use of water, education about risks and rational water management | Greater Dunkirk | High | High | Dunkirk water Union
+Political | Monitoring and assessment, investment, sanitation pricing, GEMAPI tax | Greater Dunkirk | High | High
 The six barriers identified —finance, communication, time, land use, regulatory, and social—are common challenges faced in various fields, from business and technology to community development and environmental protection.
 
 |  Finance | Adopting virtuous practices, whether it involves ethical products, renewable energy, or sustainable production methods, often entails a significant additional cost. For example, investing in green technologies, such as solar panels or electric vehicles, requires a higher initial capital compared to traditional solutions. Moreover, for businesses, adopting more virtuous practices can reduce profit margins, making it difficult to remain competitive in the market. In summary, while virtuous choices are beneficial in the long term for the environment and society, their higher initial cost constitutes a financial barrier that limits their widespread adoption. | This lack of consideration for ecological impacts in the prioritization of political agendas results in delays in adopting essential measures to combat climate change. Projects with direct environmental impact, such as ecosystem protection or energy transition, are often relegated to a secondary priority. This creates a situation where inaction or delayed action exacerbates ecological crises that, in fact, require immediate responses. | The insufficient technological maturity of solutions for achieving climate neutrality, combined with high costs and regulatory uncertainties, makes investments in these technologies less profitable in the short term. To overcome these challenges, it is crucial to support innovation through favorable public policies, subsidies, and financial incentives that encourage the development and adoption of essential climate technologies.  |
@@ -1518,200 +1511,194 @@ Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality
 Recognizing that late outcomes will significantly impact various actors and citizens, their successful implementation requires their active involvement. Due to the project timeframe, achieving a comprehensive analysis of both early changes and late outcomes within the initial phase proved challenging. As late outcomes will be rigorously examined during the first or second iteration of the CCC, we strategically prioritized the development and monitoring of early changes to ensure their timely implementation. A dedicated workshop on late outcomes is scheduled for the summer, facilitating the alignment of late outcome indicators and metrics with those of the early changes for optimal project impact.
 
 7
-| Tableau 8-1.1a - Impact pathways of early changes |
-| --- |
-| Sector | Subsector | Systemic Levers | Early Changes (1-2 Years) | Indicators | Metrics |
-| Transport | Reduced motorized passenger transportation need | Urban Planning and Land Use, Active transportation, Economic Development, Pricing and Incentives, technology, Public Transportation, education and awareness | Quick wins : development of pedestrian zones. | T1 - Length of Sidewalk | Km |
-| Improve public transport: increase frequency and reliability of bus services, especially during peak hours. development of "chrons" bus lines. | T2-Frequency of buses (especially chrono buses) | Bus per minute |
-| T3- Public transport ridership | Travel by resident |
-| T4 - Evolution of the number of public transport journey | Number per year |
-| T5 - Public transport mode share | % |
-| T6 - Ridership evolution since the implementation of free public transport | % |
-| T7 - Frequency of buses (especially chrono buses) | Bus per minute |
-| T8 - Meeting of the territory by the public transport network | nb bus stop/resident, km de network/resident |
-| T9 - Bike mode share | % |
-| Develop mobility plans: Create comprehensive mobility plans for the CLID area, encouraging bike use for small distances. | T10 - Share of bike-friendly roads | % of total road km |
-| Shift to public & non-motorized transport | Urban Planning and Land Use, Public Transportation, Active transportation, Economic Development, Pricing and Incentives, education and awareness, technology | Expand public transport: increase frequency and routes of bus services, especially in underserved areas. First services for new industries "without car parks", targeted actions under the cycling plan (footbridges, etc.). | T9 - Frequency of bus in underserved areas | Bus per minute | 10 |
-| T10 - Share of the population covered by a mobility plan (Number of industries promoting active mobility for employees) | % |
-| T11 - Length of Sidewalk | Km |
-| Improve pedestrian infrastructure: Build sidewalks, crosswalks, and pedestrian-friendly zones. Free transport, help with buying a bike, provision of electric and muscle bikes, sustainable mobility package. Chewing up a walking plan | T14 - Area of active mobility and pedestrian-friendly zone | Km² |
-| T15 - Number of bikes collected and recycled under the RECYCLO programme | Number |
-| Create bike-sharing systems: Implement bike-sharing programs with sufficient stations and bikes. Eco risks and Recyclo programs. | T16 - Number of bike parking, excluding bike rakes | Number per resident |
-| T17 - Number of free bike spots | Number |
-| T18 - Evolution of the number of bike parking, boxes and shelters | Number |
-| Bus lane : Create lane only for bus, with adapted traffic lights to make bus travels faster and easier. | T19 - Km of lane only for bus | Km |
-| Increased car pooling | Technology, Infrastructure, Pricing and Incentives, education and awareness, Workplace policies | Launch carpooling platform: Develop a user-friendly platform to connect potential carpoolers. | T20 - Number of citizens registered on the plateforme Pass Pass covidusage | Number |
-| Offer incentives: Provide financial incentives or rewards for carpooling. | T21 - Number of industries that implement financial incentives for carpooling | Number |
-| Promote carpooling culture: Launch awareness campaigns highlighting the benefits of carpooling. | T22 - Carpool share | % |
-| Electrification of cars + motorcycles | Infrastructure, financial, economic development, public awareness, grid integration, technology | Economic cases and capital needs for long term investment planning, mixed funding model to align risks, returns and financial performance. | T24 - Share of class A or B buildings according to the OPE for energy (or equivalent) | Number | 1 |
-| T25 - Return on Investment (ROI) Measures the profitability of an EV electrification project | €/ECO₂ avoided |
-| Electricity Greater Dunkirk fleet: Replace a portion of the Greater Dunkirk fleet with electric vehicles. | T26 - Number of fossil fueled car changed for electric ones | Number |
-| T27 - Annual vehicle energy consumption of the collectivity | kWh/an.employee |
-| Install charging stations: Deploy a network of public charging stations in key locations. | T28 - Share of electric cars in the territory | % |
-| T29 - Kilometers driven by electric cars | Km |
-| T30 - Number of parking providing charging stations | Number |
-| Install charging infrastructure: Build charging stations at bus depots and along key routes. | T31 - Number of electric buses | Number |
-| T32 - Number of charging station deployed for buses (wharehouse and bus stations) | % |
-| Electricity | Secure funding: Obtain financial support for electric bus procurement and infrastructure. | T33 - € of grants/subsidies to allow investment in the electrification of bus fleet | € |
-| T34 - Number of projects financed thanks to subsidies/grants | Number |
-| Train personnel: Provide training for bus drivers and maintenance staff on electric bus technology. | T35 - Number of people trained | Number |
-|  |  | Gstar-driven optimization: Analyze logistics data to identify inefficiencies and optimize routes. | T36 - km of travels optimized | Km |
-| Improve last-mile delivery: Optimize delivery processes through technology and alternative delivery methods. Like the NOAA project, but adapted to transport of goods. | T37 - Number of structures with alternative delivery methods | Number |
-| Collaborate with stakeholders: Establish partnerships to share data and improve efficiency. | T38 - Number of partnership created/improved | Number |
-| Initiate sustainability measures: Implement eco-friendly practices in transportation and packaging | T39 - Number of companies using transportation and packaging innovation | Number |
-|  | Building renovations (envelope) | Technology, finances, regulations, public awareness | Incentive programs: Launch financial incentive programs for building envelope renovations (MAHrmellenov). | BHI - Applications filed at the Anah | Number |
-| --- | --- | --- | --- | --- | --- |
-| BH2 - Number of accompanied households in the rehabilitation of their accomodations | Number |
-| BH3 - Number of accomodations energetically renovated | % of renovated housing |
-| BH4 - Financial aids attributed | € |
-| BH5 - Amount attributed to energical renovation under the écohabitat programme | € per year |
-| BH6 - Amount of aid attributed by the CUD to each city for energetic renovation | € per municipality |
-| BH7 - Energetic expenses of the CUD - buildings | € |
-| BH8 - Share of buildings energy-tested | % |
-| Regulatory framework: Develop and implement updated building energy efficiency standard (RE2020). | BH9 - Energetic consumption of public buildings | MWh/m2 |
-| BH10 - Share of class A or B public buildings according to the DPE (energy) | % |
-| Awareness campaigns: Initiate public education campaigns on the importance of building envelopes. | BH11 - Number of owners made aware of the benefits of housing improvement | Number |
-| Gradual renovation of social housing for low-energy housing. | BH12 - Number of accomodation energetically renovated | Number |
-| BH13 - Tonnes CO2e saved per year through housing rehabilitation | teq CO2 |
-| BH14 - Valuation of energy vouchers | kWhcumac valued per year |
-| Pilot projects: Conduct pilot renovation projects to demonstrate the benefits and challenges. | BH15 - Number of pilot renovation projects studied | Number |
-| Buildings & Heating | New energy efficient buildings | Technology, infrastructure, finances, regulation | Updated building codes: Implement stricter energy efficiency standards for new buildings. | BH16 - Share of class A or B buildings according to the DPE (or equivalent) | % |
-| Incentive programs: Launch financial incentive programs for energy-efficient construction. Offering subsidies, tax breaks, or low-interest loans for energy-efficient construction. | BH17 - Share of eligible projects that participate in the incentive programs | % |
-| BH18 - Funds invested thanks to the incentive | € |
-| BH19 - Total energy savings achieved by projects that have received incentives. | MWh |
-| Training initiatives: Develop and deliver training programs for the construction industry. Providing training for architects, engineers, and builders on energy-efficient design and construction. | BH20 -Share of eligible professionals who participate in the training programs | % |
-| Pilot projects: Showcase energy-efficient building projects to demonstrate feasibility. | BH21 - Number of pilot projects | % before and after |
-| Efficient lighting & appliances | Technology, infrastructure, finances, regulation | Enforce efficiency standards: Strictly enforce energy efficiency standards for lighting and appliances. | BH22 - Share of products on the market that meet or exceed energy efficiency standards. | % |
-| Public Awareness Campaigns: Initiate campaigns to inform consumers about energy savings. | BH23 - Residents' awareness of energy efficiency standards and the benefits of energy-efficient products. | Number |
-| Labeling improvements / Communication: Enhance energy efficiency labels for clarity and comprehensibility. | BH24 - Surveys to assess consumers' understanding of energy efficiency labels. | Number of consumers |
-| Decarbonizing heating generation | Infrastructure, financial, economic development, public awareness, grid integration, technology | Policy framework: Develop and implement clear policy and regulatory frameworks for low-carbon heating. | BH25 - Renewable energy production rates for heating and cooling in the territory |  |  |
-| BH26 - Coverage rate of the territory's heat needs (residential and tertiary) by ENR&R heat networks | % |  |
-| Pilot projects: Conduct pilot projects to demonstrate the feasibility and benefits of low-carbon heating. | BH27 - Share of of successful implementation of low-carbon heating technologies in pilot projects. | % |  |
-| BH28 - Cost-effectiveness of low-carbon heating solutions compared to traditional heating methods. | € per kgCO2 emission avoided |  |
-| BH29 - Number of successful replication of elements of pilot projects in other regions or contexts. | Number |  |
-| Consumer Education Campaigns: Initiate public awareness campaigns about the importance of decarbonizing heating. | BH30 - Share of people switching to low-carbon heating technologies |  |  |
-| Increase the proportion of renewable energy / industrial waste heat in district heating networks / ambitious development policy. | BH31 - Coverage of the territory's heat needs by ENR&R heat networks | % |  |
-| BH 32 - Share of renewable energy production for heating and cooling in the territory | % |  |
-| BH33 - Share of renewable energy production | % |  |
-| BH34 - Connected capacity and number of subscribers | Number |  |
-| BH35 - Valuation of energy vouchers | kWhcumac valued / year |  |
-| Energy systems | Decarbonizing electricity generation | Technology, policy, economic development, infrastructure, innovation | Policy framework: Establish clear and ambitious decarbonization targets and policies. | El - Share of renewable energy production | % | 30 |
-| --- | --- | --- | --- | --- | --- | --- |
-| E2 - Annual greenhouse gas emissions from the territory | teq CO₂/resident |
-| Renewable energy incentives: Introduce or expand financial incentives for solar, wind, and other renewable energy projects. | E3 - Climate-air-energy policy budget | € per resident per year |
-| Grid upgrades: Identify and initiate grid modernization projects to accommodate increased renewable energy. | El - Share of renewable energy production | % |
-| Technology demonstration: Support pilot projects for emerging low-carbon technologies. | E4 - Cost-effectiveness of grid modernization projects | € per kgCO₂ emission avoided |
-| E5 - Budget allocated studies/expertise/MDE/renewable energies/air quality/climate change adaptation | € |
-| Waste | Increased waste recycling | Financement investissement Coordination, infrastructure | Infrastructure Upgrades: Improve recycling collection and sorting facilities. Out-of-home waste sorting introduced at 100% public space as home. | W1 - Waste recycling | % | 1 |
-| W2 - Recyclable waste | Tonnes per year per resident |
-| W3 - Waste recovery rate | % |
-| W4 - Sorting error rate | % |
-| W5 - Recycling quality: Evaluate the quality of recycled materials (e.g., cleanliness, purity). |  |
-| Public Awareness Campaigns: Launch educational campaigns on waste reduction and recycling. Strategy for bio-waste reduction (compost promotion, education plan...). | W6 - Numbers of classes and students made aware to sorting | Number |
-| W7 - Number of households made aware of sorting by counselors | Number |
-| W8 - Share of households practicing composting | % |
-| W9 - Share of households willing to throw their waste in a recycling center so that it can be repaired and reused | % |
-| W10 - Share of public satisfaction with the recycling facilities and services | % |
-| Community plan for fighting against abandoned waste. | W11 - Abandoned waste (green resources, bulky waste, tires, residual waste) | Tonnes per year |
-| W12 - Waste by waste recovery method (green resources, bulky waste, tires, residual waste) | Tonnes by recovery method |
-| Circular Economy Development: Promotion of a circular economy model. | W13 - Number of items repaired during Repair café sessions | Number |
-| Circular Economy Development: Promotion of a circular economy model. | W14 - Tonnes of CO₂e saved thanks to the repair of items | teq CO₂ |
-| Decarbonizing collect activity | Financement investissement, technology, infrastructure | New contrat for bicycle waste collect. | W15 - Number of bikes rented under the RECYCLO programme | Number |  |
-| Vehicle Assessment: Identify high-emission vehicles in the fleet and prioritize electrification. Experiment motor retrofit (Hydrogen) and first charging point (Electric). | W16 - Composition of collection fleet | Number |
-| Route Optimization Pilot: Test route optimization software in select areas. | W17 - Number of collections provided by the new services | Number |
-| W18 - Fuel consumption of collection vehicules | Liter |
-| Public Awareness Campaigns: Promote waste reduction and recycling to decrease collection volume. | W19 - Household and assimilate waste production (excluding debris) | kg/resident |
-| W20 - Residual household waste production | kg/resident |
-| W21 - Occasional waste production | kg/resident |
-| W22 - Production of selectively collected waste | kg/resident |
-| W23 - Waste collected | Tonnes |
-| Charging Infrastructure: Install charging stations at waste collection depots. | W24 - Number of charging station for the collection fleet | Number |
-| Factor | Subsector | Systemic Level | Late Outcomes (2-4 years) | Indicators | Metrics | Source (mean or range of outcomes) and confidence interval (95% CI) | Outlook (mean or range of outcomes) | Details of Indicators | metrics |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Transport | Reduced motorized passenger transportation need | Urban-Ronning and Land Use, Active transportation, Economic Development, Pricing and Incentives, Technology, Public Transportation, education and awareness | Reduced car ownership: Measurable decrease in car ownership rates. | TLO1 - Household vehicle equipment | % | 20 | Economic growth | Share of new jobs related to transport sector (Stimulate local economies by creating jobs in public transport sector). | % |
-| T3 - Public transport ridership | Travel by resident | Share of new jobs related to cycling sector (Stimulate local economies by creating jobs in cycling sectors). | % |
-| T4 - Evolution of the number of public transport journey | Number per year | Social equity | Employment rate (Improve access to jobs for people without cars). | Number |
-| T5 - Public transport mode share | % | Share of student using only public transport or active mobility to go the school/university (Improve access to education for people without cars). | % | % |
-| T6 - Public transport mode share | % | Class unemployment. | % | % |
-| T7 - Public transport mode share | % | Climate change mitigation | Reduce greenhouse gas emissions and contribute to climate change goals. | ICO,eq avoided by active mobility incentives and public transport |
-| T8 - Bike mode share | % | PUBLIC health | Improve public health by reducing noise pollution, and physical inactivity. | dE(k) |
-| T9 - Bike mode share | % | Land use efficiency | Share of land use for parking space use only (Optimise land use by reducing the need for extensive parking spaces). | % |
-| T10 - Roadway | % | % | 10 | Share of people having access to healthcare (Improve access to healthcare for people without cars). |
-| Transport | Shift to public & non-motorized transport | Urban-Ronning and Land Use, Public Transportation, Active transportation, Economic Development, Pricing and Incentives, education and awareness, technology | Reduced car dependency: Measurable decrease in car ownership and usage. | TLO3 - Car ownership | % | 10 | Economic growth | Share of new jobs related to transport sector (Stimulate local economies by creating jobs in public transport sector). | % |
-| Increased public transport ridership: Significant growth in public transport users. | T3 - Public transport ridership | Travel by resident | Share of new jobs related to cycling sector (Stimulate local economies by creating jobs in cycling sectors). | % |
-| Reduced traffic congestion: Less crowded roads and improved travel times. | TLO4 - road congestion and travel time | time per km | Share of new jobs related to urban development sector (Stimulate local economies by creating jobs in urban development sectors). | Number |
-| Increased cycling and walking rates: Higher percentage of people choosing active modes for short trips. | T9 - Bike mode share for short trips | % | Employment rate (Improve access to jobs for people without cars). | % |
-| TLO6 - walking mode share for short trips | % | Social equity | Share of people having access to healthcare (Improve access to healthcare for people without cars). | % |
-| Improved air quality: Reduced levels of air pollution and greenhouse gas emissions. | TLO7 - SHS emission of transportation | ICO,eq emission of transportation | Share of student using only public transport or active mobility to go the school/university (Improve access to education for people without cars). | % |
-| Increased car pooling | % | Less unemployment. | % | % |
-| Increased carpool usage: Significant increase in the number of people carpooling. | T10 - Number of people subscribed and using the Passifree plateform. |  | Climate change mitigation | Reduce greenhouse gas emissions and contribute to climate change goals. | ICO,eq avoided by active mobility incentives and public transport |
-| Cost savings: Financial benefits for carpoolers through shared expenses. | TLO8 - savings for residents thanks to carpooling |  | Improve public health by reducing air pollution. | μg/m3 of PME,5, PME, O3, NO2, and NOx | μg/m3 of PME,5, PME, O3, NO2, and NOx |
-| Lowered emissions: Reduced greenhouse gas emissions and improved air quality. | TLO9 - air quality | TLO1 - SHS emission of transportation | ICO,eq emission of transportation | Improve public health by reducing noise pollution, and physical inactivity. | dE(k) |
-| Reduced traffic congestion: Decreased traffic volume and improved travel times. | TLO10 - Average annual daily traffic by municipality (TL) |  | Improve public health by reducing physical inactivity. |  |  |
-| Electricity | Electricity | Stronger social connections: Increased opportunities for social interaction among carpoolers. | Stronger social connections: Increased opportunities for social interaction among carpoolers. | TLO10 - Number of people in carpooling cars |  |  | Land use efficiency. | Share of land use for parking space use only (Optimise land use by reducing the need for extensive parking spaces). | % |
-| Technological advancements: Advancements in battery technology and charging infrastructure. | TLO1 - Number of electric vehicle technology related industries on the territory (Promote innovation in electric vehicle technology) |  | 1 | Economic growth | Stimulate the EV industry and related sectors. |  |
-| Job creation: Growth in the EV charging and maintenance sector. | TLO10 - Share of electric cars in the territory (Reduce reliance on foreign oil) | Energy independence | Share of electric cars (Reduce reliance on foreign oil). | % |
-| Reduced dependence on fossil fuels: Decreased reliance on imported oil. | TLO10 - Share of electric cars in the territory (Reduce reliance on foreign oil) | Public health | Improve public health by reducing air pollution. | μg/m3 of PME,5, PME, O3, NO2, and NOx |
-| Reduced emissions: Lower greenhouse gas emissions and improved air quality. | TLO14 - Annual vehicle Energy Consumption | Climate change mitigation | Reduce greenhouse gas emissions and contribute to climate change goals. | ICO,eq avoided by switching to electric cars |
-| Electricity | Increased EV adoption: Significant growth in the number of electric vehicles on the road. | TLO15 - Share of electric cars in the territory (Improve access to the energy and maintenance sector) | Technological leadership | Share of pilot project replicated outside Greater Guntola territory (Position the region as a leader in electric vehicle technology) | % |
-| Transport | Electricification of buses | Infrastructure, financial, economic development, public awareness, grid integration, technology | Significant EV bus fleet: A substantial portion of the bus fleet is electrified. | TLCR5 - Number of electric buses |  | 0 | Economic growth | Share of new jobs related to transport sector (Stimulate local economies by creating jobs in public transport sector). | % |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Improved air quality: Reduced emissions and improved air quality in urban areas. | TLCR1 - air quality | μg/m3 of PM2.5, PM10, O3, NO2 and Nox | Share of new jobs related to cycling sector (Stimulate local economies by creating jobs in cycling sectors). | % |
-| Improved air quality: Reduced emissions and improved air quality in urban areas. | TLCR7 - GHG emission of transportation | ICO_eq emission of transportation | Share of new jobs related to urban development sector (Stimulate local economies by creating jobs in urban development sectors). | Number |
-| Reduced noise pollution: Quieter buses contribute to a better living environment. | TLCR8 - Noise pollution | dB(A) | Climate change mitigation | Reduce greenhouse gas emissions and contribute to climate change goals. | ICO_eq of public transport |
-| Energy cost savings: Potential reduction in spending costs due to lower electricity prices compared to diesel. | T21: Return on investment (ROI) Measures the profitability of an EV electrification project. | € of EV buses functionment / € fossil fueled buses functionment | Public health | Improve public health by reducing air pollution. | μg/m3 of PM2.5, PM10, O3, NO2 and Nox |
-| Positive public perception: Increased public support for public transportation due to cleaner and quieter buses. | T4 - Evolution of the number of public transport journey | Number per year | Technological advancement | Improve public health by reducing noise pollution, and physical inactivity. | dB(A) |
-| Optimized logistics | Technology, finances, infrastructure | Reduced transportation costs: Significant reduction in logistics expenses through optimization. | T29: km of travels optimized |  | 58 | Economic growth | Evolution of transportation costs (Increased efficiency and competitiveness for businesses). | € |
-| Improved delivery times: Faster and more reliable delivery services. |  |  | Job creation | Innovative solution developed on Greater Quaintra territory (New opportunities in logistics technology and sustainable transportation). | Number |
-| Lowered environmental impact: Reduced carbon emissions and waste generation. |  |  | Urban development | Improved urban logistics and reduced traffic congestion. |  |
-| Enhanced supply chain visibility: Real-time tracking and improved supply chain management. |  |  | Resource conservation | Optimized resource utilization and reduced waste. |  |
-| Building renovations (envelope) | Technology, finances, regulations, public awareness | Improved energy efficiency: Significant reduction in energy consumption for heating and cooling. | Share of renewable energy production for heat and cooling in the territory |  |  | Economic Growth | Stimulate the construction and renovation industry. |  |  |
-| Reduced carbon emissions: Lower greenhouse gas emissions from buildings. | Energy consumption of public buildings |  |  | Climate Change Mitigation | Contribute to climate change goals by reducing energy consumption. |  |  |
-| Increased property values: Enhanced property values due to improved energy efficiency. |  |  |  | Public health | Improve public health by reducing exposure to indoor air pollutants. |  |  |
-| Improved indoor air quality: Better indoor living conditions through improved insulation and ventilation. |  |  |  | Energy Security | Reduce dependence on fossil fuels. |  |  |
-| Progressive eradication of thermal flows in social and private housing in the Dunkirk area. |  |  |  | Social Equity | Enhance the comfort and well-being of building occupants. |  |  |
-| New energy efficient buildings | Technology, infrastructure, finances, regulation | Reduced energy consumption: Significantly lower energy consumption in new buildings. | Share of class A or B buildings according to the DPE for energy (or equivalent) |  | 2 | Economic Growth | Stimulate the construction and renovation industry. |  |  |
-| Lowered carbon emissions: Reduced greenhouse gas emissions from the building sector. |  |  | Climate Change Mitigation | Contribute to climate change goals by reducing energy consumption. |  |  |
-|  |  |  | Public health | Improve public health by reducing exposure to indoor air pollutants. |  |  |
-|  |  |  | Energy Security | Reduce dependence on fossil fuels. |  |  |
-| Improved indoor air quality: Enhanced indoor living and working conditions. |  |  | Social Equity | Enhance the comfort and well-being of building occupants. |  |  |
-| Effect of lighting & appliances | Technology, infrastructure, finances, regulation | Increased market for energy-efficient technologies: Growth in the market for energy-efficient building materials and systems. |  |  |  | Attractiveness of the town centre. |  |  |  |
-| Enhanced building performance: Improved durability, resilience, and comfort of new buildings. |  |  |  | Lower energy bills for individuals. |  |  |  |
-| Reduced energy consumption: Significant decrease in energy consumption for lighting and appliances. |  |  |  | Economic Growth | Stimulate the construction and renovation industry. |  |  |
-| Lowered electricity bills: Reduced energy costs for consumers. | Drewnhouse gas emissions |  | 3 | Climate Change Mitigation | Contribute to climate change goals by reducing energy consumption. |  |  |
-|  |  |  |  | Public Health | Improve public health by reducing exposure to indoor air pollutants. |  |  |
-| Efficient lighting & appliances | Technology, infrastructure, finances, regulation | Improved air quality: Decreased greenhouse gas emissions. |  |  |  | Economic Growth | Stimulate the construction and renovation industry. |  |  |
-| Consumer Behavior Change: Increased adoption of energy-saving habits. |  |  |  | Social Equity | Attractiveness of the town centre. |  |  |
-|  |  |  |  | Lower energy bills for individuals. |  |  |  |
-|  Buildings & Heating | Decarbonizing heating generation | Infrastructure, financial, economic development, public awareness, grid integration, technology | Reduced GHG emissions: Significant reduction in carbon emissions from heating. | Greenhouse Gas Emissions - Residential |  |  | Economic Growth | Stimulate the construction and renovation industry. |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|   |   |   |  Increased Adoption of Low-Carbon Heating: Widespread adoption of heat pumps, biomass boilers, and other low-carbon heating systems. | Share of coverage of the territory's heat needs (residential and tertiary) by renewable energy heating networks |  |   | Climate Change Mitigation | Contribute to climate change goals by reducing energy consumption. |   |
-|   |   |   |  Improved air quality: Reduced air pollution from fossil fuel combustion. |  |  |   | Public Health | Improve public health by reducing exposure to indoor air pollutants. |   |
-|   |   |   |   |   |   |   |  Energy Security: | Reduce dependence on fossil fuels. |   |
-|   |   |   |   |   |   |   |  Social Equity | Enhance the comfort and well-being of building occupants. |   |
-|   |   |   |   |   |   |   |   |  Attractiveness of the town centre. |   |
-|   |   |   |  Achieve 100% renewable energy in the grid by 2030. | Share of Renewable Energy Production |  |   | Lower energy bills for individuals. |   |   |
-|  Energy Safety | Decarbonizing electricity generation | Technology, policy, economic development, infrastructure, innovation | Reduced GHG emissions: Significant reduction in carbon emissions from electricity generation. | Share of Renewable Electricity Generation |  | 30 | Public health | Improve public health by reducing exposure to indoor air pollutants. |   |
-|   |   |   |   |  Greenhouse gas emissions - energy sector |  |   |   |   |   |
-|   |   |   |   |  Annual greenhouse gas emissions of the territory per capita |  |   |   |   |   |
-|   |   |   |  Increased Renewable Energy Share: Substantial growth in renewable energy capacity and generation. | Share of renewable electricity production in the territory |  |   |   |   |   |
-|   |   |   |  Improved air quality: Reduced air pollution from fossil fuel power plants. |  |  |   |   |   |   |
-|  Waste | Increased waste recycling | Financement investissement Coordination, infrastructure | New trash bags separation plant and waste sorting center. |  |  | 1 | Creation of quality green jobs |  |   |
-|   |   |   |  Increased Recycling Rates: Significantly higher recycling rates across different waste streams. | Sorting refusal rate |  |   | Improved health ecosystem |  |   |
-|   |   |   |   |  Recovery rate |  |   | Environmental Protection: Reduce pollution and protect ecosystems. |  |   |
-|   |   |   |   |  Share of households composting |  |   | Climate Change Mitigation: Reduce greenhouse gas emissions from waste disposal. |  |   |
-|   |   |   |   |  Waste recycling |  |   | Public Health: Improve public health by reducing waste-related diseases, improved air quality, improved water quality | Improve public health by reducing waste-related diseases. |   |
-|   |   |   |  Reduced Landfill Waste: Decreased amount of waste sent to landfills. | Tonnage abandoned waste (green resources, bulky items, tyres, residual waste) |  |   |   | Improved air quality. |   |
-|   |   |   |  Resource Conservation: Preservation of natural resources through material recovery. | Tonnes of CO2 equivalent saved by repairing objects |  |   | Improved water quality. |  |   |
-|   |   |   |  New equipment for bio-waste treatment. |  |  |   | Economic Growth | Stimulate the recycling and waste management sector. |   |
-|   |   |   |   |   |   |   |  Resource Efficiency | Optimize resource utilization and reduce waste. |   |
-|   |  Decarbonizing collect activity | Financement investissement, technology, infrastructure | Deployment of the RECYCLO programme. |  |  |  | Creation of quality green jobs |  |   |
-|   |   |   |   |   |   |   |  Improved air quality |  |   |
-|   |   |   |  Reduced Emissions: Significant decrease in greenhouse gas emissions from waste collection. | Greenhouse gas emissions - collection of household waste |  |   | Economic Growth | Stimulate the electric vehicle and clean technology industries. |   |
-|   |   |   |  Increased Efficiency: Optimized collection routes leading to reduced fuel consumption. |  |  |   | Public Health | Improve public health by reducing air pollution. |   |
-|   |   |   |  Improved Air Quality: Lower air pollution levels in urban areas. |  |  |   | Climate Change Mitigation | Contribute to climate change goals by reducing emissions. |   |
-|  Cost Savings: Reduced fuel and maintenance costs. |   |   | Waste Management Budget |  | Resource Efficiency |   | Optimize vehicle utilization and reduce fuel consumption. |   |   |
-|  Positive Public Image: Enhanced reputation as an environmentally responsible organization. |   |   |  |  | Innovation |   | Foster development of new technologies for waste management. |   |   |
+Tableau 8-1.1a - Impact pathways of early changes
+Sector | Subsector | Systemic Levers | Early Changes (1-2 Years) | Indicators | Metrics
+Transport | Reduced motorized passenger transportation need | Urban Planning and Land Use, Active transportation, Economic Development, Pricing and Incentives, technology, Public Transportation, education and awareness | Quick wins : development of pedestrian zones. | T1 - Length of Sidewalk | Km
+Improve public transport: increase frequency and reliability of bus services, especially during peak hours. development of "chrons" bus lines. | T2-Frequency of buses (especially chrono buses) | Bus per minute
+T3- Public transport ridership | Travel by resident
+T4 - Evolution of the number of public transport journey | Number per year
+T5 - Public transport mode share | %
+T6 - Ridership evolution since the implementation of free public transport | %
+T7 - Frequency of buses (especially chrono buses) | Bus per minute
+T8 - Meeting of the territory by the public transport network | nb bus stop/resident, km de network/resident
+T9 - Bike mode share | %
+Develop mobility plans: Create comprehensive mobility plans for the CLID area, encouraging bike use for small distances. | T10 - Share of bike-friendly roads | % of total road km
+Shift to public & non-motorized transport | Urban Planning and Land Use, Public Transportation, Active transportation, Economic Development, Pricing and Incentives, education and awareness, technology | Expand public transport: increase frequency and routes of bus services, especially in underserved areas. First services for new industries "without car parks", targeted actions under the cycling plan (footbridges, etc.). | T9 - Frequency of bus in underserved areas | Bus per minute | 10
+T10 - Share of the population covered by a mobility plan (Number of industries promoting active mobility for employees) | %
+T11 - Length of Sidewalk | Km
+Improve pedestrian infrastructure: Build sidewalks, crosswalks, and pedestrian-friendly zones. Free transport, help with buying a bike, provision of electric and muscle bikes, sustainable mobility package. Chewing up a walking plan | T14 - Area of active mobility and pedestrian-friendly zone | Km²
+T15 - Number of bikes collected and recycled under the RECYCLO programme | Number
+Create bike-sharing systems: Implement bike-sharing programs with sufficient stations and bikes. Eco risks and Recyclo programs. | T16 - Number of bike parking, excluding bike rakes | Number per resident
+T17 - Number of free bike spots | Number
+T18 - Evolution of the number of bike parking, boxes and shelters | Number
+Bus lane : Create lane only for bus, with adapted traffic lights to make bus travels faster and easier. | T19 - Km of lane only for bus | Km
+Increased car pooling | Technology, Infrastructure, Pricing and Incentives, education and awareness, Workplace policies | Launch carpooling platform: Develop a user-friendly platform to connect potential carpoolers. | T20 - Number of citizens registered on the plateforme Pass Pass covidusage | Number
+Offer incentives: Provide financial incentives or rewards for carpooling. | T21 - Number of industries that implement financial incentives for carpooling | Number
+Promote carpooling culture: Launch awareness campaigns highlighting the benefits of carpooling. | T22 - Carpool share | %
+Electrification of cars + motorcycles | Infrastructure, financial, economic development, public awareness, grid integration, technology | Economic cases and capital needs for long term investment planning, mixed funding model to align risks, returns and financial performance. | T24 - Share of class A or B buildings according to the OPE for energy (or equivalent) | Number | 1
+T25 - Return on Investment (ROI) Measures the profitability of an EV electrification project | €/ECO₂ avoided
+Electricity Greater Dunkirk fleet: Replace a portion of the Greater Dunkirk fleet with electric vehicles. | T26 - Number of fossil fueled car changed for electric ones | Number
+T27 - Annual vehicle energy consumption of the collectivity | kWh/an.employee
+Install charging stations: Deploy a network of public charging stations in key locations. | T28 - Share of electric cars in the territory | %
+T29 - Kilometers driven by electric cars | Km
+T30 - Number of parking providing charging stations | Number
+Install charging infrastructure: Build charging stations at bus depots and along key routes. | T31 - Number of electric buses | Number
+T32 - Number of charging station deployed for buses (wharehouse and bus stations) | %
+Electricity | Secure funding: Obtain financial support for electric bus procurement and infrastructure. | T33 - € of grants/subsidies to allow investment in the electrification of bus fleet | €
+T34 - Number of projects financed thanks to subsidies/grants | Number
+Train personnel: Provide training for bus drivers and maintenance staff on electric bus technology. | T35 - Number of people trained | Number
+Gstar-driven optimization: Analyze logistics data to identify inefficiencies and optimize routes. | T36 - km of travels optimized | Km
+Improve last-mile delivery: Optimize delivery processes through technology and alternative delivery methods. Like the NOAA project, but adapted to transport of goods. | T37 - Number of structures with alternative delivery methods | Number
+Collaborate with stakeholders: Establish partnerships to share data and improve efficiency. | T38 - Number of partnership created/improved | Number
+Initiate sustainability measures: Implement eco-friendly practices in transportation and packaging | T39 - Number of companies using transportation and packaging innovation | Number
+Building renovations (envelope) | Technology, finances, regulations, public awareness | Incentive programs: Launch financial incentive programs for building envelope renovations (MAHrmellenov). | BHI - Applications filed at the Anah | Number
+BH2 - Number of accompanied households in the rehabilitation of their accomodations | Number
+BH3 - Number of accomodations energetically renovated | % of renovated housing
+BH4 - Financial aids attributed | €
+BH5 - Amount attributed to energical renovation under the écohabitat programme | € per year
+BH6 - Amount of aid attributed by the CUD to each city for energetic renovation | € per municipality
+BH7 - Energetic expenses of the CUD - buildings | €
+BH8 - Share of buildings energy-tested | %
+Regulatory framework: Develop and implement updated building energy efficiency standard (RE2020). | BH9 - Energetic consumption of public buildings | MWh/m2
+BH10 - Share of class A or B public buildings according to the DPE (energy) | %
+Awareness campaigns: Initiate public education campaigns on the importance of building envelopes. | BH11 - Number of owners made aware of the benefits of housing improvement | Number
+Gradual renovation of social housing for low-energy housing. | BH12 - Number of accomodation energetically renovated | Number
+BH13 - Tonnes CO2e saved per year through housing rehabilitation | teq CO2
+BH14 - Valuation of energy vouchers | kWhcumac valued per year
+Pilot projects: Conduct pilot renovation projects to demonstrate the benefits and challenges. | BH15 - Number of pilot renovation projects studied | Number
+Buildings & Heating | New energy efficient buildings | Technology, infrastructure, finances, regulation | Updated building codes: Implement stricter energy efficiency standards for new buildings. | BH16 - Share of class A or B buildings according to the DPE (or equivalent) | %
+Incentive programs: Launch financial incentive programs for energy-efficient construction. Offering subsidies, tax breaks, or low-interest loans for energy-efficient construction. | BH17 - Share of eligible projects that participate in the incentive programs | %
+BH18 - Funds invested thanks to the incentive | €
+BH19 - Total energy savings achieved by projects that have received incentives. | MWh
+Training initiatives: Develop and deliver training programs for the construction industry. Providing training for architects, engineers, and builders on energy-efficient design and construction. | BH20 -Share of eligible professionals who participate in the training programs | %
+Pilot projects: Showcase energy-efficient building projects to demonstrate feasibility. | BH21 - Number of pilot projects | % before and after
+Efficient lighting & appliances | Technology, infrastructure, finances, regulation | Enforce efficiency standards: Strictly enforce energy efficiency standards for lighting and appliances. | BH22 - Share of products on the market that meet or exceed energy efficiency standards. | %
+Public Awareness Campaigns: Initiate campaigns to inform consumers about energy savings. | BH23 - Residents' awareness of energy efficiency standards and the benefits of energy-efficient products. | Number
+Labeling improvements / Communication: Enhance energy efficiency labels for clarity and comprehensibility. | BH24 - Surveys to assess consumers' understanding of energy efficiency labels. | Number of consumers
+Decarbonizing heating generation | Infrastructure, financial, economic development, public awareness, grid integration, technology | Policy framework: Develop and implement clear policy and regulatory frameworks for low-carbon heating. | BH25 - Renewable energy production rates for heating and cooling in the territory
+BH26 - Coverage rate of the territory's heat needs (residential and tertiary) by ENR&R heat networks | %
+Pilot projects: Conduct pilot projects to demonstrate the feasibility and benefits of low-carbon heating. | BH27 - Share of of successful implementation of low-carbon heating technologies in pilot projects. | %
+BH28 - Cost-effectiveness of low-carbon heating solutions compared to traditional heating methods. | € per kgCO2 emission avoided
+BH29 - Number of successful replication of elements of pilot projects in other regions or contexts. | Number
+Consumer Education Campaigns: Initiate public awareness campaigns about the importance of decarbonizing heating. | BH30 - Share of people switching to low-carbon heating technologies
+Increase the proportion of renewable energy / industrial waste heat in district heating networks / ambitious development policy. | BH31 - Coverage of the territory's heat needs by ENR&R heat networks | %
+BH 32 - Share of renewable energy production for heating and cooling in the territory | %
+BH33 - Share of renewable energy production | %
+BH34 - Connected capacity and number of subscribers | Number
+BH35 - Valuation of energy vouchers | kWhcumac valued / year
+Energy systems | Decarbonizing electricity generation | Technology, policy, economic development, infrastructure, innovation | Policy framework: Establish clear and ambitious decarbonization targets and policies. | El - Share of renewable energy production | % | 30
+E2 - Annual greenhouse gas emissions from the territory | teq CO₂/resident
+Renewable energy incentives: Introduce or expand financial incentives for solar, wind, and other renewable energy projects. | E3 - Climate-air-energy policy budget | € per resident per year
+Grid upgrades: Identify and initiate grid modernization projects to accommodate increased renewable energy. | El - Share of renewable energy production | %
+Technology demonstration: Support pilot projects for emerging low-carbon technologies. | E4 - Cost-effectiveness of grid modernization projects | € per kgCO₂ emission avoided
+E5 - Budget allocated studies/expertise/MDE/renewable energies/air quality/climate change adaptation | €
+Waste | Increased waste recycling | Financement investissement Coordination, infrastructure | Infrastructure Upgrades: Improve recycling collection and sorting facilities. Out-of-home waste sorting introduced at 100% public space as home. | W1 - Waste recycling | % | 1
+W2 - Recyclable waste | Tonnes per year per resident
+W3 - Waste recovery rate | %
+W4 - Sorting error rate | %
+W5 - Recycling quality: Evaluate the quality of recycled materials (e.g., cleanliness, purity).
+Public Awareness Campaigns: Launch educational campaigns on waste reduction and recycling. Strategy for bio-waste reduction (compost promotion, education plan...). | W6 - Numbers of classes and students made aware to sorting | Number
+W7 - Number of households made aware of sorting by counselors | Number
+W8 - Share of households practicing composting | %
+W9 - Share of households willing to throw their waste in a recycling center so that it can be repaired and reused | %
+W10 - Share of public satisfaction with the recycling facilities and services | %
+Community plan for fighting against abandoned waste. | W11 - Abandoned waste (green resources, bulky waste, tires, residual waste) | Tonnes per year
+W12 - Waste by waste recovery method (green resources, bulky waste, tires, residual waste) | Tonnes by recovery method
+Circular Economy Development: Promotion of a circular economy model. | W13 - Number of items repaired during Repair café sessions | Number
+Circular Economy Development: Promotion of a circular economy model. | W14 - Tonnes of CO₂e saved thanks to the repair of items | teq CO₂
+Decarbonizing collect activity | Financement investissement, technology, infrastructure | New contrat for bicycle waste collect. | W15 - Number of bikes rented under the RECYCLO programme | Number
+Vehicle Assessment: Identify high-emission vehicles in the fleet and prioritize electrification. Experiment motor retrofit (Hydrogen) and first charging point (Electric). | W16 - Composition of collection fleet | Number
+Route Optimization Pilot: Test route optimization software in select areas. | W17 - Number of collections provided by the new services | Number
+W18 - Fuel consumption of collection vehicules | Liter
+Public Awareness Campaigns: Promote waste reduction and recycling to decrease collection volume. | W19 - Household and assimilate waste production (excluding debris) | kg/resident
+W20 - Residual household waste production | kg/resident
+W21 - Occasional waste production | kg/resident
+W22 - Production of selectively collected waste | kg/resident
+W23 - Waste collected | Tonnes
+Charging Infrastructure: Install charging stations at waste collection depots. | W24 - Number of charging station for the collection fleet | Number
+Factor | Subsector | Systemic Level | Late Outcomes (2-4 years) | Indicators | Metrics | Source (mean or range of outcomes) and confidence interval (95% CI) | Outlook (mean or range of outcomes) | Details of Indicators | metrics
+Transport | Reduced motorized passenger transportation need | Urban-Ronning and Land Use, Active transportation, Economic Development, Pricing and Incentives, Technology, Public Transportation, education and awareness | Reduced car ownership: Measurable decrease in car ownership rates. | TLO1 - Household vehicle equipment | % | 20 | Economic growth | Share of new jobs related to transport sector (Stimulate local economies by creating jobs in public transport sector). | %
+T3 - Public transport ridership | Travel by resident | Share of new jobs related to cycling sector (Stimulate local economies by creating jobs in cycling sectors). | %
+T4 - Evolution of the number of public transport journey | Number per year | Social equity | Employment rate (Improve access to jobs for people without cars). | Number
+T5 - Public transport mode share | % | Share of student using only public transport or active mobility to go the school/university (Improve access to education for people without cars). | % | %
+T6 - Public transport mode share | % | Class unemployment. | % | %
+T7 - Public transport mode share | % | Climate change mitigation | Reduce greenhouse gas emissions and contribute to climate change goals. | ICO,eq avoided by active mobility incentives and public transport
+T8 - Bike mode share | % | PUBLIC health | Improve public health by reducing noise pollution, and physical inactivity. | dE(k)
+T9 - Bike mode share | % | Land use efficiency | Share of land use for parking space use only (Optimise land use by reducing the need for extensive parking spaces). | %
+T10 - Roadway | % | % | 10 | Share of people having access to healthcare (Improve access to healthcare for people without cars).
+Transport | Shift to public & non-motorized transport | Urban-Ronning and Land Use, Public Transportation, Active transportation, Economic Development, Pricing and Incentives, education and awareness, technology | Reduced car dependency: Measurable decrease in car ownership and usage. | TLO3 - Car ownership | % | 10 | Economic growth | Share of new jobs related to transport sector (Stimulate local economies by creating jobs in public transport sector). | %
+Increased public transport ridership: Significant growth in public transport users. | T3 - Public transport ridership | Travel by resident | Share of new jobs related to cycling sector (Stimulate local economies by creating jobs in cycling sectors). | %
+Reduced traffic congestion: Less crowded roads and improved travel times. | TLO4 - road congestion and travel time | time per km | Share of new jobs related to urban development sector (Stimulate local economies by creating jobs in urban development sectors). | Number
+Increased cycling and walking rates: Higher percentage of people choosing active modes for short trips. | T9 - Bike mode share for short trips | % | Employment rate (Improve access to jobs for people without cars). | %
+TLO6 - walking mode share for short trips | % | Social equity | Share of people having access to healthcare (Improve access to healthcare for people without cars). | %
+Improved air quality: Reduced levels of air pollution and greenhouse gas emissions. | TLO7 - SHS emission of transportation | ICO,eq emission of transportation | Share of student using only public transport or active mobility to go the school/university (Improve access to education for people without cars). | %
+Increased car pooling | % | Less unemployment. | % | %
+Increased carpool usage: Significant increase in the number of people carpooling. | T10 - Number of people subscribed and using the Passifree plateform. | Climate change mitigation | Reduce greenhouse gas emissions and contribute to climate change goals. | ICO,eq avoided by active mobility incentives and public transport
+Cost savings: Financial benefits for carpoolers through shared expenses. | TLO8 - savings for residents thanks to carpooling | Improve public health by reducing air pollution. | μg/m3 of PME,5, PME, O3, NO2, and NOx | μg/m3 of PME,5, PME, O3, NO2, and NOx
+Lowered emissions: Reduced greenhouse gas emissions and improved air quality. | TLO9 - air quality | TLO1 - SHS emission of transportation | ICO,eq emission of transportation | Improve public health by reducing noise pollution, and physical inactivity. | dE(k)
+Reduced traffic congestion: Decreased traffic volume and improved travel times. | TLO10 - Average annual daily traffic by municipality (TL) | Improve public health by reducing physical inactivity.
+Electricity | Electricity | Stronger social connections: Increased opportunities for social interaction among carpoolers. | Stronger social connections: Increased opportunities for social interaction among carpoolers. | TLO10 - Number of people in carpooling cars | Land use efficiency. | Share of land use for parking space use only (Optimise land use by reducing the need for extensive parking spaces). | %
+Technological advancements: Advancements in battery technology and charging infrastructure. | TLO1 - Number of electric vehicle technology related industries on the territory (Promote innovation in electric vehicle technology) | 1 | Economic growth | Stimulate the EV industry and related sectors.
+Job creation: Growth in the EV charging and maintenance sector. | TLO10 - Share of electric cars in the territory (Reduce reliance on foreign oil) | Energy independence | Share of electric cars (Reduce reliance on foreign oil). | %
+Reduced dependence on fossil fuels: Decreased reliance on imported oil. | TLO10 - Share of electric cars in the territory (Reduce reliance on foreign oil) | Public health | Improve public health by reducing air pollution. | μg/m3 of PME,5, PME, O3, NO2, and NOx
+Reduced emissions: Lower greenhouse gas emissions and improved air quality. | TLO14 - Annual vehicle Energy Consumption | Climate change mitigation | Reduce greenhouse gas emissions and contribute to climate change goals. | ICO,eq avoided by switching to electric cars
+Electricity | Increased EV adoption: Significant growth in the number of electric vehicles on the road. | TLO15 - Share of electric cars in the territory (Improve access to the energy and maintenance sector) | Technological leadership | Share of pilot project replicated outside Greater Guntola territory (Position the region as a leader in electric vehicle technology) | %
+Transport | Electricification of buses | Infrastructure, financial, economic development, public awareness, grid integration, technology | Significant EV bus fleet: A substantial portion of the bus fleet is electrified. | TLCR5 - Number of electric buses | 0 | Economic growth | Share of new jobs related to transport sector (Stimulate local economies by creating jobs in public transport sector). | %
+Improved air quality: Reduced emissions and improved air quality in urban areas. | TLCR1 - air quality | μg/m3 of PM2.5, PM10, O3, NO2 and Nox | Share of new jobs related to cycling sector (Stimulate local economies by creating jobs in cycling sectors). | %
+Improved air quality: Reduced emissions and improved air quality in urban areas. | TLCR7 - GHG emission of transportation | ICO_eq emission of transportation | Share of new jobs related to urban development sector (Stimulate local economies by creating jobs in urban development sectors). | Number
+Reduced noise pollution: Quieter buses contribute to a better living environment. | TLCR8 - Noise pollution | dB(A) | Climate change mitigation | Reduce greenhouse gas emissions and contribute to climate change goals. | ICO_eq of public transport
+Energy cost savings: Potential reduction in spending costs due to lower electricity prices compared to diesel. | T21: Return on investment (ROI) Measures the profitability of an EV electrification project. | € of EV buses functionment / € fossil fueled buses functionment | Public health | Improve public health by reducing air pollution. | μg/m3 of PM2.5, PM10, O3, NO2 and Nox
+Positive public perception: Increased public support for public transportation due to cleaner and quieter buses. | T4 - Evolution of the number of public transport journey | Number per year | Technological advancement | Improve public health by reducing noise pollution, and physical inactivity. | dB(A)
+Optimized logistics | Technology, finances, infrastructure | Reduced transportation costs: Significant reduction in logistics expenses through optimization. | T29: km of travels optimized | 58 | Economic growth | Evolution of transportation costs (Increased efficiency and competitiveness for businesses). | €
+Improved delivery times: Faster and more reliable delivery services. | Job creation | Innovative solution developed on Greater Quaintra territory (New opportunities in logistics technology and sustainable transportation). | Number
+Lowered environmental impact: Reduced carbon emissions and waste generation. | Urban development | Improved urban logistics and reduced traffic congestion.
+Enhanced supply chain visibility: Real-time tracking and improved supply chain management. | Resource conservation | Optimized resource utilization and reduced waste.
+Building renovations (envelope) | Technology, finances, regulations, public awareness | Improved energy efficiency: Significant reduction in energy consumption for heating and cooling. | Share of renewable energy production for heat and cooling in the territory | Economic Growth | Stimulate the construction and renovation industry.
+Reduced carbon emissions: Lower greenhouse gas emissions from buildings. | Energy consumption of public buildings | Climate Change Mitigation | Contribute to climate change goals by reducing energy consumption.
+Increased property values: Enhanced property values due to improved energy efficiency. | Public health | Improve public health by reducing exposure to indoor air pollutants.
+Improved indoor air quality: Better indoor living conditions through improved insulation and ventilation. | Energy Security | Reduce dependence on fossil fuels.
+Progressive eradication of thermal flows in social and private housing in the Dunkirk area. | Social Equity | Enhance the comfort and well-being of building occupants.
+New energy efficient buildings | Technology, infrastructure, finances, regulation | Reduced energy consumption: Significantly lower energy consumption in new buildings. | Share of class A or B buildings according to the DPE for energy (or equivalent) | 2 | Economic Growth | Stimulate the construction and renovation industry.
+Lowered carbon emissions: Reduced greenhouse gas emissions from the building sector. | Climate Change Mitigation | Contribute to climate change goals by reducing energy consumption.
+Public health | Improve public health by reducing exposure to indoor air pollutants.
+Energy Security | Reduce dependence on fossil fuels.
+Improved indoor air quality: Enhanced indoor living and working conditions. | Social Equity | Enhance the comfort and well-being of building occupants.
+Effect of lighting & appliances | Technology, infrastructure, finances, regulation | Increased market for energy-efficient technologies: Growth in the market for energy-efficient building materials and systems. | Attractiveness of the town centre.
+Enhanced building performance: Improved durability, resilience, and comfort of new buildings. | Lower energy bills for individuals.
+Reduced energy consumption: Significant decrease in energy consumption for lighting and appliances. | Economic Growth | Stimulate the construction and renovation industry.
+Lowered electricity bills: Reduced energy costs for consumers. | Drewnhouse gas emissions | 3 | Climate Change Mitigation | Contribute to climate change goals by reducing energy consumption.
+Public Health | Improve public health by reducing exposure to indoor air pollutants.
+Efficient lighting & appliances | Technology, infrastructure, finances, regulation | Improved air quality: Decreased greenhouse gas emissions. | Economic Growth | Stimulate the construction and renovation industry.
+Consumer Behavior Change: Increased adoption of energy-saving habits. | Social Equity | Attractiveness of the town centre.
+Lower energy bills for individuals.
+Buildings & Heating | Decarbonizing heating generation | Infrastructure, financial, economic development, public awareness, grid integration, technology | Reduced GHG emissions: Significant reduction in carbon emissions from heating. | Greenhouse Gas Emissions - Residential | Economic Growth | Stimulate the construction and renovation industry.
+Increased Adoption of Low-Carbon Heating: Widespread adoption of heat pumps, biomass boilers, and other low-carbon heating systems. | Share of coverage of the territory's heat needs (residential and tertiary) by renewable energy heating networks | Climate Change Mitigation | Contribute to climate change goals by reducing energy consumption.
+Improved air quality: Reduced air pollution from fossil fuel combustion. | Public Health | Improve public health by reducing exposure to indoor air pollutants.
+Energy Security: | Reduce dependence on fossil fuels.
+Social Equity | Enhance the comfort and well-being of building occupants.
+Attractiveness of the town centre.
+Achieve 100% renewable energy in the grid by 2030. | Share of Renewable Energy Production | Lower energy bills for individuals.
+Energy Safety | Decarbonizing electricity generation | Technology, policy, economic development, infrastructure, innovation | Reduced GHG emissions: Significant reduction in carbon emissions from electricity generation. | Share of Renewable Electricity Generation | 30 | Public health | Improve public health by reducing exposure to indoor air pollutants.
+Greenhouse gas emissions - energy sector
+Annual greenhouse gas emissions of the territory per capita
+Increased Renewable Energy Share: Substantial growth in renewable energy capacity and generation. | Share of renewable electricity production in the territory
+Improved air quality: Reduced air pollution from fossil fuel power plants.
+Waste | Increased waste recycling | Financement investissement Coordination, infrastructure | New trash bags separation plant and waste sorting center. | 1 | Creation of quality green jobs
+Increased Recycling Rates: Significantly higher recycling rates across different waste streams. | Sorting refusal rate | Improved health ecosystem
+Recovery rate | Environmental Protection: Reduce pollution and protect ecosystems.
+Share of households composting | Climate Change Mitigation: Reduce greenhouse gas emissions from waste disposal.
+Waste recycling | Public Health: Improve public health by reducing waste-related diseases, improved air quality, improved water quality | Improve public health by reducing waste-related diseases.
+Reduced Landfill Waste: Decreased amount of waste sent to landfills. | Tonnage abandoned waste (green resources, bulky items, tyres, residual waste) | Improved air quality.
+Resource Conservation: Preservation of natural resources through material recovery. | Tonnes of CO2 equivalent saved by repairing objects | Improved water quality.
+New equipment for bio-waste treatment. | Economic Growth | Stimulate the recycling and waste management sector.
+Resource Efficiency | Optimize resource utilization and reduce waste.
+Decarbonizing collect activity | Financement investissement, technology, infrastructure | Deployment of the RECYCLO programme. | Creation of quality green jobs
+Improved air quality
+Reduced Emissions: Significant decrease in greenhouse gas emissions from waste collection. | Greenhouse gas emissions - collection of household waste | Economic Growth | Stimulate the electric vehicle and clean technology industries.
+Increased Efficiency: Optimized collection routes leading to reduced fuel consumption. | Public Health | Improve public health by reducing air pollution.
+Improved Air Quality: Lower air pollution levels in urban areas. | Climate Change Mitigation | Contribute to climate change goals by reducing emissions.
+Cost Savings: Reduced fuel and maintenance costs. | Waste Management Budget | Resource Efficiency | Optimize vehicle utilization and reduce fuel consumption.
+Positive Public Image: Enhanced reputation as an environmentally responsible organization. | Innovation | Foster development of new technologies for waste management.
 This table will be enhanced soon through a major initiative: Optimization of public policy evaluation indicators at the territorial level.
 
 Greater Dunkirk has chosen to work on a research and development action led by the Institut Efficacity, funded by the French National Research Agency, to support the operational and strategic management of the territorial project. This action stems from the observation that the territorial project is an "integrative" document that federates and enhances all the community's roadmaps. However, the current siloed operation complicates reporting and access to data. The needs identified by the services are strong, both in terms of needs, expectations, and requests. Indicator reports can be random or confined to the service with a regulatory duty, while sharing or making data available remains marginal. The implementation of a support tool for "reconnecting indicators" should help to contribute to the technical and political management of the territorial project in synergy with the other roadmaps of the community. This approach aims for more efficient data management to meet a process of sharing and mutualization, but also to target relevant macro-indicators for Greater Dunkirk.
@@ -1901,44 +1888,42 @@ A set of 10000000000000000000000000000000000000000000000000000000000000000000000
 A set of 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 The actions of the Territorial Climate-Air-Energy Plan (PCAET) presented in the CCC are outlined in a general manner, without mentioning the names of the project leads or the elected officials in charge of the actions. These personal details are intentionally omitted to ensure neutrality and avoid confusion, as the major deadlines do not align: the CCC extends until 2030, the PCAET is set for 2028, and the municipal elections will take place in 2026. Additionally, the CUD (Communauté Urbaine de Dunkerque) is the French version of 'Greater Dunkirk.'
 
-|  Axis 1 | An exemplary community in terms of climate and energy transition  |   |   |
-| --- | --- | --- | --- |
-|  Action 1 | Setting up energy and GHG emissions accounting for public buildings  |   |   |
-|  Objectives | GHG reduction / Energy sobriety / Awareness raising  |   |   |
-|  Context of the action | The local authority has an energy and technical assessment of all significant buildings and public facilities. This report includes information on energy consumption, greenhouse gases, renewable energies and indoor air quality.
+Axis 1 | An exemplary community in terms of climate and energy transition
+Action 1 | Setting up energy and GHG emissions accounting for public buildings
+Objectives | GHG reduction / Energy sobriety / Awareness raising
+Context of the action | The local authority has an energy and technical assessment of all significant buildings and public facilities. This report includes information on energy consumption, greenhouse gases, renewable energies and indoor air quality.
 The local authority has set up a system for regularly monitoring the energy consumption of its municipal buildings and equipment (including an energy accounting tool by use to monitor consumption over time, in particular with smart meters), allowing the optimisation of its operation.
 The CUD has already organised itself to regularly monitor the energy consumption of the built heritage and has already carried out a complete assessment of its heritage. Above all, it will be a question of maintaining a good knowledge of energy consumption to optimize/reduce it.  |   |   |
-|  Sub- actions | • Continue to set up an initial knowledge base on one's assets
+Sub- actions | • Continue to set up an initial knowledge base on one's assets
 • Monitor regular and multi-flow consumption
 • Expand the perimeter of the buildings considered
 • Optimize the monitoring, maintenance and operation of technical installations
 • Communicate to agents the consumption of buildings and eco-gestures
 • Identify the potential for savings (energy and cost) and development of renewable energies  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept of charge | Buildings and Maintenance Dept  |   |   |
-|  Related policies | Label TETE - CAE  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | • Share of public buildings that have been the subject of an energy diagnosis (TETE-CAE Label)
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept of charge | Buildings and Maintenance Dept
+Related policies | Label TETE - CAE
+Action tracking
+Numerical monitoring indicator and refresh frequency | • Share of public buildings that have been the subject of an energy diagnosis (TETE-CAE Label)
 • Share of buildings with energy label display (DISPLAY, DPE or others, etc.)
 • Share of buildings with a maintenance and operation contract with a performance guarantee and/or profit-sharing variants
 • Energy expenditure - buildings (euros) (TETE-CAE label)  |   |   |
-|  Impact indicator and refresh rate | • Evolution of energy consumption (kWh) over a given period in %
+Impact indicator and refresh rate | • Evolution of energy consumption (kWh) over a given period in %
 • Evolution of energy expenditure (Euros) over a given period in %
 • Evolution of GHG emissions (teeqCO2) over a given period in %  |   |   |
-|  Funding terms |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners |   |   |   |
-|  Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 3  |
+Funding terms
+Planned budget
+Financial partners
+Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 3
 
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan – Greater Dunkirk
 
-|  Axis 1 | An exemplary community in terms of climate and energy transition  |   |   |
-| --- | --- | --- | --- |
-|  Action 2 | Develop a heritage strategy including a renovation programme over the duration of the implementation of the PCAET  |   |   |
-|  Objectives | GHG reduction / Energy sobriety  |   |   |
-|  Context of the action | The local authority formulates a heritage strategy that makes it possible to plan and phase its development over 5 or 10 years (extension, rehabilitation, demolition, reassignment, sale, etc.), in line with the objectives of reducing GHG emissions and energy consumption of its buildings. This strategy is more specifically broken down into a renovation programme taking into account:
+Axis 1 | An exemplary community in terms of climate and energy transition
+Action 2 | Develop a heritage strategy including a renovation programme over the duration of the implementation of the PCAET
+Objectives | GHG reduction / Energy sobriety
+Context of the action | The local authority formulates a heritage strategy that makes it possible to plan and phase its development over 5 or 10 years (extension, rehabilitation, demolition, reassignment, sale, etc.), in line with the objectives of reducing GHG emissions and energy consumption of its buildings. This strategy is more specifically broken down into a renovation programme taking into account:
 ambitious climate-air-energy performance criteria
 Optimising the use of assets (pooling/grouping)
 monitoring methods to maintain performance over time
@@ -1949,32 +1934,31 @@ Contracting methods such as the energy performance contract (global energy perfo
 the expected gains in terms of climate change mitigation, adaptation to climate change, improvement of indoor and outdoor air quality
 The local authority carefully studies the needs of the buildings to avoid any oversizing of heating, hot water, ventilation and, where appropriate, cooking and refrigeration equipment during equipment replacements and building renovations.
 The CUD has recorded the political will to set up a heritage strategy or a renovation plan (political deliberation; budgetary decision (works budget or engineering envelope for external service to develop the strategy); allocation of human resources internally). It has also implemented a strategy to rationalise its assets (technical inventory, strategy, control of the surface areas of the local authority's assets or even reduction)  |   |   |
-|  Sub- actions | • Be ambitious and operational in the renovation strategy (long-term (2050) and short-medium-term (2030) objectives, target trajectory, action programme with emergency measures, long-term; PPI; renovation at least BBC renovation)
+Sub- actions | • Be ambitious and operational in the renovation strategy (long-term (2050) and short-medium-term (2030) objectives, target trajectory, action programme with emergency measures, long-term; PPI; renovation at least BBC renovation)
 • Develop the strategy in a cross-cutting climate-air-energy approach
 • Study innovative means of financing for the implementation of the multi-year work plan
 • Monitor and adapt the multi-year work plan  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept of charge | Building and Maintenance Dept / Sustainable City Dept (heritage Dept)  |   |   |
-|  Related policies | Label TETE - CAE  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | • Annual budget for renovation work/m2 of the heritage
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept of charge | Building and Maintenance Dept / Sustainable City Dept (heritage Dept)
+Related policies | Label TETE - CAE
+Action tracking
+Numerical monitoring indicator and refresh frequency | • Annual budget for renovation work/m2 of the heritage
 • Energy savings and GHG reductions generated by the work carried out (precise monitoring, on the buildings on which work has been carried out)
 • Financial savings achieved in the year following the change, and/or average savings over 3 years (to account for possible variations due to external factors)
 • Number of renovated buildings BBC out of the total number of renovated buildings  |   |   |
-|  Impact indicator and refresh rate | • Evolution of energy consumption for renovated buildings
+Impact indicator and refresh rate | • Evolution of energy consumption for renovated buildings
 • Evolution of the surface area of the community's-built heritage  |   |   |
-|  Funding terms |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners |   |   |   |
-|  Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 2  |
+Funding terms
+Planned budget
+Financial partners
+Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 2
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 1 | An exemplary community in terms of climate and energy transition  |   |   |
-| --- | --- | --- | --- |
-|  Action 3 | To be exemplary on new and renovated public buildings by defining a common ambition  |   |   |
-|  Objectives | GHG reduction / Energy sobriety / Development of renewable and recovered energies / reduction of air pollutants and population exposure / adaptation of the territory to climate change / awareness-raising  |   |   |
-|  Context of the action | The local authority defines performance levels for the construction and renovation of public buildings concerning:
+Axis 1 | An exemplary community in terms of climate and energy transition
+Action 3 | To be exemplary on new and renovated public buildings by defining a common ambition
+Objectives | GHG reduction / Energy sobriety / Development of renewable and recovered energies / reduction of air pollutants and population exposure / adaptation of the territory to climate change / awareness-raising
+Context of the action | The local authority defines performance levels for the construction and renovation of public buildings concerning:
 the efficient use of electricity;
 the minimum level in terms of thermal performance and renewable energies;
 the health and environmental quality of buildings (in particular indoor air quality);
@@ -1983,67 +1967,65 @@ adaptation to climate change, and in particular summer comfort;
 Green construction in procurement.
 The impacts, particularly economic, of climate change must be taken into account in establishing these levels of construction performance.
 These performance levels are applied in practice to exemplary renovation or construction projects with a high level of climate-air-energy performance.  |   |   |
-|  Sub- actions | • Deliberate and record performance levels in a framework document
+Sub- actions | • Deliberate and record performance levels in a framework document
 • Define rules for the use of public buildings
 • Define ambitious performance levels
 • Construct or renovate one or more exemplary buildings
 • Integrate these performance levels into calls for tenders
 • To generalize exemplary operations and disseminate good practices  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept of charge | Building and Maintenance Dept
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept of charge | Building and Maintenance Dept
 Public procurement
 Sustainable City Dept (indoor air quality)
 Quality of Life Environment Dept (indoor air quality)  |   |   |
-|  Related policies | Label TETE - CAE  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | Number of new buildings labelled E+C- out of the total number of buildings built  |   |   |
-|  Impact indicator and refresh rate | Medium-term evolution of the energy performance of the CUD portfolio  |   |   |
-|  Funding terms |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners |   |   |   |
-|  Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 2  |
+Related policies | Label TETE - CAE
+Action tracking
+Numerical monitoring indicator and refresh frequency | Number of new buildings labelled E+C- out of the total number of buildings built
+Impact indicator and refresh rate | Medium-term evolution of the energy performance of the CUD portfolio
+Funding terms
+Planned budget
+Financial partners
+Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 2
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 1 | An exemplary community in terms of climate and energy transition  |   |   |
-| --- | --- | --- | --- |
-|  Action 4 | Increasing energy efficiency for heat, cooling and electricity in public buildings  |   |   |
-|  Objectives | GHG reduction / Energy sobriety  |   |   |
-|  Context of the action | The local authority implements an energy sobriety approach, systematizes energy efficiency for heating, hot water and cooling of its buildings and evaluates it by means of energy indicators for different categories of buildings.
+Axis 1 | An exemplary community in terms of climate and energy transition
+Action 4 | Increasing energy efficiency for heat, cooling and electricity in public buildings
+Objectives | GHG reduction / Energy sobriety
+Context of the action | The local authority implements an energy sobriety approach, systematizes energy efficiency for heating, hot water and cooling of its buildings and evaluates it by means of energy indicators for different categories of buildings.
 The local authority shall develop energy efficiency for the use of electricity in its buildings and evaluate it by means of energy indicators for different categories of buildings.  |   |   |
-|  Sub- actions | - Implement sobriety actions to limit heating, air conditioning and electricity needs
+Sub- actions | - Implement sobriety actions to limit heating, air conditioning and electricity needs
 Monitor indicators in kWh/m2/year of primary energy by building categories for heating/cooling uses, for electrical uses and compare them with local reference values
 Implement and monitor energy efficiency actions for specific assets
 Continue to renovate the most energy-intensive buildings
 To note the decrease in the overall average consumption of public buildings  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept of charge | Building and Maintenance Dept
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept of charge | Building and Maintenance Dept
 Sustainable City Directorate ("greening" of the RCU)  |   |   |
-|  Related policies | Label TETE - CAE  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | - Share of public buildings of class F or G according to the DPE for energy (or equivalent) (TETE-CAE label)
+Related policies | Label TETE - CAE
+Action tracking
+Numerical monitoring indicator and refresh frequency | - Share of public buildings of class F or G according to the DPE for energy (or equivalent) (TETE-CAE label)
 Share of public buildings of class A or B according to the DPE for energy (or equivalent) (TETE-CAE label)  |   |   |
-|  Impact indicator and refresh rate | - Final energy consumption of public buildings (MWh) (TETE-CAE label)
+Impact indicator and refresh rate | - Final energy consumption of public buildings (MWh) (TETE-CAE label)
 Final energy consumption of public buildings (in relation to the number of inhabitants, in kWh/inhabitant) (TETE-CAE label)
 Final energy consumption of public buildings (in relation to the surface area of the property, in kWh/m²) (TETE-CAE Label)  |   |   |
-|  Funding terms |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners | ADEME Fond chaleur  |   |   |
-|  Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 3  |
+Funding terms
+Planned budget
+Financial partners | ADEME Fond chaleur
+Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 3
 
 2
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan – Greater Dunkirk
 
-|  Axis 1 | An exemplary community in terms of climate and energy transition  |   |   |
-| --- | --- | --- | --- |
-|  Action 5 | Increasing the share of renewable energy consumption in public buildings  |   |   |
-|  Objectives | Development of renewable and recovered energies  |   |   |
-|  Context of the action | The local authority increases and measures the share of heat and cooling from renewable sources and recovery in the consumption of its buildings and equipment, with attention to the quality of the outdoor air. It is a question of prioritizing local, low-emission sources and distribution via virtuous heating/cooling networks when possible.
+Axis 1 | An exemplary community in terms of climate and energy transition
+Action 5 | Increasing the share of renewable energy consumption in public buildings
+Objectives | Development of renewable and recovered energies
+Context of the action | The local authority increases and measures the share of heat and cooling from renewable sources and recovery in the consumption of its buildings and equipment, with attention to the quality of the outdoor air. It is a question of prioritizing local, low-emission sources and distribution via virtuous heating/cooling networks when possible.
 The local authority is increasing and measuring the share of renewable electricity in the consumption of its buildings and equipment, primarily through the commissioning of wind, photovoltaic and hydraulic energy production facilities, etc. but also through the purchase of renewable electricity.
 
 As part of the call for contributions launched under the PCAET by Greater Dunkirk on the Internet platform Changer la vie ensemble, the municipality of Bray-Dunes is proposing the installation of a photovoltaic roof on the Deswarte school complex. As part of the overall rehabilitation and energy renovation of the Deswarte school group, a project to install 58 photovoltaic panels for self-consumption should make it possible to cover about 1/4 of the electricity consumption of the school group  |   |   |
-|  Sub- actions | • Continue to use renewable and local recovered energies as a priority (depending on the deposit)
+Sub- actions | • Continue to use renewable and local recovered energies as a priority (depending on the deposit)
 • If the local authority has wood-fired boilers for its buildings and equipment, favour certified wood
 • Take air quality into account in your choices
 • Monitor and achieve a significant Share of renewable and recovered energy for the heating and cooling of public buildings
@@ -2052,121 +2034,117 @@ As part of the call for contributions launched under the PCAET by Greater Dunkir
 • Achieve a high share of renewable electricity generated by community facilities
 • Purchase renewable electricity
 • Support and accompany the municipalities' projects in terms of the installation of renewable electricity production devices  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept of charge | Building and Maintenance Dept
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept of charge | Building and Maintenance Dept
 Sustainable City Dept (Energy Transition, Climate and Air Dept)  |   |   |
-|  Related policies | Label TETE - CAE  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | • Share of public buildings of class F or G according to the DPE for energy (or equivalent) (TETE-CAE label)
+Related policies | Label TETE - CAE
+Action tracking
+Numerical monitoring indicator and refresh frequency | • Share of public buildings of class F or G according to the DPE for energy (or equivalent) (TETE-CAE label)
 • Share of public buildings of class A or B according to the DPE for energy (or equivalent) (TETE-CAE label)  |   |   |
-|  Impact indicator and refresh rate | • Final energy consumption of public buildings (MWh) (TETE-CAE label)
+Impact indicator and refresh rate | • Final energy consumption of public buildings (MWh) (TETE-CAE label)
 • Final energy consumption of public buildings (in relation to the number of inhabitants, in kWh/inhabitant) (TETE-CAE label)
 • Final energy consumption of public buildings (in relation to the surface area of the property, in kWh/m²) (TETE-CAE Label)  |   |   |
-|  Funding terms |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners | ADEME Fond chaleur  |   |   |
-|  Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 3  |
+Funding terms
+Planned budget
+Financial partners | ADEME Fond chaleur
+Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 3
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 1 | An exemplary community in terms of climate and energy transition  |   |   |
-| --- | --- | --- | --- |
-|  Action 6 | Limiting greenhouse gas emissions from public buildings  |   |   |
-|  Objectives | GHG reduction  |   |   |
-|  Context of the action | The local authority reduces the greenhouse gas emissions generated by the operation of its buildings, and includes a reflection on their entire life cycle.
+Axis 1 | An exemplary community in terms of climate and energy transition
+Action 6 | Limiting greenhouse gas emissions from public buildings
+Objectives | GHG reduction
+Context of the action | The local authority reduces the greenhouse gas emissions generated by the operation of its buildings, and includes a reflection on their entire life cycle.
 The local authority assesses its progress in relation to its objectives for reducing CO2 and greenhouse gas emissions on the various categories of buildings.  |   |   |
-|  Sub- actions | - Regularly update GHG assessments that are more complete than required by regulation
+Sub- actions | - Regularly update GHG assessments that are more complete than required by regulation
 Reduce GHG emissions over the entire life cycle of public buildings
 Continue to reduce the share of F or G buildings (DPE classification for greenhouse gases) by renovating the most energy-intensive buildings
 Increase the share of buildings A or B (DPE classification for greenhouse gases)  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept of charge | Building and Maintenance Dept  |   |   |
-|  Related policies | Label TETE - CAE  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | • Share of class F or G buildings according to the DPE for GHGs (or equivalent) (TETE-CAE label)
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept of charge | Building and Maintenance Dept
+Related policies | Label TETE - CAE
+Action tracking
+Numerical monitoring indicator and refresh frequency | • Share of class F or G buildings according to the DPE for GHGs (or equivalent) (TETE-CAE label)
 • Share of class A or B buildings according to the DPE for GHGs (or equivalent) (TETE-CAE Label)  |   |   |
-|  Impact indicator and refresh rate |   |   |   |
-|  Funding terms |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners | CEE  |   |   |
-|  Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 3  |
+Impact indicator and refresh rate
+Funding terms
+Planned budget
+Financial partners | CEE
+Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 3
 
 4
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 1 | An exemplary community in terms of climate and energy transition  |   |   |
-| --- | --- | --- | --- |
-|  Action 7 | Saving water in the community  |   |   |
-|  Objectives | GHG reduction / Energy sobriety  |   |   |
-|  Context of the action | To reduce its water bill and preserve water resources, the local authority is increasing the control of water consumption in its public buildings. It evaluates it using per capita indicators and the annual water consumption of different categories of buildings. The local authority implements a rational water management policy (needs and use) promoting an economical use of water.  |   |   |
-|  Sub- actions | - Finalize and update the precise diagnosis of water consumption and water pipes of all public buildings and large consumers
+Axis 1 | An exemplary community in terms of climate and energy transition
+Action 7 | Saving water in the community
+Objectives | GHG reduction / Energy sobriety
+Context of the action | To reduce its water bill and preserve water resources, the local authority is increasing the control of water consumption in its public buildings. It evaluates it using per capita indicators and the annual water consumption of different categories of buildings. The local authority implements a rational water management policy (needs and use) promoting an economical use of water.
+Sub- actions | - Finalize and update the precise diagnosis of water consumption and water pipes of all public buildings and large consumers
 Formalize the community's commitment to reduce its consumption
 Raise awareness and inform users of public buildings
 Continue to implement actions and monitor consumption  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept of charge | Building and Maintenance Dept  |   |   |
-|  Related policies | Label TETE - CAE  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | • Share of class F or G buildings according to the DPE for GHGs (or equivalent) (TETE-CAE label)
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept of charge | Building and Maintenance Dept
+Related policies | Label TETE - CAE
+Action tracking
+Numerical monitoring indicator and refresh frequency | • Share of class F or G buildings according to the DPE for GHGs (or equivalent) (TETE-CAE label)
 • Share of class A or B buildings according to the DPE for GHGs (or equivalent) (TETE-CAE Label)  |   |   |
-|  Impact indicator and refresh rate | - Average water consumption in local authority buildings (l/m².year) (TETE-CAE label)
+Impact indicator and refresh rate | - Average water consumption in local authority buildings (l/m².year) (TETE-CAE label)
 Average water consumption in "education/nursery" buildings (l/m².year) (TETE-CAE label)
 Average water consumption in "administration" buildings (l/m².year) (TETE-CAE label)
 Average water consumption in "culture/sport" buildings (l/m².year) (TETE-CAE label)
 Swimming pool water consumption (l/user.year)  |   |   |
-|  Funding terms |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners |   |   |   |
-|  Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 3  |
+Funding terms
+Planned budget
+Financial partners
+Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 3
 
 5
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 1 | An exemplary community in terms of climate and energy transition  |   |   |
-| --- | --- | --- | --- |
-|  Action 8 | Optimising public lighting  |   |   |
-|  Objectives | Energy sobriety  |   |   |
-|  Context of the action | The local authority systematizes the sobriety and energy efficiency of its public lighting and evaluates it based on indicators. It implements energy-efficient technologies and practices and contributes to the prevention, reduction and limitation of light pollution (elimination of unnecessary and redundant street lamps, switching on and off schedules in suitable areas, presence-sensing lighting, energy-saving street lamps, proportion of light, limitation of colour temperatures, etc.).
+Axis 1 | An exemplary community in terms of climate and energy transition
+Action 8 | Optimising public lighting
+Objectives | Energy sobriety
+Context of the action | The local authority systematizes the sobriety and energy efficiency of its public lighting and evaluates it based on indicators. It implements energy-efficient technologies and practices and contributes to the prevention, reduction and limitation of light pollution (elimination of unnecessary and redundant street lamps, switching on and off schedules in suitable areas, presence-sensing lighting, energy-saving street lamps, proportion of light, limitation of colour temperatures, etc.).
 The action extends to all lighting in public spaces: illuminated street furniture, monuments and facades, signs, festivities, Christmas lighting, etc..
 As part of the call for contributions launched under the PCAET on the "changing life together" platform, the company MONILUM has submitted a contribution to fuel this action:
 Monilum offers physical (embedded management board developed and implemented by us) and digital solutions for intelligent lighting management (web or closed network). The photometric study as well as the supply of the luminaire adapted to its location is an integral part of our services.  |   |   |
-|  Sub- actions | - Carry out a diagnosis of public lighting
+Sub- actions | - Carry out a diagnosis of public lighting
 Implement sobriety actions on public lighting as a priority
 Deliberate and implement a plan to optimize public lighting
 Monitor and achieve the objectives set for public lighting  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept of charge | Public Spaces and Mobility Dept - Public Lighting Unit - Network Erasure  |   |   |
-|  Related policies | Label TETE  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | • Diagnosis of public lighting carried out
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept of charge | Public Spaces and Mobility Dept - Public Lighting Unit - Network Erasure
+Related policies | Label TETE
+Action tracking
+Numerical monitoring indicator and refresh frequency | • Diagnosis of public lighting carried out
 • Electricity budget for public lighting (kWh/inhabitant)
 • Number of light points/inhabitant or per km
 • Number of hours of illumination  |   |   |
-|  Impact indicator and refresh rate | • Consumption of public lighting (kWh/inhabitant.year) (TETE-CAE label)
+Impact indicator and refresh rate | • Consumption of public lighting (kWh/inhabitant.year) (TETE-CAE label)
 • % of municipalities practising switch-off (for competent EPCIs)
 • Average power of light points (kW/light points)
 • TeqCO2 and kWh saved through the public lighting optimisation plan  |   |   |
-|  Funding terms  |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners | The CEE, municipalities  |   |   |
-|  Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 3  |
+Funding terms
+Planned budget
+Financial partners | The CEE, municipalities
+Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 3
 
 6
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 1 | An exemplary community in terms of climate and energy transition  |
-| --- | --- |
-|  Action 9 | Promoting sustainable mobility internally within the community  |
-|  Objectives | GHG reduction, energy sobriety and reduction of air pollutants and population exposure  |
-|  Context of the action | The community ensures the management, efficient use and low fuel consumption of its fleet of vehicles. This action involves measures relating to maintenance, upkeep, driving and the development of the vehicle fleet. It is also a question of optimising, rationalising and pooling all the trips of local authority agents:
+Axis 1 | An exemplary community in terms of climate and energy transition
+Action 9 | Promoting sustainable mobility internally within the community
+Objectives | GHG reduction, energy sobriety and reduction of air pollutants and population exposure
+Context of the action | The community ensures the management, efficient use and low fuel consumption of its fleet of vehicles. This action involves measures relating to maintenance, upkeep, driving and the development of the vehicle fleet. It is also a question of optimising, rationalising and pooling all the trips of local authority agents:
 the local authority encourages its staff to behave intelligently and sustainably in terms of mobility, in particular by setting up an employer mobility plan
 the community ensures the efficient use and low fuel consumption of its fleet of vehicles
 the local authority chooses vehicles with low air pollutant emissions when renewing its fleet
 For business trips,  |
-|  Sub- actions | - Finalize and update the diagnosis of its needs and fleet of vehicles
+Sub- actions | - Finalize and update the diagnosis of its needs and fleet of vehicles
 Pursue the sustainable mobility policy within the community (commit to PLM, encourage staff, take directives, justify business trips by plane or car, energy and fuel efficiency criteria in purchasing guidelines)
 Raise awareness of eco-driving and renew the vehicle fleet
 Optimize and streamline travel within the community
@@ -2175,12 +2153,12 @@ To make physical resources available in most workplaces
 Provide financial incentives to agents to use active modes / TC
 Adjust schedules to facilitate the use of active modes or TC.
 Achieve objectives and communicate on the actions taken  |
-|  Conditions of implementation  |   |
-|  Provisional schedule | 2023 to 2029  |
-|  Dept of charge | Public Spaces – Mobility Directorate (PDA)  |
-|  Related policies | Label TETE - Climate Air Energy  |
-|  Action tracking  |   |
-|  Numerical monitoring indicator and refresh frequency | - Modal shares of business trips (in number of trips and km travelled)
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept of charge | Public Spaces – Mobility Directorate (PDA)
+Related policies | Label TETE - Climate Air Energy
+Action tracking
+Numerical monitoring indicator and refresh frequency | - Modal shares of business trips (in number of trips and km travelled)
 Number of kilometres covered by service bicycles
 Total number of kilometres travelled by local authority vehicles
 Number of CO2eq avoided thanks to the local authority's mobility plan
@@ -2189,27 +2167,26 @@ Duration of use of vehicles
 Number of motor vehicles in relation to the number of agents
 % of agents trained in eco-driving
 Energy expenditure - vehicles (euros)  |
-|  Impact indicator and refresh rate | - Annual energy consumption of commercial vehicles
+Impact indicator and refresh rate | - Annual energy consumption of commercial vehicles
 Annual GHG emissions of the vehicle fleet (per km driven, per agent)  |
-|  Funding terms  |   |
-|  Planned budget |   |
-|  Financial partners |   |
-|  Prioritization by CUD's jurisdiction | 1  |
-|  Prioritization according to the level of impact | 2  |
+Funding terms
+Planned budget
+Financial partners
+Prioritization by CUD's jurisdiction | 1
+Prioritization according to the level of impact | 2
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 1 | An exemplary community in terms of climate and energy transition  |   |   |
-| --- | --- | --- | --- |
-|  Action 10 | Be exemplary in terms of eco-responsibility in public procurement  |   |   |
-|  Objectives | GHG reduction, energy sobriety  |   |   |
-|  Context of the action | The local authority systematically integrates into its public contracts for the purchase of material goods or services, criteria of energy efficiency, reduction of environmental impact (including air quality) and life cycle cost if they exist, for example for:
+Axis 1 | An exemplary community in terms of climate and energy transition
+Action 10 | Be exemplary in terms of eco-responsibility in public procurement
+Objectives | GHG reduction, energy sobriety
+Context of the action | The local authority systematically integrates into its public contracts for the purchase of material goods or services, criteria of energy efficiency, reduction of environmental impact (including air quality) and life cycle cost if they exist, for example for:
 the acquisition of office equipment (computer, printer, paper, etc.)
 Maintenance equipment and supplies (including cleaning detergents, lubricants)
 other procurement/procurement with an impact on the climate (e.g. construction, planning, energy, food, etc.)
 The sub-actions presented below come from the CUD’s Responsible Purchasing Promotion Scheme (SPAR).
 
 As part of the call for contributions launched by the CUD under the PCAET on the platform Changing life together, the University of the Littoral Côte d’Opale (ULCO) (contact: Séverine FRÈRE - Teacher-researcher - severine.frere@univ-littoral.fr) proposed a contribution that could be related to this action. Indeed, ULCO has been committed since 2021 to the development of a sustainable development and social responsibility (DDetRS) reference framework whose objectives are to include the establishment in an ecological transition approach. Thus, all the university’s missions are concerned: research, training as well as social and environmental policy. As part of its DDetRS commitment, ULCO is committed to developing sustainable and responsible purchasing.  |   |   |
-|  Sub- actions | 1) Reduce the ecological footprint of purchases
+Sub- actions | 1) Reduce the ecological footprint of purchases
 Improve the environmental performance of procurement and construction
 Generalize LCA and overall cost in procurement
 Insert environmental requirements and criteria
@@ -2222,47 +2199,45 @@ Control consumption
 Tend towards "no buying" whenever possible
 
 Supporting ULCO, municipalities and all other public actors towards more sustainable and responsible public procurement practices  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept in charge | Public Procurement Dept  |   |   |
-|  Related policies | Responsible Purchasing Promotion Scheme (SPAR), TETE-CAE Label  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | - % of contracts (in number) including environmental (and social) clauses in technical specifications or award criteria increasing
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Public Procurement Dept
+Related policies | Responsible Purchasing Promotion Scheme (SPAR), TETE-CAE Label
+Action tracking
+Numerical monitoring indicator and refresh frequency | - % of contracts (in number) including environmental (and social) clauses in technical specifications or award criteria increasing
 % of contracts (in €) including environmental (and social) clauses in technical specifications or award criteria increasing  |   |   |
-|  Impact indicator and refresh rate |   |   |   |
-|  Funding terms  |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners |   |   |   |
-|  Prioritization by CUD’s jurisdiction | 1 | Prioritization according to the level of impact | 3  |
+Impact indicator and refresh rate
+Funding terms
+Planned budget
+Financial partners
+Prioritization by CUD’s jurisdiction | 1 | Prioritization according to the level of impact | 3
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 1 | An exemplary community in terms of climate and energy transition  |   |   |
-| --- | --- | --- | --- |
-|  Action 11 | Reduce office space requirements  |   |   |
-|  Objectives | GHG reduction, energy sobriety, Awareness-raising (energy/climate/air culture of elected officials, services and residents)  |   |   |
-|  Context of the action | New teleworking practices are questioning the use and organization of offices: is it still necessary to have individual offices or as many office spaces as employees? The smaller the surface area, the lower the consumption.  |   |   |
-|  Sub- actions | Perpetuating teleworking: setting up a teleworking guide
+Axis 1 | An exemplary community in terms of climate and energy transition
+Action 11 | Reduce office space requirements
+Objectives | GHG reduction, energy sobriety, Awareness-raising (energy/climate/air culture of elected officials, services and residents)
+Context of the action | New teleworking practices are questioning the use and organization of offices: is it still necessary to have individual offices or as many office spaces as employees? The smaller the surface area, the lower the consumption.
+Sub- actions | Perpetuating teleworking: setting up a teleworking guide
 Pooling workspaces: moving towards more open space and avoiding individual offices as much as possible  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept in charge | General Resources Directorate  |   |   |
-|  Related policies | Label TETE-CAE  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | Average office space per employee  |   |   |
-|  Impact indicator and refresh rate |   |   |   |
-|  Funding terms  |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners |   |   |   |
-|  Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 3  |
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | General Resources Directorate
+Related policies | Label TETE-CAE
+Action tracking
+Numerical monitoring indicator and refresh frequency | Average office space per employee
+Impact indicator and refresh rate
+Funding terms
+Planned budget
+Financial partners
+Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 3
 
 9
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan – Greater Dunkirk
 
-|  Axis 1 | An exemplary community in terms of climate and energy transition  |   |   |
-| --- | --- | --- | --- |
-|  Action 12 | Supporting municipalities towards exemplarity  |   |   |
-|  Objectives | GHG reduction, energy sobriety, Awareness-raising (energy/climate/air culture of elected officials, services and residents)  |   |   |
-|  Context of the action | The community is a leader on the climate-air-energy issue on its territory. It has set up shared actions with its municipalities, and supports them in their climate-air-energy projects.
+Axis 1 | An exemplary community in terms of climate and energy transition
+Action 12 | Supporting municipalities towards exemplarity
+Objectives | GHG reduction, energy sobriety, Awareness-raising (energy/climate/air culture of elected officials, services and residents)
+Context of the action | The community is a leader on the climate-air-energy issue on its territory. It has set up shared actions with its municipalities, and supports them in their climate-air-energy projects.
 
 A working group dedicated to the exemplarity of municipalities is already planning the development of a sobriety plan for municipalities, this type of action is to be pursued in order to share the ambitions of the climate-air-energy policy of the EPCI towards the municipalities through actions such as:
 exchange/relay/disseminate data, documents and good practices between EPCIs and member municipalities, concerning their climate, air and energy policy
@@ -2270,249 +2245,240 @@ Be at the initiative or participate in ad hoc bilateral joint/inter-municipal me
 Setting up a global tool to support member municipalities on climate-air-energy issues (educational kit, internet platform, technical support unit, etc.)
 Reflect on new legal and financial tools to facilitate the municipalities' transition to action (Feasibility of a local fund from the resources generated by the development of renewable energies at the EPCI level, feasibility of a local public company dedicated to renovation to support municipalities in their projects, etc.)
 Institutionalize thematic meetings with member municipalities (composition and frequency of meetings determined in advance, notion of "Climate-Air-Energy Club" or equivalent regularly bringing together volunteer communities in the territory). The meetings are frequently relocated to the territory to facilitate the participation of as many member municipalities as possible  |   |   |
-|  Sub- actions | - Share knowledge and skills
+Sub- actions | - Share knowledge and skills
 Support for the energy renovation of their assets
 Support in controlling their energy consumption
 Carry out an emblematic and exemplary building project that would be a demonstrator for the municipalities  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept in charge | Steering and Territorial Governance + ecological transition of territory  |   |   |
-|  Related policies | Label TETE - CAE  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | - Number of inter-municipal projects on energy and climate
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Steering and Territorial Governance + ecological transition of territory
+Related policies | Label TETE - CAE
+Action tracking
+Numerical monitoring indicator and refresh frequency | - Number of inter-municipal projects on energy and climate
 Number of meetings between municipalities and inter-municipalities on the climate-air-energy subject per year
 Emblematic building project completed
 Number of projects for the renovation of municipal public buildings supported  |   |   |
-|  Impact indicator and refresh rate | Consumption of municipal public buildings
+Impact indicator and refresh rate | Consumption of municipal public buildings
 GHG emissions from municipal public buildings  |   |   |
-|  Funding terms  |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners | Municipalities, CEEs  |   |   |
-|  Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 2  |
+Funding terms
+Planned budget
+Financial partners | Municipalities, CEEs
+Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 2
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 2 | A public force mobilised around the climate, air and energy policy  |   |   |
-| --- | --- | --- | --- |
-|  Action 13 | Setting up energy and GHG emissions accounting for public buildings  |   |   |
-|  Objectives | GHG reduction, Energy sobriety, Development of renewable and recovered energies, Reduction of air pollutants and population exposure, Carbon sequestration on the territory  |   |   |
-|  Context of the action | The local authority regularly carries out (every 3 to 6 years) an analysis of its climate-air-energy situation for its territory, in a quantitative and qualitative manner, all sectors combined: residential, tertiary, road transport, other transport, agriculture, waste, industry excluding the energy branch, the energy branch,
+Axis 2 | A public force mobilised around the climate, air and energy policy
+Action 13 | Setting up energy and GHG emissions accounting for public buildings
+Objectives | GHG reduction, Energy sobriety, Development of renewable and recovered energies, Reduction of air pollutants and population exposure, Carbon sequestration on the territory
+Context of the action | The local authority regularly carries out (every 3 to 6 years) an analysis of its climate-air-energy situation for its territory, in a quantitative and qualitative manner, all sectors combined: residential, tertiary, road transport, other transport, agriculture, waste, industry excluding the energy branch, the energy branch,
 In figures, the report presents in particular:
 the consumption and production of energy, particularly renewable energy
 greenhouse gas emissions
 emissions and concentrations (in sensitive areas) of air pollutants
 carbon dioxide sequestration  |   |   |
-|  Sub- actions | Update the Climate, Air and Energy diagnosis in 2026 (mid-term evaluation)  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023, 2026, 2029  |   |   |
-|  Dept in charge | Sustainable City Management  |   |   |
-|  Related policies | TETE-CAE label, 200,000 trees plan  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | Climate-Air-Energy Diagnosis updated - every 3 years  |   |   |
-|  Impact indicator and refresh rate | - Evolution of the territory's energy consumption
+Sub- actions | Update the Climate, Air and Energy diagnosis in 2026 (mid-term evaluation)
+Conditions of implementation
+Provisional schedule | 2023, 2026, 2029
+Dept in charge | Sustainable City Management
+Related policies | TETE-CAE label, 200,000 trees plan
+Action tracking
+Numerical monitoring indicator and refresh frequency | Climate-Air-Energy Diagnosis updated - every 3 years
+Impact indicator and refresh rate | - Evolution of the territory's energy consumption
 Evolution of renewable energy production
 Evolution of greenhouse gas emissions
 Evolution of concentrations (in sensitive areas) of atmospheric pollutants
 Evolution of carbon dioxide sequestration  |   |   |
-|  Funding terms  |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners |   |   |   |
-|  Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 3  |
+Funding terms
+Planned budget
+Financial partners
+Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 3
 
 1
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 2 | A public force mobilised around the climate, air and energy policy  |   |   |
-| --- | --- | --- | --- |
-|  Action 14 | Ensuring the steering and support of the climate-air-energy policy  |   |   |
-|  Objectives | GHG reduction, Energy sobriety, Development of renewable and recovered energies, Reduction of air pollutants and population exposure, Carbon sequestration on the territory, Adaptation of the territory to climate change  |   |   |
-|  Context of the action | The Steering Committee's task is to deal with climate, air and energy issues at the highest level. It makes choices and strategic decisions for the community's climate-air-energy policy. This can be common to several approaches (Territorial Project, TETE-CAE-EC Label, General State of the Environment, PCAET, Ecological Transition Contract, Ecological Transition Recovery Contract, various AàP relating to the ecological transition, etc.) insofar as energy and climate issues are addressed in a transversal manner. The political support of the climate, air and energy strategy is assured. One or more elected officials are appointed as referents on climate, air and energy issues and participate in the steering committee. The CUD participates in many projects, labels and programmes related to Climate-Air-Energy topics. It is necessary to set up a body to monitor the various climate issues, encompassing all the transition approaches carried out by the community.  |   |   |
-|  Sub- actions | - Define a transversal and legitimate steering committee
+Axis 2 | A public force mobilised around the climate, air and energy policy
+Action 14 | Ensuring the steering and support of the climate-air-energy policy
+Objectives | GHG reduction, Energy sobriety, Development of renewable and recovered energies, Reduction of air pollutants and population exposure, Carbon sequestration on the territory, Adaptation of the territory to climate change
+Context of the action | The Steering Committee's task is to deal with climate, air and energy issues at the highest level. It makes choices and strategic decisions for the community's climate-air-energy policy. This can be common to several approaches (Territorial Project, TETE-CAE-EC Label, General State of the Environment, PCAET, Ecological Transition Contract, Ecological Transition Recovery Contract, various AàP relating to the ecological transition, etc.) insofar as energy and climate issues are addressed in a transversal manner. The political support of the climate, air and energy strategy is assured. One or more elected officials are appointed as referents on climate, air and energy issues and participate in the steering committee. The CUD participates in many projects, labels and programmes related to Climate-Air-Energy topics. It is necessary to set up a body to monitor the various climate issues, encompassing all the transition approaches carried out by the community.
+Sub- actions | - Define a transversal and legitimate steering committee
 Develop and validate the objectives of the climate, air and energy policy in the steering committee
 Ensure the effective implementation of the decisions taken
 Hold at least one annual follow-up meeting  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept in charge | Sustainable City Dept  |   |   |
-|  Related policies | TETE-CAE label, EGE, Eco-winner, ...  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | • Number of Steering Committee meetings / year - 1 time per year
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Sustainable City Dept
+Related policies | TETE-CAE label, EGE, Eco-winner, ...
+Action tracking
+Numerical monitoring indicator and refresh frequency | • Number of Steering Committee meetings / year - 1 time per year
 • Participation rate of steering committee members - 1 time per year  |   |   |
-|  Impact indicator and refresh rate |   |   |   |
-|  Funding terms  |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners |   |   |   |
-|  Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 3  |
+Impact indicator and refresh rate
+Funding terms
+Planned budget
+Financial partners
+Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 3
 
 2
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 2 | A public force mobilised around the climate, air and energy policy  |   |   |
-| --- | --- | --- | --- |
-|  Action 15 | Train and mobilise elected officials and services on Climate, Air and Energy issues  |   |   |
-|  Objectives | GHG reduction, Energy sobriety, Development of renewable and recovered energies, Reduction of air pollutants and population exposure, Carbon sequestration on the territory, Adaptation of the territory to climate change, Awareness-raising (energy/climate/air culture of elected officials, services and residents)  |   |   |
-|  Context of the action | The local authority offers awareness-raising and training actions on adaptation to climate change, air pollution, GHG (greenhouse gas) emissions, renewable energies and the control of energy consumption to its elected representatives and all its agents (technicians, directors, etc.).
+Axis 2 | A public force mobilised around the climate, air and energy policy
+Action 15 | Train and mobilise elected officials and services on Climate, Air and Energy issues
+Objectives | GHG reduction, Energy sobriety, Development of renewable and recovered energies, Reduction of air pollutants and population exposure, Carbon sequestration on the territory, Adaptation of the territory to climate change, Awareness-raising (energy/climate/air culture of elected officials, services and residents)
+Context of the action | The local authority offers awareness-raising and training actions on adaptation to climate change, air pollution, GHG (greenhouse gas) emissions, renewable energies and the control of energy consumption to its elected representatives and all its agents (technicians, directors, etc.).
 Supported by elected officials, the agents actively participate in the definition and achievement of the climate-air-energy objectives set by the community, particularly those directly related to their services and positions. The local authority sets up actions to keep its agents motivated, such as inter-service competitions, a system for recognising personal initiatives, an idea box, a visit to equipment (sorting centre, STEU, HAS exhibition, PLUS,...), organisation of climate* frescoes, city frescoes, etc*.  |   |   |
-|  Sub- actions | - Supporting elected officials and agents in the practice of daily eco-gestures
+Sub- actions | - Supporting elected officials and agents in the practice of daily eco-gestures
 Formalize the training/awareness plan for agents and elected officials
 Supporting elected officials and agents on specific themes
 Implement the climate-air-energy training/awareness plan
 Engage and motivate elected officials and agents
 Evaluate and promote the effectiveness of training and mobilization actions  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept in charge | Directorate for Jobs, Skills and Management  |   |   |
-|  Related policies | Label TETE-CAE  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | Annual number of training and awareness-raising sessions carried out on the theme of Climate, Air and Energy  |   |   |
-|  Impact indicator and refresh rate |   |   |   |
-|  Funding terms  |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners |   |   |   |
-|  Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 3  |
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Directorate for Jobs, Skills and Management
+Related policies | Label TETE-CAE
+Action tracking
+Numerical monitoring indicator and refresh frequency | Annual number of training and awareness-raising sessions carried out on the theme of Climate, Air and Energy
+Impact indicator and refresh rate
+Funding terms
+Planned budget
+Financial partners
+Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 3
 
 3
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 2 | A public force mobilised around the climate, air and energy policy  |   |   |
-| --- | --- | --- | --- |
-|  Action 16 | Setting up energy and GHG emissions accounting for public buildings  |   |   |
-|  Objectives | GHG reduction, Energy sobriety, Development of renewable and recovered energies , Reduction of air pollutants and population exposure, Carbon sequestration on the territory, Adaptation of the territory to climate change  |   |   |
-|  Context of the action | This measure concerns the monitoring and evaluation of the climate, air and energy action programme. The community adopts a clear and precise methodology to update and evaluate the effectiveness and progress of its action plan based on verifiable documents and its past activities:
+Axis 2 | A public force mobilised around the climate, air and energy policy
+Action 16 | Setting up energy and GHG emissions accounting for public buildings
+Objectives | GHG reduction, Energy sobriety, Development of renewable and recovered energies , Reduction of air pollutants and population exposure, Carbon sequestration on the territory, Adaptation of the territory to climate change
+Context of the action | This measure concerns the monitoring and evaluation of the climate, air and energy action programme. The community adopts a clear and precise methodology to update and evaluate the effectiveness and progress of its action plan based on verifiable documents and its past activities:
 Annual production
 based on existing assessment tools
 Analysis of the planning of previous years (planned and carried out actions)
 Reinforcement/adjustment of planned measures
 Documentation of results
 Internal and external communication and indicator-based reporting of results  |   |   |
-|  Sub- actions | - Equip yourself with tools and means to monitor and evaluate your action plan
+Sub- actions | - Equip yourself with tools and means to monitor and evaluate your action plan
 Regularly monitor and evaluate the achievement of objectives
 Communicate and inform the territory's stakeholders of the progress of the action programme
 Developing your action programme through the monitoring and evaluation system  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept in charge | Sustainable City Management  |   |   |
-|  Related policies | The TETE-EAC label, 100 smart and climate-neutral cities, the European Covenant of Mayors for the Climate, etc.  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | • Completed mid-term review of the PCAET
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Sustainable City Management
+Related policies | The TETE-EAC label, 100 smart and climate-neutral cities, the European Covenant of Mayors for the Climate, etc.
+Action tracking
+Numerical monitoring indicator and refresh frequency | • Completed mid-term review of the PCAET
 • Final report of the PCAET carried out
 • Number of partnership charters signed under the PCAET 2022-2028
 • Effective monitoring of the actions included in the partnership charter  |   |   |
-|  Impact indicator and refresh rate |   |   |   |
-|  Funding terms  |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners |   |   |   |
-|  Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 3  |
+Impact indicator and refresh rate
+Funding terms
+Planned budget
+Financial partners
+Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 3
 
 4
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 2 | A public force mobilised around the climate, air and energy policy  |   |   |
-| --- | --- | --- | --- |
-|  Action 17 | Financing the Climate, Air and Energy policy and carrying out a climate assessment of the budget  |   |   |
-|  Objectives | GHG reduction, Energy sobriety, Development of renewable and recovered energies, Reduction of air pollutants and population exposure, Carbon sequestration on the territory, Adaptation of the territory to climate change  |   |   |
-|  Context of the action | Each year, the local authority identifies and adopts a budget directly linked to its climate-air-energy policy. This is the budget intended for support actions (technical or financial) for the management of energy demand, energy efficiency, renewable energies, the reduction of GHG emissions, air pollutants and adaptation to climate change, in operation and investment. These budgets are not independent budgets, but a part of each of the budgets of the different Depts, relating to the implementation of actions. In connection with this approach, the local authority is mapping and valuing the various energy-related resources and is looking for additional and innovative financing for its climate-air-energy policy.
+Axis 2 | A public force mobilised around the climate, air and energy policy
+Action 17 | Financing the Climate, Air and Energy policy and carrying out a climate assessment of the budget
+Objectives | GHG reduction, Energy sobriety, Development of renewable and recovered energies, Reduction of air pollutants and population exposure, Carbon sequestration on the territory, Adaptation of the territory to climate change
+Context of the action | Each year, the local authority identifies and adopts a budget directly linked to its climate-air-energy policy. This is the budget intended for support actions (technical or financial) for the management of energy demand, energy efficiency, renewable energies, the reduction of GHG emissions, air pollutants and adaptation to climate change, in operation and investment. These budgets are not independent budgets, but a part of each of the budgets of the different Depts, relating to the implementation of actions. In connection with this approach, the local authority is mapping and valuing the various energy-related resources and is looking for additional and innovative financing for its climate-air-energy policy.
 At the same time, each year the local authority assesses the impact on "climate" issues (favourable, neutral or unfavourable) of all the expenditure lines in its budget, for presentation to elected officials before budget discussions, and improves the climate impact of its budget choices year after year.
 Better management of energy expenditure and reduction of unfavourable expenditure from a climate point of view also allows the local authority to improve its budgetary capacity.  |   |   |
-|  Sub- actions | - Raise awareness among elected officials and train teams to take climate-air-energy policy into account in the budget development process
+Sub- actions | - Raise awareness among elected officials and train teams to take climate-air-energy policy into account in the budget development process
 Allocate a budget for the climate, air and energy policy
 Carry out an annual climate assessment of the budget
 Analyze the local authority's budgetary room for manoeuvre on the basis of the climate assessment of the budget
 Diversify financing methods to achieve climate, air and energy objectives and innovate
 Monitor annually the budget dedicated to the implementation of the climate/air/energy policy
 Be consistent in its financial support policy  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept in charge | Directorate of Finance  |   |   |
-|  Related policies | Label TETE-CAE  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | Budget associated with the climate-air-energy policy (euros/inhabitant.year) - every year  |   |   |
-|  Impact indicator and refresh rate |   |   |   |
-|  Funding terms  |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners |   |   |   |
-|  Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 2  |
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Directorate of Finance
+Related policies | Label TETE-CAE
+Action tracking
+Numerical monitoring indicator and refresh frequency | Budget associated with the climate-air-energy policy (euros/inhabitant.year) - every year
+Impact indicator and refresh rate
+Funding terms
+Planned budget
+Financial partners
+Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 2
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 2 | A public force mobilised around the climate, air and energy policy  |   |   |
-| --- | --- | --- | --- |
-|  Action 18 | Organising human resources to carry out the climate-air-energy policy  |   |   |
-|  Objectives | GHG reduction, Energy sobriety, Development of renewable and recovered energies , Reduction of air pollutants and population exposure, Carbon sequestration on the territory, Adaptation of the territory to climate change  |   |   |
-|  Context of the action | The local authority provides the necessary staff resources for climate, air and energy issues. Responsibilities, roles and tasks as well as decision-making powers are set and formalized. The working time available to each employee for tasks related to energy issues, the fight against climate change and services gives staff the means to act.  |   |   |
-|  Sub- actions | - Continue to provide the climate, air and energy policy with human resources
+Axis 2 | A public force mobilised around the climate, air and energy policy
+Action 18 | Organising human resources to carry out the climate-air-energy policy
+Objectives | GHG reduction, Energy sobriety, Development of renewable and recovered energies , Reduction of air pollutants and population exposure, Carbon sequestration on the territory, Adaptation of the territory to climate change
+Context of the action | The local authority provides the necessary staff resources for climate, air and energy issues. Responsibilities, roles and tasks as well as decision-making powers are set and formalized. The working time available to each employee for tasks related to energy issues, the fight against climate change and services gives staff the means to act.
+Sub- actions | - Continue to provide the climate, air and energy policy with human resources
 Finely define responsibilities and referents
 Working cross-functionally
 Measure the effectiveness of the internal organization and adjust it if necessary  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept in charge | Directorate for Jobs, Skills and Management  |   |   |
-|  Related policies | Label TETE-CAE  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | • Share of the local authority's FTE dedicated to the implementation of the climate, air and energy policy (%) - every year
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Directorate for Jobs, Skills and Management
+Related policies | Label TETE-CAE
+Action tracking
+Numerical monitoring indicator and refresh frequency | • Share of the local authority's FTE dedicated to the implementation of the climate, air and energy policy (%) - every year
 • Number of people whose position includes missions related to climate-air-energy policy (complementary indicator to the number of FTEs) - every year  |   |   |
-|  Impact indicator and refresh rate |   |   |   |
-|  Funding terms  |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners |   |   |   |
-|  Prioritization by CUD’s jurisdiction | 1 | Prioritization according to the level of impact | 3  |
+Impact indicator and refresh rate
+Funding terms
+Planned budget
+Financial partners
+Prioritization by CUD’s jurisdiction | 1 | Prioritization according to the level of impact | 3
 
 6
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 2
+Axis 2
 Action 19 | A public force mobilised around the climate, air and energy policy
 Develop a multi-level partnership strategy  |   |   |
-| --- | --- | --- | --- |
-|  Objectives | GHG reduction, Energy sobriety, Development of renewable and recovered energies , Reduction of air pollutants and population exposure, Carbon sequestration on the territory, Adaptation of the territory to climate change, Awareness-raising (energy/climate/air culture of elected officials, services and residents)  |   |   |
-|  Context of the action | The local authority defines a multi-level cooperation strategy (local, regional, national, European and international) for all actors working on climate, air and energy issues. It recommends and defends its climate-air-energy policy, for example by taking positions on the development of laws and regulations. In addition, it develops decentralised cooperation actions.  |   |   |
-|  Sub- actions | - Identify the key players to be involved
+Objectives | GHG reduction, Energy sobriety, Development of renewable and recovered energies , Reduction of air pollutants and population exposure, Carbon sequestration on the territory, Adaptation of the territory to climate change, Awareness-raising (energy/climate/air culture of elected officials, services and residents)
+Context of the action | The local authority defines a multi-level cooperation strategy (local, regional, national, European and international) for all actors working on climate, air and energy issues. It recommends and defends its climate-air-energy policy, for example by taking positions on the development of laws and regulations. In addition, it develops decentralised cooperation actions.
+Sub- actions | - Identify the key players to be involved
 Exchange and get involved in projects on an extra-local scale
 Formalize the partnership strategy
 Be involved in the evolution of the regulatory and legislative framework for climate, air and energy
 Implement actions at the international level  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept in charge | Territorial Development and Partnerships Dept
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Territorial Development and Partnerships Dept
 Youth and International Relations Dept  |   |   |
-|  Related policies | TETE-CAE label, various calls in connection with CAE issues, Eol 100 cities, CRTE, REV3...  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | • Share of budget spent on climate, air or energy decentralised cooperation projects (%) - annually
+Related policies | TETE-CAE label, various calls in connection with CAE issues, Eol 100 cities, CRTE, REV3...
+Action tracking
+Numerical monitoring indicator and refresh frequency | • Share of budget spent on climate, air or energy decentralised cooperation projects (%) - annually
 • Share of budget dedicated to significant and multi-stakeholder cooperation projects per year on climate, air and energy (%) - annually  |   |   |
-|  Impact indicator and refresh rate |   |   |   |
-|  Funding terms  |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners |   |   |   |
-|  Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 2  |
+Impact indicator and refresh rate
+Funding terms
+Planned budget
+Financial partners
+Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 2
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 2 | A public force mobilised around the climate, air and energy policy  |   |   |
-| --- | --- | --- | --- |
-|  Action 20 | Strengthening cooperation within the inter-municipal community  |   |   |
-|  Objectives | GHG reduction, Energy sobriety, Development of renewable and recovered energies , Reduction of air pollutants and population exposure, Carbon sequestration on the territory, Adaptation of the territory to climate change, Awareness-raising (energy/climate/air culture of elected officials, services and residents)  |   |   |
-|  Context of the action | The local authority implements enhanced cooperation actions with the other local authorities in its territory (within the administrative perimeter of the intermunicipality), in a united and effective approach to climate-air-energy policy between the inter-municipal authority and the member municipalities. It is involved as a facilitator or driving force for the territory. It supports municipalities or serves as an example in the implementation of their climate, air and energy policy and encourages the implementation of shared actions.
+Axis 2 | A public force mobilised around the climate, air and energy policy
+Action 20 | Strengthening cooperation within the inter-municipal community
+Objectives | GHG reduction, Energy sobriety, Development of renewable and recovered energies , Reduction of air pollutants and population exposure, Carbon sequestration on the territory, Adaptation of the territory to climate change, Awareness-raising (energy/climate/air culture of elected officials, services and residents)
+Context of the action | The local authority implements enhanced cooperation actions with the other local authorities in its territory (within the administrative perimeter of the intermunicipality), in a united and effective approach to climate-air-energy policy between the inter-municipal authority and the member municipalities. It is involved as a facilitator or driving force for the territory. It supports municipalities or serves as an example in the implementation of their climate, air and energy policy and encourages the implementation of shared actions.
 A sharing of the climate-air-energy strategy at the inter-municipal level has already been put in place. Each Dept knows its role in terms of climate, air and energy.  |   |   |
-|  Sub- actions | - Initiate and/or participate in shared actions in the territory
+Sub- actions | - Initiate and/or participate in shared actions in the territory
 Systematize intermunicipal cooperation and set an example in the territory  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept in charge | Steering and Territorial Governance  |   |   |
-|  Related policies | TETE-CAE label, inter-municipal solidarity plan,  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | • Number of inter-municipal energy and climate projects - every year
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Steering and Territorial Governance
+Related policies | TETE-CAE label, inter-municipal solidarity plan,
+Action tracking
+Numerical monitoring indicator and refresh frequency | • Number of inter-municipal energy and climate projects - every year
 • Number of meetings between municipalities and inter-municipalities about climate-air-energy per year - every year  |   |   |
-|  Impact indicator and refresh rate |   |   |   |
-|  Funding terms  |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners |   |   |   |
-|  Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 3  |
+Impact indicator and refresh rate
+Funding terms
+Planned budget
+Financial partners
+Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 3
 
 8
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 2 | A public force mobilised around the climate, air and energy policy  |   |   |
-| --- | --- | --- | --- |
-|  Action 21 | Contributing to innovation and excellence on the theme of climate-air-energy  |   |   |
-|  Objectives | GHG reduction, Energy sobriety, Development of renewable and recovered energies , Reduction of air pollutants and population exposure, Carbon sequestration on the territory, Adaptation of the territory to climate change  |   |   |
-|  Context of the action | The community contributes to innovation and excellence on the climate-air-energy theme. It can collaborate with training centres and the research community or support an exemplary and ambitious private flagship project in these same fields, providing expertise and/or advice to push the project further in excellence. It can also encourage the emergence of projects by bringing together the players (organisation of meetings between local authorities, companies, associations and researchers) or by facilitating the submission of projects (research of projects, methodological support).
+Axis 2 | A public force mobilised around the climate, air and energy policy
+Action 21 | Contributing to innovation and excellence on the theme of climate-air-energy
+Objectives | GHG reduction, Energy sobriety, Development of renewable and recovered energies , Reduction of air pollutants and population exposure, Carbon sequestration on the territory, Adaptation of the territory to climate change
+Context of the action | The community contributes to innovation and excellence on the climate-air-energy theme. It can collaborate with training centres and the research community or support an exemplary and ambitious private flagship project in these same fields, providing expertise and/or advice to push the project further in excellence. It can also encourage the emergence of projects by bringing together the players (organisation of meetings between local authorities, companies, associations and researchers) or by facilitating the submission of projects (research of projects, methodological support).
 
 In particular, the community is consistent in its position with regard to major projects impacting greenhouse gas emissions, air quality, energy consumption or the use of agricultural land under the influence of its territory.
 
@@ -2526,90 +2492,87 @@ ArcelorMittal France: Roundness of steel; Innovative DRI and Smart carbon
 Grand Port Maritime de Dunkerque: Decarbonisation roadmap for the port territory
 GRDF: university thesis on methanation in partnership with ULCO and the region
 Eco-Tech Ceram: ProDepVal R&D project financed by Eco-Tech Ceram and subsidized at 70% by the Hauts-de-France Region and ADEME Hauts-de-France. It consists of deploying a demonstrator to validate the drying of agglomeration sludge (industrial by-products of Arcelor-Mittal Dunkirk) by recovering the site's waste heat.  |   |   |
-|  Sub- actions | - Proactively monitor key players and projects
+Sub- actions | - Proactively monitor key players and projects
 Formalize the commitment of the community in supporting the projects of private actors
 Participate in studies and research to advance knowledge and techniques
 Invest and mobilize concretely on ambitious achievements
 To be a territory of innovation and excellence on climate, air and energy themes
 Support the implementation of actions proposed by local stakeholders  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept in charge | All Depts that can contribute to innovation and excellence  |   |   |
-|  Related policies | Dunkirk the creative® energy; Dkcarbonation, TETE-CAE Label, Sustainable and Innovative City Label, EU Mission: Climate-Neutral and Smart Cities  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | Number of companies and/or training organisations involved by the community - Annually  |   |   |
-|  Impact indicator and refresh rate |   |   |   |
-|  Funding terms  |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners | Caisse des dépôts et consignation, ADEME, HdF Region  |   |   |
-|  Prioritization by CUD's jurisdiction | 2 | Prioritization according to the level of impact | 1  |
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | All Depts that can contribute to innovation and excellence
+Related policies | Dunkirk the creative® energy; Dkcarbonation, TETE-CAE Label, Sustainable and Innovative City Label, EU Mission: Climate-Neutral and Smart Cities
+Action tracking
+Numerical monitoring indicator and refresh frequency | Number of companies and/or training organisations involved by the community - Annually
+Impact indicator and refresh rate
+Funding terms
+Planned budget
+Financial partners | Caisse des dépôts et consignation, ADEME, HdF Region
+Prioritization by CUD's jurisdiction | 2 | Prioritization according to the level of impact | 1
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 2 | A public force mobilised around the climate, air and energy policy  |   |   |
-| --- | --- | --- | --- |
-|  Action 22 | Planning and developing the transition of territories in the face of climate change thanks to the PACT2e call for research projects  |   |   |
-|  Objectives | GHG reduction, Energy sobriety, Development of renewable and recovered energies, Reduction of air pollutants and population exposure, Carbon sequestration on the territory, Adaptation of the territory to climate change, Awareness-raising (energy/climate/air culture of elected officials, services and residents)  |   |   |
-|  Context of the action | This Call for Research Projects is part of ADEME's Sustainable Urban Planning Strategy 2018-2022, as well as its Research and Innovation Strategy with a special programme dedicated to sustainable cities and territories. It is also a way to meet the objectives of Zero Net Land Artificialisation by 2050, the "Climate and Resilience" law and a halving of the rate of land artificialisation by 2031.
+Axis 2 | A public force mobilised around the climate, air and energy policy
+Action 22 | Planning and developing the transition of territories in the face of climate change thanks to the PACT2e call for research projects
+Objectives | GHG reduction, Energy sobriety, Development of renewable and recovered energies, Reduction of air pollutants and population exposure, Carbon sequestration on the territory, Adaptation of the territory to climate change, Awareness-raising (energy/climate/air culture of elected officials, services and residents)
+Context of the action | This Call for Research Projects is part of ADEME's Sustainable Urban Planning Strategy 2018-2022, as well as its Research and Innovation Strategy with a special programme dedicated to sustainable cities and territories. It is also a way to meet the objectives of Zero Net Land Artificialisation by 2050, the "Climate and Resilience" law and a halving of the rate of land artificialisation by 2031.
 With their response, named MAP2050 for "Prospective Modelling and Analysis for the Low-Carbon Trajectories of Territories by 2050", EFFICACTY and the consortium of project partners as well as the Urban Community of Dunkirk plan over the 3 years of the project:
 Co-construct an operational method / reference toolbox for the development and evaluation of low-carbon strategies by 2030-2050
 Experiment with the innovative method and tools developed with pilot local authorities, including the Dunkirk CU
 Articulate existing sectoral tools in order to better assess and prioritise the main levers for decarbonising territories in connection with territorial planning (in particular energy, buildings, mobility, land use);
 Create tools for the dynamic simulation of energy and building decarbonization scenarios on a territorial scale;
 To create tools for simulating medium- and long-term changes in land use, demography and population location using probabilistic models (known as "land use").  |   |   |
-|  Sub- actions | • Dynamic planning of territories and trajectories within planning documents (PLUiHD, PCAET, etc.)
+Sub- actions | • Dynamic planning of territories and trajectories within planning documents (PLUiHD, PCAET, etc.)
 • Facilitate the development of cross-cutting decarbonisation strategies at the level of inter-municipal cities and territories
 • Improving the construction, ex-ante evaluation and comparison of trajectories and action plans 2030 2040 2050
 • Identify innovative solutions with the highest mitigation potential
 • Better estimate the costs and co-benefits of low-carbon strategies in the medium to long term
 • Improve monitoring/evaluation and regular adjustment of plans  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2025  |   |   |
-|  Dept in charge | The directions related to the MAP2050 project  |   |   |
-|  Related policies |   |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | Number of meetings/interviews conducted in the framework of MAP 2050  |   |   |
-|  Impact indicator and refresh rate |   |   |   |
-|  Funding terms  |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners | ADEME, partners of the MAP 2050 project consortium  |   |   |
-|  Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 3  |
+Conditions of implementation
+Provisional schedule | 2023 to 2025
+Dept in charge | The directions related to the MAP2050 project
+Related policies
+Action tracking
+Numerical monitoring indicator and refresh frequency | Number of meetings/interviews conducted in the framework of MAP 2050
+Impact indicator and refresh rate
+Funding terms
+Planned budget
+Financial partners | ADEME, partners of the MAP 2050 project consortium
+Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 3
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan – Greater Dunkirk
 
-|  Axis 3 | Actors all involved in the C.A.E policy  |   |   |
-| --- | --- | --- | --- |
-|  Action 23 | Develop a communication plan for each target in the territory  |   |   |
-|  Objectives | Awareness-raising (energy/climate/air culture of elected officials, services and residents)  |   |   |
-|  Context of the action | The local authority draws up a specific climate-air-energy communication plan each year and updates it regularly. He sets the objectives, distributes the tasks and responsibilities and plans the various communication actions that will be carried out continuously (by target groups, with all media).
+Axis 3 | Actors all involved in the C.A.E policy
+Action 23 | Develop a communication plan for each target in the territory
+Objectives | Awareness-raising (energy/climate/air culture of elected officials, services and residents)
+Context of the action | The local authority draws up a specific climate-air-energy communication plan each year and updates it regularly. He sets the objectives, distributes the tasks and responsibilities and plans the various communication actions that will be carried out continuously (by target groups, with all media).
 The community's climate, air and energy identity is set out in this communication plan and all the actions carried out are exemplary in terms of eco-responsibility and digital sobriety.
 The CUD participates in a large number of projects, labels and programmes related to Climate-Air-Energy topics. It is necessary to harmonise communication on these subjects and to inform the users of the territory of the community's commitment.  |   |   |
-|  Sub- actions | - Know the needs, identify priority targets and budget the communication plan
+Sub- actions | - Know the needs, identify priority targets and budget the communication plan
 Identify existing systems and actors to rely on
 Continue and update the community's climate, air and energy identity in the various communication media
 Give weight and credibility to the community's actions in its communication
 Implement the communication plan for each target in the territory
 Continue the events giving visibility to the community's climate, air and energy policies (European Conference on Ecological Transition, Village of the Future, European CO2 meetings, science festival, temporary thematic and permanent exhibition at the HAS, repair'café, etc.)
 Monitor and evaluate the effectiveness of the communication plan  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept in charge | Communication and Digital Dept  |   |   |
-|  Related policies | TETE-CAE label, Halle aux sucres programme, Village of the future, off programme of european conference on energy transition, ...  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | • Number of events/actions per year on climate, air and energy - Every year
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Communication and Digital Dept
+Related policies | TETE-CAE label, Halle aux sucres programme, Village of the future, off programme of european conference on energy transition, ...
+Action tracking
+Numerical monitoring indicator and refresh frequency | • Number of events/actions per year on climate, air and energy - Every year
 • Number of visitors to these events/actions – Every year  |   |   |
-|  Impact indicator and refresh rate |   |   |   |
-|  Funding terms  |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners |   |   |   |
-|  Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 3  |
+Impact indicator and refresh rate
+Funding terms
+Planned budget
+Financial partners
+Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 3
 
 1
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 3 | Actors all involved in the C.A.E policy  |
-| --- | --- |
-|  Action 24 | Mobilising civil society by developing consultation and awareness-raising  |
-|  Objectives | GHG reduction, Energy sobriety, Awareness-raising (energy/climate/air culture of elected officials, services and residents)  |
-|  Context of the action | • The local authority mobilises citizens in the decision-making process and organises, in collaboration with the public service concerned, various working groups and participatory mechanisms relating to climate-air-energy projects. Consultation can be carried out both during the diagnostic phase and during the construction of the action programme or its implementation.
+Axis 3 | Actors all involved in the C.A.E policy
+Action 24 | Mobilising civil society by developing consultation and awareness-raising
+Objectives | GHG reduction, Energy sobriety, Awareness-raising (energy/climate/air culture of elected officials, services and residents)
+Context of the action | • The local authority mobilises citizens in the decision-making process and organises, in collaboration with the public service concerned, various working groups and participatory mechanisms relating to climate-air-energy projects. Consultation can be carried out both during the diagnostic phase and during the construction of the action programme or its implementation.
 • Several contributions under the PACET have been submitted by UFC Que Choisir, the 4 locks and the fireboat and will contribute to this action.
 The association AL UFC Que Choisir Dunkerque has submitted a contribution under the PCAET by proposing various actions to raise awareness of responsible consumption: changing our daily behaviour; Cultivate/consume responsibly and locally; Reducing the volume of our waste and better recovering it; Using the animation tools available from UFC Que Choisir national, give information, share solutions, provoke reflection, on the theme of more responsible consumption; Photo exhibition on waste; Communication of a map on the short circuit in our territory; Visit a sorting centre, provide information on recycling logos, battery and household appliance collection points; Organise workshops to present alternative solutions to our consumption patterns (e.g. creation of bee-wraps, which reduces the use of plastics and therefore the production of waste); Workshops "How to limit your electricity consumption? What financial aid is available in the area"
 • Le Bateau Feu, Scène nationale Dunkerque has proposed a series of measures to reduce the environmental impact of the Le Bateau Feu theatre: sorting waste; eliminating cups and stirrers at the bar and in the catering areas (encouraging employees, artists and spectators to use crockery); sale of local and/or organic drinks in glass bottles consigned at the bar; purchase of seasonal, fresh, local and minimally packaged products for the preparation of first class meals and the bar's snacks; replacement of individual tea bags with tea purchased in bulk; replacement of individual packaged soaps with liquid soap, made in Calais, in wall-mounted dispensers; replacement of cleaning products with natural products (baking soda, white vinegar and black soap) and use of eco-label certified products by our cleaning service provider; switching to recycled paper; vigilance of the communication Dept to adapt the printing of media (brochures, posters, flyers, etc.) to the needs of public relations and partners in order to limit waste; In technology, most disposable batteries have been replaced by batteries; installation of ashtrays in front of the theatre and at the back of the theatre to limit cigarette butts thrown on the ground; installation of water fountains to limit small plastic water bottles; reflection on the issue of the mobility of the Bateau Feu team, artists and spectators (purchase of a bicycle for employees, etc.); reflection on fixed assets (project to organise a 'garage sale' with technical equipment that is no longer used)
@@ -2618,61 +2581,59 @@ The association AL UFC Que Choisir Dunkerque has submitted a contribution under 
 • Maintain the culture of collaboration in the territory
 • Know the different levels of citizen involvement: information, consultation, consultation, co-production, co-decision, self-management
 • Formalise the "rules of the game" of consultation: the objectives and power of influence of the bodies are clearly defined, the rights and duties of each person (community/citizens) are announced, for example in a charter  |
-|  Sub- actions |   |
-|   | - The local authority defines one or more working groups on various themes: climate, air, energy, waste, water, sanitation, mobility, etc.
+Sub- actions
+- The local authority defines one or more working groups on various themes: climate, air, energy, waste, water, sanitation, mobility, etc.
 Institutionalise cooperation between residents and the community on energy and climate issues by defining a participatory and/or consultation body or on the basis of existing working groups (qualifying neighbourhood councils, development councils, etc.)
 Conduct regular and long-term consultation
 Use the contributions of the consultation bodies  |   |   |
-| --- | --- | --- | --- |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept in charge | Communication and Digital Dept  |   |   |
-|  Related policies | TETE-CAE label, Halle aux sucres programme, Village of the future, off programme of european conference on energy transition  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | • Number of meetings proposed by the community / year - Every year
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Communication and Digital Dept
+Related policies | TETE-CAE label, Halle aux sucres programme, Village of the future, off programme of european conference on energy transition
+Action tracking
+Numerical monitoring indicator and refresh frequency | • Number of meetings proposed by the community / year - Every year
 • Annual budget dedicated to consultation - Every year  |   |   |
-|  Impact indicator and refresh rate |   |   |   |
-|  Funding terms  |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners |   |   |   |
-|  Prioritization by CUD’s jurisdiction | 1 | Prioritization according to the level of impact | 3  |
+Impact indicator and refresh rate
+Funding terms
+Planned budget
+Financial partners
+Prioritization by CUD’s jurisdiction | 1 | Prioritization according to the level of impact | 3
 
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
 3
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 3 | Actors all involved in the C.A.E policy  |   |   |
-| --- | --- | --- | --- |
-|  Action 25 | Continue education and awareness-raising activities in schools and early childhood centres  |   |   |
-|  Objectives | Awareness-raising (energy/climate/air culture of elected officials, services and residents)
+Axis 3 | Actors all involved in the C.A.E policy
+Action 25 | Continue education and awareness-raising activities in schools and early childhood centres
+Objectives | Awareness-raising (energy/climate/air culture of elected officials, services and residents)
 • The local authority is developing education and awareness-raising actions on the climate-air-energy issue in schools, nurseries and daycare centres. These actions are varied (form and content), and involve students, teachers and staff. As far as possible, they are integrated into an overall educational project and are planned over the year or even the entire cycle. Some actions are directly aimed at reducing energy and water consumption and pollutant emissions linked to the use of premises and school travel.
 • The OUICHANGE association has submitted a contribution under the PCAET by proposing various actions to raise awareness of our carbon footprint. - "Convinced that the ecological transition can only be achieved with the mobilization of citizens and in particular the enthusiasm of young people, the OuiChange association, whose objective is to contribute to reducing everyone's carbon footprint, is mainly aimed at the school environment. OuiChange has developed an inclusive program from PS to CM2 based on the national education programs (ESD 2030) with themes around food, waste, consumption... It supports teachers (training materials, projects, workshops), students (putting them into action via challenges) but also parents (conferences, participation in challenges and projects) in a joyful and sustainable ecological transition. In addition, collective catering can be involved in developing healthy, diversified meals that use local production. This program, which was already implemented in Lille schools at the start of the 2021 school year, after a pilot school test in 2020, is giving very exciting results. Having joined the association as a referent in Dunkirk, I wish to develop this approach in Dunkirk schools to contribute, or even accelerate, the ecological transition in which the CUD is already strongly committed."  |   |   |
-|  Context of the action |   |   |   |
-|  Sub- actions | Meet local education and early childhood stakeholders and organize themselves to carry out joint actions
+Context of the action
+Sub- actions | Meet local education and early childhood stakeholders and organize themselves to carry out joint actions
 To support the OUICHANGE association in the implementation of the proposed actions
 Raising children's awareness of climate-air-energy issues and eco-citizenship
 Set up pedestrian or bicycle bus lines as part of a School Travel Plan (PDES)
 Sustaining and massively raising awareness
 Monitor results and achieve set objectives
 HAS 2022 exhibition + educational space at the Cdkerque WWTP (inauguration April 2022) to raise awareness among the general public  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept in charge | Management of the Halle aux sucres
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Management of the Halle aux sucres
 Quality of Life and Environment Dept
 Children's Dept (City of Dunkirk)  |   |   |
-|  Related policies | Label TETE-CAE  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | • Share of schools covered by a PDES or a pedestrian bus/bicycle bus - Every year
+Related policies | Label TETE-CAE
+Action tracking
+Numerical monitoring indicator and refresh frequency | • Share of schools covered by a PDES or a pedestrian bus/bicycle bus - Every year
 • % of establishments participating in the eco-school approach (labelled or not) - Every year
 • % of students involved in an awareness-raising approach
 • Number of events organized and participation
 • Energy consumption of community-managed schools/early childhood facilities - Every year
 • Water consumption of community-managed schools/early childhood facilities - Every year  |   |   |
-|  Impact indicator and refresh rate | Funding terms  |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners | Dept, Region  |   |   |
-|  Prioritization by CUD's jurisdiction | 2 | Prioritization according to the level of impact | 3  |
+Impact indicator and refresh rate | Funding terms
+Planned budget
+Financial partners | Dept, Region
+Prioritization by CUD's jurisdiction | 2 | Prioritization according to the level of impact | 3
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
 |  Axis 3 | Actors all involved in the C.A.E policy  |
@@ -2684,111 +2645,106 @@ Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality
 • The association AL UFC Que Choisir Dunkerque has submitted a contribution under the PCAET by proposing various actions to raise awareness of responsible consumption:
 Changing our daily behaviour
 Grow/consume responsibly and locally  |   |
-|  Context of the action | - Reducing the volume of our waste and better recovering it
+Context of the action | - Reducing the volume of our waste and better recovering it
 Using the animation tools available from UFC Que Choisir national, give information, share solutions, provoke reflection, on the theme of more responsible consumption
 Photo exhibition on waste
 Communication of a map on the short circuit in our territory
 Visit a sorting centre, inform about recycling logos, battery and household appliance collection points
 Organize workshops to present alternative solutions to our consumption patterns (e.g. creation of bee-wraps, which reduces the use of plastics and therefore the production of waste)
 How to limit your electricity consumption? What financial aid is available in the area?  |
-|  Sub- actions | • Organize internally and locally to raise awareness among residents
+Sub- actions | • Organize internally and locally to raise awareness among residents
 • Inform and mobilise opinion leaders (political parties, associations, NGOs)
 • Raise awareness among residents about more sober and ecological consumption and eco-gestures
 • Lead by example at events
 • Limit the influence of advertising
 • Support local eco-consumption, via a local exchange system or a local currency
 • To support the UFC Que Choisir association in the implementation of the proposed actions  |
-|  Conditions of implementation  |   |   |   |
-| --- | --- | --- | --- |
-|  Provisional schedule | 2023 to 2029 |  |   |
-|  Dept in charge | Sustainable City Dept
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Sustainable City Dept
 Local Democracy and Popular Education Dept |  |   |
-|  Related policies | TETE-CAE Label, TETE-EC Label, Ecowinner, RLPI, PLPDMA |  |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | • Number of families involved in positive energy family, 0 waste family, - Every year
+Related policies | TETE-CAE Label, TETE-EC Label, Ecowinner, RLPI, PLPDMA
+Action tracking
+Numerical monitoring indicator and refresh frequency | • Number of families involved in positive energy family, 0 waste family, - Every year
 • Number of families and population of the territory covered seeking to actively reduce their energy consumption - Annually
 • Number of people sensitized during actions planned by the community and its partners |  |   |
-|  Impact indicator and refresh rate |  |  |   |
-|  Funding terms  |   |   |   |
-|  Planned budget |  |  |   |
-|  Financial partners |  |  |   |
-|  Prioritization by CUD's jurisdiction | 2 | Prioritization according to the level of impact | 3  |
+Impact indicator and refresh rate
+Funding terms
+Planned budget
+Financial partners
+Prioritization by CUD's jurisdiction | 2 | Prioritization according to the level of impact | 3
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 4 | Buildings that respect the environment and health  |
-| --- | --- |
-|  Action 27 | Plan the renovation of residential buildings and sustainable construction on the territory  |
-|  Objectives | GHG reduction, Energy sobriety  |
-|  Context of the action | Residential buildings
+Axis 4 | Buildings that respect the environment and health
+Action 27 | Plan the renovation of residential buildings and sustainable construction on the territory
+Objectives | GHG reduction, Energy sobriety
+Context of the action | Residential buildings
 The residential stock is responsible for 2/3 of GHG emissions from the building sector. The integration of climate-air-energy issues and objectives within the PLUiHD/PLH makes it possible to mobilise housing stakeholders and to be consistent with the renovation and sustainable construction objectives set out in the Territorial Climate Air Energy Plan. It is necessary to encourage all the players in the territory to stimulate the launch of energy-efficient rehabilitation and construction projects for the private sector.
 The local authority has one or more mechanisms structuring the construction and renovation policy of buildings (residential and tertiary) on its territory, aimed at promoting climate-air-energy performance. This policy prioritizes actions and sets operational and territorial quantified objectives (number, type of buildings and level of performance, optimization of surface areas to reduce the need for new buildings and improve the use of existing buildings, etc.), in accordance with national objectives (the implementation of the energy renovation plan for housing).
 The local strategy is formalised: in a local housing programme (PLH), in a tertiary sector renovation strategy or in the framework documents of a FAIRE advice centre, for example. It is built in a transversal and integrated way with travel planning, land use planning, urban planning and the territorial climate, air and energy plan.  |
-|  Sub- actions | • Considering climate, air and energy issues in the "housing" strategy
+Sub- actions | • Considering climate, air and energy issues in the "housing" strategy
 • Build the building policy in a transversal and integrated way with other themes and actors
 • Setting high performance levels to be achieved for building construction and renovations
 • Involve in the planning of operational and financial arrangements
 • Observe and evaluate the progress of construction and efficient renovation in the territory
 • Enforce NPNRU policy  |
-|  Conditions of implementation  |   |
-|  Provisional schedule | 2023 to 2029  |
-|  Dept in charge | Housing and Housing Dept
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Housing and Housing Dept
 Urban Renewal Project Management  |
-|  Related policies | NPNRU, PLUiHD/PLH, Eco-habitat Program, TETE/CAE Label  |
-|  Action tracking  |   |
-|  Numerical monitoring indicator and refresh frequency | Number of homes renovated (number of homes renovated/100 existing homes) - Every year  |
-|  Impact indicator and refresh rate | Reducing energy consumption in the residential sector  |
-|  Funding terms  |   |
-|  Planned budget |   |
-|  Financial partners | Aids from ANAH, Ma Prime Rénov, Hauts-de-France Pass Renovation, CEE, SPEE  |
-|  Prioritization by CUD's jurisdiction | 2
+Related policies | NPNRU, PLUiHD/PLH, Eco-habitat Program, TETE/CAE Label
+Action tracking
+Numerical monitoring indicator and refresh frequency | Number of homes renovated (number of homes renovated/100 existing homes) - Every year
+Impact indicator and refresh rate | Reducing energy consumption in the residential sector
+Funding terms
+Planned budget
+Financial partners | Aids from ANAH, Ma Prime Rénov, Hauts-de-France Pass Renovation, CEE, SPEE
+Prioritization by CUD's jurisdiction | 2
 Prioritization according to the level of impact
-|
 
 6
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan – Greater Dunkirk
 
-|  Axis 4 | Buildings that respect the environment and health  |
-| --- | --- |
-|  Action 28 | Supporting and controlling construction and renovation work  |
-|  Objectives | GHG reduction, Energy sobriety  |
-|  Context of the action | The planning authorisation and works control procedures aim to promote the emergence of better-quality construction and renovation in the territory, in terms of climate-air-energy performance. Petitioners are made aware of and supported in this regard, as it is essential to guide individuals and builders, even before the building permit is filed, towards sustainable construction to avoid "coup partis". The petitioners' contacts with the local authority during their administrative procedures make it possible to raise their awareness of energy efficiency and the development of renewable energies outside the usual events for the public and in a more targeted manner. The detailed monitoring of urban planning authorisations makes it possible to collect data and check whether all the awareness-raising actions and aid (financial or technical) are bearing fruit in a diffuse manner in the territory.
+Axis 4 | Buildings that respect the environment and health
+Action 28 | Supporting and controlling construction and renovation work
+Objectives | GHG reduction, Energy sobriety
+Context of the action | The planning authorisation and works control procedures aim to promote the emergence of better-quality construction and renovation in the territory, in terms of climate-air-energy performance. Petitioners are made aware of and supported in this regard, as it is essential to guide individuals and builders, even before the building permit is filed, towards sustainable construction to avoid "coup partis". The petitioners' contacts with the local authority during their administrative procedures make it possible to raise their awareness of energy efficiency and the development of renewable energies outside the usual events for the public and in a more targeted manner. The detailed monitoring of urban planning authorisations makes it possible to collect data and check whether all the awareness-raising actions and aid (financial or technical) are bearing fruit in a diffuse manner in the territory.
 
 REGULATION
 Decree No. 2013-979 of 30 October 2013: for PCs submitted after 1 January 2014, feasibility studies for energy supplies are mandatory for all new buildings over 50m² (except buildings for which thermal regulations require the use of a renewable energy source).
 Grenelle 2: a certificate from a service provider independent of the project manager concerning compliance with the RT2012 is required upon completion of the work (decree of 18 May 2011). The ZPPAUP are replaced by the Architecture and Heritage Enhancement Areas (AVAP), to facilitate energy renovation, in a more concerted process.  |
-|  Sub- actions | - Organize the entire chain of actors in charge of the examination and granting of building permits for increased attention to the climate-air-energy theme
+Sub- actions | - Organize the entire chain of actors in charge of the examination and granting of building permits for increased attention to the climate-air-energy theme
 Disseminate information on requests for authorization
 Verify, as far as possible, compliance with the requirements (monitoring compliance with thermal regulations (for the elements visible on the plans and via the certificates of conformity) and taking into account the vulnerabilities of the territory to climate change; monitoring compliance with mobility requirements in private law contracts; monitoring of supporting documents for compliance with environmental performance criteria in the case of the improvement of building rights; the instructors carry out at least two inspections per year in the field; attention paid to on-board renovation (verification of justifications); referral to the competent structures to monitor the following; energy consumption before and after work)
 Track compliance attestations  |
-|  Conditions of implementation  |   |
-|  Provisional schedule | 2023 to 2029  |
-|  Dept in charge | Sustainable City Dept – Common Service for Urban Planning Authorizations  |
-|  Related policies | PLUiHD  |
-|  Action tracking  |   |
-|  Numerical monitoring indicator and refresh frequency | - Average stock on CPs deposited during the year
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Sustainable City Dept – Common Service for Urban Planning Authorizations
+Related policies | PLUiHD
+Action tracking
+Numerical monitoring indicator and refresh frequency | - Average stock on CPs deposited during the year
 Average BBio on PCs deposited during the year
 Number of PCs with Cep<RT2012
 Number of transactions exceeding the RT in force / total number of transactions carried out in the year  |
-|  Impact indicator and refresh rate |   |
-|  Funding terms  |   |
-|  Planned budget |   |
-|  Financial partners |   |
-|  Prioritization by CUD's jurisdiction | 2
+Impact indicator and refresh rate
+Funding terms
+Planned budget
+Financial partners
+Prioritization by CUD's jurisdiction | 2
 Prioritization according to the level of impact  |
 
 7
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 4 | Buildings that respect the environment and health  |
-| --- | --- |
-|  Action 29 | Cooperating with professional actors in the building and real estate industry  |
-|  Objectives | GHG reduction, Energy sobriety, Awareness-raising (energy/climate/air culture of elected officials, services and residents)  |
-|  Context of the action | The local authority informs and encourages professional building stakeholders (social landlords, developers, investors, craftsmen, design offices, property managers, notaries, real estate agents, etc.) to integrate climate-air-energy issues into their activities. These actions are carried out via FAIRE advice spaces or voluntary agreements, containing high construction and renovation standards, energy efficiency objectives, and raising awareness among occupants.
+Axis 4 | Buildings that respect the environment and health
+Action 29 | Cooperating with professional actors in the building and real estate industry
+Objectives | GHG reduction, Energy sobriety, Awareness-raising (energy/climate/air culture of elected officials, services and residents)
+Context of the action | The local authority informs and encourages professional building stakeholders (social landlords, developers, investors, craftsmen, design offices, property managers, notaries, real estate agents, etc.) to integrate climate-air-energy issues into their activities. These actions are carried out via FAIRE advice spaces or voluntary agreements, containing high construction and renovation standards, energy efficiency objectives, and raising awareness among occupants.
 As part of the call for contributions launched under the PCAET on the "changing life together" platform, several contributions have been submitted and will feed this action:
 • SA D'HLM LE COTTAGE SOCIAL DES FLANDRES - Groupe HABITAT proposes to rehabilitate its heritage and raise awareness among tenants about their energy consumption and good practices in housing. Fight against fuel poverty and affirm a renovated, low-carbon, healthy and economical residential stock
 • Flandre Opale Habitat proposes to invest in the housing of tomorrow, in particular to meet the new challenges of housing, to build and rehabilitate in an eco-responsible way
 • PARTENORD HABITAT proposes to fight against fuel poverty and affirm a renovated, low-carbon, healthy and economical residential stock.  |
-|  Sub- actions | • Have a detailed knowledge of the building and private real estate players and raise their awareness of climate-air-energy issues
+Sub- actions | • Have a detailed knowledge of the building and private real estate players and raise their awareness of climate-air-energy issues
 • Animate and encourage stakeholders to qualify their practices (via the BEEP resource centres and energy renovation actors, the local authority promotes the animation of stakeholders, the networking of building professionals and their visibility, tax exemptions and subsidies for building rights to encourage private actors to build and renovate sustainably)
 • Social landlords are committed to particularly ambitious actions alongside the community
 • Have a formalized strategy for mobilizing building and real estate professionals
@@ -2796,94 +2752,90 @@ As part of the call for contributions launched under the PCAET on the "changing 
 • Continue the rehabilitation and renovation of the social housing stock by promoting interventions to reduce the energy footprint and green the social housing stock
 • Promote connection to UCRs where technically feasible
 • Promote awareness-raising actions among residents  |
-|  Conditions of implementation |   |
-|  Provisional schedule | 2023 to 2029  |
-|  Dept in charge | Housing and Housing Dept
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Housing and Housing Dept
 Urban Renewal Project Management  |
-|  Related policies | NPNRU, aid for stone  |
-|  Action tracking |   |
-|  Numerical monitoring indicator and refresh frequency | • Average share of construction companies qualified in RGE (%)
+Related policies | NPNRU, aid for stone
+Action tracking
+Numerical monitoring indicator and refresh frequency | • Average share of construction companies qualified in RGE (%)
 • Number of partnerships with building stakeholders
 • Number of artisan groups
 • Energy and GHG savings generated by boards  |
-|  Impact indicator and refresh rate |   |
-|  Funding terms |   |
-|  Planned budget |   |
-|  Financial partners |   |
-|  Prioritization by CUD's jurisdiction | 2  |
-|  Prioritization according to the level of impact | 1  |
+Impact indicator and refresh rate
+Funding terms
+Planned budget
+Financial partners
+Prioritization by CUD's jurisdiction | 2
+Prioritization according to the level of impact | 1
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 4 | Buildings that respect the environment and health  |
-| --- | --- |
-|  Action 30 | Preventing and combating energy poverty  |
-|  Objectives | GHG reduction, Energy sobriety, Awareness-raising (energy/climate/air culture of elected officials, services and residents)  |
-|  Context of the action | The local authority is committed to a policy of prevention and fight against fuel poverty (related to housing and mobility) and includes it in its strategic documents.
+Axis 4 | Buildings that respect the environment and health
+Action 30 | Preventing and combating energy poverty
+Objectives | GHG reduction, Energy sobriety, Awareness-raising (energy/climate/air culture of elected officials, services and residents)
+Context of the action | The local authority is committed to a policy of prevention and fight against fuel poverty (related to housing and mobility) and includes it in its strategic documents.
 The local authority initially carried out an inventory of the actors involved in fuel poverty and the existing actions, on which it can build its system.
 The local authority makes the best use of the human resources available to identify situations of fuel poverty and direct families directly to existing schemes or indirectly to specialised associations. In a partnership approach, actions aimed at reducing fuel poverty are carried out. The CUD has already carried out an inventory of energy poverty linked to housing and mobility in the territory and adopted a strategy to combat energy poverty linked to housing and mobility.
 
 As part of the call for contributions launched under the PCAET on the "changing life together" platform, GrDF has submitted a contribution that will feed this action:
 GRDF proposes to support the eco-winning approach by allocating aid, in consultation with the CUD's housing services, to accelerate the conversion of oil heating to gas (natural gas / green gas).  |
-|  Sub- actions | - Update every 2 years the state of energy poverty related to housing and mobility in the territory
+Sub- actions | - Update every 2 years the state of energy poverty related to housing and mobility in the territory
 Implement the strategy to combat energy poverty related to housing and mobility
 Federate stakeholders around the issue of fuel poverty to initiate prevention against energy poverty
 Formalize a range of tools for households in precarious situations  |
-|  Conditions of implementation  |   |
-|  Provisional schedule | 2023 to 2029  |
-|  Dept in charge | Housing and Housing Dept  |
-|  Related policies | Eco-winner: eco-habitat bonus and eco-habitat + premium, TETE/CAE label (measure 6.2.2)  |
-|  Action tracking  |   |
-|  Numerical monitoring indicator and refresh frequency | • Number of households applying for and benefiting from the FSL for assistance with the payment of energy bills in the territory
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Housing and Housing Dept
+Related policies | Eco-winner: eco-habitat bonus and eco-habitat + premium, TETE/CAE label (measure 6.2.2)
+Action tracking
+Numerical monitoring indicator and refresh frequency | • Number of households applying for and benefiting from the FSL for assistance with the payment of energy bills in the territory
 • Number of "Living Better" applications submitted to Anah in the territory
 • % of households in a situation of energy poverty in the territory (cf. ONPE indicators based on the energy effort rate -TEE), the indicator "low incomes high expenses" -BRDE- and the perceived cold)
 • Amount of financial aid for energy from CCAS/CIAS  |
-|  Impact indicator and refresh rate | kWhcumac saved via the "energy poverty" CEEs  |
-|  Funding terms  |   |
-|  Planned budget | ANAH, Ma Prime Rénov, Hauts-de-France Pass Renovation, CEE, SPEE  |
-|  Financial partners |   |
-|  Prioritization by CUD's jurisdiction | 2  |
-|  Prioritization according to the level of impact | 2  |
+Impact indicator and refresh rate | kWhcumac saved via the "energy poverty" CEEs
+Funding terms
+Planned budget | ANAH, Ma Prime Rénov, Hauts-de-France Pass Renovation, CEE, SPEE
+Financial partners
+Prioritization by CUD's jurisdiction | 2
+Prioritization according to the level of impact | 2
 
 9
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 4 | Buildings that respect the environment and health  |
-| --- | --- |
-|  Action 31 | Supporting individuals in the renovation and sustainable construction of their homes (individual and collective housing)  |
-|  Objectives | GHG reduction, Energy sobriety, Awareness-raising (energy/climate/air culture of elected officials, services and residents)  |
-|  Context of the action | The local authority manages or supports one or more (local or regional) climate, air and energy advisory centres for individuals. It also provides financial support for high-energy renovation work in the residential sector. These missions are ideally carried out by a one-stop shop such as the FAIRE advice centre.
+Axis 4 | Buildings that respect the environment and health
+Action 31 | Supporting individuals in the renovation and sustainable construction of their homes (individual and collective housing)
+Objectives | GHG reduction, Energy sobriety, Awareness-raising (energy/climate/air culture of elected officials, services and residents)
+Context of the action | The local authority manages or supports one or more (local or regional) climate, air and energy advisory centres for individuals. It also provides financial support for high-energy renovation work in the residential sector. These missions are ideally carried out by a one-stop shop such as the FAIRE advice centre.
 The CUD has also set up two programs: the Eco-Habitat Premium and the Eco-Habitat+ Premium
 The Eco-Habitat Bonus is aimed at all private owners, occupants and landlords residing in the territory when the work project leads to a minimum energy gain of 35%. It offers personalized advice and comprehensive and qualitative support.
 the Eco-habitat + bonus is intended for residents of the Dunkirk Urban Community or not, who purchase an existing home on the territory of the Dunkirk Urban Community as of 1 September 2021, who have not been owners in the two years preceding this acquisition, who are committed to a programme of energy renovation work, as part of the Eco-habitat scheme.
 
 As part of the call for contributions launched under the PCAET on the "changing life together" platform, GrDF has submitted a contribution that will feed this action:
 GRDF proposes to support the eco-winning approach by allocating aid, in consultation with the CUD's housing services, to accelerate the conversion of oil heating to gas (natural gas / green gas).  |
-|  Sub- actions | - Have climate-air-energy information services that are visible and accessible to the individual
+Sub- actions | - Have climate-air-energy information services that are visible and accessible to the individual
 To provide advice on BBC renovation and construction to various targets
 Accompany the individual until the energy renovation work (FAIRE advice area in particular)
 To provide financial support to individuals, through the Eco-habitat and Eco-habitat + premiums
 Measuring the results of the support
 Setting up a monitoring system for subsidized projects to analyze the effectiveness of the resources invested  |
-|  Conditions of implementation  |   |
-|  Provisional schedule | 2023 to 2029  |
-|  Dept in charge | Housing and Housing Directorate  |
-|  Related policies | Eco-winner: eco-habitat bonus and eco-habitat + bonus, TETE-CAE label  |
-|  Action tracking  |   |
-|  Numerical monitoring indicator and refresh frequency | • Number of hours of consultations and advice on the climate, air and energy theme per 100 inhabitants / year
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Housing and Housing Directorate
+Related policies | Eco-winner: eco-habitat bonus and eco-habitat + bonus, TETE-CAE label
+Action tracking
+Numerical monitoring indicator and refresh frequency | • Number of hours of consultations and advice on the climate, air and energy theme per 100 inhabitants / year
 • Number of energy-efficient dwellings renovated (number of renovated dwellings/100 existing dwellings)  |
-|  Impact indicator and refresh rate |   |
-|  Funding terms  |   |
-|  Planned budget |   |
-|  Financial partners | ANAH, Ma Prime Rénov, Hauts-de-France Pass Renovation, CEE, SPEE  |
-|  Prioritization by CUD's jurisdiction | 2^{1}
+Impact indicator and refresh rate
+Funding terms
+Planned budget
+Financial partners | ANAH, Ma Prime Rénov, Hauts-de-France Pass Renovation, CEE, SPEE
+Prioritization by CUD's jurisdiction | 2^{1}
 Prioritization according to the level of impact
-|
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 4 | Buildings that respect the environment and health  |
-| --- | --- |
-|  Action 32 | Supporting tertiary sector players in the renovation and sustainable construction of their premises  |
-|  Objectives | GHG reduction, Energy sobriety, Awareness-raising (energy/climate/air culture of elected officials, services and residents)
+Axis 4 | Buildings that respect the environment and health
+Action 32 | Supporting tertiary sector players in the renovation and sustainable construction of their premises
+Objectives | GHG reduction, Energy sobriety, Awareness-raising (energy/climate/air culture of elected officials, services and residents)
 
 The ELAN law (Evolution of Housing, Development and Digital Technology) has included in the Construction and Housing Code an obligation to reduce the energy consumption of buildings under public procurement
 
@@ -2897,118 +2849,112 @@ Rationalize and pool the construction of new tertiary premises
 Encourage the limitation of specific electricity consumption specific to the tertiary sector: help to set up an energy management system and encourage the certification of companies (ISO 50 001, ISO 26 000) then raise awareness and disseminate good practices
 Cooperate with other public tertiary sector players in the territory (education, hospitals, administrative services, etc.)
 Measure the results of the coaching activity  |
-|  Context of the action | Conditions of implementation  |
-|  Provisional schedule | 2023 to 2029  |
-|  Dept in charge | Entrepreneurship, Trade and Innovation Dept
+Context of the action | Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Entrepreneurship, Trade and Innovation Dept
 Tourism, yachting and boating Dept  |
-|  Related policies |   |
-|  Action tracking |   |
-|  Numerical monitoring indicator and refresh frequency | Number of tertiary premises renovated or new exemplary, which have been supported by the local authority  |
-|  Impact indicator and refresh rate | Reduction of energy consumption in the tertiary sector  |
-|  Funding terms |   |
-|  Planned budget |   |
-|  Financial partners | EEC  |
-|  Prioritization by CUD's jurisdiction | 2
+Related policies
+Action tracking
+Numerical monitoring indicator and refresh frequency | Number of tertiary premises renovated or new exemplary, which have been supported by the local authority
+Impact indicator and refresh rate | Reduction of energy consumption in the tertiary sector
+Funding terms
+Planned budget
+Financial partners | EEC
+Prioritization by CUD's jurisdiction | 2
 Prioritization according to the level of impact
-|
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 5 | Preserved air quality  |
-| --- | --- |
-|  Action 33 | Setting up energy and GHG emissions accounting for public buildings  |
-|  Objectives | Reduction of air pollutants and population exposure, Awareness-raising (energy/climate/air culture of elected officials, services and residents)  |
-|  Context of the action | Indoor air quality is an issue that is little known to residents but a major one for health. The CUD territory is also affected by exceedances in the concentration of certain atmospheric pollutants. In addition to the measures taken to improve air quality (Dunkirk air quality working group, creative energy, industrial actions, Low Emission Zone for mobility, etc.), the dissemination of air quality indices and the right actions to take during pollution peaks should make it possible to reduce the population's exposure to degraded air. As part of the call for contributions launched under the PCAET on the "changing life together" platform, SUEZ has submitted a contribution that will help fuel this action: SUEZ proposes to implement a demonstrator for an innovative air quality monitoring solution with high spatial and temporal resolution. This decision-making tool will provide a better understanding of air pollution in connection with economic activities and then support stakeholders in their actions to improve air quality.  |
-|  Sub- actions | - Implement the "SUEZ demonstrator"
+Axis 5 | Preserved air quality
+Action 33 | Setting up energy and GHG emissions accounting for public buildings
+Objectives | Reduction of air pollutants and population exposure, Awareness-raising (energy/climate/air culture of elected officials, services and residents)
+Context of the action | Indoor air quality is an issue that is little known to residents but a major one for health. The CUD territory is also affected by exceedances in the concentration of certain atmospheric pollutants. In addition to the measures taken to improve air quality (Dunkirk air quality working group, creative energy, industrial actions, Low Emission Zone for mobility, etc.), the dissemination of air quality indices and the right actions to take during pollution peaks should make it possible to reduce the population's exposure to degraded air. As part of the call for contributions launched under the PCAET on the "changing life together" platform, SUEZ has submitted a contribution that will help fuel this action: SUEZ proposes to implement a demonstrator for an innovative air quality monitoring solution with high spatial and temporal resolution. This decision-making tool will provide a better understanding of air pollution in connection with economic activities and then support stakeholders in their actions to improve air quality.
+Sub- actions | - Implement the "SUEZ demonstrator"
 Study the results of this monitoring and deduce the priority actions to be carried out
 Supporting territorial stakeholders in their actions to improve air quality
 Improve communication with residents on air quality (indoor and outdoor) and the actions to be taken in the event of peaks
 Implementation of the LEG'AIR project (monitoring of indoor air quality in a district undergoing renewal)
 Improving knowledge of endocrine disruptors
 Raise awareness among administrations and educational facilities of the challenges of indoor air quality and good practices to improve it  |
-|  Conditions of implementation  |   |
-|  Provisional schedule | 2023 to 2029  |
-|  Dept in charge | Quality of Life Environment Dept
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Quality of Life Environment Dept
 Sustainable City Dept  |
-|  Related policies | LEG'AIR project  |
-|  Action tracking  |   |
-|  Numerical monitoring indicator and refresh frequency | • Demonstrator set up
+Related policies | LEG'AIR project
+Action tracking
+Numerical monitoring indicator and refresh frequency | • Demonstrator set up
 • Number of educational facilities that have implemented actions in favour of indoor air quality
 • Number of government buildings that have implemented actions to promote indoor air quality  |
-|  Impact indicator and refresh rate | Pollutant concentrations in indoor air  |
-|  Funding terms  |   |
-|  Planned budget |   |
-|  Financial partners | SUEZ, ATMO, ADEME, DREAL,  |
-|  Prioritization by CUD's jurisdiction | 1
+Impact indicator and refresh rate | Pollutant concentrations in indoor air
+Funding terms
+Planned budget
+Financial partners | SUEZ, ATMO, ADEME, DREAL,
+Prioritization by CUD's jurisdiction | 1
 Prioritization according to the level of impact
-|
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan – Greater Dunkirk
 
-|  Axis 5 | Preserved air quality  |
-| --- | --- |
-|  Action 34 | Improving knowledge of the links between air quality and health and involving the population  |
-|  Objectives | Reduction of air pollutants and population exposure, Awareness-raising (energy/climate/air culture of elected officials, services and residents)  |
-|  Context of the action | On average, each human being breathes about 14,000 liters of air per day. Many scientific studies agree on the impact of air pollution on human health. Thus, a study by Santé Public France estimates that the impact of air pollution represents 48,000 premature deaths per year (i.e. 9% of mortality in France) and a loss of life expectancy at age 30 that can exceed 2 years (source: https://www.ecologie.gouv.fr/).
+Axis 5 | Preserved air quality
+Action 34 | Improving knowledge of the links between air quality and health and involving the population
+Objectives | Reduction of air pollutants and population exposure, Awareness-raising (energy/climate/air culture of elected officials, services and residents)
+Context of the action | On average, each human being breathes about 14,000 liters of air per day. Many scientific studies agree on the impact of air pollution on human health. Thus, a study by Santé Public France estimates that the impact of air pollution represents 48,000 premature deaths per year (i.e. 9% of mortality in France) and a loss of life expectancy at age 30 that can exceed 2 years (source: https://www.ecologie.gouv.fr/).
 
 As part of the call for contributions launched under the PCAET on the "changing life together" platform, the Local Health Observatory (OLS) has submitted a contribution that will improve knowledge on the links between air quality and health and involve the population.
 As part of the implementation of the OLS, various actions are carried out in order to better understand the state of health of the population, but also to develop new data on the links between air quality and health.
 To do this, the OLS works with the various local actors, whether they are the structures recognized for their expertise in health: ARS, CPAM, hospitals, OR2S, but also with universities (ULCO and University of Pharmacy of Lille) for the implementation of research work to improve knowledge of air quality at the scale of the CUD and the CCHF, but also on the impact on health. At the same time, the work of the OLS is geared towards residents in order to better understand how they perceive air quality, in order to see which are the most relevant modes of communication to make them actors in their health and to encourage them to adopt the right actions in order to limit their exposure and their impact on air quality, both indoor and outdoor.  |
-|  Sub- actions | Support the OLS in the implementation of the actions proposed by their contribution
+Sub- actions | Support the OLS in the implementation of the actions proposed by their contribution
 Pursue the following research programs:
 Operation "Impact of Air Pollutants on Human Health (UCEIV)"
 operation "Bio-indication of air quality by lichens (University of Lille)"
 operation "Bio-indication of air quality by bees (GPMD)"
 operation "Air quality and health: perception, information and behaviour of the actors of the Dunkirk territory (TVES)"
 Guarantee the proper functioning of pollen sensors and work to communicate and raise awareness of pollen information to the population and health professionals via the live pollen® application  |
-|  Conditions of implementation  |   |
-|  Provisional schedule | 2023 to 2029  |
-|  Dept in charge | Local Health Observatory - Coastal Health Area
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Local Health Observatory - Coastal Health Area
 Sustainable City Management  |
-|  Related policies | Territorial health policy  |
-|  Action tracking  |   |
-|  Numerical monitoring indicator and refresh frequency | - Operation "Impact of air pollutants on human health (UCEIV) carried out
+Related policies | Territorial health policy
+Action tracking
+Numerical monitoring indicator and refresh frequency | - Operation "Impact of air pollutants on human health (UCEIV) carried out
 Operation "Bio-indication of air quality by lichens (University of Lille)" carried out
 Operation "Bio-indication of air quality by bees (GPMD)" carried out
 Operation "Air quality and health: perception, information and behaviour of the actors of the Dunkirk territory (TVES)" carried out
 Number of pollen collectors in the territory  |
-|  Impact indicator and refresh rate |   |
-|  Funding terms  |   |
-|  Planned budget |   |
-|  Financial partners |   |
-|  Prioritization by CUD's jurisdiction | 2  |
-|  Prioritization according to the level of impact | 3  |
+Impact indicator and refresh rate
+Funding terms
+Planned budget
+Financial partners
+Prioritization by CUD's jurisdiction | 2
+Prioritization according to the level of impact | 3
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 5 | Preserved air quality  |
-| --- | --- |
-|  Action 35 | Reducing industrial air emissions  |
-|  Objectives | Reduction of air pollutants and population exposure  |
-|  Context of the action | The areas concerned by the most exceedances of the air pollutant thresholds are located around industrial areas. Industry is therefore the leading source of air pollutant emissions.  |
-|  Sub- actions | - Animation and follow-up of the working group dedicated to Dunkirk's air quality, creative® energy
+Axis 5 | Preserved air quality
+Action 35 | Reducing industrial air emissions
+Objectives | Reduction of air pollutants and population exposure
+Context of the action | The areas concerned by the most exceedances of the air pollutant thresholds are located around industrial areas. Industry is therefore the leading source of air pollutant emissions.
+Sub- actions | - Animation and follow-up of the working group dedicated to Dunkirk's air quality, creative® energy
 Identify technical solutions to reduce emissions
 Draw up a roadmap for the implementation of these technical solutions
 Applying the roadmap  |
-|  Conditions of implementation  |   |
-|  Provisional schedule | 2023 to 2029  |
-|  Dept in charge | EcosystemeD  |
-|  Related policies |   |
-|  Action tracking  |   |
-|  Numerical monitoring indicator and refresh frequency | • Number of meetings of the Dunkirk air quality working group creative energy®
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | EcosystemeD
+Related policies
+Action tracking
+Numerical monitoring indicator and refresh frequency | • Number of meetings of the Dunkirk air quality working group creative energy®
 • Implementation of the Air Quality Working Group Roadmap  |
-|  Impact indicator and refresh rate | Trends in emissions of pollutants of industrial origin
+Impact indicator and refresh rate | Trends in emissions of pollutants of industrial origin
 Number of days of pollution peaks (aim for 0 days by 2027)  |
-|  Funding terms  |   |
-|  Planned budget |   |
-|  Financial partners | Caisse des dépôts et consignation  |
-|  Prioritization by CUD's jurisdiction | 3  |
-|  Prioritization according to the level of impact | 1  |
+Funding terms
+Planned budget
+Financial partners | Caisse des dépôts et consignation
+Prioritization by CUD's jurisdiction | 3
+Prioritization according to the level of impact | 1
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan – Greater Dunkirk
 
-|  Axis 6 | A resilient territory in the face of climate change  |   |   |
-| --- | --- | --- | --- |
-|  Action 36 | Use urban planning documents, diagrams, etc. to ensure the implementation of climate-air-energy objectives and to combat land artificialisation  |   |   |
-|  Objectives | GHG reduction, Energy sobriety, Development of renewable and recovered energies, Reduction of air pollutants and population exposure, Carbon sequestration on the territory, Adaptation of the territory to climate change  |   |   |
-|  Context of the action | Urban planning documents are consistent with the community's climate-air-energy strategy, they allow for spatial translation, in a logic of circular economy and rural/urban solidarity. Incentives and enforceable provisions are provided in particular to promote bioclimatic design, narrow urban forms, the reduction of daily travel distances, sustainable mobility, energy sobriety, energy efficiency and renewable energies, heating/cooling networks, the limitation of emissions and the impact of atmospheric pollutants on the population, and adaptation to climate change. The fight against land artificialisation and the maintenance of natural, agricultural and forest areas are an integral part of the strategy put in place. By the end of 2022, the CUD will have finalised its PLUiHD, which considers Climate-Air-Energy issues. A land observatory will make it possible in the short term to promote the implementation of urban renewal projects; thus making it possible to exceed the objectives of 2/3 in urban renewal and thus protect agricultural land from artificialisation.  |   |   |
-|  Sub- actions | Integrate climate, air and energy issues into all reflections
+Axis 6 | A resilient territory in the face of climate change
+Action 36 | Use urban planning documents, diagrams, etc. to ensure the implementation of climate-air-energy objectives and to combat land artificialisation
+Objectives | GHG reduction, Energy sobriety, Development of renewable and recovered energies, Reduction of air pollutants and population exposure, Carbon sequestration on the territory, Adaptation of the territory to climate change
+Context of the action | Urban planning documents are consistent with the community's climate-air-energy strategy, they allow for spatial translation, in a logic of circular economy and rural/urban solidarity. Incentives and enforceable provisions are provided in particular to promote bioclimatic design, narrow urban forms, the reduction of daily travel distances, sustainable mobility, energy sobriety, energy efficiency and renewable energies, heating/cooling networks, the limitation of emissions and the impact of atmospheric pollutants on the population, and adaptation to climate change. The fight against land artificialisation and the maintenance of natural, agricultural and forest areas are an integral part of the strategy put in place. By the end of 2022, the CUD will have finalised its PLUiHD, which considers Climate-Air-Energy issues. A land observatory will make it possible in the short term to promote the implementation of urban renewal projects; thus making it possible to exceed the objectives of 2/3 in urban renewal and thus protect agricultural land from artificialisation.
+Sub- actions | Integrate climate, air and energy issues into all reflections
 Align urban planning policy and development objectives with climate-air-energy policy
 Transcribe climate-air-energy commitments into the various documents and planning schemes, particularly in the enforceable sections where relevant
 To know and protect natural, agricultural and forest areas from land artificialisation via urban planning documents and the associated land policy
@@ -3022,30 +2968,29 @@ Limiting the use of air conditioning in buildings
 impact on water supply and more generally on water networks
 impact on agricultural, industrial and tourism activities
 Impact on conventional and renewable means of energy production  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept in charge | Sustainable City Management  |   |   |
-|  Related policies | PLUiHD, TETE-CAE Label, Sustainable and Innovative City Label  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | • Number of new collective and individual dwellings grouped together / total number of dwellings authorised during the year (available in the SITADEL database).
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Sustainable City Management
+Related policies | PLUiHD, TETE-CAE Label, Sustainable and Innovative City Label
+Action tracking
+Numerical monitoring indicator and refresh frequency | • Number of new collective and individual dwellings grouped together / total number of dwellings authorised during the year (available in the SITADEL database).
 • Share of fallow land
 • Share of agricultural and natural land (%)
 • Annual artificialised area (ha/year)  |   |   |
-|  Impact indicator and refresh rate |   |   |   |
-|  Funding terms  |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners |   |   |   |
-|  Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 1  |
+Impact indicator and refresh rate
+Funding terms
+Planned budget
+Financial partners
+Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 1
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 6 | A resilient territory in the face of climate change  |   |   |
-| --- | --- | --- | --- |
-|  Action 37 | Fighting against the risk of flooding  |   |   |
-|  Objectives | Adaptation of the territory to climate change, Awareness-raising (energy/climate/air culture of elected officials, services and residents)  |   |   |
-|  Context of the action | Since January 1, 2016, the CUD has obtained the mandatory competence in the field of "Management of Aquatic Environments and Flood Prevention" (GEMAPI)  |   |   |
-|   |  The CUD is a member of the Association for the Operational Development and Promotion of Alternative Rainwater Techniques (ADOPTA).
+Axis 6 | A resilient territory in the face of climate change
+Action 37 | Fighting against the risk of flooding
+Objectives | Adaptation of the territory to climate change, Awareness-raising (energy/climate/air culture of elected officials, services and residents)
+Context of the action | Since January 1, 2016, the CUD has obtained the mandatory competence in the field of "Management of Aquatic Environments and Flood Prevention" (GEMAPI)
+The CUD is a member of the Association for the Operational Development and Promotion of Alternative Rainwater Techniques (ADOPTA).
 This association ensures a technological watch on the sustainable management of rainwater.  |   |   |
-|  Sub- actions | Developing and strengthening integrated territorial water management
+Sub- actions | Developing and strengthening integrated territorial water management
 ° the development of knowledge of existing water flows (quantity and quality) for a better anticipation of the needs or impacts of climate change,
 ° the development of a vision of the economy and the circular ecology of water and its by-products in close interface with potentially impacted public policies (maritime, agricultural, industrial, etc.),
 ° the formalisation and coordination of water governance in the territory,
@@ -3055,136 +3000,131 @@ The overall heritage in the field of water is substantial. These are the assets 
 The challenges of water resource scarcity are leading us to renew and readapt existing assets:
 to avoid losses related to leaks (water and sanitation networks),
 to fight against continental floods (IIW heritage) which will be increasingly strong and regular in view of the current climate change.  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept in charge | Quality of Life and Environment Dept (Géma)
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Quality of Life and Environment Dept (Géma)
 Sustainable City Dept  |   |   |
-|  Related policies | TETE-CAE label, GéMAPI, PAPI, framework deliberation on water  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency |   |   |   |
-|  Impact indicator and refresh rate | Evolution of the number of natural disasters related to floods  |   |   |
-|  Funding terms  |   |   |   |
-|  Planned budget | GéMAPI tax  |   |   |
-|  Financial partners | ADEME, Water and Climate Programme of the Water Agency, CDC Biodiversity  |   |   |
-|  Prioritization by CUD's jurisdiction | 2 | Prioritization according to the level of impact | 1  |
+Related policies | TETE-CAE label, GéMAPI, PAPI, framework deliberation on water
+Action tracking
+Numerical monitoring indicator and refresh frequency
+Impact indicator and refresh rate | Evolution of the number of natural disasters related to floods
+Funding terms
+Planned budget | GéMAPI tax
+Financial partners | ADEME, Water and Climate Programme of the Water Agency, CDC Biodiversity
+Prioritization by CUD's jurisdiction | 2 | Prioritization according to the level of impact | 1
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 6 | A resilient territory in the face of climate change  |   |   |
-| --- | --- | --- | --- |
-|  Action 38 | Transcribing climate-air-energy and natural resource preservation issues into development operations  |   |   |
-|  Objectives | GHG reduction, Energy sobriety, Development of renewable and recovered energies, Reduction of air pollutants and population exposure, Carbon sequestration on the territor, Adaptation of the territory to climate change  |   |   |
-|  Context of the action | The encouragement of energy sobriety, energy efficiency, the adaptation and fight against climate change and the use of renewable energies, the preservation of air quality, are important criteria in the development operations of the community. Specific requirements are integrated into urban planning/architecture calls for tenders on this subject, as well as when selling land belonging to the local authority or for any other contractual arrangement involving the local authority. Development projects are carried out in the light of the challenges/principles of the circular economy.  |   |   |
-|  Sub- actions | • Organize yourself to properly manage development operations and train project managers in CAE issues in development operations (Urban-Print® tool, GES urba®, etc.)
+Axis 6 | A resilient territory in the face of climate change
+Action 38 | Transcribing climate-air-energy and natural resource preservation issues into development operations
+Objectives | GHG reduction, Energy sobriety, Development of renewable and recovered energies, Reduction of air pollutants and population exposure, Carbon sequestration on the territor, Adaptation of the territory to climate change
+Context of the action | The encouragement of energy sobriety, energy efficiency, the adaptation and fight against climate change and the use of renewable energies, the preservation of air quality, are important criteria in the development operations of the community. Specific requirements are integrated into urban planning/architecture calls for tenders on this subject, as well as when selling land belonging to the local authority or for any other contractual arrangement involving the local authority. Development projects are carried out in the light of the challenges/principles of the circular economy.
+Sub- actions | • Organize yourself to properly manage development operations and train project managers in CAE issues in development operations (Urban-Print® tool, GES urba®, etc.)
 • Adopt a multi-thematic approach in the diagnosis and design of urban projects
 • Develop a "framework" document to systematize the environmental quality of operations controlled by the community
 • Ensuring the public or semi-public project management of key development operations to better take into account climate-air-energy issues and the preservation of natural resources
 • Integrate climate-air-energy requirements into urban planning calls for tenders and land transfer specifications
 • Organize waste management from development sites in partnership with developers
 • Monitor efficiency and compliance with requirements  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept in charge | Sustainable City Management  |   |   |
-|  Related policies | TETE-CAE label, Sustainable and Resilient City label, TETE/EC label  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | • Average stock on CPs deposited during the year
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Sustainable City Management
+Related policies | TETE-CAE label, Sustainable and Resilient City label, TETE/EC label
+Action tracking
+Numerical monitoring indicator and refresh frequency | • Average stock on CPs deposited during the year
 • Average BBio on PCs deposited during the year
 • Number of PCs with Cep<RT2012
 • Number of operations exceeding the RT in force / total number of operations carried out during the year  |   |   |
-|  Impact indicator and refresh rate |   |   |   |
-|  Funding terms  |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners |   |   |   |
-|  Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 1  |
+Impact indicator and refresh rate
+Funding terms
+Planned budget
+Financial partners
+Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 1
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 6 | A resilient territory in the face of climate change  |   |   |
-| --- | --- | --- | --- |
-|  Action 39 | Managing your roads and public spaces sustainably  |   |   |
-|  Objectives | GHG reduction, Energy sobriety  |   |   |
-|  Context of the action | The local authority manages its roads in a sustainable manner: it is careful to limit the energy impact and greenhouse gas emissions of its road creation and maintenance policy, from upstream to downstream (choice of materials, implementation technique, preventive action, prioritisation of roads to be renovated, etc.). It identifies abandoned and unused parts of roads that can be declassified to be de-artificialised.
+Axis 6 | A resilient territory in the face of climate change
+Action 39 | Managing your roads and public spaces sustainably
+Objectives | GHG reduction, Energy sobriety
+Context of the action | The local authority manages its roads in a sustainable manner: it is careful to limit the energy impact and greenhouse gas emissions of its road creation and maintenance policy, from upstream to downstream (choice of materials, implementation technique, preventive action, prioritisation of roads to be renovated, etc.). It identifies abandoned and unused parts of roads that can be declassified to be de-artificialised.
 It anticipates the risks associated with climate change and contributes to the adaptation of the territory.  |   |   |
-|  Sub- actions | - Know your heritage (roads)
+Sub- actions | - Know your heritage (roads)
 Train/raise awareness among the agents in charge of roads (training to limit the environmental impact of road projects; exchanges with the mobility/transport Dept for a coherent policy with cycling development, TC, etc.)
 Adopt a preventive policy limiting major interventions (integrate the removal of unused roads, abandoned roads in the programming of the works, prioritise preventive rather than curative, considering the impacts of the CC in the criteria of durability of the roads and techniques, coordination of the works between the different services and partners to limit interventions)
 Limit the environmental impact of road materials
 Anticipate and encourage changes in behaviour and modal shift via the road policy
 Bear witness to the reduction in the environmental impact of its road policy  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept in charge | Quality of Life and Environment Dept  |   |   |
-|  Related policies | TETE-CAE Label, Sustainable and Resilient City Label, TETE/EC Label  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | • % of recycled materials incorporated (in tonnes)
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Quality of Life and Environment Dept
+Related policies | TETE-CAE Label, Sustainable and Resilient City Label, TETE/EC Label
+Action tracking
+Numerical monitoring indicator and refresh frequency | • % of recycled materials incorporated (in tonnes)
 • % of construction sites using warm or cold asphalt,
 • % of surfaces using light materials on new public space projects,
 • % of construction sites using permeable materials (permeable concrete, slab to be grassed, etc.)  |   |   |
-|  Impact indicator and refresh rate |   |   |   |
-|  Funding terms  |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners |   |   |   |
-|  Prioritization by CUD’s jurisdiction | 1 | Prioritization according to the level of impact | 3  |
+Impact indicator and refresh rate
+Funding terms
+Planned budget
+Financial partners
+Prioritization by CUD’s jurisdiction | 1 | Prioritization according to the level of impact | 3
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 6 | A resilient territory in the face of climate change  |   |   |
-| --- | --- | --- | --- |
-|  Action 40 | Setting up energy and GHG emissions accounting for public buildings  |   |   |
-|  Objectives | Adaptation of the territory to climate change  |   |   |
-|  Context of the action | Observations confirm that France has already been impacted by climate change for several decades, by a warming of the average annual temperature. Climate models indicate that these trends will continue. There is not a field or sector of activity that will not feel the effects.
+Axis 6 | A resilient territory in the face of climate change
+Action 40 | Setting up energy and GHG emissions accounting for public buildings
+Objectives | Adaptation of the territory to climate change
+Context of the action | Observations confirm that France has already been impacted by climate change for several decades, by a warming of the average annual temperature. Climate models indicate that these trends will continue. There is not a field or sector of activity that will not feel the effects.
 To prepare for it as well as possible, each actor (public, private, economic, social, etc.) will have to analyse the impact of climate change on its activity. This analysis should make it possible to put in place an action plan to reduce vulnerability to expected changes and to increase the climatic robustness of socio-economic and natural systems.
 Adaptation to local scales is therefore essential. Beyond their legal obligations, municipalities and local authorities have a definite role to play in improving knowledge of impacts and vulnerabilities at the local level as well as in the implementation of adaptation actions.  |   |   |
-|  Sub- actions | • Call ANEL/CEREMA on integrated coastal management
+Sub- actions | • Call ANEL/CEREMA on integrated coastal management
 • Develop a heritage management of the protection structures in a logic of overall cost and maintenance of the protective structures in good condition
 • Formalize the interest of the community in its desire to reduce the vulnerability of the territory to climate change
 • Know the vulnerability of the territory to climate change
 • Adopt an adaptation action programme and integrate the effects of climate change into community competences and policies
 • Setting up an operational monitoring and evaluation management of the territorial climate change adaptation policy  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept in charge | Quality of Life and Environment Dept (Géma)
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Quality of Life and Environment Dept (Géma)
 Sustainable City Dept  |   |   |
-|  Related policies | GeMAPI, GRANDPA, Label TETE-CAE  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency |   |   |   |
-|  Impact indicator and refresh rate |   |   |   |
-|  Funding terms  |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners |   |   |   |
-|  Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 1  |
+Related policies | GeMAPI, GRANDPA, Label TETE-CAE
+Action tracking
+Numerical monitoring indicator and refresh frequency
+Impact indicator and refresh rate
+Funding terms
+Planned budget
+Financial partners
+Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 1
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 6 | A resilient territory in the face of climate change  |   |   |
-| --- | --- | --- | --- |
-|  Action 41 | Reforest and support the sustainable use of forests and woodlands to increase carbon sequestration  |   |   |
-|  Objectives | Carbon sequestration on the territory, Adaptation of the territory to climate change  |   |   |
-|  Context of the action | The local authority takes the forest and wooded areas into account in its urban planning documents, with the aim of identification, preservation, rational use or development. It encourages sustainable silvicultural practices and the development of sustainable management practices for forests and wooded areas, internally and among individuals and professionals. It contributes to the structuring and development of the wood-energy and wood-construction sectors.  |   |   |
-|  Sub- actions | • Raise awareness among elected officials, services and stakeholders in the territory of the issues related to forests and wooded areas
+Axis 6 | A resilient territory in the face of climate change
+Action 41 | Reforest and support the sustainable use of forests and woodlands to increase carbon sequestration
+Objectives | Carbon sequestration on the territory, Adaptation of the territory to climate change
+Context of the action | The local authority takes the forest and wooded areas into account in its urban planning documents, with the aim of identification, preservation, rational use or development. It encourages sustainable silvicultural practices and the development of sustainable management practices for forests and wooded areas, internally and among individuals and professionals. It contributes to the structuring and development of the wood-energy and wood-construction sectors.
+Sub- actions | • Raise awareness among elected officials, services and stakeholders in the territory of the issues related to forests and wooded areas
 • Fighting against imported deforestation
 • Carry out diagnoses, know the issues related to the forest and wooded areas on your territory
 • Formalize its strategy in planning documents dedicated to the forest and in urban planning documents
 • Implement the actions defined in the forest preservation and enhancement plan
 • Monitor and achieve your forest and woodland objectives
 • Increase the amount of wooded areas in the territory to increase carbon sequestration  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept in charge | Quality of Life and Environment Dept  |   |   |
-|  Related policies | 200 000 Trees Plan, Landscape Plan, Differentiated Green Space Management Policy, TETE-CAE Label  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | • Share of certified forest area (%)
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Quality of Life and Environment Dept
+Related policies | 200 000 Trees Plan, Landscape Plan, Differentiated Green Space Management Policy, TETE-CAE Label
+Action tracking
+Numerical monitoring indicator and refresh frequency | • Share of certified forest area (%)
 • Number of trees planted under the 200,000 Trees Plan  |   |   |
-|  Impact indicator and refresh rate | Forest sequestration (tCO2eq)  |   |   |
-|  Funding terms  |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners | CDC Biodiversité, Ministry of the Environment (AO recycling of urban wastelands), HdF ("1 million trees"), Water Agency  |   |   |
-|  Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 2  |
-|   | 2  |   |   |
+Impact indicator and refresh rate | Forest sequestration (tCO2eq)
+Funding terms
+Planned budget
+Financial partners | CDC Biodiversité, Ministry of the Environment (AO recycling of urban wastelands), HdF ("1 million trees"), Water Agency
+Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 2
+2
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 6 | A resilient territory in the face of climate change  |   |   |
-| --- | --- | --- | --- |
-|  Action 42 | Preserving the biodiversity of the territory and developing natural areas to increase carbon sequestration and fight against UHIs and flood risk  |   |   |
-|  Objectives | Carbon sequestration on the territory, Adaptation of the territory to climate change  |   |   |
-|  Context of the action | Through its technical services and partners, the local authority contributes to improving knowledge of the biodiversity of its territory and to raising awareness among all stakeholders on this subject. The local authority implements concrete actions to preserve and/or strengthen biodiversity on its territory and develop green spaces, through a policy of greening, the fight against light pollution, the mobilisation of urban planning documents or specific contracting tools. The approach is cross-cutting and co-benefits with the climate-air-energy guidelines, particularly in terms of adaptation to climate change, are particularly sought.  |   |   |
-|  Sub- actions | • Regularly update knowledge of the state of biodiversity and know the issues related to green spaces on its territory (regulatory obligations)
+Axis 6 | A resilient territory in the face of climate change
+Action 42 | Preserving the biodiversity of the territory and developing natural areas to increase carbon sequestration and fight against UHIs and flood risk
+Objectives | Carbon sequestration on the territory, Adaptation of the territory to climate change
+Context of the action | Through its technical services and partners, the local authority contributes to improving knowledge of the biodiversity of its territory and to raising awareness among all stakeholders on this subject. The local authority implements concrete actions to preserve and/or strengthen biodiversity on its territory and develop green spaces, through a policy of greening, the fight against light pollution, the mobilisation of urban planning documents or specific contracting tools. The approach is cross-cutting and co-benefits with the climate-air-energy guidelines, particularly in terms of adaptation to climate change, are particularly sought.
+Sub- actions | • Regularly update knowledge of the state of biodiversity and know the issues related to green spaces on its territory (regulatory obligations)
 • Raise awareness of the importance and fragility of biodiversity and the issues related to green spaces
 • Reduce the impacts of lighting on nocturnal biodiversity
 • Pursue the differentiated management of green spaces and alternative practices to phytosanitary products in the territory
@@ -3192,26 +3132,25 @@ Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality
 • Implement actions to preserve biodiversity that contribute to adapting to climate change and improving the living environment (e.g. restoration of wetlands, greening of buildings, demineralisation of unbuilt urban spaces, ecological enhancement of public spaces)
 • Continue to use operational contracting tools for the implementation of the green and blue network
 • Continue to monitor the evolution of biodiversity and the management of green spaces  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept in charge | Quality of Life and Environment Dept  |   |   |
-|  Related policies | TETE-CAE label, 200,000 trees plan, landscape plan,  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | • Annual amount of fertilizer/m2 of green space
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Quality of Life and Environment Dept
+Related policies | TETE-CAE label, 200,000 trees plan, landscape plan,
+Action tracking
+Numerical monitoring indicator and refresh frequency | • Annual amount of fertilizer/m2 of green space
 Annual amount of water/m2 of green space
 Additional areas of natural or green spaces recreated  |   |   |
-|  Impact indicator and refresh rate |   |   |   |
-|  Funding terms  |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners | CDC Biodiversité, Ministry of the Environment (AO recycling of urban wastelands), HdF ("1 million trees"), Water Agency  |   |   |
-|  Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 2  |
+Impact indicator and refresh rate
+Funding terms
+Planned budget
+Financial partners | CDC Biodiversité, Ministry of the Environment (AO recycling of urban wastelands), HdF ("1 million trees"), Water Agency
+Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 2
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 7 | Sober and low-impact travel  |   |   |
-| --- | --- | --- | --- |
-|  Action 43 | Organising mobility in the territory  |   |   |
-|  Objectives | GHG reduction, Energy sobriety, Reduction of air pollutants and population exposure  |   |   |
-|  Context of the action | The local authority has a travel plan on its territory (mobility plan, simplified mobility plan, etc.) with concrete indications and strategic orientations for:
+Axis 7 | Sober and low-impact travel
+Action 43 | Organising mobility in the territory
+Objectives | GHG reduction, Energy sobriety, Reduction of air pollutants and population exposure
+Context of the action | The local authority has a travel plan on its territory (mobility plan, simplified mobility plan, etc.) with concrete indications and strategic orientations for:
 reduce individual motorised traffic – solo driving
 Promote active modes (walking, cycling), intermodality and shared mobility
 Promote sustainable urban logistics
@@ -3225,48 +3164,47 @@ Limit air pollutant emissions from travel
 This planning is spatialised and is equipped with a monitoring and control system with objectives, monitoring and evaluation of the mobility policy of local authorities (including impact on greenhouse gases and atmospheric pollutants), involving all the stakeholders concerned.
 The mobility plan will have to be drawn up taking into account the strategic and operational coordination between the local AOM and the region.
 The PDM must be compatible with the PCAET or take into account the PCAET if there are more than one within the scope of the PDM.  |   |   |
-|  Sub- actions | - Update the mobility study
+Sub- actions | - Update the mobility study
 Plan actions to limit the use of private cars
 Prioritise the development of alternative modes of transport to the car in planning
 Draw up and approve the cycling and public transport plan
 Monitor the actions implemented and achieve significant results  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept in charge | Public Spaces and Mobility Dept  |   |   |
-|  Related policies | DK+ for mobility, Bike+ Plan, ZIBAC  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | • Household motorization rate
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Public Spaces and Mobility Dept
+Related policies | DK+ for mobility, Bike+ Plan, ZIBAC
+Action tracking
+Numerical monitoring indicator and refresh frequency | • Household motorization rate
 • Vehicles*kilometres by car
 • Kilometres travelled by mode of transport and broken down by reason
 • Number of trips per mode used  |   |   |
-|  Impact indicator and refresh rate | • Greenhouse gas emissions from road transport (tCO2eq)
+Impact indicator and refresh rate | • Greenhouse gas emissions from road transport (tCO2eq)
 • Greenhouse gas emissions from the "other transport" sectors (CO2 eq)
 • Energy consumption of road transport (GWh)
 • Modal share of the car (in number of trips)  |   |   |
-|  Funding terms  |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners |   |   |   |
-|  Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 1  |
+Funding terms
+Planned budget
+Financial partners
+Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 1
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 7 | Sober and low-impact travel  |   |   |
-| --- | --- | --- | --- |
-|  Action 44 | Develop and enforce a proactive parking policy  |   |   |
-|  Objectives | GHG reduction, Energy sobriety, Reduction of air pollutants and population exposure , Awareness-raising (energy/climate/air culture of elected officials, services and residents)  |   |   |
-|  Context of the action | The local authority wishes to better share public space between the different modes of transport, in the central areas, by relying on a reasoned parking policy for motor vehicles. In this way, the community implements an effective strategy. It manages all parking in public spaces, including outside the centre (for a fee).  |   |   |
-|  Sub- actions | - Carry out a diagnosis of the parking offer and practices
+Axis 7 | Sober and low-impact travel
+Action 44 | Develop and enforce a proactive parking policy
+Objectives | GHG reduction, Energy sobriety, Reduction of air pollutants and population exposure , Awareness-raising (energy/climate/air culture of elected officials, services and residents)
+Context of the action | The local authority wishes to better share public space between the different modes of transport, in the central areas, by relying on a reasoned parking policy for motor vehicles. In this way, the community implements an effective strategy. It manages all parking in public spaces, including outside the centre (for a fee).
+Sub- actions | - Carry out a diagnosis of the parking offer and practices
 Implement a strategy on the areas analyzed
 Promote more environmentally friendly vehicles and parking spaces (pricing and differentiated signage, charging stations or services, guidance system to limit the search for space (if necessary) - shade spaces)
 Rethink the parking strategy to promote intermodality and the use of active modes of transport (objective in urban planning documents, not to favour the car at all costs, to encourage parking in underground car parks, to reserve spaces for people with reduced mobility, to convert car parking spaces before pedestrian crossings into bicycle parking.
 Allocate revenue for paid parking for sustainable mobility)
 Broadening the reflection on parking
 Evaluate and communicate on the parking policy  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept in charge | Public Spaces and Mobility Dept  |   |   |
-|  Related policies | Label TETE-CAE  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | • Number of public parking spaces for cars per capita (nb/inhabitant)
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Public Spaces and Mobility Dept
+Related policies | Label TETE-CAE
+Action tracking
+Numerical monitoring indicator and refresh frequency | • Number of public parking spaces for cars per capita (nb/inhabitant)
 • Number of parking spaces used for purposes other than parking
 • Number of parking spaces used according to the number of employees, housing, surface area of the places of activity, etc.
 • Number of places per employee and/or number of places per inhabitant
@@ -3275,238 +3213,229 @@ Evaluate and communicate on the parking policy  |   |   |
 • Parking Capital and Maintenance Cost
 • Parking revenue
 • % of valid parking per 100 vehicles / % of annoying or dangerous parking  |   |   |
-|  Impact indicator and refresh rate |   |   |   |
-|  Funding terms  |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners |   |   |   |
-|  Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 2  |
+Impact indicator and refresh rate
+Funding terms
+Planned budget
+Financial partners
+Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 2
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 7 | Sober and low-impact travel  |   |   |
-| --- | --- | --- | --- |
-|  Action 45 | Reducing the need for travel: Regulating traffic, reducing speed and enhancing public space  |   |   |
-|  Objectives | GHG reduction, Energy sobriety, Reduction of air pollutants and population exposure  |   |   |
-|  Context of the action | The local authority is implementing actions to limit and reduce traffic on the main roads, reduce speeds in certain areas and improve the quality of public spaces. These include, in particular, through the acquisition of traffic management tools on the one hand, signage, the restructuring and redevelopment of roads and public spaces on the other hand, to give priority to the most vulnerable users such as pedestrians and cyclists as well as to revitalize local shops.  |   |   |
-|  Sub- actions | • Identify the areas that generate travel and are crossed by significant flows
+Axis 7 | Sober and low-impact travel
+Action 45 | Reducing the need for travel: Regulating traffic, reducing speed and enhancing public space
+Objectives | GHG reduction, Energy sobriety, Reduction of air pollutants and population exposure
+Context of the action | The local authority is implementing actions to limit and reduce traffic on the main roads, reduce speeds in certain areas and improve the quality of public spaces. These include, in particular, through the acquisition of traffic management tools on the one hand, signage, the restructuring and redevelopment of roads and public spaces on the other hand, to give priority to the most vulnerable users such as pedestrians and cyclists as well as to revitalize local shops.
+Sub- actions | • Identify the areas that generate travel and are crossed by significant flows
 • Continue to use traffic management tools
 • Continue the redevelopment and restructuring of roads and public spaces in order to create areas of calmed traffic
 • Evaluate actions in favor of traffic regulation and the enhancement of public space
 • Raise awareness of eco-driving among the inhabitants of the territory
 • In the development and urban planning policy, promote local urban planning to reduce the need for travel (notion of the quarter-hour city to be integrated into the reflections)  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept in charge | Public Spaces and Mobility Dept  |   |   |
-|  Related policies | Label TETE-CAE  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | Built-in Axis Counts in the Traffic Management Tool  |   |   |
-|  Impact indicator and refresh rate | Kms of calmer roads  |   |   |
-|  Funding terms  |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners |   |   |   |
-|  Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 2  |
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Public Spaces and Mobility Dept
+Related policies | Label TETE-CAE
+Action tracking
+Numerical monitoring indicator and refresh frequency | Built-in Axis Counts in the Traffic Management Tool
+Impact indicator and refresh rate | Kms of calmer roads
+Funding terms
+Planned budget
+Financial partners
+Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 2
 
 4
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 7 | Sober and low-impact travel  |   |   |
-| --- | --- | --- | --- |
-|  Action 46 | Reducing the impact of professional mobility  |   |   |
-|  Objectives | GHG reduction, Energy sobriety, Reduction of air pollutants and population exposure  |   |   |
-|  Context of the action | In terms of mobility, limiting mobility needs is a lever that helps reduce travel. There are two types of mobility:
+Axis 7 | Sober and low-impact travel
+Action 46 | Reducing the impact of professional mobility
+Objectives | GHG reduction, Energy sobriety, Reduction of air pollutants and population exposure
+Context of the action | In terms of mobility, limiting mobility needs is a lever that helps reduce travel. There are two types of mobility:
 Forced mobility: all travel required by a professional and/or supply activity that takes place during defined and limited time slots.
 unconstrained mobility: all travel related to free time.
 Among the range of solutions that reduce the need for travel, there are also telecommuting or coworking solutions, allowing workers to work from places other than their workplace (home, third places, coworking spaces, etc.). To do this, there is still the challenge of raising awareness of teleworking among workers and employers to make it sustainable, but also to guarantee access to digital technology in order to offer all inhabitants the optimal conditions for its practice.
 For example, EDF CNPE in Gravelines has put in place numerous measures to reduce the impact of mobility on its employees (200 electric charging stations for the site's employees travelling in electric light vehicles, reduction in the size of public transport vehicles for employees, implementation of a booking application, adaptation of routes to the right need, etc.). the deployment of teleworking in all teams which makes it possible to limit travel to the Centrale, the extension of a cycle path to connect Gravelines by bike, the conversion of some of the service vehicles to electric vehicles, etc.  |   |   |
-|  Sub- actions | • Inform companies about their levers of action to reduce the carbon-intensive mobility of their employees ("sustainable mobility" package? Bicycle mileage allowances, etc.) and available assistance
+Sub- actions | • Inform companies about their levers of action to reduce the carbon-intensive mobility of their employees ("sustainable mobility" package? Bicycle mileage allowances, etc.) and available assistance
 • Support the implementation of company/inter-company travel plans
 • Encourage teleworking
 • Set up electric terminals, secure bicycle parking spaces in company parking areas
 • Convert service vehicle fleets
 • Implementation of a low-emission mobility zone (ZFE-m)  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept in charge | Public Spaces and Mobility Dept  |   |   |
-|  Related policies | Ecogagnant Vélo, Eco-gagner: free buses, ZFE-m  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | Number of companies that have implemented a mobility plan  |   |   |
-|  Impact indicator and refresh rate | Implementation of the ZFE-m on 1 January 2025  |   |   |
-|  Funding terms  |   |   |   |
-|  Planned budget | Number of companies that have implemented a mobility plan  |   |   |
-|  Financial partners | Implementation of the ZFE-m on 1 January 2025  |   |   |
-|  Prioritization by CUD's jurisdiction | 3 | Prioritization according to the level of impact | 2  |
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Public Spaces and Mobility Dept
+Related policies | Ecogagnant Vélo, Eco-gagner: free buses, ZFE-m
+Action tracking
+Numerical monitoring indicator and refresh frequency | Number of companies that have implemented a mobility plan
+Impact indicator and refresh rate | Implementation of the ZFE-m on 1 January 2025
+Funding terms
+Planned budget | Number of companies that have implemented a mobility plan
+Financial partners | Implementation of the ZFE-m on 1 January 2025
+Prioritization by CUD's jurisdiction | 3 | Prioritization according to the level of impact | 2
 
 5
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 7 | Sober and low-impact travel  |   |   |
-| --- | --- | --- | --- |
-|  Action 47 | Further optimising the attractive, high-quality public transport offer  |   |   |
-|  Objectives | GHG reduction, Energy sobriety, Reduction of air pollutants and population exposure  |   |   |
-|  Context of the action | The local authority wishes to develop and improve the performance of the public transport service with a view to increasing its use and reducing the use of the car. The development and improvement of the public service requires an increase in the level of frequency, the quality of connections, a densification of the network, attractive pricing, a good night bus service, the quality of stopping points and transport vehicles.
+Axis 7 | Sober and low-impact travel
+Action 47 | Further optimising the attractive, high-quality public transport offer
+Objectives | GHG reduction, Energy sobriety, Reduction of air pollutants and population exposure
+Context of the action | The local authority wishes to develop and improve the performance of the public transport service with a view to increasing its use and reducing the use of the car. The development and improvement of the public service requires an increase in the level of frequency, the quality of connections, a densification of the network, attractive pricing, a good night bus service, the quality of stopping points and transport vehicles.
 Access to the bus is free at the CUD, which has doubled its attendance in recent years.  |   |   |
-|  Sub- actions | - Continuously assess and analyze public transit needs
+Sub- actions | - Continuously assess and analyze public transit needs
 Directing the purchase of public transport vehicles and fleet renewal towards alternative fuels (bioNGV, electric and renewable hydrogen)
 Improve the efficiency of the public transport network in collaboration with the AOMs and the main travel generators: setting objectives for better frequency and better ridership will be considered in the next public bus service delegation (2024)
 Diversify the public transit offer, for more flexibility
 Evaluate and communicate results  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept in charge | Public Spaces and Mobility Dept  |   |   |
-|  Related policies | DK+ Mobility, Eco-Winner  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | • Attendance at TC (travel/inhabitant)
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Public Spaces and Mobility Dept
+Related policies | DK+ Mobility, Eco-Winner
+Action tracking
+Numerical monitoring indicator and refresh frequency | • Attendance at TC (travel/inhabitant)
 • Territorial coverage by the TC network
 • Rush hour frequency
 • % of road lines dedicated to public transport/TCSP
 • CO2 display in g CO2/travel.km  |   |   |
-|  Impact indicator and refresh rate |   |   |   |
-|  Funding terms  |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners |   |   |   |
-|  Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 2  |
+Impact indicator and refresh rate
+Funding terms
+Planned budget
+Financial partners
+Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 2
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 7 | Sober and low-impact travel  |   |   |
-| --- | --- | --- | --- |
-|  Action 48 | Developing a safe and attractive pedestrian network  |   |   |
-|  Objectives | GHG reduction, Energy sobriety, Reduction of air pollutants and population exposure  |   |   |
-|  Context of the action | The local authority is developing the pedestrian network, the associated signage and developing the roads to encourage the development of this mode of transport and promote the modal shift.  |   |   |
-|  Sub- actions | - Equip yourself with tools to adopt a pedestrian network development strategy based on traffic calming
+Axis 7 | Sober and low-impact travel
+Action 48 | Developing a safe and attractive pedestrian network
+Objectives | GHG reduction, Energy sobriety, Reduction of air pollutants and population exposure
+Context of the action | The local authority is developing the pedestrian network, the associated signage and developing the roads to encourage the development of this mode of transport and promote the modal shift.
+Sub- actions | - Equip yourself with tools to adopt a pedestrian network development strategy based on traffic calming
 Continue to improve the situation in high-stakes areas as a priority
 Continue to densify and improve the overall quality of the pedestrian network on the territory
 To become an exemplary territory in terms of pedestrian mobility  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept in charge | Public Spaces and Mobility Dept  |   |   |
-|  Related policies | Label TETE-CAE  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | • Km and % of roads dedicated to pedestrians/pedestrian paths
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Public Spaces and Mobility Dept
+Related policies | Label TETE-CAE
+Action tracking
+Numerical monitoring indicator and refresh frequency | • Km and % of roads dedicated to pedestrians/pedestrian paths
 • % of hard points treated  |   |   |
-|  Impact indicator and refresh rate |   |   |   |
-|  Funding terms  |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners | State (Active Mobility Fund), ADEME (Air Quality Roadmap), Hauts-de-France region  |   |   |
-|  Prioritization by CUD’s jurisdiction | 1 | Prioritization according to the level of impact | 2  |
+Impact indicator and refresh rate
+Funding terms
+Planned budget
+Financial partners | State (Active Mobility Fund), ADEME (Air Quality Roadmap), Hauts-de-France region
+Prioritization by CUD’s jurisdiction | 1 | Prioritization according to the level of impact | 2
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 7 | Sober and low-impact travel  |   |   |
-| --- | --- | --- | --- |
-|  Action 49 | Developing the cycling network and infrastructure  |   |   |
-|  Objectives | GHG reduction, Energy sobriety, Reduction of air pollutants and population exposure  |   |   |
-|  Context of the action | To reduce energy consumption and greenhouse gas emissions, the local authority is developing the bicycle network, the associated signage and parking and is developing the roads to encourage the development of this mode of travel.  |   |   |
-|  Sub- actions | - Know and analyze cycling trips and parking in the territory
+Axis 7 | Sober and low-impact travel
+Action 49 | Developing the cycling network and infrastructure
+Objectives | GHG reduction, Energy sobriety, Reduction of air pollutants and population exposure
+Context of the action | To reduce energy consumption and greenhouse gas emissions, the local authority is developing the bicycle network, the associated signage and parking and is developing the roads to encourage the development of this mode of travel.
+Sub- actions | - Know and analyze cycling trips and parking in the territory
 Consult and Inform residents
 Adopt a cycling master plan
 Implement its cycling master plan
 to offer quality bicycle parking offers
 Develop one or more express bicycle networks (REV) to facilitate travel between major cities and their suburbs
 Monitor and Evaluate results  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept in charge | Public Spaces and Mobility Dept  |   |   |
-|  Related policies | plan vélo+, Eco-winner program  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | - Share of roads developed for cycles (% Or failing that, km/1000 inhabitants)
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Public Spaces and Mobility Dept
+Related policies | plan vélo+, Eco-winner program
+Action tracking
+Numerical monitoring indicator and refresh frequency | - Share of roads developed for cycles (% Or failing that, km/1000 inhabitants)
 Number of bicycle parking spaces, excluding wheel clamps (nb / 100 inhabitants)
 Cycling policy budget (euros)
 Cycling policy budget (euros/inhabitant year)
 % of road lines in peaceful areas corresponds to the share of cycle lanes "in dedicated lanes" (roads not shared with cars or buses)
 Occupancy rate of bicycle parking spaces
 Budget of the community's cycling policy in euros.year.inhabitant  |   |   |
-|  Impact indicator and refresh rate |   |   |   |
-|  Funding terms  |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners | ADEME (Air Quality Roadmap, By Bike), State (Active Mobility, Cycling Continuity Fund)  |   |   |
-|  Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 2  |
+Impact indicator and refresh rate
+Funding terms
+Planned budget
+Financial partners | ADEME (Air Quality Roadmap, By Bike), State (Active Mobility, Cycling Continuity Fund)
+Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 2
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 7 | Sober and low-impact travel  |   |   |
-| --- | --- | --- | --- |
-|  Action 50 | Promote and monitor multimodal practices in the territory  |   |   |
-|  Objectives | GHG reduction, Energy sobriety, Reduction of air pollutants and population exposure  |   |   |
-|  Context of the action | The local authority carries out regular promotional and information actions for efficient and active mobility throughout its territory. To do this, it is joining forces with all the players involved in the field of mobility.
+Axis 7 | Sober and low-impact travel
+Action 50 | Promote and monitor multimodal practices in the territory
+Objectives | GHG reduction, Energy sobriety, Reduction of air pollutants and population exposure
+Context of the action | The local authority carries out regular promotional and information actions for efficient and active mobility throughout its territory. To do this, it is joining forces with all the players involved in the field of mobility.
 The local authority evaluates, notes positive developments and thus communicates the evolution of the modal shares associated with all active and alternative modes to the private car (cycling, walking, public transport, carpooling, etc.).  |   |   |
-|  Sub- actions | - Update the mobility survey to find out the modal shares in your territory
+Sub- actions | - Update the mobility survey to find out the modal shares in your territory
 Organize to carry out an information and awareness-raising policy on sustainable mobility
 Continue to promote intermodality and alternative modes of transport to the private car in various forms and targets (information media, internet, events, information booklets, maps, mobility advice, financial support, temporary urban development, etc.)
 Create a place/service dedicated to information on eco-mobility
 Working with mobility stakeholders at the scale of the living area
 Checking the progression of the modal shares of alternative modes of transport to the car, reaching exemplary values and communicating them  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept in charge | Public Spaces and Mobility Dept  |   |   |
-|  Related policies | Label TETE-CAE  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | • Updated mobility survey
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Public Spaces and Mobility Dept
+Related policies | Label TETE-CAE
+Action tracking
+Numerical monitoring indicator and refresh frequency | • Updated mobility survey
 • Place/service dedicated to information on eco-mobility created  |   |   |
-|  Impact indicator and refresh rate |   |   |   |
-|  Funding terms  |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners | State (Active Mobility Fund), ADEME (Air Quality Roadmap), Hauts-de-France region  |   |   |
-|  Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 2  |
+Impact indicator and refresh rate
+Funding terms
+Planned budget
+Financial partners | State (Active Mobility Fund), ADEME (Air Quality Roadmap), Hauts-de-France region
+Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 2
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 7 | Sober and low-impact travel  |   |   |
-| --- | --- | --- | --- |
-|  Action 51 | Developing the multimodal offer and intermodality  |   |   |
-|  Objectives | GHG reduction, Energy sobriety, Reduction of air pollutants and population exposure  |   |   |
-|  Context of the action | The local authority and its partners offer multiple and complementary offers that promote multimodality and intermodality (car-sharing, carpooling, park-and-ride facilities, bicycle rental, etc.). The pricing and terms of use of the services must be attractive and simple to limit the use of the private car.  |   |   |
-|  Sub- actions | - Analyze the needs and the existing multimodal offer
+Axis 7 | Sober and low-impact travel
+Action 51 | Developing the multimodal offer and intermodality
+Objectives | GHG reduction, Energy sobriety, Reduction of air pollutants and population exposure
+Context of the action | The local authority and its partners offer multiple and complementary offers that promote multimodality and intermodality (car-sharing, carpooling, park-and-ride facilities, bicycle rental, etc.). The pricing and terms of use of the services must be attractive and simple to limit the use of the private car.
+Sub- actions | - Analyze the needs and the existing multimodal offer
 Facilitate the change of mode of transport
 Develop the use of shared cars
 Equipping the inhabitants with bicycles
 Supporting cyclists with services associated with cycling
 Monitor and achieve the objectives set  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept in charge | Public Spaces and Mobility Dept  |   |   |
-|  Related policies | Label TETE-CAE  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | • Share of the labour force covered by a PDE/PDA (%)
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Public Spaces and Mobility Dept
+Related policies | Label TETE-CAE
+Action tracking
+Numerical monitoring indicator and refresh frequency | • Share of the labour force covered by a PDE/PDA (%)
 • Number of contacts (phone calls, physical appointments, etc.) at the mobility hub
 • Number of participants in events  |   |   |
-|  Impact indicator and refresh rate | Civil society  |   |   |
-|  Funding terms  |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners | State (Active Mobility Fund), ADEME (Air Quality Roadmap), Hauts-de-France region  |   |   |
-|  Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 2  |
+Impact indicator and refresh rate | Civil society
+Funding terms
+Planned budget
+Financial partners | State (Active Mobility Fund), ADEME (Air Quality Roadmap), Hauts-de-France region
+Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 2
 
 0
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 7 | Sober and low-impact travel  |   |   |
-| --- | --- | --- | --- |
-|  Action 52 | Optimising logistics and the management of the flow of goods in the territory  |   |   |
-|  Objectives | GHG reduction, Energy sobriety, Reduction of air pollutants and population exposure  |   |   |
-|  Context of the action | To reduce its energy consumption and reduce greenhouse gas emissions, the local authority defines rules and organises the supply and distribution of goods in its territory, favouring and developing all alternatives to motorised road transport. It also promotes local circuit activity.  |   |   |
-|  Sub- actions | - Engage in consultation with local stakeholders to identify the flow of goods and needs (consultation, flow mapping, inventory of goods deliveries, awareness of "last mile" issues, energy optimisation studies, port equipment, etc.)
+Axis 7 | Sober and low-impact travel
+Action 52 | Optimising logistics and the management of the flow of goods in the territory
+Objectives | GHG reduction, Energy sobriety, Reduction of air pollutants and population exposure
+Context of the action | To reduce its energy consumption and reduce greenhouse gas emissions, the local authority defines rules and organises the supply and distribution of goods in its territory, favouring and developing all alternatives to motorised road transport. It also promotes local circuit activity.
+Sub- actions | - Engage in consultation with local stakeholders to identify the flow of goods and needs (consultation, flow mapping, inventory of goods deliveries, awareness of "last mile" issues, energy optimisation studies, port equipment, etc.)
 Work with the "Low Carbon Industrial Zone" project on the freight transport component
 Integrate guidelines for the optimisation of goods transport at the territorial level into planning documents
 Acquire the "merchandise management" skill
 Regulate, supervise, support and enforce the optimization of the management of the flow of goods on the territory
 Rethinking the parking strategy for freight vehicles
 Encourage and support local stakeholders within a formalised framework (local "urban logistics" charter, Commit with ADEME to a "voluntary commitment by local authorities" approach, which targets sustainable urban logistics, environmental walk such as a "Objectif CO2 - Les transporteurs s'engage" charter and label, Encourage shippers and freight forwarders to commit to a voluntary FRET 21 or EVCOM approach)  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept in charge | Public Spaces and Mobility Dept  |   |   |
-|  Related policies | TETE-CAE label, ZIBACproject  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | • GHG emissions from freight transportation
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Public Spaces and Mobility Dept
+Related policies | TETE-CAE label, ZIBACproject
+Action tracking
+Numerical monitoring indicator and refresh frequency | • GHG emissions from freight transportation
 • Air pollutant emissions from freight transport  |   |   |
-|  Impact indicator and refresh rate | • Reduction of greenhouse gases linked to the optimization of the flow of goods on the territory
+Impact indicator and refresh rate | • Reduction of greenhouse gases linked to the optimization of the flow of goods on the territory
 • Reduction of air pollutant emissions from freight transport  |   |   |
-|  Funding terms  |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners | Hauts-de-France Region, InterLUD program, CEE Colisactiv'  |   |   |
-|  Prioritization by CUD's jurisdiction | 2 | Prioritization according to the level of impact | 1  |
+Funding terms
+Planned budget
+Financial partners | Hauts-de-France Region, InterLUD program, CEE Colisactiv'
+Prioritization by CUD's jurisdiction | 2 | Prioritization according to the level of impact | 1
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan – Greater Dunkirk
 
-|  Axis 8 | A low-carbon economy and industry  |   |   |
-| --- | --- | --- | --- |
-|  Action 53 | Promoting sustainable economic activities  |   |   |
-|  Objectives | GHG reduction, Energy sobriety  |   |   |
-|  Context of the action | The local authority initiates, supports or participates in cooperation projects with local or regional economic actors on climate, air and energy, in order to encourage the transformation of economic activities towards a model that emits low greenhouse gases. In particular, it participates in the development of industrial ecology projects and more generally the circular economy in the region. It contributes to the improvement of the environmental quality of business parks.  |   |   |
-|  Sub- actions | • Continue to share strategy, knowledge and issues related to companies within the community (the economic development Dept/project manager (or equivalent) works cross-functionally with other Depts, on common projects (for example with the waste Dept on the subject of industrial and territorial ecology); the scope of the "economic development" competence is precisely defined (role, means, scope, priorities, etc.) and the strategy adopted is consistent with the community's climate-air-energy policy (evolution of activities towards sectors contributing to the energy transition and climate resilience, reduction of energy consumption and GHG/air pollutant emissions, saving of raw materials, etc.); The local authority has a clear argument to encourage companies to implement actions in favour of the energy and climate transition.
+Axis 8 | A low-carbon economy and industry
+Action 53 | Promoting sustainable economic activities
+Objectives | GHG reduction, Energy sobriety
+Context of the action | The local authority initiates, supports or participates in cooperation projects with local or regional economic actors on climate, air and energy, in order to encourage the transformation of economic activities towards a model that emits low greenhouse gases. In particular, it participates in the development of industrial ecology projects and more generally the circular economy in the region. It contributes to the improvement of the environmental quality of business parks.
+Sub- actions | • Continue to share strategy, knowledge and issues related to companies within the community (the economic development Dept/project manager (or equivalent) works cross-functionally with other Depts, on common projects (for example with the waste Dept on the subject of industrial and territorial ecology); the scope of the "economic development" competence is precisely defined (role, means, scope, priorities, etc.) and the strategy adopted is consistent with the community's climate-air-energy policy (evolution of activities towards sectors contributing to the energy transition and climate resilience, reduction of energy consumption and GHG/air pollutant emissions, saving of raw materials, etc.); The local authority has a clear argument to encourage companies to implement actions in favour of the energy and climate transition.
 • Continue to capitalise and work in partnership with specialised players (identify specialised players in contact with companies; know their actions and present the community's climate-air-energy policy;
 
 For the industrial component, in partnership with specialised players: identify the best practices of companies in the region, with "locomotive" companies that can serve as relays and examples on the following themes:
@@ -3514,58 +3443,56 @@ For the industrial component, in partnership with specialised players: identify 
 • Improving the quality and diversity of economic activity zones
 • Continuing to involve companies in structured and collective industrial ecology projects
 • Maintain an economic dynamic, in line with the needs of a society with low GHG emissions  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept in charge | Entrepreneurship, Trade and Innovation Dept
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Entrepreneurship, Trade and Innovation Dept
 Tourism, yachting and boating Dept  |   |   |
-|  Related policies | Label Territory committed to ecological transition - circular economy, TETE-CAE label  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | • Budget in euros.year for actions aimed at companies to improve their energy performance
+Related policies | Label Territory committed to ecological transition - circular economy, TETE-CAE label
+Action tracking
+Numerical monitoring indicator and refresh frequency | • Budget in euros.year for actions aimed at companies to improve their energy performance
 • Number of signatories of commitment charters/certified sites ISO50001  |   |   |
-|  Impact indicator and refresh rate | • Greenhouse gas emissions from the tertiary sector (tCO2eq)
+Impact indicator and refresh rate | • Greenhouse gas emissions from the tertiary sector (tCO2eq)
 • Greenhouse gas emissions from industry (tCO2e)
 • Tertiary energy consumption (GWh)
 • Industrial Energy Consumption (GWh)
 • Reduction of air pollutants demonstrated on certain actions  |   |   |
-|  Funding terms  |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners | ADEME, Dept, region  |   |   |
-|  Prioritization by CUD's jurisdiction | 2 | Prioritization according to the level of impact | 1  |
+Funding terms
+Planned budget
+Financial partners | ADEME, Dept, region
+Prioritization by CUD's jurisdiction | 2 | Prioritization according to the level of impact | 1
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 8 | A low-carbon economy and industry  |   |   |
-| --- | --- | --- | --- |
-|  Action 54 | Developing sustainable tourism  |   |   |
-|  Objectives | GHG reduction, Energy sobriety  |   |   |
-|  Context of the action | The local authority develops a sustainable tourism strategy that takes into account in an integrated manner the impacts of tourism on natural resources and ecosystems (pressure on local water resources, etc.), in terms of GHG emissions (particularly related to transport) and access to tourism activities for all. It is taking measures to reduce these impacts.
+Axis 8 | A low-carbon economy and industry
+Action 54 | Developing sustainable tourism
+Objectives | GHG reduction, Energy sobriety
+Context of the action | The local authority develops a sustainable tourism strategy that takes into account in an integrated manner the impacts of tourism on natural resources and ecosystems (pressure on local water resources, etc.), in terms of GHG emissions (particularly related to transport) and access to tourism activities for all. It is taking measures to reduce these impacts.
 The local authority involves specialised tourism providers (business, sport, leisure, event tourism) and includes this objective in its sustainable tourism strategy. In particular, it encourages those involved in the accommodation and catering industry to commit to an eco-responsible approach.  |   |   |
-|  Sub- actions | Based on the diagnosis of the challenges and good practices in terms of sustainable tourism in the territory:
+Sub- actions | Based on the diagnosis of the challenges and good practices in terms of sustainable tourism in the territory:
 Mobilising tourism stakeholders
 Develop a tourist offer of high environmental quality (excluding mobility)
 Pursue the global offer of sustainable mobility in connection with tourism
 Integrate and formalize the issue of sustainable tourism in an ambitious way in the territory's climate, air and energy vision  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept in charge | Tourism, Yachting and Boating Dept  |   |   |
-|  Related policies | TETE-CAE label, “grand-site operation”  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | • Rate of accommodation with the European Ecolabel label (or equivalent)
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Tourism, Yachting and Boating Dept
+Related policies | TETE-CAE label, “grand-site operation”
+Action tracking
+Numerical monitoring indicator and refresh frequency | • Rate of accommodation with the European Ecolabel label (or equivalent)
 • Annual Community Budget to Support Sustainable Tourism
 • Number of km of hiking/cycling/horseback riding routes created or rehabilitated
 • % of visitors using TC / Evolution over time / Attendance rate
 • Number of training courses carried out - number of participants / number of awareness-raising actions carried out - number of people sensitised  |   |   |
-|  Impact indicator and refresh rate |   |   |   |
-|  Funding terms  |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners | ADEME, Dept, region  |   |   |
-|  Prioritization by CUD's jurisdiction | 2 | Prioritization according to the level of impact | 3  |
+Impact indicator and refresh rate
+Funding terms
+Planned budget
+Financial partners | ADEME, Dept, region
+Prioritization by CUD's jurisdiction | 2 | Prioritization according to the level of impact | 3
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 8 | A low-carbon economy and industry  |
-| --- | --- |
-|  Action 55 | Supporting the decarbonisation of industry through Dunkirk, creative® energy and the decarbonisation roadmap for the port area  |
-|  Objectives | GHG reduction, Energy sobriety  |
-|  Context of the action | As part of the call for contributions launched by the CUD under the PCAET, Euraénergie proposed an action to contribute to this action Dunkirk Creative Energy is a collective and territorial dynamic whose aim is to transform the Dunkirk ecosystem in order to succeed in the transition to a decarbonised and energy-sustainable world, in order to meet the major climate, economic and social challenges of our time. The ZIBAC call for projects is part of the strategy to accelerate the decarbonization of industry, one of the objectives of which is to promote the development of Low Carbon Industrial Zones (ZIBaC).
+Axis 8 | A low-carbon economy and industry
+Action 55 | Supporting the decarbonisation of industry through Dunkirk, creative® energy and the decarbonisation roadmap for the port area
+Objectives | GHG reduction, Energy sobriety
+Context of the action | As part of the call for contributions launched by the CUD under the PCAET, Euraénergie proposed an action to contribute to this action Dunkirk Creative Energy is a collective and territorial dynamic whose aim is to transform the Dunkirk ecosystem in order to succeed in the transition to a decarbonised and energy-sustainable world, in order to meet the major climate, economic and social challenges of our time. The ZIBAC call for projects is part of the strategy to accelerate the decarbonization of industry, one of the objectives of which is to promote the development of Low Carbon Industrial Zones (ZIBaC).
 
 Through this program, the State aims to support industrial territories in their ecological and energy transformation to gain competitiveness and attractiveness to support the resumption of economic activity. This program will also make it possible to promote French technologies, innovations and industrial know-how on an international scale. Projects must aim to accelerate the decarbonisation of their industrial zone, by implementing a set of investments, experiments, synergies and innovations. They must be ambitious regional projects in terms of decarbonisation, climate resilience and ecological transition and which experiment with and support organisational or technological solutions and innovative processes that contribute to responding to the problems they face. These industrial zones must therefore integrate a training strategy with a view to their enlargement or their diffusion to other territories. This programme also aims to create a national network of industrial zones that emit particularly greenhouse gases (GHGs) and that wish to accelerate their decarbonisation. This network will make it possible to provide each member industrial zone with a macroscopic and interregional approach to decarbonisation actions by, for example, sharing joint operations.
 
@@ -3587,13 +3514,12 @@ EDF Gravelines nuclear power plant has also submitted a contribution under the P
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 8 | A low-carbon economy and industry  |   |   |
-| --- | --- | --- | --- |
-|  Action 56 | Implement CO2 capture projects for residual emissions  |   |   |
-|  Objectives | GHG reduction  |   |   |
-|  Context of the action | The Smart Carbon project aims to eventually achieve carbon neutrality by capturing residual CO2 emissions to sequester it (CCS) or give it a second life (CCU) by recombining it with hydrogen for a new use (e-fuels, application in chemistry)
+Axis 8 | A low-carbon economy and industry
+Action 56 | Implement CO2 capture projects for residual emissions
+Objectives | GHG reduction
+Context of the action | The Smart Carbon project aims to eventually achieve carbon neutrality by capturing residual CO2 emissions to sequester it (CCS) or give it a second life (CCU) by recombining it with hydrogen for a new use (e-fuels, application in chemistry)
 A project to develop a liquefied CO2 terminal is underway by Dunkerque LNG, which wishes to study the development of a liquefied CO2 export terminal on its site to take advantage of the synergies brought by the fatal cold resulting from its process.  |   |   |
-|  Sub- actions | Implement the actions dedicated to CO2 capture in the EcosystemeD roadmap:
+Sub- actions | Implement the actions dedicated to CO2 capture in the EcosystemeD roadmap:
 All CO2 capture projects: PCI Hub CO2 d'Artagnan – Air liquide
 REUZE – Engie project
 3D / DMX project
@@ -3602,26 +3528,25 @@ SHYMED project
 DRI project - Arcelor and Air Liquide
 Smart Carbon
 Liquefied CO2 terminal  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept in charge | Directorate-General for Economy and Attractiveness, Ecosysteme D  |   |   |
-|  Related policies | Dkcarbonation, HEAD/CAE, ZIBAC  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency |   |   |   |
-|  Impact indicator and refresh rate | • Evolution of GHG emissions from the region's industrialists
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Directorate-General for Economy and Attractiveness, Ecosysteme D
+Related policies | Dkcarbonation, HEAD/CAE, ZIBAC
+Action tracking
+Numerical monitoring indicator and refresh frequency
+Impact indicator and refresh rate | • Evolution of GHG emissions from the region's industrialists
 • Quantities of GHGs sequestered by industrial capture techniques (teCO2eq)  |   |   |
-|  Funding terms  |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners | ADEME, France Relance (Acting for the ecological transition)  |   |   |
-|  Prioritization by CUD's jurisdiction | 3 | Prioritization according to the level of impact | 1  |
+Funding terms
+Planned budget
+Financial partners | ADEME, France Relance (Acting for the ecological transition)
+Prioritization by CUD's jurisdiction | 3 | Prioritization according to the level of impact | 1
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 8 | A low-carbon economy and industry  |   |   |
-| --- | --- | --- | --- |
-|  Action 57 | Supporting the transition of the Grand Port Maritime de Dunkerque  |   |   |
-|  Objectives | GHG reduction, Energy sobriety
+Axis 8 | A low-carbon economy and industry
+Action 57 | Supporting the transition of the Grand Port Maritime de Dunkerque
+Objectives | GHG reduction, Energy sobriety
 The transport of goods, particularly by sea, represents the second largest GHG emissions item in Dunkirk after industrial emissions. Freight transport emits nearly 2.2 million tonnes of CO2 equivalent each year, 91% of which are emitted by sea and river traffic around the Grand Port Maritime de Dunkerque. With the prospects for industrial and port development, it will be essential to contain emissions linked to the transport of goods in order to succeed in the region's ecological transition.  |   |   |
-|  Context of the action | More broadly, as the GPMD territory is the support for industrial establishments, it will be necessary to support the industrials present on its territory to enable the GPMD to make the transition to more sustainable protuary activities, which consume less energy and emit less GHGs or atmospheric pollutants.
+Context of the action | More broadly, as the GPMD territory is the support for industrial establishments, it will be necessary to support the industrials present on its territory to enable the GPMD to make the transition to more sustainable protuary activities, which consume less energy and emit less GHGs or atmospheric pollutants.
 The Grand Port Maritime de Dunkerque (GPMD) has submitted a contribution under the PCAET by proposing various actions to decarbonise the port territory. Thus, the GPMD is committed to contributing to:
 Decarbonize electricity (offshore wind, ground-mounted photovoltaic farms)
 Improve energy efficiency (buildings, lighting)
@@ -3633,49 +3558,48 @@ Valuing CO2 as a resource
 Host new activities that are already decarbonized or working towards decarbonization
 Mass rail and river transport
 Contribute to improving the company's travel policies  |   |   |
-|  Sub- actions | Support the GPMD in the implementation of the actions proposed above  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dptt in charge | Directorate-General for Economy and Attractiveness  |   |   |
-|  Related policies | Cti'ergie, ZIBAC  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | Share of ships that have benefited from dockside electrification
+Sub- actions | Support the GPMD in the implementation of the actions proposed above
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dptt in charge | Directorate-General for Economy and Attractiveness
+Related policies | Cti'ergie, ZIBAC
+Action tracking
+Numerical monitoring indicator and refresh frequency | Share of ships that have benefited from dockside electrification
 Number of alternative fuel stations set up
 Solar and wind power generation
 Evolution of modal shares in freight transport
 Industrial port zone Power Consumption
 GHG emissions from port activities (teqCo2)  |   |   |
-|  Impact indicator and refresh rate | Funding terms  |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners | ADEME, France Relance (Acting for the ecological transition), European fund (H2020, ERDF, etc.)  |   |   |
-|  Prioritization by CUD's jurisdiction | 3 | Prioritization according to the level of impact | 1  |
+Impact indicator and refresh rate | Funding terms
+Planned budget
+Financial partners | ADEME, France Relance (Acting for the ecological transition), European fund (H2020, ERDF, etc.)
+Prioritization by CUD's jurisdiction | 3 | Prioritization according to the level of impact | 1
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan – Greater Dunkirk
 
-|  Axis 8 | A low-carbon economy and industry  |   |   |
-| --- | --- | --- | --- |
-|  Action 58 | Promoting local employment  |   |   |
-|  Objectives | GHG reduction, Energy sobriety, Awareness-raising (energy/climate/air culture of elected officials, services and residents)  |   |   |
-|  Context of the action | The roadmap of the General Assembly on Local Employment is the result of 9 months of work and consultation in 2014 and 2015. This is a unique approach in France at the inter-municipal level.
+Axis 8 | A low-carbon economy and industry
+Action 58 | Promoting local employment
+Objectives | GHG reduction, Energy sobriety, Awareness-raising (energy/climate/air culture of elected officials, services and residents)
+Context of the action | The roadmap of the General Assembly on Local Employment is the result of 9 months of work and consultation in 2014 and 2015. This is a unique approach in France at the inter-municipal level.
 The EGEL today is nearly 60 actions coordinated by Greater Dunkirk. These actions are implemented by the CUD, Entreprendre Ensemble, Dunkerque Promotion, the municipalities, the GPMD, Maison de l'Europe, etc. and federate an even wider network of partners: ULCO, Regional Council, Chamber of Commerce, Chamber of Trades, Chamber of Agriculture, Pôle Emploi, BGE Flandre Création, Initiative Flandre, companies, business clubs, craftsmen, associations...
 With a view to the massive development of industrial employment in the territory, it will be necessary to put in place solutions so that the people of Dunkirk can benefit from the jobs generated by the industrial development of the territory.
 As part of the call for contributions launched by the CUD under the PCAET on the platform Changing life together, the University of the Littoral Côte d'Opale (ULCO) proposed a contribution that could be related to this action. Indeed, ULCO has been committed since 2021 to the development of a sustainable development and social responsibility (DDetRS) reference framework whose objectives are to include the establishment in an ecological transition approach. Thus, all the university's missions are concerned: research, training as well as social and environmental policy. As part of its DDetRS commitment, ULCO is committed to training in sustainable development and ecological and energy transition professions.  |   |   |
-|  Sub- actions | - Supporting SMEs: the house of entrepreneurship to advise and support, Making the service offer dedicated to entrepreneurship accessible and legible, Developing and leading the entrepreneurial community, Offering the necessary financial support, Providing methodological assistance, Providing technical and technological resources
+Sub- actions | - Supporting SMEs: the house of entrepreneurship to advise and support, Making the service offer dedicated to entrepreneurship accessible and legible, Developing and leading the entrepreneurial community, Offering the necessary financial support, Providing methodological assistance, Providing technical and technological resources
 Affirm a vision of the future, particularly around activities that make it possible to decarbonize the territory and its infrastructure
 Developing the residential economy: From 2016, the territory is focusing on the attractiveness and development of jobs that cannot be relocated to compensate for the loss of jobs that this figure represents
 Putting people at the heart of the economy  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept in charge | Attractiveness and Employment Dept  |   |   |
-|  Related policies | Cti'ergie, General Assembly of Local Employment  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | • Evolution of the unemployment rate
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Attractiveness and Employment Dept
+Related policies | Cti'ergie, General Assembly of Local Employment
+Action tracking
+Numerical monitoring indicator and refresh frequency | • Evolution of the unemployment rate
 • Number of jobs created annually
 • Share of jobs filled by local residents  |   |   |
-|  Impact indicator and refresh rate |   |   |   |
-|  Funding terms  |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners | ADEME, Dept, region  |   |   |
-|  Prioritization by CUD's jurisdiction | 2 | Prioritization according to the level of impact | 2  |
+Impact indicator and refresh rate
+Funding terms
+Planned budget
+Financial partners | ADEME, Dept, region
+Prioritization by CUD's jurisdiction | 2 | Prioritization according to the level of impact | 2
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
 |  Axis 9 | A territory that is self-sufficient in energy and produces low-carbon energies  |   |   |
@@ -3704,39 +3628,37 @@ Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality
 9
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan – Greater Dunkirk
 
-|  Axis 9 | A territory that is self-sufficient in energy and produces low-carbon energies  |   |   |
-| --- | --- | --- | --- |
-|  Action 60 | Optimising the public service of energy distribution to support the energy transition of the territory  |   |   |
-|  Objectives | GHG reduction, Development of renewable and recovered energies  |   |   |
-|  Context of the action | The local authority, in conjunction with the electricity, gas and heat network managers/concessionaires, ensures the quality of the service provided and the contribution of this mission to its strategy of energy sobriety and efficiency, the development of renewable energies and the fight against climate change. Reflections and actions for network optimization, through the flexibility of demand, production and/or storage (SmartGrid) are carried out.
+Axis 9 | A territory that is self-sufficient in energy and produces low-carbon energies
+Action 60 | Optimising the public service of energy distribution to support the energy transition of the territory
+Objectives | GHG reduction, Development of renewable and recovered energies
+Context of the action | The local authority, in conjunction with the electricity, gas and heat network managers/concessionaires, ensures the quality of the service provided and the contribution of this mission to its strategy of energy sobriety and efficiency, the development of renewable energies and the fight against climate change. Reflections and actions for network optimization, through the flexibility of demand, production and/or storage (SmartGrid) are carried out.
 
 As part of the call for contributions to the PCAET launched by the CUD, GrDF proposed an action aimed at converting oil heating to gas energy. Thus, GrDF supports the eco-win-habitat approach by allocating aid, in consultation with the CUD’s housing services, to accelerate the conversion of oil heating to gas (natural gas / green gas).  |   |   |
-|  Sub- actions | - Regularly update knowledge of the challenges of energy distribution in the territory
+Sub- actions | - Regularly update knowledge of the challenges of energy distribution in the territory
 Continuing the involvement of energy distribution players in a transversal manner
 Continue to integrate energy efficiency criteria and the development of renewable energies into the public energy distribution service
 Implement the network optimization strategy to dialogue more effectively with specialized players
 Implement a localized energy management program with network managers/concessionaires
 support GrDF in the implementation of the proposed action  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept in charge | Communication Dept, Housing and Housing Dept, Urban renewal project management  |   |   |
-|  Related policies | TETE-CAE label, 7 feasibility studies for self-consumption + collective self-consumption projects are underway, as part of the ANRU Programme – DEGROOTE project in connection with smart grids  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | Number (or power) of renewable energy connections to energy distribution networks  |   |   |
-|  Impact indicator and refresh rate | Energy use in the residential sector  |   |   |
-|  Funding terms  |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners |   |   |   |
-|  Prioritization by CUD’s jurisdiction | 1 | Prioritization according to the level of impact | 3  |
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Communication Dept, Housing and Housing Dept, Urban renewal project management
+Related policies | TETE-CAE label, 7 feasibility studies for self-consumption + collective self-consumption projects are underway, as part of the ANRU Programme – DEGROOTE project in connection with smart grids
+Action tracking
+Numerical monitoring indicator and refresh frequency | Number (or power) of renewable energy connections to energy distribution networks
+Impact indicator and refresh rate | Energy use in the residential sector
+Funding terms
+Planned budget
+Financial partners
+Prioritization by CUD’s jurisdiction | 1 | Prioritization according to the level of impact | 3
 
 0
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan – Greater Dunkirk
 
-|  Axis 9 | A territory that is self-sufficient in energy and produces low-carbon energies  |
-| --- | --- |
-|  Action 61 | Supporting the development of anaerobic digestion  |
-|  Objectives | GHG reduction, Development of renewable and recovered energies  |
-|  Context of the action | Faced with the scarcity of non-renewable resources and the need to reduce greenhouse gas (GHG) emissions, the energy transition, thanks in particular to a circular economy, is an obvious choice.
+Axis 9 | A territory that is self-sufficient in energy and produces low-carbon energies
+Action 61 | Supporting the development of anaerobic digestion
+Objectives | GHG reduction, Development of renewable and recovered energies
+Context of the action | Faced with the scarcity of non-renewable resources and the need to reduce greenhouse gas (GHG) emissions, the energy transition, thanks in particular to a circular economy, is an obvious choice.
 
 In addition to strengthening recycling, the circular economy consists of thinking about the optimal use of local resources in the territories, optimising the management of flows between players and developing renewable energies.
 
@@ -3754,38 +3676,36 @@ Support the implementation of anaerobic digestion projects:
 Commissioning by the industrial company Daudruy of a methanisation unit that will make it possible to inject biomethane, a renewable green gas, into the natural gas network. It will be an injection of 750 Nm3/h - the largest green gas production unit north of Paris (a medium-sized agricultural unit injects 150 Nm3/h of green gas into the gas network). GRDF is supporting the manufacturer in the injection of biomethane into the gas network. (starting in 2023)
 SAS Flandre Biogaz will build a biogas plant with commissioning of the site scheduled for September 2023. The site will be used to reprocess agricultural waste and waste from the agri-food industries in the sector in order to produce biomethane that will be injected into the GRDF network. The unit plans to produce 15,000 MWh of biogas annually.
 Commissioning of a methanisation unit for wastewater treatment plant sludge in the agglomeration on the Grande-Synthe WWTP  |
-|  Sub- actions | Conditions of implementation  |
-|  Provisional schedule | 2023 to 2029  |
-|  Dept in charge | Sustainable City Direction  |
-|  Related policies | TETE-CAE label, TETE/EC label, framework deliberation on water, Dunkerque EnergieCréative  |
-|  Action tracking |   |
-|  Numerical monitoring indicator and refresh frequency | • Number of anaerobic digestion plants in the territory
+Sub- actions | Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Sustainable City Direction
+Related policies | TETE-CAE label, TETE/EC label, framework deliberation on water, Dunkerque EnergieCréative
+Action tracking
+Numerical monitoring indicator and refresh frequency | • Number of anaerobic digestion plants in the territory
 % of WWTP sludge recovered by anaerobic digestion
 • Annual production of bio-methane by the region’s anaerobic digestion plants
 • Share of natural gas needs for residential households covered by bio-gas produced on the territory  |
-|  Impact indicator and refresh rate |   |
-|  Funding terms  |   |   |   |
-| --- | --- | --- | --- |
-|  Planned budget |   |   |   |
-|  Financial partners | Dunkerque Energie Créative, GRDF, Region, industrialists concerned  |   |   |
-|  Prioritization by CUD's jurisdiction | 3 | Prioritization according to the level of impact | 2  |
+Impact indicator and refresh rate
+Funding terms
+Planned budget
+Financial partners | Dunkerque Energie Créative, GRDF, Region, industrialists concerned
+Prioritization by CUD's jurisdiction | 3 | Prioritization according to the level of impact | 2
 
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
 2
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan – Greater Dunkirk
 
-|  Axis 9 | A territory that is self-sufficient in energy and produces low-carbon energies  |
-| --- | --- |
-|  Action 62 | Increasing the production of electricity from renewable energies in the territory  |
-|  Objectives | GHG reduction, Development of renewable and recovered energies  |
-|  Context of the action | The production and consumption of renewable and recovered energy (RE&R) is one of the main pillars of the region's energy transition strategy. In addition to continuing efforts to reduce energy consumption and energy performance, the territory must necessarily decarbonize its energy consumption by diversifying its energy mix. To achieve this, the balance towards renewable and recovered energies must be accelerated by increasing the production of these energies.
+Axis 9 | A territory that is self-sufficient in energy and produces low-carbon energies
+Action 62 | Increasing the production of electricity from renewable energies in the territory
+Objectives | GHG reduction, Development of renewable and recovered energies
+Context of the action | The production and consumption of renewable and recovered energy (RE&R) is one of the main pillars of the region's energy transition strategy. In addition to continuing efforts to reduce energy consumption and energy performance, the territory must necessarily decarbonize its energy consumption by diversifying its energy mix. To achieve this, the balance towards renewable and recovered energies must be accelerated by increasing the production of these energies.
 
 As such, EDF Renewables / Dunkirk Offshore Wind Turbines has submitted a contribution on the Changing Life Together platform, which will significantly increase the production of electricity from renewable sources with a project to build an offshore wind farm off the coast of Dunkirk. EDF Renewables France has also submitted a contribution to increase the production of electricity from renewable sources with the construction of a photovoltaic power plant in Loon-Plage.
 The Dunkirk Water Syndicate proposed an action to produce electricity from renewable sources with an action called "Hydro-turbines: when the production of drinking water rhymes with electricity production".
 The DkWatt association has proposed a contribution under the PCAET to develop renewable energy citizen projects, particularly photovoltaics.
 The GPMD also has plans to build two photovoltaic power plants on its territory (see action sheet N°57)  |
-|  Sub- actions | - Gradually increase renewable electricity production and diversify renewable electricity production sources:
+Sub- actions | - Gradually increase renewable electricity production and diversify renewable electricity production sources:
 Implement the various renewable electricity production projects in the territory:
 Photovoltaic energy production project in Loon-Plage (EDF Renewables France has been working for about two years on the development of a photovoltaic energy production project in Loon-Plage. The project site is located in the north of the municipality, on land belonging to the Grand Port Maritime de Dunkerque. It is a former storage site operated until October 2010 for the burial of steel waste. As such, it is qualified as a 'degraded' site with regard to the specifications of the calls for tenders of the Energy Regulatory Commission (CRE) and therefore benefits from points of environmental relevance. Nearly 16 MWp of solar panels will be installed and injected into the grid, equivalent to the annual electricity consumption of 7,860 people.
 Offshore wind farm project off the coast of Dunkirk: Development, construction and operation of an offshore wind farm with a maximum capacity of 600 MW, with an estimated annual production of 2.3 TWh/year, equivalent to the annual electricity consumption of nearly one million inhabitants.
@@ -3793,34 +3713,32 @@ Support the GPMD's PV power plant projects (in connection with action 57)
 Hydro-turbines: when the production of drinking water rhymes with the production of electricity (the difference in altimetry existing at a point in the network is conducive to the installation of a hydroelectric turbine that can make it possible to recover the energy dissipated from the loss of pressure into electrical energy. The SED therefore aims to install a microturbine at the Grande-Synthe drinking water distribution site to recover this fatal energy and produce electrical energy. A study was carried out to determine the electricity production potential, which amounts to the equivalent of the electricity consumption of 50 households (200MWh/year). The energy produced will therefore cover 100% of the energy needs of the Grande-Synthe site (90MWh/year) and the surplus will be sold back to the electricity grid.
 Supporting the Dk'watt association in the development of citizen photovoltaic electricity projects
 Communicate on the CUD's solar cadastre to encourage solar installations among the inhabitants.  |
-|  Provisional schedule | 2023 to 2029  |
-|  Dept in charge | Sustainable City Management  |
-|  Related policies | TETE-CAE label, Dunkerque EnergieCréative  |
-|  Action tracking  |   |   |   |
-| --- | --- | --- | --- |
-|  Numerical monitoring indicator and refresh frequency | • Project in Loon-Plage completed
+Provisional schedule | 2023 to 2029
+Dept in charge | Sustainable City Management
+Related policies | TETE-CAE label, Dunkerque EnergieCréative
+Action tracking
+Numerical monitoring indicator and refresh frequency | • Project in Loon-Plage completed
 • Offshore wind project completed
 • SED project for micro-turbines completed
 • Number of citizen projects carried out by DkWatt  |   |   |
-|  Impact indicator and refresh rate | • Renewable electricity generation (MWh)
+Impact indicator and refresh rate | • Renewable electricity generation (MWh)
 • Rate of renewable electricity generation in the territory (%)
 • Photovoltaic power installed in the territory (Wp/inhabitant)
 • Energy mix proposed by the utilities and SEM electricity supplier (%)  |   |   |
-|  Funding terms  |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners | Hauts-De-France region  |   |   |
-|  Prioritization by CUD's jurisdiction | 2 | Prioritization according to the level of impact | 1  |
+Funding terms
+Planned budget
+Financial partners | Hauts-De-France region
+Prioritization by CUD's jurisdiction | 2 | Prioritization according to the level of impact | 1
 
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
 4
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan – Greater Dunkirk
 
-|  Axis 9 | A territory that is self-sufficient in energy and produces low-carbon energies  |   |   |
-| --- | --- | --- | --- |
-|  Action 63 | Developing innovative low-carbon hydrogen production projects thanks to the SHYMED project  |   |   |
-|  Objectives | GHG reduction, Development of renewable and recovered energies  |   |   |
-|  Context of the action | Hydrogen is currently used due to its chemical properties in the oil and gas industry and in the chemical industry. However, this molecule has a major energy interest that is not/little exploited today. It can be used for energy production on the grid, or in transport, and it is a solution for energy storage, especially electricity, which will be the challenge of 21st century energy systems. Hydrogen as an energy vector thus represents a scientific, environmental and economic challenge. Thanks to advances in electrolysis technology, it can be produced in a carbon-free and economical way and contribute to the objectives that France has set itself in terms of developing renewable energies, reducing greenhouse gas emissions and pollutants and reducing fossil fuel consumption.
+Axis 9 | A territory that is self-sufficient in energy and produces low-carbon energies
+Action 63 | Developing innovative low-carbon hydrogen production projects thanks to the SHYMED project
+Objectives | GHG reduction, Development of renewable and recovered energies
+Context of the action | Hydrogen is currently used due to its chemical properties in the oil and gas industry and in the chemical industry. However, this molecule has a major energy interest that is not/little exploited today. It can be used for energy production on the grid, or in transport, and it is a solution for energy storage, especially electricity, which will be the challenge of 21st century energy systems. Hydrogen as an energy vector thus represents a scientific, environmental and economic challenge. Thanks to advances in electrolysis technology, it can be produced in a carbon-free and economical way and contribute to the objectives that France has set itself in terms of developing renewable energies, reducing greenhouse gas emissions and pollutants and reducing fossil fuel consumption.
 
 In this context, the EDF Group, has submitted a contribution under the PCAET with its SHYMED project for the production of low-carbon hydrogen. The SHYMED project is part of a complete ecosystem for the community territory. The hydrogen produced on site will be used to power buses, ampliroils and household waste collection vehicles (BOMs) from April 2024. The key figures of the project are as follows:
 
@@ -3828,83 +3746,80 @@ In this context, the EDF Group, has submitted a contribution under the PCAET wit
 • 2 distribution terminals: 350 bar and 700 bar
 • Uses: 10 Buses, 4 BOMs and 3 Ampliroil
 • 1140 tonnes of CO2 avoided per year  |   |   |
-|  Sub- actions | Setting up the SHYMED project to produce low-carbon hydrogen  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept in charge | Sustainable City Dept
+Sub- actions | Setting up the SHYMED project to produce low-carbon hydrogen
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Sustainable City Dept
 Waste Reduction and Recovery Dept  |   |   |
-|  Related policies | TETE-CAE label, Dunkerque EnergieCréative  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | SHYMED project set up  |   |   |
-|  Impact indicator and refresh rate | • Annual production of hydrogen produced
+Related policies | TETE-CAE label, Dunkerque EnergieCréative
+Action tracking
+Numerical monitoring indicator and refresh frequency | SHYMED project set up
+Impact indicator and refresh rate | • Annual production of hydrogen produced
 • Tonnes of CO2 equivalent avoided by the use of hydrogen  |   |   |
-|   |  Funding terms  |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners | ADEME  |   |   |
-|  Prioritization by CUD's jurisdiction | 3 | Prioritization according to the level of impact | 2  |
+Funding terms
+Planned budget
+Financial partners | ADEME
+Prioritization by CUD's jurisdiction | 3 | Prioritization according to the level of impact | 2
 
 5
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 9 | A territory that is self-sufficient in energy and produces low-carbon energies  |   |   |
-| --- | --- | --- | --- |
-|  Action 64 | Increasing the use of renewable and recovered energy for heat and cooling  |   |   |
-|  Objectives | GHG reduction, Development of renewable and recovered energies  |   |   |
-|  Context of the action | The potential for using renewable energies for heating buildings, domestic hot water and cooling has been exhausted, with a focus on air quality. Where possible, renewable heat networks are set up. The achievement of the objectives is measured with the percentage of energy of renewable origin in the consumption of heating or cooling in the territory.
+Axis 9 | A territory that is self-sufficient in energy and produces low-carbon energies
+Action 64 | Increasing the use of renewable and recovered energy for heat and cooling
+Objectives | GHG reduction, Development of renewable and recovered energies
+Context of the action | The potential for using renewable energies for heating buildings, domestic hot water and cooling has been exhausted, with a focus on air quality. Where possible, renewable heat networks are set up. The achievement of the objectives is measured with the percentage of energy of renewable origin in the consumption of heating or cooling in the territory.
 Recovery: The heat recovery possibilities of large industrial companies and power plants, including from and for the production of cooling, are exploited.
 The potential for cogeneration or even tri-generation (primarily from renewable energies, then natural gas), for example for the heating or cooling sector, is known and exploited. The technologies and energy sources used are chosen in a multi-criteria climate-air-energy approach.
 The mobilisation of heat recovery potential is designed in line with the development of heating networks (in connection with action N°59).  |   |   |
-|  Sub- actions | • Implement the monitoring of the renewable energy rate
+Sub- actions | • Implement the monitoring of the renewable energy rate
 • Using heating networks to achieve renewable heat targets
 • Achieve the objectives set in terms of covering the territory's heating and cooling needs with renewable energies (>38%)
 • Regularly update the potential for heat recovery and cogeneration
 • Setting binding provisions and development objectives in the community's energy programming
 • Monitor the development of heat recovery and cogeneration and achieve the objectives set
 • Valorisation of the methanogenic deposit of the WWTP (sludge) and biomethane production  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept in charge | Sustainable City Dept  |   |   |
-|  Related policies | TETE-CAE label, RCU development plan  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency |   |   |   |
-|  Impact indicator and refresh rate | • Annual energy consumption of the territory for heating and cooling (GWh)
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Sustainable City Dept
+Related policies | TETE-CAE label, RCU development plan
+Action tracking
+Numerical monitoring indicator and refresh frequency
+Impact indicator and refresh rate | • Annual energy consumption of the territory for heating and cooling (GWh)
 • Rate of renewable energy production for heating and cooling in the territory (in %)
 • Rate of coverage of the territory's heat needs (residential and tertiary) by renewable energy heating networks (in %)
 • Renewable Heating/Cooling (MWh)
 • Renewable energy and recovery rate (RE&R) of heating networks in the territory (in %)  |   |   |
-|  Funding terms  |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners | ADEME, Hauts-de-France Region  |   |   |
-|  Prioritization by CUD's jurisdiction | 2 | Prioritization according to the level of impact | 2  |
+Funding terms
+Planned budget
+Financial partners | ADEME, Hauts-de-France Region
+Prioritization by CUD's jurisdiction | 2 | Prioritization according to the level of impact | 2
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 9 | A territory that is self-sufficient in energy and produces low-carbon energies  |   |   |
-| --- | --- | --- | --- |
-|  Action 65 | Encouraging the reduction of consumption and the purchase of green electricity with energy suppliers and syndicates  |   |   |
-|  Objectives | GHG reduction, Development of renewable and recovered energies  |   |   |
-|  Context of the action | The local authority is working, in partnership with the energy suppliers active in the area, to encourage users to reduce their consumption and increase the share of renewable electricity purchased. Customers and members are made aware of this and services in this area are offered.
+Axis 9 | A territory that is self-sufficient in energy and produces low-carbon energies
+Action 65 | Encouraging the reduction of consumption and the purchase of green electricity with energy suppliers and syndicates
+Objectives | GHG reduction, Development of renewable and recovered energies
+Context of the action | The local authority is working, in partnership with the energy suppliers active in the area, to encourage users to reduce their consumption and increase the share of renewable electricity purchased. Customers and members are made aware of this and services in this area are offered.
 Encourage the purchase of renewable electricity
 Use energy billing to encourage thrifty behaviour (according to margin of action)
 Develop the energy management and renewable energy services offered by energy players
 Monitor the effectiveness of the actions carried out  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept in charge | Sustainable City Dept  |   |   |
-|  Related policies | Eco-Winning Program, TETE-CAE Label  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | Share of green electricity contracts in the territory  |   |   |
-|  Impact indicator and refresh rate |   |   |   |
-|  Funding terms  |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners | ADEME, Hauts-de-France Region  |   |   |
-|  Prioritization by CUD's jurisdiction | 3 | Prioritization according to the level of impact | 2  |
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Sustainable City Dept
+Related policies | Eco-Winning Program, TETE-CAE Label
+Action tracking
+Numerical monitoring indicator and refresh frequency | Share of green electricity contracts in the territory
+Impact indicator and refresh rate
+Funding terms
+Planned budget
+Financial partners | ADEME, Hauts-de-France Region
+Prioritization by CUD's jurisdiction | 3 | Prioritization according to the level of impact | 2
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 9 | A territory that is self-sufficient in energy and produces low-carbon energies  |   |   |
-| --- | --- | --- | --- |
-|  Action 66 | Pursue research projects to promote the development of energy storage  |   |   |
-|  Objectives | GHG reduction, Development of renewable and recovered energies  |   |   |
-|  Context of the action | Energy storage is the process of preserving an amount of energy produced for later use.
+Axis 9 | A territory that is self-sufficient in energy and produces low-carbon energies
+Action 66 | Pursue research projects to promote the development of energy storage
+Objectives | GHG reduction, Development of renewable and recovered energies
+Context of the action | Energy storage is the process of preserving an amount of energy produced for later use.
 The idea is to ensure a balance between energy production and consumption, to reduce losses and thus optimize costs.
 It is on this theme that Eco-Tech Ceram, submitted a contribution under the PCAET with its ProDepVal project for a movable prototype for the storage and recovery of waste heat for various applications: drying, electricity, steam, refrigeration.
 This research and development project is financed by Eco-Tech Ceram and 70% subsidized by the Hauts-de-France Region and ADEME Hauts-de-France. The ProDepVAL project aims to develop a fully containerized, movable and modular "pilot" storage unit, making it possible to demonstrate the feasibility of recovering waste heat from various equipment on different industrial sites and for innovative applications. As part of this project, the Arcelor Mittal Dunkirk industrial site will be the first user of the prototype to validate the feasibility of sintering sludge drying. Subsequently, it will be used in other industrial applications and in the development of energy couplings (multi-energy) among others.
@@ -3913,32 +3828,31 @@ Technically, the ProDepVAL project consists of:
 develop a "pilot" storage unit that is fully containerized, movable, modular – of sufficient size to limit the influence of boundary conditions;
 test the feasibility of drying sinter sludge on the Arcelor Mittal Dunkirk industrial site;
 more generally, integrate a thermal storage system into various industrial processes (conventional or innovative) in order to demonstrate the feasibility and effectiveness of coupling to storage.  |   |   |
-|  Sub- actions | - Set up the pilot unit
+Sub- actions | - Set up the pilot unit
 Observe how it works to study its replicability  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept in charge | Sustainable City Management, Ecosysteme D  |   |   |
-|  Related policies | TETE-CAE label, Dkcarbonation, Dunkirk creative energy®  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | Pilot unit set up  |   |   |
-|  Impact indicator and refresh rate |   |   |   |
-|  Funding terms  |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners | Hauts-De-France Region and ADEME  |   |   |
-|  Prioritization by CUD's jurisdiction | 3 | Prioritization according to the level of impact | 2  |
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Sustainable City Management, Ecosysteme D
+Related policies | TETE-CAE label, Dkcarbonation, Dunkirk creative energy®
+Action tracking
+Numerical monitoring indicator and refresh frequency | Pilot unit set up
+Impact indicator and refresh rate
+Funding terms
+Planned budget
+Financial partners | Hauts-De-France Region and ADEME
+Prioritization by CUD's jurisdiction | 3 | Prioritization according to the level of impact | 2
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 10 | A territory that produces little waste and optimizes its recovery  |
-| --- | --- |
-|  Action 67 | Implement the waste prevention and management strategy through the Local Programme for the Prevention of Household and Similar Waste and support companies and administrations for better waste management  |
-|  Objectives | GHG reduction, Reduction of air pollutants and population exposure, Awareness-raising (energy/climate/air culture of elected officials, services and residents)  |
-|  Context of the action | The local waste prevention and management policy is defined, implemented, monitored and evaluated. It includes the implementation of a local programme for the prevention of household and similar waste (reuse and reuse, local management of bio-waste, the fight against food waste, reduction at source, etc.), the collection and treatment of household and similar waste (separate collection and recycling of packaging and paper, etc.). separate collection and organic recovery of bio-waste, other collection and recycling channels, in particular via waste collection centres, etc.), as part of the public service. Incentive pricing for user service (through tax or fee) should promote waste reduction and recycling channels, and is a tool for optimising waste services.
+Axis 10 | A territory that produces little waste and optimizes its recovery
+Action 67 | Implement the waste prevention and management strategy through the Local Programme for the Prevention of Household and Similar Waste and support companies and administrations for better waste management
+Objectives | GHG reduction, Reduction of air pollutants and population exposure, Awareness-raising (energy/climate/air culture of elected officials, services and residents)
+Context of the action | The local waste prevention and management policy is defined, implemented, monitored and evaluated. It includes the implementation of a local programme for the prevention of household and similar waste (reuse and reuse, local management of bio-waste, the fight against food waste, reduction at source, etc.), the collection and treatment of household and similar waste (separate collection and recycling of packaging and paper, etc.). separate collection and organic recovery of bio-waste, other collection and recycling channels, in particular via waste collection centres, etc.), as part of the public service. Incentive pricing for user service (through tax or fee) should promote waste reduction and recycling channels, and is a tool for optimising waste services.
 The objective of the 2023-2029 community PLPDMA is to reduce waste production by 15% (compared to 2010), i.e. 509 kg/inhabitant in 2030.
 
 As part of the call for contributions launched by the CUD under the PCAET, the ECOPAL association proposed two actions to contribute to the reduction and better recovery of waste in the territory:
 Provision of Recycle Solution, a tool for better waste management in companies Recycle Solution is a free digital waste management and traceability tool (link to the government tool Trackdéchets) for companies. It allows users to better monitor the evolution of their waste (volumes, costs, percentage of recovery, etc.) in order to improve their management. The tool, via the "Waste Exchange" section, also allows users to put their waste online that can be used as free raw material for other companies (example of wooden pallets that are donated by an industrial company and recycled into furniture by a technical integration centre).
 Provision of a shared collection service, "the Ecopal reflex to adopt!" Pooled collections are part of the services that Ecopal offers to its members. They are concretely part of the application of the approaches of Industrial and Territorial Ecology. The association organises with its partners shared waste collections in the region's structures so that this waste can be recycled and recovered, but also to contribute to the development of local employment, to limit transport and finally to protect our environment. Ecopal organises the collection of the following waste: waste electronic and electrical equipment (WEEE), paper and cardboard, ink cartridges, hazardous waste (chemicals, oils, soiled objects, etc.), batteries, conventional and confidential archives.  |
-|  Sub- actions | • Implement an ambitious local waste prevention and management policy focused on the circular economy:
+Sub- actions | • Implement an ambitious local waste prevention and management policy focused on the circular economy:
 Be exemplary in waste management
 Raise awareness and promote the visibility of their efforts in favour of waste prevention
 Using economic instruments to promote waste prevention
@@ -3954,15 +3868,14 @@ Reduce marine litter
 9
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Conditions of implementation  |   |   |   |
-| --- | --- | --- | --- |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept in charge | Waste Reduction and Recovery Dept  |   |   |
-|  Related policies | Local programme for the prevention of household and similar waste, Ecowinner, Repair café, Territory Committed to the ecological transition "Circular Economy" label, NPNRU, TETE/CAE label  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | Annual Waste Report  |   |   |
-|   |  ECOPAL Annual Activity Report  |   |   |
-|  Impact indicator and refresh rate | - Greenhouse gas emissions from waste (tCO2eq)
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Waste Reduction and Recovery Dept
+Related policies | Local programme for the prevention of household and similar waste, Ecowinner, Repair café, Territory Committed to the ecological transition "Circular Economy" label, NPNRU, TETE/CAE label
+Action tracking
+Numerical monitoring indicator and refresh frequency | Annual Waste Report
+ECOPAL Annual Activity Report
+Impact indicator and refresh rate | - Greenhouse gas emissions from waste (tCO2eq)
 Energy consumption of waste (GWh)
 Production of household and similar waste (with excavated material and rubble) per capita (kg/inhabitant per year)
 Residual household waste production (kg/inhabitant)
@@ -3973,10 +3886,10 @@ Production of household and similar waste (with excavated material and rubble) b
 Residual household waste production by economic activities
 Production of waste collected selectively, either door-to-door or as a voluntary contribution by economic activities
 Occasional waste generation through economic activities  |   |   |
-|   |  Funding terms  |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners | Hauts-de-France Region (FRATRI cadre 6), ADEME (circular economy fund, feasibility study of professional waste collection centres)  |   |   |
-|  Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 3  |
+Funding terms
+Planned budget
+Financial partners | Hauts-de-France Region (FRATRI cadre 6), ADEME (circular economy fund, feasibility study of professional waste collection centres)
+Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 3
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
 |  Axis 10 | A territory that produces little waste and optimizes its recovery  |   |
@@ -3987,64 +3900,61 @@ Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality
 The energy potential generated by the incineration of waste produced on the territory of the community or by the combustion of waste prepared in the form of SRF (Solid Recovered Fuels) in dedicated units is used, with regard to the waste and resource prevention and management strategy
 The energy potential from landfill gases is used.
 The potential for recovering bio-waste (straw, slurry, wood waste, crop residues, organic waste from households and economic activities) is used through composting, the production of bio-diesel/bio-methane for heating (fuel) or for transport (agro-fuel) as well as specific bio-waste combustion plants.  |   |
-|  Sub- actions | • Update the current state of the potential for optimising waste-to-energy
+Sub- actions | • Update the current state of the potential for optimising waste-to-energy
 • Recover energy from waste management
 • Monitor objectives and achieve a high level of waste recovery  |   |
-|  Conditions of implementation  |   |   |
-|  Provisional schedule | 2023 to 2029  |   |
-|  Dept in charge | Waste Reduction and Recovery Dept  |   |
-|  Related policies | PLPDMA, Committed Territory for the Ecological Transition "Circular Economy" label, Eco-winner  |   |
-|  Action tracking  |   |   |
-|  Numerical monitoring indicator and refresh frequency | Updated inventory of the potential for optimising waste-to-energy  |   |
-|  Impact indicator and refresh rate | • Energy efficiency in % (energy recovery, electricity and heat)
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Waste Reduction and Recovery Dept
+Related policies | PLPDMA, Committed Territory for the Ecological Transition "Circular Economy" label, Eco-winner
+Action tracking
+Numerical monitoring indicator and refresh frequency | Updated inventory of the potential for optimising waste-to-energy
+Impact indicator and refresh rate | • Energy efficiency in % (energy recovery, electricity and heat)
 • Energy produced by the recovery of bio-waste in kWh/year (failing this, kg/inhabitant of bio-waste collected separately -methanisation and/or composting-)
 • Waste-to-energy rate for biogas from waste storage centres (%)  |   |
-|  Funding terms  |   |   |
-|  Planned budget |   |   |
-|  Financial partners | Hauts-de-France Region (FRATRI cadre 6), ADEME (circular economy fund, feasibility study of professional waste collection centres)  |   |
-|  Prioritization by CUD's jurisdiction | 2 | Prioritization according to the level of impact  |
+Funding terms
+Planned budget
+Financial partners | Hauts-de-France Region (FRATRI cadre 6), ADEME (circular economy fund, feasibility study of professional waste collection centres)
+Prioritization by CUD's jurisdiction | 2 | Prioritization according to the level of impact
 
 1
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan – Greater Dunkirk
 
-|  Axis 10 | A territory that produces little waste and optimizes its recovery  |   |   |
-| --- | --- | --- | --- |
-|  Action 69 | Raising awareness among residents about responsible consumption  |   |   |
-|  Objectives | GHG reduction, Reduction of air pollutants and population exposure, Awareness-raising (energy/climate/air culture of elected officials, services and residents)  |   |   |
-|  Context of the action | Reducing waste at the source is crucial to the preservation of natural resources. In addition, a lot of waste comes from plastic materials, which are extremely harmful to ecosystems and health. The challenge of the PCAET is therefore to continue actions to raise awareness of the reduction of waste at source (limiting packaging, buying in bulk, sorting, etc.), and to optimise the recovery and treatment of waste in order to reduce the environmental footprint and the impact on the health of the treatment chain.  |   |   |
-|   |  As part of the call for contributions launched by the CUD under the PCAET, the ECOPAL association and the JOUVE grocery store proposed actions to contribute to this action:
+Axis 10 | A territory that produces little waste and optimizes its recovery
+Action 69 | Raising awareness among residents about responsible consumption
+Objectives | GHG reduction, Reduction of air pollutants and population exposure, Awareness-raising (energy/climate/air culture of elected officials, services and residents)
+Context of the action | Reducing waste at the source is crucial to the preservation of natural resources. In addition, a lot of waste comes from plastic materials, which are extremely harmful to ecosystems and health. The challenge of the PCAET is therefore to continue actions to raise awareness of the reduction of waste at source (limiting packaging, buying in bulk, sorting, etc.), and to optimise the recovery and treatment of waste in order to reduce the environmental footprint and the impact on the health of the treatment chain.
+As part of the call for contributions launched by the CUD under the PCAET, the ECOPAL association and the JOUVE grocery store proposed actions to contribute to this action:
 Since 2021, the Dunkirk Water Syndicate (SED) has launched an operation to distribute stainless steel water bottles to all 2,767 students in the second year of the Middle School (CM2) in the area.
 La MAISON JOUVE Local organic bulk grocery store offers to facilitate access to organic, local and bulk products through deliveries to the workplace via an online ordering and payment tool).  |   |   |
-|   |  |   |   |
-|  Sub- actions | - In connection with action N°67
+Sub- actions | - In connection with action N°67
 Implement communication actions for residents to raise awareness of responsible consumption
 Facilitate access to organic, local and bulk products: more responsible consumption and 0 waste
 Raise awareness among residents about reuse and repair through resource centres and repair-cafés
 Setting up awareness-raising actions in schools  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept in charge | Waste Reduction and Recovery Dept  |   |   |
-|  Related policies | Eco-winner, PLPDMA, Territory Committed to the ecological transition label "Circular Economy", RLPi  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | • Number of interventions in schools per year
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Waste Reduction and Recovery Dept
+Related policies | Eco-winner, PLPDMA, Territory Committed to the ecological transition label "Circular Economy", RLPi
+Action tracking
+Numerical monitoring indicator and refresh frequency | • Number of interventions in schools per year
 • Share of students who have benefited from an intervention on waste reduction and responsible consumption  |   |   |
-|  Impact indicator and refresh rate | • Production of household and similar waste (with excavated material and rubble) per capita (kg/inhabitant per year)
+Impact indicator and refresh rate | • Production of household and similar waste (with excavated material and rubble) per capita (kg/inhabitant per year)
 • Residual household waste production (kg/inhabitant)
 • Production of waste collected selectively, either door-to-door or by voluntary contribution (kg/inhabitant)
 • Occasional waste production (kg/inhabitant)  |   |   |
-|  Funding terms  |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners | Hauts-de-France Region (FRATRI cadre 6), ADEME (circular economy fund)  |   |   |
-|  Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 3  |
+Funding terms
+Planned budget
+Financial partners | Hauts-de-France Region (FRATRI cadre 6), ADEME (circular economy fund)
+Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 3
 
 2
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 10 | A territory that produces little waste and optimizes its recovery  |
-| --- | --- |
-|  Action 70 | Developing synergies with a Circular Economy objective  |
-|  Objectives | GHG reduction, Reduction of air pollutants and population exposure, Awareness-raising (energy/climate/air culture of elected officials, services and residents)  |
-|  Context of the action | • According to ADEME, the circular economy can be defined as an economic system of exchange and production which, at all stages of the life cycle of products (goods and services), aims to increase the efficiency of the use of resources and reduce the impact on the environment while developing the well-being of individuals. It is a transition to a model based on zero waste and an increase in the intensity of resource use while decreasing environmental impacts. This is what the circular economy aims to achieve, which takes into account three fields: the production and supply of goods and services; consumption through demand and consumer behaviour (economic or citizen); waste management with the priority use of recycling which makes it possible to close the loop.
+Axis 10 | A territory that produces little waste and optimizes its recovery
+Action 70 | Developing synergies with a Circular Economy objective
+Objectives | GHG reduction, Reduction of air pollutants and population exposure, Awareness-raising (energy/climate/air culture of elected officials, services and residents)
+Context of the action | • According to ADEME, the circular economy can be defined as an economic system of exchange and production which, at all stages of the life cycle of products (goods and services), aims to increase the efficiency of the use of resources and reduce the impact on the environment while developing the well-being of individuals. It is a transition to a model based on zero waste and an increase in the intensity of resource use while decreasing environmental impacts. This is what the circular economy aims to achieve, which takes into account three fields: the production and supply of goods and services; consumption through demand and consumer behaviour (economic or citizen); waste management with the priority use of recycling which makes it possible to close the loop.
 • By adhering to the Territory Committed to the Ecological Transition – Circular Economy (TETE-EC) label, the CUD wishes to commit to developing its circular economy policy and animating a dynamic in the territory that goes well beyond the classic "waste" competence and by orienting its actions towards the axes of the TETE-EC standard:
 Definition of a global circular economy strategy and inclusion in the territory
 Development of waste reduction, collection and recovery services
@@ -4052,24 +3962,24 @@ Deployment of the other pillars of the circular economy in the territories
 Financial tools for behaviour change
 Cooperation and commitment
 • The ECOPAL association has submitted a contribution on Changing life together for its participation in the PCAET. This action aims to develop synergies with a view to achieving a Circular Economy in the region. Ecopal develops synergies between territorial actors. From deposits to outlets and processing, Ecopal's mission is to identify all the players in a sector and to get them to work together to develop circular economy loops. To succeed in this mission, Ecopal must communicate, federate, coordinate and remove regulatory, technical and financial blockages. Among the projects already identified, there is in particular the recovery of end-of-life joinery, personal protective equipment and shellfish waste (scallops, mussels, etc.).  |
-|  Sub- actions | • Aim for a 5-star label with the TETE-EC label by the end of the PCAET 2022-2028
+Sub- actions | • Aim for a 5-star label with the TETE-EC label by the end of the PCAET 2022-2028
 • Identify the different sectors for which it is possible to bring out circular economy projects
 • Identify the players in these sectors and get them to work together
 • Identify the various regulatory, technical and financial obstacles
 • Implement the various circular economy sector projects according to the maturity of the players
 • Communicate on these sectors
 • Support ECOPAL in its circular economy actions  |
-|  Conditions of implementation |   |
-|  Provisional schedule | 2023 to 2029  |
-|  Dept in charge | Waste Reduction and Recovery Dept  |
-|  Related policies | PLPDMA, Committed Territory for the Ecological Transition "Circular Economy" label  |
-|  Action tracking |   |
-|  Numerical monitoring indicator and refresh frequency | Number of circular economy projects implemented
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Waste Reduction and Recovery Dept
+Related policies | PLPDMA, Committed Territory for the Ecological Transition "Circular Economy" label
+Action tracking
+Numerical monitoring indicator and refresh frequency | Number of circular economy projects implemented
 • Production of household and similar waste (with excavated material and rubble) by economic activities
 • Residual household waste production by economic activities
 • Production of waste collected selectively, either door-to-door or as a voluntary contribution by economic activities
 • Occasional waste generation through economic activities  |
-|  Impact indicator and refresh rate |   |
+Impact indicator and refresh rate
 
 3
 |  Funding terms  |   |   |   |
@@ -4083,69 +3993,66 @@ Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality
 4
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 10 | A territory that produces little waste and optimizes its recovery  |   |   |
-| --- | --- | --- | --- |
-|  Action 71 | Optimising waste collection and treatment services to reduce its impact  |   |   |
-|  Objectives | GHG reduction, Energy sobriety, Reduction of air pollutants and population exposure  |   |   |
-|  Context of the action | The entire waste treatment chain has consequences for the environment:
+Axis 10 | A territory that produces little waste and optimizes its recovery
+Action 71 | Optimising waste collection and treatment services to reduce its impact
+Objectives | GHG reduction, Energy sobriety, Reduction of air pollutants and population exposure
+Context of the action | The entire waste treatment chain has consequences for the environment:
 Door-to-door collection and transport to the sorting centre, the incinerator and the landfill sites consume energy and emit greenhouse gases and air pollutants. Waste storage consumes space temporarily (in sorting centres) or permanently (in landfills). Landfilling leads to the degradation of landscapes (land use, visual and olfactory pollution, etc.). The decomposition of waste releases methane – a powerful greenhouse gas – and toxic elements, such as heavy metals that contaminate soil and groundwater. Waste incineration releases toxic substances (e.g. persistent organic pollutants such as dioxin) that are dispersed into the air and then found their way into soil and water.
 Although incinerators are equipped with high-tech devices that remove dust from the fumes, wash them and neutralize hydrochloric acid (released in particular by the combustion of PVC plastics), toxic emissions cannot be completely avoided.  |   |   |
-|  Sub- actions | - Make a diagnosis of the collection, the vehicles and the routes traveled
+Sub- actions | - Make a diagnosis of the collection, the vehicles and the routes traveled
 Identify the optimizations to be made on the collection and implement them
 Identify technical solutions to improve the operation of management centres (storage and incineration for example), both in terms of energy consumption and GHG or air pollutant emissions, and implement them
 Consider the study on the transport of waste by river or by bicycle
 Pursue and intensify waste recovery actions, particularly on fermentable / bio-waste  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept in charge | Waste Reduction and Recovery Dept  |   |   |
-|  Related policies | PLPDMA, Territory Committed to the Ecological Transition label "Circular Economy", internal carbon® footprint of the administration  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | Diagnosis of collection, vehicles and routes travelled carried out  |   |   |
-|  Impact indicator and refresh rate | • Consumption of household waste bins
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Waste Reduction and Recovery Dept
+Related policies | PLPDMA, Territory Committed to the Ecological Transition label "Circular Economy", internal carbon® footprint of the administration
+Action tracking
+Numerical monitoring indicator and refresh frequency | Diagnosis of collection, vehicles and routes travelled carried out
+Impact indicator and refresh rate | • Consumption of household waste bins
 • Emissions from household waste bins
 • Air emissions from waste storage and incineration facilities
 • GHG emissions from waste storage facilities and incineration
 • Energy consumption of waste storage facilities and incineration  |   |   |
-|  Funding terms  |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners | Hauts-de-France Region (FRATRI cadre 6), ADEME (feasibility study of professional waste collection centres)  |   |   |
-|  Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 2  |
+Funding terms
+Planned budget
+Financial partners | Hauts-de-France Region (FRATRI cadre 6), ADEME (feasibility study of professional waste collection centres)
+Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 2
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 11 | More sustainable agriculture and food practices  |   |   |
-| --- | --- | --- | --- |
-|  Action 72 | Adopting a global vision through the formalization of the Territorial Food Project (PAT)  |   |   |
-|  Objectives | GHG reduction, Energy sobriety, Reduction of air pollutants and population exposure, Carbon sequestration on the territory  |   |   |
-|  Context of the action | Through its competences, the local authority supports, promotes and encourages sustainable agricultural and food practices on its territory and in its supply territories:
+Axis 11 | More sustainable agriculture and food practices
+Action 72 | Adopting a global vision through the formalization of the Territorial Food Project (PAT)
+Objectives | GHG reduction, Energy sobriety, Reduction of air pollutants and population exposure, Carbon sequestration on the territory
+Context of the action | Through its competences, the local authority supports, promotes and encourages sustainable agricultural and food practices on its territory and in its supply territories:
 by carrying out actions aimed at reducing greenhouse gas and particle emissions and, more generally, the environmental impacts of the agricultural sector (training in agro-ecological practices, environmental certification of farms, etc.)
 by preserving agricultural land through urban planning documents and by supporting the establishment of urban or peri-urban agricultural or gardening areas
 by mobilising local stakeholders, for example through a PAT – territorial food project – across the entire food chain (from producer to consumer, including processing, distribution and catering)
 by directing its actions and support (technical and financial) to support exemplary projects in terms of sustainable food and local and sustainable agricultural sectors
 by acting on its collective catering and food purchases (event services), through public procurement (sustainable and local supplies, raising awareness among guests) by raising awareness among residents of the issues and actions to be put in place (more plant-based and diversified, product quality, respect for seasonality, sustainable soil management, fight against food waste, etc.)  |   |   |
-|  Sub- actions | - Finalize the PAT
+Sub- actions | - Finalize the PAT
 Animate the PAT
 Implement the PAT roadmap  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept in charge | Social Cohesion, Solidarity and Health Directorate  |   |   |
-|  Related policies | STALEMATE  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | • PAT indicators
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Social Cohesion, Solidarity and Health Directorate
+Related policies | STALEMATE
+Action tracking
+Numerical monitoring indicator and refresh frequency | • PAT indicators
 • PAT adopted
 • Number of PAT actions finalised  |   |   |
-|  Impact indicator and refresh rate |   |   |   |
-|  Funding terms  |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners |   |   |   |
-|  Prioritization by CUD’s jurisdiction | 1 | Prioritization according to the level of impact | 2  |
+Impact indicator and refresh rate
+Funding terms
+Planned budget
+Financial partners
+Prioritization by CUD’s jurisdiction | 1 | Prioritization according to the level of impact | 2
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan – Greater Dunkirk
 
-|  Axis 11 | More sustainable agriculture and food practices  |
-| --- | --- |
-|  Action 73 | Improving the environmental performance of agricultural production  |
-|  Objectives | GHG reduction, Energy sobriety, Reduction of air pollutants and population exposure
+Axis 11 | More sustainable agriculture and food practices
+Action 73 | Improving the environmental performance of agricultural production
+Objectives | GHG reduction, Energy sobriety, Reduction of air pollutants and population exposure
 Carbon sequestration on the territory, Adaptation of the territory to climate change, Awareness-raising (energy/climate/air culture of elected officials, services and residents)  |
-|  Context of the action | The agricultural and food system accounts for a third of French territorial emissions (source: I4CE), nearly half of which come from livestock farming (according to the High Council for the Climate - 2020 Report). This figure includes greenhouse gas emissions related to:
+Context of the action | The agricultural and food system accounts for a third of French territorial emissions (source: I4CE), nearly half of which come from livestock farming (according to the High Council for the Climate - 2020 Report). This figure includes greenhouse gas emissions related to:
 agricultural production on French territory. Agriculture emits methane – CH4 (livestock (enteric fermentation) and soil (rice cultivation)), nitrous oxide – N2O (nitrogen fertilisation and management of animal manure) and carbon dioxide – CO2 (energy consumption).
 the French food system (food processing, food trade, packaging manufacturing and waste management, transport and refrigeration).
 
@@ -4155,7 +4062,7 @@ by preserving agricultural land through urban planning documents and by supporti
 by mobilising local stakeholders, for example through a PAT – territorial food project – across the entire food chain (from producer to consumer, including processing, distribution and catering)
 by directing its actions and support (technical and financial) to support exemplary projects in terms of sustainable food and local and sustainable agricultural sectors
 by acting on its collective catering and food purchases (event services), through public procurement (sustainable and local procurement, raising awareness among guests) by raising awareness among residents of the issues and actions to be put in place (more plant-based and diversified food, product quality, respect for seasonality, sustainable soil management, fight against food waste...)  |
-|  Sub- actions | • Carry out an agricultural and food diagnosis of your territory
+Sub- actions | • Carry out an agricultural and food diagnosis of your territory
 • Animating your territory about agriculture and sustainable food
 • Improving the environmental performance of agricultural production
 • Reterritorializing the community's food supply and contributing to its food resilience
@@ -4164,13 +4071,12 @@ by acting on its collective catering and food purchases (event services), throug
 • Adopt a global vision through the formalization of a Territorial Food Project (PAT)
 • Measuring and achieving ambitious sustainable agriculture and food targets
 Fighting against food waste  |
-|  Conditions of implementation |   |
-|  Provisional schedule | 2023 to 2029  |
-|  Dept in charge | Social Cohesion, Solidarity and Health Directorate (PAT)  |
-|  Related policies | PAT, organic agreement in Haut de France with "Terres de lien" and "A petit pas"  |
-|  Action tracking  |   |   |   |
-| --- | --- | --- | --- |
-|  Numerical monitoring indicator and refresh frequency | • Share of organic (and in conversion) in the UAA
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Social Cohesion, Solidarity and Health Directorate (PAT)
+Related policies | PAT, organic agreement in Haut de France with "Terres de lien" and "A petit pas"
+Action tracking
+Numerical monitoring indicator and refresh frequency | • Share of organic (and in conversion) in the UAA
 • Share of producers engaged in an agro-ecological approach (hve level 3)
 • Proportion of producers committed to a quality approach (official sign of identification of quality and origin –siqo-: AOP, AOC, IGP, STD, label rouge, AB)
 • % of farmers who have received training to improve the sustainability of agricultural practices (in relation to the total number of farmers): management of inputs, water, renewable energy, soil quality, crop rotation, biodiversity, etc. Farms in the area
@@ -4184,19 +4090,18 @@ Fighting against food waste  |
 • Agricultural greenhouse gas emissions (tCO2eq)
 • Agricultural energy consumption (GWh)
 • Direct emissions of air pollutants from the agriculture sector per ha (tonne/ha)  |   |   |
-|  Impact indicator and refresh rate | Funding terms  |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners | Hauts-de-France Region, Seine Normandy Water Agency, Low Carbon Label for Field Crops  |   |   |
-|  Prioritization by CUD’s jurisdiction | 3 | Prioritization according to the level of impact | 2  |
+Impact indicator and refresh rate | Funding terms
+Planned budget
+Financial partners | Hauts-de-France Region, Seine Normandy Water Agency, Low Carbon Label for Field Crops
+Prioritization by CUD’s jurisdiction | 3 | Prioritization according to the level of impact | 2
 
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 11 | More sustainable agriculture and food practices  |
-| --- | --- |
-|  Action 74 | Reterritorialize the community's food supply and contribute to its food resilience, particularly in collective catering  |
-|  Objectives | GHG reduction, Energy sobriety, Awareness-raising (energy/climate/air culture of elected officials, services and residents)  |
-|  Context of the action | Sustainable food is defined as all dietary practices aimed at feeding human beings in a qualitative way and in sufficient quantities while respecting the environment. Sustainable food guarantees accessibility for all as well as the economic sustainability of the entire food chain (producers, distributors, etc.).
+Axis 11 | More sustainable agriculture and food practices
+Action 74 | Reterritorialize the community's food supply and contribute to its food resilience, particularly in collective catering
+Objectives | GHG reduction, Energy sobriety, Awareness-raising (energy/climate/air culture of elected officials, services and residents)
+Context of the action | Sustainable food is defined as all dietary practices aimed at feeding human beings in a qualitative way and in sufficient quantities while respecting the environment. Sustainable food guarantees accessibility for all as well as the economic sustainability of the entire food chain (producers, distributors, etc.).
 With a quarter of the carbon footprint of the French, food is the main source responsible for greenhouse gas (GHG) emissions, of the same order of magnitude as transport or housing. The impacts are also significant on the issues of water, soil, air and biodiversity. Most of the impacts are at the agricultural production stage, and therefore depend largely on production methods, but also on the composition of the diet. In terms of health, diet is a key factor in a healthy population, which today contributes strongly to the development of diseases.
 The challenge is to ensure quality food production that respects the environment as locally as possible. In an urban area such as that of the CUD, this translates into support for the development of urban agriculture initiatives to structure and develop short supply chains.
 The challenge is also to promote a change in dietary practices to bring together health and environmental issues, in particular through a rebalancing between foods of animal and plant origin or through the consumption of seasonal and local products.
@@ -4204,7 +4109,7 @@ Finally, efforts must be continued to combat waste at every stage of the food ch
 
 As part of the call for contributions launched by the CUD under the PCAET, the JOUVE grocery store proposed an action to contribute to this action:
 Local organic bulk grocery store offers to facilitate access to organic, local and bulk products through deliveries to the workplace via an online ordering and payment tool).  |
-|  Sub- actions | • Supporting the diversification of local agricultural production,
+Sub- actions | • Supporting the diversification of local agricultural production,
 • Integrate (sustainable) food supply issues into urban planning reflections; Promote access to land,
 • Promote local products;
 • In urban areas, support the installation of sustainable urban farms; promote and support initiatives for access to healthy and sustainable food for all)
@@ -4221,13 +4126,12 @@ Local organic bulk grocery store offers to facilitate access to organic, local a
 • Raising awareness among residents, schoolchildren and collective catering of the challenges and best practices for limiting food waste  |
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Conditions of implementation  |   |   |   |
-| --- | --- | --- | --- |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept in charge | Social Cohesion, Solidarity and Health Directorate  |   |   |
-|  Related policies | PAT, PLPDMA  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | • Number of agricultural production relocation projects supported
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Social Cohesion, Solidarity and Health Directorate
+Related policies | PAT, PLPDMA
+Action tracking
+Numerical monitoring indicator and refresh frequency | • Number of agricultural production relocation projects supported
 • Share of organic products in public catering (%)
 • Average quantity of meat per meal in public catering (g/meal)
 • % of local products in collective catering
@@ -4240,51 +4144,49 @@ Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality
 • Quantities of packaging waste
 • Number of schoolchildren made aware of the issues of food waste
 • Share of residents affected by food waste awareness campaigns  |   |   |
-|  Impact indicator and refresh rate |   |   |   |
-|  Funding terms  |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners | Hauts-de-France Region, Seine Normandy Water Agency  |   |   |
-|  Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 3  |
+Impact indicator and refresh rate
+Funding terms
+Planned budget
+Financial partners | Hauts-de-France Region, Seine Normandy Water Agency
+Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 3
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 12 | A preserved water resource  |   |   |
-| --- | --- | --- | --- |
-|  Action 75 | Helping companies better manage their water use and reduce their water needs  |   |   |
-|  Objectives | GHG reduction, Energy sobriety, Adaptation of the territory to climate change, Awareness-raising (energy/climate/air culture of elected officials, services and residents)  |   |   |
-|  Context of the action | Water is one of the most precious resources in the world for the development of life, so it is necessary to preserve it and reduce the pressure on its use, especially for water-intensive activities (agriculture, industry, etc.). In addition, in a context of climate change and increasing water needs, it is necessary to improve water availability, in particular by reducing needs and developing rainwater harvesting and use systems.
+Axis 12 | A preserved water resource
+Action 75 | Helping companies better manage their water use and reduce their water needs
+Objectives | GHG reduction, Energy sobriety, Adaptation of the territory to climate change, Awareness-raising (energy/climate/air culture of elected officials, services and residents)
+Context of the action | Water is one of the most precious resources in the world for the development of life, so it is necessary to preserve it and reduce the pressure on its use, especially for water-intensive activities (agriculture, industry, etc.). In addition, in a context of climate change and increasing water needs, it is necessary to improve water availability, in particular by reducing needs and developing rainwater harvesting and use systems.
 The ECOPAL association has submitted a contribution on the platform "changing life together" as part of its participation in the PCAET. As part of raising awareness among companies about good water management, Ecopal carries out free water diagnostics in SMEs, SMIs, craftsmen and shopkeepers in Dunkirk with a view to helping them find more ecological solutions to chemical products, to save water, to obtain a financial gain or simply to see if improvements are possible (rainwater recovery, treatment equipment, ecological products, etc.)
 Two types of diagnostics are offered:
 • Operation of the facilities
 • Control of consumption and emissions
 In 2022, these diagnoses are completely free of charge for the structures, thanks in particular to funding from the Artois-Picardy Water Agency. In the following years, these diagnoses will be reserved for members.
 This action has a much broader objective, which is to reduce the pressure on the water resources of our territory.  |   |   |
-|  Sub- actions | • Supporting ECOPAL in the implementation of the proposed actions
+Sub- actions | • Supporting ECOPAL in the implementation of the proposed actions
 • Identify the companies or sectors that consume the most water
 • Communicate to them the existence of the diagnoses carried out by Ecopal and the membership system
 • Carry out diagnoses and programmes to reduce the water consumption of the territory's economic actors: water-saving actions, rainwater recovery, etc.
 • Work on the circular economy for industrial water consumption (reuse of water from company outlets/WWTPs) as a substitute/supplement to surface water.
 • Study the possibilities of using seawater for industrial processes as a substitute/complement to the industrial water network, in particular for the industrial attractiveness of the territory  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept in charge | Entrepreneurship, Trade and Innovation Dept
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Entrepreneurship, Trade and Innovation Dept
 Tourism, Yachting and Boating Dept  |   |   |
-|  Related policies | Water Development and Management Plan for the Aa Delta, framework deliberation on water  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | • Number of diagnoses and action programmes set up by ECOPAL or the CUD
+Related policies | Water Development and Management Plan for the Aa Delta, framework deliberation on water
+Action tracking
+Numerical monitoring indicator and refresh frequency | • Number of diagnoses and action programmes set up by ECOPAL or the CUD
 • Number of companies adhering to the scheme proposed by ECOPAL or the CUD  |   |   |
-|  Impact indicator and refresh rate | Water savings made by companies and by the implementation of alternative solutions
+Impact indicator and refresh rate | Water savings made by companies and by the implementation of alternative solutions
 Annual volume of water distributed to businesses  |   |   |
-|  Funding terms  |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners | Artois Picardy Water Agency (funding in response to a call for projects)  |   |   |
-|  Prioritization by CUD's jurisdiction | 3 | Prioritization according to the level of impact | 2  |
+Funding terms
+Planned budget
+Financial partners | Artois Picardy Water Agency (funding in response to a call for projects)
+Prioritization by CUD's jurisdiction | 3 | Prioritization according to the level of impact | 2
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan – Greater Dunkirk
 
-|  Axis 12 | A preserved water resource  |
-| --- | --- |
-|  Action 76 | Optimizing rainwater management and promoting its reuse  |
-|  Objectives | Adaptation of the territory to climate change, Awareness-raising (energy/climate/air culture of elected officials, services and residents)  |
-|  Context of the action | The local authority practices integrated rainwater management, making it possible to control rainwater runoff in the developed areas (at the source), as well as downstream (slowdown, temporary storage, infiltration), decontamination and to adapt to the site. The measure also includes taking into account the impacts of climate change, for example by managing flood risks (limiting the sealing of streets, squares, pedestrian paths, public spaces), by implementing alternative techniques allowing the disconnection of rainwater from the networks and its return to the natural environment as close as possible to the plot by infiltration preferably.
+Axis 12 | A preserved water resource
+Action 76 | Optimizing rainwater management and promoting its reuse
+Objectives | Adaptation of the territory to climate change, Awareness-raising (energy/climate/air culture of elected officials, services and residents)
+Context of the action | The local authority practices integrated rainwater management, making it possible to control rainwater runoff in the developed areas (at the source), as well as downstream (slowdown, temporary storage, infiltration), decontamination and to adapt to the site. The measure also includes taking into account the impacts of climate change, for example by managing flood risks (limiting the sealing of streets, squares, pedestrian paths, public spaces), by implementing alternative techniques allowing the disconnection of rainwater from the networks and its return to the natural environment as close as possible to the plot by infiltration preferably.
 
 This is a resolutely ambitious policy that is reflected in a programme of investment in specific structures (infiltration basins, drainage roads, vegetated valleys, etc.) and the inclusion of rainwater management in urban planning documents
 
@@ -4294,7 +4196,7 @@ assistance in carrying out an opportunity and feasibility study for rainwater re
 assistance with work related to rainwater infiltration and recovery
 
 Dunkerque LNG has also submitted a contribution as part of its participation in the Community PCAET with a view to recovering rainwater on its site. The action consists of replacing part of the drinking water consumption used for fire testing with rainwater collected on the site's right-of-way and then treated and introduced into our fire protection network.  |
-|  Sub- actions | • Regularly update knowledge of local stormwater and flood management issues on its territory
+Sub- actions | • Regularly update knowledge of local stormwater and flood management issues on its territory
 • Inform the population of the issues and solutions to limit runoff
 • Reduce pollutant emissions and runoff at source, beyond the competence of the Dept in charge of rainwater management
 • Use sanitation regulations to manage rainwater as close as possible to its point of arrival
@@ -4302,57 +4204,54 @@ Dunkerque LNG has also submitted a contribution as part of its participation in 
 • To become exemplary throughout the country
 • Call for CEREMA partners on the management of the GéMAPI competence and the management of PEs
 • To support DK-LNG in the implementation of the proposed action and to encourage this type of action among other companies/users  |
-|  Conditions of implementation  |   |
-|  Provisional schedule | 2023 to 2029  |
-|  Dept in charge | Sustainable City Dept (Planning Dept)
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Sustainable City Dept (Planning Dept)
 Public Spaces and Mobility Dept
 Quality of Life and Environment Dept  |
-|  Related policies | Eco-winner and Récup'Eau, framework deliberation on water  |
+Related policies | Eco-winner and Récup'Eau, framework deliberation on water
 
 2
-|  Action tracking  |   |   |   |
-| --- | --- | --- | --- |
-|  Numerical monitoring indicator and refresh frequency | • Number of communication campaigns on stormwater management carried out
+Action tracking
+Numerical monitoring indicator and refresh frequency | • Number of communication campaigns on stormwater management carried out
 • Proportion of the territory with specific stormwater management
 • Number of households supported by the Eco-Gagner-Récup'eau scheme  |   |   |
-|  Impact indicator and refresh rate | State of watercourses: number of exceedances of pollutants from runoff water  |   |   |
-|  Funding terms  |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners | Artois Picardy Water Agency (funding in response to a call for projects)  |   |   |
-|  Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 2  |
+Impact indicator and refresh rate | State of watercourses: number of exceedances of pollutants from runoff water
+Funding terms
+Planned budget
+Financial partners | Artois Picardy Water Agency (funding in response to a call for projects)
+Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 2
 
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan – Greater Dunkirk
 
-|  Axis 12 | A preserved water resource  |   |   |
-| --- | --- | --- | --- |
-|  Action 77 | Raising awareness among residents about the protection of water resources  |   |   |
-|  Objectives | GHG reduction, Energy sobriety, Adaptation of the territory to climate change, Awareness-raising (energy/climate/air culture of elected officials, services and residents)  |   |   |
-|  Context of the action | The Water component of the Eco-winner programme also offers several measures to reduce the population's consumption of drinking water in order to cope with the scarcity of the resource: water softening (to extend the life of domestic installations, to improve consumption and to reduce the purchase of plastic bottles), remote meter reading (to monitor daily consumption) or rainwater collection (for watering) plants and anything that doesn't require drinking water: flushing, etc.).  |   |   |
-|  Sub- actions | - Continuing the actions carried out by the Water component of the Eco-winner program
+Axis 12 | A preserved water resource
+Action 77 | Raising awareness among residents about the protection of water resources
+Objectives | GHG reduction, Energy sobriety, Adaptation of the territory to climate change, Awareness-raising (energy/climate/air culture of elected officials, services and residents)
+Context of the action | The Water component of the Eco-winner programme also offers several measures to reduce the population's consumption of drinking water in order to cope with the scarcity of the resource: water softening (to extend the life of domestic installations, to improve consumption and to reduce the purchase of plastic bottles), remote meter reading (to monitor daily consumption) or rainwater collection (for watering) plants and anything that doesn't require drinking water: flushing, etc.).
+Sub- actions | - Continuing the actions carried out by the Water component of the Eco-winner program
 develop communication media to raise awareness among the population (travelling "water" exhibition, educational space of the STEU of Coudekerque-Branche)  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept in charge | Water Cycle Directorate  |   |   |
-|  Related policies | Eco-winner, Framework deliberation on water  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | • Number of communication campaigns on the protection of water resources carried out
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Water Cycle Directorate
+Related policies | Eco-winner, Framework deliberation on water
+Action tracking
+Numerical monitoring indicator and refresh frequency | • Number of communication campaigns on the protection of water resources carried out
 • Number of households supported by the Eco-Gagnant scheme  |   |   |
-|  Impact indicator and refresh rate | • Average annual consumption per capita
+Impact indicator and refresh rate | • Average annual consumption per capita
 • Water savings made by the household
 • Annual attendance at the educational space of the Coudekerque-Branche WWTP  |   |   |
-|  Funding terms  |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners | Artois Picardy Water Agency (funding in response to a call for projects)  |   |   |
-|  Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 2  |
+Funding terms
+Planned budget
+Financial partners | Artois Picardy Water Agency (funding in response to a call for projects)
+Prioritization by CUD's jurisdiction | 1 | Prioritization according to the level of impact | 2
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 12 | A preserved water resource  |   |   |
-| --- | --- | --- | --- |
-|  Action 78 | Protecting wetlands and aquatic environments  |   |   |
-|  Objectives | Adaptation of the territory to climate change  |   |   |
-|  Context of the action | The Water Development and Management Scheme for the Aa Delta was approved in 2010. It includes a Plan for the Sustainable Development and Management of Water Resources and Aquatic Environments (P.A.G.D.), a Regulation and a Cartographic Atlas  |   |   |
-|  Sub- actions | • Reclaiming natural habitats (protection, management, maintenance):
+Axis 12 | A preserved water resource
+Action 78 | Protecting wetlands and aquatic environments
+Objectives | Adaptation of the territory to climate change
+Context of the action | The Water Development and Management Scheme for the Aa Delta was approved in 2010. It includes a Plan for the Sustainable Development and Management of Water Resources and Aquatic Environments (P.A.G.D.), a Regulation and a Cartographic Atlas
+Sub- actions | • Reclaiming natural habitats (protection, management, maintenance):
 • Manage, maintain and enhance watergangs, rivers and canals
 • Establish common specifications for the maintenance of watercourses
 • Preserve, reclaim and manage wetlands and their associated environments
@@ -4361,60 +4260,58 @@ Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality
 • Promote the reconquest of the space of freedom of waterways
 • Preserve the coastal environments that are essential to the balance of ecosystems
 • Surface water recharge project for the Moëres sector (quantitative and qualitative management)  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept in charge | Water Cycle Directorate  |   |   |
-|  Related policies | GEMAPI, landscape plan, differentiated management of green spaces  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency |   |   |   |
-|  Impact indicator and refresh rate |   |   |   |
-|  Funding terms  |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners | Artois Picardy Water Agency (funding in response to a call for projects), COCA-COLA Foundation  |   |   |
-|  Prioritization by CUD’s jurisdiction | 2 | Prioritization according to the level of impact | 2  |
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Water Cycle Directorate
+Related policies | GEMAPI, landscape plan, differentiated management of green spaces
+Action tracking
+Numerical monitoring indicator and refresh frequency
+Impact indicator and refresh rate
+Funding terms
+Planned budget
+Financial partners | Artois Picardy Water Agency (funding in response to a call for projects), COCA-COLA Foundation
+Prioritization by CUD’s jurisdiction | 2 | Prioritization according to the level of impact | 2
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
-|  Axis 12 | A preserved water resource  |   |   |
-| --- | --- | --- | --- |
-|  Action 79 | Optimize the efficiency of drinking water facilities (energy and resources)  |   |   |
-|  Objectives | GHG reduction, Energy sobriety  |   |   |
-|  Context of the action | The local authority wishes to reduce its energy consumption and is therefore extending its action to improve and optimise the energy efficiency of its drinking water installations. Measures are being taken to promote water-efficient use and consumer awareness, such as:
+Axis 12 | A preserved water resource
+Action 79 | Optimize the efficiency of drinking water facilities (energy and resources)
+Objectives | GHG reduction, Energy sobriety
+Context of the action | The local authority wishes to reduce its energy consumption and is therefore extending its action to improve and optimise the energy efficiency of its drinking water installations. Measures are being taken to promote water-efficient use and consumer awareness, such as:
 the community acts in favour of the efficiency of the production and distribution of drinking water and the preservation of water resources
 Individual water consumption is clearly indicated/detailed in the water bills
 the previous year's water consumption and average data (benchmarks) are provided for comparison
 tariffs incorporating the "polluter pays" principle and encouraging water savings
 Distinction between drinking water and wastewater loads  |   |   |
-|  Sub- actions | • Continue to seek energy efficiency as an objective in PSD contracts or include it in the company's strategy
+Sub- actions | • Continue to seek energy efficiency as an objective in PSD contracts or include it in the company's strategy
 • Advise and train the sector's players on a frequent basis
 • Implement concrete measures to improve and optimize the energy efficiency of drinking water facilities
 • Continue to provide incentives to save water for users
 • Anticipating the renewal of installations
 • Monitor energy and water consumption following the implementation of measures  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept in charge | Water Cycle Directorate  |   |   |
-|  Related policies |   |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency |   |   |   |
-|  Impact indicator and refresh rate | • Energy consumption of the drinking water supply system (collection/treatment/distribution) in kWh/inhabitant
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Water Cycle Directorate
+Related policies
+Action tracking
+Numerical monitoring indicator and refresh frequency
+Impact indicator and refresh rate | • Energy consumption of the drinking water supply system (collection/treatment/distribution) in kWh/inhabitant
 • Drinking water supply system performance (catchment/treatment/distribution) in gross m3/m3 sold  |   |   |
-|  Funding terms  |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners | Artois Picardy Water Agency (funding in response to a call for projects  |   |   |
-|  Prioritization by CUD's jurisdiction | 2 | Prioritization according to the level of impact | 2  |
+Funding terms
+Planned budget
+Financial partners | Artois Picardy Water Agency (funding in response to a call for projects
+Prioritization by CUD's jurisdiction | 2 | Prioritization according to the level of impact | 2
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan – Greater Dunkirk
 
-|  Axis 12 | A preserved water resource  |   |   |
-| --- | --- | --- | --- |
-|  Action 80 | Optimising the energy potential of sewerage systems  |   |   |
-|  Objectives | GHG reduction, Energy sobriety, Development of renewable and recovered energies  |   |   |
-|  Context of the action | Sanitation systems can be optimized to reduce their energy consumption and renewable energy generation and recovery systems can be installed. Regarding the management of sewage sludge, spreading (material recovery) and methanisation (energy recovery) are not opposed and can complement each other. The recovery of sludge in agriculture is of agronomic interest for the soil because it contains a high content of organic matter and fertilizing elements. However, they can also contain undesirable substances such as Trace Metal Elements (TMEs), Trace Organic Compounds (CTO), pathogenic microorganisms and pharmaceutical compounds. This is why the recovery of sludge by spreading is clearly regulated and other solutions can be studied depending on the context (currently, 60% of sludge is spread according to the "Spreading" technical sheet, ADEME, August 2016). In all cases, the choice of recovery or disposal channels for the sludge produced must take into account the existence and sustainability of potential outlets (including for digestate from anaerobic digestion) and try to pool existing waste treatment equipment in the territory (composting platform, nearby energy recovery unit, etc.).
+Axis 12 | A preserved water resource
+Action 80 | Optimising the energy potential of sewerage systems
+Objectives | GHG reduction, Energy sobriety, Development of renewable and recovered energies
+Context of the action | Sanitation systems can be optimized to reduce their energy consumption and renewable energy generation and recovery systems can be installed. Regarding the management of sewage sludge, spreading (material recovery) and methanisation (energy recovery) are not opposed and can complement each other. The recovery of sludge in agriculture is of agronomic interest for the soil because it contains a high content of organic matter and fertilizing elements. However, they can also contain undesirable substances such as Trace Metal Elements (TMEs), Trace Organic Compounds (CTO), pathogenic microorganisms and pharmaceutical compounds. This is why the recovery of sludge by spreading is clearly regulated and other solutions can be studied depending on the context (currently, 60% of sludge is spread according to the "Spreading" technical sheet, ADEME, August 2016). In all cases, the choice of recovery or disposal channels for the sludge produced must take into account the existence and sustainability of potential outlets (including for digestate from anaerobic digestion) and try to pool existing waste treatment equipment in the territory (composting platform, nearby energy recovery unit, etc.).
 
 The local authority optimises the energy potential of the sanitation systems:
 The energy efficiency of the community's wastewater collection and treatment facilities is high and is measured by indicators.
 The potential for heat recovery from wastewater collectors and/or wastewater treatment plants is exhausted.
 The potential for the recovery of sewage sludge has been exhausted.  |   |   |
-|  Sub- actions | • Regularly update the state of play of the efficiency of sanitation systems and formalize efficiency objectives
+Sub- actions | • Regularly update the state of play of the efficiency of sanitation systems and formalize efficiency objectives
 • Analyze the potential for heat recovery from wastewater
 • Analyze the potential for reuse of wastewater treated by the WWTP for urban uses
 • Analyze the potential for sewage sludge recovery
@@ -4422,18 +4319,18 @@ The potential for the recovery of sewage sludge has been exhausted.  |   |   |
 • Carry out energy recovery work on sanitation systems
 • Regularly monitor actions and evaluate their effects
 • Install 4000 m2 of solar panels on the 5 WWTS (estimated production 1GWh / year)  |   |   |
-|  Conditions of implementation  |   |   |   |
-|  Provisional schedule | 2023 to 2029  |   |   |
-|  Dept in charge | Water Cycle Directorate  |   |   |
-|  Related policies | Label TETE-CAE  |   |   |
-|  Action tracking  |   |   |   |
-|  Numerical monitoring indicator and refresh frequency | • % of sludge recovered by anaerobic digestion
+Conditions of implementation
+Provisional schedule | 2023 to 2029
+Dept in charge | Water Cycle Directorate
+Related policies | Label TETE-CAE
+Action tracking
+Numerical monitoring indicator and refresh frequency | • % of sludge recovered by anaerobic digestion
 • Solar production on wastewater treatment plants (WWTS)  |   |   |
-|  Impact indicator and refresh rate | Energy consumption of wastewater treatment plants kWh/kgBODO5 eliminated  |   |   |
-|  Funding terms  |   |   |   |
-|  Planned budget |   |   |   |
-|  Financial partners | Artois Picardy Water Agency (funding in response to a call for projects)  |   |   |
-|  Prioritization by CUD's jurisdiction | 2 | Prioritization according to the level of impact | 2  |
+Impact indicator and refresh rate | Energy consumption of wastewater treatment plants kWh/kgBODO5 eliminated
+Funding terms
+Planned budget
+Financial partners | Artois Picardy Water Agency (funding in response to a call for projects)
+Prioritization by CUD's jurisdiction | 2 | Prioritization according to the level of impact | 2
 B-2.3: Summary strategy for residual emissions
 
 The building, transport, waste, and energy sectors are significant contributors to GHG emissions. While various strategies can reduce these emissions, some residual emissions are likely to persist—stemming from construction and building operations, reliance on fossil fuels, and the collection, transportation, treatment, and disposal of waste. To address these hard-to-reduce emissions, several approaches can be explored.
@@ -4498,42 +4395,40 @@ Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality
 
 Assessing the environmental impact of projects requires the implementation of specific and relevant Key Performance Indicators (KPIs). These KPIs enable the measurement of progress and adjustment of strategies accordingly. Here's a proposal for KPIs focused on major environmental challenges, that will be developed and improved in the next iteration of the CCC.
 
-|  Greenhouse Gas (GHG) Emissions | Total annual emissions: Overall measurement of the carbon footprint.
+Greenhouse Gas (GHG) Emissions | Total annual emissions: Overall measurement of the carbon footprint.
 Carbon intensity per product/service: Emissions associated with each unit produced or service rendered.
 Emission reduction compared to a reference year: Progress towards decarbonization goals.  |
-| --- | --- |
-|  Energy Consumption | Total annual energy consumption: Quantity of energy consumed by the organisation.
+Energy Consumption | Total annual energy consumption: Quantity of energy consumed by the organisation.
 Energy intensity per product/service: Energy consumption associated with each unit produced or service rendered.
 Share of renewable energies in total consumption: Progress towards cleaner energy.  |
-|  Renewable Energy Production | Installed production capacity: Total power of renewable energy production installations.
+Renewable Energy Production | Installed production capacity: Total power of renewable energy production installations.
 Quantity of renewable energy produced per year: Volume of energy produced from renewable sources.
 Share of self-consumed renewable energy: Use of on-site produced energy.  |
-|  Sustainable Mobility | Share of active travels (bike, walking): Encouragement of low-emission modes of transport.
+Sustainable Mobility | Share of active travels (bike, walking): Encouragement of low-emission modes of transport.
 Share of electric vehicles in the vehicle fleet: Transition to less polluting vehicles.
 Average distance traveled by employees: Reduction of the carbon footprint associated with professional travel.  |
-|  Waste Management | Recycling rate: Proportion of recycled waste compared to total waste produced.
+Waste Management | Recycling rate: Proportion of recycled waste compared to total waste produced.
 Quantity of waste buried: Reduction in the volume of waste sent to landfills.
 Quantity of waste recovered: Transformation of waste into resources.  |
-|  Air Quality | Concentration of atmospheric pollutants (PM10, NOx, SOₓ): Measurement of air pollution near sites.
+Air Quality | Concentration of atmospheric pollutants (PM10, NOx, SOₓ): Measurement of air pollution near sites.
 Number of days exceeding air quality standards: Assessment of the frequency of pollution episodes.  |
-|  Biodiversity | Number of species present on the sites: Measurement of biological richness.
+Biodiversity | Number of species present on the sites: Measurement of biological richness.
 Area of preserved natural areas: Protection of natural habitats.
 Biodiversity index (e.g., Shannon index): Assessment of species diversity and their relative abundance.  |
 To implement an effective sustainable development strategy, it is essential to have reliable and regular data on the environmental footprint. While we have established a solid foundation for our sustainable practices, including the implementation of comprehensive environmental monitoring and data collection, we recognize the ongoing need for improvement. Our goal is to further refine and enhance these strategies, leveraging data-driven insights to make more informed and effective decisions. By continuously evaluating our performance and identifying areas for optimisation, we aim to strengthen our commitment to environmental sustainability and achieve even more meaningful results. Here are some ways we are collecting and working on them :
 
-|  Greenhouse Gas Emissions Inventory | Clear and uniform methodology: Adopt a recognized methodology (such as the GHG Protocol) to calculate our emissions accurately and reproducibly.
+Greenhouse Gas Emissions Inventory | Clear and uniform methodology: Adopt a recognized methodology (such as the GHG Protocol) to calculate our emissions accurately and reproducibly.
 Detailed inventory: Inventory all sources of emissions, both direct (linked to your activities) and indirect (linked to the energy you consume).
 Regular monitoring: Conduct annual inventories to track the evolution of your emissions and measure the effectiveness of your reduction actions.  |
-| --- | --- |
-|  Indicator Summary | Simplification and unification: Harmonize the different indicators used to measure your environmental performance. Be inspired by Frédérique's approach to simplify monitoring and facilitate comparison.
+Indicator Summary | Simplification and unification: Harmonize the different indicators used to measure your environmental performance. Be inspired by Frédérique's approach to simplify monitoring and facilitate comparison.
 Customized dashboard: Create a clear and concise dashboard that groups together the main indicators (energy consumption, waste production, etc.) and allows for a quick visualization of changes over time.  |
-|  Smart Meters | Gradual deployment: Equip the facilities with smart meters to collect real-time data on the energy consumption. In Greater Dunkirk, we equipped all users with smart meters for water consumption on the territory
+Smart Meters | Gradual deployment: Equip the facilities with smart meters to collect real-time data on the energy consumption. In Greater Dunkirk, we equipped all users with smart meters for water consumption on the territory
 Detailed analysis: Use this data to identify the most significant consumption items and implement targeted reduction actions.  |
-|  Household Surveys | Employee involvement: Conduct regular surveys of your employees to gather information on their daily practices (modes of transport, energy consumption at home, etc.).
+Household Surveys | Employee involvement: Conduct regular surveys of your employees to gather information on their daily practices (modes of transport, energy consumption at home, etc.).
 Awareness and commitment: Use the results of these surveys to implement awareness-raising actions and encourage more responsible behaviors.  |
-|  GIS (Geographic Information System) Visualization | Data mapping: Spatially represent your environmental data (emissions, energy consumption, etc.) to better understand their distribution and identify areas for improvement.  |
-|   |  Monitoring changes: Compare maps created at different times to visualize the evolution of your situation and highlight the impacts of the actions.  |
-|   |  Communication: Use these visualizations to communicate clearly and effectively about your environmental approach to your stakeholders.  |
+GIS (Geographic Information System) Visualization | Data mapping: Spatially represent your environmental data (emissions, energy consumption, etc.) to better understand their distribution and identify areas for improvement.
+Monitoring changes: Compare maps created at different times to visualize the evolution of your situation and highlight the impacts of the actions.
+Communication: Use these visualizations to communicate clearly and effectively about your environmental approach to your stakeholders.
 
 By effectively tracking emissions through these KPIs, Greater Dunkirk will gain valuable insights to guide strategic decision-making. These indicators will pinpoint specific areas for targeted action and investment, enabling the prioritization of projects with the greatest potential for environmental impact. This data-driven approach will ensure that all decisions made by Greater Dunkirk are informed by concrete evidence and aligned with the overarching goal of achieving climate neutrality.
 
@@ -5041,40 +4936,33 @@ Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 2
 
-|  Intergenerational projects: | Create opportunities for interaction between different age groups. This could involve volunteering programs, intergenerational housing, or shared spaces for learning and leisure.  |
-| --- | --- |
-|  Citizen project | Citizen engagement, social isolation,  |
-|  Financial, Social, Time | Neighbourhood centers, Greater Dunkirk, Hospitals  |
-|  Community engagement, government policies, education and awareness, technological innovation | Increased social cohesion, improved mental health, reduced isolation, enhanced employability, potential for knowledge sharing and innovation.  |
-|  Citizen Science and coastal Monitoring: | Empower residents to monitor erosion on the coast and identify pollution hotspots. This data can inform targeted interventions and foster a sense of community ownership.  |
-| --- | --- |
-|  Financial and citizen engagement, social isolation, communication | Financial, Social, Time  |
-|  PMCO, Greater Dunkirk | Community engagement, government policies, education and awareness, collaboration  |
-|  Increased data availability, citizen engagement, community empowerment, biodiversity conservation | Increased social cohesion, improved mental health, reduced social isolation, enhanced employability, potential for knowledge sharing and innovation.  |
-|  Citizen Engagement | Financial and citizen engagement, social isolation, communication  |
-| --- | --- |
-|  Financial, Social, Time | PMCO, Greater Dunkirk  |
-|  PMCO, Greater Dunkirk | Community engagement, government policies, education and awareness, collaboration  |
-|  Industrial Heritage and Green Economy: | Explore opportunities to repurpose industrial sites for sustainable economic activities, such as renewable energy production or circular economy initiatives.  |
-| --- | --- |
-|  Citizen engagement, communication, economic transition, sustainability | Social, Time, Communication  |
-|  Tourist information center, Port of Dunkirk | Community engagement, government policies, education and awareness, collaboration  |
-|  economic diversification, cultural preservation, climate mitigation, citizen engagement | Social, Environmental  |
-|  Skill retraining and upskilling: | Offer training programs to help former industrial workers acquire new skills for emerging industries, such as renewable energy, digital technologies, or blue economy sectors.  |
-| --- | --- |
-|  Economic inequality and Social Justice, social isolation, communication, citizen engagement | Social, Financial, Communication, Time  |
-|  Companies, Greater Dunkirk, France Travail | Community engagement, government policies, education and awareness, collaboration  |
-|  social equity, reduced employment, enhanced employability, potential for knowledge sharing and innovation | Social, equity, reduced employment, enhanced employability, potential for knowledge sharing and innovation  |
-|  Circular economy initiatives: | Focus on reusing and recycling industrial waste materials to create new products or services. This could involve supporting local entrepreneurs in developing circular economy businesses or establishing a circular economy hub.  |
-| --- | --- |
-|  Financial, environmental impact of our activities, economic inequality, linear economy | Social, Financial, Communication, Time, Regulatory  |
-|  Waste management structures, Greater Dunkirk, Citizens | Community engagement, government policies, education and awareness, collaboration  |
-|  Reduced carbon emissions, resource conservation, social inclusion, economic growth, improved air and water quality | Community engagement, government policies, education and awareness, collaboration  |
-|  Industrial heritage tourism: | Develop innovative tourism products based on Dunkirk's industrial past. This could involve transforming old factories into cultural spaces, creating interactive historical experiences, or developing walking tours.  |
-| --- | --- |
-|  sustainable tourism, citizen engagement | Social, Time, Financial, Communication  |
-|  Port of Dunkirk | Community engagement, government policies, education and awareness, collaboration, public-private partnership  |
-|  Economic development, cultural preservation, citizen engagement, environmental conservation, climate mitigation | Economic development, cultural preservation, citizen engagement, environmental conservation, climate mitigation  |
+Intergenerational projects: | Create opportunities for interaction between different age groups. This could involve volunteering programs, intergenerational housing, or shared spaces for learning and leisure.
+Citizen project | Citizen engagement, social isolation,
+Financial, Social, Time | Neighbourhood centers, Greater Dunkirk, Hospitals
+Community engagement, government policies, education and awareness, technological innovation | Increased social cohesion, improved mental health, reduced isolation, enhanced employability, potential for knowledge sharing and innovation.
+Citizen Science and coastal Monitoring: | Empower residents to monitor erosion on the coast and identify pollution hotspots. This data can inform targeted interventions and foster a sense of community ownership.
+Financial and citizen engagement, social isolation, communication | Financial, Social, Time
+PMCO, Greater Dunkirk | Community engagement, government policies, education and awareness, collaboration
+Increased data availability, citizen engagement, community empowerment, biodiversity conservation | Increased social cohesion, improved mental health, reduced social isolation, enhanced employability, potential for knowledge sharing and innovation.
+Citizen Engagement | Financial and citizen engagement, social isolation, communication
+Financial, Social, Time | PMCO, Greater Dunkirk
+PMCO, Greater Dunkirk | Community engagement, government policies, education and awareness, collaboration
+Industrial Heritage and Green Economy: | Explore opportunities to repurpose industrial sites for sustainable economic activities, such as renewable energy production or circular economy initiatives.
+Citizen engagement, communication, economic transition, sustainability | Social, Time, Communication
+Tourist information center, Port of Dunkirk | Community engagement, government policies, education and awareness, collaboration
+economic diversification, cultural preservation, climate mitigation, citizen engagement | Social, Environmental
+Skill retraining and upskilling: | Offer training programs to help former industrial workers acquire new skills for emerging industries, such as renewable energy, digital technologies, or blue economy sectors.
+Economic inequality and Social Justice, social isolation, communication, citizen engagement | Social, Financial, Communication, Time
+Companies, Greater Dunkirk, France Travail | Community engagement, government policies, education and awareness, collaboration
+social equity, reduced employment, enhanced employability, potential for knowledge sharing and innovation | Social, equity, reduced employment, enhanced employability, potential for knowledge sharing and innovation
+Circular economy initiatives: | Focus on reusing and recycling industrial waste materials to create new products or services. This could involve supporting local entrepreneurs in developing circular economy businesses or establishing a circular economy hub.
+Financial, environmental impact of our activities, economic inequality, linear economy | Social, Financial, Communication, Time, Regulatory
+Waste management structures, Greater Dunkirk, Citizens | Community engagement, government policies, education and awareness, collaboration
+Reduced carbon emissions, resource conservation, social inclusion, economic growth, improved air and water quality | Community engagement, government policies, education and awareness, collaboration
+Industrial heritage tourism: | Develop innovative tourism products based on Dunkirk's industrial past. This could involve transforming old factories into cultural spaces, creating interactive historical experiences, or developing walking tours.
+sustainable tourism, citizen engagement | Social, Time, Financial, Communication
+Port of Dunkirk | Community engagement, government policies, education and awareness, collaboration, public-private partnership
+Economic development, cultural preservation, citizen engagement, environmental conservation, climate mitigation | Economic development, cultural preservation, citizen engagement, environmental conservation, climate mitigation
 Climate City Contract | 2030 Climate Neutrality Action Plan | Climate Neutrality Action Plan - Greater Dunkirk
 
 |  Single use plastics: By collecting and repurposing single-use plastics, we can convert waste into new products, reducing pollution and creating a circular economy. Citizens can be part of cleaning mission on the beach, forest, around rivers etc | financial, economic, citizen engagement, affordability | Social, Time, Communication | Greater Dunkirk, Neighbourhood centers, associations | Community engagement, government policies, education and awareness, collaboration, business responsibility, product innovation | GHG emissions, waste reduction, economic benefits  |
