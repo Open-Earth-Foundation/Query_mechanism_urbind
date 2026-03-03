@@ -222,8 +222,6 @@ citiES 2030
 
 # Barcelona
 
-2
-
 Index
 
 Index...2
@@ -274,9 +272,6 @@ MODULE A-3: Understanding the financial barriers to the proper allocation of cap
 
 PART B - INVESTMENT PATHWAYS TOWARDS CLIMATE NEUTRALITY BY 2030...200
 
-Climate City Contract. City of Barcelona
-Climate City Contract. City of Barcelona
-
 MODULE B-1: Cost scenarios towards climate neutrality ... 200
 MODULE B-2: Capital planning of the climate neutral portfolio ... 203
 MODULE B-3: Economic and financial indicators for monitoring, evaluation and learning ... 205
@@ -288,7 +283,6 @@ MODULE C-3: Capacity Building and Stakeholder Engagement ... 211
 
 Annex 3: Membership of organisations ... 218
 
-Climate City Contract. City of Barcelona
 citiES 2030
 
 ![img-2.jpeg](img-2.jpeg)
@@ -306,17 +300,11 @@ The City of Barcelona has an area of 101.7 square kilometers and a population of
 ![img-3.jpeg](img-3.jpeg)
 Source: Barcelona City Council
 
-Climate City Contract. City of Barcelona
-Climate City Contract. City of Barcelona
-
 The City of Barcelona enjoys a certain degree of autonomy for the government of its public interests, recognised and regulated by the Spanish Constitution and the Statute of Autonomy of Catalonia. Local autonomy reached its peak in the 1990s and the first decade of the 21st century, with the approval of the Barcelona Municipal Charter (1998, which granted new powers), the Law on Measures for the Modernisation of Local Government (2003, which recognised the specificity of large cities), and the new Statute of Autonomy of Catalonia (2006). This evolution was truncated with the Law for the Rationalisation and Sustainability of Local Administration (2013), which reformed the Law on the Bases of Local Government, limiting or suppressing municipal competences (such as the provision of heating) and increasing ex ante control over local administration, thus making it more difficult to create new services and service activities. One of the most significant changes is the suppression of Article 28, which allowed municipalities to complement the action of other administrations in policy fields such as the protection of the environment. This possibility still exists, but it depends on the sectoral legislation of the State or the Autonomous Community.
 
 The City of Barcelona, however, has a Municipal Charter with the status of a law (1/2006, of 13 March, which regulates the Special Regime of the municipality of Barcelona), which offers its municipal government greater scope for action. The Charter (Art. 42) enshrines environmental policy as a duty, which includes, among other aspects, the "promotion of the use of non-polluting vehicles as opposed to those that may produce some kind of pollution", as well as the "use of renewable energies in all its installations and will promote their application to the municipality's housing and industries". It also enshrines the "general principle of municipal finance that activities or goods that produce pollution or any other type of nuisance should be taxed more heavily than those that are harmless". Article 102 of the Charter makes explicit the "commitment to a sustainable city" and lists the contents of "policies aimed at preserving, restoring and improving the urban and natural environment". The aim is to "ensure good water and air quality; adequate noise levels, in accordance with international recommendations; the quality of urban space; the maintenance and promotion of public health; the minimisation, reuse, selective collection, recycling and treatment of municipal waste; the saving and efficient and effective use of energy; the efficient management of natural resources, as well as the defence and protection of animals".
 
 There is a pending reform of the Municipal Charter to make the fight against climate change a top-level objective. Even though, the current distribution of powers already allows the Barcelona City Council to have a significant impact in three areas: Urbanism (which includes urban planning and the conservation/rehabilitation of
-
-Climate City Contract. City of Barcelona
-Climate City Contract. City of Barcelona
 
 buildings), the urban environment, in the broad sense, and mobility (which includes the regulation of mobility and the provision of public transport). To this we must add the provision of basic services, such as water (considering the whole cycle) and waste collection and management. Barcelona's Environmental Protection Ordinance (1999) regulates the different elements of the environment that fall under local competence, in accordance with current legislation.
 
@@ -330,10 +318,6 @@ With regard to the political context, it should be noted that in the 2019-2023 t
 
 The May 2023 elections confirmed the high level of political fragmentation. In the first plenary session of the new City Council, PSC candidate Jaume Collboni was elected mayor and formed a minority government.
 
-7
-
-#
-
 # Barcelona and the climate change
 
 In its Sixth Assessment Report (2022), the IPCC confirmed that the models predict with a high level of consistency that the Mediterranean basin will experience an above-average increase in temperatures, as well as a reduction in rainfall and a gradual rise of the sea level. Given the fragility of Mediterranean ecosystems and the density of its human settlements, this area of the planet is particularly vulnerable to climate change. Among the negative effects expected, and already evident in many cases, are extreme summer temperatures (increased by the heat island effect), reduced water availability, increased flooding, receding beaches, poorer air quality, more forest fires and loss of biodiversity.
@@ -342,9 +326,6 @@ In the specific case of the city of Barcelona, climatological data show a gradua
 
 ![img-4.jpeg](img-4.jpeg)
 Average annual temperature recorded by the Fabra Observatory in Barcelona.
-
-Climate City Contract. City of Barcelona
-Climate City Contract. City of Barcelona
 
 Between September 2022 and August 2023 the same observatory recorded the lowest annual amount of precipitation of its 110 years old registers (319 l/m²). The accumulated water deficit since autumn 2020 has jeopardised not only agricultural, but also industrial and domestic water supply. Significantly, these three years of drought were preceded by the Gloria storm, which caused severe damage to the city's infrastructure and beaches.
 
@@ -358,9 +339,6 @@ This Climate Action Plan takes up the challenge of achieving climate neutrality 
 
 In the mobility sector, the means of transport considered as 'eco-mobility' (survey question: self-declared preferred means of transport) combined have recovered to pre-pandemic levels and even improved by one point. Public transport use, which fell by 6 points during the pandemic, stood at 36.2% in the first months of 2023, less than one point below the 2019 figures. Private motorised transport (cars and motorbikes) had an opposite trajectory, falling from 18.7% in 2020 to 16.3% in 2023. The sum of people who mainly use bicycles and e-scooters equals motorbikes (7.7%), while 11.5% declare themselves as mainly walkers/pedestrians. It is interesting to note the strong increase in eco-mobility in the younger age groups (18-44 years), which more than offsets the decrease observed in the 45+ age group. This evolution could be partly related to concerns about sustainability, partly to the growing residential mobility and job insecurity, especially among the
 
-Climate City Contract. City of Barcelona
-Climate City Contract. City of Barcelona
-
 young population, as less stability means less money and incentives to buy a car. In any case, there seems to be clear generation gap in this issue. On the negative side, we have a very low share of electromobility, although it is making a strong start. In 2022, 6.3% of a representative sample of the population claimed to own an electric vehicle, almost doubling the figure obtained in 2021.
 
 Beyond the problem of GHG emissions, which is global, Barcelona has a local problem of poor air quality, mainly due to the very high density of motor vehicles present in its urban fabric. A report by the Barcelona Public Health Agency estimates that in the period 2018-2019 the city suffered 1,900 premature deaths as a result of this problem, while in the period 2019-2020, which includes the COVID19 confinement and mobility reduction phase, the figure fell to 1,200. Noise pollution, traffic noise, also has negative impacts on emotional and psychological health. It can lead to sleep disorders and cardiovascular diseases. A recent report by the Barcelona Public Health Agency found that 57% of Barcelona's population is exposed to noise levels above those already considered negative for health by the WHO, and 27% is exposed to levels well above this threshold.
@@ -372,10 +350,6 @@ Fuel poverty has risen sharply in recent years, in parallel with the increase in
 ¹ Climate emergency action plan for 2030 (CEAP), p. 92.
 ² Barcelona Sociodemographic Survey 2020, p. 89 of the results report. More recent sources, such as the Living Conditions Survey 2021, put the energy poverty rate at around 17%.
 
-Climate City Contract. City of Barcelona
-
-#
-
 Renewable energy generation, both at regional and local level, is very underdeveloped. The city produces on its territory and from renewable sources just over 1% of the energy it consumes. In 2022, 5% of Barcelona's inhabitants had solar energy in their homes (EMA 2022). On the other hand, the electricity supply depends to a large extent on nuclear energy from plants with only a few years of service lifetime left, which makes it even more urgent to massively expand renewable electricity generation capacities.
 In waste management, despite slight progress in recent years, it is proving very difficult to increase the recycling rate of municipal waste beyond 40%. There is also a long way to go in the field of prevention/reduction and reuse.
 
@@ -384,10 +358,6 @@ In waste management, despite slight progress in recent years, it is proving very
 Source: Climate Emergency Declaration Assessment (2023).
 
 Green infrastructure has grown clearly and consistently in recent years, although the potential for growth is highly conditioned by the small size and high population density of the municipality.
-
-Climate City Contract. City of Barcelona
-
-#
 
 ![img-6.jpeg](img-6.jpeg)
 Evolution of green surface (2009-2022)
@@ -401,7 +371,6 @@ Evolution of domestic water consumption 1999-2022
 
 Source: Climate Emergency Declaration Assessment (2023).
 
-Climate City Contract. City of Barcelona
 Work process
 
 Considering the starting point, the path to achieving climate neutrality by 2030 involves an increasing ambition and putting in place the precise mechanisms and instruments to decarbonise the city's economy in a few years. This is a major city challenge, which will require disruptive innovations in different sectors and a rethinking of production and consumption patterns, including values and lifestyles, in terms of sustainability.
@@ -414,10 +383,7 @@ In terms of public policies, the first energy-related policies adopted were the 
 
 To draw up the CEAP, several participative face-to-face sessions were held in 2017, with 119 participants and more than a hundred proposals for action received through the digital platform Decidim.Barcelona. To draw up the Declaration a Climate
 
-Climate City Contract. City of Barcelona
-Climate City Contract. City of Barcelona
-
-Emergency Committee was aset up, made up of more than 300 people representing more than 200 organisations, who met in four face-to-face working sessions. In addition, the digital platform Decidim was made available to the process.
+Emergency Committee was set up, made up of more than 300 people representing more than 200 organisations, who met in four face-to-face working sessions. In addition, the digital platform Decidim was made available to the process.
 
 In parallel, over the last few years, various government measures and strategic plans have been developed, related to the achievement of climate objectives pursuing a new, greener, more equitable, more efficient and healthier city model:
 
@@ -449,9 +415,6 @@ Let's Change for Climate 2030 Plan. Barcelona's 2030 Sustainability Culture Stra
 
 The Action Plan for the Barcelona City Climate Agreement (CCC) is based on the CEAP, complemented by contributions from more recent strategies and plans. As we
 
-4
-Climate City Contract. City of Barcelona
-
 have pointed out, stakeholder and citizen participation was very present in the CEAP and in almost all planning processes.
 
 The implementation of the Action Plan and of the whole Climate City Contract (CCC) will be based on 12 principles, of which four are of a substantive, goal-oriented nature, while the remaining eight refer to methodological approaches and ways of working that will be used to achieve the objectives of the Agreement.
@@ -461,10 +424,8 @@ The implementation of the Action Plan and of the whole Climate City Contract (CC
 | 1. Comprehensive approach to sustainable development: environmental, social and economic | 5. Cross-cutting design and management |
 
 Proximity
-Knowledge and innovation |
-| 2. Comprehensive approach to tackling climate change: mitigation and adaptation; Scope 1, 2 and 3 emissions | 8. Communication and training for cultural change
-Proactive and exemplary municipal action
-Metropolitan approach and multi-level cooperation |
+| Knowledge and innovation |
+| 2. Comprehensive approach to tackling climate change: mitigation and adaptation; Scope 1, 2 and 3 emissions | 8. Communication and training for cultural change Proactive and exemplary municipal action | Metropolitan approach and multi-level cooperation |
 | 3. Local and global climate justice | 11. City-to-city cooperation and municipal action |
 | 4. Democratic planning: transparency and participation | 2. Accountability and evaluation |
 
@@ -473,10 +434,6 @@ The adoption of the CCC will be a very important incentive to put climate action
 The first step will be the elaboration, between November 2023 and April 2024, of a Government Measure (GM) for Climate Neutrality 2030, which will delimit the objectives, management responsibilities and resources necessary to carry out the mission in the period 2024-2027. At the same time, the Municipal Action Plan and the Municipal Investment Plan 2024-2027 will be drawn up, with citizen participation, which will make it possible to fine-tune the specific actions and economic allocations of the CCC, seeking agreement and collaboration at all times with the political groups present in the Municipal Plenary.
 
 At the conclusion of all these processes, the first review and update of the CCC will take place in September 2024, which will make the Action Plan more precise and robust.
-
-Climate City Contract. City of Barcelona
-
--
 
 PART A - CURRENT STATE OF CLIMATE ACTION
 
@@ -503,10 +460,6 @@ MODULE A-1: Baseline inventory of greenhouse gas emissions
 | Energy sector                                                     |          | 58,31    |         |          |
 | Construction and public works                                     |          | 31,48    |         |          |
 
-Climate City Contract. City of Barcelona
-
-#
-
 | A-1.2: Emission factors applied (source: economic model input data)3                                                                                                                                         |                                                   |                     |              |                    |                                         |                           |                           |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------- | ------------------- | ------------ | ------------------ | --------------------------------------- | ------------------------- | ------------------------- |
 | Base year                                                                                                                                                                                                    | 2019                                              |                     |              |                    |                                         |                           |                           |
@@ -521,10 +474,6 @@ Climate City Contract. City of Barcelona
 |                                                                                                                                                                                                              | Natural gas(g/kWh)                                | 201,96              | 0,0047       | 0,0036             |                                         |                           |                           |
 |                                                                                                                                                                                                              | LPG (butane and methane)(g/kWh)                   | 227,16              | 0,0039       | 0,0025             |                                         |                           |                           |
 | Electricity                                                                                                                                                                                                  | (Emission factor of the national mix 2019)(g/kWh) | 222                 |              |                    |                                         |                           |                           |
-
-Climate City Contract. City of Barcelona
-
-#
 
 | A-1.3: Activity volume by sector of origin (source: input data of the economic model) |                        |         |         |
 | ------------------------------------------------------------------------------------- | ---------------------- | ------- | ------- | ----- | ---------- |
@@ -565,10 +514,6 @@ Climate City Contract. City of Barcelona
 
 \*Includes Scope 1 Waste (produced and processed in the city) and Scope 3 Waste (produced by the city but processed outside) emissions.
 
-Climate City Contract. City of Barcelona
-
-#
-
 | A-1.4c: GHG emissions by sector of origin (data source: Barcelona Energy Agency) |                                   |         |         |       |            |
 | -------------------------------------------------------------------------------- | --------------------------------- | ------- | ------- | ----- | ---------- |
 | Base year                                                                        | BAU 2030 (Business as Usual 2030) |         |         |       |            |
@@ -591,9 +536,6 @@ A-1.6: Description and assessment of the Baseline GHG Inventory
 
 Barcelona's energy consumption grew by 3.9% between 1992 and 2017, although it has been declining since its peak in 2005. In contrast, greenhouse gas (GHG) emissions, which also peaked in 2005, have decreased by 28% since 1992. In terms of energy intensity, which relates energy consumption to the generation of goods and services, Barcelona moved from 261.6 Wh/€ in 1999 to 175.3 Wh/€ in 2019. This means that the city has been able to consume less energy per euro generated, and the trend seems to be structural. However, there are still major inefficiencies in the city's energy system. Thus, to satisfy the 15,321 GWh of final energy that Barcelona
 
-Climate City Contract. City of Barcelona
-1
-
 consumed in 2019, 27,164 GWh of primary energy were needed, which implies a loss of 45% of it in the generation and transport processes.
 
 Barcelona's greenhouse gas (GHG) emissions in 2019, considering Catalonia's electricity mix, were 3,557,000 tonnes of CO2 equivalent (CO2-e), 2.7 tonnes per inhabitant. The city's largest energy-consuming sectors were the commercial and services sectors, closely followed by the domestic and transport sectors, and at a greater distance by industry and other sectors. If we look at GHG emissions, the order changes: transport becomes the largest emitter, with a contribution of 27%, followed by building (20.7%) and services (21.4%).
@@ -615,10 +557,6 @@ In 2020, due to the Covid19 pandemic, there was a forced confinement of the popu
 | Total                                                                            | 1649                   | 904     | 297     | 2850  | 100%       |
 
 \*Includes Scope 1 Waste (produced and processed in the city) and Scope 3 Waste (produced by the city but processed outside) emissions.
-
-Climate City Contract. City of Barcelona
-
-#
 
 In 2021, GHG emissions grew again, but the level reached was still well below the 2019 level, despite the lifting of most pandemic restrictions and the rapid recovery of economic activity. The data for that year and the advanced data for 2022 point to a structural reduction in emissions in transport and even more in electricity generation.
 
@@ -645,10 +583,6 @@ MODULE A-2: Assessment of current policies and strategies
 | 2                                                            | Regulations | European | European Climate Law (2021) | The European Climate Act turns into law the target set in the European Green Pact for Europe's economy and society to be climate neutral by                                                                                                                                                                                                                                                                                                                                                      | Very high. It is the main legal translation                                                          | Enforce compliance; apply its principles at          |
 |                                                              |             |          |                             | the European Climate Act.                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |                                                                                                      | the European Climate Act.                            |
 
-Climate City Contract. City of Barcelona
-Climate City Contract. City of Barcelona
-2
-
 |     |             |          |                           | 2050. The law also sets the interim target of reducing net greenhouse gas emissions by at least 55% by 2030 compared to 1990 levels. The law aims to ensure that all EU policies contribute to this target and that all sectors of the economy and society play their part.                                            | of the European Green Deal. | local level; |
 | --- | ----------- | -------- | ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- | ------------ |
 | 3   | Regulations | European | Fit for 55 Package (2021) | It is a major package of proposed legislation to make EU climate, energy, land use, transport and taxation policies fit for purpose to reduce net greenhouse gas emissions by at least 55% by 2030. The proposals contained in the package support a sharp reduction in greenhouse gas emissions over the next decade: |
@@ -661,18 +595,13 @@ establishing a new ETS to cover emissions from fuels used in buildings and road 
 increasing Member States' emission reduction targets in a fair and cost-effective manner
 Introduce new and more ambitious CO2 emission targets for new cars and vans from 2030 onwards.
 putting the agricultural sector on the path to climate neutrality
-providing targeted funding to Member States to help citizens finance investments in energy efficiency, new heating and cooling systems and clean mobility | Very high. It is the legal translation of the European Green Deal into the various public policy sectors involved. | Demand its transposition into state and regional legislation; apply its principles at local level. |
+| providing targeted funding to Member States to help citizens finance investments in energy efficiency, new heating and cooling systems and clean mobility | Very high. It is the legal translation of the European Green Deal into the various public policy sectors involved. | Demand its transposition into state and regional legislation; apply its principles at local level. |
 | 4 | Strategy | European | A Renovation Wave for Europe - greening our buildings, creating jobs, improving lives (2020) | The strategy aims to unleash a wave of resource-efficient housing renovation in Europe by breaking down structural barriers to energy renovation, supporting new investments over a sustained period (starting with public and less efficient buildings), stimulating digitalisation and creating jobs and growth | High. It is the document that defines the roadmap to achieve decarbonisation in a key | Ensure the implementation of the strategy at national and regional level. Translate and implement the strategy |
-Climate City Contract. City of Barcelona
-3
 
 |     |             |          |                                                         | opportunities along the renovation supply chain. The aim is to at least double the annual energy renovation rate of residential and non-residential buildings by 2030 and encourage deep energy renovations, to reach 35 million renovated building units by 2030.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | sector for cities.                                                                                                         | at city level.                                                                                                                                                                                                   |
 | --- | ----------- | -------- | ------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 5   | Regulations | European | Energy efficiency directive (amendment)                 | The Council adopted in July 2023 an amendment to the directive to reduce final energy consumption at EU level by 11.7% in 2030. The annual energy savings target for final energy consumption will gradually increase from 2024 to 2030. Member States will ensure further annual savings of 1.49% of final energy consumption on average during this period, progressively reaching 1.9% by 31 December 2030. The new rules set out a specific obligation for the public sector to achieve an annual reduction in energy consumption of 1.9% which may exclude public transport and the armed forces. In addition to this, Member States will be obliged to renovate each year at least 3% of the total floor area of buildings owned by public bodies.    | Very high. It is an essential standard to boost energy savings and, specifically, the decarbonisation of public buildings. | Ensure the transposition of the directive at state level and fulfil the mandate to "lead by example" by the City Council and all entities of the group.                                                          |
 | 6   | Regulations | European | Energy performance of buildings directive (revision of) | In December 2021, the Commission proposed a revision of this directive. It aims to improve the existing regulatory framework, adapting its ambition to the pressing needs of climate and societal action, while giving EU countries the flexibility to take into account differences in the building stock across Europe. It also sets out how Europe can achieve a zero-emission and fully decarbonised building stock by 2050. The proposed measures will increase the renovation rate, particularly for the worst performing buildings in each country. The revised directive will modernise the building stock, making it more resilient and affordable. It will also promote better air quality, the digitisation of buildings' energy systems and the | Very high. It is an essential standard to drive the decarbonisation of buildings.                                          | Provide political and institutional support for the proposed reform. Ensure that the specific characteristics of housing and buildings in cities with a Mediterranean climate are adequately taken into account. |
-
-Climate City Contract. City of Barcelona
-4
 
 |     |             |          |                                              | deployment of infrastructures for sustainable mobility.                                                                                                                                                                                                                  |                                                                                                                                      |                                                                               |
 | --- | ----------- | -------- | -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------- |
@@ -681,21 +610,15 @@ Climate City Contract. City of Barcelona
 
 by 2020, the preparedness for re-use and recycling of waste materials (such as paper, metal, plastic and glass) from households will be increased to a minimum of 50 % by total weight
 by 2020, the preparation for re-use, recycling and recovery of other materials, including backfilling operations using waste to replace other materials, of non-hazardous construction and demolition waste is increased to at least 70 % by weight
-by 2025, the preparation for re-use and recycling of municipal waste shall be increased to a minimum of 55%, 60% and 65% by weight by 2025, 2030 and 2035 respectively. Following a thorough analysis including stakeholder consultations, the Commission has proposed a specific amendment to the Waste Framework Directive, focusing on textile waste. The proposal aims to achieve a more circular and sustainable management of textile waste, in line with the vision of the EU Strategy for Sustainable and Circular Textiles. Under EU waste rules, Member States are obliged to set up separate collection of textiles | Very high. It is an essential standard to drive the reduction of emissions associated with the waste sector. | Once the directive has been transposed into state legislation (2022), implement at municipal level the necessary policies to achieve compliance. |
-
--
+| by 2025, the preparation for re-use and recycling of municipal waste shall be increased to a minimum of 55%, 60% and 65% by weight by 2025, 2030 and 2035 respectively. Following a thorough analysis including stakeholder consultations, the Commission has proposed a specific amendment to the Waste Framework Directive, focusing on textile waste. The proposal aims to achieve a more circular and sustainable management of textile waste, in line with the vision of the EU Strategy for Sustainable and Circular Textiles. Under EU waste rules, Member States are obliged to set up separate collection of textiles | Very high. It is an essential standard to drive the reduction of emissions associated with the waste sector. | Once the directive has been transposed into state legislation (2022), implement at municipal level the necessary policies to achieve compliance. |
 
 |     |              |          |                                                                    | by 1 January 2025.                                                                                                                                                                                                                                                                                                                                                                                                                                       |                                                                                                             |                                                                                                                             |
 | --- | ------------ | -------- | ------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
 | 9   | Plan         | European | Repower EU (2022)                                                  | The EU launched REPowerEU to rapidly reduce dependence on oil and gas imports from Russia. While the policy proposal includes a substantial acceleration of renewable energy deployment, it also contains the expansion of fossil fuel infrastructure from alternative suppliers.                                                                                                                                                                        | Media. Updates the EU Green Deal strategy in the wake of the Ukraine war and its geopolitical implications. | Implement at municipal level the necessary policies (especially energy saving policies) to achieve compliance.              |
-| 10  | Regulati ons | State    | Law 7/2021 on Change Climate and Transition Energetics             | It establishes minimum targets for the year 2030 for the reduction of GHG emissions, the penetration of RES-E in final energy consumption, its minimum participation in the electricity system, and the reduction of primary energy consumption. It includes the PNIEC and ELP2050 as instruments. It also regulates aspects of mobility, such as the mandatory establishment of Low Emission Zones in municipalities with more than 50,000 inhabitants. | Key. Establishes standards with the status of law in the key sectors of decarbonisation.                    | Ensure its implementation in municipal policies and demand its enforcement.                                                 |
-| 11  | Regulati ons | State    | Law 7/2022 on waste and contaminated soils for a circular economy. | It aims to regulate the legal regime applicable to the placing on the market of products in relation to the impact on the management of their waste, as well as the legal regime for the prevention, production and management of waste, including the establishment of economic instruments applicable in this field.                                                                                                                                   | High                                                                                                        | Ensure its regulatory development and compliance in Catalonia. Apply its guidelines to the design of municipal waste policy |
-| 12  | Regulati ons | State    | Technical Building Code                                            | The Technical Building Code (CTE) is the regulatory framework that establishes the basic quality requirements that buildings must meet in relation to the basic safety and habitability requirements set out in Law 38/1999 of 5 November 1999 on Building Regulations (LOE). It also incorporates requirements in terms of energy saving and generation.                                                                                                | High                                                                                                        | Ensure compliance in all public and private works projects.                                                                 |
-| 13  | Regulati ons | State    | Law 7/1985, Regulating the Bases of Local Government               | Defines the general framework of local administrations in Spain, their organisational model and their competences.                                                                                                                                                                                                                                                                                                                                       | Very high                                                                                                   | Make the most of the tools they offer.                                                                                      |
-
-Climate City Contract. City of Barcelona
-Climate City Contract. City of Barcelona
-6
+| 10  | Regulations | State    | Law 7/2021 on Change Climate and Transition Energetics             | It establishes minimum targets for the year 2030 for the reduction of GHG emissions, the penetration of RES-E in final energy consumption, its minimum participation in the electricity system, and the reduction of primary energy consumption. It includes the PNIEC and ELP2050 as instruments. It also regulates aspects of mobility, such as the mandatory establishment of Low Emission Zones in municipalities with more than 50,000 inhabitants. | Key. Establishes standards with the status of law in the key sectors of decarbonisation.                    | Ensure its implementation in municipal policies and demand its enforcement.                                                 |
+| 11  | Regulations | State    | Law 7/2022 on waste and contaminated soils for a circular economy. | It aims to regulate the legal regime applicable to the placing on the market of products in relation to the impact on the management of their waste, as well as the legal regime for the prevention, production and management of waste, including the establishment of economic instruments applicable in this field.                                                                                                                                   | High                                                                                                        | Ensure its regulatory development and compliance in Catalonia. Apply its guidelines to the design of municipal waste policy |
+| 12  | Regulations | State    | Technical Building Code                                            | The Technical Building Code (CTE) is the regulatory framework that establishes the basic quality requirements that buildings must meet in relation to the basic safety and habitability requirements set out in Law 38/1999 of 5 November 1999 on Building Regulations (LOE). It also incorporates requirements in terms of energy saving and generation.                                                                                                | High                                                                                                        | Ensure compliance in all public and private works projects.                                                                 |
+| 13  | Regulations | State    | Law 7/1985, Regulating the Bases of Local Government               | Defines the general framework of local administrations in Spain, their organisational model and their competences.                                                                                                                                                                                                                                                                                                                                       | Very high                                                                                                   | Make the most of the tools they offer.                                                                                      |
 
 | 14  | Regulations     | State | Royal Legislative Decree 2/2004 (revised text of the Law Regulating Local Treasuries). | It defines the general framework for the financing of local administrations, regulating all types of financial resources to which they can have access.                                                                                                                                                             | Very high | Promote its reform to extend local autonomy                                     |
 | --- | --------------- | ----- | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------------- |
@@ -706,10 +629,8 @@ Climate City Contract. City of Barcelona
 • From 42% to 48% renewables in energy end-use.
 • From 39.5% to 44% improvement in energy efficiency in terms of final energy.
 • 74% to 81% of renewable energy in electricity generation.
-This draft has been submitted for public hearing and information until 4 September. | Very high. Specifies decarbonisation targets at state level. | Advocate for an increase in its targets, to achieve greater consistency with climate neutrality objectives. Adapt policies to meet these objectives. |
+| This draft has been submitted for public hearing and information until 4 September. | Very high. Specifies decarbonisation targets at state level. | Advocate for an increase in its targets, to achieve greater consistency with climate neutrality objectives. Adapt policies to meet these objectives. |
 | 17 | Plan for Action | State | Recovery, Transformation and Resilience Plan | It details a comprehensive investment and reform agenda specifying goals, objectives and indicators for monitoring and control. Spain is one of the main beneficiaries of the European Facility, with 140 billion (69.528 billion in transfers, access to more than 70 billion in loans until 31 December 2026). It has 30 lines of action, 7 of which are directly related to the mission: | Very high, because it defines the guidelines for the granting of public financial aid. | Submit sound and mature projects to successive calls for grants under the Plan to finance strategic decarbonisation actions. Enable the city to directly |
-
--
 
 |     |             |            |                                                                                                           | C1 Sustainable, safe and connected mobility shock plan in urban and metropolitan environments, C2 Housing rehabilitation and urban regeneration plan, C6 Sustainable, safe and connected mobility, C7 Deployment and integration of renewable energies, C8 Electricity infrastructures, promotion of smart grids and deployment of flexibility and storage, C9 Renewable hydrogen roadmap and its sectoral integration and C10 Just Transition Strategy. |                                                                                          | manage aid to citizens and businesses, related to energy efficiency, the installation of renewables and the deployment of electric vehicles. |
 | --- | ----------- | ---------- | --------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -717,10 +638,6 @@ This draft has been submitted for public hearing and information until 4 Septemb
 | 19  | Regulations | Autonomous | Decree Law 16/2019, on urgent measures for the climate emergency and the promotion of renewable energies. | Its purpose is to accelerate compliance with Law 16/2017. It amends, among others, the Urban Planning Law to facilitate the implementation of solar energy and wind energy facilities and establishes the requirements for the authorisation of wind energy and photovoltaic solar energy production facilities.                                                                                                                                         | High because it concretises the operational requirements for renewable energy generation | Adapt municipal policies to the requirements of the Law. Promote changes to the Law where deemed necessary                                   |
 | 20  | Regulations | Autonomous | Decree Law 24/2021, on accelerating the deployment of distributed and shared renewable energies.          | It amends Decree Law 16/2019, incorporating measures to achieve greater consensus with the territory, favouring social dialogue in the implementation of renewable energy facilities.                                                                                                                                                                                                                                                                    | Media                                                                                    | Ensure that the implementation of renewable energies in Catalonia is not paralysed.                                                          |
 | 21  | Regulations | Autonomous | Energy Transition Law (in the pipeline; expected 2023)                                                    | In coherence with the objectives of the Climate Change Law, it must promote a sovereign, democratised, sustainable, 100% renewable and local energy model.                                                                                                                                                                                                                                                                                               | High                                                                                     | Promote the processing and approval of these laws as soon as possible.                                                                       |
-
-Climate City Contract. City of Barcelona
-Climate City Contract. City of Barcelona
-8
 
 | 22                                                                                                                | Regulations | Autonomous | Draft bill on waste prevention and management and efficient use of resources in Catalonia (Start of processing: 1st semester 2023) | It will have to work on prevention and, particularly, on improving production and consumption patterns, including more classical strategies such as eco-design or industrial symbiosis, as well as others such as dematerialisation, product-service techniques, or others aimed at reducing the consumption of resources and keeping consumed resources in circulation. | Ensure that the specific needs and competences of the city of Barcelona are incorporated into these laws. |
 | ----------------------------------------------------------------------------------------------------------------- | ----------- | ---------- | ---------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------- |
@@ -730,9 +647,6 @@ Climate City Contract. City of Barcelona
 | 26                                                                                                                | Strategy    | Autonomous | "Commitment 2030 Horizon 2050", Roadmap for the Energy Transition in Catalonia (2021)                                              | It lists the legislative and public policy measures to be taken in the coming years to realise the energy transition.                                                                                                                                                                                                                                                    | Media                                                                                                     |
 | Ensure coherence with Barcelona's energy transition strategy. Ensuring the implementation of the planned measures |
 
-Climate City Contract. City of Barcelona
-9
-
 | 27  | Strategy | Autonomous | Catalonia Energy Outlook 2050 (PROENCAT) (2022)                          | It analyses the transition towards a new energy model, with decentralised and distributed generation that empowers citizens in energy policies, in order to reach 100% renewable energy by 2050.                                                              | Medium-low | Ensure coherence with Barcelona's energy transition strategy.                                                   |
 | --- | -------- | ---------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------------------------------------------------------------------------------------------------------- |
 | 28  | Strategy | Autonomous | Climate Change Adaptation Strategy 2021-2030 (ESCACC30)                  | It is the strategic framework for the 2030 horizon, which provides continuity to the ESCACC20, approved in 2012 for the 2020 horizon.                                                                                                                         | Medium-low | Ensure coherence with the Climate Action Plan. Ensuring its implementation                                      |
@@ -740,8 +654,6 @@ Climate City Contract. City of Barcelona
 | 30  | Strategy | Autonomous | Bioeconomy Strategy of Catalonia 2030                                    | Develop a business fabric based on the circular bioeconomy; 3. Promote the use and consumption of bioproducts, bioenergy and biomaterials in the market; 4. Promote resilient agroforestry landscapes and the sustainable provision of ecosystem services; 5. | Media      | Adopt measures, within the framework of the Climate Action Plan, that promote the development of this strategy. |
 | 31  | Strategy | Autonomous | Catalonia's food strategy                                                | It is an action plan to move towards a more sustainable, secure, fair, cohesive, resilient, healthy and universally accessible food system.                                                                                                                   | Media      | Adopt measures, within the framework of the Climate Action Plan, that promote the development of this strategy. |
 | 33  | Strategy | Autonomous | Catalan Bicycle Strategy 2025                                            | It establishes planning and development, promotion and training tools to promote cycling as an active and sustainable mode of transport.                                                                                                                      | Media      | Adopt measures, within the framework of the Climate                                                             |
-
--
 
 |     |             |              |                                                                                                     |                                                                                                                                                                                                                                                                                                                       |                                                                                                                  | Action Plan, that promote the development of this strategy.                                |
 | --- | ----------- | ------------ | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
@@ -752,21 +664,13 @@ Climate City Contract. City of Barcelona
 | 38  | Action Plan | Autonomous   | Update of the Catalan Suburban Railway Plan 2020-2030                                               |                                                                                                                                                                                                                                                                                                                       |                                                                                                                  |                                                                                            |
 | 39  | Strategy    | Metropolitan | TMB Strategic Plan 2025 (Transports Metropolitans de Barcelona)                                     | It marks the lines of future development of Barcelona's main public transport operator.                                                                                                                                                                                                                               | High. Essential for modal shift in the city.                                                                     | Ensure its implementation. Drive forward the 2030 Plan,                                    |
 
-Climate City Contract. City of Barcelona
-
--
-
 |     |             |                 |                                                                                                                |                                                                                                                                                                                                                                                                                           |                                                                                           | with the goal of zero emissions.                                                                         |
 | --- | ----------- | --------------- | -------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
-| 40  | Strategy    | Metropolitan an | Metropolitan Territorial Plan of Barcelona (2010)                                                              | Partial territorial plan for the metropolitan region, which includes the territory of the counties of Alt Penedès, Baix Llobregat, Barcelonès, Garraf, Maresme, Vallès Occidental and Vallès Oriental.                                                                                    | Medium-low. Designed for a territory that does not have an institutional reference point. | Promote its modification if inconsistencies with the accelerated decarbonisation objective are detected. |
-| 41  | Strategy    | Metropolitan an | Barcelona Demà. Metropolitan Commitment 2030                                                                   | Also designed for the metropolitan region. Structured around 8 missions, one of which on environmental and climate emergency.                                                                                                                                                             | Medium high. It is closely aligned with the goal of climate neutrality.                   | Ensure coherence with the Strategy. Collaborate in the implementation of your climate mission            |
-| 42  | Strategy    | Metropolitan an | Llobregat Delta Strategy                                                                                       | An instrument agreed between the city councils of Barcelona, El Prat de Llobregat and L'Hospitalet de Llobregat and the public operators in the area to achieve a more sustainable management paradigm and model for the economic platform of the Llobregat delta.                        | Media                                                                                     | Ensure coherence with the Climate Action Plan.                                                           |
-| 43  | Strategy    | Metropolitan an | Metropolitan Strategy in the Besòs area                                                                        | It formulates a strategy for public intervention in the metropolitan area around the River Besòs and defines a series of actions that contribute to social cohesion and to the economic and territorial dynamisation of the urban system structured along the final stretch of the river. | Media                                                                                     | Ensure coherence with the Climate Action Plan.                                                           |
-| 44  | Action Plan | Metropolitan an | Metropolitan Programme for the Prevention and Management of Municipal Resources and Waste 2019-2025 (PREMET25) | Defines the actions necessary to ensure compliance with the objectives set by the circular economy in the field of waste.                                                                                                                                                                 | Medium-high                                                                               | Ensure coherence with the Climate Action Plan. Collaborate in its implementation                         |
-
-Climate City Contract. City of Barcelona
-Climate City Contract. City of Barcelona
-2
+| 40  | Strategy    | Metropolitan and | Metropolitan Territorial Plan of Barcelona (2010)                                                              | Partial territorial plan for the metropolitan region, which includes the territory of the counties of Alt Penedès, Baix Llobregat, Barcelonès, Garraf, Maresme, Vallès Occidental and Vallès Oriental.                                                                                    | Medium-low. Designed for a territory that does not have an institutional reference point. | Promote its modification if inconsistencies with the accelerated decarbonisation objective are detected. |
+| 41  | Strategy    | Metropolitan and | Barcelona Demà. Metropolitan Commitment 2030                                                                   | Also designed for the metropolitan region. Structured around 8 missions, one of which on environmental and climate emergency.                                                                                                                                                             | Medium high. It is closely aligned with the goal of climate neutrality.                   | Ensure coherence with the Strategy. Collaborate in the implementation of your climate mission            |
+| 42  | Strategy    | Metropolitan and | Llobregat Delta Strategy                                                                                       | An instrument agreed between the city councils of Barcelona, El Prat de Llobregat and L'Hospitalet de Llobregat and the public operators in the area to achieve a more sustainable management paradigm and model for the economic platform of the Llobregat delta.                        | Media                                                                                     | Ensure coherence with the Climate Action Plan.                                                           |
+| 43  | Strategy    | Metropolitan and | Metropolitan Strategy in the Besòs area                                                                        | It formulates a strategy for public intervention in the metropolitan area around the River Besòs and defines a series of actions that contribute to social cohesion and to the economic and territorial dynamisation of the urban system structured along the final stretch of the river. | Media                                                                                     | Ensure coherence with the Climate Action Plan.                                                           |
+| 44  | Action Plan | Metropolitan and | Metropolitan Programme for the Prevention and Management of Municipal Resources and Waste 2019-2025 (PREMET25) | Defines the actions necessary to ensure compliance with the objectives set by the circular economy in the field of waste.                                                                                                                                                                 | Medium-high                                                                               | Ensure coherence with the Climate Action Plan. Collaborate in its implementation                         |
 
 | 45  | Action Plan | Metropolitan | Metropolitan Urban Development Master Plan (in public information phase)                                                | It sets out the main objectives and guidelines for 20 years in terms of infrastructure, green areas, urban fabric and open spaces.                                                                                                                                                                                                                                                                                                                                                                                                                                 | Media. It is a key document, but with longer-term effects.                                                                            | Promote the final approval of the plan                                                                                                                                             |
 | --- | ----------- | ------------ | ----------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -775,19 +679,13 @@ Climate City Contract. City of Barcelona
 | 48  | Regulations | Local        | Environment Ordinance                                                                                                   | It regulates the different elements of the environment that fall under local jurisdiction and the services attributed to the City Council: the rights and duties of individuals in relation to the protection of the atmosphere; the control of pollution by physical agents; the use of mines, water wells and aqueducts; the control of pollution and water consumption; the evacuation of waste water; the collection, recycling, transport, recovery and final disposal of municipal waste; responsible energy consumption; and green spaces and biodiversity. | High                                                                                                                                  | Ensure compliance. Promote its reform to bring it in line with the objective of climate neutrality.                                                                                |
 | 49  | Regulati    | Local        | Barcelona Low                                                                                                           | It sets the access criteria,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | High.                                                                                                                                 | Ensure                                                                                                                                                                             |
 
-Climate City Contract. City of Barcelona
-3
-
 |     | ons          |       | Emission Zone Ordinance (new version, initially approved on 15/11/2022) | circulation and parking of vehicles in Barcelona's Low Emission Zone and promotes zero-emission mobility.                                                                                                 | Restricts the right to mobility of the most polluting vehicles, in the interest of air quality and climate neutrality. | compliance. Promote progressively tighter restrictions, or ultra-low emission zones, consistent with the goal of climate neutrality. |
 | --- | ------------ | ----- | ----------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| 50  | Regulati ons | Local | Tax ordinance regulating property tax 2023                              | It establishes a 50% (residential and tertiary uses) or 30% (industrial uses) subsidy for 3 years for companies and individuals who install solar thermal or electrical systems.                          | Media. It is an important incentive to promote renewable energy in households and businesses.                          | Rethink the bonus system, adapting it to the evolution of the installation costs of this type of system.                             |
-| 51  | Regulati ons | Local | Tax ordinance regulating the tax on mechanical traction vehicles 2023   | Vehicles classified as zero-emission by the DGT are entitled to a 75% reduction in the tax rate. Vehicles classified as ECO that use petrol, with emissions of up to 120 gr/km of CO2 enjoy a 50% rebate. | Media. These are important incentives to promote electric mobility in households and businesses.                       | Maintain bonuses and exemptions, and progressively adapt them to technological and market developments.                              |
-| 52  | Regulati ons | Local | Charges for the regulated parking of vehicles on public roads 2023      | It establishes a set of exemptions and bonuses for vehicles classified as "zero emission" or "eco".                                                                                                       |                                                                                                                        |                                                                                                                                      |
-| 53  | Regulati ons | Local | Public prices in the area of urban ecology for the year 2023            | It includes a rebate on waste collection service prices for signatories of the Citizen Commitment to Sustainability and the Barcelona Plastic Zero Commitment.                                            | Media. It is an incentive that affects few but highly relevant actors.                                                 | Maintain the bonus and modify it if deemed necessary to advance the zero waste policy.                                               |
-| 54  | Regulati ons | Local | Protocol for the implementation of green roofs on municipal buildings.  | Promotes the implementation of green roofs on municipal buildings                                                                                                                                         | Medium. Negligible impact on emissions, but significant in co-benefit                                                  | Provide this policy with the necessary budget for its implementation.                                                                |
-
-Climate City Contract. City of Barcelona
-4
+| 50  | Regulations | Local | Tax ordinance regulating property tax 2023                              | It establishes a 50% (residential and tertiary uses) or 30% (industrial uses) subsidy for 3 years for companies and individuals who install solar thermal or electrical systems.                          | Media. It is an important incentive to promote renewable energy in households and businesses.                          | Rethink the bonus system, adapting it to the evolution of the installation costs of this type of system.                             |
+| 51  | Regulations | Local | Tax ordinance regulating the tax on mechanical traction vehicles 2023   | Vehicles classified as zero-emission by the DGT are entitled to a 75% reduction in the tax rate. Vehicles classified as ECO that use petrol, with emissions of up to 120 gr/km of CO2 enjoy a 50% rebate. | Media. These are important incentives to promote electric mobility in households and businesses.                       | Maintain bonuses and exemptions, and progressively adapt them to technological and market developments.                              |
+| 52  | Regulations | Local | Charges for the regulated parking of vehicles on public roads 2023      | It establishes a set of exemptions and bonuses for vehicles classified as "zero emission" or "eco".                                                                                                       |                                                                                                                        |                                                                                                                                      |
+| 53  | Regulations | Local | Public prices in the area of urban ecology for the year 2023            | It includes a rebate on waste collection service prices for signatories of the Citizen Commitment to Sustainability and the Barcelona Plastic Zero Commitment.                                            | Media. It is an incentive that affects few but highly relevant actors.                                                 | Maintain the bonus and modify it if deemed necessary to advance the zero waste policy.                                               |
+| 54  | Regulations | Local | Protocol for the implementation of green roofs on municipal buildings.  | Promotes the implementation of green roofs on municipal buildings                                                                                                                                         | Medium. Negligible impact on emissions, but significant in co-benefit                                                  | Provide this policy with the necessary budget for its implementation.                                                                |
 
 |     |             |       |                                                                                                                                |                                                                                                                                                                                                                                                                       | generation.                                                                               |                                                                                                                                                                         |
 | --- | ----------- | ----- | ------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -797,9 +695,6 @@ Climate City Contract. City of Barcelona
 | 59  | Strategy    | Local | Barcelona Resilience Profile                                                                                                   | Definition of risks and opportunities. With 3 priority themes: 1st. Right to adequate housing and access to basic services 2nd. Public space: accessibility, health, uses and social cohesion and 3rd. Population ageing and demographic change.                      | Low medium. It is a strategic reflection document.                                        | Incorporate its main contents into the most relevant planning documents.                                                                                                |
 | 60  | Strategy    | Local | "This is not a drill". Declaration of Climate Emergency (2020)                                                                 | Reasons for the emergency; need for joint action; proposals for accelerated action                                                                                                                                                                                    | High. Potential cross-cutting impact on all sectors                                       | Implement the plans and policies already adopted to address the emergency. Increase its ambition to                                                                     |
 
-Climate City Contract. City of Barcelona
-5
-
 |     |                        |       |                                                              |                                                                                                                                                                                               |                                                                                                         | match the Mission's objectives.                                                                                                                      |
 | --- | ---------------------- | ----- | ------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 57  | Strategy               | Local | Roadmap for the Economy for Sustainability in Barcelona 2030 | Boosting and promoting the sustainability of economic sectors in the framework of the Barcelona Green New Deal                                                                                | Medium. Potential cross-cutting impact on various sectors: industry, waste, tertiary, mobility, energy. | Implement the measures included in the strategy. Define concrete, measurable targets at a level of ambition consistent with the Climate Action Plan. |
@@ -807,9 +702,6 @@ Climate City Contract. City of Barcelona
 | 62  | Strategy               | Local | Barcelona Bicycle Strategy (2015)                            | Establishes the lines of action to promote cycling in the city.                                                                                                                               | High. Key role in transforming mobility                                                                 | Implement it                                                                                                                                         |
 | 63  | Strategy               | Local | Food Strategy Healthy and Sustainable Barcelona 2030         | It is a compass to guide the transformation of Barcelona's food system, prioritising health and sustainability.                                                                               | Medium high. Highly relevant for residual emissions strategy                                            | Implement it                                                                                                                                         |
 | 64  | Strategy + Action Plan | Local | Zero Waste Strategy (2016) and Zero Waste Plan 2021-2027     | The strategy includes: philosophy, diagnosis, strategic orientation and proposed measures. The plan specifies measures, quantified targets for 2027 and a comprehensive system of indicators. | High. It is the basic municipal reference on waste                                                      | Implement the Plan. Extend its validity to 2030, at a level of ambition consistent with the Climate Action Plan.                                     |
-
-Climate City Contract. City of Barcelona
-6
 
 | 65  | Action Plan | Local | Climate Emergency Action Plan 2030                      | It is the main planning document for climate action. It covers all sectors. It establishes a commitment to reduce GHG emissions by 50% by 2030 and 100% by 2050 compared to 1992 levels.                      | Very high.                                                                                           | Implement it. Update its targets in line with the 2030 climate neutrality goal.                      |
 | --- | ----------- | ----- | ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
@@ -820,9 +712,6 @@ Climate City Contract. City of Barcelona
 | 70  | Action Plan | Local | Housing Rights Plan 2016-2025                           | It incorporates the promotion of energy rehabilitation of housing. It plans to intervene in 50 buildings (2,400 dwellings).                                                                                   | Medium high. Rehabilitation is not central to this plan                                              | Implement the plan and develop the next one, consistent with the goal of climate neutrality.         |
 | 71  | Action Plan | Local | Superblock to regenerate                                | It is a global and comprehensive intervention strategy to transform                                                                                                                                           | High for the transformati                                                                            | Assess their impacts on                                                                              |
 
-Climate City Contract. City of Barcelona
-7
-
 |     |             |       | Barcelona and its neighbourhoods (2022) | the city, based on regenerating, rehabilitating and reactivating the urban fabric.                                                                                                                                                                                                                                                                  | on of urban mobility                                                                                    | climate neutrality. Analysing its continuity |
 | --- | ----------- | ----- | --------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | -------------------------------------------- |
 | 72  | Action Plan | Local | Climate + Enxarxem Plan 2022-2027       | The aim is to strengthen the involvement of the associative fabric in the response to the climate emergency. It regulates the "climate grants" programme.                                                                                                                                                                                           | High average.                                                                                           | Implement it                                 |
@@ -832,7 +721,6 @@ Climate City Contract. City of Barcelona
 A-2.2: Description and evaluation of policies
 
 Law 16/2017 on climate change in Catalonia basically pursues five objectives. Firstly, to ensure that Catalonia reduces both greenhouse gas emissions and vulnerability to the impacts of climate change, favouring the transition towards a model that is neutral in greenhouse gas emissions and, at the same time, transforming the model of production and access to natural and energy resources. Secondly, to reinforce and expand the strategies and plans that have been developed in recent years in the field of climate change. Thirdly, to promote and guarantee the coordination of all sectoral planning instruments related to climate change and the coordination of all Catalan public administrations, as well as to encourage the participation of citizens, social agents and economic agents. Fourthly, to become a leading country in the research
-Climate City Contract. City of Barcelona
 
 and application of new technologies that contribute to mitigation, and also to reducing Catalonia's energy dependence on external energy resources, decarbonisation and denuclearisation. Finally, to make Catalonia's role visible in the world, both in cooperation projects and in participation in global forums for debate on climate change.
 
@@ -849,9 +737,6 @@ The MTA's 2021-2030 Infrastructure Master Plan for Collective Public Transport e
 The Llobregat Delta Strategy is the strategic planning instrument that the City Councils of Barcelona, El Prat de Llobregat and L'Hospitalet de Llobregat have agreed with the public operators in the area to achieve a more sustainable paradigm for the economic platform of the Llobregat delta, a new management model in which the promotion of economic activity to generate inclusive employment goes hand in hand with the reduction of the environmental grievances suffered by the delta and the reduction of all the externalities produced by industrial establishments and mobility.
 
 The environmental sustainability objectives linked to decarbonisation are as follows: Mitigate the externalities of economic activities, optimise energy consumption and
-
-Climate City Contract. City of Barcelona
-Climate City Contract. City of Barcelona
 
 increase the degree of energy self-sufficiency of companies; reduce energy consumption and the externalities of generated and attracted mobility; progressively arrange the spatial distribution of activities on the platform with sustainability criteria and expand the provision of green areas and open spaces in the area.
 
@@ -878,9 +763,6 @@ Creation of a working group of cities for the promotion of the evaluation of the
 Leading the local implementation of the 2030 Agenda in multilateral organisations
 Aligning the city's major international events with the 2030 Agenda
 
-Climate City Contract. City of Barcelona
-Climate City Contract. City of Barcelona
-
 Attracting international events linked to the 2030 Agenda to Barcelona
 International promotion of compliance with the Agenda in public-private partnership contracts
 
@@ -889,9 +771,6 @@ Barcelona's Integrated Territorial Strategy (ITS) should become a key planning i
 The municipal waste prevention strategy, Barcelona Zero Waste, is based on three priority elements linked to prevention: shared responsibility in the management of waste by citizens (the best waste is that which is not generated); reuse; and the improvement of selective collection, as well as its quality, and, specifically, of organic matter in a preferential manner. Along the same lines, the Barcelona Zero Waste concept is working to develop an economy that closes the cycles of everything we produce and does not generate waste. In this way, green points, exchange markets, the organic fraction and conscious and responsible consumption, as well as the promotion of public awareness of their proper use, favour the circular economy, as they facilitate the recycling and reuse of the maximum number of waste fractions. The strategy is set out in the Zero Waste Plan 2021-2027.
 
 A key element in this area is the new waste collection management contract. A very important political commitment has been made to the electrification of the fleet. A lot of points were awarded in the tendering process in this respect. The fact is that the number of electric vehicles has increased from 20% to 66%. Seventy-five per cent of the cleaning vehicles are electric and 44 per cent of the collection vehicles, which are much heavier. In fact, before the implementation of the new contract there were only 3 electric collection vehicles in Catalonia, and now Barcelona will have 78.
-
-Climate City Contract. City of Barcelona
-Climate City Contract. City of Barcelona
 
 Biodiesel will only be used for those vehicles without an operational alternative (from 39% to 7%). This means less noise, less air pollution and, logically, less CO2 emissions.
 
@@ -904,9 +783,6 @@ Barcelona's Electric Mobility Strategy 2018-2024 aims to progressively increase 
 Barcelona Bicycle Strategy (2015). The Barcelona Urban Mobility Plan (PMU) 2013-2018 sets out a series of measures aimed at giving greater prominence to cycling. The PMU aims to increase cycling by 67% compared to 2011. The City Council's aim is for 95% of citizens to have at least one cycle lane within 300 metres of their homes and to have 308 km of cycle lanes by 2018.
 
 The Barcelona 2030 Healthy and Sustainable Food Strategy represents a commitment to transform the city's food system and make it more sustainable for the benefit of
-
-1
-Climate City Contract. City of Barcelona
 
 citizens, the territory and the planet. It is an initiative agreed with the different agents in the food chain and one of the fruits of the city's becoming the world capital of sustainable food in 2021. It consists of 9 main objectives, 54 lines of work and 265 concrete and coordinated actions with the different actors in the food system. It also includes 11 goals to be achieved by 2030, such as doubling the consumption of local and organic products, reducing food wastage by 50%, changing school canteen menus with healthy eating criteria and reducing the percentage of obesity in the city. Its 9 objectives are:
 
@@ -931,9 +807,6 @@ Combat the climate crisis and improve air quality.
 
 The aim is to achieve safer, more sustainable, healthier, more equitable and more efficient/smart mobility. To this end, the aim is to reduce the use of private vehicles
 
-2
-Climate City Contract. City of Barcelona
-
 (reducing their modal share from 26% to 18.5%) and to promote walking, public transport, cycling and car sharing, prioritising renewable energies in all cases.
 
 Superilla (superblock) Barcelona is a global and comprehensive intervention strategy to regenerate and transform the city based on the following objectives: Social Justice, Fight against Climate Emergency, Habitability, Productive Urban Fabrics and Memory and Landscape. It incorporates actions for the transformation of public space, the improvement of neighbourhoods, the reactivation of economic fabrics and the promotion of sustainable mobility.
@@ -950,9 +823,6 @@ Expanding the number of affordable flats
 Rehabilitate the existing park
 
 Having a residential stock in good condition is essential to guarantee the quality of life of all the city's residents. In Barcelona, refurbishing, improving and updating the residential stock is the way to achieve this, while guaranteeing the quality and safety of the architectural heritage; initiating the energy transition, favouring efficiency, savings and the generation of renewable energies; and reversing inequalities by improving habitability and access to basic services.
-
-3
-Climate City Contract. City of Barcelona
 
 The Barcelona Tree Master Plan 2017-2037 places emphasis on rethinking the criteria and processes of intervention, with the aim of applying more sustainable and efficient management and maintenance to improve the living conditions of Barcelona's trees in order to maximise the services and functions that healthy trees provide to the city and to people's wellbeing. The 5 priority objectives of the plan are:
 
@@ -977,9 +847,6 @@ Increase the critical mass of actors and people in the city committed to a cultu
 Promote sustainable and decarbonised lifestyles in households and a more conscious and direct relationship with nature.
 Impregnate the culture and art that is programmed in the city with ideas and content on the socio-environmental and climate crisis.
 
-Climate City Contract. City of Barcelona
-Climate City Contract. City of Barcelona
-
 Consolidate centres of reference in which opportunities for change and alternative spaces where social transformation in favour of sustainability can take shape are visualised.
 Promote and amplify the work of the "allied" agents of the Barcelona + Sustainable network, strengthening the capacity of educators and facilitators of cultural change.
 Consolidate education for sustainability and climate action in all the city's educational centres.
@@ -1002,9 +869,6 @@ Climate culture
 
 The Clima Plan + Networking 2022-2027 develops the climate grants programme. These subsidies seek to encourage projects that promote the fight against the
 
-5
-Climate City Contract. City of Barcelona
-
 climate crisis and proposals for solutions to achieve the objectives set out in the Climate Emergency Action Plan, promoting citizen involvement and supporting collective actions, especially the most innovative and transformative initiatives. The objectives pursued by the programme are:
 
 Facilitate the development of transformative projects from the city's entities.
@@ -1021,10 +885,6 @@ We note that the current regulatory framework and policies serve as a basis for 
 
 ⁴ For the purposes of the Mission, emissions generated by infrastructures with a clearly supramunicipal scope, such as the Port of Barcelona and Josep Tarradellas El Prat Airport, which are subject to specific regulations and which, in terms of emissions reduction, must comply with the stipulations of European, state and autonomous community regulations, will be excluded from the calculation. With regard to emissions generated by electricity production, it is assumed that, in accordance with the commitments of the Spanish and Catalan governments, by 2030 Barcelona will have an electricity mix made up mainly of renewable energies (with a contribution from the city of Barcelona of around 1,080 MWp). In this scenario, the generation of emissions will be considerably reduced.
 
-6
-
-#
-
 | A-2.3: Emissions Gap  |                                                    |                                     |                 |                                                     |                 |                                                    |                 |                     |                 |
 | --------------------- | -------------------------------------------------- | ----------------------------------- | --------------- | --------------------------------------------------- | --------------- | -------------------------------------------------- | --------------- | ------------------- | --------------- |
 |                       | Reference emissions/baseline (percentage) BAU 2030 | 2030 ECCP emission reduction target |                 | Emission reduction target MISSION (80% of BAU 2030) |                 | Emissions Gap (to achieve 80% emissions reduction) |                 | Residual emissions1 |                 |
@@ -1040,10 +900,6 @@ residual emissions are those that cannot be reduced through climate action and a
 
 ![img-9.jpeg](img-9.jpeg)
 
-Climate City Contract. City of Barcelona
-
--
-
 MODULE A-3: Systemic Barriers to Climate Neutrality by 2030
 
 | A-3.1: System and stakeholder mapping                                                                             |                                                                                                                                                                                                                           |                                                                                                                                                                                                                                                                                           |                                                                                                                               |                                                                                                                                                                                        |
@@ -1053,68 +909,32 @@ MODULE A-3: Systemic Barriers to Climate Neutrality by 2030
 | Multi-group public bodies whose budget is consolidated with that of Barcelona City Council (basically consortia). | With majority municipal participation (Energy Agency, Public Health Agency) or minority participation (Zona Franca Consortium, ATM, PN Collserola, Institut Metròpoli...).                                                | Sectoral networks with leadership, co-leadership or high influence of Barcelona City Council                                                                                                                                                                                              | High or very high in certain sectors                                                                                          | Each entity has its own interests, which are more aligned with the municipal interest the greater the participation of the City Council.                                               |
 | Private entities with municipal participation but excluded from budget consolidation                              | Basically foundations: BIT Habitat, IS Global, BCN FP, Eurecat, I2cat, Fòrum Ambiental, Mobilitat Sostenible i Segura,                                                                                                    | Sectoral networks with leadership, co-leadership or high influence of Barcelona City Council                                                                                                                                                                                              | Medium / high in certain sectors                                                                                              |                                                                                                                                                                                        |
 
-Climate City Contract. City of Barcelona
-Climate City Contract. City of Barcelona
-9
-
 | Public interest entities associated with the City Council | With a minority but significant municipal participation (SABA, Fira2000, Sagrera Alta Velocitat Habitatge Metròpolis, BCN...). | Sectoral networks with leadership, co-leadership or high influence of Barcelona City Council | High or very high in certain sectors |     |
 | --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------- | ------------------------------------ | --- |
 | European Net Zero Cities Mission                          | NetZeroCities Consortium                                                                                                       |
 
 EIT Climate KIC Consortium
 Spanish Mission Platform: UPM, 7 Spanish mission cities, other cities involved
-EU mission cities and partner states | Complex network, made up of a multitude of highly motivated actors. Network spaces are often complementary, although there are also overlaps. | Highly relevant for the political impetus and operational management of the Mission, as well as for the promotion of innovation. | To ensure that the 112 selected cities implement the Mission within the set deadlines. Expand the number of cities involved. Projecting the Mission to other regions of the world. |
-| Supra-local regulators | European Commission (especially DG Climate Action)
-Government of Spain (especially the Ministry of Ecological Transition and Demographic Challenge)
-Generalitat (Autonomous Government) of Catalonia (especially the Department of Climate Action, Food and Rural Agenda) | The formal relationship between administrations at different levels is, in principle, hierarchical in terms of enforcement and collaborative in terms of policy design and development. | Determinant in shaping the framework of what is possible in each policy area | To advance climate policies, confronting in each case potentially conflicting sectoral interests (e.g. transport, tourism, intensive agriculture...), which have their supporters in the Catalan, Spanish and European governments. |
+| EU mission cities and partner states | Complex network, made up of a multitude of highly motivated actors. Network spaces are often complementary, although there are also overlaps. | Highly relevant for the political impetus and operational management of the Mission, as well as for the promotion of innovation. | To ensure that the 112 selected cities implement the Mission within the set deadlines. Expand the number of cities involved. Projecting the Mission to other regions of the world. |
+| Supra-local regulators | European Commission (especially DG Climate Action) Government of Spain (especially the Ministry of Ecological Transition and Demographic Challenge) | Generalitat (Autonomous Government) of Catalonia (especially the Department of Climate Action, Food and Rural Agenda) | The formal relationship between administrations at different levels is, in principle, hierarchical in terms of enforcement and collaborative in terms of policy design and development. | Determinant in shaping the framework of what is possible in each policy area | To advance climate policies, confronting in each case potentially conflicting sectoral interests (e.g. transport, tourism, intensive agriculture...), which have their supporters in the Catalan, Spanish and European governments. |
 | Service operators | Public transport operators | Each sector and sub-sector has its | Very relevant for decarbonisation, | Each operator has its own interests |
-Climate City Contract. City of Barcelona
-0
 
-| | Operators in the construction sector (within this, in the rehabilitation sub-sector)
-Operators in the energy sector (within this, in the renewable energy sub-sector)
-Operators in the waste management sector | own network, set up mainly to defend shared interests vis-à-vis public administrations. | through corporate commitment (business model, investment), good management and innovation, of sectors that emit a large volume of emissions. | (financial, economic, social...) in the short, medium and long term.
-These interests may conflict with competitors, with other sub-sectors and with the administration. |
+| | Operators in the construction sector (within this, in the rehabilitation sub-sector) Operators in the energy sector (within this, in the renewable energy sub-sector) Operators in the waste management sector | own network, set up mainly to defend shared interests vis-à-vis public administrations. | through corporate commitment (business model, investment), good management and innovation, of sectors that emit a large volume of emissions. | (financial, economic, social...) in the short, medium and long term. | These interests may conflict with competitors, with other sub-sectors and with the administration. |
 | --- | --- | --- | --- | --- |
-| Municipal participatory system | Barcelona + Sustainable Network
-Citizens' Council for Sustainability / Climate Emergency Bureau
-Agenda 2030 Promotion Roundtable (within the City Council)
-Citizens' Climate Assembly
-System of sectoral and territorial participatory councils | It is a set of spaces for citizen participation promoted by the City Council. Ideally, they are the meeting point between the "City Council" system and the "civil society" system. Some instruments that generate order and coherence in the network are: the Citizen Participation Regulation, the City Council and the Decidim platform. | Relevant for developing, debating, validating and disseminating local policies leading to climate neutrality | Maximising participation, both in quantitative and qualitative terms |
-| Metropolitan governance | Barcelona Metropolitan Area Metropolitan municipalities
-Barcelona Metropolitan Strategic Plan 2030 | Network articulated around a few actors; highly conditioned by the influence of the city of Barcelona. | Quite relevant for coordinating territorial development strategies and some of the main policies involved in decarbonisation. | Fully incorporate the metropolitan perspective into the Mission.
-Achieve stronger metropolitan governance that is territorially adjusted to the reality of the Barcelona metropolis. |
-Climate City Contract. City of Barcelona
-1
+| Municipal participatory system | Barcelona + Sustainable Network Citizens' Council for Sustainability / Climate Emergency Bureau Agenda 2030 Promotion Roundtable (within the City Council) Citizens' Climate Assembly | System of sectoral and territorial participatory councils | It is a set of spaces for citizen participation promoted by the City Council. Ideally, they are the meeting point between the "City Council" system and the "civil society" system. Some instruments that generate order and coherence in the network are: the Citizen Participation Regulation, the City Council and the Decidim platform. | Relevant for developing, debating, validating and disseminating local policies leading to climate neutrality | Maximising participation, both in quantitative and qualitative terms |
+| Metropolitan governance | Barcelona Metropolitan Area Metropolitan municipalities | Barcelona Metropolitan Strategic Plan 2030 | Network articulated around a few actors; highly conditioned by the influence of the city of Barcelona. | Quite relevant for coordinating territorial development strategies and some of the main policies involved in decarbonisation. | Fully incorporate the metropolitan perspective into the Mission. | Achieve stronger metropolitan governance that is territorially adjusted to the reality of the Barcelona metropolis. |
 
-| Innovative ecosystem | BIT Habitat Foundation
-Urban Innovation Centres Working Group
-EIT Urban Mobility KIC^{5}
-BIC Council Universities and research centres
-European Network of Universities with Barcelona’s leadership (ECIU and other)
-Public centres such as Institut Metròpoli i Barcelona Regional | There are various spaces, more or less stable/formal, for the meeting of the organisations of the innovative ecosystem. But it also functions through micro-networks generated by specific projects. | Relevant for promoting the creation of new knowledge and its dissemination. The aim is to develop, test and scale innovations that decarbonise production processes and service provision without losing efficiency or quality. | Generate innovations that are effective and financially sustainable. Participate in joint projects, which go beyond the capacities of each actor and share knowledge. |
+| Innovative ecosystem | BIT Habitat Foundation Urban Innovation Centres Working Group EIT Urban Mobility KIC^{5} BIC Council Universities and research centres European Network of Universities with Barcelona’s leadership (ECIU and other) | Public centres such as Institut Metròpoli i Barcelona Regional | There are various spaces, more or less stable/formal, for the meeting of the organisations of the innovative ecosystem. But it also functions through micro-networks generated by specific projects. | Relevant for promoting the creation of new knowledge and its dissemination. The aim is to develop, test and scale innovations that decarbonise production processes and service provision without losing efficiency or quality. | Generate innovations that are effective and financially sustainable. Participate in joint projects, which go beyond the capacities of each actor and share knowledge. |
 | --- | --- | --- | --- | --- |
-| National and international sectoral and generalist networks of cities, with municipal participation. | C40
-Eurocities
-ICLEI
-UCLG
-Metropolis
-UCCI
-Xarxa de Pobles i Ciutats per la Sostenibilitat (Network of Towns and Cities for Sustainability)
-FEMP Agenda 2030 Network
-Cities for Cycling | The usual way of working is through projects involving one organisation and several cities. At regional and global climate meetings, these organisations often act as an advocacy network for cities and municipalities vis-à-vis states and international organisations. | Relevant for boosting both city-to-city collaboration and the role of cities in the global governance of the climate crisis. | To achieve better cities, more committed to the fight against climate change and better adapted to it. To achieve greater influence of cities on climate change governance at all levels (countries, regions, global). |
+| National and international sectoral and generalist networks of cities, with municipal participation. | C40 Eurocities ICLEI UCLG Metropolis UCCI Xarxa de Pobles i Ciutats per la Sostenibilitat (Network of Towns and Cities for Sustainability) FEMP Agenda 2030 Network Cities for Cycling | The usual way of working is through projects involving one organisation and several cities. At regional and global climate meetings, these organisations often act as an advocacy network for cities and municipalities vis-à-vis states and international organisations. | Relevant for boosting both city-to-city collaboration and the role of cities in the global governance of the climate crisis. | To achieve better cities, more committed to the fight against climate change and better adapted to it. To achieve greater influence of cities on climate change governance at all levels (countries, regions, global). |
 
 EIT Urban Mobility is an initiative of the European Institute of Innovation and Technology (EIT) aimed at improving the quality of life in urban environments with innovative mobility solutions. Co-financed with up to 400 million euros (2020-2026) by the EIT, it aims to foster collaboration between companies, universities, research centres and cities through transnational innovation and knowledge communities. Barcelona City Council led the consortium’s candidacy and coordinated the constitution of the Knowledge Innovation Community (KIC). EIT Urban Mobility currently has more than 60 international partners and its headquarters in Barcelona employs around 100 people.
-Climate City Contract. City of Barcelona
-2
 
 |                              | Network                                                                                                                                             |                                                                                                                                                  |                                                                                                                                                                                                                                                                                                                                      |                                                                                                                                                                                                                          |
 | ---------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Business sector**          | In Barcelona there are 186,731 registered companies (1/1/2022), of which 99% have fewer than 50 employees and almost 90% are in the service sector. | There are several business networks, organised by size (Foment, PIMEC...) and by sector.                                                         | Very relevant, through various means: investment decisions, lobbying of institutions, media pressure, etc.                                                                                                                                                                                                                           | Commercial profit and growth/survival of the sector and the company. Broader interests in the case of enterprises in the co-operative sector.                                                                            |
 | **Non-profit organisations** | The most relevant for the Mission are political, trade union, environmental and neighbourhood organisations.                                        | The actors are organised in complex collaborative structures (associations, federations, etc.), which differ according to sector and sub-sector. | They exert influence by driving collective transformation. Medium relevance, depending on the sector and size of the organisation.                                                                                                                                                                                                   | Non-material sectoral interests. Influence the decisions of the City Council and other relevant actors.                                                                                                                  |
 | **Households / Families**    | It is estimated that there are around 750,000 households in the city.                                                                               | Households are structured through family and/or friendship networks.                                                                             | Very high relevance in the transmission of knowledge, practices and values, and through purchasing and investment decisions. High in the transmission of ideas through micro-networks. Determinant in elections (especially municipal elections) to validate (or not) climate-neutral policies. Low in all other political processes | Enjoy quality of life in the city, with good health and a good economic situation. (very diverse translation of these interests, depending on the characteristics, values and life situation of each person and family). |
-
-#
 
 | Education system | The city has more than 250,000 students.                   | Organised in corporate-type networks (teachers' unions, associations of religious centres, etc.) | Very high in the transmission of knowledge, practices and values related to the climate crisis and possible solutions     | To carry out its educational project and ensure its growth/survival. Variable according to the ownership of the school. |
 | ---------------- | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
@@ -1124,7 +944,6 @@ Each sector has its own network, made up of multiple actors. The following graph
 
 ![img-10.jpeg](img-10.jpeg)
 
-Climate City Contract. City of Barcelona
 A-3.2: Description of systemic barriers
 
 # SYSTEMIC BARRIERS AFFECTING THE MISSION AS A WHOLE
@@ -1141,9 +960,6 @@ The hierarchical structuring of public institutions, based on the logic of secto
 
 Difficulties in establishing public-private partnerships capable of preserving the city's general interest. The legal framework offers limited options, and taking advantage of them requires non-dogmatic political leadership and technical staff (economists, engineers, lawyers, etc.) with the capacity to develop
 
-Climate City Contract. City of Barcelona
-Climate City Contract. City of Barcelona
-
 reasonable, effective and transparent frameworks for collaboration with the private sector.
 
 The inertia and rigidity of administrative activity. Barcelona City Council has an organisational culture in which professional excellence and proactivity in the face of change stand out. However, it is a very large institution, which moves at cruising speed, and therefore needs time to take on board and digest the changes. Assuming the goal of climate neutrality by 2030 means rethinking the very basics -rules, procedures, project design- to minimise emissions generation and to facilitate as much as possible all those actions that drive decarbonisation. Logically preserving the principles of legal certainty and economic efficiency, but adapted to the imperative of climate neutrality. This is not easy, as it implies a strong change of mentality and a recomposition of status and power within organisations. Another dimension of the problem is the regulatory obstacles to incorporating young talent and new professional profiles that will be increasingly necessary to renew the organisation and address the challenge of climate neutrality.
@@ -1155,9 +971,6 @@ The high cost of low or zero emission technologies. For many actors, they can be
 Related to this is the large need for upfront investment. Achieving the decarbonisation of the city in such a short period of time implies concentrating a large volume of public and private investment on this objective, to the detriment of other objectives which, without being as essential or as effective in the long term, need to be tackled in the short and medium term, such as access to housing, education, mobility, etc. This poses major dilemmas for
 
 ⁶ The financial barriers are set out in more detail in Annex 2 (Climate Investment Plan).
-
-Climate City Contract. City of Barcelona
-Climate City Contract. City of Barcelona
 
 public institutions, companies and households, especially in cases where there is already a high level of debt.
 
@@ -1171,7 +984,6 @@ The economic difficulties of households. In our society there is a growing inequ
 
 The limited impact of public subsidies. The administration grants aid for households to invest in decarbonisation (bonuses, subsidies), but there are things that make access difficult, such as lack of awareness of their existence, the difficulty of the procedures and the delay in payments. Some subsidies arrive after a very long wait. All this needs to be improved and other types of incentives need to be considered to generate a quantum leap in household climate investments.
 
-6
 Technological
 
 Failure to upgrade infrastructure (electric, mobility, etc.) and helpdesk at the pace necessary to properly integrate new technologies and switch to low or zero emission operation.
@@ -1184,9 +996,6 @@ Sociocultural
 Climate denialism. In its harsh version, this phenomenon is part of a more general movement that questions the legitimacy of the scientific approach to reality. Symptomatic of this is the decline of scientific culture in certain sectors of society, despite increasing levels of formal education. We saw this clearly during the Covid pandemic19. Under these conditions it is very difficult to maintain a public dialogue based on data and rational argumentation.
 Climate relativism, which does not deny the existence of the climate emergency, but questions its urgency and prevalence in relation to other problems. In this sense, the results of the latest _Municipal Services Survey_, conducted among 6,000 people between January and April 2023, are revealing. Only 4% of the surveyed population considered "pollution and environment" (a category that includes, among others, all the answers referring to climate) as the most serious problem of the city (and 2.5% when the question referred to the most serious personal problem). As for the main demand made of the City Council, only 1.4% referred to "reducing pollution/improving the environment" (3.3% to "increasing/improving green spaces"). This demand is strongest among young people, but the graph (blue line) shows a noticeable drop from the peak of 4% in 2019, at the height of Fridays for Future.
 The difficulty of seeing the positive impacts of mitigation at the local level. Even the most well-meaning people may wonder whether it is appropriate to devote large short-term efforts to local mitigation when the emissions problem is global and long-term.
-
-Climate City Contract. City of Barcelona
-Climate City Contract. City of Barcelona
 
 The impossibility (more legal than technological) of measuring emissions at the individual level, which makes it difficult to control and punish freeriders and, consequently, to build social trust around the collective project of climate neutrality.
 
@@ -1206,9 +1015,6 @@ Barriers to the use of public transport: Lack of an adequate offer to meet mobil
 
 Barriers to the normalisation of new means of transport, such as low-emission individual means of transport (scooters and similar), or the shared use of
 
-Climate City Contract. City of Barcelona
-Climate City Contract. City of Barcelona
-
 individual means of transport (cars and motorbikes): There are cultural barriers, frequent in the incorporation of new social practices, and regulatory barriers, due to the complexity of locating new actors in a public space subject to a high level of occupation.
 
 In the case of electric mobility we have:
@@ -1222,9 +1028,6 @@ Barriers to the creation of new charging infrastructures (electric and hydrogen)
 The low financial viability of energy retrofitting, even in the long term. The city's mild winter climate means that the investment cannot be recouped by reducing energy costs. However, the co-benefits of increased thermal comfort - both in winter and summer - and reduced noise impacts mean better health, better quality of life and a revaluation of real estate.
 
 The residential building structure, based on large condominium buildings. Such an investment requires agreement among the owners, which may be impossible or at least increases the time and complexity of the process.
-
-9
-Climate City Contract. City of Barcelona
 
 The atomisation of real estate ownership. In order to launch a large-scale "wave of renovation", a large number of small and medium-sized owners have to be convinced. On the other hand, the population living in rented accommodation, more than 40% and growing, cannot consider this type of action.
 Barriers to low-carbon construction: Limited supply of electric construction machinery (especially large machinery); insufficient infrastructure to connect machinery or batteries to construction machinery; difficulty in reusing materials.
@@ -1249,7 +1052,6 @@ Companies' perception of prevention.
 The lack of free surface area in the municipality, which results in a strong competition for the use of space, both on the ground and on the roofs of buildings. It is difficult to find space to expand or densify the green infrastructure.
 The impact of climate change on green infrastructure: Prolonged droughts and more intense and frequent heat waves.
 
-0
 A-3.3: Participatory model for climate neutrality in the city
 
 Barcelona's participatory model is based on the conviction that achieving climate neutrality will require the involvement of all people and all stakeholders, both public and private.
@@ -1262,9 +1064,6 @@ The Let's Change for Climate 2030 Plan will help to realise this transformation.
 
 The following are the planned co-creation actions, designed to co-responsibilise the social and economic fabric of the city in dealing with the climate emergency, in accordance with the objectives of the Mission:
 
-Climate City Contract. City of Barcelona
-7
-
 Update the Citizens' Commitment to Sustainability. In 2024, the Citizens' Commitment will be updated and the opportunity will be taken to incorporate carbon neutrality targets for 2030 in line with the Mission. Therefore, B+S Network organisations that strengthen their commitment by joining this Alliance will directly commit to reducing greenhouse gas emissions. In addition, the renewal of this commitment is intended to refocus the way of working with the member organisations, through the proposal to carry out collaborative projects (or minimisations).
 
 Define Collaborative projects. These are projects with a specific common quantitative objective. Each organisation, from its field of work and area of expertise, contributes to their achievement. The first of the collaborative challenges to be worked on from 2024 with the B+S Network will be Decarbonisation: reducing greenhouse gas emissions by 80% in 2030 (considering scope 1 and 2). To this end, the entities that wish to join will have to propose specific actions that contribute to achieving this common objective along one of the following lines: replacing the use of fossil fuels, generation with renewables or energy savings. For example, a restaurant can focus its activity on being more efficient in the kitchen; a courier company on replacing combustion vehicles; an educational centre on working with students on the carbon footprint and its reduction. The first session to define these network projects (Fem Xarxing) will be held on 29 September 2023.
@@ -1275,9 +1074,6 @@ Create a specific decarbonisation modality in the Climate Grants. Since 2018, th
 
 Convene an edition of participatory budgets focused on the climate emergency. Participatory budgets are a participatory process through which Barcelona's residents can present, define, prioritise, vote and, ultimately, choose investment projects that Barcelona City Council will implement in each district. The first edition was launched on 3 February 2020, with 30 million euros available from the
 
-Climate City Contract. City of Barcelona
-Climate City Contract. City of Barcelona
-
 municipal budget. In the next edition, planned for the current term of office (2023-2027), it is planned to focus on the theme of climate emergency, reinforcing both issues of emissions reduction and adaptation to climate change and improving urban resilience. Priority will be given to actions to improve the sustainability of mobility through traffic calming, improving accessibility and promoting mobility on foot and by bicycle; actions to improve waste prevention and management; increasing the area and quality of green spaces in the city; actions to improve the resilience of the most vulnerable neighbourhoods and populations, etc.
 
 Respond to the demands of the 1st Citizens' Climate Assembly and call for a new edition. In 2022-2023, the first Citizens' Climate Assembly was held in Barcelona (the first Spanish city to do so), made up of 100 people selected at random and representative of the city. The issues that the Assembly worked on, at the proposal of its members, were Energy, Consumption and waste, and Mobility. As a result, the Assembly members made 34 proposals for action. It is expected that, before the end of 2023, the municipal government will give a response on their acceptance and implementation. A second edition of the Assembly, specifically dedicated to decarbonisation, is also planned for the current municipal mandate.
@@ -1287,9 +1083,6 @@ Participate in the H2020 Localised project: The aim of Localised (European H2020
 Carrying out the Climate Emergency Marathon. Since 2018, this awareness-raising campaign has been carried out in February each year, in which around 40 municipal buildings and facilities (sports and educational centres, office buildings, etc.) participate on a voluntary basis, carrying out measures to save water and energy and adapt to climate change. The staff and users of the buildings think together and implement actions to reduce consumption without investment, only with changes in behaviour or management. The Marathon is expected to achieve a 10% reduction in GHG emissions during the four weeks of the campaign. The economic savings generated through energy savings have been used each year to promote projects of different types.
 
 Carry out a new edition of the Load yourself with Energy programme. This is a set of activities (aimed at citizens in general, and especially at vulnerable groups and individuals), which are offered to facilities and organised groups that wish to add them to their programme. The main objective is to transmit the concept of energy transition and to train people for action, through workshops, specialised talks and
-
-3
-Climate City Contract. City of Barcelona
 
 participatory dynamics. With this training, participants learn, for example, methods to reduce their domestic energy consumption.
 
@@ -1307,11 +1100,8 @@ Consolidate the Group of Experts for the Climate Emergency. Barcelona has this c
 
 Hold Climate Science Days. Every two years, debates will be organised in which local scientists will present the latest climate research carried out in Barcelona.
 
-4
 Facilitate and accelerate voluntary projects of companies, entities and administrations focused on the reduction of disposable plastics. Within the framework of the Zero Plastic Table, a working group of the Citizens' Council for Sustainability, actions will be carried out to reduce disposable plastic products. During 2024, the number of organisations adhering to this programme will be increased, their actions will be supported, networking will be facilitated and visibility will be given to the transformative initiatives carried out. These organisations will be granted a 10% reduction in the public price of waste collection.
 
-Climate City Contract. City of Barcelona
-中
 
 PART B - PATHWAYS TO CLIMATE NEUTRALITY BY 2030
 
@@ -1319,190 +1109,40 @@ PART B - PATHWAYS TO CLIMATE NEUTRALITY BY 2030
 
 This module represents the core of the Climate Neutral Action Plan 2030, consisting of the essential elements: scenarios, strategic objectives, impacts, action portfolios and indicators for monitoring, evaluation and learning.
 
-Climate City Contract. City of Barcelona
 | B-1.1: Impact pathways | | | | | | | | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Issuing sector | Scope of action | Transformative actions with direct impact\*.7 | Main transformative actions with indirect impact | Used systemic levers | Early changes (1-2 years) | Long-term changes (3-4 years) | Direct impacts in 2030 (emission reduction) (kton) | Indirect impacts (co-benefits) |
-| Transport | Reduction in the need for motorised transport | 6. Smart mobility programme | 18. Climate-smart urban design programme
-Climate Neutral Economic Opportunities and Adaptations Programme
-Education, culture and participation programme | Citizen engagement and participation
-Culture
-Local development strategies
-Social innovation
-Business models
-Regulation | Changes in practices:
-Maintaining telework as a structural change.
-Reduced need for transport due to greater proximity to basic services and facilities (15-minute city).
-Impacts: Reduced travel | Changes in practices:
-Maintaining telework as a structural change.
-Reduced need for transport due to greater proximity to basic services and facilities (15-minute city).
-Impacts: Reduced travel | 85 | Reduction of road accidents
-Improved quality of life by saving time (for family reconciliation, training, etc.). |
-| | Modal shift (to public transport and/or non-motorised private transport) | 1. Walking Mobility Programme
-Public and collective transport mobility programme
-Bicycle and Personal Mobility Vehicle mobility programme | 19. Climate justice and social inclusion programme
-Education, culture and participation programme
-Metropolitan and multi-level concertation programme | Citizen engagement and participation
-Culture
-Local development strategies
-Financial resources
-Regulation | Changes in practices:
-Expansion and improvement of public transport networks (metro, bus, tram) and cycle paths, both at city and metropolitan level.
-Raising awareness of the many benefits of eco-mobility.
-Increased use of public transport, cycling and walking; reduced use of cars and motorbikes.
-Impacts: Increased share | Changes in practices:
-Expansion and improvement of public transport networks (metro, bus, tram) and cycle paths, both at city and metropolitan level.
-Increased use of public transport, cycling (and other personal mobility vehicles) and walking; reduced use of cars and motorbikes. | 86 | Economic savings
-Improved health through: cleaner air, less noise, more exercise |
+| Transport | Reduction in the need for motorised transport | 6. Smart mobility programme | 18. Climate-smart urban design programme Climate Neutral Economic Opportunities and Adaptations Programme Education, culture and participation programme | Citizen engagement and participation Culture Local development strategies Social innovation Business models Regulation | Changes in practices: Maintaining telework as a structural change. Reduced need for transport due to greater proximity to basic services and facilities (15-minute city). Impacts: Reduced travel | Changes in practices: Maintaining telework as a structural change. Reduced need for transport due to greater proximity to basic services and facilities (15-minute city). Impacts: Reduced travel | 85 | Reduction of road accidents | Improved quality of life by saving time (for family reconciliation, training, etc.). |
+| | Modal shift (to public transport and/or non-motorised private transport) | 1. Walking Mobility Programme Public and collective transport mobility programme Bicycle and Personal Mobility Vehicle mobility programme | 19. Climate justice and social inclusion programme Education, culture and participation programme Metropolitan and multi-level concertation programme | Citizen engagement and participation Culture Local development strategies Financial resources Regulation | Changes in practices: Expansion and improvement of public transport networks (metro, bus, tram) and cycle paths, both at city and metropolitan level. Raising awareness of the many benefits of eco-mobility. Increased use of public transport, cycling and walking; reduced use of cars and motorbikes. Impacts: Increased share | Changes in practices: Expansion and improvement of public transport networks (metro, bus, tram) and cycle paths, both at city and metropolitan level. Increased use of public transport, cycling (and other personal mobility vehicles) and walking; reduced use of cars and motorbikes. | 86 | Economic savings Improved health through: cleaner air, less noise, more exercise |
 
 The focus and content of the transformative actions (called programmes in this CCC) are presented in the next section (B-2).
-Climate City Contract. City of Barcelona
-8
 
-| Shared transport | 6. Smart mobility programme | 20. Climate Neutral Economic Opportunities and Adaptation Programme
-Education, culture and participation programme | Capacity and capacity building
-Culture
-Social innovation
-Business models
-Regulation
-Technology | of eco-mobility.
-Changes in practices: Growth in the use of ridesharing.
-Impacts: Increased use of shared transport. | Impacts: Increased use of shared transport.
-Changes in practices: Social normalisation of carpooling.
-Impacts: Increased use of shared transport. | 35 | Economic savings
-Increased sociability |
+| Shared transport | 6. Smart mobility programme | 20. Climate Neutral Economic Opportunities and Adaptation Programme | Education, culture and participation programme | Capacity and capacity building Culture Social innovation Business models Regulation Technology | of eco-mobility. Changes in practices: Growth in the use of ridesharing. Impacts: Increased use of shared transport. | Impacts: Increased use of shared transport. Changes in practices: Social normalisation of carpooling. Impacts: Increased use of shared transport. | 35 | Economic savings | Increased sociability |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Car electrification | 5. Private transport mobility programme | 20. Climate Neutral Economic Opportunities and Adaptation Programme
-Knowledge and innovation development programme | Culture
-Business models
-Financial resources
-Regulation
-Technology | Changes in practices: Households and businesses are responding massively to the rapid expansion of charging infrastructure and the offer of new, more affordable electric car models.
-Impacts: Increasing the share of electrification of cars. | Changes in practices: Electric cars become the norm, in parallel with standardisation of charging infrastructure, in public and private spaces; price equalisation between electric and conventional vehicles.
-Impacts: Increasing the share of electrification of cars. | 63 | Improved air quality
-Less noise
-Reduction of operational costs (energy and maintenance) |
-| Bus electrification | 2. Public and collective transport mobility programme | 19. Climate justice and social inclusion programme
-Metropolitan and multi-level concertation | Governance and politics
-Business models
-Financial resources
-Technology | Changes in practices: Transport operators limit new purchases to zero-emission vehicles.
-Impacts: Increased share of zero-emission buses | Changes in practices: New purchases limited to zero-emission vehicles. Accelerated depreciation of the most polluting | 34 | Improved air quality
-Less noise
-Increased passenger comfort (less |
-Climate City Contract. City of Barcelona
-9
+| Car electrification | 5. Private transport mobility programme | 20. Climate Neutral Economic Opportunities and Adaptation Programme | Knowledge and innovation development programme | Culture Business models Financial resources Regulation Technology | Changes in practices: Households and businesses are responding massively to the rapid expansion of charging infrastructure and the offer of new, more affordable electric car models. Impacts: Increasing the share of electrification of cars. | Changes in practices: Electric cars become the norm, in parallel with standardisation of charging infrastructure, in public and private spaces; price equalisation between electric and conventional vehicles. Impacts: Increasing the share of electrification of cars. | 63 | Improved air quality Less noise | Reduction of operational costs (energy and maintenance) |
+| Bus electrification | 2. Public and collective transport mobility programme | 19. Climate justice and social inclusion programme | Metropolitan and multi-level concertation | Governance and politics Business models Financial resources Technology | Changes in practices: Transport operators limit new purchases to zero-emission vehicles. Impacts: Increased share of zero-emission buses | Changes in practices: New purchases limited to zero-emission vehicles. Accelerated depreciation of the most polluting | 34 | Improved air quality Less noise | Increased passenger comfort (less |
 
-| | | programme | | is achieved. | vehicles
-Impacts: Increased share of zero-emission buses is achieved. | | noise and vibration)
-Reduction of operational costs (energy and maintenance) |
+| | | programme | | is achieved. | vehicles | Impacts: Increased share of zero-emission buses is achieved. | | noise and vibration) | Reduction of operational costs (energy and maintenance) |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Optimisation of freight transport logistics | 4. Urban freight distribution programme | 18. Climate-smart urban design programme
-Climate Neutral Economic Opportunities and Adaptation Programme
-Knowledge and innovation development programme | Capacity and development of capacities
-Culture
-Governance and politics
-Business models
-Financial resources
-Regulation
-Technology | Changes in practices: Extending the implementation of last mile distribution micro-platforms. Improved monitoring and control of indiscipline.
-Impacts: Increase in home and office deliveries via goods (CDUM) and in the proportion of online purchases delivered to pick-up points. Strong growth in the number of cycling vehicles operating in the city. | Changes in practices: . Generalisation of last mile distribution micro-platforms.
-Impacts: Increase in home and office deliveries via goods (CDUM) and in the proportion of online purchases delivered to pick-up points. Strong growth in the number of cycling vehicles operating in the city. | 94 | Improved air quality
-Reduction of operational costs (energy and maintenance)
-Fewer road accidents |
-Climate City Contract. City of Barcelona
-0
+| Optimisation of freight transport logistics | 4. Urban freight distribution programme | 18. Climate-smart urban design programme Climate Neutral Economic Opportunities and Adaptation Programme Knowledge and innovation development programme | Capacity and development of capacities Culture Governance and politics Business models Financial resources Regulation Technology | Changes in practices: Extending the implementation of last mile distribution micro-platforms. Improved monitoring and control of indiscipline. Impacts: Increase in home and office deliveries via goods (CDUM) and in the proportion of online purchases delivered to pick-up points. Strong growth in the number of cycling vehicles operating in the city. | Changes in practices: . Generalisation of last mile distribution micro-platforms. Impacts: Increase in home and office deliveries via goods (CDUM) and in the proportion of online purchases delivered to pick-up points. Strong growth in the number of cycling vehicles operating in the city. | 94 | Improved air quality Reduction of operational costs (energy and maintenance) | Fewer road accidents |
 
-| Electrification of trucks | 4. Urban freight distribution programme
-Private transport mobility programme | 20. Climate Neutral Economic Opportunities and Adaptation Programme
-Knowledge and innovation development programme
-Carbon Neutral City Council Programme (by: service vehicles) | Culture Business models
-Financial resources
-Regulation
-Technology | Changes in practices: Companies respond massively to rapid expansion of charging infrastructure; offer of new, more operational and affordable electric truck models.
-Impacts: X% truck electrification rate achieved. | Changes in practices: Electric trucks become the norm - at least in the small and medium-sized sector - in parallel to standardisation of charging infrastructure, in public and private spaces; price equalisation between electric and conventional vehicles.
-Impacts: Y% truck electrification rate achieved. | 44 | Improved air quality
-Less noise
-Reduction of operational costs (energy and maintenance) |
+| Electrification of trucks | 4. Urban freight distribution programme | Private transport mobility programme | 20. Climate Neutral Economic Opportunities and Adaptation Programme Knowledge and innovation development programme Carbon Neutral City Council Programme (by: service vehicles) | Culture Business models Financial resources Regulation Technology | Changes in practices: Companies respond massively to rapid expansion of charging infrastructure; offer of new, more operational and affordable electric truck models. Impacts: X% truck electrification rate achieved. | Changes in practices: Electric trucks become the norm - at least in the small and medium-sized sector - in parallel to standardisation of charging infrastructure, in public and private spaces; price equalisation between electric and conventional vehicles. Impacts: Y% truck electrification rate achieved. | 44 | Improved air quality Less noise | Reduction of operational costs (energy and maintenance) |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Other measures in the mobility sector | 6. Smart mobility programme | 22. Knowledge and innovation development programme | Culture Social innovation
-Business models
-Regulation
-Technology | Changes in practices: Increased use of devices to increase the efficiency of both public and private transport modes. Better systems and devices are developed.
-Impacts: Improved efficiency, measured in time and cost per km travelled. | Changes in practices: The use of devices to increase the efficiency of both public and private means of transport is widespread.
-Impacts: Improved efficiency, measured in time and cost per km travelled. | 71 | Improved quality of life, by saving time spent on the obligatory transport. |
-Climate City Contract. City of Barcelona
-1
+| Other measures in the mobility sector | 6. Smart mobility programme | 22. Knowledge and innovation development programme | Culture Social innovation Business models Regulation Technology | Changes in practices: Increased use of devices to increase the efficiency of both public and private transport modes. Better systems and devices are developed. Impacts: Improved efficiency, measured in time and cost per km travelled. | Changes in practices: The use of devices to increase the efficiency of both public and private means of transport is widespread. | Impacts: Improved efficiency, measured in time and cost per km travelled. | 71 | Improved quality of life, by saving time spent on the obligatory transport. |
 
-| Buildings and Heating | Building renovations | 7. Energy rehabilitation programme for buildings | 19. Climate justice and social inclusion programme
-Climate Neutral Economic Opportunities and Adaptations Programme
-Education, culture and participation programme
-Carbon Neutral City Council Programme | Capacity and capacity building
-Commitment and participation
-Culture
-Strategies for Local development
-Governance and politics
-Social innovation
-Business models
-Financial resources
-Regulation
-Technology | Changes in practices:
-Development and approval of a 2030 plan for the renovation and energy efficiency of buildings, underpinned by regulatory changes (EU, national) to enable better pro-climate regulation of this sector.
-Incorporation of a substantial budget line to start the implementation of the plan.
-Development of business and financing models for energy refurbishment which are attractive to the private sector.
-Improving support for energy rehabilitation, applying a climate justice approach.
-Impacts: Increase in the rate of renovation of public buildings and private buildings. | Changes in practices:
-Implementation of the 2030 plan for energy rehabilitation of buildings, maintaining the municipal commitment to investment.
-Attraction of increasingly substantial volumes of private capital to such projects.
-Impacts: A rehabilitation rate of over 3% per year is achieved for public buildings and Y per year for private buildings older than 40 years. | 109 | Economic savings in air-conditioning and/or increased comfort
-In some cases, reduction of fuel poverty |
+| Buildings and Heating | Building renovations | 7. Energy rehabilitation programme for buildings | 19. Climate justice and social inclusion programme Climate Neutral Economic Opportunities and Adaptations Programme Education, culture and participation programme Carbon Neutral City Council Programme | Capacity and capacity building Commitment and participation Culture Strategies for Local development Governance and politics Social innovation Business models Financial resources Regulation Technology | Changes in practices: Development and approval of a 2030 plan for the renovation and energy efficiency of buildings, underpinned by regulatory changes (EU, national) to enable better pro-climate regulation of this sector. Incorporation of a substantial budget line to start the implementation of the plan. Development of business and financing models for energy refurbishment which are attractive to the private sector. Improving support for energy rehabilitation, applying a climate justice approach. Impacts: Increase in the rate of renovation of public buildings and private buildings. | Changes in practices: Implementation of the 2030 plan for energy rehabilitation of buildings, maintaining the municipal commitment to investment. Attraction of increasingly substantial volumes of private capital to such projects. Impacts: A rehabilitation rate of over 3% per year is achieved for public buildings and Y per year for private buildings older than 40 years. | 109 | Economic savings in air-conditioning and/or increased comfort | In some cases, reduction of fuel poverty |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-Climate City Contract. City of Barcelona
-2
 
-| New net nearly zero-energy buildings | 8. Building and heating innovation programme | 18. Climate-smart urban design programme
-Climate Neutral Economic Opportunities and Adaptations Programme
-Knowledge and innovation development programme | Local Development Strategies
-Governance and politics
-Social innovation
-Business models
-Financial resources
-Regulation
-Technology | Changes in practices: Generalisation of the construction of "very low or zero emission" buildings. Pilot projects to test new technologies and business models.
-Impacts: Substantial increase in the proportion of new near-zero energy buildings. | Changes in practices: Reducing the cost differential (compared to conventional building) and standardising the construction of nearly zero energy buildings.
-Impacts: Widespread construction of new near-zero energy buildings. | 9 | Economic savings in heating and cooling |
+| New net nearly zero-energy buildings | 8. Building and heating innovation programme | 18. Climate-smart urban design programme Climate Neutral Economic Opportunities and Adaptations Programme Knowledge and innovation development programme | Local Development Strategies Governance and politics Social innovation Business models Financial resources Regulation Technology | Changes in practices: Generalisation of the construction of "very low or zero emission" buildings. Pilot projects to test new technologies and business models. Impacts: Substantial increase in the proportion of new near-zero energy buildings. | Changes in practices: Reducing the cost differential (compared to conventional building) and standardising the construction of nearly zero energy buildings. | Impacts: Widespread construction of new near-zero energy buildings. | 9 | Economic savings in heating and cooling |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Efficient lighting and appliances | 9. Energy efficiency programme in the use of buildings
-Lighting programme for public spaces and municipal buildings | 20. Climate Neutral Economic Opportunities and Adaptations Programme
-Education, culture and participation programme
-Municipal modernisation programme for climate neutrality | Business models
-Financial resources
-Regulation
-Technology | Changes in practices: Development and adoption of a 2030 plan for energy efficiency and retrofitting of buildings, including the efficiency of machinery and devices (in households, appliances) used in buildings. Promoting the improvement and/or renovation of household appliances, while remaining consistent with Programme 14 (waste prevention and reduction). Maintaining the budget | Changes in practices: Implementation of the 2030 plan for the rehabilitation and energy efficiency of buildings, maintaining the spending commitment for the efficient household appliances target (subsidies). Maintaining the budget line to complete the renovation of street lighting on schedule.
-Impacts: Significant increase in the proportion of high | 231 | Economic savings
-Reducing energy poverty |
-Climate City Contract. City of Barcelona
-3
+| Efficient lighting and appliances | 9. Energy efficiency programme in the use of buildings | Lighting programme for public spaces and municipal buildings | 20. Climate Neutral Economic Opportunities and Adaptations Programme Education, culture and participation programme Municipal modernisation programme for climate neutrality | Business models Financial resources Regulation Technology | Changes in practices: Development and adoption of a 2030 plan for energy efficiency and retrofitting of buildings, including the efficiency of machinery and devices (in households, appliances) used in buildings. Promoting the improvement and/or renovation of household appliances, while remaining consistent with Programme 14 (waste prevention and reduction). Maintaining the budget | Changes in practices: Implementation of the 2030 plan for the rehabilitation and energy efficiency of buildings, maintaining the spending commitment for the efficient household appliances target (subsidies). Maintaining the budget line to complete the renovation of street lighting on schedule. Impacts: Significant increase in the proportion of high | 231 | Economic savings | Reducing energy poverty |
 
 |                                                           |                                              |                                          |     | line for the continuation of the renovation of street lighting. Impacts: Significant increase in the proportion of high efficiency appliances purchased. Higher percentage of low-emission street lighting out of the total is achieved. | efficiency appliances purchased. Higher percentage of low-emission street lighting out of the total is achieved. |     |     |
 | --------------------------------------------------------- | -------------------------------------------- | ---------------------------------------- | --- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | --- | --- |
 | Low-emission heat generation (decarbonisation of heating) | 8. Building and heating innovation programme | 18. Climate-smart urban design programme |
 
 Climate Neutral Economic Opportunities and Adaptation Programme
-Knowledge and innovation development programme | Capacity and development of capacities
-Commitment and participation
-Culture Strategies for Local development
-Governance and politics
-Business models
-Financial resources
-Regulation
-Technology | Changes in practices: Development and adoption of a 2030 plan for the renovation and energy efficiency of buildings, with a section dedicated to heating systems.
-Develop and implement measures to promote the installation of low-emission air-conditioning systems.
-Planning and start of the execution, through public concession, of new urban heating and cooling networks in the sectors of La Sagrera | Changes in practices: Implementation of the 2030 plan for the renovation and energy efficiency of buildings, maintaining the spending commitment for the decarbonisation target for heating and cooling.
-Continuation of the construction of the new urban heating and cooling networks in the La Sagrera and La Model sectors, plus the third Districlima plant in Poblenou and | 235 | Economic savings in heating and cooling
-Reducing energy poverty |
-Climate City Contract. City of Barcelona
-4
+| Knowledge and innovation development programme | Capacity and development of capacities Commitment and participation Culture Strategies for Local development Governance and politics Business models Financial resources Regulation | Technology | Changes in practices: Development and adoption of a 2030 plan for the renovation and energy efficiency of buildings, with a section dedicated to heating systems. Develop and implement measures to promote the installation of low-emission air-conditioning systems. | Planning and start of the execution, through public concession, of new urban heating and cooling networks in the sectors of La Sagrera | Changes in practices: Implementation of the 2030 plan for the renovation and energy efficiency of buildings, maintaining the spending commitment for the decarbonisation target for heating and cooling. | Continuation of the construction of the new urban heating and cooling networks in the La Sagrera and La Model sectors, plus the third Districlima plant in Poblenou and | 235 | Economic savings in heating and cooling | Reducing energy poverty |
 
 |                                                |                                              |                                                        |                                                    |     | and La Model, plus the third Districlima plant in Poblenou and the new cooling plant in Econergies. Impacts: Strong increase in the installation of low-emission heating and cooling systems. Connection of new buildings to district heating and cooling networks. | the new cooling plant in Econergies. Impacts: Accelerated replacement of air-conditioning systems with low-emission systems. Connection of an increasing number of buildings to district heating and cooling networks. |     |     |
 | ---------------------------------------------- | -------------------------------------------- | ------------------------------------------------------ | -------------------------------------------------- | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- | --- |
@@ -1512,75 +1152,25 @@ Climate City Contract. City of Barcelona
 Culture
 Financial resources
 Regulation
-Technology | Changes in practices: Development and adoption of a 2030 plan for the renovation and energy efficiency of buildings. Promoting research and development of technologies to increase the efficiency of energy consumption in buildings. Awareness-raising among citizens for the incorporation of efficient practices in domestic energy consumption. | Changes in practices: Implementation of the 2030 plan for the energy efficiency and renovation of buildings, maintaining the commitment to municipal spending for the household energy efficiency target. Widespread adoption of efficiency innovations. Impacts: Efficiency improvements that significantly reduce energy consumption. | 32 | Economic savings
-Reducing energy poverty |
-Climate City Contract. City of Barcelona
-5
+| Technology | Changes in practices: Development and adoption of a 2030 plan for the renovation and energy efficiency of buildings. Promoting research and development of technologies to increase the efficiency of energy consumption in buildings. Awareness-raising among citizens for the incorporation of efficient practices in domestic energy consumption. | Changes in practices: Implementation of the 2030 plan for the energy efficiency and renovation of buildings, maintaining the commitment to municipal spending for the household energy efficiency target. Widespread adoption of efficiency innovations. Impacts: Efficiency improvements that significantly reduce energy consumption. | 32 | Economic savings | Reducing energy poverty |
 
 |                                       |                                                        |                                                                                                                        |                                                           | Impacts: Efficiency improvements that significantly reduce energy consumption.                                                                                                                                                                                                                                                                                                                                                                              |                                                                                                                                                                                                                                                                                                                                                                                   |     |                  |
 | ------------------------------------- | ------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- | ---------------- |
 | Tertiary sector building improvements | 9. Energy efficiency programme in the use of buildings | 20. Climate Neutral Economic Opportunities and Adaptation Programme 21. Education, culture and participation programme | Business models Financial resources Regulation Technology | Changes in practices: Development and adoption of a 2030 plan for the renovation and energy efficiency of buildings. Promoting research and development of technologies to increase the efficiency of energy consumption in buildings. Citizens are aware of the need to incorporate efficient practices in energy consumption in offices, shops and tourist establishments. Impacts: Efficiency improvements that significantly reduce energy consumption. | Changes in practices: Implementation of the 2030 plan for the refurbishment and energy efficiency of buildings, maintaining the commitment to municipal expenditure for the energy efficiency target for offices, shops and tourist establishments. Widespread adoption of efficiency innovations. Impacts: Efficiency improvements that significantly reduce energy consumption. | 543 | Economic savings |
 | Improvements to municipal buildings   | 9. Energy efficiency programme in the use of buildings | 23. Municipal modernisation programme for climate neutrality                                                           | Governance and politics Financial resources Technology    | Changes in practices: Development and adoption of a 2030 plan for the renovation and energy efficiency of                                                                                                                                                                                                                                                                                                                                                   | Changes in practices: Implementation of the 2030 plan for the refurbishment and energy efficiency of                                                                                                                                                                                                                                                                              | 2   | Economic savings |
 
-Climate City Contract. City of Barcelona
-6
-
 |                     |                                          |                                                                                                                                                                               |                                                                                   | buildings. Promoting research and development of technologies to increase the efficiency of energy consumption in buildings. Citizenship awareness for the incorporation of efficient practices. Impacts: Efficiency improvements that significantly reduce energy consumption.                              | buildings, maintaining the commitment of municipal expenditure for the energy efficiency target for municipal buildings. Impacts: Efficiency improvements that significantly reduce energy consumption. |     |                  |
 | ------------------- | ---------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- | ---------------- |
 | Industrial activity | 16. Industrial decarbonisation programme | 20. Climate Neutral Economic Opportunities and Adaptation Programme 22. Knowledge and innovation development programme 24. Metropolitan and multilevel coordination programme | Governance and politics Business models Financial resources Regulation Technology | Changes in practices: Development of business models that encourage industrial companies to invest in the electrification of their activity. Raising awareness of the benefits of electrification, linked to on-site renewable energy generation. Impacts: Increased electrification of industrial activity. | Changes in practices: Massive adoption of emission reduction commitments by industrial companies. Impacts: Increased electrification of industrial activity.                                            | 48  | Economic savings |
 
-Climate City Contract. City of Barcelona
-7
-
-| Solar generation in the municipality of Barcelona | 10. Renewable energy generation programme in municipal buildings and public space.
-Renewable energy generation programme in non-municipal residential, service and industrial buildings. | 19. Climate justice and social inclusion programme
-Climate Neutral Economic Opportunities and Adaptation Programme
-Education, culture and participation programme
-Municipal modernisation programme for climate neutrality | Capacity and development of capacities
-Commitment and participation
-Strategies for Local development
-Governance and politics
-Social innovation
-Business models
-Financial resources
-Regulation
-Technology | Changes in practices: Increase photovoltaic generation both in municipal facilities and in private buildings and spaces. Develop business models that allow, through a combination of public and private capital, to multiply and accelerate the installation processes of renewable energies, prioritising the spaces with the greatest potential (building roofs and other medium or large spaces) and seeking synergies with the energy rehabilitation of buildings.
-Impacts: Generate a much larger amount of renewable energy in the city. | Changes in practices: Massive investment, from public and especially private capital, in the installation of renewable energies in Barcelona.
-Impacts: Generate a much larger amount of renewable energy in the city. | 407 | Economic savings
-Reducing energy poverty
-Resilience / robustness / independence in energy supply |
+| Solar generation in the municipality of Barcelona | 10. Renewable energy generation programme in municipal buildings and public space. | Renewable energy generation programme in non-municipal residential, service and industrial buildings. | 19. Climate justice and social inclusion programme Climate Neutral Economic Opportunities and Adaptation Programme Education, culture and participation programme Municipal modernisation programme for climate neutrality | Capacity and development of capacities Commitment and participation Strategies for Local development Governance and politics Social innovation Business models Financial resources Regulation Technology | Changes in practices: Increase photovoltaic generation both in municipal facilities and in private buildings and spaces. Develop business models that allow, through a combination of public and private capital, to multiply and accelerate the installation processes of renewable energies, prioritising the spaces with the greatest potential (building roofs and other medium or large spaces) and seeking synergies with the energy rehabilitation of buildings. Impacts: Generate a much larger amount of renewable energy in the city. | Changes in practices: Massive investment, from public and especially private capital, in the installation of renewable energies in Barcelona. Impacts: Generate a much larger amount of renewable energy in the city. | 407 | Economic savings Reducing energy poverty | Resilience / robustness / independence in energy supply |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Decarbonisation of electricity | 24. Metropolitan and multilevel concertation programme | 25. City-to-City Climate Cooperation Programme | Governance and politics | Changes in practices: Political and regulatory pressure to accelerate the decarbonisation of electricity utilities. | Changes in practice: Majority share of renewable energies in the reference electricity mix for | 650 | - |
-Climate City Contract. City of Barcelona
-8
 
-| | | | | | Impacts: Increase in the proportion of electricity consumed in Barcelona that is generated by renewable energies. | Barcelona
-Impacts: Increase in the proportion of electricity consumed in Barcelona that is generated by renewable energies. | | |
+| | | | | | Impacts: Increase in the proportion of electricity consumed in Barcelona that is generated by renewable energies. | Barcelona | Impacts: Increase in the proportion of electricity consumed in Barcelona that is generated by renewable energies. | | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Waste | Zero waste strategy | 13. Low-emission municipal waste management programme
-Waste prevention and reduction programme | 20. Climate Neutral Economic Opportunities and Adaptation Programme
-Education, culture and participation programme
-Knowledge and innovation development programme
-Municipal modernisation programme for climate neutrality | Capacity and development of capacities
-Commitment and participation
-Culture
-Strategies for Local development
-Governance and politics
-Social innovation
-Business models
-Financial resources
-Regulation
-Technology | Changes in practices: Full development of the waste collection contract.
-Implementation of the measures foreseen in the Zero Waste Plan 2021-2027 in the areas of waste prevention and reduction.
-Impacts: Increased efficiency in transport and waste management, increased recycling rate of municipal waste, reduction in the amount of waste generated. | Changes in practices: Implementation of the measures foreseen in the Zero Waste Plan 2021-2027 in the areas of waste prevention and reduction.
-Impacts: To bring waste generation below 1.20 kg/inhabitant/day; to achieve recycling levels of 60% of municipal waste; to achieve a collection of the organic fraction with a maximum of 8% by weight of non-recyclable waste. | 153 | Economic savings
-Improving the quality of urban life |
-| Other | Industrial activity (natural gas) | 16. Industrial decarbonisation programme | 20. Climate Neutral Economic Opportunities and Adaptation Programme | Governance and politics
-Business models
-Financial resources
-Regulation | Changes in practices: Increased use of non-electric renewable energy in industrial production. | Changes in practices: Increased use of non-electric renewable energy in industrial production. | 51 | |
-Climate City Contract. City of Barcelona
-9
+| Waste | Zero waste strategy | 13. Low-emission municipal waste management programme | Waste prevention and reduction programme | 20. Climate Neutral Economic Opportunities and Adaptation Programme Education, culture and participation programme Knowledge and innovation development programme Municipal modernisation programme for climate neutrality | Capacity and development of capacities Commitment and participation Culture Strategies for Local development Governance and politics Social innovation Business models Financial resources Regulation Technology | Changes in practices: Full development of the waste collection contract. Implementation of the measures foreseen in the Zero Waste Plan 2021-2027 in the areas of waste prevention and reduction. Impacts: Increased efficiency in transport and waste management, increased recycling rate of municipal waste, reduction in the amount of waste generated. | Changes in practices: Implementation of the measures foreseen in the Zero Waste Plan 2021-2027 in the areas of waste prevention and reduction. Impacts: To bring waste generation below 1.20 kg/inhabitant/day; to achieve recycling levels of 60% of municipal waste; to achieve a collection of the organic fraction with a maximum of 8% by weight of non-recyclable waste. | 153 | Economic savings | Improving the quality of urban life |
+| Other | Industrial activity (natural gas) | 16. Industrial decarbonisation programme | 20. Climate Neutral Economic Opportunities and Adaptation Programme | Governance and politics Business models Financial resources | Regulation | Changes in practices: Increased use of non-electric renewable energy in industrial production. | Changes in practices: Increased use of non-electric renewable energy in industrial production. | 51 | |
 
 |            |                                                                                                          | 22. Knowledge and innovation development programme                                                                                                                                                          | Technology                                                                                                                   |                                                                                                                                                                                                                                                                                                                                                                                                                                                            |                                                                                                                                                                                                                                                                                                                                                                                                                                                            |     |                                                                                                                         |
 | ---------- | -------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- | ----------------------------------------------------------------------------------------------------------------------- |
@@ -1602,42 +1192,24 @@ Public and collective transport mobility programme
 Bicycle and Personal Mobility Vehicle mobility programme
 Urban freight distribution programme
 Private transport mobility programme
-Smart mobility programme | 10.6
-, 10.8, 10,13, 10.14,10.31,10.32, 10.33
-, 10.16
-, 10.19
-, 10.7, 10.10, 10.9, 10.11, 10.17, 10.20, 10.26
-| The six programmes in this sector correspond to the six strategic lines of Barcelona's Urban Mobility Plan (PMU) 2024.
-The Carbon Neutral City Council Programme will also incorporate a section on corporate mobility (CEAP 10.18). |
+| Smart mobility programme | 10.6, 10.8, 10.13, 10.14, 10.31, 10.32, 10.33, 10.16, 10.19, 10.7, 10.10, 10.9, 10.11, 10.17, 10.20, 10.26 | The six programmes in this sector correspond to the six strategic lines of Barcelona's Urban Mobility Plan (PMU) 2024. | The Carbon Neutral City Council Programme will also incorporate a section on corporate mobility (CEAP 10.18). |
 | Buildings and heating | 7. Energy rehabilitation programme for buildings | 1.2, 1.7, 4.5, 4.6, 4.7 | The Government's Climate Neutral 2030 Action Plan will include the main lines of these programmes. The Renewable Barcelona 2030 Programme, which includes many of these actions, can be used as a basis for their development. The |
 
 Note: all the plans referred to in the table can be consulted and downloaded at https://bcnroc.ajuntament.barcelona.cat/jspui. The specific links to most documents can be found in pp. 13-14 of this document.
-Climate City Contract. City of Barcelona
-1
 
-| | 8. Building and heating innovation programme
-Energy efficiency programme in the use of buildings | 4.5, 4.6, 4.7, 4.9
-, 4.2, 4.3, 4.4, 4.8 | actions referring to municipal buildings will be included in the Programme for a Carbon Neutral City Council.
+| | 8. Building and heating innovation programme | Energy efficiency programme in the use of buildings | 4.5, 4.6, 4.7, 4.9 | , 4.2, 4.3, 4.4, 4.8 | actions referring to municipal buildings will be included in the Programme for a Carbon Neutral City Council. |
 
 | Ongoing projects. Operational plan pending. |
 | ------------------------------------------- | ---------------------------------------------------------------------------------- |
 | Electricity                                 | 10. Renewable energy generation programme in municipal buildings and public space. |
 
 Renewable energy generation programme in non-municipal residential, service and industrial buildings.
-Lighting programme for public spaces and municipal buildings | 2.1, 2.3, 2.4, 5.1, 9.1, 9.2
-, 5.2, 5.3, 10.25
-| The Government's Climate Neutral Government Action 2030 will include the outlines of these programmes, which are to be developed into operational programmes in the coming months.
+| Lighting programme for public spaces and municipal buildings | 2.1, 2.3, 2.4, 5.1, 9.1, 9.2 , 5.2, 5.3, 10.25 | The Government's Climate Neutral Government Action 2030 will include the outlines of these programmes, which are to be developed into operational programmes in the coming months. |
 
 Actions related to municipal buildings will be included in the Carbon Neutral City Council Programme.
 
-Comprehensive lighting renovation plan |
-| Waste and other | 13. Low-emission municipal waste management programme
-Waste prevention and reduction programme
-Water cycle management programme with climate perspective
-Industrial decarbonisation programme | 4.8, 14.2, 14.6
-, 13.1 a 13.8, 13.12., 14.1, 14.4, 14.5, 14.8, 15.16
-8
-, 12.10, 12.14, 12.15, 14.7 | Barcelona Zero Waste Plan 2021-2027
+| Comprehensive lighting renovation plan |
+| Waste and other | 13. Low-emission municipal waste management programme Waste prevention and reduction programme Water cycle management programme with climate perspective Industrial decarbonisation programme | 4.8, 14.2, 14.6, 13.1 to 13.8, 13.12, 14.1, 14.4, 14.5, 14.8, 15.16, 12.10, 12.14, 12.15, 14.7 | Barcelona Zero Waste Plan 2021-2027 |
 
 Barcelona Zero Waste Plan 2021-2027
 Healthy and Sustainable Food Strategy 2030
@@ -1645,12 +1217,10 @@ Carbon Neutral City Council Programme (under development)
 
 Alternative Water Resources Development Plan (PLARHAB)
 
-BCN New Green Deal & Roadmap to the sustainability economy in Barcelona 2030 |
-| Nature-based solutions | 17. Urban Green Infrastructure Programme (and other nature-based solutions) | 5.1, 6.8, 7.1, 7.6, 7.8, 7.13, 11.13, 15.2, 15.16 | Nature 2030 Plan
+| BCN New Green Deal & Roadmap to the sustainability economy in Barcelona 2030 |
+| Nature-based solutions | 17. Urban Green Infrastructure Programme (and other nature-based solutions) | 5.1, 6.8, 7.1, 7.6, 7.8, 7.13, 11.13, 15.2, 15.16 | Nature 2030 Plan |
 
-CEAP (Line of Action 11.13): Promote the protection and increase of current marine carbon scuppers in the municipalities of the Barcelona coastline (Garraf and Maresme seagrass meadows), |
-
--
+| CEAP (Line of Action 11.13): Promote the protection and increase of current marine carbon scuppers in the municipalities of the Barcelona coastline (Garraf and Maresme seagrass meadows), |
 
 |                                        |                                                    |                                         | enhancing network collaboration.                                                                   |
 | -------------------------------------- | -------------------------------------------------- | --------------------------------------- | -------------------------------------------------------------------------------------------------- |
@@ -1662,24 +1232,15 @@ CEAP (Line of Action 11.13): Promote the protection and increase of current mari
 
 Barcelona resilience profile
 Social Inclusion and Inequality Reduction Strategy 2017-2027
-Gender Justice Plan 2026 |
-| Economic promotion | 20. Climate Neutral Economic Opportunities and Adaptation Programme | 1.5, 12.2, 12.4, 12.6, 12.9 | The Government's Climate Neutral Government Action 2030 will include the development of this programme, building on the Sustainability Economy Roadmap.
-Healthy and Sustainable Food Strategy 2030 |
+| Gender Justice Plan 2026 |
+| Economic promotion | 20. Climate Neutral Economic Opportunities and Adaptation Programme | 1.5, 12.2, 12.4, 12.6, 12.9 | The Government's Climate Neutral Government Action 2030 will include the development of this programme, building on the Sustainability Economy Roadmap. | Healthy and Sustainable Food Strategy 2030 |
 | Education, culture and participation | 21. Education, culture and participation programme | 16.1, 16.3, 16.4, 16.5, 16.6, 16.7, 16.8, 16.10, 16.11, 16.13, 16.14 | Let's Change for Climate 2030 Plan |
-| Science and technology | 22. Knowledge and innovation development programme | 4.6, 6.6., 11.2, 11.3, 11.8, 18.1, 18.3, 18.4, 18.6, 18.7, 18.8, 18.10, 18.16, 18.17, 18.8, 18.19, 18.20, 18.21 | Barcelona Innovation Coast
-Barcelona Science Plan
-Urban Innovation MoG |
+| Science and technology | 22. Knowledge and innovation development programme | 4.6, 6.6., 11.2, 11.3, 11.8, 18.1, 18.3, 18.4, 18.6, 18.7, 18.8, 18.10, 18.16, 18.17, 18.8, 18.19, 18.20, 18.21 | Barcelona Innovation Coast Barcelona Science Plan | Urban Innovation MoG |
 | Municipal commitment and | 23. Carbon Neutral City Council Programme | 2.8, 12.8, 16.2, 16.16, 18.2, 18.4, 18.5, 18.11, | The Programme will define how Barcelona City Council aims to become an exemplary administration in the fight against climate change, |
 
-Climate City Contract. City of Barcelona
-Climate City Contract. City of Barcelona
-3
-
-| management of the fight against climate change | | 18.12, 18.13, 18.15 | both in terms of its actions and its governance model.
-The Annual Sustainable Public Procurement Plan is also an element to be considered in the development of the actions of this programme. |
+| management of the fight against climate change | | 18.12, 18.13, 18.15 | both in terms of its actions and its governance model. | The Annual Sustainable Public Procurement Plan is also an element to be considered in the development of the actions of this programme. |
 | --- | --- | --- | --- |
-| Metropolitan vision and multi-level government | 24. Metropolitan and multilevel concertation programme | 6.3, 16.13 | Barcelona Metropolitan Strategic Plan 2030
-State and regional plans for climate, energy and other key sectors |
+| Metropolitan vision and multi-level government | 24. Metropolitan and multilevel concertation programme | 6.3, 16.13 | Barcelona Metropolitan Strategic Plan 2030 | State and regional plans for climate, energy and other key sectors |
 | City-to-city cooperation | 25. City-to-City Climate Cooperation Programme | 17.2, 17.3, 17.4, 17.5, 18.22, 18.23 | Master Plan for Global Justice Co-operation 2026, Master Plan for International Relations 2020-2023 |
 
 ## B-2.2: Individual Action Schemes
@@ -1697,11 +1258,9 @@ State and regional plans for climate, energy and other key sectors |
 • Deploying vertical mobility infrastructures
 • Inclusive management of urban design
 • Improving school and children's mobility
-• Enhancing the role of pedestrians: review of regulations, by-laws and other actions Revaluing the |
+| • Enhancing the role of pedestrians: review of regulations, by-laws and other actions Revaluing the |
 
--
-
-| | | role of pedestrians: dissemination, promotion and communication Studying mobility in Spaces of Great Influence (EGA)
+| | | role of pedestrians: dissemination, promotion and communication Studying mobility in Spaces of Great Influence (EGA) |
 
 | The actions related to walking mobility of the PMU, coincide perfectly with action 10.6, of the CEAP 2030, described as Improve accessibility and comfort of pavements, increase pedestrian areas, improve vertical mobility (escalators and lifts), increase pedestrian-friendly streets, where the highest priority is given to pedestrians. |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------- | ----------------------------------------------------------------------------- |
@@ -1716,21 +1275,13 @@ State and regional plans for climate, energy and other key sectors |
 • Green space will be multiplied tenfold. We will go from the current streets, which dedicate 1% of the space to green, to streets with an average of 12%.
 • 438 new trees will be planted. The streets will have a rich subsoil.
 • There will be almost a thousand new items of furniture (benches, chairs, tables, playground equipment) and new lighting.
-• A commitment to local commerce. Loading and unloading will be allowed at specific times. |
-| Implementation | Bodies/persons responsible for implementation | **Barcelona City Council**
-• Urban Planning and Housing Management and Mobility, Infrastructures and Urban Services Management |
+| • A commitment to local commerce. Loading and unloading will be allowed at specific times. |
+| Implementation | Bodies/persons responsible for implementation | **Barcelona City Council** | • Urban Planning and Housing Management and Mobility, Infrastructures and Urban Services Management |
 | | Scale of action and target entities | Municipal |
-| | Actors involved | • Barcelona City Council
-• Citizen participation (Superillas ideas competition, DECIDIM platform)
-• Associations promoting pedestrian rights, neighbourhood associations and traders' associations |
+| | Actors involved | • Barcelona City Council • Citizen participation (Superillas ideas competition, DECIDIM platform) | • Associations promoting pedestrian rights, neighbourhood associations and traders' associations |
 | | Comments on | • The implementation of the Superilla Barcelona |
 
-Climate City Contract. City of Barcelona
-
--
-
-| | implementation | model plans to increase the number of green axles from 60.3 km in 2022 to 91.74 km in 2030.
-• The development of the PMU 2024 uses a continuous monitoring and evaluation system to determine the results of the actions, possible deviations and to report on the achievement of the management objectives. The methodology of the monitoring plan consists of identifying a system of quantity and quality indicators that provide the necessary information to determine the degree of evolution and compliance of the different actions. Every year and through the Mobility Observatory, an assessment is made of the monitoring indicators and compliance with the objectives of the PMU 2024. (See pages 443 to 449 of the PMU 2024). |
+| | implementation | model plans to increase the number of green axles from 60.3 km in 2022 to 91.74 km in 2030. | • The development of the PMU 2024 uses a continuous monitoring and evaluation system to determine the results of the actions, possible deviations and to report on the achievement of the management objectives. The methodology of the monitoring plan consists of identifying a system of quantity and quality indicators that provide the necessary information to determine the degree of evolution and compliance of the different actions. Every year and through the Mobility Observatory, an assessment is made of the monitoring indicators and compliance with the objectives of the PMU 2024. (See pages 443 to 449 of the PMU 2024). |
 | --- | --- | --- |
 | Impacts and costs | Renewable energy generated (if applicable) | Not applicable |
 | | Energy removed/replaced, volume or fuel type | Not available |
@@ -1739,28 +1290,9 @@ Climate City Contract. City of Barcelona
 | Action plan | Name of action programme | 2. Public and collective transport mobility programme |
 | --- | --- | --- |
 | | Type of action | Programme aimed at improving the urban, metropolitan and regional bus network in terms of reliability, competitiveness and supply. Similarly, the extension and improvement of the metro, tram and rail transport network will also play a central role in the development of this action. |
-| | Description of the action | Firstly, it is worth highlighting the objectives set out in the Barcelona Urban Mobility Plan 2024 (PMU) in relation to public transport. Line of action T.P:
-• Consolidate the Bus Network by rationalising its resources, based on demand.
-• Improve and extend the bus lane network in the urban area and enhance traffic light priority. |
+| | Description of the action | Firstly, it is worth highlighting the objectives set out in the Barcelona Urban Mobility Plan 2024 (PMU) in relation to public transport. Line of action T.P: • Consolidate the Bus Network by rationalising its resources, based on demand. | • Improve and extend the bus lane network in the urban area and enhance traffic light priority. |
 
-Climate City Contract. City of Barcelona
-
--
-
-| | | • Improve the integration and management of the supra-municipal bus lines.
-• Promote infrastructures outside the city to favour supra-municipal public transport.
-• Consider the extension of the PT on demand service.
-• Continue fleet renewal with more sustainable vehicles.
-• Improving metro service
-• Improving the connection and coverage of the tramway networks
-• Improve the infrastructure and signalling of the rail network.
-• Improving the management of the occasional bus service
-• Studying the improvement of coach management
-• Integrating tourism demand into mobility management and planning
-• Improving taxi management and service in the city
-• Ensuring accessibility to public transport
-• Managing public transport in a gender- and age-inclusive way
-• Review the public transport fare system
+| | | • Improve the integration and management of the supra-municipal bus lines. • Promote infrastructures outside the city to favour supra-municipal public transport. • Consider the extension of the PT on demand service. • Continue fleet renewal with more sustainable vehicles. • Improving metro service • Improving the connection and coverage of the tramway networks • Improve the infrastructure and signalling of the rail network. • Improving the management of the occasional bus service • Studying the improvement of coach management • Integrating tourism demand into mobility management and planning • Improving taxi management and service in the city • Ensuring accessibility to public transport • Managing public transport in a gender- and age-inclusive way • Review the public transport fare system |
 
 It should be noted that these actions are perfectly aligned with actions 10.1, 10.4, 10.8, 10.13, 10.14, 10.16, 10.31, 10.32 and 10.33 of the CEAP 2030.
 
@@ -1775,14 +1307,10 @@ Strategic Metro lines
 Strategic lines Bus
 • Improve and increase the Bus service.
 • Renew and expand the bus fleet with criteria of sustainability, energy efficiency and digital transformation.
-• Adapt and improve infrastructures and systems for the adequate provision of the bus service, maintenance efficiency, energy efficiency and sustainability. |
+| • Adapt and improve infrastructures and systems for the adequate provision of the bus service, maintenance efficiency, energy efficiency and sustainability. |
 | --- | --- | --- |
 
-Climate City Contract. City of Barcelona
-Climate City Contract. City of Barcelona
-7
-
-| | | • Promote new service, operation and maintenance models that maximise Bus service quality and intermodality.
+| | | • Promote new service, operation and maintenance models that maximise Bus service quality and intermodality. |
 
 On a metropolitan scale, the Metropolitan Urban Mobility Plan (PMMU) 2019-2024 is the document that sets out the sustainable mobility strategy for people and goods in the Barcelona metropolitan area (36 municipalities with a total of 3,260,268 inhabitants). In general terms, the PMMU sets criteria and guidelines for the development of the sustainable urban mobility plans (PMUS) of the metropolitan municipalities, so that local strategies are compatible with a metropolitan-wide strategy. Thus, the Plan includes proposals that affect other administrations and, therefore, it is configured as a multi-level plan. In other words, the achievement of the challenges of metropolitan mobility requires the contribution of the agents and of all the administrations with competences.
 
@@ -1807,39 +1335,30 @@ C.18. Cycling on public transport
 | The approximate cost of the actions planned in the PMMU 2019-2024 - irrespective of the actor bearing the cost - is estimated at 10,276 million euros. Spending on infrastructure is the highest (8,922 million euros) and accounts for 86.8% of the total. The remaining measures (1,354 million euros), management, maintenance and operation, represent 13.2% of the Plan's cost. Of the 10,276 million euros that would be required to implement the PMMU measures over six |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
--
-
-| | years, the AMB would have to assume 3.8% (389.19 million euros). The rest of the expenditure has to be borne mainly by the metropolitan councils, the Generalitat de Catalunya and the General State Administration. The AMB's contribution is more notable in other measures (370 million euros) than in infrastructures (19 million euros).
+| | years, the AMB would have to assume 3.8% (389.19 million euros). The rest of the expenditure has to be borne mainly by the metropolitan councils, the Generalitat de Catalunya and the General State Administration. The AMB's contribution is more notable in other measures (370 million euros) than in infrastructures (19 million euros). |
 
 Because of its major impact on mobility in the city of Barcelona, it is worth highlighting the importance of the Infrastructure Master Plan (Pdl) 2021-2030. This is the main planning instrument for public transport infrastructure in the Barcelona Metropolitan Region (which includes 12 Catalan counties with 5.6 million inhabitants, 73.81% of the Catalan population). The Pdl includes proposals for the extension and improvement of the infrastructure network, together with the more general Mobility Master Plan for the Barcelona Metropolitan Integrated Mobility System.
 
 The 9 main objectives of the POI are:
-) Increase the modal share of collective public transport.
-) Ensure greater economic and social efficiency in public investment in the metropolitan transport system.
-) Maximise the integration of public transport systems.
-) To contribute to improving people's health and reducing accidents.
-) Achieve an inclusive transport system that incorporates gender and social equity policies.
-) To reduce emissions of pollutants (NO2 and PM10), GHGs and the noise impact of the collective public transport system.
-) Minimise energy consumption, energy intensity and the use of oil-based fuels.
-) Minimise the impact on the territorial matrix and ecological functionality.
-) Other environmental objectives.
+1) Increase the modal share of collective public transport.
+2) Ensure greater economic and social efficiency in public investment in the metropolitan transport system.
+3) Maximise the integration of public transport systems.
+4) To contribute to improving people's health and reducing accidents.
+5) Achieve an inclusive transport system that incorporates gender and social equity policies.
+6) To reduce emissions of pollutants (NO2 and PM10), GHGs and the noise impact of the collective public transport system.
+7) Minimise energy consumption, energy intensity and the use of oil-based fuels.
+8) Minimise the impact on the territorial matrix and ecological functionality.
+9) Other environmental objectives.
 
 In addition, the Pdl takes the form of a set of investments by the regional government and the State in two phases:
 Phase A corresponds to 42 actions considered priorities and planned for the period 2021-2030. The Pdl foresees an investment for the period 2021-2030 of €8,403.8 million, €5,059.2 million from the Generalitat de Catalunya and the remaining €3,344.6 million from the State.
 Phase B would correspond to 24 actions considered as non-priority and to be implemented beyond 2030.
 
 The investment projects are grouped into 5 programmes:
-) Extension of the network (AX) |
+| 1) Extension of the network (AX) |
 | --- | --- |
 
-Climate City Contract. City of Barcelona
-
--
-
-| | | 2) State network (XE)
-) Public road transport (PT)
-) Exchangers (IN)
-) Modernisation and improvement (MM) | | |
+| | | 2) State network (XE) 3) Public road transport (PT) 4) Exchangers (IN) | 5) Modernisation and improvement (MM) | | |
 | --- | --- | --- | --- | --- |
 | | | Codi | Actuació | Inversió (MK, IVA ex.) |
 | | | AX01 | Metro: 12 Fonds - Sant Crist - Solació de Badalona | 147,2 |
@@ -1886,43 +1405,22 @@ Climate City Contract. City of Barcelona
 | MM10 | Mesures per a l'increment de la resilència al canvi climàtic | 173,2 | | |
 | TOTAL (Generalitat + AGI) | | 8422,6 | | |
 | Reference to the impact pathway | Line of action | Mobility and transport | | |
-| | Systemic lever | • Finance (technical resources)
-• Technology
-• Governance and politics
-• Local development strategy | | |
+| | Systemic lever | • Finance (technical resources) • Technology • Governance and politics | • Local development strategy | | |
 | | short and medium-term changes | Modal shift towards sustainable modes of transport | | |
-| Implementation | Agencies/persons responsible for implementation | • Barcelona City Council: Urban Planning and Housing Management and Mobility, Infrastructures and Urban Services Management.
-• Generalitat de Catalunya
-• Barcelona Metropolitan Transport (TMB)
-• Metropolitan Transport Authority (MTA)
-• ADIF
-• RENFE (Suburban, Regional and Freight railway operator)
-• Ferrocarrils de la Generalitat (Suburban and Freight railway operator) | | |
+| Implementation | Agencies/persons responsible for implementation | • Barcelona City Council: Urban Planning and Housing Management and Mobility, Infrastructures and Urban Services Management. • Generalitat de Catalunya • Barcelona Metropolitan Transport (TMB) • Metropolitan Transport Authority (MTA) • ADIF • RENFE (Suburban, Regional and Freight railway operator) | • Ferrocarrils de la Generalitat (Suburban and Freight railway operator) | | |
 | | Scale of action and target entities | Municipal, Metropolitan and Autonomous | | |
 
-Climate City Contract. City of Barcelona
-
--
-
-| | Actors involved | • Barcelona City Council
-• TMB, competent administration and owner of the Bus and Metro infrastructure.
-• MTA, competent administration and owner of the tramway infrastructure
-• Generalitat de Catalunya, competent administration and owner of the Metro and Railway infrastructure (FGC). Railway and Cercanías de Cataluña (RENFE), the owner of the railway and suburban railway services in Catalonia. |
+| | Actors involved | • Barcelona City Council • TMB, competent administration and owner of the Bus and Metro infrastructure. • MTA, competent administration and owner of the tramway infrastructure | • Generalitat de Catalunya, competent administration and owner of the Metro and Railway infrastructure (FGC). Railway and Cercanías de Cataluña (RENFE), the owner of the railway and suburban railway services in Catalonia. |
 | --- | --- | --- |
-| | Comments on implementation | The development of the PMU 2024 uses a continuous monitoring and evaluation system to determine the results of the actions, possible deviations and to report on the achievement of the management objectives. The methodology of the monitoring plan consists of identifying a system of quantity and quality indicators that provide the necessary information to determine the degree of evolution and compliance of the different actions. Every year and through the Mobility Observatory, an assessment is made of the monitoring indicators and compliance with the objectives of the PMU 2024. (See pages 443 to 449 of the PMU 2024).
+| | Comments on implementation | The development of the PMU 2024 uses a continuous monitoring and evaluation system to determine the results of the actions, possible deviations and to report on the achievement of the management objectives. The methodology of the monitoring plan consists of identifying a system of quantity and quality indicators that provide the necessary information to determine the degree of evolution and compliance of the different actions. Every year and through the Mobility Observatory, an assessment is made of the monitoring indicators and compliance with the objectives of the PMU 2024. (See pages 443 to 449 of the PMU 2024). |
 
-The metropolitan PMMU also has a system of evaluation and monitoring indicators for its strategic objectives (see PMMU 2024). |
+| The metropolitan PMMU also has a system of evaluation and monitoring indicators for its strategic objectives (see PMMU 2024). |
 | Impacts and costs | Renewable energy generated (if applicable) | Not applicable |
 | | Energy removed/replaced, fuel volume or fuel type | Pending |
 | | Estimated GHG emission reductions (total) | A specific calculation of the emission reduction potential of this programme is not yet available. For the mobility and transport programmes as a whole, the Mission's target implies a 70% reduction in emissions (512 thousand MT) compared to the BAU 2030 scenario. |
-| | Total costs and costs per unit of CO2eq | Projected mobility expenditure on public transport from 2019 to 2024: €189,979,000 (31.2% of total mobility budget). Estimate until 2030: €380 million.
-Pending the addition of the costs of the Pol 2030 and other investments planned by metropolitan and regional operators that are attributable to internal transport and connection with the city of Barcelona. |
+| | Total costs and costs per unit of CO2eq | Projected mobility expenditure on public transport from 2019 to 2024: €189,979,000 (31.2% of total mobility budget). Estimate until 2030: €380 million. | Pending the addition of the costs of the Pol 2030 and other investments planned by metropolitan and regional operators that are attributable to internal transport and connection with the city of Barcelona. |
 | Action plan | Name of the action | 3. Bicycle and Personal Mobility Vehicle mobility |
 | --- | --- | --- |
-
-Climate City Contract. City of Barcelona
-Climate City Contract. City of Barcelona
-1
 
 | Reference to the impact pathway | programme                                                                                                                                                                      | programme                                                                                             |
 | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------- |
@@ -1937,21 +1435,11 @@ Encourage public transport with access to bicycles.
 Cycling outreach, promotion and communication
 Disseminate and periodically review existing regulations on bicycles, MPVs and cycles with more than two wheels. The actions of the CEAP 2030 related to cycling mobility are listed below:
 Action 10.4: Consolidate cycling infrastructure and improve the quality, connectivity and safety of the existing network, prioritising the structuring axes of the network. Expand the supply of anchorages and create high-capacity parking facilities at strategic points and major public transport interchanges.
-Action 10.16: Provide support and subsidies for cycling to work. Pilot test, assist in the purchase of bicycles for companies and evaluate the possibility of providing workers with financial compensation for the mileage incurred in cycling to work. | |
+| Action 10.16: Provide support and subsidies for cycling to work. Pilot test, assist in the purchase of bicycles for companies and evaluate the possibility of providing workers with financial compensation for the mileage incurred in cycling to work. | |
 | Line of action | Mobility and transport | |
-| Systemic lever | - Finance (economic resources)
-Culture
-Commitment and participation | |
-| short and medium-term changes | Modal shift towards sustainable modes of transport.
-Total trips by bicycle and VMP over total trips (motorised and non-motorised):
-2024 scenario: 5.0% (2.3% in 2018)
-Cycle lane:
-2024 Scenario: 340 km, 55.7% more than in 2018 (218 km)
-Scenario 2030: 365 km | |
-| Implementation | Agencies/persons responsible for implementation | Barcelona City Council
-Urban Planning and Housing Management and Mobility, Infrastructures and Urban Services |
-Climate City Contract. City of Barcelona
-2
+| Systemic lever | - Finance (economic resources) Culture | Commitment and participation | |
+| short and medium-term changes | Modal shift towards sustainable modes of transport. Total trips by bicycle and VMP over total trips (motorised and non-motorised): 2024 scenario: 5.0% (2.3% in 2018) Cycle lane: 2024 Scenario: 340 km, 55.7% more than in 2018 (218 km) | Scenario 2030: 365 km | |
+| Implementation | Agencies/persons responsible for implementation | Barcelona City Council | Urban Planning and Housing Management and Mobility, Infrastructures and Urban Services |
 
 |     |                                     | Management               |
 | --- | ----------------------------------- | ------------------------ |
@@ -1960,7 +1448,7 @@ Climate City Contract. City of Barcelona
 
 • Barcelona Metropolitan Area (AMB)
 • Barcelona de Serveis Municipals (B:SM), manager of the Bicing service.
-• Citizen participation through the Bicycle Group in the framework of the Mobility Pact |
+| • Citizen participation through the Bicycle Group in the framework of the Mobility Pact |
 | | Comments on implementation | The development of the Urban Mobility Plan 2024 requires a continuous monitoring and evaluation system to determine the results of the actions, possible deviations and to report on the achievement of the management objectives. The methodology of the monitoring plan consists of identifying a system of quantity and quality indicators that provide the necessary information to determine the degree of evolution and compliance of the different actions. Every year and through the Mobility Observatory, an assessment is made of the monitoring indicators and compliance with the objectives of the PMU 2024. (See pages 443 to 449 of the PMU 2024). |
 | Impacts and costs | Renewable energy generated (if applicable) | Not applicable |
 | | Energy removed/replaced, fuel volume or fuel type | Not available |
@@ -1969,8 +1457,6 @@ Climate City Contract. City of Barcelona
 | Action plan | Name of the action programme | 4. Urban Freight Distribution Programme |
 | --- | --- | --- |
 | | Type of action | The Strategy for the Urban Distribution of Goods (DUM) 2030 includes the greening of the fleet, the creation of electric-power stations and charging points, centralised collection points for online shopping and cycle- |
-Climate City Contract. City of Barcelona
-3
 
 |     |                           | distribution, as well as taxing the distribution activity of large technology platforms.                                                                                                    |
 | --- | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1985,26 +1471,11 @@ Improve the monitoring and control of indiscipline.
 Incorporating new technologies to improve the management of DUM
 Improving road safety in the DUM The actions of the CEAP 2030 related to urban freight distribution are listed below:
 Action 10.12: Promote dedicated freight distribution spaces to increase efficiency and reduce their impact on GHG emissions.
-Action 10.19: Introduce green taxation measures to tax the freight distribution activity of large technology platforms. |
+| Action 10.19: Introduce green taxation measures to tax the freight distribution activity of large technology platforms. |
 | Reference to the impact pathway | Line of action | Mobility and transport |
-| | Systemic lever | - Regulation
-Finance (resources €)
-Technology
-Business models |
-| | short and medium-term changes | - Reduces local air pollution
-Reduces global greenhouse gas emissions
-Reduces noise pollution
-Facilitates energy self-sufficiency and diversifies energy resources
-Ensuring the transition to renewable energy in transport
-The associated technologies are cleaner and generate new labour markets.
-Shaping more resilient cities that are less vulnerable with more robust services |
-| Implementation | Agencies/persons responsible for implementation | **Barcelona City Council:**
-Management of Economy and Economic Promotion
-Urban Planning and Housing Management
-Mobility, Infrastructures and Urban Services Department
-Barcelona de Serveis Municipals -BSM- (Barcelona |
-Climate City Contract. City of Barcelona
-4
+| | Systemic lever | - Regulation Finance (resources €) Technology | Business models |
+| | short and medium-term changes | - Reduces local air pollution Reduces global greenhouse gas emissions Reduces noise pollution Facilitates energy self-sufficiency and diversifies energy resources Ensuring the transition to renewable energy in transport The associated technologies are cleaner and generate new labour markets. | Shaping more resilient cities that are less vulnerable with more robust services |
+| Implementation | Agencies/persons responsible for implementation | **Barcelona City Council:** Management of Economy and Economic Promotion Urban Planning and Housing Management Mobility, Infrastructures and Urban Services Department | Barcelona de Serveis Municipals -BSM- (Barcelona |
 
 |                                     | Municipal Services -BSM-) |
 | ----------------------------------- | ------------------------- |
@@ -2014,8 +1485,8 @@ Climate City Contract. City of Barcelona
 Barcelona de Serveis Municipals -BSM- (Barcelona Municipal Services -BSM-)
 Metropolitan Transport Authority (MTA)
 Barcelona Metropolitan Area (AMB)
-Generalitat de Catalunya |
-| Comments on implementation | Objectives 2030 of the Municipal Strategy for the Urban Distribution of Goods (EDUM)
+| Generalitat de Catalunya |
+| Comments on implementation | Objectives 2030 of the Municipal Strategy for the Urban Distribution of Goods (EDUM) |
 
 Increase by 20% the supply of loading and unloading hours, rebalance demand and improve parking management.
 
@@ -2037,9 +1508,7 @@ Create a DUM office as a focal point for dialogue with stakeholders in this sect
 
 To make Barcelona a hub of innovative technologies and solutions for the DUM.
 
-On the other hand, the development of the Urban Mobility Plan 2024 requires a continuous monitoring and evaluation system to determine the results of the actions, possible deviations, and to report on the achievement of the management objectives. The methodology of the monitoring plan consists of identifying a system of quantity and quality indicators that provide the necessary information to determine the degree of evolution and compliance of the different actions. Every year and through the Mobility Observatory, an assessment is made of the monitoring indicators and compliance with the objectives of the PMU 2024. (See pages 443 to 449 of the PMU 2024). |
-Climate City Contract. City of Barcelona
-5
+| On the other hand, the development of the Urban Mobility Plan 2024 requires a continuous monitoring and evaluation system to determine the results of the actions, possible deviations, and to report on the achievement of the management objectives. The methodology of the monitoring plan consists of identifying a system of quantity and quality indicators that provide the necessary information to determine the degree of evolution and compliance of the different actions. Every year and through the Mobility Observatory, an assessment is made of the monitoring indicators and compliance with the objectives of the PMU 2024. (See pages 443 to 449 of the PMU 2024). |
 
 | Impacts and costs | Renewable energy generated (if applicable)        | Not applicable                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | ----------------- | ------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -2051,14 +1520,7 @@ Climate City Contract. City of Barcelona
 |                   | Type of action                                    | Programme aimed at improving the management and organisation of private transport mobility in the city with a restrictive and sustainable approach. Of particular relevance are the promotion of a comprehensive strategy for car parks and regulated parking -including park & ride zones-, the actions aimed at the restrictive regulation of private motorised transport (ZBE, hierarchisation of the road network, possible urban tolls, etc.), the development of a programme to promote electric vehicles for private mobility (in all its forms (vans, cars, motorbikes, bicycles, special vehicles, etc.), and finally, the electrification of municipal vehicles and public transport services (buses and coaches, taxis). |
 |                   | Description of the action                         | This Programme will be developed within the framework of the Urban Mobility Plan 2024, which foresees a specific line of action for private transport mobility, the V.P. line of action: • Define and study the efficiency of the system with changes of direction and changes of use on public roads. • Improve information signs on the road network. • Intensive action on traffic accident hotspots in the city • Allocate different maximum road speeds according to city forecast 30 km/h • Managing traffic with environmental criteria • Reducing and controlling noise pollution in the city • Promoting more efficient, safer and cleaner vehicles • Promote sustainable vehicles at the municipal level                  |
 
-Climate City Contract. City of Barcelona
-6
-
-| | | • Promote the implementation of charging points for electric vehicles.
-• Review and improve parking management
-• Improving motorbike parking management
-• Increasing security and control measures for motorbikes
-• Disseminating sustainable and safe mobility
+| | | • Promote the implementation of charging points for electric vehicles. • Review and improve parking management • Improving motorbike parking management • Increasing security and control measures for motorbikes • Disseminating sustainable and safe mobility |
 
 The actions of the CEAP 2030 related to private mobility and aligned to the PMU are listed below:
 **Action 10.2:** Study the implementation of complementary measures to reduce the environmental impact of private motorised transport, e.g. parking management, urban transformation, toxicity tolls, etc.
@@ -2074,10 +1536,8 @@ Cooperation and collaboration on a metropolitan scale is paramount for the devel
 • Line of action A.2: Basic road network at the service of the metropolitan mobility system
 • Action Line B.7: Urban liveability and low-emission zones
 • Line of action B.10 Parking and road pricing model
-The essential electrification of municipal vehicles is |
+| The essential electrification of municipal vehicles is |
 | --- | --- | --- |
-
--
 
 |                                 |                                                                                                 | channelled through Barcelona's Electric Mobility Strategy (2018). By 2024 it is planned to reach 80% of the municipal electric fleet and 100 buses, 800 taxis, 24,000 passenger cars and 24,000 electric motorbikes. By 2030, 100% of the municipal fleet should be electric. At metropolitan level, the TMB Strategic Plan (metropolitan scope): 233 electric buses and 46 hydrogen buses by 2025. |
 | ------------------------------- | ----------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -2088,47 +1548,17 @@ The essential electrification of municipal vehicles is |
 • Culture
 • Regulation (parking, charging points)
 • Technology
-• Business models |
-| short and medium-term changes | • Reduction of enforced mobility and reduction of private car use
-• Reducing accident rates and improving road safety
-• Reduces local air pollution
-• Reduces global greenhouse gas emissions
-• Reduces noise pollution
-• Facilitates energy self-sufficiency and diversifies energy resources
-• Ensuring the transition to renewable energy in transport
-• The associated technologies are cleaner and generate new labour markets.
-• Shaping more resilient cities that are less vulnerable with more robust services |
-| Implementation | Agencies/persons responsible for implementation | • Barcelona City Council:
-Urban Planning and Housing Management
-Mobility, Infrastructures and Urban Services Department
-Management of Economy and Economic Promotion
-• TMB
-• Barcelona de Serveis Municipals -BSM
-• Barcelona Metropolitan Area (AMB)
-• Generalitat de Catalunya |
+| • Business models |
+| short and medium-term changes | • Reduction of enforced mobility and reduction of private car use • Reducing accident rates and improving road safety • Reduces local air pollution • Reduces global greenhouse gas emissions • Reduces noise pollution • Facilitates energy self-sufficiency and diversifies energy resources • Ensuring the transition to renewable energy in transport • The associated technologies are cleaner and generate new labour markets. | • Shaping more resilient cities that are less vulnerable with more robust services |
+| Implementation | Agencies/persons responsible for implementation | • Barcelona City Council: Urban Planning and Housing Management Mobility, Infrastructures and Urban Services Department Management of Economy and Economic Promotion • TMB • Barcelona de Serveis Municipals -BSM • Barcelona Metropolitan Area (AMB) | • Generalitat de Catalunya |
 | Scale of action and target entities | Municipal, Metropolitan |
-| Actors involved | • Barcelona City Council
-• Barcelona Metropolitan Area (AMB)
-• Barcelona de Serveis Municipals -BSM (manages regulated parking (AREA), and electric vehicle charging points).
-• Urban planning, Metropolitan General Plan
-• Associations of users of motorbikes, passenger cars. |
+| Actors involved | • Barcelona City Council • Barcelona Metropolitan Area (AMB) • Barcelona de Serveis Municipals -BSM (manages regulated parking (AREA), and electric vehicle charging points). • Urban planning, Metropolitan General Plan | • Associations of users of motorbikes, passenger cars. |
 
-Climate City Contract. City of Barcelona
-Climate City Contract. City of Barcelona
-8
-
-| | | • Metropolitan Taxi Institute
-• Generalitat de Catalunya
-• Spanish Government
-• Electric vehicle manufacturers
-• Charging point operators |
+| | | • Metropolitan Taxi Institute • Generalitat de Catalunya • Spanish Government • Electric vehicle manufacturers | • Charging point operators |
 | --- | --- | --- |
-| | Comments on implementation | • Barcelona's Electric Mobility Strategy has a very comprehensive scorecard for its monitoring.
-• The Climate Emergency Action Plan (CEAP) foresees 15% of electric vehicles circulating in Barcelona by 2030.
-• 20% reduction in private motorised transport mobility by 2030 (CEAP)
-• The Catalan Climate Change Law foresees that new registrations of electric vehicles will reach 30% of the total by 2025.
+| | Comments on implementation | • Barcelona's Electric Mobility Strategy has a very comprehensive scorecard for its monitoring. • The Climate Emergency Action Plan (CEAP) foresees 15% of electric vehicles circulating in Barcelona by 2030. • 20% reduction in private motorised transport mobility by 2030 (CEAP) • The Catalan Climate Change Law foresees that new registrations of electric vehicles will reach 30% of the total by 2025. |
 
-On the other hand, the development of the Urban Mobility Plan 2024 requires a continuous monitoring and evaluation system to determine the results of the actions, possible deviations, and to report on the achievement of the management objectives. The methodology of the monitoring plan consists of identifying a system of quantity and quality indicators that provide the necessary information to determine the degree of evolution and compliance of the different actions. Every year and through the Mobility Observatory, an assessment is made of the monitoring indicators and compliance with the objectives of the PMU 2024. (See pages 443 to 449 of the PMU 2024). |
+| On the other hand, the development of the Urban Mobility Plan 2024 requires a continuous monitoring and evaluation system to determine the results of the actions, possible deviations, and to report on the achievement of the management objectives. The methodology of the monitoring plan consists of identifying a system of quantity and quality indicators that provide the necessary information to determine the degree of evolution and compliance of the different actions. Every year and through the Mobility Observatory, an assessment is made of the monitoring indicators and compliance with the objectives of the PMU 2024. (See pages 443 to 449 of the PMU 2024). |
 | Impacts and costs | Renewable energy generated (if applicable) | Not applicable |
 | | Energy removed/replaced, volume or fuel type | PMU 2024 |
 | | | 2018 2024 Horitzo 2030 |
@@ -2141,55 +1571,26 @@ On the other hand, the development of the Urban Mobility Plan 2024 requires a co
 | | | Elèctric 0,0 % 3,7% 8,9% |
 | Estimated GHG emission reductions (total) | A specific calculation of the emission reduction potential of this programme is not yet available. For the mobility and transport programmes as a whole, the Mission's target implies a 70% reduction in emissions (512 thousand MT) compared to the BAU 2030 scenario. The PMU 2024 estimates, assuming a reduction in private vehicle trips of 21% in 2024 and 29% in 2030, | |
 
--
-
 |     |                                         | that NOx emissions due to motorised traffic will be reduced from 3,486 tonnes/year in 2018 to 1,662 tonnes/year in 2024 and to 1,140 tonnes/year of NOx in 2030. Assuming the same scenario, PMO levels will decrease from 208 tonnes/year in 2018 to 171 and 159 tonnes/year in 2024 and 2030, respectively. |
 | --- | --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |     | Total costs and costs per unit of CO2eq | • Projected mobility expenditure on private transport from 2019 to 2024: €128,249,333 (21.1% of the total mobility budget). Estimated expenditure until 2030: 256,498,666 €.                                                                                                                                  |
 
 • TMB: Incorporation of 233 zero-emission electric buses. Investment €134.4 M 2021-2025
-• Generalitat de Catalunya: The MOVES III programme, endowed with European Next Generation Funds, opened in September 2021 with an initial endowment of 65 million euros, receiving a first extension of 65 million euros in April 2022. Catalonia Grant |
+| • Generalitat de Catalunya: The MOVES III programme, endowed with European Next Generation Funds, opened in September 2021 with an initial endowment of 65 million euros, receiving a first extension of 65 million euros in April 2022. Catalonia Grant |
 | Action plan | Name of action programme | 6. Smart Mobility Programme (Smart Mobility) |
 | --- | --- | --- |
 | | Type of action | Smart Mobility is a fundamental part of urban mobility because of the impact it has on all forms of travel. Understood in a cross-cutting manner, smart mobility allows mobility to be managed more efficiently, while at the same time offering alternative solutions and smart services to improve travel. The main aim pursued is to reduce the need for forced mobility through actions aimed at promoting teleworking or boosting car sharing (car sharing, car pooling, VAO lanes, etc.). |
-| | Description of the action | This Programme will be developed within the framework of the Urban Mobility Plan 2024, which foresees a specific action line for smart mobility, the S.M. action line:
-• Promoting a more sustainable network of integrated transport services
-• Harnessing new technologies to promote road safety
-• Encourage and regulate car-sharing schemes
-• Boosting smart mobility management
-• Promoting intelligent management of public transport services
-• Improve traffic light operation
-• Improving the collection and management of mobility information
-• Enhancing sustainable access to industrial zones and business clusters
-• Promote the drafting of Business Displacement Plans (EDPs). |
+| | Description of the action | This Programme will be developed within the framework of the Urban Mobility Plan 2024, which foresees a specific action line for smart mobility, the S.M. action line: • Promoting a more sustainable network of integrated transport services • Harnessing new technologies to promote road safety • Encourage and regulate car-sharing schemes • Boosting smart mobility management • Promoting intelligent management of public transport services • Improve traffic light operation • Improving the collection and management of mobility information • Enhancing sustainable access to industrial zones and business clusters | • Promote the drafting of Business Displacement Plans (EDPs). |
 
-Climate City Contract. City of Barcelona
-Climate City Contract. City of Barcelona
-0
-
-| | | At the metropolitan level, the Metropolitan Urban Mobility Plan 2019-2024 foresees:
-Action line F.27: Sustainable access to work and mobility centres The actions of the CEAP 2030 related to smart mobility are listed below:
-Action 10.3: Advance in the application of formulas to reduce the need for forced mobility, applying labour mobility strategies that tend to reduce the need to travel to and from work (teleconferencing, teleworking, etc.) and the creation of sustainable mobility plans. |
+| | | At the metropolitan level, the Metropolitan Urban Mobility Plan 2019-2024 foresees: Action line F.27: Sustainable access to work and mobility centres The actions of the CEAP 2030 related to smart mobility are listed below: | Action 10.3: Advance in the application of formulas to reduce the need for forced mobility, applying labour mobility strategies that tend to reduce the need to travel to and from work (teleconferencing, teleworking, etc.) and the creation of sustainable mobility plans. |
 | --- | --- | --- |
 | Reference to the impact pathway | Line of action | Mobility and transport |
-| | Systemic lever | - Technology
-Culture
-Social innovation
-Regulation
-Business models |
-| | short and medium-term changes | - Reduction of enforced mobility and reduction of private car use
-Make mobility linked to workplaces and facilities more efficient, sustainable and safe. |
-| Implementation | Agencies/persons responsible for implementation | Barcelona City Council
-Resource Management and Digital Transformation
-Mobility, Infrastructures and Urban Services Department |
+| | Systemic lever | - Technology Culture Social innovation Regulation | Business models |
+| | short and medium-term changes | - Reduction of enforced mobility and reduction of private car use | Make mobility linked to workplaces and facilities more efficient, sustainable and safe. |
+| Implementation | Agencies/persons responsible for implementation | Barcelona City Council Resource Management and Digital Transformation | Mobility, Infrastructures and Urban Services Department |
 | | Scale of action and target entities | Municipal, Metropolitan, Autonomous |
-| | Actors involved | - Spanish Government (Ministry of Labour)
-Generalitat de Catalunya
-Barcelona City Council
-Employers' associations and trade unions
-Platforms, private and public companies and vehicle sharing cooperatives (cars, motorbikes or bikes) |
-| | Comments on implementation | The Pact for a New Workplace Mobility in Barcelona is a municipal initiative promoted by Barcelona City Council's Mobility Department to form a large public-private alliance with all the city's social and economic organisations and companies, as well as all the operators in the mobility ecosystem, to act together and achieve a more sustainable and efficient mandatory mobility model in Barcelona and the metropolitan area. At the same time, as a result of this pact, the Barcelona City Council's Workplace Mobility Board was set up to |
-中
+| | Actors involved | - Spanish Government (Ministry of Labour) Generalitat de Catalunya Barcelona City Council Employers' associations and trade unions | Platforms, private and public companies and vehicle sharing cooperatives (cars, motorbikes or bikes) |
+| | Comments on implementation | The Pact for a New Workplace Mobility in Barcelona is a municipal initiative promoted by Barcelona City Council's Mobility Department to form a large public-private alliance with all the city's social and economic organisations and companies, as well as all the operators in the mobility ecosystem, to act together and achieve a more sustainable and efficient mandatory mobility model in Barcelona and the metropolitan area. At the same time, as a result of this pact, the Barcelona City Council's Workplace Mobility Board was set up to |  |
 
 |                   |                                              | manage its own Mobility Plan, and the Office for Workplace Mobility was set up to provide advice to other organisations and companies in Barcelona and the metropolitan area. Barcelona that wish to receive support in the elaboration of their EDPs. With regard to the financing of the EDPs, this must be paid for by the companies themselves. On the other hand, the development of the Urban Mobility Plan 2024 requires a continuous monitoring and evaluation system to determine the results of the actions, possible deviations, and to report on the achievement of the management objectives. The methodology of the monitoring plan consists of identifying a system of quantity and quality indicators that provide the necessary information to determine the degree of evolution and compliance of the different actions. Every year and through the Mobility Observatory, an assessment is made of the monitoring indicators and compliance with the objectives of the PMU 2024. (See pages 443 to 449 of the PMU 2024). |
 | ----------------- | -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -2204,11 +1605,7 @@ Platforms, private and public companies and vehicle sharing cooperatives (cars, 
 | ----------- | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |             | Type of action               | Public aid programme for building renovation which considers energy, environment and social justice factors. In parallel, this programme will focus on maximising innovation in the management of building renovation (construction models, financing, customer service, etc.). |
 
-Climate City Contract. City of Barcelona
-Climate City Contract. City of Barcelona
-2
-
-| | Description of the action | The Government’s Climate Neutrality Action 2030 will include and specify the main lines of this programme. However, pending its approval and specification, the Barcelona Renewable 2030 Programme can be taken as a basis for the description of this Mission Programme, since it includes a large part of the actions aimed at the energy refurbishment of buildings in the private and tertiary sectors. In relation to the actions referring to the refurbishment of municipal buildings, it should be noted that these will be included in the Programme for a Carbon Neutral City Council (in preparation).
+| | Description of the action | The Government’s Climate Neutrality Action 2030 will include and specify the main lines of this programme. However, pending its approval and specification, the Barcelona Renewable 2030 Programme can be taken as a basis for the description of this Mission Programme, since it includes a large part of the actions aimed at the energy refurbishment of buildings in the private and tertiary sectors. In relation to the actions referring to the refurbishment of municipal buildings, it should be noted that these will be included in the Programme for a Carbon Neutral City Council (in preparation). |
 
 The Barcelona Renewable 2030 Programme, aligned with the State Plan for Recovery, Transformation and Resilience, represents a unique opportunity to give continuity to and strengthen policies and programmes related to energy rehabilitation and urban regeneration that are already being implemented in Barcelona and to promote new disruptive projects. In terms of energy rehabilitation, the following strategic lines of action should be highlighted:
 LAE 1 - Energy rehabilitation of buildings: residential building stock, public buildings and facilities. It will develop the following programmes:
@@ -2221,12 +1618,10 @@ Rehabilitation of existing residential buildings and generation of new housing i
 Rehabilitation of the 3 Chimeneas complex for the generation of renewable energy (photovoltaic panels).LAE 5 - Define funding mechanisms
 Channel soft public financing offered by the ICO, IDEA, ICF, EIB, etc. with the guarantee of MITMA, MITECO, Generalitat, etc. to private housing associations.
 Expansion of the Barcelona Sustainable Energy Facility (a public-private investment fund already in operation for the implementation of photovoltaic energy in the city's buildings).
-Creation of a second public-private investment fund for the energy refurbishment of existing buildings, as well as the creation of new affordable housing, acting primarily on the fronts to consolidate 22@. |
+| Creation of a second public-private investment fund for the energy refurbishment of existing buildings, as well as the creation of new affordable housing, acting primarily on the fronts to consolidate 22@. |
 | --- | --- | --- |
-Climate City Contract. City of Barcelona
-3
 
-| | | - Explore new financing modalities beyond non-repayable subsidies such as advances or credits that anticipate a change in the financing model and public aid for rehabilitation.
+| | | - Explore new financing modalities beyond non-repayable subsidies such as advances or credits that anticipate a change in the financing model and public aid for rehabilitation. |
 
 It is also worth highlighting the actions of the CEAP 2030 planned in this area:
 
@@ -2249,50 +1644,20 @@ Action 4.7: Develop a building energy ordinance to ensure that new or comprehens
 • Capacity and capacity building
 • Social innovation
 • Regulation
-• Business models |
-Climate City Contract. City of Barcelona
-4
+| • Business models |
 
-| | short and medium-term changes | • Increased comfort for the inhabitants and users of the rehabilitated buildings.
-• Reduction of health problems caused by poor energy conditions in dwellings (fungus due to damp, colds and pneumonia in winter, heat stroke in summer, poor sleep quality due to high temperatures in summer).
-• Reduction of energy poverty.
-• Reducing the risk of fire from the use of braziers and cookers in low-income households.
-• Generation of direct local jobs in rehabilitation, as it is a sector that cannot be relocated. |
+| | short and medium-term changes | • Increased comfort for the inhabitants and users of the rehabilitated buildings. • Reduction of health problems caused by poor energy conditions in dwellings (fungus due to damp, colds and pneumonia in winter, heat stroke in summer, poor sleep quality due to high temperatures in summer). • Reduction of energy poverty. • Reducing the risk of fire from the use of braziers and cookers in low-income households. | • Generation of direct local jobs in rehabilitation, as it is a sector that cannot be relocated. |
 | --- | --- | --- |
-| Implementation | Agencies/persons responsible for implementation | **Barcelona City Council**
-• Urban Planning and Housing Management
-• Resource Management and Digital Transformation (RMDT)
-• Social Rights, Health and Community Management |
+| Implementation | Agencies/persons responsible for implementation | **Barcelona City Council** • Urban Planning and Housing Management • Resource Management and Digital Transformation (RMDT) | • Social Rights, Health and Community Management |
 | | Scale of action and target entities | Municipal, Metropolitan |
-| | Actors involved | • Public administration (all levels)
-• Financial institutions
-• Communities of neighbours and owners
-• Universities, research and innovation centres
-• Companies and operators in the construction sector |
-| | Comments on implementation | **The Barcelona Renewable 2030 Programme** incorporates a total of 30 basic annual indicators to monitor, of which some may be very relevant for the follow-up of this programme, such as the indicators of the rehabilitation axis:
-1.1 Public housing stock buildings rehabilitated /year
-1.1.1 Cost / public park building
-1.1.2 Annual public park investment
-1.2 High Complexity Farms rehabilitated /year
-1.3 Private farms rehabilitated/year
-1.4 Rehabilitated public housing stock/year
-1.5 Housing High Complexity Housing rehabilitated /year
-1.6 Private dwellings rehabilitated/year
-1.7 Accessible housing
-1.8 New social housing/year
-1.9 Persons benefiting from rehabilitation (men/women)
-Vulnerable households benefited (general, single-parent, over 65).
+| | Actors involved | • Public administration (all levels) • Financial institutions • Communities of neighbours and owners • Universities, research and innovation centres | • Companies and operators in the construction sector |
+| | Comments on implementation | **The Barcelona Renewable 2030 Programme** incorporates a total of 30 basic annual indicators to monitor, of which some may be very relevant for the follow-up of this programme, such as the indicators of the rehabilitation axis: 1.1 Public housing stock buildings rehabilitated /year 1.1.1 Cost / public park building 1.1.2 Annual public park investment 1.2 High Complexity Farms rehabilitated /year 1.3 Private farms rehabilitated/year 1.4 Rehabilitated public housing stock/year 1.5 Housing High Complexity Housing rehabilitated /year 1.6 Private dwellings rehabilitated/year 1.7 Accessible housing 1.8 New social housing/year 1.9 Persons benefiting from rehabilitation (men/women) Vulnerable households benefited (general, single-parent, over 65). |
 
 Although the **Renewable Barcelona 2030 Programme** is designed to make Barcelona a carbon neutral city by 2050, the following targets are set for 2030:
-(1) Reducing emissions and increasing the city’s energy |
-Climate City Contract. City of Barcelona
+| (1) Reducing emissions and increasing the city’s energy |
 
 |     | efficiency • Energy renovation of 20% of buildings over 40 years old by 2030. • Reduce CO2 emissions associated with DHW, heating and cooling consumption by 50% (1.9 Mtonnes of CO2). • Generate some 500,000 MWh/year with local renewable energies (500% increase in local generation). • To reduce CO2 emissions by 203,500 tonnes through local and renewable energy generation (mainly solar). • Reduce CO2 emissions by 41,000 Tn by energy rehabilitation of housing. • Reduce the energy demand of rehabilitated dwellings by 40%. • Reduce electricity consumption by 29.48%. • Reduce domestic drinking water consumption by up to 100 litres per day per inhabitant. (2) Improving citizens' living conditions and reducing urban inequality It is currently estimated that there are 134,567 homes in the city in need of refurbishment, which represents 19.7% of the total housing stock. The Plan seeks to increase the habitability of Barcelona's homes and neighbourhoods through: • Energy refurbish some 94,000 dwellings by 2030, at a rate of approximately 1,000 buildings and 10,400 dwellings refurbished per year. • Reduction of the energy demand of the refurbished fleet by 30-40%. • Improve the living conditions of some 27,500 people per year who benefit from rehabilitation. • Improve the conditions of access to and permanence in housing, increasing the stock of subsidised rental housing (in 2019 it represents 1.6% of the total) through: rehabilitation of heritage buildings, public purchase of housing and buildings, construction of housing in maritime containers (APROP) and generation of new housing in the fronts to be consolidated and industrial buildings to be reconverted in 22@. • To better respond to the demand for subsidised housing, which currently stands at 42,941 registered units, as well as to meet the residential needs of the ageing population and reduce households in fuel poverty. • Address the structural causes of the failure to rehabilitate and maintain buildings properly: rehabilitation of 100 buildings/year through the High Complexity Dwellings programme. • Sustainable redevelopment of 180 ha in the city |
 | --- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-
-5
-Climate City Contract. City of Barcelona
-6
 
 | Impacts and costs | Renewable energy generated (if applicable)   | Not applicable                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | ----------------- | -------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -2304,55 +1669,24 @@ Climate City Contract. City of Barcelona
 |                   | Type of action                               | The programme focuses on the commitment to innovation in energy efficiency solutions in the construction and use of buildings. Special consideration is given to the consolidation and growth of urban heating and cooling networks.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 |                   | Description of the action                    | The actions of the CEAP 2030 foreseen in this area are: - Action 4.5: Analyse how long it will take for new,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 
--
-
 |     | more environmentally responsible systems to become competitive with traditional systems and what the cost-benefit balance will be in economic, social and environmental terms. - Action 4.6: Study construction systems and solutions adapted to Barcelona to promote heat protection and passive cooling of buildings, and complement existing building regulations by establishing technical prescriptions and local regulations. Incorporate criteria for the protection of buildings against climatic events (such as windstorms). - Action 4.7: Develop a building energy ordinance to ensure that new or comprehensively refurbished buildings in the city have minimum energy demand and maximum generation. - Action 4.9: Develop and consolidate the existing heating and cooling networks in the city and define and promote a new network in the Sagrera area. The Barcelona Renewable 2030 Programme is developing a line of action in innovation in this field: • LAE 4 - Promote a city innovation ecosystem for fostering the economy for sustainability with the participation of established companies, startups and research centres/universities. - Instruments for intermediation in sustainability research at the Diagonal Besós UPC Campus. - Incentives for entrepreneurship and innovation. - Talent development and employment promotion. - Reuse and recycling of demolition materials. The last point of the Barcelona Renewable 2030 Programme refers to the reduction of Scope 3 emissions in the construction sector. It is a strategy that has yet to be developed, but which will work on the life cycle of buildings and the massive incorporation in construction of materials that can function as carbon sinks, especially wood. We plan to work on innovation projects with leading scientific and technological partners, such as the Institute of Construction Technologies of Catalonia (ITEC) and the Institute of Advanced Architecture of Catalonia (IAAC). The latter has presented the Timbered Path project (Horizon), with participation of the BIT Habitat Foundation, in which Barcelona will provide a demonstration of a wooden-structured building increase. Heating and cooling networks Barcelona City Council and Barcelona Sagrera Alta Velocidad will promote the development of a new centralised heating and cooling system for Sagrera |
 | --- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-
-Climate City Contract. City of Barcelona
-Climate City Contract. City of Barcelona
-8
 
 |     | Station and its surroundings. The initial project, with a planned investment of 21 million euros, proposes the deployment of a centralised air-conditioning network with maximum energy efficiency, taking advantage of the phreatic water of the Besòs River and solar energy. The new network, with an agreement with ADIF, will cover the Sagrera intermodal station, the entire Sagrera tertiary area and also the Prim urban development sector. The aim is to provide energy coverage for a total of 920,000 m2 and, in the future, in the new urban fabric with neighbourhood and productive uses planned for the site of the former Mercedes-Benz factory. The new plant will reduce annual CO2 emissions by the equivalent of taking 19,160 vehicles off the road and save 53,000 MWh/year in electricity consumption. Once the initial project has been configured, the dossier will be prepared for this heating and cooling network to be implemented, operated and maintained in a public-private partnership format. The urban heating and cooling networks are part of the city's commitment to energy efficiency. They are efficient systems for producing heat and cold using renewable or residual resources that represent 30% energy savings compared to conventional individual systems such as boilers or air conditioners. In addition, they represent advantages in terms of space and noise. In the case of the future network in La Sagrera, the production of heat and cold is foreseen by means of high-efficiency heat pumps using groundwater from the Besòs and solar energy. 85% of the energy needed for heating, cooling and domestic hot water can be self-generated from renewable energies and without impact on the environment. At the same time, Barcelona City Council is also planning a centralised heating and cooling installation in the La Model area, with a planned investment of 6.3 million euros. The project is part of the project to transform the former penitentiary centre into a large centre of facilities and green space on the left side of the Eixample. It is a centralised energy generation and distribution system to provide cooling and heating with maximum efficiency and joint operation. The project will be developed in phases and this new network will mean a saving of 560 MWh/year in electricity consumption and a reduction of 140 Tn/year in CO2 emissions. To meet the needs, a combined geothermal and aerothermal production system has been designed. Both systems would work in parallel and the thermal energy generated by the two heat pumps would be stored in tanks located in the machine room attached to the building. These technical spaces are expected to feed the entire network and generate the energy necessary to cover all the energy demands of the La |
 | --- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-Climate City Contract. City of Barcelona
-9
-
-| | | Model area.
-The third plant of the Districlima network in Poblenou and the new high-efficiency cooling plant of Econergies will consolidate and develop the Districlima and Ecoenergies Networks with the use of renewable or residual resources. These heating and cooling networks will reduce more than 50,000 tonnes of CO2 per year, equivalent to taking approximately 87,000 vehicles off the road. |
+| | | Model area. | The third plant of the Districlima network in Poblenou and the new high-efficiency cooling plant of Econergies will consolidate and develop the Districlima and Ecoenergies Networks with the use of renewable or residual resources. These heating and cooling networks will reduce more than 50,000 tonnes of CO2 per year, equivalent to taking approximately 87,000 vehicles off the road. |
 | --- | --- | --- |
 | Reference to the impact pathway | Subsector | Buildings and heating |
-| | Systemic lever | - Technology
-Business models
-Local development strategies |
-| | Short and medium-term changes | - Increased comfort for the inhabitants of the rehabilitated buildings.
-Reduction of health problems caused by poor energy conditions in dwellings (fungus due to damp, colds and pneumonia in winter, heat stroke in summer, poor sleep quality due to high temperatures in summer).
-Reduction of energy poverty.
-Reducing the risk of fire from the use of braziers and cookers in low-income households.
-Generation of direct local jobs in rehabilitation, as it is a sector that cannot be relocated. |
-| Implementation | Bodies/persons responsible for implementation | **Barcelona City Council**
-Urban Planning and Housing Management
-Area Management for Mobility, Infrastructures and Urban Services |
+| | Systemic lever | - Technology Business models | Local development strategies |
+| | Short and medium-term changes | - Increased comfort for the inhabitants of the rehabilitated buildings. Reduction of health problems caused by poor energy conditions in dwellings (fungus due to damp, colds and pneumonia in winter, heat stroke in summer, poor sleep quality due to high temperatures in summer). Reduction of energy poverty. Reducing the risk of fire from the use of braziers and cookers in low-income households. | Generation of direct local jobs in rehabilitation, as it is a sector that cannot be relocated. |
+| Implementation | Bodies/persons responsible for implementation | **Barcelona City Council** Urban Planning and Housing Management | Area Management for Mobility, Infrastructures and Urban Services |
 | | Scale of action and target entities | Municipal, Metropolitan |
-| | Actors involved | - Public administration (all levels)
-Districlima
-Tersa
-Universities, research and innovation centres
-Vocational training
-Rehabilitation operators: responsible for implementing the investments.
-Professional and sectoral associations related to rehabilitation: knowledge and professionalism in management and implementation. |
-| | Comments on implementation | Although the **Renewable Barcelona 2030 Programme** is designed to make Barcelona a carbon neutral city by 2050, the following targets are set within the framework of this Mission 2030 programme:
-(3) Reviving the economy and employment by focusing on a transition of the construction sector and renewable |
-
--
+| | Actors involved | - Public administration (all levels) Districlima Tersa Universities, research and innovation centres Vocational training Rehabilitation operators: responsible for implementing the investments. | Professional and sectoral associations related to rehabilitation: knowledge and professionalism in management and implementation. |
+| | Comments on implementation | Although the **Renewable Barcelona 2030 Programme** is designed to make Barcelona a carbon neutral city by 2050, the following targets are set within the framework of this Mission 2030 programme: | (3) Reviving the economy and employment by focusing on a transition of the construction sector and renewable |
 
 |     | energies. • Generate more than 2.5 billion GDP by creating accessible business and business conversion opportunities for SMEs and micro-enterprises in the city. • To induce more than 20,000 quality and accessible jobs for all groups of people who will have to reorient their professional careers due to the effects of the crisis on the labour market, to reconvert the construction sector and to generate a multiplier effect in rehabilitation. • Encourage the creation of 100 innovative companies in the sector. • Generate economic activity and employment. (4) Building governance between the different public and private actors in the metropolitan area. At the legal level, the objective of the Plan is to establish a closer and more dynamic framework of cooperation than the current one (the already effective Observatory of Rehabilitation of BCN OBRA) with the private entities that make up the value chain of the private rehabilitation sector, as well as a more agile system of relations with neighbourhood associations that improves the impact of public promotion of the private rehabilitation of housing and buildings. In the same way, "Barcelona Renovable" wants to advance in the line already opened by MES Barcelona for the creation of public-private investment funds dedicated primarily to the rehabilitation of existing buildings and secondarily to the generation of new affordable housing in the consolidated city. At the economic level, the Plan aims to channel the soft public financing offered by the ICO, IDEA, ICF, EIB, etc. to private residents' associations, with the guarantee of MITMA, MITECO, Generalitat, etc. (5) Position Barcelona as a benchmark for urban regeneration and rehabilitation and energy efficiency in the Mediterranean. Barcelona Renovable' seeks to promote Barcelona as a test bed for a new phase of renovation as a public policy, as an economic sector, as a source of employment and as an industrial activity. The combination of increased public spending in the form of non-refundable subsidies and soft financing, the development of industrial alliances between public companies (demand for industrialised building and housing renovation solutions) and private companies (suppliers of industrialised products and solutions), the union of public and private capital around investment vehicles such as the photovoltaic MES Barcelona and its subsequent evolution towards the renovation of existing |
 | --- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-
-Climate City Contract. City of Barcelona
-Climate City Contract. City of Barcelona
-1
 
 |                   |                                              | buildings and the generation of new affordable housing, as well as the expected tax reform on refurbishment, provide a privileged scenario for Barcelona to position itself at European level as a prescriber of technology and industrialised solutions for new construction and residential refurbishment adapted to the particular climatic and urban conditions of the south of the EU. Building on an already solid industrial, business, professional and administrative base and relying on the prestige of Catalan urban planning, Barcelona has the capacity to produce a major leap in GDP and employment around projects, solutions, technologies, companies and rehabilitation approaches generated in, by and for the Mediterranean basin. Likewise, the Barcelona Renewable 2030 Programme includes a total of 30 basic annual indicators to monitor, some of which may be very relevant for monitoring this programme, such as the indicators of the economic reactivation and transition axis: - 3.1 Employment generated jobs men/women/year - 3.2 Induced jobs/year - 3.3 Vocational retraining male/female/year - 3.4 Reduction in unemployment sector men/women/age/year - 3.5 Collaborating companies/year - 3.6 Hiring aid to boost business innovation/year - 3.7 Research projects -innovation /year |
 | ----------------- | -------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -2360,9 +1694,6 @@ Climate City Contract. City of Barcelona
 |                   | Energy removed/replaced, volume or fuel type | Earring                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |                   | Estimated GHG emission reductions (total)    | A specific calculation of the potential emission reduction of this programme is not yet available. For the building sector programmes as a whole, the Mission's target implies a 76% reduction in emissions (584 thousand MT) compared to the BAU 2030 scenario.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |                   | Total costs and costs per unit of CO2eq      | A first estimate of the cost of the planned package of measures in the buildings sector suggests the need for an additional investment of 8.155 billion euros (Cash Basis) up to 2030, of which 450 million euros will be provided by the City Council. In turn, these measures will result in operating cost savings of 4,624 million (Present Present Value) until 2050, as well as co-benefits of 251 million.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-
-Climate City Contract. City of Barcelona
-2
 
 | Action plan | Name of action programme  | 9. Energy Efficiency in Buildings Programme                                                                                                                                                                                                                                                                                                                                                    |
 | ----------- | ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -2374,8 +1705,7 @@ Digital platform and one-stop shop. It is foreseen that the Office, with a legal
 Digitalisation of processes: The aim is to facilitate the procedures, reviews and processes of rehabilitation projects entirely digitally, to know at all times where "your file" is and to simplify and speed up monitoring.
 Digitalisation of agents: The objective is to generate a virtual meeting space between agents, establishing contact between supply and demand on the network, specifically between communities of neighbours, owners, neighbours, companies that can facilitate rehabilitation, micro-enterprises, guilds, start-ups and property administrators.
 Digitise solutions and cases: The objective is to digitise good practices, solutions and case studies and generate a repository of useful information to make better projects, solve problems more agile and overcome obstacles.
-Active dissemination and capturing latent demand: The objective is to diversify the channels to reach the demand and actively approach it, adapting the communication strategy by combining general and specific media, targeting different neighbourhoods and situations. The aim is to ensure that the whole city is informed, to seek out and activate the objective demand. To achieve this, an active |
-Climate City Contract. City of Barcelona
+| Active dissemination and capturing latent demand: The objective is to diversify the channels to reach the demand and actively approach it, adapting the communication strategy by combining general and specific media, targeting different neighbourhoods and situations. The aim is to ensure that the whole city is informed, to seek out and activate the objective demand. To achieve this, an active |
 
 | Reference to the impact pathway | Subsector      | Buildings and heating |
 | ------------------------------- | -------------- | --------------------- |
@@ -2393,10 +1723,6 @@ Action 4.3: Generate communication and dissemination actions to promote energy s
 Action 4.4: Energy monitoring of buildings, housing and public facilities to facilitate knowledge of consumption and the implementation of energy improvements (on a continuous basis).
 Action 4.8: Ensure efficient energy management of municipal services associated with the water cycle and waste collection and management, and optimise energy management and supplies for public lighting and municipal buildings and facilities (including nursery and primary schools), to achieve 10% savings in electricity consumption in buildings.
 
-Climate City Contract. City of Barcelona
-Climate City Contract. City of Barcelona
-4
-
 |                |                                                 | Culture                       |
 | -------------- | ----------------------------------------------- | ----------------------------- |
 |                |                                                 | short and medium-term changes |
@@ -2404,29 +1730,11 @@ Climate City Contract. City of Barcelona
 
 • Urban Planning and Housing Management
 • Management of Economy and Economic Promotion
-• Mobility, Infrastructures and Urban Services Department |
+| • Mobility, Infrastructures and Urban Services Department |
 | | Scale of action and target entities | Municipal |
-| | Actors involved | • Barcelona City Council
-• Citizenship
-• The media
-• Tertiary sector and Business |
-| | Comments on implementation | **The Barcelona Renewable 2030 Programme**
-incorporates a total of 30 basic annual indicators to monitor, of which some may be very relevant for the follow-up of this programme, such as the indicators of the energy efficiency improvement axis:
-2.1 Reduction of the overall energy demand of refurbished buildings public park/year
-2.2 Reduction in overall energy demand of rehabilitated High Complexity Estates /year
-2.3 Reduction in overall energy demand of rehabilitated private properties/year
-2.4 Reduction in non-renewable primary energy consumption of rehabilitated public housing stock/year
-2.5 Reduction of non-renewable primary energy consumption High Complexity Farms rehabilitated /year
-2.6 Reduction in non-renewable primary energy consumption of rehabilitated private dwellings/year
-2.7 Reduction of households in fuel poverty detected in PAEs
-2.8 Buildings installation of photovoltaic panels /year
-2.9 Dwellings installation of photovoltaic panels/year
-2.10 Energy generated from renewable sources (by type)
-2.11 CO2 emission reduction (%, tonnes)
-2.12 Dwellings installation photovoltaic panels /year
-2.13 Energy generated from renewable sources (by type) |
+| | Actors involved | • Barcelona City Council • Citizenship • The media | • Tertiary sector and Business |
+| | Comments on implementation | **The Barcelona Renewable 2030 Programme** incorporates a total of 30 basic annual indicators to monitor, of which some may be very relevant for the follow-up of this programme, such as the indicators of the energy efficiency improvement axis: 2.1 Reduction of the overall energy demand of refurbished buildings public park/year 2.2 Reduction in overall energy demand of rehabilitated High Complexity Estates /year 2.3 Reduction in overall energy demand of rehabilitated private properties/year 2.4 Reduction in non-renewable primary energy consumption of rehabilitated public housing stock/year 2.5 Reduction of non-renewable primary energy consumption High Complexity Farms rehabilitated /year 2.6 Reduction in non-renewable primary energy consumption of rehabilitated private dwellings/year 2.7 Reduction of households in fuel poverty detected in PAEs 2.8 Buildings installation of photovoltaic panels /year 2.9 Dwellings installation of photovoltaic panels/year 2.10 Energy generated from renewable sources (by type) 2.11 CO2 emission reduction (%, tonnes) 2.12 Dwellings installation photovoltaic panels /year | 2.13 Energy generated from renewable sources (by type) |
 | Impacts and costs | Renewable energy generated (if | Not applicable |
-Climate City Contract. City of Barcelona
 
 |     | applicable)                                       |                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | --- | ------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -2442,13 +1750,9 @@ Climate City Contract. City of Barcelona
 |             | Description of the action    | Although the specific actions referring to municipal buildings will be included in the Programme for a Carbon Neutral City Council (in preparation), it should be noted that the ultimate objective of this Programme is to achieve the transition to a sustainable energy model based on the consumption of 100% renewable energy by municipal buildings, maximising self-consumption. |
 
 Barcelona Energia, the Barcelona metropolitan area's public utility company that supplies electricity to Barcelona City Council's municipal buildings and facilities, plays an essential role in achieving this goal. Its aim is to promote a new, more sustainable energy model based on efficiency, renewable energy generation and citizen participation. Barcelona Energia, managed by TERSA, sells 100% renewable energy, guaranteeing citizens a service of proximity and transparency.
-For its part, TERSA carries out the integral management |
+| For its part, TERSA carries out the integral management |
 
-5
-
--
-
-| | | of the Photovoltaic Solar Energy Installations (IESFV) of municipal buildings and facilities in the city of Barcelona and the metropolitan area.
+| | | of the Photovoltaic Solar Energy Installations (IESFV) of municipal buildings and facilities in the city of Barcelona and the metropolitan area. |
 
 It is also worth highlighting the actions of the CEAP 2030 planned in this area:
 Action 2.1: Promote and prioritise the self-production of energy from renewable sources and make it accessible also to vulnerable households.
@@ -2456,28 +1760,17 @@ Action 2.3: Deploy the municipal energy operator to promote the production of re
 Action 2.4: Create a municipal energy trading company to serve all citizens. In existence since 2019
 Action 5.1: Develop ten green roofs and façades on municipal buildings to set an example and promote, through agreements with the private sector, the development of fifty productive roofs on buildings, including green, energy, cistern or reflective roofs by means of grants, subsidies, competitions and other mechanisms. Publicity actions will be carried out to publicise them.
 Action 9.1: Accelerate the implementation of renewable generation in municipal buildings (bressol schools, cultural and sports facilities, etc.) and in public spaces by adding 6 MWp of photovoltaic generation to the municipal park by 2025.
-Action 9.2: Evaluate the incorporation of generation in other elements of public space, such as paving of squares, roads, etc. |
+| Action 9.2: Evaluate the incorporation of generation in other elements of public space, such as paving of squares, roads, etc. |
 | --- | --- | --- |
 | Reference to the impact pathway | Subsector | Electricity |
-| | Systemic lever | • Finance (resources €)
-• Technology
-• Capacity and capacity building |
-| | short and medium-term changes | • Reducing dependence on imported fossil fuels and increasing energy sovereignty
-• Democratisation of energy infrastructures, by moving from a centralised production model based on large installations owned by large companies to a decentralised generation model, in which the owners can be the consumers themselves.
-• Generation of direct local jobs in the installation and maintenance of photovoltaic systems and other renewable sources (such as solar thermal and geothermal). |
+| | Systemic lever | • Finance (resources €) • Technology | • Capacity and capacity building |
+| | short and medium-term changes | • Reducing dependence on imported fossil fuels and increasing energy sovereignty • Democratisation of energy infrastructures, by moving from a centralised production model based on large installations owned by large companies to a decentralised generation model, in which the owners can be the consumers themselves. | • Generation of direct local jobs in the installation and maintenance of photovoltaic systems and other renewable sources (such as solar thermal and geothermal). |
 | Implementation | Bodies/persons | Barcelona City Council |
 
-Climate City Contract. City of Barcelona
-Climate City Contract. City of Barcelona
-7
-
-| | responsible for implementation | • Mobility, Infrastructures and Urban Services Department
-• Urban Planning and Housing Management
-• Barcelona Energy Agency |
+| | responsible for implementation | • Mobility, Infrastructures and Urban Services Department • Urban Planning and Housing Management | • Barcelona Energy Agency |
 | --- | --- | --- |
 | | Scale of action and target entities | Municipal |
-| | Actors involved | • Barcelona Energia, metropolitan electricity operator
-• Barcelona Energy Agency |
+| | Actors involved | • Barcelona Energia, metropolitan electricity operator | • Barcelona Energy Agency |
 | | Comments on implementation | |
 | Impacts and costs | Renewable energy generated (if applicable) | To achieve near-complete decarbonisation of electricity supply will require a massive expansion of renewable energy generation capacities, both inside and outside the city. In terms of local generation, the forecast is to multiply the CEAP forecasts by 1.8 times, to reach 1,080 MWp of installed solar photovoltaic capacity in the city. Barcelona's 2030 Agenda sets the goals of achieving 6.5% or more of the energy consumed being locally produced renewable energy (1.18% in 2020) and 50% or more of the electricity consumed being of renewable origin (20.2% in 2020). |
 | | Energy removed/replaced, volume or fuel type | Pending |
@@ -2486,8 +1779,6 @@ Climate City Contract. City of Barcelona
 | Action plan | Name of the action programme | 11. Renewable energy generation programme in non-municipal residential, service and industrial buildings. |
 | --- | --- | --- |
 | | Type of action | Programme to promote the implementation of photovoltaic generation in residential buildings and in large non-municipal spaces and areas (industrial roofs, large tertiary and logistics facilities, including the Port), offering facilities for implementation and promoting |
-Climate City Contract. City of Barcelona
-8
 
 |     |                           | economic incentives such as subsidies, tax rebates (IBI, ICIO, IAE), financing, as well as collaboration mechanisms (energy communities).                                                                                                                                                                                  |
 | --- | ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -2496,34 +1787,15 @@ Climate City Contract. City of Barcelona
 Action 2.1: Promote and prioritise the self-production of energy from renewable sources and make it accessible also to vulnerable households.
 Action 5.2: Fill the city's rooftops with solar installations, offering facilities for implementation (reinterpretation of regulations and streamlining of procedures) and promoting economic incentives such as subsidies, tax rebates (IBI, ICIO, IAE) or other financing mechanisms, in order to incorporate 10 MWp of photovoltaic energy and 7 MW of solar thermal energy in private residential and tertiary buildings by 2025.
 Action 5.3: Launch a process to ensure that large urban spaces (industrial roofs, large tertiary buildings and pergolas or structures in industrial and logistic environments) have up to 25 MWp of photovoltaic energy deployed by 2025.
-Action 10.25: Implement renewable generation systems in the port of Barcelona (42 MWp by 2030) and at Barcelona airport, on the roofs of buildings and with pergolas in car parks (40 MWp by 2030). |
+| Action 10.25: Implement renewable generation systems in the port of Barcelona (42 MWp by 2030) and at Barcelona airport, on the roofs of buildings and with pergolas in car parks (40 MWp by 2030). |
 | Reference to the impact pathway | Subsector | Electricity |
-| | Systemic lever | • Finance (resources €)
-• Technology
-• Capacity and capacity building
-• Culture
-• Social innovation
-• Commitment and participation |
-| | short and medium-term changes | • Reducing dependence on imported fossil fuels and increasing energy sovereignty
-• Democratisation of energy infrastructures, by moving from a centralised production model based on large installations owned by large companies to a decentralised generation model, in which the owners can be the consumers themselves.
-• Generation of direct local jobs in the installation and maintenance of photovoltaic systems and other renewable sources (such as solar thermal and geothermal). |
-Climate City Contract. City of Barcelona
-9
+| | Systemic lever | • Finance (resources €) • Technology • Capacity and capacity building • Culture • Social innovation | • Commitment and participation |
+| | short and medium-term changes | • Reducing dependence on imported fossil fuels and increasing energy sovereignty • Democratisation of energy infrastructures, by moving from a centralised production model based on large installations owned by large companies to a decentralised generation model, in which the owners can be the consumers themselves. | • Generation of direct local jobs in the installation and maintenance of photovoltaic systems and other renewable sources (such as solar thermal and geothermal). |
 
-| Implementation | Agencies/persons responsible for implementation | Barcelona City Council
-• Management of Economy and Economic Promotion
-• Mobility, Infrastructures and Urban Services Department
-• Urban Planning and Housing Management
-• Barcelona Energy Agency |
+| Implementation | Agencies/persons responsible for implementation | Barcelona City Council • Management of Economy and Economic Promotion • Mobility, Infrastructures and Urban Services Department • Urban Planning and Housing Management | • Barcelona Energy Agency |
 | --- | --- | --- |
 | | Scale of action and target entities | Municipal |
-| | Actors involved | • Public Administrations
-• Citizens and individuals
-• Energy communities
-• Port of Barcelona
-• AENA
-• Zona Franca Consortium, Bon Pastor industrial estate, industries and operators
-• Energy Research Institute of Catalonia (IREC) |
+| | Actors involved | • Public Administrations • Citizens and individuals • Energy communities • Port of Barcelona • AENA • Zona Franca Consortium, Bon Pastor industrial estate, industries and operators | • Energy Research Institute of Catalonia (IREC) |
 | | Comments on implementation | |
 | Impacts and costs | Renewable energy generated (if applicable) | To achieve near-complete decarbonisation of electricity supply will require a massive expansion of renewable energy generation capacities, both inside and outside the city. In terms of local generation, a 1.8-fold increase of 1,080 MWp of installed solar photovoltaic capacity in the city is envisaged. |
 | | Energy removed/replaced, volume or fuel type | Pending |
@@ -2532,8 +1804,6 @@ Climate City Contract. City of Barcelona
 | Action plan | Name of the action programme | 12. Lighting programme for public spaces and municipal buildings |
 | --- | --- | --- |
 | | Type of action | Programme for the optimisation of energy management and supplies for public lighting and municipal buildings |
-Climate City Contract. City of Barcelona
-0
 
 |     |                           | and facilities (including the LED renovation plan). The aim is to try to go a step further and adapt lighting to the urban reality of today's city, optimising energy consumption and improving the quality of public spaces, always taking into account the regulatory framework on energy efficiency.                                                                                                                                                                                                           |
 | --- | ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -2545,9 +1815,7 @@ The city of Barcelona has more than 146,000 lighting points, a patchwork of unev
 
 The municipal services are working to generate a nighttime image of the city that seeks a balance between functional and aesthetic order, incorporating new lighting technology, such as LED technology, but also management elements such as regulation, the possibility of remote control and, in general, new technological solutions that enable progress towards a smart city, both in streets, avenues and squares and in the lighting of buildings or singular elements.
 
-The effort to optimise the energy management of public lighting must continue to be updated and adapted to technological improvements as they occur. In this regard, it is worth noting the importance of the Plan for a Carbon Neutral City Council, which is currently being drawn up. This Plan will focus on energy optimisation and improved management of lighting in municipal buildings and facilities. |
-Climate City Contract. City of Barcelona
-1
+| The effort to optimise the energy management of public lighting must continue to be updated and adapted to technological improvements as they occur. In this regard, it is worth noting the importance of the Plan for a Carbon Neutral City Council, which is currently being drawn up. This Plan will focus on energy optimisation and improved management of lighting in municipal buildings and facilities. |
 
 |                                 |                                                 | The CEAP 2030 refers in relation to lighting by expressing the need to ensure the efficient energy management of municipal services associated with the water cycle and waste collection and management, and to optimise the energy management and supplies of public lighting and municipal buildings and facilities (including nursery and primary schools), to achieve a 10% saving in electricity consumption in the buildings concerned. (Action 4.8). |
 | ------------------------------- | ----------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -2558,16 +1826,14 @@ Climate City Contract. City of Barcelona
 | Implementation                  | Agencies/persons responsible for implementation | Barcelona City Council                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 
 • Resource Management and Digital Transformation (RMDT)
-• Mobility, Infrastructures and Urban Services Department |
+| • Mobility, Infrastructures and Urban Services Department |
 | | Scale of action and target entities | Municipal |
-| | Actors involved | • Municipal facilities and premises
-• Conservation and maintenance contract for the city's public lighting system |
+| | Actors involved | • Municipal facilities and premises | • Conservation and maintenance contract for the city's public lighting system |
 | | Comments on implementation | |
 | Impacts and costs | Renewable energy generated (if applicable) | Not applicable |
 | | Energy removed/replaced, volume or fuel type | The estimated saving is 5% of the contracted power, about 3,620 megawatt hours per year, equivalent to the electricity consumption of about 1,550 families. |
 | | Estimated GHG emission reductions (total) | Pending |
-| | Total costs and costs per unit of CO2eq | The cost of the Comprehensive Lighting Renewal Plan 2018-2020 was 18 million euros. |
-WASTE AND OTHER
+| | Total costs and costs per unit of CO2eq | The cost of the Comprehensive Lighting Renewal Plan 2018-2020 was 18 million euros. | WASTE AND OTHER |
 
 | Action plan                     | Name of the action programme  | 13. Low-emission municipal waste management programme                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | ------------------------------- | ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -2577,29 +1843,19 @@ WASTE AND OTHER
 |                                 | Systemic lever                | • Finance (resources €) • Technology • Culture • Commitment and participation                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 |                                 | short and medium-term changes | New contract for cleaning and waste collection (2022-2030): • Improvement of air quality, with less polluting vehicles and prioritisation of electric vehicles, which will mean an increase from 20% to 66% of electric                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 
-Climate City Contract. City of Barcelona
-Climate City Contract. City of Barcelona
-3
-
-| | | vehicles.
-• More acoustic comfort thanks to the electrification of the fleet and soundproofed equipment to reduce service noise levels.
-• The new waste collection vehicles also incorporate new technological elements that allow better monitoring and control of the entire process. Therefore, more and better information will be available to be able to make decisions and optimise the service in each territory.
-• Safety improvements must also be taken into account. The fleet of vehicles incorporates a technological driving assistance system.
+| | | vehicles. • More acoustic comfort thanks to the electrification of the fleet and soundproofed equipment to reduce service noise levels. • The new waste collection vehicles also incorporate new technological elements that allow better monitoring and control of the entire process. Therefore, more and better information will be available to be able to make decisions and optimise the service in each territory. • Safety improvements must also be taken into account. The fleet of vehicles incorporates a technological driving assistance system. |
 
 | In the short term (2025), this programme should also promote the optimisation of transport routes in order to reduce the number of people travelling by road. (action 14.6 CEAP) and in the long term (2030) Ensure energy efficient management of municipal services associated with waste collection and management (action 4.8 CEAP) |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- | -------------------------- |
 | Implementation                                                                                                                                                                                                                                                                                                                          | Agencies/persons responsible for implementation | **Barcelona City Council** |
 
 • Urban Planning and Housing Management and Mobility, Infrastructures and Urban Services Management
-• Barcelona Metropolitan Area (AMB) |
+| • Barcelona Metropolitan Area (AMB) |
 | | Scale of action and target entities | Municipal, Metropolitan |
-| | Actors involved | • Barcelona City Council
-• Barcelona Metropolitan Area (AMB)
-• Companies contracted for the waste collection, treatment and management service |
+| | Actors involved | • Barcelona City Council • Barcelona Metropolitan Area (AMB) | • Companies contracted for the waste collection, treatment and management service |
 | | Comments on implementation | The Barcelona Zero Waste Plan 2021-2027 sets a target of raising separate collection to 67.0% of waste by 2027. This target is slightly more ambitious than the target set in the CEAP 2030 in its action 14.2 (65% by 2030). |
 | Impacts and costs | Renewable energy generated (if applicable) | Not applicable |
 | | Energy removed/replaced, fuel volume or fuel type | Pending |
-Climate City Contract. City of Barcelona
 
 | Action plan | Name of the action programme | 14. Waste prevention and reduction programme                                                                                                                                                                                                                                                                                                                            |
 | ----------- | ---------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -2623,50 +1879,16 @@ Aligned with action 14.8 of the CEAP 2030.
 Aligned with action 13.8 of the CEAP 2030.
 • Governance
 • Research and innovation.
-Aligned with action 13.12 of the CEAP 2030, which consists of analysing the carbon footprint of different consumption and production in Barcelona. |
-Climate City Contract. City of Barcelona
+| Aligned with action 13.12 of the CEAP 2030, which consists of analysing the carbon footprint of different consumption and production in Barcelona. |
 
-| | | Cleaning up public space
-• Preventing city littering | |
+| | | Cleaning up public space | • Preventing city littering | |
 | --- | --- | --- | --- |
 | Reference to the impact pathway | Line of action | Waste (Scope 3 emissions) | |
-| | Systemic lever | • Finance (resources €)
-• Social innovation
-• Culture
-• Commitment and participation
-• Business models
-• Local development strategies | |
-| | Comments on implementation | Reference 2019
-• Municipal waste 1.34 kg/inhab/day
-• Waste fraction 0.82 kg/inhab/day
-• Reduction of food waste (compared to 2020) 5,963 t
-• Municipal waste for PxR and reuse 0.31%
-Municipal waste for PxR and reuse 0.31%
-Municipal waste for PxR and reuse 0.31
-• Selective collection 38.40%.
-• Improper use of organic fraction 16.14%.
-• Separate collection of textiles 6.40%.
-• Increase in citizen participation 2,927,862 participants | Target 2027
-• Municipal waste 1.17 kg/inhab/day
-• Waste fraction 0.38 kg/inhab/day
-• Reducing food waste 35% (3.876 t)
-• Municipal waste destined for PxR and reuse 7% Municipal waste for PxR and reuse 7% Municipal waste for PxR and reuse
-• Selective collection 67.0% Selective collection 67.0%
-• Selective collection 67.0% Selective collection 67.0%
-• Selective collection 67.0% Selective collection
-• Improper use of the organic fraction 8%.
-• Separate collection of textiles 15%.
-• Increased citizen participation by 10% to 3,220,648 participants |
-| Implementation | Bodies/persons responsible for implementation | Barcelona City Council
-• Management of Economy and Economic Promotion
-• Mobility, Infrastructures and Urban Services Department
-• Barcelona Metropolitan Area (AMB) | |
+| | Systemic lever | • Finance (resources €) • Social innovation • Culture • Commitment and participation • Business models | • Local development strategies | |
+| | Comments on implementation | Reference 2019 • Municipal waste 1.34 kg/inhab/day • Waste fraction 0.82 kg/inhab/day • Reduction of food waste (compared to 2020) 5,963 t • Municipal waste for PxR and reuse 0.31% Municipal waste for PxR and reuse 0.31% Municipal waste for PxR and reuse 0.31 • Selective collection 38.40%. • Improper use of organic fraction 16.14%. • Separate collection of textiles 6.40%. • Increase in citizen participation 2,927,862 participants | Target 2027 • Municipal waste 1.17 kg/inhab/day • Waste fraction 0.38 kg/inhab/day • Reducing food waste 35% (3.876 t) • Municipal waste destined for PxR and reuse 7% Municipal waste for PxR and reuse 7% Municipal waste for PxR and reuse • Selective collection 67.0% Selective collection 67.0% • Selective collection 67.0% Selective collection 67.0% • Selective collection 67.0% Selective collection • Improper use of the organic fraction 8%. • Separate collection of textiles 15%. | • Increased citizen participation by 10% to 3,220,648 participants |
+| Implementation | Bodies/persons responsible for implementation | Barcelona City Council • Management of Economy and Economic Promotion • Mobility, Infrastructures and Urban Services Department | • Barcelona Metropolitan Area (AMB) | |
 | | Scale of action and target entities | Municipal, Metropolitan | |
 | | Actors involved | • Barcelona City Council | |
-
-5
-
--
 
 |                   |                                                   | Barcelona Metropolitan Area (AMB) • Generalitat de Catalunya (regulation) • Trade, tourism and catering sectors • Trade fairs, congresses • Research Centres and Universities • Schools and educational centres • Citizen participation (DECIDIM platform)                                                                                                                                                          |
 | ----------------- | ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -2680,46 +1902,22 @@ Municipal waste for PxR and reuse 0.31
 |                   | Type of action                                    | Action that consists of making maximum and sustainable use of the alternative water resources existing in Barcelona to reduce the consumption of drinking water by public services, especially municipal services, in order to meet close to 100% of the potential demand. The main municipal management instrument for developing this objective is the Barcelona Alternative Water Resources Plan 2020 (PLARHAB). |
 |                   | Description of the action                         | The Barcelona 2020 Alternative Water Resources Plan (PLARHAB) aims to move towards sustainable and rational water management by focusing on saving                                                                                                                                                                                                                                                                  |
 
-Climate City Contract. City of Barcelona
-Climate City Contract. City of Barcelona
-7
-
 |     | drinking water, optimising it and replacing it with alternative water resources. The plan identifies the existing water resources and their possible uses in accordance with their characteristics (chemical and biological), sizes up the potential demand and foresees the city infrastructures necessary for their use. The plan provides a global map of alternative resources to drinking water in Barcelona and gives visibility to the water network throughout the city. It also guarantees synergies between the different municipal and private operators involved in the city to improve supplies. Furthermore, PLARHAB is much more than a set of techniques that serve to obtain more resources or save water. The PLARHAB is aligned with the City of Barcelona's Climate Plan 2018-2030 and is coherent and consistent with the four fundamental principles of good water management: - Sustainability, with the maintenance of healthy ecosystems that provide safe and healthy water supplies. - Prioritisation of local resources with local management. - Efficiency, obtaining water at the best possible cost and with the best technologies that offer tangible environmental benefits. - Active stakeholder participation, with bottom-up planning to give legitimacy to the measures taken. The PLARHAB is developed in six lines of action, which promote the use of: • Line 1. Groundwater: Analyse the state and operation of existing facilities, define the improvement actions necessary to provide service to users in optimum conditions and plan actions to extend the groundwater network to meet the demands for alternative water resources for urban services and public facilities in the city. • Line 2. Reclaimed water: Analyse the feasibility of using reclaimed water and promote its use for uses that can be covered by this resource. • Line 3. Grey water: Promote the use of grey water in new buildings and equipment to save drinking water. • Line 4. Roof rainwater: Promote the use of roof rainwater for irrigation of green spaces linked to buildings and other compatible uses. • Line 5. Rainwater from headwaters: Promote the use of rainwater generated at the headwaters of the Collserola torrent basins as a complementary resource. • Line 6. Rainwater in the public space through SUDS: Promote the management and treatment at source of |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
--
-
-| | | rainwater in the urban area of the city through SUDS (sustainable urban drainage systems).
-The actions related to selective waste collection of the Zero Waste Plan are aligned with the following actions of the CEAP 2030:
-Action 4.8 |
+| | | rainwater in the urban area of the city through SUDS (sustainable urban drainage systems). The actions related to selective waste collection of the Zero Waste Plan are aligned with the following actions of the CEAP 2030: | Action 4.8 |
 | --- | --- | --- |
 | Reference to the impact pathway | Subsector | Waste and other |
-| | Systemic lever | • Finance (resources €)
-• Technology |
-| | short and medium-term changes | • Water cost savings
-• Preventing periods of drought
-• Environmental benefits |
-| Implementation | Agencies/persons responsible for implementation | Barcelona City Council
-• Mobility, Infrastructures and Urban Services Department
-• Barcelona Ciclo del Agua, S.A. (BCASA) |
+| | Systemic lever | • Finance (resources €) | • Technology |
+| | short and medium-term changes | • Water cost savings • Preventing periods of drought | • Environmental benefits |
+| Implementation | Agencies/persons responsible for implementation | Barcelona City Council • Mobility, Infrastructures and Urban Services Department | • Barcelona Ciclo del Agua, S.A. (BCASA) |
 | | Scale of action and target entities | Municipal |
-| | Actors involved | • Barcelona City Council (BCASA)
-• Aigües de Barcelona, the public-private company responsible for the management of the integral water cycle in the metropolitan area of Barcelona.
-• Consumers
-• Construction sector
-• Research centres |
-| | Comments on implementation | Goals 2030 Pla Climate:
-To bring domestic drinking water consumption below 100 litres/inhabitant/day.
-Bring urban water consumption below 150 litres/inhabitant/day.
-Reduce the consumption of mains water by municipal services by 10 Hm3 per year: below 4.48 million m3 of water consumed in 2030.
+| | Actors involved | • Barcelona City Council (BCASA) • Aigües de Barcelona, the public-private company responsible for the management of the integral water cycle in the metropolitan area of Barcelona. • Consumers • Construction sector | • Research centres |
+| | Comments on implementation | Goals 2030 Pla Climate: To bring domestic drinking water consumption below 100 litres/inhabitant/day. Bring urban water consumption below 150 litres/inhabitant/day. Reduce the consumption of mains water by municipal services by 10 Hm3 per year: below 4.48 million m3 of water consumed in 2030. |
 
-The PLARHAB estimates that the current municipal consumption of drinking water that could be replaced by alternative water resources (AWR) is about 3.6 hm3/year. Taking into account the consumption currently served with groundwater, and the expected consumption of planned municipal services and facilities, the total potential demand for RHA will be 5.69 hm3/year. In the event that 100% of the potential municipal demand is covered with RHA, the sustainability index of the water consumption of the City Council would reach 73.66% (calculated according |
+| The PLARHAB estimates that the current municipal consumption of drinking water that could be replaced by alternative water resources (AWR) is about 3.6 hm3/year. Taking into account the consumption currently served with groundwater, and the expected consumption of planned municipal services and facilities, the total potential demand for RHA will be 5.69 hm3/year. In the event that 100% of the potential municipal demand is covered with RHA, the sustainability index of the water consumption of the City Council would reach 73.66% (calculated according |
 
-Climate City Contract. City of Barcelona
-Climate City Contract. City of Barcelona
-9
-
-| | | to current consumption). Thus, the weight of municipal drinking water consumption in relation to the city's total consumption would drop from 6% to around 2.4% (assuming that drinking water consumption in the rest of the city remains stable).
+| | | to current consumption). Thus, the weight of municipal drinking water consumption in relation to the city's total consumption would drop from 6% to around 2.4% (assuming that drinking water consumption in the rest of the city remains stable). |
 
 The actions defined in the PLARHAB will allow an increase in groundwater consumption of 1.5 hm3/year related to current consumption. This will be translated into savings in drinking water. In this scenario, the sustainability index of municipal services would double from the current 16.36% to 35.12%.
 
@@ -2732,9 +1930,7 @@ The actions defined in the PLARHAB will allow an increase in groundwater consump
 
 • Line 1: The estimated budget for the development of the groundwater network foreseen in the plan is €87.5 million.
 • Line 2: The estimated budget for the new reclaimed water system for the Prat Vermell - Can Batlló Marina is €6 million.
-• Line 3: The application of greywater systems is considered feasible mainly for new buildings or complete renovations because of the need to install a separate network. In the case of existing buildings, the installation is costly, whereas during the construction of the building, the added cost can be considered marginal. The investment and maintenance costs per dwelling depend on the number of dwellings in the building. As far as the amortisation is concerned, it is considered feasible in buildings of 16 dwellings or more, where the |
-
--
+| • Line 3: The application of greywater systems is considered feasible mainly for new buildings or complete renovations because of the need to install a separate network. In the case of existing buildings, the installation is costly, whereas during the construction of the building, the added cost can be considered marginal. The investment and maintenance costs per dwelling depend on the number of dwellings in the building. As far as the amortisation is concerned, it is considered feasible in buildings of 16 dwellings or more, where the |
 
 |             |                              | investment is recovered in less than 10 years. • Line 4: Estimated investment cost in a building already constructed: €1,100/m3 tank. In a newly constructed building: 780 €/m3 tank. • Line 5: The estimated total investment expenditure for the implementation of the ten proposed holding tanks amounts to €25 million. • Line 6: The estimated investment to implement the SUDS proposed in this action line of the plan depends on the type of stormwater management to be done.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | ----------- | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -2743,16 +1939,8 @@ The actions defined in the PLARHAB will allow an increase in groundwater consump
 |             | Type of action               | Despite the fact that the city's industrial activity is responsible for 8.13% of the city's GHG emissions (2019), it is one of the key sectors for accompanying companies in the transformation of the city's production model as a whole towards a more sustainable and competitive one. Thus, the modernisation and decarbonisation of industries by adapting the business structure to a more sustainable model, ensuring more environmentally friendly production cycles in order to optimise resources, either by extending the life cycle of products or by converting waste into raw material for a next use, will be one of the most important focuses of action in the coming years.                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |             | Description of the action    | The Barcelona Green Deal is the urban and economic agenda to make, over the next ten years, a more competitive, sustainable and equitable city, adapted to challenges such as the ecological and digital transitions, which have been accelerated by the pandemic. In the field of green reindustrialisation, the main measures and strategic development areas are: • The area where the Besós river and the ring road intersect will become a strategic space in the coming years to include green economy activities such as renewable energies, proximity logistics or industry 4.0, etc. • At the other end of the city, Montjuïc will become a hub for innovation, sport and technology. At the same time, an urban planning modification will seek to improve the area's relationship with the rest of the city and reinforce its true character as an urban park, taking advantage of both the transformation of the Ronda del Litoral, between the Zona Franca and the Carbonera, and the Fira area. • The spaces occupied by the Fira will also be reformulated, to introduce new uses that bring more added value to the neighbourhoods nearby; the Zona |
 
-Climate City Contract. City of Barcelona
-
--
-
 |     |     | Franca, the city's great productive land asset, and the Marina, which is the great reserve of residential land and could accommodate up to 28,000 more inhabitants. The development of the economic strategy envisaged in the Barcelona Green Deal is reflected in the Roadmap of the economy for sustainability in Barcelona 2030, which involves a commitment to facilitate the ecological transition through support for economic sectors in order to generate innovative solutions and take advantage of new business opportunities. The actions envisaged in this roadmap in the industrial sphere are as follows: • 01. Acquisition of warehouses in Bon Pastor and promotion of tractor projects: Purchase of an industrial building in the Bon Pastor area to make the space available and attract and develop tractor projects linked to the promotion of the circular and sustainable economy and Industry 4.0, thus improving the competitiveness of small and medium-sized enterprises in the city's economic and business ecosystem. • 02. Circular Economy Programme for industrial companies: Action that accompanies industrial companies in the Besòs Axis in the transition towards a circular economy. Thus, solutions are identified, in the field of both the production process and the business model, to improve efficiency in the use of resources and to respond to the sustainable challenges that arise. The accompaniment is carried out by experts who will help to analyse the situation of the company, as well as to define solutions and projects to implement. • 03. Responsible Business Programme: Programme that aims to promote and facilitate the integration of social responsibility into the business strategy of participating companies, based on an action plan that incorporates this perspective in all areas of the company to promote a balance between economic, environmental and social requirements. • 04. Innofood Programme: Programme to support the creation of innovative companies that improve any part of the food sector value chain to mitigate the effects of the climate crisis, reduce food waste and preserve biodiversity. Thus, it involves management and business plan training on food sustainability or distribution issues. There are also sectoral sessions, networking with entrepreneurial experiences and personalised support for the participating projects. • 05. Foodback food recovery centre: Mercabarna sets up the Foodback food recovery centre, a new |
 | --- | --- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-
-Climate City Contract. City of Barcelona
-
--
 
 system for managing organic vegetable matter outside the marketing circuit, with the aim of providing a second life for surplus fruit and vegetables. Located in Mercabarna, it is a key facility in the new organic matter management system, where 100% of the recovered product is distributed and technological innovation projects are promoted for greater use.
 
@@ -2762,10 +1950,6 @@ system for managing organic vegetable matter outside the marketing circuit, with
 9.  Implementation of packaging pools in wholesale markets: Action for the implementation of packaging pools in wholesale markets to be able to control the circulation of reusable packaging used in commercial transactions and facilitate their reuse. The new packaging recovery system for the fruit and vegetable sector is planned for 2022, and the packaging pool for the fish sector for 2023.
 10. Collection and recycling of white and grey line waste Collaboration agreement between Barcelona Activa and Andròmines, a social insertion association dedicated to transport, establishing a collection and recycling service for white and grey line waste in the city of Barcelona. This initiative enables the collection of waste electrical and electronic equipment, as well as waste derived from ICTs.
 11. Agreement for the reuse of IT equipment with the eReuse Network Collaboration agreement between the Municipal Institute of Information Technology and the Pangea association, to
-
-Climate City Contract. City of Barcelona
-
--
 
 establish a circuit for the exchange, refurbishment and reuse of IT equipment between 2018 and 2022. The eReuse Network is responsible, among other actions, for the reuse of equipment to be given to families in vulnerable situations and social spaces.
 
@@ -2777,10 +1961,6 @@ Finally, it should be noted that this detailed action plan in the industrial fie
 
 In this regard, the involvement of the General State Administration and the Port of Barcelona will be required, on the one hand, to work towards a taxation system with a strong environmental focus on ships in the Port of Barcelona and the aeronautical sector (action 10.24). Likewise, and in collaboration with the Government of the Generalitat de Catalunya and the Metropolitan Government, the CEAP 2030 establishes the need to promote voluntary agreements by large
 
-Climate City Contract. City of Barcelona
-
--
-
 |                                 |                | companies to reduce greenhouse gas emissions (Action 12.10), to advise companies to facilitate the reduction of waste and emissions, both in the planning and implementation of improvements (Action 12.14), and to study options for improving environmental taxation for "low-carbon" companies (Action 12.15). Finally, voluntary agreements with the private sector to establish best practice in reducing packaging, waste, single-use plastics, etc. will also be essential (action 14.7). |
 | ------------------------------- | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Reference to the impact pathway | Subsector      | Waste and other                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
@@ -2788,27 +1968,15 @@ Climate City Contract. City of Barcelona
 
 • Business models
 • Local development strategies
-• Capacity and capacity building |
+| • Capacity and capacity building |
 | | short and medium-term changes | |
-| Implementation | Agencies/persons responsible for implementation | Barcelona City Council
-• Management of Economy and Economic Promotion
-• Barcelona Activa, SA |
+| Implementation | Agencies/persons responsible for implementation | Barcelona City Council • Management of Economy and Economic Promotion | • Barcelona Activa, SA |
 | | Scale of action and target entities | Municipal, Metropolitan |
-| | Actors involved | • Barcelona Metropolitan Area (AMB)
-• Generalitat de Catalunya
-• Barcelona Free Trade Zone Consortium
-• Universities
-• BCN Vocational Training Foundation
-• Trade unions
-• Companies and Business Associations |
+| | Actors involved | • Barcelona Metropolitan Area (AMB) • Generalitat de Catalunya • Barcelona Free Trade Zone Consortium • Universities • BCN Vocational Training Foundation • Trade unions | • Companies and Business Associations |
 | | Comments on implementation | The Barcelona Green Deal foresees the generation of between 8,000 and 10,000 new jobs by 2030 from green industrialisation. |
 | Impacts and costs | Renewable energy generated (if applicable) | Not applicable |
 | | Energy removed/replaced, volume or fuel type | Pending |
 | | Estimated GHG emission reductions (total) | A specific calculation of the potential emission reduction of this programme is not yet available. For the "other" sector programmes as a whole, where industry is the most relevant sector, the Mission's target implies a 73% reduction in emissions (167 thousand MT) compared to the BAU 2030 scenario. |
-
-Climate City Contract. City of Barcelona
-
--
 
 Total costs and costs per unit of CO2eq
 
@@ -2821,16 +1989,7 @@ Pending
 |             | Type of action               | The Natura Barcelona 2030 Plan is a strategic and participatory instrument, whose vision is that of a city in the year 2050 with a functional and ecological green infrastructure, with an equitable, accessible green space, connected to the urban fabric and the metropolitan green network, to maximise social and environmental services, especially those of health and adaptation to climate change. This urban nature network is appreciated and conserved as the Earth's natural heritage, and as a benefit for people and present and future generations, who enjoy the connection to nature and are involved in the creation of green spaces and the conservation and enhancement of biodiversity.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 |             | Description of the action    | The Natura Barcelona 2030 Plan foresees: • Increase the city's green infrastructure to maximise its services, especially climate change adaptation services, and improve access to urban nature for all citizens. • Deploy and consolidate ecological management and naturalisation in nature management, in the service of the health of citizens and the conservation of biodiversity on Earth. • Conserve and promote biodiversity, protecting species and enhancing habitats and their connectivity. • To increase the knowledge, enjoyment and care of urban nature, and to facilitate and promote the involvement of citizens in its conservation and improvement. The actions related to urban green infrastructure of the Natura Barcelona 2030 Plan are aligned with the following actions of the CEAP 2030: - Action 5.1: Develop ten green roofs and green façades on municipal buildings - Action 6.8: Draw up the Green and Biodiversity Charter, with the aim of having an instrument that compiles the technical, environmental and design criteria to be taken into account when planning green spaces and urban trees, in the spirit of conserving and promoting the city's plant and animal biodiversity. |
 
-Climate City Contract. City of Barcelona
-Climate City Contract. City of Barcelona
-6
-
-| | | - Action 7.1: Increase 40 hectares of public green space in Barcelona that provide high socio-environmental services, prioritising the areas with the greatest deficit, and approve an instrument that allows for the effective protection of private green space.
-Action 7.6: Promote urban green corridors with special attention to the Ciutadella-Collserola corridor with the intervention in Pi i Margall street.
-Action 7.8: Draw up a catalogue of tree species.
-Action 7.13: Create ten biodiversity nodes and nature reserves as an essential part of urban green infrastructure.
-Action 15.2: Support and promote urban and peri-urban agriculture, as well as the agro-ecological fabric of the city and the Llobregat agricultural park.
-Action 15.16: Promote the network of urban vegetable gardens for their social function and as a tool for dissemination, and encourage peri-urban agriculture and organic livestock farming together with other supra-municipal administrations.
+| | | - Action 7.1: Increase 40 hectares of public green space in Barcelona that provide high socio-environmental services, prioritising the areas with the greatest deficit, and approve an instrument that allows for the effective protection of private green space. Action 7.6: Promote urban green corridors with special attention to the Ciutadella-Collserola corridor with the intervention in Pi i Margall street. Action 7.8: Draw up a catalogue of tree species. Action 7.13: Create ten biodiversity nodes and nature reserves as an essential part of urban green infrastructure. Action 15.2: Support and promote urban and peri-urban agriculture, as well as the agro-ecological fabric of the city and the Llobregat agricultural park. Action 15.16: Promote the network of urban vegetable gardens for their social function and as a tool for dissemination, and encourage peri-urban agriculture and organic livestock farming together with other supra-municipal administrations. |
 
 | A Shade Plan is being developed to regulate and reduce the temperature in the hot months, reducing the heat island effect, in all those areas where it is not possible to incorporate green infrastructure. |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- | -------------------------------------------------------------------------------------- |
@@ -2840,19 +1999,10 @@ Action 15.16: Promote the network of urban vegetable gardens for their social fu
 • Technology
 • Culture
 • Commitment and participation
-• Governance and politics |
-| short and medium-term changes | • Increase 160 hectares between 2015 and 2030, to meet the 2015 Climate Commitment: 1 m² more green per capita.
-• Increase the naturalised area by 100 hectares.
-• Create 10 biodiversity refuges.
-• Doubling the number of participants in nature activities.
-• 40 new projects of the "Hands to Green" programme. |
-| Implementation | Bodies/persons responsible for implementation | Barcelona City Council
-• Urban Planning and Housing Management
-• Mobility, Infrastructures and Urban Services Department
-• Resource Management and Digital Transformation |
+| • Governance and politics |
+| short and medium-term changes | • Increase 160 hectares between 2015 and 2030, to meet the 2015 Climate Commitment: 1 m² more green per capita. • Increase the naturalised area by 100 hectares. • Create 10 biodiversity refuges. • Doubling the number of participants in nature activities. | • 40 new projects of the "Hands to Green" programme. |
+| Implementation | Bodies/persons responsible for implementation | Barcelona City Council • Urban Planning and Housing Management • Mobility, Infrastructures and Urban Services Department | • Resource Management and Digital Transformation |
 | Scale of action and | Municipal |
-Climate City Contract. City of Barcelona
-7
 
 |     | target entities |                          |
 | --- | --------------- | ------------------------ |
@@ -2860,7 +2010,7 @@ Climate City Contract. City of Barcelona
 
 • Research centres and universities
 • Social entities and citizenship
-• Schools and the education community |
+| • Schools and the education community |
 | | Comments on implementation | The Natura Barcelona 2021-2030 Plan is structured into three axes and two cross-cutting areas and a total of twenty actions and one hundred projects, with a first plan, the 2021-2025 Action Programme, under which ten priority projects, also known as tractor projects, will be implemented. |
 | Impacts and costs | Renewable energy generated (if applicable) | Not applicable |
 | | Energy removed/replaced, fuel volume or fuel type | Not applicable |
@@ -2875,16 +2025,10 @@ Climate City Contract. City of Barcelona
 |                                                                                                             | Description of the action    | The Metropolitan Area of Barcelona (AMB) has begun the technical and administrative process of processing the metropolitan PDU, which must culminate with its definitive approval and publication after the phases of initial approval, the strategic environmental declaration and provisional approval.                                  |
 | The metropolitan urban planning of the PDUM poses three major challenges: The territorial articulation of a |
 
--
-
 |                                 |                | sustainable mobility model, which must guarantee both the external accessibility of the metropolitan area and mobility between municipalities. The ecological transition, the green infrastructure and its metabolic relations, as well as the impact of the city and its infrastructures on the climate change scenario. And finally, the habitability and competitiveness of the spaces where we live and work, access to housing and green spaces and facilities, the quality of public space, and the quality of the environments of the productive fabric. This model is specified in ten objectives that guide the normative determinations of the PDUM: - 1. Strengthen metropolitan solidarity. - 2. Strengthening the metropolitan capital. - 3. Naturalise the territory by enhancing the values of the biophysical matrix. - 4. Improve the efficiency of urban metabolism and minimise environmental impacts. - 5. Articulate the territory on the basis of a polycentric structure. - 6. Promote active and sustainable mobility by rethinking metropolitan infrastructures. - 7. Promote social cohesion through housing, public space, facilities and public transport. - 8. Rehabilitate and recycle urban fabric. - 9. Increasing urban complexity and liveability. - 10. Boost the competitiveness and sustainability of the metropolitan economy. These objectives are aligned with the following actions of the CEAP 2030: - Action 6.1: Influence higher planning instruments, such as the Urban Master Plan and urban planning legislation to incorporate urban planning determinations. - Action 6.2: Adapt existing urban planning regulations necessary to contribute to climate change mitigation and adaptation goals - Action 6.3: Introduce the climate emergency vector into strategic metropolitan transformations. - Action 7.3: Incorporate climate change criteria into the Special Plan for the Protection of the Natural Environment and Landscape of the Serra de Collserola Natural Park. - Action 10.5: Scale up and accelerate the Superblocks programme. Transform 15 km of streets into green axes by 2024. |
 | ------------------------------- | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Reference to the impact pathway | Line of action | Town planning                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 |                                 | Systemic lever | • Regulation • Finance (resources €)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-
-Climate City Contract. City of Barcelona
-Climate City Contract. City of Barcelona
-9
 
 |                   | short and medium-term changes                     | Features new Green Axes and Squares in the Eixample (executed 2022-2023): • The division of heights between pavement and roadway is eliminated, and a single platform is created to favour the social use of the street. • Priority will be given to pedestrians. Cars will only be allowed to drive at 10 kilometres per hour. • The asphalt will disappear and granite and concrete slabs will be used on all axes. • A tenfold increase in green space. We will go from the current streets, which dedicate 1% of the space to green, to streets with an average of 12%. • 438 new trees will be planted. The streets will have a rich subsoil. • There will be almost a thousand new items of furniture (benches, chairs, tables, playground equipment) and new lighting. • A commitment to local commerce. Loading and unloading will be allowed at specific times. |
 | ----------------- | ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -2896,9 +2040,6 @@ Climate City Contract. City of Barcelona
 |                   | Energy removed/replaced, fuel volume or fuel type | Not available                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |                   | Estimated GHG emission reductions (total)         | Not available                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |                   | Total costs and costs per unit of CO2eq           | • The Green Axes and Squares implemented between 2022 and 2023 have cost 52.700.000 €.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-
-Climate City Contract. City of Barcelona
-0
 
 | Action plan               | Name of the action programme                                     | 19. Climate Justice and Social Inclusion programme                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | ------------------------- | ---------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -2912,27 +2053,13 @@ Improve knowledge on the relationship between gender and climate change, in orde
 Incorporate a gender perspective in municipal action plans and programmes to address the climate emergency and thus move towards ecofeminist city policies.
 Promote parity and encourage women's and girls' leadership in climate action in the city.
 
-• The Strategy for Social Inclusion and Reduction of Inequalities 2017-2027 foresees within its "Action Line 5: Reduce territorial social inequalities", the development of "Objective 5.4: Ensure equitable and sustainable mobility for all and combat climate change and its effects, ensuring environmental justice criteria". |
+| • The Strategy for Social Inclusion and Reduction of Inequalities 2017-2027 foresees within its "Action Line 5: Reduce territorial social inequalities", the development of "Objective 5.4: Ensure equitable and sustainable mobility for all and combat climate change and its effects, ensuring environmental justice criteria". |
 | Reference to the | Line of action | Climate justice and social inclusion |
-Climate City Contract. City of Barcelona
-1
 
-| impact pathway | Systemic lever | • Governance and politics
-• Social innovation
-• Citizen engagement and participation |
+| impact pathway | Systemic lever | • Governance and politics • Social innovation | • Citizen engagement and participation |
 | --- | --- | --- |
-| impact pathway | short and medium-term changes | • **CEAP 2030 actions in the short term (2020):**
-Provide aid and subsidies for the energy improvement of housing and prioritise action on housing for vulnerable families and those at risk of social exclusion (annually).
-Strengthen mobility services for the most vulnerable neighbourhoods and people (public transport, specific on-demand mobility services for people with health problems, electric bicing, etc.).
-Design pilot projects for social superblocks, aimed at providing comprehensive care services for dependent people from local home care service teams.
-Deploy the municipal energy operator to promote the production of renewable energies in the municipality and facilitate their implementation in both public and private spaces.
-Improve knowledge on the relationship between fuel poverty and health through the Health Survey and specific studies that provide indicators.
-Deepen knowledge of the ecological-climate debt and its effects on the most vulnerable countries and societies. Deploy the principle of planetary boundaries in the framework of future strategic plans for the city of Barcelona (2020).
-• **CEAP 2030 actions in the medium term (2025):**
-Adapt and improve care services to help people cope with the health impacts of climate change.
-Promote and prioritise the self-production of energy from renewable sources and make it accessible also to vulnerable households (on a continuous basis). |
+| impact pathway | short and medium-term changes | • **CEAP 2030 actions in the short term (2020):** Provide aid and subsidies for the energy improvement of housing and prioritise action on housing for vulnerable families and those at risk of social exclusion (annually). Strengthen mobility services for the most vulnerable neighbourhoods and people (public transport, specific on-demand mobility services for people with health problems, electric bicing, etc.). Design pilot projects for social superblocks, aimed at providing comprehensive care services for dependent people from local home care service teams. Deploy the municipal energy operator to promote the production of renewable energies in the municipality and facilitate their implementation in both public and private spaces. Improve knowledge on the relationship between fuel poverty and health through the Health Survey and specific studies that provide indicators. Deepen knowledge of the ecological-climate debt and its effects on the most vulnerable countries and societies. Deploy the principle of planetary boundaries in the framework of future strategic plans for the city of Barcelona (2020). • **CEAP 2030 actions in the medium term (2025):** Adapt and improve care services to help people cope with the health impacts of climate change. | Promote and prioritise the self-production of energy from renewable sources and make it accessible also to vulnerable households (on a continuous basis). |
 | Subject and goals | Renewable energy generated (if | Not applicable |
-Climate City Contract. City of Barcelona
 
 |             | applicable)                                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | ----------- | ------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -2944,76 +2071,18 @@ Climate City Contract. City of Barcelona
 |             | Type of action                                    | This cross-cutting action programme will revolve around the promotion of economic sectors linked to decarbonisation, fostering the creation of business clusters and especially promoting social and solidarity economy enterprises, on the one hand, as well as around training and promoting employment in renewable energies and the circular economy. These objectives are widely included in some of the actions envisaged in the CEAP, and therefore the necessary instruments and resources should be generated to maximise their potential.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |             | Description of the action                         | The actions of the CEAP 2030 related to the sustainability economy are: - Action 1.5: Promote green jobs in economic sectors linked to climate change (energy rehabilitation, installation and maintenance of solar panels, sustainable food or electric mobility). Give the Labora project an environmental vision. - Action 12.2: Define a green, blue and circular economy strategy. Promote clusters of companies in the renewable energy and circular economy sector in the city, for example, in the Besòs axis. - Action 12.4: Establish training and employment programmes in the circular economy, through Barcelona Activa. - Action 12.6: Adapt Barcelona Activa to promote the green and local economy. The Climate Neutral Adaptations and Economic Opportunities Programme will be closely aligned with the Roadmap for the Economy for Sustainability in Barcelona 2030, which is a commitment to facilitate the ecological transition through support for economic sectors in order to generate innovative solutions and |
 
-2
-Climate City Contract. City of Barcelona
-3
-
-| | | take advantage of new business opportunities. The aim is to position the city as a benchmark with the creation of useful and coordinated instruments with the set of public and private agents with an impact on the entire metropolitan region.
-The proposal focuses on six key sectors to accompany companies in transforming the city's production model as a whole towards a more sustainable and competitive one:
-Industry
-Tourism
-Construction and infrastructure
-Mobility and transport
-Energy
-Trade, consumption and food
-The objectives of the roadmap are as follows:
-• Accompanying companies in the transformation towards a more sustainable production model.
-• Encourage and accelerate the generation of new entrepreneurial initiatives and new innovative business models.
-• Facilitating the city's small economy to take advantage of new business opportunities.
-• Identify new employment and career development opportunities.
-• Tackle and lift bureaucratic, administrative and cultural barriers that represent obstacles to the drive for a transformative and more sustainable economy.
-• To position Barcelona as a city of international reference in the transformation of the economic and productive fabric, thus fostering the creation of jobs and facilitating the ecological transition.
-The Healthy and Sustainable Food Strategy 2030 will also be relevant in this area. |
+| | | take advantage of new business opportunities. The aim is to position the city as a benchmark with the creation of useful and coordinated instruments with the set of public and private agents with an impact on the entire metropolitan region. The proposal focuses on six key sectors to accompany companies in transforming the city's production model as a whole towards a more sustainable and competitive one: Industry Tourism Construction and infrastructure Mobility and transport Energy Trade, consumption and food The objectives of the roadmap are as follows: • Accompanying companies in the transformation towards a more sustainable production model. • Encourage and accelerate the generation of new entrepreneurial initiatives and new innovative business models. • Facilitating the city's small economy to take advantage of new business opportunities. • Identify new employment and career development opportunities. • Tackle and lift bureaucratic, administrative and cultural barriers that represent obstacles to the drive for a transformative and more sustainable economy. • To position Barcelona as a city of international reference in the transformation of the economic and productive fabric, thus fostering the creation of jobs and facilitating the ecological transition. | The Healthy and Sustainable Food Strategy 2030 will also be relevant in this area. |
 | --- | --- | --- |
 | Reference to the impact pathway | Subsector | Economic promotion |
-| Systemic lever | • Finance (resources €)
-• Business models
-• Local development strategies
-• Capacity and capacity building |
+| Systemic lever | • Finance (resources €) • Business models • Local development strategies | • Capacity and capacity building |
 | short and medium-term changes | |
-| Implementation | Agencies/persons responsible for implementation | Barcelona City Council
-• Management of Economy and Economic Promotion
-• Barcelona Activa, SA |
+| Implementation | Agencies/persons responsible for implementation | Barcelona City Council • Management of Economy and Economic Promotion | • Barcelona Activa, SA |
 | Scale of action and target entities | Municipal, Metropolitan |
-Climate City Contract. City of Barcelona
-4
 
-| | Actors involved | • Barcelona Metropolitan Area (AMB)
-• Generalitat de Catalunya
-• Universities
-• BCN Vocational Training Foundation
-• Trade unions
-• Companies and Business Associations |
+| | Actors involved | • Barcelona Metropolitan Area (AMB) • Generalitat de Catalunya • Universities • BCN Vocational Training Foundation • Trade unions | • Companies and Business Associations |
 | --- | --- | --- |
-| | Comments on implementation | In order to monitor the deployment of the Economy for Sustainability roadmap in Barcelona, its degree of progress and its impact on the city's economic and social fabric, an initial set of indicators for monitoring the strategy is presented:
-**International positioning of Barcelona**
-• Sustainable Cities Index
-• Sustainable Urban Mobility Index
-• _Clean Cities Index_
-Economic activity and sustainability
-• Employment in the sustainable economy: number of jobs and % of total
-• Companies with employees in sustainable economy: number and % of total
-• New entrants in the sustainable economy and % of total
-• Mapping of the sustainable economy in Barcelona (number of economic agents/total)
-• Companies with environmental quality labels/certifications
-• Actors that incorporate an explicit commitment to sustainability in their corporate by-laws
-**Efficient use of resources**
-• Energy intensity
-• Energy consumption per capita (MWh/inhab/yr)
-• % final energy consumed from renewable sources
-• Energy consumption by sector (commercial and services, transport, industrial, domestic, other) (Gwh/year)
-**Climate change and emission reductions**
-• Comparison of per capita emissions in different world cities
-• Registered electric or hybrid vehicles
-• Electric recharging points
-**Environmentalisation of the City Council**
-• Barcelona City Council’s current expenditure on urban services and the environment linked to the green economy
-• Municipal investment in environmental sectors
-• Fiscal impact in the framework of the Economy for Sustainability
-• Issuance of sustainability-linked financial products |
+| | Comments on implementation | In order to monitor the deployment of the Economy for Sustainability roadmap in Barcelona, its degree of progress and its impact on the city's economic and social fabric, an initial set of indicators for monitoring the strategy is presented: **International positioning of Barcelona** • Sustainable Cities Index • Sustainable Urban Mobility Index • _Clean Cities Index_ Economic activity and sustainability • Employment in the sustainable economy: number of jobs and % of total • Companies with employees in sustainable economy: number and % of total • New entrants in the sustainable economy and % of total • Mapping of the sustainable economy in Barcelona (number of economic agents/total) • Companies with environmental quality labels/certifications • Actors that incorporate an explicit commitment to sustainability in their corporate by-laws **Efficient use of resources** • Energy intensity • Energy consumption per capita (MWh/inhab/yr) • % final energy consumed from renewable sources • Energy consumption by sector (commercial and services, transport, industrial, domestic, other) (Gwh/year) **Climate change and emission reductions** • Comparison of per capita emissions in different world cities • Registered electric or hybrid vehicles • Electric recharging points **Environmentalisation of the City Council** • Barcelona City Council’s current expenditure on urban services and the environment linked to the green economy • Municipal investment in environmental sectors • Fiscal impact in the framework of the Economy for Sustainability | • Issuance of sustainability-linked financial products |
 | Impacts and costs | Renewable energy generated (if | Not applicable |
-Climate City Contract. City of Barcelona
-5
 
 |             | applicable)                                  |                                                                                                                                                                                                                               |
 | ----------- | -------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -3025,25 +2094,18 @@ Climate City Contract. City of Barcelona
 |             | Type of action                               | Cross-cutting action programme in the fields of education, culture and participation. At the educational level, the programme mainly consists of strengthening support to schools as spaces for climate awareness and action. |
 
 Cultural action will focus on holding debates, exhibitions and other actions on the climate emergency in the various types of cultural facilities and events in the city. It will also be of vital importance to implement an effective communication strategy that includes information on available opportunities, assistance and support, as well as on the good practices deployed in the city in the fight against the climate emergency.
-Finally, the Programme will be based on promoting the participation of the people most vulnerable to the effects of climate change (e.g.: Llars d’infants pel clima), based on a territorial approach and the contribution of municipal resources. |
-| | Description of the action | The Let’s Change for Climate 2030 Plan marks the municipal strategy and seeks to promote changes in the dominant culture and help develop and spread a new culture of sustainability that intensifies climate action in the city of Barcelona. The main lines of action are:
+| Finally, the Programme will be based on promoting the participation of the people most vulnerable to the effects of climate change (e.g.: Llars d’infants pel clima), based on a territorial approach and the contribution of municipal resources. |
+| | Description of the action | The Let’s Change for Climate 2030 Plan marks the municipal strategy and seeks to promote changes in the dominant culture and help develop and spread a new culture of sustainability that intensifies climate action in the city of Barcelona. The main lines of action are: |
 
 Education. Area 2 of the Let’s Change for Climate 2030 Plan:
 • Line 2.1 of the Let’s Change for Climate 2030 Plan.
 Strengthen the support, impact and transformative capacity of organisations committed to climate action (educational communities, entities, activists, companies, businesses, etc.). Actions in this area:
-Leverage school transformations (curriculum, physical environment and spaces, governance, internal functioning, etc.) to extend sustainability learning in educational communities and |
-
--
+| Leverage school transformations (curriculum, physical environment and spaces, governance, internal functioning, etc.) to extend sustainability learning in educational communities and |
 
 |     | neighbourhoods. - Providing the city with family play spaces that offer educational environments in nature for enjoyment, experimentation and socialisation. Culture. Area 4 of the Let's Change for Climate 2030 Plan: • Line 4.1. Consolidate a cultural programme in the city (performing arts, cinema, concerts, talks, workshops, itineraries, etc.) that invites reflection on sustainability. • Line 4.2. Spread the culture of sustainability through new municipal strategies, urban transformations and changes in city management (superfills, waste, naturalisation, etc.). • Line 4.3. Involve facilities (cultural, social, sporting, etc.) and events (major festivals, concerts, races, etc.) in climate action, providing criteria and resources. Communication. Area 6 of the Let's Change for Climate 2030 Plan • Line 6.1. Plan the communication and global account of the culture of sustainability, and the dissemination of programmes, projects and facilities. • Line 6.2. Test new instruments and channels to reach more audiences, and improve existing communication tools. • Line 6.3. Work on a stable basis with professionals and media and influencers to strengthen the dissemination of ideas on sustainability. • Line 6.4. Ensure that sustainability and climate information is accessible, attractive, up to date and complete. Participation. Areas 3 and 4 of the Let's Change for Climate 2030 Plan • Line 3.1. Empower conscious people and make them feel involved in transformative action through experiences such as volunteering or citizen science. • Line 3.2. Stimulate and empower conscious youth and families to recognise, increase and scale up their climate action. • Line 3.3. Raise the profile of transformative initiatives at citizen (consumer cooperatives, energy communities, etc.), business, professional and cultural level, and support them to inspire more people and actors. • Line 3.4. Generate and promote transformative projects in neighbourhoods through cultural and environmental facilities. • Line 4.4. Ensure the involvement of specific groups (neighbourhood communities, sportsmen and women, etc.), especially those most vulnerable to |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 
-Climate City Contract. City of Barcelona
-
--
-
-| | | climate change (elderly people, women, people on low incomes, etc.).
-• Line 4.5. Design and implement strategies and mechanisms targeting economic sectors.
+| | | climate change (elderly people, women, people on low incomes, etc.). • Line 4.5. Design and implement strategies and mechanisms targeting economic sectors. |
 
 The actions of the CEAP 2030 related to this education, culture, communication and participation programme are listed below:
 Action 16.1: Widely disseminate information on available opportunities, grants and support (retrofitting, energy efficiency improvement, training, projects, etc.).
@@ -3056,20 +2118,14 @@ Action 16.8: Publicise the Climate Emergency Declaration with a travelling exhib
 Action 16.10: Promote actions for climate emergency (energy improvement, environmental quality assurance, sustainable mobility, etc.) from cultural facilities managed by the ICUB or with municipal participation.
 Action 16.11: Incorporate information and debate on climate emergency and future models in cultural programming and with the involvement of cultural facilities (libraries, museums, civic centres, youth centres, youth spaces) and dedicate international days and weeks to the climate crisis.
 Action 16.13: Promote the creation of citizen co-responsibility networks and climate action groups at neighbourhood level.
-Action 16.14: Strengthen the participation of the social fabric of the territory in the definition of urban, green and mobility proposals to mitigate the effects of climate change (throughout the whole process). |
+| Action 16.14: Strengthen the participation of the social fabric of the territory in the definition of urban, green and mobility proposals to mitigate the effects of climate change (throughout the whole process). |
 | --- | --- | --- |
 | Reference to the impact pathway | Line of action | Education, culture and participation |
 | | Systemic lever | • Culture |
 
-Climate City Contract. City of Barcelona
-Climate City Contract. City of Barcelona
-8
-
-| | | • Capacity and capacity building
-• Citizen engagement and participation |
+| | | • Capacity and capacity building | • Citizen engagement and participation |
 | --- | --- | --- |
-| | short and medium-term changes | Education
-• Consolidate education for sustainability and climate action in all the city's educational centres.
+| | short and medium-term changes | Education • Consolidate education for sustainability and climate action in all the city's educational centres. |
 
 Culture
 • Create a new line of support "Artists for Climate" to create projects on sustainability and climate in various facets of art: fashion, photography, theatre, music, film, urban art, etc.
@@ -3085,20 +2141,11 @@ Transformative projects in this area:
 • Develop the "At Home We Change for the Climate" project so that 50 families receive personalised training and advice each year to improve daily habits (energy consumption, water consumption, climate adaptation, sustainable and healthy food, sustainable mobility, responsible consumption, etc.), with stimulating challenges and measurement systems, and with the commitment to become involved and sponsor other households.
 • Providing the city with nature-family play spaces that offer nature education environments for enjoyment, experimentation and socialisation.
 • Make the environmental facilities in the neighbourhoods into information and dynamising points for transformational projects with accessible and attractive formats (projects such as community composting, energy communities, opportunities for volunteering, citizen science, community gardens, etc.).
-• Create the Citizens' Climate Assembly with a diverse and random cross-section of people to research, debate and make recommendations on complex |
-Climate City Contract. City of Barcelona
-9
+| • Create the Citizens' Climate Assembly with a diverse and random cross-section of people to research, debate and make recommendations on complex |
 
-| | | issues such as the climate emergency.
-• Implement climate action programmes targeting vulnerable groups (youth, women, elderly, people with disabilities) and disadvantaged neighbourhoods in the city.
-• Dedicate each year to a thematic area (electronics, textiles, food, mobility, etc.) and create resources, best practices, training sessions, etc. aimed at companies and professionals from different economic sectors (catering, retail, accommodation, food, mobility, pharmaceuticals, etc.) to raise awareness and promote climate action. |
+| | | issues such as the climate emergency. • Implement climate action programmes targeting vulnerable groups (youth, women, elderly, people with disabilities) and disadvantaged neighbourhoods in the city. | • Dedicate each year to a thematic area (electronics, textiles, food, mobility, etc.) and create resources, best practices, training sessions, etc. aimed at companies and professionals from different economic sectors (catering, retail, accommodation, food, mobility, pharmaceuticals, etc.) to raise awareness and promote climate action. |
 | --- | --- | --- |
-| Implementation | Agencies/persons responsible for implementation | **Education**
-**Barcelona City Council:**
-• Management of Culture, Education and Sports
-• Education Consortium
-• Schools in the Barcelona + Sostenible network
-• Mobility, Infrastructures and Urban Services Department
+| Implementation | Agencies/persons responsible for implementation | **Education** **Barcelona City Council:** • Management of Culture, Education and Sports • Education Consortium • Schools in the Barcelona + Sostenible network • Mobility, Infrastructures and Urban Services Department |
 
 **Culture**
 **Barcelona City Council:**
@@ -3116,14 +2163,9 @@ Climate City Contract. City of Barcelona
 **Participation**
 **Barcelona City Council:**
 • Area Management of Social Rights, Health and Community
-• Area Management of Culture, Education and Sport |
+| • Area Management of Culture, Education and Sport |
 | | Scale of action and target entities | Municipal |
-| | Actors involved | • Barcelona City Council
-• Citizens' Council for Sustainability (a regulated body for citizen participation in this area).
-• Civil Society Organisations that are members of the Taula for the climate emergency
-• Schools
-• Cultural associations |
-Climate City Contract. City of Barcelona
+| | Actors involved | • Barcelona City Council • Citizens' Council for Sustainability (a regulated body for citizen participation in this area). • Civil Society Organisations that are members of the Taula for the climate emergency • Schools | • Cultural associations |
 
 |     |                            | Organisations of all kinds, integrated in the Sustainable Barcelona + network |
 | --- | -------------------------- | ----------------------------------------------------------------------------- |
@@ -3155,45 +2197,26 @@ Key Monitoring Indicators for Domain 3:
 • Number of environmental volunteers in Barcelona
 • Number of families participating in the programme "At Home We Change for the Climate".
 • Number of family recreational spaces, number of activities and number of users
-• Number of schools and students carrying out Service-Learning projects in the field of environment and sustainability |
+| • Number of schools and students carrying out Service-Learning projects in the field of environment and sustainability |
 
-0
-Climate City Contract. City of Barcelona
-1
-
-| | | • Working conditions of environmental educators employed by the administration (annual salary, hourly rate).
-• Number of subsidised sustainability-related projects, amounts, themes, people involved, territorial coverage (neighbourhood, district)
-• Number of points incorporated in the B+S Map, number of activities incorporating the B+S Map information
-• Number of transforming projects in which Barcelona's environmental facilities participate
-• Number of people attending the activities of environmental facilities in Barcelona
-• Number of people participating in sustainability culture activities, projects and events. |
+| | | • Working conditions of environmental educators employed by the administration (annual salary, hourly rate). • Number of subsidised sustainability-related projects, amounts, themes, people involved, territorial coverage (neighbourhood, district) • Number of points incorporated in the B+S Map, number of activities incorporating the B+S Map information • Number of transforming projects in which Barcelona's environmental facilities participate • Number of people attending the activities of environmental facilities in Barcelona | • Number of people participating in sustainability culture activities, projects and events. |
 | --- | --- | --- |
 | Impacts and costs | Renewable energy generated (if applicable) | Not applicable |
 | | Energy removed/replaced, volume or fuel type | Not applicable |
 | | Estimated GHG emission reductions (total) | Not applicable |
-| | Total costs and costs per unit of CO2eq | • The Plan intends to allocate existing resources from various municipal areas and districts and, in particular, from the Directorate of the Climate Change and Sustainability Office. Furthermore, in order to implement the most innovative and transformative projects of the Plan, an additional budget is required. This additional budget is
-• 350,000 per year for transformative projects
-million euros per year to promote the subsidies of the "Pla Clima + Enxarxem". |
+| | Total costs and costs per unit of CO2eq | • The Plan intends to allocate existing resources from various municipal areas and districts and, in particular, from the Directorate of the Climate Change and Sustainability Office. Furthermore, in order to implement the most innovative and transformative projects of the Plan, an additional budget is required. This additional budget is • 350,000 per year for transformative projects | million euros per year to promote the subsidies of the "Pla Clima + Enxarxem". |
 | Action plan | Name of the action programme | 22. Knowledge and innovation development programme |
 | --- | --- | --- |
 | | Type of action | This Programme combines Barcelona City Council's essential commitment to innovation, especially through the Urban Innovation Programme "Barcelona Innova Lab" (mobility sector - Urban Mobility Lab -, construction sector - construction solutions adapted to Barcelona), with the Barcelona Climate Science Programme, which aims to involve academia and |
-Climate City Contract. City of Barcelona
-2
 
 |     |                           | citizens in the collection of data and the preparation of studies on the impacts of climate change and the measures applied, which in turn facilitate and promote innovative solutions.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | --- | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 |     | Description of the action | The Government's Measure to promote urban innovation in Barcelona structures and legitimises the instruments available to Barcelona City Council to accelerate and promote the change to a digital, green and inclusive future. The main objectives are: • Objective 1: Promote a change in the innovative culture of the Administration • Objective 2: Re-engaging innovation with the city and its people • Objective 3: Structuring methodologies and articulating new instruments to boost innovation • Objective 4: To promote the city as a natural space for experimentation. This objective includes action 4.3 Creation and implementation of the Innovation Laboratory. In support of the achievement of the objectives of this MoG, we find the Barcelona Innovation Coast (BIC), an initiative of the Barcelona City Council that was created with the aim of promoting innovation and consolidating the city as the innovation capital of southern Europe. It is a public-private platform that brings together the city's main innovative agents. The BIC allows the creation of networks that facilitate the transfer of knowledge, synergies and the development of innovative projects in the city. More specifically, the BIC is expected to contribute to the promotion of projects for the improvement and decarbonisation of public transport and coordinates the participation of Barcelona City Council in the Enel Innovation Energy Hub, which helps start-ups in the energy sector to scale their sustainable solutions, from the reduction of greenhouse gases to the impact of electricity infrastructures on the environment or energy storage systems. The aim is that these start-ups can become part of the group of suppliers of the electricity company Enel-Endesa. For its part, the Barcelona Science Plan 2020-2023 articulates science and university policy in the metropolitan area with the aim of turning the city into a European capital of research and innovation. This plan is a commitment to knowledge and innovative solutions, a strategy in favour of quality of life, ageing, mobility and the environment, among others, which is articulated in four areas: Barcelona, a city of science in Europe; research to address the challenges facing the city; scientific culture for the public and with the public; and science, art, innovation and society. The Barcelona |
 
-Climate City Contract. City of Barcelona
-3
-
 |     | Science Plan 2020-2023 is structured into 4 work axes, 15 objectives and more than 50 actions. Particularly important in the context of the Climate Mission are the following specific objectives and actions: • Objective 4: Establish agreements with European and international cities to define and share solutions to current urban challenges, and facilitate collaborations between key actors in the cities concerned. - Action 4.3: Define a city-to-city collaboration project involving city councils and local and European research centres and universities to address global metropolitan debates, such as sustainable mobility and new urban and mobility models. - Action 4.10: Promote Barcelona and its metropolitan region as a centre of science and an attractive hub, especially in precision medicine, supercomputing and big data, biomedicine and the environment, and technological innovation in health through bioengineering, as well as in social sciences and humanities applied to public affairs and sustainable, healthy and fairer urban planning. • Objective 8: Promote urban projects that catalyse research and innovation activities in the city and the metropolitan region. - Action 8.2: Develop the network of university infrastructures to connect it with other research, innovation and cultural spaces in the city through bilateral agreements with universities. - Action 8.4: Promote scientific and related initiatives to adapt the city to the elderly (mobility, care services, etc.) and for quality and active ageing. • Objective 9: Strengthen scientific educational programmes and the offer of scientific activities throughout the educational cycle, prioritising the perspective of gender, cultural diversity and territorial and income equity. - Action 9.1: Promote STEAM and other science programmes in the city's schools, and follow up between different areas of the City Council in order to share good educational practices in research and science, including in a cross-cutting manner on urban environmental and climate justice and gender equality. • Objective 14: Promote the connection between scientific actors and the city's innovation projects and facilities. - Action 14.1: Support the dynamisation of relations between scientific actors and LID and i.Lab. • Objective 15: To facilitate the transfer of scientific knowledge to social and economic actors, especially those with few or no resources for their own research, and who work for an environmentally sustainable and |
 | --- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
--
-
-| | | equitable economy.
-Action 15.5: Participate in the cross-cutting innovation roundtable between different areas and directorates of the City Council to facilitate the transfer of research to urban solutions and to seek innovative ways of solving emerging challenges.
+| | | equitable economy. Action 15.5: Participate in the cross-cutting innovation roundtable between different areas and directorates of the City Council to facilitate the transfer of research to urban solutions and to seek innovative ways of solving emerging challenges. |
 
 | This Knowledge and Innovation Development Programme corresponds to the following actions of the ECCP 2030: 4.6, 6.6., 11.2, 11.3, 11.8, 18.1, 18.3, 18.4, 18.6, 18.7, 18.8, 18.10, 18.16, 18.17, 18.8, 18.19, 18.20, 18.21 |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------------------- |
@@ -3201,29 +2224,15 @@ Action 15.5: Participate in the cross-cutting innovation roundtable between diff
 |                                                                                                                                                                                                                            | Systemic lever | • Technology           |
 
 • Social innovation
-• Capacity and capacity building |
+| • Capacity and capacity building |
 | | short and medium-term changes | |
-| Implementation | Agencies/persons responsible for implementation | Barcelona City Council
-• Mobility, Infrastructures and Urban Services Department
-• BIT-Habitat Foundation
-• Management of Economy and Economic Promotion
-• Culture, Education, Sports and Life Cycle Management (also Citizen Science Programme) |
+| Implementation | Agencies/persons responsible for implementation | Barcelona City Council • Mobility, Infrastructures and Urban Services Department • BIT-Habitat Foundation • Management of Economy and Economic Promotion | • Culture, Education, Sports and Life Cycle Management (also Citizen Science Programme) |
 | | Scale of action and target entities | Municipal, Metropolitan |
-| | Actors involved | • Universities
-• Business schools
-• Research and knowledge transfer centres,
-• Business associations
-• Clusters
-• Financing agents
-• Public administrations
-• Educational establishments |
+| | Actors involved | • Universities • Business schools • Research and knowledge transfer centres, • Business associations • Clusters • Financing agents • Public administrations | • Educational establishments |
 | | Comments on implementation | |
 | Impacts and costs | Renewable energy generated (if applicable) | Not applicable |
 | | Energy removed/replaced, volume or fuel type | Not applicable |
 | | Estimated GHG | Not available |
-
-Climate City Contract. City of Barcelona
-Climate City Contract. City of Barcelona
 
 | Action plan                                        | Name of the action programme | 23. Carbon Neutral City Council Programme                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | -------------------------------------------------- | ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -3231,10 +2240,7 @@ Climate City Contract. City of Barcelona
 |                                                    | Description of the action    | This programme is expected to be presented during 2024. In order to achieve carbon neutrality of the municipal activity itself by 2030, the following areas will be addressed in depth: Buildings; Fleets (own and subcontracted) and travel; Street services (lighting, traffic lights, fountains, escalators and lifts); Works (project drafting and execution); Events (cultural and sporting); Food services, catering and vending; Other services and supplies (cleaning and waste collection, cloud services, etc.). To this end, the necessary procedures will be established for the periodic quantification of GHG emissions, which are currently not included in the emissions inventory (mainly emissions incorporated in non-energy supplies); actions to reduce emissions will be promoted through improvements in the management and contracting of works, supplies and services and also in the change of habits and collaboration with suppliers to extend these measures beyond the actions and contracting of the City Council itself. |
 | The 2023 Sustainable Public Procurement Objectives |
 
-Climate City Contract. City of Barcelona
-6
-
-| | | Plan, proposed by the Sustainable Public Procurement Commission, consolidates and updates the existing catalogue of social, environmental and innovation measures. Of particular relevance in the environmental field is the Guide to environmental public procurement, since the introduction of environmental criteria in municipal public procurement is one of the key instruments to promote continuous improvement processes to increase efficiency in the consumption of natural and economic resources and reduce the environmental impact associated with municipal activity. Likewise, environmental public procurement should serve to promote a better supply of products and services that make a more efficient use of resources and promote eco-innovation and environmental management in companies. This Guide will be updated as the annual plans for sustainable public procurement objectives are approved.
+| | | Plan, proposed by the Sustainable Public Procurement Commission, consolidates and updates the existing catalogue of social, environmental and innovation measures. Of particular relevance in the environmental field is the Guide to environmental public procurement, since the introduction of environmental criteria in municipal public procurement is one of the key instruments to promote continuous improvement processes to increase efficiency in the consumption of natural and economic resources and reduce the environmental impact associated with municipal activity. Likewise, environmental public procurement should serve to promote a better supply of products and services that make a more efficient use of resources and promote eco-innovation and environmental management in companies. This Guide will be updated as the annual plans for sustainable public procurement objectives are approved. |
 
 | This Municipal Modernisation Programme for Climate Neutrality corresponds to the following actions of the ECCP 2030: 2.8, 12.8, 16.2, 16.16, 18.2, 18.4, 18.5, 18.11, 18.12, 18.13, 18.15. |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------- | ------------------------------------- |
@@ -3246,20 +2252,13 @@ Climate City Contract. City of Barcelona
 • Technology
 • Local development strategies
 • Culture
-• Social innovation |
+| • Social innovation |
 | | short and medium-term changes | To be defined in the MoG |
-| Implementation | Agencies/persons responsible for implementation | Barcelona City Council
-• Resource Management and Digital Transformation
-• Mobility, Infrastructures and Urban Services Department
-• Municipal Management |
+| Implementation | Agencies/persons responsible for implementation | Barcelona City Council • Resource Management and Digital Transformation • Mobility, Infrastructures and Urban Services Department | • Municipal Management |
 | | Scale of action and target entities | Municipal |
-| | Actors involved | • Contracting authorities
-• Contracting companies
-• Municipal staff |
+| | Actors involved | • Contracting authorities • Contracting companies | • Municipal staff |
 | | Comments on implementation | |
 | Impacts and | Renewable energy | Pending |
-Climate City Contract. City of Barcelona
-7
 
 | costs       | generated (if applicable)                    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | ----------- | -------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -3271,14 +2270,8 @@ Climate City Contract. City of Barcelona
 |             | Type of action                               | The CEAP (action 18.22) speaks of establishing the necessary external coordination and communication mechanisms between administrations (especially the Metropolitan Area, the Provincial Council and the Generalitat de Catalunya) and with other key city agents to create synergies and facilitate the achievement of the objectives of the Climate Plan.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 |             | Description of the action                    | Cooperation at metropolitan level is particularly relevant, as some of the key policies for decarbonisation (public transport, waste management, water provision) are managed by the public entity Barcelona Metropolitan Area. Metropolitan Commitment 2030 is the strategic plan for the Barcelona Metropolitan Region (PEMB2030). The plan aims to promote a new model of prosperity, based on knowledge and innovation, which reduces social and territorial inequalities and positions the region as one of the leading metropolises in the fight against climate change. The definition of missions makes it possible to focus on strategic aspects and to involve a wide range of actors, as well as to promote new ways of doing things. In this case, they are a guide to promote and coordinate innovative responses at the scale of the Barcelona metropolitan region, where there is no government institution with this territorial scope. Thus, the missions define strategic and interrelated objectives. In this sense, the challenge of this mission is to mitigate the effects of climate change and ensure a healthy habitat based on a just transition in the energy model and the sustainable management of resources.one of the eight missions of the Plan refers to "environmental and climate emergency". Its objective for 2030 is to achieve a 45% reduction in greenhouse |
 
--
-
 |     | gas (GHG) emissions in the Barcelona metropolitan region. Different actors of the quintuple helix - public administration, academia, private sector, citizens and the media - of the Barcelona metropolitan region were part of the design of the mission and will be part of its implementation. Another mission is the Sustainable and Safe Mobility Mission. Its challenge is to improve the connectivity and efficiency of everyday travel. The objective for 2030 is to achieve a 10% shift in the modal distribution of journeys in the Barcelona metropolitan region in favour of eco-mobility. For its part, the Barcelona Provincial Administration (Diputació de Barcelona) has a Climate Plan, which aims to achieve energy self-sufficiency and climate neutrality by 2030 in relation to its infrastructures and activity, with zero direct greenhouse gas emissions. This Plan can inspire the decarbonisation of the 311 municipalities of the Barcelona province and facilitate the channelling of the necessary financial resources. It also provides support for the drafting of sustainable energy and climate action plans for the municipalities that are members of the Covenant of Mayors for Climate and Energy. At the regional level, and in relation to multilevel coordination, the Catalan Law 16/2017, of 1 August, on climate change, whose aim is to reduce greenhouse gas emissions and favour the transition towards an emission-neutral economy, is of vital importance (it establishes a commitment to reduce GHG emissions by 40% by 2030, 65% by 2040 and 100% by 2050 with respect to 1990 values). One of the five aims pursued by the Law to achieve this objective is to promote and guarantee the coordination of all Catalan public administrations, and to encourage the participation of citizens, social agents and economic agents. It is also worth noting, for the purposes of multi-level administrative coordination, the role played by the Advisory Council for Sustainable Development in Catalonia (CADS) as a strategic advisory body to the Government of the Generalitat of Catalonia in the field of sustainability, a task it carries out through the consultation and participation of experts and civil society. A relevant role in municipal cooperation is also played by the Network of cities and towns towards sustainability (currently comprising 320 local authorities) at metropolitan level and in Catalonia. The Network is a platform for cooperation and exchange where municipalities find a suitable framework to discuss concerns, needs and experiences and to promote and |
 | --- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-
-Climate City Contract. City of Barcelona
-
--
 
 |                                 |                                                   | carry out projects of common interest in the field of local sustainability. - The Association of Municipalities for Mobility and Urban Transport (AMTU) is an association of Catalan municipalities comprising 146 local authorities, which works to improve mobility and public transport infrastructures throughout Catalonia. Finally, and in the context of metropolitan cooperation, the CEAP 2030 has the following two actions: - Action 6.3: Introduce the climate emergency vector in strategic metropolitan transformations, such as the Glòries Park, Avinguda Meridiana, Sagrera Park and the waterfront. - Action 16.13: Promote the creation of citizen co-responsibility networks and climate action groups at neighbourhood level. |
 | ------------------------------- | ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -3293,7 +2286,6 @@ Climate City Contract. City of Barcelona
 |                                 | Energy removed/replaced, fuel volume or fuel type | Not applicable                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 |                                 | Estimated GHG emission reductions (total)         | Not applicable                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 
-Climate City Contract. City of Barcelona
 ↑
 
 |             | Total costs and costs per unit of CO2eq | Pending                                                                                                                                                                                                                                                    |
@@ -3311,14 +2303,9 @@ Climate City Contract. City of Barcelona
 1.7. Promote the rights of nature and other species. In the same vein, targets 13.1 and 13.b of the Barcelona 2030 Agenda refer explicitly to international cooperation on climate change policies
 In the Euro-Mediterranean area, cooperation between cities is particularly relevant in the context of global challenges: after the Arctic, the Mediterranean is the area of the world most impacted by climate change. Med-Cités brings together 73 local authorities from the shores of the entire Mediterranean basin and is responsible for promoting sustainable urban development in the region.
 The Climate Leadership Group, known as the C40, is a group of cities working together on a global scale to reduce carbon emissions in the atmosphere and adapt to climate change.
-At the European level, Eurocities brings together more than 200 cities to cooperate, among many others, in specific areas such as sustainable mobility, pollution reduction and localisation of global challenges such as |
+| At the European level, Eurocities brings together more than 200 cities to cooperate, among many others, in specific areas such as sustainable mobility, pollution reduction and localisation of global challenges such as |
 
-Climate City Contract. City of Barcelona
-0
-Climate City Contract. City of Barcelona
-1
-
-| | | climate change and energy transition.
+| | | climate change and energy transition. |
 
 For its part, the CitiEs Platform, whose members include the 7 cities present in this Mission, is the Spanish platform that offers a comprehensive and collaborative proposal to address and overcome the challenges of sustainability in cities within the framework of the European Union Missions. It offers a series of services that seek to strengthen the capacities of cities and reinforce multi-stakeholder and multi-level collaboration.
 
@@ -3330,14 +2317,10 @@ Finally, it should be noted that the promotion of city-to-city cooperation is al
 Action 17.2: Generate more active social involvement in raising awareness of the effects of climate change on the most vulnerable countries and societies, and carry out education and awareness campaigns on Barcelona's ecological debt.
 Action 17.3: Define a comprehensive strategy to reduce Barcelona's ecological debt, prioritising actions with the greatest impact on third parties.
 Action 17.4: Generate more knowledge on the impact of the climate crisis on global inequalities, migratory movements (climate refugees) and human rights.
-Action 17.5. Promote city-to-city cooperation on climate justice, both in the call for grants and in direct city-to-city cooperation. |
+| Action 17.5. Promote city-to-city cooperation on climate justice, both in the call for grants and in direct city-to-city cooperation. |
 | --- | --- | --- |
 | Reference to the impact pathway | Line of action | City-to-city cooperation |
-| Systemic lever | • Finance (resources €)
-• Technology
-• Capacity and capacity building |
-Climate City Contract. City of Barcelona
-2
+| Systemic lever | • Finance (resources €) • Technology | • Capacity and capacity building |
 
 |                               |                                                                                                                                        | • Local development strategies |
 | ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ |
@@ -3345,24 +2328,12 @@ Climate City Contract. City of Barcelona
 
 • Identify the new climate justice programme.
 • Support the creation of a climate justice reference centre.
-• Support university teaching and research initiatives in this field. |
-| Implementation | Agencies/persons responsible for implementation | **Barcelona City Council**
-• City Hall
-• Area Management of Social Rights, Health and Community |
+| • Support university teaching and research initiatives in this field. |
+| Implementation | Agencies/persons responsible for implementation | **Barcelona City Council** • City Hall | • Area Management of Social Rights, Health and Community |
 | | Scale of action and target entities | International |
-| | Actors involved | • Barcelona City Council
-• Cooperation and development NGOs and social movements
-• Barcelona Metropolitan Area (AMB)
-• MedCities (Mediterranean coastal cities network)
-• Cities, city networks and urban strategy micro-networks
-• Universities, educational institutions, research centres, think tanks and others |
-| | Comments on implementation | The Master Plan for Global Justice Cooperation envisages bilateral projects with a set of priority cities. The approach that will characterise the prioritisation of the contexts in which to intervene is urban and municipalist, so that the priority is the resolution of urban problems through a regional approach. The city of Barcelona will collaborate in particular with specific cities to achieve a deeper understanding and provide more tailored solutions. Specifically, the following geographical priorities are identified:
-The Mediterranean and the Middle East. Priority cities will be Amman, Saida, Sarajevo, Tetouan, Tangiers, Tunis, towns in the West Bank and Gaza Strip, and cities that may become, at some point, a staging point for a humanitarian crisis.
-Sub-Saharan Africa. The priority cities will be Maputo and Dakar.
-Mexico, Central America and the Caribbean. The priority city will be Havana
-South America. Priority cities will be Cali, Medellin and other cities in Colombia involved in the peace process. |
+| | Actors involved | • Barcelona City Council • Cooperation and development NGOs and social movements • Barcelona Metropolitan Area (AMB) • MedCities (Mediterranean coastal cities network) • Cities, city networks and urban strategy micro-networks | • Universities, educational institutions, research centres, think tanks and others |
+| | Comments on implementation | The Master Plan for Global Justice Cooperation envisages bilateral projects with a set of priority cities. The approach that will characterise the prioritisation of the contexts in which to intervene is urban and municipalist, so that the priority is the resolution of urban problems through a regional approach. The city of Barcelona will collaborate in particular with specific cities to achieve a deeper understanding and provide more tailored solutions. Specifically, the following geographical priorities are identified: The Mediterranean and the Middle East. Priority cities will be Amman, Saida, Sarajevo, Tetouan, Tangiers, Tunis, towns in the West Bank and Gaza Strip, and cities that may become, at some point, a staging point for a humanitarian crisis. Sub-Saharan Africa. The priority cities will be Maputo and Dakar. Mexico, Central America and the Caribbean. The priority city will be Havana | South America. Priority cities will be Cali, Medellin and other cities in Colombia involved in the peace process. |
 | Impacts and costs | Renewable energy generated (if | Not applicable |
-Climate City Contract. City of Barcelona
 
 |     | applicable)                                       |                                                                                                                                                                                                                                                                                                                                                                                 |
 | --- | ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -3381,9 +2352,6 @@ Specifically, the actions envisaged to develop carbon sinks are:
 Programme to boost urban green infrastructure, developed extensively in the Nature 2030 Plan, and technically guided by the Green and Biodiversity Charter and the catalogue of tree species. The main goals are to increase public green space by 121 hectares and to regulate the effective protection of private green space.
 2030 urban agriculture programme. Barcelona has more than 500 urban gardens, which, in addition to capturing carbon, generate economic and social value.
 
-3
-Climate City Contract. City of Barcelona
-
 Blue carbon" programme, promoting marine carbon sinks (Posidonia) on the coast of Barcelona (Garraf and Maresme). This is the only action programme that goes well beyond the municipal area. It will be promoted in conjunction with the AMB, the Diputació de Barcelona (DIBA), the Generalitat de Catalunya and the coastal municipalities.
 
 Barcelona's residual emissions strategy also includes effective action to reduce Scope 3 emissions (over and above what is already planned in the area of waste, with the "Waste 0" programme).
@@ -3399,10 +2367,6 @@ Identify all local entities with knowledge and experience in CO2 capture.
 Share knowledge, projects and initiatives on CO2 capture that are being carried out in Barcelona.
 Identify possible alliances between existing projects or programmes and establish collaboration mechanisms and define those that can be instruments of innovation.
 
-Climate City Contract. City of Barcelona
-
--
-
 MODULE B-3: Monitoring, evaluation and learning indicators
 
 |                                                                                                                             | B-3.1: Impact pathways |                  |                                                                                                              |                                             |                                                           |                                    |                                    |
@@ -3416,9 +2380,6 @@ MODULE B-3: Monitoring, evaluation and learning indicators
 | Noise reduction. Improvement of well-being and health.                                                                      | Programme 1 to 6       | 4                | Percentage of population subjected to noise levels <65 dB(A) during the day (Ld) and <55 dB(A) at night (Ln) | Day value 77% (2018) Night value 69% (2018) | Day value 84% (target 2024) Night value 69% (target 2024) | ...                                | Day value 87% Night value 80%      |
 | Improved air quality. Health impacts                                                                                        | Programme 1 to 6       | 5                | Average concentration in μg/m3 of NO2, PM10 and PM2.5                                                        | NO2: 35.8 PM 10: 26.7 PM 2.5: 17.7          | NO2: 40,0 PM 10: 24.4 PM 2.5: 15.2                        | NO2: 40,0 PM 10: 22.2 PM 2.5: 12.6 | NO2: 40,0 PM 10: 20.0 PM 2.5: 10.0 |
 
-Climate City Contract. City of Barcelona
-T
-
 | Noise reduction. Improvement of well-being and health.                                                                      | Programme 5       | 6   | Percentage of electric vehicles in the census fleet (disaggregated by car, motorbike and moped) | Car: 0.2%. Motorbike: 0.5%. Moped: 2.5%. (2018)                     | Car: 4% Motorbike: 8%. Moped: 8%. (target 2024)                           | Car: 10%. Motorbike: 20% of the total Moped: 20%.             | Car: 25%. Motorbike: 50% Moped 50%                         |
 | --------------------------------------------------------------------------------------------------------------------------- | ----------------- | --- | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------- | ------------------------------------------------------------- | ---------------------------------------------------------- |
 | Noise reduction. Improvement of well-being and health.                                                                      | Programme 5       | 7   | Percentage of electric vehicles in the municipal services fleet                                 | 35% (2018)                                                          | 80% (target 2024)                                                         | 90% (projection)                                              | 100% (projection)                                          |
@@ -3428,9 +2389,6 @@ T
 | Reduction of emissions from private vehicle transport. Impact on improving air quality, noise reduction, health and safety. | Programme 1 to 6  | 11  | Modal split of total trips (internal and connecting, %)                                         | On foot: 34.4%. Bicycle: 2,3 T. P.: 37,3% Private car: 26.0% (2018) | On foot: 35.3%. Bicycle:3.9% T. P.: 40,9% Private car:19.9% (target 2024) | On foot: 36.2%. Bicycle: 5.5%. T. P.: 44,5% Private car:13.8% | On foot: 37.1%. Bicycle:7,1% T. P.: 48,1% Private car:7,7% |
 | Programmes 7 to 9. Buildings and heating                                                                                    |                   |     |                                                                                                 |                                                                     |                                                                           |                                                               |                                                            |
 | Reducing emissions from                                                                                                     | Programme 7 to 9  | 12  | Emissions from buildings (million                                                               | 0,813                                                               | ...                                                                       | ...                                                           | 0,188                                                      |
-
-Climate City Contract. City of Barcelona
-T
 
 | the buildings and heating sector                                                                                                                                                                              |                  |     | MT CO2-eq)                                                                                        |              |     |     |        |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | --- | ------------------------------------------------------------------------------------------------- | ------------ | --- | --- | ------ |
@@ -3444,28 +2402,16 @@ T
 | Programmes 10 to 12. Electricity                                                                                                                                                                              |                  |     |                                                                                                   |              |     |     |        |
 | Reduction of                                                                                                                                                                                                  | Programm         | 20  | Emissions from                                                                                    | 1,505        | ... | ... | 0,114  |
 
-Climate City Contract. City of Barcelona
-T
-
 | emissions generated by the generation of electricity consumed in Barcelona | e 10 to 12 |     | electricity generation (million MT CO2-eq) |     |     |     |     |
 | -------------------------------------------------------------------------- | ---------- | --- | ------------------------------------------ | --- | --- | --- | --- |
 
-| Reducing dependence on imported fossil fuels and increasing energy sovereignty
-Democratisation of energy infrastructures, by moving from a centralised production model based on large installations owned by large companies to a decentralised generation model, in which the owners can be the consumers themselves.
-Generation of direct local jobs in the installation and maintenance of photovoltaic systems and other renewable sources (such as solar thermal and geothermal). | Programme 10 to 12 | 21 | Installed capacity of solar PV in the city (GWp) | 18,5 | ... | ... | 1.080 |
+| Reducing dependence on imported fossil fuels and increasing energy sovereignty Democratisation of energy infrastructures, by moving from a centralised production model based on large installations owned by large companies to a decentralised generation model, in which the owners can be the consumers themselves. | Generation of direct local jobs in the installation and maintenance of photovoltaic systems and other renewable sources (such as solar thermal and geothermal). | Programme 10 to 12 | 21 | Installed capacity of solar PV in the city (GWp) | 18,5 | ... | ... | 1.080 |
 | | Programme 10 | 22 | Installed capacity of solar photovoltaic energy in municipal facilities (GWp) | 0,80 (2020) | n.d | n.d | n.d |
 | | Programme 10 | 23 | Annual public investment in solar photovoltaic power generation (€) | n.d | n.d | n.d | n.d |
-| | Programme 11 | 24 | Energy generated by renewable sources (MWh/year by types) | Biogas: 34,861
-Hydro: 0
-Solar thermal: 86.204
-Photovoltaic: 18.524
-Ecoenergies: 6,272 | n.d | n.d | n.d |
+| | Programme 11 | 24 | Energy generated by renewable sources (MWh/year by types) | Biogas: 34,861 Hydro: 0 Solar thermal: 86.204 Photovoltaic: 18.524 | Ecoenergies: 6,272 | n.d | n.d | n.d |
 | | Programme 11 | 25 | Proportion of electricity consumed in Barcelona that comes from renewable sources | 16,7% | ... | ... | 100% |
 | | Programme 11 | 26 | Proportion of energy consumed in Barcelona that has been generated locally from renewable resources | 0,95% | ... | ... | 6.5% (target set by the Barcelona Agenda 2030) |
 | | Programme 12 | 27 | Electricity consumption of municipal lighting | 72,8 | n.d | n.d | n.d |
-
-Climate City Contract. City of Barcelona
-T
 
 |                                                                                                                                                        |              |     | [MWh].                                                        |              |     |           |       |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ | --- | ------------------------------------------------------------- | ------------ | --- | --------- | ----- |
@@ -3481,9 +2427,6 @@ T
 |                                                                                                                                                        | Programme 14 | 36  | Separate collection of textiles                               | 6,40%        | ... | 15%       | ...   |
 |                                                                                                                                                        | Programme 14 | 37  | No. of participants in                                        | 2.927.862    | ... | 3.220.648 | ...   |
 
-Climate City Contract. City of Barcelona
-T
-
 | resources by recovering materials from recycling. Reduction of waste management needs: transport, space occupation, treatment energy and incineration emissions. Generation of jobs related to the circular economy. |              |     | waste prevention and recycling activities                                                           |               |     |     |      |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --- | --------------------------------------------------------------------------------------------------- | ------------- | --- | --- | ---- |
 |                                                                                                                                                                                                                      | Programme 14 | 38  | Population covered by individualised collection systems (Absolute number and % of total population) | 10.665 (0,7%) | n.d | n.d | n.d  |
@@ -3495,9 +2438,6 @@ T
 |                                                                                                                                                                                                                      | Programme 15 | 44  | Grey water use (m3)                                                                                 | 800           | n.d | n.d | n.d  |
 |                                                                                                                                                                                                                      | Programme 15 | 45  | Rainwater use on roofs (m3)                                                                         | 1.000         | n.d | n.d | n.d  |
 | Reducing emissions from industrial activity                                                                                                                                                                          | Programme 16 | 46  | Emissions generated by industrial activity (million MT CO2-eq)                                      | 0,289         | n.d | n.d | n.d  |
-
-Climate City Contract. City of Barcelona
-T
 
 | Programme 17. Nature-based solutions                                                                                                                                                                                                                                            |              |     |                                                                                                                   |             |                   |                                |                                  |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --- | ----------------------------------------------------------------------------------------------------------------- | ----------- | ----------------- | ------------------------------ | -------------------------------- |
@@ -3515,10 +2455,6 @@ T
 | Programme 19. Social protection and social inclusion                                                                                                                                                                                                                            |              |     |                                                                                                                   |             |                   |                                |                                  |
 | Climate justice and social inclusion                                                                                                                                                                                                                                            | Programme 19 | 55  | Proportion of people in households unable to keep                                                                 | 10,9%       | ...               | ...                            | 3%                               |
 
-Climate City Contract. City of Barcelona
-Climate City Contract. City of Barcelona
-2
-
 | Reducing energy poverty and guaranteeing fair access to energy for all, with special attention to the most vulnerable groups, through combined policies of access to self-generation facilities, improvements in housing conditions, energy advice and in the best conditions of quality, sustainability and costs. |              |                                         | their dwelling at an adequate temperature                                                                    |              |       |       |      |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------------------------------- | ------------------------------------------------------------------------------------------------------------ | ------------ | ----- | ----- | ---- |
 |                                                                                                                                                                                                                                                                                                                     | Programme 19 | 56                                      | Number of accessible housing units                                                                           | n.d          | n.d   | n.d   | n.d  |
@@ -3532,9 +2468,6 @@ Climate City Contract. City of Barcelona
 |                                                                                                                                                                                                                                                                                                                     | Programme 20 | 63                                      | Net financing (%)                                                                                            | n.d          | n.d   | n.d   | n.d  |
 | Improving                                                                                                                                                                                                                                                                                                           | Programm     | 64                                      | Sustainable Cities                                                                                           | 49 (2022)    | n.d   | n.d   | n.d  |
 
-Climate City Contract. City of Barcelona
-3
-
 | Barcelona's international positioning                                                      | e 20         |     | Index (ranking)                                                                                   |           |     |     |      |
 | ------------------------------------------------------------------------------------------ | ------------ | --- | ------------------------------------------------------------------------------------------------- | --------- | --- | --- | ---- |
 |                                                                                            | Programme 20 | 65  | Sustainable Urban Mobility Index (rank in the ranking)                                            | n.d       | n.d | n.d | n.d  |
@@ -3547,9 +2480,6 @@ Climate City Contract. City of Barcelona
 | Education:                                                                                 | Programme 21 | 71  | Teachers trained in climate change (% of total)                                                   | n.d       | n.d | n.d | n.d  |
 | Culture:                                                                                   | Programme 21 | 72  | Arts events for the climate: number of events, number of artists who have participated, number of | n.d       | n.d | n.d | n.d  |
 
-Climate City Contract. City of Barcelona
-4
-
 |                                                                                                             |              |     | attendees                                                                                                                              |      |     |     |     |
 | ----------------------------------------------------------------------------------------------------------- | ------------ | --- | -------------------------------------------------------------------------------------------------------------------------------------- | ---- | --- | --- | --- |
 | Culture:                                                                                                    | Programme 21 | 73  | City cultural events and festivals that have incorporated sustainability and climate criteria, number of attendees                     | n.d  | n.d | n.d | n.d |
@@ -3561,25 +2491,18 @@ Climate City Contract. City of Barcelona
 | Programme 23. Municipal organisation and management                                                         |              |     |                                                                                                                                        |      |     |     |     |
 | Municipal                                                                                                   | Programm     | 78  | Proportion of                                                                                                                          | 0,7% | n.d | n.d | n.d |
 
--
-
 | modernisation to achieve climate neutrality                              | e 23         |     | people trained on climate change (out of total municipal staff) |        |     |     |        |
 | ------------------------------------------------------------------------ | ------------ | --- | --------------------------------------------------------------- | ------ | --- | --- | ------ |
 | Programme 24. Metropolitan vision and multilevel government              |              |     |                                                                 |        |     |     |        |
 | Reduction of local metropolitan greenhouse gas emissions (Scope 1 and 2) | Programme 24 | 79  | Greenhouse gas emissions (million metric tons CO2-eq)           | 13,052 | n.d | n.d | 10,771 |
 | Programme 25. City-to-city climate cooperation                           |              |     |                                                                 |        |     |     |        |
 
-| Promoting climate-smart international development cooperation
-Consolidate the contribution of 0.7% of Barcelona City Council's own resources to international development cooperation projects. | Programme 25 | 80 | Number of networks and other cooperation initiatives (decentralised or multilevel) in which Barcelona participates | 14 | n.d | n.d | n.d |
+| Promoting climate-smart international development cooperation | Consolidate the contribution of 0.7% of Barcelona City Council's own resources to international development cooperation projects. | Programme 25 | 80 | Number of networks and other cooperation initiatives (decentralised or multilevel) in which Barcelona participates | 14 | n.d | n.d | n.d |
 | | Programme 25 | 81 | Number of technical exchange actions facilitated at international level | 92 | n.d | n.d | n.d |
 | | Programme 25 | 82 | Resources of the City's Global Justice Cooperation Programme for international cooperation as a percentage of total own revenue (%) | 0,63 | 0,70 | 0,70 | 0,70 |
 | B-3.2: Indicator metadata |
 | --- |
 | The table with the metadata for each indicator has yet to be developed. For the time being, the metadata for most of the proposed indicators can be consulted in the application https://sdgdata.barcelona.cat/es/. |
-
-Climate City Contract. City of Barcelona
-
-#
 
 # PART C - ACHIEVING CLIMATE NEUTRALITY BY 2030
 
@@ -3592,18 +2515,11 @@ Climate City Contract. City of Barcelona
 | Political and management steering committee                            | Strategic decision-making body                                        | 1st Deputy Mayor Commissioner for Strategic Projects and Agenda 2030 City Manager        | Mayor and municipal government Municipal managers' bureau                                                                                                                                        | Approval of the decisions necessary for the conduct of the mission. Provision of the necessary resources Accountability from the technical level | Political-technical alignment                                                      |
 | Municipal Plenary Commission on Mission                                | Body in charge of channelling political debate and consensus building | 1st Deputy Mayor Commissioner for Strategic Projects and Agenda 2030                     | Representatives of the municipal groups                                                                                                                                                          | Formulation and discussion of the various points of view. Clarification of                                                                       | Dissemination of the Mission and all that it entails among the different           |
 
-Climate City Contract. City of Barcelona
-Climate City Contract. City of Barcelona
-7
-
 |                                      |                                                                                                                                                                                                                                                                                                                                                                                            |                                                                                                       |                                                                                                                                                                     | positions and possible consensus building.                                                   | ideological sectors of the city.          |
 | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | ----------------------------------------- |
 | Citizens' Council for Sustainability | It is a consultative and sectoral participatory body that acts in areas related to sustainability. Its members represent the Barcelona + Sustainable Network and have been selected through an elective process. It has a Permanent Commission and several Working Groups that are constituted to deepen and establish lines of action on priorities, such as the Climate Emergency Table. | Chaired by the Mayor or his delegate. Technical Secretariat: Climate Change and Sustainability Office | Formed by 58 organisations that represent the B+S Network; it includes educational centres, entities, companies, other administrations, foundations, entities, etc. | Promotion and participatory development of the Mission's transformative actions              | Networking Co-responsibility Co-creation  |
 | Climate emergency bureau             | Council Working Group,                                                                                                                                                                                                                                                                                                                                                                     | Chaired by the Mayor or his delegate.                                                                 | Made up of 300 people representing 200 organisations                                                                                                                | Definition of concrete measures to be developed to effectively address the climate emergency | Co-creation Accountability (transparency) |
 | The Barcelona                        | Formed by                                                                                                                                                                                                                                                                                                                                                                                  | Head of the                                                                                           | It is currently made                                                                                                                                                | Implementation                                                                               | Networking                                |
-
-Climate City Contract. City of Barcelona
-8
 
 | + Sustainable Network                    | organisations that voluntarily assume the principles and objectives of the Citizens' Commitment to Sustainability (currently under renewal), commit themselves to carry out actions to contribute to the shared objectives and make them public. | Climate Change and Sustainability Office, which manages the technical secretariat of the Trade Union Network and administrations. | up of almost 2,000 citizens' organisations, business and trade organisations, educational centres, universities and professional associations, | of sustainability measures in their organisations and in collaboration with others.                           | Co-creation Partnerships with key actors in the city |
 | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- |
@@ -3611,13 +2527,7 @@ Climate City Contract. City of Barcelona
 | Management Model of Management by Values | Focus on five values, including co-creation                                                                                                                                                                                                      | City Manager                                                                                                                      | All municipal administrations                                                                                                                  | Dissemination and promotion of good practices. Change in organisational culture                               |                                                      |
 | Decidim.org                              | Digital platform for citizen participation to build an open, transparent and collaborative city.                                                                                                                                                 | Directorate for Democratic Innovation, Barcelona City Council                                                                     | Municipal Institute of Informatics Communications Directorate of the City Council                                                              | Between 2019 and 2022, more than 100,000 people have participated in the 64 open participatory processes.     |                                                      |
 
-Climate City Contract. City of Barcelona
-9
-
-| (Municipal) network of innovation agents | It is a network created to ensure that innovation is a key element in the functioning of Barcelona City Council. It is made up of agents who are responsible for promoting innovation vertically within the organisation and coordinating horizontally with the rest of the agents. | Municipal Management and BIT Habitat Foundation | All municipal administrations | - Promote innovation within each area, with shared diagnosis, clear instruments and acquired competences.
-Structuring innovation.
-Collaborate internally by sharing knowledge and experience on innovation.
-Develop cross-cutting projects. | |
+| (Municipal) network of innovation agents | It is a network created to ensure that innovation is a key element in the functioning of Barcelona City Council. It is made up of agents who are responsible for promoting innovation vertically within the organisation and coordinating horizontally with the rest of the agents. | Municipal Management and BIT Habitat Foundation | All municipal administrations | - Promote innovation within each area, with shared diagnosis, clear instruments and acquired competences. Structuring innovation. Collaborate internally by sharing knowledge and experience on innovation. | Develop cross-cutting projects. | |
 | --- | --- | --- | --- | --- | --- |
 
 Recent studies, such as the white paper for the reform of the Barcelona Charter and the proposal for "Social and Smart Governance" (Ramió i Salvador, 2019) will be used to formulate a governance model for climate policies that is up to the challenge posed by the Mission.
@@ -3631,43 +2541,29 @@ MODULE C-2: Social and other innovation actions
 | Department of Economy, Resources and Economic                                             | The Measure drives organisational and operational transformation, taking into account synergies between business, social, digital, democratic and urban services innovation, in a way | - Support for the creation of public-private partnerships |
 | Involvement of the innovation ecosystem in the City Council's decision-making through the |
 
-Climate City Contract. City of Barcelona
-0
-
 |                                                     | quality of life, combating climate emergency and fostering urban resilience. The measure organises the instruments available to Barcelona City Council to accelerate this change, innovate services, processes and governance, and accelerate innovation in the city and with the city.                                                                                                                                                                                                  |                                                                                    | Promotion (Barcelona Activa) - Town Planning Area - Area of Democratic Innovation - Innovation and Digital Transition Area - Social Innovation Area - Mobility Area - Fira de Barcelona - Administrative Contracting Coordination Services Directorate | that accelerates projects to achieve the green and digital transition. It includes plans and projects focused on emissions reduction, urban resilience and the fight against climate change.                               | Urban Innovation Platform                                                      |
 | --------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
 | Measure of Social Innovation Government 2021 / 2023 | The measure aims to boost the effort in social innovation, which is especially necessary after the pandemic of AIDS-19. The municipal strategy on social innovation pursues two main objectives: to improve responses to social problems and to facilitate citizens' access to municipal social services by incorporating digital tools and artificial intelligence. The innovative projects are divided into three strategic blocks: Basic rights and citizen empowerment 2. New social | Area of Social Rights, Health, Cooperation and Community of Barcelona City Council | Providers and users of social services                                                                                                                                                                                                                 | The digitalisation and improvement of social services allows citizens to get involved with the administration to promote projects such as the Energy Advice Points or the construction of sustainable cooperative housing. | The Measure promotes citizen participation, equity and digital transformation. |
-
-Climate City Contract. City of Barcelona
-1
 
 |                                           | model of the city: "Let's take care of each other as a community". 3. Digital transformation.                                                                                                                                                                                                                                                                                                                                                                                                                               |                        |                      |     |     |
 | ----------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- | -------------------- | --- | --- |
 | Barcelona Urban Innovation Platform (PIU) | Space for dialogue, reflection and consensus that brings together the players in the innovative ecosystem of the The city, made up of citizens, universities and research centres, and the business fabric. About 100 people from different backgrounds participate in the Platform. and disciplines, which have the function of encouraging, accompanying, accelerating, communicating, measuring and assessing innovation in the city, facilitating experimentation and by working to reduce the barriers that hinder it. | BIT Habitat Foundation | - EIT Urban Mobility |
 
 Red Innpulso, of the Ministry of Science and Innovation
-ICC (Intelligent Cities Challenge) of the European Commission | The network facilitates the ideation and promotion of projects related to urban sustainability through advanced technologies, in various fields such as mobility or digital urban policies. | The network facilitates the exchange of knowledge on education, business creation, innovative industry and innovative local policies. |
-| Barcelona Innovation Coast | An initiative that seeks to diversify the city's economy and generate quality employment, promoting innovative projects in mobility, health, energy, technology and digitalisation. It includes a public- | Economic Management | Entities of the city's innovative ecosystem Business sector | The BIC promotes projects to improve and decarbonise public transport and coordinates Barcelona City Council's participation in the Enel Innovation Energy Hub, which helps start-ups in the energy sector to | - Support for the creation of public-private partnerships
-Launch of challenges related to urban mobility, such as reducing motorbike accidents, one of the main |
-Climate City Contract. City of Barcelona
-2
+| ICC (Intelligent Cities Challenge) of the European Commission | The network facilitates the ideation and promotion of projects related to urban sustainability through advanced technologies, in various fields such as mobility or digital urban policies. | The network facilitates the exchange of knowledge on education, business creation, innovative industry and innovative local policies. |
+| Barcelona Innovation Coast | An initiative that seeks to diversify the city's economy and generate quality employment, promoting innovative projects in mobility, health, energy, technology and digitalisation. It includes a public- | Economic Management | Entities of the city's innovative ecosystem Business sector | The BIC promotes projects to improve and decarbonise public transport and coordinates Barcelona City Council's participation in the Enel Innovation Energy Hub, which helps start-ups in the energy sector to | - Support for the creation of public-private partnerships | Launch of challenges related to urban mobility, such as reducing motorbike accidents, one of the main |
 
 |                                                | private platform that brings together the city's main innovative agents: universities and business schools, research and knowledge transfer centres, business associations, clusters, financial agents and public administrations. It also includes a team focused on promoting and coordinating innovative projects such as Barcelona Innova Lab Mobility.                                                                                                                                                                                      |                                                                                    |                                      | scale their sustainable solutions, from the reduction of greenhouse gases to the impact of electricity infrastructures on the environment or energy storage systems. The aim is for these start-ups to become part of the group of suppliers of the Enel-Endesa electricity company. | concerns of drivers and road safety organisations in Barcelona. |
 | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------- |
 | Innovation challenges (innovation procurement) | The challenges aim to focus on solving complex and specific problems and needs that require innovative solutions. Solving a challenge starts with an open consultation with the innovation ecosystem. It facilitates creativity as it avoids the prescription or specific request for solutions. BIT Habitat promotes, designs and adapts the format of urban challenges to the requirements of the municipal area that opts for this methodology to test pilots and find solutions to a specific need that requires an appeal to the innovative | BIT Habitat Foundation / BSM / Commissioner for Strategic Projects and Agenda 2030 | • Barcelona Municipal Services (BSM) |
 
 • Barcelona Mobile World Congress Foundation
-• Barcelona Fair | Some of the challenges are related to decarbonisation, such as the "Pavements Generating (renewable energy) Challenge", or the electromobility challenges posed by BSM; others are related to energy transition and climate change in a broad sense, such as the DataCity Challenge to reduce energy poverty or the Challenge for innovation in the energy renovation of residential buildings. | - Support for the creation of public-private partnerships |
-Climate City Contract. City of Barcelona
-3
+| • Barcelona Fair | Some of the challenges are related to decarbonisation, such as the "Pavements Generating (renewable energy) Challenge", or the electromobility challenges posed by BSM; others are related to energy transition and climate change in a broad sense, such as the DataCity Challenge to reduce energy poverty or the Challenge for innovation in the energy renovation of residential buildings. | - Support for the creation of public-private partnerships |
 
 |                                                                       | ecosystem.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |                                                                                                  |                                                                                                      |                                                                                                                                                                                                 |                                                                                                                                                                                                                                                                                             |
 | --------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Barcelona Innova Lab Mobility                                         | Urban laboratory that promotes innovative sustainable mobility projects and drives the testing of the solutions developed as pilots in real spaces in the city.                                                                                                                                                                                                                                                                                                                                                | Fira de Barcelona / BIT Habitat Foundation / Commissioner for Strategic Projects and Agenda 2030 | - DGT (General Directorate of Traffic of the Spanish Government) - EIT Urban Mobility                | The Lab includes projects such as the transformation of the H12 bus line into BRT, fully electric and optimised.                                                                                | It facilitates the collection of ideas and proposals from the private sector. The first challenge, how to reduce motorbike accidents, has received more than 40 proposals and two companies have been selected to start developing innovative solutions and testing them with real drivers. |
 | "The Proactive City" Call for proposals for urban innovation projects | "The Proactive City provides financial and technical support for the implementation of projects and initiatives that respond to the challenges facing the city. The selected projects must generate changes in the urban environment and ensure a quantifiable social return, as well as achieving positive and measurable impacts on the city of Barcelona and on people's quality of life. Through an annual call, the local ecosystem is invited to actively participate in the generation of proposals and | BIT Habitat Foundation                                                                           | Individuals and groups with the desire and capacity to generate excellent urban innovation projects. | Many of the winning projects respond to challenges of urban sustainability, climate emergency, offering circular economy solutions, affordable and sustainable housing, consumer methodologies. | It encourages the participation of micro-enterprises, cooperatives, research centres, universities, foundations, associations, consortiums and companies to respond to urban challenges through innovative solutions.                                                                       |
-
-Climate City Contract. City of Barcelona
-4
 
 |                                                     | solutions to the challenges posed, and to promote urban innovation in an open, plural and multidisciplinary way.                                                                                                                                                                                                                                                                                             |                                          |                                                                |                                                                                                                                                                                                                                                                                                                                                                                                                                  |                                                                                                                                                     |
 | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -3675,13 +2571,8 @@ Climate City Contract. City of Barcelona
 | Urban Innovation Action _Escoles refugi_ (climatic) | Project to convert eleven schools that are currently vulnerable to heat into climatic refuges open to all citizens by implementing traditional solutions against heat in the buildings and transforming the courtyards by introducing vegetation, insulation, shaded areas and water points. It is part of the Barcelona Climate Plan, which includes 242 actions to mitigate the effects of climate change. | (in organisational transition)           | Urban Innovation Action (UIA), a European Commission programme | The project is part of the sustainable urban transformation, as it has allowed the recovery of some 1,000 square metres of natural soil with vegetation in the school playgrounds, replacing the concrete floor, thousands of square metres of shade have been created, a total of 74 trees have been planted, equivalent to those that exist in two entire blocks of the Eixample, and 26 new water points have been installed. | It encourages the participation of students, the educational community and various institutions, while monitoring changes in health and well-being. |
 | Green roof competition                              | A three-yearly competition to award cash prizes                                                                                                                                                                                                                                                                                                                                                              | Municipal Institute of Urban             | Housing developers, service sector                             | There have been two calls for proposals, 2017 and                                                                                                                                                                                                                                                                                                                                                                                | As well as helping to make Barcelona a                                                                                                              |
 
-Climate City Contract. City of Barcelona
-5
-
 |     | to the best green roof projects to facilitate their realisation. The ten winning projects receive a grant of 75% of the cost, with a limit of 100,000 euros per roof. The ten runners-up receive a grant of 1,500 euros for technical costs. | Landscape | entrepreneurs, residents' associations, homeowners, property owners, etc. | 2020, in each of which 10 roofs have been awarded. Together, 7,600 m2 of green areas have been created on building roofs. | resilient city in the face of the climate crisis, green roofs provide a collective and social benefit for residents, who gain living and leisure spaces in their buildings and develop an activity that fosters social cohesion. |
 | --- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-
-#
 
 MODULE C-3: Equity portfolio financing (Economic Case)
 
@@ -3697,10 +2588,6 @@ For this and other reasons, related to the ingrained planning culture in the Bar
 | Reduction in the need for transport                      | 15%              | reduction                                 | 2020-2030      | Transport               | 85                                              | 1.081                              | 295                                         | -     |
 | Modal shift: shift to public and non-motorised transport | 25%              | reduction in private vehicle passenger-km | 2020-2030      | Transport               | 86                                              | 403                                | 891                                         | (165) |
 
-Climate City Contract. City of Barcelona
-Climate City Contract. City of Barcelona
-7
-
 | Shared transport                            | 11%  | due to increased transport efficiency                                                        | 2020-2030 | Transport             | 35  | 459   | 138 | -       |
 | ------------------------------------------- | ---- | -------------------------------------------------------------------------------------------- | --------- | --------------------- | --- | ----- | --- | ------- |
 | Car electrification                         | 32%  | of the electrified fleet by 2040                                                             | 2020-2040 | Transport             | 63  | 55    | 42  | (118)   |
@@ -3713,8 +2600,6 @@ Climate City Contract. City of Barcelona
 | New near-zero energy buildings              | 20%  | percentage of new buildings constructed according to the highest energy efficiency standards | 2020-2030 | Buildings and heating | 9   | 111   | 9   | (137)   |
 | Efficient lighting and appliances           | 100% | of luminaires retrofitted between 2020 and 2030 (40% efficiency improvements)                | 2020-2030 | Buildings and heating | 231 | 3.016 | 27  | (1.471) |
 
-8
-
 | Low-emission heat generation (decarbonisation of heating) | 35%  | Percentage of electric local heating                                                              | 2020-2030 | Buildings and heating | 235  | 268   | 119   | (355)   |
 | --------------------------------------------------------- | ---- | ------------------------------------------------------------------------------------------------- | --------- | --------------------- | ---- | ----- | ----- | ------- |
 | Building renovations [1].                                 | 6,0% | of all existing buildings / year                                                                  | 2020-2030 | Electricity           | 577  |       |       |         |
@@ -3726,7 +2611,6 @@ Climate City Contract. City of Barcelona
 | Other                                                     |      |                                                                                                   | 2020-2030 | Other                 | 116  |       |       |         |
 | Total                                                     |      |                                                                                                   |           |                       | 3097 | 7.987 | 1.831 | (8.170) |
 
-Climate City Contract. City of Barcelona
 citiES 2030
 
 ![img-11.jpeg](img-11.jpeg)
@@ -3739,8 +2623,6 @@ citiES 2030
 ![img-12.jpeg](img-12.jpeg)
 
 # ANNEX 3: Individual Signatory Commitments
-
-#
 
 # Annex 3: Membership of organisations
 
@@ -3755,7 +2637,6 @@ Members of the Barcelona + Sustainable Network
 
 The search for support will be extended to new actors, such as emerging companies, international organisations with a presence in the city, etc. The support of metropolitan and Catalan political institutions will also be formalised. The endorsements obtained, all with concrete commitments from each organisation, will complete Annex 3 of the CCC.
 
-Climate City Contract. City of Barcelona
 ![img-14.jpeg](img-14.jpeg)
 
 # Barcelona
@@ -3810,7 +2691,6 @@ The Platform's governance is multi-stakeholder and multi-level, with the aim of 
 - The academia (universities and research centres).
 - The civil society (NGOs and neighbourhood associations).
 - The media.
-  4
 
 The support to mobilisation of green investments. A good example is the deployment of the Recovery, Transformation and Resilience Plan through the mobilisation of an unprecedented volume of investment that prioritises not only mitigating the effects of the crisis, but also the transformation of our country towards a sustainable and inclusive economy.
 
@@ -3822,7 +2702,6 @@ The Recovery Plan recognises the fundamental role of cities in economic and soci
 - The promotion of self-consumption for the energy use of urban roofs and decks, storage behind the meter and renewable HVAC in homes.
 - The development of transformative strategies and initiatives for urban renaturalisation, helping to increase green infrastructure and biodiversity in Spanish cities and favouring Nature-Based Solutions to respond to their socio-environmental challenges.
 - The support for the implementation of waste regulation, in collaboration with the autonomous communities and cities, with investments in
-  5
 
 digitalisation for environmental management, through the Recovery Plan.
 

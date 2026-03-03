@@ -936,9 +936,9 @@ A-2.1: List of relevant policies, strategies &amp; regulations
 |  Name & Title | Type | Level | Scope | Relevance | Impact on climate neutrality ambition  |
 | --- | --- | --- | --- | --- | --- |
 |   |  |  | appropriate infrastructure;
-Preservation of ecosystems by improving inter-block spaces, creating green areas, linear parks, etc. |  |   |
+| Preservation of ecosystems by improving inter-block spaces, creating green areas, linear parks, etc. |  |   |
 |  SECAP 2021-2030 including the Energy Efficiency Program and the Long-term program for promoting the use of renewable energy of Sofia Municipality | Action plan | Local | Developed following the commitment of Sofia made by joining the Global Covenant of Mayors on Climate and Energy (GCCME). With its implementation, at the end of this period, is envisaged to achieve a reduction GHG emissions within the established scope of the plan by a minimum of 40%.
-The plan provides for totally 65 measures in the field of both climate change mitigation and adaptation | The SECAP complies with the EU Mission climate neutrality ambition by 2030 | The plan contributes to the achievement of 40% reduction of GHG emissions and addresses the adaptation to climate change in the urban environment. It should be updated to get in full consistency with the new targets at local, national and European level  |
+| The plan provides for totally 65 measures in the field of both climate change mitigation and adaptation | The SECAP complies with the EU Mission climate neutrality ambition by 2030 | The plan contributes to the achievement of 40% reduction of GHG emissions and addresses the adaptation to climate change in the urban environment. It should be updated to get in full consistency with the new targets at local, national and European level  |
 |  Sustainable Urban Mobility Plan 2019-2035 | Strategy | Local | The general objectives of the plan include:
 • Reducing the negative impact of transport on human health and the environment;
 • Increasing the attractiveness of the urban environment and |  |   |
@@ -1843,7 +1843,7 @@ B-2.1.1: Description of action portfolios – actions from existing strategies
 |   | energy of the sewerage systems wastewater | use in private sites. The analytical part of the guide to be produced will also provide the location of the suitable areas in Sofia, with high groundwater or surface water sources that are suitable for heating and cooling of buildings and supply of domestic hot water.  |
 | --- | --- | --- |
 |   |  1.4. Creation of rules and a model of public-private partnership to ensure the wider penetration of RES in the municipal building stock | Creation of rules and a model of public-private partnership to ensure the wider penetration of RES in the municipal building stock.
-Action aims at attracting private investment through public-private partnerships for accelerating the introduction of new and more efficient technologies and for ensuring their good management and operation.  |
+| Action aims at attracting private investment through public-private partnerships for accelerating the introduction of new and more efficient technologies and for ensuring their good management and operation.  |
 |   |  1.5. Creation of spatial map of RES sites by type of technology | The measure proposes the development of a spatial map of the sites with RES by technology types in order to monitor the development of the sector, promote its potential and plan the measures in this direction. The creation of the map will help to analyze the applicability of the technologies by districts and territorial units and plan the measures for their development.  |
 |   |  1.6. Practical guide preparation related to the regulatory and other requirements and principles for the establishment of renewable energy communities | The action aims at acceleration of the process of establishment of renewable energy communities as well as establishment of consumers of self-produced electricity which are supported in the European RES Directive. The development of a practical manual aims to provide information and examples of such projects implementation and the benefits for the participants in the models.  |
 |  Energy Systems | 1.7. Establishment of a unified register for the energy performance of the new buildings on the territory of Sofia Municipality, including the production of energy from renewable sources | The action provides for the creation of a unified online register of the energy performance of the new buildings in Sofia Municipality in compliance with the EEA requirements and of internal rules for the timely data entry by the responsible persons that will allow the municipality to have clear and with high level of accuracy information for the estimation of the energy consumption of the new buildings and the renewable energy used  |
@@ -2125,9 +2125,9 @@ Action 1.5.
 |   |  Comments on implementation | Pending  |
 |  Impact & cost | Generated renewable energy (if applicable) | -  |
 |   |  Removed/substituted energy, volume or fuel type | 1. 534 MWh fuel savings
-820 MWh energy savings  |
+| 820 MWh energy savings  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 1. 101 tCO2e
-343 tCO2e  |
+| 343 tCO2e  |
 |   |  GHG emissions compensated (natural or technological sinks) | N/A  |
 |   | Total costs and costs by CO2e unit | TBD  |
 

@@ -64,31 +64,31 @@ The 2030 Climate Neutrality Action Plan for District 2 outlines a series of inte
 
 The list of abbreviations and acronyms identifies the abbreviations (a shortened form of a word used in place of the full word) and acronyms (a word formed from the first letters of each of the words in a phrase of name) used in the Action Plan.
 
-|  Abbreviations and acronyms | Definition  |
+| Abbreviations and acronyms | Definition |
 | --- | --- |
-|  AFOLU | Agricultural, Forestry, and Land Use  |
-|  CO2 | Carbon Dioxide  |
-|  CNAP | Climate Neutrality Action Plan  |
-|  EU | European Union  |
-|  IPPU | Industrial Process and Product Use  |
-|  ISLDS | Integrated and Sustainable Local Development Strategy  |
-|  LDS | Local Development Strategy  |
-|  MWh | Megawatt-Hour  |
-|  NGO | Non-governmental Organisation  |
-|  NRRP | National Recovery and Resilience Plan  |
+| AFOLU | Agricultural, Forestry, and Land Use |
+| CO2 | Carbon Dioxide |
+| CNAP | Climate Neutrality Action Plan |
+| EU | European Union |
+| IPPU | Industrial Process and Product Use |
+| ISLDS | Integrated and Sustainable Local Development Strategy |
+| LDS | Local Development Strategy |
+| MWh | Megawatt-Hour |
+| NGO | Non-governmental Organisation |
+| NRRP | National Recovery and Resilience Plan |
 PRIMÁRIA
 MULTIMUNO
 
 Climate Neutrality Action
 Plan
 
-|  nZEB | nearly Zero Emission Building  |
+| nZEB | nearly Zero Emission Building |
 | --- | --- |
-|  PIEE | Energy Efficiency Improvement Programme  |
-|  PPP | Public-Private Partnership  |
-|  RES | Renewable energy source  |
-|  ROP | Regional Operational Programme  |
-|  SUMP | Sustainable Urban Mobility Plan  |
+| PIEE | Energy Efficiency Improvement Programme |
+| PPP | Public-Private Partnership |
+| RES | Renewable energy source |
+| ROP | Regional Operational Programme |
+| SUMP | Sustainable Urban Mobility Plan |
 
 6
 PRIMÁRIA
@@ -271,26 +271,25 @@ District 2's GHG emissions inventory outlines a detailed account of energy usage
 
 was chosen as the base year as no other recent data is available at the moment. The gap also concerns the lack of data availability on various emissions, for this purpose, CO2 emissions being the only ones taken into account. Recognising the critical need for updated and ongoing data collection to accurately monitor progress and adjust strategies towards climate neutrality, District 2 aims to innovate its approach by engaging in partnerships with academic institutions and capitalising on its involvement with the National Competence Centre. Updated and completed data will be available at the future CNAP iterations (2025).
 
-|  A-1.1: Final energy use by source sectors  |   |   |   |   |
+| A-1.1: Final energy use by source sectors |  |  |  |  |
 | --- | --- | --- | --- | --- |
-|  Base year | 2016  |   |   |   |
-|  Unit | MWh/year  |   |   |   |
-|   | Scope 1 | Scope 2 | Scope 3 | Total  |
-|  Buildings | 837,480 | 1,581,056 | N/A | 2,418,536  |
-|  (Fuel type/energy used) | Natural gas: 837,480 | Electrical energy: 893,126 Natural gas: 687,930 | N/A |   |
-|  Transport | 656,575 | 17,085 | N/A | 673,660  |
-|  (Fuel type/energy used) | Diesel: 399,433 Gasoline: 257,142 | Electrical energy: 17,085 | N/A |   |
-|  Waste | 40,555 | 111,500 | N/A | 152,055  |
-|  (Fuel type/energy used) | Diesel: 40,555 | Electrical energy: 111,500 | N/A |   |
-|  Industrial Process and Product¹ Use (IPPU) | 411,953 | 503,498 | N/A | 915,451  |
-|  (Fuel type/energy used) | Natural gas: 411,953 | Electrical energy: 503,498 | N/A |   |
-|  Agricultural, Forestry and Land Use² (AFOLU) | 16,639 | 24,958 | N/A | 41,597  |
-|  (Fuel type/energy used) | Diesel: 16,639 | Electrical energy: 24,958 | N/A |   |
-|  |   |   |   |   |
-|  A-1.2: Emission factors applied  |   |   |   |   |
-|  (Please specify for primary energy type and GHG emission factor according to methodology used).  |   |   |   |   |
-|  The IPCC method was used to convert MWh/year of energy into tons CO2/year emissions.  |   |   |   |   |
-|  (Please indicate method used, e.g., GPC, IPCC, CRF, national etc.)  |   |   |   |   |
+| Base year | 2016 |  |  |  |
+| Unit | MWh/year |  |  |  |
+|  | Scope 1 | Scope 2 | Scope 3 | Total |
+| Buildings | 837,480 | 1,581,056 | N/A | 2,418,536 |
+| (Fuel type/energy used) | Natural gas: 837,480 | Electrical energy: 893,126 Natural gas: 687,930 | N/A |  |
+| Transport | 656,575 | 17,085 | N/A | 673,660 |
+| (Fuel type/energy used) | Diesel: 399,433 Gasoline: 257,142 | Electrical energy: 17,085 | N/A |  |
+| Waste | 40,555 | 111,500 | N/A | 152,055 |
+| (Fuel type/energy used) | Diesel: 40,555 | Electrical energy: 111,500 | N/A |  |
+| Industrial Process and Product¹ Use (IPPU) | 411,953 | 503,498 | N/A | 915,451 |
+| (Fuel type/energy used) | Natural gas: 411,953 | Electrical energy: 503,498 | N/A |  |
+| Agricultural, Forestry and Land Use² (AFOLU) | 16,639 | 24,958 | N/A | 41,597 |
+| (Fuel type/energy used) | Diesel: 16,639 | Electrical energy: 24,958 | N/A |  |
+| A-1.2: Emission factors applied |  |  |  |  |
+| (Please specify for primary energy type and GHG emission factor according to methodology used). |  |  |  |  |
+| The IPCC method was used to convert MWh/year of energy into tons CO2/year emissions. |  |  |  |  |
+| (Please indicate method used, e.g., GPC, IPCC, CRF, national etc.) |  |  |  |  |
 中
 
 PRIMÁRIA
@@ -301,26 +300,26 @@ Plan
 
 #
 
-|  Primary energy/ energy source | Carbon Dioxide (CO2) | Methane (CH4) | Nitrous Oxide (N2O) | F-gases (hydrofluorocarbons and perfluorocarbons) | Sulphur hexafluoride (SF6) | Nitrogen trifluoride (NF3)  |
+| Primary energy/ energy source | Carbon Dioxide (CO2) | Methane (CH4) | Nitrous Oxide (N2O) | F-gases (hydrofluorocarbons and perfluorocarbons) | Sulphur hexafluoride (SF6) | Nitrogen trifluoride (NF3) |
 | --- | --- | --- | --- | --- | --- | --- |
-|  Electrical energy 2016 | 0.401 | N/A | N/A | N/A | N/A | N/A  |
-|  Natural gas 2016 | 0.202 | N/A | N/A | N/A | N/A | N/A  |
-|  Diesel 2016 | 0.267 | N/A | N/A | N/A | N/A | N/A  |
-|  Gasoline 2016 | 0.249 | N/A | N/A | N/A | N/A | N/A  |
-|  Bio-fuel 2016 | 0.001 | N/A | N/A | N/A | N/A | N/A  |
-|  Electrical energy 2030 | 0.176 | N/A | N/A | N/A | N/A | N/A  |
-|  Green electrical energy (energy from renewable sources) | 0 | N/A | N/A | N/A | N/A | N/A  |
+| Electrical energy 2016 | 0.401 | N/A | N/A | N/A | N/A | N/A |
+| Natural gas 2016 | 0.202 | N/A | N/A | N/A | N/A | N/A |
+| Diesel 2016 | 0.267 | N/A | N/A | N/A | N/A | N/A |
+| Gasoline 2016 | 0.249 | N/A | N/A | N/A | N/A | N/A |
+| Bio-fuel 2016 | 0.001 | N/A | N/A | N/A | N/A | N/A |
+| Electrical energy 2030 | 0.176 | N/A | N/A | N/A | N/A | N/A |
+| Green electrical energy (energy from renewable sources) | 0 | N/A | N/A | N/A | N/A | N/A |
 
 2016 factors. The emission factors for 2016 estimates were taken from carbonfootprint.com and are emission factors published in 2019, based on 2018 national inventory which is based on 2016 data.
 2030 factors. The factors for 2030 were taken from the JRC Scientific Information System and Database Report 2022 which has updated data from the same national inventories and also estimates emission factors for 2030 based on information about national energy projects that are underway. Both 2016 and 2030 factors are IPCC compliant.
 
 A-1.3: Activity by source sectors
 
-|  Base year: 2030 |   |   |   |
+| Base year: 2030 |  |  |  |
 | --- | --- | --- | --- |
-|   | Scope 1 | Scope 2 | Scope 3  |
-|  Sector: Buildings |  |  |   |
-|  (Activity) | - Construction of nZEB plus buildings for young citizens | - Renovation of public buildings.(1,274 CO2 tons/year reduction) | N/A  |
+|  | Scope 1 | Scope 2 | Scope 3 |
+| Sector: Buildings |  |  |  |
+| (Activity) | - Construction of nZEB plus buildings for young citizens | - Renovation of public buildings.(1,274 CO2 tons/year reduction) | N/A |
 5
 
 PRIMÁRIA
@@ -329,38 +328,41 @@ MAITONIACCI
 
 Climate Neutrality Action Plan
 
-|   | (2,453 CO2 tons/year reduction)
+|  | (2,453 CO2 tons/year reduction) |
+| --- | --- |
 Integrated investments to ensure climate neutrality
 (51,420 CO2 tons/year reduction) | - Reconversion of public spaces for sustainable development (11,750 CO2 tons/year reduction)
 Social inclusion program for sustainable development (6,242 CO2 tons/year reduction)
 Development of educational infrastructure for climate neutral education (2,490 CO2 tons/year reduction)
 Comprehensive energy efficiency and modernisation program targeting educational institutions, public administrative buildings, and cultural heritage sites across District, Bucharest (56,563 CO2 tons/year reduction)
 Development of green roofs (9,528 CO2 tons/year reduction)
-Extensive moderate energy renovation of multifamily residential buildings in District of Bucharest (245,230 CO2 tons/year reduction) |   |
-| --- | --- | --- | --- |
-|  Sector: Transport |  |  |   |
-|  (Activity) | - Expansion and enhancement of the public lighting system across green spaces, parks, playgrounds, and parking areas in designated locations (586 CO2 tons/year reduction)
+| Extensive moderate energy renovation of multifamily residential buildings in District of Bucharest (245,230 CO2 tons/year reduction) |  |
+| --- | --- |
+| Sector: Transport |  |
+| (Activity) | - Expansion and enhancement of the public lighting system across green spaces, parks, playgrounds, and parking areas in designated locations (586 CO2 tons/year reduction) |
 Rehabilitation and reconfiguration of street network to increase transport efficiency and decrease pollution levels. (86,325 CO2 tons/year reduction)
 Development of a network of EV charging stations (5,802 CO2 tons/year reduction)
 Decrease number of visits to public administration offices through digitalisation. (4,667 CO2 tons/year reduction)
-New parking policy and new residential parking facilities meant to decrease car use and transform parking spaces into |  |   |
+| New parking policy and new residential parking facilities meant to decrease car use and transform parking spaces into |  |  |
+| --- | --- | --- |
 PRIMÁRIA
 MAITONIACCI
 Climate Neutrality Action
 Plan
 6
 
-|   | public areas. (3,263 CO2 tons/year reduction)
+|  | public areas. (3,263 CO2 tons/year reduction) |
+| --- | --- |
 Increased pedestrian mobility by revitalisation urban parks, upgrade of pedestrian underpasses, and expansion of pedestrian-priority areas. (22,859 CO2 tons/year reduction)
-Enhancement and expansion of public transport systems with smart technology, new trams, dedicated lanes, and new routes for a cleaner urban travel.(38,183 CO2 tons/year reduction) |  |   |
-| --- | --- | --- | --- |
-|  Sector: Waste |  |  |   |
-|  (Activity) |  | - New waste sorting infrastructure to reduce energy consumption and increase waste management capabilities (9,619 CO2 tons/year reduction)
-Public campaigns to reduce waste and increase recycling percentage among residents (13,203 CO2 tons/year reduction) |   |
-|  Sector: Industrial Process and Product Use (IPPU) |  |  |   |
-|  (Activity) | - Reconversion of former industrial areas (30,760 CO2 tons/year reduction) | - Upgrading the electrical infrastructure to enhance the reliability, efficiency, and intelligence of the electrical grid to meet current and future demands. (61,520 CO2 tons/year reduction)
-Development of a digital awareness and education center as well as training programs to support the understanding and education of companies and citizens regarding climate-neutral smart city concepts and efficient implementation methods (34,280 CO2 tons/year reduction) |   |
-|  Sector: Agricultural, Forestry and Land Use (AFOLU) |  |  |   |
+| Enhancement and expansion of public transport systems with smart technology, new trams, dedicated lanes, and new routes for a cleaner urban travel.(38,183 CO2 tons/year reduction) |  |  |
+| --- | --- | --- |
+| Sector: Waste |  |  |
+| (Activity) |  | - New waste sorting infrastructure to reduce energy consumption and increase waste management capabilities (9,619 CO2 tons/year reduction) |
+| Public campaigns to reduce waste and increase recycling percentage among residents (13,203 CO2 tons/year reduction) |  |  |
+| Sector: Industrial Process and Product Use (IPPU) |  |  |
+| (Activity) | - Reconversion of former industrial areas (30,760 CO2 tons/year reduction) | - Upgrading the electrical infrastructure to enhance the reliability, efficiency, and intelligence of the electrical grid to meet current and future demands. (61,520 CO2 tons/year reduction) |
+| Development of a digital awareness and education center as well as training programs to support the understanding and education of companies and citizens regarding climate-neutral smart city concepts and efficient implementation methods (34,280 CO2 tons/year reduction) |  |  |
+| Sector: Agricultural, Forestry and Land Use (AFOLU) |  |  |
 中
 
 PRIMÁRIA
@@ -371,23 +373,23 @@ Plan
 
 #
 
-|  (Activity) |  | - Citizen involvement program for sustainable Reconversion of public spaces (848 CO2 tons/year reduction) - Rehabilitation of water ways for sustainable development. (6,466 CO2 tons/year reduction)  |
+| (Activity) |  | - Citizen involvement program for sustainable Reconversion of public spaces (848 CO2 tons/year reduction) - Rehabilitation of water ways for sustainable development. (6,466 CO2 tons/year reduction) |
 | --- | --- | --- |
 
 The base year was set to 2030 as to demonstrate how the planned activities will decrease overall emissions.
 
 A-1.4: GHG emissions by source sectors
 
-|  Base year | 2016  |   |   |   |
+| Base year | 2016 |  |  |  |
 | --- | --- | --- | --- | --- |
-|  Unit | CO2 tons/year  |   |   |   |
-|   | Scope 1 | Scope 2 | Scope 3 | Total  |
-|  Buildings | 169,171 | 497,105 | N/A | 666,276  |
-|  Transport | 170,677 | 6,851 | N/A | 177,528  |
-|  Waste | 10,828 | 44,712 | N/A | 55,540  |
-|  Industrial Process and Product Use (IPPU) | 83,215 | 201,903 | N/A | 285,117  |
-|  Agricultural, Forestry and Land Use (AFOLU) | 4,443 | 10,008 | N/A | 14,451  |
-|  Total | 438,334 | 760,579 | N/A | 1,198,912  |
+| Unit | CO2 tons/year |  |  |  |
+|  | Scope 1 | Scope 2 | Scope 3 | Total |
+| Buildings | 169,171 | 497,105 | N/A | 666,276 |
+| Transport | 170,677 | 6,851 | N/A | 177,528 |
+| Waste | 10,828 | 44,712 | N/A | 55,540 |
+| Industrial Process and Product Use (IPPU) | 83,215 | 201,903 | N/A | 285,117 |
+| Agricultural, Forestry and Land Use (AFOLU) | 4,443 | 10,008 | N/A | 14,451 |
+| Total | 438,334 | 760,579 | N/A | 1,198,912 |
 
 The strategic documents consulted did not offer sufficient information as to determine the percentage of Scope 3 emissions as part of the overall total emissions.
 
@@ -417,113 +419,102 @@ PRIMÁRIA
 UNIVERSIDAD DE
 Plan O
 
-|  Energy Requirements Sector 2 - year 2016 (MWh/year)  |   |   |   |   |   |
+| Energy Requirements Sector 2 - year 2016 (MWh/year) |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- |
-|  Buildings 2016  |   |   |   |   |   |
-|   | MWh/year  |   |   |   |   |
-|  Energy use | Scope 1 | Scope 2 | Scope 3 | Total MWh/year | %  |
-|  Electrical energy |  | 893,126 |  | 893,126 | 37%  |
-|  Natural gas | 837,480 | 687,930 |  | 1,525,410 | 63%  |
-|   |  |  |  | 2,418,536 | 58%  |
-|  |   |   |   |   |   |
-|  IPPU  |   |   |   |   |   |
-|   | MWh/year  |   |   |   |   |
-|  Energy use | Scope 1 | Scope 2 | Scope 3 | Total MWh/year | %  |
-|  Electrical energy |  | 503,498 |  | 503,498 | 55%  |
-|  Natural gas | 411,953 |  |  | 411,953 | 45%  |
-|   |  |  |  | 915,451 | 22%  |
-|  |   |   |   |   |   |
-|  Transport  |   |   |   |   |   |
-|   | MWh/year  |   |   |   |   |
-|  Energy use | Scope 1 | Scope 2 | Scope 3 | Total MWh/year | %  |
-|  Electrical energy |  | 17,085 |  | 17,085 |   |
-|  Diesel | 399,433 |  |  | 399,433 |   |
-|  Gasoline | 257,142 |  |  | 257,142 |   |
-|   |  |  |  | 673,660 | 16%  |
-|  |   |   |   |   |   |
-|  Waste  |   |   |   |   |   |
-|   | MWh/year  |   |   |   |   |
-|  Energy use | Scope 1 | Scope 2 | Scope 3 | Total MWh/year | %  |
-|  Electrical energy |  | 111,500 |  | 111,500 | 73%  |
-|  Diesel | 40,555 |  |  | 40,555 | 27%  |
-|   |  |  |  | 152,055 | 4%  |
-|  |   |   |   |   |   |
-|  AFOLU  |   |   |   |   |   |
-|   | MWh/year  |   |   |   |   |
-|  Energy use | Scope 1 | Scope 2 | Scope 3 | Total MWh/year | %  |
-|  Electrical energy |  | 24,958 |  | 24,958 | 60%  |
-|  Diesel | 16,639 |  |  | 16,639 | 40%  |
-|   |  |  |  | 41,597 | 1%  |
-|  |   |   |   |   |   |
-|  TOTAL |   |   |   | 4,201,299 | 100%  |
-|  CO2 emissions Sector 2 - year 2016 (tons CO2/year)  |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- |
-|  CO2 tons/year  |   |   |   |   |   |
-|  Scope 1 | Scope 2 | Scope 3 | Total CO2 tons/γ | % |   |
-|   | 358,144 |  | 358,144 | 54% |   |
-|  169,171 | 138,962 |  | 308,133 | 46% |   |
-|   |  |  | 666,276 | 56% |   |
-|  |   |   |   |   |   |
-|  CO2 tons/year  |   |   |   |   |   |
-|  Scope 1 | Scope 2 | Scope 3 | Total CO2 tons/γ | % |   |
-|   | 201,903 |  | 201,903 | 71% |   |
-|  83,215 |  |  | 83,215 | 29% |   |
-|   |  |  | 285,117 | 24% |   |
-|  |   |   |   |   |   |
-|  CO2 tons/year  |   |   |   |   |   |
-|  Scope 1 | Scope 2 | Scope 3 | Total CO2 tons/γ | % |   |
-|   | 6,851 |  | 6,851 |  |   |
-|  106,649 |  |  | 106,649 |  |   |
-|  64,028 |  |  | 64,028 |  |   |
-|   |  |  | 177,528 | 15% |   |
-|  |   |   |   |   |   |
-|  CO2 tons/year  |   |   |   |   |   |
-|  Scope 1 | Scope 2 | Scope 3 | Total CO2 tons/γ | % |   |
-|   | 44,712 |  | 44,712 | 81% |   |
-|  10,828 |  |  | 10,828 | 19% |   |
-|   |  |  | 55,540 | 5% |   |
-|  |   |   |   |   |   |
-|  CO2 tons/year  |   |   |   |   |   |
-|  Scope 1 | Scope 2 | Scope 3 | Total CO2 tons/γ | % |   |
-|   | 10,008 |  | 10,008 | 69% |   |
-|  4,443 |  |  | 4,443 | 31% |   |
-|   |  |  | 14,451 | 1% |   |
-|  |   |   |   |   |   |
-|  TOTAL |   |   | 4,201,299 | 100% | 1,198,912  |
-|  MWh/year |   |   |   |   |   | CO2 Emission | % compared to 2016  |
+| Buildings 2016 |  |  |  |  |  |
+|  | MWh/year |  |  |  |  |
+| Energy use | Scope 1 | Scope 2 | Scope 3 | Total MWh/year | % |
+| Electrical energy |  | 893,126 |  | 893,126 | 37% |
+| Natural gas | 837,480 | 687,930 |  | 1,525,410 | 63% |
+|  |  |  |  | 2,418,536 | 58% |
+| IPPU |  |  |  |  |  |
+|  | MWh/year |  |  |  |  |
+| Energy use | Scope 1 | Scope 2 | Scope 3 | Total MWh/year | % |
+| Electrical energy |  | 503,498 |  | 503,498 | 55% |
+| Natural gas | 411,953 |  |  | 411,953 | 45% |
+|  |  |  |  | 915,451 | 22% |
+| Transport |  |  |  |  |  |
+|  | MWh/year |  |  |  |  |
+| Energy use | Scope 1 | Scope 2 | Scope 3 | Total MWh/year | % |
+| Electrical energy |  | 17,085 |  | 17,085 |  |
+| Diesel | 399,433 |  |  | 399,433 |  |
+| Gasoline | 257,142 |  |  | 257,142 |  |
+|  |  |  |  | 673,660 | 16% |
+| Waste |  |  |  |  |  |
+|  | MWh/year |  |  |  |  |
+| Energy use | Scope 1 | Scope 2 | Scope 3 | Total MWh/year | % |
+| Electrical energy |  | 111,500 |  | 111,500 | 73% |
+| Diesel | 40,555 |  |  | 40,555 | 27% |
+|  |  |  |  | 152,055 | 4% |
+| AFOLU |  |  |  |  |  |
+|  | MWh/year |  |  |  |  |
+| Energy use | Scope 1 | Scope 2 | Scope 3 | Total MWh/year | % |
+| Electrical energy |  | 24,958 |  | 24,958 | 60% |
+| Diesel | 16,639 |  |  | 16,639 | 40% |
+|  |  |  |  | 41,597 | 1% |
+| TOTAL |  |  |  | 4,201,299 | 100% |
+| CO2 emissions Sector 2 - year 2016 (tons CO2/year) |  |  |  |  |  |
+| CO2 tons/year |  |  |  |  |  |
+| Scope 1 | Scope 2 | Scope 3 | Total CO2 tons/γ | % |  |
+|  | 358,144 |  | 358,144 | 54% |  |
+| 169,171 | 138,962 |  | 308,133 | 46% |  |
+|  |  |  | 666,276 | 56% |  |
+| CO2 tons/year |  |  |  |  |  |
+| Scope 1 | Scope 2 | Scope 3 | Total CO2 tons/γ | % |  |
+|  | 201,903 |  | 201,903 | 71% |  |
+| 83,215 |  |  | 83,215 | 29% |  |
+|  |  |  | 285,117 | 24% |  |
+| CO2 tons/year |  |  |  |  |  |
+| Scope 1 | Scope 2 | Scope 3 | Total CO2 tons/γ | % |  |
+|  | 6,851 |  | 6,851 |  |  |
+| 106,649 |  |  | 106,649 |  |  |
+| 64,028 |  |  | 64,028 |  |  |
+|  |  |  | 177,528 | 15% |  |
+| CO2 tons/year |  |  |  |  |  |
+| Scope 1 | Scope 2 | Scope 3 | Total CO2 tons/γ | % |  |
+|  | 44,712 |  | 44,712 | 81% |  |
+| 10,828 |  |  | 10,828 | 19% |  |
+|  |  |  | 55,540 | 5% |  |
+| CO2 tons/year |  |  |  |  |  |
+| Scope 1 | Scope 2 | Scope 3 | Total CO2 tons/γ | % |  |
+|  | 10,008 |  | 10,008 | 69% |  |
+| 4,443 |  |  | 4,443 | 31% |  |
+|  |  |  | 14,451 | 1% |  |
+| TOTAL |  |  | 4,201,299 | 100% | 1,198,912 |
+| MWh/year |  |  |  |  |  | CO2 Emission | % compared to 2016 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-|  MWh/year |   |   |   |   |   |  |   |
-|  Energy use Scope 1 | Scope 2 | Scope 3 | Increase in Energy Required | Energy savings | Green Energy Produced | Total (without grass) | Total MWh/year  |
-|  Electrical energy | 893,126 |  | 386,011 | 526,381 | 893,013 | 752,731 | 1,243,700  |
-|  Natural gas | 837,480 | 687,930 |  |  | 1,456,960 | 0 | 66,450  |
-|   |  |  |  |  |  |  | 1,112,228  |
-|   |  |  |  |  |  |  | 135,122  |
-|  CO2 tons |   |   |   |   |   |  |   |
-|  MWh/year |   |   |   |   |   |  |   |
-|  Energy use Scope 1 | Scope 2 | Scope 3 | Increase in Energy Required | Energy savings | Green Energy Produced | Total (without grass) | Total MWh/year  |
-|  Electrical energy | 503,498 |  | 74,000 | 260,000 | 260,000 | 317,498 | 563,498  |
-|  Natural gas | 411,953 |  |  | 400,000 |  | 11,953 | 11,953  |
-|   |  |  |  |  |  |  | 574,451  |
-|  Transport tons |   |   |   |   |   |  |   |
-|  MWh/year |   |   |   |   |   |  |   |
-|  Energy use Scope 1 | Scope 2 | Scope 3 | Increase in Energy Required | Energy savings | Green Energy Produced | Total (without grass) | Total MWh/year  |
-|  Electrical energy | 11,585 |  | 148,916 | 45,632 | 213,606 | 84,279 | 297,985  |
-|  Diesel | 299,433 |  |  | 362,126 |  | 37,317 | 57,517  |
-|  Gasoline | 257,142 |  |  | 256,426 |  | 736 | 736  |
-|   |  |  |  |  |  |  | 156,018  |
-|  Waste |   |   |   |   |   |  |   |
-|  MWh/year |   |   |   |   |   |  |   |
-|  Energy use Scope 1 | Scope 2 | Scope 3 | Increase in Energy Required | Energy savings | Green Energy Produced | Total (without grass) | Total MWh/year  |
-|  Electrical energy | 111,500 |  | 27,000 | 74,712 | 65,000 | 75,788 | 158,788  |
-|  Diesel | 40,555 |  |  | 36,225 |  | 4,530 | 4,530  |
-|   |  |  |  |  |  |  | 193,128  |
-|  AFOLU |   |   |   |   |   |  |   |
-|  MWh/year |   |   |   |   |   |  |   |
-|  Energy use Scope 1 | Scope 2 | Scope 3 | Increase in Energy Required | Energy savings | Green Energy Produced | Total (without grass) | Total MWh/year  |
-|  Electrical energy | 24,958 |  | 2,020 | 17,383 | 10,000 | 9,535 | 19,595  |
-|  Diesel | 16,639 |  |  | 15,938 |  | 702 | 702  |
-|   |  |  |  |  |  |  | 20,296  |
-|  2030 Energy requirements (MWh/year) |   |   |   |   |   | 2,384,102 |   |
+| MWh/year |  |  |  |  |  |  |  |
+| Energy use Scope 1 | Scope 2 | Scope 3 | Increase in Energy Required | Energy savings | Green Energy Produced | Total (without grass) | Total MWh/year |
+| Electrical energy | 893,126 |  | 386,011 | 526,381 | 893,013 | 752,731 | 1,243,700 |
+| Natural gas | 837,480 | 687,930 |  |  | 1,456,960 | 0 | 66,450 |
+|  |  |  |  |  |  |  | 1,112,228 |
+|  |  |  |  |  |  |  | 135,122 |
+| CO2 tons |  |  |  |  |  |  |  |
+| MWh/year |  |  |  |  |  |  |  |
+| Energy use Scope 1 | Scope 2 | Scope 3 | Increase in Energy Required | Energy savings | Green Energy Produced | Total (without grass) | Total MWh/year |
+| Electrical energy | 503,498 |  | 74,000 | 260,000 | 260,000 | 317,498 | 563,498 |
+| Natural gas | 411,953 |  |  | 400,000 |  | 11,953 | 11,953 |
+|  |  |  |  |  |  |  | 574,451 |
+| Transport tons |  |  |  |  |  |  |  |
+| MWh/year |  |  |  |  |  |  |  |
+| Energy use Scope 1 | Scope 2 | Scope 3 | Increase in Energy Required | Energy savings | Green Energy Produced | Total (without grass) | Total MWh/year |
+| Electrical energy | 11,585 |  | 148,916 | 45,632 | 213,606 | 84,279 | 297,985 |
+| Diesel | 299,433 |  |  | 362,126 |  | 37,317 | 57,517 |
+| Gasoline | 257,142 |  |  | 256,426 |  | 736 | 736 |
+|  |  |  |  |  |  |  | 156,018 |
+| Waste |  |  |  |  |  |  |  |
+| MWh/year |  |  |  |  |  |  |  |
+| Energy use Scope 1 | Scope 2 | Scope 3 | Increase in Energy Required | Energy savings | Green Energy Produced | Total (without grass) | Total MWh/year |
+| Electrical energy | 111,500 |  | 27,000 | 74,712 | 65,000 | 75,788 | 158,788 |
+| Diesel | 40,555 |  |  | 36,225 |  | 4,530 | 4,530 |
+|  |  |  |  |  |  |  | 193,128 |
+| AFOLU |  |  |  |  |  |  |  |
+| MWh/year |  |  |  |  |  |  |  |
+| Energy use Scope 1 | Scope 2 | Scope 3 | Increase in Energy Required | Energy savings | Green Energy Produced | Total (without grass) | Total MWh/year |
+| Electrical energy | 24,958 |  | 2,020 | 17,383 | 10,000 | 9,535 | 19,595 |
+| Diesel | 16,639 |  |  | 15,938 |  | 702 | 702 |
+|  |  |  |  |  |  |  | 20,296 |
+| 2030 Energy requirements (MWh/year) |  |  |  |  |  | 2,384,102 |  |
 中
 
 PRIMÁRIA
@@ -696,21 +687,21 @@ AFOLU: Generally, the AFOLU sector is not present in District 2 Bucharest, howev
 
 Module A-2 "Current Policies and Strategies" should list relevant policies, strategies, initiatives, or regulation from local, regional, and national level, relevant to the city's climate neutrality transition.
 
-|  A-2.1: List of relevant policies, strategies & regulations  |   |   |   |   |   |
+| A-2.1: List of relevant policies, strategies & regulations |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- |
-|  Type | Level | Name & Title | Description | Relevance | Need for action  |
-|  Strategy | Local | Integrated and Sustainable Local Development Strategy for District 2 | Sets out clear objectives for the future of District 2 and its citizens, with the aim of improving the quality of life of citizens and the prosperity of the local economic environment. | Energy (transition to a low greenhouse gas emission energy system); Blue-green infrastructure (expanding green spaces and increasing the quality of existing green spaces); Environmental infrastructure (modernisation of water | Transitioning towards a low greenhouse gas emission energy system; Transitioning to clean or low-emission means of transport.  |
+| Type | Level | Name & Title | Description | Relevance | Need for action |
+| Strategy | Local | Integrated and Sustainable Local Development Strategy for District 2 | Sets out clear objectives for the future of District 2 and its citizens, with the aim of improving the quality of life of citizens and the prosperity of the local economic environment. | Energy (transition to a low greenhouse gas emission energy system); Blue-green infrastructure (expanding green spaces and increasing the quality of existing green spaces); Environmental infrastructure (modernisation of water | Transitioning towards a low greenhouse gas emission energy system; Transitioning to clean or low-emission means of transport. |
 PRIMAIRA
 MAYERESUD C
 Climate Neutrality Action
 Plan
 Q
 
-|   |  |  |  | supply and sewage networks, development of the circular economy through an efficient waste management system); Transport system in the form of a transition to clean or low-emission means of transport. |   |
+|  |  |  |  | supply and sewage networks, development of the circular economy through an efficient waste management system); Transport system in the form of a transition to clean or low-emission means of transport. |  |
 | --- | --- | --- | --- | --- | --- |
-|  Program | Local | Energy Efficiency Improvement Program (PIEE) 2017-2023 | The program focuses on the rational use of energy and explores the potential for energy production from renewable sources. The key investment priorities include public buildings, residential structures, energy management, public lighting, and public transport. | By targeting key sectors such as public and residential buildings, energy management, public lighting, and public transport, the PIEE directly contributes to reducing greenhouse gas emissions. The integration of renewable energy sources aligns with the broader goal of transitioning towards sustainable and low-carbon energy solutions. | Develop a comprehensive energy management plan to optimise energy consumption across various sectors. Introduce energy-efficient solutions in public transport systems to reduce overall carbon footprint.  |
-|  Strategy | Local | Integrated Urban Development Strategy of Bucharest Municipality 2021-2030 | The strategy proposes a vision and directions for action on the development of Bucharest in an inclusive, strategic, sustainable and long-term perspective. It includes 5 strategic objectives as well as a transversal objective, relevant to the development of District 2. | The objectives proposed by the strategy are relevant for District 2 ambitions regarding climate neutrality as it include promoting sustainable urban mobility and increasing accessibility to transport, energy and communication networks and conserving natural heritage, reducing pollution, greenhouse gas emissions, and limiting the effects of risks (including those associated with climate change); | The Strategy targets climate neutrality through a dedicated specific objective. The actions presented in this action plan will be aligned with the District 2 goals.  |
-|  Strategy | Local | INTEGRATED AIR QUALITY PLAN FOR BUCHAREST 2018 - 2022 | Contains the air quality improvement measures proposed by Bucharest City Administration to reduce pollution and bring pollutant concentrations within the limits set by Law 104/2011 on ambient air quality. | Main measures included in the Integrated Air Quality Plan for Bucharest 2018 - 2022 are: Measures to reduce road traffic emissions; Measures to reduce emissions from residential heating; Measures to reduce emissions from wind erosion | Reducing road traffic emissions; Reducing emissions from residential heating;  |
+| Program | Local | Energy Efficiency Improvement Program (PIEE) 2017-2023 | The program focuses on the rational use of energy and explores the potential for energy production from renewable sources. The key investment priorities include public buildings, residential structures, energy management, public lighting, and public transport. | By targeting key sectors such as public and residential buildings, energy management, public lighting, and public transport, the PIEE directly contributes to reducing greenhouse gas emissions. The integration of renewable energy sources aligns with the broader goal of transitioning towards sustainable and low-carbon energy solutions. | Develop a comprehensive energy management plan to optimise energy consumption across various sectors. Introduce energy-efficient solutions in public transport systems to reduce overall carbon footprint. |
+| Strategy | Local | Integrated Urban Development Strategy of Bucharest Municipality 2021-2030 | The strategy proposes a vision and directions for action on the development of Bucharest in an inclusive, strategic, sustainable and long-term perspective. It includes 5 strategic objectives as well as a transversal objective, relevant to the development of District 2. | The objectives proposed by the strategy are relevant for District 2 ambitions regarding climate neutrality as it include promoting sustainable urban mobility and increasing accessibility to transport, energy and communication networks and conserving natural heritage, reducing pollution, greenhouse gas emissions, and limiting the effects of risks (including those associated with climate change); | The Strategy targets climate neutrality through a dedicated specific objective. The actions presented in this action plan will be aligned with the District 2 goals. |
+| Strategy | Local | INTEGRATED AIR QUALITY PLAN FOR BUCHAREST 2018 - 2022 | Contains the air quality improvement measures proposed by Bucharest City Administration to reduce pollution and bring pollutant concentrations within the limits set by Law 104/2011 on ambient air quality. | Main measures included in the Integrated Air Quality Plan for Bucharest 2018 - 2022 are: Measures to reduce road traffic emissions; Measures to reduce emissions from residential heating; Measures to reduce emissions from wind erosion | Reducing road traffic emissions; Reducing emissions from residential heating; |
 
 7
 中
@@ -727,13 +718,12 @@ Plan
 
 A-2.1: List of relevant policies, strategies &amp; regulations
 
-|  Type | Level | Name & Title | Description | Relevance | Need for action  |
+| Type | Level | Name & Title | Description | Relevance | Need for action |
 | --- | --- | --- | --- | --- | --- |
-|  Strategy | Regional | SUSTAINABLE URBAN MOBILITY PLAN 2016-2030 BUCURESTI - ILFOV REGION | The Plan aims to achieve the mobility development vision for the Bucharest - Ilfov region by addressing the following strategic objectives relevant to the development of Bucharest and its districts: accessibility, safety and security, environment, economic efficiency and urban environment quality. | The strategy specifically aims to reduce air and noise pollution, greenhouse gas emissions and energy consumption; | The strategy aims to reduce air and noise pollution, greenhouse gas emissions and energy consumption, while ensuring that all citizens have transport options that enable them to access essential destinations and services;  |
-|  Strategy | Regional | ILFOV COUNTY DEVELOPMENT STRATEGY 2020-2030 | The strategy proposes a development vision built around the concepts of Metropolitan Area and Functional Urban Area. | SO 2: Increased quality of life for Ilfov County residents; | Infrastructure development, environmental sustainability, health and well-being;  |
-|  Strategy | Regional | SMART SPECIALISATION STRATEGY OF THE BUCURESTI-ILFOV DEVELOPMENT REGION 2021-2027 | A significant role in informing and targeting investment in key economic sectors to develop the region's strengths, competitive advantages and potential for innovation | Developing regional R&D&I capacity; Supporting a competitive regional economy; Digital transformation of the economy and society; Strengthening cooperation and competences of actors in | Digital transformation; R&D&I capacity building; Ecosystem collaboration;  |
-|   |  |  |  | regional and the economy; | economy; Digital transformation of the economy and society;  |
-|   |  |  |  | regional and the economy; | economy; Digital transformation of the economy and society;  |
+| Strategy | Regional | SUSTAINABLE URBAN MOBILITY PLAN 2016-2030 BUCURESTI - ILFOV REGION | The Plan aims to achieve the mobility development vision for the Bucharest - Ilfov region by addressing the following strategic objectives relevant to the development of Bucharest and its districts: accessibility, safety and security, environment, economic efficiency and urban environment quality. | The strategy specifically aims to reduce air and noise pollution, greenhouse gas emissions and energy consumption; | The strategy aims to reduce air and noise pollution, greenhouse gas emissions and energy consumption, while ensuring that all citizens have transport options that enable them to access essential destinations and services; |
+| Strategy | Regional | ILFOV COUNTY DEVELOPMENT STRATEGY 2020-2030 | The strategy proposes a development vision built around the concepts of Metropolitan Area and Functional Urban Area. | SO 2: Increased quality of life for Ilfov County residents; | Infrastructure development, environmental sustainability, health and well-being; |
+| Strategy | Regional | SMART SPECIALISATION STRATEGY OF THE BUCURESTI-ILFOV DEVELOPMENT REGION 2021-2027 | A significant role in informing and targeting investment in key economic sectors to develop the region's strengths, competitive advantages and potential for innovation | Developing regional R&D&I capacity; Supporting a competitive regional economy; Digital transformation of the economy and society; Strengthening cooperation and competences of actors in | Digital transformation; R&D&I capacity building; Ecosystem collaboration; |
+|  |  |  |  | regional and the economy; | economy; Digital transformation of the economy and society; |
 中
 
 PRIMÁRIA
@@ -750,10 +740,10 @@ the regional RDI ecosystem.
 
 A-2.1: List of relevant policies, strategies &amp; regulations
 
-|  Type | Level | Name & Title | Description | Relevance | Need for action  |
+| Type | Level | Name & Title | Description | Relevance | Need for action |
 | --- | --- | --- | --- | --- | --- |
-|  Strategy | National | The National Integrated Plan for Energy and Climate Change 2021 – 2030 | This plan outlines a comprehensive set of goals, policies, and actions that Romania intends to pursue to ensure a sustainable, low-carbon, and resilient energy and climate future. | The plan ensures that local climate initiatives are aligned with national goals and integrated into the broader context of Romania's commitment to sustainability and climate action. The plan offers a roadmap for achieving climate neutrality, making it an essential reference for developing and implementing the Climate Neutrality Contract at the regional or local level in Romania. | Emission reduction; Energy transition; Climate resilience;  |
-|  Policy | National | Romania Urban Policy | The Romania Urban Policy (RUP) 2030 serves as the guiding framework for the country's sustainable, inclusive, and resilient urban development vision. The existing local strategies and policies act as key instruments supporting the 2030 climate neutrality ambition. | Foster inclusive growth and development across urban areas, ensuring that the benefits of urbanisation are accessible to all citizens. Encourage sustainable urban practices that prioritise environmental conservation, resource efficiency, and social equity. Develop green-blue infrastructure to mitigate and adapt to urban risks, emphasising climate resilience and environmental sustainability. Implement measures to reduce air pollution and enhance overall air quality within urban environments. Improve sustainable urban mobility to create more accessible, efficient, and eco-friendly transportation systems. | All planned interventions align with the objectives and priorities of the Urban Policy, with a specific focus on transforming District 2 into a green and resilient urban area. This alignment signifies a harmonised and coordinated approach, ensuring that local strategies and initiatives contribute synergistically to broader urban development goals.  |
+| Strategy | National | The National Integrated Plan for Energy and Climate Change 2021 – 2030 | This plan outlines a comprehensive set of goals, policies, and actions that Romania intends to pursue to ensure a sustainable, low-carbon, and resilient energy and climate future. | The plan ensures that local climate initiatives are aligned with national goals and integrated into the broader context of Romania's commitment to sustainability and climate action. The plan offers a roadmap for achieving climate neutrality, making it an essential reference for developing and implementing the Climate Neutrality Contract at the regional or local level in Romania. | Emission reduction; Energy transition; Climate resilience; |
+| Policy | National | Romania Urban Policy | The Romania Urban Policy (RUP) 2030 serves as the guiding framework for the country's sustainable, inclusive, and resilient urban development vision. The existing local strategies and policies act as key instruments supporting the 2030 climate neutrality ambition. | Foster inclusive growth and development across urban areas, ensuring that the benefits of urbanisation are accessible to all citizens. Encourage sustainable urban practices that prioritise environmental conservation, resource efficiency, and social equity. Develop green-blue infrastructure to mitigate and adapt to urban risks, emphasising climate resilience and environmental sustainability. Implement measures to reduce air pollution and enhance overall air quality within urban environments. Improve sustainable urban mobility to create more accessible, efficient, and eco-friendly transportation systems. | All planned interventions align with the objectives and priorities of the Urban Policy, with a specific focus on transforming District 2 into a green and resilient urban area. This alignment signifies a harmonised and coordinated approach, ensuring that local strategies and initiatives contribute synergistically to broader urban development goals. |
 
 # A-2.2: Description &amp; assessment of policies
 
@@ -891,15 +881,15 @@ ROMANIAN URBAN POLICY (RUP) 2030 serves as the guiding framework for the country
 
 A-2.3: Emissions gap
 
-|   | Baseline emissions^{1} |   | Residual emissions^{2} |   | Emissions gap (to be addressed by this action plan)^{3}  |   |
+|  | Baseline emissions^{1} |  | Residual emissions^{2} |  | Emissions gap (to be addressed by this action plan)^{3} |  |
 | --- | --- | --- | --- | --- | --- | --- |
-|   | (absolute) | (%) | (absolute) | (%) | (absolute) | (%)  |
-|  Buildings | 666,276 | 56 | 146,312 | 60 | 519,964 | 55.2  |
-|  Transport | 177,528 | 15 | 24,993 | 10 | 152,535 | 16.2  |
-|  Waste | 55,540 | 5 | 14,143 | 6 | 41,397 | 4.4  |
-|  Industrial Process and Product Use (IPPU) | 285,117 | 24 | 58,294 | 24 | 226,823 | 23.4  |
-|  Agricultura, Forestry and Land Use (AFOLU) | 14,451 | 1 | 1,876 | 1 | 12,575 | 1.3  |
-|  Total | 1,184,461 | 100 | 243,742 | 20 | 940,719 | 80  |
+|  | (absolute) | (%) | (absolute) | (%) | (absolute) | (%) |
+| Buildings | 666,276 | 56 | 146,312 | 60 | 519,964 | 55.2 |
+| Transport | 177,528 | 15 | 24,993 | 10 | 152,535 | 16.2 |
+| Waste | 55,540 | 5 | 14,143 | 6 | 41,397 | 4.4 |
+| Industrial Process and Product Use (IPPU) | 285,117 | 24 | 58,294 | 24 | 226,823 | 23.4 |
+| Agricultura, Forestry and Land Use (AFOLU) | 14,451 | 1 | 1,876 | 1 | 12,575 | 1.3 |
+| Total | 1,184,461 | 100 | 243,742 | 20 | 940,719 | 80 |
 
 The baseline emissions (Baseline emissions column) were calculated for each sector for the year 2016 - as information for that year was available in LDS 2016-2025.
 PRIMÁRIA
@@ -915,21 +905,21 @@ This action plan is connected with other strategic documents, and as such, the p
 
 # 3.3 Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
 
-|  A-3.1: Systems & stakeholder mapping  |   |   |   |   |
+| A-3.1: Systems & stakeholder mapping |  |  |  |  |
 | --- | --- | --- | --- | --- |
-|  System description | Stakeholders involved | Network | Influence | Interest  |
-|  INFRASTRUCTURES | Bucharest City Hall | Public administration | The Bucharest City Hall plays a main role in managing the citywide activities such as water distribution systems, central heating, transport systems, main boulevards, the metro system, natural parks management and other services. Bucharest is split into 6 districts, each with attributions and authority over a territorial component of Bucharest. Due to the administrative architecture of Bucharest, the collaboration between districts and the Bucharest City Hall is a pivotal importance for generating projects of impact on climate change | The main interest of Bucharest City Hall is committed to implement green and sustainable projects at the level of the capital. In September 2023, the Action Plan Green Cities has been launched, in collaboration with the European Bank for Reconstruction and Development. This plan will be correlated with the General Urban Plan and the Integrated Urban Development Strategy to develop actions that contribute to the transformation of Bucharest.  |
-|  INFRASTRUCTURES | Intercommunity Development Association for Public Transport Bucharest–Ilfov | Public company | The association aims to establish, organize, regulate, operate, monitor and joint manage the public local transport service within the association, within the competence of the member administrative-territorial units of the Bucharest metropolitan area | Besides the management of public transport, one of the duties of the association is the implementation of the investment measures and projects provided for in the Sustainable Urban Mobility Plan Bucharest - Ilfov 2016-2030 - approved by all local public authorities in the Bucharest - Ilfov region.  |
+| System description | Stakeholders involved | Network | Influence | Interest |
+| INFRASTRUCTURES | Bucharest City Hall | Public administration | The Bucharest City Hall plays a main role in managing the citywide activities such as water distribution systems, central heating, transport systems, main boulevards, the metro system, natural parks management and other services. Bucharest is split into 6 districts, each with attributions and authority over a territorial component of Bucharest. Due to the administrative architecture of Bucharest, the collaboration between districts and the Bucharest City Hall is a pivotal importance for generating projects of impact on climate change | The main interest of Bucharest City Hall is committed to implement green and sustainable projects at the level of the capital. In September 2023, the Action Plan Green Cities has been launched, in collaboration with the European Bank for Reconstruction and Development. This plan will be correlated with the General Urban Plan and the Integrated Urban Development Strategy to develop actions that contribute to the transformation of Bucharest. |
+| INFRASTRUCTURES | Intercommunity Development Association for Public Transport Bucharest–Ilfov | Public company | The association aims to establish, organize, regulate, operate, monitor and joint manage the public local transport service within the association, within the competence of the member administrative-territorial units of the Bucharest metropolitan area | Besides the management of public transport, one of the duties of the association is the implementation of the investment measures and projects provided for in the Sustainable Urban Mobility Plan Bucharest - Ilfov 2016-2030 - approved by all local public authorities in the Bucharest - Ilfov region. |
 PRImARIA
 INSTITUENCIA
 Climate Neutrality Action
 Plan
 C
 
-|  INFRASTRUCTURES | ELCEN | Public company | ELCEN was established in December 2002, as a subsidiary of S.C. Termoelectrica S.A., through the reorganisation of this commercial company. Currently, the Ministry of Energy is the main shareholder of the company, holding 97.51% of the shares. ELCEN Bucharest set out to produce and sell energy under conditions of competitiveness, accessibility and environmental protection, meeting all quality and transparency standards. The object of the company's activity is the production, transport, distribution, dispatch and sale of thermal energy, but also the production and sale of electricity. ELCEN is the largest thermal energy producer in Romania (40%) and Bucharest (90%). | ELCEN's mission is to contribute to increasing efficiency in the field of thermal and electrical energy production, as a player of major importance on the national market  |
+| INFRASTRUCTURES | ELCEN | Public company | ELCEN was established in December 2002, as a subsidiary of S.C. Termoelectrica S.A., through the reorganisation of this commercial company. Currently, the Ministry of Energy is the main shareholder of the company, holding 97.51% of the shares. ELCEN Bucharest set out to produce and sell energy under conditions of competitiveness, accessibility and environmental protection, meeting all quality and transparency standards. The object of the company's activity is the production, transport, distribution, dispatch and sale of thermal energy, but also the production and sale of electricity. ELCEN is the largest thermal energy producer in Romania (40%) and Bucharest (90%). | ELCEN's mission is to contribute to increasing efficiency in the field of thermal and electrical energy production, as a player of major importance on the national market |
 | --- | --- | --- | --- | --- |
-|  INFRASTRUCTURES | TERMOENERGETICA | Public company | It is the regional operator of the public heat supply service in the area served by the Termoenergetica București-Ilfov Intercommunity Development Association on the basis of the Contract for the delegation of the direct management of the public heat supply service concluded with the Termoenergetica București-Ilfov Intercommunity Development Association. | Implementing technologies and processes to enhance the efficiency of heating and cooling systems. Upgrading the existing infrastructure to reduce energy loss and to support more sustainable energy practices. Collaborating with city planners and other stakeholders in projects that integrate energy considerations into broader urban development plans.  |
-|  INFRASTRUCTURES | Romanian Green Building Council | Certification bodies | The Romanian Green Building Council is the most representative and powerful national organisation that promotes environmental responsibility and energy efficiency within the life | The organisation's focus falls on the built sector, especially energy efficient buildings and progress towards carbon neutrality in cities, its interest being to increase the number of  |
+| INFRASTRUCTURES | TERMOENERGETICA | Public company | It is the regional operator of the public heat supply service in the area served by the Termoenergetica București-Ilfov Intercommunity Development Association on the basis of the Contract for the delegation of the direct management of the public heat supply service concluded with the Termoenergetica București-Ilfov Intercommunity Development Association. | Implementing technologies and processes to enhance the efficiency of heating and cooling systems. Upgrading the existing infrastructure to reduce energy loss and to support more sustainable energy practices. Collaborating with city planners and other stakeholders in projects that integrate energy considerations into broader urban development plans. |
+| INFRASTRUCTURES | Romanian Green Building Council | Certification bodies | The Romanian Green Building Council is the most representative and powerful national organisation that promotes environmental responsibility and energy efficiency within the life | The organisation's focus falls on the built sector, especially energy efficient buildings and progress towards carbon neutrality in cities, its interest being to increase the number of |
 
 6
 PRIMAIRA
@@ -941,10 +931,10 @@ Climate Neutrality Action Plan
 
 A-3.1: Systems &amp; stakeholder mapping
 
-|  System description | Stakeholders involved | Network | Influence | Interest  |
+| System description | Stakeholders involved | Network | Influence | Interest |
 | --- | --- | --- | --- | --- |
-|  CAPACITIES | The Embassy of the Kingdom of the Netherlands | Diplomatic mission | The Embassy of the Kingdom of the Netherlands in Romania serves as a key diplomatic and consular mission, representing Dutch interests in Romania. The economic cooperation between the Netherlands and Romania is significant, with the Netherlands being one of the top foreign investors in Romania. This economic relationship includes sectors such as agriculture, water management, logistics, and information technology, among others. | One of the primary functions of the embassy is to promote and support Dutch businesses and investments in Romania, thereby contributing to the economic links between the two countries. It provides valuable information and assistance to Dutch companies looking to enter the Romanian market, as well as to Romanian businesses interested in opportunities in the Netherlands. The economic cooperation between the Netherlands and Romania is significant, with the Netherlands being one of the top foreign investors in Romania.  |
-|  CAPACITIES | Technical University of Civil Engineering of Bucharest (UTCB) | Research and Development | The university offers study programmes in civil works. It has 19 research centers and provides research opportunities in programmes funded by the Ministry of Investment and European Projects, Ministry of | The university focuses on providing assistance to public actors in planning and studies on civil works, but also takes an interest in developing RDI projects and facilitating the knowledge transfer from the academia to the stakeholders.  |
+| CAPACITIES | The Embassy of the Kingdom of the Netherlands | Diplomatic mission | The Embassy of the Kingdom of the Netherlands in Romania serves as a key diplomatic and consular mission, representing Dutch interests in Romania. The economic cooperation between the Netherlands and Romania is significant, with the Netherlands being one of the top foreign investors in Romania. This economic relationship includes sectors such as agriculture, water management, logistics, and information technology, among others. | One of the primary functions of the embassy is to promote and support Dutch businesses and investments in Romania, thereby contributing to the economic links between the two countries. It provides valuable information and assistance to Dutch companies looking to enter the Romanian market, as well as to Romanian businesses interested in opportunities in the Netherlands. The economic cooperation between the Netherlands and Romania is significant, with the Netherlands being one of the top foreign investors in Romania. |
+| CAPACITIES | Technical University of Civil Engineering of Bucharest (UTCB) | Research and Development | The university offers study programmes in civil works. It has 19 research centers and provides research opportunities in programmes funded by the Ministry of Investment and European Projects, Ministry of | The university focuses on providing assistance to public actors in planning and studies on civil works, but also takes an interest in developing RDI projects and facilitating the knowledge transfer from the academia to the stakeholders. |
 PRIMAIRA
 DEPARTMENT OF DEFENSE
 UNITED STATES OF AMERICA
@@ -953,11 +943,11 @@ Climate Neutrality Action
 Plan
 O
 
-|   |  |  | Development, Public Works and Administration and UEFISCDI. |   |
+|  |  |  | Development, Public Works and Administration and UEFISCDI. |  |
 | --- | --- | --- | --- | --- |
-|  CAPACITIES | University of Architecture and Urbanism Ion Mincu (UAIM) | Research and Development | The university offers study programmes in architecture, interior architecture and urban planning. The university is present on the international stage with collaboration including the European Landscape Architecture Student Association, The European League of Institutes of the Arts, the European Network of Universities for the implementation of the European Landscape Convention, L'Agence universitaire de la Francophonie and the European Council of Landscape Architecture Scools. | The main interest of UAIM is developing students into architects and urbanists able to participate in shaping the cities. Furthermore, the university has been a partner of stakeholders from Bucharest in different projects regarding urban design and increasing the quality of life for the residents with a focus on sustainable development.  |
-|  CAPACITIES | National Competence Centre - NetZero Cities | Research and Development | National Competence Centre and solutions for the development of Climate Neutral and Smart Cities" (NetZeRoCities) is set to define the operational, financial, and legal conditions to create the "Romanian Competence Centre on Climate-Neutral Smart Cities" that will support Romanian cities to achieve Climate Neutrality, by 2030 for the cities selected by the EU Mission, and by 2050 by all Romanian cities. The Centre is built on the experience of a consortium of 12 public and private research partners and provides expertise for local, national or international authorities, in piloting, testing and developing solutions to the climate challenges of smart cities. | Provide support to local and central public administrations for sustainable, smart solutions using new technologies such as artificial intelligence, Big Data or 5G. Design, implement and demonstrate governance principles, green energy technologies, sustainable buildings, circular economy, transport, mobility and appropriate infrastructure, all supported by future technologies  |
-|  CAPACITIES | Străzi pentru Oameni (Streets for the people) | NGO and civil society | Străzi pentru Oameni is an NGO which lobbies for extensive pedestrian spaces and liberating the public spaces from cars. It is active at the level of Bucharest, where it proposes projects, provides documentation and | The main interest of Străzi pentru Oameni is to develop and promote projects for pedestrian streets, public space design for pedestrians, and public policies that encourage  |
+| CAPACITIES | University of Architecture and Urbanism Ion Mincu (UAIM) | Research and Development | The university offers study programmes in architecture, interior architecture and urban planning. The university is present on the international stage with collaboration including the European Landscape Architecture Student Association, The European League of Institutes of the Arts, the European Network of Universities for the implementation of the European Landscape Convention, L'Agence universitaire de la Francophonie and the European Council of Landscape Architecture Scools. | The main interest of UAIM is developing students into architects and urbanists able to participate in shaping the cities. Furthermore, the university has been a partner of stakeholders from Bucharest in different projects regarding urban design and increasing the quality of life for the residents with a focus on sustainable development. |
+| CAPACITIES | National Competence Centre - NetZero Cities | Research and Development | National Competence Centre and solutions for the development of Climate Neutral and Smart Cities" (NetZeRoCities) is set to define the operational, financial, and legal conditions to create the "Romanian Competence Centre on Climate-Neutral Smart Cities" that will support Romanian cities to achieve Climate Neutrality, by 2030 for the cities selected by the EU Mission, and by 2050 by all Romanian cities. The Centre is built on the experience of a consortium of 12 public and private research partners and provides expertise for local, national or international authorities, in piloting, testing and developing solutions to the climate challenges of smart cities. | Provide support to local and central public administrations for sustainable, smart solutions using new technologies such as artificial intelligence, Big Data or 5G. Design, implement and demonstrate governance principles, green energy technologies, sustainable buildings, circular economy, transport, mobility and appropriate infrastructure, all supported by future technologies |
+| CAPACITIES | Străzi pentru Oameni (Streets for the people) | NGO and civil society | Străzi pentru Oameni is an NGO which lobbies for extensive pedestrian spaces and liberating the public spaces from cars. It is active at the level of Bucharest, where it proposes projects, provides documentation and | The main interest of Străzi pentru Oameni is to develop and promote projects for pedestrian streets, public space design for pedestrians, and public policies that encourage |
 
 8
 PRImARIA
@@ -970,18 +960,18 @@ Plan
 
 #
 
-|   |  |  | disseminates information to the large public as well as to public authorities. The NGO is a valuable source for expertise and citizen engagement, being able to contribute to the success of the Mission. | spending time in a community, on public domain. It believes in reducing the dependency of the people to cars by urban design and efficient public transport. Their mission is to transform Bucharest into a city for people, the way European capitals are being transformed today through active involvement of local communities.  |
+|  |  |  | disseminates information to the large public as well as to public authorities. The NGO is a valuable source for expertise and citizen engagement, being able to contribute to the success of the Mission. | spending time in a community, on public domain. It believes in reducing the dependency of the people to cars by urban design and efficient public transport. Their mission is to transform Bucharest into a city for people, the way European capitals are being transformed today through active involvement of local communities. |
 | --- | --- | --- | --- | --- |
-|  CAPACITIES | Urban Innovation Hub S.R.L | Private sector | UrbanizeHub is the leading urban sustainable lab in central and Eastern Europe, which offers Innovative solutions for cities, a vibrant hub of ideas, opinions, projects, and news focused on smart cities and sustainable urban development. | UrbanizeHub is committed to creating sustainable cities that are environmentally friendly and resilient to the challenges of the 21st century. It believes in the power of active participation, encouraging individuals and communities to contribute and have a voice in shaping the decisions of their cities. It values innovation using a collaborative approach to drive sustainable, technology-driven and green-city oriented solutions through design thinking.  |
-|  CAPACITIES | Climato Sfera | NGO and civil society | Climato Sfera is a key NGO for raising awareness on how individuals can contribute through their own actions and changes in their lifestyle in combating climate change. | Climato Sfera's main interest is facilitating the green transition of Romania through awareness raising actions, supporting other initiatives and promoting projects with a real impact for the environment. The NGo is active at the level of District 2 and is a valuable parter of the Technical University of Civil Engineering, developing projects together with both the academic staff and partners from the business sector.  |
+| CAPACITIES | Urban Innovation Hub S.R.L | Private sector | UrbanizeHub is the leading urban sustainable lab in central and Eastern Europe, which offers Innovative solutions for cities, a vibrant hub of ideas, opinions, projects, and news focused on smart cities and sustainable urban development. | UrbanizeHub is committed to creating sustainable cities that are environmentally friendly and resilient to the challenges of the 21st century. It believes in the power of active participation, encouraging individuals and communities to contribute and have a voice in shaping the decisions of their cities. It values innovation using a collaborative approach to drive sustainable, technology-driven and green-city oriented solutions through design thinking. |
+| CAPACITIES | Climato Sfera | NGO and civil society | Climato Sfera is a key NGO for raising awareness on how individuals can contribute through their own actions and changes in their lifestyle in combating climate change. | Climato Sfera's main interest is facilitating the green transition of Romania through awareness raising actions, supporting other initiatives and promoting projects with a real impact for the environment. The NGo is active at the level of District 2 and is a valuable parter of the Technical University of Civil Engineering, developing projects together with both the academic staff and partners from the business sector. |
 
 A-3.1: Systems &amp; stakeholder mapping
 
-|  System description | Stakeholder s involved | Network | Influence | Interest  |
+| System description | Stakeholder s involved | Network | Influence | Interest |
 | --- | --- | --- | --- | --- |
-|  PROCESSES | Asociatia Parcul Natural Văcărești (Văcărești National Park Association) | NGO | The Văcărești Natural Park Association (APNV) was created in 2014 with the aim of establishing and protecting the Văcărești Natural Park. In the vision of the association, biodiversity becomes a major component of urban | The association develops conservation, information and education programs for nature in the urban environment. The designation of three urban natural areas on Colentina, in District 2, namely Petricani  |
-|   |  |  | and Petricani. The NGO is a key NGO for the development of a natural environment. The NGO is a key NGO for the development of a natural environment in the area. | and the development of a natural environment in the area.  |
-|  PROCESSES | Asociatia Parcul Natural Văcărești (Văcărești National Park Association) | NGO | Asociatia Parcul Natural Văcărești (Văcărești National Park Association) was created in 2014 with the aim of establishing and protecting the Văcărești Natural Park. In the vision of the association, biodiversity becomes a major component of urban | Asociatia Parcul Natural was created in 2014 with the aim of establishing and protecting the Văcărești Natural Park. In the vision of the association, biodiversity becomes a major component of urban  |
+| PROCESSES | Asociatia Parcul Natural Văcărești (Văcărești National Park Association) | NGO | The Văcărești Natural Park Association (APNV) was created in 2014 with the aim of establishing and protecting the Văcărești Natural Park. In the vision of the association, biodiversity becomes a major component of urban | The association develops conservation, information and education programs for nature in the urban environment. The designation of three urban natural areas on Colentina, in District 2, namely Petricani |
+|  |  |  | and Petricani. The NGO is a key NGO for the development of a natural environment. The NGO is a key NGO for the development of a natural environment in the area. | and the development of a natural environment in the area. |
+| PROCESSES | Asociatia Parcul Natural Văcărești (Văcărești National Park Association) | NGO | Asociatia Parcul Natural Văcărești (Văcărești National Park Association) was created in 2014 with the aim of establishing and protecting the Văcărești Natural Park. In the vision of the association, biodiversity becomes a major component of urban | Asociatia Parcul Natural was created in 2014 with the aim of establishing and protecting the Văcărești Natural Park. In the vision of the association, biodiversity becomes a major component of urban |
 PRIMAAIA
 MANAGEMENT
 
@@ -989,11 +979,11 @@ Climate Neutrality Action Plan
 
 0
 
-|   |  |  | infrastructure, with an essential role in optimising the quality of life. | Meadow, Saulei Valley and the Colentina banks at Dobroști and their management in partnership can be an example of good practice for integrating nature into city planning and management, alongside other nature-based solutions.  |
+|  |  |  | infrastructure, with an essential role in optimising the quality of life. | Meadow, Saulei Valley and the Colentina banks at Dobroști and their management in partnership can be an example of good practice for integrating nature into city planning and management, alongside other nature-based solutions. |
 | --- | --- | --- | --- | --- |
-|  PROCESSES | Associations of Home Owners - District 2 | Civil society | The associations of home owners are in charge of managing the residential buildings, each having the capacity to collect taxes from the residents for the costs at the level of the buildings as well as works regarding energy efficiency. These associations act as a medium of communication and coordination between public authority and citizens, having the influence over communicating the requirements for projects involving major energy efficiency and modernising works. They are key partners of the public administration when in comes to lowering the carbon footprint of private buildings. | The main interest of these associations is ensuring satisfactory living standards, lowering the costs of the residents regarding building expenses, managing the exterior space ecologically and increasing the comfort of the residents.  |
-|  PROCESSES | Centura Verde a Bucurestiului (Bucharest Green Belt) | Civil society | The NGO involves protecting the forests of Ilfov, planting seedlings in existing green areas and establishing a legal framework allowing access to forests for the population. | The new woodland framing system will not allow the construction of unsightly paths, concrete, gazebos or benches. These constructions will be allowed near the forest, and only non-invasive structures such as tourist markers, lookout towers or logs to sit on will be allowed inside.  |
-|  PROCESSES | INTRE VECINI (Between Nieghbours) | NGO and civil society | ÎntreVecini aims to regenerate community spirit on the block, creating offline micro-communities in Romanian cities through sustainable activities. Conceived as an Operating System for Change, the ÎntreVecini project regenerates community spirit on the block and creates urban communities in Romanian cities, transforming them into sustainable hubs. | ÎntreVecini creates local micro-leaders and carry out sustainable activities in communities around the 17 Sustainable Development Goals adopted by the UN and the European Union.  |
+| PROCESSES | Associations of Home Owners - District 2 | Civil society | The associations of home owners are in charge of managing the residential buildings, each having the capacity to collect taxes from the residents for the costs at the level of the buildings as well as works regarding energy efficiency. These associations act as a medium of communication and coordination between public authority and citizens, having the influence over communicating the requirements for projects involving major energy efficiency and modernising works. They are key partners of the public administration when in comes to lowering the carbon footprint of private buildings. | The main interest of these associations is ensuring satisfactory living standards, lowering the costs of the residents regarding building expenses, managing the exterior space ecologically and increasing the comfort of the residents. |
+| PROCESSES | Centura Verde a Bucurestiului (Bucharest Green Belt) | Civil society | The NGO involves protecting the forests of Ilfov, planting seedlings in existing green areas and establishing a legal framework allowing access to forests for the population. | The new woodland framing system will not allow the construction of unsightly paths, concrete, gazebos or benches. These constructions will be allowed near the forest, and only non-invasive structures such as tourist markers, lookout towers or logs to sit on will be allowed inside. |
+| PROCESSES | INTRE VECINI (Between Nieghbours) | NGO and civil society | ÎntreVecini aims to regenerate community spirit on the block, creating offline micro-communities in Romanian cities through sustainable activities. Conceived as an Operating System for Change, the ÎntreVecini project regenerates community spirit on the block and creates urban communities in Romanian cities, transforming them into sustainable hubs. | ÎntreVecini creates local micro-leaders and carry out sustainable activities in communities around the 17 Sustainable Development Goals adopted by the UN and the European Union. |
 PRIONA
 
 Climate Neutrality Action
@@ -1002,10 +992,10 @@ Plan
 
 #
 
-|  PROCESSES | Asociația „Metrou Ușor” (“Metrou Usor” Association) | NGO | The Association was created at the initiative of the administrative team of the Metrou Ușor Light Rail Forum and is built around its theme and the areas of interest of the forum members. The main objective of the association is to improve public transport conditions in Romania. The aims of the Association are to promote environmentally friendly public transport and to provide advice for the improvement of public transport systems in Romania. | The Association is dedicated to sustainable urban mobility public transport and adjacent infrastructure. It monitors infrastructure works, tenders and projects in the field of mobility and is involved in their improvement by questioning and collaborating with the relevant authorities. It promotes modern, sustainable, efficient and environmentally friendly transport and mobility concepts to popularise their importance to the general public through our constant online presence.  |
+| PROCESSES | Asociația „Metrou Ușor” (“Metrou Usor” Association) | NGO | The Association was created at the initiative of the administrative team of the Metrou Ușor Light Rail Forum and is built around its theme and the areas of interest of the forum members. The main objective of the association is to improve public transport conditions in Romania. The aims of the Association are to promote environmentally friendly public transport and to provide advice for the improvement of public transport systems in Romania. | The Association is dedicated to sustainable urban mobility public transport and adjacent infrastructure. It monitors infrastructure works, tenders and projects in the field of mobility and is involved in their improvement by questioning and collaborating with the relevant authorities. It promotes modern, sustainable, efficient and environmentally friendly transport and mobility concepts to popularise their importance to the general public through our constant online presence. |
 | --- | --- | --- | --- | --- |
-|  PROCESSES | Platforma de Mediu pentru Bucuresti (Environment Platform for Bucharest) | NGO | Initiated by the Fundația Comunitară București in partnership with ING Bank România and other collaborators, is a comprehensive environmental initiative aimed at fostering participatory development for a sustainable vision of Bucharest and its surrounding region, Ilfov. The foundation of this initiative is anchored in an environmental research report on Bucharest's current state, identifying the city's environmental challenges and proposing solutions from civil society. | The platform brings together non-profit organizations, civic initiative groups, public authorities, and companies to create a collective impact on the city's environment. It aims to improve the quality of life for residents, reduce environmental risks for businesses, and support the authorities in developing long-term sustainable policies. Significant projects supported by the platform focus on various environmental issues, including urban biodiversity, air quality, waste management, circular economy, and energy efficiency.  |
-|  FUNDS | Regional Development Agency Bucharest-Ilfov | Regional Development Agencies in Romania | Regional Development Agency Bucharest-Ilfov is in charge of managing the European Funds at the level of the Municipality of Bucharest and the Ilfov County. Axe 3 - A region with environmental friendly cities ensured funding for public administrations willing to contribute to reducing their carbon footprint. | This axe ensures financing in domains relevant for the mission, such as energy efficient buildings, regenerating urban spaces or developing green mobility infrastructure. The main interest of the Regional Development Agency Bucharest-Ilfov is to support local actors through funding allocations that build on reaching the operational programmes goals.  |
+| PROCESSES | Platforma de Mediu pentru Bucuresti (Environment Platform for Bucharest) | NGO | Initiated by the Fundația Comunitară București in partnership with ING Bank România and other collaborators, is a comprehensive environmental initiative aimed at fostering participatory development for a sustainable vision of Bucharest and its surrounding region, Ilfov. The foundation of this initiative is anchored in an environmental research report on Bucharest's current state, identifying the city's environmental challenges and proposing solutions from civil society. | The platform brings together non-profit organizations, civic initiative groups, public authorities, and companies to create a collective impact on the city's environment. It aims to improve the quality of life for residents, reduce environmental risks for businesses, and support the authorities in developing long-term sustainable policies. Significant projects supported by the platform focus on various environmental issues, including urban biodiversity, air quality, waste management, circular economy, and energy efficiency. |
+| FUNDS | Regional Development Agency Bucharest-Ilfov | Regional Development Agencies in Romania | Regional Development Agency Bucharest-Ilfov is in charge of managing the European Funds at the level of the Municipality of Bucharest and the Ilfov County. Axe 3 - A region with environmental friendly cities ensured funding for public administrations willing to contribute to reducing their carbon footprint. | This axe ensures financing in domains relevant for the mission, such as energy efficient buildings, regenerating urban spaces or developing green mobility infrastructure. The main interest of the Regional Development Agency Bucharest-Ilfov is to support local actors through funding allocations that build on reaching the operational programmes goals. |
 PRIMAIRA
 DEPARTMENT OF
 RESEARCH
@@ -1015,11 +1005,11 @@ Q
 
 A-3.1: Systems &amp; stakeholder mapping
 
-|  System description | Stakeholder s involved | Network | Influence | Interest  |
+| System description | Stakeholder s involved | Network | Influence | Interest |
 | --- | --- | --- | --- | --- |
-|  ALLIANCES | Bucharest Real Estate Clyub | Private sector | BREC has been set – up to foster cross-regional business development, facilitate valuable connections building and impactful deals origination. | Facilitating higher impact & volume of deals; increasing the quality of projects and overall quality of urban development; fostering sustainable technology and innovation in the sector; generating creative approaches in capital sourcing; developing appealing investment products  |
-|  ALLIANCES | Association of Real Estate Investors in Romania (AREI) | Private sector | AREI supports relevant partnerships between members and partners of the association, understanding the importance of creating a high working standard to be respected by all those committed to being part of the organization. AREI has a special focus on enhancing cooperation between relevant authorities and investors, for an effective business operation and mutual benefits. | AREI’s mission is to represent, promote and protect the interests of real estate investors in Romania, with a special focus on enhancing cooperation between relevant authorities and investors, for an effective business operation and mutual benefits.  |
-|  ALLIANCES | Green Cities Alliance Romania | Romanian municipalities (public administrations) | The Green Cities Alliance aims to facilitate the transition to climate neutrality through enhancing the cooperation and coordination of municipal efforts as well as stakeholders across Romanian cities. | This alliance, in addition to collaboration and exchange of best practices, aims to be an important actor at national and European level in the implementation of policies and projects aimed at achieving climate neutrality in the shortest possible time.  |
+| ALLIANCES | Bucharest Real Estate Clyub | Private sector | BREC has been set – up to foster cross-regional business development, facilitate valuable connections building and impactful deals origination. | Facilitating higher impact & volume of deals; increasing the quality of projects and overall quality of urban development; fostering sustainable technology and innovation in the sector; generating creative approaches in capital sourcing; developing appealing investment products |
+| ALLIANCES | Association of Real Estate Investors in Romania (AREI) | Private sector | AREI supports relevant partnerships between members and partners of the association, understanding the importance of creating a high working standard to be respected by all those committed to being part of the organization. AREI has a special focus on enhancing cooperation between relevant authorities and investors, for an effective business operation and mutual benefits. | AREI’s mission is to represent, promote and protect the interests of real estate investors in Romania, with a special focus on enhancing cooperation between relevant authorities and investors, for an effective business operation and mutual benefits. |
+| ALLIANCES | Green Cities Alliance Romania | Romanian municipalities (public administrations) | The Green Cities Alliance aims to facilitate the transition to climate neutrality through enhancing the cooperation and coordination of municipal efforts as well as stakeholders across Romanian cities. | This alliance, in addition to collaboration and exchange of best practices, aims to be an important actor at national and European level in the implementation of policies and projects aimed at achieving climate neutrality in the shortest possible time. |
 
 A-3.2: Description of systemic barriers and opportunities – textual elements
 
@@ -1139,9 +1129,9 @@ Organising local initiatives to increase awareness and participation in climate 
 
 As described in Section 2 – Work Process, through various public consultations and questionnaires, citizens and stakeholders identified priorities, barriers and opportunities for District 2's path towards climate neutrality, included in the following table.
 
-|  EMISSION DOMAINS | MAIN BARRIERS IDENTIFIED BY STAKEHOLDERS | POSSIBLE INTERVENTIONS & OPPORTUNITIES IDENTIFIED BY STAKEHOLDERS  |
+| EMISSION DOMAINS | MAIN BARRIERS IDENTIFIED BY STAKEHOLDERS | POSSIBLE INTERVENTIONS & OPPORTUNITIES IDENTIFIED BY STAKEHOLDERS |
 | --- | --- | --- |
-|  ENERGY SYSTEMS | - Low involvement of citizens in energy production
+| ENERGY SYSTEMS | - Low involvement of citizens in energy production |  |
 Obstacles imposed by regulations related to energy systems
 High dependence on fossil fuels
 District heating system energy losses
@@ -1153,8 +1143,9 @@ Private sector and stakeholder engagement
 Consumer training for smart energy consumption
 Integration of new technologies
 European funding opportunities  |
-|  MOBILITY & TRANSPORT | - 75% of respondents own a personal car or have access to one
-Current public transport shortages -astructure, with platforms big enough for trams and shaded shelters, to the cleanliness of public transport and air conditioning
+| MOBILITY & TRANSPORT | - 75% of respondents own a personal car or have access to one |
+| --- | --- |
+Current public transport shortages infrastructure, with platforms big enough for trams and shaded shelters, to the cleanliness of public transport and air conditioning
 multimodal journeys are extremely problematic
 Low accessibility of public transportation for certain categories of travelers
 Lack of infrastructure for alternative transport
@@ -1171,12 +1162,12 @@ Plan
 
 8
 
-|  WASTE & CIRCULAR ECONOMY | - From a structural point of view, it was pointed out that there is a fractured governance of waste management at the city level, with no unitary approach at the municipal level even in terms of the number of fractions.
+| WASTE & CIRCULAR ECONOMY | - From a structural point of view, it was pointed out that there is a fractured governance of waste management at the city level, with no unitary approach at the municipal level even in terms of the number of fractions. |
+| --- | --- |
 The existing infrastructure is neither sufficient nor in a good enough condition.
 Preconception that a separate collection is useless, since they all end up in the same place and citizens are not familiar with the route of the waste and the sorting procedures. | - Aim for a city with zero waste, so that nothing that is thrown away ends up in landfills. To be able to get there, not only standards are needed, but also measurement and auditing processes.
 Insist, beyond recycling, on reduction and repair, but also on the refusal of some products from the shelf, in order to put pressure on the producers as well. In this sense, encouraging more buy-back schemes in stores is necessary.  |
-| --- | --- | --- |
-|  GREEN INFRASTRUCTURE & NATURE-BASED SOLUTIONS | - Lack of local alliances
+GREEN INFRASTRUCTURE & NATURE-BASED SOLUTIONS: Lack of local alliances
 Insufficient data-driven insights
 The overarching cost of new infrastructure surpasses the local budgeting capacity, posing a significant financial challenge.
 Cumbersome bureaucracy associated with spending on climate neutrality projects can impede efficient implementation.
@@ -1184,7 +1175,8 @@ Poor regulations and standards at the central level regarding climate neutrality
 The existence of a substantial built heritage related to industrial activities, abandoned or not in use | - The large number of local NGOs active in environmental matters provides an opportunity for collaborative efforts and diverse perspectives.
 The residents' increased interest in healthy and active habits creates a favourable environment for promoting sustainable initiatives.
 Collaboration with universities.  |
-|  BUILT ENVIRONMENT | - The majority of the built environment consists of pre-regulation constructions, making retrofitting for energy efficiency challenging and contributing to high energy consumption.
+| BUILT ENVIRONMENT | - The majority of the built environment consists of pre-regulation constructions, making retrofitting for energy efficiency challenging and contributing to high energy consumption. |
+| --- | --- |
 The upfront cost of implementing energy-efficient technologies is prohibitive for building owners, deterring investment despite long-term savings.
 Local regulations and incentives are not stringent enough to encourage widespread energy-efficient practices.
 Lack of data on energy poverty
@@ -1313,11 +1305,11 @@ The annexed tables show how each action from the impact pathway (Built environme
 
 B-1.1: Impact Pathways
 
-|  Fields of action | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions | Indirect impacts (co-benefits)  |
-| --- | --- | --- | --- | --- | --- |
-|  Energy systems | Technology / Infrastructure | 8| Extensive moderate energy renovation of multifamily residential buildings | Widespread use of smart grids and renewable energy sources. | Reduce CO2 emissions by 245,230 tons | Improved air quality Improve the quality of life Lower energy costs for households Increased resilience to energy supply fluctuations.  |
-|   |   |  9| Comprehensive energy efficiency and modernisation program targeting educational institutions, public administrative buildings, and cultural heritage sites across District 2, Bucharest |   | Reduce CO2 emissions by 56,563 tons  |   |
-|   |   |  10| Upgrading the electrical infrastructure to enhance reliability, efficiency and intelligence of the electrical grid | Decreased energy consumption and lower emissions from buildings. | Reduce CO2 emissions by 61,520 tons | Savings for local budget  |
+| Fields of action | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions | Indirect impacts (co-benefits) |  |
+| --- | --- | --- | --- | --- | --- | --- |
+| Energy systems | Technology / Infrastructure | 8 | Extensive moderate energy renovation of multifamily residential buildings | Widespread use of smart grids and renewable energy sources. | Reduce CO2 emissions by 245,230 tons | Improved air quality Improve the quality of life Lower energy costs for households Increased resilience to energy supply fluctuations. |
+|  |  | 9 | Comprehensive energy efficiency and modernisation program targeting educational institutions, public administrative buildings, and cultural heritage sites across District 2, Bucharest |  | Reduce CO2 emissions by 56,563 tons |  |
+|  |  | 10 | Upgrading the electrical infrastructure to enhance reliability, efficiency and intelligence of the electrical grid | Decreased energy consumption and lower emissions from buildings. | Reduce CO2 emissions by 61,520 tons | Savings for local budget |
 #
 
 PRIMÁRIA
@@ -1330,23 +1322,23 @@ Plan
 
 #
 
-|   |  | 11| Expansion and enhancement of the public lighting system across green spaces, parks, playgrounds, and parking areas in designated locations | Energy efficient public lightning system | Reduce CO2 emissions by 586 tons | Savings for local budget Increased safety  |
+|  |  | 11 | Expansion and enhancement of the public lighting system across green spaces, parks, playgrounds, and parking areas in designated locations | Energy efficient public lighting system | Reduce CO2 emissions by 586 tons | Savings for local budget Increased safety |
 | --- | --- | --- | --- | --- | --- | --- |
-|   |  Learning and capabilities | 12| Development of a digital awareness and education center as well as training programs to support the understanding and education of companies and citizens regarding climate-neutral smart city concepts and efficient implementation methods | Widespread adoption of energy-efficient practices and technologies across residential, commercial, and public sectors. | Reduce CO2 emissions by 34,280 tons | Established culture of sustainability and energy consciousness within the community.  |
-|   |  Funding | Financial incentives for renewable energy investments. | Increased private and public investment in renewable energy projects. |   | Economic growth stimulated by green energy sector. Accelerated transition to renewable energy sources.  |
-|   |   |  25| Integrated investments to ensure climate neutrality in relevant areas such as energy, buildings, environment, etc. | Enhanced resilience and sustainability of the urban environment | Reduce CO2 emissions by 51,420 tons | Enhanced urban livability Economic growth Energy security  |
-|   |  Governance | Integration of renewable energy targets into local policy frameworks. | Effective policy implementation and regulation of renewable energy initiatives. |   | Compliance with renewable energy targets. Enhanced policy coherence and alignment with climate goals.  |
+|  | Learning and capabilities | 12 | Development of a digital awareness and education center as well as training programs to support the understanding and education of companies and citizens regarding climate-neutral smart city concepts and efficient implementation methods | Widespread adoption of energy-efficient practices and technologies across residential, commercial, and public sectors. | Reduce CO2 emissions by 34,280 tons | Established culture of sustainability and energy consciousness within the community. |
+|  | Funding | Financial incentives for renewable energy investments. | Increased private and public investment in renewable energy projects. |  | Economic growth stimulated by green energy sector. Accelerated transition to renewable energy sources. |  |
+|  |  | 25 | Integrated investments to ensure climate neutrality in relevant areas such as energy, buildings, environment, etc. | Enhanced resilience and sustainability of the urban environment | Reduce CO2 emissions by 51,420 tons | Enhanced urban livability Economic growth Energy security |
+|  | Governance | Integration of renewable energy targets into local policy frameworks. | Effective policy implementation and regulation of renewable energy initiatives. |  | Compliance with renewable energy targets. Enhanced policy coherence and alignment with climate goals. |  |
 
 B-1.1: Impact Pathways
 
-|  Fields of action | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions | Indirect impacts (co-benefits)  |
-| --- | --- | --- | --- | --- | --- |
-|  Mobility & transport | Technology/ Infrastructure | 13| Rehabilitation and reconfiguration of street network to increase transport efficiency and decrease pollution levels. | Increased efficiency of public transportation | Reduce CO2 emissions by 86,325 tons | Reduced air pollution Less traffic congestion, more efficient urban mobility Smoother urban transportation experience  |
-|   |   |  18| Enhancement and expansion of public transport systems with smart technology, new trams, dedicated lanes and new routes | Increased share of public transportation usage (busses and trams) | Reduce CO2 emissions by 38,183 tons  |   |
-|   |   |  17| Increased pedestrian mobility by revitalisation of urban parks, underpasses, and expansion of pedestrian-centred areas | Enhanced urban livability with safer streets for pedestrians and cyclists | Reduce CO2 emissions by 22,859 tons | Improved life quality  |
-|   |   |  19| Extension and modernisation of cycling infrastructure - Cycling Masterplan, bike sharing system and extension of cycling network. | Increased facilities and share of bike usage | Reduce CO2 emissions by 9,075 tons | Improved public health from increased physical activity  |
-|   |   |  14| Development of a network of EV charging stations | Increased ownership and use of electric vehicles | Reduce CO2 emissions by 5,802 tons | Reduced air pollution  |
-|   |  Social innovation | 15| Decreased number of visits to public administration through digitalisation | Reduced commute-related emissions and streamlining government services. Reduced carbon footprint of public services | Reduce CO2 emissions by 4,667 tons | Improved life quality Reduced air pollution  |
+| Fields of action | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions | Indirect impacts (co-benefits) |  |
+| --- | --- | --- | --- | --- | --- | --- |
+| Mobility & transport | Technology/ Infrastructure | 13 | Rehabilitation and reconfiguration of street network to increase transport efficiency and decrease pollution levels. | Increased efficiency of public transportation | Reduce CO2 emissions by 86,325 tons | Reduced air pollution Less traffic congestion, more efficient urban mobility Smoother urban transportation experience |
+|  |  | 18 | Enhancement and expansion of public transport systems with smart technology, new trams, dedicated lanes and new routes | Increased share of public transportation usage (busses and trams) | Reduce CO2 emissions by 38,183 tons |  |
+|  |  | 17 | Increased pedestrian mobility by revitalisation of urban parks, underpasses, and expansion of pedestrian-centred areas | Enhanced urban livability with safer streets for pedestrians and cyclists | Reduce CO2 emissions by 22,859 tons | Improved life quality |
+|  |  | 19 | Extension and modernisation of cycling infrastructure - Cycling Masterplan, bike sharing system and extension of cycling network. | Increased facilities and share of bike usage | Reduce CO2 emissions by 9,075 tons | Improved public health from increased physical activity |
+|  |  | 14 | Development of a network of EV charging stations | Increased ownership and use of electric vehicles | Reduce CO2 emissions by 5,802 tons | Reduced air pollution |
+|  | Social innovation | 15 | Decreased number of visits to public administration through digitalisation | Reduced commute-related emissions and streamlining government services. Reduced carbon footprint of public services | Reduce CO2 emissions by 4,667 tons | Improved life quality Reduced air pollution |
 中
 
 PRIMÁRIA
@@ -1359,24 +1351,26 @@ O
 
 B-1.1: Impact Pathways
 
-|  Fields of action | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions | Indirect impacts (co-benefits)  |
-| --- | --- | --- | --- | --- | --- |
-|  Waste & circular economy | Technology / infrastructure | 23| New waste sorting infrastructure to reduce energy consumption and increase waste management capabilities | Significant reduction in waste sent to landfills.
-Improved selective waste collection facilities | Reduce CO2 emissions by 9,619 tons | Improved quality of life  |
-|   |  Leaning and capabilities | 24| Public awareness campaigns to educate and promote sustainable practices | Flourishing local circular economy ecosystem.
+| Fields of action | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions Indirect impacts (co-benefits) |
+| --- | --- | --- | --- | --- |
+| Waste & circular economy | Technology / infrastructure | 23 | New waste sorting infrastructure to reduce energy consumption and increase waste management capabilities | Significant reduction in waste sent to landfills. |
+| Improved selective waste collection facilities | Reduce CO2 emissions by 9,619 tons | Improved quality of life |  |  |
+|  | Learning and capabilities | 24 | Public awareness campaigns to educate and promote sustainable practices | Flourishing local circular economy ecosystem. |
 Strong regulatory framework supporting waste reduction and recycling.
-Compliance with waste reduction targets. | Reduce CO2 emissions by 13,203 tons | Creation of a sustainable, waste-reducing culture in the district.  |
-|   |  Funding | Enforcement of sanctions for non-compliance with City Council Decisions on waste management
-Offer tax incentives for owners' associations where selective collection is carried out correctly  |   |   |   |
-|   |  Governance | Policymaking to encourage circular economy practices.  |   |   |   |
+| Compliance with waste reduction targets. | Reduce CO2 emissions by 13,203 tons | Creation of a sustainable, waste-reducing culture in the district. |
+| --- | --- | --- |
+|  | Funding | Enforcement of sanctions for non-compliance with City Council Decisions on waste management |
+| Offer tax incentives for owners' associations where selective collection is carried out correctly |  |  |
+
+Governance: Policymaking to encourage circular economy practices.
 
 B-1.1: Impact Pathways
 
-|  Fields of action | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions | Indirect impacts (co-benefits)  |
-| --- | --- | --- | --- | --- | --- |
-|  Green infrastructure & nature-based solutions | Technology / infrastructure | 21| Development of green roofs | Mature urban green infrastructure contributing to microclimate regulation | Reduce CO2 emissions by 9,528 tons | Improved mental and physical health of residents  |
-|   |   |  20| Rehabilitation of water ways for sustainable development |   | Reduce CO2 emissions by 6,466 tons | Recreational spaces for community  |
-|   |   |  22| Rehabilitation of parks and development of sustainable green public spaces to incentivise pedestrian mobility | Green space expansion | Reduce CO2 emissions by 4,142 tons | Biodiversity enhancement  |
+| Fields of action | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions | Indirect impacts (co-benefits) |  |
+| --- | --- | --- | --- | --- | --- | --- |
+| Green infrastructure & nature-based solutions | Technology / infrastructure | 21 | Development of green roofs | Mature urban green infrastructure contributing to microclimate regulation | Reduce CO2 emissions by 9,528 tons | Improved mental and physical health of residents |
+|  |  | 20 | Rehabilitation of water ways for sustainable development |  | Reduce CO2 emissions by 6,466 tons | Recreational spaces for community |
+|  |  | 22 | Rehabilitation of parks and development of sustainable green public spaces to incentivise pedestrian mobility | Green space expansion | Reduce CO2 emissions by 4,142 tons | Biodiversity enhancement |
 #
 
 PRIMÁRIA
@@ -1391,19 +1385,18 @@ O
 
 | Fields of action | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions | Indirect impacts (co-benefits) |
 | --- | --- | --- | --- | --- | --- |
-| Built environment | Technology / infrastructure | 2| Renovation of public buildings | Majority of buildings in the district meeting high energy efficiency standards | Reduce CO2 emissions by 1,274 tons | Lower utility costs for residents, improved indoor air quality. Higher rate of energy efficiency in buildings |
-| 3| Reconversion of formal industrial areas | Enhanced functionality of underutilised spaces | Reduce CO2 emissions by 30,730 tons | Improve the quality of life |
-| 5| Reconversion of public spaces for sustainable development | Increased number of green spaces across neighbourhoods | Reduce CO2 emissions by 11,750 tons | Enhanced urban livability |
-| 1| Construction of new nZEB buildings | Comprehensive adoption of sustainable building codes | Reduce CO2 emissions by 2,453 tons | Long-term urban resilience, enhanced living conditions |
-| Governance | Implementation of regulations for sustainable building and renovation. Promote nZEB buildings for public and private use. | Alignment of all new construction with sustainability principles. |
-| Social innovation | 6| Social inclusion program for sustainable development - Implementation of innovative co-creation projects | Increased share of people involved in greening projects | Reduce CO2 emissions by 6,242 tons | Strengthen community cohesion and collaboration |
-| Funding | Grants and incentives for building retrofits and green construction. | High uptake of green building practices | Increased adoption of sustainable building practices. | Job creation in green construction, sustainable urban growth. |
-| Leaning and capabilities | 7| Development of educational infrastructure for climate neutrality | Increased climate neutrality awareness and skills among population | Reduce CO2 emissions by 2,490 tons | Long-term urban resilience, |
-| Democracy / Participation | 4| Citizen involvement program for sustainable reconversion of public spaces | Active community involvement in urban planning and design | Reduce CO2 emissions by 848 tons | Stronger sense of community, public spaces that reflect local needs and preferences |
-|  B-1.1: Impact Pathways  |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- |
-|  Fields of action | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions | Indirect impacts (co-benefits)  |
-|  Social and other innovation | Democracy / Participation | Develop a mobile application through which citizens will be involved in the life of the city and will be able to contribute to its well-being. | Informed and educated community about aspects of climate neutrality. | Enhanced ability to adapt to changing environmental conditions and to implement targeted interventions for | Stronger commitment Improved visibility Informed citizens Stronger political and individual commitment  |
+| Built environment | Technology / infrastructure | 2 | Renovation of public buildings | Majority of buildings in the district meeting high energy efficiency standards | Reduce CO2 emissions by 1,274 tons Lower utility costs for residents, improved indoor air quality. Higher rate of energy efficiency in buildings |
+| 3 | Reconversion of formal industrial areas | Enhanced functionality of underutilised spaces | Reduce CO2 emissions by 30,730 tons | Improve the quality of life |  |
+| 5 | Reconversion of public spaces for sustainable development | Increased number of green spaces across neighbourhoods | Reduce CO2 emissions by 11,750 tons | Enhanced urban livability |  |
+| 1 | Construction of new nZEB buildings | Comprehensive adoption of sustainable building codes | Reduce CO2 emissions by 2,453 tons | Long-term urban resilience, enhanced living conditions |  |
+| Governance | Implementation of regulations for sustainable building and renovation. Promote nZEB buildings for public and private use. | Alignment of all new construction with sustainability principles. |  |  |  |
+| Social innovation | 6 | Social inclusion program for sustainable development - Implementation of innovative co-creation projects | Increased share of people involved in greening projects | Reduce CO2 emissions by 6,242 tons | Strengthen community cohesion and collaboration |
+| Funding | Grants and incentives for building retrofits and green construction. | High uptake of green building practices | Increased adoption of sustainable building practices. | Job creation in green construction, sustainable urban growth. |  |
+| Learning and capabilities | 7 | Development of educational infrastructure for climate neutrality | Increased climate neutrality awareness and skills among population | Reduce CO2 emissions by 2,490 tons | Long-term urban resilience, |
+| Democracy / Participation | 4 | Citizen involvement program for sustainable reconversion of public spaces | Active community involvement in urban planning and design | Reduce CO2 emissions by 848 tons | Stronger sense of community, public spaces that reflect local needs and preferences |
+| B-1.1: Impact Pathways |  |  |  |  |  |
+| Fields of action | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions | Indirect impacts (co-benefits) |
+| Social and other innovation | Democracy / Participation | Develop a mobile application through which citizens will be involved in the life of the city and will be able to contribute to its well-being. | Informed and educated community about aspects of climate neutrality. | Enhanced ability to adapt to changing environmental conditions and to implement targeted interventions for | Stronger commitment Improved visibility Informed citizens Stronger political and individual commitment |
 PRINARIA
 INSTRUMUNE
 
@@ -1411,11 +1404,12 @@ Climate Neutrality Action Plan
 
 C
 
-|   |  |  |  | climate mitigation and adaptation | Ownership of overall objectives  |
+|  |  |  |  | climate mitigation and adaptation | Ownership of overall objectives |
 | --- | --- | --- | --- | --- | --- |
-|   |  Governance & Policy | Digital twinning solution designed for climate neutrality | Agile and responsive governance model for climate neutrality |   | Real time data and adjustments to the proposed solutions
-Innovative, data-based decision making  |
-|   |  Funding | 25| Integrated investments to ensure climate neutrality in relevant areas such as energy, buildings, environment, etc. |  | Reduce CO2 emissions by 51,420 tons |   |
+|  | Governance & Policy | Digital twinning solution designed for climate neutrality | Agile and responsive governance model for climate neutrality |  | Real time data and adjustments to the proposed solutions |
+| Innovative, data-based decision making  |
+|  | Funding | 25 | Integrated investments to ensure climate neutrality in relevant areas such as energy, buildings, environment, etc. |  | Reduce CO2 emissions by 51,420 tons |  |
+| --- | --- | --- | --- | --- | --- | --- |
 
 # B-1.2: Description of impact pathways– textual and visual elements
 
@@ -1445,26 +1439,26 @@ District 2's action plan for climate neutrality represents a comprehensive and m
 
 Module B-2 "Climate Neutrality Portfolio Design" should contain a project description for each intervention planned, including interventions by local businesses and industry, according to the template B-2.1, including actions those interventions targeted at enhancing carbon sinks to address residual emissions. Narrative analysis and comments can be provided in B-2.2. A summary of how residual emissions are addressed, should be provided in B-2.3.
 
-|  B-2.1: Description of action portfolios - textual or visual  |   |   |
+| B-2.1: Description of action portfolios - textual or visual |  |  |
 | --- | --- | --- |
-|  Fields of action | Portfolio description  |   |
-|   |  List of actions | Descriptions  |
-|  Energy systems | 8| Extensive moderate energy renovation of multifamily residential buildings in District 2 of Bucharest | This initiative focuses on significantly improving the energy efficiency of multifamily residential buildings within District 2. By implementing moderate renovations, such as insulation improvements, window replacements, and the installation of energy-efficient heating and cooling systems, this action aims to reduce energy consumption and CO2 emissions, contributing to the overall climate neutrality goals of the district.  |
-|   |  9| Comprehensive energy efficiency and modernisation program targeting educational institutions, public administrative buildings, and cultural heritage sites across District 2, Bucharest | This program targets a wide range of public buildings, including schools, administrative offices, and cultural sites, with the goal of reducing energy consumption and enhancing their environmental footprint. Through energy efficiency upgrades, such as thermal insulation, lighting systems, and renewable energy sources, the program seeks to create healthier, more sustainable environments for education and public service.  |
+| Fields of action | Portfolio description |  |
+|  | List of actions | Descriptions |
+| Energy systems | 8 | Extensive moderate energy renovation of multifamily residential buildings in District 2 of Bucharest This initiative focuses on significantly improving the energy efficiency of multifamily residential buildings within District 2. By implementing moderate renovations, such as insulation improvements, window replacements, and the installation of energy-efficient heating and cooling systems, this action aims to reduce energy consumption and CO2 emissions, contributing to the overall climate neutrality goals of the district. |
+|  | 9 | Comprehensive energy efficiency and modernisation program targeting educational institutions, public administrative buildings, and cultural heritage sites across District 2, Bucharest This program targets a wide range of public buildings, including schools, administrative offices, and cultural sites, with the goal of reducing energy consumption and enhancing their environmental footprint. Through energy efficiency upgrades, such as thermal insulation, lighting systems, and renewable energy sources, the program seeks to create healthier, more sustainable environments for education and public service. |
 PRImARIA
 INSTITUUT DE RECHERCHE
 Climate Neutrality Action
 Plan
 C
 
-|   | 10| Upgrading the electrical infrastructure to enhance the reliability, efficiency, and intelligence of the electrical grid to meet current and future demands. | Aimed at modernising District 2's electrical grid, this action plans to enhance the reliability, efficiency, and intelligence of the electricity supply network. By incorporating smart grid technologies, renewable energy integration, and improved grid management systems, the initiative supports the district's adaptation to increasing energy demands while promoting sustainable energy consumption patterns.  |
+|  | 10 | Upgrading the electrical infrastructure to enhance the reliability, efficiency, and intelligence of the electrical grid to meet current and future demands. | Aimed at modernising District 2's electrical grid, this action plans to enhance the reliability, efficiency, and intelligence of the electricity supply network. By incorporating smart grid technologies, renewable energy integration, and improved grid management systems, the initiative supports the district's adaptation to increasing energy demands while promoting sustainable energy consumption patterns. |
 | --- | --- | --- | --- |
-|   |  11| Expansion and enhancement of the public lighting system across green spaces, parks, playgrounds, and parking areas in designated locations | This action focuses on expanding and improving the public lighting infrastructure across District 2's parks, playgrounds, and parking areas. By installing energy-efficient LED lighting and smart lighting controls, the initiative not only aims to enhance public safety and urban aesthetics but also to reduce energy consumption and light pollution, contributing to the district's sustainability objectives.  |
-|   |  12| Development of a digital awareness and education center as well as training programs to support the understanding and education of companies and citizens regarding climate-neutral smart city concepts and efficient implementation methods | Recognising the importance of community engagement in achieving climate neutrality, this action aims to establish a digital platform and training programs dedicated to educating citizens and businesses about smart city and climate-neutral concepts. Through interactive learning tools, workshops, and awareness campaigns, the center seeks to empower the local community with knowledge and skills for sustainable living and efficient resource use.  |
-|   |  25| Integrated investments to ensure climate neutrality in relevant areas such as energy, buildings, environment, etc. | The strategic allocation of funding towards climate neutrality represents a pivotal field of action within District 2's comprehensive climate action plan. Targeted investments are channeled into critical sectors including energy efficiency, sustainable buildings, environmental restoration, and the development of green infrastructure.  |
-|  Mobility & transport | 13| Rehabilitation and reconfiguration of street network to increase transport efficiency and decrease pollution levels. | This action aims to revamp and optimize the street layout within District 2, Bucharest, to enhance transport efficiency and reduce pollution. By redesigning traffic flows, increasing the capacity of roads where needed, and incorporating green transport solutions, the initiative seeks to ease congestion, lower emissions, and create a more sustainable urban mobility landscape.  |
-|   |  14| Development of a network of EV charging stations | To encourage the adoption of electric vehicles and support cleaner transportation options, this plan involves setting up a comprehensive network of electric vehicle (EV) charging stations across District 2. This infrastructure will provide essential services to EV owners, promoting a shift away from fossil fuel-dependent vehicles and contributing to the reduction of urban air pollution.  |
-|   |  15| Decrease number of visits to public administration offices through digitalisation. | By enhancing online services and digital platforms, this initiative aims to decrease the necessity for in-person visits to public administration offices, thereby reducing commute-related emissions and streamlining government services. Digitalisation efforts include the  |
+|  | 11 | Expansion and enhancement of the public lighting system across green spaces, parks, playgrounds, and parking areas in designated locations | This action focuses on expanding and improving the public lighting infrastructure across District 2's parks, playgrounds, and parking areas. By installing energy-efficient LED lighting and smart lighting controls, the initiative not only aims to enhance public safety and urban aesthetics but also to reduce energy consumption and light pollution, contributing to the district's sustainability objectives. |
+|  | 12 | Development of a digital awareness and education center as well as training programs to support the understanding and education of companies and citizens regarding climate-neutral smart city concepts and efficient implementation methods | Recognising the importance of community engagement in achieving climate neutrality, this action aims to establish a digital platform and training programs dedicated to educating citizens and businesses about smart city and climate-neutral concepts. Through interactive learning tools, workshops, and awareness campaigns, the center seeks to empower the local community with knowledge and skills for sustainable living and efficient resource use. |
+|  | 25 | Integrated investments to ensure climate neutrality in relevant areas such as energy, buildings, environment, etc. | The strategic allocation of funding towards climate neutrality represents a pivotal field of action within District 2's comprehensive climate action plan. Targeted investments are channeled into critical sectors including energy efficiency, sustainable buildings, environmental restoration, and the development of green infrastructure. |
+| Mobility & transport | 13 | Rehabilitation and reconfiguration of street network to increase transport efficiency and decrease pollution levels. | This action aims to revamp and optimize the street layout within District 2, Bucharest, to enhance transport efficiency and reduce pollution. By redesigning traffic flows, increasing the capacity of roads where needed, and incorporating green transport solutions, the initiative seeks to ease congestion, lower emissions, and create a more sustainable urban mobility landscape. |
+|  | 14 | Development of a network of EV charging stations | To encourage the adoption of electric vehicles and support cleaner transportation options, this plan involves setting up a comprehensive network of electric vehicle (EV) charging stations across District 2. This infrastructure will provide essential services to EV owners, promoting a shift away from fossil fuel-dependent vehicles and contributing to the reduction of urban air pollution. |
+|  | 15 | Decrease number of visits to public administration offices through digitalisation. | By enhancing online services and digital platforms, this initiative aims to decrease the necessity for in-person visits to public administration offices, thereby reducing commute-related emissions and streamlining government services. Digitalisation efforts include the |
 
 9
 PRIMÁRIA
@@ -1474,30 +1468,30 @@ Plan
 
 |  |  | introduction of e-governance solutions, online payment systems, and virtual consultations, making public services more accessible and environmentally friendly. |
 | --- | --- | --- |
-| 16| New parking policy and new residential parking facilities meant to decrease car use and transform parking spaces into public areas. | This measure introduces a revamped parking strategy, including the development of new residential parking infrastructures designed to reduce car usage. The policy will prioritise the transformation of existing parking spaces into public green areas, pedestrian zones, or bike lanes, encouraging residents to adopt more sustainable modes of transport. |
-| 17| Increased pedestrian mobility by revitalization of urban parks, underpasses, and expansion of pedestrian-centred areas | Focused on revitalising urban parks, upgrading pedestrian underpasses, and expanding areas prioritised for pedestrian use, this action is designed to enhance walkability in District 2. Improvements aim to create safe, accessible, and enjoyable pedestrian routes, encouraging walking as a primary mode of transport and reducing reliance on cars. |
-| 18| Enhancement and expansion of public transport systems with smart technology, new trams, dedicated lanes, and new routes for a cleaner urban travel. | By integrating smart technology, introducing new trams, and establishing dedicated lanes and new routes, this initiative seeks to significantly improve the public transport network. The goal is to offer efficient, reliable, and eco-friendly urban travel options, increasing public transport ridership and contributing to cleaner air and reduced traffic congestion. |
-| 19| Extension and modernisation of cycling infrastructure - Cycling Masterplan, bike sharing system and extension of cycling network. | This comprehensive approach to cycling infrastructure includes the development of a Cycling Masterplan, the launch of a bike-sharing system, and the extension of the cycling network within District 2. These measures aim to promote cycling as a viable and attractive alternative to car use, supporting healthier lifestyles and reducing environmental impact. |
-| Waste & circular economy | 23| New waste sorting infrastructure to reduce energy consumption and increase waste management capabilities | To enhance waste management efficiency and reduce energy consumption associated with waste handling, this action involves developing advanced waste sorting facilities. The new infrastructure will facilitate the separation and recycling of materials, significantly reducing the volume of waste sent to landfills. |
-| 24| Public campaigns to reduce waste and increase recicling percentage among residents | Through educational and awareness campaigns, this measure seeks to engage residents in waste reduction and recycling efforts. The campaigns will provide information on sustainable waste practices, the importance of recycling, and how individuals can contribute to a cleaner, more sustainable community. |
-| Green infrastructure & nature-based solutions | 20| Rehabilitation of water ways for sustainable development. | This action focuses on restoring and enhancing the natural and functional aspects of waterways in District 2, Bucharest. The aim is to improve water quality, biodiversity, and the recreational value of water bodies, contributing to the overall resilience and sustainability of the urban environment. |
-| 21| Development of green roofs | Implementing green roofs across buildings in District 2 serves multiple purposes, including reducing building energy consumption, enhancing urban biodiversity, and managing stormwater. Green roofs also contribute to improving air quality and providing residents with accessible green spaces. |
+| 16 | New parking policy and new residential parking facilities meant to decrease car use and transform parking spaces into public areas. | This measure introduces a revamped parking strategy, including the development of new residential parking infrastructures designed to reduce car usage. The policy will prioritise the transformation of existing parking spaces into public green areas, pedestrian zones, or bike lanes, encouraging residents to adopt more sustainable modes of transport. |
+| 17 | Increased pedestrian mobility by revitalization of urban parks, underpasses, and expansion of pedestrian-centred areas | Focused on revitalising urban parks, upgrading pedestrian underpasses, and expanding areas prioritised for pedestrian use, this action is designed to enhance walkability in District 2. Improvements aim to create safe, accessible, and enjoyable pedestrian routes, encouraging walking as a primary mode of transport and reducing reliance on cars. |
+| 18 | Enhancement and expansion of public transport systems with smart technology, new trams, dedicated lanes, and new routes for a cleaner urban travel. | By integrating smart technology, introducing new trams, and establishing dedicated lanes and new routes, this initiative seeks to significantly improve the public transport network. The goal is to offer efficient, reliable, and eco-friendly urban travel options, increasing public transport ridership and contributing to cleaner air and reduced traffic congestion. |
+| 19 | Extension and modernisation of cycling infrastructure - Cycling Masterplan, bike sharing system and extension of cycling network. | This comprehensive approach to cycling infrastructure includes the development of a Cycling Masterplan, the launch of a bike-sharing system, and the extension of the cycling network within District 2. These measures aim to promote cycling as a viable and attractive alternative to car use, supporting healthier lifestyles and reducing environmental impact. |
+| Waste & circular economy | 23 | New waste sorting infrastructure to reduce energy consumption and increase waste management capabilities To enhance waste management efficiency and reduce energy consumption associated with waste handling, this action involves developing advanced waste sorting facilities. The new infrastructure will facilitate the separation and recycling of materials, significantly reducing the volume of waste sent to landfills. |
+| 24 | Public campaigns to reduce waste and increase recycling percentage among residents | Through educational and awareness campaigns, this measure seeks to engage residents in waste reduction and recycling efforts. The campaigns will provide information on sustainable waste practices, the importance of recycling, and how individuals can contribute to a cleaner, more sustainable community. |
+| Green infrastructure & nature-based solutions | 20 | Rehabilitation of water ways for sustainable development. This action focuses on restoring and enhancing the natural and functional aspects of waterways in District 2, Bucharest. The aim is to improve water quality, biodiversity, and the recreational value of water bodies, contributing to the overall resilience and sustainability of the urban environment. |
+| 21 | Development of green roofs | Implementing green roofs across buildings in District 2 serves multiple purposes, including reducing building energy consumption, enhancing urban biodiversity, and managing stormwater. Green roofs also contribute to improving air quality and providing residents with accessible green spaces. |
 PRAMÁTIA
 UNIVERSITAS
 
 Climate Neutrality Action
 Plan
 
-|   | 22| Rehabilitation of parks and development of sustainable green public spaces to incentivise pedestrian mobility. | By revitalising existing parks and creating new sustainable green spaces, this initiative aims to promote pedestrian mobility and environmental awareness. Enhancements include the introduction of eco-friendly features, such as native plantings, permeable pathways, and energy-efficient lighting, encouraging outdoor activities and community engagement.  |
+|  | 22 | Rehabilitation of parks and development of sustainable green public spaces to incentivise pedestrian mobility. | By revitalising existing parks and creating new sustainable green spaces, this initiative aims to promote pedestrian mobility and environmental awareness. Enhancements include the introduction of eco-friendly features, such as native plantings, permeable pathways, and energy-efficient lighting, encouraging outdoor activities and community engagement. |
 | --- | --- | --- | --- |
-|  Built environment | 1| Construction of new nZEB buildings. | The development of new buildings that meet or exceed nZEB standards represents a commitment to energy efficiency and sustainability. These buildings will use minimal energy, incorporate renewable energy sources, and serve as models for sustainable construction in District 2.  |
-|   |  2| Renovation of public buildings. | Upgrading public buildings to improve their energy efficiency and environmental performance is key to reducing the sector's carbon footprint. Renovations may include insulation improvements, installation of energy-efficient windows, and the integration of renewable energy systems.  |
-|   |  3| Reconversion of formal industrial areas. | Transforming former industrial sites into mixed-use developments or green spaces is part of a broader strategy to revitalize underused urban areas. This reconversion aims to enhance community amenities, provide new green spaces, and support sustainable urban growth.  |
-|   |  5| Reconversion of public spaces for sustainable development. | Redesigning public spaces to support sustainability goals includes creating pedestrian-friendly zones, enhancing green infrastructure, and integrating sustainable transport options. This initiative aims to make District 2 more livable and environmentally friendly.  |
-|   |  4| Citizen involvement program for sustainable reconversion of public spaces. | Engaging citizens in the design and development of public spaces ensures that these areas meet community needs and preferences. This participatory approach fosters a sense of ownership and responsibility towards local environments, promoting sustainable practices.  |
-|   |  6| Social inclusion program for sustainable development. | This program addresses the need to ensure that all community members, especially marginalised groups, benefit from and contribute to sustainability initiatives. The focus is on creating equitable access to green spaces, sustainable transport, and environmental education.  |
-|   |  7| Development of educational infrastructure for climate neutral education. | Investing in educational facilities that embody and teach principles of sustainability prepares future generations for a climate-neutral society. This includes constructing green school buildings, incorporating sustainability into curricula, and providing hands-on learning opportunities related to environmental stewardship.  |
-|  Cross-cutting interventions | Interventions that support the main pathways in fields of governance, social innovation, funding, | These grassroots approaches empower citizens to make informed decisions that contribute to the well-being of their urban ecosystem, fostering a stronger sense of community and a collective commitment to sustainable living practices. Municipalities can ensure  |
+| Built environment | 1 | Construction of new nZEB buildings. | The development of new buildings that meet or exceed nZEB standards represents a commitment to energy efficiency and sustainability. These buildings will use minimal energy, incorporate renewable energy sources, and serve as models for sustainable construction in District 2. |
+|  | 2 | Renovation of public buildings. | Upgrading public buildings to improve their energy efficiency and environmental performance is key to reducing the sector's carbon footprint. Renovations may include insulation improvements, installation of energy-efficient windows, and the integration of renewable energy systems. |
+|  | 3 | Reconversion of formal industrial areas. | Transforming former industrial sites into mixed-use developments or green spaces is part of a broader strategy to revitalize underused urban areas. This reconversion aims to enhance community amenities, provide new green spaces, and support sustainable urban growth. |
+|  | 5 | Reconversion of public spaces for sustainable development. | Redesigning public spaces to support sustainability goals includes creating pedestrian-friendly zones, enhancing green infrastructure, and integrating sustainable transport options. This initiative aims to make District 2 more livable and environmentally friendly. |
+|  | 4 | Citizen involvement program for sustainable reconversion of public spaces. | Engaging citizens in the design and development of public spaces ensures that these areas meet community needs and preferences. This participatory approach fosters a sense of ownership and responsibility towards local environments, promoting sustainable practices. |
+|  | 6 | Social inclusion program for sustainable development. | This program addresses the need to ensure that all community members, especially marginalised groups, benefit from and contribute to sustainability initiatives. The focus is on creating equitable access to green spaces, sustainable transport, and environmental education. |
+|  | 7 | Development of educational infrastructure for climate neutral education. | Investing in educational facilities that embody and teach principles of sustainability prepares future generations for a climate-neutral society. This includes constructing green school buildings, incorporating sustainability into curricula, and providing hands-on learning opportunities related to environmental stewardship. |
+| Cross-cutting interventions | Interventions that support the main pathways in fields of governance, social innovation, funding, | These grassroots approaches empower citizens to make informed decisions that contribute to the well-being of their urban ecosystem, fostering a stronger sense of community and a collective commitment to sustainable living practices. Municipalities can ensure |  |
 
 1
 中
@@ -1512,26 +1506,27 @@ Plan
 
 B-2.2: INDIVIDUAL ACTION OUTLINES
 
-|  INTERVENTIONS  |   |   |
+| INTERVENTIONS |  |  |
 | --- | --- | --- |
-|  Action outline | Action name | 8| Extensive moderate energy renovation of multifamily residential buildings in District 2 of Bucharest  |
-|   |  Action type | Technical intervention  |
-|   |  Action description | Moderate Energy Renovation of Multifamily Residential Buildings; Energy efficiency of blocks of flats; Positive Energy District pilot - Creation of Positive Energy District pilot: Traian Sports High School, residential buildings; Programme for the modernisation and rehabilitation of lifts in residential buildings in District 2; Pilot project for residential and public buildings: solar thermal panel system for heating and hot water supply; Preparation of technical and economic documents for increasing the energy efficiency of residential blocks in District 2  |
-|  Reference to impact pathway | Field of action | Energy systems  |
-|   |  Systemic lever | Technology/infrastructure  |
-|   |  Outcome (according to module B-1.1) | Decreased energy consumption and lower emissions from buildings.  |
-|  Implementation | Responsible bodies/person for implementation | District 2 City Hall, Bucharest City Hall  |
-|   |  Action scale & addressed entities | District 2  |
-|   |  Involved stakeholders | City Hall, TERMOENERGETICA, residents  |
-|   |  Comments on implementation |   |
-|  Impact & cost | Generated renewable energy (if applicable) | 327,039 MWh/year  |
-|   |  Removed/substituted energy, volume, or fuel type | Electrical energy: 300,384 MWh/year Natural gas: 952,289 MWh/year  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 245,230 tons CO2/year from Buildings  |
-|   |  Total costs and costs by CO2e unit | €246,109,191 - total cost  |
-|  Action outline | Action name | 9| Comprehensive energy efficiency and modernisation program targeting educational institutions, public administrative buildings, and cultural heritage sites across District 2, Bucharest  |
-| --- | --- | --- | --- |
-|   |  Action type | Technical intervention  |
-|   |  Action description | Energy efficiency through rehabilitation and modernisation of Ferdinand I Secondary School,  |
+| Action outline | Action name | 8. Extensive moderate energy renovation of multifamily residential buildings in District 2 of Bucharest |
+| --- | --- | --- |
+|  | Action type | Technical intervention |
+|  | Action description | Moderate Energy Renovation of Multifamily Residential Buildings; Energy efficiency of blocks of flats; Positive Energy District pilot - Creation of Positive Energy District pilot: Traian Sports High School, residential buildings; Programme for the modernisation and rehabilitation of lifts in residential buildings in District 2; Pilot project for residential and public buildings: solar thermal panel system for heating and hot water supply; Preparation of technical and economic documents for increasing the energy efficiency of residential blocks in District 2 |
+| Reference to impact pathway | Field of action | Energy systems |
+|  | Systemic lever | Technology/infrastructure |
+|  | Outcome (according to module B-1.1) | Decreased energy consumption and lower emissions from buildings. |
+| Implementation | Responsible bodies/person for implementation | District 2 City Hall, Bucharest City Hall |
+|  | Action scale & addressed entities | District 2 |
+|  | Involved stakeholders | City Hall, TERMOENERGETICA, residents |
+|  | Comments on implementation |  |
+| Impact & cost | Generated renewable energy (if applicable) | 327,039 MWh/year |
+|  | Removed/substituted energy, volume, or fuel type | Electrical energy: 300,384 MWh/year Natural gas: 952,289 MWh/year |
+|  | GHG emissions reduction estimate (total) per emission source sector | 245,230 tons CO2/year from Buildings |
+|  | Total costs and costs by CO2e unit | €246,109,191 - total cost |
+| Action outline | Action name | 9. Comprehensive energy efficiency and modernisation program targeting educational institutions, public administrative buildings, and cultural heritage sites across District 2, Bucharest |
+| --- | --- | --- |
+|  | Action type | Technical intervention |
+|  | Action description | Energy efficiency through rehabilitation and modernisation of Ferdinand I Secondary School, |
 中
 
 PRIMÁRIA
@@ -1541,7 +1536,8 @@ Climate Neutrality Action Plan
 
 O
 
-|   |  | Ion I.C. Brătianu Technological High School, Lucian Blaga High School, Maica Domnului School, Secondary School no.62
+|  |  | Ion I.C. Brătianu Technological High School, Lucian Blaga High School, Maica Domnului School, Secondary School no.62 |
+| --- | --- | --- |
 Thermal rehabilitation of the Public Directorate for Personal and Civil Status Records District 2 Bucharest, 19 Olari Street;
 Consolidation, rehabilitation and modernisation of Secondary School no. 71, Calea Moșilor, no.148, District 2, Bucharest;
 Renovation of the administrative building of the City Hall District 2 (photovoltaic panels 800,000 lei) + energy efficiency (reduce primary energy consumption by 60%);
@@ -1552,21 +1548,22 @@ Installation for self-consumption of about 115 kwp photovoltaic panels. => 176.7
 Photovoltaic plants installed in 13 educational units;
 Preservation and cultural and economic valorisation of the built heritage;
 Preparation of renovation packages for historical/heritage buildings for private owners - Analysis and creation of renovation packages for heritage/historical/old buildings, including administrative support to competent authorities (One Stop Shop);  |
+| Reference to impact pathway | Field of action | Energy systems |
 | --- | --- | --- |
-|  Reference to impact pathway | Field of action | Energy systems  |
-|   |  Systemic lever | Technology/infrastructure  |
-|   |  Outcome (according to module B-1.1) | Widespread use of smart grids and renewable energy sources.  |
-|  Implementation | Responsible bodies/person for implementation | District 2 City Hall,  |
-|   |  Action scale & addressed entities | District 2  |
-|   |  Involved stakeholders | City Hall, educational units, Bucharest City Hall  |
-|   |  Comments on implementation |   |
-|  Impact & cost | Generated renewable energy (if applicable) | 20,758 MWh/year  |
-|   |  Removed/substituted energy, volume, or fuel type | Electrical energy: 53,548 MWh/year
-Natural gas: 233,360 MWh/year  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 56,563 tons CO2/year from Buildings  |
-|   |  Total costs and costs by CO2e unit | €51,664,235 - total cost  |
-|  Action outline | Action name | 10| Upgrading the electrical infrastructure to enhance the reliability, efficiency, and intelligence of the electrical grid to meet current and future demands  |
-| --- | --- | --- | --- |
+|  | Systemic lever | Technology/infrastructure |
+|  | Outcome (according to module B-1.1) | Widespread use of smart grids and renewable energy sources. |
+| Implementation | Responsible bodies/person for implementation | District 2 City Hall, |
+|  | Action scale & addressed entities | District 2 |
+|  | Involved stakeholders | City Hall, educational units, Bucharest City Hall |
+|  | Comments on implementation |  |
+| Impact & cost | Generated renewable energy (if applicable) | 20,758 MWh/year |
+|  | Removed/substituted energy, volume, or fuel type | Electrical energy: 53,548 MWh/year |
+| Natural gas: 233,360 MWh/year  |
+|  | GHG emissions reduction estimate (total) per emission source sector | 56,563 tons CO2/year from Buildings |
+| --- | --- | --- |
+|  | Total costs and costs by CO2e unit | €51,664,235 - total cost |
+
+Action outline - Action name: 10. Upgrading the electrical infrastructure to enhance the reliability, efficiency, and intelligence of the electrical grid to meet current and future demands
 
 3
 4
@@ -1577,34 +1574,37 @@ MAITOMALIA
 Climate Neutrality Action
 Plan
 
-|   | Action type | Technical intervention  |
+|  | Action type | Technical intervention |
 | --- | --- | --- |
-|   |  Action description | Replacement of 110 kV Fundeni - Pipera 2 LES
+|  | Action description | Replacement of 110 kV Fundeni - Pipera 2 LES |
 Modernisation of 110/20/10 kV Obor station
 Upgrading of transformer substations and medium voltage lines
 Demonstration project - implementation of smart electricity distribution in the Iancului area  |
-|  Reference to impact pathway | Field of action | Energy systems  |
-|   |  Systemic lever | Technology/infrastructure  |
-|   |  Outcome (according to module B-1.1) | Decreased energy consumption and lower emissions from buildings. Widespread use of smart grids and renewable energy sources  |
-|  Implementation | Responsible bodies/person for implementation | District 2 City Hall, Bucharest City Hall  |
-|   |  Action scale & addressed entities | District 2  |
-|   |  Involved stakeholders | District 2 City Hall, ELCEN, Bucharest City Hall  |
-|   |  Comments on implementation |   |
-|  Impact & cost | Generated renewable energy (if applicable) | 140,000 MWh/year  |
-|   |  Removed/substituted energy, volume, or fuel type | Electrical energy: 120,000 MWh/year
-Natural gas: 200,000 MWh/year  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 61,520 tons CO2/year from IPPU  |
-|   |  Total costs and costs by CO2e unit | €26,687,200 - total cost  |
-|  Action outline | Action name | 11| Expansion and enhancement of the public lighting system across green spaces, parks, playgrounds, and parking areas in designated locations  |
-| --- | --- | --- | --- |
-|   |  Action type | Technical intervention  |
-|   |  Action description | Expansion and efficiency of the public lighting system - Green Spaces Basarabia Boulevard, Abanosului Park, Dobrina Alley Playground no. 4, Avrig Park, Nada Florilor Parking, Closani Park, Păsărari Park, Mihai Bravu Road no. 90 - 106;
+| Reference to impact pathway | Field of action | Energy systems |
+| --- | --- | --- |
+|  | Systemic lever | Technology/infrastructure |
+|  | Outcome (according to module B-1.1) | Decreased energy consumption and lower emissions from buildings. Widespread use of smart grids and renewable energy sources |
+| Implementation | Responsible bodies/person for implementation | District 2 City Hall, Bucharest City Hall |
+|  | Action scale & addressed entities | District 2 |
+|  | Involved stakeholders | District 2 City Hall, ELCEN, Bucharest City Hall |
+|  | Comments on implementation |  |
+| Impact & cost | Generated renewable energy (if applicable) | 140,000 MWh/year |
+|  | Removed/substituted energy, volume, or fuel type | Electrical energy: 120,000 MWh/year |
+| Natural gas: 200,000 MWh/year  |
+|  | GHG emissions reduction estimate (total) per emission source sector | 61,520 tons CO2/year from IPPU |
+| --- | --- | --- |
+|  | Total costs and costs by CO2e unit | €26,687,200 - total cost |
+| Action outline | Action name | 11. Expansion and enhancement of the public lighting system across green spaces, parks, playgrounds, and parking areas in designated locations |
+| --- | --- | --- |
+|  | Action type | Technical intervention |
+|  | Action description | Expansion and efficiency of the public lighting system - Green Spaces Basarabia Boulevard, Abanosului Park, Dobrina Alley Playground no. 4, Avrig Park, Nada Florilor Parking, Closani Park, Păsărari Park, Mihai Bravu Road no. 90 - 106; |
 Capital repair and extension of public lighting system in Plumbuita II Park; Repair and extension of the public lighting system in Tei Park;
 Public lighting system - Drinking water fountain area, 1907 Răscoala Street, 226 Ştefan cel Mare Street, Ostrov Park, Chiristigiilor 2 - 4, 186-200 Basarabia Boulevard playground
 Extension and improvement of the public lighting system - Green spaces Basarabia Boulevard, Abanosului Park, Dobrina alley playground no. 4, Avrig Park, Nada Florilor car parks, Closani Park, Păsărari Park, Mihai Bravu Road no. 90 - 107.  |
-|  Reference to impact pathway | Field of action | Energy system  |
-|   |  Systemic lever | Technology/infrastructure  |
-|   |  Outcome (according to module B-1.1) | Energy efficient public lightning system  |
+| Reference to impact pathway | Field of action | Energy system |
+| --- | --- | --- |
+|  | Systemic lever | Technology/infrastructure |
+|  | Outcome (according to module B-1.1) | Energy efficient public lighting system |
 中
 
 PRIMÁRIA
@@ -1615,20 +1615,20 @@ Climate Neutrality Action Plan
 
 #
 
-|  Implementation | Responsible bodies/person for implementation | District 2 City Hall  |
+| Implementation | Responsible bodies/person for implementation | District 2 City Hall |
 | --- | --- | --- |
-|   |  Action scale & addressed entities | District 2  |
-|   |  Involved stakeholders | District 2 City Hall, Bucharest City Hall  |
-|   |  Comments on implementation |   |
-|  Impact & cost | Generated renewable energy (if applicable) | 1,200 MWh/year  |
-|   |  Removed/substituted energy, volume, or fuel type | Electrical energy: 600 MWh/year Diesel: 1,800 MWh/year  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 586 tons CO2/year from Transport  |
-|   |  Total costs and costs by CO2e unit | €1,603,574 - total cost  |
-|  Action outline | Action name | 12| Development of a digital awareness and education center as well as training programs to support the understanding and education of companies and citizens regarding climate-neutral smart city concepts and efficient implementation methods  |
-| --- | --- | --- | --- |
-|   |  Action type | Other intervention  |
-|   |  Action description | Setting up an information point and organising events to raise public awareness of the importance of improving energy efficiency; Digital awareness and education hub - Development of an interactive and informative digital hub to support awareness and education of companies and citizens on the climate neutral smart city concept and how to implement it efficiently; Infrastructure energy management - Establishment of an urban energy management team with the mission to provide technical assistance in the field of energy at sector level; The creation of energy-climate atlases through the real-time dynamic monitoring of the energy footprint (including related CO2 emission levels) of all urban infrastructure elements, with the recording of the levels of exceedance of the allowed/regulated thresholds and the related alarming in order to apply solutions to return to the allowed/regulated parameters Simplified procedures to reduce red tape for citizens of District 2" Energy consumption buildings database S2 - Inventory of buildings and creation of the database with information about buildings: year of construction, type of building (residential SFB/MAB, health, education, offices, commercial, industrial, etc.); energy consumption; CO2 emissions;  |
-|   | Field of action | Energy systems  |
+|  | Action scale & addressed entities | District 2 |
+|  | Involved stakeholders | District 2 City Hall, Bucharest City Hall |
+|  | Comments on implementation |  |
+| Impact & cost | Generated renewable energy (if applicable) | 1,200 MWh/year |
+|  | Removed/substituted energy, volume, or fuel type | Electrical energy: 600 MWh/year Diesel: 1,800 MWh/year |
+|  | GHG emissions reduction estimate (total) per emission source sector | 586 tons CO2/year from Transport |
+|  | Total costs and costs by CO2e unit | €1,603,574 - total cost |
+| Action outline | Action name | 12. Development of a digital awareness and education center as well as training programs to support the understanding and education of companies and citizens regarding climate-neutral smart city concepts and efficient implementation methods |
+| --- | --- | --- |
+|  | Action type | Other intervention |
+|  | Action description | Setting up an information point and organising events to raise public awareness of the importance of improving energy efficiency; Digital awareness and education hub - Development of an interactive and informative digital hub to support awareness and education of companies and citizens on the climate neutral smart city concept and how to implement it efficiently; Infrastructure energy management - Establishment of an urban energy management team with the mission to provide technical assistance in the field of energy at sector level; The creation of energy-climate atlases through the real-time dynamic monitoring of the energy footprint (including related CO2 emission levels) of all urban infrastructure elements, with the recording of the levels of exceedance of the allowed/regulated thresholds and the related alarming in order to apply solutions to return to the allowed/regulated parameters Simplified procedures to reduce red tape for citizens of District 2" Energy consumption buildings database S2 - Inventory of buildings and creation of the database with information about buildings: year of construction, type of building (residential SFB/MAB, health, education, offices, commercial, industrial, etc.); energy consumption; CO2 emissions; |
+|  | Field of action | Energy systems |
 6
 
 PRIMÁRIA
@@ -1637,38 +1637,40 @@ MAITOMALU
 
 Climate Neutrality Action Plan
 
-|  Reference to impact pathway | Systemic lever | Technology/infrastructure, Social innovation  |
+| Reference to impact pathway | Systemic lever | Technology/infrastructure, Social innovation |
 | --- | --- | --- |
-|   |  Outcome (according to module B-1.1) | Widespread adoption of energy-efficient practices and technologies across residential, commercial, and public sectors.  |
-|  Implementation | Responsible bodies/person for implementation | District 2 City Hall  |
-|   |  Action scale & addressed entities | District 2  |
-|   |  Involved stakeholders | City Hall, NGOs, Bucharest City Hall  |
-|   |  Comments on implementation |   |
-|  Impact & cost | Generated renewable energy (if applicable) | 5,000 MWh/year  |
-|   |  Removed/substituted energy, volume, or fuel type | Electrical energy: 80,000 MWh/year
-Natural gas: 100,000 MWh/year  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 34,280 tons CO2/year from IPPU  |
-|   |  Total costs and costs by CO2e unit | €5,822,068 - total cost  |
-|  Action outline | Action name | 25| Integrated investments to ensure climate neutrality in relevant areas such as energy, buildings, environment, etc.  |
-| --- | --- | --- | --- |
-|   |  Action type | Technical intervention  |
-|   |  Action description | Other investments to ensure climate neutrality in relevant areas such as energy, buildings, environment, etc.  |
-|  Reference to impact pathway | Field of action | Energy systems  |
-|   |  Systemic lever | Technology/infrastructure  |
-|   |  Outcome (according to module B-1.1) | Enhanced resilience and sustainability of the urban environment  |
-|  Implementation | Responsible bodies/person for implementation | District 2 City Hall,  |
-|   |  Action scale & addressed entities | District 2  |
-|   |  Involved stakeholders | District 2 City Hall  |
-|   |  Comments on implementation |   |
-|  Impact & cost | Generated renewable energy (if applicable) | 120,000 MWh/year  |
-|   |  Removed/substituted energy, volume, or fuel type | Electrical energy: 120,000 MWh/year
-Natural gas: 150,000 MWh/year  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 51,420 tons CO2/year from Buildings  |
-|   |  Total costs and costs by CO2e unit | €10,000,000  |
-|  Action outline | Action name | 13| Rehabilitation and reconfiguration of street network to increase transport efficiency and decrease pollution levels.  |
-| --- | --- | --- | --- |
-|   |  Action type | Physical intervention  |
-|   |  Action description | DALI - (capital repairs, road system rehabilitation)
+|  | Outcome (according to module B-1.1) | Widespread adoption of energy-efficient practices and technologies across residential, commercial, and public sectors. |
+| Implementation | Responsible bodies/person for implementation | District 2 City Hall |
+|  | Action scale & addressed entities | District 2 |
+|  | Involved stakeholders | City Hall, NGOs, Bucharest City Hall |
+|  | Comments on implementation |  |
+| Impact & cost | Generated renewable energy (if applicable) | 5,000 MWh/year |
+|  | Removed/substituted energy, volume, or fuel type | Electrical energy: 80,000 MWh/year |
+| Natural gas: 100,000 MWh/year  |
+|  | GHG emissions reduction estimate (total) per emission source sector | 34,280 tons CO2/year from IPPU |
+| --- | --- | --- |
+|  | Total costs and costs by CO2e unit | €5,822,068 - total cost |
+| Action outline | Action name | 25. Integrated investments to ensure climate neutrality in relevant areas such as energy, buildings, environment, etc. |
+| --- | --- | --- |
+|  | Action type | Technical intervention |
+|  | Action description | Other investments to ensure climate neutrality in relevant areas such as energy, buildings, environment, etc. |
+| Reference to impact pathway | Field of action | Energy systems |
+|  | Systemic lever | Technology/infrastructure |
+|  | Outcome (according to module B-1.1) | Enhanced resilience and sustainability of the urban environment |
+| Implementation | Responsible bodies/person for implementation | District 2 City Hall, |
+|  | Action scale & addressed entities | District 2 |
+|  | Involved stakeholders | District 2 City Hall |
+|  | Comments on implementation |  |
+| Impact & cost | Generated renewable energy (if applicable) | 120,000 MWh/year |
+|  | Removed/substituted energy, volume, or fuel type | Electrical energy: 120,000 MWh/year |
+| Natural gas: 150,000 MWh/year  |
+|  | GHG emissions reduction estimate (total) per emission source sector | 51,420 tons CO2/year from Buildings |
+| --- | --- | --- |
+|  | Total costs and costs by CO2e unit | €10,000,000 |
+| Action outline | Action name | 13. Rehabilitation and reconfiguration of street network to increase transport efficiency and decrease pollution levels. |
+| --- | --- | --- |
+|  | Action type | Physical intervention |
+|  | Action description | DALI - (capital repairs, road system rehabilitation) |
 Streets, Alleys, Parking lots;  |
 中
 
@@ -1680,25 +1682,25 @@ Climate Neutrality Action Plan
 
 O
 
-|   |  | Multi-annual programme for the rehabilitation and upgrading of secondary or local streets Rehabilitation of the road system on Dimitrie Pompeiu Boulevard, Petricani Road, Lacul Tei Boulevard, Maica Domnului Street, Reînvierii Street and Turmelor Street; Upgrading of the sections of municipal road between and between", works that will take place simultaneously, in correlation with and in addition to the investment objective "Improvement of bicycle lanes in District 2 of Bucharest", carried out by District 2 and financed through the National Recovery and Resilience Plan; Uneven road crossings and passages; Rehabilitation of the road system: Socului Alley, Atletilor Street, Carausilor Street, Constantin Georgian Street, Dumbrava Rosie Street, Geamandurii Street, Giuseppe garibaldi Street, Invalid Suliga Ion Street, I.L Caragiale Street, Lavitei Street, etc. Rehabilitation of the Obor area, urban regeneration, (cancellation of car lanes, improvement of the Aleea cu Ceas, pedestrian passage, awnings, creation of bicycle lanes) Urban Traffic Control Centre and Intersection Priority Signalling  |
+|  |  | Multi-annual programme for the rehabilitation and upgrading of secondary or local streets Rehabilitation of the road system on Dimitrie Pompeiu Boulevard, Petricani Road, Lacul Tei Boulevard, Maica Domnului Street, Reînvierii Street and Turmelor Street; Upgrading of the sections of municipal road between and between", works that will take place simultaneously, in correlation with and in addition to the investment objective "Improvement of bicycle lanes in District 2 of Bucharest", carried out by District 2 and financed through the National Recovery and Resilience Plan; Uneven road crossings and passages; Rehabilitation of the road system: Socului Alley, Atletilor Street, Carausilor Street, Constantin Georgian Street, Dumbrava Rosie Street, Geamandurii Street, Giuseppe garibaldi Street, Invalid Suliga Ion Street, I.L Caragiale Street, Lavitei Street, etc. Rehabilitation of the Obor area, urban regeneration, (cancellation of car lanes, improvement of the Aleea cu Ceas, pedestrian passage, awnings, creation of bicycle lanes) Urban Traffic Control Centre and Intersection Priority Signalling |
 | --- | --- | --- |
-|  Reference to impact pathway | Field of action | Mobility & Transport  |
-|   |  Systemic lever | Technology/infrastructure  |
-|   |  Outcome (according to module B-1.1) | Increased efficiency of public transportation  |
-|  Implementation | Responsible bodies/person for implementation | District 2 City Hall, Bucharest City Hall  |
-|   |  Action scale & addressed entities | District 2  |
-|   |  Involved stakeholders | District 2 City Hall, residents  |
-|   |  Comments on implementation |   |
-|  Impact & cost | Generated renewable energy (if applicable) | 45,000 MWh/year  |
-|   |  Removed/substituted energy, volume, or fuel type | Electrical energy: 4,113 MWh/year Diesel: 193,952 MWh/year Gasoline: 135,807 MWh/year  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 86,325 tons CO2/year from Transport  |
-|   |  Total costs and costs by CO2e unit | €595,556,582 - total cost  |
-|  Action outline | Action name | 14| Development of a network of EV charging stations  |
-| --- | --- | --- | --- |
-|   |  Action type | Technical intervention  |
-|   |  Action description | Integrated electric charging station system for cars and scooters  |
-|  Reference to impact pathway | Field of action | Mobility & transport  |
-|   |  Systemic lever | Technology/infrastructure  |
+| Reference to impact pathway | Field of action | Mobility & Transport |
+|  | Systemic lever | Technology/infrastructure |
+|  | Outcome (according to module B-1.1) | Increased efficiency of public transportation |
+| Implementation | Responsible bodies/person for implementation | District 2 City Hall, Bucharest City Hall |
+|  | Action scale & addressed entities | District 2 |
+|  | Involved stakeholders | District 2 City Hall, residents |
+|  | Comments on implementation |  |
+| Impact & cost | Generated renewable energy (if applicable) | 45,000 MWh/year |
+|  | Removed/substituted energy, volume, or fuel type | Electrical energy: 4,113 MWh/year Diesel: 193,952 MWh/year Gasoline: 135,807 MWh/year |
+|  | GHG emissions reduction estimate (total) per emission source sector | 86,325 tons CO2/year from Transport |
+|  | Total costs and costs by CO2e unit | €595,556,582 - total cost |
+| Action outline | Action name | 14. Development of a network of EV charging stations |
+| --- | --- | --- |
+|  | Action type | Technical intervention |
+|  | Action description | Integrated electric charging station system for cars and scooters |
+| Reference to impact pathway | Field of action | Mobility & transport |
+|  | Systemic lever | Technology/infrastructure |
 中
 
 PRIMÁRIA
@@ -1709,22 +1711,23 @@ Climate Neutrality Action Plan
 
 #
 
-|   | Outcome (according to module B-1.1) | Increased ownership and use of electric vehicles  |
+|  | Outcome (according to module B-1.1) | Increased ownership and use of electric vehicles |
 | --- | --- | --- |
-|  Implementation | Responsible bodies/person for implementation | District 2 City Hall  |
-|   |  Action scale & addressed entities | District 2  |
-|   |  Involved stakeholders | City Hall, residents, private stakeholders  |
-|   |  Comments on implementation |   |
-|  Impact & cost | Generated renewable energy (if applicable) | 20,000 MWh/year  |
-|   |  Removed/substituted energy, volume, or fuel type | Electrical energy: 10,000 MWh/year
+| Implementation | Responsible bodies/person for implementation | District 2 City Hall |
+|  | Action scale & addressed entities | District 2 |
+|  | Involved stakeholders | City Hall, residents, private stakeholders |
+|  | Comments on implementation |  |
+| Impact & cost | Generated renewable energy (if applicable) | 20,000 MWh/year |
+|  | Removed/substituted energy, volume, or fuel type | Electrical energy: 10,000 MWh/year |
 Diesel: 8,050 MWh/year
 Gasoline: 7,600 MWh/year  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 5,802 tons CO2/year from Transport  |
-|   |  Total costs and costs by CO2e unit | €3,000,000 - total cost  |
-|  Action outline | Action name | 15| Decrease number of visits to public administration offices through digitalisation  |
-| --- | --- | --- | --- |
-|   |  Action type | Other intervention  |
-|   |  Action description | Measures to streamline the work processes related to the relationship between the institution and the owners' associations, both from a back-office and front-office perspective, in order to reduce bureaucracy.
+|  | GHG emissions reduction estimate (total) per emission source sector | 5,802 tons CO2/year from Transport |
+| --- | --- | --- |
+|  | Total costs and costs by CO2e unit | €3,000,000 - total cost |
+| Action outline | Action name | 15. Decrease number of visits to public administration offices through digitalisation |
+| --- | --- | --- |
+|  | Action type | Other intervention |
+|  | Action description | Measures to streamline the work processes related to the relationship between the institution and the owners' associations, both from a back-office and front-office perspective, in order to reduce bureaucracy. |
 Cultivation and development of knowledge, competences and skills for 30 employees of the mayor's office to use and administer the IT platform developed in the project, through participation in training programmes, including by addressing the themes of sustainable development, equal opportunities, non-discrimination and gender equality, to use and administer the implemented IT platform.
 Develop standard mechanisms and procedures for decision support and long-term strategic planning in line with the Strategy for the Consolidation of Public Administration through the development of the District 2 Digital Transformation Strategy.
 Improve communication and information flow between the departments of the Municipality of District 2 of Bucharest and in its relationship with citizens by implementing a document management system, electronic registration and electronic archive.
@@ -1740,24 +1743,24 @@ Climate Neutrality Action Plan
 
 C
 
-|   |  | the implementation of the Local Council Decisions." Computerisation of the DPEPSC District 2 service, including electronic archiving Diversification of the services provided to the citizens of District 2 through the creation of a respite centre and improvement of the social services infrastructure. Implementation of the digital transformation strategy for District 2.  |
+|  |  | the implementation of the Local Council Decisions." Computerisation of the DPEPSC District 2 service, including electronic archiving Diversification of the services provided to the citizens of District 2 through the creation of a respite centre and improvement of the social services infrastructure. Implementation of the digital transformation strategy for District 2. |
 | --- | --- | --- |
-|  Reference to impact pathway | Field of action | Mobility & Transport  |
-|   |  Systemic lever | Technology/infrastructure  |
-|   |  Outcome (according to module B-1.1) | Reduced commute-related emissions and streamlining government services. Reduced carbon footprint of public services  |
-|  Implementation | Responsible bodies/person for implementation | District 2 City Hall  |
-|   |  Action scale & addressed entities | District 2  |
-|   |  Involved stakeholders | District 2 City Hall  |
-|   |  Comments on implementation |   |
-|  Impact & cost | Generated renewable energy (if applicable) | 0  |
-|   |  Removed/substituted energy, volume, or fuel type | Electrical energy: 2,000 MWh/year Diesel: 8,700 MWh/year Gasoline: 8,000 MWh/year  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 4,667 tons CO2/year from Transport  |
-|   |  Total costs and costs by CO2e unit | €3,068,068  |
-|  Action outline | Action name | 16| New parking policy and new residential parking facilities meant to decrease car use and transform parking spaces into public areas.  |
-| --- | --- | --- | --- |
-|   |  Action type | Physical intervention/ Other intervention  |
-|   |  Action description | Road system rehabilitation. Armasul Marcu street, areas of collective housing blocks no. 9, 11, 13; Outlining a residential parking policy "Parking Day" - multi-year project to promote the alternative use of parking spaces (the value of a parking space as public space). Obor area or on a street with high pedestrian flows in the Central Area". Smart mobility and infrastructure - Promoting smart mobility both through the development of a road and parking area dedicated to the development and testing of outdoor ambient intelligence technologies and products, as well as ICT solutions for connected and semi-autonomous vehicles;  |
-|   | Field of action | Mobility & Transport  |
+| Reference to impact pathway | Field of action | Mobility & Transport |
+|  | Systemic lever | Technology/infrastructure |
+|  | Outcome (according to module B-1.1) | Reduced commute-related emissions and streamlining government services. Reduced carbon footprint of public services |
+| Implementation | Responsible bodies/person for implementation | District 2 City Hall |
+|  | Action scale & addressed entities | District 2 |
+|  | Involved stakeholders | District 2 City Hall |
+|  | Comments on implementation |  |
+| Impact & cost | Generated renewable energy (if applicable) | 0 |
+|  | Removed/substituted energy, volume, or fuel type | Electrical energy: 2,000 MWh/year Diesel: 8,700 MWh/year Gasoline: 8,000 MWh/year |
+|  | GHG emissions reduction estimate (total) per emission source sector | 4,667 tons CO2/year from Transport |
+|  | Total costs and costs by CO2e unit | €3,068,068 |
+| Action outline | Action name | 16. New parking policy and new residential parking facilities meant to decrease car use and transform parking spaces into public areas. |
+| --- | --- | --- |
+|  | Action type | Physical intervention/ Other intervention |
+|  | Action description | Road system rehabilitation. Armasul Marcu street, areas of collective housing blocks no. 9, 11, 13; Outlining a residential parking policy "Parking Day" - multi-year project to promote the alternative use of parking spaces (the value of a parking space as public space). Obor area or on a street with high pedestrian flows in the Central Area". Smart mobility and infrastructure - Promoting smart mobility both through the development of a road and parking area dedicated to the development and testing of outdoor ambient intelligence technologies and products, as well as ICT solutions for connected and semi-autonomous vehicles; |
+|  | Field of action | Mobility & Transport |
 0
 
 PRIMÁRIA
@@ -1766,23 +1769,24 @@ NESTERMALU
 Climate Neutrality Action
 Plan
 
-|  Reference to impact pathway | Systemic lever | Technology/infrastructure; Governance  |
+| Reference to impact pathway | Systemic lever | Technology/infrastructure; Governance |
 | --- | --- | --- |
-|   | Outcome (according to module B-1.1) | Comprehensive urban mobility plan fully operational  |
-|  Implementation | Responsible bodies/person for implementation | District 2 City Hall, Bucharest Municipality  |
-|   | Action scale & addressed entities | District 2  |
-|   | Involved stakeholders | District 2 City Hall  |
-|   | Comments on implementation |   |
-|  Impact & cost | Generated renewable energy (if applicable) | 8,000 MWh/year  |
-|   | Removed/substituted energy, volume, or fuel type | Electrical energy: 2,000 MWh/year
+|  | Outcome (according to module B-1.1) | Comprehensive urban mobility plan fully operational |
+| Implementation | Responsible bodies/person for implementation | District 2 City Hall, Bucharest Municipality |
+|  | Action scale & addressed entities | District 2 |
+|  | Involved stakeholders | District 2 City Hall |
+|  | Comments on implementation |  |
+| Impact & cost | Generated renewable energy (if applicable) | 8,000 MWh/year |
+|  | Removed/substituted energy, volume, or fuel type | Electrical energy: 2,000 MWh/year |
 Diesel: 4,788 MWh/year
 Gasoline: 6,558 MWh/year  |
-|   | GHG emissions reduction estimate (total) per emission source sector | 3,263 tons CO2/year from Transport  |
-|   | Total costs and costs by CO2e unit | €2,382,800 - total cost  |
-|  Action outline | Action name | 17| Increased pedestrian mobility by revitalisation urban parks, upgrade of pedestrian underpasses, and expansion of pedestrian-priority areas.  |
-| --- | --- | --- | --- |
-|   | Action type | Physical intervention  |
-|   | Action description | Resurfacing of pathways and running tracks in Morarilor Park
+|  | GHG emissions reduction estimate (total) per emission source sector | 3,263 tons CO2/year from Transport |
+| --- | --- | --- |
+|  | Total costs and costs by CO2e unit | €2,382,800 - total cost |
+| Action outline | Action name | 17. Increased pedestrian mobility by revitalisation urban parks, upgrade of pedestrian underpasses, and expansion of pedestrian-priority areas. |
+| --- | --- | --- |
+|  | Action type | Physical intervention |
+|  | Action description | Resurfacing of pathways and running tracks in Morarilor Park |
 Urban regeneration, rehabilitation of Calea mosilor - Vasile area
 Installation of awnings, closure of passage, repair of floors and pedestrian pedestrian pedestrian passage Obor - 4 pieces
 Rehabilitation of interior alleys and installation of rainwater collection system Motodrom Park
@@ -1790,10 +1794,11 @@ Replacement of escalators in Moşilor pedestrian passage
 Introduction of new priority areas for pedestrians in the city centre (pedestrian and mixed-use areas)
 Icoanei-Verona area, Old Moşilor Street and Street. Jean Louis Calderon
 Reconfiguration of the Obor area - transformation into a pedestrian priority area The area between Obor Market, District 2 City Hall and Obor Shop Modernisation, pedestrianisation and reconfiguration of the profile of Dimitrie Pompeiu Avenue and Herastrau Station Street  |
-|  Reference to impact pathway | Field of action | Mobility & Transport  |
-|   | Systemic lever | Technology/infrastructure  |
-|   | Outcome (according to module B-1.1) | Enhanced urban livability with safer streets for pedestrians and cyclists  |
-|  Implementation | Responsible bodies/person for implementation | District 2 City Hall, Public Domain Administration District 2  |
+| Reference to impact pathway | Field of action | Mobility & Transport |
+| --- | --- | --- |
+|  | Systemic lever | Technology/infrastructure |
+|  | Outcome (according to module B-1.1) | Enhanced urban livability with safer streets for pedestrians and cyclists |
+| Implementation | Responsible bodies/person for implementation | District 2 City Hall, Public Domain Administration District 2 |
 1
 
 PRIMÁRIA
@@ -1802,19 +1807,20 @@ NESTERMALU
 Climate Neutrality Action
 Plan
 
-|   | Action scale & addressed entities | District 2  |
+|  | Action scale & addressed entities | District 2 |
 | --- | --- | --- |
-|   |  Involved stakeholders | District 2 City Hall,  |
-|   |  Comments on implementation |   |
-|  Impact & cost | Generated renewable energy (if applicable) | 14,500 MWh/year  |
-|   |  Removed/substituted energy, volume, or fuel type | Diesel: 50,457 MWh/year
-Gasoline: 37,698 MWh/year  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 22,859 tons CO2/year from Transport  |
-|   |  Total costs and costs by CO2e unit | €163,409,677  |
-|  Action outline | Action name | 18| Enhancement and expansion of public transport systems with smart technology, new trams, dedicated lanes, and new routes for a cleaner urban travel.  |
-| --- | --- | --- | --- |
-|   |  Action type | Physical intervention  |
-|   |  Action description | Smart&Green Mobility integrated ITS system for the Bucharest-IIfov region - Passenger information at public transport stations - 425 public transport stations for District 2;
+|  | Involved stakeholders | District 2 City Hall, |
+|  | Comments on implementation |  |
+| Impact & cost | Generated renewable energy (if applicable) | 14,500 MWh/year |
+|  | Removed/substituted energy, volume, or fuel type | Diesel: 50,457 MWh/year |
+| Gasoline: 37,698 MWh/year  |
+|  | GHG emissions reduction estimate (total) per emission source sector | 22,859 tons CO2/year from Transport |
+| --- | --- | --- |
+|  | Total costs and costs by CO2e unit | €163,409,677 |
+| Action outline | Action name | 18. Enhancement and expansion of public transport systems with smart technology, new trams, dedicated lanes, and new routes for a cleaner urban travel. |
+| --- | --- | --- |
+|  | Action type | Physical intervention |
+|  | Action description | Smart&Green Mobility integrated ITS system for the Bucharest-IIfov region - Passenger information at public transport stations - 425 public transport stations for District 2; |
 Improvement of tram infrastructure;
 Purchase of tram rolling stock;
 Improvement of automation systems for tram services;
@@ -1836,29 +1842,29 @@ Climate Neutrality Action Plan
 
 O
 
-|   |  | Petricani - Pipera, in collaboration with Bucharest City Hall; Extension of the tram line by approximately 5.9 km;  |
+|  |  | Petricani - Pipera, in collaboration with Bucharest City Hall; Extension of the tram line by approximately 5.9 km; |
 | --- | --- | --- |
-|  Reference to impact pathway | Field of action | Mobility & Transport  |
-|   |  Systemic lever | Technology/infrastructure  |
-|   |  Outcome (according to module B-1.1) | Increased share of public transportation usage (busses and trams)  |
-|  Implementation | Responsible bodies/person for implementation | District 2 City Hall, Bucharest City Hall  |
-|   |  Action scale & addressed entities | District 2  |
-|   |  Involved stakeholders | District 2 City Hall, STB SA  |
-|   |  Comments on implementation |   |
-|  Impact & cost | Generated renewable energy (if applicable) | 70,000 MWh/year  |
-|   |  Removed/substituted energy, volume, or fuel type | Electrical energy: 50,000 MWh/year Diesel: 70,832 MWh/year Gasoline: 42,052 MWh/year  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 38,183 tons CO2/year from Transport  |
-|   |  Total costs and costs by CO2e unit | €1,355,595,683  |
-|  Action outline | Action name | 19| Extension and modernisation of cycling infrastructure - Cycling Masterplan, bike sharing system and extension of cycling network.  |
-| --- | --- | --- | --- |
-|   |  Action type | Physical intervention  |
-|   |  Action description | Bike lanes in District 2 of Bucharest - 36,45 km bike lane; Establishment of the utility network for bicycles Colentina Road and Petricani Road - phase 1, Ştefan Cel Mare Road, Mihai Bravu Boulevard, Barbu Văcărescu Boulevard, Lacul Tei Boulevard, Strada. Doamna Ghica, Dimitrie Pompeiu Boulevard, Glucoză Factory Street; Introduction of a bicycle rental system; Master plan for bicycle lanes in Bucharest Development of a system of bicycle lanes to connect the Obor "Moara lui Asan" area with the Pipera area;  |
-|  Reference to impact pathway | Field of action | Mobility & Transport  |
-|   |  Systemic lever | Technology/infrastructure  |
-|   |  Outcome (according to module B-1.1) | Increased facilities and share of bike usage  |
-|  Implementation | Responsible bodies/person for implementation | District 2 City Hall, Bucharest City Hall  |
-|   |  Action scale & addressed entities | District 2  |
-|   |  Involved stakeholders | District 2 City Hall, Public Domain Administration District 2  |
+| Reference to impact pathway | Field of action | Mobility & Transport |
+|  | Systemic lever | Technology/infrastructure |
+|  | Outcome (according to module B-1.1) | Increased share of public transportation usage (busses and trams) |
+| Implementation | Responsible bodies/person for implementation | District 2 City Hall, Bucharest City Hall |
+|  | Action scale & addressed entities | District 2 |
+|  | Involved stakeholders | District 2 City Hall, STB SA |
+|  | Comments on implementation |  |
+| Impact & cost | Generated renewable energy (if applicable) | 70,000 MWh/year |
+|  | Removed/substituted energy, volume, or fuel type | Electrical energy: 50,000 MWh/year Diesel: 70,832 MWh/year Gasoline: 42,052 MWh/year |
+|  | GHG emissions reduction estimate (total) per emission source sector | 38,183 tons CO2/year from Transport |
+|  | Total costs and costs by CO2e unit | €1,355,595,683 |
+| Action outline | Action name | 19. Extension and modernisation of cycling infrastructure - Cycling Masterplan, bike sharing system and extension of cycling network. |
+| --- | --- | --- |
+|  | Action type | Physical intervention |
+|  | Action description | Bike lanes in District 2 of Bucharest - 36,45 km bike lane; Establishment of the utility network for bicycles Colentina Road and Petricani Road - phase 1, Ştefan Cel Mare Road, Mihai Bravu Boulevard, Barbu Văcărescu Boulevard, Lacul Tei Boulevard, Strada. Doamna Ghica, Dimitrie Pompeiu Boulevard, Glucoză Factory Street; Introduction of a bicycle rental system; Master plan for bicycle lanes in Bucharest Development of a system of bicycle lanes to connect the Obor "Moara lui Asan" area with the Pipera area; |
+| Reference to impact pathway | Field of action | Mobility & Transport |
+|  | Systemic lever | Technology/infrastructure |
+|  | Outcome (according to module B-1.1) | Increased facilities and share of bike usage |
+| Implementation | Responsible bodies/person for implementation | District 2 City Hall, Bucharest City Hall |
+|  | Action scale & addressed entities | District 2 |
+|  | Involved stakeholders | District 2 City Hall, Public Domain Administration District 2 |
 中
 
 PRIMÁRIA
@@ -1869,27 +1875,27 @@ Climate Neutrality Action Plan
 
 #
 
-|   | Comments on implementation |   |
+|  | Comments on implementation |  |
 | --- | --- | --- |
-|  Impact & cost | Generated renewable energy (if applicable) | 0  |
-|   |  Removed/substituted energy, volume, or fuel type | Diesel: 20,000 MWh/yearGasoline: 15,000 MWh/year  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 9,075 tons CO2/year from Transport  |
-|   |  Total costs and costs by CO2e unit | €75,294,829 - total cost  |
-|  Action outline | Action name | 23| New waste sorting infrastructure to reduce energy consumption and increase waste management capabilities  |
-| --- | --- | --- | --- |
-|   |  Action type | Other invervention  |
-|   |  Action description | Separate collection infrastructure to achieve waste recycling targets in District 2, Bucharest MunicipalitySnow storage platforms in District 2: land identification and developmentSelective waste collection programme in District 2"Rehabilitation of the municipal waste collection system street waste"Horizon drone project - WASTESHARK Collection and recyclingSorting stations for separately collected recyclable waste in District 2Monthly bulky waste / WEEE collection campaigns  |
-|  Reference to impact pathway | Field of action | Waste and circular economy  |
-|   |  Systemic lever | Technology/infrastructure, Social innovation, Governance  |
-|   |  Outcome (according to module B-1.1) | Significant reduction in waste sent to landfills. Improved selective waste collection facilities  |
-|  Implementation | Responsible bodies/person for implementation | District 2 City Hall,  |
-|   |  Action scale & addressed entities | District 2  |
-|   |  Involved stakeholders | District 2 City Hall  |
-|   |  Comments on implementation |   |
-|  Impact & cost | Generated renewable energy (if applicable) | 65,000 MWh/year  |
-|   |  Removed/substituted energy, volume, or fuel type | Electrical energy: 33,072 MWh/yearDiesel: 14,225 MWh/year  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 9,619 tons CO2/year from Waste  |
-|   |  Total costs and costs by CO2e unit | €42,080,351  |
+| Impact & cost | Generated renewable energy (if applicable) | 0 |
+|  | Removed/substituted energy, volume, or fuel type | Diesel: 20,000 MWh/yearGasoline: 15,000 MWh/year |
+|  | GHG emissions reduction estimate (total) per emission source sector | 9,075 tons CO2/year from Transport |
+|  | Total costs and costs by CO2e unit | €75,294,829 - total cost |
+| Action outline | Action name | 23. New waste sorting infrastructure to reduce energy consumption and increase waste management capabilities |
+| --- | --- | --- |
+|  | Action type | Other invervention |
+|  | Action description | Separate collection infrastructure to achieve waste recycling targets in District 2, Bucharest MunicipalitySnow storage platforms in District 2: land identification and developmentSelective waste collection programme in District 2"Rehabilitation of the municipal waste collection system street waste"Horizon drone project - WASTESHARK Collection and recyclingSorting stations for separately collected recyclable waste in District 2Monthly bulky waste / WEEE collection campaigns |
+| Reference to impact pathway | Field of action | Waste and circular economy |
+|  | Systemic lever | Technology/infrastructure, Social innovation, Governance |
+|  | Outcome (according to module B-1.1) | Significant reduction in waste sent to landfills. Improved selective waste collection facilities |
+| Implementation | Responsible bodies/person for implementation | District 2 City Hall, |
+|  | Action scale & addressed entities | District 2 |
+|  | Involved stakeholders | District 2 City Hall |
+|  | Comments on implementation |  |
+| Impact & cost | Generated renewable energy (if applicable) | 65,000 MWh/year |
+|  | Removed/substituted energy, volume, or fuel type | Electrical energy: 33,072 MWh/yearDiesel: 14,225 MWh/year |
+|  | GHG emissions reduction estimate (total) per emission source sector | 9,619 tons CO2/year from Waste |
+|  | Total costs and costs by CO2e unit | €42,080,351 |
 4
 
 PRIMÁRIA
@@ -1898,25 +1904,25 @@ MAITORMÁTÁS
 Climate Neutrality Action
 Plan
 
-|  Action outline | Action name | 24| Public campaigns to reduce waste and increase recicling percentage among residents  |
-| --- | --- | --- | --- |
-|   |  Action type | Other intervention  |
-|   |  Action description | Awareness campaign - Organize workshops and information sessions for residents to raise awareness about the impact of climate change and the need to transition to a green society and about the benefits of renewable energy, energy efficiency, and ways to reduce carbon footprint. Enforcement of sanctions for non-compliance with City Council Decisions on waste management on the territory of District 2 Project to raise public awareness of the importance of separate collection of household waste Offer tax incentives (reduction of sanitation tax) for owners' associations where selective collection is carried out correctly  |
-|  Reference to impact pathway | Field of action | Waste and circular economy  |
-|   |  Systemic lever | Governance, Social innovation  |
-|   |  Outcome (according to module B-1.1) | Compliance with waste reduction targets.  |
-|  Implementation | Responsible bodies/person for implementation | District 2 City Hall, NGOs  |
-|   |  Action scale & addressed entities | District 2  |
-|   |  Involved stakeholders | City Hall, NGOs, Universities  |
-|   |  Comments on implementation |   |
-|  Impact & cost | Generated renewable energy (if applicable) |   |
-|   |  Removed/substituted energy, volume, or fuel type | Electrical energy: 41,640 MWh/year Diesel: 22,000 MWh/year  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 13,203 tons CO2/year from Waste  |
-|   |  Total costs and costs by CO2e unit | €1,150,000  |
-|  Action outline | Action name | 20| Rehabilitation of water ways for sustainable development.  |
-| --- | --- | --- | --- |
-|   |  Action type | Nature-based solutions  |
-|   |  Action description | Rehabilitation of the artificial river in Plumbuita Park Zoning Urban Plan - development of the banks of the lake in District 2 of the capital "Complex program for the improvement of the banks - stage I Fundeni Lakes and Dobroesti lakes (including Fundeni lake island)" Development, reconfiguration, systematisation of the areas (shores) related to the lakes located on the administrative area of District 2 (Section I - Tei Lake area, Section II - Plumbuita Lake area,  |
+| Action outline | Action name | 24. Public campaigns to reduce waste and increase recycling percentage among residents |
+| --- | --- | --- |
+|  | Action type | Other intervention |
+|  | Action description | Awareness campaign - Organize workshops and information sessions for residents to raise awareness about the impact of climate change and the need to transition to a green society and about the benefits of renewable energy, energy efficiency, and ways to reduce carbon footprint. Enforcement of sanctions for non-compliance with City Council Decisions on waste management on the territory of District 2 Project to raise public awareness of the importance of separate collection of household waste Offer tax incentives (reduction of sanitation tax) for owners' associations where selective collection is carried out correctly |
+| Reference to impact pathway | Field of action | Waste and circular economy |
+|  | Systemic lever | Governance, Social innovation |
+|  | Outcome (according to module B-1.1) | Compliance with waste reduction targets. |
+| Implementation | Responsible bodies/person for implementation | District 2 City Hall, NGOs |
+|  | Action scale & addressed entities | District 2 |
+|  | Involved stakeholders | City Hall, NGOs, Universities |
+|  | Comments on implementation |  |
+| Impact & cost | Generated renewable energy (if applicable) |  |
+|  | Removed/substituted energy, volume, or fuel type | Electrical energy: 41,640 MWh/year Diesel: 22,000 MWh/year |
+|  | GHG emissions reduction estimate (total) per emission source sector | 13,203 tons CO2/year from Waste |
+|  | Total costs and costs by CO2e unit | €1,150,000 |
+| Action outline | Action name | 20. Rehabilitation of water ways for sustainable development. |
+| --- | --- | --- |
+|  | Action type | Nature-based solutions |
+|  | Action description | Rehabilitation of the artificial river in Plumbuita Park Zoning Urban Plan - development of the banks of the lake in District 2 of the capital "Complex program for the improvement of the banks - stage I Fundeni Lakes and Dobroesti lakes (including Fundeni lake island)" Development, reconfiguration, systematisation of the areas (shores) related to the lakes located on the administrative area of District 2 (Section I - Tei Lake area, Section II - Plumbuita Lake area, |
 中
 
 PRIMÁRIA
@@ -1927,33 +1933,33 @@ Climate Neutrality Action Plan
 
 O
 
-|   |  | Section III - Saulei Valley area, Section IV - Colentina River and Fundeni Lake area, Section V - Dobroiesti Lake area).  |
+|  |  | Section III - Saulei Valley area, Section IV - Colentina River and Fundeni Lake area, Section V - Dobroiesti Lake area). |
 | --- | --- | --- |
-|  Reference to impact pathway | Field of action | Green infrastructure and Nature-based solutions  |
-|   |  Systemic lever | Technology/infrastructure  |
-|   |  Outcome (according to module B-1.1) | Mature urban green infrastructure contributing to microclimate regulation  |
-|  Implementation | Responsible bodies/person for implementation | District 2 City Hall, Bucharest City Hall  |
-|   |  Action scale & addressed entities | District 2  |
-|   |  Involved stakeholders | District 2 City Hall  |
-|   |  Comments on implementation |   |
-|  Impact & cost | Generated renewable energy (if applicable) | 0  |
-|   |  Removed/substituted energy, volume, or fuel type | Electrical energy: 14,383 MWh/year Diesel: 14,738 MWh/year  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 6,466 tons CO2/year from AFOLU  |
-|   |  Total costs and costs by CO2e unit | €68,300,000  |
-|  Action outline | Action name | 21| Development of green roofs  |
-| --- | --- | --- | --- |
-|   |  Action type | Nature-based solutions  |
-|   |  Action description | Landscaping of green terraces on the roofs of apartment buildings. Pilot project: Colentina district, Floreasca neighbourhood Study for the creation of green terraces above the new parking garages in the District "Study for transforming the terraces of 100 collective dwellings in District 2 into green terraces (Floreasca district)"  |
-|  Reference to impact pathway | Field of action | Green infrastructure and Nature-based solutions  |
-|   |  Systemic lever | Technology/infrastructure  |
-|   |  Outcome (according to module B-1.1) | Mature urban green infrastructure contributing to microclimate regulation  |
-|  Implementation | Responsible bodies/person for implementation | District 2 City Hall, Public Domain Administration District 2  |
-|   |  Action scale & addressed entities | District 2  |
-|   |  Involved stakeholders | District 2 City Hall  |
-|   |  Comments on implementation |   |
-|  Impact & cost | Generated renewable energy (if applicable) | n/a  |
-|   |  Removed/substituted energy, volume, or fuel type | Electrical energy: 13,850 MWh/year Natural gas: 35,100 MWh/year  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 9,528 tons CO2/year from Buildings  |
+| Reference to impact pathway | Field of action | Green infrastructure and Nature-based solutions |
+|  | Systemic lever | Technology/infrastructure |
+|  | Outcome (according to module B-1.1) | Mature urban green infrastructure contributing to microclimate regulation |
+| Implementation | Responsible bodies/person for implementation | District 2 City Hall, Bucharest City Hall |
+|  | Action scale & addressed entities | District 2 |
+|  | Involved stakeholders | District 2 City Hall |
+|  | Comments on implementation |  |
+| Impact & cost | Generated renewable energy (if applicable) | 0 |
+|  | Removed/substituted energy, volume, or fuel type | Electrical energy: 14,383 MWh/year Diesel: 14,738 MWh/year |
+|  | GHG emissions reduction estimate (total) per emission source sector | 6,466 tons CO2/year from AFOLU |
+|  | Total costs and costs by CO2e unit | €68,300,000 |
+| Action outline | Action name | 21. Development of green roofs |
+| --- | --- | --- |
+|  | Action type | Nature-based solutions |
+|  | Action description | Landscaping of green terraces on the roofs of apartment buildings. Pilot project: Colentina district, Floreasca neighbourhood Study for the creation of green terraces above the new parking garages in the District "Study for transforming the terraces of 100 collective dwellings in District 2 into green terraces (Floreasca district)" |
+| Reference to impact pathway | Field of action | Green infrastructure and Nature-based solutions |
+|  | Systemic lever | Technology/infrastructure |
+|  | Outcome (according to module B-1.1) | Mature urban green infrastructure contributing to microclimate regulation |
+| Implementation | Responsible bodies/person for implementation | District 2 City Hall, Public Domain Administration District 2 |
+|  | Action scale & addressed entities | District 2 |
+|  | Involved stakeholders | District 2 City Hall |
+|  | Comments on implementation |  |
+| Impact & cost | Generated renewable energy (if applicable) | n/a |
+|  | Removed/substituted energy, volume, or fuel type | Electrical energy: 13,850 MWh/year Natural gas: 35,100 MWh/year |
+|  | GHG emissions reduction estimate (total) per emission source sector | 9,528 tons CO2/year from Buildings |
 
 5
 中
@@ -1965,11 +1971,12 @@ Climate Neutrality Action Plan
 
 O
 
-|   | Total costs and costs by CO2e unit | €750,000  |
+|  | Total costs and costs by CO2e unit | €750,000 |
 | --- | --- | --- |
-|  Action outline | Action name | 22| Rehabilitation of parks and development of sustainable green public spaces to incentivise pedestrian mobility.  |
-|   |  Action type | Nature-based solutions  |
-|   |  Action description | Rehabilitation of green areas;
+| Action outline | Action name | 22. Rehabilitation of parks and development of sustainable green public spaces to incentivise pedestrian mobility. |
+| --- | --- | --- |
+|  | Action type | Nature-based solutions |
+|  | Action description | Rehabilitation of green areas; |
 Technical Project + Execution of landscaping adjacent to Petricani Park - Petricani Alley;
 Execution and redevelopment - Glasshouse Park;
 Design and execution of redevelopment - Gradina Icoanei Park;
@@ -1985,14 +1992,15 @@ Restoration of green spaces and creation of relaxation areas instead of garages 
 Establishment of a new park and development of Moroeni park by expropriation;
 Integrated urban regeneration project in the Obor area by creating a railway museum complex. A system of green spaces and landscaping of the Obor railway station square
 Creation of vegetation curtains along the secondary streets (green axes), including a public-private partnership in this respect;  |
-|  Reference to impact pathway | Field of action | Green infrastructure and Nature-based solutions  |
-|   |  Systemic lever | Technology/infrastructure  |
-|   |  Outcome (according to module B-1.1) | Green space expansion  |
-|  Implementation | Responsible bodies/person for implementation | District 2 City Hall, Public Domain Administration District 2  |
-|   |  Action scale & addressed entities | District 2  |
-|   |  Involved stakeholders | District 2 City Hall, Public Domain Administration District 2, Bucharest City Hall  |
-|   |  Comments on implementation |   |
-|  Impact & cost | Generated renewable energy (if applicable) | 54,906 MWh/year  |
+| Reference to impact pathway | Field of action | Green infrastructure and Nature-based solutions |
+| --- | --- | --- |
+|  | Systemic lever | Technology/infrastructure |
+|  | Outcome (according to module B-1.1) | Green space expansion |
+| Implementation | Responsible bodies/person for implementation | District 2 City Hall, Public Domain Administration District 2 |
+|  | Action scale & addressed entities | District 2 |
+|  | Involved stakeholders | District 2 City Hall, Public Domain Administration District 2, Bucharest City Hall |
+|  | Comments on implementation |  |
+| Impact & cost | Generated renewable energy (if applicable) | 54,906 MWh/year |
 中
 
 PRIMÁRIA
@@ -2005,40 +2013,42 @@ Plan
 
 #
 
-|   | Removed/substituted energy, volume, or fuel type | Electrical energy: 12,919 MWh/year
+|  | Removed/substituted energy, volume, or fuel type | Electrical energy: 12,919 MWh/year |
+| --- | --- | --- |
 Diesel: 3,537 MWh/year
 Gasoline: 3,711 MWh/year  |
+|  | GHG emissions reduction estimate (total) per emission source sector | 4,142 tons CO2/year from Transport |
 | --- | --- | --- |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 4,142 tons CO2/year from Transport  |
-|   |  Total costs and costs by CO2e unit | €322,976,908  |
-|  Action outline | Action name | 1| Construction of new nZEB buildings  |
-| --- | --- | --- | --- |
-|   |  Action type | Technical intervention  |
-|   |  Action description | Construction of nZEB plus housing for young people - 151 Basarabia Boulevard  |
-|  Reference to impact pathway | Field of action | Built Environment  |
-|   |  Systemic lever | Technology/Infrastructure  |
-|   |  Outcome (according to module B-1.1) | Comprehensive adoption of sustainable building codes  |
-|  Implementation | Responsible bodies/person for implementation | District 2 City Hall  |
-|   |  Action scale & addressed entities | District 2  |
-|   |  Involved stakeholders | District 2 City Hall, residents, Romanian Green Building Council  |
-|   |  Comments on implementation | n/a  |
-|  Impact & cost | Generated renewable energy (if applicable) | 6000 MWh/year  |
-|   |  Removed/substituted energy, volume, or fuel type | Electrical energy: 2,000 MWh/year
-Natural gas: 10,400 MWh/year  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 2,453 tons CO2/year from Buildings  |
-|   |  Total costs and costs by CO2e unit | €3,302,150 - total cost  |
-|  Action outline | Action name | 2| Renovation of public buildings  |
-| --- | --- | --- | --- |
-|   |  Action type | Technical intervention  |
-|   |  Action description | Repairs, modernisation, equipping and thermal rehabilitation of the Justice Auditors' Dormitory  |
-|  Reference to impact pathway | Field of action | Built Environment  |
-|   |  Systemic lever | Technology/Infrastructure  |
-|   |  Outcome (according to module B-1.1) | Majority of buildings in the district meeting high energy efficiency standards  |
-|  Implementation | Responsible bodies/person for implementation | District 2 City Hall, Bucharest City Hall  |
-|   |  Action scale & addressed entities | District 2  |
-|   |  Involved stakeholders | District 2 City Hall, TERMOENERGETICA  |
-|   |  Comments on implementation |   |
-|  Impact & cost | Generated renewable energy (if applicable) | 8,000 MWh/year  |
+|  | Total costs and costs by CO2e unit | €322,976,908 |
+| Action outline | Action name | 1. Construction of new nZEB buildings |
+| --- | --- | --- |
+|  | Action type | Technical intervention |
+|  | Action description | Construction of nZEB plus housing for young people - 151 Basarabia Boulevard |
+| Reference to impact pathway | Field of action | Built Environment |
+|  | Systemic lever | Technology/Infrastructure |
+|  | Outcome (according to module B-1.1) | Comprehensive adoption of sustainable building codes |
+| Implementation | Responsible bodies/person for implementation | District 2 City Hall |
+|  | Action scale & addressed entities | District 2 |
+|  | Involved stakeholders | District 2 City Hall, residents, Romanian Green Building Council |
+|  | Comments on implementation | n/a |
+| Impact & cost | Generated renewable energy (if applicable) | 6000 MWh/year |
+|  | Removed/substituted energy, volume, or fuel type | Electrical energy: 2,000 MWh/year |
+| Natural gas: 10,400 MWh/year  |
+|  | GHG emissions reduction estimate (total) per emission source sector | 2,453 tons CO2/year from Buildings |
+| --- | --- | --- |
+|  | Total costs and costs by CO2e unit | €3,302,150 - total cost |
+| Action outline | Action name | 2. Renovation of public buildings |
+| --- | --- | --- |
+|  | Action type | Technical intervention |
+|  | Action description | Repairs, modernisation, equipping and thermal rehabilitation of the Justice Auditors' Dormitory |
+| Reference to impact pathway | Field of action | Built Environment |
+|  | Systemic lever | Technology/Infrastructure |
+|  | Outcome (according to module B-1.1) | Majority of buildings in the district meeting high energy efficiency standards |
+| Implementation | Responsible bodies/person for implementation | District 2 City Hall, Bucharest City Hall |
+|  | Action scale & addressed entities | District 2 |
+|  | Involved stakeholders | District 2 City Hall, TERMOENERGETICA |
+|  | Comments on implementation |  |
+| Impact & cost | Generated renewable energy (if applicable) | 8,000 MWh/year |
 中
 
 PRIMÁRIA
@@ -2051,37 +2061,39 @@ Plan
 
 #
 
-|   | Removed/substituted energy, volume, or fuel type | Electrical energy: 1,500 MWh/year
-Natural gas: 5,000 MWh/year  |
+|  | Removed/substituted energy, volume, or fuel type | Electrical energy: 1,500 MWh/year |
 | --- | --- | --- |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 1,247 tons CO2/year from Buildings  |
-|   |  Total costs and costs by CO2e unit | €5,850,000 - total cost  |
-|  Action outline | Action name | 3| Reconversion of formal industrial areas  |
-| --- | --- | --- | --- |
-|   |  Action type | Technical intervention  |
-|   |  Action description | Complex project for the conversion and valorisation of industrial sites and development of urban centers (Obor, URBAN-INCERC Institute, Barbu-Vacarescu - Gheorghe Titeica, Petricani)  |
-|  Reference to impact pathway | Field of action | Built Environment  |
-|   |  Systemic lever | Technology/Infrastructure  |
-|   |  Outcome (according to module B-1.1) | Enhanced functionality of underutilised spaces  |
-|  Implementation | Responsible bodies/person for implementation | District 2 City Hall, Bucharest City Hall  |
-|   |  Action scale & addressed entities | District 2  |
-|   |  Involved stakeholders | District 2 City Hall, residents, universities  |
-|   |  Comments on implementation |   |
-|  Impact & cost | Generated renewable energy (if applicable) | 100,000 MWh/year  |
-|   |  Removed/substituted energy, volume, or fuel type | Electrical energy: 60,000 MWh/year
-Natural gas: 100,000 MWh/year  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 30,760 tons CO2/year from IPPU  |
-|   |  Total costs and costs by CO2e unit | €20,000,000 - total cost  |
-|  Action outline | Action name | 4| Citizen involvement program for sustainable Reconversion of public spaces  |
-| --- | --- | --- | --- |
-|   |  Action type | Other interventions  |
-|   |  Action description | Programme for the revitalisation of small abandoned public spaces and the creation of partnerships with owners' associations to develop green spaces in neighbourhoods  |
-|  Reference to impact pathway | Field of action | Built environment  |
-|   |  Systemic lever | Democracy/Participation  |
-|   |  Outcome (according to module B-1.1) | Active community involvement in urban planning and design  |
-|  Implementation | Responsible bodies/person for implementation | District 2 City Hall, NGOs  |
-|   |  Action scale & addressed entities | District 2  |
-|   |  Involved stakeholders | District 2 City Hall, NGOs, residents  |
+| Natural gas: 5,000 MWh/year  |
+|  | GHG emissions reduction estimate (total) per emission source sector | 1,247 tons CO2/year from Buildings |
+| --- | --- | --- |
+|  | Total costs and costs by CO2e unit | €5,850,000 - total cost |
+| Action outline | Action name | 3. Reconversion of formal industrial areas |
+| --- | --- | --- |
+|  | Action type | Technical intervention |
+|  | Action description | Complex project for the conversion and valorisation of industrial sites and development of urban centers (Obor, URBAN-INCERC Institute, Barbu-Vacarescu - Gheorghe Titeica, Petricani) |
+| Reference to impact pathway | Field of action | Built Environment |
+|  | Systemic lever | Technology/Infrastructure |
+|  | Outcome (according to module B-1.1) | Enhanced functionality of underutilised spaces |
+| Implementation | Responsible bodies/person for implementation | District 2 City Hall, Bucharest City Hall |
+|  | Action scale & addressed entities | District 2 |
+|  | Involved stakeholders | District 2 City Hall, residents, universities |
+|  | Comments on implementation |  |
+| Impact & cost | Generated renewable energy (if applicable) | 100,000 MWh/year |
+|  | Removed/substituted energy, volume, or fuel type | Electrical energy: 60,000 MWh/year |
+| Natural gas: 100,000 MWh/year  |
+|  | GHG emissions reduction estimate (total) per emission source sector | 30,760 tons CO2/year from IPPU |
+| --- | --- | --- |
+|  | Total costs and costs by CO2e unit | €20,000,000 - total cost |
+| Action outline | Action name | 4. Citizen involvement program for sustainable Reconversion of public spaces |
+| --- | --- | --- |
+|  | Action type | Other interventions |
+|  | Action description | Programme for the revitalisation of small abandoned public spaces and the creation of partnerships with owners' associations to develop green spaces in neighbourhoods |
+| Reference to impact pathway | Field of action | Built environment |
+|  | Systemic lever | Democracy/Participation |
+|  | Outcome (according to module B-1.1) | Active community involvement in urban planning and design |
+| Implementation | Responsible bodies/person for implementation | District 2 City Hall, NGOs |
+|  | Action scale & addressed entities | District 2 |
+|  | Involved stakeholders | District 2 City Hall, NGOs, residents |
 中
 
 PRIMÁRIA
@@ -2094,60 +2106,61 @@ Plan
 
 #
 
-|   | Comments on implementation |   |
+|  | Comments on implementation |  |
 | --- | --- | --- |
-|  Impact & cost | Generated renewable energy (if applicable) | 10,000 MWh/year  |
-|   |  Removed/substituted energy, volume, or fuel type | Electrical energy: 3,000 MWh/year Diesel: 1,200 MWh/year  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 848 tons CO2/year from AFOLU  |
-|   |  Total costs and costs by CO2e unit | €600,000  |
-|  Action outline | Action name | 5| Reconversion of public spaces for sustainable development  |
-| --- | --- | --- | --- |
-|   |  Action type | Physical interventions  |
-|   |  Action description | Reconfiguration of spaces between collective dwellings: community green spaces, sports facilities, children's playgrounds, pedestrian walkways and residential ground parking  |
-|  Reference to impact pathway | Field of action | Built Environment  |
-|   |  Systemic lever | Technology/Infrastructure  |
-|   |  Outcome (according to module B-1.1) | Increased number of green spaces across neighbourhoods  |
-|  Implementation | Responsible bodies/person for implementation | District 2 City Hall  |
-|   |  Action scale & addressed entities | District 2  |
-|   |  Involved stakeholders | District 2 City Hall, residents  |
-|   |  Comments on implementation |   |
-|  Impact & cost | Generated renewable energy (if applicable) | 7,500 MWh/year  |
-|   |  Removed/substituted energy, volume, or fuel type | Electrical energy: 22,000 MWh/year Natural gas: 39,000 MWh/year  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 11,750 tons CO2/year  |
-|   |  Total costs and costs by CO2e unit | €28,000,000 - total cost  |
-|  Action outline | Action name | 6| Social inclusion program for sustainable development  |
-| --- | --- | --- | --- |
-|   |  Action type | Other interventions  |
-|   |  Action description | WeGenerate - Co-creating sustainable people-centred neighbourhoods through urban regenerationDivAirCity - The power of diversity and social inclusion as a means to reduce air pollution and achieve the green urban connection in climate neutral citiesReGreeneration -The next generation of green, resilient and socially inclusive smart cities  |
-|   | Field of action | Built Environment  |
-|  Reference to impact pathway | Systemic lever | Social Innovation  |
+| Impact & cost | Generated renewable energy (if applicable) | 10,000 MWh/year |
+|  | Removed/substituted energy, volume, or fuel type | Electrical energy: 3,000 MWh/year Diesel: 1,200 MWh/year |
+|  | GHG emissions reduction estimate (total) per emission source sector | 848 tons CO2/year from AFOLU |
+|  | Total costs and costs by CO2e unit | €600,000 |
+| Action outline | Action name | 5. Reconversion of public spaces for sustainable development |
 | --- | --- | --- |
-|   |  Outcome (according to module B-1.1) | Increased share of people involved in greening projects  |
-|  Implementation | Responsible bodies/person for implementation | District 2 City Hall, ADP District 2, UTCB, UrbanizeHub, Climatosfera  |
-|   |  Action scale & addressed entities | District 2  |
-|   |  Involved stakeholders | District 2 City Hall, Public Domain Administration District 2, UTCB, UrbanizeHub, Climatosfera  |
-|   |  Comments on implementation |   |
-|  Impact & cost | Generated renewable energy (if applicable) | 1,500 MWh/year  |
-|   |  Removed/substituted energy, volume, or fuel type | Electrical energy: 7,000 MWh/year
-Natural gas: 24,800 MWh/year  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 6,242 tons CO2/year from Buildings  |
-|   |  Total costs and costs by CO2e unit | €11,858,188 - total cost  |
-|  Action outline | Action name | 7| Development of educational infrastructure for climate neutral education  |
-| --- | --- | --- | --- |
-|   |  Action type | Technical intervention  |
-|   |  Action description | Construction of nurseries, complementary services for kindergarten, equipping with furniture and digital equipment of pre-university education units in District 2  |
-|  Reference to impact pathway | Field of action | Built Environment  |
-|   |  Systemic lever | Technology/Infrastructure  |
-|   |  Outcome (according to module B-1.1) | Increased climate neutrality awareness and skills among population  |
-|  Implementation | Responsible bodies/person for implementation | District 2 City Hall  |
-|   |  Action scale & addressed entities | District 2  |
-|   |  Involved stakeholders | District 2 City Hall, schools, kindergartens, nurseries  |
-|   |  Comments on implementation |   |
-|  Impact & cost | Generated renewable energy (if applicable) | 216 MWh/year  |
-|   |  Removed/substituted energy, volume, or fuel type | Electrical energy: 6,100 MWh/year
-Natural gas: 7,010 MWh/year  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 2,490 tons CO2/year from Buildings  |
-|   |  Total costs and costs by CO2e unit | €18,354,163 - total cost  |
+|  | Action type | Physical interventions |
+|  | Action description | Reconfiguration of spaces between collective dwellings: community green spaces, sports facilities, children's playgrounds, pedestrian walkways and residential ground parking |
+| Reference to impact pathway | Field of action | Built Environment |
+|  | Systemic lever | Technology/Infrastructure |
+|  | Outcome (according to module B-1.1) | Increased number of green spaces across neighbourhoods |
+| Implementation | Responsible bodies/person for implementation | District 2 City Hall |
+|  | Action scale & addressed entities | District 2 |
+|  | Involved stakeholders | District 2 City Hall, residents |
+|  | Comments on implementation |  |
+| Impact & cost | Generated renewable energy (if applicable) | 7,500 MWh/year |
+|  | Removed/substituted energy, volume, or fuel type | Electrical energy: 22,000 MWh/year Natural gas: 39,000 MWh/year |
+|  | GHG emissions reduction estimate (total) per emission source sector | 11,750 tons CO2/year |
+|  | Total costs and costs by CO2e unit | €28,000,000 - total cost |
+| Action outline | Action name | 6. Social inclusion program for sustainable development |
+| --- | --- | --- |
+|  | Action type | Other interventions |
+|  | Action description | WeGenerate - Co-creating sustainable people-centred neighbourhoods through urban regenerationDivAirCity - The power of diversity and social inclusion as a means to reduce air pollution and achieve the green urban connection in climate neutral citiesReGreeneration -The next generation of green, resilient and socially inclusive smart cities |
+|  | Field of action | Built Environment |
+| Reference to impact pathway | Systemic lever | Social Innovation |
+|  | Outcome (according to module B-1.1) | Increased share of people involved in greening projects |
+| Implementation | Responsible bodies/person for implementation | District 2 City Hall, ADP District 2, UTCB, UrbanizeHub, Climatosfera |
+|  | Action scale & addressed entities | District 2 |
+|  | Involved stakeholders | District 2 City Hall, Public Domain Administration District 2, UTCB, UrbanizeHub, Climatosfera |
+|  | Comments on implementation |  |
+| Impact & cost | Generated renewable energy (if applicable) | 1,500 MWh/year |
+|  | Removed/substituted energy, volume, or fuel type | Electrical energy: 7,000 MWh/year |
+| Natural gas: 24,800 MWh/year  |
+|  | GHG emissions reduction estimate (total) per emission source sector | 6,242 tons CO2/year from Buildings |
+| --- | --- | --- |
+|  | Total costs and costs by CO2e unit | €11,858,188 - total cost |
+| Action outline | Action name | 7. Development of educational infrastructure for climate neutral education |
+| --- | --- | --- |
+|  | Action type | Technical intervention |
+|  | Action description | Construction of nurseries, complementary services for kindergarten, equipping with furniture and digital equipment of pre-university education units in District 2 |
+| Reference to impact pathway | Field of action | Built Environment |
+|  | Systemic lever | Technology/Infrastructure |
+|  | Outcome (according to module B-1.1) | Increased climate neutrality awareness and skills among population |
+| Implementation | Responsible bodies/person for implementation | District 2 City Hall |
+|  | Action scale & addressed entities | District 2 |
+|  | Involved stakeholders | District 2 City Hall, schools, kindergartens, nurseries |
+|  | Comments on implementation |  |
+| Impact & cost | Generated renewable energy (if applicable) | 216 MWh/year |
+|  | Removed/substituted energy, volume, or fuel type | Electrical energy: 6,100 MWh/year |
+| Natural gas: 7,010 MWh/year  |
+|  | GHG emissions reduction estimate (total) per emission source sector | 2,490 tons CO2/year from Buildings |
+| --- | --- | --- |
+|  | Total costs and costs by CO2e unit | €18,354,163 - total cost |
 
 B-2.3: Summary strategy for residual emissions
 
@@ -2191,31 +2204,31 @@ District 2 will collaborate with local stakeholders, including public agencies, 
 
 Module B-3 "Indicators for Monitoring, Evaluation and Learning" should contain a selection of indicators taken from the Comprehensive Indicator Sets developed by NZC. The following should be provided: An overview table listing the indicators selected per outcome and impact including targets and evaluation points (B-3.1); and a metadata table for each indicator selected, as specified in the Comprehensive Indicator Sets (B-3.2).
 
-|  B-3.1: Impact Pathways  |   |   |   |   |   |   |
+| B-3.1: Impact Pathways |  |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- |
-|  Outcomes/ impacts addressed | Action/ project | Indicator No. (unique identified) | Indicator name | Target values  |   |   |
-|   |   |   |   | 2025 | 2027 | 2030  |
-|  Reduction of CO2 emissions from 2016 baseline | All actions | D2 - NZC | CO2 emissions | 30% | 50% | 80%  |
-|  Increased share of public transportation | Enhancement and expansion of public transport systems with smart | D2 - MOB01 | Percentage of public transport ridership | 10% | 20% | 30%  |
+| Outcomes/ impacts addressed | Action/ project | Indicator No. (unique identified) | Indicator name | Target values |  |  |
+|  |  |  |  | 2025 | 2027 | 2030 |
+| Reduction of CO2 emissions from 2016 baseline | All actions | D2 - NZC | CO2 emissions | 30% | 50% | 80% |
+| Increased share of public transportation | Enhancement and expansion of public transport systems with smart | D2 - MOB01 | Percentage of public transport ridership | 10% | 20% | 30% |
 3
 
 PRIMÁRIA
 
 Climate Neutrality Action Plan
 
-|  usage (busses and trams) | technology, new trams, dedicated lanes and new routes |  |  |  |  |   |
+| usage (busses and trams) | technology, new trams, dedicated lanes and new routes |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- |
-|  Enhanced urban livability with safer streets for pedestrians and cyclists | Increased pedestrian mobility by revitalisation of urban parks, underpasses, and expansion of pedestrian-centred areas | D2 - MOB02 | Percentage of alleys rehabilitated | 20% | 50% | 75%  |
-|  Increased facilities and share of bike usage | Cycling Masterplan, bike sharing system and extension of cycling network | D2 - MOB03 | Kilometers of Bike Lanes Added | 2 | 15 | 34,6km  |
-|   |  | D2 - MOB04 | Number of available bicycles for the public | 10 | 10 | 30  |
-|  Comprehensive urban mobility plan fully operational | New parking policy and new residential parking facilities meant to decrease car use and transform parking spaces into public areas | D2 - MOB05 | Creation of new parking policy | 0 | 1 | 1  |
-|  Reduced commute-related emissions and streamlining government services | Decreased number of visits to public administration through digitalisation | D2 - MOB06 | Decreased percentage of visits to City Hall | 20% | 100% | 200%  |
-|  Increased ownership and use of electric vehicles | Development of a network of EV charging stations | D2 - MOB07 | Number of newly constructed EV charging stations | 0 | 10 | 30  |
-|  Increased efficiency of public transportation | Rehabilitation and reconfiguration of street network to increase transport efficiency and decrease pollution levels | D2 - MOB08 | Km of streets rehabilitated | 17 | 20 | 27  |
-|  Decreased energy consumption and lower emissions from buildings | Extensive moderate energy renovation of multifamily residential buildings | D2 - B01 | % reduction in emissions per unit | 40% | 50% | 60%  |
-|  Buildings in the district meeting high energy efficiency standards | Renovation of public buildings | D2-B02 | % reduction in emissions per unit | 40% | 50% | 60%  |
-|  Widespread use of smart grids and renewable energy sources. | Upgrading the electrical infrastructure to enhance reliability, efficiency and intelligence of the electrical grid | D2 - E01 | Electrical infrastructure units renovated | 1 | 2 | 4  |
-|  Energy efficient public lightning system | Modernisation and expansion of public lightning system | D2 - E02 | Number of lightning units renovated | 200 | 700 | 1000  |
+| Enhanced urban livability with safer streets for pedestrians and cyclists | Increased pedestrian mobility by revitalisation of urban parks, underpasses, and expansion of pedestrian-centred areas | D2 - MOB02 | Percentage of alleys rehabilitated | 20% | 50% | 75% |
+| Increased facilities and share of bike usage | Cycling Masterplan, bike sharing system and extension of cycling network | D2 - MOB03 | Kilometers of Bike Lanes Added | 2 | 15 | 34,6km |
+|  |  | D2 - MOB04 | Number of available bicycles for the public | 10 | 10 | 30 |
+| Comprehensive urban mobility plan fully operational | New parking policy and new residential parking facilities meant to decrease car use and transform parking spaces into public areas | D2 - MOB05 | Creation of new parking policy | 0 | 1 | 1 |
+| Reduced commute-related emissions and streamlining government services | Decreased number of visits to public administration through digitalisation | D2 - MOB06 | Decreased percentage of visits to City Hall | 20% | 100% | 200% |
+| Increased ownership and use of electric vehicles | Development of a network of EV charging stations | D2 - MOB07 | Number of newly constructed EV charging stations | 0 | 10 | 30 |
+| Increased efficiency of public transportation | Rehabilitation and reconfiguration of street network to increase transport efficiency and decrease pollution levels | D2 - MOB08 | Km of streets rehabilitated | 17 | 20 | 27 |
+| Decreased energy consumption and lower emissions from buildings | Extensive moderate energy renovation of multifamily residential buildings | D2 - B01 | % reduction in emissions per unit | 40% | 50% | 60% |
+| Buildings in the district meeting high energy efficiency standards | Renovation of public buildings | D2-B02 | % reduction in emissions per unit | 40% | 50% | 60% |
+| Widespread use of smart grids and renewable energy sources. | Upgrading the electrical infrastructure to enhance reliability, efficiency and intelligence of the electrical grid | D2 - E01 | Electrical infrastructure units renovated | 1 | 2 | 4 |
+| Energy efficient public lighting system | Modernisation and expansion of public lighting system | D2 - E02 | Number of lightning units renovated | 200 | 700 | 1000 |
 中
 
 PRIMÁRIA
@@ -2228,28 +2241,28 @@ Plan
 
 #
 
-|  Widespread adoption of energy-efficient practices and technologies across residential, commercial, and public sectors | Education and training for energy efficiency | D2 - E03 | Development of climate neutral education centers | 0 | 4 | 10  |
-| --- | --- | --- | --- | --- | --- | --- |
-|  Comprehensive adoption of sustainable building codes | Construction of new nZEB buildings | D2 - B03 | Number of new nZEB buildings | 0 | 0 | 1  |
-|  Enhanced functionality of underutilised spaces | Reconversion of formal industrial areas | D2 - E04 | Number of industrial areas reconverted | 0 | 2 | 4  |
-|  Mature urban green infrastructure contributing to microclimate regulation | Rehabilitation of water ways for sustainable development | D2 - G01 | Kilometers of blue-green infrastructure renovated | 5 | 11 | 35  |
-|   |  Development of green roofs | D2 - G2 | Number of buildings retrofitted with green roofs or terraces | 5 | 25 | 120  |
-|  Green space expansion | Rehabilitation of parks and development of public green spaces | D2 - G3 | Percentage of public green spaces renovated/ modernised | 10% | 50% | 70%  |
-|  Improved selective waste collection facilities | New waste sorting infrastructure to reduce energy consumption and increase waste management capabilities | D2 - WMCE01 | Percentage of Waste Recycled | 10% | 30% | 60%  |
-|  Increased share of people involved in greening projects | Implementation of innovative co-creation projects | D2 - S01 | Percentage of Residents Actively Participating in Climate Actions | 10% | 20% | 40%  |
-|  B-3.2: Indicator Metadata  |   |
+| Widespread adoption of energy-efficient practices and technologies across residential, commercial, and public sectors | Education and training for energy efficiency | D2 - E03 | Development of climate neutral education centers | 0 | 4 | 10 |
 | --- | --- |
-|  (For each indicator selected – take from Comprehensive Indicator Sets)  |   |
-|  Indicator Name | CO2 emissions  |
-|  Indicator Unit | Tons of CO2 per year  |
-|  Definition | Reduction in CO2 emissions  |
-|  Calculation | Detailed calculation described in the Action Plan  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | yes  |
-|  If yes, which emission source sectors does it impact? | Transport, Buildings, Waste, IPPU, AFOLU  |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | no  |
-|  If yes, which co-benefit does it measure? | n/a  |
-|  Can the indicator be used for monitoring impact pathways? | yes  |
+| Comprehensive adoption of sustainable building codes | Construction of new nZEB buildings | D2 - B03 | Number of new nZEB buildings | 0 | 0 | 1 |
+| Enhanced functionality of underutilised spaces | Reconversion of formal industrial areas | D2 - E04 | Number of industrial areas reconverted | 0 | 2 | 4 |
+| Mature urban green infrastructure contributing to microclimate regulation | Rehabilitation of water ways for sustainable development | D2 - G01 | Kilometers of blue-green infrastructure renovated | 5 | 11 | 35 |
+|  | Development of green roofs | D2 - G2 | Number of buildings retrofitted with green roofs or terraces | 5 | 25 | 120 |
+| Green space expansion | Rehabilitation of parks and development of public green spaces | D2 - G3 | Percentage of public green spaces renovated/ modernised | 10% | 50% | 70% |
+| Improved selective waste collection facilities | New waste sorting infrastructure to reduce energy consumption and increase waste management capabilities | D2 - WMCE01 | Percentage of Waste Recycled | 10% | 30% | 60% |
+| Increased share of people involved in greening projects | Implementation of innovative co-creation projects | D2 - S01 | Percentage of Residents Actively Participating in Climate Actions | 10% | 20% | 40% |
+| B-3.2: Indicator Metadata |  |
+| --- | --- |
+| (For each indicator selected – take from Comprehensive Indicator Sets) |  |
+| Indicator Name | CO2 emissions |
+| Indicator Unit | Tons of CO2 per year |
+| Definition | Reduction in CO2 emissions |
+| Calculation | Detailed calculation described in the Action Plan |
+| Indicator Context |  |
+| Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | yes |
+| If yes, which emission source sectors does it impact? | Transport, Buildings, Waste, IPPU, AFOLU |
+| Does the indicator measure indirect impacts (i.e., co-benefits)? | no |
+| If yes, which co-benefit does it measure? | n/a |
+| Can the indicator be used for monitoring impact pathways? | yes |
 中
 
 PRIMÁRIA
@@ -2260,45 +2273,43 @@ Plan
 
 #
 
-|  If yes, which NZC impact pathway is it relevant for? | D2-NZC  |
+| If yes, which NZC impact pathway is it relevant for? | D2-NZC |
 | --- | --- |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | yes  |
-|  Data requirements |   |
-|  Expected data source | Monitoring reports  |
-|  Expected availability | Clear baseline in place  |
-|  Suggested collection interval | Bi-annually  |
-|  References |   |
-|  Deliverables describing the indicator | Monitoring report  |
-|  Other indicator systems using this indicator | Romania Urban Policy Indicators, ISO 37110:2022 Sustainable cities and communities  |
-|  B-3.2: Indicator Metadata  |   |
-| --- | --- |
-|  (For each indicator selected – take from Comprehensive Indicator Sets)  |   |
-|  Indicator Name | Percentage of public transport ridership  |
-|  Indicator Unit | Percentage  |
-|  Definition | Increase in share of public transport usage  |
-|  Calculation | Traffic study  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | yes  |
-|  If yes, which emission source sectors does it impact? | Transport  |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | yes  |
-|  If yes, which co-benefit does it measure? | Reduction in CO2 emissions; Improvement in Air Quality; Improvement in Quality of Life;  |
-|  Can the indicator be used for monitoring impact pathways? | yes  |
-|  If yes, which NZC impact pathway is it relevant for? | D2 - MOB01  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | yes  |
-|  Data requirements |   |
-|  Expected data source | Traffic study  |
-|  Expected availability | Clear baseline in place  |
-|  Suggested collection interval | Every 5 years  |
-|  References |   |
-|  Deliverables describing the indicator | Traffic study  |
-|  Other indicator systems using this indicator | Romania Urban Policy Indicators, ISO 37110:2022 Sustainable cities and communities  |
-|  B-3.2: Indicator Metadata  |   |
-| --- | --- |
-|  (For each indicator selected – take from Comprehensive Indicator Sets)  |   |
-|  Indicator Name | Alleys rehabilitated  |
-|  Indicator Unit | Percentage  |
-|  Definition | Increase in length of alleys rehabilitated  |
-|  Calculation | Sum of lengths of all alleys rehabilitated within the year  |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | yes |
+| Data requirements |  |
+| Expected data source | Monitoring reports |
+| Expected availability | Clear baseline in place |
+| Suggested collection interval | Bi-annually |
+| References |  |
+| Deliverables describing the indicator | Monitoring report |
+| Other indicator systems using this indicator | Romania Urban Policy Indicators, ISO 37110:2022 Sustainable cities and communities |
+| B-3.2: Indicator Metadata |  |
+| (For each indicator selected – take from Comprehensive Indicator Sets) |  |
+| Indicator Name | Percentage of public transport ridership |
+| Indicator Unit | Percentage |
+| Definition | Increase in share of public transport usage |
+| Calculation | Traffic study |
+| Indicator Context |  |
+| Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | yes |
+| If yes, which emission source sectors does it impact? | Transport |
+| Does the indicator measure indirect impacts (i.e., co-benefits)? | yes |
+| If yes, which co-benefit does it measure? | Reduction in CO2 emissions; Improvement in Air Quality; Improvement in Quality of Life; |
+| Can the indicator be used for monitoring impact pathways? | yes |
+| If yes, which NZC impact pathway is it relevant for? | D2 - MOB01 |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | yes |
+| Data requirements |  |
+| Expected data source | Traffic study |
+| Expected availability | Clear baseline in place |
+| Suggested collection interval | Every 5 years |
+| References |  |
+| Deliverables describing the indicator | Traffic study |
+| Other indicator systems using this indicator | Romania Urban Policy Indicators, ISO 37110:2022 Sustainable cities and communities |
+| B-3.2: Indicator Metadata |  |
+| (For each indicator selected – take from Comprehensive Indicator Sets) |  |
+| Indicator Name | Alleys rehabilitated |
+| Indicator Unit | Percentage |
+| Definition | Increase in length of alleys rehabilitated |
+| Calculation | Sum of lengths of all alleys rehabilitated within the year |
 中
 
 PRIMÁRIA
@@ -2309,41 +2320,40 @@ Climate Neutrality Action Plan
 
 #
 
-|  Indicator Context |   |
+| Indicator Context |  |
 | --- | --- |
-|  Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | yes  |
-|  If yes, which emission source sectors does it impact? | AFOLU  |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | YES  |
-|  If yes, which co-benefit does it measure? | Reduced air pollution; Less traffic congestion, more efficient urban mobility; Smoother urban transportation experience; Improved life quality  |
-|  Can the indicator be used for monitoring impact pathways? | yes  |
-|  If yes, which NZC impact pathway is it relevant for? | D2-MOB02  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | [yes/no]  |
-|  Data requirements |   |
-|  Expected data source |   |
-|  Expected availability |   |
-|  Suggested collection interval | Anually  |
-|  References |   |
-|  Deliverables describing the indicator | Land-use analysis  |
-|  Other indicator systems using this indicator |   |
-|  B-3.2: Indicator Metadata  |   |
-| --- | --- |
-|  (For each indicator selected – take from Comprehensive Indicator Sets)  |   |
-|  Indicator Name | Kilometers of bike lanes  |
-|  Indicator Unit | Kilometers  |
-|  Definition | Lenght of bike lanes  |
-|  Calculation | Sum of lengths of all bike lanes added or upgraded within the year  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | yes  |
-|  If yes, which emission source sectors does it impact? | Transport  |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | yes  |
-|  If yes, which co-benefit does it measure? | yes  |
-|  Can the indicator be used for monitoring impact pathways? | D2-MOB03  |
-|  If yes, which NZC impact pathway is it relevant for? | Improved public health from increased physical activity  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | yes  |
-|  Data requirements |   |
-|  Expected data source | Urban development and transportation planning records  |
-|  Expected availability | Baseline in place  |
-|  Suggested collection interval | Annually or upon project completion  |
+| Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | yes |
+| If yes, which emission source sectors does it impact? | AFOLU |
+| Does the indicator measure indirect impacts (i.e., co-benefits)? | YES |
+| If yes, which co-benefit does it measure? | Reduced air pollution; Less traffic congestion, more efficient urban mobility; Smoother urban transportation experience; Improved life quality |
+| Can the indicator be used for monitoring impact pathways? | yes |
+| If yes, which NZC impact pathway is it relevant for? | D2-MOB02 |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | [yes/no] |
+| Data requirements |  |
+| Expected data source |  |
+| Expected availability |  |
+| Suggested collection interval | Anually |
+| References |  |
+| Deliverables describing the indicator | Land-use analysis |
+| Other indicator systems using this indicator |  |
+| B-3.2: Indicator Metadata |  |
+| (For each indicator selected – take from Comprehensive Indicator Sets) |  |
+| Indicator Name | Kilometers of bike lanes |
+| Indicator Unit | Kilometers |
+| Definition | Lenght of bike lanes |
+| Calculation | Sum of lengths of all bike lanes added or upgraded within the year |
+| Indicator Context |  |
+| Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | yes |
+| If yes, which emission source sectors does it impact? | Transport |
+| Does the indicator measure indirect impacts (i.e., co-benefits)? | yes |
+| If yes, which co-benefit does it measure? | yes |
+| Can the indicator be used for monitoring impact pathways? | D2-MOB03 |
+| If yes, which NZC impact pathway is it relevant for? | Improved public health from increased physical activity |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | yes |
+| Data requirements |  |
+| Expected data source | Urban development and transportation planning records |
+| Expected availability | Baseline in place |
+| Suggested collection interval | Annually or upon project completion |
 中
 
 PRIMÁRIA
@@ -2356,80 +2366,79 @@ Plan
 
 B-3.2: Indicator Metadata
 
-|  (For each indicator selected – take from Comprehensive Indicator Sets)  |   |
+| (For each indicator selected – take from Comprehensive Indicator Sets) |  |
 | --- | --- |
-|  Indicator Name | Number of available bicycles for the public  |
-|  Indicator Unit | Numeric  |
-|  Definition | Number of bicycles available from bike-sharing services  |
-|  Calculation | Number of available bicycles for the public within the year  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | yes  |
-|  If yes, which emission source sectors does it impact? | Transport  |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | yes  |
-|  If yes, which co-benefit does it measure? | Improved public health from increased physical activity  |
-|  Can the indicator be used for monitoring impact pathways? | yes  |
-|  If yes, which NZC impact pathway is it relevant for? | D2-MOB04  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | [yes/no]  |
-|  Data requirements |   |
-|  Expected data source |   |
-|  Expected availability |   |
-|  Suggested collection interval |   |
-|  References |   |
-|  Deliverables describing the indicator |   |
-|  Other indicator systems using this indicator |   |
+| Indicator Name | Number of available bicycles for the public |
+| Indicator Unit | Numeric |
+| Definition | Number of bicycles available from bike-sharing services |
+| Calculation | Number of available bicycles for the public within the year |
+| Indicator Context |  |
+| Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | yes |
+| If yes, which emission source sectors does it impact? | Transport |
+| Does the indicator measure indirect impacts (i.e., co-benefits)? | yes |
+| If yes, which co-benefit does it measure? | Improved public health from increased physical activity |
+| Can the indicator be used for monitoring impact pathways? | yes |
+| If yes, which NZC impact pathway is it relevant for? | D2-MOB04 |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | [yes/no] |
+| Data requirements |  |
+| Expected data source |  |
+| Expected availability |  |
+| Suggested collection interval |  |
+| References |  |
+| Deliverables describing the indicator |  |
+| Other indicator systems using this indicator |  |
 
 B-3.2: Indicator Metadata
 
-|  (For each indicator selected – take from Comprehensive Indicator Sets)  |   |
+| (For each indicator selected – take from Comprehensive Indicator Sets) |  |
 | --- | --- |
-|  Indicator Name | Creation of new parking policy  |
-|  Indicator Unit | Numeric  |
-|  Definition | New parking policy and new residential parking facilities meant to decrease car use and transform parking spaces into public areas  |
-|  Calculation | Policy adopted by the Public Administration through Council Resolution  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) |   |
-|  If yes, which emission source sectors does it impact? | Transport  |
+| Indicator Name | Creation of new parking policy |
+| Indicator Unit | Numeric |
+| Definition | New parking policy and new residential parking facilities meant to decrease car use and transform parking spaces into public areas |
+| Calculation | Policy adopted by the Public Administration through Council Resolution |
+| Indicator Context |  |
+| Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) |  |
+| If yes, which emission source sectors does it impact? | Transport |
 PRIMARIA
 INSTITUENCIA
 Climate Neutrality Action
 Plan
 8
 
-|  Does the indicator measure indirect impacts (i.e., co- benefits)? | yes  |
+| Does the indicator measure indirect impacts (i.e., co- benefits)? | yes |
 | --- | --- |
-|  If yes, which co-benefit does it measure? | Enhanced urban livability, safer streets for pedestrians and cyclists  |
-|  Can the indicator be used for monitoring impact pathways? | yes  |
-|  If yes, which NZC impact pathway is it relevant for? | D2-MOB05  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | [yes/no]  |
-|  Data requirements |   |
-|  Expected data source |   |
-|  Expected availability |   |
-|  Suggested collection interval |   |
-|  References |   |
-|  Deliverables describing the indicator |   |
-|  Other indicator systems using this indicator |   |
-|  B-3.2: Indicator Metadata  |   |
-| --- | --- |
-|  (For each indicator selected – take from Comprehensive Indicator Sets)  |   |
-|  Indicator Name | Decreased percentage of visits to City Hall  |
-|  Indicator Unit | Percentage  |
-|  Definition | Decreased number of visits to public administration through digitalisation  |
-|  Calculation | Report  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | yes  |
-|  If yes, which emission source sectors does it impact? | Transport  |
-|  Does the indicator measure indirect impacts (i.e., co- benefits)? | yes  |
-|  If yes, which co-benefit does it measure? | Improved life quality; Reduced air pollution  |
-|  Can the indicator be used for monitoring impact pathways? | yes  |
-|  If yes, which NZC impact pathway is it relevant for? | D2-MOB06  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | [yes/no]  |
-|  Data requirements |   |
-|  Expected data source | Municipal administrative records, digital service platforms  |
-|  Expected availability | Difficult to collect  |
-|  Suggested collection interval | Anually  |
-|  References |   |
-|  Deliverables describing the indicator | Digital service usage reports, annual municipal service delivery reports  |
-|  Other indicator systems using this indicator | Smart Cities Index, Digital Governance Index  |
+| If yes, which co-benefit does it measure? | Enhanced urban livability, safer streets for pedestrians and cyclists |
+| Can the indicator be used for monitoring impact pathways? | yes |
+| If yes, which NZC impact pathway is it relevant for? | D2-MOB05 |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | [yes/no] |
+| Data requirements |  |
+| Expected data source |  |
+| Expected availability |  |
+| Suggested collection interval |  |
+| References |  |
+| Deliverables describing the indicator |  |
+| Other indicator systems using this indicator |  |
+| B-3.2: Indicator Metadata |  |
+| (For each indicator selected – take from Comprehensive Indicator Sets) |  |
+| Indicator Name | Decreased percentage of visits to City Hall |
+| Indicator Unit | Percentage |
+| Definition | Decreased number of visits to public administration through digitalisation |
+| Calculation | Report |
+| Indicator Context |  |
+| Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | yes |
+| If yes, which emission source sectors does it impact? | Transport |
+| Does the indicator measure indirect impacts (i.e., co- benefits)? | yes |
+| If yes, which co-benefit does it measure? | Improved life quality; Reduced air pollution |
+| Can the indicator be used for monitoring impact pathways? | yes |
+| If yes, which NZC impact pathway is it relevant for? | D2-MOB06 |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | [yes/no] |
+| Data requirements |  |
+| Expected data source | Municipal administrative records, digital service platforms |
+| Expected availability | Difficult to collect |
+| Suggested collection interval | Anually |
+| References |  |
+| Deliverables describing the indicator | Digital service usage reports, annual municipal service delivery reports |
+| Other indicator systems using this indicator | Smart Cities Index, Digital Governance Index |
 中
 
 PRIMÁRIA
@@ -2440,42 +2449,41 @@ Plan
 
 #
 
-|  (For each indicator selected – take from Comprehensive Indicator Sets)  |   |
+| (For each indicator selected – take from Comprehensive Indicator Sets) |  |
 | --- | --- |
-|  Indicator Name | Number of newly constructed EV charging stations  |
-|  Indicator Unit | Numeric  |
-|  Definition | Development of a network of EV charging stations  |
-|  Calculation | Count of units  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | yes  |
-|  If yes, which emission source sectors does it impact? | Transport  |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | yes  |
-|  If yes, which co-benefit does it measure? | Reduced air pollution  |
-|  Can the indicator be used for monitoring impact pathways? | yes  |
-|  If yes, which NZC impact pathway is it relevant for? | D2-MOB07  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | [yes/no]  |
-|  Data requirements |   |
-|  Expected data source |   |
-|  Expected availability |   |
-|  Suggested collection interval |   |
-|  References |   |
-|  Deliverables describing the indicator |   |
-|  Other indicator systems using this indicator |   |
-|  B-3.2: Indicator Metadata  |   |
-| --- | --- |
-|  (For each indicator selected – take from Comprehensive Indicator Sets)  |   |
-|  Indicator Name | Km of streets rehabilitated  |
-|  Indicator Unit | Numeric  |
-|  Definition | Length of streets modernised  |
-|  Calculation | Sum of length of all streets rehabilitated within the year  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | yes  |
-|  If yes, which emission source sectors does it impact? | Transport, AFOLU  |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | yes  |
-|  If yes, which co-benefit does it measure? | Reduced air pollution; Less traffic congestion, more efficient urban mobility; Smoother urban transportation experience  |
-|  Can the indicator be used for monitoring impact pathways? | yes  |
-|  If yes, which NZC impact pathway is it relevant for? | D2-MOB08  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | [yes/no]  |
+| Indicator Name | Number of newly constructed EV charging stations |
+| Indicator Unit | Numeric |
+| Definition | Development of a network of EV charging stations |
+| Calculation | Count of units |
+| Indicator Context |  |
+| Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | yes |
+| If yes, which emission source sectors does it impact? | Transport |
+| Does the indicator measure indirect impacts (i.e., co-benefits)? | yes |
+| If yes, which co-benefit does it measure? | Reduced air pollution |
+| Can the indicator be used for monitoring impact pathways? | yes |
+| If yes, which NZC impact pathway is it relevant for? | D2-MOB07 |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | [yes/no] |
+| Data requirements |  |
+| Expected data source |  |
+| Expected availability |  |
+| Suggested collection interval |  |
+| References |  |
+| Deliverables describing the indicator |  |
+| Other indicator systems using this indicator |  |
+| B-3.2: Indicator Metadata |  |
+| (For each indicator selected – take from Comprehensive Indicator Sets) |  |
+| Indicator Name | Km of streets rehabilitated |
+| Indicator Unit | Numeric |
+| Definition | Length of streets modernised |
+| Calculation | Sum of length of all streets rehabilitated within the year |
+| Indicator Context |  |
+| Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | yes |
+| If yes, which emission source sectors does it impact? | Transport, AFOLU |
+| Does the indicator measure indirect impacts (i.e., co-benefits)? | yes |
+| If yes, which co-benefit does it measure? | Reduced air pollution; Less traffic congestion, more efficient urban mobility; Smoother urban transportation experience |
+| Can the indicator be used for monitoring impact pathways? | yes |
+| If yes, which NZC impact pathway is it relevant for? | D2-MOB08 |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | [yes/no] |
 中
 
 PRIMÁRIA
@@ -2488,45 +2496,43 @@ Plan
 
 #
 
-|  Data requirements |   |
+| Data requirements |  |
 | --- | --- |
-|  Expected data source |   |
-|  Expected availability |   |
-|  Suggested collection interval |   |
-|  References |   |
-|  Deliverables describing the indicator |   |
-|  Other indicator systems using this indicator |   |
-|  B-3.2: Indicator Metadata  |   |
-| --- | --- |
-|  (For each indicator selected – take from Comprehensive Indicator Sets)  |   |
-|  Indicator Name | % reduction in emissions per unit  |
-|  Indicator Unit | Percentage  |
-|  Definition | Extensive moderate energy renovation of multifamily residential buildings  |
-|  Calculation | Detailed assessment of emissions  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | yes  |
-|  If yes, which emission source sectors does it impact? | Buildings  |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | [yes/no]  |
-|  If yes, which co-benefit does it measure? | Improve the quality of life; Lower energy costs for households;  |
-|  Can the indicator be used for monitoring impact pathways? | yes  |
-|  If yes, which NZC impact pathway is it relevant for? | D2-B01  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | no  |
-|  Data requirements |   |
-|  Expected data source | Upgrade project records  |
-|  Expected availability | Annually  |
-|  Suggested collection interval | After completion of projects  |
-|  References |   |
-|  Deliverables describing the indicator | Project completion reports  |
-|  Other indicator systems using this indicator |   |
-|  B-3.2: Indicator Metadata  |   |
-| --- | --- |
-|  (For each indicator selected – take from Comprehensive Indicator Sets)  |   |
-|  Indicator Name | % reduction in emissions per unit  |
-|  Indicator Unit | Percentage  |
-|  Definition | Extensive moderate energy renovation of multifamily residential buildings  |
-|  Calculation | Detailed assessment of emissions  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | yes  |
+| Expected data source |  |
+| Expected availability |  |
+| Suggested collection interval |  |
+| References |  |
+| Deliverables describing the indicator |  |
+| Other indicator systems using this indicator |  |
+| B-3.2: Indicator Metadata |  |
+| (For each indicator selected – take from Comprehensive Indicator Sets) |  |
+| Indicator Name | % reduction in emissions per unit |
+| Indicator Unit | Percentage |
+| Definition | Extensive moderate energy renovation of multifamily residential buildings |
+| Calculation | Detailed assessment of emissions |
+| Indicator Context |  |
+| Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | yes |
+| If yes, which emission source sectors does it impact? | Buildings |
+| Does the indicator measure indirect impacts (i.e., co-benefits)? | [yes/no] |
+| If yes, which co-benefit does it measure? | Improve the quality of life; Lower energy costs for households; |
+| Can the indicator be used for monitoring impact pathways? | yes |
+| If yes, which NZC impact pathway is it relevant for? | D2-B01 |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | no |
+| Data requirements |  |
+| Expected data source | Upgrade project records |
+| Expected availability | Annually |
+| Suggested collection interval | After completion of projects |
+| References |  |
+| Deliverables describing the indicator | Project completion reports |
+| Other indicator systems using this indicator |  |
+| B-3.2: Indicator Metadata |  |
+| (For each indicator selected – take from Comprehensive Indicator Sets) |  |
+| Indicator Name | % reduction in emissions per unit |
+| Indicator Unit | Percentage |
+| Definition | Extensive moderate energy renovation of multifamily residential buildings |
+| Calculation | Detailed assessment of emissions |
+| Indicator Context |  |
+| Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | yes |
 中
 
 PRIMÁRIA
@@ -2539,26 +2545,26 @@ Plan
 
 #
 
-|  B-3.2: Indicator Metadata  |   |
+| B-3.2: Indicator Metadata |  |
 | --- | --- |
-|  (For each indicator selected – take from Comprehensive Indicator Sets)  |   |
-|  Indicator Name | Electrical infrastructure units renovated  |
-|  Indicator Unit | Numeric  |
-|  Definition | Upgraded electrical infrastructure to enhance reliability, efficiency and intelligence of the electrical grid  |
-|  Calculation | Count of electrical infrastructure units that have undergone renovation or upgrading  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | yes  |
-|  If yes, which emission source sectors does it impact? | IPPU  |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | yes  |
-|  If yes, which co-benefit does it measure? | Increased resilience to energy supply fluctuations; Savings for local budget;  |
-|  Can the indicator be used for monitoring impact pathways? | yes  |
-|  If yes, which NZC impact pathway is it relevant for? | D2-E01  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | yes  |
-|  Data requirements |   |
-|  Expected data source | Utility providers, municipal energy department records, project implementation reports  |
-|  Expected availability | Data should be available after the completion of renovation projects  |
-|  Suggested collection interval | Annually  |
-|  References |   |
+| (For each indicator selected – take from Comprehensive Indicator Sets) |  |
+| Indicator Name | Electrical infrastructure units renovated |
+| Indicator Unit | Numeric |
+| Definition | Upgraded electrical infrastructure to enhance reliability, efficiency and intelligence of the electrical grid |
+| Calculation | Count of electrical infrastructure units that have undergone renovation or upgrading |
+| Indicator Context |  |
+| Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | yes |
+| If yes, which emission source sectors does it impact? | IPPU |
+| Does the indicator measure indirect impacts (i.e., co-benefits)? | yes |
+| If yes, which co-benefit does it measure? | Increased resilience to energy supply fluctuations; Savings for local budget; |
+| Can the indicator be used for monitoring impact pathways? | yes |
+| If yes, which NZC impact pathway is it relevant for? | D2-E01 |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | yes |
+| Data requirements |  |
+| Expected data source | Utility providers, municipal energy department records, project implementation reports |
+| Expected availability | Data should be available after the completion of renovation projects |
+| Suggested collection interval | Annually |
+| References |  |
 中
 
 PRIMÁRIA
@@ -2571,89 +2577,88 @@ Plan
 
 B-3.2: Indicator Metadata
 
-|  (For each indicator selected – take from Comprehensive Indicator Sets) |   |
+| (For each indicator selected – take from Comprehensive Indicator Sets) |  |
 | --- | --- |
-|  Indicator Name | Length of public lighting  |
-|  Indicator Unit | Units / Kilometers  |
-|  Definition | Measures the total count of public lighting units (streetlights, park lights, etc.) that have been upgraded or renovated to more energy-efficient systems within District 2  |
-|  Calculation | Sum of all lighting units upgraded or renovated to LED or other energy-efficient lighting technologies  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | yes  |
-|  If yes, which emission source sectors does it impact? | Transport  |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | yes  |
-|  If yes, which co-benefit does it measure? | Savings for local budget; Increased safety;  |
-|  Can the indicator be used for monitoring impact pathways? | [yes/no]  |
-|  If yes, which NZC impact pathway is it relevant for? | Impact Pathways according to - according to Module B-1  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | [yes/no]  |
-|  Data requirements |   |
-|  Expected data source | Municipal public works department, lighting renovation project reports, utility service providers  |
-|  Expected availability | Following the completion of renovation activities  |
-|  Suggested collection interval | Annually  |
-|  References |   |
-|  Deliverables describing the indicator | Annual energy efficiency reports, sustainability updates  |
-|  Other indicator systems using this indicator | Municipal energy efficiency and sustainability tracking, national infrastructure databases  |
+| Indicator Name | Length of public lighting |
+| Indicator Unit | Units / Kilometers |
+| Definition | Measures the total count of public lighting units (streetlights, park lights, etc.) that have been upgraded or renovated to more energy-efficient systems within District 2 |
+| Calculation | Sum of all lighting units upgraded or renovated to LED or other energy-efficient lighting technologies |
+| Indicator Context |  |
+| Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | yes |
+| If yes, which emission source sectors does it impact? | Transport |
+| Does the indicator measure indirect impacts (i.e., co-benefits)? | yes |
+| If yes, which co-benefit does it measure? | Savings for local budget; Increased safety; |
+| Can the indicator be used for monitoring impact pathways? | [yes/no] |
+| If yes, which NZC impact pathway is it relevant for? | Impact Pathways according to - according to Module B-1 |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | [yes/no] |
+| Data requirements |  |
+| Expected data source | Municipal public works department, lighting renovation project reports, utility service providers |
+| Expected availability | Following the completion of renovation activities |
+| Suggested collection interval | Annually |
+| References |  |
+| Deliverables describing the indicator | Annual energy efficiency reports, sustainability updates |
+| Other indicator systems using this indicator | Municipal energy efficiency and sustainability tracking, national infrastructure databases |
 
 B-3.2: Indicator Metadata
 
-|  (For each indicator selected – take from Comprehensive Indicator Sets)  |   |
+| (For each indicator selected – take from Comprehensive Indicator Sets) |  |
 | --- | --- |
-|  Indicator Name | Developmnet of climate neutral education centers  |
-|  Indicator Unit | Numeric  |
-|  Definition |   |
-|  Calculation | Total number of climate neutral education centers established or upgraded  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | yes  |
-|  If yes, which emission source sectors does it impact? | Buildings  |
-|  Can the indicator be used for monitoring impact pathways? | [yes/no]  |
-|  If yes, which NZC impact pathway is it relevant for? | Impact Pathways according to - according to Module B-1  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | [yes/no]  |
-|  Data requirements |   |
-|  Expected data source | Municipal public works department, lighting renovation project reports, utility service providers  |
-|  Expected availability | Following the completion of renovation activities  |
-|  Suggested collection interval | Annually  |
-|  References |   |
-|  Deliverables describing the indicator | Annual energy efficiency reports, sustainability updates  |
-|  Other indicator systems using this indicator | Municipal energy efficiency and sustainability tracking, national infrastructure databases  |
+| Indicator Name | Developmnet of climate neutral education centers |
+| Indicator Unit | Numeric |
+| Definition |  |
+| Calculation | Total number of climate neutral education centers established or upgraded |
+| Indicator Context |  |
+| Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | yes |
+| If yes, which emission source sectors does it impact? | Buildings |
+| Can the indicator be used for monitoring impact pathways? | [yes/no] |
+| If yes, which NZC impact pathway is it relevant for? | Impact Pathways according to - according to Module B-1 |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | [yes/no] |
+| Data requirements |  |
+| Expected data source | Municipal public works department, lighting renovation project reports, utility service providers |
+| Expected availability | Following the completion of renovation activities |
+| Suggested collection interval | Annually |
+| References |  |
+| Deliverables describing the indicator | Annual energy efficiency reports, sustainability updates |
+| Other indicator systems using this indicator | Municipal energy efficiency and sustainability tracking, national infrastructure databases |
 PRIMAIRA
 DEPARTMENT OF AGRICULTURE
 Climate Neutrality Action Plan
 3
 
-|  Does the indicator measure indirect impacts (i.e., co- benefits)? | yes  |
+| Does the indicator measure indirect impacts (i.e., co- benefits)? | yes |
 | --- | --- |
-|  If yes, which co-benefit does it measure? | Established culture of sustainability and energy consciousness within the community  |
-|  Can the indicator be used for monitoring impact pathways? | yes  |
-|  If yes, which NZC impact pathway is it relevant for? | D2-E03  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | no  |
-|  Data requirements |   |
-|  Expected data source | Education program launch records, visitor/participation data  |
-|  Expected availability | As centers are opened/updated  |
-|  Suggested collection interval | Annually or upon project completion  |
-|  References |   |
-|  Deliverables describing the indicator | Annual reports on participation and impact  |
-|  Other indicator systems using this indicator |   |
-|  B-3.2: Indicator Metadata  |   |
-| --- | --- |
-|  (For each indicator selected – take from Comprehensive Indicator Sets)  |   |
-|  Indicator Name | Number of new nZEB buildings  |
-|  Indicator Unit | Numeric  |
-|  Definition | Count of newly constructed buildings that meet nearly zero-energy building (nZEB) standards  |
-|  Calculation | Total number of new nZEB buildings certified  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | yes  |
-|  If yes, which emission source sectors does it impact? | Buildings  |
-|  Does the indicator measure indirect impacts (i.e., co- benefits)? | yes  |
-|  If yes, which co-benefit does it measure? | Long-term urban resilience, enhanced living conditions  |
-|  Can the indicator be used for monitoring impact pathways? | yes  |
-|  If yes, which NZC impact pathway is it relevant for? | D2-B03  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | yes  |
-|  Data requirements |   |
-|  Expected data source | Certification records, construction permits  |
-|  Expected availability | Annually  |
-|  Suggested collection interval | Annually  |
-|  References |   |
-|  Deliverables describing the indicator | nZEB certification records  |
-|  Other indicator systems using this indicator | LEED, BREEAM  |
+| If yes, which co-benefit does it measure? | Established culture of sustainability and energy consciousness within the community |
+| Can the indicator be used for monitoring impact pathways? | yes |
+| If yes, which NZC impact pathway is it relevant for? | D2-E03 |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | no |
+| Data requirements |  |
+| Expected data source | Education program launch records, visitor/participation data |
+| Expected availability | As centers are opened/updated |
+| Suggested collection interval | Annually or upon project completion |
+| References |  |
+| Deliverables describing the indicator | Annual reports on participation and impact |
+| Other indicator systems using this indicator |  |
+| B-3.2: Indicator Metadata |  |
+| (For each indicator selected – take from Comprehensive Indicator Sets) |  |
+| Indicator Name | Number of new nZEB buildings |
+| Indicator Unit | Numeric |
+| Definition | Count of newly constructed buildings that meet nearly zero-energy building (nZEB) standards |
+| Calculation | Total number of new nZEB buildings certified |
+| Indicator Context |  |
+| Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | yes |
+| If yes, which emission source sectors does it impact? | Buildings |
+| Does the indicator measure indirect impacts (i.e., co- benefits)? | yes |
+| If yes, which co-benefit does it measure? | Long-term urban resilience, enhanced living conditions |
+| Can the indicator be used for monitoring impact pathways? | yes |
+| If yes, which NZC impact pathway is it relevant for? | D2-B03 |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | yes |
+| Data requirements |  |
+| Expected data source | Certification records, construction permits |
+| Expected availability | Annually |
+| Suggested collection interval | Annually |
+| References |  |
+| Deliverables describing the indicator | nZEB certification records |
+| Other indicator systems using this indicator | LEED, BREEAM |
 
 B-3.2: Indicator Metadata
 PRINÁRIA
@@ -2664,40 +2669,39 @@ Climate Neutrality Action
 Plan
 C
 
-|  (For each indicator selected – take from Comprehensive Indicator Sets)  |   |
+| (For each indicator selected – take from Comprehensive Indicator Sets) |  |
 | --- | --- |
-|  Indicator Name | Number of industrial areas reconverted  |
-|  Indicator Unit | Numeric  |
-|  Definition | Count of former industrial sites that have been repurposed for new uses, including commercial, residential, recreational, or green spaces  |
-|  Calculation | Total number of industrial areas undergoing reconversion processes within a given year.  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | yes  |
-|  If yes, which emission source sectors does it impact? | IPPU  |
-|  Does the indicator measure indirect impacts (i.e., co- benefits)? | yes  |
-|  If yes, which co-benefit does it measure? | Improve the quality of life; Enhanced urban livability;  |
-|  Can the indicator be used for monitoring impact pathways? | yes  |
-|  If yes, which NZC impact pathway is it relevant for? | D2-E04  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | no  |
-|  Data requirements |   |
-|  Expected data source | Urban planning and development departments, redevelopment agencies  |
-|  Expected availability | As projects are approved/completed  |
-|  Suggested collection interval | Annually or upon project completion  |
-|  References |   |
-|  Deliverables describing the indicator | Project completion reports, urban regeneration impact assessments  |
-|  Other indicator systems using this indicator |   |
-|  B-3.2: Indicator Metadata  |   |
-| --- | --- |
-|  (For each indicator selected – take from Comprehensive Indicator Sets)  |   |
-|  Indicator Name | Kilometers of blue-green infrastructure renovated  |
-|  Indicator Unit | Kilometers  |
-|  Definition | The length of blue-green infrastructure (such as waterways, parks, and green corridors) that has been restored, enhanced, or newly created.  |
-|  Calculation | Sum of the lengths of all blue-green infrastructure projects completed within the reporting period  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | yes  |
-|  If yes, which emission source sectors does it impact? | AFOLU  |
-|  Does the indicator measure indirect impacts (i.e., co- benefits)? | yes  |
-|  If yes, which co-benefit does it measure? | Recreational spaces for community; Biodiversity enhancement;  |
-|  Can the indicator be used for monitoring impact pathways? | yes  |
+| Indicator Name | Number of industrial areas reconverted |
+| Indicator Unit | Numeric |
+| Definition | Count of former industrial sites that have been repurposed for new uses, including commercial, residential, recreational, or green spaces |
+| Calculation | Total number of industrial areas undergoing reconversion processes within a given year. |
+| Indicator Context |  |
+| Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | yes |
+| If yes, which emission source sectors does it impact? | IPPU |
+| Does the indicator measure indirect impacts (i.e., co- benefits)? | yes |
+| If yes, which co-benefit does it measure? | Improve the quality of life; Enhanced urban livability; |
+| Can the indicator be used for monitoring impact pathways? | yes |
+| If yes, which NZC impact pathway is it relevant for? | D2-E04 |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | no |
+| Data requirements |  |
+| Expected data source | Urban planning and development departments, redevelopment agencies |
+| Expected availability | As projects are approved/completed |
+| Suggested collection interval | Annually or upon project completion |
+| References |  |
+| Deliverables describing the indicator | Project completion reports, urban regeneration impact assessments |
+| Other indicator systems using this indicator |  |
+| B-3.2: Indicator Metadata |  |
+| (For each indicator selected – take from Comprehensive Indicator Sets) |  |
+| Indicator Name | Kilometers of blue-green infrastructure renovated |
+| Indicator Unit | Kilometers |
+| Definition | The length of blue-green infrastructure (such as waterways, parks, and green corridors) that has been restored, enhanced, or newly created. |
+| Calculation | Sum of the lengths of all blue-green infrastructure projects completed within the reporting period |
+| Indicator Context |  |
+| Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | yes |
+| If yes, which emission source sectors does it impact? | AFOLU |
+| Does the indicator measure indirect impacts (i.e., co- benefits)? | yes |
+| If yes, which co-benefit does it measure? | Recreational spaces for community; Biodiversity enhancement; |
+| Can the indicator be used for monitoring impact pathways? | yes |
 
 4
 #
@@ -2710,38 +2714,37 @@ Plan
 
 #
 
-|  If yes, which NZC impact pathway is it relevant for? | D2 - G01  |
+| If yes, which NZC impact pathway is it relevant for? | D2 - G01 |
 | --- | --- |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | no  |
-|  Data requirements |   |
-|  Expected data source | Municipal environmental or urban planning departments, project reports  |
-|  Expected availability | Post project completion  |
-|  Suggested collection interval | Annually or upon project completion  |
-|  References |   |
-|  Deliverables describing the indicator | Project completion reports, urban greening strategy progress reports  |
-|  Other indicator systems using this indicator | Local biodiversity indices  |
-|  B-3.2: Indicator Metadata  |   |
-| --- | --- |
-|  (For each indicator selected – take from Comprehensive Indicator Sets)  |   |
-|  Indicator Name | Number of buildings retrofitted with green roofs or terraces  |
-|  Indicator Unit | Numeric  |
-|  Definition | This indicator quantifies the number of buildings within District 2 that have been retrofitted with green roofs or terraces.  |
-|  Calculation | Count of existing buildings that have undergone retrofitting projects to install green roofs or terraces during the specified reporting period  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | yes  |
-|  If yes, which emission source sectors does it impact? | Buildings  |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | yes  |
-|  If yes, which co-benefit does it measure? | Improved mental and physical health of residents; Recreational spaces for community;  |
-|  Can the indicator be used for monitoring impact pathways? | yes  |
-|  If yes, which NZC impact pathway is it relevant for? | D2-G02  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | [yes/no]  |
-|  Data requirements |   |
-|  Expected data source | Municipal building permits and retrofit project reports  |
-|  Expected availability | Available following the completion of retrofit projects  |
-|  Suggested collection interval | Annually  |
-|  References |   |
-|  Deliverables describing the indicator | Green infrastructure progress updates, environmental impact reports  |
-|  Other indicator systems using this indicator |   |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | no |
+| Data requirements |  |
+| Expected data source | Municipal environmental or urban planning departments, project reports |
+| Expected availability | Post project completion |
+| Suggested collection interval | Annually or upon project completion |
+| References |  |
+| Deliverables describing the indicator | Project completion reports, urban greening strategy progress reports |
+| Other indicator systems using this indicator | Local biodiversity indices |
+| B-3.2: Indicator Metadata |  |
+| (For each indicator selected – take from Comprehensive Indicator Sets) |  |
+| Indicator Name | Number of buildings retrofitted with green roofs or terraces |
+| Indicator Unit | Numeric |
+| Definition | This indicator quantifies the number of buildings within District 2 that have been retrofitted with green roofs or terraces. |
+| Calculation | Count of existing buildings that have undergone retrofitting projects to install green roofs or terraces during the specified reporting period |
+| Indicator Context |  |
+| Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | yes |
+| If yes, which emission source sectors does it impact? | Buildings |
+| Does the indicator measure indirect impacts (i.e., co-benefits)? | yes |
+| If yes, which co-benefit does it measure? | Improved mental and physical health of residents; Recreational spaces for community; |
+| Can the indicator be used for monitoring impact pathways? | yes |
+| If yes, which NZC impact pathway is it relevant for? | D2-G02 |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | [yes/no] |
+| Data requirements |  |
+| Expected data source | Municipal building permits and retrofit project reports |
+| Expected availability | Available following the completion of retrofit projects |
+| Suggested collection interval | Annually |
+| References |  |
+| Deliverables describing the indicator | Green infrastructure progress updates, environmental impact reports |
+| Other indicator systems using this indicator |  |
 
 # B-3.2: Indicator Metadata
 中
@@ -2756,40 +2759,39 @@ Plan
 
 #
 
-|  (For each indicator selected – take from Comprehensive Indicator Sets)  |   |
+| (For each indicator selected – take from Comprehensive Indicator Sets) |  |
 | --- | --- |
-|  Indicator Name | Percentage of public green spaces renovated/ modernised  |
-|  Indicator Unit | Percentage  |
-|  Definition | The proportion of public green spaces within the district that have undergone renovation or modernisation to enhance accessibility, biodiversity, and recreational value.  |
-|  Calculation |   |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | yes  |
-|  If yes, which emission source sectors does it impact? | AFOLU  |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | yes  |
-|  If yes, which co-benefit does it measure? | Improved mental and physical health of residents; Recreational spaces for community;  |
-|  Can the indicator be used for monitoring impact pathways? | yes  |
-|  If yes, which NZC impact pathway is it relevant for? | D2-G3  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | no  |
-|  Data requirements |   |
-|  Expected data source | Green space department  |
-|  Expected availability | Regularly, following project completions  |
-|  Suggested collection interval | Annually  |
-|  References |   |
-|  Deliverables describing the indicator | Annual environmental or green spaces department reports  |
-|  Other indicator systems using this indicator | Urban sustainability indices  |
-|  B-3.2: Indicator Metadata  |   |
-| --- | --- |
-|  (For each indicator selected – take from Comprehensive Indicator Sets)  |   |
-|  Indicator Name | Percentage of Waste Recycled  |
-|  Indicator Unit | Percentage  |
-|  Definition | The proportion of waste generated within the district that is collected and successfully recycled.  |
-|  Calculation |   |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | yes  |
-|  If yes, which emission source sectors does it impact? | Waste  |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | yes  |
-|  If yes, which co-benefit does it measure? | Improved quality of life  |
-|  Can the indicator be used for monitoring impact pathways? | yes  |
+| Indicator Name | Percentage of public green spaces renovated/ modernised |
+| Indicator Unit | Percentage |
+| Definition | The proportion of public green spaces within the district that have undergone renovation or modernisation to enhance accessibility, biodiversity, and recreational value. |
+| Calculation |  |
+| Indicator Context |  |
+| Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | yes |
+| If yes, which emission source sectors does it impact? | AFOLU |
+| Does the indicator measure indirect impacts (i.e., co-benefits)? | yes |
+| If yes, which co-benefit does it measure? | Improved mental and physical health of residents; Recreational spaces for community; |
+| Can the indicator be used for monitoring impact pathways? | yes |
+| If yes, which NZC impact pathway is it relevant for? | D2-G3 |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | no |
+| Data requirements |  |
+| Expected data source | Green space department |
+| Expected availability | Regularly, following project completions |
+| Suggested collection interval | Annually |
+| References |  |
+| Deliverables describing the indicator | Annual environmental or green spaces department reports |
+| Other indicator systems using this indicator | Urban sustainability indices |
+| B-3.2: Indicator Metadata |  |
+| (For each indicator selected – take from Comprehensive Indicator Sets) |  |
+| Indicator Name | Percentage of Waste Recycled |
+| Indicator Unit | Percentage |
+| Definition | The proportion of waste generated within the district that is collected and successfully recycled. |
+| Calculation |  |
+| Indicator Context |  |
+| Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | yes |
+| If yes, which emission source sectors does it impact? | Waste |
+| Does the indicator measure indirect impacts (i.e., co-benefits)? | yes |
+| If yes, which co-benefit does it measure? | Improved quality of life |
+| Can the indicator be used for monitoring impact pathways? | yes |
 中
 
 PRIMÁRIA
@@ -2800,38 +2802,37 @@ Plan
 
 #
 
-|  If yes, which NZC impact pathway is it relevant for? | D2-W01  |
+| If yes, which NZC impact pathway is it relevant for? | D2-W01 |
 | --- | --- |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | yes  |
-|  Data requirements |   |
-|  Expected data source | Municipal waste management services, recycling facilities reports  |
-|  Expected availability | After data compilation and analysis, typically annually  |
-|  Suggested collection interval | Annually  |
-|  References |   |
-|  Deliverables describing the indicator | Waste management annual report  |
-|  Other indicator systems using this indicator | National environmental performance assessments  |
-|  B-3.2: Indicator Metadata  |   |
-| --- | --- |
-|  (For each indicator selected – take from Comprehensive Indicator Sets)  |   |
-|  Indicator Name | Percentage of residents actively participating in climate actions  |
-|  Indicator Unit | Percentage (%)  |
-|  Definition | The proportion of the district's population engaged in climate-related actions, including educational programs, community projects, or sustainability initiatives.  |
-|  Calculation |   |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | yes  |
-|  If yes, which emission source sectors does it impact? | Buildings  |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | yes  |
-|  If yes, which co-benefit does it measure? | Strengthen community cohesion and collaboration; Healthier lifestyles;  |
-|  Can the indicator be used for monitoring impact pathways? | yes  |
-|  If yes, which NZC impact pathway is it relevant for? | D2-C01  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | [yes/no]  |
-|  Data requirements |   |
-|  Expected data source | Municipal records, NGOs, and community organisations  |
-|  Expected availability | Compiled after events or on a regular basis  |
-|  Suggested collection interval | Annually or after events/programs  |
-|  References |   |
-|  Deliverables describing the indicator | Community engagement reports, climate action initiative summaries.  |
-|  Other indicator systems using this indicator | Community engagement indices, local sustainability reports  |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | yes |
+| Data requirements |  |
+| Expected data source | Municipal waste management services, recycling facilities reports |
+| Expected availability | After data compilation and analysis, typically annually |
+| Suggested collection interval | Annually |
+| References |  |
+| Deliverables describing the indicator | Waste management annual report |
+| Other indicator systems using this indicator | National environmental performance assessments |
+| B-3.2: Indicator Metadata |  |
+| (For each indicator selected – take from Comprehensive Indicator Sets) |  |
+| Indicator Name | Percentage of residents actively participating in climate actions |
+| Indicator Unit | Percentage (%) |
+| Definition | The proportion of the district's population engaged in climate-related actions, including educational programs, community projects, or sustainability initiatives. |
+| Calculation |  |
+| Indicator Context |  |
+| Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | yes |
+| If yes, which emission source sectors does it impact? | Buildings |
+| Does the indicator measure indirect impacts (i.e., co-benefits)? | yes |
+| If yes, which co-benefit does it measure? | Strengthen community cohesion and collaboration; Healthier lifestyles; |
+| Can the indicator be used for monitoring impact pathways? | yes |
+| If yes, which NZC impact pathway is it relevant for? | D2-C01 |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | [yes/no] |
+| Data requirements |  |
+| Expected data source | Municipal records, NGOs, and community organisations |
+| Expected availability | Compiled after events or on a regular basis |
+| Suggested collection interval | Annually or after events/programs |
+| References |  |
+| Deliverables describing the indicator | Community engagement reports, climate action initiative summaries. |
+| Other indicator systems using this indicator | Community engagement indices, local sustainability reports |
 PRAMÍA
 Climate Neutrality Action
 Plan
@@ -2847,34 +2848,34 @@ Module C-1 “Organisational and Governance Innovation Interventions” consists
 
 C.1.1: Enabling organisational and governance interventions
 
-|  Intervention name | Description | Responsible entity/ dept./ person | Involved stakeholder | Enabling impact | Co-benefits  |
+| Intervention name | Description | Responsible entity/ dept./ person | Involved stakeholder | Enabling impact | Co-benefits |
 | --- | --- | --- | --- | --- | --- |
-|  Integrated Climate Neutrality Task Force | A task force within District 2 administration, focusing on climate neutrality will be established. This multi-disciplinary team will drive the district's climate initiatives, ensuring effective coordination among various departments and stakeholders. | District 2 City Hall | City Hall departments | Enhances coordination and effective implementation of climate neutrality policies and projects, ensuring a unified approach across all sectors. | Streamlines decision-making, improves policy integration, and strengthens community engagement in climate action.  |
-|  Multi-Level Governance Framework | Developing a framework for effective collaboration between District 2, regional authorities, national government, and EU entities. This framework should facilitate the sharing of resources, knowledge, and best practices. | District 2 City Hall | Regional and national government agencies, EU institutions, other cities and municipalities | Enhances the district's ability to leverage external resources and expertise in pursuit of climate neutrality. | Strengthens regional and international relationships, opens access to additional funding and expertise, and enhances the district's role in broader climate policy dialogues.  |
-|  Local Climate Coalition | Brings together diverse stakeholders within the community, including local businesses, non-profit organisations, educational institutions, community groups, and concerned citizens, to collaborate on climate action initiatives. | District 2 City Hall | Local businesses, NGOs, academic institutions, citizens | By pooling resources, knowledge, and expertise, the coalition aims to foster a collective effort towards achieving climate | Fosters collaboration across sectors and encourages active participation; strengthens the social fabric and economic vitality.  |
+| Integrated Climate Neutrality Task Force | A task force within District 2 administration, focusing on climate neutrality will be established. This multi-disciplinary team will drive the district's climate initiatives, ensuring effective coordination among various departments and stakeholders. | District 2 City Hall | City Hall departments | Enhances coordination and effective implementation of climate neutrality policies and projects, ensuring a unified approach across all sectors. | Streamlines decision-making, improves policy integration, and strengthens community engagement in climate action. |
+| Multi-Level Governance Framework | Developing a framework for effective collaboration between District 2, regional authorities, national government, and EU entities. This framework should facilitate the sharing of resources, knowledge, and best practices. | District 2 City Hall | Regional and national government agencies, EU institutions, other cities and municipalities | Enhances the district's ability to leverage external resources and expertise in pursuit of climate neutrality. | Strengthens regional and international relationships, opens access to additional funding and expertise, and enhances the district's role in broader climate policy dialogues. |
+| Local Climate Coalition | Brings together diverse stakeholders within the community, including local businesses, non-profit organisations, educational institutions, community groups, and concerned citizens, to collaborate on climate action initiatives. | District 2 City Hall | Local businesses, NGOs, academic institutions, citizens | By pooling resources, knowledge, and expertise, the coalition aims to foster a collective effort towards achieving climate | Fosters collaboration across sectors and encourages active participation; strengthens the social fabric and economic vitality. |
 PRUMÁRIA
 Climate Neutrality Action
 Plan
 9
 
-|   |  |  |  | neutrality, enhancing resilience, and promoting climate neutrality within District 2. |   |
+|  |  |  |  | neutrality, enhancing resilience, and promoting climate neutrality within District 2. |  |
 | --- | --- | --- | --- | --- | --- |
-|  Stakeholder collaboration plaform | The initiative implies creating a digital platform for engaging and coordinating with key stakeholders, including local businesses, NGOs, and citizens. This platform will facilitate knowledge sharing, co-creation of solutions, and transparent communication. | District 2 City Hall
-IT/Communication Department | Local businesses, NGOs, academic institutions, residents | Promotes active stakeholder engagement and transparency in the climate neutrality process. | Increases public awareness and participation, and fosters innovation through collective intelligence.  |
-|  Sustainable Urban Development Guidelines | The intervention implies the development and implementation of a set of guidelines for sustainable urban development, focusing on climate neutral infrastructure, green spaces, and sustainable transportation. | District 2 Urban Planning Department | Urban planners, architects, construction companies, environmental experts | Guides the district towards sustainable urban development practices that align with climate neutrality goals. | Enhances urban livability, reduces environmental footprint, and promotes sustainable mobility.  |
-|  Sustainable Urban Planning and Policy Development | District-wide program to promote and facilitate the retrofitting of existing buildings for energy efficiency
-Develop and implement a comprehensive plan to promote sustainable transportation modes, including expanding cycling infrastructure, enhancing public transit, and introducing incentives for electric vehicles. | District 2 Urban Planning Department, Bucharest Municipality | Urban planners, architects, construction companies, environmental experts | Guides urban development towards sustainability, reducing the district’s carbon footprint. | Enhances urban livability, reduces environmental footprint, and promotes sustainable mobility.  |
-|  Climate Neutrality Public Awareness Campaign | A comprehensive public awareness campaign will be launched to educate and engage citizens about climate neutrality, its importance, and ways to contribute at an individual level. | District 2 City Hall / Public Relations Department, NGOs | Residents, educational institutions, local media | Increases public understanding and support for climate neutrality initiatives. | Encourages community involvement, fosters a culture of sustainability, and leads to behaviour change towards greener practices.  |
+| Stakeholder collaboration plaform | The initiative implies creating a digital platform for engaging and coordinating with key stakeholders, including local businesses, NGOs, and citizens. This platform will facilitate knowledge sharing, co-creation of solutions, and transparent communication. | District 2 City Hall |  |  |  |
+| IT/Communication Department | Local businesses, NGOs, academic institutions, residents | Promotes active stakeholder engagement and transparency in the climate neutrality process. | Increases public awareness and participation, and fosters innovation through collective intelligence. |  |  |
+| Sustainable Urban Development Guidelines | The intervention implies the development and implementation of a set of guidelines for sustainable urban development, focusing on climate neutral infrastructure, green spaces, and sustainable transportation. | District 2 Urban Planning Department | Urban planners, architects, construction companies, environmental experts | Guides the district towards sustainable urban development practices that align with climate neutrality goals. | Enhances urban livability, reduces environmental footprint, and promotes sustainable mobility. |
+| Sustainable Urban Planning and Policy Development | District-wide program to promote and facilitate the retrofitting of existing buildings for energy efficiency |  |  |  |  |
+| Develop and implement a comprehensive plan to promote sustainable transportation modes, including expanding cycling infrastructure, enhancing public transit, and introducing incentives for electric vehicles. | District 2 Urban Planning Department, Bucharest Municipality | Urban planners, architects, construction companies, environmental experts | Guides urban development towards sustainability, reducing the district’s carbon footprint. | Enhances urban livability, reduces environmental footprint, and promotes sustainable mobility. |  |
+| Climate Neutrality Public Awareness Campaign | A comprehensive public awareness campaign will be launched to educate and engage citizens about climate neutrality, its importance, and ways to contribute at an individual level. | District 2 City Hall / Public Relations Department, NGOs | Residents, educational institutions, local media | Increases public understanding and support for climate neutrality initiatives. | Encourages community involvement, fosters a culture of sustainability, and leads to behaviour change towards greener practices. |
 PRIMÁRIA
 MULTIBRIDACÍC
 Climate Neutrality Action
 Plan
 0
 
-|  Green Building certification incentive program | Introducing incentives for builders and homeowners to attain green building certifications, promoting energy-efficient and environmentally friendly construction. | District 2 City Hall, Romanian Green Building Council | Builders, homeowners, Romanian Green Building Council | Accelerates the adoption of green building practices in the district. | Reduces energy consumption, lowers carbon emissions, and promotes healthier living environments.  |
+| Green Building certification incentive program | Introducing incentives for builders and homeowners to attain green building certifications, promoting energy-efficient and environmentally friendly construction. | District 2 City Hall, Romanian Green Building Council | Builders, homeowners, Romanian Green Building Council | Accelerates the adoption of green building practices in the district. | Reduces energy consumption, lowers carbon emissions, and promotes healthier living environments. |
 | --- | --- | --- | --- | --- | --- |
-|  Energy Efficiency Retrofit Program | Implementing a district-wide program to promote and facilitate the retrofitting of existing buildings for energy efficiency. This includes thermal insulation, installation of energy-efficient windows, and upgrading heating systems. | District 2 City Hall / TERMOENERGETICA | Homeowners, tenants, building managers, energy service companies | Reduces energy consumption in residential and commercial buildings, a significant source of greenhouse gas emissions in the district. | Lowers energy costs for residents, improves living conditions, and stimulates local green jobs.  |
-|  Climate Neutrality Digital Twin | A digital twinning solution designed for climate neutrality serves as a powerful tool to create a smarter, more sustainable, and climate-resilient urban environment. Integration of various environmental sensors, including air quality monitors, energy consumption meters, waste management sensors, etc., to collect real-time data on key sustainability indicators. | UTCB, District 2 City Hall | All stakeholders involved | Continuous monitoring of climate-related parameters such as temperature, humidity, and air quality to assess the impact of climate initiatives. racking and analysing energy consumption patterns across different sectors, including residential, commercial, and industrial. | Predicting the potential future impact of climate-related interventions and policy changes on the city's carbon footprint and environmental quality. Analysing the resilience of the city's infrastructure to climate-related events and identifying areas for improvement.  |
+| Energy Efficiency Retrofit Program | Implementing a district-wide program to promote and facilitate the retrofitting of existing buildings for energy efficiency. This includes thermal insulation, installation of energy-efficient windows, and upgrading heating systems. | District 2 City Hall / TERMOENERGETICA | Homeowners, tenants, building managers, energy service companies | Reduces energy consumption in residential and commercial buildings, a significant source of greenhouse gas emissions in the district. | Lowers energy costs for residents, improves living conditions, and stimulates local green jobs. |
+| Climate Neutrality Digital Twin | A digital twinning solution designed for climate neutrality serves as a powerful tool to create a smarter, more sustainable, and climate-resilient urban environment. Integration of various environmental sensors, including air quality monitors, energy consumption meters, waste management sensors, etc., to collect real-time data on key sustainability indicators. | UTCB, District 2 City Hall | All stakeholders involved | Continuous monitoring of climate-related parameters such as temperature, humidity, and air quality to assess the impact of climate initiatives. racking and analysing energy consumption patterns across different sectors, including residential, commercial, and industrial. | Predicting the potential future impact of climate-related interventions and policy changes on the city's carbon footprint and environmental quality. Analysing the resilience of the city's infrastructure to climate-related events and identifying areas for improvement. |
 
 ## C-1.2: Description of organisation and governance interventions – textual and visual elements
 
@@ -2941,22 +2942,22 @@ Module C-2 "Social and Other Innovation Interventions" consists of a summary tab
 
 C.2.1: Enabling social innovation interventions
 
-|  Intervention name | Description | Responsible entity/ dept./ person | Involved stakeholder | Enabling impact | Co-benefits  |
+| Intervention name | Description | Responsible entity/ dept./ person | Involved stakeholder | Enabling impact | Co-benefits |
 | --- | --- | --- | --- | --- | --- |
-|  Community Climate Action Forums | Establishing forums where citizens can engage in dialogue about climate action, share ideas, and collaborate on community projects. | District 2 City Hall, NGOs | Local residents, NGOs, community groups, environmental experts. | Facilitates community-driven climate action, encouraging local initiatives and projects. | Strengthens community bonds, raises environmental awareness, and fosters a culture of sustainability.  |
-|  Climate neutral neighbourhoods Program | A program to transform neighbourhoods into sustainable communities through energy-efficient housing, community gardens, and local sustainability initiatives. | District 2 City Hall, Universities | Homeowners, local businesses, environmental NGOs, urban development experts. | Encourages energy-efficient living and local sustainability practices. | Reduces energy costs for residents, enhances local biodiversity, and creates greener living spaces.  |
+| Community Climate Action Forums | Establishing forums where citizens can engage in dialogue about climate action, share ideas, and collaborate on community projects. | District 2 City Hall, NGOs | Local residents, NGOs, community groups, environmental experts. | Facilitates community-driven climate action, encouraging local initiatives and projects. | Strengthens community bonds, raises environmental awareness, and fosters a culture of sustainability. |
+| Climate neutral neighbourhoods Program | A program to transform neighbourhoods into sustainable communities through energy-efficient housing, community gardens, and local sustainability initiatives. | District 2 City Hall, Universities | Homeowners, local businesses, environmental NGOs, urban development experts. | Encourages energy-efficient living and local sustainability practices. | Reduces energy costs for residents, enhances local biodiversity, and creates greener living spaces. |
 PRUMÁRIA
 
 Climate Neutrality Action Plan
 
 #
 
-|  Center for Innovation in Sustainability | Creating a dedicated space within an available City Hall facility to serve as a climate neutrality hub. | District 2 City Hall, NGOs | Local residents, school groups, businesses, environmental NGOs, sustainability experts, urban planners. | Acts as a catalyst for community engagement in sustainability efforts. | Educational enhancement, community engagement, innovation and collaboration, economic opportunities.  |
+| Center for Innovation in Sustainability | Creating a dedicated space within an available City Hall facility to serve as a climate neutrality hub. | District 2 City Hall, NGOs | Local residents, school groups, businesses, environmental NGOs, sustainability experts, urban planners. | Acts as a catalyst for community engagement in sustainability efforts. | Educational enhancement, community engagement, innovation and collaboration, economic opportunities. |
 | --- | --- | --- | --- | --- | --- |
-|  Climate Education Workshops | Organising educational workshops for all age groups to increase climate literacy and awareness of sustainable practices. | NGOs | Schools, universities, environmental educators, students, general public. | Increases understanding and awareness of climate change and sustainable living. | Educates future generations, encourages behavioural change, and fosters a culture of environmental responsibility.  |
-|  Urban Greening Projects | Launching projects to increase urban green spaces, including park developments, tree planting initiatives, and green rooftops. | District 2 City Hall, | Local communities, landscaping experts, environmental volunteers, schools. | Boosts urban biodiversity, improves air quality, and mitigates urban heat island effect. | Enhances the aesthetic appeal of the city, provides recreational spaces, and promotes mental well-being.  |
-|  Urban Lab for Green Cities | Developing innovative solutions to address urban challenges and advance climate neutrality. | UrbanizeHub District 2 City Hall | local government, private actors, community | Generates innovative solutions, encourages community engagement, contributes to technological advancements, policy recommendations | Promotes awareness about climate issues and sustainable practices; Encourages the adoption of environmentally friendly practices; Creates economic opportunities  |
-|  Public-Private Partnerships for Sustainability | Facilitating partnerships between the public sector, businesses, and NGOs to launch joint sustainability projects, such as renewable energy installations or sustainable urban development. | District 2 City Hall, private stakeholders | Corporate entities, local government, NGOs, community leaders. | Leverages resources and expertise from various sectors for impactful sustainability projects. | Fosters a collaborative approach to sustainability, accelerates the adoption of green technologies, and promotes economic development through sustainable practices.  |
+| Climate Education Workshops | Organising educational workshops for all age groups to increase climate literacy and awareness of sustainable practices. | NGOs | Schools, universities, environmental educators, students, general public. | Increases understanding and awareness of climate change and sustainable living. | Educates future generations, encourages behavioural change, and fosters a culture of environmental responsibility. |
+| Urban Greening Projects | Launching projects to increase urban green spaces, including park developments, tree planting initiatives, and green rooftops. | District 2 City Hall, | Local communities, landscaping experts, environmental volunteers, schools. | Boosts urban biodiversity, improves air quality, and mitigates urban heat island effect. | Enhances the aesthetic appeal of the city, provides recreational spaces, and promotes mental well-being. |
+| Urban Lab for Green Cities | Developing innovative solutions to address urban challenges and advance climate neutrality. | UrbanizeHub District 2 City Hall | local government, private actors, community | Generates innovative solutions, encourages community engagement, contributes to technological advancements, policy recommendations | Promotes awareness about climate issues and sustainable practices; Encourages the adoption of environmentally friendly practices; Creates economic opportunities |
+| Public-Private Partnerships for Sustainability | Facilitating partnerships between the public sector, businesses, and NGOs to launch joint sustainability projects, such as renewable energy installations or sustainable urban development. | District 2 City Hall, private stakeholders | Corporate entities, local government, NGOs, community leaders. | Leverages resources and expertise from various sectors for impactful sustainability projects. | Fosters a collaborative approach to sustainability, accelerates the adoption of green technologies, and promotes economic development through sustainable practices. |
 
 # C-2.2: Description of social innovation interventions - textual and visual elements
 
@@ -3002,56 +3003,50 @@ Part of these interventions will be implemented to support the main pathways tha
 
 Module C-3 "Financing of Action Portfolio" should contain the list of action portfolios and interventions outlined in Modules B-2, and those from C-1 and C-2 with cost implication to provide a summary list of interventions that need to be unpacked in the Investment Plan.
 
-|  C-3.1: Summary of interventions with cost implication (to be unpacked in Investment Plan)  |   |   |   |   |   |
+| C-3.1: Summary of interventions with cost implication (to be unpacked in Investment Plan) |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- |
-|  Action/ intervention name | Responsible entity and person | Start/end date | Field of action | Impact | Total cost estimated  |
-|  (List action portfolios and interventions from Modules B-2, C-1, and C-2, which have a cost implication) | (Indicate responsible entity and person) | (Indicate start and end date of the activity) | (Indicate the field of action the interventions belong to) | (Indicate impact - i.e., the GHG reduction/ co-benefit) | (Indicate the total costs in €, estimated for the intervention)  |
-|  Construction of new nZEB buildings | District 2 City Hall, Bucharest City Hall, Public Utility Companies, | 2024-2030 | Built environment | Reduction of 2,453 tons CO2/year; Comprehensive adoption of sustainable building codes | €3,302,150  |
-|  Renovation of public buildings | District 2 City Hall, Bucharest City Hall, Public Utility Companies | 2024-2030 | Built environment | Reduction of 1,247 tons CO2/year; Majority of buildings in the district meeting high energy efficiency standards | €5,850,000  |
-|  Reconversion of formal industrial areas | District 2 City Hall, Bucharest City Hall, Public Utility Companies | 2024-2030 | Built environment | Reduction of 30,760 tons CO2/year; Enhanced functionality of | €20,000,000  |
-|   |  |  |  | sustainable buildings |   |
-6
-
-|   |  |  |  | underutilised spaces |   |
+| Action/ intervention name | Responsible entity and person | Start/end date | Field of action | Impact | Total cost estimated |
+| (List action portfolios and interventions from Modules B-2, C-1, and C-2, which have a cost implication) | (Indicate responsible entity and person) | (Indicate start and end date of the activity) | (Indicate the field of action the interventions belong to) | (Indicate impact - i.e., the GHG reduction/ co-benefit) | (Indicate the total costs in €, estimated for the intervention) |
+| Construction of new nZEB buildings | District 2 City Hall, Bucharest City Hall, Public Utility Companies, | 2024-2030 | Built environment | Reduction of 2,453 tons CO2/year; Comprehensive adoption of sustainable building codes | €3,302,150 |
+| Renovation of public buildings | District 2 City Hall, Bucharest City Hall, Public Utility Companies | 2024-2030 | Built environment | Reduction of 1,247 tons CO2/year; Majority of buildings in the district meeting high energy efficiency standards | €5,850,000 |
+| Reconversion of formal industrial areas | District 2 City Hall, Bucharest City Hall, Public Utility Companies | 2024-2030 | Built environment | Reduction of 30,760 tons CO2/year; Enhanced functionality of | €20,000,000 |
+|  |  |  |  | sustainable buildings |  |
+|  |  |  |  | underutilised spaces |  |
 | --- | --- | --- | --- | --- | --- |
-|  Citizen involvement program for sustainable reconversion of public spaces | District 2 City Hall, Bucharest City Hall, Public Utility Companies, NGOs, Universities | 2024-2030 | Built environment | Reduction of 848 tons CO2/year; Active community involvement in urban planning and design | €600,000  |
-|  Reconversion of public spaces for sustainable development | District 2 City Hall, Bucharest City Hall, Public Utility Companies, NGOs, Universities | 2024-2030 | Built environment | Reduction of 11,750 tons CO2/year; Increased number of green spaces across neighbourhoods | €28,000,000  |
-|  Social inclusion program for sustainable development | District 2 City Hall, Bucharest City Hall, Public Utility Companies, NGOs, Universities | 2024-2030 | Built environment | Reduction of 6,242 tons CO2/year; Increased share of people involved in greening projects | €11,858,188  |
-|  Development of educational infrastructure for climate neutral education | District 2 City Hall, Bucharest City Hall, Public Utility Companies, NGOs; | 2024-2030 | Built environment | Reduction of 2,490 tons CO2/year; Increased climate neutrality awareness and skills among population | €18,354,163  |
-|  Extensive moderate energy renovation of multifamily residential buildings in District 2 of Bucharest | District 2 City Hall, Bucharest City Hall, Public Utility Companies, Owners’ associations; | 2024-2030 | Energy systems | Reduction of 245,230 tons CO2/year; Decreased energy consumption and lower emissions from buildings. | €246,109,191  |
-|  Comprehensive energy efficiency and modernisation program targeting educational institutions, public administrative buildings, and cultural heritage sites across District 2, Bucharest | District 2 City Hall, Bucharest City Hall, Public Utility Companies; | 2024-2030 | Energy systems | Reduction of 56,563 tons CO2/year; Widespread use of smart grids and renewable energy sources. | €51,664,235  |
-|  Upgrading the electrical infrastructure to enhance the reliability, efficiency, and intelligence of the electrical grid to | District 2 City Hall, Bucharest City Hall, Public Utility Companies; | 2024-2030 | Energy systems | Reduction of 61,520 tons CO2/year; Decreased energy consumption and lower emissions from buildings. | €26,687,200  |
-7
-
-|  meet current and future demands |  |  |  | Widespread use of smart grids and renewable energy sources |   |
+| Citizen involvement program for sustainable reconversion of public spaces | District 2 City Hall, Bucharest City Hall, Public Utility Companies, NGOs, Universities | 2024-2030 | Built environment | Reduction of 848 tons CO2/year; Active community involvement in urban planning and design | €600,000 |
+| Reconversion of public spaces for sustainable development | District 2 City Hall, Bucharest City Hall, Public Utility Companies, NGOs, Universities | 2024-2030 | Built environment | Reduction of 11,750 tons CO2/year; Increased number of green spaces across neighbourhoods | €28,000,000 |
+| Social inclusion program for sustainable development | District 2 City Hall, Bucharest City Hall, Public Utility Companies, NGOs, Universities | 2024-2030 | Built environment | Reduction of 6,242 tons CO2/year; Increased share of people involved in greening projects | €11,858,188 |
+| Development of educational infrastructure for climate neutral education | District 2 City Hall, Bucharest City Hall, Public Utility Companies, NGOs; | 2024-2030 | Built environment | Reduction of 2,490 tons CO2/year; Increased climate neutrality awareness and skills among population | €18,354,163 |
+| Extensive moderate energy renovation of multifamily residential buildings in District 2 of Bucharest | District 2 City Hall, Bucharest City Hall, Public Utility Companies, Owners’ associations; | 2024-2030 | Energy systems | Reduction of 245,230 tons CO2/year; Decreased energy consumption and lower emissions from buildings. | €246,109,191 |
+| Comprehensive energy efficiency and modernisation program targeting educational institutions, public administrative buildings, and cultural heritage sites across District 2, Bucharest | District 2 City Hall, Bucharest City Hall, Public Utility Companies; | 2024-2030 | Energy systems | Reduction of 56,563 tons CO2/year; Widespread use of smart grids and renewable energy sources. | €51,664,235 |
+| Upgrading the electrical infrastructure to enhance the reliability, efficiency, and intelligence of the electrical grid to | District 2 City Hall, Bucharest City Hall, Public Utility Companies; | 2024-2030 | Energy systems | Reduction of 61,520 tons CO2/year; Decreased energy consumption and lower emissions from buildings. | €26,687,200 |
+| meet current and future demands |  |  |  | Widespread use of smart grids and renewable energy sources |  |
 | --- | --- | --- | --- | --- | --- |
-|  Expansion and enhancement of the public lighting system across green spaces, parks, playgrounds, and parking areas in designated locations | District 2 City Hall, Bucharest City Hall, Public Utility Companies; | 2024-2030 | Energy systems | Reduction of 586 tons CO2/year; Energy efficient public lightning system; Increased safety | €1,603,574  |
-|  Development of a digital awareness and education center as well as training programs to support the understanding and education of companies and citizens regarding climate-neutral smart city concepts and efficient implementation methods | District 2 City Hall, Bucharest City Hall, Public Utility Companies, NGOs, Universities; | 2024-2030 | Energy systems | Reduction of 34,280 tons CO2/year; Widespread adoption of energy-efficient practices and technologies across residential, commercial, and public sectors. | €5,822,068  |
-|  Rehabilitation and reconfiguration of street network to increase transport efficiency and decrease pollution levels. | District 2 City Hall, Bucharest City Hall, Public Utility Companies; | 2024-2030 | Mobility & Transport | Reduction of 86,325 tons CO2/year; Increased efficiency of public transportation | €595,556,582  |
-|  Development of a network of EV charging stations | District 2 City Hall, Bucharest City Hall, Public Utility Companies; | 2024-2030 | Mobility & Transport | Reduction of 5,802 tons CO2/year; Increased ownership and use of electric vehicles | €3,000,000  |
-|  Decrease number of visits to public administration offices through digitalisation | District 2 City Hall, Bucharest City Hall, Public Utility Companies; | 2024-2030 | Mobility & Transport | Reduction of 4,667 tons CO2/year; Reduced commute-related emissions and streamlining government services. Reduced carbon footprint of public services | €3,068,068  |
-|  New parking policy and new residential parking facilities meant to decrease car use and | District 2 City Hall, Bucharest City Hall, Public Utility Companies | 2024-2030 | Mobility & Transport | Reduction of 3,263 tons CO2/year; Comprehensive urban mobility plan fully operational | €2,382,800  |
-8
-
-|  transform parking spaces into public areas |  |  |  |  |   |
+| Expansion and enhancement of the public lighting system across green spaces, parks, playgrounds, and parking areas in designated locations | District 2 City Hall, Bucharest City Hall, Public Utility Companies; | 2024-2030 | Energy systems | Reduction of 586 tons CO2/year; Energy efficient public lighting system; Increased safety | €1,603,574 |
+| Development of a digital awareness and education center as well as training programs to support the understanding and education of companies and citizens regarding climate-neutral smart city concepts and efficient implementation methods | District 2 City Hall, Bucharest City Hall, Public Utility Companies, NGOs, Universities; | 2024-2030 | Energy systems | Reduction of 34,280 tons CO2/year; Widespread adoption of energy-efficient practices and technologies across residential, commercial, and public sectors. | €5,822,068 |
+| Rehabilitation and reconfiguration of street network to increase transport efficiency and decrease pollution levels. | District 2 City Hall, Bucharest City Hall, Public Utility Companies; | 2024-2030 | Mobility & Transport | Reduction of 86,325 tons CO2/year; Increased efficiency of public transportation | €595,556,582 |
+| Development of a network of EV charging stations | District 2 City Hall, Bucharest City Hall, Public Utility Companies; | 2024-2030 | Mobility & Transport | Reduction of 5,802 tons CO2/year; Increased ownership and use of electric vehicles | €3,000,000 |
+| Decrease number of visits to public administration offices through digitalisation | District 2 City Hall, Bucharest City Hall, Public Utility Companies; | 2024-2030 | Mobility & Transport | Reduction of 4,667 tons CO2/year; Reduced commute-related emissions and streamlining government services. Reduced carbon footprint of public services | €3,068,068 |
+| New parking policy and new residential parking facilities meant to decrease car use and | District 2 City Hall, Bucharest City Hall, Public Utility Companies | 2024-2030 | Mobility & Transport | Reduction of 3,263 tons CO2/year; Comprehensive urban mobility plan fully operational | €2,382,800 |
+| transform parking spaces into public areas |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- |
-|  Increased pedestrian mobility by revitalisation urban parks, upgrade of pedestrian underpasses, and expansion of pedestrian-priority areas | District 2 City Hall, Bucharest City Hall, Public Utility Companies; | 2024-2030 | Mobility & Transport | Reduction of 22,859 tons CO2/year; Enhanced urban livability with safer streets for pedestrians and cyclists | €163,409,677  |
-|  Enhancement and expansion of public transport systems with smart technology, new trams, dedicated lanes, and new routes for a cleaner urban travel | District 2 City Hall, Bucharest City Hall, Public Utility Companies; | 2024-2030 | Mobility & Transport | Reduction of 38,183 tons CO2/year; Increased share of public transportation usage (busses and trams) | €1,355,595,683  |
-|  Cycling Masterplan, bike sharing system and extension of cycling network | District 2 City Hall, Bucharest City Hall, Public Utility Companies; | 2024-2030 | Mobility & Transport | Reduction of 9,075 tons CO2/year; Increased facilities and share of bike usage | €75,294,829  |
-|  Rehabilitation of water ways for sustainable development | District 2 City Hall, Bucharest City Hall, Public Utility Companies; | 2024-2030 | Green infrastructure and Nature-based solutions | Reduction of 6,466 tons CO2/year; Mature urban green infrastructure contributing to microclimate regulation | €68,300,000  |
-|  Development of green roofs | District 2 City Hall, Bucharest City Hall, Public Utility Companies; | 2024-2030 | Green infrastructure and Nature-based solutions | Reduction of 9,528 tons CO2/year; Mature urban green infrastructure contributing to microclimate regulation | €750,000  |
-|  Rehabilitation of parks and development of sustainable green public spaces to incentivise pedestrian mobility | District 2 City Hall, Bucharest City Hall, Public Utility Companies; | 2024-2030 | Green infrastructure and Nature-based solutions | Reduction of 4,142 tons CO2/year; Green space expansion | €322,976,908  |
-|  New waste sorting infrastructure to reduce energy consumption and increase waste | District 2 City Hall, Bucharest City Hall, Public Utility Companies; | 2024-2030 | Waste and circular economy | Reduction of 9,619 tons CO2/year; Significant reduction in waste sent to landfills. Improved selective | €42,080,351  |
+| Increased pedestrian mobility by revitalisation urban parks, upgrade of pedestrian underpasses, and expansion of pedestrian-priority areas | District 2 City Hall, Bucharest City Hall, Public Utility Companies; | 2024-2030 | Mobility & Transport | Reduction of 22,859 tons CO2/year; Enhanced urban livability with safer streets for pedestrians and cyclists | €163,409,677 |
+| Enhancement and expansion of public transport systems with smart technology, new trams, dedicated lanes, and new routes for a cleaner urban travel | District 2 City Hall, Bucharest City Hall, Public Utility Companies; | 2024-2030 | Mobility & Transport | Reduction of 38,183 tons CO2/year; Increased share of public transportation usage (busses and trams) | €1,355,595,683 |
+| Cycling Masterplan, bike sharing system and extension of cycling network | District 2 City Hall, Bucharest City Hall, Public Utility Companies; | 2024-2030 | Mobility & Transport | Reduction of 9,075 tons CO2/year; Increased facilities and share of bike usage | €75,294,829 |
+| Rehabilitation of water ways for sustainable development | District 2 City Hall, Bucharest City Hall, Public Utility Companies; | 2024-2030 | Green infrastructure and Nature-based solutions | Reduction of 6,466 tons CO2/year; Mature urban green infrastructure contributing to microclimate regulation | €68,300,000 |
+| Development of green roofs | District 2 City Hall, Bucharest City Hall, Public Utility Companies; | 2024-2030 | Green infrastructure and Nature-based solutions | Reduction of 9,528 tons CO2/year; Mature urban green infrastructure contributing to microclimate regulation | €750,000 |
+| Rehabilitation of parks and development of sustainable green public spaces to incentivise pedestrian mobility | District 2 City Hall, Bucharest City Hall, Public Utility Companies; | 2024-2030 | Green infrastructure and Nature-based solutions | Reduction of 4,142 tons CO2/year; Green space expansion | €322,976,908 |
+| New waste sorting infrastructure to reduce energy consumption and increase waste | District 2 City Hall, Bucharest City Hall, Public Utility Companies; | 2024-2030 | Waste and circular economy | Reduction of 9,619 tons CO2/year; Significant reduction in waste sent to landfills. Improved selective | €42,080,351 |
 PRIMÁRIA
 Climate Neutrality Action
 Plan
 9
 
-|  management capabilities |  |  |  | waste collection facilities |   |
+| management capabilities |  |  |  | waste collection facilities |  |
 | --- | --- | --- | --- | --- | --- |
-|  Public campaigns to reduce waste and increase recicling percentage among residents | District 2 City Hall, Bucharest City Hall, Public Utility Companies | 2024-2030 | Waste and circular economy | Reduction of 13,203 tons CO2/year; Compliance with waste reduction targets | €1,150,000  |
-|  Other investments | District 2 City Hall, Bucharest City Hall, Public Utility Companies; | 2024-2030 | Energy systems | Reduction of 51,420 tons CO2/year; Enhanced resilience and sustainability of the urban environment | €10,000,000  |
-|  Cross-cutting activities for social innovation, governance, learning and capabilities, democracy/participation (including activities from C-1 and C-2). | All stakeholders foreseen for the CNAP implementation | 2024-2030 | Soft interventions | Supporting the transition to climate neutrality. Will foster an inclusive, knowledgeable, and engaged community that actively contributes to achieving sustainability goals. | €10,000,000  |
+| Public campaigns to reduce waste and increase recycling percentage among residents | District 2 City Hall, Bucharest City Hall, Public Utility Companies | 2024-2030 | Waste and circular economy | Reduction of 13,203 tons CO2/year; Compliance with waste reduction targets | €1,150,000 |
+| Other investments | District 2 City Hall, Bucharest City Hall, Public Utility Companies; | 2024-2030 | Energy systems | Reduction of 51,420 tons CO2/year; Enhanced resilience and sustainability of the urban environment | €10,000,000 |
+| Cross-cutting activities for social innovation, governance, learning and capabilities, democracy/participation (including activities from C-1 and C-2). | All stakeholders foreseen for the CNAP implementation | 2024-2030 | Soft interventions | Supporting the transition to climate neutrality. Will foster an inclusive, knowledgeable, and engaged community that actively contributes to achieving sustainability goals. | €10,000,000 |
 
 # 5 Outlook and next steps
 
@@ -3100,170 +3095,168 @@ O
 Annex – Database with 25 actions proposed for this Action Plan and GHG inventory and calculations.
 
 1
-|  Domeni | Calculation Date | 12/10/08 | Documentation/Analysis | Implementation Date (continued 2017/04/19) (included 12/10/08) | Electrical energy Energy (Ns Diesel 203. Gasoline 2.36a-fuel 2C Energy produced increase in electrical energy  |
-| --- | --- | --- | --- | --- | --- |
-|  Bulk Environment | Buildings | 1. Construction of new n210 buildings | Construction of n210 plus housing for young people - CEL Rounddow Boulevard | 5,202,100 |   |
-|  1 | 1 | 1 | 1 | 5,000,000 | 5,000  |
-|  Bulk Environment | Buildings | 2. Renovation of public buildings | Repairs, modernisation, equipping and thermal rehabilitation works of the Justice Auditorium, Domino Pumper Boulevard, no. 5, vector 2. Bucharest municipality | 5,050,000 |   |
-|  1 | 2 | 2 | 2 | 5,000,000 | 5,000  |
-|  Bulk Environment | IPPU | 3. Recoveries of formal industrial areas | Complex project for the recovervion and valorisation of the Obor -Electronics Industrial area by means of an opportunity study, urban planning regulations and public space | 5,000,000 |   |
-|  Bulk Environment | IPPU |   | Complex project for the conversion and valorisation of the potential of the URBAN INCORE. If Balura Romiédi area through an opportunity study, urban planning regulations | 5,000,000 |   |
-|  Bulk Environment | IPPU | Complex project of recovervion and development of the main urban pole Barba Vilcânescu - Gheorghe Tjitsiu through an opportunity study, urban planning regulation and public space planning | 5,000,000 |  |   |
-|  Bulk Environment | IPPU | Complex project of recovervion and development of the main urban pole Partnani through an opportunity study, urban planning regulation and public space planning | 5,000,000 |  |   |
-|  1 | 1 | 1 | 1 | 10,000,000 | 10,000  |
-|  Bulk Environment | AFOLU | 4. Citizen involvement program for sustainable | Programme for the revitalisation of small abandoned public spaces (in partnership with professional associations/NGOs active in the field) | 500,000 |   |
-|  Bulk Environment | AFOLU | recoveries of public spaces | Partnerships with owners' associations to develop green spaces in neighbourhoods | 500,000 |   |
-|  1 | 2 | 2 | 2 | 500,000 | 5,000  |
-|  Bulk Environment | Buildings | 5. Recoveries of public spaces for sustainable development | Pilot project to reconfigure the spaces between collective housing in the 'aerobic area: community green spaces, sports facilities, children's playgrounds, pedestrian walkers | 5,000,000 |   |
-|  Bulk Environment | Buildings |   | Pilot project for the reconfiguration of spaces between collective housing in the area of B-dul Ferdinand - Str. Căminului: community green spaces, sports facilities, children's playgrounds, pedestrian walkers | 500,000 |   |
-|  Bulk Environment | Buildings | Pilot project for the reconfiguration of spaces between collective housing in Fbeveca district: community green spaces, sports facilities, children's playgrounds, pedestrian walkers | Pilot project for the reconfiguration of spaces between collective housing in Fbeveca district: community green spaces, sports facilities, children's playgrounds, pedestrian walkers | 7,500,000 |   |
-|  Bulk Environment | Buildings | Pilot project for the reconfiguration of spaces between collective buildings in the Panteliman district: community green spaces, sports facilities, children's playgrounds, pet | 20,000,000 |  |   |
-|  Bulk Environment | Buildings | Reconfiguration programme of inter-block spaces in collective housing areas | 5,000,000 |  |   |
-|  1 | 1 | 1 | 1 | 10,000,000 | 10,000  |
-|  Bulk Environment | Buildings | 6. Social inclusion program for sustainable development | Weliamenate - Co-creating sustainable people contract neighbourhoods through urban regeneration | 363,125 | 2,000  |
-|  Bulk Environment | Buildings |   | DivelyCity - The power of diversity and social inclusion as a means to reduce air pollution and achieve the green urban connection in climate neutral cities | 10,794,875 | 4,000  |
-|  Bulk Environment | Buildings | Refinementation - The next generation of green, resilient and socially inclusive smart cities | 700,188 | 1,000 | 5,900  |
-|  1 | 2 | 2 | 2 | 11,058,188 | 7,000  |
-|  Bulk Environment | Buildings | 7. Development of educational infrastructure | Construction of a small nursery for maximum 4 groups/40 children | 2,007,067 | 1,250  |
-|  Bulk Environment | Buildings |   | Construction of nursery with 110 plants | 4,353,607 | 1,500  |
-|  Bulk Environment | Buildings | for climate neutral education | Complementary services for kindergarten 137 | 433,715 | 1,150  |
-|  Bulk Environment | Buildings | Equipping with furniture, teaching materials and digital equipment of pre-university education units in Sector 2 | 12,500,774 | 2,200 | 1,600  |
-|  1 | 2 | 2 | 2 | 18,354,163 | 6,100  |
-|  Domains | Calculation Domain | ACTIONS | Interventions/projects | Implementation cost estimated (in thousands BUDGET - BUDGET) | Electrical x Energy (Nc Diesel 201 Gasoline 2 Bio-fuel 2C Energy pros increase in electrical energy  |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Energy Systems | Buildings |  | Moderate Energy Renovation of Multifamily Residential Buildings in District 2 of Bucharest Municipality III.31, Rascola Street from 190 | 12,459,200 | 11,819 | 64,513 | 0 | 0 | 0 | 17,269  |
-|  Energy Systems | Buildings |  | Moderate Energy Renovation of multi-family residential buildings in District 2 of Bucharest, Block 31, sc. 2, str. Rascola din 1907 nr. 15 | 662,800 | 2,479 | 9,273 | 0 | 0 | 0 | 919  |
-|  Energy Systems | Buildings |  | Moderate Energy Renovation of multi-family residential buildings in District 2 of Bucharest, Block 31, sc. 2, str. Rascola din 1907 nr. 15 | 844,400 | 2,885 | 10,622 | 0 | 0 | 0 | 1,170  |
-|  Energy Systems | Buildings |  | Moderate Energy Renovation of multi-family residential buildings in District 2 of Bucharest - Bl.17, Rausen Street, Nr. 5 | 3,527,607 | 5,876 | 23,776 | 0 | 0 | 0 | 4,889  |
-|  Energy Systems | Buildings |  | Moderate Energy Renovation of multi-family residential buildings in District 2 of Bucharest - Bl.466, Sachearie Visarion, nr.19 | 5,376,573 | 7,004 | 25,328 | 0 | 0 | 0 | 7,452  |
-|  Energy Systems | Buildings |  | Moderate Energy Renovation of multi-family residential buildings in District 2 of Bucharest - Bl.466, Steve Stefanescu Stefan nr. 8 | 5,376,573 | 9,004 | 28,328 | 0 | 0 | 0 | 7,452  |
-|  Energy Systems | Buildings | 8. Extensive moderate energy renovation of multi-family residential buildings in Sector 2 of Bucharest | Moderate Energy Renovation of multi-family residential buildings in Sector 2 of Bucharest - Block H16, Sos. Dobroesti, nr. 16 | 2,432,600 | 5,878 | 21,057 | 0 | 0 | 0 | 3,649  |
-|  Energy Systems | Buildings | energy renovation of multi-family residential buildings in Sector 2 of Bucharest - Block H16, Sos. Dobroesti, nr. 16 | 503,200 | 923 | 10,066 | 0 | 0 | 0 | 697 | 649  |
-|  Energy Systems | Buildings | multifamily residential buildings in Sector 2 of Bucharest | Moderate Energy Renovation of multi-family residential buildings in Sector 2 of Bucharest - Block H17, Sos. Dobroesti, Nr. 18 | 382,800 | 688 | 8,735 | 0 | 0 | 0 | 531  |
-|  Energy Systems | Buildings | energy efficiency of blocks in Sector 2 | Moderate Energy Renovation of multi-family residential buildings in Sector 2 of Bucharest Bl.31, Sc. 3, Str. Rascola din 1907, nr. 15 | 702,600 | 668 | 15,349 | 0 | 0 | 0 | 974  |
-|  Energy Systems | Buildings | Bucharest | D18 - Energy efficiency of 32 blocks of flats | 6,950,308 | 7,518 | 35,351 | 0 | 0 | 0 | 9,633  |
-|  Energy Systems | Buildings |  | Positive Energy District pilot - Creation of Positive Energy District pilot: Traian Sports High School, residential buildings | 15,000,000 | 13,492 | 55,815 | 0 | 0 | 0 | 20,790  |
-|  Energy Systems | Buildings |  | Programme for the modernization and rehabilitation of lifts in blocks in Sector 2 | 10,000,000 | 12,328 |  | 0 | 0 | 0 | 0  |
-|  Energy Systems | Buildings |  | Energy efficiency of blocks in Sector 2 | 50,000,000 | 50,640 | 175,052 | 0 | 0 | 0 | 69,301  |
-|  Energy Systems | Buildings |  | Programme for the modernization and rehabilitation of lifts in blocks in Sector 2 | 101,086,009 | 117,706 | 335,189 | 0 | 0 | 0 | 140,108  |
-|  Energy Systems | Buildings |  | Pilot project for residential and public buildings: solar thermal panel system for heating and hot water supply | 2,000,000 | 4,466 | 18,842 | 0 | 0 | 0 | 200  |
-|  Energy Systems | Buildings |  | Programme V - Multiannual local programme for increasing the energy performance of 83 targets in Sector 2 of Bucharest (30% reducti | 24,983,000 | 37,782 | 88,993 | 0 | 0 | 0 | 40,000  |
-|  Energy Systems | Buildings |  | Preparation of technical and economic documents for increasing the energy efficiency of residential blocks in Sector 2 for 379 blocks | 2,175,721 | 5,000 | 11,000 | 0 | 0 | 0 | 0  |
-|  0 | 0 | 0 | 0 | 246,109,191 | 909,384 | 952,289 | 0 | 0 | 0 | 327,039  |
-|  Energy Systems | Buildings |  | Energy efficiency through rehabilitation and modernization: Ferdinand I Secondary School | 1,397,020 | 4,085 | 14,494 | 0 | 0 | 0 | 1,556  |
-|  Energy Systems | Buildings |  | Energy efficiency through rehabilitation/modernization Ion I.C. Brătianu Technological High School | 1,241,304 | 3,630 | 12,878 | 0 | 0 | 0 | 1,720  |
-|  Energy Systems | Buildings |  | Energy efficiency through rehabilitation and modernization: Lucian Blaga High School | 1,139,870 | 3,333 | 11,826 | 0 | 0 | 0 | 1,580  |
-|  Energy Systems | Buildings | 9. Comprehensive | Thermal rehabilitation of the Public Directorate for Personal and Civil Status Records Sector 2 Bucharest, 19 Olari Street | 680,643 | 1,990 | 7,062 | 0 | 0 | 0 | 2,923  |
-|  Energy Systems | Buildings | energy efficiency and modernization of the Public Directorate for Personal and Civil Status Records Sector 2 Bucharest, 19 Olari Street | Consolidation, rehabilitation and modernization: Lucian Blaga High School | 1,139,870 | 3,333 | 11,826 | 0 | 0 | 0 | 1,580  |
-|  Energy Systems | Buildings | 8. Energy efficiency and modernization of the Public Directorate for Personal and Civil Status Records Sector 2 Bucharest, 19 Olari Street | Consolidation, rehabilitation and modernization: Lucian Blaga High School | 1,139,870 | 3,333 | 11,826 | 0 | 0 | 0 | 1,580  |
-|  Energy Systems | Buildings | energy efficiency and modernization of the Public Directorate for Personal and Civil Status Records Sector 2 Bucharest, 19 Olari Street | Consolidation, rehabilitation and modernization: Lucian Blaga High School | 1,139,870 | 3,333 | 11,826 | 0 | 0 | 0 | 1,580  |
-|  Energy Systems | Buildings | energy efficiency and modernization of the Public Directorate for Personal and Civil Status Records Sector 2 Bucharest, 19 Olari Street | 1,139,870 | 3,333 | 11,826 | 0 | 0 | 0 | 0 | 1  |
-|  Energy Systems | Buildings | energy efficiency and modernization of the Public Directorate for Personal and Civil Status Records Sector 2 Bucharest, 19 Olari Street | 1,139,870 | 3,333 | 11,826 | 0 | 0 | 0 | 0 | 1  |
-|  Domains | Calculation Domain | ACTIONS | Interventions/projects | Implementation and estimates (ESTIMATED HUDGET - EURM) | Electrical + Energy (Nc Diesel 201)-Gasoline 2 Bio-fuel 2C Energy product increase in energy  |   |   |   |   |
+| Domeni | Calculation Date | 12/10/08 | Documentation/Analysis | Implementation Date (continued 2017/04/19) (included 12/10/08) | Electrical energy Energy (Ns Diesel 203. Gasoline 2.36a-fuel 2C Energy produced increase in electrical energy |  |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Mobility and Transport | Transport |  | DALI - (capital repairs, road system rehabilitation) Streets, Alleys, Parking lots | 2,848,107 | 37 | 0 | 215 | 105 | 304  |
-|  Mobility and Transport | Transport |  | Rehabilitation At. Circulus nr. 2, bi: 2 | 239,800 | 3 | 0 | 18 | 9 | 26  |
-|  Mobility and Transport | Transport |  | Rehabilitation At. Petre Antonescu | 215,800 | 3 | 0 | 16 | 8 | 23  |
-|  Mobility and Transport | Transport |  | Multi-annual programme for the rehabilitation and upgrading of secondary or local streets | 6,964,296 | 90 | 0 | 525 | 256 | 743  |
-|  Mobility and Transport | Transport |  | Rehabilitation of the road system on Dimitrie Pompeiu Boulevard, Petricani Road, Lucul Tei Boulevard, Maica Domnului Street, Rehvierii Street and Tu | 79,978,536 | 951 | 0 | 5,050 | 2,700 | 24,000  |
-|  Mobility and Transport | Transport |  | Upgrading of the sections of municipal road between and between*, works that will take place simultaneously, in correlation with and in addition to tl | 150,000,000 | 1,939 | 0 | 11,315 | 1,505 | 16,000  |
-|  Mobility and Transport | Transport |  | Uneven road overpass over the Balcului Street CF | 5,500,000 | 0 | 0 | 4,485 | 3,215 | 587  |
-|  Mobility and Transport | Transport | 13. Rehabilitation and reconfiguration of street network to increase transport efficiency and decrease pollution levels. | Uneven road overpass over the Andronache Road CF | 5,500,000 | 0 | 0 | 2,465 | 2,215 | 587  |
-|  Mobility and Transport | Transport |  | Construction of underpass Ferdinand I Boulevard - Obor Garii Boulevard - Helada intre Vii Street | 69,158,905 | 0 | 0 | 4,925 | 4,425 | 7,377  |
-|  Mobility and Transport | Transport |  | Construction of overpass Soseaua Fundeni - Gheorghitei Street | 136,705,138 | 0 | 0 | 110,980 | 79,910 | 14,582  |
-|  Mobility and Transport | Transport |  | Underpass Plata lancului on Mihai Bravu road | 50,000,000 | 0 | 0 | 40,591 | 29,227 | 5,333  |
-|  Mobility and Transport | Transport |  | Petricani Node - closing of the median ring, phase 5f, contract under signature | 5,000,000 | 0 | 0 | 4,059 | 2,923 | 533  |
-|  Mobility and Transport | Transport |  | Modernization and rehabilitation of road sections of Sos. Stefan cel Mare and Bd. Mihai Bravu, located on the territory of Sector 2, between the limit t | 30,650,000 | 396 | 0 | 2,312 | 1,125 | 12,000  |
-|  Mobility and Transport | Transport |  | Rehabilitation of the road system: Socului Alley, Atletilor Street, Carausilor Street, Constantin Georgian Street, Dumbrava Roise Street, Geamandurit St | 12,500,000 | 162 | 0 | 943 | 459 | 1,333  |
-|  Mobility and Transport | Transport |  | Rehabilitation of the Obor area, urban regeneration, (cancellation of car lanes, improvement of the Alexa-cu Ceas, pedestrian passage, awnings, creat | 6,200,000 | 80 | 0 | 468 | 228 | 2,000  |
-|  Mobility and Transport | Transport |  | Urban Traffic Control Centre and Intersection Priority Signalling | 35,000,000 | 452 | 0 | 2,640 | 1,284 | 3,000  |
-|  11 | 12 | 13 | 14 | 595,556,582 | 4,113 | 0 | 193,952 | 125,807 | 0  |
-|  Mobility and Transport | Transport | 14. Development of a network of EV charging stations | Integrated electric charging station system for cars and scooters | 5,000,000 | 10,000 | 0 | 8,050 | 7,600 | 20,000  |
-|  Mobility and Transport | Transport | 15. Decrease number of visits to public administration offices through digitalization. | OBS. Implement measures to streamline the work processes related to the relationship between the institution and the owner/ associations, both from a back-office and front-office perspective, in order to reduce bureaucracy. OBS. Cultivation and development of knowledge, competences and skills for 3D employees of the mayor's office to use and administer the IT platform developed in the project, through participation in training programmes, including by addressing the themes of sustainable development, equal opportunities, non-discrimination and gender equality, to use and administer the implemented IT platform. OBS. Develop standard mechanisms and procedures for decision support and long-term strategic planning in line with the SCAP, through the development of the Sector 2 Digital Transformation Strategy." | 794,437 |  |  |  |  |   |
-|  Mobility and Transport | Transport | 15. Decrease number of visits to public administration offices through digitalization. | OSS. Improve communication and information flow between the departments of the Municipality of Sector 2 of Bucharest and in its relationship with citizens by implementing a document management system, electronic registration and electronic archive. | 758,631 |  |  |  |  |   |
-|  Mobility and Transport | Transport |  | OSS. Strengthen the management capacity of the City Hall of Sector 2 of the Municipality of Bucharest, for the performance of its functions, by carrying out an ex-post analysis for the Local Council Decisions drafted/approved since 2016. The objective is to effectively assess the effects of the implementation of the Local Council Decisions." | 758,631 |  |  |  |  |   |
-|  Mobility and Transport | Transport |  | Digitalisation of the DRSPSC Sector 2 service, including electronic archiving | 15,000 |  |  |  |  |   |
-|  Mobility and Transport | Transport |  | Diversification of the services provided to the citizens of Sector 2 through the creation of a respite centre and improvement of the social services infra | 1,000,000 |  |  |  |  |   |
-|  Mobility and Transport | Transport |  | Implementation of the digital transformation strategy for Sector 2. | 500,000 |  |  |  |  |   |
-|  16 | 16 | 16 | 17 | 5,564,064 | 2000 | 8700 | 8000 | 4,200 |   |
-|  Mobility and Transport | Transport | 16. New parking policy and new residential parking facilities meant to decrease car use and transform parking spaces into public areas. | Road system rehabilitation. Armasul Marcu street, areas of collective housing blocks no. 9, 11, 13 | 252,800 |  |  |  |  |   |
-|  Mobility and Transport | Transport |  | Outlining a residential parking policy | 50,000 |  |  |  |  |   |
-|  Mobility and Transport | Transport |  | Parking Day - multi-year project to promote the alternative use of parking spaces (the value of a parking space as public space). Obor area or on a stre | 80,000 |  |  |  |  |   |
-|  Mobility and Transport | Transport |  | Rural mobility and infrastructure. Promoting smart mobility both through the development of a multi-red parking area dedicated to the development | 1,000,000 |  |  |  |  |   |
-|  18 | 18 | 18 | 19 | 2,382,800 | 2,000 | 0 | 4,700 | 6,558 | 0  |
-|  Mobility and Transport | Transport |  | Rehabilitation of pathways and running tracks in Monarilor Park | 13,500,000 |  |  |  | 5,000 | 3,800  |
-|  Mobility and Transport | Transport |  | Urban regeneration, rehabilitation of Calea mosilor - Vasile area | 2,000,000 |  |  |  | 1,000 | 2,300  |
-|  Mobility and Transport | Transport | 17. Increased pedestrian mobility by revitalisation urban parks, upgrade of | Installation of awnings, closure of passage, repair of floors and pedestrian pedestrian pedestrian passage Obor - 4 pieces | 735,249 |  |  |  |  | 800  |
-|  Mobility and Transport | Transport | pedestrian priority areas. | Rehabilitation of interior alleys and installation of rainwater collection system Motodrom Park | 524,428 |  |  |  |  | 500  |
-|  Mobility and Transport | Transport |  | Replacement of escalators in Mojiler pedestrian passage | 350,000 |  |  |  |  | 200  |
-|  Mobility and Transport | Transport |  | Introduction of new priority areas for pedestrians in the city centre (pedestrian and mixed-use areas) Ioanei-Verona area, Old Mojiler Street and Stre | 141,000,000 |  |  |  | 8,000 | 2,000  |
-|  Mobility and Transport | Transport |  | Reconfiguration of the Obor area - transformation into a pedestrian priority area The area between Obor Market, Sector 2 City Hall and Obor Shop | 500,000 |  |  |  | 500 | 800  |
-|  Mobility and Transport | Transport |  | Modernization, pedestrianization and reconfiguration of the profile of Dimitrie Pompeiu Avenue and Herastrau Station Street | 5,000,000 |  |  |  | 2,000 | 2,000  |
-|  12 | 17 | 17 | 18 | 143,409,677 | 0 | 0 | 50,457 | 27,698 | 0  |
-|  Mobility and Transport | Transport |  | Smart&Green Mobility integrated ITS system for the Bucharest-Ifos region - Passenger information at public transport stations - 425 public transport | 1,461,861 |  |  |  |  | 5,000  |
-|  Mobility and Transport | Transport |  | Improvement of tram infrastructure | 216,000,000 |  |  |  |  | 8,000  |
-|  Mobility and Transport | Transport |  | Purchase of tram rolling stock | 635,000,000 |  |  |  |  |   |
-|  Mobility and Transport | Transport |  | Improvement of automation systems for tram services | 183,500,000 |  |  |  |  | 6,000  |
-|  Mobility and Transport | Transport |  | Investment in high-speed tram/LRT (LRT) | 1,046,000 |  |  |  |  | 800  |
-|  Mobility and Transport | Transport | 18. Enhancement and expansion of public | Priority lanes for public transport | 45,000,000 |  |  |  |  | 2,000  |
-|  Mobility and Transport | Transport | transport systems with smart technology, new | Modernisation and extension of the intelligent traffic light system (Bucharest-Ifos Traffic Management) and prioritisation of public transport vehicles | 13,537,822 |  |  |  |  | 5,400  |
-|  Mobility and Transport | Transport | trams, dedicated lanes, and new routes for a cleaner urban travel. | Electric minibuses for pupils | 1,850,000 |  |  |  |  | 3,800  |
-|  Mobility and Transport | Transport |  | Modernisation of the tram line on Maica Domnului and Lacul Tei streets from Rehvierii street to Lacul Tei loop | 35,000,000 |  |  |  |  | 2,000  |
-|  Mobility and Transport | Transport |  | Rehabilitation of the road system and tram line on Chisinau Boulevard, between Pantelimon Road and Basarabia Boulevard | 100,000,000 |  |  |  |  | 4,000  |
-|  Mobility and Transport | Transport |  | Integrated urban mobility and priority system for public transport - Introduction of priority systems in traffic light intersections for local transport, cnc | 8,000,000 |  |  |  |  | 3,200  |
-|  Mobility and Transport | Transport |  | Extension of the tramway infrastructure 8D Chisinau -Plata Delfinului - Disamna Ghica - Petricani - Pipera, in collaboration with Bucharest City Hall | 35,000,000 |  |  |  |  | 2,000  |
-|  Mobility and Transport | Transport |  | Extension of the tramway line by approximately 5.9 km | 30,000,000 |  |  |  |  | 1,200  |
-|  19 | 19 | 19 | 19 | 1,353,595,683 | 50,000 | 0 | 70,832 | 42,052 | 0  |
-|  Mobility and Transport | Transport | 19. Extension and modernisation of cycling infrastructure - Cycling Masterplan, bike | Bike lanes in Sector 2 of Bucharest - 36,45 km bike lane | 9,623,666 |  |  |  |  |   |
-|  Mobility and Transport | Transport | sharing system and extension of cycling | Establishment of the utility network for bicycles Colentina Road and Petricani Road - phase 1, Stefan Cel Mare Road, Mihai Bravu Boulevard, Barbu VD | 50,000,000 |  |  |  |  |   |
-|  Mobility and Transport | Transport |  | Introduction of a bicycle rental system | 15,000,000 |  |  |  |  | 5000  |
-|  Mobility and Transport | Transport |  | Master plan for bicycle lanes in Bucharest | 171,163 |  |  |  |  |   |
-|  Mobility and Transport | Transport |  | Development of a system of bicycle lanes to connect the Obor "Nibara lui Avan" area with the Pipera area | 1,500,000 |  |  |  |  |   |
-|  19 | 19 | 19 | 19 | 75,294,829 | 0 | 0 | 20,000 | 15,000 | 0  |
-|  Domains |   | Calculation Domain | Inclusion/Exclusion | Exclusion | Exclusion | Exclusion | Exclusion | Exclusion | Exclusion  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Group I: Introduction and N AFOLU |   | 20. Rehabilitation of motor ways for sustainable development. | Refurbishment of the artificial river in Plumbukta Park | 200,000 | 1,000 | 0 | 600 | 0 | 0  |
-|  Group II: Introduction and N AFOLU |   | 21. Rehabilitation of motor ways for sustainable development. | Zoological Urban Plan - development of the banks of the lake in Sector 2 of the capital | 100,000 | 0 | 0 | 3,380 | 0 | 0  |
-|  Group III: Introduction and N AFOLU |   | 22. Development of green roofs | Complex program for the improvement of the banks - stage I Funders Lakes and Dolinveys lakes (including Funders lake island)* | 18,000,000 | 7,000 | 0 | 3,058 | 0 | 0  |
-|  Group IV: Introduction and N AFOLU |   | 23. Development, reconfiguration, systematization of the areas (shores) related to the lakes located on the administrative area of Sector 2 (Section I - Tel Lake area, Section II - Plumbukta Lake a | 50,000,000 | 6,383 | 0 | 4,000 | 0 | 0 | 0  |
-|  20 | 22 | 23 | 24 | 25 | 26,350,000 | 14,500 | 0 | 14,750 | 0  |
-|  Group I: Introduction and N Buildings |   | 25. Development of green roofs | Landscaping of green terraces on the roofs of apartment buildings. Pilot project: Colentina district, Floreasca district | 500,000 | 8,750 | 19,500 | 0 | 0 | 0  |
-|  Group II: Introduction and N Buildings |   | 26. Development of green roofs | Study for the creation of green terraces above the new parking garages in the Sector | 50,000 | 800 | 4,300 | 0 | 0 | 0  |
-|  Group III: Introduction and N Buildings |   | 27. Development of green roofs | Study for transforming the terraces of 100 collective dwellings in Sector 2 into green terraces (neighbourhood Floreasca district)* | 200,000 | 4,300 | 9,500 | 0 | 0 | 0  |
-|  20 | 22 | 23 | 24 | 25 | 26,350,000 | 14,500 | 0 | 0 | 0  |
-|  Group I: Introduction and N Transport |   | 25. Rehabilitation of green areas - Lot 1 | 691,429 | 28 | 0 | 8 | 8 | 0 | 118  |
-|  Group II: Introduction and N Transport |   | 26. Green areas restoration - Lot 2 | 1,282,496 | 51 | 0 | 14 | 15 | 0 | 218  |
-|  Group III: Introduction and N Transport |   | 27. + Execution of landscaping adjacent to Petricani Park - Petricani Alley | 530,486 | 21 | 0 | 6 | 6 | 0 | 90  |
-|  Group IV: Introduction and N Transport |   | 28. Execution and redevelopment - Stolarne Park | 1,504,803 | 63 | 0 | 17 | 18 | 0 | 206  |
-|  Group V: Introduction and N Transport |   | 29. Design and execution of redevelopment - Gradino Icoanei Park | 703,949 | 28 | 0 | 8 | 8 | 0 | 120  |
-|  Group VI: Introduction and N Transport |   | 30. Design and execution of landscaping in the area of Aventura and Tirofiana National Park | 500,519 | 24 | 0 | 7 | 7 | 0 | 101  |
-|  Group VII: Introduction and N Transport |   | 31. Redevelopment of Christigil a Miha Bravo red and recreation area | 203,936 | 8 | 0 | 2 | 2 | 0 | 14  |
-|  Group VIII: Introduction and N Transport |   | 32. Rehabilitation of parks and development of sustainable green public spaces to incentivise pedestrian mobility. | 27. + Execution Landscaping and Architectural Landscaping of Ricinului Street Stable | 250,800 | 9 | 0 | 3 | 3 | 39  |
-|  Group IX: Introduction and N Transport |   | 33. Rehabilitation of partnership opportunities with the owners of abandoned land in the central area, in order to develop public green spaces | 200,000 | 8 | 0 | 2 | 2 | 0 | 34  |
-|  Group X: Introduction and N Transport |   | 34. Rehabilitation of the National Park | 15,000,000 | 600 | 0 | 164 | 172 | 0 | 2,550  |
-|  Group XI: Introduction and N Transport |   | 35. Redevelopment/modernisation of Plumbukta Park I, Plumbukta II and Plumbukta Island, MDB project | 160,000,000 | 6,400 | 0 | 1,752 | 1,838 | 0 | 27,200  |
-|  Group XII: Introduction and N Transport |   | 36. Creation of urban micro-forests | 150,000 | 6 | 0 | 2 | 2 | 0 | 26  |
-|  Group III: Introduction and N Transport |   | 37. Extension and redevelopment of existing parks (Circului, Verdi, Valea Saulei) | 100,000,000 | 4,000 | 0 | 1,095 | 1,149 | 0 | 17,000  |
-|  Group IV: Introduction and N Transport |   | 38. Restoration of green spaces and creation of relaxation areas instead of garages in the Zlatesc - Matei Voievod middle area | 1,600,000 | 64 | 0 | 18 | 18 | 0 | 272  |
-|  Group V: Introduction and N Transport |   | 39. Establishment of a new park and development of Morosni park by expropriation | 4,000,000 | 160 | 0 | 44 | 46 | 0 | 680  |
-|  Group VI: Introduction and N Transport |   | 40. Integrated urban regeneration project in the Dibor area by creating a railway museum complex. A system of green spaces and landscaping of the Dibor railway station square | 35,000,000 | 1,400 | 0 | 383 | 402 | 0 | 5,950  |
-|  Group VII: Introduction and N Transport |   | 41. Creation of vegetation curtains along the secondary streets (green area), including a public private partnership in this respect | 1,214,490 | 49 | 0 | 13 | 14 | 0 | 208  |
-|  22 | 22 | 23 | 24 | 25 | 26,350,000 | 14,500 | 0 | 14,750 | 0  |
-|  Domains | Calculation Domain | ACTIONS | Interventions/projects | Negative values (not response) (ESTIMATED BUDGET - EURO) | Electrical & Energy (Ns Diesel 201 Gasoline 2 Bio-fuel 2E Energy prc increase in energy consumption  |   |   |   |   |   |
+| Bulk Environment | Buildings | 1. Construction of new n210 buildings | Construction of n210 plus housing for young people - CEL Rounddow Boulevard | 5,202,100 |  |  |  |  |  |
+| 1 | 1 | 1 | 1 | 5,000,000 | 5,000 |  |  |  |  |
+| Bulk Environment | Buildings | 2. Renovation of public buildings | Repairs, modernisation, equipping and thermal rehabilitation works of the Justice Auditorium, Domino Pumper Boulevard, no. 5, vector 2. Bucharest municipality | 5,050,000 |  |  |  |  |  |
+| 1 | 2 | 2 | 2 | 5,000,000 | 5,000 |  |  |  |  |
+| Bulk Environment | IPPU | 3. Recoveries of formal industrial areas | Complex project for the recovervion and valorisation of the Obor -Electronics Industrial area by means of an opportunity study, urban planning regulations and public space | 5,000,000 |  |  |  |  |  |
+| Bulk Environment | IPPU |  | Complex project for the conversion and valorisation of the potential of the URBAN INCORE. If Balura Romiédi area through an opportunity study, urban planning regulations | 5,000,000 |  |  |  |  |  |
+| Bulk Environment | IPPU | Complex project of recovervion and development of the main urban pole Barba Vilcânescu - Gheorghe Tjitsiu through an opportunity study, urban planning regulation and public space planning | 5,000,000 |  |  |  |  |  |  |
+| Bulk Environment | IPPU | Complex project of recovervion and development of the main urban pole Partnani through an opportunity study, urban planning regulation and public space planning | 5,000,000 |  |  |  |  |  |  |
+| 1 | 1 | 1 | 1 | 10,000,000 | 10,000 |  |  |  |  |
+| Bulk Environment | AFOLU | 4. Citizen involvement program for sustainable | Programme for the revitalisation of small abandoned public spaces (in partnership with professional associations/NGOs active in the field) | 500,000 |  |  |  |  |  |
+| Bulk Environment | AFOLU | recoveries of public spaces | Partnerships with owners' associations to develop green spaces in neighbourhoods | 500,000 |  |  |  |  |  |
+| 1 | 2 | 2 | 2 | 500,000 | 5,000 |  |  |  |  |
+| Bulk Environment | Buildings | 5. Recoveries of public spaces for sustainable development | Pilot project to reconfigure the spaces between collective housing in the 'aerobic area: community green spaces, sports facilities, children's playgrounds, pedestrian walkers | 5,000,000 |  |  |  |  |  |
+| Bulk Environment | Buildings |  | Pilot project for the reconfiguration of spaces between collective housing in the area of B-dul Ferdinand - Str. Căminului: community green spaces, sports facilities, children's playgrounds, pedestrian walkers | 500,000 |  |  |  |  |  |
+| Bulk Environment | Buildings | Pilot project for the reconfiguration of spaces between collective housing in Fbeveca district: community green spaces, sports facilities, children's playgrounds, pedestrian walkers | Pilot project for the reconfiguration of spaces between collective housing in Fbeveca district: community green spaces, sports facilities, children's playgrounds, pedestrian walkers | 7,500,000 |  |  |  |  |  |
+| Bulk Environment | Buildings | Pilot project for the reconfiguration of spaces between collective buildings in the Panteliman district: community green spaces, sports facilities, children's playgrounds, pet | 20,000,000 |  |  |  |  |  |  |
+| Bulk Environment | Buildings | Reconfiguration programme of inter-block spaces in collective housing areas | 5,000,000 |  |  |  |  |  |  |
+| 1 | 1 | 1 | 1 | 10,000,000 | 10,000 |  |  |  |  |
+| Bulk Environment | Buildings | 6. Social inclusion program for sustainable development | Weliamenate - Co-creating sustainable people contract neighbourhoods through urban regeneration | 363,125 | 2,000 |  |  |  |  |
+| Bulk Environment | Buildings |  | DivelyCity - The power of diversity and social inclusion as a means to reduce air pollution and achieve the green urban connection in climate neutral cities | 10,794,875 | 4,000 |  |  |  |  |
+| Bulk Environment | Buildings | Refinementation - The next generation of green, resilient and socially inclusive smart cities | 700,188 | 1,000 | 5,900 |  |  |  |  |
+| 1 | 2 | 2 | 2 | 11,058,188 | 7,000 |  |  |  |  |
+| Bulk Environment | Buildings | 7. Development of educational infrastructure | Construction of a small nursery for maximum 4 groups/40 children | 2,007,067 | 1,250 |  |  |  |  |
+| Bulk Environment | Buildings |  | Construction of nursery with 110 plants | 4,353,607 | 1,500 |  |  |  |  |
+| Bulk Environment | Buildings | for climate neutral education | Complementary services for kindergarten 137 | 433,715 | 1,150 |  |  |  |  |
+| Bulk Environment | Buildings | Equipping with furniture, teaching materials and digital equipment of pre-university education units in Sector 2 | 12,500,774 | 2,200 | 1,600 |  |  |  |  |
+| 1 | 2 | 2 | 2 | 18,354,163 | 6,100 |  |  |  |  |
+| Domains | Calculation Domain | ACTIONS | Interventions/projects | Implementation cost estimated (in thousands BUDGET - BUDGET) | Electrical x Energy (Nc Diesel 201 Gasoline 2 Bio-fuel 2C Energy pros increase in electrical energy |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Waste and Circular Waste |  |  | Separate collection infrastructure to achieve waste recycling targets in Sector 2, Bucharest Municipality | 23,168,036 | 9,875 | 0 | 1,800 | 0 | 0 | 20,000  |
-|  Waste and Circular Waste |  | 23. New waste sorting | Snow storage platforms in Sector 2: land identification and development | 150,000 | 3,378 | 0 | 2,000 | 0 | 0 | 5,000  |
-|  Waste and Circular Waste |  | infrastructure to reduce energy | Selective waste collection programme in Sector 2 | 1,500,000 | 9,325 | 0 | 8,000 | 0 | 0 | 2,000  |
-|  Waste and Circular Waste |  | consumption and increase wqaste | Rehabilitation of the municipal waste collection system street waste | 1,000,000 | 2,312 |  | 2,160 | 0 | 0 | 5,000  |
-|  Waste and Circular Waste |  | management capabilities | Horizon drone project - WASTESHARK Collection and recycling | 542,315 | 893 |  | 87 | 0 | 0 | 0  |
-|  Waste and Circular Waste |  |  | Sorting stations for separately collected recyclable waste in Sector 2 | 15,000,000 | 5,750 |  | 5 | 0 | 0 | 40,000  |
-|  Waste and Circular Waste |  |  | Monthly bulky waste / WEEE collection campaigns | 720,000 | 1,539 |  | 173 | 0 | 0 | 0  |
-|  24 | 24 | 24 | 42,080,351 | 33,072 | 0 | 14,225 | 0 | 0 | 65,000 | 31,000  |
-|  Waste and Circular Waste |  | 24. Public awareness campaigns | Awareness campaign - Organize workshops and information sessions for residents to raise awareness about the impact of climate change ar | 600,000 | 23,000 | 0 | 0 | 0 | 0 | 2,000  |
-|  Waste and Circular Waste |  | to educate and promote | Enforcement of sanctions for non-compliance with City Council Decisions on waste management on the territory of Sector 2 | 50,000 | 9,000 | 0 | 12,000 | 0 | 0 | 1,000  |
-|  Waste and Circular Waste |  | sustainable practices | Project to raise public awareness of the importance of separate collection of household waste | 200,000 | 4,750 | 0 | 2,000 | 0 | 0 | 2,000  |
-|  Waste and Circular Waste |  |  | Offer tax incentives (reduction of sanitation tax) for owners' associations where selective collection is carried out correctly | 100,000 | 4,890 | 0 | 8,000 | 0 | 0 | 1,000  |
-|  24 | 24 | 24 | 24 | 1,150,000 | 41,640 | 0 | 22,000 | 0 | 0 | 6,000  |
+| Energy Systems | Buildings |  | Moderate Energy Renovation of Multifamily Residential Buildings in District 2 of Bucharest Municipality III.31, Rascola Street from 190 | 12,459,200 | 11,819 | 64,513 | 0 | 0 | 0 | 17,269 |
+| Energy Systems | Buildings |  | Moderate Energy Renovation of multi-family residential buildings in District 2 of Bucharest, Block 31, sc. 2, str. Rascola din 1907 nr. 15 | 662,800 | 2,479 | 9,273 | 0 | 0 | 0 | 919 |
+| Energy Systems | Buildings |  | Moderate Energy Renovation of multi-family residential buildings in District 2 of Bucharest, Block 31, sc. 2, str. Rascola din 1907 nr. 15 | 844,400 | 2,885 | 10,622 | 0 | 0 | 0 | 1,170 |
+| Energy Systems | Buildings |  | Moderate Energy Renovation of multi-family residential buildings in District 2 of Bucharest - Bl.17, Rausen Street, Nr. 5 | 3,527,607 | 5,876 | 23,776 | 0 | 0 | 0 | 4,889 |
+| Energy Systems | Buildings |  | Moderate Energy Renovation of multi-family residential buildings in District 2 of Bucharest - Bl.466, Sachearie Visarion, nr.19 | 5,376,573 | 7,004 | 25,328 | 0 | 0 | 0 | 7,452 |
+| Energy Systems | Buildings |  | Moderate Energy Renovation of multi-family residential buildings in District 2 of Bucharest - Bl.466, Steve Stefanescu Stefan nr. 8 | 5,376,573 | 9,004 | 28,328 | 0 | 0 | 0 | 7,452 |
+| Energy Systems | Buildings | 8. Extensive moderate energy renovation of multi-family residential buildings in Sector 2 of Bucharest | Moderate Energy Renovation of multi-family residential buildings in Sector 2 of Bucharest - Block H16, Sos. Dobroesti, nr. 16 | 2,432,600 | 5,878 | 21,057 | 0 | 0 | 0 | 3,649 |
+| Energy Systems | Buildings | energy renovation of multi-family residential buildings in Sector 2 of Bucharest - Block H16, Sos. Dobroesti, nr. 16 | 503,200 | 923 | 10,066 | 0 | 0 | 0 | 697 | 649 |
+| Energy Systems | Buildings | multifamily residential buildings in Sector 2 of Bucharest | Moderate Energy Renovation of multi-family residential buildings in Sector 2 of Bucharest - Block H17, Sos. Dobroesti, Nr. 18 | 382,800 | 688 | 8,735 | 0 | 0 | 0 | 531 |
+| Energy Systems | Buildings | energy efficiency of blocks in Sector 2 | Moderate Energy Renovation of multi-family residential buildings in Sector 2 of Bucharest Bl.31, Sc. 3, Str. Rascola din 1907, nr. 15 | 702,600 | 668 | 15,349 | 0 | 0 | 0 | 974 |
+| Energy Systems | Buildings | Bucharest | D18 - Energy efficiency of 32 blocks of flats | 6,950,308 | 7,518 | 35,351 | 0 | 0 | 0 | 9,633 |
+| Energy Systems | Buildings |  | Positive Energy District pilot - Creation of Positive Energy District pilot: Traian Sports High School, residential buildings | 15,000,000 | 13,492 | 55,815 | 0 | 0 | 0 | 20,790 |
+| Energy Systems | Buildings |  | Programme for the modernization and rehabilitation of lifts in blocks in Sector 2 | 10,000,000 | 12,328 |  | 0 | 0 | 0 | 0 |
+| Energy Systems | Buildings |  | Energy efficiency of blocks in Sector 2 | 50,000,000 | 50,640 | 175,052 | 0 | 0 | 0 | 69,301 |
+| Energy Systems | Buildings |  | Programme for the modernization and rehabilitation of lifts in blocks in Sector 2 | 101,086,009 | 117,706 | 335,189 | 0 | 0 | 0 | 140,108 |
+| Energy Systems | Buildings |  | Pilot project for residential and public buildings: solar thermal panel system for heating and hot water supply | 2,000,000 | 4,466 | 18,842 | 0 | 0 | 0 | 200 |
+| Energy Systems | Buildings |  | Programme V - Multiannual local programme for increasing the energy performance of 83 targets in Sector 2 of Bucharest (30% reducti | 24,983,000 | 37,782 | 88,993 | 0 | 0 | 0 | 40,000 |
+| Energy Systems | Buildings |  | Preparation of technical and economic documents for increasing the energy efficiency of residential blocks in Sector 2 for 379 blocks | 2,175,721 | 5,000 | 11,000 | 0 | 0 | 0 | 0 |
+| 0 | 0 | 0 | 0 | 246,109,191 | 909,384 | 952,289 | 0 | 0 | 0 | 327,039 |
+| Energy Systems | Buildings |  | Energy efficiency through rehabilitation and modernization: Ferdinand I Secondary School | 1,397,020 | 4,085 | 14,494 | 0 | 0 | 0 | 1,556 |
+| Energy Systems | Buildings |  | Energy efficiency through rehabilitation/modernization Ion I.C. Brătianu Technological High School | 1,241,304 | 3,630 | 12,878 | 0 | 0 | 0 | 1,720 |
+| Energy Systems | Buildings |  | Energy efficiency through rehabilitation and modernization: Lucian Blaga High School | 1,139,870 | 3,333 | 11,826 | 0 | 0 | 0 | 1,580 |
+| Energy Systems | Buildings | 9. Comprehensive | Thermal rehabilitation of the Public Directorate for Personal and Civil Status Records Sector 2 Bucharest, 19 Olari Street | 680,643 | 1,990 | 7,062 | 0 | 0 | 0 | 2,923 |
+| Energy Systems | Buildings | energy efficiency and modernization of the Public Directorate for Personal and Civil Status Records Sector 2 Bucharest, 19 Olari Street | Consolidation, rehabilitation and modernization: Lucian Blaga High School | 1,139,870 | 3,333 | 11,826 | 0 | 0 | 0 | 1,580 |
+| Energy Systems | Buildings | 8. Energy efficiency and modernization of the Public Directorate for Personal and Civil Status Records Sector 2 Bucharest, 19 Olari Street | Consolidation, rehabilitation and modernization: Lucian Blaga High School | 1,139,870 | 3,333 | 11,826 | 0 | 0 | 0 | 1,580 |
+| Energy Systems | Buildings | energy efficiency and modernization of the Public Directorate for Personal and Civil Status Records Sector 2 Bucharest, 19 Olari Street | Consolidation, rehabilitation and modernization: Lucian Blaga High School | 1,139,870 | 3,333 | 11,826 | 0 | 0 | 0 | 1,580 |
+| Energy Systems | Buildings | energy efficiency and modernization of the Public Directorate for Personal and Civil Status Records Sector 2 Bucharest, 19 Olari Street | 1,139,870 | 3,333 | 11,826 | 0 | 0 | 0 | 0 | 1 |
+| Domains | Calculation Domain | ACTIONS | Interventions/projects | Implementation and estimates (ESTIMATED HUDGET - EURM) | Electrical + Energy (Nc Diesel 201)-Gasoline 2 Bio-fuel 2C Energy product increase in energy |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Mobility and Transport | Transport |  | DALI - (capital repairs, road system rehabilitation) Streets, Alleys, Parking lots | 2,848,107 | 37 | 0 | 215 | 105 | 304 |
+| Mobility and Transport | Transport |  | Rehabilitation At. Circulus nr. 2, bi: 2 | 239,800 | 3 | 0 | 18 | 9 | 26 |
+| Mobility and Transport | Transport |  | Rehabilitation At. Petre Antonescu | 215,800 | 3 | 0 | 16 | 8 | 23 |
+| Mobility and Transport | Transport |  | Multi-annual programme for the rehabilitation and upgrading of secondary or local streets | 6,964,296 | 90 | 0 | 525 | 256 | 743 |
+| Mobility and Transport | Transport |  | Rehabilitation of the road system on Dimitrie Pompeiu Boulevard, Petricani Road, Lucul Tei Boulevard, Maica Domnului Street, Rehvierii Street and Tu | 79,978,536 | 951 | 0 | 5,050 | 2,700 | 24,000 |
+| Mobility and Transport | Transport |  | Upgrading of the sections of municipal road between and between*, works that will take place simultaneously, in correlation with and in addition to tl | 150,000,000 | 1,939 | 0 | 11,315 | 1,505 | 16,000 |
+| Mobility and Transport | Transport |  | Uneven road overpass over the Balcului Street CF | 5,500,000 | 0 | 0 | 4,485 | 3,215 | 587 |
+| Mobility and Transport | Transport | 13. Rehabilitation and reconfiguration of street network to increase transport efficiency and decrease pollution levels. | Uneven road overpass over the Andronache Road CF | 5,500,000 | 0 | 0 | 2,465 | 2,215 | 587 |
+| Mobility and Transport | Transport |  | Construction of underpass Ferdinand I Boulevard - Obor Garii Boulevard - Helada intre Vii Street | 69,158,905 | 0 | 0 | 4,925 | 4,425 | 7,377 |
+| Mobility and Transport | Transport |  | Construction of overpass Soseaua Fundeni - Gheorghitei Street | 136,705,138 | 0 | 0 | 110,980 | 79,910 | 14,582 |
+| Mobility and Transport | Transport |  | Underpass Plata lancului on Mihai Bravu road | 50,000,000 | 0 | 0 | 40,591 | 29,227 | 5,333 |
+| Mobility and Transport | Transport |  | Petricani Node - closing of the median ring, phase 5f, contract under signature | 5,000,000 | 0 | 0 | 4,059 | 2,923 | 533 |
+| Mobility and Transport | Transport |  | Modernization and rehabilitation of road sections of Sos. Stefan cel Mare and Bd. Mihai Bravu, located on the territory of Sector 2, between the limit t | 30,650,000 | 396 | 0 | 2,312 | 1,125 | 12,000 |
+| Mobility and Transport | Transport |  | Rehabilitation of the road system: Socului Alley, Atletilor Street, Carausilor Street, Constantin Georgian Street, Dumbrava Roise Street, Geamandurit St | 12,500,000 | 162 | 0 | 943 | 459 | 1,333 |
+| Mobility and Transport | Transport |  | Rehabilitation of the Obor area, urban regeneration, (cancellation of car lanes, improvement of the Alexa-cu Ceas, pedestrian passage, awnings, creat | 6,200,000 | 80 | 0 | 468 | 228 | 2,000 |
+| Mobility and Transport | Transport |  | Urban Traffic Control Centre and Intersection Priority Signalling | 35,000,000 | 452 | 0 | 2,640 | 1,284 | 3,000 |
+| 11 | 12 | 13 | 14 | 595,556,582 | 4,113 | 0 | 193,952 | 125,807 | 0 |
+| Mobility and Transport | Transport | 14. Development of a network of EV charging stations | Integrated electric charging station system for cars and scooters | 5,000,000 | 10,000 | 0 | 8,050 | 7,600 | 20,000 |
+| Mobility and Transport | Transport | 15. Decrease number of visits to public administration offices through digitalization. | OBS. Implement measures to streamline the work processes related to the relationship between the institution and the owner/ associations, both from a back-office and front-office perspective, in order to reduce bureaucracy. OBS. Cultivation and development of knowledge, competences and skills for 3D employees of the mayor's office to use and administer the IT platform developed in the project, through participation in training programmes, including by addressing the themes of sustainable development, equal opportunities, non-discrimination and gender equality, to use and administer the implemented IT platform. OBS. Develop standard mechanisms and procedures for decision support and long-term strategic planning in line with the SCAP, through the development of the Sector 2 Digital Transformation Strategy." | 794,437 |  |  |  |  |  |
+| Mobility and Transport | Transport | 15. Decrease number of visits to public administration offices through digitalization. | OSS. Improve communication and information flow between the departments of the Municipality of Sector 2 of Bucharest and in its relationship with citizens by implementing a document management system, electronic registration and electronic archive. | 758,631 |  |  |  |  |  |
+| Mobility and Transport | Transport |  | OSS. Strengthen the management capacity of the City Hall of Sector 2 of the Municipality of Bucharest, for the performance of its functions, by carrying out an ex-post analysis for the Local Council Decisions drafted/approved since 2016. The objective is to effectively assess the effects of the implementation of the Local Council Decisions." | 758,631 |  |  |  |  |  |
+| Mobility and Transport | Transport |  | Digitalisation of the DRSPSC Sector 2 service, including electronic archiving | 15,000 |  |  |  |  |  |
+| Mobility and Transport | Transport |  | Diversification of the services provided to the citizens of Sector 2 through the creation of a respite centre and improvement of the social services infra | 1,000,000 |  |  |  |  |  |
+| Mobility and Transport | Transport |  | Implementation of the digital transformation strategy for Sector 2. | 500,000 |  |  |  |  |  |
+| 16 | 16 | 16 | 17 | 5,564,064 | 2000 | 8700 | 8000 | 4,200 |  |
+| Mobility and Transport | Transport | 16. New parking policy and new residential parking facilities meant to decrease car use and transform parking spaces into public areas. | Road system rehabilitation. Armasul Marcu street, areas of collective housing blocks no. 9, 11, 13 | 252,800 |  |  |  |  |  |
+| Mobility and Transport | Transport |  | Outlining a residential parking policy | 50,000 |  |  |  |  |  |
+| Mobility and Transport | Transport |  | Parking Day - multi-year project to promote the alternative use of parking spaces (the value of a parking space as public space). Obor area or on a stre | 80,000 |  |  |  |  |  |
+| Mobility and Transport | Transport |  | Rural mobility and infrastructure. Promoting smart mobility both through the development of a multi-red parking area dedicated to the development | 1,000,000 |  |  |  |  |  |
+| 18 | 18 | 18 | 19 | 2,382,800 | 2,000 | 0 | 4,700 | 6,558 | 0 |
+| Mobility and Transport | Transport |  | Rehabilitation of pathways and running tracks in Monarilor Park | 13,500,000 |  |  |  | 5,000 | 3,800 |
+| Mobility and Transport | Transport |  | Urban regeneration, rehabilitation of Calea mosilor - Vasile area | 2,000,000 |  |  |  | 1,000 | 2,300 |
+| Mobility and Transport | Transport | 17. Increased pedestrian mobility by revitalisation urban parks, upgrade of | Installation of awnings, closure of passage, repair of floors and pedestrian pedestrian pedestrian passage Obor - 4 pieces | 735,249 |  |  |  |  | 800 |
+| Mobility and Transport | Transport | pedestrian priority areas. | Rehabilitation of interior alleys and installation of rainwater collection system Motodrom Park | 524,428 |  |  |  |  | 500 |
+| Mobility and Transport | Transport |  | Replacement of escalators in Mojiler pedestrian passage | 350,000 |  |  |  |  | 200 |
+| Mobility and Transport | Transport |  | Introduction of new priority areas for pedestrians in the city centre (pedestrian and mixed-use areas) Ioanei-Verona area, Old Mojiler Street and Stre | 141,000,000 |  |  |  | 8,000 | 2,000 |
+| Mobility and Transport | Transport |  | Reconfiguration of the Obor area - transformation into a pedestrian priority area The area between Obor Market, Sector 2 City Hall and Obor Shop | 500,000 |  |  |  | 500 | 800 |
+| Mobility and Transport | Transport |  | Modernization, pedestrianization and reconfiguration of the profile of Dimitrie Pompeiu Avenue and Herastrau Station Street | 5,000,000 |  |  |  | 2,000 | 2,000 |
+| 12 | 17 | 17 | 18 | 143,409,677 | 0 | 0 | 50,457 | 27,698 | 0 |
+| Mobility and Transport | Transport |  | Smart&Green Mobility integrated ITS system for the Bucharest-Ifos region - Passenger information at public transport stations - 425 public transport | 1,461,861 |  |  |  |  | 5,000 |
+| Mobility and Transport | Transport |  | Improvement of tram infrastructure | 216,000,000 |  |  |  |  | 8,000 |
+| Mobility and Transport | Transport |  | Purchase of tram rolling stock | 635,000,000 |  |  |  |  |  |
+| Mobility and Transport | Transport |  | Improvement of automation systems for tram services | 183,500,000 |  |  |  |  | 6,000 |
+| Mobility and Transport | Transport |  | Investment in high-speed tram/LRT (LRT) | 1,046,000 |  |  |  |  | 800 |
+| Mobility and Transport | Transport | 18. Enhancement and expansion of public | Priority lanes for public transport | 45,000,000 |  |  |  |  | 2,000 |
+| Mobility and Transport | Transport | transport systems with smart technology, new | Modernisation and extension of the intelligent traffic light system (Bucharest-Ifos Traffic Management) and prioritisation of public transport vehicles | 13,537,822 |  |  |  |  | 5,400 |
+| Mobility and Transport | Transport | trams, dedicated lanes, and new routes for a cleaner urban travel. | Electric minibuses for pupils | 1,850,000 |  |  |  |  | 3,800 |
+| Mobility and Transport | Transport |  | Modernisation of the tram line on Maica Domnului and Lacul Tei streets from Rehvierii street to Lacul Tei loop | 35,000,000 |  |  |  |  | 2,000 |
+| Mobility and Transport | Transport |  | Rehabilitation of the road system and tram line on Chisinau Boulevard, between Pantelimon Road and Basarabia Boulevard | 100,000,000 |  |  |  |  | 4,000 |
+| Mobility and Transport | Transport |  | Integrated urban mobility and priority system for public transport - Introduction of priority systems in traffic light intersections for local transport, cnc | 8,000,000 |  |  |  |  | 3,200 |
+| Mobility and Transport | Transport |  | Extension of the tramway infrastructure 8D Chisinau -Plata Delfinului - Disamna Ghica - Petricani - Pipera, in collaboration with Bucharest City Hall | 35,000,000 |  |  |  |  | 2,000 |
+| Mobility and Transport | Transport |  | Extension of the tramway line by approximately 5.9 km | 30,000,000 |  |  |  |  | 1,200 |
+| 19 | 19 | 19 | 19 | 1,353,595,683 | 50,000 | 0 | 70,832 | 42,052 | 0 |
+| Mobility and Transport | Transport | 19. Extension and modernisation of cycling infrastructure - Cycling Masterplan, bike | Bike lanes in Sector 2 of Bucharest - 36,45 km bike lane | 9,623,666 |  |  |  |  |  |
+| Mobility and Transport | Transport | sharing system and extension of cycling | Establishment of the utility network for bicycles Colentina Road and Petricani Road - phase 1, Stefan Cel Mare Road, Mihai Bravu Boulevard, Barbu VD | 50,000,000 |  |  |  |  |  |
+| Mobility and Transport | Transport |  | Introduction of a bicycle rental system | 15,000,000 |  |  |  |  | 5000 |
+| Mobility and Transport | Transport |  | Master plan for bicycle lanes in Bucharest | 171,163 |  |  |  |  |  |
+| Mobility and Transport | Transport |  | Development of a system of bicycle lanes to connect the Obor "Nibara lui Avan" area with the Pipera area | 1,500,000 |  |  |  |  |  |
+| 19 | 19 | 19 | 19 | 75,294,829 | 0 | 0 | 20,000 | 15,000 | 0 |
+| Domains |  | Calculation Domain | Inclusion/Exclusion | Exclusion | Exclusion | Exclusion | Exclusion | Exclusion | Exclusion |
+| Group I: Introduction and N AFOLU |  | 20. Rehabilitation of motor ways for sustainable development. | Refurbishment of the artificial river in Plumbukta Park | 200,000 | 1,000 | 0 | 600 | 0 | 0 |
+| Group II: Introduction and N AFOLU |  | 21. Rehabilitation of motor ways for sustainable development. | Zoological Urban Plan - development of the banks of the lake in Sector 2 of the capital | 100,000 | 0 | 0 | 3,380 | 0 | 0 |
+| Group III: Introduction and N AFOLU |  | 22. Development of green roofs | Complex program for the improvement of the banks - stage I Funders Lakes and Dolinveys lakes (including Funders lake island)* | 18,000,000 | 7,000 | 0 | 3,058 | 0 | 0 |
+| Group IV: Introduction and N AFOLU |  | 23. Development, reconfiguration, systematization of the areas (shores) related to the lakes located on the administrative area of Sector 2 (Section I - Tel Lake area, Section II - Plumbukta Lake a | 50,000,000 | 6,383 | 0 | 4,000 | 0 | 0 | 0 |
+| 20 | 22 | 23 | 24 | 25 | 26,350,000 | 14,500 | 0 | 14,750 | 0 |
+| Group I: Introduction and N Buildings |  | 25. Development of green roofs | Landscaping of green terraces on the roofs of apartment buildings. Pilot project: Colentina district, Floreasca district | 500,000 | 8,750 | 19,500 | 0 | 0 | 0 |
+| Group II: Introduction and N Buildings |  | 26. Development of green roofs | Study for the creation of green terraces above the new parking garages in the Sector | 50,000 | 800 | 4,300 | 0 | 0 | 0 |
+| Group III: Introduction and N Buildings |  | 27. Development of green roofs | Study for transforming the terraces of 100 collective dwellings in Sector 2 into green terraces (neighbourhood Floreasca district)* | 200,000 | 4,300 | 9,500 | 0 | 0 | 0 |
+| 20 | 22 | 23 | 24 | 25 | 26,350,000 | 14,500 | 0 | 0 | 0 |
+| Group I: Introduction and N Transport |  | 25. Rehabilitation of green areas - Lot 1 | 691,429 | 28 | 0 | 8 | 8 | 0 | 118 |
+| Group II: Introduction and N Transport |  | 26. Green areas restoration - Lot 2 | 1,282,496 | 51 | 0 | 14 | 15 | 0 | 218 |
+| Group III: Introduction and N Transport |  | 27. + Execution of landscaping adjacent to Petricani Park - Petricani Alley | 530,486 | 21 | 0 | 6 | 6 | 0 | 90 |
+| Group IV: Introduction and N Transport |  | 28. Execution and redevelopment - Stolarne Park | 1,504,803 | 63 | 0 | 17 | 18 | 0 | 206 |
+| Group V: Introduction and N Transport |  | 29. Design and execution of redevelopment - Gradino Icoanei Park | 703,949 | 28 | 0 | 8 | 8 | 0 | 120 |
+| Group VI: Introduction and N Transport |  | 30. Design and execution of landscaping in the area of Aventura and Tirofiana National Park | 500,519 | 24 | 0 | 7 | 7 | 0 | 101 |
+| Group VII: Introduction and N Transport |  | 31. Redevelopment of Christigil a Miha Bravo red and recreation area | 203,936 | 8 | 0 | 2 | 2 | 0 | 14 |
+| Group VIII: Introduction and N Transport |  | 32. Rehabilitation of parks and development of sustainable green public spaces to incentivise pedestrian mobility. | 27. + Execution Landscaping and Architectural Landscaping of Ricinului Street Stable | 250,800 | 9 | 0 | 3 | 3 | 39 |
+| Group IX: Introduction and N Transport |  | 33. Rehabilitation of partnership opportunities with the owners of abandoned land in the central area, in order to develop public green spaces | 200,000 | 8 | 0 | 2 | 2 | 0 | 34 |
+| Group X: Introduction and N Transport |  | 34. Rehabilitation of the National Park | 15,000,000 | 600 | 0 | 164 | 172 | 0 | 2,550 |
+| Group XI: Introduction and N Transport |  | 35. Redevelopment/modernisation of Plumbukta Park I, Plumbukta II and Plumbukta Island, MDB project | 160,000,000 | 6,400 | 0 | 1,752 | 1,838 | 0 | 27,200 |
+| Group XII: Introduction and N Transport |  | 36. Creation of urban micro-forests | 150,000 | 6 | 0 | 2 | 2 | 0 | 26 |
+| Group III: Introduction and N Transport |  | 37. Extension and redevelopment of existing parks (Circului, Verdi, Valea Saulei) | 100,000,000 | 4,000 | 0 | 1,095 | 1,149 | 0 | 17,000 |
+| Group IV: Introduction and N Transport |  | 38. Restoration of green spaces and creation of relaxation areas instead of garages in the Zlatesc - Matei Voievod middle area | 1,600,000 | 64 | 0 | 18 | 18 | 0 | 272 |
+| Group V: Introduction and N Transport |  | 39. Establishment of a new park and development of Morosni park by expropriation | 4,000,000 | 160 | 0 | 44 | 46 | 0 | 680 |
+| Group VI: Introduction and N Transport |  | 40. Integrated urban regeneration project in the Dibor area by creating a railway museum complex. A system of green spaces and landscaping of the Dibor railway station square | 35,000,000 | 1,400 | 0 | 383 | 402 | 0 | 5,950 |
+| Group VII: Introduction and N Transport |  | 41. Creation of vegetation curtains along the secondary streets (green area), including a public private partnership in this respect | 1,214,490 | 49 | 0 | 13 | 14 | 0 | 208 |
+| 22 | 22 | 23 | 24 | 25 | 26,350,000 | 14,500 | 0 | 14,750 | 0 |
+| Domains | Calculation Domain | ACTIONS | Interventions/projects | Negative values (not response) (ESTIMATED BUDGET - EURO) | Electrical & Energy (Ns Diesel 201 Gasoline 2 Bio-fuel 2E Energy prc increase in energy consumption |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Waste and Circular Waste |  |  | Separate collection infrastructure to achieve waste recycling targets in Sector 2, Bucharest Municipality | 23,168,036 | 9,875 | 0 | 1,800 | 0 | 0 | 20,000 |
+| Waste and Circular Waste |  | 23. New waste sorting | Snow storage platforms in Sector 2: land identification and development | 150,000 | 3,378 | 0 | 2,000 | 0 | 0 | 5,000 |
+| Waste and Circular Waste |  | infrastructure to reduce energy | Selective waste collection programme in Sector 2 | 1,500,000 | 9,325 | 0 | 8,000 | 0 | 0 | 2,000 |
+| Waste and Circular Waste |  | consumption and increase waste | Rehabilitation of the municipal waste collection system street waste | 1,000,000 | 2,312 |  | 2,160 | 0 | 0 | 5,000 |
+| Waste and Circular Waste |  | management capabilities | Horizon drone project - WASTESHARK Collection and recycling | 542,315 | 893 |  | 87 | 0 | 0 | 0 |
+| Waste and Circular Waste |  |  | Sorting stations for separately collected recyclable waste in Sector 2 | 15,000,000 | 5,750 |  | 5 | 0 | 0 | 40,000 |
+| Waste and Circular Waste |  |  | Monthly bulky waste / WEEE collection campaigns | 720,000 | 1,539 |  | 173 | 0 | 0 | 0 |
+| 24 | 24 | 24 | 42,080,351 | 33,072 | 0 | 14,225 | 0 | 0 | 65,000 | 31,000 |
+| Waste and Circular Waste |  | 24. Public awareness campaigns | Awareness campaign - Organize workshops and information sessions for residents to raise awareness about the impact of climate change ar | 600,000 | 23,000 | 0 | 0 | 0 | 0 | 2,000 |
+| Waste and Circular Waste |  | to educate and promote | Enforcement of sanctions for non-compliance with City Council Decisions on waste management on the territory of Sector 2 | 50,000 | 9,000 | 0 | 12,000 | 0 | 0 | 1,000 |
+| Waste and Circular Waste |  | sustainable practices | Project to raise public awareness of the importance of separate collection of household waste | 200,000 | 4,750 | 0 | 2,000 | 0 | 0 | 2,000 |
+| Waste and Circular Waste |  |  | Offer tax incentives (reduction of sanitation tax) for owners' associations where selective collection is carried out correctly | 100,000 | 4,890 | 0 | 8,000 | 0 | 0 | 1,000 |
+| 24 | 24 | 24 | 24 | 1,150,000 | 41,640 | 0 | 22,000 | 0 | 0 | 6,000 |
 ![img-14.jpeg](img-14.jpeg)
 
 ![img-15.jpeg](img-15.jpeg)
@@ -3536,28 +3529,20 @@ Express joint commitment / agreement for all stakeholders who sign this 2030 Cli
 
 We, the undersigned, hereby commit to help make the District 2's climate neutral by 2030. We agree on the joint ambition and commitments, as formulated in the District 2's Climate City Contract.
 
-|  Organisation | Name and position of the representative | Signature  |
+| Organisation | Name and position of the representative | Signature |
 | --- | --- | --- |
-|  2^{nd} District of Bucharest Municipality | Radu-Nicolae MIHAIU, Mayor | RADU-NICOLAE MIHAIU
+| 2^{nd} District of Bucharest Municipality | Radu-Nicolae MIHAIU, Mayor | RADU-NICOLAE MIHAIU |
 Digitally signed by RADU-NICOLAE MIHAIU
 Date: 2024.03.14 16:51:11 +02'00'  |
-|  Bucharest-Ilfov Regional Development Agency | Dumitru Dan NICULA, General Manager |   |
-|  National Competence Centre and solutions for the development of Climate Neutral and Smart Cities | Ciprian DOBRE, Complex Project Director |   |
-|  Bucharest Community Foundation | Alina Kasprovschi, Executive Director |   |
-|  Electrocentrale Bucharest SA | Claudiu CREȚU, General Director |   |
-|  Bucharest Transport Company | Daniel ISTRATE, General Director |   |
-|  Embassy of the Kingdom of the Netherlands to Romania | Janette Verrijzer, Counsellor for Economics Affairs |   |
-|  Bucharest Chamber of Architects |  |   |
-|  NGO Între vecini |  |   |
-|  |   |   |
-|  |   |   |
-|  |   |   |
-|  |   |   |
-|  |   |   |
-|  |   |   |
-|  |   |   |
-|  |   |   |
-|  |   |   |
+| Bucharest-Ilfov Regional Development Agency | Dumitru Dan NICULA, General Manager |  |
+| --- | --- | --- |
+| National Competence Centre and solutions for the development of Climate Neutral and Smart Cities | Ciprian DOBRE, Complex Project Director |  |
+| Bucharest Community Foundation | Alina Kasprovschi, Executive Director |  |
+| Electrocentrale Bucharest SA | Claudiu CREȚU, General Director |  |
+| Bucharest Transport Company | Daniel ISTRATE, General Director |  |
+| Embassy of the Kingdom of the Netherlands to Romania | Janette Verrijzer, Counsellor for Economics Affairs |  |
+| Bucharest Chamber of Architects |  |  |
+| NGO Între vecini |  |  |
 ELCEN
 ELECTROCENTRALE BUCUREȘTI S.A.
 Splaiul Independenței nr. 227, cod poștal 060041, sector 6, București
@@ -3604,38 +3589,34 @@ The Competence Centre represents a network-of-excellence tool for increasing the
 Our Competence Centre promotes system innovation across the value chain of city investment, targeting multiple sectors such as governance, transport, energy, construction, and recycling, with support from powerful digital technologies. Cities require a shift in regulations, approaches, and instruments combined with the willingness to go beyond existing schemes and habits. It requires an attitude change towards practical implementation that includes concerns of people and stakeholders working together: citizens, local governments, central and regional governments, and European institutions. Following the vision of creating a safe, livable, and lovable living space, urban neighborhoods offer an excellent opportunity to implement and validate new ideas and innovative concepts. This is why our Competence Centre focuses on the city's static (i.e., city infrastructure) and dynamic (i.e., people, businesses) components.
 
 /2
-|  Transport Energy Savings  |   |   |   |   |   |   |   |   |   |
+| Transport Energy Savings |  |  |  |  |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Action No. | Budget | Electrical energy 2000 - REMOVE O | Energy (Natural Gas)- REMOVES | Diesel 2010 - REMOVE O | Gasoline 2010 - REMOVE O | Bio-fuel 2010 - REMOVE O | Energy produced (green) - GENERATES | Increase in energy | CO2 reduction per source sector  |
-|  0 | 1,601,174 | 600 | 0 | 1,800 | 0 | 0 | 1,200 | 1,100 | 500  |
-|  0 | 595,591,562 | 4,113 | 0 | 133,952 | 133,807 | 0 | 45,000 | 33,526 | 86,526  |
-|  0 | 3,000,000 | 10,000 | 0 | 8,950 | 7,600 | 0 | 20,000 | 20,000 | 5,900  |
-|  12 | 2,000,000 | 2,000 | 0 | 8,700 | 8,000 | 0 | 0 | 4,000 | 4,000  |
-|  18 | 2,382,800 | 2,000 | 0 | 6,708 | 6,358 | 0 | 8,000 | 3,000 | 5,350  |
-|  0 | 333,489,677 | 0 | 0 | 50,457 | 27,658 | 0 | 14,500 | 12,200 | 21,800  |
-|  18 | 1,391,595,665 | 50,000 | 0 | 70,810 | 42,852 | 0 | 70,000 | 46,700 | 96,500  |
-|  0 | 75,294,829 | 0 | 0 | 20,000 | 15,800 | 0 | 0 | 0 | 4,676  |
-|  0 | 332,970,908 | 12,919 | 0 | 3,557 | 3,711 | 0 | 14,396 | 0 | 4,100  |
-|  Total | 2,522,888,121 | 91,642 | 0 | 863,116 | 556,456 | 0 | 212,006 | 148,506 | 170,902  |
-|  Waste Energy Savings  |   |   |   |   |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Action No. | Budget | Electrical energy 2000 - REMOVE O | Energy (Natural Gas)- REMOVES | Diesel 2010 - REMOVES | Gasoline 2010 - REMOVES | Bio-fuel 2010 - REMOVES | Energy produced (green) - GENERATES | Increase in energy | CO2 reduction per source sector  |
-|  0 | 42,000,002 | 10,072 | 0 | 10,026 | 0 | 0 | 10,000 | 20,000 | 4,000  |
-|  0 | 1,160,000 | 41,640 | 0 | 22,600 | 0 | 0 | 0 | 6,000 | 14,200  |
-|  Total | 43,238,351 | 74,712 | 0 | 81,221 | 0 | 0 | 41,000 | 37,000 | 22,821  |
-|  0 | 75,294,829 | 0 | 0 | 22,600 | 15,000 | 0 | 0 | 0 | 8,072  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Other Infrastructure and Nature Based Solubility  |   |   |   |   |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Action No. | Budget | Electrical energy 2000 - REMOVES O | Energy (Natural Gas)- REMOVES | Diesel 2010 - REMOVES | Gasoline 2010 - REMOVES | Bio-fuel 2010 - REMOVES | Energy produced (green) - GENERATES | Increase in energy | CO2 reduction  |
-|  0 | 48,380,000 | 14,300 | 0 | 14,738 | 0 | 0 | 0 | 20 | 6,400  |
-|  0 | 750,000 | 13,819 | 33,249 | 0 | 0 | 0 | 0 | 0 | 9,528  |
-|  0 | 332,970,908 | 12,919 | 0 | 3,557 | 3,711 | 0 | 14,396 | 0 | 4,100  |
-|  Waste and Private Economy  |   |   |   |   |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Action No. | Budget | Electrical energy 2000 - REMOVES O | Energy (Natural Gas)- REMOVES | Diesel 2010 - REMOVES | Gasoline 2010 - REMOVES | Bio-fuel 2010 - REMOVES | Energy produced (green) - GENERATES | Increase in energy | CO2 reduction  |
-|  0 | 42,080,351 | 10,072 | 0 | 10,225 | 0 | 0 | 10,000 | 35,000 | 8,658  |
-|  0 | 1,700,000 | 41,640 | 0 | 22,600 | 0 | 0 | 0 | 6,000 | 14,200  |
+| Action No. | Budget | Electrical energy 2000 - REMOVE O | Energy (Natural Gas)- REMOVES | Diesel 2010 - REMOVE O | Gasoline 2010 - REMOVE O | Bio-fuel 2010 - REMOVE O | Energy produced (green) - GENERATES | Increase in energy | CO2 reduction per source sector |
+| 0 | 1,601,174 | 600 | 0 | 1,800 | 0 | 0 | 1,200 | 1,100 | 500 |
+| 0 | 595,591,562 | 4,113 | 0 | 133,952 | 133,807 | 0 | 45,000 | 33,526 | 86,526 |
+| 0 | 3,000,000 | 10,000 | 0 | 8,950 | 7,600 | 0 | 20,000 | 20,000 | 5,900 |
+| 12 | 2,000,000 | 2,000 | 0 | 8,700 | 8,000 | 0 | 0 | 4,000 | 4,000 |
+| 18 | 2,382,800 | 2,000 | 0 | 6,708 | 6,358 | 0 | 8,000 | 3,000 | 5,350 |
+| 0 | 333,489,677 | 0 | 0 | 50,457 | 27,658 | 0 | 14,500 | 12,200 | 21,800 |
+| 18 | 1,391,595,665 | 50,000 | 0 | 70,810 | 42,852 | 0 | 70,000 | 46,700 | 96,500 |
+| 0 | 75,294,829 | 0 | 0 | 20,000 | 15,800 | 0 | 0 | 0 | 4,676 |
+| 0 | 332,970,908 | 12,919 | 0 | 3,557 | 3,711 | 0 | 14,396 | 0 | 4,100 |
+| Total | 2,522,888,121 | 91,642 | 0 | 863,116 | 556,456 | 0 | 212,006 | 148,506 | 170,902 |
+| Waste Energy Savings |  |  |  |  |  |  |  |  |  |
+| Action No. | Budget | Electrical energy 2000 - REMOVE O | Energy (Natural Gas)- REMOVES | Diesel 2010 - REMOVES | Gasoline 2010 - REMOVES | Bio-fuel 2010 - REMOVES | Energy produced (green) - GENERATES | Increase in energy | CO2 reduction per source sector |
+| 0 | 42,000,002 | 10,072 | 0 | 10,026 | 0 | 0 | 10,000 | 20,000 | 4,000 |
+| 0 | 1,160,000 | 41,640 | 0 | 22,600 | 0 | 0 | 0 | 6,000 | 14,200 |
+| Total | 43,238,351 | 74,712 | 0 | 81,221 | 0 | 0 | 41,000 | 37,000 | 22,821 |
+| 0 | 75,294,829 | 0 | 0 | 22,600 | 15,000 | 0 | 0 | 0 | 8,072 |
+| Other Infrastructure and Nature Based Solubility |  |  |  |  |  |  |  |  |  |
+| Action No. | Budget | Electrical energy 2000 - REMOVES O | Energy (Natural Gas)- REMOVES | Diesel 2010 - REMOVES | Gasoline 2010 - REMOVES | Bio-fuel 2010 - REMOVES | Energy produced (green) - GENERATES | Increase in energy | CO2 reduction |
+| 0 | 48,380,000 | 14,300 | 0 | 14,738 | 0 | 0 | 0 | 20 | 6,400 |
+| 0 | 750,000 | 13,819 | 33,249 | 0 | 0 | 0 | 0 | 0 | 9,528 |
+| 0 | 332,970,908 | 12,919 | 0 | 3,557 | 3,711 | 0 | 14,396 | 0 | 4,100 |
+| Waste and Private Economy |  |  |  |  |  |  |  |  |  |
+| Action No. | Budget | Electrical energy 2000 - REMOVES O | Energy (Natural Gas)- REMOVES | Diesel 2010 - REMOVES | Gasoline 2010 - REMOVES | Bio-fuel 2010 - REMOVES | Energy produced (green) - GENERATES | Increase in energy | CO2 reduction |
+| 0 | 42,080,351 | 10,072 | 0 | 10,225 | 0 | 0 | 10,000 | 35,000 | 8,658 |
+| 0 | 1,700,000 | 41,640 | 0 | 22,600 | 0 | 0 | 0 | 6,000 | 14,200 |
 
 Total
 

@@ -881,7 +881,7 @@ Climate Neutrality Action Plan
 C
 
 | Program | Building Balance | Multi-year approach | Buildings, homes, industry | Initiating, encouraging and supporting independent regional and national chains for biobased building. |  | Farmers, producers, builders, government, homeowners | Link with all missions/ actions to speed up existing policies.
-Bouwmaterialen van eigen bodem - Building Balance |
+| Bouwmaterialen van eigen bodem - Building Balance |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Action Plan | Provincial multiple year plan on infrastructure, energy and climate (pMIEK) | 2023 | Energy transition, built environment | Integrated provincial analysis on the most important decisions to make to ensure a functioning energy system beyond 2030. | High relevance/direct impact | Municipalities, network operators, province | Framework for development energy infrastructure on a provincial level, in accordance with municipalities. Reiterated every other year. |
 | Action Plan | Delta Plan on Spatial Adaptation (National) | 2018 | Built environment, rural areas | Limit flooding, heat stress, drought and the consequences of flooding. |  | All | Link with missions/ actions on green, water and climate proof as a base.
@@ -1443,7 +1443,7 @@ Climate Neutrality Action Plan
 C
 
 |   |  |  | - Lobbying for preferential position for Groningen
-Mitigating actions will have some impact, but will not remedy the barrier  |
+| Mitigating actions will have some impact, but will not remedy the barrier  |
 | --- | --- | --- | --- |
 
 September 2024, with additional appendices Sept 2025
@@ -1990,14 +1990,14 @@ Individual action outlines
 | --- | --- | --- |
 |   |  Action name | Energie coaches  |
 |   |  Action description | General availability for inhabitants
-Groningen of energy coaches for questions on isolation, retrofitting, transition towards sustainable heating, PV on roofs  |
+| Groningen of energy coaches for questions on isolation, retrofitting, transition towards sustainable heating, PV on roofs  |
 |  Implementation | Field of action | Built environment  |
 |   |  Responsible bodies/person for implementation | municipality  |
 |   |  Primary target | isolation to isolation standard, transition to sustainable heating, PV on roofs  |
 |   |  Secondary targets | Influencing public opinion towards more sustainability  |
 |   |  Involved stakeholders | Municipality, inhabitants  |
 |  Impact | Comments on implementation – consider mentioning resources, timelines, milestones | A team of energy coaches is available for all inhabitants, both passively (on demand) and actively: public actions, presence on public events etc. Actions include free distribution of small energy measures (LED lighting, isolation tape, radiator foil etc.)
-The team is already in action.  |
+| The team is already in action.  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | Not calculated  |
 |   | Avoided GHG emissions by generation of renewable energy. | Not calculated  |
 
@@ -2022,7 +2022,7 @@ Individual action outlines
 |   |  Secondary targets | Enabling retrofitting of homes  |
 |   |  Involved stakeholders | Municipality, municipal energy company (GEB), in habitants  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | A revolving fund to help households with an income of less than 140% of the minimum income. The initial capital was municipal budget, suppleted with subsidies from the national government. The fund will be filled with the profits of the newly formed Municipal Energy Company (GEB) that will exploit local large scale renewable energy production (PV, wind).
-The fund is already in action  |
+| The fund is already in action  |
 |  Impact | GHG emissions reduction estimate (total) per emission source sector | Not calculated  |
 |   |  Avoided GHG emissions by generation of renewable energy. | Not calculated  |
 
@@ -2334,7 +2334,7 @@ C
 |  Impact | Involved stakeholders | Arriva, QBuzz, NS, (all providers of PT), OV Bureau Groningen/Drenthe (licensing and procurement of PT), municipality, province (partners in OV Bureau)  |
 | --- | --- | --- |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Already al train transport is zero emission, NS by using sustainable electricity, Arriva by using HVO. Public bus transport in the city is mostly EV and H2, all busses are to be converted by 2030 to EV or H2.
-PT providers are also planning to make their assets (stations, workshops, garages) CO2 neutral by 2030, and are reducing energy consumption  |
+| PT providers are also planning to make their assets (stations, workshops, garages) CO2 neutral by 2030, and are reducing energy consumption  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 37.680 KTon CO2 eqv  |
 |   |  Avoided GHG emissions by generation of renewable energy. |   |
 |  Individual action outlines  |   |   |
@@ -2360,7 +2360,7 @@ C
 | --- | --- | --- |
 |   |  Involved stakeholders | Municipality, car owners  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Municipality chose to do the management of public charging points by herself, because of the impact on the use of public space. The contract with a managing company was stopped, because the focus point of this company was ROI instead of public value.
-Electrification of cars id in full swing, but net congestion is a threat. At this moment, fast charging stations are commercial activities, and there is no grid capacity to add fast charging stations. The municipal fleet is being converted to EV. Groningen is involved in European projects for trying out H2 trucks.  |
+| Electrification of cars id in full swing, but net congestion is a threat. At this moment, fast charging stations are commercial activities, and there is no grid capacity to add fast charging stations. The municipal fleet is being converted to EV. Groningen is involved in European projects for trying out H2 trucks.  |
 |  Impact | GHG emissions reduction estimate (total) per emission source sector | See action 19  |
 |   |  Avoided GHG emissions by generation of renewable energy. |   |
 

@@ -1135,18 +1135,17 @@ The legal foundations of climate protection are anchored at both international a
 
 Table 2- : Overview of the impact levels and target values for GHG reduction
 
-|  Level |   | Base year | Target year | GHG reduction target  |
-| --- | --- | --- | --- | --- |
-|  UN | Paris Agreement^{5} | By the second half of the 21st century: GHG emissions lower than sink performance (net zero) with the aim of limiting the increase in the average global temperature to well below 2°C and, if possible, to only 1.5°C compared to pre-industrial levels  |   |   |
-|  EU
+Level | Base year | Target year | GHG reduction target
+UN | Paris Agreement^{5} | By the second half of the 21st century: GHG emissions lower than sink performance (net zero) with the aim of limiting the increase in the average global temperature to well below 2°C and, if possible, to only 1.5°C compared to pre-industrial levels
+EU
 (European Climate Law)^{6} | 1990 | 2030 | at least 55 %  |   |
-|   |   |  2050 | Net GHG-neutrality  |   |
-|   |   |  after 2050 | Negative GHG emissions  |   |
-|  Federation (KSG)^{7} | 1990 | 2030 | at least 65 %  |   |
-|   |   |  2040 | at least 88 %  |   |
-|   |   |  2045 | Net GHG-neutrality  |   |
-|   |   |  after 2050 | Negative GHG emissions  |   |
-|  Free State of Saxony
+2050 | Net GHG-neutrality
+after 2050 | Negative GHG emissions
+Federation (KSG)^{7} | 1990 | 2030 | at least 65 %
+2040 | at least 88 %
+2045 | Net GHG-neutrality
+after 2050 | Negative GHG emissions
+Free State of Saxony
 (Energy and Climate Protection Programme 2021^{8}) |   |  | 2045 | Contribution to achieving the nationwide target of climate neutrality by 2045; no separate target  |
 #
 Dresden. Diegeur
@@ -1156,19 +1155,18 @@ O
 
 List of relevant guidelines, strategies and regulations:
 
-|  EU level  |   |
-| --- | --- |
-|  Legislation | The EU Green Deal directives^{9} have several implications for cities. Basically, they aim to make cities more sustainable and resilient to the challenges of climate change.  |
-|  Relevance | 1. sustainable mobility: cities are encouraged to expand public transport and promote zero-emission modes of transport, leading to less traffic and better air quality.
+EU level
+Legislation | The EU Green Deal directives^{9} have several implications for cities. Basically, they aim to make cities more sustainable and resilient to the challenges of climate change.
+Relevance | 1. sustainable mobility: cities are encouraged to expand public transport and promote zero-emission modes of transport, leading to less traffic and better air quality.
 energy efficiency: Directives to improve the energy efficiency of buildings promote renovations and new buildings that are more environmentally friendly. This can lead to lower energy costs for residents.
 green infrastructure: cities are encouraged to create and maintain green spaces, which not only promotes biodiversity but also improves the urban climate and quality of life.
 circular economy: promoting recycling and waste prevention leads to a reduction in waste and more efficient use of resources.  |
-|  Need for action | The Energy Efficiency Directive (EED) and the Energy Performance of Buildings Directive (EPBD) will be / are challenging for cities. The directives contain sensible requirements for climate protection. However, municipalities with often tight budgets (see also budget planning 2025/26 for Dresden) face problems with implementation. For Dresden in particular, with its large building stock, it will be critical to comply with the requirements.  |
-|  Support programmes | EU funding programmes that provide financial resources for the implementation of climate protection measures are the EU Cohesion Funds and relevant action programmes such as Horizon Europe, LIFE, Connecting Europe, EUI  |
-|  Relevance | Dresden benefits from EU funding programmes, in particular the EU Cohesion Fund. In addition, Dresden is part of the Smart City community at EU level with projects such as the EU Smart City project MAtchUP (Dresden). Dresden is also involved in the Horizon Europe Mission projects NEUTRALPATH and MOBILITIES4EU and U_CAN, the EUI project Time2Adapt and other Interreg projects.  |
-|  Need for action | Dresden has been able to significantly expand its EU project portfolio in recent years and, thus, not only generated financial support, but also participates and benefits from international knowledge transfer. At the same time, project-based funding, which also ties up a lot of human resources, will not be able to finance the major transformation.  |
-|  Covenant  |   |
-|  Laws | The basic law is the Federal Climate Protection Act (see table above). Other important legislation is the Building Energy Act (GEG), which sets out requirements for the energy quality of buildings, the generation and use of energy, certificates, the use of renewable energies in buildings and, for local authorities, the use of renewable energies in new buildings and refurbishments. In addition, the law on heat planning and decarbonisation of heating networks obliges the federal states to implement municipal heat planning, including heat plans, by 30  |
+Need for action | The Energy Efficiency Directive (EED) and the Energy Performance of Buildings Directive (EPBD) will be / are challenging for cities. The directives contain sensible requirements for climate protection. However, municipalities with often tight budgets (see also budget planning 2025/26 for Dresden) face problems with implementation. For Dresden in particular, with its large building stock, it will be critical to comply with the requirements.
+Support programmes | EU funding programmes that provide financial resources for the implementation of climate protection measures are the EU Cohesion Funds and relevant action programmes such as Horizon Europe, LIFE, Connecting Europe, EUI
+Relevance | Dresden benefits from EU funding programmes, in particular the EU Cohesion Fund. In addition, Dresden is part of the Smart City community at EU level with projects such as the EU Smart City project MAtchUP (Dresden). Dresden is also involved in the Horizon Europe Mission projects NEUTRALPATH and MOBILITIES4EU and U_CAN, the EUI project Time2Adapt and other Interreg projects.
+Need for action | Dresden has been able to significantly expand its EU project portfolio in recent years and, thus, not only generated financial support, but also participates and benefits from international knowledge transfer. At the same time, project-based funding, which also ties up a lot of human resources, will not be able to finance the major transformation.
+Covenant
+Laws | The basic law is the Federal Climate Protection Act (see table above). Other important legislation is the Building Energy Act (GEG), which sets out requirements for the energy quality of buildings, the generation and use of energy, certificates, the use of renewable energies in buildings and, for local authorities, the use of renewable energies in new buildings and refurbishments. In addition, the law on heat planning and decarbonisation of heating networks obliges the federal states to implement municipal heat planning, including heat plans, by 30
 
 A link to an overview of all relevant EU Green Deal directives can be found here: European_green_deal.pdf (circulaw.nl)
 #
@@ -1810,8 +1808,6 @@ Dresden action plan for climate neutrality in 2030
 |   | Reduction in the volume of motorised private transport enables land to be unsealed, more efficient land use and higher urban space quality  |
 |   | Multi- and intermodality brings further health benefits through more exercise and better air quality  |
 |   | Greater use of eco-friendly modes of transport increases road safety  |
-7
-
 |   | High satisfaction with public transport in DD - possibly high openness to new innovative projects (https://www.dresden.de/de/rathaus/aktuelles/pressemitteilungen/2024/01/pm_082.php)  |
 | --- | --- |
 |   | High level of scientific expertise and know-how in mobility topics in Dresden TU Dresden, Faculty of Transport Sciences "Friedrich List" and various institutes  |
@@ -2059,20 +2055,19 @@ Dresden action plan for climate neutrality in 2030
 
 #
 
-|  Fields of action | Pathways of action | Direct impact (emissions reduction) from 2018 to 2030 | Direct effects (emission reductions) from 2018 to 2040 | Indirect effects (co-benefits)  |
-| --- | --- | --- | --- | --- |
-|   | Energy utilisation of wastewater and wastewater treatment products | Currently not quantifiable | Currently not quantifiable | Saving energy and resources  |
-|   |  Reduction of GHG emissions from wastewater treatment processes | Currently not quantifiable | Currently not quantifiable |   |
-|  Green infrastructure and nature-based solutions | Preserving urban green spaces as carbon sinks | Currently not quantifiable | Currently not quantifiable | Improving the quality of stay in the urban area  |
-|   |  Creation of urban greenery (e.g. green roofs) | Currently not quantifiable | Currently not quantifiable | Heat prevention
+Fields of action | Pathways of action | Direct impact (emissions reduction) from 2018 to 2030 | Direct effects (emission reductions) from 2018 to 2040 | Indirect effects (co-benefits)
+Energy utilisation of wastewater and wastewater treatment products | Currently not quantifiable | Currently not quantifiable | Saving energy and resources
+Reduction of GHG emissions from wastewater treatment processes | Currently not quantifiable | Currently not quantifiable
+Green infrastructure and nature-based solutions | Preserving urban green spaces as carbon sinks | Currently not quantifiable | Currently not quantifiable | Improving the quality of stay in the urban area
+Creation of urban greenery (e.g. green roofs) | Currently not quantifiable | Currently not quantifiable | Heat prevention
 Avoidance of overheating of surfaces
 Biodiversity  |
-|   |  Renaturalisation | Currently not quantifiable | Currently not quantifiable | Rainwater retention
+Renaturalisation | Currently not quantifiable | Currently not quantifiable | Rainwater retention
 Soil quality  |
-|   |  Surface unsealing | Currently not quantifiable | Currently not quantifiable |   |
-|  Built environment | Reduction in energy demand for heating (residential buildings, non-residential buildings and process energy)16 | -260,900 tCO2.eq/a | -248,000 tCO2.eq/a | Cost savings for private households, industry and commerce
+Surface unsealing | Currently not quantifiable | Currently not quantifiable
+Built environment | Reduction in energy demand for heating (residential buildings, non-residential buildings and process energy)16 | -260,900 tCO2.eq/a | -248,000 tCO2.eq/a | Cost savings for private households, industry and commerce
 Reduction in grid transformation costs due to low demand (avoidance of over-dimensioning)  |
-|   |  Reduction in energy demand for electricity (residential buildings, non-residential buildings and process energy) | +320,300 tCO2.eq/a
+Reduction in energy demand for electricity (residential buildings, non-residential buildings and process energy) | +320,300 tCO2.eq/a
 Increase due to massive expansion as a result of industrial relocation and offset in | +170,000 tCO2.eq/a | Cost savings for private households, industry and commerce
 Reduction in grid transformation costs due to low demand  |
 #
@@ -2080,10 +2075,9 @@ Dresden. DREQED
 Dresden action plan for climate neutrality in 2030
 #
 
-|  Fields of action | Pathways of action | Direct impact (emissions reduction) from 2018 to 2030 | Direct effects (emission reductions) from 2018 to 2040 | Indirect effects (co-benefits)  |
-| --- | --- | --- | --- | --- |
-|   |  | model data between 2018 and 2021 |  | (avoidance of over-dimensioning)  |
-|   |  Substitution of fos-sil fuels with renewable energy sources for decentralised building energy supply (separately for residential and non-residential buildings) | -49,000 tCO2.eq/a (residential buildings)
+Fields of action | Pathways of action | Direct impact (emissions reduction) from 2018 to 2030 | Direct effects (emission reductions) from 2018 to 2040 | Indirect effects (co-benefits)
+model data between 2018 and 2021 | (avoidance of over-dimensioning)
+Substitution of fos-sil fuels with renewable energy sources for decentralised building energy supply (separately for residential and non-residential buildings) | -49,000 tCO2.eq/a (residential buildings)
 ,900 tCO2.eq/a (non-residential buildings) | -49,000 tCO2.eq/a (residential buildings)
 ,900 tCO2.eq/a (non-residential buildings) | ■ Better air quality, improved quality of life
 ■ Regional added value
@@ -2092,11 +2086,10 @@ Dresden action plan for climate neutrality in 2030
 ■ Avoided environmental damage
 ■ Reduction/stabilisation of heating costs due to lower proportion of fluctuating price mechanisms
 ■ Sector coupling and integrated supply solutions create synergies  |
-|  Non-energy processes and product utilisation | Substitution of climate-damaging gases in production and product use | Currently not quantifiable | Currently not quantifiable |   |
-|   |  Reduction of the quantities of climate-damaging gases used in production and product application | Currently not quantifiable | Currently not quantifiable |   |
-|   |  Utilisation of processes for the capture of greenhouse gases | Currently not quantifiable | Currently not quantifiable |   |
-|  Fields of action | Systemic levers | Early changes (1-2 years) | Late results (3-4 years)  |
-| --- | --- | --- | --- |
+Non-energy processes and product utilisation | Substitution of climate-damaging gases in production and product use | Currently not quantifiable | Currently not quantifiable
+Reduction of the quantities of climate-damaging gases used in production and product application | Currently not quantifiable | Currently not quantifiable
+Utilisation of processes for the capture of greenhouse gases | Currently not quantifiable | Currently not quantifiable
+Fields of action | Systemic levers | Early changes (1-2 years) | Late results (3-4 years)
 
 0
 #
@@ -2129,18 +2122,16 @@ neutrality in 2030
 
 #
 
-|   |  | actions in the energy system. In-come from energy sales is not sufficient for the necessary investments. | energy system. Income from energy sales is not sufficient for the necessary investments.  |
-| --- | --- | --- | --- |
-|   |   | Greater consideration of ecological and public welfare aspects in the planning of major projects (not just economic efficiency) | Climate-friendly actions must become the standard and also be financially covered  |
-|   |  Social innovation | Introduction of the energy pilot in Dresden (EnAct4CleanCities) will help to bring information, advice and data simulation together in one place and, above all, enable owners to help drive the energy transition forward through their own actions. (One-Stop-Shop) | Strong anchoring of energy piloting in the general public  |
-|   |   |  | More targeted advisory services thanks to digital twin  |
-|   |  Democracy and participation | Establishment and further development of energy communities / energy cooperatives | We have a strong network of energy communities and -co-operatives that can realise a relevant proportion of projects  |
-|   |   | Implementation of the participation statutes in addition to digital elements (smart participation) |   |
-|   |  Knowledge and skills | Smart City strategy involving various relevant departments of the City of Dresden; continuous workshops with internal and external stakeholders |   |
-|   |   | Skilled labour campaign to increase planning and approval capacities | Increasing the attractiveness of engineering professions or other relevant disciplines (e.g. communication science)  |
-|  |   |   |   |
-|  Mobility & Transport | Technology and infrastructure | The large-scale use of new technologies (electrification of buses and cars) will further improve the technologies and reduce costs. | Mass suitability of new drive types in lorry and heavy goods transport  |
-|   |  Politics and organisation | Development of suitable legal framework conditions for infrastructure development with a focus on eco-mobility and promotion of new | Governance and politics are making new forms of mobility the new standard (e.g. by rai-  |
+actions in the energy system. In-come from energy sales is not sufficient for the necessary investments. | energy system. Income from energy sales is not sufficient for the necessary investments.
+Greater consideration of ecological and public welfare aspects in the planning of major projects (not just economic efficiency) | Climate-friendly actions must become the standard and also be financially covered
+Social innovation | Introduction of the energy pilot in Dresden (EnAct4CleanCities) will help to bring information, advice and data simulation together in one place and, above all, enable owners to help drive the energy transition forward through their own actions. (One-Stop-Shop) | Strong anchoring of energy piloting in the general public
+More targeted advisory services thanks to digital twin
+Democracy and participation | Establishment and further development of energy communities / energy cooperatives | We have a strong network of energy communities and -co-operatives that can realise a relevant proportion of projects
+Implementation of the participation statutes in addition to digital elements (smart participation)
+Knowledge and skills | Smart City strategy involving various relevant departments of the City of Dresden; continuous workshops with internal and external stakeholders
+Skilled labour campaign to increase planning and approval capacities | Increasing the attractiveness of engineering professions or other relevant disciplines (e.g. communication science)
+Mobility & Transport | Technology and infrastructure | The large-scale use of new technologies (electrification of buses and cars) will further improve the technologies and reduce costs. | Mass suitability of new drive types in lorry and heavy goods transport
+Politics and organisation | Development of suitable legal framework conditions for infrastructure development with a focus on eco-mobility and promotion of new | Governance and politics are making new forms of mobility the new standard (e.g. by rai-
 #
 
 Dresden. 2
@@ -2153,34 +2144,30 @@ Dresden action plan for climate neutrality in 2030
 | --- | --- | --- | --- |
 |   |  Finances | Reform vehicle taxation - incentivise the use of eco-mobility and efficient cars
 Abolish the commuter allowance or, if necessary, redesign it so that the use of public transport brings tax ad- vantages over car use |   |
-|   |   | Federal and state funding conditions for rapid implementation of the ne- cessary actions for environmental transport, e.g. securing the Deutsch- landticket on a permanent basis | Financial support is expected to continue as the EU's 2030 targets approach.  |
-|   |  Social innovation | Development of new mobility mo- dels focussing on the inclusion of all social groups. | Further adjustments to ensure the inclusion of all social groups.  |
-|   |  Democracy and participation | Stabilisation of inclusion processes and participation processes | The importance of sustainable mobility and sustainable trans- port is being more widely recognised and supported in society.  |
-|   |  Knowledge and skills | Improving access to mobility and transport services to increase accep- tance. |   |
-|  |   |   |   |
-|  Waste and recy- cling manage- ment, waste wa- ter | Technology and infrastructure | Availability of recycled products in- creases |   |
-|   |  Politics and organ- isation | Clear redution targets at state level in the KWG |   |
-|   |  Finances |  | Revision of the wastewater charging system to create in- centives for water and water- saving behaviour and pro- cesses  |
-|   |  Knowledge and skills | Interdisciplinary cooperation be- tween specialisms leads to the con- solidation of the circular concept |   |
+Federal and state funding conditions for rapid implementation of the ne- cessary actions for environmental transport, e.g. securing the Deutsch- landticket on a permanent basis | Financial support is expected to continue as the EU's 2030 targets approach.
+Social innovation | Development of new mobility mo- dels focussing on the inclusion of all social groups. | Further adjustments to ensure the inclusion of all social groups.
+Democracy and participation | Stabilisation of inclusion processes and participation processes | The importance of sustainable mobility and sustainable trans- port is being more widely recognised and supported in society.
+Knowledge and skills | Improving access to mobility and transport services to increase accep- tance.
+Waste and recy- cling manage- ment, waste wa- ter | Technology and infrastructure | Availability of recycled products in- creases
+Politics and organ- isation | Clear redution targets at state level in the KWG
+Finances | Revision of the wastewater charging system to create in- centives for water and water- saving behaviour and pro- cesses
+Knowledge and skills | Interdisciplinary cooperation be- tween specialisms leads to the con- solidation of the circular concept
 #
 Dresden. Dresden
 Dresden action plan for climate
 neutrality in 2030
 O
 
-|   |  | (cradle-to-cradle) so that recyclability is already taken into account comprehensively in product design |   |
-| --- | --- | --- | --- |
-|  |   |   |   |
-|  Green infrastructure and nature-based solutions | Technology and infrastructure | Multifaceted role: For some activities, technology will be a fundamental lever (e.g. CCU). Technological development will enable pilot studies. For other activities (e.g. reforestation projects, it will play a sub-ordinate role) | Technological development necessary to extend pilot studies to small-scale actions.  |
-|   |   | Introduction of irrigation systems to preserve urban greenery |   |
-|   |  Politics and organisation | Development of the necessary legal framework. | The legal framework enables the implementation of various actions at different stages of development (e.g. some are very innovative and are in the development phase, e.g. CCU).  |
-|   |  Finances | Availability of financial resources as a basis for the development and implementation of nature-based and innovative solutions. | Financial support for nature-based and innovative solutions is an integral part of national and international tenders.  |
-|   |  Social innovation | Promote ensuring that all social groups and their living conditions are taken into account in nature-based and innovative solutions | All social groups are considered in the nature-based and innovative solutions and participate in selected projects.  |
-|   |  Democracy and participation | Promoting social acceptance and/or participation in nature-based and innovative solutions | The need for nature-based and innovative solutions is recognised and actively supported.  |
-|   |  Knowledge and skills | Further improvement of nature-based and innovative solutions | Continuous learning enables further (technological) improvements  |
-|  |   |   |   |
-|  Built environment | Technology and infrastructure | Further development of new sustainable technologies in the building sector (for new buildings and refurbishment of existing buildings) | Availability of climate-friendly construction and refurbishment options  |
-|   |   | Modular approach, system design increase speed of system replacement (heating replacement rate) |   |
+(cradle-to-cradle) so that recyclability is already taken into account comprehensively in product design
+Green infrastructure and nature-based solutions | Technology and infrastructure | Multifaceted role: For some activities, technology will be a fundamental lever (e.g. CCU). Technological development will enable pilot studies. For other activities (e.g. reforestation projects, it will play a sub-ordinate role) | Technological development necessary to extend pilot studies to small-scale actions.
+Introduction of irrigation systems to preserve urban greenery
+Politics and organisation | Development of the necessary legal framework. | The legal framework enables the implementation of various actions at different stages of development (e.g. some are very innovative and are in the development phase, e.g. CCU).
+Finances | Availability of financial resources as a basis for the development and implementation of nature-based and innovative solutions. | Financial support for nature-based and innovative solutions is an integral part of national and international tenders.
+Social innovation | Promote ensuring that all social groups and their living conditions are taken into account in nature-based and innovative solutions | All social groups are considered in the nature-based and innovative solutions and participate in selected projects.
+Democracy and participation | Promoting social acceptance and/or participation in nature-based and innovative solutions | The need for nature-based and innovative solutions is recognised and actively supported.
+Knowledge and skills | Further improvement of nature-based and innovative solutions | Continuous learning enables further (technological) improvements
+Built environment | Technology and infrastructure | Further development of new sustainable technologies in the building sector (for new buildings and refurbishment of existing buildings) | Availability of climate-friendly construction and refurbishment options
+Modular approach, system design increase speed of system replacement (heating replacement rate)
 
 4
 #
@@ -2495,14 +2482,12 @@ Action plan for climate neutrality 2030
 
 In addition, two major projects will be presented that pursue the goals of climate adaptation and climate protection:
 
-|  M2.1-1: | Improve pavement widths and site conditions for (street) trees | Preservation or creation of natural CO2 sinks; strengthening of eco-mobility, especially through pedestrian traffic  |
-| --- | --- | --- |
-|  M2.1-2: | Climate-adapted planting. | Preservation or creation of natural CO2 sinks  |
-|  M3.2-1 | Store, infiltrate and evaporate rainwater decentrally on the properties and do not discharge rainwater into the sewer when developing new properties/neighbourhoods. | Relief of the wastewater network and sewage treatment plants leads to reduced energy consumption and GHG emissions from the sewage treatment plant  |
-|  M3.2-3/ M1.1-5 | Reduce the sealing of urban spaces. | Improvement of the CO2 binding effect of land; relief of the wastewater network and sewage treatment plants leads to reduced energy use and GHG emissions from the sewage treatment plant  |
-|  M3.2-4/ M1.1-6 | Strengthen rainwater retention by greening buildings. | Relief of the wastewater network and sewage treatment plants leads to reduced energy consumption and GHG emissions from the sewage treatment plant  |
-|  Federal Garden Show (BUGA) 2033 in Dresden | With the signing of an implementation agreement between the City of Dresden and the Deutsche Bundesgartenschaugesellschaft (DBG) on Thursday, 13 June 2024, the joint plan for a Dresden Federal Garden Show in 2033 was sealed. This was preceded by a resolution of the city council with a clear majority in favour of holding the Federal Horticultural Show 2033 (BUGA). This was based on an initial sketch of ideas and then a feasibility study, which was completed by the end of September 2023. Local stakeholders, institutions and citizens were able to participate in the feasibility study. In addition to the agricultural development and use of the Südpark, a large part of the urban green space is qualified as a natural biotope area, which can be accessed on foot and by bike via an attractive network of paths. These also connect to the surrounding urban neighbourhoods and link the green and open spaces with each other. The BUGA represents a major contribution to the development of green infrastructure in Dresden in the context of climate change adaptation measures.  |
-| --- | --- |
+M2.1-1: | Improve pavement widths and site conditions for (street) trees | Preservation or creation of natural CO2 sinks; strengthening of eco-mobility, especially through pedestrian traffic
+M2.1-2: | Climate-adapted planting. | Preservation or creation of natural CO2 sinks
+M3.2-1 | Store, infiltrate and evaporate rainwater decentrally on the properties and do not discharge rainwater into the sewer when developing new properties/neighbourhoods. | Relief of the wastewater network and sewage treatment plants leads to reduced energy consumption and GHG emissions from the sewage treatment plant
+M3.2-3/ M1.1-5 | Reduce the sealing of urban spaces. | Improvement of the CO2 binding effect of land; relief of the wastewater network and sewage treatment plants leads to reduced energy use and GHG emissions from the sewage treatment plant
+M3.2-4/ M1.1-6 | Strengthen rainwater retention by greening buildings. | Relief of the wastewater network and sewage treatment plants leads to reduced energy consumption and GHG emissions from the sewage treatment plant
+Federal Garden Show (BUGA) 2033 in Dresden | With the signing of an implementation agreement between the City of Dresden and the Deutsche Bundesgartenschaugesellschaft (DBG) on Thursday, 13 June 2024, the joint plan for a Dresden Federal Garden Show in 2033 was sealed. This was preceded by a resolution of the city council with a clear majority in favour of holding the Federal Horticultural Show 2033 (BUGA). This was based on an initial sketch of ideas and then a feasibility study, which was completed by the end of September 2023. Local stakeholders, institutions and citizens were able to participate in the feasibility study. In addition to the agricultural development and use of the Südpark, a large part of the urban green space is qualified as a natural biotope area, which can be accessed on foot and by bike via an attractive network of paths. These also connect to the surrounding urban neighbourhoods and link the green and open spaces with each other. The BUGA represents a major contribution to the development of green infrastructure in Dresden in the context of climate change adaptation measures.
 #
 
 Dresden. Discopu
@@ -2587,21 +2572,19 @@ Action plan for climate neutrality 2030
 
 #
 
-|  Package of measures no.: G.3 | Building energy supply  |
-| --- | --- |
-|  Title: Expansion and decarbonisation of district heating  |   |
-|  Description: Dresden's district heating network already represents an important backbone of the city's heating supply with a share of approx. 44% of heat demand and a length of 630 kilometres. Its CHP plants utilise highly efficient, coupled electricity and heat generation. However, this is still based on fossil natural gas, which must be replaced for a climate-neutral heat supply. SachsenEnergie AG's decarbonisation concept, which places a special focus on district heating, shows the potential and ways to achieve GHG-neutral district heating by 2035 and 2045. The heat transformation plan for district heating underpins this with further detailed planning. This concerns, for example  |   |
-|  ■ Thermal utilisation of residual waste  |   |
-|  ■ Use of large heat pumps  |   |
-|  ■ Use of electrode heating boilers  |   |
-|  ■ Lowering the grid temperatures ("Low Ex")  |   |
-|  ■ Expansion of heat storage capacities  |   |
-|  In addition to replacing natural gas, Dresden's district heating also has potential for densification and expansion. The compression potential lies in particular in areas where natural gas and district heating are currently still being used in parallel.  |   |
-|  Objective: The expansion and decarbonisation of district heating is to use the heat transformation plan to demonstrate how a climate-neutral district heating supply can be achieved by means of specific, coordinated individual measures. It takes into account the redensification of existing areas as well as expansion areas. The results of the heat transformation plan will be integrated into municipal heat planning in such a way that they are compatible with the Dresden City Council's climate neutrality target.  |   |
-|  No.: G.3-01 | Short title: Ring 30  |
-| --- | --- |
-|  Building energy supply | Expansion and decarbonisation of district heating  |
-|  Type of actions: Direct | Priority: ●●●●  |
+Package of measures no.: G.3 | Building energy supply
+Title: Expansion and decarbonisation of district heating
+Description: Dresden's district heating network already represents an important backbone of the city's heating supply with a share of approx. 44% of heat demand and a length of 630 kilometres. Its CHP plants utilise highly efficient, coupled electricity and heat generation. However, this is still based on fossil natural gas, which must be replaced for a climate-neutral heat supply. SachsenEnergie AG's decarbonisation concept, which places a special focus on district heating, shows the potential and ways to achieve GHG-neutral district heating by 2035 and 2045. The heat transformation plan for district heating underpins this with further detailed planning. This concerns, for example
+■ Thermal utilisation of residual waste
+■ Use of large heat pumps
+■ Use of electrode heating boilers
+■ Lowering the grid temperatures ("Low Ex")
+■ Expansion of heat storage capacities
+In addition to replacing natural gas, Dresden's district heating also has potential for densification and expansion. The compression potential lies in particular in areas where natural gas and district heating are currently still being used in parallel.
+Objective: The expansion and decarbonisation of district heating is to use the heat transformation plan to demonstrate how a climate-neutral district heating supply can be achieved by means of specific, coordinated individual measures. It takes into account the redensification of existing areas as well as expansion areas. The results of the heat transformation plan will be integrated into municipal heat planning in such a way that they are compatible with the Dresden City Council's climate neutrality target.
+No.: G.3-01 | Short title: Ring 30
+Building energy supply | Expansion and decarbonisation of district heating
+Type of actions: Direct | Priority: ●●●●
 #
 
 Dresden. Diego
@@ -2639,20 +2622,18 @@ Action plan for climate neutrality 2030
 
 #
 
-|  No.: G.3-01 | Short title: Ring 30  |
-| --- | --- |
-|  Interactions of the actions and synergies  |   |
-|  None  |   |
-|  Notes  |   |
-|  Critical success factors for the project include the increase in investment costs due to inflationary trends, the development of the regulatory framework in the waste and energy sector and the timeline for obtaining the necessary permits for project realisation. The information relates to the planning status as of 12/2023.  |   |
-|  No.: G.3-02 | Short title: Flusswasser-WP Weißeritz  |
-| --- | --- |
-|  Building energy supply | Expansion and decarbonisation of district heating  |
-|  Type of actions: Direct | Priority: ●●●●  |
-|  River water heat pump on the Vereinigte Weißeritz  |   |
-|  Description of the  |   |
-|  The project comprises the planning and construction of a heat pump system in the urban area of Dresden Löbtau (near the Nossener Brücke). The heat pump is to utilise river water (surface water) from the Vereinigte Weißeritz as a heat source. The river water is to be taken from the middle water channel via a lateral branch. The water will be channelled to a pump shaft via an extraction structure in the bank walls and subsequent pipelines. From there, the water is channelled to the heat pump hall. Once the river water has cooled down in the heat pump's evaporator, it is channelled back into the Weißeritz via pipes and a shaft. The heat extracted from the river is brought to a higher, usable temperature level in the heat pump and then fed into the central district heating network. The heat pump has a thermal output of 6.5 MW. The above information reflects the current planning status.  |   |
-|  Objective: Use of environmental heat to decarbonise district heating.  |   |
+No.: G.3-01 | Short title: Ring 30
+Interactions of the actions and synergies
+None
+Notes
+Critical success factors for the project include the increase in investment costs due to inflationary trends, the development of the regulatory framework in the waste and energy sector and the timeline for obtaining the necessary permits for project realisation. The information relates to the planning status as of 12/2023.
+No.: G.3-02 | Short title: Flusswasser-WP Weißeritz
+Building energy supply | Expansion and decarbonisation of district heating
+Type of actions: Direct | Priority: ●●●●
+River water heat pump on the Vereinigte Weißeritz
+Description of the
+The project comprises the planning and construction of a heat pump system in the urban area of Dresden Löbtau (near the Nossener Brücke). The heat pump is to utilise river water (surface water) from the Vereinigte Weißeritz as a heat source. The river water is to be taken from the middle water channel via a lateral branch. The water will be channelled to a pump shaft via an extraction structure in the bank walls and subsequent pipelines. From there, the water is channelled to the heat pump hall. Once the river water has cooled down in the heat pump's evaporator, it is channelled back into the Weißeritz via pipes and a shaft. The heat extracted from the river is brought to a higher, usable temperature level in the heat pump and then fed into the central district heating network. The heat pump has a thermal output of 6.5 MW. The above information reflects the current planning status.
+Objective: Use of environmental heat to decarbonise district heating.
 图
 
 Dresden. Discopu
@@ -2668,7 +2649,7 @@ SachsenEnergie AG (DREWAG)
 Involved
 Environmental Agency, State Reservoir Administration, Monument Protection Authority | Target group
 District heating customers  |
-|  Milestones
+Milestones
 Q2/2023: Start of planning LP1 +2
 Q2/2025: Completion of design planning, approval planning
 Q4/2025: Authorisations are available
@@ -2681,7 +2662,7 @@ Start of the actions
 Q2/2023
 End of the actions
 Q4/2028  |
-|  Energy saving
+Energy saving
 Indirect
 System yield
 GWh/a | GHG reduction
@@ -2689,7 +2670,7 @@ approx. 8,560 t CO2 /a (own calculation SachsenEnergie AG)
 Positive effect
 Decarbonisation of district heating
 Reduce dependence on imports by utilising local energy sources  |
-|  One-off costs
+One-off costs
 million euros | Current costs
 million euros/a  |
 #
@@ -2700,23 +2681,21 @@ Action plan for climate neutrality 2030
 
 #
 
-|  No.: G.3-02 | Short title: Flusswasser-WP Weißeritz  |
-| --- | --- |
-|  Personnel expenses Not specified  |   |
-|  Interactions of the actions and synergies  |   |
-|  Interaction with other projects in the field of green heat (knowledge can be transferred)  |   |
-|  Notes  |   |
-|  The greatest challenges lie in coordinating with the responsible approval authorities during the planning phases and in the time-consuming approval procedures themselves.  |   |
-|  No.: G.3-03 | Short title: Wastewater WP Kaditz  |
-| --- | --- |
-|  Building energy supply | Expansion and decarbonisation of district heating  |
-|  Type of actions: Direct | Priority: ●●●●  |
-|  Wastewater heat pump on the site of the Kaditz sewage treatment plant  |   |
-|  Description: The project comprises the planning and construction of a heat pump system on the premises of Stadtentwässerung Dresden GmbH (central sewage treatment plant in Dresden Kaditz). Purified wastewater is to be used as a heat source for the heat pump after passing through the secondary clarifier (final purification stage). The wastewater is to be cooled by approx. 5 Kelvin. A thermal heating capacity of 12 MW is planned in the first expansion stage. The thermal output of the heat pump is currently limited by the local district heating network. By increasing the capacity of the district heating network, an expansion of the heat pump is conceivable at a later date (second expansion stage).  |   |
-|  Objective: Use of environmental heat to decarbonise district heating.  |   |
-|  Lead responsibility | Target group  |
-|  SachsenEnergie AG (DREWAG) | District heating customers  |
-|  Involved |   |
+No.: G.3-02 | Short title: Flusswasser-WP Weißeritz
+Personnel expenses Not specified
+Interactions of the actions and synergies
+Interaction with other projects in the field of green heat (knowledge can be transferred)
+Notes
+The greatest challenges lie in coordinating with the responsible approval authorities during the planning phases and in the time-consuming approval procedures themselves.
+No.: G.3-03 | Short title: Wastewater WP Kaditz
+Building energy supply | Expansion and decarbonisation of district heating
+Type of actions: Direct | Priority: ●●●●
+Wastewater heat pump on the site of the Kaditz sewage treatment plant
+Description: The project comprises the planning and construction of a heat pump system on the premises of Stadtentwässerung Dresden GmbH (central sewage treatment plant in Dresden Kaditz). Purified wastewater is to be used as a heat source for the heat pump after passing through the secondary clarifier (final purification stage). The wastewater is to be cooled by approx. 5 Kelvin. A thermal heating capacity of 12 MW is planned in the first expansion stage. The thermal output of the heat pump is currently limited by the local district heating network. By increasing the capacity of the district heating network, an expansion of the heat pump is conceivable at a later date (second expansion stage).
+Objective: Use of environmental heat to decarbonise district heating.
+Lead responsibility | Target group
+SachsenEnergie AG (DREWAG) | District heating customers
+Involved
 图
 
 Dresden. Die2qcu
@@ -2729,7 +2708,7 @@ O
 | --- | --- |
 |  Stadtentwässerung Dresden GmbH (SEDD)
 Authorising authorities |   |
-|  Milestones
+Milestones
 ■ 2024: Preliminary talks with the SEDD and approval authorities, rough planning
 ■ Q1-Q2/2025: Start of planning HOAI
 ■ 2025 - 2026: Planning
@@ -2741,7 +2720,7 @@ Start of the actions
 Q1-Q2/2025
 End of the actions
 Q2/2030  |
-|  Energy saving
+Energy saving
 Indirect
 System yield
 GWh/a | GHG reduction
@@ -2749,12 +2728,12 @@ approx. 28,000 tonnesCO2 /a (own calculation SachsenEnergie AG)
 Positive effect
 ■ Decarbonisation of district heating
 ■ Reduce dependence on imports by utilising local energy sources  |
-|  One-off costs
+One-off costs
 approx. 25 million euros | Ongoing costs
 approx. 3.8 million euros  |
-|  Personnel expenses
+Personnel expenses
 Not yet known.  |   |
-|  Interactions of the actions and synergies
+Interactions of the actions and synergies
 None  |   |
 #
 
@@ -2764,18 +2743,16 @@ Action plan for climate neutrality 2030
 
 #
 
-|  No.: G.3-03 | Short title: Wastewater WP Kaditz  |
-| --- | --- |
-|  Notes  |   |
-|  None  |   |
-|  No.: G.3-04 | Short title: WP Mine water  |
-| --- | --- |
-|  Building energy supply | Expansion and decarbonisation of district heating  |
-|  Type of actions: Direct | Priority: ●●●●  |
-|  Mine water heat pump  |   |
-|  Description: The aim of the project is the construction and operation of a heat pump system for green neighbourhood heating in Dresden-Gorbitz. The planned heating capacity is approx. 1 - 1.6 MWth. The mine water from the deep Elbe tunnel serves as the heat source. In a first planning step, the site fundamentals including the potential of the heat source for the provision of district heating were recorded and necessary preliminary investigations such as an exploratory borehole to determine the geological conditions were carried out. The design of the plant and the necessary peripherals will be specified in more detail in the more detailed planning stage. According to the current planning status, the construction of the plant can be divided into four sections. These include the excavation of a technical cavern in the deep Elbe tunnel, the installation of the mine water pipe from the surface to the cavern by means of boreholes, the construction of the mine water route from the borehole to the Q10 heat exchanger station (WÜS Q10) and the equipping of the empty WÜS Q10 with a heat pump and the necessary peripherals. In particular, permits are required for the necessary work, some of which must be carried out on the city's compensation areas. Care is taken to minimise the permanent use and sealing of green spaces. Furthermore, contractual agreements with WISMUT GmbH are a prerequisite for the utilisation of mine water heat.  |   |
-|  Objective: Use of environmental heat to decarbonise district heating.  |   |
-|  Lead responsibility SachsenEnergie AG (DREWAG) Involved | Target group ■ District heating customers  |
+No.: G.3-03 | Short title: Wastewater WP Kaditz
+Notes
+None
+No.: G.3-04 | Short title: WP Mine water
+Building energy supply | Expansion and decarbonisation of district heating
+Type of actions: Direct | Priority: ●●●●
+Mine water heat pump
+Description: The aim of the project is the construction and operation of a heat pump system for green neighbourhood heating in Dresden-Gorbitz. The planned heating capacity is approx. 1 - 1.6 MWth. The mine water from the deep Elbe tunnel serves as the heat source. In a first planning step, the site fundamentals including the potential of the heat source for the provision of district heating were recorded and necessary preliminary investigations such as an exploratory borehole to determine the geological conditions were carried out. The design of the plant and the necessary peripherals will be specified in more detail in the more detailed planning stage. According to the current planning status, the construction of the plant can be divided into four sections. These include the excavation of a technical cavern in the deep Elbe tunnel, the installation of the mine water pipe from the surface to the cavern by means of boreholes, the construction of the mine water route from the borehole to the Q10 heat exchanger station (WÜS Q10) and the equipping of the empty WÜS Q10 with a heat pump and the necessary peripherals. In particular, permits are required for the necessary work, some of which must be carried out on the city's compensation areas. Care is taken to minimise the permanent use and sealing of green spaces. Furthermore, contractual agreements with WISMUT GmbH are a prerequisite for the utilisation of mine water heat.
+Objective: Use of environmental heat to decarbonise district heating.
+Lead responsibility SachsenEnergie AG (DREWAG) Involved | Target group ■ District heating customers
 #
 
 Dresden. Die2qu
@@ -2801,18 +2778,16 @@ Action plan for climate neutrality 2030
 
 #
 
-|  No.: G.3-04 | Short title: WP Mine water  |
-| --- | --- |
-|  None  |   |
-|  No.: G.3-05 | Short title: Waste heat LRZ  |
-| --- | --- |
-|  Building energy supply | Expansion and decarbonisation of district heating  |
-|  Type of actions: Direct | Priority: ●●●●  |
-|  Waste heat utilisation of the Stauffenbergallee regional computer centre  |   |
-|  Description of the The construction of a new state data centre is planned at the Stauffenbergallee site. The waste heat generated, together with the waste heat from the existing data centre, is to be exergetically upgraded by a heat pump system and fed into the central district heating network of the city of Dresden. The output is up to 2.2 MWth.  |   |
-|  Objective: Utilisation of unavoidable waste heat to decarbonise district heating.  |   |
-|  Lead responsibility SachsenEnergie AG (DREWAG) Involved Saxon property and construction management | Target group District heating customers  |
-|  Milestones 06/2024: Signing of a waste heat disposal contract 2027: Commissioning of the new state data centre 2028: Commissioning of the heat pump system | Duration of the actions 5 years Start of the actions 2024  |
+No.: G.3-04 | Short title: WP Mine water
+None
+No.: G.3-05 | Short title: Waste heat LRZ
+Building energy supply | Expansion and decarbonisation of district heating
+Type of actions: Direct | Priority: ●●●●
+Waste heat utilisation of the Stauffenbergallee regional computer centre
+Description of the The construction of a new state data centre is planned at the Stauffenbergallee site. The waste heat generated, together with the waste heat from the existing data centre, is to be exergetically upgraded by a heat pump system and fed into the central district heating network of the city of Dresden. The output is up to 2.2 MWth.
+Objective: Utilisation of unavoidable waste heat to decarbonise district heating.
+Lead responsibility SachsenEnergie AG (DREWAG) Involved Saxon property and construction management | Target group District heating customers
+Milestones 06/2024: Signing of a waste heat disposal contract 2027: Commissioning of the new state data centre 2028: Commissioning of the heat pump system | Duration of the actions 5 years Start of the actions 2024
 #
 
 Dresden. Die2qu
@@ -2821,17 +2796,15 @@ Action plan for climate neutrality 2030
 
 #
 
-|  No.: G.3-05 | Short title: Waste heat LRZ  |
-| --- | --- |
-|   | End of the actions 2028  |
-|  Energy saving Amount not yet known system yield: approx. 8.8 GWh/a, | GHG reduction approx. 3,000 t CO2 /a (own calculation SachsenEnergie AG) Positive effect ■ Decarbonisation of district heating ■ Reduce dependence on imports by utilising local energy sources  |
-|  One-off costs Approx. 4-5 million euros | Ongoing costs Not yet known.  |
-|  Personnel expenses Not yet known.  |   |
-|  Interactions of the actions and synergies Also serves to legitimise the Fabricestrasse or Nordraum district heating route.  |   |
-|  Notes None  |   |
-|  Package of measures no.: G.4 | Fields of action Building energy supply  |
-| --- | --- |
-|  Title: Municipal heat planning  |   |
+No.: G.3-05 | Short title: Waste heat LRZ
+End of the actions 2028
+Energy saving Amount not yet known system yield: approx. 8.8 GWh/a, | GHG reduction approx. 3,000 t CO2 /a (own calculation SachsenEnergie AG) Positive effect ■ Decarbonisation of district heating ■ Reduce dependence on imports by utilising local energy sources
+One-off costs Approx. 4-5 million euros | Ongoing costs Not yet known.
+Personnel expenses Not yet known.
+Interactions of the actions and synergies Also serves to legitimise the Fabricestrasse or Nordraum district heating route.
+Notes None
+Package of measures no.: G.4 | Fields of action Building energy supply
+Title: Municipal heat planning
 #
 
 Dresden. Diezqu
@@ -2901,20 +2874,17 @@ Action plan for climate neutrality 2030
 
 #
 
-|  No.: G.4-01 | Short title: Creation of KWP  |
-| --- | --- |
-|  Notes  |   |
-|  -  |   |
-|  No.: G.4-02 | Short title: Energy consulting programme  |
-| --- | --- |
-|  Fields of action Building energy supply | MaP: Municipal heat planning  |
-|  Type of actions: Information | Priority: ●●●●  |
-|  Energy consulting programme  |   |
-|  Description: A municipal information and energy counselling service is to be set up by the City of Dresden for citizens, property owners and companies. The subject of the advisory service is the use of energy in and on buildings. As a first step, the establishment of an information service in the form of a digital contact point (website) is planned for 2024. The information service bundles existing information (in the areas of climate protection, energy and heat supply) and refers to existing advice options (e.g. BAFA or SAENA). In addition, the organisation of information events together with experts is planned. In addition to an information service, an initial energy counselling service will also be set up as a short-term action. The service will serve as a point of contact for advice on energy-related issues, funding opportunities, energy saving and energy efficiency as well as renovation and modernisation measures in and on buildings. From 2025, medium to long-term actions are possible, including energy-related refurbishment advice in neighbourhoods (KfW 432), the expansion of the advisory service (e.g. e-mobility advice) or the establishment of a municipal funding programme.  |   |
-|  Objective: The aim of the information and energy advice service is to create a first point of contact for systematic and holistic advice on energy and energy efficiency in and around buildings. It supports citizens, property owners and companies as well as energy consultants in Dresden in gathering information and making decisions to increase the energy efficiency of a building. Energy advice makes an important contribution to the implementation of the energy transition and fulfilment of the climate protection goals in the City of Dresden.  |   |
-|  Lead responsibility | Target group  |
-|  Climate Protection and Climate Change Adaptation Unit | Building owners and users / tenants  |
-|   |  Commercial enterprises / companies  |
+No.: G.4-01 | Short title: Creation of KWP
+Notes
+No.: G.4-02 | Short title: Energy consulting programme
+Fields of action Building energy supply | MaP: Municipal heat planning
+Type of actions: Information | Priority: ●●●●
+Energy consulting programme
+Description: A municipal information and energy counselling service is to be set up by the City of Dresden for citizens, property owners and companies. The subject of the advisory service is the use of energy in and on buildings. As a first step, the establishment of an information service in the form of a digital contact point (website) is planned for 2024. The information service bundles existing information (in the areas of climate protection, energy and heat supply) and refers to existing advice options (e.g. BAFA or SAENA). In addition, the organisation of information events together with experts is planned. In addition to an information service, an initial energy counselling service will also be set up as a short-term action. The service will serve as a point of contact for advice on energy-related issues, funding opportunities, energy saving and energy efficiency as well as renovation and modernisation measures in and on buildings. From 2025, medium to long-term actions are possible, including energy-related refurbishment advice in neighbourhoods (KfW 432), the expansion of the advisory service (e.g. e-mobility advice) or the establishment of a municipal funding programme.
+Objective: The aim of the information and energy advice service is to create a first point of contact for systematic and holistic advice on energy and energy efficiency in and around buildings. It supports citizens, property owners and companies as well as energy consultants in Dresden in gathering information and making decisions to increase the energy efficiency of a building. Energy advice makes an important contribution to the implementation of the energy transition and fulfilment of the climate protection goals in the City of Dresden.
+Lead responsibility | Target group
+Climate Protection and Climate Change Adaptation Unit | Building owners and users / tenants
+Commercial enterprises / companies
 图
 
 Dresden. Die2qu
@@ -2988,7 +2958,7 @@ years of the "WiD-Hosterwitz" project
 **End of the actions**
 "Geystrasse" project
 years of the "WiD-Hosterwitz" project  |
-|  **WiD-Hosterwitz" project**
+**WiD-Hosterwitz" project**
 ■ 2023 - scientific conceptualisation
 ■ 2024 - Start of the planning phases
 ■ Mid-2025 - ready for planning permission
@@ -3020,14 +2990,12 @@ Action plan for climate neutrality 2030
 
 #
 
-|  Package of measures no.: G.5 | Fields of action Building energy supply  |
-| --- | --- |
-|  Title: Dresden Hydrogen Agenda  |   |
-|  Description: Hydrogen plays a central role in achieving GHG-neutrality in Dresden. This applies in particular to the decarbonisation of Dresden's district heating and industry, which means that it is also highly relevant for process energy. It is also an important element in maintaining energy and supply security. The connection to the hydrogen core network, which has been announced for 2032 in Dresden, represents an important milestone. However, in order to be able to provide and ensure the corresponding quantities of hydrogen and the necessary hydrogen distribution networks for Dresden, coordination between the relevant players at municipal/regional level is absolutely essential. SachsenNetze GmbH should be in charge of bundling the hydrogen requirements and should also draw up the GTP on this basis. However, this process should be actively supported by partners such as the CoD, in particular the Office for Climate Protection and Climate Change Adaptation and the Office for Economic Development, SachsenEnergie AG as the district heating network operator, as well as key potential industrial hydrogen customers. The needs of industry and district heating must be recorded in as much detail as possible. A process for bundling the required quantities as a basis for specific purchase quantities must be defined and their procurement implemented. In addition, the necessary plans for the specific network conversion and, if necessary, the laying of a main pipeline from the hydrogen core network must be recorded and presented. An initial comprehensive draft must be available by the second quarter of 2025. Active stakeholder management, e.g. with regard to transmission system operators, federal and state governments, as well as association work must be actively pursued by the partners. Objective: By the beginning of 2025, a comprehensive determination, evaluation and bundling of all hydrogen requirements in Dresden as well as a process definition for the bundled procurement of hydrogen quantities must have been completed. All necessary infrastructure measures must also be identified by then and underpinned by feasibility studies and preliminary planning with regard to cost estimates, approval processes and time required, etc. The partners involved are actively lobbying all relevant stakeholders for the realisation of the hydrogen core network for Dresden in 2032.  |   |
-|  No.: O 1-01 | Short title: Central climate protection coordination  |
-| --- | --- |
-|  Fields of action Overarching organisation and control | MaP: Organisation of overarching climate protection work  |
-|  Type of action: Flanking | Priority: ●●●●  |
+Package of measures no.: G.5 | Fields of action Building energy supply
+Title: Dresden Hydrogen Agenda
+Description: Hydrogen plays a central role in achieving GHG-neutrality in Dresden. This applies in particular to the decarbonisation of Dresden's district heating and industry, which means that it is also highly relevant for process energy. It is also an important element in maintaining energy and supply security. The connection to the hydrogen core network, which has been announced for 2032 in Dresden, represents an important milestone. However, in order to be able to provide and ensure the corresponding quantities of hydrogen and the necessary hydrogen distribution networks for Dresden, coordination between the relevant players at municipal/regional level is absolutely essential. SachsenNetze GmbH should be in charge of bundling the hydrogen requirements and should also draw up the GTP on this basis. However, this process should be actively supported by partners such as the CoD, in particular the Office for Climate Protection and Climate Change Adaptation and the Office for Economic Development, SachsenEnergie AG as the district heating network operator, as well as key potential industrial hydrogen customers. The needs of industry and district heating must be recorded in as much detail as possible. A process for bundling the required quantities as a basis for specific purchase quantities must be defined and their procurement implemented. In addition, the necessary plans for the specific network conversion and, if necessary, the laying of a main pipeline from the hydrogen core network must be recorded and presented. An initial comprehensive draft must be available by the second quarter of 2025. Active stakeholder management, e.g. with regard to transmission system operators, federal and state governments, as well as association work must be actively pursued by the partners. Objective: By the beginning of 2025, a comprehensive determination, evaluation and bundling of all hydrogen requirements in Dresden as well as a process definition for the bundled procurement of hydrogen quantities must have been completed. All necessary infrastructure measures must also be identified by then and underpinned by feasibility studies and preliminary planning with regard to cost estimates, approval processes and time required, etc. The partners involved are actively lobbying all relevant stakeholders for the realisation of the hydrogen core network for Dresden in 2032.
+No.: O 1-01 | Short title: Central climate protection coordination
+Fields of action Overarching organisation and control | MaP: Organisation of overarching climate protection work
+Type of action: Flanking | Priority: ●●●●
 #
 
 Dresden. Die2qu
@@ -3048,28 +3016,26 @@ Dresden. Discopu
 Action plan for climate neutrality 2030
 O
 
-|  No.: O.1-01 | Short title: Central climate protection coordination  |
-| --- | --- |
-|   | End of the actions
+No.: O.1-01 | Short title: Central climate protection coordination
+End of the actions
 Q4/2025  |
-|  Energy saving
+Energy saving
 Indirect
 system yield:
 Indirect | GHG reduction
 No direct GHG reduction
 Positive effect
 Supporting actions to realise the GHG reduction potential, bringing together various activities  |
-|  One-off costs
+One-off costs
 none | Ongoing costs
 none  |
-|  Personnel expenses
+Personnel expenses
 ■ One-off: 4 person-months for recruitment process, preparation of job advertisement, familiarisation of new person (effort spread over several people)
 ■ Ongoing: 1 FTE (central climate protection coordination) for the above-mentioned tasks  |   |
-|  Interactions of the actions and synergies  |   |
-|  Notes  |   |
-|  No.: O.1-02 | Short title: Climate protection working meeting  |
-| --- | --- |
-|  Fields of action Overarching organisation and control | MaP: Organisation of overarching climate protection work  |
+Interactions of the actions and synergies
+Notes
+No.: O.1-02 | Short title: Climate protection working meeting
+Fields of action Overarching organisation and control | MaP: Organisation of overarching climate protection work
 
 7
 #
@@ -3143,17 +3109,15 @@ Action plan for climate neutrality 2030
 
 #
 
-|  No.: O.1-03 | Short title: Climate protection platform  |
-| --- | --- |
-|  Indirect | Supporting action to realise the GHG reduction potential; disseminating the climate protection strategy throughout the administration, essential for monitoring actions  |
-|  One-off costs up to 40,000 euros (financed via budget funds from the Climate Protection and Adaptation Unit) | Ongoing costs approx. 15,000 - 20,000 Euro/a (licence fees, hosting and support)  |
-|  Personnel expenses ■ One-off: 3 person-months (staff unit for climate protection and climate change adaptation) and unquantifiable expenditure at relevant offices (moderate) over the duration of the action ■ Ongoing: not yet quantifiable; lead in the Climate Protection and Adaptation Unit (as part of the responsibility for monitoring and controlling)  |   |
-|  Interactions of the actions and synergies Systematic recording of the progress of measures makes it easier for all offices to report on and respond to enquiries from SRs or citizens; improved transparency through a website for the public (see O.2-03)  |   |
-|  Notes None  |   |
-|  No.: O.2-01 | Short title: Climate Advisory Board  |
-| --- | --- |
-|  Fields of action Overarching organisation and control | MaP: Participation concept and public relations work  |
-|  Type of action: Flanking | Priority: ●●●●  |
+No.: O.1-03 | Short title: Climate protection platform
+Indirect | Supporting action to realise the GHG reduction potential; disseminating the climate protection strategy throughout the administration, essential for monitoring actions
+One-off costs up to 40,000 euros (financed via budget funds from the Climate Protection and Adaptation Unit) | Ongoing costs approx. 15,000 - 20,000 Euro/a (licence fees, hosting and support)
+Personnel expenses ■ One-off: 3 person-months (staff unit for climate protection and climate change adaptation) and unquantifiable expenditure at relevant offices (moderate) over the duration of the action ■ Ongoing: not yet quantifiable; lead in the Climate Protection and Adaptation Unit (as part of the responsibility for monitoring and controlling)
+Interactions of the actions and synergies Systematic recording of the progress of measures makes it easier for all offices to report on and respond to enquiries from SRs or citizens; improved transparency through a website for the public (see O.2-03)
+Notes None
+No.: O.2-01 | Short title: Climate Advisory Board
+Fields of action Overarching organisation and control | MaP: Participation concept and public relations work
+Type of action: Flanking | Priority: ●●●●
 #
 
 Dresden. Diezqcu
@@ -3192,17 +3156,15 @@ Action plan for climate neutrality 2030
 
 #
 
-|  No.: O.2-01 | Short title: Climate Advisory Board  |
-| --- | --- |
-|  None  |   |
-|  Package of measures no.: O.3 | Fields of action Overarching organisation and control  |
-| --- | --- |
-|  Title: Financing municipal climate protection  |   |
-|  Description:  |   |
-|  According to the municipal task system, climate protection is still a voluntary, not a mandatory task. This leads to corresponding problems with regard to prioritising the task of climate protection when the local authority's financial scope for action is limited. The CoD should therefore advocate a corresponding strengthening of the task as part of the political discourse.  |   |
-|  Furthermore, there is no standardised definition of what qualifies as a climate protection measure in the municipal context. As a rule, climate protection measures also have a positive impact on other areas (energy saving, health aspects), making it difficult to draw a clear distinction. Climate protection is a cross-sectional task and should therefore be taken into account in all municipal activities, including the preparation of the municipal budget. This applies in particular to investments. If a climate protection measure is economically viable, it should also be implemented. Economical climate protection measures must not be dispensed with in order to secure the overall budget in the event of cost increases. For the preparation of future budgets, it should also be examined how climate protection can be made (more) visible in the municipal budget and which expenses and investments should be prioritised with regard to achieving GHG-neutrality or where municipal expenses and investments may be an obstacle or even counteract the municipal climate protection goals.  |   |
-|  In the future, the financing of actions in the area of climate protection will continue to compete with the financing of other municipal tasks. It is therefore important to examine alternative financing models and, if necessary, to make greater use of tried and tested solutions. The expansion of contracting solutions, for example, should be mentioned in this context. In addition, existing savings from the implementation of climate protection measures could be used to finance new climate investments as part of a fund model. Another possibility is an annual "climate budget". This budget could be based on the CO2 emissions of the CoD and a corresponding price per tonne of CO2. This "climate budget" would be available exclusively for financing climate protection measures.  |   |
-|  Another point is the fulfilment of municipal tasks in the form of municipal associated companies, which must also be increasingly involved in the implementation of climate protection actions (see also action O.6-03).  |   |
+No.: O.2-01 | Short title: Climate Advisory Board
+None
+Package of measures no.: O.3 | Fields of action Overarching organisation and control
+Title: Financing municipal climate protection
+Description:
+According to the municipal task system, climate protection is still a voluntary, not a mandatory task. This leads to corresponding problems with regard to prioritising the task of climate protection when the local authority's financial scope for action is limited. The CoD should therefore advocate a corresponding strengthening of the task as part of the political discourse.
+Furthermore, there is no standardised definition of what qualifies as a climate protection measure in the municipal context. As a rule, climate protection measures also have a positive impact on other areas (energy saving, health aspects), making it difficult to draw a clear distinction. Climate protection is a cross-sectional task and should therefore be taken into account in all municipal activities, including the preparation of the municipal budget. This applies in particular to investments. If a climate protection measure is economically viable, it should also be implemented. Economical climate protection measures must not be dispensed with in order to secure the overall budget in the event of cost increases. For the preparation of future budgets, it should also be examined how climate protection can be made (more) visible in the municipal budget and which expenses and investments should be prioritised with regard to achieving GHG-neutrality or where municipal expenses and investments may be an obstacle or even counteract the municipal climate protection goals.
+In the future, the financing of actions in the area of climate protection will continue to compete with the financing of other municipal tasks. It is therefore important to examine alternative financing models and, if necessary, to make greater use of tried and tested solutions. The expansion of contracting solutions, for example, should be mentioned in this context. In addition, existing savings from the implementation of climate protection measures could be used to finance new climate investments as part of a fund model. Another possibility is an annual "climate budget". This budget could be based on the CO2 emissions of the CoD and a corresponding price per tonne of CO2. This "climate budget" would be available exclusively for financing climate protection measures.
+Another point is the fulfilment of municipal tasks in the form of municipal associated companies, which must also be increasingly involved in the implementation of climate protection actions (see also action O.6-03).
 #
 
 Dresden. Die2qu
@@ -3246,7 +3208,7 @@ Involved
 Implementing organisations: relevant departments and municipal enterprises, municipal holdings holdings | Target group
 ■ City administration
 ■ (Urban society)  |
-|  Milestones
+Milestones
 ■ Q4/2024: Transferring the action portfolios from the action portfolio to the climate protection platform; adding missing information
 ■ Q1-Q3/2025: Use of the project groups to coordinate new actions
 ■ Q3/2025: Availability of new profiles of measures
@@ -3259,14 +3221,14 @@ Q2/2024
 
 End of the actions
 Q2/2026  |
-|  Energy saving
+Energy saving
 Indirect
 system yield:
 None | GHG reduction
 Indirect
 Positive effect
 Concrete, measurable and controllable action steps for urban climate protection strategy  |
-|  One-off costs | Ongoing costs  |
+One-off costs | Ongoing costs
 #
 
 Dresden. Die2qu
@@ -3275,21 +3237,19 @@ Action plan for climate neutrality 2030
 
 #
 
-|  No.: O.4-02 | Short title: Action programme  |
-| --- | --- |
-|  Not known | Not known  |
-|  Personnel expenses  |   |
-|  1 FTE in the staff unit for climate protection and climate change adaptation for overarching maintenance of the action programme and ongoing coordination with the actors involved in the city administration and the municipal holdings (e.g. for 100 actions: approx. 2 days per year per action to coordinate and monitor the preparation/revision of the action profile) As yet unquantifiable effort (highly dependent on the scope and number of actions) of the city administration OUs involved in maintaining and coordinating new actions  |   |
-|  Interactions of the actions and synergies  |   |
-|  None  |   |
-|  Notes  |   |
-|  The support of external consultants may be required to develop actions in areas that have not yet been sufficiently analysed  |   |
-|  Notes  |   |
-|  None  |   |
-|  Package of measures no.: 0.6 | Fields of action Overarching organisation and control  |
-| --- | --- |
-|  Title: GHG-neutrality in the city group  |   |
-|  Description: The original municipal scope for action lies in the GHG-neutrality of its own properties and vehicle fleet as well as municipal emission sources. To this end, the goal of GHG-neutrality by 2035 is proposed for the CoD. This is in line with the approach taken by many local authorities or results in other federal states solely from the requirements of state laws. A separate implementation roadmap with corresponding concrete actions must be developed to realise this goal.  |   |
+No.: O.4-02 | Short title: Action programme
+Not known | Not known
+Personnel expenses
+1 FTE in the staff unit for climate protection and climate change adaptation for overarching maintenance of the action programme and ongoing coordination with the actors involved in the city administration and the municipal holdings (e.g. for 100 actions: approx. 2 days per year per action to coordinate and monitor the preparation/revision of the action profile) As yet unquantifiable effort (highly dependent on the scope and number of actions) of the city administration OUs involved in maintaining and coordinating new actions
+Interactions of the actions and synergies
+None
+Notes
+The support of external consultants may be required to develop actions in areas that have not yet been sufficiently analysed
+Notes
+None
+Package of measures no.: 0.6 | Fields of action Overarching organisation and control
+Title: GHG-neutrality in the city group
+Description: The original municipal scope for action lies in the GHG-neutrality of its own properties and vehicle fleet as well as municipal emission sources. To this end, the goal of GHG-neutrality by 2035 is proposed for the CoD. This is in line with the approach taken by many local authorities or results in other federal states solely from the requirements of state laws. A separate implementation roadmap with corresponding concrete actions must be developed to realise this goal.
 #
 
 Dresden. Die2qu
@@ -3298,16 +3258,14 @@ Action plan for climate neutrality 2030
 
 #
 
-|  Package of measures no.: 0.6 | Fields of action Overarching organisation and control  |
-| --- | --- |
-|  The municipal associated companies are part of the City Group and should therefore also contribute to the municipal climate protection targets.  |   |
-|  Objective: Achieving GHG-neutrality before the target for the city as a whole, fulfilment of the municipal role model effect  |   |
-|  No.: O.6-01 | Short title: GHG-N Administration  |
-| --- | --- |
-|  Fields of action Overarching organisation and control | MaP: GHG-neutrality in the city group  |
-|  Type of action: Flanking | Priority: ●●●●  |
-|  Initiation of the process towards GHG-neutral city administration  |   |
-|  Description: Operationalising the process of a greenhouse gas-neutral administration (GHG-NV) requires a clear, systematic procedure. The following preparatory steps are necessary to set up the process in the city administration of CoD: ■ Clarification of the relevant actors, responsibilities and organisational structures for achieving the GHG-NV target ■ Clarification of processes and coordination formats ■ Develop target image together with the organisational units involved ■ Clarification of system boundaries according to operational, financial control approach or proportional approach ■ Clarification of the accounting framework: which emission sources are to be included in the GHG-NV (data availability) ■ Clarification of the existence of GHG emission sources in the city administration (organisational units with properties, vehicle fleet, business trips, procurement, etc.) ■ Materiality assessment of the climate protection aspects of the administration ■ Development of an overarching roadmap ■ Clarification of how to deal with compensation ■ Submission of a template for GHG-N management in the DB-OB to confirm the work processes Setting up the process and creating a corresponding template for the DB-OB is to be supported by external consultants. This will make it possible to draw on experience from other municipalities that have already started such a process (e.g. Munich).  |   |
+Package of measures no.: 0.6 | Fields of action Overarching organisation and control
+The municipal associated companies are part of the City Group and should therefore also contribute to the municipal climate protection targets.
+Objective: Achieving GHG-neutrality before the target for the city as a whole, fulfilment of the municipal role model effect
+No.: O.6-01 | Short title: GHG-N Administration
+Fields of action Overarching organisation and control | MaP: GHG-neutrality in the city group
+Type of action: Flanking | Priority: ●●●●
+Initiation of the process towards GHG-neutral city administration
+Description: Operationalising the process of a greenhouse gas-neutral administration (GHG-NV) requires a clear, systematic procedure. The following preparatory steps are necessary to set up the process in the city administration of CoD: ■ Clarification of the relevant actors, responsibilities and organisational structures for achieving the GHG-NV target ■ Clarification of processes and coordination formats ■ Develop target image together with the organisational units involved ■ Clarification of system boundaries according to operational, financial control approach or proportional approach ■ Clarification of the accounting framework: which emission sources are to be included in the GHG-NV (data availability) ■ Clarification of the existence of GHG emission sources in the city administration (organisational units with properties, vehicle fleet, business trips, procurement, etc.) ■ Materiality assessment of the climate protection aspects of the administration ■ Development of an overarching roadmap ■ Clarification of how to deal with compensation ■ Submission of a template for GHG-N management in the DB-OB to confirm the work processes Setting up the process and creating a corresponding template for the DB-OB is to be supported by external consultants. This will make it possible to draw on experience from other municipalities that have already started such a process (e.g. Munich).
 图
 
 Dresden. D1c2qc0
@@ -3326,7 +3284,7 @@ Initially: Office for Building Construction and Real Estate Management, all offi
 ■ City administration
 ■ City Council
 ■ The public  |
-|  Milestones
+Milestones
 ■ Q4/2024: Commissioning of an external consultancy
 ■ Q4/2024: 1st workshop with relevant offices as part of the IEK project group (basics, as-is analysis)
 ■ Q1/2025: 2nd workshop with relevant offices as part of the IEK project group (clarification of process, development of proposal)
@@ -3337,7 +3295,7 @@ Start of the actions
 Q4/2024
 End of the actions
 Q3/2025  |
-|  Energy saving
+Energy saving
 Indirect
 system yield:
 None | GHG reduction
@@ -3352,16 +3310,14 @@ Action plan for climate neutrality 2030
 
 #
 
-|  No.: O.6-01 | Short title: GHG-N Administration  |
-| --- | --- |
-|  One-off costs Estimate approx. 15,000 euros for external consulting, no market survey available yet | Ongoing costs Not yet known  |
-|  Personnel expenses ■ To prepare the template: approx. 4 person-months of work in the Climate Protection and Climate Change Adaptation Unit with support from external service providers ■ Permanent: 1 FTE position must be created to coordinate and implement the GHG-NV process in order to cover the task on a permanent basis  |   |
-|  Interactions of the actions and synergies Interaction with the action "Introduction of a GHG inventory for the city administration, including municipal enterprises"  |   |
-|  Notes The recruitment process for the coordination of the GHG-N administration must be carried out in parallel with the development of the process so that work can begin as soon as the proposal has been approved  |   |
-|  Package of measures no.: O.8 | Fields of action Overarching organisation and control  |
-| --- | --- |
-|  Title: Monitoring and controlling concept  |   |
-|  Description: Controlling of the Integrated Energy and Climate Protection Plan (IEK) takes place in an agile process due to the tight time frame until the target year. By adopting the IEK, the city council commissions the city administration to initiate and implement the actions, which are continuously expanded and modified. Concrete interim targets of the city's climate protection strategy are linked to the target of a greenhouse gas-neutral Dresden and are reviewed two years after achievement when the respective GHG inventory is submitted. This assessment enables deviations to be identified and the climate protection strategy to be adjusted.  |   |
+No.: O.6-01 | Short title: GHG-N Administration
+One-off costs Estimate approx. 15,000 euros for external consulting, no market survey available yet | Ongoing costs Not yet known
+Personnel expenses ■ To prepare the template: approx. 4 person-months of work in the Climate Protection and Climate Change Adaptation Unit with support from external service providers ■ Permanent: 1 FTE position must be created to coordinate and implement the GHG-NV process in order to cover the task on a permanent basis
+Interactions of the actions and synergies Interaction with the action "Introduction of a GHG inventory for the city administration, including municipal enterprises"
+Notes The recruitment process for the coordination of the GHG-N administration must be carried out in parallel with the development of the process so that work can begin as soon as the proposal has been approved
+Package of measures no.: O.8 | Fields of action Overarching organisation and control
+Title: Monitoring and controlling concept
+Description: Controlling of the Integrated Energy and Climate Protection Plan (IEK) takes place in an agile process due to the tight time frame until the target year. By adopting the IEK, the city council commissions the city administration to initiate and implement the actions, which are continuously expanded and modified. Concrete interim targets of the city's climate protection strategy are linked to the target of a greenhouse gas-neutral Dresden and are reviewed two years after achievement when the respective GHG inventory is submitted. This assessment enables deviations to be identified and the climate protection strategy to be adjusted.
 #
 
 Dresden. Die2qu
@@ -3505,16 +3461,14 @@ Action plan for climate neutrality
 
 #
 
-|  Indicator name | Definition of | Effect | Unit | Data source  |
-| --- | --- | --- | --- | --- |
-|  Cumulative GHG emissions from 2020 onwards | Total greenhouse gas emissions in the urban area (BISKO) | Comparison with Dresden CO residual budget2 | tCO2_eq | Totalling GHG emissions over time  |
-|  B-3.1: Impact pathways |  |  |  |  |  |   |
-| --- | --- | --- | --- | --- | --- | --- |
-|  Indicator name | Indicator no. | Results/Impacts treated | Unit | Target values 2025 | Target values 2027 | Target values 2030  |
-|  Total GHG emissions (BISKO) | THG_Ges | All final energy-based emissions | tCO2_eq/a | 2.885.333 | 2.371.705 | 1.586.948  |
-|  Total GHG emissions (BISKO) per capita | THG_Ges,pK | All final energy-based emissions | tCO2_eq/a | 5,07 | 4,17 | 2,79  |
-|  GHG emissions from private households and residential buildings | THG_PHH | Decarbonisation of district heating and expansion of district heating Conversion of electricity to renewable energies in the urban area and electricity supply Reduction in energy demand for heat Reduction in energy requirements Electricity Substitution of fossil fuels with renewable energy sources for decentralised building energy supply | tCO2_eq/a | 800.568 | 663.014 | 454.096  |
-|  GHG emissions from private trade/commerce/services and | THG_GHD | Decarbonisation of district heating and expansion of district heating Conversion of electricity to renewable energies in the urban area and electricity supply | tCO2_eq/a | 441.673 | 355.367 | 229.355  |
+Indicator name | Definition of | Effect | Unit | Data source
+Cumulative GHG emissions from 2020 onwards | Total greenhouse gas emissions in the urban area (BISKO) | Comparison with Dresden CO residual budget2 | tCO2_eq | Totalling GHG emissions over time
+B-3.1: Impact pathways
+Indicator name | Indicator no. | Results/Impacts treated | Unit | Target values 2025 | Target values 2027 | Target values 2030
+Total GHG emissions (BISKO) | THG_Ges | All final energy-based emissions | tCO2_eq/a | 2.885.333 | 2.371.705 | 1.586.948
+Total GHG emissions (BISKO) per capita | THG_Ges,pK | All final energy-based emissions | tCO2_eq/a | 5,07 | 4,17 | 2,79
+GHG emissions from private households and residential buildings | THG_PHH | Decarbonisation of district heating and expansion of district heating Conversion of electricity to renewable energies in the urban area and electricity supply Reduction in energy demand for heat Reduction in energy requirements Electricity Substitution of fossil fuels with renewable energy sources for decentralised building energy supply | tCO2_eq/a | 800.568 | 663.014 | 454.096
+GHG emissions from private trade/commerce/services and | THG_GHD | Decarbonisation of district heating and expansion of district heating Conversion of electricity to renewable energies in the urban area and electricity supply | tCO2_eq/a | 441.673 | 355.367 | 229.355
 #
 
 Dresden. Diezqu
@@ -3525,21 +3479,20 @@ Action plan for climate neutrality
 
 #
 
-|  8-3.1: Impact pathways |  |  |  |  |  |   |
-| --- | --- | --- | --- | --- | --- | --- |
-|  Indicator name | Indicator no. | Results/Impacts treated | Unit | Target values 2025 | Target values 2027 | Target values 2030  |
-|  non-residential buildings |  | Reduction in energy demand for heat
+8-3.1: Impact pathways
+Indicator name | Indicator no. | Results/Impacts treated | Unit | Target values 2025 | Target values 2027 | Target values 2030
+non-residential buildings | Reduction in energy demand for heat
 Reduction in energy requirements Electricity
 Substitution of fossil fuels with renewable energy sources for decentralised building energy supply |  |  |  |   |
-|  GHG emissions from industry and process energy | THG_IND | Decarbonisation of district heating and expansion of district heating
+GHG emissions from industry and process energy | THG_IND | Decarbonisation of district heating and expansion of district heating
 Conversion of electricity to renewable energies in the urban area and electricity supply
 Conversion from natural gas utilisation to green hydrogen
 Reduction in energy demand for heat
 Reduction in energy requirements Electricity
 Substitution of fossil fuels with renewable energy sources for decentralised building energy supply | tCO2.eq/a | 930.579 | 794.780 | 575.905  |
-|  GHG emissions from transport (BISKO) | THG_MOB | Reduction in energy requirements for mobility
+GHG emissions from transport (BISKO) | THG_MOB | Reduction in energy requirements for mobility
 Substitution of fossil fuels with renewable energy sources | tCO2.eq/a | 712.513 | 558.545 | 327.592  |
-|  GHG emissions from fossil fuels | THG_fossstat | Conversion from natural gas utilisation to green hydrogen | tCO2.eq/a | 935.418 | 824.178 | 667.703  |
+GHG emissions from fossil fuels | THG_fossstat | Conversion from natural gas utilisation to green hydrogen | tCO2.eq/a | 935.418 | 824.178 | 667.703
 #
 
 Dresden. Diezqu
@@ -3569,21 +3522,19 @@ Action plan for climate neutrality
 
 #
 
-|  B-3.1: Impact pathways  |   |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- | --- |
-|  Indicator name | Indicator no. | Results/Impacts treated | Unit | Target values 2025 | Target values 2027 | Target values 2030  |
-|  electricity (national) |  |  |  |  |  |   |
-|  Local district heating emission factor | f_THG,FW | Decarbonisation of district heating | g/kWh | 0,169 | 0,142 | 0,102  |
-|  Cumulative GHG emissions from 2020 onwards | THG_cum | Consideration of the path and not just the destination | tCO2_eq | 19.273.584 | 24.273.821 | 29.820.701  |
-|  B-3.2: Indicator metadata  |   |
-| --- | --- |
-|  (For each selected indicator)  |   |
-|  Indicator name18 | Total GHG emissions (BISKO); Total GHG emissions (BISKO) per capita; GHG emissions from private house-holds and residential buildings; GHG emissions from private trade/commerce/services and non-residential buildings; GHG emissions from industry and process energy; GHG emissions from transport (BISKO); GHG emissions from fossil fuels Scope 1 (stationary); GHG emissions from fossil fuels Scope 1 (transport)  |
-|  Display unit | tCO2_eq/a or tCO2_eq/a/capita  |
-|  Definition of | Result of the calculation of city-wide GHG emissions from final energy consumption (BISKO); the data is also calculated subdivided for the various sectors  |
-|  Calculation | Σ QEnergy carrier * fTHG,energy carrier + Σ AStrom * fTHG,electricity  |
-|  Indicator context |   |
-|  Does the indicator measure direct effects (reduction in greenhouse gas emissions?) | Yes  |
+B-3.1: Impact pathways
+Indicator name | Indicator no. | Results/Impacts treated | Unit | Target values 2025 | Target values 2027 | Target values 2030
+electricity (national)
+Local district heating emission factor | f_THG,FW | Decarbonisation of district heating | g/kWh | 0,169 | 0,142 | 0,102
+Cumulative GHG emissions from 2020 onwards | THG_cum | Consideration of the path and not just the destination | tCO2_eq | 19.273.584 | 24.273.821 | 29.820.701
+B-3.2: Indicator metadata
+(For each selected indicator)
+Indicator name18 | Total GHG emissions (BISKO); Total GHG emissions (BISKO) per capita; GHG emissions from private house-holds and residential buildings; GHG emissions from private trade/commerce/services and non-residential buildings; GHG emissions from industry and process energy; GHG emissions from transport (BISKO); GHG emissions from fossil fuels Scope 1 (stationary); GHG emissions from fossil fuels Scope 1 (transport)
+Display unit | tCO2_eq/a or tCO2_eq/a/capita
+Definition of | Result of the calculation of city-wide GHG emissions from final energy consumption (BISKO); the data is also calculated subdivided for the various sectors
+Calculation | Σ QEnergy carrier * fTHG,energy carrier + Σ AStrom * fTHG,electricity
+Indicator context
+Does the indicator measure direct effects (reduction in greenhouse gas emissions?) | Yes
 3
 
 Dresden. Diezqui
@@ -3594,23 +3545,22 @@ Action plan for climate neutrality
 
 O
 
-|  If so, which emission source sectors are measured? | Energy systems
+If so, which emission source sectors are measured? | Energy systems
 Built environment
 Mobility  |
-| --- | --- |
-|  Does the indicator measure indirect effects (i.e. co-benefits)? | No  |
-|  If so, what additional benefit is measured? |   |
-|  Is the indicator useful for monitoring the results/impact of actions? | No, it captures the effect of the sum of actions  |
-|  If so, for which action and impact pathway is it relevant? | Overall reduction target  |
-|  Is the indicator covered by the existing CDP/SCIS/Covenant of Mayors platforms? | Yes  |
-|  Data requirements | Input data for the city's green house gas inventory  |
-|  Expected data, source | Data sources for urban GHG inventory  |
-|  Is the data source local or regional/national? | Mainly local, partly national  |
-|  Expected availability | already available  |
-|  Recommended collection interval | yearly  |
-|  References |   |
-|  Services that describe the indicator |   |
-|  Other indicator systems use this indicator |   |
+Does the indicator measure indirect effects (i.e. co-benefits)? | No
+If so, what additional benefit is measured?
+Is the indicator useful for monitoring the results/impact of actions? | No, it captures the effect of the sum of actions
+If so, for which action and impact pathway is it relevant? | Overall reduction target
+Is the indicator covered by the existing CDP/SCIS/Covenant of Mayors platforms? | Yes
+Data requirements | Input data for the city's green house gas inventory
+Expected data, source | Data sources for urban GHG inventory
+Is the data source local or regional/national? | Mainly local, partly national
+Expected availability | already available
+Recommended collection interval | yearly
+References
+Services that describe the indicator
+Other indicator systems use this indicator
 #
 
 Dresden. Diezqcu
@@ -4907,13 +4857,11 @@ To forecast the development of greenhouse gas emissions, the energy source hydro
 
 Table 6-12: Allocation of the Fields of action to the energy sources considered therein
 
-|   |  | Renewable heat | Natural gas and other fossil fuels | District heating | Heating current | Electricity | Hydrogen | Fossil fuels  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  |   |   |   |   |   |   |   |   |
-|  Residential building |  | X | X | X | X | X |  |   |
-|  Non-residen-tial buildings |  | X | X | X | X | X |  |   |
-|  Process energy |  |  | X | X |  | X | X |   |
-|  Mobility |  |  |  |  |  | X | X | X  |
+Renewable heat | Natural gas and other fossil fuels | District heating | Heating current | Electricity | Hydrogen | Fossil fuels
+Residential building | X | X | X | X | X
+Non-residen-tial buildings | X | X | X | X | X
+Process energy | X | X | X | X
+Mobility | X | X | X
 
 In order to be able to map the substitution and reduction potentials pragmatically but appropriately, various specifications must be made for the reduction path calculator, as shown below, which make the tool manageable.
 
@@ -8743,46 +8691,45 @@ Beschlussfassung Stadtrat vom 20.11.2014, Teil C: Mobilitätsstrategie 2025plus
 
 W
 
-|  Nr. | Indikatoren
+Nr. | Indikatoren
 (Rahmendaten und
 Kemindikatoren farblich unterlegt) | Erhebung durch |   |   | Erhebungs-zeitraum
 (aller .. Jahre) | Entwicklungsziel
 (Basis: 2011)  |
-| --- | --- | --- | --- | --- | --- | --- |
-|   |   |  LHD | Dritte | Verkehrs-modell  |   |   |
-|  0. Rahmendaten Verkehrssystem |   |  |  |  |  |   |
-|  1 | Motorisierungsentwicklung (Kfz-Bestand, Haushaltsmotorisierung nach SrV) | x | SrV |  | 1 bzw 5 | Rahmendaten  |
-|  2 | Entwicklung Verkehrsverhalten (Nutzungshäufigkeiten, Wegezeiten, Wegezweck + Pkw-Besetzungsgrad) |  | x |  | 5 | Rahmendaten  |
-|  3 | Pendlerverflechtungen |  | x |  | 1 | Rahmendaten  |
-|  4 | Verkehrsmengenentwicklung an Dauerzählstellen (Kfz-Verkehr, Rad) sowie ÖPNV-Fahrgastzahlen | x |  |  | 1 | Rahmendaten  |
-|  5 | Verkehrsmengen Kfz-Verkehr und Rad, Fuß sowie Fahrgastzahlen des ÖPNV auf den Elbbrücken | x | x |  | 1 | Rahmendaten  |
-|  6 | Verkehrsmengen Kfz-Verkehr und ÖPNV an den Stadtzufahrten | x | x |  | 1 | Rahmendaten  |
-|  7 | Schwerverkehrsbelastung an den Dauerzählstellen | x |  |  | 1 | Rahmendaten  |
-|  8 | Anzahl und Auslastung der Stellplätze der Innenstadt und durchschnittliche Höhe der Parkgebühren großer privater öffentlicher Anlagen | x | x |  | 1 bzw. 3 | Rahmendaten  |
-|  9 | Anzahl P + R-Plätze im Stadtgebiet von Dresden | x |  |  | 1 | Rahmendaten  |
-|  10 | Entwicklung der individuellen Kosten für Mobilität (ÖPNV, Kfz-Flotte) | x | x |  | 3 | Rahmendaten  |
-|  11 | Investitionen in Bestandserhalt Straße und ÖPNV | x | x |  | 1 | Rahmendaten  |
-|  12 | Investitionen in Neubau und grundhaften Ausbau von Infrastruktur (komplexe Maßnahmen bzw. Straße, ÖPNV, Rad, Fuß) | x | x |  | 1 | Rahmendaten  |
-|  13 | städtischer Finanzierungsanteil ÖV | x |  |  | 1 | Rahmendaten  |
-|  14 | Streckenlänge Straßen- und Radverkehrsnetz differenziert nach Ausbaustandard bzw. Führungsart | x |  |  | 1 | Rahmendaten  |
-|  15 | Streckenlänge ÖV-Netz |  | x |  | 1 | Rahmendaten  |
-|  I. Spezifische Werte zur Dresdner Mobilität |   |  |  |  |  |   |
-|  16 | Modal Split der Dresdner (Gesamt-, Binnenverkehr) |  | SrV | x | 5 | Erhöhung Anteil Umweltverbund  |
-|  17 | Modal Split im Pendlerverkehr |  | SrV | x | 5 | Erhöhung Anteil Umweltverbund  |
-|  18 | Entwicklung Verkehrsverhalten (Wegeweiten, Multimodalität) |  | SrV | x | 5 | Verringerg. der Kfz-Wegeweiten, Erhöhung Anteil Multimodalität  |
-|  II. Verkehrsaufkommen und Verkehrsqualität |   |  |  |  |  |   |
-|  19 | Verkehrsbelastungen im 26er Ring im Kfz-Verkehr | x |  | x | 5 | Verringerung um 5%  |
-|  20 | Reisegeschwindigkeit MIV, ÖPNV | x | x |  | 1 bzw. 2 | Verhältnis ÖV : IV verbessern zugunsten des ÖV  |
-|  21 | Pünktlichkeit im ÖPNV |  | x |  | 1 | Erhöhung  |
-|  22 (4) | Fahrgastzahlen ÖPNV differenziert nach SPNV/ Stadtbahn/ Stadtbus/ Regionalbus |  | x |  | 1 | Erhöhung  |
-|  23 | Verkehrsleistung innerhalb Stadtgebiet Dresdens (IV, ÖV, Rad) |  | SrV | x | 5 | Erhöhung für ÖV und Rad  |
-|  24 | Anzahl Dauerkarten ÖV |  | x |  | 1 | Erhöhung  |
-|  25 | Betriebliches Mobilitätsmanagement (Jobtickets, Initiativen) | x | x |  | 3 | Erhöhung bzw. Verbesserung  |
-|  III. Kombinierte Verkehrs/ Innovation |   |  |  |  |  |   |
-|  26 | Anzahl der Elektro-Kfz in Dresden |  |  |  | 1 | Erhöhung  |
-|  27 | Anteil der elektrisch betriebenen Verkehrsmittel an der Verkehrsleistung (ggf. nur Personenverkehr) | x | x |  | 3 | Erhöhung  |
-|  28 | Anzahl Carsharing-Nutzer, Stationen bzw. Fahrzeuge |  | x |  | 1 | Erhöhung  |
-|  29 | Anzahl von Pedelecs |  | SrV |  | 5 | Erhöhung  |
+LHD | Dritte | Verkehrs-modell
+0. Rahmendaten Verkehrssystem
+1 | Motorisierungsentwicklung (Kfz-Bestand, Haushaltsmotorisierung nach SrV) | x | SrV | 1 bzw 5 | Rahmendaten
+2 | Entwicklung Verkehrsverhalten (Nutzungshäufigkeiten, Wegezeiten, Wegezweck + Pkw-Besetzungsgrad) | x | 5 | Rahmendaten
+3 | Pendlerverflechtungen | x | 1 | Rahmendaten
+4 | Verkehrsmengenentwicklung an Dauerzählstellen (Kfz-Verkehr, Rad) sowie ÖPNV-Fahrgastzahlen | x | 1 | Rahmendaten
+5 | Verkehrsmengen Kfz-Verkehr und Rad, Fuß sowie Fahrgastzahlen des ÖPNV auf den Elbbrücken | x | x | 1 | Rahmendaten
+6 | Verkehrsmengen Kfz-Verkehr und ÖPNV an den Stadtzufahrten | x | x | 1 | Rahmendaten
+7 | Schwerverkehrsbelastung an den Dauerzählstellen | x | 1 | Rahmendaten
+8 | Anzahl und Auslastung der Stellplätze der Innenstadt und durchschnittliche Höhe der Parkgebühren großer privater öffentlicher Anlagen | x | x | 1 bzw. 3 | Rahmendaten
+9 | Anzahl P + R-Plätze im Stadtgebiet von Dresden | x | 1 | Rahmendaten
+10 | Entwicklung der individuellen Kosten für Mobilität (ÖPNV, Kfz-Flotte) | x | x | 3 | Rahmendaten
+11 | Investitionen in Bestandserhalt Straße und ÖPNV | x | x | 1 | Rahmendaten
+12 | Investitionen in Neubau und grundhaften Ausbau von Infrastruktur (komplexe Maßnahmen bzw. Straße, ÖPNV, Rad, Fuß) | x | x | 1 | Rahmendaten
+13 | städtischer Finanzierungsanteil ÖV | x | 1 | Rahmendaten
+14 | Streckenlänge Straßen- und Radverkehrsnetz differenziert nach Ausbaustandard bzw. Führungsart | x | 1 | Rahmendaten
+15 | Streckenlänge ÖV-Netz | x | 1 | Rahmendaten
+I. Spezifische Werte zur Dresdner Mobilität
+16 | Modal Split der Dresdner (Gesamt-, Binnenverkehr) | SrV | x | 5 | Erhöhung Anteil Umweltverbund
+17 | Modal Split im Pendlerverkehr | SrV | x | 5 | Erhöhung Anteil Umweltverbund
+18 | Entwicklung Verkehrsverhalten (Wegeweiten, Multimodalität) | SrV | x | 5 | Verringerg. der Kfz-Wegeweiten, Erhöhung Anteil Multimodalität
+II. Verkehrsaufkommen und Verkehrsqualität
+19 | Verkehrsbelastungen im 26er Ring im Kfz-Verkehr | x | x | 5 | Verringerung um 5%
+20 | Reisegeschwindigkeit MIV, ÖPNV | x | x | 1 bzw. 2 | Verhältnis ÖV : IV verbessern zugunsten des ÖV
+21 | Pünktlichkeit im ÖPNV | x | 1 | Erhöhung
+22 (4) | Fahrgastzahlen ÖPNV differenziert nach SPNV/ Stadtbahn/ Stadtbus/ Regionalbus | x | 1 | Erhöhung
+23 | Verkehrsleistung innerhalb Stadtgebiet Dresdens (IV, ÖV, Rad) | SrV | x | 5 | Erhöhung für ÖV und Rad
+24 | Anzahl Dauerkarten ÖV | x | 1 | Erhöhung
+25 | Betriebliches Mobilitätsmanagement (Jobtickets, Initiativen) | x | x | 3 | Erhöhung bzw. Verbesserung
+III. Kombinierte Verkehrs/ Innovation
+26 | Anzahl der Elektro-Kfz in Dresden | 1 | Erhöhung
+27 | Anteil der elektrisch betriebenen Verkehrsmittel an der Verkehrsleistung (ggf. nur Personenverkehr) | x | x | 3 | Erhöhung
+28 | Anzahl Carsharing-Nutzer, Stationen bzw. Fahrzeuge | x | 1 | Erhöhung
+29 | Anzahl von Pedelecs | SrV | 5 | Erhöhung
 
 Tabelle 1: Monitoring-Indikatoren mit Quellen, Erhebungszeiträumen und Anwendungsgebieten (1/2) (Stand 09.01.2015)
 
@@ -8793,44 +8740,43 @@ Beschlussfassung Stadtrat vom 20.11.2014, Teil C: Mobilitätsstrategie 2025plus
 
 W
 
-|  Nr. | Indikatoren
+Nr. | Indikatoren
 (Rahmendaten und
 Kernindikatoren farblich unterlegt) | Erhebung durch |   |   | Erhebungs-zeitraum
 (aller ... Jahre) | Entwicklungsziel
 (Basis: 2011)  |
-| --- | --- | --- | --- | --- | --- | --- |
-|  IV. Umwelt und Kosten |   |  |  |  |  |   |
-|  30 | Kraftstoffverbrauch im Kfz-Verkehr der Dresdner | x | SrV |  | 5 | deutliche Reduzierung  |
-|  31 | CO₂-E mission im Verkehr | x |  |  | 3 | Verringerung nach kommun. Ziel
+IV. Umwelt und Kosten
+30 | Kraftstoffverbrauch im Kfz-Verkehr der Dresdner | x | SrV | 5 | deutliche Reduzierung
+31 | CO₂-E mission im Verkehr | x | 3 | Verringerung nach kommun. Ziel
 gem. EU- und nationaler Vorgaben,
 (minus 10% alle 5 Jahre zu 2005)  |
-|  32 | Überschreitungstage von PM10-Grenzwerten | x |  |  | 1 | Verringerung basierend auf den EU-Luftreinhaltestandards  |
-|  33 | Anzahl der von Grenzwertüberschreitung PM10 und
+32 | Überschreitungstage von PM10-Grenzwerten | x | 1 | Verringerung basierend auf den EU-Luftreinhaltestandards
+33 | Anzahl der von Grenzwertüberschreitung PM10 und
 NOₓ betroffenen Einwohner | x |  |  | wenn verfügbar | Verringerung  |
-|  34 | Lärmbelastung der Einwohner | x |  |  | 3 | Verringerung basierend auf den EU-Lärmvorgaben  |
-|  35 | Anteil regenerativer Energien am Energieverbrauch
+34 | Lärmbelastung der Einwohner | x | 3 | Verringerung basierend auf den EU-Lärmvorgaben
+35 | Anteil regenerativer Energien am Energieverbrauch
 des motorisierten Verkehrs | x | x |  | wenn verfügbar | Erhöhung  |
-|  36 | Finanzierungsabsicherung Bestandserhalt | x |  |  | 1 | Bestand nachhaltig sichern  |
-|  37 | Grün in der Stadt, Straßenbäume | x |  |  | 3 | Vitaler Bestand und Entwicklung: bis
+36 | Finanzierungsabsicherung Bestandserhalt | x | 1 | Bestand nachhaltig sichern
+37 | Grün in der Stadt, Straßenbäume | x | 3 | Vitaler Bestand und Entwicklung: bis
 77.400 Stück Straßenbäume  |
-|  V. Infrastrukturentwicklung/ Verkehrssicherheit |   |  |  |  |  |   |
-|  38 | Zustandsbewertung des Straßennetzes | x |  |  | 3 | Verbesserung  |
-|  39 | Zustandsbewertung der Gehwege | x |  |  | 3 | Verbesserung  |
-|  40 | Zustandsbewertung der Radverkehrsanlagen | x |  |  | 3 | Verbesserung  |
-|  41 | Anteil Verkehrsberuhigung an allen Straßen | x |  |  | 1 | Erhöhung  |
-|  42
+V. Infrastrukturentwicklung/ Verkehrssicherheit
+38 | Zustandsbewertung des Straßennetzes | x | 3 | Verbesserung
+39 | Zustandsbewertung der Gehwege | x | 3 | Verbesserung
+40 | Zustandsbewertung der Radverkehrsanlagen | x | 3 | Verbesserung
+41 | Anteil Verkehrsberuhigung an allen Straßen | x | 1 | Erhöhung
+42
 (14) | Streckenlänge Radverkehrsanlagen, differenziert
 nach-Führungsart | x |  |  | 1 | Erhöhung  |
-|  43 | Anteil barrierefreier Haltestellen und Fahrzeuge des
+43 | Anteil barrierefreier Haltestellen und Fahrzeuge des
 ÖPNV | x | x |  | 1 | Erhöhung, entspr. UN-Behinderten-rechtskonvention und PbFG  |
-|  44 | Unfallzahlen nach Ort, Kategorien und Beteiligung | x | x |  | 1 | Verringerung Häufigkeit/ Schwere  |
-|  45 | Anteil Einwohner im fußläufigen Einzugsbereich von
+44 | Unfallzahlen nach Ort, Kategorien und Beteiligung | x | x | 1 | Verringerung Häufigkeit/ Schwere
+45 | Anteil Einwohner im fußläufigen Einzugsbereich von
 ÖPNV-Stationen/Haltestellen | x |  |  | 1 | Erhöhung  |
-|  46 | Zufriedenheit mit dem Verkehrsangebot (ÖPNV, Parken, Radwege) | x |  |  | wenn aus Komm. Bürgerumfrage verfügbar | Erhöhung  |
-|  VI. Stand der Maßnahmenumsetzung VEP |   |  |  |  |  |   |
-|  47 | Anteil umgesetzter bzw. in Umsetzung befindlicher
+46 | Zufriedenheit mit dem Verkehrsangebot (ÖPNV, Parken, Radwege) | x | wenn aus Komm. Bürgerumfrage verfügbar | Erhöhung
+VI. Stand der Maßnahmenumsetzung VEP
+47 | Anteil umgesetzter bzw. in Umsetzung befindlicher
 Maßnahmen | x |  |  | 3 | Umsetzung  |
-|  48 | Evaluierung verkehrlicher, wirtschaftlicher,
+48 | Evaluierung verkehrlicher, wirtschaftlicher,
 umweltseitiger und städtebaulicher Kriterien für
 geeignete Einzelmaßnahmen des VEP | x |  |  | frühestens 2 Jahre nach Umsetzung | Erfüllung der für die Maßnahmen
 jeweils vorgegebenen Ziele  |
@@ -10400,35 +10346,33 @@ Ingenieurgruppe IVV Aachen/ Ingenieurbüro IVAS Dresden
 Anlage 1 - Leitziele
 Seite 4
 
-|  **Leitziel 2**
+**Leitziel 2**
 Sozial gerechte Mobilitätsteil-habe – unter Berücksichtigung spezifischer Bedürfnisse aufgrund unterschiedlicher Lebensbedingungen – und damit gleiche Chancen für alle zur Beteiligung am gesellschaftlichen Leben | 2.1 | Gewährleistung des Zugangs für mobilitätseingeschränkte und einkommensschwache Bürgerinnen und Bürger zu Verkehrsnetzen und Verkehrsmitteln einschließlich besserer Nutzungsmöglichkeiten  |
-| --- | --- | --- |
-|   |  2.2 | Gewährleistung der Erreichbarkeit von Haltestellen und des barrierefreien Zugangs zum ÖPNV sowie notwendiger Informationen zu den Verkehrsmitteln insbesondere für mobilitätseingeschränkte Menschen  |
-|   |  2.3 | Förderung eigenständiger und sicherer Mobilität von Kindern, Jugendlichen und alten Menschen  |
-|   |  2.4 | Erhöhung der Sicherheit aller Verkehrsteilnehmer durch Umbau bzw. Umgestaltung sicherheitskritischer Verkehrsanlagen (Anstreben der Halbierung der Zahl der Verletzten sowie der Vermeidung von Verkehrstoten).  |
-|  **Leitziel 3**
+2.2 | Gewährleistung der Erreichbarkeit von Haltestellen und des barrierefreien Zugangs zum ÖPNV sowie notwendiger Informationen zu den Verkehrsmitteln insbesondere für mobilitätseingeschränkte Menschen
+2.3 | Förderung eigenständiger und sicherer Mobilität von Kindern, Jugendlichen und alten Menschen
+2.4 | Erhöhung der Sicherheit aller Verkehrsteilnehmer durch Umbau bzw. Umgestaltung sicherheitskritischer Verkehrsanlagen (Anstreben der Halbierung der Zahl der Verletzten sowie der Vermeidung von Verkehrstoten).
+**Leitziel 3**
 Gewährleistung und Sicherung einer hochwertigen Stadt- und Umweltqualität durch Effizienzsteigerung integrierter Verkehrssysteme und Reduzierung des verkehrsbedingten Verbrauchs natürlicher Ressourcen | 3.1 | Verbesserung der Lebensqualität in den Stadtquartieren durch Verringerung der verkehrsbedingten Belastungen unter anderem mittels Maßnahmen zur Verkehrsberuhigung.  |
-|   |  3.2 | Verbesserung der Stadtgestalt und Aufenthaltsqualität von Straßen und Plätzen sowie bessere Nutzbarkeit des Wohnumfeldes  |
-|   |  3.3 | Engere Verzahnung von nachhaltiger Verkehrs- und Stadtentwicklungsplanung unter Berücksichtigung der lokalen Klimaziele  |
-|   |  3.4 | Präferenz von Innenentwicklung und 'Stadt der kurzen Wege'  |
-|   |  3.5 | Entlastung der Innenstadt und der Wohnquartiere vom Durchgangsverkehr zugunsten der Verlagerung auf das qualitativ hochwertige Hauptstraßennetz  |
-|   |  3.6 | Flächensparendes Bauen sowie Umnutzung, Rückbau und Entsiegelung nicht mehr benötigter Verkehrsflächen; Erarbeitung von Best-Practice-Beispielen  |
-|   |  3.7 | Vernetzung von Individual- und öffentlichem Personenverkehr bei der Realisierung neuer Verkehrsvorhaben  |
-|   |  3.8 | Anstreben einer weiteren Erhöhung des Modal-Split-Anteils des Umweltverbundes (ÖPNV, Radverkehr, Fußverkehr )  |
+3.2 | Verbesserung der Stadtgestalt und Aufenthaltsqualität von Straßen und Plätzen sowie bessere Nutzbarkeit des Wohnumfeldes
+3.3 | Engere Verzahnung von nachhaltiger Verkehrs- und Stadtentwicklungsplanung unter Berücksichtigung der lokalen Klimaziele
+3.4 | Präferenz von Innenentwicklung und 'Stadt der kurzen Wege'
+3.5 | Entlastung der Innenstadt und der Wohnquartiere vom Durchgangsverkehr zugunsten der Verlagerung auf das qualitativ hochwertige Hauptstraßennetz
+3.6 | Flächensparendes Bauen sowie Umnutzung, Rückbau und Entsiegelung nicht mehr benötigter Verkehrsflächen; Erarbeitung von Best-Practice-Beispielen
+3.7 | Vernetzung von Individual- und öffentlichem Personenverkehr bei der Realisierung neuer Verkehrsvorhaben
+3.8 | Anstreben einer weiteren Erhöhung des Modal-Split-Anteils des Umweltverbundes (ÖPNV, Radverkehr, Fußverkehr )
 
 VEP Dresden 2025plus
 Ingenieurgruppe IVV Aachen/ Ingenieurbüro IVAS Dresden
 Anlage 1 - Leitziele
 Seite 5
 
-|  Leitziel 4
+Leitziel 4
 VEP als offener Planungs- und Entscheidungsprozess unter Einbeziehung von Verkehrswissenschaft, Verbänden, Verkehrsträgern, sonstigen gesellschaftlichen Gruppen, Beauftragten, interessierten Bürgern sowie unterschiedlichen Fachdisziplinen | 4.1 | Berücksichtigung und Integration regionaler sowie überregionaler Fachplanungen  |
-| --- | --- | --- |
-|   |  4.2 | Regelmäßige Überprüfung und Nachjustierung der Ziele sowie Monitoring und Erfolgskontrolle als verbindliche Verfahrenselemente  |
-|   |  4.3 | Fortlaufende Information über wichtige Verkehrsparameter (z. B. Verkehrsbedingte Emissionen, Anzahl der Nutzer unterschiedlicher Verkehrsmittel, Zahl der Unfälle)  |
-|   |  4.4 | Information und Interessenausgleich zu einem frühen Zeitpunkt der Planung und Umsetzung verkehrlicher Maßnahmen  |
-|   |  4.5 | Intensivierung der Zusammenarbeit auf lokaler und regionaler Ebene  |
-|   |  4.6 | Ressortübergreifende und interdisziplinäre Verknüpfung verkehrlich relevanter Handlungsfelder (u.a. Verkehrs-, Stadt-, Umwelt- und Freiraumplanung)  |
+4.2 | Regelmäßige Überprüfung und Nachjustierung der Ziele sowie Monitoring und Erfolgskontrolle als verbindliche Verfahrenselemente
+4.3 | Fortlaufende Information über wichtige Verkehrsparameter (z. B. Verkehrsbedingte Emissionen, Anzahl der Nutzer unterschiedlicher Verkehrsmittel, Zahl der Unfälle)
+4.4 | Information und Interessenausgleich zu einem frühen Zeitpunkt der Planung und Umsetzung verkehrlicher Maßnahmen
+4.5 | Intensivierung der Zusammenarbeit auf lokaler und regionaler Ebene
+4.6 | Ressortübergreifende und interdisziplinäre Verknüpfung verkehrlich relevanter Handlungsfelder (u.a. Verkehrs-, Stadt-, Umwelt- und Freiraumplanung)
 
 VEP Dresden 2025plus
 Ingenieurgruppe IVV Aachen/ Ingenieurbüro IVAS Dresden
@@ -10444,71 +10388,69 @@ Seite 1
 
 Teil 1: Vorliegende, analysierte Unterlagen der LH Dresden, des VVO und des Freistaates Sachsen
 
-|  Unterlage | Stand  |
-| --- | --- |
-|  1. Analysen Wirtschaftsverkehr Dresden (LUB) | 2004?  |
-|  2. Analysen Wirtschaftsverkehr Innenstadt (LUB) | 2010  |
-|  3. Anfrage Fraktion DIE LINKE zu Vorrangschaltung an LSA | 2010  |
-|  4. Bericht zur Behindertenhilfe in der LH Dresden 2008/ 2009 | 2009  |
-|  5. Bericht zur Gleichstellung 2010 | 2010  |
-|  6. Bundesverkehrswegeplan | 2003  |
-|  7. Carsharing-Befragung Mobility Center GmbH (TeilAuto) | 2011  |
-|  8. Diplomarbeit zum Fußgängerverkehr in Dresden |   |
-|  9. Diplomarbeit Umgestaltung Postplatz Fuß/Radverkehr | 2012  |
-|  10. Dresdner Mobilitätsstrategie |   |
-|  11. Dresdner Stadtbahnprogramm 2020 (3 Maßnahmen) und begleitende Untersuchungen | 2011  |
-|  12. Energiekonzept, Teil Verkehr | 2011  |
-|  13. Fachlicher Entwicklungplan Verkehr Sachsen | 1999  |
-|  14. Flächennutzungsplan | 1998  |
-|  15. Flächennutzungsplan, aktueller Vorentwurf mit Beiplänen | 2008  |
-|  16. Fußgängerkonzept | 2001  |
-|  17. Gewerbeflächen-entwicklungskonzept | 2007  |
-|  18. Hochwasservorsorge Dresden | 2010  |
-|  19. Infrastrukturprogramm Verkehrsverbund Oberelbe | 2010/2011  |
-|  20. Integriertes Energie- und Klimaschutzkonzept der LH Dresden 2030 Nov. 2012 | 2012  |
-|  21. Integriertes Stadtentwicklungskonzept mit Entwicklungsbericht | 2002/2009  |
-|  22. Kennziffern des Dresdner Einwohnerverkehrs 2025 aus SrV | 2011  |
-|  23. Klimaschutzbericht | 2008  |
-|  24. Kommunale Bürgerumfrage | 2010  |
-|  25. Konzept Bike+Ride | 2004  |
-|  26. Konzept Reisebuspark- und -leitsystem | 2004  |
-|  27. Konzept zur Umsetzung und nachhaltigen Verankerung von Gender Mainstreaming in der LH Dresden - Fortschreibung 2010 | 2010  |
-|  28. Kordonerfassung des „Schleichverkehrs“ im Vorfeld der Eröffnung Waldschlößenbrücke | 2010  |
-| --- | --- |
-|  29. Landesentwicklungsplan Sachsen | 2003  |
-|  30. Landesverkehrsplan Sachsen 2025 | 2012  |
-|  31. Landschaftsplan | 1998  |
-|  32. LAP Friedrichstadt (Entwurf) | 2010  |
-|  33. Leitbild Stadtumbau | 2006  |
-|  34. Leitziele Runder Tisch zur Verkehrsentwicklung Dresden | 2011  |
-|  35. Lkw-Führungskonzept | 2007  |
-|  36. LMP Hechtviertel | 2001  |
-|  37. LMP Striesen-Ost/ Blasewitz | 2001  |
-|  38. Luftreinhalte- und Aktionsplan | 2011  |
-|  39. Masterplan Hafencity – Leipziger Vorstadt – Neustädter Hafen | 2009  |
-|  40. Masterplan Lärmminderung | 2009  |
-|  41. Nahverkehrsplan Verbundraum Oberelbe | 2004  |
-|  42. Nahverkehrsplan Verbundraum Oberelbe Entwurf 2011 | 2011  |
-|  43. P+R - Konzept | 2001  |
-|  44. Parkraumbewirtschaftung – Übersicht vorliegender Konzepte | -  |
-|  45. Planungsleitbild Innenstadt | 2007  |
-|  46. Prioritätenliste Straßenbahn-Neubaustrecken | 2009  |
-|  47. Radverkehrskonzept Innenstadt | 2007  |
-|  48. Regionalplan Oberes Elbtal | 2009  |
-|  49. Regionalplan Oberlausitz-Niederschlesien | 2009  |
-|  50. Straßenbaumkonzept | 2009  |
-|  51. Straßenentwicklungsberichte 2002 und 2008 | 2002/2008  |
-|  52. Variantenunters. Bahnquerung Dresden-Pirna – Prognose 2015 | 2002  |
-|  53. VEP Heidenau | 2005  |
-|  54. VEP Radebeul | 2004  |
-|  55. Verkehrsberuhigung Innenstadt | 2007  |
-|  56. Verkehrskonzept 2003 mit Aktualisierung | 2003/2009  |
-|  57. Verkehrskonzept der Landeshauptstadt Dresden 1994 | 1994  |
-|  58. Verkehrsmengenkarte 2010/2011 | 2010/2011  |
-|  59. Verkehrssicherheitskonzept | 2010  |
-|  60. vorliegende Konzessionen für Fernbuslinien von/ nach/ über Dresden | 2011  |
-|  61. Wissenschaftsstandort Ost (Rahmenplan) | 2012  |
-|  62. Zentrenkonzept | 2006  |
+Unterlage | Stand
+1. Analysen Wirtschaftsverkehr Dresden (LUB) | 2004?
+2. Analysen Wirtschaftsverkehr Innenstadt (LUB) | 2010
+3. Anfrage Fraktion DIE LINKE zu Vorrangschaltung an LSA | 2010
+4. Bericht zur Behindertenhilfe in der LH Dresden 2008/ 2009 | 2009
+5. Bericht zur Gleichstellung 2010 | 2010
+6. Bundesverkehrswegeplan | 2003
+7. Carsharing-Befragung Mobility Center GmbH (TeilAuto) | 2011
+8. Diplomarbeit zum Fußgängerverkehr in Dresden
+9. Diplomarbeit Umgestaltung Postplatz Fuß/Radverkehr | 2012
+10. Dresdner Mobilitätsstrategie
+11. Dresdner Stadtbahnprogramm 2020 (3 Maßnahmen) und begleitende Untersuchungen | 2011
+12. Energiekonzept, Teil Verkehr | 2011
+13. Fachlicher Entwicklungplan Verkehr Sachsen | 1999
+14. Flächennutzungsplan | 1998
+15. Flächennutzungsplan, aktueller Vorentwurf mit Beiplänen | 2008
+16. Fußgängerkonzept | 2001
+17. Gewerbeflächen-entwicklungskonzept | 2007
+18. Hochwasservorsorge Dresden | 2010
+19. Infrastrukturprogramm Verkehrsverbund Oberelbe | 2010/2011
+20. Integriertes Energie- und Klimaschutzkonzept der LH Dresden 2030 Nov. 2012 | 2012
+21. Integriertes Stadtentwicklungskonzept mit Entwicklungsbericht | 2002/2009
+22. Kennziffern des Dresdner Einwohnerverkehrs 2025 aus SrV | 2011
+23. Klimaschutzbericht | 2008
+24. Kommunale Bürgerumfrage | 2010
+25. Konzept Bike+Ride | 2004
+26. Konzept Reisebuspark- und -leitsystem | 2004
+27. Konzept zur Umsetzung und nachhaltigen Verankerung von Gender Mainstreaming in der LH Dresden - Fortschreibung 2010 | 2010
+28. Kordonerfassung des „Schleichverkehrs“ im Vorfeld der Eröffnung Waldschlößenbrücke | 2010
+29. Landesentwicklungsplan Sachsen | 2003
+30. Landesverkehrsplan Sachsen 2025 | 2012
+31. Landschaftsplan | 1998
+32. LAP Friedrichstadt (Entwurf) | 2010
+33. Leitbild Stadtumbau | 2006
+34. Leitziele Runder Tisch zur Verkehrsentwicklung Dresden | 2011
+35. Lkw-Führungskonzept | 2007
+36. LMP Hechtviertel | 2001
+37. LMP Striesen-Ost/ Blasewitz | 2001
+38. Luftreinhalte- und Aktionsplan | 2011
+39. Masterplan Hafencity – Leipziger Vorstadt – Neustädter Hafen | 2009
+40. Masterplan Lärmminderung | 2009
+41. Nahverkehrsplan Verbundraum Oberelbe | 2004
+42. Nahverkehrsplan Verbundraum Oberelbe Entwurf 2011 | 2011
+43. P+R - Konzept | 2001
+44. Parkraumbewirtschaftung – Übersicht vorliegender Konzepte | -
+45. Planungsleitbild Innenstadt | 2007
+46. Prioritätenliste Straßenbahn-Neubaustrecken | 2009
+47. Radverkehrskonzept Innenstadt | 2007
+48. Regionalplan Oberes Elbtal | 2009
+49. Regionalplan Oberlausitz-Niederschlesien | 2009
+50. Straßenbaumkonzept | 2009
+51. Straßenentwicklungsberichte 2002 und 2008 | 2002/2008
+52. Variantenunters. Bahnquerung Dresden-Pirna – Prognose 2015 | 2002
+53. VEP Heidenau | 2005
+54. VEP Radebeul | 2004
+55. Verkehrsberuhigung Innenstadt | 2007
+56. Verkehrskonzept 2003 mit Aktualisierung | 2003/2009
+57. Verkehrskonzept der Landeshauptstadt Dresden 1994 | 1994
+58. Verkehrsmengenkarte 2010/2011 | 2010/2011
+59. Verkehrssicherheitskonzept | 2010
+60. vorliegende Konzessionen für Fernbuslinien von/ nach/ über Dresden | 2011
+61. Wissenschaftsstandort Ost (Rahmenplan) | 2012
+62. Zentrenkonzept | 2006
 
 VEP Dresden 2025plus
 Ingenieurgruppe IVV Aachen/ Ingenieurbüro IVAS Dresden
@@ -10537,9 +10479,9 @@ LV des Sächsischen Groß- und Außenhandels
 Seniorenbeirat
 Verkehrsklub Deutschland
 Verkehrsverbund Oberelbe | 2011  |
-|  64. Stellungnahme
+64. Stellungnahme
 Tourismusverband e.V. | 2011  |
-|  65. Anregungen der Nachbargemeinden und Kreise an die LH Dresden zur Verkehrsentwicklung (Stand Juni 2011)
+65. Anregungen der Nachbargemeinden und Kreise an die LH Dresden zur Verkehrsentwicklung (Stand Juni 2011)
 LK Sächsische Schweiz-Osterzgebrige
 Gemeinde Dohne
 Stadt Heidenau
@@ -10576,55 +10518,52 @@ Seite 3
 
 in zeitlicher Reihenfolge
 
-|  Beschlüsse für „Sowieso“-Maßnahmen (siehe Kapitel 7.2) | Nr./ Stand  |
-| --- | --- |
-|  B1. Ausbau Hamburger Straße/ HP Cotta | V2241
+Beschlüsse für „Sowieso“-Maßnahmen (siehe Kapitel 7.2) | Nr./ Stand
+B1. Ausbau Hamburger Straße/ HP Cotta | V2241
 SR/057/2013  |
-|  B2. Prioritätenprogramm zum Bau von Gehwegen im Dresdner Straßennetz | V2224/2013  |
-|  B3. Neubau B6n OU Cossebaude | BVWP und LVP Sachsen 2025  |
-|  B4. Neubau S84n bis 3. BA | LVP Sachsen 2025  |
-|  B5. Stadtbahn 2020, Sicherung der Vorplanung | V1480/2012  |
-|  B6. Vierstreifiger Ausbau der Königsbrücker Straße | SR/032/2011  |
-|  B7. Verkehrssicherheitskonzept 2010 | SB/035/2011  |
-|  B8. Luftreinhalteplan für Dresden | SR/027/2011  |
-|  B9. Verkehrsmanagementsystem Region Dresden - 2. Ausbaustufe | SR/025/2011  |
-|  B10. Verkehrszug Borsbergstraße - Schandauer Straße - Wehlener Straße | V2591/SR/73/2008
+B2. Prioritätenprogramm zum Bau von Gehwegen im Dresdner Straßennetz | V2224/2013
+B3. Neubau B6n OU Cossebaude | BVWP und LVP Sachsen 2025
+B4. Neubau S84n bis 3. BA | LVP Sachsen 2025
+B5. Stadtbahn 2020, Sicherung der Vorplanung | V1480/2012
+B6. Vierstreifiger Ausbau der Königsbrücker Straße | SR/032/2011
+B7. Verkehrssicherheitskonzept 2010 | SB/035/2011
+B8. Luftreinhalteplan für Dresden | SR/027/2011
+B9. Verkehrsmanagementsystem Region Dresden - 2. Ausbaustufe | SR/025/2011
+B10. Verkehrszug Borsbergstraße - Schandauer Straße - Wehlener Straße | V2591/SR/73/2008
 SR/007/2009
 SR/029/2011  |
-|  B11. Ausbau Elberad- und wanderweg | A31-4-1999
+B11. Ausbau Elberad- und wanderweg | A31-4-1999
 A0345/031/2011  |
-|  B12. Radverkehrskonzept Innenstadt | V0277/SR/022/2010  |
-|  B13. Sanierung/ Umbau Albertbrücke | SR/013/2010  |
-|  B14. Prioritätenliste Straßenbahn-Neubaustrecken mit Stadtbahn 2020 | SR/011/2010  |
-|  B15. Straßenbahnnetzerweiterung Johannstadt -Stadtzentrum Plauen | A0048/2009  |
-|  B16. Bau Zentralhaltestelle Kesselsdorfer Straße | A0017/2009  |
-|  B17. Vierspuriger Ausbau der Magdeburger Straße | V3849/SR/2007, 5/2004  |
-|  B18. Bau des Verkehrszugs Waldschlößenbrücke | Planfeststellungsbeschl. 25.02.2004  |
-|  B19. Fußwegekonzeption | V3252/SR/66 2003  |
-|  B20. Ausbau Emerich-Ambros-Ufer | V2096-54-1997  |
-|  Weitere Beschlüsse ab 2003 | Nr./ Stand  |
-| --- | --- |
-|  B21. Kein Winterdienst auf Radwegen in Dresden | ASB 0700/2013  |
-|  B22. Integriertes Energie- und Klimaschutzkonzept Dresden 2030 | SR/056/2013  |
-|  B23. Vorplanung Fetscherstraße Stübelallee – Fiedlerstraße | V1535/2
+B12. Radverkehrskonzept Innenstadt | V0277/SR/022/2010
+B13. Sanierung/ Umbau Albertbrücke | SR/013/2010
+B14. Prioritätenliste Straßenbahn-Neubaustrecken mit Stadtbahn 2020 | SR/011/2010
+B15. Straßenbahnnetzerweiterung Johannstadt -Stadtzentrum Plauen | A0048/2009
+B16. Bau Zentralhaltestelle Kesselsdorfer Straße | A0017/2009
+B17. Vierspuriger Ausbau der Magdeburger Straße | V3849/SR/2007, 5/2004
+B18. Bau des Verkehrszugs Waldschlößenbrücke | Planfeststellungsbeschl. 25.02.2004
+B19. Fußwegekonzeption | V3252/SR/66 2003
+B20. Ausbau Emerich-Ambros-Ufer | V2096-54-1997
+Weitere Beschlüsse ab 2003 | Nr./ Stand
+B21. Kein Winterdienst auf Radwegen in Dresden | ASB 0700/2013
+B22. Integriertes Energie- und Klimaschutzkonzept Dresden 2030 | SR/056/2013
+B23. Vorplanung Fetscherstraße Stübelallee – Fiedlerstraße | V1535/2
 SR/045/2012  |
-|  B24. ÖPNV-Angebot im Korridor Johannstadt -Stadtzentrum Plauen | A0642/2012  |
-|  B25. Szenario für die weitere Bearbeitung des Verkehrsentwicklungsplans 2025plus | SB/055/2012  |
-|  B26. Sonderprogramm barrierefreier Haltestellenausbau | V1297/2011  |
-|  B27. Zielstellung für die künftige Verkehrsentwicklung (Leitzielbeschluss) | SR/025/2011  |
-|  B28. Neuorganisation des Busliniennetzes in Dresden | SR/083/2009  |
-|  B29. Planungsbestätigung ZOB Wiener Platz | V2038/SS/2007  |
-|  B30. Stand der ÖPNV-Beschleunigung und weitere Verfahrensweise | V 1782
+B24. ÖPNV-Angebot im Korridor Johannstadt -Stadtzentrum Plauen | A0642/2012
+B25. Szenario für die weitere Bearbeitung des Verkehrsentwicklungsplans 2025plus | SB/055/2012
+B26. Sonderprogramm barrierefreier Haltestellenausbau | V1297/2011
+B27. Zielstellung für die künftige Verkehrsentwicklung (Leitzielbeschluss) | SR/025/2011
+B28. Neuorganisation des Busliniennetzes in Dresden | SR/083/2009
+B29. Planungsbestätigung ZOB Wiener Platz | V2038/SS/2007
+B30. Stand der ÖPNV-Beschleunigung und weitere Verfahrensweise | V 1782
 SR/56/2007  |
-|  B31. Aufstellung des Verkehrsentwicklungsplans Dresden 2025plus | SR/46/2007  |
-|  B32. Wissenschaftsstandort Ost, Machbarkeitsstudie Bahnunterführung | V1891-SR/56/2007  |
-|  B33. Verkehrsberuhigung Innenstadt | V1426-SR/57/2007  |
-|  |   |
-|  Beschlüsse vor 2003 (VK) |   |
-|  B34. Errichtung von Grünen Wellen für den Kfz-Verkehr | A 65-8-2000  |
-|  B35. Beschleunigung des Straßenverkehrs | A141-15-2000  |
-|  B36. Konzept des Pilotprojektes "Abbau von Gefährdungen für Kinder, Behinderte und Senioren im Straßenverkehr" | V2857-74-1998  |
-|  B37. Beschleunigung des ÖPNV | V756-21-1995  |
+B31. Aufstellung des Verkehrsentwicklungsplans Dresden 2025plus | SR/46/2007
+B32. Wissenschaftsstandort Ost, Machbarkeitsstudie Bahnunterführung | V1891-SR/56/2007
+B33. Verkehrsberuhigung Innenstadt | V1426-SR/57/2007
+Beschlüsse vor 2003 (VK)
+B34. Errichtung von Grünen Wellen für den Kfz-Verkehr | A 65-8-2000
+B35. Beschleunigung des Straßenverkehrs | A141-15-2000
+B36. Konzept des Pilotprojektes "Abbau von Gefährdungen für Kinder, Behinderte und Senioren im Straßenverkehr" | V2857-74-1998
+B37. Beschleunigung des ÖPNV | V756-21-1995
 
 VEP Dresden 2025plus
 Ingenieurgruppe IVV Aachen/ Ingenieurbüro IVAS Dresden
@@ -11031,28 +10970,27 @@ Anlage 5
 
 Seite 2/8
 
-| Segment | Kurzbeschreibung der Inhalte bzw. Annahmen des Vorzugsszenarios B | Betroffenheitsfaktor | Gewicht. Wirk.-pkt. | Wirkungs-klasse | Kosten-klasse | Prioritäten-gruppe |
-| --- | --- | --- | --- | --- | --- | --- |
-| k/m/g | max. 36x2,5 | 1-5 | 1-5 |  |
-| Auswahl von 8 zentralen, stadträumlichen Maßnahmenansätzen | Ansätze zur Beseitigung festgestellter stadträumlicher Defizite mit Verkehrsbezug |
-|  | 28 |  | Verringerung der Konflikte und der Verkehrsbelastung auf dem Dr.-Külz-Ring! Waisenhausstraße (Fußgänger-Achse Prager Straße - Altmarkt) und leistungsfähige Ableitung des Kfz-Verkehrs von der Budapester Straße auf den 26er-Ring und die St.-Petersburger Straße | m | 24 | 3 | 3 | sinnvoll |
-| 29 |  | Umgestaltung Blaues Wunder im Bestand mit Verbesserungen in der Stadträumqualität Körnerplatz/Schillerplatz, Radverkehrsführung im Knoten- und Brückenbereich, Sicherung der Kfz-Verkehrsqualität, Verbesserung der Querungssituation für Fußgänger, Verkehrsberuhigung in der Hüttenstraße (Einkauf) ggf. als Begenungszone, Verringerung der Verkehrsmenge gemäß Luftreinhalteplan, Sanierung/ Umbau LSA Schillerplatz und Vermeidung von Verkehrsverlagerungen - ergänzend Ausweisung eines nahräumlichen Bereiches im Plan "Trassenfreihaltung" für temporäre oder dauerhafte alternative Querungslösungen für die Zeit nach 2025 bzw. die anstehende Sanierung des Blauen Wunders | m | 27 | 4 | 3 | prioritär |
-| 33 |  | Entlastung der Zufahrten von der A4 (AS Neustadt) in Richtung Innenstadt (insbes. Lommatzscher Straße, Leipziger Straße) durch P+R im Bereich Kaditz/ Micken und durch eine Umweltbrücke (Stadtbahn Fuß, Rad) Kitzschenbroder Straße - Ostragehege, Anbindung an rechtselbischen Elbenabwegs im Bereich der Kaditzer Flutrinne | m | 27 | 4 | 5 | sinnvoll |
-| 34 |  | Bau einer ebenerdigen Fußgängerquerung im Bereich Neustädter Markt mit Rückbau der Fußgänger-Unterführung und Sperrung der Augustusbrücke für individuellen Kfz-Verkehr (außer Sondenverkehr) sowie Ausstattung der Brücke mit getrennten und ausreichenden Wegen für Fußgänger und Radfahrer (Radstreifen) - Nutzung der Verkehrsrückgänge Küpckestraße für die Erarbeitung eines verkehrlich-städtebaulichen Entwicklungskonzeptes mit Reduzierung der Verkehrsfächen (Zweistreifigkeit Halmstraße bis Carolapatz) | m | 29 | 4 | 3 | prioritär |
-| 35 |  | ergänzend zu 34: städtebauliche Aufwertung des Neustädter Marktes durch direkte Verknüpfung der Hauptstraße mit der Altstadt für Fußgänger und Radfahrer durch die Verlegung des Kfz-Verkehrs der Großen Meißner Straße/ Köpckestraße im Bereich des Brückenkopfes Augustusbrücke in eine Unterführung von max. 80 m Länge, auch Beschleunigung des ÖPNV durch Verminderung von Wartezeiten - entfällt, da im Facharbeitspapier abgelehnt |  |  |  |  | entfällt |
-| 36 |  | durchgreifende Berücksichtigung wiederkehrender Ereignisse im Verkehrssystemmanagement (insbes. Sperrungen des Terrassenufers/ Elberad- und Gehweg durch Veranstaltungen oder Hochwasser) mit temporären Wegweisungen, gesonderten LSA-Steuerungsprogrammen, Parkwegweisung und verstärkten intermodalen Angeboten | g | 38 | 5 | 1 | prioritär |
-|  | 37 |  | Verbesserung der Querungen bzw. konsequente Verkehrsberuhigung in touristisch wichtigen Bereichen der inneren Altstadt (z.B. Schlossplatz, Theaterplatz, Sophienstraße, Taschenberg, Terrassenufer, Seestraße) durch angepasste bauliche und organisatorische Maßnahmen; am Postplatz zusätzliche Verbesserungen und Legalisierung des Radverkehrs z.B. zwischen Ostraallee und Wilsdruffer Straße sowie Marienstraße und Ostraallee | m | 26 | 4 | 2 | prioritär |
-| 38 |  | strategisch wichtig aber nicht szenarienrelevant: Berücksichtigung auch weiterer, erkannter stadträumlicher Defizitbereiche (auch in den Ortsteilen) bei der Erarbeitung des Handlungskonzeptes 2025 des Verkehrsentwicklungsplanes | g | 13 | 1 | 1 | sinnvoll |
-| Straßennetz und Kfz-Verkehr 1 | Ansätze zur Beseitigung von Defiziten und Problemstellen im Kfz-Verkehr |
-|  | 39 |  | Sicherung und Ausbau des Kfz-Vorrangnetzes auf Basis des vorliegenden Netzes von 2003 zur Bündelung von Verkehren auf leistungsfähigen Straßenachsen und Sicherung der Erreichbarkeit im Personen- und Wirtschaftsverkehr | g | 33 | 5 | 1 | prioritär |
-| 40 |  | Kanalisierung des Straßenverkehrs im Hauptnetz zur Realisierung von Verkehrsberuhigung in Wohnquartieren sowie Verminderung von Schleichverkehr und hohen Schadstoffkonzentrationen | g | 35 | 5 | 1 | prioritär |
-| 41 |  | Verlegung der den 26 Ring querenden/ langerenden Bundesstraßen B 6, 97, 170, 172 und 173 nach außerhalb des 26er Rings zur Umsetzung der Ziele des Luftreinhalteplanes | g | 28 | 4 | 1 | prioritär |
-| 42 |  | Umsetzung bestandenaher, organisatorischer und ggf. baulicher Maßnahmen zur Vermeidung von Verkehr durch Wohngebiete im Zuge der Verkehrswirksamkeit der Waldschlößchenbrücke auf Basis fundierter Nachher-Analysen u.a. in den Bereichen Comeniusplatz, Fetscherplatz, Blasewitzer/Fetscherstraße und Marienallee | m | 18 | 2 | 1 | sinnvoll |
-| 43 |  | zweistreifiger Ausbau der Stauffenbergallee von der Königsbrücker Straße bis zur Radeburger Straße entsprechend notwendiger verkehrlicher Kapazitäten | g | 30 | 4 | 4 | sinnvoll |
-| 44 |  | zweistreifiger Bestandsausbau der B 172 zwischen Erich-Kästner-Straße und AS Heidenau | m | 11 | 1 | 4 | kritisch |
-| 45 |  | zweistreifiger Ausbau der Bautzner Straße Martin-Luther-Straße bis Preßnitzstraße | m | 21 | 3 | 5 | sensibel |
-| 46 |  | grundhafter Ausbau des Verkehrszuges Hahnebergstraße/ Zwickauer Straße bis Würzburger Str. als Hauptstraßenzug | m | 14 | 1 | 3 | kritisch |
-| 47 |  | Flächensicherung für eine Brückenverbindung zwischen Leipziger Straße und Madeburger Straße i.H. Erfurter Straße und einer Straßenverbindung Großenhainer Straße - Hansastraße mit Erweiterung bis zur Stauffenbergallee als Ringschluss | m | 18 | 2 | 1 | sinnvoll |
+Segment | Kurzbeschreibung der Inhalte bzw. Annahmen des Vorzugsszenarios B | Betroffenheitsfaktor | Gewicht. Wirk.-pkt. | Wirkungs-klasse | Kosten-klasse | Prioritäten-gruppe
+k/m/g | max. 36x2,5 | 1-5 | 1-5
+Auswahl von 8 zentralen, stadträumlichen Maßnahmenansätzen | Ansätze zur Beseitigung festgestellter stadträumlicher Defizite mit Verkehrsbezug
+28 | Verringerung der Konflikte und der Verkehrsbelastung auf dem Dr.-Külz-Ring! Waisenhausstraße (Fußgänger-Achse Prager Straße - Altmarkt) und leistungsfähige Ableitung des Kfz-Verkehrs von der Budapester Straße auf den 26er-Ring und die St.-Petersburger Straße | m | 24 | 3 | 3 | sinnvoll
+29 | Umgestaltung Blaues Wunder im Bestand mit Verbesserungen in der Stadträumqualität Körnerplatz/Schillerplatz, Radverkehrsführung im Knoten- und Brückenbereich, Sicherung der Kfz-Verkehrsqualität, Verbesserung der Querungssituation für Fußgänger, Verkehrsberuhigung in der Hüttenstraße (Einkauf) ggf. als Begenungszone, Verringerung der Verkehrsmenge gemäß Luftreinhalteplan, Sanierung/ Umbau LSA Schillerplatz und Vermeidung von Verkehrsverlagerungen - ergänzend Ausweisung eines nahräumlichen Bereiches im Plan "Trassenfreihaltung" für temporäre oder dauerhafte alternative Querungslösungen für die Zeit nach 2025 bzw. die anstehende Sanierung des Blauen Wunders | m | 27 | 4 | 3 | prioritär
+33 | Entlastung der Zufahrten von der A4 (AS Neustadt) in Richtung Innenstadt (insbes. Lommatzscher Straße, Leipziger Straße) durch P+R im Bereich Kaditz/ Micken und durch eine Umweltbrücke (Stadtbahn Fuß, Rad) Kitzschenbroder Straße - Ostragehege, Anbindung an rechtselbischen Elbenabwegs im Bereich der Kaditzer Flutrinne | m | 27 | 4 | 5 | sinnvoll
+34 | Bau einer ebenerdigen Fußgängerquerung im Bereich Neustädter Markt mit Rückbau der Fußgänger-Unterführung und Sperrung der Augustusbrücke für individuellen Kfz-Verkehr (außer Sondenverkehr) sowie Ausstattung der Brücke mit getrennten und ausreichenden Wegen für Fußgänger und Radfahrer (Radstreifen) - Nutzung der Verkehrsrückgänge Küpckestraße für die Erarbeitung eines verkehrlich-städtebaulichen Entwicklungskonzeptes mit Reduzierung der Verkehrsfächen (Zweistreifigkeit Halmstraße bis Carolapatz) | m | 29 | 4 | 3 | prioritär
+35 | ergänzend zu 34: städtebauliche Aufwertung des Neustädter Marktes durch direkte Verknüpfung der Hauptstraße mit der Altstadt für Fußgänger und Radfahrer durch die Verlegung des Kfz-Verkehrs der Großen Meißner Straße/ Köpckestraße im Bereich des Brückenkopfes Augustusbrücke in eine Unterführung von max. 80 m Länge, auch Beschleunigung des ÖPNV durch Verminderung von Wartezeiten - entfällt, da im Facharbeitspapier abgelehnt | entfällt
+36 | durchgreifende Berücksichtigung wiederkehrender Ereignisse im Verkehrssystemmanagement (insbes. Sperrungen des Terrassenufers/ Elberad- und Gehweg durch Veranstaltungen oder Hochwasser) mit temporären Wegweisungen, gesonderten LSA-Steuerungsprogrammen, Parkwegweisung und verstärkten intermodalen Angeboten | g | 38 | 5 | 1 | prioritär
+37 | Verbesserung der Querungen bzw. konsequente Verkehrsberuhigung in touristisch wichtigen Bereichen der inneren Altstadt (z.B. Schlossplatz, Theaterplatz, Sophienstraße, Taschenberg, Terrassenufer, Seestraße) durch angepasste bauliche und organisatorische Maßnahmen; am Postplatz zusätzliche Verbesserungen und Legalisierung des Radverkehrs z.B. zwischen Ostraallee und Wilsdruffer Straße sowie Marienstraße und Ostraallee | m | 26 | 4 | 2 | prioritär
+38 | strategisch wichtig aber nicht szenarienrelevant: Berücksichtigung auch weiterer, erkannter stadträumlicher Defizitbereiche (auch in den Ortsteilen) bei der Erarbeitung des Handlungskonzeptes 2025 des Verkehrsentwicklungsplanes | g | 13 | 1 | 1 | sinnvoll
+Straßennetz und Kfz-Verkehr 1 | Ansätze zur Beseitigung von Defiziten und Problemstellen im Kfz-Verkehr
+39 | Sicherung und Ausbau des Kfz-Vorrangnetzes auf Basis des vorliegenden Netzes von 2003 zur Bündelung von Verkehren auf leistungsfähigen Straßenachsen und Sicherung der Erreichbarkeit im Personen- und Wirtschaftsverkehr | g | 33 | 5 | 1 | prioritär
+40 | Kanalisierung des Straßenverkehrs im Hauptnetz zur Realisierung von Verkehrsberuhigung in Wohnquartieren sowie Verminderung von Schleichverkehr und hohen Schadstoffkonzentrationen | g | 35 | 5 | 1 | prioritär
+41 | Verlegung der den 26 Ring querenden/ langerenden Bundesstraßen B 6, 97, 170, 172 und 173 nach außerhalb des 26er Rings zur Umsetzung der Ziele des Luftreinhalteplanes | g | 28 | 4 | 1 | prioritär
+42 | Umsetzung bestandenaher, organisatorischer und ggf. baulicher Maßnahmen zur Vermeidung von Verkehr durch Wohngebiete im Zuge der Verkehrswirksamkeit der Waldschlößchenbrücke auf Basis fundierter Nachher-Analysen u.a. in den Bereichen Comeniusplatz, Fetscherplatz, Blasewitzer/Fetscherstraße und Marienallee | m | 18 | 2 | 1 | sinnvoll
+43 | zweistreifiger Ausbau der Stauffenbergallee von der Königsbrücker Straße bis zur Radeburger Straße entsprechend notwendiger verkehrlicher Kapazitäten | g | 30 | 4 | 4 | sinnvoll
+44 | zweistreifiger Bestandsausbau der B 172 zwischen Erich-Kästner-Straße und AS Heidenau | m | 11 | 1 | 4 | kritisch
+45 | zweistreifiger Ausbau der Bautzner Straße Martin-Luther-Straße bis Preßnitzstraße | m | 21 | 3 | 5 | sensibel
+46 | grundhafter Ausbau des Verkehrszuges Hahnebergstraße/ Zwickauer Straße bis Würzburger Str. als Hauptstraßenzug | m | 14 | 1 | 3 | kritisch
+47 | Flächensicherung für eine Brückenverbindung zwischen Leipziger Straße und Madeburger Straße i.H. Erfurter Straße und einer Straßenverbindung Großenhainer Straße - Hansastraße mit Erweiterung bis zur Stauffenbergallee als Ringschluss | m | 18 | 2 | 1 | sinnvoll
 
 Einkauf VEP Dresden 2025plus
 
@@ -11061,33 +10999,32 @@ Anlage 5
 
 Seite 3/8
 
-| Segment | Kurzbeschreibung der Inhalte bzw. Annahmen des Vorzugsszenarios B | Betroffenheitsfaktor | Gewicht. Wirk.-pkt. | Wirkungsklasse | Kostenklasse | Prioritätengruppe |
-| --- | --- | --- | --- | --- | --- | --- |
-| k/m/g | max. 36x2,5 | 1-5 | 1-5 |  |
-| ÖPNV 1 und Fernverkehr | Ansätze zur Beseitigung festgestellter Defizite im ÖPNV/SPNV sowie Fernverkehr |
-|  | 56 | Höneriken auf eine Beschleunigung und Verbesserung der Fernbahnanbindungen Dresdens in Richtung Berlin/ BBI, Leipzig, Frankfurt, Nürnberg, München und Breslau | g | 23 | 3 | 1 | prioritär |  |
-| 57 | Optimierung der LSA für Beschleunigung des ÖPNV an Knotenpunkten mit QSV F mit dem Ziel einer Erhöhung der Reisegeschwindigkeit der Straßenbahn auf ca. 21 km/h im Innenstadtbereich | g | 30 | 4 | 5 | sinnvoll |  |
-| 58 | Einrichtung eines Fern- und Regionalbusbahnhofs am Hauptbahnhof mit Nutzbarkeit durch touristischen Busverkehr entsprechend bestehender Planungen und Kosten | g | 25 | 3 | 4 | sensibel |  |
-| 59 | Umsetzung S-Bahn-Halte Albertstadt (Linie S2) und Nossener Brücke (Linie S3) | g | 38 | 5 | 1 | prioritär |  |
-| 60 | Verstärkte Nutzung Echtzeitbasierter Fahrgastinformation zur Anschlussicherung, Halteplatzprognose und Optimierung in S-Bahnen, Straßenbahn und Bussen - auch "on board" und zur Verkürzung von Umsteigewesen | g | 38 | 5 | 1 | prioritär |  |
-| 61 | Isemereheier Standard bei Zugängen, Umsteigestellen, Fahrzeugen und Informationsübermittlung sowie Weiterführung der Bemühungen zum Electronic-Ticketing | g | 30 | 4 | 1 | prioritär |  |
-| 62 | Weiterführung der Flottenmodernisierung von Bus und Straßenbahn um Einsatzkosten und Emissionen zu vermindern (insbes. im Busbereich hinsichtlich der Lufteinhaltung) | g | 28 | 4 | 1 | prioritär |  |
-| 63 | Berücksichtigung der Belange von Frauen bei Sicherheit, Qualität und Erreichbarkeit | g | 25 | 3 | 1 | prioritär |  |
-| 64 | Durchbindung Zschertnitzer Straße für Bus, Rad und Fußgänger zur Verbesserung möglicher tungenloser Busverbindungen | m | 18 | 2 | 2 | sinnvoll |  |
-| 65 | Übernahme der Prioritäten und Trassenoptionen aus dem SR-Beschluss "Prioritätenliste Straßenbahn-Neubaustrecken" als Trassenfreihaltungen sofern nicht bereits Maßnahme des VEP - u.a. für eine mögliche Stadtbahntrasse Kaditz - Radebeul-Ost entlang der Kötschenbroder Straße (Riegelplatz bis Spitzhausstraße) sowie Gompitz - Kesselsdorf | g | 38 | 5 | 1 | prioritär |  |
-| ÖPNV 2 | Ansätze zur weiteren Erhöhung der Kapazität und Attraktivität des ÖPNV und des SPNV |
-|  | 66 | Verdichtung der Grundsätze der Straßenbahnlinien auf 3, 4, 7, 11 auf 5 Minuten in der Hauptverkehrszeit und 10 Minuten-Takt auf allen Linien bis in die Abendstunden (21 Uhr)/Wochenenden, dazu Verbesserung der organisatorischen, baulichen und verkehrstechnischen Rahmenbedingungen, um den dichten Straßenbahnakt zuverlässig gewährleisten zu können - wenn Nachfrage die Zusatzkosten des Angebots deckt | g | 43 | 5 | 1 | prioritär |  |
-| 67 | Straßenbahnbau in der Relation Tiergartenstraße - Gruna - Striesen - Basewitz (als wirtschaftlicher Ersatz für Buslinie 61) und damit auch verbesserte Anbindung des Wissenschaftsstandorts Ost an die Straßenbahn | g | 38 | 5 | 5 | sinnvoll |  |
-| 68 | Verdichtung der Busangebote der Linie 94 auf einen 10-Minuten-Takt von Cossebaude bis Cotta | m | 20 | 2 | 1 | sinnvoll |  |
-| 69 | neues Busangebot zwischen Cossebaude und Radebeul über die Ellbrücke Niederwartha im 60 Min.-Takt | g | 23 | 3 | 1 | prioritär |  |
-| 70 | Ergänzende Realisierung der S-Bahn-Haltepunkte im Bereich Königsbrücker Landstraße (Linie S2) und Strohlener Platz (Linien S1 und S2) nach Umsetzung der HP Bischofsplatz, Albertplatz und Nossener Brücke | g | 40 | 5 | 2 | prioritär |  |
-| 71 | Bedienung der linkselbischen Bahnstrecke Dresden - Cosseig über Friedrichstadt im 30-Minuten-Takt in Überlagerung bestehender und zusätzlicher Regionalverkehrsangebote | g | 33 | 5 | 1 | prioritär |  |
-| 72 | Ausbau der Nordanbindung auf der regionalen Bahnstrecke Richtung Bischofswerda durch eine Systematisierung weitgehend bestehender Angebote (S-Bahn, RB/ RE) zu einem regelmäßigen 30-Minuten-Takt (teilweise 3. Gleis erforderlich) | g | 28 | 4 | 4 | sinnvoll |  |
-| 73b | Nutzung der Bahnanbindung nach Königsbrück für eine Stadtbahnanbindung mit der Linie 7 von Ottendorf-Okrilla Nord über Hermsdorf nach Dresden | g | 30 | 4 | 3 | prioritär |  |
-| 74 | Verbesserung der regionalen Bus-Anbindungen von Moritzburg und Bannewitz durch Verkürzung der Reisezeit um 10% und einen 15-Minuten-Takt zur Spitzenzeit | g | 30 | 4 | 1 | prioritär |  |
-| 75 | Anpassung der Landes-ÖPNV-Zuschüsse für stärker angebotsorientierten Betrieb des ÖPNV, die weitere Beschaffung von modernen ÖPNV-Fahrzeugen (Straßenbahn, Bus) und die Vermeidung steigender Nutzerkosten | g | 35 | 5 | 1 | prioritär |  |
-| 76 | Einführung stärker rabattierter ÖPNV-Tickets für Besucher, Touristen, P+R-Nutzer, Senioren und Familien | g | 33 | 5 | 1 | prioritär |  |
-| 77 | für Geringverdiener erweiterte, preisgünstigere Mobilitätsoptionen z.B. durch Sozialticket | m | 14 | 1 | 1 | sinnvoll |  |
+Segment | Kurzbeschreibung der Inhalte bzw. Annahmen des Vorzugsszenarios B | Betroffenheitsfaktor | Gewicht. Wirk.-pkt. | Wirkungsklasse | Kostenklasse | Prioritätengruppe
+k/m/g | max. 36x2,5 | 1-5 | 1-5
+ÖPNV 1 und Fernverkehr | Ansätze zur Beseitigung festgestellter Defizite im ÖPNV/SPNV sowie Fernverkehr
+56 | Höneriken auf eine Beschleunigung und Verbesserung der Fernbahnanbindungen Dresdens in Richtung Berlin/ BBI, Leipzig, Frankfurt, Nürnberg, München und Breslau | g | 23 | 3 | 1 | prioritär
+57 | Optimierung der LSA für Beschleunigung des ÖPNV an Knotenpunkten mit QSV F mit dem Ziel einer Erhöhung der Reisegeschwindigkeit der Straßenbahn auf ca. 21 km/h im Innenstadtbereich | g | 30 | 4 | 5 | sinnvoll
+58 | Einrichtung eines Fern- und Regionalbusbahnhofs am Hauptbahnhof mit Nutzbarkeit durch touristischen Busverkehr entsprechend bestehender Planungen und Kosten | g | 25 | 3 | 4 | sensibel
+59 | Umsetzung S-Bahn-Halte Albertstadt (Linie S2) und Nossener Brücke (Linie S3) | g | 38 | 5 | 1 | prioritär
+60 | Verstärkte Nutzung Echtzeitbasierter Fahrgastinformation zur Anschlussicherung, Halteplatzprognose und Optimierung in S-Bahnen, Straßenbahn und Bussen - auch "on board" und zur Verkürzung von Umsteigewesen | g | 38 | 5 | 1 | prioritär
+61 | Isemereheier Standard bei Zugängen, Umsteigestellen, Fahrzeugen und Informationsübermittlung sowie Weiterführung der Bemühungen zum Electronic-Ticketing | g | 30 | 4 | 1 | prioritär
+62 | Weiterführung der Flottenmodernisierung von Bus und Straßenbahn um Einsatzkosten und Emissionen zu vermindern (insbes. im Busbereich hinsichtlich der Lufteinhaltung) | g | 28 | 4 | 1 | prioritär
+63 | Berücksichtigung der Belange von Frauen bei Sicherheit, Qualität und Erreichbarkeit | g | 25 | 3 | 1 | prioritär
+64 | Durchbindung Zschertnitzer Straße für Bus, Rad und Fußgänger zur Verbesserung möglicher tungenloser Busverbindungen | m | 18 | 2 | 2 | sinnvoll
+65 | Übernahme der Prioritäten und Trassenoptionen aus dem SR-Beschluss "Prioritätenliste Straßenbahn-Neubaustrecken" als Trassenfreihaltungen sofern nicht bereits Maßnahme des VEP - u.a. für eine mögliche Stadtbahntrasse Kaditz - Radebeul-Ost entlang der Kötschenbroder Straße (Riegelplatz bis Spitzhausstraße) sowie Gompitz - Kesselsdorf | g | 38 | 5 | 1 | prioritär
+ÖPNV 2 | Ansätze zur weiteren Erhöhung der Kapazität und Attraktivität des ÖPNV und des SPNV
+66 | Verdichtung der Grundsätze der Straßenbahnlinien auf 3, 4, 7, 11 auf 5 Minuten in der Hauptverkehrszeit und 10 Minuten-Takt auf allen Linien bis in die Abendstunden (21 Uhr)/Wochenenden, dazu Verbesserung der organisatorischen, baulichen und verkehrstechnischen Rahmenbedingungen, um den dichten Straßenbahnakt zuverlässig gewährleisten zu können - wenn Nachfrage die Zusatzkosten des Angebots deckt | g | 43 | 5 | 1 | prioritär
+67 | Straßenbahnbau in der Relation Tiergartenstraße - Gruna - Striesen - Basewitz (als wirtschaftlicher Ersatz für Buslinie 61) und damit auch verbesserte Anbindung des Wissenschaftsstandorts Ost an die Straßenbahn | g | 38 | 5 | 5 | sinnvoll
+68 | Verdichtung der Busangebote der Linie 94 auf einen 10-Minuten-Takt von Cossebaude bis Cotta | m | 20 | 2 | 1 | sinnvoll
+69 | neues Busangebot zwischen Cossebaude und Radebeul über die Ellbrücke Niederwartha im 60 Min.-Takt | g | 23 | 3 | 1 | prioritär
+70 | Ergänzende Realisierung der S-Bahn-Haltepunkte im Bereich Königsbrücker Landstraße (Linie S2) und Strohlener Platz (Linien S1 und S2) nach Umsetzung der HP Bischofsplatz, Albertplatz und Nossener Brücke | g | 40 | 5 | 2 | prioritär
+71 | Bedienung der linkselbischen Bahnstrecke Dresden - Cosseig über Friedrichstadt im 30-Minuten-Takt in Überlagerung bestehender und zusätzlicher Regionalverkehrsangebote | g | 33 | 5 | 1 | prioritär
+72 | Ausbau der Nordanbindung auf der regionalen Bahnstrecke Richtung Bischofswerda durch eine Systematisierung weitgehend bestehender Angebote (S-Bahn, RB/ RE) zu einem regelmäßigen 30-Minuten-Takt (teilweise 3. Gleis erforderlich) | g | 28 | 4 | 4 | sinnvoll
+73b | Nutzung der Bahnanbindung nach Königsbrück für eine Stadtbahnanbindung mit der Linie 7 von Ottendorf-Okrilla Nord über Hermsdorf nach Dresden | g | 30 | 4 | 3 | prioritär
+74 | Verbesserung der regionalen Bus-Anbindungen von Moritzburg und Bannewitz durch Verkürzung der Reisezeit um 10% und einen 15-Minuten-Takt zur Spitzenzeit | g | 30 | 4 | 1 | prioritär
+75 | Anpassung der Landes-ÖPNV-Zuschüsse für stärker angebotsorientierten Betrieb des ÖPNV, die weitere Beschaffung von modernen ÖPNV-Fahrzeugen (Straßenbahn, Bus) und die Vermeidung steigender Nutzerkosten | g | 35 | 5 | 1 | prioritär
+76 | Einführung stärker rabattierter ÖPNV-Tickets für Besucher, Touristen, P+R-Nutzer, Senioren und Familien | g | 33 | 5 | 1 | prioritär
+77 | für Geringverdiener erweiterte, preisgünstigere Mobilitätsoptionen z.B. durch Sozialticket | m | 14 | 1 | 1 | sinnvoll
 
 Entwurf VEP Dresden 2025plus
 
@@ -11631,7 +11568,7 @@ Ingenieurgruppe IVV Aschen/ Ingenieurbüro IVAS Dresden
 Anlage 6.2
 Seite 5/9
 
-|  Nr. | Themenbereich im Textteil | Kurzbeschreibung der Maßnahme
+Nr. | Themenbereich im Textteil | Kurzbeschreibung der Maßnahme
 (vollständige Maßnahmebeschreibung im Textteil
 unter dem jeweilig benannten Themenbereich) | Wirkungs-
 klasse |   | Kosten-
@@ -11642,33 +11579,32 @@ Einordnung | Einordnung in Haushalt
 (investiver HH (InvHH),
 Ergebnis-HH (ErgHH) und
 Verwalt.-handeln)  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|   |  |  | 1 (schwach) bis 5
+1 (schwach) bis 5
 (stark) | 0/1/2
 /+6 Mo.€ |  |  |  |  |  |  |   |
-|  73 | Wirtschaftsverkehr | durch autobahn- und stadtnahe Gewerbeanlagen sowohl Lkw-Verkehr auf kurzen Wegen abwickeln als auch attraktive Anbindungen im ÖPNV und Radverkehr für Beschäftigte sowie Kundinnen und Kunden ermöglichen | 5 | 1 | A++ |  |  |  | Stadt Dresden | Daueraufgabe | Sicherung im InvHH und ErgHH, Sicherung TWD-Zuschuss  |
-|  74 | Wirtschaftsverkehr | Zusammenarbeit mit der Region bei Penderparkplätzen auch an Autobahnanschlussstellen (P+M-Konzept) und Integration in das integrierte Besucherverkehrs- und Pendierkonzept | 5 | 1 | A++ |  |  |  | Stadt Dresden | ab 2013 | laufend im Verwaltungshandeln  |
-|  75 | Wirtschaftsverkehr | Gestaltung des Güterbahnhofs Friedrichstadt als allgemeiner Logistikstandort mit trimodalen GVZ | 5 | 1 | A++ |  |  |  | Stadt Dresden | Daueraufgabe | laufend im Verwaltungshandeln in Kooperation mit Dritten  |
-|  99 | ÖPNV | Stadtbahntrasse Strehlen - Schillerplatz über Zwinglistraße/ Pohlandplatz nach Umsetzung des Programms Stadtbahn 2020 | 5 | 5 | A++ |  |  |  | Stadt Dresden/DVB AG | langfristig | Sicherung im ErgHH  |
-|  **Maßnahmen mit Prioritätsstufe A+** |   |   |  |  |  |  |  |  |  |  |   |
-|  76 | Verwaltungshandeln | Zuordnung von Mobilitätskosten zu allen Baugebieten zur Identifizierung von Gebieten mit explizit niedrigen Mobilitätskosten | 4 | 1 | A+ |  |  |  | Stadt Dresden | Daueraufgabe | laufend im Verwaltungshandeln  |
-|  77 | Konzepte | Erarbeitung eines regionalen und integrierten Konzeptes für postfossile Mobilität zur langfristigen Mobilitätssicherung in Dresden und Umgebung | 4 | 2 | A+ |  |  |  | Stadt Dresden | langfristig | Sicherung im ErgHH  |
-|  78 | ÖPNV | Verbesserung der Barrierefreiheit bei Zugang und Ticketing im ÖPNV mit dem Ziel 100%iger Barrierefreiheit an der Schnittstelle Fahrzeug/Haltestelle bis 2022 | 4 | 1 | A+ |  |  |  | Stadt Dresden/DVB AG | Daueraufgabe | Sicherung im InvHH und ErgHH  |
-|  79 | ÖPNV | Fortsetzung der Verhandlungen mit dem Freistaat über die anteilige Finanzierung der Flottenmodernisierung von Bus und Straßen-/ Stadtbahn | 4 | 1 | A+ |  |  |  | Stadt Dresden/Freistaat SN/DVB AG | Daueraufgabe | laufend im Verwaltungshandeln  |
-|  80 | ÖPNV | Verbesserung der Regionalbus-Angebote von Moritzburg und Bannewitz sowie Prüfung von Regionalbusfahrten über die Autobahn zur schnellen Anbindung von Radeburg und Nossen an Dresden - jeweils im Rahmen der Nahverkehrsplanung | 4 | 1 | A+ |  |  |  | Stadt Dresden/VVO/DVB AG | mittelfristig | Sicherung im ErgHH in Kooperation mit benachbarten Landkreisen  |
-|  81 | ÖPNV | Nutzung der Bahnanbindung nach Königsbrück für eine Stadtbahnanbindung mit der Linie 7 von Ottendorf-Okrilla Nord (ggf. Königsbrück) über Hermsdorf nach Dresden | 4 | 3 | A+ |  |  |  | VVO/ DB Netz AG/DVB AG/Stadt Dresden | langfristig | Aufgabe VVO/DVB AG, laufend im Verwaltungshandeln  |
-|  82 | Radverkehr | Anpassung aller nicht-richtliniengerechten Radverkehrsanlagen im Bestand auf Basis des zu erarbeitenden Radverkehrskonzeptes und generelle Vermeidung der Gehwegnutzung durch Radverkehr als Planungsprinzip | 4 | 1 | A+ |  |  |  | Stadt Dresden | Daueraufgabe | Sicherung im InvHH und ErgHH  |
-|  83 | Stadtqualität und Stadtraum
+73 | Wirtschaftsverkehr | durch autobahn- und stadtnahe Gewerbeanlagen sowohl Lkw-Verkehr auf kurzen Wegen abwickeln als auch attraktive Anbindungen im ÖPNV und Radverkehr für Beschäftigte sowie Kundinnen und Kunden ermöglichen | 5 | 1 | A++ | Stadt Dresden | Daueraufgabe | Sicherung im InvHH und ErgHH, Sicherung TWD-Zuschuss
+74 | Wirtschaftsverkehr | Zusammenarbeit mit der Region bei Penderparkplätzen auch an Autobahnanschlussstellen (P+M-Konzept) und Integration in das integrierte Besucherverkehrs- und Pendierkonzept | 5 | 1 | A++ | Stadt Dresden | ab 2013 | laufend im Verwaltungshandeln
+75 | Wirtschaftsverkehr | Gestaltung des Güterbahnhofs Friedrichstadt als allgemeiner Logistikstandort mit trimodalen GVZ | 5 | 1 | A++ | Stadt Dresden | Daueraufgabe | laufend im Verwaltungshandeln in Kooperation mit Dritten
+99 | ÖPNV | Stadtbahntrasse Strehlen - Schillerplatz über Zwinglistraße/ Pohlandplatz nach Umsetzung des Programms Stadtbahn 2020 | 5 | 5 | A++ | Stadt Dresden/DVB AG | langfristig | Sicherung im ErgHH
+**Maßnahmen mit Prioritätsstufe A+**
+76 | Verwaltungshandeln | Zuordnung von Mobilitätskosten zu allen Baugebieten zur Identifizierung von Gebieten mit explizit niedrigen Mobilitätskosten | 4 | 1 | A+ | Stadt Dresden | Daueraufgabe | laufend im Verwaltungshandeln
+77 | Konzepte | Erarbeitung eines regionalen und integrierten Konzeptes für postfossile Mobilität zur langfristigen Mobilitätssicherung in Dresden und Umgebung | 4 | 2 | A+ | Stadt Dresden | langfristig | Sicherung im ErgHH
+78 | ÖPNV | Verbesserung der Barrierefreiheit bei Zugang und Ticketing im ÖPNV mit dem Ziel 100%iger Barrierefreiheit an der Schnittstelle Fahrzeug/Haltestelle bis 2022 | 4 | 1 | A+ | Stadt Dresden/DVB AG | Daueraufgabe | Sicherung im InvHH und ErgHH
+79 | ÖPNV | Fortsetzung der Verhandlungen mit dem Freistaat über die anteilige Finanzierung der Flottenmodernisierung von Bus und Straßen-/ Stadtbahn | 4 | 1 | A+ | Stadt Dresden/Freistaat SN/DVB AG | Daueraufgabe | laufend im Verwaltungshandeln
+80 | ÖPNV | Verbesserung der Regionalbus-Angebote von Moritzburg und Bannewitz sowie Prüfung von Regionalbusfahrten über die Autobahn zur schnellen Anbindung von Radeburg und Nossen an Dresden - jeweils im Rahmen der Nahverkehrsplanung | 4 | 1 | A+ | Stadt Dresden/VVO/DVB AG | mittelfristig | Sicherung im ErgHH in Kooperation mit benachbarten Landkreisen
+81 | ÖPNV | Nutzung der Bahnanbindung nach Königsbrück für eine Stadtbahnanbindung mit der Linie 7 von Ottendorf-Okrilla Nord (ggf. Königsbrück) über Hermsdorf nach Dresden | 4 | 3 | A+ | VVO/ DB Netz AG/DVB AG/Stadt Dresden | langfristig | Aufgabe VVO/DVB AG, laufend im Verwaltungshandeln
+82 | Radverkehr | Anpassung aller nicht-richtliniengerechten Radverkehrsanlagen im Bestand auf Basis des zu erarbeitenden Radverkehrskonzeptes und generelle Vermeidung der Gehwegnutzung durch Radverkehr als Planungsprinzip | 4 | 1 | A+ | Stadt Dresden | Daueraufgabe | Sicherung im InvHH und ErgHH
+83 | Stadtqualität und Stadtraum
 siehe auch Anlage 9 | Verstärkte Verkehrsberuhigung in touristisch wichtigen Bereichen | 4 | 2 | A+ |  |  |  | Stadt Dresden | Daueraufgabe | Sicherung im InvHH und ErgHH  |
-|  84 | Stadtqualität und Stadtraum | Umgestaltung des Blauen Wunders im Bestand mit Verbesserungen in der Stadtraumqualität, bei Querungen und der Radverkehrsführung, ergänzend Ausweisung eines Bereiches für Interimsstandorte für den Zeitraum der Sanierung des Blauen Wunders | 4 | 3 | A+ |  |  |  | Stadt Dresden | ab 2014 | Sicherung im InvHH und ErgHH  |
-|  85 | Stadtqualität und Stadtraum
+84 | Stadtqualität und Stadtraum | Umgestaltung des Blauen Wunders im Bestand mit Verbesserungen in der Stadtraumqualität, bei Querungen und der Radverkehrsführung, ergänzend Ausweisung eines Bereiches für Interimsstandorte für den Zeitraum der Sanierung des Blauen Wunders | 4 | 3 | A+ | Stadt Dresden | ab 2014 | Sicherung im InvHH und ErgHH
+85 | Stadtqualität und Stadtraum
 siehe auch Anlage 9 | Umgestaltung Neustädter Markt mit Kfz-freier Augustusbrücke, ebenerdigen Querungen und Prüfung einer zweistreifigen Großen Meißner/Köpckestraße | 4 | 3 | A+ |  |  |  | Stadt Dresden | ab 2015 | Sicherung im InvHH und ErgHH  |
-|  86 | Straßennetz und Kfz-Verkehr | Verlegung aller Bundesstraßen nach außerhalb des 26er Rings (Klassifizierungsänderung) | 4 | 1 | A+ |  |  |  | Stadt Dresden/Freistaat Sachsen | ab Fertigstellung Infrastruktur | Landesaufgabe, laufend im Verwaltungshandeln  |
-|  87 | Straßennetz und Kfz-Verkehr | flächenhafte Bewirtschaftung des ruhenden Verkehrs im 26er Ring und in weiteren Stadtbereichen sowie in den Ortsteilzentren zur Vermeidung von Verlagerungen in Wohnbereiche und weitgehende Leitung des Parksuchverkehrs über das Straßenhauptnetz | 4 | 1 | A+ |  |  |  | Stadt Dresden | Daueraufgabe | Sicherung im ErgHH  |
-|  88 | Verkehrstechnik und -management | Stärkere Einbindung der Bedürfnisse des Radverkehrs in telematische Steuerungen sowie in Verkehrsinformations- und -leitsysteme | 4 | 1 | A+ |  |  |  | Stadt Dresden | Daueraufgabe | Sicherung im InvHH und ErgHH  |
-|  89 |  | Maßnahme "Stellplätze für Carsharing-Fahrzeuge im B-Plan-Prozess vorsehen" entfällt lt. Beschluss Stadtrat vom 20.11.2014 |  |  |  |  |  |  |  |  |   |
-|  90 | Wirtschaftsverkehr | Erhalt der Eibe als Binnenwasserstraße 1. Ordnung mit dem Albertfallen als trimodaler Schnittstelle | 4 | 1 | A+ |  |  |  | Stadt Dresden | Daueraufgabe | laufend im Verwaltungshandeln  |
-|  100 | ÖPNV | Ausbau der Nordanbindung per Bahn Richtung Bischofswerda durch eine Systematisierung weitgehend bestehender Angebote zu einem 30-Minuten-Takt (teilweise 3. Gleis erforderlich) | 4 | 4 | A+ |  |  |  | VVO/ DB Netz AG/ Stadt Dresden | langfristig | Aufgabe VVO/DB AG, laufend im Verwaltungshandeln  |
+86 | Straßennetz und Kfz-Verkehr | Verlegung aller Bundesstraßen nach außerhalb des 26er Rings (Klassifizierungsänderung) | 4 | 1 | A+ | Stadt Dresden/Freistaat Sachsen | ab Fertigstellung Infrastruktur | Landesaufgabe, laufend im Verwaltungshandeln
+87 | Straßennetz und Kfz-Verkehr | flächenhafte Bewirtschaftung des ruhenden Verkehrs im 26er Ring und in weiteren Stadtbereichen sowie in den Ortsteilzentren zur Vermeidung von Verlagerungen in Wohnbereiche und weitgehende Leitung des Parksuchverkehrs über das Straßenhauptnetz | 4 | 1 | A+ | Stadt Dresden | Daueraufgabe | Sicherung im ErgHH
+88 | Verkehrstechnik und -management | Stärkere Einbindung der Bedürfnisse des Radverkehrs in telematische Steuerungen sowie in Verkehrsinformations- und -leitsysteme | 4 | 1 | A+ | Stadt Dresden | Daueraufgabe | Sicherung im InvHH und ErgHH
+89 | Maßnahme "Stellplätze für Carsharing-Fahrzeuge im B-Plan-Prozess vorsehen" entfällt lt. Beschluss Stadtrat vom 20.11.2014
+90 | Wirtschaftsverkehr | Erhalt der Eibe als Binnenwasserstraße 1. Ordnung mit dem Albertfallen als trimodaler Schnittstelle | 4 | 1 | A+ | Stadt Dresden | Daueraufgabe | laufend im Verwaltungshandeln
+100 | ÖPNV | Ausbau der Nordanbindung per Bahn Richtung Bischofswerda durch eine Systematisierung weitgehend bestehender Angebote zu einem 30-Minuten-Takt (teilweise 3. Gleis erforderlich) | 4 | 4 | A+ | VVO/ DB Netz AG/ Stadt Dresden | langfristig | Aufgabe VVO/DB AG, laufend im Verwaltungshandeln
 
 VEP Dresden 2025plus
 Ingenieurgruppe IVV Aschen/ Ingenieurbüro IVAS Dresden
@@ -11768,7 +11704,7 @@ Ingenieurgruppe IVV Aschen/ Ingenieurbüro IVAS Dresden
 Anlage 6.2
 Seite 9/9
 
-|  Nr. | Themenbereich im Textteil | Kurzbeschreibung der Maßnahme
+Nr. | Themenbereich im Textteil | Kurzbeschreibung der Maßnahme
 (vollständige Maßnahmebeschreibung im Textteil
 unter dem jeweilig benannten Themenbereich) | Wirkungs-
 klasse |   | Kosten-
@@ -11779,18 +11715,17 @@ Einordnung | Einordnung in Haushalt
 (investiver HH (InvHH),
 Ergebnis-HH (ErgHH) und
 Verwalt.-handeln)  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|   |  |  | 1 (schwach) bis 5
+1 (schwach) bis 5
 (stark) | 0/1/2
 /+6 Mrd | 6/+6 Mrd |  | 4++ bis C |  |  |  |   |
-|  **Weitere Innovationsansätze aus den Bereichen Radverkehr und Barrierefreiheit/ Fußgängerverkehr (siehe auch Kap. 6.9.7)**  |   |   |   |   |   |   |   |   |   |   |   |
-|  - | Innovationsansätze zu Radverkehr | Integration von Radverkehrsinformationen u.a. in das Elbebrückeninformationssystem (EBI5) | - | - | - | - | Stadt Dresden | mittel- bis langfristig |  |  | Sicherung im InvHH und ErgHH  |
-|  - | Innovationsansätze zu Radverkehr | Aufstellen von Schließlichem für Gepäck und Fahrradhelme an geeigneten zentralen Standorten | - | - | - | - | Stadt Dresden | mittel- bis langfristig |  |  | Sicherung im InvHH und ErgHH  |
-|  - | Innovationsansätze zu Radverkehr | Prüfung geeigneter Standorte für Park+Bike (Radmitnahme im Kfz bei zum Kernstadttrand, Weiterfahrt per Rad) | - | - | - | - | Stadt Dresden | ab 2015 |  |  | laufend im Verwaltungshandeln  |
-|  - | Innovationsansätze zu Radverkehr | Aufstellen saisonal-temporäre Fahrradbügel auf Pkw-Stellplätzen in zentralen Bereichen mit hoher Nachfrage | - | - | - | - | Stadt Dresden | ab 2015 |  |  | Sicherung im InvHH und ErgHH  |
-|  - | Innovationsansätze zu Radverkehr | Pilotprojekt "ElbeRadLift" an einem ausgewählten Brückenkopf zur direkten Verbindung Brückenkopf/ Elberadweg | - | - | - | - | Stadt Dresden | mittel- bis langfristig |  |  | Sicherung im InvHH und ErgHH  |
-|  - | Innovationsansatz zu Barrierefreiheit und Fußgänger | Erprobung von aktivierbaren „Dunkel-Dunkel-LSA“ für Fußgänger außerhalb von Knotenpunkten sowie Restzeitanzeigen an Fußgänger-LSA bzw. Signalgebern. | - | - | - | - | Stadt Dresden | ab 2015 |  |  | Sicherung im InvHH und ErgHH  |
-|  - | Innovationsansatz zu Barrierefreiheit und Fußgänger | Erprobung von Diagonalquerungen für Fußgängern (Alles-Grün-Regelung) an geeigneten LSA | - | - | - | - | Stadt Dresden | ab 2015 |  |  | Sicherung im InvHH und ErgHH  |
+**Weitere Innovationsansätze aus den Bereichen Radverkehr und Barrierefreiheit/ Fußgängerverkehr (siehe auch Kap. 6.9.7)**
+- | Innovationsansätze zu Radverkehr | Integration von Radverkehrsinformationen u.a. in das Elbebrückeninformationssystem (EBI5) | - | - | - | - | Stadt Dresden | mittel- bis langfristig | Sicherung im InvHH und ErgHH
+- | Innovationsansätze zu Radverkehr | Aufstellen von Schließlichem für Gepäck und Fahrradhelme an geeigneten zentralen Standorten | - | - | - | - | Stadt Dresden | mittel- bis langfristig | Sicherung im InvHH und ErgHH
+- | Innovationsansätze zu Radverkehr | Prüfung geeigneter Standorte für Park+Bike (Radmitnahme im Kfz bei zum Kernstadttrand, Weiterfahrt per Rad) | - | - | - | - | Stadt Dresden | ab 2015 | laufend im Verwaltungshandeln
+- | Innovationsansätze zu Radverkehr | Aufstellen saisonal-temporäre Fahrradbügel auf Pkw-Stellplätzen in zentralen Bereichen mit hoher Nachfrage | - | - | - | - | Stadt Dresden | ab 2015 | Sicherung im InvHH und ErgHH
+- | Innovationsansätze zu Radverkehr | Pilotprojekt "ElbeRadLift" an einem ausgewählten Brückenkopf zur direkten Verbindung Brückenkopf/ Elberadweg | - | - | - | - | Stadt Dresden | mittel- bis langfristig | Sicherung im InvHH und ErgHH
+- | Innovationsansatz zu Barrierefreiheit und Fußgänger | Erprobung von aktivierbaren „Dunkel-Dunkel-LSA“ für Fußgänger außerhalb von Knotenpunkten sowie Restzeitanzeigen an Fußgänger-LSA bzw. Signalgebern. | - | - | - | - | Stadt Dresden | ab 2015 | Sicherung im InvHH und ErgHH
+- | Innovationsansatz zu Barrierefreiheit und Fußgänger | Erprobung von Diagonalquerungen für Fußgängern (Alles-Grün-Regelung) an geeigneten LSA | - | - | - | - | Stadt Dresden | ab 2015 | Sicherung im InvHH und ErgHH
 
 VEP Dresden 2025plus
 Ingenieurgruppe IVV Aschen/ Ingenieurbüro IVAS Dresden
@@ -11798,33 +11733,31 @@ Ingenieurgruppe IVV Aschen/ Ingenieurbüro IVAS Dresden
 Anlage 7:
 Zuordnung innerstädtischer Straßenkategorien
 
-|  Kategoriengruppe | anbaufrei Hauptverkehrsstraße (VS) |   | angebaute Hauptverkehrsstraßen (HS) |   | Erschließungsstraßen (ES)  |   |
-| --- | --- | --- | --- | --- | --- | --- |
-|  Verbindungsfunktionsstufe | überregional (II) | regional (III) | regional (III) | nahräumig (IV) | nahräumig (IV) | kleinräumig (V)  |
-|   | VSII | VS III | HS III | HS IV | ES IV | ES V  |
-|  Bezeichnung nach Tab. 6 RIN | Ortsdurchfahrt, anbaufrei Hauptverkehrsstraßen |   | Ortsdurchfahrt, Ortsteilverbind. innergemeindliche Hauptverkehrsstraßen |   | Sammelstraße | Anliegerstraße (auch gewerblich)  |
-|  Widmung | Bundes-/ Staats-/ Kreis- oder Gemeindestraße |   | Bundes-/ Staats-/ Kreis- oder Gemeindestraße |   | i.d.R. Gemeindestraße, auch Kreisstraße  |   |
-|  Zuordnung zu Kategorien aus dem Flächennutzungsplan | Bundesstraßen |   |   |   |  | i.d.R. alle anderen Straßen  |
-|   |  Staatsstraßen |   |   |   |   |   |
-|   |  Hauptverkehrsstraßen |   |   |   |   |   |
-|   |  Kreisstraßen |   |   |   |   |   |
-|   |  |   |   |   |   |   |
-|  Knotenpunktgestaltung zum über- bzw. untergeordneten Netz | i.d.R. plangleich, mit LSA oder Kreisverkehr |   | i.d.R. plangleich, mit LSA, Kreisplatz oder vorfahrts geregelt |   | i.d.R. plangleich, mit LSA, Kreisplatz oder vorfahrts geregelt  |   |
-|  bevorzugte Knotenpunkt-gestaltung innerhalb gleicher Hierarchiestufe | i.d.R. plangleich, mit LSA oder Kreisverkehr |   | LSA, Kreisplatz | LSA, Kreisplatz, Vorfahrtregelung | LSA, Kreisplatz, Vorfahrtregelung, rechts-vor-links | i.d.R. rechts vor links  |
-|  Zulässigkeit von direkten Grundstückszufahrten | bedingt möglich |   | möglich | weitgehend problemlos | meist problemlos | meist problemlos  |
-|  maßgeblicher Begegnungsfall | Lkw/ Lkw ohne Geschwindigkeitsreduktion |   | Lkw/ Lkw, weitgehend ohne Geschwindigkeitsreduktion |   | Pkw/ Lkw, in geringem Maß mit Geschwindigkeitsreduktion, in GE-Gebieten Lkw/ Lkw | Pkw/ Pkw, ggf. auch mit Warten, Ausnahme: GE-Anbindungen, dort Lkw/ Lkw  |
-|  Zulässigkeit ruhender Verkehr mit Einschränkung des Begegnungsfalles | nein |   | nein | in geringem Umfang | streckenweise möglich | streckenweise möglich  |
-|  Regelbreite der nutzbaren Fahrbahn (RASt/ RAS-Q) bei Zweistreifigkeit | 6,5 – 7,5 m (RQ 9,5 – 10,5) |   | 6,5 m |   | 5,5 – 6,5 m | 5,0 – 6,0 m, min. 4 m bei GE-Anbindung min. 6,25 m  |
-|  angestrebte Fahrgeschwindigkeit (mit Halten) nach RIN | 40 – 60 km/h | 30 – 50 km/h | 20 – 30 km/h | 15 – 25 km/h | keine Vorgabe | keine Vorgabe  |
-|  Zulässige Höchstgeschwindigkeit | 50 – 70 km/h, innerhalb bebauter Gebiete i.d.R. 50 km/h |   | i.d.R. 50 km/h | i.d.R. 50 km/h, 30 km/h möglich | 50 km/h, in vielen Fällen auch 30 km/h | 7 - 30 km/h, bei Gewerbe auch 50 km/h  |
-|  Eignung für streckenhafte Verkehrsberuhigung bis Tempo 30 | nein |   | in Ausnahmefällen |   | i.d.R. ja | ja, auch als Zone  |
-|  Eignung für Verkehrsberuhigung unter 30 km/h | nein |   | nein |   | in Ausnahmefällen | in ausgewählten Bereichen  |
-|  Nutzung durch Straßenbahn im Straßenraum | nein, separate Gleiskörper |   | ja |   | ja | ja, bei streckenhaften Tempo 30  |
-|  Eignung für Radverkehr im Mischverkehr (ERA Kap. 2.3, Typ II/ III mit Schutzstreifen) | 2-streifig und 50 km/h: Typ II bis 1200 Kfz/h, Typ III bis 1.800 Kfz/h
+Kategoriengruppe | anbaufrei Hauptverkehrsstraße (VS) | angebaute Hauptverkehrsstraßen (HS) | Erschließungsstraßen (ES)
+Verbindungsfunktionsstufe | überregional (II) | regional (III) | regional (III) | nahräumig (IV) | nahräumig (IV) | kleinräumig (V)
+VSII | VS III | HS III | HS IV | ES IV | ES V
+Bezeichnung nach Tab. 6 RIN | Ortsdurchfahrt, anbaufrei Hauptverkehrsstraßen | Ortsdurchfahrt, Ortsteilverbind. innergemeindliche Hauptverkehrsstraßen | Sammelstraße | Anliegerstraße (auch gewerblich)
+Widmung | Bundes-/ Staats-/ Kreis- oder Gemeindestraße | Bundes-/ Staats-/ Kreis- oder Gemeindestraße | i.d.R. Gemeindestraße, auch Kreisstraße
+Zuordnung zu Kategorien aus dem Flächennutzungsplan | Bundesstraßen | i.d.R. alle anderen Straßen
+Staatsstraßen
+Hauptverkehrsstraßen
+Kreisstraßen
+Knotenpunktgestaltung zum über- bzw. untergeordneten Netz | i.d.R. plangleich, mit LSA oder Kreisverkehr | i.d.R. plangleich, mit LSA, Kreisplatz oder vorfahrts geregelt | i.d.R. plangleich, mit LSA, Kreisplatz oder vorfahrts geregelt
+bevorzugte Knotenpunkt-gestaltung innerhalb gleicher Hierarchiestufe | i.d.R. plangleich, mit LSA oder Kreisverkehr | LSA, Kreisplatz | LSA, Kreisplatz, Vorfahrtregelung | LSA, Kreisplatz, Vorfahrtregelung, rechts-vor-links | i.d.R. rechts vor links
+Zulässigkeit von direkten Grundstückszufahrten | bedingt möglich | möglich | weitgehend problemlos | meist problemlos | meist problemlos
+maßgeblicher Begegnungsfall | Lkw/ Lkw ohne Geschwindigkeitsreduktion | Lkw/ Lkw, weitgehend ohne Geschwindigkeitsreduktion | Pkw/ Lkw, in geringem Maß mit Geschwindigkeitsreduktion, in GE-Gebieten Lkw/ Lkw | Pkw/ Pkw, ggf. auch mit Warten, Ausnahme: GE-Anbindungen, dort Lkw/ Lkw
+Zulässigkeit ruhender Verkehr mit Einschränkung des Begegnungsfalles | nein | nein | in geringem Umfang | streckenweise möglich | streckenweise möglich
+Regelbreite der nutzbaren Fahrbahn (RASt/ RAS-Q) bei Zweistreifigkeit | 6,5 – 7,5 m (RQ 9,5 – 10,5) | 6,5 m | 5,5 – 6,5 m | 5,0 – 6,0 m, min. 4 m bei GE-Anbindung min. 6,25 m
+angestrebte Fahrgeschwindigkeit (mit Halten) nach RIN | 40 – 60 km/h | 30 – 50 km/h | 20 – 30 km/h | 15 – 25 km/h | keine Vorgabe | keine Vorgabe
+Zulässige Höchstgeschwindigkeit | 50 – 70 km/h, innerhalb bebauter Gebiete i.d.R. 50 km/h | i.d.R. 50 km/h | i.d.R. 50 km/h, 30 km/h möglich | 50 km/h, in vielen Fällen auch 30 km/h | 7 - 30 km/h, bei Gewerbe auch 50 km/h
+Eignung für streckenhafte Verkehrsberuhigung bis Tempo 30 | nein | in Ausnahmefällen | i.d.R. ja | ja, auch als Zone
+Eignung für Verkehrsberuhigung unter 30 km/h | nein | nein | in Ausnahmefällen | in ausgewählten Bereichen
+Nutzung durch Straßenbahn im Straßenraum | nein, separate Gleiskörper | ja | ja | ja, bei streckenhaften Tempo 30
+Eignung für Radverkehr im Mischverkehr (ERA Kap. 2.3, Typ II/ III mit Schutzstreifen) | 2-streifig und 50 km/h: Typ II bis 1200 Kfz/h, Typ III bis 1.800 Kfz/h
 streifig und 30 km/h: Typ II bis 1800 Kfz/h, Typ III bis 2.000 Kfz/h |   |   |   |   | i.d.R. immer  |
-|   |  4-streifig und 50 km/h: Typ II bis 1.600 Kfz/h, Typ III bis 2.200 Kfz/h
+4-streifig und 50 km/h: Typ II bis 1.600 Kfz/h, Typ III bis 2.200 Kfz/h
 streifig und 30 km/h: Typ II bis 2.000 Kfz/h, Typ III bis 2.400 Kfz/h |   |   |   | i.d.R. keine 4-streifigen Querschnitte  |   |
-|  Bedeutung für Versorgung und Aufenthalt | gering |   | in zentralen Bereichen hoch |   | hoch | sehr hoch außer bei Gewerbeanbindung  |
+Bedeutung für Versorgung und Aufenthalt | gering | in zentralen Bereichen hoch | hoch | sehr hoch außer bei Gewerbeanbindung
 
 VEP Dresden 2025plus
 Ingenieurgruppe IVV Aachen/ Ingenieurbüro IVAS Dresden
@@ -12531,11 +12464,10 @@ Dresden. D162960
 Commitments to climate neutrality by 2030
 C
 
-|  Advantages | Description of the  |
-| --- | --- |
-|   | natural gas imports to supply heat to buildings to around 25 Percent through hydrogen imports and low electricity imports. CHP plants and heat pumps help to reduce dependence on electricity imports by generating and utilising electricity and heat efficiently.  |
-|  Democratisation of the energy supply | The energy transition has the potential to make the energy supply more democratic at both an individual and international level. At an individual level, depending on individual circumstances, it can expand the opportunities for participation in the energy supply, although not everyone can benefit equally. This can increase the self-efficacy of individual groups and thus also the acceptance of actions. Internationally, this can reduce inequalities between countries and reduce dependencies on fossil resources. While the energy transition does not bring about complete democratisation in the political sense, it does make various aspects of energy supply more democratic.  |
-|  Health and quality of life | Last but not least, climate protection and climate change adaptation measures have an impact on the health, mortality and quality of life of the urban population. As a result of global warming, heat stress in the summer months is increasing enormously for residents in densely populated neighbourhoods. In order to prevent health consequences, the City of Dresden is currently drawing up a heat action plan. This takes into account comprehensive intervention measures for health protection. Behavioural and situational preventive actions are intended to reduce heat stress and UV exposure and prevent damage to health. Dresden is working on a heat action plan for this purpose.
+Advantages | Description of the
+natural gas imports to supply heat to buildings to around 25 Percent through hydrogen imports and low electricity imports. CHP plants and heat pumps help to reduce dependence on electricity imports by generating and utilising electricity and heat efficiently.
+Democratisation of the energy supply | The energy transition has the potential to make the energy supply more democratic at both an individual and international level. At an individual level, depending on individual circumstances, it can expand the opportunities for participation in the energy supply, although not everyone can benefit equally. This can increase the self-efficacy of individual groups and thus also the acceptance of actions. Internationally, this can reduce inequalities between countries and reduce dependencies on fossil resources. While the energy transition does not bring about complete democratisation in the political sense, it does make various aspects of energy supply more democratic.
+Health and quality of life | Last but not least, climate protection and climate change adaptation measures have an impact on the health, mortality and quality of life of the urban population. As a result of global warming, heat stress in the summer months is increasing enormously for residents in densely populated neighbourhoods. In order to prevent health consequences, the City of Dresden is currently drawing up a heat action plan. This takes into account comprehensive intervention measures for health protection. Behavioural and situational preventive actions are intended to reduce heat stress and UV exposure and prevent damage to health. Dresden is working on a heat action plan for this purpose.
 Increasing weather changes and natural disasters also have an impact on the quality of life and health of the city's inhabitants. Climate protection is intended to mitigate the effects of climate change as far as possible.  |
 
 2
@@ -12553,15 +12485,14 @@ The strategic priorities and key measures can be found in defined Fields of Acti
 
 There are nine Fields of action in the urban climate protection strategy. The Fields of action define strategic priorities with corresponding topics for action. These also include non-energy-related greenhouse gas emissions, for which initial actions have been identified in the IEK as far as possible, but for which no detailed analyses have yet been carried out.
 
-|   | Fields of action (FoA)  |
-| --- | --- |
-|  1 | Building energy supply  |
-|   | In the Fields of action of building energy supply, the focus is on actions for climate-neutral heat supply, as the heat supply of buildings plays a decisive role in the overall balance of GHG emissions. This area currently accounts for around 1 million tonnes of greenhouse gases, or around 27 per cent of Dresden's GHG emissions. At the same time, the building sector offers considerable potential for utilising renewable energies directly at the consumer level. A climate-neutral heat supply seems possible by 2040. This is essentially based on decarbonised district heating in densely populated urban districts and the use of ambient heat potentials by means of heat pumps in less densely populated urban areas, as well as small amounts of biomass and direct electric heating. The central planning instrument for an affordable, secure and climate-neutral heat supply is municipal heat planning. The decarbonisation strategy and the heat transformation plan of SachsenEnergie AG based on it for a GHG-neutral district heating supply in the future as well as the expansion and densification of the existing district heating area are closely related to this.
+Fields of action (FoA)
+1 | Building energy supply
+In the Fields of action of building energy supply, the focus is on actions for climate-neutral heat supply, as the heat supply of buildings plays a decisive role in the overall balance of GHG emissions. This area currently accounts for around 1 million tonnes of greenhouse gases, or around 27 per cent of Dresden's GHG emissions. At the same time, the building sector offers considerable potential for utilising renewable energies directly at the consumer level. A climate-neutral heat supply seems possible by 2040. This is essentially based on decarbonised district heating in densely populated urban districts and the use of ambient heat potentials by means of heat pumps in less densely populated urban areas, as well as small amounts of biomass and direct electric heating. The central planning instrument for an affordable, secure and climate-neutral heat supply is municipal heat planning. The decarbonisation strategy and the heat transformation plan of SachsenEnergie AG based on it for a GHG-neutral district heating supply in the future as well as the expansion and densification of the existing district heating area are closely related to this.
 In addition, the city has the potential to generate around 715 GWh of electricity per year from PV systems on buildings. Data on the suitability of roofs and façades can be viewed publicly in the CoD's thematic city map.  |
-|  2 | Expansion of renewable energies in the area  |
-|   | The Fields of action "Expansion of renewable energies in the area" includes concrete potential analyses, in particular for PV systems and wind turbines, in order to increase generation from renewable energies. The corresponding analyses revealed potentials of 409 GWh/a for PV independent of buildings and 315 GWh/a for the use of wind energy. The building-independent PV potential is made up of photovoltaic systems on open spaces, car parks, agri-PV (combined use of agricultural land for farming and electricity generation) and floating PV (PV systems on bodies of water).  |
-|  3 | Mobility  |
-|   | For the transport sector (Fields of action: mobility), which accounts for around 24 Percent of Dresden's GHG emissions, an in-depth analysis of potential, including the necessary  |
+2 | Expansion of renewable energies in the area
+The Fields of action "Expansion of renewable energies in the area" includes concrete potential analyses, in particular for PV systems and wind turbines, in order to increase generation from renewable energies. The corresponding analyses revealed potentials of 409 GWh/a for PV independent of buildings and 315 GWh/a for the use of wind energy. The building-independent PV potential is made up of photovoltaic systems on open spaces, car parks, agri-PV (combined use of agricultural land for farming and electricity generation) and floating PV (PV systems on bodies of water).
+3 | Mobility
+For the transport sector (Fields of action: mobility), which accounts for around 24 Percent of Dresden's GHG emissions, an in-depth analysis of potential, including the necessary
 #
 Dresden. DLE200U
 Commitments to climate
@@ -12827,14 +12758,13 @@ Commitments to climate
 neutrality by 2030
 O
 
-|  Organisation | Economic sector / field of activity | Legal form | Climate protection strategy | Areas of action in climate protection^{6}  |   |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|   |  |  |  | 1 | 2 | 3 | 4 | 5 | 6 | 7  |
-|   |  |  | create a climate protection strategy that contains a plan of action and the path to green house gas neutrality.
+Organisation | Economic sector / field of activity | Legal form | Climate protection strategy | Areas of action in climate protection^{6}
+1 | 2 | 3 | 4 | 5 | 6 | 7
+create a climate protection strategy that contains a plan of action and the path to green house gas neutrality.
 TARGET YEAR: 2045 |  |  |  |  |  |  |   |
-|  Deutsche Werkstätten Hellerau | Other | Limited liability company (GmbH) | We have not yet committed ourselves to becoming climate-neutral, but we see climate protection and sustainability as a high priority and support the city's objectives with our contribution. | X | X | X | - | - | X | -  |
-|  JOYNEXT GmbH | Science, research, development and education | Limited liability company (GmbH) | We have not yet committed ourselves to becoming climate-neutral, but we see climate protection and sustainability as a high priority and support the city's objectives with our contribution. | X | X | X | X | X | X | X  |
-|  Technische Universität Dresden | Science, research, development and education | Corporation, foundation or institution | We have already made a voluntary commitment to become climate neutral**. To this end, we have created/are currently creating/will create a climate protection strategy that contains a plan of action and the path to green house gas neutrality.
+Deutsche Werkstätten Hellerau | Other | Limited liability company (GmbH) | We have not yet committed ourselves to becoming climate-neutral, but we see climate protection and sustainability as a high priority and support the city's objectives with our contribution. | X | X | X | - | - | X | -
+JOYNEXT GmbH | Science, research, development and education | Limited liability company (GmbH) | We have not yet committed ourselves to becoming climate-neutral, but we see climate protection and sustainability as a high priority and support the city's objectives with our contribution. | X | X | X | X | X | X | X
+Technische Universität Dresden | Science, research, development and education | Corporation, foundation or institution | We have already made a voluntary commitment to become climate neutral**. To this end, we have created/are currently creating/will create a climate protection strategy that contains a plan of action and the path to green house gas neutrality.
 TARGET YEAR: 2035 | X | X | X | X | X | X | X  |
 
 7
@@ -12874,15 +12804,14 @@ Commitments to climate
 neutrality by 2030
 O
 
-|  Organisation | Economic sector / field of activity | Legal form | Climate protection strategy | Areas of action in climate protection^{6}  |   |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|   |  |  |  | 1 | 2 | 3 | 4 | 5 | 6 | 7  |
-|   |  |  | path to green house gas neutrality.
+Organisation | Economic sector / field of activity | Legal form | Climate protection strategy | Areas of action in climate protection^{6}
+1 | 2 | 3 | 4 | 5 | 6 | 7
+path to green house gas neutrality.
 TARGET YEAR: 2035 |  |  |  |  |  |  |   |
-|  Sunfire | unpublished information | Limited liability company (GmbH) | We have not yet committed ourselves to becoming climate-neutral, but we see climate protection and sustainability as a high priority and support the city's objectives with our contribution. | X | X | X | X | - | X | X  |
-|  Industrie- und Handelskammer Dresden | Associations and representations | Corporation, foundation or institution | We have not yet committed ourselves to becoming climate-neutral, but we see climate protection and sustainability as a high priority and support the city's objectives with our contribution. | X | X | - | - | - | X | -  |
-|  DAS Environmental Expert GmbH | Manufacturing industry | Limited liability company (GmbH) | We have already made a voluntary commitment to reduce our greenhouse gas emissions by X % or tonnes by the year X. To this end, we have created / are currently creating / will create a climate protection strategy that contains a plan of action to achieve the target. TARGET YEAR: 2030 | X | X | X | - | - | X | X  |
-|  Vonovia | Construction and housing industry | Public limited company (AG) | We have already made a voluntary commitment to reduce our greenhouse | X | - | - | - | - | X | X  |
+Sunfire | unpublished information | Limited liability company (GmbH) | We have not yet committed ourselves to becoming climate-neutral, but we see climate protection and sustainability as a high priority and support the city's objectives with our contribution. | X | X | X | X | - | X | X
+Industrie- und Handelskammer Dresden | Associations and representations | Corporation, foundation or institution | We have not yet committed ourselves to becoming climate-neutral, but we see climate protection and sustainability as a high priority and support the city's objectives with our contribution. | X | X | - | - | - | X | -
+DAS Environmental Expert GmbH | Manufacturing industry | Limited liability company (GmbH) | We have already made a voluntary commitment to reduce our greenhouse gas emissions by X % or tonnes by the year X. To this end, we have created / are currently creating / will create a climate protection strategy that contains a plan of action to achieve the target. TARGET YEAR: 2030 | X | X | X | - | - | X | X
+Vonovia | Construction and housing industry | Public limited company (AG) | We have already made a voluntary commitment to reduce our greenhouse | X | - | - | - | - | X | X
 
 0
 #
@@ -12904,21 +12833,19 @@ Commitments to climate
 neutrality by 2030
 O
 
-|  Organisation | Economic sector / field of activity | Legal form | Climate protection strategy | Areas of action in climate protection^{3}  |   |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|   |  |  |  | 1 | 2 | 3 | 4 | 5 | 6 | 7  |
-|   |  |  | the path to green house gas neutrality.
+Organisation | Economic sector / field of activity | Legal form | Climate protection strategy | Areas of action in climate protection^{3}
+1 | 2 | 3 | 4 | 5 | 6 | 7
+the path to green house gas neutrality.
 TARGET YEAR: 2030 |  |  |  |  |  |  |   |
-|  Veolia Umweltservice Ost GmbH | Supply and disposal (energy, water, wastewater, waste) | Limited liability company (GmbH) | We have already made a voluntary commitment to become climate neutral**.
+Veolia Umweltservice Ost GmbH | Supply and disposal (energy, water, wastewater, waste) | Limited liability company (GmbH) | We have already made a voluntary commitment to become climate neutral**.
 To this end, we have created/are currently creating/will create a climate protection strategy that contains a plan of action and the path to green house gas neutrality.
 TARGET YEAR: 2050 | X | X | X | X | X | X | X  |
-|  tjg. theater junge generation | Health, culture and sport | Other | We have not yet committed ourselves to becoming climate-neutral, but we see climate protection and sustainability as a high priority and support the city's objectives with our contribution. | - | X | X | X | X | X | -  |
+tjg. theater junge generation | Health, culture and sport | Other | We have not yet committed ourselves to becoming climate-neutral, but we see climate protection and sustainability as a high priority and support the city's objectives with our contribution. | - | X | X | X | X | X | -
 
 The following table shows the actions mentioned by the Dresden stakeholders who are committed to making their own contribution, which are part of their own climate protection strategy.
 
-|  Name of the signatory (organisation) | actions  |
-| --- | --- |
-|  Volkswagen Sachsen GmbH - DIE | See files in the attachment under "Public relations for the EU mission".
+Name of the signatory (organisation) | actions
+Volkswagen Sachsen GmbH - DIE | See files in the attachment under "Public relations for the EU mission".
 In German: "regenerate+ Sustainability Strategy Volkswagen Group"  |
 #
 Dresden. D1c2qcu
@@ -12938,9 +12865,8 @@ Commitments to climate
 neutrality by 2030
 O
 
-|  Name of the signatory (organisation) | actions  |
-| --- | --- |
-|   | environment and climate must be identified and prevented as quickly as possible.
+Name of the signatory (organisation) | actions
+environment and climate must be identified and prevented as quickly as possible.
 What we expect of ourselves is therefore passed on to the upstream supply chain and monitored on site - also in an international context
 to ensure that our values are adhered to. Our customers have the same expectations of us.
 
@@ -12949,7 +12875,7 @@ A lot can be done for sustainability, even with small things. We offer our emplo
 These actions are already in place and therefore do not lead to any further savings.
 
 We have been ISO 14001 certified since May 2024.  |
-|  Kommunale Immobilien Dresden GmbH &CO Kg | The various KID properties are home to several bee colonies. In addition, the roof of the Kraftwerk Mitte theatre and the Stadtforum has been greened.
+Kommunale Immobilien Dresden GmbH &CO Kg | The various KID properties are home to several bee colonies. In addition, the roof of the Kraftwerk Mitte theatre and the Stadtforum has been greened.
 The sedum plants on the theatre building are currently in full bloom and also provide the bees with a new food source.
 A green roof converts harmful carbon dioxide into oxygen and binds dust and pollutants from the air. This provides plants and animals with a new habitat and increases biodiversity.
 Furthermore, the service life of a roof can be extended by several years because the plants shield it from the heat of the sun and UV rays. This protects the material accordingly.
@@ -12963,16 +12889,15 @@ Commitments to climate
 neutrality by 2030
 O
 
-|  Name of the signatory (organisation) | actions  |
-| --- | --- |
-|   | In planning: Kulturpalst Dresden approx. 200 kWp PV system on the flat roof of the Kulturpalast consisting of 580 monocrystalline glass-glass modules with black frames,
+Name of the signatory (organisation) | actions
+In planning: Kulturpalst Dresden approx. 200 kWp PV system on the flat roof of the Kulturpalast consisting of 580 monocrystalline glass-glass modules with black frames,
 
 The new city forum on Ferdinandplatz is currently being completed. Experts are currently installing a large photovoltaic (PV) system consisting of 376 module elements on the roof.
 
 The Stadtforum PV system and the planned Kulturpalast Dresden PV system each produce around 118,628 kilowatt hours of electricity per year, 100 per cent of which is used in the building. This saves around 43.5 kilograms of CO2 per location every year. This corresponds to CO2 emissions of approx. 18,310 litres of petrol burned, 244,100 kilometres driven by car (with a consumption of 7.5 litres per 100 kilometres) and the CO2 binding capacity of 3,470 trees.
 
 Other properties in preparation/planning: administration building at the Kraftwerk Mitte theatre, Cotta theatre workshops  |
-|  Institut für Luft- und Kältetechnik
+Institut für Luft- und Kältetechnik
 gemeinnützige Gesellschaft mbH | Research and development in the field of climate protection
 
 Traditional: research into the currently relevant problems of refrigeration and air conditioning technology of our time
@@ -12993,9 +12918,8 @@ Commitments to climate
 neutrality by 2030
 O
 
-|  Name of the signatory (organisation) | actions  |
-| --- | --- |
-|   | should take centre stage
+Name of the signatory (organisation) | actions
+should take centre stage
 in all research projects.
 
 Buildings and energy efficiency
@@ -13022,9 +12946,8 @@ Commitments to climate
 neutrality by 2030
 O
 
-|  Name of the signatory (organisation) | actions  |
-| --- | --- |
-|   | - Current status: Job ticket, some of the vehicle fleet are electric cars, secure bicycle parking spaces are available
+Name of the signatory (organisation) | actions
+- Current status: Job ticket, some of the vehicle fleet are electric cars, secure bicycle parking spaces are available
 Goal: Further reduction in the proportion of business trips by car and plane, thereby reducing the institute's own vehicle fleet
 Increase the number of electric cars - Education - Communication - Society:
 Existence of a sustainability officer and a working group on sustainability ->goal: long-term establishment in the company
@@ -13039,16 +12962,15 @@ Implementation of sustainability and climate protection as an integral part of p
 o Focus topic in annual research reports and publications
 o Goal: dedicated tab on the ILK homepage with the institute's own goals and current progress
 o Regular report on sustainability progress on social media  |
-|  MESSE DRESDEN GmbH | none yet, but are being actively focussed on  |
+MESSE DRESDEN GmbH | none yet, but are being actively focussed on
 #
 Dresden. D1c2qcu
 Commitments to climate
 neutrality by 2030
 O
 
-|  Name of the signatory (organisation) | actions  |
-| --- | --- |
-|  Theaterpädagogisches Zentrum Sachsen e.V. | The key foundation and driving force behind our work is the promotion of participation. This value includes the promotion and safeguarding of diversity, sustainability and democracy. Participation of all people, regardless of age, gender identity, sexuality, origin, physical characteristics, health or social status, abilities and religion, means taking responsibility for diversity. Securing this in the long term - not only in an ecological sense, but also for society as a whole - is a requirement of sustainability. And democracy is not possible without participation, and participation is inconceivable without the participation of all in the joint shaping of life and society.
+Name of the signatory (organisation) | actions
+Theaterpädagogisches Zentrum Sachsen e.V. | The key foundation and driving force behind our work is the promotion of participation. This value includes the promotion and safeguarding of diversity, sustainability and democracy. Participation of all people, regardless of age, gender identity, sexuality, origin, physical characteristics, health or social status, abilities and religion, means taking responsibility for diversity. Securing this in the long term - not only in an ecological sense, but also for society as a whole - is a requirement of sustainability. And democracy is not possible without participation, and participation is inconceivable without the participation of all in the joint shaping of life and society.
 
 In addition to the content-related component of our work, we also pay attention to ecological sustainability. For example, we purchase most of our office materials from the provider MEMO AG, our printed materials are printed almost exclusively on recycled paper in Germany and we use the TeilAuto car-sharing scheme.
 
@@ -13067,9 +12989,8 @@ Commitments to climate
 neutrality by 2030
 O
 
-|  Name of the signatory (organisation) | actions  |
-| --- | --- |
-|  Ostrale - Zentrum für zeitgenössische Kunst e.V. | Mobility: Our employees, artists, etc. are expressly encouraged to cycle, walk or use public transport such as buses and trains for their daily commute. This not only promotes their health, but also helps to reduce their ecological footprint. For business trips, we place particular emphasis on using the train or bus instead of your own car or plane wherever possible in order to promote a more environmentally friendly and sustainable method of travelling. In this way, we contribute to climate protection and support the transport revolution.
+Name of the signatory (organisation) | actions
+Ostrale - Zentrum für zeitgenössische Kunst e.V. | Mobility: Our employees, artists, etc. are expressly encouraged to cycle, walk or use public transport such as buses and trains for their daily commute. This not only promotes their health, but also helps to reduce their ecological footprint. For business trips, we place particular emphasis on using the train or bus instead of your own car or plane wherever possible in order to promote a more environmentally friendly and sustainable method of travelling. In this way, we contribute to climate protection and support the transport revolution.
 
 Exhibition logistics: In order to increase efficiency and conserve resources, we prefer to use groupage transport instead of individual private/DHL shipments. Although we endeavour to implement this practice consistently, the use of DHL shipments outside Europe cannot be avoided in every case. Our aim is to reduce the environmental impact and optimise logistics processes by bundling shipments.
 
@@ -13088,10 +13009,9 @@ Commitments to climate
 neutrality by 2030
 O
 
-|  Name of the signatory (organisation) | actions  |
-| --- | --- |
-|   | addition, the energy required for irrigation is provided by solar power to further minimise our ecological footprint. In the entrance area of our premises, we have created a bed planted with endangered (red list) plants from our native Elbe meadows. Some of these plants are endangered and important for our local ecosystem diversity and find a protected environment here to develop and flourish. Visitors can discover these special plants and learn about their importance for nature conservation. Education and communication: We organise regular interactive workshops for kindergarten groups, school classes and students in our garden and greenhouse as well as guided tours as part of the biennials, which deal intensively with the topics of sustainability. We also offer special workshops for senior citizens, where they can share, expand and exchange their ecological knowledge with us. These educational initiatives not only promote an understanding of ecological issues among the youngest participants, but also create a valuable platform for intergenerational dialogue and learning from one another. Education and communication: We have set up a comprehensive educational trail on our site, consisting of 11 informative panels. These panels are dedicated to a variety of important topics, including the hedgehog hotel, the importance and promotion of biodiversity, regional diversity and the preservation of old cultivated plants. The educational trail has been designed to familiarise our visitors with these complex and important topics and to raise their awareness of environmental protection and sustainability. Each panel provides detailed information and illustrative examples to promote understanding and interest in nature conservation. We take selected topics of this complex content to the Biennale sites to inform visitors about these important aspects of our natural environment in a vivid and interactive way.  |
-|  GEH8 Kunst Raum Ateliers | Greening of several roof areas (funded by the Environmental Office of the City of Dresden)
+Name of the signatory (organisation) | actions
+addition, the energy required for irrigation is provided by solar power to further minimise our ecological footprint. In the entrance area of our premises, we have created a bed planted with endangered (red list) plants from our native Elbe meadows. Some of these plants are endangered and important for our local ecosystem diversity and find a protected environment here to develop and flourish. Visitors can discover these special plants and learn about their importance for nature conservation. Education and communication: We organise regular interactive workshops for kindergarten groups, school classes and students in our garden and greenhouse as well as guided tours as part of the biennials, which deal intensively with the topics of sustainability. We also offer special workshops for senior citizens, where they can share, expand and exchange their ecological knowledge with us. These educational initiatives not only promote an understanding of ecological issues among the youngest participants, but also create a valuable platform for intergenerational dialogue and learning from one another. Education and communication: We have set up a comprehensive educational trail on our site, consisting of 11 informative panels. These panels are dedicated to a variety of important topics, including the hedgehog hotel, the importance and promotion of biodiversity, regional diversity and the preservation of old cultivated plants. The educational trail has been designed to familiarise our visitors with these complex and important topics and to raise their awareness of environmental protection and sustainability. Each panel provides detailed information and illustrative examples to promote understanding and interest in nature conservation. We take selected topics of this complex content to the Biennale sites to inform visitors about these important aspects of our natural environment in a vivid and interactive way.
+GEH8 Kunst Raum Ateliers | Greening of several roof areas (funded by the Environmental Office of the City of Dresden)
 Facade greening autumn 2024 (funded by the Environmental Office of the City of Dresden, (sponsored by the Environmental Agency of the City of Dresden, BUND and the Pieschen district)
 Organising a design competition to green a façade
 Organising a design competition to build an insect nesting aid
@@ -13104,9 +13024,8 @@ Commitments to climate
 neutrality by 2030
 O
 
-|  Name of the signatory (organisation) | actions  |
-| --- | --- |
-|   | Extensive planting measures with shrubs and trees on the site
+Name of the signatory (organisation) | actions
+Extensive planting measures with shrubs and trees on the site
 Organising educational activities for children in the garden area
 Purchasing green electricity
 Renewing the lighting technology (LED)
@@ -13115,9 +13034,9 @@ Improving thermal insulation with new windows and roof insulation
 Renewing the heating system
 Reducing print advertising, Flyer and poster printing only with certified print shops
 Digitalisation of administration  |
-|  SG Dynamo Dresden e.V. | SG Dynamo Dresden is clearly committed to sustainability and has adopted a sustainability strategy for this purpose.
+SG Dynamo Dresden e.V. | SG Dynamo Dresden is clearly committed to sustainability and has adopted a sustainability strategy for this purpose.
 At the same time, individual sustainability criteria that are required for the licensing of the respective leagues are being developed and implemented. In this context, the focus is clearly on regional anchoring, i.e. all projects and goals should have a sustainable impact on the city of Dresden and the surrounding area.  |
-|  TRICERA energy GmbH | Climate protection and sustainability are of central importance to TRICERA. One of our main focuses is on the materials to be used and the associated resource cycles to make them more sustainable. One of our core strategies is to utilise batteries that are no longer used in their actual application. This includes surplus or discarded 1st-life batteries as well as 2nd-life batteries from the automotive sector, which can continue to be used in stationary applications for many years before they are finally recycled.
+TRICERA energy GmbH | Climate protection and sustainability are of central importance to TRICERA. One of our main focuses is on the materials to be used and the associated resource cycles to make them more sustainable. One of our core strategies is to utilise batteries that are no longer used in their actual application. This includes surplus or discarded 1st-life batteries as well as 2nd-life batteries from the automotive sector, which can continue to be used in stationary applications for many years before they are finally recycled.
 
 If TRICERA nevertheless uses new stationary batteries, the company relies on lithium iron phosphate technology, which makes it possible to dispense with rare earths from crisis regions, as environmental and human rights standards can only be met to a limited extent in such regions.
 
@@ -13130,14 +13049,13 @@ Commitments to climate
 neutrality by 2030
 O
 
-|  Name of the signatory (organisation) | actions  |
-| --- | --- |
-|   | Consistent qualification of suppliers ensures that production is carried out in accordance with applicable labour and safety standards and that neither child nor forced labour is used.
+Name of the signatory (organisation) | actions
+Consistent qualification of suppliers ensures that production is carried out in accordance with applicable labour and safety standards and that neither child nor forced labour is used.
 
 Even small things can make a big difference. For this reason, TRICERA implements many actions internally in line with its goals. We have actively decided against personal company cars and use the few company cars collectively. If more cars are needed, we use the e-car fleet of car-sharing service providers wherever possible.
 
 We are also mindful of sustainable standards in our consumption. For example, we only buy organic and fair trade products (coffee, cow's milk, oat milk, tea, other drinks) for our employees. In addition, the company only finances vegetarian and vegan meals from regional suppliers for internal and external meetings, whether company celebrations or business meetings. Employees cannot be charged for meals that contain meat from factory farming, for example.  |
-|  Hochschule für Technik und Wirtschaft Dresden | Fields of action:
+Hochschule für Technik und Wirtschaft Dresden | Fields of action:
 A) Energy & Construction:
 Actions:
 Introduction of energy management
@@ -13157,9 +13075,8 @@ Commitments to climate
 neutrality by 2030
 O
 
-|  Name of the signatory (organisation) | actions  |
-| --- | --- |
-|   | HTWD events with vegetarian catering only
+Name of the signatory (organisation) | actions
+HTWD events with vegetarian catering only
 C) Climate resilience:
 Actions:
 Concept for climate protection and climate adaptation measures
@@ -13177,7 +13094,7 @@ F) Communication & participation:
 Actions:
 Raising awareness of sustainability issues
 Sustainability and climate protection mission statement at HTWD  |
-|  STESAD GmbH | - Installation of a PV system (approx. 39 kWp) on the office building in April 2021; production approx. 32 MWh/a (savings potential of approx. 15 t CO2/a, production emissions of the system are taken into account)
+STESAD GmbH | - Installation of a PV system (approx. 39 kWp) on the office building in April 2021; production approx. 32 MWh/a (savings potential of approx. 15 t CO2/a, production emissions of the system are taken into account)
 Switch to natural electricity tariff in 2019 (CO2 savings potential compared to German electricity mix approx. 90 %)
 Gradual conversion of the car fleet to e-mobility (according to a rough calculation, savings of approx. 4 t CO2/a after replacing 4 vehicles, production emissions are taken into account)
 Introduction of a flexible regulation for mobile working in April 2020, followed by a strong reduction in traffic-related emissions (commuting)  |
@@ -13189,9 +13106,8 @@ Commitments to climate
 neutrality by 2030
 O
 
-|  Name of the signatory (organisation) | actions  |
-| --- | --- |
-|   | - Introduction of the job ticket
+Name of the signatory (organisation) | actions
+- Introduction of the job ticket
 Promotion of car sharing through parking spaces on own property
 Introduction of job bikes in 2018
 Expansion of the vehicle fleet to include e-bikes
@@ -13208,7 +13124,7 @@ Increased offer of vegetarian/vegan dishes at company events
 Wherever possible (public procurement law) commissioning of regional partners and purchase of climate-friendly products
 Wherever possible, promotion of sustainable construction processes (façade/roof greening; increased use of more sustainable building materials such as wood or carbon concrete)
 Next step: focus also on circular construction, initial analyses together with Concular have taken place  |
-|  Musaik - Grenzenlos musizieren e.V. | For almost seven years, the music project Musaik - Grenzenlos musizieren e.V. has been an important point of socialisation for children and young people as well as the local population in Dresden-Prohlis. By learning to play an orchestral instrument and making music together in an orchestra, Musaik creates meeting spaces in which the pupils experience connection and community. The organisation creates a space in which barriers are overcome and cultural differences are perceived as  |
+Musaik - Grenzenlos musizieren e.V. | For almost seven years, the music project Musaik - Grenzenlos musizieren e.V. has been an important point of socialisation for children and young people as well as the local population in Dresden-Prohlis. By learning to play an orchestral instrument and making music together in an orchestra, Musaik creates meeting spaces in which the pupils experience connection and community. The organisation creates a space in which barriers are overcome and cultural differences are perceived as
 
 4
 #
@@ -13217,9 +13133,8 @@ Commitments to climate
 neutrality by 2030
 O
 
-|  Name of the signatory (organisation) | actions  |
-| --- | --- |
-|   | enrichment.
+Name of the signatory (organisation) | actions
+enrichment.
 As a "very small" association, we can only carry out climate protection actions to a limited extent - within the scope of our possibilities. These are difficult to compare with large cultural players in the city of Dresden. The following actions have been an integral part of our work since the beginning of the association's activities:
 
 T-shirts and clothing for the children involved are sourced from suppliers using organically and fairly produced materials
@@ -13231,7 +13146,7 @@ Catering: When it comes to food for participants and teachers, we pay attention 
 Electricity: We purchase our electricity from electricity providers that work with renewable energies.
 Thematic productions: At least once a year, there is a production with a significant theme/area of the Sustainable Development Goals (e.g. water, climate, flight and food)
 Employees: We pay attention to fair remuneration and work-life balance for our employees.  |
-|  SOLARWATT GmbH | When SOLARWATT was founded in 1993, making an active contribution to climate protection was not only one of our company's main motivations, but ultimately even our business purpose.
+SOLARWATT GmbH | When SOLARWATT was founded in 1993, making an active contribution to climate protection was not only one of our company's main motivations, but ultimately even our business purpose.
 
 In the more than 30 years since then, we have equipped over 665,000 homes, commercial buildings, church roofs, supermarket car parks and other locations with modern photovoltaic systems.  |
 
@@ -13242,9 +13157,8 @@ Commitments to climate
 neutrality by 2030
 O
 
-|  Name of the signatory (organisation) | actions  |
-| --- | --- |
-|   | For decades, these have been producing environmentally friendly electricity, most of which is also consumed locally. This not only saves enormous amounts of CO2 in power generation, but also means less strain on the entire power grid.
+Name of the signatory (organisation) | actions
+For decades, these have been producing environmentally friendly electricity, most of which is also consumed locally. This not only saves enormous amounts of CO2 in power generation, but also means less strain on the entire power grid.
 
 Thanks to smart energy management in the household (the SOLARWATT Manager), we ensure that controllable devices such as air conditioning systems, pool pumps, electric cars or heat pumps only ever consume exactly the energy that is being generated by the solar system. This saves our customers a lot of money and the environment a lot of CO2.
 
@@ -13255,7 +13169,7 @@ In the latest product generation, the production of our SOLARWATT Panel vision p
 SOLARWATT is also committed to sustainable action locally. We support our employees with JobRad and JobTicket, place insect hotels in our green spaces, inform visitor groups of all ages about solar power and sustainability and reward internal suggestions for improvement for less resource consumption and more circular economy.
 
 In the Dresden region, SOLARWATT now has its own consulting and installation team and offers the entire service from production, quotation preparation and system planning to the installation of a photovoltaic system or heat pump solution from a single source.  |
-|  IG KURIS e. V./LVR Sachsen e. V. | IG KURIS e. V. supports all activities for a material-appropriate and sensible use of plastics in order to emphasise their technical, economic and ecological advantages and to promote an environmentally friendly circular economy. The interest group also acts in an advisory capacity and endeavours to network companies, authorities, associations and institutes. By organising events, the  |
+IG KURIS e. V./LVR Sachsen e. V. | IG KURIS e. V. supports all activities for a material-appropriate and sensible use of plastics in order to emphasise their technical, economic and ecological advantages and to promote an environmentally friendly circular economy. The interest group also acts in an advisory capacity and endeavours to network companies, authorities, associations and institutes. By organising events, the
 
 6
 #
@@ -13264,14 +13178,13 @@ Commitments to climate
 neutrality by 2030
 O
 
-|  Name of the signatory (organisation) | actions  |
-| --- | --- |
-|   | association aims to make a targeted contribution to further training and knowledge transfer. The Interessengemeinschaft Kunststoffrecyclinginitiative Sachen e.V. is a member of the Landesverband der Recyclingwirtschaft Sachsen e. V.
+Name of the signatory (organisation) | actions
+association aims to make a targeted contribution to further training and knowledge transfer. The Interessengemeinschaft Kunststoffrecyclinginitiative Sachen e.V. is a member of the Landesverband der Recyclingwirtschaft Sachsen e. V.
 Activities:
 Seminars and conferences: "Plastics recycling is climate protection!")
 Previously 25th events "Actions to increase energy efficiency in companies"
 Environmental education lessons on waste separation and plastics recycling  |
-|  VON ARDENNE Holding SE & Co KGaA | Implementation of energy efficiency measures at the Weißig campus from 2024 - 2026. The following actions will be implemented during this period.
+VON ARDENNE Holding SE & Co KGaA | Implementation of energy efficiency measures at the Weißig campus from 2024 - 2026. The following actions will be implemented during this period.
 Modernisation of process cooling HW18/ HW8 / HW1
 Expansion of PV, incl. feed-in and charging stations for cars
 Conversion of hall lighting HW1 & HW8 to LED, incl. lighting control
@@ -13288,16 +13201,15 @@ Commitments to climate
 neutrality by 2030
 O
 
-|  Name of the signatory (organisation) | actions  |
-| --- | --- |
-|   | - expansion of bicycle parking spaces with charging facilities for e-bikes (status implemented)
+Name of the signatory (organisation) | actions
+- expansion of bicycle parking spaces with charging facilities for e-bikes (status implemented)
 as part of waste management, we are implementing the legal requirements for separation and feeding into the respective recycling streams
 collection of plastic items on site, for further recycling by partners (implementation in planning) - will contribute to reducing our waste volume
 flowering sponsorship for 10.000m² of farmland in the Schönfeld highlands (status implemented)
 cooperation with Weißiger Werkstätten for projects and topics at the site - 3 raised beds currently set up by workshops and continuously maintained by employees (status implemented & ongoing)
 Sustainability organisation implemented - established department, company carbon footprint set up, climate protection plan / transition path to be drawn up in 2024, employee event on sustainability held twice + topic-related training for specialist departments
 We are currently establishing an environmental management system and an energy management system - for certification in 2025. In this context, concepts for recycling management and energy saving for our products will also be developed. We are planning to involve our suppliers in this. Suppliers have already been approached on selected special topics; the implementation status on the topic of sustainability varies greatly depending on the size of the supplier.  |
-|  GlaxoSmithKline Standort Dresden | - 100% of imported electricity is to come from renewable energy sources by 2025. To this end, GSK will build its own wind and PV parks or purchase electricity directly from renewable energy producers. The CO2 reduction for the plant in Dresden will amount to 6,000 tonnes of CO2 from 2025
+GlaxoSmithKline Standort Dresden | - 100% of imported electricity is to come from renewable energy sources by 2025. To this end, GSK will build its own wind and PV parks or purchase electricity directly from renewable energy producers. The CO2 reduction for the plant in Dresden will amount to 6,000 tonnes of CO2 from 2025
 The optimisation of the air conditioning systems will achieve a CO2 reduction of 77,000 kg by the end of 2025. - The optimisation of water treatment and steam generation should achieve a CO2 reduction of 57,000 kg by the end of 2025
 The expansion and modernisation of the QC laboratories should achieve a further annual CO2 reduction of 8,100 kg by the end of 2027.
 Annual update and further development of the CO2 roadmap and selection of CO2 reduction projects.  |
@@ -13309,9 +13221,8 @@ Commitments to climate
 neutrality by 2030
 O
 
-|  Name of the signatory (organisation) | actions  |
-| --- | --- |
-|  Deutsche Werkstätten Hellerau | Communication & participation:
+Name of the signatory (organisation) | actions
+Deutsche Werkstätten Hellerau | Communication & participation:
 All areas of action are organised in cooperation between HSE, Facility and Sustainability Coordination. The people in charge regularly take part in networking meetings in the region, such as the IHK-Umwelttreff or DD-Stammtisch "Nachhaltigkeit", for further training and dialogue. At the Climate Neutrality Network, Deutsche Werkstätten works with other companies to learn all about preparing their own GHG inventory.
 Internally, the individual departments are specifically sensitised in order to be able to optimally implement targeted actions.
 
@@ -13331,10 +13242,9 @@ Commitments to climate
 neutrality by 2030
 O
 
-|  Name of the signatory (organisation) | actions  |
-| --- | --- |
-|   | A few years ago, the vehicle fleet was equipped with an electric car for short journeys, which is charged using electricity generated by the PV system.  |
-|  JOYNEXT GmbH | - Creation of a concept for alternative air conditioning, e.g. coupling to geothermal energy
+Name of the signatory (organisation) | actions
+A few years ago, the vehicle fleet was equipped with an electric car for short journeys, which is charged using electricity generated by the PV system.
+JOYNEXT GmbH | - Creation of a concept for alternative air conditioning, e.g. coupling to geothermal energy
 Examination of the installation of a photovoltaic system (30kWP)
 Expansion of the charging infrastructure (from 8 to 16 charging points on site)
 Expansion of employee commuter transport (job ticket, company shuttle bus, job bike)
@@ -13349,7 +13259,7 @@ Member of the Dresden Sustainability Round Table
 Regular employee training on environmental protection and sustainability
 Planning of a sustainability day at the company
 Research in the field of augmented driving to increase driving efficiency  |
-|  Technische Universität Dresden | 1) Buildings and energy efficiency:
+Technische Universität Dresden | 1) Buildings and energy efficiency:
 Successive energy refurbishment of the TUD's unrenovated old buildings by the Saxon State Real Estate and Construction Management (SIB) (often with ERDF funding), currently e.g. the Andreas Schubert Building. The buildings that are listed are a particular challenge (around 20%).
 Utilisation of waste heat from the high-performance computer to heat the Krone building; in future, waste heat is also to be fed into the Dresden district heating network of Sachsen Energie.
 Seven PV systems (yield 2022: 324 MWh) installed on TU Dresden buildings. Further expansion planned for new buildings and building renovations (via SIB)  |
@@ -13385,9 +13295,8 @@ Commitments to climate
 neutrality by 2030
 O
 
-|  Name of the signatory (organisation) | actions  |
-| --- | --- |
-|   | lectures), working groups on various environmental and sustainability topics: https://tuuwi.de/ - EMAS environmental management (since 2003): includes annual environmental reporting and the creation and implementation of an environmental programme (https://tu-dresden.de/tu-dresden/nachhaltigkeit/handlungsfelder/campus-und-betrieb/umweltmanagementsystem-1)
+Name of the signatory (organisation) | actions
+lectures), working groups on various environmental and sustainability topics: https://tuuwi.de/ - EMAS environmental management (since 2003): includes annual environmental reporting and the creation and implementation of an environmental programme (https://tu-dresden.de/tu-dresden/nachhaltigkeit/handlungsfelder/campus-und-betrieb/umweltmanagementsystem-1)
 Green Office (since 2021): central point of contact for questions about sustainability at the TU; visualisation of projects and stakeholders, networking point and implementation of events (https://tu-dresden.de/greenoffice)
 Activation and empowerment of university members to act sustainably through decentralised sustainability ambassadors acting as multipliers at TUD
 University-wide, cross-status group continuing education courses on sustainability with the aim of becoming active in sustainability issues and initiating and supporting transformation processes
@@ -13405,10 +13314,9 @@ Commitments to climate
 neutrality by 2030
 O
 
-|  Name of the signatory (organisation) | actions  |
-| --- | --- |
-|   | - As part of the Excellence Initiative, cluster projects are being applied for that focus in particular on sustainable construction and sustainability-oriented electronics.  |
-|  UNU-FLORES | Climate Protection Measures taken by UNU-FLORES
+Name of the signatory (organisation) | actions
+- As part of the Excellence Initiative, cluster projects are being applied for that focus in particular on sustainable construction and sustainability-oriented electronics.
+UNU-FLORES | Climate Protection Measures taken by UNU-FLORES
 
 background
 The initiative to create a comprehensive sustainability vision and strategy for the United Nations system began at the meeting of the Senior Officials of the United Nations Environment Management Group in 2018 and was reinforced by the Secretary-General's call for increased internal efforts to address climate change. Phase I of the Sustainability Management Strategy, introduced in 2019, concentrated on environmental sustainability in management. Phase II of the Strategy, endorsed in 2021 seeks to implement environmental and social sustainability in United Nations system policies, programming and support functions. UNU-FLORES was involved in the development of the strategy and is dedicated to being a role model for integrating environmental and social sustainability considerations across its work. UNU-FLORES is committed to reducing its environmental footprint and striving for sustainability in all functions and procurement activities within the institute.
@@ -13429,9 +13337,8 @@ Commitments to climate
 neutrality by 2030
 O
 
-|  Name of the signatory (organisation) | actions  |
-| --- | --- |
-|   | - Local Sourcing: Favour local suppliers to cut transportation emissions and support the local economy.
+Name of the signatory (organisation) | actions
+- Local Sourcing: Favour local suppliers to cut transportation emissions and support the local economy.
 Certification and Standards: Seek certifications or Eco-labels for sustainability verification.
 End-of-life: Prefer durable, repairable items and sustainable waste disposal options.
 For advice on purchases and suppliers' sustainability efforts, the sustainability focal point of the Institute shall be consulted. When requesting a purchase, information on the sustainability of providers should be mentioned. The following rules apply:
@@ -13458,16 +13365,15 @@ Commitments to climate
 neutrality by 2030
 O
 
-|  Name of the signatory (organisation) | actions  |
-| --- | --- |
-|   | Current Provider: Dell has been used at UNU-FLORES ever since its foundation with the compatibility of laptops and dockings/screens on all workstations. Dell is committed to becoming CO2 neutral by 2030, and offers a wide range of activities, such as plastic-free packaging, 94.5% packaging from recycled or renewable materials, and modular construction (concept Luna), including recycled materials for the frames.  |
-|   | 4. travel
+Name of the signatory (organisation) | actions
+Current Provider: Dell has been used at UNU-FLORES ever since its foundation with the compatibility of laptops and dockings/screens on all workstations. Dell is committed to becoming CO2 neutral by 2030, and offers a wide range of activities, such as plastic-free packaging, 94.5% packaging from recycled or renewable materials, and modular construction (concept Luna), including recycled materials for the frames.
+4. travel
 aspects to be considered for the travel planning:
 From both a sustainability and cost perspective, virtual engagement should be preferred over travelling whenever feasible and effective.
 The number of participants required to travel should be minimised.
 Selecting the appropriate transport mode can significantly impact travel’s environmental footprint. Efficient and sustainable travel options should be prioritised. Trains should be considered the primary choice whenever possible. For flights, preference should be given to direct routes and economy class over business class. Even if more time or money is needed, choosing a train over a flight should still be considered and discussed with the supervisor.
 To raise awareness about the climate impact of travel and facilitate emission compensation data collection, travellers must calculate and complete their CO2 emissions in a provided table. Confirmation of this information in the travel request is mandatory. Travel requests lacking this data will not be approved.  |
-|   | 5. waste disposal
+5. waste disposal
 UNU-FLORES follows the German system for waste separation. As the respective signs show, the following waste streams are separated in the office:
 Paper and Cardboard: This category includes newspapers, magazines, cardboard packaging, and other paper-based materials. Only clean paper should go into that bin - plastic must be removed. Used paper towels and greasy paper belongs to the residual waste.
 Packaging Waste: Packaging materials such as plastic, metal, and Tetra Pak cartons are separated and collected for recycling.  |
@@ -13479,14 +13385,13 @@ Commitments to climate
 neutrality by 2030
 O
 
-|  Name of the signatory (organisation) | actions  |
-| --- | --- |
-|   | - Biodegradable Waste / Residual Waste: Due to the limited selection of available waste bins in the building these categories are collected together. This category includes organic waste such as food scraps and compostable materials as well as non-recyclable or residual waste that cannot be sorted into other categories, including used paper towels.
+Name of the signatory (organisation) | actions
+- Biodegradable Waste / Residual Waste: Due to the limited selection of available waste bins in the building these categories are collected together. This category includes organic waste such as food scraps and compostable materials as well as non-recyclable or residual waste that cannot be sorted into other categories, including used paper towels.
 Glass (Glas): Glass is sorted into colour categories: clear glass, green glass, and brown glass. These are collected separately in designated containers. All glass waste must be personally disposed of in one of the numerous glass containers around the city.
 
 CO2 Emissions - Emission Offsetting
 UNU-FLORES endeavours to reduce its environmental footprint wherever possible. Emissions that are unavoidable will be offset annually through financial contributions to external decarbonisation efforts. Specifically, the office's energy emissions and those associated with business travel will be offset. The amount allocated and selection of projects will be decided during a management meeting at the beginn  |
-|  GlobalFoundries
+GlobalFoundries
 Dresden Module One
 LLC & Co. KG | GlobalFoundries (GF) is pursuing the global goal of achieving a 100% carbon-neutral electricity supply and net-zero greenhouse gas emissions by 2050.
 By 2030, the global GF organisation plans to reduce absolute greenhouse gas emissions (Scope 1 and Scope 2) by 25% compared to 2020 as the base year.
@@ -13504,15 +13409,14 @@ Commitments to climate
 neutrality by 2030
 O
 
-|  Name of the signatory (organisation) | actions  |
-| --- | --- |
-|   | Our sustainability team and the GF Dresden environmental department regularly inform the workforce about topics and campaigns relating to sustainability and climate protection.
+Name of the signatory (organisation) | actions
+Our sustainability team and the GF Dresden environmental department regularly inform the workforce about topics and campaigns relating to sustainability and climate protection.
 
 Innovation in the field of microchips supports far-reaching technical developments in the area of climate protection.
 
 Further information on GF's global efforts in climate protection and sustainability can be found in our 2024 Sustainability Report: https://gf.com/wp-content/uploads/2024/06/GF-CRR-24.pdf
 GF Dresden is currently installing a photovoltaic system with an output of around 6,000 kilowatts peak (kWp) on the roofs of the factory. The amount of electricity generated in future will be equivalent to the annual consumption of around 1,600 average four-person households in Germany. This will save around 3,200 tonnes of CO2 emissions per year in the future.  |
-|  Dresdner Sportclub 1898 e.V. | A) Installation of an e-charging station in the car park of the DSC training hall in 2019
+Dresdner Sportclub 1898 e.V. | A) Installation of an e-charging station in the car park of the DSC training hall in 2019
 B) Conversion of the lighting in the DSC training hall to LED in 2021; CO2 savings approx. 79t/a
 C) Connection of the DSC training hall to the district heating network in autumn 2022; CO2 savings approx. 120t/a
 D) Renovation of the ventilation systems in the DSC training hall in 2023; CO2 savings approx. 29t/a
@@ -13521,7 +13425,7 @@ E) DSC 1898 e.V. is a partner of JOBRAD.
 https://www.dsc1898.de/verein/unsere-initiativen/umweltschutz
 Expectation of the City of Dresden:
 Support in the search for and implementation of options for utilising the rainwater that accumulates on the roof of the DSC training hall (approx. 5,500m²), including to relieve the pressure on the city's sewer network  |
-|  Leibniz-Institut für ökologische Raumentwicklung (IÖR) | The following actions in various Fields of action have already been implemented and others are in the process of being realised/. Building/operation/procurement
+Leibniz-Institut für ökologische Raumentwicklung (IÖR) | The following actions in various Fields of action have already been implemented and others are in the process of being realised/. Building/operation/procurement
 Photovoltaic system with a gross output of 38.5 kWp on the roof of the institute building covers 1/3 of the energy requirement
 certified green electricity and district heating from combined heat and power generation enable the building's entire energy requirement to be covered by renewable energies.  |
 
@@ -13532,9 +13436,8 @@ Commitments to climate
 neutrality by 2030
 O
 
-|  Name of the signatory (organisation) | actions  |
-| --- | --- |
-|   | - Reduction of primary energy demand by 25%, 30% better than the current regulations of the Energy Saving Ordinance, honoured by GreenBuilding Award. - Maintenance routine to optimise the operation of our technical building systems (e.g. hydraulic heating system balancing, air conditioning system check, filter replacement for ventilation systems) - appliances are switched off completely when not in use for long periods (at night, at weekends, during holiday periods, e.g. using power strips) - energy-efficient LED lighting - motion detectors in areas with short lighting times (e.g. corridors, sanitary areas). >> The Institute building is GHG-neutral in operation thanks to the above actions and the refurbished building envelope. - Climate-neutral procurement of office supplies since 2023 (use of recycled paper, certified printing paper for externally manufactured products (Blue Angel), recycling or reuse management for office furniture and IT, collective deliveries to save journeys (also financially due to travel flat rate) - Roof greening
+Name of the signatory (organisation) | actions
+- Reduction of primary energy demand by 25%, 30% better than the current regulations of the Energy Saving Ordinance, honoured by GreenBuilding Award. - Maintenance routine to optimise the operation of our technical building systems (e.g. hydraulic heating system balancing, air conditioning system check, filter replacement for ventilation systems) - appliances are switched off completely when not in use for long periods (at night, at weekends, during holiday periods, e.g. using power strips) - energy-efficient LED lighting - motion detectors in areas with short lighting times (e.g. corridors, sanitary areas). >> The Institute building is GHG-neutral in operation thanks to the above actions and the refurbished building envelope. - Climate-neutral procurement of office supplies since 2023 (use of recycled paper, certified printing paper for externally manufactured products (Blue Angel), recycling or reuse management for office furniture and IT, collective deliveries to save journeys (also financially due to travel flat rate) - Roof greening
 
 Event management
 Reuse of all signage systems.
@@ -13556,17 +13459,16 @@ Commitments to climate
 neutrality by 2030
 O
 
-|  Name of the signatory (organisation) | actions  |
-| --- | --- |
-|   | - Technology that can no longer be used at the institute is given to staff or organisations. Centralised lending means that less technology needs to be procured overall. - Floor printers instead of desktop printers / 2-sided printing by default - Digitisation of many processes ("paperless office")  |
-|   | Mobility/travel
+Name of the signatory (organisation) | actions
+- Technology that can no longer be used at the institute is given to staff or organisations. Centralised lending means that less technology needs to be procured overall. - Floor printers instead of desktop printers / 2-sided printing by default - Digitisation of many processes ("paperless office")
+Mobility/travel
 We promote sustainable mobility on site by providing a job ticket, using an e-car as a company car and charging station for e-vehicles, as well as by using a company bicycle and charging stations for e-bikes. - Reimbursement of amortised railcards
 no flights if reachable by train <24h
 covered bicycle parking spaces according to demand
 travel information for guests on the website includes a public transport + bicycle navigation plugin, information on travel options for invitations
 promotion of digital participation in events to avoid travel
 Offer hybrid formats to avoid travelling  |
-|   | Monitoring and communication
+Monitoring and communication
 information on energy consumption and the performance of the solar system is provided on an ongoing basis - Sensitising employees to saving heating and electricity costs
 Monitoring important consumption data (e.g. electricity, water, district heating) supports internal energy and climate impact assessments.
 Actions for the possible expansion of an energy-positive building envelope are being examined.
@@ -13601,9 +13503,8 @@ Commitments to climate
 neutrality by 2030
 O
 
-|  Name of the signatory (organisation) | actions  |
-| --- | --- |
-|   | numerous flexible working time models, training programmes and health measures. In addition, it is a matter of course for us to get involved in the local community. We do this not least by supporting aid organisations, sports clubs and cultural institutions.
+Name of the signatory (organisation) | actions
+numerous flexible working time models, training programmes and health measures. In addition, it is a matter of course for us to get involved in the local community. We do this not least by supporting aid organisations, sports clubs and cultural institutions.
 
 With regard to our product portfolio, we are sustainability experts. We give used Airbus passenger aircraft a second life by converting them into cargo aircraft, thereby extending the product life cycle by up to 15 years. Our lightweight panels are not only lightweight, but above all highly optimised for the respective application scenario. They are characterised by material efficiency and therefore contribute directly to the conservation of resources. At the same time, weight-optimised aircraft components result in lower fuel consumption, which in turn leads to lower emissions and thus environmental pollution.
 
@@ -13612,7 +13513,7 @@ We conduct research into a wide range of circular economy topics and are in cons
 We are particularly proud of our initiative, which has been in place since 2021, whereby a tree is planted in Saxon forests for every freight tonne converted by EFW. Together with the Forest Foundation, around 2,500 young trees have already been planted. As a company, we are currently preparing for the implementation of CSRD reporting obligations. In this context, the existing voluntary commitment to reduce greenhouse gas emissions (-50% by 2030) is being reviewed and harmonised with the climate protection and sustainability strategy currently being developed.
 
 We greatly appreciate the dialogue with representatives of the City of Dresden on sustainability issues to date, but also see opportunities for further intensification. We look forward to discussing specific topics and projects.  |
-|  Dresden Zero | The citizens' initiative DresdenZero aims to achieve climate neutrality in Dresden by 2035 in order to help combat climate change and preserve Dresden as a liveable and sustainable city for us and all future generations. The colourful, open and non-partisan group of Dresden citizens has committed the city of Dresden to this goal through a successful citizens' petition and is now supporting the identification and planning of necessary climate protection measures together with politicians, administration,  |
+Dresden Zero | The citizens' initiative DresdenZero aims to achieve climate neutrality in Dresden by 2035 in order to help combat climate change and preserve Dresden as a liveable and sustainable city for us and all future generations. The colourful, open and non-partisan group of Dresden citizens has committed the city of Dresden to this goal through a successful citizens' petition and is now supporting the identification and planning of necessary climate protection measures together with politicians, administration,
 
 2
 #
@@ -13621,17 +13522,16 @@ Commitments to climate
 neutrality by 2030
 O
 
-|  Name of the signatory (organisation) | actions  |
-| --- | --- |
-|   | industry and citizens.
+Name of the signatory (organisation) | actions
+industry and citizens.
 In 2024, for example, DresdenZero set up a monitoring system for climate protection measures in Dresden, presented an assessment of the Integrated Energy and Climate Protection Plan (IEK), gave an opinion at an expert hearing of the city council, is involved in other city committees, engages in dialogue with citizens on the subject of climate protection at district festivals and organises events with dialogues between politics, administration and industry on the subject of climate protection for citizens.  |
-|  Advanced Mask Technology Center GmbH & Co. KG | Small selection
+Advanced Mask Technology Center GmbH & Co. KG | Small selection
 Maintenance of an energy management system in accordance with ISO 50001 since 2013, thus ensuring continuous improvement in energy consumption and CO2 emissions from energy consumption
 Maintenance of an environmental management system in accordance with ISO 14001 since 2006, thus ensuring continuous improvement in water consumption and waste generation, as well as promoting actions for reuse and avoidance
 Use of 100% electricity from renewable energies since 2018
 Installation of a heat pump to replace around 80% natural gas compared to the previous boiler system by 2027
 Conversion of flue gas scrubbers from fossil fuels to alternative technology (date still open)  |
-|  Sunfire | - We are currently equipping our Dresden production sites with several electricity measuring devices so that we can subsequently monitor energy consumption on an area and plant-specific basis and better identify and realise potential energy savings.
+Sunfire | - We are currently equipping our Dresden production sites with several electricity measuring devices so that we can subsequently monitor energy consumption on an area and plant-specific basis and better identify and realise potential energy savings.
 As part of the site expansion in Gasanstaltstraße in 2024, over 4,500 tonnes of concrete from the building demolition were placed directly into excavation pits on site, thus forming the basis for further expansion.
 In addition to sufficient bicycle parking spaces, Sunfire promotes sustainable employee mobility through bicycle leasing and a job ticket/German ticket.
 We have clearly regulated this in our business travel policy: Train journeys are in 2nd class. Air travel within Germany and short-haul flights are to be avoided for climate protection reasons.
@@ -13645,14 +13545,13 @@ Commitments to climate
 neutrality by 2030
 O
 
-|  Name of the signatory (organisation) | actions  |
-| --- | --- |
-|   | hydrogen or synthesis gas, a mixture of hydrogen and carbon monoxide, from electricity, water vapour and CO2. Hydrogen and synthesis gas can be used as raw materials in industry or as energy sources in the transport and energy sector. We help industrial customers and climate-conscious companies to decarbonise their value chains: From logistics and the use of materials to energy supply.
+Name of the signatory (organisation) | actions
+hydrogen or synthesis gas, a mixture of hydrogen and carbon monoxide, from electricity, water vapour and CO2. Hydrogen and synthesis gas can be used as raw materials in industry or as energy sources in the transport and energy sector. We help industrial customers and climate-conscious companies to decarbonise their value chains: From logistics and the use of materials to energy supply.
 Climate protection starts locally and has a global impact. Our electrolysers generate green hydrogen from renewable energies, which replaces fossil fuels such as coal, oil or natural gas. This reduces greenhouse gas emissions and makes a direct contribution to climate protection.
 We have been using 100% certified green electricity for our company sites in Dresden since 2022.
 We are actively driving forward the energy transition and are committed to strengthening Germany as a centre of technology and business, for example through our membership of associations. This secures and creates new sustainable jobs in the maturing hydrogen economy - in Dresden, Saxony, Germany and Europe.
 Dresden is the centre of our research and development activities for the continuous improvement and further development of our innovative electrolysis technologies for the production of renewable hydrogen.  |
-|  GlaxoSmithKline Standort Dresden | - 100% of imported electricity is to come from renewable energy sources by 2025. To this end, GSK will build its own wind and PV parks or purchase electricity directly from renewable energy producers. The CO2 reduction for the plant in Dresden will amount to 6,000 tonnes of CO2 from 2025
+GlaxoSmithKline Standort Dresden | - 100% of imported electricity is to come from renewable energy sources by 2025. To this end, GSK will build its own wind and PV parks or purchase electricity directly from renewable energy producers. The CO2 reduction for the plant in Dresden will amount to 6,000 tonnes of CO2 from 2025
 The optimisation of the air conditioning systems will achieve a CO2 reduction of 77,000 kg by the end of 2025. -
 The optimisation of water treatment and steam generation should achieve a CO2 reduction of 57,000 kg by the end of 2025
 -
@@ -13666,13 +13565,12 @@ Commitments to climate
 neutrality by 2030
 O
 
-|  Name of the signatory (organisation) | actions  |
-| --- | --- |
-|  Industrie- und Handelskammer Dresden | The Dresden Chamber of Industry and Commerce is planning to install a photovoltaic system in 2025, which should enable a degree of self-sufficiency of 20 to 40 Percent. The exact size of the system depends on the final decisions of the Dresden Chamber of Industry and Commerce's general assembly. At the same time, the existing vehicle fleet will be converted to e-mobility, for which a corresponding charging infrastructure will be installed on the premises. In addition to our own climate protection measures on the premises, we provide our member companies in Dresden with comprehensive support in the areas of energy efficiency and renewable energies. A particular highlight of our offer is the IHK climate protection coaching programme. In this practice-oriented programme, we work together to develop concrete and tailor-made actions that not only reduce CO2 emissions, but also save costs in the long term. Our aim is to competently support companies in the region on their path to greater sustainability and climate neutrality and to provide them with practical solutions to minimise their ecological footprint.  |
-|  DAS Environmental Expert GmbH | Since its foundation, DAS has been supporting companies in the semiconductor industry in their climate protection efforts to dispose of process gases safely and in a climate-friendly manner after their utilisation. It is a matter close to our hearts to decarbonise our product range ourselves and to develop further services for our semiconductor customers to protect the climate.
+Name of the signatory (organisation) | actions
+Industrie- und Handelskammer Dresden | The Dresden Chamber of Industry and Commerce is planning to install a photovoltaic system in 2025, which should enable a degree of self-sufficiency of 20 to 40 Percent. The exact size of the system depends on the final decisions of the Dresden Chamber of Industry and Commerce's general assembly. At the same time, the existing vehicle fleet will be converted to e-mobility, for which a corresponding charging infrastructure will be installed on the premises. In addition to our own climate protection measures on the premises, we provide our member companies in Dresden with comprehensive support in the areas of energy efficiency and renewable energies. A particular highlight of our offer is the IHK climate protection coaching programme. In this practice-oriented programme, we work together to develop concrete and tailor-made actions that not only reduce CO2 emissions, but also save costs in the long term. Our aim is to competently support companies in the region on their path to greater sustainability and climate neutrality and to provide them with practical solutions to minimise their ecological footprint.
+DAS Environmental Expert GmbH | Since its foundation, DAS has been supporting companies in the semiconductor industry in their climate protection efforts to dispose of process gases safely and in a climate-friendly manner after their utilisation. It is a matter close to our hearts to decarbonise our product range ourselves and to develop further services for our semiconductor customers to protect the climate.
 Of course, our corporate activities themselves should also take another big step towards climate friendliness. We design our infrastructure to save energy and use renewable energies as a source of electricity. We encourage our employees to travel to work by public transport using job tickets or by bicycle. The safe footpath built by the city from the bus stop to the factory gate helps us in this regard, as does the bicycle-friendly nature of the city of Dresden. We now largely dispense with combustion vehicles in our company fleet. We are happy to participate in the development of a climate-friendly mobility concept together with the city of Dresden.
 As an environmental company, DAS Environmental Experts GmbH sees itself as part of the community that is committed to climate protection.  |
-|  Vonovia | https://www.vonovia.com/nachhaltigkeit/handlungsfelder/umwelt-und-klima  |
+Vonovia | https://www.vonovia.com/nachhaltigkeit/handlungsfelder/umwelt-und-klima
 
 5
 #
@@ -13713,14 +13611,13 @@ neutrality by 2030
 
 O
 
-|  Name of the signatory (organisation) | actions  |
-| --- | --- |
-|   | One of our central events is the Ecumenical Energy Day. This annual event brings together representatives from various parishes, experts and committed parishioners to discuss current developments and innovative solutions in the field of renewable energy for the parishes.
+Name of the signatory (organisation) | actions
+One of our central events is the Ecumenical Energy Day. This annual event brings together representatives from various parishes, experts and committed parishioners to discuss current developments and innovative solutions in the field of renewable energy for the parishes.
 Another key component is the active solar working group. This working group is made up of volunteer members who are intensively involved in the use and promotion of solar energy. The Solar-AG organises regular information events, advises church communities on the planning and installation of solar systems and organises tours of existing solar systems in order to clearly demonstrate their benefits and how they work.
 
 We also support the development of the climate protection concept of the Evangelical Lutheran Church of Saxony (EVLKS). In cooperation with other church and external partners, comprehensive actions and targets are being developed to reduce CO2 emissions within the regional church (the EKD Synod adopted a directive for all member churches in 2022 to reduce greenhouse gas emissions by 90% by 2035). Particular emphasis is placed on promoting energy efficiency, switching to renewable energies and raising awareness of climate-friendly behaviour among parishioners.  |
-|  Infineon Technologies Dresden GmbH & Co. KG | The description of Infineon's actions was sent as a pdf file to the responsible office by e-mail on 4 September.  |
-|  Staatsschauspiel Dresden | -There is a job ticket for employees and a combined ticket (theatre visit and free travel on the DVB) for visitors.
+Infineon Technologies Dresden GmbH & Co. KG | The description of Infineon's actions was sent as a pdf file to the responsible office by e-mail on 4 September.
+Staatsschauspiel Dresden | -There is a job ticket for employees and a combined ticket (theatre visit and free travel on the DVB) for visitors.
 As part of a series of workshops, employees from each department have defined their action goals in regular meetings. -Within the company, there is a Green Team consisting of the theatre management and individual department heads, who are currently working on a concept of measures. The sustainability officer of the Saxon State Theatres will take up her duties in mid-October. The Staatsschauspiel Dresden and the Semperoper together form the Saxon State Theatres. We also focus on networking within the city through network meetings and internationally through the Green Theatre Committee of the European Theatre Convention (ETC).
 A theatre garden was planted in the inner courtyard of the Schauspielhaus.
 Through a pilot project with the ETC and Renew Culture, 3 productions are being monitored this season using the Theatre Green Book under sustainability points and their carbon footprint is being documented.Preamble to the sustainability mission statement of the Staatsschauspiel Dresden:
@@ -13754,9 +13651,8 @@ Commitments to climate
 neutrality by 2030
 O
 
-|  Name of the signatory (organisation) | actions  |
-| --- | --- |
-|   | We also benefit from the actions of other Veolia sites in Germany and from the nationwide targets. For example, we are implementing a strategy at Group level in Germany to build photovoltaic systems on our buildings that we use ourselves in order to reduce our Scope 2 emissions. The first expansion stage of the PV system in Lengede has already been successfully completed and is expected to produce around 1 gigawatt hour of electricity per year. We primarily use this electricity ourselves and feed surplus energy into the public grid.
+Name of the signatory (organisation) | actions
+We also benefit from the actions of other Veolia sites in Germany and from the nationwide targets. For example, we are implementing a strategy at Group level in Germany to build photovoltaic systems on our buildings that we use ourselves in order to reduce our Scope 2 emissions. The first expansion stage of the PV system in Lengede has already been successfully completed and is expected to produce around 1 gigawatt hour of electricity per year. We primarily use this electricity ourselves and feed surplus energy into the public grid.
 
 Throughout Germany, we are pursuing the goal of making our own electricity production increasingly climate-neutral. For new buildings, we are planning appropriate roof areas for PV systems and are also considering the installation of ground-mounted photovoltaic systems. Our nationwide ambitions can be measured by a certified energy management system in accordance with DIN EN ISO 50001:2011, which covers 94 per cent of our business activities. This system ensures a continuous reduction in energy consumption and an increase in energy efficiency in order to actively contribute to climate protection.
 
@@ -13771,9 +13667,8 @@ Commitments to climate
 neutrality by 2030
 O
 
-|  Name of the signatory (organisation) | actions  |
-| --- | --- |
-|   | A training catalogue accessible online bundles important offerings, including courses on compliance, data protection and sustainability. In addition, individual topics, e.g. with content and tips on ecological management of green spaces at locations, are shared specifically with our locations.
+Name of the signatory (organisation) | actions
+A training catalogue accessible online bundles important offerings, including courses on compliance, data protection and sustainability. In addition, individual topics, e.g. with content and tips on ecological management of green spaces at locations, are shared specifically with our locations.
 
 In our annual employee appraisals, we identify individual training needs and create customised training plans. We prioritise and measure our progress as a company by the average number of training hours per employee.
 
@@ -13784,7 +13679,7 @@ We see ourselves as a reliable partner for the city of Dresden and the region an
 For more information on our goals and actions in Germany, you can find the current sustainability report on our website:
 https://www.veolia.de/verantwortung You can also find more information on our global progress here:
 https://www.veolia.com/sites/g/files/dvc4206/files/document/2024/07/veolia-2024-climate-report.pdf  |
-|  tjg. theater junge generation | The tjg. theatre junge generation has been working on climate protection for many years and has already implemented many actions in full and some in part.
+tjg. theater junge generation | The tjg. theatre junge generation has been working on climate protection for many years and has already implemented many actions in full and some in part.
 
 No concrete goals have been formulated to date, as we are trying to improve sustainability wherever we can do so independently as an organisational unit of the City of Dresden.
 
@@ -13797,9 +13692,8 @@ Commitments to climate
 neutrality by 2030
 O
 
-|  Name of the signatory (organisation) | actions  |
-| --- | --- |
-|   | business trips, but is not always possible.
+Name of the signatory (organisation) | actions
+business trips, but is not always possible.
 The reuse of props, costumes and set parts has also long been standard practice. The expansion of the costume and furniture stock (in particular air-conditioned rooms for better durability) has been partially implemented. Cooperation with other theatres for the exchange of materials and decorative elements is currently underway. There are still legal hurdles to overcome in terms of product and producer liability. Thanks to good cooperation with our landlord (KID), we succeeded last year in removing all the pebbles from the flat roofs of Kraftwerk Mitte and installing a green roof instead. There is also an attempt to extend the green roof with potted plants.
 An important aspect of the tjg's work is education. We mainly work for or with young people. In our theatre academy, we work directly with children and young people and implement various projects and workshops that deal with sustainability, diversity and inclusion, among other things. There are also working groups on all three topics at the theatre, which collect ideas and initiate various changes.
 For example, a process for better waste separation was launched and a project for a more sustainable diet was implemented in collaboration with our canteen operator.

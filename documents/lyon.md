@@ -107,18 +107,16 @@ b. Collective actions with other members of the Agora or other stakeholders;
 c. Actions linked to the City's climate plan, for which the City could provide support, strengthen synergies, etc.
 
 |   | Metropolitan PCAET
-(see PCAET summary, attached) | Climate, Air and Energy Plan
-(see attached document) | Lyon 2030 Climate Contract
-(see attached document) | Lyon 2030 Cooperation and Commitment Agreements  |
+| (see PCAET summary, attached) | Climate, Air and Energy Plan |
+| (see attached document) | Lyon 2030 Climate Contract |
+| (see attached document) | Lyon 2030 Cooperation and Commitment Agreements  |
 | --- | --- | --- | --- | --- |
 |  Overall GHG reduction target | 43% reduction in greenhouse gas emissions by 2030 compared with 2000
-(see appendix 2) | Overall objective: carbon neutrality by 2030
-Several scenarios were set up, detailing possible actions (see appendix 1).  |   |   |
+| (see appendix 2) | Overall objective: carbon neutrality by 2030 |
+| Several scenarios were set up, detailing possible actions (see appendix 1).  |   |   |
 |  Perimeter | 59 municipalities | The municipality's assets and areas of direct competence and influence | Lyon area | Lyon area  |
 |  Ambitions / objectives | Main line of action: • all “ordinary heroes” • an economy integrating the challenges of climate change • sustainable and inclusive development • a low-carbon mobility system • the territory and its resources | 3 cross-functional objectives: • to drastically reduce greenhouse gas emissions in order to put the Municipality on a trajectory towards climate neutrality by 2030, but also to ensure improved air quality • to adapt the city to climate change and, more broadly, to prevent long-term effects and risks of climate change • to raise awareness and increase the sense of responsibility not only among municipal staff, but also among all local players. Indeed, if the fight against climate change is to be systemic, it will require the involvement of everyone at their own level. 4 structuring ambitions : 1. An energy- and resource-efficient city (including buildings and waste) 2. A peaceful, breathable city (including transport) 3. A city that cares for everyone and adapts to global warming (including buildings and AFOLU) 4. A city that lets everyone get | Roadmap including 3 topics: 1: operation and activities of the Agora and ; how can /should each member contribute to its production 2: mobilizing and engaging citizens and local players beyond the Agora 3: top priority topics: sobriety (including mobility and energy) adaptation to climate change (vegetation, water) employment and consumption Only the issue of sobriety was addressed by Agora in 2023. As a result 16 collective commitments were agreed upon by the Agora. | Each member is committed to setting up a cooperation and commitment agreement based on the priority and commitments agreed upon by Agora. Thus these agreements include a detailed presentation of how the 16 sobriety commitments will be implemented.  |
 | --- | --- | --- | --- | --- |
-
-6
 |   |  | involved |  |   |
 | --- | --- | --- | --- | --- |
 |  Actions / commitments to meet objectives |  | Some forty actions divided into 14 objectives (see booklet accompanying the Climate, Air and Energy Plan)
@@ -318,9 +316,7 @@ The City will also be able to count on the Metropolis, which as part of the PCAE
 |  Typology | Sub-typology (to be separated into theme + trade) | ORGANIZATION | Description | Estimated direct GHG reduction capacity (SCOPE 1 and 2) | Estimated indirect GHG reduction capacity (Scope 1 and 2) | Estimated direct GHG reduction capacity (SCOPE 3) | Estimated indirect GHG reduction capacity (Scope 3) | Estimated capacity for direct action on adaptation | Comments  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Public institution | Public establishment | ADEME | Ademe (Agence de la transition écologique) is a public establishment whose primary mission is to promote environmental protection and energy savings.
-Created in 1990 and placed under the authority of the ministers for research, ecology and energy, Ademe is today the agency for ecological transition. | low | strong | low | average | strong | via programs, funding, etc.  |
-
-5
+| Created in 1990 and placed under the authority of the ministers for research, ecology and energy, Ademe is today the agency for ecological transition. | low | strong | low | average | strong | via programs, funding, etc.  |
 |  Association | Local agency | Local energy and climate agency - Metropole | - Helping to build and renovate energy-efficient buildings,- Encouraging low-energy and low-CO2-emission behaviour,- Contributing to the development of renewable energies,- Combating fuel poverty,- Ensuring that energy-climate issues are better integrated into local public policies,- And promoting an economy based more extensively on local resources. | low | strong | low | strong | average (heat wave program, for example) |   |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Company | Environment | Algoé | Project, Organization, Development and Human Resources management consulting and support companyThe company is very active in the fields of Transitions-Energy-Climate-Territory | low | average | low | average | average |   |
@@ -335,8 +331,6 @@ Created in 1990 and placed under the authority of the ministers for research, ec
 |  Association | Hotel business | Centre International de Séjour Lyon | hotel business, seminar room rental, catering | low | low | low |  |  | tourism and accommodation issues, which are of major importance to Lyon as a tourist city  |
 |  Public institution | Public establishment | CEREMA | Cerema, a public establishment under the authority of the French Ministry of Ecological Transition and Territorial Cohesion, supports the State and local authorities in the development, deployment and assessment of public development and transport policies. |  |  |  |  |  |   |
 |  Public institution | Public establishment | Chamber for Trade and Crafts | CMA Lyon-Rhône supports artisans in their transition, trains young people in their trades and promotes the transmission of know-how. | low | strong | low | strong | low | influence over Lyon's retailers and craftsmen  |
-
-7
 |  Association | Economy | CJD Lyon Métropole | executive network - executive training | low | strong | low | strong | low | ability to influence member companies  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Association | Building | Collectif frugalité heureuse et créative AuRA | We're architects, engineers, landscape architects, scientists or we work in other professions, whether related to the construction industry or not. But above all, we are women and men, signatories of the Manifesto for happy & creative frugality, who share the same values of sobriety in the act of building, and who want to take action. Our vocation is twofold: on the one hand, to give substance to a network of professionals interested in the subjects of planning, construction and renovation, and on the other, to enable the realization of projects and actions to disseminate and apply the values of frugality. | low | strong | low | low | strong | ability to influence  |
@@ -344,8 +338,6 @@ Created in 1990 and placed under the authority of the ministers for research, ec
 |  Association | Building | Collectif Végétalisation du Vieux-Lyon (VGVL) | The Collectif coordinates the Citizens' Initiative "Vieux-Lyon, a living, inhabited and sustainable site", which brings together institutions, associations and groups of residents. | low | low | low | low | strong | link with heritage and history issues in Lyon  |
 |  Public representative | Neighbourhood council | Guillotière district council Lyon 7 | Local participatory democracy | low | low | low | strong | average | Link to local democracy issues  |
 |  Association | Energy | CoopaWatt | Stimulation and support for participative, citizen-based renewable energy production projects. A Nous l'Energie program in the Lyon metropolitan area. | strong | strong | low | low | low | Link with local citizen energy issues  |
-
-8
 |  Company | Mobility | Dott | Self-service scooter and bike rentals | low | average | low | low | low |   |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Research and education | Higher education | Central School | École centrale de Lyon, a public scientific, cultural and professional institution, is dedicated to the initial and continuing training of engineers. École centrale de Lyon also conducts fundamental and applied research in the scientific and technical fields. It contributes to the promotion of research results, the dissemination of scientific and technical information and international cooperation. | low | average | low | average | low |   |
@@ -355,8 +347,6 @@ Created in 1990 and placed under the authority of the ministers for research, ec
 |  Public institution | Social landlord | Grand Lyon Habitat | Social landlord and developer | strong | strong | low | average | strong | one of Lyon's leading social landlords, with its own assets and strong influence  |
 |  Company | Energy | GRDF | Natural and green gas distribution | average | average | low | low | low |   |
 |  Company | Civil engineering | SERL Group | SERL is a semi-public company (Société d'Economie Mixte or SEM) specializing in urban planning, the construction or renovation of public facilities, the development and management of business centres in urban areas, | strong | strong | low | low | strong | one of Lyon's leading developers  |
-
-9
 |   |  |  | and the management of photovoltaic panel installations. |  |  |  |  |  |   |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Public institution | Hospital | Hospices Civils de Lyon | The 2nd largest university hospital in France, the Hospices Civils de Lyon is the city's and metropolitan area's leading healthcare establishment, with 4 main missions: prevention, care, teaching, research and innovation. | strong | strong | strong | strong | strong | Lyon's largest employer, and historic owner of a large part of the city's real estate assets  |
@@ -384,16 +374,12 @@ Coordinate employment and integration players | low | average | average | averag
 |  Public institution | Public establishment | Meteo France | safety of life and property: weather forecasting, research and communication on climate change |  |  |  |  |  |   |
 |  Public institution | Metropolis of Lyon | Metropole |  | strong | strong | strong | strong | strong | public policies directly related to these themes  |
 |  Association | Education | MJC Monplaisir | A Maison de la Jeunesse et de la Culture (MJC) is a popular education association working for the individual and collective emancipation of all. This association is part of an educational approach. The MJC Monplaisir offers a wide range of sporting, artistic and cultural activities. Alongside these regular activities, various one-off events can be organized, such as concerts, shows, solidarity actions, etc. | low | low | low | average | low |   |
-
-2
 |  Association | population relay | Bearing movement | Mouvement de palier offers anyone who wants to get involved in the waste reduction challenge an original way: become an ambassador! The idea is to train and equip yourself to act as an intermediary in your building, neighbourhood or workplace. | low | low | low | strong | low |   |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Association | Sport | Lyon Sports Office | This site is brought to you by the Office des Sports de Lyon, an association that has been serving sports in Lyon since 1946. The Office des Sports de Lyon brings together volunteers involved in sports associations, sports officials from the City of Lyon, enthusiasts and sportsmen and women. | average | low | average | strong | low | one of Lyon's major players in the sports sector, with a strong capacity for influence  |
 |  Public institution | Culture | National Opera of Lyon |  | low | low | average | strong | low | a major cultural player with great influence  |
 |  Association | Climate - environment | Lyon Métropole Transition Pact | Launched on the occasion of the 2020 municipal elections, the Pacte pour la Transition (Transition Pact) offers citizens and local elected representatives the opportunity to commit, through 3 key principles and 32 concrete measures, to working together for more ecological, supportive and democratic municipalities. | low | low | low | low | low | member with observatory status within the Agora  |
 |  Company | Architectural and engineering activities | City Passengers | An urban agency that brings together a multi-disciplinary team of architects, urban planners and landscape architects, to work alongside its partners towards a shared ambition: to build the urban character of territories. | average | average | low | low | average |   |
-
-3
 |  Public institution | Culture | Network of MJCs in the Rhône, Ain and Lyon metropolitan areas | Network that brings together some forty education associations in the Rhône, Ain, Lyon and Mâconnais regions. | low | low | low | strong | average | capacity to influence, link with popular education issues  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Youth | Ecological and solidarity issues | RESERVES | RESES (Réseau Étudiant pour une Société Écologique et Solidaire - Student Network for an Ecological and United Society) is a network of student associations working on projects related to ecological and united issues such as food, biodiversity, climate, waste, etc. | low | average | low | strong | low | ability to influence youth and higher education institutions  |
@@ -407,8 +393,6 @@ Coordinate employment and integration players | low | average | average | averag
 |  Research and education | Higher education | Lyon 3 University | Higher education, bachelors, master's and doctorate levels, plus continuing education. Scientific research and publications. | average | average | average | strong | average | significant assets, influence and research capabilities  |
 |  Association | Development - architecture - urban planning | Ville et Aménagement Durables | Ville & Aménagement Durable is a network of building and sustainable development professionals in Auvergne-Rhône-Alpes. It groups together 420 member structures. All trades are represented, so that together we can inform, train, debate and co-construct new standards. VAD's strength lies in the fact that its members are the driving force behind the business, putting their experience at the service of the network. The structure involves and mobilizes over 2,000 professionals every year. | average | strong | average | strong | average |   |
 |  Public administrative establishment | Mobility | Voies Navigables de France - Direction territoriale Rhône/Saône | VNF-DTRS manages some 1,200 km of navigable waterways in the Rhône-Saône basin. In addition to its navigation function, this network has a hydraulic function for riverside areas, enabling various water withdrawals, discharges and uses. In fact, VNF is a water resource manager. | strong | strong | low | low | average |   |
-
-5
 |  Company | Specialized, scientific and technical | WeCount | Helping companies to carry out their carbon footprint and define their climate strategy through collective and individual support. We offer a platform for measuring CO2e emissions, as well as training and support programs. We have supported over 50 companies in the Lyon area. | low | strong | low | strong | average | ability to influence and support  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
@@ -2064,11 +2048,11 @@ Optimised control of heating
 Optimised control of ventilation equipment | 2021-2032 | DGTB
 DC | Operational departments  |
 |  ★ Increase annual scheduling for routine energy efficiency projects | Schedule these types of projects: Lighting retrofits, attic insulation, outside insulation for domestic hot water tanks, installation of high-performance control systems, installation of double-flow systems, pipe network lagging, etc. | N/A-2032 | DGTB
-DC | Operational departments  |
+| DC | Operational departments  |
 |  ★ Include performance objectives in works and maintenance bids using energy performance contracts
-Experiment with and deploy commissioning contracts for property asset construction and renovation | Performance objectives and commissioning contracts will engage the vendor in the actual performance of the construction or renovation.
-This action anticipates establishing contract clauses starting in 2024 and phasing them in gradually. | 2021-2027 | DC
-DGTB | DCP  |
+| Experiment with and deploy commissioning contracts for property asset construction and renovation | Performance objectives and commissioning contracts will engage the vendor in the actual performance of the construction or renovation. |
+| This action anticipates establishing contract clauses starting in 2024 and phasing them in gradually. | 2021-2027 | DC |
+| DGTB | DCP  |
 |  ★ - ★ Initiating an approach of continuous improvement and process clarification, and looking into possibly obtaining ISO 50001 certification | 1. Training in ISO 50001
 Weighing the pros and cons of implementing the program at DGTB
 As applicable, determining the project's key phases | 2023-2030 | DGTB |   |
@@ -2844,7 +2828,7 @@ Renewable energies
 DEU
 Health  |
 |  ★ Apply the City of Lyon's Charter on Urban, Architectural, Landscaping and Environmental Quality as a tool for fighting climate change and adapt the city to its effects | In addition to the commitments made in the Charter on Urban, Architectural, Landscaping and Environmental Quality that put the signatory institutions under moral obligation, it is being implemented through building methods and architectural styles that ensure the quality of all large-scale projects, which include all public housing buildings. The city's departments carefully inspect these projects, specifically with the assistance of an environmental consultant who provides expertise on each one. | 2021-ongoing | DAU
-DBNV |   |
+| DBNV |   |
 |  ★ Continue raising awareness and routinely training city workers who review applications for urban development permits about issues facing the ecological and climate transition, thereby making their review a key performance phase of energy renovation projects | Daily training coupled with joint meeting and opinions on preliminary statements and building permits. A model refurbishment form is being drawn up | Ongoing | DAU | DEC  |
 
 # Action-related plans and strategies
@@ -2910,10 +2894,10 @@ Join projects to create local public companies and various workshops being held
 Help turn the Urban Travel Plan into a mobility plan | 2021-2030 | DMU |   |
 |  ★★ Gain better knowledge about how resident travel and move around, and measure the "carbon footprint of the people of Lyon" in their journeys | Analyse how greenhouse gas emissions have changed for Lyon residents in terms of their daily trips and more occasional journeys within city limits, in the urban area, and on a wider scale. There are two objectives: Determine if they are generating less and by how much based on policies implemented by the city, Greater Lyon and SYTRAL. Verify whether the drop in emissions is in line with the National Low-Carbon Strategy (SNBC) and COP21. | 2024-2026 | DMU |   |
 |  Continue and expand guidance and supervision for new types of mobility: Call for tenders to develop car-sharing, call for proposals for self-service electric scooters, etc. | Help revise the car-sharing label. Create calls for expressions of interest and calls for projects to expand shared modes of mobility.
-Quantify/analyse how this shared mobility impacts the mobility plan, modal report, the environmental, and accident rates | 2021-2030 | DMU |   |
+| Quantify/analyse how this shared mobility impacts the mobility plan, modal report, the environmental, and accident rates | 2021-2030 | DMU |   |
 |  Continue the traffic calming measures implemented by the city in partnership with Greater Lyon (i.e., pedestrianisation, quieter neighbourhoods and school zones, 30 kmh zones, super islands, low-emissions zones, urban motorway transitions) to reduce road traffic as well as reclaim public spaces and connect people. | Transform public spaces to make more room for vegetation and active modes of transport for a greener city to cool down the city and adapt it for higher temperatures. The transformation is being done by giving less space to cars and more space to active modes to plan the 15-minute city.
-Space for cars will be reduced by providing fewer options and restricting access to roads and parking. This action is accelerating, but remains a major challenge. | 2021-2030 | DMU
-DAU | Health  |
+| Space for cars will be reduced by providing fewer options and restricting access to roads and parking. This action is accelerating, but remains a major challenge. | 2021-2030 | DMU |
+| DAU | Health  |
 |  ★★ Continue the 15-minute city project providing pedestrian access to everyday public services through a special network of city installations | Create a map of municipal installations on the community level to build a special network for future projects and support the 15-minute city where every area has access for active modes of transport to local facilities. | 2022-ongoing (SDI) | DAU | DCI  |
 |  ★★ Support planning for the Voies Lyonnaises (Lyon Bike Paths, a Greater Lyon initiative) with new vegetation and adjustments | Provide city expertise, specifically vegetation, to support the Voies Lyonnaises project | 2022-2030 | DMU
 DBNV
@@ -2981,12 +2965,12 @@ Operators of alternative modes of transport
 |  Subaction | Description | Timeline | Lead departments | Support departments  |
 | --- | --- | --- | --- | --- |
 |  ★★ Continue providing financial backing for green mobility in the region: i.e., Maison du Vélo, Vélo Sans Âge Lyon, cycling schools at educational institutions | Make funding contingent on relevance of the proposed actions at the local level for decarbonised modes of transport
-Help develop this mode through targeted actions by non-profits that specialise in the area. This action is underway | 2022-2030 | DMU | DDT  |
+| Help develop this mode through targeted actions by non-profits that specialise in the area. This action is underway | 2022-2030 | DMU | DDT  |
 |  ★★ Make Section 2 of “Learn to Ride a Bicycle” cycling training standard at all schools - Know how to get around (in a safe environment). Test then implement by gradually introducing it at Section 3 schools - Learn to Ride a Bicycle (in real life) | Introduce cycling training sessions during class time (176 classes in Years 5 and 6 in 2022-2023, or 4,500-5,000 pupils) that teach Modules 1 and 2 of the Learn to Ride a Bicycle Programme. A pilot programme for Module 3 will be given to four classes on 30 June and 4 July in partnership with the USEP and the national education system | 2022-unknown | Sport
-DE |   |
+| DE |   |
 |  Run a pilot to carry out learning institutions travel plans in each district (arrondissement) | To expand the Rue des Enfants action (Streets for Kids), continue working on devising a school mobility plan. The aim is to draw up a status report on how children, parents and school staff get around. Once this report is done, the goal is to propose actions on transitioning to more active, low-carbon modes of mobility. The end goal is to evaluate these projects. | 2024-2030 | City of Children
-Task Force | DE
-DMU  |
+| Task Force | DE |
+| DMU  |
 |  ★★ Implement actions create a link between sport and health when promoting active modes of transport | Implement sport & health programmes for a variety of populations with an aim to making people less sedentary, promoting regular physical activity, and encouraging the use of active modes of transport | 2017-ongoing | Sport | External
 Comm
 Health
@@ -3502,7 +3486,7 @@ Residents
 A city that cares and adapts
 
 |  Quartiers Fertiles [fertile neighbourhoods] projects) | spaces
-Quartier Fertile Langlet Santy Mermoz project |  |  |   |
+| Quartier Fertile Langlet Santy Mermoz project |  |  |   |
 | --- | --- | --- | --- | --- |
 
 ## Action-related plans and strategies
@@ -3556,8 +3540,8 @@ DDT | Health
 DDT
 (Relais)  |
 |  ★ - ★ Within the scopes of the SLIME+ programme originated by Greater Lyon and the future partnership agreement with the Soliha housing advocacy group, help end energy insecurity among vulnerable households by changing behaviours and/or supporting energy retrofitting projects to minimise out-of-pocket costs as much as possible |   | 2023 | DDT
-CCAS | DDT
-(Relais)  |
+| CCAS | DDT |
+| (Relais)  |
 |  ★★ Continue the CCAS's "relief" support efforts for populations experiencing trouble paying their energy bills | Continue the CCAS's actions for households experiencing trouble paying their energy bills | Ongoing | CCAS | DDT
 (Relais)  |
 
@@ -3601,7 +3585,7 @@ Tenants and owners associations
 |  Subaction | Description | Timeline | Lead departments | Support departments  |
 | --- | --- | --- | --- | --- |
 |  Raise awareness and support projects that owners and co-owners propose for heating retrofits in housing units and related to high temperatures | Shared land meeting/shared eco-heritage meeting/Talks when granting urban development permits
-Tools: ALEC agreement, informational meeting in each arrondissement, etc. | 2022-2026 | DAU | MA  |
+| Tools: ALEC agreement, informational meeting in each arrondissement, etc. | 2022-2026 | DAU | MA  |
 |  ★★ Provide grants to retrofit old properties:
 • ECO-HERITAGE - Improve eating efficiency, specifically by testing out exterior insulating coatings
 • ECO-HERITAGE - Social to retrofit the pre-war public housing stock | ECO-HERITAGE committee room and informational meeting on restorations
@@ -3825,7 +3809,7 @@ Greater Lyon
 |  Subaction | Description | Timeline | Lead departments  |
 | --- | --- | --- | --- |
 |  ★★ Help cultural institutions complete their Carbon Report, and then begin collaboration to devise action plans | In an effort to engage cultural stakeholders in a Carbon Report programme, and more generally in developing a climate/ecological transition action plan, the City of Lyon and Greater Lyon is providing them a simplified tool for measuring their GHG emissions and support by promoting about a dozen players | 2022-2026 | MTE
-DAC  |
+| DAC  |
 |  ★ - ★★ See that the Cultural Cooperation Charter and its section on climate are implemented | The actions in this section still need to be developed
 Namely, there are plans to hold an Ecological Transition Culture Forum in the second half of 2023 attended by interested cultural organisations and arts groups from the region Solicit topics from them they want to address. Then hold workshops on the topics they submit that concern everyone. The forum is a chance to get the cultural sector on board and solicit topics that concern them, and ones they are prepared to commit to and share best practices about.
 Mention timeframes, from the shortest term to the long-term. Generate solutions.
@@ -4028,7 +4012,7 @@ As for Chalet du Parc, a call for projects resulted in selecting a group led by 
 |   |   |  2025-2026 |  |   |
 |   |   |  2025 |  |   |
 |  Continue educating neighbourhood and residents councils via citizen university programmes related to the ecological transition and the climate | Dedicate two or more citizen universities every year to the ecological transition.
-Run a trial to invite more populations to join Administrative Boards and volunteers for the 40 contracted non-profits (MJCs and community centres) | 2023 | MDO | DDT  |
+| Run a trial to invite more populations to join Administrative Boards and volunteers for the 40 contracted non-profits (MJCs and community centres) | 2023 | MDO | DDT  |
 |  ★ - ★ Set up a long-term extra-municipal committee and use it to discuss the city's climate action | Create a long-term extra-municipal committee that represents the interests of nature and future generations, and ensures the city's major projects are aligned with ecological, social and climate-related concerns (Mandate Plan) | 2025 | MEP |   |
 |  Position the city as the representative for Greater Lyon's public meetings on climate-related plans, projects and programmes | Make the different parts of Lyon's democratic ecosystem available for metro area meetings by passing initiatives onto decision-making bodies (neighbourhood councils, resident councils, youth district councils, etc.) and information via tools like the Oyé digital platform | 2023 | MDO | MA  |
 — Climate, Air and Energy for the City of Lyon and the CCAS —
@@ -7046,18 +7030,18 @@ Petroleum products
 | --- | --- | --- | --- |
 |   | Scope 1 | Scope 2 | Scope 3  |
 |  Buildings | 808 934 182 | 170 543 235
-+13 422 854 residential district heating and cold |   |
+| +13 422 854 residential district heating and cold |   |
 |  Residential | 443 261 923 | 52 762 090
-+13 422 854 district heating and cold |   |
+| +13 422 854 district heating and cold |   |
 |  Other specific electricity uses |  | 8 670 854 |   |
 |  Other uses | 380 260 |  |   |
 |  Garden fires and cable burning | 12 139 |  |   |
 |  Heating | 354 863 621 | 23 580 977
-+11 039 393 district heating and cold |   |
+| +11 039 393 district heating and cold |   |
 |  Cooking | 29 984 849 | 2 339 835 |   |
 |  Lighting |  | 3 635 625 |   |
 |  Domestic hot water | 57 132 910 | 6 464 977
-+2 383 460 district heating and cold |   |
+| +2 383 460 district heating and cold |   |
 |  Cooling | 4 106 705 |  |   |
 |  Washing |  | 3 963 117 |   |
 |  Leisure | 139 996 |  |   |
@@ -7092,8 +7076,6 @@ Petroleum products
 |  Other industrial uses | 2 724 552 |  |   |
 |  Other tertiary uses | 22 082 783 |  |   |
 |  Heating | 370 314 | 6 621 260 |   |
-8
-
 |  Electrical equipment | 721 784 |  |   |
 | --- | --- | --- | --- |
 |  Fire extinguishers | 709 987 |  |   |
@@ -7241,13 +7223,13 @@ The assumptions and results of the 2 studied scenarios are detailed below with t
 # A. Policies and assumptions for 2030
 
 |  Sector | Public policies
-to 45% reduction in greenhouse gases between 2019 and 2030 | "climate priority" scenario
-to 60% reduction in greenhouse gases between 2019 and 2030 | "climate neutrality" scenario
-to 75% reduction in greenhouse gases between 2019 and 2030  |
+| to 45% reduction in greenhouse gases between 2019 and 2030 | "climate priority" scenario |
+| to 60% reduction in greenhouse gases between 2019 and 2030 | "climate neutrality" scenario |
+| to 75% reduction in greenhouse gases between 2019 and 2030  |
 | --- | --- | --- | --- |
 |  All | French laws and regulations
-Lyon Metropole's Climate Plan 2019 2025 | All hypothesis of business as planned scenario | All hypothesis of business as planned scenario and "climate priority" scenario
-+ a significant increase in the proportion of renewable electricity produced locally, to help reduce the proportion of fossil fuels in the electricity produced in France.  |
+| Lyon Metropole's Climate Plan 2019 2025 | All hypothesis of business as planned scenario | All hypothesis of business as planned scenario and "climate priority" scenario |
+| + a significant increase in the proportion of renewable electricity produced locally, to help reduce the proportion of fossil fuels in the electricity produced in France.  |
 |  Buildings | Energy master plan for the Lyon Metropolitan Area | Heating
 + Decarbonising district heating on a massive scale by purchasing biogas rather than fossil fuel gas.
 + increase in the proportion of heat pump heating replacing fossil fuels
@@ -7323,8 +7305,8 @@ B-1.1: Impact pathways
 Limiting water pollution and harm to biodiversity from road traffic and hydrocarbons
 Limiting the need for fossil fuels  |
 |   |  Reduced motorized passenger transportation need | City of ¼ hour, teleworking / enterprise mobility strategies | Strong shift in working patterns towards teleworking
-Models of the ¼ hour city | Implementation of the ¼ hour city facilities | 18 | 37 | Improving neighbourhood life and social links
-Promoting the local economy and services  |
+| Models of the ¼ hour city | Implementation of the ¼ hour city facilities | 18 | 37 | Improving neighbourhood life and social links |
+| Promoting the local economy and services  |
 |   |  Shift to public & non-motorized transport | Parking policy, development and safety of cycle and pedestrian routes, reduction in speed in town, assistance with the purchase of bicycles, employers covering part of the cost of season tickets, etc.
 Developing the public transport network and | Changes to parking charges to encourage soft mobility, elimination of parking spaces, creation of a number of safe cycle "Voies Lyonnaises" and pedestrian routes, particularly around schools, 30km/h speed limit in town, Support for the purchase of bicycles, loans and hire facilitated by the Metropole for young people | Moving towards ecological and social parking charges, continuing to remove parking spaces, continuing with cycle and pedestrian path projects, continuing to raise awareness and take action.
 New bus and tramway lines, dedicated bus lanes... | 24 | 30 | Job creation
@@ -7349,7 +7331,7 @@ B-1.1: Impact pathways
 |  Sector | Subsector | Systemic levers | Early changes (1-2 years) 2019 - 2023 | Late outcomes (3-4 years) 2023-2025 | Direct impacts - "climate priority" scenario (Emission reductions - kt CO2e - 2019-2030) | Direct impacts - "climate neutrality" scenario (Emission reductions - kt CO2e - 2019-2030)) | Indirect impacts (co-benefits)  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |   |  |  | Creation of parking spaces dedicated to carbon-free mobility | Wider roll-out of current experiments
-Future projects promoting the circular economy (city of repairers, etc.) |  |  |   |
+| Future projects promoting the circular economy (city of repairers, etc.) |  |  |   |
 |   |  Electrification of trucks | Network capacity, vehicle autonomy and/or motorway electrification capacity | NC | NC | 14 | 14 |   |
 |  Buildings & Heating | Building renovations (envelope) | A ban on renting out heat loss properties, a tertiary sector decree for the energy renovation of tertiary sector buildings, financial aid, technical support for projects, etc. | Boosting housing renovation and efficiency with national, metropolitan and municipal support | Continued support, Gradual ban on renting out heating flats, Complete, high-performance renovation of public buildings | 76 | 169 | Reducing air pollution from heating
 Making decent housing accessible to all
@@ -7515,11 +7497,9 @@ Adapted from work carried out by Indiggo for the City of Marseille
 |  Sector | Type, name and title | Description | Relevance, objectives and the need for action  |
 | --- | --- | --- | --- |
 |  All | National Low Carbon Strategy V2, set by decree no. 2020-547 of 21/04/2020. | Sets the national objective of carbon neutrality by 2050, sets sectoral objectives for carbon neutrality, and associated carbon budgets. Revised every 5 years.
-
-Sectoral decarbonisation roadmaps are currently being drawn up. They set out and specify the decarbonisation objectives for each target. | Objective: national carbon neutrality by 2050  |
+| Sectoral decarbonisation roadmaps are currently being drawn up. They set out and specify the decarbonisation objectives for each target. | Objective: national carbon neutrality by 2050  |
 |  All | Multiannual Energy Programme | The Multiannual Energy Programme expresses the guidelines and priorities for action for the management of all forms of energy in mainland France, in order to achieve the energy policy objectives defined in the Energy Code (art. L 100-1, L 100-2 and L 100-4).
-
-The Multiannual Energy Programme must be compatible with the objectives of reducing greenhouse gas emissions set by carbon budgets, particularly for the energy sector, as well as with the Strategy national low-carbon strategy. It covers 2 successive 5-year periods. MEP 1: 2016-2023, MEP 2: 2019-2028 was approved in April 2020. MEP 3 will cover the period 2024-2033. |   |
+| The Multiannual Energy Programme must be compatible with the objectives of reducing greenhouse gas emissions set by carbon budgets, particularly for the energy sector, as well as with the Strategy national low-carbon strategy. It covers 2 successive 5-year periods. MEP 1: 2016-2023, MEP 2: 2019-2028 was approved in April 2020. MEP 3 will cover the period 2024-2033. |   |
 |  Transport | Law on Mobility Orientation Act n°2019-1428 of 24/12/2019 | This law on the orientation of mobility radically reforms the general framework of mobility policies, by integrating environmental issues. Drawn up following the national conference on mobility, it has four objectives: to move away from dependence on the car, to accelerate the growth of new forms of mobility, to make a success of the ecological transition, and to plan investment in public transport. | Objectives:
 carbon-neutral land transport by 2050
 triple the modal share of cycling by 2024
@@ -7591,8 +7571,8 @@ Reduce the region's energy consumption by 23% per capita by 2030, and increase t
 |  Sector | Type, name and title | Description | Relevance, objectives and the need for action  |
 | --- | --- | --- | --- |
 |  All | Atmosphere Protection Plan for the Lyon conurbation - Prefecture
-**Approved in 2022** | In agglomerations where limit values or target values for the concentration of atmospheric pollutants are exceeded or are likely to be exceeded, the State must draw up air quality plans to achieve these values. This is the role of the Atmosphere Protection Plan.
-Measures covering industry & construction, residential & tertiary, agriculture, mobility and urban planning | Air quality objectives, but with actions that will contribute to a non-objective reduction in greenhouse gas emissions (reduction in industrial emissions, replacement of heating systems, renovation of buildings, agricultural practices, transformation of mobility, etc.).  |
+| **Approved in 2022** | In agglomerations where limit values or target values for the concentration of atmospheric pollutants are exceeded or are likely to be exceeded, the State must draw up air quality plans to achieve these values. This is the role of the Atmosphere Protection Plan. |
+| Measures covering industry & construction, residential & tertiary, agriculture, mobility and urban planning | Air quality objectives, but with actions that will contribute to a non-objective reduction in greenhouse gas emissions (reduction in industrial emissions, replacement of heating systems, renovation of buildings, agricultural practices, transformation of mobility, etc.).  |
 |  All | Lyon Metropole’s Climate Plan 2019-2025 - Lyon Metropole
 **Approved in 2019**
 **Under review** | Lyon Metropole’s Climate Plan is a strategic and operational planning approach that applies to all sectors of activity.
@@ -7618,7 +7598,7 @@ To achieve: -43% reduction in greenhouse gas emissions compared with 2000
 |  Sector | Type, name and title | Description | Relevance, objectives and the need for action  |
 | --- | --- | --- | --- |
 |  All | Intercommunal Local Urban Plan integrating the local housing programme - Lyon Metropole | A land management tool, the intercommunal Local Urban Plan organises the living environment within Greater Lyon. It maps out the city of the future by reconciling local and communal interests with those of the Lyon conurbation.
-The gradual changes will make it possible to link urban development with mobility possibilities and, in order to limit the need to travel, to offer more and more green space. | The need for action: The Intercommunal Local Urban Plan is a powerful tool for new construction, but cannot be used to transform existing buildings, which are in the majority in Lyon.  |
+| The gradual changes will make it possible to link urban development with mobility possibilities and, in order to limit the need to travel, to offer more and more green space. | The need for action: The Intercommunal Local Urban Plan is a powerful tool for new construction, but cannot be used to transform existing buildings, which are in the majority in Lyon.  |
 |  Waste | Local Programme for the Prevention of Household and Similar Waste 2019-2024 & Waste Master Plan 2030 - Lyon Metropole | This action programme sets out the objectives for reducing waste quantities and the measures put in place to achieve them. It is structured around 7 key areas:
 Encouraging public bodies to set an example
 Raising the profile of waste prevention in the region
@@ -7665,10 +7645,8 @@ The fight against climate change can only be systemic if everyone is involved at
 |  All | Lyon 2030 climate contract | Co-constructed with local players in Agora Lyon 2030, which is a framework document for climate action in the region. | Objective: To become carbon neutral by 2030  |
 |  Buildings | Strategy for the ecological transition of buildings 2023 and Energy Efficiency Plan 2022 | Plan long-term actions to renovate municipal assets, improve energy performance and reduce energy consumption | Objective: to reduce the energy consumption of municipal buildings by 25% by 2030 compared with 2019, by 50% by 2050 with a diminution of -80% of GHG emissions by 2050.  |
 |  Buildings | 3rd Lighting Plan 2023 | A plan for the organisation and implementation of urban lighting, this third Lighting Plan sets out an ambition for urban nights: to go beyond the question of light alone and conquer the mosaic represented by the different components of night-time, while integrating the challenges of sobriety. | Objective: To reduce consumption from 21,200,000 kWh in 2021 to 17,150,000 kWh in 2030 by converting a further 13% of light points to LEDs and developing dimmable lighting for a further 2,600 points.
-A 75% reduction in public lighting consumption between 2000 and 2050.  |
+| A 75% reduction in public lighting consumption between 2000 and 2050.  |
 |  Buildings | Charter for urban, architectural, landscape and environmental quality | It sets a new course for sustainable and responsible urban planning, which has been jointly developed and shared with the signatories. | Its objectives include reducing the carbon impact of construction, developing nature in the city and biodiversity...  |
-
-0
 |  Sector | Type, name and title | Description | Relevance, objectives and the need for action  |
 | --- | --- | --- | --- |
 |  All | Scheme to promote socially and economically responsible public procurement 2021-2026 | As a framework document, it commits the municipality to purchasing in support of the ecological, social and economic transition. | Objectives:
@@ -7679,11 +7657,9 @@ Increase the proportion of markets where deliveries received are transported mai
 New buildings: from 2022 onwards, 100% of contracts will include an environmental consideration that goes beyond the new environmental building regulations on energy and climate content (E+C-).
 Renovations: 100% of contracts for buildings subject to the tertiary sector decree (buildings over 1,000 m², excluding exemptions for historic monuments) include an environmental consideration, including energy and climate.  |
 |  Waste | Digital strategy 2022-2026 | It identifies 5 areas for a chosen and sustainable digital future, including one on the sobriety of municipal digital equipment. | Objectives: Increase lifespan, reparability, purchase of reconditioned products
-By 2030: 100% reconditioned purchases of desktop PCs, monitors and smartphones  |
+| By 2030: 100% reconditioned purchases of desktop PCs, monitors and smartphones  |
 |  All | Cultural cooperation charter | Developed jointly with cultural players, it identifies the areas in which the region's cultural facilities need to be mobilised. It makes the municipality's commitment to the ecological transition the cross-cutting theme of its actions. | Objectives: Include culture in the objective of carbon neutrality  |
 |  All | ISO 20-121 standard for events organised by the City of Lyon | This approach has been in place since 2021, in the form of a continuous improvement process designed to control the social, economic and environmental impact of events, starting with the Fête des Lumières and extending to all events produced or supported by the municipality. | Objectives: Make events part of the carbon-neutral objective  |
-2
-
 |  Sector | Type, name and title | Description | Relevance, objectives and the need for action  |
 | --- | --- | --- | --- |
 |  Transport | City of Lyon employer mobility plan - To be approved in December 2023 | This strategic document encourages staff to adopt alternative modes of transport to the private car and carbon-based forms of transport. It covers work-related and home-to-work journeys, as well as the use of municipal sites by users and service providers (public services, events, etc.). | Objectives to be discussed :

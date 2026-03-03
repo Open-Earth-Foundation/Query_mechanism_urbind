@@ -677,8 +677,7 @@ Climate Neutrality Action Plan
 7
 
 |  Mobility & transport
-
-*The more detailed version of the Mobility & Transportation Impact Pathway framework has been included as an attachment. | Governance & Policy | Collaboration model and agreement with other regional actors. Mobility Working Group meets regularly, | Wider collaboration. Working group actively advances new ways for sustainable transportation. |  | Increased democracy and participation  |
+| *The more detailed version of the Mobility & Transportation Impact Pathway framework has been included as an attachment. | Governance & Policy | Collaboration model and agreement with other regional actors. Mobility Working Group meets regularly, | Wider collaboration. Working group actively advances new ways for sustainable transportation. |  | Increased democracy and participation  |
 | --- | --- | --- | --- | --- | --- |
 |   |   |  Guidelines for producing the services | New modified processes implemented for producing the services |  |   |
 |   |   |  Sustainable urban mobility plan, SUMP | Updated version of the plan |  |   |
@@ -686,7 +685,7 @@ Climate Neutrality Action Plan
 |   |   |  Guidelines for enabling EV charging on city owned buildings, parking halls, and apartment buildings. |  |  |   |
 |   |  Technology and Infrastructure | Information gathering, understanding the system. Scenarios for the low emission transportation |  |  |   |
 |   |   |  Implementation plan for carbon-neutral public transportation service. Procurement of carbon-neutral school ride service. | Procurement of electric city bus service
-Procurement of electric regional bus service |  |   |
+| Procurement of electric regional bus service |  |   |
 |   |   |  EV charging infrastructure installations on municipality owned buildings and parking spaces, first phase : 50-100 charging points | EV charging infrastructure installations on municipality owned buildings and parking spaces, second phase : 150-300 charging points | 100 t CO2e | better air quality, noise reduction  |
 LAPPEENRANTA
 THE CLIMATE CAPITAL OF FINLAND
@@ -769,8 +768,8 @@ Plan
 |   | 2.3 Accelerating the adoption of clean vehicles on private sector. | Multiple actions are needed for accelerating the adoption of EVs and other clean vehicles, ie EV charging infrastructure deployment  |
 | --- | --- | --- |
 |  Waste & circular economy | 3.1. Waste recycling rate increase
-Biogas production increase | The amount of waste sent for incineration is being reduced by improving source separation and constructing a new waste sorting line where organic waste and metals are separated from dry waste.
-Regional waste management company does an investment to increase biogas production and delivery capacity of the biogas to the stations.  |
+| Biogas production increase | The amount of waste sent for incineration is being reduced by improving source separation and constructing a new waste sorting line where organic waste and metals are separated from dry waste. |
+| Regional waste management company does an investment to increase biogas production and delivery capacity of the biogas to the stations.  |
 |  Green infrastructure & nature based solutions | 4.1. Increase of the strictly protected land area
 Restoration of forests and fields on organic soils. Raising the water level and restoring former peat production sites.
 Lengthening the growth cycle of forests | One target of the EU Biodiversity strategy is to increase the amount of strictly protected land areas up to 10 % of the area. The Finnish Nature Panel has recommended that 10 % of the land areas is protected in every region. Protecting 10 % of Lappeenranta’s land areas mean 140 km2.
@@ -913,7 +912,7 @@ B-2.2: Individual action outlines
 |   |  GHG emissions reduction estimate (total) per emission source sector | 24 000 – 25 000 tCO2e when calculated using the national grid electricity emission factor of 40 gCO2e/kWh.  |
 |   |  Total costs and costs by CO2e unit | 400 M€ - 650 M€.  |
 |  External costs and benefits | Nature and biodiversity | Reduces the use of fossil fuels nationally (+)
-Large project areas can lead to negative impacts on biodiversity, especially if plants are built on forest areas. (--)  |
+| Large project areas can lead to negative impacts on biodiversity, especially if plants are built on forest areas. (--)  |
 |   |  Socioeconomic effects & wellbeing | Cost of energy (+)
 Employment (+++)  |
 LAPPEENRANTA
@@ -945,7 +944,7 @@ city buses 1 400 000 km
 regional buses 970 000 km
 school rides 800 000 km  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | Fuel consumption and emissions are not monitored for the previous years.
-Estimate for the emission reduction is 1 900 tCO2e per year.  |
+| Estimate for the emission reduction is 1 900 tCO2e per year.  |
 |   |  Total costs and costs by CO2e unit | Investment cost:
 Electric buses: 13 000 000 – 19 000 000 eur
 Charging infrastructure: 3 000 000 eur
@@ -1002,7 +1001,7 @@ promotion of biogas use on transportation sector  |
 |  Reference to impact pathway | Field of action | Mobility  |
 |   |  Systemic lever | Technology and Infrastructure/Governance  |
 |   |  Outcome (according to module B-1.1) | 80 additional public quick charging points and 5000 additional slow charging points by 2030
-The number of rechargable vehicles increases by 12 000 by 2030  |
+| The number of rechargable vehicles increases by 12 000 by 2030  |
 |  Implementation | Responsible bodies/person for implementation | City of Lappeenranta, Lappeenrannan toimitilat Oy, Lappeenrannan Asuntopalvelu Oy  |
 |   |  Action scale & addressed entities | Buildings owned by the city and by city owned companies. Streets and parking spaces owned by the city  |
 |   |  Involved stakeholders | Service providers, transportation and logistic companies, citizens and employees  |
@@ -1020,7 +1019,7 @@ EVs: additional purchase cost: 60 – 90 M€ by 2030
 Ethanol and CNG conversions: 2.5 M€
 Costs by CO2e unit: 350 eur/tCO2e  |
 |  External costs and benefits | Nature and biodiversity | The reduction of fine particles (+)
-The reduced use of primary energy (++)  |
+| The reduced use of primary energy (++)  |
 |   |  Socioeconomic effects & wellbeing | Socioeconomic effects (+/-)
 Additional purchase cost of EVs can increase social injustice (-)
 Installing chargers to municipality owned buildings can enable the EV ownership for tenants living in apartment buildings (+)  |
@@ -1072,7 +1071,7 @@ B-2.2: Individual action outlines
 |   |  Removed/substituted energy, volume or fuel type | Replaces fossil fuels in transportation, estimated reduction 5 000 MWh  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 1 370 tCO2e/year.  |
 |   |  Total costs and costs by CO2e unit | Estimated investment costs: 1 000 000 eur
-Estimated costs by CO2e unit: 50 eur/tCO2e  |
+| Estimated costs by CO2e unit: 50 eur/tCO2e  |
 |  External costs and benefits | Nature and biodiversity | Reduction in fossil fuel use (++)  |
 |   |  Socioeconomic effects & wellbeing | effects on employment (+)  |
 LAPPEENRANTA
@@ -1121,7 +1120,7 @@ Restoration of the organic soil forests: 5 km2
 Enhancing the carbon sequestration of organic soil forests; 20 km2
 Restoration of the organic soil croplands, 6 km2  |
 |  Implementation | Responsible bodies/person for implementation | City of Lappeenranta
-Big forest owners: Lappeenrannan seurakuntayhtymä, forest companies  |
+| Big forest owners: Lappeenrannan seurakuntayhtymä, forest companies  |
 |   |  Action scale & addressed entities |   |
 |   |  Involved stakeholders | Forest Centre, Forest management associations, Private forest owners  |
 |   |  Comments on implementation |   |
@@ -1146,7 +1145,7 @@ B-2.2: Individual action outlines
 |   |  Action description | Carbon storages of the forests are increased by lengthening the growth cycle of the forests and thus reducing timber removal. Continuous growth is applied where suitable.  |
 |  Reference to impact pathway | Field of action | AFOLU  |
 |   |  Systemic lever | Governance & policy
-Finance and finding  |
+| Finance and finding  |
 |   |  Outcome (according to module B-1.1) | Carbon storage increased in 87500 ha of forests in Lappeenranta city area.  |
 |  Implementation | Responsible bodies/person for implementation | City of Lappeenranta, Forest authorities, Forest Centre, national authorities  |
 |   |  Action scale & addressed entities | Forest owners, Forest industry  |
@@ -1156,7 +1155,7 @@ Finance and finding  |
 |   |  Removed/substituted energy, volume or fuel type | -  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 30 kt  |
 |   |  Total costs and costs by CO2e unit | Depends of the incentive system.
-Estimated costs 10 – 50 eur tCO2e  |
+| Estimated costs 10 – 50 eur tCO2e  |
 |  External costs and benefits | Nature and biodiversity | Positive effects on biodiversity. (++)  |
 |   |  Socioeconomic effects & wellbeing | effects on forest owners income (+/-)
 effects on employment (-)
@@ -1552,7 +1551,7 @@ Plan
 | --- | --- |
 |  Indicator Name | Number of EV charging points  |
 |  Indicator Unit | Number of QC points
-Number of public charging points  |
+| Number of public charging points  |
 |  Definition |   |
 |  Calculation |   |
 |  Indicator Context |   |
@@ -1826,7 +1825,7 @@ Plan
 | --- | --- |
 |  Indicator Name | Number of EV charging points  |
 |  Indicator Unit | Number of QC points
-Number of public charging points  |
+| Number of public charging points  |
 |  Definition |   |
 |  Calculation |   |
 |  Indicator Context |   |

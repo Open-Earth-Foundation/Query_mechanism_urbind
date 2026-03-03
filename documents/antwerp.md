@@ -1,4 +1,3 @@
-A
 
 # CLIMATE CITY CONTRACT
 
@@ -6,8 +5,6 @@ Introduction Left Bank Climate
 Neutral 2030
 
 Antwerpen voor Klimaat
-1
-Antwerpm. Deel. Klimaat
 
 # CONTENTS
 
@@ -19,7 +16,7 @@ The Action Plan as a package of measures for closing the gap ... 3
 The Investment Plan: funding clarified ... 5
 A mission for the city together with its partners ... 5
 Process: how did this city climate contract come about? ... 7
-Structure of the Climate Contract Left Bank 2030 and reading guide ... Fout! Bladwijzer niet gedefinieerd.
+Structure of the Climate Contract Left Bank 2030 and reading guide ... page n/a
 # EXECUTIVE SUMMARY
 
 ## Objective
@@ -66,7 +63,6 @@ Figure: breakdown of the occupied housing stock by housing type for the Left Ban
 # Door eigenaar bewoonde woningen
 
 ![img-4.jpeg](img-4.jpeg)
-100
 Linkeroever
 
 ![img-5.jpeg](img-5.jpeg)
@@ -75,11 +71,8 @@ Kadaster | 2023
 
 Figure: Share of owner-occupied houses for the Left Bank district and the city of Antwerp
 
-1
-
 Antwerpen
 
-Woon Klimazil
 # Kansarmoede-index (% geboorten in kansarm gezin)
 
 ![img-6.jpeg](img-6.jpeg)
@@ -93,9 +86,6 @@ Besides an interesting composition as regards demographics and building typology
 
 The action plan reprised the emissions inventory of the Left Bank district. The inventory shows that buildings and mobility are the largest emitters, accounting for 71 and  $21\%$  of emissions, respectively. These two sectors are therefore crucial to the objectives the city of Antwerp has set itself to further reduce emissions.
 
-Antwerpm
-
-2
 ![img-8.jpeg](img-8.jpeg)
 Figure: Emissions inventory Left Bank 2019
 
@@ -119,10 +109,6 @@ The interventions are put into practice in the portfolio via the breakthrough pr
 
 We define a breakthrough project as a project that is committed to breaking through 1 or more barriers in 1 pilot case. These are innovative projects that ensure an acceleration in the climate transition for the city as a whole (and beyond) (e.g., fossil-free energy hubs) or large infrastructure projects that lead to an exponential acceleration on one or more impact pathways (e.g., fossil-free energy hubs).
 A strategic action is an action that will be implemented in the coming years, which will be essential in achieving climate neutrality. On the one hand, this involves scaling up and accelerating existing climate actions or launching new actions that are intended to meet a current or future need (e.g. connection policy heat grid).
-
-4
-
-Antwerper
 
 Meer Klimaat
 The Investment Plan: funding clarified
@@ -161,9 +147,7 @@ A mission for the city together with its partners
 
 A challenge on this scale cannot be taken on by a city alone. As such, the City of Antwerp brought together a strong field of key stakeholders who want to get behind the action portfolio.
 
-5
 Antwerpen
-Plan Klimas
 For the drafting and implementation of the action portfolio, a thorough co-creative process was opted for, with stakeholders involved in the preparation, the steering committee, the coordination consultations and in the implementation of the actions from the action plan. There was also extensive outreach to new partners, with the aim of encouraging innovative projects to engage civil society and businesses in the process. Intensive collaboration with residents to turn action plans into implementation is also a crucial component of the implementation process. This is with an additional focus on vulnerable target groups, to ensure that the process is inclusive.
 
 Co-creative process with existing stakeholders: co-creation of a portfolio of actions with stakeholders from the various emission domains, levers and internal city services, to ensure broad support for the action and investment plan
@@ -180,7 +164,6 @@ Innovation space Climate &amp; Environment
 Burgerbegroting
 Outreach to residents
 
-Antwerper voor Klimazl
 Process: how did this city climate contract come about?
 
 The following overview shows the process through which the Action and Investment Plan came about, given that the process encompasses both plans
@@ -206,11 +189,7 @@ Composition of the Transition Team
 
 The development of a Left Bank 2030 transition team with representatives from within and beyond the city's organisation, with representation from all major emission domains. This team will meet at various key moments in the Coordination Consultation Left Bank 2030. Members of the transition team (or coordination consultation) will take on the role of identifying the actions in the action and investment plan, and be responsible for implementing them.
 
-7
-
 Antwerpen
-
-Zesem
 
 Klimaat
 ![img-10.jpeg](img-10.jpeg)
@@ -231,7 +210,6 @@ In parallel with creating a strong mandate, a baseline of the current state of c
 Analysis of existing emissions inventory + analysis of consumption data
 Mapping the existing policy and strategy (Antwerp Climate Plan, supra-local policies, etc.)
 
-Antwerpm van Klimas
 Analysis of existing funding streams of the current climate actions (city, Flemish, European)
 
 ## 2.2 Identify links and relationships + Define climate neutrality thresholds
@@ -284,7 +262,6 @@ Flux50: Frederik Loeckx
 Fluvius: Jef Huyck
 
 Antwerpen
-Open Klimaz
 $\circ$  Mobility and Transport City of Antwerp: Michiel Penne/Marijke De Roeck
 ○ Flemish Energy and Climate Agency (VEKA): Margot Van Cauter
 NetZeroCities: Bob D'Haeselaer
@@ -321,24 +298,15 @@ The management of the financial architecture is not an ad hoc affair but require
 
 The following tasks are part of the financial planning:
 
-Antwerpm
-
-2
-
-Antwerpm
 ![img-14.jpeg](img-14.jpeg)
 
 ## Opvolging en herziening
 
 The Left Bank Climate City Contract is not a final document. Rather, it represents the starting point of the action portfolio. New stakeholders will be brought on board throughout the process (until 2030), some actions will expire, new actions will be developed. Every two years, an update of the document is submitted to the College of Mayor and Aldermen of the City of Antwerp.
 
-3
-
 Antwerpen
 
 TNO Klimaat
-4
-Antwerpm. Veer Klimas
 
 # Structure of the Left Bank Climate Contract 2030 and reading guide
 
@@ -363,16 +331,12 @@ Financiering
 
 ![img-16.jpeg](img-16.jpeg)
 
-5
-Antwerper Your Klimazl
-1
 ![img-17.jpeg](img-17.jpeg)
 
 # Climate City Contract:
 Action plan Left Bank Climate Neutral 2030
 
 Antwerpen voor Klimaat
-2
 
 # Inhoud
 
@@ -401,7 +365,6 @@ From a climate-neutral district to a climate-neutral city...197
 Project follow-up...197
 
 Attachments...200
-3
 
 # Introduction
 
@@ -476,7 +439,6 @@ Linkeroever
 Figure: Percentage of births to disadvantaged families for the Left Bank district and the city of Antwerp
 
 ![img-23.jpeg](img-23.jpeg)
-100
 Antwerpen
 Opgroeien | provincies.incijfers.be | 2021
 In addition to an interesting demographic and building type composition, this district is also interesting because a number of projects are already in the starting blocks and the city has extensive services there around climate transition. For example, the Left Bank district is 1 of the 9 pilot districts for the rollout of the city's residual heat network by 2030, the city is already assisting many co-owners in making their multi-family dwellings more sustainable, and a number of important (re)construction developments are planned, including the Europark, Katwilgweg business park and the former Combori site.
@@ -489,9 +451,6 @@ The action portfolio before us today is the result of a co-creative process. The
 
 (see also Module C-1 organizational interventions). The Coordination Team shapes the action portfolio and investment plan, guide decisions and priorities, and monitor progress and impact.
 
-6
-7
-
 ## Part A: Current state of Climate Action
 
 Module A represents the starting point of our challenge toward climate neutrality. Both in terms of emissions at the Left Bank district level and in terms of existing local and supra-local policies. From this starting point, a gap analysis was made, highlighting the challenge toward 2030. Both in terms of policy and CO2 emissions.
@@ -501,7 +460,6 @@ Module A represents the starting point of our challenge toward climate neutralit
 ### Overview of greenhouse gas emissions
 
 Table A-1.5 gives an overview of the greenhouse gas emissions of the Left Bank district, broken down according to the emission domains identified by Net Zero Cities:
-8
 
 |  A-1.5: Graphics and charts  |   |   |
 | --- | --- | --- |
@@ -524,7 +482,6 @@ TOTAL: 49.627
 The sector that immediately stands out is Buildings.
 
 This group includes the energy consumption of all buildings on the Left Bank. Both residential and non-residential. Households account for 75% of natural gas consumption on the Left Bank. The remaining 25% is almost entirely attributable to the tertiary sector. As regards electricity consumption, the ratio is more 50/50 between households and tertiary sector.
-9
 
 Transport - 21%
 
@@ -559,7 +516,6 @@ Electricity consumption by households: 2 kTon CO2e
 Residual household waste: 2 kTon CO2eFinal energy consumption by scope and sector (Module A-1.1)
 
 Table A-1.1 shows the final energy consumption in the Left Bank territory. This consumption is subsequently used to calculate energy-related emissions.
-0
 
 |  A-1.1: Final energy use by source sectors  |   |   |   |   |
 | --- | --- | --- | --- | --- |
@@ -628,7 +584,6 @@ Table A-1.3 only refers to activities that generate emissions that are unrelated
 |  Biomass storage |  |  | -230  |
 |  |   |   |   |
 |  Undefined | 943 | 114 |   |
-2
 
 |  A-1.4: GHG emissions by source sectors  |   |   |   |   |
 | --- | --- | --- | --- | --- |
@@ -659,7 +614,6 @@ are defined:
 ![img-27.jpeg](img-27.jpeg)
 
 The focus of this first phase of the mission to climate neutrality will thus be on the reduction of CO2 emissions from buildings and the shift to renewable energy. Of course, without losing sight of the other relevant themes and their interconnectedness.
-4
 
 # Module A-2 Analysis of current climate policy and strategy
 
@@ -668,7 +622,6 @@ The focus of this first phase of the mission to climate neutrality will thus be 
 The adaptation and mitigation policy in the city of Antwerp has taken shape within a European, national and regional regulatory framework. The structure of the regulatory framework will be shown below, with a focus on the city policy framework for the city of Antwerp.
 
 This context frames and anchors the ambitions from the Left Bank Mission. The area of focus of competences in the area of mitigation and adaptation within the federal structure of Belgium at the regional level. For the implementation of European and Flemish regulations, local governments are essential.
-5
 
 |  A-2.1: Relevant policy, strategies and regulations.  |   |   |
 | --- | --- | --- |
@@ -678,78 +631,39 @@ This context frames and anchors the ambitions from the Left Bank Mission. The ar
 |  Belgian climate strategy 2050 (2020) National energy and climate plan | Implementation of Art 15 Regulation (EU) 2018/1999: each Member State must submit a long-term strategy by 1 January 2020, every 10 years, with a 30-year perspective Sets out the commitments made by the Belgian federal state and clarifies how these are distributed among the three federated states (Flanders, Wallonia, Brussels Capital Region). | This national strategy is made up of the regional climate strategies. The climate plan at the federal level guides the actions at the underlying levels.  |
 |  Flanders (regional government)  |   |   |
 |  Flemish Climate strategy 2050 | Long-term climate vision of the Flemish government, where the goal is to reduce greenhouse gas emissions from the non-ETS sectors by 85% by 2050, with the ambition of moving toward full climate neutrality. For residential buildings, this amounts to 75% by 2050; for non-residential buildings, the goal is carbon neutrality by 2050. | This strategy sets out the outlines leading up to 2050 for the various sectors. Within the CCC, the approach is emission domains that overlap to some extent with the sectors. The formulated building blocks can therefore provide guidance for the Left Bank in achieving the 2030 objective, although the speed of the transition on the Left Bank will have to be faster than the Flemish level and the building blocks still have to be converted into concrete actions. In this way, Left Bank will also be more likely to be a pilot that can serve as an example for the city of Antwerp as a whole, or other (Flemish) cities and municipalities.  |
-|  **Flemish Energy and Climate Plan 2021-2030** | A vision of the Flemish government that includes the policies and measures taken and planned within the Flemish competences and the objectives and targets put forward by Flanders. Flanders is committed to the following objectives: (1) Reduction of greenhouse gases in the ESA sectors (40% reduction by 2030 compared to 2005), (2) LULUCF sector, (3) Energy savings and (4) renewable energy.
-
-The Flemish Energy and Climate Plan is divided into eight parts:
-Introduction, policy framework and process
-Decarbonisation: greenhouse gas emissions and removals
-Decarbonisation: renewable energy
-Energy efficiency
-Energy security and internal energy market
-Energy poverty
-Research, innovation and competitiveness
-Impact analysis and finance | The policy at the Flemish level has an impact on the actions at the city level. The Flemish government has various levers at its disposal that can accelerate the pace of the transition and support and enable cities to achieve net-zero. For example, the regulations at the Flemish level relating to the climate objectives will evolve over time, which can have a major impact on emissions at the level of a city or municipality. Examples here include the EPC label requirement that will become stricter over time.
-
-These regulations focus on the 2050 objectives, which means that not all regulations will find their way into Flemish policy in time to meet the goals on the Left Bank. As such, regarding the gap between the Flemish and local objectives, the City of Antwerp will have to build its own set of tools.  |
+|  **Flemish Energy and Climate Plan 2021-2030** | A vision of the Flemish government that includes the policies and measures taken and planned within the Flemish competences and the objectives and targets put forward by Flanders. Flanders is committed to the following objectives: (1) Reduction of greenhouse gases in the ESA sectors (40% reduction by 2030 compared to 2005), (2) LULUCF sector, (3) Energy savings and (4) renewable energy. The Flemish Energy and Climate Plan is divided into eight parts: Introduction, policy framework and process Decarbonisation: greenhouse gas emissions and removals Decarbonisation: renewable energy Energy efficiency Energy security and internal energy market Energy poverty Research, innovation and competitiveness Impact analysis and finance | The policy at the Flemish level has an impact on the actions at the city level. The Flemish government has various levers at its disposal that can accelerate the pace of the transition and support and enable cities to achieve net-zero. For example, the regulations at the Flemish level relating to the climate objectives will evolve over time, which can have a major impact on emissions at the level of a city or municipality. Examples here include the EPC label requirement that will become stricter over time. These regulations focus on the 2050 objectives, which means that not all regulations will find their way into Flemish policy in time to meet the goals on the Left Bank. As such, regarding the gap between the Flemish and local objectives, the City of Antwerp will have to build its own set of tools.  |
 | --- | --- | --- |
 |  **Flemish Long-term renovation strategy for buildings 2050** | The Flemish long-term renovation strategy for buildings represents a further elaboration of the Flemish Climate Strategy 2050. The VLTRS states that in order to achieve the ambitious goals set out in the Climate Strategy, existing residential buildings must achieve a similar level of energy performance as new-build homes with building permits in 2015 by 2050 at the latest. This long-term goal means that the average EPC coefficient must be reduced by 75% by 2050. On the energy label EPC scales that are used (A to F), this corresponds to label A (EPC energy score <100). We need to renovate an average of 3% of existing homes to A label on an annual basis. The strategy places a strong | The VLTRS is largely applicable to Left Bank given that a significant percentage of emissions come from buildings. In the first instance, this strategy will reduce energy use, which inherently also entails a reduction but, in addition, encourages the use of renewable energy sources for the remaining energy demand. Again, the horizon will be different at the Flemish level than at the Left Bank level. This strategy is a good guideline for reductions in the Energy Systems and Built Environment emission domains, but EPC labels are not the whole picture either. An A label does not necessarily result in full  |
 
-6
 |   | emphasis on comprehensive renovations at key moments such as the purchase of a home, inheritance, change of tenant, etc. But even beyond these key moments, raising the rate of renovation will remain essential. | decarbonisation, and sometimes full decarbonisation can be achieved with a B label. The total picture on the Left Bank will therefore always have to be looked at.  |
 | --- | --- | --- |
 |  **Renovatiepact** | Action plan (consistent with the VLTRS) to increase the rate of renovation, in order to achieve the renovation rate. The 'Renovatiepact' (Renovation pact) is a dynamic partner organisation in which resources, information, activities and competencies are shared for realising the common objective. | Left Bank can benefit from the Renovatiepact to achieve its objective, but conversely, the acceleration on Left Bank and the accompanying approach will also result in added value for the rest of Antwerp and Flanders by extension.  |
-|  **Local Energy and Climate Pact** | Through this plan, the Flemish government, together with the Flemish cities and municipalities, has committed to make the climate transition a reality.
-of the Flemish local governments have made a commitment through the Local Energy and Climate Pact 1.0 (LEKP 1.0(PDF file opens in new window)) to raise their climate ambitions. They are focusing on 4 areas: greening, energy, mobility and rainwater. Specific objectives are attached to these 4 areas.
-In response to the energy crisis, municipalities can also sign up to the LEKP 2.1.(PDF file opens in new window) This is an extension of the commitments on top of the LEKP 2.0 with a social component. This pact helps local governments address energy poverty and share energy costs. | Signing up to the Local Energy and Climate Pact should motivate cities and municipalities to commit to accelerated collective renovation. For the implementation of measures, cities and municipalities that signed up can apply for a grant. This LEKP should give cities additional motivation to help achieve the objectives of the Flemish Energy and Climate Plan. The City of Antwerp signed up to both LEKP 1.0 and 2.0 and is therefore also eligible for this support.  |
+|  **Local Energy and Climate Pact** | Through this plan, the Flemish government, together with the Flemish cities and municipalities, has committed to make the climate transition a reality. of the Flemish local governments have made a commitment through the Local Energy and Climate Pact 1.0 (LEKP 1.0(PDF file opens in new window)) to raise their climate ambitions. They are focusing on 4 areas: greening, energy, mobility and rainwater. Specific objectives are attached to these 4 areas. In response to the energy crisis, municipalities can also sign up to the LEKP 2.1.(PDF file opens in new window) This is an extension of the commitments on top of the LEKP 2.0 with a social component. This pact helps local governments address energy poverty and share energy costs. | Signing up to the Local Energy and Climate Pact should motivate cities and municipalities to commit to accelerated collective renovation. For the implementation of measures, cities and municipalities that signed up can apply for a grant. This LEKP should give cities additional motivation to help achieve the objectives of the Flemish Energy and Climate Plan. The City of Antwerp signed up to both LEKP 1.0 and 2.0 and is therefore also eligible for this support.  |
 |  **Flemish Mobility Vision 2040** | A vision for mobility in Flanders where the aim will be to guarantee maximum connectivity and accessibility in 2050 in a sustainable and safe way and tailored to all people and companies. To achieve this, 4 perspectives were put forward, one of which was to ensure that there are no more transport emissions by 2050 and that material footprint for mobility will be reduced by 60% by 2050. | Mobility is an important issue in City of Antwerp. A Flemish mobility vision can therefore support the introduction of certain measures. Moving faster than the Flemish level is also the intention.  |
 
-7
 |  Flemish climate adaptation plan | A plan by Flanders (Department of the Environment) to prepare Flanders for the effects of climate change in both the short term (2030) and long term (2050). | With the Flemish Climate Adaptation Plan, Flanders has also made an explicit focus on climate resilience and climate security, by limiting its impact on the climate as much as possible and mitigating the consequences of climate change. In addition to mitigation, Left Bank will also focus on adaptation.  |
 | --- | --- | --- |
 |  Solar Plan 2025 | A plan in which the Government of Flanders aims to increase the installed capacity of solar energy to 8.9 GW. Contains normative, financial and accompanying measures to promote the growth of PV (solar panels) in Flanders. | The Solar Plan 2025 is part of the Flemish Energy and Climate Plan 2021-2030. The objective is to have a total installed capacity of 6.7 GW of PV installations in Flanders by 2030. By the end of October 2020, the total installed capacity was around 3.6 GW. The results on the solar map of Flanders show that the current installed capacity in the city of Antwerp is 125 MW, but the potential capacity is 2.290 GW. Following the Solar Plan 2025 would therefore not be an optimal use of the potential. However, the use of rooftops for solar panels on the Left Bank is currently minimal. There are therefore big gains to be made here. The Solar Plan can definitely play a supporting role in this regard, and the timing also fits with the ambitions on the Left Bank.  |
 |  Wind Plan 2025 | A plan in which the Government of Flanders aims to increase the installed capacity of onshore wind energy to 2,642 GW by 2030. | The Wind Plan 2025 is part of the Flemish Energy and Climate Plan 2021-2030. The objective is to increase the installed capacity for wind in Flanders to 2.5 GW by 2030. By the end of 2019, the total installed capacity was 1.3 GW. To avoid over-subsidising, the Government of Flanders introduced a maximum generation volume and lowered the limit between the smallest and largest representative project category wind from 3 MW to  |
 
-8
 |   |  | 2.5 MW. For Left Bank, there is rather low potential for a large ground-based wind turbine. Nevertheless, smaller turbines on rooftops can be experimented with, although these are unlikely to fall below the lower limit of 2.5MW.  |
 | --- | --- | --- |
 |  Heat Plan 2025 | This plan implements the objectives for green heat and residual heat included in the Coalition Agreement 2019-2024, the policy note on Energy 2019-2014 and the Flemish Energy and Climate Plan 2021-2030 (VEKP) and, with 26 measures taken in the Vision paper on Additional Climate Measures, also switches up a gear to make the transition to sustainable heating and the greening of energy carriers. If residual heat and green heat are deployed, it is ensured that this is as efficiently as possible by effectively insulating and taking energy-efficient measures in production processes. As part of this heat plan, the EU's Fit for 55 package will also be analysed. | Collective heat is an important topic in this plan. Research is being conducted on how to create additional incentives for building heat grids. The City of Antwerp is one of the leaders in the area of collective heat and has a favourable context in terms of residual heat. In this way, it will also be possible for Left Bank to shift gears more quickly and not have to wait until the Heat Plan is fully in place.  |
 |  Flemish Flexibility Plan 2025 | Plan to increase the flexibility of the electricity grid to continue meeting the growing electricity demand. | Further growth of renewable energy sources, such as solar and wind power and electrification of heat and transport are important measures that are necessary to achieve further reduction of CO2 emissions and become less energy dependent. To meet the growth of renewable energy sources and further electrification will require more investment in the electricity grid, on the one hand, and will also require more flexibility. This flexibility can be used  |
 
-9
 |   |  | to match electricity supply and demand more effectively and avoid congestion on the electricity grid. In addition, flexibility can also help reduce system costs and therefore keep energy bills affordable for households and competitive for businesses. To achieve the desired speed on the Left Bank, focusing on flexibility will make it possible to eliminate the potential bottleneck in terms of infrastructure and grid reinforcement.  |
 | --- | --- | --- |
-|  Regional rainwater regulation 2023 | Imposes measures on every building contractor to avoid immediate rainwater runoff with the basic principle of using as much rainwater as possible.
-The following more stringent rules have been introduced:
-(1) the minimum volumes of rainwater cisterns are increased;
-(2) a rainwater cistern must be installed when rebuilding or expanding existing buildings;
-(3) the collected rainwater must be used to the maximum extent for applications where potable water is not necessary, including toilet flushing, cistern water, washing machines and outdoor use;
-(4) the buffer volume and infiltration area of the mandatory infiltration facility is increased;
-(5) the buffer volume for large paved areas is increased, when no infiltration facility can be installed due to technical reasons;
-(5) the possibility of taking on obligations related to rainwater collectively is introduced. | This regulation focuses primarily on climate adaptation and has a less direct impact on emissions. Nevertheless, it is relevant within this mission because various works will be organised both at the building level and in the public domain. These works are important key moments for enhancing climate resilience on the Left Bank as well.  |
+|  Regional rainwater regulation 2023 | Imposes measures on every building contractor to avoid immediate rainwater runoff with the basic principle of using as much rainwater as possible. The following more stringent rules have been introduced: (1) the minimum volumes of rainwater cisterns are increased; (2) a rainwater cistern must be installed when rebuilding or expanding existing buildings; (3) the collected rainwater must be used to the maximum extent for applications where potable water is not necessary, including toilet flushing, cistern water, washing machines and outdoor use; (4) the buffer volume and infiltration area of the mandatory infiltration facility is increased; (5) the buffer volume for large paved areas is increased, when no infiltration facility can be installed due to technical reasons; (5) the possibility of taking on obligations related to rainwater collectively is introduced. | This regulation focuses primarily on climate adaptation and has a less direct impact on emissions. Nevertheless, it is relevant within this mission because various works will be organised both at the building level and in the public domain. These works are important key moments for enhancing climate resilience on the Left Bank as well.  |
 |  Design guide for social housing | This design guide contains the structural engineering and conceptual guidelines to be used for all social housing, in other words both new construction and renovation projects. The VMSW (the current 'Wonen in Vlaanderen') tests the preliminary design or - if there is no preliminary | 40% of the building stock on the Left Bank is owned by the social housing company Woonhaven. Their activities and finance are controlled to a large extent from the Flemish level, and more specifically Wonen in Vlaanderen. Certain measures within this  |
-0
 |   | design - execution file of a project against these structural engineering and conceptual guidelines. A favourable recommendation from the VMSW is required to receive subsidised finance. This design guide also imposes energy performance-related requirements. | policy may prevent an important partner such as Woonhaven from aligning their ambitions with those of the Climate City Contract.  |
 | --- | --- | --- |
 |  **Space Flanders policy plan** | In total, the people of Flanders occupy 32.6% of the space (2013 figures). Currently, 6 hectares of space is taken up per day. With no change in policy, land take will continue to increase to undesirable levels. At the same time, many underutilised or obsolete portions of our land use currently offer opportunities for additional housing units, workplaces or facilities. The Flanders Space policy plan proposes measures so that by 2040 there will be no additional land take. It also proposes measures such as climate-robust open spaces and the most efficient building network. (strategic objectives: (1) reduce additional land take; (2) better connection of the urban-economic space and energy networks; (3) live and work near current and future collective transport nodes and facilities; (4) robust open space; (5) create a network of green-blue arteries | The average living area on Left Bank is already relatively low currently. Nevertheless, future innovations will also require space both on private and public land, on the other hand, there will also be actions that will actually free up space. Within the Left Bank mission, it is therefore important to maintain this balance.  |
-|  **Vision 2050 - A long-term strategy for Flanders** | The long-term vision is based in part on existing international and Flemish long-term visions and foresight studies. A focus on the transition approach was also retained, but we are ensuring that there is a real link to sustainable development and that the key objectives of a transition perspective were respected. On the other hand, we have respected the unique features and speed of each individual transition process. | Various transition paths run in parallel. The climate transition on the Left Bank will therefore also have to take into account other themes:
-Knowledge development as a driving force
-Smart use of materials
-A low-carbon society
-A robust water system
-A sustainable food chain
-A rapid and safe mobility system
-Living in an attractive environment
-Accessible and high-quality care
-An agile government  |
+|  **Vision 2050 - A long-term strategy for Flanders** | The long-term vision is based in part on existing international and Flemish long-term visions and foresight studies. A focus on the transition approach was also retained, but we are ensuring that there is a real link to sustainable development and that the key objectives of a transition perspective were respected. On the other hand, we have respected the unique features and speed of each individual transition process. | Various transition paths run in parallel. The climate transition on the Left Bank will therefore also have to take into account other themes: Knowledge development as a driving force Smart use of materials A low-carbon society A robust water system A sustainable food chain A rapid and safe mobility system Living in an attractive environment Accessible and high-quality care An agile government  |
 
-1
 |  Roadmap 2030 | With the regional mobility plan 'Routeplan 2030', the Flemish government intends to realise an accessible and livable region with a systematically higher use of sustainable means of mobility by 2030. The goal is to ensure that 50% of travel is by sustainable mobility modes by 2030, the so-called 50/50 ambition or modal split. In this context, residents will have the opportunity to use alternative modes of transport over the next 10 years. The 2030 Roadmap opts for a 'mobility system focused on combi-mobility' as a driver for the transition: multimodal travel approaches where people making a journey combine different modes of transport and switch between them, in order to reach a destination as quickly and sustainably as possible. | The Route Plan 2030 falls within the decision of the Government of Flanders' decision to form 15 transport regions to implement mobility policy at the regional level, including the transport region of Antwerp. These transport regions must then implement policy at the regional level. The measures taken will also ultimately ensure that mobility will be made electric and more sustainable, with the goal of reducing total NOx and CO2 emissions. Again, this plan contains effective guidelines, although it will be important to turn these into concrete actions on the Left Bank by 2030.  |
 | --- | --- | --- |
-|  Flemish Air Policy Plan | The Government of Flanders has set out a number of strategic objectives in this air policy plan:
-In the short term (as soon as possible): European air quality standards and/or target values are achieved throughout Flanders.
-In the medium term (2030): we are aiming to halve the health impact from air pollution compared to 2005 and reduce the area of ecosystems where the capacity for eutrophication or acidification is exceeded by one-third compared to 2005. Flanders is also aiming to halve, by 2030, the number of people living in an area where the annual average NO2 concentration exceeds the World Health Organization (WHO) advisory value in every municipality compared to 2016. As long as the WHO has not specified a new advisory value for long-term exposure to NO2, we are taking 20 μg/m³ as the target figure - In the long term (2050): throughout Flanders, the WHO | As air quality improves, emissions also decrease. This policy plan therefore also has a direct impact on emissions and is therefore relevant to this mission. Annex 2 of the document lists the measures taken by the local governments of Agglomeration of Antwerp. A detailed description can be found above under local policy.  |
+|  Flemish Air Policy Plan | The Government of Flanders has set out a number of strategic objectives in this air policy plan: In the short term (as soon as possible): European air quality standards and/or target values are achieved throughout Flanders. In the medium term (2030): we are aiming to halve the health impact from air pollution compared to 2005 and reduce the area of ecosystems where the capacity for eutrophication or acidification is exceeded by one-third compared to 2005. Flanders is also aiming to halve, by 2030, the number of people living in an area where the annual average NO2 concentration exceeds the World Health Organization (WHO) advisory value in every municipality compared to 2016. As long as the WHO has not specified a new advisory value for long-term exposure to NO2, we are taking 20 μg/m³ as the target figure - In the long term (2050): throughout Flanders, the WHO | As air quality improves, emissions also decrease. This policy plan therefore also has a direct impact on emissions and is therefore relevant to this mission. Annex 2 of the document lists the measures taken by the local governments of Agglomeration of Antwerp. A detailed description can be found above under local policy.  |
 
-2
 |   | advisory values and the critical loads for eutrophication and acidification will be respected. |   |
 | --- | --- | --- |
 |  |   |   |
@@ -757,35 +671,21 @@ In the medium term (2030): we are aiming to halve the health impact from air pol
 |  **Climate plan 2030 'Antwerp for Climate'** | The Climate Plan 2030 is a specific plan to reduce CO2 emissions within the territory of the city. In the first instance, the city will achieve this, in collaboration with all stakeholders, by reducing energy consumption for living, working and traffic, and making these more sustainable. A pleasant and healthy living environment, affordable and reliable energy supply, strengthening of the economic fabric with the creation of sustainable jobs, are some of the other avenues. 'Antwerp for Climate' bundles all measures and projects, and calculates them into potential climate gains. | With its Climate Plan 2030, Antwerp plans to reduce its emissions by 50-55% by 2030 compared to 2005. This is up to 15% more than the levels put forward by the EU. Antwerp is therefore the first city in Flanders to mirror the European Green Deal.  |
 |  **Strategic Spatial Plan Antwerp** | The Antwerp Strategic Spatial Plan is an overarching vision for the city as a whole, that provides guidance on the spatial challenges facing the city. The city aims to be the most livable city in Flanders, striving for a high quality of life for its residents and visitors. That means a pleasant city to live, work and stay in. The spatial plan defines three layers which, from a spatial perspective, determine the quality of life in the city: a vibrant residential city, resilient landscape and smart network city. The spatial plan focuses on 7 subareas, each with its own identity. The Left Bank district is one of these 7 subareas. The ambition is to | With the Antwerp Strategic Spatial Plan, Flanders has also made an explicit focus on climate resilience and climate security, by limiting its impact on the climate as much as possible and mitigating the consequences of climate change. In this regard, Left Bank will receive additional focus as a climate-neutral district by 2030.  |
 
-3
 |   | deliver the final plan by early 2024, with a time horizon up to 2040. |   |
 | --- | --- | --- |
 |  Strategic Energy Vision Antwerp (SEViA). | The Strategic Energy Vision Antwerp (SEViA) is a collaboration between the City of Antwerp and Fluvius, the system operator for electricity and natural gas in all Flemish municipalities. It is a spatial analysis that provides a framework for the energy policy of the city of Antwerp by 2050, thereby creating the outlines for a sustainable heat policy in the city. The technical and economic feasibility was examined for various energy concepts (heat grids, 100% electric and renewable gas) as alternatives to fossil fuels. A dynamic heat zoning map - which can be adapted in line with new insights - indicates which fossil-free heating is most beneficial in specific zones of the city. | Through SEViA's analysis and the accompanying heat zoning map, it has become clear that heat grids in many areas of the city offer a huge opportunity to make heat more sustainable. Through these insights, the Plan of Approach for Heat Grids was drawn up, which defines 9 pilot zones to start with the rollout of the heat grid. These are zones with many high-rise buildings, social housing and/or city-owned buildings. A large part of Left Bank is one of these pilot zones.  |
 |  Antwerp Green Plan | To connect its green spaces and strengthen them both qualitatively and quantitatively, the city has developed a Green Plan. The green policy is tested against this policy document. The Green Plan divides the city into 14 green landscapes, one of which is Left Bank sand plain. Each of the landscapes has its own typical characteristics and strengths. There are also concrete guidelines for each landscape, adapted to the specific needs of the area. | If all the guidelines and actions in the Green Plan are realised, the entire green surface area of the city will grow by 3%, or 187 hectares, compared to 2017. Fully 6% or 358 hectares of green space will receive additional legal protection as a green area, and a further 15% or 819 hectares will become more qualitative thanks to new design or better management. The aim is to create a network of large-scale areas of greenery that liven up the city and give all residents access to pleasant green landscapes. As such, the city aims to create a sustainable living environment for people, plants and animals now and in the future.  |
 |  Antwerp Water Plan | To protect us from heavy rainstorms and longer periods of drought, the city of Antwerp drafted a Water Plan. An international team of designers and hydraulic engineers made a comprehensive analysis of water over the centuries in Antwerp, and have proposed a framework and solutions to cope with both too much and too little water. | Left Bank offers various opportunities to follow the rainwater cascade, and to create new and widened watercourses and turn areas into wetlands. For example, there is a relatively large area of unpaved public space. The many large roof areas in the district  |
 
-4
 |   | Water is systematically given a place when large areas or squares are rebuilt. In addition, the water plan also offers concrete tools and short-term solutions to collect or immediately reuse water in all areas, as locally as possible. The City of Antwerp coordinates the Water Plan, in cooperation with the utilities water-link and Aquafin. | can be made water retardant and/or green, ane used for rainwater recovery.  |
 | --- | --- | --- |
 |  Food Strategy (2022) | The Antwerp Food Strategy sets out a cross-cutting food policy and strategic framework to address the various links in the food system more sustainably. This policy starts from three basic principles (future-oriented, inclusive and avoiding food waste), four values (innovative, inclusive, circular and culinary) and seven impact makers (including the protein transition in the city's operations, local and future-oriented agriculture and space in the city for food production). With this strategy, the city has a framework for setting priorities and goals in its own approach to food. |   |
 |  Sustainable Urban Logistics Plan (SULP). | The Sustainable Urban Logistics Plan (SULP) is currently being drafted. The objective of the SULP is for Antwerp to improve the city in terms of livability, without losing sight of the economic reality. |   |
-|  Flemish Air Policy Plan 2030, Annex 2: description of measures taken by local governments in the air quality zone BEF02A 'Agglomeration of Antwerp' | This plan contains city-based measures to address air pollution in Antwerp. In particular, the goal is to reduce NO2 concentrations and thus reduce the impact of air pollution on our health and environment. The plan was drawn up pursuant to the European Air Quality Directive (2008/50/EC). An update is planned for 2025. | Relevance to Left Bank:
-Energy renovation of buildings
-Construction/Development: avoiding emissions from future building heating, in particular to protect sensitive functions (residential, schools, nurseries, care institutions).
-Tackling emissions in the construction phase: focusing on low-emission and zero-emission machinery, logistics vehicles and power generators, envisaging power points on the public domain
-Emission-free energy systems (e.g. heat grid):
-Mobility and transport: low-emission zone within  |
+|  Flemish Air Policy Plan 2030, Annex 2: description of measures taken by local governments in the air quality zone BEF02A 'Agglomeration of Antwerp' | This plan contains city-based measures to address air pollution in Antwerp. In particular, the goal is to reduce NO2 concentrations and thus reduce the impact of air pollution on our health and environment. The plan was drawn up pursuant to the European Air Quality Directive (2008/50/EC). An update is planned for 2025. | Relevance to Left Bank: Energy renovation of buildings Construction/Development: avoiding emissions from future building heating, in particular to protect sensitive functions (residential, schools, nurseries, care institutions). Tackling emissions in the construction phase: focusing on low-emission and zero-emission machinery, logistics vehicles and power generators, envisaging power points on the public domain Emission-free energy systems (e.g. heat grid): Mobility and transport: low-emission zone within  |
 
-5
-|   |  | which Left Bank is situated, modal shift to zero-emission/low-emission modes of transport - -
-Make the city's own fleet more sustainable for mobility and provide electric logistics
-Waste disposal and circular economy:
-Low-emission logistics (hydrogen-powered waste trucks)
-Green infrastructure and nature-based solutions:
-vegetation as a buffer between source of pollution and receiver. Emission-free/low emission machinery for greenery management  |
+|   |  | which Left Bank is situated, modal shift to zero-emission/low-emission modes of transport - - Make the city's own fleet more sustainable for mobility and provide electric logistics Waste disposal and circular economy: Low-emission logistics (hydrogen-powered waste trucks) Green infrastructure and nature-based solutions: vegetation as a buffer between source of pollution and receiver. Emission-free/low emission machinery for greenery management  |
 | --- | --- | --- |
 
-6
 Local climate and energy policy of the city of Antwerp
 
 The actions in the Action Plan for the Left Bank are anchored in an existing, ambitious citywide urban policy. The plans below, which include the city's ambitions for climate, spatial planning, energy, adaptation and mobility, frame the urban policy in a Flemish and European perspective. The direct relevance to the Left Bank Mission is also brought into sharp focus. With the Left Bank Mission 2030, the city - from each of these plans - is innovatively accelerating urban development with the necessary partners on board, to take concrete steps towards climate neutrality.
@@ -801,9 +701,6 @@ The city drew up a concrete set of measures to reduce CO₂ emissions (mitigatio
 To roll out the Climate Plan 2030, a governance model was set up with internal and external stakeholders. An independent Climate Director maintains oversight, ensures progress and advises the college. The Climate Council consists of 17 external stakeholders. Members come from local organisations, knowledge institutions, companies and strategic partners of the city, and act in a personal capacity. Under the direction of the Climate Director, the Climate Council advises the college and contributes input and support from various sectors. The Climate Chambers housed within the city are made up of city departments and subsidiary organisations. They are tasked with strategically monitoring the implementation of the Climate Plan 2030, monitoring progress, setting up projects, actions and experiments, and identifying bottlenecks and proposals that need to be put on the policy agenda.
 
 **Relevance to the mission**: the present Antwerp Climate City Contract argues for accelerated implementation of the Climate Plan 2030 on the Left Bank of the city. The city believes in the Left Bank as a pilot area to accelerate innovation and implementation of actions, to develop and test new tools, with the goal of further scaling them up to the rest of the city. In addition, the governance structure for the implementation of the Left Bank Mission largely builds on the governance model of the Climate Plan 2030.
-
-7
-8
 
 # Strategic Spatial Plan Antwerp (SRA)
 
@@ -836,11 +733,10 @@ The Left Bank heat grid will be rolled out over the period 2027-2030 with indust
 
 **Brief description:** To connect its green spaces and strengthen them both qualitatively and quantitatively, the city has developed a Green Plan. The green policy is tested against this policy document. The overarching Green Plan for the city as a whole outlines the desired green structure and general principles that can be applied citywide. The Green Plan divides the city into 14 green landscapes, one of which is Left Bank sand plain. Each of the landscapes has its own typical characteristics and strengths. There are also concrete guidelines for each landscape, adapted to the specific needs of the area.
 
-**Relevance for the missie:** if all the guidelines and actions in the Green Plan are realised, the entire green surface area of the city will grow by 3%, or 187 hectares, compared to 2017. Fully 6% or 358 hectares of green space will receive additional legal protection as a green area, and a further 15% or 819 hectares will become more qualitative thanks to new design or better management. The aim is to create a network of large-scale areas of greenery that liven up the city and give all residents access to pleasant green landscapes. As such, the city aims to create a sustainable living environment for people, plants and animals now and in the future. Specifically for Left Bank: Before the launch of the Green Plan, several redevelopment projects in the Sand plain had already been decided on. The Charles De Costerlaan will be downgraded and given a green layout (6.8 hectares). The Sint-Annabos is largely left separate from the Oosterweel project. Applying suitable management, the diversity and visual quality can be further enhanced. A redevelopment of the Middenvijver residential expansion area as open space was also recently approved. This will generate 33.1 hectares of green space. Once all projects planned in the landscape are realised, the green area of the Left Bank sand plain will have grown by 13 hectares, or 4.2%. In addition, 125 hectares of the existing area, or 40% of the landscape will have taken on a more qualitative character.
+**Relevance for the mission:** if all the guidelines and actions in the Green Plan are realised, the entire green surface area of the city will grow by 3%, or 187 hectares, compared to 2017. Fully 6% or 358 hectares of green space will receive additional legal protection as a green area, and a further 15% or 819 hectares will become more qualitative thanks to new design or better management. The aim is to create a network of large-scale areas of greenery that liven up the city and give all residents access to pleasant green landscapes. As such, the city aims to create a sustainable living environment for people, plants and animals now and in the future. Specifically for Left Bank: Before the launch of the Green Plan, several redevelopment projects in the Sand plain had already been decided on. The Charles De Costerlaan will be downgraded and given a green layout (6.8 hectares). The Sint-Annabos is largely left separate from the Oosterweel project. Applying suitable management, the diversity and visual quality can be further enhanced. A redevelopment of the Middenvijver residential expansion area as open space was also recently approved. This will generate 33.1 hectares of green space. Once all projects planned in the landscape are realised, the green area of the Left Bank sand plain will have grown by 13 hectares, or 4.2%. In addition, 125 hectares of the existing area, or 40% of the landscape will have taken on a more qualitative character.
 
 ## Antwerp Water plan
 
-0
 Brief description: To protect us from heavy rainstorms and longer periods of drought, the city of Antwerp drafted a Water Plan. Other ways to collect water runoff, or significantly delay it, need to be explored. The city commissioned a water plan so that water can once again have a place in the city and to increase water awareness in Antwerp. The aim is not just to prevent floods. Water also makes the city more attractive, pleasant and cooler in the summer. An international team of designers and hydraulic engineers made a comprehensive analysis of water over the centuries in Antwerp, and have proposed a framework and solutions to cope with both too much and too little water. Water is systematically given a place when large areas or squares are rebuilt. In addition, the water plan also offers concrete tools and short-term solutions to collect or immediately reuse water in all areas, as locally as possible. The City of Antwerp coordinates the Water Plan, in cooperation with the utilities water-link and Aquafin.
 
 Relevance to the mission: As part of the green-blue structure stream valleys and watercourses and thanks to the sandy soil that offers good infiltration, Left Bank offers various opportunities to follow the rainwater cascade, as well as to create new and widened watercourses and turn areas into wetlands. The different urban typologies on the Left Bank also provide opportunities for smart water management. For example, there is a relatively large amount of unpaved public space - relatively wide streets, lots of private greenery and among the many tall buildings - to slow down and infiltrate rainwater and transport excess water towards stream systems. In the more functional and industrial parts of the district, paved street profiles and unused spaces need to be depaved and greened as much as possible to benefit rainwater transport. The many large roof areas in the district can be made water retardant and/or green, and used for rainwater recovery.
@@ -851,7 +747,6 @@ Brief description: The Sustainable Urban Logistics Plan (SULP) is currently bein
 
 Relevance for the mission: Antwerp is participating city in a study by the Flemish Department of Mobility and Public Works (MOW) on emission-free urban logistics. This study is complementary to the SULP, so emission-free logistics is not explicitly addressed in the SULP. The study by the MOW also includes possible pilot projects, in which case Left Bank could be looked at to roll out a pilot. This study contributes to the ambition of the SULP to keep Antwerp livable and amenable.
 
-1
 A-2.2: Analysis of existing policy, strategy and regulations
 
 # Introduction
@@ -885,9 +780,6 @@ In addition, there is still room for improvement in the approach to landlords wh
 
 To achieve the necessary acceleration in the renovation rate and the transition to fossil-free energy systems, collective (neighborhood) renovation is often referred to. This measure can be effective but only if the necessary underlying systems are developed to support these projects. The experience of the city of Antwerp in the collective renovation of apartment buildings clearly revealed that the current financial, regulatory, organizational and technological systems are not designed for a collective approach. The translation from collective renovation of apartment buildings to the successful collective renovation of (private) family homes will therefore not only be a matter of creating a renovation offer tailored to a neighborhood, but at the same time will require the development of new financial, regulatory and technological tools.
 
-3
-4
-
 # Electricity from renewable energy
 
 When it comes to increasing the share of renewable energy in electricity generation, local governments are often overlooked. While efforts have been made to increase the generation of renewable electricity, this did not lead to an acceleration in the expansion of generation capacity. The policy for solar photovoltaics (PV) in recent years has been more likely to lead to **investment uncertainty and large fluctuations within the sector**, for various reasons. Since the energy crisis in 2022, PV became attractive again for businesses and families.
@@ -912,29 +804,15 @@ The energy transition not only demands an increase in the generation capacity of
 |  A-2.2: Conclusions  |   |   |
 | --- | --- | --- |
 |  Levers | Energy-related renovation | Renewable energy  |
-|  Policy and regulations | • Insufficiently adapted regulations (and grant policy) for co-owners' associations (apartment buildings)
-• Increase renovation obligation of D label (see infrastructure) | • Make regulatory framework for PV more attractive to increase generation capacity
-• Further develop the regulatory framework for energy communities and energy sharing to  |
-|   | • EPC label requirement for all landlords | make the business case (cost/benefit) more interesting.
-• Provide necessary legal levers for implementation of local heat policy plans
-• Address the barriers in regulatory framework to achieve integrated energy systems
-• Better align energy-related renovation policy (e.g. EPC label policy) with renewable energy policy  |
+|  Policy and regulations | • Insufficiently adapted regulations (and grant policy) for co-owners' associations (apartment buildings) • Increase renovation obligation of D label (see infrastructure) | • Make regulatory framework for PV more attractive to increase generation capacity • Further develop the regulatory framework for energy communities and energy sharing to  |
+|   | • EPC label requirement for all landlords | make the business case (cost/benefit) more interesting. • Provide necessary legal levers for implementation of local heat policy plans • Address the barriers in regulatory framework to achieve integrated energy systems • Better align energy-related renovation policy (e.g. EPC label policy) with renewable energy policy  |
 | --- | --- | --- |
-|  finance | • Extend and expand 'Mijn verbouwlening' for target groups with no repayment capacity
-• Adapted financing mechanisms for co-ownership
-• Adapted financing mechanisms for split incentive
-• Grant percentages and ceilings: take into account the total renovation cost (in light of livability) which is usually associated with energy-related renovations.
-• Taking into account capacity for pre-finance | • Grant framework for collective heat is not aligned with major infrastructure works (e.g., construction of heat grids). Too much fragmentation, too small budgets, too short timing.  |
-|  Infrastructure | • Take into account the actual costs of energy-related renovations
-• Renovation obligation (since 2023) within 5 | • Continue to catch up with generation capacity of wind
-• Focus on collective renewable heat (heat  |
+|  finance | • Extend and expand 'Mijn verbouwlening' for target groups with no repayment capacity • Adapted financing mechanisms for co-ownership • Adapted financing mechanisms for split incentive • Grant percentages and ceilings: take into account the total renovation cost (in light of livability) which is usually associated with energy-related renovations. • Taking into account capacity for pre-finance | • Grant framework for collective heat is not aligned with major infrastructure works (e.g., construction of heat grids). Too much fragmentation, too small budgets, too short timing.  |
+|  Infrastructure | • Take into account the actual costs of energy-related renovations • Renovation obligation (since 2023) within 5 | • Continue to catch up with generation capacity of wind • Focus on collective renewable heat (heat  |
 
-6
-|   | years of purchase: examine whether D Label is highest achievable + intermediate steps to 2050 possible?
-• For apartment buildings: building-level label | grids, collective heat pumps).  |
+|   | years of purchase: examine whether D Label is highest achievable + intermediate steps to 2050 possible? • For apartment buildings: building-level label | grids, collective heat pumps).  |
 | --- | --- | --- |
-|  Capacity | • Explore where automation of permits is possible (e.g. according to capacity of Energy Houses)
-• Focus on the capacity of the building sector | • Strengthen capacity of local energy directors  |
+|  Capacity | • Explore where automation of permits is possible (e.g. according to capacity of Energy Houses) • Focus on the capacity of the building sector | • Strengthen capacity of local energy directors  |
 |  Participation | • Focus awareness-raising actions and deployment of resources not only on single-family homes but also to co-owners (apartment buildings) |   |
 
 ## A-2.3: Gap analysis
@@ -945,7 +823,6 @@ The climate plan states that in the shorter term, by 2030, we already want to re
 
 The current Antwerp Climate Plan was approved in December 2020 and covers the period 2021 - 2030. As far as climate adaptation is concerned, many projects have already been implemented to arm the city against the consequences of climate change, such as the decision (and implementation of already 1 route) to invest in a circular water network to combat the consequences of increasing drought and water scarcity in the inner city. Where further work is needed is to concretize the adaptation goals from the climate plan by naming clear target values. For climate mitigation, the city has an annual emissions inventory drawn up on the evolution of CO2-e emissions on its territory. Because of the availability of crucial data, this inventory is always published with a two-year delay. Currently Antwerp is still on schedule to meet its 2030 target (-50% reduction compared to 2005), but a calculation commissioned by the climate director of the city of Antwerp has shown that additional measures are needed to actually meet this target in 2030. Updating the current action sheets in the climate plan and drawing up additional measures/action sheets are therefore points for
 
-7
 attention for the next administration.
 
 ![img-29.jpeg](img-29.jpeg)
@@ -968,7 +845,6 @@ A-2.3: Emissions gap
 |  Afval | 2.996,90 | 6% | 599,38 | 20% | 2.397,52 | 80% | 1.198,76 | 50% | 1.198,76 | 50%  |
 |  Ongedefinieerd | 1.056,12 | 2% | 211,22 | 20% | 844,90 | 80% | 422,45 | 50% | 422,45 | 50%  |
 
-9
 Module A-3 Systemic barriers and opportunities for climate neutrality by 2030
 
 # Introduction
@@ -998,107 +874,40 @@ Ensure that the energy and climate transition involves everyone, including the m
 
 In addition to the stakeholders already involved in drafting the action plan, (types of) actors relevant in light of the implementation of the mission were also identified. Throughout the implementation phase, the ambition was also to establish an intensive partnership and attract new stakeholders on board throughout the operation of the mission, towards climate neutrality on Left Bank 2030.
 
-1
 Stakeholdermapping Mission Climate Neutral Left Bank 2030 :
 
 |  Stakeholder category | Description | Impact | Influence | Strategy | Importance of the mission for stakeholder | Desired contribution | Actions to avoid | Strategy to engage stakeholder | Desired community building and/or communication products  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Supralocal governments | European, federal, Flemish and provincial | High | High | Consultation | - Realise supra-local ambitions
-Support local governments from supra-local role
-Remove barriers in terms of regulatory framework | - Actively contribute to (an acceleration of the) mission by e.g. (steering) the adaptation of supra-local legislation or release of budgets
-(Stimulate) knowledge exchange | - Indifference with regard to "local mission"
-Political deadlock, meaning that the desired supra-local actions cannot be taken | Regular political and official meetings to identify bottlenecks and get them adjusted | - Representation in the coordination consultation (see NetZeroCities and VEKA)
-multilevel governance
-use existing consultation bodies at the official level
-EU mission to address bottlenecks in cooperation with other major cities (including non-mission cities).
-Invite to launch event Mission Left Bank Feb 2024
-Website/newsletter  |
-|  City of Antwerp et al. local governments | City departments, subsidiaries, district and other local governments: AG Vespa, AG Stedelijk Onderwijs, AG Zorgbedrijf, etc. | High | High | Involve | - Co-execute decided policy
-Include agreed role in mission
-Possibility to test out actions for citywide rollout | Smooth and active cooperation to include (also in the context of decided policy) at least agreed role in mission | Insufficient cooperation to carry out agreed role due to not being (or feeling) sufficiently involved in the mission | - Stakeholder discussions to prepare mission
-Regular alignment on relevant actions of the mission
-emphasise the importance of their role in the Left Bank mission | - Representation in coordination consultation (see cabinets, company directors; K&L directorate and mission core team)
-Regular coordination on relevant actions of the mission  |
+|  Supralocal governments | European, federal, Flemish and provincial | High | High | Consultation | - Realise supra-local ambitions Support local governments from supra-local role Remove barriers in terms of regulatory framework | - Actively contribute to (an acceleration of the) mission by e.g. (steering) the adaptation of supra-local legislation or release of budgets (Stimulate) knowledge exchange | - Indifference with regard to "local mission" Political deadlock, meaning that the desired supra-local actions cannot be taken | Regular political and official meetings to identify bottlenecks and get them adjusted | - Representation in the coordination consultation (see NetZeroCities and VEKA) multilevel governance use existing consultation bodies at the official level EU mission to address bottlenecks in cooperation with other major cities (including non-mission cities). Invite to launch event Mission Left Bank Feb 2024 Website/newsletter  |
+|  City of Antwerp et al. local governments | City departments, subsidiaries, district and other local governments: AG Vespa, AG Stedelijk Onderwijs, AG Zorgbedrijf, etc. | High | High | Involve | - Co-execute decided policy Include agreed role in mission Possibility to test out actions for citywide rollout | Smooth and active cooperation to include (also in the context of decided policy) at least agreed role in mission | Insufficient cooperation to carry out agreed role due to not being (or feeling) sufficiently involved in the mission | - Stakeholder discussions to prepare mission Regular alignment on relevant actions of the mission emphasise the importance of their role in the Left Bank mission | - Representation in coordination consultation (see cabinets, company directors; K&L directorate and mission core team) Regular coordination on relevant actions of the mission  |
 
-2
-|   |  |  |  |  |  |  |  |  | - Invite to launch event Mission Left Bank Feb 2024
-Website/newsletter  |
+|   |  |  |  |  |  |  |  |  | - Invite to launch event Mission Left Bank Feb 2024 Website/newsletter  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Woonhaven Antwerp | Social housing company | High | High | Involve | - (Accelerated) realisation of the city's own stated ambitions in terms of energy-related renovation of the housing stock on the Left Bank
-Take care of and involve social tenants in the mission | In accordance with the importance of the mission for stakeholder itself (see column opposite) | Insufficient cooperation to carry out agreed role due to not being (feeling) sufficiently committed to mission
-Shift the focus on the energy-related renovation of the housing stock to another region | - Stakeholder discussions to prepare mission (already done)
-Regular alignment on relevant actions of the mission | - Representation in coordination consultation
-Regular coordination on relevant actions of the mission
-Invite to launch event Mission Left Bank Feb 2024
-Website/newsletter  |
-|  Infrastructure, transport and utilities | Aquafin, Electrabel, Fluvius, De Lijn, NMBS, etc. | High | High | Involve | - Realise (and accelerating) the city's own ambitions for sustainable transformation on the Left Bank
-Possibility to test out actions before citywide/national rollout | Actively contribute to realise (various) actions set up within the framework of the mission | Insufficient cooperation to carry out agreed role due to not being (or feeling) sufficiently involved in the mission | - Stakeholder discussions to prepare the mission
-Regular alignment on relevant actions of the mission
-Political consultation when needed or desired | - Representation in coordination consultation (Fluvius)
-Regular coordination on relevant actions of the mission
-Invite to launch event Mission Left Bank Feb 2024
-Website/newsletter  |
+|  Woonhaven Antwerp | Social housing company | High | High | Involve | - (Accelerated) realisation of the city's own stated ambitions in terms of energy-related renovation of the housing stock on the Left Bank Take care of and involve social tenants in the mission | In accordance with the importance of the mission for stakeholder itself (see column opposite) | Insufficient cooperation to carry out agreed role due to not being (feeling) sufficiently committed to mission Shift the focus on the energy-related renovation of the housing stock to another region | - Stakeholder discussions to prepare mission (already done) Regular alignment on relevant actions of the mission | - Representation in coordination consultation Regular coordination on relevant actions of the mission Invite to launch event Mission Left Bank Feb 2024 Website/newsletter  |
+|  Infrastructure, transport and utilities | Aquafin, Electrabel, Fluvius, De Lijn, NMBS, etc. | High | High | Involve | - Realise (and accelerating) the city's own ambitions for sustainable transformation on the Left Bank Possibility to test out actions before citywide/national rollout | Actively contribute to realise (various) actions set up within the framework of the mission | Insufficient cooperation to carry out agreed role due to not being (or feeling) sufficiently involved in the mission | - Stakeholder discussions to prepare the mission Regular alignment on relevant actions of the mission Political consultation when needed or desired | - Representation in coordination consultation (Fluvius) Regular coordination on relevant actions of the mission Invite to launch event Mission Left Bank Feb 2024 Website/newsletter  |
 |  Residents | - Regarding housing: both | High | Low | Support | - Make (accelerated) | - driving force to (accelerate) the | - Not involved or aware of | - Through interest groups, resident | - Future representation in coordination  |
 |   | tenants and (co-)owners - Regarding status/income: all residents, with special attention to vulnerable target groups |  |  |  | energy-related renovation of rental or own home feasible - Be aware of what is happening in own district in the context of the mission | energy-related renovation of homes - Where applicable, develop actions (with city support) to lower the barriers. - Raise awareness of energy consumption (in addition to renovation) | the mission - burden of energy-related renovation too high - reluctant to implement the actions from the climate plans | and leisure associations - Social housing residents: via Woonhaven | consultations (through civil society)? - Organise activities (or connect to existing activities) to inform, encourage (generate enthusiasm/nudging) and support residents - Website/newsletter  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Various companies on Left Bank | Retail and hospitality, limited number of businesses on Katwilgweg, medical practices, etc. | High | Low | Support | - Make (accelerated) energy-related renovation of rental or own premises feasible - Be aware of what is happening in own district in the context of the mission | - invest to (accelerate) energy-related renovations of buildings - Where applicable, develop actions (with city support) in (broad) framework to stimulate sustainability of own business activities. - Raising awareness of energy consumption | - Not involved or aware of the mission - burden of energy-related renovation too high - reluctant to implement the actions from the climate plans | - Organise relevant activities (info, questionnaire, etc.) with/by interest groups, sector federations, etc. | - Organise activities (or connect to existing activities) to inform and support businesses - Selectively invite to launch event Mission Left Bank Feb 2024 - Website/newsletter  |
 
-4
-|  Companies with offering in the context of Mission Left Bank | Innovative companies and start-ups: construction, technology, mobility, etc. | Low | High | Convince and Collaborate | - Focus on and/or test elaborated products or services with link to sustainability (with or without city support)
-Possibility to pioneer and bring in more (future-oriented) business
-Contribute to urban and broader sustainability ambitions | Actively contribute to realise (various) actions set up within the framework of the mission | Not involved or interested in or unaware of mission = missed (action) opportunities
-Economic feasibility of innovative projects is too low
-Regulatory framework is not supportive enough | - Launch project calls through in-house communication channels (K&L, B&I)
-Launch project calls through interest groups, sector federations, etc.
-consultation sessions with higher authorities to remove barriers. | - Representation in coordination consultation (Samen Klimaatactief, Flux50, ODE)
-Consultation sessions with higher authorities to remove barriers - Organise activities (or connect to existing activities) to generate enthusiasm among and support companies - Selectively invite to launch event Mission Left Bank Feb 2024
-Website/newsletter  |
+|  Companies with offering in the context of Mission Left Bank | Innovative companies and start-ups: construction, technology, mobility, etc. | Low | High | Convince and Collaborate | - Focus on and/or test elaborated products or services with link to sustainability (with or without city support) Possibility to pioneer and bring in more (future-oriented) business Contribute to urban and broader sustainability ambitions | Actively contribute to realise (various) actions set up within the framework of the mission | Not involved or interested in or unaware of mission = missed (action) opportunities Economic feasibility of innovative projects is too low Regulatory framework is not supportive enough | - Launch project calls through in-house communication channels (K&L, B&I) Launch project calls through interest groups, sector federations, etc. consultation sessions with higher authorities to remove barriers. | - Representation in coordination consultation (Samen Klimaatactief, Flux50, ODE) Consultation sessions with higher authorities to remove barriers - Organise activities (or connect to existing activities) to generate enthusiasm among and support companies - Selectively invite to launch event Mission Left Bank Feb 2024 Website/newsletter  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Project developers | In particular, Ghelamco (Katwilgweg business park) and Vooruitzicht NV (Regatta residential area and FAB181). | Low | High | Convince | - Be able to participate on a large scale in city-related (and broader) sustainability ambitions = also good for image
-Take advantage of opportunities regarding e.g. energy systems (renewable energy) | Actively contribute to realise (various) actions set up within the framework of the mission | Insufficient cooperation to perform agreed role due to not being (feeling) sufficiently committed to the mission | - Stakeholder discussions to prepare mission (already done)
-Regular alignment on relevant actions of the mission | - Organise activities (or connect to existing activities) to generate enthusiasm among and support project developers
-Selectively invite to launch event Mission Left Bank Feb 2024
-Website/newsletter  |
+|  Project developers | In particular, Ghelamco (Katwilgweg business park) and Vooruitzicht NV (Regatta residential area and FAB181). | Low | High | Convince | - Be able to participate on a large scale in city-related (and broader) sustainability ambitions = also good for image Take advantage of opportunities regarding e.g. energy systems (renewable energy) | Actively contribute to realise (various) actions set up within the framework of the mission | Insufficient cooperation to perform agreed role due to not being (feeling) sufficiently committed to the mission | - Stakeholder discussions to prepare mission (already done) Regular alignment on relevant actions of the mission | - Organise activities (or connect to existing activities) to generate enthusiasm among and support project developers Selectively invite to launch event Mission Left Bank Feb 2024 Website/newsletter  |
 |  Real estate sector: development | - Brokers - Building trustees | Low | High | Convince | - Gain additional opportunities from the mission to | In accordance with the importance of | Insufficient cooperation to carry out | - Stakeholder discussions to prepare mission | - Representation in coordination consultation (CIB)  |
-|  and management | - Real estate federations |  |  |  | encourage co-owners to carry out energy-related renovation of homes | the mission for stakeholder itself (see column opposite) | agreed role due to not being (or feeling) sufficiently involved in the mission | - Regular alignment on relevant actions of the mission | - Organise activities (or connect to existing activities) to generate enthusiasm among and support the real estate sector
-Selectively invite to launch event Mission Left Bank Feb 2024
-Website/newsletter  |
+|  and management | - Real estate federations |  |  |  | encourage co-owners to carry out energy-related renovation of homes | the mission for stakeholder itself (see column opposite) | agreed role due to not being (or feeling) sufficiently involved in the mission | - Regular alignment on relevant actions of the mission | - Organise activities (or connect to existing activities) to generate enthusiasm among and support the real estate sector Selectively invite to launch event Mission Left Bank Feb 2024 Website/newsletter  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Financial institutions | - Commercial banks
-Lenders | Low | High | Convince | - Focus on and/or test elaborated products or services with link to sustainability (with or without city support)
-Possibility to pioneer and bring in more (future-oriented) business
-Contribute to urban and broader sustainability ambitions | Set up new finance models to enable / accelerate certain actions in the mission | Insufficient cooperation to carry out agreed role due to not being (or feeling) sufficiently involved in the mission | - Stakeholder discussions to prepare the mission (largely completed)
-Regular alignment on relevant actions of the mission | - Organise activities (or connect to existing activities) to generate enthusiasm among and support the financial sector
-Selectively invite to launch event Mission Left Bank Feb 2024
-Website/newsletter  |
-|  Associations and organisations of all kinds (civil society) on Left Bank | Namely, interest groups, leisure and residents' associations | High | High | Involve | - Work towards a on better district and city-related (and broader) sustainability ambitions based on the city's operations
-Be informed and inform members | - Be part of the story to (accelerate) the energy-related renovation of homes
-Where applicable, develop actions in-house (with | - Not involved in or unaware of the mission
-(Organised or otherwise) refusal to contribute to the mission | - Organise relevant activities (info, questionnaire, etc.) with/by interest groups, sector federations, etc. | - Future representation in coordination consultations (on behalf of residents)?
-Organise activities (or connect to existing activities) to inform, survey and generate enthusiasm among civil society  |
+|  Financial institutions | - Commercial banks Lenders | Low | High | Convince | - Focus on and/or test elaborated products or services with link to sustainability (with or without city support) Possibility to pioneer and bring in more (future-oriented) business Contribute to urban and broader sustainability ambitions | Set up new finance models to enable / accelerate certain actions in the mission | Insufficient cooperation to carry out agreed role due to not being (or feeling) sufficiently involved in the mission | - Stakeholder discussions to prepare the mission (largely completed) Regular alignment on relevant actions of the mission | - Organise activities (or connect to existing activities) to generate enthusiasm among and support the financial sector Selectively invite to launch event Mission Left Bank Feb 2024 Website/newsletter  |
+|  Associations and organisations of all kinds (civil society) on Left Bank | Namely, interest groups, leisure and residents' associations | High | High | Involve | - Work towards a on better district and city-related (and broader) sustainability ambitions based on the city's operations Be informed and inform members | - Be part of the story to (accelerate) the energy-related renovation of homes Where applicable, develop actions in-house (with | - Not involved in or unaware of the mission (Organised or otherwise) refusal to contribute to the mission | - Organise relevant activities (info, questionnaire, etc.) with/by interest groups, sector federations, etc. | - Future representation in coordination consultations (on behalf of residents)? Organise activities (or connect to existing activities) to inform, survey and generate enthusiasm among civil society  |
 
-6
 |   |  |  |  |  | about what is happening in the city's districts in the context of the mission | city support) in the (broad) context of the mission: every little bit that saves energy helps - Inform members about what is happening in their own districts in the context of the mission and encourage them to take action |  |  | - Selectively Invite to launch event Mission Left Bank Feb 2024 - Website/newsletter  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Associations and organisations of all kinds (civil society) with an offering in the context of the mission | In particular the social dimension of the mission (participation, vulnerable target groups, etc.) | Low | High | Convince | - Focus on and/or test elaborated products or services with link to sustainability (with or without city support) - Possibility to pioneer and bring in more (future-oriented) business - Contribute to urban and broader sustainability ambitions | Actively contribute to realise (various) actions set up within the framework of the mission | Not involved or interested in or unaware of the mission = missed (action) opportunities | - Launch project calls through in-house communication channels (K&L, B&I) - Launch project calls through interest groups, sector federations, etc. | - Organise activities (or connect to existing activities) to generate enthusiasm among and support civil society - Selectively invite to launch event Mission Left Bank Feb 2024 - Website/newsletter  |
 |  Knowledge Institutions | University of Antwerp, VITO and other research | Low | High | Convince | - Focus on and/or test elaborated products or services with link | Actively contribute to realise (various) actions set up | Not involved or interested in or unaware of the mission | - Draft assignments - Launch project calls through in- | - Organise activities (or connect to existing activities) to generate enthusiasm among and  |
 
-7
-|   | institutions and knowledge centres (in the broad sense) |  |  |  | to sustainability (with or without city support)
-Possibility to pioneer and bring in more (future-oriented) business
-Contribute to urban and broader sustainability ambitions
-jointly focus on grant project calls relating to climate transition | within the framework of the mission | = missed (action) opportunities | house communication channels (K&L, B&I)
-Launch project calls through interest groups, sector federations, etc.
-Ask to share knowledge and expertise | support knowledge institutions
-sign declaration of commitment
-Selectively Invite to launch event Mission Left Bank Feb 2024
-Website/newsletter  |
+|   | institutions and knowledge centres (in the broad sense) |  |  |  | to sustainability (with or without city support) Possibility to pioneer and bring in more (future-oriented) business Contribute to urban and broader sustainability ambitions jointly focus on grant project calls relating to climate transition | within the framework of the mission | = missed (action) opportunities | house communication channels (K&L, B&I) Launch project calls through interest groups, sector federations, etc. Ask to share knowledge and expertise | support knowledge institutions sign declaration of commitment Selectively Invite to launch event Mission Left Bank Feb 2024 Website/newsletter  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Other stakeholders | Surrounding municipalities, other mission cities, international associations and organisations, etc. | Low | Low | Inform | Be aware of and/or learn from successful (or unsuccessful) actions in the Mission Left Bank | Knowledge exchange to adjust or accelerate the mission | For surrounding municipalities : dissatisfaction with / protest against action(s) from the mission | - Ask to share knowledge and expertise | - Incorporate consultation sessions
-Selectively Invite to launch event Mission Left Bank Feb 2024
-Website/newsletter  |
+|  Other stakeholders | Surrounding municipalities, other mission cities, international associations and organisations, etc. | Low | Low | Inform | Be aware of and/or learn from successful (or unsuccessful) actions in the Mission Left Bank | Knowledge exchange to adjust or accelerate the mission | For surrounding municipalities : dissatisfaction with / protest against action(s) from the mission | - Ask to share knowledge and expertise | - Incorporate consultation sessions Selectively Invite to launch event Mission Left Bank Feb 2024 Website/newsletter  |
 
-8
 # A-3.2: System mapping
 
 # Introduction
@@ -1111,7 +920,7 @@ The systems analysis was built step by step. It started from the five thematic a
 
 The focus of this first phase of the mission to climate neutrality is the reduction of CO2 emissions from buildings and the shift to renewable energy. A system mapping workshop was prepared for the first two areas of action. This exercise aimed to uncover interconnections and key patterns and dynamics to enable systemic change and accelerate transitions by 2030.
 
-Two co-creative thematic workshops (approach using System Mapping Academy's Systems Mapping toolkit) were set up with the following builup:
+Two co-creative thematic workshops (approach using System Mapping Academy's Systems Mapping toolkit) were set up with the following buildup:
 
 Introduction to system mapping
 
@@ -1150,7 +959,6 @@ A second workshop explores the broad energy system and the factors affecting the
 # 1. CONTEXT &amp; PROBLEEMSTELLING
 
 ![img-34.jpeg](img-34.jpeg)
-2
 
 # 2. ONDERZOEKSVRAGEN
 
@@ -1167,9 +975,6 @@ Welke factoren beïnvloeden een stijging van hernieuwbare energieverbruik?
 Figure 1: Workshop with members of the Antwerp Climate Council
 
 The results of the workshops are system maps and sheets that name systemic levers for change and give rise to translation into actions. The results were presented and discussed with the members of the Climate Council of the City of Antwerp. Together with the many stakeholder discussions, this gathered valuable feedback for further shaping the mission. The sheets of the levers and system maps are attached as an annex
-
-3
-4
 
 NAAM HEFBOOM
 
@@ -1254,7 +1059,6 @@ The stakeholder interviews and system mapping (A-3.1, A-3.2) prompted the formul
 |  Market offering for finance collective renovation | B | The offering in the market for finance products for collective renovation is limited.  |
 |  High cost of renovations of social housing | B | Woonhaven has insufficient repayment capacity (via rental income) for the intended ambitions in terms of renovating the housing stock  |
 
-6
 |  High cost of renovating housing | B | Owners have insufficient financial resources to implement the necessary renovation goals. The current financial solutions are not currently sufficient to implement the desired acceleration  |
 | --- | --- | --- |
 |  Investment gap heat grid | B | At the supra-local policy level, no investments are envisaged for the rollout of the proposed heat grid in the Left Bank. There is currently a shortfall of around 30% in the finance for construction (via grid operator Fluvius ).  |
@@ -1264,14 +1068,13 @@ The stakeholder interviews and system mapping (A-3.1, A-3.2) prompted the formul
 |  Supralocal support tools are not tailored to target group | B | Supra-local support tools for renovation often do not take the specifics of co-ownership, the typology of the apartment building and the issues of split incentive sufficiently into account.  |
 |  No strict obligations for comprehensive renovation | B | There are no strict obligations for owners (renovation obligation D label) for comprehensive renovation  |
 |  Regulatory framework not adapted to climate transition | B | The intended transition to climate neutrality has a spatial impact (facade insulation, noise, etc.) on the neighborhood. The regulatory framework has often not yet adequately provided for this  |
-|  Pilot zone heating | O | The Left Bank was chosen as a pilotzone for the outroll of the city heating grid.  |
+|  Pilot zone heating | O | The Left Bank was chosen as a pilot zone for the rollout of the city heating grid.  |
 |  Insufficient inclusion in planning instruments | B | Climate-positivity isn’t supported by existing spatial planning instruments  |
 |  Prices of gas versus electricity |  | Currently, the price of electricity remains relatively more expensive than gas. This constitutes a brake on the energy transition  |
 |  Regulatory framework for energy sharing | B | The regulatory framework makes energy sharing within apartment buildings difficult to apply. This is a barrier on the acceleration of renewable energy generation in the district  |
 |  Limited capacity of the building sector | B | There is limited capacity in the building sector (construction companies, engineering firms, architects, etc.). This may be a barrier to achieving the renovation goals  |
 |  Older population | A | On average, the residents in the Linkoever are older than in the rest of the city. This could mean more changes in ownership in the coming years. Depending on how the renovation challenge is addressed, this can represent both an opportunity and a barrier  |
 
-7
 |  Difficulty introducing innovative products and services to co-owners' associations | B | The complex structure of a co-owners' association (VME) means that even a pilot project involves convincing a majority of owners to adopt an innovative approach.  |
 | --- | --- | --- |
 |  Split incentive of landlords | B | Landlords who make energy investments in rental properties do not themselves derive any added value from the decrease in energy costs, as they benefit the tenant.  |
@@ -1294,7 +1097,6 @@ The stakeholder interviews and system mapping (A-3.1, A-3.2) prompted the formul
 |  Insufficient embedding of climate positivity in planning tools | B | Climate positivity is not supported by sustainable planning tools (Spatial implementation plans, etc.).  |
 |  Regulatory framework for energy sharing | B | The regulatory framework makes energy sharing within apartment buildings difficult to apply. This is a barrier on the acceleration of renewable energy generation in the district  |
 
-8
 |  Compensation green infrastructure  |   |   |
 | --- | --- | --- |
 |  Barrier (B)/ Opportunity (O)/ Both (A) |  | Description  |
@@ -1345,7 +1147,6 @@ The city of Antwerp has a long tradition of co-creation and co-creative processe
 
 An important aspect in this regard is that ownership of the co-creative process is embedded in the city's operations. Within the Climate and Environment business unit of the city of Antwerp, the participatory model has been taken on board by the Governance and Innovation team. A community manager has been appointed within this team to steer the participatory process for the preparation and implementation of the Left Bank Mission. In addition to the project leader supervising the complete design and implementation of the Left Bank Mission, a heat director will also be appointed (more info in B.2 of the action plan) for the concrete implementation of heat plans in collaboration with residents. This function will also
 
-2
 involve intensive collaboration with relevant stakeholders and residents. From the operations of the Ecohuis, there is already intensive guidance for residents and vulnerable target groups on the Left Bank, to make energy-related renovations possible. In anticipation of the investment plan (see below), there are still opportunities to deepen financial guidance for the implementation of the mission.
 
 ## 2. Governance structure
@@ -1364,7 +1165,6 @@ In light of Left Bank Climate Neutral, the city multiplied the budget for calls 
 
 ## 4. Steering committee, transition team and coordination consultation of Left Bank Climate Neutral
 
-3
 The process for drafting the Left Bank City Climate Contract was described earlier in the overarching summary. Based on stakeholder discussions, an internal city steering committee was set up with official experts from different policy areas (mobility, climate and environment, public space, city management and others). This is needed to create a strong mandate and ownership from which to build strong support and partnership at the official and political levels. In addition, a Left Bank 2030 transition team was set up, with representatives from within and beyond the city's organisation, and representation from all major emission domains. This transition team will meet at several key moments in the Left Bank 2030 Coordination Consultation. This team approves the actions from the action portfolio and investment plan. In this way, we create support from within the sector, city services and political buy-in across party lines.
 
 ## 5. Innovation space Climate &amp; Environment
@@ -1379,7 +1179,6 @@ It goes without saying that the approach of the Innovation Space Climate &amp; E
 
 The implementation of the Left Bank Climate Contract will focus intensively on resident ownership. Citizens are the crucial link for the implementation of the actions from the action plan (e.g. connection to the heat grid, energy-related renovation of the residential sector, the switch to sustainable mobility, etc.). To get residents enthusiastic about the transition, it is important to generate support for the process. It is necessary to recruit Left Bank residents as local ambassadors, to tap into networks from within the district, and to develop a certain pride and ownership of Left Bank as a pilot area for climate transition. Citizen science projects, a festival on the energy transition, the idea of 'city makers', nudging tools (e.g. scoreboards for the reduction of $\mathrm{CO}^2$) are ideas circulating to generate enthusiasm about the process. There needs to be a focus on vulnerable target groups for whom the transition will clearly not
 
-4
 be straightforward. Seniors, large families, single-parent families, economically vulnerable families, disabled people, people with a mental vulnerability, etc. The climate transition must not lead to social exclusion. The following actions are envisioned:
 
 Roundtable discussions will focus on engaging stakeholder groups grouped together by similar contexts, challenges and needs.
@@ -1392,9 +1191,7 @@ Homeowners: Single-family homes at the Left Bank are often uniform houses on two
 
 We summarize the model of cooperation schematically below. The diagram is also provided as an annex.
 
-5
 ![img-45.jpeg](img-45.jpeg)
-7
 
 # Part B - impact pathways toward climate neutrality in 2030
 
@@ -1466,7 +1263,6 @@ In addition, social innovation (the development and implementation of new produc
 
 An acceleration of the renovation wave can be caused by removing barriers tied to a particular timing or schedule. Or by just capitalizing on opportunities in timing. This mission emphasizes capitalizing on tipping points.
 
-0
 For example, energy hubs form a buffer between a necessary renovation of a boiler room and a potential connection to a future heat network. An additional advantage is the saving of investment costs that can be invested in, for example, making the building envelope more sustainable. Buildings are thus made future-proof more quickly and the housing costs of vulnerable families are reduced.
 
 Turning moments can also be reinforced by low-threshold actions, such as the review and optimization of combustion installations that demonstrate that a building can already be heated at reduced temperature and owners are encouraged and included in the further switch to a heat pump or connection to the urban heat network.
@@ -1483,7 +1279,6 @@ The City of Antwerp's Energy House is housed in the EcoHouse. The EcoHouse Antwe
 
 A social heat transition plan is being drawn up. This builds on the renovation objectives of the city of Antwerp and the Strategic Energy Vision in which the Left Bank district was designated as a pilot zone for the rollout of a residual heat network by 2030. Within this heat transition plan, a future heat scenario and renovation scenario are worked out for the specific building typologies present in the district. Within the heat transition plan, a roadmap will be developed in which the necessary steps for renovation are indicated coupled with a timeline towards 2030. It is important here not only to make a technical analysis of the necessary investments, but also to draw up a participatory plan of what needs to happen within now and 5, 10 or 15 years. Understanding the path to 2030 and available support measures creates clarity about the activities required for building owners and tenants. Standard procedures and products can provide more insight and certainty for both demand (owners) and supply (suppliers and installers) and can reduce dependence on (external) study firms.
 
-1
 A Sustainable Heat Coordinator will be deployed in the Left Bank district who will be responsible for the implementation of the heat transition plan. Together with colleagues at the Antwerp Energy House, a mix of instruments such as advice, budget-neutral energy loans, renovation guidance for vulnerable target groups will be applied to achieve maximum implementation of a fossil-free Left Bank.
 
 ## Pathway 5: Learning from collective renovation projects
@@ -1504,7 +1299,6 @@ The heat transition plan goes one step further and determines for each building 
 
 ## Pathway 7: Experimenting on business sites
 
-2
 The tertiary sector itself represents a limited share of CO2 emissions in the Left Bank district. However, in the district there are 2 zones for activity where driven partners come together and experimentation becomes possible. For example, the renovated Katwilgweg site will be transformed into an energy-positive district and the Combori halls will become an innovation hub for new mobility concepts. In addition, efforts will be made to raise the awareness of stakeholders in the entire tertiary sector.
 
 ## 2. Maximum reduction of CO2 emissions in vehicles
@@ -1531,7 +1325,6 @@ A good urban climate policy looks beyond energy consumption on its own territory
 
 Solar energy offers great opportunities to evolve towards a CO2-neutral energy system in the long term. Electricity is a feasible and proven technology to capture and use that infinite amount of energy. Storage and transport is a necessary link between collection and use, given the irregular and
 
-3
 unpredictable availability. This is not yet obvious. Electrification will therefore go hand in hand with other technological developments such as energy storage, demand response and smart charging.
 
 The city is focusing on tools to map the solar potential of buildings. They show which buildings have a high solar potential and suitable roof construction and where investments achieve the most return at the lowest cost and the highest possible return. This gives owners of free roof surfaces insight into the technical and economic potential of their roof. In addition, the city offers advice through a 'solar broker' to activate owners of large roofs to install solar panels or storage systems.
@@ -1558,7 +1351,6 @@ Module B-2 contains the project description of each planned intervention and how
 
 The action portfolio of this mission will be structured according to the areas of action already formulated.
 
-4
 Within this structure, interventions were defined that aim to concretize how, across all areas of action, to achieve climate neutrality by 2030. Each intervention describes the effective way to achieve climate neutrality for the Left Bank district and by extension the city. In other words, the sum of all interventions must lead to climate neutrality in which at least 80% CO2 reduction is achieved.
 
 The actions and projects included in the interventions are necessary to remove the barriers on this path and accelerate them where necessary. The interventions are put into practice through breakthrough projects and strategic actions in the portfolio:
@@ -1579,9 +1371,9 @@ Area of action
 
 Making waste collection more sustainable
 
-MAT1.1 Pop-up container parks in the Linkersever district
+MAT1.1 Pop-up container parks in the Linkeroever district
 
-MAT1.2 Smart sorting lanes in the Linkersever district
+MAT1.2 Smart sorting lanes in the Linkeroever district
 
 # Circular economy support
 
@@ -1590,7 +1382,6 @@ MAT2.1 Breakthrough project CO2 neutral and CO2-reducing materials (Regatta and 
 MAT2.2 Breakthrough project circular building materials (Regatta)
 
 MAT2.3 Development of an assessment framework for the choice between renovation and new construction in the redevelopment of residential blocks
-0
 
 Realisation green infrastructures
 
@@ -1626,14 +1417,12 @@ Financial¹
 
 Actions:
 
-|  GEB1.1 | GEB1.1 - Collective neighbourhood renovation using fossil-free energy hubs
-Collective neighbourhood renovation using fossil-free energy hubs | City of Antwerp | Breakthrough project | Technology & Infrastructure  |
+|  GEB1.1 | GEB1.1 - Collective neighbourhood renovation using fossil-free energy hubs Collective neighbourhood renovation using fossil-free energy hubs | City of Antwerp | Breakthrough project | Technology & Infrastructure  |
 | --- | --- | --- | --- | --- |
 |  GEB1.2 | GEB1.2 - | City of Antwerp | Strategic action | Guidance and regulations  |
 
 ¹ Investment challenge based on the investment cost for the construction of the heat network excluding individual connections to individual buildings, cost/CO2 unit based on theoretical life of the heat network = 50 years
 
-2
 GEB1.1 - Collective neighbourhood renovation using fossil-free energy hubs
 
 # Definition
@@ -1660,7 +1449,6 @@ Limiting energy dependency
 Structural barrier(s) or lever/levers²
 
 ² See also Module A-3 Systemic Barriers and Opportunities for Climate Neutrality
-4
 
 ○ Opportunity to link heat network spatial planning of district
 ○ Opportunity to connect heat network infrastructure projects
@@ -1738,7 +1526,6 @@ Co-owners and property managers
 CAPEX: /
 OPEX: cost of project leader part of regular operation
 
-6
 Renovation of multi-family dwellings
 
 # Description
@@ -1761,19 +1548,16 @@ In the Left Bank district, 8 out of 10 residents live in a co-owned apartment bu
 
 # Actions
 
-|  Fout! Verwijzingsbron niet gevonden. | Façade insight | Breakthrough project | Finance  |
+|  Reference missing | Façade insight | Breakthrough project | Finance  |
 | --- | --- | --- | --- |
-|  Fout! Verwijzingsbron niet gevonden. | NON. Energy | Breakthrough project | Finance  |
-|  Fout! Verwijzingsbron niet gevonden. | Pixii | Breakthrough project | Guidance and regulations  |
-|  GEB2.4 - Implementation of the Left Bank Heat Transition Plan with new instruments and upscaling of renovation guidance
-
-**Definition** | City of Antwerp | Strategic action | Guidance and regulations  |
+|  Reference missing | NON. Energy | Breakthrough project | Finance  |
+|  Reference missing | Pixii | Breakthrough project | Guidance and regulations  |
+|  GEB2.4 - Implementation of the Left Bank Heat Transition Plan with new instruments and upscaling of renovation guidance **Definition** | City of Antwerp | Strategic action | Guidance and regulations  |
 | --- | --- | --- | --- |
-|  Fout! Verwijzingsbron niet gevonden. | City of Antwerp | Strategic action | Finance  |
-|  Fout! Verwijzingsbron niet gevonden. | City of Antwerp | Strategic action | Finance  |
-|  Fout! Verwijzingsbron niet gevonden. | KBC | Strategic action | Finance  |
+|  Reference missing | City of Antwerp | Strategic action | Finance  |
+|  Reference missing | City of Antwerp | Strategic action | Finance  |
+|  Reference missing | KBC | Strategic action | Finance  |
 
-8
 |  GEB2.8 - Reduction of property tax on energy renovation Definition Anyone in the city of Antwerp who heats their home or building fossil-free with a heat pump or a connection to the heat network can count on an exemption from the municipal surcharges on the property tax for six years. With this measure, the city wants to: · compensate for the (temporary) additional cost of heating with heat pumps (in anticipation of an "energy tax shift" that should allow heat pumps to run more cheaply than natural gas boilers); · give building owners who connect an existing building to a heat network the opportunity to recover their connection costs through tax relief; | City of Antwerp | Strategic action | Finance  |
 | --- | --- | --- | --- |
 |  GEB2.9 - Matchmaking and networking of professionals with associations of co-owners to reduce energy consumption Definition | Climate Active Together | Strategic action | Capacity building  |
@@ -1836,7 +1620,7 @@ Safe and affordable energy for all
 Improving the health and well-being of citizens
 Empowering communities and citizens
 Limiting energy dependency
-Structural barrier(s) or lever/levers6
+Structural barrier(s) or lever/levers
 Similar typologies that are representative of the city of Antwerp
 Large maintenance backlog of apartment buildings
 Adjustments to the electricity grid
@@ -1859,7 +1643,6 @@ Stakeholders involved:
 Co-owners and property managers
 
 See also Module A-3 Systemic Barriers and Opportunities for Climate Neutrality
-2
 
 # Costs/Benefit
 
@@ -1904,7 +1687,6 @@ Stakeholders involved:
 Co-owners and property managers
 
 ⁷ See also Module A-3 Systemic Barriers and Opportunities for Climate Neutrality
-4
 
 # Costs/Benefit
 
@@ -2133,7 +1915,6 @@ Construction Companies
 
 CAPEX (projectkost): To be determined
 
-0
 GEB2.9 - Matchmaking and networking of professionals with associations of co-owners to reduce energy consumption
 
 ## Definition
@@ -2193,13 +1974,12 @@ The family homes in the Left Bank district are mainly concentrated in a number o
 
 ## Actions
 
-|  Fout! Verwijzingsbron niet gevonden. | City of Antwerp | Breakthrough project | Capacity building  |
+|  Reference missing | City of Antwerp | Breakthrough project | Capacity building  |
 | --- | --- | --- | --- |
-|  Fout! Verwijzingsbron niet gevonden. | City of Antwerp | Strategic action | Guidance and regulations  |
+|  Reference missing | City of Antwerp | Strategic action | Guidance and regulations  |
 
 Investment challenge based on the investment cost for the renovation of all private family homes including own investment in fossil-free heating system (all electric), cost/CO2 unit based on theoretical lifespan of the building after renovation = 40 years
 
-2
 GEB3.1- Spatial-energetic future vision of unity neighbourhoods
 
 # Definition
@@ -2311,7 +2091,6 @@ The tertiary sector represents a limited share of CO2 emissions in the Left Bank
 
 ¹⁶ Investment challenge based on the investment cost for the renovation of all tertiary buildings including own investment in fossil-free heat system (all electric), cost/CO2 unit based on theoretical lifespan of the building after renovation = 40 years
 
-5
 GEB4.1 - From business park to creative hotspot to live and work
 
 ## Definition
@@ -2447,7 +2226,6 @@ The Antwerp Social Housing Agency is home to 44% of the inhabitants of the Left 
 
 Investment challenge based on the investment cost for the renovation of the entire residential patrimony woonhaven (19 residential towers Europark, family homes and multi-family homes) including own investment in fossil-free heat system (all-electric or connection to the heat network), cost/CO2 unit based on theoretical lifespan of the building after renovation = 40 years
 
-9
 GEB5.1 - Climate-neutral renovation of residential towers in the Europark social housing estate
 
 ## Definition
@@ -2542,7 +2320,6 @@ CAPEX (project cost): times to be determined during the research phase
 OPEX:
 Research phase: 250,000 euros spread over 2024 and 2025
 
-2
 GEB5.3 - Innovative (re)construction with a circular touch on Blancefloerlaan
 
 ## Definition
@@ -2636,7 +2413,6 @@ CAPEX (projectkost): /
 OPEX: 250,000 euros
 
 ²¹ See also Module A-3 Systemic Barriers and Opportunities for Climate Neutrality
-5
 Maximum CO2 reduction in vehicles
 
 An ambitious mobility policy not only results in a liveable and attractive city, it also has an impact on the reduction of CO2. We aim for a 50/50 modal split for passenger traffic. This means that by 2030, at least 50% of all journeys in the Antwerp transport region, expressed in passenger kilometres, will be made by bicycle, train, tram, bus, on foot, taxi, water bus, sharing systems, and a maximum of 50% by car. We offer a wide range of mobility options. At the same time, we are also tackling the infrastructure, so that it becomes pleasant and safer to cycle and easier to switch to sharing systems and public transport. The city is committed to a combination of car traffic, public transport, safe cycling networks and also transport by water. It will become increasingly attractive for visitors to park in a Park &amp; Ride on the outskirts of the city and to enter the city by public transport, taxi or a sharing system. In this way, together we will achieve this objective from the Alliance for the Future: a modal split of 50/50.
@@ -2647,7 +2423,6 @@ The Left Bank is home to many newcomers from outside the EU. Some of these new r
 
 Together, the 8,784 households on the Left Bank own 5,432 cars. This means that for 61.84% of households, the car is often the first option to get around. The share of the car in the commuting journeys of residents on the Left Bank is 43.9%, the share of sustainable modes is 56.1%. With these modal split figures, the Left Bank belongs to the tail group of Antwerp districts in terms of sustainable mobility. However, the share of the car in leisure-related travel shows a different picture: with 30.5% car use, the residents of the Left Bank are just in the top 5 of sustainable leisure movers.
 
-6
 Avoidance of motorized transportation (avoid)
 
 ## Description
@@ -2683,7 +2458,6 @@ Furthermore, the kilometres travelled by car can also be limited if the travelle
 | --- | --- | --- | --- | --- |
 |  MOB1.6 | Strengthening the walking and cycling network on the Left Bank (Scheldt Borders Master Plan) | City of Antwerp | Strategic action | Technology & Infrastructure  |
 
-8
 MOB1.1 - Intricate network of off-street parcel lockers and pick-up points
 
 ## Definition
@@ -2732,7 +2506,6 @@ Costs/Benefit
 CAPEX (project cost): to be determined at the start of the project
 OPEX: to be determined at the start of the project
 
-0
 MOB1.2 - Transhipment hub to supply traders and entrepreneurs more efficiently
 
 # Definition
@@ -2756,7 +2529,6 @@ An important barrier will be the volume of goods processed, and the willingness 
 
 Short term (1-4 years): Exploratory analysis and conversations, matchmaking, drawing up a business plan and start-up hub.
 Long-term (5 to 10 years): The hub is profitable and a fixed value within the Left Bank
-2
 
 # Implementation
 
@@ -2809,7 +2581,6 @@ Stakeholders involved: Construction sector, logistics service providers, jetty a
 CAPEX (project cost): Not yet in the picture
 OPEX: Not yet in the picture
 
-4
 MOB1.4 - Developing 'smart mobility links' that encourage the smart combination of means of transport
 
 ## Definition
@@ -2842,7 +2613,6 @@ Transport region
 De Lijn
 Shared mobility operators
 Mobility and Parking Antwerp
-6
 
 # Costs/Benefit
 
@@ -2884,7 +2654,6 @@ Stakeholders involved:
 CAPEX (projectkost):
 OPEX:
 
-7
 MOB1.6-Strengthening the walking and cycling network on the Left Bank (master plan Scheldt borders)
 
 ## Definition
@@ -2921,7 +2690,6 @@ Stakeholders involved:
 CAPEX (projectkost):
 OPEX:
 
-8
 Shift private car use to other modes (shift)
 
 # Description of intervention
@@ -2956,7 +2724,6 @@ Financial
 |  Introduction of minimum modal split of 60/40 to be adhered to for all major events | City of Antwerp | Supporting action | Policies & Regulations  |
 |  Organising cycling lessons for a target group with limited access to mobility (part of the 'Mobility Shop' project) | City of Antwerp | Supporting action | Learning and capacity building  |
 
-0
 MOB2.1 - Deploying an additional electric ferry between the banks of the Scheldt
 
 ## Definition
@@ -3018,9 +2785,6 @@ A new bicycle and pedestrian bridge adds to this system an essential fast and sm
 **Target group**: Cyclists
 **Scale of the action**: City of Antwerp
 **Stakeholders involved**: Maritime Coastal Service, Agency for Roads and Traffic, citizens' movements, civil society, etc.
-
-2
-3
 
 # Costs/Benefit
 
@@ -3152,7 +2916,6 @@ Financial
 | --- | --- | --- | --- |
 |  Accelerating the transition to fossil-free commercial vehicles | Employers of residents of Left Bank | Supporting action | Policies & Regulations  |
 
-8
 MOB3.1 - Stricter steps for the Low Emission Zone according to the implementing decree
 
 ## Definition
@@ -3186,7 +2949,6 @@ Stakeholders involved: De Lijn/subcontractors and Flanders
 CAPEX (projectkost): /
 OPEX: /
 
-9
 MOB3.2 - Accelerated transition to fossil-free public transport on the Left Bank from 2027
 
 ## Definition
@@ -3249,11 +3011,9 @@ Stakeholders involved: Private concessionaire appointed by MPA for installation 
 
 ## Costs/Benefit
 
-1
 CAPEX (projectkost): /
 OPEX: /
 
-2
 MOB3.4 - Accelerating the transition to fossil-free commercial vehicles
 
 ## Definition
@@ -3316,7 +3076,6 @@ In addition, Left Bank already has 16 stations for shared bicycles. The city is 
 |  MOB4.3 - Expanding the Velo bike sharing network | Stad Antwerpen | Strategic action | Technology and Infrastructure  |
 | --- | --- | --- | --- |
 
-5
 MOB4.1 - Car-sharing awareness campaign
 
 ## Definition
@@ -3398,7 +3157,6 @@ Stakeholders involved: Donkey Republic and scooter sharing providers (drop zones
 CAPEX (projectkost): €27.377,5 excl.btw, kost autodeelhub
 OPEX: NVT
 
-8
 MOB4.3 - Expanding the Velo bike sharing network
 
 ## Definition
@@ -3432,9 +3190,6 @@ Stakeholders involved: Residents and visitors of the Left Bank district
 
 CAPEX (project cost): €166,260.40 one-time investment cost
 OPEX: €58,106.60 /year
-
-9
-0
 
 ## Maximum reduction of CO2 emissions from materials
 
@@ -3838,7 +3593,6 @@ Stakeholders involved:
 CAPEX (projectkost):
 OPEX:
 
-4
 Realisation of energy-positive new construction projects
 
 ## Impact CO2
@@ -3995,7 +3749,6 @@ Scale of the action: Left Bank district
 
 CAPEX (project cost): to be determined
 OPEX:
-1
 
 # B-2.2: Concise Strategy for Residual Emissions
 
@@ -4012,7 +3765,6 @@ Antwerp is home to the largest integrated energy and chemical cluster in Europe.
 It starts with the capture and local transport of CO₂. This requires pipelines, as well as a common installation for the liquefaction of CO₂, units for interim storage, etc. Because Belgium does not have the suitable subsoil to store CO₂ underground, international cooperation is necessary. On the one hand, to transport CO₂ across borders and, on the other hand, to store it permanently in, among other things, empty gas fields under the sea.
 
 Antwerp@C foresees two avenues for cross-border CO₂ transport infrastructure. In a first phase, the CO₂ will be shipped in liquid form to depleted gas fields in the North Sea area. In addition, Antwerp@C is exploring the possibility of transporting CO₂ to the Netherlands via a pipeline in a second phase.
-2
 
 # Module B-3 Monitoring, Evaluation and Learning Indicators
 
@@ -4031,11 +3783,9 @@ B-3.1: Overview of indicators
 |  Overarching |  | t CO2 equivalent | GHG emissions from IPPU | Greenhouse gas emissions from industrial processes and product use within the city limits. | no figures available for the district Left Bank  |   |   |
 |  Realisation of green infrastructure | GRN | t CO2 equivalent | GHG emissions from AFOLU | The IPCC guidelines divide AFOLU emission activities into three categories: Livestock, Land, Aggregate Sources, and Non-Onshore CO2 Emission Sources. | - | -171,79 | -343,59  |
 
-3
 |  Overarching | % | Residual emissions | The difference between the city's GHG emissions inventory and the 2030 climate neutrality target. The Mission recommends as a guideline to aim for a level of 'residual emissions' within city limits by 2030 that does not exceed 20% of the baseline GHG inventory, with the possibility that the remainder can be accounted for using carbon sinks or credits. | 40% | 30% | 20%  |
 | --- | --- | --- | --- | --- | --- | --- |
 
-4
 ![img-51.jpeg](img-51.jpeg)
 Residuele CO2-emissies 2030 - SECAP
 B-3.2: Indicator metadata
@@ -4251,7 +4001,6 @@ The follow-up of the implementation of the urban Climate Contract Left Bank 2030
 
 The following project structure has been developed for further follow-up:
 
-3
 ![img-56.jpeg](img-56.jpeg)
 
 The city's internal Steering Committee Left Bank 2030 was established and consists of representatives of the relevant municipal services and political cabinets. The action plan and the project structure were initially presented to this steering committee in order to obtain a strong mandate within the City of Antwerp's own organisation. In the further process, this internal steering committee will ensure that the action and investment plan responds to the urban objectives at the right moments, so that cooperation is achieved both on the ground and behind the scenes of the mission.
@@ -4287,9 +4036,6 @@ The Transition Team creates the space for new opportunities, validating high amb
 ## Cultivating and nurturing collaboration
 The Transition Team works to build and maintain trust, strengthen the relationships between actors in the ecosystem. It manages and manages the space in which actors and stakeholders are located, communicate, and collaborate in a way that aims to foster a culture of shared, distributed leadership across the ecosystem. It facilitates the proximity of people, especially those whose experience, imagination, and understanding of problems differ from those who are most involved in decision-making. This proximity ensures that the transition is meaningful collaboration resulting in the input and buy-in needed for positive and sustainable impact
 
-6
-7
-
 |  C.1.1: Organisational interventions and governance  |   |   |
 | --- | --- | --- |
 |  Intervention | Definition | Responsible Entity  |
@@ -4315,45 +4061,35 @@ To enable climate neutrality by 2030, interventions at a supra-local level are a
 | --- | --- | --- | --- |
 |  Climate policy - general | Local Energy and Climate Pact | By strengthening each other, municipalities and Flanders can achieve a lot. The LEKP is potentially a good instrument for this purpose, but it can be improved.1) LEKP should take more account of the specificities of a large city when building sites. A city should be able to carry out a materiality analysis and determine priority sites and actions based on this. At present, a local government has to monitor all construction sites, while this is not possible for a large city. 2) The LEKP may result in local climate plans (SECAP) being better aligned with the Flemish Energy and Climate Plan. In this way, the LEKP can connect the local and supra-local climate plans. Local and supra-local are then better attuned to each other. 3) Local authorities cannot achieve the objectives for their own patrimony without financial support. This can be linked to the obligation of a strategic real estate policy. This is now optional in the LEKP. 4) Long-term certainty is needed for local authorities (e.g. 1 long-term pact instead of successive partial pacts, guarantee that LEKP funds remain at least at the same level). 5) Bottlenecks identified by local authorities must actually be dealt with. 6) Scope 3 can be included as an overarching principle, e.g. having regard to the Flemish efforts with regard to food strategy, recent EU policy, etc. | Flanders  |
 
-9
 |  Climate policy - general | Energy taxes and levies | Flemish and federal levies on electricity and gas must be adjusted. Taxes on fossil fuel gas are lower than on electricity. This needs to be reversed. It must also be possible to provide sufficient reliable, sustainable and affordable alternatives so that Matthew effects are avoided and the climate transition is inclusive. Heat pumps, for example, are severely disadvantaged. Furthermore, the fossil federal subsidy of 13 billion euros may be phased out annually. | Flanders / Federal  |
 | --- | --- | --- | --- |
 |  Climate policy - general | Monitoring and data access to climate policy | Demand for improved monitoring of climate policy and energy transition. A series of crucial indicators, such as the renovation rate of buildings, the number of vehicle kilometres cannot be entered. Also data on heating systems in buildings, fossil-free heating systems, the use of electricity for heat and charging electric cars... Missing. Local authorities, energy houses and property managers should have access to the EPC database for the buildings on their territory or under their management. | Flanders  |
 |  Climate and heat policy | Call Green Heat / Energy Decree | The existing subsidy framework for the roll-out of green heat is not sufficient for the roll-out of large-scale heat programmes. The budgets are too small and the procedure too ad hoc. The roll-out of district-wide heat infrastructure requires an adapted, and more extensive, framework. | Flanders  |
 |  Climate and heat policy | Phasing out natural gas | Depreciation of natural gas networks is currently still 50 years. Large parts of the natural gas network will have to be depreciated at an accelerated rate in the light of climate neutrality in 2050. It is best to adjust the depreciation now so that it can be borne by as many affiliates as possible. If that has to happen in, say, 2045, those burdens may fall on the weakest shoulders. Develop a Social Climate Plan in order to be able to claim the resources of the European Social Climate Fund. | Flanders / Federal  |
 
-0
 |  Climate and heat policy | Noise heat pumps | A sharp increase in noise nuisance complaints is expected during the roll-out of heat pumps. This can lead to resistance to heat pumps in densely populated areas. There is no regulation for most residential heat pumps in Vlarem. To prevent each municipality from drawing up its own regulations, it is better to develop a Flemish uniform regulation for all heat pumps (and not just those with an electrical capacity larger than 5 kW). | Flanders  |
 | --- | --- | --- | --- |
 |  Climate - energy renovation | Operation of Energy Houses | The Energy Houses play an important role where citizens can go with questions and solutions regarding the energy transition and renovation assignment. This could be further developed so that all citizens can benefit from it. | Flanders  |
 |  Climate - energy renovation | Financing energy renovation | The current financial instruments are insufficient to finance the major renovation and energy transition. There is a need for a large climate fund or transition fund (as in the Netherlands, for example) in which governments and private players and the EIB participate. Various forms of loans, pre-financing, on-bill-repayment, on-tax-repayment must be offerable. People with little or no access to the capital market should be included. Landlord-tenant situation needs to be resolved. "Warm rent" could be added as a solution. | Flanders / Federal  |
 |  Climate - energy renovation | Amendment of the Co-ownership Act | The energy renovation of apartment buildings is hampered by cumbersome decision-making procedures for ACOs. Concrete proposals are 1) the reintroduction of more flexible written decision-making (in addition to the annual mandatory general meeting) for interim decision-making, 2) the application of a normal majority instead of two-thirds for (energy) renovation works and 3) the publication of a list of legally required works that can be voted on by a simple majority. | Federal  |
 
-1
 |  Climate - energy renovation | Renovation by landlords | Housing units on the private rental market are lagging behind in energy renovation. Landlords should be given extra incentives to renovate. The reintroduction of the ban on indexation of rents for the most energy-guzzling homes (homes without EPC or with energy labels F, E and D) can help with this. This can be aligned with the energy labels in the stricter path of the renovation obligation when selling. It is also useful to impose an EPC obligation for all rented residential units, regardless of transfer or rental (as is also provided for non-residential buildings). | Flanders  |
 | --- | --- | --- | --- |
 |  Climate - energy renovation | Energy label multi-family homes | An EPC label at building level for apartment buildings (instead of EPC common parts) is necessary. This gives associations of co-owners a better picture of the totality of their building and the necessary (energy) renovation works. As a result, they can then jointly decide on the necessary investments. | Flanders  |
 |  Climate - energy renovation | Licences | Permits are a major barrier to the necessary acceleration of renovation. Exemption from the permit requirement for insulating on the outside of existing side walls, rear facades and roofs, by adding this to Article 2.1 of the Exemption Decree, which determines for which activities a reconstruction permit for urban development activities is not required. By exempting these works from the permit requirement, this accelerates the renovation by (1) removing barriers for citizens, (2) simplifying renovation supervision and (3) reducing the administrative burden of the municipal Permits Department. | Flanders  |
 
-2
 |  Renewable energy | Cost-reflective fees use grid | At present, no distinction is made between distribution network tariffs and charges according to proximity. Especially in apartment buildings, this discourages the exchange of locally generated energy. There is a need for cost-reflective levies and distribution costs when using the electricity grid. These should only be charged as soon as the generated energy leaves the building, and not charged between the different meters within the same building. A fair differentiation in the distribution network tariffs and levies will stimulate the local generation and exchange of energy. In this way, consumers will also be stimulated to participate in flexibility as much as possible. | Flanders  |
 | --- | --- | --- | --- |
 |  Renewable energy | Energy sharing (within an energy community) | Through energy sharing within an energy community, a greater potential of local renewable energy, flexibility and social inclusion in the energy transition can be achieved. However, due to the rapid and complex introduction of European legislation, separate from existing legislation and initiatives, its operationalisation is still accompanied by various structural obstacles. There is currently still a lot of uncertainty regarding the costs associated with energy sharing, which makes it a major challenge to build a business case. There is a need for a stable regulatory framework with clear roles and responsibilities for all market participants. Each within their own competences, these parties must have sufficient degrees of freedom in the concrete implementation of these roles and responsibilities, provided that they result in simple and transparent processes and efficient data exchanges between market parties. It is therefore necessary to ensure that additional fees are transparent and cost-reflective. | Flanders  |
 
-3
-|  Climate adaptation - green | Exemption from environmental permit when felling trees in residential areas | Flemish regulations regarding felling policy ensure that we, as a city, cannot take sufficiently strict action on the felling of high-quality private trees, resulting in a loss of climate benefits from trees. It is difficult for the city to make a trend break possible in the additional paving and 'deforestation' in the city. This felling policy is also at odds with the demand via LEKP to increase the tree area, and with the optimisation of the urban planning regulations as a climate tool.
-https://www.natuurenbos.be/vrijstellingen-stedenbouwkundige-vergunningsplicht-kappen-bomen-buiten-bos https://www.vrp.be/post/de-bouwcode-als-klimaattool | Flanders  |
+|  Climate adaptation - green | Exemption from environmental permit when felling trees in residential areas | Flemish regulations regarding felling policy ensure that we, as a city, cannot take sufficiently strict action on the felling of high-quality private trees, resulting in a loss of climate benefits from trees. It is difficult for the city to make a trend break possible in the additional paving and 'deforestation' in the city. This felling policy is also at odds with the demand via LEKP to increase the tree area, and with the optimisation of the urban planning regulations as a climate tool. https://www.natuurenbos.be/vrijstellingen-stedenbouwkundige-vergunningsplicht-kappen-bomen-buiten-bos https://www.vrp.be/post/de-bouwcode-als-klimaattool | Flanders  |
 | --- | --- | --- | --- |
 |  Climate adaptation - water | Groundwater regulations VLAREM | This groundwater regulation also determines the conditions for both temporary and permanent drainage. Although these changes are based on Lansink's ladder (first limit, then return, then reuse and only then discharge), it appears from the draft texts that in the case of contaminated groundwater (which is almost always the case in the city of Antwerp), deviations for return and reuse are less well worked out than those for discharge. | Flanders  |
 |  Climate adaptation - water | Infiltration Bonus | The drinking water bill currently consists of 3 parts: the purchase of drinking water, the municipal sanitation contribution (for the disposal of waste and rainwater) and the supra-municipal sanitation contribution (for the purification of waste water and part of the rainwater). The three parts are calculated on the basis of drinking water consumption, where the sanitation contribution is not fully linked to drinking water consumption. For example, the drainage of rainwater is more likely to be determined by the size of the connected pavement. An incentive should be provided via the water bill to drain little rainwater into the sewer system. | Flanders  |
 
-4
 |  Climate adaptation - water | Subsidies Blue Deal | Reusing circular water requires major investments. With the low price of drinking water and because the full risk of water shortages is not taken into account, the costs associated with circular water are often in the same order of magnitude as those of using drinking water. Financial support is needed to further support the development of circular water. | Flanders  |
 | --- | --- | --- | --- |
 |  Air quality | Domestic wood heating | A further reduction in emissions and concentrations of particulate matter (PM) and soot (BC) is necessary. According to the annual air quality report in the Antwerp conurbation, wood combustion is largely responsible for the concentrations of particulate matter and soot. The Green Deal for Domestic Wood Heating includes actions regarding the phasing out of fireplaces and the most polluting stoves, mandatory inspection and inspection of decentralized wood burning appliances and a Flemish urban planning regulation regarding exhausts of wood burning appliances. These actions have yet to be implemented in concrete terms. | Flanders  |
-
-5
-6
 
 # Module C-4 Financing of the Action Portfolio
 
@@ -4362,7 +4098,6 @@ Within the action plan, the link has already been made to financing for climate 
 However, we know from practice that simply having these financial resources available is insufficient to achieve the climate goal. There is an additional need for investments in the systemic levers to get the interventions (behaviourally) activated. The levers are used through the roll-out of concrete breakthrough projects and the provision of strategic actions. The support of the interventions comes at a cost. The total cost of all these levels leads to the practical cost of achieving climate neutrality. The cost of all interventions, strategic actions and breakthrough projects can be found in the action sheets in Chapter B-2 and a tabular overview is given in the investment plan. as well as a tabular overview in the Investment Plan.
 
 The explanation of these costs is followed in the investment plan by a gap analysis and how the financial gap can be bridged.
-7
 
 # Outlook and next steps
 
@@ -4441,16 +4176,12 @@ Annex A-3.5 Systeemmap_Koolstofvrije_energievoorziening.pdf
 Annex A-3.6 Overzicht_systeemanalyse.jpg
 Annex A-3.7 Participatiemodel.jpg
 Annex B-1.1 Theorie_van_verandering.jpg
-A
 
 # CLIMATE CITY CONTRACT:
 
 Commitments
 
 Antwerpen voor Klimaat
-1
-
-Antwerpm
 
 # Content
 
@@ -4480,12 +4211,7 @@ The ambition to achieve climate neutrality for this district goes hand in hand w
 
 New infrastructure for sustainable mobility will be integrated. The involvement of citizens in the mission will be of great importance. Their involvement is the cornerstone for the climate-neutral and resilient transformation of the area. The city already has a thorough advisory policy in the field of energy renovation and will significantly strengthen its operational capacities in the coming years. The pursuit of climate neutrality goes hand in hand with an effort to increase social cohesion and quality of life at district level. In the Europark Master Plan, the new landscape design forms a connection between the green and blue spaces of the district, while the building volume and residential and functional densification increase in function of the housing shortage and mobility. Achieving climate neutrality on the Left Bank by 2030 will require a strong political commitment and additional resources at various levels. However, it is a realistic goal that can equitably transform the district into a leading district in terms of climate neutrality with due attention to the large presence of vulnerable target groups.
 
-3
 Antwerpen
-Zesem Klimaat
-4
-
-Antwerper Your Klimazt
 
 # 2. PRIORITIES AND STRATEGIC INTERVENTIONS
 
@@ -4515,12 +4241,6 @@ Citizen involvement: in order to achieve climate neutrality, numerous actions ar
 Feasibility: the choice for the Left Bank was deliberately based on the idea that an area-specific acceleration of innovation within a pilot area offers a realistic and workable scale. Beyond ideals, implementability, financing capacity and affordability (challenge) are taken into account for the implementation of the objectives.
 
 Quality of life: finally, analogous to the principles of the administrative agreement, the city strives for a connecting process that focuses on quality of life and is driven by a local, neighborhood-oriented process in which innovative solutions that are scalable to the rest of the city are worked on based on local needs.
-
-5
-
-Answering New Klimazt
-6
-Antwerper Your Klimazt
 
 ## 4. SIGNATURE
 

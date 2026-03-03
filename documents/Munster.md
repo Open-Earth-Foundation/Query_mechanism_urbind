@@ -889,7 +889,7 @@ A-2.1: List of relevant policies, strategies &amp; regulations
 | --- | --- | --- | --- | --- | --- |
 |  Law | national | Heat Planning and Decarbonisation of Heating Networks Act (WPG) | The Act lays the foundations for introducing a binding, nationwide heating planning system in Germany. The aim is to make the heat supply greenhouse gas neutral to help achieve the German government's 2045 climate protection targets (source: https://www.bmwsb.bund.de/SharedDocs/gesetz-gebungsverfahren/Webs/BMWSB/DE/kommunale-waermeplanung.html) The WPG and Building Energy Act are interlinked. | Very relevant | See A-2.2: Description & assessment of policies  |
 |  Law | national | Building Energy Act (GEG) | The GEG contains requirements for building energy ratings, the creation and use of energy performance certificates and the use of renewable energy in buildings. New buildings must achieve an annual primary energy use of just 55% that of a reference building. The GEG also aims to promote the replacement of heating systems. (Source: Federal Ministry of Housing, Urban Development and Building, URL: https://www.bmwsb.bund.de/Webs/BMWSB/DE/themen/bauen/energieeffizientes-bauen-sanieren/gebaeudeenergiegesetz/gebaeudeenergiegesetz-node.html)
-Local authorities play a role model function and must also fulfil specific requirements for public buildings, e.g. the use of renewable energy in new buildings and renovations. (Source: GEG) | Very relevant | See A-2.2: Description & assessment of policies  |
+| Local authorities play a role model function and must also fulfil specific requirements for public buildings, e.g. the use of renewable energy in new buildings and renovations. (Source: GEG) | Very relevant | See A-2.2: Description & assessment of policies  |
 |  Law | national | Federal subsidy for efficient | Federal funding for efficient buildings - BEG for short - combines previous funding programmes for energy efficiency improvements and renewable energy in the building sector and supports, among other things, the use of new heating systems, optimisation of existing heating systems, building envelope improvements and the use of optimised system technology. Funding comprises three sub- | Very relevant | See A-2.2: Description & assessment of policies  |
 
 0
@@ -918,7 +918,7 @@ A-2.1: List of relevant policies, strategies &amp; regulations
 | --- | --- | --- | --- | --- | --- |
 |   |  |  | In addition, on 29 July 2022, the Act stipulated that renewable energies are in the overriding public interest and serve public safety. This is crucial for increasing the pace of expansion. As a result, they will take precedence over other interests when weighing up decisions in future. This enables a significant acceleration in planning and authorisation procedures. (Source: https://www.bundesregierung.de/breg-de/schwerpunkte/klimaschutz/novelle-eeg-gesetz-2023-2023972) |  |   |
 |  Law | national | Building Code | Planning law as set out in the building code has far-reaching consequences for the construction and use of renewable energy systems. It primarily regulates when these systems can be installed under planning law, and is binding on federal states and local authorities. For example, the code allows zoning of areas where the construction of specific renewable energy plants, such as wind turbines, hydrogen plants and photovoltaic systems, can be prioritised.
-To further accelerate/simplify expansion, from 1 January 2023, solar installations enjoy building law privileges within a specific framework (located in 200m strips along motorways and major railway lines, and agri PV installations which share space with agricultural, forestry or horticultural operations). (Source: https://www.gesetze-im-internet.de/bbaug/ 35.html) | Very relevant | See A-2.2: Description & assessment of policies  |
+| To further accelerate/simplify expansion, from 1 January 2023, solar installations enjoy building law privileges within a specific framework (located in 200m strips along motorways and major railway lines, and agri PV installations which share space with agricultural, forestry or horticultural operations). (Source: https://www.gesetze-im-internet.de/bbaug/ 35.html) | Very relevant | See A-2.2: Description & assessment of policies  |
 |  Law | regional | State building regulations | The State cabinet has approved the draft of the Second Act to Amend the State Building Code and sent it to the state parliament for further consultation and decision-making. The Act is due to come into force on 1 January 2024. Innovations relevant to climate protection:
 Wind energy: In future, building regulations will require that wind turbines are situated a specific distance from property boundaries and residential buildings. New is that this distance will | Very relevant | See A-2.2: Description & assessment of policies  |
 STADT
@@ -973,7 +973,7 @@ A-2.1: List of relevant policies, strategies &amp; regulations
 |  Type | Level | Name & Title | Description | Relevance | Need for action  |
 | --- | --- | --- | --- | --- | --- |
 |   |  |  | • Funding for building energy-efficiency improvements in local authorities (ERDF funding guideline)
-• Promotion of sustainable mobility; "ways2work" competition for environmentally friendly journeys to work |  |   |
+| • Promotion of sustainable mobility; "ways2work" competition for environmentally friendly journeys to work |  |   |
 |  Law | regional | Climate Adaptation Act NRW (KlAnG) | Setting climate adaptation targets; limiting the negative effects of climate change, increasing climate resilience and contributing to national and international climate adaptation efforts; based on the Paris Agreement | Very relevant | See A-2.2: Description & assessment of policies  |
 |  Policy | regional | Photovoltaic Open Space Ordinance - PVFVO | To realise climate protection goals, this Ordinance aims to boost the expansion of photovoltaics. To achieve this, the Ordinance expands tenders for ground-mounted photovoltaic systems on arable land and grassland in disadvantaged areas, while safeguarding the interests of agriculture, and nature and landscape conservation. | Very relevant | See A-2.2: Description & assessment of policies  |
 |  Law | regional | Bicycle and Local Mobility Act (FaNaG) | The aim of this Act is to improve cycling and other forms of local mobility in the State of North Rhine-Westphalia and contribute to sustainable mobility. The aim is to make cycling throughout the state sufficiently attractive that more people will choose to cycle in their everyday lives. The aim is to make so that 25 per cent of journeys are made by bicycle. Cycle tourism can also make a contribution to achieving this. Cycling is to be boosted both as an environmentally and climate-friendly means of transport in its own right and as an essential component of intermodal mobility chains, particularly in | Very relevant | See A-2.2: Description & assessment of policies  |
@@ -1004,7 +1004,7 @@ A-2.1: List of relevant policies, strategies &amp; regulations
 | --- | --- | --- | --- | --- | --- |
 |   |  |  | • Electric and fuel cell vehicles for local authorities: The successful previous vehicle subsidy for local authorities is being expanded to include commercial vehicles in vehicle classes N2 and N3, which are used in non-commercial local authority departments. Funding amounts to 80 per cent of the additional investment costs for the procurement of battery-electric or fuel cell vehicles, up to a maximum of 400,000 euros per vehicle. |  |   |
 |  Strategy | local | Master-plan 100% climate protection | The Master Plan 100% Climate Protection from 2017 showcases the City of Münster's possibilities, opportunities and potential in the climate protection field and outlines scenarios for achieving the goal of climate neutrality by 2050. Since 2019, however, the goal has been updated to climate neutrality by 2030.
-https://www.stadt-muenster.de/sessionnet/sessionnetbi/getfile.php?id=410952&type=do | Very relevant | See A-2.2: Description & assessment of policies  |
+| https://www.stadt-muenster.de/sessionnet/sessionnetbi/getfile.php?id=410952&type=do | Very relevant | See A-2.2: Description & assessment of policies  |
 |  Strategy | local | Münster climate neutrality concept study 2030 | In 2019, Münster City Council declared a climate emergency and set itself the goal of achieving climate neutrality by 2030. The Climate Neutrality 2030 concept study was subsequently drawn up and adopted by the Council. It describes a potential theoretical path to climate neutrality by 2030 and associated challenges and scope for action: https://www.stadt-muenster.de/sessionnet/sessionnetbi/getfile.php?id=488057&type=do | Very relevant | See A-2.2: Description & assessment of policies  |
 STADT
 
@@ -1032,8 +1032,7 @@ A-2.1: List of relevant policies, strategies &amp; regulations
 |  Type | Level | Name & Title | Description | Relevance | Need for action  |
 | --- | --- | --- | --- | --- | --- |
 |   |  |  | measures with lie within the city's scope for action are consistently implemented, a reduction in CO_{2} of approx. 38% compared to 1990 levels can be achieved by 2030. This corresponds to a cumulative reduction of approx. 250 thousand tonnes of CO_{2} in 2030. The measures must be expanded by a factor of 7.
-
-In approving the action programme for climate protection by 2030, in 2019 the Council passed a resolution that it should become climate-neutral as soon as possible, and by 2030 if possible. The measures from the action programme still represent the portfolio of measures, but the question arises as to how to adapt each measure for the 2030 target and how to prioritise them in light of highly dynamic technical and political framework conditions: https://www.stadt-muenster.de/sessionnet/sessionnetbi/getfile.php?id=448017&type=do |  |   |
+| In approving the action programme for climate protection by 2030, in 2019 the Council passed a resolution that it should become climate-neutral as soon as possible, and by 2030 if possible. The measures from the action programme still represent the portfolio of measures, but the question arises as to how to adapt each measure for the 2030 target and how to prioritise them in light of highly dynamic technical and political framework conditions: https://www.stadt-muenster.de/sessionnet/sessionnetbi/getfile.php?id=448017&type=do |  |   |
 |  Action plan | local | Ad hoc measures (Annex: Münster Climate Neutrality 2030 Concept Study) | A list of ad hoc measures was adopted at the council meeting on 29/09/2021 together with the concept study "Münster Climate Neutrality 2030" (V/0628/2021). The Administration reports regularly on the implementation status of the list of measures, most recently in June 2023 (V/0322/2023). As described in the original submission, the measures were determined on the basis of expert recommendations and supplemented by further selected measures from the ongoing internal City Group climate protection process: https://www.stadt-muenster.de/sessionnet/sessionnetbi/getfile.php?id=529594&type=do | Very relevant | See A-2.2: Description & assessment of policies  |
 
 9
@@ -1048,7 +1047,7 @@ A-2.1: List of relevant policies, strategies &amp; regulations
 |  Type | Level | Name & Title | Description | Relevance | Need for action  |
 | --- | --- | --- | --- | --- | --- |
 |  Action plan | local | Climate adaptation action plan 2030 | Climate adaptation action plan 2030 (V/0799/2019/1)
-Climate adaptation policy work programme (V/0075/2023): https://www.stadt-muenster.de/session-net/sessionnetbi/getfile.php?id=523562&type=do | Very relevant | See A-2.2: Description & assessment of policies  |
+| Climate adaptation policy work programme (V/0075/2023): https://www.stadt-muenster.de/session-net/sessionnetbi/getfile.php?id=523562&type=do | Very relevant | See A-2.2: Description & assessment of policies  |
 |  Action plan | local | Climate-neutral administration 2030 action programme | The Climate Neutral City Administration 2030 programme of measures from 2021 describes 22 bundles of measures aimed at achieving climate neutrality in the Administration. The measures are spread across the fields of action "Mobility", "Buildings, energy, supply and disposal", "Procurement and events" and "Overarching measures": https://www.stadt-muenster.de/sessionnet/session-netbi/getfile.php?id=490812&type=do | Very relevant | See A-2.2: Description & assessment of policies  |
 |  Regulation | local | Münster's standard for climate-friendly construction | Münster City Council adopted "Münster's standard for climate-friendly construction" through a council resolution on 29 September 2021 (V/0434/2021), and extended it with a further resolution on 14 July 2022 (V/0319/2022). The standard is stipulated in all urban development contracts, land purchase contracts and leasehold contracts with the City of Münster. It includes requirements for the building energy standard and the use of solar energy in new builds. It currently applies to the construction of new residential and non-residential buildings. The aim is to reduce energy consumption in buildings, which currently accounts for around 30 per cent of CO2 emissions nationwide.
 Münster's standard for climate-friendly construction sets out the following requirements:
@@ -1141,11 +1140,9 @@ A-2.1: List of relevant policies, strategies &amp; regulations
 |  Type | Level | Name & Title | Description | Relevance | Need for action  |
 | --- | --- | --- | --- | --- | --- |
 |   |  |  | integrated approach taken by the energy utilisation plan, which in addition to municipal heat planning includes topics such as electricity, green gases and cooling, the city is going beyond the expected statutory regulations.
-
-The energy utilisation plan will help match expected long-term energy demand in Münster to a renewable energy-based supply infrastructure. This give rise to further conclusions for concrete measures such as the expansion and continued decarbonisation of the district heating supply and support services for homeowners. This will create planning and investment certainty for all Münster stakeholders. |  |   |
+| The energy utilisation plan will help match expected long-term energy demand in Münster to a renewable energy-based supply infrastructure. This give rise to further conclusions for concrete measures such as the expansion and continued decarbonisation of the district heating supply and support services for homeowners. This will create planning and investment certainty for all Münster stakeholders. |  |   |
 |  Policy | local | Support programme for residential buildings | The City of Münster promotes a wide range of measures to optimise the energy efficiency of residential buildings in the city. From building insulation and heating system replacement to ecological insulation materials, there are many ways to make an important contribution to reducing CO2 emissions in Münster. In addition, green roofs improve the city's water budget and reduce the urban heat island effect, delivering improved living conditions and making the city a better place to spend time.
-
-Since 1997, the City of Münster has been investing in building energy-efficiency improvements and has made a funding pot available to citizens. The funding programme has been relaunched annually and continuously expanded. https://www.stadt-muenster.de/klima/foerderprogramm | Very relevant | See A-2.2: Description & assessment of policies  |
+| Since 1997, the City of Münster has been investing in building energy-efficiency improvements and has made a funding pot available to citizens. The funding programme has been relaunched annually and continuously expanded. https://www.stadt-muenster.de/klima/foerderprogramm | Very relevant | See A-2.2: Description & assessment of policies  |
 |  Strategy | local | 100% RE for private households | By 2030, Stadtwerke Münster wants to supply all households in Münster with self-produced wind and solar power and also enable citizen participation to enable local people to share in the financial success of renewable projects. | Very relevant | See A-2.2: Description & assessment of policies  |
 
 5
@@ -1597,8 +1594,8 @@ Table 15 A-3.1: Systems &amp; stakeholder mapping
 • Urban development contracts
 • Property sales | • Introductory advice from the consumer advice centre: Free, provider-independent introductory advice from the consumer advice centre can address all questions relating to heating replacement, energy saving, energy-efficiency improvements, photovoltaics and energy-efficient new builds.  |
 |  Building and deep renovation: Municipal buildings | Municipality | • Economic factors (profitability gap)
-• Law and organisation | Direct:
-• Building guidelines | On 26 August 2020, the Council adopted the tabled bill on climate neutrality together with the revised building guidelines for Münster. The building guidelines apply to all council buildings. The aim is to create a building stock that is aligned with climate protection and sustainability. The city is thus also leading by example.  |
+| • Law and organisation | Direct: |
+| • Building guidelines | On 26 August 2020, the Council adopted the tabled bill on climate neutrality together with the revised building guidelines for Münster. The building guidelines apply to all council buildings. The aim is to create a building stock that is aligned with climate protection and sustainability. The city is thus also leading by example.  |
 |  Climate-friendly decision making | Citizens | • Economic factors
 • Social factors
 • Knowledge | Direct | • ClimateTraining: The city gives citizens the chance to systematically make their everyday lives more climate friendly through ClimateTraining. People taking part in ClimateTraining develop climate-friendly measures depending on their individual carbon footprint and supported by volunteer ClimateTrainers. Regular dialogue in small ClimateTraining groups and with many Münster-based providers helps participants implement these measures.  |
@@ -1621,10 +1618,10 @@ Climate Neutrality Action Plan
 identified during a tour of the company. Companies are also presented with specific solutions and recommendations for action and funding opportunities
 
 |  Energy supply & renewable energies : Power supply | Federal Market participants | • Economic factors (profitability)
-• Law and organisation | Direct/indirect | Introductory advice from the consumer advice centre: Free, provider-independent introductory advice service from the consumer advice centre is able to address all questions relating to replacement of heating systems, energy saving, energy-efficiency improvements, photovoltaics and energy-efficient new builds.  |
+| • Law and organisation | Direct/indirect | Introductory advice from the consumer advice centre: Free, provider-independent introductory advice service from the consumer advice centre is able to address all questions relating to replacement of heating systems, energy saving, energy-efficiency improvements, photovoltaics and energy-efficient new builds.  |
 | --- | --- | --- | --- | --- |
 |  Energy supply & renewable energies : District heating | Stadtwerke Münster | • Economic factors (profitability)
-• Law and organisation | Direct | Energy and product advice from Stadtwerke Münster/Stadtwerke Münster City Shop  |
+| • Law and organisation | Direct | Energy and product advice from Stadtwerke Münster/Stadtwerke Münster City Shop  |
 |  Energy supply & renewable energies : District heating : Property supply | Federal Market participants | • Economic factors (profitability)
 • Law and organisation
 • Social factors | Indirect/ direct | Energy and product advice from Stadtwerke Münster/Stadtwerke Münster City Shop  |
@@ -2238,13 +2235,13 @@ B-1.1: Impact Pathways
 |  Fields of action | Sys-temic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions | Indirect impacts (co-ben-efits)  |
 | --- | --- | --- | --- | --- | --- |
 |   |  |  | - Establishment of space-saving housing models |  | - More climate-resilient building stock
-Public spaces become more attractive places to spend time  |
+| Public spaces become more attractive places to spend time  |
 |  Built environment: Stock | Technology Infrastructure | - Strategy for achieving climate neutrality in 2030 for municipal buildings
 Municipal funding, advice, information and support for deep renovation projects
 Increased focus on neighbourhood redevelopment | - Increase in the deep renovation rate and deep renovation standard
 Close integration of deep renovation with spatial energy supply |  |   |
 |   |  Governance and policy | - Strategy for achieving climate neutrality in 2030 for municipal buildings
-Work- und Stadtbau deep renovation strategy |   |  |   |
+| Work- und Stadtbau deep renovation strategy |   |  |   |
 |   |  Finance and funding |  |   |  |   |
 
 Source: In house presentation
@@ -2637,7 +2634,7 @@ Climate Neutrality Action Plan
 The climate budget tool is intended to help us understand the impact of decisions regarding investments and financing on the climate.
 Yet, no local authority in Germany does have a climate budget. Therefore, a concept needs to be developed in order to interlink information on the budget and information on climate projects.  |
 |  Climate budget | Green bonds | In September 2021, the City Council of Münster resolved that the administration should initiate sustainable capital procurement via a green bond. The Green Bonds has been placed on the market in September 2022. Due to the great interest in the Green Bonds, the original volume of EUR 100 million was increased to EUR 140 million and allocated. It was pleasing that all maturities from 7 to 20 years met with interest from investors and could be serviced. A total of 16 investors subscribed to the green bonds. The first allocation and impact report on the green bond was published in September 2023. The report provides information on the use of funds (allocation report) and the sustainability impact of the financed investments and projects (impact report).
-The launch of a further green bond for 120 million euros is planned in 2024.  |
+| The launch of a further green bond for 120 million euros is planned in 2024.  |
 |  Education and food  |   |   |
 |  Education and food | Action plan for a sustainable food system Münster | -
 The goals of a sustainable food system are
@@ -2745,7 +2742,7 @@ Climate Neutrality Action Plan
 |   | List of actions | Descriptions  |
 |   |  | consisting of a mission statement and objectives, strategy, processes, structures, instruments and products for the development of holistic municipal circular economy strategies is being developed in the network of cities.  |
 |  Business and academia | Information and advice services on energy efficiency for companies | Climate protection consulting services for small and medium-sized companies focussing on energy saving and sustainable, efficient energy use based on renewable energies.
-Objective: to initiate very specific climate protection measures in companies. Low-threshold offer: no applications, forms, costs for the company.  |
+| Objective: to initiate very specific climate protection measures in companies. Low-threshold offer: no applications, forms, costs for the company.  |
 |  Waste & circular economy  |   |   |
 |  Waste & circular economy | Münster waste-free by 2030 | According to the Vision 2030, awm is striving for a waste-free Münster by 2030. Münster's waste management company wants to develop Münster into a capital of waste avoidance by 2030 by actively involving citizens and by a strong network of cooperation partners - including measures like projects with citizen participation, target group-oriented educational work, high-quality recycling of waste and partnerships for the generation of renewable energies. Consequent waste avoidance by urban society and innovative utilisation/recycling of the remaining waste make a fundamental contribution to reducing greenhouse gas emissions.  |
 |  Waste & circular economy | Pyrolysis as a potential expansion of processes for the utilisation of biowaste and/or green waste | In addition to the measures and projects outlined in the DNK (The German Sustainability Code) report, awm is examining further innovative technologies and methods in order to continuously optimise its processes and intensify its contribution to the bioeconomy and circular economy. One focus is currently on pyrolysis as a potential expansion of processes for the utilisation of biowaste and/or green waste. This negative emission technology (NET) could be utilized to produce biochar from biogenic waste such as fermentation residues and screen overflows from composting.  |
@@ -2842,7 +2839,7 @@ Climate Neutrality Action Plan
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Energy Systems  |
 |   |  Systemic lever | Technology
-Governance and policy  |
+| Governance and policy  |
 |   |  Outcome (according to module B-1.1) | Expansion of renewable energies  |
 |  Implementation | Responsible bodies/person for implementation | Stadtwerke Münster  |
 |   |  Action scale & addressed entities | City-wide supply of electricity  |
@@ -2874,7 +2871,7 @@ As part of an innovative, climate protection-oriented energy supply, Stadtwerke 
 The majority of these systems will be realised in the area of the City of Münster. This is achieved by creating customised offers for the following target groups "industry/commerce, the housing sector, the city of Münster and agriculture".  |
 |  Reference to impact pathway | Field of action | Energy systems  |
 |   |  Systemic lever | Technology
-Governance and policy  |
+| Governance and policy  |
 |   |  Outcome (according to module B-1.1) | Expansion of renewable energies  |
 |  Implementation | Responsible bodies/person for implementation | Stadtwerke Münster  |
 |   |  Action scale & addressed entities | Urban area  |
@@ -2952,7 +2949,7 @@ of which local + district heating according to the energy and greenhouse gas inv
 |  (Fill out one sheet per intervention/project)  |   |   |
 |  Action outline | Action name | Transformation plan for heat networks (in the context of federal funding for efficient heating networks (BEW); BEW transformation plan)  |
 |   |  Action type | Governance intervention
-Technical Intervention  |
+| Technical Intervention  |
 |   |  Action description | Target 2030:
 Stadtwerke Münster is continuing the transformation to a green district heating supply in Mün-  |
 STADT MÜNSTER
@@ -2967,7 +2964,7 @@ Climate Neutrality Action Plan
 |   |   |  Stadtwerke Münster's heating strategy consists of various decentralised renewable generation technologies, with the district heating network forming the backbone as an existing large-scale inner-city distribution structure that is to be further densified. Deep geothermal energy, which is a promising option in view of the geological situation, could become a major component of heat generation. Other leading technologies include solar thermal energy, electrical heat generation in power-to-heat plants, utilisation of environmental heat using large heat pumps (including from the Dortmund-Ems Canal and from wastewater) as well as seasonal large-scale heat storage systems. Some of these technologies are or will be located in the combined heating and power plant.  |
 |  Reference to impact pathway | Field of action | Energy Systems  |
 |   |  Systemic lever | Technology
-Governance and policy  |
+| Governance and policy  |
 |   |  Outcome (according to module B-1.1) | Decarbonisation of district heating  |
 |  Implementation | Responsible bodies/person for implementation | Stadtwerke Münster und Stadtnetze Münster  |
 |   |  Action scale & addressed entities | Urban area  |
@@ -3008,7 +3005,7 @@ Climate Neutrality Action Plan
 | --- | --- | --- |
 |   |  Action type | Technological Intervention  |
 |   |  Action description | Target 2030:
-In 2030, Stadtwerke Münster plans to put the first geothermal heating plant with a borehole into operation and feed up to 40 GWh of climate-neutral energy into Münster's district heating network every year. Stadtwerke is achieving this by continuously exploring the actual potential of deep geothermal energy for Münster at a depth of 1,500 metres using 3D seismics and test drilling. Subsequently, the plan to scale up the utilization of deep geothermal energy by additional locations in the future will then be detailed and planning for the second drilling round will begin.  |
+| In 2030, Stadtwerke Münster plans to put the first geothermal heating plant with a borehole into operation and feed up to 40 GWh of climate-neutral energy into Münster's district heating network every year. Stadtwerke is achieving this by continuously exploring the actual potential of deep geothermal energy for Münster at a depth of 1,500 metres using 3D seismics and test drilling. Subsequently, the plan to scale up the utilization of deep geothermal energy by additional locations in the future will then be detailed and planning for the second drilling round will begin.  |
 |  Reference to impact pathway | Field of action | Energy Systems  |
 |   |  Systemic lever | Technology  |
 |   |  Outcome (according to module B-1.1) | Expansion of renewable energies  |
@@ -3033,7 +3030,7 @@ Climate Neutrality Action Plan
 | Action outline | Action name | Large heat pumps as all-rounders for environmental heating utilisation |
 | Action type | Technical intervention |
 | Action description | Target 2030:
-large heat pumps are to be put into operation by 2030. These utilise commercial and industrial waste heat, the Dortmund-Ems Canal and waste heat from sewage treatment plants. Together, these systems will generate up to 100 GWh of climate-neutral heat. |
+| large heat pumps are to be put into operation by 2030. These utilise commercial and industrial waste heat, the Dortmund-Ems Canal and waste heat from sewage treatment plants. Together, these systems will generate up to 100 GWh of climate-neutral heat. |
 | Reference to impact pathway | Field of action | Energy Systems |
 | Systemic lever | Technology |
 | Outcome (according to module B-1.1) | Expansion of renewable energies |
@@ -3067,7 +3064,7 @@ In 2030, ground-mounted solar thermal energy should be established in Münster, 
 Solar thermal energy could provide customers of Stadtwerke Münster with a completely climate-neutral district heating supply in summer and, from 2030, up to 50 GWh of heat per year could be generated with these systems. Summer surpluses are to be made usable by a seasonal thermal energy storage for the autumn.  |
 |  Reference to impact pathway | Field of action | Energy Systems  |
 |   |  Systemic lever | Technology
-Governance and policy  |
+| Governance and policy  |
 |   |  Outcome (according to module B-1.1) | Expansion of renewable energies  |
 |  Implementation | Responsible bodies/person for implementation | Stadtwerke Münster  |
 STADT MÜNSTER
@@ -3110,7 +3107,7 @@ Climate Neutrality Action Plan
 |  Reference to impact pathway | Field of action | Energy Systems  |
 | --- | --- | --- |
 |   |  Systemic lever | Technology
-Governance and policy  |
+| Governance and policy  |
 |   | Outcome (according to module B-1.1) | Developing efficient and climate-friendly heat supply in spatial contexts  |
 |  Implementation | Responsible bodies/person for implementation | Stadtwerke Münster GmbH  |
 |   |  Action scale & addressed entities | Neighbourhood / district level  |
@@ -3130,7 +3127,7 @@ Climate Neutrality Action Plan
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Energy Systems  |
 |   |  Systemic lever | Technology
-Governance and Policy  |
+| Governance and Policy  |
 |   |  Outcome (according to module B-1.1) | Expansion of renewable energies  |
 |  Implementation | Responsible bodies/person for implementation | Stadtnetze Münster  |
 |   |  Action scale & addressed entities | Power supply for the southern part of the City of Münster.  |
@@ -3241,19 +3238,18 @@ Climate Neutrality Action Plan
 2
 
 |   |  | developments at an early stage. The aim is to identify development areas for new housing and workplaces, to locate potential areas for a climate-neutral energy supply and, at the same time, to protect and further develop the city's high-quality open spaces as a key unique selling point. The aim is to create a sustainable framework for future spatial urban development and at the same time preserve Münster's ability to act with regard to future housing and workplace requirements.
-
-In this respect, the IFM process is intended to prepare a cross-departmental and interdisciplinary consideration of the different demands on the space, it is informal and is carried out proactively by the city.  |
+| In this respect, the IFM process is intended to prepare a cross-departmental and interdisciplinary consideration of the different demands on the space, it is informal and is carried out proactively by the city.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Energy Systems
-AFOLU  |
+| AFOLU  |
 |   | Systemic lever | Governance and policy
-Technology  |
+| Technology  |
 |   | Outcome (according to module B-1.1) | Expansion of renewable energies  |
 |  Implementation | Responsible bodies/person for implementation | Department of City Planning of the City Administration of Münster and City Council of Münster  |
 |   | Action scale & addressed entities | Urban area  |
 |   | Involved stakeholders | City administration, politics, Stadtwerke Münster und Stadtnetze Münster other relevant stakeholders (e.g. farmers), the public  |
 |   | Comments on implementation | Next steps:
-Council resolution on the concept (1st HY/2024);  |
+| Council resolution on the concept (1st HY/2024);  |
 |  Impact & cost | Generated renewable energy (if applicable) | none as an informal basis for planning; this will only be realised at a later date  |
 STADT MÜNSTER
 
@@ -3264,7 +3260,7 @@ C
 |   | Removed/substituted energy, volume, or fuel type | none as an informal basis for planning; this will only be realised at a later date  |
 | --- | --- | --- |
 |   |  GHG emissions reduction estimate (total) per emission source sector | • CO2e reduction potential - estimated utilisation of potential 50 % wind energy: total potential 84 MW capacity new build -> 42 MW capacity structural implementation -> 105 GWh/a (at 2,500 full utilisation hours/a) -> 38,850 t CO2e reduction/a (with emissions of 10 t CO2e/GWh wind power at 380 t CO2e/GWh averaged electricity mix)
-• 25 % FF solar: total potential 2,500 ha -> 625 ha structural implementation -> 377 GWh/a (at 0.67 MWp/ha and 900 MWh/MWp and a) -> 128,150 t CO2e reduction/a (with emissions of 40 t CO2e/GWh solar power minus 380 t CO2e/GWh averaged electricity mix)  |
+| • 25 % FF solar: total potential 2,500 ha -> 625 ha structural implementation -> 377 GWh/a (at 0.67 MWp/ha and 900 MWh/MWp and a) -> 128,150 t CO2e reduction/a (with emissions of 40 t CO2e/GWh solar power minus 380 t CO2e/GWh averaged electricity mix)  |
 |   |  Total costs and costs by CO2e unit | Processing costs: EUR 230,000  |
 
 B-2.2: Individual action outlines
@@ -3328,7 +3324,7 @@ Climate Neutrality Action Plan
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Built environments  |
 |   |  Systemic lever | Technology
-Governance and policy  |
+| Governance and policy  |
 |   |  Outcome (according to module B-1.1) | Energy saving, expansion of renewable energies  |
 |  Implementation | Responsible bodies/person for implementation | Münster city administration  |
 |   |  Action scale & addressed entities | Municipal buildings  |
@@ -3377,7 +3373,7 @@ Climate Neutrality Action Plan
 |   |  Action description | Standards for new construction and deep renovation measures for municipal buildings  |
 |  Reference to impact pathway | Field of action | Built Environment  |
 |   |  Systemic lever | Technology
-Governance and policy  |
+| Governance and policy  |
 |   |  Outcome (according to module B-1.1) | Energy saving, expansion of renewable energies  |
 |  Implementation | Responsible bodies/person for implementation | City administration of Münster  |
 |   |  Action scale & addressed entities | New buildings  |
@@ -3432,7 +3428,7 @@ Climate Neutrality Action Plan
 |  Action outline | Action name | Climate-friendly residential buildings funding programme  |
 |   |  Action type | Financial Intervention  |
 |   | Action description | Since 1997, the City of Münster has been in-vesting in the energy-efficient deep renovation of buildings and has made a funding pot availa-ble to citizens. Since then, the funding pro-gramme has been regularly updated and con-tinuously expanded.
-With its funding programme, the City of Münster promotes a wide range of measures to optimise the energy efficiency of residential buildings in the city. From building insulation and heating system replacement to green roofs and ecolog-ical insulation materials, there are many ways to make an important contribution to reducing CO2 emissions in Münster.  |
+| With its funding programme, the City of Münster promotes a wide range of measures to optimise the energy efficiency of residential buildings in the city. From building insulation and heating system replacement to green roofs and ecolog-ical insulation materials, there are many ways to make an important contribution to reducing CO2 emissions in Münster.  |
 |   | Field of action | Built Environment  |
 STADT MÜNSTER
 
@@ -3458,7 +3454,7 @@ Climate Neutrality Action Plan
 | --- | --- | --- |
 |   |  Involved stakeholders | Not specified  |
 |   |  Comments on implementation | Council proposal Q2 2024 - Roof surfaces of municipal properties to be fully equipped with PV
-In addition, PV systems have also been installed on existing buildings since 2019. Around €1 million per year is currently available for this; first resolution: V/0668/2018  |
+| In addition, PV systems have also been installed on existing buildings since 2019. Around €1 million per year is currently available for this; first resolution: V/0668/2018  |
 |  Impact & cost | Generated renewable energy (if applicable) | Still being developed  |
 |   | Removed/substituted energy, volume, or fuel type | Still being developed  |
 |   | GHG emissions reduction estimate (total) per emission source sector | Still being developed  |
@@ -3612,7 +3608,7 @@ Climate Neutrality Action Plan
 | Action outline | Action name | Expansion of mobility stations |
 | Action type | Technology |
 | Action description | The expansion of mobility stations is intended to improve the networking of modes of transport – especially in terms of eco-mobility.
-Once quality standards have been defined and a political decision has been made on the site concept, the plan is to gradually implement it from 2024 onwards. |
+| Once quality standards have been defined and a political decision has been made on the site concept, the plan is to gradually implement it from 2024 onwards. |
 | Reference to impact pathway | Field of action | Mobility |
 | Systemic lever | Technology |
 | Outcome (according to module B-1.1) | Expansion of the mobility stations and extension of the e-car sharing offer |
@@ -3631,7 +3627,7 @@ Council resolution on the mobile station site concept expected on 21 February 20
 Gradual implementation from 2024 onwards  |
 |  Impact & cost | Generated renewable energy (if applicable) | None  |
 |   |  Removed/substituted energy, volume, or fuel type | Saving fossil fuels by shifting motorised private transport to eco-mobility
-not quantifiable/ measurable  |
+| not quantifiable/ measurable  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | not quantifiable/ measurable  |
 |   |  Total costs and costs by CO2e unit | Not specified  |
 |  B-2.2: Individual action outlines  |   |   |
@@ -3655,7 +3651,7 @@ Climate Neutrality Action Plan
 |  Action outline | Action name | Cycle network 2.0  |
 |   |  Action type | Infrastructure  |
 |   |  Action description | The aim of the so-called "Cycle Network 2.0" is to achieve a hierarchisation and overall improvement of the city's cycling network. Focus is to increase the share of cycling in eco-mobility and thus reducing traffic-related CO2 emissions
-To this end, various recommendations for action were developed as part of the concept, which was submitted for political consultation at the beginning of 2024.  |
+| To this end, various recommendations for action were developed as part of the concept, which was submitted for political consultation at the beginning of 2024.  |
 |   | Field of action | Transport  |
 STADT MÜNSTER
 
@@ -3677,13 +3673,13 @@ Climate Neutrality Action Plan
 2
 
 |   | Outcome (according to module B-1.1) | - Establishment of climate-friendly mobility management in the city administration
-City administration as a role model  |
+| City administration as a role model  |
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | Münster city administration  |
 |   |  Action scale & addressed entities | Münster city administration  |
 |   |  Involved stakeholders | Mobility service providers (e.g. Stadtwerke Münster, local sharing providers)  |
 |   |  Comments on implementation | The guidelines are in effect since 12.12.2023 implemented and in use
-"Climate-neutral city administration" process  |
+| "Climate-neutral city administration" process  |
 |  Impact & cost | Generated renewable energy (if applicable) | none  |
 |   |  Removed/substituted energy, volume, or fuel type | Saving fossil fuels, shifting motorised private transport to eco-mobility not quantifiable/ measurable  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | approx. 3,000 tonnes  |
@@ -3711,7 +3707,7 @@ Climate Neutrality Action Plan
 |  Reference to impact pathway | Field of action | Transport  |
 |   |  Systemic lever | governance and policy  |
 |   |  Outcome (according to module B-1.1) | - Establishment of climate-friendly mobility management
-City as a role model  |
+| City as a role model  |
 |  Implementation | Responsible bodies/person for implementation | Münster city administration  |
 |   |  Action scale & addressed entities | Münster city administration  |
 |   |  Involved stakeholders | Mobility service providers (e.g. bicycle leasing providers, Stadtwerke Münster, ADFC)  |
@@ -3744,7 +3740,7 @@ Company car pooling  |
 |  Reference to impact pathway | Field of action | Transport  |
 |   |  Systemic lever | Technology  |
 |   |  Outcome (according to module B-1.1) | - Establishment of a climate-friendly mobility management
-City administration as a role model  |
+| City administration as a role model  |
 |  Implementation | Responsible bodies/person for implementation | Münster city administration  |
 |   |  Action scale & addressed entities | Münster city administration  |
 |   |  Involved stakeholders | Not specified  |
@@ -3772,7 +3768,7 @@ Climate Neutrality Action Plan
 |  Reference to impact pathway | Field of action | Transport  |
 |   |  Systemic lever | - Newly designed public transport service  |
 |   |  Outcome (according to module B-1.1) | - Further progress in the expansion of the Münsterland S-Bahn
-Electrification of regional rail transport  |
+| Electrification of regional rail transport  |
 |  Implementation | Responsible bodies/person for implementation | Münster city administration, Münsterland districts  |
 |   |  Action scale & addressed entities | Münster city area  |
 |   |  Involved stakeholders | Deutsche Bahn, transport associations (ZVM, NWL) and others  |
@@ -3831,8 +3827,7 @@ Climate Neutrality Action Plan
 8
 
 |   |  | ecological criteria for the procurement of goods, services, and trades. Moreover, this working group's task is also to propose a procedure for ensuring and monitoring compliance with these criteria in accordance with the law.
-
-The administration has proposed a guideline text to the working group and submitted it for discussion in the political realm with related stakeholders from civil society. Political representatives have commented on the draft of the guidelines that is now with the administration for revision so that the working group can then vote on which version to propose to the Council.  |
+| The administration has proposed a guideline text to the working group and submitted it for discussion in the political realm with related stakeholders from civil society. Political representatives have commented on the draft of the guidelines that is now with the administration for revision so that the working group can then vote on which version to propose to the Council.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Climate budget  |
 |   | Systemic lever | Governance  |
@@ -3841,7 +3836,7 @@ The administration has proposed a guideline text to the working group and submit
 |   | Action scale & addressed entities | Municipal group  |
 |   | Involved stakeholders | City group, provider  |
 |   | Comments on implementation | Comments of the administration;
-Council decision;  |
+| Council decision;  |
 |  Impact & cost | Generated renewable energy (if applicable) | Not applicable  |
 |   | Removed/substituted energy, volume, or fuel type | Not applicable  |
 |   | GHG emissions reduction estimate (total) per emission source sector | Not applicable  |
@@ -4009,7 +4004,7 @@ Climate Neutrality Action Plan
 6
 
 |   |  | and the sustainability impact of the financed investments and projects (impact report) : https://www.stadt-muenster.de/fileadmin/user_upload/stadt-muenster/20_finanzen_und_beteiligungen/pdf/Haushalt/Nachhaltige_Finanzierung/1AllokationsundWirkungsbericht.pdf
-The launch of a further green bond for 120 million euros is planned for 2024.  |
+| The launch of a further green bond for 120 million euros is planned for 2024.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Climate budget  |
 |   | Systemic lever | Financing  |
@@ -4233,7 +4228,7 @@ Climate Neutrality Action Plan
 |   |  Action scale & addressed entities | Schools in Münster  |
 |   |  Involved stakeholders | Schools, pupils  |
 |   |  Comments on implementation | Examine organisational forms for climate-friendly lunch catering (by the end of Q2 2024)
-Draft resolution for council committees on climate-friendly lunchtime catering (3rd quarter 2024)  |
+| Draft resolution for council committees on climate-friendly lunchtime catering (3rd quarter 2024)  |
 |  Impact & cost | Generated renewable energy (if applicable) | Not applicable  |
 |   |  Removed/substituted energy, volume, or fuel type | Not applicable  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | Not applicable  |
@@ -4421,7 +4416,7 @@ B-2.2: Individual action outlines
 |  Action outline | Action name | Hydrogen  |
 |   |  Action type | Technical innovation  |
 |   |  Action description | - As of April 2023, a Hydrogen Coordinator has been installed at the Technologieförderung Münster GmbH. The Hydrogen Coordinator is tasked with the development of a hydrogen strategy for the business location Münster.
-H2inBatCellProd (technology funding, Fraunhofer FFB, Westfalen AG, municipal utilities, municipal grids): Use of green hydrogen as an energy source for drying lines (Trockungsstrecken) and drying rooms (Trocknungsräume) in battery cell production  |
+| H2inBatCellProd (technology funding, Fraunhofer FFB, Westfalen AG, municipal utilities, municipal grids): Use of green hydrogen as an energy source for drying lines (Trockungsstrecken) and drying rooms (Trocknungsräume) in battery cell production  |
 |  Reference to impact pathway | Field of action | Business and academia  |
 |   |  Systemic lever | Innovation  |
 |   |  Outcome (according to module B-1.1) | Not applicable  |
@@ -4618,7 +4613,7 @@ B-2.2: Individual action outlines
 |  Action outline | Action name | Information and advice on energy efficiency  |
 |   |  Action type | Counselling  |
 |   |  Action description | Climate protection consulting services for small and medium-sized companies focussing on energy saving and sustainable, efficient energy use based on renewable energies.
-Objective: to initiate very specific climate protection measures in companies. Low-threshold offer: no applications, forms, costs for the company.  |
+| Objective: to initiate very specific climate protection measures in companies. Low-threshold offer: no applications, forms, costs for the company.  |
 |  Reference to impact pathway | Field of action | Business and university  |
 |   |  Systemic lever | Technology  |
 |   |  Outcome (according to module B-1.1) | Energy saving  |
@@ -6028,8 +6023,7 @@ Climate-Neutrality
 Commitments
 
 |   | Product Declarations (EPDs) back in 2015, which form the basis for planning sustainable buildings in accordance with building certification systems such as LEED, BREEAM or DGNB. In 2023, the company introduced a free collection service for its wooden pallets. Re-using pallets conserves resources, and reduces waste and CO_{2} emissions.
-
-The Münster site has been certified to DIN EN ISO 14001 (environmental management system) since 2000 and to DIN EN ISO 50001 (energy management) since 2014. Since 2015, the company has reduced energy consumption per cubic metre of end product by 27%. |  |  |  |   |
+| The Münster site has been certified to DIN EN ISO 14001 (environmental management system) since 2000 and to DIN EN ISO 50001 (energy management) since 2014. Since 2015, the company has reduced energy consumption per cubic metre of end product by 27%. |  |  |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  ATLANTIC Hotel Münster | The hotel is Green Sign certified and working on increasing its score to achieve an even better result.
 They are working on determining their CO_{2} footprint.
@@ -6063,7 +6057,7 @@ STADT MÜNSTER
 Climate-Neutrality Commitments
 
 |   | - 2023-2024: Conversion of the company car fleet to electromobility; one charging station has already been installed, a second will follow in 2024.
-2024 Planting of a wild meadow on the company site with the long-term goal of establishing a bee colony with the possibility of producing their own honey. |  |  |  |   |
+| 2024 Planting of a wild meadow on the company site with the long-term goal of establishing a bee colony with the possibility of producing their own honey. |  |  |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  Evangelischer Kirchenkreis Münster (Evangelical church circle Münster) | - Development of a climate protection concept for the church district
 Establishment of a climate protection fund
@@ -6143,7 +6137,7 @@ Climate-Neutrality Commitments
 |   | processes more sustainable and climate-friendly. |  |  |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  Katholische Hochschule Nordrhein-Westfalen, Abteilung Münster
-(Münster department of the Catholic University of Applied Sciences North Rhine-Westphalia) | The Münster section of the Catholic University of Applied Sciences North Rhine-Westphalia (katho) recognises the importance of sustainable action as an integral component of its responsibility to society and the environment. It is committed to developing concrete measures to support Münster's path to climate neutrality. The university's sustainability strategy, adopted in January 2024, provides a framework for specific measures and projects, such as the SUNRISE LAB. It was developed with the involvement of employees and students and aims to promote sustainable development in the areas of teaching, research and operations. The strategy is based on the principles of Christian social and environmental ethics and is geared towards global challenges such as climate change, resource scarcity and social injustice. The university intends to contribute to overcoming these challenges through concrete measures and initiatives. | Academia, local/regional | non-profit company with limited liability under German law (Katholische Fachhochschule gGmbH) | Claudia Prelle | Administrative management  |
+| (Münster department of the Catholic University of Applied Sciences North Rhine-Westphalia) | The Münster section of the Catholic University of Applied Sciences North Rhine-Westphalia (katho) recognises the importance of sustainable action as an integral component of its responsibility to society and the environment. It is committed to developing concrete measures to support Münster's path to climate neutrality. The university's sustainability strategy, adopted in January 2024, provides a framework for specific measures and projects, such as the SUNRISE LAB. It was developed with the involvement of employees and students and aims to promote sustainable development in the areas of teaching, research and operations. The strategy is based on the principles of Christian social and environmental ethics and is geared towards global challenges such as climate change, resource scarcity and social injustice. The university intends to contribute to overcoming these challenges through concrete measures and initiatives. | Academia, local/regional | non-profit company with limited liability under German law (Katholische Fachhochschule gGmbH) | Claudia Prelle | Administrative management  |
 |  Kleine Tat Services GmbH | This small company from Münster specialises in solutions for a climate and environmentally friendly lifestyle. With a team of mostly volunteers, they recently launched the "Kleine Tat" sharing app. The app organises sharing for existing groups such as families, groups of friends, work colleagues and neighbours, as well as for large communities such as clubs, | Share economy, local | Ltd. (Gesellschaft mit beschränkter Haftung) | Volker Schittny | Founder  |
 
 6
@@ -6179,7 +6173,7 @@ Each plant has an energy manager and a small energy team of three to four people
 They have been ISO 50001-certified for many years. ISO 16247 has been implemented in their buildings since 2020. |  |  |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  Lackmann | From talking to the trade, Lackmann found that there is a need for more practical training courses on using new technologies such as home energy management systems and heat pumps. In addition, there is a need to be able to integrate these systems into grid operators' the digital communication network operated by the grid operator. Demo systems in properties such as 'Grüner Weiler' have proven a useful concept. The target group would be tradespeople who install new technologies.
-Realising a demo system requires a network. As a full service provider for digital metering point operation, Lackmann can only be a contributor to such projects. The company is prepared to initiate and actively support such projects. | Buildings, education, local | Limited Partnership with Limited Company as General Partner (Gesellschaft mit beschränkter Haftung & Compagnie Kommanditgesellschaft) | Jürgen Blümer | Project coordinator  |
+| Realising a demo system requires a network. As a full service provider for digital metering point operation, Lackmann can only be a contributor to such projects. The company is prepared to initiate and actively support such projects. | Buildings, education, local | Limited Partnership with Limited Company as General Partner (Gesellschaft mit beschränkter Haftung & Compagnie Kommanditgesellschaft) | Jürgen Blümer | Project coordinator  |
 |  Landschaftsverband Westfalen-Lippe | Landschaftsverband Westfalen-Lippe (LWL) is a local authority association which employs more than 20,000 people | Buildings, mobility, education, local/regional | Public law corporation (Körperschaft des öffentlichen Rechts) | Dr. Georg Lunemann | Director  |
 
 9
@@ -6220,7 +6214,7 @@ Climate-Neutrality Commitments
 As well as city tours, they also offer simple bicycle taxi rides.
 Since 2019, Leezen Heroes has also operated in the cargo sector. They can deliver parcels, documents, pharmaceuticals and pretty much anything else that fits on a bicycle. All services are sustainable and environmentally friendly. | Mobility, local | Ltd. (Gesellschaft mit beschränkter Haftung) | Florian Voß | Managing director  |
 |  LEIHOTHEK Münster | This automated library of things enables users to borrow all the things they need only rarely. Save money, save space, conserve resources and live a more diverse life with the LEIHOTHEK concept: Items can be reserved and paid for online at www.leihothek.de. Users collect their item at one of the collection locations at their preferred time using a collection code. After use, users return the item to the collection location and are refunded their deposit and provided with a return receipt.
-An additional benefit is that the scheme meets the UN's sustainability goals for cities and municipalities. | Share economy, local | Company | Daniel Schaschek | Founder  |
+| An additional benefit is that the scheme meets the UN's sustainability goals for cities and municipalities. | Share economy, local | Company | Daniel Schaschek | Founder  |
 |  LVM Versicherung | LVM aims to avoid and reduce all emissions from their business activities to | Energy, resources and waste, | LVM Landwirtschaftlicher | Dr. Mathias Kleuker | Chairman of the Executive Board  |
 STADT MÜNSTER
 
@@ -6241,7 +6235,7 @@ Climate-Neutrality Commitments
 Work is primarily paperless and technicians use tablets, eliminating the need for timesheets.
 Any PC-based work uses the cloud, enabling employees to work from home. | Business, local | Ltd. (Gesellschaft mit beschränkter Haftung) | Marius Sommer | Managing Director  |
 |  Messe und Congress Centrum Halle Münsterland | Messe- und Congress Centrum Halle Münsterland continuously reviews the sustainability of its activities. Since 2010, the company has several times been Green Globe certified. The company considers helping to reduce its impact on the environment an essential part of its role as a business.
-The company will continue to offer solutions for their customers and work with partners to ensure that Messe- und Congress Centrum Halle Münsterland remains a truly sustainable event centre in future. This is reflected in their sustainability strategy through to 2030. | Business, local | Ltd. (Gesellschaft mit beschränkter Haftung) | Dr. Maria Näther | Managing director  |
+| The company will continue to offer solutions for their customers and work with partners to ensure that Messe- und Congress Centrum Halle Münsterland remains a truly sustainable event centre in future. This is reflected in their sustainability strategy through to 2030. | Business, local | Ltd. (Gesellschaft mit beschränkter Haftung) | Dr. Maria Näther | Managing director  |
 |  MExLab ExperiMINTE at the University of Münster | MExLab ExperiMINTe is an extracurricular STEM learning centre for children and young people at the University of Münster. In addition to STEM subjects, the focus is on interdisciplinary STEM topics, such as projects on education for sustainable development (ESD). The aim is to | Academia, education, local/regional | Public law corporation (Körperschaft des öffentlichen Rechts) | Ulrike Brandt | Managing director  |
 
 4
@@ -6252,7 +6246,7 @@ Climate-Neutrality Commitments
 5
 
 |   | combine scientific education of young people with developing social responsibility.
-It is positioned as an interface between STEM student labs, departments and extracurricular learning centres at the University of Münster and a large network of schools, companies, municipal institutions and associations in Münster and beyond. MExLab ExperiMINT e is also represented in the City of Münster's ESD network. |  |  |  |   |
+| It is positioned as an interface between STEM student labs, departments and extracurricular learning centres at the University of Münster and a large network of schools, companies, municipal institutions and associations in Münster and beyond. MExLab ExperiMINT e is also represented in the City of Münster's ESD network. |  |  |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  Mövenpick Hotel Münster | This year, the hotel will replace the ventilation systems in the restaurant and kitchen, and the water chiller (air conditioning, energy optimisation) for the kitchen, restaurant and banquet kitchen areas. In 2025, they will convert halls 1 to 3 and the pavilion rooms to LED lighting. (Only one area has been converted to date.). They are also planning to install a PV system for their building. This would significantly reduce the daytime base load. | Buildings, energy generation, local | Société anonyme (SA) | Patricia Nilsson | General Manager  |
 |  Nevalu - Dönne Malinowski Sieg GbR | This start-up promotes sustainable consumer behaviour by offering customisable 3D printed products made from 100% recycled materials, and giving customers the opportunity to convert their own plastic waste into reusable printing materials in their shop. The result is a unique shopping experience and increased awareness of sustainability | Resources and waste, local | Company under civil law (Gesellschaft bürgerlichen Rechts) | Loy Dönne | Managing director  |
@@ -6352,7 +6346,7 @@ STADT MÜNSTER
 Climate-Neutrality Commitments
 
 |   | environment, social affairs and governance.
-Detailed information on sustainability efforts can be found in the annual sustainability and business report on their website. |  |  |  |   |
+| Detailed information on sustainability efforts can be found in the annual sustainability and business report on their website. |  |  |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  WEICON GmbH & Co. KG | Responsible energy use:
 WEICON's head office in Münster has been using exclusively green electricity since the start of 2022.
@@ -8056,8 +8050,8 @@ Beiträge Unternehmen &amp; Institutionen
 # Klimaschutz in der Universitätsmedizin
 
 |  Institution
-Universitätsklinikum Münster (UKM) | Website
-www.ukm.de  |
+| Universitätsklinikum Münster (UKM) | Website |
+| www.ukm.de  |
 | --- | --- |
 |  Ansprechperson
 Lucienne Usztics |   |

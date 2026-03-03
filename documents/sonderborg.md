@@ -433,7 +433,7 @@ Sonderborg’s climate transition journey started in 2007 which is why 2007 is t
 |  Biogas | 0 |  |  |   |
 |  NOTE | Rail/air/maritime transport not included in the ProjectZero scope  |   |   |   |
 |  Waste | Emissions from waste, wastewater are included in A-1.6.
-Waste incineration for production of district heating is included in Buildings.  |   |   |   |
+| Waste incineration for production of district heating is included in Buildings.  |   |   |   |
 |  Industrial Process and Product Use (IPPU) | Insignificant |  |  | Insignificant  |
 |  Agricultural, Forestry and Land Use (AFOLU) | Insignificant |  |  | Insignificant  |
 |  Grid losses/ conversion |  |  |  | 255,000  |
@@ -916,9 +916,9 @@ Industry | **Overall:** Reducing cost, energy and decarbonising the DH networks 
 **Stakeholder:** Insights, learnings and new business development
 Creation of green jobs  |
 |  Electricity import | TSO
-Local electricity operator |  | Industry
-Citizens | 100% green electricity by 2030
-Creating a robust grid for electrification  |
+| Local electricity operator |  | Industry |
+| Citizens | 100% green electricity by 2030 |
+| Creating a robust grid for electrification  |
 |  Biogas | Nature Energy | Nature Energy
 Industry
 Citizens
@@ -1060,7 +1060,7 @@ Action Plan
 |   | Social innovation |  |  |  |   |
 | --- | --- | --- | --- | --- | --- |
 |   |  Democracy and participation | Various society groups involved in planning of CO2 neutrality | More groups from the society involved in the execution of the CO2 neutral vision
-High acceptance rate of tech.solutions in Sonderborg |   | Enhanced participatory culture  |
+| High acceptance rate of tech.solutions in Sonderborg |   | Enhanced participatory culture  |
 |   |  Governance innovation |  |  |   |   |
 |   |  Learning, capacity and capability building |  |  |   |   |
 |  Mobility & transport | Technological innovation and infrastructure | Key actors are identified, business models and investments for solutions are developed | New critical infrastructure being implemented
@@ -1069,7 +1069,7 @@ Noticeable change of vehicle fleet towards use of EVs, PHEVs and other alternati
 Green job creation
 New competencies and innovations  |
 |   |  Finance and funding | Financing of infrastructure
-Identifying barriers for financing | Increased financial support through national and international policies |   | Forming new policies with cross pressure support from EU  |
+| Identifying barriers for financing | Increased financial support through national and international policies |   | Forming new policies with cross pressure support from EU  |
 |   |  Social innovation | Co-creation and co-production have been initiated with both business players (NaboGo) and local NGOs (Mobilitetsforeningen). More mobility innovations are expected to happen. | Strong sense of ownership of solutions’ successful implementation within stakeholders, citizens |   | High rate of social inclusion, sense of community, job creation  |
 Sønderborg
 Udgå i verdensklasse
@@ -1078,16 +1078,16 @@ Action Plan
 7
 
 |   | Democracy and participation | Co-creation of solutions and coalition of actors / stakeholders | Ensuring solutions are carried out despite of the political scene in the future
-Very strong citizen engagement and participation |  | Increase common knowledge and competences
-Enhanced participatory culture  |
+| Very strong citizen engagement and participation |  | Increase common knowledge and competences |
+| Enhanced participatory culture  |
 | --- | --- | --- | --- | --- | --- |
 |   |  Governance innovation |  |  |   |   |
 |   |  Learning, capacity and capability building | Identification of need for capacity building
-Learning from other cities is set up including cooperation and sharing learnings | Knowledge sharing for both learning and disseminating purposes |   | Learning bridge the gap between the actions, ambitions and alignment of the goals  |
+| Learning from other cities is set up including cooperation and sharing learnings | Knowledge sharing for both learning and disseminating purposes |   | Learning bridge the gap between the actions, ambitions and alignment of the goals  |
 |  Waste & circular economy | Technological innovation and infrastructure | Key actors are identified, business models and investments for solutions are developed. | New sewage treatment plant implemented. | 6,534 t CO2-e expected to be reduced 2007-2030 | Increased biodiversity and marine environment in some of the fjords.
-Green job creation  |
+| Green job creation  |
 |   |  Finance and funding | Local financing. Possibilities of national and international financing is explored. | Local financing. Possibilities of national and international financing is explored. Attracting private capital in regards to waste water treatment inventions. | 3,252 t CO2 expected to be reduced 2022-2030.
-Further reducing Methane Emission on landfill. Reducing CO2 e emissions. Nitrous Oxide emissions from sewage water reduced. | Households finance the recycling and circular economy and reduction of Nitrous Oxide from wastewater due to local regulations. Waste and the circular economy for companies is market driven.  |
+| Further reducing Methane Emission on landfill. Reducing CO2 e emissions. Nitrous Oxide emissions from sewage water reduced. | Households finance the recycling and circular economy and reduction of Nitrous Oxide from wastewater due to local regulations. Waste and the circular economy for companies is market driven.  |
 |   |  Social innovation | Strong stakeholder engagement in planning and beginning of implementation. Second hand use and reuse of waste is immature and a big playground for new | Stakeholders are already strongly committed to achieving goals of actions that are ran by them with support from the |  | Social inclusion, improved wellbeing  |
 Sønderborg
 Udgå i verdensklasse
@@ -1101,8 +1101,8 @@ Action Plan
 |   |  Governance innovation | City administration / staff are adapting to newly proposed structures and processes | City administration / departments embedded within local stakeholder implementation |   | Highly adaptive governance based on strong local stakeholder cooperation  |
 |   |  Learning, capacity and capability building | The utility company and municipal department learn from peers and experts. Suppliers of technical equipment and solutions learn by cocreating with utility companies. | Knowledge sharing for both learning and developing more and better methods. |   | Business development and development of utility companies and municipalities.  |
 |  Built environment | Technological innovation and infrastructure | New technological advancements are identified for retrofit components and solutions | Implementation of solutions has picked up the pace | 522,197 t CO2 expected to be reduced 2007-2030
-,185 t CO2 expected to be reduced 2022-2030. | Higher rate of energy efficiency in buildings is achieved
-Green job creation  |
+| ,185 t CO2 expected to be reduced 2022-2030. | Higher rate of energy efficiency in buildings is achieved |
+| Green job creation  |
 |   |  Finance and funding | Financial support on national and international level is identified | Stronger financial support on national / international level. Special supporting programs for vulnerable citizens living in rural areas. |   | Larger part of the built environment is refurbished and less personal investments are needed. An energy efficient home has become the new normal when buying a house.  |
 |   |  Social innovation | All groups of society are included in the transition. The housing associations are lead | More social groups are actively participating in |   | Better quality of life, better air quality  |
 Sönderborg
@@ -1316,7 +1316,7 @@ Action Plan
 |  Impact & cost | Generated renewable energy (if applicable) | n/a  |
 |   | Removed/substituted energy, volume or fuel type | n/a  |
 |   | GHG emissions reduction estimate (total) per emission source sector | 3,300 t CO2e
-Surprising low carbon-impact considering the investments associated.  |
+| Surprising low carbon-impact considering the investments associated.  |
 |   | Total costs (CAPEX) and costs by CO2e unit | Please see CCC Investment Plan for more information.  |
 |  Action outline | Action name | **Construction of biogas plants**  |
 |   | Action type | Technical and systemic intervention  |
@@ -1345,7 +1345,7 @@ Action Plan
 |  Reference to impact pathway | Field of action | Production of green energy, Enablers  |
 |   | Systemic lever | #1, #2, #4,  |
 |   | Outcome (according to module B-1.1) | The PtX plant will contribute to Sonderborg’s green energy production, help offset residual emissions, feed the district heating and bring awareness among citizens and local stakeholders on the benefits of producing PtX in the area.
-Power-to-X production will be based on renewable energy from the Lillebælt Syd coastal near windturbine project and biogenic carbon (side product) from the local biogas production.  |
+| Power-to-X production will be based on renewable energy from the Lillebælt Syd coastal near windturbine project and biogenic carbon (side product) from the local biogas production.  |
 |  Implementation | Responsible bodies/person for implementation | European Energy and partners  |
 |   | Action scale & addressed entities | Municipal boundary  |
 |   | Involved stakeholders | ProjectZero, the municipality, Sonderborg Forsyning, Danfoss  |
@@ -1360,7 +1360,7 @@ Power-to-X production will be based on renewable energy from the Lillebælt Syd 
 |  Reference to impact pathway | Field of action | Production of green electricity, Enablers  |
 |   | Systemic lever | #1, #2, #4  |
 |   | Outcome (according to module B-1.1) | “Lillebælt syd” will contribute to Sonderborg’s green energy production and provide renewable electricity for the PtX-production and bring awareness among citizens and local stakeholders on the benefits of wind-power.
-OBS : Additional renewable electricity is scheduled to be produced on-shore based on either PV-parks or wind-turbines. 14 areas are pre-identified in the municipal strategiprocess – to be filtered/agreed with support from citizens and local stakeholders.  |
+| OBS : Additional renewable electricity is scheduled to be produced on-shore based on either PV-parks or wind-turbines. 14 areas are pre-identified in the municipal strategiprocess – to be filtered/agreed with support from citizens and local stakeholders.  |
 |  Implementation | Responsible bodies/person for implementation | Sonderborg Forsyning and European Energy (public-private partnership)  |
 Sønderborg
 Udgå i verdensklasse
@@ -1403,8 +1403,7 @@ Action Plan
 |  Reference to impact pathway | Field of action | Owner occupied homes, rented homes, SMEs, public buildings, brick manufacturers and big companies’ buildings and production  |
 |   | Systemic lever | #1, #2, #3, #4, #5, #6  |
 |   | Outcome (according to module B-1.1) | All natural gas boilers will be replaced either by district heating or heat pumps
-
-Strong financial support nationally and internationally combined with collaboration across private sectors and civil society has increased the pace of implementation of district heating and heat pumps. All natural gas boilers can therefore be abolished.  |
+| Strong financial support nationally and internationally combined with collaboration across private sectors and civil society has increased the pace of implementation of district heating and heat pumps. All natural gas boilers can therefore be abolished.  |
 |  Implementation | Responsible bodies/person for implementation | The hotspot owners of each of the “field of action”  |
 |   | Action scale & addressed entities | Municipal boundary  |
 |   | Involved stakeholders | Housing associations, private landlords, banks & financial institutes, SMEs, the municipality, ProjectZero  |
@@ -1478,12 +1477,12 @@ Action Plan
 |  Indicator Context |   |
 |  Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | Yes  |
 |  If yes, which emission source sectors does it impact? | Fields of action according to GHG inventory format – Module A-1
-Buildings  |
+| Buildings  |
 |  Does the indicator measure indirect impacts (i.e. co- benefits)? | No  |
 |  If yes, which co-benefit does it measure? |   |
 |  Can the indicator be used for monitoring impact pathways? | Yes  |
 |  If yes, which NZC impact pathway is it relevant for? | Impact Pathways according to - according to Module B-1
-Built environment  |
+| Built environment  |
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No  |
 |  Data requirements |   |
 |  Expected data source | Chimney sweepers, natural gas distribution company, BBR national system  |
@@ -1499,7 +1498,7 @@ Built environment  |
 |  Indicator Context |   |
 |  Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | Yes  |
 |  If yes, which emission source sectors does it impact? | Fields of action according to GHG inventory format – Module A-1
-Buildings  |
+| Buildings  |
 |  Does the indicator measure indirect impacts (i.e. co- benefits)? | No  |
 |  If yes, which co-benefit does it measure? |   |
 |  Can the indicator be used for monitoring impact pathways? | Yes  |
@@ -1527,12 +1526,12 @@ Action Plan
 |  Indicator Context |   |
 |  Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | Yes  |
 |  If yes, which emission source sectors does it impact? | Fields of action according to GHG inventory format – Module A-1
-Buildings  |
+| Buildings  |
 |  Does the indicator measure indirect impacts (i.e. co- benefits)? | No  |
 |  If yes, which co-benefit does it measure? |   |
 |  Can the indicator be used for monitoring impact pathways? | Yes  |
 |  If yes, which NZC impact pathway is it relevant for? | Impact Pathways according to - according to Module B-1
-Built environment  |
+| Built environment  |
 |  Is the indicator captured by the existing CDP/SCIS/ Covenant of Mayors platforms? | No  |
 |  Data requirements |   |
 |  Expected data source | Chimney sweepers, natural gas distribution company, BBR national system  |
@@ -1555,12 +1554,12 @@ Action Plan
 |  Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | Yes  |
 | --- | --- |
 |  If yes, which emission source sectors does it impact? | Fields of action according to GHG inventory format – Module A-1
-Buildings  |
+| Buildings  |
 |  Does the indicator measure indirect impacts (i.e. co- benefits)? | No  |
 |  If yes, which co-benefit does it measure? |   |
 |  Can the indicator be used for monitoring impact pathways? | Yes  |
 |  If yes, which NZC impact pathway is it relevant for? | Impact Pathways according to - according to Module B-1
-Built environment  |
+| Built environment  |
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No  |
 |  Data requirements |   |
 |  Expected data source | Natural gas distribution company, data taken directly from the companies  |
@@ -1576,12 +1575,12 @@ Built environment  |
 |  Indicator Context |   |
 |  Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | Yes  |
 |  If yes, which emission source sectors does it impact? | Fields of action according to GHG inventory format – Module A-1
-Buildings  |
+| Buildings  |
 |  Does the indicator measure indirect impacts (i.e. co- benefits)? | No  |
 |  If yes, which co-benefit does it measure? |   |
 |  Can the indicator be used for monitoring impact pathways? | Yes  |
 |  If yes, which NZC impact pathway is it relevant for? | Impact Pathways according to - according to Module B-1
-Built environment  |
+| Built environment  |
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No  |
 |  Data requirements |   |
 |  Expected data source | Natural gas distribution company, data taken directly from the companies  |
@@ -1604,12 +1603,12 @@ Action Plan
 |  Indicator Context |   |
 |  Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | Yes  |
 |  If yes, which emission source sectors does it impact? | Fields of action according to GHG inventory format – Module A-1
-Buildings  |
+| Buildings  |
 |  Does the indicator measure indirect impacts (i.e. co- benefits)? | No  |
 |  If yes, which co-benefit does it measure? |   |
 |  Can the indicator be used for monitoring impact pathways? | Yes  |
 |  If yes, which NZC impact pathway is it relevant for? | Impact Pathways according to - according to Module B-1
-Built environment  |
+| Built environment  |
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No  |
 |  Data requirements |   |
 |  Expected data source | Natural gas distribution company  |
@@ -1625,7 +1624,7 @@ Built environment  |
 |  Indicator Context |   |
 |  Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | Yes  |
 |  If yes, which emission source sectors does it impact? | Fields of action according to GHG inventory format – Module A-1
-Transport  |
+| Transport  |
 |  Does the indicator measure indirect impacts (i.e. co- benefits)? | No  |
 |  If yes, which co-benefit does it measure? |   |
 Sønderborg
@@ -1637,7 +1636,7 @@ Action Plan
 |  Can the indicator be used for monitoring impact pathways? | Yes  |
 | --- | --- |
 |  If yes, which NZC impact pathway is it relevant for? | Impact Pathways according to - according to Module B-1
-Mobility and transport  |
+| Mobility and transport  |
 |  Is the indicator captured by the existing CDP/SCIS/Covenant of Mayors platforms? | No  |
 |  Data requirements |   |
 |  Expected data source | National inventories  |
@@ -1653,12 +1652,12 @@ Mobility and transport  |
 |  Indicator Context |   |
 |  Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | Yes  |
 |  If yes, which emission source sectors does it impact? | Fields of action according to GHG inventory format – Module A-1
-Transport  |
+| Transport  |
 |  Does the indicator measure indirect impacts (i.e. co-benefits)? | No  |
 |  If yes, which co-benefit does it measure? |   |
 |  Can the indicator be used for monitoring impact pathways? | Yes  |
 |  If yes, which NZC impact pathway is it relevant for? | Impact Pathways according to - according to Module B-1
-Mobility and transport  |
+| Mobility and transport  |
 |  Is the indicator captured by the existing CDP/SCIS/Covenant of Mayors platforms? | No  |
 |  Data requirements |   |
 |  Expected data source | National inventories  |
@@ -1681,12 +1680,12 @@ Action Plan
 |  Indicator Context |   |
 |  Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | Yes  |
 |  If yes, which emission source sectors does it impact? | Fields of action according to GHG inventory format – Module A-1
-Transport  |
+| Transport  |
 |  Does the indicator measure indirect impacts (i.e. co- benefits)? | No  |
 |  If yes, which co-benefit does it measure? |   |
 |  Can the indicator be used for monitoring impact pathways? | Yes  |
 |  If yes, which NZC impact pathway is it relevant for? | Impact Pathways according to - according to Module B-1
-Mobility and transport  |
+| Mobility and transport  |
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No  |
 |  Data requirements |   |
 |  Expected data source | National inventories  |
@@ -1702,12 +1701,12 @@ Mobility and transport  |
 |  Indicator Context |   |
 |  Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | Yes  |
 |  If yes, which emission source sectors does it impact? | Fields of action according to GHG inventory format – Module A-1
-Buildings  |
+| Buildings  |
 |  Does the indicator measure indirect impacts (i.e. co- benefits)? | No  |
 |  If yes, which co-benefit does it measure? |   |
 |  Can the indicator be used for monitoring impact pathways? | Yes  |
 |  If yes, which NZC impact pathway is it relevant for? | Impact Pathways according to - according to Module B-1
-Green infrastructure & nature based solutions  |
+| Green infrastructure & nature based solutions  |
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No  |
 |  Data requirements |   |
 Sønderborg
@@ -1730,12 +1729,12 @@ Action Plan
 |  Indicator Context |   |
 |  Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | No  |
 |  If yes, which emission source sectors does it impact? | Fields of action according to GHG inventory format – Module A-1
-N/A  |
+| N/A  |
 |  Does the indicator measure indirect impacts (i.e. co- benefits)? | No  |
 |  If yes, which co-benefit does it measure? |   |
 |  Can the indicator be used for monitoring impact pathways? | Yes  |
 |  If yes, which NZC impact pathway is it relevant for? | Impact Pathways according to - according to Module B-1
-Green infrastructure & nature based solutions  |
+| Green infrastructure & nature based solutions  |
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No  |
 |  Data requirements |   |
 |  Expected data source | Nature Energy  |
@@ -1763,7 +1762,7 @@ Action Plan
 |  If yes, which co-benefit does it measure? |   |
 |  Can the indicator be used for monitoring impact pathways? | Yes  |
 |  If yes, which NZC impact pathway is it relevant for? | Impact Pathways according to - according to Module B-1
-Green infrastructure & nature based solutions  |
+| Green infrastructure & nature based solutions  |
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No  |
 |  Data requirements |   |
 |  Expected data source | European Energy  |
@@ -1779,7 +1778,7 @@ Green infrastructure & nature based solutions  |
 |  Indicator Context |   |
 |  Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | No  |
 |  If yes, which emission source sectors does it impact? | Fields of action according to GHG inventory format – Module A-1
-Waste  |
+| Waste  |
 |  Does the indicator measure indirect impacts (i.e. co- benefits)? | No  |
 |  If yes, which co-benefit does it measure? |   |
 |  Can the indicator be used for monitoring impact pathways? | No  |
@@ -1856,7 +1855,7 @@ Action Plan
 1
 
 |   | the citizens and the green transition. The plan and discussions provide a platform for citizens own initiatives and local actions. |  |  | project is facilitating the discussions with knowledge, process and tools. | Better quality of life, better air quality
-Engagement and participation.  |
+| Engagement and participation.  |
 | --- | --- | --- | --- | --- | --- |
 |  Heat pump and energy envelope renovation financing | The government provides financing schemes for citizens to change their fossil based heating to heat pump and to energy retrofit their houses. The Municipality has been guiding citizens in the application, how to access the finances, what solutions to apply for, etc. | The Municipality | Citizens, ProjectZero, Landsbyforum | Supporting the owner occupied and rental homes hotspots | Bring awareness, learning
 Larger part of the built environment is refurbished and less personal investments are needed.

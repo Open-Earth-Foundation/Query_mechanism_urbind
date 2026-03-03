@@ -163,10 +163,6 @@ The list of abbreviations and acronyms identifies the abbreviations (a shortened
 |  ENSVET | Energy consulting office  |
 |  ESCO | Energy service company  |
 |  EU ETS | EU Emissions Trading Scheme  |
-Climate Neutrality Action Plan
-
-9
-
 |  EV | Electric vehicle  |
 | --- | --- |
 |  EZ | Energy Act  |
@@ -214,10 +210,6 @@ Climate Neutrality Action Plan
 |  NZEB | Nearly zero-emission building  |
 |  ODS | Ozone-Depleting Substances  |
 |  OECD | Organisation for EconomicCo-operation and Development  |
-Climate Neutrality Action Plan
-
-0
-
 |  OP ECP | Operational Programme for the Implementation of the European Cohesion Policy  |
 | --- | --- |
 |  PCL | Ljubljana Passenger Centre  |
@@ -425,10 +417,6 @@ Table I-1.1: Climate Neutrality Target by 2030
 |  Transport | Scope 1 includes on-road transportation, railways, off-road transportation, and the following energy sources: diesel, gasoline, natural gas, liquefied petroleum gas, and biodiesel. | Scope 2 includes the use of electricity for on-road transportation and railways. | Not included, recommended by 2030.  |
 |   |  Without exclusion. | Without exclusion. | Not applicable.  |
 |  Waste/Waste water | Scope 1 includes GHG emissions from solid waste disposal and wastewater management. | Not applicable. | Solid waste generated in the City of Ljubljana is disposed of at a landfill within the city boundary, so there are no  |
-Climate Neutrality Action Plan
-
-9
-
 |   |  |  | emissions from waste generated within the city boundary but sent to landfill outside the city boundary.  |
 | --- | --- | --- | --- |
 |   |  Emissions from waste generated in other municipalities but disposed within the city boundary are excluded. | Not applicable. | Not applicable.  |
@@ -438,14 +426,6 @@ Climate Neutrality Action Plan
 |   |  Without exclusion. | Not applicable. | Not applicable.  |
 |  Other | All considered emissions are already categorized in the above-mentioned sectors. | All considered emissions are already categorized in the above-mentioned sectors. | Not applicable.  |
 |  Geographical boundary | Same as city administrative boundary | Smaller than city administrative boundary | Larger than city  |
-#
-
-Climate Neutrality Action
-
-Plan
-
-#
-
 |   |  |  | administrative boundary  |
 | --- | --- | --- | --- |
 |  (Tick correct option) | ✓ | - | -  |
@@ -704,14 +684,6 @@ A-1.3: Emission factors applied
 |  Electricity | 0.405 | 0.0000116 | 0.0000067 | / | / | /  |
 |  Natural gas | 0.202 | 0.0000036 | 0.0000004 | / | / | /  |
 |  Solar power | 0.0000000 | 0.0000000 | 0.0000000 | / | / | /  |
-#
-
-Climate Neutrality Action
-
-Plan
-
-#
-
 |  District heat | 0.319 | 0.0000151 | 0.0000063 | / | / | /  |
 | --- | --- | --- | --- | --- | --- | --- |
 |  Liquefied petroleum gas | 0.227 | 0.000018 | 0.00000036 | / | / | /  |
@@ -947,10 +919,6 @@ Table 9: Analysis of existing policies, strategies, and programmes.
 |  Environmental Protection Programme | action plan | city | • indirect impact • supports BAU scenario, however considered in | • To achieve the goals by 2030, programme objectives need to be adjusted to  |
 |   |  |  | • reduce emissions | compared to AP.  |
 |  Economic and Social Change | action plan | city | • significant impact on economic and social change • can be achieved by 2030 • can be achieved by 2045 | • The impact of the change is much more significant • The impact of the change is much more important  |
-Climate Neutrality Action Plan
-
-1
-
 |   |  |  | all measures (B-2). | support shorter time frame.  |
 | --- | --- | --- | --- | --- |
 |  Local Energy Concept of the city of Ljubljana 2022-2030 | action plan (SEAP) | city | • direct impact (key strategic document)
@@ -974,7 +942,7 @@ Climate Neutrality Action Plan
 2
 
 |   |  |  | transport-mobility)
-• AP (B-2) envisages additional (new) measures |   |
+| • AP (B-2) envisages additional (new) measures |   |
 | --- | --- | --- | --- | --- |
 |  National environmental action programme 2020-2030 | action plan | national | • indirect impact | • Risk of long procedures on national level.  |
 |  Slovenia’s long term climate strategy 2050 | strategy | national | • indirect impact.
@@ -992,10 +960,6 @@ Climate Neutrality Action Plan
 • longer target timeframe (beyond 2030) | • Does not affect existing buildings.
 • Risk: electrical infrastructure does not allow for a rapid transition to self-sufficient solar power plants.  |
 |  Action plan for reducing energy poverty | action plan | national | • indirect impact | • Socio-cultural factors (e.g. traditional wood-fired boilers).  |
-Climate Neutrality Action Plan
-
-3
-
 |   |  |  |  | • Limited infrastructure for delivering energy services (rural area).  |
 | --- | --- | --- | --- | --- |
 |  Strategy for deployment of alternative fuel infrastructure | strategy | national | • indirect impact | • Technology availability.
@@ -1008,33 +972,25 @@ Climate Neutrality Action Plan
 • affect buildings sector, taken into account in B-2
 • AP sets more ambitious targets (extra action envisaged) | • /  |
 |  EU Hydrogen strategy | strategy | EU | • indirect impact, very relevant for promotion and development of hydrogen based technologies
-• AP envisages early action | • /  |
+| • AP envisages early action | • /  |
 |  EU’s FIT-FOR-55 | strategy | EU | • direct impact
 • mostly affect energy and buildings sectors
 • AP sets more ambitious targets (extra action envisaged) | • /  |
 |  RePowerEU policy | strategy | EU | • direct impact of faster transition to RES energy | • Risk of high energy prices.  |
-Climate Neutrality Action Plan
-
-4
-
 |  The technical guidance on climate proofing of infrastructure + | regulation | EU | • indirect impact (through) national legal framework) | • /  |
 | --- | --- | --- | --- | --- |
 |  **Mobility & transport**  |   |   |   |   |
 |  Strategy plan of the public company Ljubljana potniški promet d.o.o., for period 2022-2027 | action plan | city (public company) | • direct impact
-• very relevant for AP (in line, included in B-2), except for existing fleet | • Strategy covers new vehicles (buses) does not address existing fleet.
-• Charging infrastructure and energy storage for electric buses is big challenge.  |
+| • very relevant for AP (in line, included in B-2), except for existing fleet | • Strategy covers new vehicles (buses) does not address existing fleet. |
+| • Charging infrastructure and energy storage for electric buses is big challenge.  |
 |  Sustainable urban mobility plan for the city of Ljubljana | action plan (SUMP) | city | • direct impact
 • very relevant for AP (included in B-2), but longer timeframe | • Charging infrastructure, especially in dense settlements (multi-apartment buildings).
 • Affordability of BEV for broader population (high prices) and lack of subsidies in coming years (risk).
 • For individual measures emission reduction should be determined, KPI’s developed in this AP could be used.  |
 |  Sustainable urban mobility plan in the Ljubljana city region | action plan (regional SUMP) | regional | • direct impact
-• very relevant for AP (suburban traffic), included in B-2 | • Influence of international road transport corridor (high risk of increasing traffic).  |
+| • very relevant for AP (suburban traffic), included in B-2 | • Influence of international road transport corridor (high risk of increasing traffic).  |
 |  Strategy for the development of transport in the RS until 2030 | strategy | national | • indirect impact (through development of transport corridors) | • Opportunity: switch of road transport to railway.
-• Transport corridors remain strategic objective, which  |
-Climate Neutrality Action Plan
-
-#
-
+| • Transport corridors remain strategic objective, which  |
 |   |  |  |  | creates risk of increased traffic in near future.  |
 | --- | --- | --- | --- | --- |
 |  Spatial development & circular economy  |   |   |   |   |
@@ -1048,17 +1004,13 @@ Climate Neutrality Action Plan
 • very relevant for AP (carbon sinks)
 • BAU scenario (included in B-2) | • Strategy does not include detailed action plan, only guidelines.  |
 |  Strategy for a circular city by 2045 | strategy | city | • direct impact | • Individual measures in the  |
-Climate Neutrality Action Plan
-
-6
-
 |   |  |  | • very relevant for AP
-• BAU scenario (included in B-2) | strategy should be evaluated in terms of emission reduction.  |
+| • BAU scenario (included in B-2) | strategy should be evaluated in terms of emission reduction.  |
 | --- | --- | --- | --- | --- |
 |  Zero waste strategy | strategy | city | • direct impact.
-• BAU scenario (included in B-2) | • Impact of the planned waste incineration plant on the implementation of the zero-waste policy.  |
+| • BAU scenario (included in B-2) | • Impact of the planned waste incineration plant on the implementation of the zero-waste policy.  |
 |  National forest programme 2022-2028 | action plan | national | • indirect impact.
-• BAU scenario (included in B-2) | • Risk regarding (natural) circumstances that may hinder successful forest restoration.  |
+| • BAU scenario (included in B-2) | • Risk regarding (natural) circumstances that may hinder successful forest restoration.  |
 |  **Other strategies**  |   |   |   |   |
 |  Strategy for the development of Ljubljana as a tourist destination and Ljubljana region 2021-2027 | strategy | local (city), regional | • indirect impact
 • relevant for AP
@@ -1069,14 +1021,10 @@ Climate Neutrality Action Plan
 • The strategy must actively follow the rapid development of the field.  |
 |  Digital Slovenia 2030-Strategy | strategy | national | • indirect impact | • Lack of human resources (IT experts in general).  |
 |  Slovenian industry strategy 2021-2030 | strategy | national | • indirect impact | • Ability of the industry to adapt to the green transition (availability of  |
-Climate Neutrality Action Plan
-
-7
-
 |   |  |  |  | technologies, e.g. hydrogen).  |
 | --- | --- | --- | --- | --- |
 |  Sustainable Urban development strategy the city of Ljubljana 2023-2027 | strategy | city | • direct impact
-• very relevant for AP | • /  |
+| • very relevant for AP | • /  |
 |  Regional development program of the Ljubljana urban region 2021-2027 | action plan | regional | • indirect impact | • Additional measures to promote cross-sectoral cooperation among different decision-making levels.  |
 |  Cultural development strategy in the city of Ljubljana 2020-2023 with guidelines until 2027 | strategy | city | • indirect impact
 • relevant for AP (BAU scenario)
@@ -1087,10 +1035,6 @@ Climate Neutrality Action Plan
 • New strategy from 2028 onwards will allow for improvements aimed at supporting the ambitions of climate neutrality by 2030.  |
 |  The rural development and urban agriculture strategy 2021-2027 | strategy | city | • indirect impact | • Time constraints for implementation.  |
 |  The programme for protection against | action plan | city | • indirect impact | • Implementation of this program is  |
-Climate Neutrality Action Plan
-
-8
-
 |  natural and other disasters |  |  |  | demanding and time-consuming, especially considering the nature of the program.  |
 | --- | --- | --- | --- | --- |
 |  Resolution: our food, rural areas and natural resources after 2021 | strategy | national | • indirect impact | • Based on different strategies (could be hard to direct activities).  |
@@ -1783,10 +1727,6 @@ Table 11: Description of urban systems, systemic barriers, and opportunities.
 |  PROCEDURES | BARRIER | Grid Capacity and Stability Issues. | Due to spatial limitations, ensuring the development of new infrastructure, such as dedicated lanes for buses and bicycles, alongside new roads situated away from existing traffic thoroughfares. | Integrating advanced waste processing technologies into existing waste management systems. | Lack of standardization and interoperability. | Limited space in urban areas to implement large-scale NBS projects, such as urban forests, parks. | Integrating sustainable building technologies, material, energy systems into existing urban fabric, building layouts especially in historic or densely built areas. | The absence of mechanisms to implement monitoring and control of logging.  |
 |   |   |  Compatibility issues with existing infrastructure. | Public transport facilities, such as bicycle lanes in some areas, require upgrades to support a good user experience. | Lack of infrastructure in the area of separate waste collection. | Technological obsolescence within public institutions and infrastructure. | The complexity of retrofitting existing buildings and infrastructure with green solutions, such as green roofs, walls, and permeable pavements, to manage stormwater and improve urban biodiversity. |  | The slow adoption of precision agriculture technologies, such as satellite imagery, drones, and IoT devices for monitoring soil moisture and nutrient levels.  |
 |   |   |  The lack of maturity of new technologies to be widely implemented at scale. Large financial investments are needed. Just transition mechanism – potentially higher cost of energy. | The complexity of adapting infrastructure to accommodate EVs, cycling, and pedestrian traffic presents challenges in embracing new, cleaner technologies and modes of transport. Technological Limitations of Alternative Fuel Vehicles include issues such as battery life, fuel cell efficiency, and the availability of green hydrogen. | Insufficient facilities for sorting and processing various types of waste, from household recyclables to electronic waste and hazardous materials, hindering the ability to fully implement circular economy principles. | Lack of integrated data platforms: centralized platforms that collect, analyse, data to enable monitoring of progress and to make effective decisions (e.g. mobility data). | Maintenance and sustainability of NBS over time (ongoing care, climate changes...). Technological limitations in monitoring and assessing the effectiveness of NBS, including data collection, analysis tools, and methodologies to quantify benefits such as biodiversity enhancement, air quality improvement, |  |   |
-Climate Neutrality Action Plan
-
-#
-
 |   | URBAN SYSTEMS  |   |   |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |   |   |  ENERGY DISTRIBUTION SYSTEMS | MORILITY AND TRANSPORTATION | WASTE MANAGEMENT | DIGITALISATION | NATURE BASED SOLUTIONS | BUILD ENVIRONMENT | AFLOU  |
@@ -1824,7 +1764,7 @@ Climate Neutrality Action Plan
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |   |   |  ENERGY DISTRIBUTION SYSTEMS | MOBILITY AND TRANSPORTATION | WASTE MANAGEMENT | DIGITALISATION | NATURE BASED SOLUTIONS | BUILD ENVIRONMENT | AFLOU  |
 |   |  | expenses, and energy pricing. | transport facilities, such as bicycle lanes and pedestrian walkways.
-Integration of multimodal transport networks data. This includes information on the connectivity between different transportation options and the development of seamless multimodal networks. |  |  |  |  |   |
+| Integration of multimodal transport networks data. This includes information on the connectivity between different transportation options and the development of seamless multimodal networks. |  |  |  |  |   |
 |   |  INSTITUTIONAL/REGULATORY  |   |   |   |   |   |   |   |
 |   |  BARRIER | Long coordinating procedures among various energy sector stakeholders.
 Bureaucratic Hurdles and Slow Permitting Processes.
@@ -1846,15 +1786,11 @@ Climate Neutrality Action Plan
 |   |   |  ENERGY DISTRIBUTION SYSTEMS | MORILITY AND TRANSPORTATION | WASTE MANAGEMENT | DIGITALISATION | NATURE BASED SOLUTIONS | BUILD ENVIRONMENT | AFLOU  |
 |   |  |  | changing legislation, lack of personnel. |  |  |  |  | sustainable solutions. Lack of coordinated policies and regulations to promote integrated land use that balances the needs of agriculture, forestry, and natural resource conservation, leading to conflicts and inefficient land use.  |
 |   |  OPPORTUNITY | Developing standardized procedure, establishing collaborative platforms, or working groups to enhance cooperation. Enhance permit application processes, improving communication and coordination between relevant authorities. Implementing climate proofing of infrastructure. | Establish multi-stakeholder alliances for better alignment of transportation policies and projects. Establish collaborative frameworks and advocacy channels with higher-level authorities and stakeholders, thereby influencing policies, regulations, and actions in these sectors. Leveraging national policies and resources to support local climate initiatives, fostering a | Embracing innovation and technology adoption within institutional frameworks allows for the exploration and deployment of new tools, techniques, and solutions to address waste-related challenges. Regulations could encourage the adoption of circular economy principles, such as designing products for durability, repairability, and recyclability and business practices | Supportive government policies and initiatives aimed at promoting digital transformation, such as funding schemes or tax incentives for digital projects. Regulatory reforms aimed at streamlining processes and reducing administrative burdens can help organizations adopt digital technologies more effectively. | Integrated urban planning that prioritizes green spaces as essential urban infrastructure. Supporting the implementation of NBS – prioritizing option (through building networks and working with key stakeholders. | Acceleration of the adoption of innovative and sustainable urban solutions; improvement in regulatory processes to support climate goals. Promoting green building practices and updating building codes to reflect sustainability goals. Implementing climate proofing of infrastructure. | Close to nature forest management implemented in Slovenia. Active mobilization and inclusion of forest owners into forest management. Identification and promotion of all forest ecosystem services.  |
-Climate Neutrality Action Plan
-
-#
-
 |   | URBAN SYSTEMS  |   |   |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |   |   |  ENERGY DISTRIBUTION SYSTEMS | MOBILITY AND TRANSPORTATION | WASTE MANAGEMENT | DIGITALISATION | NATURE BASED SOLUTIONS | BUILD ENVIRONMENT | AFLOU  |
 |   |  |  | unified approach to climate action.
-Enhancing policy coherence and coordination between different levels of government, leading to more | for returnable packaging. |  |  |  |   |
+| Enhancing policy coherence and coordination between different levels of government, leading to more | for returnable packaging. |  |  |  |   |
 |   | MONITORING | Reporting on environmental and social standards
 Reporting on climate-proofing implementation and monitoring.
 Reporting on environmental and social standards
@@ -1885,7 +1821,7 @@ Climate Neutrality Action Plan
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |   |   |  ENERGY DISTRIBUTION SYSTEMS | MORILITY AND TRANSPORTATION | WASTE MANAGEMENT | DIGITALISATION | NATURE BASED SOLUTIONS | BUILD ENVIRONMENT | AFLOU  |
 |   |  | interdependence btw. sectors and the need for stakeholder collaboration. |  | in one-way-packaging.
-Lack of professionals with know-how on climate neutrality, complexity, and interdependence btw. sectors and the need for stakeholder collaboration. |  | know-how on climate neutrality, complexity, and interdependence btw. sectors and the need for stakeholder collaboration. |  | Limited financial resources, technological capabilities, and access to information may inhibit organizations within the AFLOU sector from investing in sustainable practices and innovation.  |
+| Lack of professionals with know-how on climate neutrality, complexity, and interdependence btw. sectors and the need for stakeholder collaboration. |  | know-how on climate neutrality, complexity, and interdependence btw. sectors and the need for stakeholder collaboration. |  | Limited financial resources, technological capabilities, and access to information may inhibit organizations within the AFLOU sector from investing in sustainable practices and innovation.  |
 |   |  OPPORTUNITY | Increase in energy efficiency, Development of new business models, Reduction of greenhouse gas emissions, Increase in energy independence.
 Enhanced capacity building on climate neutrality, complexity, and interdependence btw. sectors and stakeholder collaboration. | Organizational transformation and investment in smart infrastructure to support efficient transportation.
 Enhanced capacity building on climate neutrality, complexity, and interdependence btw. sectors and stakeholder collaboration. | Most of the collected waste is collected in such a way that it is either recycled or used as energy. It will be necessary to upgrade the waste collection systems at the source in such a way that reuse, repair, ...
@@ -1896,46 +1832,38 @@ of existing organizations' members. | Fostering collaboration between government
 Capacity building and awareness raising on climate neutrality, complexity, and interdependence, between sectors and stakeholder collaboration.
 of existing organizations' members. | Investing in training, education, and capacity-building programs for farmers, landowners, and other stakeholders can empower them with the knowledge and skills needed to adopt sustainable practices, comply with regulations, and adapt to changing environmental conditions.  |
 |   |  MONITORING | Number of Capacity building trainings implemented. | Number of Organizational Transformation Measures and their impacts. | Number of units for implementation of activities in the field of prevention, reduction, and reuse. | Number of engaged IT experts.
-Monitoring of available open access data. | Number of existing green spaces (in m²). | Number of Capacity building and awareness raising of existing organizations' members. | Assessing the adoption and utilization of technology and innovation in agricultural and  |
-Climate Neutrality Action Plan
-
+| Monitoring of available open access data. | Number of existing green spaces (in m²). | Number of Capacity building and awareness raising of existing organizations' members. | Assessing the adoption and utilization of technology and innovation in agricultural and  |
 | SOLUTION | URBAN SYSTEMS |
 | --- | --- |
 | ENERGY DISTRIBUTION SYSTEMS | MOBILITY AND TRANSPORTATION | WASTE MANAGEMENT | DIGITALISATION | NATURE BASED SOLUTIONS | BUILD ENVIRONMENT | AFLOU |
 |  |  | Number of Capacity building trainings implemented. | Number of Capacity building trainings implemented. | Monitoring of the number of users of these data.
-Number of Capacity building trainings implemented. | Number and amount of managed green spaces (in m²).
-A number of capacity-building and awareness-raising campaigns. |  | forestry practices, such as precision agriculture, remote sensing, GIS mapping, and forest monitoring systems. |
+| Number of Capacity building trainings implemented. | Number and amount of managed green spaces (in m²). |
+| A number of capacity-building and awareness-raising campaigns. |  | forestry practices, such as precision agriculture, remote sensing, GIS mapping, and forest monitoring systems. |
 | FINANCIAL | FINANCIAL |
 | BARRIER | Limited financial resources due to high investment values required. | High costs associated with transitioning to sustainable transportation systems. | Insufficient financial resources are allocated to waste management initiatives that hinder investments in infrastructure upgrades, technology adoption, and capacity building. | High upfront costs associated with implementing ICT infrastructure, technologies, and systems. | Partnerships with private sector and community organizations to co-fund green space projects. | Not sufficient financial incentives for developers and homeowners to invest in energy-efficient and sustainable building technologies. | Limited access to affordable credit, loans, grants, and other financial instruments for farmers, landowners, and rural communities to invest in sustainable agricultural practices, forest management, land conservation, and ecosystem restoration. |
 | OPPORTUNITY | Exploring innovative financing models and incentives for investment in energy systems. | Leveraging public-private partnerships to fund and develop sustainable transportation projects. | Creation of revenue streams from the recovery and valorisation of recyclable materials, organic waste, and other resources or reducing costs for processing unseparated waste. | With ICT infrastructure and applications, organizations can lower their operational costs and achieve significant savings over time. | Competing political priorities that overlook the benefits of green spaces. | Lack of political support for comprehensive urban sustainability initiatives. | Increasing availability of green finance mechanisms, such as green bonds, climate funds, impact investing, and sustainable investment funds, that prioritize investments in climate-smart |
-Climate Neutrality Action Plan
-
-#
-
 |   | URBAN SYSTEMS  |   |   |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |   |   |  ENERGY DISTRIBUTION SYSTEMS | MORILITY AND TRANSPORTATION | WASTE MANAGEMENT | DIGITALISATION | NATURE BASED SOLUTIONS | BUILD ENVIRONMENT | AFLOU  |
 |   |  |  |  |  |  |  |  | agriculture, sustainable forestry, land restoration, and biodiversity conservation.  |
 |   |  MONITORING | Available financial resources.
-Number of implemented innovative financial models. | Available financial resources.
-Number of implemented innovative financial models. | Available financial resources.
-Financial monitoring of revenue streams from the recovery and valorisation of recyclable materials, organic waste, and other resources or reducing costs for processing unseparated waste. | Monitoring of savings potential and realization as a consequence of ICT implementation. | Cost benefit analysis of implementing NBS.
-Number of NBS implemented. | Number and amount of financial incentives for developers and homeowners to invest in energy-efficient and sustainable building technologies. | Assessment of financial risks, uncertainties, and vulnerabilities associated with AFLOU activities, such as market risks, price volatility, climate-related risks, policy changes, and funding constraints.  |
+| Number of implemented innovative financial models. | Available financial resources. |
+| Number of implemented innovative financial models. | Available financial resources. |
+| Financial monitoring of revenue streams from the recovery and valorisation of recyclable materials, organic waste, and other resources or reducing costs for processing unseparated waste. | Monitoring of savings potential and realization as a consequence of ICT implementation. | Cost benefit analysis of implementing NBS. |
+| Number of NBS implemented. | Number and amount of financial incentives for developers and homeowners to invest in energy-efficient and sustainable building technologies. | Assessment of financial risks, uncertainties, and vulnerabilities associated with AFLOU activities, such as market risks, price volatility, climate-related risks, policy changes, and funding constraints.  |
 |   |  POLITICAL  |   |   |   |   |   |   |   |
 |   |  BARRIER | Political Support Gap
-Political changes in priorities. | Lack of political will to prioritize sustainable transportation initiatives.
-Political changes in priorities. | Political pressure from industry stakeholders.
-The conflict between the interest of maintaining society in a state of comfort and the engagement of political forces in the direction of necessary changes. | Varying levels of political commitment to digital transformation initiatives. | Competing political priorities that overlook the benefits of green spaces (unsustainable spatial planning dominated by political interests).
-Political changes in priorities. | Lack of political support for comprehensive urban sustainability initiative (unsustainable spatial planning dominated by political interests). | Regulatory gaps, inconsistencies, or delays may discourage stakeholders from adopting best practices, complying with regulations, or making long-term commitments to AFLOU activities.  |
+| Political changes in priorities. | Lack of political will to prioritize sustainable transportation initiatives. |
+| Political changes in priorities. | Political pressure from industry stakeholders. |
+| The conflict between the interest of maintaining society in a state of comfort and the engagement of political forces in the direction of necessary changes. | Varying levels of political commitment to digital transformation initiatives. | Competing political priorities that overlook the benefits of green spaces (unsustainable spatial planning dominated by political interests). |
+| Political changes in priorities. | Lack of political support for comprehensive urban sustainability initiative (unsustainable spatial planning dominated by political interests). | Regulatory gaps, inconsistencies, or delays may discourage stakeholders from adopting best practices, complying with regulations, or making long-term commitments to AFLOU activities.  |
 |  OPPORTUNITY | Engaging in advocacy to influence policy makers and stakeholders about the importance of aligned | Engage policymakers in dialogue to underscore the economic and environmental benefits | Seeking political support to encourage innovation and technology adoption in waste | Engaging stakeholders to build consensus and support for ICT- | Advocacy and public campaigns to emphasize the value and benefits of urban green spaces. | Lobbying for policies that incentivize sustainable development and | Stakeholder consultations, policy forums, and advocacy campaigns to |   |
-Climate Neutrality Action Plan
-
 |   | URBAN SYSTEMS  |   |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |   |  ENERGY DISTRIBUTION SYSTEMS | MOBILITY AND TRANSPORTATION | WASTE MANAGEMENT | DIGITALISATION | NATURE BASED SOLUTIONS | BUILD ENVIRONMENT | AFLOU  |
 |   | and supportive political action for decarbonization goals. | of sustainable transportation. | management by supporting research and development efforts, piloting new technologies, and incentivizing private sector investment in clean and renewable energy solutions.
-Seeking political support for reduced one-way packaging. | enabled development. | Supporting climate resilience through NBS and green spaces. | energy efficiency in buildings.
-Supporting climate resilience. | raise awareness about key issues, mobilize support for policy reforms, and promote sustainable practices and land management strategies.  |
+| Seeking political support for reduced one-way packaging. | enabled development. | Supporting climate resilience through NBS and green spaces. | energy efficiency in buildings. |
+| Supporting climate resilience. | raise awareness about key issues, mobilize support for policy reforms, and promote sustainable practices and land management strategies.  |
 |   |  MONITORING | Key political stakeholders/players supporting the carbon neutrality – Local coalition for climate neutrality. | Political stakeholder mapping: Key political stakeholders/players supporting sustainable mobility– Local coalition for climate neutrality. | Political stakeholder mapping: Key political stakeholders/players supporting innovative sustainable waste management– Local coalition for climate neutrality. | Political stakeholder mapping: Key political stakeholders/players supporting digital transformation– Local coalition for climate neutrality. | Political stakeholder mapping: Key political stakeholders/players supporting NBS– Local coalition for climate neutrality. | Tracking compliance with commitments, and progress towards achieving targets and objectives related to land use, ecosystem conservation, and natural resource governance.  |
 |   |  SOCIAL  |   |   |   |   |   |   |
 |  BARRIER | Public acceptance of new technologies and infrastructure.
@@ -1961,35 +1889,21 @@ Connecting various community engagement programmes, enabling networking and syne
 Heightened sense of belonging and accountability among citizens. | Potential for community engagement and collaboration – need to foster a sense of shared responsibility and collective action towards achieving climate goals.
 Improve the local economy and strengthen self-sufficiency by closing material loops of individual waste/materials. | Programs aimed at reducing the digital divide and improving digital skills across the community. | Community-driven initiatives and programs to increase public engagement with and investment in green spaces. | Public education campaigns and demonstration projects to showcase the benefits of sustainable buildings. | Active involvement of private forest owners into sustainable close-to-nature forest management practices.  |
 |   |  MONITORING | Monitoring of number of energy poor households/individuals.
-Monitoring of investments into energy efficiency for energy poor households. | Number of Community engagement programs to highlight the benefits of sustainable transportation options. | Percentage of recycled household waste.
-Number of educational and awareness rising campaigns implemented/year. | Number of Programs aimed at reducing the digital divide and improving digital skills across the community. | Number of community driven initiatives and programs to increase public engagement with and investment in green spaces supported by the City of Ljubljana. | Number of Public education campaigns and demonstration projects to showcase the benefits of sustainable buildings. | Number of private forest owners included into close-to-nature forest management practices.  |
+| Monitoring of investments into energy efficiency for energy poor households. | Number of Community engagement programs to highlight the benefits of sustainable transportation options. | Percentage of recycled household waste. |
+| Number of educational and awareness rising campaigns implemented/year. | Number of Programs aimed at reducing the digital divide and improving digital skills across the community. | Number of community driven initiatives and programs to increase public engagement with and investment in green spaces supported by the City of Ljubljana. | Number of Public education campaigns and demonstration projects to showcase the benefits of sustainable buildings. | Number of private forest owners included into close-to-nature forest management practices.  |
 |   |  BEHAVIORAL  |   |   |   |   |   |   |   |
 |   |  BARRIER | Personal habits and consumption patterns.
-A lack of awareness or motivation among consumers to adopt energy-efficient solutions and technologies can slow | Individual preferences for private vehicle use over public transportation. | Consumer culture that promotes disposability and excessive waste. | Resistance to adopting new technologies and digital services. | Perception of green spaces as non-essential or low priority in urban planning. | Consumer preference for traditional building methods and reluctance to adopt new technologies. | Familiarity with traditional methods, reluctance to take risks, and inertia may deter individuals from  |
-Climate Neutrality Action Plan
-
-#
-
+| A lack of awareness or motivation among consumers to adopt energy-efficient solutions and technologies can slow | Individual preferences for private vehicle use over public transportation. | Consumer culture that promotes disposability and excessive waste. | Resistance to adopting new technologies and digital services. | Perception of green spaces as non-essential or low priority in urban planning. | Consumer preference for traditional building methods and reluctance to adopt new technologies. | Familiarity with traditional methods, reluctance to take risks, and inertia may deter individuals from  |
 |   | URBAN SYSTEMS  |   |   |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |   |   |  ENERGY DISTRIBUTION SYSTEMS | MORILITY AND TRANSPORTATION | WASTE MANAGEMENT | DIGITALISATION | NATURE BASED SOLUTIONS | BUILD ENVIRONMENT | AFLOU  |
 |   |  | the transition to sustainable energy. |  |  |  |  |  | embracing innovative solutions and transitioning to more sustainable AFLOU practices.  |
 |   | OPPORTUNITY | Promoting energy efficiency through consumer education and incentives, as well as research on behavioural aspects. | Incentives for public transportation use and awareness campaigns about its benefits. | Through incentives and education, promote sustainable consumption and the use of tools in the area of reducing the amount of waste generation (returnable packaging, shopping without packaging, repair of objects, ...). | User-centred design and engagement strategies to increase technology adoption and usage. | Education and awareness campaigns to promote the health, social, and environmental benefits of green spaces. | Incentive programs and educational initiatives to change consumer behaviour towards sustainability in the built environment. | Community-based approaches, such as participatory planning processes, collaborative decision-making platforms, and community-led conservation projects, enable stakeholders to contribute their insights, perspectives, and local knowledge to the design and implementation of sustainable AFLOU interventions, fostering greater social cohesion and resilience.  |
 |   | MONITORING | Number of energy efficient households. | Accurate data on traffic monitoring and analysis based on mathematical models. | Monitoring household, commercial, and industrial waste generation trends, including the types, | Feedback from users to gather insights into their experiences, perceptions, satisfaction levels, | Number of education and awareness campaigns implemented. | Number of incentive programs and educational initiatives to change consumer behaviour towards | Surveys, interviews, and focus group discussions with stakeholders  |
-Climate Neutrality Action Plan
-
 |  URBAN SYSTEMS  |   |   |   |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  ENERGY DISTRIBUTION SYSTEMS | MOBILITY AND TRANSPORTATION | WASTE MANAGEMENT | DIGITALISATION | NATURE BASED SOLUTIONS | BUILD ENVIRONMENT | AFLOU |  |   |
 |   |  |  | quantities, and composition of waste generated by different sectors. Monitoring of the level of recyclability. Monitoring the amount of materials that go into the reuse material flow. Number of incentives, promotions, campaigns to promote reduction of waste generation. | and suggestions for improving the design, functionality, and effectiveness of climate-focused ICT solutions. |  | sustainability in the built environment. | involved in AFLOU activities to gather data on their perceptions related to land use, agricultural practices, forest management, and conservation efforts. |   |
-
-4
-#
-
-Climate Neutrality Action Plan
-
-#
-
 |  A-3.2: Systems & stakeholder mapping  |   |   |   |
 | --- | --- | --- | --- |
 |  System | Stakeholders | Influence on the city's climate neutrality ambition | Interest in the city's climate neutrality ambition  |
@@ -2002,10 +1916,6 @@ Climate Neutrality Action Plan
 |  Regulatory, organisational, financial, political | City council | High | The City Council of Ljubljana exhibits a strong and proactive interest in the city's ambition to achieve climate neutrality. This commitment is reflected in their active role in formulating and endorsing policies and initiatives that align with the city's goals. Recognising the urgency of climate change, the council prioritises sustainability and green practices in its urban development plans, emphasising the need for a holistic approach to reduce carbon emissions, investment in sustainable transportation, and enhancement of green urban spaces. They support collaboration with various stakeholders, including businesses, community groups, and international partners, to integrate diverse perspectives and expertise in climate action. They actively pursuing policies and actions that contribute to responsible future.  |
 |  Technological/infrastructural, institutional/ regulatory, organisational, financial, political, social, and behavioural systems | City Public companies | High | Their primary interest lies in efficient and sustainable service delivery, aligning with the broader goals of the action plan. This sector aims to enhance operational efficiency, reduce environmental impact (emissions reduction), and contribute to the city's overall sustainability. Key areas of focus include optimising resource use, implementing eco-friendly technologies, and fostering community engagement. Additionally, their interest extends to exploring funding options and collaborating with various stakeholders to ensure the successful implementation of climate action initiatives.  |
 |  Technological/infrastructural, institutional/ regulatory, organisational, financial, political, social, and behavioural systems | State-owned enterprises (SOEs) | Medium | Their engagement extends beyond business interests to actively support the city's journey towards carbon neutrality. They play a crucial role in advancing climate action and sustainability, aligning their interests with broader societal goals. Their primary interest should lie in efficient and sustainable service delivery, contributing to the success of the city's action plan. SOEs interest should be to thoroughly understand city requirements and offer comprehensive support, including specialised knowledge and expertise crucial for urban decision-making. This expertise, often not available in the  |
-Climate Neutrality Action Plan
-
-6
-
 |   |  |  | open market due to its specialised nature, is vital for cities to make informed decisions.  |
 | --- | --- | --- | --- |
 |  Technological/infrastructural, regulatory, organisational, financial, political, social, and behavioural systems | Business sector | High | Businesses recognise the importance of **efficient** and **sustainable services**. Today, profit is not the only driver, as it cannot be achieved without following trends related to responsible environmental business practices. These are also demonstrated through alignment with city policies, shared commitments, and the successful implementation of the action plan. Sectors interests are **promoting sustainable business models**, using renewable energy, implementing circular economy, and fostering collaboration. Their interest are as well new business opportunities e.g. investing in green technologies and RES.  |
@@ -2018,10 +1928,6 @@ Climate Neutrality Action Plan
 |  Technological/infrastructural, regulatory, organisational, financial, political, social, and behavioural systems | Socially Vulnerable Groups - refugees | Medium | Their interests often revolve around seeking stable, sustainable livelihoods and integrating into the community. Potential interest that could contribute to city success of action plan: interest in participating in urban initiatives to foster social integration, build networks, green jobs- employment, valuable knowledge and unique insights and experience that supports city's objective.  |
 |  Technological/infrastructural, regulatory, organisational, financial, political, social, and behavioural systems | People with Disabilities and Special Needs | Medium | Their perspectives and experiences are crucial in shaping a more accessible, understanding, and supportive community, reducing societal barriers and provide equal opportunities. Their interests could be accessibility to urban spaces, public transport, and housing, universal design, adaptive technologies, reducing societal barriers and equal opportunities.  |
 |  Technological/infrastructural, regulatory, organisational, financial, political, social, and behavioural systems | Stakeholders with Higher Purchasing Power | Medium | The interests of stakeholders with higher purchasing power in the context of a climate-neutral action plan, can vary and may not always align perfectly with action plan goals. However, there is a growing trend of environmental consciousness among affluent segments of society. Potential interest that could contribute to city success of action plan: investing in green technologies and RES, not only for environmental benefits but also for the potential long-term economic returns, influencing policies that favour sustainable practices, particularly if these align with their personal or business values or offer economic benefits like tax incentives, recognition of the role of social responsibility, community leadership and legacy in business and personal  |
-Climate Neutrality Action Plan
-
-7
-
 |   |  |  | practices, leading to support for eco-friendly local businesses and initiatives.  |
 | --- | --- | --- | --- |
 |  Technological/infrastructural, regulatory, organisational, financial, political, social, and behavioural systems | Public Media | High | Supporting a city's journey towards climate neutrality can be identified as follows, awareness and education about specific actions the city is taking, fostering community involvement and public dialogue around the city's climate actions, reporting the city's progress towards climate neutrality, ensuring transparency, advocacy for effective climate policies and actions, encouraging decision-makers to prioritize and implement strategies that align with the goal of climate neutrality of a city.  |
@@ -2433,10 +2339,6 @@ B-1.1: Impact Pathways
 |  Fields of action | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions) | Indirect impacts (co-benefits)  |
 | --- | --- | --- | --- | --- | --- |
 |  Energy systems | Technology/infrastructure | Utilizing waste heat from industry for integration into the district heating network.Acceleration of innovation in hydrogen production processes.Local biogas production and purification for injection into the distribution pipeline network.Concluded agreements on the purchase of emission-free electricity.Purchases of zero-emission electricity for public sector, public transport, industry, business sector, and households (65% of consumed electricity).Dynamic adjustment of electricity and heat production/consumption.Effective balancing of electricity supply and demand dynamics.Utilization of digital and advanced technologies for grid management. | District heating system using renewable energy sources.Purchases of zero-emission electricity for district heating system.Construction of a facility for energy recovery from municipal waste, producing heat and electricity.Construction of smaller district heating systems.Transition from fossil fuels to green hydrogen in energy-intensive industries.Decarbonization of the distribution gas pipeline network through the injection of green hydrogen and locally produced biomethane. | Overall GHG emission reduction as a synergistic outcome of implementing all planned measures:1,165,147 tCO2e/year.Total captured CO2 emissions with carbon capture and utilization technology:394,616 tCO2e/year. | Reduced energy costs.Decrease in dependence on fossil fuels.Improvement of reliability and resilience of the power grid.Reduction of the industry's impact.Improved air quality and public health.New green jobs.Increased energy security.Long-term cost stability.Community engagement.Investment incentives.Technological innovation.  |
-Climate Neutrality Action Plan
-
-#
-
 |  B-1.1: Impact Pathways  |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- |
 |  Fields of action | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions) | Indirect impacts (co-benefits)  |
@@ -2465,7 +2367,7 @@ Climate Neutrality Action Plan
 | --- | --- | --- | --- | --- | --- |
 |  Fields of action | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions) | Indirect impacts (co-benefits)  |
 |   |  |  | capture and utilisation.
-Collection and analysis of data for decision-making and city policy planning. |  |   |
+| Collection and analysis of data for decision-making and city policy planning. |  |   |
 |   |  Governance & policy | Implementation of energy audits in the public sector and businesses.
 Development of strategies to promote sustainable habits and address energy poverty.
 Policy mechanisms orients market structures to net-zero. | Requirement for companies to establish energy management systems.
@@ -2479,11 +2381,7 @@ Local challenges in the field of sustainable development: Regulatory sandpits. |
 Greater awareness of sustainable energy use at the local level.
 New forms of public-private & community collaborations.  |   |   |
 |   |  Democracy/participation | Collaboration with educational institutions for training programs.
-Encouragement of collaboration and | Enabling active participation of consumers in energy schemes.  |   |   |
-Climate Neutrality Action Plan
-
-#
-
+| Encouragement of collaboration and | Enabling active participation of consumers in energy schemes.  |   |   |
 |  B-1.1: Impact Pathways  |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- |
 |  Fields of action | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions) | Indirect impacts (co-benefits)  |
@@ -2492,10 +2390,6 @@ Climate Neutrality Action Plan
 |   |  Learning & capabilities | Implementation of energy audits in the public sector and businesses. Evaluation of energy use and consumption patterns. Analysis of societal and psychological factors influencing energy consumption. | Examine carbon capture and utilisation and implementation possibilities.  |   |   |
 |  |   |   |   |   |   |
 |  Mobility & transport | Technology/infrastructure | Introduction of new bus routes to improve coverage. Increased bus frequency on main routes. Development of a new passenger centre featuring a main bus and train station, serving as the central hub for public transportation. Introduction of passenger | Implementation of dedicated bus lanes to reduce travel times. Smart traffic light management prioritizing public transportation. Introduction of longer vehicles to accommodate more passengers. | Overall GHG emission reduction as a synergistic outcome of implementing all planned measures: 531,723 tCO2e/year. | Improved public transportation coverage. Improved user experience of public transport. Increased safety for traffic participants. Reduced noise in the city. Improved air  |
-Climate Neutrality Action Plan
-
-#
-
 |  B-1.1: Impact Pathways  |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- |
 |  Fields of action | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions) | Indirect impacts (co-benefits)  |
@@ -2532,25 +2426,17 @@ Climate Neutrality Action Plan
 |  Fields of action | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions) | Indirect impacts (co-benefits)  |
 |   |  |  | Reduction of resistance to cycling and walking by 20%, enhancing overall safety and experience. Expansion and improvement of cycling infrastructure and networks. Establishment of green mobility corridors away from main roads. Creation of new pedestrian zones, enhancing walkability and safety. Expansion of pedestrian areas into residential neighbourhoods beyond the city centre. Construction of new bridges prioritizing pedestrian and cycling access. |  |   |
 |   |  Governance & policy | Updating the legislation to facilitate the implementation of all planned projects to improve public transportation. Introduction of a single ticket for various modes of public transportation. Adjustment of city bus schedules for better integration with other public transportation modes such as trains and intercity buses. | Introduction of a stricter parking policy with increased fees and reduced parking durations. Implementation of a 30 km/h speed limit on most non-main city streets. Establishment of new emission-free zones for |  |   |
-Climate Neutrality Action Plan
-
-#
-
 |  B-1.1: Impact Pathways  |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- |
 |  Fields of action | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions) | Indirect impacts (co-benefits)  |
 |   |  | Adoption of regulations and guidelines for decarbonization of vehicles owned by the City of Ljubljana. Establishment of the Sustainable Mobility Department to holistically plan and implement transport policies. | walking and cycling only. Establishment of new restricted traffic areas. Implementation of carpool lanes for vehicles with three or more occupants. |  |   |
 |   |  Social innovation | Continued development of on-demand transportation services. Expansion or enhancement of transport services for mobility-impaired individuals. Increased promotion and adoption of cycling, walking, renewable energy vehicles, and public transportation. Increased efficiency and sustainability of urban mobility through various mobility options like bike rental and electric car transportation. The comprehensive initiative promotes sustainable certifications and encourages sustainable practices within the relevant sector. | Due to traffic reduction, new spaces for socialization and new activities will be provided in the city. Implementation of measures to address transport poverty through accessible transportation and subsidies. Various promotional campaigns will be carried out to encourage cycling and walking as the primary modes of transportation in the city. Establishment of the Multimodal Route Planner application.  |   |   |
 |   |  Democracy/participation | A thorough assessment of public transportation user needs will be conducted, and areas requiring improvement will be identified. Active promotion and encouragement of user engagement and participation in | Introduction of pilot projects to test proposed improvements and collect user feedback. Coordination of user needs outside the City of Ljubljana to  |   |   |
-Climate Neutrality Action Plan
-
-0
-
 |  B-1.1: Impact Pathways  |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- |
 |  Fields of action | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions) | Indirect impacts (co-benefits)  |
 |   |  | pedestrian and cycling infrastructure.
-Robust citizen engagement and participation will be actively promoted and encouraged. | adjust parking and mobility options accordingly. |  |   |
+| Robust citizen engagement and participation will be actively promoted and encouraged. | adjust parking and mobility options accordingly. |  |   |
 |   |  Finance & funding | Funding will be secured to transition all urban public transport vehicles to cleaner energy sources.
 Public-private partnerships for the establishment of public charging infrastructure.
 Ensuring additional funds to promote the transition of road transport to cleaner energy sources. | Enhanced financial support will be pursued through national and international policies, with efforts to explore European funding opportunities. |  |   |
@@ -2581,10 +2467,6 @@ Climate Neutrality Action Plan
 |   |   |   |   |  Increased awareness. | Reduced environmental pollution.  |
 |   |   |   |   |  Preservation of natural resources. | Increased awareness on waste reduction.  |
 |  Social innovation | Introduction of a Sustainable City Card for vulnerable groups. Conducting communication campaigns targeting waste reduction. Promotion of refill systems and second-hand stores. | Establishment of a network of bicycle repair services. | Establishment of a network of bicycle repair services. | Establishment of a network of bicycle repair services. | Increased awareness on waste reduction.  |
-Climate Neutrality Action Plan
-
-2
-
 |  B-1.1: Impact Pathways  |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- |
 |  Fields of action | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions) | Indirect impacts (co-benefits)  |
@@ -2598,21 +2480,17 @@ Introduction of repair cafes and "clothing repair shops".
 Establishment of clothing exchange points. |  | Cleaner urban environment.
 Facilitation of stakeholder collaboration.  |
 |   |  Democracy/participation | Establishment of a food exchange platform.
-Enhanced community engagement in waste management practices. | Reducing household mixed municipal waste to below 80 kg per inhabitant per year. |  |   |
+| Enhanced community engagement in waste management practices. | Reducing household mixed municipal waste to below 80 kg per inhabitant per year. |  |   |
 |   |  Governance & policy | Establishment of food packaging and coffee-to-go return schemes.
-Priority use of recycled materials in public procurement. | Implementation of deposit systems for glassware and food utensils.
-Provision of space for local food sales and eco-gardens. |  |   |
+| Priority use of recycled materials in public procurement. | Implementation of deposit systems for glassware and food utensils. |
+| Provision of space for local food sales and eco-gardens. |  |   |
 |   |  Learning & capabilities | Creation of a handbook for sustainable event organization.
-Review of waste classification from the wood processing industry for energy production. | Establishment of a model for systematic recording of discarded food. |  |   |
-Climate Neutrality Action Plan
-
-#
-
+| Review of waste classification from the wood processing industry for energy production. | Establishment of a model for systematic recording of discarded food. |  |   |
 |  B-1.1: Impact Pathways  |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- |
 |  Fields of action | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions) | Indirect impacts (co-benefits)  |
 |   |  | Conducting waste separation analysis for effective waste management strategies.
-Enhanced waste management efficiency through real-time monitoring. |  |  |   |
+| Enhanced waste management efficiency through real-time monitoring. |  |  |   |
 |  |   |   |   |   |   |
 |  Green infrastructure & nature-based solutions | Technology/ infrastructure | Removal of invasive species along the Ljubljanica river and replanting of 10,000 native shrubs and tree saplings.
 More efficient nitrogen cycling in agriculture.
@@ -2682,7 +2560,7 @@ The comprehensive initiative promotes sustainable certifications and encourages 
 Strengthened collaboration with healthcare for addressing physical and mental health issues due to climate change.
 Community-level biodiversity projects include wildlife monitoring for ecosystem understanding and campaigns for planting indigenous plants. |  |  |
 | Democracy/participation | Analysis of social functions of green areas and people's needs for urban landscapes.
-Inclusion of farmers in agricultural policies. |  |
+| Inclusion of farmers in agricultural policies. |  |
 | Governance & policy | Development of a Long-term Urban Greening Plan to increase urban green spaces to 40%.
 Preparation of a green roof and facade strategy.
 Introduction of comprehensive river system management to balance human needs | Reduction of emissions from deforestation and maintaining a stable forest area in the long term.
@@ -2706,15 +2584,11 @@ Climate Neutrality Action Plan
 |  | Preparation of expert bases for determining permanently protected agricultural land. | Conducting hydrological and hydraulic studies to reduce vulnerability to climate change. |  |  |
 |  | Examination of possibilities to increase the area of permanent crops and preparation of expert basis for expanding permanent orchards. |  |  |  |
 |  |  | The development of educational programs for farmers will be emphasised. |  |  |  |
-Climate Neutrality Action Plan
-
-7
-
 |  B-1.1: Impact Pathways  |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- |
 |  Fields of action | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions) | Indirect impacts (co-benefits)  |
 |   |  | Establishment of a vegetation cadastre.
-Modelling of the urban heat islands. |  |  |   |
+| Modelling of the urban heat islands. |  |  |   |
 |  Built environment | Technology/infrastructure | Implementation of energy-efficient construction techniques.
 Creation of social and recreational spaces.
 Increased green areas, functionality, and aesthetics of urban courtyards.
@@ -2763,10 +2637,6 @@ Local challenges in the field of sustainable development: Regulatory sandpits. |
 Enhanced decision-making, improved communication with residents, and facilitated city management, aided by the "Digital twin" initiative.
 Pilot testing of digital solutions for neighbourhood improvement and carbon footprint reduction. |
 | Democracy/participation | Collaboration among stakeholders for sustainable projects. | Green and sustainable housing is recognized and |
-Climate Neutrality Action Plan
-
-#
-
 |  B-1.1: Impact Pathways  |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- |
 |  Fields of action | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions) | Indirect impacts (co-benefits)  |
@@ -3163,13 +3033,11 @@ Energy management system
 Active consumer of thermal and electrical energy | **Energy Management**
 Energy management is the proactive and systematic approach for monitoring, control, and optimization of energy systems to reduce energy consumption and decrease costs. It includes several measures: utilization of smart energy management systems for monitoring and control, energy audits (in public and private sectors) and create environment for active consumers which will, as a group of jointly acting consumers or through aggregators, participate in schemes considering their energy production, consuming, storing or selling.  |
 |   | **Negative emissions**
-Implementation of carbon capture and use/utilization (CCU) | **Negative emissions**
-City of Ljubljana is planning integrate carbon capture and use/utilization (CCU) technology allow reusing captured carbon, thus potentially reducing its emissions to the atmosphere. The capture of CO_{2} emissions will be conducted at the main energy production unit (cogeneration, located at the TE-TOL site in Ljubljana-Moste), connected to the district heating system and other industrial facilities, as well as at the new facility for energy recovery from waste. Captured CO_{2} will be transported to relevant (local/regional) industrial producers that will re-use CO_{2} in their processes - several technologies are currently in use or being developed, including those to make plastics, concrete, chemical reactants, and synthetic fuels.  |
+| Implementation of carbon capture and use/utilization (CCU) | **Negative emissions** |
+| City of Ljubljana is planning integrate carbon capture and use/utilization (CCU) technology allow reusing captured carbon, thus potentially reducing its emissions to the atmosphere. The capture of CO_{2} emissions will be conducted at the main energy production unit (cogeneration, located at the TE-TOL site in Ljubljana-Moste), connected to the district heating system and other industrial facilities, as well as at the new facility for energy recovery from waste. Captured CO_{2} will be transported to relevant (local/regional) industrial producers that will re-use CO_{2} in their processes - several technologies are currently in use or being developed, including those to make plastics, concrete, chemical reactants, and synthetic fuels.  |
 |   | **Organizational, incentive, and awareness-raising measures**
-Promotion of energy efficiency and | **Organizational, incentive, and awareness-raising measures**
-To promote energy efficiency, we will organize events and workshops for awareness-raising and create a website tool to inform about energy and cost savings during home renovations. Collaboration with educational institutions will enable worker  |
-Climate Neutrality Action Plan
-
+| Promotion of energy efficiency and | **Organizational, incentive, and awareness-raising measures** |
+| To promote energy efficiency, we will organize events and workshops for awareness-raising and create a website tool to inform about energy and cost savings during home renovations. Collaboration with educational institutions will enable worker  |
 |   | transition to renewable sources
 Creating new jobs in the field of renewable energy and energy efficiency
 Energy poverty
@@ -3243,11 +3111,9 @@ It is also necessary to reduce the use of fossil fuels in agriculture by utilizi
 Electrification, hydrogen, and biomethane will play a significant role in transitioning away from fossil fuels.  |
 | --- | --- | --- |
 |   | - Improving conditions for cyclists and pedestrians | **Improving infrastructure for cyclists and pedestrians**
-
-The comprehensive measures aim to enhance the urban environment by improving conditions for pedestrians and cyclists. This includes the development of pedestrian-friendly infrastructure and dedicated cycling lanes. In addition, the initiative involves transforming conventional traffic zones into green and recreational spaces, fostering a more sustainable and liveable urban landscape. The promotion of walking and cycling is actively encouraged through awareness campaigns, educational initiatives, and community engagement programs, fostering a culture of environmentally friendly and healthy modes of transportation.  |
+| The comprehensive measures aim to enhance the urban environment by improving conditions for pedestrians and cyclists. This includes the development of pedestrian-friendly infrastructure and dedicated cycling lanes. In addition, the initiative involves transforming conventional traffic zones into green and recreational spaces, fostering a more sustainable and liveable urban landscape. The promotion of walking and cycling is actively encouraged through awareness campaigns, educational initiatives, and community engagement programs, fostering a culture of environmentally friendly and healthy modes of transportation.  |
 |   | Organizational, incentive, and awareness-raising measures | **Organizational, incentive, and awareness-raising measures**
-
-Measures to promote sustainable mobility include promoting cycling, walking, the use of renewable energy sources, and public transport.  |
+| Measures to promote sustainable mobility include promoting cycling, walking, the use of renewable energy sources, and public transport.  |
 |   | - Promoting sustainable mobility | The preparation of a new comprehensive traffic strategy for the City of Ljubljana will be carried out in collaboration with various stakeholders and will involve defining goals, measures and mechanisms for monitoring and reporting.  |
 |   | - Development of a new Sustainable urban mobility plan (SUMP) |   |
 |   | - Research/educational content | Research and educational activities focus on technological, infrastructural, social, and psychological aspects of sustainable mobility, aiming to develop strategies to promote sustainable habits in urban environments.  |
@@ -3255,13 +3121,8 @@ Measures to promote sustainable mobility include promoting cycling, walking, the
 |   | - Establishment of the sustainable mobility department |   |
 |   | - Coordinating the needs of users who gravitate towards the City of Ljubljana | City policies already address transport poverty through subsidizing public transport, developing cycling infrastructure, and other measures. The action plan will complement these measures to reduce transport poverty, while the national plan will continue a comprehensive approach at the national and local levels.  |
 |   |  | Establishing the Department of sustainable mobility in the City of Ljubljana follows the global trend of  |
-Climate Neutrality Action Plan
-
-8
-
 |   |  | many cities recognizing the importance of sustainable mobility for quality of life and the environment. This department enables a comprehensive approach to transport policies and coordinated action across sectors, reducing greenhouse gas emissions and creating a healthier urban environment.
-
-Adapting parking options and sustainable mobility in the City of Ljubljana is carried out by analysing and considering the needs of users from other municipalities before their arrival in Ljubljana.  |
+| Adapting parking options and sustainable mobility in the City of Ljubljana is carried out by analysing and considering the needs of users from other municipalities before their arrival in Ljubljana.  |
 | --- | --- | --- |
 |  Waste & circular economy | Waste reduction
 Reducing waste generation, promoting reuse and recycling
@@ -3316,8 +3177,8 @@ Climate Neutrality Action Plan
 0
 
 |   | **Forest management**
-Maintaining stable forest area | **Forest management**
-The goal of this measure is the long-term preservation of a stable forested area, which currently covers approximately 42% of the territory of the City of Ljubljana. With this measure, linked to smart spatial planning, the aim is not only to preserve the land's potential for CO_{2} absorption but also to limit and gradually reduce emissions due to deforestation.  |
+| Maintaining stable forest area | **Forest management** |
+| The goal of this measure is the long-term preservation of a stable forested area, which currently covers approximately 42% of the territory of the City of Ljubljana. With this measure, linked to smart spatial planning, the aim is not only to preserve the land's potential for CO_{2} absorption but also to limit and gradually reduce emissions due to deforestation.  |
 | --- | --- | --- |
 |   | **Sustainable agriculture and agricultural policy**
 Protecting agricultural land and increasing local self-sufficiency
@@ -3335,11 +3196,7 @@ Emphasis is placed on rational fertilization of agricultural crops with nitrogen
 
 The city will follow a cattle breeding program focused on improving feed energy utilization and reducing methane emissions. Financial incentives will be available for investments in increasing agricultural efficiency. The planned overhaul of agricultural policy will aim to reduce greenhouse gas emissions and promote sustainable farming.  |
 |   | **Organizational, incentive, and awareness-raising measures** | **Organizational, incentive, and awareness-raising measures**
-Awareness about the importance of greenery in cities will be raised through campaigns, workshops,  |
-Climate Neutrality Action Plan
-
-1
-
+| Awareness about the importance of greenery in cities will be raised through campaigns, workshops,  |
 |   | - Raising public awareness of the importance of green spaces
 Promoting sustainable forest management
 Enhanced control over logging and timber extraction from forests
@@ -3435,10 +3292,6 @@ Climate Neutrality Action Plan
 |   | - Bin fullness sensors in underground containers | Additionally, the installation of fill level sensors in containers in underground and expanded collection points is planned.  |
 |   | Urban digital platform | Urban digital platform  |
 |   | - Urban digital platform | The Urban Digital Platform is a tool for managing, planning, and implementing urban policies, serving as a unified information and communication hub between municipal authorities, residents and businesses.  |
-
-4
-Climate Neutrality Action Plan
-
 |  Engaging and collaborating with stakeholders | Integrative approaches to social innovation, collaboration, and inclusion | Integrative approaches to social innovation, collaboration, and inclusion  |
 | --- | --- | --- |
 |   | - Integrated participatory and communication strategy for Climate Neutral Ljubljana by 2030 | The participatory communication strategy has been developed for the preparation of the Action and Financial Plan to achieve climate neutrality of the City of Ljubljana by 2030. The strategy includes a thorough analysis of stakeholders and continues efforts for comprehensive public involvement and ensuring accessibility to information.  |
@@ -3477,10 +3330,6 @@ Climate Neutrality Action Plan
 
 |   | waste-derived fuel are generated annually, which cannot be further materially utilized or recycled but is suitable for energy recovery - for heat and electricity production. Currently, this fuel is transported out of Ljubljana. With the aim of closing the material flow of waste management at the municipal level, reducing the carbon footprint, and increasing energy self-sufficiency, we plan to establish a facility for energy recovery from municipal waste, simultaneously producing heat and electricity. The facility will be built using best available techniques (BAT), with high energy efficiency (more than 80%) and in compliance with all strictest environmental and health protection standards. For the energy utilization of fuel from municipal waste, which is currently obtained at RCERO Ljubljana, a facility with a size of 55 megawatts of input thermal power would be needed. With this, we could generate around 225 gigawatt-hours of heat and 65 gigawatt-hours of electricity from this amount of fuel. In the case of a wider contribution area (RCERO and neighbouring regional centres), this would mean 140,000 tons of fuel and therefore a facility with a total thermal power of 73 megawatts, which would produce approximately 373 gigawatt-hours of heat and 80 gigawatt-hours of electricity. The energy recovery of waste is a mandatory state economic public service – state public service can be performed through concession assignment. Hydrogen integration in industrial processes: Industrial processes currently rely primarily on fossil fuels (natural gas). When green hydrogen becomes available, it will have a positive impact on decarbonizing various sectors, including energy-intensive industries. It is planned that by 2030, hydrogen will cover up to 15% of the current energy demand based on the use of natural gas in industry. Injection of biomethane into the distribution gas pipeline network: The distribution gas pipeline network will be decarbonized by 2030 using green hydrogen (15% injected into the transmission gas network, without requiring significant technological upgrades), locally injected biomethane, and purchases of biomethane on the market.  |
 | --- | --- |
-Climate Neutrality Action Plan
-
-8
-
 |  Reference to impact pathway | Field of action | Energy systems  |
 | --- | --- | --- |
 |   |  Systemic lever | Technology/infrastructure, finance & funding, governance & policy  |
@@ -3500,11 +3349,11 @@ Heating systems for individual buildings (i.e., those outside the district heati
 Climate Neutrality Action Plan
 
 |   |  | Targeted investment planning strategies created.
-Policy mechanisms orients market structures to net-zero.  |
+| Policy mechanisms orients market structures to net-zero.  |
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | City of Ljubljana (Energy manager), Energetika Ljubljana (local district heating and gas distribution company), Plinovodi (gas transmission network operator), industrial companies, individual heating systems owners.  |
 |   |  Action scale & addressed entities | Local scale.
-District heating system, individual heating systems (boilers), transmission and distribution gas pipeline network.  |
+| District heating system, individual heating systems (boilers), transmission and distribution gas pipeline network.  |
 |   |  Involved stakeholders | City of Ljubljana, Energetika Ljubljana (local district heating and gas distribution company), Plinovodi (gas transmission network operator), industrial companies, individual heating systems owners, local biogas producers.  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | RES district heating solutions and WtE in pre-design phase (plan to commence operation by 2030). The financial resources will be provided by the public company Energetika Ljubljana, the City of Ljubljana, and the European Union through cohesion funds.
 
@@ -3528,8 +3377,7 @@ Climate Neutrality Action Plan
 | --- | --- | --- |
 |   |  Action type | Technical interventions  |
 |   |  Action description | **Biogas and biomass cogeneration units:** The integration of combined heat and power (CHP) systems within industrial and commercial sectors presents a multifaceted solution to energy optimisation. By leveraging biogas or biomass as primary energy sources, these installations not only bolster the efficient utilisation of resources but also foster a self-reliant provision of both heat and electricity. Implementation of CHP units addresses a critical energy demand, particularly during winter when electricity scarcity tends to peak. This supplementary electricity production during high-demand periods not only stabilises the grid but also mitigates potential shortages, ensuring a more reliable and resilient energy supply. It is planned to install 3 MW_{e} of new CHP units by 2030.
-
-**Photovoltaic projects:** The photovoltaic (PV) projects in the City of Ljubljana embody a comprehensive approach toward sustainable energy generation and infrastructure development. The measure in the field of solar energy utilization includes the following projects: (1) The installation of 51 solar power plants (4.7 MWp) on the roofs of public buildings is underway, representing an important step towards renewable energy sources. (2) The installation of a solar power plant of approximately 2 MWp at the Ljubljana passenger traffic (LPP) Remiza is also planned by 2027. (3) In addition to public buildings, the initiative includes the construction of new solar power plants on private buildings (with a total potential of 462 MWp), with an anticipated 7.5 MWp of photovoltaic capacity (by 2030). (4) Utilization of ground space and degraded areas for solar panel installation is planned (within the next 5 years), with a projected capacity of 8 MWp. (5) A solar power plant with a capacity of 0.9 MW is planned at the renovated main railway station in Ljubljana. (6)  |
+| **Photovoltaic projects:** The photovoltaic (PV) projects in the City of Ljubljana embody a comprehensive approach toward sustainable energy generation and infrastructure development. The measure in the field of solar energy utilization includes the following projects: (1) The installation of 51 solar power plants (4.7 MWp) on the roofs of public buildings is underway, representing an important step towards renewable energy sources. (2) The installation of a solar power plant of approximately 2 MWp at the Ljubljana passenger traffic (LPP) Remiza is also planned by 2027. (3) In addition to public buildings, the initiative includes the construction of new solar power plants on private buildings (with a total potential of 462 MWp), with an anticipated 7.5 MWp of photovoltaic capacity (by 2030). (4) Utilization of ground space and degraded areas for solar panel installation is planned (within the next 5 years), with a projected capacity of 8 MWp. (5) A solar power plant with a capacity of 0.9 MW is planned at the renovated main railway station in Ljubljana. (6)  |
 |   | GHG emissions reduction estimate (total) per emission source sector | District heating system: 394,400 t CO_{2}e
 Gas pipeline network: 134,046 t CO_{2}e
 Individual heating systems: 32,564 t CO_{2}e  |
@@ -3563,10 +3411,6 @@ Climate Neutrality Action Plan
 
 |   |  | Biogas production: Biogas sources include agricultural, household, municipal waste, as well as waste from the food, agricultural and forestry industries, wastewater treatment plants, plant residue and waste biomass from industry. Biogas sources are important for sustainable energy supply at the local level, as they reduce the need for fossil fuels. By 2030, approximately 350 GWh/year of gas produced locally from renewable sources will be injected into the distribution gas pipeline network. Identified (local) sources of biomethane include existing biogas plants (including those with capacities for cleaning biogas to biomethane stage) and industrial facilities where biogas is produced as a by-product (some bilateral agreements have already been signed). Hydropower production: It is planned to install (ongoing project activities, construction will begin in 2026) three small hydropower plants (locations: 1-Ambrožev trg, 2-Gruberjev prekop, 3-Sotočje), with a total power capacity of 1.6 MWe on the Ljubljanica river with production of 7 GWh/a. In addition to environmentally friendly electricity production, project would also enable added value in revitalization of the coastal area of Ljubljanica and Grubarjev kanal, thus encourage tourism, river traffic (a closed waterway around Grajski grič) and increased flood safety. Purchase of carbon-free electricity: The remaining electricity consumption not produced by local sources in the City of Ljubljana (solar, hydro, waste-to-energy, cogeneration on biogas/biomass) will be obtained from the market or through power purchase agreements. Only renewable or nuclear electricity with origin certificates will be used. The purchase of zero-emission electricity is planned in a total quantity of approximately 1,533 GWh (all remaining electricity consumed in the public sector, public transport, industry, and business sector, as well as 65% of household electricity consumption). As part of decarbonizing the district heating system, heat pumps represent an important source of thermal energy. To achieve emission reduction targets, the electricity used to power heat pumps must be obtained from renewable sources. Although we strive for energy self-  |
 | --- | --- | --- |
-Climate Neutrality Action Plan
-
-3
-
 |  |  | sufficiency from renewable sources in the city, there may be cases where energy needs cannot be fully met at the local level. According to the projected estimate, we will need approximately 76 GWh/year of green electricity. |
 | --- | --- | --- |
 | Reference to impact pathway | Field of action | Energy systems |
@@ -3582,12 +3426,8 @@ New forms of public-private & community collaborations.
 New finance instruments & profitable business cases. |
 | Implementation | Responsible bodies/person for implementation | City of Ljubljana (Energy manager), Energetika Ljubljana (local district heating and gas distribution company), Elektro Ljubljana (local electricity distribution grid operator), households (self-sufficiency), public and business sector. |
 |  | Action scale & addressed entities | Local scale.
-Power grid, renewable energy generation facilities, power purchase agreements, sources of waste heat. |
+| Power grid, renewable energy generation facilities, power purchase agreements, sources of waste heat. |
 |  | Involved stakeholders | City of Ljubljana, Energetika Ljubljana (local district heating and gas distribution company), Elektro Ljubljana (local electricity distribution grid operator), relevant Ministries, companies, energy service companies, energy producers, households (self-sufficiency). |
-Climate Neutrality Action Plan
-
-4
-
 |   | Comments on implementation – consider mentioning resources, timelines, milestones | Increased investments by private companies and households in local electricity production from renewable sources, primarily solar energy, are anticipated.
 
 The installation of production facilities is planned gradually until 2030 and beyond. Funds for CHP plants will be provided by companies, while rooftop solar power plants owned by the City of Ljubljana and public companies owned by the city (e.g., LPP) will be funded by the city itself. For photovoltaic systems on residential buildings, funding will be provided by owners with the assistance of financial incentives from the Eco Fund (at least 20% of the investment value). The Ministry of Infrastructure will invest in photovoltaics at the new railway station, while hydropower plants on the Ljubljanica river will be financed by Energetika Ljubljana and Elektro Ljubljana. The utilization of waste heat will be funded by Energetika Ljubljana in collaboration with companies. The financial resources for local biogas production will be provided by biogas plants and companies producing renewable gases.
@@ -3602,7 +3442,7 @@ GWh (CHPs on biomass or biogas)
 ,533 GWh (purchased zero-emission electricity)  |
 |   | Removed/substituted energy, volume, or fuel type | Approximately one-third (585 GWh) of the grid-supplied electricity currently produced from fossil sources will be substituted by renewable/zero-emission electricity.  |
 |   | GHG emissions reduction estimate (total) per emission source sector | Local energy production: 130.325 t CO_{2e}
-Purchase of green electricity: 453.332 t CO_{2e}  |
+| Purchase of green electricity: 453.332 t CO_{2e}  |
 |   | GHG emissions compensated (natural or technological sinks) | Not applicable.  |
 |   | Total costs and costs by CO_{2e} unit | 107,959,050 EUR (CAPEX)*
 EUR/t CO_{2e}*  |
@@ -3616,15 +3456,8 @@ B-2.2: Individual action outlines – 1.3
 | --- | --- | --- |
 |   |  Action type | Technical interventions  |
 |   |  Action description | Power system flexibility: With the increasing share of renewable energy sources, the transition to improving the flexibility of the power system is crucial. Flexibility within the system entails the ability to dynamically adjust the production and/or consumption of electricity and heat. By integrating planned measures and collaborating with relevant stakeholders (grid operators, energy producers, and consumers), the power system gains agility and resilience necessary for effectively balancing the dynamics of supply and demand, thereby addressing potential disruptions arising from the potential volatility of renewable energy sources. The flexibility of the power system involves various technical and operational strategies/solutions, such as: (1) advanced energy storage systems, (2) innovative technologies for grid management, (3) development of demand-side management solutions. Energy storage: The implementation of energy storage solutions stands as a pivotal strategy in fortifying grid reliability and fostering the seamless integration of renewable energy sources. Deploying cutting-edge technologies, such as battery storage systems or other advanced storage solutions, plays a crucial role in optimising the energy balance within the grid. Storage systems will serve as reservoirs for capturing surplus energy generated during periods of low demand or high renewable energy output. Subsequently, this stored energy can be efficiently discharged during peak demand times or when renewable sources encounter intermittency, ensuring a continuous and stable supply of electricity. In addition, the versatility of energy storage technologies will contribute to grid stability by providing rapid response capabilities to fluctuations in energy generation, thereby mitigating potential disruptions caused by variability in renewable sources, especially for solar power. Power grid reliability: Sustainable electricity grids that use digital and other advanced technologies to monitor and manage the transport of electricity from all generation sources to meet the varying  |
-
-5
-Climate Neutrality Action Plan
-
-6
-
 |   |  | electricity demands of end users, will help to manage energy transition while reducing the need for costly new grid infrastructure, and help to make grids more resilient and reliable.
-
-Planned installation of new smaller district heating systems and many new individual heating systems utilizing heat pumps will require the construction of new local electrical transformer stations to cover increased power demand.  |
+| Planned installation of new smaller district heating systems and many new individual heating systems utilizing heat pumps will require the construction of new local electrical transformer stations to cover increased power demand.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Energy systems  |
 |   |  Systemic lever | Technology/infrastructure  |
@@ -3642,14 +3475,9 @@ Provision of continuous electricity supply to meet varying demands.  |
 |   |  |   |
 |  Implementation | Responsible bodies/person for implementation | Energetika Ljubljana (local district heating and gas distribution company), Elektro Ljubljana (local electricity distribution grid operator), ELES (Electric power organization company) relevant Ministries.  |
 |   |  Action scale & addressed entities | Local and national scale.
-
-Power grid and other components of the grid (e.g. transformer substations), energy storage systems.  |
+| Power grid and other components of the grid (e.g. transformer substations), energy storage systems.  |
 |   |  Involved stakeholders | City of Ljubljana (Department of economic activities and transportation), Energetika Ljubljana (local district heating and gas distribution company), Elektro Ljubljana (local electricity distribution grid operator), ELES (Electric power organization company), relevant Ministries, energy producers and consumers.  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Increased investments are expected in advanced energy storage systems, the implementation of innovative grid management technologies, and the development of demand-side management solutions. Investments will  |
-Climate Neutrality Action Plan
-
-#
-
 |  B-2.2: Individual action outlines – 1.4  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | Energy efficiency  |
@@ -3659,10 +3487,6 @@ Climate Neutrality Action Plan
 |   |  system is 100% higher than the average energy efficiency of the 2030, but the energy efficiency of the 2030 is 80%. The energy efficiency of the 2030 is 80%, which is 80% higher than the average energy efficiency of the 2030.  |   |
 |   |  and the energy efficiency of the 2030 are 90%. The energy efficiency of the 2030 is 90%, which is 90% higher than the average energy efficiency of the 2030.  |   |
 |   |  and the energy efficiency of the 2030 are 90%. The energy efficiency of the 2030 are 90%. The energy efficiency of the 2030 is 90%. The energy efficiency of the 2030 is 90%. The energy efficiency of the 2030 is 90%. The energy efficiency of the 2030 is 100%. The energy efficiency of the 2030 is 90%. The energy efficiency of the 2030 is 90%. The energy efficiency of the 2030 is 100%  |   |
-Climate Neutrality Action Plan
-
-8
-
 |  Reference to impact pathway | Field of action | Energy systems  |
 | --- | --- | --- |
 |   |  Systemic lever | Technology/infrastructure  |
@@ -3692,8 +3516,7 @@ Introduction of energy-efficient drives, thermal insulation, CHP plants, and low
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | City of Ljubljana (Department of economic activities and transportation), Energetika Ljubljana (local district heating and gas distribution company), Javna razsvetljava Ljubljana (public lighting concessionaire), public institutions, private companies, industry, households.  |
 |   | Action scale & addressed entities | Local scale.
-
-Public lighting network, individual heating devices running on natural gas and wood biomass, district heating system network, HVAC systems, industrial facilities, and buildings.  |
+| Public lighting network, individual heating devices running on natural gas and wood biomass, district heating system network, HVAC systems, industrial facilities, and buildings.  |
 |   | Involved stakeholders | City of Ljubljana (Department of economic activities and transportation), Energetika Ljubljana (local district heating and gas distribution company), Javna razsvetljava Ljubljana (public lighting concessionaire), public institutions, private companies, industry, energy service companies, households.  |
 |   | Comments on implementation – consider mentioning resources, timelines, milestones | There is a planned increase in investment for replacing inefficient light bulbs and implementing a smart system. The funds will be provided by the City of Ljubljana. Each year, a portion of the lighting is replaced and renovated, with the renovation process being gradual, expected to conclude before 2030.
 
@@ -3707,8 +3530,7 @@ Climate Neutrality Action Plan
 0
 
 |   |  | ones will be provided by owners with the help of financial incentives from the Eco Fund (at least 20% of the investment value). An increase in funding for financial incentives is also planned. Replacements will be carried out based on the age and lifespan of existing heating devices.
-
-Increased investments by private companies in energy-efficient heating systems, industrial processes, and heating, ventilation, and air conditioning (HVAC) technology. To implement these measures, it is necessary to obtain subsidies and favourable loans.  |
+| Increased investments by private companies in energy-efficient heating systems, industrial processes, and heating, ventilation, and air conditioning (HVAC) technology. To implement these measures, it is necessary to obtain subsidies and favourable loans.  |
 | --- | --- | --- |
 |  Impact & cost | Generated renewable energy (if applicable) | Not applicable.  |
 |   |  Removed/substituted energy, volume, or fuel type | Public street lighting retrofit: 2,800 MWh/year
@@ -3721,23 +3543,15 @@ District heating system: 3,208 t CO_{2}e
 Industry: 7,551 t CO_{2}e  |
 |   |  GHG emissions compensated (natural or technological sinks) | Not applicable.  |
 |   |  Total costs and costs by CO_{2}e unit | 132,339,000 EUR (CAPEX)
-,915 EUR/t CO_{2}e  |
+| ,915 EUR/t CO_{2}e  |
 |  **B-2.2: Individual action outlines – 1.5**  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | **Energy Management**  |
 |   |  Action type | Technical interventions, other interventions  |
 |   |  Action description | **Energy management systems:**
-Energy management involves oversight and strategic control over energy resources and operations, aimed at maximising efficiency and fostering sustainable energy utilisation. This encompassing approach comprises a spectrum of actions and tools, ranging from monitoring and analysis of energy consumption patterns to conducting thorough energy audits. It also involves setting ambitious targets for optimising energy use, implementing tailored measures to curtail consumption, and assessing the outcomes  |
-Climate Neutrality Action Plan
-
-1
-
+| Energy management involves oversight and strategic control over energy resources and operations, aimed at maximising efficiency and fostering sustainable energy utilisation. This encompassing approach comprises a spectrum of actions and tools, ranging from monitoring and analysis of energy consumption patterns to conducting thorough energy audits. It also involves setting ambitious targets for optimising energy use, implementing tailored measures to curtail consumption, and assessing the outcomes  |
 |   | achieved. The outlined measures are projected for implementation across diverse sectors, notably in commercial buildings and facilities, institutional infrastructures, and within the manufacturing and construction industries. These sectors stand as important areas where energy efficiency can be realised through the application of targeted energy management strategies. In projecting the impact of these measures, we estimate conservatively a saving of 0,5% across all energy sources. Organizations, municipalities, and institutions may also choose to certify their operations, for example, with ISO 50001. In accordance with the proposed Energy Efficiency Directive, member states will be required to ensure that companies whose average annual consumption over the last three years exceeds 85 TJ considering all energy sources, implement an energy management system. It will also be required that companies establish an energy management system no later than October 11, 2027. For companies with an average annual consumption exceeding 10 TJ over the last three years and not using an energy management system, an energy audit will be required. An energy audit (for example as per ISO 50002), is a systematic process used to evaluate an organisation's (or building's) energy use and consumption patterns. It's a valuable tool for organisations systematically seeking to reduce energy consumption, lower costs, and enhance their overall sustainability efforts. Energy audit typically involves: (1) planning and preparation, (2) data collection and analysis, (3) on-site inspections and measurements, (4) identifying energy saving opportunities, (5) evaluation and recommendations, (6) follow-up and monitoring. It is assumed that the cumulative annual effect of performing energy audits is 1% of electricity savings and 0.5% of heating energy savings. An energy audit is the initial and essential step in implementing measures for efficient energy use. Active consumer of thermal and electrical energy: The goal of the measure is to enable active participation of heat and electricity consumers through collective action via aggregators in schemes that consider their energy production, consumption, storage, or energy sales. Additionally, the introduction of a dynamic tariff system will alter the behaviour of individual  |
 | --- | --- |
-Climate Neutrality Action Plan
-
-2
-
 |   |  | consumers, e.g., a bonus/penalty system within the tariff structure will incentivize consumers to adopt lower temperature regimes and use energy-efficient equipment. Thus, becoming an "active consumer" will be a strong emphasis of the energy policy of the City of Ljubljana. Under appropriate circumstances, the transition to a climate-neutral energy system will enable many more consumers to actively engage in the energy system by managing their own energy demand, production, and consumption. Active participation in the market can reduce one's carbon footprint and, in many cases, energy costs as well. The more active role of consumers, especially in cooperative models, could also bring significant social benefits. Within the measure, active participation of heat and electricity consumers through aggregators in schemes that consider their energy production, consumption, storage, or energy sales is planned.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Energy systems  |
@@ -3750,11 +3564,8 @@ Climate Neutrality Action Plan
 |   |  | Introduction of dynamic tariff system to alter consumer behaviour.  |
 |   |  | Active participation of consumers through aggregators in schemes considering energy production, consumption, storage, or energy sales.  |
 |  Implementation | Responsible bodies/person for implementation | City of Ljubljana (Energy manager), relevant Ministries, Energy agency, Energetika Ljubljana (local district heating and gas distribution company), Elektro Ljubljana (local electricity distribution grid operator), public institutions, commercial buildings, industry.  |
-Climate Neutrality Action Plan
-
 |   | Action scale & addressed entities | Local scale.
-
-Business buildings and equipment for measurements and management of energy systems, electrical grid, district heating system network.  |
+| Business buildings and equipment for measurements and management of energy systems, electrical grid, district heating system network.  |
 | --- | --- | --- |
 |   | Involved stakeholders | City of Ljubljana (Energy manager), relevant Ministries, Energy agency, Energetika Ljubljana (local district heating and gas distribution company), Elektro Ljubljana (local electricity distribution grid operator), public institutions, commercial buildings, industry.  |
 |   | Comments on implementation – consider mentioning resources, timelines, milestones | Energy management is provided in buildings owned by the City of Ljubljana, with gradual expansion planned for other buildings as well. Energy audits are carried out gradually according to the building renovation plan. Funding is provided by the City of Ljubljana.
@@ -3769,13 +3580,7 @@ Convincing energy consumers to become active participants, with an emphasis on r
 |   | GHG emissions reduction estimate (total) per emission source sector | 3,759 t CO_{2e}  |
 |   | GHG emissions compensated (natural or technological sinks) | Not applicable.  |
 |   | Total costs and costs by CO_{2e} unit | 4,116,667 EUR (CAPEX)
-,095 EUR/t CO_{2e}  |
-
-3
-Climate Neutrality Action Plan
-
-4
-
+| ,095 EUR/t CO_{2e}  |
 |  B-2.2: Individual action outlines – 1.6  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | Negative emissions  |
@@ -3787,17 +3592,11 @@ The capture of CO_{2} emissions will be conducted at the main energy production 
 |  Reference to impact pathway | Field of action | Energy systems  |
 |   | Systemic lever | Technology/infrastructure, learning & capabilities  |
 |   | Outcome (according to module B-1.1) | Examine carbon capture and utilisation and implementation possibilities.
-
-Implementation of a pilot project for carbon capture and utilisation.  |
+| Implementation of a pilot project for carbon capture and utilisation.  |
 |  Implementation | Responsible bodies/person for implementation | Energetika Ljubljana (local district heating and gas distribution company).  |
 |   | Action scale & addressed entities | Local scale.
-
-Production sources for the district heating system.  |
+| Production sources for the district heating system.  |
 |   | Involved stakeholders | City of Ljubljana (Energy manager), Energetika Ljubljana (local district heating and gas distribution company), relevant industrial companies (chemical, construction materials, etc.).  |
-Climate Neutrality Action Plan
-
-5
-
 |   | Comments on implementation – consider mentioning resources, timelines, milestones | Technologies in the field of CCU are only at the beginning of commercial application (however, many pilot projects in operation across EU). In this regard, we will closely monitor development in relevant technological field and implement the best available technologies. In the next years necessary pre-investment steps will be made. On the other hand, we will establish close cooperation with (local) industrial players who will use captured CO_{2}.  |
 | --- | --- | --- |
 |   |  | To develop and implement pilot projects, it is necessary to establish partnerships with industry and energy companies and obtain European and national funding.  |
@@ -3806,7 +3605,7 @@ Climate Neutrality Action Plan
 |   | GHG emissions reduction estimate (total) per emission source sector | Not applicable.  |
 |   | GHG emissions compensated (natural or technological sinks) | 394,616 t CO_{2}e/year  |
 |   | Total costs and costs by CO_{2}e unit | 51,300,097 EUR (CAPEX)
-EUR/t CO_{2}e  |
+| EUR/t CO_{2}e  |
 |  B-2.2: Individual action outlines – 1.7  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | Organizational, incentive, and awareness-raising measures  |
@@ -3822,17 +3621,13 @@ Climate Neutrality Action Plan
 |   | In collaboration with educational institutions, we will organize training and education programs for skilled workers in this field and promote research and innovation for the development of new technologies and business models.  |
 | --- | --- |
 |   | **Energy poverty:**
-The measure will be implemented based on the comprehensive national Action plan for reducing energy poverty for a three-year period in Slovenia, November 2023, which includes all measures to alleviate energy poverty, such as investment incentives for energy efficiency and renewable energy measures, project office with regional advisory points, informal information and awareness network, energy counselling, financial assistance, energy literacy, assistance with energy cost payments, expanding the purpose of emergency cash social assistance to reduce energy poverty, as well as other organizational measures, such as the establishment of an energy poverty council. The measure is also addressed in the Local energy concept of the City of Ljubljana.  |
+| The measure will be implemented based on the comprehensive national Action plan for reducing energy poverty for a three-year period in Slovenia, November 2023, which includes all measures to alleviate energy poverty, such as investment incentives for energy efficiency and renewable energy measures, project office with regional advisory points, informal information and awareness network, energy counselling, financial assistance, energy literacy, assistance with energy cost payments, expanding the purpose of emergency cash social assistance to reduce energy poverty, as well as other organizational measures, such as the establishment of an energy poverty council. The measure is also addressed in the Local energy concept of the City of Ljubljana.  |
 |   | **Energy communities:**
-Promoting the establishment of energy communities within the framework of demonstrating potentials and feasibility in the Energy-Climate Atlas. The measure enhances energy self-sufficiency and reduces carbon footprint, encourages collaboration and networking among residents, and contributes to greater awareness of the importance of sustainable energy use and climate actions at the local level.  |
+| Promoting the establishment of energy communities within the framework of demonstrating potentials and feasibility in the Energy-Climate Atlas. The measure enhances energy self-sufficiency and reduces carbon footprint, encourages collaboration and networking among residents, and contributes to greater awareness of the importance of sustainable energy use and climate actions at the local level.  |
 |   | **Energy consulting office:**
-The Energy advisory office is a service offered by the city in collaboration with the state, aimed at informing and advising residents and businesses on energy efficiency, renewable energy sources and other areas of sustainable energy. Services include individual counselling, information on subsidies and favourable loans for energy renovations, educational events, assistance in selecting and installing appropriate energy-saving technologies. The purpose of the energy advisory office is to promote reduced energy consumption, the use of renewable energy sources and contribute to the transition to a more sustainable energy future.  |
+| The Energy advisory office is a service offered by the city in collaboration with the state, aimed at informing and advising residents and businesses on energy efficiency, renewable energy sources and other areas of sustainable energy. Services include individual counselling, information on subsidies and favourable loans for energy renovations, educational events, assistance in selecting and installing appropriate energy-saving technologies. The purpose of the energy advisory office is to promote reduced energy consumption, the use of renewable energy sources and contribute to the transition to a more sustainable energy future.  |
 |   | **Research/educational content:**
-Research topics in the field of energy encompass diverse aspects, including  |
-Climate Neutrality Action Plan
-
-7
-
+| Research topics in the field of energy encompass diverse aspects, including  |
 |  |  | technological, infrastructural, sociological, and psychological dimensions. This involves studying the impact of technological and infrastructural innovations on energy efficiency and analysing the societal and psychological factors influencing energy consumption. Additionally, strategies are being developed to promote sustainable habits, and the issue of energy poverty is being addressed. These activities aim to take a comprehensive approach to understanding and addressing the challenges of sustainable energy in urban environments. |
 | --- | --- | --- |
 | Reference to impact pathway | Field of action | Energy systems |
@@ -3850,10 +3645,6 @@ Analysis of societal and psychological factors influencing energy consumption.
 Development of strategies to promote sustainable habits and address energy poverty. |
 | Implementation | Responsible bodies/person for implementation | City of Ljubljana (Energy manager), Energy consulting office (ENSVET), relevant Ministries, private companies, University and research institutes. |
 | Action scale & addressed entities | National and local scale. |
-Climate Neutrality Action Plan
-
-8
-
 |   |  | Residents, vulnerable social groups, government employees, high school and university students, academics, other energy consumers.  |
 | --- | --- | --- |
 |   |  Involved stakeholders | City of Ljubljana, relevant Ministries, public organizations, private companies, University, and research institutes, residents.  |
@@ -3883,23 +3674,15 @@ B-2.2: Individual action outlines – 2.1
 | --- | --- | --- |
 |   |  Action type | Physical/spatial interventions, other interventions  |
 |   |  Action description | Enhancing urban public bus transportation: Improvement measures for urban public bus transportation include several steps: (1) Introduction of new routes - new tangential lines such as Šiška-Bežigrad-BTC (along the northern ring corridor), Vič-Šiška, Vič-Rudnik, and Šiška-Bežigrad (along the Drenikova and Topniška corridors). (2) Increasing bus frequency on main routes - during peak hours, the frequency of departures will be 5 minutes or less on all main roads (Dunajska, Celovška, Tržaška, Barjanska, Dolenjska, Zaloška, and Šmartinska). (3) Implementation of additional dedicated bus lanes between the new Ljubljana Passenger Center and the ring on major corridors (Dunajska, Celovška, Tržaška, Barjanska, Zaloška, Šmartinska, and Dolenjska), which will improve travel times by 20%. (4) Smart traffic light management system prioritizing public transportation vehicles at intersections. (5) Introduction of longer vehicles to accommodate more passengers (currently not regulated by law, expected to be addressed in the Integrated National Energy and Climate Plan of the Republic of Slovenia). (6) The option to board through all doors, which will enable shorter stops at stations. (7) Adjustment of bus schedules and timetables for better integration with intercity buses and trains. (8) Conducting comprehensive and individual studies to ensure compliance with public transportation planning, such as introducing new routes, road reconstruction for specific measures, and as a whole. These efforts aim to increase the mileage of urban passenger vehicles by up to 50%, focusing on route rationalization and fleet optimization, resulting in a daily increase in transported passengers to 250,000. The overall goal is to make public transportation more attractive and reduce travel time for passengers.
-Improving railway public transport: The development of railway infrastructure is the responsibility of the state, which in recent years has been intensively renovating and upgrading railway lines throughout Slovenia. State plans for the railway hub in the Ljubljana area include the introduction of double tracking and electrification on all existing railway connections between Ljubljana and other regional centres. These measures aim to  |
-Climate Neutrality Action Plan
-
-0
-
+| Improving railway public transport: The development of railway infrastructure is the responsibility of the state, which in recent years has been intensively renovating and upgrading railway lines throughout Slovenia. State plans for the railway hub in the Ljubljana area include the introduction of double tracking and electrification on all existing railway connections between Ljubljana and other regional centres. These measures aim to  |
 |   | increase the speed of passenger trains, optimize traffic, and reduce delays. Additionally, the introduction of an integrated timetable is envisaged, based on precise schedules of train arrivals and departures at individual stations. By adding three new stations to the existing railway infrastructure, the concept of light rail will be incorporated, offering improved accessibility, and facilitating travel within the city. These stations will be carefully selected and organized to ensure seamless transfers between different forms of public transport and other modes of mobility. The main goal of coordinated railway transportation in the future is to optimize the use of infrastructure, increase timetable accuracy, and enhance the efficiency and reliability of railway transportation.  |
 | --- | --- |
 |  **Renovation of the main bus and train station:**
-In the heart of Ljubljana, the Ljubljana Passenger Centre (PCL) will be established as the central hub for passengers using public transportation (the investment is expected to be completed by the end of 2025). The broader area around the main bus and train stations will undergo a complete transformation, with new green spaces and safer traffic zones. The project is fully aligned with the guidelines of sustainable urban mobility, with all road expansions and new configurations designed exclusively for public transit (no roads will be widened for personal vehicles). Plans prioritize cyclists and pedestrians, incorporating new areas to enhance safety for all traffic participants and additional greening of spaces, including tree-lined streets and squares in the surrounding area.  |   |
+| In the heart of Ljubljana, the Ljubljana Passenger Centre (PCL) will be established as the central hub for passengers using public transportation (the investment is expected to be completed by the end of 2025). The broader area around the main bus and train stations will undergo a complete transformation, with new green spaces and safer traffic zones. The project is fully aligned with the guidelines of sustainable urban mobility, with all road expansions and new configurations designed exclusively for public transit (no roads will be widened for personal vehicles). Plans prioritize cyclists and pedestrians, incorporating new areas to enhance safety for all traffic participants and additional greening of spaces, including tree-lined streets and squares in the surrounding area.  |   |
 |  **Establishment of river public transport:**
-To diversify public transport options within the wider city centre, the project includes the establishment of a circular route along the Ljubljanica river. This initiative includes measures to electrify river transport, such as procuring 10 dedicated electric vessels for public transport, developing river infrastructure, and implementing grid connections, electric charging infrastructure (120 kW), and battery storage solutions. The circular route around the city centre area will be approximately 12 km long.  |   |
+| To diversify public transport options within the wider city centre, the project includes the establishment of a circular route along the Ljubljanica river. This initiative includes measures to electrify river transport, such as procuring 10 dedicated electric vessels for public transport, developing river infrastructure, and implementing grid connections, electric charging infrastructure (120 kW), and battery storage solutions. The circular route around the city centre area will be approximately 12 km long.  |   |
 |  **Implementation of a unified ticketing system for all passengers:**
-The introduction of a unified ticketing system for all passengers enables the use of a single  |   |
-Climate Neutrality Action Plan
-
-1
-
+| The introduction of a unified ticketing system for all passengers enables the use of a single  |   |
 |   |  | ticket for various modes of transportation, promoting easy access and enhancing the attractiveness and user-friendliness of public transportation. The ticketing system will encourage the use of public transport, reduce congestion, promote sustainability, and improve the overall quality of urban mobility.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Mobility & transport  |
@@ -3938,7 +3721,7 @@ Climate Neutrality Action Plan
 |  Implementation | Responsible bodies/person for implementation | The City of Ljubljana (Department of economic activities and transport, Spatial planning department), LPP Ltd. (Ljubljana Passenger Transport), the Ministry of Infrastructure, Slovenian Railways Ltd.  |
 | --- | --- | --- |
 |   |  Action scale & addressed entities | Local and regional scale.
-Bus network, buses, traffic safety equipment, railway infrastructure, electric trains, Ljubljana passenger centre, electric boats, public transport tickets, river infrastructure for public transport.  |
+| Bus network, buses, traffic safety equipment, railway infrastructure, electric trains, Ljubljana passenger centre, electric boats, public transport tickets, river infrastructure for public transport.  |
 |   |  Involved stakeholders | The City of Ljubljana (Department of economic activities and transport, Spatial planning department), LPP Ltd. (Ljubljana Passenger Transport), the Ministry of Infrastructure, Slovenian Railways Ltd, residents, city visitors and commuting workers, non-governmental organizations, research institutes.  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | The planned increase in investments in improving urban transportation includes the introduction of new lines, increased bus frequency, and travel time improvements. Simultaneously, further investment is anticipated for expanding the fleet with the aim of increasing the number of passengers transported daily. Funds for the implementation of measures have already been allocated by the City of Ljubljana and Ljubljana Passenger Transport for the gradual implementation of measures.
 
@@ -3949,17 +3732,11 @@ The renovation of the main bus and train station is in the preparation phase for
 To implement the measures, it is necessary to integrate infrastructure into space, which may take a longer time. Some measures are long-term, especially the modernisation of railway infrastructure, and will not be fully implemented by 2030.  |
 |  Impact & cost | Generated renewable energy (if applicable) | Not applicable.  |
 |   |  Removed/substituted energy, volume, or fuel type | Reduction of personal traffic: 278,797 MWh/year  |
-
-2
-Climate Neutrality Action Plan
-
-#
-
 |   | GHG emissions reduction estimate (total) per emission source sector | Reduction of personal traffic: 73,265 t CO2e/year  |
 | --- | --- | --- |
 |   |  GHG emissions compensated (natural or technological sinks) | Not applicable.  |
 |   |  Total costs and costs by CO2e unit | 554,086,559 EUR (CAPEX)
-,563 EUR/ t CO2e  |
+| ,563 EUR/ t CO2e  |
 |  B-2.2: Individual action outlines – 2.2  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | Improving green mobility and managing accessibility  |
@@ -4016,8 +3793,7 @@ Expansion or enhancement of transport services for mobility-impaired individuals
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | The City of Ljubljana (Department of economic activities and transport, Spatial planning department), LPP Ltd. (Ljubljana Passenger Transport), Ministry of Infrastructure, private companies, providers of electric vehicle and bike rental services.  |
 |   | Action scale & addressed entities | Local and regional scale.
-
-Users of personal vehicles, users of public transportation, users of mobility services (e.g. car sharing), new parking lots, parking policy.  |
+| Users of personal vehicles, users of public transportation, users of mobility services (e.g. car sharing), new parking lots, parking policy.  |
 |   | Involved stakeholders | The City of Ljubljana (Department of economic activities and transport, Spatial planning department), LPP Ltd. (Ljubljana Passenger Transport), Ministry of Infrastructure, private companies, providers of electric vehicle and bike rental services, users of mobility services.  |
 |   | Comments on implementation – consider mentioning resources, timelines, milestones | City of Ljubljana must implement measures to reduce personal road traffic and to increase the use of public transportation. This involves enhancing awareness and promotion to encourage the use of public transportation.
 
@@ -4025,34 +3801,26 @@ The measures will be implemented gradually, along with the improvement of public
 
 Funding for measures related to the City of Ljubljana and LPP Ltd. has been secured, and projects are already underway.  |
 |  Impact & cost | Generated renewable energy (if applicable) | Not applicable.  |
-
-5
-Climate Neutrality Action Plan
-
-6
-
 |   | Removed/substituted energy, volume, or fuel type | Reduction of personal traffic: 200,718 MWh/year  |
 | --- | --- | --- |
 |   |  GHG emissions reduction estimate (total) per emission source sector | Reduction of personal traffic: 51,012 t CO2e/year  |
 |   |  GHG emissions compensated (natural or technological sinks) | Not applicable.  |
 |   |  Total costs and costs by CO2e unit | 17,139,344 EUR (CAPEX)
-EUR/ t CO2e  |
+| EUR/ t CO2e  |
 |  B-2.2: Individual action outlines – 2.3  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | Decarbonisation of road and other motor vehicles  |
 |   |  Action type | Technical interventions  |
 |   |  Action description | Modernisation and decarbonization of urban and suburban public bus transportation:
-By 2030, the replacement of all city buses currently running on diesel fuel with clean and zero-emission vehicles is planned. It is expected that by 2030, 49% of the city bus fleet will operate on hydrogen or electricity generated from renewable energy sources. This measure will contribute to reducing CO2e emissions in the entire fleet by over 50%.  |
+| By 2030, the replacement of all city buses currently running on diesel fuel with clean and zero-emission vehicles is planned. It is expected that by 2030, 49% of the city bus fleet will operate on hydrogen or electricity generated from renewable energy sources. This measure will contribute to reducing CO2e emissions in the entire fleet by over 50%.  |
 |   |   |  At the same time, by 2030, the replacement of the currently predominant compressed natural gas (a fossil fuel) with biomethane, which is a carbon-neutral fuel, is anticipated. According to the strategy, buses operating on biomethane are expected to represent 51% of the fleet by 2030.  |
 |   |   |  With the combination of transitioning from natural gas to biomethane and the introduction of zero-emission vehicles, the complete decarbonization of the fleet is envisioned.  |
 |   |   |  Decarbonization of vehicles owned by the City of Ljubljana, public institutions, and public companies:
-The measure involves the modernization and decarbonization of the fleet of the city administration, public companies, and institutions. The plan includes upgrading the existing fleet with environmentally friendly vehicles. Implementation of the measure entails transitioning to electricity for personal, light-duty, and medium-duty vehicles, as well as using biomethane for heavy-duty vehicles (e.g., garbage trucks).  |
+| The measure involves the modernization and decarbonization of the fleet of the city administration, public companies, and institutions. The plan includes upgrading the existing fleet with environmentally friendly vehicles. Implementation of the measure entails transitioning to electricity for personal, light-duty, and medium-duty vehicles, as well as using biomethane for heavy-duty vehicles (e.g., garbage trucks).  |
 |   |   |  Charging infrastructure for electric and hydrogen vehicles:  |
 |   |   |  |
 |   |   |  |
 |   |  |   |
-Climate Neutrality Action Plan
-
 |   | The measure encompasses the installation of charging stations and centres for electric vehicles, as well as the establishment of charging infrastructure for electric and hydrogen-powered public transportation vehicles.
 
 The plan includes the deployment of numerous new charging stations for personal and commercial vehicles with charging power up to 22 kW at existing parking areas, along with high-power charging centres for fast charging (150 and 350 kW). These charging stations will be set up in collaboration with existing charging infrastructure providers.
@@ -4068,12 +3836,6 @@ To achieve the goals of reducing greenhouse gas emissions by 2030 and beyond, ra
 
 Electricity is expected to play a key role, with the aim of having at least 35% of kilometres travelled by personal vehicles powered by electricity, while hydrogen is projected to cover 10%. Hybrid vehicles will contribute 10% of kilometres travelled, as will biomethane. Vehicles running on diesel and gasoline together will account for the remaining 35% of  |
 | --- | --- |
-
-7
-Climate Neutrality Action Plan
-
-8
-
 |   | all kilometres travelled by personal vehicles in the Ljubljana area.
 
 The transition to sustainable fuels must be carried out at a broader national level, as municipalities have no direct influence on transit traffic. To promote this transformation, it is crucial for national and regional authorities to implement effective strategies that offer incentives and subsidies. National initiatives, including financial incentives for transitioning to zero-emission energy sources in transportation, as well as the construction of infrastructure for charging electric vehicles, hydrogen, and biomethane, will play a key role in reducing greenhouse gas emissions and shaping a more environmentally friendly personal transportation system.
@@ -4089,8 +3851,6 @@ In the case of buses, diesel fuel is expected to maintain the largest share (40%
 
 Transitioning solely to alternative energy sources in road transport can effectively contribute to reducing greenhouse gas emissions and achieving the goals of sustainable (carbon-neutral) mobility.  |
 | --- | --- |
-Climate Neutrality Action Plan
-
 |   |  | Decarbonisation of agricultural machinery: The measure focuses on reducing the consumption of fossil fuels in agriculture. It includes the use of alternative energy sources, such as biomethane or electricity, to power agricultural vehicles, tractors, combines, and other agricultural machinery. The goal of the measure is to replace at least 1/3 of the current diesel fuel consumption with alternative sources. Implementing this measure requires financial support mechanisms, raising awareness among farmers about the benefits of using renewable energy sources, and infrastructure measures for charging or supplying these energy sources.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Mobility & transport  |
@@ -4117,8 +3877,7 @@ Enhanced financial support will be pursued through national and international po
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | The City of Ljubljana, public institutions and companies owned by the city, LPP Ltd. (Ljubljana Passenger Transport), private companies (e.g. charging infrastructure providers, public transportation providers, cargo carriers), residents, city visitors and commuting workers.  |
 |   |  Action scale & addressed entities | Local, regional, and national scale.
-
-Passenger cars, buses, trucks, agricultural machinery, charging infrastructure.  |
+| Passenger cars, buses, trucks, agricultural machinery, charging infrastructure.  |
 |   |  Involved stakeholders | The City of Ljubljana, public institutions and companies owned by the city, LPP Ltd. (Ljubljana Passenger Transport), Eco Fund (Slovenian Environmental Public Fund), private companies (e.g. charging infrastructure providers, public transportation providers, cargo carriers), residents, city visitors and commuting workers.  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Planned is increased investment in zero-emission vehicles and infrastructure. Adequate incentives and loans are needed for the successful implementation of measures.
 
@@ -4127,14 +3886,7 @@ Funding for measures related to the City of Ljubljana, public institutions, city
 Every year, funds are also allocated by the Eco Fund for sustainable mobility and zero-emission vehicles. To achieve the goals of sustainable mobility, it is crucial to increase these funds and direct them towards measures to promote the use of environmentally friendly modes of transport and reduce greenhouse gas emissions.  |
 |  Impact & cost | Generated renewable energy (if applicable) | Not applicable.  |
 |   |  Removed/substituted energy, volume, or fuel type | Personal vehicles: 516,167 MWh/year
-
-Light commercial vehicles: 69,554 MWh/year  |
-
-0
-Climate Neutrality Action Plan
-
-1
-
+| Light commercial vehicles: 69,554 MWh/year  |
 |   | GHG emissions reduction estimate (total) per emission source sector | Urban and suburban buses: 17,001 t CO2e/year  |
 | --- | --- | --- |
 |   |   |  City-owned vehicles: 4,024 t CO2e/year  |
@@ -4144,17 +3896,13 @@ Heavy-duty vehicles: 71,180 t CO2e/year
 Intercity buses: 3,717 t CO2e/year  |
 |   | GHG emissions compensated (natural or technological sinks) | Not applicable.  |
 |   | Total costs and costs by CO2e unit | 4,618,430,232 EUR (CAPEX)
-,314 EUR/ t CO2e  |
+| ,314 EUR/ t CO2e  |
 |  B-2.2: Individual action outlines – 2.4  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | Improving infrastructure for cyclists and pedestrians  |
 |   |  Action type | Physical/spatial interventions, other interventions  |
 |   |  Action description | Improving conditions for cyclists and pedestrians:
-The main goal of this measure is to reduce resistance to cycling and walking by 20%, thereby improving the overall experience and safety of walking and cycling. The measure includes numerous activities such as: (1) Improving existing cycling infrastructure (capacity, connectivity, safety, maintenance, renewal). (2) Expanding the cycling network (within the city and regionally) and connecting to national cycling routes. (3) Establishing green mobility corridors - away from main roads. (4) Providing bicycle parking facilities and bicycle storage (including secure facilities). (5) Expanding the network of bike-sharing systems (conventional and e-bikes). (6) Extending the network of one-way streets where cycling against the flow of other vehicles is allowed (contraflow). (7) Establishing new pedestrian areas (pedestrian zones). (8) Expanding pedestrian areas outward from the city centre into residential neighbourhoods. (9) Building new bridges, especially for walking and cycling, to shorten routes for non-motorized traffic. (10) Providing safety measures on school routes and in their vicinity. (11) Conducting a study focused on defining corridors that are crucial for pedestrian and cycling routes. (12) Strategic analysis of cycling needs and infrastructure, aiming to accommodate reduced use of private vehicles and increased demand for cycling. (13) Conducting a study to assess the accessibility  |
-Climate Neutrality Action Plan
-
-2
-
+| The main goal of this measure is to reduce resistance to cycling and walking by 20%, thereby improving the overall experience and safety of walking and cycling. The measure includes numerous activities such as: (1) Improving existing cycling infrastructure (capacity, connectivity, safety, maintenance, renewal). (2) Expanding the cycling network (within the city and regionally) and connecting to national cycling routes. (3) Establishing green mobility corridors - away from main roads. (4) Providing bicycle parking facilities and bicycle storage (including secure facilities). (5) Expanding the network of bike-sharing systems (conventional and e-bikes). (6) Extending the network of one-way streets where cycling against the flow of other vehicles is allowed (contraflow). (7) Establishing new pedestrian areas (pedestrian zones). (8) Expanding pedestrian areas outward from the city centre into residential neighbourhoods. (9) Building new bridges, especially for walking and cycling, to shorten routes for non-motorized traffic. (10) Providing safety measures on school routes and in their vicinity. (11) Conducting a study focused on defining corridors that are crucial for pedestrian and cycling routes. (12) Strategic analysis of cycling needs and infrastructure, aiming to accommodate reduced use of private vehicles and increased demand for cycling. (13) Conducting a study to assess the accessibility  |
 |   |  | of public services in urban neighbourhoods, to improve pedestrian access to facilities such as shops, post offices, kindergartens, and recreational areas. (14) Further development of themed cycling paths and pedestrian routes.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Mobility & transport  |
@@ -4173,10 +3921,6 @@ Climate Neutrality Action Plan
 |   |  | Active promotion and encouragement of user engagement and participation in pedestrian and cycling infrastructure.  |
 |   |  | Introduction of pilot projects to test proposed improvements and collect user feedback.  |
 |   |  | Robust citizen engagement and participation will be actively promoted and encouraged.  |
-Climate Neutrality Action Plan
-
-#
-
 |  Implementation | Responsible bodies/person for implementation | The City of Ljubljana (Department of economic activities and transport, Spatial planning department), Ministry of Infrastructure, private companies (e.g. bicycle rental providers).  |
 | --- | --- | --- |
 |   |  Action scale & addressed entities | Local and regional scale. Cycling and pedestrian infrastructure, pedestrian zones, bike parking and bike shelters, bicycles.  |
@@ -4194,20 +3938,12 @@ B-2.2: Individual action outlines – 2.5
 | --- | --- | --- |
 |   |  Action type | Other interventions  |
 |   |  Action description | Promoting sustainable mobility: Measures to promote sustainable mobility include promotion and campaigns to encourage cycling, walking, the use of vehicles powered by renewable energy sources, and public transportation. Development of a Sustainable urban mobility plan (SUMP): A new Sustainable urban mobility plan (SUMP) for the City of Ljubljana will be prepared in cooperation with various stakeholders, defining  |
-Climate Neutrality Action Plan
-
-4
-
 |   | objectives and specific actions, as well as monitoring and reporting.  |
 | --- | --- |
 |  **Research/educational content:** Research and educational activities encompass various aspects, including technological, infrastructural, sociological, and psychological aspects. This involves exploring the impact of technological and infrastructural innovations on sustainable mobility, analysing social and psychological factors influencing transportation choices, and developing strategies to promote sustainable habits, as well as aspects such as transport poverty, etc. Through these activities, the aim is to adopt a comprehensive approach to understanding and addressing the challenges of sustainable mobility in urban environments.  |   |
 |  **Transport poverty:** Current city policies and activities address transport poverty through measures such as accessible public transportation, developed and accessible cycling infrastructure, subsidized tickets, etc. The subject action plan includes additional measures to further reduce transport poverty. The upcoming national action plan to reduce transport poverty will provide an even more comprehensive approach to addressing transport poverty systematically, both at the national and local levels.  |   |
 |  **Establishment of the sustainable mobility department:** The establishment of the Sustainable Mobility Department in the City of Ljubljana follows the global trend of other cities around the world that recognise the importance of sustainable mobility in improving the quality of life of their citizens and reducing the negative impact of transport on the environment. Such a department allows for a holistic approach to planning and implementing transport policies and facilitates coordinated action between different sectors and stakeholders in the city. This helps to achieve the objectives of sustainable development, reduce greenhouse gas emissions, and create a healthier and more pleasant urban environment for all residents.  |   |
 |  **Coordinating the needs of users who gravitate towards the City of Ljubljana:** Coordinating the needs of users gravitating to the City of Ljubljana involves analysing and adjusting parking options and other forms of sustainable mobility according to the users' requirements in municipalities before entering  |   |
-Climate Neutrality Action Plan
-
-5
-
 |   |  | the City of Ljubljana. The measure includes the following activities: (1) Establishing a working group to coordinate needs. (2) Creating community studies and models that will provide key information to decision-makers, also from the perspective of planning and placing infrastructure outside the borders of City of Ljubljana. (3) Active participation of the City of Ljubljana in broader working groups (Republic of Slovenia, Ljubljana Urban Region, etc.) to determine necessary measures.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Mobility & transport  |
@@ -4221,7 +3957,7 @@ Establishment of the Sustainable Mobility Department to holistically plan and im
 Coordination of user needs outside the City of Ljubljana to adjust parking and mobility options accordingly.  |
 |  Implementation | Responsible bodies/person for implementation | The City of Ljubljana (Department of economic activities and transport, Spatial planning department), Ministry of environment, climate and energy.  |
 |   |  Action scale & addressed entities | Local and regional scale.
-Traffic participants and traffic infrastructure planners.  |
+| Traffic participants and traffic infrastructure planners.  |
 |   |  Involved stakeholders | The City of Ljubljana (Department of economic activities and transport, Spatial planning department), Ministry of environment, climate and energy, non-governmental organizations in the field of transportation, cyclists and pedestrians, other interested stakeholders.  |
 Climate Neutrality Action Plan
 
@@ -4238,10 +3974,6 @@ Climate Neutrality Action Plan
 |   |   |  increase waste management costs.  |
 |   |   |  to reduce waste, and reduce waste management costs.  |
 |  to reduce waste, and reduce waste management costs.  |   |   |
-Climate Neutrality Action Plan
-
-7
-
 |   | more sustainable and responsible society. The measures include the following: (1) Opening 5 zero-waste stores. (2) Ensuring the operation of 5 reuse centres with Repair Cafes. (3) Launching a Sustainable Office in each neighbourhood community (advisors for societal transformation). (4) All business gifts in city administration, public companies, and city institutions will be sustainable and locally made. (5) Directing hotels and other accommodation facilities to obtain the Zero Waste certificate (3 units per year). (6) Establishing a network of bicycle repair services. (7) Implementing a Sustainable City Card for the socially vulnerable and young, allowing repairs of clothing, bicycles, electronic equipment (e.g., 40 EUR/3 months). Reduction of household mixed municipal waste to less than 80 kg per capita per year: The aim of the measure is to reduce the amount of mixed municipal household waste to less than 80 kg per capita annually. At the same time, we focus on the rational use of resources, with the most important aspect being the reduction of their consumption. Emphasis is placed on raising awareness among users about the three key priorities of waste management: waste prevention, reuse, and recycling. To raise awareness among users, we will conduct 4 communication campaigns annually, each targeting a specific theme (food, clothing, etc.). Additionally, a model for the collection and material processing of used diapers will be established (households and public institutions). Reduction of single-use plastic: To reduce the use of single-use plastics, several activities will be implemented. (1) The creation of a handbook for organizing sustainable events is planned, providing guidelines for organizing environmentally friendly gatherings. (2) Co-financing of events promoting plastic reduction and sustainable waste management is planned, along with the establishment of packaging-free sales points to encourage waste reduction and the use of reusable packaging. (3) The installation of sales points, beverage vending machines, and bulk dispensers without packaging will be encouraged. (4) The establishment of the Green Laboratory at the Rog Innovation Centre will be initiated. (5) Public procurement will include criteria for reducing plastic. (6) Education on reusable packaging will be provided. (7) Promotion of refill systems to reduce the need for single-use plastics will be  |
 | --- | --- |
 Climate Neutrality Action Plan
@@ -4262,7 +3994,7 @@ Climate Neutrality Action Plan
 |   |  | Encouragement and planned establishment of a network of "clothing repair shops," where workshops for repairing and extending the lifespan of clothing will be held. (7) Priority use of recycled materials in public procurement, with contracts aimed at promoting sustainable practices in the textile industry.  |
 | --- | --- | --- |
 |   |  | **Reduction of electronic and electrical waste:**
-The measure involves increasing the sharing of electrical and electronic equipment through the "reči" (things) exchange, focusing on rental and repair centres. The main activities will be: (1) Establishment of a network of repair services for electrical products. (2) Establishment of a network of so-called repair cafes, where users can repair electrical products themselves with the help of mentors. (3) Issuing recommendations for extending the lifespan of products. (4) Introduction of "reči" (things) libraries in each neighbourhood community for renting electrical appliances needed only occasionally. (5) Increase in the number of collection points for used equipment. (6) Priority given to refurbished equipment in public procurement, considering energy efficiency. (7) Encouragement of donating discarded but still functioning used electronic equipment that would otherwise end up as waste.  |
+| The measure involves increasing the sharing of electrical and electronic equipment through the "reči" (things) exchange, focusing on rental and repair centres. The main activities will be: (1) Establishment of a network of repair services for electrical products. (2) Establishment of a network of so-called repair cafes, where users can repair electrical products themselves with the help of mentors. (3) Issuing recommendations for extending the lifespan of products. (4) Introduction of "reči" (things) libraries in each neighbourhood community for renting electrical appliances needed only occasionally. (5) Increase in the number of collection points for used equipment. (6) Priority given to refurbished equipment in public procurement, considering energy efficiency. (7) Encouragement of donating discarded but still functioning used electronic equipment that would otherwise end up as waste.  |
 |  Reference to impact pathway | Field of action | Waste & circular economy  |
 |   | Systemic lever | Technology/infrastructure, governance & policy, finance & funding, social innovation, democracy/participation  |
 |   | Outcome (according to module B-1.1) | Establishment of zero-waste stores, reuse centres, and Sustainable Offices.
@@ -4290,16 +4022,8 @@ Financial incentives for circular economy and recycling.  |
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | The City of Ljubljana (Department of environmental protection), Utility company VOKA SNAGA, non-governmental organizations, waste management companies, business and industrial associations, households.  |
 |   | Action scale & addressed entities | Local and national scale.
-Citizens, companies, reuse centres, bicycle workshops, zero waste shops, service cafes, sustainable offices, refill systems, water fountains, clothing repair shops, collection points for used equipment.  |
+| Citizens, companies, reuse centres, bicycle workshops, zero waste shops, service cafes, sustainable offices, refill systems, water fountains, clothing repair shops, collection points for used equipment.  |
 |   | Involved stakeholders | The City of Ljubljana (Department of environmental protection), Utility company VOKA SNAGA, Government and regulatory bodies, environmental agencies, businesses and industries, media, waste management companies, educational institutions, non-governmental organisations, research institutions, households.  |
-
-0
-#
-
-Climate Neutrality Action Plan
-
-#
-
 |   | Comments on implementation – consider mentioning resources, timelines, milestones | The emphasis is on raising awareness, stricter environmental regulations, and tax incentives for eco-friendly practices, requiring promotion at the national level. Funds for promoting waste reduction are provided by the City of Ljubljana. Such awareness-raising campaigns are already partially underway, but they are planned to be expanded further in the future to reach a larger portion of the public. Funds for measures aimed at reducing the amount of mixed household municipal waste, plastic usage, surplus food, waste textiles, waste electrical and electronic equipment are already provided by the City of Ljubljana, with a portion of the funds also contributed by the company VOKA SNAGA. Although some measures are already being implemented to a limited extent, others will start in 2025 and will be implemented annually thereafter.  |
 | --- | --- | --- |
 |  Impact & cost | Generated renewable energy (if applicable) | Not applicable.  |
@@ -4314,10 +4038,6 @@ B-2.2: Individual action outlines - 3.2
 | --- | --- | --- |
 |   |  Action type | Technical interventions, other interventions  |
 |   |  Action description | Implementation of waste-to-energy aspects: Implementation of energy production from waste in accordance with the Waste Management Program and Waste Prevention Program. A key aspect involves the thermal treatment of waste for district heating systems. Additionally, there is a pursuit of the development and utilization of new technologies for producing synthetic recycled carbon fuels, such as synthetic fuels, hydrogen, and synthetic gases derived from waste. An important part is also the review of waste classification from the wood processing industry and waste chips, which can serve as fuel or material for further use. Together, these  |
-Climate Neutrality Action Plan
-
-2
-
 |   |  | constitute a comprehensive approach to efficient and sustainable energy utilization from waste.
 
 **Exceeding 75% of separately collected waste and reaching 80% by 2035:**
@@ -4341,10 +4061,10 @@ Communication for waste management awareness.  |
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | Utility company VOKA SNAGA, Energetika Ljubljana (local district heating and gas distribution company).  |
 |   | Action scale & addressed entities | Local and regional scale.
-Waste, infrastructure for waste-to-energy, collection centres.  |
+| Waste, infrastructure for waste-to-energy, collection centres.  |
 |   | Involved stakeholders | The City of Ljubljana, Utility company VOKA SNAGA, Energetika Ljubljana (local district heating and gas distribution company), companies and residents.  |
 |   | Comments on implementation – consider mentioning resources, timelines, milestones | Funds for implementing the waste thermal treatment measure for the district heating system are provided by Utility company VOKA SNAGA and Energetika Ljubljana. In this regard, both companies will allocate part of their own funds, while the remaining investment is planned to be provided by the EU.
-Funds for achieving the set goal of separately collected waste are already provided by Utility company VOKA SNAGA. This will involve a gradual upgrade of the existing infrastructure for separate collection of municipal waste.  |
+| Funds for achieving the set goal of separately collected waste are already provided by Utility company VOKA SNAGA. This will involve a gradual upgrade of the existing infrastructure for separate collection of municipal waste.  |
 |  Impact & cost | Generated renewable energy (if applicable) | Already considered in the measure "Decarbonisation of heat supply energy sources" (1.1).  |
 |   | Removed/substituted energy, volume, or fuel type | Already considered in the measure "Decarbonisation of heat supply energy sources" (1.1).  |
 
@@ -4377,13 +4097,8 @@ Climate Neutrality Action Plan
 
 |   | An analysis of the social functions of green areas and people's needs for urban landscapes (cityscape) will also be conducted to identify the impact of the urban environment on the well-being of residents and the social dynamics of the city. The analysis of the social functions of green areas focuses on understanding how parks, gardens, and other green areas contribute to the quality of life, social interaction, and community health. On the other hand, exploring people's needs for urban landscapes involves analysing how various elements of the urban environment, including green spaces, influence residents' perception, use, and satisfaction with urban space. Both approaches are crucial for planning that considers the human dimension of the city and promotes sustainable urban development. **Sustainable water management:** The measure of sustainable water management includes the following activities: (1) Flood prevention infrastructure aimed at preventing floods in populated areas and agricultural lands. (2) Water flow regulations. (3) Habitat restoration. (4) Sediment removal. (5) Barrier installation. (6) Conducting a study and developing solutions for locations in the city prone to waterlogging during heavy rainfall. (7) Planning SuDS systems (Sustainable Drainage Systems). (8) Hydrological-hydraulic studies with a hydraulic-hydrological model of flood events. Comprehensive river system management will be introduced, which includes regulating water flow, habitat restoration, sediment removal, and the installation of barriers to ensure a balance between human needs and ecosystem preservation. The goal is to prevent floods, ensure water resources, maintain biodiversity, and support socio-economic activities along the river. A study will be conducted to identify locations in the city where water stagnation occurs during heavy rainfall, with the aim of establishing Sustainable Drainage Systems (SuDS). SuDS are drainage solutions that provide an alternative to the direct channelling of surface water through networks of pipes and sewers to nearby watercourses. The aim of SuDS is to reduce direct runoff from urban areas, thereby reducing the risk of flooding. This is achieved by retaining and storing water, slowing its flow, and increasing infiltration into the soil. SuDS systems include various elements such as green roofs, retention ponds,  |
 | --- | --- |
-Climate Neutrality Action Plan
-
-7
-
 |   |  | gravel trenches, and other permeable surfaces that absorb, filter, and retain water.
-
-Hydrological and hydraulic studies will also be conducted using flood event models to reduce the area's vulnerability to climate change, including longer drought periods and extreme rainfall. The studies will involve rainfall simulation, flow analysis, and an assessment of the hydrological and hydraulic conditions in all watersheds of the “Tivoli, Rožnik, and Šišenski hrib” Landscape Park. The task will be used to identify measures for developing blue-green infrastructure in the climate change adaptation process and to design conceptual plans for these measures based on an assessment of necessity.  |
+| Hydrological and hydraulic studies will also be conducted using flood event models to reduce the area's vulnerability to climate change, including longer drought periods and extreme rainfall. The studies will involve rainfall simulation, flow analysis, and an assessment of the hydrological and hydraulic conditions in all watersheds of the “Tivoli, Rožnik, and Šišenski hrib” Landscape Park. The task will be used to identify measures for developing blue-green infrastructure in the climate change adaptation process and to design conceptual plans for these measures based on an assessment of necessity.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Green infrastructure & nature-based solutions  |
 |   |  Systemic lever | Technology/infrastructure, governance & policy, learning & capabilities, social innovation, democracy/participation  |
@@ -4416,7 +4131,7 @@ Climate Neutrality Action Plan
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | City of Ljubljana (Environmental protection department, Spatial planning department), Ministry of natural resources and space, Water directorate, Slovenian environment agency, building owners and planners.  |
 |   |  Action scale & addressed entities | Local scale.
-Parking areas, recreational areas, flood protection infrastructure, habitats, riverbeds, green roofs and facades, paved areas, urban parks, urban orchards, urban gardens, mobility corridors, courtyards, rain gardens, fountains.  |
+| Parking areas, recreational areas, flood protection infrastructure, habitats, riverbeds, green roofs and facades, paved areas, urban parks, urban orchards, urban gardens, mobility corridors, courtyards, rain gardens, fountains.  |
 |   |  Involved stakeholders | City of Ljubljana (Environmental protection department, Spatial planning department), Ministry of natural resources and space, Water directorate, private companies, citizens.  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Investments are planned in measures to improve the urban environment, water, and air quality, as well as to reduce flood risk, promote the restoration of underground water resources and strengthen the city's resilience to water hazards.
 
@@ -4427,21 +4142,15 @@ Additionally, it is necessary to promote the implementation of measures for gree
 |   |  Removed/substituted energy, volume, or fuel type | Not applicable.  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | Not applicable.  |
 |   |  GHG emissions compensated (natural or technological sinks) | 2,800 t CO_{2}e/year  |
-
-8
-Climate Neutrality Action Plan
-
-9
-
 |  Total costs and costs by CO₂e unit | 142,182,150 EUR (CAPEX)
-,785 EUR/ t CO₂e  |
+| ,785 EUR/ t CO₂e  |
 | --- | --- |
 <h2>B-2.2: Individual action outlines – 4.2</h2>
 |  Action outline | Action name | Forest management  |
 | --- | --- | --- |
 |  Action type | Nature-based solutions, other interventions |   |
 |   |  Action description | Maintaining stable forest area:
-The aim of this measure is the long-term preservation of a stable forest area, which, according to current land use data, covers around 42% of the territory of the City of Ljubljana. With this measure, which is linked to spatial planning, we not only want to preserve the potential of the land for sink conservation, but also limit and gradually minimize emissions from deforestation. In pursuit of this objective, the City of Ljubljana will conduct a spatial analysis to expand the coverage of protected areas. In addition, the city will purchase 100 ha of forests that have an important social function (e.g. recreational function) or other important benefits.  |
+| The aim of this measure is the long-term preservation of a stable forest area, which, according to current land use data, covers around 42% of the territory of the City of Ljubljana. With this measure, which is linked to spatial planning, we not only want to preserve the potential of the land for sink conservation, but also limit and gradually minimize emissions from deforestation. In pursuit of this objective, the City of Ljubljana will conduct a spatial analysis to expand the coverage of protected areas. In addition, the city will purchase 100 ha of forests that have an important social function (e.g. recreational function) or other important benefits.  |
 |  Reference to impact pathway | Field of action | Green infrastructure & nature-based solutions  |
 |  Systemic lever | Governance & policy, finance & funding |   |
 |   |  Outcome (according to module B-1.1) | Improvement of sustainable forest management for enhancement of forest sink.
@@ -4450,13 +4159,9 @@ Reduction of emissions from deforestation and maintaining a stable forest area i
 Increasing the area of forests owned by the City of Ljubljana.  |
 |  Implementation | Responsible bodies/person for implementation | The City of Ljubljana (Department for spatial planning, Department for environmental protection), Slovenia forest service, Ministry of agriculture, forestry and food, forest owners.  |
 |  Action scale & addressed entities | Local scale.
-Forest (private owners). |   |
+| Forest (private owners). |   |
 |   |  Involved stakeholders | The City of Ljubljana (Department for spatial planning, Department for environmental protection), Slovenia forest service, Ministry of agriculture, forestry and food, forest owners.  |
 |  Comments on implementation – consider mentioning resources, timelines, milestones | Consent and cooperation with local forest owners will need to be ensured to promote sustainable forest management. In the coming years, the City of Ljubljana will also be able to |   |
-Climate Neutrality Action Plan
-
-0
-
 |   |  | provide funds for the implementation of the measure of purchasing private forests.  |
 | --- | --- | --- |
 |  Impact & cost | Generated renewable energy (if applicable) | Not applicable.  |
@@ -4464,7 +4169,7 @@ Climate Neutrality Action Plan
 |   | GHG emissions reduction estimate (total) per emission source sector | Considered in the value of emissions compensated.  |
 |   | GHG emissions compensated (natural or technological sinks) | 10,000 t CO₂/year  |
 |   | Total costs and costs by CO₂e unit | 695,000 EUR (CAPEX)
-EUR/ t CO₂e  |
+| EUR/ t CO₂e  |
 |  B-2.2: Individual action outlines – 4.3  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | Sustainable agriculture and agricultural policy  |
@@ -4490,18 +4195,8 @@ Climate Neutrality Action Plan
 
 **More efficient nitrogen circulation in agriculture – gross nitrogen balance surplus:** Efficient nitrogen circulation in agriculture is crucial for the sustainable management of natural resources. Various measures, such as financial incentives for implementing advanced farming practices that actively contribute to reducing nitrous oxide emissions and improving the gross nitrogen balance, are available to promote the adoption and  |
 | --- | --- |
-#
-
-Climate Neutrality Action Plan
-
-#
-
 |   | implementation of advanced nitrogen cycling practices. Additionally, financial incentives for investments in essential assets that enhance the overall efficiency of agricultural enterprises are also available. Investments in infrastructure related to the development and adaptation of agriculture to modern standards are crucial for the sustainable management of agricultural resources. Public agricultural advisory services play a key role in providing expert support and advice to farmers, contributing to better nitrogen cycling management in agricultural practices. Continuous investment in research and innovation in agriculture is essential for the development of new methods and technologies that will further increase the efficiency of nitrogen cycling while reducing negative impacts on the environment. Increasing the efficiency of domestic animal breeding: A joint basic breeding program for cattle and small livestock breeds will be actively pursued by the city, with an emphasis on improving the efficiency of feed energy utilization. In this context, greater emphasis is placed on selection for more efficient feed energy utilization, while efforts are made to develop options for direct selection with the aim of reducing methane emissions - a significant contribution to the mitigation of greenhouse gas effects in animal farming. A crucial role will be played by public agricultural advisory services in providing farmers with expert support and advice, thereby enhancing conditions for animal husbandry. In addition, incentives will be implemented by the city to encourage the adoption of advanced farming practices, with a specific focus on reducing methane emissions. Agricultural enterprises will be eligible for financial incentives, promoting investments in essential assets to enhance overall agricultural efficiency. This will include the development and adaptation of infrastructure to meet modern standards, ensuring a holistic approach to advancing animal farming sustainability. Upgrading agricultural policy - integrating climate policy and climate change adaptation: The upgrade of agricultural policy, which involves the integration of climate policy and  |
 | --- | --- |
-Climate Neutrality Action Plan
-
-3
-
 |   |  | adaptation to climate change, requires a comprehensive approach to reducing greenhouse gas emissions in agriculture. Measures need to be taken for the long-term reduction of greenhouse gas emissions in agriculture, with a particular emphasis on improving efficiency in livestock farming and its restructuring, as livestock farming contributes the most to greenhouse gas emissions in agriculture. Additionally, it is necessary to formulate a policy that promotes sustainable organic farming while simultaneously reducing environmental impact and natural resource consumption. Providing incentives for the efficient collection of agricultural biomasses, such as crop residues and manure, at locations near larger biogas facilities, is also crucial.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Green infrastructure & nature-based solutions  |
@@ -4528,22 +4223,16 @@ Incentives for efficient collection of agricultural biomasses near biogas facili
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | The City of Ljubljana (Department of environmental protection), Department for agricultural consultancy (KGZS), Ministry of agriculture, forestry and food, farmers.  |
 |   | Action scale & addressed entities | Local and national scale.
-Agricultural land, fertilizers, domestic animals, agricultural policy, irrigation systems, orchards.  |
+| Agricultural land, fertilizers, domestic animals, agricultural policy, irrigation systems, orchards.  |
 |   | Involved stakeholders | The City of Ljubljana (Department of environmental protection), Department for agricultural consultancy (KGZS), Ministry of agriculture, forestry and food, farmers, academic and scientific communities.  |
 |   | Comments on implementation – consider mentioning resources, timelines, milestones | Adequate financial resources for the implementation of planned measures are ensured both by the City of Ljubljana and the state.
-Some measures are already being partially implemented, but more attention and effort will be needed to expedite their implementation.  |
+| Some measures are already being partially implemented, but more attention and effort will be needed to expedite their implementation.  |
 |  Impact & cost | Generated renewable energy (if applicable) | Not applicable.  |
 |   | Removed/substituted energy, volume, or fuel type | Not applicable.  |
 |   | GHG emissions reduction estimate (total) per emission source sector | 2,675 t CO_{2}e/year  |
 |   | GHG emissions compensated (natural or technological sinks) | 3,000 t CO_{2}e/year  |
 |   | Total costs and costs by CO_{2}e unit | 7,270,000 EUR (CAPEX)
-,281 EUR/ t CO_{2}e  |
-
-4
-Climate Neutrality Action Plan
-
-5
-
+| ,281 EUR/ t CO_{2}e  |
 |  B-2.2: Individual action outlines – 4.4  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | Organizational, incentive, and awareness-raising measures  |
@@ -4566,12 +4255,8 @@ These are measures aimed at improving the supervision of greening implementation
 
 For the example of roof greening, rules are already established in the municipal spatial plan, but in practice, it is evident that investors do not always adhere to them. According to the municipal spatial plan, all buildings with a flat roof and a net area greater than 400 m² are required to have a green roof covering at least 75% of the net roof area. In the case of new buildings in shopping centres with a roof area exceeding 100 m², the buildings must be entirely covered with a green roof or have at least two facades designed in the form of vertical green ecosystems. This measure ensures stricter control of projects, ensuring compliance with regulations, particularly concerning the percentage of green areas and the implementation of green roofs.  |
 |   | **Promotion of climate and environment-oriented CAP interventions:**
-In the City of Ljubljana, the local production of food and animal feed is promoted, which shortens the distance from the field to the consumer. With the "Green Supply Chain" project, we are promoting organic and integrated production as well as the cultivation of local and domestic varieties and their seasonal consumption. With this action, we want to encourage farmers to participate in CAP measures that are known to help mitigate climate change. These measures are, for example, agri-environmental climate payments, organic farming, eco-schemes, conservation of permanent grassland, etc., which we assume will be implemented through the Slovenian 2023-2027 CAP Strategic Plan.  |
+| In the City of Ljubljana, the local production of food and animal feed is promoted, which shortens the distance from the field to the consumer. With the "Green Supply Chain" project, we are promoting organic and integrated production as well as the cultivation of local and domestic varieties and their seasonal consumption. With this action, we want to encourage farmers to participate in CAP measures that are known to help mitigate climate change. These measures are, for example, agri-environmental climate payments, organic farming, eco-schemes, conservation of permanent grassland, etc., which we assume will be implemented through the Slovenian 2023-2027 CAP Strategic Plan.  |
 |   | **Incentives for the implementation of advanced agricultural practices that**  |
-Climate Neutrality Action Plan
-
-7
-
 |   |  | contribute to the reduction of nitrous oxide emissions:
 Incentives for implementing advanced farming practices are aimed at reducing nitrous oxide emissions. As part of the future rural development programme, there is a particular emphasis on promoting low-ammonia emission fertilization. This approach prioritizes the use of innovative fertilization practices, actively contributing to the reduction of harmful gas emissions while ensuring efficient and sustainable agricultural activities.
 
@@ -4584,10 +4269,6 @@ Establishing a department for green infrastructure and nature-based solutions is
 |  Reference to impact pathway | Field of action | Green infrastructure & nature-based solutions  |
 |   |  Systemic lever | Finance & funding, governance & policy, social innovation, democracy/participation  |
 |   |  Outcome (according to module B-1.1) | Increased public understanding of urban vegetation benefits.  |
-Climate Neutrality Action Plan
-
-8
-
 |   |  | Promoting improved forest management on privately owned lands.  |
 | --- | --- | --- |
 |   |   |  Reduction in unauthorized interventions and damage to forests.  |
@@ -4604,7 +4285,7 @@ The development of educational programs for farmers will be emphasised.
 Establishment of the Green Infrastructure and Nature-based Solutions department.  |
 |  Implementation | Responsible bodies/person for implementation | The City of Ljubljana (Department of environmental protection), Department for agricultural consultancy (KGZS), Ministry of agriculture, forestry and food.  |
 |   | Action scale & addressed entities | Local and national scale.
-Inhabitants, owners of agricultural land and forests, livestock breeders.  |
+| Inhabitants, owners of agricultural land and forests, livestock breeders.  |
 |   | Involved stakeholders | The City of Ljubljana (Department of environmental protection), Department for agricultural consultancy (KGZS), Ministry of agriculture, forestry and food, research institutions and academic bodies, inhabitants, owners of agricultural land and forests, livestock breeders.  |
 |   | Comments on implementation – consider | Currently, funds are secured for implementing advanced agricultural practices that contribute  |
 Climate Neutrality Action Plan
@@ -4620,10 +4301,6 @@ Climate Neutrality Action Plan
 |   |  Action description | Energy retrofit of buildings: In addition to decarbonizing energy sources, a significant step must be taken to increase energy efficiency in buildings (on the demand side). The average energy consumption of heated buildings in the City of Ljubljana is 122 kWh/m2, indicating a significant potential for savings in the case of energy renovations. In this way, we make a significant contribution to reducing energy consumption (in the best cases by more than 30%) and consequently reducing emissions.  |
 |   |   |  The energy saving potential of the existing building stock in the City of Ljubljana, which has not yet been energetically renovated and excluding buildings of cultural heritage, amounts to 552 GWh.  |
 |   |   |  Out of a total of 42,535 heated buildings in the City of Ljubljana (including already renovated  |
-Climate Neutrality Action Plan
-
-0
-
 |   |  | buildings and buildings of cultural heritage), the number of buildings considered for renovation potential is 39,270, with a total heated area of 16,054,683 m².  |
 | --- | --- | --- |
 |   |   |  Energy renovation of 50% of the heated building stock, where feasible, is envisaged. In this case, energy use would be reduced by 16%, with the average energy consumption per square meter decreasing to approximately 100 kWh/m².  |
@@ -4657,14 +4334,8 @@ Continued enhancement of environmentally friendly and sustainable construction p
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | City of Ljubljana, relevant ministries, business sector and industry, households, spatial planners and architects, construction companies.  |
 |   |  Action scale & addressed entities | Local scale.
-Building stock in the City of Ljubljana.  |
+| Building stock in the City of Ljubljana.  |
 |   |  Involved stakeholders | City of Ljubljana, relevant ministries, business sector and industry, households, spatial planners and architects, construction companies.  |
-
-1
-Climate Neutrality Action Plan
-
-#
-
 |   | Comments on implementation – consider mentioning resources, timelines, milestones | The implementation of the measure involves increasing investments, with a key focus on providing appropriate subsidies and favourable loans for investors. While measures are already being implemented, they're currently in insufficient numbers, hence the necessity to increase their quantity each year. Currently, subsidies and EU funds are available, but more funds need to be allocated for the business and residential sectors. The City of Ljubljana allocates significant funds for the renovation of its buildings, and in the future, renovations will be carried out based on available financial resources and EU funds, which would accelerate the implementation of the measures.  |
 | --- | --- | --- |
 |  Impact & cost | Generated renewable energy (if applicable) | Not applicable.  |
@@ -4699,8 +4370,7 @@ The measure in the planning and establishment of new public spaces involves (1) 
 Climate Neutrality Action Plan
 
 |   |  | Measures in the field of urban infrastructure planning considering microclimatic conditions to improve public health and well-being include analysing microclimatic conditions in the city, which involves studying local climate conditions in a small area. This includes temperature, humidity, air movement, wind, solar exposure, and similar factors. Based on this analysis, problematic areas are identified, such as excessive heat, air pollution or lack of green spaces and infrastructure adjustments are planned and implemented, such as tree planting, installation of shading devices, development of parks and green areas, air ventilation and proper positioning of buildings and roads. The goal is to create a pleasant and healthy urban environment that promotes active living and well-being for all residents.
-
-Special attention is paid to the analysis and measures for locations with the most vulnerable population: the medical area of Vodmat (University medical centre + Institute of Oncology), areas with dense construction and limited green spaces.  |
+| Special attention is paid to the analysis and measures for locations with the most vulnerable population: the medical area of Vodmat (University medical centre + Institute of Oncology), areas with dense construction and limited green spaces.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Built Environment  |
 |   | Systemic lever | Technology/infrastructure, governance & policy, democracy/participation, learning & capabilities  |
@@ -4719,14 +4389,7 @@ Analysing microclimatic conditions in the city to identify and mitigate problema
 Improvement of well-being for all residents, particularly in vulnerable locations.  |
 |  Implementation | Responsible bodies/person for implementation | City of Ljubljana (Department of economic activities and transport, Landscaping department).  |
 |   | Action scale & addressed entities | Local scale.
-
-Urban neighbourhoods and courtyards, residential areas, urban infrastructure.  |
-
-4
-Climate Neutrality Action Plan
-
-#
-
+| Urban neighbourhoods and courtyards, residential areas, urban infrastructure.  |
 |   | Involved stakeholders | City of Ljubljana (Department of economic activities and transport, Landscaping department), landowners, non-governmental organizations, research institutes.  |
 | --- | --- | --- |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | The mentioned measures fall under the responsibility of the relevant departments at the City of Ljubljana. Currently, funds for their implementation are not guaranteed. In the coming years, it will be necessary to allocate or obtain funds for their implementation.  |
@@ -4740,19 +4403,13 @@ Climate Neutrality Action Plan
 |  Action outline | Action name | Organizational, incentive, and awareness-raising measures  |
 |   |  Action type | Other interventions  |
 |   |  Action description | Evaluation of land based on its current use, classification, and future societal needs: Preparation of spatial analysis with land evaluation based on existing data. This will serve as a basis for determining priorities and goals for future land use in the municipal spatial plan. The purpose of the measure is primarily to preserve green areas outside the urban area of the City of Ljubljana (in rural areas), thereby reducing emissions resulting from changes in land use: emissions from deforestation by 50% and emissions from construction by 25% by 2030 compared to 2018. Development of guidelines for the implementation of spatial integration measures: The development of guidelines for the implementation of spatial integration measures is a strategic measure aimed at promoting sustainable development and reducing the impact of climate change. The guidelines provide a framework for planning and developing urban and rural areas that reduce carbon footprint, improve resilience to climate change, protect natural habitats and  |
-Climate Neutrality Action Plan
-
-6
-
 |   | biodiversity, and promote sustainable mobility and efficient land use. The aim of the guidelines is to ensure that all new construction and development projects are carried out in a manner that supports ecological balance, reduces the need for fossil fuels, and enhances urban greenery. The implementation of the guidelines involves collaboration among various stakeholders, public education and awareness, the introduction of legislative and financial incentives for sustainable projects and regular monitoring and evaluation of the effectiveness of measures.  |
 | --- | --- |
 |  **Development of guidelines for project tasks for competitions:**
-The project tasks for competitions represent a specific approach to incorporating principles of sustainable development and climate responsibility into the process of design and architecture. Competition tasks are designed to encourage innovative solutions to challenges related to climate change, such as energy efficiency, use of renewable energy sources, reduction of GHG emissions, water resource management and integration of green areas into urban fabric. Through the competition process, creative and practical solutions are sought, which can serve as models for future projects, while also highlighting the importance of multidisciplinary collaboration and the use of sustainable materials and technologies. Competitions thus become a platform for the development and presentation of advanced concepts that can contribute to reducing the environmental footprint of cities and improving the quality of life of their residents.  |   |
+| The project tasks for competitions represent a specific approach to incorporating principles of sustainable development and climate responsibility into the process of design and architecture. Competition tasks are designed to encourage innovative solutions to challenges related to climate change, such as energy efficiency, use of renewable energy sources, reduction of GHG emissions, water resource management and integration of green areas into urban fabric. Through the competition process, creative and practical solutions are sought, which can serve as models for future projects, while also highlighting the importance of multidisciplinary collaboration and the use of sustainable materials and technologies. Competitions thus become a platform for the development and presentation of advanced concepts that can contribute to reducing the environmental footprint of cities and improving the quality of life of their residents.  |   |
 |  **Proactive land policy for climate change mitigation and adaptation:**
-Proactive land policy for climate change mitigation is thus a fundamental measure to ensure that land use is directed towards sustainability, preserving natural resources, and enhancing ecosystem services necessary for climate change mitigation and adaptation. This approach emphasises the need for comprehensive and coordinated action at various levels of governance to protect land crucial for ecological stability and the well-being of future generations.  |   |
+| Proactive land policy for climate change mitigation is thus a fundamental measure to ensure that land use is directed towards sustainability, preserving natural resources, and enhancing ecosystem services necessary for climate change mitigation and adaptation. This approach emphasises the need for comprehensive and coordinated action at various levels of governance to protect land crucial for ecological stability and the well-being of future generations.  |   |
 |  The measure includes the following activities: (1) Protecting agricultural and undeveloped land: putting in place legislative and regulatory frameworks to protect land that is important for maintaining ecological balance, preventing  |   |
-Climate Neutrality Action Plan
-
 |   |  | urban sprawl, and ensuring sustainable food supplies. (2) Preserving green wedges: ensuring that green spaces that penetrate the urban fabric are protected from development. This includes preserving and developing parks, nature reserves and other green spaces that serve as the "lungs" of cities and contribute to improving air quality, reducing heat islands, and promoting recreation and well-being for residents. (3) Priority land acquisition for the development and preservation of green spaces: active search and acquisition of land by the city with a view to preserving it as green space or converting it into public parks, gardens, and other forms of urban green space. (4) Promotion of sustainable land use: Encouraging agricultural practices that reduce greenhouse gas emissions, increase carbon sequestration, and support biodiversity. This includes supporting organic farming, agroecology, and permaculture. (5) Integrating climate objectives into spatial planning: integrating climate objectives into spatial planning processes to ensure that urban and rural development considers the need to reduce emissions, adapt to climate change and preserve natural ecosystems.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Built Environment  |
@@ -4774,7 +4431,7 @@ Climate Neutrality Action Plan
 |  Implementation | Responsible bodies/person for implementation | City of Ljubljana (Department of economic activities and transport, Landscaping department).  |
 | --- | --- | --- |
 |   |  Action scale & addressed entities | Local scale.
-Land in the City of Ljubljana, urban and rural areas.  |
+| Land in the City of Ljubljana, urban and rural areas.  |
 |   |  Involved stakeholders | City of Ljubljana (Department of economic activities and transport, Landscaping department), landowners, private companies, citizens, non-governmental organization.  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | The mentioned measures fall under the responsibility of the relevant departments at the City of Ljubljana. Currently, funds for their implementation are not guaranteed. In the coming years, it will be necessary to allocate or obtain funds for their implementation.  |
 |  Impact & cost | Generated renewable energy (if applicable) | Not applicable.  |
@@ -4791,32 +4448,23 @@ B-2.2: Individual action outlines – 6.1
 | --- | --- | --- |
 |   |  Action type | Technical interventions, other interventions  |
 |   |  Action description | Energy-Climate Atlas of the City of Ljubljana:
-The Energy-Climate Atlas is a comprehensive energy-climate information system that enables efficient and rapid access to information in the field of energy and climate. As a modern web application, it provides a comprehensive database for the city, automatic data updates and allows for analysis, data synthesis, and user-defined reports. It also includes simulations of scenarios and displays the economic effects of proposed technical solutions. An interactive web application, functioning as a GIS tool, connects the electricity, heating and cooling sectors, allowing for scenario simulations and analyses, and displaying results in the form of interactive graphical representations.  |
-Climate Neutrality Action Plan
-
+| The Energy-Climate Atlas is a comprehensive energy-climate information system that enables efficient and rapid access to information in the field of energy and climate. As a modern web application, it provides a comprehensive database for the city, automatic data updates and allows for analysis, data synthesis, and user-defined reports. It also includes simulations of scenarios and displays the economic effects of proposed technical solutions. An interactive web application, functioning as a GIS tool, connects the electricity, heating and cooling sectors, allowing for scenario simulations and analyses, and displaying results in the form of interactive graphical representations.  |
 |   |  | Monitoring measurement systems and other information systems: The measure involves the installation and management of various sensors and measuring devices. These systems enable the collection and analysis of data on parameters that serve as the basis for decision-making and city policy planning. Such systems are present in Energetika Ljubljana, LPP, LPT, VOKA SNAGA. Supervisory measurement systems also monitor advanced geographic information systems (GIS) for real-time monitoring and visualization of this data and for long-term urban development planning.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Digitization  |
 |   | Systemic lever | Technology/infrastructure  |
 |   | Outcome (according to module B-1.1) | Efficient and rapid access to information in the field of energy and climate.
-Collection and analysis of data for decision-making and city policy planning.  |
+| Collection and analysis of data for decision-making and city policy planning.  |
 |  Implementation | Responsible bodies/person for implementation | City of Ljubljana, public companies.
-Energetika Ljubljana, Ljubljana passenger transport, Public company for Ljubljana's Parking facilities and marketplaces, Utility company VOKA SNAGA.  |
+| Energetika Ljubljana, Ljubljana passenger transport, Public company for Ljubljana's Parking facilities and marketplaces, Utility company VOKA SNAGA.  |
 |   | Action scale & addressed entities | Local scale.
-Information system, sensors and measuring devices.  |
+| Information system, sensors and measuring devices.  |
 |   | Involved stakeholders | City of Ljubljana, public companies.
-Energetika Ljubljana, Ljubljana passenger transport, Public company for Ljubljana's parking facilities and marketplaces, Utility company VOKA SNAGA, citizens.  |
+| Energetika Ljubljana, Ljubljana passenger transport, Public company for Ljubljana's parking facilities and marketplaces, Utility company VOKA SNAGA, citizens.  |
 |   | Comments on implementation – consider mentioning resources, timelines, milestones | In the City of Ljubljana, the Energy-climate information system, managed by the energy manager, is already in use. Plans for upgrading the system in the future are underway to enhance its functionality. Funds for further development are also allocated for the upcoming years.
-
-Funds are also planned for the implementation of the measure of installing and managing various sensors and measuring devices by the City of Ljubljana and its companies. The measure will be implemented gradually in multiple steps.  |
+| Funds are also planned for the implementation of the measure of installing and managing various sensors and measuring devices by the City of Ljubljana and its companies. The measure will be implemented gradually in multiple steps.  |
 |  Impact & cost | Generated renewable energy (if applicable) | Not applicable.  |
 |   | Removed/substituted energy, volume, or fuel type | Indirect impacts.  |
-
-9
-Climate Neutrality Action Plan
-
-0
-
 |   | GHG emissions reduction estimate (total) per emission source sector | Indirect impacts on the reduction of GHG emissions (reductions are already considered in other measures).  |
 | --- | --- | --- |
 |   |  GHG emissions compensated (natural or technological sinks) | Not applicable.  |
@@ -4830,15 +4478,11 @@ Climate Neutrality Action Plan
 |  Reference to impact pathway | Field of action | Digitization  |
 |   |  Systemic lever | Social innovation, learning & capabilities  |
 |   |  Outcome (according to module B-1.1) | Comprehensive analysis and planning tool for urban transportation. Increased efficiency and sustainability of urban mobility through various mobility options like bike rental and electric car transportation.  |
-Climate Neutrality Action Plan
-
-#
-
 |   |  | Establishment of the Multimodal Route Planner application.  |
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | City of Ljubljana (Department of economic activities and transport, Department of spatial planning), Ljubljana public transport, transportation service providers.  |
 |   |  Action scale & addressed entities | Local scale.
-Traffic model, mobility application.  |
+| Traffic model, mobility application.  |
 |   |  Involved stakeholders | City of Ljubljana (Department of economic activities and transport, Department of spatial planning), Ljubljana public transport, Transportation service providers, residents, city visitors and working migrants.  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Funds for establishing a traffic model and multimodal route planner are secured. Implementation is scheduled for the coming years. Additionally, funds are allocated for the maintenance and upgrade of existing mobility service provider applications.  |
 |  Impact & cost | Generated renewable energy (if applicable) | Not applicable.  |
@@ -4846,24 +4490,17 @@ Traffic model, mobility application.  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | Indirect impacts on the reduction of GHG emissions (reductions are already considered in other measures).  |
 |   |  GHG emissions compensated (natural or technological sinks) | Not applicable.  |
 |   |  Total costs and costs by CO2e unit | 100.000 EUR (CAPEX)
-The costs of activities are estimated at approximately 8,410,000 EUR per year.  |
+| The costs of activities are estimated at approximately 8,410,000 EUR per year.  |
 |  B-2.2: Individual action outlines – 6.3  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | Built environment  |
 |   |  Action type | Technical interventions, other interventions  |
 |   |  Action description | Digital twin of the city:
-The digital twin of the City of Ljubljana will encompass models of the built environment, road networks, green areas, and other urban elements. These models will enable the simulation of urban mobility, airflow, pollution, etc. Based on them, decision-making will be facilitated, along with faster and more precise information dissemination. With modern visualizations (e.g., augmented reality), the digital twin will enable more rational city management and easier, more efficient, and better communication with residents.  |
-Climate Neutrality Action Plan
-
-2
-
+| The digital twin of the City of Ljubljana will encompass models of the built environment, road networks, green areas, and other urban elements. These models will enable the simulation of urban mobility, airflow, pollution, etc. Based on them, decision-making will be facilitated, along with faster and more precise information dissemination. With modern visualizations (e.g., augmented reality), the digital twin will enable more rational city management and easier, more efficient, and better communication with residents.  |
 |   | 3D model of the city: 3D GIS applications combine spatial data from various sources, such as satellite imagery, aerial photographs, field data and CAD models, to generate a three-dimensional portrayal of the actual world. They enable spatial data analysis to facilitate informed decision-making and future activity planning. Depending on user requirements, different applications and software tools provide varying functionalities for 3D GIS analysis and visualization. Laying the foundations for the further creation of different representations of geographic data: 1. Terrain, building and infrastructure models. 2. 3D measurements. 3. Development of transportation networks. 4. Monitoring natural resources. 5. Land-use planning and assessing the environmental impacts of different activities. 6. Emergency response and management of natural disasters or emergencies - evacuation planning, damage assessment and resource allocation. 7. Navigation and location services - management and maintenance of infrastructure assets such as water and sewerage systems, electricity networks and transport networks. 8. Asset tracking and maintenance planning. 9. Simulations and forecasting of environmental change: climate modelling, flood modelling and ecosystem analysis. 15-minute city: The City of Ljubljana is already a 15-minute city, although the general public may not fully perceive it. The measure includes establishing a modern web application called "15-minute city," which provides residents with access to information about various services, shops, green areas, cultural events, and other activities available within a 15-minute walk or bike ride from their home. The purpose of the measure is to increase residents' awareness of the opportunities offered by their immediate environment and to promote sustainable modes of transportation, such as walking and cycling.  |
 | --- | --- |
-Climate Neutrality Action Plan
-
 |   |  | Periodic LiDAR scanning: LIDAR is a technology for transmitting and receiving laser beams to produce extremely accurate three-dimensional images of the urban environment. These images are used for various purposes, such as urban planning, analysis of green areas, identification of infrastructural deficiencies, planning of security and environmental measures in cities. The City of Ljubljana will perform periodic LiDAR scanning, enabling the detection of changes over time.
-
-Digitally supported neighbourhoods: In the City of Ljubljana, we will select a neighbourhood within the City of Ljubljana to serve as a pilot neighbourhood for testing and evaluating new digital solutions in collaboration with residents. The central aim of the solutions will be to improve the quality of living in the neighbourhood and reduce the neighbourhood-level carbon footprint while transferring best practices to the city level.  |
+| Digitally supported neighbourhoods: In the City of Ljubljana, we will select a neighbourhood within the City of Ljubljana to serve as a pilot neighbourhood for testing and evaluating new digital solutions in collaboration with residents. The central aim of the solutions will be to improve the quality of living in the neighbourhood and reduce the neighbourhood-level carbon footprint while transferring best practices to the city level.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Digitization  |
 |   | Systemic lever | Social innovation, learning & capabilities  |
@@ -4883,14 +4520,8 @@ Increased awareness of local amenities promotes sustainable transportation.
 
 Testing and evaluation of new digital solutions in collaboration with residents.  |
 |  Implementation | Responsible bodies/person for implementation | City of Ljubljana (Department of economic activities and transport, Urban planning department, Environmental department).  |
-
-3
-Climate Neutrality Action Plan
-
-#
-
 |   | Action scale & addressed entities | Local scale.
-Built environment applications.  |
+| Built environment applications.  |
 | --- | --- | --- |
 |   |  Involved stakeholders | City of Ljubljana (Department of economic activities and transport, Urban planning department, Environmental department), service providers, residents, city visitors.  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Funds for almost all planned measures have been secured. In the coming year, it will be necessary to seek financial resources for the remaining projects and then prepare an implementation plan. It is also necessary to assess the scope and timeline of implementation.  |
@@ -4899,7 +4530,7 @@ Built environment applications.  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | Not applicable.  |
 |   |  GHG emissions compensated (natural or technological sinks) | Not applicable.  |
 |   |  Total costs and costs by CO2e unit | 1,040,000 EUR (CAPEX)
-The costs of activities are estimated at approximately 1,850,000 EUR per year.  |
+| The costs of activities are estimated at approximately 1,850,000 EUR per year.  |
 |  B-2.2: Individual action outlines – 6.4  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | Green infrastructure & Nature-based solutions  |
@@ -4909,11 +4540,7 @@ critical locations with different priorities have been identified (I., II., III.
 Currently, 10 information systems are established for monitoring water levels in selected watercourses, using radar technology water level gauges at 10 locations (priority I) and 7 information systems for monitoring water levels in selected watercourses, utilising ultrasonic water level gauges (priority II).
 In the future, the information system for monitoring water levels on selected watercourses will be expanded to other locations if necessary.  |
 |   |   |  Measurement and modelling of the urban heat islands:
-Installation of an urban weather observation system by establishing our own measurement  |
-Climate Neutrality Action Plan
-
-5
-
+| Installation of an urban weather observation system by establishing our own measurement  |
 |   |  | network and database, aimed at preparing a dynamic model of the urban heat island. Modelling of the heat island will involve the use of data from the measurement network, which will enable the collection of real-time temperature data at various locations in the city. This will create a model that illustrates the heating of the urban area at different times of the day and under different weather conditions. This model will feed into the planning of measures to reduce the impact of the heat island and its negative effects on the residents' quality of life, such as strategies for green infrastructure, urban afforestation, and space redesign for improved air flow.
 
 **Vegetation cadastre on public and private land:**
@@ -4930,14 +4557,10 @@ Development of strategies to mitigate urban heat island effects.
 Establishment of a vegetation cadastre.  |
 |  Implementation | Responsible bodies/person for implementation | City of Ljubljana (Digitalization service, Department of environmental protection).  |
 |   |  Action scale & addressed entities | Local scale.
-Watercourses, heat islands, cadastre of vegetation.  |
+| Watercourses, heat islands, cadastre of vegetation.  |
 |   |  Involved stakeholders | City of Ljubljana (Digitalization service, Department of environmental protection), service providers.  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Funds for the implementation of all three measures are already secured. Development and implementation of these measures will commence in the coming years. They are planned to be implemented gradually.  |
 |  Impact & cost | Generated renewable energy (if applicable) | Not applicable.  |
-Climate Neutrality Action Plan
-
-#
-
 |   | Removed/substituted energy, volume, or fuel type | Not applicable.  |
 | --- | --- | --- |
 |   |  GHG emissions reduction estimate (total) per emission source sector | Not applicable.  |
@@ -4959,10 +4582,6 @@ B-2.2: Individual action outlines – 6.5
 |   |   |  Establishment of a supporting online application for managing waste. Increased accuracy in waste collection scheduling through the implementation of fullness sensors.  |
 |  Implementation | Responsible bodies/person for implementation | City of Ljubljana (Department of environmental protection), waste management company.  |
 |   |  Action scale & addressed entities | Local scale. Waste in the City of Ljubljana.  |
-Climate Neutrality Action Plan
-
-#
-
 |   | Involved stakeholders | City of Ljubljana (Department of environmental protection), waste management company, residents and other waste generators.  |
 | --- | --- | --- |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Funds for the implementation of all three measures have already been secured by the waste management company, and these measures will begin to be implemented in the coming years. Gradual implementation is planned.  |
@@ -4976,10 +4595,6 @@ Climate Neutrality Action Plan
 |  Action outline | Action name | Urban digital platform  |
 |   |  Action type | Other interventions  |
 |   |  Action description | Urban digital platform: The Urban digital platform is a tool for managing, planning, and implementing urban policies, as well as a unified information and communication point between city administration, residents, and businesses. Urban mobility and services integration: 1. Integration of Urbana functionalities (travel by public transport, SMS parking payment, funicular, use of BicikeLJ bike rental system, use of car parks, journey planning). 2. Obtaining a parking permit. 3. Service information system and alert system: In the first phase, the platform will allow the display of information such as weather conditions, air pollution, notifications on airborne allergen levels, flood risks, hail risks, road conditions, etc. 4. Rent a garden. Sustainable energy solutions: 1. Demonstration of the potential for photovoltaics. 2. Potential for the deployment of micro district heating systems. 3. Automation of GHG emissions calculation. 4. Interactive energy calculator - energy consulting.  |
-Climate Neutrality Action Plan
-
-8
-
 |   |  | 5. Demonstrating the potential for establishing energy communities.
 
 Solutions for vulnerable groups:
@@ -4990,12 +4605,10 @@ Establishment of a map for mitigating heatwaves (locations of cool areas, shaded
 |  Reference to impact pathway | Field of action | Digitization  |
 |   |  Systemic lever | Social innovation, democracy/participation  |
 |   |  Outcome (according to module B-1.1) | Improved management, planning, and implementation of urban policies through the utilization of the digital platform.
-
-Establishment of a unified point for information dissemination and communication.  |
+| Establishment of a unified point for information dissemination and communication.  |
 |  Implementation | Responsible bodies/person for implementation | City of Ljubljana (Digitalization department), platform developer.  |
 |   |  Action scale & addressed entities | Local scale.
-
-The City of Ljubljana digital platform.  |
+| The City of Ljubljana digital platform.  |
 |   |  Involved stakeholders | City of Ljubljana (Digitalization department), platform developers, platform users.  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Funds for the implementation of the measure are already provided by the responsible digitalization department of the City of Ljubljana. The implementation of the application is divided into individual phases to be carried out over the years.  |
 |  Impact & cost | Generated renewable energy (if applicable) | Not applicable.  |
@@ -5043,10 +4656,6 @@ Identification of specific goals for city residents: Incorporating sustainable m
 **Local challenges in the field of sustainable development:**
 Challenges that encourage residents, especially young people, to seek innovative solutions for local sustainability issues. This includes everything from challenges for local sustainable food production and waste reduction to innovation competitions for sustainable technologies, such as new technologies for bike-sharing or environmentally friendly mobility apps in cities, etc. Within these activities, we will examine the implementation of mechanisms such as participatory financing, which allows residents to directly participate in financing and decision-making on projects addressing local sustainability challenges, and the regulatory sandbox mechanism, which enables the  |
 | --- | --- | --- |
-Climate Neutrality Action Plan
-
-1
-
 |   | testing and introduction of innovative solutions without direct regulatory barriers.  |
 | --- | --- |
 |   | **Capacity building on climate neutrality**
@@ -5071,13 +4680,11 @@ Climate Neutrality Action Plan
 |   | Sports projects represent an important part in the field of education, information dissemination and promotion of the importance of achieving climate neutrality. When organizing these events, special attention will be paid to establishing circular material flows and sustainable use of materials.  |
 | --- | --- |
 |   | **Comprehensive initiative for promoting sustainable certifications:**
-The measure is aimed at raising awareness and promoting the use of internationally recognized sustainable certificates and standards in various sectors, including construction, energy, agriculture, tourism, circular economy, etc. The initiative aims to increase awareness of the importance of sustainable practices in achieving climate neutrality and sustainable development through education, partnerships, and support to stakeholders in obtaining certifications (e.g., ISO 50001, LEED, BREEAM, DGNB, Cradle to Cradle Certified™, Zero Waste Certification, Green Globe Certification, Travelife, Envision™ and Greenroads®, Green Infrastructure Certification Program, Digital Accessibility Certifications, and B Corporation, etc.).  |
+| The measure is aimed at raising awareness and promoting the use of internationally recognized sustainable certificates and standards in various sectors, including construction, energy, agriculture, tourism, circular economy, etc. The initiative aims to increase awareness of the importance of sustainable practices in achieving climate neutrality and sustainable development through education, partnerships, and support to stakeholders in obtaining certifications (e.g., ISO 50001, LEED, BREEAM, DGNB, Cradle to Cradle Certified™, Zero Waste Certification, Green Globe Certification, Travelife, Envision™ and Greenroads®, Green Infrastructure Certification Program, Digital Accessibility Certifications, and B Corporation, etc.).  |
 |   | **Community-level biodiversity conservation projects:**
-Such initiatives include wildlife migration monitoring programs, campaigns for planting indigenous plant species or community-managed green spaces. For instance, local wildlife monitoring programs enable residents to track and document the presence of wild animals in their environment, fostering a better understanding of ecosystems and contributing to biodiversity conservation. Campaigns for planting indigenous plant species promote the use of local plants adapted to climatic conditions and contribute to preserving natural habitats. Community-managed green spaces allow the local community to actively participate in the planning, maintenance, and use of green areas in their environment, creating pleasant and sustainable public spaces.  |
+| Such initiatives include wildlife migration monitoring programs, campaigns for planting indigenous plant species or community-managed green spaces. For instance, local wildlife monitoring programs enable residents to track and document the presence of wild animals in their environment, fostering a better understanding of ecosystems and contributing to biodiversity conservation. Campaigns for planting indigenous plant species promote the use of local plants adapted to climatic conditions and contribute to preserving natural habitats. Community-managed green spaces allow the local community to actively participate in the planning, maintenance, and use of green areas in their environment, creating pleasant and sustainable public spaces.  |
 |   | **The information point on Ljubljana's path to carbon neutrality:**
-The Info Point on climate change (one stop shop) serves as a central source providing comprehensive information to residents, non-governmental organizations, company representatives, educational and research institutions, government authorities and other visitors about various steps and approaches  |
-Climate Neutrality Action Plan
-
+| The Info Point on climate change (one stop shop) serves as a central source providing comprehensive information to residents, non-governmental organizations, company representatives, educational and research institutions, government authorities and other visitors about various steps and approaches  |
 |   |  | that can contribute to achieving the city's goal of climate neutrality.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Social innovation  |
@@ -5095,14 +4702,10 @@ Climate Neutrality Action Plan
 |   |  | The comprehensive initiative promotes sustainable certifications and encourages sustainable practices within the relevant sector.  |
 |   |  | Community-level biodiversity projects include wildlife monitoring for ecosystem understanding and campaigns for planting indigenous plants.  |
 |   |  | The information point serves as a central hub providing comprehensive information to various stakeholders.  |
-
-3
-Climate Neutrality Action Plan
-
 | Implementation | Responsible bodies/person for implementation | City of Ljubljana (Service for development projects and investments, Digitization service, Department of economic activities and transport, Department of preschool education and training, Department of culture, Landscaping department, Department of environmental protection, Department of protection and rescue, Department of health and social care, Department of sports). |
 | --- | --- | --- |
 | Implementation | Action scale & addressed entities | Local scale.
-Non-governmental organizations, educational institutions, environmental organizations, residents, sports organizations, companies. |
+| Non-governmental organizations, educational institutions, environmental organizations, residents, sports organizations, companies. |
 | Involved stakeholders | City of Ljubljana, non-governmental organizations, educational institutions, environmental organizations, residents, sports organizations, companies. |
 | Comments on implementation – consider mentioning resources, timelines, milestones | Securing funds for all planned measures is not guaranteed. In the upcoming year, there will be a need to source financial resources for these projects and subsequently formulate an implementation plan. Additionally, it is crucial to assess and broaden the scope and timeline of implementation. |
 | Impact & cost | Generated renewable energy (if applicable) | Not applicable. |
@@ -5148,10 +4751,6 @@ Module B-3 “Indicators for Monitoring, Evaluation and Learning” contains a s
 |   |  Sustainable building and infrastructure renovation |  |  |  |  |  |   |
 |  Transition from fossil fuels to green hydrogen in energy-intensive industries. |  |  |  |  |  |  |   |
 |  Decarbonization of the distribution gas pipeline network through the injection of green hydrogen and locally |  |  |  |  |  |  |   |
-Climate Neutrality Action Plan
-
-7
-
 |  produced
 biomethane.
 
@@ -5231,12 +4830,6 @@ Waste management | 3 | GHG emission from waste (t CO_{2} equivalent) |  | 43,315
 Sustainable fertilization practices.
 Encouraging improvement in feed quality to reduce methane emissions. | Sustainable agriculture and agricultural policy | 4 | GHG emission from AFOLU (t CO_{2} equivalent) |  | 21,532 | 20,848 | 20,058  |
 |  Installed new electricity production facilities using renewable sources (solar | Green energy production | 5 | Local RES energy production (GWh) |  | 175 | 230 | 294  |
-
-8
-Climate Neutrality Action Plan
-
-9
-
 |  power plants, hydropower plants, biomass and biogas cogeneration units). |  |  |  |  |  |  |   |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Purchases of zero-emission electricity for public sector, public transport, industry, business sector, and households (65% of consumed electricity). | Purchase of carbon-free electricity | 6 | GHG emission from grid supplied energy (t CO_{2} equivalent) |  | 369,634 | 210,463 | 5,396  |
@@ -5284,10 +4877,6 @@ Climate Neutrality Action Plan
 |  Definition | Greenhouse gas emissions from the operations of vehicles.  |
 |  Calculation | Calculation of energy consumption in MWh from the use of various types of fuels and their calorific values.  |
 |  Indicator Context |   |
-Climate Neutrality Action Plan
-
-#
-
 |  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | yes  |
 | --- | --- |
 |  If yes, which emission source sectors does it measure? | Transport and mobility  |
@@ -5319,10 +4908,6 @@ Climate Neutrality Action Plan
 |  If yes, which action and impact pathway is it relevant for? | Waste reduction, waste management.  |
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | yes  |
 |  Data requirements |   |
-Climate Neutrality Action Plan
-
-#
-
 |  B-3.2: Indicator Metadata - 4  |   |
 | --- | --- |
 |  Indicator Name | GHG emission from AFOLU  |
@@ -5355,10 +4940,6 @@ Climate Neutrality Action Plan
 |  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | yes  |
 |  If yes, which emission source sectors does it measure? | Energy generation  |
 |  Does the indicator measure indirect impacts (i.e., co-benefits)? | yes  |
-Climate Neutrality Action Plan
-
-#
-
 |  If yes, which co-benefit does it measure? | Decrease in dependence on fossil fuels, increased energy security.  |
 | --- | --- |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | yes  |
@@ -5399,12 +4980,8 @@ Climate Neutrality Action Plan
 |  Indicator Name | Amount of permanent sequestration of GHG within city boundary  |
 |  Indicator Unit | t/CO2 equivalent/year  |
 |  Definition | This indicator supports the reporting of carbon sequestration through “Technological sinks”, such as  |
-Climate Neutrality Action Plan
-
-4
-
 |   | Biomass Energy with Carbon Capture and Storage (BECCS) and Direct Air Carbon Capture and Storage (DACCS) technologies.
-This includes the implementation of a pilot project for carbon capture and utilisation in the City of Ljubljana.  |
+| This includes the implementation of a pilot project for carbon capture and utilisation in the City of Ljubljana.  |
 | --- | --- |
 |  Calculation | Assessment based on emissions measurements.  |
 |  Indicator Context |   |
@@ -5437,10 +5014,6 @@ This includes the implementation of a pilot project for carbon capture and utili
 |  Is the indicator useful for monitoring the output/impact of action(s)? | yes  |
 |  If yes, which action and impact pathway is it relevant for? | Forest Management  |
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | yes  |
-Climate Neutrality Action Plan
-
-#
-
 |  Data requirements |   |
 | --- | --- |
 |  Expected data source | Slovenia forest service, Slovenian forestry institute, Ministry of agriculture, forestry, and food.  |
@@ -5652,15 +5225,11 @@ C
 |  Intervention name | Description | Systemic barriers / opportunities addressed | Responsible entity/ dept./* | Leadership and stakeholders involved | Enabling impact | Co-benefits  |
 |   |  | Fostering partnerships with academic institutions and other cities can facilitate knowledge exchange and capacity building. |  |  |  | workforce, the city is better positioned to implement and leverage the latest sustainable technologies and practices.  |
 |  Institutional Strengthening | The establishment of the Sustainable Mobility Department and the Green Infrastructure and Nature-Based Solutions Department in the City of Ljubljana is not merely strategic but essential in intensifying the city's commitment to achieving climate neutrality. These departments are pivotal in orchestrating interdisciplinary strategies across various facets of urban development and environmental stewardship, underscoring Ljubljana's proactive stance on climate action. | Barriers: - Existing organizational structures may not fully support interdisciplinary collaboration or lack the necessary knowledge in key areas of climate action. - A potential shortage of professionals with the expertise to navigate the complexities of achieving climate neutrality. Opportunities: - Implementing targeted educational programs and fostering a culture of continuous learning within city departments to enhance the effectiveness of | Top city management Heads of relevant administrative departments. | City public administration employees, NGOs focused on environmental protection and sustainable development, representatives from the business sector, academic and research communities, and citizens. | The workforce is not only equipped but also specialized in implementing and advancing climate neutrality goals. This strategic enhancement of institutional capacities fosters: - Interdisciplinary collaboration across various city departments, ensuring that strategies for sustainable mobility and green infrastructure are well-integrated with broader urban development and environmental initiatives. Holistic Climate Action: - The nucleus for comprehensive climate action planning, facilitating a city- | Enhanced capacity building. Creation of jobs. Increased public awareness and capacity building. Interdisciplinary approach.  |
-Climate Neutrality Action Plan
-
-C
-
 |  C.1.2: Relations between governance innovations, systems, and impact pathways  |   |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |  Intervention name | Description | Systemic barriers / opportunities addressed | Responsible entity/ dept./* | Leadership and stakeholders involved | Enabling impact | Co-benefits  |
 |   |  | climate action initiatives.
-Fostering partnerships with academic institutions and other cities to facilitate knowledge exchange and capacity building. |  |  | wide approach that incorporates sustainability into all aspects of urban life. |   |
+| Fostering partnerships with academic institutions and other cities to facilitate knowledge exchange and capacity building. |  |  | wide approach that incorporates sustainability into all aspects of urban life. |   |
 |  Regulatory sandpits | Regulatory approach that provides a "testing ground" for new construction technologies and urban solutions in a controlled environment, where regulations can be temporarily adjusted or suspended to experiment with new ideas without the usual bureaucratic constraints. This initiative aims to foster innovation in sustainable building, etc practices and urban development, directly contributing to climate neutrality efforts. | Barriers:
 Slow regulatory acceptance in adopting new construction technologies, material's, etc.
 Absence of regulation.
@@ -5680,10 +5249,6 @@ C
 |  Intervention name | Description | Systemic barriers / opportunities addressed | Responsible entity/ dept./* | Leadership and stakeholders involved | Enabling impact | Co-benefits  |
 |   |  | support climate goals. |  |  |  |   |
 |  Policy Reforms | Updates of policy are critical for accelerating Ljubljana's journey towards climate neutrality: - Local Energy Concept of the City of Ljubljana 2022-2030: This action plan needs to be revised to include more ambitious measures, especially in social innovation activities and interdisciplinary perspectives, such as agriculture, to align with the more aggressive targets set by the climate action plan (AP). - Strategic Plan of Energetika Ljubljana d.o.o. for the period 2022-2027: This strategic plan requires an update to incorporate new measures and projects, such as CCU and the decarbonization of the district heating system. Additionally, efforts should be made to streamline the lengthy procedures for obtaining necessary permits. | Barriers: - Lengthy preparatory processes for some strategies, plans (e.g. Spatial plan), complexity of cross-sectoral collaboration, challenges in data acquisition, rapidly changing legislation, lack of personnel, changes in political leadership. Opportunities: - Developing standardized procedure, establishing collaborative platforms, or working groups to enhance cooperation. - Establish collaborative frameworks and advocacy channels with higher-level authorities and | Heads of relevant administrative departments. | Citizens, non-governmental organisations, social enterprises, science and educational sector, governmental institutions, city public administration, city council, city public companies, state-owned enterprises (SOEs), business sector, civil society, socially vulnerable groups – youth, elderly, children, socially vulnerable groups , low-income households, population facing health disparities, refugees, people with disabilities and special needs, stakeholders with higher purchasing power, public media. | Strengthens the city's ability to implement climate actions in alignment with national strategies, ensuring cohesive progress towards set climate goals. | Regulatory flexibility. Decision-making. Transparency. Stakeholder involvement. Acceleration of green transition. Strengthening local economies. Enhancement of urban resilience. Greater social equity.  |
-Climate Neutrality Action Plan
-
-C
-
 |  C.1.2: Relations between governance innovations, systems, and impact pathways  |   |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |  Intervention name | Description | Systemic barriers / opportunities addressed | Responsible entity/ dept./* | Leadership and stakeholders involved | Enabling impact | Co-benefits  |
@@ -5691,13 +5256,9 @@ C
 Spatial Plan of the City of Ljubljana: The next revision of this plan must include targets for net-zero emissions by 2030, with additional measures to preserve green areas, and reduce emissions from deforestation and land and infrastructure planning.
 Sustainable Urban Mobility Plan for the City of Ljubljana and the Ljubljana City Region: Both plans require updates to be aligned with AP mainly in assessing GHG emissions within strategies and implementing actions set in AP. | stakeholders, thereby influencing policies, regulations and actions in these sectors. |  |  |  |   |
 |  Digital Urban platform | The platform serves as a governance tool by improving the efficiency, transparency, and responsiveness of municipal administration. It integrates various urban | Barrier:
-Siloed ICT systems that hinder interoperability | City transitional Team.
-Department for Digitalisation. | Citizens, non-governmental organisations, social enterprises, science and educational sector, | The Digital Urban Platform intervention enables climate neutrality by streamlining urban | Enhanced quality of life for residents.
-Increased awareness.  |
-Climate Neutrality Action Plan
-
-7
-
+| Siloed ICT systems that hinder interoperability | City transitional Team. |
+| Department for Digitalisation. | Citizens, non-governmental organisations, social enterprises, science and educational sector, | The Digital Urban Platform intervention enables climate neutrality by streamlining urban | Enhanced quality of life for residents. |
+| Increased awareness.  |
 |  C.1.2: Relations between governance innovations, systems, and impact pathways  |   |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |  Intervention name | Description | Systemic barriers / opportunities addressed | Responsible entity/ dept./* | Leadership and stakeholders involved | Enabling impact | Co-benefits  |
@@ -5783,7 +5344,7 @@ C.2.1: Relations between social innovations, systems, and impact pathways
 |  Intervention name | Description | Systemic barriers / opportunities addressed | Responsible entity/ dept./ person* | Leadership and stakeholders involved | Enabling impact | Co-benefits  |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  |  |  |  |  | Resilience to Climate Change.
-Creation of Jobs.  |
+| Creation of Jobs.  |
 |  The Info Point on climate change (one stop shop) serves as a central hub providing comprehensive information to various stakeholders. | The Info point serves as a central source providing comprehensive information to residents, non-governmental organizations, company representatives, educational and research institutions, government authorities and other visitors about various steps and approaches that can contribute to achieving the city's goal of climate neutrality. | Barrier: Personal habits and consumption patterns.
 A lack of awareness or motivation among consumers to adopt energy-efficient solutions and technologies can slow the transition to sustainable energy.
 Public acceptance of new technologies and infrastructure.
@@ -5903,7 +5464,7 @@ C.2.1: Relations between social innovations, systems, and impact pathways
 |  Intervention name | Description | Systemic barriers / opportunities addressed | Responsible entity/ dept./ person* | Leadership and stakeholders involved | Enabling impact | Co-benefits  |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  |  |  |  |  | Enhanced capacity building.
-Facilitation of stakeholder collaboration.  |
+| Facilitation of stakeholder collaboration.  |
 |  FINANCIAL PARTICIPATORY APPROACH for residents and stakeholders. | A strategic intervention designed to directly involve residents and stakeholders in the financing of local climate projects through mechanisms such as municipal bonds, crowdfunding, and participatory budgeting. This approach aims to leverage community investment in renewable energy projects, green infrastructure, and other climate resilience initiatives. | Barriers:
 Limited financial resources. High costs associated with transitioning.
 Insufficient financial resources.

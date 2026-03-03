@@ -1926,7 +1926,7 @@ ANEXO
 |  Implementation | Agencies/persons responsible for implementation | • Valladolid City Council  |
 | --- | --- | --- |
 |   |  Scale of action and target entities | • City scale
-• Target group: General public  |
+| • Target group: General public  |
 |   |  Actors involved | • Valladolid City Council
 • Neighbourhood associations
 • CEOE Valladolid
@@ -1979,11 +1979,11 @@ ANEXO
 • Increased security
 • Clean, competitive, safe, secure, smart and resilient transport and mobility  |
 |  Implementation | Agencies/persons responsible for implementation | • Valladolid City Council
-• AUVASA  |
+| • AUVASA  |
 |   |  Scale of action and target entities | • City scale
-• Target group: General public  |
+| • Target group: General public  |
 |   |  Actors involved | • Valladolid City Council
-• AUVASA  |
+| • AUVASA  |
 |   |  Comments on implementation | N.a.  |
 |  Impacts and costs | Renewable energy generated (if applicable) | N.a.  |
 |   |  Energy removed/replaced, fuel volume or fuel type | Motor vehicle reduction/Modalshift  |
@@ -2004,15 +2004,15 @@ ANEXO
 |  Action plan | Name of the action | Increased ridesharing rate  |
 |   |  Type of action | Support for new mobility services, which promote the shared use of electric vehicles. Car-sharing or multi-service car services reinforce and complement the public transport system and multiply the user's options, introducing a change of model in the use of private vehicles.  |
 |   |  Description of the action | Development of car-sharing services.
-Demonstrator projects: E-Kiwi Cooperative  |
+| Demonstrator projects: E-Kiwi Cooperative  |
 |  Reference to the impact pathway | Subsector | Mobility and transport  |
 |   |  Systemic lever | * Social innovation
 * Governance & policy
 * Technology & infrastructure  |
 |   |  short and medium-term changes | Increase in private vehicle occupancy rate
-Emission reductions  |
+| Emission reductions  |
 |  Implementation | Agencies/persons responsible for implementation | Valladolid City Council
-Ekiwi cooperative  |
+| Ekiwi cooperative  |
 |   |  Scale of action and target entities | City scale
 Target group: General public  |
 
@@ -2067,7 +2067,7 @@ Ayuntamiento de
 Valladolid
 
 |   |  | • CARTIF Foundation
-• Institute of Technology  |
+| • Institute of Technology  |
 | --- | --- | --- |
 |   | Comments on implementation | N.a.  |
 |  Impacts and costs | Renewable energy generated (if applicable) | N.a.  |
@@ -2156,17 +2156,17 @@ Valladolid
 f
 
 |   |  | Promotion of Valladolid as an Urban Goods Distribution Centre.
-Preferential itinerary for Railway Motorway services. Extension of sidings to 750 metres for the operation of trains of interoperable length (740 m).  |
+| Preferential itinerary for Railway Motorway services. Extension of sidings to 750 metres for the operation of trains of interoperable length (740 m).  |
 | --- | --- | --- |
 |  **Implementation** | **Agencies/persons responsible for implementation** | Valladolid City Council
-ADIF  |
+| ADIF  |
 |   |  **Scale of action and target entities** | City scale (with influence in its Alfoz)
-Target group: Companies and logistics operators. General public.  |
+| Target group: Companies and logistics operators. General public.  |
 |   |  **Actors involved** | Valladolid City Council
 ADIF
 Junta de Castilla y León (Atlantic Corridor TEN-T network)  |
 |   |  **Comments on implementation** | This is a highly complex process that requires special coordination in its overall planning from the railway, road, town planning and budgetary perspectives, as well as cooperation and collaboration between all the agents and logistics operators involved.
-The new Connecting Europe Facility Programme, Cef Transport 2021 -2027, will finance greener and more sustainable transport and energy networks, as well as the digital transition, and promote interconnection and multimodality of networks.  |
+| The new Connecting Europe Facility Programme, Cef Transport 2021 -2027, will finance greener and more sustainable transport and energy networks, as well as the digital transition, and promote interconnection and multimodality of networks.  |
 |  **Impacts and costs** | **Renewable energy generated (if applicable)** | N.a.  |
 |   |  **Energy removed/replaced, volume or fuel type** | The combined application of different last mile logistics models and solutions could reduce emissions by 40% and improve urban congestion and logistics cost efficiency by 30% and 20% respectively.  |
 |   |  **Estimated GHG emission reductions (total)** | By 2030, rail could capture 1.8 million tonnes currently transported by road. In Castilla y León, 3.7 million tons could be transferred or captured.  |
@@ -2214,7 +2214,7 @@ Logistics companies
 General public  |
 | --- | --- | --- |
 |   |  Actors involved | Valladolid City Council
-ADIF  |
+| ADIF  |
 |   |  Comments on implementation | N.a.  |
 |  Impacts and costs | Renewable energy generated (if applicable) | N.a.  |
 |   |  Energy removed/replaced, volume or fuel type | N.a.  |
@@ -2285,7 +2285,7 @@ Valladolid
 | --- | --- | --- |
 |  Implementation | Bodies/persons responsible for implementation | Valladolid City Council  |
 |   |  Scale of action and target entities | City scale
-Target group: General public  |
+| Target group: General public  |
 |   |  Actors involved | Valladolid City Council
 Municipal housing company
 Castilla y León Construction Institute
@@ -2311,16 +2311,16 @@ Valladolid
 |  Action plan | Name of the action | Energy refurbishment, renovation and updating of the Town Hall of Valladolid and country circle of the Pinar de Antequera.  |
 |   |  Type of action | Recovery, Transformation and Resilience Plan  |
 |   |  Description of the action | The project involves the comprehensive refurbishment of the Town Hall, including renovation of insulation and enclosures, updating of air-conditioning systems and renovation of equipment. In addition to including energy efficiency requirements, the refurbishment also includes improving accessibility to the building for citizens.
-This action includes the refurbishment of the Pinar de Antequera country circle and its integration with the environment in which it is located for its future use in youth leisure activities.  |
+| This action includes the refurbishment of the Pinar de Antequera country circle and its integration with the environment in which it is located for its future use in youth leisure activities.  |
 |  Reference to the impact pathway | Subsector | Buildings  |
 |   |  Systemic lever | Technology / infrastructure
-Governance & policy  |
+| Governance & policy  |
 |   |  short and medium-term changes | Improved energy efficiency
 Improved accessibility
 Integration with the environment  |
 |  Implementation | Agencies/persons responsible for implementation | Valladolid City Council  |
 |   |  Scale of action and target entities | City scale
-Target group: General public  |
+| Target group: General public  |
 |   |  Actors involved | Valladolid City Council  |
 |   |  Comments on implementation | NA  |
 |  Impacts and costs | Renewable energy generated (if applicable) | Implementation of renewable self-consumption systems  |
@@ -2342,7 +2342,7 @@ Valladolid
 |   |  Description of the action | Following the objectives of the Urban Agenda 2030 and as indicated in the PGOU, the action consists of articulating the city's strategy in relation to the decarbonisation of newly constructed buildings that meet the highest standards of energy efficiency. Economic development around the energy efficient building sector and training of building operators and maintainers.  |
 |  Reference to the impact pathway | Subsector | Buildings  |
 |   |  Systemic lever | Technology / infrastructure
-Governance & policy  |
+| Governance & policy  |
 |   |  short and medium-term changes | Increase in the number of energy-efficient dwellings  |
 |  Implementation | Agencies/persons responsible for implementation | Valladolid City Council  |
 |   |  Scale of action and target entities | City scale
@@ -2354,7 +2354,7 @@ Ayuntamiento de
 Valladolid
 
 |   | Actors involved | Valladolid City Council
-Construction sector  |
+| Construction sector  |
 | --- | --- | --- |
 |   |  Comments on implementation | NA  |
 |  Impacts and costs | Renewable energy generated (if applicable) | Positive energy buildings  |
@@ -2377,15 +2377,15 @@ ANEXO
 3
 
 |   | Systemic lever | • Technology / infrastructure
-• Social innovation  |
+| • Social innovation  |
 | --- | --- | --- |
 |   |  Short and medium-term changes | • Increase of LED luminaires in housing
-• Increased use of appliances in the highest energy class  |
+| • Increased use of appliances in the highest energy class  |
 |  Implementation | Agencies/persons responsible for implementation | • Valladolid City Council  |
 |   |  Scale of action and target entities | • City scale
-• Target group: citizens  |
+| • Target group: citizens  |
 |   |  Actors involved | • Valladolid City Council
-• Valladolid Municipal Energy Agency  |
+| • Valladolid Municipal Energy Agency  |
 |   |  Comments on implementation | N.a.  |
 |  Impacts and costs | Renewable energy generated (if applicable) | No  |
 |   |  Energy removed/replaced, volume or fuel type | Reduction of fossil fuel use  |
@@ -2495,13 +2495,13 @@ ANEXO
 |   |  Description of the action | Data collection of new equipment installed and combustion boilers replaced Maintenance of an updated inventory of heat pumps in the city Encouragement of the use and installation of new equipment.  |
 |  Reference to the impact pathway | Subsector | Buildings and heating  |
 |   |  Systemic lever | • Technology / infrastructure
-• Social innovation  |
+| • Social innovation  |
 |   |  Short and medium-term changes | • Increased number of heat pumps installed in the city's building stock
-• Reducing emissions from fossil fuel combustion  |
+| • Reducing emissions from fossil fuel combustion  |
 |  Implementation | Agencies/persons responsible for implementation | • Junta de Castilla y León
-• Valladolid City Council  |
+| • Valladolid City Council  |
 |   |  Scale of action and target entities | • City scale
-• Target group: citizens  |
+| • Target group: citizens  |
 |   |  Actors involved | • Junta de Castilla y León
 • Valladolid City Council
 • Valladolid Municipal Energy Agency  |
@@ -2607,9 +2607,9 @@ ANEXO
 • Solar potential map, https://solaratlas.es/valladolid/
 • New self-consumption installations  |
 |  Implementation | Bodies/persons responsible for implementation | • Valladolid City Council
-• Communities of neighbours  |
+| • Communities of neighbours  |
 |   |  Scale of action and target entities | • City scale, with a focus on different neighbourhoods
-• Target group: residents of the neighbourhoods involved.  |
+| • Target group: residents of the neighbourhoods involved.  |
 |   |  Actors involved | • Valladolid City Council
 • Specialised companies
 • Neighbourhood associations
@@ -2658,7 +2658,7 @@ Installation of 294 LED luminaires with minimum energy consumption, including re
 • Emission reductions  |
 |  Implementation | Agencies/persons responsible for implementation | • Valladolid City Council  |
 |   |  Scale of action and target entities | • City scale
-• Target group: residents of the neighbourhoods involved.  |
+| • Target group: residents of the neighbourhoods involved.  |
 |   |  Actors involved | • Valladolid City Council  |
 
 Annex 1: Climate Neutrality Action Plan – Valladolid
@@ -2730,7 +2730,7 @@ ANEXO
 • UTE Waste treatment plant  |
 | --- | --- | --- |
 |   |  Scale of action and target entities | • City scale (the circular centre will be located in Barrio España)
-• Target: Local productive fabric and entrepreneurial ecosystem of the city.  |
+| • Target: Local productive fabric and entrepreneurial ecosystem of the city.  |
 |   |  Actors involved | • Valladolid City Council
 • Start-ups
 • FPNCYL (Castilla y León Natural Heritage Foundation)
@@ -2754,7 +2754,7 @@ Valladolid
 |  Optimisation of waste collection management  |   |   |
 |  Action plan | Name of the action | Improvement of the street cleaning, urban waste collection and treatment service.  |
 |   |  Type of action | Promote segregation at source, and expand and strengthen selective waste collection, increasing the quality of the fractions - Funding
-Raise awareness and sensitise citizens about their role as agents of change in their day-to-day actions, both individually and collectively, as well as in decision-making on the purchase of goods and services - Communication  |
+| Raise awareness and sensitise citizens about their role as agents of change in their day-to-day actions, both individually and collectively, as well as in decision-making on the purchase of goods and services - Communication  |
 |   |  Description of the action | Improvement of waste collection management. In an area dominated by the new Waste Law, Law 7/2022 of 8 April, minimisation, correct separation at source and proper waste management are promoted. The focus is on minimisation and reuse. And when it comes to waste that can no longer be attributed a second direct performance, separation and deposit in the most appropriate containers is promoted, for subsequent recycling and, as a last resort, recovery or landfill.
 Concrete actions include:
 Deployment of containers for the selective collection of the light packaging fraction (yellow), completing the system of 5 fractions (organic matter, paper/cardboard, glass, light packaging, urban waste).
@@ -2822,9 +2822,9 @@ ANEXO
 • Promoting the use of renewable energies  |
 | --- | --- | --- |
 |  Implementation | Agencies/persons responsible for implementation | • Valladolid City Council
-• Entidad Pública Empresarial "Agua de Valladolid E.P.E." (Public Business Entity "Agua de Valladolid E.P.E.") (Aquavall)  |
+| • Entidad Pública Empresarial "Agua de Valladolid E.P.E." (Public Business Entity "Agua de Valladolid E.P.E.") (Aquavall)  |
 |   |  Scale of action and target entities | • City scale
-• Target group: General public  |
+| • Target group: General public  |
 |   |  Actors involved | • Valladolid City Council  |
 |   |  Comments on implementation | N.a.  |
 |  Impacts and costs | Renewable energy generated (if applicable) | Use of renewable energy generated in water treatment (biomethanisation)  |
@@ -2869,7 +2869,7 @@ Specific measures to conserve and increase urban biodiversity: Integral conserva
 • Measurement system through indicators and data collection.  |
 |  Implementation | Agencies/persons responsible for implementation | Valladolid City Council  |
 |   |  Scale of action and target entities | City scale.
-Target group: General public.  |
+| Target group: General public.  |
 |   |  Actors involved | Valladolid City Council.  |
 
 Annex 1: Climate Neutrality Action Plan – Valladolid
@@ -3400,9 +3400,9 @@ Trucks <3.5 t: 90%.
 Trucks >3.5 t: 40% | Mobility Area Companies | 2020-2030 | Transport | 6 | 7 | 3 | (31) M€  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Building renovations: renovation rate: 2% of existing building stock | Urban Planning Area/
-Citizenship | 2020-2030 | Buildings and Heating | 12 | 131 | 10 | (331) M€  |
+| Citizenship | 2020-2030 | Buildings and Heating | 12 | 131 | 10 | (331) M€  |
 |  New buildings with high energy requirements | Urban Planning Area/
-Citizenship | 2020-2030 | Buildings and Heating | 2 | 27 | 2 | 35 M€  |
+| Citizenship | 2020-2030 | Buildings and Heating | 2 | 27 | 2 | 35 M€  |
 |  Efficient lighting and appliances 100% of luminaires rehabilitated between 2020 and 2030, aggressively (40% improvements) | Citizenship | 2020-2030 | Buildings and Heating | 27 | 329 | 2 | (159) M€  |
 |  -Low emission heat generation, heating decarbonisation | Citizenship Companies | 2020-2030 | Buildings and Heating | 192 | 24 | 96 | (810) M€  |
 |  Low CO2-emission electricity generation with renewable energy power generation | State Companies | 2020-2030 | Electricity | 230 | 184 |  | (117) M€  |

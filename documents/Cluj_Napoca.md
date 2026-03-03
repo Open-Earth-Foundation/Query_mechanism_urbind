@@ -93,91 +93,84 @@ Climate Neutrality Action Plan
 
 Abbreviations and acronyms
 
-|  ABBREVIATIONS AND ACRONYMS | DEFINITION  |
+| ABBREVIATIONS AND ACRONYMS | DEFINITION |
 | --- | --- |
-|  AFOLU | Agricultural, Forestry, and Land Use  |
-|  AP | Action Plan  |
-|  BA | Business Angels  |
-|  BBU | Babeș-Bolyai University  |
-|  BREEAM | Building Research Establishment Environmental Assessment Method  |
-|  CIIC | Civic Imagination and Innovation Center  |
-|  CMA | Cluj Metropolitan Area  |
-|  CNM | Cluj-Napoca Municipality  |
-|  CO2 | Carbon Dioxide  |
-|  COSME | Programme for the Competitiveness of Entreprises and SMEs  |
-|  CRF | Common Reporting Format  |
-|  CSR | Corporate Social Responsibility  |
-|  CTP | Compania de Transport Public (Public Transport Company)  |
-|  DG | Directorate General  |
-|  DGNB | German Sustainable Building Council  |
-|  DIH | Digital Innovation Hub  |
-|  EBRD | European Bank for Reconstruction and Development  |
-|  EC | European Commission  |
-|  EEC | European Economic Community  |
-|  EEIP | Energy Efficiency Improvement Program  |
-|  EIB | European Investment Bank  |
-|  ERDF | European Regional Development Plan  |
-|  ETS | Emissions Trading System  |
-|  EU | European Union  |
-|  GHG | Greenhouse gas  |
-6
-
-|  ABBREVIATIONS AND ACRONYMS | DEFINITION  |
+| AFOLU | Agricultural, Forestry, and Land Use |
+| AP | Action Plan |
+| BA | Business Angels |
+| BBU | Babeș-Bolyai University |
+| BREEAM | Building Research Establishment Environmental Assessment Method |
+| CIIC | Civic Imagination and Innovation Center |
+| CMA | Cluj Metropolitan Area |
+| CNM | Cluj-Napoca Municipality |
+| CO2 | Carbon Dioxide |
+| COSME | Programme for the Competitiveness of Entreprises and SMEs |
+| CRF | Common Reporting Format |
+| CSR | Corporate Social Responsibility |
+| CTP | Compania de Transport Public (Public Transport Company) |
+| DG | Directorate General |
+| DGNB | German Sustainable Building Council |
+| DIH | Digital Innovation Hub |
+| EBRD | European Bank for Reconstruction and Development |
+| EC | European Commission |
+| EEC | European Economic Community |
+| EEIP | Energy Efficiency Improvement Program |
+| EIB | European Investment Bank |
+| ERDF | European Regional Development Plan |
+| ETS | Emissions Trading System |
+| EU | European Union |
+| GHG | Greenhouse gas |
+| ABBREVIATIONS AND ACRONYMS | DEFINITION |
 | --- | --- |
-|  GIS | Geographic Information System  |
-|  GPC | The Global Protocol for Community-Scale Greenhouse Gas Emission Inventories  |
-|  GPL | Liquefied Petroleum Gas  |
-|  ha | Hectar  |
-|  HOP | Health Operational Programme  |
-|  IDA | Intercommunity Development Association  |
-|  INCDTIM | National Research and Development Institute for Isotopic and Molecular Technologies  |
-|  IPCC | Intergovernmental Panel on Climate Change  |
-|  IPPU | Industrial Process and Product Use  |
-|  IRCEM | Institute for Circular Economy and Environment  |
-|  IUDS | Integrated Urban Development Strategy  |
-|  LCD | Liquid-Crystal Display  |
-|  LED | Light-Emitting Diode  |
-|  LEED | Leadership in Energy and Environmental Design  |
-|  MA | Metropolitan Area  |
-|  MA | Metropolitan Area  |
-|  MWh | Megawatt-Hour  |
-|  N/A | Not Applicable  |
-|  NGO | Non-governmental Organization  |
-|  NIPECC | National Integrated Plan for Energy and Climate Change  |
-|  NO2 | Nitrogen Dioxide  |
-|  NRRP | National Recovery and Resilience Plan  |
-|  NW | North West  |
-|  NZ | Net Zero  |
-|  nZEB | nearly Zero Emission Building  |
-|  PPP | Public-Private Partnership  |
-|  RD | Research-Development  |
-|  RDI | Research-Development-Innovation  |
-7
-
-|  ABBREVIATIONS AND ACRONYMS | DEFINITION  |
+| GIS | Geographic Information System |
+| GPC | The Global Protocol for Community-Scale Greenhouse Gas Emission Inventories |
+| GPL | Liquefied Petroleum Gas |
+| ha | Hectar |
+| HOP | Health Operational Programme |
+| IDA | Intercommunity Development Association |
+| INCDTIM | National Research and Development Institute for Isotopic and Molecular Technologies |
+| IPCC | Intergovernmental Panel on Climate Change |
+| IPPU | Industrial Process and Product Use |
+| IRCEM | Institute for Circular Economy and Environment |
+| IUDS | Integrated Urban Development Strategy |
+| LCD | Liquid-Crystal Display |
+| LED | Light-Emitting Diode |
+| LEED | Leadership in Energy and Environmental Design |
+| MA | Metropolitan Area |
+| MWh | Megawatt-Hour |
+| N/A | Not Applicable |
+| NGO | Non-governmental Organization |
+| NIPECC | National Integrated Plan for Energy and Climate Change |
+| NO2 | Nitrogen Dioxide |
+| NRRP | National Recovery and Resilience Plan |
+| NW | North West |
+| NZ | Net Zero |
+| nZEB | nearly Zero Emission Building |
+| PPP | Public-Private Partnership |
+| RD | Research-Development |
+| RDI | Research-Development-Innovation |
+| ABBREVIATIONS AND ACRONYMS | DEFINITION |
 | --- | --- |
-|  |   |
-|  RES | Renewable energy source  |
-|  RES | Renewable energy source  |
-|  RNMC | Romanian New Material Cluster  |
-|  RO | Romanian  |
-|  ROAT | The Romanian Order of Architects, Transilvania branch  |
-|  ROP | Regional Operational Programme  |
-|  RRF | Recovery and Resilience Facility  |
-|  S.R.L. | Private Limited Company  |
-|  SECAP | Sustainable Energy and Climate Action Plan  |
-|  Sqm | Square meters  |
-|  SUMP | Sustainable Urban Mobility Plan  |
-|  SWM | Solid Waste Management  |
-|  TAIEX | Technical Assistance and Information Exchange  |
-|  TDIH | Transylvania Digital Innovation Hub  |
-|  TITC | Transilvania IT Cluster  |
-|  TREC | Transylvania Energy Cluster  |
-|  TUCN | Technical University of Cluj-Napoca  |
-|  UASVM | University of Agricultural Sciences and Veterinary Medicine  |
-|  UHI | Urban Heat Island  |
-|  VC | Venture Capital  |
-|  EUFHERDI | The Executive Unit for Financing Higher Education, Research, Development and Innovation  |
+| RES | Renewable energy source |
+| RNMC | Romanian New Material Cluster |
+| RO | Romanian |
+| ROAT | The Romanian Order of Architects, Transilvania branch |
+| ROP | Regional Operational Programme |
+| RRF | Recovery and Resilience Facility |
+| S.R.L. | Private Limited Company |
+| SECAP | Sustainable Energy and Climate Action Plan |
+| Sqm | Square meters |
+| SUMP | Sustainable Urban Mobility Plan |
+| SWM | Solid Waste Management |
+| TAIEX | Technical Assistance and Information Exchange |
+| TDIH | Transylvania Digital Innovation Hub |
+| TITC | Transilvania IT Cluster |
+| TREC | Transylvania Energy Cluster |
+| TUCN | Technical University of Cluj-Napoca |
+| UASVM | University of Agricultural Sciences and Veterinary Medicine |
+| UHI | Urban Heat Island |
+| VC | Venture Capital |
+| EUFHERDI | The Executive Unit for Financing Higher Education, Research, Development and Innovation |
 # Introduction
 
 Cluj-Napoca is the largest secondary city in Romania, but also the most dynamic in terms of both demographic and economic growth (5,000 new jobs and inhabitants only in 2021, at metropolitan level, meaning +2,7%, respectively +1% in just one year). According to a World Bank survey, the city is the most attractive destination for internal migration, surpassing even Bucharest, and it is perceived by the Romanians as the one with the highest quality of life in the country. This growth also comes at the cost of a high level of GHG emissions, especially associated with the rapidly growing housing sector and motorization rate. The ambition of the local ecosystem, stated in the IUDS adopted in January 2022, is to place Cluj-Napoca among the cities with the highest quality of life in the EEC area and to promote it aaan European Lab City for testing the most innovative solutions, technologies and processes related to sustainable urban development.
@@ -226,17 +219,16 @@ Climate Neutrality Action Plan
 
 ## 3.1 Module A-1 Greenhouse Gas Emissions Baseline Inventory
 
-|  A-1.1: FINAL ENERGY USE BY SOURCE SECTORS  |   |   |   |   |
-| --- | --- | --- | --- | --- |
-|  Base year | 2021  |   |   |   |
-|  Unit | MWh/year  |   |   |   |
-|   | Scope 1 | Scope 2 | Scope 3* | Total  |
-|  Buildings | 2,372,076 | 231,941 | N/A | 2,604,017  |
-|  (Fuel type/energy used) | **Natural gas
+A-1.1: FINAL ENERGY USE BY SOURCE SECTORS
+Base year | 2021
+Unit | MWh/year
+Scope 1 | Scope 2 | Scope 3* Total
+Buildings | 2,372,076 | 231,941 | N/A 2,604,017
+(Fuel type/energy used) | **Natural gas
 ,372,076 | Electrical energy
 ,941 | N/A |   |
-|  Transport | 585,137 | 16,030 | N/A | 601,167  |
-|  (Fuel type/energy used) | GPL
+Transport | 585,137 | 16,030 | N/A | 601,167
+(Fuel type/energy used) | GPL
 ,771
 Diesel
 ,387
@@ -245,26 +237,25 @@ Gasoline
 Biofuel
 ,498 | Electrical energy
 ,030 | N/A |   |
-|  Waste | 5,400 | N/A | 81,197 | 86,597  |
-|  (Fuel type/energy used) | Diesel
+Waste | 5,400 | N/A | 81,197 | 86,597
+(Fuel type/energy used) | Diesel
 ,400 | N/A | Electrical energy
 ,197 |   |
-|  Industrial Process and Product Use (IPPU) | 450,710 | 303,045 | N/A | 753,755  |
-|  (Fuel type/energy used) | Natural gas
+Industrial Process and Product Use (IPPU) | 450,710 | 303,045 | N/A | 753,755
+(Fuel type/energy used) | Natural gas
 ,710 | Electrical energy
 ,045 | N/A |   |
-|  Agricultural, Forestry, and Land Use (AFOLU) | 30,601 | 4,995 | N/A | 35,596  |
+Agricultural, Forestry, and Land Use (AFOLU) | 30,601 | 4,995 | N/A | 35,596
 Climate Neutrality Action Plan
 
 #
 
-|  A-1.1: FINAL ENERGY USE BY SOURCE SECTORS  |   |   |   |   |
-| --- | --- | --- | --- | --- |
-|  Base year | 2021  |   |   |   |
-|  Unit | MWh/year  |   |   |   |
-|   | Scope 1 | Scope 2 | Scope 3* | Total  |
-|  (Fuel type/energy used) | Diesel | Electrical energy | N/A |   |
-|   |  30,601 | 4,995  |   |   |
+A-1.1: FINAL ENERGY USE BY SOURCE SECTORS
+Base year | 2021
+Unit | MWh/year
+Scope 1 | Scope 2 | Scope 3* Total
+(Fuel type/energy used) | Diesel | Electrical energy | N/A
+30,601 | 4,995
 
 * Scope 3 energy use for the Buildings, Transport, IPPU and AFOLU sectors was not available. Coalition Partners will address this matter in future iterations of this Action Plan, as explained in section A-1.6
 ** The SECAP document does not offer clear information on how much natural gas is used for district heating, or for individual home heating or cooking, thus making it impossible at this moment to determine Scope 2 gas energy use for the building sector. This challenge will be addressed by coalition partners in the following iterations of the Action Plan, as explained in section A-1.6
@@ -272,32 +263,30 @@ Climate Neutrality Action Plan
 
 #
 
-|  A-1.2: EMISSION FACTORS APPLIED***  |   |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- | --- |
-|  (please specify for primary energy type and GHG emission factor according to methodology used)  |   |   |   |   |   |   |
-|  For calculation in t or MWh of primary energy  |   |   |   |   |   |   |
-|  (Please indicate method used, e.g. GPC, IPCC, CRF, national, etc.) IPCC 2006  |   |   |   |   |   |   |
-|  Primary energy/ energy source | Carbon Dioxide (CO2) | Methane (CH4) | Nitrous Oxide (N2O) | F-gases (hydrofluoro carbons and perfluorocar bons) | Sulphur hexafluorid e (SF6) | Nitrogen trifluoride (NF3)  |
-|  Electrical energy 2021 * | 0.701 | N/A | N/A | N/A | N/A | N/A  |
-|  Natural gas | 0.202 | N/A | N/A | N/A | N/A | N/A  |
-|  Diesel | 0.267 | N/A | N/A | N/A | N/A | N/A  |
-|  Gasoline | 0.249 | N/A | N/A | N/A | N/A | N/A  |
-|  GPL | 0.227 | N/A | N/A | N/A | N/A | N/A  |
-|  Bio-fuel | 0.001 | N/A | N/A | N/A | N/A | N/A  |
-|  Renewable energy ** | 0 | N/A | N/A | N/A | N/A | N/A  |
-|  Electrical energy 2030 *** | 0.1 | N/A | N/A | N/A | N/A | N/A  |
+A-1.2: EMISSION FACTORS APPLIED***
+(please specify for primary energy type and GHG emission factor according to methodology used)
+For calculation in t or MWh of primary energy
+(Please indicate method used, e.g. GPC, IPCC, CRF, national, etc.) IPCC 2006
+Primary energy/ energy source | Carbon Dioxide (CO2) | Methane (CH4) | Nitrous Oxide (N2O) | F-gases (hydrofluoro carbons and perfluorocar bons) | Sulphur hexafluorid e (SF6) | Nitrogen trifluoride (NF3)
+Electrical energy 2021 * | 0.701 | N/A | N/A | N/A | N/A | N/A
+Natural gas | 0.202 | N/A | N/A | N/A | N/A | N/A
+Diesel | 0.267 | N/A | N/A | N/A | N/A | N/A
+Gasoline | 0.249 | N/A | N/A | N/A | N/A | N/A
+GPL | 0.227 | N/A | N/A | N/A | N/A | N/A
+Bio-fuel | 0.001 | N/A | N/A | N/A | N/A | N/A
+Renewable energy ** | 0 | N/A | N/A | N/A | N/A | N/A
+Electrical energy 2030 *** | 0.1 | N/A | N/A | N/A | N/A | N/A
 
 * CO2 estimates for grid supplied energy in 2021 (MWh/year to tons Co2/year) are set at 0.701 according to IPCC 2006
 ** According to SECAP 2021, emission factors related to energy generated from renewable sources are equal to 0.
 *** Due to the fact that by 2030 the majority of the electricity from the national grid will be generated from renewable sources, the emission factor for grid supplied energy in 2030 was set to 0.1 (SECAP 2021). Estimates for 2030 will take into account this emission factor when calculating CO2 emissions. Additional explanation related to this matter can be found in section A-1.6
 *** SECAP 2021, the official document approved by the Cluj-Napoca City Council, did not offer any information about the emission factors for other greenhouse gases. This matter will be addressed by Coalition Partners in the next iterations of the Action Plan, as explained in section A-1.6.
 
-|  A-1.3: ACTIVITY BY SOURCE SECTORS  |   |   |   |
-| --- | --- | --- | --- |
-|  Base year: 2030 (Emission reduction from each activity contained in section B-2.1 are categorized in this table in accordance to the scope they will influence. For example, if the activities will reduce CO2 emissions associated with grid-supplied electrical energy, values will be placed in Scope 2. As the activities are to be completed by 2030 the base year was set to 2030). *  |   |   |   |
-|   | Scope 1 | Scope 2 | Scope 3  |
-|  1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. | CO2 | CO2 | CO2  |
-|  1.1.2.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. | 0.001 | 0.001 | 0.001  |
+A-1.3: ACTIVITY BY SOURCE SECTORS
+Base year: 2030 (Emission reduction from each activity contained in section B-2.1 are categorized in this table in accordance to the scope they will influence. For example, if the activities will reduce CO2 emissions associated with grid-supplied electrical energy, values will be placed in Scope 2. As the activities are to be completed by 2030 the base year was set to 2030). *
+Scope 1 | Scope 2 | Scope 3
+1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. | CO2 | CO2 | CO2
+1.1.2.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. | 0.001 | 0.001 | 0.001
 
 * CO2 estimates for the 2030 CO2 emissions from the 2019 CO2 emission factor.
 Climate Neutrality Action Plan
@@ -307,65 +296,66 @@ Climate Neutrality Action Plan
 | A-1.3: ACTIVITY BY SOURCE SECTORS |
 | --- |
 | Base year: 2030 (Emission reduction from each activity contained in section B-2.1 are categorized in this table in accordance to the scope they will influence. For example, if the activities will reduce CO2 emissions associated with grid-supplied electrical energy, values will be placed in Scope 2. As the activities are to be completed by 2030 the base year was set to 2030). * |
-| Buildings | 679,533 MWh/year | 137,266 tons CO2/year reduction | 1,149,773 MWh/year | 114,977 tons CO2/year reduction | N/A |
-| Line 2 - Action 1.1 (from section B-2.1) | 13,573 tons CO2/year reduction associated with natural gas | 31,670 tons CO2/year reduction associated with electrical energy | N/A |
-| • 19 power plants with improved energy efficiency
+
+Buildings | 679,533 MWh/year | 137,266 tons CO2/year reduction | 1,149,773 MWh/year | 114,977 tons CO2/year reduction | N/A
+Line 2 - Action 1.1 (from section B-2.1) | 13,573 tons CO2/year reduction associated with natural gas | 31,670 tons CO2/year reduction associated with electrical energy | N/A
+
+• 19 power plants with improved energy efficiency
 • 13 energy islands
 • 3 thermal points transformed
 • 1 positive energy district
 • 1 rehabilitation of the heat energy distribution network | N/A |
-| Line 3 - Action 1.2 (from section B-2.1) | 11,100 tons CO2/year reduction associated with natural gas | 25,900 tons CO2/year reduction associated with electrical energy | N/A |
-| • 2 public buildings RES generation facilities
+Line 3 - Action 1.2 (from section B-2.1) | 11,100 tons CO2/year reduction associated with natural gas | 25,900 tons CO2/year reduction associated with electrical energy | N/A
+• 2 public buildings RES generation facilities
 • 2,000 blocks and 5,000 houses RES generation facilities | N/A |
-| Line 4 - Action 1.3 (from section B-2.1) |  | 3,000 tons CO2/year reduction associated with electrical energy | N/A |
-|  | • 80% of streets lights equipped with LED, remote management, and dimming systems | N/A |
-| Line 13 - Action 5.1 (from section B-2.1) | 47,195 tons CO2/year reduction associated with natural gas | 22,805 tons CO2/year reduction associated with electrical energy | N/A |
-| • 40,000 apartments in communal housing renovated
+Line 4 - Action 1.3 (from section B-2.1) | 3,000 tons CO2/year reduction associated with electrical energy | N/A
+• 80% of streets lights equipped with LED, remote management, and dimming systems | N/A
+Line 13 - Action 5.1 (from section B-2.1) | 47,195 tons CO2/year reduction associated with natural gas | 22,805 tons CO2/year reduction associated with electrical energy | N/A
+• 40,000 apartments in communal housing renovated
 • 80,000 residents targeted by pilot Masterplan for public spaces in the neighbourhood to reduce car usage and promot climate-neutraltrial lifestyle | N/A |
-| Line 14 - Action 5.2 | 3,371 tons CO2/year reduction associated with natural gas | 1,629 tons CO2/year reduction associated with electrical energy | N/A |
+Line 14 - Action 5.2 | 3,371 tons CO2/year reduction associated with natural gas | 1,629 tons CO2/year reduction associated with electrical energy | N/A
 Climate Neutrality Action Plan
 
 #
 
-| A-1.3: ACTIVITY BY SOURCE SECTORS |
-| --- |
-| Base year: 2030 (Emission reduction from each activity contained in section B-2.1 are categorized in this table in accordance to the scope they will influence. For example, if the activities will reduce CO2 emissions associated with grid-supplied electrical energy, values will be placed in Scope 2. As the activities are to be completed by 2030 the base year was set to 2030). * |
-| (from section B-2.1) |  | • 50 public buildings renovated | N/A |
-| Line 15 - Action 5.3 (from section B-2.1) | 8,090 tons CO2/year reduction associated with natural gas | 3,910 tons CO2/year reduction associated with electrical energy | N/A |
-|  | • 100 ha of brownfield redeveloped • 50 new commercial green buildings included in a property tax reduction | N/A |
-| Line 16 - Action 6.1 (from section B-2.1) | 2,292 tons CO2/year reduction associated with natural gas | 1,108 tons CO2/year reduction associated with electrical energy | N/A |
-| • 1 behavior change program composed of knowledge and competence audits, civic imagination and innovation remodeling monitoring climate neutrality, marketing campaign, study visits, NetZero Caravans | N/A |
-| Line 17 - Action 6.2 (from section B-2.1) | 42,475 tons CO2/year reduction associated with natural gas | 20,525 tons CO2/year reduction associated with electrical energy | N/A |
-| • 2 comprehensive climate-neutrality masterplans, updates for local planning regulations, and governance models related to the climate neutrality ecosystem | N/A |
-| Line 18 - Action 6.3 (from section B-2.1) | 9,169 tons CO2/year reduction associated with natural gas | 4,431 tons CO2/year reduction associated with electrical energy | N/A |
-| • 1 climate neutrality Digital Twin • 1 International Climate Neutrality Summit • 1 Digital platform for climate neutrality management | N/A |
-| Transport | 301,270 MWh/year | 36,555 tons CO2/year reduction | 118,970 MWh/year | 11,897 tons CO2/year reduction | N/A |
-|  | 236 tons CO2/year reduction associated with | 8,661 tons CO2/year reduction associated | N/A |
+A-1.3: ACTIVITY BY SOURCE SECTORS
+Base year: 2030 (Emission reduction from each activity contained in section B-2.1 are categorized in this table in accordance to the scope they will influence. For example, if the activities will reduce CO2 emissions associated with grid-supplied electrical energy, values will be placed in Scope 2. As the activities are to be completed by 2030 the base year was set to 2030). *
+(from section B-2.1) | • 50 public buildings renovated | N/A
+Line 15 - Action 5.3 (from section B-2.1) | 8,090 tons CO2/year reduction associated with natural gas | 3,910 tons CO2/year reduction associated with electrical energy | N/A
+• 100 ha of brownfield redeveloped • 50 new commercial green buildings included in a property tax reduction | N/A
+Line 16 - Action 6.1 (from section B-2.1) | 2,292 tons CO2/year reduction associated with natural gas | 1,108 tons CO2/year reduction associated with electrical energy | N/A
+• 1 behavior change program composed of knowledge and competence audits, civic imagination and innovation remodeling monitoring climate neutrality, marketing campaign, study visits, NetZero Caravans | N/A
+Line 17 - Action 6.2 (from section B-2.1) | 42,475 tons CO2/year reduction associated with natural gas | 20,525 tons CO2/year reduction associated with electrical energy | N/A
+• 2 comprehensive climate-neutrality masterplans, updates for local planning regulations, and governance models related to the climate neutrality ecosystem | N/A
+Line 18 - Action 6.3 (from section B-2.1) | 9,169 tons CO2/year reduction associated with natural gas | 4,431 tons CO2/year reduction associated with electrical energy | N/A
+• 1 climate neutrality Digital Twin • 1 International Climate Neutrality Summit • 1 Digital platform for climate neutrality management | N/A
+
+Transport | 301,270 MWh/year | 36,555 tons CO2/year reduction | 118,970 MWh/year | 11,897 tons CO2/year reduction | N/A
+236 tons CO2/year reduction associated with | 8,661 tons CO2/year reduction associated | N/A
 Climate Neutrality Action Plan
 
 #
 
-|  A-1.3: ACTIVITY BY SOURCE SECTORS  |   |   |   |
-| --- | --- | --- | --- |
-|  Base year: 2030 (Emission reduction from each activity contained in section B-2.1 are categorized in this table in accordance to the scope they will influence. For example, if the activities will reduce CO2 emissions associated with grid-supplied electrical energy, values will be placed in Scope 2. As the activities are to be completed by 2030 the base year was set to 2030). *  |   |   |   |
-|  Line 5 - Action 2.1 (from section B-2.1) | GPL
+A-1.3: ACTIVITY BY SOURCE SECTORS
+Base year: 2030 (Emission reduction from each activity contained in section B-2.1 are categorized in this table in accordance to the scope they will influence. For example, if the activities will reduce CO2 emissions associated with grid-supplied electrical energy, values will be placed in Scope 2. As the activities are to be completed by 2030 the base year was set to 2030). *
+Line 5 - Action 2.1 (from section B-2.1) | GPL
 ,167 tons CO2/year reduction associated with Diesel
 ,281 tons CO2/year reduction associated with Gasoline
 tons CO2/year reduction associated with Biofuel | with electrical energy (encourage all citizens even those with electric vehicles to use public transport) |   |
-|   |  • 9 new metro stations, and 1 new metro line
+• 9 new metro stations, and 1 new metro line
 • 43 km of train line and 23 stations rehabilitated
 • 24 km of a new city belt
 • 20 km of new connecting roads
 • 200 new electric busses
 • 90 bus stations modernized |   | N/A  |
-|  Line 6 - Action 2.2 (from section B-2.1) | 1,650 tons CO2/year reduction associated with GPL
+Line 6 - Action 2.2 (from section B-2.1) | 1,650 tons CO2/year reduction associated with GPL
 ,900 tons CO2/year reduction associated with Diesel
 ,300 tons CO2/year reduction associated with Gasoline
 tons CO2/year reduction associated with Biofuel |  | N/A  |
-|   |  • 200 new public charging stations for EVs
+• 200 new public charging stations for EVs
 • 300 new private charging stations for EVs
 • benefits for residents purchasing EVs |   | N/A  |
-|  Line 7 - Action 2.3 (from | 19 tons CO2/year reduction associated with GPL
+Line 7 - Action 2.3 (from | 19 tons CO2/year reduction associated with GPL
 tons CO2/year reduction associated with | 711 tons CO2/year reduction associated with electrical energy (encourage all citizens | N/A  |
 Climate Neutrality Action Plan
 
@@ -374,20 +364,22 @@ Climate Neutrality Action Plan
 | A-1.3: ACTIVITY BY SOURCE SECTORS |
 | --- |
 | Base year: 2030 (Emission reduction from each activity contained in section B-2.1 are categorized in this table in accordance to the scope they will influence. For example, if the activities will reduce CO2 emissions associated with grid-supplied electrical energy, values will be placed in Scope 2. As the activities are to be completed by 2030 the base year was set to 2030). * |
-| section B-2.1) | Diesel
+| section B-2.1) Diesel |
 tons CO2/year reduction associated with Gasoline
 ton CO2/year reduction associated with Biofuel | even those with electric vehicles to cycle or walk) |  |
 | • 19.8 ha of public spaces renovated to promote cycling, walking, and play and the transformation of streets into low-speed ones |  |
-| Line 8 - Action 2.4 (from section B-2.1) | 69 tons CO2/year reduction associated with GPL
+| --- | --- |
+| Line 8 - Action 2.4 (from section B-2.1) | 69 tons CO2/year reduction associated with GPL |
 ,381 tons CO2/year reduction associated with Diesel
 ,123 tons CO2/year reduction associated with Gasoline
 tons CO2/year reduction associated with Biofuel | 2,525 tons CO2/year reduction associated with electrical energy (encourage all citizens even those with electric vehicles to cycle) | N/A |
-| • 50 km of new bike lanes
+• 50 km of new bike lanes
 • 20 new bike-sharing stations
 • 1,000 new public regular and electric bikes |  |
-| Waste | 3,216 MWh/year | 859 tons CO2/year reduction | N/A | 151,410 MWh/year | 15,141 tons CO2/year reduction |
-| Line 9 - Action 3.1 (from section B-2.1) | 859 tons CO2/year reduction associated with less Diesel required for transporting selected waste |  | 15,141 tons CO2/year reduction associated with electrical energy (selected waste would be processed more economically) |
-| • 270 digitized eco-islands for the selective collection of household and packaging |
+Waste | 3,216 MWh/year | 859 tons CO2/year reduction | N/A | 151,410 MWh/year | 15,141 tons CO2/year reduction
+Line 9 - Action 3.1 (from section B-2.1) | 859 tons CO2/year reduction associated with less Diesel required for transporting selected waste | 15,141 tons CO2/year reduction associated with electrical energy (selected waste would be processed more economically)
+
+• 270 digitized eco-islands for the selective collection of household and packaging
 Climate Neutrality Action Plan
 
 #
@@ -395,39 +387,38 @@ Climate Neutrality Action Plan
 | A-1.3: ACTIVITY BY SOURCE SECTORS |
 | --- |
 | Base year: 2030 (Emission reduction from each activity contained in section B-2.1 are categorized in this table in accordance to the scope they will influence. For example, if the activities will reduce CO2 emissions associated with grid-supplied electrical energy, values will be placed in Scope 2. As the activities are to be completed by 2030 the base year was set to 2030). * |
-|  | waste • 2 collection centers for voluminous and hazardous waste, including construction packaging. • 100 new street-smart waste bins powered by solar energy |
-| Industrial Process and Product Use (IPPU) | N/A | N/A | N/A |
-| N/A | N/A | N/A | N/A |
+| waste • 2 collection centers for voluminous and hazardous waste, including construction packaging. • 100 new street-smart waste bins powered by solar energy |
+| Industrial Process and Product Use (IPPU) N/A N/A N/A |
+| N/A N/A N/A N/A |
 | Agricultural, Forestry and Land Use (AFOLU) | 8,403 MWh/year | 2,244 tons CO2/ year reduction | 9,615 MWh/year | 962 tons CO2/ year reduction | N/A |
 | Line 10 - Action 4.1 (from section B-2.1) | 266 tons CO2/year reduction associated with less Diesel as citizens will be encouraged to walk more and not use their cars | 114 tons CO2/year reduction associated with electrical energy as citizens would be encouraged to walk more | N/A |
 | • 63 ha of parks rehabilitated • 120 ha of new parks • 100,000 new trees planted | N/A |
-| Line 11 - Action 4.2 (from section B-2.1) | 1,855 tons CO2/year reduction associated with less Diesel as citizens would be encouraged to bike more and not use their cars | 795 tons CO2/year reduction associated with electrical energy (all citizens would be encouraged to bike, even those with electric vehicles) | N/A |
+| --- | --- |
+| Line 11 - Action 4.2 (from section B-2.1) | 1,855 tons CO2/year reduction associated with less Diesel as citizens would be encouraged to bike more and not use their cars 795 tons CO2/year reduction associated with electrical energy (all citizens would be encouraged to bike, even those with electric vehicles) N/A |
 | • 75 km of new bike lanes along the Somes River | N/A |
-| Line 12 - | 123 tons CO2/year reduction associated with less Diesel (green roofs | 53 tons CO2/year reduction associated with electrical energy | N/A |
+| Line 12 - | 123 tons CO2/year reduction associated with less Diesel (green roofs 53 tons CO2/year reduction associated with electrical energy N/A |
 Climate Neutrality Action Plan
 
 #
 
-|  A-1.3: ACTIVITY BY SOURCE SECTORS  |   |   |   |
-| --- | --- | --- | --- |
-|  Base year: 2030 (Emission reduction from each activity contained in section B-2.1 are categorized in this table in accordance to the scope they will influence. For example, if the activities will reduce CO2 emissions associated with grid-supplied electrical energy, values will be placed in Scope 2. As the activities are to be completed by 2030 the base year was set to 2030). *  |   |   |   |
-|  Action 4.3 (from section B-2.1) | would act as carbon sinks for CO2 used in AFOLU maintenance) | required for cooling equipment |   |
-|   |  • 20 green roofs for public buildings
+A-1.3: ACTIVITY BY SOURCE SECTORS
+Base year: 2030 (Emission reduction from each activity contained in section B-2.1 are categorized in this table in accordance to the scope they will influence. For example, if the activities will reduce CO2 emissions associated with grid-supplied electrical energy, values will be placed in Scope 2. As the activities are to be completed by 2030 the base year was set to 2030). *
+Action 4.3 (from section B-2.1) | would act as carbon sinks for CO2 used in AFOLU maintenance) | required for cooling equipment
+• 20 green roofs for public buildings
 • 50 green roofs for private buildings |   | N/A  |
 
 *Information about the energy requirements of each sector in 2021 can be found in table A-1.1 and information about CO2 emission associated with each sector in 2021 can be found in Table A-1.4
 
-|  A-1.4: GHG EMISSIONS BY SOURCE SECTORS  |   |   |   |   |
-| --- | --- | --- | --- | --- |
-|  Base year | 2021  |   |   |   |
-|  Unit | t CO2 equivalent/year  |   |   |   |
-|   | Scope 1 | Scope 2 | Scope 3* | Total  |
-|  Buildings | 479,160 | 162,590 | N/A | 641,750  |
-|  Transport | 140,725 | 11,237 | N/A | 151,962  |
-|  Waste | 1,442 | N/A | 56,919 | 58,361  |
-|  Industrial Process and Product Use (IPPU) | 91,043 | 212,435 | N/A | 303,478  |
-|  Agricultural, Forestry and Land Use (AFOLU) | 8,170 | 3,502 | N/A | 11,672  |
-|  Total | 720,540 | 389,764 | 56,919 | 1,167,223  |
+A-1.4: GHG EMISSIONS BY SOURCE SECTORS
+Base year | 2021
+Unit | t CO2 equivalent/year
+Scope 1 | Scope 2 | Scope 3* | Total
+Buildings | 479,160 | 162,590 | N/A | 641,750
+Transport | 140,725 | 11,237 | N/A | 151,962
+Waste | 1,442 | N/A | 56,919 | 58,361
+Industrial Process and Product Use (IPPU) | 91,043 | 212,435 | N/A | 303,478
+Agricultural, Forestry and Land Use (AFOLU) | 8,170 | 3,502 | N/A | 11,672
+Total | 720,540 | 389,764 | 56,919 | 1,167,223
 
 *Information related to Scope 3 emissions for the Buildings, Transport, IPPU and AFOLU sectors was not available at this time. Coalition Partners will address this matter in future iterations of this action plan as explained in section A-1.6
 PRINÁRIA D'EDIFICIUL LOCAL
@@ -533,33 +524,28 @@ Climate Neutrality Action Plan
 
 #
 
-|  2021 (PACED 100) |   |   |   | 2030 TARGETS (PACED 116)  |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|   | MWh/year | CO2/year | Percentage |  | MWh/year | Real CO2/year from energy conversion | CO2 reduction from proposed actions | Total emissions after actions 2016 | Target CO2 Percentage  |
-|  Buildings | 2,604,017 | 641,750 | 55% | Buildings | 2,240,755 | 267,401 | 252,243 | 15,15 | 101,592  |
-|  Electrical energy | 231,941 | 162,590.64 | 25% | Electrical energy | 871,172 | 87,117 | *a |  |   |
-|  Natural gas | 2,372,076 | 479,159.35 | 75% | Natural gas | 892,496 | 180,284 | *d |  |   |
-|   |   |  |  | Green electric energy | 477,087 | 0 |  |  |   |
-|  Transport | 601,167 | 151,962 | 13% | Transport | 586,593 | 92,635 | 48,452 | 44,181 | 45,635  |
-|  Electrical energy | 16,030 | 11,237 | 7% | Electrical energy | 329,453 | 32,945 | *b |  |   |
-|  GPL | 5,771 | 1,310 | 1% | GPL | 3,959 | 899 |  |  |   |
-|  Diesel | 302,387 | 75,294 | 50% | Diesel | 116,363 | 31,069 |  |  |   |
-|  Gasoline | 235,481 | 58,635 | 39% | Gasoline | 111,232 | 27,697 |  |  |   |
-|  Bio-fuel | 41,498 | 41 | 0% | Bio-fuel | 25,586 | 26 |  |  |   |
-|  |   |   |   |   |   |   |   |   |   |
-|  Waste | 86,597 | 58,361 | 5% | Waste | 259,662 | 26,868 | 16,000 | 10,868 | 11,672  |
-|  Electrical energy | 81,197 | 56,919 | 98% | Electrical energy | 254,262 | 25,426 | *c |  |   |
-|  Diesel | 5,400 | 1,442 | 2% | Diesel | 5,400 | 1,442 |  |  |   |
-|  |   |   |   |   |   |   |   |   |   |
-|  IPPU | 753,755 | 303,478 | 26% | IPPU | 1,231,102 | 145,089 |  | 145,089 | 60,696  |
-|  Electrical energy | 303,045 | 212,435 | 70% | Electrical energy | 1,015,623 | 101,562 |  |  |   |
-|  Natural gas | 450,710 | 91,043 | 30% | Natural gas | 215,479 | 43,527 |  |  |   |
-|  |   |   |   |   |   |   |   |   |   |
-|  AFOLU | 35,596 | 11,672 | 1% | AFOLU | 30,206 | 5,373 | 3,205 | 2,168 | 2,334  |
-|  Electrical energy | 4,995 | 3,502 | 40% | Electrical energy | 16,119 | 1,612 | *e |  |   |
-|  Diesel | 30,601 | 8,170 | 60% | Diesel | 14,087 | 3,761 |  |  |   |
-|  |   |   |   |   |   |   |   |   |   |
-|  Total | 4,081,132 | 1,167,223 | 100% | Total | 4,348,317 | 537,367 | 319,900 | 217,467 | 221,929  |
+2021 (PACED 100) | 2030 TARGETS (PACED 116)
+MWh/year | CO2/year | Percentage | MWh/year | Real CO2/year from energy conversion | CO2 reduction from proposed actions | Total emissions after actions 2016 Target CO2 Percentage
+Buildings | 2,604,017 | 641,750 | 55% | Buildings | 2,240,755 | 267,401 | 252,243 | 15,15 101,592
+Electrical energy | 231,941 | 162,590.64 | 25% | Electrical energy | 871,172 | 87,117 | *a
+Natural gas | 2,372,076 | 479,159.35 | 75% | Natural gas | 892,496 | 180,284 | *d
+Green electric energy | 477,087 | 0
+Transport | 601,167 | 151,962 | 13% | Transport | 586,593 | 92,635 | 48,452 | 44,181 45,635
+Electrical energy | 16,030 | 11,237 | 7% | Electrical energy | 329,453 | 32,945 | *b
+GPL | 5,771 | 1,310 | 1% | GPL | 3,959 | 899
+Diesel | 302,387 | 75,294 | 50% | Diesel | 116,363 | 31,069
+Gasoline | 235,481 | 58,635 | 39% | Gasoline | 111,232 | 27,697
+Bio-fuel | 41,498 | 41 | 0% | Bio-fuel | 25,586 | 26
+Waste | 86,597 | 58,361 | 5% | Waste | 259,662 | 26,868 | 16,000 | 10,868 11,672
+Electrical energy | 81,197 | 56,919 | 98% | Electrical energy | 254,262 | 25,426 | *c
+Diesel | 5,400 | 1,442 | 2% | Diesel | 5,400 | 1,442
+IPPU | 753,755 | 303,478 | 26% | IPPU | 1,231,102 | 145,089 | 145,089 60,696
+Electrical energy | 303,045 | 212,435 | 70% | Electrical energy | 1,015,623 | 101,562
+Natural gas | 450,710 | 91,043 | 30% | Natural gas | 215,479 | 43,527
+AFOLU | 35,596 | 11,672 | 1% | AFOLU | 30,206 | 5,373 | 3,205 | 2,168 2,334
+Electrical energy | 4,995 | 3,502 | 40% | Electrical energy | 16,119 | 1,612 | *e
+Diesel | 30,601 | 8,170 | 60% | Diesel | 14,087 | 3,761
+Total | 4,081,132 | 1,167,223 | 100% | Total | 4,348,317 | 537,367 | 319,900 | 217,467 221,929
 
 *a - CO2 reductions taken from Theory of Change BUILT ENVIRONMENT
 * b - CO2 reductions taken from Theory of Change MOBILITY &amp; TRANSPORT
@@ -783,30 +769,27 @@ C
 
 # 3.2 Module A-2 Current Policies and Strategies Assessment
 
-|  A-2.1: LIST OF RELEVANT POLICIES, STRATEGIES & REGULATIONS  |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- |
-|  TYPE | LEVEL | NAME & TITLE | DESCRIPTION | RELEVANCE | NEED FOR ACTION  |
-|  Action Plan | Local | Sustainable Energy and Climate Action Plan 2022-2030 (SECAP) | The SECAP is the main strategic document targeting the reduction of GHG emissions, elaborated according to the methodology of the Covenant of Mayors on Climate and Energy, including a Climate Change Adaptation Action Plan which contains the planned interventions. | The SECAP identifies stationary energy and transport as the main sectors responsible for GHG emissions. Most significantly, the plan highlights that buildings account for approx. 81% of total emissions (particularly residential), while transport is responsible for approx. 16%. Therefore, the action plan addresses stationary energy with priority.
+A-2.1: LIST OF RELEVANT POLICIES, STRATEGIES & REGULATIONS
+TYPE | LEVEL | NAME & TITLE | DESCRIPTION | RELEVANCE | NEED FOR ACTION
+Action Plan | Local | Sustainable Energy and Climate Action Plan 2022-2030 (SECAP) | The SECAP is the main strategic document targeting the reduction of GHG emissions, elaborated according to the methodology of the Covenant of Mayors on Climate and Energy, including a Climate Change Adaptation Action Plan which contains the planned interventions. | The SECAP identifies stationary energy and transport as the main sectors responsible for GHG emissions. Most significantly, the plan highlights that buildings account for approx. 81% of total emissions (particularly residential), while transport is responsible for approx. 16%. Therefore, the action plan addresses stationary energy with priority.
 The SECAP includes a target of reducing the emissions by 80% by 2030 (compared to 2011). | Considering the high emissions from residential buildings, measures to accelerate interventions for energy efficiency are required. To this end, a comprehensive climate-neutrality masterplan for dense multi-apartment neighborhoods and suburbs will be developed, to allow for scalability at the metropolitan level.
 Another key action regards the development of a new governance model for condominiums, in order to better integrate them as dialogue partners and actors of change in the journey towards climate neutrality.  |
-|  Strategy | Local | Integrated Urban Development Strategy for Cluj-Napoca Metropolita | The IUDS was developed at the level of the metropolitan area and places a strong emphasis on the transition to | More exactly, Specific Objective no. 3 - Carbon neutral, green and resilient city aims to ensure an environmentally friendly development | While the IUDS offers the strategic guidelines for becoming a climate neutral metropolitan area, there is still a gap in terms of understanding,  |
+Strategy | Local | Integrated Urban Development Strategy for Cluj-Napoca Metropolita | The IUDS was developed at the level of the metropolitan area and places a strong emphasis on the transition to | More exactly, Specific Objective no. 3 - Carbon neutral, green and resilient city aims to ensure an environmentally friendly development | While the IUDS offers the strategic guidelines for becoming a climate neutral metropolitan area, there is still a gap in terms of understanding,
 Climate Neutrality Action Plan
 
 #
 
-|  A-2.1: LIST OF RELEVANT POLICIES, STRATEGIES & REGULATIONS  |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- |
-|  TYPE | LEVEL | NAME & TITLE | DESCRIPTION | RELEVANCE | NEED FOR ACTION  |
-|   |  | n Area 2021-2030 | climate neutrality. | of the Municipality and its metropolitan area so that GHG emissions are reduced by 80% by 2030, through the following investment priorities:INVESTMENT PRIORITY 3.1: Increasing energy performance at the level of collective housing complexes; Investment priority;INVESTMENT PRIORITY 3.2: Increasing energy performance in public buildings and public lighting systems; Investment priority;INVESTMENT PRIORITY 3.3: Investments in the central heating system, renewable energy supply infrastructure and natural gas | awareness and motivation at the community-level. Gathering information on these topics would provide a solid baseline for developing targeted solutions.  |
-|  Strategy | Local | Sustainable Urban Mobility Plan for Cluj Napoca Metropolita | The SUMP developed for the Cluj Metropolitan Area focuses on reducing carbon emissions, promoting green | The Action Plan of the SUMP includes major interventions on the street grid, public transport, freight transport, alternative mobility, traffic management, | As the transport sector is the second source of CO2 emissions in Cluj-Napoca, the Net Zero City Coalition will be mobilised to accelerate the  |
+A-2.1: LIST OF RELEVANT POLICIES, STRATEGIES & REGULATIONS
+TYPE | LEVEL | NAME & TITLE | DESCRIPTION | RELEVANCE | NEED FOR ACTION
+n Area 2021-2030 | climate neutrality. | of the Municipality and its metropolitan area so that GHG emissions are reduced by 80% by 2030, through the following investment priorities:INVESTMENT PRIORITY 3.1: Increasing energy performance at the level of collective housing complexes; Investment priority;INVESTMENT PRIORITY 3.2: Increasing energy performance in public buildings and public lighting systems; Investment priority;INVESTMENT PRIORITY 3.3: Investments in the central heating system, renewable energy supply infrastructure and natural gas | awareness and motivation at the community-level. Gathering information on these topics would provide a solid baseline for developing targeted solutions.
+Strategy | Local | Sustainable Urban Mobility Plan for Cluj Napoca Metropolita | The SUMP developed for the Cluj Metropolitan Area focuses on reducing carbon emissions, promoting green | The Action Plan of the SUMP includes major interventions on the street grid, public transport, freight transport, alternative mobility, traffic management, | As the transport sector is the second source of CO2 emissions in Cluj-Napoca, the Net Zero City Coalition will be mobilised to accelerate the
 Climate Neutrality Action Plan
 
 #
 
-|  A-2.1: LIST OF RELEVANT POLICIES, STRATEGIES & REGULATIONS  |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- |
-|  TYPE | LEVEL | NAME & TITLE | DESCRIPTION | RELEVANCE | NEED FOR ACTION  |
-|   |  | n Area 2021-2030 | means of transport and increasing quality of life. | areas with a high level of complexity (protected areas, logistic areas, intermodal areas etc) and institutional aspects required to be addressed.
+A-2.1: LIST OF RELEVANT POLICIES, STRATEGIES & REGULATIONS
+TYPE | LEVEL | NAME & TITLE | DESCRIPTION RELEVANCE NEED FOR ACTION
+n Area 2021-2030 | means of transport and increasing quality of life. | areas with a high level of complexity (protected areas, logistic areas, intermodal areas etc) and institutional aspects required to be addressed.
 The current SUMP aims for 100% of public transport to be green by 2030 (around 50% of the total public transport fleet, including trams and trolleybuses, is currently electric).
 Moreover, the SUMP includes projects to reduce the emissions of freight transport and eliminating heavy traffic from the city, through regulatory and electro / micromobility hubs for sustainable last mile deliveries (including the use of cargo bikes), as well as major infrastructure projects such as the Metropolitan Belt and electrifying the rail transport on the main export route, towards the border with Hungary. | implementation of the SUMP and translating the development vision formulated for 2035 into practice, particularly achieving a 100% green public transport fleet.
 The Net Zero City Action Plan also includes interventions which strongly reduce the emissions from freight traffic, through major infrastructure projects planned at the metropolitan scale, and will create momentum for piloting electro / micro-mobility delivery options for last mile deliveries within the city.  |
@@ -818,9 +801,9 @@ Climate Neutrality Action Plan
 
 A-2.1: LIST OF RELEVANT POLICIES, STRATEGIES &amp; REGULATIONS
 
-|  TYPE | LEVEL | NAME & TITLE | DESCRIPTION | RELEVANCE | NEED FOR ACTION  |
+| TYPE | LEVEL | NAME & TITLE | DESCRIPTION | RELEVANCE | NEED FOR ACTION |
 | --- | --- | --- | --- | --- | --- |
-|  Strategy | Local | District Heating Strategy Cluj-Napoca 2021-2031 | The main objective of Strategy is to identify solutions for increasing the energy efficiency of the district heating system in Cluj-Napoca. The Strategy addresses the need to improve the energy efficiency in the context of a strong trend of disconnecting from the centralized system and aims to maintain its current number of clients and increasing it once the proposed investments are finalised. | The Strategy aims at reducing GHG emissions from the district heating sector with 55% by 2030 and increasing the share of renewable sources to at least 32% (currently the energy is produced using 100% natural gas), as well as reaching a minimum share of 50% for energy from renewable sources and co-generation combined. | The District Heating Strategy will be at the core of the intervention dedicated to creating a district heating system running primarily on green energy. This will include actions such as increasing the renewable energy share from solar power, heat pumps, cogeneration engines, as well as rehabilitation works of the infrastructure and a pilot positive energy neighborhood.
+| Strategy | Local | District Heating Strategy Cluj-Napoca 2021-2031 | The main objective of Strategy is to identify solutions for increasing the energy efficiency of the district heating system in Cluj-Napoca. The Strategy addresses the need to improve the energy efficiency in the context of a strong trend of disconnecting from the centralized system and aims to maintain its current number of clients and increasing it once the proposed investments are finalised. | The Strategy aims at reducing GHG emissions from the district heating sector with 55% by 2030 and increasing the share of renewable sources to at least 32% (currently the energy is produced using 100% natural gas), as well as reaching a minimum share of 50% for energy from renewable sources and co-generation combined. | The District Heating Strategy will be at the core of the intervention dedicated to creating a district heating system running primarily on green energy. This will include actions such as increasing the renewable energy share from solar power, heat pumps, cogeneration engines, as well as rehabilitation works of the infrastructure and a pilot positive energy neighborhood. |
 
 The City administration is committed to strengthening the district heating system, within the boundaries of applicable legislation (users have the right to disconnect) and economic realities, which push many residents to choose individual heating solutions, that are more cost-efficient and offer them more autonomy.
 
@@ -829,23 +812,21 @@ Climate Neutrality Action Plan
 
 #
 
-|  A-2.1: LIST OF RELEVANT POLICIES, STRATEGIES & REGULATIONS  |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- |
-|  TYPE | LEVEL | NAME & TITLE | DESCRIPTION | RELEVANCE | NEED FOR ACTION  |
-|   |  |  |  |  | twofold: a. increasing the efficiency of the system with effects on costs and quality of service has the potential to incentivize users to reconnect; b. reducing energy consumption through behavior change and energy efficiency measures.  |
-|  Strategy | Local | Air Quality Improvement Plan for the Cluj-Napoca Agglomeration 2020-2024 | The Plan identifies the emissions of NO2/NOx and PM10, as the most problematic in the city and includes measures to reduce the levels of pollutants below target values, while giving increased attention to vulnerable population groups. | Good air quality is a direct result of the actions to reduce carbon emissions. The Air Quality Improvement Plan identifies the urban expansion trend as a main contributor to atmospheric pollution (as well as noise pollution), combined leading to an increase in motorised traffic, green space reduction and lower density developments which result in a higher rate of personal car use. | The Net Zero City Coalition will include the local academic sector and ensure knowledge transfer across involved stakeholders to support the implementation of the Air Quality Improvement Plan. The TUCN and BBU will overlook the implementation of the air quality monitoring system and closely cooperate with relevant public and private actors.  |
-|  Strategy | Local | Digital Transforma | The Strategy was elaborated to enable the | Digitalisation is a key dimension for achieving the net | The process of Digital Transformation of Cluj-Napoca needs to  |
-|   |  |  | problems, which can lead to a higher rate of personal car use. | developing the digital transformation of Cluj-Napoca. | economy, and the need for the development of the digital transformation.  |
+A-2.1: LIST OF RELEVANT POLICIES, STRATEGIES & REGULATIONS
+TYPE | LEVEL | NAME & TITLE | DESCRIPTION | RELEVANCE | NEED FOR ACTION
+twofold: a. increasing the efficiency of the system with effects on costs and quality of service has the potential to incentivize users to reconnect; b. reducing energy consumption through behavior change and energy efficiency measures.
+Strategy | Local | Air Quality Improvement Plan for the Cluj-Napoca Agglomeration 2020-2024 | The Plan identifies the emissions of NO2/NOx and PM10, as the most problematic in the city and includes measures to reduce the levels of pollutants below target values, while giving increased attention to vulnerable population groups. | Good air quality is a direct result of the actions to reduce carbon emissions. The Air Quality Improvement Plan identifies the urban expansion trend as a main contributor to atmospheric pollution (as well as noise pollution), combined leading to an increase in motorised traffic, green space reduction and lower density developments which result in a higher rate of personal car use. | The Net Zero City Coalition will include the local academic sector and ensure knowledge transfer across involved stakeholders to support the implementation of the Air Quality Improvement Plan. The TUCN and BBU will overlook the implementation of the air quality monitoring system and closely cooperate with relevant public and private actors.
+Strategy | Local | Digital Transforma | The Strategy was elaborated to enable the | Digitalisation is a key dimension for achieving the net | The process of Digital Transformation of Cluj-Napoca needs to
+problems, which can lead to a higher rate of personal car use. | developing the digital transformation of Cluj-Napoca. | economy, and the need for the development of the digital transformation.
 Climate Neutrality Action Plan
 
 #
 
-|  A-2.1: LIST OF RELEVANT POLICIES, STRATEGIES & REGULATIONS  |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- |
-|  TYPE | LEVEL | NAME & TITLE | DESCRIPTION | RELEVANCE | NEED FOR ACTION  |
-|   |  | tionStrategy ofCluj-Napoca(2021) | digitalization efforts across a wide range of stakeholders. Its vision is to integrate technology in the life of the community with the objective to increase quality of life and prosperity in a sustainable manner. The strategy has a strong orientation towards partnership building, bringing together citizens, the public sector, academia, private companies, clusters, NGOs and innovation hubs. | zero targets, specifically in terms of mapping, monitoring, awareness and engagement activities. Cluj-Napoca has already implemented several initiatives which use digitalization to support sustainability (first smart street in Romania, self-driving electric buses etc.). In direct alignment with the objectives of the Digital Transformation Strategy, the Municipality plans to extend the online procedures available to citizens (already over 300), within a broader zero-paper policy. | further support the transition to climate neutrality.Several digital tools are planned to be developed to improve implementation and monitoring of actions, as well as awareness raising and engagement of all stakeholders.Moreover,Transilvania Digital Innovation Hub acts as the main facilitator of the local digital transition.  |
-|  Regulati on | Local | Energy Performance Standards for New Buildings and Fiscal Incentives for Certified Green | Cluj-Napoca has passed regulations which regard the energy performance standards of new buildings (private and public), aimed at both restricting new sources of | Considering that stationary energy is the main source of GHG emissions in Cluj-Napoca, regulations in this sector are strongly encouraged and will provide a sustainable basis for future developments. | To support the renovation of the old building stock (over 50% of the population of Cluj-Napoca and its MA lives in 30-60 years old flats built during the communist period, with a low energy efficiency level), further regulations are  |
-|   |  |  | effective in reducing energy consumption. |  | effective in reducing energy consumption.  |
+A-2.1: LIST OF RELEVANT POLICIES, STRATEGIES & REGULATIONS
+TYPE | LEVEL | NAME & TITLE | DESCRIPTION | RELEVANCE | NEED FOR ACTION
+tionStrategy ofCluj-Napoca(2021) | digitalization efforts across a wide range of stakeholders. Its vision is to integrate technology in the life of the community with the objective to increase quality of life and prosperity in a sustainable manner. The strategy has a strong orientation towards partnership building, bringing together citizens, the public sector, academia, private companies, clusters, NGOs and innovation hubs. | zero targets, specifically in terms of mapping, monitoring, awareness and engagement activities. Cluj-Napoca has already implemented several initiatives which use digitalization to support sustainability (first smart street in Romania, self-driving electric buses etc.). In direct alignment with the objectives of the Digital Transformation Strategy, the Municipality plans to extend the online procedures available to citizens (already over 300), within a broader zero-paper policy. | further support the transition to climate neutrality.Several digital tools are planned to be developed to improve implementation and monitoring of actions, as well as awareness raising and engagement of all stakeholders.Moreover,Transilvania Digital Innovation Hub acts as the main facilitator of the local digital transition.
+Regulati on | Local | Energy Performance Standards for New Buildings and Fiscal Incentives for Certified Green | Cluj-Napoca has passed regulations which regard the energy performance standards of new buildings (private and public), aimed at both restricting new sources of | Considering that stationary energy is the main source of GHG emissions in Cluj-Napoca, regulations in this sector are strongly encouraged and will provide a sustainable basis for future developments. | To support the renovation of the old building stock (over 50% of the population of Cluj-Napoca and its MA lives in 30-60 years old flats built during the communist period, with a low energy efficiency level), further regulations are
+effective in reducing energy consumption. | effective in reducing energy consumption.
 0
 
 PRIMÁRIA D'EDINOLOGÍA LOCAL
@@ -858,13 +839,12 @@ C
 Climate Neutrality Action Plan
 C
 
-|  A-2.1: LIST OF RELEVANT POLICIES, STRATEGIES & REGULATIONS  |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- |
-|  TYPE | LEVEL | NAME & TITLE | DESCRIPTION | RELEVANCE | NEED FOR ACTION  |
-|   |  | Buildings | carbon emissions from the built environment, as well as incentivizing residents and businesses to obtain the highest energy efficiency rating. | The regulations regard new buildings and fiscal incentives for achieving green certifications, for both commercial and residential buildings. | required, including the development of Terms of Reference for the renovation of private and public buildings in line with the nZEB principles.
+A-2.1: LIST OF RELEVANT POLICIES, STRATEGIES & REGULATIONS
+TYPE | LEVEL | NAME & TITLE | DESCRIPTION RELEVANCE NEED FOR ACTION
+Buildings | carbon emissions from the built environment, as well as incentivizing residents and businesses to obtain the highest energy efficiency rating. | The regulations regard new buildings and fiscal incentives for achieving green certifications, for both commercial and residential buildings. required, including the development of Terms of Reference for the renovation of private and public buildings in line with the nZEB principles.
 
 Moreover, changes in the use of the buildings prompt the inclusion of these modifications in the ToR, to ensure that they best serve their residents / users and are implemented at a high-quality standard.  |
-|  Program | Local | Energy Efficiency Improvement Program (EEIP) 2017 - Cluj-Napoca Urban Agglomeration | The local public administration authorities in localities with a population greater than 5,000 inhabitants have the obligation to draw up EEIP (energy efficiency improvement program) which includes short-term measures and measures for a term of 3-6 years and to have an energy manager. | The EEIP contains technical assessments and evaluation of the necessary interventions for the public lighting system, buildings (public, residential and private) and the transport sector.
+Program | Local | Energy Efficiency Improvement Program (EEIP) 2017 - Cluj-Napoca Urban Agglomeration | The local public administration authorities in localities with a population greater than 5,000 inhabitants have the obligation to draw up EEIP (energy efficiency improvement program) which includes short-term measures and measures for a term of 3-6 years and to have an energy manager. | The EEIP contains technical assessments and evaluation of the necessary interventions for the public lighting system, buildings (public, residential and private) and the transport sector.
 
 The measures proposed include energy efficiency professional trainings, defining performance indicators, while mapping interventions for relevant stakeholders (departments within | The energy efficiency program will be complemented by the proposed regulatory and policy instruments promoted by the Net Zero City Coalition, with the fundamental contribution of the Department of Energy Efficiency and Public Lighting within the Cluj-Napoca Municipality and the Technical University of Cluj-Napoca.  |
 PRINÁRIA D'EDIFICIAL LOCAL CLUJ-NAPOCA
@@ -873,10 +853,9 @@ Climate Neutrality Action Plan
 
 A-2.1: LIST OF RELEVANT POLICIES, STRATEGIES &amp; REGULATIONS
 
-|  TYPE | LEVEL | NAME & TITLE | DESCRIPTION | RELEVANCE | NEED FOR ACTION  |
-| --- | --- | --- | --- | --- | --- |
-|   |  |  |  | the Municipality, building managers, owner associations, school inspectorate, private actors, county-level authorities etc.) |   |
-|  Policy | Local | Walkable City and Urban Renewal | A comprehensive policy which includes extended pedestrian and green areas, complemented by dedicated public transport lanes, cycling lanes, stands for electric taxis, charging stations, smart lighting and traffic management. | The Walkable City Policy is highly relevant for reaching climate neutrality by 2030 through the reduction of CO2 emissions generated by motorised vehicles and can accelerate the transition by ensuring the transfer of best practices to the peri-urban localities in the Metropolitan Area.
+TYPE | LEVEL | NAME & TITLE | DESCRIPTION | RELEVANCE | NEED FOR ACTION
+the Municipality, building managers, owner associations, school inspectorate, private actors, county-level authorities etc.)
+Policy | Local | Walkable City and Urban Renewal | A comprehensive policy which includes extended pedestrian and green areas, complemented by dedicated public transport lanes, cycling lanes, stands for electric taxis, charging stations, smart lighting and traffic management. | The Walkable City Policy is highly relevant for reaching climate neutrality by 2030 through the reduction of CO2 emissions generated by motorised vehicles and can accelerate the transition by ensuring the transfer of best practices to the peri-urban localities in the Metropolitan Area.
 
 While the initial interventions have been implemented in the city center, the Municipality has moved its focus towards neighborhoods, with the objective to ensure access by foot to a full range of facilities and services (a 20-minute city).
 
@@ -889,15 +868,14 @@ Climate Neutrality Action Plan
 
 A-2.1: LIST OF RELEVANT POLICIES, STRATEGIES &amp; REGULATIONS
 
-|  TYPE | LEVEL | NAME & TITLE | DESCRIPTION | RELEVANCE | NEED FOR ACTION  |
-| --- | --- | --- | --- | --- | --- |
-|   |  |  |  | create pedestrian corridors at the neighborhood level. |   |
-|  Policy | Local | Green City | The Green City Policy implies the creation of 200 ha of green public areas, planting 100.000 new trees and creating blue-green corridors along the water courses in the city and its metropolitan area. | Implementing the Green City Policy is directly linked with the Climate-Neutral and Smart Cities Mission Action Plan, through the creation of carbon sinks, as well as an extended air, soil and water quality monitoring system which can support progress evaluation. | The Green City Policy will be expanded in order to ensure access to a green or blue-green area within a 10 minute walk for 98% of the city's population, through developing blue-green corridors and introducing a program for green roofs and facades.  |
-|  Policy | Local | Green Transport | Another policy which has been widely promoted at the community level is related to green transport.
+TYPE | LEVEL | NAME & TITLE | DESCRIPTION | RELEVANCE | NEED FOR ACTION
+create pedestrian corridors at the neighborhood level.
+Policy | Local | Green City | The Green City Policy implies the creation of 200 ha of green public areas, planting 100.000 new trees and creating blue-green corridors along the water courses in the city and its metropolitan area. | Implementing the Green City Policy is directly linked with the Climate-Neutral and Smart Cities Mission Action Plan, through the creation of carbon sinks, as well as an extended air, soil and water quality monitoring system which can support progress evaluation. | The Green City Policy will be expanded in order to ensure access to a green or blue-green area within a 10 minute walk for 98% of the city's population, through developing blue-green corridors and introducing a program for green roofs and facades.
+Policy | Local | Green Transport | Another policy which has been widely promoted at the community level is related to green transport.
 Currently, over 50% of the total public transport is electric (electric buses, trolleybuses and trams) and the Municipality is continually replacing older fleet with electric options. | A major flagship project emerged as a result of this policy is the new metro line connecting the metropolitan area.
 The Municipality also implements the Green Fridays project, which offers residents access to free public transport each Friday, as well as innovative solutions for promoting the use of public transport - such as the „Health ticket“ (acquiring public transport tickets through physical exercise). | The Green Transport Policy will be continued as a major contributor to the net zero objective.
 Further approaches to encourage the use of public transport, active travel and incentivizing the shift to electric cars will be explored within the Net Zero Coalition, including urban planning regulations that encourage the development of private charging stations.  |
-|  Strategy | Regional | North-West Regional Developme | The Plan formulates the vision and | Strategic Priority no. 3. A region with environmentally | The interventions included in the Net Zero Action Plan are  |
+Strategy | Regional | North-West Regional Developme | The Plan formulates the vision and | Strategic Priority no. 3. A region with environmentally | The interventions included in the Net Zero Action Plan are
 3
 
 PRIMÁRIA D'EDIFICIAL LOCAL CLUJ-NAPOCA
@@ -908,14 +886,13 @@ Climate Neutrality Action Plan
 
 #
 
-|  A-2.1: LIST OF RELEVANT POLICIES, STRATEGIES & REGULATIONS  |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- |
-|  TYPE | LEVEL | NAME & TITLE | DESCRIPTION | RELEVANCE | NEED FOR ACTION  |
-|   |  | nt Plan 2021-2027 | strategic priorities for the North-West region, identifying the main challenges, including the following: the regional and urban-rural disparities are significant, the energy efficiency of buildings is low (with a particular focus on urban areas), urban areas require measures to extend green infrastructure, develop sustainable urban mobility, while rural areas often lack access to public services and require integrated development. | friendly localities
+A-2.1: LIST OF RELEVANT POLICIES, STRATEGIES & REGULATIONS
+TYPE | LEVEL | NAME & TITLE | DESCRIPTION RELEVANCE NEED FOR ACTION
+nt Plan 2021-2027 | strategic priorities for the North-West region, identifying the main challenges, including the following: the regional and urban-rural disparities are significant, the energy efficiency of buildings is low (with a particular focus on urban areas), urban areas require measures to extend green infrastructure, develop sustainable urban mobility, while rural areas often lack access to public services and require integrated development. | friendly localities
 Strategic Priority 4: A region with sustainable multimodal urban mobility
 Strategic Priority 5: An accessible region | aligned with the priorities of the North-West Regional Development Plan.
 The 2021-2027 ROP is a primary source of financing the interventions, along with the NRRP, State and local budget, complemented by mobilising private financing.  |
-|  Strategy | National | The National Integrated Plan for Energy and Climate Change 2021 – 2030 (NIPECC) | The National Plan for Energy and Climate Change was adopted in 2019 and was elaborated in accordance with the EU energy policy framework, detailing the main objectives | According to the Plan, Romania aims to increase its share of energy from renewable sources in the total energy consumption by 2030 by increasing the installed capacity of wind and photovoltaic plants (additional capacities of 6.9 GW from | As one of the three urban authorities which have joined the 100 Cities Mission (along with District 2 of Bucharest and Suceava), Cluj-Napoca is aligned with the objectives of the NIPECC in terms of reducing GHG emissions and increasing the  |
+Strategy | National | The National Integrated Plan for Energy and Climate Change 2021 – 2030 (NIPECC) | The National Plan for Energy and Climate Change was adopted in 2019 and was elaborated in accordance with the EU energy policy framework, detailing the main objectives | According to the Plan, Romania aims to increase its share of energy from renewable sources in the total energy consumption by 2030 by increasing the installed capacity of wind and photovoltaic plants (additional capacities of 6.9 GW from | As one of the three urban authorities which have joined the 100 Cities Mission (along with District 2 of Bucharest and Suceava), Cluj-Napoca is aligned with the objectives of the NIPECC in terms of reducing GHG emissions and increasing the
 4
 
 PRIMÁRIA D'EDIFICIÓS LEGAL
@@ -932,11 +909,10 @@ Climate Neutrality Action Plan
 
 A-2.1: LIST OF RELEVANT POLICIES, STRATEGIES &amp; REGULATIONS
 
-|  TYPE | LEVEL | NAME & TITLE | DESCRIPTION | RELEVANCE | NEED FOR ACTION  |
-| --- | --- | --- | --- | --- | --- |
-|   |  |  | for 2030. | renewable sources compared to 2015), as well as by increasing the number of prosumers.
+TYPE | LEVEL | NAME & TITLE | DESCRIPTION | RELEVANCE | NEED FOR ACTION
+for 2030. | renewable sources compared to 2015), as well as by increasing the number of prosumers.
 In terms of emission reduction, the national targets assumed for the year 2030 are detailed under the A-2.2 section. | capacity of renewable energy generation, accelerating the process of achieving the national targets.  |
-|  Policy | National | Romania Urban Policy | The first Urban Policy of Romania was adopted in 2021, transposing the new Leipzig Charter through its four objectives (green & resilient, just & inclusive, competitive & productive & well governed cities). | The second priority of the RUP is “Creating liveable and climate-smart cities, by developing green-blue infrastructure to mitigate and adapt to urban risks”.
+Policy | National | Romania Urban Policy | The first Urban Policy of Romania was adopted in 2021, transposing the new Leipzig Charter through its four objectives (green & resilient, just & inclusive, competitive & productive & well governed cities). | The second priority of the RUP is “Creating liveable and climate-smart cities, by developing green-blue infrastructure to mitigate and adapt to urban risks”.
 The RUP includes a variety of measures related to the climate adaption and mitigation, reducing air pollution and improving sustainable urban mobility. | All interventions planned are aligned with the objectives and priorities of the Urban Policy, particularly focusing on the development of Cluj Metropolitan Area into a green and resilient urban area.  |
 
 # A-2.2: DESCRIPTION &amp; ASSESSMENT OF POLICIES
@@ -1153,13 +1129,13 @@ Assessing the existing local strategies and policies adopted, a major positive a
 
 A-2.3: EMISSIONS GAP
 
-|   | Baseline emissions (percentage) |   | **Residual emissions / offsetting |   | Baseline emissions reduction target2 |   | *Emissions reductions in existing strategies3 |   | Emissions gap (to be addressed by action plan)4  |   |
+|  | Baseline emissions (percentage) |  | **Residual emissions / offsetting |  | Baseline emissions reduction target2 |  | *Emissions reductions in existing strategies3 |  | Emissions gap (to be addressed by action plan)4 |  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|   | (absolute) | (%) | (absolute) | (%) | (absolute) | (%) | (absolute) | (%) | (absolute) | (%)  |
-|  Buildings | 641,750 | 55 % | 15,158 | 7% | 626,592 | 66% | 0 * | 0 % | 626,592 | 66%  |
-|  Transport | 151,962 | 13 % | 44,183 | 20% | 107,779 | 11% | 0 * | 0 % | 107,779 | 11%  |
-|  Waste | 58,361 | 5% | 10,868 | 5% | 47,493 | 5% | 0 * | 0 % | 47,493 | 5%  |
-|  Industrial Process and Product | 303,478 | 26 % | 145,089 | 67% | 158,389 | 17% | 0 * | 0 % | 158,389 | 17%  |
+|  | (absolute) | (%) | (absolute) | (%) | (absolute) | (%) | (absolute) | (%) | (absolute) | (%) |
+| Buildings | 641,750 | 55 % | 15,158 | 7% | 626,592 | 66% | 0 * | 0 % | 626,592 | 66% |
+| Transport | 151,962 | 13 % | 44,183 | 20% | 107,779 | 11% | 0 * | 0 % | 107,779 | 11% |
+| Waste | 58,361 | 5% | 10,868 | 5% | 47,493 | 5% | 0 * | 0 % | 47,493 | 5% |
+| Industrial Process and Product | 303,478 | 26 % | 145,089 | 67% | 158,389 | 17% | 0 * | 0 % | 158,389 | 17% |
 2
 
 PRIMÁRIA D'EDIFICIAL LOCAL CLUJ-NAPOCA
@@ -1172,11 +1148,11 @@ Climate Neutrality Action Plan
 
 #
 
-|  Use (IPPU) |  |  |  |  |  |  |  |  |  |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Agricultura I, Forestry and Land Use (AFOLU) | 11,672 | 1% | 2,168 | 1% | 9,504 | 1% | 0 * | 0 % | 9,504 | 1%  |
-|  Total | 1,167,223 | 100 % | 217,466 | 18.63 % | 949,757 | 81.3 7% | 0 * | 0 % | 949,757 | 81,3 7%  |
-|  1 Residual emissions consist of those emissions which can't be reduced through climate action and are being offset. Residual emission may amount to a maximum of 20 % as stated by the Mission Info Kit.
+Use (IPPU)
+Agricultura I, Forestry and Land Use (AFOLU) | 11,672 | 1% | 2,168 | 1% | 9,504 | 1% | 0 * | 0 % | 9,504 | 1%
+Total | 1,167,223 | 100 % | 217,466 | 18.63 % | 949,757 | 81.3 7% | 0 * | 0 % | 949,757 | 81,3 7%
+
+1 Residual emissions consist of those emissions which can't be reduced through climate action and are being offset. Residual emission may amount to a maximum of 20 % as stated by the Mission Info Kit.
 Baseline reduction target = Baseline emissions – residual emissions.
 Emission reductions planned for in existing action planning and strategies should be quantified per sector.
 Emissions gap = Baseline emission reduction target – Emissions reduction in existing strategies.
@@ -1187,9 +1163,9 @@ CLUJ-NAPOCA
 Climate Neutrality Action Plan
 Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
 A-3.1: SYSTEMS &amp; STAKEHOLDER MAPPING
-|  SYSTEM DESCRIPTION | STAKEHOLDERS INVOLVED | NETWORK | INFLUENCE | INTEREST  |
+| SYSTEM DESCRIPTION | STAKEHOLDERS INVOLVED | NETWORK | INFLUENCE | INTEREST |
 | --- | --- | --- | --- | --- |
-|  INFRASTRUCTURES | Cluj County Council | Public administration | The Cluj County Council plays a vital role in transferring the knowledge acquired by the local administrative staff to the county public staff, but it is, in fact, essential in every aspect and process related to the replication of Municipality's interventions at the level of the entire county.
+| INFRASTRUCTURES | Cluj County Council | Public administration | The Cluj County Council plays a vital role in transferring the knowledge acquired by the local administrative staff to the county public staff, but it is, in fact, essential in every aspect and process related to the replication of Municipality's interventions at the level of the entire county. |  |
 
 At the moment, the County Council is in charge of the urban planning of the metropolitan area, but also of implementing and monitoring the waste collection and recycling, water and waste water infrastructure for the whole area, including Cluj-Napoca.
 
@@ -1211,33 +1187,32 @@ Climate Neutrality Action Plan
 
 A-3.1: SYSTEMS &amp; STAKEHOLDER MAPPING
 
-|  SYSTEM DESCRIPTION | STAKEHOLD ERS INVOLVED | NETWORK | INFLUENCE | INTEREST  |
+| SYSTEM DESCRIPTION | STAKEHOLD ERS INVOLVED | NETWORK | INFLUENCE | INTEREST |
 | --- | --- | --- | --- | --- |
-|  INFRASTRUCTURES | Cluj Metropolitan IDA | Metropolitan administration and governance | Cluj Metropolitan IDA is an essential lever for ensuring dissemination, outreach, awareness raising and effective communication about climate neutrality at metropolitan level, both for the public administrations and private companies, but also for the metropolitan population. | Cluj Metropolitan IDA's main interest consists of expanding the beneficial effects of the climate-neutrality interventions in the metropolitan area and replicating as many types of interventions as possible. All areas are of interest to Cluj Metropolitan IDA because the organization aims to achieve climate-neutrality in the metropolitan area, but special attention is paid to increasing the competences of metropolitan public actors (especially within Municipalitys) and citizens.  |
-|  INFRASTRUCTURES | Romanian Green Building Council | Certification bodies | The Romanian Green Building Council is the most representative and powerful national organization that promotes environmental responsibility and energy efficiency within the life cycle of a building (design phase, construction, operation and deconstruction). | The organization's focus falls on the built sector, especially energy efficient buildings and progress towards carbon neutrality in cities, its interest being to increase the number of buildings certified as energy efficient.  |
+| INFRASTRUCTURES | Cluj Metropolitan IDA | Metropolitan administration and governance | Cluj Metropolitan IDA is an essential lever for ensuring dissemination, outreach, awareness raising and effective communication about climate neutrality at metropolitan level, both for the public administrations and private companies, but also for the metropolitan population. | Cluj Metropolitan IDA's main interest consists of expanding the beneficial effects of the climate-neutrality interventions in the metropolitan area and replicating as many types of interventions as possible. All areas are of interest to Cluj Metropolitan IDA because the organization aims to achieve climate-neutrality in the metropolitan area, but special attention is paid to increasing the competences of metropolitan public actors (especially within Municipalitys) and citizens. |
+| INFRASTRUCTURES | Romanian Green Building Council | Certification bodies | The Romanian Green Building Council is the most representative and powerful national organization that promotes environmental responsibility and energy efficiency within the life cycle of a building (design phase, construction, operation and deconstruction). | The organization's focus falls on the built sector, especially energy efficient buildings and progress towards carbon neutrality in cities, its interest being to increase the number of buildings certified as energy efficient. |
 PRINÁRIA D'EDIFICIAL LOCAL CLUJ-NAPOCA
 
 Climate Neutrality Action Plan
 
 #
 
-|  A-3.1: SYSTEMS & STAKEHOLDER MAPPING  |   |   |   |   |
-| --- | --- | --- | --- | --- |
-|  SYSTEM DESCRIPTION | STAKEHOLD ERS INVOLVED | NETWORK | INFLUENCE | INTEREST  |
-|   |  |  | Thus, they have a predominant influence on the climate-neutrality potential of buildings, being also responsible for the "Green Building Professional" Certification and Training Program. | Green schools are also of interest to the association, along with green homes.  |
-|  INFRASTRUCTURES | Termoficare Napoca S.A. (Cluj-Napoca's Public Heating Company) | Public goods (utilities, services) / infrastructure | Being Cluj-Napoca's Public District Heating Company, Termoficare Napoca S.A. is the key pillar in the implementation of the District Heating Local Strategy, thus having a major impact heating both the private and the public buildings. | Termoficare Napoca S.A.'s primary interest consists of reaching the District Heating Local Strategy's objectives, namely the simultaneous achievement of the following targets: reduction of greenhouse gas emissions caused by district heating by 2030, increase in the share of energy from renewable sources, fulfilment by 2030 of the criteria that define an "efficient central heating system", according to the Directive CE 27/2012.  |
-|  INFRASTRUCTURES | CTP Cluj-Napoca S.A. (Cluj-Napoca's Public | Public goods (utilities, services) / | Being Cluj-Napoca's Public Transport Company, it plays a central role in city's | The main interest of CTP Cluj-Napoca S.A. is to actively contribute to the fulfillment of  |
+A-3.1: SYSTEMS & STAKEHOLDER MAPPING
+SYSTEM DESCRIPTION | STAKEHOLD ERS INVOLVED | NETWORK | INFLUENCE | INTEREST
+Thus, they have a predominant influence on the climate-neutrality potential of buildings, being also responsible for the "Green Building Professional" Certification and Training Program. | Green schools are also of interest to the association, along with green homes.
+INFRASTRUCTURES | Termoficare Napoca S.A. (Cluj-Napoca's Public Heating Company) | Public goods (utilities, services) / infrastructure | Being Cluj-Napoca's Public District Heating Company, Termoficare Napoca S.A. is the key pillar in the implementation of the District Heating Local Strategy, thus having a major impact heating both the private and the public buildings. | Termoficare Napoca S.A.'s primary interest consists of reaching the District Heating Local Strategy's objectives, namely the simultaneous achievement of the following targets: reduction of greenhouse gas emissions caused by district heating by 2030, increase in the share of energy from renewable sources, fulfilment by 2030 of the criteria that define an "efficient central heating system", according to the Directive CE 27/2012.
+INFRASTRUCTURES | CTP Cluj-Napoca S.A. (Cluj-Napoca's Public | Public goods (utilities, services) / | Being Cluj-Napoca's Public Transport Company, it plays a central role in city's | The main interest of CTP Cluj-Napoca S.A. is to actively contribute to the fulfillment of
 PRINÁRIA D'EDIFICIAL LOCAL CLUJ-NAPOCA
 
 Climate Neutrality Action Plan
 
 A-3.1: SYSTEMS &amp; STAKEHOLDER MAPPING
 
-|  SYSTEM DESCRIPTION | STAKEHOLD ERS INVOLVED | NETWORK | INFLUENCE | INTEREST  |
+| SYSTEM DESCRIPTION | STAKEHOLD ERS INVOLVED | NETWORK | INFLUENCE | INTEREST |
 | --- | --- | --- | --- | --- |
-|   | Transport Company) | infrastructure | climate-neutral mobility, because it actively pursues the provision of qualitative, safe, comfortable and environmentally-friendly public transport services for citizens and visitors. | SUMP objectives related to sustainable, resilient and inclusive public transport.
+|  | Transport Company) | infrastructure | climate-neutral mobility, because it actively pursues the provision of qualitative, safe, comfortable and environmentally-friendly public transport services for citizens and visitors. | SUMP objectives related to sustainable, resilient and inclusive public transport. |
 Thus, the efforts of CTP Cluj-Napoca S.A. focus in particular on having a 100% green public transport fleet (electric buses and trolleybuses).  |
-|  INFRASTRUCTURES | Compania de Apa Somes S.A. . (Cluj-Napoca's Water Provider) | Public goods (utilities, services) / infrastructure | Given the specifics of the company, as a public utility provider for a key resource (water), it exerts a strong influence on investment projects related to the city's water supply, but also on aspects related to environmental protection and reduction of the public services' impact on nature and the climate.
+INFRASTRUCTURES | Compania de Apa Somes S.A. . (Cluj-Napoca's Water Provider) | Public goods (utilities, services) / infrastructure | Given the specifics of the company, as a public utility provider for a key resource (water), it exerts a strong influence on investment projects related to the city's water supply, but also on aspects related to environmental protection and reduction of the public services' impact on nature and the climate.
 It is important to highlight the fact that the Someș Water Company is one of the largest operators of water and sewage networks in the country, serving almost one million inhabitants across eight municipalities and cities, and 305 rural localities in the | The company's main interest is to ensure efficient and sustainable water management, especially in the context of water scarcity / poverty (given the massive impact of climate changes on water resources and provision).
 The company focuses on ensuring a qualitative water supply process for the entire city, so that it actively contributes to citizen's quality of life and health but also to environmental protection.  |
 
@@ -1250,23 +1225,22 @@ Climate Neutrality Action Plan
 
 #
 
-|  A-3.1: SYSTEMS & STAKEHOLDER MAPPING  |   |   |   |   |
-| --- | --- | --- | --- | --- |
-|  SYSTEM DESCRIPTION | STAKEHOLD ERS INVOLVED | NETWORK | INFLUENCE | INTEREST  |
-|   |  |  | counties of Cluj, Sălaj, and Mureș. Its infrastructure encompasses over 4,000 km of water intakes and networks and more than 2,000 km of collectors and sewage networks. The company embarked on its first climate neutrality initiative by constructing a micro-hydropower plant downstream of the Tarnita lake dam, capable of generating up to 10,000 MWh of renewable energy per annum, in anticipation of the ISPA program co-funded by the EU, executed between 2003 and 2010. Presently, under the OPBI program, the Someș Water Company is in the process of constructing another micro-hydropower plant at the Gilău Water Treatment Plant. For several years, the company has been generating green energy, both electrical and thermal, from the biogas derived from the sewage sludge in the large sewage | In a recent statement, the Someș Water Company has publicly declared its objective to become an energy-neutral company by 2035.  |
+A-3.1: SYSTEMS & STAKEHOLDER MAPPING
+SYSTEM DESCRIPTION | STAKEHOLD ERS INVOLVED | NETWORK INFLUENCE INTEREST
+counties of Cluj, Sălaj, and Mureș. Its infrastructure encompasses over 4,000 km of water intakes and networks and more than 2,000 km of collectors and sewage networks. The company embarked on its first climate neutrality initiative by constructing a micro-hydropower plant downstream of the Tarnita lake dam, capable of generating up to 10,000 MWh of renewable energy per annum, in anticipation of the ISPA program co-funded by the EU, executed between 2003 and 2010. Presently, under the OPBI program, the Someș Water Company is in the process of constructing another micro-hydropower plant at the Gilău Water Treatment Plant. For several years, the company has been generating green energy, both electrical and thermal, from the biogas derived from the sewage sludge in the large sewage In a recent statement, the Someș Water Company has publicly declared its objective to become an energy-neutral company by 2035.
 PRINÁRA D'EDIFICIÓ LEGAL
 CLUJ-NAPOCA
 Climate Neutrality Action Plan
 8
 
-|  A-3.1: SYSTEMS & STAKEHOLDER MAPPING  |   |   |   |   |
-| --- | --- | --- | --- | --- |
-|  SYSTEM DESCRIPTION | STAKEHOLD ERS INVOLVED | NETWORK | INFLUENCE | INTEREST  |
-|   |  |  | treatment plants in Cluj and Sălaj counties.
+A-3.1: SYSTEMS & STAKEHOLDER MAPPING
+SYSTEM DESCRIPTION | STAKEHOLD ERS INVOLVED | NETWORK INFLUENCE INTEREST
+treatment plants in Cluj and Sălaj counties.
 
 The company has also extensively employed solar panels in remote rural locations and has recently applied for funding to construct photovoltaic parks at several of its operational sites. |   |
-|  INFRASTRUCTURES | Supercom S.A. (Cluj-Napoca's Waste Operator) | Public goods (utilities, services) / infrastructure | Being responsible for efficient, sustainable and secure waste management, Supercom S.A. has a massive influence in the implementation of sustainable practices of selective collection and recycling of waste, being an essential actor in municipal circular economy practices. | The company's main interest consists of increasing the percentage of selective collection of municipal waste and its recycling/upcycling, so as to reduce polluting emissions caused by the quantities of waste generated in the city and their storage/processing.  |
-|  CAPACITIES | Technical University of Cluj-Napoca (Faculties of Architecture, Transport, Energy) | RDI ecosystem | The Technical University of Cluj-Napoca, an advanced research and education university, is one of the higher education institutions with tradition, recognized (inter)nationally for its performance. | Through the perspective of the Faculties of Architecture, Transport, and Energy, TUCN pursues the transfer of technology and knowledge in climate neutrality matters towards the local businesses  |
+| INFRASTRUCTURES | Supercom S.A. (Cluj-Napoca's Waste Operator) | Public goods (utilities, services) / infrastructure | Being responsible for efficient, sustainable and secure waste management, Supercom S.A. has a massive influence in the implementation of sustainable practices of selective collection and recycling of waste, being an essential actor in municipal circular economy practices. | The company's main interest consists of increasing the percentage of selective collection of municipal waste and its recycling/upcycling, so as to reduce polluting emissions caused by the quantities of waste generated in the city and their storage/processing. |
+| --- | --- | --- | --- | --- |
+| CAPACITIES | Technical University of Cluj-Napoca (Faculties of Architecture, Transport, Energy) | RDI ecosystem | The Technical University of Cluj-Napoca, an advanced research and education university, is one of the higher education institutions with tradition, recognized (inter)nationally for its performance. | Through the perspective of the Faculties of Architecture, Transport, and Energy, TUCN pursues the transfer of technology and knowledge in climate neutrality matters towards the local businesses |
 #
 PRIMÁRIA D'EDIFICIÓS LEGAL
 CLUJ-NAPOCA
@@ -1281,12 +1255,11 @@ C
 C
 Climate Neutrality Action Plan
 C
-|  A-3.1: SYSTEMS & STAKEHOLDER MAPPING  |   |   |   |   |
-| --- | --- | --- | --- | --- |
-|  SYSTEM DESCRIPTION | STAKEHOLD ERS INVOLVED | NETWORK | INFLUENCE | INTEREST  |
-|   |  |  | TUCN has extensive research structures (collectives, groups, laboratories, centers and research platforms). Its performance anchored in the perspective of the socio-economic environment, its visibility and international cooperation, and scientific novelty and interdisciplinarity characterize the local research environment.
+A-3.1: SYSTEMS & STAKEHOLDER MAPPING
+SYSTEM DESCRIPTION | STAKEHOLD ERS INVOLVED | NETWORK INFLUENCE INTEREST
+TUCN has extensive research structures (collectives, groups, laboratories, centers and research platforms). Its performance anchored in the perspective of the socio-economic environment, its visibility and international cooperation, and scientific novelty and interdisciplinarity characterize the local research environment.
 The open research directions are oriented towards world priorities: information technology and communications, renewable energies and ecology, superconductivity, spintronics, nanomaterials, management, robotics, mechatronics, electrical engineering, autonomous vehicles, the home of the future, urbanism and society. | (capitalization of RDI results) and the implementation of RDI projects focused on climate-neutrality in the 3 areas that the previously listed faculties are specialized in.  |
-|  CAPACITIES | "Babeș-Bolyai University | RDI ecosystem | Babeș-Bolyai University (Universitatea Babeș- | The areas of interest reside in the profile of the 3  |
+CAPACITIES | "Babeș-Bolyai University | RDI ecosystem | Babeș-Bolyai University (Universitatea Babeș- | The areas of interest reside in the profile of the 3
 0
 
 PRIMÁRIA D'EDIFICIÓ LEGAL
@@ -1301,13 +1274,12 @@ Climate Neutrality Action Plan
 
 #
 
-|  A-3.1: SYSTEMS & STAKEHOLDER MAPPING  |   |   |   |   |
-| --- | --- | --- | --- | --- |
-|  SYSTEM DESCRIPTION | STAKEHOLD ERS INVOLVED | NETWORK | INFLUENCE | INTEREST  |
-|   | (Faculties of Geography – the Research Center of Sustainable Development, Environment, Sociology) |  | Bolyai / BBU) of Cluj-Napoca, Transylvania, Romania has the oldest academic / university tradition in Romania, and is the largest university in the country being ranked on the first position in country between 2016-2019, in the University Metaranking, initiated by the Romanian Ministry of Education and Research in 2016.
+A-3.1: SYSTEMS & STAKEHOLDER MAPPING
+SYSTEM DESCRIPTION | STAKEHOLD ERS INVOLVED | NETWORK | INFLUENCE | INTEREST
+(Faculties of Geography – the Research Center of Sustainable Development, Environment, Sociology) | Bolyai / BBU) of Cluj-Napoca, Transylvania, Romania has the oldest academic / university tradition in Romania, and is the largest university in the country being ranked on the first position in country between 2016-2019, in the University Metaranking, initiated by the Romanian Ministry of Education and Research in 2016.
 BBU has 61 Research units accredited within the university, together with many other that are accredited at the level of the 21 BBU Faculties. | Faculties: Geography, Environment, Sociology. Numerous experts from the Faculties of Geography and Environment are specialized in climate-change and climate-neutrality research, while professionals from the Faculty of Sociology focus on anthropological analyses and behavioral changes.
 With regard to climate neutrality, it is noteworthy that BBU wants to be actively involved in the local ecosystem through a closer collaboration with private companies and through direct support for citizens. Advanced RDI projects are BBU's central intervention tool.  |
-|  CAPACITIES | University of Agricultural Sciences and Veterinary Medicine Cluj-Napoca | RDI ecosystem | UASVM Cluj-Napoca covers a wide spectrum of specializations in fields specific to agriculture, horticulture, animal husbandry, | The main interest of the university consists in RDI projects and technology and knowledge transfer in the environmental  |
+CAPACITIES | University of Agricultural Sciences and Veterinary Medicine Cluj-Napoca | RDI ecosystem | UASVM Cluj-Napoca covers a wide spectrum of specializations in fields specific to agriculture, horticulture, animal husbandry, | The main interest of the university consists in RDI projects and technology and knowledge transfer in the environmental
 1
 
 PRIMÁRIA D'EDIFICIÓ LEGAL
@@ -1318,14 +1290,13 @@ Climate Neutrality Action Plan
 
 1
 
-|  A-3.1: SYSTEMS & STAKEHOLDER MAPPING  |   |   |   |   |
-| --- | --- | --- | --- | --- |
-|  SYSTEM DESCRIPTION | STAKEHOLD ERS INVOLVED | NETWORK | INFLUENCE | INTEREST  |
-|   |  |  | biotechnologies, veterinary medicine, biology, environmental engineering, cadastre, forestry, food product engineering.
+A-3.1: SYSTEMS & STAKEHOLDER MAPPING
+SYSTEM DESCRIPTION | STAKEHOLD ERS INVOLVED | NETWORK INFLUENCE INTEREST
+biotechnologies, veterinary medicine, biology, environmental engineering, cadastre, forestry, food product engineering.
 It has 13 research centers, including in the fields of: Entrepreneurship and Technology Transfer and Data analysis and mining, mathematical modelling and GIS.
 UASVM also has 2 research and technological transfer centers and numerous projects with non-reimbursable, private and public funding. | engineering and cadastre sectors, with an emphasis on climate neutrality.
 Also, the university wants to contribute in reducing polluting emissions generated in agriculture, animal husbandry and public food.  |
-|  CAPACITIES | University of Medicine and Pharmacy Cluj-Napoca | RDI ecosystem | The Iuliu Hațieganu University of Medicine and Pharmacy in Cluj-Napoca fits into the international context of competitiveness, meeting the requirements of the European Research and Knowledge Area.
+CAPACITIES | University of Medicine and Pharmacy Cluj-Napoca | RDI ecosystem | The Iuliu Hațieganu University of Medicine and Pharmacy in Cluj-Napoca fits into the international context of competitiveness, meeting the requirements of the European Research and Knowledge Area.
 It represents a center of excellence in | The university is particularly interested in digital technologies that can improve the life quality of citizens residing in urban environments, that are extremely polluting and increasingly stressful for the inhabitants' physical and  |
 2
 
@@ -1341,27 +1312,26 @@ Climate Neutrality Action Plan
 
 A-3.1: SYSTEMS &amp; STAKEHOLDER MAPPING
 
-|  SYSTEM DESCRIPTION | STAKEHOLD ERS INVOLVED | NETWORK | INFLUENCE | INTEREST  |
-| --- | --- | --- | --- | --- |
-|   |  |  | education, training, research, medical and pharmaceutical assistance, a national leader in modern educational developments and an active and dynamic factor in the socio-cultural life of Cluj, being a reference brand of the city. | mental health.  |
-|  PROCESSES | Citizens | Civil society | The citizens of Cluj-Napoca and the metropolitan area are not only the final beneficiaries of this Action plan, but also play the double role of stakeholders.
+SYSTEM DESCRIPTION | STAKEHOLD ERS INVOLVED | NETWORK | INFLUENCE | INTEREST
+education, training, research, medical and pharmaceutical assistance, a national leader in modern educational developments and an active and dynamic factor in the socio-cultural life of Cluj, being a reference brand of the city. | mental health.
+PROCESSES | Citizens | Civil society | The citizens of Cluj-Napoca and the metropolitan area are not only the final beneficiaries of this Action plan, but also play the double role of stakeholders.
 
 They will be the ones who will set the tone of the Plan's implementation, being actively involved in the social innovation, civic imagination & co-design processes that are needed for the Municipality's transition towards climate-neutrality. | Their main interests consist of energy poverty and water scarcity, safe, comfortable and healthy living conditions, liveable and pleasant urban environment, climate changes' impact.
 
 They also need to adopt climate-neutral behaviors, in order to make a positive contribution to solving the climate problems that directly affect them, by achieving cheaper, healthier and above all more sustainable lifestyles.  |
-|  PROCESSES | Associations of home owners: The Federation of | Civil society | The associations of home owners are the bodies responsible for the management of residential apartment | Their main interest is to ensure safe, comfortable and decent living conditions, with low  |
+PROCESSES | Associations of home owners: The Federation of | Civil society | The associations of home owners are the bodies responsible for the management of residential apartment | Their main interest is to ensure safe, comfortable and decent living conditions, with low
 PRINÁRIA D'EDIFICIAL LOCAL CLUJ-NAPOCA
 
 Climate Neutrality Action Plan
 
 A-3.1: SYSTEMS &amp; STAKEHOLDER MAPPING
 
-|  SYSTEM DESCRIPTION | STAKEHOLD ERS INVOLVED | NETWORK | INFLUENCE | INTEREST  |
+| SYSTEM DESCRIPTION | STAKEHOLD ERS INVOLVED | NETWORK | INFLUENCE | INTEREST |
 | --- | --- | --- | --- | --- |
-|   | Home Owners' Associations Cluj-Napoca |  | blocks. They represent the main link between the public administration and citizens, being a key element in the climate-neutrality process, because they have the capability to influence the residents and the potential to accelerate the interventions that will be applied to the residential apartment blocks.
+|  | Home Owners' Associations Cluj-Napoca |  | blocks. They represent the main link between the public administration and citizens, being a key element in the climate-neutrality process, because they have the capability to influence the residents and the potential to accelerate the interventions that will be applied to the residential apartment blocks. |  |
 
 They will be constantly consulted, through direct contacts, for the proposed interventions. | climate impact (but also as resilient as possible to climate change) for citizens who live in residential apartment blocks.  |
-|  PROCESSES | National Research and Development Institute for Isotopic and Molecular Technologies INCDTIM Cluj-Napoca | RDI ecosystem | INCDTIM is a national institute that offers a wide range of RDI services and products.
+PROCESSES | National Research and Development Institute for Isotopic and Molecular Technologies INCDTIM Cluj-Napoca | RDI ecosystem | INCDTIM is a national institute that offers a wide range of RDI services and products.
 
 Through its human capital and scientific infrastructure, INCDTIM occupies an important position among the most significant research institutes in Romania, also owning the Center for Research and Advanced Technologies for | In the context of this Action Plan, INCDTIM's objective is to create a bridge between INCDTIM's research and the local community of entrepreneurs, investors and industry organizations, such as to facilitate the entire local ecosystem's transition towards climate neutrality.  |
 
@@ -1380,25 +1350,23 @@ Climate Neutrality Action Plan
 
 #
 
-|  A-3.1: SYSTEMS & STAKEHOLDER MAPPING  |   |   |   |   |
-| --- | --- | --- | --- | --- |
-|  SYSTEM DESCRIPTION | STAKEHOLD ERS INVOLVED | NETWORK | INFLUENCE | INTEREST  |
-|   |  |  | Alternative Energies. | The main areas of interest include the agro-food industry, health and pharma, environment and clean technologies and advanced materials.  |
-|  PROCESSES | "Ernest Lupan" Institute for Circular Economy and Environmental Research | RDI ecosystem | IRCEM is an independent non-governmental organization, formed as a research think tank.
+A-3.1: SYSTEMS & STAKEHOLDER MAPPING
+SYSTEM DESCRIPTION | STAKEHOLD ERS INVOLVED | NETWORK | INFLUENCE | INTEREST
+Alternative Energies. | The main areas of interest include the agro-food industry, health and pharma, environment and clean technologies and advanced materials.
+PROCESSES | "Ernest Lupan" Institute for Circular Economy and Environmental Research | RDI ecosystem | IRCEM is an independent non-governmental organization, formed as a research think tank.
 It accelerates the transition to circularity in a bottom-up approach with actions focused on developing practical and scalable solutions, national campaigns, communicating messages related to circularity and sustainable development. | IRCEM's position in this project consists in accelerating the implementation of circular economy practices in Cluj-Napoca, of particular interest being the interventions in the sectors: education and training, entrepreneurship, and RDI for sustainable development and environmental protection.  |
-|  PROCESSES | Servelect S.R.L. | Private sector | With over 16 years of experience, Servelect offers integrated services and solutions to optimize energy consumption and reduce operational costs, for: industry, buildings, public authorities, energy infrastructure operators or utilities. | Servelect's interest is to provide energy efficiency services and solutions to support industry and commercial buildings in Cluj-Napoca and, indirectly, the families of those working in them.  |
+PROCESSES | Servelect S.R.L. | Private sector | With over 16 years of experience, Servelect offers integrated services and solutions to optimize energy consumption and reduce operational costs, for: industry, buildings, public authorities, energy infrastructure operators or utilities. | Servelect's interest is to provide energy efficiency services and solutions to support industry and commercial buildings in Cluj-Napoca and, indirectly, the families of those working in them.
 PRINÁRIA D'EDIFICIAL LOCAL CLUJ-NAPOCA
 
 Climate Neutrality Action Plan
 
 A-3.1: SYSTEMS &amp; STAKEHOLDER MAPPING
 
-|  SYSTEM DESCRIPTION | STAKEHOLD ERS INVOLVED | NETWORK | INFLUENCE | INTEREST  |
-| --- | --- | --- | --- | --- |
-|   |  |  | Servselect's influence emerges from its major involvement in SECAP 2030, and also through the 800 implemented projects and the 900,000 MWh / year identified as potential for energy savings. | For the interventions included in the Action Plan, Servelect can involve in tasks that involve complex energy audits, energy management, feasibility studies and technical design.  |
-|  ALLIANCES | Urbannect, Cluj Youth Federation, Cluj Cultural Center - CCC | Local NGOs that are active in the field of citizens engagement, active citizenship, community initiatives | These include local NGOs that are actively involved in the local community's development.
+SYSTEM DESCRIPTION | STAKEHOLD ERS INVOLVED | NETWORK | INFLUENCE | INTEREST
+Servselect's influence emerges from its major involvement in SECAP 2030, and also through the 800 implemented projects and the 900,000 MWh / year identified as potential for energy savings. | For the interventions included in the Action Plan, Servelect can involve in tasks that involve complex energy audits, energy management, feasibility studies and technical design.
+ALLIANCES | Urbannect, Cluj Youth Federation, Cluj Cultural Center - CCC | Local NGOs that are active in the field of citizens engagement, active citizenship, community initiatives | These include local NGOs that are actively involved in the local community's development.
 In addition to their constant consultation, they will also take part in all the proposed interventions / initiatives, because they can pass on, in a coherent manner, the common voice of the citizens. | The main interest of these NGOs is to represent the voice of the citizens, to engage and involve them as strongly as possible in the ongoing interventions and also to align the local community to unitary climate-neutral practices, behaviors and mentality.  |
-|  ALLIANCES | AgroTransilvania Cluster | Local innovation ecosystem & Private sector | AgroTransilvania Cluster aims to become the main Romanian technological transfer center for research, development and innovation in the agro-industrial field.
+ALLIANCES | AgroTransilvania Cluster | Local innovation ecosystem & Private sector | AgroTransilvania Cluster aims to become the main Romanian technological transfer center for research, development and innovation in the agro-industrial field.
 It represents an | AgroTransilvania Cluster's main goal is to reduce the impact that the agri-food industry has on the climate and the environment, especially the reduction of pollutant emissions generated by the agri-sector and the  |
 
 5
@@ -1418,12 +1386,11 @@ Climate Neutrality Action Plan
 
 #
 
-|  A-3.1: SYSTEMS & STAKEHOLDER MAPPING  |   |   |   |   |
-| --- | --- | --- | --- | --- |
-|  SYSTEM DESCRIPTION | STAKEHOLD ERS INVOLVED | NETWORK | INFLUENCE | INTEREST  |
-|   |  |  | active and viable RDI partner in the agro-industrial field for local economic actors and a model of good international collaboration practices, fact reflected in particular through the ZeroWaste project, an international project aiming to reduce food waste and thus to contribute to the reduction of CO2 emissions | promotion and expansion of circular economy practices (zero waste) on the agro-industrial and agri-food value chains.  |
-|  ALLIANCES | Romanian New Materials Cluster | Local innovation ecosystem & Private sector | RNMC is a cluster focused on increasing the competitiveness of the Romanian business environment in the sector of new technologies and advanced materials. | The cluster's interest is that of aspiring its member entities to develop materials and technologies with minimum negative impact, respectively with maximum positive impact on the climate and the environment.  |
-|  ALLIANCES | Transilvania IT Cluster – DIH | Local innovation ecosystem & Private sector | Transilvania IT Cluster is the main coordinator of Transilvania Digital HUB, the main organization responsible for Cluj-Napoca's digital transformation.
+A-3.1: SYSTEMS & STAKEHOLDER MAPPING
+SYSTEM DESCRIPTION | STAKEHOLD ERS INVOLVED | NETWORK | INFLUENCE | INTEREST
+active and viable RDI partner in the agro-industrial field for local economic actors and a model of good international collaboration practices, fact reflected in particular through the ZeroWaste project, an international project aiming to reduce food waste and thus to contribute to the reduction of CO2 emissions | promotion and expansion of circular economy practices (zero waste) on the agro-industrial and agri-food value chains.
+ALLIANCES | Romanian New Materials Cluster | Local innovation ecosystem & Private sector | RNMC is a cluster focused on increasing the competitiveness of the Romanian business environment in the sector of new technologies and advanced materials. | The cluster's interest is that of aspiring its member entities to develop materials and technologies with minimum negative impact, respectively with maximum positive impact on the climate and the environment.
+ALLIANCES | Transilvania IT Cluster – DIH | Local innovation ecosystem & Private sector | Transilvania IT Cluster is the main coordinator of Transilvania Digital HUB, the main organization responsible for Cluj-Napoca's digital transformation.
 TDIH is specialized in the digital transition and offers customized digitization solutions | The central interest of the cluster, through TDIH, is to create a Climate-Neutrality Digital Twin, which can collect, visualize, monitor and forecast social and natural behaviors and environments.
 In the first phase, the aim is to create  |
 7
@@ -1444,11 +1411,10 @@ Climate Neutrality Action Plan
 
 #
 
-|  A-3.1: SYSTEMS & STAKEHOLDER MAPPING  |   |   |   |   |
-| --- | --- | --- | --- | --- |
-|  SYSTEM DESCRIPTION | STAKEHOLD ERS INVOLVED | NETWORK | INFLUENCE | INTEREST  |
-|   |  |  | such as training, prototyping & testing, creation of new value chains, support for investments and innovation ecosystem & networking. | the Climate-Neutrality Digital Twin Proof Of Concept and then to achieve the most complex technology readiness level.  |
-|  ALLIANCES | Transylvania Energy Cluster | Local innovation ecosystem & Private sector | TREC is a cluster that engages most companies specialized in energy from the North-West region. In addition to representing all local and regional actors specialized in green energy, the cluster implements non-reimbursable RDI projects (photovoltaic and wind park that will test the energy efficiency of photovoltaic panels and modern wind energy installations, research hub for hydrogen-based mobility, REFLOW, etc) with both national and international partners. Its main influence comes from the critical mass of companies in the field and the strong relationships it has | TREC's main interest consists of planning and carrying out services and activities aimed at promoting and developing mechanisms to support member entities in the energy field, to increase their competitiveness at local, regional, national and international levels. The main field of action revolves around green and sustainable energy, with special focus on innovative technologies, processes and methodologies, based on technological and know-how transfer in order to increase the adoption of emerging clean energy solutions.  |
+A-3.1: SYSTEMS & STAKEHOLDER MAPPING
+SYSTEM DESCRIPTION | STAKEHOLD ERS INVOLVED | NETWORK | INFLUENCE | INTEREST
+such as training, prototyping & testing, creation of new value chains, support for investments and innovation ecosystem & networking. | the Climate-Neutrality Digital Twin Proof Of Concept and then to achieve the most complex technology readiness level.
+ALLIANCES | Transylvania Energy Cluster | Local innovation ecosystem & Private sector | TREC is a cluster that engages most companies specialized in energy from the North-West region. In addition to representing all local and regional actors specialized in green energy, the cluster implements non-reimbursable RDI projects (photovoltaic and wind park that will test the energy efficiency of photovoltaic panels and modern wind energy installations, research hub for hydrogen-based mobility, REFLOW, etc) with both national and international partners. Its main influence comes from the critical mass of companies in the field and the strong relationships it has | TREC's main interest consists of planning and carrying out services and activities aimed at promoting and developing mechanisms to support member entities in the energy field, to increase their competitiveness at local, regional, national and international levels. The main field of action revolves around green and sustainable energy, with special focus on innovative technologies, processes and methodologies, based on technological and know-how transfer in order to increase the adoption of emerging clean energy solutions.
 PRINÁRIA D'EDIFICIÓ LEGAL
 CLUJ-NAPOCA
 CLU JUNIOR TICO
@@ -1462,12 +1428,11 @@ CLIC SCHOOLS
 Climate Neutrality Action Plan
 C
 
-|  A-3.1: SYSTEMS & STAKEHOLDER MAPPING  |   |   |   |   |
-| --- | --- | --- | --- | --- |
-|  SYSTEM DESCRIPTION | STAKEHOLD ERS INVOLVED | NETWORK | INFLUENCE | INTEREST  |
-|   |  |  | developed between RDI representatives, the public administration (the Municipality is a cluster member) and the private sector in clean, innovative energy. |   |
-|  FUNDS | Cluj IT Cluster | Local innovation ecosystem & Private sector | Cluj IT is a cluster based organization formed of active organizations in the information technology field: providers of software services and solutions, universities and research institutes, public bodies and other catalyst organizations. | The central interest of the cluster is to help the city accelerate climate-neutrality by including innovation in all the processes.  |
-|  FUNDS | North-West Regional Development Agency | The national network of Regional Development Agencies | The North-West Regional Development Agency was established as an NGO of public utility, acting in areas specific to regional development.
+A-3.1: SYSTEMS & STAKEHOLDER MAPPING
+SYSTEM DESCRIPTION | STAKEHOLD ERS INVOLVED | NETWORK | INFLUENCE | INTEREST
+developed between RDI representatives, the public administration (the Municipality is a cluster member) and the private sector in clean, innovative energy.
+FUNDS | Cluj IT Cluster | Local innovation ecosystem & Private sector | Cluj IT is a cluster based organization formed of active organizations in the information technology field: providers of software services and solutions, universities and research institutes, public bodies and other catalyst organizations. | The central interest of the cluster is to help the city accelerate climate-neutrality by including innovation in all the processes.
+FUNDS | North-West Regional Development Agency | The national network of Regional Development Agencies | The North-West Regional Development Agency was established as an NGO of public utility, acting in areas specific to regional development.
 North-West RDA is the executive body of the Council for Regional Development of the North-West Development Region and is the Managing Authority in charge of Regional Operational Program for the North-West (NW - ROP) development | ROP is currently the main source of financing local investments that target climate-neutrality (sustainable urban mobility, thermal rehabilitation of public and residential buildings, urban regeneration, green areas extension, etc.).
 Thus, the main interest of the North-West Regional Development Agency is to ensure  |
 
@@ -1479,13 +1444,12 @@ CLUJ NAPOCÁ
 Climate Neutrality Action Plan
 C
 
-|  A-3.1: SYSTEMS & STAKEHOLDER MAPPING  |   |   |   |   |
-| --- | --- | --- | --- | --- |
-|  SYSTEM DESCRIPTION | STAKEHOLD ERS INVOLVED | NETWORK | INFLUENCE | INTEREST  |
-|   |  |  | region of Romania.
+A-3.1: SYSTEMS & STAKEHOLDER MAPPING
+SYSTEM DESCRIPTION | STAKEHOLD ERS INVOLVED | NETWORK INFLUENCE INTEREST
+region of Romania.
 
 One of the priority axes of the 2021-2027 NW-ROP is to promote a region with environmentally friendly localities. Through the lens of the financing program that it manages, the entity is essential for the funding needed for implemented all the proposed actions. Its representatives will be invited to the discussions and events, in order for them to understand the interventions' relevance and the need to transform the city into a local catalyst of climate neutrality, process which must also be adopted by the North-West region, of which Cluj-Napoca is a part. | the total allocation of the available ROP funds, in the present case especially of those funds that financially support the transition of region's actors towards climate-neutrality.  |
-|  FUNDS | Transylvania Commercial Bank (ro : Banca Transilvania) | Banking institutions | Transylvania Commercial Bank, headquartered in Cluj-Napoca, is the main, most reliable and renowned private banking institution in the country and an active promoter of sustainable development. | Transylvania Commercial Bank's interest is to finance as many climate-neutral investments as possible and to become the main private funding partner of the Municipality for such projects.  |
+FUNDS | Transylvania Commercial Bank (ro : Banca Transilvania) | Banking institutions | Transylvania Commercial Bank, headquartered in Cluj-Napoca, is the main, most reliable and renowned private banking institution in the country and an active promoter of sustainable development. | Transylvania Commercial Bank's interest is to finance as many climate-neutral investments as possible and to become the main private funding partner of the Municipality for such projects.
 
 9
 0
@@ -1500,9 +1464,8 @@ Climate Neutrality Action Plan
 
 A-3.1: SYSTEMS &amp; STAKEHOLDER MAPPING
 
-|  SYSTEM DESCRIPTION | STAKEHOLD ERS INVOLVED | NETWORK | INFLUENCE | INTEREST  |
-| --- | --- | --- | --- | --- |
-|   |  |  | The bank has recently provided an important investment loan to the Municipality of Cluj-Napoca, following a public procurement procedure.
+SYSTEM DESCRIPTION | STAKEHOLD ERS INVOLVED | NETWORK | INFLUENCE | INTEREST
+The bank has recently provided an important investment loan to the Municipality of Cluj-Napoca, following a public procurement procedure.
 
 Given its character, Transylvania Commercial Bank is essential as a funding partner, because it can financially support local initiatives (be it promoted by citizens or companies) oriented towards the climate neutrality, for instance through various credits. Transylvania Commercial Bank will be invited to become a discussion partner and take part in various events, so that, through these actions, the Municipality establishes a stable financial contact, much needed in its ambition. |   |
 
@@ -1696,9 +1659,9 @@ ASSISTANCE NEEDS: Resulting from the previously mentioned barriers and the Munic
 During the workshop organized by the Net Zero City Advisors, our local Net Zero Coalition adopted a systems-thinking approach to scrutinize the draft NZC Action Plan with key stakeholders. Through this exercise, the Coalition identified specific barriers and opportunities in various emission domains, including energy systems, mobility and transport, waste &amp; circular economy and green infrastructure &amp; nature-based solutions. Although the workshop did not focus on the built environment, the Coalition subsequently held a working session to examine barriers and opportunities in this emission domain.
 9
 
-|  EMISSION DOMAINS | MAIN BARRIERS IDENTIFIED BY THE LOCAL STAKEHOLDERS | MAIN OPPORTUNITIES IDENTIFIED BY THE LOCAL STAKEHOLDERS  |
+| EMISSION DOMAINS | MAIN BARRIERS IDENTIFIED BY THE LOCAL STAKEHOLDERS | MAIN OPPORTUNITIES IDENTIFIED BY THE LOCAL STAKEHOLDERS |
 | --- | --- | --- |
-|  ENERGY SYST EMS | • The high use of fossil fuels to ensure energy security
+| ENERGY SYST EMS | • The high use of fossil fuels to ensure energy security |  |
 • The small quantity of waste converted into energy, due to poor regulations
 • The lack of storage capabilities
 • The high energy losses from the district heating system
@@ -1721,7 +1684,7 @@ During the workshop organized by the Net Zero City Advisors, our local Net Zero 
 • The idea of introducing a new legal framework for hydrogen in the transport sector
 • The plan of building a modular hydrogen production facility for further upscaling
 • The advantage of acting as a pioneer city in the field of technology validation and implementation for hydrogen  |
-|  MOBILITY & TRANSPORT | • The relaxed residential parking policy
+MOBILITY & TRANSPORT | • The relaxed residential parking policy
 • The deep-rooted culture of personal car ownership and use, especially given that the rate of car ownership is growing fast
 • The public resistance regarding carbon neutral means of transportation (biking or walking) compared to using the own vehicle
 • The lack of experts specialized in the 0-emission mobility/transport fields
@@ -1743,18 +1706,18 @@ Climate Neutrality Action Plan
 
 #
 
-|   | second-hand cars from other EU Member States · The lack of electric charging infrastructure · The missing legal framework for metropolitan transport · The limited adoption of public transport as the main way of travelling throughout the city · The lack of a proper legal framework for autonomous public transport vehicles · The undersized cycling facilities (lanes and supporting infrastructure) · The middle-class challenge | transport · The potential that public policies hold regarding the promotion of green transportation means (especially public transport) · The attractiveness of the Walkable City initiative, due to the increased interest for the 15-minute city concept · The citizens' interest for using e-bikes in travelling across the city · The idea of organizing Civic Imagination and Innovation meetings for raising awareness and building engagement regarding clean and active mobility · The process of introducing a new legal framework for hydrogen use in transport · The sustainable development of EV infrastructure · The plan of building a modular hydrogen production facility for further upscaling  |
+|  | second-hand cars from other EU Member States · The lack of electric charging infrastructure · The missing legal framework for metropolitan transport · The limited adoption of public transport as the main way of travelling throughout the city · The lack of a proper legal framework for autonomous public transport vehicles · The undersized cycling facilities (lanes and supporting infrastructure) · The middle-class challenge | transport · The potential that public policies hold regarding the promotion of green transportation means (especially public transport) · The attractiveness of the Walkable City initiative, due to the increased interest for the 15-minute city concept · The citizens' interest for using e-bikes in travelling across the city · The idea of organizing Civic Imagination and Innovation meetings for raising awareness and building engagement regarding clean and active mobility · The process of introducing a new legal framework for hydrogen use in transport · The sustainable development of EV infrastructure · The plan of building a modular hydrogen production facility for further upscaling |
 | --- | --- | --- |
-|  WASTE & CIRCULAR ECONOMY | · The fact that currently, the waste disposal bins are not equipped with security systems · The quantities of waste that is re-used are extremely reduced, e.g., for repurposing waste as compost or for transforming waste water into heat · The current lack of a common vision or understanding regarding both climate neutrality and circular economy · Currently, the process of collecting, synthesizing, monitoring and using waste data is insufficient · The lack of awareness in terms of waste meaning, effects upon individual and environmental health, recycling potential and reduction solutions · At the moment, public policies do not reward waste-reduction behaviour or innovative products · The lack of linking the quantity of generated waste to taxes (the concept of pay-as-you-throw is not implemented at the moment) | · The untapped potential of using waste to generate electricity for the EV infrastructure · The idea of adopting the local Foodwaste Platform (that has been developed through the ZeroWaste project) at municipal level and furtherly scaling it, such as to embed other types of waste · The tremendous amount of EU funds dedicated to circular economy, in the context of the Green Deal and the EU's New Circular Action Plan  |
+| WASTE & CIRCULAR ECONOMY | · The fact that currently, the waste disposal bins are not equipped with security systems · The quantities of waste that is re-used are extremely reduced, e.g., for repurposing waste as compost or for transforming waste water into heat · The current lack of a common vision or understanding regarding both climate neutrality and circular economy · Currently, the process of collecting, synthesizing, monitoring and using waste data is insufficient · The lack of awareness in terms of waste meaning, effects upon individual and environmental health, recycling potential and reduction solutions · At the moment, public policies do not reward waste-reduction behaviour or innovative products · The lack of linking the quantity of generated waste to taxes (the concept of pay-as-you-throw is not implemented at the moment) | · The untapped potential of using waste to generate electricity for the EV infrastructure · The idea of adopting the local Foodwaste Platform (that has been developed through the ZeroWaste project) at municipal level and furtherly scaling it, such as to embed other types of waste · The tremendous amount of EU funds dedicated to circular economy, in the context of the Green Deal and the EU's New Circular Action Plan |
 MINISTRY OF EDUCATION, YELF, WELFARE, AND EXAMENING EXAMINATION SINCE 1933
 
 Climate Neutrality Action Plan
 
 CC
 
-|   | · The overarching cost of new infrastructure is far beyond the local budgeting capacity · The need of implementing new economic circuits (e.g., glass recycling factory) · The resource flows are disturbed by the availability and capacity of different private contractors to deliver their services timely and at the agreed quality standards |   |
+|  | · The overarching cost of new infrastructure is far beyond the local budgeting capacity · The need of implementing new economic circuits (e.g., glass recycling factory) · The resource flows are disturbed by the availability and capacity of different private contractors to deliver their services timely and at the agreed quality standards |  |
 | --- | --- | --- |
-|  GREEN INFRASTRUCTURE & NATURE-BASED SOLUTIONS | · Inflation affects the local budget dedicated to projects and can hinder / slow down public procurement procedures · Prior to this large-scale initiative, there were no local alliances that actively supported climate neutrality · The insufficient data-driven insights at Municipality level on awareness / understanding within citizen groupings, in order to identify the right entry-points · The overarching cost of new infrastructure is far beyond the local budgeting capacity · The bureaucracy implied on spending on climate neutrality can be cumbersome · The interoperability of different databases is limited so the projects' implementation processes are slow and bureaucratic · The public opposition to projects which limit car use in favour of green mobility · The lack of available land for such interventions · The poor regulations and standards at central level for climate neutrality in key areas · The reluctance of building owners to implement nature-based solutions · The need to update the local public policies regarding NBS solutions · The community has a reduced capacity to understand the local strategies | · The large number of local NGOs that are active in environmental-related matters · The residents' increased interest to healthy and active habits · The advantage of collaborating with the University of Agricultural Sciences and Veterinary Medicine Cluj-Napoca · The already-existing living labs in the Municipality, such as the one developed by the University of Agricultural Sciences and Veterinary Medicine Cluj-Napoca · The potential of scaling-up green infrastructure projects due to the sound metropolitan cooperation · The high interest that citizens and entrepreneurs show when presented with various innovative solutions for carbon neutral projects  |
+| GREEN INFRASTRUCTURE & NATURE-BASED SOLUTIONS | · Inflation affects the local budget dedicated to projects and can hinder / slow down public procurement procedures · Prior to this large-scale initiative, there were no local alliances that actively supported climate neutrality · The insufficient data-driven insights at Municipality level on awareness / understanding within citizen groupings, in order to identify the right entry-points · The overarching cost of new infrastructure is far beyond the local budgeting capacity · The bureaucracy implied on spending on climate neutrality can be cumbersome · The interoperability of different databases is limited so the projects' implementation processes are slow and bureaucratic · The public opposition to projects which limit car use in favour of green mobility · The lack of available land for such interventions · The poor regulations and standards at central level for climate neutrality in key areas · The reluctance of building owners to implement nature-based solutions · The need to update the local public policies regarding NBS solutions · The community has a reduced capacity to understand the local strategies | · The large number of local NGOs that are active in environmental-related matters · The residents' increased interest to healthy and active habits · The advantage of collaborating with the University of Agricultural Sciences and Veterinary Medicine Cluj-Napoca · The already-existing living labs in the Municipality, such as the one developed by the University of Agricultural Sciences and Veterinary Medicine Cluj-Napoca · The potential of scaling-up green infrastructure projects due to the sound metropolitan cooperation · The high interest that citizens and entrepreneurs show when presented with various innovative solutions for carbon neutral projects |
 PRINÁRIA D'EDIFICIAL LOCAL CLUJ-NAPOCA
 
 CIL CERTIFIED MANAGEMENT SYSTEM
@@ -2152,132 +2115,127 @@ Climate Neutrality Action Plan
 
 # 4.1 Module B-1 Climate Neutrality Scenarios and Impact Pathways
 
-|  B-1.1: IMPACT PATHWAYS  |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- |
-|  FIELDS OF ACTION | SYSTEMIC LEVERS | EARLY CHANGES (1-2 YEARS) | LATE OUTCOMES (3-4 YEARS) | DIRECT IMPACTS (EMISSION REDUCTIONS) | INDIRECT IMPACTS (CO-BENEFITS)  |
-|  Energy systems | Technology/ Infrastructure | Efficiency of the District Heating System improved by introducing new technologies such as thermal solar systems, air-water and water-water heat pumps, cogeneration engines and boilers using natural gas, potentially combined with green hydrogen | A District Heating System running primarily on green energy | Reduce CO2 emissions by 45,243 tons over 2021 | Improved air quality and quality of life
+B-1.1: IMPACT PATHWAYS
+FIELDS OF ACTION | SYSTEMIC LEVERS | EARLY CHANGES (1-2 YEARS) | LATE OUTCOMES (3-4 YEARS) | DIRECT IMPACTS (EMISSION REDUCTIONS) | INDIRECT IMPACTS (CO-BENEFITS)
+Energy systems | Technology/ Infrastructure | Efficiency of the District Heating System improved by introducing new technologies such as thermal solar systems, air-water and water-water heat pumps, cogeneration engines and boilers using natural gas, potentially combined with green hydrogen | A District Heating System running primarily on green energy | Reduce CO2 emissions by 45,243 tons over 2021 | Improved air quality and quality of life
 Lower energy costs for households  |
-|   |   |  RES generation facilities (solar panels and/or heat pumps) for all public buildings, for 2,000 apartment block buildings, and for 5,000 individual homes | A higher share of heat, hot water, and cooling generated from green electricity. | Reduce CO2 emissions by 37,000 tons over 2021 | Improved air quality and quality of life
+RES generation facilities (solar panels and/or heat pumps) for all public buildings, for 2,000 apartment block buildings, and for 5,000 individual homes | A higher share of heat, hot water, and cooling generated from green electricity. | Reduce CO2 emissions by 37,000 tons over 2021 | Improved air quality and quality of life
 Lower energy costs for households
 Potentially generate additional sources of revenue from energy generation  |
-|   |   |  Around 80% of the public lighting network equipped with LED lamps, remote management, and dimming systems | State of the art and energy efficient public lighting system | Reduce CO2 emissions by 3,000 tons over 2021 | Increased safety of public spaces
+Around 80% of the public lighting network equipped with LED lamps, remote management, and dimming systems | State of the art and energy efficient public lighting system | Reduce CO2 emissions by 3,000 tons over 2021 | Increased safety of public spaces
 Savings for local budget  |
-|  Mobility & transport | Technology/ Infrastructure | Extend by at least 200 the network of public electric charging stations | Key public areas made more attractive for electric cars. | Reduce CO2 emissions by 24,377 tons over 2021 | Reduced air pollution
+Mobility & transport | Technology/ Infrastructure | Extend by at least 200 the network of public electric charging stations | Key public areas made more attractive for electric cars. | Reduce CO2 emissions by 24,377 tons over 2021 | Reduced air pollution
 More affordable transport by car  |
-|   |  Governance & Policy | Enforce urban planning regulations to include electric charging stations | Extension of network of electric charging stations  |   |   |
+Governance & Policy | Enforce urban planning regulations to include electric charging stations | Extension of network of electric charging stations
 Climate Neutrality Action Plan
 
 #
 
-|  B-1.1: IMPACT PATHWAYS  |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- |
-|  FIELDS OF ACTION | SYSTEMIC LEVERS | EARLY CHANGES (1-2 YEARS) | LATE OUTCOMES (3-4 YEARS) | DIRECT IMPACTS (EMISSION REDUCTIONS) | INDIRECT IMPACTS (CO-BENEFITS)  |
-|   |  | for large development, and increase network by at least 300 new stations. | in neighbourhoods |  | Improvement of quality of life  |
-|   |  Finance & Funding | Benefits for residents that purchase electric vehicles (lower local taxes, subsidies (both national and local), parking discounts, and dedicated parking spots and city areas), with at least 50,000 beneficiaries anticipated by 2030 | 50,000 new electric vehicles in local car fleet  |   |   |
-|   |  Technology/ Infrastructure | Start shift to predominantly green commuting in the wider metropolitan area | Most long commutes in the metropolitan area are done by green transport modes (metro, metropolitan train, electric buses, tramways, trolleybuses) | Reduce CO2 emissions by 15,975 tons over 2021 | Improved air quality and reduced congestion
+B-1.1: IMPACT PATHWAYS
+FIELDS OF ACTION | SYSTEMIC LEVERS | EARLY CHANGES (1-2 YEARS) | LATE OUTCOMES (3-4 YEARS) | DIRECT IMPACTS (EMISSION REDUCTIONS) | INDIRECT IMPACTS (CO-BENEFITS)
+for large development, and increase network by at least 300 new stations. | in neighbourhoods | Improvement of quality of life
+Finance & Funding | Benefits for residents that purchase electric vehicles (lower local taxes, subsidies (both national and local), parking discounts, and dedicated parking spots and city areas), with at least 50,000 beneficiaries anticipated by 2030 | 50,000 new electric vehicles in local car fleet
+Technology/ Infrastructure | Start shift to predominantly green commuting in the wider metropolitan area | Most long commutes in the metropolitan area are done by green transport modes (metro, metropolitan train, electric buses, tramways, trolleybuses) | Reduce CO2 emissions by 15,975 tons over 2021 | Improved air quality and reduced congestion
 Improved wellness and quality of life of residents  |
-|   |  Technology/ Infrastructure | Continue investments in the “Walkable City Program”, to make the center city and neighborhoods more easily accessible by foot, bike and other green micro-mobility options | Most short commutes in the city are done by foot, bike or other green micro-mobility options. | Reduce CO2 emissions by 7,100 tons over 2021 | Improve quality of life for residents
+Technology/ Infrastructure | Continue investments in the “Walkable City Program”, to make the center city and neighborhoods more easily accessible by foot, bike and other green micro-mobility options | Most short commutes in the city are done by foot, bike or other green micro-mobility options. | Reduce CO2 emissions by 7,100 tons over 2021 | Improve quality of life for residents
 Make public spaces safer for children, elderly, and people with disabilities  |
-|   |   |  Continue investments in the “City Bike Program”, to make commuting by bike easy, safe, and comfortable | Increase share of people that use bikes for short and medium-length commutes, and for recreational use |   | Reduce air pollution and congestion  |
-|   |  Social Innovation | Continue and expand Social Innovation programs, such as “Squats for Bus Tickets” | At least 3 creative programs in place that encourage people to use green transport modes |   | Reduce monthly transport costs for households
+|  | Continue investments in the “City Bike Program”, to make commuting by bike easy, safe, and comfortable | Increase share of people that use bikes for short and medium-length commutes, and for recreational use |  | Reduce air pollution and congestion |
+| --- | --- | --- | --- | --- | --- |
+|  | Social Innovation | Continue and expand Social Innovation programs, such as “Squats for Bus Tickets” | At least 3 creative programs in place that encourage people to use green transport modes | Reduce monthly transport costs for households |
 Reduce flight to suburbs by improving quality of living spaces in existing  |
 Climate Neutrality Action Plan
 
 #
 
-|  B-1.1: IMPACT PATHWAYS  |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- |
-|  FIELDS OF ACTION | SYSTEMIC LEVERS | EARLY CHANGES (1-2 YEARS) | LATE OUTCOMES (3-4 YEARS) | DIRECT IMPACTS (EMISSION REDUCTIONS) | INDIRECT IMPACTS (CO-BENEFITS)  |
-|   |  |  |  |  | neighborhoods  |
-|  Waste & circular economy | Technology/ Infrastructure | Continue investments in the “Circular City” Program, with a focus on developing at least 270 digitised eco-islands for selective collection, building at least 2 collection centers for voluminous and hazardous waste, and installing at least 100 new smart street waste bins | Over 60% of municipal waste will be reused or recycled | Reduce CO2 emissions by 16,000 tons over 2021 | Improved quality of life Potential for new business opportunities and partnerships through circular schemes (e.g. used coffee grinds used as fertilizer for urban farms) Increased productivity of the private sector  |
-|   |  Social Innovation | Continue social innovations programs such as “Recyclables for Bus Tickets”  |   |   |   |
-|   |  Learning & Capabilities | Continue to inform people on the benefits of recycling and on how to properly recycle  |   |   |   |
-|   |  Governance & Policy | Continue and expand punitive measures for people that don’t recycle, and incentives for those that do  |   |   |   |
-|   |  Finance & Funding | Higher SWM taxes for people that don’t recycle and lower taxes for those that do  |   |   |   |
-|  Green infrastructure & nature based solutions | Technology/ Infrastructure | Extension of “Green City” Program, through rehabilitation and/or extension of existing parks, development of new parks, planting at least 100,000 new trees. | 98% of the city population within a 10 minute walk to a green or blue-green area | Abate 380 tons of CO2 emissions over 2021 | Improve quality of life Reduce flight to suburbs by making existing neighborhoods more attractive Encourage more trips by foot and green transport  |
+B-1.1: IMPACT PATHWAYS
+FIELDS OF ACTION | SYSTEMIC LEVERS | EARLY CHANGES (1-2 YEARS) | LATE OUTCOMES (3-4 YEARS) | DIRECT IMPACTS (EMISSION REDUCTIONS) INDIRECT IMPACTS (CO-BENEFITS)
+neighborhoods
+Waste & circular economy | Technology/ Infrastructure | Continue investments in the “Circular City” Program, with a focus on developing at least 270 digitised eco-islands for selective collection, building at least 2 collection centers for voluminous and hazardous waste, and installing at least 100 new smart street waste bins | Over 60% of municipal waste will be reused or recycled | Reduce CO2 emissions by 16,000 tons over 2021 Improved quality of life Potential for new business opportunities and partnerships through circular schemes (e.g. used coffee grinds used as fertilizer for urban farms) Increased productivity of the private sector
+Social Innovation | Continue social innovations programs such as “Recyclables for Bus Tickets”
+Learning & Capabilities | Continue to inform people on the benefits of recycling and on how to properly recycle
+Governance & Policy | Continue and expand punitive measures for people that don’t recycle, and incentives for those that do
+Finance & Funding | Higher SWM taxes for people that don’t recycle and lower taxes for those that do
+Green infrastructure & nature based solutions | Technology/ Infrastructure | Extension of “Green City” Program, through rehabilitation and/or extension of existing parks, development of new parks, planting at least 100,000 new trees. | 98% of the city population within a 10 minute walk to a green or blue-green area | Abate 380 tons of CO2 emissions over 2021 Improve quality of life Reduce flight to suburbs by making existing neighborhoods more attractive Encourage more trips by foot and green transport
 Climate Neutrality Action Plan
 
 #
 
-|  B-1.1: IMPACT PATHWAYS  |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- |
-|  FIELDS OF ACTION | SYSTEMIC LEVERS | EARLY CHANGES (1-2 YEARS) | LATE OUTCOMES (3-4 YEARS) | DIRECT IMPACTS (EMISSION REDUCTIONS) | INDIRECT IMPACTS (CO-BENEFITS)  |
-|   |  |  |  |  | modes  |
-|   |  Technology/ Infrastructure | Continue and expand the development of blue-green corridors | The Someș River Blue-Green Corridor (with at least 75 km of bike and pedestrian paths) and other blue-green corridors developed | Reduce CO2 emissions by 2,650 tons over 2021 | Improve quality of life
+B-1.1: IMPACT PATHWAYS
+FIELDS OF ACTION | SYSTEMIC LEVERS | EARLY CHANGES (1-2 YEARS) | LATE OUTCOMES (3-4 YEARS) DIRECT IMPACTS (EMISSION REDUCTIONS) INDIRECT IMPACTS (CO-BENEFITS)
+modes
+Technology/ Infrastructure | Continue and expand the development of blue-green corridors | The Someș River Blue-Green Corridor (with at least 75 km of bike and pedestrian paths) and other blue-green corridors developed Reduce CO2 emissions by 2,650 tons over 2021 Improve quality of life
 Make commuting by bike and green micro-mobility options more attractive
 Reduce air pollution and congestion  |
-|   |  Technology/ Infrastructure | Introduce program for green roofs and facades for public and private buildings | At least 50 buildings with green roofs and facades | Reduce CO2 emissions by 175 tons over 2021 | Improved quality of life
+Technology/ Infrastructure | Introduce program for green roofs and facades for public and private buildings | At least 50 buildings with green roofs and facades | Reduce CO2 emissions by 175 tons over 2021 | Improved quality of life
 Improved urban aesthetics  |
-|  Built environment | Technology/ Infrastructure | Introduction of rehabilitation program for multi-apartment block neighborhoods, where 77% of people in the city live | Improved energy efficiency for at least 40,000 apartments, and public areas around apartment blocks rehabilitated to reduce car usage and make transport by foot, bike and public transport more attractive. | Reduce CO2 emissions by 70,000 tons over 2021 | Improve quality of life
+Built environment | Technology/ Infrastructure | Introduction of rehabilitation program for multi-apartment block neighborhoods, where 77% of people in the city live | Improved energy efficiency for at least 40,000 apartments, and public areas around apartment blocks rehabilitated to reduce car usage and make transport by foot, bike and public transport more attractive. | Reduce CO2 emissions by 70,000 tons over 2021 | Improve quality of life
 Reduce energy bills
 Potentially generate additional sources of revenue from energy generation  |
-|   |  Governance & Policy | Continue and expand policies (e.g. urban planning regulations) that promote NZEB standards in new and existing residential buildings | Most new buildings built to NZEB standards, and at least 75% of housing units with improved energy performance | Reduce CO2 emissions by 53,000 tons over 2021 | Strengthen community cohesion and collaboration  |
-|   |  Finance & Funding | Introduce incentives program (e.g. lower taxes, subsidies) for household associations that improve energy performance of their |  |  | Reduce flight to suburbs, by improving quality of life in existing  |
+|  | Governance & Policy | Continue and expand policies (e.g. urban planning regulations) that promote NZEB standards in new and existing residential buildings | Most new buildings built to NZEB standards, and at least 75% of housing units with improved energy performance | Reduce CO2 emissions by 53,000 tons over 2021 | Strengthen community cohesion and collaboration |
+| --- | --- | --- | --- | --- | --- |
+|  | Finance & Funding | Introduce incentives program (e.g. lower taxes, subsidies) for household associations that improve energy performance of their |  | Reduce flight to suburbs, by improving quality of life in existing |  |
 Climate Neutrality Action Plan
 
 #
 
-|  B-1.1: IMPACT PATHWAYS  |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- |
-|  FIELDS OF ACTION | SYSTEMIC LEVERS | EARLY CHANGES (1-2 YEARS) | LATE OUTCOMES (3-4 YEARS) | DIRECT IMPACTS (EMISSION REDUCTIONS) | INDIRECT IMPACTS (CO-BENEFITS)  |
-|   |  | apartment blocks |  |  | neighborhoods
+B-1.1: IMPACT PATHWAYS
+FIELDS OF ACTION | SYSTEMIC LEVERS | EARLY CHANGES (1-2 YEARS) | LATE OUTCOMES (3-4 YEARS) DIRECT IMPACTS (EMISSION REDUCTIONS) INDIRECT IMPACTS (CO-BENEFITS)
+apartment blocks | neighborhoods
 Abate congestion and pollution from metropolitan commuting  |
-|   |  Social Innovation | Facilitate social innovation initiatives that enable people to save energy costs and also reduce energy consumption | At least 2 social innovation initiatives that are adopted by the wider population  |   |   |
-|   |  Learning & Capabilities | Introduce program for transfer of best-practices and innovative ways to save energy and energy costs, and expand communication and dissemination efforts on the climate neutrality agenda | At least two best-practices or innovations adopted by wider population, and at least 75% of the population aware of climate neutrality goals and actively engaged in climate neutrality efforts  |   |   |
-|   |  Democracy/Participation | Establishment of the Local NetZero Coalition | At least 5 civic imagination and innovation modelling initiatives started at the neighbourhood level, enhancing the capacity of communities to implement and monitor climate neutral policies at the neighbourhood level |  |   |
-|   |  Technology/Infrastructure | Continue and expand Energy Renovation of Public Buildings Program | At least 50 public buildings (e.g. nurseries, kindergartens, schools, administrative buildings) rehabilitated | Reduce CO2 emissions by 5,000 tons over 2021 | Improve performance of public sector employees and quality of public services
+|  | Social Innovation | Facilitate social innovation initiatives that enable people to save energy costs and also reduce energy consumption | At least 2 social innovation initiatives that are adopted by the wider population |  |
+| --- | --- | --- | --- | --- | --- |
+|  | Learning & Capabilities | Introduce program for transfer of best-practices and innovative ways to save energy and energy costs, and expand communication and dissemination efforts on the climate neutrality agenda | At least two best-practices or innovations adopted by wider population, and at least 75% of the population aware of climate neutrality goals and actively engaged in climate neutrality efforts |  |
+|  | Democracy/Participation | Establishment of the Local NetZero Coalition | At least 5 civic imagination and innovation modelling initiatives started at the neighbourhood level, enhancing the capacity of communities to implement and monitor climate neutral policies at the neighbourhood level |  |
+|  | Technology/Infrastructure | Continue and expand Energy Renovation of Public Buildings Program | At least 50 public buildings (e.g. nurseries, kindergartens, schools, administrative buildings) rehabilitated | Reduce CO2 emissions by 5,000 tons over 2021 Improve performance of public sector employees and quality of public services |
 Reduce local budget energy costs  |
-|   |  Governance & Policy | Continue and expand policies (e.g. urban planning regulations) that promote NZEB standards in new and existing | At least 95% of the commercial building stock with improved energy performance, and | Reduce CO2 emissions by 39,000 tons over 2021 | Increased productivity of private sector due to better quality of  |
+Governance & Policy | Continue and expand policies (e.g. urban planning regulations) that promote NZEB standards in new and existing | At least 95% of the commercial building stock with improved energy performance, and | Reduce CO2 emissions by 39,000 tons over 2021 | Increased productivity of private sector due to better quality of
 Climate Neutrality Action Plan
 
 #
 
-|  B-1.1: IMPACT PATHWAYS  |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- |
-|  FIELDS OF ACTION | SYSTEMIC LEVERS | EARLY CHANGES (1-2 YEARS) | LATE OUTCOMES (3-4 YEARS) | DIRECT IMPACTS (EMISSION REDUCTIONS) | INDIRECT IMPACTS (CO-BENEFITS)  |
-|   |  | commercial buildings, and the redevelopment of brownfields rather than green-field development | at least 3 major brownfield redevelopment projects undertaken in the city |  | working spaces  |
-|   |  Finance & Funding | Introduce incentives (e.g. lower taxes, easier permitting) for commercial buildings with improved energy performance and for brownfields redevelopment, and punitive measures for commercial buildings with poor energy performance and for green-field developments  |   |   |   |
-|  Organisational and Governance Innovation | Learning & Capabilities | The local ecosystem actors that can have a potential contribution to achieving climate neutrality mapped and audited in terms of relevant competencies. - knowledge and competence audits for at least 15 stakeholders - | The entire local ecosystem has been mapped and is capable of implementing and monitoring climate neutral policies | Reduce CO2 emissions by 3,400 tons over 2021 | Improved effectiveness and efficiency of multi-level governance for climate neutrality Unlocked favourable systemic conditions for climate neutrality Capacitated local ecosystem Improved learning process and related outcomes Institutionalised systems for implementation and monitoring of climate neutral policies  |
-|  Social and | Democracy / | Consumer survey applied | Innovative |  | Evidence-based  |
+B-1.1: IMPACT PATHWAYS
+FIELDS OF ACTION | SYSTEMIC LEVERS | EARLY CHANGES (1-2 YEARS) | LATE OUTCOMES (3-4 YEARS) | DIRECT IMPACTS (EMISSION REDUCTIONS) | INDIRECT IMPACTS (CO-BENEFITS)
+commercial buildings, and the redevelopment of brownfields rather than green-field development | at least 3 major brownfield redevelopment projects undertaken in the city | working spaces
+Finance & Funding | Introduce incentives (e.g. lower taxes, easier permitting) for commercial buildings with improved energy performance and for brownfields redevelopment, and punitive measures for commercial buildings with poor energy performance and for green-field developments
+Organisational and Governance Innovation | Learning & Capabilities | The local ecosystem actors that can have a potential contribution to achieving climate neutrality mapped and audited in terms of relevant competencies. - knowledge and competence audits for at least 15 stakeholders - | The entire local ecosystem has been mapped and is capable of implementing and monitoring climate neutral policies | Reduce CO2 emissions by 3,400 tons over 2021 | Improved effectiveness and efficiency of multi-level governance for climate neutrality Unlocked favourable systemic conditions for climate neutrality Capacitated local ecosystem Improved learning process and related outcomes Institutionalised systems for implementation and monitoring of climate neutral policies
+Social and | Democracy / | Consumer survey applied | Innovative | Evidence-based
 Climate Neutrality Action Plan
 
 #
 
-|  B-1.1: IMPACT PATHWAYS  |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- |
-|  FIELDS OF ACTION | SYSTEMIC LEVERS | EARLY CHANGES (1-2 YEARS) | LATE OUTCOMES (3-4 YEARS) | DIRECT IMPACTS (EMISSION REDUCTIONS) | INDIRECT IMPACTS (CO-BENEFITS)  |
-|  Other Innovation | participation | among city residents to understand their perspectives and individual actions on climate neutrality
+B-1.1: IMPACT PATHWAYS
+FIELDS OF ACTION | SYSTEMIC LEVERS | EARLY CHANGES (1-2 YEARS) | LATE OUTCOMES (3-4 YEARS) DIRECT IMPACTS (EMISSION REDUCTIONS) INDIRECT IMPACTS (CO-BENEFITS)
+
+Other Innovation | participation | among city residents to understand their perspectives and individual actions on climate neutrality
 target of minimum 1,000 responses for the surveys and minimum 20 interviews with condominium administrators and local business owners - | solutions for climate neutrality co-created and co-implemented by the local community
 minimum 3 solutions co-developed- |  | substantiation of climate neutrality interventions
 Faster reduction of behavioral barriers that can hinder the climate neutrality journey  |
-|   |   |  Group for experimentation and simulation of local climate neutrality policies established within the local community
+Group for experimentation and simulation of local climate neutrality policies established within the local community
 1 experimentation and simulation group established - |   |   | Enhanced civic engagement and social innovation for climate neutrality
 Stronger local commitment and ownership of the the overall objectives at neighbourhood level
 Improved communication between stakeholders
 Strengthened community cohesion and collaboration  |
-|   |  Democracy / participation | NetZero Caravan organized in the local neighborhoods and suburbs | NetZero Caravan transformed into an environment that fosters debates and learning on topics |   | Enhanced contribution and adaptation of residents to climate neutrality  |
+Democracy / participation | NetZero Caravan organized in the local neighborhoods and suburbs | NetZero Caravan transformed into an environment that fosters debates and learning on topics | Enhanced contribution and adaptation of residents to climate neutrality
 Climate Neutrality Action Plan
 
 #
 
-|  B-1.1: IMPACT PATHWAYS  |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- |
-|  FIELDS OF ACTION | SYSTEMIC LEVERS | EARLY CHANGES (1-2 YEARS) | LATE OUTCOMES (3-4 YEARS) | DIRECT IMPACTS (EMISSION REDUCTIONS) | INDIRECT IMPACTS (CO-BENEFITS)  |
-|   |  | - 4 meetings in neighbourhoods + 4 meetings in suburbs - | of climate neutrality, for all ages |  | Collective mindset directed towards achieving climate neutralityIntegrated and coordinated efforts  |
-|   |  Governance & policy | Pilot set of comprehensive urban planning tools (1 urban regeneration masterplan, 1 zonal urban plan, 1 feasibility plan, 1 ToR model for nZEB building rehabilitation, 8 contests for international solutions for urban renewal interventions) for climate-neutral urban regeneration co-designed | Multi-apartment neighborhoods that have gone through extensive climate neutrality urban regeneration processes, based on the tools developed, together with new tools implemented (1 General Spatial Plan, 1 Zonal Urban Plan for climate-neutral districts) and incentives for their implementation | Reduce CO2 emissions by 63,000 tons over 2021 | Planning framework for accelerating the transition to climate neutralityReduced urban sprawlImproved quality of life and urban aestheticsReduced air pollution and congestionRehabilitated existing housing stockEnergy cost reduction for households  |
-|  Organisational and Governance Innovation | Governance & policy | Alternative governance models identified for condominiums in dense apartment-block neighborhoods | Proposal for update of local legislation on condominium management companies |  | Rehabilitation of existing stock is completed much faster  |
+B-1.1: IMPACT PATHWAYS
+FIELDS OF ACTION | SYSTEMIC LEVERS | EARLY CHANGES (1-2 YEARS) | LATE OUTCOMES (3-4 YEARS) | DIRECT IMPACTS (EMISSION REDUCTIONS) | INDIRECT IMPACTS (CO-BENEFITS)
+- 4 meetings in neighbourhoods + 4 meetings in suburbs - | of climate neutrality, for all ages | Collective mindset directed towards achieving climate neutralityIntegrated and coordinated efforts
+Governance & policy | Pilot set of comprehensive urban planning tools (1 urban regeneration masterplan, 1 zonal urban plan, 1 feasibility plan, 1 ToR model for nZEB building rehabilitation, 8 contests for international solutions for urban renewal interventions) for climate-neutral urban regeneration co-designed | Multi-apartment neighborhoods that have gone through extensive climate neutrality urban regeneration processes, based on the tools developed, together with new tools implemented (1 General Spatial Plan, 1 Zonal Urban Plan for climate-neutral districts) and incentives for their implementation | Reduce CO2 emissions by 63,000 tons over 2021 | Planning framework for accelerating the transition to climate neutralityReduced urban sprawlImproved quality of life and urban aestheticsReduced air pollution and congestionRehabilitated existing housing stockEnergy cost reduction for households
+Organisational and Governance Innovation | Governance & policy | Alternative governance models identified for condominiums in dense apartment-block neighborhoods | Proposal for update of local legislation on condominium management companies | Rehabilitation of existing stock is completed much faster
 Climate Neutrality Action Plan
 
 #
 
-|  B-1.1: IMPACT PATHWAYS  |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- |
-|  FIELDS OF ACTION | SYSTEMIC LEVERS | EARLY CHANGES (1-2 YEARS) | LATE OUTCOMES (3-4 YEARS) | DIRECT IMPACTS (EMISSION REDUCTIONS) | INDIRECT IMPACTS (CO-BENEFITS)  |
-|   |  | - 1 comprehensive model for alternative governance in condominiums - | developed |  | Cost of interventions is significantly reduced
+B-1.1: IMPACT PATHWAYS
+FIELDS OF ACTION | SYSTEMIC LEVERS | EARLY CHANGES (1-2 YEARS) | LATE OUTCOMES (3-4 YEARS) DIRECT IMPACTS (EMISSION REDUCTIONS) INDIRECT IMPACTS (CO-BENEFITS)
+- 1 comprehensive model for alternative governance in condominiums - | developed | Cost of interventions is significantly reduced
 Creative financing options are tapped
 Reduction of energy bills and CO2 emissions
 Condominiums earn a central role in implementing any climate-neutrality policies at neighborhood level  |
-|  Social and Other Innovation | Democracy / participation | Online and offline communication channels and tools dedicated to climate neutrality, set and implemented
+Social and Other Innovation | Democracy / participation | Online and offline communication channels and tools dedicated to climate neutrality, set and implemented
 informative materials disseminated monthly through the Coalition's members' online and offline communication channels - | Local and metropolitan community informed and educated about local aspects of climate neutrality, through informative materials, educational sources, awareness and promotion spots and activities | Reduce CO2 emissions by 13,600 tons over 2021 | Stronger local commitment
 Ownership of the the overall objectives
 Improved visibility
@@ -2288,16 +2246,15 @@ Climate Neutrality Action Plan
 
 #
 
-|  B-1.1: IMPACT PATHWAYS  |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- |
-|  FIELDS OF ACTION | SYSTEMIC LEVERS | EARLY CHANGES (1-2 YEARS) | LATE OUTCOMES (3-4 YEARS) | DIRECT IMPACTS (EMISSION REDUCTIONS) | INDIRECT IMPACTS (CO-BENEFITS)  |
-|   |  |  |  |  | know-how, experiences, lessons learned
+B-1.1: IMPACT PATHWAYS
+FIELDS OF ACTION | SYSTEMIC LEVERS | EARLY CHANGES (1-2 YEARS) | LATE OUTCOMES (3-4 YEARS) DIRECT IMPACTS (EMISSION REDUCTIONS) INDIRECT IMPACTS (CO-BENEFITS)
+know-how, experiences, lessons learned
 Stronger political, private and individual commitment  |
-|   |  Governance & policy | Digital twinning technical solution designed for climate neutrality
+Governance & policy | Digital twinning technical solution designed for climate neutrality
 Climate Neutrality Digital Twin Proof of Concept (TRL3) - | Digital twinning technical solution for climate neutrality TRL 7 (to reach TRL 9 by 2030) |   | Real time adjustments to the proposals made, based on changing circumstances
 Increased innovation and technological progress
 Innovative, data-based decision-making process  |
-|  Organisational and Governance Innovation | Democracy / participation | A new digital platform, in the form an interactive website is developed for communicating about the city's journey towards climate-neutrality | The website becomes the main communication platform for climate-neutrality matters and is managed by the local climate neutrality ecosystem |   | Behavioural change fostered through transparent and accessible communication
+Organisational and Governance Innovation | Democracy / participation | A new digital platform, in the form an interactive website is developed for communicating about the city's journey towards climate-neutrality | The website becomes the main communication platform for climate-neutrality matters and is managed by the local climate neutrality ecosystem | Behavioural change fostered through transparent and accessible communication
 Stronger local commitment and ownership of the climate neutrality objectives  |
 #
 
@@ -2410,17 +2367,16 @@ The Module B-3 table, Indicators for Monitoring, Evaluation and Learning, provid
 
 This plan's actions are derived from the inventory of projects associated with the 2022-2030 Integrated Urban Development Strategy of the Cluj Metropolitan Area (IUDS CMA). These actions comprise both concrete and soft interventions specific to this plan. Also, the C-3.1 section, Summary of interventions with cost implication from this document and the investment plan, provides budgetary details for implementing these actions, while a summary of project timelines is available below:
 
-|  ACTIONS TIMELINE  |   |   |
-| --- | --- | --- |
-|  FIELDS OF ACTION | LIST OF ACTIONS | TIMELINE  |
-|  Energy systems | Efficient district heating and cooling in Cluj-Napoca | 2023-2026  |
-|   |  Local (off-site) renewable energy generation and integrating RES into private and public buildings | 2023-2030  |
-|   |  Energy-efficient public lighting | 2023-2030  |
-|  Mobility & transport | Major green public transport infrastructure and reduction of congestion in the city | 2023-2026  |
-|   |  Promotion of large-scale use of Electric Vehicles | 2023-2030  |
-|   |  Extension of Walkable City Program | 2023-2026  |
-|   |  Extension of Cluj Bike Program | 2023-2030  |
-|  Waste & circular economy | Cluj Circular City | 2023-2030  |
+ACTIONS TIMELINE
+FIELDS OF ACTION | LIST OF ACTIONS | TIMELINE
+Energy systems | Efficient district heating and cooling in Cluj-Napoca | 2023-2026
+Local (off-site) renewable energy generation and integrating RES into private and public buildings | 2023-2030
+Energy-efficient public lighting | 2023-2030
+Mobility & transport | Major green public transport infrastructure and reduction of congestion in the city | 2023-2026
+Promotion of large-scale use of Electric Vehicles | 2023-2030
+Extension of Walkable City Program | 2023-2026
+Extension of Cluj Bike Program | 2023-2030
+Waste & circular economy | Cluj Circular City | 2023-2030
 Climate Neutrality Action Plan
 
 #
@@ -2432,24 +2388,20 @@ B-2.1: DESCRIPTION OF ACTION PORTFOLIOS - TEXTUAL OR VISUAL
 | FIELDS OF ACTION | PORTFOLIO DESCRIPTION |
 | --- | --- |
 | LIST OF ACTIONS | DESCRIPTIONS |
-| Energy systems | 1.1 Efficient district heating and cooling in Cluj-Napoca | Efficient district heating and cooling in Cluj-Napoca action refers to a cluster of actions, namely: improving the energy efficiency of existing plants by using the solar thermal system, air-to-water and water-to-water heat pumps, cogeneration engines and gas boilers natural, potentially combined with green hydrogen in the future, in about 19 power plants in the districts of Plopilor, Gheorgheni, Mănăștur, Zorilor, Grigorescu and in a central area. |
+| Energy systems | 1.1 Efficient district heating and cooling in Cluj-Napoca Efficient district heating and cooling in Cluj-Napoca action refers to a cluster of actions, namely: improving the energy efficiency of existing plants by using the solar thermal system, air-to-water and water-to-water heat pumps, cogeneration engines and gas boilers natural, potentially combined with green hydrogen in the future, in about 19 power plants in the districts of Plopilor, Gheorgheni, Mănăștur, Zorilor, Grigorescu and in a central area. |
 | 1.2 Local (off-site) renewable energy generation and integrating RES into private and public buildings | The action also refers to the rehabilitation of the transport and distribution networks of thermal energy in the city, as well as the establishment of 13 energy islands in the neighbourhoods of Gheorgheni, Mănăștur and Zorilor. |
 | 1.3 Energy-efficient public lighting | The transformation of 3 thermal points into thermal plants and the reconfiguration of an area plant in the Mărăști neighborhood and the implementation of a pilot project in Timișului-Blajul neighborhood with positive energy, will also contribute to the |
 |  | efficiency of commercial buildings and brownfields redevelopment |
 |  | 2.1 Energy-efficient energy-efficient energy production |
 |  | 2.2 Energy-efficient energy-efficient energy production |
-Climate Neutrality Action Plan
-
-#
-
-|  B-2.1: DESCRIPTION OF ACTION PORTFOLIOS - TEXTUAL OR VISUAL  |   |   |
+| B-2.1: DESCRIPTION OF ACTION PORTFOLIOS - TEXTUAL OR VISUAL |  |
 | --- | --- | --- |
-|  FIELDS OF ACTION | PORTFOLIO DESCRIPTION  |   |
-|   |  LIST OF ACTIONS | DESCRIPTIONS  |
-|   |  | efficiency of the heating and cooling system in Cluj-Napoca.
+| FIELDS OF ACTION | PORTFOLIO DESCRIPTION |
+|  | LIST OF ACTIONS DESCRIPTIONS |
+|  | efficiency of the heating and cooling system in Cluj-Napoca. |
 All public buildings, 2,000 blocks of flats and 5,000 individual homes will be fitted with RES generation installations (solar panels and/or heat pumps).
 Equipping approx. 80% of the public (street, parks, food markets and other public facilities) lighting network with LED lamps, remote management and dimming systems.  |
-|  Mobility & transport | 2.1 Major green public transport infrastructure and reduction of congestion in the city
+Mobility & transport | 2.1 Major green public transport infrastructure and reduction of congestion in the city
 Promotion of large-scale use of Electric Vehicles
 Extension of Walkable City Program
 Extension of Cluj Bike Program | Phase 1 of the Cluj Metro Network: new metro line with 9 stations and a capacity of 15,000-20,000 passengers/hour/one way, that connects the eastern and western parts of the city with the central area;
@@ -2463,25 +2415,24 @@ Climate Neutrality Action Plan
 
 #
 
-|  B-2.1: DESCRIPTION OF ACTION PORTFOLIOS - TEXTUAL OR VISUAL  |   |   |
+| B-2.1: DESCRIPTION OF ACTION PORTFOLIOS - TEXTUAL OR VISUAL |  |
 | --- | --- | --- |
-|  FIELDS OF ACTION | PORTFOLIO DESCRIPTION  |   |
-|   |  LIST OF ACTIONS | DESCRIPTIONS  |
-|   |  | stations.
+| FIELDS OF ACTION | PORTFOLIO DESCRIPTION |
+|  | LIST OF ACTIONS DESCRIPTIONS |
+|  | stations. |
 Extension of the network of private electric charging stations, by enforcing urban planning regulations: at least 300 new charging stations.
 Benefits for the residents purchasing electric vehicles (local taxes, subsidies (both national and local); parking discount and dedicated lots etc.) – at least 50,000 beneficiaries by 2030".
 Urban renewal of public spaces in both central area and neighborhoods to promote walking, cycling, sports, play, interactions between citizens, recreational and cultural activities – by transforming regular streets into residential low-speed ones: 14 lulie (Grigorescu Neighborhood – 35,000 sqm); Karl Liebknecht (Iris Neighborhood – 23,000 sqm); Nicolae Bălcescu (Central Area – 30,000 sqm); Expo Transilvania (Mărăști Neighborhood – 70,000 sqm); Piața Mărăști (Mărăști Neighborhood – 40,000 sqm); Mănăștur, Morilor Channel (Mărăști Neighborhood), Piața 1 Mai.
 The expansion of the Cluj bicycle program includes a series of actions, namely: the expansion of the municipal bicycle tracks by at least 50 km until 2030 and the updating of the existing tracks with a low level of service, then the expansion of the public bike sharing system (minimum 20 new stations), including the purchase of new regular and electric bicycles (minimum 1,000) as well as expanding bicycle parking spaces (safe and energy-independent storage containers), especially in dense residential areas (minimum 100 containers).  |
-|  Waste & circular economy | 3.1 Cluj Circular City | Cluj Circular City involves the construction of at least 270 digitized eco-islands for the selective collection of household waste and packaging, which can be monitored by the town hall remotely, the construction of at least 2 centers for the collection of bulky and hazardous waste, including packaging for construction, as well as The installation of at least 100 new solar-powered smart street waste bins.  |
+Waste & circular economy | 3.1 Cluj Circular City | Cluj Circular City involves the construction of at least 270 digitized eco-islands for the selective collection of household waste and packaging, which can be monitored by the town hall remotely, the construction of at least 2 centers for the collection of bulky and hazardous waste, including packaging for construction, as well as The installation of at least 100 new solar-powered smart street waste bins.
 Climate Neutrality Action Plan
 
 #
 
-|  B-2.1: DESCRIPTION OF ACTION PORTFOLIOS - TEXTUAL OR VISUAL  |   |   |
-| --- | --- | --- |
-|  FIELDS OF ACTION | PORTFOLIO DESCRIPTION  |   |
-|   |  LIST OF ACTIONS | DESCRIPTIONS  |
-|  Green infrastructure & nature based solutions | 4.1 Extension of "Green Cluj" Program
+B-2.1: DESCRIPTION OF ACTION PORTFOLIOS - TEXTUAL OR VISUAL
+FIELDS OF ACTION | PORTFOLIO DESCRIPTION
+LIST OF ACTIONS | DESCRIPTIONS
+Green infrastructure & nature based solutions | 4.1 Extension of "Green Cluj" Program
 Green-blue corridors
 Green roofs and facades for public and private buildings | "Rehabilitation and/or extension of existing parks: Feroviarilor (5.3 ha); Armătura (3.2. ha); Lunca Someșului Mic (14.7 ha); Cetățuia (14.1 ha); Primăverii (1.9 ha); Canalul Morii – Plopilor (3.6 ha); Caragiale (0.5 ha), 14 Iulie (0.5 ha); Colina (10 ha); Aurel Vlaicu (10 ha).
 Creation of new parks: Parcul Est (54 ha); Borhanci (54.1 ha); Zorilor (1.2 ha); Bună Ziua (10.7 ha).
@@ -2489,7 +2440,7 @@ Tree planting: 100,000 new trees in public areas (streets, squares, courtyards o
 The actions related to the Green-Blue corridors involve the development of 2 corridors, namely: the Someș Green-Blue Corridor involves 75 km of cycle paths along the Someș River Valley that connects Cluj-Napoca with three major suburbs (Gilău, Florești, Apahida) with over 80,000 inhabitants and the Canalul Morii Green-Blue Corridor.
 Green roofs and facades for public buildings: at least 20 by 2030.
 Support for green roofs and facades for private buildings: at least 50 by 2030.  |
-|  Built environment | 5.1 Integrated renovation of dense multi-apartment residential areas and their transition to climate neutral district
+Built environment | 5.1 Integrated renovation of dense multi-apartment residential areas and their transition to climate neutral district
 Energy Renovation of Public Buildings | The action involves the energy renovation of over 40,000 apartments in communal housing carried out with public and private funding, using a mix of coercive and supportive measures. It also involves integrated intervention for the public areas around the buildings with several renovated apartments: pilot masterplan for the Mănăștur District (80,000 inhabitants, 90% live in buildings with low energy efficiency built during the communist period) including interventions to reduce car consumption, promote walking and cycling, sports, separate collection and recycling of waste, increasing green spaces, interventions to reduce UHI, redevelopment of abandoned and underutilized public and private spaces, implementation of Smart City solutions, etc. – around the concept of City for Children.  |
 PRINÁRIA ȘI CONSILIUL LOCAL
 CILU-NAPOCA
@@ -2501,89 +2452,88 @@ C
 
 B-2.1: DESCRIPTION OF ACTION PORTFOLIOS - TEXTUAL OR VISUAL
 
-|  FIELDS OF ACTION | PORTFOLIO DESCRIPTION  |   |
+| FIELDS OF ACTION | PORTFOLIO DESCRIPTION |  |
 | --- | --- | --- |
-|   |  LIST OF ACTIONS | DESCRIPTIONS  |
-|   | 5.3 Energy Efficiency of Commercial Buildings and brownfields redevelopment | Energy renovation of 50 public buildings, especially nurseries, kindergartens, schools and high schools, but also administrative ones, especially by making use of the EU funding opportunities.
+|  | LIST OF ACTIONS | DESCRIPTIONS |
+|  | 5.3 Energy Efficiency of Commercial Buildings and brownfields redevelopment | Energy renovation of 50 public buildings, especially nurseries, kindergartens, schools and high schools, but also administrative ones, especially by making use of the EU funding opportunities. |
 Support for the redevelopment of at least 100 ha of brownfields that overlap UHIs into climate-friendly mixed-use areas, by using taxation and urban planning tools.
 Property tax reduction for at least 50 new commercial green buildings earning a green certification.  |
 
 B-2.2: INDIVIDUAL ACTION OUTLINES
 
-|  INTERVENTIONS  |   |   |
-| --- | --- | --- |
-|  Action outline | Action name | Efficient district heating and cooling in Cluj-Napoca  |
-|   |  Action type | Technical interventions  |
-|   |  Action description | Efficient district heating and cooling in Cluj-Napoca action refers to a cluster of actions, namely: improving the energy efficiency of existing plants by using the solar thermal system, air-to-water and water-to-water heat pumps, cogeneration engines and gas boilers natural, potentially combined with green hydrogen in the future, in about 19 power plants in the districts of Plopilor, Gheorgheni, Mănăștur, Zorilor, Grigorescu and in a central area.
+INTERVENTIONS
+Action outline | Action name | Efficient district heating and cooling in Cluj-Napoca
+Action type | Technical interventions
+Action description | Efficient district heating and cooling in Cluj-Napoca action refers to a cluster of actions, namely: improving the energy efficiency of existing plants by using the solar thermal system, air-to-water and water-to-water heat pumps, cogeneration engines and gas boilers natural, potentially combined with green hydrogen in the future, in about 19 power plants in the districts of Plopilor, Gheorgheni, Mănăștur, Zorilor, Grigorescu and in a central area.
 The action also refers to the rehabilitation of the transport and distribution networks of thermal energy in the city, as well as the establishment of 13 energy islands in the neighbourhoods of Gheorgheni, Mănăștur and Zorilor.
 The transformation of 3 thermal points into thermal plants and the reconfiguration of an area plant in the Mărăști neighborhood and the implementation of a pilot project in Timișului-  |
 
 2
 Climate Neutrality Action Plan
 
-|   |  | Blajul neighborhood with positive energy, will also contribute to the efficiency of the heating and cooling system in Cluj-Napoca.  |
+|  | Blajul neighborhood with positive energy, will also contribute to the efficiency of the heating and cooling system in Cluj-Napoca. |  |
 | --- | --- | --- |
-|  Reference to impact pathway | Field of action | Energy systems  |
-|   |  Systemic lever | Technology/Infrastructure  |
-|   |  Outcome (according to module B-1.1) | A District Heating System running primarily on green energy  |
-|  Implementation | Responsible bodies/person for implementation | Municipality, Public Heating Service Operator, Energy Manager  |
-|   |  Action scale & addressed entities | Districts (the ones supplied with public central heating)  |
-|   |  Involved stakeholders | Municipality Cluj Napoca, Cluj-Napoca's Public Heating Company, Associations of home owners: The Federation of Home Owners' Associations Cluj-Napoca, North-West Regional Development Agency, Romanian Green Building Council, Servelect  |
-|   |  Comments on implementation | N/A  |
-|  Impact & cost | Generated renewable energy (if applicable) | N/A  |
-|   |  Removed/substituted energy, volume or fuel type | Electrical energy: 316,701 MWh/year
-Natural gas: 67,193 MWh/year  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 45,243 tons CO2/year from Buildings  |
-|   |  Total costs and costs by CO2e unit | € 352,000,000.00- total cost
-€ 7,784/tone CO2  |
-|  Action outline | Action name | Local (off-site) renewable energy generation and integrating RES into private and public buildings  |
+| Reference to impact pathway | Field of action | Energy systems |
+|  | Systemic lever | Technology/Infrastructure |
+|  | Outcome (according to module B-1.1) | A District Heating System running primarily on green energy |
+| Implementation | Responsible bodies/person for implementation | Municipality, Public Heating Service Operator, Energy Manager |
+|  | Action scale & addressed entities | Districts (the ones supplied with public central heating) |
+|  | Involved stakeholders | Municipality Cluj Napoca, Cluj-Napoca's Public Heating Company, Associations of home owners: The Federation of Home Owners' Associations Cluj-Napoca, North-West Regional Development Agency, Romanian Green Building Council, Servelect |
+|  | Comments on implementation | N/A |
+| Impact & cost | Generated renewable energy (if applicable) | N/A |
+|  | Removed/substituted energy, volume or fuel type | Electrical energy: 316,701 MWh/year |
+| Natural gas: 67,193 MWh/year  |
+|  | GHG emissions reduction estimate (total) per emission source sector | 45,243 tons CO2/year from Buildings |
 | --- | --- | --- |
-|   |  Action type | Technical intervention  |
-|   |  Action description | All public buildings, 2,000 blocks of flats and 5,000 individual homes will be fitted with RES generation installations (solar panels and/or heat pumps)  |
-|  Reference to | Field of action | Energy systems  |
-|   |  Systemic lever | Technology/Infrastructure  |
+|  | Total costs and costs by CO2e unit | € 352,000,000.00- total cost |
+| € 7,784/tone CO2  |
+| Action outline | Action name | Local (off-site) renewable energy generation and integrating RES into private and public buildings |
+| --- | --- | --- |
+|  | Action type | Technical intervention |
+|  | Action description | All public buildings, 2,000 blocks of flats and 5,000 individual homes will be fitted with RES generation installations (solar panels and/or heat pumps) |
+| Reference to | Field of action | Energy systems |
+|  | Systemic lever | Technology/Infrastructure |
 
 3
 Climate Neutrality Action Plan
 
-|  impact pathway |  |   |
-| --- | --- | --- |
-|   |  Outcome (according to module B-1.1) | A higher share of heat, hot water, and cooling generated from green electricity.  |
-|  Implementation | Responsible bodies/person for implementation | Municipality, Public Entities headquartered in targeted public buildings, Associations of house owners and citizens in targeted private buildings, Energy Manager, TREC  |
-|   |  Action scale & addressed entities | Buildings (both public - used for providing public services and private - residential ones)  |
-|   |  Involved stakeholders | Cluj Napoca Municipality, Cluj-Napoca's Public Heating Company, Associations of home owners: The Federation of Home Owners' Associations Cluj-Napoca, North-West Regional Development Agency, Romanian Green Building Council, Transylvania Energy Cluster, Servelect  |
-|   |  Comments on implementation | N/A  |
-|  Impact & cost | Generated renewable energy (if applicable) | 477,087 MWh/year of green electrical energy  |
-|   |  Removed/substituted energy, volume or fuel type | Electrical energy: 259,000 MWh/year
+impact pathway
+Outcome (according to module B-1.1) | A higher share of heat, hot water, and cooling generated from green electricity.
+Implementation | Responsible bodies/person for implementation | Municipality, Public Entities headquartered in targeted public buildings, Associations of house owners and citizens in targeted private buildings, Energy Manager, TREC
+Action scale & addressed entities | Buildings (both public - used for providing public services and private - residential ones)
+Involved stakeholders | Cluj Napoca Municipality, Cluj-Napoca's Public Heating Company, Associations of home owners: The Federation of Home Owners' Associations Cluj-Napoca, North-West Regional Development Agency, Romanian Green Building Council, Transylvania Energy Cluster, Servelect
+Comments on implementation | N/A
+Impact & cost | Generated renewable energy (if applicable) | 477,087 MWh/year of green electrical energy
+Removed/substituted energy, volume or fuel type | Electrical energy: 259,000 MWh/year
 Natural gas: 54,950 MWh/year  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 37,000 tons CO2/year from Buildings  |
-|   |  Total costs and costs by CO2e unit | € 144,000,000.00- total cost
-€ 3,953/tone CO2  |
-|  Action outline | Action name | Energy-efficient public lighting  |
+|  | GHG emissions reduction estimate (total) per emission source sector | 37,000 tons CO2/year from Buildings |
 | --- | --- | --- |
-|   |  Action type | Technical intervention  |
-|   |  Action description | Equipping approx. 80% of the public (street, parks, food markets and other public facilities) lighting network with LED lamps, remote management and dimming systems.  |
-|  Reference to impact pathway | Field of action | Energy systems  |
-|   |  Systemic lever | Technology/Infrastructure  |
-|   |  Outcome (according to module B-1.1) | State of the art and energy efficient public lighting system  |
-|  Implementation | Responsible bodies/person | Municipality and Public Lighting Service  |
-Climate Neutrality Action Plan
-
-|   | for implementation | Operator  |
+|  | Total costs and costs by CO2e unit | € 144,000,000.00- total cost |
+| € 3,953/tone CO2  |
+| Action outline | Action name | Energy-efficient public lighting |
 | --- | --- | --- |
-|   |  Action scale & addressed entities | Buildings (both public - used for providing public services and private - residential ones)  |
-|   |  Involved stakeholders | Cluj Napoca Municipality, Cluj-Napoca's Public Lighting Service Company, North-West Regional Development Agency, Servelect  |
-|   |  Comments on implementation | N/A  |
-|  Impact & cost | Generated renewable energy (if applicable) | N/A  |
-|   |  Removed/substituted energy, volume or fuel type | Electrical energy: 30,000 MWh/year
-Natural gas: 4,455 MWh/year  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 3,000 tons CO2/year from Buildings  |
-|   |  Total costs and costs by CO2e unit | € 13,000,000.00 - total cost
-€ 4,366/tone CO2  |
-|  Action outline | Action name | Major green public transport infrastructure and reduction of congestion in the city  |
+|  | Action type | Technical intervention |
+|  | Action description | Equipping approx. 80% of the public (street, parks, food markets and other public facilities) lighting network with LED lamps, remote management and dimming systems. |
+| Reference to impact pathway | Field of action | Energy systems |
+|  | Systemic lever | Technology/Infrastructure |
+|  | Outcome (according to module B-1.1) | State of the art and energy efficient public lighting system |
+| Implementation | Responsible bodies/person | Municipality and Public Lighting Service |
+|  | for implementation | Operator |
 | --- | --- | --- |
-|   |  Action type | Technical intervention  |
-|   |  Action description | Phase 1 of the Cluj Metro Network: new metro line with 9 stations and a capacity of 15,000-20,000 passengers/hour/one way, that connects the eastern and western parts of the city with the central area;
+|  | Action scale & addressed entities | Buildings (both public - used for providing public services and private - residential ones) |
+|  | Involved stakeholders | Cluj Napoca Municipality, Cluj-Napoca's Public Lighting Service Company, North-West Regional Development Agency, Servelect |
+|  | Comments on implementation | N/A |
+| Impact & cost | Generated renewable energy (if applicable) | N/A |
+|  | Removed/substituted energy, volume or fuel type | Electrical energy: 30,000 MWh/year |
+| Natural gas: 4,455 MWh/year  |
+|  | GHG emissions reduction estimate (total) per emission source sector | 3,000 tons CO2/year from Buildings |
+| --- | --- | --- |
+|  | Total costs and costs by CO2e unit | € 13,000,000.00 - total cost |
+| € 4,366/tone CO2  |
+| Action outline | Action name | Major green public transport infrastructure and reduction of congestion in the city |
+| --- | --- | --- |
+|  | Action type | Technical intervention |
+|  | Action description | Phase 1 of the Cluj Metro Network: new metro line with 9 stations and a capacity of 15,000-20,000 passengers/hour/one way, that connects the eastern and western parts of the city with the central area; |
 
 Cluj Metropolitan Train: 43 km of metropolitan railway with 23 stations, both in Cluj-Napoca and in the 5 suburbs with almost 50,000 residents;
 
@@ -2596,49 +2546,48 @@ Smart public transport stations: the  |
 5
 Climate Neutrality Action Plan
 
-|   |  | modernization of almost 90 stations equipped with green roofs, easy access for low mobility passengers, e-ticketing, LCD displays etc.
+modernization of almost 90 stations equipped with green roofs, easy access for low mobility passengers, e-ticketing, LCD displays etc.
 Public transport dedicated lanes: at least 5 km of new dedicated lanes for buses and trolleybuses along congested streets.  |
-| --- | --- | --- |
-|  Reference to impact pathway | Field of action | Mobility & transport  |
-|   |  Systemic lever | Technology/Infrastructure  |
-|   |  Outcome (according to module B-1.1) | Most long commutes in the metropolitan area are done by green transport modes (metro, metropolitan train, electric buses, tramways, trolleybuses).  |
-|  Implementation | Responsible bodies/person for implementation | Municipality, Ministry of Transport, Public Transport Operator, Individual Citizens, Cluj County Council, National Railway Company  |
-|   |  Action scale & addressed entities | Metropolitan area  |
-|   |  Involved stakeholders | Cluj Napoca Municipality, Cluj County Council, Cluj Metropolitan IDA, Cluj-Napoca's Public Transport Company, Managing authority from Ministry of Transport, National Railway Company  |
-|   |  Comments on implementation | N/A  |
-|  Impact & cost | Generated renewable energy (if applicable) | N/A  |
-|   |  Removed/substituted energy, volume or fuel type | Electrical energy: 86,607 MWh/Year
+Reference to impact pathway | Field of action | Mobility & transport
+Systemic lever | Technology/Infrastructure
+Outcome (according to module B-1.1) | Most long commutes in the metropolitan area are done by green transport modes (metro, metropolitan train, electric buses, tramways, trolleybuses).
+Implementation | Responsible bodies/person for implementation | Municipality, Ministry of Transport, Public Transport Operator, Individual Citizens, Cluj County Council, National Railway Company
+Action scale & addressed entities | Metropolitan area
+Involved stakeholders | Cluj Napoca Municipality, Cluj County Council, Cluj Metropolitan IDA, Cluj-Napoca's Public Transport Company, Managing authority from Ministry of Transport, National Railway Company
+Comments on implementation | N/A
+Impact & cost | Generated renewable energy (if applicable) | N/A
+Removed/substituted energy, volume or fuel type | Electrical energy: 86,607 MWh/Year
 GPL: 1,041 MWh/Year
 Diesel: 30,590 MWh/Year
 Gasoline: 29,241 MWh/Year
 Bio-fuel: 6,726 MWh/Year  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 25,377 tons CO2/year from Transport  |
-|   |  Total costs and costs by CO2e unit | € 4,351,000,000.00- total cost
-€ 96,591/tone CO2  |
-|  Action outline | Action name | Promotion of large-scale use of Electric  |
+|  | GHG emissions reduction estimate (total) per emission source sector | 25,377 tons CO2/year from Transport |
 | --- | --- | --- |
-
-6
-Climate Neutrality Action Plan
-
-|   |  | Vehicles  |
+|  | Total costs and costs by CO2e unit | € 4,351,000,000.00- total cost |
+| € 96,591/tone CO2  |
+| Action outline | Action name | Promotion of large-scale use of Electric |
 | --- | --- | --- |
-|   |  Action type | Technical intervention  |
-|   |  Action description | Extend by at least 200 the network of public electric charging stations.
+|  | Vehicles |  |
+| --- | --- | --- |
+|  | Action type | Technical intervention |
+|  | Action description | Extend by at least 200 the network of public electric charging stations. |
 Extension of the network of private electric charging stations, by enforcing urban planning regulations: at least 300 new charging stations
 Benefits for the residents purchasing electric vehicles (local taxes, subsidies (both national and local); parking discount and dedicated lots etc.) – at least 50,000 beneficiaries by 2030  |
-|  Reference to impact pathway | Field of action | Mobility & transport  |
-|   |  Systemic lever | Technology/Infrastructure  |
-|   |  Outcome (according to module B-1.1) | Key public areas made more attractive for electric cars.
+| Reference to impact pathway | Field of action | Mobility & transport |
+| --- | --- | --- |
+|  | Systemic lever | Technology/Infrastructure |
+|  | Outcome (according to module B-1.1) | Key public areas made more attractive for electric cars. |
 Extension of network of electric charging stations in neighbourhoods
 ,000 new electric vehicles in local car fleet  |
-|  Implementation | Responsible bodies/person for implementation | Municipality  |
-|   |  Action scale & addressed entities | City wide streets and districts (both commercial and residential ones)  |
-|   |  Involved stakeholders | Cluj Napoca Municipality, Cluj Metropolitan IDA, Cluj-Napoca's Public Transport Company, Local innovation ecosystem & Private sector,
-Romanian New Materials Cluster, Local NGOs that are active in the field of citizens engagement (eg. Sustainable Cluj NGO)  |
-|   |  Comments on implementation | N/A  |
-|  Impact & cost | Generated renewable energy (if applicable) | N/A  |
-|   |  Removed/substituted energy, volume or fuel type | Electrical energy: 53,347 MWh/year
+| Implementation | Responsible bodies/person for implementation | Municipality |
+| --- | --- | --- |
+|  | Action scale & addressed entities | City wide streets and districts (both commercial and residential ones) |
+|  | Involved stakeholders | Cluj Napoca Municipality, Cluj Metropolitan IDA, Cluj-Napoca's Public Transport Company, Local innovation ecosystem & Private sector, |
+| Romanian New Materials Cluster, Local NGOs that are active in the field of citizens engagement (eg. Sustainable Cluj NGO)  |
+|  | Comments on implementation | N/A |
+| --- | --- | --- |
+| Impact & cost | Generated renewable energy (if applicable) | N/A |
+|  | Removed/substituted energy, volume or fuel type | Electrical energy: 53,347 MWh/year |
 GPL: 7,269 MWh/year
 Diesel: 25,843 MWh/year
 Gasoline: 25,301 MWh/year  |
@@ -2649,106 +2598,105 @@ Climate Neutrality Action Plan
 |  | Bio-fuel: 1,500 MWh/year |
 | --- | --- |
 | GHG emissions reduction estimate (total) per emission source sector | 15,000 tons CO2/year from Transport |
-| Total costs and costs by CO2e unit | € 324,000,000.00- total cost
-€ 270/tone CO2 |
-|  Action outline | Action name | Extension of Walkable City Program  |
+| Total costs and costs by CO2e unit | € 324,000,000.00- total cost |
+| € 270/tone CO2 |
+| Action outline | Action name | Extension of Walkable City Program |
 | --- | --- | --- |
-|   |  Action type | Physical / spatial intervention  |
-|   |  Action description | Urban renewal of public spaces in both central area and neighborhoods to promote walking, cycling, sports, play, interactions between citizens, recreational and cultural activities – by transforming regular streets into residential low-speed ones: 14 lulie (Grigorescu Neighborhood – 35,000 sqm); Karl Liebknecht (Iris Neighborhood - 23,000 sqm); Nicolae Bălcescu (Central Area – 30,000 sqm); Expo Transilvania (Mărăști Neighborhood – 70,000 sqm); Piața Mărăști (Mărăști Neighborhood - 40,000 sqm); Mănăștur, Morilor Channel (Mărăști Neighborhood), Piața 1 Mai  |
-|  Reference to impact pathway | Field of action | Mobility & transport  |
-|   |  Systemic lever | Technology/Infrastructure  |
-|   |  Outcome (according to module B-1.1) | Most short commutes in the city are done by foot, bike or other green micro-mobility options.  |
-|  Implementation | Responsible bodies/person for implementation | Municipality, Local NGOs that are active in the field of citizens engagement, active citizenship, community initiatives  |
-|   |  Action scale & addressed entities | Streets in both central area and city neighborhoods (especially Grigorescu, Iris, Mărăști and Mănăștur neighborhoods)  |
-|   |  Involved stakeholders | Cluj Napoca Municipality, Cluj-Napoca's Public Transport Company, Local innovation ecosystem & Private sector,
-TUCN, BBU, Local NGOs that are active in the field of citizens engagement  |
-|   |  Comments on implementation | N/A  |
-Climate Neutrality Action Plan
-
-|  Impact & cost | Generated renewable energy (if applicable) | N/A  |
+|  | Action type | Physical / spatial intervention |
+|  | Action description | Urban renewal of public spaces in both central area and neighborhoods to promote walking, cycling, sports, play, interactions between citizens, recreational and cultural activities – by transforming regular streets into residential low-speed ones: 14 lulie (Grigorescu Neighborhood – 35,000 sqm); Karl Liebknecht (Iris Neighborhood - 23,000 sqm); Nicolae Bălcescu (Central Area – 30,000 sqm); Expo Transilvania (Mărăști Neighborhood – 70,000 sqm); Piața Mărăști (Mărăști Neighborhood - 40,000 sqm); Mănăștur, Morilor Channel (Mărăști Neighborhood), Piața 1 Mai |
+| Reference to impact pathway | Field of action | Mobility & transport |
+|  | Systemic lever | Technology/Infrastructure |
+|  | Outcome (according to module B-1.1) | Most short commutes in the city are done by foot, bike or other green micro-mobility options. |
+| Implementation | Responsible bodies/person for implementation | Municipality, Local NGOs that are active in the field of citizens engagement, active citizenship, community initiatives |
+|  | Action scale & addressed entities | Streets in both central area and city neighborhoods (especially Grigorescu, Iris, Mărăști and Mănăștur neighborhoods) |
+|  | Involved stakeholders | Cluj Napoca Municipality, Cluj-Napoca's Public Transport Company, Local innovation ecosystem & Private sector, |
+| TUCN, BBU, Local NGOs that are active in the field of citizens engagement  |
+| Comments on implementation | N/A |
+| Impact & cost | Generated renewable energy (if applicable) | N/A |
 | --- | --- | --- |
-|   |  Removed/substituted energy, volume or fuel type | Electrical energy: 7,113 MWh/year
+|  | Removed/substituted energy, volume or fuel type | Electrical energy: 7,113 MWh/year |
 GPL: 85 MWh/year
 Diesel: 2,512 MWh/year
 Gasoline: 2,402 MWh/year
 Bio-fuel: 552 MWh/year  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 2,000 tons CO2/year from Transport  |
-|   |  Total costs and costs by CO2e unit | € 219,000,000.00 - total cost
-€ 22,500/tone CO2  |
-|  Action outline | Action name | Extension of Cluj Bike Program  |
+|  | GHG emissions reduction estimate (total) per emission source sector | 2,000 tons CO2/year from Transport |
 | --- | --- | --- |
-|   |  Action type | Physical / spatial intervention  |
-|   |  Action description | The expansion of the Cluj bicycle program includes a series of actions, namely: the expansion of the municipal bicycle tracks by at least 50 km until 2030 and the updating of the existing tracks with a low level of service, then the expansion of the public bike sharing system (minimum 20 new stations ), including the purchase of new regular and electric bicycles (minimum 1,000) as well as expanding bicycle parking spaces (safe and energy-independent storage containers), especially in dense residential areas (minimum 100 containers).  |
-|  Reference to impact pathway | Field of action | Mobility & transport  |
-|   |  Systemic lever | Technology/Infrastructure  |
-|   |  Outcome (according to module B-1.1) | Increase share of people that use bikes for short and medium-length commutes, and for recreational use  |
-|  Implementation | Responsible bodies/person for implementation | Municipality  |
-|   |  Action scale & addressed entities | City wide streets, especially in dense residential areas  |
-|   |  Involved stakeholders | Cluj Napoca Municipality, Cluj-Napoca's Public Transport Company, Local innovation  |
+|  | Total costs and costs by CO2e unit | € 219,000,000.00 - total cost |
+| € 22,500/tone CO2  |
+| Action outline | Action name | Extension of Cluj Bike Program |
+| --- | --- | --- |
+|  | Action type | Physical / spatial intervention |
+|  | Action description | The expansion of the Cluj bicycle program includes a series of actions, namely: the expansion of the municipal bicycle tracks by at least 50 km until 2030 and the updating of the existing tracks with a low level of service, then the expansion of the public bike sharing system (minimum 20 new stations ), including the purchase of new regular and electric bicycles (minimum 1,000) as well as expanding bicycle parking spaces (safe and energy-independent storage containers), especially in dense residential areas (minimum 100 containers). |
+| Reference to impact pathway | Field of action | Mobility & transport |
+|  | Systemic lever | Technology/Infrastructure |
+|  | Outcome (according to module B-1.1) | Increase share of people that use bikes for short and medium-length commutes, and for recreational use |
+| Implementation | Responsible bodies/person for implementation | Municipality |
+|  | Action scale & addressed entities | City wide streets, especially in dense residential areas |
+|  | Involved stakeholders | Cluj Napoca Municipality, Cluj-Napoca's Public Transport Company, Local innovation |
 
 9
 Climate Neutrality Action Plan
 
-|   |  | ecosystem & Private sector,
+ecosystem & Private sector,
 Local NGOs that are active in the field of citizens engagement  |
-| --- | --- | --- |
-|   |  Comments on implementation | N/A  |
-|  Impact & cost | Generated renewable energy (if applicable) | N/A  |
-|   |  Removed/substituted energy, volume or fuel type | Electrical energy: 25,251 MWh/year
+Comments on implementation | N/A
+Impact & cost | Generated renewable energy (if applicable) | N/A
+Removed/substituted energy, volume or fuel type | Electrical energy: 25,251 MWh/year
 GPL: 303 MWh/year
 Diesel: 8,919 MWh/year
 Gasoline: 8,525 MWh/year
 Bio-fuel: 1,961 MWh/year  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 7,100 tons CO2/year from Transport  |
-|   |  Total costs and costs by CO2e unit | € 15,000,000.00
-€ 2,112/tone CO2  |
-|  Action outline | Action name | Cluj Circular City  |
+|  | GHG emissions reduction estimate (total) per emission source sector | 7,100 tons CO2/year from Transport |
 | --- | --- | --- |
-|   |  Action type | Technical intervention  |
-|   |  Action description | Cluj Circular City involves the construction of at least 270 digitized eco-islands for the selective collection of household waste and packaging, which can be monitored by the town hall remotely, the construction of at least 2 centers for the collection of bulky and hazardous waste, including packaging for construction, as well as the installation of at least 100 new solar-powered smart street waste bins.  |
-|  Reference to impact pathway | Field of action | Waste & circular economy  |
-|   |  Systemic lever | Technology/Infrastructure  |
-|   |  Outcome (according to module B-1.1) | Over 60% of municipal waste will be reused or recycled  |
-|  Implementation | Responsible bodies/person for implementation | Municipality  |
-|   |  Action scale & addressed entities | Residential districts and areas  |
-Climate Neutrality Action Plan
-
-|   | Involved stakeholders | Cluj Napoca Municipality, Cluj-Napoca's Waste Operator, Local NGOs that are active in the field of environmental protection and the urban sector, Local NGOs that are active in the field of citizens engagement, active citizenship, community initiatives, Local innovation ecosystem & Private sector, Transylvania IT Cluster  |
+|  | Total costs and costs by CO2e unit | € 15,000,000.00 |
+| € 2,112/tone CO2  |
+| Action outline | Action name | Cluj Circular City |
 | --- | --- | --- |
-|   |  Comments on implementation | N/A  |
-|  Impact & cost | Generated renewable energy (if applicable) | N/A  |
-|   |  Removed/substituted energy, volume or fuel type | Electrical energy: 151,414 MWh/year
-Diesel 3,216  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 16,000 tons CO2/year from Waste  |
-|   |  Total costs and costs by CO2e unit | € 16,000,000.00
-€ 412/tone CO2  |
-|  Action outline | Action name | Extension of "Green Cluj" Program  |
+|  | Action type | Technical intervention |
+|  | Action description | Cluj Circular City involves the construction of at least 270 digitized eco-islands for the selective collection of household waste and packaging, which can be monitored by the town hall remotely, the construction of at least 2 centers for the collection of bulky and hazardous waste, including packaging for construction, as well as the installation of at least 100 new solar-powered smart street waste bins. |
+| Reference to impact pathway | Field of action | Waste & circular economy |
+|  | Systemic lever | Technology/Infrastructure |
+|  | Outcome (according to module B-1.1) | Over 60% of municipal waste will be reused or recycled |
+| Implementation | Responsible bodies/person for implementation | Municipality |
+|  | Action scale & addressed entities | Residential districts and areas |
+|  | Involved stakeholders | Cluj Napoca Municipality, Cluj-Napoca's Waste Operator, Local NGOs that are active in the field of environmental protection and the urban sector, Local NGOs that are active in the field of citizens engagement, active citizenship, community initiatives, Local innovation ecosystem & Private sector, Transylvania IT Cluster |
 | --- | --- | --- |
-|   |  Action type | Nature-based solution  |
-|   |  Action description | "Green Cluj" Program involves the rehabilitation and/or expansion of the existing parks: Feroviarilor (5.3 ha); Armătura (3.2. ha); Lunca Someșului Mic (14.7 ha); Cetățuia (14.1 ha); Primăverii (1.9 ha); Canalul Morii – Plopilor (3.6 ha); Caragiale (0.5 ha), 14 Iulie (0.5 ha); Colina (10 ha); Aurel Vlaicu (10 ha).
+|  | Comments on implementation | N/A |
+| Impact & cost | Generated renewable energy (if applicable) | N/A |
+|  | Removed/substituted energy, volume or fuel type | Electrical energy: 151,414 MWh/year |
+| Diesel 3,216  |
+|  | GHG emissions reduction estimate (total) per emission source sector | 16,000 tons CO2/year from Waste |
+| --- | --- | --- |
+|  | Total costs and costs by CO2e unit | € 16,000,000.00 |
+| € 412/tone CO2  |
+| Action outline | Action name | Extension of "Green Cluj" Program |
+| --- | --- | --- |
+|  | Action type | Nature-based solution |
+|  | Action description | "Green Cluj" Program involves the rehabilitation and/or expansion of the existing parks: Feroviarilor (5.3 ha); Armătura (3.2. ha); Lunca Someșului Mic (14.7 ha); Cetățuia (14.1 ha); Primăverii (1.9 ha); Canalul Morii – Plopilor (3.6 ha); Caragiale (0.5 ha), 14 Iulie (0.5 ha); Colina (10 ha); Aurel Vlaicu (10 ha). |
 Creation of new parks: Parcul Est (54 ha); Borhanci (54.1 ha); Zorilor (1.2 ha); Bună Ziua (10.7 ha), tree planting: 100,000 new trees in public areas (streets, squares, courtyards of public institutions, parks, etc.)
 Metropolitan Green Belt new metropolitan forest in the Cluj-Napoca Metropolitan Area is part of the "Green Cluj" Program  |
-|  Reference to impact pathway | Field of action | Green infrastructure & nature based solutions  |
-|   |  Systemic lever | Technology/Infrastructure  |
-|   |  Outcome (according to module B-1.1) | 98% of the city population within a 10 minute  |
+| Reference to impact pathway | Field of action | Green infrastructure & nature based solutions |
+| --- | --- | --- |
+|  | Systemic lever | Technology/Infrastructure |
+|  | Outcome (according to module B-1.1) | 98% of the city population within a 10 minute |
 Climate Neutrality Action Plan
 
-|   |  | walk to a green or blue-green area;
+walk to a green or blue-green area;
 At least 12,500 hectares of new green areas in the wider metropolitan zone  |
-| --- | --- | --- |
-|  Implementation | Responsible bodies/person for implementation | Municipality, The Order of Romanian Architects (especially Transilvania branch) and their (inter)national partners, National Environmental Agency, UASVM, Association for Intercommunity Development CMA, Cluj County Council  |
-|   |  Action scale & addressed entities | All citizens within the metropolitan area  |
-|   |  Involved stakeholders | Cluj Napoca Municipality, Cluj County Council, Technical University of Cluj-Napoca (Faculties of Architecture, Transport, Energy), The Order of Romanian Architects (especially Transilvania branch) and their (inter)national partners, National Environmental Agency, University of Agronomic Sciences and Veterinary Medicine, Association for Intercommunity Development CMA, Local NGOs that are active in the field of environmental protection and the urban sector, Local NGOs that are active in the field of citizens engagement, active citizenship, Local innovation ecosystem & Private sector, Transylvania Energy Cluster, North-West Regional Development Agency.  |
-|   |  Comments on implementation | N/A  |
-|  Impact & cost | Generated renewable energy (if applicable) | N/A  |
-|   |  Removed/substituted energy, volume or fuel type | Electrical energy: 1,140 MWh/year
+Implementation | Responsible bodies/person for implementation | Municipality, The Order of Romanian Architects (especially Transilvania branch) and their (inter)national partners, National Environmental Agency, UASVM, Association for Intercommunity Development CMA, Cluj County Council
+Action scale & addressed entities | All citizens within the metropolitan area
+Involved stakeholders | Cluj Napoca Municipality, Cluj County Council, Technical University of Cluj-Napoca (Faculties of Architecture, Transport, Energy), The Order of Romanian Architects (especially Transilvania branch) and their (inter)national partners, National Environmental Agency, University of Agronomic Sciences and Veterinary Medicine, Association for Intercommunity Development CMA, Local NGOs that are active in the field of environmental protection and the urban sector, Local NGOs that are active in the field of citizens engagement, active citizenship, Local innovation ecosystem & Private sector, Transylvania Energy Cluster, North-West Regional Development Agency.
+Comments on implementation | N/A
+Impact & cost | Generated renewable energy (if applicable) | N/A
+Removed/substituted energy, volume or fuel type | Electrical energy: 1,140 MWh/year
 Diesel: 996 MWh/year  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 380 tons CO2/year from Agricultural, Forestry and Land Use  |
-|   |  Total costs and costs by CO2e unit | € 195,000,000.00
-€ 511,843/tone CO2  |
-|  Action outline | Action name | Green-blue corridors  |
+|  | GHG emissions reduction estimate (total) per emission source sector | 380 tons CO2/year from Agricultural, Forestry and Land Use |
 | --- | --- | --- |
-|   |  Action type | Nature-based solution  |
+|  | Total costs and costs by CO2e unit | € 195,000,000.00 |
+| € 511,843/tone CO2  |
+| Action outline | Action name | Green-blue corridors |
+| --- | --- | --- |
+|  | Action type | Nature-based solution |
 
 2
 #
@@ -2757,120 +2705,110 @@ CILU CULU
 CILC CENTRU MANAGEMENT
 Climate Neutrality Action Plan
 C
-|   | Action description | The actions related to the Green-Blue corridors involve the development of 2 corridors, namely: the Someș Green-Blue Corridor involves 75 km of cycle paths along the Someș River Valley that connects Cluj-Napoca with three major suburbs (Gilău, Florești, Apahida) with over 80,000 inhabitants and the Canalul Morii Green-Blue Corrido.  |
+|  | Action description | The actions related to the Green-Blue corridors involve the development of 2 corridors, namely: the Someș Green-Blue Corridor involves 75 km of cycle paths along the Someș River Valley that connects Cluj-Napoca with three major suburbs (Gilău, Florești, Apahida) with over 80,000 inhabitants and the Canalul Morii Green-Blue Corrido. |
 | --- | --- | --- |
-|  Reference to impact pathway | Field of action | Green infrastructure & nature based solutions  |
-|   |  Systemic lever | Technology/Infrastructure  |
-|   |  Outcome (according to module B-1.1) | The Someș River Blue-Green Corridor (with at least 75 km of bike and pedestrian paths) and other blue-green corridors developed  |
-|  Implementation | Responsible bodies/person for implementation | Municipality, Association for Intercommunity Development CMA, Cluj County Council, suburbs' Public Administrations  |
-|   |  Action scale & addressed entities | Metropolitan area  |
-|   |  Involved stakeholders | Cluj Napoca Municipality, Cluj County Council, Technical University of Cluj-Napoca (Faculties of Architecture, Transport, Energy), The Order of Romanian Architects (especially Transilvania branch) and their (inter)national partners, National Environmental Agency, University of Agronomic Sciences and Veterinary Medicine, Association for Intercommunity Development CMA, Local NGOs that are active in the field of environmental protection and the urban sector, Local NGOs that are active in the field of citizens engagement, active citizenship, Local innovation ecosystem & Private sector, North-West Regional Development Agency  |
-|   |  Comments on implementation | N/A  |
-|  Impact & cost | Generated renewable energy (if applicable) | N/A  |
-|   |  Removed/substituted energy, volume or fuel type | Electrical energy: 7,950 MWh/year
-Diesel: 6,948 MWh/year  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 2,650 tons CO2/year from Agricultural, Forestry and Land Use  |
-|   |  Total costs and costs by | € 87,000,000.00 - total cost  |
-3
-Climate Neutrality Action Plan
-
-|   | CO2e unit | € 32,641/tone CO2  |
+| Reference to impact pathway | Field of action | Green infrastructure & nature based solutions |
+|  | Systemic lever | Technology/Infrastructure |
+|  | Outcome (according to module B-1.1) | The Someș River Blue-Green Corridor (with at least 75 km of bike and pedestrian paths) and other blue-green corridors developed |
+| Implementation | Responsible bodies/person for implementation | Municipality, Association for Intercommunity Development CMA, Cluj County Council, suburbs' Public Administrations |
+|  | Action scale & addressed entities | Metropolitan area |
+|  | Involved stakeholders | Cluj Napoca Municipality, Cluj County Council, Technical University of Cluj-Napoca (Faculties of Architecture, Transport, Energy), The Order of Romanian Architects (especially Transilvania branch) and their (inter)national partners, National Environmental Agency, University of Agronomic Sciences and Veterinary Medicine, Association for Intercommunity Development CMA, Local NGOs that are active in the field of environmental protection and the urban sector, Local NGOs that are active in the field of citizens engagement, active citizenship, Local innovation ecosystem & Private sector, North-West Regional Development Agency |
+|  | Comments on implementation | N/A |
+| Impact & cost | Generated renewable energy (if applicable) | N/A |
+|  | Removed/substituted energy, volume or fuel type | Electrical energy: 7,950 MWh/year |
+| Diesel: 6,948 MWh/year  |
+|  | GHG emissions reduction estimate (total) per emission source sector | 2,650 tons CO2/year from Agricultural, Forestry and Land Use |
 | --- | --- | --- |
-|  Action outline | Action name | Green roofs and facades for public and private buildings  |
+|  | Total costs and costs by | € 87,000,000.00 - total cost |
+|  | CO2e unit | € 32,641/tone CO2 |
 | --- | --- | --- |
-|   |  Action type | Nature-based solution  |
-|   |  Action description | Green roofs and facades for public buildings: at least 20 by 2030
-Support for green roofs and facades for private buildings: at least 50 by 2030  |
-|  Reference to impact pathway | Field of action | Green infrastructure & nature based solutions  |
-|   |  Systemic lever | Technology/Infrastructure  |
-|   |  Outcome (according to module B-1.1) | At least 50 buildings with green roofs and facades  |
-|  Implementation | Responsible bodies/person for implementation | Municipality, Public Entities headquartered in targeted public buildings, Associations of house owners and citizens in targeted private buildings  |
-|   |  Action scale & addressed entities | Buildings (both public - used for providing public services and private - residential ones)  |
-|   |  Involved stakeholders | Cluj Napoca Municipality, Cluj County Council, Associations of home owners: The Federation of Home Owners' Associations Cluj-Napoca, Technical University of Cluj-Napoca (Faculties of Architecture, Transport, Energy), The Order of Romanian Architects (especially Transilvania branch) and their (inter)national partners, National Environmental Agency, University of Agronomic Sciences and Veterinary Medicine, Association for Intercommunity Development CMA, Local NGOs that are active in the field of environmental protection and the urban sector, Local NGOs that are active in the field of citizens engagement, active citizenship, Local innovation ecosystem & Private sector,
-Transylvania Energy Cluster, North-West Regional Development Agency  |
-|   |  Comments on implementation | N/A  |
-|  Impact & cost | Generated renewable energy | N/A  |
-
-4
-Climate Neutrality Action Plan
-
-|   | (if applicable) |   |
+| Action outline | Action name | Green roofs and facades for public and private buildings |
+|  | Action type | Nature-based solution |
+|  | Action description | Green roofs and facades for public buildings: at least 20 by 2030 |
+| Support for green roofs and facades for private buildings: at least 50 by 2030  |
+| Reference to impact pathway | Field of action | Green infrastructure & nature based solutions |
 | --- | --- | --- |
-|   |  Removed/substituted energy, volume or fuel type | Electrical energy: 525 MWh/year
-Diesel: 459 MWh/year  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 175 tons CO2/year from Agricultural, Forestry and Land Use  |
-|   |  Total costs and costs by CO2e unit | € 10,000,000.00 - total cost
-€ 6,912,285/tone CO2  |
-|  Action outline | Action name | Integrated renovation of dense multi-apartment residential areas and their transition to climate-neutral district  |
+|  | Systemic lever | Technology/Infrastructure |
+|  | Outcome (according to module B-1.1) | At least 50 buildings with green roofs and facades |
+| Implementation | Responsible bodies/person for implementation | Municipality, Public Entities headquartered in targeted public buildings, Associations of house owners and citizens in targeted private buildings |
+|  | Action scale & addressed entities | Buildings (both public - used for providing public services and private - residential ones) |
+|  | Involved stakeholders | Cluj Napoca Municipality, Cluj County Council, Associations of home owners: The Federation of Home Owners' Associations Cluj-Napoca, Technical University of Cluj-Napoca (Faculties of Architecture, Transport, Energy), The Order of Romanian Architects (especially Transilvania branch) and their (inter)national partners, National Environmental Agency, University of Agronomic Sciences and Veterinary Medicine, Association for Intercommunity Development CMA, Local NGOs that are active in the field of environmental protection and the urban sector, Local NGOs that are active in the field of citizens engagement, active citizenship, Local innovation ecosystem & Private sector, |
+| Transylvania Energy Cluster, North-West Regional Development Agency  |
+|  | Comments on implementation | N/A |
 | --- | --- | --- |
-|   |  Action type | Technical intervention  |
-|   |  Action description | The action involves the energy renovation of over 40,000 apartments in communal housing carried out with public and private funding, using a mix of coercive and supportive measures. It also involves integrated intervention for the public areas around the buildings with several renovated apartments: pilot masterplan for the Mănăștur District (80,000 inhabitants, 90% live in buildings with low energy efficiency built during the communist period) including interventions to reduce car consumption, promote walking and cycling, sports, separate collection and recycling of waste, increasing green spaces, interventions to reduce UHI, redevelopment of abandoned and underutilized public and private spaces, implementation of Smart City solutions, etc. – around the concept of City for Children.  |
-|  Reference to impact pathway | Field of action | Built environment  |
-|   |  Systemic lever | Technology/Infrastructure  |
-|   |  Outcome (according to module B-1.1) | Improved energy efficiency for at least 40,000 apartments, and public areas around apartment blocks rehabilitated to reduce car usage and make transport by foot, bike and public transport more attractive.  |
-|  Implementation | Responsible bodies/person for implementation | Municipality, The Order of Romanian Architects (especially Transilvania branch) and their (inter)national partners, Associations of house owners and citizens in targeted private  |
-
-5
-Climate Neutrality Action Plan
-
-|   |  | buildings, TUCN, BBU, TREC, TITC  |
+| Impact & cost | Generated renewable energy | N/A |
+|  | (if applicable) |  |
 | --- | --- | --- |
-|   |  Action scale & addressed entities | Housing, blocks, public area in the Mănăștur Quarter  |
-|   |  Involved stakeholders | Cluj Napoca Municipality , Cluj-Napoca's Public Heating Company, Associations of home owners: The Federation of Home Owners' Associations Cluj-Napoca, North-West Regional Development Agency, Romanian Green Building Council, Servelect, Transylvania Energy Cluster, North-West Regional Development Agency  |
-|   |  Comments on implementation | N/A  |
-|  Impact & cost | Generated renewable energy (if applicable) | N/A  |
-|   |  Removed/substituted energy, volume or fuel type | Electrical energy: 228,054 MWh/year
-Natural gas: 233,636 MWh/year  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 70,000 tons CO2/year from Buildings  |
-|   |  Total costs and costs by CO2e unit | € 180,000,000.00 - total cost
-€ 428/tone CO2  |
-|  Action outline | Action name | Energy Renovation of Public Buildings  |
+|  | Removed/substituted energy, volume or fuel type | Electrical energy: 525 MWh/year |
+| Diesel: 459 MWh/year  |
+|  | GHG emissions reduction estimate (total) per emission source sector | 175 tons CO2/year from Agricultural, Forestry and Land Use |
 | --- | --- | --- |
-|   |  Action type | Technical intervention  |
-|   |  Action description | Energy renovation of 50 public buildings, especially nurseries, kindergartens, schools and high schools, but also administrative ones, especially by making use of the EU funding opportunities.  |
-|  Reference to impact pathway | Field of action | Built environment  |
-|   |  Systemic lever | Technology/Infrastructure  |
-|   |  Outcome (according to module B-1.1) | At least 50 public buildings (e.g. nurseries, kindergartens, schools, administrative buildings) rehabilitated  |
-|  Implementation | Responsible bodies/person for implementation | Municipality, Public Entities headquartered in targeted public buildings, Energy Manager  |
-|   |  Action scale & addressed entities | Public buildings  |
-Climate Neutrality Action Plan
-
-|   | Involved stakeholders | Cluj Napoca Municipality, Cluj-Napoca's Public Heating Company, Public Entities headquartered in targeted public buildings, North-West Regional Development Agency, Romanian Green Building Council, Transylvania Energy Cluster, North-West Regional Development Agency, Technical University of Cluj-Napoca (Faculties of Architecture, Transport, Energy), The Order of Romanian Architects (especially Transilvania branch) and their (inter)national partners, National Environmental Agency, Association for Intercommunity Development CMA  |
+|  | Total costs and costs by CO2e unit | € 10,000,000.00 - total cost |
+| € 6,912,285/tone CO2  |
+| Action outline | Action name | Integrated renovation of dense multi-apartment residential areas and their transition to climate-neutral district |
 | --- | --- | --- |
-|   |  Comments on implementation | N/A  |
-|  Impact & cost | Generated renewable energy (if applicable) | N/A  |
-|   |  Removed/substituted energy, volume or fuel type | Electrical energy: 16,290 MWh/year
-Natural gas: 16,688 MWh/year  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 5,000 tons CO2/year from Buildings  |
-|   |  Total costs and costs by CO2e unit | € 90,00,000.00 - total cost
-€ 52,260/tone CO2  |
-|  Action outline | Action name | Energy Efficiency of Commercial Buildings and brownfields redevelopment  |
+|  | Action type | Technical intervention |
+|  | Action description | The action involves the energy renovation of over 40,000 apartments in communal housing carried out with public and private funding, using a mix of coercive and supportive measures. It also involves integrated intervention for the public areas around the buildings with several renovated apartments: pilot masterplan for the Mănăștur District (80,000 inhabitants, 90% live in buildings with low energy efficiency built during the communist period) including interventions to reduce car consumption, promote walking and cycling, sports, separate collection and recycling of waste, increasing green spaces, interventions to reduce UHI, redevelopment of abandoned and underutilized public and private spaces, implementation of Smart City solutions, etc. – around the concept of City for Children. |
+| Reference to impact pathway | Field of action | Built environment |
+|  | Systemic lever | Technology/Infrastructure |
+|  | Outcome (according to module B-1.1) | Improved energy efficiency for at least 40,000 apartments, and public areas around apartment blocks rehabilitated to reduce car usage and make transport by foot, bike and public transport more attractive. |
+| Implementation | Responsible bodies/person for implementation | Municipality, The Order of Romanian Architects (especially Transilvania branch) and their (inter)national partners, Associations of house owners and citizens in targeted private |
+|  | buildings, TUCN, BBU, TREC, TITC |  |
 | --- | --- | --- |
-|   |  Action type | Technical intervention  |
-|   |  Action description | Support for the redevelopment of at least 100 ha of brownfields that overlap UHIs into climate-friendly mixed-use areas, by using taxation and urban planning tools
-Property tax reduction for at least 50 new commercial green buildings earning a green certification.  |
-|  Reference to impact pathway | Field of action | Built environment  |
-|   |  Systemic lever | Technology/Infrastructure  |
-|   |  Outcome (according to module B-1.1) | At least 95% of the commercial building stock with improved energy performance, and at least 3 major brownfield redevelopment projects undertaken in the city  |
-
-7
-Climate Neutrality Action Plan
-
-|  Implementation | Responsible bodies/person for implementation | Municipality  |
+|  | Action scale & addressed entities | Housing, blocks, public area in the Mănăștur Quarter |
+|  | Involved stakeholders | Cluj Napoca Municipality , Cluj-Napoca's Public Heating Company, Associations of home owners: The Federation of Home Owners' Associations Cluj-Napoca, North-West Regional Development Agency, Romanian Green Building Council, Servelect, Transylvania Energy Cluster, North-West Regional Development Agency |
+|  | Comments on implementation | N/A |
+| Impact & cost | Generated renewable energy (if applicable) | N/A |
+|  | Removed/substituted energy, volume or fuel type | Electrical energy: 228,054 MWh/year |
+| Natural gas: 233,636 MWh/year  |
+|  | GHG emissions reduction estimate (total) per emission source sector | 70,000 tons CO2/year from Buildings |
 | --- | --- | --- |
-|   |  Action scale & addressed entities | Brownfield areas  |
-|   |  Involved stakeholders | Cluj Napoca Municipality, Cluj-Napoca's Public Heating Company, Public Entities headquartered in targeted public buildings, Associations of home owners: The Federation of Home Owners' Associations Cluj-Napoca, North-West Regional Development Agency, Romanian Green Building Council, Romanian New Materials Cluster, Transylvania Energy Cluster, North-West Regional Development Agency, Technical University of Cluj-Napoca (Faculties of Architecture, Transport, Energy), National Environmental Agency, University of Agronomic Sciences and Veterinary Medicine, Association for Intercommunity Development CMA, Local NGOs that are active in the field of environmental protection and the urban sector, Local NGOs that are active in the field of citizens engagement, active citizenship, Local innovation ecosystem & Private sector  |
-|   | Comments on implementation | N/A  |
-|  Impact & cost | Generated renewable energy (if applicable) | N/A  |
-|   | Removed/substituted energy, volume or fuel type | Electrical energy: 39,095 MWh/year
-Natural gas: 40,052 MWh/year  |
-|   | GHG emissions reduction estimate (total) per emission source sector | 12,000 tons CO2/year from Buildings  |
-|   | Total costs and costs by CO2e unit | € 81,000,000.00- total cost
-€ 41/tone CO2  |
-|  Action outline | Action name | Cluj NetZeroCoalition  |
+|  | Total costs and costs by CO2e unit | € 180,000,000.00 - total cost |
+| € 428/tone CO2  |
+| Action outline | Action name | Energy Renovation of Public Buildings |
 | --- | --- | --- |
-|   |  Action type | Other interventions  |
-|   |  Action description | Behavioral, perception and modelling analysis on the individual adaptation of residents & businesses to climate neutrality
+|  | Action type | Technical intervention |
+|  | Action description | Energy renovation of 50 public buildings, especially nurseries, kindergartens, schools and high schools, but also administrative ones, especially by making use of the EU funding opportunities. |
+| Reference to impact pathway | Field of action | Built environment |
+|  | Systemic lever | Technology/Infrastructure |
+|  | Outcome (according to module B-1.1) | At least 50 public buildings (e.g. nurseries, kindergartens, schools, administrative buildings) rehabilitated |
+| Implementation | Responsible bodies/person for implementation | Municipality, Public Entities headquartered in targeted public buildings, Energy Manager |
+|  | Action scale & addressed entities | Public buildings |
+|  | Involved stakeholders | Cluj Napoca Municipality, Cluj-Napoca's Public Heating Company, Public Entities headquartered in targeted public buildings, North-West Regional Development Agency, Romanian Green Building Council, Transylvania Energy Cluster, North-West Regional Development Agency, Technical University of Cluj-Napoca (Faculties of Architecture, Transport, Energy), The Order of Romanian Architects (especially Transilvania branch) and their (inter)national partners, National Environmental Agency, Association for Intercommunity Development CMA |
+| --- | --- | --- |
+|  | Comments on implementation | N/A |
+| Impact & cost | Generated renewable energy (if applicable) | N/A |
+|  | Removed/substituted energy, volume or fuel type | Electrical energy: 16,290 MWh/year |
+| Natural gas: 16,688 MWh/year  |
+|  | GHG emissions reduction estimate (total) per emission source sector | 5,000 tons CO2/year from Buildings |
+| --- | --- | --- |
+|  | Total costs and costs by CO2e unit | € 90,00,000.00 - total cost |
+| € 52,260/tone CO2  |
+| Action outline | Action name | Energy Efficiency of Commercial Buildings and brownfields redevelopment |
+| --- | --- | --- |
+|  | Action type | Technical intervention |
+|  | Action description | Support for the redevelopment of at least 100 ha of brownfields that overlap UHIs into climate-friendly mixed-use areas, by using taxation and urban planning tools |
+| Property tax reduction for at least 50 new commercial green buildings earning a green certification.  |
+| Reference to impact pathway | Field of action | Built environment |
+| --- | --- | --- |
+|  | Systemic lever | Technology/Infrastructure |
+|  | Outcome (according to module B-1.1) | At least 95% of the commercial building stock with improved energy performance, and at least 3 major brownfield redevelopment projects undertaken in the city |
+| Implementation | Responsible bodies/person for implementation | Municipality |
+| --- | --- | --- |
+|  | Action scale & addressed entities | Brownfield areas |
+|  | Involved stakeholders | Cluj Napoca Municipality, Cluj-Napoca's Public Heating Company, Public Entities headquartered in targeted public buildings, Associations of home owners: The Federation of Home Owners' Associations Cluj-Napoca, North-West Regional Development Agency, Romanian Green Building Council, Romanian New Materials Cluster, Transylvania Energy Cluster, North-West Regional Development Agency, Technical University of Cluj-Napoca (Faculties of Architecture, Transport, Energy), National Environmental Agency, University of Agronomic Sciences and Veterinary Medicine, Association for Intercommunity Development CMA, Local NGOs that are active in the field of environmental protection and the urban sector, Local NGOs that are active in the field of citizens engagement, active citizenship, Local innovation ecosystem & Private sector |
+|  | Comments on implementation | N/A |
+| Impact & cost | Generated renewable energy (if applicable) | N/A |
+|  | Removed/substituted energy, volume or fuel type | Electrical energy: 39,095 MWh/year |
+| Natural gas: 40,052 MWh/year  |
+|  | GHG emissions reduction estimate (total) per emission source sector | 12,000 tons CO2/year from Buildings |
+| --- | --- | --- |
+|  | Total costs and costs by CO2e unit | € 81,000,000.00- total cost |
+| € 41/tone CO2  |
+| Action outline | Action name | Cluj NetZeroCoalition |
+| --- | --- | --- |
+|  | Action type | Other interventions |
+|  | Action description | Behavioral, perception and modelling analysis on the individual adaptation of residents & businesses to climate neutrality |
 Knowledge & Competence audit of the local  |
 
 8
@@ -2883,72 +2821,68 @@ CENTRO UNIVERSITARIO
 CLUJ-NAPOCA
 Climate Neutrality Action Plan
 C
-|   |  | climate neutrality ecosystem
+climate neutrality ecosystem
 Civic imagination & Innovation modelling for climate neutrality at neighborhood level
 Enhancing the capacity of the ecosystem to implement and monitor climate neutral policies at neighborhood level: NZC Champs Campaign; skills upgrading package for ecosystem representatives, building administrators; study visits & exchange of good practices
 Enhancing the contribution an adaptation of residents to climate neutrality; NetZeroCaravan in neighbourhoods and suburbs (3)  |
-| --- | --- | --- |
-|  Reference to impact pathway | Field of action | Soft interventions  |
-|   |  Systemic lever | Democracy/Participation  |
-|   |  Outcome (according to module B-1.1) | At least 5 civic imagination and innovation modelling initiatives started at the neighborhood level, enhancing the capacity of communities to implement and monitor climate neutral policies at the neighborhood level.  |
-|  Implementation | Responsible bodies/person for implementation | All stakeholders foreseen for the NZC Action Plan implementation  |
-|   |  Action scale & addressed entities | City wide  |
-|   |  Involved stakeholders | All the stakeholders involved in implementing the NZC Action Plan  |
-|   |  Comments on implementation | N/A  |
-|  Impact & cost | Generated renewable energy (if applicable) | N/A  |
-|   |  Removed/substituted energy, volume or fuel type | Electrical energy: 11,077 MWh/year
+Reference to impact pathway | Field of action | Soft interventions
+Systemic lever | Democracy/Participation
+Outcome (according to module B-1.1) | At least 5 civic imagination and innovation modelling initiatives started at the neighborhood level, enhancing the capacity of communities to implement and monitor climate neutral policies at the neighborhood level.
+Implementation | Responsible bodies/person for implementation | All stakeholders foreseen for the NZC Action Plan implementation
+Action scale & addressed entities | City wide
+Involved stakeholders | All the stakeholders involved in implementing the NZC Action Plan
+Comments on implementation | N/A
+Impact & cost | Generated renewable energy (if applicable) | N/A
+Removed/substituted energy, volume or fuel type | Electrical energy: 11,077 MWh/year
 Natural gas: 11,348 MWh/year  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 3,400 tons CO2/year from Buildings  |
-|   |  Total costs and costs by CO2e unit | € 1.000,000.00 - total cost
-€ 73/tone CO2  |
-|  Action outline | Action name | Improved local urban regulations and  |
+|  | GHG emissions reduction estimate (total) per emission source sector | 3,400 tons CO2/year from Buildings |
 | --- | --- | --- |
-9
-Climate Neutrality Action Plan
-
-|   |  | policies for achieving climate neutrality  |
+|  | Total costs and costs by CO2e unit | € 1.000,000.00 - total cost |
+| € 73/tone CO2  |
+| Action outline | Action name | Improved local urban regulations and |
 | --- | --- | --- |
-|   |  Action type | Other interventions  |
-|   |  Action description | Comprehensive climate-neutrality masterplan for each dense multi-apartment neighborhood and suburbs
+|  | policies for achieving climate neutrality |  |
+| --- | --- | --- |
+|  | Action type | Other interventions |
+|  | Action description | Comprehensive climate-neutrality masterplan for each dense multi-apartment neighborhood and suburbs |
 Detailed proposals for transforming different areas in each neighborhood/suburb into climate neutral demo district
 Terms of Reference for the renovation of private and public buildings in line with the nZEB principles, but also with other local priorities (eg. extending the average living area of the apartments or the capacity of schools)
 Defining a set of urban planning principles for climate neutral interventions in high density multi-apartment neighbourhoods
 Defining a set of urban planning principles for climate neutral interventions in high density multi-apartment neighbourhoods
 Update of the local urban planning regulations to foster climate neutrality transition
 New governance models for condominiums and their integration into the local climate neutrality ecosystem.  |
-|  Reference to impact pathway | Field of action | Soft interventions  |
-|   |  Systemic lever | Governance & Policy  |
-|   |  Outcome (according to module B-1.1) | At least 95% of the commercial building stock with improved energy performance, and at least 3 major brownfield redevelopment projects undertaken in the city  |
-|  Implementation | Responsible bodies/person for implementation | All stakeholders foreseen for the NZC Action Plan implementation  |
-|   |  Action scale & addressed entities | City-wide multi-apartment neighborhoods & suburbs and buildings  |
-|   |  Involved stakeholders | All the stakeholders involved in implementing the NZC Action Plan.  |
-|   |  Comments on implementation | N/A  |
-
-0
-Climate Neutrality Action Plan
-
-|  Impact & cost | Generated renewable energy (if applicable) | N/A  |
+| Reference to impact pathway | Field of action | Soft interventions |
 | --- | --- | --- |
-|   |  Removed/substituted energy, volume or fuel type | Electrical energy: 205,249 MWh/year
-Natural gas: 210,273 MWh/year  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 63,000 tons CO2/year from Buildings  |
-|   |  Total costs and costs by CO2e unit | € 10,000,000.00 - total cost
-€ 72/tone CO2  |
-|  Action outline | Action name | Communication, dissemination and scalability  |
+|  | Systemic lever | Governance & Policy |
+|  | Outcome (according to module B-1.1) | At least 95% of the commercial building stock with improved energy performance, and at least 3 major brownfield redevelopment projects undertaken in the city |
+| Implementation | Responsible bodies/person for implementation | All stakeholders foreseen for the NZC Action Plan implementation |
+|  | Action scale & addressed entities | City-wide multi-apartment neighborhoods & suburbs and buildings |
+|  | Involved stakeholders | All the stakeholders involved in implementing the NZC Action Plan. |
+|  | Comments on implementation | N/A |
+| Impact & cost | Generated renewable energy (if applicable) | N/A |
 | --- | --- | --- |
-|   |  Action type | Other interventions  |
-|   |  Action description | Digital platform – an interactive website managed by the local climate neutrality ecosystem
+|  | Removed/substituted energy, volume or fuel type | Electrical energy: 205,249 MWh/year |
+| Natural gas: 210,273 MWh/year  |
+|  | GHG emissions reduction estimate (total) per emission source sector | 63,000 tons CO2/year from Buildings |
+| --- | --- | --- |
+|  | Total costs and costs by CO2e unit | € 10,000,000.00 - total cost |
+| € 72/tone CO2  |
+| Action outline | Action name | Communication, dissemination and scalability |
+| --- | --- | --- |
+|  | Action type | Other interventions |
+|  | Action description | Digital platform – an interactive website managed by the local climate neutrality ecosystem |
 Social & Mass Media coverage
 International Climate Neutrality Summit in 2025
 Climate Neutrality Digital Twin - to collect, visualise, monitor and forecast social and natural behaviours and environments relevant for the climate transition of the city.(1)  |
-|  Reference to impact pathway | Field of action | Soft interventions  |
-|   |  Systemic lever | Democracy/Participation  |
-|   |  Outcome (according to module B-1.1) | At least two best-practices or innovations adopted by wider population, and at least 75% of the population aware of climate neutrality goals and actively engaged in climate neutrality efforts.  |
-|  Implementation | Responsible bodies/person for implementation | All stakeholders foreseen for the NZC Action Plan implementation  |
-|   |  Action scale & addressed entities | City-wide multi-apartment neighborhoods & suburbs and buildings  |
-|   |  Involved stakeholders | All the stakeholders involved in implementing the NZC Action Plan.  |
-|  Impact & cost | Generated renewable energy (if applicable) | N/A  |
-|   |  Removed/substituted energy, | Electrical energy: 44,308 MWh/year  |
+| Reference to impact pathway | Field of action | Soft interventions |
+| --- | --- | --- |
+|  | Systemic lever | Democracy/Participation |
+|  | Outcome (according to module B-1.1) | At least two best-practices or innovations adopted by wider population, and at least 75% of the population aware of climate neutrality goals and actively engaged in climate neutrality efforts. |
+| Implementation | Responsible bodies/person for implementation | All stakeholders foreseen for the NZC Action Plan implementation |
+|  | Action scale & addressed entities | City-wide multi-apartment neighborhoods & suburbs and buildings |
+|  | Involved stakeholders | All the stakeholders involved in implementing the NZC Action Plan. |
+| Impact & cost | Generated renewable energy (if applicable) | N/A |
+|  | Removed/substituted energy, | Electrical energy: 44,308 MWh/year |
 2
 
 PRAVINA &amp; KOMMUNAL LOCAL CLUB NAPOLA
@@ -2961,10 +2895,10 @@ CALIFORNIA
 
 Climate Neutrality Action Plan
 
-|   | volume or fuel type | Natural gas: 45,392 MWh/year  |
+|  | volume or fuel type | Natural gas: 45,392 MWh/year |
 | --- | --- | --- |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 200 tons CO2/year from Buildings  |
-|   |  Total costs and costs by CO2e unit | € 2,000,000.00 - total cost
+|  | GHG emissions reduction estimate (total) per emission source sector | 200 tons CO2/year from Buildings |
+|  | Total costs and costs by CO2e unit | € 2,000,000.00 - total cost |
 € 8/tone CO2  |
 
 # B-2.3: SUMMARY STRATEGY FOR RESIDUAL EMISSIONS
@@ -3022,17 +2956,17 @@ AFOLU - remaining emissions after implementation of proposed actions: 2,168 tons
 The Integrated Urban Development Strategy sets forth measures to promote economic efficiency of local markets and sustainable production of local goods, enhance land use, and emphasise sustainable development and conservation of green spaces. Similar measures can be found in the Integrated Plan for Air Quality 2020-2024 and the Urban Mobility Plan for Cluj-Napoca 2021-2030, which if implemented will likely decrease remaining emissions even more.
 Module B-3 Indicators for Monitoring, Evaluation and Learning
 
-|  B-3.1: IMPACT PATHWAYS  |   |   |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  OUTCOMES / IMPACTS ADDRESSE D | ACTION/ PROJECT | INDICATOR NO. (UNIQUE IDENTIFIED) | INDICATOR NAME |  | TARGET VALUES  |   |   |
-|   |   |   |   |   | 2025 | 2027 | 2030  |
-|  Reduction of CO2 emissions from 2022 baseline | All actions in the Action Plan | CJ-NZC-I1 | CO2 Emissions |  | 20% | 50% | 81.4%  |
-|  Percent of daily trips done by public transport and/or non-motorized means | 2.1 Major green public transport infrastructure and reduction of congestion in the city
+B-3.1: IMPACT PATHWAYS
+OUTCOMES / IMPACTS ADDRESSE D | ACTION/ PROJECT | INDICATOR NO. (UNIQUE IDENTIFIED) | INDICATOR NAME | TARGET VALUES
+2025 | 2027 2030
+Reduction of CO2 emissions from 2022 baseline | All actions in the Action Plan | CJ-NZC-I1 | CO2 Emissions | 20% 50% 81.4%
+
+Percent of daily trips done by public transport and/or non-motorized means | 2.1 Major green public transport infrastructure and reduction of congestion in the city
 Promotion of large-scale use of Electric Vehicles
 Extension of Walkable City Program
 Extension of Cluj Bike Program
 Green-blue corridors | CJ-NZC-I2 | Modal Share |  | 62% | 65% | 70%  |
-|  Hectares of green spaces | 2.3 Extension of Walkable City Program
+Hectares of green spaces | 2.3 Extension of Walkable City Program
 Cluj Circular City
 Extension of "Green Cluj" Program
 Green-blue corridors
@@ -3041,13 +2975,13 @@ Climate Neutrality Action Plan
 
 #
 
-|  B-3.1: IMPACT PATHWAYS  |   |   |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  OUTCOMES / IMPACTS ADDRESSED | ACTION/ PROJECT | INDICATOR NO. (UNIQUE IDENTIFIED) | INDICATOR NAME |  | TARGET VALUES  |   |   |
-|   | facades for public and private buildings |  |  |  |  |  |   |
-|  General Air Quality Index | All actions included in the Action Plan | CJ-NZC-I4 | Air Quality |  | 30 (AQI) | 26 (AQI) | 20 (AQI)  |
-|  Percent of people fully satisfied to be living in the city | All actions included in the Action Plan | CJ-NZC-I5 | Quality of Life |  | 60% | 65% | 75%  |
-|  Euro per household per year saved over 2022 baseline | 1.1 Efficient district heating and cooling in Cluj-Napoca
+B-3.1: IMPACT PATHWAYS
+OUTCOMES / IMPACTS ADDRESSED | ACTION/ PROJECT | INDICATOR NO. (UNIQUE IDENTIFIED) | INDICATOR NAME | TARGET VALUES
+facades for public and private buildings
+General Air Quality Index | All actions included in the Action Plan | CJ-NZC-I4 | Air Quality | 30 (AQI) 26 (AQI) 20 (AQI)
+Percent of people fully satisfied to be living in the city | All actions included in the Action Plan | CJ-NZC-I5 | Quality of Life | 60% 65% 75%
+
+Euro per household per year saved over 2022 baseline | 1.1 Efficient district heating and cooling in Cluj-Napoca
 Local (off-site) renewable energy generation and integrating RES into private and public buildings
 Major green public transport infrastructure and reduction of congestion in the city
 Extension of Walkable City Program
@@ -3058,11 +2992,10 @@ Climate Neutrality Action Plan
 
 #
 
-|  B-3.1: IMPACT PATHWAYS  |   |   |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  OUTCOMES / IMPACTS ADDRESSED | ACTION/ PROJECT | INDICATOR NO. (UNIQUE IDENTIFIED) | INDICATOR NAME |  | TARGET VALUES  |   |   |
-|  |   |   |   |   |   |   |   |
-|  Euro spent by Municipality for Energy and Fuel | 1.1 Efficient district heating and cooling in Cluj-Napoca
+B-3.1: IMPACT PATHWAYS
+OUTCOMES / IMPACTS ADDRESSED | ACTION/ PROJECT | INDICATOR NO. (UNIQUE IDENTIFIED) | INDICATOR NAME | TARGET VALUES
+
+Euro spent by Municipality for Energy and Fuel | 1.1 Efficient district heating and cooling in Cluj-Napoca
 Local (off-site) renewable energy generation and integrating RES into private and public buildings
 Energy-efficient public lighting
 Major green public transport infrastructure and reduction of congestion in the city
@@ -3070,185 +3003,169 @@ Promotion of large-scale use of Electric Vehicles
 Cluj Circular City
 Green roofs and facades for public and private buildings
 Energy Renovation of Public Buildings | CJ-NZC-I7 | Public Sector Savings |  | EUR 9.5 mil. | EUR 8 mil. | EUR 5 mil.  |
-|  B-3.2: INDICATOR METADATA  |   |
+| B-3.2: INDICATOR METADATA |  |
 | --- | --- |
-|  (for each indicator selected – take from Comprehensive Indicator Sets)  |   |
-|  Indicator Name | CO2 Emissions  |
-|  Indicator Unit | Tons of CO2 per Year  |
-|  Definition | Reduction in CO2 emissions  |
+| (for each indicator selected – take from Comprehensive Indicator Sets) |  |
+| Indicator Name | CO2 Emissions |
+| Indicator Unit | Tons of CO2 per Year |
+| Definition | Reduction in CO2 emissions |
 Climate Neutrality Action Plan
 
-|  |   |
-| --- | --- |
-|  Calculation | Detailed assessment by sector and regular monitoring, as described in the Action Plan  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | yes  |
-|  If yes, which emission source sectors does it impact? | Buildings, Transport, Waste, IPPU, AFOLU  |
-|  Does the indicator measure indirect impacts (i.e. co-benefits)? | no  |
-|  If yes, which co-benefit does it measure? | N/A  |
-|  Can the indicator be used for monitoring impact pathways? | yes  |
-|  If yes, which NZC impact pathway is it relevant for? | CJ-NZC-I1  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | yes  |
-|  Data requirements |   |
-|  Expected data source | Comprehensive monitoring reports.  |
-|  Expected availability | Data will be difficult to collect, but a clear baseline is already in place.  |
-|  Suggested collection interval | Bi-annually  |
-|  References |   |
-|  Deliverables describing the indicator | Monitoring report  |
-|  Other indicator systems using this indicator | Reference Framework for Sustainable Cities, ISO 37110:2022 Sustainable cities and communities, Romania Urban Policy Indicators  |
-|  B-3.2: INDICATOR METADATA  |   |
-| --- | --- |
-|  (for each indicator selected – take from Comprehensive Indicator Sets)  |   |
-|  Indicator Name | Modal share of public and non-motorized travel  |
-|  Indicator Unit | Percent  |
-|  Definition | Increase in share of trips done by public transport  |
+Calculation | Detailed assessment by sector and regular monitoring, as described in the Action Plan
+Indicator Context
+Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | yes
+If yes, which emission source sectors does it impact? | Buildings, Transport, Waste, IPPU, AFOLU
+Does the indicator measure indirect impacts (i.e. co-benefits)? | no
+If yes, which co-benefit does it measure? | N/A
+Can the indicator be used for monitoring impact pathways? | yes
+If yes, which NZC impact pathway is it relevant for? | CJ-NZC-I1
+Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | yes
+Data requirements
+Expected data source | Comprehensive monitoring reports.
+Expected availability | Data will be difficult to collect, but a clear baseline is already in place.
+Suggested collection interval | Bi-annually
+References
+Deliverables describing the indicator | Monitoring report
+Other indicator systems using this indicator | Reference Framework for Sustainable Cities, ISO 37110:2022 Sustainable cities and communities, Romania Urban Policy Indicators
+B-3.2: INDICATOR METADATA
+(for each indicator selected – take from Comprehensive Indicator Sets)
+Indicator Name | Modal share of public and non-motorized travel
+Indicator Unit | Percent
+Definition | Increase in share of trips done by public transport
 Climate Neutrality Action Plan
 
-|   | and non-motorized means  |
+|  | and non-motorized means |
 | --- | --- |
-|  Calculation | Detailed traffic study.  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | yes/  |
-|  If yes, which emission source sectors does it impact? | Transport  |
-|  Does the indicator measure indirect impacts (i.e. co-benefits)? | yes  |
-|  If yes, which co-benefit does it measure? | Reduction in CO2 emissions; Improvement in Air Quality; Improvement in Quality of Life; Lower Energy Costs for Households.  |
-|  Can the indicator be used for monitoring impact pathways? | yes  |
-|  If yes, which NZC impact pathway is it relevant for? | CJ-NZC-I2  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | yes  |
-|  Data requirements |   |
-|  Expected data source | Comprehensive traffic study.  |
-|  Expected availability | Data will be difficult to collect, but a clear baseline is already in place.  |
-|  Suggested collection interval | Every 5 years  |
-|  References |   |
-|  Deliverables describing the indicator | Traffic study  |
-|  Other indicator systems using this indicator | Reference Framework for Sustainable Cities, ISO 37110:2022 Sustainable cities and communities, Romania Urban Policy Indicators  |
-|  B-3.2: INDICATOR METADATA  |   |
+| Calculation | Detailed traffic study. |
+| Indicator Context |  |
+| Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | yes/ |
+| If yes, which emission source sectors does it impact? | Transport |
+| Does the indicator measure indirect impacts (i.e. co-benefits)? | yes |
+| If yes, which co-benefit does it measure? | Reduction in CO2 emissions; Improvement in Air Quality; Improvement in Quality of Life; Lower Energy Costs for Households. |
+| Can the indicator be used for monitoring impact pathways? | yes |
+| If yes, which NZC impact pathway is it relevant for? | CJ-NZC-I2 |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | yes |
+| Data requirements |  |
+| Expected data source | Comprehensive traffic study. |
+| Expected availability | Data will be difficult to collect, but a clear baseline is already in place. |
+| Suggested collection interval | Every 5 years |
+| References |  |
+| Deliverables describing the indicator | Traffic study |
+| Other indicator systems using this indicator | Reference Framework for Sustainable Cities, ISO 37110:2022 Sustainable cities and communities, Romania Urban Policy Indicators |
+| B-3.2: INDICATOR METADATA |  |
+| (for each indicator selected – take from Comprehensive Indicator Sets) |  |
+| Indicator Name | Surface of green spaces |
+| Indicator Unit | Hectares |
+| Definition | Increase in area covered with green spaces |
 | --- | --- |
-|  (for each indicator selected – take from Comprehensive Indicator Sets)  |   |
-|  Indicator Name | Surface of green spaces  |
-|  Indicator Unit | Hectares  |
+| Calculation | Data extracted from online and freely available land use databases (e.g. CORINE Land Cover) |
+| Indicator Context |  |
+| Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | yes |
+| If yes, which emission source sectors does it impact? | AFOLU |
+| Does the indicator measure indirect impacts (i.e. co-benefits)? | yes |
+| If yes, which co-benefit does it measure? | Reduction in CO2 emissions; Improvement in Air Quality; Improvement in Quality of Life. |
+| Can the indicator be used for monitoring impact pathways? | yes |
+| If yes, which NZC impact pathway is it relevant for? | CJ-NZC-I3 |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | yes |
+| Data requirements |  |
+| Expected data source | CORINE Land Cover, or other available open-source land use data base. |
+| Expected availability | Data easily available and updated regularly. |
+| Suggested collection interval | Bi-annually |
+| References |  |
+| Deliverables describing the indicator | Detailed land use analysis |
+| Other indicator systems using this indicator | Reference Framework for Sustainable Cities, ISO 37110:2022 Sustainable cities and communities, Romania Urban Policy Indicators |
+| B-3.2: INDICATOR METADATA |  |
+| (for each indicator selected – take from Comprehensive Indicator Sets) |  |
+| Indicator Name | Air Quality |
+| Indicator Unit | Hectares |
+| Definition | General Air Quality Index |
 Climate Neutrality Action Plan
 
-|  Definition | Increase in area covered with green spaces  |
-| --- | --- |
-|  Calculation | Data extracted from online and freely available land use databases (e.g. CORINE Land Cover)  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | yes  |
-|  If yes, which emission source sectors does it impact? | AFOLU  |
-|  Does the indicator measure indirect impacts (i.e. co-benefits)? | yes  |
-|  If yes, which co-benefit does it measure? | Reduction in CO2 emissions; Improvement in Air Quality; Improvement in Quality of Life.  |
-|  Can the indicator be used for monitoring impact pathways? | yes  |
-|  If yes, which NZC impact pathway is it relevant for? | CJ-NZC-I3  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | yes  |
-|  Data requirements |   |
-|  Expected data source | CORINE Land Cover, or other available open-source land use data base.  |
-|  Expected availability | Data easily available and updated regularly.  |
-|  Suggested collection interval | Bi-annually  |
-|  References |   |
-|  Deliverables describing the indicator | Detailed land use analysis  |
-|  Other indicator systems using this indicator | Reference Framework for Sustainable Cities, ISO 37110:2022 Sustainable cities and communities, Romania Urban Policy Indicators  |
-|  B-3.2: INDICATOR METADATA  |   |
-| --- | --- |
-|  (for each indicator selected – take from Comprehensive Indicator Sets)  |   |
-|  Indicator Name | Air Quality  |
-|  Indicator Unit | Hectares  |
-|  Definition | General Air Quality Index  |
+Calculation | Composite index prepared by the Romanian National Air Quality Monitoring Network (calitateaer.ro)
+Indicator Context
+Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | yes
+If yes, which emission source sectors does it impact? | Buildings, Transport, Waste, IPPU, AFOLU
+Does the indicator measure indirect impacts (i.e. co-benefits)? | yes
+If yes, which co-benefit does it measure? | Improvement in Quality of Life
+Can the indicator be used for monitoring impact pathways? | yes
+If yes, which NZC impact pathway is it relevant for? | CJ-NZC-I4
+Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | yes
+Data requirements
+Expected data source | Web platform calitateaer.ro
+Expected availability | Daily
+Suggested collection interval | Annually
+References
+Deliverables describing the indicator | Composite air quality index
+Other indicator systems using this indicator | Romania Urban Policy Indicators
+B-3.2: INDICATOR METADATA
+(for each indicator selected – take from Comprehensive Indicator Sets)
+Indicator Name | Quality of Life
+Indicator Unit | Percent
+Definition | Share of people fully satisfied to be living in the city
+Calculation | Urban Barometer
 Climate Neutrality Action Plan
 
-|  |   |
+| Indicator Context |  |
 | --- | --- |
-|  Calculation | Composite index prepared by the Romanian National Air Quality Monitoring Network (calitateaer.ro)  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | yes  |
-|  If yes, which emission source sectors does it impact? | Buildings, Transport, Waste, IPPU, AFOLU  |
-|  Does the indicator measure indirect impacts (i.e. co-benefits)? | yes  |
-|  If yes, which co-benefit does it measure? | Improvement in Quality of Life  |
-|  Can the indicator be used for monitoring impact pathways? | yes  |
-|  If yes, which NZC impact pathway is it relevant for? | CJ-NZC-I4  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | yes  |
-|  Data requirements |   |
-|  Expected data source | Web platform calitateaer.ro  |
-|  Expected availability | Daily  |
-|  Suggested collection interval | Annually  |
-|  References |   |
-|  Deliverables describing the indicator | Composite air quality index  |
-|  Other indicator systems using this indicator | Romania Urban Policy Indicators  |
-|  B-3.2: INDICATOR METADATA  |   |
+| Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | yes |
+| If yes, which emission source sectors does it impact? | Buildings, Transport, Waste, IPPU, AFOLU |
+| Does the indicator measure indirect impacts (i.e. co-benefits)? | yes |
+| If yes, which co-benefit does it measure? | Reduction in CO2 emissions; Improvement in Air Quality; Lower Energy Costs for Households. |
+| Can the indicator be used for monitoring impact pathways? | yes |
+| If yes, which NZC impact pathway is it relevant for? | CJ-NZC-I5 |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | yes |
+| Data requirements |  |
+| Expected data source | Urban Barometer – undertaken regularly by EuroStat and by the Romanian Ministry of Development, Public Works, and Administration |
+| Expected availability | Every 3-4 years |
+| Suggested collection interval | Every 5 years |
+| References |  |
+| Deliverables describing the indicator | Comprehensive survey to assess people’s satisfaction with living in the city |
+| Other indicator systems using this indicator | Eurobarometer, Romania Urban Policy Indicators |
+| B-3.2: INDICATOR METADATA |  |
+| (for each indicator selected – take from Comprehensive Indicator Sets) |  |
+| Indicator Name | Household Savings |
+| Indicator Unit | Euro |
+| Definition | Average energy cost savings per household |
+| Calculation | Comprehensive Household Survey |
+| Indicator Context |  |
 | --- | --- |
-|  (for each indicator selected – take from Comprehensive Indicator Sets)  |   |
-|  Indicator Name | Quality of Life  |
-|  Indicator Unit | Percent  |
-|  Definition | Share of people fully satisfied to be living in the city  |
-|  Calculation | Urban Barometer  |
-Climate Neutrality Action Plan
-
-|  Indicator Context |   |
+| Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | yes |
+| If yes, which emission source sectors does it impact? | Buildings, Transport, Waste |
+| Does the indicator measure indirect impacts (i.e. co-benefits)? | yes |
+| If yes, which co-benefit does it measure? | Reduction in CO2 emissions; Improvement in Air Quality; Improvement in Quality of Life |
+| Can the indicator be used for monitoring impact pathways? | yes |
+| If yes, which NZC impact pathway is it relevant for? | CJ-NZC-I6 |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | yes |
+| Data requirements |  |
+| Expected data source | EU-SILC; Surveys undertaken by National Institute for statistics |
+| Expected availability | Every 3-4 years |
+| Suggested collection interval | Every 5 years |
+| References |  |
+| Deliverables describing the indicator | Comprehensive household surveys |
+| Other indicator systems using this indicator | EU-SILC |
+| B-3.2: INDICATOR METADATA |  |
+| (for each indicator selected – take from Comprehensive Indicator Sets) |  |
+| Indicator Name | Public Sector Savings |
+| Indicator Unit | Euro |
+| Definition | Average energy cost savings of public institutions |
+| Calculation | Detailed budget executions of public administrations |
+| Indicator Context |  |
+| Does the indicator measure direct impacts | yes |
+| (i.e. reduction in greenhouse gas emissions?) |  |
 | --- | --- |
-|  Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | yes  |
-|  If yes, which emission source sectors does it impact? | Buildings, Transport, Waste, IPPU, AFOLU  |
-|  Does the indicator measure indirect impacts (i.e. co-benefits)? | yes  |
-|  If yes, which co-benefit does it measure? | Reduction in CO2 emissions; Improvement in Air Quality; Lower Energy Costs for Households.  |
-|  Can the indicator be used for monitoring impact pathways? | yes  |
-|  If yes, which NZC impact pathway is it relevant for? | CJ-NZC-I5  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | yes  |
-|  Data requirements |   |
-|  Expected data source | Urban Barometer – undertaken regularly by EuroStat and by the Romanian Ministry of Development, Public Works, and Administration  |
-|  Expected availability | Every 3-4 years  |
-|  Suggested collection interval | Every 5 years  |
-|  References |   |
-|  Deliverables describing the indicator | Comprehensive survey to assess people’s satisfaction with living in the city  |
-|  Other indicator systems using this indicator | Eurobarometer, Romania Urban Policy Indicators  |
-|  B-3.2: INDICATOR METADATA  |   |
-| --- | --- |
-|  (for each indicator selected – take from Comprehensive Indicator Sets)  |   |
-|  Indicator Name | Household Savings  |
-|  Indicator Unit | Euro  |
-|  Definition | Average energy cost savings per household  |
-|  Calculation | Comprehensive Household Survey  |
-Climate Neutrality Action Plan
-
-|  Indicator Context |   |
-| --- | --- |
-|  Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | yes  |
-|  If yes, which emission source sectors does it impact? | Buildings, Transport, Waste  |
-|  Does the indicator measure indirect impacts (i.e. co-benefits)? | yes  |
-|  If yes, which co-benefit does it measure? | Reduction in CO2 emissions; Improvement in Air Quality; Improvement in Quality of Life  |
-|  Can the indicator be used for monitoring impact pathways? | yes  |
-|  If yes, which NZC impact pathway is it relevant for? | CJ-NZC-I6  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | yes  |
-|  Data requirements |   |
-|  Expected data source | EU-SILC; Surveys undertaken by National Institute for statistics  |
-|  Expected availability | Every 3-4 years  |
-|  Suggested collection interval | Every 5 years  |
-|  References |   |
-|  Deliverables describing the indicator | Comprehensive household surveys  |
-|  Other indicator systems using this indicator | EU-SILC  |
-|  B-3.2: INDICATOR METADATA  |   |
-| --- | --- |
-|  (for each indicator selected – take from Comprehensive Indicator Sets)  |   |
-|  Indicator Name | Public Sector Savings  |
-|  Indicator Unit | Euro  |
-|  Definition | Average energy cost savings of public institutions  |
-|  Calculation | Detailed budget executions of public administrations  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts | yes  |
-Climate Neutrality Action Plan
-
-|  (i.e. reduction in greenhouse gas emissions?) |   |
-| --- | --- |
-|  If yes, which emission source sectors does it impact? | Buildings, Transport, Waste  |
-|  Does the indicator measure indirect impacts (i.e. co- benefits)? | yes  |
-|  If yes, which co-benefit does it measure? | Reduction in CO2 emissions; Improvement in Air Quality  |
-|  Can the indicator be used for monitoring impact pathways? | yes  |
-|  If yes, which NZC impact pathway is it relevant for? | CJ-NZC-I7  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | yes  |
-|  Data requirements |   |
-|  Expected data source | Ministry of Finance; Consolidated budget executions of public institutions.  |
-|  Expected availability | Annually  |
-|  Suggested collection interval | Annually  |
-|  References |   |
-|  Deliverables describing the indicator | Municipal Financial Assessment  |
-|  Other indicator systems using this indicator | Reference Framework for Sustainable Cities, ISO 37110:2022 Sustainable cities and communities, Romania Urban Policy Indicators  |
+| If yes, which emission source sectors does it impact? | Buildings, Transport, Waste |
+| Does the indicator measure indirect impacts (i.e. co- benefits)? | yes |
+| If yes, which co-benefit does it measure? | Reduction in CO2 emissions; Improvement in Air Quality |
+| Can the indicator be used for monitoring impact pathways? | yes |
+| If yes, which NZC impact pathway is it relevant for? | CJ-NZC-I7 |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | yes |
+| Data requirements |  |
+| Expected data source | Ministry of Finance; Consolidated budget executions of public institutions. |
+| Expected availability | Annually |
+| Suggested collection interval | Annually |
+| References |  |
+| Deliverables describing the indicator | Municipal Financial Assessment |
+| Other indicator systems using this indicator | Reference Framework for Sustainable Cities, ISO 37110:2022 Sustainable cities and communities, Romania Urban Policy Indicators |
 
 4
 Climate Neutrality Action Plan
@@ -3261,28 +3178,27 @@ Climate Neutrality Action Plan
 
 C.1.1: ENABLING ORGANISATIONAL AND GOVERNANCE INTERVENTIONS
 
-|  INTERVENTION NAME | DESCRIPTION | RESPONSIBLE ENTITY / DEPT./PERSON | INVOLVED STAKEHOLDER | ENABLING IMPACT | CO-BENEFITS  |
+| INTERVENTION NAME | DESCRIPTION | RESPONSIBLE ENTITY / DEPT./PERSON | INVOLVED STAKEHOLDER | ENABLING IMPACT | CO-BENEFITS |
 | --- | --- | --- | --- | --- | --- |
-|  Knowledge & Competence audit of the local climate neutrality ecosystem | The intervention maps the local climate neutrality ecosystem and audits its competences (technical and social) relevant for the climate neutrality ambitions of the city. | TREC | All the stakeholders mapped for the implementation of the NZC Action Plan are involved. Stakeholders (public institutions, public companies, universities, research institutions, NGOs, professional associations etc.) will be audited to evaluate relevant aspects such as mission, vision, objectives; background; areas of expertise; existing human, financial, technical and informational resources; processes; technologies; knowledge nature, | The assessment of the local ecosystem's capabilities will establish its capacity to plan, implement and monitor climate neutrality policies at neighbourhood level. In turn will enable (1) the identification of potentially relevant stakeholders to be added to the initial list and (2) will facilitate the design of a more efficient learning process for the different actors of the ecosystem. It will improve the ecosystem to enable climate neutrality. | Enables climate neutrality by improving the effectiveness and efficiency of multi-level governance for climate neutrality. Hence, this intervention offers the necessary structure to achieve the listed outcomes, because it creates favourable systemic conditions.  |
+| Knowledge & Competence audit of the local climate neutrality ecosystem | The intervention maps the local climate neutrality ecosystem and audits its competences (technical and social) relevant for the climate neutrality ambitions of the city. | TREC | All the stakeholders mapped for the implementation of the NZC Action Plan are involved. Stakeholders (public institutions, public companies, universities, research institutions, NGOs, professional associations etc.) will be audited to evaluate relevant aspects such as mission, vision, objectives; background; areas of expertise; existing human, financial, technical and informational resources; processes; technologies; knowledge nature, | The assessment of the local ecosystem's capabilities will establish its capacity to plan, implement and monitor climate neutrality policies at neighbourhood level. In turn will enable (1) the identification of potentially relevant stakeholders to be added to the initial list and (2) will facilitate the design of a more efficient learning process for the different actors of the ecosystem. It will improve the ecosystem to enable climate neutrality. | Enables climate neutrality by improving the effectiveness and efficiency of multi-level governance for climate neutrality. Hence, this intervention offers the necessary structure to achieve the listed outcomes, because it creates favourable systemic conditions. |
 Climate Neutrality Action Plan
 
 C
 
-|  C.1.1: ENABLING ORGANISATIONAL AND GOVERNANCE INTERVENTIONS  |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- |
-|  INTERVENTION NAME | DESCRIPTION | RESPONSIBLE ENTITY / DEPT./PERSON | INVOLVED STAKEHOLDER | ENABLING IMPACT | CO-BENEFITS  |
-|   |  |  | dissemination; learning needs; cooperation with other members of the ecosystem etc. |  |   |
-|  Enhancing the capacity of the ecosystem to implement and monitor climate neutral policies at neighbour hood level | Specific actions focused on the ecosystem represent atives and building administrators will be developed to increase their capacity, namely promoting good practice, delivering know-how and skills upgrading package, trainings, organize study visits and experience exchange sessions, and offer guidance in | TUCN, BBU, SERVELE CT, CNM | All the stakeholders mapped for the implementation of the NZC Action Plan are involved. | Elaboration of monitoring framework and systems. Institutionalised systems for implementation and monitoring of climate neutral policies. | Enables climate neutrality by improving the effectiveness and efficiency of multi-level governance for climate neutrality.
+C.1.1: ENABLING ORGANISATIONAL AND GOVERNANCE INTERVENTIONS
+INTERVENTION NAME | DESCRIPTION | RESPONSIBLE ENTITY / DEPT./PERSON | INVOLVED STAKEHOLDER ENABLING IMPACT CO-BENEFITS
+dissemination; learning needs; cooperation with other members of the ecosystem etc.
+Enhancing the capacity of the ecosystem to implement and monitor climate neutral policies at neighbour hood level | Specific actions focused on the ecosystem represent atives and building administrators will be developed to increase their capacity, namely promoting good practice, delivering know-how and skills upgrading package, trainings, organize study visits and experience exchange sessions, and offer guidance in | TUCN, BBU, SERVELE CT, CNM | All the stakeholders mapped for the implementation of the NZC Action Plan are involved. Elaboration of monitoring framework and systems. Institutionalised systems for implementation and monitoring of climate neutral policies. Enables climate neutrality by improving the effectiveness and efficiency of multi-level governance for climate neutrality.
 Hence, this intervention offers the necessary structure to achieve the listed outcomes, because it creates favourable systemic conditions.  |
 Climate Neutrality Action Plan
 
 #
 
-|  C.1.1: ENABLING ORGANISATIONAL AND GOVERNANCE INTERVENTIONS  |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- |
-|  INTERVENTION NAME | DESCRIPTION | RESPONSIBLE ENTITY / DEPT./PERSON | INVOLVED STAKEHOLDER | ENABLING IMPACT | CO-BENEFITS  |
-|   | monitoring the impact of applied and implemented actions. |  |  |  |   |
-|  Defining a set of urban planning principles and documents for climate neutral interventions, plus incentives for their implementation | Developing urban planning principles in accordance with climate-neutrality standards
+C.1.1: ENABLING ORGANISATIONAL AND GOVERNANCE INTERVENTIONS
+INTERVENTION NAME | DESCRIPTION | RESPONSIBLE ENTITY / DEPT./PERSON | INVOLVED STAKEHOLDER ENABLING IMPACT CO-BENEFITS
+monitoring the impact of applied and implemented actions.
+
+Defining a set of urban planning principles and documents for climate neutral interventions, plus incentives for their implementation | Developing urban planning principles in accordance with climate-neutrality standards
 Updating the General Spatial Planning of Cluj-Napoca
 Developing Zonal Urban Plans for climate-neutral neighborhoods
 Organizing international contests of solutions | CNM | TUCN, BBU, SERVELECT, ROAT | The systemic change, from the urban planning point of view, of the city's entire way of functioning, in accordance with the climate neutrality ambition.
@@ -3297,20 +3213,18 @@ Climate Neutrality Action Plan
 
 #
 
-|  C.1.1: ENABLING ORGANISATIONAL AND GOVERNANCE INTERVENTIONS  |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- |
-|  INTERVENTION NAME | DESCRIPTION | RESPONSIBLE ENTITY / DEPT./PERSON | INVOLVED STAKEHOLDER | ENABLING IMPACT | CO-BENEFITS  |
-|   | for urban renewal interventions Offering incentives to encourage climate-friendly individual behaviors |  |  |  |   |
-|  New governance models for condominiums and their integration into the local climate neutrality ecosystem - enabling environ | Identifying alternative governance models for condominiums existing in dense apartment-block neighborhoods. This activity will involve public consultations with condominium administrators, the Municipality and other stakehold | ROAT | Associations of home owners | Proposal for update of local legislation on condominium management companies submitted for extensive public consultation. Rehabilitation of existing stock is completed much faster. Cost of interventions is significantly reduced. Creative financing options are tapped. | Reduction of energy bills and CO2 emissions. Condominiums will play a central role in implementing any climate-neutrality policies at neighborhood level by acting as liaisons between the local ecosystem, especially the local administration, and the residents.  |
+C.1.1: ENABLING ORGANISATIONAL AND GOVERNANCE INTERVENTIONS
+INTERVENTION NAME | DESCRIPTION | RESPONSIBLE ENTITY / DEPT./PERSON | INVOLVED STAKEHOLDER ENABLING IMPACT CO-BENEFITS
+for urban renewal interventions Offering incentives to encourage climate-friendly individual behaviors
+New governance models for condominiums and their integration into the local climate neutrality ecosystem - enabling environ | Identifying alternative governance models for condominiums existing in dense apartment-block neighborhoods. This activity will involve public consultations with condominium administrators, the Municipality and other stakehold | ROAT | Associations of home owners Proposal for update of local legislation on condominium management companies submitted for extensive public consultation. Rehabilitation of existing stock is completed much faster. Cost of interventions is significantly reduced. Creative financing options are tapped. Reduction of energy bills and CO2 emissions. Condominiums will play a central role in implementing any climate-neutrality policies at neighborhood level by acting as liaisons between the local ecosystem, especially the local administration, and the residents.
 Climate Neutrality Action Plan
 
 #
 
-|  C.1.1: ENABLING ORGANISATIONAL AND GOVERNANCE INTERVENTIONS  |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- |
-|  INTERVENTION NAME | DESCRIPTION | RESPONSIBLE ENTITY / DEPT./PERSON | INVOLVED STAKEHOLDER | ENABLING IMPACT | CO-BENEFITS  |
-|   | ers. |  |  |  |   |
-|  Digital platform – an interactive website managed by the local climate neutrality ecosystem | The main communication platform for climate-neutrality matters will be an interactive website where all the relevant information will be published. (e.g. general information regarding the project, events, pilot activities etc.). Due to its content, the website can be used during different activities to present relevant | CNM, TITC | All the stakeholders mapped for the implementation of the NZC Action Plan are involved. | Transparency, communication, support behavioural change. | Stronger local commitment and behaviour change, ownership of the overall objectives  |
+C.1.1: ENABLING ORGANISATIONAL AND GOVERNANCE INTERVENTIONS
+INTERVENTION NAME | DESCRIPTION | RESPONSIBLE ENTITY / DEPT./PERSON | INVOLVED STAKEHOLDER ENABLING IMPACT CO-BENEFITS
+ers.
+Digital platform – an interactive website managed by the local climate neutrality ecosystem | The main communication platform for climate-neutrality matters will be an interactive website where all the relevant information will be published. (e.g. general information regarding the project, events, pilot activities etc.). Due to its content, the website can be used during different activities to present relevant | CNM, TITC | All the stakeholders mapped for the implementation of the NZC Action Plan are involved. Transparency, communication, support behavioural change. Stronger local commitment and behaviour change, ownership of the overall objectives
 0
 
 PRIMÁRIA D'EDIFICIAL LOCAL
@@ -3322,9 +3236,8 @@ C
 
 C.1.1: ENABLING ORGANISATIONAL AND GOVERNANCE INTERVENTIONS
 
-|  INTERVENTION NAME | DESCRIPTION | RESPONSIBLE ENTITY / DEPT./ PERSON | INVOLVED STAKEHOLDER | ENABLING IMPACT | CO-BENEFITS  |
-| --- | --- | --- | --- | --- | --- |
-|   | information or tools (e.g., during the final conference the website can be used to showcase the project's findings). |  |  |  |   |
+INTERVENTION NAME | DESCRIPTION | RESPONSIBLE ENTITY / DEPT./ PERSON | INVOLVED STAKEHOLDER | ENABLING IMPACT | CO-BENEFITS
+information or tools (e.g., during the final conference the website can be used to showcase the project's findings).
 
 C-1.2: DESCRIPTION OF ORGANISATION AND GOVERNANCE INTERVENTIONS – TEXTUAL AND VISUAL ELEMENTS
 
@@ -3436,18 +3349,18 @@ Climate Neutrality Action Plan
 
 C.2.1: ENABLING SOCIAL INNOVATION INTERVENTIONS
 
-|  INTERVENTION NAME | DESCRIPTION | RESPONSIB. ENTITY / DEPT. / PERSON | INVOLVED STAKEHOLDER | ENABLING IMPACT | CO-BENEFITS  |
+| INTERVENTION NAME | DESCRIPTION | RESPONSIB. ENTITY / DEPT. / PERSON | INVOLVED STAKEHOLDER | ENABLING IMPACT | CO-BENEFITS |
 | --- | --- | --- | --- | --- | --- |
-|  Behavioral, perception and modelling, analysis on the individual adaptation of residents & businesses to climate neutrality | Designing and applying a: - consumer survey that targets city residents (owners and tenants) to determine the current understanding of different related concepts, the various typologies of individual climate neutral-related behaviors, with special focus on energy demand, the availability to learn more about climate neutrality and to become part of a Net Zero Coalition, the perception on potential barriers to individual adoption of neutrality behaviors etc. Another goal is to establish a group of individuals needed to experiment with various types of local policies to stimulate climate neutral communities and also for monitoring purposes. - set of focused interviews condominium administrators and local business owners to determine the current understanding of different related concepts, the various typologies of organizational climate neutral-related behaviors, with special focus on energy demand, the availability to learn more about climate neutrality and to become part of a Net Zero Coalition, to experiment various innovative | BBU | Citizens and business owners | The intervention will allow the evidence-based substantiation of all other interventions and will contribute to the faster reduction of the identified behavioral barriers | Improved local understanding Stronger local commitment Improved quality of life  |
+| Behavioral, perception and modelling, analysis on the individual adaptation of residents & businesses to climate neutrality | Designing and applying a: - consumer survey that targets city residents (owners and tenants) to determine the current understanding of different related concepts, the various typologies of individual climate neutral-related behaviors, with special focus on energy demand, the availability to learn more about climate neutrality and to become part of a Net Zero Coalition, the perception on potential barriers to individual adoption of neutrality behaviors etc. Another goal is to establish a group of individuals needed to experiment with various types of local policies to stimulate climate neutral communities and also for monitoring purposes. - set of focused interviews condominium administrators and local business owners to determine the current understanding of different related concepts, the various typologies of organizational climate neutral-related behaviors, with special focus on energy demand, the availability to learn more about climate neutrality and to become part of a Net Zero Coalition, to experiment various innovative | BBU | Citizens and business owners | The intervention will allow the evidence-based substantiation of all other interventions and will contribute to the faster reduction of the identified behavioral barriers | Improved local understanding Stronger local commitment Improved quality of life |
 Climate Neutrality Action Plan
 
 C.
 
-|  C.2.1: ENABLING SOCIAL INNOVATION INTERVENTIONS  |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- |
-|  INTERVENTION NAME | DESCRIPTION | RESPONSIB. ENTITY / DEPT. / PERSON | INVOLVED STAKEHOLDER | ENABLING IMPACT | CO-BENEFITS  |
-|   | solutions to become more „green“, the perception on potential barriers to the adoption of neutrality practices etc. |  |  |  |   |
-|  Civic imagination & Innovation Center - CIIC modelling for climate neutrality at neighborhood level | This activity will build on the successful experience of Cluj-Napoca to become the first Municipality in Romania to implement the participatory budgeting and to establish a CIIC – Civic Imagination and Innovation Center.
+C.2.1: ENABLING SOCIAL INNOVATION INTERVENTIONS
+INTERVENTION NAME | DESCRIPTION | RESPONSIB. ENTITY / DEPT. / PERSON | INVOLVED STAKEHOLDER ENABLING IMPACT CO-BENEFITS
+solutions to become more „green“, the perception on potential barriers to the adoption of neutrality practices etc.
+
+Civic imagination & Innovation Center - CIIC modelling for climate neutrality at neighborhood level | This activity will build on the successful experience of Cluj-Napoca to become the first Municipality in Romania to implement the participatory budgeting and to establish a CIIC – Civic Imagination and Innovation Center.
 CIIC concept will be updated, with the support of external expertise contracted by the Municipality, to focus more on climate neutrality and on related specific local needs.
 CIIC events will be designed to bring together international and local experts that have the opportunity to interact directly with citizens, businesses an NGOs from a certain neighborhood on given climate neutral-related topics.
 Also, specific CII event concepts will be prepared and tested for new target groups, such as children, students and elderly. A new concept for participatory budgeting at neighborhood level on climate neutrality related topics, will be developed and tested. | CNM | All stakeholders foreseen for the NZC Action Plan implementation | The intervention will stimulate civic engagement and innovation, as acceleration engines for all the foreseen initiatives to achieve climate neutrality | Stronger local commitment
@@ -3462,9 +3375,10 @@ Climate Neutrality Action Plan
 
 C.2.1: ENABLING SOCIAL INNOVATION INTERVENTIONS
 
-|  INTERVENTION NAME | DESCRIPTION | RESPONSIBLE. ENTITY / DEPT. / PERSON | INVOLVED STAKEHOLDER | ENABLING IMPACT | CO-BENEFITS  |
+| INTERVENTION NAME | DESCRIPTION | RESPONSIBLE. ENTITY / DEPT. / PERSON | INVOLVED STAKEHOLDER | ENABLING IMPACT | CO-BENEFITS |
 | --- | --- | --- | --- | --- | --- |
-|  NetZeroCaravan in neighborhood s and suburbs | The Caravan is the vehicle that ensures the connection of all neighborhood centers and suburbs in a single network through the system of translating good practices, and at the same time the unification of all messages into one.
+
+NetZeroCaravan in neighborhood s and suburbs | The Caravan is the vehicle that ensures the connection of all neighborhood centers and suburbs in a single network through the system of translating good practices, and at the same time the unification of all messages into one.
 
 It will be at the same time a place for the formation of the community core and for spending free time. Here contacts will be made and friends will be made around Ground Level Action activities. The community will be invited through social facilitation actions to form debate centers around the climate neutrality theme.
 
@@ -3475,7 +3389,7 @@ Integrated and coordinated efforts, which could enable higher GHG reduction
 Strengthened community cohesion and collaboration
 Increased chances of innovation and improvements
 Improved local understanding  |
-|  Comprehensive climate-neutrality masterplan for each dense multi-apartment neighborhood and suburbs | A comprehensive urban regeneration masterplan will be prepared a dense multi-apartment neighborhood and suburb.
+Comprehensive climate-neutrality masterplan for each dense multi-apartment neighborhood and suburbs | A comprehensive urban regeneration masterplan will be prepared a dense multi-apartment neighborhood and suburb.
 
 The focus will be on promoting sustainable mobility, developing blue-green corridors and | TUCN, RAO | All stakeholders foreseen for the NZC Action Plan implementation | Masterplans will create the needed planning framework for accelerating the transition to climate neutrality and outline the | Reduced urban sprawl by limiting land available for development in the metropolitan area
 Energy cost  |
@@ -3483,10 +3397,9 @@ Climate Neutrality Action Plan
 
 C.
 
-|  C.2.1: ENABLING SOCIAL INNOVATION INTERVENTIONS  |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- |
-|  INTERVENTION NAME | DESCRIPTION | RESPONSIB. ENTITY / DEPT. / PERSON | INVOLVED STAKEHOLDER | ENABLING IMPACT | CO-BENEFITS  |
-|   | expansion of green spaces, reducing energy use in public spaces (e.g. street lighting, sprinkler systems), ensuring easy access by foot to amenities, reducing UHI footprint, implementing and integrating Smart City solutions, increasing accessibility for vulnerable groups and improving the quality of life (to prevent urban flight to the suburbs and peri-urban areas). The masterplan will take into consideration existent local policies, but will also propose the introduction of new policies if research findings will call for this.The masterplan will also take into consideration similar urban regeneration work in the city and in other, but will focus on interventions that will enable the transition to climate neutrality. The draft versions of the masterplan will be subject to public consultation within the framework of CIIC innovation modelling events. |  |  | intervention sectors from an urban planning perspective | reduction for households
+C.2.1: ENABLING SOCIAL INNOVATION INTERVENTIONS
+INTERVENTION NAME | DESCRIPTION | RESPONSIB. ENTITY / DEPT. / PERSON | INVOLVED STAKEHOLDER ENABLING IMPACT CO-BENEFITS
+expansion of green spaces, reducing energy use in public spaces (e.g. street lighting, sprinkler systems), ensuring easy access by foot to amenities, reducing UHI footprint, implementing and integrating Smart City solutions, increasing accessibility for vulnerable groups and improving the quality of life (to prevent urban flight to the suburbs and peri-urban areas). The masterplan will take into consideration existent local policies, but will also propose the introduction of new policies if research findings will call for this.The masterplan will also take into consideration similar urban regeneration work in the city and in other, but will focus on interventions that will enable the transition to climate neutrality. The draft versions of the masterplan will be subject to public consultation within the framework of CIIC innovation modelling events. | intervention sectors from an urban planning perspective reduction for households
 Reduced air pollution and congestion
 Improved urban aesthetics
 Reduced energy bills
@@ -3496,22 +3409,21 @@ Additional private investments and jobs
 Improved aspects of buildings
 Rehabilitated existing housing stock
 Reduced local budget energy costs  |
-|   |   |   |   |   |  |
-|  Detailed | For areas to be identified by the Cluj-Napoca Municipality based | TUCN, | All | The detailed | Reduced urban sprawl  |
+Detailed | For areas to be identified by the Cluj-Napoca Municipality based | TUCN, | All | The detailed | Reduced urban sprawl
 Climate Neutrality Action Plan
 
 C.2.1: ENABLING SOCIAL INNOVATION INTERVENTIONS
 
-|  INTERVENTION NAME | DESCRIPTION | RESPONSIBLE. ENTITY / DEPT. / PERSON | INVOLVED STAKEHOLDER | ENABLING IMPACT | CO-BENEFITS  |
+| INTERVENTION NAME | DESCRIPTION | RESPONSIBLE. ENTITY / DEPT. / PERSON | INVOLVED STAKEHOLDER | ENABLING IMPACT | CO-BENEFITS |
 | --- | --- | --- | --- | --- | --- |
-|  proposals for transforming different areas in each neighborhood/ suburb into climate neutral demo district | on the feedback received from citizens and stakeholders, Zonal Urban Plans and Feasibility Plans will be elaborated, and proposed interventions will be financed from available funds (e.g. Regional Operational Programme 2021-2027, local funds, the National Environment Fund, OP Sustainable Development 2021-2027). | RAO | stakeholders foreseen for the NZC Action Plan implementation | proposals will offer place-based urban acupuncture solutions to accelerate the transition towards climate-neutrality in a bottom-up approach | by limiting land available for development in the metropolitan area
+| proposals for transforming different areas in each neighborhood/ suburb into climate neutral demo district | on the feedback received from citizens and stakeholders, Zonal Urban Plans and Feasibility Plans will be elaborated, and proposed interventions will be financed from available funds (e.g. Regional Operational Programme 2021-2027, local funds, the National Environment Fund, OP Sustainable Development 2021-2027). | RAO | stakeholders foreseen for the NZC Action Plan implementation | proposals will offer place-based urban acupuncture solutions to accelerate the transition towards climate-neutrality in a bottom-up approach | by limiting land available for development in the metropolitan area |
 Improved quality of life
 Reduced air pollution and congestion
 Improved urban aesthetics
 Improved quality of life
 Improved aspects of buildings
 Rehabilitated existing housing stock  |
-|  Terms of Reference for the renovation of private and public buildings in line with the nZEB principles, but also with other local priorities (e.g., extending the average living area of | The proposed Terms of Reference will be modular, to allow easy incorporation of relevant elements in individual building renovation proposals adapted to different local contexts.
+Terms of Reference for the renovation of private and public buildings in line with the nZEB principles, but also with other local priorities (e.g., extending the average living area of | The proposed Terms of Reference will be modular, to allow easy incorporation of relevant elements in individual building renovation proposals adapted to different local contexts.
 In addition, the ToR will include the option for enlarging the living space (e.g. through the construction of an outer shell) with a focus on: growing the surface of liveable space, | TUCN, RAO | Citizens | The ToR will facilitate the reduction of the the built sector's carbon footprint, by modelling building renovations on climate-neutral principles | Energy cost reduction for households
 Improved quality of life
 Improved urban aesthetics
@@ -3521,14 +3433,14 @@ Climate Neutrality Action Plan
 
 C.
 
-|  C.2.1: ENABLING SOCIAL INNOVATION INTERVENTIONS  |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- |
-|  INTERVENTION NAME | DESCRIPTION | RESPONSIB. ENTITY / DEPT. / PERSON | INVOLVED STAKEHOLDER | ENABLING IMPACT | CO-BENEFITS  |
-|  the apartments or the capacity of schools) | improving the comfort level of apartments, and creating commercial/recreational spaces that could generate revenue for residents or encourage community activities.
-The ToR Model will incorporate various modules for energy renovation, such as (minimal list): Measures to reduce the waste of heat, Measures to reduce the use of energy in common spaces (e.g. elevators, stairway lightbulbs), Measures to generate heat and cooling in a greener, and ideally, lower cost way (e.g. installation of heat pumps, electric boilers), Measures to reduce the cost of generating hot water (e.g. solar hot water panels), Measures to reduce electricity use in apartments (e.g. installation of automatic shut-off systems). Additionally, the TOR will include options for enlarging the net living surface of the apartments, with the purpose of promoting social inclusion and increasing the quality of life. |  |  |  | aspects of buildings
+C.2.1: ENABLING SOCIAL INNOVATION INTERVENTIONS
+INTERVENTION NAME | DESCRIPTION | RESPONSIB. ENTITY / DEPT. / PERSON | INVOLVED STAKEHOLDER ENABLING IMPACT CO-BENEFITS
+
+the apartments or the capacity of schools) | improving the comfort level of apartments, and creating commercial/recreational spaces that could generate revenue for residents or encourage community activities.
+The ToR Model will incorporate various modules for energy renovation, such as (minimal list): Measures to reduce the waste of heat, Measures to reduce the use of energy in common spaces (e.g. elevators, stairway lightbulbs), Measures to generate heat and cooling in a greener, and ideally, lower cost way (e.g. installation of heat pumps, electric boilers), Measures to reduce the cost of generating hot water (e.g. solar hot water panels), Measures to reduce electricity use in apartments (e.g. installation of automatic shut-off systems). Additionally, the TOR will include options for enlarging the net living surface of the apartments, with the purpose of promoting social inclusion and increasing the quality of life. | |   | aspects of buildings
 Rehabilitated existing housing stock
 Enhanced social inclusion  |
-|  Social & Mass Media coverage | Social and mass media campaigns for awareness, information, education and civic involvement, on all the channels of the representatives of the Net Zero Coalition. | All the Net Zero Coalition Members | All stakeholders foreseen for the NZC Action Plan implementation | The media campaigns will stimulate the local community, especially in the context where the citizens are consumers of media products | Stronger local commitment
+Social & Mass Media coverage | Social and mass media campaigns for awareness, information, education and civic involvement, on all the channels of the representatives of the Net Zero Coalition. | All the Net Zero Coalition Members | All stakeholders foreseen for the NZC Action Plan implementation | The media campaigns will stimulate the local community, especially in the context where the citizens are consumers of media products | Stronger local commitment
 Ownership of the the overall objectives
 Improved visibility
 Increased civic  |
@@ -3536,12 +3448,11 @@ Climate Neutrality Action Plan
 
 C.
 
-|  C.2.1: ENABLING SOCIAL INNOVATION INTERVENTIONS  |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- |
-|  INTERVENTION NAME | DESCRIPTION | RESPONSIB. ENTITY / DEPT. / PERSON | INVOLVED STAKEHOLDER | ENABLING IMPACT | CO-BENEFITS  |
-|   |  |  |  | and these channels are the most suitable for them to absorb information about the city's climate neutrality objectives | awareness and involvement
+C.2.1: ENABLING SOCIAL INNOVATION INTERVENTIONS
+INTERVENTION NAME | DESCRIPTION | RESPONSIB. ENTITY / DEPT. / PERSON | INVOLVED STAKEHOLDER ENABLING IMPACT CO-BENEFITS
+and these channels are the most suitable for them to absorb information about the city's climate neutrality objectives | awareness and involvement
 Better informed citizens  |
-|  International Climate Neutrality Summits | The International Carbon Neutrality Summits will be dedicated to all the intense efforts that European cities make, thanks to their citizens and the local ecosystems, in reaching the European and international objectives of reducing the urban fabric's impact on the climate.
+International Climate Neutrality Summits | The International Carbon Neutrality Summits will be dedicated to all the intense efforts that European cities make, thanks to their citizens and the local ecosystems, in reaching the European and international objectives of reducing the urban fabric's impact on the climate.
 Local, national and international stakeholders (from local and national professionals to international experts and national and European governing institutions) will be invited to join this pursuit of increasing the visibility of the actions that urban actors take in order to contribute to the stringent need of achieving climate neutrality.
 Representatives of civil society and citizens will also be invited to attend the International Carbon Neutrality Summits not only as participants, but also as key speakers, because they are the ones who catalyse the proposed change, bringing real, place-based inputs to the | CNM | All stakeholders foreseen for the NZC Action Plan implementation | The summits will formalize and promote all the undertaken efforts, putting under the spotlight the ambitions that Cluj-Napoca and European cities have in terms of climate neutrality. This intervention will formalize, through the dedication of an international event, the urban commitment to reduce the negative impact on the climate and will stimulate other actors to engage in such practices. | Increased international visibility
 Facilitated transfer of international know-how, experiences, lessons learned
@@ -3550,11 +3461,10 @@ Climate Neutrality Action Plan
 
 C.
 
-|  C.2.1: ENABLING SOCIAL INNOVATION INTERVENTIONS  |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- |
-|  INTERVENTION NAME | DESCRIPTION | RESPONSIB. ENTITY / DEPT. / PERSON | INVOLVED STAKEHOLDER | ENABLING IMPACT | CO-BENEFITS  |
-|   | climate neutrality table. |  |  |  |   |
-|  Climate Neutrality Digital Twin | The Climate Neutrality Digital Twin will be developed as an innovative technical solution and will act as a transversal, scalable solution that will be able to: a) collect and analyse data, b) make predictions relevant for achieving climate-neutrality.Using the state-of-the art technologies and local expertise, the Digital Twin technology will collect, visualise, monitor and forecast social and natural behaviours and environments and will capture the different pathways that lead to climate-neutrality. It will be calibrated at neighborhood or 'architectural piece.' | TITC | Citizens | The digital twin represents the technological tool for facilitating climate neutrality in the city, allowing an innovative, data-based process. | Real time adjustments to the proposals made, based on changing circumstancesIncreased innovation and technological progress  |
+C.2.1: ENABLING SOCIAL INNOVATION INTERVENTIONS
+INTERVENTION NAME | DESCRIPTION | RESPONSIB. ENTITY / DEPT. / PERSON | INVOLVED STAKEHOLDER ENABLING IMPACT CO-BENEFITS
+climate neutrality table.
+Climate Neutrality Digital Twin | The Climate Neutrality Digital Twin will be developed as an innovative technical solution and will act as a transversal, scalable solution that will be able to: a) collect and analyse data, b) make predictions relevant for achieving climate-neutrality.Using the state-of-the art technologies and local expertise, the Digital Twin technology will collect, visualise, monitor and forecast social and natural behaviours and environments and will capture the different pathways that lead to climate-neutrality. It will be calibrated at neighborhood or 'architectural piece.' | TITC | Citizens The digital twin represents the technological tool for facilitating climate neutrality in the city, allowing an innovative, data-based process. Real time adjustments to the proposals made, based on changing circumstancesIncreased innovation and technological progress
 PRINARIA OF COMMERCIAL LITERATURE PUBLICATION CODINA 2031
 
 CILCIL
@@ -3716,9 +3626,9 @@ The table below delineates interventions for Organizational and Governance Innov
 
 The implementation of interventions listed in the table necessitates a range of resources, including time, human, material, and financial resources. The Municipality's internal teams of experts will provide human resources, while members of the Coalition will contribute with their expertise/experience, as required. Material resources, such as IT equipment, consumables, event spaces, and logistic equipment, have been taken into account in the estimated budget, reflected in the second column of the table. The Coalition will review and update the costs during the reiteration phases of the CCC, based on co-working sessions. The allocated time for each intervention differs based on its complexity.
 
-|  INTERVENTION | ESTIMATED BUDGET | FURTHER EXPLANATIONS  |
+| INTERVENTION | ESTIMATED BUDGET | FURTHER EXPLANATIONS |
 | --- | --- | --- |
-|  Behavioral, perception and modelling analysis on the individual adaptation of residents & businesses to climate neutrality | 160.000 eur | The proposed budget outlines the development of a consumer survey to assess residents' comprehension of climate neutrality concepts, individual behaviors linked to climate neutrality (with a particular emphasis on energy demand), willingness to acquire knowledge about climate neutrality and participate in a climate-neutral community, and potential barriers to adopting climate-neutral behaviors. Furthermore, the survey seeks to identify groups of individuals who can test local policies promoting climate neutrality at the neighborhood level and serve as a monitoring team. The budget also includes a series of focused interviews with representatives from the local ecosystem to evaluate their understanding of climate neutrality concepts, organizational behaviors associated with climate neutrality (with a focus on energy demand), willingness to learn more about climate neutrality, experiment with innovative solutions to become more environmentally friendly, and any perceived obstacles to adopting climate-neutral practices. The analysis  |
+| Behavioral, perception and modelling analysis on the individual adaptation of residents & businesses to climate neutrality | 160.000 eur | The proposed budget outlines the development of a consumer survey to assess residents' comprehension of climate neutrality concepts, individual behaviors linked to climate neutrality (with a particular emphasis on energy demand), willingness to acquire knowledge about climate neutrality and participate in a climate-neutral community, and potential barriers to adopting climate-neutral behaviors. Furthermore, the survey seeks to identify groups of individuals who can test local policies promoting climate neutrality at the neighborhood level and serve as a monitoring team. The budget also includes a series of focused interviews with representatives from the local ecosystem to evaluate their understanding of climate neutrality concepts, organizational behaviors associated with climate neutrality (with a focus on energy demand), willingness to learn more about climate neutrality, experiment with innovative solutions to become more environmentally friendly, and any perceived obstacles to adopting climate-neutral practices. The analysis |
 0
 
 PRAVINA &amp; CONSULTING
@@ -3729,20 +3639,18 @@ CIL
 
 Climate Neutrality Action Plan
 
-|   |  | will involve various categories of stakeholders, and each instrument will be tailored to the characteristics of the specific targeted categories of stakeholders.  |
+|  | will involve various categories of stakeholders, and each instrument will be tailored to the characteristics of the specific targeted categories of stakeholders. |  |
 | --- | --- | --- |
-|  Knowledge & Competence audit of the local climate neutrality ecosystem | 122.500 eur | The Coalition has allocated funds for the purpose of mapping and auditing the local climate neutrality ecosystem. The audit will assess the technical and social competences relevant to the city's climate neutrality goals in order to gain a better understanding of the local ecosystem's ability to plan, implement, and monitor climate neutrality policies at the neighborhood level. Additionally, the audit aims to identify potential stakeholders and facilitate a more efficient learning process for ecosystem actors. To accomplish this, individual knowledge and competence audits will be conducted for various local stakeholders, including public institutions, public companies, universities, research institutions, NGOs, and professional associations. These audits will evaluate important aspects necessary for the transition to climate neutrality, such as mission, vision, objectives, background, areas of expertise, available resources, processes, technologies, knowledge dissemination, learning needs, cooperation with other members of the ecosystem, and more.  |
-|  Civic Imagination & Innovation Center - CIIC modelling for climate neutrality at neighborhood level | 235.500 eur | This initiative aims to update and refine the ideas and approaches within Civic Imagination & Innovation Center - CIIC, which has been successfully implemented in Cluj-Napoca, by focusing more intensively on climate neutrality. The CIIC will be managed by Municipality, and external experts will be contracted to provide support. The initiative will host CIIC events that bring together international and local experts to interact with citizens, businesses, and NGOs on climate-neutral related topics. Additionally, new concepts for civic imagination and innovation events will be developed and tested for target groups such as children, students, and the elderly. The initiative will also test new participatory budgeting concepts at the neighborhood level for climate neutrality-related topics, in addition to organizing various forms of participatory budgeting processes and civic imagination and innovation events.  |
-|  Net Zero Caravan in urban neighbourhoods | 88.000 eur | The estimated budget will be allocated towards establishing communities at the neighborhood level that are willing to actively engage in the development, implementation, and supervision of participatory public policies pertaining to climate neutrality. This effort will involve conducting meetings in informal neighborhood spaces through the Net Zero Caravan initiative. After residents become involved with the NZ Caravans, they will be able to participate in specialized training and educational workshops focused on different aspects of climate neutrality and community-led initiatives. These workshops may include topics such as saving energy in their own homes, preventing food waste, recycling waste, and becoming a prosumer.  |
-|  Net Zero Caravan in the metropolitan area of Cluj-Napoca | 94.000 eur | The focus of the intervention is on the suburban areas in Cluj-Napoca's metropolitan area, with the goal of transferring the knowledge gained in the city center to the peri-urban communities. The Metropolitan Carbon Neutrality Caravan aims to promote the zero-carbon mindset of Cluj-Napoca to its suburbs, disseminate educational materials to various stakeholders in the Cluj Metropolitan Area, and encourage behavioral changes among the peri-urban residents, businesses, and public administrations to adopt the urban climate-neutral mentality that is specific to the metropolitan demographics. To accomplish these objectives, the caravan will organize workshops, training events, and community-building initiatives that target local administrations, residents, and other stakeholders in each neighborhood. In-depth training sessions will be conducted, to increase awareness of climate-neutrality-related topics, assist with the adoption of the proposed tools, and identify potential NZ Champions who can exchange best practices and experiences with those from urban neighborhoods. The training sessions will be available to public servants, residents, NGOs, business owners, and other interested parties.  |
-1
-
-|  Enhancing the capacity of the ecosystem to implement and monitor climate neutral policies at neighborhood level | 300.000 eur | The budget allocated for this intervention comprises several elements. Firstly, the NZChamp Campaign will be conducted to select climate neutrality managers/champions in neighborhoods. The competition will aim to identify private companies, NGOs, and institutions that are implementing measurable and replicable climate neutrality measures at the neighborhood level. Secondly, packages of training materials and good practice examples will be provided for various categories of stakeholders such as pupils, students, home owners, business owners, teachers, and researchers, etc. The materials will offer guidance on actions that can be taken in day-to-day activities and medium to long-term projects to accelerate neighborhood climate neutrality achievement. Thirdly, an interactive framework will be developed to enhance building administrators' knowledge of climate neutrality. The framework aims to assist building administrators in implementing measures and actions that can facilitate achieving climate neutrality at the condominium level. The budget will cover training and dissemination events organized for condominium administrators on topics such as energy saving, on-site renewable energy generation, and smart buildings. Finally, experience exchanges, networking, and learning activities will be organized for representatives of the local ecosystem on climate neutrality themes.  |
+| Knowledge & Competence audit of the local climate neutrality ecosystem | 122.500 eur | The Coalition has allocated funds for the purpose of mapping and auditing the local climate neutrality ecosystem. The audit will assess the technical and social competences relevant to the city's climate neutrality goals in order to gain a better understanding of the local ecosystem's ability to plan, implement, and monitor climate neutrality policies at the neighborhood level. Additionally, the audit aims to identify potential stakeholders and facilitate a more efficient learning process for ecosystem actors. To accomplish this, individual knowledge and competence audits will be conducted for various local stakeholders, including public institutions, public companies, universities, research institutions, NGOs, and professional associations. These audits will evaluate important aspects necessary for the transition to climate neutrality, such as mission, vision, objectives, background, areas of expertise, available resources, processes, technologies, knowledge dissemination, learning needs, cooperation with other members of the ecosystem, and more. |
+| Civic Imagination & Innovation Center - CIIC modelling for climate neutrality at neighborhood level | 235.500 eur | This initiative aims to update and refine the ideas and approaches within Civic Imagination & Innovation Center - CIIC, which has been successfully implemented in Cluj-Napoca, by focusing more intensively on climate neutrality. The CIIC will be managed by Municipality, and external experts will be contracted to provide support. The initiative will host CIIC events that bring together international and local experts to interact with citizens, businesses, and NGOs on climate-neutral related topics. Additionally, new concepts for civic imagination and innovation events will be developed and tested for target groups such as children, students, and the elderly. The initiative will also test new participatory budgeting concepts at the neighborhood level for climate neutrality-related topics, in addition to organizing various forms of participatory budgeting processes and civic imagination and innovation events. |
+| Net Zero Caravan in urban neighbourhoods | 88.000 eur | The estimated budget will be allocated towards establishing communities at the neighborhood level that are willing to actively engage in the development, implementation, and supervision of participatory public policies pertaining to climate neutrality. This effort will involve conducting meetings in informal neighborhood spaces through the Net Zero Caravan initiative. After residents become involved with the NZ Caravans, they will be able to participate in specialized training and educational workshops focused on different aspects of climate neutrality and community-led initiatives. These workshops may include topics such as saving energy in their own homes, preventing food waste, recycling waste, and becoming a prosumer. |
+| Net Zero Caravan in the metropolitan area of Cluj-Napoca | 94.000 eur | The focus of the intervention is on the suburban areas in Cluj-Napoca's metropolitan area, with the goal of transferring the knowledge gained in the city center to the peri-urban communities. The Metropolitan Carbon Neutrality Caravan aims to promote the zero-carbon mindset of Cluj-Napoca to its suburbs, disseminate educational materials to various stakeholders in the Cluj Metropolitan Area, and encourage behavioral changes among the peri-urban residents, businesses, and public administrations to adopt the urban climate-neutral mentality that is specific to the metropolitan demographics. To accomplish these objectives, the caravan will organize workshops, training events, and community-building initiatives that target local administrations, residents, and other stakeholders in each neighborhood. In-depth training sessions will be conducted, to increase awareness of climate-neutrality-related topics, assist with the adoption of the proposed tools, and identify potential NZ Champions who can exchange best practices and experiences with those from urban neighborhoods. The training sessions will be available to public servants, residents, NGOs, business owners, and other interested parties. |
+| Enhancing the capacity of the ecosystem to implement and monitor climate neutral policies at neighborhood level | 300.000 eur | The budget allocated for this intervention comprises several elements. Firstly, the NZChamp Campaign will be conducted to select climate neutrality managers/champions in neighborhoods. The competition will aim to identify private companies, NGOs, and institutions that are implementing measurable and replicable climate neutrality measures at the neighborhood level. Secondly, packages of training materials and good practice examples will be provided for various categories of stakeholders such as pupils, students, home owners, business owners, teachers, and researchers, etc. The materials will offer guidance on actions that can be taken in day-to-day activities and medium to long-term projects to accelerate neighborhood climate neutrality achievement. Thirdly, an interactive framework will be developed to enhance building administrators' knowledge of climate neutrality. The framework aims to assist building administrators in implementing measures and actions that can facilitate achieving climate neutrality at the condominium level. The budget will cover training and dissemination events organized for condominium administrators on topics such as energy saving, on-site renewable energy generation, and smart buildings. Finally, experience exchanges, networking, and learning activities will be organized for representatives of the local ecosystem on climate neutrality themes. |
 | --- | --- | --- |
-|  Defining a set of urban planning principles and documents for climate neutral interventions, plus incentives for their implementation | 9.700.000 eur | The proposed budget encompasses the following sub-interventions: developing urban planning principles that integrate energy-saving and energy-generating methods, nature-based solutions, sustainable mobility, smart city initiatives, and UHI mitigation to improve citizens' quality of life and prevent urban migration to suburban and peri-urban areas. These principles will be based not only on technical expertise from Coalition partners but also on input from citizens and stakeholders. Additionally, the General Spatial Planning of Cluj-Napoca will be updated to incorporate strategies for reducing CO2 emissions in all targeted areas. Furthermore, at least 2 Zonal Urban Plans will be created for climate-neutral neighborhoods and around 8 international contests will be held for solutions to the major urban renewal interventions outlined in the Action Plan. The budget also includes costs associated with several incentives designed to encourage climate-friendly individual behaviors, such as tax reductions for green commercial buildings and the local implementation of the national RABLA program, which will offer financial support (in the form of discounts from the total price of the new purchased e-vehicle) to residents who purchase electric cars in exchange for giving up their old, polluting vehicles.  |
-|  Developing a comprehensive masterplan model for transforming 1 high density apartment block neighborhood into a climate neutral district | 95.000 eur | The allocated budget will cover the development of a masterplan for comprehensive urban renewal, which will focus on a single neighborhood. The plan will prioritize various initiatives such as sustainable mobility, the expansion of green spaces and blue-green corridors, reducing energy consumption in public spaces like street lighting and sprinkler systems, ensuring pedestrian-friendly access to amenities, decreasing the urban heat island (UHI) effect, implementing Smart City solutions, increasing accessibility for vulnerable groups, and enhancing the overall quality of life in the area to discourage urban migration to suburban and peri-urban regions. The existing local policies will be taken into account, but the plan will propose new policies if new discoveries demonstrate their necessity.  |
-|  Elaborating a detailed proposal for transforming one pilot area of the 1 neighbourhood into a climate neutral demo district | 117.000 eur | The budget estimate encompasses a particular region of the neighborhood selected by the Cluj-Napoca Municipality that will be subject to the detailed proposal for transforming it into a climate neutral space, with input from citizens and stakeholders. A financially viable and detailed proposal will be devised for the chosen area, using a comprehensive plan for the creation of a climate-neutral neighborhood. This plan will integrate all the emission domains in the final solution.  |
-|  Developing a ToR model for the renovation of block of flats situated in high density multi-apartment neighborhoods in order to | 58.000 eur | The proposed Terms of Reference (ToR) will be structured in a modular manner, facilitating the integration of relevant components into building renovation proposals tailored to meet the specific requirements of densely populated apartment-block neighborhoods. The ToR will also include an option to expand living space by constructing an outer shell,  |
+| Defining a set of urban planning principles and documents for climate neutral interventions, plus incentives for their implementation | 9.700.000 eur | The proposed budget encompasses the following sub-interventions: developing urban planning principles that integrate energy-saving and energy-generating methods, nature-based solutions, sustainable mobility, smart city initiatives, and UHI mitigation to improve citizens' quality of life and prevent urban migration to suburban and peri-urban areas. These principles will be based not only on technical expertise from Coalition partners but also on input from citizens and stakeholders. Additionally, the General Spatial Planning of Cluj-Napoca will be updated to incorporate strategies for reducing CO2 emissions in all targeted areas. Furthermore, at least 2 Zonal Urban Plans will be created for climate-neutral neighborhoods and around 8 international contests will be held for solutions to the major urban renewal interventions outlined in the Action Plan. The budget also includes costs associated with several incentives designed to encourage climate-friendly individual behaviors, such as tax reductions for green commercial buildings and the local implementation of the national RABLA program, which will offer financial support (in the form of discounts from the total price of the new purchased e-vehicle) to residents who purchase electric cars in exchange for giving up their old, polluting vehicles. |
+| Developing a comprehensive masterplan model for transforming 1 high density apartment block neighborhood into a climate neutral district | 95.000 eur | The allocated budget will cover the development of a masterplan for comprehensive urban renewal, which will focus on a single neighborhood. The plan will prioritize various initiatives such as sustainable mobility, the expansion of green spaces and blue-green corridors, reducing energy consumption in public spaces like street lighting and sprinkler systems, ensuring pedestrian-friendly access to amenities, decreasing the urban heat island (UHI) effect, implementing Smart City solutions, increasing accessibility for vulnerable groups, and enhancing the overall quality of life in the area to discourage urban migration to suburban and peri-urban regions. The existing local policies will be taken into account, but the plan will propose new policies if new discoveries demonstrate their necessity. |
+| Elaborating a detailed proposal for transforming one pilot area of the 1 neighbourhood into a climate neutral demo district | 117.000 eur | The budget estimate encompasses a particular region of the neighborhood selected by the Cluj-Napoca Municipality that will be subject to the detailed proposal for transforming it into a climate neutral space, with input from citizens and stakeholders. A financially viable and detailed proposal will be devised for the chosen area, using a comprehensive plan for the creation of a climate-neutral neighborhood. This plan will integrate all the emission domains in the final solution. |
+| Developing a ToR model for the renovation of block of flats situated in high density multi-apartment neighborhoods in order to | 58.000 eur | The proposed Terms of Reference (ToR) will be structured in a modular manner, facilitating the integration of relevant components into building renovation proposals tailored to meet the specific requirements of densely populated apartment-block neighborhoods. The ToR will also include an option to expand living space by constructing an outer shell, |
 2
 
 PRAVINA &amp; CONSULTING
@@ -3753,82 +3661,77 @@ CIL
 
 Climate Neutrality Action Plan
 
-|  accommodate both nZEB targets and the need to expand the living area |  | with the primary aim of increasing the livable area, enhancing apartment comfort, and creating commercial/recreational spaces that could generate income for residents or encourage community activities. The proposal has several objectives. Firstly, improving the quality of life, both inside and outside the building, including its appearance, can significantly reduce the number of people who move to suburban or peri-urban areas in search of better living conditions. Secondly, the possibility of constructing additional commercial spaces or housing units can attract private developers who can recover their costs through renting or selling these new spaces. Moreover, having more commercial areas in proximity to residents can decrease the need for travel by car to fulfill personal needs. Lastly, the ToR model will be applied to a building that can function as a pilot project.  |
+| accommodate both nZEB targets and the need to expand the living area |  | with the primary aim of increasing the livable area, enhancing apartment comfort, and creating commercial/recreational spaces that could generate income for residents or encourage community activities. The proposal has several objectives. Firstly, improving the quality of life, both inside and outside the building, including its appearance, can significantly reduce the number of people who move to suburban or peri-urban areas in search of better living conditions. Secondly, the possibility of constructing additional commercial spaces or housing units can attract private developers who can recover their costs through renting or selling these new spaces. Moreover, having more commercial areas in proximity to residents can decrease the need for travel by car to fulfill personal needs. Lastly, the ToR model will be applied to a building that can function as a pilot project. |
 | --- | --- | --- |
-|  Elaborating a model for improving the governance of condominiums and their integration in the local climate neutrality ecosystem | 30.000 eur | The Model for improving condominium governance will streamline the way in which residential blocks are managed (currently a deficient, problematic management) and the new local public policy tools will accelerate the individual adoption of climate neutral practices. Within the improved condominium governance model, homeowners associations will play a stronger role and proactive citizens investing in thermal rehabilitation will benefit from reduced costs and faster implementation of energy renovation works. This measure will build on the existing investments of individual owners into energy efficiency of their building, identifying bottlenecks, engaging citizens in the reform process and promoting improved quality in the delivery.  |
-|  Public promotion, communication and awareness | 920.000 eur | The estimated budget encompasses the communication and promotional activities that the Municipality will carry out over the next 8 years to raise awareness and educate citizens, stakeholders, and partners about climate neutrality. This initiative aims to target both online platforms such as social media pages, virtual platforms, interactive community activities, gamification sessions, etc. and offline methods such as organizing the annual International Carbon Neutrality Summit, local events in neighborhoods and metropolitan areas, physical communication and promotional campaigns about measures that can be taken by citizens and the ecosystem to mitigate the negative impact on the climate, thematic conferences, etc.  |
-|  Collaborative, innovative, integrative and tech-intensive development of the Climate Neutrality Digital Twin | 1.000.000 eur | This intervention represents a ground-breaking effort in the European green and digital transition movement: the development of Digital Twin technology that can collect, monitor, and forecast social and environmental behaviors. The goal is to integrate the findings and models from previous interventions, and with the input of stakeholders, co-design and develop a full-scale solution to capture the various pathways towards climate.  |
-|  Reflexive governance and CCC annual iterations | 80.000 eur | The budget includes funding for running the reflexive governance process within the Net Zero City Coalition. This will involve coordinating and working within the Coalition to implement, monitor, and update the Action Plan as well as all deliverables and related documents. Additionally, it includes iterations of the CCC, within broader sessions of sensemaking and strategic learning.  |
+| Elaborating a model for improving the governance of condominiums and their integration in the local climate neutrality ecosystem | 30.000 eur | The Model for improving condominium governance will streamline the way in which residential blocks are managed (currently a deficient, problematic management) and the new local public policy tools will accelerate the individual adoption of climate neutral practices. Within the improved condominium governance model, homeowners associations will play a stronger role and proactive citizens investing in thermal rehabilitation will benefit from reduced costs and faster implementation of energy renovation works. This measure will build on the existing investments of individual owners into energy efficiency of their building, identifying bottlenecks, engaging citizens in the reform process and promoting improved quality in the delivery. |
+| Public promotion, communication and awareness | 920.000 eur | The estimated budget encompasses the communication and promotional activities that the Municipality will carry out over the next 8 years to raise awareness and educate citizens, stakeholders, and partners about climate neutrality. This initiative aims to target both online platforms such as social media pages, virtual platforms, interactive community activities, gamification sessions, etc. and offline methods such as organizing the annual International Carbon Neutrality Summit, local events in neighborhoods and metropolitan areas, physical communication and promotional campaigns about measures that can be taken by citizens and the ecosystem to mitigate the negative impact on the climate, thematic conferences, etc. |
+| Collaborative, innovative, integrative and tech-intensive development of the Climate Neutrality Digital Twin | 1.000.000 eur | This intervention represents a ground-breaking effort in the European green and digital transition movement: the development of Digital Twin technology that can collect, monitor, and forecast social and environmental behaviors. The goal is to integrate the findings and models from previous interventions, and with the input of stakeholders, co-design and develop a full-scale solution to capture the various pathways towards climate. |
+| Reflexive governance and CCC annual iterations | 80.000 eur | The budget includes funding for running the reflexive governance process within the Net Zero City Coalition. This will involve coordinating and working within the Coalition to implement, monitor, and update the Action Plan as well as all deliverables and related documents. Additionally, it includes iterations of the CCC, within broader sessions of sensemaking and strategic learning. |
 Module C-3 Financing of Action Portfolio
 
-|  C-3.1: SUMMARY OF INTERVENTIONS WITH COST IMPLICATION (TO BE UNPACKED IN INVESTMENT PLAN)  |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- |
-|  ACTION / INTERVENTION NAME | RESPONSIB . ENTITY AND PERSON | START/ END DATE | FIELD OF ACTION | IMPACT | TOTAL COST ESTIMATED  |
-|  Efficient district heating and cooling in Cluj-Napoca | Municipality, Public Heating Service Operator, Energy Manager | 2023 - 2026 | Energy systems | 45,243 CO2 tons/ year CO2 reduction
+C-3.1: SUMMARY OF INTERVENTIONS WITH COST IMPLICATION (TO BE UNPACKED IN INVESTMENT PLAN)
+ACTION / INTERVENTION NAME | RESPONSIB . ENTITY AND PERSON | START/ END DATE | FIELD OF ACTION | IMPACT | TOTAL COST ESTIMATED
+Efficient district heating and cooling in Cluj-Napoca | Municipality, Public Heating Service Operator, Energy Manager | 2023 - 2026 | Energy systems | 45,243 CO2 tons/ year CO2 reduction
 Increasing the technological level of the district heating system
 Reducing electricity costs and implicitly reducing the risk of energy poverty
 Increasing the Municipality's innovation potential | € 352,000,000.00  |
-|  Local (off-site) renewable energy generation and integrating RES into private and public buildings | Municipality, Public Entities headquartered in targeted public buildings, Associations of house owners and citizens in targeted private buildings, Energy Manager, TREC | 2023 - 2030 | Energy systems | 37000 tons CO2 reduction
+Local (off-site) renewable energy generation and integrating RES into private and public buildings | Municipality, Public Entities headquartered in targeted public buildings, Associations of house owners and citizens in targeted private buildings, Energy Manager, TREC | 2023 - 2030 | Energy systems | 37000 tons CO2 reduction
 Promoting and encouraging the concept of passive buildings
 Stimulation of clean electricity supply practices
 Reducing the burden of electricity costs
 Encouraging green investments | € 144,000,000.00  |
-|  Energy-efficient public lighting | Municipality and Public Lighting Service Operator | 2023 -- 2030 | Energy systems | 3000 tons CO2 reduction
+Energy-efficient public lighting | Municipality and Public Lighting Service Operator | 2023 -- 2030 | Energy systems | 3000 tons CO2 reduction
 Improved safety city-wide
 Improved quality of life | € 13,000,000.00  |
 Climate Neutrality Action Plan
 
 #
 
-|  C-3.1: SUMMARY OF INTERVENTIONS WITH COST IMPLICATION (TO BE UNPACKED IN INVESTMENT PLAN)  |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- |
-|  ACTION / INTERVENTION NAME | RESPONSIBLE ENTITY AND PERSON | START/ END DATE | FIELD OF ACTION | IMPACT | TOTAL COST ESTIMATED  |
-|  |   |   |   |   |   |
-|  Major green public transport infrastructure and reduction of congestion in the city | Municipality, Ministry of Transport, Public Transport Operator, Individual Citizens, Cluj County Council, National Railway Company | 2023 - 2026 | Mobility & Transport | 25,377 tons CO2 reduction
+C-3.1: SUMMARY OF INTERVENTIONS WITH COST IMPLICATION (TO BE UNPACKED IN INVESTMENT PLAN)
+ACTION / INTERVENTION NAME | RESPONSIBLE ENTITY AND PERSON | START/ END DATE | FIELD OF ACTION | IMPACT | TOTAL COST ESTIMATED
+Major green public transport infrastructure and reduction of congestion in the city | Municipality, Ministry of Transport, Public Transport Operator, Individual Citizens, Cluj County Council, National Railway Company | 2023 - 2026 | Mobility & Transport | 25,377 tons CO2 reduction
 Reduced traffic congestion
 Decrease in number of traffic accidents
 Improved quality of life and safety | € 4,351,020,000.00  |
-|  Promotion of large-scale use of Electric Vehicles | Municipality | 2023 - 2030 | Mobility & Transport | 15,000 tons CO2 reduction
+Promotion of large-scale use of Electric Vehicles | Municipality | 2023 - 2030 | Mobility & Transport | 15,000 tons CO2 reduction
 More climate-neutral behaviours among citizens
 Improved health by reducing pollution caused by vehicles - increased air quality
 Higher percentage of green mobility
 Fewer road deaths
 Less noise | € 324,000,000.00  |
-|  Extension of Walkable City Program | Municipality, Local NGOs that are active in the field of citizens engagement, active | 2023 - 2026 | Mobility & Transport | 2000 tons CO2 reduction
+Extension of Walkable City Program | Municipality, Local NGOs that are active in the field of citizens engagement, active | 2023 - 2026 | Mobility & Transport | 2000 tons CO2 reduction
 Less road congestion
 Healthier, active neighbourhood activities | € 219,000,000.00  |
 Climate Neutrality Action Plan
 
 #
 
-|  C-3.1: SUMMARY OF INTERVENTIONS WITH COST IMPLICATION (TO BE UNPACKED IN INVESTMENT PLAN)  |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- |
-|  ACTION / INTERVENTION NAME | RESPONSIBLE ENTITY AND PERSON | START/ END DATE | FIELD OF ACTION | IMPACT | TOTAL COST ESTIMATED  |
-|   | citizenship, community initiatives |  |  | Fewer road deaths, less noise
+C-3.1: SUMMARY OF INTERVENTIONS WITH COST IMPLICATION (TO BE UNPACKED IN INVESTMENT PLAN)
+ACTION / INTERVENTION NAME | RESPONSIBLE ENTITY AND PERSON | START/ END DATE | FIELD OF ACTION IMPACT TOTAL COST ESTIMATED
+citizenship, community initiatives | Fewer road deaths, less noise
 A cleaner, more beautiful and a more valuable urban environment
 A city friendlier to children and the elderly |   |
-|  Extension of Cluj Bike Program | Municipality | 2023 - 2030 | Mobility & Transport | 7100 tons CO2 reduction
+Extension of Cluj Bike Program | Municipality | 2023 - 2030 | Mobility & Transport | 7100 tons CO2 reduction
 More climate-neutral behaviours among citizens
 Improved health by reducing pollution caused by vehicles - increased air quality
 Higher percentage of green and active mobility - health and environmental benefits
 Less noise
 Fewer road accidents and deaths | € 15,000,000.00  |
-|  Cluj Circular City | Municipality | 2023 - 2030 | Waste & circular economy | 16.000 tons CO2 reduction
+Cluj Circular City | Municipality | 2023 - 2030 | Waste & circular economy | 16.000 tons CO2 reduction
 More climate-neutral behaviours among citizens and more intensive circular economy practices
 Improved health by reducing pollution caused by waste - increased air quality | € 16,000,000.00  |
 Climate Neutrality Action Plan
 
 C-3.1: SUMMARY OF INTERVENTIONS WITH COST IMPLICATION (TO BE UNPACKED IN INVESTMENT PLAN)
 
-|  ACTION / INTERVENTION NAME | RESPONSIBLE ENTITY AND PERSON | START/ END DATE | FIELD OF ACTION | IMPACT | TOTAL COST ESTIMATED  |
-| --- | --- | --- | --- | --- | --- |
-|   |  |  |  | Cleaner, more beautiful and more valuable urban environment – improved quality of life |   |
-|  Extension of "Green Cluj" Program | Municipality, The Order of Romanian Architects (especially Transilvania branch) and their (inter)national partners, National Environmental Agency, UASVM, Association for Intercommunity Development CMA, Cluj County Council | 2023 - 2030 | Green infrastructure & nature based solutions | 380 tons CO2 reduction
+ACTION / INTERVENTION NAME | RESPONSIBLE ENTITY AND PERSON | START/ END DATE | FIELD OF ACTION | IMPACT | TOTAL COST ESTIMATED
+Cleaner, more beautiful and more valuable urban environment – improved quality of life
+Extension of "Green Cluj" Program | Municipality, The Order of Romanian Architects (especially Transilvania branch) and their (inter)national partners, National Environmental Agency, UASVM, Association for Intercommunity Development CMA, Cluj County Council | 2023 - 2030 | Green infrastructure & nature based solutions | 380 tons CO2 reduction
 Improved citizens' well being - healthier lifestyle (reduced pollution, improved air quality, reduced sedentarism), increased quality of life
 More beautiful and pleasant landscape
 Reduced effects of UHI
 More climate-neutral behaviours among citizens (parks attract people to spend there their free = less time spent at home = less energy consumed) | € 195,000,000.00  |
-|  Green-blue corridors | Municipality, Association for Intercommunity Development CMA, Cluj County Council, suburbs' Public Administrations | 2023 - 2030 | Green infrastructure & nature based solutions | 2650 tons CO2 reduction
+Green-blue corridors | Municipality, Association for Intercommunity Development CMA, Cluj County Council, suburbs' Public Administrations | 2023 - 2030 | Green infrastructure & nature based solutions | 2650 tons CO2 reduction
 Protection and increase of natural riverbanks
 Improved water quality and biodiversity
 Improved quality of life, health and well-being: recreational places
@@ -3837,19 +3740,18 @@ Climate Neutrality Action Plan
 
 #
 
-|  C-3.1: SUMMARY OF INTERVENTIONS WITH COST IMPLICATION (TO BE UNPACKED IN INVESTMENT PLAN)  |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- |
-|  ACTION / INTERVENTION NAME | RESPONSIB. ENTITY AND PERSON | START/ END DATE | FIELD OF ACTION | IMPACT | TOTAL COST ESTIMATED  |
-|   |  |  |  | movement of wildlife Open space to absorb and filter rainwater using nature-based solutions Reduced risks of climatic calamities (floods) Active and green mobility - more climate-neutral behaviours among citizens |   |
-|  Green roofs and facades for public and private buildings | Municipality, Public Entities headquartered in targeted public buildings, Associations of house owners and citizens in targeted private buildings | 2023 - 2030 | Green infrastructure & nature based solutions | 175 tons CO2 reduction More climate-neutral behaviours among citizens and entities Improved quality of life - more beautiful and pleasant urban landscape Reduced effects of UHI Improved health - increased air quality Mitigation of stormwater runoff. Welcome boost to biodiversity Support for biodiversity net gain targets Improvements in the life span of roofing | € 10,000,000.00  |
-|  Integrated renovation of | Municipality, The Order of | 2023 - | Built environme | 70000 tons CO2 | €  |
+C-3.1: SUMMARY OF INTERVENTIONS WITH COST IMPLICATION (TO BE UNPACKED IN INVESTMENT PLAN)
+ACTION / INTERVENTION NAME | RESPONSIB. ENTITY AND PERSON | START/ END DATE | FIELD OF ACTION | IMPACT | TOTAL COST ESTIMATED
+movement of wildlife Open space to absorb and filter rainwater using nature-based solutions Reduced risks of climatic calamities (floods) Active and green mobility - more climate-neutral behaviours among citizens
+Green roofs and facades for public and private buildings | Municipality, Public Entities headquartered in targeted public buildings, Associations of house owners and citizens in targeted private buildings | 2023 - 2030 | Green infrastructure & nature based solutions | 175 tons CO2 reduction More climate-neutral behaviours among citizens and entities Improved quality of life - more beautiful and pleasant urban landscape Reduced effects of UHI Improved health - increased air quality Mitigation of stormwater runoff. Welcome boost to biodiversity Support for biodiversity net gain targets Improvements in the life span of roofing | € 10,000,000.00
+Integrated renovation of | Municipality, The Order of | 2023 - | Built environme | 70000 tons CO2 | €
 Climate Neutrality Action Plan
 
 C-3.1: SUMMARY OF INTERVENTIONS WITH COST IMPLICATION (TO BE UNPACKED IN INVESTMENT PLAN)
 
-|  ACTION / INTERVENTION NAME | RESPONSIBLE ENTITY AND PERSON | START/ END DATE | FIELD OF ACTION | IMPACT | TOTAL COST ESTIMATED  |
+| ACTION / INTERVENTION NAME | RESPONSIBLE ENTITY AND PERSON | START/ END DATE | FIELD OF ACTION | IMPACT | TOTAL COST ESTIMATED |
 | --- | --- | --- | --- | --- | --- |
-|  dense multi-apartment residential areas and their transition to climate neutral district | Romanian Architects (especially Transilvania branch) and their (inter)national partners, Associations of house owners and citizens in targeted private buildings, TUCN, BBU, TREC, TITC | 2030 | nt | reduction
+| dense multi-apartment residential areas and their transition to climate neutral district | Romanian Architects (especially Transilvania branch) and their (inter)national partners, Associations of house owners and citizens in targeted private buildings, TUCN, BBU, TREC, TITC | 2030 | nt | reduction |  |
 Lower individual utility bills – reduced risk of energy poverty
 Stabilisation of electricity prices and volatility
 More climate-neutral behaviours among citizens and entities
@@ -3861,24 +3763,23 @@ Reduced sedentary behaviours
 More intensive circular economy practices
 Less traffic congestion - fewer accidents and reduced risk of death
 Increased safety and social inclusion | 180,000,000.00  |
-|  Energy Renovation of Public Buildings | Municipality, Public Entities headquartered in targeted public buildings, | 2023 - 2030 | Built environment | 5000 tons CO2 reduction
+Energy Renovation of Public Buildings | Municipality, Public Entities headquartered in targeted public buildings, | 2023 - 2030 | Built environment | 5000 tons CO2 reduction
 Increased quality conditions of public buildings | € 90,000,000.00  |
 Climate Neutrality Action Plan
 
 #
 
-|  C-3.1: SUMMARY OF INTERVENTIONS WITH COST IMPLICATION (TO BE UNPACKED IN INVESTMENT PLAN)  |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- |
-|  ACTION / INTERVENTION NAME | RESPONSIBLE ENTITY AND PERSON | START/ END DATE | FIELD OF ACTION | IMPACT | TOTAL COST ESTIMATED  |
-|   | Energy Manager |  |  | Improved public services
+C-3.1: SUMMARY OF INTERVENTIONS WITH COST IMPLICATION (TO BE UNPACKED IN INVESTMENT PLAN)
+ACTION / INTERVENTION NAME | RESPONSIBLE ENTITY AND PERSON | START/ END DATE | FIELD OF ACTION IMPACT TOTAL COST ESTIMATED
+Energy Manager | Improved public services
 Reduced management costs of public buildings due to lower electricity costs |   |
-|  Energy Efficiency of Commercial Buildings and brownfields redevelopment | Municipality | 2023 - 2030 | Built environment. | 12000 tons CO2 reduction
+Energy Efficiency of Commercial Buildings and brownfields redevelopment | Municipality | 2023 - 2030 | Built environment. | 12000 tons CO2 reduction
 Improved urban landscape
 Improved quality of life
 Reduced effect of UHI
 Community gains
 Increased attractiveness for investors | € 81,000,000.00  |
-|  Cluj NetZero Coalition | All stakeholders foreseen for the NZC Action Plan implementation | 2023 - 2030 | Soft interventions | 3400 tons CO2 reduction
+Cluj NetZero Coalition | All stakeholders foreseen for the NZC Action Plan implementation | 2023 - 2030 | Soft interventions | 3400 tons CO2 reduction
 Stronger local commitment
 Improved quality of life
 Ownership of the the overall objectives
@@ -3889,18 +3790,17 @@ Climate Neutrality Action Plan
 
 C-3.1: SUMMARY OF INTERVENTIONS WITH COST IMPLICATION (TO BE UNPACKED IN INVESTMENT PLAN)
 
-|  ACTION / INTERVENTION NAME | RESPONSIBLE ENTITY AND PERSON | START/ END DATE | FIELD OF ACTION | IMPACT | TOTAL COST ESTIMATED  |
-| --- | --- | --- | --- | --- | --- |
-|   |  |  |  | Increased chances of innovation and improvements
+ACTION / INTERVENTION NAME | RESPONSIBLE ENTITY AND PERSON | START/ END DATE | FIELD OF ACTION | IMPACT | TOTAL COST ESTIMATED
+Increased chances of innovation and improvements
 Improved local understanding |   |
-|  Improved local urban regulations and policies for achieving climate neutrality | All stakeholders foreseen for the NZC Action Plan implementation | 2023 - 2030 | Soft interventions | 63000 tons CO2 reduction
+Improved local urban regulations and policies for achieving climate neutrality | All stakeholders foreseen for the NZC Action Plan implementation | 2023 - 2030 | Soft interventions | 63000 tons CO2 reduction
 Stronger local commitment
 Improved quality of life
 Ownership of the the overall objectives
 Improved performance of public sector employees and quality of public service
 Behavioural changes
 Real time adjustments to the proposals made, based on changing circumstances | € 10,000,000.00  |
-|  Communicatio, dissemination and scalability | All stakeholders foreseen for the NZC Action Plan implementation | 2023 - 2030 | Soft interventions | 13600 tons CO2 reduction
+Communication, dissemination and scalability | All stakeholders foreseen for the NZC Action Plan implementation | 2023 - 2030 | Soft interventions | 13600 tons CO2 reduction
 Stronger local commitment
 Improved quality of life
 Ownership of the the overall objectives
@@ -3910,10 +3810,9 @@ Climate Neutrality Action Plan
 
 #
 
-|  C-3.1: SUMMARY OF INTERVENTIONS WITH COST IMPLICATION (TO BE UNPACKED IN INVESTMENT PLAN)  |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- |
-|  ACTION / INTERVENTION NAME | RESPONSIBLE ENTITY AND PERSON | START/ END DATE | FIELD OF ACTION | IMPACT | TOTAL COST ESTIMATED  |
-|   |  |  |  | Real time adjustments to the proposals made, based on changing circumstances. |   |
+C-3.1: SUMMARY OF INTERVENTIONS WITH COST IMPLICATION (TO BE UNPACKED IN INVESTMENT PLAN)
+ACTION / INTERVENTION NAME | RESPONSIBLE ENTITY AND PERSON | START/ END DATE | FIELD OF ACTION IMPACT TOTAL COST ESTIMATED
+Real time adjustments to the proposals made, based on changing circumstances.
 1
 
 PRIMÁRIA D'EDIFICIÓ LEGAL
@@ -3930,26 +3829,26 @@ Climate Neutrality Action Plan
 
 The overall budget for the actions incorporated in this plan amounts to € 6,090,000,000.00 The following table displays the percentage that each action represents in the total budget.
 
-|  PERCENTAGE OF THE TOTAL BUDGET  |   |
+| PERCENTAGE OF THE TOTAL BUDGET |  |
 | --- | --- |
-|  ACTIONS | % OF THE TOTAL BUDGET  |
-|  Efficient district heating and cooling in Cluj-Napoca | 5.78 %  |
-|  Local (off-site) renewable energy generation and integrating RES into private and public buildings | 2.36 %  |
-|  Energy-efficient public lighting | 0.21 %  |
-|  Major green public transport infrastructure and reduction of congestion in the city | 71.44 %  |
-|  Promotion of large-scale use of Electric Vehicles | 5.32 %  |
-|  Extension of Walkable City Program | 3.6 %  |
-|  Extension of Cluj Bike Program | 0.25 %  |
-|  Cluj Circular City | 0.26%  |
-|  Extension of “Green Cluj” Program | 3.20 %  |
-|  Green-blue corridors | 1.43 %  |
-|  Green roofs and facades for public and private buildings | 0.16 %  |
-|  Integrated renovation of dense multi-apartment residential areas and their transition to climate neutral district | 2.96 %  |
-|  Energy Renovation of Public Buildings | 1.48%  |
-|  Energy Efficiency of Commercial Buildings and brownfields revedelopment | 1.33 %  |
-|  Cluj NetZeroCoalition | 0.0002 %  |
-|  Improved local urban regulations and policies for achieving climate neutrality | 0.002 %  |
-|  Communication, dissemination and scalability | 0.003 %  |
+| ACTIONS | % OF THE TOTAL BUDGET |
+| Efficient district heating and cooling in Cluj-Napoca | 5.78 % |
+| Local (off-site) renewable energy generation and integrating RES into private and public buildings | 2.36 % |
+| Energy-efficient public lighting | 0.21 % |
+| Major green public transport infrastructure and reduction of congestion in the city | 71.44 % |
+| Promotion of large-scale use of Electric Vehicles | 5.32 % |
+| Extension of Walkable City Program | 3.6 % |
+| Extension of Cluj Bike Program | 0.25 % |
+| Cluj Circular City | 0.26% |
+| Extension of “Green Cluj” Program | 3.20 % |
+| Green-blue corridors | 1.43 % |
+| Green roofs and facades for public and private buildings | 0.16 % |
+| Integrated renovation of dense multi-apartment residential areas and their transition to climate neutral district | 2.96 % |
+| Energy Renovation of Public Buildings | 1.48% |
+| Energy Efficiency of Commercial Buildings and brownfields revedelopment | 1.33 % |
+| Cluj NetZeroCoalition | 0.0002 % |
+| Improved local urban regulations and policies for achieving climate neutrality | 0.002 % |
+| Communication, dissemination and scalability | 0.003 % |
 
 The investment plan provides a thorough account of the costs, both in relation to the Municipality's current spending and holistically.
 Outlook and next steps
@@ -4255,15 +4154,15 @@ Climate-Neutrality Commitments
 
 # 5 Signatories
 
-|  Name of the institution | Sector/Area | Legal form | Name of the responsible person | Position of the responsible person  |
+| Name of the institution | Sector/Area | Legal form | Name of the responsible person | Position of the responsible person |
 | --- | --- | --- | --- | --- |
-|  Municipality of Cluj-Napoca | Public authority | Legal person under public law | Emil Boc | Mayor  |
-|  Cluj County Council | Public authority | Legal person under public law | Alin Tișe | President  |
-|  Ministry of European Investments and Projects | Public authority | Legal person under public law | Ovidiu Cîmpean | State Secretary  |
-|  Cluj Metropolitan IDA | Metropolitan administration and governance | Public utility NGO | Zoltan Coroian | Director  |
-|  Romanian Green Building Council – Transylvania Branch | Certification body | NGO | Dorin Beu | Coordinator  |
-|  Termoficare Napoca S.A. | Public heating provider | Joint-stock company | Miron Emil | General director  |
-|  CTP Cluj-Napoca S.A. | Public transport provider | Joint-stock company | Liviu Neag | General director  |
+| Municipality of Cluj-Napoca | Public authority | Legal person under public law | Emil Boc | Mayor |
+| Cluj County Council | Public authority | Legal person under public law | Alin Tișe | President |
+| Ministry of European Investments and Projects | Public authority | Legal person under public law | Ovidiu Cîmpean | State Secretary |
+| Cluj Metropolitan IDA | Metropolitan administration and governance | Public utility NGO | Zoltan Coroian | Director |
+| Romanian Green Building Council – Transylvania Branch | Certification body | NGO | Dorin Beu | Coordinator |
+| Termoficare Napoca S.A. | Public heating provider | Joint-stock company | Miron Emil | General director |
+| CTP Cluj-Napoca S.A. | Public transport provider | Joint-stock company | Liviu Neag | General director |
 NET ZERO CITIES
 EU-REPUBLIC IN THE EUROPEAN THEATRE CITIES
 EUROPEAN THEATRE
@@ -4274,26 +4173,25 @@ ELOJ-REPSCA
 
 Climate-Neutrality Commitments
 
-|  Compania de Apa Someș S.A | Public water provider | Joint-stock company | Călin Neamțu | General director  |
+| Compania de Apa Someș S.A | Public water provider | Joint-stock company | Călin Neamțu | General director |
 | --- | --- | --- | --- | --- |
-|  Cluj Innovation Park | Innovation hub of the city | Joint-stock company | Alexandru Coroian | Director  |
-|  Technical University of Cluj-Napoca | Education & RDI | Higher education public institution | Vasile Țopa | Rector  |
-|  Babeș-Bolyai University | Education & RDI | Higher education public institution | Daniel David | Rector  |
-|  University of Agricultural Sciences and Veterinary Medicine Cluj-Napoca | Education & RDI | Higher education public institution | Cornel Cătoi | Rector  |
-|  University of Art and Design Cluj-Napoca | Education & RDI | Higher education public institution | Eugen Savinescu | Rector  |
-|  National Research and Development Institute for Isotopic and Molecular Technologies INCDTIM Cluj-Napoca | RDI | National Research and Development Institute | Flaviu Turcu | General director  |
-|  Romania Order of Architects – Transylvania Branch | Professional association | Architecture Professional association | Daniela Maier | President  |
-|  "Ernest Lupan" Institute for Circular Economy and | RDI | NGO | Simina Lakatos | Executive Director  |
+| Cluj Innovation Park | Innovation hub of the city | Joint-stock company | Alexandru Coroian | Director |
+| Technical University of Cluj-Napoca | Education & RDI | Higher education public institution | Vasile Țopa | Rector |
+| Babeș-Bolyai University | Education & RDI | Higher education public institution | Daniel David | Rector |
+| University of Agricultural Sciences and Veterinary Medicine Cluj-Napoca | Education & RDI | Higher education public institution | Cornel Cătoi | Rector |
+| University of Art and Design Cluj-Napoca | Education & RDI | Higher education public institution | Eugen Savinescu | Rector |
+| National Research and Development Institute for Isotopic and Molecular Technologies INCDTIM Cluj-Napoca | RDI | National Research and Development Institute | Flaviu Turcu | General director |
+| Romania Order of Architects – Transylvania Branch | Professional association | Architecture Professional association | Daniela Maier | President |
+| "Ernest Lupan" Institute for Circular Economy and | RDI | NGO | Simina Lakatos | Executive Director |
 NET ZERO CITIES
 EU-REGION ELAPPOWER ESTIMATE SUSTAIN AND GRANT CITIES
 
 # 2030 Climate-Neutrality Commitments
 
-|  Environmental Research |  |  |  |   |
-| --- | --- | --- | --- | --- |
-|  Urbannect | Community development | NGO | Dan Clinci | Project Manager  |
-|  Cluj Youth Federation | Community development | NGO | Tudor Ogner | President  |
-|  Transilvania IT Cluster – TDIH | Local innovation ecosystem & Private sector | NGO | Bianca Muntean | Executive director  |
-|  Transylvania Energy Cluster | Local innovation ecosystem & Private sector | NGO | Oana Raita | Manager  |
-|  Cluj IT | Local innovation ecosystem & Private sector | NGO | Stelian Brad | President  |
-|  Cluj Cultural Center | Community & culture development | NGO | Ștefan Teișanu | Director  |
+Environmental Research
+Urbannect | Community development | NGO | Dan Clinci | Project Manager
+Cluj Youth Federation | Community development | NGO | Tudor Ogner | President
+Transilvania IT Cluster – TDIH | Local innovation ecosystem & Private sector | NGO | Bianca Muntean | Executive director
+Transylvania Energy Cluster | Local innovation ecosystem & Private sector | NGO | Oana Raita | Manager
+Cluj IT | Local innovation ecosystem & Private sector | NGO | Stelian Brad | President
+Cluj Cultural Center | Community & culture development | NGO | Ștefan Teișanu | Director

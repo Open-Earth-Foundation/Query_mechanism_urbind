@@ -576,7 +576,7 @@ Trikala 2030 Climate Neutrality Action Plan
 C
 
 |   |  |  | contribute to closing the life cycle of products through more recycling and reuse, and will bring benefits to both the environment and the economy. | Circular Economy and climate neutrality. | public procurement, repair services, reuse)
-• Less waste with more value  |
+| • Less waste with more value  |
 | --- | --- | --- | --- | --- | --- |
 |  Action plan | Local | Local Waste Action plan (2020-2025) | Sustainable waste management relies on the waste management hierarchy, a system that focuses on prevention, reduction, reuse, recycling and treatment. Aiming to avoid waste disposal in landfills. | While the primary focus of local waste action plans is to address waste-related issues, the inclusion of climate neutrality targets demonstrates an awareness of the significant impact of waste management on GHG emissions and the role in achieving overall climate goals. | • Reduce GHG emissions associated with waste disposal in landfills, waste incineration and transportation of waste to disposal facilities.
 • Increase recycling rates and diverting waste from landfills
@@ -818,8 +818,6 @@ C
 | --- | --- | --- | --- | --- |
 |  Systemic Opportunities  |   |   |   |   |
 |  Climate Policy Advancements | Government, Municipality | Tightening energy and climate laws is a good opportunity for government and municipalities to accelerate and intensify actions to help tackle the climate crisis. | Progress in policies to tackle the climate crisis and the tightening of energy and climate-related legislation can bring about huge changes and ultimately enable the transition to | Implementing strong and comprehensive climate policies, such as carbon pricing, renewable energy standards, and emission reduction targets, can create regulatory certainty and spur  |
-4
-
 |   |  |  | climate neutrality to take place. It is a fact that pressure from legislation is a serious incentive for municipalities and citizens. Mainly with the influence of European legislation and then with their adoption in Greek legislation, tackling the climate crisis becomes more accessible. | investments in clean technologies.  |
 | --- | --- | --- | --- | --- |
 |  Renewable Energy Transition - Infrastructure System | Government, Municipality, Industry, Universities | The transition to RES concerns not only government and Municipalities, but also the markets, industry and research. Without the necessary research, it is not possible to overcome technological difficulties and without the necessary funding from the government, neither universities nor Municipalities can be supported by executives to implement sustainable practices. Moreover, | Shifting from fossil fuels to RES like solar, wind, hydro, and geothermal power presents a significant opportunity to reduce GHG emissions and foster sustainable economic growth. Greece, which has been using fossil fuels for years, is making great strides to change its energy mix and transition to climate neutrality. | The transition to RES has huge and long-term benefits for the environment, the economy and society. Some of the benefits are: • Tackling climate crisis • Improving public health • Sustainability, • Abundant availability of resources  |
@@ -1190,8 +1188,8 @@ C
 •Collective gardens  |
 | --- | --- | --- |
 |  Democracy & Participation | •Greater citizen interest in the city's policies
-•Citizen informing and consulting | •Developing a sense of trust in the city authorities
-•Citizen empowerment through co-deciding  |
+| •Citizen informing and consulting | •Developing a sense of trust in the city authorities |
+| •Citizen empowerment through co-deciding  |
 |  Finance & Funding | •Green infrastructure investments
 •Green infrastructure & Nature-based solutions initiatives | •Public-private partnerships
 •Green city spaces for recreation and food production  |
@@ -1253,9 +1251,9 @@ Trikala 2030 Climate Neutrality Action Plan
 C
 
 |   |  | •Circular Economy and materials adaptation
-•Innovative technologies integration | 58,32 kt CO_{2}e
-Decarbonising heating generation: 15,23 kt CO_{2}e | • Independence from energy market
-• Aesthetic upgrade  |
+| •Innovative technologies integration | 58,32 kt CO_{2}e |
+| Decarbonising heating generation: 15,23 kt CO_{2}e | • Independence from energy market |
+| • Aesthetic upgrade  |
 | --- | --- | --- | --- | --- |
 |  Government & Policy | •Development of green buildings standards
 •Incentives for smart and green buildings
@@ -1382,7 +1380,7 @@ Trikala 2030 Climate Neutrality Action Plan
 #
 
 |   | ·Policies to enhance broadband access and support for IoT infrastructure | ·Strengthened community-government relations
-·Support for emerging technologies |   |
+| ·Support for emerging technologies |   |
 | --- | --- | --- | --- |
 |  Social innovation | ·Remote health monitoring and digitalisation of services
 ·Data-driven social services
@@ -1633,8 +1631,7 @@ The main stakeholder included in the project are building owners, residents, loc
 Trikala 2030 Climate Neutrality Action Plan
 
 |   | Virtual power plants (VPP) | Virtual power plants are networks of small energy-producing or storage devices, like solar panels and batteries, that are pooled together to serve the electricity grid.
-
-Virtual power plants can play a significant role in achieving climate neutrality. Specifically, they provide optimized capabilities of diverse distributed energy resources (DERs) and enable efficient management, trading, and dispatch to provide grid services, stabilize the electrical grid, and optimize energy generation and consumption.  |
+| Virtual power plants can play a significant role in achieving climate neutrality. Specifically, they provide optimized capabilities of diverse distributed energy resources (DERs) and enable efficient management, trading, and dispatch to provide grid services, stabilize the electrical grid, and optimize energy generation and consumption.  |
 | --- | --- | --- |
 |   |  Power through RES the water pumping and distribution system | The overall pumping and distribution of water resources requires large consumptions of energy. The installation of RES (preferably Photovoltaics) will reduce absolute dependence on traditional forms of electrification and enhance resilience.  |
 |  **Mobility & transport** | **Reduced motorised passenger transportation need**  |   |
@@ -1668,8 +1665,7 @@ C
 |   | Electrification of buses  |   |
 | --- | --- | --- |
 |   |  Clean public transport | A potential solution to reduce CO2 emissions in the realm of public transportation is to switch to fully carbon-neutral urban trains and busses, while simultaneously improving their quality of service. This alternative could encourage people to opt for public transportation instead of using passenger cars
-
-It is important to alter the existing municipal fleet with new technology vehicles by 2030. Further, both administrative staff and residents should be informed about the benefits of eco-driving. In addition, several initiatives via research and innovation actions will test the integration of automated fleets to the public transportation serving deprived areas in order to complement the current and future public transportation services. Finally, the existing routes must be improved in terms of efficiency and management of the municipal fleet.  |
+| It is important to alter the existing municipal fleet with new technology vehicles by 2030. Further, both administrative staff and residents should be informed about the benefits of eco-driving. In addition, several initiatives via research and innovation actions will test the integration of automated fleets to the public transportation serving deprived areas in order to complement the current and future public transportation services. Finally, the existing routes must be improved in terms of efficiency and management of the municipal fleet.  |
 |   |  Optimised logistics & electrification of trucks  |   |
 |   |  Electrification of trucks | Trucks and city freight transport in general are a significant contributor to GHG emissions. Therefore, the transition to electric trucks holds immense importance in limiting the environmental impact of freight transport. By embracing electric-powered trucks, the city can eliminate tailpipe emissions and fossil fuel dependency. Electric trucks also contribute to less noise and better air quality within the city.
 
@@ -1681,7 +1677,7 @@ Trikala 2030 Climate Neutrality Action Plan
 |   | Fleet management application for the municipal fleet and public transport | Software development to accumulate, store, process, monitor, report on and export information, that can be imported from external sources such as gas pump processors, territorial authorities for managing vehicle registration, financial institutions, insurance databases, vehicle specification databases, mapping systems and from internal sources such as HR and Finance.  |
 | --- | --- | --- |
 |   |  Improvement of logistics and urban freight transport | To make logistics and urban freight transport more eco-friendly, several strategies and technologies can be employed. For instance, intracity freight offers eco-friendly last-mile delivery options, including electric van or cargo bike deliveries.
-In essence, the goal is to reduce environmental impacts, such as emissions, congestion, and noise pollution, in urban freight and logistics by embracing cleaner vehicles, optimizing delivery processes, and exploring innovative solutions like autonomous vehicles and consolidation centers. These efforts require collaboration between businesses, local governments, and technology providers to create a more sustainable and efficient urban logistics ecosystem.  |
+| In essence, the goal is to reduce environmental impacts, such as emissions, congestion, and noise pollution, in urban freight and logistics by embracing cleaner vehicles, optimizing delivery processes, and exploring innovative solutions like autonomous vehicles and consolidation centers. These efforts require collaboration between businesses, local governments, and technology providers to create a more sustainable and efficient urban logistics ecosystem.  |
 |   |  Eco-driving workshops and application (especially for professional drivers) | Establish driver-training programs to enhance education, driving regulations, methods, skills, and other relative driving knowledge to boost eco-driving.  |
 
 9
@@ -1694,8 +1690,7 @@ Collaborate with public and private entities, such as waste management companies
 Contribute to climate neutrality by reducing methane emissions. Methane is a potent GHG, and its release into the atmosphere significantly contributes to global warming. By capturing methane from organic waste and converting it into biogas, these power plants prevent its direct release, effectively reducing GHG emissions.  |
 | --- | --- | --- |
 |   | Separate collection and sustainable management of paper municipal waste | Implementing a separate collection system for paper waste has several environmental and economic benefits.
-
-Separating paper waste makes it easier to recycle. Recycled paper can be processed into new paper products, reducing the demand for virgin wood pulp and conserving forests.  |
+| Separating paper waste makes it easier to recycle. Recycled paper can be processed into new paper products, reducing the demand for virgin wood pulp and conserving forests.  |
 |   | Separate collection and sustainable management of glass municipal waste | Glass is a high recyclable material. By separating glass from other waste streams it can directed to recycling facilities where it is processed to new glass products. This process reduces the carbon footprint associated with glass production. Furthermore, recycling glass also helps conserve natural resources such as sand, soda ash and limestone.
 
 Separate collection of glass promotes climate neutrality by reducing energy consumption, GHG emissions, and the use of virgin materials.  |
@@ -1768,7 +1763,7 @@ This action requires the cooperation of Municipality, citizens, government and c
 Trikala 2030 Climate Neutrality Action Plan
 
 |   | Planting 23,000 trees inside the city and on its outskirts | Urban areas with green spaces and trees offer many advantages, such as improved air quality, leisure options, temperature control, promotion of biodiversity and enhancement of residents' mental well-being.
-The implementation of the action is feasible and quickly effective, without such a great financial cost. Effective cooperation between municipal authorities, government agencies and the construction sector is imperative to achieve these benefits.  |
+| The implementation of the action is feasible and quickly effective, without such a great financial cost. Effective cooperation between municipal authorities, government agencies and the construction sector is imperative to achieve these benefits.  |
 | --- | --- | --- |
 |  **Built environment** | **Building renovations**  |   |
 |   |  Energy renovation/retrofit of existing buildings | The energy renovation of existing commercial and residential buildings is beneficial for achieving climate neutrality in the city. Stationary Energy GHG emissions coming from thermal and electrical needs in buildings is the biggest GHG source usually in every city, including Trikala.
@@ -1797,7 +1792,7 @@ Trikala 2030 Climate Neutrality Action Plan
 C
 
 |   | New energy-efficient buildings | The build environment contributes the most to cities' GHG emissions, thus introducing energy-efficiency standards to new buildings is a foundational cornerstone in the pursuit of climate neutrality. Energy-efficient buildings have integrated innovative technologies and sustainable materials and result in reduced energy consumption and environmental impact. By integrating innovative insulation, efficient heating, ventilation, air conditioning systems, and smart design strategies, energy-efficient buildings drastically decrease the demand for non-renewable resources and lower greenhouse gas emissions. Their implementation not only reduces operational energy costs but also fosters healthier indoor environments.
-Furthermore, these buildings serve as living examples, showcasing the potential for sustainable, low-carbon infrastructure.  |
+| Furthermore, these buildings serve as living examples, showcasing the potential for sustainable, low-carbon infrastructure.  |
 | --- | --- | --- |
 |   |  **Decarbonising heating generation**  |   |
 |   |  Commercial and residential buildings electrification | Building electrification is the transition of energy sources in buildings from fossil fuels to electricity. This transition is often achieved by replacing traditional heating and cooking systems with electric alternatives, such as using RES, to reduce GHG emissions.
@@ -1837,8 +1832,7 @@ Trikala 2030 Climate Neutrality Action Plan
 |  Mobility actions |   |
 | --- | --- |
 |  Installation of intelligent traffic signalling and control infrastructure | The development of an intelligent traffic management system in the city includes the installation of smart controllers on all traffic lights in the city, the deployment of intelligent motion control sensors and atmospheric pollution measurement for traffic management and monitoring environmental conditions. It involves creating smart crossings for pedestrians and micro-mobility, as well as the procurement and installation of Variable Message Signs (VMS). The objectives are the collection of necessary traffic, environmental, and other data to support the real-time optimization of the signaling system, traffic control through traffic lights, and the improvement of the operation of connected nodes in a coordinated artery mode.
-
-The goals also encompass the establishment of intelligent traffic management strategies in the city center, the use of VMS, enhancing traffic quality in the city center with simultaneous information on interventions to reduce environmental impacts. Additionally, it includes strengthening road safety for vehicles, pedestrians, and people with disabilities, along with the optimal maintenance process and reduction of downtime for repairs to the signaling system.  |
+| The goals also encompass the establishment of intelligent traffic management strategies in the city center, the use of VMS, enhancing traffic quality in the city center with simultaneous information on interventions to reduce environmental impacts. Additionally, it includes strengthening road safety for vehicles, pedestrians, and people with disabilities, along with the optimal maintenance process and reduction of downtime for repairs to the signaling system.  |
 |  Creation of a control and information system for smart parking | The initiative aims to create improvements in urban mobility conditions through directed parking tools and the prevention of illegal parking in the city. This involves the installation of parking control sensors (e.g., magnetic, optical, etc.) and the development of an information system for parking that utilizes sensor data. The objectives include real-time collection of parking information, facilitating citizens in parking decisions in combination with available transportation options, restricting illegal parking to controlled visitor parking spaces or areas affecting traffic conditions, and enhancing traffic conditions in the city by minimizing the time required to find parking spaces.  |
 
 1
@@ -1987,7 +1981,7 @@ Trikala 2030 Climate Neutrality Action Plan
 Trikala 2030 Climate Neutrality Action Plan
 
 |   |  | Sunshine in Greece is estimated at 1542 hours per year. The power of the PV installation is 50 MWp. Therefore, the total energy produced by the installation per year amounts to 77.100 MWh.
-This is a priority action linked to decarbonising electricity and heating generation.  |
+| This is a priority action linked to decarbonising electricity and heating generation.  |
 | --- | --- | --- |
 |  Impact & cost | Generated renewable energy (if applicable) | 77.100 MWh  |
 |   |  Removed/substituted energy, volume or fuel type | 77.100 MWh  |
@@ -2069,7 +2063,7 @@ Trikala 2030 Climate Neutrality Action Plan
 | --- | --- | --- |
 |   |  Involved stakeholders | Municipality of Trikala, Ministry of Environment and Energy, HEDNO S.A., TEE Trikalon, University of Western Macedonia, University of Western Attica, DUTH, CRES, Hellenic Energy Competence Center, Cooperative Bank of Thessaly, Ministry of Economy and Finance, National Bank of Greece, Piraeus Bank, Alpha Bank, Eurobank, Urban Development Company of Trikala S.A., ICCS, Cities Net, P-net, ABB Hellas, DOTSOFT SA  |
 |   |  Comments on implementation | The development of a joined and smart RES management system requires collaboration among energy providers, technology developers, policymakers, and the community. It is a critical component of the transition to a cleaner and more sustainable energy ecosystem. It is necessary to raise public awareness by educating citizens about the benefits of renewable energy and the massive role of smart RES management in transforming the city to climate neutrality.
-This is a priority action linked to decarbonising electricity and heating generation and Trikala - Restart mAI city.  |
+| This is a priority action linked to decarbonising electricity and heating generation and Trikala - Restart mAI city.  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 1 kt CO_{2}e  |
 |   |  Total costs and costs by CO2e unit | 0,5 mil € - 500 €/tn CO_{2}e  |
 |   |  |   |
@@ -2182,7 +2176,7 @@ C
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Mobility & Transport  |
 |   | Systemic lever | Technology & Infrastructure
-Finance & Funding  |
+| Finance & Funding  |
 |   | Outcome (according to module B-1.1) | • Alternative fuels infrastructure
 • Mobility as a Service (MaaS)
 • Electrification of transportation
@@ -2242,7 +2236,7 @@ Learning & Capabilities  |
 Trikala 2030 Climate Neutrality Action Plan
 
 |  Impact & cost | Comments on implementation | Trikala estimates that 60% of the bus fleet can be replaced with electric buses until 2030, with an aim of 100% to 2040. More specifically in 2024 5% of the fleet will be upgraded, in 2025 another 5%, in 2026 10% and the same for 2027 - 2028, in 2029 15% will be replaced and the last 5% in 2030.
-Electric vehicles technology is continuously upgraded reaching better efficiency and financial savings. Public transport can receive funding for upgrades more easily. This is a priority action linked to the shift to public and non-motorised transport.  |
+| Electric vehicles technology is continuously upgraded reaching better efficiency and financial savings. Public transport can receive funding for upgrades more easily. This is a priority action linked to the shift to public and non-motorised transport.  |
 | --- | --- | --- |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 0,38 ktn CO_{2}e  |
 |   |  Total costs and costs by CO2e unit | 10,45 mil € - 27.500,0 €/tn CO_{2}e  |
@@ -2257,7 +2251,7 @@ Trikala 2030 Climate Neutrality Action Plan
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Mobility & Transport  |
 |   |  Systemic lever | Technology & Infrastructure
-Finance & Funding  |
+| Finance & Funding  |
 |   |  Outcome (according to module B-1.1) | • Mobility infrastructure investments
 • Public transport and fleet upgrade
 • E-mobility infrastructure
@@ -2308,7 +2302,7 @@ Trikala 2030 Climate Neutrality Action Plan
 Trikala 2030 Climate Neutrality Action Plan
 
 |  Impact & cost |  | complex. Ensuring smooth transfers and fare integration between DRT and traditional transit is essential for a seamless passenger experience. Moreover, DRT services often require subsidies, especially in areas with low passenger density. Identifying sustainable funding sources and cost-recovery models is essential for the long-term viability of the service. In any case, the more completed collaboration among various stakeholders, including local governments, transit agencies, private sector partners, and the community, the more successful DRT system will be.
-This is a priority action linked to the shift to public and non-motorised transport and also Trikala - Restart mAI city.  |
+| This is a priority action linked to the shift to public and non-motorised transport and also Trikala - Restart mAI city.  |
 | --- | --- | --- |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 0,26 ktn CO_{2}e  |
 |   |  Total costs and costs by CO2e unit | 0,075 mil € - 289,58 €/tn CO_{2}e  |
@@ -2339,8 +2333,7 @@ Technology & Infrastructure  |
 Trikala 2030 Climate Neutrality Action Plan
 
 |  Impact & cost | Comments on implementation | To ensure the success of implementing Zero Emission Zones (ZEZ), robust community engagement is paramount. This engagement should extend beyond the planning phase and actively involve residents in the execution of ZEZ initiatives. Educational campaigns are vital in this regard, serving to promote the adoption of low-emission and non-motorised vehicles and to disseminate information about the benefits of establishing ZEZs in the city center. Furthermore, there's inherent synergy with complementary actions such as transitioning the municipal vehicle fleet to low-emission vehicles and encouraging increased usage of such vehicles by citizens. By fostering collaboration and awareness among residents, businesses, and local authorities, the city can effectively pave the way for a smoother transition towards cleaner and more sustainable urban environments.
-
-This is a priority action linked to the shift to public and non-motorised transport.  |
+| This is a priority action linked to the shift to public and non-motorised transport.  |
 | --- | --- | --- |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 3,32 ktn CO_{2}e  |
 |   |  Total costs and costs by CO2e unit | 1 mil € - 300,84 €/tn CO_{2}e  |
@@ -2375,7 +2368,7 @@ Trikala 2030 Climate Neutrality Action Plan
 | --- | --- | --- |
 |   |  Involved stakeholders | Association of Professional Motor Truck Owners, Association of Candidate Driver Instructors, Public Transport Organisation of Trikala, Urban Development Company of Trikala, Directorate of Primary Education of Trikala, Directorate of Secondary Education of Trikala, Cities Net, Commercial Association of Trikala, Youth City Council, Citizens  |
 |   |  Comments on implementation | There are some barriers to overcome in order to promote cycling. The most important is to shift cultural norms and habits around car ownership and use. This may require time and targeted actions such as the educational campaigns. There must be highlighted that bicycle not only is a recreational activity but a practical means of transportation too. In addition, as it is mentioned in the Energy Transition Plan of Trikala there are some areas that do not have cycling infrastructure. Municipality of Trikala has made several steps to promote the use of bicycle. As an illustration, the municipality has already proceeded to develop an application under the SMARTA Project that gives the opportunity to users to book bicycles offered at the city center.
-This is a priority action linked to the shift to public and non-motorised transport.  |
+| This is a priority action linked to the shift to public and non-motorised transport.  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 1,81 ktn CO_{2}e  |
 |   |  Total costs and costs by CO2e unit | 5 mil € - 2.757,86 €/tn CO_{2}e  |
 |   |  |   |
@@ -2493,7 +2486,7 @@ Trikala 2030 Climate Neutrality Action Plan
 |   |  Action scale & addressed entities | City of Trikala, public transportation  |
 |   |  Involved stakeholders | Municipality of Trikala, Association of Candidate Driver Instructors, Public Transport Organisation of Trikala, Urban Development Company of Trikala, ICCS, Cities Net, P-net, ABB Hellas, DOTSOFT SA, Citizens  |
 |   |  Comments on implementation | Municipality of Trikala have strengthened the use of electric-powered micromobility from 2018 when participating in the ELVITEN Project. This project is an H2020 European Project that aims to boost the usage of light electric vehicles. Municipality of Trikala procured electric bicycles and other electric micromobility vehicles to examine the potential of using such vehicles in the city. In addition, in April 2023 the Municipality launched an open tender for the supply, installation, configuration and operation of an integrated electric bicycle rental system for Trikala.
-This is a priority action linked to the shift to public and non-motorised transport.  |
+| This is a priority action linked to the shift to public and non-motorised transport.  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 0,26 ktn CO_{2}e  |
 |   |  Total costs and costs by CO2e unit | 0,3 mil € - 1.158,3 €/tn CO_{2}e  |
 
@@ -2643,8 +2636,7 @@ This is a priority action linked to sustainable management of waste & promotion 
 |  Action outline | Action name | Separate collection and sustainable management of glass municipal waste  |
 |   |  Action type | Organisational intervention  |
 |   |  Action description | Separate collection and sustainable management of glass municipal waste contributes to climate neutrality by reducing energy consumption, conserving natural resources and minimizing methane emissions from landfills.
-
-Glass materials can be recycled and reused easily. Recycling glass requires less energy than producing new glass from raw materials, resulting in significant energy savings and reduced GHG emissions. Additionally, proper management and recycling of glass waste contribute to the preservation of natural resources. Glass is made from limited resources such as sand, soda and limestone. Recycling glass reduces the extraction of these resources, thus protecting biodiversity and ecosystems associated with extraction.  |
+| Glass materials can be recycled and reused easily. Recycling glass requires less energy than producing new glass from raw materials, resulting in significant energy savings and reduced GHG emissions. Additionally, proper management and recycling of glass waste contribute to the preservation of natural resources. Glass is made from limited resources such as sand, soda and limestone. Recycling glass reduces the extraction of these resources, thus protecting biodiversity and ecosystems associated with extraction.  |
 |  Reference to | Field of action | Waste & Circular economy  |
 
 7
@@ -2872,7 +2864,7 @@ Trikala 2030 Climate Neutrality Action Plan
 C
 
 |   |  | Finance & Funding
-Learning & Capabilities  |
+| Learning & Capabilities  |
 | --- | --- | --- |
 |   |  Outcome (according to module B-1.1) | • Waste management digitalization
 • Waste services upgrade (separate collection, smart bins, frequent collection)
@@ -3566,7 +3558,7 @@ Trikala 2030 Climate Neutrality Action Plan
 |   |  Action scale & addressed entities | Buildings, City-wide  |
 |   |  Involved stakeholders | Municipality of Trikala, Ministry of Environment and Energy, HEDNO SA, TEE Trikalon, Cooperative Bank of Thessaly, Ministry of Economy and Finance, National Bank of Greece, Piraeus Bank, Alpha Bank, Eurobank, Urban Development Company of Trikala, Directorate of Primary Education of Trikala, Directorate of Secondary Education of Trikala, Hellenic Energy Competence Center, Commercial Association of Trikala, ANAKEM - Alternative Management System for Demolition Waste, Citizens, P-net, DOTSOFT SA, ABB Hellas  |
 |   |  Comments on implementation | Energy retrofitting in buildings will be accompanied by the installation of smart energy systems to further optimize energy consumption. Energy systems can also be installed in buildings before the energy upgrade, but in combination with efficient appliances and lighting to reduce energy consumption with small-scale interventions.
-This is a priority action related to energy renovation and efficient utilisation of building stock and Trikala - Restart mAI city.  |
+| This is a priority action related to energy renovation and efficient utilisation of building stock and Trikala - Restart mAI city.  |
 |  |   |   |
 |  Action outline | Action name | Efficient lighting and appliances  |
 |   |  Action type | Technical intervention  |
@@ -3577,7 +3569,7 @@ Trikala 2030 Climate Neutrality Action Plan
 C
 
 |   |  | consumption. This leads not only to economic benefits for consumers but also to a surprising reduction in the ecological footprint, actively contributing to the drive for sustainable energy and environmental protection.
-This action also includes the upgrading of the city's street lighting in order to reduce energy consumption.  |
+| This action also includes the upgrading of the city's street lighting in order to reduce energy consumption.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Built environment  |
 |   |  Systemic lever | Technology & Infrastructure
@@ -3602,7 +3594,7 @@ Learning & Capabilities  |
 Trikala 2030 Climate Neutrality Action Plan
 
 |  |  | • Collaboration between different business sectors
-• Sustainable practices adaptation |
+| • Sustainable practices adaptation |
 | --- | --- | --- |
 | Implementation | Responsible bodies/person for implementation | One-stop shop for energy renovation on buildings, Trikala Climate Team |
 | Action scale & addressed entities | Buildings, City-wide |
@@ -3656,7 +3648,7 @@ Trikala 2030 Climate Neutrality Action Plan
 Trikala 2030 Climate Neutrality Action Plan
 
 |  Impact & cost | Comments on implementation | The adoption of strict energy codes and certifications incentivises developers to prioritise sustainability, fostering positive change in the construction industry. It is a fact that it is easier to build a new building to meet the energy efficient building code than it is to completely renovate an older building. In the context of changing the profile of the city and the transition to a climate neutral future, it is imperative that all new buildings meet high energy standards.
-This is a priority action related to energy renovation and efficient utilisation of building stock. All new buildings constructed must conform with energy efficiency standards.  |
+| This is a priority action related to energy renovation and efficient utilisation of building stock. All new buildings constructed must conform with energy efficiency standards.  |
 | --- | --- | --- |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 0,16 ktn CO_{2}e  |
 |   |  Total costs and costs by CO2e unit | 6,31 mil € - 39.409,5 €/tn CO_{2}e  |
@@ -3804,8 +3796,7 @@ This is a priority action related to Trikala - Restart mAI city.  |
 Trikala 2030 Climate Neutrality Action Plan
 
 |   | Action description | The initiative involves establishing an infrastructure for gathering and overseeing data within the city's intelligent ecosystem. This encompasses setting up a central platform for collecting and processing urban data and infrastructure, linking existing data sources within the city, developing a website for displaying municipal information and initiatives, and implementing a system for overseeing and presenting the progress of technical projects. The objectives of this initiative include generating a unified collection of geospatially defined, dynamic, and permanent data; creating a dependable and adaptable data storage system to support smart initiatives and municipal operations; offering suitable tools to streamline management processes and formulate policies with quantifiable outcomes for citizens; simplifying conditions for introducing new intelligent services to citizens; establishing a supportive environment for the development and implementation of smart services; and providing a platform for the creation of novel services for citizens.
-
-The interpretation of these data as geospatially and temporally variable is precisely what can transform them into useful information for real-time event management in the city, support the processes of formulating municipal strategies and policies, and enhance the prospects of successful collective actions. Techniques that can be employed in these directions include, among others, appropriate visualizations, integration of artificial intelligence methods, statistical analyses, monitoring of Key Performance Indicators (KPIs) in suitable environments depending on the expected outcome. Beyond the utilization of data/information by the Municipality for the benefit of the city and its citizens, the formulation of policies and intent for third-party use can shape prospects for economic exploitation and/or attracting investments.  |
+| The interpretation of these data as geospatially and temporally variable is precisely what can transform them into useful information for real-time event management in the city, support the processes of formulating municipal strategies and policies, and enhance the prospects of successful collective actions. Techniques that can be employed in these directions include, among others, appropriate visualizations, integration of artificial intelligence methods, statistical analyses, monitoring of Key Performance Indicators (KPIs) in suitable environments depending on the expected outcome. Beyond the utilization of data/information by the Municipality for the benefit of the city and its citizens, the formulation of policies and intent for third-party use can shape prospects for economic exploitation and/or attracting investments.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Smart city - Horizontal actions  |
 |   | Systemic lever | Technology & Infrastructure
@@ -4033,7 +4024,7 @@ Learning & Capabilities  |
 Trikala 2030 Climate Neutrality Action Plan
 
 |   |  | • Optimised resource allocation
-• Increased innovation  |
+| • Increased innovation  |
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | e-Trikala  |
 |   |  Action scale & addressed entities | Public transportation  |
@@ -4091,8 +4082,7 @@ Learning & Capabilities  |
 Trikala 2030 Climate Neutrality Action Plan
 
 |  Impact & cost | Comments on implementation | The intervention of the action will be spatially focused on the urban center of the city of Trikala and will include the monitoring of occupancy in controlled parking spaces, as well as the prevention of illegal parking. It will also involve the installation of infrastructure for controlling incoming and outgoing vehicles in municipal parking areas, aiming to assess availability.
-
-This is a priority action related to Trikala - Restart mAI city.  |
+| This is a priority action related to Trikala - Restart mAI city.  |
 | --- | --- | --- |
 |   |  Total costs | 248.000 €  |
 |  Action outline | Action name | Infrastructure to support and enhance digital advancement for the "Help at Home" program  |
@@ -4262,7 +4252,7 @@ C
 |  Reference to impact pathway | Action type | Technical intervention  |
 | --- | --- | --- |
 |   |  Action description | Energy savings in building facilities constitute one of the key pillars of the energy transition in the city of Trikala, and the modern trend in energy management of the building stock is based on the development of intelligent models for energy and environmental building management. These models aim to maintain comfortable indoor climates while reducing energy consumption. The installation of tools for energy control and consumption monitoring is one of the primary methods for energy monitoring, rational energy management, and taking measures to improve the existing situation.
-The primary objective is to enhance the energy efficiency of municipal buildings, reduce operational costs associated with usage and maintenance, ensure thermal comfort, improve the indoor environment across the building portfolio, create a historical data repository for municipal structures to support decision-making by the municipal authority for future energy enhancements and operational improvements. Additionally, it aims to serve as a model for promoting energy upgrades in the city's building inventory and encouraging citizens to follow suit.  |
+| The primary objective is to enhance the energy efficiency of municipal buildings, reduce operational costs associated with usage and maintenance, ensure thermal comfort, improve the indoor environment across the building portfolio, create a historical data repository for municipal structures to support decision-making by the municipal authority for future energy enhancements and operational improvements. Additionally, it aims to serve as a model for promoting energy upgrades in the city's building inventory and encouraging citizens to follow suit.  |
 |   |  Field of action | Smart city - Energy Actions  |
 |   |  Systemic lever | Technology & Infrastructure
 Government & Policy
@@ -4346,7 +4336,7 @@ Trikala 2030 Climate Neutrality Action Plan
 |  Impact & cost | Involved stakeholders | Municipality of Trikala, HEDNO SA, P-net emerging network & applications, DOTSOFT S.A., ABB Hellas, Ministry of Environment and Energy, Urban Development Company of Trikala SA, University of Western Macedonia, University of Western Attica, ICCS, Cities Net, NOVA Hellas, Hellenic Energy Competence Center, TEE Trikalon  |
 | --- | --- | --- |
 |   |  Comments on implementation | Throughout the initiative, there is a need for collaboration with information systems related to energy generation, distribution, and usage. This entails the creation of an algorithm designed to estimate the overall energy consumption and production across the entire city. Educational and informative programs will be implemented, providing scientific and technical assistance to residents and students. Furthermore, intelligent electricity meters will be selectively deployed in households.
-This is a priority action related to Trikala - Restart mAI city.  |
+| This is a priority action related to Trikala - Restart mAI city.  |
 |   |  Total costs | 161.000 €  |
 |  Action outline | Action name | Smart interactive electric lighting of emblematic points of the city  |
 |   |  Action type | Technical intervention  |
@@ -4444,8 +4434,7 @@ This is a priority action related to Trikala - Restart mAI city.  |
 Trikala 2030 Climate Neutrality Action Plan
 
 |   | Action description | The present action aims to create mechanisms to support the detection and handling of situations that require the activation of the Municipality's Civil Protection mechanisms, based on the utilization of the smart city infrastructure. Typically, situations of this kind may include natural disasters (floods, earthquakes, fires), large-scale accidents, and the spread of infectious diseases.
-
-The action involves infrastructure based on the smart city ecosystem, focusing on the installation of immediate response systems in the city and the development of tools for two-way communication with citizens regarding emergency situations.  |
+| The action involves infrastructure based on the smart city ecosystem, focusing on the installation of immediate response systems in the city and the development of tools for two-way communication with citizens regarding emergency situations.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Smart city - Civil Protection Actions & Environment  |
 |   | Systemic lever | Technology & Infrastructure
@@ -4661,8 +4650,7 @@ This is a priority action related to Trikala - Restart mAI city.  |   |
 Trikala 2030 Climate Neutrality Action Plan
 
 |   | Action description | The action aims to design and implement an integrated waste management system through a smart management platform, with the implementation of Source Separation and Pay-As-You-Throw systems as fundamental measures to expedite and facilitate the implementation of waste management processes for all streams of urban solid waste, as defined in the Local Waste Management Plan. Additionally, it involves creating awareness campaigns to inform and sensitize citizens, supporting intelligent and sustainable waste management practices.
-
-For this purpose, a set of applied tools within the smart city ecosystem will be designed. This, in combination with organized and reliable information, is expected to serve as a model of best practices in utilizing the smart ecosystem to improve the living conditions of citizens, among other objectives.  |
+| For this purpose, a set of applied tools within the smart city ecosystem will be designed. This, in combination with organized and reliable information, is expected to serve as a model of best practices in utilizing the smart ecosystem to improve the living conditions of citizens, among other objectives.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Smart city - Waste Management Actions  |
 |   | Systemic lever | Technology & Infrastructure
@@ -4775,7 +4763,7 @@ Trikala 2030 Climate Neutrality Action Plan
 |  Action outline | Action name | Implementation of management, allocation and utilisation of municipal buildings and public spaces  |
 |   |  Action type | Organisational intervention  |
 |   |  Action description | The action focuses on creating services to support transparency and citizen information regarding the management of municipal property and shared spaces. In order to make this capability possible, the development of an efficient mechanism for integrated management of different categories of properties related to the municipality's services is necessary. These categories involve municipal real estate, green areas/forests, shared spaces, etc., as well as different municipal services responsible for their various management aspects (technical, economic, administrative, and legal). Additionally, the integration of this management information into the smart city ecosystem is expected to enhance citizens' collectiveness and contribute to the formulation of policies (e.g., allocation of shared spaces for events, organization of voluntary actions).
-The initiative encompasses the establishment of services designed to foster transparency and provide citizens with information concerning the oversight of municipal assets and shared areas. The goal is to augment transparency in the governance of public spaces, alleviate bureaucratic hurdles related to information about public spaces and municipal assets, fortify collaborative endeavors by offering well-suited public areas, encourage volunteer initiatives to improve public spaces, perform a thorough examination of urban data to shape enhancement policies, ensuring the judicious use of communal spaces and municipal assets, and streamline the administration and utilization of municipal property by the local government.  |
+| The initiative encompasses the establishment of services designed to foster transparency and provide citizens with information concerning the oversight of municipal assets and shared areas. The goal is to augment transparency in the governance of public spaces, alleviate bureaucratic hurdles related to information about public spaces and municipal assets, fortify collaborative endeavors by offering well-suited public areas, encourage volunteer initiatives to improve public spaces, perform a thorough examination of urban data to shape enhancement policies, ensuring the judicious use of communal spaces and municipal assets, and streamline the administration and utilization of municipal property by the local government.  |
 |   | Field of action | Smart city - Economic Development & Building Actions  |
 
 3
@@ -4907,7 +4895,7 @@ This is a priority action related to Trikala - Restart mAI city as well as citiz
 Trikala 2030 Climate Neutrality Action Plan
 
 |   |  | services. Specifically for IoT devices, alternative access methods via mobile networks (GSM, 4G, 5G, NB-IoT) will be considered where deemed technoeconomically viable.
-More precisely, the action focuses on strengthening the data network interconnection infrastructure in terms of geographic coverage, supported communication protocols, the implementation of redundancy, and the level of cybersecurity.  |
+| More precisely, the action focuses on strengthening the data network interconnection infrastructure in terms of geographic coverage, supported communication protocols, the implementation of redundancy, and the level of cybersecurity.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Smart city - Connectivity Actions  |
 |   | Systemic lever | Technology & Infrastructure
@@ -5434,8 +5422,7 @@ Trikala 2030 Climate Neutrality Action Plan
 |  Indicator Unit | % in kWh  |
 |  Definition | Percentage increase in the share of local renewable energy due to the renewable project.  |
 |  Calculation | The percentage of the increase in local renewable energy production as a result of the renewable energy project is calculated as the difference between the annual renewable energy generation related to the project before and after project completion (or as the difference between the annual renewable energy generation related to the project compared to BAU). The result will be divided by the annual total energy consumption related to the project, and then it is multiplied by 100 to express the result as a percentage.
-
-Relevant unit conversions are 1 J = 1 Ws; 1 kWh= 3,600,000 J; and 1 TOE = 41.868 GJ, 11,630 kWh, or 11.63 MWh (ITU-T L.1430: 2013)  |
+| Relevant unit conversions are 1 J = 1 Ws; 1 kWh= 3,600,000 J; and 1 TOE = 41.868 GJ, 11,630 kWh, or 11.63 MWh (ITU-T L.1430: 2013)  |
 |  Indicator Context |   |
 |  Does the indicator measure direct impacts (i.e. reduction in GHG emissions?) | YES  |
 |  If yes, which emission source sectors does it impact? | Energy  |
@@ -5669,8 +5656,7 @@ Trikala 2030 Climate Neutrality Action Plan
 Trikala 2030 Climate Neutrality Action Plan
 
 |   | releasing it when demand is high or renewable energy production is low. The implementation of innovative energy storage technologies for RES is a critical step towards achieving climate neutrality. It enables the effective utilization of RES, reduces reliance on traditional fossil fuels, and contributes to a more sustainable and resilient energy system.
-
-The implementation of RES storage technologies requires a multidisciplinary approach that combines expertise in engineering, energy management. | Advancements, Renewable Energy Transition, Green Finance & Investment |  | By combining research and expertise in engineering, energy management and projects, the achievement of energy storage manages to balance energy according to its demand and in this way we move towards a sustainable energy system. | traditional fossil fuels and contributes to a more sustainable and resilient energy system, energy market independence and well-being. Energy storage systems can help manage the intermittent nature of renewables and release energy when it is needed, thus achieving savings and proper management of precious energy.  |
+| The implementation of RES storage technologies requires a multidisciplinary approach that combines expertise in engineering, energy management. | Advancements, Renewable Energy Transition, Green Finance & Investment |  | By combining research and expertise in engineering, energy management and projects, the achievement of energy storage manages to balance energy according to its demand and in this way we move towards a sustainable energy system. | traditional fossil fuels and contributes to a more sustainable and resilient energy system, energy market independence and well-being. Energy storage systems can help manage the intermittent nature of renewables and release energy when it is needed, thus achieving savings and proper management of precious energy.  |
 | --- | --- | --- | --- | --- | --- |
 |  Promotion of using recycled and recyclable, renewable and sustainable materials | Using recycled and recyclable, renewable and sustainable materials can make a significant contribution to achieving climate neutrality. These materials reduce the demand for raw materials, minimize waste generation, and decrease GHG | Financial scarcity, Interest & awareness of citizens, Technological Limitations, Social & Cultural Factors, Citizens with different background, Climate Policy | Ministry of Environment and Energy, Municipality, Environmental Development Agency of Western Thessaly (PADYTH) S.A., | The use of recycled and recyclable, renewable and sustainable materials reduces the demand for raw materials, minimises waste | The choice of recycled and recyclable, renewable and sustainable materials brings economic savings as it avoids the creation of new  |
 
@@ -7017,8 +7003,6 @@ Effective stakeholder engagement is crucial throughout the Climate City Contract
 |  Commercial Association of Trikala | Business association | Private legal entity | Christos Blougouras | President  |
 |  Technical Chamber of Greece – Committee of Regional Department of Central & Western Thessaly | Professional organization | Legal Entity of Public Law | Apostolos Batavanis | President  |
 |  Public Transport Organization of Trikala | Mobility/local level | Private Limited Company | Dimitrios Ioannou | President of the Board  |
-
-4
 |  Intercity Transport Organization of Trikala* | Mobility/national level | Private Limited Company |  |   |
 | --- | --- | --- | --- | --- |
 |  ABB SA Greece* | Engineering and Digital Technologies /International level | Private Limited Company |  |   |
@@ -7031,8 +7015,6 @@ Effective stakeholder engagement is crucial throughout the Climate City Contract
 |  Global Water partnership - Mediterranean | Sustainable development/ Natural Resources/international level | Non-profit civil society organisation | Vaggelis Konstantianos | Executive Secretary  |
 |  Organisation Earth | Sustainable development/national level | Non-Governmental Organisation | Alexis Galinos | General Director  |
 |  Common Space | Urban planning-Participatory design/local level | Social Cooperative Enterprise | Konstantinos Vourekas | President  |
-
-5
 |  Municipal Youth Council | Municipal governance/Youth engagement/local level | Municipal Body | Ioannis Lappas | President  |
 | --- | --- | --- | --- | --- |
 |  Municipal Committee for Equality | Municipal governance /Equality/local level | Municipal Body | Dimitra Natsina | President/ Elected Vice Mayor of Social Welfare  |
@@ -7902,8 +7884,6 @@ Table 8.2. GHG emissions from AFOLU sources.
 |  Land  |   |   |   |   |   |   |   |   |   |   |
 |  1 | Removals from forest land remaining forest land |  | -7,63 | 0,01 | 0,0001 | -7,26 | 0 | L | L |   |
 |  Aggregate sources and non-CO2 emission sources on land |   | NO |   |   |   |   |   | These activities do not exist within the city boundary for the baseline year.  |   |   |
-
-1
 |  ![img-92.jpeg](img-92.jpeg)  |   |   |
 | --- | --- | --- |
 3

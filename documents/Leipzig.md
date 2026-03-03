@@ -323,11 +323,11 @@ Climate-neutral heat-system by 2038 with use of green natural gas and hydrogen i
 Transformation of private heat-systems with heat pumps and integrating renewable energies in the heat/energy sector
 Increased rate (~3%) of building renovation in the public and private real estate sector | No data or targets | n.a.  |
 |  Transport | Reduction by 60%
-Modal split of 70% environmental traffic and 30% private traffic remaining by 2030 with high rate of alternative drives (min. 65%) | No data or targets | n.a.  |
+| Modal split of 70% environmental traffic and 30% private traffic remaining by 2030 with high rate of alternative drives (min. 65%) | No data or targets | n.a.  |
 |  Waste/wastewater | Reduction by 50%
-Zero-waste strategy with 10% decline and a high share of waste separation and recycling in the resource cycle | No data or targets | n.a.  |
+| Zero-waste strategy with 10% decline and a high share of waste separation and recycling in the resource cycle | No data or targets | n.a.  |
 |  IPPU | Reduction by 65%
-High energy efficiency standards in industrial and production processes by integrating high shares of renewable energies | No data or targets | n.a.  |
+| High energy efficiency standards in industrial and production processes by integrating high shares of renewable energies | No data or targets | n.a.  |
 |  AFOLU | No data or targets | No data or targets | n.a.  |
 |  Geographical boundary | Same as city administrative boundary | Smaller than city administrative boundary | Larger than city administrative boundary  |
 |   | City boundaries with no excluded or additional areas |  |   |
@@ -537,8 +537,7 @@ Climate Neutrality Action Plan
 |   |  | renewable energies and waste heat and the construction of new networks that are predominantly powered by renewable energies. For example, Leipzig municipal utilities can receive subsidies if they set up a local heating network with a high proportion of renewable energies in a new development area or receive funding if they convert existing district heating networks to renewable energies and waste heat. |   |
 | --- | --- | --- | --- |
 |  national | Renewable Energies Act (EEG) | The aim of the law is to implement the switch to renewable energies. The proportion of electricity generated from renewable energies is to be increased to at least 80 % of gross electricity consumption in Germany by 2030. The law regulates the electricity feed-in of grid operators and the associated remuneration. The law also regulates the proof of origin and regional certification of electricity in order to create transparency. Local authorities are to receive a financial contribution from the local plant operators; this contribution from the operators is voluntary, but the plant operators can claim reimbursement from the grid operators. In total, the financial contribution can amount to up to 0.2 cents/kilowatt hour. (Source: EEG 2023)
-
-In addition, on 29 July 2022, the law stipulated that renewable energies are in the overriding public interest and serve public safety. This is crucial for increasing the pace of expansion. As a result, they will take precedence over other interests when weighing up decisions in future. This means that the speed of planning and approval procedures can be significantly increased. | regulation  |
+| In addition, on 29 July 2022, the law stipulated that renewable energies are in the overriding public interest and serve public safety. This is crucial for increasing the pace of expansion. As a result, they will take precedence over other interests when weighing up decisions in future. This means that the speed of planning and approval procedures can be significantly increased. | regulation  |
 |  national | Building Code | The building planning law regulated in the BauGB has far-reaching significance for the construction of renewable energy installations and their utilisation. It primarily regulates the permissibility of these systems under planning law, which is binding for the federal states and municipalities. For example, the BauGB allows areas to be defined in which certain renewable energy plants such as wind turbines, hydrogen plants or photovoltaic plants can be prioritised. To further accelerate/simplify expansion, solar installations were included in the scope of privileges under building law as of 1 January 2023 under certain conditions (localisation in 200 m strips along motorways and railway lines of the superordinate network as well as agricultural PV installations in a spatially functional connection with agricultural, forestry and horticultural operations). | regulation  |
 |  national | Building Energy Act (GEG) | The GEG contains requirements for the energy quality of buildings, the creation and use of energy performance certificates and the use of renewable energies in buildings. For new buildings, a permissible annual primary energy | regulation  |
 City of Leipzig
@@ -551,7 +550,7 @@ Climate Neutrality Action Plan
 |  national | Combined Heat and Power Act (KWKG) | The Combined Heat and Power Act regulates the feed-in and remuneration of electricity from combined heat and power plants. | regulation  |
 |  national | Energy Industry Act (EnWG) | The Energy Industry Act contains fundamental regulations for grid-bound energy supply. | regulation  |
 |  regional | Saxony 2021 Energy and Climate Programme and associated EKP action plan | The Saxony Energy and Climate Programme (EKP 2021) forms the basis for the strategic direction of energy and climate policy for Saxony up to 2030, initiating a comprehensive transformation process for Saxony. The phase-out of lignite-fired power generation, the focus on long-term climate neutrality and the integrative consideration of climate change, climate protection and climate adaptation mark a paradigm shift in Saxony's energy and climate policy.
-The action plan for the Saxony 2021 Energy and Climate Programme describes 192 specific measures by the state government in the fields of climate-conscious state administration, municipal climate protection and climate adaptation, energy supply, industry and commerce, mobility, buildings, environment and land use, health and disaster protection as well as research and knowledge transfer in order to implement the objectives and key areas of action of the EKP 2021. | policy  |
+| The action plan for the Saxony 2021 Energy and Climate Programme describes 192 specific measures by the state government in the fields of climate-conscious state administration, municipal climate protection and climate adaptation, energy supply, industry and commerce, mobility, buildings, environment and land use, health and disaster protection as well as research and knowledge transfer in order to implement the objectives and key areas of action of the EKP 2021. | policy  |
 |  local | Leipzig Strategy 2035 | The Leipzig Strategy 2035 sets out the direction in which Leipzig should develop over the next ten years and formulates guidelines for the city administration, municipal enterprises and holdings.
 In addition to a spatially organised urban development strategy, it includes several | policy  |
 City of Leipzig
@@ -714,7 +713,7 @@ Measures and focus topics are described in 10 fields of action, the individual m
 Table 1 Fields of action and focus topics of the 2030 mobility strategy
 
 |  Traffic safety | - Financial support for the Traffic Accident Commission to analyse accident steles
-Strengthening the traffic organisation  |
+| Strengthening the traffic organisation  |
 | --- | --- |
 |  Pedestrian traffic | - Pavement renovation and new construction
 Zebra crossing programme
@@ -736,11 +735,11 @@ Cycle densification
 New flexible on-demand offers  |
 |  Multimodal offers | new digital solutions that enable the flexible combined use of several modes of transport with the "LeipzigMOVE" app.  |
 |  Commercial transport | - Implementation of new concepts for "last mile logistics": goods that are to be delivered to the city are bundled outside the city centre, reloaded and then transported to their destination using low-emission means of transport.
-Establishment of loading and delivery zones for efficient delivery with conflict-free traffic flow  |
+| Establishment of loading and delivery zones for efficient delivery with conflict-free traffic flow  |
 |  Commuter flows | - Improvement of the existing P+R offer
-Integrated mobility study for the European Metropolitan Region of Central Germany  |
+| Integrated mobility study for the European Metropolitan Region of Central Germany  |
 |  Stationary traffic | - Long-term concept for dealing with stationary traffic (parking)
-Realisation of new resident parking areas  |
+| Realisation of new resident parking areas  |
 |  Infrastructure | - Coordinate all construction projects of municipal companies and the city in the infrastructure programme, e.g. Leipzig municipal utilities for the use of wide trams  |
 
 Cycling development plan 2030+
@@ -907,11 +906,11 @@ Climate Neutrality Action Plan
 |  for new-build neighbourhoods |  |  |  |  |  |  |  |  |  |  |   |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Transport
-Mobility strategy with (70/30 modal split by 2030) | 801.371 | 480.822 | 60 | 80.137 | 10 | 400.686 | 50 | 224.524 | 28 | 320.549 | 40  |
+| Mobility strategy with (70/30 modal split by 2030) | 801.371 | 480.822 | 60 | 80.137 | 10 | 400.686 | 50 | 224.524 | 28 | 320.549 | 40  |
 |  Waste
-Zero Waste Strategy | No data | No data |  | No data |  | No data |  | No data |  | No data |   |
+| Zero Waste Strategy | No data | No data |  | No data |  | No data |  | No data |  | No data |   |
 |  Industrial Process and Product Use (IPPU)
-Solar booster, green business parks for sustainable business with federal & EU targets | 860.061 | 559.040 | 65 | 86.006 | 10 | 473.034 | 55 | 215.015 | 25 | 301.021 | 35  |
+| Solar booster, green business parks for sustainable business with federal & EU targets | 860.061 | 559.040 | 65 | 86.006 | 10 | 473.034 | 55 | 215.015 | 25 | 301.021 | 35  |
 |  Agricultural, Forestry and Land Use (AFOLU) | No data | No data |  | No data |  | No data |  | No data |  | No data |   |
 |  Total | 3.111.033 | 2.039.877 | 65,6 | 310.145 | 10 | 1.729.733 | 55,6 | 897.816 | 29 | 1.061.577 | 34  |
 City of Leipzig
@@ -1228,7 +1227,7 @@ Universities
 Research institutions
 Civil society actors | medium | Generally high, also depending on individual preferences and regulation  |
 |  Labour and economy | companies
-Associations (e.g. Chamber of Industry and Commerce, Chamber of Crafts) | high | Depending on regulation and economic factors  |
+| Associations (e.g. Chamber of Industry and Commerce, Chamber of Crafts) | high | Depending on regulation and economic factors  |
 |  Internal organisation | Administration (Office for Digitisation and Organisation) | Low (share of emissions from the city administration in total emissions Leipzig low) | High  |
 Climate Neutrality Action Plan Guidance
 
@@ -1337,10 +1336,10 @@ Climate Neutrality Action Plan
 Solar thermal south
 Expansion of district heating |  | Resilience  |
 |   |  Governance & policy | Several concepts and strategies on regional and local level (e.g. on land potential for renewable energy, municipal heating strategy)
-Urban Data Platform/Digital Twins for climate sensitive urban development | More targeted RES extension within city boundaries and in cooperation with region around Leipzig
-Faster planning and approval processes for RES plants | Increase RES share in energy and heating production | Better information on state of RES integration  |
+| Urban Data Platform/Digital Twins for climate sensitive urban development | More targeted RES extension within city boundaries and in cooperation with region around Leipzig |
+| Faster planning and approval processes for RES plants | Increase RES share in energy and heating production | Better information on state of RES integration  |
 |   |  Social innovation | Sensibilisation and Activitation of house owners for energy efficient building development (incl. decentralized RES integration) | Increase renovation rate in existing building stock in non-municipal buildings | Increase RES share in energy and heating production, reduction of energy and heating demand | Booster for local building industry/ craftsmen
-Long-term: indepency of home owners from centralised heating and energy provision  |
+| Long-term: indepency of home owners from centralised heating and energy provision  |
 |   |  Democracy/ participation | Citizens-led RES projects (e.g. Leipzig Energy Co-operative) | Support in matching processes between energy communities and roof/building owners | Increase RES share in energy and heating production |   |
 City of Leipzig
 
@@ -1552,8 +1551,8 @@ Strategy for dealing with the remaining emissions
 |  Fields of action | Portfolio description  |   |   |
 |   |  List of actions |   | Descriptions  |
 |  Energy systems:
-Electricity | 1 | Use of energy-saving lighting and Energy-efficient and environmentally friendly urban lighting | Replacing and modernising lighting is an important lever for reducing electricity consumption.
-The gradual use of LED light sources and intelligent lighting control in all areas of buildings is the focus of implementation.  |
+| Electricity | 1 | Use of energy-saving lighting and Energy-efficient and environmentally friendly urban lighting | Replacing and modernising lighting is an important lever for reducing electricity consumption. |
+| The gradual use of LED light sources and intelligent lighting control in all areas of buildings is the focus of implementation.  |
 |   |  2 | Photovoltaic systems on municipal roofs | The installation of PV systems is planned on all possible roofs of municipal properties.  |
 City of Leipzig
 Climate Neutrality Action Plan
@@ -1575,12 +1574,12 @@ Climate Neutrality Action Plan
 6
 
 |  **Energy systems:**
-**Energy Management** | 13 | SPARCS Baumwollspinnerei | The SPARCS project (Sustainable energy Positive & zero cARbon CommunitieS) is pursuing the development of a smart, energy-positive and therefore sustainable neighbourhood in the monument protected area of Baumwollspinnerei.  |
+| **Energy Management** | 13 | SPARCS Baumwollspinnerei | The SPARCS project (Sustainable energy Positive & zero cARbon CommunitieS) is pursuing the development of a smart, energy-positive and therefore sustainable neighbourhood in the monument protected area of Baumwollspinnerei.  |
 | --- | --- | --- | --- |
 |   |  14 | Urban Data Platform/Twin for climate sensitive urban development | Linking data from different administrative departments and associated companies on data platforms and the development of digital twins climate neutral urban development help to implement a holistic approach and speed up planning procedures.  |
 |   |  15 | Development of virtual power plants for demand-driven energy supply (SPARCS project) | Virtual power plants consist of decentralised renewable energy systems (e.g. photovoltaic systems), electricity storage and a networked consumption structure (e.g. smart meters and smart grids).  |
 |  **Mobility & transport:**
-**public transport** | 16 | Extension of tram network | The measure connects new residential areas to an attractive public transport system and is the basis for increasing the share of public transport.  |
+| **public transport** | 16 | Extension of tram network | The measure connects new residential areas to an attractive public transport system and is the basis for increasing the share of public transport.  |
 |   |  17 | Enhancing accessibility at stops | The aim is to convert at least 10 tram stops and 40 bus stops (directional stops) per year that are not yet accessible.  |
 |   |  18 | Leipzig Move Application | The aim of the measure is to provide LeipzigMOVE as a multimodal or intermodal mobility platform and to expand it to include additional services.  |
 |   |  19 | Acquisition of new vehicles for public transport | New trams with up to 15% more space will be introduced and there will be a gradual switch to e-buses, including the creation of charging infrastructure.  |
@@ -1664,7 +1663,7 @@ Application of the lighting master plan for the public street space  |
 |   |  Generated renewable energy (if applicable) | not applicable  |
 |   |  Removed/substituted energy, volume, or fuel type | Reduced electrical energy  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | The lighting in municipal buildings/areas corresponds to an energy saving of approx. 143 MWh/year, and consequently a CO2 saving of approx. 80 tonnes/year.
-With 1,500 light points, each saving 300 kWh per year (in total 450 MWh), the emission factor of 0.478 t/MWh for the German electricity mix results in a savings potential of 215 t CO2/year.  |
+| With 1,500 light points, each saving 300 kWh per year (in total 450 MWh), the emission factor of 0.478 t/MWh for the German electricity mix results in a savings potential of 215 t CO2/year.  |
 |   |  GHG emissions compensated (natural or technological sinks) | not quantifiable  |
 |   |  Total costs and costs by CO2e unit | 2,500,000 euros/year in total  |
 City of Leipzig
@@ -1710,7 +1709,7 @@ The gas turbines used can burn high proportions of green hydrogen, so that in fu
 |  Implementation | Responsible bodies/person for implementation | Leipzig municipal utilities  |
 |   |  Action scale & addressed entities | Building Scale  |
 |   |  Involved stakeholders | Administration
-L-Group  |
+| L-Group  |
 |   |  Comments on implementation - consider mentioning resources, timelines, milestones | -  |
 |  Impact & cost | Generated renewable energy (if applicable) | 163 MW thermal output
 MW electrical output
@@ -1737,13 +1736,12 @@ Climate Neutrality Action Plan
 | --- | --- | --- |
 |   |  Action type | Sustainable energy production  |
 |   |  Action description | To significantly reduce greenhouse gas emissions, it is necessary to build renewable energy production facilities. The City of Leipzig wishes to fulfil its responsibility by enabling and promoting the development of such facilities, preferably on municipal land. Due to the limited area potential for wind energy plants in urban areas, solar plants are of particular importance. The construction of generation capacity outside the city by Leipzig Group companies should also be encouraged.
-
-In addition to the construction of large-scale plants, larger roof systems (e.g. on hall buildings) and combined use on agricultural land also offer opportunities for the expansion of renewable energies. The expansion targets by location are to be defined as part of the potential study according to M 1.8. Additional expansion is necessary to comply with the Paris Climate Agreement. To achieve this goal, areas in the immediate vicinity should be included in the consideration.  |
+| In addition to the construction of large-scale plants, larger roof systems (e.g. on hall buildings) and combined use on agricultural land also offer opportunities for the expansion of renewable energies. The expansion targets by location are to be defined as part of the potential study according to M 1.8. Additional expansion is necessary to comply with the Paris Climate Agreement. To achieve this goal, areas in the immediate vicinity should be included in the consideration.  |
 |  Reference to impact pathway | Field of action | Energy systems  |
 |   |  Systemic lever | Technology and Infrastructure  |
 |   |  Outcome (according to module B-1.1) | not applicable  |
 |  Implementation | Responsible bodies/person for implementation | L Group
-Community energy cooperatives  |
+| Community energy cooperatives  |
 |   |  Action scale & addressed entities | City-wide scale  |
 |   |  Involved stakeholders | L Group
 Administration
@@ -1774,7 +1772,7 @@ Climate Neutrality Action Plan
 |   |  Action description | The Municipal Heating Plan aims to determine a climate-friendly heating and cooling supply in the urban area on the basis of an inventory and potential analysis, and to describe the implementation scenarios that lie outside the district heating area. This includes supply structures for the transformation of existing neighbourhoods and new development areas, as well as determining the requirements for the necessary generation infrastructure and identifying areas for the production of renewable energy. The strategy is being developed in coordination between the specialist departments and the Leipzig Group, with the help of external support and the ongoing involvement of relevant stakeholders. The result is a heat supply map with an area map and a catalogue of measures.  |
 |  Reference to impact pathway | Field of action | Energy systems  |
 |   |  Systemic lever | • Technology and Infrastructure
-• Governance and Policy  |
+| • Governance and Policy  |
 |   |  Outcome (according to module B-1.1) | not quantifiable  |
 |  Implementation | Responsible bodies/person for implementation | Office for Sustainable Development and Climate Protection, L-Group  |
 |   |  Action scale & addressed entities | City-wide scale  |
@@ -1863,7 +1861,7 @@ A flock of sheep will be used on site to cultivate the greenery under and betwee
 |   |  Action scale & addressed entities | City-wide scale  |
 |   |  Involved stakeholders | Ritter XL Solar Administration L-Group  |
 |   |  Comments on implementation - consider mentioning resources, timelines, milestones | Construction started at the beginning of 2024
-The plant is supposed to be completed at the end of 2025/beginning of 2026  |
+| The plant is supposed to be completed at the end of 2025/beginning of 2026  |
 |  Impact & cost | Generated renewable energy (if applicable) | Approx. 26 GWh/year  |
 |   |  Removed/substituted energy, volume, or fuel type | Lignite, natural gas  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | Around 7,000 tonnes of CO2 eq. avoided  |
@@ -1891,9 +1889,9 @@ Several areas will be newly connected to district heating will be connected to d
 |   |  Outcome (according to module B-1.1) | not applicable  |
 |  Implementation | Responsible bodies/person for implementation | Leipzig municipal utilities , Office for Mobility and Civil Engineering  |
 |   |  Action scale & addressed entities | City-wide
-neighbourhood Scale  |
+| neighbourhood Scale  |
 |   |  Involved stakeholders | Administration
-L-Group  |
+| L-Group  |
 |   |  Comments on implementation - consider mentioning resources, timelines, milestones | -  |
 |  Impact & cost | Generated renewable energy (if applicable) | not applicable  |
 City of Leipzig
@@ -1914,7 +1912,7 @@ Climate Neutrality Action Plan
 |  Action outline | Action name | Solar thermal south  |
 |   | Action type | Sustainable energy production  |
 |   | Action description | Solar thermal systems are a building block of the heating transition. As ground-mounted systems, these have a considerable require a considerable amount of space. In principle, the systems can be integrated into the district heating system and thus increase the proportion of renewable heat.
-A solar thermal plant will also be part of the Leipzig South CHP plant site. The former coal storage site will find a new purpose here: collectors will be installed on a total usable area of around 3 hectares to increase the proportion of renewable heat in the district heating network.  |
+| A solar thermal plant will also be part of the Leipzig South CHP plant site. The former coal storage site will find a new purpose here: collectors will be installed on a total usable area of around 3 hectares to increase the proportion of renewable heat in the district heating network.  |
 |  Reference to impact pathway | Field of action | Energy systems  |
 |   | Systemic lever | Technology and Infrastructure  |
 |   | Outcome (according to module B-1.1) | not applicable  |
@@ -1957,10 +1955,10 @@ As a technology showcase, LHyVE aims to implement the entire value chain from pr
 The Leipzig region is one of the largest hydrogen consumers in Germany due to its chemical industry. Currently, more than 8.5 million standard cubic metres of hydrogen are used per day in the industrial region of Central Germany, which is more than 90 times the annual hydrogen consumption of the planned Leipzig Süd CHP plant in Leipzig (2 x 62 MW). Hydrogen is currently used in Leuna for desulphurisation in crude oil processing and for the production of methanol. In addition, there are numerous other companies and industries in the region, e.g. in the mobility sector, some of which produce large quantities of hydrogen themselves and can use it for the value chain.  |
 |  Reference to impact pathway | Field of action | Energy systems  |
 |   | Systemic lever | • Technology and Infrastructure
-• Governance and Policy  |
+| • Governance and Policy  |
 |   | Outcome (according to module B-1.1) | not applicable  |
 |  Implementation | Responsible bodies/person for implementation | LEIPZIG SUPPLY AND TRANSPORT COMAPNY
-Leipziger Versorgungs- und Verkehrsgesellschaft mbH  |
+| Leipziger Versorgungs- und Verkehrsgesellschaft mbH  |
 |   | Action scale & addressed entities | Regional Scale  |
 |   | Involved stakeholders | LEIPZIG SUPPLY AND TRANSPORT COMAPNY
 Leipziger Versorgungs- und Verkehrsgesellschaft mbH
@@ -1998,7 +1996,7 @@ production & heat supply through electrolysis,
 waste heat recovery, development of up to
 % H2-capable gas turbines  |
 |  Impact & cost | Generated renewable
-energy (if applicable) | not applicable  |
+| energy (if applicable) | not applicable  |
 |   |  Removed/substituted
 energy, volume, or fuel
 type | not applicable  |
@@ -2025,7 +2023,7 @@ Climate Neutrality Action Plan
 | Comments on implementation - consider mentioning resources, timelines, milestones | Responsible bodies/person for implementation | Office for City Planning, Office for Sustainable Development and Climate Protection Office for Sustainable Development and Climate Protection, Mayor's Department II Mayor's Department, Office for Municipal Real Estate, Leipzig municipal utilities |
 | Action scale & addressed entities | City-wide scale |
 | Involved stakeholders | Administration
-L-Group |
+| L-Group |
 | Comments on implementation - consider mentioning resources, timelines, milestones | • Potential analysis of suitable and available areas for the utilisation of renewable energies |
 City of Leipzig
 Climate Neutrality Action Plan
@@ -2055,7 +2053,7 @@ Climate Neutrality Action Plan
 |  Implementation | Responsible bodies/person for implementation | L-Group, Office for Sustainable Development and Climate Protection, Office for City Planning  |
 |   |  Action scale & addressed entities | City-wide  |
 |   |  Involved stakeholders | Administration
-L-Group  |
+| L-Group  |
 |   |  Comments on implementation - consider mentioning resources, timelines, milestones | - Determining the required thermal storage capacities with the help of a heating strategy (M 3.1)
 Determining the required electrical storage capacities
 Planning and construction of additional storage capacities
@@ -2089,7 +2087,7 @@ The Office for City PlanningRCS project at the Baumwollspinnerei also points the
 In a showroom on the cotton mill site, the interplay of energy production and consumption is presented in near-real time, making energy supply tangible and understandable.  |
 |  Reference to impact pathway | Field of action | Energy systems  |
 |   |  Systemic lever | • Technology and Infrastructure
-• Learning and Capabilities  |
+| • Learning and Capabilities  |
 |   |  Outcome (according to module B-1.1) | not applicable  |
 |  Implementation | Responsible bodies/person for implementation | Office for a Digital City  |
 |   |  Action scale & addressed entities | Neighbourhood scale  |
@@ -2197,15 +2195,14 @@ Climate Neutrality Action Plan
 | --- | --- | --- |
 |   |  Action type | Changing the modal split  |
 |   |  Action description | The measure connects new residential areas to an attractive public transport system and is the basis for increasing the share of public transport in transport choices and passenger numbers. Efficient, barrier-free public transport ensures the participation of all social groups, is conducive to equal opportunities and increases the attractiveness of the city
-
-The measure includes carrying out feasibility studies and cost-benefit analyses, followed by concrete planning. The planning activities are aimed at extending the tram network and creating new connections and gaps (e.g. Südsehne incl. accompanying integration routes, Wahren S-Bahn station, Thekla-Süd).  |
+| The measure includes carrying out feasibility studies and cost-benefit analyses, followed by concrete planning. The planning activities are aimed at extending the tram network and creating new connections and gaps (e.g. Südsehne incl. accompanying integration routes, Wahren S-Bahn station, Thekla-Süd).  |
 |  Reference to impact pathway | Field of action | Mobility & transport  |
 |   |  Systemic lever | Technology and Infrastructure  |
 |   |  Outcome (according to module B-1.1) | not applicable  |
 |  Implementation | Responsible bodies/person for implementation | Office for Mobility and Civil Engineering, Leipzig public transport company  |
 |   |  Action scale & addressed entities | City-wide scale  |
 |   |  Involved stakeholders | Administration
-L-Group  |
+| L-Group  |
 |   |  Comments on implementation - consider mentioning resources, timelines, milestones | - Feasibility studies for new tram lines
 Planning of the 3 measures Südsehne, incl. accompanying integration roads, Wahren S-Bahn station, Thekla-Süd incl. planning approval procedure
 Realisation of the measures  |
@@ -2235,7 +2232,7 @@ Climate Neutrality Action Plan
 |  Implementation | Responsible bodies/person for implementation | Office for Mobility and Civil Engineering  |
 |   |  Action scale & addressed entities | City-wide scale  |
 |   |  Involved stakeholders | Administration
-L-Group  |
+| L-Group  |
 |   |  Comments on implementation - consider mentioning resources, timelines, milestones | - Planning
 Structural realisation
 Monitoring and, if necessary, adjustment of prioritisation  |
@@ -2264,12 +2261,12 @@ Climate Neutrality Action Plan
 • Implementation  |
 |  Reference to impact pathway | Field of action | Mobility & transport  |
 |   |  Systemic lever | • Technology and Infrastructure
-• Governance and Policy  |
+| • Governance and Policy  |
 |   |  Outcome (according to module B-1.1) | not applicable  |
 |  Implementation | Responsible bodies/person for implementation | LEIPZIG HOUSING AND BUILDING SOCIETY (LWB)  |
 |   |  Action scale & addressed entities | Regional scale  |
 |   |  Involved stakeholders | Administration
-L-Group  |
+| L-Group  |
 |   |  Comments on implementation - consider mentioning | -  |
 City of Leipzig
 Climate Neutrality Action Plan
@@ -2291,8 +2288,7 @@ Climate Neutrality Action Plan
 |  Action outline | Action name | Acquisition of new vehicles  |
 |   |  Action type | Changing the modal split  |
 |   |  Action description | From 2024, new trams with up to 15% more space will be introduced as part of the modernisation of the main axes and the creation of new infrastructure. In addition, there will be a gradual switch to e-buses, including the creation of charging infrastructure. The creation of additional capacity (vehicle pool) in the S-Bahn area will take place as part of the new tendering process for the MDSB network 2025+.
-
-The measure will reduce CO2 emissions by modernising the fleet, increase the attractiveness of public transport and ensure inclusion and participation opportunities for all social groups.  |
+| The measure will reduce CO2 emissions by modernising the fleet, increase the attractiveness of public transport and ensure inclusion and participation opportunities for all social groups.  |
 |  Reference to impact pathway | Field of action | Mobility & transport  |
 |   |  Systemic lever | Technology and Infrastructure  |
 |   |  Outcome (according to module B-1.1) | not applicable  |
@@ -2383,7 +2379,7 @@ Climate Neutrality Action Plan
 |   |  Action description | The measure includes the preparation of feasibility studies, design and subsequent construction of the first sections of the five high-speed cycle route corridors identified by the Free State of Saxony (subject to positive feasibility studies), which will significantly increase the attractiveness of cycling as a mode of transport along the corridors. The creation of high-speed cycle routes will address urban-rural and commuter traffic, which is currently heavily dominated by private motorised transport.  |
 |  Reference to impact pathway | Field of action | Mobility & transport  |
 |   |  Systemic lever | • Technology and Infrastructure
-• Governance and Policy  |
+| • Governance and Policy  |
 |   |  Outcome (according to module B-1.1) | not quantifiable  |
 |  Implementation | Responsible bodies/person for implementation | Office for Mobility and Civil Engineering  |
 |   |  Action scale & addressed entities | Regional Scale  |
@@ -2450,7 +2446,7 @@ Climate Neutrality Action Plan
 |   |  Action description | The concept "Leipzig - City for Intelligent Mobility" is intended to bundle offers from and for Leipzig companies for sustainable mobility. The aim of the concept is to support Leipzig companies in implementing the transport transition and developing new mobility services and the associated value creation. In addition to sustainable mobility and long-term economic development, the aims are to establish a company mobility management system with a mobility budget instead of a company car or job ticket. In addition, the aim is to increase employee loyalty, reduce mobility costs and advise on and develop business parks with a focus on local public transport.  |
 |  Reference to impact pathway | Field of action | Mobility & transport  |
 |   |  Systemic lever | • Governance and Policy
-• Learning and Capabilities  |
+| • Learning and Capabilities  |
 |   |  Outcome (according to module B-1.1) | not applicable  |
 |  Implementation | Responsible bodies/person for implementation | Office of Economic Development  |
 |   |  Action scale & addressed entities | City-wide scale  |
@@ -2483,7 +2479,7 @@ Cities and municipalities have far too narrow limits when it comes to setting sp
 | Responsible bodies/person for implementation | Office for Residential Construction and Urban Renewal, Office for City Planning, Office for Sustainable Development and Climate Protection, Office for Mobility and Civil Engineering, Office for Building Management, Office for Urban Parks and Bodies of Water Authority, LEIPZIGER HOUSING AND BUILDING SOCIETY (LWB), L-Group, housing companies/coops |
 | Impact & cost | Action scale & addressed entities | Nationa scale |
 | Involved stakeholders | Administration
-Other cities |
+| Other cities |
 | Comments on implementation - consider mentioning resources, timelines, milestones | - |
 | Generated renewable energy (if applicable) | not applicable |
 | Impact & cost | Removed/substituted energy, volume, or fuel type | not applicable |
@@ -2506,7 +2502,7 @@ Climate Neutrality Action Plan
 |   |  Action description | Low-car and car-free neighbourhoods are an opportunity to reduce the number of cars per household. Climate neutral modes of transport need to be integrated into the urban planning of neighbourhoods and the management of the remaining cars. Implementing mobility concepts at the neighbourhood level encourages people to walk, cycle or use public transport. The administration develops differentiated concepts for new and existing neighbourhoods according to the different conditions and challenges.  |
 |  Reference to impact pathway | Field of action | Mobility & transport  |
 |   |  Systemic lever | • Technology and Infrastructure
-• Governance and Policy  |
+| • Governance and Policy  |
 |   |  Outcome (according to module B-1.1) | not applicable  |
 |  Implementation | Responsible bodies/person for implementation | Office for City Planning, Office for Mobility and Civil Engineering  |
 |   |  Action scale & addressed entities | Neighbourhood Scale, Building Scale  |
@@ -2539,8 +2535,7 @@ Climate Neutrality Action Plan
 |  Action outline | Action name | Development and implementation of district and neighbourhood-related mobility concepts  |
 |   |  Action type | Sustainable Urban Development, Mobility  |
 |   |  Action description | The aim of a mobility plan is to encourage people to change their mobility behaviour. The use of sustainable and active modes of transport such as cycling, walking and public transport should be increased. This will not only reduce greenhouse gas emissions but will also reduce land sealing by reorganising and improving the quality of public spaces.
-
-Low-car and car-free neighbourhoods are seen as an opportunity to reduce the number of cars per household. To make this possible, it is necessary to develop concepts for the spatial organisation of the remaining parking spaces and to create the conditions for the new households to use environmentally friendly means of transport. Differentiated concepts need to be developed for new and existing neighbourhoods, depending on the different  |
+| Low-car and car-free neighbourhoods are seen as an opportunity to reduce the number of cars per household. To make this possible, it is necessary to develop concepts for the spatial organisation of the remaining parking spaces and to create the conditions for the new households to use environmentally friendly means of transport. Differentiated concepts need to be developed for new and existing neighbourhoods, depending on the different  |
 |  Reference to impact pathway | Field of action | Mobility & transport  |
 |   |  Systemic lever | Governance and Policy  |
 |   |  Outcome (according to module B-1.1) | not applicable  |
@@ -2584,10 +2579,10 @@ Climate Neutrality Action Plan
 |   |  Action description | The measure aims to establish a zero-waste management system for culture that supports and coordinates the city's cultural institutions and (cultural) events in the implementation of an efficient circular economy. The programme also aims to cooperate with cultural institutions in Pécs/Hungary, Ljubljana/Slovenia, Zagreb/Croatia, Pilsen/Czech Republic and Venice/Italy and to develop a zero-waste app containing guidelines and recommendations for action. The prerequisite for the international orientation of the measure is the approval of the application 'Analysis of Zero Waste Practices in Cultural Institutions' (2022-2025) within the Interreg Central Europe Programme. The implementation leads to resource-saving planning and realisation of events, thereby reducing GHG emissions, improving the quality of life, promoting networking potential and cooperation within Leipzig's cultural scene as well as in an international context and imparting (specialist) knowledge and promoting education for sustainable development. Culture thus assumes a pioneering role, as it sensitises both employees and the public/urban society.  |
 |  Reference to impact pathway | Field of action | Waste & circular economy  |
 |   |  Systemic lever | • Governance and Policy
-• Learning & capabilities  |
+| • Learning & capabilities  |
 |   |  Outcome (according to module B-1.1) | not applicable  |
 |  Implementation | Responsible bodies/person for implementation | Department of Culture
-Municipal cleaning entity  |
+| Municipal cleaning entity  |
 |   |  Action scale & addressed entities | City-wide scale  |
 |   |  Involved stakeholders | Department of Culture
 Municipal cleaning entity
@@ -2621,15 +2616,15 @@ Climate Neutrality Action Plan
 |  Action outline | Action name | Sustainable Food Strategy  |
 |   |  Action type | Reducing resource usage  |
 |   |  Action description | Based on the analysis of Leipzig's food system, a comprehensive nutrition strategy is being developed which bundles municipal measures in the form of projects, actions and recommendations for action along defined guidelines. Its objectives are based on the requirements for a modern, sustainable reorganisation of the urban food landscape in terms of food and climate justice.
-The measure raises awareness of a sustainable lifestyle, imparts (specialist) knowledge and creates transparency, thus promoting climate and food justice, raising awareness of regional value chains, contributing to the preservation of the environment and biodiversity and focussing on balanced health.  |
+| The measure raises awareness of a sustainable lifestyle, imparts (specialist) knowledge and creates transparency, thus promoting climate and food justice, raising awareness of regional value chains, contributing to the preservation of the environment and biodiversity and focussing on balanced health.  |
 |  Reference to impact pathway | Field of action | Waste & circular economy  |
 |   |  Systemic lever | • Governance and Policy
-• Learning and Capabilities  |
+| • Learning and Capabilities  |
 |   |  Outcome (according to module B-1.1) | not applicable  |
 |  Implementation | Responsible bodies/person for implementation | Office for Sustainable Development and Climate Protection  |
 |   |  Action scale & addressed entities | City-wide scale  |
 |   |  Involved stakeholders | Nutrition Council
-Administration  |
+| Administration  |
 |   |  Comments on implementation - consider mentioning resources, timelines, milestones | • Development of goals and objectives
 • Formulation of direct guidelines and development of associated bundles of measures
 • Defining a realistic timetable
@@ -2702,10 +2697,10 @@ Digital solutions offer new opportunities for participation and inclusion: the H
 The aim of the measure is to offer reusable solutions for food and drinks in the takeaway sector of Leipzig's catering industry, thereby reducing the amount of disposable tableware. It is being implemented as a cooperation project between the city's own cleaning services (project management), the Office for Economic Development (funding) and BUND Leipzig (consulting/campaigning).  |
 |  Reference to impact pathway | Field of action | Waste & circular economy  |
 |   |  Systemic lever | • Technology and Infrastructure
-• Governance and Policy  |
+| • Governance and Policy  |
 |   |  Outcome (according to module B-1.1) | not applicable  |
 |  Implementation | Responsible bodies/person for implementation | Municipal cleaning entity
-Office for a Digital City  |
+| Office for a Digital City  |
 |   |  Action scale & addressed entities | City-wide scale  |
 City of Leipzig
 Climate Neutrality Action Plan
@@ -2853,7 +2848,7 @@ Climate Neutrality Action Plan
 |  Implementation | Responsible bodies/person for implementation | Office for Urban Parks and Bodies of Water Authority  |
 |   |  Action scale & addressed entities | City-wide scale  |
 |   |  Involved stakeholders | Administration
-Environmental associations  |
+| Environmental associations  |
 |   |  Comments on implementation - consider mentioning resources, timelines, milestones | - Qualified expansion of cycle and footpath network
 Targeted use of street vegetation
 Attractively designed pedestrian paths, cycle lanes and car parks
@@ -2876,8 +2871,7 @@ Climate Neutrality Action Plan
 |  Action outline | Action name | Monitoring the success of tree protection and compensation measures  |
 |   |  Action type | Sustainable Urban Development  |
 |   |  Action description | Trees perform many functions. They provide shade, absorb carbon from photosynthesis, reduce noise and improve the urban climate. They provide cooling in high temperatures and help reduce air pollution through the dust-binding effect of their leaves. They are also important guardians of urban biodiversity. To preserve and protect existing trees, a Tree Preservation Statute protects the urban population, trees and shrubs. Ordered replacement planting in the case of interventions in the tree population or protective measures during the realisation of construction measures in the area of protected tree population are not sufficiently enforced. The administration wants to commit itself to the enforcement of tree protection.
-
-In addition, the city of Leipzig is improving the monitoring of nature conservation compensation measures in development plans (Federal Building Code § 4c). This includes not only measures on municipal land, but also on private land, and the monitoring of green design measures to minimise the impact on nature and the landscape.  |
+| In addition, the city of Leipzig is improving the monitoring of nature conservation compensation measures in development plans (Federal Building Code § 4c). This includes not only measures on municipal land, but also on private land, and the monitoring of green design measures to minimise the impact on nature and the landscape.  |
 |  Reference to impact pathway | Field of action | Green Infrastructure and Nature-based Solutions  |
 |   |  Systemic lever | • Governance and Policy  |
 |   |  Outcome (according to module B-1.1) | not applicable  |
@@ -2917,8 +2911,7 @@ Climate Neutrality Action Plan
 | --- | --- | --- |
 |   |  Action type | Sustainable urban development  |
 |   |  Action description | The aim of an overall water management concept is to stabilise the territorial water balance in the extended urban area of Leipzig. A major challenge, in addition to climate change, is the large number of sealed surfaces and the associated loss of natural soil functions. The concept includes basic scientific research as well as the implementation of concrete measures.
-
-The measure contributes to the objectives of multiple use of land and open spaces, the potential use of green-blue infrastructure to adapt to climate change and minimise urban pollution, and the securing and expansion of existing green-blue infrastructure through precautionary land management.  |
+| The measure contributes to the objectives of multiple use of land and open spaces, the potential use of green-blue infrastructure to adapt to climate change and minimise urban pollution, and the securing and expansion of existing green-blue infrastructure through precautionary land management.  |
 |  Reference to impact pathway | Field of action | Green Infrastructure and Nature-based Solutions  |
 |   |  Systemic lever | • Governance and Policy  |
 |   |  Outcome (according to module B-1.1) | not applicable  |
@@ -2943,7 +2936,7 @@ Climate Neutrality Action Plan
 8
 
 |   | GHG emissions compensated
-(natural or technological sinks) | not quantifiable  |
+| (natural or technological sinks) | not quantifiable  |
 | --- | --- | --- |
 |   | Total costs and costs by CO2e unit | 1,000,000 Euro/Year  |
 City of Leipzig
@@ -2959,7 +2952,7 @@ Climate Neutrality Action Plan
 |   |  Action description | The creation of integrated energy and climate protection concepts at neighbourhood level and their implementation through Energy Renovation Management (ESM) is an important tool for energy-efficient urban renovation. To this end, refurbishment roadmaps are to be drawn up for all energy-efficient refurbishment areas by 2023 and for all other existing districts by 2025, with the aim of achieving a refurbishment rate of 3.5% of the existing stock per year and replacing fossil heating systems in the entire stock with renewable heating solutions by 2035. The measures are designed and implemented by a multidisciplinary team in close consultation with local people and stakeholders. The "Heating modernisation" support programme provides incentives and enables cooperatives to finance, install and distribute heating systems based on renewable energy. From 2024, there will also be an "Energy Efficiency with Stable Rents" funding programme, which will provide one-off grants to homeowners and housing companies for energy-efficient renovation of the building envelope. The aim is to ensure a stable ceiling for net cold rents after energy-efficient renovation.  |
 |  Reference to impact pathway | Field of action | Built environment  |
 |   |  Systemic lever | • Technology and Infrastructure
-• Finance and Funding  |
+| • Finance and Funding  |
 |   |  Outcome (according to module B-1.1) | not applicable  |
 |  Implementation | Responsible bodies/person for implementation | Office for a Digital City, Office for Building Management, Office for City Planning  |
 |   |  Action scale & addressed entities | Neighbourhood Scale, Building Scale  |
@@ -3008,7 +3001,7 @@ Climate Neutrality Action Plan
 |  Implementation | Responsible bodies/person for implementation | Office for Building Management  |
 |   |  Action scale & addressed entities | Building Scale  |
 |   |  Involved stakeholders | Building Industry
-Administration  |
+| Administration  |
 |   |  Comments on implementation - consider mentioning resources, timelines, milestones | • Monitoring and publication of the status of the implementation of the energy guideline in the annual energy report.
 • Development of an action programme through further development and regular updating of the refurbishment planning, essential contents: Current energy consumption, expected energy savings, expected costs, financial savings, time of implementation, responsibility for implementation and financing, measures required to achieve the LEB standard,  |
 City of Leipzig
@@ -3016,7 +3009,7 @@ Climate Neutrality Action Plan
 2
 
 |   |  | formation of energy performance indicators for prioritisation of plans.
-• Preparation of the buildings for the installation of solar systems in the existing buildings (roof renovation).  |
+| • Preparation of the buildings for the installation of solar systems in the existing buildings (roof renovation).  |
 | --- | --- | --- |
 |  Impact & cost | Generated renewable energy (if applicable) | not applicable  |
 |   |  Removed/substituted energy, volume, or fuel type | not applicable  |
@@ -3037,7 +3030,7 @@ Climate Neutrality Action Plan
 |   |  Action description | The Leipzig Energy and Building Standard defines the requirements for new buildings and the renovation of municipal buildings. The focus is on energy-efficient buildings. In addition to this standard, which applies to all buildings, at least two pilot projects (a school/day-care centre and a multi-storey building) in sustainable construction are to be realised with the involvement of municipal companies (LESG and LEIPZIGER HOUSING AND BUILDING SOCIETY (LWB)). As a major building owner and developer, the City of Leipzig is thus taking on an important pioneering role and strengthening its function as a role model. Sustainable construction means not only meeting the highest energy and utility standards (e.g. zero- or plus-energy house for new buildings, EH40 KfW for refurbishment and modernisation), but also using ecological building materials, resource-saving and recyclable materials. Reducing land use is another goal of sustainable construction. At the beginning of the planning phase, the potential for optimisation is identified on an interdisciplinary basis and variants are examined in order to implement the most ecological and economical construction method. In recent years, the sustainability and sufficiency of buildings in new construction, but also in the modernisation of buildings, have increasingly come to the fore, so that certification systems for sustainable buildings and the development of new criteria and evaluation systems have gained more attention. The Sustainable Building Rating System (BNB) is an existing tool for the planning and evaluation of sustainable and generally public building projects. The aim of the pilot projects is to gain experience and lay the foundations for forward-looking construction with an impact beyond 2030. From 2025, municipal construction projects must be planned as sustainable buildings according to a certification system to be chosen by the city.  |
 |  Reference to impact pathway | Field of action | Built environment  |
 |   |  Systemic lever | Technology & infrastructure
-Learning & Capabilities  |
+| Learning & Capabilities  |
 |   |  Outcome (according to module B-1.1) | not applicable  |
 City of Leipzig
 Climate Neutrality Action Plan
@@ -3047,7 +3040,7 @@ Climate Neutrality Action Plan
 | --- | --- | --- |
 |   | Action scale & addressed entities | Building Scale  |
 |   |  Involved stakeholders | Administration
-L-Group  |
+| L-Group  |
 |   |  Comments on implementation - consider mentioning resources, timelines, milestones | Initiation of the pilot project(s) with the involvement of external experts:
 • Selection of suitable construction projects and locations
 • Consideration of the building's life cycle: construction, operation, disposal
@@ -3073,7 +3066,7 @@ Climate Neutrality Action Plan
 |   |  Action description | The aim is to implement CO2 reduction criteria in urban development planning and procedures in a structured way.to this end, the potential influence of planning instruments will be identified and the coordination process in the various planning and procedural steps will be defined. From 2023, fossil fuel heating systems will be excluded from new urban land-use plans and urban development contracts and, in particular, the objectives of the municipal heating plan will have to be taken into account. By 2024, targets will be set for the share of renewable energy and the reduction of "grey energy" in the construction of buildings and infrastructure, in line with the sectoral greenhouse gas reduction targets, to be taken into account in urban land-use plans and urban development contracts from 2025.  |
 |  Reference to impact pathway | Field of action | Built environment  |
 |   |  Systemic lever | Technology & infrastructure
-Governance & policy  |
+| Governance & policy  |
 |   |  Outcome (according to module B-1.1) | not applicable  |
 |  Implementation | Responsible bodies/person for implementation | Office for City Planning  |
 |   |  Action scale & addressed entities | City-wide scale  |
@@ -3107,8 +3100,7 @@ Climate Neutrality Action Plan
 | --- | --- | --- |
 |   |  Action type | Internal Organisation  |
 |   |  Action description | The Concept for a Climate Neutral City in 2035 is the first concept that places the city administration as an active organisation at the centre of the city's climate protection activities and consequently addresses its underlying internal processes. The concept will define the accounting limits and present a roadmap with binding interim targets and concrete measures to reduce greenhouse gas emissions to a climate-neutral, i.e. technically feasible, minimum level. Compensation of emissions is only foreseen for technically unavoidable residual emissions. As a contribution to the transition towards climate neutral mobility, the company's own fleet will be climate-friendly, (electric) bicycles are used for urban transport. Climate-friendly mobility options for employees increase the use of environmentally friendly means of transport. Leipzig's cultural institutions and cultural events throughout the city are striving for climate neutrality.
-
-A digital, user-friendly management system centrally links supply and demand. Municipal IT infrastructures (e.g. data centres) are designed on the premise of energy and data efficiency (greentech). Rebound effects are to be avoided as far as possible. The direct and indirect GHG emissions caused by procurement along the supply chain are recorded so that levers can be identified and reallocated. Monitoring is used to set the course for emission-neutral or lower-emission supplies and services. Climate protection and sustainability must always be taken into account and given equal weight when redesigning work organisation as part of Modern Administration and Administrative Accommodation 2030. The three dimensions of sustainable working environments will be taken into account.  |
+| A digital, user-friendly management system centrally links supply and demand. Municipal IT infrastructures (e.g. data centres) are designed on the premise of energy and data efficiency (greentech). Rebound effects are to be avoided as far as possible. The direct and indirect GHG emissions caused by procurement along the supply chain are recorded so that levers can be identified and reallocated. Monitoring is used to set the course for emission-neutral or lower-emission supplies and services. Climate protection and sustainability must always be taken into account and given equal weight when redesigning work organisation as part of Modern Administration and Administrative Accommodation 2030. The three dimensions of sustainable working environments will be taken into account.  |
 |  Reference to impact pathway | Field of action | Other/Engagement  |
 |   |  Systemic lever | • Technology and Infrastructure
 • Governance and Policy
@@ -3157,7 +3149,7 @@ Climate Neutrality Action Plan
 |  Implementation | Responsible bodies/person for implementation | Office of Economic Development  |
 |   |  Action scale & addressed entities | City-wide scale  |
 |   |  Involved stakeholders | Industry and producers
-Administration  |
+| Administration  |
 |   |  Comments on implementation - consider mentioning resources, timelines, milestones | • Development of a measure as part of the SME development programme
 • Expansion of the specialised funding guideline for business to include the promotion of sustainability in companies
 • Establishment of an interdepartmental expert jury (Office for Sustainable Development and Climate Protection, Office of Economic Development) to review applications  |
@@ -3249,7 +3241,7 @@ Climate Neutrality Action Plan
 |   |  Action description | With the establishment of large companies, the northern area of Leipzig has developed into one of the most important and dynamic business locations in the metropolitan region of central Germany. Against this backdrop, it is important to ensure the long-term sustainable development of Leipzig's northern region and to harmonise economic interests, the design of future mobility and climate protection.  |
 |  Reference to impact pathway | Field of action | Sustainable urban development  |
 |   |  Systemic lever | • Technology and Infrastructure
-• Governance and Policy  |
+| • Governance and Policy  |
 |   |  Outcome (according to module B-1.1) | not applicable  |
 |  Implementation | Responsible bodies/person for implementation | • Municipality of Krostitz
 • Municipality of Rackwitz
@@ -3312,7 +3304,7 @@ Climate Neutrality Action Plan
 7
 
 |   |  | • The Leibniz Institute for Ecological Spatial Development (IOER)
-• Home owner associations  |
+| • Home owner associations  |
 | --- | --- | --- |
 |   |  Comments on implementation - consider mentioning resources, timelines, milestones | The stepwise implementation of the EnAct4CleanCities tool kit on city and district level includes developing and deploying tools to engage and activate stakeholders, assessing their effectiveness through testing, and evaluating outcomes. An accompanying communication strategy for the use of the tool kit is developed and implemented.  |
 |  Impact & cost | Generated renewable energy (if applicable) | not applicable  |
@@ -3679,7 +3671,7 @@ Climate Neutrality Action Plan
 |   |  Regional supply chains | 1 | 0  |
 |   |  Reduction of returns | 2 | 0  |
 |  Waste & circular economy
-Waste & circular economy | Supply chain optimisation | 8 | 1.181  |
+| Waste & circular economy | Supply chain optimisation | 8 | 1.181  |
 |   |  Spare parts and repair offer | 8 | 1.122  |
 |   |  Introduction of waste separation to reduce residual waste | 28 | 4  |
 |   |  Reduction of material consumption | 11 | 0  |
@@ -3910,7 +3902,7 @@ SME development programme - sustainable growth
 Participation in networks and partnerships
 Climate protection training for employees | 80 | # number of participants in energy efficiency and climate action network (led by LKE) | 45 | 75 | 120 TN Company  |
 |  Digitisation | Construction of sustainable municipal buildings
-Climate neutrality and sustainability in Leipzig's administration | 89b | # of municipal buildings with smart energy monitoring | 25% | 65% | 80% of public buildings buildings  |
+| Climate neutrality and sustainability in Leipzig's administration | 89b | # of municipal buildings with smart energy monitoring | 25% | 65% | 80% of public buildings buildings  |
 |   |  Urban Data Platform/Twin for climate sensitive urban development |  | number of strategies and measures based on digital twin | 5 | 10 | 15  |
 |   |  EnAct4CleanCities |  | Total number of people involved in capacity building activities (i.e., awareness campaigns for increasing awareness of social innovation for climate neutrality (citizens, urban stakeholders, etc.). | 2.000 | n.a. | n.a.  |
 
@@ -3954,8 +3946,7 @@ It can be inferred that this indicator will prove useful for tracking the impact
 
 It is possible to divide the annual total energy consumption compared to a previous baseline or inventory, and then multiply by it by 100 to express the difference/result as a percentage.  |
 |  Calculation | Annual local renewable energy production is calculated by acquiring the total renewable energy generation within the city each year.
-
-Relevant unit conversions are 1 J = 1 Ws; 1 kWh= 3,600,000 J; and 1 TOE = 41.868 GJ, 11,630 kWh, or 11.63 MWh (ITU-T L.1430: 2013)  |
+| Relevant unit conversions are 1 J = 1 Ws; 1 kWh= 3,600,000 J; and 1 TOE = 41.868 GJ, 11,630 kWh, or 11.63 MWh (ITU-T L.1430: 2013)  |
 |  Indicator Context |   |
 |  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | no  |
 |  If yes, which emission source sectors does it measure? | Stationary energy  |
@@ -4019,7 +4010,7 @@ Climate Neutrality Action Plan
 |  Indicator Unit | # of days  |
 |  Definition of | This indicator corresponds to the highest number of days in a year where the PM10 concentration level recorded at stations in urban and suburban background locations has exceeded the WHO recommendation of 45 µg/m³. It refers to the number of days on the monitoring station that measured the most days in excess of the WHO recommendation of 45 µg/m³.  |
 |  Calculation | This air quality management indicator, corresponds to the highest number of days in a year where the PM10 concentration level recorded at stations in urban and suburban background locations has exceeded the WHO recommendation of 45 µg/m³. It refers to the number of days on the monitoring station that measured the most days in exceedance of the WHO recommendation of 45 µg/m³. Data can be obtained from:
-) Air quality monitoring reports in different stations on a municipal or regional level; and 2) Based on measurements made in urban and suburban background locations established for this purpose.  |
+| ) Air quality monitoring reports in different stations on a municipal or regional level; and 2) Based on measurements made in urban and suburban background locations established for this purpose.  |
 |  Indicator Context |   |
 |  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | no  |
 |  If yes, which emission source sectors does it measure? | Transport and stationary energy  |
@@ -4125,8 +4116,7 @@ Climate Neutrality Action Plan
 | --- | --- |
 |  Indicator Unit | tonnes of CO2 equivalent  |
 |  Definition of | IPCC guidelines divides AFOLU emission activities into three categories: Livestock, Land, Aggregate sources and non-CO2 emissions sources on land. The cumulative of these emissions forms the sectoral emissions. It requires identifying which categories of the AFOLU sector are relevant for reporting purposes.
-
-Cities should keep in mind that when a source/sink of emissions is included in the CCC Action Plan (either for emissions reduction or emissions compensation) both positive and negative emissions should be accounted for and monitored.  |
+| Cities should keep in mind that when a source/sink of emissions is included in the CCC Action Plan (either for emissions reduction or emissions compensation) both positive and negative emissions should be accounted for and monitored.  |
 |  Calculation | Detailed calculation and scoping methodology described in GPC pages 121- 137.  |
 |  Indicator Context |   |
 |  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | yes  |
@@ -4233,7 +4223,7 @@ Climate Neutrality Action Plan
 |  Indicator Unit | % of km2  |
 |  Definition of | Share of brownfield area that has been redeveloped in the past period as percentage of total brownfield area.  |
 |  Calculation | The indicator "brownfield redevelopment" is calculated as the brownfield area redeveloped in the last year [km²] (numerator] divided by the total brownfield area in the city [km²] (denominator).
-The result shall then be multiplied by 100 and expressed as a percentage.  |
+| The result shall then be multiplied by 100 and expressed as a percentage.  |
 |  Indicator Context |   |
 |  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | no  |
 |  If yes, which emission source sectors does it measure? | LULUCF  |
@@ -4262,7 +4252,7 @@ Climate Neutrality Action Plan
 |  If yes, which emission source sectors does it measure? | /  |
 |  Does the indicator measure indirect impacts (i.e., co-benefits)? | yes  |
 |  If yes, which co-benefit does it measure? | Energy independence from bought energy
-Wellbeing (efficient buildings have less strong temperature gradients)  |
+| Wellbeing (efficient buildings have less strong temperature gradients)  |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | [yes/no] ?  |
 |  If yes, which action and impact pathway is it relevant for? | Built environment  |
 |  Data requirements |   |
@@ -4560,7 +4550,7 @@ Climate Neutrality Action Plan
 |  Intervention name | Description | Systemic barriers / opportunities addressed | Leadership and stakeholders involved | Enabling impact  |
 | --- | --- | --- | --- | --- |
 |  Municipal heating strategy | The aim is to cover the city's heating requirements in a climate-neutral way by gradually decarbonising the entire heating sector, promoting district heating, the use of renewable energies such as geothermal and solar thermal energy, and increasing energy efficiency in buildings. | Municipal utilities in municipal ownership
-Digital twin | L-Group companies, City of Leipzig | Reduce CO2 emissions in the heating sector  |
+| Digital twin | L-Group companies, City of Leipzig | Reduce CO2 emissions in the heating sector  |
 |  EnAct4CleanCities | In coordination with the municipal strategies for a sustainable heating transition, the vision of the EnAct4CleanCities pilot project is to provide clear and relevant information and support property owners and other stakeholders in their decision-making journey. | Use of digital tools to increase involvement of stakeholder groupd (e.g. via Digital Energy Twin, Leipzig App) | City of Leipzig, L-Group, user groups: Citizens, property owners, business owners | Provide comprehensible information on energy transition and climate neutrality processes
 Involve key players
 Increase acceptance and activation of stakeholder groups for active participation, e.g. in energetic refurbishment  |
@@ -4578,9 +4568,9 @@ Climate Neutrality Action Plan
 |  Intervention name | Description | Systemic barriers / opportunities addressed | Leadership and stakeholders involved | Enabling impact  |
 | --- | --- | --- | --- | --- |
 |  Climate Protection and Sustainability Unit | responsible for the planning, coordination and implementation of measures that contribute to the reduction of CO emissions and the promotion of sustainable development in the city.
-Development of strategies to achieve climate neutrality, the integration of sustainability principles into urban processes and the promotion of climate protection initiatives in various sectors |  | works closely with various stakeholders, including other city departments and divisions, municipal companies, scientific institutions, NGOs and citizens' initiatives. It acts as an interface between administration, civil society and business | Unit contributes to climate neutrality by coordinating and initiating measures to reduce greenhouse gas emissions  |
+| Development of strategies to achieve climate neutrality, the integration of sustainability principles into urban processes and the promotion of climate protection initiatives in various sectors |  | works closely with various stakeholders, including other city departments and divisions, municipal companies, scientific institutions, NGOs and citizens' initiatives. It acts as an interface between administration, civil society and business | Unit contributes to climate neutrality by coordinating and initiating measures to reduce greenhouse gas emissions  |
 |  Energy Efficiency and Climate Protection Network (EEKN) | Initiative aimed at reducing energy consumption in companies and simultaneously promoting climate protection The exchange of best practices, the implementation of joint projects and ongoing advice are intended to support companies in increasing their energy efficiency and reducing their CO emissions. |  | Network is coordinated by Leipzig municipal utilities n/LKE
-It consists of a large number of players, including local companies from various sectors, municipal institutions and organisations, as well as energy consulting firms | network contributes to climate neutrality by increasing energy efficiency in companies and thus reducing the city's overall energy consumption. The joint development and implementation of climate protection measures reduces the CO emissions of the participating companies.  |
+| It consists of a large number of players, including local companies from various sectors, municipal institutions and organisations, as well as energy consulting firms | network contributes to climate neutrality by increasing energy efficiency in companies and thus reducing the city's overall energy consumption. The joint development and implementation of climate protection measures reduces the CO emissions of the participating companies.  |
 |  Heat transition project advisory board | supports the city of Leipzig in developing and implementing a sustainable heating strategy
 advises on key issues relating to the heating transition and ensures that the various perspectives of urban society are incorporated into strategic planning. |  | Representatives of the city administration, energy suppliers, science, the housing industry and civil society organisations | Project Advisory Board makes a significant contribution to climate neutrality by developing measures and strategies to reduce CO emissions in the heating sector  |
 City of Leipzig
@@ -4593,7 +4583,7 @@ Climate Neutrality Action Plan
 | --- | --- | --- | --- | --- |
 |  Smart City Challenge | Initiative of the City of Leipzig, which aims to find and implement innovative and digital solutions to the challenges of urban development. The focus is on the development of technologies and concepts that improve the quality of life while promoting climate neutrality | Innovation events and technology development | invites start-ups, companies and citizens to submit creative ideas and projects that contribute to making Leipzig a smart, sustainable and liveable city. | Smart City Challenge contributes to climate neutrality by promoting innovative projects that reduce energy consumption, improve mobility and increase the efficiency of urban infrastructure  |
 |  Smart City Lab | serves as a platform for trialling and implementing smart technologies and digital solutions in urban areas. The lab offers space for experimentation, collaboration and exchange between different stakeholders in order to turn innovative ideas into concrete projects that contribute to improving the quality of urban life. | Lack of acceptance of energy transition measures on site
-Lack of suitable spaces for co-creative development and participation processes | Experimental/exhibition and co-working space for innovative solutions for the digital city | At SCLL, it is possible to develop new technologies for urban challenges in an interdisciplinary manner, test them under real conditions and evaluate their potential for scaling up to the entire city and other municipalities.  |
+| Lack of suitable spaces for co-creative development and participation processes | Experimental/exhibition and co-working space for innovative solutions for the digital city | At SCLL, it is possible to develop new technologies for urban challenges in an interdisciplinary manner, test them under real conditions and evaluate their potential for scaling up to the entire city and other municipalities.  |
 |  Data Week | Annual series of events on data, digital innovation and its application
 Promoting dialogue between experts, companies, researchers and civil society |  | City of Leipzig in cooperation with various partners, including local and international companies, universities, research institutes and networks from the technology and data sector. Participating stakeholders include municipal institutions as well as private companies and civil society organisations involved in data and digitalisation. | Addresses the use of data-driven solutions and technologies that can help to reduce CO emissions and use resources more efficiently.
 Through the exchange of knowledge and best practices in the field of data analysis and application, the event supports projects that deal with the optimisation of energy consumption, transport systems and urban services.  |
@@ -4647,9 +4637,9 @@ Climate Neutrality Action Plan Guidance
 |  Systemic barriers / opportunities addressed | Intervention name | Description / Scope of Action | Leadership and stakeholders involved | Enabling impact | Co-benefits  |
 |  Limited suitable areas in Leipzig's urban area for large-scale renewable energy plants | Development of a land register | Integrated urban development with digital twins, networking with surrounding areas | Local level: Liegenschaftsamt, Office for a Digital City | Increasing the installed capacity of renewable energies and reducing CO2 emissions through efficient land utilisation. | Lower electricity emissions, local production of green energy.  |
 |  Necessity of co-operation with the Leipzig region | Establishment of regional energy partnerships
-Establishment of an inter-municipal energy network. | Networking, piloting regional cooperation models and digital energy management platforms | City administration: Regional co-operation group, cooperation with surrounding municipalities such as Partheland | Strengthening regional renewable energy projects, reducing transport losses and improving energy efficiency in the region. | Lower electricity emissions, local production of green energy.  |
+| Establishment of an inter-municipal energy network. | Networking, piloting regional cooperation models and digital energy management platforms | City administration: Regional co-operation group, cooperation with surrounding municipalities such as Partheland | Strengthening regional renewable energy projects, reducing transport losses and improving energy efficiency in the region. | Lower electricity emissions, local production of green energy.  |
 |  Grid capacity and integration | Pilot projects for smart grids.
-Realisation: EU project Sparcs | Digital solutions, representation of interests | Federal government/EU/Free state level/L-Group/Leipzig city administration | Enables the integration and utilisation of more renewable energy capacities, which leads to a reduction in fossil fuels. | Lower electricity emissions.  |
+| Realisation: EU project Sparcs | Digital solutions, representation of interests | Federal government/EU/Free state level/L-Group/Leipzig city administration | Enables the integration and utilisation of more renewable energy capacities, which leads to a reduction in fossil fuels. | Lower electricity emissions.  |
 |  Lack of acceptance of energy transition measures on site | Citizen participation and awareness campaigns with the help of the Leipzig app, campaigns and analogue/digital participation;
 Initiation of citizen energy cooperatives and crowdfunding projects. | Social innovation, networking with citizens' initiatives | Federal government/EU/free state level, Leipzig city administration/Leipzig Freedom Network | Increases acceptance and participation in renewable energy projects, thereby accelerating the expansion of renewable energies. | Local production of green energy, strengthening social cohesion.  |
 
@@ -4668,11 +4658,11 @@ Piloting transformation projects, digital twins | Federal government/EU/free sta
 City administration
 L-Group | Promotes the phase-out of fossil fuels and the transition to renewable energies. | Lower electricity emissions, less company GHG.  |
 |  Long planning, approval and implementation periods | Accelerating planning processes through digitalisation;
-Introduction of a central planning portal. | Digital solutions
-Representation of interests | Federal government/EU/free state level,
-Leipzig city administration | Reduces the time it takes to implement climate protection projects and accelerates the expansion of renewable energies. | Quick identification and reaction to irregularities, lower electricity emissions.  |
+| Introduction of a central planning portal. | Digital solutions |
+| Representation of interests | Federal government/EU/free state level, |
+| Leipzig city administration | Reduces the time it takes to implement climate protection projects and accelerates the expansion of renewable energies. | Quick identification and reaction to irregularities, lower electricity emissions.  |
 |  Technical availability of hydrogen as a fuel not yet determined | Promotion of research and development;
-Pilot projects for hydrogen technologies. Expansion of district heating pipeline to Leuna. | Piloting, networking with research institutions and future production sites | Federal government/EU/Free state level/L-Group/Leipzig city administration | Supports the development and implementation of hydrogen as a climate-neutral energy carrier. | Lower electricity and heat emissions.  |
+| Pilot projects for hydrogen technologies. Expansion of district heating pipeline to Leuna. | Piloting, networking with research institutions and future production sites | Federal government/EU/Free state level/L-Group/Leipzig city administration | Supports the development and implementation of hydrogen as a climate-neutral energy carrier. | Lower electricity and heat emissions.  |
 |  Complex and lengthy planning and authorisation procedures | Simplification and harmonisation of procedures;
 Introduction of a digital one-stop shop for authorisations. | Representation of interests, digital solutions | Federal government/EU/free state level, Leipzig city administration | Facilitates and accelerates the implementation of renewable energy projects and thus the reduction of greenhouse gas emissions. | Lower electricity and heat emissions.  |
 City of Leipzig
@@ -4720,9 +4710,9 @@ Climate Neutrality Action Plan
 |  Systemic barriers / opportunities addressed | Intervention name | Description / Scope of Action | Leadership and stakeholders involved | Enabling impact | Co-benefits  |
 | --- | --- | --- | --- | --- | --- |
 |  Strong cultural focus on motorised private transport | Introduction of car-free zones (Example: Superblock Leipzig)
-Promotion of car sharing and micromobility: teilauto GmbH as a partner of Leipzig public transport company | Social innovation, integrated urban development, cooperation | Federal government/EU/free state level, Leipzig city administration, Leipzig public transport company | Lowering CO2 emissions by reducing motorised private transport and promoting alternative forms of mobility. | Lower traffic emissions, less wasted energy.  |
+| Promotion of car sharing and micromobility: teilauto GmbH as a partner of Leipzig public transport company | Social innovation, integrated urban development, cooperation | Federal government/EU/free state level, Leipzig city administration, Leipzig public transport company | Lowering CO2 emissions by reducing motorised private transport and promoting alternative forms of mobility. | Lower traffic emissions, less wasted energy.  |
 |  Path dependencies due to the long half-life of the built environment | Adaptation of the urban development plans: Leipzig 2035 urban strategy
-Promotion of pilot projects for building refurbishment and land conversion > Building on existing support and advisory structures in neighbourhoods (e.g. neighbourhood management) Digital platforms for advising and supporting owners with approvals (EnAct project) | Networking, piloting adaptation strategies | Federal government/EU/Free state level/Leipzig city administration | Promoting climate-friendly urban development, which reduces energy consumption and emissions in the long term. | Lower transport emissions, promotion of sustainable mobility.  |
+| Promotion of pilot projects for building refurbishment and land conversion > Building on existing support and advisory structures in neighbourhoods (e.g. neighbourhood management) Digital platforms for advising and supporting owners with approvals (EnAct project) | Networking, piloting adaptation strategies | Federal government/EU/Free state level/Leipzig city administration | Promoting climate-friendly urban development, which reduces energy consumption and emissions in the long term. | Lower transport emissions, promotion of sustainable mobility.  |
 |  Direct tendering of organic and regional food not expedient due to lack of European criteria | Adaptation of the tender criteria;
 Introduction of pilot projects for gradual changeover: e.g. SV canteen | Representation of interests, networking with other municipalities | Leipzig City Council/Free State/Federal Government | Promotes the use of sustainable food, which reduces CO2 emissions in the supply chain. | Lower electricity emissions, local production of green energy.  |
 City of Leipzig
@@ -4750,9 +4740,9 @@ Social Innovation
 Awareness campaigns | Federal government/EU/free state level,
 Leipzig city administration | Promotes the consumption of sustainable products and reduces CO2 emissions through more environmentally friendly agriculture. | CO2 storage, improvement of air quality, promotion of social cohesion.  |
 |  Lack of information and misconceptions reduce the willingness to spend more on bioregional products | Information campaigns, e.g. using the Leipzig app
-Organisation of workshops and events to educate consumers. Analogue and digital participation | Social innovation, awareness campaigns | Leipzig city administration | Increases demand for environmentally friendly products, making production more sustainable and reducing CO2 emissions. | CO2 storage, improvement of the microclimate, promotion of biodiversity.  |
+| Organisation of workshops and events to educate consumers. Analogue and digital participation | Social innovation, awareness campaigns | Leipzig city administration | Increases demand for environmentally friendly products, making production more sustainable and reducing CO2 emissions. | CO2 storage, improvement of the microclimate, promotion of biodiversity.  |
 |  Financing of green area projects due to high costs for planning, implementation and maintenance | Utilisation of funding and cooperation models;
-Crowdfunding campaigns for local green area projects, e.g. using the Leipzig app. Analogue and digital participation in co-creative formats | Integrated urban development, representation of interests | Federal government/EU/free state level, Leipzig city administration | Promotes the creation of green spaces that help to store CO2 and improve the urban climate. | Climate-neutral heating requirements, less energy wastage, promotion of social housing.  |
+| Crowdfunding campaigns for local green area projects, e.g. using the Leipzig app. Analogue and digital participation in co-creative formats | Integrated urban development, representation of interests | Federal government/EU/free state level, Leipzig city administration | Promotes the creation of green spaces that help to store CO2 and improve the urban climate. | Climate-neutral heating requirements, less energy wastage, promotion of social housing.  |
 |  Availability of space in densely populated urban areas | Utilisation of interim uses and roof areas;
 Introduction of urban gardening initiatives. | Integrated urban development, networking | Leipzig city administration | Increases green spaces in cities, which helps to store CO2 and improve the urban climate. | Climate-neutral heating requirements, less energy wasted.  |
 City of Leipzig
@@ -4797,10 +4787,10 @@ Climate Neutrality Action Plan
 |  Systemic barriers / opportunities addressed | Intervention name | Description / Scope of Action | Leadership and stakeholders involved | Enabling impact | Co-benefits  |
 | --- | --- | --- | --- | --- | --- |
 |  Shortage of skilled labour for the development and maintenance of RE technologies | Expansion of training and qualification programmes, e.g. via the employment policy unit
-Development of RE skills fairs. | Networking, representation of interests | Federal government/EU/free state level, Leipzig city administration | Ensuring the expansion and operation of renewable energies with sufficient skilled labour. | Fewer delays in projects, lower electricity emissions.  |
+| Development of RE skills fairs. | Networking, representation of interests | Federal government/EU/free state level, Leipzig city administration | Ensuring the expansion and operation of renewable energies with sufficient skilled labour. | Fewer delays in projects, lower electricity emissions.  |
 |  Non-economic viability of RE technologies | Introduction of support programmes and subsidies
-Pilot projects to improve economic efficiency, such as tenant electricity models from LEIPZIGER HOUSING AND BUILDING SOCIETY (LWB) | Representation of interests
-Piloting | Federal/EU/free state level, local level | Increasing competitiveness and the expansion of renewable energies. | Promotion of innovation, lower electricity emissions, local production of green energy.  |
+| Pilot projects to improve economic efficiency, such as tenant electricity models from LEIPZIGER HOUSING AND BUILDING SOCIETY (LWB) | Representation of interests |
+| Piloting | Federal/EU/free state level, local level | Increasing competitiveness and the expansion of renewable energies. | Promotion of innovation, lower electricity emissions, local production of green energy.  |
 |  Lack of knowledge about the opportunities to capitalise on climate investments | Information campaigns and counselling services for business and urban society, including the Climate City Contract campaign
 Using the Leipzig app as a channel
 Introduction of a climate investment calculator for citizens. | Social innovation, awareness campaigns, Digital applications | Federal government/EU/free state level, Leipzig city administration | Increases the participation of private investment in climate-friendly technologies. | More efficient monitoring, lower electricity and heat emissions.  |
@@ -4913,8 +4903,6 @@ Climate Neutrality Action Plan
 |   |  |  |  |  | transparent and accessible digital climate twin can help inform and involve citizens in climate protection efforts, increasing public support for initiatives. Increased Resilience: Digital tools and centralized management systems can adapt more quickly to changing conditions or unforeseen challenges, enhancing the city's overall resilience to climate impacts.  |
 | --- | --- | --- | --- | --- | --- |
 |  Insufficient legal freedom of action or abstract regulations | Adaptation of legislation Introduction of flexible regulations to support innovation, e.g. via the Smart City Green Challenge | Representation of interests, piloting | Federal government/EU/free state level | Creates a flexible and innovation-friendly legal framework that accelerates the implementation of climate-friendly technologies. | Promoting innovation and accelerating digitalisation through flexible regulations  |
-0
-
 |  Systemic barriers / opportunities addressed | Intervention name | Description / Scope of Action | Leadership and stakeholders involved | Enabling impact | Co-benefits  |
 | --- | --- | --- | --- | --- | --- |
 |  Outdated data basis for transparent decision-making and monitoring | Further development of the urban data platform and digital twins

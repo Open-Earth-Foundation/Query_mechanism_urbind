@@ -2270,7 +2270,7 @@ A-3.1: Systems and stakeholder mapping
 | --- | --- | --- | --- | --- |
 |  Energy sector | Municipality Economic Development Department | Network | Businesses in Pécs | Interest  |
 |   |  Municipality Urban Management Department | Local government system | City management | Decarbonising the industrial sector
-Building a circular economy  |
+| Building a circular economy  |
 |   |  Municipal Chief Architect | Local government system | Urban planning, urban management | Transport, land use  |
 |   |  Pécs City Development Zrt. | Local government system | Urban development | Transport, land use, urban landscape  |
 |   |  University of Pécs | University | Research and development, students and teachers | All sectors  |
@@ -2741,7 +2741,7 @@ PATHWAYS TOWARDS CLIMATE NEUTRALITY BY 2030
 |  Transport | Reduced demand for motorised passenger transport | Regulation, governance | Incentive schemes, testing of zero-emission zones, modification of parking schemes, understanding spatial patterns of car use | Behavioural change, adoption as a result of community planning, | 32 | improved air quality, reduced noise pollution, positive health effects, economic benefits  |
 |   |   |  Education, social innovation | Dialogue with car owners | Reduction in public parking spaces  |   |   |
 |   |  Switch to public transport and non-motorised transport | Infrastructure | P+R, B+R parking spaces at the bus terminus | The spread of alternative transport modes | 5 | improved air quality, positive health effects, urban liveability
-Reduced Traffic Congestion, Social Interaction, Reduced Stress  |
+| Reduced Traffic Congestion, Social Interaction, Reduced Stress  |
 |   |   |  Education, social innovation | Dialogue with car owners | Commuters use public transport in large proportions  |   |   |
 |   |  Enhanced car-pooling communities | Governance, regulation | Large employer partnerships | The spread of alternative transport modes  |   |   |
 |   |   |  Education, social innovation | Progress in the adoption of car-sharing solutions | Private car use rate decreases  |   |   |
@@ -3055,7 +3055,7 @@ PATHWAYS TOWARDS CLIMATE NEUTRALITY BY 2030
 5
 
 |  University of Pécs Decarbonisation of building stock | Design of energy upgrades for 18 university buildings by May 2023, upgrading of remaining buildings
-Design and implementation of 11 solar panels by the end of 2023  |
+| Design and implementation of 11 solar panels by the end of 2023  |
 | --- | --- |
 |  University of Pécs Energy Community Project | Energy sharing of University buildings by building storage capacity  |
 |  Complex energy development project in Pécsbánya-Karolina | In the Pécsbánya-Karolina area, the aim is to create a green energy solar park based on the principles of 21st century energy efficiency, cost-effectiveness, affordability and security of supply, as well as various energy storage capacities (battery, gravity, hydro and carbon-graphene research-based processes), and to explore the potential applications of hydrogen, and the establishment of a related energy community for the University of Pécs and the city of Pécs to achieve significant energy savings and energy efficiency.  |
@@ -3128,7 +3128,7 @@ N
 |  Preparing inter-regional innovation investments in the Central European Green Hydrogen Value Chain by developing a stakeholder participation scheme and establishing an IoT framework. | Preparing inter-regional innovation investments in the Central European Green Hydrogen Value Chain by developing a stakeholder participation scheme and establishing an IoT framework.  |
 | --- | --- |
 |  Building solar capacity for city operations | Construction of new renewable energy photovoltaic capacities at PÉTÁV Pécsi Távfűtő Kft., Biokom, Tüke Busz Zrt.
-New renewable energy photovoltaic capacity building at Tettye Forrásház Zrt headquarters (Western Industrial road 8.) energy renovation  |
+| New renewable energy photovoltaic capacity building at Tettye Forrásház Zrt headquarters (Western Industrial road 8.) energy renovation  |
 |  Institutional solar capacity building | Replacement of electricity consumption in institutional buildings (TEÁOR M, N, O, Q, P, R) with renewable energy. In total, 29 MWp of capacity is needed for total replacement  |
 |  Building solar capacity for industrial and commercial entities | Individual projects to provide a total of 33 MWp of renewable energy capacity  |
 |  Building solar capacity - with individual capacity expansion (small household power plants) | The aim is to make small-scale household power available to 50% of single-family homes, which means an additional 9,500 homes with a total capacity of 20 MWp. Domestic solutions could include wind energy, with the installation of wind turbines.  |
@@ -5363,7 +5363,7 @@ C
 |  Existing building stock |  |   |
 |  Total floor area |  |   |
 |  Total floor area (residential & non-residential) | Thousand
-squaremeters | 11,700  |
+| squaremeters | 11,700  |
 |  Energy use in existing buildings  |   |   |
 | --- | --- | --- |
 |  Average heat use in existing buildings (space heating + domestic hot water) | kWh/m2 & year | 113  |
@@ -5974,7 +5974,7 @@ Electric car fleet support programmes  |
 |  Reference to impact pathway | Field of action | Transport  |
 |   |  Systemic lever | Technology, Education, attitude shaping, Funding  |
 |   |  Outcome (according to module B-1.1) | Decarbonising car transport, building charging capacity, Decarbonising car transport, building charging capacity, Getting to know electric car use
-Learning about charging options, optimisation, Getting to know electric car use, Savings at individual level  |
+| Learning about charging options, optimisation, Getting to know electric car use, Savings at individual level  |
 |  Implementation | Responsible bodies/person for implementation | citizens  |
 |   |  Action scale & addressed entities | City wide  |
 |   |  Involved stakeholders | Biokom NKft., citizens, Municipality  |
@@ -6737,12 +6737,12 @@ Climate neutral commitments SIGNATORIES
 |  Name of the institution | Sector / Area | Legal form | Name of the responsible person | Position of the responsible person  |
 | --- | --- | --- | --- | --- |
 |  Körber Hungária Kft. | Industrial and commercial organisations, circular economy | Limited Liability Company | Zalay Buda Balázs László Kósa | Company Manager
-Company Manager  |
+| Company Manager  |
 |  Honsa Kft. | Industrial and commercial organisations, circular economy | Limited Liability Company | Andreas Koller | Managing Director  |
 |  Geochem Kft. | Industrial and commercial organisations, circular economy | Limited Liability Company | Dr. Ferenc Fedor | Managing Director  |
 |  Kontakt-Elektro Kft. | Industrial and commercial organisations, circular economy | Limited Liability Company | Ferenc Hirth
-Oliver Hirth | Managing Director
-Managing Director  |
+| Oliver Hirth | Managing Director |
+| Managing Director  |
 |  Green Youth Association | Education, awareness-raising | Association | Júlia Konkoly-Thege Zulejka | President  |
 |  House of Educators Association | Education, awareness-raising | Association | Csilla Anna Vincze
 Dr. László Kákai | Executive President
@@ -7529,22 +7529,22 @@ C
 |  Investment project  |   |   |
 |  Energy utilities developments: network extension, storage capacity, energy community implementation capacity, utility network upgrades, special control transformers on pilot basis | Energy utilities | Investment with return, Energy utilities, own resources  |
 |  Promoting smart meters, developing a digital platform, ensuring real-time traceability of energy consumption | Utility companies, Municipality Green Office, Homeowners | **Grant scheme:**
-DIMOP, Energy utilities, RRF  |
+| DIMOP, Energy utilities, RRF  |
 |  Developing a downtown energy community with institutional actors | Institutions, Homeowners | Investment with return, start-up support needed for micro-grid deployment, RRF resource. **Own resources:**
-Energy utilities, green loan with savings-based repayment  |
+| Energy utilities, green loan with savings-based repayment  |
 |  University of Pécs Decarbonisation of Building Energy | University of Pécs | Grant scheme  |
 |  PTE Energy Community Project | University of Pécs | Investment with return, start-up support needed for micro-grid deployment, RRF resource  |
 |  Complex energy development project in Pécsbánya-Karolina |   | **Own resources:**
-Energy utilities, green loan with savings-based repayment  |
+| Energy utilities, green loan with savings-based repayment  |
 |  The LEGOFIT project aims at designing, implementing and validating an adaptable and dynamic integrative approach to achieve energy performance in multi-family residential buildings. | Housing cooperative | Non-reimbursable, feasible with grants.
 **Possible sources:**
 Horizon Europe  |
 |  Energy efficiency solutions using smart systems | Municipality of Pécs, Homeowners, Housing cooperatives, energy utilities | Investment with return in the long term, with blended finance, but requires support in the piloting phase. **Possible sources:**
-Interreg Central, Danube Programme, Hungarian-Croatian Cross-border Programme, Driving Urban Transition, Environment and Energy Operational Programme  |
+| Interreg Central, Danube Programme, Hungarian-Croatian Cross-border Programme, Driving Urban Transition, Environment and Energy Operational Programme  |
 |  Piloting local energy supply models - microgrid  |   |   |
 |  Piloting local energy supply models - energy storage  |   |   |
 |  Retrofitting 35% of existing buildings | Municipality Green Office, Institutions, Homeowners | Homeowners sources, banking coordinated loan facility, repayment from savings.
-Guarantee support  |
+| Guarantee support  |
 |  Residential purchase of energy efficient appliances (washing machine, TV, refrigerator), air conditioners, heating systems (new fossil boilers cannot be sold from 2025) |   | Investment with return: bill-based financing provided by utility providers  |
 C
 
@@ -7592,7 +7592,7 @@ Hungarian-Croatian Cross-border Programme  |
 |  Energy efficient lighting, and devices  |   |   |
 |  Developing intelligent street lighting | Local government | ESCO scheme, on a competitive basis  |
 |  LED burning program | Energy utilities, Municipality Green Office, Homeowners | Invoice-based financing
-Possibility of support from Energy utilities or a manufacturing company  |
+| Possibility of support from Energy utilities or a manufacturing company  |
 |  Optimisation of large household consumers with smartgrid, microgrid systems, related education, awareness raising |   | Invoice-based financing  |
 C
 
@@ -7630,7 +7630,7 @@ C
 | --- | --- | --- |
 |  Decarbonisation of electricity  |   |   |
 |  Building solar park capacity | Municipality of Pécs | Municipal land insurance, in return for an operating contract
-Competitive contractor development, energy utilities feed-in. Entrepreneurial financing can be green bond or bank loan based  |
+| Competitive contractor development, energy utilities feed-in. Entrepreneurial financing can be green bond or bank loan based  |
 |  Construction of urban energy storage capacity in cooperation with energy utilities | Municipality of Pécs, energy utilities | Energy utilities own resources  |
 |  Building electrolysis capacity in Tüskésrét | PTE, MVM, Kontakt-Elektro Kft. | Horizon Europe source  |
 |  Building a hydrogen ecosystem | PTE with MVM involvement | Non-reimbursable, feasible with grants.
@@ -7640,7 +7640,7 @@ Interreg Central, Danube Programme, Hungarian-Croatian Cross-border Programme, H
 **Possible sources:**
 Interregional Innovation Instrument  |
 |  Building solar energy capacity for city operations | Institutions | Investment with return: green bond, urban development fund, bank loan scheme
-KEHOP plus support combined with a loan ESCO scheme also applicable  |
+| KEHOP plus support combined with a loan ESCO scheme also applicable  |
 |  Building institutional solar capacity |   | KEHOP plus support combined with a loan, in the case of municipalities  |
 |   |  | TOP Plus support combined with a loan  |
 |  Building solar energy capacity for industrial and commercial units | Businesses | **Investment with return:** own resources, green bond, urban development fund, bank loan scheme  |
@@ -7672,7 +7672,7 @@ European Urban Initiative  |
 |  Development of an intelligent urban energy management and spatial information system - Optimising the use of public transport  |   |   |
 |  Measures to reduce car traffic |   | Non-reimbursable, feasible with grants.  |
 |  Municipal measures in the field of transport |   | Possible sources:
-Own source  |
+| Own source  |
 |  GreenInCities |   | Non-reimbursable, feasible with grants.
 Possible sources:
 Horizon Europe  |
@@ -7707,7 +7707,7 @@ C
 |  E-bike, scooter, moped project | Biokom NKft, Businesses | Grant scheme: TOP Plus, Entrepreneurial source, operation with large employers on the basis of a rental contract  |
 |  Supporting access from the conurbation by public transport with targeted services | Tüke Busz Zrt. | Grant scheme: Transport and Infrastructure Operational Programme Plus  |
 |  Separate bus lanes on main transport routes | Municipality of Pécs | Non-reimbursable, feasible with grants
-Possible sources: TOP Plus  |
+| Possible sources: TOP Plus  |
 |  The use of hydrogen technology in long-distance bus transport | Volán Zrt., Kontakt-Elektro Kft. | Grant scheme: Environment and Energy Operational Programme  |
 |  Increasing the share of shared vehicle use | Biokom NKft, Businesses | Non-reimbursable, feasible with grants
 Possible sources: Interreg Central, Danube Programme, Hungarian-Croatian Cross-border Programme, Transport and Infrastructure Operational Programme Plus
@@ -7741,9 +7741,9 @@ C
 | --- | --- | --- |
 |  Optimised logistics  |   |   |
 |  Smart columns: generating real-time data from IoT sensors, network remote control and automation systems: deploying sensors | Municipality of Pécs | Non-reimbursable, feasible with grants.
-Possible sources: Digital Renewal Operational Programme, Life, Environment and Energy Operational Programme  |
+| Possible sources: Digital Renewal Operational Programme, Life, Environment and Energy Operational Programme  |
 |  Reducing congestion in urban transport through traffic management tools | Biokom Nkft | Non-reimbursable, feasible with grants.
-Possible sources: Interreg Central, Danube Programme, Hungarian-Croatian Cross-border Programme  |
+| Possible sources: Interreg Central, Danube Programme, Hungarian-Croatian Cross-border Programme  |
 |  Diverting traffic from Route 6 by relieving congestion in the city centre and Kertváros | Municipality of Pécs | Road/ Congestion Charges in transport  |
 |  Construction of interchange stations at 3 sites | Municipality of Pécs, economic operators | Investment with return: green bond, urban development fund, green loan scheme, EIB loan scheme  |
 C
@@ -7832,7 +7832,7 @@ Municipal own resources,
 aid scheme
 Own contribution of economic operators  |
 |  Converting vacant or underused land into
-green space  |   |   |
+| green space  |   |   |
 |  Sample projects implemented: urban
 gardens, urban agriculture, composting
 programmes  |   |   |
@@ -8045,7 +8045,7 @@ C
 Schedule of projects
 
 |  Projects already running | Enabling projects and surveys in 2023-24 | Pilot projects
-Listed in 2023-24, but with further examples of projects expected on a rolling basis until 2030 | Ongoing projects | Investments from 2024  |
+| Listed in 2023-24, but with further examples of projects expected on a rolling basis until 2030 | Ongoing projects | Investments from 2024  |
 | --- | --- | --- | --- | --- |
 |  Building renovation  |   |   |   |   |
 |  Institutional energy consumption and emissions survey | Management Projects | Action for energy efficiency with a residential test group | Ecosystem building with institutions | Promoting smart meters, developing a digital platform, ensuring real-time traceability of energy consumption  |
@@ -8058,7 +8058,7 @@ INVESTMENT PATHWAYS TOWARDS CLIMATE NEUTRALITY BY 2030
 N
 
 |  Projects already running | Enabling projects and surveys in 2023-24 | Pilot projects
-Listed in 2023-24, but with further examples of projects expected on a rolling basis until 2030 | Ongoing projects | Investments from 2024  |
+| Listed in 2023-24, but with further examples of projects expected on a rolling basis until 2030 | Ongoing projects | Investments from 2024  |
 | --- | --- | --- | --- | --- |
 |  **Building renovation**  |   |   |   |   |
 |   | Carbon reduction action plan with industry | Decarbonisation of a prefabricated building pilot project: installation of renewable energy sources to replace cooling, lighting and cooking in a 10-storey prefabricated building | Running a Green Office | Residential purchase of energy efficient appliances (washing machine, TV, refrigerator), air conditioners, heating systems (new fossil boilers cannot be sold from 2025)  |
@@ -8096,15 +8096,15 @@ INVESTMENT PATHWAYS TOWARDS CLIMATE NEUTRALITY BY 2030
 C
 
 |  Projects already running | Enabling projects and surveys in 2023-24 | Pilot projects
-Listed in 2023-24, but with further examples of projects expected on a rolling basis until 2030 | Ongoing projects | Investments from 2024  |
+| Listed in 2023-24, but with further examples of projects expected on a rolling basis until 2030 | Ongoing projects | Investments from 2024  |
 | --- | --- | --- | --- | --- |
 |  Decarbonisation of heating  |   |   |   |   |
 |   |  |  | Cleantech project:
-Exploration of the Pécs area for geothermal energy | Connection of institutional actors to district heating  |
+| Exploration of the Pécs area for geothermal energy | Connection of institutional actors to district heating  |
 |   |   |   |  Cleantech project:
-Secondary raw material exploration, extraction and exploitation with a strong geological background |   |
+| Secondary raw material exploration, extraction and exploitation with a strong geological background |   |
 |   |   |   |  Cleantech project:
-Comprehensive development of the university knowledge base and competences for geological projects requiring a significant technical and specialist base  |   |
+| Comprehensive development of the university knowledge base and competences for geological projects requiring a significant technical and specialist base  |   |
 |  Decarbonisation of electricity  |   |   |   |   |
 |   | Preparing inter-regional innovation investments for the Central European Green Hydrogen Value Chain by developing a stakeholder participation scheme and setting up an IoT framework. |  | Building a hydrogen ecosystem | Building solar park capacity  |
 |   |   |   | Building solar energy capacity for city operations | Construction of urban energy storage capacity in cooperation with energy utilities  |
@@ -8136,7 +8136,7 @@ INVESTMENT PATHWAYS TOWARDS CLIMATE NEUTRALITY BY 2030
 C
 
 |  Projects already running | Enabling projects and surveys in 2023-24 | Pilot projects
-Listed in 2023-24, but with further examples of projects expected on a rolling basis until 2030 | Ongoing projects | Investments from 2024  |
+| Listed in 2023-24, but with further examples of projects expected on a rolling basis until 2030 | Ongoing projects | Investments from 2024  |
 | --- | --- | --- | --- | --- |
 |  Increasing the share of public transport and non-motorised transport  |   |   |   |   |
 |  E-bike, scooter, moped project |  |  | Separate bus lanes on main transport routes | Support for access from the conurbation by public transport with targeted services  |
@@ -8168,7 +8168,7 @@ INVESTMENT PATHWAYS TOWARDS CLIMATE NEUTRALITY BY 2030
 4
 
 |  Projects already running | Enabling projects and surveys in 2023-24 | Pilot projects
-Listed in 2023-24, but with further examples of projects expected on a rolling basis until 2030 | Ongoing projects | Investments from 2024  |
+| Listed in 2023-24, but with further examples of projects expected on a rolling basis until 2030 | Ongoing projects | Investments from 2024  |
 | --- | --- | --- | --- | --- |
 |  **Electrification of freight transport**  |   |   |   |   |
 |   |  |  |  | Electrification of the conventional vehicle fleet of the public service system in Pécs  |
@@ -8205,7 +8205,7 @@ INVESTMENT PATHWAYS TOWARDS CLIMATE NEUTRALITY BY 2030
 C
 
 |  Projects already running | Enabling projects and surveys in 2023-24 | Pilot projects
-Listed in 2023-24, but with further examples of projects expected on a rolling basis until 2030 | Ongoing projects | Investments from 2024  |
+| Listed in 2023-24, but with further examples of projects expected on a rolling basis until 2030 | Ongoing projects | Investments from 2024  |
 | --- | --- | --- | --- | --- |
 |  Circular economy initiatives  |   |   |   |   |
 |   |  |  |  | Demolition of a fly ash tip in Tüskésréti and its material recovery in the cement industry, technology testing  |

@@ -649,7 +649,7 @@ Action Plan
 |  Type | Name | Description | Relevance | Impact on Climate Neutrality Ambition  |
 | --- | --- | --- | --- | --- |
 |   |  | a good life for all its residents in many aspects. | • Accessible and fair urban amenities for all
-• Equal and free society |   |
+| • Equal and free society |   |
 |  Strategy | Istanbul Sustainable Urban Mobility Plan | This plan represents a new era in the city's transport development, placing people, accessibility and public engagement at the heart of the planning process. The aim is to enhance quality of life for all. | • This plan has three themes as follows:
 • Transition to Low Carbon
 • Seamless Transfer
@@ -668,12 +668,12 @@ Table 9: (Table A2.1) ss
 |  Comments  |   |   |   |   |   |   |   |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |   | -1
-Baseline emissions 2019 | BaU Scenario for 2030 | -2
-Emissions Target 2030 | Reduction | -3
-Emission reduction through other Action Plans |   | -4
-Emissions Gap |   | -5
-Emissions reduction through the CCC Action Plan to address the Gap |   |   | -6
-Residual emissions  |
+| Baseline emissions 2019 | BaU Scenario for 2030 | -2 |
+| Emissions Target 2030 | Reduction | -3 |
+| Emission reduction through other Action Plans |   | -4 |
+| Emissions Gap |   | -5 |
+| Emissions reduction through the CCC Action Plan to address the Gap |   |   | -6 |
+| Residual emissions  |
 |   | tCO2e | tCO2e | tCO2e | (% reduction target from BaU) | tCO2e | (% absolute reduction compared to Baseline) | tCO2e | (% gap between existing CAP and CCC target) | tCO2e | (% reduction target from BaU) | (% absolute reduction compared to Baseline) | tCO2e  |
 |  Buildings (Stationary Energy) | 31,989,957 | 53,130,613 | 43,972,330 | 83% | 34,266,808 | 41.0% | 9,705,522 | 22.1% | 9,705,522 | 81.7% | 69.7% | 9,158,283  |
 |  Transport | 14,416,444 | 16,224,664 | 10,971,755 | 68% | 12,309,106 | 72.8% | 0 | 0.0% | 0 | 100.0% | 100.0% | 3,915,558  |
@@ -850,8 +850,6 @@ Climate Neutrality Action Plan
 |   |  Metro Istanbul Inc. | Operator of urban rail public transport | Collaborative  |
 |   |  City Lines Inc. | Operator of maritime public transport | Collaborative  |
 |   |  Ispark Inc. (Istanbul Parking Lot Operations Inc.) | Operator of parking services | Collaborative  |
-Climate Neutrality Action Plan
-
 |  System Description | Stakeholders | Influence on the city's climate neutrality ambition | Interest in the city's climate neutrality ambition  |
 | --- | --- | --- | --- |
 |  Waste Management System | Isbak Inc. (Istanbul Informatics and Smart City Technologies Inc.) | Provider of intelligent transport systems | Collaborative  |
@@ -2841,7 +2839,7 @@ Action Plan
 |  Intervention name | Description | Systemic barriers / opportunities addressed | Leadership and stakeholders involved | Enabling impact | Co-benefits  |
 | --- | --- | --- | --- | --- | --- |
 |   | to link the action plan
-with citizen initiatives. |  |  |  |   |
+| with citizen initiatives. |  |  |  |   |
 |  Accessible financial assistance İBB Askıda Fatura | İBB Askıda Fatura is a web interface where IMM links financial help with those in need through the payment of bills and other life expenses. | Social collaboration facilitation | IMM and citizens | Creating a platform for philantrophy and social cohesion | Fostering access to prosperity  |
 |  Disaster response assistance AKOM Acil Durumlarda Vatandaş Bilgilendirmeleri | « AKOM Acil Durumlarda Vatandaş Bilgilendirmeleri » is a tool IMM uses to inform citizens of disaster related issues, response actions and warnings. | Awareness and information access | IMM and disaster risk related institutions | Disaster awareness and access to public assistance | Disaster risk management  |
 |  Neighborhood contact points | IMM plans to utilize the existing neighborhood administration structure with « Muhtar » as the representative, combined with the Istanbul Senin app, to mobilize working groups and awareness sessions regarding Istanbul's climate commitments. Climate volunteers shall be determined for the 961 neighborhoods of Istanbul and trained for climate change awareness, and three of them made members of the ICP. | Reaching every locality of Istanbul | Neighborhood Muhtars and IMM | Awareness and volunteering | Higher resolution of participation  |

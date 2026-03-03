@@ -159,10 +159,10 @@ Following the NZC methodology (https://netzerocities.app/ClimateTransitionMap), 
 ## Build a strong mandate
 
 |  Build a strong mandate | Within city government | Set up / strengthen the internal team
-Mobilise resources and capacity  |
+| Mobilise resources and capacity  |
 | --- | --- | --- |
 |   |  Within the local ecosystem | Develop a multi-actor Transition team
-Build new collaborative governance structures and networks  |
+| Build new collaborative governance structures and networks  |
 |   | With the other government levels | Strengthen buy-in
 Clarify mutual commitments  |
 
@@ -572,8 +572,6 @@ Note: for easier reading of the document, table A-2.3 Emission Gap has been move
 |  Type | Level | Name & Title | Description  |
 |  Local | plan | PUMS (Urban Plan of Sustainable Mobility) | It is a strategic long-term planning tool (10 years) capable of including both infrastructural and accompanying measures relating to demand management and mobility regulation. The development of the SUMP is envisaged in implementation of article 22 of law 340/2000 - Urban mobility plans - and is subjected to "Strategic Environmental Assessment" (SEA).  |
 |  Local | Plan | General plan of urban traffic (PGTU) | It is one of the short-term (two-year) implementation tools of the Sustainable Urban Mobility Plan. In more detail, it provides an indication of the  |
-Climate Neutrality Action Plan
-
 |   |  |  | action topics of the plan, selecting from:
 interventions on the transport offer;
 interventions on the demand for mobility.
@@ -610,10 +608,6 @@ C
 |  Regional | Strategy | Integrated Regional Transport Plan | The regional law n. 30 of 1998 (General regulation of regional and local public transport) identifies the Prit (Integrated Regional Transport Plan) as the main planning tool with which the Region establishes guidelines and directives for regional mobility policies and fixes the main interventions and priority actions to be pursued in the various fields of intervention.  |
 |  Regional | Programming | Regional program of the European Regional Development Fund 2021-2027 | The Emilia-Romagna Regional Operational Program (OP) is the programming document that defines the strategy and interventions for the use of the resources assigned to the Region by the European Regional Development Fund (ERDF), within the framework of the Cohesion Policy. Through the ERDF, the objective is to strengthen the economic, social and territorial cohesion of the European Union and reduce the development gap between its regions, with 5 strategic objectives for 2021-2027: a smarter, greener Europe, more connected, more social, closer to citizens.  |
 |  National | Plan | Climate Change Adaptation Plan (PNACC) | In order to implement the National Strategy for Adaptation to Climate Change (SNAC), approved by Directorial Decree no. 86 of 16 June 2015 by the Ministry of the Environment and the Protection of the Territory and the Sea, the elaboration of the National Adaptation Plan (PNACC) was started. The goal is to offer a guidance tool for planning and implementing the most effective adaptation actions in the Italian territory, in relation to the critical issues  |
-
-5
-Climate Neutrality Action Plan
-
 |   |  |  | encountered, and for integrating adaptation criteria into planning procedures and tools existing. In relation to the Strategic Environmental Assessment (VAS) and the Environmental Impact Assessment, the activities functional to the progress of the document validation procedure are underway.  |
 | --- | --- | --- | --- |
 |  National | Plan | National Energy Strategy (SEN) | The SEN2017 is the result of an articulated and shared process that lasted a year which involved, right from the preliminary phase, the public bodies operating on energy, the operators of the electricity and gas transport networks and qualified experts in the energy sector. The Strategy aims to make the national energy system more:
@@ -627,10 +621,6 @@ billion for energy efficiency.
 To guarantee transparency in the implementation process, it was decided to launch a participatory and shared process of revision of the Strategy every three years.  |
 |  National | Plan | Integrated National Plan for Energy and Climate (PNIEC) | With the Integrated National Plan for Energy and Climate, the national objectives for 2030 on energy efficiency, renewable sources and the reduction of CO_{2} emissions are established, as well as the objectives in terms of energy security, interconnections, the single market of energy and competitiveness, development and sustainable mobility, outlining for each of them the measures that will be implemented to ensure their achievement. In January 2020, the Plan was published which implements the innovations contained in the Decree Law on Climate as well as those on investments for the Green New Deal envisaged in the 2020 Budget Law.  |
 |  National | Plan | National Recovery and Resilience Plan (PNRR) | The PNRR is part of Next Generation EU, an economic recovery project dedicated to member states launched by the European Commission in 2021, with an amount of resources equal to 191.5 billion. The Plan is divided into 6 Missions, or main thematic areas on which to intervene, identified in full coherence with the 6 pillars of the Next Generation EU. The Missions are divided  |
-
-6
-Climate Neutrality Action Plan
-
 |   |  |  | into Components, areas of intervention that address specific challenges, which are in turn composed of Investments and Reforms. There are 3 further submissions (young people, gender equality and reduction of the citizenship gap) or transversal priorities that guide the investments, reforms and projects of the Plan and have the objective of reducing the territorial, generational and gender gaps present in the country.  |
 | --- | --- | --- | --- |
 |  National | Plan | National plan to contain gas consumption | The objective of the Plan is to promote conscious and intelligent behaviour in the consumption of gas and electricity. The MASE policy document confirms the decarbonisation commitments for 2030 to increase energy independence. The recent revision of the document in September 2022 adopted measures aimed at addressing the security of national natural gas supply in order to:
@@ -656,7 +646,7 @@ The following table has included the most recent policies and strategies, from n
 | --- | --- | --- | --- |
 |  Plan | PNIEC update - Integrated National Energy and Climate Plan | The "proposal" to update the Plan, scheduled for 30 June 2023, will take into account the public consultation open to all: individuals, associations, stakeholders and institutions. | The Municipality of Parma, together with the other 8 Italian cities of the mission, sent, at the direct request of the Ministry itself, 18 forms to be included as strategies of the new PNIEC.  |
 |  National | National plan to contain gas consumption | The provision, published on 17 October 2022, establishes the rules for containing consumption to be followed for the 2022-2023 winter thermal season, in the face of the energy crisis that has affected the country.
-The Plan provides for the reduction of the temperature for heating the buildings and reduces the operating limits of the heating systems, i.e. switching on and managing. | The Municipality of Parma promptly implemented the provision for its properties and encouraged the entire territory to follow the Plan.  |
+| The Plan provides for the reduction of the temperature for heating the buildings and reduces the operating limits of the heating systems, i.e. switching on and managing. | The Municipality of Parma promptly implemented the provision for its properties and encouraged the entire territory to follow the Plan.  |
 |  National | National Recovery and Resilience Plan (PNRR) | The National Recovery and Resilience Plan (PNRR) is part of the Next Generation EU (NGEU) program, the 750 billion euro package, half of which consists of grants, agreed by the European Union in response to the pandemic crisis. The main component of the NGEU program is the Recovery and Resilience Facility, RRF which has a duration | The Municipality of Parma is making use of the PNRR funds, thanks to which new and important measures will be developed to contain emissions4  |
 
 See PNRR sheets within the portfolio.
@@ -694,8 +684,6 @@ Climate Neutrality Action Plan
 |   |  Municipality of Parma intervention | The PGTU 2023 2025 has a strategic value towards the mission by providing indications strongly linked to sustainable mobility.  |
 |  PUG 2050 | Description | Participatory drafting of the General Urban Plan of the city of Parma having the following main objectives: Grow up to 2050 without consuming resources; Finding solutions for new ways of living, working and being together.  |
 |   |  Municipality of Parma intervention | A PUG in synergy with the climate Mission: measures such as the Albedo map and the soil permeability map will be introduced in the update of the PUG being adopted in order to have more and more territorial/urban planning tools consistent with the principles of the mission. General Urban Plan (PUG) (Parma 2050): - contain the consumption of soil as a common good and non-renewable resource that performs ecosystem functions and services, also in relation to the prevention and mitigation of hydro geological instability events and mitigation and adaptation strategies to climate change; - promote the regeneration of urbanised territories, contain the consumption of soil as a common good and non-renewable resource that performs ecosystem functions and services, also in relation to the prevention and mitigation of hydro geological instability events and mitigation and adaptation strategies to climate change; - promote the regeneration of urbanised territories and the improvement of urban and building quality, with particular reference to the efficiency in the use of energy and physical resources, the environmental performance of the artefacts and materials, the healthiness and comfort of the buildings, compliance to anti-seismic and safety standards, the quality and liveability of urban spaces and neighbourhoods, the promotion of social housing interventions and further actions for the satisfaction of the right to housing pursuant to regional law 8 August 2001, n. 24; - protect and enhance the territory in its environmental and landscape characteristics favourable to human well-being and the conservation of biodiversity; - protect and enhance agricultural territories and the related agri-food production capacities, safeguarding the various typical vocations that characterise them; - contribute to the protection and enhancement of the historical and cultural elements of the regional territory; - promote the conditions of attractiveness of the regional and local systems, for the development, innovation and competitiveness of productive and tertiary activities;  |
-Climate Neutrality Action Plan
-
 |   |  | - promote greater levels of knowledge of the territory and of the existing building heritage, to ensure the effectiveness of the protection actions and the sustainability of the transformation interventions.  |
 | --- | --- | --- |
 |  PUMS (SUMP) | Description | Sustainable Urban Mobility Plan whose update must be developed by 2024.  |
@@ -732,7 +720,7 @@ energy efficiency of buildings;
 energy saving and reduction of consumption;
 production of energy from renewable sources;  |
 |  RESOLUTION N. GC-2023-198 OF THE MUNICIPAL COUNCIL ON 14/06/2023 | Description | Subject: Strategic objective of the Organisation called "Optimisation of consumption" -
-Expression of favourable direction regarding the implementation of actions aimed at reducing energy consumption, in line with the Parma Climate Neutral 2030 Project  |
+| Expression of favourable direction regarding the implementation of actions aimed at reducing energy consumption, in line with the Parma Climate Neutral 2030 Project  |
 |   |  Municipality of Parma intervention | Actions identified:
 - annual update of the knowledge framework of energy consumption of buildings and municipal assets;
 - definition of the energy diagnosis program and the APE for buildings;
@@ -852,8 +840,6 @@ Below is an exhaustive mapping of all the stakeholders involved with each one's 
 |  Privates | IREN | Ireti, Planning sector, ecological transition sector | Consolidation of the local electricity grid | Energy and electricity distribution, gas; management of water distribution services; garbage collection  |
 |  Privates | Esselunga | Sector competitors, player in local logistics | Building modernisation, energy independence, distribution network efficiency | Mass retailing  |
 |  Associated company | TEP | Mobility sector, SMPT | Fleet modernisation, reappealing of | TPL  |
-Climate Neutrality Action Plan
-
 |   |  |  | local public transport |   |
 | --- | --- | --- | --- | --- |
 |  Research centres | IMEM CNR | Universities, other research centres | Contribution for feasibility studies on the use of innovative technological materials | Science of materials, innovative materials  |
@@ -863,10 +849,6 @@ Climate Neutrality Action Plan
 |  Trade association | Confagricoltura |  | Territorial protection actions, dissemination of good practices for reducing emissions, investments in the efficiency of buildings, machinery and processes | Protection of agricultural enterprises and the territory; enhancement of agricultural products  |
 |  Associated company | SMTP SPA | Mobility sector, TEP | Fleet modernisation, reappealing of local public transport | TPL and private mobility  |
 |  Privates | Davines | Industry competitor | Efficiency improvement of buildings, modernisation of the corporate fleet, revision of | Cosmetic products, personal services  |
-
-0
-Climate Neutrality Action Plan
-
 |   |  |  | industrial process efficiency |   |
 | --- | --- | --- | --- | --- |
 |  Privates | Barilla | Industry competitor | Efficiency improvement of buildings, modernisation of the corporate fleet, revision of industrial process efficiency | Agri-food industry  |
@@ -877,10 +859,6 @@ Climate Neutrality Action Plan
 |  Public bodies | University of Parma | Education, research |  |   |
 |  Research in SAPR (remote piloting systems) | Aerodron | Ecological transition sector | Feasibility studies for implementation of alternative energy resources | Land mapping, risk management utilities  |
 |  Public bodies | ARPAE | Ecological transition sector | Environment and energy prevention | Energy and environmental sector studies, meteorological monitoring  |
-
-1
-Climate Neutrality Action Plan
-
 |  Public bodies | ART-ER | Municipality of Parma | Management of investments in environmental and social innovation; environmental education | Field studies  |
 | --- | --- | --- | --- | --- |
 |  Public bodies | Parks of the Duchy management body | Planning sector, ecological transition sector | Park management and biodiversity, environmental education | Public green protection  |
@@ -909,8 +887,6 @@ Plan
 |  Associations | WWF | Municipality of Parma | Enhancement of the natural city ecosystem; involvement and continuous learning |   |
 |  Associations | Legambiente Parma | Municipality of Parma | Enhancement of the natural city ecosystem; involvement and continuous learning |   |
 |  Associations | ADA onlus | Municipality of Parma | Enhancement of the natural city ecosystem; involvement and continuous learning; education and cultural growth, |   |
-Climate Neutrality Action Plan
-
 |   |  |  | conferences/debates |   |
 | --- | --- | --- | --- | --- |
 |  Associations | LIPU | Municipality of Parma | Training and involvement towards sustainable practices | Conservation of nature, protection of biodiversity, promotion of ecological culture  |
@@ -1359,8 +1335,6 @@ B-2.2.b: Actions of external stakeholders
 |  Stakeholder 3 | Development of district heating and heat storage | Measurable | Energy infrastructure | 1,3,6 | 2018-2030 | 388  |
 |   |  Recovery of materials from waste with paper, cardboard and plastic selection plant | Measurable | Waste | 1,6 | 2022-2030 | 86,428  |
 |   | Reduction of water losses | Measurable | Buildings | 6,9 | 2018-2030 | 846  |
-Climate Neutrality Action Plan
-
 |   | Heat production from biogas treatment plant Parma Ovest | Measurable | Waste | 1,9 | 2018-2030 | 8,520  |
 | --- | --- | --- | --- | --- | --- | --- |
 |   | Energy requalification of private buildings | Measurable | Buildings | 9 | 2018-2030 | 14,059  |
@@ -1587,7 +1561,7 @@ Plan
 |   |  Statement of Commitment with Science-Based Targets Initiative (SBTi) | Development of emission reduction targets in the offices and in the plant with replacement of the car fleet and definition of a project roadmap to achieve the Net Zero objective of the buildings themselves  |
 |   |  Carbon Neutral Certification (2018) | Energy efficiency certification for offices and factories  |
 |  Stakeholder 6 | Smart City Parma Project | - Collection and transport of data from sectors installed in the city, data owned by the body or its subsidiaries (dashboard city2)
-provide data necessary for the management of the Parma climate neutral 2030 project  |
+| provide data necessary for the management of the Parma climate neutral 2030 project  |
 |  Stakeholder 7 | Collaboration with WWF | Projects to support biodiversity and climate neutrality  |
 |  Stakeholder 8 | Citizen engagement | Projects to raise citizens' awareness of the rational use of resources (gas, water and electricity)  |
 6
@@ -1720,7 +1694,7 @@ efficiency and cost-effectiveness of transport of people and goods
 attractiveness and quality of the urban environment | Health of citizens, road safety, reduction of stress from urban traffic, reduction of noise.  |
 |  Sustainable mobility technical table | Home-school/home-work travel plan |   | Involvement of municipal and external mobility managers (of schools and companies/private associations) | Raising awareness towards sustainable mobility. Social welfare. Enhancement of sharing mobility platforms.  |
 |  PULS sustainable logistics | Efficiency improvement of the distribution logistics system |   | - Regulated goods accesses (gates)
-promotion of cycle-logistics and experimentation with electric van sharing | Improvement of traffic and liveability of the city context. Noise reduction.  |
+| promotion of cycle-logistics and experimentation with electric van sharing | Improvement of traffic and liveability of the city context. Noise reduction.  |
 |  Neighbourhood meetings | Meetings between citizens and |   | Citizens' involvement in the collection of mobility improvement proposals | Co-planning and efficiency of interventions. Active  |
 Climate Neutrality Action Plan
 
@@ -1761,7 +1735,7 @@ Comune di Parma
 |  Open laboratory spread throughout the city | Laboratory for the dissemination of food and wine culture | Food and policy sector | Dissemination of the culture of good food | Widespread citizen participation  |
 |  UNESCO Parma Foundation | Consortium to promote public-private dialogue in the gastronomic and food sector |   | Synergy and involvement of various sectors operating not only in the world of agri-food culture | Transversal planning  |
 |  City food policy | - Contracts for public and private canteens
-Food education in schools |   | Involvement of schools and young people in raising awareness of circular economy practices, reducing waste | The involvement and role of the potential of technology in reducing waste and increasing awareness of climate change are being evaluated  |
+| Food education in schools |   | Involvement of schools and young people in raising awareness of circular economy practices, reducing waste | The involvement and role of the potential of technology in reducing waste and increasing awareness of climate change are being evaluated  |
 |  ONFOODS projects | Mapping of projects related to the world of sustainability in the FOOD area |   | Observatory on food and circularity edited by UNIPR |   |
 |  ITC call on food circularity | Potential for new technologies applied to circularity issues |   | Partnerships are being evaluated with the main companies in the ITC world |   |
 
@@ -1863,11 +1837,11 @@ Mission | SECAP - CCC alignment | Synergistic governance actions
 with research centers and
 Universities in line with NZC  |
 |  Need to strengthen multi-level
-governance | Identification of stakeholders to
-be involved | SUMP update in line with the
-Mission | Update on waste and circular
-economy regulations | Collaborative governance on
-energy and climate  |
+| governance | Identification of stakeholders to |
+| be involved | SUMP update in line with the |
+| Mission | Update on waste and circular |
+| economy regulations | Collaborative governance on |
+| energy and climate  |
 |   |  Participatory paths of strategic
 plans focused on NZC
 objectives | New guidelines for the

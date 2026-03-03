@@ -111,7 +111,7 @@ The list of figures identifies the titles and locations (page numbers) of all vi
 |  Table B-2.1.1 | Description of action portfolio (Municipality) | 46  |
 |  Table B-2.1.2 | Description of action portfolio (Stakeholders) | 57  |
 |  Table B-2.2 | Individual action outlines | 72
-To be found in Annex 1: “Individual actions”  |
+| To be found in Annex 1: “Individual actions”  |
 |  Table B-2.3 | Summary strategy for residual emissions | 72  |
 |  Table B-3.1 | Impact Pathways | 75  |
 |  Table B-3.2.1 | Indicator Metadata_Indicator 1 | 78  |
@@ -206,13 +206,13 @@ In table I-1.1 the sectors, scopes and gases covered by Milan Climate Neutrality
 |  Sectors | Scope 1 | Scope 2 | Scope 3  |
 |  Stationary energy | Included | Included | Not included  |
 |   |  CO₂, CH₄ and N₂O included
-HFCs, PFCs, SF6, and NF3 not included*  |   |   |
+| HFCs, PFCs, SF6, and NF3 not included*  |   |   |
 |  Transport | Included | Included | Not included  |
 |   |  CO₂, CH₄ and N₂O included
-HFCs, PFCs, SF6, and NF3 not included*  |   |   |
+| HFCs, PFCs, SF6, and NF3 not included*  |   |   |
 |  Waste/wastewater | Included | Not applicable | Included²  |
 |   |  CO₂, CH₄ and N₂O included
-HFCs, PFCs, SF6, and NF3 not included*  |   |   |
+| HFCs, PFCs, SF6, and NF3 not included*  |   |   |
 |  IPPU³ | Not included | Not applicable | Not included  |
 |  AFOLU⁴ | Not included | Not applicable | Not included  |
 |  Geographical boundary | Same as city administrative boundary | Same as city administrative boundary | Same as city administrative boundary  |
@@ -837,7 +837,7 @@ A-3.2: Systems &amp; stakeholder mapping
 | --- | --- | --- | --- |
 |  City-makers | Housing cooperatives  |   |   |
 |   |  Abitare | Abitare is a housing cooperative with over 8,200 members, founded in Milan in 1955. It offers comprehensive housing services, including social integration, cultural enrichment, assistance, and management of relationships with one's home, residential complex, and urban area.
-Abitare influences the city's climate neutral action by engaging in ambitious energetical requalification programs of its assets, contributing to the reduction of GHG emissions. | Abitare holds a strong interest in participating to the Municipality's effort to achieve climate neutrality by 2030, as it constitutes an opportunity to reduce costs on the long-term regarding energy consumption of its assets.  |
+| Abitare influences the city's climate neutral action by engaging in ambitious energetical requalification programs of its assets, contributing to the reduction of GHG emissions. | Abitare holds a strong interest in participating to the Municipality's effort to achieve climate neutrality by 2030, as it constitutes an opportunity to reduce costs on the long-term regarding energy consumption of its assets.  |
 |   |  Delta Ecopolis | Delta Ecopolis is a housing cooperative in Milan with a long history of commitment to constructing sustainable and community-oriented neighborhoods. In addition to building free and subsidized housing, it also engages in social management, providing energy services aimed at saving and respecting the environment.
 Delta Ecopolis influences the city's climate neutral action by engaging in ambitious energetical requalification programs of its assets, contributing to the reduction of GHG emissions. | Delta Ecopolis holds a strong interest in participating to the Municipality's effort to achieve climate neutrality by 2030, as it constitutes an opportunity to reduce costs on the long-term regarding energy consumption of its assets.  |
 Comune di Milano
@@ -961,7 +961,7 @@ C
 | --- | --- | --- | --- | --- | --- |
 |  Fields of action/Emission domain | Systemic levers | Early changes | Late outcomes | Direct impacts (Emission reduction) | Indirect impacts (co-benefits)  |
 |  systems and changing mobility patterns. | Governance and policy | New limited traffic zones, low emission zones, 30 km zones and other policies aimed at promoting soft mobility vs private motorised mobility. | The share of bike and active mobility trips is progressively increasing. |  | Reduced acoustic pollution
-Improved urban liveability  |
+| Improved urban liveability  |
 |   |  Democracy and participation levers | Growing “low emission zones” and pedestrian zones (Piazze Aperte), taken care by the citizens (Collaboration Agreements). | Enabling the emission-free inner city. |   |   |
 |  SYSTEMIC PRIORITY 3
 Improving the city’s green infrastructure and enhancing its resilience to climate change. | Technology/infrastructure | 20.000 new trees planted every year by the Municipality; new parcs are created. | Milan’s green infrastructure is able to captures CO_{2} and reduces the urban heat island phenomena. | 9.700 t CO_{2}eq (absorbed)^{9} | Improved air quality
@@ -1528,7 +1528,7 @@ ACTION PLAN
 C
 
 |  B-2.1.2: Description of action portfolios
-STAKEHOLDERS  |   |   |   |   |   |   |
+| STAKEHOLDERS  |   |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |  Energy and buildings  |   |   |   |   |   |   |
 |  Action domain
@@ -1701,7 +1701,7 @@ ACTION PLAN
 |  Increase of energy communities (RECs) throughout the territory. | COMIEB5 POLIMIEB2 REDOEB2 REDOEB3 | Indicator 6.1 | Number of new RECs |  |  | Not estimated  |
 |   |   |  Indicator 6.2 | Installed Power (Kwp) |  |  | Not estimated  |
 |  Most of mobility is emission-free (local public transport, pedestrian mobility, cycling). | COMOMobi1 COMOMobi2 COMOMobi3 COMOMobi4 COMOMobi5 COMOMobi6 | Indicator 7.1 | Km of cycle lanes
-The new cycle lane programme is currently being updated, figures will be provided in the first iteration of the action plan. | - | - | -  |
+| The new cycle lane programme is currently being updated, figures will be provided in the first iteration of the action plan. | - | - | -  |
 |   |   |  Indicator 7.2 | Km of additional local public transport infrastructure - Tramways | - | - | 11  |
 |   |   |  Indicator 7.3 | Km of additional local public transport infrastructure - Subway | - | - | 21  |
 |   |  All actions referred below | Indicator 7.4 | Number of charging points | 208 | 4.273 | 4.367  |
@@ -1967,10 +1967,10 @@ B-3.2.7: Indicator Metadata
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | no  |
 |  Data requirements  |   |
 |  Expected data source | Stakeholders responsible for the listed actions
-Depending upon authorization processes, maybe the data will be available in municipal or regional databases.  |
+| Depending upon authorization processes, maybe the data will be available in municipal or regional databases.  |
 |  Is the data source local or regional/national? | Local  |
 |  Expected availability | Data from stakeholders: probably available
-Other sources: not known  |
+| Other sources: not known  |
 |  Suggested collection interval | On a yearly basis  |
 |  References  |   |
 |  Deliverables describing the indicator |   |
@@ -2003,10 +2003,10 @@ B-3.2.8: Indicator Metadata
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | no  |
 |  Data requirements  |   |
 |  Expected data source | Stakeholders responsible for the listed actions
-Depending upon authorization processes, maybe the data will be available in municipal or regional databases.  |
+| Depending upon authorization processes, maybe the data will be available in municipal or regional databases.  |
 |  Is the data source local or regional/national? | Local  |
 |  Expected availability | Data from stakeholders: probably available
-Other sources: not known  |
+| Other sources: not known  |
 |  Suggested collection interval | On a yearly basis  |
 |  References  |   |
 |  Deliverables describing the indicator |   |
@@ -2107,7 +2107,7 @@ B-3.2.11: Indicator Metadata
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | no  |
 |  Data requirements  |   |
 |  Expected data source | Stakeholders responsible for the listed actions
-Depending upon authorization processes, maybe the data will be available in municipal or regional databases.  |
+| Depending upon authorization processes, maybe the data will be available in municipal or regional databases.  |
 |  Is the data source local or regional/national? | Local  |
 |  Expected availability | Data probably available  |
 |  Suggested collection interval | On a yearly basis  |
@@ -2143,7 +2143,7 @@ C
 |  Expected data source | Municipal Dpts in charge of Green Management. Stakeholders responsible for the listed actions.  |
 |  Is the data source local or regional/national? | Local  |
 |  Expected availability | Data from the municipality: available
-Data from stakeholders: probably available  |
+| Data from stakeholders: probably available  |
 |  Suggested collection interval | On a yearly basis  |
 |  Notes | The indicator is represented separately for municipal and stakeholders' actions  |
 |  References  |   |
@@ -2349,8 +2349,7 @@ Table C.1.1: Relations between governance innovations, systems, and impact pathw
 |  Intervention name | Description | Systemic barriers / opportunities addressed | Leadership and stakeholders involved | Enabling impact | Co-benefits  |
 | --- | --- | --- | --- | --- | --- |
 |  Board (Municipality of Milan) | supporting the administration in the process of transforming services to citizens through new technologies, making them accessible to all and impactful in improving people's lives and the city's growth, thus being influent on and intrinsically linked to the Municipality's ambition for climate neutrality. | Lack of the right skills and expertise in the administration needed for climate neutrality; siloed work organization within the public administration.
-
-Opportunities addressed: The strong mandate given to climate mitigation, adaptation and resilience work, and the full integration of environmental goals and indicators in the City's management system. | Stakeholders involved: SNAM, Politecnico di Milano, Milano Smart City Alliance, Women&Tech, Assintel, Università degli studi di Udine, Associazione per Milano, Factanza. | hold of new technologies and tools that help monitoring the city's action for climate neutrality. | Improved urban liveability  |
+| Opportunities addressed: The strong mandate given to climate mitigation, adaptation and resilience work, and the full integration of environmental goals and indicators in the City's management system. | Stakeholders involved: SNAM, Politecnico di Milano, Milano Smart City Alliance, Women&Tech, Assintel, Università degli studi di Udine, Associazione per Milano, Factanza. | hold of new technologies and tools that help monitoring the city's action for climate neutrality. | Improved urban liveability  |
 |  Milano Smart City Alliance (MSCA) by Fondazione Assolombarda | Milano Smart City Alliance is an initiative promoted by Fondazione Assolombarda to co-design the city of the future by leveraging the opportunities and challenges of the present through the development and experimentation of shared and innovative initiatives between public and private sectors, capable of generating tangible benefits for the city, its citizens, and all businesses. Thus, Milano Smart City Alliance has a strong influence on the city's action as it seeks to seize present opportunities and address the challenges of the coming decades to build increasingly liveable, resilient, and sustainable cities. | Systemic barriers addressed: Lack of the right skills and expertise in the administration needed for climate neutrality; siloed work organization within the public administration.
 
 Opportunities addressed: Explore the opportunity of mobilizing public-private partnerships. | Leadership: Fondazione Assolombarda.
@@ -2467,7 +2466,7 @@ ACTION PLAN
 |  (2024-25-26) |  |  |  | platforms. Promoting citizen participation. | and sustainable behaviors through good practices implemented by FAI in its properties.  |
 | --- | --- | --- | --- | --- | --- |
 |  "From Farm to Fork" | Raising awareness among students who are preparing for careers in the food industry about the environmental impact of food, through practical training and experiment with "agroecological menu." | Systemic barrier addressed_Lack of the right skills and expertise in the administration needed for climate neutrality; siloed work organization within the public administration. Limited supportive policies and incentives for integrating environmental sustainability into culinary education.
-Systemic barrier addressed_deep-rooted, individual behaviours that hamper the climate-neutrality pathway. Cultural norms and consumer preferences favouring convenience and taste over sustainability. | Legambiente, with a Hospitality Institute in Milan. | Gaining knowledge about sustainable farming practices and food choices that reduce environmental impact. | Improved health (physical and mental): Preventing diseases related to malnutrition, and food waste  |
+| Systemic barrier addressed_deep-rooted, individual behaviours that hamper the climate-neutrality pathway. Cultural norms and consumer preferences favouring convenience and taste over sustainability. | Legambiente, with a Hospitality Institute in Milan. | Gaining knowledge about sustainable farming practices and food choices that reduce environmental impact. | Improved health (physical and mental): Preventing diseases related to malnutrition, and food waste  |
 |  Ecoforum Lombardia | Fostering dialogue among the third sector, public administration, Universities, and businesses to promote the principles of the circular economy and best practices in waste management, including eco-hackathons. | Systemic barrier addressed_Lack of engagement and commitment from central government who have control over regulatory and legislative levers, possibility of conflicting national, regional and municipal frameworks: Limited coordination among government entities at different levels leading to fragmented efforts.
 Systemic barrier addressed_Cost of implementing actions to decarbonize the technological/infrastructure system: | Legambiente Lombardia | Networking to promote circular economy and sustainable business models to establish optimal conditions for it to self-sustain with a dense network of stakeholders. | Fostered Innovation: New projects powered by young students through the Eco-Hackathon.  |
 Comune di Milano
@@ -2477,8 +2476,7 @@ Climate-Neutrality
 ACTION PLAN
 
 |   |  | High costs associated with implementing new advanced technologies.
-
-Systemic barrier addressed_Lack of a unified understanding and common vision on climate-neutrality: Lack of awareness about the benefits of circular economy practices among stakeholders and socio-economic disparities impacting access to and participation in circular economy initiatives. |  |  |   |
+| Systemic barrier addressed_Lack of a unified understanding and common vision on climate-neutrality: Lack of awareness about the benefits of circular economy practices among stakeholders and socio-economic disparities impacting access to and participation in circular economy initiatives. |  |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  Sportello Energia Lombardia | An online Energy Desk aimed at providing citizens, condominium administrators, and designers information and tools as on energy efficiency, Renewable Energy Communities, including incentives and social bonus. | Systemic barrier addressed_Complex and fragmented regulatory framework, especially regarding the energy transition path. Regulatory fragmentation and need for specialized knowledge or skills to choose energy efficiency and renewable energy solutions. | Legambiente Lombardia with Insula Net (social enterprise). | To enable citizens to understand the challenges ahead in the field of energy. | Reduced energy poverty Increased awareness of energy-related topics and successfully implementing the right energy transition  |
 |  Pedibus | The project involves parents, teachers, and children in organizing and conducting "Walking Bus" routes, where children walk daily from home to school accompanied by volunteer parents. | Systemic barrier addressed_deep-rooted, individual behaviours that hamper the climate-neutrality pathway: Reliance on private vehicles for transporting children to school addresses issues related to traffic congestion and air pollution; Sedentary lifestyles and related health problems; Risk of accidents. | Legambiente Lombardia with ABCittà, Poliedra, with 34 primary schools in Milan. | Encouraging community involvement and support. Implementation of safety protocols to ensure the well-being of children during the walking routes. Advocacy for infrastructure improvements to support safer | Improved air quality: Reduced car traffic, especially in areas adjacent to schools.
@@ -2520,12 +2518,12 @@ ACTION PLAN
 1
 
 |  “Acqua: un bene prezioso” (Water: a precious resource) | Initiative aimed at students from primary to secondary schools, with 6,700 participants in 2023, make it one of Milan's most active museums in education on water treatment plants, directly engaging with schools. | Systemic barrier addressed_Lack of a unified understanding and common vision on climate-neutrality: Limited awareness among students about water treatment processes; Inadequate engagement of schools in water management education.
-Systemic barrier addressed_short-term vision due to the uncertainty of financial resources and fundraising: Lack of resources for interactive learning experiences. | MM S.p.A.
-with teachers and school managers | Empowering future generations to make informed decisions that contribute to mitigating climate change. | Improved equity and social inclusion: Reaching out to students' families.  |
+| Systemic barrier addressed_short-term vision due to the uncertainty of financial resources and fundraising: Lack of resources for interactive learning experiences. | MM S.p.A. |
+| with teachers and school managers | Empowering future generations to make informed decisions that contribute to mitigating climate change. | Improved equity and social inclusion: Reaching out to students' families.  |
 | --- | --- | --- | --- | --- | --- |
 |  Energy Bank | The initiative provides support to individuals facing energy poverty through economic aid, appliance replacement or donation, enhanced energy efficiency for third-sector organization, education on energy consumption, training for operators, promotion of Renewable Energy Solidarity Communities, and awareness-raising activities for policymakers | Systemic barrier addressed_Lack of a unified understanding and common vision on climate-neutrality: Widespread energy poverty among citizens; low awareness of efficient energy usage.
-Systemic barrier addressed_Cost of implementing actions to decarbonize the technological/infrastructure system: Lack of access to energy-efficient appliances; Limited financial resources for investments in energy efficiency; Lack of infrastructure for promoting renewable energies. | A2A S.p.A.
-with the Municipality of Milan and the Metropolitan City of Milan, Energy Bank, Cariplo Foundation, Next Energy Foundation, AEM Foundation, Signify, Engel & Völkers, Ernesto Pellegrini Onlus Foundation, Caritas, Cassoni Foundation, San Vincenzo de' Paoli, La Rotonda Cooperative | Providing financial support, promoting energy-efficient appliances, implementing energy-saving measures, fostering renewable energy communities, engaging policymakers. | Reduced energy poverty: Increased awareness and improved citizens' comprehension of energy efficiency matters.  |
+| Systemic barrier addressed_Cost of implementing actions to decarbonize the technological/infrastructure system: Lack of access to energy-efficient appliances; Limited financial resources for investments in energy efficiency; Lack of infrastructure for promoting renewable energies. | A2A S.p.A. |
+| with the Municipality of Milan and the Metropolitan City of Milan, Energy Bank, Cariplo Foundation, Next Energy Foundation, AEM Foundation, Signify, Engel & Völkers, Ernesto Pellegrini Onlus Foundation, Caritas, Cassoni Foundation, San Vincenzo de' Paoli, La Rotonda Cooperative | Providing financial support, promoting energy-efficient appliances, implementing energy-saving measures, fostering renewable energy communities, engaging policymakers. | Reduced energy poverty: Increased awareness and improved citizens' comprehension of energy efficiency matters.  |
 |  Charter of Sustainable Consumption and Advisory Board | The initiative involves establishing an Advisory Board comprising key institutional and associative entities in the City of Milan. The goal is to draft a Charter of Sustainable Consumption | Systemic barrier addressed_Lack of a unified understanding and common vision on climate-neutrality: Lack of coordination among key stakeholders and fragmented efforts. | A2A S.p.A.
 with ADICONSUM Milano Metropoli, AGICI - Italian Association for Urban Heating – AIRU, AMAT | Facilitating collaboration and knowledge-sharing among stakeholders from various sectors. | Fostered innovation: Initiatives from other stakeholders are promoted, cross-  |
 Comune di Milano
@@ -2574,8 +2572,8 @@ ACTION PLAN
 |   |  |  |  |  | Compliance with environmental regulations.  |
 | --- | --- | --- | --- | --- | --- |
 |  “Non è tutto vetro quel che luccica” - Not All That Glitters Is Glass | The project aims at improving glass recycling in bars and restaurants in Milan's nightlife areas, reducing errors in disposing of ceramics and inert materials. | Systemic barrier addressed_ Cost of implementing actions to decarbonize the technological/infrastructure system: Recycling infrastructure shortcomings; Improving the quality of recycled materials.
-Systemic barrier addressed_ Lack of a unified understanding and common vision on climate-neutrality: Awareness gaps in waste disposal. | Amsa S.p.A. with CoReVe (Glass Recycling Consortium); Ancitel Energia e Ambiente (consulting services in the energy and environmental sectors), restaurants and bars. | Improving the quality of glass recycling. | Fostered innovation: Enhanced efficiency in waste management systems; Improved sustainability through the production of higher-quality recycled materials.
-Improved equity and social inclusion: Increased community awareness and participation in recycling efforts.  |
+| Systemic barrier addressed_ Lack of a unified understanding and common vision on climate-neutrality: Awareness gaps in waste disposal. | Amsa S.p.A. with CoReVe (Glass Recycling Consortium); Ancitel Energia e Ambiente (consulting services in the energy and environmental sectors), restaurants and bars. | Improving the quality of glass recycling. | Fostered innovation: Enhanced efficiency in waste management systems; Improved sustainability through the production of higher-quality recycled materials. |
+| Improved equity and social inclusion: Increased community awareness and participation in recycling efforts.  |
 |  “Territori Virtuosi” - Virtuous Territories | The project promotes an energy efficiency model by funding public building energy efficiency interventions with the economic savings from reduced energy consumption. It primarily relies on Public-Private Partnerships (PPPs), ESCo models, and Energy Performance Contracts (EPCs). The Foundation provides technical, legal, and financial assistance to identify an Energy Service Company (ESCo) | Systemic barrier addressed_ Complex and fragmented regulatory framework, especially regarding the energy transition path: Tender Process complexity, Legal and Financial Complexity for PPPs and ESCo models.
 Systemic barrier addressed_ Lack of the right skills and expertise in the administration needed for climate neutrality; siloed work organization | Fondazione Cariplo with Regione Lombardia. | Reducing carbon emissions through energy efficiency improvements in 140 school buildings. | Increased energy independence: Improved comfort for school building users.  |
 Comune di Milano
@@ -2585,7 +2583,7 @@ Climate-Neutrality ACTION PLAN
 2
 
 |   | capable of implementing energy efficiency measures. | within the public administration: Lack of Technical Expertise.
-Systemic barrier addressed_Cost of implementing actions to decarbonize the technological/infrastructure system:Financial Constraints, Risk Management. |  |  |   |
+| Systemic barrier addressed_Cost of implementing actions to decarbonize the technological/infrastructure system:Financial Constraints, Risk Management. |  |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  ClimaMi | The project aimed to establish a practical urban climatology for the Milan aerological basin, improving the integration of local climate factors into urban planning and management through climate data and capacity-building activities for professionals and public officials. | Systemic barrier addressed_Lack of the right skills and expertise in the administration needed for climate neutrality; siloed work organization within the public administration: Limited availability of localized climate data for urban planning and management. Insufficient consideration of local climate conditions in urban development strategies. Lack of capacity among professionals and public officials to incorporate climate considerations into decision-making processes. | Fondazione Cariplo (Fondazione Giordano Dell'Amore Impact Investing) with Meteorological Observatory Milan Cathedral, Foundation of the Chamber of Architects, Foundation of the Chamber of Engineers, FLA - Lombardy Environmental Foundation | Enhancing local climate understanding. Integrating climate considerations into urban planning. Building capacity among professionals and aligning urban development with climate goals. | Improved urban liveability: Increased capacity for climate-responsive decision-making in urban development processes.  |
 |  "Bella Dentro" | The project aims to enhance the value of products typically overlooked in conventional markets due to aesthetic flaws. It establishes an ethical and sustainable distribution network, selling such goods fresh or repurposing them as raw materials for consumption. Surplus items are transformed into juices, jams, and dried goods by social cooperatives, benefiting | Systemic barrier addressed_deep-rooted, individual behaviours that hamper the climate-neutrality pathway: Stigma associated with imperfect products. Exclusion of high-quality but aesthetically imperfect fruit and vegetables from traditional distribution channels. Inadequate Compensation for Producers. | Fondazione Cariplo (Fondazione Giordano Dell'Amore Impact Investing) with "L'Officina" and "La Fraternità" social cooperatives. | Reducing food waste, promoting sustainable consumption, and supporting local farmers, thus minimizing carbon emissions associated with food production and distribution. | Enhanced employment: Employment opportunities and training are provided for vulnerable individuals, and a market for high-quality agricultural products that would otherwise go to waste is created,  |
@@ -2626,11 +2624,8 @@ ACTION PLAN
 |  “Metropoli Agricole” Annual Conference | Since 2021, the Cariplo Foundation has been organizing a conference focused on agriculture and the climate crisis. The conference aims to present and discuss solutions and approaches towards sustainability for Milanese agriculture. | Systemic barrier addressed_Lack of a unified understanding and common vision on climate-neutrality: Lack of comprehensive understanding and acknowledgment of the relationship between agriculture and the climate crisis. | Fondazione Cariplo with academic partners. | The conference serves as a platform for knowledge exchange, policy advocacy, and capacity building. | Fostered innovation: facilitated collaboration and partnership among various stakeholders in the agricultural sector (experts, policymakers, farmers, researchers, and other key actors).  |
 |  Cooperative Urban Gardens | A green area designed to promote the cultivation of vegetables, herbs, and flowers, and foster knowledge sharing and social interaction among neighbourhood residents. | Systemic barrier addressed_Lack of a unified understanding and common vision on climate-neutrality: Limited access to green areas, social isolation, lack of gardening opportunities. | Cooperativa Abitare with Politecnico di Milano, cooperative members, citizens. | Promoting knowledge sharing, healthy lifestyles, and environmental awareness. | Improved equity and social inclusion: Community cohesion and social bonds enhanced. Increased food security through access to fresh products. Improved mental and physical health for participants.  |
 |  “Action for change” Programme (by 2025) | Promoting the adoption of best practices such as energy efficiency, proper waste management, | Systemic barrier addressed_Lack of a unified understanding and common vision on climate-neutrality: | Cooperativa Abitare | Educating residents through awareness campaigns. | Improved urban liveability: Improved community well-being, and healthier  |
-6
-
 |   | solidarity purchasing groups among families living in owned buildings. | Lack of awareness, energy inefficiency, inadequate waste management, limited access to sustainable products, and insufficient collaboration in biodiversity conservation efforts. |  | Supporting biodiversity by partnering with nearby entities (e.g., Parco Nord). | living environment. Increased environmental awareness.
-
-**Augmented prosperity:** Enhanced local economy and economic savings for families.  |
+| **Augmented prosperity:** Enhanced local economy and economic savings for families.  |
 | --- | --- | --- | --- | --- | --- |
 Comune di Milano
 
@@ -3479,7 +3474,7 @@ I seguenti soggetti, condividendo l'ambizione e gli impegni congiunti così come
 |  N° | Nome organizzazione | Ambito di azione | Forma giuridica | Nome del Responsabile (firmatario) | Posizione  |
 | --- | --- | --- | --- | --- | --- |
 |  1 | A2A S.p.A. | Energia, Ambiente, Infrastrutture
-Smart Infrastructures | Società per Azioni controllata dal Comune di Milano (e altri Comuni) | Renato Mazzoncini | Amministratore Delegato e Direttore Generale  |
+| Smart Infrastructures | Società per Azioni controllata dal Comune di Milano (e altri Comuni) | Renato Mazzoncini | Amministratore Delegato e Direttore Generale  |
 |  2 | ATM S.p.A. (Azienda Trasporti Milanesi) | Trasporti/infrastrutture | Società per Azioni partecipata dal Comune di Milano | Paolo Marchetti | Direttore Strategia e Sviluppo Business  |
 |  3 | Milano Ristorazione S.p.A. | Servizi di ristorazione collettiva | Società per Azioni partecipata dal Comune di Milano | Davide Vincenzo Dell'Acqua | Presidente  |
 |  4 | MM S.p.A. | Engineering, Servizio Idrico Integrato; Edilizia pubblica, Scuole. | Società per Azioni partecipata dal Comune di Milano | Francesco Mascolo | Amministratore Delegato  |
@@ -3612,7 +3607,7 @@ C
 |   |  Outcome (according to module B-1.1) | District heating is improved, by integrating heat storages, renewable energy and waste heat recovery.  |
 |  Implementation | Responsible bodies/person for implementation |   |
 |   |  Action scale & addressed entities | Site level
-Area underlain by West Milan District Heating System, Centrale Famagosta, Centrale Pompeo Leoni  |
+| Area underlain by West Milan District Heating System, Centrale Famagosta, Centrale Pompeo Leoni  |
 |   |  Start-end year date | 2024-2026  |
 |   |  Involved stakeholders | A2A, Milan municipality  |
 |   |  Comments on implementation – |   |
@@ -3766,12 +3761,12 @@ C
 |   |  Action type | intervention on its own assets  |
 |   |  Action description | District heating to be used by Politecnico Bovisa La Masa campus  |
 |  Reference to impact pathway | Field of action | Energy systems
-Production from renewable sources  |
+| Production from renewable sources  |
 |   |  Systemic lever | Technical/ Infrastructural  |
 |   |  Outcome (according to module B-1.1) | Most of the private building stock is renovated, respecting high energy performance standards and covering energy demand with renewable energy and waste heat  |
 |  Implementation | Responsible bodies/person |   |
 |   |  Action scale & addressed entities | Site level
-District – University campus  |
+| District – University campus  |
 |   |  Start-end year date | 2025-2027  |
 |   |  Involved stakeholders | A2A, Politecnico di Milano  |
 |   |  Comments on implementation |   |
@@ -3911,7 +3906,7 @@ C
 |   |  Outcome (according to module B-1.1) |   |
 |  Implementation | Responsible bodies/person for implementation |   |
 |   |  Action scale & addressed entities | Site-area
-Urban  |
+| Urban  |
 |   |  Start-end year date | 2024-2026  |
 |   |  Involved stakeholders | Gruppo A2A, citizens, Milan municipality, ARERA  |
 |   |  Comments on implementation – | Possible barriers could be determined by Milan municipality's denial of the use of the areas of decommissioned newsstands  |
@@ -4029,7 +4024,7 @@ AP - Annex 1 - Individual actions outline
 |   |  Outcome (according to module B-1.1) | Part of the tertiary sector activities adopt energy efficiency measures (new efficient and smart systems, management measures)  |
 |  Implementation | Responsible bodies/person for implementation |   |
 |   |  Action scale & addressed entities | Site specific
-Plant a.p. Suzzani, via Suzzani 120, Milano  |
+| Plant a.p. Suzzani, via Suzzani 120, Milano  |
 |   |  Start-end year date | 2021-2026  |
 |   |  Involved stakeholders |   |
 |   |  Comments on implementation – |   |
@@ -4057,7 +4052,7 @@ AP - Annex 1 - Individual actions outline
 |   |  Outcome (according to module B-1.1) | Part of the tertiary sector activities adopt energy efficiency measures (new efficient and smart systems, management measures)  |
 |  Implementation | Responsible bodies/person for implementation |   |
 |   |  Action scale & addressed entities | Site specific
-Plant a.p. Assiano, Cimabue, Chiusabella, Linate, Italia, Novara e Martini  |
+| Plant a.p. Assiano, Cimabue, Chiusabella, Linate, Italia, Novara e Martini  |
 |   |  Start-end year date | 2021-2024  |
 |   |  Involved stakeholders |   |
 |   |  Comments on implementation – |   |
@@ -4085,7 +4080,7 @@ AP - Annex 1 - Individual actions outline
 |   |  Outcome (according to module B-1.1) | Part of the tertiary sector activities adopt energy efficiency measures (new efficient and smart systems, management measures)  |
 |  Implementation | Responsible bodies/person for implementation |   |
 |   |  Action scale & addressed entities | Site-specific
-Various a.p. plants located over the city of Milan  |
+| Various a.p. plants located over the city of Milan  |
 |   |  Start-end year date | 2022-2024  |
 |   |  Involved stakeholders |   |
 |   |  Comments on implementation – |   |
@@ -4113,7 +4108,7 @@ AP - Annex 1 - Individual actions outline
 |   |  Outcome (according to module B-1.1) | Part of the tertiary sector activities adopt energy efficiency measures (new efficient and smart systems, management measures)  |
 |  Implementation | Responsible bodies/person for implementation |   |
 |   |  Action scale & addressed entities | Site-specific
-Plant a.p. Linate, delle Rimembranze street snc, Peschiera Borromeo  |
+| Plant a.p. Linate, delle Rimembranze street snc, Peschiera Borromeo  |
 |   |  Start-end year date | 2019-2023  |
 |   |  Involved stakeholders |   |
 |   |  Comments on implementation – |   |
@@ -4141,7 +4136,7 @@ AP - Annex 1 - Individual actions outline
 |   |  Outcome (according to module B-1.1) | Part of the tertiary sector activities adopt energy efficiency measures (new efficient and smart systems, management measures)  |
 |  Implementation | Responsible bodies/person for implementation |   |
 |   |  Action scale & addressed entities | Site-specific
-Various a.p. plants located over the city of Milan  |
+| Various a.p. plants located over the city of Milan  |
 |   |  Start-end year date | 2022-2024  |
 |   |  Involved stakeholders |   |
 |   |  Comments on implementation – |   |
@@ -4165,12 +4160,12 @@ AP - Annex 1 - Individual actions outline
 |   |  Action type | interventions on its own asset  |
 |   |  Action description | Pilot project of heat recovery in Salemi waterworks station: heat pumps associated to a CHP  |
 |  Reference to impact pathway | Field of action | Energy system
-Production from renewable sources (photovoltaics, etc.)  |
+| Production from renewable sources (photovoltaics, etc.)  |
 |   |  Systemic lever | Technical/ Infrastructural  |
 |   |  Outcome (according to module B-1.1) | Systemic priority 1  |
 |  Implementation | Responsible bodies/person for implementation |   |
 |   |  Action scale & addressed entities | Site-level
-SALEMI Drinking Water Plant - District Heating Network Comasina Neighborhood.  |
+| SALEMI Drinking Water Plant - District Heating Network Comasina Neighborhood.  |
 |   |  Start-end year date | 2019-2024  |
 |   |  Involved stakeholders | MM - A2a Agreement  |
 |   |  Comments on implementation – |   |
@@ -4194,12 +4189,12 @@ AP - Annex 1 - Individual actions outline
 |   |  Action type | interventions on its own asset  |
 |   |  Action description | Pilot project of heat recovery from the sewage systems through heat pumps, used for public residential buildings'heating  |
 |  Reference to impact pathway | Field of action | Energy system
-Production from renewable sources (photovoltaics, etc.)  |
+| Production from renewable sources (photovoltaics, etc.)  |
 |   |  Systemic lever | Technical/ Infrastructural  |
 |   |  Outcome (according to module B-1.1) | Systemic Priority 1  |
 |  Implementation | Responsible bodies/person for implementation |   |
 |   |  Action scale & addressed entities | Site-level
-Sewerage collector and associated building on Dudovich Street.  |
+| Sewerage collector and associated building on Dudovich Street.  |
 |   |  Start-end year date |   |
 |   |  Involved stakeholders |   |
 |   |  Comments on implementation – |   |
@@ -4249,7 +4244,7 @@ AP - Annex 1 - Individual actions outline
 |   |  Outcome (according to module B-1.1) | More than half of domestic electricity consumption and tertiary and industrial consumption is covered with renewable sources.  |
 |  Implementation | Responsible bodies/person for implementation |   |
 |   |  Action scale & addressed entities | Site area
-Wastewater treatment plant of Milano Nosedo  |
+| Wastewater treatment plant of Milano Nosedo  |
 |   |  Start-end year date | 2024-2025  |
 |   |  Involved stakeholders |   |
 |   |  Comments on implementation – |   |
@@ -4365,7 +4360,7 @@ Management  |
 |   |  Outcome (according to module B-1.1) | Systemic Priority 1  |
 |  Implementation | Responsible bodies/person for implementation |   |
 |   |  Action scale & addressed entities | Site specific
-Milano Linate airport  |
+| Milano Linate airport  |
 |   |  Start-end year date | 2024-2030  |
 |   |  Involved stakeholders |   |
 |   |  Comments on implementation – |   |
@@ -4418,17 +4413,17 @@ Climate-Neutrality AP - Annex 1 - Individual actions outline
 |   |  Action type | interventions on its own asset  |
 |   |  Action description | Retrofit of thermo-mechanical and electrical systems to improve building energy performance (implementation of advanced BMS, replacement of chiller units, LEDs). Building renovation with interventions on envelope and windows and doors efficiency. Upgrade of the heating and cooling system of the Bovisa La Masa campus with central heat pump and district heating/cooling.  |
 |  Reference to impact pathway | Field of action | Energy system
-Building envelope (wall insulation, roofs, windows)  |
+| Building envelope (wall insulation, roofs, windows)  |
 |   |  Systemic lever | Technical/ Infrastructural
-Management  |
+| Management  |
 |   |  Outcome (according to module B-1.1) | Systemic Priority 1  |
 |  Implementation | Responsible bodies/person for implementation |   |
 |   |  Action scale & addressed entities | Site-specific
-Città Studi, Bovisa e Dergano district  |
+| Città Studi, Bovisa e Dergano district  |
 |   |  Start-end year date | 2024-2026  |
 |   |  Involved stakeholders | Private contractors related to the work performed, A2A heat and services  |
 |   |  Comments on implementation – | Barriers: coordination among different actors and bureaucrat iters, approval and control processes in public agencies; need for adequate and in-depth technical and legislative knowledge.
-Enabling factors: availability of public financing funds.  |
+| Enabling factors: availability of public financing funds.  |
 |  Impact & cost | Generated renewable energy (if applicable) |   |
 |   |  Removed/substituted energy, volume, or fuel type | Partially natural gas  |
 |   |  GHG emissions reduction estimate (total) | 2’592 t CO_{2eq}/year  |
@@ -4449,18 +4444,18 @@ AP - Annex 1 - Individual actions outline
 |   |  Action type | interventions on its own asset  |
 |   |  Action description | New photovoltaic plants, creation of Renewable Energy Communities and purchase of renewable electricity through a PPA  |
 |  Reference to impact pathway | Field of action | Energy system
-Production from renewable sources (photovoltaics, etc.)  |
+| Production from renewable sources (photovoltaics, etc.)  |
 |   |  Systemic lever | Technical/ Infrastructural
 Financial
 Management  |
 |   |  Outcome (according to module B-1.1) | Systemic Priority 1  |
 |  Implementation | Responsible bodies/person for implementation |   |
 |   |  Action scale & addressed entities | Site-specific
-Città Studi, Bovisa e Dergano district  |
+| Città Studi, Bovisa e Dergano district  |
 |   |  Start-end year date | 2022 - 2026  |
 |   |  Involved stakeholders | Milan municipality, private companies related to renewable installation and renewable energy supply, citizen and public agencies  |
 |   |  Comments on implementation – | Barriers: need for adequate and in-depth technical and legislative knowledge; inadequacy of the national market environment for entering into PPAs; coordination among different actors and onerous internal bureaucratic, approval and control processes in public entities.
-Enabling factors: stakeholders' perception of environmental and social responsibility; availability of own financing funds  |
+| Enabling factors: stakeholders' perception of environmental and social responsibility; availability of own financing funds  |
 |  Impact & cost | Generated renewable energy (if applicable) | 4,5 GWh/year  |
 |   |  Removed/substituted energy, volume, or fuel type |   |
 |   |  GHG emissions reduction estimate (total) | 2'347 t CO₂ eq/year  |
@@ -4514,12 +4509,12 @@ Climate-Neutrality AP - Annex 1 - Individual actions outline
 |   |  Action type | Interventions on its own asset  |
 |   |  Action description | Reorganization of campus, with new building in ex Garibaldi Barracks, re-functionalization of a portion of the building already in the availability of the university, general efficiency and concentration of activities in close locations (with progressive abandonment of "suburban" spaces)  |
 |  Reference to impact pathway | Field of action | Energy system
-Building envelope (wall insulation, roofs, windows)  |
+| Building envelope (wall insulation, roofs, windows)  |
 |   |  Systemic lever | Technical/ Infrastructural  |
 |   |  Outcome (according to module B-1.1) | Systemic Priority 1  |
 |  Implementation | Responsible bodies/person for implementation |   |
 |   |  Action scale & addressed entities | Site-specific
-Complex bordered by Sant'Ambrogio square, S.Valeria street, S. Agnese street, Calderini Gardens and third-party property on the side of Nirone street  |
+| Complex bordered by Sant'Ambrogio square, S.Valeria street, S. Agnese street, Calderini Gardens and third-party property on the side of Nirone street  |
 |   |  Start-end year date | 2021-2030  |
 |   |  Involved stakeholders |   |
 |   |  Comments on implementation – | The timing of the implementation of the A.T.S.I.S. and consequently of the start of Phase 2 of the Garibaldi Barracks renovation and re-functionalization interventions is conditioned by procedures of the Public Administration in relation also to the interventions at the Montello and Santa Barbara Barracks.  |
@@ -4551,7 +4546,7 @@ Production from renewable sources (photovoltaics, etc.)  |
 |   |  Outcome (according to module B-1.1) |   |
 |  Implementation | Responsible bodies/person for implementation |   |
 |   |  Action scale & addressed entities | Site-area
-Area Expo 2015  |
+| Area Expo 2015  |
 |   |  Start-end year date | 2024-2028  |
 |   |  Involved stakeholders |   |
 |   |  Comments on implementation – |   |
@@ -4603,7 +4598,7 @@ C
 |   |  Action number | UNIMIEB3  |
 |   |  Action type | Interventions on its own asset  |
 |   |  Action description | New Urban Campus to be located in the building compendium at 10 Celoria street.
-Thus, the project includes on the one hand the renovation of the historic buildings and on the other hand the creation of new buildings  |
+| Thus, the project includes on the one hand the renovation of the historic buildings and on the other hand the creation of new buildings  |
 |  Reference to impact pathway | Field of action | Energy system
 Building envelope (wall insulation, roofs, windows)
 Production from renewable sources (photovoltaics, etc.)  |
@@ -4611,7 +4606,7 @@ Production from renewable sources (photovoltaics, etc.)  |
 |   |  Outcome (according to module B-1.1) | Systemic Priority 1  |
 |  Implementation | Responsible bodies/person for implementation |   |
 |   |  Action scale & addressed entities | Site area
-Building complex at Celoria street 10 (Città Studi)  |
+| Building complex at Celoria street 10 (Città Studi)  |
 |   |  Start-end year date | 2026  |
 |   |  Involved stakeholders |   |
 |   |  Comments on implementation – |   |
@@ -4707,13 +4702,13 @@ AP - Annex 1 - Individual actions outline
 |   |  Action number | UNIMIBEB3  |
 |   |  Action type | Intervention on its own asset  |
 |   |  Action description | Extraordinary maintenance of HVAC plants and partial retrofitting of a building, with new laboratories Sustainable Mobility Interventions.
-• construction of a Velostation in the first basement for 68 bicycle spaces on two levels equipped with ancillary services: changing rooms, bathrooms with showers and equipped area for bicycle repair  |
+| • construction of a Velostation in the first basement for 68 bicycle spaces on two levels equipped with ancillary services: changing rooms, bathrooms with showers and equipped area for bicycle repair  |
 |  Reference to impact pathway | Field of action | Energy system  |
 |   |  Systemic lever | Technical/ Infrastructural  |
 |   |  Outcome (according to module B-1.1) | Systemic Priority 1  |
 |  Implementation | Responsible bodies/person for implementation |   |
 |   |  Action scale & addressed entities | Building:
-• Building U9- University of Milan – Bicocca  |
+| • Building U9- University of Milan – Bicocca  |
 |   |  Start-end year date | 10/03/2023-2/2025  |
 |   |  Involved stakeholders |   |
 |   |  Comments on implementation – |   |
@@ -4735,7 +4730,7 @@ AP - Annex 1 - Individual actions outline
 |  Action outline | Action name | new University Building  |
 |   |  Action number | UNIMIBEB4  |
 |   |  Action type | Urban project
-Intervention on its own asset  |
+| Intervention on its own asset  |
 |   |  Action description | New Building including classrooms, offices, residence and an extend green area.
 U10 LOGOS - New building intended for teaching and departmental offices and university residence (104 beds) Energy class A, trend toward meeting nZEB requirements; photovoltaic panels
 Realization of V19 URBAN WOODS.
@@ -4764,7 +4759,7 @@ Climate-Neutrality AP - Annex 1 - Individual actions outline
 |  Action outline | Action name | Bicocca Stadium: new University Sport and Leisure Center, with annexed sport medical center  |
 |   |  Action number | UNIMIBEB5  |
 |   |  Action type | Urban project
-Intervention on its own asset  |
+| Intervention on its own asset  |
 |   |  Action description | regeneration project including a new University Sport and Leisure Center, with annexed sport medical center and a big green area  |
 |  Reference to impact pathway | Field of action | Energy system
 Production from renewable sources (photovoltaics, etc.)
@@ -4774,7 +4769,7 @@ Green infrastructure and Nature Based solutions  |
 |   |  Outcome (according to module B-1.1) | Systemic Priority 1  |
 |  Implementation | Responsible bodies/person for implementation |   |
 |   |  Action scale & addressed entities | Building, site area, green area:
-• Bicocca stadium  |
+| • Bicocca stadium  |
 |   |  Start-end year date | DEFINITIVE Project stage, expected completion 2027  |
 |   |  Involved stakeholders |   |
 |   |  Comments on implementation – |   |
@@ -4805,7 +4800,7 @@ C
 • plants renewal
 • external wall insulation, new windows and doors  |
 |  Reference to impact pathway | Field of action | Energy system
-Building envelope (wall insulation, roofs, windows)  |
+| Building envelope (wall insulation, roofs, windows)  |
 |   |  Systemic lever | Technical/ Infrastructural  |
 |   |  Outcome (according to module B-1.1) | Systemic Priority 1  |
 |  Implementation | Responsible bodies/person for implementation |   |
@@ -4872,7 +4867,7 @@ AP - Annex 1 - Individual actions outline
 |  Action outline | Action name | MUSA: - multilayered urban sustainability action: research project  |
 |   |  Action number | UNIMIBEB8  |
 |   |  Action type | Urban project
-Intervention on its own asset  |
+| Intervention on its own asset  |
 |   |  Action description | Research project involving universities, foundations, and companies. Fields of research involving Bicocca University: energy systems (including assessing the exploitation potential of groundwater source for building heating and cooling), NBS, circular economy and smart mobility  |
 |  Reference to impact pathway | Field of action | Energy system
 Production from renewable sources (photovoltaics, etc.)
@@ -4888,7 +4883,7 @@ Other (specify): Green infrastructure and NBS, energy  |
 |   |  Outcome (according to module B-1.1) |   |
 |  Implementation | Responsible bodies/person for implementation |   |
 |   |  Action scale & addressed entities | Metropolitan City of Milan, Milan Metropolitan Area, scalable nationally and internationally
-Area affected by Spoke 1 - Urban Regeneration.  |
+| Area affected by Spoke 1 - Urban Regeneration.  |
 |   |  Start-end year date | 30/11/2024 – 31/12/2027  |
 |   |  Involved stakeholders | • University of Milan,
 • Bocconi University,
@@ -4966,7 +4961,7 @@ Green infrastructure and Nature Based Solutions  |
 |  Implementation | Responsible bodies/person for implementation |   |
 |   |  Action scale & addressed entities |   |
 |   |  Start-end year date | 2022-2025 first functional block (Olympic Village)
-other blocks  |
+| other blocks  |
 |   |  Involved stakeholders |   |
 |   |  Comments on implementation – |   |
 |  Impact & cost | Generated renewable energy (if applicable) | 3.370 MWh/year  |
@@ -5074,7 +5069,7 @@ Management (GREEN LEASES)  |
 |   |  Outcome (according to module B-1.1) | Systemic priorities 1,2 and 4  |
 |  Implementation | Responsible bodies/person for implementation |   |
 |   |  Action scale & addressed entities | Site-area
-Building within the Milan S. Giulia district  |
+| Building within the Milan S. Giulia district  |
 |   |  Start-end year date | 2025-2027  |
 |   |  Involved stakeholders | The stakeholders involved during the development of the master plan, in addition to all those approached in the PAUR procedure of Variation to the Integrated Intervention Plan (IIP), are as follows:
 • Existing tenants in the Spark Business District area;
@@ -5121,10 +5116,10 @@ Management (Green Leases)  |
 |   |  Outcome (according to module B-1.1) | Systemic Priority 1  |
 |  Implementation | Responsible bodies/person for implementation |   |
 |   |  Action scale & addressed entities | Site-area
-Decumano street 00, 20157, Milan (MI), Italy  |
+| Decumano street 00, 20157, Milan (MI), Italy  |
 |   |  Start-end year date | 2024-2030  |
 |   |  Involved stakeholders | Example of stakeholders involved are:
-Arexpo, research centers and R&D departments, large companies and startups. All the established entities find strength and dynamism in the opportunities for synergy and the presence of public interest excellence in Life Science: the Human Technopole institute, the IRCCS Galeazzi health hub, which together with Fondazione Triulza and the University of Milan Science Campus make up the original core of the ecosystem.  |
+| Arexpo, research centers and R&D departments, large companies and startups. All the established entities find strength and dynamism in the opportunities for synergy and the presence of public interest excellence in Life Science: the Human Technopole institute, the IRCCS Galeazzi health hub, which together with Fondazione Triulza and the University of Milan Science Campus make up the original core of the ecosystem.  |
 |   |  Comments on implementation – | However, it was found during development that not all infrastructure networks are sized to mitigate climate hazards impacting the city of Milan (heat waves and water bombs)  |
 |  Impact & cost | Generated renewable energy (if applicable) | 85,82 Mwh/year  |
 |   |  Removed/substituted energy, volume, or fuel type |   |
@@ -5165,10 +5160,10 @@ Management  |
 |   |  Outcome (according to module B-1.1) | Systemic priorities 1, 2 and 3  |
 |  Implementation | Responsible bodies/person for implementation |   |
 |   |  Action scale & addressed entities | Site-area
-Cristina Belgioioso street, Milan, Italy, 20157  |
+| Cristina Belgioioso street, Milan, Italy, 20157  |
 |   |  Start-end year date | 2024-2028  |
 |   |  Involved stakeholders | Example of stakeholders involved are:
-Arexpo, research centers and R&D departments, large companies and startups. All the established entities find strength and dynamism in the opportunities for synergy and the presence of public interest excellence in Life Science: the Human Technopole institute, the IRCCS Galeazzi health hub, which together with Fondazione Triulza and the University of Milan Science Campus make up the original core of the ecosystem.  |
+| Arexpo, research centers and R&D departments, large companies and startups. All the established entities find strength and dynamism in the opportunities for synergy and the presence of public interest excellence in Life Science: the Human Technopole institute, the IRCCS Galeazzi health hub, which together with Fondazione Triulza and the University of Milan Science Campus make up the original core of the ecosystem.  |
 |   | Comments on implementation – | Among MIND's priorities there is resilience.
 The design states that the plant is sized so that the summer temperature is 3° degrees higher than the legal limit. All stormwater is conveyed to appropriately sized flyaway tanks.
 Rainwater recovery is planned.  |
@@ -5213,7 +5208,7 @@ Management (Green Leases)  |
 |   |  Action scale & addressed entities | Site-area: Achille Grandi street snc, 20017, Rho (MI), Italy  |
 |   |  Start-end year date | 2024-2030  |
 |   |  Involved stakeholders | Example of stakeholders involved are:
-Arexpo, research centers and R&D departments, large companies and startups. All the established entities find strength and dynamism in the opportunities for synergy and the presence of public interest excellence in Life Science: the Human Technopole institute, the IRCCS Galeazzi health hub, which together with Fondazione Triulza and the University of Milan Science Campus make up the original core of the ecosystem.  |
+| Arexpo, research centers and R&D departments, large companies and startups. All the established entities find strength and dynamism in the opportunities for synergy and the presence of public interest excellence in Life Science: the Human Technopole institute, the IRCCS Galeazzi health hub, which together with Fondazione Triulza and the University of Milan Science Campus make up the original core of the ecosystem.  |
 |   | Comments on implementation – | Among MIND’s priorities there’s resilience. However, during development it was found that not all infrastructure networks are sized to mitigate the climate hazards impacting Milan (heat waves and water bombs)  |
 |  Impact & cost | Generated renewable energy (if applicable) | 69,88 Mwh/year  |
 |   |  Removed/substituted energy, volume, or fuel type |   |
@@ -5242,7 +5237,7 @@ C
 |   |  Action number | NhoodEB1  |
 |   |  Action type | Urban project  |
 |   |  Action description | MasterPlan Loreto Urban Regeneration Project
-To high-efficiency passive morphological and technological solutions, we add the contribution of innovative and green plant equipment, including: geothermal energy associated with heat pumps. The mechanical ventilation system is equipped with heat recovery units. Freecooling is also provided; - large areas of photovoltaics integrated BMS system with sensors and Artificial Intelligence for predictive and adaptive management of systems.  |
+| To high-efficiency passive morphological and technological solutions, we add the contribution of innovative and green plant equipment, including: geothermal energy associated with heat pumps. The mechanical ventilation system is equipped with heat recovery units. Freecooling is also provided; - large areas of photovoltaics integrated BMS system with sensors and Artificial Intelligence for predictive and adaptive management of systems.  |
 |  Reference to impact pathway | Field of action | Energy system
 Building envelope (wall insulation, roofs, windows)
 Production from renewable sources (photovoltaics, etc.)
@@ -5256,7 +5251,7 @@ Management  |
 |   |  Outcome (according to module B-1.1) |   |
 |  Implementation | Responsible bodies/person for implementation |   |
 |   |  Action scale & addressed entities | Site-area
-Loreto square  |
+| Loreto square  |
 |   |  Start-end year date | 2024-2026  |
 |   |  Involved stakeholders | Foresta MI
 Siemens
@@ -5315,7 +5310,7 @@ C
 | --- | --- | --- |
 |   | energy, volume, or fuel type |   |
 |   |  GHG emissions reduction estimate (total) | 545 t CO_{2 eq}/year (scope 1 and 2)
-'152 t CO_{2 eq}/year (scope 1,2 and 3)  |
+| '152 t CO_{2 eq}/year (scope 1,2 and 3)  |
 |   |  GHG emissions compensated | 640 trees  |
 |   |  Total costs | 110 M €  |
 Comune di Milano
@@ -5354,7 +5349,7 @@ other (creation of Social Housing)  |
 |  Impact & cost | Generated renewable energy (if applicable) | 922,5 MWh/year  |
 |   |  Removed/substituted energy, volume, or fuel type |   |
 |   |  GHG emissions reduction estimate (total) | 298 t CO₂eq/year (scope 1 and 2)
-,7 (scope 1,2 and 3)  |
+| ,7 (scope 1,2 and 3)  |
 |   |  GHG emissions compensated |   |
 |   |  Total costs | 65,7 M €  |
 Comune di Milano
@@ -5402,7 +5397,7 @@ Climate-Neutrality AP - Annex 1 - Individual actions outline
 |   | Removed/substituted energy, volume, or fuel type |   |
 | --- | --- | --- |
 |   | GHG emissions reduction estimate (total) | 1'433 t CO_{2eq}/year (scope 1 and 2)
-'858 t CO_{2eq}/year (scope 1,2 and 3)  |
+| '858 t CO_{2eq}/year (scope 1,2 and 3)  |
 |   | GHG emissions compensated |   |
 |   | Total costs | 371 M €  |
 9
@@ -5422,7 +5417,7 @@ ABITAEB1
 Building envelope (wall insulation, roofs, windows)
 Production from renewable sources (photovoltaics, etc.)  |
 |   |  Systemic lever | Technical/ Infrastructural
-Behavioral  |
+| Behavioral  |
 |   |  Outcome (according to module B-1.1) | Systemic priority 1  |
 |  Implementation | Responsible bodies/person for implementation |   |
 |   |  Action scale & addressed entities |   |
@@ -5454,7 +5449,7 @@ Production from renewable sources (photovoltaics, etc.)  |
 |   |  Outcome (according to module B-1.1) | Systemic priority 1  |
 |  Implementation | Responsible bodies/person for implementation | Arch. De Gioia  |
 |   |  Action scale & addressed entities | Building
-Trenno street, 41, Milan  |
+| Trenno street, 41, Milan  |
 |   |  Start-end year date | Intervention started and finished in 2023, new energy systems are currently being setup.  |
 |   |  Involved stakeholders |   |
 |   |  Comments on implementation – |   |
@@ -5481,7 +5476,7 @@ DELTAEB2
 |   |  Outcome (according to module B-1.1) | Systemic priority 1  |
 |  Implementation | Responsible bodies/person for implementation |   |
 |   |  Action scale & addressed entities | Building
-• Trenno street, 15, Milan  |
+| • Trenno street, 15, Milan  |
 |   |  Start-end year date | Intervention started in 2021 and finished in 2023  |
 |   |  Involved stakeholders |   |
 |   |  Comments on implementation – |   |
@@ -5510,7 +5505,7 @@ Production from renewable sources (photovoltaics, etc.)  |
 |   |  Outcome (according to module B-1.1) | Systemic priority 1  |
 |  Implementation | Responsible bodies/person for implementation |   |
 |   |  Action scale & addressed entities | Building
-• Carlo Feltrinelli street, 13, Milan  |
+| • Carlo Feltrinelli street, 13, Milan  |
 |   |  Start-end year date | Intervention finished in 2022  |
 |   |  Involved stakeholders |   |
 |   |  Comments on implementation – |   |
@@ -5594,10 +5589,10 @@ C
 |   |  Outcome (according to module B-1.1) | Systemic priority 2  |
 |  Implementation | Responsible bodies/person for implementation |   |
 |   |  Action scale & addressed entities | Site-level
-Intera città  |
+| Intera città  |
 |   |  Start-end year date | From August 2024  |
 |   |  Involved stakeholders | Identification of 4 providers of meal transportation service, through public competition
-Green Router, a consulting society experienced in modeling for environmental impact assessment of freight transportation.  |
+| Green Router, a consulting society experienced in modeling for environmental impact assessment of freight transportation.  |
 |   |  Comments on implementation – | Cost estimation carried out based on the company's acquisition of transportation means. A functional analysis will be carried out to analyze a possible internalization in the costs of the next competition.  |
 |  Impact & cost | Generated renewable energy (if applicable) |   |
 |   |  Removed/substituted energy, volume, or fuel type |   |
@@ -5623,7 +5618,7 @@ AP - Annex 1 - Individual actions outline
 |   |  Outcome (according to module B-1.1) | Systemic Priority 2  |
 |  Implementation | Responsible bodies/person for implementation |   |
 |   |  Action scale & addressed entities | Site-area
-The action covers all areas of the University's population catchment.  |
+| The action covers all areas of the University's population catchment.  |
 |   |  Start-end year date | ... - 2023  |
 |   |  Involved stakeholders | Suppliers of public transport and shared mobility services (presence of specific agreements), associations, institutions of various kinds, private companies for co-organization of initiatives and events  |
 |   |  Comments on implementation – | Need for:
@@ -5656,7 +5651,7 @@ POLIMIMobi2
 |   |  Start-end year date | 2021-2025  |
 |   |  Involved stakeholders | Infrastructure suppliers  |
 |   |  Comments on implementation – | • Need investment with considerable economic impact.
-• Communication and/or awareness raising activities needed to explain parking removal and generally promote behavior change.  |
+| • Communication and/or awareness raising activities needed to explain parking removal and generally promote behavior change.  |
 |  Impact & cost | Generated renewable energy (if applicable) |   |
 |   |  Removed/substituted energy, volume, or fuel type |   |
 |   |  GHG emissions reduction estimate (total) | 229,4 tCO₂₆₀/year  |
@@ -5676,7 +5671,7 @@ Climate-Neutrality AP - Annex 1 - Individual actions outline
 |  Action outline | Action name | Green Wall and urban forestry in TPL facilities  |
 |   |  Action number | ATMGREEN1  |
 |   |  Action type | Urban project
-Intervention on its own asset  |
+| Intervention on its own asset  |
 |   |  Action description | 350 sqm green wall in a bus depot + 450 new trees in another depot  |
 |  Reference to impact pathway | Field of action | Green infrastructure Nature Based Solutions  |
 |   |  Systemic lever | Technical/ Infrastructural Management  |
@@ -5694,7 +5689,7 @@ Residents of Milan Metropolitan City  |
 |   |  Removed/substituted energy, volume, or fuel type |   |
 |   |  GHG emissions reduction estimate (total) | 4 tCO2 eq/year  |
 |   |  GHG emissions compensated | ATM compensatory works (tree planting + green wall): 4 tons of CO2 absorbed per year
-Specifically : green wall: 350 m2 and 430 trees  |
+| Specifically : green wall: 350 m2 and 430 trees  |
 |   |  Total costs | Green Wall: 208'660 €
 Urban forestry: 10'000 €  |
 9
@@ -5715,12 +5710,12 @@ POLIMIGREEN1
 |   |  Action type | interventions on its own asset  |
 |   |  Action description | Depaving and greening on Bovisa Durando Campus - Politecnico  |
 |  Reference to impact pathway | Field of action | Mobility and transportation
-Green infrastructure e Nature Based Solutions  |
+| Green infrastructure e Nature Based Solutions  |
 |   |  Systemic lever | Technical/ Infrastructural  |
 |   |  Outcome (according to module B-1.1) | Milan's green infrastructure is able to captures CO2 and reduces the urban heat island phenomena.  |
 |  Implementation | Responsible bodies/person for implementation |   |
 |   |  Action scale & addressed entities | Site-specific
-Bovisa campus - Durando  |
+| Bovisa campus - Durando  |
 |   |  Start-end year date | 2023-2024  |
 |   |  Involved stakeholders |   |
 |   |  Comments on implementation – |   |
@@ -5742,15 +5737,15 @@ C
 |  Action outline | Action name | Depaving and new Green Areas in the main square within the Campus  |
 |   |  Action number | UNIMIBGREEN1  |
 |   |  Action type | Urban project
-Intervention on its own asset  |
+| Intervention on its own asset  |
 |   |  Action description | Depaving and increase of green areas within the campus, adoption of a water saving irrigation system  |
 |  Reference to impact pathway | Field of action | Green infrastructure and Nature Based solutions  |
 |   |  Systemic lever | Technical/ Infrastructural
-Other (specify): Green infrastructure  |
+| Other (specify): Green infrastructure  |
 |   |  Outcome (according to module B-1.1) | Milan’s green infrastructure is able to captures CO2 and reduces the urban heat island phenomena.  |
 |  Implementation | Responsible bodies/person for implementation | Area Manager INAP UNIMIB: Arch. A. Maggiore  |
 |   |  Action scale & addressed entities | Bicocca district
-• Piazza della Scienza  |
+| • Piazza della Scienza  |
 |   |  Start-end year date | 15/04/2023 – 01/04/2023  |
 |   |  Involved stakeholders |   |
 |   |  Comments on implementation – |   |
@@ -5772,7 +5767,7 @@ C
 |  Action outline | Action name | New greenhouse for biodiversity conservation and study  |
 |   |  Action number | UNIMIBGREEN2  |
 |   |  Action type | Urban project
-Intervention on its own asset  |
+| Intervention on its own asset  |
 |   |  Action description | New greenhouse for biodiversity conservation and study, open to the public, useful also to raise awareness of the importance of biodiversity and NBS  |
 |  Reference to impact pathway | Field of action | Green infrastructure and Nature Based solutions  |
 |   |  Systemic lever | Technical/ Infrastructural
@@ -5781,7 +5776,7 @@ Other (specify): Green infrastructure  |
 |   |  Outcome (according to module B-1.1) | Providing Research Greenhouses, biodiversity infrastructure, tools for teaching and dissemination of research to the public  |
 |  Implementation | Responsible bodies/person for implementation |   |
 |   |  Action scale & addressed entities | Bicocca district, green spaces
-• Greenhouse Bicocca  |
+| • Greenhouse Bicocca  |
 |   |  Start-end year date | 07/2024 – 05/2025  |
 |   |  Involved stakeholders | Municipality of Milan  |
 |   |  Comments on implementation – |   |
@@ -5809,12 +5804,12 @@ AP - Annex 1 - Individual actions outline
 • Carbon Dioxide Storage technology.
 • technologies inherent in the circular economy, with experimentation with recycling processes of the waste product typical of Calcium Looping technology (the so-called purge, consisting of spent "CaO" calcium oxide).  |
 |  Reference to impact pathway | Field of action | Energy system
-Circular economy and waste  |
+| Circular economy and waste  |
 |   |  Systemic lever | Technical/ infrastructural  |
 |   |  Outcome (according to module B-1.1) |   |
 |  Implementation | Responsible bodies/person for implementation |   |
 |   |  Action scale & addressed entities | Site specific
-Waste to energy plant Silla2, Via Lucio Cornelio Silla, 249, 20153 Milano MI  |
+| Waste to energy plant Silla2, Via Lucio Cornelio Silla, 249, 20153 Milano MI  |
 |   |  Start-end year date | 2023-2027  |
 |   |  Involved stakeholders | The project involves 23 partners; the main ones are:
 • Politecnico di Milano;
@@ -5850,12 +5845,12 @@ Climate-Neutrality AP - Annex 1 - Individual actions outline
 |   |  Action type | interventions on its own asset  |
 |   |  Action description | New Nosedo wastewater treatment plant line, with thermal hydrolisis and sludge anaerobic digestion, with biogas recovery and electricity generation  |
 |  Reference to impact pathway | Field of action | Energy system
-Circular economy and waste  |
+| Circular economy and waste  |
 |   |  Systemic lever | Technical/ Infrastructural  |
 |   |  Outcome (according to module B-1.1) | Systemic priority 1  |
 |  Implementation | Responsible bodies/person for implementation |   |
 |   |  Action scale & addressed entities | Site specific
-Wastewater treatment plant of Milano Nosedo  |
+| Wastewater treatment plant of Milano Nosedo  |
 |   |  Start-end year date | 2024-2026  |
 |   |  Involved stakeholders |   |
 |   |  Comments on implementation – |   |
@@ -5883,7 +5878,7 @@ Circular economy and waste  |
 |   |  Outcome (according to module B-1.1) | Systemic priority 1  |
 |  Implementation | Responsible bodies/person for implementation |   |
 |   |  Action scale & addressed entities | Site area
-wastewater treatment plant Milan S.Rocco  |
+| wastewater treatment plant Milan S.Rocco  |
 |   |  Start-end year date | 2027-2029  |
 |   |  Involved stakeholders |   |
 |   |  Comments on implementation – |   |
@@ -5909,12 +5904,12 @@ C
 |   |  Action type | interventions on its own asset  |
 |   |  Action description | new low temperature sludge drying system (based on heat recovery from the sludge combustion)  |
 |  Reference to impact pathway | Field of action | Energy system
-Circular economy and waste  |
+| Circular economy and waste  |
 |   |  Systemic lever | Technical/ Infrastructural  |
 |   |  Outcome (according to module B-1.1) | Systemic priority 1  |
 |  Implementation | Responsible bodies/person for implementation |   |
 |   |  Action scale & addressed entities | Site specific
-wastewater treatment plant Milan S.Rocco  |
+| wastewater treatment plant Milan S.Rocco  |
 |   |  Start-end year date | 2025-2026  |
 |   |  Involved stakeholders |   |
 |   |  Comments on implementation – |   |
@@ -5940,12 +5935,12 @@ C
 |   |  Action type | interventions on its own asset  |
 |   |  Action description | pilot sludge combustion system at S.Rocco, with heat recovery (for sludge drying) and potential matter recovery (e.g. phosphorus recovery from sewage ash)  |
 |  Reference to impact pathway | Field of action | Energy system
-Circular economy and waste  |
+| Circular economy and waste  |
 |   |  Systemic lever | Technical/ Infrastructural  |
 |   |  Outcome (according to module B-1.1) | Systemic priority 1  |
 |  Implementation | Responsible bodies/person for implementation |   |
 |   |  Action scale & addressed entities | Site specific
-wastewater treatment plant Milan S.Rocco  |
+| wastewater treatment plant Milan S.Rocco  |
 |   |  Start-end year date |   |
 |   |  Involved stakeholders |   |
 |   |  Comments on implementation – |   |
@@ -6227,11 +6222,11 @@ Progetto 1: Hercules, cattura CO2 da fumi termovalorizzatore tramite Clacium Loo
 | --- | --- | --- |
 |   |  Referente | Adriano Carrara, R&D Progetti Filiera CCUS – A2A S.p.A./A2A Ambiente S.p.A.  |
 |   |  Categoria di progetto | ☐ progetto urbano
-☑ interventi relativi a propri asset e proprie attività  |
+| ☑ interventi relativi a propri asset e proprie attività  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | Impianto  |
+| Edificio, quartiere, altro | Impianto  |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Termovalorizzatore Silla2, Via Lucio Cornelio Silla, 249, 20153 Milano MI  |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Termovalorizzatore Silla2, Via Lucio Cornelio Silla, 249, 20153 Milano MI  |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (as es. se si tratta di un progetto integrato). | ☑ Sistemi energetici
 ☐ Involucro edilizio (cappotto, coperture, serramenti)
@@ -6247,19 +6242,15 @@ La scelta può essere multipla | ☑ Tecnologico/infrastrutturale
 ☐ Comportamentale
 ☐ Altro (specificare)  |
 |   |  Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, | Progetto di ricerca, finanziato dalla Commissione Europea (n° progetto 101096691) nell'ambito del programma Horizon-CL5-2022-D3-01, di natura sperimentale con l'obiettivo di testare e sviluppare
-• una nuova tecnologia, denominata Calcium Looping, per la cattura della CO2 contenuta nei fumi, prodotti dalla combustione dei  |
-
-8
-9
-
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, | Progetto di ricerca, finanziato dalla Commissione Europea (n° progetto 101096691) nell'ambito del programma Horizon-CL5-2022-D3-01, di natura sperimentale con l'obiettivo di testare e sviluppare |
+| • una nuova tecnologia, denominata Calcium Looping, per la cattura della CO2 contenuta nei fumi, prodotti dalla combustione dei  |
 |   | infrastrutture per la mobilità). | rifiuti da impianti di Termovalorizzazione;
 • tecnologie di riutilizzo della CO_{2} catturata, tra cui processi di mineralizzazione, che saranno testati presso altre aziende nazionali ed internazionali, coinvolte nel progetto;
 • la tecnologia dello Storage dell'anidride carbonica, tramite l'invio di parte della CO_{2} catturata allo "CCS Ravenna Hub" dell'ENI;
 • tecnologie inerenti all'economia circolare, con sperimentazione, presso siti di altri partner del progetto, dei processi di riciclo del prodotto di scarto tipico della tecnologia del Calcium Looping (il così detto purge, costituito da ossido di calcio "CaO" esausto).  |
 | --- | --- | --- |
 |   | Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Progetto di durata quinquennale, dal 2023 al 2027  |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Progetto di durata quinquennale, dal 2023 al 2027  |
 |  2.
 IMPATTI^{1}
 (ENERGIA/
@@ -6290,7 +6281,7 @@ La Mission prevede che venga effettuato un monitoraggio periodico sull'avanzamen
 dall'intervento) |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  Variazione dei consumi energetici per vettore
-(applicabile se progetto sugli owned assets) | N/A  |   |   |   |   |
+| (applicabile se progetto sugli owned assets) | N/A  |   |   |   |   |
 |   |  Riduzione delle emissioni di gas serra²
 (kg CO2eq/anno)
 (Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) | AMBITO DI AZIONE | Descrizione | Emissioni a fine realizzazione del progetto | Emissioni (Baseline) | Delta (emissioni evitate)  |
@@ -6331,9 +6322,9 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 ☑ altro: validazione e sviluppo di una nuova tecnologia per la cattura della CO₂ emessa dal processo di combustione dei rifiuti  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | N/A  |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | N/A  |
 |  3. GOVERNANCE E COSTI | Eventuali stakeholder coinvolti
-Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | Il progetto coinvolge 23 partner distribuiti tra numerosi paesi europei. I principali partner coinvolti nella sperimentazione presso il termovalorizzatore di Milano sono:  |
+| Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | Il progetto coinvolge 23 partner distribuiti tra numerosi paesi europei. I principali partner coinvolti nella sperimentazione presso il termovalorizzatore di Milano sono:  |
 | --- | --- | --- |
 |   |  | - Politecnico di Milano;
 Leap (LABORATORIO ENERGIA MBIENTE PIACENZA);
@@ -6349,16 +6340,12 @@ I risultati dei test saranno impiegati nella modellizzazione impiantistica e ter
 I dati raccolti ed i modelli sviluppati saranno impiegati dai provider tecnologici e dagli istituti di ricerca coinvolti nel progetto per il futuro sviluppo di soluzioni commerciali.
 A fine sperimentazione è prevista la dismissione dell'impianto sperimentale, che quindi verrà spento e la relativa cattura dell'anidride carbonica verrà interrotta.  |
 |   | Stima dell'investimento complessivo (€) | Budget complessivo del progetto circa 40 M€
-Budget delle sole attività presso il termovalorizzatore di Milano circa 15 M€, dei quali circa 4,6 M€ in capo ad A2A / A2A Ambiente  |
+| Budget delle sole attività presso il termovalorizzatore di Milano circa 15 M€, dei quali circa 4,6 M€ in capo ad A2A / A2A Ambiente  |
 |   | OPEX (operational expenditure)
-Se applicabile. | Gli importi alla voce “Stima dell'investimento complessivo” sono inclusivi di opex e capex  |
+| Se applicabile. | Gli importi alla voce “Stima dell'investimento complessivo” sono inclusivi di opex e capex  |
 |   | Copertura dell'investimento
-Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
-☑ Sì  |
-
-2
-3
-
+| Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali? |
+| ☑ Sì  |
 |   | finanziamenti europei o incentivi nazionali/locali. | ☐ No
 Se sì, quali?
 HORIZON-CL5-2022-D3-01---
@@ -6390,11 +6377,11 @@ Progetto 1: Riquadificazione Energetica Quartieri Coppin e Bagarotti
 | --- | --- | --- |
 |   |  Referente | Antonella Molinari, Sviluppo Nuove Linee di Business Energy Efficiency Public Sector – A2A Calore e Servizi S.r.l.  |
 |   |  Categoria di progetto | ☑ progetto urbano
-☐ interventi relativi a propri asset e proprie attività  |
+| ☐ interventi relativi a propri asset e proprie attività  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | Quartiere Bagarotti / Quartiere Coppin  |
+| Edificio, quartiere, altro | Quartiere Bagarotti / Quartiere Coppin  |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | L'area riguarda i siti di Bagarotti (Via Bagarotti 44/Via Valle Antrona 5) e di Coppin (Via Coppin 3/Via Martinelli 12/Via Manfredonia 48,55) a Milano  |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | L'area riguarda i siti di Bagarotti (Via Bagarotti 44/Via Valle Antrona 5) e di Coppin (Via Coppin 3/Via Martinelli 12/Via Manfredonia 48,55) a Milano  |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (as es. se si tratta di un progetto integrato). | ☑ Sistemi energetici
 ☑ Involucro edilizio (cappotto, coperture, serramenti)
@@ -6421,7 +6408,7 @@ Tempistiche
 Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). Le lavorazioni sono state avviate nel Gennaio del 2023 e si sono concluse a Dicembre 2023.
 
 |  2. IMPATTI³ (ENERGIA/ riduzione emissioni CO2 equivalente) | Energia rinnovabile generata MWh/anno (valore atteso) (se previsto dall'intervento) | Impianto Fotovoltaico Coppin – Valore atteso: 12 MWh/anno
-Impianto Fotovoltaico Bagarotti – Valore atteso: 20 MWh/anno  |
+| Impianto Fotovoltaico Bagarotti – Valore atteso: 20 MWh/anno  |
 | --- | --- | --- |
 |   |  Acquisto di energia elettrica certificata da fonti | N/A  |
 
@@ -6434,14 +6421,14 @@ MWh/anno
 (se previsto dall'intervento) |  |
 | --- | --- | --- |
 | Variazione dei consumi energetici per vettore
-(applicabile se progetto sugli owned assets) | N/A |
+| (applicabile se progetto sugli owned assets) | N/A |
 | Riduzione delle emissioni di gas serra^{4}
 (kg CO2eq/anno)
 (Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) | AMBITO DI AZIONE | Descrizione | Emissioni a fine realizzazione del progetto | Emissioni (Baseline) | Delta (emissioni evitate) |
 | SISTEMA ENERGETICO | Sistema ibrido composto da 3 caldaie a condensazione e 3 pompe di calore aria-acqua. | Bagarotti: 457.815 kgCO2/anno
-Coppin: 404.364 kgCO2 | Bagarotti: 834.591 kgCO2
-Coppin: 726.184 kgCO2 | Bagarotti: 376.776 kgCO2
-Coppin: 321.820 kgCO2 |
+| Coppin: 404.364 kgCO2 | Bagarotti: 834.591 kgCO2 |
+| Coppin: 726.184 kgCO2 | Bagarotti: 376.776 kgCO2 |
+| Coppin: 321.820 kgCO2 |
 | EDIFICI / AMBIENTE COSTRUITO (es, Materiali/ tecniche costruttive) | Cappotto termico in lana di roccia/EPS/Aerogel e sostituzione infissi. |
 | ECONOMIA CIRCOLARE E RIFIUTI |  |
 | MOBILITA' E TRASPORTI |  |
@@ -6476,15 +6463,15 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 ☐ altro: indicare  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | L'intervento permette di migliorare il benessere sociale degli inquilini in un contesto di edilizia popolare caratterizzato dalla forte presenza di soggetti svantaggiati.  |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | L'intervento permette di migliorare il benessere sociale degli inquilini in un contesto di edilizia popolare caratterizzato dalla forte presenza di soggetti svantaggiati.  |
 |  3. GOVERNANCE E COSTI | Eventuali stakeholder coinvolti
-Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | Comune di Milano, MM  |
+| Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | Comune di Milano, MM  |
 | --- | --- | --- |
 |   | Commenti sull’implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. | N/A  |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. | N/A  |
 |   | Stima dell’investimento complessivo (€) | ≈ 34.800 k€  |
 |   | OPEX (operational expenditure)
-Se applicabile. | N/A  |
+| Se applicabile. | N/A  |
 |   | Copertura dell’investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☑ Sì
@@ -6506,11 +6493,11 @@ Progetto 2: Riquadificazione Energetica Quartiere Russoli
 | --- | --- | --- |
 |   |  Referente | Antonella Molinari, Sviluppo Nuove Linee di Business Energy Efficiency Public Sector – A2A Calore e Servizi S.r.l.  |
 |   |  Categoria di progetto | ☑ progetto urbano
-☐ interventi relativi a propri asset e proprie attività  |
+| ☐ interventi relativi a propri asset e proprie attività  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | Complesso residenziale via Russoli 14-20, Milano  |
+| Edificio, quartiere, altro | Complesso residenziale via Russoli 14-20, Milano  |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | L'area riguarda il sito di via Russoli 14-20 a Milano. Il complesso residenziale è formato da 4 Torri, collegate da un basement e ospita 187 appartamenti ALLER.  |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | L'area riguarda il sito di via Russoli 14-20 a Milano. Il complesso residenziale è formato da 4 Torri, collegate da un basement e ospita 187 appartamenti ALLER.  |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (as es. se si tratta di un progetto integrato). | ☑ Sistemi energetici
 ☑ Involucro edilizio (cappotto, coperture, serramenti)
@@ -6526,15 +6513,11 @@ La scelta può essere multipla | ☑ Tecnologico/infrastrutturale
 ☐ Comportamentale
 ☐ Altro (specificare)  |
 |   |  Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, | Il progetto, in ambito Superbonus 110%, ha previsto la riquadificazione di 4 edifici IACP e 1 centrale termica In particolare, gli interventi sugli edifici hanno riguardato la posa di cappotto termico sulle pareti « calde » (realizzando adottando sistemi prefabbricati con  |
-
-0
-1
-
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, | Il progetto, in ambito Superbonus 110%, ha previsto la riquadificazione di 4 edifici IACP e 1 centrale termica In particolare, gli interventi sugli edifici hanno riguardato la posa di cappotto termico sulle pareti « calde » (realizzando adottando sistemi prefabbricati con  |
 |   | infrastrutture per la mobilità). | materiali naturali di recupero), la coibentazione delle coperture con tetti verdi e la sostituzione degli infissi e avvolgibili. Sul tetto di ogni torre si è inoltre provveduto alla realizzazione di impianto fotovoltaico di potenza 20 kWp con accumulo, per un totale di 80kWp installati. Si è provveduto ad un upgrade del sistema di termoregolazione e telecontrollo sia negli appartamenti che in centrale termica. Dal punto di vista della risposta sismica dell'edificio sono stati eseguiti interventi puntuali che hanno permesso di ridurre il rischio sismico dell'edificio.  |
 | --- | --- | --- |
 |   | Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Le lavorazioni sono state avviate nel novembre 2022 si sono concluse a Dicembre 2023.  |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Le lavorazioni sono state avviate nel novembre 2022 si sono concluse a Dicembre 2023.  |
 |  2.
 IMPATTI^{5}
 (ENERGIA/
@@ -6567,7 +6550,7 @@ La Mission prevede che venga effettuato un monitoraggio periodico sull'avanzamen
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  Variazione dei consumi energetici per vettore (applicabile se progetto sugli owned assets) | Si prevede una riduzione di energia termica per il riscaldamento da teleriscamento (impianto di a2a calore & servizi) di 959MWh/anno  |   |   |   |   |
 |   |  Riduzione delle emissioni di gas serra^{6} (kg CO2eq/anno)
-(Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) | AMBITO DI AZIONE | Descrizione | Emissioni a fine realizzazione del progetto | Emissioni (Baseline) | Delta (emissioni evitate)  |
+| (Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) | AMBITO DI AZIONE | Descrizione | Emissioni a fine realizzazione del progetto | Emissioni (Baseline) | Delta (emissioni evitate)  |
 |   |   |  SISTEMA ENERGETICO | Impianto termico a Teleriscaldamento | 30.931 kgCO2/anno | 87.512 kgCO2/anno | 56.581 kgCO2/anno  |
 |   |   |  EDIFICI / AMBIENTE COSTRUITO (es, Materiali/ tecniche costruttive | Cappotto termico in lolla di riso/sughero, coperture verdi e sostituzione infissi e avvolgibili con sistemi in PVC  |   |   |   |
 |   |   |  ECONOMIA CIRCOLARE E RIFIUTI |  |  |  |   |
@@ -6605,17 +6588,17 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 ☐ altro: indicare  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | L'intervento permette di migliorare il benessere sociale degli inquilini in un contesto di edilizia popolare caratterizzato dalla forte presenza di soggetti svantaggiati.  |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | L'intervento permette di migliorare il benessere sociale degli inquilini in un contesto di edilizia popolare caratterizzato dalla forte presenza di soggetti svantaggiati.  |
 |  3. GOVERNANCE E COSTI | Eventuali stakeholder coinvolti
-Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | Comune di Milano, ALLER  |
+| Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | Comune di Milano, ALLER  |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o | N/A  |
+| Descrivere Es. eventuali barriere e/o | N/A  |
 |   | fattori abilitanti. |   |
 | --- | --- | --- |
 |   | **Stima dell'investimento complessivo (€)** | ≈ 13.300 k€  |
 |   | **OPEX (operational expenditure)**
-Se applicabile. | ≈ 150k€/anno (=1,5M€ totali sul contratto)  |
+| Se applicabile. | ≈ 150k€/anno (=1,5M€ totali sul contratto)  |
 |   | **Copertura dell'investimento**
 Indicare se per la realizzazione del
 progetto si prevede che, oltre a fonti di
@@ -6645,11 +6628,11 @@ Progetto 3: Teleriscaldamento e Teleraffrescamento Campus Politecnico Bovisa La 
 | --- | --- | --- |
 |   |  Referente | Alessandro Gnatta, Responsabile Ingegneria Impianti di Teleriscaldamento – A2A Calore e Servizi S.r.l.  |
 |   |  Categoria di progetto | ☐ progetto urbano
-☑ interventi relativi a propri asset e proprie attività  |
+| ☑ interventi relativi a propri asset e proprie attività  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | Quartiere – Campus Universitario  |
+| Edificio, quartiere, altro | Quartiere – Campus Universitario  |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). |   |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). |   |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (as es. se si tratta di un progetto integrato). | ☑ Sistemi energetici
 ☐ Involucro edilizio (cappotto, coperture, serramenti)
@@ -6665,18 +6648,14 @@ La scelta può essere multipla | ☑ Tecnologico/infrastrutturale
 ☐ Comportamentale
 ☐ Altro (specificare)  |
 |   |  Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | L'intervento è da realizzarsi presso il Campus Universitario del Politecnico di Milano in Via La Masa (Bovisa – Milano).
-Ad oggi il Campus sopracitato è servito energeticamente da svariate centrali termiche e frigorifere, dislocate in maniera decentrata nei vari  |
-
-5
-6
-
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | L'intervento è da realizzarsi presso il Campus Universitario del Politecnico di Milano in Via La Masa (Bovisa – Milano). |
+| Ad oggi il Campus sopracitato è servito energeticamente da svariate centrali termiche e frigorifere, dislocate in maniera decentrata nei vari  |
 |   |  | edifici didattici.
-Lo scopo del presente progetto è quello di costruire un nuovo sistema di teleriscaldamento e teleraffrescamento, centralizzando le produzioni termiche e frigorifere in un solo sito e distribuendo i fluidi termovettore mediante la nuova rete di teleriscaldamento/teleraffreddamento da realizzarsi. Tali reti saranno alimentate da fonti rinnovabili mediante Pompe di Calore dedicate.  |
+| Lo scopo del presente progetto è quello di costruire un nuovo sistema di teleriscaldamento e teleraffrescamento, centralizzando le produzioni termiche e frigorifere in un solo sito e distribuendo i fluidi termovettore mediante la nuova rete di teleriscaldamento/teleraffreddamento da realizzarsi. Tali reti saranno alimentate da fonti rinnovabili mediante Pompe di Calore dedicate.  |
 | --- | --- | --- |
 |   | Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Inizio: 2025
-Fine: 2027  |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Inizio: 2025 |
+| Fine: 2027  |
 |  2.
 IMPATTI^{7}
 (ENERGIA/
@@ -6746,16 +6725,16 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 ☐ altro: indicare  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | N/A  |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | N/A  |
 |  3. GOVERNANCE E COSTI | Eventuali stakeholder coinvolti
-Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | A2A, Politecnico di Milano  |
+| Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | A2A, Politecnico di Milano  |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. | N/A  |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. | N/A  |
 |   | Stima dell'investimento complessivo (€) | 10.065.000 €  |
 | --- | --- | --- |
 |   | OPEX (operational expenditure)
-Se applicabile. | N/A  |
+| Se applicabile. | N/A  |
 |   | Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☑ Sì
@@ -6777,11 +6756,11 @@ Progetto 4: Teleriscaldamento e Teleraffrescamento per il Nuovo Polo Santa Giuli
 | --- | --- | --- |
 |   |  Referente | Alessandro Gnatta, Responsabile Ingegneria Impianti di Teleriscaldamento – A2A Calore e Servizi S.r.l.  |
 |   |  Categoria di progetto | ☑ progetto urbano
-☐ interventi relativi a propri asset e proprie attività  |
+| ☐ interventi relativi a propri asset e proprie attività  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | Quartiere  |
+| Edificio, quartiere, altro | Quartiere  |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). |   |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). |   |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (as es. se si tratta di un progetto integrato). | ☑ Sistemi energetici
 ☐ Involucro edilizio (cappotto, coperture, serramenti)
@@ -6797,17 +6776,13 @@ La scelta può essere multipla | ☑ Tecnologico/infrastrutturale
 ☐ Comportamentale
 ☐ Altro (specificare)  |
 |   |  Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | Nuovo sistema di teleriscaldamento e teleraffrescamento per il nuovo quartiere polifunzionale denominato Santa Giulia a Milano. Il nuovo Energy Center si occuperà di far fronte a tutte le esigenze termo-frigorigene destinate ai nuovi edifici, sia residenziale sia commerciale.
-L'impianto sarà costituito da pompe di calore reversibili e macchine frigorifere che sfrutteranno una  |
-
-0
-1
-
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | Nuovo sistema di teleriscaldamento e teleraffrescamento per il nuovo quartiere polifunzionale denominato Santa Giulia a Milano. Il nuovo Energy Center si occuperà di far fronte a tutte le esigenze termo-frigorigene destinate ai nuovi edifici, sia residenziale sia commerciale. |
+| L'impianto sarà costituito da pompe di calore reversibili e macchine frigorifere che sfrutteranno una  |
 |   |  | fonte geotermica, cioè acqua di falda che verrà recapitata nella Centrale Energy Center. L'elettricità utilizzata dai gruppi frigoriferi e dalle pompe di calore sarà prelevata dalla rete pubblica di distribuzione e sarà integralmente rinnovabile, in quanto approvvigionata con certificati di origine rinnovabile 100%.  |
 | --- | --- | --- |
 |   | Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Inizio: 2025
-Fine: 2027  |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Inizio: 2025 |
+| Fine: 2027  |
 |  2.
 IMPATTI⁹
 (ENERGIA/
@@ -6841,7 +6816,7 @@ dall'intervento) | 4.331 MWh  |
 |   | Variazione dei consumi energetici per vettore (applicabile se progetto sugli owned assets) | N/A  |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  Riduzione delle emissioni di gas serra^{10} (kg CO2eq/anno)
-(Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) | AMBITO DI AZIONE | Descrizione | Emissioni a fine realizzazione del progetto | Emissioni (Baseline) | Delta (emissioni evitate)  |
+| (Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) | AMBITO DI AZIONE | Descrizione | Emissioni a fine realizzazione del progetto | Emissioni (Baseline) | Delta (emissioni evitate)  |
 |   |   |  SISTEMA ENERGETICO | Rispetto alla generazione di energia termica e frigorifera con sistemi convenzionali |  |  | 2.940.454 kg_CO2eq/anno  |
 |   |   |  EDIFICI / AMBIENTE COSTRUITO (es, Materiali/ tecniche costruttive |  |  |  |   |
 |   |   |  ECONOMIA CIRCOLARE E RIFIUTI |  |  |  |   |
@@ -6875,21 +6850,17 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 ☐ altro: indicare  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | N/A  |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | N/A  |
 |  3. GOVERNANCE E COSTI | Eventuali stakeholder coinvolti
-Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | A2A, Comune di Milano  |
+| Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | A2A, Comune di Milano  |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. | N/A  |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. | N/A  |
 |   |  Stima dell'investimento complessivo (€) | 19.104.500 €  |
 |   |  OPEX (operational expenditure)
-Se applicabile. | N/A  |
+| Se applicabile. | N/A  |
 |   |  Copertura dell'investimento
-Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
-☑ Sì  |
-
-3
-4
-
+| Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali? |
+| ☑ Sì  |
 |   | nazionali/locali. | ☐ No
 Se sì, quali?
 
@@ -6909,11 +6880,11 @@ Progetto 5: Sistema Energetico per Innesto – Scalo Greco
 | --- | --- | --- |
 |   |  Referente | Alessandro Gnatta, Responsabile Ingegneria Impianti di Teleriscaldamento – A2A Calore e Servizi S.r.l.  |
 |   |  Categoria di progetto | ☑ progetto urbano
-☐ interventi relativi a propri asset e proprie attività  |
+| ☐ interventi relativi a propri asset e proprie attività  |
 |   |  Scala dell’intervento
-Edificio, quartiere, altro |   |
+| Edificio, quartiere, altro |   |
 |   |  Localizzazione
-Indicare l’area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). |   |
+| Indicare l’area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). |   |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (as es. se si tratta di un progetto integrato). | ☑ Sistemi energetici
 ☐ Involucro edilizio (cappotto, coperture, serramenti)
@@ -6929,14 +6900,10 @@ La scelta può essere multipla | ☑ Tecnologico/infrastrutturale
 ☐ Comportamentale
 ☐ Altro (specificare)  |
 |   |  Descrizione dell’azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | Sistema energetico a servizio del nuovo quartiere denominato « Innesto » nel contesto del progetto di riqualificazione dello scalo ferroviario di Milano Greco.  |
-
-5
-6
-
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | Sistema energetico a servizio del nuovo quartiere denominato « Innesto » nel contesto del progetto di riqualificazione dello scalo ferroviario di Milano Greco.  |
 |   | Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Inizio: 2025/2026, da definire
-Fine: TBD  |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Inizio: 2025/2026, da definire |
+| Fine: TBD  |
 | --- | --- | --- |
 |  2.
 IMPATTI^{11}
@@ -7028,18 +6995,18 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 ☐ altro: indicare  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | N/A  |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | N/A  |
 |  3.
 GOVERNANCE
 E COSTI | Eventuali stakeholder coinvolti
 Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | A2A, Comune di Milano  |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. | N/A  |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. | N/A  |
 |   |  Stima dell'investimento
-complessivo (€) | 3.500.000 €  |
+| complessivo (€) | 3.500.000 €  |
 |   |  OPEX (operational expenditure)
-Se applicabile. | N/A  |
+| Se applicabile. | N/A  |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☐ Sì
@@ -7049,8 +7016,6 @@ Se sì, quali?
 ☐ Incentivi nazionali/regionali/locali/comunali
 (eventualmente precisare quali)
 |
-9
-
 |   |  | ☐ Finanziamenti Europei
 ☐ Altro
 
@@ -7062,11 +7027,11 @@ Progetto 6: Teleriscaldamento a rete neutrale Rewardheat – via Balilla/Parco R
 | --- | --- | --- |
 |   |  Referente | Alessandro Gnatta, Responsabile Ingegneria Impianti di Teleriscaldamento – A2A Calore e Servizi S.r.l.  |
 |   |  Categoria di progetto | ☑ progetto urbano
-☐ interventi relativi a propri asset e proprie attività  |
+| ☐ interventi relativi a propri asset e proprie attività  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro |   |
+| Edificio, quartiere, altro |   |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). |   |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). |   |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (as es. se si tratta di un progetto integrato). | ☑ Sistemi energetici
 ☐ Involucro edilizio (cappotto, coperture, serramenti)
@@ -7082,13 +7047,9 @@ La scelta può essere multipla | ☑ Tecnologico/infrastrutturale
 ☐ Comportamentale
 ☐ Altro (specificare)  |
 |   |  Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | Progetto pilota, demo site: nuovo sistema di teleriscaldamento mediante recupero di pozzi esistenti di prima falda per rete neutrale, con pompe di calore di utenza.  |
-
-0
-1
-
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | Progetto pilota, demo site: nuovo sistema di teleriscaldamento mediante recupero di pozzi esistenti di prima falda per rete neutrale, con pompe di calore di utenza.  |
 |   | Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Intervento realizzato nel corso del 2022-2023, ora in corso di funzionamento con monitoraggio performance  |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Intervento realizzato nel corso del 2022-2023, ora in corso di funzionamento con monitoraggio performance  |
 | --- | --- | --- |
 |  2.
 IMPATTI^{13}
@@ -7174,18 +7135,18 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 ☐ altro: indicare  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | N/A  |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | N/A  |
 |  3.
 GOVERNANCE
 E COSTI | Eventuali stakeholder coinvolti
 Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | A2A, Comune di Milano  |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. | N/A  |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. | N/A  |
 |   |  Stima dell'investimento
-complessivo (€) | N/A  |
+| complessivo (€) | N/A  |
 |   |  OPEX (operational expenditure)
-Se applicabile. | N/A  |
+| Se applicabile. | N/A  |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☑ Sì
@@ -7198,7 +7159,7 @@ Se sì, quali?
 ☑ Finanziamenti Europei
 Horizon 'Rewardheat '  |
 |   |  | ☐ Altro
-Quanto incidono in % sull'investimento complessivo?  |
+| Quanto incidono in % sull'investimento complessivo?  |
 | --- | --- | --- |
 
 4
@@ -7208,11 +7169,11 @@ Progetto 7: Estensione e Nuovi Interventi Sistema Teleriscaldamento Milano Est
 | --- | --- | --- |
 |   |  Referente | Alessandro Gnatta, Responsabile Ingegneria Impianti di Teleriscaldamento – A2A Calore e Servizi S.r.l.  |
 |   |  Categoria di progetto | ☐ progetto urbano
-☑ interventi relativi a propri asset e proprie attività  |
+| ☑ interventi relativi a propri asset e proprie attività  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | Area Est Milano  |
+| Edificio, quartiere, altro | Area Est Milano  |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). |   |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). |   |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (as es. se si tratta di un progetto integrato). | ☑ Sistemi energetici
 ☐ Involucro edilizio (cappotto, coperture, serramenti)
@@ -7228,15 +7189,11 @@ La scelta può essere multipla | ☑ Tecnologico/infrastrutturale
 ☐ Comportamentale
 ☐ Altro (specificare)  |
 |   |  Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | Il progetto consiste nell'allacciamento del sistema Pomposa al Sistema di Teleriscaldamento “Milano-Est”, per sostituire il calore prodotto dalle caldaie a gas naturale di “Pomposa” con il calore erogato dalla pompa di calore geotermica della centrale di “Canavese”, oltre che dalla sostituzione di quota parte della produzione delle caldaie esistenti negli impianti  |
-
-5
-6
-
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | Il progetto consiste nell'allacciamento del sistema Pomposa al Sistema di Teleriscaldamento “Milano-Est”, per sostituire il calore prodotto dalle caldaie a gas naturale di “Pomposa” con il calore erogato dalla pompa di calore geotermica della centrale di “Canavese”, oltre che dalla sostituzione di quota parte della produzione delle caldaie esistenti negli impianti  |
 |   |  | di “Canavese” e “Linate” mediante maggiore utilizzo dei cogeneratori esistenti rispetto alla situazione ex-ante, anche grazie alla realizzazione di un nuovo accumulo termico.  |
 | --- | --- | --- |
 |   | Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Intervento che interesserà gli anni 2024-2025-2026  |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Intervento che interesserà gli anni 2024-2025-2026  |
 |  2.
 IMPATTI^{15}
 (ENERGIA/
@@ -7258,7 +7215,7 @@ La Mission prevede che venga effettuato un monitoraggio periodico sull'avanzamen
 |   | Variazione dei consumi energetici per vettore (applicabile se progetto sugli owned assets) | N/A  |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  Riduzione delle emissioni di gas serra^{16} (kg CO2eq/anno)
-(Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) | AMBITO DI AZIONE | Descrizione | Emissioni a fine realizzazione del progetto | Emissioni (Baseline) | Delta (emissioni evitate)  |
+| (Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) | AMBITO DI AZIONE | Descrizione | Emissioni a fine realizzazione del progetto | Emissioni (Baseline) | Delta (emissioni evitate)  |
 |   |   |  SISTEMA ENERGETICO | Sostituzione di calore prodotto da caldaie tradizionali |  |  | 2.474.641 kg_CO2eq/anno  |
 |   |   |  EDIFICI / AMBIENTE COSTRUITO (es, Materiali/ tecniche costruttive |  |  |  |   |
 |   |   |  ECONOMIA CIRCOLARE E RIFIUTI |  |  |  |   |
@@ -7293,21 +7250,17 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 ☐ altro: indicare  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | N/A  |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | N/A  |
 |  3. GOVERNANCE E COSTI | Eventuali stakeholder coinvolti
-Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | A2A, Comune di Milano  |
+| Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | A2A, Comune di Milano  |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. | N/A  |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. | N/A  |
 |   |  Stima dell'investimento complessivo (€) | 12.100.000 €  |
 |   |  OPEX (operational expenditure)
-Se applicabile. | N/A  |
+| Se applicabile. | N/A  |
 |   |  Copertura dell'investimento
-Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi  |
-
-8
-9
-
+| Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi  |
 |   | finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | nazionali o locali?
 ☐ Sì
 ☑ No
@@ -7326,11 +7279,11 @@ Progetto 8: Estensione Sistema di Teleriscaldamento Milano Ovest
 | --- | --- | --- |
 |   |  Referente | Alessandro Gnatta, Responsabile Ingegneria Impianti di Teleriscaldamento – A2A Calore e Servizi S.r.l.  |
 |   |  Categoria di progetto | ☐ progetto urbano
-☑ interventi relativi a propri asset e proprie attività  |
+| ☑ interventi relativi a propri asset e proprie attività  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | Area sottesa a Sistema Teleriscaldamento Milano Ovest, Centrale Famagosta, Centrale Pompeo Leoni  |
+| Edificio, quartiere, altro | Area sottesa a Sistema Teleriscaldamento Milano Ovest, Centrale Famagosta, Centrale Pompeo Leoni  |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). |   |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). |   |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (as es. se si tratta di un progetto integrato). | ☑ Sistemi energetici
 ☐ Involucro edilizio (cappotto, coperture, serramenti)
@@ -7346,16 +7299,12 @@ La scelta può essere multipla | ☑ Tecnologico/infrastrutturale
 ☐ Comportamentale
 ☐ Altro (specificare)  |
 |   |  Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, | Questo progetto riguarda il Sistema di Teleriscaldamento Milano Ovest, con la realizzazione di due nuovi accumuli termici presso la Centrale Famagosta, unitamente all'estensione della rete verso il quartiere di Pompeo Leoni con relativo allacciamento.  |
-
-0
-1
-
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, | Questo progetto riguarda il Sistema di Teleriscaldamento Milano Ovest, con la realizzazione di due nuovi accumuli termici presso la Centrale Famagosta, unitamente all'estensione della rete verso il quartiere di Pompeo Leoni con relativo allacciamento.  |
 |   | infrastrutture per la mobilità). | I nuovi accumuli termici permetteranno di decarbonizzare una quota del fabbisogno termico del quartiere servito grazie all'accumulo di energia termica a basso impatto emissivo prodotta nell'impianto Silla.  |
 | --- | --- | --- |
 |   | Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Inizio: 2024
-Fine: 2026  |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Inizio: 2024 |
+| Fine: 2026  |
 |  2.
 IMPATTI^{17}
 (ENERGIA/
@@ -7389,7 +7338,7 @@ La Mission prevede che venga effettuato un monitoraggio periodico sull'avanzamen
 |   | Variazione dei consumi energetici per vettore (applicabile se progetto sugli owned assets) | N/A  |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  Riduzione delle emissioni di gas serra^{18} (kg CO2eq/anno)
-(Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) | AMBITO DI AZIONE | Descrizione | Emissioni a fine realizzazione del progetto | Emissioni (Baseline) | Delta (emissioni evitate)  |
+| (Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) | AMBITO DI AZIONE | Descrizione | Emissioni a fine realizzazione del progetto | Emissioni (Baseline) | Delta (emissioni evitate)  |
 |   |   |  SISTEMA ENERGETICO | Rispetto alla generazione termica tradizionale ad oggi in uso |  |  | 1.189.093 Kg_CO2eq/anno  |
 |   |   |  EDIFICI / AMBIENTE COSTRUITO (es, Materiali/ tecniche costruttive |  |  |  |   |
 |   |   |  ECONOMIA CIRCOLARE E RIFIUTI |  |  |  |   |
@@ -7422,21 +7371,17 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 ☐ altro: indicare  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | N/A  |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | N/A  |
 |  3. GOVERNANCE E COSTI | Eventuali stakeholder coinvolti
-Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | A2A, Comune di Milano  |
+| Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | A2A, Comune di Milano  |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. | N/A  |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. | N/A  |
 |   |  Stima dell'investimento complessivo (€) | 16.000.000 €  |
 |   |  OPEX (operational expenditure)
-Se applicabile. | N/A  |
+| Se applicabile. | N/A  |
 |   |  Copertura dell'investimento
-Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi  |
-
-3
-4
-
+| Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi  |
 |   | finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | nazionali o locali?
 ☐ Sì
 ☑ No
@@ -7455,11 +7400,11 @@ Progetto 9: Recupero Calore Data Center
 | --- | --- | --- |
 |   |  Referente | Daniele Pasinelli, Referente Progetti Ingegneria Impianti e Rete Teleriscaldamento – A2A Calore e Servizi S.r.l.  |
 |   |  Categoria di progetto | ☐ progetto urbano
-☑ interventi relativi a propri asset e proprie attività  |
+| ☑ interventi relativi a propri asset e proprie attività  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | Sistema Teleriscaldamento Milano Ovest  |
+| Edificio, quartiere, altro | Sistema Teleriscaldamento Milano Ovest  |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). |   |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). |   |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (as es. se si tratta di un progetto integrato). | ☑ Sistemi energetici
 ☐ Involucro edilizio (cappotto, coperture, serramenti)
@@ -7475,16 +7420,12 @@ La scelta può essere multipla | ☑ Tecnologico/infrastrutturale
 ☐ Comportamentale
 ☐ Altro (specificare)  |
 |   |  Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, | Recupero calore da Data Center mediante pompa di calore per alimentare il Sistema di Teleriscaldamento di Milano Ovest  |
-
-5
-6
-
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, | Recupero calore da Data Center mediante pompa di calore per alimentare il Sistema di Teleriscaldamento di Milano Ovest  |
 |   | infrastrutture per la mobilità). |   |
 | --- | --- | --- |
 |   | Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Inizio : 2025
-Fine : 2026  |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Inizio : 2025 |
+| Fine : 2026  |
 |  2.
 IMPATTI^{19}
 (ENERGIA/
@@ -7505,7 +7446,7 @@ dall'intervento) | Il calore dissipato dal Data Center recuperabile si stima, su
 
 La Mission prevede che venga effettuato un monitoraggio periodico sull'avanzamento complessivo verso gli obiettivi di decarbonizzazione. Vi sarà pertanto richiesto con cadenza presumibilmente biennale l'avanzamento delle azioni che avete proposto (ed eventuali modifiche e integrazioni), utilizzando gli indicatori riportati nella presente sezione della scheda
 |   | Riduzione delle emissioni di gas serra^{20} (kg CO2eq/anno)
-(Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) | AMBITO DI AZIONE | Descrizione | Emissioni a fine realizzazione del progetto | Emissioni (Baseline) | Delta (emissioni evitate)  |
+| (Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) | AMBITO DI AZIONE | Descrizione | Emissioni a fine realizzazione del progetto | Emissioni (Baseline) | Delta (emissioni evitate)  |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |   |  SISTEMA ENERGETICO | Rispetto alla generazione termica tradizionale |  |  | 1.682.310 kg_CO2eq/anno  |
 |   |   |  EDIFICI / AMBIENTE COSTRUITO (es, Materiali/ tecniche costruttive |  |  |  |   |
@@ -7545,18 +7486,18 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 ☐ altro: indicare  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | N/A  |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | N/A  |
 |  3.
 GOVERNANCE
 E COSTI | Eventuali stakeholder coinvolti
 Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | A2A, Comune di Milano  |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. | N/A  |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. | N/A  |
 |   |  Stima dell'investimento
-complessivo (€) | 3.500.000 €  |
+| complessivo (€) | 3.500.000 €  |
 |   |  OPEX (operational expenditure)
-Se applicabile. | N/A  |
+| Se applicabile. | N/A  |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☐ Sì
@@ -7582,9 +7523,9 @@ Progetto 1: City Plug, Ricarica di Quartiere
 | --- | --- | --- |
 |   |  Referente | Silvia Verace, Responsabile Public Infrastructures Development - E-Mobility A2A S.p.A.  |
 |   |  Categoria di progetto | ☑ progetto urbano
-☐ interventi relativi a propri asset e proprie attività  |
+| ☐ interventi relativi a propri asset e proprie attività  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | Urbana  |
+| Edificio, quartiere, altro | Urbana  |
 |   |  Localizzazione
 Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | 285
 stazioni city plug distribuite sul territorio csilindrale
@@ -7625,8 +7566,6 @@ Il progetto City Plug porta una serie di benefici significativi in termini di so
 • Flessibilità e manutenibilità: le stazioni City Plug sono progettate per essere facilmente rimovibili temporaneamente in caso di eventi o altre esigenze, garantendo flessibilità e adattabilità alle dinamiche urbane. Le City Plug sono state inoltre studiate per rendere semplici le procedure di manutenzione, permettendo un facile accesso e estrazione delle componenti hardware.  |
 | --- | --- |
 |  Tempistiche | Si prevedere uno sviluppo complessivo dei 4.000 punti di ricarica in 2 anni, con le prime installazioni a partire dal  |
-3
-
 |   | Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | gennaio 2024.
 Per ogni stazione, il cantiere tipo avrà una durata di 5 giorni lavorativi e si propone di avere all'attivo circa 3 cantieri contemporaneamente.
 Un cronoprogramma più dettagliato dei lavori verrà discusso con l'Amministrazione nelle fasi successive del progetto.  |
@@ -7714,18 +7653,18 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 ☐ altro: indicare  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | N/A  |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | N/A  |
 |  3.
 GOVERNANCE
 E COSTI | Eventuali stakeholder coinvolti
 Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | A2A, Comune di Milano, AMAT, cittadini  |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. | N/A  |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. | N/A  |
 |   |  Stima dell'investimento
-complessivo (€) | 15,4mln interamente a carico di A2A  |
+| complessivo (€) | 15,4mln interamente a carico di A2A  |
 |   |  OPEX (operational expenditure)
-Se applicabile. | N/A  |
+| Se applicabile. | N/A  |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☐ Sì
@@ -7735,8 +7674,6 @@ Se sì, quali?
 ☐ Incentivi nazionali/regionali/locali/comunali
 (eventualmente precisare quali)
 |
-6
-
 |   |  | ☐ Finanziamenti Europei
 ☐ Altro
 
@@ -7755,11 +7692,11 @@ Progetto 1: Nuovo Headquarter A2A – Piazza Trento
 | --- | --- | --- |
 |   |  Referente | Marco Coggi, Responsabile Group Real Estate – A2A Services & Real Estate S.p.A.  |
 |   |  Categoria di progetto | ☐ progetto urbano
-☑ interventi relativi a propri asset e proprie attività  |
+| ☑ interventi relativi a propri asset e proprie attività  |
 |   |  Scala dell’intervento
-Edificio, quartiere, altro | Sede A2A di Piazza Trento - Milano  |
+| Edificio, quartiere, altro | Sede A2A di Piazza Trento - Milano  |
 |   |  Localizzazione
-Indicare l’area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Piazza Trento 7-13 – 20135 Milano  |
+| Indicare l’area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Piazza Trento 7-13 – 20135 Milano  |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (as es. se si tratta di un progetto integrato). | ☐ Sistemi energetici
 ☑ Involucro edilizio (cappotto, coperture, serramenti)
@@ -7775,11 +7712,7 @@ La scelta può essere multipla | ☐ Tecnologico/infrastrutturale
 ☐ Comportamentale
 ☑ Altro (sede Direzionale, destinazione terziario)  |
 |   |  Descrizione dell’azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | Sul sito storico di piazza Trento (Porta Romana), dove nel 1910 fu realizzata la prima Centrale Termoelettrica della Società, trova concretizzazione il progetto che, a fianco degli edifici storici, prevede la realizzazione di un edificio connotato da una forte personalità e visibilità grazie all’impronta architetturale e di design data dallo Studio Citterio-Viel. Il nuovo edificio (alto 144 m, 27 piani, quinto  |
-
-8
-9
-
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | Sul sito storico di piazza Trento (Porta Romana), dove nel 1910 fu realizzata la prima Centrale Termoelettrica della Società, trova concretizzazione il progetto che, a fianco degli edifici storici, prevede la realizzazione di un edificio connotato da una forte personalità e visibilità grazie all’impronta architetturale e di design data dallo Studio Citterio-Viel. Il nuovo edificio (alto 144 m, 27 piani, quinto  |
 |   |  | edificio di Milano per altezza) è già entrato nei media e nel dibattito collettivo con la denominazione di «Torre-Faro». La realizzazione della Torre Faro è in un'area in pieno decollo immobiliare (riqualificazione dello scalo di Porta Romana) dove insiste anche il villaggio olimpico per le Olimpiadi invernali del 2026, insediamento previsto nel più ampio ambito di rigenerazione urbana degli Scali nella città Metropolitana di Milano. La nuova sede A2A risponde a più esigenze della Corporate: • avere un'unica sede – Headquarter – in una posizione centrale • offrire spazi più adatti al nuovo modo di lavorare: New Ways of Working • disporre di una sede caratterizzata da tutte le più moderne tecnologie • avere una visibilità ed iconicità in linea con il respiro non più solo regionale di A2A  |
 | --- | --- | --- |
 |   | Tempistiche Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Anno di avvio del progetto: 2019 Anno di conclusione previsto: 2025  |
@@ -7790,11 +7723,11 @@ Fornire una descrizione generale del progetto relativamente agli ambiti identifi
 0
 
 |   | Acquisto di energia elettrica certificata da fonti rinnovabili MWh/anno (valore atteso) (se previsto dall'intervento) | 1535 MWh/anno
-Energia elettrica prelevata dalla rete che dovrà essere garantito che sia certificata da fonte rinnovabile; l'intervento è soggetto a certificazione LEED e questo aspetto è stato previsto nella valutazione della certificazione.  |   |   |   |   |
+| Energia elettrica prelevata dalla rete che dovrà essere garantito che sia certificata da fonte rinnovabile; l'intervento è soggetto a certificazione LEED e questo aspetto è stato previsto nella valutazione della certificazione.  |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  Variazione dei consumi energetici per vettore (applicabile se progetto sugli owned assets) | Si stima una riduzione dei consumi del 30% rispetto all'as is  |   |   |   |   |
 |   |  Riduzione delle emissioni di gas serra²⁴ (kg CO2eq/anno)
-(Se possibile considerare i fattori di emissioni | AMBITO DI AZIONE | Descrizione | Emissioni a fine realizzazione e del progetto | Emissioni (Baseline) | Delta (emissioni evitate)  |
+| (Se possibile considerare i fattori di emissioni | AMBITO DI AZIONE | Descrizione | Emissioni a fine realizzazione e del progetto | Emissioni (Baseline) | Delta (emissioni evitate)  |
 |   |   |  SISTEMA ENERGETICO |  |  |  |   |
 |   |   |  EDIFICI / AMBIENTE COSTRUITO (es, Materiali/ tecniche costruttive | Risparmio emissivo del nuovo Headquarter rispetto alla frammentazione/vetustà attuale del parco immobiliare | 688.596 kgCO2/anno | 980.512 kgCO2/anno | 30%  |
 |   |   |  ECONOMIA CIRCOLARE E RIFIUTI |  |  |  |   |
@@ -7808,7 +7741,7 @@ di seguito) | MOBILITA' E
 TRASPORTI |  |  |  |   |
 | --- | --- | --- | --- | --- | --- |
 |   |  INFRASTRUTTUR
-E VERDI E NBS |  |  |  |   |
+| E VERDI E NBS |  |  |  |   |
 |   |  Totale |  | 688.596
 kgCO2/anno | 980.512
 kgCO2/anno | 30%  |
@@ -7840,19 +7773,17 @@ n. ca. 40 nuovi alberi
 ☐ altro: indicare  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti | Creazione di nuove aree verdi ad uso pubblico e collegamento con il nuovo Scalo di Porta Romana direttamente da Piazza Trento. Miglioramento  |
-2
-
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti | Creazione di nuove aree verdi ad uso pubblico e collegamento con il nuovo Scalo di Porta Romana direttamente da Piazza Trento. Miglioramento  |
 |   | realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | nella qualità degli spazi di lavoro per i dipendenti e dei servizi offerti alla Città.  |
 | --- | --- | --- |
 |  3. GOVERNANCE E COSTI | Eventuali stakeholder coinvolti
-Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | A2A, Comune di Milano  |
+| Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | A2A, Comune di Milano  |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. | N/A  |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. | N/A  |
 |   |  Stima dell'investimento complessivo (€) | N/A  |
 |   |  OPEX (operational expenditure)
-Se applicabile. | N/A  |
+| Se applicabile. | N/A  |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☐ Sì
@@ -7876,9 +7807,9 @@ Progetto 1: Efficientamento Energetico delle Sedi Operative
 | --- | --- | --- |
 |   |  Referente | Antonio Bisignano, Responsabile Marketing Territoriale – Amsa S.p.A.  |
 |   |  Categoria di progetto | ☐ progetto urbano
-☑ interventi relativi a propri asset e proprie attività  |
+| ☑ interventi relativi a propri asset e proprie attività  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | Sedi operative Amsa  |
+| Edificio, quartiere, altro | Sedi operative Amsa  |
 |   |  Localizzazione
 Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | • Muggiano: via Riccardo Lombardi, 13
 • Olgettina: Via Olgettina, 25 e 35
@@ -7917,7 +7848,7 @@ Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realiz
 
 La Mission prevede che venga effettuato un monitoraggio periodico sull'avanzamento complessivo verso gli obiettivi di decarbonizzazione. Vi sarà pertanto richiesto con cadenza presumibilmente biennale l'avanzamento delle azioni che avete proposto (ed eventuali modifiche e integrazioni), utilizzando gli indicatori riportati nella presente sezione della scheda
 |   | Riduzione delle emissioni di gas serra^{26} (kg CO_{2eq}/anno)
-(Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) | AMBITO DI AZIONE | Descrizione | Emissioni a fine realizzazione del progetto | Emissioni (Baseline) | Delta (emissioni evitate)  |
+| (Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) | AMBITO DI AZIONE | Descrizione | Emissioni a fine realizzazione del progetto | Emissioni (Baseline) | Delta (emissioni evitate)  |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |   |  SISTEMA ENERGETICO | Produzione di energia rinnovabile |  |  | 690 tCO_{2}/anno  |
 |   |   |  EDIFICI / AMBIENTE COSTRUITO (es, Materiali/ tecniche costruttive |  |  |  |   |
@@ -7957,17 +7888,17 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 ☐ altro: indicare  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
 |  3.
 GOVERNANCE
 E COSTI | Eventuali stakeholder coinvolti
 Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | A2A, Amministrazione Comunale  |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. | I tempi per ottenere le autorizzazioni rappresentano una barriera alla realizzazione del progetto; fattori abilitanti: eventuali incentivi economici  |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. | I tempi per ottenere le autorizzazioni rappresentano una barriera alla realizzazione del progetto; fattori abilitanti: eventuali incentivi economici  |
 |   |  Stima dell'investimento complessivo (€) | N/A  |
 |   |  OPEX (operational expenditure)
-Se applicabile. | N/A  |
+| Se applicabile. | N/A  |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☐ Sì
@@ -7976,8 +7907,6 @@ Se sì, quali?
 -
 ☐ Incentivi nazionali/regionali/locali/comunali (eventualmente precisare quali)
 |
-8
-
 |   |  | ☐ Finanziamenti Europei
 ☐ Altro
 
@@ -7996,11 +7925,11 @@ Progetto 1: Nuove Cabine Primarie
 | --- | --- | --- |
 |   |  Referente | Mario Turrisi, Responsabile Pianificazione – Unareti S.p.A.  |
 |   |  Categoria di progetto | ☐ progetto urbano
-☑ interventi relativi a propri asset e proprie attività  |
+| ☑ interventi relativi a propri asset e proprie attività  |
 |   |  Scala dell’intervento
-Edificio, quartiere, altro | Urbana  |
+| Edificio, quartiere, altro | Urbana  |
 |   |  Localizzazione
-Indicare l’area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). |   |
+| Indicare l’area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). |   |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (as es. se si tratta di un progetto integrato). | ☑ Sistemi energetici
 ☐ Involucro edilizio (cappotto, coperture, serramenti)
@@ -8016,20 +7945,16 @@ La scelta può essere multipla | ☑ Tecnologico/infrastrutturale
 ☐ Comportamentale
 ☐ Altro (specificare)  |
 |   |  Descrizione dell’azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | Nell’area di Milano la necessità di realizzazione delle nuove Cabine Primarie è principalmente legata alla transizione energetica verso il vettore elettrico ed all’incremento delle performance legate alla continuità del servizio. Infatti, le nuove cabine primarie consentiranno di incrementare:
-l’energia elettrica disponibile, necessaria per soddisfare l’incremento dei fabbisogni previsto per i prossimi anni;  |
-
-0
-1
-
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | Nell’area di Milano la necessità di realizzazione delle nuove Cabine Primarie è principalmente legata alla transizione energetica verso il vettore elettrico ed all’incremento delle performance legate alla continuità del servizio. Infatti, le nuove cabine primarie consentiranno di incrementare: |
+| l’energia elettrica disponibile, necessaria per soddisfare l’incremento dei fabbisogni previsto per i prossimi anni;  |
 |   |  | - la hosting capacity del sistema di distribuzione, fattore rilevante per il supporto allo sviluppo della produzione di energia elettrica da fonti energetiche rinnovabili.
 Inoltre, la loro realizzazione permetterà di uniformare il livello di tensione della rete MT permettendo allo stesso tempo di dismettere le sottostazioni di smistamento e/o trasformazione MT/MT.
 Con la progressiva entrata in servizio delle nuove CP si disporrà di un numero maggiore di linee di media tensione sulle quali sarà possibile distribuire meglio il numero di utenti andando a razionalizzare ed uniformare la rete.
 In particolare, il progetto prevede la realizzazione di 4 nuove Cabine Primarie : San Cristoforo, Mugello, Comasina, MICO.  |
 | --- | --- | --- |
 |   | Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Si prevede di realizzare le 4 cabine primarie entro il 30 giugno 2026, in linea con la scadenza prevista per il bando PNRR « Rafforzamento Smart Grid ».
-La cabina Primaria San Cristoforo è stata messa in esercizio nel corso dell'ultimo trimestre 2022.  |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Si prevede di realizzare le 4 cabine primarie entro il 30 giugno 2026, in linea con la scadenza prevista per il bando PNRR « Rafforzamento Smart Grid ». |
+| La cabina Primaria San Cristoforo è stata messa in esercizio nel corso dell'ultimo trimestre 2022.  |
 |  2. IMPATTI^{27} (ENERGIA/ riduzione emissioni CO2 equivalente) | Energia rinnovabile generata MWh/anno (valore atteso) (se previsto dall'intervento) | Si riporta di seguito la stima dell'incremento di Hosting Capacity legata alla realizzazione delle 4 nuove Cabine Primarie in oggetto.  |   |
 | --- | --- | --- | --- |
 |   |   |  CP | HC (MW)  |
@@ -8050,7 +7975,7 @@ La Mission prevede che venga effettuato un monitoraggio periodico sull'avanzamen
 |   |   |  San Cristoforo |   | 189  |   |   |   |
 |   |   |  Totale |   | 756  |   |   |   |
 |   |  Riduzione delle emissioni di gas serra^{28} (kg CO_{2eq}/anno )
-(Se possibile considerare i fattori di emissioni indicati nella | AMBITO DI AZIONE | Descrizione |   | Emissioni a fine realizzazione e del progetto | Emissioni (Baseline ) | Delta (emissioni evitate)  |
+| (Se possibile considerare i fattori di emissioni indicati nella | AMBITO DI AZIONE | Descrizione |   | Emissioni a fine realizzazione e del progetto | Emissioni (Baseline ) | Delta (emissioni evitate)  |
 |   |   |  SISTEMA ENERGETICO |  |   |  |  |   |
 |   |   |  EDIFICI / AMBIENTE COSTRUITO (es, Materiali/ tecniche costruttive |  |   |  |  |   |
 |   |   |  ECONOMIA CIRCOLARE E RIFIUTI |  |   |  |  |   |
@@ -8089,15 +8014,15 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 ☐ altro: indicare  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | Incremento dell'elettrificazione dei consumi con conseguente riduzione dell'impatto emissivo  |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | Incremento dell'elettrificazione dei consumi con conseguente riduzione dell'impatto emissivo  |
 |  3. GOVERNANCE E COSTI | Eventuali stakeholder coinvolti
-Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | Gruppo A2A, cittadini, CPO, Comune di Milano, ARERA  |
+| Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | Gruppo A2A, cittadini, CPO, Comune di Milano, ARERA  |
 | --- | --- | --- |
 |   | Commenti sull’implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. | Eventuali criticità potrebbero essere legate alle fasi di approvvigionamento dei componenti principali (es. Trasformatori) e alle fasi autorizzative  |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. | Eventuali criticità potrebbero essere legate alle fasi di approvvigionamento dei componenti principali (es. Trasformatori) e alle fasi autorizzative  |
 |   | Stima dell’investimento complessivo (€) | 90,4 Mln €  |
 |   | OPEX (operational expenditure)
-Se applicabile. | TBD in seguito ad analisi più approfondite  |
+| Se applicabile. | TBD in seguito ad analisi più approfondite  |
 |   | Copertura dell’investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☑ Sì
@@ -8119,9 +8044,9 @@ Progetto 2: Nuove Cabine Secondarie
 | --- | --- | --- | --- |
 |   |  Referente | Mario Turrisi, Responsabile Pianificazione – Unareti S.p.A.  |   |
 |   |  Categoria di progetto | ☐ progetto urbano
-☑ interventi relativi a propri asset e proprie attività  |   |
+| ☑ interventi relativi a propri asset e proprie attività  |   |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | Urbano  |   |
+| Edificio, quartiere, altro | Urbano  |   |
 |   |  Localizzazione
 Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | UBICAZIONI
 ☐ Istituto di Sanità, Scuola, ed il Progetto
@@ -8144,16 +8069,12 @@ La scelta può essere multipla | ☑ Tecnologico/infrastrutturale
 ☐ Comportamentale
 ☐ Altro (specificare)  |   |
 |   |  Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | Il progetto prevede la realizzazione di 7 nuove Cabine di trasformazione MT/bt (Cabine Secondarie) nelle localizzazioni individuate, al posto di edicole ormai dismesse.
-In particolare, delle 8 localizzazioni proposte ne sono state individuate 7 che presentano (o presenteranno, in base alla stima di evoluzione dei fabbisogni di energia elettrica a seguito di elettrificazione dei consumi) un'elevata saturazione delle infrastrutture di trasformazione della tensione esistenti. Pertanto, l'intervento consentirà di migliorare la distribuzione dei carichi elettrici nelle aree selezionate, abilitare lo sviluppo dei carichi elettrici futuri (es. Per trasformazioni di impianti termici, installazione di nuove infrastrutture di ricarica dei veicoli elettrici, etc.)  |   |
-
-5
-6
-
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | Il progetto prevede la realizzazione di 7 nuove Cabine di trasformazione MT/bt (Cabine Secondarie) nelle localizzazioni individuate, al posto di edicole ormai dismesse. |
+| In particolare, delle 8 localizzazioni proposte ne sono state individuate 7 che presentano (o presenteranno, in base alla stima di evoluzione dei fabbisogni di energia elettrica a seguito di elettrificazione dei consumi) un'elevata saturazione delle infrastrutture di trasformazione della tensione esistenti. Pertanto, l'intervento consentirà di migliorare la distribuzione dei carichi elettrici nelle aree selezionate, abilitare lo sviluppo dei carichi elettrici futuri (es. Per trasformazioni di impianti termici, installazione di nuove infrastrutture di ricarica dei veicoli elettrici, etc.)  |   |
 |   |  | e delle eventuali produzioni di energia elettrica da fonti energetiche rinnovabili.  |
 | --- | --- | --- |
 |   | Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Una volta consolidate le interlocuzioni con il Comune di Milano, si prevede di completare la realizzazione delle nuove cabine secondarie entro la fine del 2026. Sarà comunque fornito un cronoprogramma di dettaglio nelle fasi successive del progetto.  |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Una volta consolidate le interlocuzioni con il Comune di Milano, si prevede di completare la realizzazione delle nuove cabine secondarie entro la fine del 2026. Sarà comunque fornito un cronoprogramma di dettaglio nelle fasi successive del progetto.  |
 |  2.
 IMPATTI^{29}
 (ENERGIA/
@@ -8164,13 +8085,13 @@ equivalente) | Energia rinnovabile generata MWh/anno (valore atteso)
 (se previsto dall'intervento) | N/A  |
 | --- | --- | --- |
 |   |  Acquisto di energia elettrica certificata da fonti rinnovabili MWh/anno (valore atteso)
-(se previsto dall'intervento) | N/A  |
+| (se previsto dall'intervento) | N/A  |
 |   |  Variazione dei consumi energetici per vettore
 (applicabile se progetto sugli owned assets) | Sarà possibile incrementare l'elettrificazione dei consumi di circa 4,4 MW.  |
 
 La Mission prevede che venga effettuato un monitoraggio periodico sull'avanzamento complessivo verso gli obiettivi di decarbonizzazione. Vi sarà pertanto richiesto con cadenza presumibilmente biennale l'avanzamento delle azioni che avete proposto (ed eventuali modifiche e integrazioni), utilizzando gli indicatori riportati nella presente sezione della scheda
 |   | Riduzione delle emissioni di gas serra^{30} (kg CO2eq/anno)
-(Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) | AMBITO DI AZIONE | Descrizione | Emissioni a fine realizzazione del progetto | Emissioni (Baseline) | Delta (emissioni evitate)  |
+| (Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) | AMBITO DI AZIONE | Descrizione | Emissioni a fine realizzazione del progetto | Emissioni (Baseline) | Delta (emissioni evitate)  |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |   |  SISTEMA ENERGETICO |  |  |  |   |
 |   |   |  EDIFICI / AMBIENTE COSTRUITO (es, Materiali/ tecniche costruttive |  |  |  |   |
@@ -8210,18 +8131,18 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 ☐ altro: indicare  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | Incremento dell'elettrificazione dei consumi con conseguente riduzione dell'impatto emissivo  |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | Incremento dell'elettrificazione dei consumi con conseguente riduzione dell'impatto emissivo  |
 |  3.
 GOVERNANCE
 E COSTI | Eventuali stakeholder coinvolti
 Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | Comune di Milano, a2a, cittadini, ARERA  |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. | Eventuali barriere potrebbero essere determinate dal diniego del Comune di Milano all'utilizzo delle aree delle edicole dismesse  |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. | Eventuali barriere potrebbero essere determinate dal diniego del Comune di Milano all'utilizzo delle aree delle edicole dismesse  |
 |   |  Stima dell'investimento
-complessivo (€) | ca 350 k€  |
+| complessivo (€) | ca 350 k€  |
 |   |  OPEX (operational expenditure)
-Se applicabile. | TBD in seguito ad analisi più approfondite  |
+| Se applicabile. | TBD in seguito ad analisi più approfondite  |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☐ Sì
@@ -8233,7 +8154,7 @@ Se sì, quali?
 -
 ☐ Finanziamenti Europei  |
 |   |  | ☐ Altro
-Quanto incidono in % sull'investimento complessivo?  |
+| Quanto incidono in % sull'investimento complessivo?  |
 | --- | --- | --- |
 
 9
@@ -8243,11 +8164,11 @@ Progetto 3: Razionalizzazione Asset ATM
 | --- | --- | --- |
 |   |  Referente | Luca Cavalletto, Responsabile Asset Management – A2A S.p.A.  |
 |   |  Categoria di progetto | ☐ progetto urbano
-☑ interventi relativi a propri asset e proprie attività  |
+| ☑ interventi relativi a propri asset e proprie attività  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | Urbano  |
+| Edificio, quartiere, altro | Urbano  |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Sottostazioni Elettriche Unareti : Bassi, Brunelleschi, Caracciolo, San Dionigi, Gadio, Loreto, Benedetto Marcello, Mugello, Ricevitrice Ovest, Po, Ponzio, Ricevitrice Sud, Suzzani, Trento  |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Sottostazioni Elettriche Unareti : Bassi, Brunelleschi, Caracciolo, San Dionigi, Gadio, Loreto, Benedetto Marcello, Mugello, Ricevitrice Ovest, Po, Ponzio, Ricevitrice Sud, Suzzani, Trento  |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (as es. se si tratta di un progetto integrato). | ☑ Sistemi energetici
 ☐ Involucro edilizio (cappotto, coperture, serramenti)
@@ -8273,7 +8194,7 @@ Tale realizzazione è condizione necessaria per la progressiva elettrificazione 
 |   |  | ricarica di tali mezzi diffuse in modo capillare in tutto il Comune di Milano (c.d. Opportunity Carge). Gli interventi di potenziamento degli impianti elettrici funzionali alla conversione e alimentazione della rete ATM in corrente continua sono necessari per la decarbonizzazione del parco mezzi pubblici ATM.  |
 | --- | --- | --- |
 |   | Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | La realizzazione del progetto avverrà in modo graduale, con tempistiche definite dalle parti riportate su un apposito cronoprogramma, che sarà condiviso non appena completate le interlocuzioni già ampiamente avviate col Comune di Milano e ATM.  |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | La realizzazione del progetto avverrà in modo graduale, con tempistiche definite dalle parti riportate su un apposito cronoprogramma, che sarà condiviso non appena completate le interlocuzioni già ampiamente avviate col Comune di Milano e ATM.  |
 |  2. IMPATTI^{31} (ENERGIA/ riduzione emissioni CO2 equivalente) | Energia rinnovabile generata MWh/anno (valore atteso) (se previsto dall'intervento) | N/A  |
 | --- | --- | --- |
 |   |  Acquisto di energia elettrica certificata da fonti rinnovabili MWh/anno (valore atteso) (se previsto dall'intervento) | N/A  |
@@ -8282,7 +8203,7 @@ La Mission prevede che venga effettuato un monitoraggio periodico sull'avanzamen
 |   | Variazione dei consumi energetici per vettore (applicabile se progetto sugli owned assets) | N/A  |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  Riduzione delle emissioni di gas serra³² (kg CO2eq/anno)
-(Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) | AMBITO DI AZIONE | Descrizione | Emissioni a fine realizzazione del progetto | Emissioni (Baseline) | Delta (emissioni evitate)  |
+| (Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) | AMBITO DI AZIONE | Descrizione | Emissioni a fine realizzazione del progetto | Emissioni (Baseline) | Delta (emissioni evitate)  |
 |   |   |  SISTEMA ENERGETICO |  |  |  |   |
 |   |   |  EDIFICI / AMBIENTE COSTRUITO (es, Materiali/ tecniche costruttive |  |  |  |   |
 |   |   |  ECONOMIA CIRCOLARE E RIFIUTI |  |  |  |   |
@@ -8317,23 +8238,21 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 ☐ altro: indicare  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | Riduzione delle emissioni di CO2 per effetto dell'elettrificazione del parco mezzi del TPL.  |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | Riduzione delle emissioni di CO2 per effetto dell'elettrificazione del parco mezzi del TPL.  |
 |  3.
 GOVERNANCE
 E COSTI | Eventuali stakeholder coinvolti
 Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | Comune di Milano, Gruppo a2a, ATM, cittadini  |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. | Un fattore di forte criticità è rappresentato dalla periodica interruzione delle interlocuzioni tra le parti,  |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. | Un fattore di forte criticità è rappresentato dalla periodica interruzione delle interlocuzioni tra le parti,  |
 |   |  Stima dell'investimento
-complessivo (€) | Da stimare con riferimento al Piano di Sviluppo ATM  |
+| complessivo (€) | Da stimare con riferimento al Piano di Sviluppo ATM  |
 |   |  OPEX (operational expenditure)
-Se applicabile. | N/A  |
+| Se applicabile. | N/A  |
 |   |  Copertura dell'investimento
-Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
-☐ Sì  |
-4
-
+| Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali? |
+| ☐ Sì  |
 |   | finanziamenti europei o incentivi nazionali/locali. | ☑ No
 Se sì, quali?
 
@@ -8434,12 +8353,12 @@ Si richiede di compilare la “Scheda raccolta azioni” (suddivisa in 3 parti) 
 | --- | --- | --- |
 |   |  Referente | Francesco Manzulli  |
 |   |  Categoria di progetto | x progetto urbano
-x interventi relativi a propri asset e proprie attività  |
+| x interventi relativi a propri asset e proprie attività  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | Mezzi pubblici, edifici (depositi)  |
+| Edificio, quartiere, altro | Mezzi pubblici, edifici (depositi)  |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Tutti i depositi ATM subiranno delle modifiche per disporre l'installazione di colonnine di ricarica per i nuovi bus elettrici.
-Inoltre, la costruzione dei nuovi depositi avverrà presso Viale Toscana e Via Triboniano.  |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Tutti i depositi ATM subiranno delle modifiche per disporre l'installazione di colonnine di ricarica per i nuovi bus elettrici. |
+| Inoltre, la costruzione dei nuovi depositi avverrà presso Viale Toscana e Via Triboniano.  |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (as es. se si tratta di un progetto integrato). | x Sistemi energetici
 ☐ Involucro edilizio (cappotto, coperture, serramenti)
@@ -8448,7 +8367,7 @@ x Mobilità e trasporti  |
 5
 
 |   |  | ☐ Economia circolare e rifiuti
-x Infrastrutture verdi e Nature Based Solutions  |
+| x Infrastrutture verdi e Nature Based Solutions  |
 | --- | --- | --- |
 |   | Tipologia di intervento
 La scelta può essere multipla | x Tecnologico/infrastrutturale
@@ -8462,8 +8381,8 @@ Fornire una descrizione generale del progetto relativamente agli ambiti identifi
 +
 Riqualificazione e costruzione di nuovi depositi, che prevede l'utilizzo di strumenti NBS (Natural Based Solutions).  |
 |   | Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Avvio : 2017
-Conclusione : 2030  |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Avvio : 2017 |
+| Conclusione : 2030  |
 |  2.
 IMPATTI¹
 (ENERGIA/
@@ -8486,11 +8405,11 @@ MWh/anno
 (se previsto dall'intervento) |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  Variazione dei consumi energetici per vettore
-(applicabile se progetto sugli owned assets) | 12 GWh /anno addizionali in più di energia elettrica e riduzione di circa 3.500.000 l di gasolio l'anno addizionali al 2030  |   |   |   |   |
+| (applicabile se progetto sugli owned assets) | 12 GWh /anno addizionali in più di energia elettrica e riduzione di circa 3.500.000 l di gasolio l'anno addizionali al 2030  |   |   |   |   |
 |   |  Riduzione delle emissioni di gas serra² (kg CO2eq/anno)
-(Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) | AMBITO DI AZIONE | Descrizione | Emissioni a fine realizzazione del progetto | Emissioni (Baseline) | Delta (emissioni evitate)  |
+| (Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) | AMBITO DI AZIONE | Descrizione | Emissioni a fine realizzazione del progetto | Emissioni (Baseline) | Delta (emissioni evitate)  |
 |   |   |  SISTEMA ENERGETICO | Piano "Full Electric" Bus:
-Si stima che il progetto passi dalla produzione di 66.376.690 kg CO2/anno prodotti nel 2016 a 12.720 kg CO2/anno nel 3031. Comportando quindi una decrescita di CO2 prodotta inferiore in media di 5.800.000 kg CO2/anno. | 12.000 | 75.000 (Scope 1) | 63.000  |
+| Si stima che il progetto passi dalla produzione di 66.376.690 kg CO2/anno prodotti nel 2016 a 12.720 kg CO2/anno nel 3031. Comportando quindi una decrescita di CO2 prodotta inferiore in media di 5.800.000 kg CO2/anno. | 12.000 | 75.000 (Scope 1) | 63.000  |
 |   |   |  EDIFICI / AMBIENTE COSTRUITO (es, Materiali/ tecniche costruttive |  |  |  |   |
 
 ² Questa parte della scheda valorizza il contributo del progetto presentato in termini di riduzione delle emissioni di gas serra rispetto a uno scenario di riferimento (baseline). La baseline è costituita, nel caso di edifici/strutture e impianti pre-esistenti, dalle emissioni nello stato di fatto pre-intervento; nel caso di interventi con nuove costruzioni, da una situazione standard conforme ai minimi normativi. Non necessariamente tutti gli ambiti devono essere inclusi.
@@ -8525,10 +8444,8 @@ x nuovi punti di ricarica elettrica: n. 80 opportunity charger al 2031 (dato in 
 ☐ superficie permeabile a verde aggiuntiva: mq
 x altro: indicare  |
 | --- | --- | --- |
-8
-
 |   |  | Bus elettrici : 1200 autobus entro il 2031 e relativi stalli di ricarica interni ai depositi
-Auto aziendali elettriche : 97  |
+| Auto aziendali elettriche : 97  |
 | --- | --- | --- |
 |   | **Cobenefici**
 I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | **Benefici Economici**
@@ -8550,10 +8467,10 @@ Fornitori e Partner commerciali
 Abitanti della Città Metropolitana di Milano  |
 | --- | --- | --- |
 |   |  Commenti sull’implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. | Possibilità di estensioni tempistiche realizzazione depositi – e quindi rallentamento immatricolazione bus per mancanza di spazio - dovute al necessario confronto con diversi stakeholder, in particolare accordi con Comune di Milano - PNRR non prevede fondi dedicati a realizz. nuovi depositi seppure abilitanti a raggiungimento full electric  |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. | Possibilità di estensioni tempistiche realizzazione depositi – e quindi rallentamento immatricolazione bus per mancanza di spazio - dovute al necessario confronto con diversi stakeholder, in particolare accordi con Comune di Milano - PNRR non prevede fondi dedicati a realizz. nuovi depositi seppure abilitanti a raggiungimento full electric  |
 |   |  Stima dell’investimento complessivo (€) | Valore complessivo dell’investimento: 1.200 mln €  |
 |   |  OPEX (operational expenditure)
-Se applicabile. | /  |
+| Se applicabile. | /  |
 |   |  Copertura dell’investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☑ Sì (per quanto riguarda il progetto bus full electric)
@@ -8580,13 +8497,13 @@ mln € PNRR)  |
 | --- | --- | --- |
 |   |  Referente | Paolo Marchetti  |
 |   |  Categoria di progetto | x progetto urbano
-x interventi relativi a propri asset e proprie attività  |
+| x interventi relativi a propri asset e proprie attività  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | Edifici (depositi : Giambellino e San Donato)
-Quartieri (Giambellino, San Donato)  |
+| Edificio, quartiere, altro | Edifici (depositi : Giambellino e San Donato) |
+| Quartieri (Giambellino, San Donato)  |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Deposito San Donato (Piantumazione alberi)
-Deposito Giambellino (Green Wall)  |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Deposito San Donato (Piantumazione alberi) |
+| Deposito Giambellino (Green Wall)  |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (as es. se si tratta di un progetto integrato). | ☐ Sistemi energetici
 ☐ Involucro edilizio (cappotto, coperture, serramenti)
@@ -8602,14 +8519,11 @@ x Gestionale
 ☐ Comportamentale
 ☐ Altro (specificare)  |
 |   |  Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | Green Wall : parete verde realizzata sulla facciata del deposito autobus di Giambellino su una superficie totale di 350 metri quadrati, la cui progettazione ha fra i propri obiettivi il miglioramento della qualità dell'ambiente.
-
-Forestazione Urbana : piantumazione di 430 alberi presso il deposito di San Donato.  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | Green Wall : parete verde realizzata sulla facciata del deposito autobus di Giambellino su una superficie totale di 350 metri quadrati, la cui progettazione ha fra i propri obiettivi il miglioramento della qualità dell'ambiente. |
+| Forestazione Urbana : piantumazione di 430 alberi presso il deposito di San Donato.  |
 |   |  Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Green Wall : 2022
-Forestazione urbana : 2022-2023  |
-
-0
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Green Wall : 2022 |
+| Forestazione urbana : 2022-2023  |
 |  2. IMPATTI³ (ENERGIA/ riduzione emissioni CO2 equivalente) | Energia rinnovabile generata MWh/anno (valore atteso) (se previsto dall'intervento) | 0 MWh/anno  |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  Acquisto di energia elettrica certificata da fonti rinnovabili MWh/anno (valore atteso) (se previsto dall'intervento) | /  |   |   |   |   |
@@ -8640,8 +8554,6 @@ Forestazione urbana : 2022-2023  |
 |   |  metano | KgCO2eq/GJ | 56.077 | Elaborazioni AMAT su dati Del. n.14/2009 e dati ISPRA  |
 |   |  GPL | KgCO2eq/GJ | 63.267 | Elaborazioni AMAT su dati Del. n.14/2009 e dati ISPRA  |
 |   |  TLR Milano Est | KgCO2eq/kWh | 0.164 | A2A Calore Servizi  |
-3
-
 |   | TLR Milano Ovest | KgCO2eq/kWh | 0.059 | A2A Calore Servizi  |
 | --- | --- | --- | --- | --- |
 |   |  TLR Milano Nord | KgCO2eq/kWh | 0.149 | A2A Calore Servizi  |
@@ -8674,14 +8586,12 @@ Fornitori e Partner commerciali
 Abitanti della Città Metropolitana di Milano  |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. | Barriere per la piantumazione di alberi : animali selvatici come conigli ostacolano la crescita degli alberi piantumati  |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. | Barriere per la piantumazione di alberi : animali selvatici come conigli ostacolano la crescita degli alberi piantumati  |
 |   |  Stima dell'investimento
-complessivo (€) | Green Wall : 208.660 euro
-Forestazione urbana : 10.000 euro  |
+| complessivo (€) | Green Wall : 208.660 euro |
+| Forestazione urbana : 10.000 euro  |
 |   |  OPEX (operational expenditure)
-Se applicabile. | /  |
-4
-
+| Se applicabile. | /  |
 |   | Copertura dell'investimento
 Indicare se per la realizzazione del
 progetto si prevede che, oltre a fonti di
@@ -8723,12 +8633,12 @@ Si richiede di compilare la “Scheda raccolta azioni” (suddivisa in 3 parti) 
 | --- | --- | --- |
 |   |  Referente | Andrea Leverano  |
 |   |  Categoria di progetto | ☐ progetto urbano
-x interventi relativi a propri asset e proprie attività  |
+| x interventi relativi a propri asset e proprie attività  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | Siti aziendali (depositi e parcheggi)  |
+| Edificio, quartiere, altro | Siti aziendali (depositi e parcheggi)  |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Tetti Depositi : Famagosta (tetto e suolo), Giambellino, Monte Rosa, Sarca, Molise, Palmanova, Gorgonzola, Teodosio, Cologno Monzese, Precotto.
-Parcheggi : Cascina Gobba, Lampugnano, Bisceglie, Famagosta, San Donato Paullese, San Donato via Emilia, Molino Dorino, Romolo raso, Abbiategrasso, Forlanini, San Leonardo, Molinetto di Lorenteggio, Quarto Oggiaro, Cologno Nord, Gessate, via Novara.  |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Tetti Depositi : Famagosta (tetto e suolo), Giambellino, Monte Rosa, Sarca, Molise, Palmanova, Gorgonzola, Teodosio, Cologno Monzese, Precotto. |
+| Parcheggi : Cascina Gobba, Lampugnano, Bisceglie, Famagosta, San Donato Paullese, San Donato via Emilia, Molino Dorino, Romolo raso, Abbiategrasso, Forlanini, San Leonardo, Molinetto di Lorenteggio, Quarto Oggiaro, Cologno Nord, Gessate, via Novara.  |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (as es. se si tratta di un progetto integrato). | ☐ Sistemi energetici
 ☐ Involucro edilizio (cappotto, coperture, serramenti)
@@ -8744,15 +8654,13 @@ La scelta può essere multipla | x Tecnologico/infrastrutturale
 ☐ Comportamentale
 ☐ Altro (specificare)  |
 |   |  Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | Affidamento servizi di ingegneria per le attività di redazione di Piano di Fattibilità Tecnico economica (PFTE), ai sensi del DL 77/2021, per l'installazione di impianti fotovoltaici su edifici Depositi e Parcheggi di competenza ATM  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | Affidamento servizi di ingegneria per le attività di redazione di Piano di Fattibilità Tecnico economica (PFTE), ai sensi del DL 77/2021, per l'installazione di impianti fotovoltaici su edifici Depositi e Parcheggi di competenza ATM  |
 |   |  Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di |   |
-6
-
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di |   |
 |   | realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | La durata del servizio è fissata in 120 giorni naturali e consecutivi, decorrenti dalla data di sottoscrizione del verbale di avvio dell'esecuzione del servizio per tutte le fasi prestazionali previste  |
 | --- | --- | --- |
 |  2. IMPATTI^{5} (ENERGIA/ riduzione emissioni CO2 equivalente) | Energia rinnovabile generata MWh/anno (valore atteso) (se previsto dall'intervento) | Depositi: 5.530 MWh/anno
-Parcheggi: 8.960 MWh/anno  |   |   |   |   |
+| Parcheggi: 8.960 MWh/anno  |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  Acquisto di energia elettrica certificata da fonti rinnovabili MWh/anno (valore atteso) (se previsto dall'intervento) | 0 MWh/anno  |   |   |   |   |
 |   |  Variazione dei consumi energetici per vettore (applicabile se progetto sugli owned assets) | /  |   |   |   |   |
@@ -8761,7 +8669,7 @@ Parcheggi: 8.960 MWh/anno  |   |   |   |   |
 
 La Mission prevede che venga effettuato un monitoraggio periodico sull'avanzamento complessivo verso gli obiettivi di decarbonizzazione. Vi sarà pertanto richiesto con cadenza presumibilmente biennale l'avanzamento delle azioni che avete proposto (ed eventuali modifiche e integrazioni), utilizzando gli indicatori riportati nella presente sezione della scheda
 |   | gas serra⁶ (kg CO2eq/anno)
-(Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) | EDIFICI / AMBIENTE COSTRUITO (es, Materiali/ tecniche costruttive |  |  |  |   |
+| (Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) | EDIFICI / AMBIENTE COSTRUITO (es, Materiali/ tecniche costruttive |  |  |  |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |   |  ECONOMIA CIRCOLARE E RIFIUTI |  |  |  |   |
 |   |   |  MOBILITA' E TRASPORTI |  |  |  |   |
@@ -8808,12 +8716,12 @@ Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in co
 Territorio  |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. | /  |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. | /  |
 |   |  Stima dell'investimento
-complessivo (€) | Circa 56.500 euro (depositi)
-Circa 89.125 euro (parcheggi)  |
+| complessivo (€) | Circa 56.500 euro (depositi) |
+| Circa 89.125 euro (parcheggi)  |
 |   |  OPEX (operational expenditure)
-Se applicabile. | /  |
+| Se applicabile. | /  |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☐ Sì
@@ -8899,12 +8807,12 @@ Si richiede di compilare la "Scheda raccolta azioni" (suddivisa in 3 parti) dupl
 |  1. CONTESTO e DESCRIZIONE | N progetto - Titolo progetto | 2 – Impianti fotovoltaici per la produzione di energia sulle coperture dei centri cucina della refezione scolastica  |
 | --- | --- | --- |
 |  Referente | Dario Mastaglio
-Direttore Servizi Tecnici, Milano Ristorazione  |
+| Direttore Servizi Tecnici, Milano Ristorazione  |
 | --- | --- |
 |  Categoria di progetto | ☐ progetto urbano
-X interventi relativi a propri asset e proprie attività  |
+| X interventi relativi a propri asset e proprie attività  |
 |  Scala dell'intervento
-Edificio, quartiere, altro | Altro (intera città)  |
+| Edificio, quartiere, altro | Altro (intera città)  |
 |  Localizzazione
 Indicare l'area interessata
 eventualmente allegando una
@@ -8959,7 +8867,7 @@ realizzati che proiettano effetti
 positivi da qui al 2030, considerare | Progettazione entro 2026
 Realizzazione entro 2030  |
 |   | solo quelli conclusi successivamente
-all'anno 2021-baseline). |   |
+| all'anno 2021-baseline). |   |
 | --- | --- | --- |
 |  2.
 IMPATTI^{1}
@@ -9046,15 +8954,15 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 X altro: nuovi impianti fotovoltaici installati  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | Connessione con le colonnine di ricarica installate presso i centri cucina per l'elettrificazione della flotta.  |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | Connessione con le colonnine di ricarica installate presso i centri cucina per l'elettrificazione della flotta.  |
 |  3. GOVERNANCE E COSTI | Eventuali stakeholder coinvolti
-Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | A2A progetto di Project Financing consistente nella realizzazione dell'investimento.  |
+| Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | A2A progetto di Project Financing consistente nella realizzazione dell'investimento.  |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. | Sinergia con Area Impianti del Comune di Milano e con gli istituti scolastici.  |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. | Sinergia con Area Impianti del Comune di Milano e con gli istituti scolastici.  |
 |   |  Stima dell'investimento complessivo (€) | 700.000 €  |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 X Sì
@@ -9135,13 +9043,13 @@ Si richiede di compilare la "Scheda raccolta azioni" (suddivisa in 3 parti) dupl
 |  1. CONTESTO e DESCRIZIONE | N progetto - Titolo progetto | 1 – Elettrificazione Flotta trasporto pasti refezione scolastica  |
 | --- | --- | --- |
 |   |  Referente | Dario Mastaglio
-Direttore Servizi Tecnici, Milano Ristorazione  |
+| Direttore Servizi Tecnici, Milano Ristorazione  |
 |   |  Categoria di progetto | ☐ progetto urbano
-X interventi relativi a propri asset e proprie attività  |
+| X interventi relativi a propri asset e proprie attività  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | Altro (intera città)  |
+| Edificio, quartiere, altro | Altro (intera città)  |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Intera città  |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Intera città  |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (as es. se si tratta di un progetto integrato). | ☐ Sistemi energetici
 ☐ Involucro edilizio (cappotto, coperture, serramenti)
@@ -9157,12 +9065,12 @@ La scelta può essere multipla | X Tecnologico/infrastrutturale
 ☐ Comportamentale
 ☐ Altro (specificare)  |
 |   |  Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | Progetto di investimento per l'elettrificazione della flotta per il trasporto pasti di Milano Ristorazione, consistente in 119 furgoni (attualmente il servizio è esternalizzato, con la soluzione nolo a caldo). Nel 2021 è stato realizzato un progetto di fattibilità tecnico economico sull'infrastruttura di ricarica elettrica. Restituendo elementi circa la possibilità di installare 37 colonnine di ricarica elettrica nei centri cucina dotati di parcheggio interno (23.000€/colonnina), nonché elementi per stimare il valore per l'acquisizione di furgoni full-elettrici per il trasporto pasti (60.000€/furgone). L'investimento prevede l'acquisizione dei furgoni full elettrici (119 furgoni x 60.000€/furgone) mentre il personale andrebbe reperito sul mercato mediante  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | Progetto di investimento per l'elettrificazione della flotta per il trasporto pasti di Milano Ristorazione, consistente in 119 furgoni (attualmente il servizio è esternalizzato, con la soluzione nolo a caldo). Nel 2021 è stato realizzato un progetto di fattibilità tecnico economico sull'infrastruttura di ricarica elettrica. Restituendo elementi circa la possibilità di installare 37 colonnine di ricarica elettrica nei centri cucina dotati di parcheggio interno (23.000€/colonnina), nonché elementi per stimare il valore per l'acquisizione di furgoni full-elettrici per il trasporto pasti (60.000€/furgone). L'investimento prevede l'acquisizione dei furgoni full elettrici (119 furgoni x 60.000€/furgone) mentre il personale andrebbe reperito sul mercato mediante  |
 |   |  | gara d'appalto, lasciando al fornitore l'onere della ricarica, al fine di evitare l'installazione di colonnine presso i centri cucina.  |
 | --- | --- | --- |
 |   | Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Fine gara attualmente vigente: 08/2024
-Nuova gara in fase di definizione.  |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Fine gara attualmente vigente: 08/2024 |
+| Nuova gara in fase di definizione.  |
 |  2.
 IMPATTI¹
 (ENERGIA/
@@ -9200,7 +9108,7 @@ stimato in 232 Ton CO2e  |
 
 ¹ La Mission prevede che venga effettuato un monitoraggio periodico sull'avanzamento complessivo verso gli obiettivi di decarbonizzazione. Vi sarà pertanto richiesto con cadenza presumibilmente biennale l'avanzamento delle azioni che avete proposto (ed eventuali modifiche e integrazioni), utilizzando gli indicatori riportati nella presente sezione della scheda
 |   | Riduzione delle emissioni di gas serra² (kg CO2eq/anno)
-(Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) | AMBITO DI AZIONE | Descrizione | Emissioni a fine realizzazione del progetto | Emissioni (Baseline) | Delta (emissioni evitate)  |
+| (Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) | AMBITO DI AZIONE | Descrizione | Emissioni a fine realizzazione del progetto | Emissioni (Baseline) | Delta (emissioni evitate)  |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |   |  SISTEMA ENERGETICO |  |  |  |   |
 |   |   |  EDIFICI / AMBIENTE COSTRUITO (es, Materiali/ tecniche costruttive |  |  |  |   |
@@ -9244,7 +9152,7 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 ☐ altro: indicare  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | La conversione agirà unicamente sulla fonte di approvvigionamento (da bifuel -benzina/GLP- ad elettrico), senza incidere sul piano dei trasporto, già efficientato.  |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | La conversione agirà unicamente sulla fonte di approvvigionamento (da bifuel -benzina/GLP- ad elettrico), senza incidere sul piano dei trasporto, già efficientato.  |
 |  3.
 GOVERNANCE
 E COSTI | Eventuali stakeholder coinvolti
@@ -9252,12 +9160,12 @@ Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in co
 Green Router, società di consulenza esperta nella modellizzazione per la valutazione dell'impatto ambientale dei trasporti di merci.  |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. | Stima dei costi effettuata in base all'acquisizione dei mezzi di trasporto da parte della società.
-Verrà effettuata un'analisi funzionale ad analizzare un'eventuale internalizzazione nei costi della prossima gara.  |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. | Stima dei costi effettuata in base all'acquisizione dei mezzi di trasporto da parte della società. |
+| Verrà effettuata un'analisi funzionale ad analizzare un'eventuale internalizzazione nei costi della prossima gara.  |
 |   |  Stima dell'investimento
-complessivo (€) | 7.140.000 €  |
+| complessivo (€) | 7.140.000 €  |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   | Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☑ Sì
@@ -9343,11 +9251,11 @@ Si richiede di compilare la “Scheda raccolta azioni” (suddivisa in 3 parti) 
 | --- | --- | --- |
 |   |  Referente | Marelli - MM-SII-DAFO-EAC-MEA  |
 |   |  Categoria di progetto | ☐ progetto urbano
-☑ interventi relativi a propri asset e proprie attività  |
+| ☑ interventi relativi a propri asset e proprie attività  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | INSTALLAZIONE SULLA COPERTURA PIANA DELLA VASCA DI ACCUMULO ACQUA POTABILE DELLA CENTRALE DI POMPAGGIO DI UN IMPIANTO FOTOVOLTAICO DA 60,3 kWp.  |
+| Edificio, quartiere, altro | INSTALLAZIONE SULLA COPERTURA PIANA DELLA VASCA DI ACCUMULO ACQUA POTABILE DELLA CENTRALE DI POMPAGGIO DI UN IMPIANTO FOTOVOLTAICO DA 60,3 kWp.  |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | CENTRALE A.P. BAGGIO, VIA CASTROVILLARI N° 20, MILANO (SHAPE FILE DISPONIBILIE)  |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | CENTRALE A.P. BAGGIO, VIA CASTROVILLARI N° 20, MILANO (SHAPE FILE DISPONIBILIE)  |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (as es. se si tratta di un progetto integrato). | ☐ Sistemi energetici
 ☐ Involucro edilizio (cappotto, coperture, serramenti)
@@ -9363,9 +9271,9 @@ La scelta può essere multipla | ☑ Tecnologico/infrastrutturale
 ☐ Comportamentale
 ☐ Altro (specificare)  |
 |   |  Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | INSTALLAZIONE PANNELLI FOTOVOLTAICI PER PRODUZIONE E AUTOCONSUMO DI ENERGIA ELETTRICA DA FONTI RINNOVABILI  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | INSTALLAZIONE PANNELLI FOTOVOLTAICI PER PRODUZIONE E AUTOCONSUMO DI ENERGIA ELETTRICA DA FONTI RINNOVABILI  |
 |   |  Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di | AVVIO 2023-CONCLUSIONE 2024  |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di | AVVIO 2023-CONCLUSIONE 2024  |
 |   | realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). |   |
 | --- | --- | --- |
 |  2. IMPATTI¹ (ENERGIA/ riduzione emissioni CO2 equivalente) | Energia rinnovabile generata MWh/anno (valore atteso) (se previsto dall'intervento) | PRODUZIONE ANNUA ATTESA 75,23 MWh/anno  |   |   |   |   |
@@ -9413,13 +9321,13 @@ I cobenefici sono i risultati indiretti della propria azione, effetti e cambiame
 sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non)
 
 |  3. GOVERNANCE E COSTI | Eventuali stakeholder coinvolti
-Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | /  |
+| Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | /  |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. | /  |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. | /  |
 |   |  Stima dell'investimento complessivo (€) | € 270.000  |
 |   |  OPEX (operational expenditure)
-Se applicabile. | /  |
+| Se applicabile. | /  |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☐ Sì
@@ -9441,11 +9349,11 @@ CON NUOVO IMPIANTO DI FILTRAZIONE CAG  |
 | --- | --- | --- |
 |   |  Referente | Marelli - MM-DLCM  |
 |   |  Categoria di progetto | ☐ progetto urbano
-☑ interventi relativi a propri asset e proprie attività  |
+| ☑ interventi relativi a propri asset e proprie attività  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | INSTALLAZIONE SULLA COPERTURA PIANA DELLA CENTRALE DI POMPAGGIO DI UN IMPIANTO FOTOVOLTAICO DA 200 kWp.  |
+| Edificio, quartiere, altro | INSTALLAZIONE SULLA COPERTURA PIANA DELLA CENTRALE DI POMPAGGIO DI UN IMPIANTO FOTOVOLTAICO DA 200 kWp.  |
 |   | Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | CENTRALE A.P. SUZZANI, VIA SUZZANI 120, MILANO (SHAPE FILE DISPONIBILIE)  |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | CENTRALE A.P. SUZZANI, VIA SUZZANI 120, MILANO (SHAPE FILE DISPONIBILIE)  |
 | --- | --- | --- |
 |   | Ambiti interessati dal progetto
 La scelta può essere multipla (as es. se si tratta di un progetto integrato). | ☐ Sistemi energetici
@@ -9462,9 +9370,9 @@ La scelta può essere multipla | ☑ Tecnologico/infrastrutturale
 ☐ Comportamentale
 ☐ Altro (specificare)  |
 |   | Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | INSTALLAZIONE PANNELLI FOTOVOLTAICI PER PRODUZIONE E AUTOCONSUMO DI ENERGIA ELETTRICA DA FONTI RINNOVABILI  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | INSTALLAZIONE PANNELLI FOTOVOLTAICI PER PRODUZIONE E AUTOCONSUMO DI ENERGIA ELETTRICA DA FONTI RINNOVABILI  |
 |   | Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | AVVIO 2021-CONCLUSIONE 2024  |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | AVVIO 2021-CONCLUSIONE 2024  |
 |  2.
 IMPATTI³
 (ENERGIA/
@@ -9517,15 +9425,15 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 ☐ altro:  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | /  |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | /  |
 |  3. GOVERNANCE E COSTI | Eventuali stakeholder coinvolti
-Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | /  |
+| Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | /  |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. | /  |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. | /  |
 |   |  Stima dell'investimento complessivo (€) | € 500.000,00  |
 |   |  OPEX (operational expenditure)
-Se applicabile. | /  |
+| Se applicabile. | /  |
 |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☐ Sì
@@ -9546,11 +9454,11 @@ Quanto incidono in % sull'investimento complessivo?  |
 | --- | --- | --- |
 |   |  Referente | MM-SII-DAFO-EAC-MEA  |
 |   |  Categoria di progetto | ☐ progetto urbano
-☑ interventi relativi a propri asset e proprie attività  |
+| ☑ interventi relativi a propri asset e proprie attività  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | CENTRALI A.P. ASSIANO, CIMABUE, CHIUSABELLA, LINATE, ITALIA, NOVARA E MARTINI  |
+| Edificio, quartiere, altro | CENTRALI A.P. ASSIANO, CIMABUE, CHIUSABELLA, LINATE, ITALIA, NOVARA E MARTINI  |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | CENTRALI A.P. MM (SHAPE FILE DISPONIBILIE)  |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | CENTRALI A.P. MM (SHAPE FILE DISPONIBILIE)  |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (as es. se si tratta di un progetto integrato). | ☑ Sistemi energetici
 ☐ Involucro edilizio (cappotto, coperture, serramenti)
@@ -9575,7 +9483,7 @@ La scelta può essere multipla | ☑ Tecnologico/infrastrutturale
 
 La Mission prevede che venga effettuato un monitoraggio periodico sull'avanzamento complessivo verso gli obiettivi di decarbonizzazione. Vi sarà pertanto richiesto con cadenza presumibilmente biennale l'avanzamento delle azioni che avete proposto (ed eventuali modifiche e integrazioni), utilizzando gli indicatori riportati nella presente sezione della scheda
 |   | Riduzione delle emissioni di gas serra^{6} (kg CO2eq/anno)
-(Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) | AMBITO DI AZIONE | Descrizione | Emissioni a fine realizzazione del progetto | Emissioni (Baseline) | Delta (emissioni evitate)  |
+| (Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) | AMBITO DI AZIONE | Descrizione | Emissioni a fine realizzazione del progetto | Emissioni (Baseline) | Delta (emissioni evitate)  |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |   |  SISTEMA ENERGETICO | Mix di rete |  |  | 26002,43  |
 |   |   |  EDIFICI / AMBIENTE COSTRUITO (es, Materiali/ tecniche costruttive |  |  |  |   |
@@ -9610,15 +9518,15 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 ☐ altro:  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | /  |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | /  |
 |  3. GOVERNANCE E COSTI | Eventuali stakeholder coinvolti
-Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | /  |
+| Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | /  |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. | /  |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. | /  |
 |   |  Stima dell'investimento complessivo (€) | € 95.000,00  |
 |   |  OPEX (operational expenditure)
-Se applicabile. | /  |
+| Se applicabile. | /  |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☐ Sì
@@ -9638,11 +9546,11 @@ complessivo?
 | --- | --- | --- |
 |   |  Referente | Marelli - MM-SII-DAFO-EAC-MEP  |
 |   |  Categoria di progetto | ☐ progetto urbano
-☑ interventi relativi a propri asset e proprie attività  |
+| ☑ interventi relativi a propri asset e proprie attività  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | CENTRALI A.P. VARIE  |
+| Edificio, quartiere, altro | CENTRALI A.P. VARIE  |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | CENTRALI A.P. VARIE DISLOCATE SULLA CITTA' DI MILANO (SHAPE FILE DISPONIBILIE)  |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | CENTRALI A.P. VARIE DISLOCATE SULLA CITTA' DI MILANO (SHAPE FILE DISPONIBILIE)  |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (as es. se si tratta di un progetto integrato). | ☑ Sistemi energetici
 ☐ Involucro edilizio (cappotto, coperture, serramenti)
@@ -9658,7 +9566,7 @@ La scelta può essere multipla | ☑ Tecnologico/infrastrutturale
 ☐ Comportamentale
 ☐ Altro (specificare)  |
 |   |  Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | SOSTITUZIONE POMPE GRUPPI PRINCIPALI CENTRALI LAMBRO E OVIDIO CON NUOVE MACCHINE AD ALTA EFFICIENZA; SOSTITUZIONE MOTORI GRUPPI PRINCIPALI CENTRALI LAMBRO, OVIDIO, ABBIATEGRASSO, SALEMI, CHIUSABELLA, CRESCENZAGO, SAN SIRO CON NUOVI MOTORI IE4 AD ALTA EFFICIENZA  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | SOSTITUZIONE POMPE GRUPPI PRINCIPALI CENTRALI LAMBRO E OVIDIO CON NUOVE MACCHINE AD ALTA EFFICIENZA; SOSTITUZIONE MOTORI GRUPPI PRINCIPALI CENTRALI LAMBRO, OVIDIO, ABBIATEGRASSO, SALEMI, CHIUSABELLA, CRESCENZAGO, SAN SIRO CON NUOVI MOTORI IE4 AD ALTA EFFICIENZA  |
 |   | Tempistiche Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | AVVIO 2022-CONCLUSIONE 2024  |
 | --- | --- | --- |
 |  2. IMPATTI^{7} (ENERGIA/ riduzione emissioni CO2 equivalente) | Energia rinnovabile generata MWh/anno (valore atteso) (se previsto dall'intervento) | /  |   |   |   |   |
@@ -9704,15 +9612,15 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 |   | ☐ altro:  |
 | --- | --- |
 |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | /  |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | /  |
 |  3. GOVERNANCE E COSTI | Eventuali stakeholder coinvolti
-Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | /  |
+| Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | /  |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. | /  |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. | /  |
 |   |  Stima dell'investimento complessivo (€) | € 1.300.000,00  |
 |   |  OPEX (operational expenditure)
-Se applicabile. | /  |
+| Se applicabile. | /  |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☐ Sì
@@ -9735,9 +9643,9 @@ INTERVENTO 5
 |   |  | ☑ interventi relativi a propri asset e proprie attività  |
 | --- | --- | --- |
 |   | Scala dell'intervento
-Edificio, quartiere, altro | CENTRALI A.P. LINATE  |
+| Edificio, quartiere, altro | CENTRALI A.P. LINATE  |
 |   | Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | CENTRALE A.P. LINATE, VIA DELLE RIMEMBRANZE SNC, PESCHIERA BORROMEO (SHAPE FILE DISPONIBILIE)  |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | CENTRALE A.P. LINATE, VIA DELLE RIMEMBRANZE SNC, PESCHIERA BORROMEO (SHAPE FILE DISPONIBILIE)  |
 |   | Ambiti interessati dal progetto
 La scelta può essere multipla (as es. se si tratta di un progetto integrato). | ☑ Sistemi energetici
 ☐ Involucro edilizio (cappotto, coperture, serramenti)
@@ -9753,9 +9661,9 @@ La scelta può essere multipla | ☑ Tecnologico/infrastrutturale
 ☐ Comportamentale
 ☐ Altro (specificare)  |
 |   | Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | SOSTITUZIONE POMPE E MOTORI GRUPPI PRINCIPALI CON NUOVE MACCHINE AD ALTA EFFICIENZA E GESTIONE SOTTO INVERTER  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | SOSTITUZIONE POMPE E MOTORI GRUPPI PRINCIPALI CON NUOVE MACCHINE AD ALTA EFFICIENZA E GESTIONE SOTTO INVERTER  |
 |   | Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | AVVIO 2019-CONCLUSIONE 2023  |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | AVVIO 2019-CONCLUSIONE 2023  |
 |  2. | Energia rinnovabile
 generata MWh/anno
 (valore atteso)
@@ -9802,14 +9710,14 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 ☐ altro:  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | /  |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | /  |
 |  3.
 GOVERNANCE
 E COSTI | Eventuali stakeholder coinvolti
 Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | /  |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. | /  |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. | /  |
 |   | Stima dell'investimento complessivo (€) | € 1.400.000,00  |
 | --- | --- | --- |
 |   | OPEX (operational expenditure) Se applicabile. |   |
@@ -9831,11 +9739,11 @@ Quanto incidono in % sull'investimento complessivo?  |
 | --- | --- | --- |
 |   |  Referente | Marelli - MM-SII-DAFO-EAC-MEP  |
 |   |  Categoria di progetto | ☐ progetto urbano
-☑ interventi relativi a propri asset e proprie attività  |
+| ☑ interventi relativi a propri asset e proprie attività  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | CENTRALI A.P. VARIE  |
+| Edificio, quartiere, altro | CENTRALI A.P. VARIE  |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | CENTRALI A.P. VARIE DISLOCATE SULLA CITTA' DI MILANO (SHAPE FILE DISPONIBILIE)  |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | CENTRALI A.P. VARIE DISLOCATE SULLA CITTA' DI MILANO (SHAPE FILE DISPONIBILIE)  |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (as es. se si tratta di un progetto integrato). | ☑ Sistemi energetici
 ☐ Involucro edilizio (cappotto, coperture, serramenti)
@@ -9852,10 +9760,10 @@ La scelta può essere multipla | ☑ Tecnologico/infrastrutturale
 ☐ Altro (specificare)  |
 | --- | --- | --- |
 |   | Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | SOSTITUZIONE POMPE DA POZZO CON NUOVE MACCHINE AD ALTA EFFICIENZA.
-SOSTITUZIONE DI CIRCA 40 POMPE/ANNO  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | SOSTITUZIONE POMPE DA POZZO CON NUOVE MACCHINE AD ALTA EFFICIENZA. |
+| SOSTITUZIONE DI CIRCA 40 POMPE/ANNO  |
 |   | Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | AVVIO 2022-CONCLUSIONE 2024  |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | AVVIO 2022-CONCLUSIONE 2024  |
 |  2.
 IMPATTI^{11}
 (ENERGIA/
@@ -9879,7 +9787,7 @@ sugli owned assets) | -2,59%  |
 
 La Mission prevede che venga effettuato un monitoraggio periodico sull'avanzamento complessivo verso gli obiettivi di decarbonizzazione. Vi sarà pertanto richiesto con cadenza presumibilmente biennale l'avanzamento delle azioni che avete proposto (ed eventuali modifiche e integrazioni), utilizzando gli indicatori riportati nella presente sezione della scheda
 |   | Riduzione delle emissioni di gas serra^{12} (kg CO_{2eq}/anno)
-(Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) | AMBITO DI AZIONE | Descrizione | Emissioni a fine realizzazione del progetto | Emissioni (Baseline) | Delta (emissioni evitate)  |
+| (Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) | AMBITO DI AZIONE | Descrizione | Emissioni a fine realizzazione del progetto | Emissioni (Baseline) | Delta (emissioni evitate)  |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |   |  SISTEMA ENERGETICO | Mix di rete | 2425258,62 | 2489760 | 64501,38  |
 |   |   |  EDIFICI / AMBIENTE COSTRUITO (es, Materiali/ tecniche costruttive |  |  |  |   |
@@ -9914,15 +9822,15 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 ☐ altro:  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | /  |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | /  |
 |  3. GOVERNANCE E COSTI | Eventuali stakeholder coinvolti
-Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | /  |
+| Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | /  |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. | /  |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. | /  |
 |   |  Stima dell'investimento complessivo (€) | € 600.000,00  |
 |   |  OPEX (operational expenditure)
-Se applicabile. | /  |
+| Se applicabile. | /  |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☐ Sì
@@ -10000,11 +9908,11 @@ INTERVENTO 1 – rinumerato 9
 | --- | --- | --- |
 |   |  Referente | MM-SII-DTA-PAD  |
 |   |  Categoria di progetto | ☐ progetto urbano
-X interventi relativi a propri asset e proprie attività  |
+| X interventi relativi a propri asset e proprie attività  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | INSTALLAZIONE SULLE COPERTURE PIANE DEL DEPURATORE+PENSILINA FRANGISOLE FOTOVOLTAICA PER IL PARCAMENTO DI AUTOMEZZI+3 POSTAZIONI DI RICARICA PER VEICOLI ELETTRICI  |
+| Edificio, quartiere, altro | INSTALLAZIONE SULLE COPERTURE PIANE DEL DEPURATORE+PENSILINA FRANGISOLE FOTOVOLTAICA PER IL PARCAMENTO DI AUTOMEZZI+3 POSTAZIONI DI RICARICA PER VEICOLI ELETTRICI  |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | DEPURATORE DI MILANO S.ROCCO (SHAPE FILE DISPONIBILIE)  |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | DEPURATORE DI MILANO S.ROCCO (SHAPE FILE DISPONIBILIE)  |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (as es. se si tratta di un progetto integrato). | ☐ Sistemi energetici
 ☐ Involucro edilizio (cappotto, coperture, serramenti)
@@ -10020,7 +9928,7 @@ La scelta può essere multipla | X Tecnologico/infrastrutturale
 ☐ Comportamentale
 ☐ Altro (specificare)  |
 |   |  Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, | INSTALLAZIONE PANNELLI FOTOVOLTAICI PER PRODUZIONE E AUTOCONSUMO DI ENERGIA ELETTRICA DA FONTI RINNOVABILI DELL'IMPIANTO DI DEPURAZIONE E COSTRUZIONE DI PENSILINA FRANGISOLE FOTOLVAICA DOTATA DI POSTAZIONI DI RICARICA PER VEICOLI ELETTRICI  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, | INSTALLAZIONE PANNELLI FOTOVOLTAICI PER PRODUZIONE E AUTOCONSUMO DI ENERGIA ELETTRICA DA FONTI RINNOVABILI DELL'IMPIANTO DI DEPURAZIONE E COSTRUZIONE DI PENSILINA FRANGISOLE FOTOLVAICA DOTATA DI POSTAZIONI DI RICARICA PER VEICOLI ELETTRICI  |
 |   | infrastrutture per la mobilità). |   |
 | --- | --- | --- |
 |   |  Tempistiche Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | AVVIO 2022-CONCLUSIONE 2023  |
@@ -10031,7 +9939,7 @@ Fornire una descrizione generale del progetto relativamente agli ambiti identifi
 
 ¹ La Mission prevede che venga effettuato un monitoraggio periodico sull'avanzamento complessivo verso gli obiettivi di decarbonizzazione. Vi sarà pertanto richiesto con cadenza presumibilmente biennale l'avanzamento delle azioni che avete proposto (ed eventuali modifiche e integrazioni), utilizzando gli indicatori riportati nella presente sezione della scheda
 |   | Riduzione delle emissioni di gas serra² (kg CO2eq/anno)
-(Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) | AMBITO DI AZIONE | Descrizione | Emissioni a fine realizzazione del progetto | Emissioni (Baseline) | Delta (emissioni evitate)  |
+| (Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) | AMBITO DI AZIONE | Descrizione | Emissioni a fine realizzazione del progetto | Emissioni (Baseline) | Delta (emissioni evitate)  |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |   |  SISTEMA ENERGETICO |  |  |  |   |
 |   |   |  EDIFICI / AMBIENTE COSTRUITO (es, Materiali/ tecniche costruttive |  |  |  |   |
@@ -10067,18 +9975,18 @@ X nuovi punti di ricarica elettrica: n. 3
 x altro: PRODUZIONE ENERGIA DA FONTI RINNOVABILI E CONSEGUENTE RIDUZIONE DELLA CO2 IMMESSA IN AMBIENTE  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
 |  3.
 GOVERNANCE
 E COSTI | Eventuali stakeholder coinvolti
 Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. |   |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
 |   |  Stima dell'investimento
-complessivo (€) | 1.400.000  |
+| complessivo (€) | 1.400.000  |
 |   |  OPEX (operational expenditure)
-Se applicabile. | \\\\  |
+| Se applicabile. | \\\\  |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☐ Sì
@@ -10092,11 +10000,11 @@ INTERVENTO 2 -rinumerato 10
 | --- | --- | --- |
 |   |  Referente | MM-SII-DTA-PAD  |
 |   |  Categoria di progetto | ☐ progetto urbano
-X interventi relativi a propri asset e proprie attività  |
+| X interventi relativi a propri asset e proprie attività  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | INSTALLAZIONE SULLE COPERTURE PIANE DEL DEPURATORE+PENSILINA FRANGISOLE FOTOVOLTAICA PER IL PARCAMENTO DI AUTOMEZZI+3 POSTAZIONI DI RICARICA PER VEICOLI ELETTRICI  |
+| Edificio, quartiere, altro | INSTALLAZIONE SULLE COPERTURE PIANE DEL DEPURATORE+PENSILINA FRANGISOLE FOTOVOLTAICA PER IL PARCAMENTO DI AUTOMEZZI+3 POSTAZIONI DI RICARICA PER VEICOLI ELETTRICI  |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | DEPURATORE DI MILANO NOSEDO (SHAPE FILE DISPONIBILIE)  |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | DEPURATORE DI MILANO NOSEDO (SHAPE FILE DISPONIBILIE)  |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (as es. se si tratta di un progetto integrato). | ☐ Sistemi energetici
 ☐ Involucro edilizio (cappotto, coperture, serramenti)
@@ -10112,11 +10020,11 @@ La scelta può essere multipla | X Tecnologico/infrastrutturale
 ☐ Comportamentale
 ☐ Altro (specificare)  |
 |   |  Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | INSTALLAZIONE PANNELLI FOTOVOLTAICI PER PRODUZIONE E AUTOCONSUMO DI ENERGIA ELETTRICA DA FONTI RINNOVABILI DELL'IMPIANTO DI DEPURAZIONE E COSTRUZIONE DI PENSILINA FRANGISOLE FOTOLVAICA DOTATA DI POSTAZIONI DI RICARICA PER VEICOLI ELETTRICI  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | INSTALLAZIONE PANNELLI FOTOVOLTAICI PER PRODUZIONE E AUTOCONSUMO DI ENERGIA ELETTRICA DA FONTI RINNOVABILI DELL'IMPIANTO DI DEPURAZIONE E COSTRUZIONE DI PENSILINA FRANGISOLE FOTOLVAICA DOTATA DI POSTAZIONI DI RICARICA PER VEICOLI ELETTRICI  |
 |  |   |   |
 | --- | --- | --- |
 |   |  Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | AVVIO 2024-CONCLUSIONE 2025  |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | AVVIO 2024-CONCLUSIONE 2025  |
 |  2.
 IMPATTI³
 (ENERGIA/
@@ -10155,7 +10063,7 @@ TEP IN 30 ANNI)  |
 
 ³ La Mission prevede che venga effettuato un monitoraggio periodico sull'avanzamento complessivo verso gli obiettivi di decarbonizzazione. Vi sarà pertanto richiesto con cadenza presumibilmente biennale l'avanzamento delle azioni che avete proposto (ed eventuali modifiche e integrazioni), utilizzando gli indicatori riportati nella presente sezione della scheda
 |   | Riduzione delle emissioni di gas serra^{4} (kg CO2eq/anno)
-(Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) | AMBITO DI AZIONE | Descrizione | Emissioni a fine realizzazione del progetto | Emissioni (Baseline) | Delta (emissioni evitate)  |
+| (Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) | AMBITO DI AZIONE | Descrizione | Emissioni a fine realizzazione del progetto | Emissioni (Baseline) | Delta (emissioni evitate)  |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |   |  SISTEMA ENERGETICO |  |  |  | 781 (t CO_{2}eq/anno)  |
 |   |   |  EDIFICI / AMBIENTE COSTRUITO (es, Materiali/ tecniche costruttive |  |  |  |   |
@@ -10191,18 +10099,18 @@ X nuovi punti di ricarica elettrica: n. 3
 X altro: PRODUZIONE ENERGIA DA FONTI RINNOVABILI E CONSUENTE RIDUZIONE DELLA CO2 IMMESSA IN AMBIENTE  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
 |  3.
 GOVERNANCE
 E COSTI | Eventuali stakeholder coinvolti
 Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. |   |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
 |   |  Stima dell'investimento
-complessivo (€) | 3.300.000  |
+| complessivo (€) | 3.300.000  |
 |   |  OPEX (operational expenditure)
-Se applicabile. | \\  |
+| Se applicabile. | \\  |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☐ Sì
@@ -10216,11 +10124,11 @@ ______________________
 | --- | --- | --- |
 |   |  Referente | MM-SII-DTA-PAD  |
 |   |  Categoria di progetto | ☐ progetto urbano
-X interventi relativi a propri asset e proprie attività  |
+| X interventi relativi a propri asset e proprie attività  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | REALIZZAZIONE NUOVE SEZIONI DI IMPIANTO  |
+| Edificio, quartiere, altro | REALIZZAZIONE NUOVE SEZIONI DI IMPIANTO  |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | DEPURATORE MILANO NOSEDO (SHAPE FILE DISPONIBILE)  |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | DEPURATORE MILANO NOSEDO (SHAPE FILE DISPONIBILE)  |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (as es. se si tratta di un progetto integrato). | X Sistemi energetici
 ☐ Involucro edilizio (cappotto, coperture, serramenti)
@@ -10236,11 +10144,11 @@ La scelta può essere multipla | X Tecnologico/infrastrutturale
 ☐ Comportamentale
 ☐ Altro (specificare)  |
 |  Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock | REALIZZAZIONE DI UNA NUOVA LINEA FANGHI CON IDROLISI TERMICA, SEGUITA DA DIGESTIONE ANAEROBICA, FINALIZZATA ALLA RIDUZIONE DEI QUANTITATIVI DI FANGO PRODOTTO E ALLA PRODUZIONE DI BIOGAS DA UTILIZZARE IN  |   |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock | REALIZZAZIONE DI UNA NUOVA LINEA FANGHI CON IDROLISI TERMICA, SEGUITA DA DIGESTIONE ANAEROBICA, FINALIZZATA ALLA RIDUZIONE DEI QUANTITATIVI DI FANGO PRODOTTO E ALLA PRODUZIONE DI BIOGAS DA UTILIZZARE IN  |   |
 |   | edificato, sistemi energetici, infrastrutture per la mobilità). | COOGENERAZIONE PER PRODUZIONE DI ENERGIA ELETTRICA (PRODUZIONE ENERGIA ELETTRICA IN SITO E AUTOCONSUMO DELL'ENERGIA ELETTRICA PRODOTTA A FAVORE DELL'IMPIANTO DI DEPURAZIONE)  |
 | --- | --- | --- |
 |   | Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | AVVIO 2024-CONCLUSIONE 2026  |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | AVVIO 2024-CONCLUSIONE 2026  |
 |  2. IMPATTI^{5} (ENERGIA/ riduzione emissioni CO2 equivalente) | Energia rinnovabile generata MWh/anno (valore atteso) (se previsto dall'intervento) | IN ATTESA DI PROGETTAZIONE DEFINITIVA PER DEFINIZIONE DELLA RIDUZIONE DEI FANGHI E DELLA PRODUZIONE DI NERGIA RINNOVABILE RISULTATI ATTESI : FINO A -35% PRODUZIONE COMPLESSIVA FANGHI (DA 15800 A 10300 TonSST/ANNO E PRODUZIONE DI 8362 MWh/anno) Pari a 4.432 t CO2 eq/anno.  |
 | --- | --- | --- |
 |   |  Acquisto di energia elettrica certificata da fonti rinnovabili MWh/anno (valore atteso) (se previsto dall'intervento) |   |
@@ -10281,18 +10189,18 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 X altro: PRODUZIONE ENERGIA RINNOVABILE (DA BIOGAS)  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
 |  3.
 GOVERNANCE
 E COSTI | Eventuali stakeholder coinvolti
 Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. |   |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
 |   |  Stima dell'investimento
-complessivo (€) | 20.582.000  |
+| complessivo (€) | 20.582.000  |
 |   |  OPEX (operational expenditure)
-Se applicabile. | \\\\  |
+| Se applicabile. | \\\\  |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi  |
 INTERVENTO 4 -rinumerato 12
@@ -10301,11 +10209,11 @@ INTERVENTO 4 -rinumerato 12
 | --- | --- | --- |
 |   |  Referente | MM-SII-DTA-PAD  |
 |   |  Categoria di progetto | ☐ progetto urbano
-X interventi relativi a propri asset e proprie attività  |
+| X interventi relativi a propri asset e proprie attività  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | REALIZZAZIONE NUOVE SEZIONI DI IMPIANTO PRESSO DEPURATORE MILANO S.ROCCO  |
+| Edificio, quartiere, altro | REALIZZAZIONE NUOVE SEZIONI DI IMPIANTO PRESSO DEPURATORE MILANO S.ROCCO  |
 |   | Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | DEPURATORE MILANO S.ROCCO (SHAPE FILE DISPONIBILE)  |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | DEPURATORE MILANO S.ROCCO (SHAPE FILE DISPONIBILE)  |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (as es. se si tratta di un progetto integrato). | X Sistemi energetici
 ☐ Involucro edilizio (cappotto, coperture, serramenti)
@@ -10319,12 +10227,12 @@ La scelta può essere multipla | X Tecnologico/infrastrutturale
 ☐ Finanziario
 ☐ Gestionale  |
 |   |  | ☐ Comportamentale
-☐ Altro (specificare)  |
+| ☐ Altro (specificare)  |
 | --- | --- | --- |
 |   | Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | REALIZZAZIONE DI UNA NUOVA LINEA FANGHI CON IDROLISI TERMICA, SEGUITA DA DIGESTIONE ANAEROBICA, FINALIZZATA ALLA RIDUZIONE DEI QUANTITATIVI DI FANGO PRODOTTO E ALLA PRODUZIONE DI BIOMETANO CHE VERRA' UTILIZZATO IN SITO, IN PARTE PER L'ALIMENTAZIONE DEL FORNO MONOINCENERITORE (AZZERANDO LA QUANTITA' DI GAS NATURALE UTILIZZATA OGGI PER IL FUNZIONAMENTO DEL FORNO) E IN PARTE PER LA PRODUZIONE DI ENERGIA ELETTRICA MEDIANTE COOGENERAZIONE IN SITO, A SERVIZIO DELL'IMPIANTO DI DEPURAZIONE  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | REALIZZAZIONE DI UNA NUOVA LINEA FANGHI CON IDROLISI TERMICA, SEGUITA DA DIGESTIONE ANAEROBICA, FINALIZZATA ALLA RIDUZIONE DEI QUANTITATIVI DI FANGO PRODOTTO E ALLA PRODUZIONE DI BIOMETANO CHE VERRA' UTILIZZATO IN SITO, IN PARTE PER L'ALIMENTAZIONE DEL FORNO MONOINCENERITORE (AZZERANDO LA QUANTITA' DI GAS NATURALE UTILIZZATA OGGI PER IL FUNZIONAMENTO DEL FORNO) E IN PARTE PER LA PRODUZIONE DI ENERGIA ELETTRICA MEDIANTE COOGENERAZIONE IN SITO, A SERVIZIO DELL'IMPIANTO DI DEPURAZIONE  |
 |   | Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | AVVIO 2027-CONCLUSIONE 2029  |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | AVVIO 2027-CONCLUSIONE 2029  |
 |  2. IMPATTI^{7} (ENERGIA/ riduzione emissioni CO2 equivalente) | Energia rinnovabile generata MWh/anno (valore atteso) (se previsto dall'intervento) | IN ATTESA DI PROGETTAZIONE DEFINITIVA E' STATA IPOTIZZATA UNA PRODUZIONE DI ENERGIA ELETTRICA DA FONTE RINNOVABILE PARI A 2.504 Mwh/anno CON UN CONSEGUENTE RISPARMIO DI 1.327 t DI CO_{2} eq/anno.  |
 | --- | --- | --- |
 |   |  Acquisto di energia |   |
@@ -10366,9 +10274,9 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 X altro: PRODUZIONE BIOGAS E RIDUZIONE DI IMPIEGO DI GAS NATURALE DA FONTE FOSSILE  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | RIDUZIONE TRAFFICO STRADALE DOVUTA ALLA RIDUZIONE DEI VOLUMI DI FANGO DA AVVIARE A SMALTIMENTO  |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | RIDUZIONE TRAFFICO STRADALE DOVUTA ALLA RIDUZIONE DEI VOLUMI DI FANGO DA AVVIARE A SMALTIMENTO  |
 |  3. GOVERNANCE E COSTI | Eventuali stakeholder coinvolti
-Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. |   |
+| Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. |   |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione |   |
 |   | Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
@@ -10393,11 +10301,11 @@ INTERVENTO 5 – rinumerato 13
 | --- | --- | --- |
 |   |  Referente | MM-SII-DTA-PAD  |
 |   |  Categoria di progetto | ☐ progetto urbano
-☑ interventi relativi a propri asset e proprie attività  |
+| ☑ interventi relativi a propri asset e proprie attività  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | REALIZZAZIONE DI NUOVA SEZIONE DI IMPIANTO  |
+| Edificio, quartiere, altro | REALIZZAZIONE DI NUOVA SEZIONE DI IMPIANTO  |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | DEPURATORE MILANO S.ROCCO (SHAPE FILE DISPONIBILE)  |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | DEPURATORE MILANO S.ROCCO (SHAPE FILE DISPONIBILE)  |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (as es. se si tratta di un progetto integrato). | ☑ Sistemi energetici
 ☐ Involucro edilizio (cappotto, coperture, serramenti)
@@ -10414,12 +10322,12 @@ La scelta può essere multipla | X Tecnologico/infrastrutturale
 ☐ Altro (specificare)  |
 | --- | --- | --- |
 |   | Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | INSTALLAZIONE DI NUOVI ESSICCATORI DEI FANGHI DISIDRATATI DEL TIPO A BASSA TEMPERATURA TRAMITE IL RIUTILIZZO DEL CALORE DELLE ACQUE DEPURATE E DEL CASCAME TERMICO DEL FORNO DI MONOCOMBUSTIONE ESISTENTE PRESSO L'IMPIANTO DI MILANO S.ROCCO  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | INSTALLAZIONE DI NUOVI ESSICCATORI DEI FANGHI DISIDRATATI DEL TIPO A BASSA TEMPERATURA TRAMITE IL RIUTILIZZO DEL CALORE DELLE ACQUE DEPURATE E DEL CASCAME TERMICO DEL FORNO DI MONOCOMBUSTIONE ESISTENTE PRESSO L'IMPIANTO DI MILANO S.ROCCO  |
 |   | Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | AVVIO 2025-CONCLUSIONE 2026  |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | AVVIO 2025-CONCLUSIONE 2026  |
 |  2. IMPATTI⁹
-(ENERGIA/ riduzione emissioni CO2 equivalente) | Energia rinnovabile generata MWh/anno (valore atteso)
-(se previsto dall'intervento) |   |
+| (ENERGIA/ riduzione emissioni CO2 equivalente) | Energia rinnovabile generata MWh/anno (valore atteso) |
+| (se previsto dall'intervento) |   |
 | --- | --- | --- |
 |   |  Acquisto di energia elettrica certificata da fonti | IN ATTESA DI PROGETTAZIONE DEFINITIVA E' STATA IPOTIZZATA UNA PRODUZIONE DI ENERGIA ELETTRICA DA PARI A 1.800 Mwh/anno CON UN CONSEGUENTE RISPARMIO DI 954 t DI CO₂ eq/anno.
 E' INOLTRE PREVISTO UN RISPARMIO DI 7.360.000 SMC DI GAS PARI A 14.654 t DI CO₂ eq/anno.  |
@@ -10431,7 +10339,7 @@ MWh/anno
 (se previsto dall'intervento) | COMPLESSIVAMENTE DA ENERGIA ELETTRICA E GAS SI PREVEDE UN RISPARMIO TOTALE DI 15.608 DI CO₂ eq/anno.  |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  Variazione dei consumi energetici per vettore
-(applicabile se progetto sugli owned assets) |   |   |   |   |   |
+| (applicabile se progetto sugli owned assets) |   |   |   |   |   |
 |   |  Riduzione delle emissioni di gas serra¹⁰
 (kg CO₂eq/anno)
 (Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) | AMBITO DI AZIONE | Descrizione | Emissioni a fine realizzazione del progetto | Emissioni (Baseline) | Delta (emissioni evitate)  |
@@ -10470,13 +10378,13 @@ I cobenefici sono i risultati indiretti della propria azione, effetti e cambiame
 INTERVENTO 6 – rinumerato 14
 
 |  3. GOVERNANCE E COSTI | Eventuali stakeholder coinvolti
-Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. |   |
+| Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. |   |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
 |   |  Stima dell'investimento complessivo (€) | 10.100.000  |
 |   |  OPEX (operational expenditure)
-Se applicabile. | \\\\  |
+| Se applicabile. | \\\\  |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☐ Sì
@@ -10493,11 +10401,11 @@ Quanto incidono in % sull'investimento complessivo?  |
 | --- | --- | --- |
 |   |  Referente | MM-SII-DTA-PAD  |
 |   |  Categoria di progetto | ☐ progetto urbano
-X interventi relativi a propri asset e proprie attività  |
+| X interventi relativi a propri asset e proprie attività  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | REALIZZAZIONE NUOVA SEZIONE DI IMPIANTO  |
+| Edificio, quartiere, altro | REALIZZAZIONE NUOVA SEZIONE DI IMPIANTO  |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | DEPURATORE MILANO S.ROCCO (SHAPE FILE DISPONIBILE)  |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | DEPURATORE MILANO S.ROCCO (SHAPE FILE DISPONIBILE)  |
 |   | Ambiti interessati dal progetto
 La scelta può essere multipla (as es.
 se si tratta di un progetto integrato). | X Sistemi energetici
@@ -10545,7 +10453,7 @@ positivi da qui al 2030, considerare
 solo quelli conclusi successivamente
 all'anno 2021-baseline). | AVVIO 2021-CONCLUSIONE 2022  |
 |  2. IMPATTI^{11} (ENERGIA/ riduzione emissioni CO2 equivalente) | Energia rinnovabile generata MWh/anno (valore atteso) (se previsto dall'intervento) | E' STATA IPOTIZZATA, CON IMPIANTO A PIENO REGIME, UNA PRODUZIONE 1.520 Kwh termici / anno.
-TRATTANDOSI DI COMBUSTIBILI NON CONVENZIONALE (FANGO ESSICCATO DERIVANTE DAL TRATTAMENTO DI REFLUI DI DEPURAZIONE) NON SIAMO STATI IN GRADO DI TROVARE IL CORRETTO FATTORE DI CONVERSIONE PER CALCOLARE LE TONNELLATE DI CO2 eq/anno RECUPERATE.  |   |   |   |   |
+| TRATTANDOSI DI COMBUSTIBILI NON CONVENZIONALE (FANGO ESSICCATO DERIVANTE DAL TRATTAMENTO DI REFLUI DI DEPURAZIONE) NON SIAMO STATI IN GRADO DI TROVARE IL CORRETTO FATTORE DI CONVERSIONE PER CALCOLARE LE TONNELLATE DI CO2 eq/anno RECUPERATE.  |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  Acquisto di energia elettrica certificata da fonti rinnovabili MWh/anno (valore atteso) (se previsto dall'intervento) |   |   |   |   |   |
 |   |  Variazione dei consumi energetici per vettore (applicabile se progetto sugli owned assets) |   |   |   |   |   |
@@ -10577,9 +10485,9 @@ Schema "Fattori di emissione"
 |  Energia elettrica | mix di rete | KgCO2eq/kWh | 0.247 | Elaborazioni AMAT su dati ISPRA  |
 |   |  rinnovabile con garanzia di origine | KgCO2eq/kWh | 0 | Utilizzato fattore non LCA convenzionalmente posto a 0  |
 |  ALTRI
-IMPATTI | Risultati attesi
-Qualora l'azione incida in ambito non energetico indicare quali risultati ci si aspetta di raggiungere in termini qualitativi ed eventualmente quantitativi. | X minori quantitativi di rifiuti per tipologia: RIDUZIONE DI VOLUMI DI FANGHI E DI ALTRE TIPOLOGIE DI RIFIUTI (CENERI) DA AVVIARE A SMALTIMENTO kg/anno TBD
-☐ minori consumi idrici: l/anno ...  |
+| IMPATTI | Risultati attesi |
+| Qualora l'azione incida in ambito non energetico indicare quali risultati ci si aspetta di raggiungere in termini qualitativi ed eventualmente quantitativi. | X minori quantitativi di rifiuti per tipologia: RIDUZIONE DI VOLUMI DI FANGHI E DI ALTRE TIPOLOGIE DI RIFIUTI (CENERI) DA AVVIARE A SMALTIMENTO kg/anno TBD |
+| ☐ minori consumi idrici: l/anno ...  |
 | --- | --- | --- |
 |   |  | ☐ nuovi punti di ricarica elettrica: n.
 ☐ nuovi alberi piantumati; n.
@@ -10587,15 +10495,15 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 X altro: RECUPERO ENERGETICO,  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | DIMINUZIONE DEI VOLUMI DI FANGO ASPORTATI DAL DEPURATORE DA AVVIARE A SMALTIMENTO CON CONSEGUENTE RIDUZIONE DI CAMION CIRCOLANTI, RIDUZIONE DI TRAFFICO, POSSIBILITA' DI ESTRAZIONE DI MATERIE PRIME NOBILI DALLE CENERI (PER ESEMPIO FOSFORO)  |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | DIMINUZIONE DEI VOLUMI DI FANGO ASPORTATI DAL DEPURATORE DA AVVIARE A SMALTIMENTO CON CONSEGUENTE RIDUZIONE DI CAMION CIRCOLANTI, RIDUZIONE DI TRAFFICO, POSSIBILITA' DI ESTRAZIONE DI MATERIE PRIME NOBILI DALLE CENERI (PER ESEMPIO FOSFORO)  |
 |  3. GOVERNANCE E COSTI | Eventuali stakeholder coinvolti
-Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. |   |
+| Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. |   |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
 |   |  Stima dell'investimento complessivo (€) | 3.411.000  |
 |   |  OPEX (operational expenditure)
-Se applicabile. | \\\\  |
+| Se applicabile. | \\\\  |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 X Sì
@@ -10618,9 +10526,9 @@ INTERVENTO 7 rinumerato 15
 | --- | --- | --- |
 |   | Referente | MM-SII-DTA-PAD  |
 |   |  Categoria di progetto | ☐ progetto urbano
-X interventi relativi a propri asset e proprie attività  |
+| X interventi relativi a propri asset e proprie attività  |
 |   |  Scala dell’intervento
-Edificio, quartiere, altro | EDIFICIO  |
+| Edificio, quartiere, altro | EDIFICIO  |
 |   |  Localizzazione
 Indicare l’area interessata
 eventualmente allegando una
@@ -10724,14 +10632,14 @@ social housing e non) | MIGLIORAMENTO DELLA CLASSE ENERGETICA
 DELLA PALAZZINA UFFICI DEL DEPURATORE
 S.ROCCO  |
 |  3. GOVERNANCE E COSTI | Eventuali stakeholder coinvolti
-Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. |   |
+| Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. |   |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
 |   |  Stima dell'investimento
-complessivo (€) | 1.000.000  |
+| complessivo (€) | 1.000.000  |
 |   |  OPEX (operational expenditure)
-Se applicabile. | \\\\  |
+| Se applicabile. | \\\\  |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☐ Sì
@@ -10751,11 +10659,11 @@ INTERVENTO 8 rinumerato 16
 | --- | --- | --- |
 |   |  Referente | MM-SII-DTA-PAD  |
 |   |  Categoria di progetto | ☐ progetto urbano
-X interventi relativi a propri asset e proprie attività  |
+| X interventi relativi a propri asset e proprie attività  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | INTERO PARCO ILLUMINANTE DEL DEPURTAORE NOSEDO  |
+| Edificio, quartiere, altro | INTERO PARCO ILLUMINANTE DEL DEPURTAORE NOSEDO  |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | DEPURATORE MILANO NOSEDO (SHAPE FILE DISPONIBILE)  |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | DEPURATORE MILANO NOSEDO (SHAPE FILE DISPONIBILE)  |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (as es. se si tratta di un progetto integrato). | X Sistemi energetici
 ☐ Involucro edilizio (cappotto, coperture, serramenti)
@@ -10771,9 +10679,9 @@ La scelta può essere multipla | X Tecnologico/infrastrutturale
 ☐ Comportamentale
 ☐ Altro (specificare)  |
 |   |  Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | SOSTITUZIONE DELL'INTERO PARCO ILLUMINANTE DEL DEPURATORE NOSEDO CON LAMPADE A LED A BASSO CONSUMO ENERGETICO  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | SOSTITUZIONE DELL'INTERO PARCO ILLUMINANTE DEL DEPURATORE NOSEDO CON LAMPADE A LED A BASSO CONSUMO ENERGETICO  |
 |   |  Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | AVVIO 2022-CONCLUSIONE 2022  |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | AVVIO 2022-CONCLUSIONE 2022  |
 |  2. IMPATTI^{15} (ENERGIA/ riduzione emissioni CO2 equivalente) | Energia rinnovabile generata MWh/anno (valore atteso) (se previsto dall'intervento) | E' STATA IPOTIZZATA UNA PRODUZIONE DI ENERGIA ELETTRICA DA FONTE RINNOVABILE PARI A 455,9 Mwh/anno CON UN CONSEGUENTE RISPARMIO DI 241,6 t DI CO2 eq/anno. 241,62  |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  Acquisto di energia elettrica certificata da fonti rinnovabili MWh/anno (valore atteso) (se previsto dall'intervento) |   |   |   |   |   |
@@ -10822,15 +10730,15 @@ X altro: RISPARMIO ENERGETICO
 QUANTIFICABILE IN 454.924,78 KWh/anno  |
 | --- | --- | --- |
 |   | Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
 |  3. GOVERNANCE E COSTI | Eventuali stakeholder coinvolti
-Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. |   |
+| Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. |   |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
 |   |  Stima dell'investimento complessivo (€) | 540.000  |
 |   |  OPEX (operational expenditure)
-Se applicabile. | \\\\  |
+| Se applicabile. | \\\\  |
 |   | Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☐ Sì
@@ -10844,12 +10752,12 @@ Se sì, quali?
 
 Quanto incidono in % sull'investimento complessivo?  |
 |   | Categoria di progetto | ☐ progetto urbano
-X interventi relativi a propri asset e proprie attività  |
+| X interventi relativi a propri asset e proprie attività  |
 | --- | --- | --- |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | AREE PERTINENTI DEI DEPURATORI AD OGGI NON UTILIZZATE E  |
+| Edificio, quartiere, altro | AREE PERTINENTI DEI DEPURATORI AD OGGI NON UTILIZZATE E  |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | DEPURATORI S.ROCCO E NOSEDO (SHAPE FILE DISPONIBILI)  |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | DEPURATORI S.ROCCO E NOSEDO (SHAPE FILE DISPONIBILI)  |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (as es. se si tratta di un progetto integrato). | ☐ Sistemi energetici
 ☐ Involucro edilizio (cappotto, coperture, serramenti)
@@ -10865,9 +10773,9 @@ La scelta può essere multipla | X Tecnologico/infrastrutturale
 ☐ Comportamentale
 ☐ Altro (specificare)  |
 |   |  Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | AMPLIAMENTO DEI PARCHI FOTOLVAICI ESISTENTI (S.ROCCO) E IN DIVENIRE (NOSEDO), PER CONSEGUIRE UN ULTERIORE PRODUZIONE DI ENERGIA ELETTRICA RINNOVABILE A SERVIZIO DEI DEPURATORI PER AUTOCONSUMO E UNA CONSEGUENTE RIDUZIONE DEI COSTI ENERGETICI E RISPARMIO DI CO2 IMMESSE IN AMBIENTE  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | AMPLIAMENTO DEI PARCHI FOTOLVAICI ESISTENTI (S.ROCCO) E IN DIVENIRE (NOSEDO), PER CONSEGUIRE UN ULTERIORE PRODUZIONE DI ENERGIA ELETTRICA RINNOVABILE A SERVIZIO DEI DEPURATORI PER AUTOCONSUMO E UNA CONSEGUENTE RIDUZIONE DEI COSTI ENERGETICI E RISPARMIO DI CO2 IMMESSE IN AMBIENTE  |
 |   |  Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | AVVIO 2027-CONCLUSIONE 2029  |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | AVVIO 2027-CONCLUSIONE 2029  |
 |  2. IMPATTI^{17} (ENERGIA/ riduzione emissioni CO2 equivalente) | Energia rinnovabile generata MWh/anno (valore atteso) (se previsto dall'intervento) | IL PROGETTO E' ANCORA TUTTO DA DEFINIRE. E' STATA IPOTIZZATA UNA PRODUZIONE DI ENERGIA ELETTRICA DA FONTE RINNOVABILE PARI A 5.025 Mwh/anno CON UN CONSEGUENTE RISPARMIO DI 2.663 t DI CO2 eq/anno.  |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  Acquisto di energia elettrica certificata da fonti rinnovabili MWh/anno (valore atteso) (se previsto dall'intervento) |   |   |   |   |   |
@@ -10907,21 +10815,21 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 ☐ nuovi alberi piantumati; n.  |
 | --- | --- | --- |
 |   |  | ☐ superficie permeabile a verde aggiuntiva: mq
-X altro: PRODUZIONE ENERGIA ELETTRICA DA FONTI RINNOVABILI  |
+| X altro: PRODUZIONE ENERGIA ELETTRICA DA FONTI RINNOVABILI  |
 | --- | --- | --- |
 |   | Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | CONTENIMENTO SPESA ENERGETICA E RISPARMIO CI EMISSIONI DI CO2 IN AMBIENTE  |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | CONTENIMENTO SPESA ENERGETICA E RISPARMIO CI EMISSIONI DI CO2 IN AMBIENTE  |
 |  3.
 GOVERNANCE
 E COSTI | Eventuali stakeholder coinvolti
 Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. |   |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
 |   |  Stima dell'investimento
-complessivo (€) | 7.537.500  |
+| complessivo (€) | 7.537.500  |
 |   |  OPEX (operational expenditure)
-Se applicabile. | \\\\  |
+| Se applicabile. | \\\\  |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☐ Sì
@@ -11012,9 +10920,9 @@ Nella scheda seguente possono essere raccolti interventi e azioni puntuali coere
 | --- | --- | --- |
 |   |  Referente | Pietro Raitano  |
 |   |  Scala dell'intervento (se si tratta di una azione che ha una componente localizzabile)
-(ad esempio, sede di associazione scuola o insieme di scuole, condominio o insieme di condomini, quartiere, città...). | Scuole della città di Milano  |
+| (ad esempio, sede di associazione scuola o insieme di scuole, condominio o insieme di condomini, quartiere, città...). | Scuole della città di Milano  |
 |   |  Localizzazione
-(se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l'azione e fornire una mappa; se disponibili shape-file riferiti al sito/progetto in oggetto). | Centrale dell'Acqua di Milano, sedi delle scuole  |
+| (se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l'azione e fornire una mappa; se disponibili shape-file riferiti al sito/progetto in oggetto). | Centrale dell'Acqua di Milano, sedi delle scuole  |
 |   |  Ambito/ambiti di azione |   |
 |   | (energia, mobilità, verde, economia circolare, altro...). | Educazione ambientale/dissemination  |
 | --- | --- | --- |
@@ -11024,7 +10932,7 @@ Nella scheda seguente possono essere raccolti interventi e azioni puntuali coere
 X Comportamentale (ambito culturale, educativo, attivismo, disseminazione ecc)
 ☐ Altro (specificare)  |
 |   | Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati | Interventi rivolti agli studenti in visita alla Centrale dell'Acqua e direttamente raggiunti nelle scuole  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati | Interventi rivolti agli studenti in visita alla Centrale dell'Acqua e direttamente raggiunti nelle scuole  |
 |   | Tempistiche
 (Indicare se è una azione prevista o già in atto, l'anno di avvio e anno di conclusione previsti.
 Eventuali step intermedi di realizzazione. In caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | L'azione è già in atto e proseguirà nei prossimi anni scolastici  |
@@ -11035,14 +10943,14 @@ AMBIENTALE * | Risultati attesi
 Indicare quali risultati ci si aspetta di raggiungere e in che senso l'azione descritta può creare condizioni favorevoli alle azioni di mitigazione e adattamento utili al raggiungimento della neutralità climatica. | Raggiungimento di almeno 7mila studenti l'anno  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio. | Raggiungimento delle famiglie degli studenti  |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio. | Raggiungimento delle famiglie degli studenti  |
 |  GOVERNANCE E COSTI | Eventuali stakeholder coinvolti | Professori, presidi  |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere ad esempio eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere ad esempio eventuali barriere e/o fattori abilitanti. |   |
 |   |  Stima dell'investimento complessivo (€) | 50.000 euro l'anno  |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento ci si intende avvalere finanziamenti UE o incentivi nazionali o locali?
 ☐ Si X No
@@ -11061,11 +10969,11 @@ INTERVENTO 7
 | --- | --- | --- | --- |
 |   |   | Referente | Tani - MM-DVSI-DAFO-SDS  |
 |   |   | Categoria di progetto | ☐ progetto urbano
-X interventi relativi a propri asset e proprie attività  |
+| X interventi relativi a propri asset e proprie attività  |
 |   |   | Scala dell'intervento
-Edificio, quartiere, altro | QUARTIERE  |
+| Edificio, quartiere, altro | QUARTIERE  |
 |   |   | Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | CENTRALE ACQUA POTABILE SALEMI – Rete teleriscaldamento Quartiere Comasina (SHAPE FILE DISPONIBILE)  |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | CENTRALE ACQUA POTABILE SALEMI – Rete teleriscaldamento Quartiere Comasina (SHAPE FILE DISPONIBILE)  |
 |   |   | Ambiti interessati dal progetto
 La scelta può essere multipla (as es. se si tratta di un progetto integrato). | X Sistemi energetici
 ☐ Involucro edilizio (cappotto, coperture, serramenti)
@@ -11081,14 +10989,14 @@ La scelta può essere multipla | X Tecnologico/infrastrutturale
 ☐ Comportamentale
 ☐ Altro (specificare)  |
 |   |   | Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | Realizzazione di Centrale Cogenerativa a pompa di calore in Centrale acquedottistica sita in via Salemi (campo pozzi di captazione dell'acqua – sistemi di trattamento – pompe di rilancio sistema di distribuzione);
-Sistema di recupero del calore dall'acqua prelevata dall'ambiente mediante pompa  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | Realizzazione di Centrale Cogenerativa a pompa di calore in Centrale acquedottistica sita in via Salemi (campo pozzi di captazione dell'acqua – sistemi di trattamento – pompe di rilancio sistema di distribuzione); |
+| Sistema di recupero del calore dall'acqua prelevata dall'ambiente mediante pompa  |
 |   |  | di calore;
 Cogenerazione ad alto rendimento finalizzata ad alimentare i consumi della pompa di calore e del sistema acquedottistico;
 Recupero di energia termica utile destinata all’adiacente rete di teleriscaldamento di ACS: il condensatore della pompa di calore alimenterà la rete di teleriscaldamento aumentandone la temperatura fino a 80°C mentre il motore cogenerativo preriscalderà il ritorno dell’acqua di rete fino alla temperatura di 90°C.  |
 | --- | --- | --- |
 |   | **Tempistiche**
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all’anno 2021-baseline). | Inizio lavori 2019 – In corso collaudi finali  |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all’anno 2021-baseline). | Inizio lavori 2019 – In corso collaudi finali  |
 |  2.
 IMPATTI^{1}
 (ENERGIA/
@@ -11152,13 +11060,13 @@ Sinergia tra sistemi che consente un intervento di efficienza energetica evitand
 Utilizzo di pompa di calore acqua -acqua e motori cogenerativi in sostituzione delle attuali caldaie a gas della Centrale A2a Comasina per alimentare il teleriscaldamento del quartiere  |
 | --- | --- |
 |  3. GOVERNANCE E COSTI | Eventuali stakeholder coinvolti
-Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | Accordo MM – A2a  |
+| Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | Accordo MM – A2a  |
 | --- | --- | --- |
 |   |  Commenti sull’implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
 |   |  Stima dell’investimento complessivo (€) | Circa 8 milioni euro  |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell’investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☐ Sì
@@ -11177,11 +11085,11 @@ INTERVENTO 8
 | --- | --- | --- | --- |
 |   |   | Referente | Tani - MM-DVSI  |
 |   |   | Categoria di progetto | ☐ progetto urbano
-X interventi relativi a propri asset e proprie attività  |
+| X interventi relativi a propri asset e proprie attività  |
 |   |   | Scala dell'intervento
-Edificio, quartiere, altro | EDIFICIO  |
+| Edificio, quartiere, altro | EDIFICIO  |
 |   |   | Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Collettore fognario e relativo edificio di via Dudovich (SHAPE FILE DISPONIBILE)  |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Collettore fognario e relativo edificio di via Dudovich (SHAPE FILE DISPONIBILE)  |
 |   |   | Ambiti interessati dal progetto
 La scelta può essere multipla (as es. se si tratta di un progetto integrato). | X Sistemi energetici
 ☐ Involucro edilizio (cappotto, coperture, serramenti)
@@ -11197,9 +11105,9 @@ La scelta può essere multipla | X Tecnologico/infrastrutturale
 ☐ Comportamentale
 ☐ Altro (specificare)  |
 |   |   | Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | Recupero energetico dalle acque reflue domestiche attraverso scambiatore di calore di ultima generazione a diretto contatto con in reflui fognari  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | Recupero energetico dalle acque reflue domestiche attraverso scambiatore di calore di ultima generazione a diretto contatto con in reflui fognari  |
 |   |  | Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Progettazione esecutiva conclusa  |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Progettazione esecutiva conclusa  |
 | --- | --- | --- | --- |
 |  2.
 IMPATTI³
@@ -11247,7 +11155,7 @@ evitate)  |
 
 ³ La Mission prevede che venga effettuato un monitoraggio periodico sull'avanzamento complessivo verso gli obiettivi di decarbonizzazione. Vi sarà pertanto richiesto con cadenza presumibilmente biennale l'avanzamento delle azioni che avete proposto (ed eventuali modifiche e integrazioni), utilizzando gli indicatori riportati nella presente sezione della scheda
 |   | gas serra⁴ (kg CO2eq/anno)
-(Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) | SISTEMA ENERGETICO | POMPE DI CALORE |  |  | 98 tonn/C02  |
+| (Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) | SISTEMA ENERGETICO | POMPE DI CALORE |  |  | 98 tonn/C02  |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |   |  EDIFICI / AMBIENTE COSTRUITO (es, Materiali/ tecniche costruttive |  |  |  |   |
 |   |   |  ECONOMIA CIRCOLARE E RIFIUTI |  |  |  |   |
@@ -11283,19 +11191,19 @@ X Recupero energetico dalle acque reflue
 Riduzione delle emissioni di CO2  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | Utilizzo dell'acqua di fognatura come sorgente fredda, che rappresenta una 'risorsa geotermica di interesse locale'
-Utilizzo di pompa di calore acqua -acqua in supporto alla centrale termica dell'edificio  |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | Utilizzo dell'acqua di fognatura come sorgente fredda, che rappresenta una 'risorsa geotermica di interesse locale' |
+| Utilizzo di pompa di calore acqua -acqua in supporto alla centrale termica dell'edificio  |
 |  3.
 GOVERNANCE
 E COSTI | Eventuali stakeholder coinvolti
 Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. |   |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
 |   |  Stima dell'investimento
-complessivo (€) | Circa 150kEuro  |
+| complessivo (€) | Circa 150kEuro  |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☐ Sì
@@ -11365,16 +11273,16 @@ Avete già predisposto una strategia per la decarbonizzazione/neutralità carbon
 Si richiede di compilare la “Scheda raccolta azioni” (suddivisa in 3 parti) duplicandola per ciascun progetto che si desidera illustrare, compatibilmente con la disponibilità di dati e l'avanzamento dei progetti.
 
 |  1. CONTESTO e DESCRIZIONE | N progetto - Titolo progetto | C1907 – C2007 INTERVENTI DI ADEGUAMENTO O DI INNOVAZIONE IN MATERIA DI SISTEMI DI EVACUAZIONE DEI FUMI
-PROVENIENTI DALLA COMBUSTIONE DEGLI IMPIANTI AUTONOMI DEPUTATI AL RISCALDAMENTO ED ALLA PRODUZIONE DI ACQUA CALDA SANITARIA IN EDIFICI DI EDILIZIA RESIDENZIALE PUBBLICA  |
+| PROVENIENTI DALLA COMBUSTIONE DEGLI IMPIANTI AUTONOMI DEPUTATI AL RISCALDAMENTO ED ALLA PRODUZIONE DI ACQUA CALDA SANITARIA IN EDIFICI DI EDILIZIA RESIDENZIALE PUBBLICA  |
 | --- | --- | --- |
 |   |  Referente | T. Lamperti  |
 |   |  Categoria di progetto | ☐ progetto urbano
-☑ interventi relativi a propri asset e proprie attività  |
+| ☑ interventi relativi a propri asset e proprie attività  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | 730 unità immobiliari 22  |
+| Edificio, quartiere, altro | 730 unità immobiliari 22  |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Milano
-Vie Calvi 29, San Romanello 34, Cogne 20, Gonin 30, Fiamma 5, Santi 6-8, Cittadini 2 - Zoagli  |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Milano |
+| Vie Calvi 29, San Romanello 34, Cogne 20, Gonin 30, Fiamma 5, Santi 6-8, Cittadini 2 - Zoagli  |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (as es. se si tratta di un progetto integrato). | ☑ Sistemi energetici
 ☐ Involucro edilizio (cappotto, coperture, serramenti)
@@ -11390,8 +11298,8 @@ La scelta può essere multipla | ☑ Tecnologico/infrastrutturale
 ☐ Comportamentale
 ☐ Altro (specificare)  |
 |   |  Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | Unità abitative con riscaldamento autonomo : sostituzione delle caldaie per produzione riscaldamento e acqua calda sanitaria.
-Fornitura e messa in opera di caldaia unifamiliare a 4 stelle di efficienza, alimentata a gas naturale e al servizio di un appartamento tipo di B2 mq.  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | Unità abitative con riscaldamento autonomo : sostituzione delle caldaie per produzione riscaldamento e acqua calda sanitaria. |
+| Fornitura e messa in opera di caldaia unifamiliare a 4 stelle di efficienza, alimentata a gas naturale e al servizio di un appartamento tipo di B2 mq.  |
 |   |  Tempistiche | Avvio anno 2021 e conclusione anno 2024  |
 |  Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). |   |
 | --- | --- |
@@ -11405,7 +11313,7 @@ Totale= 1.070x730= 781.100 kWh anno  |   |   |   |   |
 
 La Mission prevede che venga effettuato un monitoraggio periodico sull'avanzamento complessivo verso gli obiettivi di decarbonizzazione. Vi sarà pertanto richiesto con cadenza presumibilmente biennale l'avanzamento delle azioni che avete proposto (ed eventuali modifiche e integrazioni), utilizzando gli indicatori riportati nella presente sezione della scheda
 |   | gas serra² (kg CO2eq/anno)
-(Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) | SISTEMA ENERGETICO |  |  |  |   |
+| (Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) | SISTEMA ENERGETICO |  |  |  |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |   |  EDIFICI / AMBIENTE COSTRUITO (es, Materiali/ tecniche costruttive |  |  |  |   |
 |   |   |  ECONOMIA CIRCOLARE E RIFIUTI |  |  |  |   |
@@ -11440,21 +11348,21 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 ☐ altro: indicare  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
 |  3.
 GOVERNANCE
 E COSTI | Eventuali stakeholder coinvolti
 Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. |   |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
 |   |  Stima dell'investimento
-complessivo (€) | Importo lavori pari a € 3.285.000,00 e 3.620.000,00 per un importo totale di 6.905.000,00 - Importo totale del finanziamento pari a € 4.550.000,00 e € 5.000.000,00 per un importo totale di € 9.550.000,00  |
+| complessivo (€) | Importo lavori pari a € 3.285.000,00 e 3.620.000,00 per un importo totale di 6.905.000,00 - Importo totale del finanziamento pari a € 4.550.000,00 e € 5.000.000,00 per un importo totale di € 9.550.000,00  |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
-Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
-☐ Sì  |
+| Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali? |
+| ☐ Sì  |
 |   | nazionali/locali. | x No
 Se sì, quali?
 -
@@ -11524,9 +11432,9 @@ Si richiede di compilare la “Scheda raccolta azioni” (suddivisa in 3 parti) 
 | --- | --- | --- |
 |   |  Referente | T. Lamperti  |
 |   |  Categoria di progetto | ☐ progetto urbano
-☑ interventi relativi a propri asset e proprie attività  |
+| ☑ interventi relativi a propri asset e proprie attività  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | 22 Fabbricati ad uso residenziale per un numero complessivo di circa 800 unità immobiliari; 2 Centrali Termiche.  |
+| Edificio, quartiere, altro | 22 Fabbricati ad uso residenziale per un numero complessivo di circa 800 unità immobiliari; 2 Centrali Termiche.  |
 |   |  Localizzazione
 Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Milano
 • Quartiere 1 – Via Bagarotti
@@ -11552,7 +11460,7 @@ Fornire una descrizione generale del progetto relativamente agli ambiti identifi
 |   |  | Con la realizzazione di tali interventi di interventi si prevede la realizzazione della Classe Energetica A, restando all'interno dei massimali definiti dal DL Rilancio per la misura del Superbonus 110% e ottenendo complessivamente un salto di 5/6 Classi Energetiche.  |
 | --- | --- | --- |
 |   | Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Avvio anno 2022 e conclusione anno 2024  |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Avvio anno 2022 e conclusione anno 2024  |
 |  2.
 IMPATTI¹
 (ENERGIA/
@@ -11618,15 +11526,15 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 ☐ altro: indicare  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
 |  3. GOVERNANCE E COSTI | Eventuali stakeholder coinvolti
-Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. |   |
+| Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. |   |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
 |   |  Stima dell'investimento complessivo (€) | Importo da PFTE pari a € 45.883.719,73  |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☑ Sì
@@ -11661,15 +11569,15 @@ Climate-Neutral and Smart Cities Mission by 2030
 Si richiede di compilare la "Scheda raccolta azioni" (suddivisa in 3 parti) duplicandola per ciascun progetto che si desidera illustrare, compatibilmente con la disponibilità di dati e l'avanzamento dei progetti.
 
 |  1. CONTESTO e DESCRIZIONE | N progetto - Titolo progetto | PNRR – Missione 5 “Inclusione e Coesione”
-Componente 2 “Infrastrutture sociali, famiglie, comunità e terzo settore” Investimento 3.1 – “Sport e inclusione” – Cluster 2 – “INTERVENTI DI MANUTENZIONE STRAORDINARIA DEL PALAZZETTO NELL’AMBITO DEL CENTRO SPORTIVO CARRARO  |
+| Componente 2 “Infrastrutture sociali, famiglie, comunità e terzo settore” Investimento 3.1 – “Sport e inclusione” – Cluster 2 – “INTERVENTI DI MANUTENZIONE STRAORDINARIA DEL PALAZZETTO NELL’AMBITO DEL CENTRO SPORTIVO CARRARO  |
 | --- | --- | --- |
 |   |  Referente | A. Costa  |
 |   |  Categoria di progetto | ☐ progetto urbano
-☑ interventi relativi a propri asset e proprie attività  |
+| ☑ interventi relativi a propri asset e proprie attività  |
 |   |  Scala dell’intervento
-Edificio, quartiere, altro | Porzione di edificio destinato a Palazzetto Sportivo collocato all’interno del Centro Sportivo Carraro.  |
+| Edificio, quartiere, altro | Porzione di edificio destinato a Palazzetto Sportivo collocato all’interno del Centro Sportivo Carraro.  |
 |   |  Localizzazione
-Indicare l’area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Milano, Via dei Missaglia 146  |
+| Indicare l’area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Milano, Via dei Missaglia 146  |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (as es. se si tratta di un progetto integrato). | ☑ Sistemi energetici
 ☑ Involucro edilizio (cappotto, coperture, serramenti)
@@ -11690,10 +11598,10 @@ Fornire una descrizione generale del progetto relativamente agli ambiti identifi
 • Riquadificazione energetica del Palazzetto Sportivo relativamente all'involucro edilizio (realizzazione del sistema di isolamento a cappotto, sostituzione degli infissi, rifacimento manto di copertura e relativo pacchetto di isolamento);
 • Adeguamento impiantistico del Palazzetto Sportivo in merito agli impianti elettrici e di illuminazione, nonché dell'impianti di trattamento aria e riscaldamento (ad eslusione della centrale di generazione calore che è esistente).  |
 |   | Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Avvio lavori anno 2024 e conclusione anno 2025.  |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Avvio lavori anno 2024 e conclusione anno 2025.  |
 |  2. IMPATTI¹
-(ENERGIA/riduzione emissioni CO2 equivalente) | Energia rinnovabile generata MWh/anno (valore atteso)
-(se previsto dall'intervento) | Non sono presenti impianti di produzione di energia da fonti rinnovabili.  |
+| (ENERGIA/riduzione emissioni CO2 equivalente) | Energia rinnovabile generata MWh/anno (valore atteso) |
+| (se previsto dall'intervento) | Non sono presenti impianti di produzione di energia da fonti rinnovabili.  |
 | --- | --- | --- |
 |   |  Acquisto di energia elettrica certificata da fonti rinnovabili MWh/anno | Non previsto dall'intervento.  |
 
@@ -11738,17 +11646,17 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 ☐ altro: implementazione sistema di raccolta acque meteoriche del Palazzetto Sportivo (5.000 litri) ad uso irriguo della aree a verde circostanti il Palazzetto Sportivo.  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e |   |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e |   |
 |   | sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
 | --- | --- | --- |
 |  3. GOVERNANCE E COSTI | Eventuali stakeholder coinvolti
-Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. |   |
+| Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. |   |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
 |   |  Stima dell'investimento complessivo (€) | Importo 4.080.000,00 €  |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☑ Sì
@@ -11788,11 +11696,11 @@ richiede di compilare la "Scheda raccolta azioni" (suddivisa in 3 parti) duplica
 | --- | --- | --- |
 |   |  Referente | A. Costa  |
 |   |  Categoria di progetto | ☐ progetto urbano
-☑ interventi relativi a propri asset e proprie attività  |
+| ☑ interventi relativi a propri asset e proprie attività  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | Edificio scolastico  |
+| Edificio, quartiere, altro | Edificio scolastico  |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Milano, via Console Marcello, 9  |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Milano, via Console Marcello, 9  |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (as es. se si tratta di un progetto integrato). | ☑ Sistemi energetici
 ☑ Involucro edilizio (cappotto, coperture, serramenti)
@@ -11801,21 +11709,21 @@ La scelta può essere multipla (as es. se si tratta di un progetto integrato). |
 ☐ Economia circolare e rifiuti
 ☐ Infrastrutture verdi e Nature Based Solutions  |
 |   |  Tipologia di intervento
-La scelta può essere multipla | ☑ Tecnologico/infrastrutturale
-☐ Governance/policy  |
+| La scelta può essere multipla | ☑ Tecnologico/infrastrutturale |
+| ☐ Governance/policy  |
 |   |  | ☐ Finanziario
 ☐ Gestionale
 ☐ Comportamentale
 ☐ Altro (specificare)  |
 | --- | --- | --- |
 |   |  Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | Intervento di ristrutturazione importante di secondo livello che vede l'efficientamento energetico dell'involucro disperdente dell'edificio, consistente nella sostituzione di tutti i serramenti esterni e la coibentazione di tutti gli elementi opachi delimitanti il volume riscaldato.  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | Intervento di ristrutturazione importante di secondo livello che vede l'efficientamento energetico dell'involucro disperdente dell'edificio, consistente nella sostituzione di tutti i serramenti esterni e la coibentazione di tutti gli elementi opachi delimitanti il volume riscaldato.  |
 |   | Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Anno di avvio : 2022
-Anno di conclusione : 2025  |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Anno di avvio : 2022 |
+| Anno di conclusione : 2025  |
 |  2. IMPATTI¹
-(ENERGIA/riduzione emissioni CO2 equivalente) | Energia rinnovabile generata MWh/anno (valore atteso)
-(se previsto dall'intervento) | Non sono presenti impianti di produzione di energia da finoti energetiche rinnovabili  |
+| (ENERGIA/riduzione emissioni CO2 equivalente) | Energia rinnovabile generata MWh/anno (valore atteso) |
+| (se previsto dall'intervento) | Non sono presenti impianti di produzione di energia da finoti energetiche rinnovabili  |
 | --- | --- | --- |
 |   |  Acquisto di energia elettrica certificata da fonti rinnovabili MWh/anno (valore atteso)
 (se previsto dall'intervento) | Non previsto dall'intervento.  |
@@ -11856,14 +11764,14 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 ☐ altro: indicare  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
 |  3.
 GOVERNANCE
 E COSTI | Eventuali stakeholder coinvolti
 Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. |   |
 | --- | --- | --- |
 |   |  Commenti sull’implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
 |   | Stima dell'investimento complessivo (€) | Importo LOTTO 1 – 774.316,10 €
 Importo LOTTO 2 - 1.199.725,74 €
 Importo LOTTO 3 - 1.159.612,61 €
@@ -11871,7 +11779,7 @@ Importo LOTTO 3 - 1.159.612,61 €
 Importo TOTALE - 3.133.654,45 €  |
 | --- | --- | --- |
 |   | OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   | Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☐ Si
@@ -11911,11 +11819,11 @@ richiede di compilare la "Scheda raccolta azioni" (suddivisa in 3 parti) duplica
 | --- | --- | --- |
 |   |  Referente | A. Costa  |
 |   |  Categoria di progetto | ☐ progetto urbano
-☑ interventi relativi a propri asset e proprie attività  |
+| ☑ interventi relativi a propri asset e proprie attività  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | Edificio scolastico  |
+| Edificio, quartiere, altro | Edificio scolastico  |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Milano, via Narcisi 1  |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Milano, via Narcisi 1  |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (as es. se si tratta di un progetto integrato). | ☑ Sistemi energetici
 ☑ Involucro edilizio (cappotto, coperture, serramenti)
@@ -11934,10 +11842,10 @@ La scelta può essere multipla | ☑ Tecnologico/infrastrutturale
 |   | Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | dell'involucro disperdente dell'edificio, consistente nella sostituzione di tutti i serramenti esterni e la coibentazione di tutti gli elementi opachi delimitanti il volume riscaldato. Ristrutturazione dell'impianto termico e di produzione ACS.  |
 | --- | --- | --- |
 |   | Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). |   |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). |   |
 |  2. IMPATTI¹
-(ENERGIA/riduzione emissioni CO2 equivalente) | Energia rinnovabile generata MWh/anno (valore atteso)
-(se previsto dall'intervento) | Si stima una produzione pari a 50285 kWh/anno da parte dell'impianto fotovoltaico installato in copertura  |
+| (ENERGIA/riduzione emissioni CO2 equivalente) | Energia rinnovabile generata MWh/anno (valore atteso) |
+| (se previsto dall'intervento) | Si stima una produzione pari a 50285 kWh/anno da parte dell'impianto fotovoltaico installato in copertura  |
 | --- | --- | --- |
 |   |  Acquisto di energia elettrica certificata da fonti rinnovabili MWh/anno (valore atteso)
 (se previsto dall'intervento) | Non previsto dall'intervento.  |
@@ -11946,7 +11854,7 @@ Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realiz
 |   | Variazione dei consumi energetici per vettore (applicabile se progetto sugli owned assets) | La principale riduzione dei consumi è legata all'energia termica fornita dal teleriscaldamento, che alimenta l'impianto di riscaldamento a servizio dell'edificio. Mentre si avrà un aumento dei consumi di energia elettrica legati alla realizzazione dell'impianto di raffrescamento centralizzato, alimentato dal un gruppo frigorifero dedicato. Il consumo stimato di energia primaria non rinnovabile, a valle dell'intervento, sarà pari a circa 21 kWh/mq anno.  |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  Riduzione delle emissioni di gas serra² (kg CO2eq/anno)
-(Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) | AMBITO DI AZIONE | Descrizione | Emissioni a fine realizzazione del progetto | Emissioni (Baseline) | Delta (emissioni evitate)  |
+| (Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) | AMBITO DI AZIONE | Descrizione | Emissioni a fine realizzazione del progetto | Emissioni (Baseline) | Delta (emissioni evitate)  |
 |   |   |  SISTEMA ENERGETICO |  |  |  |   |
 |   |   |  EDIFICI / AMBIENTE COSTRUITO (es, Materiali/ tecniche costruttive | Edificio | 5 kg/mq anno | nd | Nd  |
 |   |   |  ECONOMIA CIRCOLARE E RIFIUTI |  |  |  |   |
@@ -11979,18 +11887,18 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 ☐ altro: indicare  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
 |  3.
 GOVERNANCE
 E COSTI | Eventuali stakeholder coinvolti
 Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | Nessuna  |
 | --- | --- | --- |
 |   | Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
 | --- | --- | --- |
 |   | Stima dell'investimento complessivo (€) | Importo 8.517.117,12 €  |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   | Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☑ Sì
@@ -12027,11 +11935,11 @@ Si richiede di compilare la “Scheda raccolta azioni” (suddivisa in 3 parti) 
 | --- | --- | --- |
 |   |  Referente | M. Valenti  |
 |   |  Categoria di progetto | ☐ progetto urbano
-☑ interventi relativi a propri asset e proprie attività  |
+| ☑ interventi relativi a propri asset e proprie attività  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | 3 fabbricati ad uso prevalentemente residenziale per un numero complessivo di 175 unità immobiliari e circa 500 mq di spazi polifunzionali ad uso ufficio; circa 20.000 mq di riqualificazione urbana.  |
+| Edificio, quartiere, altro | 3 fabbricati ad uso prevalentemente residenziale per un numero complessivo di 175 unità immobiliari e circa 500 mq di spazi polifunzionali ad uso ufficio; circa 20.000 mq di riqualificazione urbana.  |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Milano, via dei Giaggioli 7, 9, 11  |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Milano, via dei Giaggioli 7, 9, 11  |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (as es. se si tratta di un progetto integrato). | ☑ Sistemi energetici
 ☑ Involucro edilizio (cappotto, coperture, serramenti)
@@ -12045,15 +11953,15 @@ La scelta può essere multipla | ☑ Tecnologico/infrastrutturale
 ☐ Finanziario
 ☐ Gestionale  |
 |   |  | ☐ Comportamentale
-☐ Altro (specificare)  |
+| ☐ Altro (specificare)  |
 | --- | --- | --- |
 |   | Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | Intervento di demolizione e ricostruzione che prevede la realizzazione di tre edifici NZEB caratterizzati da un involucro altamente performante, impianti termici a bassa temperatura ed il ricorso a fonti energetiche rinnovabili. Intervento di riqualificazione del contesto urbano di tali edifici, con realizzazione di un'area pedonale al posto del sedime stradale, ridisegno del verde e dell'arredo urbano, inserimento di tratti di percorrenza veicolare a senso unico e di un tratto di pista ciclabile.  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | Intervento di demolizione e ricostruzione che prevede la realizzazione di tre edifici NZEB caratterizzati da un involucro altamente performante, impianti termici a bassa temperatura ed il ricorso a fonti energetiche rinnovabili. Intervento di riqualificazione del contesto urbano di tali edifici, con realizzazione di un'area pedonale al posto del sedime stradale, ridisegno del verde e dell'arredo urbano, inserimento di tratti di percorrenza veicolare a senso unico e di un tratto di pista ciclabile.  |
 |   | Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Avvio anno 2023 e conclusione anno 2026  |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Avvio anno 2023 e conclusione anno 2026  |
 |  2. IMPATTI¹
-(ENERGIA/ riduzione emissioni CO2 equivalente) | Energia rinnovabile generata MWh/anno (valore atteso)
-(se previsto dall'intervento) | 64.701 kWh/anno energia elettrica prodotta da impianti fotovoltaici.  |
+| (ENERGIA/ riduzione emissioni CO2 equivalente) | Energia rinnovabile generata MWh/anno (valore atteso) |
+| (se previsto dall'intervento) | 64.701 kWh/anno energia elettrica prodotta da impianti fotovoltaici.  |
 | --- | --- | --- |
 |   |  Acquisto di energia elettrica certificata da fonti rinnovabili MWh/anno (valore atteso)
 (se previsto | Dato non disponibile, legato alla tipologia di fornitura elettrica che verrà adottata.  |
@@ -12101,13 +12009,13 @@ I cobenefici sono i risultati indiretti della propria azione, effetti e cambiame
 delle attrezzature (playground e arredo urbano) e ridisegno degli spazi a verde che favorisce l'utilizzo dello spazio aperto.
 
 |  3. GOVERNANCE E COSTI | Eventuali stakeholder coinvolti
-Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. |   |
+| Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. |   |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
 |   |  Stima dell'investimento complessivo (€) | Importo 57.576.000,00 €  |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☑ Sì
@@ -12147,11 +12055,11 @@ richiede di compilare la "Scheda raccolta azioni" (suddivisa in 3 parti) duplica
 | --- | --- | --- |
 |   |  Referente | M. Valenti  |
 |   |  Categoria di progetto | ☐ progetto urbano
-☑ interventi relativi a propri asset e proprie attività  |
+| ☑ interventi relativi a propri asset e proprie attività  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | Fabbricato caratterizzato da una tipologia in linea, con due piani fuori terra e un piano interrato. Al piano primo sono presenti nove appartamenti, al piano terra sei spazi commerciali o dati in gestione ad associazioni e al piano interrato le cantine di pertinenza delle unità immobiliari.  |
+| Edificio, quartiere, altro | Fabbricato caratterizzato da una tipologia in linea, con due piani fuori terra e un piano interrato. Al piano primo sono presenti nove appartamenti, al piano terra sei spazi commerciali o dati in gestione ad associazioni e al piano interrato le cantine di pertinenza delle unità immobiliari.  |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Milano, via Padre Luigi Monti 18-24  |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Milano, via Padre Luigi Monti 18-24  |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (as es. se si tratta di un progetto integrato). | ☑ Sistemi energetici
 ☑ Involucro edilizio (cappotto, coperture, serramenti)
@@ -12165,13 +12073,13 @@ La scelta può essere multipla | ☑ Tecnologico/infrastrutturale
 ☐ Finanziario
 ☐ Gestionale  |
 |   |  | ☐ Comportamentale
-☐ Altro (specificare)  |
+| ☐ Altro (specificare)  |
 | --- | --- | --- |
 |   | Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | Intervento di ristrutturazione importante di secondo livello che vede l'efficientamento energetico dell'involucro disperdente del fabbricato consistente nella sostituzione di tutti i serramenti esterni e la coibentazione di tutti gli elementi opachi delimitanti il volume riscaldato.
-Insieme all'efficientamento dell'involucro si è provveduto alla sostituzione della caldaia alimentante l'impianto termico centralizzato.  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | Intervento di ristrutturazione importante di secondo livello che vede l'efficientamento energetico dell'involucro disperdente del fabbricato consistente nella sostituzione di tutti i serramenti esterni e la coibentazione di tutti gli elementi opachi delimitanti il volume riscaldato. |
+| Insieme all'efficientamento dell'involucro si è provveduto alla sostituzione della caldaia alimentante l'impianto termico centralizzato.  |
 |   |  Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | 2024-2025  |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | 2024-2025  |
 |  2.
 IMPATTI¹
 (ENERGIA/
@@ -12220,18 +12128,18 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 ☐ altro: indicare  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
 |  3.
 GOVERNANCE
 E COSTI | Eventuali stakeholder coinvolti
 Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. |   |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
 |   | Stima dell'investimento complessivo (€) | Importo 3.700.000,00 €  |
 | --- | --- | --- |
 |   | OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☐ Si
@@ -12266,11 +12174,11 @@ richiede di compilare la "Scheda raccolta azioni" (suddivisa in 3 parti) duplica
 | --- | --- | --- |
 |   |  Referente | M. Valenti  |
 |   |  Categoria di progetto | ☐ progetto urbano
-☑ interventi relativi a propri asset e proprie attività  |
+| ☑ interventi relativi a propri asset e proprie attività  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro |   |
+| Edificio, quartiere, altro |   |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Milano, via Rizzoli 13-45 e 73-87  |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Milano, via Rizzoli 13-45 e 73-87  |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (as es. se si tratta di un progetto integrato). | ☑ Sistemi energetici
 ☑ Involucro edilizio (cappotto, coperture, serramenti)
@@ -12287,10 +12195,10 @@ La scelta può essere multipla | ☑ Tecnologico/infrastrutturale
 ☐ Altro (specificare)  |
 |   |  Descrizione | Intervento di manutenzione straordinaria che vede  |
 |   | dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | l'efficientamento dell'involucro disperdente dei fabbricati con la realizzazione di un cappotto termico per i civici 13-45 e la sostituzione dei serramenti su tutti gli edifici.  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | l'efficientamento dell'involucro disperdente dei fabbricati con la realizzazione di un cappotto termico per i civici 13-45 e la sostituzione dei serramenti su tutti gli edifici.  |
 | --- | --- | --- |
 |   | Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Avvio anno 2023 e conclusione anno 2026  |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Avvio anno 2023 e conclusione anno 2026  |
 |  2.
 IMPATTI¹
 (ENERGIA/
@@ -12339,7 +12247,7 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 ☐ altro: indicare  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
 |  3.
 GOVERNANCE
 E COSTI | Eventuali stakeholder coinvolti
@@ -12348,7 +12256,7 @@ MM Spa Divisione Casa,
 Unareti SpA  |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
 |   | Stima dell'investimento complessivo (€) | Importo 19.500.000,00 € (importo complessivo QTE)  |
 | --- | --- | --- |
 |   | OPEX (operational expenditure) Se applicabile. |   |
@@ -12392,11 +12300,11 @@ richiede di compilare la "Scheda raccolta azioni" (suddivisa in 3 parti) duplica
 | --- | --- | --- |
 |   |  Referente | M. Valenti  |
 |   |  Categoria di progetto | ☐ progetto urbano
-☑ interventi relativi a propri asset e proprie attività  |
+| ☑ interventi relativi a propri asset e proprie attività  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | 3 Fabbricati ad uso prevalentemente residenziale per un numero complessivo di 52 unità immobiliari  |
+| Edificio, quartiere, altro | 3 Fabbricati ad uso prevalentemente residenziale per un numero complessivo di 52 unità immobiliari  |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Milano, via Solari 40  |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Milano, via Solari 40  |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (as es. se si tratta di un progetto integrato). | ☑ Sistemi energetici
 ☑ Involucro edilizio (cappotto, coperture, serramenti)
@@ -12413,11 +12321,11 @@ La scelta può essere multipla | ☑ Tecnologico/infrastrutturale
 ☐ Altro (specificare)  |
 |   |  Descrizione | Intervento di ristrutturazione importante di primo  |
 |   | dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | livello che vede l'efficientamento energetico dell'involucro disperdente delle scale 1, 10 e 11, consistente nella sostituzione di tutti i serramenti esterni e la coibentazione di tutti gli elementi opachi delimitanti il volume riscaldato.
-Ristrutturazione dell'impianto termico e di produzione ACS, con il passaggio da sistema autonomo (per singola unità immobiliare) a centralizzato.  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | livello che vede l'efficientamento energetico dell'involucro disperdente delle scale 1, 10 e 11, consistente nella sostituzione di tutti i serramenti esterni e la coibentazione di tutti gli elementi opachi delimitanti il volume riscaldato. |
+| Ristrutturazione dell'impianto termico e di produzione ACS, con il passaggio da sistema autonomo (per singola unità immobiliare) a centralizzato.  |
 | --- | --- | --- |
 |   | Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Avvio anno 2024 e conclusione anno 2026  |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Avvio anno 2024 e conclusione anno 2026  |
 |  2.
 IMPATTI¹
 (ENERGIA/
@@ -12466,18 +12374,18 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 ☐ altro: indicare  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
 |  3.
 GOVERNANCE
 E COSTI | Eventuali stakeholder coinvolti
 Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. |   |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
 |   | Stima dell'investimento complessivo (€) | Importo 11.250.000,00€  |
 | --- | --- | --- |
 |   | OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☐ Sì
@@ -12513,11 +12421,11 @@ richiede di compilare la "Scheda raccolta azioni" (suddivisa in 3 parti) duplica
 | --- | --- | --- |
 |   |  Referente | M. Valenti  |
 |   |  Categoria di progetto | ☐ progetto urbano
-☑ interventi relativi a propri asset e proprie attività  |
+| ☑ interventi relativi a propri asset e proprie attività  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | 2 Fabbricati ad uso residenziale per un numero complessivo di circa 130 unità immobiliari  |
+| Edificio, quartiere, altro | 2 Fabbricati ad uso residenziale per un numero complessivo di circa 130 unità immobiliari  |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Milano, via Tofano 5  |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Milano, via Tofano 5  |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (as es. se si tratta di un progetto integrato). | ☑ Sistemi energetici
 ☑ Involucro edilizio (cappotto, coperture, serramenti)
@@ -12534,10 +12442,10 @@ La scelta può essere multipla | ☑ Tecnologico/infrastrutturale
 ☐ Altro (specificare)  |
 |   |  Descrizione | Intervento di demolizione e ricostruzione che  |
 |   | dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | prevede la realizzazione di tre edifici NZEB caratterizzati da un involucro altamente performante, impianti termici a bassa temperatura ed il ricordo a fonti energetiche rinnovabili.  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | prevede la realizzazione di tre edifici NZEB caratterizzati da un involucro altamente performante, impianti termici a bassa temperatura ed il ricordo a fonti energetiche rinnovabili.  |
 | --- | --- | --- |
 |   | Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Avvio anno 2021 e conclusione anno 2025  |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Avvio anno 2021 e conclusione anno 2025  |
 |  2.
 IMPATTI¹
 (ENERGIA/
@@ -12601,14 +12509,14 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 ☐ altro: indicare  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
 |  3.
 GOVERNANCE
 E COSTI | Eventuali stakeholder coinvolti
 Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. |   |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o |   |
+| Descrivere Es. eventuali barriere e/o |   |
 |   | fattori abilitanti. |   |
 | --- | --- | --- |
 |   | Stima dell'investimento complessivo (€) | Importo 23.360.000,00 €  |
@@ -12705,11 +12613,11 @@ Si richiede di compilare la “Scheda raccolta azioni” (suddivisa in 3 parti) 
 (energy manager)
 Davide Canuti davide.canuti@seamilano.eu (resp. environnemental assessment and certification)  |
 |   |  Categoria di progetto | ☐ progetto urbano
-☑ interventi relativi a propri asset e proprie attività  |
+| ☑ interventi relativi a propri asset e proprie attività  |
 |   |  Scala dell’intervento
-Edificio, quartiere, altro | Aeroporto di Milano Linate (parzialmente ricadente nel comune di Milano oltre che nei comuni di Peschiera Borromeo e Segrate)  |
+| Edificio, quartiere, altro | Aeroporto di Milano Linate (parzialmente ricadente nel comune di Milano oltre che nei comuni di Peschiera Borromeo e Segrate)  |
 |   |  Localizzazione
-Indicare l’area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili. | Aeroporto di Milano Linate  |
+| Indicare l’area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili. | Aeroporto di Milano Linate  |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (as es. se si tratta di un progetto integrato). | ☑ Sistemi energetici
 ☐ Involucro edilizio (cappotto, coperture, serramenti)
@@ -12733,7 +12641,7 @@ I principali sono i seguenti :
 • Elettrificazione del parco mezzi operativi ;
 • Introduzione di combustibili di origine biogenica (HVO) e dell'idrogeno per i mezzi operativi per i quali al momento non sono disponibili alternative elettriche  |
 |   | **Tempistiche**
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | La Strategie energetica è stata approvata nel 2023 ed è operativa dal 2024. L'orizzonte temporale per la sua implementazione e il conseguimento degli obiettivi è l'intervallo 2024-2030, a cui seguiranno le azioni per il mantenimento del livello « net zero »  |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | La Strategie energetica è stata approvata nel 2023 ed è operativa dal 2024. L'orizzonte temporale per la sua implementazione e il conseguimento degli obiettivi è l'intervallo 2024-2030, a cui seguiranno le azioni per il mantenimento del livello « net zero »  |
 |  2. IMPATTI¹ (ENERGIA/ riduzione emissioni CO2 equivalente) | Energia rinnovabile generata MWh/anno (valore atteso) (se previsto dall'intervento) | Si stima che l'energia elettrica generata dall'impianto fotovoltaico da realizzarsi all'interno del sedime aeroportuale sarà pari a 7 GWh / anno Riduzione di CO2 attesa : 2,1 kTon / anno (fonte del dato : Fattori di emissione medi del parco di cogenerazione italiano)  |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  Acquisto di energia elettrica certificata da fonti rinnovabili MWh/anno (valore atteso) (se previsto dall'intervento) | Acquisti stimati di energia elettrica certificata da fonti rinnovabili : 22 GWh/anno (in parte tramite PPA) Riduzione di CO2 attesa : 6,5 kTon / anno (fonte del dato : Fattori di emissione medi del parco di cogenerazione italiano) Acquisti stimati di energia termica certificata da fonti rinnovabili : 27 GWh/anno (in parte tramite PPA) Riduzione di CO2 attesa : 6,8 kTon / anno (fonte del dato : Fattori di emissione medi del parco di cogenerazione italiano)  |   |   |   |   |
@@ -12776,15 +12684,15 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 ☐ altro: indicare  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | La transizione a veicoli operativi elettrici e il contemporaneo adeguamento anche delle infrastrutture air side per l'impiego di elettricità per i mezzi e le dotazioni a supporto dell'attività aeronautica permetterà anche la riduzione di emissioni di gas inquinanti (particolato, ossidi di azoto), portando un ulteriore contributo agli effetti di altre politiche di riduzione dell'impatto complessivo sulla qualità dell'aria (in particolare shift modale per l'accessibilità allo scalo di Linate)  |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | La transizione a veicoli operativi elettrici e il contemporaneo adeguamento anche delle infrastrutture air side per l'impiego di elettricità per i mezzi e le dotazioni a supporto dell'attività aeronautica permetterà anche la riduzione di emissioni di gas inquinanti (particolato, ossidi di azoto), portando un ulteriore contributo agli effetti di altre politiche di riduzione dell'impatto complessivo sulla qualità dell'aria (in particolare shift modale per l'accessibilità allo scalo di Linate)  |
 |  3. GOVERNANCE E COSTI | Eventuali stakeholder coinvolti
-Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | Iniziativa esclusivamente SEA sviluppata nel contesto della concessione con ENAC  |
+| Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | Iniziativa esclusivamente SEA sviluppata nel contesto della concessione con ENAC  |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
 |   |  Stima dell'investimento complessivo (€) | nd  |
 |   |  OPEX (operational expenditure)
-Se applicabile. | nd  |
+| Se applicabile. | nd  |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☑ Sì
@@ -12915,11 +12823,11 @@ Si richiede di compilare la “Scheda raccolta azioni” (suddivisa in 3 parti) 
 | --- | --- | --- |
 |   |  Referente |   |
 |   |  Categoria di progetto | x progetto urbano
-X interventi relativi a propri asset e proprie attività  |
+| X interventi relativi a propri asset e proprie attività  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | COMPRENSORIO AGROALIMENTARE  |
+| Edificio, quartiere, altro | COMPRENSORIO AGROALIMENTARE  |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). |   |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). |   |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (as es. se si tratta | X Sistemi energetici
 X Involucro edilizio (cappotto, coperture, serramenti)
@@ -12997,13 +12905,13 @@ I cobenefici sono i risultati indiretti della | RIDUZIONE DEL TRAFFICO SU VIA VA
 propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non)
 
 |  3. GOVERNANCE E COSTI | Eventuali stakeholder coinvolti
-Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | A2a CALORE ED ENERGIA PER LA REALIZZAZIONE DELL'ANELLO DI ACQUA DI CONDENSAZIONE E LA REALIZZAZION E DELL'IMPIATO FOTOVOLTAICO  |
+| Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | A2a CALORE ED ENERGIA PER LA REALIZZAZIONE DELL'ANELLO DI ACQUA DI CONDENSAZIONE E LA REALIZZAZION E DELL'IMPIATO FOTOVOLTAICO  |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
 |   |  Stima dell'investimento complessivo (€) | 25 MILIONI DI EURO  |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☑ Sì
@@ -13123,11 +13031,11 @@ SCHEDA 1
 | --- | --- | --- |
 |   |  Referente | Eleonora Perotto - Mobility manager di Ateneo e Capo Servizio Sostenibilità Ambientale  |
 |   |  Categoria di progetto | ☐ progetto urbano
-☐ intervento su propri asset  |
+| ☐ intervento su propri asset  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | Ateneo  |
+| Edificio, quartiere, altro | Ateneo  |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | L'azione riguarda tutti i bacini di utenza dell'Ateneo.  |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | L'azione riguarda tutti i bacini di utenza dell'Ateneo.  |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (a.e se si tratta di un progetto integrato). | ☐ Sistemi energetici
 ☐ Involucro edilizio (cappotto, coperture, serramenti)
@@ -13157,7 +13065,7 @@ Dati di utilizzo servizi sharing: 6.521 (2021), .8.511 (2022), 7.378 (dato parzi
 Numero iniziative dedicate all'ambito promozione mobilità sostenibile: 14 (2021), 20 (2022), 4, (2023).  |
 | --- | --- | --- |
 |   |  Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Sono state riportate nel punto precedente.  |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Sono state riportate nel punto precedente.  |
 |  2.
 IMPATTI
 1
@@ -13233,7 +13141,7 @@ investimenti in termini soprattutto di ore/uomo per la realizzazione di campagne
 Previsione spesa: € 222.239 (2024) e € 237.674 (2025).
 Le spese "vive" per l'organizzazione di eventi e corsi sono non significative, mentre può essere rilevante il costo (ore/uomo) del personale da dedicare.  |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   | Copertura dell'investimento
 Indicare se per la realizzazione del progetto | Oltre che di proprie fonti di finanziamento si intende  |
 9
@@ -13265,9 +13173,9 @@ SCHEDA 2
 | --- | --- | --- |
 |   |  Referente | Eleonora Perotto – Mobility manager di Ateneo e Capo Servizio Sostenibilità Ambientale  |
 |   |  Categoria di progetto | ☐ progetto urbano
-intervento su propri asset  |
+| intervento su propri asset  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | Edificio/Campus  |
+| Edificio, quartiere, altro | Edificio/Campus  |
 |   |  Localizzazione
 Indicare l'area interessata
 eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Gli interventi riguardano tutte le aree dei campus milanesi – quartiere Città Studi, Bovisa La Masa e Bovisa Durando (e in parte anche i Poli territoriali).  |
@@ -13341,15 +13249,13 @@ Campus Bonardi – Progetto Renzo Piano (2021)
 Area interessata: circa 6.000 m²; eliminati circa
 posti auto;  |
 | --- | --- | --- |
-1
-
 |   |  | - Campus Durando (previsto per il 2024) - Area interessata: circa 18.500 m²; eliminati circa 100 posti auto; - Campus Leonardo – completamento progetto (2025) - Area interessata: 8.000 m²; eliminati circa 50 posti auto; - Campus Bassini (2025) - Area interessata 6.700 m²; eliminati circa 120 posti auto.  |
 | --- | --- | --- |
 |   |  | 6. Dotazione bici/monopattini per spostamenti di servizio - 101 bici presenti al 2020; - 145 bici e 6 monopattini al 2023; - previsto acquisto si ulteriori 40 bici (pedalata tradizionale e/o assistita).  |
 |   | Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Sono state riportate nel punto precedente.  |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Sono state riportate nel punto precedente.  |
 |  2. IMPATTI
-(ENERGIA/riduzione emissioni CO2 equivalente) | Energia rinnovabile generata MWh/anno (valore atteso) (se previsto dall'intervento) | N.A.  |
+| (ENERGIA/riduzione emissioni CO2 equivalente) | Energia rinnovabile generata MWh/anno (valore atteso) (se previsto dall'intervento) | N.A.  |
 | --- | --- | --- |
 |   |  Acquisto di energia elettrica certificata da fonti rinnovabili MWh/anno (valore atteso) (se previsto | N.A.  |
 
@@ -13394,12 +13300,12 @@ E COSTI | Eventuali stakeholder coinvolti
 Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | Fornitori infrastrutture  |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. | - Necessari investimenti di significativo impatto economico.
-Necessaria attività di comunicazione e/o sensibilizzazione per spiegare la rimozione dei parcheggi e, in generale, promuovere il cambio dei comportamenti.  |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. | - Necessari investimenti di significativo impatto economico. |
+| Necessaria attività di comunicazione e/o sensibilizzazione per spiegare la rimozione dei parcheggi e, in generale, promuovere il cambio dei comportamenti.  |
 |   |  Stima dell'investimento complessivo (€) | - Parte infrastrutture mobilità, tra quanto già investito dal 2021 e quanto da investire al 2025, circa 1,5 milioni di euro;
-parte pedonalizzazione con riqualificazione aree, circa 10 milioni di euro.  |
+| parte pedonalizzazione con riqualificazione aree, circa 10 milioni di euro.  |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento | Oltre che di proprie fonti di finanziamento si intende  |
 4
 
@@ -13425,11 +13331,11 @@ SCHEDA 3
 | --- | --- | --- |
 |   |  Referente | Barbara Vai – Referente Area tecnico Edilizia  |
 |   |  Categoria di progetto | ☐ progetto urbano
-☑ intervento su propri asset  |
+| ☑ intervento su propri asset  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | Campus (Lotto)  |
+| Edificio, quartiere, altro | Campus (Lotto)  |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Campus Bovisa - Durando  |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Campus Bovisa - Durando  |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (a.e se si tratta di un progetto integrato). | ☐ Sistemi energetici
 ☐ Involucro edilizio (cappotto, coperture, serramenti)
@@ -13456,7 +13362,7 @@ L'adattamento agli eventi climatici di bassa-media e alta intensità tramite l'i
 La riqualificazione urbana e il miglioramento del comfort ambientale con incremento della resilienza e contrasto ai cambiamenti climatici e alle isole di calore e del benessere tramite l'incremento del verde, la creazione di nuovi filari alberati, la creazione di spazi esterni di incontro e ricreazione;  |
 | --- | --- | --- |
 |   | Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Intervento iniziato nell'ottobre 2023 con conclusione prevista a fine 2024.  |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Intervento iniziato nell'ottobre 2023 con conclusione prevista a fine 2024.  |
 |  2.
 IMPATTI⁵
 (ENERGIA/
@@ -13512,11 +13418,11 @@ E COSTI | Eventuali stakeholder coinvolti
 Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. |   |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
 |   |  Stima dell'investimento complessivo
-(€) | Per realizzazione opere (ATE) 2,6 milioni di euro  |
+| (€) | Per realizzazione opere (ATE) 2,6 milioni di euro  |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☐ Sì
@@ -13535,9 +13441,9 @@ SCHEDA 4
 | --- | --- | --- |
 |   |  Referente | Filippo Bovera – Energy manager di Ateneo  |
 |   |  Categoria di progetto | ☐ progetto urbano
-☑ intervento su propri asset  |
+| ☑ intervento su propri asset  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | Quartieri di Città Studi, Bovisa e Dergano  |
+| Edificio, quartiere, altro | Quartieri di Città Studi, Bovisa e Dergano  |
 |   |  Localizzazione
 Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Città Studi: Piazza Leonardo Da Vinci, Via Bonardi, Via Bassini, Via Golgi, Via Colombo
 Bovisa: Via La Masa, Via Lambruschini
@@ -13561,14 +13467,10 @@ Fornire una descrizione generale del progetto relativamente agli ambiti identifi
 Riqualificazione edilizia con interventi di efficienza su involucro e serramenti.
 Ammodernamento del sistema di riscaldamento e raffrescamento del campus Bovisa La Masa con centrale in pompa di calore e teleriscaldamento/teleraffrescamento.  |
 |   |  Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Tutte le attività sono già in corso e viene riportato di seguito il target previsto di completamento nei prossimi 3 anni (2024-2026)
-Impianti: ammodernamento e centralizzazione di tutti i gruppi frigoriferi vetusti (ca 20, potenza frigo eq ca 6 MW); 70% LED su totale installato (eq ca 40 k lampade).  |
-
-8
-9
-
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Tutte le attività sono già in corso e viene riportato di seguito il target previsto di completamento nei prossimi 3 anni (2024-2026) |
+| Impianti: ammodernamento e centralizzazione di tutti i gruppi frigoriferi vetusti (ca 20, potenza frigo eq ca 6 MW); 70% LED su totale installato (eq ca 40 k lampade).  |
 |   |  | Edifici: riquadificazione completa di 3 edifici; interventi su involucro e/o serramenti su ca 10 edifici.
-La Masa: stato di avanzamento atteso a fine 2026 ca 50%, comprensivo di riquadificazione secondari di edificio, centrale di produzione e rete.  |
+| La Masa: stato di avanzamento atteso a fine 2026 ca 50%, comprensivo di riquadificazione secondari di edificio, centrale di produzione e rete.  |
 | --- | --- | --- |
 |  2.
 IMPATTI^{7}
@@ -13616,21 +13518,19 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 ☐ nuovi alberi piantumati: n.
 ☐ superficie permeabile a verde aggiuntiva: mq  |
 | --- | --- | --- |
-1
-
 |   | ☐ altro: indicare  |
 | --- | --- |
 |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | Miglioramento del comfort interno degli edifici, con maggiore benessere per gli occupanti.  |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | Miglioramento del comfort interno degli edifici, con maggiore benessere per gli occupanti.  |
 |  3. GOVERNANCE E COSTI | Eventuali stakeholder coinvolti
-Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | Aziende private legate ai lavori svolti, A2A calore e servizi  |
+| Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | Aziende private legate ai lavori svolti, A2A calore e servizi  |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. | Barriere: coordinamento tra diversi attori e iter burocratici, di approvazione e controllo interni agli enti pubblici onerosi; necessità di adeguate e approfondite conoscenze tecniche e legislative.
-Fattori abilitanti: disponibilità di fondi di finanziamento pubblici.  |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. | Barriere: coordinamento tra diversi attori e iter burocratici, di approvazione e controllo interni agli enti pubblici onerosi; necessità di adeguate e approfondite conoscenze tecniche e legislative. |
+| Fattori abilitanti: disponibilità di fondi di finanziamento pubblici.  |
 |   |  Stima dell'investimento complessivo (€) | Circa 60 M€ per tutti gli interventi citati  |
 |   |  OPEX (operational expenditure)
-Se applicabile. | N.D.  |
+| Se applicabile. | N.D.  |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☐ Sì
@@ -13651,10 +13551,10 @@ SCHEDA 5
 | --- | --- | --- |
 |   |  Referente | Filippo Bovera – Energy manager di Ateneo  |
 |   | Categoria di progetto | ☐ progetto urbano
-☑ intervento su propri asset  |
+| ☑ intervento su propri asset  |
 | --- | --- | --- |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | Quartieri di Città Studi, Bovisa e Dergano  |
+| Edificio, quartiere, altro | Quartieri di Città Studi, Bovisa e Dergano  |
 |   |  Localizzazione
 Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Città Studi: Piazza Leonardo Da Vinci, Via Bonardi, Via Bassini, Via Golgi, Via Colombo
 Bovisa: Via La Masa, Via Lambruschini
@@ -13678,15 +13578,13 @@ Fornire una descrizione generale del progetto relativamente agli ambiti identifi
 Condivisione dell'energia rinnovabile prodotta in eccesso rispetto ai consumi propri all'interno di Comunità di Energia Rinnovabile (CER).
 Approvvigionamento di una quota dell'energia elettrica residua che proverrà dalla rete pubblica con garanzia di origine rinnovabile (GO), anche tramite accordi di lungo termine specifici (PPA).  |
 |   |  Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Fotovoltaico: inizio progettazione nel 2022, avanzamento intermedio con installazione di 1.5 MW/anno nel triennio 23-25, conclusione azione nel 25/26. CER: avvio tavolo di lavoro nel 2022, redazione documenti nel 23, manifestazione di interesse e costituzione CER nel 24. GO: approvvigionamento della certificazione verde da CONSIP come standard + indagine per PPA avviata nel 2022, conclusione iniziativa non definita.  |
-
-2
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Fotovoltaico: inizio progettazione nel 2022, avanzamento intermedio con installazione di 1.5 MW/anno nel triennio 23-25, conclusione azione nel 25/26. CER: avvio tavolo di lavoro nel 2022, redazione documenti nel 23, manifestazione di interesse e costituzione CER nel 24. GO: approvvigionamento della certificazione verde da CONSIP come standard + indagine per PPA avviata nel 2022, conclusione iniziativa non definita.  |
 |  2. IMPATTI^{9} (ENERGIA/ riduzione emissioni CO2 equivalente ) | Energia rinnovabile generata MWh/anno (valore atteso) (se previsto dall'intervento) | Produzione a regime (dal 2026 in poi) di circa 4.5 GWh/anno di energia rinnovabile (fotovoltaico) di cui circa 85% per autoconsumo proprio, la restante parte per condivisione in rete.  |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  Acquisto di energia elettrica certificata da fonti rinnovabili MWh/anno (valore atteso) (se previsto dall'intervento) | Ulteriore decarbonizzazione di una quota dei consumi PoliMi almeno pari a 5 GWh/anno tramite accordo PPA rinnovabile.  |   |   |   |   |
 |   |  Variazione dei consumi energetici per vettore (applicabile se progetto sugli owned assets) | -  |   |   |   |   |
 |   |  Riduzione delle emissioni di gas serra^{10} (kg CO2eq/anno)
-(Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) | AMBITO DI AZIONE | Descrizione | Emissioni a fine realizzazione del progetto | Emissioni (Baseline) | Delta (emissioni evitate)  |
+| (Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) | AMBITO DI AZIONE | Descrizione | Emissioni a fine realizzazione del progetto | Emissioni (Baseline) | Delta (emissioni evitate)  |
 |   |  | SISTEMA ENERGETICO | Le emissioni sono ottenute moltiplicando sia per l'anno baseline che per l'anno di fine progetto per i FE indicati sotto. Sono inclusi i consumi di energia elettrica e i consumi di gas. | 16490996,7 kg CO_{2}eq/anno | 18837496,7 kg CO_{2}eq/anno | 2346500 kg CO_{2}eq/anno  |
 
 La Mission prevede che venga effettuato un monitoraggio periodico sull'avanzamento complessivo verso gli obiettivi di decarbonizzazione. Vi sarà pertanto richiesto con cadenza presumibilmente biennale l'avanzamento delle azioni che avete proposto (ed eventuali modifiche e integrazioni), utilizzando gli indicatori riportati nella presente sezione della scheda
@@ -13710,10 +13608,6 @@ Delta (emissioni evitate): 2179775 kg CO₂eq |  |  |  |
 | MOBILITA' E TRASPORTI |  |  |  |  |
 | INFRASTRUTTURE VERDI E NBS |  |  |  |  |
 | Totale |  |  |  |  |
-
-4
-5
-
 |  ALTRI
 IMPATTI | Risultati attesi
 Qualora l'azione incida in ambito non energetico indicare quali risultati ci si aspetta di raggiungere in termini qualitativi ed eventualmente quantitativi. | ☐ minori quantitativi di rifiuti per tipologia: kg/anno...
@@ -13724,19 +13618,19 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 ☐ altro: indicare  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | Sviluppo e promozione di aspetti di imprenditorialità, responsabilità sociale e consapevolezza rispetto al tema ambientale/climatico tra la cittadinanza. Creazione di risorse per la lotta alla povertà energetica e all'emarginazione sociale.  |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | Sviluppo e promozione di aspetti di imprenditorialità, responsabilità sociale e consapevolezza rispetto al tema ambientale/climatico tra la cittadinanza. Creazione di risorse per la lotta alla povertà energetica e all'emarginazione sociale.  |
 |  3.
 GOVERNANCE
 E COSTI | Eventuali stakeholder coinvolti
 Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | Comune di Milano, aziende private legate all'installazione di impianti rinnovabili e alla fornitura di energia rinnovabile, cittadinanza ed enti pubblici  |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. | Barriere: necessità di adeguate e approfondite conoscenze tecniche e legislative; inadeguatezza del contesto di mercato nazionale per la stipula di PPA; coordinamento tra diversi attori e iter burocratici, di approvazione e controllo interni agli enti pubblici onerosi.
-Fattori abilitanti: percezione da parte delle persone coinvolte di una responsabilità ambientale e sociale; disponibilità di fondi di finanziamento propri.  |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. | Barriere: necessità di adeguate e approfondite conoscenze tecniche e legislative; inadeguatezza del contesto di mercato nazionale per la stipula di PPA; coordinamento tra diversi attori e iter burocratici, di approvazione e controllo interni agli enti pubblici onerosi. |
+| Fattori abilitanti: percezione da parte delle persone coinvolte di una responsabilità ambientale e sociale; disponibilità di fondi di finanziamento propri.  |
 |   |  Stima dell'investimento complessivo
-(€) | Fotovoltaico: 20 M€ comprensivo di risanamento coperture, oneri accessori e tasse  |
+| (€) | Fotovoltaico: 20 M€ comprensivo di risanamento coperture, oneri accessori e tasse  |
 |   |  OPEX (operational expenditure)
-Se applicabile. | Trascurabili  |
+| Se applicabile. | Trascurabili  |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☐ Sì
@@ -13896,7 +13790,7 @@ Si richiede di compilare la “Scheda raccolta azioni” (suddivisa in 3 parti) 
 | --- | --- | --- |
 |   |  Referente |   |
 |   |  Categoria di progetto | ☐ progetto urbano
-☑ intervento su propri asset  |
+| ☑ intervento su propri asset  |
 |   |  Scala dell'intervento
 Edificio, quartiere, altro | Edifici di
 Via Sarfatti 25
@@ -13907,7 +13801,7 @@ Viale Isonzo 21/23
 Via Spadolini 12/A
 Via Giovenale 4  |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). |   |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). |   |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (a.e se si tratta di un progetto integrato). | Sistemi energetici
 ☐ Involucro edilizio (cappotto, coperture, serramenti)
@@ -13923,11 +13817,9 @@ La scelta può essere multipla | Tecnologico/infrastrutturale
 ☐ Comportamentale
 ☐ Altro (specificare)  |
 |   |  Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | Il progetto prevede la dismissione di tutte le caldaie alimentate a gas metano sostituendo i Gruppi Frigo (GF) già presenti negli edifici con Pompe di Calore (PDC) acqua/aria ad alta efficienza e sostituendo le caldaie dell'acqua calda sanitaria (ACS) con PDC acqua /aria ad alta efficienza.  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | Il progetto prevede la dismissione di tutte le caldaie alimentate a gas metano sostituendo i Gruppi Frigo (GF) già presenti negli edifici con Pompe di Calore (PDC) acqua/aria ad alta efficienza e sostituendo le caldaie dell'acqua calda sanitaria (ACS) con PDC acqua /aria ad alta efficienza.  |
 |   |  Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già | Gli interventi inizieranno nel corso dell'anno 2024 e si prevede vengano completati entro il 2025.  |
-7
-
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già | Gli interventi inizieranno nel corso dell'anno 2024 e si prevede vengano completati entro il 2025.  |
 |   | realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). |   |
 | --- | --- | --- |
 |  2. IMPATTI¹ (ENERGIA/ riduzione emissioni CO2 equivalente) | Energia rinnovabile generata MWh/anno (valore atteso) (se previsto dall'intervento) |   |   |   |   |   |
@@ -13962,8 +13854,6 @@ Schema "Fattori di emissione"
 |   |  TLR Milano Ovest | KgCO2eq/kW h | 0.059 | A2A Calore Servizi  |
 |   |  TLR Milano Nord | KgCO2eq/kW h | 0.149 | A2A Calore Servizi  |
 |  Mobilità | gasolio | KgCO2eq/GJ | 68.68 3 | Elaborazioni AMAT basate su EEA Emission Guidebook (modello Copert)  |
-9
-
 |   | metano/gpl | KgCO2eq/GJ | 63.3 | Elaborazioni AMAT basate su EEA Emission Guidebook (modello Copert)  |
 | --- | --- | --- | --- | --- |
 |  Energia elettrica | mix di rete | KgCO2eq/kWh | 0.247 | Elaborazioni AMAT su dati ISPRA  |
@@ -13978,20 +13868,18 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 ☐ altro: indicare  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
 |  3.
 GOVERNANCE
 E COSTI | Eventuali stakeholder coinvolti
 Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. |   |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
 |   |  Stima dell'investimento complessivo
-(€) | 3.500.000 €  |
+| (€) | 3.500.000 €  |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
-0
-
+| Se applicabile. |   |
 |   | Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☐ Sì
@@ -14112,11 +14000,11 @@ Si richiede di compilare la “Scheda raccolta azioni” (suddivisa in 3 parti) 
 | --- | --- | --- |
 |   |  Referente | Dott. Mario Gatti - Direttore della Sede di Milano - Università Cattolica del Sacro Cuore  |
 |   |  Categoria di progetto | ☑ progetto urbano
-☐ intervento su propri asset  |
+| ☐ intervento su propri asset  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | Complesso edilizio Ex Caserma Polizia di Stato  |
+| Edificio, quartiere, altro | Complesso edilizio Ex Caserma Polizia di Stato  |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Compendio confinante con P.za Sant'Ambrogio, via S, Valeria, via S. Agnese, Giardini Calderini e proprietà di terzi lato via Nirone  |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Compendio confinante con P.za Sant'Ambrogio, via S, Valeria, via S. Agnese, Giardini Calderini e proprietà di terzi lato via Nirone  |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (a.e se si tratta di un progetto integrato). | ☑ Sistemi energetici
 ☑ Involucro edilizio (cappotto, coperture, serramenti)
@@ -14192,8 +14080,6 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 X superficie permeabile a verde aggiuntiva: mq 1000
 ☐ altro: indicare  |
 | --- | --- | --- |
-0
-
 |  Cobenefici I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | Al termine della rifunzionalizzazione complessiva della ex caserma in sede universitaria potrà essere attuata la progressiva dismissione delle sedi più decentrate dell'Ateneo con aggregazione delle Funzioni universitarie nel Campus di Largo Gemelli e piazza Sant'Ambrogio. Tale sinergia consentirà un minor impatto ambientale complessivo delle Sedi dell'Ateneo per il trasferimento di funzioni attualmente presenti in edifici con minor efficienza energetica e maggiori dispersioni, oltre che per l'ottimizzazione logistica e operativa nell'uso degli spazi. L'aggregazione delle sedi in unico campus, ubicato in prossimità di fermate MM servite da diverse linee oltre che in prossimità stazione Ferrovie Nord, determinerà inoltre un minor traffico stradale per la riduzione degli spostamenti e l'ottimizzazione nell'uso dei mezzi di trasporto.  |
 | --- | --- |
 |  3. GOVERNANCE E COSTI | Eventuali stakeholder coinvolti Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. |   |
@@ -14202,8 +14088,6 @@ X superficie permeabile a verde aggiuntiva: mq 1000
 |   |  Stima dell'investimento complessivo (€) | Totale pluriennale: € 300.000.000, di cui: - Valore immobile: € 88.000.000 Interventi ristrutturazione, compreso progetti, D,L., IVA e oneri complementari, escluso allestimenti: - 1^ fase (Ala S. Valeria): € 43.000.000 - 2^ fase (completamento compendio): € 169.000.000  |
 |   |  OPEX (operational expenditure) Se applicabile. |   |
 |  Copertura dell'investimento Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali? ☐ Sì X No Se sì, quali?  |   |
-1
-
 |   |  | ☐ Incentivi
 nazionali/regionali/locali/comunali (eventualmente
 precisare quali)
@@ -14371,11 +14255,11 @@ Si richiede di compilare la "Scheda raccolta azioni" (suddivisa in 3 parti) dupl
 | --- | --- | --- |
 |   |  Referente |   |
 |   |  Categoria di progetto | ☐ progetto urbano
-☐ intervento su propri asset  |
+| ☐ intervento su propri asset  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro |   |
+| Edificio, quartiere, altro |   |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). |   |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). |   |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (a.e se si tratta di un progetto integrato). | ☐ Sistemi energetici
 ☐ Involucro edilizio (cappotto, coperture, serramenti)
@@ -14392,15 +14276,15 @@ La scelta può essere multipla | ☐ Tecnologico/infrastrutturale
 ☐ Comportamentale
 ☐ Altro (specificare)  |
 |   |  Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). |   |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). |   |
 |   |  Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). |   |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). |   |
 |  2. IMPATTI^{1} (ENERGIA/ riduzione emissioni CO2 equivalente) | Energia rinnovabile generata MWh/anno (valore atteso) (se previsto dall'intervento) |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |   | Acquisto di energia elettrica certificata da fonti rinnovabili MWh/anno (valore atteso) (se previsto dall'intervento) |   |   |   |   |   |
 |   | Variazione dei consumi energetici per vettore (applicabile se progetto sugli owned assets) |   |   |   |   |   |
 |   | Riduzione delle emissioni di gas serra^{2} (kg CO2eq/anno)
-(Se possibile considerare i fattori di emissioni indicati nella | AMBITO DI AZIONE | Descrizione | Emissioni a fine realizzazione del progetto | Emissioni (Baseline) | Delta (emissioni evitate)  |
+| (Se possibile considerare i fattori di emissioni indicati nella | AMBITO DI AZIONE | Descrizione | Emissioni a fine realizzazione del progetto | Emissioni (Baseline) | Delta (emissioni evitate)  |
 |   |  | SISTEMA ENERGETICO |  |  |  |   |
 |   |  | EDIFICI / AMBIENTE COSTRUITO (es, Materiali/ tecniche costruttive |  |  |  |   |
 
@@ -14449,19 +14333,17 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 ☐ altro: indicare  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti |   |
-9
-
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti |   |
 |   | e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
 | --- | --- | --- |
 |  3. GOVERNANCE E COSTI | Eventuali stakeholder coinvolti
-Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. |   |
+| Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. |   |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
 |   |  Stima dell'investimento complessivo (€) |   |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☐ Sì
@@ -14543,11 +14425,11 @@ Si richiede di compilare la “Scheda raccolta azioni” (suddivisa in 3 parti) 
 | --- | --- | --- |
 |   |  Referente | Ing. Irene Bonera  |
 |   |  Categoria di progetto | ☑ progetto urbano
-☐ intervento su propri asset  |
+| ☐ intervento su propri asset  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | Campus universitario  |
+| Edificio, quartiere, altro | Campus universitario  |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Da completare  |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Da completare  |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (a.e se si tratta di un progetto integrato). | ☑ Sistemi energetici
 ☑ Involucro edilizio (cappotto, coperture, serramenti)
@@ -14563,7 +14445,7 @@ La scelta può essere multipla | ☑ Tecnologico/infrastrutturale
 ☐ Comportamentale
 ☐ Altro (specificare)  |
 |  Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | Nell'ambito del più ampio progetto di “rigenerazione urbana” dell'area Expo 2015 l'Università degli Studi di Milano ha portato il progetto di realizzare un campus universitario scientifico all'avanguardia per trasferire didattica e ricerca attualmente presenti presso i propri edifici di Città Studi. Il progetto prevede la nuova edificazione di n.5 building progettati secondo i paradigmi NZEB e dotati di sistemi energetici con l'adozione di una precisa politica di “Zero Carbon Emission”, con l'abbandono delle tecnologie che utilizzano fonti energetiche tradizionali per sposare appieno l'utilizzo di fonti energetiche rinnovabili.  |   |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | Nell'ambito del più ampio progetto di “rigenerazione urbana” dell'area Expo 2015 l'Università degli Studi di Milano ha portato il progetto di realizzare un campus universitario scientifico all'avanguardia per trasferire didattica e ricerca attualmente presenti presso i propri edifici di Città Studi. Il progetto prevede la nuova edificazione di n.5 building progettati secondo i paradigmi NZEB e dotati di sistemi energetici con l'adozione di una precisa politica di “Zero Carbon Emission”, con l'abbandono delle tecnologie che utilizzano fonti energetiche tradizionali per sposare appieno l'utilizzo di fonti energetiche rinnovabili.  |   |
 |  Tempistiche Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Il progetto prevede l'edificazione del nuovo Campus scientifico e tecnologico MIND di UNIMI a partire dal 2024 e conclusione nel 2028. A partire dal 2027 ci sarà il progressivo spostamento delle aree didattiche e strutture di ricerca da Citta Studi a MIND.  |
 | --- | --- |
 |  2. IMPATTI¹ (ENERGIA/ riduzione emissioni CO2 equivalente) | Energia rinnovabile generata MWh/anno (valore atteso) (se previsto dall'intervento) | Impianto fotovoltaico: 1000 MWh/anno  |   |   |   |   |
@@ -14576,7 +14458,7 @@ Fornire una descrizione generale del progetto relativamente agli ambiti identifi
 
 ² Questa parte della scheda valorizza il contributo del progetto presentato in termini di riduzione delle emissioni di gas serra rispetto a uno scenario di riferimento (baseline). La baseline è costituita, nel caso di edifici/strutture e impianti
 |   | (kg CO2eq/anno)
-(Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) |  |  | realizzazione del progetto |  |   |
+| (Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) |  |  | realizzazione del progetto |  |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |   |  SISTEMA ENERGETICO | Strategia energetica basata sull'eliminazione di fonti energetiche fossili | 0 | 7.007.000 kgCO2eq | - 7.007.000 kgCO2eq  |
 |   |   |  EDIFICI / AMBIENTE COSTRUITO (es, Materiali/ tecniche costruttive |  |  |  |   |
@@ -14617,18 +14499,18 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 ☐ altro: indicare  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
 |  3.
 GOVERNANCE
 E COSTI | Eventuali stakeholder coinvolti
 Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. |   |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
 |   |  Stima dell'investimento complessivo
-(€) |   |
+| (€) |   |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☐ Sì
@@ -14715,11 +14597,11 @@ Si richiede di compilare la “Scheda raccolta azioni” (suddivisa in 3 parti) 
 | --- | --- | --- |
 |   |  Referente | Ing. Irene Bonera  |
 |   |  Categoria di progetto | ☑ progetto urbano
-☐ intervento su propri asset  |
+| ☐ intervento su propri asset  |
 |   |  Scala dell’intervento
-Edificio, quartiere, altro | Campus universitario  |
+| Edificio, quartiere, altro | Campus universitario  |
 |   |  Localizzazione
-Indicare l’area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Da completare  |
+| Indicare l’area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Da completare  |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (a.e se si tratta di un progetto integrato). | ☑ Sistemi energetici
 ☑ Involucro edilizio (cappotto, coperture, serramenti)
@@ -14741,7 +14623,7 @@ Il progetto prevede totale riqualificazione dei sistemi energetici che saranno d
 |   |  | Emission”, con l'abbandono delle tecnologie che utilizzano fonti energetiche tradizionali (fossili) per sposare appieno l'utilizzo di fonti energetiche rinnovabili (impianto fotovoltaico in locale ed acquisto di energia elettrica con Garanzia di Origine).  |
 | --- | --- | --- |
 |   |  Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Il progetto prevede due fasi d'intervento: Fase 1 e Fase 2. Si prevede il completamento della Fase 1 entro il 2025 e della Fase 2 entro il 2026  |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Il progetto prevede due fasi d'intervento: Fase 1 e Fase 2. Si prevede il completamento della Fase 1 entro il 2025 e della Fase 2 entro il 2026  |
 |  2.
 IMPATTI¹
 (ENERGIA/
@@ -14820,18 +14702,18 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 ☐ altro: indicare  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
 |  3.
 GOVERNANCE
 E COSTI | Eventuali stakeholder coinvolti
 Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. |   |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
 |   |  Stima dell'investimento complessivo
-(€) |   |
+| (€) |   |
 |   | OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 | --- | --- | --- |
 |   | Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
@@ -14922,11 +14804,11 @@ Si richiede di compilare la “Scheda raccolta azioni” (suddivisa in 3 parti) 
 | --- | --- | --- |
 |   |  Referente | Ing. Irene Bonera  |
 |   |  Categoria di progetto | ☐ progetto urbano
-✔ intervento su propri asset  |
+| ✔ intervento su propri asset  |
 |   |  Scala dell’intervento
-Edificio, quartiere, altro | Edifici energivori in uso all’Università degli Studi di Milano  |
+| Edificio, quartiere, altro | Edifici energivori in uso all’Università degli Studi di Milano  |
 |   |  Localizzazione
-Indicare l’area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Da completare  |
+| Indicare l’area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Da completare  |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (a.e se si tratta di un progetto integrato). | ✔ Sistemi energetici
 ☐ Involucro edilizio (cappotto, coperture, serramenti)
@@ -14951,7 +14833,7 @@ Ottimizzazione gestione impianti termici e di ventilazione nei periodi di pausa 
 Page 5
 
 |   | Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Il progetto è iniziato nella stagione invernale 2022-23 ed è previsto che rimanga attivo nei prossimi anni.  |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Il progetto è iniziato nella stagione invernale 2022-23 ed è previsto che rimanga attivo nei prossimi anni.  |
 | --- | --- | --- |
 |  2.
 IMPATTI¹
@@ -14966,7 +14848,7 @@ MWh/anno
 (se previsto dall'intervento) | 18 MWh/anno  |
 | --- | --- | --- |
 |   |  Acquisto di energia elettrica certificata da fonti rinnovabili MWh/anno (valore atteso)
-(se previsto dall'intervento) | 13.000 MWh/anno  |
+| (se previsto dall'intervento) | 13.000 MWh/anno  |
 |   |  Variazione dei consumi energetici per vettore
 (applicabile se progetto sugli owned assets) |   |
 
@@ -14976,7 +14858,7 @@ MWh/anno
 |  |   |   |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |   | Riduzione delle emissioni di gas serra^{2} (kg CO2eq/anno)
-(Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) | AMBITO DI AZIONE | Descrizione | Emissioni a fine realizzazione del progetto | Emissioni (Baseline) | Delta (emissioni evitate) |   |
+| (Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) | AMBITO DI AZIONE | Descrizione | Emissioni a fine realizzazione del progetto | Emissioni (Baseline) | Delta (emissioni evitate) |   |
 |   |   |  SISTEMA ENERGETICO | Strategia energetica basata su migliore gestione ed ottimizzazione e impianti energetici | 3.410.000 kgCO2eq/anno | 4.263.000 kgCO2eq/anno | - 853.000 kgCO2eq/anno |   |
 |   |   |  EDIFICI / AMBIENTE COSTRUITO (es, Materiali/ tecniche costruttive |  |  |  |  |   |
 |   |   |  ECONOMIA CIRCOLARE E RIFIUTI |  |  |  |  |   |
@@ -15012,15 +14894,15 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 ☐ altro: indicare  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
 |  3. GOVERNANCE E COSTI | Eventuali stakeholder coinvolti
-Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. |   |
+| Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. |   |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
 |   |  Stima dell'investimento complessivo (€) |   |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☐ Si
@@ -15302,12 +15184,12 @@ Vedi Allegato A2
 | --- | --- | --- |
 |   |  Referente | Dirigente Area INAP UNIMIB: Arch. A. Maggiore  |
 |   |  Categoria di progetto | progetto urbano
-intervento su propri asset  |
+| intervento su propri asset  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | EDIFICIO  |
+| Edificio, quartiere, altro | EDIFICIO  |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili. | Building U1 - University of Milan - Bicocca
-U2 Building - University of Milan - Bicocca  |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili. | Building U1 - University of Milan - Bicocca |
+| U2 Building - University of Milan - Bicocca  |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (a.e se si tratta di un progetto integrato). | Sistemi energetici
 Involucro edilizio (cappotto, coperture, serramenti)
@@ -15344,9 +15226,9 @@ Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realiz
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  Acquisto di energia elettrica certificata da fonti rinnovabili MWh/anno (valore atteso) (se previsto dall'intervento) | Si per tutte le utenze dei vettori energetici direttamente intestate all'Ateneo, con estensione nei capitolati d'appalto dell'obbligo da parte dei concessionari dei servizi di ristorazione e residenziali di acquisto di energia elettrica certificata da fonti rinnovabili.  |   |   |   |   |
 |   |  Variazione dei consumi energetici per vettore (applicabile se progetto sugli owned assets) | • AUTOPRODUZIONE di ENERGIA ELETTRICA 98.067 KWh/anno pari al 66% del fabbisogno annuo di energia elettrica (143.858 kWh/anno)
-• Riduzione ATTESA del consumo ANNUO di ENERGIA ELETTRICA da 12.127 MWh/anno (consumi dato APE anno 2022) a 10.447 MWh/anno (dati di progetto) con un risparmio di 1.680 MWh/anno (14% totale annuo)  |   |   |   |   |
+| • Riduzione ATTESA del consumo ANNUO di ENERGIA ELETTRICA da 12.127 MWh/anno (consumi dato APE anno 2022) a 10.447 MWh/anno (dati di progetto) con un risparmio di 1.680 MWh/anno (14% totale annuo)  |   |   |   |   |
 |   |  Riduzione delle emissioni di gas serra^{19} (kg CO2eq/anno)
-(Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) | AMBITO DI AZIONE | Descrizione | Emissioni a fine realizzazione del progetto | Emissioni (Baseline) | Delta (emissioni evitate)  |
+| (Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) | AMBITO DI AZIONE | Descrizione | Emissioni a fine realizzazione del progetto | Emissioni (Baseline) | Delta (emissioni evitate)  |
 |   |   |  SISTEMA ENERGETICO |  |  |  |   |
 |   |   |  EDIFICI / AMBIENTE COSTRUITO (es, Materiali/ tecniche costruttive) |  |  |  |   |
 |   |   |  ECONOMIA CIRCOLARE E RIFIUTI |  |  |  |   |
@@ -15403,9 +15285,9 @@ aziende/istituzioni. |   |
 Descrivere Es. eventuali barriere e/o fattori
 abilitanti. |   |
 |   |  Stima dell'investimento
-complessivo €) | 13.130.130,691 €  |
+| complessivo €) | 13.130.130,691 €  |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si
 prevede che, oltre a fonti di finanziamento proprie,
@@ -15430,9 +15312,9 @@ PARTE A - Sezione A.2: Progetti urbani e interventi relativi a propri asset
 | --- | --- | --- |
 |   |  Referente | Dirigente Area INAP UNIMIB: Arch. A. Maggiore  |
 |   |  Categoria di progetto | progetto urbano
-intervento su propri asset  |
+| intervento su propri asset  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | EDIFICIO  |
+| Edificio, quartiere, altro | EDIFICIO  |
 |   |  Localizzazione
 Indicare l'area interessata
 eventualmente allegando una mappa.
@@ -15475,10 +15357,6 @@ Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realiz
 |   |   |  MOBILITA' E TRASPORTI |  |  |  |   |
 |   |   |  INFRASTRUTTUR E VERDI E NBS |  |  |  |   |
 |  Totale |   |  |  |  |   |   |
-
-4
-5
-
 |  ALTRI
 IMPATTI | Risultati attesi
 Qualora l'azione incida in ambito non energetico
@@ -15506,9 +15384,9 @@ aziende/istituzioni. |   |
 Descrivere Es. eventuali barriere e/o fattori
 abilitanti. |   |
 |   |  Stima dell'investimento
-complessivo (€) | 12.084.873,12€  |
+| complessivo (€) | 12.084.873,12€  |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si
 prevede che, oltre a fonti di finanziamento proprie,
@@ -15533,9 +15411,9 @@ PARTE A - Sezione A.2: Progetti urbani e interventi relativi a propri asset
 | --- | --- | --- |
 |   |  Referente | Dirigente Area INAP UNIMIB: Arch. A. Maggiore  |
 |   |  Categoria di progetto | progetto urbano
-intervento su propri asset  |
+| intervento su propri asset  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | Quartiere Bicocca  |
+| Edificio, quartiere, altro | Quartiere Bicocca  |
 |   |  Localizzazione
 Indicare l'area interessata
 eventualmente allegando una mappa.
@@ -15561,10 +15439,8 @@ Fornire una descrizione generale del progetto relativamente agli ambiti identifi
 • riduzione CO2 (consumi depuratore, approvvigionamento idrico etc)
 • trattamento delle acque meteoriche in sito tramite trincee drenanti  |
 |   |  Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | • Inizio lavori 15/04/2023
-• Fine lavori previsto per il 01/04/2024  |
-
-6
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | • Inizio lavori 15/04/2023 |
+| • Fine lavori previsto per il 01/04/2024  |
 |  2. IMPATTI (ENERGIA/ riduzione emissioni CO2 equivalente) | Energia rinnovabile generata MWh/anno (valore atteso) (se previsto dall'intervento) |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  Acquisto di energia elettrica certificata da fonti rinnovabili MWh/anno (valore atteso) (se previsto dall'intervento) |   |   |   |   |   |
@@ -15576,10 +15452,6 @@ Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realiz
 |   |   |  MOBILITA' E TRASPORTI |  |  |  |   |
 |   |   |  INFRASTRUTTUR E VERDI E NBS |  |  |  |   |
 |  Totale |   |  |  |  |   |   |
-
-7
-8
-
 |  ALTRI
 IMPATTI | Risultati attesi
 Qualora l'azione incida in ambito non energetico
@@ -15620,9 +15492,9 @@ aziende/istituzioni. |   |
 Descrivere Es. eventuali barriere e/o fattori
 abilitanti. |   |
 |   |  Stima dell'investimento
-complessivo (€) | 4.327.404,20€  |
+| complessivo (€) | 4.327.404,20€  |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si
 prevede che, oltre a fonti di finanziamento proprie,
@@ -15645,9 +15517,9 @@ PARTE A - Sezione A.2: Progetti urbani e interventi relativi a propri asset
 | --- | --- | --- |
 |   |  Referente | Dirigente Area INAP UNIMIB: Arch. A. Maggiore  |
 |   |  Categoria di progetto | progetto urbano
-intervento su propri asset  |
+| intervento su propri asset  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | EDIFICIO  |
+| Edificio, quartiere, altro | EDIFICIO  |
 |   |  Localizzazione
 Indicare l'area interessata
 eventualmente allegando una mappa.
@@ -15711,17 +15583,15 @@ baseline). | Fase di Progetto esecutivo
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  Acquisto di energia elettrica certificata da fonti rinnovabili MWh/anno (valore atteso) (se previsto dall'intervento) |   |   |   |   |   |
 |   |  Variazione dei consumi energetici per vettore (applicable se progetto sugli owned assets) | • % copertura fabbisogno annuo ENERGIA ELETTRICA 11,40%
-• Riduzione ATTESA del consumo ANNUO di ENERGIA ELETTRICA da 2167 MWh/anno (consumi dato APE anno 2022) a 481 MWh/anno (dati di progetto) con un risparmio di 850 MWh/anno (7% totale annuo)  |   |   |   |   |
+| • Riduzione ATTESA del consumo ANNUO di ENERGIA ELETTRICA da 2167 MWh/anno (consumi dato APE anno 2022) a 481 MWh/anno (dati di progetto) con un risparmio di 850 MWh/anno (7% totale annuo)  |   |   |   |   |
 |   |  Riduzione delle emissioni di gas serra (kg CO2eq/anno)
-(Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) | AMBITO DI AZIONE | Descrizione | Emissioni a fine realizzazione del progetto | Emissioni (Baseline) | Delta (emissioni evitate)  |
+| (Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) | AMBITO DI AZIONE | Descrizione | Emissioni a fine realizzazione del progetto | Emissioni (Baseline) | Delta (emissioni evitate)  |
 |   |   |  SISTEMA ENERGETICO |  |  |  |   |
 |   |   |  EDIFICI / AMBIENTE COSTRUITO (es, Materiali/ tecniche costruttive |  |  |  |   |
 |   |   |  ECONOMIA CIRCOLARE E RIFIUTI |  |  |  |   |
 |   |   |  MOBILITA' E TRASPORTI |  |  |  |   |
 |   |   |  INFRASTRUTTUR E VERDI E NBS |  |  |  |   |
 |  Totale |   |  |  |  |   |   |
-1
-
 |  ALTRI
 IMPATTI | Risultati attesi
 Qualora l'azione incida in ambito non energetico
@@ -15756,9 +15626,9 @@ trasporto casa/università deve essere contestuale alla
 creazione di una più fitta e completa rete di piste ciclabili
 nell'area metropolitana milanese  |
 |   |  Stima dell'investimento
-complessivo €) | 12.563.248,51€  |
+| complessivo €) | 12.563.248,51€  |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si
 prevede che, oltre a fonti di finanziamento proprie,
@@ -15784,9 +15654,9 @@ PARTE A - Sezione A.2: Progetti urbani e interventi relativi a propri asset
 Caposettore Sviluppo e Gestione Immobiliare: Arch. F. Carlini
 Ing.M. Bonfitto  |
 |   |  Categoria di progetto | progetto urbano
-intervento su propri asset  |
+| intervento su propri asset  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | EDIFICIO  |
+| Edificio, quartiere, altro | EDIFICIO  |
 |   |  Localizzazione
 Indicare l'area interessata
 eventualmente allegando una mappa.
@@ -15852,9 +15722,6 @@ Inclinazione e orientamento orizzontale in copertura
 |   |   |  MOBILITA' E TRASPORTI |  |  |  |   |
 |   |   |  INFRASTRUTTUR E VERDI E NBS |  |  |  |   |
 |   |   |  Totale |  |  |  |   |
-4
-5
-
 |  ALTRI
 IMPATTI | Risultati attesi
 Qualora l'azione incida in ambito non energetico
@@ -15882,9 +15749,9 @@ aziende/istituzioni. |   |
 Descrivere Es. eventuali barriere e/o fattori
 abilitanti. |   |
 |   |  Stima dell'investimento
-complessivo(€) | 24.034.038,52 €  |
+| complessivo(€) | 24.034.038,52 €  |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si
 prevede che, oltre a fonti di finanziamento proprie,
@@ -15910,11 +15777,11 @@ PARTE A - Sezione A.2: Progetti urbani e interventi relativi a propri asset
 | --- | --- | --- |
 |   |  Referente | Dirigente Area INAP UNIMIB: Arch. A. Maggiore  |
 |   |  Categoria di progetto | progetto urbano
-intervento su propri asset  |
+| intervento su propri asset  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | EDIFICIO  |
+| Edificio, quartiere, altro | EDIFICIO  |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Edificio U9  |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Edificio U9  |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (a.e se si tratta di un progetto integrato). | Sistemi energetici
 Involucro edilizio (cappotto, coperture, serramenti)
@@ -15951,10 +15818,6 @@ Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realiz
 |   |   |  MOBILITA' E TRASPORTI |  |  |  |   |
 |   |   |  INFRASTRUTTUR E VERDI E NBS |  |  |  |   |
 |  Totale |   |  |  |  |   |   |
-
-7
-8
-
 |  ALTRI
 IMPATTI | Risultati attesi
 Qualora l'azione incida in ambito non energetico
@@ -15982,9 +15845,9 @@ aziende/istituzioni. |   |
 Descrivere Es. eventuali barriere e/o fattori
 abilitanti. |   |
 |   |  Stima dell'investimento
-complessivo (€) | 10.600.236,58 €  |
+| complessivo (€) | 10.600.236,58 €  |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si
 prevede che, oltre a fonti di finanziamento proprie,
@@ -16009,11 +15872,11 @@ PARTE A - Sezione A.2: Progetti urbani e interventi relativi a propri asset
 | --- | --- | --- |
 |   |  Referente | Dirigente Area INAP UNIMIB: Arch. A. Maggiore  |
 |   |  Categoria di progetto | progetto urbano
-intervento su propri asset  |
+| intervento su propri asset  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | QUARTIERE, AREA VERDE  |
+| Edificio, quartiere, altro | QUARTIERE, AREA VERDE  |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | https://maps.app.goo.gl/Fcw44ASgrcUbnbUG7  |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | https://maps.app.goo.gl/Fcw44ASgrcUbnbUG7  |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (a.e se si tratta di un progetto integrato). | Sistemi energetici
 Involucro edilizio (cappotto, coperture, serramenti)
@@ -16056,10 +15919,6 @@ Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realiz
 |   |   |  MOBILITA' E TRASPORTI |  |  |  |   |
 |   |   |  INFRASTRUTTUR E VERDI E NBS |  |  |  |   |
 |  Totale |   |  |  |  |   |   |
-
-0
-1
-
 |  ALTRI
 IMPATTI | Risultati attesi
 Qualora l'azione incida in ambito non energetico
@@ -16087,10 +15946,10 @@ aziende/istituzioni. | Comune di Milano  |
 Descrivere Es. eventuali barriere e/o fattori
 abilitanti. |   |
 |   |  Stima dell'investimento
-complessivo (€) | 67.594.852,65 € (IVA esclusa)  |
+| complessivo (€) | 67.594.852,65 € (IVA esclusa)  |
 |   |  OPEX (operational expenditure)
-Se applicabile. | € 625.000,00 per cinque anni, prezzo posto
-a base di gara nel 2017, da attualizzarsi  |
+| Se applicabile. | € 625.000,00 per cinque anni, prezzo posto |
+| a base di gara nel 2017, da attualizzarsi  |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si
 prevede che, oltre a fonti di finanziamento proprie,
@@ -16115,9 +15974,9 @@ PARTE A - Sezione A.2: Progetti urbani e interventi relativi a propri asset
 | --- | --- | --- |
 |   |  Referente | Dirigente Area INAP UNIMIB: Arch. A. Maggiore  |
 |   |  Categoria di progetto | progetto urbano
-intervento su propri asset  |
+| intervento su propri asset  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | EDIFICIO, QUARTIERE, AREE VERDI  |
+| Edificio, quartiere, altro | EDIFICIO, QUARTIERE, AREE VERDI  |
 |   |  Localizzazione
 Indicare l'area interessata
 eventualmente allegando una mappa.
@@ -16147,9 +16006,7 @@ Fornire una descrizione generale del progetto relativamente agli ambiti identifi
 • Promozione della mobilità dolce e dell'aggregazione sociale con nuova piazza pedonale
 • percorsi verdi e protetti di collegamento tra il quartiere Bicocca e il Parco Nord Milano  |
 |   |  Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Fase di Progetto DEFINITIVO, fine lavori prevista 2027  |
-
-2
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Fase di Progetto DEFINITIVO, fine lavori prevista 2027  |
 |  2. IMPATTI (ENERGIA/ riduzione emissioni CO2 equivalente) | Energia rinnovabile generata MWh/anno (valore atteso) (se previsto dall'intervento) | • Il lotto: Indice della prestazione energetica globale dell'edificio (Energia primaria non rinnovabile) Valore di progetto EPgl,nr 15,65 kWh/m + Impianti fonti rinnovabili per la produzione di acqua calda sanitaria - Percentuale di copertura del fabbisogno annuo 65,99 % - Percentuale da fonte rinnovabile totale (ACS+fotovoltaico)=78,8 %  |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  Acquisto di energia elettrica certificata da fonti rinnovabili MWh/anno (valore atteso) (se previsto dall'intervento) |   |   |   |   |   |
@@ -16161,8 +16018,6 @@ Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realiz
 |   |   |  MOBILITA' E TRASPORTI |  |  |  |   |
 |   |   |  INFRASTRUTTUR E VERDI E NBS |  |  |  |   |
 |  Totale |   |  |  |  |   |   |
-4
-
 |  ALTRI
 IMPATTI | Risultati attesi
 Qualora l'azione incida in ambito non energetico
@@ -16193,9 +16048,9 @@ aziende/istituzioni. |   |
 Descrivere Es. eventuali barriere e/o fattori
 abilitanti. |   |
 |   |  Stima dell'investimento
-complessivo (€) | 5.980.000,00€  |
+| complessivo (€) | 5.980.000,00€  |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si
 prevede che, oltre a fonti di finanziamento proprie,
@@ -16219,9 +16074,9 @@ PARTE A - Sezione A.2: Progetti urbani e interventi relativi a propri asset
 | --- | --- | --- |
 |   |  Referente | Dirigente Area INAP UNIMIB: Arch. A. Maggiore  |
 |   |  Categoria di progetto | progetto urbano
-intervento su propri asset  |
+| intervento su propri asset  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | QUARTIERE, AREA VERDE  |
+| Edificio, quartiere, altro | QUARTIERE, AREA VERDE  |
 |   |  Localizzazione
 Indicare l'area interessata
 eventualmente allegando una mappa.
@@ -16264,10 +16119,6 @@ Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realiz
 |   |   |  MOBILITA' E TRASPORTI |  |  |  |   |
 |   |   |  INFRASTRUTTUR E VERDI E NBS |  |  |  |   |
 |  Totale |   |  |  |  |   |   |
-
-6
-7
-
 |  ALTRI
 IMPATTI | Risultati attesi
 Qualora l'azione incida in ambito non energetico
@@ -16297,9 +16148,9 @@ aziende/istituzioni. |   |
 Descrivere Es. eventuali barriere e/o fattori
 abilitanti. |   |
 |   |  Stima dell'investimento
-complessivo (€) | 11.400.00,00 €  |
+| complessivo (€) | 11.400.00,00 €  |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si
 prevede che, oltre a fonti di finanziamento proprie,
@@ -16324,9 +16175,9 @@ PARTE A - Sezione A.2: Progetti urbani e interventi relativi a propri asset
 | --- | --- | --- |
 |   |  Referente | Dirigente Area INAP UNIMIB: Arch. A. Maggiore  |
 |   |  Categoria di progetto | progetto urbano
-intervento su propri asset  |
+| intervento su propri asset  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | QUARTIERE, AREA VERDE  |
+| Edificio, quartiere, altro | QUARTIERE, AREA VERDE  |
 |   |  Localizzazione
 Indicare l'area interessata
 eventualmente allegando una mappa.
@@ -16384,10 +16235,6 @@ baseline). | Fase di Progetto esecutivo
 |   |   |  MOBILITA' E TRASPORTI |  |  |  |   |
 |   |   |  INFRASTRUTTUR E VERDI E NBS |  |  |  |   |
 |  Totale |   |  |  |  |   |   |
-
-9
-0
-
 |  ALTRI
 IMPATTI | Risultati attesi
 Qualora l'azione incida in ambito non energetico
@@ -16417,9 +16264,9 @@ aziende/istituzioni. | Comune di Milano  |
 Descrivere Es. eventuali barriere e/o fattori
 abilitanti. |   |
 |   |  Stima dell'investimento
-complessivo (€) | 1.132.873,13 €  |
+| complessivo (€) | 1.132.873,13 €  |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si
 prevede che, oltre a fonti di finanziamento proprie,
@@ -16441,9 +16288,9 @@ PARTE A - Sezione A.2: Progetti urbani e interventi relativi a propri asset
 | --- | --- | --- |
 |   |  Referente | Dirigente Area INAP UNIMIB: Arch. A. Maggiore  |
 |   |  Categoria di progetto | progetto urbano
-intervento su propri asset  |
+| intervento su propri asset  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | EDIFICIO  |
+| Edificio, quartiere, altro | EDIFICIO  |
 |   |  Localizzazione
 Indicare l'area interessata
 eventualmente allegando una mappa.
@@ -16464,7 +16311,7 @@ Gestionale
 Comportamentale
 Altro (specificare)  |
 |   |  Descrizione dell'azione / progetto / intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | Realizzazione residenza universitaria e Interventi di riqualificazione dello spazio verde esterno (3100 metri quadri) completo di alberature, prato, arbusti, e impianto di irrigazione.  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | Realizzazione residenza universitaria e Interventi di riqualificazione dello spazio verde esterno (3100 metri quadri) completo di alberature, prato, arbusti, e impianto di irrigazione.  |
 |   |  Tempistiche
 Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Edificio collaudato e agibile da settembre 2022
 Area verde: Fase di Progetto esecutivo
@@ -16483,10 +16330,6 @@ Area verde: Fase di Progetto esecutivo
 |   |   |  MOBILITA' E TRASPORTI |  |  |  |   |
 |   |   |  INFRASTRUTTUR E VERDI E NBS |  |  |  |   |
 |   |   |  Totale |  |  |  |   |
-
-2
-3
-
 |  ALTRI
 IMPATTI | Risultati attesi
 Qualora l'azione incida in ambito non energetico
@@ -16521,10 +16364,10 @@ aziende/istituzioni. |   |
 Descrivere Es. eventuali barriere e/o fattori
 abilitanti. |   |
 |   |  Stima dell'investimento
-complessivo (€) | 8.062.884,61 € di cui 124.723,00€ (IVA esclusa) destinati a
-progettazione e lavori dell'area verde  |
+| complessivo (€) | 8.062.884,61 € di cui 124.723,00€ (IVA esclusa) destinati a |
+| progettazione e lavori dell'area verde  |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si
 prevede che, oltre a fonti di finanziamento proprie,
@@ -16546,9 +16389,9 @@ PARTE A - Sezione A.2: Progetti urbani e interventi relativi a propri asset
 | --- | --- | --- |
 |   |  Referente | Dirigente Area INAP UNIMIB: Arch. A. Maggiore  |
 |   |  Categoria di progetto | progetto urbano
-intervento su propri asset  |
+| intervento su propri asset  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | EDIFICIO  |
+| Edificio, quartiere, altro | EDIFICIO  |
 |   |  Localizzazione
 Indicare l'area interessata
 eventualmente allegando una mappa.
@@ -16592,10 +16435,6 @@ Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realiz
 |   |   |  MOBILITA' E TRASPORTI |  |  |  |   |
 |   |   |  INFRASTRUTTUR E VERDI E NBS |  |  |  |   |
 |   |   |  Totale |  |  |  |   |
-
-5
-6
-
 |  ALTRI
 IMPATTI | Risultati attesi
 Qualora l'azione incida in ambito non energetico
@@ -16623,9 +16462,9 @@ aziende/istituzioni. |   |
 Descrivere Es. eventuali barriere e/o fattori
 abilitanti. |   |
 |   |  Stima dell'investimento
-complessivo €) | 16.263.673,00 €  |
+| complessivo €) | 16.263.673,00 €  |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si
 prevede che, oltre a fonti di finanziamento proprie,
@@ -16649,9 +16488,9 @@ PARTE A - Sezione A.2: Progetti urbani e interventi relativi a propri asset
 | --- | --- | --- |
 |   |  Referente | Dirigente Area INAP UNIMIB: Arch. A. Maggiore  |
 |   |  Categoria di progetto | progetto urbano
-intervento su propri asset  |
+| intervento su propri asset  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | EDIFICIO  |
+| Edificio, quartiere, altro | EDIFICIO  |
 |   |  Localizzazione | U92 of University of Milano Bicocca  |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (a.e se si tratta di un progetto integrato). | Sistemi energetici
@@ -16697,10 +16536,6 @@ eventuali step intermedi di realizzazione (in caso di progetti già realizzati c
 |   |   |  MOBILITA' E TRASPORTI |  |  |  |   |
 |   |   |  INFRASTRUTTUR E VERDI E NBS |  |  |  |   |
 |   |   |  Totale |  |  |  |   |
-
-8
-9
-
 |  ALTRI
 IMPATTI | Risultati attesi
 Qualora l'azione incida in ambito non energetico
@@ -16728,9 +16563,9 @@ aziende/istituzioni. |   |
 Descrivere Es. eventuali barriere e/o fattori
 abilitanti. |   |
 |   |  Stima dell'investimento
-complessivo (€) | 8.753.767,39 €  |
+| complessivo (€) | 8.753.767,39 €  |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si
 prevede che, oltre a fonti di finanziamento proprie,
@@ -16753,10 +16588,10 @@ PARTE A - Sezione A.2: Progetti urbani e interventi relativi a propri asset
 | --- | --- | --- |
 |   |  Referente | Dirigente Area INAP UNIMIB: Arch. A. Maggiore  |
 |   |  Categoria di progetto | progetto urbano
-intervento su propri asset  |
+| intervento su propri asset  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | Città Metropolitana di Milano, Area Metropolitana Milanese, scalabile
-a livello nazionale e internazionale  |
+| Edificio, quartiere, altro | Città Metropolitana di Milano, Area Metropolitana Milanese, scalabile |
+| a livello nazionale e internazionale  |
 |   |  Localizzazione
 Indicare l'area interessata
 eventualmente allegando una mappa.
@@ -16836,8 +16671,6 @@ Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realiz
 |   |   |  MOBILITA' E TRASPORTI |  |  |  |   |
 |   |   |  INFRASTRUTTUR E VERDI E NBS |  |  |  |   |
 |   |   |  Totale |  |  |  |   |
-
-2
 |  ALTRI IMPATTI | Risultati attesi | minori quantitativi di rifiuti per tipologia: kg/anno...  |
 | --- | --- | --- |
 |   | Qualora l'azione incida in ambito non energetico indicare quali risultati ci si aspetta di raggiungere in termini qualitativi ed eventualmente quantitativi. | minori consultativi di rifiuti per tipologia: kg/anno...
@@ -16882,13 +16715,13 @@ Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in co
 • ThalesAlenia Space  |
 | --- | --- | --- |
 |   | Commenti sull’implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
 |   | Stima dell’investimento complessivo €) | Importo totale dell’intero progetto MUSA
 • 115.968.852,32 €
 Importo per Università degli Studi di Milano-Bicocca
 • 30.066.545,79€  |
 |   | OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   | Copertura dell’investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 SI
@@ -16995,12 +16828,12 @@ Si richiede di compilare la “Scheda raccolta azioni” (suddivisa in 3 parti) 
 | --- | --- | --- |
 |   |  Referente | Coima Sgr S.p.a. per conto del FONDO PORTA ROMANA  |
 |   |  Categoria di progetto | ☑ progetto urbano
-☐ intervento su propri asset  |
+| ☐ intervento su propri asset  |
 |   |  Scala dell’intervento
-Edificio, quartiere, altro | Quartiere  |
+| Edificio, quartiere, altro | Quartiere  |
 |   |  Localizzazione
-Indicare l’area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Scalo Ferroviario di Porta Romana, identificato all’interno dell’Accordo di Programma degli Scali ferroviari milanesi come “Zona Speciale Romana”, con riferimento al Programma Integrato di Intervento / Piano Attuativo ai sensi della L.R. 12/2005, del D.G.R. 44161/1999 “Circolare Programmi Integrati di Intervento (L.R. 12 aprile 1999, n. 9)”
-Maggiori informazioni al seguente indirizzo: https://scaloportaromana.com/contatti  |
+| Indicare l’area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Scalo Ferroviario di Porta Romana, identificato all’interno dell’Accordo di Programma degli Scali ferroviari milanesi come “Zona Speciale Romana”, con riferimento al Programma Integrato di Intervento / Piano Attuativo ai sensi della L.R. 12/2005, del D.G.R. 44161/1999 “Circolare Programmi Integrati di Intervento (L.R. 12 aprile 1999, n. 9)” |
+| Maggiori informazioni al seguente indirizzo: https://scaloportaromana.com/contatti  |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (a.e se si tratta di un progetto integrato). | ☑ Sistemi energetici
 ☑ Involucro edilizio (cappotto, coperture, serramenti)
@@ -17024,16 +16857,16 @@ Fornire una descrizione generale del progetto relativamente agli ambiti identifi
 5
 
 |   |  | • Produzione di energia rinnovabile mediante impianti fotovoltaici integrati negli edifici
-• Realizzazione del Parco Romana contraddistinto dalla presenza del Parco Centrale e dalla Foresta Sospesa che rappresentano elementi di connessione car-free a favore di una mobilità dolce ed una importante dotazione di verde pubblico attrezzato  |
+| • Realizzazione del Parco Romana contraddistinto dalla presenza del Parco Centrale e dalla Foresta Sospesa che rappresentano elementi di connessione car-free a favore di una mobilità dolce ed una importante dotazione di verde pubblico attrezzato  |
 | --- | --- | --- |
 |   | Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | • L'intervento è iniziato nel 2022 con l'avvio delle opere di realizzazione del primo lotto funzionale (Villaggio Olimpico) che si completerà nel 2025. I successivi lotti verranno completati secondo una programmazione che prevede il completamento delle opere orientativamente per il 2031.  |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | • L'intervento è iniziato nel 2022 con l'avvio delle opere di realizzazione del primo lotto funzionale (Villaggio Olimpico) che si completerà nel 2025. I successivi lotti verranno completati secondo una programmazione che prevede il completamento delle opere orientativamente per il 2031.  |
 |  2. IMPATTI¹
-(ENERGIA/riduzione emissioni CO2 equivalente) | Energia elettrica rinnovabile generata MWh/anno (valore atteso)
-(se previsto dall'intervento) | 3.370 MWh/anno  |
+| (ENERGIA/riduzione emissioni CO2 equivalente) | Energia elettrica rinnovabile generata MWh/anno (valore atteso) |
+| (se previsto dall'intervento) | 3.370 MWh/anno  |
 | --- | --- | --- |
 |   |  Acquisto di energia elettrica certificata da fonti rinnovabili MWh/anno (valore atteso)
-(se previsto dall'intervento) | 12.240 MWh/anno  |
+| (se previsto dall'intervento) | 12.240 MWh/anno  |
 |   |  Variazione dei consumi energetici per vettore |   |
 
 ¹ La Mission prevede che venga effettuato un monitoraggio periodico sull'avanzamento complessivo verso gli obiettivi di decarbonizzazione. Vi sarà pertanto richiesto con cadenza presumibilmente biennale l'avanzamento delle azioni che avete proposto (ed eventuali modifiche e integrazioni), utilizzando gli indicatori riportati nella presente sezione della scheda
@@ -17078,14 +16911,14 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 ☐ altro: indicare  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
 |  3.
 GOVERNANCE
 E COSTI | Eventuali stakeholder coinvolti
 Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. |   |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori |   |
+| Descrivere Es. eventuali barriere e/o fattori |   |
 |   | abilitanti. |   |
 | --- | --- | --- |
 |   | Stima dell'investimento complessivo (€) |   |
@@ -17205,11 +17038,11 @@ Si richiede di compilare la “Scheda raccolta azioni” (suddivisa in 3 parti) 
 | --- | --- | --- |
 |   |  Referente | Covivio Development Italy S.p.A. SIINQ  |
 |   |  Categoria di progetto | ☑ progetto urbano
-☐ intervento su propri asset  |
+| ☐ intervento su propri asset  |
 |   |  Scala dell’intervento
-Edificio, quartiere, altro | Edificio  |
+| Edificio, quartiere, altro | Edificio  |
 |   |  Localizzazione
-Indicare l’area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Via Serio, 20139 Milano  |
+| Indicare l’area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Via Serio, 20139 Milano  |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (a.e se si tratta di un progetto integrato). | ☑ Sistemi energetici
 ☑ Involucro edilizio (cappotto, coperture, serramenti)
@@ -17229,8 +17062,8 @@ Fornire una descrizione generale del progetto relativamente agli ambiti identifi
 La produzione dei fluidi termofrigoriferi sarà demandata a pompe di calore elettrico con sfruttamento della fonte geotermica a ciclo aperto (acqua di falda).
 Sarà previsto impianto fotovoltaico installato sulla copertura degli edifici per una potenza complessiva di punta di 66,5 kW.  |   |
 |   | Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Anno di avvio lavori: 2025
-Anno di conclusione lavori: 2027  |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Anno di avvio lavori: 2025 |
+| Anno di conclusione lavori: 2027  |
 | --- | --- | --- |
 |  2.
 IMPATTI¹
@@ -17242,7 +17075,7 @@ equivalente) | Energia elettrica rinnovabile generata MWh/anno (valore atteso)
 (se previsto dall'intervento) | 76,5 MWh/anno  |
 | --- | --- | --- |
 |   |  Acquisto di energia elettrica certificata da fonti rinnovabili MWh/anno (valore atteso)
-(se previsto dall'intervento) | 0 MWh/anno  |
+| (se previsto dall'intervento) | 0 MWh/anno  |
 |   |  Variazione dei consumi energetici per vettore
 (applicabile se progetto sugli owned assets) | -  |
 
@@ -17289,18 +17122,18 @@ x nuovi alberi piantumati: n. 120
 ☐ altro: indicare  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | Piazza asservita ad uso pubblico di circa 1.000 mq.
-Servizio convenzionale di circa 3.700 mq.  |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | Piazza asservita ad uso pubblico di circa 1.000 mq. |
+| Servizio convenzionale di circa 3.700 mq.  |
 |  3.
 GOVERNANCE
 E COSTI | Eventuali stakeholder coinvolti
 Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | Intervento privato. Nessun stakeholder esterno  |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
 |   |  Stima dell'investimento complessivo (€) |   |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Fonte di finanziamento privata
 Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
@@ -17322,11 +17155,11 @@ Si richiede di compilare la “Scheda raccolta azioni” (suddivisa in 3 parti) 
 | --- | --- | --- |
 |   |  Referente | Covivio Development Italy S.p.A. SIINQ  |
 |   |  Categoria di progetto | ☑ progetto urbano
-☐ intervento su propri asset  |
+| ☐ intervento su propri asset  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | Edificio  |
+| Edificio, quartiere, altro | Edificio  |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Via Adamello angolo via Vezza D'Oglio - 20139 Milano  |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Via Adamello angolo via Vezza D'Oglio - 20139 Milano  |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (a.e se si tratta di un progetto integrato). | ☑ Sistemi energetici
 ☑ Involucro edilizio (cappotto, coperture, serramenti)
@@ -17342,12 +17175,10 @@ La scelta può essere multipla | ☑ Tecnologico/infrastrutturale
 ☐ Comportamentale
 ☐ Altro (specificare)  |
 |  Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | Edificio di circa 20.000mq destinato prevalentemente ad uso ufficio e in parte ad attività commerciali terziarie e compatibili. Per gli uffici la produzione dei fluidi termofrigoriferi sarà demandata a pompe di calore elettrico con sfruttamento della fonte geotermica a ciclo aperto (acqua di falda); per il trattamento dell'aria primaria sarà demandata a unità autonome con recupero termodinamico. Per le aree food saranno previsti sistemi autonomi sempre con sorgente energetica l'acqua di falda. Sarà previsto impianto fotovoltaico installato sulla copertura degli edifici per una potenza complessiva di punta di 129.6 kW.  |   |
-
-1
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | Edificio di circa 20.000mq destinato prevalentemente ad uso ufficio e in parte ad attività commerciali terziarie e compatibili. Per gli uffici la produzione dei fluidi termofrigoriferi sarà demandata a pompe di calore elettrico con sfruttamento della fonte geotermica a ciclo aperto (acqua di falda); per il trattamento dell'aria primaria sarà demandata a unità autonome con recupero termodinamico. Per le aree food saranno previsti sistemi autonomi sempre con sorgente energetica l'acqua di falda. Sarà previsto impianto fotovoltaico installato sulla copertura degli edifici per una potenza complessiva di punta di 129.6 kW.  |   |
 |   | Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Anno di avvio cantiere gen. 2026
-Conclusione prevista dic. 2027  |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Anno di avvio cantiere gen. 2026 |
+| Conclusione prevista dic. 2027  |
 | --- | --- | --- |
 |  2. IMPATTI^{1}
 (ENERGIA/
@@ -17358,7 +17189,7 @@ equivalente) | Energia elettrica rinnovabile generate MWh/anno (valore atteso)
 (se previsto dall'intervento) | 149 MWh/anno  |
 | --- | --- | --- |
 |   |  Acquisto di energia elettrica certificata da fonti rinnovabili MWh/anno (valore atteso)
-(se previsto dall'intervento) | -  |
+| (se previsto dall'intervento) | -  |
 |   |  Variazione dei consumi energetici per vettore
 (applicabile se progetto sugli owned assets) | -  |
 
@@ -17403,17 +17234,17 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 ☐ altro: indicare  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
 |  3.
 GOVERNANCE
 E COSTI | Eventuali stakeholder coinvolti
 Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | Intervento privato. Nessun stakeholder esterno.  |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
 |   |  Stima dell'investimento complessivo (€) |   |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   | Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Fonte di finanziamento privata
 Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
@@ -17425,7 +17256,7 @@ Se sì, quali?
 -
 ☐ Finanziamenti Europei  |
 |   |  | ☐ Altro
-Quanto incidono in % sull'investimento complessivo?  |
+| Quanto incidono in % sull'investimento complessivo?  |
 | --- | --- | --- |
 
 5
@@ -17526,11 +17357,11 @@ DESCRIZIONE | N progetto - Titolo progetto
 (es: 1 - Riquadificazione areaXXX) | MIND (MILANO INNOVATION DISTRICT): UNIVERSITA' DEGLI STUDI DI MILANO  |
 | --- | --- | --- |
 |   |  Referente | NADIA BOSCHI: Head of Sustainability Italy & Continental Europe
-DAVIDE VERGARA: Sustainability Manager  |
+| DAVIDE VERGARA: Sustainability Manager  |
 |   |  Categoria di progetto | X progetto urbano
-intervento su propri asset  |
+| intervento su propri asset  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | Edificio  |
+| Edificio, quartiere, altro | Edificio  |
 |   |  Localizzazione | Via Cristina Belgioioso, Milano, Italy, 20157  |
 |  Indicare l’area interessata eventualmente allegando una mappa. Se possibile fornire shape- file o segnalare che sono disponibili). |   |
 | --- | --- |
@@ -17555,8 +17386,8 @@ L’energia utilizzata dal campus proverrà sia da fonti rinnovabili prodotte in
 
 L’edificio si posiziona all’interno del progetto MIND, il quale gode di un ottimo collegamento, sia per mezzi di trasporto pubblici (treni, metro) che per i mezzi privati, in quanto all’interno del principale sistema infrastrutturale regionale.  |
 |  Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all’anno 2021-baseline). | Anno di avvio previsto: 2024
-Anno di conclusione previsto: 2028  |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all’anno 2021-baseline). | Anno di avvio previsto: 2024 |
+| Anno di conclusione previsto: 2028  |
 |  2. IMPATTI^{1} (ENERGIA / riduzione emissioni CO2 equivalente) | Energia elettrica rinnovabile generata MWh/anno (valore atteso) (se previsto dall'intervento) | UNIMI – 1.945 MWh/anno  |
 | --- | --- | --- |
 |   | Acquisto di energia elettrica certificata da fonti rinnovabili MWh/anno (valore atteso) (se previsto dall'intervento) | UNIMI – 5.696 MWh/anno  |
@@ -17573,10 +17404,6 @@ Questa parte della scheda valorizza il contributo del progetto presentato in ter
 6
 |   | CO2eq/anno) (si richiede di valorizzare le emissioni evitate correlate al sistema energetico, mentre sono da considerarsi opzionali gli altri temi: materiali, economia circolare, trasporti etc) (Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) | SISTEMA ENERGETICO | Il progetto è stato sviluppato per rispondere in modo adeguato ai criteri di sostenibilità ambientale in particolare: Criteri CAM (Criteri Ambientali Minimi) e LEED v4 BD+C: New Construction. Le soluzioni tecniche adottate a tale scopo prevedono: utilizzo dell'acqua di pozzo al fine di massimizzare il rendimento energetico dei sistemi di produzione termofrigorifera. Valutazioni sui sistemi schermanti esterni per ridurre quanto possibile i carichi termici estivi all'interno degli edifici e diminuire quindi i relativi consumi per la climatizzazione estiva. Impiego di ventilatori plug fan in alternativa ai ventilatori centrifughi al fine di ridurre assorbimento elettrico delle Centrali Trattamento Aria per la ventilazione dei locali. Recupero e riuso di acque meteoriche a scopi irrigui per | 0 | 84118000 kgCO2eq/anno | 100%  |
 | --- | --- | --- | --- | --- | --- | --- |
-
-7
-8
-
 |   |  |  | diminuire l'utilizzo dell'acqua potabile. Sistemi di recupero calore per preraffreddamento e preriscaldamento aria di climatizzazione per diminuire i fabbisogni termofrigoriferi per la regolazione della temperatura e umidità dell'aria immessa all'interno dei locali |  |  |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |   |  EDIFICI / AMBIENTE COSTRUITO (es, Materiali/ tecniche costruttive | - |  |  |   |
@@ -17596,8 +17423,6 @@ Schema "Fattori di emissione"
 |   |  TLR Milano Ovest | KgCO2eq/kWh | 0.059 | A2A Calore Servizi  |
 |   |  TLR Milano Nord | KgCO2eq/kWh | 0.149 | A2A Calore Servizi  |
 |  Mobilità | gasolio | KgCO2eq/GJ | 68.683 | Elaborazioni AMAT basate su EEA Emission Guidebook (modello Copert)  |
-9
-
 |   | metano/gpl | KgCO2eq/GJ | 63.3 | Elaborazioni AMAT basate su EEA Emission Guidebook (modello Copert)  |
 | --- | --- | --- | --- | --- |
 |  Energia elettrica | mix di rete | KgCO2eq/kWh | 0.247 | Elaborazioni AMAT su dati ISPRA  |
@@ -17611,7 +17436,7 @@ nuovi alberi piantumati: n.
 superficie permeabile a verde aggiuntiva: altro:  |
 | --- | --- | --- |
 |   | Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | -  |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | -  |
 |  3. GOVERNANCEE COSTI | Eventuali stakeholder coinvolti Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | Progetto all'interno del quartiere MIND.
 MIND è il riferimento per chi fa innovazione in termini di qualità, scambio di saperi, connessione internazionale. A rendere unico l'ecosistema non sono soltanto le dimensioni, ma la presenza di grandi eccellenze nelle Life Sciences e un ambiente di profonda integrazione, negli spazi fisici e nelle attività, pensato per moltiplicare opportunità e relazioni.
 Nel suo ruolo di hub e catalizzatore di sviluppo, MIND ha riunione da subito protagonisti scientifici e tecnologici con origini e finalità diverse, legati tutti dall'interesse per il progresso, la sperimentazione, le nuove prospettive per un avanzamento della società.
@@ -17734,12 +17559,12 @@ Si richiede di compilare la “Scheda raccolta azioni” (suddivisa in 3 parti) 
 |  1. CONTESTO e DESCRIZIONE | N progetto - Titolo progetto (es: 1 - Riquadificazione area XXX) | MILANO INNOVATION DISTRICT (MIND): ZENITH  |
 | --- | --- | --- |
 |   |  Referente | NADIA BOSCHI: Head of Sustainability Italy & Continental Europe
-DAVIDE VERGARA: Sustainability Manager  |
+| DAVIDE VERGARA: Sustainability Manager  |
 |   |  Categoria di progetto | X progetto urbano
-☐ intervento su propri asset  |
+| ☐ intervento su propri asset  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | Edificio all'interno del quartiere MIND - WEST GATE
-certificato con LEED for Communities  |
+| Edificio, quartiere, altro | Edificio all'interno del quartiere MIND - WEST GATE |
+| certificato con LEED for Communities  |
 |   |  Localizzazione | Via Achille Grandi snc, 20017, Rho (MI), Italy  |
 |  Indicare l’area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). |   |
 | --- | --- |
@@ -17772,7 +17597,7 @@ L’edificio si posiziona all’interno del progetto MIND, il quale  |
 |   |  | gode di un ottimo collegamento, sia per mezzi di trasporto pubblici (treni, metro) che per i mezzi privati, in quanto all'interno del principale sistema infrastrutturale regionale.  |
 | --- | --- | --- |
 |   |  Tempistiche Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021–baseline). | Anno di avvio previsto: 2024
-Anno di conclusione previsto: 2030  |
+| Anno di conclusione previsto: 2030  |
 |  2. IMPATTI¹ (ENERGIA/ riduzione emissioni CO2 equivalente) | Energia elettrica rinnovabile generata MWh/anno (valore atteso) (se previsto dall'intervento) | 69,881 MWh/anno (3% del fabbisogno annuo)  |
 | --- | --- | --- |
 |   |  Acquisto di energia elettrica certificata da fonti rinnovabili MWh/anno (valore atteso) (se previsto dall'intervento) | 2283,73 MWh/anno  |
@@ -17852,13 +17677,9 @@ livelli di
 temperatura
 compresi fra 5°C |  |  |   |
 | --- | --- | --- | --- | --- | --- | --- |
-9
-
 |   |  |  | e 45°C. La funzione della rete è quella di veicolare i flussi energetici fra le varie utenze e i sistemi di generazione e dissipazione. La temperatura del fluido all'interno della rete varia a seconda della stagione e del livello di fabbisogno energetico dei vari edifici ad essa collegati. La bassa temperatura della rete Ectogrid™ consente di ridurre le perdite di calore di rete e di ottenere, in alcune condizioni operative, dei contributi energetici positivi dal terreno (es. terreno a temperatura più alta della rete fredda nelle condizioni invernali piuttosto che a temperatura più bassa del ramo caldo nella stagione estiva). |  |  |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  |  | 3) Energy Centre: ha lo scopo di dissipare e/o introdurre energia all'intero sistema. Si compone di due parti principali: bilanciamento passivo e bilanciamento attivo. |  |  |   |
-0
-
 |   |  |  | bilanciamento passivo è rappresentato da un serbatoio di accumulo d'acqua e viene utilizzato per assorbire la fluttuazione della temperatura della rete. Oltre alla funzione di bilanciamento, il serbatoio viene utilizzato come unità di stoccaggio termico per far fronte a domanda di picco da parte degli edifici. Quando gli edifici collegati alla rete Ectogrid™ richiedono complessivamente e integrazione o dissipazione di energia, l'energy centre provvede, rispettivamente, a immettere o dissipare quanto richiesto attraverso le apparecchiature installate e le fonti di energia primaria di cui dispone (acqua di falda, acqua di canale, aria, energia elettrica, ecc.). L'Energy Centre può essere collegato anche a fonti di energia primaria (ad esempio alla rete di teleriscaldamento o di teleraffrescamento  |
 | --- | --- | --- | --- |
 1
@@ -17886,8 +17707,6 @@ o cittadino). Grazie alla rete di distribuzione a bassa temperatura, il sistema 
 |  Mobilità | gasolio | KgCO2eq/GJ | 68.683 | Elaborazioni AMAT basate su EEA Emission Guidebook (modello Copert)  |
 |   |  metano/gpl | KgCO2eq/GJ | 63.3 | Elaborazioni AMAT basate su EEA Emission Guidebook (modello Copert)  |
 |   | mix di rete | KgCO2eq/kWh | 0.247 | Elaborazioni AMAT su dati ISPRA  |
-2
-
 |  Energia elettrica | rinnovabile con garanzia di origine | KgCO2eq/kWh | 0 | Utilizzato fattore non LCA convenzionalmente posto a 0  |
 | --- | --- | --- | --- | --- |
 |  ALTRI
@@ -17900,7 +17719,7 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 ☐ altro: Green space factor  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
 |  3. GOVERNANCE
 E COSTI | Eventuali stakeholder coinvolti
 Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | Progetto all'interno del quartiere MIND.
@@ -17916,11 +17735,11 @@ Arexpo, quale responsabile delle iniziative istituzionali promosse dal distretto
 |   |  | Campus scientifico dell'Università di Milano formano il nucleo originario dell'ecosistema.  |
 | --- | --- | --- |
 |   | Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. | Tra le priorità di MIND c'è la resilienza, ovvero la capacità del luogo di adattarsi alle condizioni climatiche nel tempo.
-Tuttavia, durante lo sviluppo si è rilevato che non tutte le reti infrastrutturali sono dimensionate per mitigare i rischi climatici che impattano la città di Milano (ondate di calore e bombe d'acqua)  |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. | Tra le priorità di MIND c'è la resilienza, ovvero la capacità del luogo di adattarsi alle condizioni climatiche nel tempo. |
+| Tuttavia, durante lo sviluppo si è rilevato che non tutte le reti infrastrutturali sono dimensionate per mitigare i rischi climatici che impattano la città di Milano (ondate di calore e bombe d'acqua)  |
 |   | Stima dell'investimento complessivo (€) | Confidenziale  |
 |   | OPEX (operational expenditure)
-Se applicabile. | -  |
+| Se applicabile. | -  |
 |   | Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☐ Sì
@@ -18020,12 +17839,12 @@ DESCRIZIONE | N progetto - Titolo progetto
 (es: 1 – Riquadificazione areaXXX) | MILANO SANTA GIULIA – MSG : Spark Living  |
 | --- | --- | --- |
 |   |  Referente | NADIA BOSCHI: Head of Sustainability Italy & Continental Europe
-DAVIDE VERGARA: Sustainability Manager  |
+| DAVIDE VERGARA: Sustainability Manager  |
 |   |  Categoria di progetto | X progetto urbano
-☐ intervento su propri asset  |
+| ☐ intervento su propri asset  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | Edificio all'interno del quartiere MILANO SANTA GIULIA che
-verrà certificato LEED for Communities  |
+| Edificio, quartiere, altro | Edificio all'interno del quartiere MILANO SANTA GIULIA che |
+| verrà certificato LEED for Communities  |
 |   |  Localizzazione | Via del Futurismo, 2, 20138 Milano MI  |
 |  Indicare l’area interessata eventualmente
 allegando una mappa. Se possibile fornire
@@ -18084,7 +17903,7 @@ e le bombe d’acqua.  |
 |   |  | L'edificio si posiziona nell'area sud-est di Milano e beneficia di importanti connessioni e della prossimità di infrastrutture di comunicazione primaria, come ad esempio i grandi assi di comunicazione trasportistica/stradale, la vicinanza dell'aeroporto di Linate, il sistema tangenziale e autostradale, la stazione FS dell'alta velocità di Rogoredo, linee autobus urbane, la linea M3 della metro, la prevista linea M4 e nuovo tram di connessione vs viale Ungheria. Inoltre gode della prossimità di grandi infrastrutture territoriali come: l'Ortomercato, i mercati generali, l'ex macello, le aree della logistica di Via Toffetti, le aree industriali di Via Mecenate e lo scalo ferroviario di PortaRomana.  |
 | --- | --- | --- |
 |   |  Tempistiche Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Anno di avvio previsto: 2025
-Anno di conclusione previsto: 2027  |
+| Anno di conclusione previsto: 2027  |
 |  2. IMPATTI^{1}
 (ENERGIA/
 riduzione
@@ -18218,12 +18037,8 @@ sistema energetico |  |  |   |
 |   |  |  | prevede la realizzazione di una centrale energetica all'interno del lotto, in grado di produrre, distribuire e controllare in maniera efficiente i flussi energetici da/verso gli edifici. Lo Smart Energy System permette agli edifici di interagire e comunicare con il sistema energetico del quartiere e la rispettiva centrale, per garantire la massima efficienza operativa |  |  |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  |  | - Rinnovabili on-site
-L'integrazione di impianti fotovoltaici sulla copertura degli edifici del complesso garantirà la produzione in loco di energia rinnovabile in grado di compensare una parte rilevante del fabbisogno energetico |  |  |   |
+| L'integrazione di impianti fotovoltaici sulla copertura degli edifici del complesso garantirà la produzione in loco di energia rinnovabile in grado di compensare una parte rilevante del fabbisogno energetico |  |  |   |
 |   |  |  | - Azzeramento emissioni CO2 rimanenti dal funzionamento dei sistemi energetici saranno totalmente compensate acquistando energia rinnovabile al 100% e garantendo il raggiungimento dei target Net Zero al 2025 e Absolute |  |  |   |
-
-9
-0
-
 |   |  |  | Zero Carbon al 2040 |  |  |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |   |  EDIFICI / AMBIENTE COSTRUITO (es, Materiali/ tecniche costruttive | - |  |  |   |
@@ -18252,12 +18067,10 @@ X minori consumi idrici:
 X nuovi punti di ricarica elettrica: n.X nuovi alberi piantumati; n.
 ☐ superficie permeabile a verde aggiuntiva:  |
 | --- | --- | --- |
-1
-
 |   |  | ☐ altro: Green space factor  |
 | --- | --- | --- |
 |   | Co-benefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
 |  3. GOVERNANCEE COSTI | Eventuali stakeholder coinvolti Es. convenzioni con servizi di trasportopubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | Progetto all'interno del quartiere di Milano Santa Giulia.
 
 Il quartiere di Milano Santa Giulia è uno dei più importanti progetti di riqualificazione urbana in Italia. Il Masterplan del progetto riguarda l'Area MSG Nord, situata nella zona settentrionale del quartiere.
@@ -18275,10 +18088,10 @@ Viali pedonali e ciclabili ombreggiati per mitigare le ondate di calore;
 Infrastruttura adeguata per mitigare eventuali bombe d'acqua
 Utilizzo di materiali permeabili e riflettenti per la mitigazione di entrambi i rischi di cui sopra  |
 |   | Stima dell'investimento complessivo
-(€) | Confidenziale  |
+| (€) | Confidenziale  |
 | --- | --- | --- |
 |   | OPEX (operational expenditure)
-Se applicabile. | Confidenziale  |
+| Se applicabile. | Confidenziale  |
 |   | Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamentoproprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intendeavvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☐ Sì
@@ -18375,12 +18188,12 @@ Si richiede di compilare la "Scheda raccolta azioni" (suddivisa in 3 parti) dupl
 |  1. CONTESTO e DESCRIZIONE | N progetto - Titolo progetto (es: 1 - Riquadificazione area XXX) | MIND (MILANO INNOVATION DISTRICT): HORIZON  |
 | --- | --- | --- |
 |   |  Referente | NADIA BOSCHI: Head of Sustainability Italy & Continental Europe
-DAVIDE VERGARA: Sustainability Manager  |
+| DAVIDE VERGARA: Sustainability Manager  |
 |   |  Categoria di progetto | X progetto urbano
-☐ intervento su propri asset  |
+| ☐ intervento su propri asset  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | Edificio all'interno del quartiere MIND - WEST GATE
-certificato con LEED for Communities  |
+| Edificio, quartiere, altro | Edificio all'interno del quartiere MIND - WEST GATE |
+| certificato con LEED for Communities  |
 |   |  Localizzazione | Viale Decumano 00, 20157, Milano (MI), Milan, Italy  |
 |  Indicare l’area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). |   |
 | --- | --- |
@@ -18415,11 +18228,11 @@ L’edificio si posiziona all’interno del masterplan MIND, che  |
 |   |  | oltre a godere di un ottimo collegamento, sia per mezzi di trasporto pubblici (treni, metro) che per i mezzi privati, in quanto all'interno del principale sistema infrastrutturale regionale incentiva e potenzia la mobilità sostenibile e leggera (bici, monopattini elettrici)  |
 | --- | --- | --- |
 |   |  Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021–baseline). | Anno di avvio previsto: 2024
-Anno di conclusione previsto: 2030  |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021–baseline). | Anno di avvio previsto: 2024 |
+| Anno di conclusione previsto: 2030  |
 |  2. IMPATTI¹
-(ENERGIA / riduzione emissioni CO2 equivalente) | Energia elettrica rinnovabile generate MWh/anno (valore atteso)
-(se previsto dall'intervento) | 85,819 MWh/anno (4% del fabbisogno annuo)  |
+| (ENERGIA / riduzione emissioni CO2 equivalente) | Energia elettrica rinnovabile generate MWh/anno (valore atteso) |
+| (se previsto dall'intervento) | 85,819 MWh/anno (4% del fabbisogno annuo)  |
 | --- | --- | --- |
 |   |  Acquisto di energia elettrica certificata da fonti rinnovabili MWh/anno (valore atteso)
 (se previsto dall'intervento) | 2110,13 MWh/anno  |
@@ -18571,8 +18384,6 @@ Schema "Fattori di emissione"
 |   |  metano/gpl | KgCO2eq/GJ | 63.3 | Elaborazioni AMAT basate su EEA Emission Guidebook (modello Copert)  |
 |  Energia elettrica | mix di rete | KgCO2eq/kWh | 0.247 | Elaborazioni AMAT su dati ISPRA  |
 |   |  rinnovabile con garanzia di origine | KgCO2eq/kWh | 0 | Utilizzato fattore non LCA convenzionalmente posto a 0  |
-2
-
 |  ALTRI
 IMPATTI | Risultati attesi
 Qualora l'azione incida in ambito non energetico indicare quali risultati ci si aspetta di raggiungere in termini qualitativi ed eventualmente quantitativi. | ☐ minori quantitativi di rifiuti per tipologia: kg/anno...
@@ -18583,7 +18394,7 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 ☐ altro: Green space factor  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
 |  3.
 GOVERNANCE
 E COSTI | Eventuali stakeholder coinvolti
@@ -18600,11 +18411,11 @@ Arexpo, quale responsabile delle iniziative istituzionali promosse dal distretto
 |  |   |   |
 | --- | --- | --- |
 |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. | Tra le priorità di MIND c'è la resilienza, ovvero la capacità del luogo di adattarsi alle condizioni climatiche nel tempo.
-Tuttavia, durante lo sviluppo si è rilevato che non tutte le reti infrastrutturali sono dimensionate per mitigare i rischi climatici che impattano la città di Milano (ondate di calore e bombe d'acqua) |   |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. | Tra le priorità di MIND c'è la resilienza, ovvero la capacità del luogo di adattarsi alle condizioni climatiche nel tempo. |
+| Tuttavia, durante lo sviluppo si è rilevato che non tutte le reti infrastrutturali sono dimensionate per mitigare i rischi climatici che impattano la città di Milano (ondate di calore e bombe d'acqua) |   |
 |  Stima dell'investimento complessivo (€) | Confidenziale |   |
 |  OPEX (operational expenditure)
-Se applicabile. | - |   |
+| Se applicabile. | - |   |
 |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☐ Sì
@@ -18633,7 +18444,7 @@ Smedet - 100 år
 | --- | --- |
 |  Sviluppatore | Lendlease  |
 |  Certificazioni terza parte | LEED BD+C: Core & Shell - minimum Gold
-LEED for Communities – minimum Gold  |
+| LEED for Communities – minimum Gold  |
 |  Tipologia utenza | Uffici  |
 |  Indirizzo | Via Achille Grandi snc  |
 |  Località | Rho, Italy, 20017  |
@@ -18646,7 +18457,7 @@ LEED for Communities – minimum Gold  |
 | --- | --- |
 |  Sviluppatore | Lendlease  |
 |  Certificazioni terza parte | LEED BD+C: Core & Shell - minimum Gold
-LEED for Communities – minimum Gold  |
+| LEED for Communities – minimum Gold  |
 |  Tipologia utenza | Uffici  |
 |  Indirizzo | Viale Decumano 00  |
 |  Località | Milano, Italy, 20157  |
@@ -18692,7 +18503,7 @@ Gli edifici sono facilmente raggiungibili sia con mezzi di trasporto pubblici (t
 | --- | --- |
 |  Sviluppatore | Lendlease  |
 |  Certificazioni terza parte | LEED BD+C: Core & Shell – minimum Gold
-LEED for Communities – minimum Gold  |
+| LEED for Communities – minimum Gold  |
 |  Tipologia utenza | Residenze  |
 |  Indirizzo | Via del Futurismo, 2  |
 |  Località | Milano, Italy, 20138  |
@@ -18843,15 +18654,15 @@ Coinvolgimento della comunità agli obiettivi del Progetto attraverso la creazio
 Si richiede di compilare la “Scheda raccolta azioni” (suddivisa in 3 parti) duplicandola per ciascun progetto che si desidera illustrare, compatibilmente con la disponibilità di dati e l'avanzamento dei progetti.
 
 |  1. CONTESTO e DESCRIZIONE | N progetto - Titolo progetto
-(es: 1 – Riquadificazione area XXX) | 1 - LOC Loreto Open Community  |
+| (es: 1 – Riquadificazione area XXX) | 1 - LOC Loreto Open Community  |
 | --- | --- | --- |
 |   |  Referente | Nhood Services Italy S.p.A.  |
 |   |  Categoria di progetto | ☑ progetto urbano
-☐ intervento su propri asset  |
+| ☐ intervento su propri asset  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | Quartiere  |
+| Edificio, quartiere, altro | Quartiere  |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Piazzale Loreto  |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Piazzale Loreto  |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (a.e se si tratta di un progetto integrato). | ☑ Sistemi energetici
 ☑ Involucro edilizio (cappotto, coperture, serramenti)
@@ -18869,11 +18680,11 @@ La scelta può essere multipla | ☐ Tecnologico/infrastrutturale
 5
 
 |   | Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | Il progetto LOC incorpora gli obiettivi di sviluppo sostenibile dell'Agenda 2030 attraverso strategie e azioni tangibili di rigenerazione urbana. LOC vuole ridurre l'entropia del sistema urbano, mirando alla circularità dei processi, dall'uso dei materiali sostenibili e riciclati/riciclabili, alla cantierizzazione diluita. LOC sposa quindi una visione olistica e integrata di masterplan, in grado di rispondere in modo resiliente all'intensificarsi di fenomeni, quali l'aumentare delle temperature e delle precipitazioni, attraverso soluzioni progettuali basate sulla natura. Integrando la natura come elemento fondante del progetto, il masterplan è anche servizio di supporto alla biodiversità urbana. La generazione di energia solare rinnovabile in sito plasma le forme del progetto, costruendo un nesso positivo con le nuove esigenze di mobilità elettrica. Creando nuovi spazi condivisi di qualità, l'intervento consente di rendere il quartiere più aperto e identitario. Il progetto LOC considera fin da subito gli impatti generati a lungo termine e contribuisce a originare nuovi modelli di urbanità ecologici.  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | Il progetto LOC incorpora gli obiettivi di sviluppo sostenibile dell'Agenda 2030 attraverso strategie e azioni tangibili di rigenerazione urbana. LOC vuole ridurre l'entropia del sistema urbano, mirando alla circularità dei processi, dall'uso dei materiali sostenibili e riciclati/riciclabili, alla cantierizzazione diluita. LOC sposa quindi una visione olistica e integrata di masterplan, in grado di rispondere in modo resiliente all'intensificarsi di fenomeni, quali l'aumentare delle temperature e delle precipitazioni, attraverso soluzioni progettuali basate sulla natura. Integrando la natura come elemento fondante del progetto, il masterplan è anche servizio di supporto alla biodiversità urbana. La generazione di energia solare rinnovabile in sito plasma le forme del progetto, costruendo un nesso positivo con le nuove esigenze di mobilità elettrica. Creando nuovi spazi condivisi di qualità, l'intervento consente di rendere il quartiere più aperto e identitario. Il progetto LOC considera fin da subito gli impatti generati a lungo termine e contribuisce a originare nuovi modelli di urbanità ecologici.  |
 | --- | --- | --- |
 |   | Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Anno avvio lavori previsto: 2024
-Anno conclusione lavori previsto: 2026  |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Anno avvio lavori previsto: 2024 |
+| Anno conclusione lavori previsto: 2026  |
 |  2.
 IMPATTI¹
 (ENERGIA/
@@ -18901,12 +18712,7 @@ equivalente) | Energia elettrica rinnovabile generata MWh/anno (valore atteso)
 Al fine di raggiungere l'obiettivo della neutralità carbonica, in fase d'uso l'operatore si approvvigionerà solo di energia certificata con garanzia di origine proveniente da fonte rinnovabile, per la quota parte di fabbisogno non coperto da energia prodotta in sito. |  |  |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |   | EDIFICI / AMBIENTE COSTRUITO (es, Materiali/ tecniche costruttive | L'impegno che si è posto il progetto LOC è di ridurre le emissioni di gas serra che si generano durante il ciclo di vita degli edifici. In particolare, si è data priorità a materiali dall'elevato contenuto di riciclato, naturali e/o locali.
-
-Al fine poi di confermare la propensione verso un intervento a zero emissioni di carbonio, la stima delle emissioni di CO2e previste tramite analisi LCA preliminare viene bilanciata dal sequestro di CO2e operato dal nuovo verde realizzato in LOC e in Forestami (quantificato tramite i parametri contenuti nel "Documento tecnico per l'attuazione della disciplina di cui all'Art. 10"). | 0 | 276.000 | 276.000 |   |
-
-7
-8
-
+| Al fine poi di confermare la propensione verso un intervento a zero emissioni di carbonio, la stima delle emissioni di CO2e previste tramite analisi LCA preliminare viene bilanciata dal sequestro di CO2e operato dal nuovo verde realizzato in LOC e in Forestami (quantificato tramite i parametri contenuti nel "Documento tecnico per l'attuazione della disciplina di cui all'Art. 10"). | 0 | 276.000 | 276.000 |   |
 |   |  | ECONOMIA CIRCOLARE E RIFIUTI |  |  |  |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |   |  MOBILITA' E TRASPORTI |  |  |  |   |
@@ -18937,11 +18743,8 @@ X nuovi alberi piantumati; n. 193 in sito + n. 1500 in Forestami
 X altro: riduzione dei rifiuti da demolizione e costruzione prodotti non pericolosi > 75%  |
 | --- | --- | --- |
 |   |  Cobenefici | Promozione di sistemi di mobilità alternativa lenta  |
-9
-
 |   | I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) | (grazie a 1,15 km di nuovi percorsi ciclabili, nuovi stalli bici, nuovi stalli per mezzi in sharing) e pubblica (in primis la metro, centrale per la conformazione della piazza ipogea) e disincentivazione all'uso dell'auto privata (non sono previsti parcheggi).
-
-Spazi aperti ed aree verdi di elevata qualità urbana e microclimatica, fruibili per i cittadini.  |
+| Spazi aperti ed aree verdi di elevata qualità urbana e microclimatica, fruibili per i cittadini.  |
 | --- | --- | --- |
 |  3. GOVERNANCE E COSTI | Eventuali stakeholder coinvolti
 Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | Foresta-MI
@@ -18949,10 +18752,10 @@ Siemens
 Società Operanti nell'ambito della gestione CER  |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
 |   |  Stima dell'investimento complessivo (€) | 80.0000.000,00  |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☑ Sì
@@ -19081,20 +18884,16 @@ incidere sugli strumenti normativi.
 Si richiede di compilare la "Scheda raccolta azioni" (suddivisa in 3 parti) duplicandola per ciascun progetto che si desidera illustrare, compatibilmente con la disponibilità di dati e l'avanzamento dei progetti.
 
 |  1. CONTESTO e DESCRIZIONE | N progetto - Titolo progetto
-(es: 1 – Riquadificazione area XXX) | 1 – L'Innesto, riquadificazione dell'ex scalo ferroviario di Milano Greco Breda  |
+| (es: 1 – Riquadificazione area XXX) | 1 – L'Innesto, riquadificazione dell'ex scalo ferroviario di Milano Greco Breda  |
 | --- | --- | --- |
 |   |  Referente | Andrea Vecci  |
 |   |  Categoria di progetto | ☑ progetto urbano
-☑ intervento su propri asset  |
+| ☑ intervento su propri asset  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | Quartiere  |
-7
-
+| Edificio, quartiere, altro | Quartiere  |
 |   | Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Il sito è compreso nel piano strategico di Milano per la rigenerazione degli scali ferroviari dismessi. Tale piano individua una serie di previsioni urbanistiche finalizzate al miglioramento dell'assetto e della qualità urbana e ambientale, all'incremento del verde a fruizione dei cittadini, dei servizi pubblici, al potenziamento dell'offerta di edilizia residenziale sociale e del trasporto pubblico. L'area di trasformazione è compresa tra i due assi di viale Fulvio Testi e viale Monza, in prossimità della stazione ferroviaria urbana Greco Pirelli. Ad est un tessuto misto di maglia minuta residenziale e produttivo-artigianale comprende i nuclei storici preesistenti di Segnanino, Segnano, Greco Milanese e Precotto; ad ovest invece il nuovo quartiere di Milano Bicocca ha visto l'insediamento di un polo tecnologico, con presenza di funzioni residenziali e di interesse generale come l'Università, il teatro degli Arcimboldi e nuovi spazi pubblici. Il sito è diviso in due porzioni: la parte centrale lungo le vie Breda e Rucellai lato Viale Monza e una spina verde che corre lungo i binari della ferrovia, lato Greco – Pirelli sulla via Sesto San Giovanni.  |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Il sito è compreso nel piano strategico di Milano per la rigenerazione degli scali ferroviari dismessi. Tale piano individua una serie di previsioni urbanistiche finalizzate al miglioramento dell'assetto e della qualità urbana e ambientale, all'incremento del verde a fruizione dei cittadini, dei servizi pubblici, al potenziamento dell'offerta di edilizia residenziale sociale e del trasporto pubblico. L'area di trasformazione è compresa tra i due assi di viale Fulvio Testi e viale Monza, in prossimità della stazione ferroviaria urbana Greco Pirelli. Ad est un tessuto misto di maglia minuta residenziale e produttivo-artigianale comprende i nuclei storici preesistenti di Segnanino, Segnano, Greco Milanese e Precotto; ad ovest invece il nuovo quartiere di Milano Bicocca ha visto l'insediamento di un polo tecnologico, con presenza di funzioni residenziali e di interesse generale come l'Università, il teatro degli Arcimboldi e nuovi spazi pubblici. Il sito è diviso in due porzioni: la parte centrale lungo le vie Breda e Rucellai lato Viale Monza e una spina verde che corre lungo i binari della ferrovia, lato Greco – Pirelli sulla via Sesto San Giovanni.  |
 | --- | --- | --- |
-8
-
 |  |   |   |
 | --- | --- | --- |
 |   |  **Ambiti interessati dal progetto**
@@ -19110,7 +18909,7 @@ La scelta può essere multipla | ☑ Tecnologico/infrastrutturale
 ☑ Finanziario
 ☑ Gestionale  |
 |   | Comportamentale
-Altro (creazione di Social Housing)  |
+| Altro (creazione di Social Housing)  |
 | --- | --- |
 |  Descrizione dell'azione/progetto/intervento
 Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | **Sistemi energetici**
@@ -19172,8 +18971,6 @@ Nell'ottica del potenziamento della formazione di nuovo suolo si prevede l'utili
 |  Le relazioni sociali e il coinvolgimento degli abitanti nello sviluppo del quartiere sono al centro de L'Innesto. L'intervento sperimenta, infatti, un nuovo modo di vivere l'**abitare collaborativo**, che non si limita alla partecipazione degli inquilini alla gestione degli spazi comuni e degli spazi aperti, ma si apre all'intero quartiere e alla città di Milano. Questo approccio inclusivo alla vita del quartiere si riflette anche nella proposta abitativa diversificata di social housing, con alloggi in locazione, in vendita convenzionata agevolata e in condivisione, residenze sociali rivolte a categorie in difficoltà e uno studentato convenzionato con 300 posti letto.  |   |
 |  Per tutti i dettagli e gli approfondimenti è disponibile il sito web de L'INNESTO in italiano e in inglese https://www.innestomilano.it/  |   |
 |  Tempistiche | Avvio previsto: 3Q 2024.  |
-3
-
 |   | Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Conclusione prevista: 1Q 2027.  |
 | --- | --- | --- |
 |  2. IMPATTI² (ENERGIA/ riduzione emissioni CO2 equivalente) | Energia elettrica rinnovabile generata MWh/anno (valore atteso) (se previsto dall'intervento) | Offerta energetica rinnovabile complessiva:
@@ -19266,10 +19063,10 @@ A questo si affiancano atenei e centri di ricerca e di innovazione, quali il Pol
 Hanno collaborato attivamente i gestori delle reti A2A e MM. Partecipano organizzazioni impegnate nello sviluppo di progetti sociali, ambientali e di economia circolare quali Delta Ecopolis, In-Domus, Coffeefrom, Fungo Box, Peverelli.  |
 | --- | --- | --- |
 |   | Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. | -  |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. | -  |
 |   | Stima dell'investimento complessivo (€) | 111.000.000€  |
 |   | OPEX (operational expenditure)
-Se applicabile. | N.A.  |
+| Se applicabile. | N.A.  |
 |   | Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☐ Sì
@@ -19375,11 +19172,11 @@ Si richiede di compilare la “Scheda raccolta azioni” (suddivisa in 3 parti) 
 | --- | --- | --- |
 |   |  Referente | Dott. Gian Piero Carezzano  |
 |   |  Categoria di progetto | ☐ progetto urbano
-x intervento su propri asset  |
+| x intervento su propri asset  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | 59 edifici pari a 148.981,76 mq riscaldati  |
+| Edificio, quartiere, altro | 59 edifici pari a 148.981,76 mq riscaldati  |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Zona nord di Milano – Affori, Dergano, Niguarda  |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Zona nord di Milano – Affori, Dergano, Niguarda  |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (a.e se si tratta di un progetto integrato). | x Sistemi energetici
 x Involucro edilizio (cappotto, coperture, serramenti)
@@ -19395,9 +19192,9 @@ La scelta può essere multipla | x Tecnologico/infrastrutturale
 x Comportamentale
 ☐ Altro (specificare)  |
 |   |  Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | Mediante l'utilizzo del Superbonus 110%, Abitare s.c. ha riquadificato la quasi totalità del proprio patrimonio edilizio residenziale, provvedendo al rifacimento degli impianti, alla coibentazione degli involucri, alla sostituzione di 12.000 serramenti  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | Mediante l'utilizzo del Superbonus 110%, Abitare s.c. ha riquadificato la quasi totalità del proprio patrimonio edilizio residenziale, provvedendo al rifacimento degli impianti, alla coibentazione degli involucri, alla sostituzione di 12.000 serramenti  |
 |   |  Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Progetti avviati nei primi mesi del 2021 e conclusi entro il 31/12/2023  |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Progetti avviati nei primi mesi del 2021 e conclusi entro il 31/12/2023  |
 |  2. IMPATTI^{1} (ENERGIA/ riduzione emissioni CO2 equivalente) | Energia rinnovabile generata MWh/anno (valore atteso) (se previsto dall'intervento) |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  Acquisto di energia elettrica certificata da fonti rinnovabili MWh/anno (valore atteso) (se previsto dall'intervento) |   |   |   |   |   |
@@ -19436,8 +19233,6 @@ Schema "Fattori di emissione"
 | Elaborazioni AMAT basate su EEA Emission Guidebook (modello Copert)  |
 |   |  metano/gpl | KgCO2eq/GJ | 63.3 | Elaborazioni AMAT basate su EEA Emission Guidebook (modello Copert)  |
 |   | mix di rete | KgCO2eq/kWh | 0.247 | Elaborazioni AMAT su dati ISPRA  |
-7
-
 |  Energia elettrica | rinnovabile con garanzia di origine | KgCO2eq/kWh | 0 | Utilizzato fattore non LCA convenzionalmente posto a 0  |
 | --- | --- | --- | --- | --- |
 |  ALTRI IMPATTI | Risultati attesi
@@ -19454,13 +19249,13 @@ I cobenefici sono i risultati indiretti della propria azione, effetti e cambiame
 • Miglioramento del comfort abitativo
 • Maggiore sicurezza domestica  |
 |  3. GOVERNANCE E COSTI | Eventuali stakeholder coinvolti
-Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | Politecnico di Milano  |
+| Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. | Politecnico di Milano  |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. | Difficoltà nella riqualificazione energetica del costruito già abitato  |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. | Difficoltà nella riqualificazione energetica del costruito già abitato  |
 |   |  Stima dell'investimento complessivo (€) | 196.000.000 €  |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☐ Sì
@@ -19480,11 +19275,11 @@ PARTE B (facoltativa) - Sezione B.1: Quadro conoscitivo
 | --- | --- |
 |  Nome Cooperativa | Abitare Società Cooperativa  |
 |  Immobili di proprietà, presenti sul territorio comunale di Milano
-(specificare eventuale nome identificativo delle strutture e indirizzo e civico dell'ingresso principale delle strutture stesse) – eventualmente fornire mappa | (si veda tabella sotto e mappa)  |
+| (specificare eventuale nome identificativo delle strutture e indirizzo e civico dell'ingresso principale delle strutture stesse) – eventualmente fornire mappa | (si veda tabella sotto e mappa)  |
 |  Numero complessivo unità abitative di proprietà della Cooperativa | 2.459  |
 |  Superficie utile (riscaldata) complessiva delle unità abitative di proprietà della Cooperativa presenti sul territorio di Milano (mq) | 148.981,76 m2  |
 |  Superficie complessiva altri locali riscaldati (mq)
-(ad es. spazi uso ufficio, sale comuni) | 5.529  |
+| (ad es. spazi uso ufficio, sale comuni) | 5.529  |
 |  Numero complessivo persone residenti presso le unità abitative di proprietà della Cooperativa (anno 2022) | Circa 8.000  |
 |  Riferimenti eventuale Energy manager o figura che si occupa della gestione dell'energia degli immobili di proprietà della Cooperativa |   |
 |  Stabile | SCALA | Foglio | Mappale | Superfici riscaldate (M2)  |
@@ -19500,8 +19295,6 @@ PARTE B (facoltativa) - Sezione B.1: Quadro conoscitivo
 |  Carli 34 | BD |   | 99 | 1121,2  |
 |  Carli 34 | EF |   | 163 | 1121,3  |
 |  Cicerone 17 |  |  |  | 2071,06  |
-
-8
 |  Cecchi 1 | A | 78 | 200 | 2970,72  |
 | --- | --- | --- | --- | --- |
 |  Cecchi 1 | B |   | 199 | 2429,25  |
@@ -19540,8 +19333,6 @@ PARTE B (facoltativa) - Sezione B.1: Quadro conoscitivo
 |  Val di Ledro 23 | 1 | 76 | 77 | 1656,2  |
 |  Val di Ledro 23 | 2 |   | 172 | 1609,7  |
 |  Val di Ledro 23 | 3 |   | 170 | 2091  |
-
-9
 |  Val di Ledro 23 | 4 |  | 183 | 2260,3  |
 | --- | --- | --- | --- | --- |
 |  Val di Ledro 23 | 5 |  | 179 | 2116,9  |
@@ -19580,8 +19371,8 @@ Sede o edifici serviti: 59  |
 meccanica: ... %
 Di cui con sistemi di recupero termico: ... %  |
 |  Sistemi di Building Automation
-(per tutti gli immobili) | Quota percentuale dei volumi climatizzati dotati di Building Automation: 97%
-Di cui con sistemi di intelligenza artificiale: ... %  |
+| (per tutti gli immobili) | Quota percentuale dei volumi climatizzati dotati di Building Automation: 97% |
+| Di cui con sistemi di intelligenza artificiale: ... %  |
 |  Illuminazione a LED
 (per gli spazi comuni di tutti gli immobili) | Quota percentuale punti luce a LED per i diversi edifici: ... %
 Con sistemi di regolazione manuale di accensione: ... %
@@ -19614,26 +19405,22 @@ kWh termici TOTALI annuali
 |  VAL DI LEDRO 23/4 | 1.485.781,00  |
 |  ZANOLI | 826.003,49  |
 |  TOTALE | 20.475.034,14  |
-
-3
-4
-
 |  TIPOLOGIA DI GESTIONE / CONDUZIONE DELL'ENERGIA  |   |
 | --- | --- |
 |  In economia
-(la Cooperativa paga i combustibili, terzo responsabile esterno, interventi di straordinaria e riquadificazione energetica a carico della Cooperativa) | Immobili serviti: 72  |
+| (la Cooperativa paga i combustibili, terzo responsabile esterno, interventi di straordinaria e riquadificazione energetica a carico della Cooperativa) | Immobili serviti: 72  |
 |  Contratto Servizio Energia
-(La Cooperativa paga un canone fisso, indipendente dai consumi; il Fornitore acquisisce il ruolo di terzo responsabile, fornisce i vettori energetici, realizza interventi di riquadificazione energetica con obiettivi di risparmio contrattualmente garantiti) | immobili serviti: ...  |
+| (La Cooperativa paga un canone fisso, indipendente dai consumi; il Fornitore acquisisce il ruolo di terzo responsabile, fornisce i vettori energetici, realizza interventi di riquadificazione energetica con obiettivi di risparmio contrattualmente garantiti) | immobili serviti: ...  |
 |  Convenzione specifica per le Cooperative | Tipo contratto: ...
-Immobili serviti: ...  |
+| Immobili serviti: ...  |
 |  CONSUMI COMPLESSIVI ENERGIA ELETTRICA PER TUTTI GLI IMMOBILI MILANESI  |   |   |   |
 | --- | --- | --- | --- |
 |   |   | Anno 2021 | Anno 2022  |
 |  Consumo di energia elettrica ad usi condominiali (prelevata dalla rete)
-di cui (se misurati separatamente): per pompe di calore e relativi ausiliari | kWh/a
-nno | 1.334.418 | 1.385.289  |
+| di cui (se misurati separatamente): per pompe di calore e relativi ausiliari | kWh/a |
+| nno | 1.334.418 | 1.385.289  |
 |  Quota dei consumi di energia elettrica prelevata da rete coperta da energia elettrica verde certificata (es. RECS-Renewable Energy Certificate System, GO-Garanzia di origine) | kWh/a
-nno |  |   |
+| nno |  |   |
 |  CONSUMI COMPLESSIVI DI COMBUSTIBILI FOSSILI AD USO CLIMATIZZAZIONE E AD USO TECNOLOGICO PER TUTTI GLI IMMOBILI SITUATI A MILANO  |   |   |   |
 | --- | --- | --- | --- |
 |   |   | Anno 2021 | Anno 2022  |
@@ -19734,12 +19521,12 @@ Si richiede di compilare la “Scheda raccolta azioni” (suddivisa in 3 parti) 
 | --- | --- | --- |
 |   |  Referente | Arch. De Gioia  |
 |   |  Categoria di progetto | ☐ progetto urbano
-X intervento su propri asset  |
+| X intervento su propri asset  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | Edificio  |
+| Edificio, quartiere, altro | Edificio  |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Via Trenno 41, Milano
-Municipio 8  |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Via Trenno 41, Milano |
+| Municipio 8  |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (a.e se si tratta di un progetto integrato). | X Sistemi energetici
 X Involucro edilizio (cappotto, coperture, serramenti)
@@ -19755,9 +19542,9 @@ La scelta può essere multipla | X Tecnologico/infrastrutturale
 ☐ Comportamentale
 ☐ Altro (specificare)  |
 |   |  Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | Progetto di riqualificazione energetica e manutenzione straordinaria di due edifici costruiti nel primo ventennio del '900 nel quale è stata sostituita la centrale termica con sistemi ibridi in pompa di calore, sono stati installati pannelli fotovoltaici, sono stati sostituiti i serramenti e isolate termicamente alcune facciate, mentre su altre si è fatta semplice manutenzione  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | Progetto di riqualificazione energetica e manutenzione straordinaria di due edifici costruiti nel primo ventennio del '900 nel quale è stata sostituita la centrale termica con sistemi ibridi in pompa di calore, sono stati installati pannelli fotovoltaici, sono stati sostituiti i serramenti e isolate termicamente alcune facciate, mentre su altre si è fatta semplice manutenzione  |
 |   |  Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Intervento iniziato e finito nel 2023, al momento sono in fase di messa a punto i nuovi sistemi energetici.  |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Intervento iniziato e finito nel 2023, al momento sono in fase di messa a punto i nuovi sistemi energetici.  |
 |  2. IMPATTI^{1} (ENERGIA/ riduzione emissioni CO2 equivalente) | Energia rinnovabile generata MWh/anno (valore atteso) (se previsto dall'intervento) |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  Acquisto di energia elettrica certificata da fonti rinnovabili MWh/anno (valore atteso) (se previsto dall'intervento) | Non previsto  |   |   |   |   |
@@ -19798,8 +19585,6 @@ Schema "Fattori di emissione"
 |   |  metano/gpl | KgCO2eq/GJ | 63.3 | Elaborazioni AMAT basate su EEA Emission Guidebook (modello Copert)  |
 |  Energia elettrica | mix di rete | KgCO2eq/kWh | 0.247 | Elaborazioni AMAT su dati ISPRA  |
 |   |  rinnovabile con garanzia di origine | KgCO2eq/kWh | 0 | Utilizzato fattore non LCA convenzionalmente posto a 0  |
-7
-
 |  ALTRI
 IMPATTI | Risultati attesi
 Qualora l'azione incida in ambito non energetico indicare quali risultati ci si aspetta di raggiungere in termini qualitativi ed eventualmente quantitativi. | ☐ minori quantitativi di rifiuti per tipologia: kg/anno...
@@ -19810,18 +19595,18 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 ☐ altro: indicare  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
 |  3.
 GOVERNANCE
 E COSTI | Eventuali stakeholder coinvolti
 Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. |   |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
 |   |  Stima dell'investimento complessivo
-(€) | 1.520.000€  |
+| (€) | 1.520.000€  |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☑ Sì
@@ -19846,12 +19631,12 @@ Si richiede di compilare la “Scheda raccolta azioni” (suddivisa in 3 parti) 
 | --- | --- | --- |
 |   |  Referente | Arch. De Gioia  |
 |   |  Categoria di progetto | ☐ progetto urbano
-X intervento su propri asset  |
+| X intervento su propri asset  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | Edificio  |
+| Edificio, quartiere, altro | Edificio  |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Via Trenno 15, Milano
-Municipio 8  |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Via Trenno 15, Milano |
+| Municipio 8  |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (a.e se si tratta di un progetto integrato). | ☐ Sistemi energetici
 X Involucro edilizio (cappotto, coperture, serramenti)
@@ -19867,7 +19652,7 @@ La scelta può essere multipla | X Tecnologico/infrastrutturale
 ☐ Comportamentale
 ☐ Altro (specificare)  |
 |   |  Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | Progetto di riqualificazione energetica e manutenzione straordinaria di tre edifici costruiti tra gli anni '60 e '70 facenti capo ad un' unica centrale termica non interessata direttamente dal progetto che serve 7 stabili. Sono stati sostituiti i serramenti e isolate le parti opache dell'edificio. Sono state installati sistemi di ombreggiamento (Tende Solari). Sono stati installati pannelli solari e fotovoltaici ed eseguite altre opere di manutenzione non legate ad efficientamenti energetici.  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | Progetto di riqualificazione energetica e manutenzione straordinaria di tre edifici costruiti tra gli anni '60 e '70 facenti capo ad un' unica centrale termica non interessata direttamente dal progetto che serve 7 stabili. Sono stati sostituiti i serramenti e isolate le parti opache dell'edificio. Sono state installati sistemi di ombreggiamento (Tende Solari). Sono stati installati pannelli solari e fotovoltaici ed eseguite altre opere di manutenzione non legate ad efficientamenti energetici.  |
 |   |  Tempistiche
 Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare | Intervento iniziato nel 2021 e finito nel 2023.  |
 solo quelli conclusi successivamente all'anno 2021-baseline).
@@ -19911,8 +19696,6 @@ Schema "Fattori di emissione"
 |  Mobilità | gasolio | KgCO2eq/GJ | 68.68
 | Elaborazioni AMAT basate su EEA Emission Guidebook (modello Copert)  |
 |   |  metano/gpl | KgCO2eq/GJ | 63.3 | Elaborazioni AMAT basate su EEA Emission Guidebook (modello Copert)  |
-1
-
 |  Energia elettrica | mix di rete | KgCO2eq/kWh | 0.247 | Elaborazioni AMAT su dati ISPRA  |
 | --- | --- | --- | --- | --- |
 |   |  rinnovabile con garanzia di origine | KgCO2eq/kWh | 0 | Utilizzato fattore non LCA convenzionalmente posto a 0  |
@@ -19926,18 +19709,18 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 ☐ altro: indicare  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
 |  3.
 GOVERNANCE
 E COSTI | Eventuali stakeholder coinvolti
 Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. |   |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
 |   |  Stima dell'investimento complessivo
-(€) |   |
+| (€) |   |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☑ Sì
@@ -19950,7 +19733,7 @@ Bonus facciate 90%
 ☐ Finanziamenti Europei
 ☐ Altro  |
 |   |  | Quanto incidono in % sull'investimento complessivo?
-%  |
+| %  |
 | --- | --- | --- |
 
 2
@@ -19964,12 +19747,12 @@ Si richiede di compilare la “Scheda raccolta azioni” (suddivisa in 3 parti) 
 | --- | --- | --- |
 |   |  Referente | Arch. De Gioia  |
 |   |  Categoria di progetto | ☐ progetto urbano
-X intervento su propri asset  |
+| X intervento su propri asset  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | Edificio  |
+| Edificio, quartiere, altro | Edificio  |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Via Carlo Feltrinelli 13, Milano
-Municipio 4  |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Via Carlo Feltrinelli 13, Milano |
+| Municipio 4  |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (a.e se si tratta di un progetto integrato). | X Sistemi energetici
 X Involucro edilizio (cappotto, coperture, serramenti)
@@ -19985,9 +19768,9 @@ La scelta può essere multipla | X Tecnologico/infrastrutturale
 ☐ Comportamentale
 ☐ Altro (specificare)  |
 |   |  Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | Progetto di riqualificazione energetica e manutenzione straordinaria di un edificio costruito negli anni '80: è stata sostituita la centrale termica con delle caldaie a condensazione, è stato installato il solare termico, è stata installata una building automation a livello alloggio, e sono stati fatti interventi di isolamento su tetto e pareti perimetrali, sostituzione serramenti, installazione tende solari.  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). | Progetto di riqualificazione energetica e manutenzione straordinaria di un edificio costruito negli anni '80: è stata sostituita la centrale termica con delle caldaie a condensazione, è stato installato il solare termico, è stata installata una building automation a livello alloggio, e sono stati fatti interventi di isolamento su tetto e pareti perimetrali, sostituzione serramenti, installazione tende solari.  |
 |   |  Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Intervento terminato nel 2022.  |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Intervento terminato nel 2022.  |
 |  2. IMPATTI^{5} (ENERGIA/ riduzione emissioni CO2 equivalente) | Energia rinnovabile generata MWh/anno (valore atteso) (se previsto dall'intervento) |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  Acquisto di energia elettrica certificata da fonti rinnovabili MWh/anno (valore atteso) (se previsto dall'intervento) | Non previsto  |   |   |   |   |
@@ -20028,8 +19811,6 @@ Schema "Fattori di emissione"
 |   |  metano/gpl | KgCO2eq/GJ | 63.3 | Elaborazioni AMAT basate su EEA Emission Guidebook (modello Copert)  |
 |  Energia elettrica | mix di rete | KgCO2eq/kWh | 0.247 | Elaborazioni AMAT su dati ISPRA  |
 |   |  rinnovabile con garanzia di origine | KgCO2eq/kWh | 0 | Utilizzato fattore non LCA convenzionalmente posto a 0  |
-6
-
 |  ALTRI
 IMPATTI | Risultati attesi
 Qualora l'azione incida in ambito non energetico indicare quali risultati ci si aspetta di raggiungere in termini qualitativi ed eventualmente quantitativi. | ☐ minori quantitativi di rifiuti per tipologia: kg/anno...
@@ -20040,18 +19821,18 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 ☐ altro: indicare  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
 |  3.
 GOVERNANCE
 E COSTI | Eventuali stakeholder coinvolti
 Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. |   |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
 |   |  Stima dell'investimento complessivo
-(€) |   |
+| (€) |   |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☑ Sì
@@ -20086,7 +19867,7 @@ Via Cefalonia 11  |
 |  Numero complessivo unità abitative di proprietà della Cooperativa | 1400 circa  |
 |  Superficie utile (riscaldata) complessiva delle unità abitative di proprietà della Cooperativa presenti sul territorio di Milano (mq) | Circa 75.000 mq  |
 |  Superficie complessiva altri locali riscaldati (mq)
-(ad es. spazi uso ufficio, sale comuni) | Circa 1000 mq  |
+| (ad es. spazi uso ufficio, sale comuni) | Circa 1000 mq  |
 |  Numero complessivo persone residenti presso le unità abitative di proprietà della Cooperativa (anno 2022) | Indicativamente 3000 persone  |
 |  Riferimenti eventuale Energy manager o figura che si occupa della gestione dell'energia degli immobili di proprietà della Cooperativa |   |
 8
@@ -20127,16 +19908,16 @@ accensione: 50%  |
 |  TIPOLOGIA DI GESTIONE / CONDUZIONE DELL'ENERGIA  |   |
 | --- | --- |
 |  In economia
-(la Cooperativa paga i combustibili, terzo responsabile esterno, interventi di straordinaria e riquadificazione energetica a carico della Cooperativa) | Immobili serviti: 9  |
+| (la Cooperativa paga i combustibili, terzo responsabile esterno, interventi di straordinaria e riquadificazione energetica a carico della Cooperativa) | Immobili serviti: 9  |
 |  Contratto Servizio Energia
-(La Cooperativa paga un canone fisso, indipendente dai consumi; il Fornitore acquisisce il ruolo di terzo responsabile, fornisce i vettori energetici, realizza interventi di riquadificazione energetica con obiettivi di risparmio contrattualmente garantiti) | immobili serviti: 5  |
+| (La Cooperativa paga un canone fisso, indipendente dai consumi; il Fornitore acquisisce il ruolo di terzo responsabile, fornisce i vettori energetici, realizza interventi di riquadificazione energetica con obiettivi di risparmio contrattualmente garantiti) | immobili serviti: 5  |
 |  Convenzione specifica per le Cooperative | Tipo contratto: ………………
-Immobili serviti: ………………  |
+| Immobili serviti: ………………  |
 |  CONSUMI COMPLESSIVI ENERGIA ELETTRICA PER TUTTI GLI IMMOBILI MILANESI  |   |   |   |
 | --- | --- | --- | --- |
 |   |   | Anno 2021 | Anno 2022  |
 |  Consumo di energia elettrica ad usi condominiali (prelevata dalla rete)
-di cui (se misurati separatamente): per pompe di calore e relativi ausiliari | kWh/anno | 653583 | 620890  |
+| di cui (se misurati separatamente): per pompe di calore e relativi ausiliari | kWh/anno | 653583 | 620890  |
 |  Quota dei consumi di energia elettrica prelevata da rete coperta da energia elettrica verde certificata (es. RECS-Renewable Energy Certificate System, GO-Garanzia di origine) | kWh/anno |  | nd  |
 |  CONSUMI COMPLESSIVI DI COMBUSTIBILI FOSSILI AD USO CLIMATIZZAZIONE E AD USO TECNOLOGICO PER TUTTI GLI IMMOBILI SITUATI A MILANO  |   |   |   |
 | --- | --- | --- | --- |
@@ -20212,11 +19993,11 @@ Per le due nuove acquisizioni, Casa Crespi e Casa Livio, l'apertura al pubblico 
 | --- | --- | --- |
 |   |  Referente |   |
 |   |  Categoria di progetto | ☐ progetto urbano
-X intervento su propri asset  |
+| X intervento su propri asset  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | Edificio e quartiere  |
+| Edificio, quartiere, altro | Edificio e quartiere  |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Alleghiamo mappa  |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Alleghiamo mappa  |
 |   |  Ambiti interessati dal progetto | X Sistemi energetici
 ☐ Involucro edilizio (cappotto, coperture, serramenti)
 X Produzione da fonti rinnovabili (fotovoltaico, etc.)
@@ -20230,8 +20011,6 @@ X Produzione da fonti rinnovabili (fotovoltaico, etc.)
 ☐ Comportamentale
 ☐ Altro (specificare)  |
 |   |  Descrizione dell'azione/progetto/intervento | Il progetto prevede di esplorare la fattibilità della creazione di una comunità energetica rinnovabile (CER) che coinvolga alcune realtà del quartiere.  |
-3
-
 |   | Per primo il FAI intende esplorare la possibilità di inserire sulla copertura della sua sede, la Cavallerizza (Via Carlo Foldi, 2) un impianto fotovoltaico diventando uno dei produttori di energia della CER – la falda esposta a sud del tetto su cui si potrebbe installare il fotovoltaico è ampia circa 600 mq. Coinvolgendo altri attori presenti nel quartiere le superfici dei tetti utilizzabili crescerebbe significativamente, sono infatti limitrofi alla Cavallerizza diversi beni di proprietà del Comune di Milano e della Curia: - Al lato dell’edificio lungo la via Bezzecca sono ubicate le “Scuole infanzia Bezzecca 16”; sempre in via Bezzecca al 20 ha sede il Comando Zona 4 della Polizia locale e al civico 24 ha sede un C.R.A.L. del Comune di Milano. - Intorno alla Cavallerizza ci sono diversi edifici di edilizia pubblica, sono di MM lo stabile di Via Bezzecca 3 e lo stabile di Piazza Santa Maria del Suffragio 2/Corso XXII Marzo. - Sempre di proprietà del Comune di Milano è il Mercato Comunale al centro della Piazza di Santa Maria del Suffragio. - Sulla Piazza, inoltre, al civico 23 di Corso XXII Marzo si trova la Parrocchia di S. Maria del Suffragio, con l’annessa scuola (scuola dell’infanzia, elementari e medie). Sull’area insistono tre cabine elettriche primarie: AC012E0009 (via Giovanni Cena/Via Cervignano) e poi AC012E00018 (Piazza Tricolore/Corso Monforte) e AC012E00019 (Crocetta). Le fasi del progetto prevedono: - Esplorazione dei diversi soggetti potenzialmente interessati alla creazione della comunità energetica (CER), tra cui il Comune di Milano (scuole, Polizia locale, Circoli CRAL, MM per l’edilizia pubblica); la Braidense; Parrocchia di Santa Maria del Suffragio e Curia ... - Individuazione le aree dove è possibile realizzare impianti alimentati da fonti rinnovabili - esplorazione di partner scientifici (Politecnico di Milano, FLA) - esplorazione di uno sponsor tecnico per il FAI - studio di fattibilità per la comunità energetica: individuare i potenziali produttori di energia e auto-  |
 | --- | --- |
 |   |  | consumatori e i potenziali beneficiari (consumatori di energia elettrica, soggetti "vulnerabili" per esempio)
@@ -20245,17 +20024,13 @@ X Produzione da fonti rinnovabili (fotovoltaico, etc.)
 Per la fase di esplorazione: 6 mesi
 Per la realizzazione del progetto di fattibilità: 5 mesi  |
 |  2. IMPATTI¹
-(ENERGIA/riduzione emissioni CO2 equivalente) | Energia rinnovabile generata MWh/anno (valore atteso) | - Ci è difficile al momento calcolare l'energia rinnovabile che un impianto fotovoltaico sulla copertura della sede del FAI potrebbe generare.
-Il dato di partenza che abbiamo è il nostro consumo medio annuo che è pari a circa 510.000 kWh.  |
+| (ENERGIA/riduzione emissioni CO2 equivalente) | Energia rinnovabile generata MWh/anno (valore atteso) | - Ci è difficile al momento calcolare l'energia rinnovabile che un impianto fotovoltaico sulla copertura della sede del FAI potrebbe generare. |
+| Il dato di partenza che abbiamo è il nostro consumo medio annuo che è pari a circa 510.000 kWh.  |
 | --- | --- | --- |
 |   |  Acquisto di energia elettrica certificata da fonti rinnovabili MWh/anno (valore atteso) | - Già in essere, la Cavallerizza come tutti i Beni FAI acquista da Edison energia elettrica certificata da fonti rinnovabili.  |
 |   |  Variazione dei consumi energetici per vettore | -  |
-
-4
-5
-
 |   | Riduzione delle emissioni di gas serra² (kg CO2eq/anno)
-(Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) | AMBITO DI AZIONE | Descrizione | Emissioni a fine realizzazione del progetto | Emissioni (Baseline) | Delta (emissioni evitate)  |
+| (Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) | AMBITO DI AZIONE | Descrizione | Emissioni a fine realizzazione del progetto | Emissioni (Baseline) | Delta (emissioni evitate)  |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |   |  SISTEMA ENERGETICO |  |  |  |   |
 |   |   |  EDIFICI / AMBIENTE COSTRUITO (es, Materiali/ tecniche costruttive |  |  |  |   |
@@ -20271,8 +20046,6 @@ IMPATTI | Risultati attesi | ☐ minori quantitativi di rifiuti per tipologia: k
 ☐ superficie permeabile a verde aggiuntiva: mq
 ☐ altro: indicare  |
 | --- | --- | --- |
-6
-
 |  Cobenefici | Riduzione povertà energetica  |
 | --- | --- |
 |  3. GOVERNANCE E COSTI | Eventuali stakeholder coinvolti | • Comune di Milano (Settore Scuola, Polizia locale, Circoli CRAL)
@@ -20319,7 +20092,7 @@ Difficile da stabilire in questo momento
 | --- | --- | --- |
 |   |  Referente |   |
 |   |  Categoria di progetto | ☐ progetto urbano
-☑ intervento su propri asset  |
+| ☑ intervento su propri asset  |
 |   |  Scala dell'intervento | Città metropolitana e territorio regionale  |
 |   |  Localizzazione |   |
 |   |  Ambiti interessati dal progetto | ☐ Sistemi energetici
@@ -20378,8 +20151,6 @@ Qualora l’azione incida in ambito non energetico indicare quali risultati ci s
 X altro:
 Contrasto all’effetto backlash rispetto al tema del cambiamento climatico  |
 | --- | --- | --- |
-1
-
 |   |  | Partecipazione del pubblico sia sul territorio che sugli strumenti di comunicazione digitali
 Coinvolgimento dei cittadini
 Diffusione di conoscenza  |
@@ -20520,9 +20291,9 @@ Progetto 2: Advisory Board Consumi Sostenibili
 | --- | --- | --- |
 |   |  Referente | Silvia Pedrotti, Responsabile Social Affairs - A2A S.p.A.  |
 |   |  Scala dell'intervento (se si tratta di una azione che ha una componente localizzabile)
-(ad esempio, sede di associazione scuola o insieme di scuole, condominio o insieme di condomini, quartiere, città...). | Comune e Città Metropolitana di Milano Nazionale  |
+| (ad esempio, sede di associazione scuola o insieme di scuole, condominio o insieme di condomini, quartiere, città...). | Comune e Città Metropolitana di Milano Nazionale  |
 |   |  Localizzazione
-(se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l'azione e fornire una mappa; se disponibili shape-file riferiti al sito/progetto in oggetto). |   |
+| (se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l'azione e fornire una mappa; se disponibili shape-file riferiti al sito/progetto in oggetto). |   |
 |   |  Ambito/ambiti di azione
 (energia, mobilità, verde, economia circolare, altro...). | Sostegno economico per le persone in povertà energetica
 Sostituzione o donazione di elettrodomestici alle famiglie in povertà energetica
@@ -20603,7 +20374,7 @@ Progetto 2: Advisory Board Consumi sostenibili
 ☑ Comportamentale (ambito culturale, educativo, attivismo, disseminazione ecc)
 ☐ Altro (specificare)  |
 |   |  Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti | A2A ha avviato tre tavoli di confronto con gli stakeholder di Milano con l'obiettivo di evidenziare le problematiche e le possibili soluzioni per promuovere un consumo più  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti | A2A ha avviato tre tavoli di confronto con gli stakeholder di Milano con l'obiettivo di evidenziare le problematiche e le possibili soluzioni per promuovere un consumo più  |
 |   | identificati | sostenibile dell'energia. Sono stati quindi costituiti gli Advisory Board Consumi Sostenibili, che vedono la partecipazione di una diversificata serie di rappresentanti di interesse mossi da questo comune obiettivo.
 La Carta dei Consumi Sostenibili è un documento di sintesi, che riassume il percorso di ascolto e confronto intrapreso in questi mesi, e di indirizzo verso azioni comuni e concrete da realizzare insieme agli stakeholder. Gli incontri degli Advisory Board si sono svolti intorno a sei tematiche che sono state proposte e valutate come utili all'obiettivo: la ricerca di dati per un'analisi di scenario condivisa, l'indagine sulle abitudini di consumo, le soluzioni di mercato esistenti a disposizione di cittadini e imprese, la soluzione offerta dai sistemi di teleriscaldamento e la grande rivoluzione annunciata delle comunità energetiche rinnovabili.
 L'approccio che guida questo progetto è quello della Sostenibilità nelle sue diverse declinazioni: per il Gruppo A2A e gli stakeholder che partecipano agli Advisory Board è essenziale tenere insieme sostenibilità economica, ambientale e sociale del percorso verso un nuovo approccio ai consumi responsabili di energia: per consumare meno, ridurre lo sforzo economico complessivo, ottenere crescenti impatti positivi sul clima e l'ambiente e, al tempo stesso, non lasciare indietro nessuno  |
@@ -20619,7 +20390,7 @@ Indicare quali risultati ci si aspetta di raggiungere e in che senso l'azione de
 |  ECONOMICO, AMBIENTALE * | favorevoli alle azioni di mitigazione e adattamento utili al raggiungimento della neutralità climatica. |   |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio. | Promuovere iniziative di altri stakeholder, creare alleanze trasversali, realizzare sinergie  |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio. | Promuovere iniziative di altri stakeholder, creare alleanze trasversali, realizzare sinergie  |
 |  GOVERNANCE E COSTI | Eventuali stakeholder coinvolti | • ADICONSUM MILANO METROPOLI
 • AGICI
 • Associazione Italiana Riscaldamento Urbano – AIRU
@@ -20637,10 +20408,10 @@ I cobenefici sono i risultati indiretti della propria azione, effetti e cambiame
 • Osservatorio green economy - Università Bocconi  |
 | --- | --- | --- |
 |   |  Commenti sull’implementazione
-Descrivere ad esempio eventuali barriere e/o fattori abilitanti. | N/A  |
+| Descrivere ad esempio eventuali barriere e/o fattori abilitanti. | N/A  |
 |   |  Stima dell’investimento complessivo (€) | € 10.000 euro/anno per attività di supporto consulenziale per la stesura di documenti, report, analisi  |
 |   |  OPEX (operational expenditure)
-Se applicabile. | N/A  |
+| Se applicabile. | N/A  |
 |   |  Copertura dell’investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento ci si intende avvalere finanziamenti UE o incentivi nazionali o locali?
 ☐ Si
@@ -20664,19 +20435,19 @@ Progetto 4: Non è Tutto Vetro quel che Luccica
 | --- | --- | --- |
 |   |  Referente | Antonio Bisignano, Responsabile Marketing Territoriale – Amsa S.p.A.  |
 |   |  Scala dell'intervento (se si tratta di una azione che ha una componente localizzabile)
-(ad esempio, sede di associazione scuola o insieme di scuole, condominio o insieme di condomini, quartiere, città...). | Città di Milano  |
+| (ad esempio, sede di associazione scuola o insieme di scuole, condominio o insieme di condomini, quartiere, città...). | Città di Milano  |
 |   |  Localizzazione
-(se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l'azione e fornire una mappa; se disponibili shape-file riferiti al sito/progetto in oggetto). |   |
+| (se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l'azione e fornire una mappa; se disponibili shape-file riferiti al sito/progetto in oggetto). |   |
 |   |  Ambito/ambiti di azione
-(energia, mobilità, verde, economia circolare, altro...). | Economia circolare e rifiuti  |
+| (energia, mobilità, verde, economia circolare, altro...). | Economia circolare e rifiuti  |
 |   |  Tipologia di azione | ☐ Governance/policy
 ☐ Finanziario
 ☐ Gestionale
 ☑ Comportamentale (ambito culturale, educativo, attivismo, disseminazione ecc)
 ☐ Altro (specificare)  |
 |   |  Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati | Amsa ha l'obiettivo di valorizzare e migliorare la qualità della raccolta differenziata (75%) attraverso campagne di comunicazione ed interventi sui temi di: prevenzione e riduzione dei rifiuti, recupero e riutilizzo di beni e prodotti, decoro urbano.
-Per incontrare gli obiettivi sopra citati, AMSA introdurrà e potenzierà la raccolta differenziata dei cestini stradali, dei mercati coperti e di ferrovie ed aeroporti; promuoverà la raccolta selettiva delle bottiglie PET, di oli vegetali esausti, pile, RAEE, farmaci e mozziconi di sigaretta; introdurrà una comunicazione specifica  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati | Amsa ha l'obiettivo di valorizzare e migliorare la qualità della raccolta differenziata (75%) attraverso campagne di comunicazione ed interventi sui temi di: prevenzione e riduzione dei rifiuti, recupero e riutilizzo di beni e prodotti, decoro urbano. |
+| Per incontrare gli obiettivi sopra citati, AMSA introdurrà e potenzierà la raccolta differenziata dei cestini stradali, dei mercati coperti e di ferrovie ed aeroporti; promuoverà la raccolta selettiva delle bottiglie PET, di oli vegetali esausti, pile, RAEE, farmaci e mozziconi di sigaretta; introdurrà una comunicazione specifica  |
 |  | per non-vedenti e una dedicata allo spreco alimentare coinvolgendo il settore Ho.Re.Ca.
 
 Inoltre, per il terzo anno consecutivo, AMSA e Deliveroo sono scesi in campo per aiutare gli esercizi commerciali nella scelta di imballaggi riciclabili. I cittadini sono sensibilizzati a differenziare in modo corretto le confezioni delle pietanze ricevute inquadrando il QR-code presente sui nuovi sacchetti di consegna.
@@ -20697,14 +20468,14 @@ AMBIENTALE * | Risultati attesi
 Indicare quali risultati ci si aspetta di raggiungere e in che senso l'azione descritta può creare condizioni favorevoli alle azioni di mitigazione e adattamento utili al raggiungimento della neutralità climatica. | Riduzione del rifiuto indifferenziato a favore della raccolta delle altre frazioni.  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio. | Sensibilizzazione e maggiore consapevolezza dei cittadini sul tema dell'economia circolare e della sostenibilità ambientale.  |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio. | Sensibilizzazione e maggiore consapevolezza dei cittadini sul tema dell'economia circolare e della sostenibilità ambientale.  |
 |  GOVERNANCE E COSTI | Eventuali stakeholder coinvolti | Gli stakeholder coinvolti nel progetto sono cittadini, amministrazione comunale e municipi, consorzi di filiera, il settore Ho.Re.Ca., GDO, mercati, aziende produttrici di rifiuti e Deliveroo.  |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere ad esempio eventuali barriere e/o fattori abilitanti. | N/A  |
+| Descrivere ad esempio eventuali barriere e/o fattori abilitanti. | N/A  |
 |   |  Stima dell'investimento complessivo (€) | N/A  |
 |   |  OPEX (operational expenditure)
-Se applicabile. | N/A  |
+| Se applicabile. | N/A  |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento ci si intende avvalere finanziamenti UE o incentivi nazionali o locali?
 ☑ Sì
@@ -20730,7 +20501,7 @@ Quanto incidono sull'investimento complessivo?  |
 ☑ Comportamentale (ambito culturale, educativo, attivismo, disseminazione ecc)
 ☐ Altro (specificare)  |
 |   |  Descrizione dell'azione/progetto/intervento Fornire una descrizione generale del progetto relativamente agli ambiti identificati | Tramite il progetto “#Ambienteascuola”, A2A e AMSA in collaborazione con il Comune di Milano hanno promosso un percorso all'interno delle scuole milanesi per promuovere la raccolta differenziata, il riciclo, il riuso e lo spreco alimentare, dunque e l'educazione civica e ambientale.
-Dal 2019 ad oggi sono stati introdotti 5 progetti scolastici che hanno coinvolto le scuole dell'infanzia, le scuole primarie e le scuole  |
+| Dal 2019 ad oggi sono stati introdotti 5 progetti scolastici che hanno coinvolto le scuole dell'infanzia, le scuole primarie e le scuole  |
 |   | secondarie di I e II grado.
 
 I progetti hanno coinvolto 691 plessi delle scuole di Milano con la formazione di 4.836 educatori, personale ausiliario e studenti e la distribuzione di circa 20.000 contenitori per raccolta differenziata nelle aule e 884 progetti realizzati dagli alunni nei contest creativi.
@@ -20758,18 +20529,18 @@ AMBIENTALE * | Risultati attesi
 Indicare quali risultati ci si aspetta di raggiungere e in che senso l'azione descritta può creare condizioni favorevoli alle azioni di mitigazione e adattamento utili al raggiungimento della neutralità climatica. | Formazione e sensibilizzazione di docenti, personale ATA e studenti delle scuole a tematiche di sostenibilità ambientale e corretta gestione dei rifiuti.  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio. | L'attività di formazione presso le scuole è pensata anche per sensibilizzare attraverso gli studenti anche le famiglie, portando a casa le buone pratiche imparate a scuola sulla raccolta differenziata e i comportamenti sostenibili.  |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio. | L'attività di formazione presso le scuole è pensata anche per sensibilizzare attraverso gli studenti anche le famiglie, portando a casa le buone pratiche imparate a scuola sulla raccolta differenziata e i comportamenti sostenibili.  |
 |  GOVERNANCE
-E COSTI | Eventuali stakeholder coinvolti | Comune di Milano e Cittadini, Scuole di Milano, A2A, AMSA  |
+| E COSTI | Eventuali stakeholder coinvolti | Comune di Milano e Cittadini, Scuole di Milano, A2A, AMSA  |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere ad esempio eventuali barriere e/o fattori abilitanti. | N/A  |
+| Descrivere ad esempio eventuali barriere e/o fattori abilitanti. | N/A  |
 |   |  Stima dell'investimento
-complessivo (€) | € 115.000,00  |
+| complessivo (€) | € 115.000,00  |
 |   |  OPEX (operational expenditure)
-Se applicabile. | N/A  |
+| Se applicabile. | N/A  |
 |   |  Copertura dell'investimento
-Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano | Oltre che di proprie fonti di finanziamento ci si intende avvalere finanziamenti UE o incentivi nazionali o locali?  |
+| Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano | Oltre che di proprie fonti di finanziamento ci si intende avvalere finanziamenti UE o incentivi nazionali o locali?  |
 |   | utilizzati finanziamenti europei o incentivi nazionali/locali. | ☐ Si
 ☑ No
 
@@ -20796,8 +20567,8 @@ Progetto 3: Un Sacco Et(n)ico
 ☑ Comportamentale (ambito culturale, educativo, attivismo, disseminazione ecc)
 ☐ Altro (specificare)  |
 |   |  Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati | AMSA ha promosso la cultura della raccolta differenziata rivolgendosi alla ristorazione multietnica ingaggiando 200 attività presenti a Milano nei quartieri di Chinatown, NoLo e Porta Venezia.
-Nel corso degli incontri sono state fornite  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati | AMSA ha promosso la cultura della raccolta differenziata rivolgendosi alla ristorazione multietnica ingaggiando 200 attività presenti a Milano nei quartieri di Chinatown, NoLo e Porta Venezia. |
+| Nel corso degli incontri sono state fornite  |
 |   |  | informazioni sulla corretta differenziazione dei rifiuti e sulle novità introdotte dalla Direttiva europea Single Use Plastics. Sono stati distribuiti materiali informativi (tradotti in inglese, turco, cinese, spagnolo, arabo, urdu), food bag in materiale compostabile e diplomi di partecipazione per i ristoranti coinvolti.  |
 | --- | --- | --- |
 |   | Tempistiche (Indicare se è una azione prevista o già in atto, l'anno di avvio e anno di conclusione previsti. Eventuali step intermedi di realizzazione. In caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Progetto già avvitato ed in corso  |
@@ -20837,7 +20608,7 @@ Progetto 4: Non è Tutto Vetro quel che Luccica
 ✗ Comportamentale (ambito culturale, educativo, attivismo, disseminazione, ecc)
 ☐ Altro (specificare)  |
 |   |  Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati | Migliorare la raccolta differenziata del vetro in bar e ristoranti nelle zone di movida milanesi. Minimizzare gli errori di conferimento nel vetro di ceramiche e inerti.  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati | Migliorare la raccolta differenziata del vetro in bar e ristoranti nelle zone di movida milanesi. Minimizzare gli errori di conferimento nel vetro di ceramiche e inerti.  |
 |  |   |   |
 | --- | --- | --- |
 |   | Tempistiche
@@ -20851,16 +20622,16 @@ AMBIENTALE * | Risultati attesi
 Indicare quali risultati ci si aspetta di raggiungere e in che senso l'azione descritta può creare condizioni favorevoli alle azioni di mitigazione e adattamento utili al raggiungimento della neutralità climatica. | Miglioramento qualità frazione del vetro  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio. | Aumento qualità RD di Milano, coinvolgimento dei ristoratori, diffusione di buone pratiche  |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio. | Aumento qualità RD di Milano, coinvolgimento dei ristoratori, diffusione di buone pratiche  |
 |  GOVERNANCE
-E COSTI | Eventuali stakeholder coinvolti | COREVE, ANCITEL, ristoranti e bar delle zone di intervento  |
+| E COSTI | Eventuali stakeholder coinvolti | COREVE, ANCITEL, ristoranti e bar delle zone di intervento  |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere ad esempio eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere ad esempio eventuali barriere e/o fattori abilitanti. |   |
 |   |  Stima dell'investimento
-complessivo (€) | 28.900 €  |
+| complessivo (€) | 28.900 €  |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento ci si intende avvalere finanziamenti UE o incentivi nazionali o locali?
 ☑ Si ☐ No
@@ -20961,9 +20732,9 @@ Nella scheda seguente possono essere raccolti interventi e azioni puntuali coere
 | --- | --- | --- |
 |   |  Referente | Pietro Raitano  |
 |   |  Scala dell'intervento (se si tratta di una azione che ha una componente localizzabile)
-(ad esempio, sede di associazione scuola o insieme di scuole, condominio o insieme di condomini, quartiere, città...). | Scuole della città di Milano  |
+| (ad esempio, sede di associazione scuola o insieme di scuole, condominio o insieme di condomini, quartiere, città...). | Scuole della città di Milano  |
 |   |  Localizzazione
-(se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l'azione e fornire una mappa; se disponibili shape-file riferiti al sito/progetto in oggetto). | Centrale dell'Acqua di Milano, sedi delle scuole  |
+| (se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l'azione e fornire una mappa; se disponibili shape-file riferiti al sito/progetto in oggetto). | Centrale dell'Acqua di Milano, sedi delle scuole  |
 |   |  Ambito/ambiti di azione |   |
 |   | (energia, mobilità, verde, economia circolare, altro...). | Educazione ambientale/dissemination  |
 | --- | --- | --- |
@@ -20973,7 +20744,7 @@ Nella scheda seguente possono essere raccolti interventi e azioni puntuali coere
 X Comportamentale (ambito culturale, educativo, attivismo, disseminazione ecc)
 ☐ Altro (specificare)  |
 |   | Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati | Interventi rivolti agli studenti in visita alla Centrale dell'Acqua e direttamente raggiunti nelle scuole  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati | Interventi rivolti agli studenti in visita alla Centrale dell'Acqua e direttamente raggiunti nelle scuole  |
 |   | Tempistiche
 (Indicare se è una azione prevista o già in atto, l'anno di avvio e anno di conclusione previsti.
 Eventuali step intermedi di realizzazione. In caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | L'azione è già in atto e proseguirà nei prossimi anni scolastici  |
@@ -20984,14 +20755,14 @@ AMBIENTALE * | Risultati attesi
 Indicare quali risultati ci si aspetta di raggiungere e in che senso l'azione descritta può creare condizioni favorevoli alle azioni di mitigazione e adattamento utili al raggiungimento della neutralità climatica. | Raggiungimento di almeno 7mila studenti l'anno  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio. | Raggiungimento delle famiglie degli studenti  |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio. | Raggiungimento delle famiglie degli studenti  |
 |  GOVERNANCE E COSTI | Eventuali stakeholder coinvolti | Professori, presidi  |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere ad esempio eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere ad esempio eventuali barriere e/o fattori abilitanti. |   |
 |   |  Stima dell'investimento complessivo (€) | 50.000 euro l'anno  |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento ci si intende avvalere finanziamenti UE o incentivi nazionali o locali?
 ☐ Si X No
@@ -21098,18 +20869,18 @@ Nella scheda seguente possono essere raccolti interventi e azioni puntuali coere
 | --- | --- | --- |
 |   |  Referente | Dott. Gian Piero Carezzano  |
 |   |  Scala dell'intervento (se si tratta di una azione che ha una componente localizzabile)
-(ad esempio, sede di associazione scuola o insieme di scuole, condominio o insieme di condomini, quartiere, città...). |   |
+| (ad esempio, sede di associazione scuola o insieme di scuole, condominio o insieme di condomini, quartiere, città...). |   |
 |   |  Localizzazione
-(se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l'azione e fornire una mappa; se disponibili shape-file riferiti al sito/progetto in oggetto). | Via Cesari 15 - Milano  |
+| (se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l'azione e fornire una mappa; se disponibili shape-file riferiti al sito/progetto in oggetto). | Via Cesari 15 - Milano  |
 |   |  Ambito/ambiti di azione
-(energia, mobilità, verde, economia circolare, altro...). |   |
+| (energia, mobilità, verde, economia circolare, altro...). |   |
 |   |  Tipologia di azione | ☐ Governance/policy
 ☐ Finanziario
 x Gestionale
 ☐ Comportamentale (ambito culturale, educativo, attivismo, disseminazione ecc)
 ☐ Altro (specificare)  |
 |   |  Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati | Mettere a disposizione degli abitanti del territorio uno spazio agricolo da condividere, un'area verde rigogliosa e inclusiva, progettata per promuovere la coltivazione di ortaggi, erbe aromatiche e fiori, nonché per favorire la condivisione di conoscenze e l'interazione sociale tra i residenti del quartiere.  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati | Mettere a disposizione degli abitanti del territorio uno spazio agricolo da condividere, un'area verde rigogliosa e inclusiva, progettata per promuovere la coltivazione di ortaggi, erbe aromatiche e fiori, nonché per favorire la condivisione di conoscenze e l'interazione sociale tra i residenti del quartiere.  |
 |  |   |   |
 | --- | --- | --- |
 |   | Tempistiche
@@ -21126,17 +20897,17 @@ Accesso a cibo salutare a basso costo: Promuovere la produzione di cibo fresco, 
 Inclusività: Garantire l'accessibilità dell'orto a persone fragili o diversamente abili, creando sentieri accessibili e spazi adattati.  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio. |   |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio. |   |
 |  GOVERNANCE
-E COSTI | Eventuali stakeholder coinvolti | Politecnico di Milano, soci, cittadini  |
+| E COSTI | Eventuali stakeholder coinvolti | Politecnico di Milano, soci, cittadini  |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere ad esempio eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere ad esempio eventuali barriere e/o fattori abilitanti. |   |
 |   |  Stima dell'investimento complessivo (€) |   |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
-Indicare se per la realizzazione del | Oltre che di proprie fonti di finanziamento ci si  |
+| Indicare se per la realizzazione del | Oltre che di proprie fonti di finanziamento ci si  |
 |   | progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | intende avvalere finanziamenti UE o incentivi nazionali o locali?
 ☐ Si ☐ No
 
@@ -21230,11 +21001,11 @@ Nella scheda seguente possono essere raccolti interventi e azioni puntuali coere
 | --- | --- | --- |
 |   |  Referente | Dott. Gian Piero Carezzano  |
 |   |  Scala dell'intervento (se si tratta di una azione che ha una componente localizzabile)
-(ad esempio, sede di associazione scuola o insieme di scuole, condominio o insieme di condomini, quartiere, città...). | 2.700 famiglie residenti nei 26 stabili di Abitare  |
+| (ad esempio, sede di associazione scuola o insieme di scuole, condominio o insieme di condomini, quartiere, città...). | 2.700 famiglie residenti nei 26 stabili di Abitare  |
 |   |  Localizzazione
-(se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l'azione e fornire una mappa; se disponibili shape-file riferiti al sito/progetto in oggetto). | Zona nord di Milano – Affori, Dergano, Niguarda  |
+| (se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l'azione e fornire una mappa; se disponibili shape-file riferiti al sito/progetto in oggetto). | Zona nord di Milano – Affori, Dergano, Niguarda  |
 |   |  Ambito/ambiti di azione
-(energia, mobilità, verde, economia circolare, altro...). | Coinvolgimento della popolazione residente  |
+| (energia, mobilità, verde, economia circolare, altro...). | Coinvolgimento della popolazione residente  |
 |   |  Tipologia di azione | ☐ Governance/policy
 ☐ Finanziario
 ☐ Gestionale
@@ -21260,14 +21031,14 @@ Educazione Ambientale e Domestica
 Accesso a cibo salutare a km 0  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio. |   |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio. |   |
 |  GOVERNANCE E COSTI | Eventuali stakeholder coinvolti | Soci, cittadini, associazioni locali  |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere ad esempio eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere ad esempio eventuali barriere e/o fattori abilitanti. |   |
 |   |  Stima dell'investimento complessivo (€) | 20.000 €  |
 |   |  OPEX (operational expenditure)
-Se applicabile. | 2.000€  |
+| Se applicabile. | 2.000€  |
 |   |  Copertura dell'investimento | Oltre che di proprie fonti di finanziamento ci si  |
 |   | Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | intende avvalere finanziamenti UE o incentivi nazionali o locali?
 ☐ Si ☐ No
@@ -21341,11 +21112,11 @@ Per le due nuove acquisizioni, Casa Crespi e Casa Livio, l'apertura al pubblico 
 | --- | --- | --- |
 |   |  Referente |   |
 |   |  Categoria di progetto | ☐ progetto urbano
-X intervento su propri asset  |
+| X intervento su propri asset  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro | Edificio e quartiere  |
+| Edificio, quartiere, altro | Edificio e quartiere  |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Alleghiamo mappa  |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). | Alleghiamo mappa  |
 |   |  Ambiti interessati dal progetto | X Sistemi energetici
 ☐ Involucro edilizio (cappotto, coperture, serramenti)
 X Produzione da fonti rinnovabili (fotovoltaico, etc.)
@@ -21359,8 +21130,6 @@ X Produzione da fonti rinnovabili (fotovoltaico, etc.)
 ☐ Comportamentale
 ☐ Altro (specificare)  |
 |   |  Descrizione dell'azione/progetto/intervento | Il progetto prevede di esplorare la fattibilità della creazione di una comunità energetica rinnovabile (CER) che coinvolga alcune realtà del quartiere.  |
-3
-
 |   | Per primo il FAI intende esplorare la possibilità di inserire sulla copertura della sua sede, la Cavallerizza (Via Carlo Foldi, 2) un impianto fotovoltaico diventando uno dei produttori di energia della CER – la falda esposta a sud del tetto su cui si potrebbe installare il fotovoltaico è ampia circa 600 mq. Coinvolgendo altri attori presenti nel quartiere le superfici dei tetti utilizzabili crescerebbe significativamente, sono infatti limitrofi alla Cavallerizza diversi beni di proprietà del Comune di Milano e della Curia: - Al lato dell'edificio lungo la via Bezzecca sono ubicate le “Scuole infanzia Bezzecca 16”; sempre in via Bezzecca al 20 ha sede il Comando Zona 4 della Polizia locale e al civico 24 ha sede un C.R.A.L. del Comune di Milano. - Intorno alla Cavallerizza ci sono diversi edifici di edilizia pubblica, sono di MM lo stabile di Via Bezzecca 3 e lo stabile di Piazza Santa Maria del Suffragio 2/Corso XXII Marzo. - Sempre di proprietà del Comune di Milano è il Mercato Comunale al centro della Piazza di Santa Maria del Suffragio. - Sulla Piazza, inoltre, al civico 23 di Corso XXII Marzo si trova la Parrocchia di S. Maria del Suffragio, con l'annessa scuola (scuola dell'infanzia, elementari e medie). Sull'area insistono tre cabine elettriche primarie: AC012E0009 (via Giovanni Cena/Via Cervignano) e poi AC012E00018 (Piazza Tricolore/Corso Monforte) e AC012E00019 (Crocetta). Le fasi del progetto prevedono: - Esplorazione dei diversi soggetti potenzialmente interessati alla creazione della comunità energetica (CER), tra cui il Comune di Milano (scuole, Polizia locale, Circoli CRAL, MM per l'edilizia pubblica); la Braidense; Parrocchia di Santa Maria del Suffragio e Curia ... - Individuazione le aree dove è possibile realizzare impianti alimentati da fonti rinnovabili - esplorazione di partner scientifici (Politecnico di Milano, FLA) - esplorazione di uno sponsor tecnico per il FAI - studio di fattibilità per la comunità energetica: individuare i potenziali produttori di energia e auto-  |
 | --- | --- |
 |   |  | consumatori e i potenziali beneficiari (consumatori di energia elettrica, soggetti "vulnerabili" per esempio) ➢ avviare la consulenza per la costituzione legale del CER ➢ studio di fattibilità dell'impianto fotovoltaico sulle Cavallerizza da parte del FAI e dello sponsor tecnico ➢ la condivisione del progetto con i soggetti coinvolti ➢ ricerca fondi per la realizzazione del progetto completo sull'edificio della Cavallerizza ➢ progetto di comunicazione e promozione della comunità energetica sul territorio  |
@@ -21370,10 +21139,8 @@ X Produzione da fonti rinnovabili (fotovoltaico, etc.)
 | --- | --- | --- |
 |   |  Acquisto di energia elettrica certificata da fonti rinnovabili MWh/anno (valore atteso) | - Già in essere, la Cavallerizza come tutti i Beni FAI acquista da Edison energia elettrica certificata da fonti rinnovabili.  |
 |   |  Variazione dei consumi energetici per vettore | -  |
-5
-
 |   | Riduzione delle emissioni di gas serra² (kg CO2eq/anno)
-(Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) | AMBITO DI AZIONE | Descrizione | Emissioni a fine realizzazione del progetto | Emissioni (Baseline) | Delta (emissioni evitate)  |
+| (Se possibile considerare i fattori di emissioni indicati nella tabella di seguito) | AMBITO DI AZIONE | Descrizione | Emissioni a fine realizzazione del progetto | Emissioni (Baseline) | Delta (emissioni evitate)  |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |   |  SISTEMA ENERGETICO |  |  |  |   |
 |   |   |  EDIFICI / AMBIENTE COSTRUITO (es, Materiali/ tecniche costruttive |  |  |  |   |
@@ -21389,8 +21156,6 @@ IMPATTI | Risultati attesi | ☐ minori quantitativi di rifiuti per tipologia: k
 ☐ superficie permeabile a verde aggiuntiva: mq
 ☐ altro: indicare  |
 | --- | --- | --- |
-6
-
 |  Cobenefici | Riduzione povertà energetica  |
 | --- | --- |
 |  3. GOVERNANCE E COSTI | Eventuali stakeholder coinvolti | • Comune di Milano (Settore Scuola, Polizia locale, Circoli CRAL)
@@ -21437,7 +21202,7 @@ Difficile da stabilire in questo momento
 | --- | --- | --- |
 |   |  Referente |   |
 |   |  Categoria di progetto | ☐ progetto urbano
-☑ intervento su propri asset  |
+| ☑ intervento su propri asset  |
 |   |  Scala dell'intervento | Città metropolitana e territorio regionale  |
 |   |  Localizzazione |   |
 |   |  Ambiti interessati dal progetto | ☐ Sistemi energetici
@@ -21455,7 +21220,7 @@ Difficile da stabilire in questo momento
 8
 
 |   | Descrizione
-dell'azione/progetto/intervento | La campagna #FAIperilclima, cosa stiamo facendo  |
+| dell'azione/progetto/intervento | La campagna #FAIperilclima, cosa stiamo facendo  |
 | --- | --- | --- |
 |   |  | Il FAI da tre anni ha avviato una campagna di sensibilizzazione e conoscenza a scala nazionale dedicata al tema del cambiamento climatico #FAIperilclima. Tra le attività della campagna sono previste delle visite guidate nei Beni del FAI in cui grazie alla guida di relatori esperti (climatologi, pedologici, botanici, agronomi, geologi ecc) vengono fatti “toccare con mano” gli effetti del cambiamento climatico nel Bene o sul suo territorio di riferimento e illustrate eventuali azioni di adattamento in essere o necessarie per la messa in sicurezza dei luoghi e del patrimonio paesaggistico e culturale. A Milano queste “visite speciali” sono state condotte sia a Villa Necchi Campiglio che a Palazzina Appiani. Nella scorsa edizione dell’autunno 2023 a Villa Necchi Elena Lucchi e Francesca Turati hanno parlato di Efficienza energetica e sostenibilità del patrimonio storico, mentre a Palazzina Appiani il tema è stato: Un parco in città tra adattamento al cambiamento climatico e salute.  |
 |   |  | Oltre a questi appuntamenti da due anni il FAI partecipa alla Green Week. Nel 2022 in seguito alla inaugurazione del video-racconto Un ambiente per l’ambiente (da allora sempre visibile gratuitamente a tutti nei giorni e negli orari di apertura della Villa) abbiamo organizzato un ciclo di incontri dedicati alla città e ai vari temi ambientali – abbiamo con l’occasione presentato il Piano Aria Clima e parlato di mitigazione anche attraverso nuove grande opere idrauliche come la riapertura dei Navigli. Nella edizione del 2023 invece è stata organizzata una tavola rotonda con la collaborazione del FAI Giovani dell’Oltrepò Pavese e dell’Ordine dei Dottori Agronomi e Forestali, dedicata al Giardino del futuro in cui sono stati presentate le esperienze milanesi di rain garden e dry garden.  |
@@ -21497,8 +21262,6 @@ Qualora l’azione incida in ambito non energetico indicare quali risultati ci s
 X altro:
 Contrasto all’effetto backlash rispetto al tema del cambiamento climatico  |
 | --- | --- | --- |
-1
-
 |   |  | Partecipazione del pubblico sia sul territorio che sugli strumenti di comunicazione digitali
 Coinvolgimento dei cittadini
 Diffusione di conoscenza  |
@@ -21652,16 +21415,16 @@ Fondazione Cariplo
 | --- | --- | --- |
 |   |  Referente | Elena Jachia  |
 |   |  Scala dell'intervento (se si tratta di una azione che ha una componente localizzabile)
-(ad esempio, sede di associazione scuola o insieme di scuole, condominio o insieme di condomini, quartiere, città...). | Città metropolitana di Milano  |
+| (ad esempio, sede di associazione scuola o insieme di scuole, condominio o insieme di condomini, quartiere, città...). | Città metropolitana di Milano  |
 |   |  Localizzazione
-(se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l'azione e fornire una mappa; se disponibili shape-file riferiti al sito/progetto in oggetto). | 140 scuole superiori della CMM (si allega elenco)  |
+| (se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l'azione e fornire una mappa; se disponibili shape-file riferiti al sito/progetto in oggetto). | 140 scuole superiori della CMM (si allega elenco)  |
 |   |  Ambito/ambiti di azione
-(energia, mobilità, verde, economia circolare, altro...). | energia  |
+| (energia, mobilità, verde, economia circolare, altro...). | energia  |
 |   |  Tipologia di azione | X Governance/policy
 X Finanziario
 X Gestionale  |
 |   |  | ☐ Comportamentale (ambito culturale, educativo, attivismo, disseminazione ecc)
-☐ Altro (specificare)  |
+| ☐ Altro (specificare)  |
 | --- | --- | --- |
 |   | **Descrizione dell'azione/progetto/intervento**
 Fornire una descrizione generale del progetto relativamente agli ambiti identificati | Con il progetto Territori Virtuosi è stato promosso un modello virtuoso dell'efficienza energetica, che permette di finanziare gli interventi di efficientamento energetico degli edifici pubblici con i risparmi economici ottenuti dalla riduzione dei consumi energetici, basandosi principalmente su:
@@ -21687,16 +21450,16 @@ Investimento energetico da parte di soggetti privati di circa 62 M€
 Intervento a costo 0 da parte dell'ente pubblico  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio. | Miglioramento del comfort per i frequentatori degli edifici scolastici  |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio. | Miglioramento del comfort per i frequentatori degli edifici scolastici  |
 |  GOVERNANCE
-E COSTI | Eventuali stakeholder coinvolti | Regione Lombardia  |
+| E COSTI | Eventuali stakeholder coinvolti | Regione Lombardia  |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere ad esempio eventuali barriere e/o fattori abilitanti. | Il processo di gara pubblico fortemente innovativo perché faceva leva solamente sul risparmio energetico ha richiesto molto tempo per essere messo a punto dalla CMM. L'attività di Assistenza Tecnica è stata avviata nel 2017 ma la gara è stata pubblicata solo nel 2019  |
+| Descrivere ad esempio eventuali barriere e/o fattori abilitanti. | Il processo di gara pubblico fortemente innovativo perché faceva leva solamente sul risparmio energetico ha richiesto molto tempo per essere messo a punto dalla CMM. L'attività di Assistenza Tecnica è stata avviata nel 2017 ma la gara è stata pubblicata solo nel 2019  |
 |   |  Stima dell'investimento complessivo (€) | 62 M€ da parte di privati
-,5 M€ da parte di Fondazione Cariplo (valore dell'Assistenza Tecnica fornita)  |
+| ,5 M€ da parte di Fondazione Cariplo (valore dell'Assistenza Tecnica fornita)  |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento ci si intende avvalere finanziamenti UE o incentivi nazionali o locali?
 ☑ Si ☐ No
@@ -21711,24 +21474,23 @@ Quanto incidono sull'investimento complessivo?  |
 | --- | --- | --- |
 |   |  Referente | Elena Jachia  |
 |   |  Scala dell'intervento (se si tratta di una azione che ha una componente localizzabile)
-(ad esempio, sede di associazione scuola o insieme di scuole, condominio o insieme di condomini, quartiere, città...). | Città metropolitana di Milano  |
+| (ad esempio, sede di associazione scuola o insieme di scuole, condominio o insieme di condomini, quartiere, città...). | Città metropolitana di Milano  |
 |   |  Localizzazione
-(se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l'azione e fornire una mappa; se disponibili shape-file riferiti al sito/progetto in oggetto). |   |
+| (se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l'azione e fornire una mappa; se disponibili shape-file riferiti al sito/progetto in oggetto). |   |
 |   |  Ambito/ambiti di azione
-(energia, mobilità, verde, economia circolare, altro...). | energia  |
+| (energia, mobilità, verde, economia circolare, altro...). | energia  |
 |   |  Tipologia di azione | X Governance/policy
 ☐ Finanziario
 X Gestionale
 X Comportamentale (ambito culturale, educativo, attivismo, disseminazione ecc)
 ☐ Altro (specificare)  |
 |   |  Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati | ClimaMi ha mirato a intercettare e supportare i professionisti che nell'ambito urbano milanese svolgono attività di progettazione e gestione del territorio, dal singolo edifico all'intera area cittadina, con particolare riferimento all'edificato esistente.
-
-Il progetto, svoltosi dal 2019 al 2022, ha implementato e fornito una base operativa, solida, organizzata e aggiornata di informazioni e dati climatici necessari come punto di riferimento concreto e imprescindibile per l'adattamento al cambiamento. climatico locale in ambito urbano.  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati | ClimaMi ha mirato a intercettare e supportare i professionisti che nell'ambito urbano milanese svolgono attività di progettazione e gestione del territorio, dal singolo edifico all'intera area cittadina, con particolare riferimento all'edificato esistente. |
+| Il progetto, svoltosi dal 2019 al 2022, ha implementato e fornito una base operativa, solida, organizzata e aggiornata di informazioni e dati climatici necessari come punto di riferimento concreto e imprescindibile per l'adattamento al cambiamento. climatico locale in ambito urbano.  |
 |   |  Tempistiche
-(Indicare se è una azione prevista o già | 2019-2022  |
+| (Indicare se è una azione prevista o già | 2019-2022  |
 |   | in atto, l'anno di avvio e anno di conclusione previsti.
-Eventuali step intermedi di realizzazione. In caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). |   |
+| Eventuali step intermedi di realizzazione. In caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). |   |
 | --- | --- | --- |
 |  VALUTAZIONE
 DELL'IMPATTO
@@ -21740,12 +21502,12 @@ Indicare quali risultati ci si aspetta di raggiungere e in che senso l'azione de
 Altrettanto fondamentale è stata l'attività continua di capacity building indirizzata ai professionisti degli Ordini, ai tecnici e funzionari della pubblica amministrazione.  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio. |   |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio. |   |
 |  GOVERNANCE
-E COSTI | Eventuali stakeholder coinvolti | Fondazione Osservatorio Meteorologico Milano Duomo, nel suo ruolo di capofila, ha coinvolto, fin dalle attività iniziali di ideazione e progettazione, altre 3 prestigiose istituzioni milanesi, che sono diventate partner del progetto: Fondazione Ordine degli Architetti, Pianificatori, Paesaggisti e Conservatori della provincia di Milano, Fondazione Ordine degli Ingegneri della provincia di Milano e Fondazione Lombardia per l'Ambiente.  |
+| E COSTI | Eventuali stakeholder coinvolti | Fondazione Osservatorio Meteorologico Milano Duomo, nel suo ruolo di capofila, ha coinvolto, fin dalle attività iniziali di ideazione e progettazione, altre 3 prestigiose istituzioni milanesi, che sono diventate partner del progetto: Fondazione Ordine degli Architetti, Pianificatori, Paesaggisti e Conservatori della provincia di Milano, Fondazione Ordine degli Ingegneri della provincia di Milano e Fondazione Lombardia per l'Ambiente.  |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere ad esempio eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere ad esempio eventuali barriere e/o fattori abilitanti. |   |
 |   | Stima dell'investimento complessivo (€) | 480.000 €, di cui 340.000 € di contributi da parte di Fondazione Cariplo  |
 | --- | --- | --- |
 |   | OPEX (operational expenditure) Se applicabile. |   |
@@ -21765,7 +21527,7 @@ Fondazione Social Venture Giordano Dell'Amore
 | --- | --- | --- |
 |   |  Referente | Marco Gerevini  |
 |   |  Scala dell'intervento (se si tratta di una azione che ha una componente localizzabile)
-(ad esempio, sede di associazione scuola o insieme di scuole, condominio o insieme di condomini, quartiere, città...). | Città metropolitana di Milano  |
+| (ad esempio, sede di associazione scuola o insieme di scuole, condominio o insieme di condomini, quartiere, città...). | Città metropolitana di Milano  |
 |   |  Localizzazione
 (se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l'azione e fornire una mappa; se disponibili shape-file riferiti al | Via Pergolesi 21, Milano
 Piazza Cavour 7, Milano
@@ -21773,14 +21535,14 @@ Via dell'Orso 12, Milano (apertura prevista inizi marzo 2024)  |
 |   | sito/progetto in oggetto). |   |
 | --- | --- | --- |
 |   | Ambito/ambiti di azione
-(energia, mobilità, verde, economia circolare, altro...). | Economia circolare, consumo e produzione responsabile (SDG 12)  |
+| (energia, mobilità, verde, economia circolare, altro...). | Economia circolare, consumo e produzione responsabile (SDG 12)  |
 |   | Tipologia di azione | ☐ Governance/policy
 ☑ Finanziario
 ☑ Gestionale
 ☐ Comportamentale (ambito culturale, educativo, attivismo, disseminazione ecc)
 ☐ Altro (specificare)  |
 |   |  Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati | Il progetto si propone di restituire dignità ai prodotti classificati come “scarto” – poiché esteticamente imperfetti ma “belli dentro” – promuovendo una filiera distributiva alternativa a quella tradizionale, più etica e sostenibile. In concreto, acquista direttamente dagli agricoltori quei prodotti orto-frutticoli di ottima qualità, che solitamente non vengono accettati dai consorzi/cooperative e dalla grande distribuzione. Una parte viene venduta fresca e sfusa nel negozio di via Pergolesi o utilizzata come materia prima per i punti di somministrazione e un'altra parte viene trasformata in succhi, confetture ed essiccati grazie al lavoro di due cooperative sociali dedite all'inserimento lavorativo e alla formazione di persone fragili e con disabilità.  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati | Il progetto si propone di restituire dignità ai prodotti classificati come “scarto” – poiché esteticamente imperfetti ma “belli dentro” – promuovendo una filiera distributiva alternativa a quella tradizionale, più etica e sostenibile. In concreto, acquista direttamente dagli agricoltori quei prodotti orto-frutticoli di ottima qualità, che solitamente non vengono accettati dai consorzi/cooperative e dalla grande distribuzione. Una parte viene venduta fresca e sfusa nel negozio di via Pergolesi o utilizzata come materia prima per i punti di somministrazione e un'altra parte viene trasformata in succhi, confetture ed essiccati grazie al lavoro di due cooperative sociali dedite all'inserimento lavorativo e alla formazione di persone fragili e con disabilità.  |
 |   | Tempistiche
 (Indicare se è una azione prevista o già in atto, l'anno di avvio e anno di conclusione previsti.
 Eventuali step intermedi di realizzazione. In caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | 2020 –  |
@@ -21796,10 +21558,10 @@ Indicare quali risultati ci si aspetta di raggiungere e in che senso l'azione de
 |  GOVERNANCE E COSTI | Eventuali stakeholder coinvolti | L'Officina" Coop. Sociale di Codogno e La Fraternità Coop Sociale di Rimini  |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere ad esempio eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere ad esempio eventuali barriere e/o fattori abilitanti. |   |
 |   |  Stima dell'investimento complessivo (€) | 410.000 € di investimento da parte di Fondazione Social Venture Giordano Dell'Amore  |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento ci si intende avvalere finanziamenti UE o incentivi nazionali o locali?
 ☐ Si X No
@@ -21817,16 +21579,16 @@ Quanto incidono sull'investimento complessivo?  |
 |   | (ad esempio, sede di associazione scuola o insieme di scuole, condominio o insieme di condomini, quartiere, città...). |   |
 | --- | --- | --- |
 |   | **Localizzazione**
-(se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l'azione e fornire una mappa; se disponibili shape-file riferiti al sito/progetto in oggetto). | ---  |
+| (se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l'azione e fornire una mappa; se disponibili shape-file riferiti al sito/progetto in oggetto). | ---  |
 |   | **Ambito/ambiti di azione**
-(energia, mobilità, verde, economia circolare, altro...). | Energia  |
+| (energia, mobilità, verde, economia circolare, altro...). | Energia  |
 |   | **Tipologia di azione** | X Governance/policy
 X Finanziario
 X Gestionale
 ☐ Comportamentale (ambito culturale, educativo, attivismo, disseminazione ecc)
 ☐ Altro (specificare)  |
 |   | **Descrizione dell'azione/progetto/intervento**
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati | Piattaforma di crowdinvesting dedicata alla transizione energetica e alla sostenibilità. Tramite la piattaforma è possibile finanziare: PMI di settore, al fine di supportarne la crescita e il processo di decarbonizzazione, lo sviluppo, la costruzione e l'acquisizione di progetti infrastrutturali (impianti di generazione da fonti rinnovabili, interventi di efficientamento energetico etc.); startup di settore, a supporto della transizione energetica, a partire dalla fase seed/early stage e interventi di riqualificazione per PA.  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati | Piattaforma di crowdinvesting dedicata alla transizione energetica e alla sostenibilità. Tramite la piattaforma è possibile finanziare: PMI di settore, al fine di supportarne la crescita e il processo di decarbonizzazione, lo sviluppo, la costruzione e l'acquisizione di progetti infrastrutturali (impianti di generazione da fonti rinnovabili, interventi di efficientamento energetico etc.); startup di settore, a supporto della transizione energetica, a partire dalla fase seed/early stage e interventi di riqualificazione per PA.  |
 |   | **Tempistiche**
 (Indicare se è una azione prevista o già in atto, l'anno di avvio e anno di conclusione previsti.
 Eventuali step intermedi di realizzazione. In caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | 2021-  |
@@ -21838,16 +21600,16 @@ AMBIENTALE * | Risultati attesi
 Indicare quali risultati ci si aspetta di raggiungere e in che senso l'azione descritta può creare condizioni favorevoli alle azioni di mitigazione e adattamento utili al raggiungimento della neutralità climatica. | Contribuire alla riduzione delle emissioni di CO₂ e dell'impatto antropico sugli ecosistemi, in proporzione alla crescita dei progetti finanziati. Favorisce l'accesso e la democratizzazione degli investimenti nel settore grazie al crescente coinvolgimento di investitori crowd.  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio. |   |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio. |   |
 |  GOVERNANCE
-E COSTI | Eventuali stakeholder coinvolti | Banca Etica  |
+| E COSTI | Eventuali stakeholder coinvolti | Banca Etica  |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere ad esempio eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere ad esempio eventuali barriere e/o fattori abilitanti. |   |
 |   |  Stima dell'investimento
-complessivo (€) | 200.000 € di investimento da parte di Fondazione Social Venture Giordano Dell'Amore  |
+| complessivo (€) | 200.000 € di investimento da parte di Fondazione Social Venture Giordano Dell'Amore  |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento ci si intende avvalere finanziamenti UE o incentivi nazionali o locali?
 ☐ Si X No
@@ -21859,24 +21621,24 @@ Quali?
 
 Quanto incidono sull'investimento complessivo?  |
 |  CONTESTO e
-DESCRIZIONE | Titolo progetto/AZIONE | Agrorobotica  |
+| DESCRIZIONE | Titolo progetto/AZIONE | Agrorobotica  |
 | --- | --- | --- |
 |   |  Referente | Marco Gerevini  |
 |   |  Scala dell'intervento (se si tratta di una azione che ha una | ---  |
 |   | componente localizzabile)
-(ad esempio, sede di associazione scuola o insieme di scuole, condominio o insieme di condomini, quartiere, città...). |   |
+| (ad esempio, sede di associazione scuola o insieme di scuole, condominio o insieme di condomini, quartiere, città...). |   |
 | --- | --- | --- |
 |   | Localizzazione
-(se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l'azione e fornire una mappa; se disponibili shape-file riferiti al sito/progetto in oggetto). | ---  |
+| (se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l'azione e fornire una mappa; se disponibili shape-file riferiti al sito/progetto in oggetto). | ---  |
 |   | Ambito/ambiti di azione
-(energia, mobilità, verde, economia circolare, altro...). | Agricoltura  |
+| (energia, mobilità, verde, economia circolare, altro...). | Agricoltura  |
 |   | Tipologia di azione | X Governance/policy
 X Finanziario
 X Gestionale
 ☐ Comportamentale (ambito culturale, educativo, attivismo, disseminazione ecc)
 ☐ Altro (specificare)  |
 |   | Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati | È una start-up innovativa che ha brevettato SpyFly: un sistema di monitoraggio che, attraverso algoritmi evoluti di apprendimento, è in grado di riconoscere tempestivamente gli insetti dannosi per le colture, a beneficio della sostenibilità ambientale e della filiera agro-alimentare. Il prodotto consiste in una trappola robotica a richiami sessuali in grado di attrarre, catturare e riconoscere, tramite sofisticati algoritmi di Intelligenza Artificiale, i parassiti dannosi per le colture. Grazie alla tecnologia sviluppata e connessa alla rete, l'agricoltore riceve, sul proprio smartphone e PC, i dati rilevati e gli alert in caso di presenza di insetti nocivi, in modo da poter intervenire sul campo con una soluzione mirata, solo se necessario  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati | È una start-up innovativa che ha brevettato SpyFly: un sistema di monitoraggio che, attraverso algoritmi evoluti di apprendimento, è in grado di riconoscere tempestivamente gli insetti dannosi per le colture, a beneficio della sostenibilità ambientale e della filiera agro-alimentare. Il prodotto consiste in una trappola robotica a richiami sessuali in grado di attrarre, catturare e riconoscere, tramite sofisticati algoritmi di Intelligenza Artificiale, i parassiti dannosi per le colture. Grazie alla tecnologia sviluppata e connessa alla rete, l'agricoltore riceve, sul proprio smartphone e PC, i dati rilevati e gli alert in caso di presenza di insetti nocivi, in modo da poter intervenire sul campo con una soluzione mirata, solo se necessario  |
 |   | Tempistiche
 (Indicare se è una azione prevista o già in atto, l'anno di avvio e anno di conclusione previsti.
 Eventuali step intermedi di realizzazione. In caso di progetti già realizzati che proiettano effetti positivi | 2020-  |
@@ -21904,16 +21666,16 @@ della propria azione, effetti e
 cambiamenti realizzati sulla vita dei
 soggetti coinvolti e sul territorio. |   |
 |  GOVERNANCE
-E COSTI | Eventuali stakeholder coinvolti |   |
+| E COSTI | Eventuali stakeholder coinvolti |   |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
 Descrivere ad esempio eventuali
 barriere e/o fattori abilitanti. |   |
 |   |  Stima dell'investimento
-complessivo (€) | 252.000 € di investimento da parte di Fondazione
-Social Venture Giordano Dell'Amore  |
+| complessivo (€) | 252.000 € di investimento da parte di Fondazione |
+| Social Venture Giordano Dell'Amore  |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del
 progetto si prevede che, oltre a fonti
@@ -21935,35 +21697,35 @@ Quanto incidono sull'investimento complessivo?  |
 | --- | --- | --- |
 |   |  Referente | Marco Gerevini  |
 |   | Scala dell'intervento (se si tratta di una azione che ha una componente localizzabile)
-(ad esempio, sede di associazione scuola o insieme di scuole, condominio o insieme di condomini, quartiere, città...). | ---  |
+| (ad esempio, sede di associazione scuola o insieme di scuole, condominio o insieme di condomini, quartiere, città...). | ---  |
 |   |  Localizzazione
-(se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l'azione e fornire una mappa; se disponibili shape-file riferiti al sito/progetto in oggetto). | ---  |
+| (se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l'azione e fornire una mappa; se disponibili shape-file riferiti al sito/progetto in oggetto). | ---  |
 |   |  Ambito/ambiti di azione
-(energia, mobilità, verde, economia circolare, altro...). | Mobilità  |
+| (energia, mobilità, verde, economia circolare, altro...). | Mobilità  |
 |   |  Tipologia di azione | ☑ Governance/policy
 ☑ Finanziario
 ☑ Gestionale
 ☐ Comportamentale (ambito culturale, educativo, attivismo, disseminazione ecc)
 ☐ Altro (specificare)  |
 |   |  Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati | Innovare la filiera produttiva delle piste ciclabili nel solco dell'economia circolare, attraverso la realizzazione di percorsi ecosostenibili, modulari e di facile installazione, prodotti in stabilimento con materie plastiche riciclate. La struttura delle piste ciclabili mOOve prevede l'utilizzo di moduli standard prefabbricati e amovibili: questo aspetto riduce significativamente i tempi di installazione e consente di rimuovere e riposizionare il sistema altrove, in qualunque momento, in quanto progettato per essere facilmente installato sul substrato esistente.  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati | Innovare la filiera produttiva delle piste ciclabili nel solco dell'economia circolare, attraverso la realizzazione di percorsi ecosostenibili, modulari e di facile installazione, prodotti in stabilimento con materie plastiche riciclate. La struttura delle piste ciclabili mOOve prevede l'utilizzo di moduli standard prefabbricati e amovibili: questo aspetto riduce significativamente i tempi di installazione e consente di rimuovere e riposizionare il sistema altrove, in qualunque momento, in quanto progettato per essere facilmente installato sul substrato esistente.  |
 |   |  Tempistiche
 (Indicare se è una azione prevista o già in atto, l'anno di avvio e anno di conclusione previsti.
 Eventuali step intermedi di realizzazione. In caso di progetti già | 2020-  |
 realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline).
 
 |  VALUTAZIONE DELL'IMPATTO SOCIALE, ECONOMICO, AMBIENTALE * | Risultati attesi
-Indicare quali risultati ci si aspetta di raggiungere e in che senso l'azione descritta può creare condizioni favorevoli alle azioni di mitigazione e adattamento utili al raggiungimento della neutralità climatica. | Supporto continuo per l'economia circolare che consente la riduzione delle emissioni di CO2 generate dall'attuale mobilità urbana, grazie all'aumento della mobilità leggera.  |
+| Indicare quali risultati ci si aspetta di raggiungere e in che senso l'azione descritta può creare condizioni favorevoli alle azioni di mitigazione e adattamento utili al raggiungimento della neutralità climatica. | Supporto continuo per l'economia circolare che consente la riduzione delle emissioni di CO2 generate dall'attuale mobilità urbana, grazie all'aumento della mobilità leggera.  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio. |   |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio. |   |
 |  GOVERNANCE E COSTI | Eventuali stakeholder coinvolti |   |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere ad esempio eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere ad esempio eventuali barriere e/o fattori abilitanti. |   |
 |   |  Stima dell'investimento complessivo (€) | 50.000 € di investimento da parte di Fondazione Social Venture Giordano Dell'Amore  |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento ci si intende avvalere finanziamenti UE o incentivi nazionali o locali?
 ☐ Si X No
@@ -21976,35 +21738,35 @@ Quanto incidono sull'investimento complessivo?  |
 | --- | --- | --- |
 |   |  Referente | Marco Gerevini  |
 |   | Scala dell'intervento (se si tratta di una azione che ha una componente localizzabile)
-(ad esempio, sede di associazione scuola o insieme di scuole, condominio o insieme di condomini, quartiere, città...). | Città metropolitana di Milano  |
+| (ad esempio, sede di associazione scuola o insieme di scuole, condominio o insieme di condomini, quartiere, città...). | Città metropolitana di Milano  |
 |   |  Localizzazione
-(se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l'azione e fornire una mappa; se disponibili shape-file riferiti al sito/progetto in oggetto). | ---  |
+| (se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l'azione e fornire una mappa; se disponibili shape-file riferiti al sito/progetto in oggetto). | ---  |
 |   |  Ambito/ambiti di azione
-(energia, mobilità, verde, economia circolare, altro...). | Economia circolare  |
+| (energia, mobilità, verde, economia circolare, altro...). | Economia circolare  |
 |   |  Tipologia di azione | ☑ Governance/policy
 ☑ Finanziario
 ☑ Gestionale
 ☐ Comportamentale (ambito culturale, educativo, attivismo, disseminazione ecc)
 ☐ Altro (specificare)  |
 |   |  Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati | La Cooperativa Vesti Solidale ha come mission l'inserimento lavorativo di persone con diverse tipologie di svantaggio (disabilità fisica e psichica, alcooldipendenza, tossicodipendenza e carcerati) e in condizioni di fragilità economica. Opera nell'ambito dell'economia circolare, della tutela ambientale e della diffusione di modelli di consumo ecosostenibili in diverse attività tra cui: un progetto dedicato alla gestione dell'intera filiera di recupero del tessile; servizi di raccolta rifiuti rivolti alle aziende e finalizzati al recupero e riutilizzo.  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati | La Cooperativa Vesti Solidale ha come mission l'inserimento lavorativo di persone con diverse tipologie di svantaggio (disabilità fisica e psichica, alcooldipendenza, tossicodipendenza e carcerati) e in condizioni di fragilità economica. Opera nell'ambito dell'economia circolare, della tutela ambientale e della diffusione di modelli di consumo ecosostenibili in diverse attività tra cui: un progetto dedicato alla gestione dell'intera filiera di recupero del tessile; servizi di raccolta rifiuti rivolti alle aziende e finalizzati al recupero e riutilizzo.  |
 |   |  Tempistiche
 (Indicare se è una azione prevista o già in atto, l'anno di avvio e anno di conclusione previsti.
 Eventuali step intermedi di realizzazione. In caso di progetti già | 2022-  |
 realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline).
 
 |  VALUTAZIONE DELL'IMPATTO SOCIALE, ECONOMICO, AMBIENTALE * | Risultati attesi
-Indicare quali risultati ci si aspetta di raggiungere e in che senso l'azione descritta può creare condizioni favorevoli alle azioni di mitigazione e adattamento utili al raggiungimento della neutralità climatica. | Favorire la tutela ambientale la diffusione di modelli di consumo ecosostenibili.  |
+| Indicare quali risultati ci si aspetta di raggiungere e in che senso l'azione descritta può creare condizioni favorevoli alle azioni di mitigazione e adattamento utili al raggiungimento della neutralità climatica. | Favorire la tutela ambientale la diffusione di modelli di consumo ecosostenibili.  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio. |   |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio. |   |
 |  GOVERNANCE E COSTI | Eventuali stakeholder coinvolti |   |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere ad esempio eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere ad esempio eventuali barriere e/o fattori abilitanti. |   |
 |   |  Stima dell'investimento complessivo (€) | 300.000 € di investimento da parte di Fondazione Social Venture Giordano Dell'Amore  |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento ci si intende avvalere finanziamenti UE o incentivi nazionali o locali?
 ☐ Si X No
@@ -22129,16 +21891,16 @@ Fondazione Cariplo
 | --- | --- | --- |
 |   |  Referente | Elena Jachia  |
 |   |  Scala dell'intervento (se si tratta di una azione che ha una componente localizzabile)
-(ad esempio, sede di associazione scuola o insieme di scuole, condominio o insieme di condomini, quartiere, città...). | Città metropolitana di Milano  |
+| (ad esempio, sede di associazione scuola o insieme di scuole, condominio o insieme di condomini, quartiere, città...). | Città metropolitana di Milano  |
 |   |  Localizzazione
-(se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l'azione e fornire una mappa; se disponibili shape-file riferiti al sito/progetto in oggetto). | 140 scuole superiori della CMM (si allega elenco)  |
+| (se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l'azione e fornire una mappa; se disponibili shape-file riferiti al sito/progetto in oggetto). | 140 scuole superiori della CMM (si allega elenco)  |
 |   |  Ambito/ambiti di azione
-(energia, mobilità, verde, economia circolare, altro...). | energia  |
+| (energia, mobilità, verde, economia circolare, altro...). | energia  |
 |   |  Tipologia di azione | X Governance/policy
 X Finanziario
 X Gestionale  |
 |   |  | ☐ Comportamentale (ambito culturale, educativo, attivismo, disseminazione ecc)
-☐ Altro (specificare)  |
+| ☐ Altro (specificare)  |
 | --- | --- | --- |
 |   | **Descrizione dell'azione/progetto/intervento**
 Fornire una descrizione generale del progetto relativamente agli ambiti identificati | Con il progetto Territori Virtuosi è stato promosso un modello virtuoso dell'efficienza energetica, che permette di finanziare gli interventi di efficientamento energetico degli edifici pubblici con i risparmi economici ottenuti dalla riduzione dei consumi energetici, basandosi principalmente su:
@@ -22164,16 +21926,16 @@ Investimento energetico da parte di soggetti privati di circa 62 M€
 Intervento a costo 0 da parte dell'ente pubblico  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio. | Miglioramento del comfort per i frequentatori degli edifici scolastici  |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio. | Miglioramento del comfort per i frequentatori degli edifici scolastici  |
 |  GOVERNANCE
-E COSTI | Eventuali stakeholder coinvolti | Regione Lombardia  |
+| E COSTI | Eventuali stakeholder coinvolti | Regione Lombardia  |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere ad esempio eventuali barriere e/o fattori abilitanti. | Il processo di gara pubblico fortemente innovativo perché faceva leva solamente sul risparmio energetico ha richiesto molto tempo per essere messo a punto dalla CMM. L'attività di Assistenza Tecnica è stata avviata nel 2017 ma la gara è stata pubblicata solo nel 2019  |
+| Descrivere ad esempio eventuali barriere e/o fattori abilitanti. | Il processo di gara pubblico fortemente innovativo perché faceva leva solamente sul risparmio energetico ha richiesto molto tempo per essere messo a punto dalla CMM. L'attività di Assistenza Tecnica è stata avviata nel 2017 ma la gara è stata pubblicata solo nel 2019  |
 |   |  Stima dell'investimento complessivo (€) | 62 M€ da parte di privati
-,5 M€ da parte di Fondazione Cariplo (valore dell'Assistenza Tecnica fornita)  |
+| ,5 M€ da parte di Fondazione Cariplo (valore dell'Assistenza Tecnica fornita)  |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento ci si intende avvalere finanziamenti UE o incentivi nazionali o locali?
 ☑ Si ☐ No
@@ -22188,24 +21950,23 @@ Quanto incidono sull'investimento complessivo?  |
 | --- | --- | --- |
 |   |  Referente | Elena Jachia  |
 |   |  Scala dell'intervento (se si tratta di una azione che ha una componente localizzabile)
-(ad esempio, sede di associazione scuola o insieme di scuole, condominio o insieme di condomini, quartiere, città...). | Città metropolitana di Milano  |
+| (ad esempio, sede di associazione scuola o insieme di scuole, condominio o insieme di condomini, quartiere, città...). | Città metropolitana di Milano  |
 |   |  Localizzazione
-(se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l'azione e fornire una mappa; se disponibili shape-file riferiti al sito/progetto in oggetto). |   |
+| (se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l'azione e fornire una mappa; se disponibili shape-file riferiti al sito/progetto in oggetto). |   |
 |   |  Ambito/ambiti di azione
-(energia, mobilità, verde, economia circolare, altro...). | energia  |
+| (energia, mobilità, verde, economia circolare, altro...). | energia  |
 |   |  Tipologia di azione | X Governance/policy
 ☐ Finanziario
 X Gestionale
 X Comportamentale (ambito culturale, educativo, attivismo, disseminazione ecc)
 ☐ Altro (specificare)  |
 |   |  Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati | ClimaMi ha mirato a intercettare e supportare i professionisti che nell'ambito urbano milanese svolgono attività di progettazione e gestione del territorio, dal singolo edifico all'intera area cittadina, con particolare riferimento all'edificato esistente.
-
-Il progetto, svoltosi dal 2019 al 2022, ha implementato e fornito una base operativa, solida, organizzata e aggiornata di informazioni e dati climatici necessari come punto di riferimento concreto e imprescindibile per l'adattamento al cambiamento. climatico locale in ambito urbano.  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati | ClimaMi ha mirato a intercettare e supportare i professionisti che nell'ambito urbano milanese svolgono attività di progettazione e gestione del territorio, dal singolo edifico all'intera area cittadina, con particolare riferimento all'edificato esistente. |
+| Il progetto, svoltosi dal 2019 al 2022, ha implementato e fornito una base operativa, solida, organizzata e aggiornata di informazioni e dati climatici necessari come punto di riferimento concreto e imprescindibile per l'adattamento al cambiamento. climatico locale in ambito urbano.  |
 |   |  Tempistiche
-(Indicare se è una azione prevista o già | 2019-2022  |
+| (Indicare se è una azione prevista o già | 2019-2022  |
 |   | in atto, l'anno di avvio e anno di conclusione previsti.
-Eventuali step intermedi di realizzazione. In caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). |   |
+| Eventuali step intermedi di realizzazione. In caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). |   |
 | --- | --- | --- |
 |  VALUTAZIONE
 DELL'IMPATTO
@@ -22217,12 +21978,12 @@ Indicare quali risultati ci si aspetta di raggiungere e in che senso l'azione de
 Altrettanto fondamentale è stata l'attività continua di capacity building indirizzata ai professionisti degli Ordini, ai tecnici e funzionari della pubblica amministrazione.  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio. |   |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio. |   |
 |  GOVERNANCE
-E COSTI | Eventuali stakeholder coinvolti | Fondazione Osservatorio Meteorologico Milano Duomo, nel suo ruolo di capofila, ha coinvolto, fin dalle attività iniziali di ideazione e progettazione, altre 3 prestigiose istituzioni milanesi, che sono diventate partner del progetto: Fondazione Ordine degli Architetti, Pianificatori, Paesaggisti e Conservatori della provincia di Milano, Fondazione Ordine degli Ingegneri della provincia di Milano e Fondazione Lombardia per l'Ambiente.  |
+| E COSTI | Eventuali stakeholder coinvolti | Fondazione Osservatorio Meteorologico Milano Duomo, nel suo ruolo di capofila, ha coinvolto, fin dalle attività iniziali di ideazione e progettazione, altre 3 prestigiose istituzioni milanesi, che sono diventate partner del progetto: Fondazione Ordine degli Architetti, Pianificatori, Paesaggisti e Conservatori della provincia di Milano, Fondazione Ordine degli Ingegneri della provincia di Milano e Fondazione Lombardia per l'Ambiente.  |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere ad esempio eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere ad esempio eventuali barriere e/o fattori abilitanti. |   |
 |   | Stima dell'investimento complessivo (€) | 480.000 €, di cui 340.000 € di contributi da parte di Fondazione Cariplo  |
 | --- | --- | --- |
 |   | OPEX (operational expenditure) Se applicabile. |   |
@@ -22242,7 +22003,7 @@ Fondazione Social Venture Giordano Dell'Amore
 | --- | --- | --- |
 |   |  Referente | Marco Gerevini  |
 |   |  Scala dell'intervento (se si tratta di una azione che ha una componente localizzabile)
-(ad esempio, sede di associazione scuola o insieme di scuole, condominio o insieme di condomini, quartiere, città...). | Città metropolitana di Milano  |
+| (ad esempio, sede di associazione scuola o insieme di scuole, condominio o insieme di condomini, quartiere, città...). | Città metropolitana di Milano  |
 |   |  Localizzazione
 (se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l'azione e fornire una mappa; se disponibili shape-file riferiti al | Via Pergolesi 21, Milano
 Piazza Cavour 7, Milano
@@ -22250,14 +22011,14 @@ Via dell'Orso 12, Milano (apertura prevista inizi marzo 2024)  |
 |   | sito/progetto in oggetto). |   |
 | --- | --- | --- |
 |   | Ambito/ambiti di azione
-(energia, mobilità, verde, economia circolare, altro...). | Economia circolare, consumo e produzione responsabile (SDG 12)  |
+| (energia, mobilità, verde, economia circolare, altro...). | Economia circolare, consumo e produzione responsabile (SDG 12)  |
 |   | Tipologia di azione | ☐ Governance/policy
 ☑ Finanziario
 ☑ Gestionale
 ☐ Comportamentale (ambito culturale, educativo, attivismo, disseminazione ecc)
 ☐ Altro (specificare)  |
 |   |  Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati | Il progetto si propone di restituire dignità ai prodotti classificati come “scarto” – poiché esteticamente imperfetti ma “belli dentro” – promuovendo una filiera distributiva alternativa a quella tradizionale, più etica e sostenibile. In concreto, acquista direttamente dagli agricoltori quei prodotti orto-frutticoli di ottima qualità, che solitamente non vengono accettati dai consorzi/cooperative e dalla grande distribuzione. Una parte viene venduta fresca e sfusa nel negozio di via Pergolesi o utilizzata come materia prima per i punti di somministrazione e un'altra parte viene trasformata in succhi, confetture ed essiccati grazie al lavoro di due cooperative sociali dedite all'inserimento lavorativo e alla formazione di persone fragili e con disabilità.  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati | Il progetto si propone di restituire dignità ai prodotti classificati come “scarto” – poiché esteticamente imperfetti ma “belli dentro” – promuovendo una filiera distributiva alternativa a quella tradizionale, più etica e sostenibile. In concreto, acquista direttamente dagli agricoltori quei prodotti orto-frutticoli di ottima qualità, che solitamente non vengono accettati dai consorzi/cooperative e dalla grande distribuzione. Una parte viene venduta fresca e sfusa nel negozio di via Pergolesi o utilizzata come materia prima per i punti di somministrazione e un'altra parte viene trasformata in succhi, confetture ed essiccati grazie al lavoro di due cooperative sociali dedite all'inserimento lavorativo e alla formazione di persone fragili e con disabilità.  |
 |   | Tempistiche
 (Indicare se è una azione prevista o già in atto, l'anno di avvio e anno di conclusione previsti.
 Eventuali step intermedi di realizzazione. In caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | 2020 –  |
@@ -22273,10 +22034,10 @@ Indicare quali risultati ci si aspetta di raggiungere e in che senso l'azione de
 |  GOVERNANCE E COSTI | Eventuali stakeholder coinvolti | L'Officina" Coop. Sociale di Codogno e La Fraternità Coop Sociale di Rimini  |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere ad esempio eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere ad esempio eventuali barriere e/o fattori abilitanti. |   |
 |   |  Stima dell'investimento complessivo (€) | 410.000 € di investimento da parte di Fondazione Social Venture Giordano Dell'Amore  |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento ci si intende avvalere finanziamenti UE o incentivi nazionali o locali?
 ☐ Si X No
@@ -22294,16 +22055,16 @@ Quanto incidono sull'investimento complessivo?  |
 |   | (ad esempio, sede di associazione scuola o insieme di scuole, condominio o insieme di condomini, quartiere, città...). |   |
 | --- | --- | --- |
 |   | **Localizzazione**
-(se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l'azione e fornire una mappa; se disponibili shape-file riferiti al sito/progetto in oggetto). | ---  |
+| (se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l'azione e fornire una mappa; se disponibili shape-file riferiti al sito/progetto in oggetto). | ---  |
 |   | **Ambito/ambiti di azione**
-(energia, mobilità, verde, economia circolare, altro...). | Energia  |
+| (energia, mobilità, verde, economia circolare, altro...). | Energia  |
 |   | **Tipologia di azione** | X Governance/policy
 X Finanziario
 X Gestionale
 ☐ Comportamentale (ambito culturale, educativo, attivismo, disseminazione ecc)
 ☐ Altro (specificare)  |
 |   | **Descrizione dell'azione/progetto/intervento**
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati | Piattaforma di crowdinvesting dedicata alla transizione energetica e alla sostenibilità. Tramite la piattaforma è possibile finanziare: PMI di settore, al fine di supportarne la crescita e il processo di decarbonizzazione, lo sviluppo, la costruzione e l'acquisizione di progetti infrastrutturali (impianti di generazione da fonti rinnovabili, interventi di efficientamento energetico etc.); startup di settore, a supporto della transizione energetica, a partire dalla fase seed/early stage e interventi di riqualificazione per PA.  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati | Piattaforma di crowdinvesting dedicata alla transizione energetica e alla sostenibilità. Tramite la piattaforma è possibile finanziare: PMI di settore, al fine di supportarne la crescita e il processo di decarbonizzazione, lo sviluppo, la costruzione e l'acquisizione di progetti infrastrutturali (impianti di generazione da fonti rinnovabili, interventi di efficientamento energetico etc.); startup di settore, a supporto della transizione energetica, a partire dalla fase seed/early stage e interventi di riqualificazione per PA.  |
 |   | **Tempistiche**
 (Indicare se è una azione prevista o già in atto, l'anno di avvio e anno di conclusione previsti.
 Eventuali step intermedi di realizzazione. In caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | 2021-  |
@@ -22315,16 +22076,16 @@ AMBIENTALE * | Risultati attesi
 Indicare quali risultati ci si aspetta di raggiungere e in che senso l'azione descritta può creare condizioni favorevoli alle azioni di mitigazione e adattamento utili al raggiungimento della neutralità climatica. | Contribuire alla riduzione delle emissioni di CO₂ e dell'impatto antropico sugli ecosistemi, in proporzione alla crescita dei progetti finanziati. Favorisce l'accesso e la democratizzazione degli investimenti nel settore grazie al crescente coinvolgimento di investitori crowd.  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio. |   |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio. |   |
 |  GOVERNANCE
-E COSTI | Eventuali stakeholder coinvolti | Banca Etica  |
+| E COSTI | Eventuali stakeholder coinvolti | Banca Etica  |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere ad esempio eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere ad esempio eventuali barriere e/o fattori abilitanti. |   |
 |   |  Stima dell'investimento
-complessivo (€) | 200.000 € di investimento da parte di Fondazione Social Venture Giordano Dell'Amore  |
+| complessivo (€) | 200.000 € di investimento da parte di Fondazione Social Venture Giordano Dell'Amore  |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento ci si intende avvalere finanziamenti UE o incentivi nazionali o locali?
 ☐ Si X No
@@ -22336,24 +22097,24 @@ Quali?
 
 Quanto incidono sull'investimento complessivo?  |
 |  CONTESTO e
-DESCRIZIONE | Titolo progetto/AZIONE | Agrorobotica  |
+| DESCRIZIONE | Titolo progetto/AZIONE | Agrorobotica  |
 | --- | --- | --- |
 |   |  Referente | Marco Gerevini  |
 |   |  Scala dell'intervento (se si tratta di una azione che ha una | ---  |
 |   | componente localizzabile)
-(ad esempio, sede di associazione scuola o insieme di scuole, condominio o insieme di condomini, quartiere, città...). |   |
+| (ad esempio, sede di associazione scuola o insieme di scuole, condominio o insieme di condomini, quartiere, città...). |   |
 | --- | --- | --- |
 |   | Localizzazione
-(se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l'azione e fornire una mappa; se disponibili shape-file riferiti al sito/progetto in oggetto). | ---  |
+| (se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l'azione e fornire una mappa; se disponibili shape-file riferiti al sito/progetto in oggetto). | ---  |
 |   | Ambito/ambiti di azione
-(energia, mobilità, verde, economia circolare, altro...). | Agricoltura  |
+| (energia, mobilità, verde, economia circolare, altro...). | Agricoltura  |
 |   | Tipologia di azione | ☑ Governance/policy
 ☑ Finanziario
 ☑ Gestionale
 ☐ Comportamentale (ambito culturale, educativo, attivismo, disseminazione ecc)
 ☐ Altro (specificare)  |
 |   | Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati | È una start-up innovativa che ha brevettato SpyFly: un sistema di monitoraggio che, attraverso algoritmi evoluti di apprendimento, è in grado di riconoscere tempestivamente gli insetti dannosi per le colture, a beneficio della sostenibilità ambientale e della filiera agro-alimentare. Il prodotto consiste in una trappola robotica a richiami sessuali in grado di attrarre, catturare e riconoscere, tramite sofisticati algoritmi di Intelligenza Artificiale, i parassiti dannosi per le colture. Grazie alla tecnologia sviluppata e connessa alla rete, l'agricoltore riceve, sul proprio smartphone e PC, i dati rilevati e gli alert in caso di presenza di insetti nocivi, in modo da poter intervenire sul campo con una soluzione mirata, solo se necessario  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati | È una start-up innovativa che ha brevettato SpyFly: un sistema di monitoraggio che, attraverso algoritmi evoluti di apprendimento, è in grado di riconoscere tempestivamente gli insetti dannosi per le colture, a beneficio della sostenibilità ambientale e della filiera agro-alimentare. Il prodotto consiste in una trappola robotica a richiami sessuali in grado di attrarre, catturare e riconoscere, tramite sofisticati algoritmi di Intelligenza Artificiale, i parassiti dannosi per le colture. Grazie alla tecnologia sviluppata e connessa alla rete, l'agricoltore riceve, sul proprio smartphone e PC, i dati rilevati e gli alert in caso di presenza di insetti nocivi, in modo da poter intervenire sul campo con una soluzione mirata, solo se necessario  |
 |   | Tempistiche
 (Indicare se è una azione prevista o già in atto, l'anno di avvio e anno di conclusione previsti.
 Eventuali step intermedi di realizzazione. In caso di progetti già realizzati che proiettano effetti positivi | 2020-  |
@@ -22381,16 +22142,16 @@ della propria azione, effetti e
 cambiamenti realizzati sulla vita dei
 soggetti coinvolti e sul territorio. |   |
 |  GOVERNANCE
-E COSTI | Eventuali stakeholder coinvolti |   |
+| E COSTI | Eventuali stakeholder coinvolti |   |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
 Descrivere ad esempio eventuali
 barriere e/o fattori abilitanti. |   |
 |   |  Stima dell'investimento
-complessivo (€) | 252.000 € di investimento da parte di Fondazione
-Social Venture Giordano Dell'Amore  |
+| complessivo (€) | 252.000 € di investimento da parte di Fondazione |
+| Social Venture Giordano Dell'Amore  |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del
 progetto si prevede che, oltre a fonti
@@ -22412,35 +22173,35 @@ Quanto incidono sull'investimento complessivo?  |
 | --- | --- | --- |
 |   |  Referente | Marco Gerevini  |
 |   | Scala dell'intervento (se si tratta di una azione che ha una componente localizzabile)
-(ad esempio, sede di associazione scuola o insieme di scuole, condominio o insieme di condomini, quartiere, città...). | ---  |
+| (ad esempio, sede di associazione scuola o insieme di scuole, condominio o insieme di condomini, quartiere, città...). | ---  |
 |   |  Localizzazione
-(se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l'azione e fornire una mappa; se disponibili shape-file riferiti al sito/progetto in oggetto). | ---  |
+| (se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l'azione e fornire una mappa; se disponibili shape-file riferiti al sito/progetto in oggetto). | ---  |
 |   |  Ambito/ambiti di azione
-(energia, mobilità, verde, economia circolare, altro...). | Mobilità  |
+| (energia, mobilità, verde, economia circolare, altro...). | Mobilità  |
 |   |  Tipologia di azione | ☑ Governance/policy
 ☑ Finanziario
 ☑ Gestionale
 ☐ Comportamentale (ambito culturale, educativo, attivismo, disseminazione ecc)
 ☐ Altro (specificare)  |
 |   |  Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati | Innovare la filiera produttiva delle piste ciclabili nel solco dell'economia circolare, attraverso la realizzazione di percorsi ecosostenibili, modulari e di facile installazione, prodotti in stabilimento con materie plastiche riciclate. La struttura delle piste ciclabili mOOve prevede l'utilizzo di moduli standard prefabbricati e amovibili: questo aspetto riduce significativamente i tempi di installazione e consente di rimuovere e riposizionare il sistema altrove, in qualunque momento, in quanto progettato per essere facilmente installato sul substrato esistente.  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati | Innovare la filiera produttiva delle piste ciclabili nel solco dell'economia circolare, attraverso la realizzazione di percorsi ecosostenibili, modulari e di facile installazione, prodotti in stabilimento con materie plastiche riciclate. La struttura delle piste ciclabili mOOve prevede l'utilizzo di moduli standard prefabbricati e amovibili: questo aspetto riduce significativamente i tempi di installazione e consente di rimuovere e riposizionare il sistema altrove, in qualunque momento, in quanto progettato per essere facilmente installato sul substrato esistente.  |
 |   |  Tempistiche
 (Indicare se è una azione prevista o già in atto, l'anno di avvio e anno di conclusione previsti.
 Eventuali step intermedi di realizzazione. In caso di progetti già | 2020-  |
 realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline).
 
 |  VALUTAZIONE DELL'IMPATTO SOCIALE, ECONOMICO, AMBIENTALE * | Risultati attesi
-Indicare quali risultati ci si aspetta di raggiungere e in che senso l'azione descritta può creare condizioni favorevoli alle azioni di mitigazione e adattamento utili al raggiungimento della neutralità climatica. | Supporto continuo per l'economia circolare che consente la riduzione delle emissioni di CO2 generate dall'attuale mobilità urbana, grazie all'aumento della mobilità leggera.  |
+| Indicare quali risultati ci si aspetta di raggiungere e in che senso l'azione descritta può creare condizioni favorevoli alle azioni di mitigazione e adattamento utili al raggiungimento della neutralità climatica. | Supporto continuo per l'economia circolare che consente la riduzione delle emissioni di CO2 generate dall'attuale mobilità urbana, grazie all'aumento della mobilità leggera.  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio. |   |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio. |   |
 |  GOVERNANCE E COSTI | Eventuali stakeholder coinvolti |   |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere ad esempio eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere ad esempio eventuali barriere e/o fattori abilitanti. |   |
 |   |  Stima dell'investimento complessivo (€) | 50.000 € di investimento da parte di Fondazione Social Venture Giordano Dell'Amore  |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento ci si intende avvalere finanziamenti UE o incentivi nazionali o locali?
 ☐ Si X No
@@ -22453,35 +22214,35 @@ Quanto incidono sull'investimento complessivo?  |
 | --- | --- | --- |
 |   |  Referente | Marco Gerevini  |
 |   | Scala dell'intervento (se si tratta di una azione che ha una componente localizzabile)
-(ad esempio, sede di associazione scuola o insieme di scuole, condominio o insieme di condomini, quartiere, città...). | Città metropolitana di Milano  |
+| (ad esempio, sede di associazione scuola o insieme di scuole, condominio o insieme di condomini, quartiere, città...). | Città metropolitana di Milano  |
 |   |  Localizzazione
-(se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l'azione e fornire una mappa; se disponibili shape-file riferiti al sito/progetto in oggetto). | ---  |
+| (se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l'azione e fornire una mappa; se disponibili shape-file riferiti al sito/progetto in oggetto). | ---  |
 |   |  Ambito/ambiti di azione
-(energia, mobilità, verde, economia circolare, altro...). | Economia circolare  |
+| (energia, mobilità, verde, economia circolare, altro...). | Economia circolare  |
 |   |  Tipologia di azione | ☑ Governance/policy
 ☑ Finanziario
 ☑ Gestionale
 ☐ Comportamentale (ambito culturale, educativo, attivismo, disseminazione ecc)
 ☐ Altro (specificare)  |
 |   |  Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati | La Cooperativa Vesti Solidale ha come mission l'inserimento lavorativo di persone con diverse tipologie di svantaggio (disabilità fisica e psichica, alcooldipendenza, tossicodipendenza e carcerati) e in condizioni di fragilità economica. Opera nell'ambito dell'economia circolare, della tutela ambientale e della diffusione di modelli di consumo ecosostenibili in diverse attività tra cui: un progetto dedicato alla gestione dell'intera filiera di recupero del tessile; servizi di raccolta rifiuti rivolti alle aziende e finalizzati al recupero e riutilizzo.  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati | La Cooperativa Vesti Solidale ha come mission l'inserimento lavorativo di persone con diverse tipologie di svantaggio (disabilità fisica e psichica, alcooldipendenza, tossicodipendenza e carcerati) e in condizioni di fragilità economica. Opera nell'ambito dell'economia circolare, della tutela ambientale e della diffusione di modelli di consumo ecosostenibili in diverse attività tra cui: un progetto dedicato alla gestione dell'intera filiera di recupero del tessile; servizi di raccolta rifiuti rivolti alle aziende e finalizzati al recupero e riutilizzo.  |
 |   |  Tempistiche
 (Indicare se è una azione prevista o già in atto, l'anno di avvio e anno di conclusione previsti.
 Eventuali step intermedi di realizzazione. In caso di progetti già | 2022-  |
 realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline).
 
 |  VALUTAZIONE DELL'IMPATTO SOCIALE, ECONOMICO, AMBIENTALE * | Risultati attesi
-Indicare quali risultati ci si aspetta di raggiungere e in che senso l'azione descritta può creare condizioni favorevoli alle azioni di mitigazione e adattamento utili al raggiungimento della neutralità climatica. | Favorire la tutela ambientale la diffusione di modelli di consumo ecosostenibili.  |
+| Indicare quali risultati ci si aspetta di raggiungere e in che senso l'azione descritta può creare condizioni favorevoli alle azioni di mitigazione e adattamento utili al raggiungimento della neutralità climatica. | Favorire la tutela ambientale la diffusione di modelli di consumo ecosostenibili.  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio. |   |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio. |   |
 |  GOVERNANCE E COSTI | Eventuali stakeholder coinvolti |   |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere ad esempio eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere ad esempio eventuali barriere e/o fattori abilitanti. |   |
 |   |  Stima dell'investimento complessivo (€) | 300.000 € di investimento da parte di Fondazione Social Venture Giordano Dell'Amore  |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento ci si intende avvalere finanziamenti UE o incentivi nazionali o locali?
 ☐ Si X No
@@ -22579,16 +22340,16 @@ Nella scheda seguente possono essere raccolti interventi e azioni puntuali coere
 |   | o insieme di condomini, quartiere, città...). |   |
 | --- | --- | --- |
 |   | **Localizzazione**
-(se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l'azione e fornire una mappa; se disponibili shape-file riferiti al sito/progetto in oggetto). |   |
+| (se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l'azione e fornire una mappa; se disponibili shape-file riferiti al sito/progetto in oggetto). |   |
 |   | **Ambito/ambiti di azione**
-(energia, mobilità, verde, economia circolare, altro...). |   |
+| (energia, mobilità, verde, economia circolare, altro...). |   |
 |   | **Tipologia di azione** | ☐ Governance/policy
 ☐ Finanziario
 ☐ Gestionale
 ☐ Comportamentale (ambito culturale, educativo, attivismo, disseminazione ecc)
 ☐ Altro (specificare)  |
 |   | **Descrizione dell'azione/progetto/intervento**
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati |   |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati |   |
 |   | **Tempistiche**
 (Indicare se è una azione prevista o già in atto, l'anno di avvio e anno di conclusione previsti.
 Eventuali step intermedi di realizzazione. In caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). |   |
@@ -22600,15 +22361,15 @@ Eventuali step intermedi di realizzazione. In caso di progetti già realizzati c
 Indicare quali risultati ci si aspetta di raggiungere e in che senso l'azione descritta può creare condizioni favorevoli alle azioni di mitigazione e adattamento utili al raggiungimento della neutralità climatica. |   |
 | --- | --- | --- |
 |   | Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio. |   |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio. |   |
 | --- | --- | --- |
 |  GOVERNANCE E COSTI | Eventuali stakeholder coinvolti |   |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere ad esempio eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere ad esempio eventuali barriere e/o fattori abilitanti. |   |
 |   |  Stima dell'investimento complessivo (€) |   |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento ci si intende avvalere finanziamenti UE o incentivi nazionali o locali?
 ☐ Sì ☐ No
@@ -22712,9 +22473,9 @@ Nella scheda seguente possono essere raccolti interventi e azioni puntuali coere
 ☑ Comportamentale (ambito culturale, educativo, attivismo, disseminazione ecc)
 ☐ Altro (specificare)  |
 |   |  Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati | "From Farm to Fork" è un percorso che affronta il tema della sostenibilità della produzione e del consumo alimentare ed è destinato agli studenti e alle studentesse delle classi quarte. L'obiettivo è quello di rendere consapevoli dell'impatto ambientale del cibo proprio coloro che si apprestano ad avviare la loro professione nell'ambito della ristorazione. Il percorso si articola in 3 incontri al termine dei quali gli studenti e le studentesse progettano e sperimentano una "menù agroecologico".  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati | "From Farm to Fork" è un percorso che affronta il tema della sostenibilità della produzione e del consumo alimentare ed è destinato agli studenti e alle studentesse delle classi quarte. L'obiettivo è quello di rendere consapevoli dell'impatto ambientale del cibo proprio coloro che si apprestano ad avviare la loro professione nell'ambito della ristorazione. Il percorso si articola in 3 incontri al termine dei quali gli studenti e le studentesse progettano e sperimentano una "menù agroecologico".  |
 |   |  Tempistiche
-(Indicare se è una azione prevista o già in atto, l'anno di avvio e anno di conclusione previsti. Eventuali step intermedi di realizzazione. In caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Dal 2021 ad oggi si realizza annualmente con l'Istituto coinvolto  |
+| (Indicare se è una azione prevista o già in atto, l'anno di avvio e anno di conclusione previsti. Eventuali step intermedi di realizzazione. In caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Dal 2021 ad oggi si realizza annualmente con l'Istituto coinvolto  |
 |  VALUTAZIONE
 DELL'IMPATTO SOCIALE,
 ECONOMICO,
@@ -22722,16 +22483,16 @@ AMBIENTALE | Risultati attesi
 Indicare quali risultati ci si aspetta di raggiungere e in che senso l'azione descritta può creare condizioni favorevoli alle azioni di mitigazione e adattamento utili al raggiungimento della neutralità climatica. | I futuri professionisti del cibo avranno un ruolo fondamentale nel diffondere la cultura di un'alimentazione sostenibile: diventa quindi di estrema importanza che sviluppino una visione consapevole e attenta alla disparità della distribuzione del cibo e delle malattie connesse alla malnutrizione, al problema degli sprechi di cibo, alla complessa relazione tra produzione alimentare e crisi ecologica e agli strumenti per ottenere un effetto concreto di riduzione delle emissioni e dei rifiuti.  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i |   |
+| I cobenefici sono i |   |
 |   | risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio. |   |
 | --- | --- | --- |
 |  GOVERNANCE E COSTI | Eventuali stakeholder coinvolti |   |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere ad esempio eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere ad esempio eventuali barriere e/o fattori abilitanti. |   |
 |   |  Stima dell'investimento complessivo (€) | 250 € per classe  |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento ci si intende avvalere finanziamenti UE o incentivi nazionali o locali?
 ☐ Si ☐ No
@@ -22816,11 +22577,11 @@ Nella scheda seguente possono essere raccolti interventi e azioni puntuali coere
 | --- | --- | --- |
 |   |  Referente | Legambiente Lombardia (Marzio Marzorati)  |
 |   |  Scala dell'intervento (se si tratta di una azione che ha una componente localizzabile)
-(ad esempio, sede di associazione scuola o insieme di scuole, condominio o insieme di condomini, quartiere, città...). | Regionale – metropolitano - cittadino  |
+| (ad esempio, sede di associazione scuola o insieme di scuole, condominio o insieme di condomini, quartiere, città...). | Regionale – metropolitano - cittadino  |
 |   |  Localizzazione
-(se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l'azione e fornire una mappa; se disponibili shape-file riferiti al sito/progetto in oggetto). | Parchi cittadini – Zone verdi urbane  |
+| (se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l'azione e fornire una mappa; se disponibili shape-file riferiti al sito/progetto in oggetto). | Parchi cittadini – Zone verdi urbane  |
 |   |  Ambito/ambiti di azione
-(energia, mobilità, verde, economia | Biodiversità – Verde – Crisi Climatica – Qualità dell'Aria  |
+| (energia, mobilità, verde, economia | Biodiversità – Verde – Crisi Climatica – Qualità dell'Aria  |
 |   | circolare, altro...). |   |
 | --- | --- | --- |
 |   | Tipologia di azione | ☐ Governance/policy
@@ -22829,7 +22590,7 @@ Nella scheda seguente possono essere raccolti interventi e azioni puntuali coere
 ☐ Comportamentale (ambito culturale, educativo, attivismo, disseminazione ecc)
 ☐ Altro (specificare)  |
 |   | Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati | Cammina Foreste Urbane (CFU) non è solo un programma di camminate, ma momenti di conoscenza, divulgazione, piantumazione di nuovi alberi, cura degli habitat, osservazione e partecipazione. Cammina Foreste è un appuntamento semplice, dolce, importante per consolidare la rete ecologica, dare importanza alle foreste urbane e chiedere una migliore gestione del verde urbano nelle nostre città.  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati | Cammina Foreste Urbane (CFU) non è solo un programma di camminate, ma momenti di conoscenza, divulgazione, piantumazione di nuovi alberi, cura degli habitat, osservazione e partecipazione. Cammina Foreste è un appuntamento semplice, dolce, importante per consolidare la rete ecologica, dare importanza alle foreste urbane e chiedere una migliore gestione del verde urbano nelle nostre città.  |
 |   | Tempistiche
 (Indicare se è una azione prevista o già in atto, l'anno di avvio e anno di conclusione previsti.
 Eventuali step intermedi di realizzazione. In caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Cadenza annuale con l'organizzazione di più eventi nell'arco del mese di novembre  |
@@ -22928,12 +22689,12 @@ Nella scheda seguente possono essere raccolti interventi e azioni puntuali coere
 | --- | --- | --- |
 |   |  Referente | Legambiente Lombardia (Christian Aletti)  |
 |   |  Scala dell'intervento (se si tratta di una azione che ha una componente localizzabile)
-(ad esempio, sede di associazione scuola o insieme di scuole, condominio o insieme di condomini, quartiere, città...). | Scuole  |
+| (ad esempio, sede di associazione scuola o insieme di scuole, condominio o insieme di condomini, quartiere, città...). | Scuole  |
 |   |  Localizzazione
-(se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l'azione e fornire una mappa; se disponibili shape-file riferiti al sito/progetto in oggetto). | (Milano)  |
+| (se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l'azione e fornire una mappa; se disponibili shape-file riferiti al sito/progetto in oggetto). | (Milano)  |
 |   |  Ambito/ambiti di azione
-(energia, mobilità, verde, economia | Economia Circolare
-Energia  |
+| (energia, mobilità, verde, economia | Economia Circolare |
+| Energia  |
 |   | circolare, altro...). |   |
 | --- | --- | --- |
 |   | Tipologia di azione | ☐ Governance/policy
@@ -22942,8 +22703,8 @@ Energia  |
 ☐ Comportamentale (ambito culturale, educativo, attivismo, disseminazione ecc)
 ☐ Altro (specificare)  |
 |   | Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati | Nontiscordardimé è l'appuntamento primaverile dedicato alla riqualificazione e alla rigenerazione degli edifici scolastici.
-L'iniziativa è un'occasione di protagonismo e partecipazione attiva dove l'intera comunità scolastica svolge piccoli lavori di manutenzione per rendere più accoglienti e confortevoli gli spazi della scuola, come rinfrescare e decorare le pareti di classi e corridoi, piantare alberi e fiori, realizzare degli orti scolastici, ripensare e abbellire gli spazi interni ed esterni.  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati | Nontiscordardimé è l'appuntamento primaverile dedicato alla riqualificazione e alla rigenerazione degli edifici scolastici. |
+| L'iniziativa è un'occasione di protagonismo e partecipazione attiva dove l'intera comunità scolastica svolge piccoli lavori di manutenzione per rendere più accoglienti e confortevoli gli spazi della scuola, come rinfrescare e decorare le pareti di classi e corridoi, piantare alberi e fiori, realizzare degli orti scolastici, ripensare e abbellire gli spazi interni ed esterni.  |
 |   | Tempistiche
 (Indicare se è una azione prevista o già in atto, l'anno di avvio e anno di conclusione previsti.
 Eventuali step intermedi di realizzazione. In caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Cadenza annuale con l'organizzazione di più eventi nelle scuole a marzo.  |
@@ -22956,17 +22717,17 @@ Efficientamento energetico aule
 Attivazione pensiero consapevole nelle scuole  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e | - Creazione reti locali di associazioni e cittadini
-Aumento rapporti tra scuola, genitori e  |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e | - Creazione reti locali di associazioni e cittadini |
+| Aumento rapporti tra scuola, genitori e  |
 |  cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio. | associazione  |
 | --- | --- |
 |  GOVERNANCE E COSTI | Eventuali stakeholder coinvolti |   |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere ad esempio eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere ad esempio eventuali barriere e/o fattori abilitanti. |   |
 |   |  Stima dell'investimento complessivo (€) | Circa 300 € ad evento e in base ai lavori di riquadifica da effettuare  |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento ci si intende avvalere finanziamenti UE o incentivi nazionali o locali?
 ☐ Si ☐ No
@@ -23064,8 +22825,8 @@ Parchi
 Piazze
 ecc  |
 |   |  Ambito/ambiti di azione
-(energia, mobilità, verde, economia | - Economia Circolare
-Raccolta rifiuti  |
+| (energia, mobilità, verde, economia | - Economia Circolare |
+| Raccolta rifiuti  |
 |   | circolare, altro...). | - Riciclo  |
 | --- | --- | --- |
 |   | Tipologia di azione | ☐ Governance/policy
@@ -23074,7 +22835,7 @@ Raccolta rifiuti  |
 ☐ Comportamentale (ambito culturale, educativo, attivismo, disseminazione ecc)
 ☐ Altro (specificare)  |
 |   | Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati | Puliamo il Mondo è l'edizione italiana di Clean up the World e si svolge dal 1993 grazie all'impegno di Legambiente e la collaborazione di associazioni, scuole, aziende, comitati e amministrazioni locali. Questa campagna ha come macro obiettivo la protezione e la salvaguardia della natura.  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati | Puliamo il Mondo è l'edizione italiana di Clean up the World e si svolge dal 1993 grazie all'impegno di Legambiente e la collaborazione di associazioni, scuole, aziende, comitati e amministrazioni locali. Questa campagna ha come macro obiettivo la protezione e la salvaguardia della natura.  |
 |   | Tempistiche
 (Indicare se è una azione prevista o già in atto, l'anno di avvio e anno di conclusione previsti.
 Eventuali step intermedi di realizzazione. In caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Cadenza annuale con l'organizzazione di più eventi nell'arco del terzo o quarto weekend di settembre per ciò che riguarda il calendario 'classico', ma realizzabile e realizzato anche in altri periodi dell'anno  |
@@ -23094,10 +22855,10 @@ Consapevolezza su effetti della mancata raccolta e del riciclo  |
 |  GOVERNANCE E COSTI | Eventuali stakeholder coinvolti |   |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere ad esempio eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere ad esempio eventuali barriere e/o fattori abilitanti. |   |
 |   |  Stima dell'investimento complessivo (€) | Circa 350 € ad evento a seconda di come viene organizzato  |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento ci si intende avvalere finanziamenti UE o incentivi nazionali o locali?
 ☐ Sì ☐ No
@@ -23182,11 +22943,11 @@ Nella scheda seguente possono essere raccolti interventi e azioni puntuali coere
 | --- | --- | --- |
 |   |  Referente | Legambiente Lombardia  |
 |   |  Scala dell'intervento (se si tratta di una azione che ha una componente localizzabile)
-(ad esempio, sede di associazione scuola o insieme di scuole, condominio o insieme di condomini, quartiere, città...). | Nazionale  |
+| (ad esempio, sede di associazione scuola o insieme di scuole, condominio o insieme di condomini, quartiere, città...). | Nazionale  |
 |   |  Localizzazione
-(se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l'azione e fornire una mappa; se disponibili shape-file riferiti al sito/progetto in oggetto). |   |
+| (se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l'azione e fornire una mappa; se disponibili shape-file riferiti al sito/progetto in oggetto). |   |
 |   |  Ambito/ambiti di azione
-(energia, mobilità, verde, economia | Economia circolare  |
+| (energia, mobilità, verde, economia | Economia circolare  |
 |   | circolare, altro...). |   |
 | --- | --- | --- |
 |   |  Tipologia di azione | ☐ Governance/policy
@@ -23195,7 +22956,7 @@ x Gestionale
 x Comportamentale (ambito culturale, educativo, attivismo, disseminazione ecc)
 ☐ Altro (specificare)  |
 |   |  Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati | Il progetto mira a ideare un percorso rivolto ai giovani under 35 per produrre idee innovative e originali per l'ambito dell'economia circolare partendo dai temi della riduzione, del riuso e del riciclaggio.  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati | Il progetto mira a ideare un percorso rivolto ai giovani under 35 per produrre idee innovative e originali per l'ambito dell'economia circolare partendo dai temi della riduzione, del riuso e del riciclaggio.  |
 |   | Tempistiche
 (Indicare se è una azione prevista o già in atto, l'anno di avvio e anno di conclusione previsti.
 Eventuali step intermedi di realizzazione. In caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Il progetto è stato avviato a dicembre 2023 e si concluderà ad aprile 2024 con una due giorni nostop di maratona progettuale il 17 e il 18. Nel mese di marzo e nei primi giorni di aprile vi saranno momenti formativi rivolti ai giovani partecipanti per fornire tutti gli strumenti e le conoscenze necessarie.  |
@@ -23207,15 +22968,15 @@ AMBIENTALE * | Risultati attesi
 Indicare quali risultati ci si aspetta di raggiungere e in che senso l'azione descritta può creare condizioni favorevoli alle azioni di mitigazione e adattamento utili al raggiungimento della neutralità climatica. | Dalla attività vogliamo ricavare idee progettuali realizzabili e concrete con un forte elemento di novità. Il fine è quello di incidere il più possibile nel mondo dell'economia circolare con un approccio dal basso e attraverso le giovani generazioni  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio. |   |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio. |   |
 |   | Eventuali stakeholder coinvolti |   |
 | --- | --- | --- |
 |  **GOVERNANCE E COSTI** | Commenti sull'implementazione
-Descrivere ad esempio eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere ad esempio eventuali barriere e/o fattori abilitanti. |   |
 | --- | --- | --- |
 |   | Stima dell'investimento complessivo (€) | 35.500€  |
 |   | OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   | Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento ci si intende avvalere finanziamenti UE o incentivi nazionali o locali?
 ☐ Si ☐ No
@@ -23300,11 +23061,11 @@ Nella scheda seguente possono essere raccolti interventi e azioni puntuali coere
 | --- | --- | --- |
 |   |  Referente | Legambiente Lombardia  |
 |   |  Scala dell'intervento (se si tratta di una azione che ha una componente localizzabile)
-(ad esempio, sede di associazione scuola o insieme di scuole, condominio o insieme di condomini, quartiere, città...). | Regionale  |
+| (ad esempio, sede di associazione scuola o insieme di scuole, condominio o insieme di condomini, quartiere, città...). | Regionale  |
 |   |  Localizzazione
-(se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l'azione e fornire una mappa; se disponibili shape-file riferiti al sito/progetto in oggetto). |   |
+| (se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l'azione e fornire una mappa; se disponibili shape-file riferiti al sito/progetto in oggetto). |   |
 |   |  Ambito/ambiti di azione
-(energia, mobilità, verde, economia | Economia circolare  |
+| (energia, mobilità, verde, economia | Economia circolare  |
 |   | circolare, altro...). |   |
 | --- | --- | --- |
 |   |  Tipologia di azione | ☐ Governance/policy
@@ -23313,7 +23074,7 @@ x Gestionale
 x Comportamentale (ambito culturale, educativo, attivismo, disseminazione ecc)
 ☐ Altro (specificare)  |
 |   | Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati | Il progetto mira a creare situazioni di dialogo tra mondo del terzo settore, amministrazioni pubbliche, università e imprese per promuovere i principi dell'economia circolare e buone pratiche di gestione dei rifiuti  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati | Il progetto mira a creare situazioni di dialogo tra mondo del terzo settore, amministrazioni pubbliche, università e imprese per promuovere i principi dell'economia circolare e buone pratiche di gestione dei rifiuti  |
 |   | Tempistiche
 (Indicare se è una azione prevista o già in atto, l'anno di avvio e anno di conclusione previsti.
 Eventuali step intermedi di realizzazione. In caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Ecoforum Lombardia è giunto alla settima edizione con una cadenza annuale  |
@@ -23325,19 +23086,19 @@ AMBIENTALE * | Risultati attesi
 Indicare quali risultati ci si aspetta di raggiungere e in che senso l'azione descritta può creare condizioni favorevoli alle azioni di mitigazione e adattamento utili al raggiungimento della neutralità climatica. | La sensibilizzazione e l'informazione sono al centro della attività di Ecoforum con la produzione anche di Dossier che raccolgono dati scientifici e buone pratiche. Lo scopo è quello di creare una rete per la promozione dell'economia circolare e creare le condizioni migliori affiche si autoalimenti con una fitta rete di stakeholder  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio. | Ecoforum ha permesso di creare le situazioni favorevoli alla nascita di numerosi altri progetti con notevoli ricadute soprattutto verso il coinvolgimento di giovani universitari con il progetto Eco-Hackathon  |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio. | Ecoforum ha permesso di creare le situazioni favorevoli alla nascita di numerosi altri progetti con notevoli ricadute soprattutto verso il coinvolgimento di giovani universitari con il progetto Eco-Hackathon  |
 |   | Eventuali stakeholder coinvolti |   |
 | --- | --- | --- |
 |  GOVERNANCE
-E COSTI |  |   |
+| E COSTI |  |   |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
 Descrivere ad esempio eventuali
 barriere e/o fattori abilitanti. |   |
 |   |  Stima dell'investimento
-complessivo (€) | 20.000€  |
+| complessivo (€) | 20.000€  |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del
 progetto si prevede che, oltre a fonti
@@ -23439,11 +23200,11 @@ Nella scheda seguente possono essere raccolti interventi e azioni puntuali coere
 | --- | --- | --- |
 |   |  Referente | Legambiente Lombardia / Legambici Federico Del Prete  |
 |   |  Scala dell’intervento (se si tratta di una azione che ha una componente localizzabile)
-(ad esempio, sede di associazione scuola o insieme di scuole, condominio o insieme di condomini, quartiere, città...). | Cittadino (Milano) / metropolitano  |
+| (ad esempio, sede di associazione scuola o insieme di scuole, condominio o insieme di condomini, quartiere, città...). | Cittadino (Milano) / metropolitano  |
 |   |  Localizzazione
-(se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l’azione e fornire una mappa; se disponibili shape-file riferiti al sito/progetto in oggetto). | Partenza e arrivo in Piazza del Cannone; percorso cittadino  |
+| (se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l’azione e fornire una mappa; se disponibili shape-file riferiti al sito/progetto in oggetto). | Partenza e arrivo in Piazza del Cannone; percorso cittadino  |
 |   |  Ambito/ambiti di azione
-(energia, mobilità, verde, economia circolare, altro...). | Mobilità e qualità dello spazio pubblico  |
+| (energia, mobilità, verde, economia circolare, altro...). | Mobilità e qualità dello spazio pubblico  |
 |  |   |   |
 | --- | --- | --- |
 |   | Tipologia di azione | ☐ Governance/policy
@@ -23452,7 +23213,7 @@ Nella scheda seguente possono essere raccolti interventi e azioni puntuali coere
 X Comportamentale (ambito culturale, educativo, attivismo, disseminazione ecc)
 ☐ Altro (specificare)  |
 |   | Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati | Mille Mila Bici è una grande pedalata cittadina che promuove i valori della mobilità ciclistica quotidiana in ambiente urbano e suburbano.  |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati | Mille Mila Bici è una grande pedalata cittadina che promuove i valori della mobilità ciclistica quotidiana in ambiente urbano e suburbano.  |
 |   | Tempistiche
 (Indicare se è una azione prevista o già in atto, l'anno di avvio e anno di conclusione previsti.
 Eventuali step intermedi di realizzazione. In caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). | Evento annuale, con possibile doppio appuntamento primaverile / autunnale (allo studio). Al momento la prossima data è ottobre, 2024.  |
@@ -23463,17 +23224,17 @@ AMBIENTALE * | Risultati attesi
 Indicare quali risultati ci si aspetta di raggiungere e in che senso l'azione descritta può creare condizioni favorevoli alle azioni di mitigazione e adattamento utili al raggiungimento della neutralità climatica. | Coinvolgere i cittadini in una disseminazione dei valori e dei contenuti della mobilità ciclistica quotidiana per una maggiore quota modale di ciclabilità. In questo modo si ridurrebbero le emissioni climalteranti a carico dei trasporti.  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio. | Un maggiore benessere fisico dei cittadini e strade più sicure, privilegiando inoltre l'intermodalità con il trasporto collettivo.  |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio. | Un maggiore benessere fisico dei cittadini e strade più sicure, privilegiando inoltre l'intermodalità con il trasporto collettivo.  |
 |  GOVERNANCE
-E COSTI | Eventuali stakeholder coinvolti | Milano in Bicicletta (co-promotore); Comune di Milano, Regione Lombardia, CONI/FCI  |
+| E COSTI | Eventuali stakeholder coinvolti | Milano in Bicicletta (co-promotore); Comune di Milano, Regione Lombardia, CONI/FCI  |
 | --- | --- | --- |
 |   |  | (patrocinatori); ATM, Decathlon, Tier (partner tecnici); associazioni del Terzo Settore (ACLI, Cig ArcyGay, CSV Milano, FIAB Milano, Massa Marmocchi, NABA, Milano Pride, Sai Che Puoi?, Via Padova Viva, Zerosbatti); Danacol (sponsor)  |
 | --- | --- | --- |
 |   | Commenti sull'implementazione
-Descrivere ad esempio eventuali barriere e/o fattori abilitanti. | Assenza di investimenti pubblici  |
+| Descrivere ad esempio eventuali barriere e/o fattori abilitanti. | Assenza di investimenti pubblici  |
 |   | Stima dell'investimento complessivo (€) | € 20K  |
 |   | OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   | Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento ci si intende avvalere finanziamenti UE o incentivi nazionali o locali?
 ☐ Si X No
@@ -23558,11 +23319,11 @@ Si richiede di compilare la “Scheda raccolta azioni” (suddivisa in 3 parti) 
 | --- | --- | --- |
 |   |  Referente |   |
 |   |  Categoria di progetto | ☐ progetto urbano
-☐ interventi relativi a propri asset e proprie attività  |
+| ☐ interventi relativi a propri asset e proprie attività  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro |   |
+| Edificio, quartiere, altro |   |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). |   |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). |   |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (as es. se si tratta di un progetto integrato). | ☐ Sistemi energetici
 ☐ Involucro edilizio (cappotto, coperture, serramenti)
@@ -23578,9 +23339,9 @@ La scelta può essere multipla | ☐ Tecnologico/infrastrutturale
 ☐ Comportamentale
 ☐ Altro (specificare)  |
 |   |  Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). |   |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). |   |
 |   |  Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). |   |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). |   |
 |  2. IMPATTI^{1} (ENERGIA/ riduzione emissioni CO2 equivalente) | Energia rinnovabile generata MWh/anno (valore atteso) (se previsto dall'intervento) |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  Acquisto di energia elettrica certificata da fonti rinnovabili MWh/anno (valore atteso) (se previsto dall'intervento) |   |   |   |   |   |
@@ -23622,18 +23383,18 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 ☐ altro: indicare  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
 |  3.
 GOVERNANCE
 E COSTI | Eventuali stakeholder coinvolti
 Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. |   |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
 |   |  Stima dell'investimento
-complessivo (€) |   |
+| complessivo (€) |   |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☐ Sì
@@ -23724,15 +23485,15 @@ Avete già predisposto una strategia per la decarbonizzazione/neutralità carbon
 Si richiede di compilare la “Scheda raccolta azioni” (suddivisa in 3 parti) duplicandola per ciascun progetto che si desidera illustrare, compatibilmente con la disponibilità di dati e l'avanzamento dei progetti.
 
 |  1. CONTESTO e DESCRIZIONE | N progetto - Titolo progetto
-(es: 1 – Riquadificazione area XXX) |   |
+| (es: 1 – Riquadificazione area XXX) |   |
 | --- | --- | --- |
 |   |  Referente |   |
 |   |  Categoria di progetto | ☐ progetto urbano
-☐ intervento su propri asset  |
+| ☐ intervento su propri asset  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro |   |
+| Edificio, quartiere, altro |   |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). |   |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). |   |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (a.e se si tratta di un progetto integrato). | ☐ Sistemi energetici
 ☐ Involucro edilizio (cappotto, coperture, serramenti)
@@ -23748,9 +23509,9 @@ La scelta può essere multipla | ☐ Tecnologico/infrastrutturale
 ☐ Comportamentale
 ☐ Altro (specificare)  |
 |   |  Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). |   |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). |   |
 |   |  Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). |   |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). |   |
 |  2. IMPATTI^{1} (ENERGIA/ riduzione emissioni CO2 equivalente) | Energia elettrica rinnovabile generate MWh/anno (valore atteso) (se previsto dall'intervento) |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  Acquisto di energia elettrica certificata da fonti rinnovabili MWh/anno (valore atteso) (se previsto dall'intervento) |   |   |   |   |   |
@@ -23796,19 +23557,17 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 ☐ superficie permeabile a verde aggiuntiva: mq
 ☐ altro: indicare  |
 | --- | --- | --- |
-7
-
 |   | Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
 | --- | --- | --- |
 |  3. GOVERNANCE E COSTI | Eventuali stakeholder coinvolti
-Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. |   |
+| Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. |   |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
 |   |  Stima dell'investimento complessivo (€) |   |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☐ Sì
@@ -23829,7 +23588,7 @@ Replicare la scheda per ciascuna progettualità segnalata nella PARTE A
 |  EDIFICI E SUPERFICI  |   |
 | --- | --- |
 |  N progetto - Titolo progetto
-(es: 1 – Riquadificazione area XXX) |   |
+| (es: 1 – Riquadificazione area XXX) |   |
 |  Superficie intervento (m2): |   |
 |  superficie utile (edificata) (m2) |   |
 |  superficie residenziale (m2) |   |
@@ -23839,7 +23598,7 @@ Replicare la scheda per ciascuna progettualità segnalata nella PARTE A
 |  Coperture verdi (m2) |   |
 |  Superficie utile (riscaldata) complessiva (m2) |   |
 |  Superficie complessiva (m2)
-(includere zone non riscaldate ma per le quali si abbiano usi elettrici, quali atri, corridoi, archivi, magazzini, parcheggi sotterranei, ecc.) |   |
+| (includere zone non riscaldate ma per le quali si abbiano usi elettrici, quali atri, corridoi, archivi, magazzini, parcheggi sotterranei, ecc.) |   |
 |  Volumetria lorda riscaldata complessiva (m3) |   |
 |  Volumetria lorda raffrescata complessiva (m3) |   |
 |  Numero complessivo di occuparti / residenti previsti a regime |   |
@@ -23874,7 +23633,7 @@ edifici serviti: ...  |
 di cui: per cogenerazione
 di cui (se misurati separatamente) per processi (ad es. cucine, usi di laboratorio); specificare il tipo d'uso
 | UM/anno
-(specificare)  |
+| (specificare)  |
 |  Produzione elettrica da fotovoltaico
 di cui: autoconsumata
 di cui: immessa in rete | kWh/anno  |
@@ -23968,11 +23727,11 @@ Nella scheda seguente possono essere raccolti interventi e azioni puntuali coere
 | --- | --- | --- |
 |   |  Referente |   |
 |   |  Scala dell'intervento (se si tratta di una azione che ha una componente localizzabile)
-(ad esempio, sede di associazione scuola o insieme di scuole, condominio o insieme di condomini, quartiere, città...). |   |
+| (ad esempio, sede di associazione scuola o insieme di scuole, condominio o insieme di condomini, quartiere, città...). |   |
 |   |  Localizzazione
-(se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l'azione e fornire una mappa; se disponibili shape-file riferiti al sito/progetto in oggetto). |   |
+| (se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l'azione e fornire una mappa; se disponibili shape-file riferiti al sito/progetto in oggetto). |   |
 |   |  Ambito/ambiti di azione
-(energia, mobilità, verde, economia |   |
+| (energia, mobilità, verde, economia |   |
 |   | circolare, altro...). |   |
 | --- | --- | --- |
 |   |  Tipologia di azione | ☐ Governance/policy
@@ -23981,7 +23740,7 @@ Nella scheda seguente possono essere raccolti interventi e azioni puntuali coere
 ☐ Comportamentale (ambito culturale, educativo, attivismo, disseminazione ecc)
 ☐ Altro (specificare)  |
 |   |  Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati |   |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati |   |
 |   | Tempistiche
 (Indicare se è una azione prevista o già in atto, l'anno di avvio e anno di conclusione previsti.
 Eventuali step intermedi di realizzazione. In caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). |   |
@@ -23992,7 +23751,7 @@ AMBIENTALE * | Risultati attesi
 Indicare quali risultati ci si aspetta di raggiungere e in che senso l'azione descritta può creare condizioni favorevoli alle azioni di mitigazione e adattamento utili al raggiungimento della neutralità climatica. |   |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio. |   |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio. |   |
 |  GOVERNANCE E COSTI | Eventuali stakeholder coinvolti |   |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione |   |
@@ -24105,11 +23864,11 @@ Si richiede di compilare la “Scheda raccolta azioni” (suddivisa in 3 parti) 
 | --- | --- | --- |
 |   |  Referente |   |
 |   |  Categoria di progetto | ☐ progetto urbano
-☐ intervento su propri asset  |
+| ☐ intervento su propri asset  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro |   |
+| Edificio, quartiere, altro |   |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). |   |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). |   |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (a.e se si tratta di un progetto integrato). | ☐ Sistemi energetici
 ☐ Involucro edilizio (cappotto, coperture, serramenti)
@@ -24125,9 +23884,9 @@ La scelta può essere multipla | ☐ Tecnologico/infrastrutturale
 ☐ Comportamentale
 ☐ Altro (specificare)  |
 |   |  Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). |   |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). |   |
 |   |  Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). |   |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). |   |
 |  2. IMPATTI^{1} (ENERGIA/ riduzione emissioni CO2 equivalente) | Energia rinnovabile generata MWh/anno (valore atteso) (se previsto dall'intervento) |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  Acquisto di energia elettrica certificata da fonti rinnovabili MWh/anno (valore atteso) (se previsto dall'intervento) |   |   |   |   |   |
@@ -24168,8 +23927,6 @@ Schema "Fattori di emissione"
 |   |  metano/gpl | KgCO2eq/GJ | 63.3 | Elaborazioni AMAT basate su EEA Emission Guidebook (modello Copert)  |
 |  Energia elettrica | mix di rete | KgCO2eq/kWh | 0.247 | Elaborazioni AMAT su dati ISPRA  |
 |   |  rinnovabile con garanzia di origine | KgCO2eq/kWh | 0 | Utilizzato fattore non LCA convenzionalmente posto a 0  |
-7
-
 |  ALTRI
 IMPATTI | Risultati attesi
 Qualora l'azione incida in ambito non energetico indicare quali risultati ci si aspetta di raggiungere in termini qualitativi ed eventualmente quantitativi. | ☐ minori quantitativi di rifiuti per tipologia: kg/anno...
@@ -24180,18 +23937,18 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 ☐ altro: indicare  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
 |  3.
 GOVERNANCE
 E COSTI | Eventuali stakeholder coinvolti
 Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. |   |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
 |   |  Stima dell'investimento complessivo
-(€) |   |
+| (€) |   |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☐ Sì
@@ -24211,10 +23968,10 @@ Quanto incidono in % sull'investimento complessivo?  |
 | --- | --- |
 |  Nome Università |   |
 |  Sedi presenti sul territorio comunale di Milano
-(specificare eventuale nome identificativo delle strutture e indirizzo e civico dell'ingresso principale delle strutture stesse) |   |
+| (specificare eventuale nome identificativo delle strutture e indirizzo e civico dell'ingresso principale delle strutture stesse) |   |
 |  Superficie utile (riscaldata) complessiva delle sedi milanesi (mq - se disponibile inserire il dato per ciascuna sede) |   |
 |  Superficie complessiva delle sedi milanesi (mq)
-(includere zone non riscaldate ma per le quali si abbiano usi elettrici, quali atri, corridoi, archivi, magazzini, parcheggi sotterranei, ecc.) se disponibile inserire il dato per ciascuna sede |   |
+| (includere zone non riscaldate ma per le quali si abbiano usi elettrici, quali atri, corridoi, archivi, magazzini, parcheggi sotterranei, ecc.) se disponibile inserire il dato per ciascuna sede |   |
 |  Volumetria lorda riscaldata complessiva delle sedi milanesi (mc - se disponibile inserire il dato per ciascuna sede) |   |
 |  Volumetria lorda raffrescata complessiva delle sedi milanesi (mc - se disponibile inserire il dato per ciascuna sede) |   |
 |  Numero complessivo di studenti iscritti nel 2022 presso le sedi milanesi (se disponibile inserire il dato per ciascuna sede) |   |
@@ -24237,11 +23994,11 @@ sede o edifici serviti: ...  |
 COP: ...
 Sede o edifici serviti: ...  |
 |  Sistemi di ventilazione meccanica
-(per tutti gli edifici) | Quota percentuale dei volumi climatizzati dotati di ventilazione meccanica: ... %
-Di cui con sistemi di recupero termico: ... %  |
+| (per tutti gli edifici) | Quota percentuale dei volumi climatizzati dotati di ventilazione meccanica: ... % |
+| Di cui con sistemi di recupero termico: ... %  |
 |  Sistemi di Building Automation
-(per tutti gli edifici) | Quota percentuale dei volumi climatizzati dotati di Building Automation: ... %
-Di cui con sistemi di intelligenza artificiale: ... %  |
+| (per tutti gli edifici) | Quota percentuale dei volumi climatizzati dotati di Building Automation: ... % |
+| Di cui con sistemi di intelligenza artificiale: ... %  |
 |  Illuminazione a LED
 (per tutte le sedi ed edifici) | Quota percentuale punti luce a LED per i diversi edifici: ... %
 Con sistemi di regolazione manuale dell'intensità luminosa: ... %
@@ -24249,14 +24006,12 @@ Con sistemi di regolazione automatica: ... %  |
 |  TIPOLOGIA DI GESTIONE / CONDUZIONE DELL'ENERGIA  |   |
 | --- | --- |
 |  In economia
-(l'Ente paga i combustibili, terzo responsabile esterno, interventi di straordinaria e riquadificazione energetica a carico dell'Ente) | sede o edifici serviti: ...  |
+| (l'Ente paga i combustibili, terzo responsabile esterno, interventi di straordinaria e riquadificazione energetica a carico dell'Ente) | sede o edifici serviti: ...  |
 |  Contratto Servizio Energia
-(L'Ente paga un canone fisso, indipendente dai consumi; il Fornitore acquisisce il ruolo di terzo responsabile, fornisce i vettori energetico, realizza intervento di riquadificazione energetica con obiettivi di risparmio contrattualmente garantiti) | sede o edifici serviti: ...  |
+| (L'Ente paga un canone fisso, indipendente dai consumi; il Fornitore acquisisce il ruolo di terzo responsabile, fornisce i vettori energetico, realizza intervento di riquadificazione energetica con obiettivi di risparmio contrattualmente garantiti) | sede o edifici serviti: ...  |
 |  Convenzione CONSIP
-(se soggetto pubblico) | Tipo contratto: ...
-sede o edifici serviti: ...  |
-0
-
+| (se soggetto pubblico) | Tipo contratto: ... |
+| sede o edifici serviti: ...  |
 |  CONSUMI COMPLESSIVI ENERGIA ELETTRICA PER TUTTE LE SEDI MILANESI  |   |   |   |
 | --- | --- | --- | --- |
 |   |   | Anno 2021 | Anno 2022  |
@@ -24269,7 +24024,7 @@ sede o edifici serviti: ...  |
 di cui: per cogenerazione
 di cui (se misurati separatamente) per processi (ad es. cucine, usi di laboratorio); specificare il tipo d'uso | Smc/anno |  |   |
 |  Consumo di gasolio (se disponibile separato per ciascuna sede)
-di cui: per cogenerazione | litri/anno |  |   |
+| di cui: per cogenerazione | litri/anno |  |   |
 |  Consumo di altro combustibile (ad es. GPL, teleriscaldamento);
 (se disponibile separato per ciascuna sede)
 specificare il vettore
@@ -24363,11 +24118,11 @@ Si richiede di compilare la “Scheda raccolta azioni” (suddivisa in 3 parti) 
 | --- | --- | --- |
 |   |  Referente |   |
 |   |  Categoria di progetto | ☐ progetto urbano
-☐ intervento su propri asset  |
+| ☐ intervento su propri asset  |
 |   |  Scala dell'intervento
-Edificio, quartiere, altro |   |
+| Edificio, quartiere, altro |   |
 |   |  Localizzazione
-Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). |   |
+| Indicare l'area interessata eventualmente allegando una mappa. Se possibile fornire shape-file o segnalare che sono disponibili). |   |
 |   |  Ambiti interessati dal progetto
 La scelta può essere multipla (a.e se si tratta di un progetto integrato). | ☐ Sistemi energetici
 ☐ Involucro edilizio (cappotto, coperture, serramenti)
@@ -24383,9 +24138,9 @@ La scelta può essere multipla | ☐ Tecnologico/infrastrutturale
 ☐ Comportamentale
 ☐ Altro (specificare)  |
 |   |  Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). |   |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati (ad esempio stock edificato, sistemi energetici, infrastrutture per la mobilità). |   |
 |   |  Tempistiche
-Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). |   |
+| Anno di avvio e anno di conclusione previsti; eventuali step intermedi di realizzazione (in caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). |   |
 |  2. IMPATTI^{1} (ENERGIA/ riduzione emissioni CO2 equivalente) | Energia rinnovabile generata MWh/anno (valore atteso) (se previsto dall'intervento) |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  Acquisto di energia elettrica certificata da fonti rinnovabili MWh/anno (valore atteso) (se previsto dall'intervento) |   |   |   |   |   |
@@ -24426,8 +24181,6 @@ Schema "Fattori di emissione"
 |   |  metano/gpl | KgCO2eq/GJ | 63.3 | Elaborazioni AMAT basate su EEA Emission Guidebook (modello Copert)  |
 |  Energia elettrica | mix di rete | KgCO2eq/kWh | 0.247 | Elaborazioni AMAT su dati ISPRA  |
 |   |  rinnovabile con garanzia di origine | KgCO2eq/kWh | 0 | Utilizzato fattore non LCA convenzionalmente posto a 0  |
-7
-
 |  ALTRI
 IMPATTI | Risultati attesi
 Qualora l'azione incida in ambito non energetico indicare quali risultati ci si aspetta di raggiungere in termini qualitativi ed eventualmente quantitativi. | ☐ minori quantitativi di rifiuti per tipologia: kg/anno...
@@ -24438,18 +24191,18 @@ Qualora l'azione incida in ambito non energetico indicare quali risultati ci si 
 ☐ altro: indicare  |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio (es. ridotto traffico stradale, disponibilità di aree verdi, mix abitativo social housing e non) |   |
 |  3.
 GOVERNANCE
 E COSTI | Eventuali stakeholder coinvolti
 Es. convenzioni con servizi di trasporto pubblico o privato, azioni svolte in collaborazione altre aziende/istituzioni. |   |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione
-Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
+| Descrivere Es. eventuali barriere e/o fattori abilitanti. |   |
 |   |  Stima dell'investimento complessivo
-(€) |   |
+| (€) |   |
 |   |  OPEX (operational expenditure)
-Se applicabile. |   |
+| Se applicabile. |   |
 |   |  Copertura dell'investimento
 Indicare se per la realizzazione del progetto si prevede che, oltre a fonti di finanziamento proprie, vengano utilizzati finanziamenti europei o incentivi nazionali/locali. | Oltre che di proprie fonti di finanziamento si intende avvalersi di finanziamenti UE o incentivi nazionali o locali?
 ☐ Sì
@@ -24470,11 +24223,11 @@ Quanto incidono in % sull'investimento complessivo?  |
 | --- | --- |
 |  Nome Cooperativa |   |
 |  Immobili di proprietà, presenti sul territorio comunale di Milano
-(specificare eventuale nome identificativo delle strutture e indirizzo e civico dell'ingresso principale delle strutture stesse) – eventualmente fornire mappa |   |
+| (specificare eventuale nome identificativo delle strutture e indirizzo e civico dell'ingresso principale delle strutture stesse) – eventualmente fornire mappa |   |
 |  Numero complessivo unità abitative di proprietà della Cooperativa |   |
 |  Superficie utile (riscaldata) complessiva delle unità abitative di proprietà della Cooperativa presenti sul territorio di Milano (mq) |   |
 |  Superficie complessiva altri locali riscaldati (mq)
-(ad es. spazi uso ufficio, sale comuni) |   |
+| (ad es. spazi uso ufficio, sale comuni) |   |
 |  Numero complessivo persone residenti presso le unità abitative di proprietà della Cooperativa (anno 2022) |   |
 |  Riferimenti eventuale Energy manager o figura che si occupa della gestione dell'energia degli immobili di proprietà della Cooperativa | Mail e telefono  |
 9
@@ -24514,19 +24267,19 @@ accensione: ... %  |
 |  TIPOLOGIA DI GESTIONE / CONDUZIONE DELL'ENERGIA  |   |
 | --- | --- |
 |  In economia
-(la Cooperativa paga i combustibili, terzo responsabile esterno, interventi di straordinaria e riquadificazione energetica a carico della Cooperativa) | Immobili serviti: ……………………  |
+| (la Cooperativa paga i combustibili, terzo responsabile esterno, interventi di straordinaria e riquadificazione energetica a carico della Cooperativa) | Immobili serviti: ……………………  |
 |  Contratto Servizio Energia
-(La Cooperativa paga un canone fisso, indipendente dai consumi; il Fornitore acquisisce il ruolo di terzo responsabile, fornisce i vettori energetici, realizza interventi di riquadificazione energetica con obiettivi di risparmio contrattualmente garantiti) | immobili serviti: ……………………  |
+| (La Cooperativa paga un canone fisso, indipendente dai consumi; il Fornitore acquisisce il ruolo di terzo responsabile, fornisce i vettori energetici, realizza interventi di riquadificazione energetica con obiettivi di risparmio contrattualmente garantiti) | immobili serviti: ……………………  |
 |  Convenzione specifica per le Cooperative | Tipo contratto: ………………
-Immobili serviti: ……………………  |
+| Immobili serviti: ……………………  |
 |  CONSUMI COMPLESSIVI ENERGIA ELETTRICA PER TUTTI GLI IMMOBILI MILANESI  |   |   |   |
 | --- | --- | --- | --- |
 |   |   | Anno 2021 | Anno 2022  |
 |  Consumo di energia elettrica ad usi condominiali (prelevata dalla rete)
-di cui (se misurati separatamente): per pompe di calore e relativi ausiliari | kWh/a
-nno |  |   |
+| di cui (se misurati separatamente): per pompe di calore e relativi ausiliari | kWh/a |
+| nno |  |   |
 |  Quota dei consumi di energia elettrica prelevata da rete coperta da energia elettrica verde certificata (es. RECS-Renewable Energy Certificate System, GO-Garanzia di origine) | kWh/a
-nno |  |   |
+| nno |  |   |
 |  CONSUMI COMPLESSIVI DI COMBUSTIBILI FOSSILI AD USO CLIMATIZZAZIONE E AD USO TECNOLOGICO PER TUTTI GLI IMMOBILI SITUATI A MILANO  |   |   |   |
 | --- | --- | --- | --- |
 |   |   | Anno 2021 | Anno 2022  |
@@ -24627,11 +24380,11 @@ Nella scheda seguente possono essere raccolti interventi e azioni puntuali coere
 | --- | --- | --- |
 |   |  Referente |   |
 |   |  Scala dell'intervento (se si tratta di una azione che ha una componente localizzabile)
-(ad esempio, sede di associazione scuola o insieme di scuole, condominio o insieme di condomini, quartiere, città...). |   |
+| (ad esempio, sede di associazione scuola o insieme di scuole, condominio o insieme di condomini, quartiere, città...). |   |
 |   |  Localizzazione
-(se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l'azione e fornire una mappa; se disponibili shape-file riferiti al sito/progetto in oggetto). |   |
+| (se si tratta di una azione che ha una componente localizzata, indicare gli indirizzi dei siti presso i quali si svolge l'azione e fornire una mappa; se disponibili shape-file riferiti al sito/progetto in oggetto). |   |
 |   |  Ambito/ambiti di azione
-(energia, mobilità, verde, economia |   |
+| (energia, mobilità, verde, economia |   |
 |   | circolare, altro...). |   |
 | --- | --- | --- |
 |   |  Tipologia di azione | ☐ Governance/policy
@@ -24640,7 +24393,7 @@ Nella scheda seguente possono essere raccolti interventi e azioni puntuali coere
 ☐ Comportamentale (ambito culturale, educativo, attivismo, disseminazione ecc)
 ☐ Altro (specificare)  |
 |   |  Descrizione dell'azione/progetto/intervento
-Fornire una descrizione generale del progetto relativamente agli ambiti identificati |   |
+| Fornire una descrizione generale del progetto relativamente agli ambiti identificati |   |
 |   | Tempistiche
 (Indicare se è una azione prevista o già in atto, l'anno di avvio e anno di conclusione previsti.
 Eventuali step intermedi di realizzazione. In caso di progetti già realizzati che proiettano effetti positivi da qui al 2030, considerare solo quelli conclusi successivamente all'anno 2021-baseline). |   |
@@ -24651,7 +24404,7 @@ AMBIENTALE * | Risultati attesi
 Indicare quali risultati ci si aspetta di raggiungere e in che senso l'azione descritta può creare condizioni favorevoli alle azioni di mitigazione e adattamento utili al raggiungimento della neutralità climatica. |   |
 | --- | --- | --- |
 |   |  Cobenefici
-I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio. |   |
+| I cobenefici sono i risultati indiretti della propria azione, effetti e cambiamenti realizzati sulla vita dei soggetti coinvolti e sul territorio. |   |
 |  GOVERNANCE E COSTI | Eventuali stakeholder coinvolti |   |
 | --- | --- | --- |
 |   |  Commenti sull'implementazione |   |
@@ -24957,11 +24710,11 @@ Figure 7: Investment assessment
 |  Total interventions costs | PayBack time  |
 | --- | --- |
 |  Unitary cost source: Decreto MITE 14 febbraio 2022 | Case 1: tax relief of the 75%
-Payback time: : 18 years  |
+| Payback time: : 18 years  |
 |   | Case 2: tax relief of the 100%
-Payback time: : 9 years  |
+| Payback time: : 9 years  |
 |  Unitary cost source: ENEA Annual Report 2023 | Case 1: tax relief of the 75%
-Payback time: 27 years  |
+| Payback time: 27 years  |
 |   | Case 2: tax relief of the 100%
 Payback time: 10 years  |
 Comune di Milano

@@ -664,7 +664,7 @@ Average unit cost since January 2022
 The following tables show the unit costs (€/MWh) used and their subsequent increases:
 
 |  Unit cost (€/MWh)
-Average cost since 2017 | Electricity | Natural gas | Petroleum products | Heating networks | Wood energy  |
+| Average cost since 2017 | Electricity | Natural gas | Petroleum products | Heating networks | Wood energy  |
 | --- | --- | --- | --- | --- | --- |
 |  Residential | 182 € | 138 € | 86 € | 76 € | 64 €  |
 |  Tertiary | 182 € | 138 € | 86 € | 76 € | 64 €  |
@@ -675,7 +675,7 @@ Average cost since 2017 | Electricity | Natural gas | Petroleum products | Heati
 |  Wastes |  |  |  |  |   |
 |  Agriculture | 182 € | 140 € | 1 347 € |  |   |
 |  Coût unitaire (€/MWh)
-Prix moyen depuis janvier 2022 | Electricity | Natural gas | Petroleum products | Heating networks | Wood energy  |
+| Prix moyen depuis janvier 2022 | Electricity | Natural gas | Petroleum products | Heating networks | Wood energy  |
 |  Residential | 204 € | 138 € | 149 € | 76 € | 116 €  |
 |  Tertiary | 204 € | 138 € | 149 € | 76 € | 116 €  |
 |  Road Transport | 147 € | 189 € | 193 € |  |   |
@@ -1446,8 +1446,8 @@ INDDIGO - April 2023
 | --- | --- | --- | --- |
 |   | Loi de programmation sur l’énergie et le climat) |  |   |
 |  National | National Low Carbon Strategy V2 (SNBC), set by decree n°2020-547 dated 21 April 2020. | Sets the national carbon neutrality targets for 2050, sets sector-specific carbon neutrality targets, and associated carbon budgets.
-Reviewed every 5 years. | As an indication, a "compatible SNBC" scenario is established by applying the sector-specific GHG emission reduction targets.
-The CCC should at least be compatible with the SNBC’s 2030 objectives.  |
+| Reviewed every 5 years. | As an indication, a "compatible SNBC" scenario is established by applying the sector-specific GHG emission reduction targets. |
+| The CCC should at least be compatible with the SNBC’s 2030 objectives.  |
 |  National | Pluriannual Energy Programming (PPE) | In order to achieve the energy policy objectives laid out in the (French) Energy Code (art. L 100-1, L 100-2 and L 100-4), the PPE presents the action orientations and priorities required for the management of all forms of energy within continental mainland France.
 The PPE must be compatible with the greenhouse gas emission reduction targets set by the carbon budgets, in particular for the energy sector, as well as with the National Low Carbon Strategy (SNBC).
 It covers 2 successive periods of 5 years. PPE1: 2016-2023, PPE2: 2019-2028 was approved on 21/04/2020. PPE 3 will cover the period 2024-2033. | Reference document for the national resources and priorities to be implemented to achieve the France’s strategic energy objectives.  |
@@ -1461,7 +1461,7 @@ Make the best use of the opportunity presented by the CCC to discuss new actions
 |  Level | Title | Energy and climate guidelines | Comments for CCC  |
 | --- | --- | --- | --- |
 |   |  | • the possibility of deploying low emission zones (LEZ)
-• redirecting investment from the railways towards commuting services. |   |
+| • redirecting investment from the railways towards commuting services. |   |
 |  National | Climate and resilience law n° 2021-1104 dated 22/08/2021 | This law presents some of the Citizens' Climate Convention’s 146 proposals to reduce greenhouse gas emissions by 40% before 2030, in a spirit of social justice and adopted by the French President. Obligation to respect the European commitment to a 55% reduction in emissions by 2030, compared to 1990 figures.
 
 Among the measures:
@@ -1965,25 +1965,25 @@ Lack of expertise in quality comprehensive renovations | Research into innovativ
 Regional actions on key professional sectors  |
 | --- | --- | --- |
 |  On the exploratory scenarios aiming at -50% by 2030
-*in addition to the above*  |   |   |
+| *in addition to the above*  |   |   |
 |  Mobility: passengers - acceleration on soft levers: cycling, carpooling, electric vehicles (EV), and incentives for modal shift | Limited funding and HR capacity
 Social context not conducive to accelerating EV penetration | Mobilisation of subsidies and financial mechanisms to secure the realisation of projects, identification of low-cost deployable solutions
 Setting the scene for a decarbonised Marseille 2030
 Identification of socially targeted financing solutions  |
 |  Mobility: logistics | Not identified at this stage | Not identified at this stage  |
 |  Energy renovation in the tertiary sector - 40% reduction in energy consumption for the entire tertiary sector | Uncertainty on capacity
-No regulatory incentive for areas under 1000m2 | Not identified at this stage  |
+| No regulatory incentive for areas under 1000m2 | Not identified at this stage  |
 |  Residential energy renovation - achieving 30% of homes renovated and accelerating on RDCF | No regulatory incentives and inability of households to finance renovations
-RDCF: Limited HR capacity & Long deployment times for delegation/concessions/etc. | Request for derogations to experiment with innovative schemes integrating constraints and financing solutions adapted to each type of household
-Setting the scene for a decarbonised Marseille 2030  |
+| RDCF: Limited HR capacity & Long deployment times for delegation/concessions/etc. | Request for derogations to experiment with innovative schemes integrating constraints and financing solutions adapted to each type of household |
+| Setting the scene for a decarbonised Marseille 2030  |
 |  Relating to a -75% scenario by 2030
-*in addition to the above*  |   |   |
+| *in addition to the above*  |   |   |
 |  Mobility: passengers | Structural projects for post-2030 modal shift (LNPCA in particular)
 Pace of EV penetration needed out of reach
 Urbanistic changes impossible in a short time | Breaks to be identified
 Search for innovative solutions for additional funding (especially European)  |
 |  Mobility: logistics | Penetration rate of heavy duty electric vehicles/H2 needed out of range | Breaks to be identified
-Search for innovative solutions for additional funding (especially European)  |
+| Search for innovative solutions for additional funding (especially European)  |
 |  Tertiary energy renovation | Pace of renovation currently out of reach | Breaks to be identified
 Search for innovative solutions for additional funding (especially European)  |
 
@@ -2010,7 +2010,7 @@ Climate City Contract - Action Plan Section
 
 INDDIGO - April 2023
 |  Lack of expertise | Mobilisation of regional observatories (ORECA, ATMO, etc.) and national expertise centres (Cerema, ADEME, etc.)
-Improving the sharing of expertise between communities  |
+| Improving the sharing of expertise between communities  |
 | --- | --- |
 
 ## 5.1.2 B 1.3 SUMMARY OF THE CARBON OFFSET STRATEGY
@@ -3144,7 +3144,7 @@ INDDIGO - April 2023
 |  ISOWATT |  | Manufacture of insulation out of recycled paper and cardboard  |
 | --- | --- | --- |
 |  Glokis | Southern Region, IADYS, Fil&Fab, | Structuring a recovery organisation for the city’s used fishing equipment
-(fishing nets, long-lines, etc.)  |
+| (fishing nets, long-lines, etc.)  |
 |  EKO! | City of Marseille, ADEME | Creation of a structure to promote low-tech and re-use  |
 |  Saint-Gobain |  | Recycling of ZirPro Beads  |
 |  Repulp Design |  | Recycling of citrus waste for the production of a bio-sourced injection material  |
@@ -3389,8 +3389,8 @@ NV3 - RENATURING AND (RE)DEVELOPING ECOLOGICAL CORRIDORS
 |  Description | Carbon neutrality challenges | Parties involved | Budget and the major identified obstacles  |
 | --- | --- | --- | --- |
 |  These actions operate on the great corridors of the blue infrastructures, these are nature's spinal columns that ensure connections with the strategic areas in the hillsides; Huveaune, Jarret, Marseille Canal, Aygalades; they will have a significant potential for carbon sequestration. These linear urban and waterway projects are based on: Renaturing and ecological engineering: recreating wetlands for non-human life, .. | =>Developing carbon sinks via wetlands
-=>Create multifunctional climate regulating spaces with socio-cultural benefits | City of Marseille
-EPAGE HUCA, MAMP, | Not assessed at this stage  |
+| =>Create multifunctional climate regulating spaces with socio-cultural benefits | City of Marseille |
+| EPAGE HUCA, MAMP, | Not assessed at this stage  |
 |  The increase in wetlands, which play a fundamental role in the carbon cycle (on a global scale, 25 to 30% of carbon is estimated to be stored in terrestrial ecosystems, i.e. twice as much as the world's forests) and other urban and landscape functions: thoroughfares for active life, natural infrastructures and venues for life and productive cultures. These natural solutions contribute to climate and risk regulation, supply and production (food, biomass) and the creation of socio-cultural and recreational spaces. There is a real need to reintroduce these great green and blue infrastructures into the heart of the city, the waterways of Marseille are its genuine ecological corridors and structural thoroughfares: Huveaune, Jarret, Canal de Marseille, Aygalades. The major strategic ecological corridors of the territory are based on these green and blue infrastructures: North Nerthe-Etoile linkup, East Garlaban-Calanques linkup. |  |  |   |
 |  Recreating wildlife inhabited wetlands will play a fundamental role in the carbon cycle (on a global scale, 25 to 30% of carbon is estimated to be stored in terrestrial ecosystems, i.e. twice as much as the world's forests) and other urban and landscape functions: thoroughfares for active life, natural infrastructures and venues for life and productive cultures. These natural solutions contribute to climate and risk regulation, supply and production (food, biomass) and the creation of recreational and efficient social ecosystems. |  |  |   |
 |  These structuring green and blue infrastructures provide the support for a finer network that weaves together the various urban micro-structures: garden streets, family allotment gardens, planted promenades, private and public |  |  |   |
@@ -3786,7 +3786,7 @@ Conservatoire du littoral | All parties involved with the Frioul Islands | Prese
 Accessibility and visits
 Removal of landscape black spots and renaturing  |
 |  RTM
-Icard |  | Accessibility of islands and archipelagos (ferry and barge)  |
+| Icard |  | Accessibility of islands and archipelagos (ferry and barge)  |
 |  Parc National des Calanques
 Conservatoire du littoral |  | Programme to promote the heritage of the Calanques National Park (archipelagos, southern coastline and Cap Croisette)  |
 
@@ -3807,7 +3807,7 @@ First projects identified
 |  Sponsor(s) | Partner(s) | Project(s)  |
 | --- | --- | --- |
 |  City of Marseille |  | Completion of a diagnosis of the Marseilles territory to anticipate the development of recommendations for the local and shared governance of sensitive coastal, island and marine environments.
-Collaboration with foreign authorities to participate in monitoring the Marseilles approach such that they can later transpose it to their own territories, as well as provide methodological and practical support to the Marseilles diagnosis based on their own experience  |
+| Collaboration with foreign authorities to participate in monitoring the Marseilles approach such that they can later transpose it to their own territories, as well as provide methodological and practical support to the Marseilles diagnosis based on their own experience  |
 |  AMP Metropolis |  | International outreach: towards COASTING 2 on a Mediterranean scale  |
 |  UPACA |  | Working towards energy transition for marinas (study)  |
 |  Region |  | Study and research projects on bioethanol and hydrogen  |
@@ -3831,13 +3831,13 @@ First projects identified
 |  Sponsor(s) | Partner(s) | Project(s)  |
 | --- | --- | --- |
 |  AIEJE
-Le Naturoscope |  | Mediterranean Eco-actions campaign for the Metropolis area’s bays where covered by the Contract  |
+| Le Naturoscope |  | Mediterranean Eco-actions campaign for the Metropolis area’s bays where covered by the Contract  |
 |  AIEJE
-Le Naturoscope |  | InfEau Mer campaign for beach users and the general public  |
+| Le Naturoscope |  | InfEau Mer campaign for beach users and the general public  |
 |  Calanques National Park |  | Call for "Educanques" ideas - 3rd generation learning partnership  |
 |  EPAGE HuCA |  | Deployment of ISEF projects across the EPAGE HuCA (excluding BV Huveaune) - Aygalades sector  |
 |  City of Marseille |  | The HUBLOT, a place to raise marine environment awareness for the general public
-Discovery trail and numerous educational activities  |
+| Discovery trail and numerous educational activities  |
 |  City of Marseille |  | Educational programmes initiated by the Municipal Centre for the Discovery of the Sea (Pointe-Rouge) + Underwater trails + Development of educational marine areas  |
 |  Associations/NGOs
 (Naturoscope, Marseille capitale de la mer, CPIE, FSN 13, Surfrider, Amie du Marégraphe, Planète Mer, Hatoup, etc.) |  | Educational activities for a varied public: children (school, leisure centres), young people, adults  |

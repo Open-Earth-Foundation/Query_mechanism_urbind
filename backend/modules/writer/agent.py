@@ -25,7 +25,12 @@ from backend.services.agents import (
     build_openrouter_model,
     run_agent_sync,
 )
-from backend.tools.calculator import sum_numbers
+from backend.tools.calculator import (
+    divide_numbers,
+    multiply_numbers,
+    subtract_numbers,
+    sum_numbers,
+)
 from backend.utils.city_normalization import format_city_display_name
 from backend.utils.config import AppConfig
 from backend.utils.prompts import load_prompt
@@ -68,8 +73,24 @@ def build_writer_agent(config: AppConfig, api_key: str, analysis_mode: str) -> A
         """Return arithmetic sum of provided numbers."""
         return sum_numbers(numbers, source="writer")
 
+    @function_tool(name_override="subtract_numbers", strict_mode=True)
+    def subtract_numbers_tool(minuend: float, subtrahend: float) -> float:
+        """Return arithmetic subtraction of two numeric operands."""
+        return subtract_numbers(minuend, subtrahend, source="writer")
+
+    @function_tool(name_override="multiply_numbers", strict_mode=True)
+    def multiply_numbers_tool(numbers: list[float]) -> float:
+        """Return arithmetic product of provided numbers."""
+        return multiply_numbers(numbers, source="writer")
+
+    @function_tool(name_override="divide_numbers", strict_mode=True)
+    def divide_numbers_tool(dividend: float, divisor: float) -> float:
+        """Return arithmetic division of two numeric operands."""
+        return divide_numbers(dividend, divisor, source="writer")
+
     @function_tool
     def submit_writer_output(output: WriterOutput) -> WriterOutput:
+        """Return structured writer output unchanged."""
         return output
 
     return Agent(
@@ -77,7 +98,13 @@ def build_writer_agent(config: AppConfig, api_key: str, analysis_mode: str) -> A
         instructions=instructions,
         model=model,
         model_settings=settings,
-        tools=[sum_numbers_tool, submit_writer_output],
+        tools=[
+            sum_numbers_tool,
+            subtract_numbers_tool,
+            multiply_numbers_tool,
+            divide_numbers_tool,
+            submit_writer_output,
+        ],
         output_type=WriterOutput,
         tool_use_behavior="run_llm_again",
     )

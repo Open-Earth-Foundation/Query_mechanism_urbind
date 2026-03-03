@@ -85,10 +85,6 @@ The government of The City of Łódź will continuously work on further expansio
 |  EV | Electric vehicle  |
 |  GHG | Greenhouse gases  |
 |  GUS | Statistics Poland / Główny Urząd Statystyczny  |
-5
-
-Climate Neutrality Action Plan
-
 |  IPCC | The Intergovernmental Panel on Climate Change  |
 | --- | --- |
 |  IPPU | Industrial Processes and Product Use  |
@@ -311,10 +307,6 @@ For calculation in t or MWh of primary energy
 |  Number of passengers using public transport (million passengers) |   | 224,8 |   |   |
 |  Total distance travelled by public transport (trams and buses) (million kilometres) |   | 53,6 |   |   |
 |  Sector: Waste |   |  |  |   |
-Climate Neutrality Action Plan
-
-4
-
 |  Total volume of municipal solid waste generated in the city | 250 855  |   |   |
 | --- | --- | --- | --- |
 |  Sector: Industrial Process and Product Use (IPPU) |  |  |   |
@@ -610,8 +602,6 @@ Climate Neutrality Action
 |  Financial systems | Local government and internal departments | High. Prioritization of local climate mitigation actions and financing of priority projects from municipal budget Securing external finance for climate action (e.g. loans, green bonds, PPPs) | High. Demonstrating leadership in climate mitigation efforts at the national and regional level  |
 |   |  National government | High. Supporting existing and launching new subsidy / co-financing programs for GHG emission reductions Investment in infrastructure projects reducing climate impact | High. Implementation of national climate goals and fostering green transition  |
 |   |  Banks and other financial institutions | Medium. Provision of green finance, including concessional finance, for climate mitigation projects | Low. Reliable clients for green loans programs (low financed emissions)  |
-Climate Neutrality Action
-
 |   | EU Funds | High. Provision of grant-based and concessional finance for climate mitigation projects | High. Fostering green transition at local level in line with the established statutory goals  |
 | --- | --- | --- | --- |
 |   |   |  Technical assistance and capacity building  |   |
@@ -643,10 +633,8 @@ Detailed information on the calculation of direct impacts (emission reductions) 
 |  Fields of action | Systemic levers | Early changes | Late outcomes | Direct impacts (emission reductions) | Indirect impacts (co-benefits)  |
 |  Energy systems | Technology and infrastructure | Replacement of coal-fired heating sources with a combination of renewable energy and other low-carbon solutions, such as heat pumps, solar collectors, district heating and others. | Complete phase-out of coal combustion for heating in residential buildings | 153,000 t CO2 | Decrease of air pollution and smog generation in the city (PM10, PM 2.5 and other polluting substances)  |
 |   |   |  Improving efficiency and decarbonization of district heating system in the city due to replacement of coal with biomass and natural gas | Further reducing carbon footprint of heat energy used in buildings and development of low-carbon district heating system | 370,000 t CO2 | More reliable and affordable energy supply  |
-Climate Neutrality Action
-
 |   |  | Increasing the number of PV installations on private, municipal and commercial buildings | Tripling the deployment of solar power systems, increasing the share of renewables and reducing | 50,000 t CO2 | Enhanced energy security
-Economic and social benefits due to savings on electricity cost  |
+| Economic and social benefits due to savings on electricity cost  |
 | --- | --- | --- | --- | --- | --- |
 |   |  |  | the dependency from grid power supply |  | Reduced air pollution  |
 |   |   |  Deployment of wind turbines as a renewable energy source for residential and other buildings | Diversification of renewable energy supply options and reducing the dependency from grid power supply | 5,000 t CO2 | Enhanced energy security
@@ -654,8 +642,6 @@ Economic and social benefits due to savings on electricity cost
 Reduced air pollution  |
 |   |  Business models | Piloting the use of contractual instruments such as PPAs for renewable energy purchase | Purchase of renewable energy for all public buildings and electric public transport | 167,000 t CO2 | N/A  |
 |   |  | Development of EV charging infrastructure and extending the network of charging stations to create enabling conditions for private transport fleet electrification | Achieving the share of EVs of at least 20% of all vehicles registered in the city and sufficient charging infrastructure available | 225,000 t CO2 | Decrease of air pollution, especially along the main road networks (PM10, PM 2.5 and other polluting substances)  |
-Climate Neutrality Action
-
 |  Mobility & transport | Technology and infrastructure | Construction of the cross-city tunnel in Łódź | Reducing the number of vehicles in the centre of the city and increasing the use of urban railway transport | 10,000 t CO₂ | Decrease of air pollution, especially along the main road networks (PM10, PM 2.5 and other polluting substances)
 Reducing the travel time for residents
 Improving convenience of public transportation system  |
@@ -664,8 +650,6 @@ Improving convenience of public transportation system  |
 |  Waste & circular economy | Technology and infrastructure | Construction of Łódź Recycling Center (Łódzkie Centrum Recyklingu) | Increasing waste recycling rate | 50,000 t CO₂ (preliminary assessment of emission reduction from improved waste management) | Contribution to circular economy development  |
 |  Green infrastructure & nature-based solutions | Governance and policy | Tree planting and developing of green zones in the city within the Greening Strategy | Increased share of the green zones and better quality of green zones | 10,000 t CO₂ (removal) | Improved quality of life due to better accessibility of green zones  |
 |   |  Governance and policy | Improving land use efficiency and avoiding GHG emissions from land use change | Protection of green zones | 12,728 t CO₂ | Improved city development planning and associated economic and social benefits  |
-Climate Neutrality Action
-
 |  Built environment | Technology and infrastructure | Launching subsidy scheme to conduct energy audits for buildings to determine the most cost-effective modernization measures | Additional energy efficiency improvements and GHGs emission reductions in buildings sector | 307,000 t CO2 | Improved energy security Economic and social benefits due to lower energy costs  |
 | --- | --- | --- | --- | --- | --- |
 
@@ -695,8 +679,6 @@ B-2.1: Description of action portfolios
 |   | Phase out of coal fired heating in residential sector before 2030 | Complete replacement of coal fired heating units in residential sector with the focus on low-carbon alternatives, including heat pumps and other renewable energy sources, using investment from various sources, including national, municipal and private.  |
 |   |  District heating and electricity generation decarbonization | Reconstruction of EC3 infrastructure for the combustion of black pellets - BATII (supporting early implementation of the project and other decarbonization measures in district heating system) in addition to other decarbonization projects foreseen under the SECAP.  |
 |   |  Tripling the deployment of solar power installations | Tripling the deployment of solar power installations in residential and commercial buildings and in other  |
-Climate Neutrality Action
-
 |  Energy systems | Installation of wind turbines in residential sector | public and private locations (e.g. construction of a solar power plant at Szczecińska str., installation of solar power systems on the roofs of multi-apartment and individual buildings, public buildings, and other locations).  |
 | --- | --- | --- |
 |   |  Using contractual instruments to procure renewable energy | Installation of wind turbines with individual capacity of 1-20 kW using the support via "Moja elektrownia wiatrowa" program and other sources of investments. "Moja elektrownia wiatrowa" program is implemented by Narodowy Fundusz Ochrony Środowiska i Gospodarki Wodnej (NFOŚiGW) and provides 50% of financing for the installation of wind turbines and energy storage systems).  |
@@ -712,8 +694,6 @@ B-2.1: Description of action portfolios
 |   |  Public transport system electrification | Electrification of buses with the goal to replace all diesel fuel buses with electric buses or other low-carbon alternatives.  |
 |  Waste & circular economy | Construction of Łódź Recycling Center (Łódzkie Centrum Recyklingu) | MPO Łódź is planning to build the Łódź Recycling Center (ŁCR) and launch its operation in 2028. ŁCR will include sorting lines for mixed municipal waste, as well as special lines for the processing of separated waste streams (e.g. plastics and metals, paper, glass, bulk waste, and organic waste. The ŁCR also will include a RDF production installation.  |
 |  Green infrastructure & nature-based solutions | Tree planting and developing of green zones in the city within the Greening Strategy | Implementing the Greening Strategy to enhance carbon dioxide removals from the atmosphere and contribute to the neutralization of residual emissions. The action includes revitalization of parks and green areas, creation of new urban forests and parks, creation of pocket parks near residential buildings, and greenery along the city's public transport communication system, as well as creation of green parking areas (with geogrid and grass cover). This action also includes gradual restoration and revitalization of river valley areas through Blue-Green Network initiatives and other revitalization projects.  |
-Climate Neutrality Action
-
 |   | Improving land use efficiency and avoiding GHG emissions from land use change | Increasing land use efficiency via development of spatial planning documents and prioritization of brownfield projects to avoid additional land conversion from forest land and other green areas to built-up territories by 2030 and beyond.  |
 | --- | --- | --- |
 |  Built environment | Intensifying energy efficiency improvements in buildings | Implementing energy efficiency projects in buildings with the goal to double energy savings compared to the actions included in the SECAP. This action will include launching a subsidy scheme to conduct energy audits for buildings to determine the most cost-effective modernization measures, supporting capacity building on energy efficiency in buildings and other measures to intensify decarbonization of buildings sector. Additional energy savings will be achieved due to development of urban green and blue infrastructure that will increase comfort and lower energy demand.  |
@@ -725,10 +705,8 @@ The description of key transformative projects on the way to climate neutrality 
 |  Action outline | Action name | Phase out of coal fired heating in residential sector before 2030  |
 |   |  Action type | Fuel switch  |
 |   |  Action description | The action foresees complete replacement of coal fired heating units in residential sector with the focus on low-carbon alternatives, including heat pumps and other renewable energy sources, as well as connection to the district heating network. The action will be implemented via existing programs, such as Clean Air Program (Czyste Powietrze) and Warm Housing Program (Ciepłe Mieszkanie), as well as using private funds of the residents and other sources of finance. Heat pumps could be a promising solution for decarbonization of residential heating sector due to efficiency conversion of ambient energy and rapidly growing market in Poland. Poland demonstrates one of the highest growth rates in terms of heat pump sales with total number of units sold exceeding 200,000 in 2022 and almost one in three units in the total number of space  |
-Climate Neutrality Action
-
 |   |  | heating units sold in Poland was a heat pump.9
-District heating is another low-carbon option, as coal consumption is expected to be reduced significantly and eventually phased-out in the local district heating system.  |
+| District heating is another low-carbon option, as coal consumption is expected to be reduced significantly and eventually phased-out in the local district heating system.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Energy systems  |
 |   |  Systemic lever | Technology and infrastructure  |
@@ -763,8 +741,6 @@ The City cooperates with district heating operator to identify additional decarb
 |  Reference to impact pathway | Field of action | Energy systems  |
 |   |  Systemic lever | Technology and infrastructure  |
 |   |  Outcome (according to module B-1.1) | Further reducing carbon footprint of heat energy used in buildings and development of low-carbon district heating system  |
-Climate Neutrality Action
-
 |  Implementation | Responsible bodies/person for implementation | District heating operator  |
 | --- | --- | --- |
 |   |  Action scale & addressed entities | District heating network  |
@@ -804,8 +780,6 @@ The costs are based on preliminary estimates and will be updated in the process 
 |  Reference to impact pathway | Field of action | Energy systems  |
 |   |  Systemic lever | Technology and infrastructure  |
 |   |  Outcome (according to module B-1.1) | Diversification of renewable energy supply options and reducing the dependency from grid power supply  |
-Climate Neutrality Action
-
 |  Implementation | Responsible bodies/person for implementation | City of Łódź Office (UML: : especially the Office of Energy and Air Quality), residents of the city, , residents of the city, ZLM (Zarząd Lokali Miejskich- Municipal Housing Authority),  |
 | --- | --- | --- |
 |   |  Action scale & addressed entities | City-wide action  |
@@ -842,8 +816,6 @@ Climate Neutrality Action
 |   |  Total costs and costs by CO2e unit | To be defined based on the options available on the market.  |
 |  Action outline | Action name | Development of EV charging infrastructure and private transport fleet electrification  |
 |   |  Action type | Transport electrification  |
-Climate Neutrality Action
-
 |   | Action description | The action foresees investment in public charging points and supporting electrification of the transport via other means to create enabling conditions for the growth of EV share to 20% in 2030 in line with projections for EU average values and close the infrastructure gap (i.e. lower rate of charging points increase compared to EV sales). The action will also support installation of charging points at homes (incentivizing charging infrastructure for new residential buildings and supporting installation of charging points during building retrofit) and business locations (coordination with main employers and supporting charging points installation). Lack of access to efficient charging infrastructure is one of the most significant barriers to EV purchase and its role is even growing over time since the cost of EVs is declining and driving range is increasing. Investment in public charging infrastructure is thus an important enabler of large-scale EVs deployment in the city with each charging point installed able to trigger at least 10 additional electric vehicles on the roads of the city. The Plan for construction of public charging stations for electric vehicles on the territory of Lodz City approved by Lodz City Council on 20^{th} October, 2021 foresees establishing at least 100 charging stations with 200 charging points (11 kW each) in addition to the 38 charging points existed at the time of the Plan approval. Additional measures, including privately owned charging stations, will be implemented within CCC Action Plan implementation.  |
 | --- | --- | --- |
 |   | Field of action | Mobility & transport  |
@@ -855,8 +827,6 @@ Climate Neutrality Action
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Implementation of the action will require efficient coordination between different stakeholders to ensure proper planning.  |
 |  Impact & cost | Generated renewable energy (if applicable) | Not applicable  |
 |   |  Removed/substituted energy, volume, or fuel type | Not applicable  |
-Climate Neutrality Action
-
 |   | GHG emissions reduction estimate (total) per emission source sector | 225,000 t CO₂e  |
 | --- | --- | --- |
 |   |  GHG emissions compensated (natural or technological sinks) | Not applicable  |
@@ -883,7 +853,7 @@ Climate Neutrality Action
 |   |  GHG emissions reduction estimate (total) per emission source sector | 10,000 t CO2e  |
 |   |  GHG emissions compensated (natural or technological sinks) | Not applicable  |
 |   |  Total costs and costs by CO2e unit | EUR 391 million
-EUR / t CO2e (estimated assuming 50 years lifetime for transport infrastructure projects).  |
+| EUR / t CO2e (estimated assuming 50 years lifetime for transport infrastructure projects).  |
 |  Action outline | Action name | Public transport system electrification  |
 |   |  Action type | Public transport  |
 |   |  Action description | The goal of the action is to replace all diesel fuel buses with electric buses or other low-carbon alternatives. As of 2022, there were 418 diesel buses and only 17 new electric buses operating in the public transport system of the city. The action foresees gradual replacement of all diesel buses with electric or hydrogen fuelled buses. The action will also foresee the development of charging infrastructure to enable efficient operation of electric buses.  |
@@ -896,13 +866,11 @@ EUR / t CO2e (estimated assuming 50 years lifetime for transport infrastructure 
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | The first 17 electric buses started operation in 2022.  |
 |  Impact & cost | Generated renewable energy (if applicable) | Not applicable  |
 |   |  Removed/substituted energy, volume, or fuel type | Not applicable  |
-Climate Neutrality Action
-
 |   | GHG emissions reduction estimate (total) per emission source sector | 26,000 t CO₂e  |
 | --- | --- | --- |
 |   |  GHG emissions compensated (natural or technological sinks) | Not applicable  |
 |   |  Total costs and costs by CO2e unit | EUR 170 million
-EUR / t CO₂e (estimated assuming 15 years lifetime for buses operating in public transportation system).  |
+| EUR / t CO₂e (estimated assuming 15 years lifetime for buses operating in public transportation system).  |
 |  Action outline | Action name | Tree planting and developing of green zones in the city within the Greening Strategy  |
 |   |  Action type | Green zones  |
 |   |  Action description | The action is focused on implementation of the Greening Strategy of The City of Łódź to enhance carbon dioxide removals from the atmosphere and contribute to the neutralization of residual emissions. The measures include revitalization of parks and green areas, creation of new urban forests and parks, creation of pocket parks near residential buildings, arranging greenery along the city's public transport communication system, river restoration and revitalization, as well as other activities with green components.  |
@@ -922,7 +890,7 @@ Ecopact
 Climate Neutrality Action
 
 |   | Total costs and costs by CO2e unit | EUR 155 million
-EUR / t CO2e (estimated assuming 30 years lifetime).  |   |
+| EUR / t CO2e (estimated assuming 30 years lifetime).  |   |
 | --- | --- | --- | --- |
 |   |  ACTION OUTLINE | Action name | Intensifying energy efficiency improvements in buildings  |
 |   |  | Action type | Energy efficiency  |
@@ -933,8 +901,6 @@ EUR / t CO2e (estimated assuming 30 years lifetime).  |   |
 |  Implementation | Responsible bodies/person for implementation | City of Łódź Office (UML: especially the Office of Energy and Air Quality and Office of Revitalization and Housing), residents of the city.  |   |
 |   |  Action scale & addressed entities | City-wide action  |   |
 |   |  Involved stakeholders | ZLM (Municipal Investment Board), real estate management companies and household owners associations, technology and equipment providers educational institutions, universities  |   |
-Climate Neutrality Action
-
 |   | Comments on implementation – consider mentioning resources, timelines, milestones | The city continuously implements energy efficiency projects, including large scale revitalization of the historical centre of the city. Large-cale projects are also included in the SECAP.  |
 | --- | --- | --- |
 |  Impact & cost | Generated renewable energy (if applicable) | Not applicable  |
@@ -947,11 +913,9 @@ The costs are based on preliminary estimates and will be updated in the process 
 |  Action outline | Action name | Construction of Łódź Recycling Center (Łódzkie Centrum Recyklingu)  |
 |   |  Action type | Waste management  |
 |   |  Action description | MPO Łódź is planning to build the Łódź Recycling Center (ŁCR) and launch its operation in 2028. ŁCR will include sorting lines for mixed municipal waste (up to 120,000 t per year), as well as special lines for the processing of separated waste streams (plastics and metals - up to 30,000 t per year, paper - up to 31,000 t per year, glass - up to 16,000 t per year, bulk waste - up to 20,000 t per year, and organic / kitchen waste - up to 35,000 t per year. The ŁCR also will include a RDF production installation with the capacity of up to 85,000 t per year. The Łódź Recycling Center will also include a roof-top photovoltaic installation with a capacity of 1.68 MW. Mixed waste, after removing the commercial fractions (for recycling), will be subjected to bio-drying (this will reduce the weight by 20%). The remaining waste will be processed into pre-RDF/RDF and will used as a fuel for combustion in thermal power plants and cement plants. Kitchen waste (BIO) will go to the biogas plant and biogas will be used for heat and electricity generation (approximately 3 million m³ of gas per year).
-Additional measures to include waste management will include construction of new recycling points for selective collection of municipal waste (PSZOK), in particular, Widzew East (included in the Regional Waste Management Plan) and recycling point at Wersalska street (under construction).  |
+| Additional measures to include waste management will include construction of new recycling points for selective collection of municipal waste (PSZOK), in particular, Widzew East (included in the Regional Waste Management Plan) and recycling point at Wersalska street (under construction).  |
 |  Reference to impact | Field of action | Waste and circular economy  |
 |   |  Systemic lever | Technology and infrastructure  |
-Climate Neutrality Action
-
 | pathway | Outcome (according to module B-1.1) | Increasing waste recycling rate |
 | --- | --- | --- |
 | Implementation | Responsible bodies/person for implementation | MPO-Lódź (Municipal Waste Company) |
@@ -960,7 +924,7 @@ Climate Neutrality Action
 | Comments on implementation – consider mentioning resources, timelines, milestones | There is an environmental permit and tender documentation available, and implementation of the project is planned to be started soon and completed in 2028. |
 | Impact & cost | Generated renewable energy (if applicable) | Not applicable |
 | Removed/substituted energy, volume, or fuel type | 6,300 MWh of electricity
-,500 MWh of heat energy |
+| ,500 MWh of heat energy |
 | GHG emissions reduction estimate (total) per emission source sector | 2,855 t CO2e from renewable energy generation (accounted for within SECAP)
 Additional emission reduction will be achieved due to the increased recycling rates and substitution of primary resource consumption with recycled materials. Such emission reductions are typically attributable to the users of recycled materials and not the producer of waste and could be materialized outside the city boundaries.
 Indicative emission reductions from improved waste management are estimated as 50,000 t CO2e.
@@ -1098,8 +1062,6 @@ Climate Neutrality Action
 |  Indicator Context |   |
 |  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | Yes  |
 |  If yes, which emission source sectors does it measure? | All sectors  |
-Climate Neutrality Action
-
 |  Does the indicator measure indirect impacts (i.e., co-benefits)? | No  |
 | --- | --- |
 |  If yes, which co-benefit does it measure? | N/A  |
@@ -1133,8 +1095,6 @@ Climate Neutrality Action
 |  Expected availability | High. Data are expected to be provided by CEEB.  |
 |  Suggested collection interval | According to the target intervals (2025, 2027, 2030)  |
 |  References |   |
-Climate Neutrality Action
-
 |  Deliverables describing the indicator | Extract from the CEEB database and analysis performed based on the data provided.  |
 | --- | --- |
 |  Other indicator systems using this indicator | -  |
@@ -1169,8 +1129,6 @@ Climate Neutrality Action
 |  If yes, which emission source sectors does it measure? | N/A  |
 |  Does the indicator measure indirect impacts (i.e., co-benefits)? | No  |
 |  If yes, which co-benefit does it measure? | N/A  |
-Climate Neutrality Action
-
 |  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
 | --- | --- |
 |  If yes, which action and impact pathway is it relevant for? | Mobility & transport - Development of EV charging infrastructure and extending the network of charging stations to create enabling conditions for private transport fleet electrification  |
@@ -1205,8 +1163,6 @@ Climate Neutrality Action
 |  Deliverables describing the indicator | Monitoring reports  |
 |  Other indicator systems using this indicator | -  |
 |  B-3.2: Indicator Metadata  |   |
-Climate Neutrality Action
-
 |  Indicator Name | Public transport  |
 | --- | --- |
 |  Indicator Unit | Million passengers  |
@@ -1240,8 +1196,6 @@ Climate Neutrality Action
 |  If yes, which co-benefit does it measure? | N/A  |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
 |  If yes, which action and impact pathway is it relevant for? | Green infrastructure & nature-based solutions - Tree planting and developing of green zones in the city within the Greening Strategy  |
-Climate Neutrality Action
-
 |  Is the indicator captured by the existing CDP/SCIS/ Covenant of Mayors platforms? | No  |
 | --- | --- |
 |  Data requirements |   |
@@ -1333,8 +1287,6 @@ Climate Neutrality Action
 | --- | --- | --- | --- | --- | --- |
 |  |   |   |   |   |   |
 |  GHG emissions monitoring and accounting system for city-wide inventory | Maintaining procedures to collect all required activity data and update emission factors to Regularly update city-wide GHG emissions inventory covering buildings, transport and other sectors. | Institutional capacity to plan and monitor GHG emission reduction projects | Leadership - Local government and internal departments Other stakeholders – utilities. | Enabling data-driven policy making, planning GHG emission reduction projects, monitoring impact of interventions implemented | Not applicable.  |
-Climate Neutrality Action
-
 |  City's budget climate tagging | Incorporation into the existing Integrated City Financial Management System of climate tagging based on existing own experience and best practices on sub-national climate budget tagging (selection of the methodology, project types, implementing rules, reporting, etc.). | Institutional capacity to plan and monitor GHG emission reduction projects | Leadership - Local government and internal departments | Enabling planning GHG emission reduction projects, cost-efficiency assessment of projects, attraction of additional climate finance via demonstration of leadership and commitment to climate action | Tracking finances on projects with significant co-benefits  |
 | --- | --- | --- | --- | --- | --- |
 
@@ -1349,15 +1301,11 @@ This section describes the actions to support and foster social innovation initi
 |  Intervention name | Description | Systemic barriers / opportunities addressed | Leadership and stakeholders involved | Enabling impact | Co-benefits  |
 |  (Indicate name of intervention) | (Describe the substance of the intervention) | (Refer to barriers and opportunities identified in Module A-3) | (List leaders and all stakeholder involved and affected, referring to the stakeholders mapped in Module A3) | (Describe how intervention enables climate neutrality) | (Indicate how intervention helps achieve the impact listed in Module B-1)  |
 |  Working group Decarbonization actions hub | Collecting information on GHG Emission reduction project and project proposals and building partnerships. In | Insufficient institutional capacity to plan, develop, secure finance, implement and monitor GHG emission | Leadership - Local government and internal departments Of the Stakeholders involved - businesses | Building the pipeline of climate mitigation projects and fostering cooperation among stakeholders | Improved air quality  |
-Climate Neutrality Action
-
 |   | response to the comments raised during consultations with business such decarbonization action hub could also act as a platform or a working group to facilitate the dialogue between the businesses and UML to find new perspectives for cooperation and implement new investment projects that will support climate neutrality aspirations of the city. | reduction projects |  |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  Local green fund | Creation of a local green fund that could Finance climate Mitigation projects Using contributions From businesses working in the city. | Insufficient access finance | Leadership - Local government and internal departments Of the stakeholders involved - businesses | Structuring project finance for climate action | Improved air quality  |
 |  Citizens' Budget | Annual opportunity for residents to submit their own projects and for residents to vote on the projects they want to see implemented and funded from the city budget. | Social and behavioural systems Institutional and organisational systems | City of Łódź Office, residents | A strong mandate to implement mitigation and adaptation projects | Improved city development planning and associated economic and social benefits (improving quality of life, co-participation of residents in decision-making processes)  |
 |  VOXpopuli platform | Platform for local e-referendums | Social and behavioural systems Institutional and organisational systems | City of Łódź Office, residents | A strong mandate to implement mitigation and adaptation projects | Improved city development planning and associated economic and social benefits (improving quality of  |
-Climate Neutrality Action
-
 |   |  |  |  |  | life,
 co-participation of
 residents
@@ -1365,19 +1313,17 @@ in decision-making
 processes)  |
 | --- | --- | --- | --- | --- | --- |
 |  Information and consultation point at the Office of Energy and Air Quality | A point which assists residents in obtaining information about subsidies and submitting applications. | Social and behavioural systems
-Institutional and organisational systems | City of Łódź Office, residents | A strong mandate to implement mitigation and adaptation projects | improved quality of life, better air quality  |
+| Institutional and organisational systems | City of Łódź Office, residents | A strong mandate to implement mitigation and adaptation projects | improved quality of life, better air quality  |
 |  Office for Urban Activity | Office working closely with residents and NGOs | Social and behavioural systems
-Institutional and organisational systems | City of Łódź Office, residents, NGO | A strong mandate to implement mitigation and adaptation projects | Improved city development planning and associated economic and social benefits
-(improving quality of life, co-participation of residents in decision-making processes)  |
+| Institutional and organisational systems | City of Łódź Office, residents, NGO | A strong mandate to implement mitigation and adaptation projects | Improved city development planning and associated economic and social benefits |
+| (improving quality of life, co-participation of residents in decision-making processes)  |
 |  Ekoportal (webside) | The City's website focusing on all the City's environmental activities. | Social and behavioural systems | City of Łódź Office, residents | A strong mandate to implement mitigation and adaptation projects | co-participation of residents in decision-making processes  |
 |  Consultation meetings with the city authorities | Cyclical consultation meetings with residents on important projects and new ideas for implementation. | Social and behavioural systems
-Institutional and organisational systems | City of Łódź Office, Mayor and Deputy Mayors, citizens | A strong mandate to implement mitigation and adaptation projects | Improved city development planning and associated economic and social benefits
-(improving quality of life, co-participation of residents in decision-making processes)  |
+| Institutional and organisational systems | City of Łódź Office, Mayor and Deputy Mayors, citizens | A strong mandate to implement mitigation and adaptation projects | Improved city development planning and associated economic and social benefits |
+| (improving quality of life, co-participation of residents in decision-making processes)  |
 |  Local Centers | Places created for citizens and NGOs, creating spaces for collaboration, for the realisation of new ideas. | Social and behavioural systems
-Institutional and organisational systems | Residents, NGOs | A strong mandate to implement mitigation and adaptation projects | Improved city development planning and associated economic and social benefits
-(improving quality of life, co-participation of residents in decision-making processes)  |
-Climate Neutrality Action
-
+| Institutional and organisational systems | Residents, NGOs | A strong mandate to implement mitigation and adaptation projects | Improved city development planning and associated economic and social benefits |
+| (improving quality of life, co-participation of residents in decision-making processes)  |
 |   |  |  |  |  | processes  |
 | --- | --- | --- | --- | --- | --- |
 |  Citizens' panels | A randomly selected group of citizens decides on important decisions for the city, decides on a given issue taking into account the common good of all citizens of Łódź. | Social and behavioural systems Institutional and organisational systems | Residents, Universities, NGOs | A strong mandate to implement mitigation and adaptation projects | Improved city development planning and associated economic and social benefits (improving quality of life, co-participation of residents in decision-making processes)  |
@@ -1607,8 +1553,6 @@ Table A3-2. Information on waste processing routes for Łódź City in 2023
 |  Mechanical-biological treatment plant - Ruszczyn, gm. Kamieńsk | 41 339 | 21%  |
 |  Unsorted municipal waste | 35 328 | 18%  |
 |  Biodegradable food waste | 6 010 | 3%  |
-Climate Neutrality Action
-
 |  Municipal Waste Selective Collection Point (PSZOK) - Kryniczno, gm. Środa Śląska (unsorted municipal waste) | 2 109 | 1%  |
 | --- | --- | --- |
 |  Waste management site - Ścinawka Dolna, gm. Ścinawka Średnia (unsorted municipal waste) | 3 909 | 2%  |
@@ -1654,8 +1598,6 @@ Table A3-4. Waste collection via recycling centers in Łódź City in 2023
 |  Construction and demolition waste | 2 914  |
 |  Other recyclable materials | 4 337  |
 |  PSZOK Kasprowicza - ul. Kasprowicza 10 (ZGO) | 1 936  |
-Climate Neutrality Action
-
 |  Construction and demolition waste | 641  |
 | --- | --- |
 |  Other recyclable materials | 1 296  |
@@ -1810,8 +1752,6 @@ Annex 5. 2nd Łódź Citizens' Panel “How to reduce harmful greenhouse gas emi
 |  E-1 | 98.33% | Installation of photovoltaic modules a municipal utility facilities.  |
 |  E-2 | 95.00% | Installation of photovoltaic modules on city-owned residential buildings (if the monument conservation agrees, also renovated tenement houses).  |
 |  E-5 | 93.33% | Measures to save heat energy by the city by intensification of thermal modernisation work on buildings owned by the city.  |
-Climate Neutrality Action
-
 |  E-7 | 90.00% | Measures for electricity-saving by the city through modernisation of city lighting (i.e. replacement of light bulbs with energy-saving LEDs, installation of photovoltaic modules on street lamp posts where economically viable, installation of smart city lighting).  |
 | --- | --- | --- |
 |  E-8 | 86.67% | Development and implementation of a comprehensive programme of resident education related to energy saving, including information on the possibility of financial support, promotion of the replacement of old-type cookers (the so-called "black-smoke-belching stoves") with ecological furnaces and ways of obtaining refund for such replacement, educational "anti-coal" indicating the problems of generating energy from coal combustion, especially lignite), the benefits of building a Waste Thermal Treatment Plant.  |
@@ -1827,8 +1767,6 @@ Climate Neutrality Action
 |  O-3 | 85.00% | Organisation and implementation of competitions for schools, public area clean-up actions and games with an environmental theme.  |
 |  O-4 | 83.33% | Active measures for the introduction of national-level restrictions on excessive packaging waste.  |
 |  O-5 | 96.61% | Intensification and promotion of PSZOK (Selective Municipal Waste Collection Point) activities, launching of a mobile PSZOK  |
-Climate Neutrality Action
-
 |  O-9 | 91.67% | Creation and implementation of an app to facilitate waste management by residents and other functionalities developed during the public consultation concerning the app.  |
 | --- | --- | --- |
 |  O-12 | 91.67% | Intensification of the “Lódž tap water” promotional campaign and installation of water drinkers at schools and in public utility buildings.  |
@@ -2202,8 +2140,6 @@ The table below enlists the signatories $^3$  who are committing to this CCC, an
 |  Veolia Energia Łódź | Power engineering (international) | Private company | Maciej Herman Artur Kin | Members of the Board  |
 |  Puro Hotels | Hotel industry | Private company | Hubert Trela | President of the Board  |
 |  Idemia | IT Systems | Private company | Bartłomiej Szymański | Managing Director/Member of the Board  |
-Climate-Neutrality Commitments
-
 |  Lodz Univeristy of Technology (Politechnika Łódzka) | Education | Public organization | Professor Krzysztof Jóźwik | Rector  |
 | --- | --- | --- | --- | --- |
 |  University of Lodz (Uniwersytet Łódzki) | Education | Public organization | Professor Łukasz Korporowicz | VICE-RECTOR FOR SCIENCE, FIRST DEPUTY OF THE RECTOR  |
@@ -2213,8 +2149,6 @@ Climate-Neutrality Commitments
 |  Municipal Communications Company (MPK - Łódź Spółka z o.o) | Public transport | Municipal company | Zbigniew Papierski | President of the management board  |
 |  Ericsson Poland | Electric Comapny | Private company | Martin Mellor/Anna Olesiejuk-Chacińska | President/ Member of the Board  |
 |  Atal | Development Company | Private company | Zbigniew Jurioszek | President of the management board  |
-Climate-Neutrality Commitments
-
 |  WWF Poland | Ecology | Non-governmental and ecological organization | Miroslaw Proppe | Chief Executive Officer WWF Poland  |
 | --- | --- | --- | --- | --- |
 |  Climate Strategies Poland Foundation | Ecology | Non-for-profit organization | Agnieszka Liszka – Dobrowolska , Łukasz Broniewski | Members of the \Board  |
@@ -2226,17 +2160,7 @@ Climate-Neutrality Commitments
 |  ETPromo | Services for industry | Private company | Łukasz Tomczak | President of the Board  |
 |  AMAGI MEDIA | IT industry | Private company | Mariusz Ostoja- Świerczyński | Senior Director of Engineering  |
 |  Echo Investment & Archicom | Development Company | Private company | Echo Investment : Maciej Drozd and Rafał Mazurczak
-Archicom : Waldemar Olbryk and Rafał Zboch | Vi-ce President of the Management Board and Board Member  |
-
-5
-6
-
-Climate-Neutrality
-
-Commitments
-
-#
-
+| Archicom : Waldemar Olbryk and Rafał Zboch | Vi-ce President of the Management Board and Board Member  |
 |   |  |  |  | President of the Management Board and Board Member  |
 | --- | --- | --- | --- | --- |
 |  European Regional Centre for Ecohydrology of the Polish Academy of Sciences | Education | Science Center | Dr hab. Katarzyna Izydorczyk | Director  |
@@ -2247,8 +2171,6 @@ Commitments
 |  Water Supply and Sewerage Plant Company in Łódź (Zakład Wodociągów i Kanalizacji) | Water management | Municipal company | Michał Śmeichowicz | President of the Management Board  |
 |  ABB Sp. z o.o., ABB E-Mobility Sp. z o.o. | Energy and automation technologies | Private company | Tomasz Wolanowski, Przemysław Zakrzewski | Vice-president of the management board, Vice-president of the management board  |
 |  IndieBI S.A. | IT industry | Private company | Tomasz Kaczmarczyk | President of the management board  |
-Climate-Neutrality Commitments
-
 |  VFM sp. z o.o. | Development Company | Private company | Michał Zaczkowski | Chief Investment Officer  |
 | --- | --- | --- | --- | --- |
 

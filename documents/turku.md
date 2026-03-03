@@ -456,7 +456,7 @@ Climate Neutrality Action Plan
 7
 
 |   |  |  | 0,1% of Finlands area but over 12% of all endangered species in Finland can be found in the area.
-The target is to stop biodiversity loss and the destruction of ecosystems and as a long term target to restore lost ecosystems. | mitigation of climate change and adaptation. | sustainable development in all operations, implementing the sustainable development goals of the United Nations, and strives to be one the leading climate and nature cities in the world. By decision of the City Board, Turku has signed the European Commission Green City Accord, committing to taking a significant step in preserving and improving biodiversity and taking part in European collaboration (City Board 23 November 2020).  |
+| The target is to stop biodiversity loss and the destruction of ecosystems and as a long term target to restore lost ecosystems. | mitigation of climate change and adaptation. | sustainable development in all operations, implementing the sustainable development goals of the United Nations, and strives to be one the leading climate and nature cities in the world. By decision of the City Board, Turku has signed the European Commission Green City Accord, committing to taking a significant step in preserving and improving biodiversity and taking part in European collaboration (City Board 23 November 2020).  |
 | --- | --- | --- | --- | --- | --- |
 |  Strategy/Policy | Local | The City Strategy | The City Strategy is a document which answers to the following questions:
 • How will Turku look in the 2030s?

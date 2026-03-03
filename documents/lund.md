@@ -737,16 +737,16 @@ Climate Neutrality Action Plan
 | --- | --- | --- | --- | --- |
 |  Local | LundaMats III Sustainable Transport Plan | Municipal transport plan | Details goals and measures for transport, the most challenging sector for reaching climate neutrality |   |
 |  Local | Plan for Climate Neutral Construction
-(Plan för klimatneutralt byggande) | Municipality plan for Net zero construction | Lays out key priorities and strategic areas in reaching net zero in construction |   |
+| (Plan för klimatneutralt byggande) | Municipality plan for Net zero construction | Lays out key priorities and strategic areas in reaching net zero in construction |   |
 |  Local | Waste Management Pla 2022-2026
-(Avfallsplan för Lunds kommun 2022-2026) | Municipal waste/resource management plan | Details Lund’s strategic resource- and waste management, guiding the work towards increased circularity |   |
+| (Avfallsplan för Lunds kommun 2022-2026) | Municipal waste/resource management plan | Details Lund’s strategic resource- and waste management, guiding the work towards increased circularity |   |
 |  Local | Lund municipality's climate policy council Reports 2019-24
-(Lunds kommuns klimatpolitiska råd) | The council's mission is to review the municipality's efforts to reduce climate impact and adapt to climate change. It also proposes improvements to help the municipality achieve its climate goals, culminating in an annual report | Annual report with recommendations to improve and speed up actions to become climate neutral | Implement the recommendations when and where it’s possible  |
+| (Lunds kommuns klimatpolitiska råd) | The council's mission is to review the municipality's efforts to reduce climate impact and adapt to climate change. It also proposes improvements to help the municipality achieve its climate goals, culminating in an annual report | Annual report with recommendations to improve and speed up actions to become climate neutral | Implement the recommendations when and where it’s possible  |
 |  Regional | A Climate-neutral and fossil-free Skåne: Climate and energy strategy for Skåne
-(Ett klimatneutralt Och fossilbränslefritt Skåne: Klimat- och energistrategi för Skåne) | Regional strategy with climate goals concerning energy, transport, construction industry, agriculture, | Supports development targets in Lund, and provides framework for increased regional cooperation | Close practical working not least on regional mobility and electricity supply, but more action needed  |
+| (Ett klimatneutralt Och fossilbränslefritt Skåne: Klimat- och energistrategi för Skåne) | Regional strategy with climate goals concerning energy, transport, construction industry, agriculture, | Supports development targets in Lund, and provides framework for increased regional cooperation | Close practical working not least on regional mobility and electricity supply, but more action needed  |
 |  Regional | Skåne’s Innovation Strategy | Identifies sustainable urban development and climate change as key areas for innovation and economic development | Links climate transition into regional economic development |   |
 |  Regional | Regional transportation infrastructure for Skåne 2022-2033
-(Regional Transportinfrastruktur för Skåne 2022-2033) | Regional Transport planning document for major infrastructure investments | Important strategic document for development of a coherent regional public transport and cycling infrastructure and to address road transport challenges |   |
+| (Regional Transportinfrastruktur för Skåne 2022-2033) | Regional Transport planning document for major infrastructure investments | Important strategic document for development of a coherent regional public transport and cycling infrastructure and to address road transport challenges |   |
 |  National | Miljöbalken | The purpose of the Environmental Code is to promote sustainable | Supports sustainability targets in Lund, |   |
 CITY OF LUND
 
@@ -875,14 +875,14 @@ Climate Neutrality Action Plan
 |  **Role** | Develop regional project as national pilot to use national transport infrastructure investment to maximise mobility and minimise emissions  |
 |  **System** | **Barriers**  |
 |  Organisational | Lack of sense of urgency and slow decision-making processes within the municipality
-• Uncertain/inadequate forecasts and calculations of outcomes of new solutions create disagreement among decision-makers  |
+| • Uncertain/inadequate forecasts and calculations of outcomes of new solutions create disagreement among decision-makers  |
 |   | **Opportunities**  |
 |   | More streamlined focus on transition and willingness to use iterative solutions to test and scale  |
 |  **Stakeholders involved** | City of Lund technical departments  |
 |  **Role** | Production of clearer decision cases for solutions showing impacts, co-benefits and risks, and the opportunity for small-scale pilots to minimise risk and increase certainty on impacts and co-benefits  |
 |  **System** | **Barriers**  |
 |  Financial | Lack of investment in railway infrastructure and maintenance makes rail travel less reliable and attractive
-• Regular delays in train operations due largely to poor maintenance makes transition to public transport more challenging. National maintenance dept for railway: 75 billion SEK  |
+| • Regular delays in train operations due largely to poor maintenance makes transition to public transport more challenging. National maintenance dept for railway: 75 billion SEK  |
 |  **Stakeholders involved** | Trafikverket, Department of Finance, Viable cities  |
 |  **Role** | Act with other Viable Cities partners to engage with national agencies to ensure efficient and well-managed infrastructure for relivable transport  |
 |  **System** | **Barriers**  |
@@ -901,9 +901,9 @@ Climate Neutrality Action Plan
 |  Field of actions | **Agriculture and land-use**  |
 |  System | **Barriers**  |
 |  Technological/infrastructure | Climate impacts of investment in re-flooding or creating new wetlands take a long time to develop
-• Investments through until 2030 will not reach full climate potential for many years or even decades  |
+| • Investments through until 2030 will not reach full climate potential for many years or even decades  |
 |   | Difficulty in accurately measuring emissions from land-use
-• Creates uncertainty about changes in practice and their impacts in short and long term  |
+| • Creates uncertainty about changes in practice and their impacts in short and long term  |
 |  Opportunities  |   |
 |   | Engagement with researchers and experts to develop science and business cases of land-use related emissions calculation, monitoring and cost impact.  |
 |  Stakeholders involved | City departments, Researchers at SLU Agricultural University / Lund University  |
@@ -930,7 +930,7 @@ Climate Neutrality Action Plan
 |   | • High labour costs make repair uncompetitive in many cases  |
 | --- | --- |
 |   | Market focus at best on more sustainable products and not on fewer products
-• Consumption-based economy drives focus on volume increase instead of decrease. Lack of scaleable alternative economic models  |
+| • Consumption-based economy drives focus on volume increase instead of decrease. Lack of scaleable alternative economic models  |
 |   | **Opportunities**  |
 |   | Development of repair cafes and circular hubs  |
 |   | Partnership approach with University and retailers to explore alternative business models  |
@@ -957,7 +957,7 @@ Climate Neutrality Action Plan
 |  **System** | **Barriers**  |
 |  Political & regulatory | Slow and complicated permit processes for all renewable energy, including wind, solar, biogas and hydrogen  |
 |   | Lack of clear policies and incentives to promote renewable energy adoption.
-• Change in biogas and biopropane taxation, they are now taxed in the same way as natural gas and propane, reducing incentives to invest in biogas.  |
+| • Change in biogas and biopropane taxation, they are now taxed in the same way as natural gas and propane, reducing incentives to invest in biogas.  |
 |   | **Opportunities**  |
 |   | Development of prioritised planning and legislative framework to accelerate and broaden major climate investments and streamline policy to maximise impact.  |
 CITY OF LUND
@@ -1028,7 +1028,7 @@ Climate Neutrality Action Plan
 |   |  | through actions like reducing waste, using public transport, and supporting green businesses. |   |
 | --- | --- | --- | --- |
 |   | Behavioural scientists | The city has limited mandate to influence many of the choices made by local citizens, commuters, businesses and employers and a scientific approach to understanding behavioural drivers can be crucial in developing tools to maximise potential.
-There is an imperative to ensure that the climate transition in Lund at least does not exacerbate socio-economic, gender and other disparities, and where possible actively contributes to a more equitable development in the city. | Behavioural change will be a decisive factor in the climate transition in Lund and a better understanding of methods to bring about constructive change and socio-economic c-benefits will be crucial to gain the buy-in necessary for an ambitious transition.  |
+| There is an imperative to ensure that the climate transition in Lund at least does not exacerbate socio-economic, gender and other disparities, and where possible actively contributes to a more equitable development in the city. | Behavioural change will be a decisive factor in the climate transition in Lund and a better understanding of methods to bring about constructive change and socio-economic c-benefits will be crucial to gain the buy-in necessary for an ambitious transition.  |
 |   | National government | Supports Lund’s climate ambitions through funding, policy guidance, and collaborative initiatives, largely via Energy Agency | Strong involvement and commitment to climate transition via Viable Cities and other operational programmes  |
 |  Civil society sector | Climate alliance Lund, “Lunds agreement with the idea-based sector”, The Umbrella organization for civil society organisations in Lund | Lund is the municipality in Sweden with the most civil organizations per capita. There are organisations working specifically with climate and circular economy as well as a multitude working with social issues, recreation, sports and culture. The city has agreements for cooperation with NGO:s and also work directly with individual NGO:s and umbrella organization to engage citizens. | The civil society sector in Lund is very engaged in the climate transition and participate in projects and cooperations with the city and the private sector.  |
 CITY OF LUND
@@ -1110,8 +1110,8 @@ Climate Neutrality Action Plan
 #3 Improved air quality
 #4 Economical and social advantages  |
 |   | Technology & Infrastructure | #1 Service department installs 100 charging points by public buildings
-#2 LKF installs 192 charging points | #1 Approximately 900 new charging points installed by the city and municipal companies until 2030 | TBD | #1 Improved air quality
-#2 Reduced noise pollution  |
+| #2 LKF installs 192 charging points | #1 Approximately 900 new charging points installed by the city and municipal companies until 2030 | TBD | #1 Improved air quality |
+| #2 Reduced noise pollution  |
 |   |  Technology & Infrastructure , Social innovation | #1 Within CoAction, many opportunities to reduce fossil-fuelled traffic in business trips are tested and evaluated
 #2 Several full-scale trials will be conducted
 #3 The municipality continues its work in collaboration with selected companies
@@ -1183,11 +1183,11 @@ Climate Neutrality Action Plan
 9
 
 |   |  |  |  |  | #2 Improved public health
-#3 Social cohesion  |
+| #3 Social cohesion  |
 | --- | --- | --- | --- | --- | --- |
 |  Fields of action | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions | Indirect impacts (co-benefits)  |
 |  Net Zero Contraction | Technology & infrastructure, Governance & Policy | #1 Ongoing process, evaluated, finetuned and replicated
-#2 Evaluating options to formalize ambition levels in the contract, not legally binding at the moment. | #1 Adjusted and optimized new standard of process for land allocations, climate impact an aspects that is always evaluated. Certain level of ambition required to have a good chance of getting a contract. Climate ambitions formalized in binding contract | Potential reduction of current trial is approx 1500-2000tons CO2e compared to previous Busuness as Usual Scenario. Around the same numbers per year on average. Can vary a lot from year to year | #1 Creation of biogenic carbon sinks in construction materials  |
+| #2 Evaluating options to formalize ambition levels in the contract, not legally binding at the moment. | #1 Adjusted and optimized new standard of process for land allocations, climate impact an aspects that is always evaluated. Certain level of ambition required to have a good chance of getting a contract. Climate ambitions formalized in binding contract | Potential reduction of current trial is approx 1500-2000tons CO2e compared to previous Busuness as Usual Scenario. Around the same numbers per year on average. Can vary a lot from year to year | #1 Creation of biogenic carbon sinks in construction materials  |
 |   |  Technology & infrastructure, Governance & Policy | #1 Process/plan for internal reuse in place, with storage and handling organized
 #2 Local private actor established reuse/logistical centre
 #3 Study and decision made about reusehub/centre | #1 All parts up and running
@@ -1205,7 +1205,7 @@ Climate Neutrality Action Plan
 0
 
 |   | Governance & Policy Learning & capabilities | #1 Established process for municipal climate- and energy advisors' work to influence SMEs, tenant owners' associations and individuals in energy saving | multiple actions, decision making tools | TBD | 10% reduction in energy use | #1 Cost savings
-#2 Improved indoor climate  |
+| #2 Improved indoor climate  |
 | --- | --- | --- | --- | --- | --- | --- |
 |   | Learning & capabilities
 Governance & Policy Technology & infrastructure | #1 Selection and list of groundwork materials (with a smaller climate footprint) | TBD | TBD |  | #1 Cost savings
@@ -1218,8 +1218,8 @@ Governance & Policy Technology & infrastructure | #1 Selection and list of groun
 #2 Municipal housing company LKF will have installed 4000 kWp solar panels in 2027 | Adding of 86 GWh solar and wind power until 2030 | #1 Provides a more secure energy supply
 #2 Increased job opportunities |   |
 |   |  Technology & infrastructure
-Governance & Policy | #1 Finalisation of network development plan in collaboration with Kraftringen
-#2 Demonstrate how the internetified grid will work, including business models and financing from infrastructure funds | TBD | TBD | #1 Enables development of renewable energy and the electrification of industry and transport |   |
+| Governance & Policy | #1 Finalisation of network development plan in collaboration with Kraftringen |
+| #2 Demonstrate how the internetified grid will work, including business models and financing from infrastructure funds | TBD | TBD | #1 Enables development of renewable energy and the electrification of industry and transport |   |
 |   |  Technology & infrastructure | #1 New digital platform in place for trade and control of district heating
 #2 District cooling and power to stabilise and increase flexibility in the energy system | #1 Completion of 2-3 pilot hydrogen production and storage facilities (100 kW-1 MW) for backup power | Energy savings of 10-15 percent? Battery capacity 2030 - electric cars – work in progress | #1 Provides a more secure energy supply
 #2 nables development of renewable energy |   |
@@ -1334,7 +1334,7 @@ Climate Neutrality Action Plan
 ) Investigation into if current environmental zone, covering inner city, can be expanded
 ) Work to increase access to fossil-free fuels and electrification (liquid biogas, electricity and hydrogen) for heavy transport in collaboration with neighbouring municipalities. 6) Establish hydrogen production for freight transports  |
 |   | 10. Decrease construction-related freight transport | 1) Promote optimized logistical solutions for building and construction projects internally, including logistical checkpoints with pooling, reloading, storage etc., to reduce mass transportation needs. 2) Influence all larger building or construction projects within the municipality to adopt smarter mass handling and transport solutions, including private actors 3) Work with awareness spreading within the city and among private actors to prioritize reduced mass generation in architectural stage and planning
-) Cooperate with other municipalities that have come longer in mass handling, such as Helsingborg, to exchange knowledge and create common solutions  |
+| ) Cooperate with other municipalities that have come longer in mass handling, such as Helsingborg, to exchange knowledge and create common solutions  |
 |   | 11. Accelerate decarbonisation of work machines | 1) Testing and evaluation of emissions-free battery-run robot land mowers in Cleancon project, to possibly replace HVO-run land mowers. The robot land mowers are also expected to reduce transport needs
 ) Testing and evaluation of emissions free construction machines in Cleancon project
 ) Continued and increased work in Service Department to replace remaining gasoline-powered machines used in maintenance of green areas (including lawnmowers), to electric, gas driven or HVO-powered machines.
@@ -1359,10 +1359,9 @@ Climate Neutrality Action Plan
 ) Build internal capacity  |
 | --- | --- | --- |
 |   | 13. Work to influence consumers and food retailers | 1) Communicate with (and launch campaigns towards) Lund's citizens to increase awareness of local and more sustainably produced food
-) Hold dialogue with food retailers and farmers' interest groups to explore collaboration possibilities and ways in which local and sustainable farming can be supported  |
+| ) Hold dialogue with food retailers and farmers' interest groups to explore collaboration possibilities and ways in which local and sustainable farming can be supported  |
 |   | 14. Review public procurement practices to promote local and sustainable producers | 1) There are a number of barriers when it comes to promoting local and sustainable producers. For example, these producers can't always accommodate the needs of a large buyer in terms of volumes or quality. There is also the matter of transports, where it is hard for a municipality to set demands. A product may be locally produced but then shipped off to Asia for processing before it is sent back. The economical situation in Sweden has also made it more difficult to buy for example ecologically or locally produced food. The decrease in demand in the society in general has decreased the supply. Often, there are also many factors to take into account when choosing among products, often with insufficient data to support the decisionmaking. One possible way to move forward towards promoting local and sustainable producers could be to use more of the city's land for food production, possibly in the form of service concessions. From a procurement perspective it is desirable that national regulation is not too regulating, since it can prevent the city from developing new solutions together with the market.
-
-) Within SCOPE (a sustainable procurement project, mentioned later in Circular Economy and Sustainable Consumption) three focus areas will be selected, and one is expected to be food. The project will entail: a) market dialogues with (food) companies, b) building of support structures to facilitate for companies with climate smart solutions to join procurements, and c) activities to influence buying behaviour of company employees.  |
+| ) Within SCOPE (a sustainable procurement project, mentioned later in Circular Economy and Sustainable Consumption) three focus areas will be selected, and one is expected to be food. The project will entail: a) market dialogues with (food) companies, b) building of support structures to facilitate for companies with climate smart solutions to join procurements, and c) activities to influence buying behaviour of company employees.  |
 |   | 15. Requirements for tenants on municipal land to farm sustainably and with low emissions | The city owns around 5 percent of the agricultural land in Lund, amounting to 891 hectares. This is agricultural land that can be leased out to farmers and the city has direct influence to reduce emissions by demanding certain agricultural practices.
 ) Explore possible agreements and leases
 ) Evaluate the outcome  |
@@ -1378,7 +1377,7 @@ Climate Neutrality Action Plan
 7
 
 |   |  | 5) Collection of cooking fat and textiles.6) Cooperate (Influence national development of incentives) with other municipalities and stakeholders on circularity
-) Campaigns to raise awareness, to reduce waste and increase circularity  |
+| ) Campaigns to raise awareness, to reduce waste and increase circularity  |
 | --- | --- | --- |
 |   | 17. Decrease plastics use and increase source separation | 1) Accelerate LRV's (municipal waste handling organisation) work to influence citizens in better plastics sorting and reducing plastics use
 ) Collaborate with and learn from Region Skåne about how plastics can be reduced in procurement processes
@@ -1488,7 +1487,7 @@ Late outcomes:
 |   |  Action scale & addressed entities | City-wide  |
 |   |  Involved stakeholders | City of Lund (various departments) private, research and civil society  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Pre-implementation stage
-Timeline: 2025–2030  |
+| Timeline: 2025–2030  |
 |  Impact & cost | Generated renewable energy (if applicable) | N/A  |
 |   |  Removed/substituted energy, volume, or fuel type | N/A  |
 CITY OF LUND
@@ -1525,7 +1524,7 @@ Late outcomes:
 |   | Action scale & addressed entities | City-wide  |
 |   | Involved stakeholders | Youth sport clubs and organisations, schools, participants in Active Cities, Future by Lund  |
 |   | Comments on implementation – consider mentioning resources, timelines, milestones | Parts of action already under implementation, others in pre-implementation
-Timeline: 2024–2030  |
+| Timeline: 2024–2030  |
 |  Impact & cost | Generated renewable energy (if applicable) | N/A  |
 |   | Removed/substituted energy, volume, or fuel type | N/A  |
 |   | GHG emissions reduction estimate (total) per emission source sector | TBD  |
@@ -1586,7 +1585,7 @@ Climate Neutrality Action Plan
 4
 
 |   |  | and increase of sustainable transport modes in neighbourhoods
-) Develop and coordinate planning processes and activities with key partners and forums such as "Citysamverkan" and city departments.  |
+| ) Develop and coordinate planning processes and activities with key partners and forums such as "Citysamverkan" and city departments.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Transport and mobility  |
 |   |  Systemic lever | Governance and policy, Learning and Capability  |
@@ -1597,7 +1596,7 @@ Climate Neutrality Action Plan
 |   |  Action scale & addressed entities | City-wide  |
 |   |  Involved stakeholders | Citysamverkan (collaboration between Trade association, property owners and the municipality),  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Partly under implementation (mobility management is already considered in City Comprehensive Plan)
-Timeline: 2024-2030  |
+| Timeline: 2024-2030  |
 |  Impact & cost | Generated renewable energy (if applicable) | N/A  |
 |   |  Removed/substituted energy, volume, or fuel type | N/A  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | TBD  |
@@ -1627,7 +1626,7 @@ Climate Neutrality Action Plan
 5
 
 |  Implementation | Responsible bodies/person for implementation | City of Lund – Mobility team and Technical department, CoAction Lund
-Timeline: 2024-2030  |
+| Timeline: 2024-2030  |
 | --- | --- | --- |
 |   |  Action scale & addressed entities | City-wide  |
 |   |  Involved stakeholders | Companies in CoAction, Transport Administration  |
@@ -1694,7 +1693,7 @@ Late outcomes
 |   |  Action scale & addressed entities | City-wide  |
 |   |  Involved stakeholders | Municipal companies LKF, LKP and Kraftringen  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Partly under implementation
-Timeline: 2024-2030  |
+| Timeline: 2024-2030  |
 |  Impact & cost | Generated renewable energy (if applicable) | N/A  |
 |   |  Removed/substituted energy, volume, or fuel type | N/A  |
 CITY OF LUND
@@ -1726,7 +1725,7 @@ Climate Neutrality Action Plan
 |   | Action scale & addressed entities | City-wide  |
 |   | Involved stakeholders | CoAction Lund companies  |
 |   | Comments on implementation – consider mentioning resources, timelines, milestones | Partly under implementation
-Timeline: 2024–2030  |
+| Timeline: 2024–2030  |
 |  Impact & cost | Generated renewable energy (if applicable) | N/A  |
 |   | Removed/substituted energy, volume, or fuel type | N/A  |
 |   | GHG emissions reduction estimate (total) per emission source sector | TBD  |
@@ -1760,7 +1759,7 @@ Late outcomes
 | Implementation | Action scale & addressed entities | City-wide |
 | Involved stakeholders | CoAction Lund companies, neighbouring municipalities, municipal company Kraftringen, ESS, Tetra Pak, Alfa Laval, Lund university, MAX IV, Medicon Village and the municipality freight operators in CoAction Lund |
 | Comments on implementation – consider mentioning resources, timelines, milestones | Partly under implementation
-Timeline: 2024–2030 |
+| Timeline: 2024–2030 |
 | Impact & cost | Generated renewable energy (if applicable) | N/A |
 |  | Removed/substituted energy, volume, or fuel type | N/A |
 CITY OF LUND
@@ -1786,7 +1785,7 @@ Late outcomes
 |   | Action scale & addressed entities | City-wide  |
 |   | Involved stakeholders | Expert consultants, other municipalities  |
 |   | Comments on implementation – consider mentioning resources, timelines, milestones | Partly under implementation
-Timeline: 2024–2030  |
+| Timeline: 2024–2030  |
 |  Impact & cost | Generated renewable energy (if applicable) | N/A  |
 |   | Removed/substituted energy, volume, or fuel type | N/A  |
 CITY OF LUND
@@ -1812,7 +1811,7 @@ TBD  |
 |   | Action scale & addressed entities | City-wide  |
 |   | Involved stakeholders | Cleancon project participants  |
 |   | Comments on implementation – consider mentioning resources, timelines, milestones | Partly under implementation
-Timeline: 2024–2030  |
+| Timeline: 2024–2030  |
 |  Impact & cost | Generated renewable energy (if applicable) | N/A  |
 |   | Removed/substituted energy, volume, or fuel type | TBD  |
 CITY OF LUND
@@ -1838,7 +1837,7 @@ TBD  |
 |   | Action scale & addressed entities | City-wide  |
 |   | Involved stakeholders | Farmers organisations, Lund University, Agricultural University, Future by Lund  |
 |   | Comments on implementation – consider mentioning resources, timelines, milestones | Pre-implementation
-Timeline: 2024–2030  |
+| Timeline: 2024–2030  |
 |  Impact & cost | Generated renewable energy (if applicable) | N/A  |
 |   | Removed/substituted energy, volume, or fuel type | N/A  |
 |   | GHG emissions reduction estimate (total) per emission source sector | 15,000 tones CO2/year  |
@@ -1866,7 +1865,7 @@ TBD  |
 |   | Action scale & addressed entities | City-wide  |
 |   | Involved stakeholders | Farmers organisations, Lund University, Agricultural University, citizens  |
 |   | Comments on implementation – consider mentioning resources, timelines, milestones | Pre-implementation
-Timeline: 2024–2030  |
+| Timeline: 2024–2030  |
 |  Impact & cost | Generated renewable energy (if applicable) | N/A  |
 |   | Removed/substituted energy, volume, or fuel type | N/A  |
 |   | GHG emissions reduction estimate (total) per emission source sector | TBD  |
@@ -1897,7 +1896,7 @@ TBD  |
 |   | Action scale & addressed entities | City-wide  |
 |   | Involved stakeholders | Municipal administration, SCOPE project partners  |
 |   | Comments on implementation – consider mentioning resources, timelines, milestones | Pre-implementation
-Timeline: 2024–2030  |
+| Timeline: 2024–2030  |
 |  Impact & cost | Generated renewable energy (if applicable) | N/A  |
 |   | Removed/substituted energy, volume, or fuel type | N/A  |
 |   | GHG emissions reduction estimate (total) per emission source sector | TBD  |
@@ -1965,7 +1964,7 @@ TBD  |
 |   | Action scale & addressed entities | City-wide  |
 |   | Involved stakeholders | Municipal companies, citizens, SCOPE and Circular Minds partners, Region Skåne  |
 |   | Comments on implementation – consider mentioning resources, timelines, milestones | Partly under implementation
-Timeline: 2024–2030  |
+| Timeline: 2024–2030  |
 |  Impact & cost | Generated renewable energy (if applicable) | N/A  |
 |   | Removed/substituted energy, volume, or fuel type | N/A  |
 |   | GHG emissions reduction estimate (total) per emission source sector | TBD  |
@@ -2005,7 +2004,7 @@ TBD  |
 |   | Action scale & addressed entities | City-wide  |
 |   | Involved stakeholders | Municipal departments and companies, SCOPE and Circular Minds partners  |
 |   | Comments on implementation – consider mentioning resources, timelines, milestones | Partly under implementation
-Timeline: 2024-2026  |
+| Timeline: 2024-2026  |
 |  Impact & cost | Generated renewable energy (if applicable) | N/A  |
 |   | Removed/substituted energy, volume, or fuel type | N/A  |
 |   | GHG emissions reduction estimate (total) per emission source sector | TBD  |
@@ -2041,7 +2040,7 @@ TBD  |
 |   | Action scale & addressed entities | City-wide  |
 |   | Involved stakeholders | Municipal departments and companies, NGOs, Almi, Nyföretagarcentrum, Visit Lund, Sustainalink  |
 |   | Comments on implementation – consider mentioning resources, timelines, milestones | Partly under implementation
-Timeline: 2024–2030  |
+| Timeline: 2024–2030  |
 |  Impact & cost | Generated renewable energy (if applicable) | N/A  |
 |   | Removed/substituted energy, volume, or fuel type | N/A  |
 |   | GHG emissions reduction estimate (total) per emission source sector | TBD  |
@@ -2071,7 +2070,7 @@ TBD  |
 |   | Action scale & addressed entities | City-wide  |
 |   | Involved stakeholders | Municipal departments and companies, citizens  |
 |   | Comments on implementation – consider mentioning resources, timelines, milestones | Pre implementation
-Timeline: 2024–2030  |
+| Timeline: 2024–2030  |
 |  Impact & cost | Generated renewable energy (if applicable) | N/A  |
 |   | Removed/substituted energy, volume, or fuel type | N/A  |
 |   | GHG emissions reduction estimate (total) per emission source sector | TBD  |
@@ -2101,7 +2100,7 @@ Climate Neutrality Action Plan
 |   | Action scale & addressed entities | City-wide (Municipality)  |
 |   | Involved stakeholders | Property developers, Builders  |
 |   | Comments on implementation – consider mentioning resources, timelines, milestones | Pre-implementation
-Timeline: 2024–2030  |
+| Timeline: 2024–2030  |
 |  Impact & cost | Generated renewable energy (if applicable) | N/A  |
 |   | Removed/substituted energy, volume, or fuel type | N/A  |
 |   | GHG emissions reduction estimate (total) per emission source sector | 1500-2000 tons CO2e/year  |
@@ -2134,7 +2133,7 @@ Climate Neutrality Action Plan
 0
 
 |   | Comments on implementation – consider mentioning resources, timelines, milestones | Partly under implementation
-Timeline: 2024–2030  |
+| Timeline: 2024–2030  |
 | --- | --- | --- |
 |  Impact & cost | Generated renewable energy (if applicable) | N/A  |
 |   | Removed/substituted energy, volume, or fuel type | N/A  |
@@ -2159,7 +2158,7 @@ Expansion to smaller private sector actors and private citizens, dialogue and in
 |   | Action scale & addressed entities | City-wide  |
 |   | Involved stakeholders | Property developers, architects, design engineers, construction entrepreneurs.  |
 |   | Comments on implementation – consider mentioning resources, timelines, milestones | Partly under implementation
-Timeline: 2024–2030  |
+| Timeline: 2024–2030  |
 |  Impact & cost | Generated renewable energy (if applicable) | N/A  |
 |   | Removed/substituted energy, volume, or fuel type | N/A  |
 CITY OF LUND
@@ -2185,7 +2184,7 @@ Expanding to general common actions, syncing with national/regional competence/k
 |   | Action scale & addressed entities | City-wide  |
 |   | Involved stakeholders | Builders  |
 |   | Comments on implementation – consider mentioning resources, timelines, milestones | Partly under implementation
-Timeline: 2024–2030  |
+| Timeline: 2024–2030  |
 |  Impact & cost | Generated renewable energy (if applicable) | N/A  |
 |   | Removed/substituted energy, volume, or fuel type | N/A  |
 |   | GHG emissions reduction estimate (total) per emission source sector | Potential reduction around 5000 tons of CO2eq/year.  |
@@ -2213,7 +2212,7 @@ TBD  |
 |   | Action scale & addressed entities | City-wide  |
 |   | Involved stakeholders | Municipal companies, companies, tenant owners' associations, citizens  |
 |   | Comments on implementation – consider mentioning resources, timelines, milestones | Partly under implementation
-Timeline: 2024–2030  |
+| Timeline: 2024–2030  |
 |  Impact & cost | Generated renewable energy (if applicable) | N/A  |
 |   | Removed/substituted energy, volume, or fuel type | N/A  |
 |   | GHG emissions reduction estimate (total) per emission source sector | TBD  |
@@ -2244,7 +2243,7 @@ TBD  |
 |   | Action scale & addressed entities | City-wide  |
 |   | Involved stakeholders | Builders, Municipal Companies  |
 |   | Comments on implementation – consider mentioning resources, timelines, milestones | Partly under implementation
-Timeline: 2024–2030  |
+| Timeline: 2024–2030  |
 |  Impact & cost | Generated renewable energy (if applicable) | N/A  |
 |   | Removed/substituted energy, volume, or fuel type | N/A  |
 |   | GHG emissions reduction estimate (total) per emission source sector | TBD  |
@@ -2273,7 +2272,7 @@ Climate Neutrality Action Plan
 | --- | --- | --- |
 |   | Involved stakeholders | House owners, wind power owners, municipal energy company Kraftringen, energy consultants  |
 |   | Comments on implementation – consider mentioning resources, timelines, milestones | Partly under implementation
-Timeline: 2024–2030  |
+| Timeline: 2024–2030  |
 |  Impact & cost | Generated renewable energy (if applicable) | Adding of 86 GWh solar and wind power until 2030  |
 |   | Removed/substituted energy, volume, or fuel type | TBD  |
 |   | GHG emissions reduction estimate (total) per emission source sector | TBD  |
@@ -2324,7 +2323,7 @@ Completion of 2-3 pilot hydrogen production and storage facilities (100 kW-1 MW)
 |   | Action scale & addressed entities | City-wide  |
 |   | Involved stakeholders | Municipal company Kraftringen, CoAction Lund partners, property owners  |
 |   | Comments on implementation – consider mentioning resources, timelines, milestones | Partly under implementation
-Timeline: 2024–2030  |
+| Timeline: 2024–2030  |
 |  Impact & cost | Generated renewable energy (if applicable) | N/A  |
 |   | Removed/substituted energy, volume, or fuel type | N/A  |
 CITY OF LUND
@@ -2351,7 +2350,7 @@ Late outcomes
 |   | Action scale & addressed entities | City-wide  |
 |   | Involved stakeholders | Research facilities MAX IV and ESS  |
 |   | Comments on implementation – consider mentioning resources, timelines, milestones | Partly under implementation
-Timeline: 2024–2030  |
+| Timeline: 2024–2030  |
 |  Impact & cost | Generated renewable energy (if applicable) | N/A  |
 |   | Removed/substituted energy, volume, or fuel type | TBD  |
 |   | GHG emissions reduction estimate (total) per emission source sector | TBD  |
@@ -2412,7 +2411,7 @@ Climate Neutrality Action Plan
 |   | Action scale & addressed entities | City-wide  |
 |   | Involved stakeholders | Biogas entrepreneurs, landowners  |
 |   | Comments on implementation – consider mentioning resources, timelines, milestones | Partly under implementation
-Timeline: 2024–2030  |
+| Timeline: 2024–2030  |
 |  Impact & cost | Generated renewable energy (if applicable) | 120 GWh/year  |
 |   | Removed/substituted energy, volume, or fuel type | TBD  |
 |   | GHG emissions reduction estimate (total) per emission source sector | TBD  |
@@ -2435,7 +2434,7 @@ New business models make farmers to accept biochar on their fields and new priva
 |   | Action scale & addressed entities | City-wide  |
 |   | Involved stakeholders | Biochar entrepreneurs, farmers  |
 |   | Comments on implementation – consider mentioning resources, timelines, milestones | Pre-implementation
-Timeline: 2024–2030  |
+| Timeline: 2024–2030  |
 |  Impact & cost | Generated renewable energy (if applicable) | N/A  |
 |   | Removed/substituted energy, volume, or fuel type | N/A  |
 |   | GHG emissions reduction estimate (total) per emission source sector | N/A  |
@@ -2454,12 +2453,12 @@ B-2.2: Individual action outlines
 |  Reference to impact pathway | Field of action | Carbon sinks  |
 |   | Systemic lever | Technology/infrastructure  |
 |   | Outcome (according to module B-1.1) | Early outcomes: TBD
-Late outcomes: TBD  |
+| Late outcomes: TBD  |
 |  Implementation | Responsible bodies/person for implementation | City of Lund Municipal Office – Environmental Department, Technical Department  |
 |   | Action scale & addressed entities | City-wide  |
 |   | Involved stakeholders | Water councils, farmers and other land owners  |
 |   | Comments on implementation – consider mentioning resources, timelines, milestones | Partly implemented
-Timeline: 2024–2030  |
+| Timeline: 2024–2030  |
 |  Impact & cost | Generated renewable energy (if applicable) | N/A  |
 |   | Removed/substituted energy, volume, or fuel type | N/A  |
 |   | GHG emissions reduction estimate (total) per emission source sector | N/A  |
@@ -2482,9 +2481,9 @@ Climate Neutrality Action Plan
 | --- | --- | --- |
 |   | Systemic lever | Technology/infrastructure, Governance and Policy, Awareness Raising  |
 |   | Outcome (according to module B-1.1) | Early outcomes: Tree strategist at Technical Department produces an action plan to enable implementation of the focus areas identified in Tree strategy
-Late outcomes: TBD  |
+| Late outcomes: TBD  |
 |  Implementation | Responsible bodies/person for implementation | City of Lund Municipal Office – Environmental Department, Technical Department, Planning Department
-Timeline: 2024–2030  |
+| Timeline: 2024–2030  |
 |   | Action scale & addressed entities | City-wide  |
 |   | Involved stakeholders | Citizens, landowners  |
 |   | Comments on implementation – consider mentioning resources, timelines, milestones | Partly under implementation  |
@@ -2501,12 +2500,12 @@ Timeline: 2024–2030  |
 |  Reference to impact pathway | Field of action | Cross-cutting action  |
 |   | Systemic lever | Governance and Policy  |
 |   | Outcome (according to module B-1.1) | Early outcomes: TBD
-Late outcomes: TBD  |
+| Late outcomes: TBD  |
 |  Implementation | Responsible bodies/person for implementation | City of Lund Municipal Office  |
 |   | Action scale & addressed entities | City-wide  |
 |   | Involved stakeholders | Internal stakeholders and external key stakeholders  |
 |   | Comments on implementation – consider mentioning resources, timelines, milestones | Resources: 6 FTE
-Timeline: 2024–2030  |
+| Timeline: 2024–2030  |
 |  Impact & cost | Generated renewable energy (if applicable) | N/A  |
 |   | Removed/substituted energy, volume, or fuel type | N/A  |
 CITY OF LUND
@@ -2524,7 +2523,7 @@ Climate Neutrality Action Plan
 |  Reference to impact pathway | Field of action | Cross-cutting action  |
 |   | Systemic lever | Governance and Policy, Awareness Raising  |
 |   | Outcome (according to module B-1.1) | Early outcomes: Increased awareness of the municipalities' ambitions In the climate transition, joint plan for advocacy work among Mission Cities In Sweden Established international contacts and exchanges with a selection of 100 cities
-Late outcomes: Changed national policy with more ambitious climate goals, clearer policy instruments that align with the European climate goals and increased resources for climate action and climate adaptation  |
+| Late outcomes: Changed national policy with more ambitious climate goals, clearer policy instruments that align with the European climate goals and increased resources for climate action and climate adaptation  |
 |  Implementation | Responsible bodies/person for implementation | City of Lund Municipal Office  |
 |   | Action scale & addressed entities | City-wide  |
 |   | Involved stakeholders | Other municipalities, national authorities, national government, lobbyist organisations  |
@@ -2617,7 +2616,7 @@ Climate Neutrality Action Plan
 5
 
 |   | 31. Enhance CHP (Combined Heat and Power) capacity
-Increase biogas production |  |  |  |  |  |   |
+| Increase biogas production |  |  |  |  |  |   |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Carbon sinks |   |   |   |  |  |  |   |
 |  See Table B-1.1. and B-1.2 for early and late changes | 33. Establish biochar production and increase biochar use | 16 | Amount of permanent sequestration of GHG within city boundary (t CO2 equivalent) |  | TBD | TBD | TBC  |

@@ -302,12 +302,6 @@ Table 4: Comparison of census data
 |  Number of households with solar panels (number) |  | 2 106 | 10 530  |
 |  Number of households with heat pump heating (pcs) |  | 960 | 4 800  |
 |  Number of households with solar collectors (number) |  | 570 | 2 850  |
-MISKOLC
-
-Climate Neutrality Action Plan
-
-#
-
 |  Number of households with air conditioning (number) |  | 14 291 | 21 437  |
 | --- | --- | --- | --- |
 
@@ -923,12 +917,6 @@ The policies at local level are summarised in the table below.
 |  Action Plan | municipal | Sustainable Energy and Climate Action Plan (SECAP) 2019 | The 2019 Action Plan reviewed the baseline situation, presented baseline inventories, took stock of CO2 emission reduction measures, and included a climate risk and sensitivity analysis of the city. It also provided an overview of the financing options for the implementation of the action plan and made recommendations for monitoring and indicators. It also identified the actions and milestones for implementation and described the process for providing publicity. | The Action Plan identified specific CO2 emission reduction measures in the following areas: buildings, installations and equipment; transport; energy production and land use. The SECAP GHG inventory revealed urban emissions in less depth than the 2021 GHG inventory for the CCC. It dealt comprehensively with energy systems and in many cases only covered the municipal scope. Due to lack of continuous review had limited input into the development of the CCC. | A review is needed. The coordination and monitoring of the implementation of the new SECAP needs to be clarified and human resources allocated to it.  |
 |  Strategy | municipal | Climate Strategy of the City of Miskolc, 2020 | Based on the situation analysis and assessment, the 2020 climate strategy set 5 mitigation objectives and 7 adaptation and | Mitigation measures set out in the strategy: Reducing energy consumption (energy | A review is needed. A single monitoring system is needed to  |
 |   |  |  | implement the change in the climate strategy. The 2020 climate strategy is designed to address the impact of climate change on the city. The 2020 climate strategy is designed to address the impact of climate change on the city. The 2020 climate strategy is designed to address the impact of climate change on the city. The 2021 climate strategy is designed to address the impact of climate change on the city. The 2021 climate strategy is designed to address the impact of climate change on the city. The 2021 climate strategy is designed to address the impact of climate change on the city. The 2021 climate strategy is | to reduce the climate change. |   |
-MISKOLC
-
-Climate Neutrality Action Plan
-
-5
-
 |   |  |  | preparedness objectives with 2030 targets. It proposed measures to achieve the targets and set out a framework for implementation. | saving), increasing energy efficiency
 Increasing the share of renewable energy sources
 Promoting sustainable/climate-friendly transport modes, improving air quality
@@ -939,12 +927,6 @@ It has also looked at expanding natural GHG sinks.
 The Climate Strategy GHG methodology and package of measures provided a good basis for the development of the CCC, but monitoring has not been implemented in recent years. | manage these strategies (SECAP, Climate Strategy, SUMP)  |
 | --- | --- | --- | --- | --- | --- |
 |  Plan | municipal | Miskolc Sustainable Mobility Plan (SUMP) Review, 2016 | The document sets out the expectations for the transport sector, defines the vision, the 4 overarching objectives and the measures proposed to achieve them. The set of objectives is broken down by sector. | 24 measures support new urban design, 19 measures support less energy use, 7 measures support continuous progress and 14 measures support networking. All of these have an emission reduction effect. | Under review.  |
-MISKOLC
-
-Climate Neutrality Action Plan
-
-6
-
 |   |  |  |  | The planned measures in the transport area of the CCC have integrated measures planned but not yet implemented under the SUMP. |   |
 | --- | --- | --- | --- | --- | --- |
 |  Plan | municipal | Green Infrastructure Development and Maintenance Plan of Miskolc City of County Rights (ZIFFA), 2018 | The plan identifies 8 main objectives:
@@ -969,8 +951,7 @@ Climate Neutrality Action Plan
 7
 
 |   |  |  |  | an RDI ecosystem, sustainable tourism development, circular and local agriculture development. Strategic Objective S3 is Urban Climate Adaptation and Decarbonisation.
-
-Specific GHG emissions have only been calculated for municipal building energy interventions. | 2024, already based on the CCC.  |
+| Specific GHG emissions have only been calculated for municipal building energy interventions. | 2024, already based on the CCC.  |
 | --- | --- | --- | --- | --- | --- |
 
 Successful implementation of the strategies requires the development and expansion of human capacities on the part of the municipality and the allocation of support policy instruments to specific measures at national level. The processes initiated under the CCC have a key role to play in this. The pathways identified by the CCC need to be further integrated into all sectoral planning and reviews. As the emission reduction impact of previous strategies is difficult to measure, the CCC has been fully designed to integrate all measures needed to achieve the 80% emission reduction.
@@ -1582,14 +1563,8 @@ A-3.2: Systems &amp; stakeholder mapping
 |   |  Miskolc Geothermal Energy Ltd. |  |   |   |
 |   |  businesses | Creating energy communities | Reducing energy costs  |   |
 |   |  citizens |  |   |   |
-MISKOLC
-
-Climate Neutrality Action Plan
-
-7
-
 |   |  | citizens | Ending energy poverty | Creating a better, more liveable urban environment
-Mitigating the damage (human, material) caused by climate change  |
+| Mitigating the damage (human, material) caused by climate change  |
 | --- | --- | --- | --- | --- |
 |   |  research and development | University of Miskolc
 Bay Zoltán Research Institute businesses | Application of basic and experimental research results
@@ -1609,13 +1584,7 @@ Municipality of Miskolc MJV | Shaping the regulatory environment
 Operation of transport systems | Using a profitable business model
 Increasing use of public transport by the population  |
 |   |  Infrastructure | Hungarian State
-MVM ÉMÁSZ Áramhálózati Kft. | National transport infrastructure improvements in the urban area | Cost-effective system maintenance  |
-MISKOLC
-
-Climate Neutrality Action Plan
-
-8
-
+| MVM ÉMÁSZ Áramhálózati Kft. | National transport infrastructure improvements in the urban area | Cost-effective system maintenance  |
 |   |  | Miskolc Transport Company Ltd.
 Municipality of Miskolc MJV
 businesses
@@ -1650,8 +1619,8 @@ Climate Neutrality Action Plan
 9
 
 |  Green and blue infrastructure | regulation and policy | Hungarian State
-Municipality of Miskolc MJV | Shaping the regulatory environment
-Protecting urban green and blue infrastructure | Sustainable green space systems  |
+| Municipality of Miskolc MJV | Shaping the regulatory environment |
+| Protecting urban green and blue infrastructure | Sustainable green space systems  |
 | --- | --- | --- | --- | --- |
 |   |  Infrastructure | Municipality of Miskolc MJV
 citizens
@@ -1680,7 +1649,7 @@ Climate Neutrality Action Plan
 |   |  |  |  | Reduction of pollutant emissions  |
 | --- | --- | --- | --- | --- |
 |  Waste management Circular economy | regulation and policy | Hungarian State | Shaping the regulatory environment
-Determination of service prices | Using a profitable business model  |
+| Determination of service prices | Using a profitable business model  |
 |   |  Infrastructure | Hungarian State
 MOL MOHU Waste Management Ltd.
 MiReHu Ltd.
@@ -1725,16 +1694,8 @@ Improving air quality
 A more liveable urban environment
 A healthier society - a less burdened health and social sector  |
 |   |   |  Regulation/policy | Municipal regulation to help tackle energy poverty
-Energy modernisation "Development of a "Panel programme |   |   |   |
+| Energy modernisation "Development of a "Panel programme |   |   |   |
 |   |   |  Financial financing | Developed business model for decarbonisation of the | The emergence of combined forms of aid  |   |   |
-MISKOLC
-
-Climate Neutrality Action
-
-Plan
-
-2
-
 |   |  |  | buildings sector |  |  |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  Decarbonisation of heating | Technology/infrastructure | Launching a pilot programme | The spread of electric heating solutions - the gradual replacement of natural gas
@@ -1747,16 +1708,10 @@ A healthier society - a less burdened health and social sector  |
 Miskolc Urban Hydrogen Strategy
 Miskolc city district heating decarbonisation strategy and business model |   |   |   |
 |   |   |  Social innovation | Energy awareness in society | Increase in the share of renewable energy
-Phasing out of coal (wood) firing and combustion of pollutants in households  |   |   |
+| Phasing out of coal (wood) firing and combustion of pollutants in households  |   |   |
 |   |   |  Financial financing | Developed business model for decarbonisation of the buildings sector | The emergence of combined forms of aid  |   |   |
 |   |  Efficient lighting and equipment | Technology/infrastructure | Further roll-out of LED street lighting | Fully modernised street lighting
-Lighting modernised by the public | 23 | Enhanced energy security  |
-MISKOLC
-
-Climate Neutrality Action Plan
-
-3
-
+| Lighting modernised by the public | 23 | Enhanced energy security  |
 |  Energy systems
 Electricity | Decarbonisation of electricity generation | Technology/infrastructure |  | Extended electricity network
 Emergence of energy communities
@@ -1774,12 +1729,6 @@ Creating a zero emission zone in the city centre
 The spread of micromobility | 32 | Improving air quality
 A healthier society - a less burdened health and social sector  |
 |   |   |  Regulation/policy | Review of existing transport and |   |   |   |
-MISKOLC
-
-Climate Neutrality Action Plan
-
-4
-
 |   |  |  | parking strategies
 Revised SUMP
 Zero Emission Zone designation in the city centre |  |  |   |
@@ -1787,28 +1736,22 @@ Zero Emission Zone designation in the city centre |  |  |   |
 |   |   |  Participation planning | Citizens' Mobility Centre |   |   |   |
 |   |   |  Financial financing | Operational Programmes |   |   |   |
 |   |  Switch to public transport and non-motorised transport | Technology/infrastructure | Starting the digital switchover in public and road transport | Developing infrastructure to support cycling and walking
-Full digital switchover in public and road transport | 12 | Improving air quality
-A healthier society - a less burdened health and social sector  |
+| Full digital switchover in public and road transport | 12 | Improving air quality |
+| A healthier society - a less burdened health and social sector  |
 |   |   |  Social innovation | Citizens' Mobility Centre |   |   |   |
 |   |   |  Financial financing | Operational Programmes |   |   |   |
 |   |  Electrification of cars and engines | Technology/infrastructure |  | Expanding electric car fleet | 7 | Improving air quality
-A healthier society - a less burdened health and social sector  |
+| A healthier society - a less burdened health and social sector  |
 |   |   |  Regulation/policy | Municipal regulations, support - incentive system |   |   |   |
 |   |   |  Financial financing | Central government programmes
-Individual savings |   |   |   |
+| Individual savings |   |   |   |
 |   |  Electrification of buses | Technology/infrastructure | Building charging capacity for electric buses
 electric buses to be put into service | Electric charging capacity installed
 % share of electric buses in public transport
 Pilot - hydrogen-powered bus | 9 | Improving air quality
 A healthier society - a less burdened health and social sector  |
 |   |   |  Regulation/policy | Revised SUMP
-Service concept |   |   |   |
-MISKOLC
-
-Climate Neutrality Action Plan
-
-5
-
+| Service concept |   |   |   |
 |  |   |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |   |  Participation planning | Citizens' Mobility Centre |   |   |   |
@@ -1824,12 +1767,6 @@ Climate Neutrality Action Plan
 |   |   |  Social innovation | Changing public attitudes - " Zero Waste " Waste minimisation campaigns Further development of re-use centres |  |   |   |
 |  |   |   |   |   |   |   |
 |  Green infrastructure | not relevant | Technology/infrastructure | Interventions to increase green space | Operation of a complex environmental | Swallowing | A more liveable urban environment  |
-MISKOLC
-
-Climate Neutrality Action Plan
-
-6
-
 |  - nature-based solutions |  |  |  | information system
 Increasing inner city absorption capacity
 Reducing the thermal insulation effect | capacitation | Improving air quality
@@ -1839,7 +1776,7 @@ A healthier society - a less burdened health and social sector  |
 |   |   |  Participation planning |  |   |   |   |
 |  |   |   |   |   |   |   |
 |  Other (IPPU and AFOLU) | not relevant | Technology/infrastructure |  | Part of the energy systems | 76^{3} | Enhanced energy security
-A more liveable urban environment  |
+| A more liveable urban environment  |
 |   |   |  Regulation/policy | Adaptive building use strategy | Adaptive reuse of buildings  |   |   |
 
 Calculated for energy systems in the case of aggregated inventory
@@ -2153,7 +2090,7 @@ O
 |  B-2.1: Description of action portfolios  |   |
 | --- | --- |
 |  Fields of action
-Energy systems | Portfolio description  |
+| Energy systems | Portfolio description  |
 |  List of actions / Subsector | Descriptions  |
 |  A1. Energy efficiency upgrading of residential, public and business buildings
 
@@ -2215,14 +2152,8 @@ In Miskolc, 16 segregated areas have been identified in 2022, with nearly 10,000
 
 Key actors involved: the Municipality of Miskolc, NGOs  |
 |  A5. Addressing energy poverty
-
-*Decarbonisation of heating* | Construction of firewood drying and storage facilities in Miskolc.
-
-Tackling energy poverty is a complex and long-term process, in which the self-organising communities of  |
-MISKOLC
-Climate Neutrality Action Plan
-8
-
+| *Decarbonisation of heating* | Construction of firewood drying and storage facilities in Miskolc. |
+| Tackling energy poverty is a complex and long-term process, in which the self-organising communities of  |
 |   | the neighbourhoods of Lyukó, Bábonyibérc and Tetemvár can be useful partners.
 Instead of simple firewood distribution, there is a need for district firewood drying and storage facilities and the transfer of firewood should be combined with knowledge transfer on proper heating.
 As far as possible, people living in energy poverty should also be helped to get access to suitable stoves.
@@ -2255,11 +2186,7 @@ to generate electricity using hydrogen in a hydrogen fuel cell system (or other 
 Key actors involved: MIHŐ Kft., Miskolc Municipality  |
 | --- | --- |
 |  A7. Heating decarbonisation (and electrification) programme
-*Decarbonisation of heating* | A comprehensive energy renovation programme for the urban building stock, including incentives, is needed to ensure a significant reduction in the amount of energy used for heating and cooling buildings, coupled with the use of renewable energy (solar panels, solar collectors, heat pump heating and cooling systems). In addition, the fact that 55% of  |
-MISKOLC
-Climate Neutrality Action Plan
-0
-
+| *Decarbonisation of heating* | A comprehensive energy renovation programme for the urban building stock, including incentives, is needed to ensure a significant reduction in the amount of energy used for heating and cooling buildings, coupled with the use of renewable energy (solar panels, solar collectors, heat pump heating and cooling systems). In addition, the fact that 55% of  |
 |   | district heating in Miskolc is already geothermal should be exploited, so that priority should be given to connecting buildings that can be profitably connected to the district heating system. The share of geothermal could be increased to 80-90% by the end of the decade.
 The urban building energy programme should include an energy assessment of the entire urban building stock, both from a technical and an energy consumption point of view, in order to first phase out the buildings that can achieve the greatest specific energy consumption reduction.
 In terms of share, the reduction in residential final energy consumption will be most significant for natural gas, with the planned measures expected to reduce residential natural gas consumption by around 40% between 2023 and 2030, and almost eliminate it by 2040. Thanks to energy efficiency investments, electricity and biomass use will also decrease more significantly, and the amount of electricity used by heat pumps will increase several-fold by 2030.
@@ -2276,7 +2203,7 @@ Climate Neutrality Action Plan
 1
 
 |   | preparation of a concept for energy production and supply and a programme for the development of energy communities.
-Key actors involved: MIHÖ Kft., Miskolc Municipality, residents, electricity suppliers  |
+| Key actors involved: MIHÖ Kft., Miskolc Municipality, residents, electricity suppliers  |
 | --- | --- |
 |  A9. Network development
 *Decarbonising electricity generation* | Developing a *flexible and secure electricity network* to serve the electrification process and the transition
@@ -2289,20 +2216,15 @@ interventions needed to increase security of supply For low voltage (LV) network
 line laying, cross-section increase, line replacement and line voltage regulator installation due to small household power plants (SMPP).
 Key actors concerned: electricity suppliers  |
 |  A10. Installation of grid energy storage
-*Decarbonising electricity generation* | Encourage investment in *grid energy storage capacity* potentially available in the balancing energy and balancing capacity market. Aim at integrating weather-dependent renewable energy sources.
-Key actors concerned: electricity suppliers  |
+| *Decarbonising electricity generation* | Encourage investment in *grid energy storage capacity* potentially available in the balancing energy and balancing capacity market. Aim at integrating weather-dependent renewable energy sources. |
+| Key actors concerned: electricity suppliers  |
 |  A11. Residential, institutional and business LED and equipment replacement programme
-*Efficient lighting and equipment* | The Municipality will continue the programme, which started in 2022, with six thousand Miskolc residents registered in the first round and nearly two thousand more in 2023. Some seventy-eight thousand LEDs have been distributed to them. The more modern light bulbs distributed as part of the successful replacement programme have resulted in lower consumption and thus lower electricity bills for Miskolc families (savings of 3,000 MWh hours, which represents more than HUF 250 million for households). It is planned to involve the business sector in the programme.
-Key actors involved: the Municipality of Miskolc  |
+| *Efficient lighting and equipment* | The Municipality will continue the programme, which started in 2022, with six thousand Miskolc residents registered in the first round and nearly two thousand more in 2023. Some seventy-eight thousand LEDs have been distributed to them. The more modern light bulbs distributed as part of the successful replacement programme have resulted in lower consumption and thus lower electricity bills for Miskolc families (savings of 3,000 MWh hours, which represents more than HUF 250 million for households). It is planned to involve the business sector in the programme. |
+| Key actors involved: the Municipality of Miskolc  |
 |  A12. Modernisation of street lighting
-*Efficient lighting and equipment* | In Miskolc, around 19,000 street lights provide safety lights. Passive and active elements of the street lighting network are in mixed ownership. Of the passive elements, the cables and poles are owned by ÉMÁSZ Nyrt.; the active elements (luminaires) are also mixed ownership. The intervention would mean a *complete urban LED replacement* programme, i.e. all public lighting fixtures that have not been replaced so far. The programme has been continuously implemented since 2015, and the installation of new LED luminaires has already  |
-MISKOLC
-Climate Neutrality Action Plan
-2
-
+| *Efficient lighting and equipment* | In Miskolc, around 19,000 street lights provide safety lights. Passive and active elements of the street lighting network are in mixed ownership. Of the passive elements, the cables and poles are owned by ÉMÁSZ Nyrt.; the active elements (luminaires) are also mixed ownership. The intervention would mean a *complete urban LED replacement* programme, i.e. all public lighting fixtures that have not been replaced so far. The programme has been continuously implemented since 2015, and the installation of new LED luminaires has already  |
 |   | improved traffic and public safety conditions in many areas of Miskolc, while at the same time the modernisation will significantly reduce the city's energy consumption for street lighting by about 1,000,000 kW/h per year, equivalent to the annual electricity consumption of nearly 5,600 households.
-
-Key actors involved: the Municipality of Miskolc, electricity suppliers  |
+| Key actors involved: the Municipality of Miskolc, electricity suppliers  |
 | --- | --- |
 |  A13. Hydrogen strategy - clean hydrogen and hydrogen technologies for industry
 
@@ -2332,10 +2254,6 @@ Climate Neutrality Action Plan
 |  List of actions / Subsector | Descriptions  |
 |  A14. Development of transport infrastructure for sustainable urban mobility - development of fixed rail transport Switch to public transport and non-motorised transport | Development of an interconnected electricity network North-south rail axis to be implemented with an interconnected design, building on the existing east-west axis. The first stage will be the connection of Búza Square to the existing east-west axis. The second phase is the construction of the entire axis from Búza Square to the northern city limits and from the lighthouse to the Tapolca junction in the southern direction. The north-south axis should be designed to accommodate the tram-train on the Kazincbarcika Miskolc Tiszaújváros line, if it is built later. Both lines will serve a high public transport demand, taking up a significant volume of private transport and bus traffic. Along the axis there are destinations which are the most frequented due to their role as the county seat and are also busy destinations within the city (Northern Industrial Area, County Hospital, Búza Square, downtown, Semmelweis Hospital, Tapolca junction). Explore the possibility of a tram-train, with decentres at city gates, so that long-distance traffic is not concentrated in the city centre. Suburban transport development, commuter rail stops at MIDIP and MIP. Key actors involved: the Municipality of Miskolc, MVK Zrt., public actors  |
 |  A15. Development of transport infrastructure for sustainable urban mobility - Cableway to Avas Switch to public transport and non-motorised transport | Construction of the Cableway to Avas The Avas, the "mountain" of Miskolc, is quite problematic from a transport point of view, the hill being sharply prominent from its surroundings and accessible only via serpentines. In the late 1970s and early 1980s, the largest housing estate in the country was built on this relatively inaccessible site. The Avas is now home to nearly 40,000 people. With the construction of the cable car, an alternative solution has been developed that would provide a new, direct connection between the top of the hill and the city centre. It is planned that the lift would be built between the Town Hall Square and the Avas Roof and would also be connected to the bus terminus at the Avasi Lookout. The 12-seat capsules would also be suitable for transporting bicycles and prams. The cable car would not only play a tourist role, but would also provide public transport as the shortest route between the 40,000 inhabitants and the city centre. The project is expected to be funded by the European Union.  |
-MISKOLC
-Climate Neutrality Action Plan
-4
-
 |   | Key actors concerned: Miskolc MJV, MVK Zrt., public actors  |
 | --- | --- |
 |  A16. Redesign of the urban parking system
@@ -2369,8 +2287,7 @@ Climate Neutrality Action Plan
 5
 
 |   | The project will implement an intelligent road traffic measurement and processing system, which does not require external human resources and is capable of continuous (real-time) and automatic measurement. The system to be developed is multi-purpose. On the one hand, it will provide a high quality traffic information database and, on the other hand, it will directly contribute to the strategic objectives of the soon-to-be established traffic management centre in Miskolc and the social goals it will help to achieve, in support of the overall Smart City programme.
-
-Key actors involved: the Municipality of Miskolc, MVK Zrt., public actors  |
+| Key actors involved: the Municipality of Miskolc, MVK Zrt., public actors  |
 | --- | --- |
 |  A19. Road and cycle path improvements
 
@@ -2416,26 +2333,16 @@ Carbon neutrality therefore requires that we fill the buses with energy produced
 
 Key actors involved: the Municipality of Miskolc, MVK Zrt., public actors  |
 |  A23. Enhancing electromobility in the private sector - individual car traffic
-
-*Electrification of cars and engines* | At the national level, more incentive regulations and support schemes are needed to help replace the existing car fleet. According to a 2023 survey, the average age of cars in Hungary is currently 16 years. The majority of individuals cannot afford to buy an electric vehicle for their next car. Miskolc currently has  |
-MISKOLC
-Climate Neutrality Action Plan
-7
-
+| *Electrification of cars and engines* | At the national level, more incentive regulations and support schemes are needed to help replace the existing car fleet. According to a 2023 survey, the average age of cars in Hungary is currently 16 years. The majority of individuals cannot afford to buy an electric vehicle for their next car. Miskolc currently has  |
 |   | 0.4% of electric cars in the total number of vehicles on the road. By 2040, at least 40% should be achieved based on the model.
-
-Key stakeholders concerned: population  |
+| Key stakeholders concerned: population  |
 | --- | --- |
 |  A24. Development of urban charging infrastructure network
-
-*Electrification of cars and engines* | There are 28 charging stations in the city and their continuous expansion will also be a key issue in the coming years. To this end, nationally funded programmes will be launched.
-
-Key actors involved: the Municipality of Miskolc, MVK Zrt., public actors, businesses  |
+| *Electrification of cars and engines* | There are 28 charging stations in the city and their continuous expansion will also be a key issue in the coming years. To this end, nationally funded programmes will be launched. |
+| Key actors involved: the Municipality of Miskolc, MVK Zrt., public actors, businesses  |
 |  A25. Enhancing electromobility in the private sector - freight transport
-
-*Electrification of lorries* | In the year 2021, there were 7,337 trucks in circulation in Miskolc, of which only 253 were petrol and 7,084 diesel trucks, typically with a gross vehicle weight of over 3.5 t. The majority of urban truck traffic is related to construction, trade and logistics. For these sectors, EU directives and public incentives, as well as the commitment of companies, will also help the switchover process. The aim is to replace at least 50% of the current fleet with electric vehicles by 2040.
-
-Key actors concerned: businesses  |
+| *Electrification of lorries* | In the year 2021, there were 7,337 trucks in circulation in Miskolc, of which only 253 were petrol and 7,084 diesel trucks, typically with a gross vehicle weight of over 3.5 t. The majority of urban truck traffic is related to construction, trade and logistics. For these sectors, EU directives and public incentives, as well as the commitment of companies, will also help the switchover process. The aim is to replace at least 50% of the current fleet with electric vehicles by 2040. |
+| Key actors concerned: businesses  |
 |  A26. Reducing freight traffic in inner city areas
 
 *Optimised logistics* | In the case of freight transport, incentive schemes are also needed, as there are other motivations linked to these users (typically construction, trade) and therefore significant results can be achieved by changing the regulatory environment.
@@ -2456,10 +2363,6 @@ Concentrated access to services reduces the propensity to travel by car, which h
 
 Key actors involved: the Municipality of Miskolc  |
 |  A28. Traffic damping | Traffic calming in the city centre  |
-MISKOLC
-Climate Neutrality Action Plan
-8
-
 |  **Reduced demand for motorised passenger transport and increased car use** | Significant traffic calming is needed on the east-west routes in the city centre (Palóczi - Horváth Lajos, Régiposta, Madarász streets). This is particularly justified by the ring road around the city centre, which has already been completed with the Dayka interchange.
 Traffic calming in residential areas, in some neighbourhoods.
 Traffic calming in the Lillafüred priority tourist destination area.
@@ -2490,7 +2393,7 @@ O
 |  B-2.1: Description of action portfolios - textual or visual  |   |
 | --- | --- |
 |  Fields of action
-Waste & circular economy | Portfolio description  |
+| Waste & circular economy | Portfolio description  |
 |  List of actions / Subsector | Descriptions  |
 |  A30. Development of modern regional waste management
 
@@ -2502,15 +2405,9 @@ In the field of selective waste collection, a system of returning plastic and me
 
 Key actors involved: MOHU MOL Hulladákgazdálkodási Zrt., MiReHu Nkft., population  |
 |  A31. Expansion of biogas utilisation | The complex development and capacity increase of the wastewater treatment plant and biogas plant could improve the efficiency of the utilisation of the organic matter content of the sewage sludge for energy purposes. This is also necessary for the processing of food waste collection, which will be extended from 2024.
-
-The biogas plant is currently only sufficient to cover the energy needs of the wastewater treatment plant. Its expansion will allow the production of part of the surplus biogas, which can be used locally for electricity and associated waste heat. An alternative way of using biogas could be to transfer it to the CHP for the production of thermal energy for buildings, or  |
-MISKOLC
-Climate Neutrality Action Plan
-0
-
+| The biogas plant is currently only sufficient to cover the energy needs of the wastewater treatment plant. Its expansion will allow the production of part of the surplus biogas, which can be used locally for electricity and associated waste heat. An alternative way of using biogas could be to transfer it to the CHP for the production of thermal energy for buildings, or  |
 |   | even to the MVK for the alternative fuel supply of LNG buses. The waste heat from the gas engine could be sold as district heating to cover the cooling needs of a cold store through an absorption chiller system. A further step in the recovery process could be the production of pellets from the sewage sludge left over after biogas production, after appropriate drying, and its subsequent energy recovery. The waste heat from the gas engine burning the biogas could be used to dry the sludge. In a complex system, power-to-gas technology can even be used to produce hydrogen to charge hydrogen-powered buses.
-
-Key actors concerned: MIVÍZ Kft.  |
+| Key actors concerned: MIVÍZ Kft.  |
 | --- | --- |
 |  A32. Programme package to support the transition to a circular economy
 
@@ -2536,8 +2433,8 @@ In addition to the local markets run by the city, farmers' markets, local produc
 Key actors involved: the Municipality of Miskolc, BOKIK, producers, NGOs, Miskolc Municipal Land Management Ltd.  |
 | --- | --- |
 |  A34. Circular food management
-*Increased waste recycling* | Develop and implement a city-region food strategy. In addition to promoting local products and short supply chains, the focus is on preventing significant food waste and unjustified waste production. Urban food material flows should be assessed, identified and an action plan developed. Pilot areas (Miskolc-Szirma) where separate collection of household food waste and its recovery in a biogas plant have been in place for a year, with separate collection to be ensured throughout the city from 2024. It would also be necessary to fully implement the collection and recovery of food waste from institutions (health, education, social).
-Key actors involved: MOHU MOL Hulladákgazdálkodási Zrt., MiReHu Nkft., MIVÍZ Kft.  |
+| *Increased waste recycling* | Develop and implement a city-region food strategy. In addition to promoting local products and short supply chains, the focus is on preventing significant food waste and unjustified waste production. Urban food material flows should be assessed, identified and an action plan developed. Pilot areas (Miskolc-Szirma) where separate collection of household food waste and its recovery in a biogas plant have been in place for a year, with separate collection to be ensured throughout the city from 2024. It would also be necessary to fully implement the collection and recovery of food waste from institutions (health, education, social). |
+| Key actors involved: MOHU MOL Hulladákgazdálkodási Zrt., MiReHu Nkft., MIVÍZ Kft.  |
 |  A35. Adaptive re-use of buildings | Adaptation and reuse of existing buildings as an alternative to demolition and new construction has become a key issue in the face of climate change. Looking at the whole life cycle of a building in Hungary, 40% of emissions are generated during its construction, before it is ready for use. This means that it can take up to 30-50 years for a building to "overcome" the emissions generated during its construction.
 "If we all start to consider reuse from the very beginning, we open up new territory for creative approaches that we might not otherwise consider." (R. Lang)
 One of the biggest advantages of adaptive reuse over historic preservation is the flexibility to use new, effective building materials while paying homage to the building's history. This approach improves building performance while reducing carbon emissions.
@@ -2561,12 +2458,6 @@ Climate Neutrality Action Plan
 |  List of actions | Descriptions  |
 |  A36. Integrated development of municipal green and blue infrastructure | Reduction of paving, greening and re-greening of public spaces and publicly used areas owned by the municipality (especially in the case of inner-city areas, to reduce the thermal insulation effect) Rehabilitation of green spaces and green areas, reconstruction of tree-lined areas Developing green spaces for community purposes Improvement of water areas (restoration of the valleys of the Northern valleys (Pece branches) to their natural state, rehabilitation of the watercourses of the Fountain Valley, Bábonyi-bérc, Bedegh Valley, making them suitable for recreational and leisure activities. Implementation of the Szinva green corridor: providing alternative transport options (on foot, by bike, skateboard), serving special needs (dog walking, pushchair transport); creating sub-centres near water (Keleti kapu, Selyemrét, Belváros, Győri kapu, Üjgyőr-Vasgyár) Construction of the water and wastewater network in the Avasi basement (Upper, Middle and Lower rows of Nagyavas). Key actors involved: the Municipality of Miskolc MJV, Miskolc Municipal Property Management Ltd., NGOs  |
 |  A37. Sustainable water management | The drinking water supply of Miskolc is mainly based on the karst waters of the Bükk. The karst water is extracted in gravity waterworks and pumped waterworks. Improvements to the ultrafiltration of the drinking water base should also be implemented at the following karst springs: the Sinva spring (600 m3/hour capacity), the Tavi spring (400 m3/hour capacity), the Ömassa spring (5 m3/hour capacity). In some suburban areas of Miskolc there are no utility networks (e.g. Lyukóvölgy), in residential areas drinking water must be provided and sewage connections must be provided within a 150 m radius. Drinking water network reconstruction - a priority due to high network water losses. The aim is to reduce the demand for water from the population, save water and promote the use of rainwater and greywater. Key actors concerned: MIVÍZ Kft.  |
-MISKOLC
-
-Climate Neutrality Action Plan
-
-#
-
 |  B-2.1: Description of action portfolios - textual or visual  |   |
 | --- | --- |
 |  Fields of action Built environment | As part of energy systems, 1 focus area will be highlighted  |
@@ -2604,14 +2495,8 @@ B-2.2: Individual action outlines
 |  Action outline | Action name | A6. Developing a sustainable urban energy mix  |
 |   |  Action type | Infrastructure interventions, technology, national and/or EU laws, municipal regulations, business model  |
 |   |  Action description | The extension of urban geothermal district heating to those parts of the city where it is technically and economically feasible (Bulgaria, Diósgyőr), thus almost fully replacing the  |
-MISKOLC
-
-Climate Neutrality Action Plan
-
-6
-
 |   |  | current fossil (natural gas) based heat generation.
-Another important element is the further development of the urban biogas plant, the creation of a solar park in the area of the wastewater treatment plant.  |
+| Another important element is the further development of the urban biogas plant, the creation of a solar park in the area of the wastewater treatment plant.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Energy systems  |
 |   |  Systemic lever | Technology - Construction
@@ -2624,29 +2509,23 @@ energy communities;
 Recovery of sewage sludge;
 Power-to-gas technology using hydrogen production;  |
 |  Implementation | Responsible bodies/person for implementation | Miskolc Heating Services Ltd (MIHÖ)
-Miskolc Waterworks Ltd (MIVİZ)  |
+| Miskolc Waterworks Ltd (MIVİZ)  |
 |   |  Action scale & entities addressed | Total urban area  |
 |   |  Involved stakeholders | Citizens, institutions, businesses  |
 |   |  Comments on implementation | It requires the involvement and cooperation of local service providers, the city and the government level, based on broad collaboration.  |
 |  Impact & cost | Generated renewable energy (if applicable) | Geothermal, solar, heat pump  |
 |   |  Removed/substituted energy, volume, or fuel type | 204 000 MWh
-natural gas, electricity  |
+| natural gas, electricity  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 14%
-208 tCO_{2e}  |
+| 208 tCO_{2e}  |
 |   |  Total costs and costs by CO2e unit | 128 million EUR
-approx. EUR 3.100/tCO_{2e}  |
+| approx. EUR 3.100/tCO_{2e}  |
 |  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
 |  (Fill out one sheet per intervention/project)  |   |   |
 |  Action outline | Action name | A7. Heating decarbonisation (and electrification) programme  |
 |   |  Action type | Infrastructural interventions, business model  |
 |   |  Action description | In terms of share, the reduction in final residential emissions will be most significant in the case of the reduction and then phase-out of natural gas, with the planned measures expected to reduce residential natural gas use by around 40% between 2023 and 2030, before it is phased out completely by 2040. With the large uptake of heat pumps to replace fossil-based heating, the amount of electricity consumed will increase several-fold by 2030, so it is important to continue to develop household-scale solar PV systems and to promote the development of local storage capacity, in line with the evolution of the national energy mix.  |
-MISKOLC
-
-Climate Neutrality Action Plan
-
-7
-
 |  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
 |  (Fill out one sheet per intervention/project)  |   |   |
@@ -2655,7 +2534,7 @@ Climate Neutrality Action Plan
 |   |  Action description | In 2021, the share of pure electric cars in the total urban vehicle fleet was 0.4%. The aim is to achieve at least 10-15 times the national growth projection (8 times growth). Use regulators and incentives to facilitate the transition for both individuals and businesses involved in freight transport.  |
 |  Reference to impact pathway | Field of action | Mobility and transport  |
 |   |  Systemic lever | Regulation - policy
-Financial financing  |
+| Financial financing  |
 |   |  Outcome (according to module B-1.1) | The share of pure electric vehicles reaches 15%.  |
 |  Implementation | Responsible bodies/person for implementation | Individuals  |
 |   |  Action scale & entities addressed | Total urban area  |
@@ -2668,7 +2547,7 @@ Regulation - policy
 Financial financing  |
 |   |  Outcome (according to module B-1.1) | Deployment of highly decarbonised heating systems in the city, which will phase out the use of natural gas.  |
 |  Implementation | Responsible bodies/person for implementation | Individuals
-Public sector  |
+| Public sector  |
 |   |  Action scale & entities addressed | Total urban area  |
 |   |  Involved stakeholders | MIHÖ Ltd.
 Municipality of Miskolc MJV
@@ -2676,17 +2555,11 @@ Electricity suppliers, construction companies  |
 |   | Comments on implementation | Based on broad cooperation, change is needed at the level of governance, regulation and individuals. Strong education and awareness-raising are needed.  |
 |  Impact & cost | Generated renewable energy (if applicable) | Solar energy, heat pump  |
 |   |  Removed/substituted energy, volume, or fuel type | 172 600 MWh
-natural gas  |
+| natural gas  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 12%
-000 tCO2e  |
+| 000 tCO2e  |
 |   | Total costs and costs by CO2e unit | 128 million EUR
-approx. EUR 3.650/tCO2e  |
-MISKOLC
-
-Climate Neutrality Action Plan
-
-8
-
+| approx. EUR 3.650/tCO2e  |
 | B-2.2: Individual action outlines |
 | --- |
 | (Fill out one sheet per intervention/project) |
@@ -2708,16 +2581,10 @@ MÁV Zrt. |
 | Involved stakeholders | Transport operators, electricity grid owners, fleet owners, property and land owners, charging infrastructure providers, etc. |
 | Comments on implementation | A complex, sophisticated planning process involving public stakeholders, public acceptance, strong education and awareness-raising is needed. |
 | Impact & cost | Generated renewable energy (if applicable) | Solar energy |
-MISKOLC
-
-Climate Neutrality Action Plan
-
-#
-
 |   | Removed/substituted energy, volume, or fuel type | diesel, petrol, CNG  |
 | --- | --- | --- |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 20%
-000 tCO2e  |
+| 000 tCO2e  |
 |   |  Total costs and costs by CO2e unit | 205 million EUR
 approx. EUR 5.390/CO2e  |
 
@@ -2728,38 +2595,31 @@ B-2.2: Individual action outlines
 | --- | --- | --- |
 |   |  Action type | Infrastructural interventions, technology  |
 |   |  Action description | Intelligent traffic management is essential to compensate for increasing traffic and to ensure the smooth flow of traffic, resulting in significant CO2 savings in the transport sector. With the right sensors and information and analysis systems, urban road traffic can be managed more efficiently and safely. The digital switchover also includes the introduction of an urban e-ticketing system. With the introduction of the electronic ticketing system, the current sales processes will be transformed, MVK Zrt. will also develop distance sales channels, and public transport will become more attractive for passengers, thanks to more convenient ticket or pass purchase options and the possibility of introducing new, innovative, passenger-friendly fare products.
-
-A complete concept for traffic management has already been developed, supported by indicative proposals. The system to be developed is multi-purpose. On the one hand, it will provide a high-quality traffic information database and, on the other hand, it will directly contribute to the strategic objectives of the soon to be established traffic management centre in Miskolc and the social objectives it will contribute to, as a support to the overall Smart City programme.  |
+| A complete concept for traffic management has already been developed, supported by indicative proposals. The system to be developed is multi-purpose. On the one hand, it will provide a high-quality traffic information database and, on the other hand, it will directly contribute to the strategic objectives of the soon to be established traffic management centre in Miskolc and the social objectives it will contribute to, as a support to the overall Smart City programme.  |
 |  Reference to impact pathway | Field of action | Mobility and transport  |
 |   |  Systemic lever | Technology - construction and IT sector
-Financial financing  |
+| Financial financing  |
 |   |  Outcome (according to module B-1.1) | Intelligent urban traffic management system
-Improved e-ticketing system  |
+| Improved e-ticketing system  |
 |  Implementation | Responsible bodies/person for implementation | Municipality of Miskolc MJV
-MVK Zrt.  |
+| MVK Zrt.  |
 |   |  Action scale & entities addressed | Total urban area  |
 |   |  Involved stakeholders | Hungarian Public Road  |
 |   |  Comments on implementation | Existing technology solutions need to be adapted and deployed, mainly as a funding issue, there are existing collaborations.  |
-MISKOLC
-
-Climate Neutrality Action Plan
-
-0
-
 |  Impact & cost | Generated renewable energy (if applicable) | not relevant  |
 | --- | --- | --- |
 |   |  Removed/substituted energy, volume, or fuel type | diesel and petrol  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 10%
-000 tCO2e  |
+| 000 tCO2e  |
 |   |  Total costs and costs by CO2e unit | 13 million EUR
-approx. EUR 684/tCO2e  |
+| approx. EUR 684/tCO2e  |
 |  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
 |  (Fill out one sheet per intervention/project)  |   |   |
 |  Action outline | Action name | A30. Development of modern regional waste management  |
 |   |  Action type | Infrastructure interventions, technology, national and/or EU laws, municipal regulations, business model  |
 |   |  Action description | On the one hand, the recovery rate of municipal waste needs to be drastically increased, which requires further developments and investments in the waste management sector. New separate collection schemes must meet strict requirements for waste streams (textile, bio and hazardous). By improving yards and the fleet of vehicles and equipment, compulsory separate collection of bio-waste should be achieved by 2024, and separate collection of textiles and household hazardous waste by 2025. The recovery rate of construction and demolition waste should also be increased.
-On the other hand, ongoing awareness-raising programmes should help to minimise waste generation and increase public willingness to cooperate.  |
+| On the other hand, ongoing awareness-raising programmes should help to minimise waste generation and increase public willingness to cooperate.  |
 |  Reference to impact pathway | Field of action | Waste and circular economy  |
 |   |  Systemic lever | Technology - Construction
 Regulation - policy
@@ -2773,14 +2633,8 @@ Decreasing household waste generation.
 |   |  Comments on implementation | Continuous education and awareness-raising, and the gradual and prepared introduction of rules and regulations are of paramount importance.  |
 |  Impact & cost | Generated renewable energy (if applicable) |   |
 |   |  Removed/substituted energy, volume, or fuel type | (municipal solid waste)  |
-MISKOLC
-
-Climate Neutrality Action Plan
-
-#
-
 |  GHG emissions reduction estimate (total) per emission source sector | 80%
-tCO2e  |
+| tCO2e  |
 | --- | --- |
 |  Total costs and costs by CO2e unit | 25 million EUR
 approx. EUR 6.250/tCO2e  |
@@ -2802,14 +2656,14 @@ Social innovation  |
 Separate collection schemes for different waste streams.
 Reduced waste generation from businesses and households.  |
 |  Implementation | Responsible bodies/person for implementation | MOHU MOL Waste Management Ltd.
-Municipality of Miskolc MJV  |
+| Municipality of Miskolc MJV  |
 |   |  Action scale & entities addressed | Total urban area  |
 |   |  Involved stakeholders | Businesses, population  |
 |   |  Comments on implementation | Continuous education and awareness-raising, and the gradual and prepared introduction of rules and regulations are of paramount importance.  |
 |  Impact & cost | Generated renewable energy (if applicable) |   |
 |   |  Removed/substituted energy, volume, or fuel type | (municipal solid waste)  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 10%
-tCO2e  |
+| tCO2e  |
 |   |  Total costs and costs by CO2e unit | 7,5 million EUR approx. EUR 15.000/tCO2e  |
 MISKOLC
 
@@ -2846,12 +2700,6 @@ An overview table listing the indicators selected per outcome and impact includi
 |  Reduction of carbon emission of industry | A13 | MI5 | GHG emission from industrial processes and product use per year (tCO2e /year) |  | 57 141 | 24 489 | 8 164  |
 |  Reduction of carbon emission of AFOLU | A36, A37 | MI6 | GHG emission from agriculture, forestry and land use per year (tCO2e /year) |  | 2 091 | 1 195 | 298  |
 |  Improvement of grid capacity for receiving green electricity and | A9-A12 | MI7 | GHG emission from grid supplied energy per year (tCO2e /year) |  | 74 620 | 24 873 | 18 655  |
-MISKOLC
-
-Climate Neutrality Action Plan
-
-4
-
 |  lessen electricity consumption |  |  |  |  |  |  |   |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Reduction of city energy consumption | A1-A38 | MI8 | Change in the total energy consumption per year (MWh/year) | - | - | -1 424 230 |   |
@@ -2861,12 +2709,6 @@ Climate Neutrality Action Plan
 |  Greener buildings and improved energy efficiency in building sector | A1-A8 | MI12 | Change of the greenhouse gas emissions in Buildings and heating sector during the lifetime of the project (tCO_{2e}/year) | -33 287 | -83 216 | -137 038 |   |
 |  Improvement of grid capacity for receiving green electricity and lessen electricity consumption | A9-A12 | MI13 | Change of the greenhouse gas emissions in Electricity sector during the lifetime of the project (tCO_{2e}/year) | -49 747 | -99 494 | -105 712 |   |
 |  Waste recycling | A30-A35 | MI14 | Change of the greenhouse gas emissions in Waste sector during the lifetime of the project (tCO_{2e}/year) | -316 | -526 | -668 |   |
-MISKOLC
-
-Climate Neutrality Action Plan
-
-5
-
 |  Reduction of carbon emission of industry and AFOLU | A13 | MI15 | Change of the greenhouse gas emissions in Other (incl. IPPU and AFOLU) sector during the lifetime of the project (tCO_{2e}/year) |  | -25 385 | -58 933 | -76 155  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Improved life quality of citizens | A1, A3, A4, A5 | MI16 | Improved air quality (Highest annual mean of PM2.5 concentration recorded [μg PM2.5 / m^{3}]) |  | 80,8 | 79,3 | 73,2  |
@@ -2876,12 +2718,6 @@ Climate Neutrality Action Plan
 |  Reduction of carbon emission of local heating | A1, A2, A3, A5, A7 | MI20 | Decarbonizing local heating (share of local heating produced using fossil fuels) |  | 99% | 85% | 60%  |
 |  Reduction of carbon emission from district heating | A6, A7 | MI21 | Decarbonizing district heating (share of district heating produced using fossil fuels) |  | 51% | 35% | 5%  |
 |  Reduction of carbon emission of electricity | A9-A12 | MI22 | Decarbonizing electricity (share of non-fossil sources in electricity production) |  | 35% | 30% | 5,25%  |
-MISKOLC
-
-Climate Neutrality Action Plan
-
-6
-
 |  Reduced motorised transport | A14-A20, A27 | MI23 | Reduced motorised passenger transport needs (% reduction by 2030) |  | 0 | 15% | 39%  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Reduced motorised transport | A21, A22 | MI24 | Electrification of buses (% of fleet electrified) |  | 10% | 50% | 100%  |
@@ -2891,12 +2727,6 @@ Climate Neutrality Action Plan
 |  Improved life quality of citizens | A26 | MI28 | Optimization of trucking logistics - light duty trucks (< 3.5 t) (average utilization of maximum load weight for light duty trucks (< 3.5 t)) |  | 15% | 35% | 45%  |
 |  Improved life quality of citizens | A26 | MI29 | Optimization of trucking logistics - heavy duty trucks (> 3.5 t) (average utilization of maximum load weight for heavy duty trucks (< 3.5 t)) |  | 20% | 45% | 60%  |
 |  Reduced urban waste, improved recycling | A30-A35 | MI30 | Urban waste reduction; Biowaste recovery (% of recycled domestic waste of the total domestic waste generation) |  | 15% | 55% | 87%  |
-MISKOLC
-
-Climate Neutrality Action Plan
-
-7
-
 |  Sustainable water supply | A37 | MI31 | Reduction of loss in piped water system (% of loss of total water input) |  | 44% | 38% | 20%  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Sustainable water supply | A37 | MI32 | Improved water management (Household water consumption [l /capita/day]) |  | 81,1 | 78 | 73  |
@@ -3053,12 +2883,6 @@ Digital infrastructure maps, databases and other targeted surveys: e.g. network 
 Installing environmental monitoring systems using advanced sensors and urban IT, telemetry and other infrastructure
 Meteorological and Climate Observation Network | community engagement and support. |  |   |
 | --- | --- | --- | --- | --- |
-MISKOLC
-
-Climate Neutrality Action Plan
-
-3
-
 |   | - Air pollution detection network
 Upgrading and extension of the Karst Water Detection System (KDWS)
 Other hydrological and soil monitoring systems (water yield, groundwater, lakes, etc.)
@@ -3107,21 +2931,9 @@ The server-based implementation of the electronic ticketing system in Miskolc sh
 With the introduction of the electronic ticketing system, it will be possible to adapt the current product and tariff system. The season ticket type products will remain, while the technical solution for tickets will allow the introduction of a transferable product.
 With the introduction of the electronic ticketing system, the current sales processes will also be transformed, MVK Zrt. will also develop distance sales channels, and public transport will become more attractive for passengers, which can be ensured by |  |  |   |
 | --- | --- | --- | --- | --- |
-MISKOLC
-
-Climate Neutrality Action Plan
-
-6
-
 |   | more convenient ticket or pass purchase options and the possibility of introducing new, innovative, passenger-friendly fare products. |  |  |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  Development of strategic planning documents for green and blue infrastructure development | The aim is to develop a green and blue infrastructure that supports mitigation and climate adaptation, provides high quality ecosystem services and is also capable of conserving and enhancing biodiversity. The development of urban green spaces and special green areas will be integrated with blue infrastructure developments. Documents to be prepared: - Review of the Municipal Green Infrastructure Development and Maintenance Action Plan (ZIFFA) - Preparation of an Integrated Municipal Water Management Plan (ITWMP) - Urban Green Book | Green and blue infrastructure: Lack of an effective regulatory framework for the protection of green spaces Shortcomings in the conscious management of green spaces Wasteful land use hinders systematic planning of green spaces Lack of inventory of green assets and trees, inventory of green infrastructure values Vertical and roof surfaces unused Surface and groundwater: Lack of a complex climate and environmentally sound water management system Outdated approach to water planning/construction | Municipality of Miskolc MJV Municipal Landlord Ltd. MIVIZ NGOs | The strategic planning documents will allow for the implementation of green and blue infrastructure projects that will increase the city's carbon absorption capacity. |   |
-MISKOLC
-
-Climate Neutrality Action Plan
-
-7
-
 |   |  | The state of the public utility network does not allow water conservation. Karst aquifer vulnerable to extreme weather events |  |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  Municipal regulation to help tackle energy poverty | In any housing environment, financing energy costs that rise during the heating season, let alone financing minimum energy investments, can be a problem. On the regulatory side, help should also be given to those experiencing temporary or permanent energy poverty, through the creation of local ordinance(s). | High incineration of waste for heating in the context of energy poverty | Municipality of Miskolc MJV
@@ -3130,7 +2942,7 @@ Reducing noise pollution
 A more liveable urban environment
 A healthier society - a less burdened health and social sector  |
 |  Developing and operating a climate platform | The aim of the Climate Platform is to support continuous cooperation with stakeholders involved in the climate transition, facilitate mutual information exchange and monitor the implementation of the Action Plan | Lack of climate-neutral business models | Municipality of Miskolc MJV
-Total concerned (see Table A-3.2) | facilitates stakeholder involvement and the implementation of non-municipal interventions | Improved intersectoral cooperation  |
+| Total concerned (see Table A-3.2) | facilitates stakeholder involvement and the implementation of non-municipal interventions | Improved intersectoral cooperation  |
 |  Strengthening public participation | Strengthening the Participation Programme's climate action, increasing public involvement. Strengthening and promoting the CoolMiskolc brand, development of the CoolMiskolc website. | Gaps in information and public awareness | Municipality of Miskolc MJV
 Participation Office
 NGOs | helps to involve the public and implement private interventions | Overall increase in public support for environmental issues  |
@@ -3286,12 +3098,6 @@ Climate Neutrality Action Plan
 |   | community forums for residents and community representatives. Special access for the elderly and for groups with difficult financial circumstances must also be ensured. The programme should also provide information on the financial resources available. |  |  |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  Public awareness programme for green and blue infrastructure development | Given that the ultimate "consumer" is the population, and that every decision and action depends on individuals, it is of paramount importance to raise public awareness in the following areas: - the role of green and blue infrastructure in combating climate change - treating urban green assets as assets - preventing illegal logging - the importance of soil life - design and maintenance of green spaces in a climate-friendly and ecological way - the importance and potential of rainwater retention and recovery | Green space systems, natural state Low proportion of living topsoil in the city Infrastructure improvements are typically at the expense of biologically active surfaces Preference for paved surfaces over paving on private residential property Green spaces are not treated as an asset at the design/construction stage Buffer areas for green and blue infrastructure elements are scarce The management of green spaces is not ecological. Invasive species spread Surface water and groundwater | Municipality of Miskolc MJV Urban NGOs Education and training institutions | Changes in public behaviour patterns will help the implementation of technological interventions and lead to an increase in overall energy awareness. | Improving air quality A more liveable urban environment A healthier society - a less burdened health and social sector  |
-MISKOLC
-
-Climate Neutrality Action Plan
-
-5
-
 |   |  | The retention of stormwater is not typical for the population. |  |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  Public awareness programme for net-zero transport | Given that the ultimate "consumer" is the population, and that every decision and action depends on individuals, it is of paramount importance to raise public awareness in the following areas:
@@ -3433,12 +3239,6 @@ B-3.2: Indicator indicator metadata sheets
 |  If yes, which action and impact pathway is it relevant for? | A1-A8  |
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | yes  |
 |  Data requirements |   |
-MISKOLC
-
-Climate Neutrality Action Plan
-
-#
-
 |  B-3.2: Indicator Metadata  |   |
 | --- | --- |
 |  Indicator Name | GHG emissions from transport per year (MI3)  |
@@ -3472,12 +3272,6 @@ Climate Neutrality Action Plan
 |  If yes, which emission source sectors does it measure? | Other  |
 |  Does the indicator measure indirect impacts (i.e., co-benefits)? | no  |
 |  If yes, which co-benefit does it measure? | NR  |
-MISKOLC
-
-Climate Neutrality Action Plan
-
-#
-
 |  B-3.2: Indicator Metadata  |   |
 | --- | --- |
 |  Indicator Name | GHG emissions from industrial processes and product use per year (MI5)  |
@@ -3507,12 +3301,6 @@ Climate Neutrality Action Plan
 |  Definition | Annual CO2 equivalent emissions for the whole city from AFOLU  |
 |  Calculation | Cumulative value of CO2 equivalent emissions from AFOLU  |
 |  Indicator Context |   |
-MISKOLC
-
-Climate Neutrality Action Plan
-
-#
-
 |  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | yes  |
 | --- | --- |
 |  If yes, which emission source sectors does it measure? | Other  |
@@ -3573,12 +3361,6 @@ Climate Neutrality Action Plan
 |  References |   |
 |  Deliverables describing the indicator | Dataset downloaded from MVM ÉMÁSZ  |
 |  Other indicator systems using this indicator |   |
-MISKOLC
-
-Climate Neutrality Action Plan
-
-#
-
 |  Indicator Unit | MWh/year  |
 | --- | --- |
 |  Definition | Annual change in the amount of energy used in the city  |
@@ -3663,12 +3445,6 @@ Other indicator systems using this indicator
 |  If yes, which co-benefit does it measure? | NR  |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | yes  |
 |  If yes, which action and impact pathway is it relevant for? | A14-A29  |
-MISKOLC
-
-Climate Neutrality Action Plan
-
-#
-
 |  B-3.2: Indicator Metadata  |   |
 | --- | --- |
 |  Indicator Name | Change of the greenhouse gas emissions in Buildings and heating sector during the lifetime of the project (MI12)  |
@@ -3696,12 +3472,6 @@ Climate Neutrality Action Plan
 |  Indicator Name | Change of the greenhouse gas emissions in Electricity sector during the lifetime of the project (MI13)  |
 |  Indicator Unit | t CO2 equivalents / year  |
 |  Definition | Change in GHG emissions from the Electricity sector without the GHG emissions of electricity used in the Buildings sector  |
-MISKOLC
-
-Climate Neutrality Action Plan
-
-7
-
 |  Calculation | (Total GHG emissions from Electricity sector in the current year - GHG emissions from Building sector in the current year) minus (Total GHG emissions from Electricity sector in the base year - GHG emissions from Building sector in the base year)  |
 | --- | --- |
 |  Indicator Context |   |
@@ -3740,12 +3510,6 @@ Climate Neutrality Action Plan
 |  Expected availability | available  |
 |  Suggested collection interval | annual  |
 |  References |   |
-MISKOLC
-
-Climate Neutrality Action Plan
-
-#
-
 |  B-3.2: Indicator Metadata  |   |
 | --- | --- |
 |  Indicator Name | Change of the greenhouse gas emissions in Other (incl. IPPU and AFOLU) sector during the lifetime of the project (MI15)  |
@@ -3780,12 +3544,6 @@ Climate Neutrality Action Plan
 |  Does the indicator measure indirect impacts (i.e., co-benefits)? | yes  |
 |  If yes, which co-benefit does it measure? | air quality improvement  |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | yes  |
-MISKOLC
-
-Climate Neutrality Action Plan
-
-9
-
 |  If yes, which action and impact pathway is it relevant for? | A1, A3, A4, A5  |
 | --- | --- |
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | no  |
@@ -3827,12 +3585,6 @@ Climate Neutrality Action Plan
 |  Calculation | Number of buildings renovated in the current year / Total number of buildings  |
 |  Indicator Context |   |
 |  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | no  |
-MISKOLC
-
-Climate Neutrality Action Plan
-
-0
-
 |  If yes, which emission source sectors does it measure? | NR  |
 | --- | --- |
 |  Does the indicator measure indirect impacts (i.e., co-benefits)? | yes  |
@@ -3875,12 +3627,6 @@ Climate Neutrality Action Plan
 |  Indicator Name | Decarbonising local heating (MI20)  |
 |  Indicator Unit | share of local heating produced using fossil fuels  |
 |  Definition | Reduction in the share of fossil-based local heating in total local heating  |
-MISKOLC
-
-Climate Neutrality Action Plan
-
-1
-
 |  Calculation | fossil-based local heating emissions in the current year / total local heating emissions in the current year  |
 | --- | --- |
 |  Indicator Context |   |
@@ -3920,12 +3666,6 @@ Climate Neutrality Action Plan
 |  Suggested collection interval | annual  |
 |  References |   |
 |  Deliverables describing the indicator | Dataset downloaded from MIHÓ  |
-MISKOLC
-
-Climate Neutrality Action Plan
-
-#
-
 |  B-3.2: Indicator Metadata  |   |
 | --- | --- |
 |  Indicator Name | Decarbonising electricity (MI22)  |
@@ -3963,12 +3703,6 @@ Climate Neutrality Action Plan
 |  If yes, which action and impact pathway is it relevant for? | A14-A20, A27  |
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | no  |
 |  Data requirements |   |
-MISKOLC
-
-Climate Neutrality Action Plan
-
-#
-
 |  B-3.2: Indicator Metadata  |   |
 | --- | --- |
 |  Indicator Name | Electrification of buses (MI24)  |
@@ -4000,12 +3734,6 @@ Climate Neutrality Action Plan
 |  Indicator Context |   |
 |  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | yes  |
 |  If yes, which emission source sectors does it measure? | Transport  |
-MISKOLC
-
-Climate Neutrality Action Plan
-
-#
-
 |  Does the indicator measure indirect impacts (i.e., co-benefits)? | no  |
 | --- | --- |
 |  If yes, which co-benefit does it measure? | NR  |
@@ -4047,12 +3775,6 @@ Climate Neutrality Action Plan
 |  Indicator Name | Electrification of heavy duty trucks >3.5t by 2040 (MI27)  |
 |  Indicator Unit | % of fleet electrified  |
 |  Definition | Increasing the share of electric heavy duty trucks (>3.5t) in the urban fleet  |
-MISKOLC
-
-Climate Neutrality Action Plan
-
-#
-
 |  Calculation | Number of electric heavy duty trucks (>3.5t) / Total number of heavy duty trucks (>3.5t)  |
 | --- | --- |
 |  Indicator Context |   |
@@ -4093,12 +3815,6 @@ Climate Neutrality Action Plan
 |  References |   |
 |  Deliverables describing the indicator | Dataset from traffic counting  |
 |  Other indicator systems using this indicator |   |
-MISKOLC
-
-Climate Neutrality Action Plan
-
-6
-
 |  B-3.2: Indicator Metadata  |   |
 | --- | --- |
 |  Indicator Name | Optimization of trucking logistics - heavy duty trucks (> 3.5 t) (MI29)  |
@@ -4135,12 +3851,6 @@ Climate Neutrality Action Plan
 |  Is the indicator useful for monitoring the output/impact of action(s)? | yes  |
 |  If yes, which action and impact pathway is it relevant for? | A30-A35  |
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | no  |
-MISKOLC
-
-Climate Neutrality Action Plan
-
-7
-
 |  Data requirements |   |
 | --- | --- |
 |  Expected data source | MOHU MOL Zrt.  |
@@ -4183,12 +3893,6 @@ Climate Neutrality Action Plan
 |  If yes, which emission source sectors does it measure? | NR  |
 |  Does the indicator measure indirect impacts (i.e., co-benefits)? | yes  |
 |  If yes, which co-benefit does it measure? | freshwater stock protection  |
-MISKOLC
-
-Climate Neutrality Action Plan
-
-8
-
 |  Is the indicator useful for monitoring the output/impact of action(s)? | yes  |
 | --- | --- |
 |  If yes, which action and impact pathway is it relevant for? | A37  |

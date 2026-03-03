@@ -94,8 +94,6 @@ The list of tables identifies the titles and locations (page numbers) of all tab
 |  Table No | Table title | Page No  |
 | --- | --- | --- |
 |  Table 1 | Carbon emissions in Glasgow by sector 2006-2022 | 18  |
-|  |   |   |
-|  |   |   |
 
 OFFICIAL
 OFFICIAL
@@ -884,7 +882,7 @@ A-3.2: Systems &amp; stakeholder mapping
 |  System | Stakeholders | Influence on the city's climate neutrality ambition | Interest in the city's climate neutrality ambition  |
 | --- | --- | --- | --- |
 |  Governance and Policy | Glasgow City Council, Scottish Government, UK Government, other Local Authorities | Set direction of policy, legislation and regulation. Can unlock and direct capital funds to deliver net zero programme | Statutory obligation to deliver emissions reductions
-Remit of responsibility of citizens within respective jurisdictions  |
+| Remit of responsibility of citizens within respective jurisdictions  |
 |  Partnership working | Glasgow City Region, Clyde Gateway, Sustainable Glasgow Partnership | Capitalise on efficiencies of cross-organisation working
 Maximise impact of climate related projects
 Build resilience by collaboration and alignment
@@ -917,8 +915,6 @@ Climate Neutrality Action Plan
 
 #
 
-|  |   |   |   |
-| --- | --- | --- | --- |
 |  Infrastructure | Scottish Power, Scottish Power Energy Networks, Scottish Water, Scottish Water Horizons, Scotia Gas Networks, heat network operators, broadband providers, Strathclyde Partnership Transport, Network Rail, Glasgow City Council, Scottish Government, UK Government | Provide investment in projects that deliver carbon emissions reductions for Glasgow's infrastructure
 Steer infrastructure development in a manner complementary with net zero goals
 Knowledge exchange with local and national government | To make infrastructure related decisions and investment that are in alignment with net zero trajectory
@@ -994,7 +990,6 @@ Climate Neutrality Action Plan
 |   |   |  Installation of wind turbines | Pathway development for wind turbine installation |  | Land constraint relief  |
 |   |   |  Deployment of heat network supplied via the GRREC (EfW plant) | Pathway development for citywide rollout of district heating |  | Energy security Affordable heating Improved efficiency of GRREC plant Improved waste management performance  |
 |   |   |  Identify Vacant and | Unlocking increased |  | Land constraint relief  |
-|   |   |  |   |   |   |
 
 OFFICIAL
 OFFICIAL
@@ -1033,8 +1028,6 @@ Climate Neutrality Action Plan
 |   |   |  Deployment of freight distribution hubs | Reduction in commercial delivery associated carbon emissions |  | Reduced air pollutionImproved CSR for businesses  |
 |   |   |  Deployment of 'last mile' delivery hubs | Increased use of active travel methods for delivery of goods |  | Reduced air pollutionImproved CSR for businesses  |
 |   |   |  Promote remote working and workplace | Reduction in transport emissions through reduced |  | Reduced air pollutionImproved CSR for businesses  |
-|   |   |  |   |   |   |
-|   |  |   |   |   |   |
 
 OFFICIAL
 OFFICIAL
@@ -1340,7 +1333,7 @@ Climate Neutrality Action Plan
 
 |   | GHG emissions compensated (natural or technological sinks) | The Net Zero Routemap provides indications of the quantity of emissions reductions projects such as the Metro could generate for Glasgow. It is unlikely that sequestration of emissions will be a notable output from the Metro project.  |
 | --- | --- | --- |
-|   |  Total costs and costs by CO2e unit | The Net Zero Routemapprovides indications of the quantity of emissions reductions projects such as the Metro could generate for Glasgow.  |
+|   |  Total costs and costs by CO2e unit | The Net Zero Routemap provides indications of the quantity of emissions reductions projects such as the Metro could generate for Glasgow.  |
 |  Glasgow District Heating - GRREC  |   |   |
 |  Action outline | Action name | Glasgow District Heating - GRREC  |
 |   |  Action type | District heating infrastructure  |
@@ -1351,6 +1344,8 @@ Climate Neutrality Action Plan
 Affordable heating
 Improved efficiency of GRREC plant
 Improved waste management performance  |
+| Section | Item | Details |
+| --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | Glasgow City Council / Viridor  |
 |   |  Action scale & addressed entities | Polmadie area of Glasgow - c. 1.96km2. Addressed entities : Gas network, operation of the GRREC, Public owned buildings in project scope, domestic properties in scope, non-domestic properties in scope.  |
 |   |  Involved stakeholders | Glasgow City Council, Viridor, Scottish Government, Scottish Futures Trust, Zero Waste Scotland, NHS, Glasgow Clyde College, Hampden Football Stadium  |
@@ -1745,7 +1740,8 @@ Climate Neutrality Action Plan
 C-2.2: Description of social innovation interventions
 
 |  Citizens Assembly | Assembly to hear from people living across the city and understand how the city can work together to become a net zero city in a way that is inclusive, fair, and respectful to everyone. | Delivered by market research company, Ipsos Mori | 50 Glasgow residents | Recommendations incorporated into climate neutrality action across GCC. | Citizen representation in decision making
-Increased citizen awareness  |
+| Increased citizen awareness  |
+| Intervention name | Description | Responsible entity/department | Involved stakeholder | Enabling impact | Co-benefits |
 | --- | --- | --- | --- | --- | --- |
 |  Centre for Civic Innovation | A pioneering citizen-centred design team, responsible for establishing a design-led approach to working across the Council and engaging within the city. | GCC | Centre for Civic Innovation, GCC, Glasgow communities. | Applies an innovative approach to engaging communities and aligning city strategies and deliverables with local needs and codesigning solutions. | Embedding citizen design into development of climate solutions towards net zero  |
 |  Thriving Cities Initiative | An iterative approach to support cities in addressing unsustainable consumption to help achieve the targets of the Paris Agreement and improve equity, quality of life, and economic livelihoods. | GCC | C40 Cities, GCC, GALLANT | Develops an action pathway to reduce consumption based emissions and improve equity and quality of life. | Knowledge exchange  |

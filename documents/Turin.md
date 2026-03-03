@@ -1562,10 +1562,10 @@ A-2.1: List of relevant policies, strategies &amp; regulations (1991 – 2023)
 (PEAR - Regional Environmental Energy Plan)
 | The PEAR fulfils, among others, two fundamental objectives: on the one hand, to orient regional policies towards those of the Climate Energy Package and the National Integrated Energy and Climate Plan and, on the other hand, to support and promote an entire industrial and research sector that has great opportunities for growth.  |
 |  PROTECTO | Primo stralcio della Strategia Regionale sul Cambiamento Climatico
-(Regional Strategy on Climate Change) | The Regional Strategy on Climate Change (SRCC) will be the reference tool that will guide the administrative action in this sense, starting from the technical-scientific evidence up to the measures that will have to be taken in the regional planning and programming in the different sectors, with attention to the processes of governance, horizontal and vertical institutional coordination and public participation.  |
+| (Regional Strategy on Climate Change) | The Regional Strategy on Climate Change (SRCC) will be the reference tool that will guide the administrative action in this sense, starting from the technical-scientific evidence up to the measures that will have to be taken in the regional planning and programming in the different sectors, with attention to the processes of governance, horizontal and vertical institutional coordination and public participation.  |
 |  NATIONAL LEVEL  |   |   |
 |  PLAN | Piano Nazionale di adattamento ai cambiamenti climatici –
-(PNACC - National Climate Change Adaptation Plan) | The aim of the Plan is to contain the vulnerability of natural, social and economic systems to the impacts of climate change and to increase resilience. It represents the implementation tool of the 2015 National Climate Change Adaptation Strategy for national planning to support the institutions that will be called upon to develop the contents of the plan on their own scale of government, taking into account the specificities of different contexts.  |
+| (PNACC - National Climate Change Adaptation Plan) | The aim of the Plan is to contain the vulnerability of natural, social and economic systems to the impacts of climate change and to increase resilience. It represents the implementation tool of the 2015 National Climate Change Adaptation Strategy for national planning to support the institutions that will be called upon to develop the contents of the plan on their own scale of government, taking into account the specificities of different contexts.  |
 |  PLAN | Piano Nazionale Strategia Energetica Nazionale
 (SEN - National Energy Strategy National Plan)
 | A Ministerial Decree of the Ministry of Economic Development and the Ministry of the Environment and Land and Sea Protection adopted the 2017 National Energy Strategy, the Italian government’s 10-year plan to anticipate and manage change in the energy system.
@@ -1600,8 +1600,7 @@ A-2.1: List of relevant policies, strategies &amp; regulations (1991 – 2023)
 |  TITAN | Piano nazionale di contenimento dei consumi di gas
 (National gas consumption containment plan)
 | The so-called ‘National Plan for the Containment of Natural Gas Consumption’ is a document containing a set of rules provided by the Ministry of Ecological Transition (MiTE) with the aim of limiting the effects of rising energy prices (especially in the wake of the conflict between Russia and Ukraine), by immediately launching a savings campaign to prepare for possible interruptions in gas supplies from Russia, the main supplier of this energy source until recently.
-
-The MiTE adopted the Plan in order to save gas and avoid as much as possible an excessive depletion of national storages also in view of the following 2023/2024 season. This measure, in line with the indications defined in Regulation (EU) 2022/1369 of 5 August 2022, implements - through Ministerial Decree 383 of 6 October 2022 - the indications of the European Commission.  |
+| The MiTE adopted the Plan in order to save gas and avoid as much as possible an excessive depletion of national storages also in view of the following 2023/2024 season. This measure, in line with the indications defined in Regulation (EU) 2022/1369 of 5 August 2022, implements - through Ministerial Decree 383 of 6 October 2022 - the indications of the European Commission.  |
 | --- | --- | --- |
 
 Table A-2.1b lists the major projects initiated by the Città di Torino and the Regione Piemonte, considered relevant for their positive environmental impacts on the territory:
@@ -1616,9 +1615,8 @@ Specifically, there were several moments of in-depth discussion with the City of
 
 Instead, the subject of the comparison with New Orleans was the co-creation model of the adaptation strategy that the American city is developing, which envisages the active participation of citizens in the planning and construction of the plan. This approach favours the acceptance of the solutions identified and the co-responsibility of citizens, who are not third parties but active participants in the choices made by the administration.*  |
 |  TITAN | Mille alberi per Torino
-(A Thousand Trees for Torino) | Over the last few decades, qualitatively and numerically significant volunteer experiences have developed, i.e. of citizens asking or accepting to collaborate, voluntarily and absolutely free of charge, with their administration in projects aimed at improving the quality of life in their city, without the intermediation of an association.
-
-The project envisaged the shared planting of new trees in all the districts by city technicians and groups of citizens: a participatory care of the area in which all citizens are invited to participate by sharing a day of work to plant the trees, of which they will then also be custodians and guardians as they grow.  |
+| (A Thousand Trees for Torino) | Over the last few decades, qualitatively and numerically significant volunteer experiences have developed, i.e. of citizens asking or accepting to collaborate, voluntarily and absolutely free of charge, with their administration in projects aimed at improving the quality of life in their city, without the intermediation of an association. |
+| The project envisaged the shared planting of new trees in all the districts by city technicians and groups of citizens: a participatory care of the area in which all citizens are invited to participate by sharing a day of work to plant the trees, of which they will then also be custodians and guardians as they grow.  |
 | --- | --- | --- |
 |   |  REGIONAL LEVEL  |   |
 |  TITAN | LABORATORIO PER LO SVILUPPO SOSTENIBILE DEL PIEMONTE
@@ -1789,10 +1787,10 @@ Table A-3.1: Opportunities and systemic barriers to climate neutrality by 2030
 Description of urban systems, systemic barriers, and opportunities
 
 |  Governance | Horizontal internal governance
-(Opportunity) | A greater push for an inter-sectoral overcome of the municipality's vertical organizational structure is an indispensable element for (i) face the challenge of climate neutrality in a structural and responsible manner; (ii) systemize policies/strategic choices to use the available funds by effectively orienting programs, plans, projects and interventions; (iii) contribute to the strengthening of multi-level institutional governance and, more generally, make collaboration with the actors of the city ecosystem efficient; (iv) link activation initiatives and dialogue with the community by implementing skills in participatory process design.  |
+| (Opportunity) | A greater push for an inter-sectoral overcome of the municipality's vertical organizational structure is an indispensable element for (i) face the challenge of climate neutrality in a structural and responsible manner; (ii) systemize policies/strategic choices to use the available funds by effectively orienting programs, plans, projects and interventions; (iii) contribute to the strengthening of multi-level institutional governance and, more generally, make collaboration with the actors of the city ecosystem efficient; (iv) link activation initiatives and dialogue with the community by implementing skills in participatory process design.  |
 | --- | --- | --- |
 |  Governance | Multilevel external vertical governance
-(Opportunity) | A strengthening of relations on the level of multi-level institutional governance and, in particular, with the Region and the Città Metropolitana appears useful to generate coordinated, synergic action capable of territorializing supra-local strategies. The Città di Torino, which is very active in projects financed with European funds, is present in various international and national networks active in environmental and climate change issues. The experience gained over the years through the exchange with many actors in the different fields of action of the CCC represents an asset and an opportunity for: (i) improve the efficiency/effectiveness of multilevel institutional governance (local/regional/national/community); (ii) strengthen the relationship with (non-governmental) stakeholders of the local ecosystem; (iii) refine engagement models of partners relevant to the energy transition; (iv) give greater impetus to the co-creation of partnership actions with significant impacts on the abatement of climate-changing emissions.  |
+| (Opportunity) | A strengthening of relations on the level of multi-level institutional governance and, in particular, with the Region and the Città Metropolitana appears useful to generate coordinated, synergic action capable of territorializing supra-local strategies. The Città di Torino, which is very active in projects financed with European funds, is present in various international and national networks active in environmental and climate change issues. The experience gained over the years through the exchange with many actors in the different fields of action of the CCC represents an asset and an opportunity for: (i) improve the efficiency/effectiveness of multilevel institutional governance (local/regional/national/community); (ii) strengthen the relationship with (non-governmental) stakeholders of the local ecosystem; (iii) refine engagement models of partners relevant to the energy transition; (iv) give greater impetus to the co-creation of partnership actions with significant impacts on the abatement of climate-changing emissions.  |
 |  Governance | Digital infrastructure enabling multi-level governance
 (Opportunity) | The systematization of knowledge to underpin the interaction with the ecosystem of actors is, without a doubt, an indispensable factor to support the collective understanding of the challenge, facilitate dialogue, foster alliances and partnerships on projects/initiatives with relevant direct and indirect impacts, and guarantee constant monitoring and corrections to be introduced during the implementation and deployment of the Action Plan. The City, taking advantage of consolidated relations with the academic and scientific world, provides itself with a digital platform useful to detect the incisiveness of the abatement of climate-altering emissions of multilevel interventions financed with multiple funds (EU, national, regional, local). This platform is instrumental in the construction and monitoring of the CCC but, by targeting the integration of data on the Digital Twin, it represents a useful tool for governing multi-actor decision-making processes by coordinating climate partnership action.  |
 
@@ -2499,7 +2497,7 @@ ENVIRONMENTAL BENEFITS (B, C)
 Improved air, water and soil quality  |
 | --- | --- | --- | --- | --- | --- |
 |   |   |   |  DEMOCRACY & PARTICIPATION
-Dialogue with the citizenship by undertaking a participatory process to understand initiative's relevance  |   |   |
+| Dialogue with the citizenship by undertaking a participatory process to understand initiative's relevance  |   |   |
 |  Wastewater treatment | Process efficiency improvement (15% more efficient) | GOVERNANCE & POLICY
 Promote and inject targeted policies
 TECHNOLOGY
@@ -2678,7 +2676,7 @@ FS3 – Data Center Heat
 |   |  Action description | Data Centers: Recovery of 55% of waste heat from data centers (Hypothesis: 9% annual increase in data centers)  |
 |  Reference to impact pathway | Field of action | Stationary Energy Systems; Built Environment (Municipal, Residential, Tertiary, Industry)  |
 |   |  Systemic lever | Governance & Policy
-Learning & Capabilities  |
+| Learning & Capabilities  |
 |   |   |  Social Innovation  |
 
 Part B – The target and the way to go for Torino: Pathways towards Climate Neutrality by 2030
@@ -2788,7 +2786,7 @@ Governance & Policy
 Social Innovation |
 | Responsible bodies/person for implementation | IREN |
 | Action scale & addressed entities | Cogeneration plant
-Iren Torino Nord |
+| Iren Torino Nord |
 | Implementation | Involved stakeholders | Technology providers, Municipality |
 | Comments on implementation | As the responsible entity is the operation of the district heating system (IREN), the municipality will support and facilitate any required administrative process. |
 
@@ -3246,7 +3244,7 @@ FE1 – PV Share Increase
 |   |  Action description | Increase in the share of PV in the electricity generation system  |
 |  Reference to impact pathway | Field of action | Energy systems  |
 |   |  Systemic lever | Technology
-Learning & Capabilities  |
+| Learning & Capabilities  |
 |   |   |  Governance & Policy  |
 |   |   |  Democracy & Participation  |
 |  Implementation | Responsible bodies/person for implementation | Municipality, citizens  |
@@ -3268,7 +3266,7 @@ B-2.2: Individual action outlines – Emission Reduction
 |   |  Action description | Increase in the share of purchase of certified "Zero Emissions" electricity  |
 |  Reference to impact pathway | Field of action | Energy systems  |
 |   |  Systemic lever | Technology
-Learning & Capabilities  |
+| Learning & Capabilities  |
 |   |   |  Governance & Policy  |
 |   |   |  Democracy & Participation  |
 |  Implementation | Responsible bodies/person for implementation | Municipality  |
@@ -3410,7 +3408,7 @@ B-2.3.2: Individual action outline – Residual Emission Compensation
 |   |  Action description | Increase in planted trees and green areas. Assessment of green areas expansion feasibility and CO2 absorption potential  |
 |  Reference to impact pathway | Field of action | AFOLU; Planted Trees  |
 |   |  Systemic lever | Learning & Capabilities
-Governance & Policy  |
+| Governance & Policy  |
 |  Implementation | Responsible bodies/person for implementation | Municipality  |
 |   |  Action scale & addressed entities | Urban green areas  |
 |   |  Involved stakeholders | Municipality, private actors  |
@@ -3641,7 +3639,7 @@ B-3.1b: Indicators by macro-area and 2030 target values
 |  Outcomes/impacts addressed | Action/project | Indicator No. | Indicator name | Target values  |
 |  Modernizing the urban environment and making it more efficient |   |   |   | 2030  |
 |  Compensation actions in energy systems | FS12b
-Implementation of Line 4 of the plant and application of CCS; only the contribution of CCS to the removal of the emissions related to the biogenic fraction of treated waste is considered in this section | IC1.1 | Compensation of CO2 emissions per inhabitant | 0.43 [t/inh.]  |
+| Implementation of Line 4 of the plant and application of CCS; only the contribution of CCS to the removal of the emissions related to the biogenic fraction of treated waste is considered in this section | IC1.1 | Compensation of CO2 emissions per inhabitant | 0.43 [t/inh.]  |
 |   |   |  IC1.2 | Compensation of CO2 emissions per unit of surface | 2824 [t/km2]  |
 |   |   |  IC1.3 | Compensation of CO2 emissions per unit of GDP | 12.4 [t/M€]  |
 |   |   |  |   |   |
@@ -4236,7 +4234,7 @@ G.2 – EXTERNAL MULTI-LEVEL GOVERNANCE
 |  G.2.1 - Regione Piemonte and Città Metropolitana Torino  |   |
 | --- | --- |
 |  Description | Regione Piemonte and Città Metropolitana are members of the Core Team and co-signatories of the CCC.
-Joint working groups at the political and technical levels on relevant CCC topics.  |
+| Joint working groups at the political and technical levels on relevant CCC topics.  |
 |  Systemic barriers addressed | Fragmentation and lack of coordination of climate actions.  |
 |  Leadership / Stakeholders involved | Leadership
 Città di Torino
@@ -4348,7 +4346,7 @@ Co-benefits
 |  G 3.1 - Digital twin  |   |
 | --- | --- |
 |  Description | Construction of a science-based governance system supporting the sustainable development of the territory.
-Creation of an Urban Digital Twin of the city (based on cloud technologies and in line with Torino's Territorial Informatic System) for supporting the governance of the city and of the climate transition processes (data interoperability: c) Lack of efficient system for the gathering and elaboration of data ty planning; civil protection; taxes and cadaster; environment and sustainability; viability and transport; commerce, etc.).  |
+| Creation of an Urban Digital Twin of the city (based on cloud technologies and in line with Torino's Territorial Informatic System) for supporting the governance of the city and of the climate transition processes (data interoperability: c) Lack of efficient system for the gathering and elaboration of data ty planning; civil protection; taxes and cadaster; environment and sustainability; viability and transport; commerce, etc.).  |
 |  Systemic barriers addressed | Lack of efficient system for the gathering and elaboration of data  |
 |  Leadership / Stakeholders involved | Leadership
 • Comune di Torino
@@ -4678,7 +4676,7 @@ Co-benefits
 | --- | --- |
 |  S.2.5 - CTE NEXT - Torino House of emerging Technologies^{103}  |   |
 |  Description | The project promotes the acceleration of startup formation and technological transfer to SMEs.
-Focus: smart mobility, industry 4.0, innovative urban services.  |
+| Focus: smart mobility, industry 4.0, innovative urban services.  |
 |  Systemic barriers addressed | Deficient support to start-ups  |
 |  Leadership and Stake-holders involved | Leadership
 Città di Torino
@@ -4751,7 +4749,7 @@ Creation of a dialogue with SMEs in the food industry concerning the circular ec
 • Biodiversity  |
 |  S.2.7 - FUSILLI  |   |
 |  Description | Foster the transformation of the urban food system though innovative Living Labs
-Overcoming development barriers for the development and implementation of integrated and systemic food policies, support to the transition towards sustainable food systems in the urban, peri-urban and rural areas  |
+| Overcoming development barriers for the development and implementation of integrated and systemic food policies, support to the transition towards sustainable food systems in the urban, peri-urban and rural areas  |
 |  Systemic barriers addressed | Sustainability of the urban food system  |
 
 Part C - The enablers for Torino's Climate Neutrality by 2030
@@ -4822,10 +4820,10 @@ Climate Neutrality Action Plan | Città di Torino
 Climate Neutrality Action Plan | Città di Torino
 
 |  S.2.9 - CER Desk – National Operative Program (PON)
-METRO - Priority 2 - Environmental Sustainability  |   |
+| METRO - Priority 2 - Environmental Sustainability  |   |
 | --- | --- |
 |  Description | Services for supporting the setting up of Renewable Energy Communities (CER).
-Production of renewable energy in public buildings or areas of the City.  |
+| Production of renewable energy in public buildings or areas of the City.  |
 |  Systemic barriers addressed | New business models for renewable energy  |
 |  Leadership and Stakeholders involved | Leadership
 Città di Torino (Department of Environment and Ecological Transition)
@@ -4858,7 +4856,7 @@ Co-benefits
 | --- | --- |
 |  S.2.10 - Competence Center for Social Innovation - Policy lab  |   |
 |  Description | Funded in part through the 2014-2020 European Social Fund and the EU programme for Employment and Social Innovation (EaSI), the Italian national competence center is set up to drive social innovation – locally, regionally, nationally and transnationally.
-Located in Torino and lead by the Municipality of Torino the Competence Centers intends to become a national policy lab supporting public administrations, stakeholders, citizen to collaborate in the designing and implementing of public services and policies.  |
+| Located in Torino and lead by the Municipality of Torino the Competence Centers intends to become a national policy lab supporting public administrations, stakeholders, citizen to collaborate in the designing and implementing of public services and policies.  |
 |  Systemic barriers addressed | Lack of trust between PA and citizen, poor knowledge of methodologies and policy co-design tools  |
 |  Leadership and Stakeholders involved | Leadership
 • Città di Torino
@@ -5778,7 +5776,7 @@ Main Partners – Signatory entities:
 |  Investee companies | IREN Group | An Italian joint-stock company, operating as a multi-service provider, in particular in the production and distribution of electricity, district heating services, the management of integrated water services, environmental and technological services.  |
 |   |  SMAT | Leader in the field of integrated water services, where it operates through the design, construction and management of diversified sources of water supply, technologically advanced drinking water treatment plants, urban wastewater purification and reuse plants, collection, purification and reuse networks and cogeneration and energy recovery plants.  |
 |   |  ITALGAS | Italgas is an Italian company specialized in gas distribution. Founded in 1837 as the Gas Lighting Company for the Città di Torino.
-Alongside its core business as a gas distributor, Italgas is also active in the energy efficiency sector and aims at strengthening its presence in the water sector.  |
+| Alongside its core business as a gas distributor, Italgas is also active in the energy efficiency sector and aims at strengthening its presence in the water sector.  |
 |   |  Infra.To | Owned by the Città di Torino, its mandate includes the ownership and management of infrastructures, as well as engineering, design, construction and development of plants, systems and infrastructures, including railways, for public and private transport of people and goods.  |
 |   |  ST | An in-house company with total public participation, it operates on behalf of its shareholders: the Città di Torino, the Piedmont Region and the Torino Metropolitan Area. It designs, manufactures and manages mobility systems and services in Torino and Piedmont.  |
 |   |  GTT | Gruppo Torinese Trasporti - The company provides urban, suburban and suburban public transport services, and manages the new automated system of the Torino underground.  |
@@ -5858,9 +5856,6 @@ Climate Neutrality Action Plan | Città di Torino
 |   |  Triciclo - Società Cooperativa Sociale | Social cooperative that deals with the recovery and reuse of materials and the sorting and treatment of waste  |
 |   |  Associazione Manzoni People OdV | Volunteer group  |
 |  Private companies, SME, Startups | Marazzato Azzurra Srl | Company of the Marazzato Group that handles the final treatment of industrial waste  |
-
-7
-
 |  Private companies, SME, Startups | Mercato Itinerante Srl | Innovative startup that has developed a verticalized marketplace on sustainability issues.  |
 | --- | --- | --- |
 |   |  Mercato Circolare Srl | A Benefit Corporation that creates digital and cultural connections between citizens, companies, associations and institutions within the circular economy ecosystem  |
@@ -5938,7 +5933,7 @@ Secondary partners/Supporters – Organizations and summary of thematic actions
 |  COESA Srl | Information to citizens on Energy efficiency funding and solutions |  | A marketplace for recovery of end-of-life PV panel materials |   |
 |  Fondazione Collegio Universitario di Torino Renato Einaudi | Energy revamping of own buildings |  |  |   |
 |  Data Reply | • Development of algorithms that analyze satellite data to identify the optimal locations for renewable energy plants like solar parks and wind farms
-• to evaluate the risk of catastrophes and make resiliency plans. |  |  | Use of artificial intelligence and satellite data to support urban planning for sustainable development.  |
+| • to evaluate the risk of catastrophes and make resiliency plans. |  |  | Use of artificial intelligence and satellite data to support urban planning for sustainable development.  |
 | --- | --- | --- | --- | --- |
 |  Consulta della Mobilità Ciclistica e Moderazione del Traffico |  | Proposals for new city bike path |  |   |
 |  Consulta per l'Ambiente e il Verde | Actions designed to encourage local residents to assume a proactive synergistic and collaborative role in increasing awareness. | Support for "soft" mobility systems and awareness on the need for a cultural change aimed at the reduction of energy consumption and CO2 emissions | Energy Budget, the integrated waste collection system, the study and proposals for the at least partial abatement of the causes of an increase in phenomena related to climate change | Interventions to stimulate the City Council to study issues such as the protection and development of green areas in greater depth.  |
@@ -6010,7 +6005,7 @@ Climate Neutrality Action Plan | Città di Torino
 |  Planet Idea Srl | Smart Energy platform for automated collection of consumption data, active management of building energy use |  |  |   |
 |  Ama Factory ETS |  |  |  | Urban Garden, rehabilitation and re-purposing of the green areas of the former San Pietro in Vincoli cemetery.  |
 |  Urban Lab | Development of the new GRP for the Città di Torino. | Development of the new GRP for the Città di Torino. | Development of the new GRP for the Città di Torino. | Development of the new GRP for Torino.
-Animation and communication activities in the Valdocco neighborhood - project CONEXUS - Urban ecosystem renewal in EU and CELAC cities  |
+| Animation and communication activities in the Valdocco neighborhood - project CONEXUS - Urban ecosystem renewal in EU and CELAC cities  |
 | --- | --- | --- | --- | --- |
 |  IGPDecaux S.p.A | Energy efficiency activities of the IGPDecaux Logistics Hub in Torino:
 Commitment to use 100% renewable energy;

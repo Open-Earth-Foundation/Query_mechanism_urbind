@@ -22,7 +22,7 @@ C
 Table of Contents ... 6
 Summary ... 7
 List of figures ... 8
-List of table ... 8
+List of tables ... 8
 Notes ... 9
 Introduction ... 10
 Part A – Current State of Climate Action ... 13
@@ -47,7 +47,7 @@ C
 
 ## Textual element
 
-After the pandemic that affected the city very seriously making Bergamo the very first European city to face the emergency with horrendous effects, the City of Bergamo reacted in a very strong and powerful manner showing a very interesting period of resilience and high involvement of the entire territory on crucial aspects such as cultural, environmental, and social matter, to mention few.
+After the pandemic that affected the city very seriously making Bergamo the very first European city to face the emergency with horrendous effects, the City of Bergamo reacted in a very strong and powerful manner showing a very interesting period of resilience and high involvement of the entire territory on crucial aspects such as cultural, environmental, and social matter, to mention a few.
 
 The increasing awareness of the territory on environmental and climatic issues and the desire to act have paved the way for a strong and solid co-planned Climate City Contract.
 
@@ -60,11 +60,11 @@ Understanding the system
 Co-designing a portfolio
 Activating an inclusive ecosystem for a just climate transition.
 
-The document, based on the NZC Action Plan model, details the path toward neutrality of the City of Bergamo, the first results achieved putting the base for a continuous improvement and guaranteeing the all eco-system involvement.
+The document, based on the NZC Action Plan model, details the path toward neutrality of the City of Bergamo, the first results achieved laying the foundation for continuous improvement and guaranteeing the whole ecosystem's involvement.
 
-Part A set the base for the emission gap calculation, analyzing the most recent and accurate plan of the City of Bergamo for Sustainable Energy and Climate Actions (SECAP) and filling the gap between the SECAP baseline calculation and the NZC methodology.
+Part A sets the basis for the emission gap calculation, analysing the most recent and accurate plan of the City of Bergamo for Sustainable Energy and Climate Actions (SECAP) and filling the gap between the SECAP baseline calculation and the NZC methodology.
 
-An in depth analysis of the most recent policies and strategies enabling climate neutrality within the territory is presented, highlighting the relevant role the Municipality of Bergamo had and still has.
+An in-depth analysis of the most recent policies and strategies enabling climate neutrality within the territory is presented, highlighting the relevant role the Municipality of Bergamo had and still has.
 
 Starting from a description of the urban systems, the systemic barriers, and related opportunities, main core of the second part of the document (module B), is the "Portfolio of actions".
 
@@ -74,11 +74,11 @@ During the co-planning phase, 217 actions were collected from 40 stakeholders di
 32 actions in the Transport sector
 5 actions in the AFOLU sector
 30 actions in the Waste sector
-65 actions transversal sectors
+65 actions in transversal sectors
 
 The contribution of these actions, together with the strategies outlined by the Municipality of Bergamo (most of which have been the subject of a detailed analysis in terms of potential for emission reduction and related costs) and with the actions already quantified in the SECAP, leads to achievement of the 2030 emissions reduction target.
 
-The last part of the Action plan is dedicated to the capacity of the City of Bergamo to enable Climate Neutrality by 2030 by means of relevant governance and social innovation interventions.
+The last part of the Action Plan is dedicated to the capacity of the City of Bergamo to enable Climate Neutrality by 2030 by means of relevant governance and social innovation interventions.
 
 i equivalent to 80% of the baseline value with baseline emissions equal to 372,516.24 tCO2eq and the remaining 20% identified as residual emissions to be reduced with the strengthening and development of strategies.
 SCRGAM
@@ -100,7 +100,7 @@ C
 |  Figure A.8 | Summary of IPPU sector emission | 23  |
 |  Figure B.1 | Composition of the SECAP Baseline reduction | 69  |
 
-# List of table
+# List of tables
 
 |  Table No | Title | Page  |
 | --- | --- | --- |
@@ -120,16 +120,7 @@ C
 |  B-1.2 | Description of impact pathways | 49  |
 |  B-2.2a | Measurable actions | 51  |
 |  B-2.2b | Measurable actions under consideration/future | 57  |
-C
-
-COMUNE DI BERGAMO
-
-Climate Neutrality Action Plan
-
-C
-
 |  B-2.2c | Behavioural actions | 59  |
-| --- | --- | --- |
 |  B-2.2d | Measurable extra-territorial actions | 63  |
 |  B-2.3 | Summary strategy for residual emissions | 65  |
 |  B-3.1 | Impact Indicators | 70  |
@@ -157,7 +148,7 @@ C
 
 ## Introduction
 
-The City of Bergamo, which was Italian Capital of Culture 2023 with its neighbour Brescia, is a continuously evolving city in terms of culture, society, the development of research and scientific technologies and, last but by no means not least, the ever-increasing attention it pays to the environmental and energy sustainability of its territory.
+The City of Bergamo, which was Italian Capital of Culture 2023 with its neighbour Brescia, is a continuously evolving city in terms of culture, society, the development of research and scientific technologies and, last but by no means least, the ever-increasing attention it pays to the environmental and energy sustainability of its territory.
 
 The Italian Government was quick to back the bid to be designated Italian Capital of Culture (approved on 16 July 2020) by these two cities, both symbols of resilience to the terrible impact of the coronavirus pandemic in Italy. The dossier submitted in their bid to become Italian Capital of Culture focuses on the theme of "the illuminated city": this expression has various meanings, such as tolerance, creativity and the development of research and technologies, as well as the concept of a "lighthouse city", namely a point of reference and leadership.
 
@@ -169,7 +160,7 @@ The Climate City Contract (CCC) is rooted on a city's main strategic plans, the 
 
 The Climate Transition Strategy (Strategia di Transizione Climatica - STC): funded by the Cariplo Foundation and the Region of Lombardy, this focuses on 7 sectors and addresses climate change mitigation and adaptation with 19 priority actions.
 
-The Circular Economy strategy (Strategia di Economia Circolare): currently being finalised, this is supported by the European Investment Bank (EIB) through its Circular City Centre (C3), a competence and resource centre within the EIB which aims to support cities Europeans in their transition to the circular economy. The Circular Economy Strategy of the City of Bergamo focuses on three main sectors: food waste, construction sector, consumer goods (repair and reuse).
+The Circular Economy strategy (Strategia di Economia Circolare): currently being finalised, this is supported by the European Investment Bank (EIB) through its Circular City Centre (C3), a competence and resource centre within the EIB which aims to support European cities in their transition to the circular economy. The Circular Economy Strategy of the City of Bergamo focuses on three main sectors: food waste, construction sector, consumer goods (repair and reuse).
 
 The Sustainable Urban Mobility Plan (Piano Urbano della Mobilità Sostenibile - PUMS): this strategic planning tool develops a medium-long term (10 year) vision of the urban mobility system by setting achievable objectives for environmental, social and economic sustainability. It does this by identifying actions aimed at improving the effectiveness and efficiency of the mobility system and its integration within the urban and territorial structure and developments.
 
@@ -238,7 +229,7 @@ C
 
 The Municipality of Bergamo first adhered to the European Covenant of Mayors campaign in 2009, in the firm belief that it needs to play an active part in the fight against climate change. It therefore drew up its Sustainable Energy Action Plan (SEAP) in 2011, estimating the baseline emissions for 2005. This inventory has since been updated periodically with subsequent monitoring data. The most recent version refers to the year 2021 and forms an integral part of the Municipality of Bergamo's Sustainable Energy and Climate Action Plan (SECAP), drawn up in 2023 by TerrAria S.r.l.
 
-The creation of the baseline inventory as per the Climate City Contract (CCC) is, therefore, a further step forward in the process of establishing local emissions and is based on the SECAP inventory, although this has been calculated using the methodology defined at an European level by the Covenant of Mayors. There are, however, certain methodological differences in the two approaches (Covenant of Mayors / Mission 100 Carbon Neutral and Smart Cities) that have called for some changes and additions. As a result, the baseline inventory of the Climate City Contract has had to be altered to reflect the calculation method indicated in the documents made available to the Net Zero Cities consortium.
+The creation of the baseline inventory as per the Climate City Contract (CCC) is, therefore, a further step forward in the process of establishing local emissions and is based on the SECAP inventory, although this has been calculated using the methodology defined at a European level by the Covenant of Mayors. There are, however, certain methodological differences in the two approaches (Covenant of Mayors / Mission 100 Carbon Neutral and Smart Cities) that have called for some changes and additions. As a result, the baseline inventory of the Climate City Contract has had to be altered to reflect the calculation method indicated in the documents made available to the Net Zero Cities consortium.
 
 The differences with the 2021 SECAP baseline are listed below:
 
@@ -257,7 +248,7 @@ Climate Neutrality Action Plan
 
 and the collection and movement of waste (vehicle fuel), have already been included in the calculation of stationary energy emissions from Private Transport.
 
-Industrial Processes and Product Use (IPPU) This sector includes GHG emissions from industrial activities producing emissions other than those energy consumption and the use of specific products. In this specific case, we have been estimated the emissions coming from two steel production plants within the municipal area. These emissions are indicated in the next chapter, but will not be included in the CCC baseline as their value is less than  $5\%$  of overall emissions (c.f. NZC "GHG-Inventory-Baseline-Guidance_note-to-cities" guidelines). This choice was taken in order not to differ too much, at this time, from the values of the newly drawn up SECAP. Nonetheless, all the analyses of the IPPU sector have been explained here both to justify the value below  $5\%$  of overall emissions and to be able to possibly integrate it into the CCC baseline in the future.
+Industrial Processes and Product Use (IPPU) This sector includes GHG emissions from industrial activities producing emissions other than those linked to energy consumption and the use of specific products. In this specific case, we have estimated the emissions coming from two steel production plants within the municipal area. These emissions are indicated in the next chapter, but will not be included in the CCC baseline as their value is less than  $5\%$  of overall emissions (c.f. NZC "GHG-Inventory-Baseline-Guidance_note-to-cities" guidelines). This choice was taken in order not to differ too much, at this time, from the values of the newly drawn up SECAP. Nonetheless, all the analyses of the IPPU sector have been explained here both to justify the value below  $5\%$  of overall emissions and to be able to possibly integrate it into the CCC baseline in the future.
 
 Agriculture, Forestry and Other Land Use (AFOLU) This sector calculates the emissions directly released into the atmosphere and not connected to energy end-use in the agricultural sector (e.g. manure management, use of fertilisers, the spreading of farm slurry, etc.) and changes in the land use. In this specific case, emissions linked to livestock farming and soil fertilisation have been estimated, while it has been decided to ignore absorption by deciduous wooded areas and permanent meadows. As for the IPPU sector, the emissions in the AFOLU sector are indicated in the following chapter, but will not be taken into account in the CCC baseline as their value is less than  $5\%$  of the overall emissions (c.f. NZC "GHG-Inventory-Baseline-Guidance_note-to-cities" guidelines). This choice was taken in order not to differ too much, at this time, from the values of the newly drawn up SECAP. Nonetheless, all the analyses of the AFOLU sector have been explained here both to justify the value below  $5\%$  of overall emissions and to be able to possibly integrate it into the CCC baseline in the future.
 
@@ -505,7 +496,7 @@ Below are the characteristic data for the municipal area.
 |  Terreni agricoli | 1346 | ha  |
 |  Seminativi | 670 | ha  |
 |  Vigneti | 70 | ha  |
-|  Toale | 4902 | ha  |
+|  Totale | 4902 | ha  |
 
 Figure A.6: Livestock as of 31 December 2021 and ecological/environmental resources of the Municipality of Bergamo
 
@@ -701,8 +692,6 @@ A-2.2: Description of policies and impact at Municipality level
 |  National | “PNIEC” Update - Integrated National Energy and Climate Plan | The Integrated National Plan for Energy and Climate (Piano Nazionale Integrato per l'Energia e il Clima - PNIEC) contains the national objectives for 2030 regarding energy efficiency, renewable sources and the reduction of CO2 emissions, as well as the goals for energy security, interconnectivity, the single energy market and competitiveness, development and sustainable mobility. A “proposal” to revise this Plan was presented in June 2023 and takes into account the public consultation open to all: private individuals, associations, stakeholders and institutions. | At the direct request of the Ministry itself, the Municipality of Bergamo, together with the other 8 Italian cities involved in the Mission, sent 18 documents to be included as strategies of the new PNIEC.  |
 |  National | National plan for the containment of natural gas consumption | Published on 17/10/2022, this plan introduces rules for limiting gas consumption during the thermal winter of 2022-2023 as a response to the energy crisis in Italy. It provides for a reduction in the maximum temperature at which buildings may be heated and controls the operating limits for heating systems (namely when they can be switched on, and their management). | The Municipality of Bergamo has implemented this provision across its own properties and has actively encouraged the entire territory to adopt the Plan.  |
 |  National | National Recovery and | The National Recovery and Resilience Plan (Piano Nazionale di Ripresa e Resilienza - PNRR) is part of the Next | The Municipality of Bergamo is using PNRR funds to finance the  |
-Climate Neutrality Action Plan
-
 |   | Resilience Plan (PNRR) | Generation EU (NGEU) program: a 750 billion euro package (approximately half of which in grants) agreed by the European Union in response to the COVID-19 pandemic. The main component of the NGEU programme is the Recovery and Resilience Facility (RRF), lasting six years (2021 - 2026), worth a total 672,5 billion Euros (312,5 billion in grants, the remaining 360 billion as loans at subsidised rates). The Plan is divided into 6 Missions, or thematic areas, for intervention. | development of new significant measures to contain emissions.  |
 | --- | --- | --- | --- |
 |   | National Energy Strategy (SEN) | Known as SEN2017, this is the result of a structured joint process that lasted a year involving a variety of stakeholders from its very conception (public bodies operating in the field of energy, electricity providers, gas distribution networks and qualified experts in the energy sector). The purpose of this strategy is to render the national energy system more competitive, securer and more sustainable. | The Municipality of Bergamo benefits from national financing amounting to approximately 175 billion by 2030, to be distributed throughout the territory.  |
@@ -1015,10 +1004,6 @@ Impact Pathways – Mobility &amp; transport
 |   |  Social innovation | Development of sustainable mobility models that include all sections of society | Ensuring social inclusion in the development of new mobility plans  |   |   |
 |   |  Democracy and participation | Involvement of citizens in the development of sustainable mobility plans | Support of the population in improving mobility programs  |   |   |
 |   |  Funding | Incentives to support the transition towards | Consolidation of financial resources to support the transition  |   |   |
-Climate Neutrality Action Plan
-
-#
-
 |   |  | sustainable alternative mobility | at a local, national and European level |  |   |
 | --- | --- | --- | --- | --- | --- |
 |   |  Learning and knowledge | Mobility information for citizens | Definition of a new innovative replicable standard for local public transport  |   |   |
@@ -1036,8 +1021,6 @@ Climate Neutrality Action Plan
 |   |  Social innovation | Social inclusion in solutions with a big impact on town planning for the city | Participation of citizens in the development and improvement of NBS projects  |   |   |
 |   |  Learning and knowledge | Continuous improvements in current technologies | Development of research and development centres  |   |   |
 |   |  Impact Pathways – Waste & circular economy  |   |   |   |   |
-Climate Neutrality Action Plan
-
 |  Fields of action | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions | Indirect impacts (co-benefits)  |
 | --- | --- | --- | --- | --- | --- |
 |  Waste & circular economy | Technology | Use of low-emission technologies | Development of new technologies | Technological innovations to reduce the impact of emissions; reduced amounts of waste sent to landfill | Greater competitiveness of innovative companies; change in consumption habits; improved healthiness of the urban environment; greater diffusion of sustainable practices; increase in territorial synergies  |
@@ -1406,8 +1389,6 @@ Climate Neutrality Action Plan
 |  Cariplo | Support for the drafting and activation of the “Click Bergamo” project. | Support for the territory through: technical assistance to support the drafting of the climate transition strategy (STC) and in designing new renewable energy communities (REC); economic contribution for the implementation of certain actions within the STC, and REC management  |
 |  Educational services | European “Food Trail” project | Modification of school menus with the introduction of vegetable proteins (especially legumes) to partially replace animal proteins. Accurate measurement of waste levels and degree of satisfaction to evaluate the effectiveness of the changes. At the same time, an activity park dedicated to children; training for teachers and canteen committees, and information events for parents.  |
 |  Educational services | “Green Menu”: nutrition and sustainable diets | A commercial business to promote healthy and sustainable nutrition, committed to guaranteeing meals using only plant-based ingredients  |
-Climate Neutrality Action Plan
-
 |  COESI | “Skift” project | Project created by CSA COESI, in partnership with 6 partners from 4 European countries, with the objective of supporting the green transition of social economy companies, i.e. making them more environmentally sustainable. 10 companies in the province of BG are taking part in this project  |
 | --- | --- | --- |
 |  Confcooperative | Memorandum of understanding with the Diocese of Bergamo for environmental and social sustainability | Promotion of concrete actions and training regarding social and green issues  |
@@ -1892,8 +1873,6 @@ Climate Neutrality Action Plan Guidance
 |  Clic.Bergamo | Project to boost social cohesion as an enabling factor for transition and for new urban welfare goals. | Possibility of citizen involvement and participation in decision-making processes, planning and the implementation of interventions at a local level | Municipal sectors and local citizen networks | Boost the involvement of different segments of the population | Spread of ESG and circular economy practices; increase in the effectiveness and efficiency of public policies  |
 |  Framework agreement for engineering services | Outsourcing of the consultancy service regarding energy requalification of heritage buildings | Opportunity to spread virtuous building practices; a lack of incentives | Municipality of Bergamo and companies operating in the construction sector | Greater fluidity in outsourcing services | Increase in the value of properties  |
 |  Platform for engaging, monitoring and spreading the CCC to all stakeholders | ForImpact.AI is a digital platform that allows Municipalities to work together with their stakeholders to generate impact on a local scale. This platform offers an opportunity for public interface to involve citizens in territorial transformations and sustainability policies, as well as being a valid collaborative and data management tool. It is also is a collaboration, monitoring and communication | Involvement of the population and stakeholders, collaboration between stakeholders and public administration, possibility of monitoring and spreading the project. | SuperUrbanity | Involvement of the population and stakeholders, monitoring of actions | Involvement and awareness-raising  |
-Climate Neutrality Action Plan
-
 |   | tool that simplifies the process of understanding current works and investments through the means of storytelling and data visualization. It informs citizens of all that is happening in the area thanks also to a Data Driven approach, boosting the efficiency of each decision by virtue of dynamic data monitoring. |  |  |  |   |
 | --- | --- | --- | --- | --- | --- |
 
@@ -1990,7 +1969,7 @@ Il contratto contribuisce al raggiungimento di
 
 ![img-8.jpeg](img-8.jpeg)
 
-The values presented in the images attached can not be considered as final value being the platform still in beta version as we are writing.
+The values presented in the attached images cannot be considered final values, as the platform is still in beta version at the time of writing.
 CITY OF BERGAMO
 COMUNE DI BERGAMO
 Climate Neutrality Action Plan
@@ -2036,10 +2015,7 @@ Tab. B-2.1: Description of actions portfolio
 |  Buildings | Construction of new NZEB headquarters | 21 | Confindustria | Transfer of the headquarters from an energy-consuming building to a new NZEB building where energy consumption is partially covered by a photovoltaic system  |
 |  Buildings | Installation of renewable energy sources | 23 | Confindustria | Installation of a 70 kWp photovoltaic system at the new HQ currently under construction.  |
 |  Buildings | Introduction of digital platforms and energy/water consumption optimisation software | 24 | Confindustria | Management of HQ comfort levels with lighting and temperature control based on presence detectors  |
-|  Buildings | “Chorus Life” urban regeneration | 33 | Costim S.r.l. | Smart district for the recovery and requalification of a brown field area (former industrial zone) of 70.000 square metres in the north east of Bergamo. Plus:
-a trigeneration system and home automation systems to control presence and temperature
-self-production of energy from renewable energy sources
-2,5 km of bike lanes  |
+|  Buildings | “Chorus Life” urban regeneration | 33 | Costim S.r.l. | Smart district for the recovery and requalification of a brown field area (former industrial zone) of 70.000 square metres in the north east of Bergamo. Plus:<br>a trigeneration system and home automation systems to control presence and temperature<br>self-production of energy from renewable energy sources<br>2,5 km of bike lanes  |
 |  Buildings | Refurbishment of the “LEGNANO” building | 34 | Marlegno S.r.l. | Re-cladding, new insulation and the replacement of doors and windows, to go from energy class B to A2 on completion  |
 |  Buildings | Refurbishment of the “De Grassi” condominium | 35 | Marlegno S.r.l. | Re-cladding, new insulation and the replacement of doors and windows, to achieve class A1 on completion  |
 |  Buildings | Creation of a prefabricated wooden structure | 36 | Marlegno S.r.l. | Demolition and re-construction of a mini condominium with bio-build systems  |
@@ -2065,12 +2041,11 @@ self-production of energy from renewable energy sources
 |  Buildings | Digitisation of buildings | 81 | Bemoa | Company strategy to install home automation systems and remote consumption control systems  |
 |  Buildings | Installation of photovoltaic panels | 90 | BRT | Installation of photovoltaic panels in branches for self-production of electricity  |
 |  Buildings | Smart mobility | 100 | Verde 21 | Installation of 25 photovoltaic totems providing public transport information to citizens  |
-| --- | --- | --- | --- | --- |
 |  Buildings | Sharing Culture | 101 | Verde 21 | Installation of 20 photovoltaic totems allowing user interface with images and historical/cultural information  |
 |  Buildings | Citizen services | 102 | Verde 21 | 50 information totems to promote and support city initiatives  |
 |  Buildings | Play Green | 103 | Verde 21 | 50 photovoltaic totems in parks and playgrounds to entertain children and families through games and activities  |
 |  Buildings | Fashion & design | 104 | Verde 21 | 50 totems for advertising and to promote traders  |
-|  Buildings | External collaboration - Teatro Donizetti | 105 | Verde 21 | Two installations in Teatro Donizzetti  |
+|  Buildings | External collaboration - Teatro Donizetti | 105 | Verde 21 | Two installations in Teatro Donizetti  |
 |  Buildings | External collaboration - Smart District Chorus | 106 | Verde 21 | Installations in the Smart District: negotiations under way  |
 |  Buildings | External collaboration - Città Alta | 107 | Verde 21 | Installation of 3 cubes and pyramid during the Bergamo Landscape event  |
 |  Buildings | Requalification of headquarters | 114 | COESI | Installation of photovoltaic panels (total power: 90 kWp), intelligent lighting systems and home automation  |
@@ -2111,7 +2086,6 @@ self-production of energy from renewable energy sources
 |  Buildings | Planned construction of schools/sports facilities | 199 | Buildings department | List of buildings: extraordinary building maintenance of schools; demolition and rebuilding of the Sicuri primary school, Coriandoli nursery school, Ciliegio nursery school, Bruco Verde nursery school, Erbavoglio nursery school; new De Amicis school canteen  |
 |  Buildings | Ongoing requalification of municipal buildings | 200 | Buildings department | Construction of the new GAMeC pavilion and recovery of Casa Suardi (PNRR funding) and recovery of former railway structures to create a new cycle/pedestrian route  |
 |  Buildings | Completed requalification works | 201 | Buildings department | Valorization of historic buildings and monuments in the city centre and completion of the Malpensata indoor sports stadium  |
-| --- | --- | --- | --- | --- |
 |  Buildings | Electricity saving plan | 213 | Humanitas | Interventions aimed at plant and buildings, such as the replacement of refrigeration units, and the installation of heat pumps and refrigerator temperature monitoring systems  |
 |  Buildings | Reductions in thermal energy consumption | 214 | Humanitas | Replacement of boilers, changed to set point temperatures, temperature monitoring systems  |
 |  Buildings | Installation of renewable energy source systems | 215 | Humanitas | Installation of a new photovoltaic system and other interventions to improve the energy efficiency of buildings  |
@@ -2149,7 +2123,7 @@ self-production of energy from renewable energy sources
 |  Transport | Requalification of Bergamo station and boosting of the transport interchange | 195 | Mobility department | Requalification of the passenger area and strengthening of the connections for both civil and freight use  |
 |  Transport | Exchanger car parks installed | 196 | Mobility department | Construction of the single-level Malpensata car park (former gasometer) and the Area Mercatale car park  |
 |  Transport | Exchanger car parks planned and foreseen | 197 | Mobility department | Envisaged car parks: T1 stop in Pradalunga; Bergamo railway station; Via Baioni; Viale Giulio Cesare. Planned car parks: T2 stop in Sant'Antonio; T2 stop in Petrosino; Chorus Life district  |
-|  Sect or | Action | ID | Stakeholder | Description  |
+|  Sector | Action | ID | Stakeholder | Description  |
 | --- | --- | --- | --- | --- |
 |  Waste | Implementation of wastewater network mapping | 15 | Different Solutions | Scanning of real physical data for network pipelines and artefacts, identifying critical issues, damage, interaction with the environment and hydraulic risks. The data can be immediately associated with the relevant hydraulic and structural maintenance techniques  |
 |  Waste | GIS-centric computerisation of the aqueduct network | 16 | Different Solutions | The use of a drone/underwater robot system to pinpoint leaks, and locate and quantify the existing network  |
@@ -2229,7 +2203,6 @@ self-production of energy from renewable energy sources
 |  Transversal | "Green Menu": nutrition and sustainable diets | 112 | Educational services | A commercial business to promote healthy and sustainable nutrition, committed to guaranteeing meals using only plant-based ingredients  |
 |  Transversal | "Skift" project | 113 | COESI | Project created by CSA COESI, in partnership with 6 partners from 4 European countries, with the objective of supporting the green transition of social economy companies, i.e. making them more environmentally sustainable. 10 companies in the province of Bergamo are taking part in this project  |
 |  Transversal | Memorandum of understanding with the Diocese of Bergamo for environmental and social sustainability | 116 | Confcooperative | Promotion of concrete actions and training regarding social and green issues  |
-| --- | --- | --- | --- | --- |
 |  Transversal | Memorandum of understanding for spreading knowledge of renewable energy communities (CER) | 117 | Confcooperative | Support in setting up at least 2 CERs in the city and province  |
 |  Transversal | ESG Sustainability | 118 | Confcooperative | Pathway towards the structuring of a service providing support and advice on environmental sustainability, aimed at achieving environmental, social and corporate governance (ESG) sustainability  |
 |  Transversal | “Impact Register” from a green perspective | 119 | Confcooperative | A register called the “Impact Register” has been set up to provide cooperative authenticity criteria for members  |
@@ -2726,7 +2699,7 @@ Climate policies are therefore intergenerational equity policies, as they endeav
 
 The CCC clearly pursues the objective of fair and just climate transition, according to the principles of environmental, economic and social sustainability.
 
-There are two ETS plants within the municipal territory (the district heating heat production plant and the plant for the new Bergamo Hospital). These plants are not included the target to avoid counting their emissions twice.
+There are two ETS plants within the municipal territory (the district heating heat production plant and the plant for the new Bergamo Hospital). These plants are not included in the target to avoid counting their emissions twice.
 
 # 3 Strategic priorities
 
@@ -2751,21 +2724,11 @@ These strategic lines are therefore expressed as commitments in the Action Plan 
 
 |  Sector | Commitment  |
 | --- | --- |
-|  Buildings/Energy | Strategic lines a), b) c) and d)
-Promote and create energy efficient buildings using cladding and other suitable systems capable of guaranteeing reduced emissions, while also exploiting renewable energy sources to replace fossil fuels.
-Promote sustainable construction by exploiting secondary raw materials, recovering building materials and generally deploying the circular economy in the construction sector.  |
-|  Transport | Strategic lines b), c) and d)
-Produce and use renewable energy for transport by championing the electrification of public and private means of transport.
-Promote and boost public transport, cycle routes, electric micromobility and low-emission vehicles in general.  |
-|  Waste | Strategic line d)
-Promote and roll out schemes for separate waste collection, waste recovery and the recycling of goods, drawing on an efficient waste management service and public information and awareness campaigns.  |
-|  Production | Strategic lines a), b) c) and d)
-Promote and boost the energy efficiency of industrial sites, both in terms of buildings and structures, and production processes.
-Reduce consumption and waste during production, including the introduction of forms of circular economy.
-Reduce air emissions or prevent their dispersion.  |
-|  Agriculture and Land Consumption | Strategic lines a) and e)
-Promote and implement the production and use of renewable energy in the agricultural sector.
-Conserve undeveloped areas, and promote and introduce “zero kilometre” agriculture.  |
+|  Buildings/Energy | Strategic lines a), b), c), and d).<br>Promote and create energy efficient buildings using cladding and other suitable systems capable of guaranteeing reduced emissions, while also exploiting renewable energy sources to replace fossil fuels.<br>Promote sustainable construction by exploiting secondary raw materials, recovering building materials and generally deploying the circular economy in the construction sector.  |
+|  Transport | Strategic lines b), c), and d).<br>Produce and use renewable energy for transport by championing the electrification of public and private means of transport.<br>Promote and boost public transport, cycle routes, electric micromobility and low-emission vehicles in general.  |
+|  Waste | Strategic line d).<br>Promote and roll out schemes for separate waste collection, waste recovery and the recycling of goods, drawing on an efficient waste management service and public information and awareness campaigns.  |
+|  Production | Strategic lines a), b), c), and d).<br>Promote and boost the energy efficiency of industrial sites, both in terms of buildings and structures, and production processes.<br>Reduce consumption and waste during production, including the introduction of forms of circular economy.<br>Reduce air emissions or prevent their dispersion.  |
+|  Agriculture and Land Consumption | Strategic lines a) and e).<br>Promote and implement the production and use of renewable energy in the agricultural sector.<br>Conserve undeveloped areas, and promote and introduce “zero kilometre” agriculture.  |
 
 Over the course of the next 2-3 years, the priority objectives will be the following:
 
@@ -2884,8 +2847,6 @@ Climate-Neutrality Commitments
 |  ATB Mobilità S.p.A. | Publicly held company - Subsidiary | Local level | joint-stock company (s.p.a.) | C. Rita Donato | General manager  |
 |  TEB s.p.a.- Tramvie Elettriche bergamasche1 |   |   |   | Gian battista Scarfone | CEO  |
 |  ATS Bergamo2 | Public authority | Local level | Public Body | Massimo Giupponi | General Manager  |
-Climate-Neutrality Commitments
-
 |  Bemoa S.r.l. | Private sector | Local level | limited liability company (s.r.l.) | Walter Battaglia | Sole administrator  |
 | --- | --- | --- | --- | --- | --- |
 |  BergamoScienza | Private sector – Research Center | Local level | Non-profit association | Rosella Colleoni | Secretary general  |
@@ -2899,16 +2860,6 @@ Climate-Neutrality Commitments
 |  Costim S.r.l. | Private sector | National level | limited liability company (s.r.l.) | Davide Albertini Petroni | CEO  |
 |  Different solutions | Private sector | National level | start up | Stefano Dini | Project Manager  |
 |  Edison Next S.p.a. | Private sector | International level | joint-stock company (s.p.a.) | Giovanni Brianza | CEO  |
-
-4
-6
-
-Climate-Neutrality
-
-Commitments
-
-#
-
 |  Zeliatech s.r.l. (Gruppo Esprinet S.p.A.) | Private sector | International level | limited liability company (s.r.l.) | Sergio Grassi | Country Manager (Zeliatech Srl)  |
 | --- | --- | --- | --- | --- | --- |
 |  Esselunga | Private sector | Regional level | joint-stock company (s.p.a.) | Luca Alovisi | technical director  |

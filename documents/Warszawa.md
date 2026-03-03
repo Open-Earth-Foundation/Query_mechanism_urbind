@@ -100,8 +100,6 @@ Climate Neutrality Action Plan
 |  CAP | Climate Action Plan  |
 |  RP | Republic of Poland  |
 |  ZONE | Integrated System for Low Emission Reduction  |
-Climate Neutrality Action Plan
-
 |  CEEB | Central Building Emissions Inventory  |
 | --- | --- |
 |  EC | European Commission  |
@@ -650,8 +648,6 @@ A-1.3: Activity of the source sectors
 |  Heating demand (space heating + domestic hot water) (GWh/year) | 2725 |  |   |
 |  Electricity demand within the city limits (GWh/year) |  | 1212 |   |
 |  Sector: Waste |  |  |   |
-Climate Neutrality Action Plan
-
 |  Waste collected within the city limits (tonnes) |  |  | 29919  |
 | --- | --- | --- | --- |
 |  Sector: Industry and Industrial Processes (IPPU) |  |  |   |
@@ -1415,10 +1411,6 @@ A-3.2: Systems and stakeholder mapping
 |   |  Metro Warszawskie sp. z o.o. | medium - mainly for the implementation of emission reductions | Undertakes measures that will contribute to the goal of increasing the comfort and accessibility of low-carbon urban transport - 3 more metro lines planned, one of them in the Praga-Południe district  |
 |   |  Miejskie Przedsiębiorstwo Oczyszczania w m.st. Warszawie Sp. z o.o. | medium - mainly for implementing emission reductions | Plans measures to minimise the city's emissions impact - upgrading the entire vehicle fleet to electric  |
 |   |  Miejskie Przedsiębiorstwo Wodociągów i Kanalizacji w m.st. Warszawa Sp. z o.o. | large - to reduce emissions | The first municipal company to have the striving for energy self-sufficiency included in its objectives. It is currently at the stage of preparing a strategic plan, which will include specific recommendations concerning Bioclimatic activities related to both the company's core business of providing water supply  |
-Climate Neutrality Action Plan
-
-#
-
 |   |  |  | and collecting wastewater from the city's residents as well as other private and public entities. It has one of the most modern and largest sewage treatment plants in Europe. Equipment for the recovery and thermal treatment of sewage waste in cogeneration as well as small-scale photovoltaic farms. It plans to expand these activities.  |
 | --- | --- | --- | --- |
 |  PKP S.A. | Large - to reduce emissions from transport | State-owned rail network operator. Part of the line runs through the Praga-Południe district. On a city scale, it provides long-distance regional, national, and international rail transport links. It contributes to the metropolitan rail network and is part of the city's transport network improving the comfort and accessibility of public transport for residents. There is no closer cooperation. |   |
@@ -1426,8 +1418,6 @@ Climate Neutrality Action Plan
 |  PGNiG Termika /Orlen | Very large - concerning emissions from heat and power generation, emissions, from buildings | A state-owned energy group that owns thermal power plants in Warsaw that produce heat and electricity based on fossil fuels. The modernisation does not depend on Warsaw. Due to the political change in the country, there is the potential to work with the operator, yet to be established. |   |
 |  Veolia Energia Warszawa S.A. | Large – for emissions from heat and power generation, emissions from buildings | Heat distributor in the city, owner of part of the heating network. There is cooperation and a desire to modernise the network in a direction that supports the climate transition. |   |
 |  Stoen Operator Sp. z o.o. | Large – concerning emissions from heat and power generation, | Heat distributor in the city, owner of part of the heating network. There is cooperation and a desire to modernise the |   |
-Climate Neutrality Action Plan
-
 |   |  | emissions from buildings | network in a direction that supports the climate transition.  |
 | --- | --- | --- | --- |
 |  LOTTE Wedel sp. Z o.o. | Moderate – concerning emissions from manufacturing, industry | A manufacturer of sweets in the Praga-Południe district – a factory that is keen to cooperate and supports the city's striving for climate neutrality. |   |
@@ -1474,8 +1464,6 @@ Climate Neutrality Action Plan
 |   |  CEZAMAT Centre for Advanced Materials and Technologies of the Warsaw University of Technology | Small – a unit of one of the 5 largest universities in Warsaw, which has a permanent cooperation agreement with Warsaw | The Warsaw University of Technology has carried out, and still does, a number of projects in collaboration with Warsaw, e.g. concerning Modernising buildings, unsealing surfaces, greening the city, etc. E.g. Engineers of the New Generation, Competitions and Theses by Students of the Climate Crisis Architecture Research Club. Seeking optimal, innovative, solutions or applying BAT in unconventional and most effective ways. The needs of the city and the capabilities of the university are much greater than the cooperation to date - the limitations most often consist in funding and a lack of staff resources on the city's side.  |
 |   |  University of Warsaw | Moderate – one of the 5 largest universities in Warsaw, has a permanent cooperation agreement with Warsaw | The University of Warsaw carried out, and still does, a number of projects in cooperation with Warsaw, e.g. concerning Spatial studies, including diagnoses and analyses of the urban heat island, the blue-green infrastructure system, etc. It provides know-how and expertise to the city and is keen to collaborate at the level of research dedicated to the city, including being involved in supporting the preparation of the CCC. The needs of the city and the capabilities of the university are much greater than the cooperation to date - the limitations most often consist in funding and a lack of staff resources on the city's side.  |
 |   |  Institute for Environmental Protection PIB | Large – in terms of know-how, expertise, and high-quality climate analyses | It has a long-standing relationship with Warsaw in terms of tackling the climate crisis. It actively participates in and initiates the building of a platform for cooperation between the government and local government sectors. The central environmental and climate scientific institution - the Climate and Adaptation Research Centre, under the Ministry of Climate and Environment. It runs a  |
-5
-
 |   |  |  | climate knowledge portal based on IPCC reports - Klimada 2.0.  |
 | --- | --- | --- | --- |
 |  **Finances** | Ministry of Development Funds and Regional Policy | Very large – operates foreign funds in Poland and creates regional and national support programmes | It defines the scope of support programmes and allocates EU and foreign funds to specific types of activities and beneficiaries. It participates in dialogue with local authorities as part of the Ministry of Climate and Environment's cooperation with the Polish Cities Mission. It has a great potential to support both local governments and the private sector in their efforts to achieve climate neutrality.  |
@@ -1539,7 +1527,7 @@ Improving the resilience of buildings to the effects of climate change and prote
 Improving the residents' quality of life.
 Financial savings.  |
 |   |   |  Modernisation of municipal buildings | Using waste heat to reduce system heat production.
-Engaging private capital in PPP, Esco, and other legally available forms.  |   |   |
+| Engaging private capital in PPP, Esco, and other legally available forms.  |   |   |
 |   |   |  Energy-efficient lighting | New or upgraded energy-efficient indoor and outdoor lighting in private buildings and municipal buildings.  |   |   |
 |  Transport | Technology/Infrastructure/Governance and | Development of public transport | Reduced demand for motorised passenger transport and a shift towards | Reduction for districts: | 1. Improving air quality.  |
 9
@@ -1653,7 +1641,7 @@ Warsaw
 Climate Neutrality Action Plan
 
 |  Description of actions | Action name | Action E-1
-Purchasing "Green energy" by municipal entities  |
+| Purchasing "Green energy" by municipal entities  |
 | --- | --- | --- |
 |   |  Type of action | Infrastructure, education, support measures, funding  |
 |   |  Description of actions | Examples of actions to be implemented:
@@ -1685,7 +1673,7 @@ PLN/tCO2 / 100 EUR/tCO2e  |
 B-2.2: Outline of individual actions
 
 |  Description of actions | Action name | Action E-2
-Decarbonising the heating and electrical power system as well as generating electricity from renewable sources by the city within and outside its boundaries  |
+| Decarbonising the heating and electrical power system as well as generating electricity from renewable sources by the city within and outside its boundaries  |
 | --- | --- | --- |
 |   |  Type of action | Infrastructure, education, support measures, funding  |
 |   |  Description of actions | Examples of actions to be implemented in the Energy System sector:
@@ -1697,8 +1685,6 @@ c. developing local low-temperature heating systems located in selected district
 d. extending the reach of the heating network and connecting new customers to an efficient heating system  |
 |  Reference to impact pathways | Impact sector | Energy system, Buildings and heating  |
 |   |  System lever | Technology and infrastructure, governance and policy, finance and funding  |
-5
-
 |   | Impact (with reference to module B-1.1) | Investment in renewable energy generation, which is zero-carbon and reduces the city's CO2 emissions balance. Undertaking decarbonisation measures in collaboration with energy companies will enable a shift away from or a significant reduction in the fossil fuels currently used in the city's energy industry, resulting in a significant reduction in emissions within the city limits.  |
 | --- | --- | --- |
 |  Implementation | Units/persons responsible for the implementation | City of Warsaw - Infrastructure Department, District Offices and Municipal Units  |
@@ -1732,7 +1718,7 @@ PLN/tCO2 / 38 EUR/tCO2  |
 B-2.2: Outline of individual actions
 
 |  Description of actions | Action name | Action E -3
-Using waste heat to reduce system heat production  |
+| Using waste heat to reduce system heat production  |
 | --- | --- | --- |
 |   |  Type of action | Infrastructure, education, support measures, funding  |
 |   |  Description of actions | Examples of actions to be implemented:
@@ -1766,11 +1752,11 @@ Climate Neutrality Action Plan
 B-2.2: Outline of individual actions
 
 |  Description of actions | Action name | Action E- 4
-Developing electricity storage  |
+| Developing electricity storage  |
 | --- | --- | --- |
 |   |  Type of action | Infrastructure, education, support measures, funding  |
 |   |  Description of actions | Examples of actions to be implemented:
-a. creating storage systems for energy generated from renewable sources to balance energy production and consumption  |
+| a. creating storage systems for energy generated from renewable sources to balance energy production and consumption  |
 |  Reference to impact pathways | Impact sector | Energy system  |
 |   |  System lever | Technology and infrastructure, governance and policy, finance and funding  |
 |   |  Impact (with reference to module B-1.1) | Using renewable energy storage facilities  |
@@ -1832,7 +1818,7 @@ Climate Neutrality Action Plan
 |  B-2.2: Outline of individual actions  |   |   |
 | --- | --- | --- |
 |  Description of actions | Action name | Action E - 6
-Decarbonisation of local networks/heat sources  |
+| Decarbonisation of local networks/heat sources  |
 |   |  Type of action | Infrastructure, education, support measures, funding  |
 |   |  Description of actions | Examples of actions to be implemented:
 a. introducing a ban on using solid fuels and enforcing it (in accordance with the anti-smog resolution of the Sejmik of the Mazowieckie Voivodeship),
@@ -1856,7 +1842,7 @@ Climate Neutrality Action Plan
 B-2.2: Outline of individual actions
 
 |  Description of actions | Action name | Action E-7
-Modernising outdoor municipal lighting  |
+| Modernising outdoor municipal lighting  |
 | --- | --- | --- |
 |   |  Type of action | Urban infrastructure, direct reduction  |
 |   |  Description of actions | The measure consists of modernising outdoor urban lighting (in streets, green areas, including parks) by using energy-efficient LED luminaires and implementing smart energy control systems, which contribute to optimising energy consumption, sustainability and environmental protection (progressive dimming or motion activation, which allow light intensity to be controlled according to the needs).  |
@@ -1883,12 +1869,12 @@ Climate Neutrality Action Plan
 |   |  Estimated greenhouse gas emission reductions for each emission source sector | 3,443.92 tCO2/year  |
 |   |  Compensated greenhouse gas emissions (carbon dioxide absorbed) | Not applicable  |
 |   |  Total and unit (per unit CO2e) costs | PLN 39,783,783.8 / EUR 8,840,840.84
-,551.8 PLN/tCO2e / 2567 EUR/tCO2e  |
+| ,551.8 PLN/tCO2e / 2567 EUR/tCO2e  |
 |  B-2.2: Outline of individual actions  |   |   |
 | --- | --- | --- |
 |  (Complete one sheet for each intervention/project)  |   |   |
 |  Description of actions | Action name | Action B - 1
-Modernisation of municipal buildings  |
+| Modernisation of municipal buildings  |
 |   | Type of action | Buildings, direct reduction  |
 |   | Description of actions | Increasing the energy efficiency in existing city-owned residential and commercial buildings through deep thermal modernisation, optimising energy consumption by installing smart energy management systems and installing renewable energy sources (electricity and heat).  |
 |  Reference to impact pathways | Impact sector | Buildings and heating  |
@@ -1922,7 +1908,7 @@ B-2.2: Outline of individual actions
 (Complete one sheet for each intervention/project)
 
 |  Description of actions | Action name | Action B-2
-Modernisation of private buildings  |
+| Modernisation of private buildings  |
 | --- | --- | --- |
 |   | Type of action | Buildings, direct reduction  |
 |   | Description of actions | Increasing energy efficiency in existing, privately owned residential and commercial buildings through deep thermal modernisation, optimising energy consumption by installing smart energy management systems and installing renewable energy sources (electricity and heat).  |
@@ -1947,15 +1933,13 @@ Incentives as well as financial and material support for building owners. Implem
 |   | Estimated greenhouse gas emission reductions for each emission source sector | 228,172 tCO2  |
 |   | Compensated greenhouse gas emissions (carbon dioxide absorbed) | Not applicable  |
 |   | Total and unit (per unit CO2e) costs | PLN 42,088,000,000 / EUR 9,352,888,888
-,457.30 PLN/tCO2e / 40,990.52 EUR/tCO2e  |
+| ,457.30 PLN/tCO2e / 40,990.52 EUR/tCO2e  |
 |  B-2.2: Outline of individual actions  |   |   |
 | --- | --- | --- |
 |  Description of actions | Action name | Action B-3
-New energy-efficient private, cooperative or non-municipal owned buildings  |
+| New energy-efficient private, cooperative or non-municipal owned buildings  |
 |   | Type of action | Buildings, direct reduction  |
 |   | Description of actions | a. Designing and constructing new, buildings not owned by the city (commercial and residential) in accordance with high requirements regarding, among other things, energy efficiency and the use of renewable energy.  |
-7
-
 |   |  | b. Reducing demand for electricity and heat by introducing cogeneration solutions in new utility buildings not owned by the city and using waste heat (waste heat from underground tunnels, server rooms, sewage and waste water, industrial processes, cooling processes).  |
 | --- | --- | --- |
 |  Reference to impact pathways | Impact sector | Buildings and heating  |
@@ -1985,14 +1969,12 @@ Climate Neutrality Action Plan
 B-2.2: Outline of individual actions
 
 |  Description of actions | Action name | Action B-4
-New energy-efficient municipal buildings  |
+| New energy-efficient municipal buildings  |
 | --- | --- | --- |
 |   | Type of action | Buildings, direct reduction  |
 |   | Description of actions | a. Designing and constructing new urban commercial and residential buildings in accordance with the requirements of the Warsaw Green Building Standard, which includes high requirements for, among other things, energy efficiency, and energy use.
-b. Reducing the demand for electricity and heat by introducing cogeneration solutions and using waste heat (waste heat from metro tunnels, server rooms, sewage and waste water, industrial processes, cooling processes) in new utility buildings owned by the city.  |
+| b. Reducing the demand for electricity and heat by introducing cogeneration solutions and using waste heat (waste heat from metro tunnels, server rooms, sewage and waste water, industrial processes, cooling processes) in new utility buildings owned by the city.  |
 |  Reference to impact pathways | Impact sector | Buildings and heating  |
-9
-
 |   | System lever | Technology & infrastructure, governance & policy, finance & funding  |
 | --- | --- | --- |
 |   | Impact (with reference to module B-1.1) | Reducing energy consumption in newly constructed municipal buildings in the Praga-Południe and Ursynów districts. A greater share of renewable energy sources in the district energy balance.  |
@@ -2019,7 +2001,7 @@ Climate Neutrality Action Plan
 B-2.2: Outline of individual actions
 
 |  Outline of actions | Action name | Action T-1
-Developing the pedestrian and bicycle infrastructure  |
+| Developing the pedestrian and bicycle infrastructure  |
 | --- | --- | --- |
 |   | Type of action | Infrastructure, education, support measures  |
 |   | Action description | Examples of actions to be implemented:
@@ -2064,7 +2046,7 @@ Climate Neutrality Action Plan
 B-2.2: Outline of individual actions
 
 |  Outline of actions | Action name | Action T-2
-Development of public transport  |
+| Development of public transport  |
 | --- | --- | --- |
 |   | Type of action | Infrastructure measures  |
 |   | Action description | Examples of actions to be implemented:
@@ -2130,7 +2112,7 @@ Climate Neutrality Action Plan
 #
 
 |   |  | charging points are planned for the Praga-Południe district and 50 for Ursynów.
-Introducing incentives for residents, showing them the benefits of commuting together or taking their children to school.  |
+| Introducing incentives for residents, showing them the benefits of commuting together or taking their children to school.  |
 | --- | --- | --- |
 |  Impact and cost | Renewable energy generated (if applicable) | yes  |
 |   | Energy, volume or type of fuel removed/replaced | Fossil Fuel  |
@@ -2142,7 +2124,7 @@ PLN/tCO2e / 18 EUR/tCO2 e  |
 B-2.2: Outline of individual actions
 
 |  Reference to the impact pathways | Action name | Action G-1
-Development of the blue-green infrastructure network  |
+| Development of the blue-green infrastructure network  |
 | --- | --- | --- |
 |   |  Type of action | Infrastructural, strategic measures  |
 |   |  Action description | Examples of actions to be implemented:
@@ -2202,10 +2184,10 @@ Climate Neutrality Action Plan
 |   |   |  b) actions focused on: maintaining existing and developing new: urban forests, urban parks and squares, greening backyards, greening in the immediate surroundings of residential buildings including green walls and roofs, areas near educational institutions as well as cultural, sports, and recreation centres, greening streets, including road lanes, bus stops, and tracks,  |
 |   |   |  c) supporting the development of private green spaces in accordance with good practice and urban standards - the city's concrete removal grant system, the Green Fund of the Warsaw Greenery Board, cooperation in terms of the framework of the Partnership for Climate,  |
 |  Reference to the impact pathways | Scope of activity | Action G-3
-**Blue-green infrastructure and nature-based solutions (NBS)**  |
+| **Blue-green infrastructure and nature-based solutions (NBS)**  |
 |   |  System lever | Technology and infrastructure, governance and policy, science, finance and funding, education and communication  |
 |   |  Result (according to Module B-1.1) | Developing blue-green infrastructure in the city
-Increasing the quality of life of residents, the level of health, as well as the tourist attractiveness of Warsaw and the surrounding area by expanding and diversifying the urban ecosystem and creating friendly places for recreation and relaxation.  |
+| Increasing the quality of life of residents, the level of health, as well as the tourist attractiveness of Warsaw and the surrounding area by expanding and diversifying the urban ecosystem and creating friendly places for recreation and relaxation.  |
 |  Implementation | Authorities/persons responsible for implementation | City Hall, District Offices, and municipal entities  |
 |   |  Scale of action and addressed entities | Activities in the two districts in connection with the urban and metropolitan system  |
 9
@@ -2224,15 +2206,13 @@ Climate Neutrality Action Plan
 |   |  Estimated greenhouse gas emission reductions (total) by source sector | Not applicable  |
 |   |  Compensated greenhouse gas emissions (natural or technological sinks) | 175,200 tCO2e  |
 |   |  Total costs and costs in CO2e | Estimated costs: approx. PLN 130,217,750 / EUR 28,937,277
-PLN/tCO2e / 165 EUR  |
+| PLN/tCO2e / 165 EUR  |
 |  B-2.2: Outline of individual actions  |   |   |
 | --- | --- | --- |
 |  Reference to the impact pathways | Action name | Action G-4
-Implementation of sustainable rainwater management systems  |
+| Implementation of sustainable rainwater management systems  |
 |   |  Type of action | Infrastructure, strategic, information, and education measures  |
 |   |  Action description | Examples of actions to be implemented:  |
-0
-
 |   |  | a) using rainwater and snowmelt on site and to counteract urban flooding and waterlogging,  |
 | --- | --- | --- |
 |   |   |  b) implementing measures and monitoring rainwater and snowmelt management concepts within the city (followed by the metropolitan area),  |
@@ -2240,9 +2220,7 @@ Implementation of sustainable rainwater management systems  |
 |  Reference to the impact pathways | Scope of activity | Blue-green infrastructure and nature-based solutions (NBS)  |
 |   |  System lever | Technology and infrastructure, governance and policy, science, finance and funding, education and communication  |
 |   |  Result (according to Module B-1.1) | Developing blue-green infrastructure in the city
-Increasing the quality of life of residents, the level of health, as well as the tourist attractiveness of Warsaw and the surrounding  |
-1
-
+| Increasing the quality of life of residents, the level of health, as well as the tourist attractiveness of Warsaw and the surrounding  |
 |   |  | area by expanding and diversifying the urban ecosystem and creating friendly places for recreation and relaxation.  |
 | --- | --- | --- |
 |  Implementation | Authorities/persons responsible for implementation | City Hall, District Offices, and municipal entities  |
@@ -2276,7 +2254,7 @@ Climate Neutrality Action Plan
 B-2.2: Outline of individual activities
 
 |  Reference to the impact pathways | Action name | Action G-5
-Protecting valuable habitats and ensuring the coherence, continuity, and development of blue-green infrastructure  |
+| Protecting valuable habitats and ensuring the coherence, continuity, and development of blue-green infrastructure  |
 | --- | --- | --- |
 |   |  Type of action | Infrastructure, strategic, information, and education measures  |
 |   |  Action description | Protecting valuable green spaces and other valuable natural areas against urbanisation pressures by introducing a municipal conservation programme, appropriate provisions in strategic and planning documents at central level for the entire city and at a local level for individual Municipal Spatial Development Plans.
@@ -2293,12 +2271,12 @@ Climate Neutrality Action Plan
 | --- | --- | --- |
 |   |  System lever | Technology and infrastructure, governance and policy, science, finance and funding, education and communication  |
 |   |  Result (according to Module B-1.1) | Developing blue-green infrastructure in the city
-Increasing the quality of life of residents, the level of health, as well as the tourist attractiveness of Warsaw and the surrounding area by expanding and diversifying the urban ecosystem and creating friendly places for recreation and relaxation.  |
+| Increasing the quality of life of residents, the level of health, as well as the tourist attractiveness of Warsaw and the surrounding area by expanding and diversifying the urban ecosystem and creating friendly places for recreation and relaxation.  |
 |  Implementation | Authorities/persons responsible for implementation | City Hall, District Offices, and municipal entities  |
 |   |  Scale of action and addressed entities | Activities in the two districts in connection with the urban and metropolitan system  |
 |   |  Involved stakeholders | District authorities, city companies, residents, national and regional authorities, private sector  |
 |   |  Comments on implementation - consider mentioning resources, timelines, milestones | Providing funds in the city budget for land purchase constitutes one of the most important elements in implementing the protection of environmentally valuable areas and minimising urbanisation pressure on them together with appropriate protective provisions in the city's strategic and planning documents, such as the Climate Change Adaptation Strategy or the Local Spatial Development Plan.
-An important step in facilitating achieving this goal would be developing protective provisions at the level of national legislation with the government.  |
+| An important step in facilitating achieving this goal would be developing protective provisions at the level of national legislation with the government.  |
 |  Impact and cost | Renewable energy generated (if applicable) | No data  |
 |   |  Energy, volume or type of fuel removed/replaced | No data  |
 |   |  Estimated greenhouse gas emission reductions (total) by source sector | No data  |
@@ -2317,7 +2295,7 @@ O
 |  B-2.2: Outline of individual actions  |   |   |
 | --- | --- | --- |
 |  Description of actions | Action name | Action W-1
-Preventing and reducing waste, in line with the idea of a circular economy  |
+| Preventing and reducing waste, in line with the idea of a circular economy  |
 |   |  Type of action | Infrastructure, education, support measures  |
 |   |  Description of actions | Examples of actions to be implemented:
 a. creating exchange points (e.g. "Saska Kępa" sharing initiative),
@@ -2339,7 +2317,7 @@ Climate Neutrality Action Plan
 # B-2.2: Outline of individual actions
 
 | Description of actions | Action name | Action W-2
-Improving the quality of selective collection at source and increasing the amount of selectively collected waste |
+| Improving the quality of selective collection at source and increasing the amount of selectively collected waste |
 | --- | --- | --- |
 | Type of action | Infrastructure, education, support measures |
 | Receivables | Description of actions | Examples of actions to be implemented:
@@ -2372,13 +2350,11 @@ Climate Neutrality Action Plan
 B-2.2: Outline of individual actions
 
 |  Description of actions | Action name | Action W-3
-Investments in solutions allowing achieving recovery and recycling levels  |
+| Investments in solutions allowing achieving recovery and recycling levels  |
 | --- | --- | --- |
 |   |  Type of action | Infrastructure, education, support measures  |
-Climate Neutrality Action Plan
-
 |   | Description of actions | Examples of actions to be implemented:
-a) constructing local waste sorting facilities.  |
+| a) constructing local waste sorting facilities.  |
 | --- | --- | --- |
 |  Reference to impact pathways | Impact sector | Waste  |
 |   |  System lever | Technology and infrastructure, governance and policy, finance and funding  |
@@ -2395,13 +2371,9 @@ a) constructing local waste sorting facilities.  |
 |  B-2.2: Outline of individual actions  |   |   |
 | --- | --- | --- |
 |  Description of actions | Action name | Action W-4
-Developing municipal biogas plants  |
+| Developing municipal biogas plants  |
 |   |  Type of action | Infrastructure measures  |
 |   |  Description of actions | Examples of actions to be implemented:  |
-
-7
-Climate Neutrality Action Plan
-
 |   |  | a. constructing following urban biogas plants to produce biogas from bio-waste, including green waste,
 b. using the produced biogas to produce heat and electricity in cogeneration facilities,
 c. using the produced biogas to produce CNG as a renewable fuel for municipal vehicles.  |
@@ -2454,8 +2426,6 @@ B-2.4: Description of the portfolio of support activities
 |   |  | investigate and support the development of green infrastructure and nature-based solutions  |
 |  Increasing the efficiency of natural energy production (NEER) | Green infrastructure and natural gas | • actions through the National Cooperation Platform to promote legislative changes at national level to enable energy production by building a new, more efficient, and sustainable future for our community  |
 |  Increasing the efficiency of natural energy production (NEER+) | Green infrastructure and natural gas | • actions through the National Cooperation Platform to promote legislative changes at national level to enable energy production by building a new, more efficient, and sustainable future for our community  |
-0
-
 |   |  | better protect valuable land from urbanisation pressures and to introduce quality standards for investors regarding the development of the investment environment,
 • implementing the Warsaw Green Building Standard currently under development in Warsaw for new and retrofitted municipal buildings,
 • introducing uniform standards for developing and maintaining green spaces for all those responsible for maintaining urban green spaces,
@@ -2463,10 +2433,10 @@ B-2.4: Description of the portfolio of support activities
 | --- | --- | --- |
 |  Lack of a developed network of local and district centres | Transport | • commissioning a feasibility study and a development plan for the mission districts in terms of the objectives of the 15-minute city concept.  |
 |  Dependence on the National Grid (KSE) and the national energy mix. | Energy system
-Buildings and heating | • activities initiating change, through local government organisations and the National Cooperation Platform, regarding decarbonisation and modernisation of the national energy system,
-• creating a local strategic partnership between the city and the main energy producers and suppliers in the city to agree on joint decarbonisation measures  |
+| Buildings and heating | • activities initiating change, through local government organisations and the National Cooperation Platform, regarding decarbonisation and modernisation of the national energy system, |
+| • creating a local strategic partnership between the city and the main energy producers and suppliers in the city to agree on joint decarbonisation measures  |
 |  Limited direct impact on the city's greenhouse gas emissions. | Fair transition and social participation | • involving the widest possible range of urban stakeholders in climate neutrality efforts,
-• launching (at national and EU level), a broad, attractive programme of incentives (subsidies, discounts) for residents, entrepreneurs and other urban actors.  |
+| • launching (at national and EU level), a broad, attractive programme of incentives (subsidies, discounts) for residents, entrepreneurs and other urban actors.  |
 |  High costs and unknown scale of energy efficiency needs for buildings. | Buildings and heating
 Fair transition and social participation | • completing building data in the Integrated Low Emission Reduction System (ZONE),
 • carrying out a thermal imaging survey of buildings in the mission districts,
@@ -2583,10 +2553,10 @@ Climate Neutrality Action
 Plan
 
 |  Decrease in emissions from the Waste sector | W-2
-W-3 | 12 | Selectively collected waste |  | - | - | -  |
+| W-3 | 12 | Selectively collected waste |  | - | - | -  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Decrease in emissions from the Waste sector | W-2
-W-3 | 13 | Level of waste recovery and recycling |  | - | - | -  |
+| W-3 | 13 | Level of waste recovery and recycling |  | - | - | -  |
 |  Decrease in emissions from the Waste sector | W-4 | 14 | Biogas plants |  | - | - | -  |
 |  Developing bicycle and walking infrastructure | T-1 | 15 | Pedestrian and bicycle infrastructure |  | - | - | -  |
 |  Improving the residents' quality of life | T-1
@@ -2639,10 +2609,6 @@ Climate Neutrality Action Plan
 |  Suggested data collection interval | annual  |
 |  References |   |
 |  Documents describing the indicator | Warsaw Green Building Standard  |
-Climate Neutrality Action Plan
-
-#
-
 |  Other systems using this indicator | Warsaw Green Building Standard  |
 | --- | --- |
 |  B-3.2: Metadata of indicators  |   |
@@ -2694,10 +2660,6 @@ Climate Neutrality Action Plan
 |  Is the indicator taken into account by existing methodologies - CDP/CIRIS/Covenant of Mayors | no  |
 |  Data required |   |
 |  Data source | Central Statistical Office  |
-Climate Neutrality Action Plan
-
-#
-
 |  B-3.2: Metadata of indicators  |   |
 | --- | --- |
 |  For each of the selected indicators  |   |
@@ -2715,10 +2677,6 @@ Climate Neutrality Action Plan
 |  Is the indicator taken into account by existing methodologies - CDP/CIRIS/Covenant of Mayors | no  |
 |  Data required |   |
 |  Data source | City of Warsaw  |
-Climate Neutrality Action Plan
-
-#
-
 |  B-3.2: Metadata of indicators  |   |
 | --- | --- |
 |  For each of the selected indicators  |   |
@@ -2798,10 +2756,6 @@ Climate Neutrality Action Plan
 |  Is the indicator useful for monitoring the results/impact of activities? | Reducing demand for electricity and heat and using carbon-free energy sources  |
 |  If so, for which activities and impact pathways is it useful? | Buildings and heating  |
 |  Is the indicator taken into account by existing methodologies - CDP/CIRIS/Covenant of Mayors | no  |
-Climate Neutrality Action Plan
-
-#
-
 |  Data required |   |
 | --- | --- |
 |  Data source | City of Warsaw + Energy Companies of Warsaw  |
@@ -3143,12 +3097,6 @@ Climate Neutrality Action Plan
 |  References |   |
 |  Documents describing the indicator | "Nature-climate indicators of sustainable urban development. A guide for cities" Ministry of Climate and Environment  |
 |  Other systems using this indicator | none  |
-
-3
-Climate Neutrality Action Plan
-
-#
-
 |  B-3.2: Metadata of indicators  |   |
 | --- | --- |
 |  For each of the selected indicators  |   |
@@ -3170,10 +3118,6 @@ Climate Neutrality Action Plan
 |  Expected availability | easy  |
 |  Suggested data collection interval | on an ongoing basis  |
 |  References |   |
-Climate Neutrality Action Plan
-
-#
-
 |  Documents describing the indicator | none  |
 | --- | --- |
 |  Other systems using this indicator | none  |
@@ -4073,23 +4017,23 @@ by 2030
 |  Signatory (name, organisation) | Sector/Area | Legal form / territorial cooperation scope | Name and surname of responsible person | Position of the responsible person  |
 | --- | --- | --- | --- | --- |
 |  Miejskie Zakłady Autobusowe sp. z o. o. | Transport
-Implementing a corporate strategy for supporting the objectives of the CCC. | Municipal company citywide | Jan Kuźmiński
-Kamil Królak | CEO
-Board Member  |
+| Implementing a corporate strategy for supporting the objectives of the CCC. | Municipal company citywide | Jan Kuźmiński |
+| Kamil Królak | CEO |
+| Board Member  |
 |  Metro Warszawskie sp. z o.o. | Transport
-Implementing a corporate strategy for supporting the objectives of the CCC. | Municipal company citywide | Dariusz Kostaniak
-Marek Sokołowski | Board Member
-Board Member  |
+| Implementing a corporate strategy for supporting the objectives of the CCC. | Municipal company citywide | Dariusz Kostaniak |
+| Marek Sokołowski | Board Member |
+| Board Member  |
 |  Miejskie Przedsiębiorstwo Oczyszczania w m.st. Warszawie sp. z o.o. | Waste
-Implementing a corporate strategy for supporting the objectives of the CCC. | Municipal company citywide | Adam Chwieduk
-Dariusz Wachnicki | CEO
-Commercial Proxy  |
+| Implementing a corporate strategy for supporting the objectives of the CCC. | Municipal company citywide | Adam Chwieduk |
+| Dariusz Wachnicki | CEO |
+| Commercial Proxy  |
 |  Mazowiecka Agencja Energetyczna sp. z o.o. | Energy
-Cooperation in terms of using renewable energy sources and energy efficiency solutions. | Company nationwide | Bartosz Dubiński | CEO  |
+| Cooperation in terms of using renewable energy sources and energy efficiency solutions. | Company nationwide | Bartosz Dubiński | CEO  |
 |  LOTTE Wedel sp. z o.o. | Energy, buildings
-Implementing a corporate strategy for supporting the objectives of the CCC. | Company nationwide | Maciej Herman | Board Member  |
+| Implementing a corporate strategy for supporting the objectives of the CCC. | Company nationwide | Maciej Herman | Board Member  |
 |  Warsaw Metropolis Association | Transport, energy
-Coordination of cooperation with neighbouring municipalities within the Warsaw Metropolis (concerning Ursynów). | NGO regional | Michał Olszewski | CEO  |
+| Coordination of cooperation with neighbouring municipalities within the Warsaw Metropolis (concerning Ursynów). | NGO regional | Michał Olszewski | CEO  |
 |  SWPS University | Energy, buildings | University citywide | dr Ewa Ger | General Director  |
 5
 
@@ -4101,17 +4045,17 @@ by 2030
 |   | Cooperation in the areas of innovation, education, and social dialogue, implementing its own development strategy in support of CCC objectives. |  |  |   |
 | --- | --- | --- | --- | --- |
 |  Sports Totalizator Służewiec Race Track Branch | Energy, buildings, Nbs | Company
-Ursynów | Dominik Nowacki | Branch Manager  |
+| Ursynów | Dominik Nowacki | Branch Manager  |
 |  University of Warsaw | Energy, buildings
-Cooperation in the areas of innovation, education, and social dialogue, implementing its own development strategy in support of CCC objectives. | University
-citywide | prof. dr hab. Ewa Krogulec | Vice-Rector for Development  |
+| Cooperation in the areas of innovation, education, and social dialogue, implementing its own development strategy in support of CCC objectives. | University |
+| citywide | prof. dr hab. Ewa Krogulec | Vice-Rector for Development  |
 |  CH Warszawa U Sp. z o.o. | Energy, buildings | Company
-Ursynów | Grzegorz Grajkowski | Proxy, Director of Operations PL  |
+| Ursynów | Grzegorz Grajkowski | Proxy, Director of Operations PL  |
 |  Ursynów Sports and Recreation Center | Energy, buildings | Municipal institution
-Ursynów | Piotr Kondratowicz | Director  |
+| Ursynów | Piotr Kondratowicz | Director  |
 |  Ministry of Climate and Environment | Energy, R&D, decarbonization | Central government | Paulina Henning- Kloska | Minister  |
 |  PGNiG TERMIKA Energetyka Przemysłowa SA (Industrial Power Engineering) | Energy, decarbonization, buildings | Company
-citywide | Michał Olszewski | Board Member  |
+| citywide | Michał Olszewski | Board Member  |
 |  Warsaw University of Technology, Centre for Advanced Materials and Technologies | Energy, buildings, R&D, technology | University
 citywide | Mariusz Wielec | Director  |
 6
@@ -4480,9 +4424,9 @@ Table 1. Flood risks in Warsaw by districts
 |  Districts that can potentially be flooded | Number of people living in the areas that can potentially be exposed to flooding in case of a flood from the Vistula River  |   |   |
 | --- | --- | --- | --- |
 |   |  1-in-10-year flood Probability of occurrence – once in 10 years
-p=10% | 1-in-100-year flood Probability of occurrence – once in 100 years
-p=1% | 1-in-1000-year flood Probability of occurrence – once in 1000 years
-p=0,1%  |
+| p=10% | 1-in-100-year flood Probability of occurrence – once in 100 years |
+| p=1% | 1-in-1000-year flood Probability of occurrence – once in 1000 years |
+| p=0,1%  |
 |  Right bank | 103 787 | 194 851 | 424 006  |
 |  Wawer | 2 428 | 2 680 | 8 758  |
 |  Praga Pd. | 83 772 | 120 360 | 184 202  |

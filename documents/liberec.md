@@ -1161,7 +1161,7 @@ C
 | --- | --- | --- | --- | --- | --- |
 |  Type | Level | Name & Title | Description | Relevance | Need for action  |
 |   |  | for municipalities, cities, and regions (2021) | who live in them. Using the potential of people and the potential of the territory, through new, smart technological tools, regional clusters, or regional cooperation and innovative solutions in municipalities, cities and regions can achieve quality conditions for citizens' lives, a good environment and strengthen the competitiveness of the Czech Republic in international competition. |  | - support for adaptation measures in cities ;
-support for energy solutions and security of emergency infrastructure.  |
+| support for energy solutions and security of emergency infrastructure.  |
 |  Strategy | national | State environmental policy for 2030 with a view to 2050 | The state environmental policy of the Czech Republic for 2030, with a view to 2050 represents.
 an overarching strategic document that defines the implementation of effective environmental protection in the Czech Republic until 2030.
 The main goal is to ensure a healthy and high-quality environment for citizens living in the Czech Republic, to contribute to the effective use of all resources and to minimize the negative effects of human activity on the environment, including impacts that go beyond national borders, and thus contribute to improving the quality of life in Europe and worldwide. | 3 | - defining cross-cutting measures such as improving energy efficiency (reducing the energy performance of buildings, achieving energy savings for heating, promoting high efficiency cogeneration of heat and electricity or efficient heat energy supply systems.  |
@@ -1214,7 +1214,7 @@ C
 | --- | --- | --- | --- | --- | --- |
 |  Type | Level | Name & Title | Description | Relevance | Need for action  |
 |   |  |  | Government Resolution No. 785 of September 13, 2021, the previous version was approved in January 2017 and was intended for the period 2017-2020.
-The action plan is aimed at solving all significant manifestations of climate change in the Czech Republic - long-term drought, floods, and flash floods, heavy rainfall, rising temperatures, extremely hot temperatures, extreme wind, vegetation fires). |  |   |
+| The action plan is aimed at solving all significant manifestations of climate change in the Czech Republic - long-term drought, floods, and flash floods, heavy rainfall, rising temperatures, extremely hot temperatures, extreme wind, vegetation fires). |  |   |
 |  Strategy | national | Hydrogen Strategy of the Czech Republic (2021) | The Czech Republic's Hydrogen Strategy was developed in the context of the Hydrogen Strategy for a climate-neutral Europe, which reflects the European Green Deal objective of climate neutrality.
 by 2050. The objective of the Strategy is thus to reduce greenhouse gas emissions in such a way that.
 the economy shifts smoothly to low-carbon technologies. This is associated with two strategic goals:
@@ -1258,7 +1258,7 @@ C
 |  Type | Level | Name & Title | Description | Relevance | Need for action  |
 |   |  |  | economical, effective, and efficient provision of transport services and mutual cooperation of the state, regions, and municipalities in this activity. |  |   |
 |  Strategy | national | Urban and Active Mobility Concept 2021-2030 | The Urban and Active Mobility Concept 2021-2030 is a follow-up document to the Transport Policy of the Czech Republic for the period 2021 – 2027 with a view to 2050, while it is aimed at transferring some principles (of the Transport Policy to regional and municipal level. Two parts can be distinguished in the concept of urban and active mobility (e. g. walking and cycling) | 2 | -support cycling (include infrastructure)
-support micromobility, pathways and walking infrastructure and activities  |
+| support micromobility, pathways and walking infrastructure and activities  |
 |  Action Plan | national | National Clean Mobility Action Plan (2020) | The National Clean Mobility Action Plan addresses support for the purchase of vehicles and related infrastructure, the provision of an electricity network, parking vehicles in underground garages, meeting the requirement to achieve a 14% share of renewable energy sources in transport, support for education, research and development in this area and other measures that will help increase the number of alternative fuel vehicles in the Czech Republic, reduce emissions from transport and also support the Czech automotive industry and | 3 | - purchase of low- and zero-emission vehicles
 support for charging infrastructure
 Development of non-motorised, multimodal, and active forms of transport and mobility  |
@@ -1273,7 +1273,7 @@ C
 |  Type | Level | Name & Title | Description | Relevance | Need for action  |
 |   |  |  | energy in meeting European directives. |  |   |
 |  Regulation | national | Law No. 406/2000 Coll., on Energy Management | This Act incorporates the relevant European Union regulations1) (hereinafter referred to as "the Union") and, following directly applicable Union law governing labelling requirements22), provides: certain measures to increase the cost-effectiveness of energy use and the obligations of natural and legal persons in energy management; rules for the creation of the State Energy Concept, the Territorial Energy Concept and the State Energy Savings Programme; eco-design requirements for energy-related products; requirements for the labelling of energy-related products to indicate the consumption of energy and other essential resources; information and education requirements for energy savings and the use of renewable and secondary sources; certain rules for the provision of energy services. | 3 | - implementation of the law at lower levels
-responsible use of programs in obl. energy savings etc.  |
+| responsible use of programs in obl. energy savings etc.  |
 |  Regulation | national | Act No. 383/2012 Act on greenhouse gas emission allowance trading conditions | Emissions trading is a tool to incentivize the reduction of greenhouse gas emissions in the most efficient way. Entities that have the ability to reduce emissions at lower cost can sell the saved emission allowances or | 3 | - from 2027 there will be an increase in the carbon price for the fuel and transport sectors, and relation to this law there must be support for zero and low emission transport and the heating sector to avoid increased costs  |
 A
 
@@ -1286,7 +1286,7 @@ C
 |  Type | Level | Name & Title | Description | Relevance | Need for action  |
 |   |  | (currently being amended) | other emission credits to those for whom such reductions would be more costly. Trading between the Annex 1 countries of the Kyoto Protocol is possible under the flexible International Emission Trading mechanism; the largest emissions trading scheme is the European Union Emission Trading Scheme (EU ETS), in which the Czech Republic participates as an EU Member State. It is expected to be extended to the buildings, transport, and other sectors from 2027. |  | - measures should be in place to protect vulnerable groups against increased fuel and energy prices  |
 |  Regulation | national | Act No. 165/2012 Coll.
-Act on Supported Energy Sources and on Amendments to Certain Acts | The aim of the Act is to establish a basic framework for the use of renewable sources, the combined production of electricity and heat and decentralised production is established in the Czech Republic (from the amendment of the law it should be abolished, author's note). The purpose of the Act is to further implement the related European Union regulations, establish the basic framework of the National Renewable Energy Action Plan and the financing of the costs incurred for the promotion of renewable energy sources. | 2 | - the law clearly specifies which electricity is supported (biogas plants and combined production of electricity and heat, etc.)  |
+| Act on Supported Energy Sources and on Amendments to Certain Acts | The aim of the Act is to establish a basic framework for the use of renewable sources, the combined production of electricity and heat and decentralised production is established in the Czech Republic (from the amendment of the law it should be abolished, author's note). The purpose of the Act is to further implement the related European Union regulations, establish the basic framework of the National Renewable Energy Action Plan and the financing of the costs incurred for the promotion of renewable energy sources. | 2 | - the law clearly specifies which electricity is supported (biogas plants and combined production of electricity and heat, etc.)  |
 |  Regulation | national | Act No. 541/2020 Coll.
 Waste Act | The basic rules for waste management are laid down in Act No. 541/2020 Coll., on waste and its implementing legislation. It also | 1 | - making waste management more efficient, control and in compliance with laws, elimination of landfilling  |
 A
@@ -2370,7 +2370,7 @@ C
 |   |  GHG emissions reduction estimate (total) per emission source sector | 1,566 t CO2eq  |
 |   |  GHG emissions compensated (natural or technological sinks) | -  |
 |   |  Total costs and costs by CO2e unit | 4.16 Mio €
-,657, €/t CO2eq  |
+| ,657, €/t CO2eq  |
 |  B-2.2.3: Individual action outlines  |   |   |
 | --- | --- | --- |
 |  |   |   |
@@ -2396,7 +2396,7 @@ C
 | --- | --- | --- |
 |   |  GHG emissions compensated (natural or technological sinks) | -  |
 |   |  Total costs and costs by CO2e unit | 4.72 Mio €
-,372, €/t CO2eq  |
+| ,372, €/t CO2eq  |
 |  B-2.2.4: Individual action outlines  |   |   |
 | --- | --- | --- |
 |  |   |   |
@@ -2410,7 +2410,7 @@ C
 |   |  Action scale & addressed entities | It is a large measure. The construction will involve also territory outside the city, there will be necessary  |
 |   |  Involved stakeholders | Municipality, electric power distributor (capacity), electricity consumers, DMPLJ, companies responsible for technology solutions, private investors, subsidy providers  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | The PV plants construction will span over the whole period till 2030. There are already considered three areas for PV plants construction in Liberec. Relevant comments above.
-Funding from the Modernisation fund is envisaged.  |
+| Funding from the Modernisation fund is envisaged.  |
 |  Impact & cost | Generated renewable energy (if applicable) | 179,120 MWh  |
 
 9
@@ -2427,7 +2427,7 @@ C
 |   |  GHG emissions reduction estimate (total) per emission source sector | 84,994 t CO2eq  |
 |   |  GHG emissions compensated (natural or technological sinks) | -  |
 |   |  Total costs and costs by CO2e unit | 175 Mio €
-,057 €/t CO2eq  |
+| ,057 €/t CO2eq  |
 |  B-2.2.5: Individual action outlines  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | Biogas and green hydrogen purchases  |
@@ -2556,7 +2556,7 @@ Plan
 |   | GHG emissions compensated (natural or technological sinks) | -  |
 | --- | --- | --- |
 |   |  Total costs and costs by CO2e unit | 5.6 Mio €
-,339 € /t CO2eq  |
+| ,339 € /t CO2eq  |
 |  B-2.2.10: Individual action outlines  |   |   |
 | --- | --- | --- |
 |  |   |   |
@@ -2910,9 +2910,9 @@ Climate Neutrality Action Plan
 |  All impacts in AFOLU | All measures in AFOLU | 6 | GHG emission from AFOLU | 16,069 | 16,069 | 16,069  |
 |  PV panels on roofs of municipal buildings | Installation of PV panels on roofs of municipal buildings | 5 | Local RES energy production – municipal buildings | 1,371 | 1,762 | 2,154  |
 |  PV panels on roofs of living and commercial buildings | Installation of PV panels on roofs of industrial and commercial buildings
-Installation of PV panels on roofs of living buildings | 6 | Local RES energy production – other buildings | 5,766 | 6,903 | 8,039  |
+| Installation of PV panels on roofs of living buildings | 6 | Local RES energy production – other buildings | 5,766 | 6,903 | 8,039  |
 |  Large PV plants, wind plants | Installation of large PV power plants
-Installation of wind power plants | 8 | Local RES energy production – large PV plants (not on buildings) and wind plants | 153,824 | 538,384 | 769,120  |
+| Installation of wind power plants | 8 | Local RES energy production – large PV plants (not on buildings) and wind plants | 153,824 | 538,384 | 769,120  |
 |  Phasing out coal boilers in households | Phasing out remaining coal boilers from households | 8 | Coal use by fuel/energy type within city boundary – coal in households | 15,630 | 7,815 | 0  |
 |  Gradual replacement of natural gas with electricity, | Installation of PV panels on roofs of municipal buildings | 2 | Energy use by fuel/energy type within city boundary – natural gas | 552,218 | 271,597 | 103,225  |
 
@@ -2938,8 +2938,6 @@ Plan
 |   |  Insulation and revitalisation of commercial buildings |  |  |  |  |   |
 |   |  Energy savings and new technologies in industry |  |  |  |  |   |
 |  Building infrastructure for charging of EVs | Infrastructure built by the municipality for charging private and commercial EVs. | 10 | Fuel consumption for in-boundary transportation | 108,358 | 87,176 | 74,467  |
-Climate Neutrality Action Plan
-
 |  Early changes/ late outcomes and impacts to be evaluated by indicator) | Actions from CCC AP | Unique identifier | Indicator name | Value per indicator in 2026 | Value per indicator in 2028 | Value per indicator in 2030  |
 | --- | --- | --- | --- | --- | --- | --- |
 |  Building safe and comfortable ways for walking and biking | Infrastructure for charging city buses built by the Teplárna Liberec |  | per fuel type - gasoline |  |  |   |
@@ -3002,7 +3000,7 @@ Plan
 |  If yes, which action and impact pathway is it relevant for? | Technology/infrastructure  |
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | Yes  |
 |  Data requirements | • Energy consumptions by sectors and energy carriers
-• Emission factors  |
+| • Emission factors  |
 |  Expected data. source | • Municipality
 • Czech Hydrometeorological Institute
 • Electricity and natural gas distributors
@@ -3018,7 +3016,7 @@ Also informed by:
 IPCC (2006, 2019),
 NZC Info Kit for cities(European Commission 2021b)"  |
 |  Other indicator systems using this indicator. | NetZeroCities Comprehensive Indicator Framework,
-GHG Protocol, ISO 14064, Reference Framework for Sustainable Cities  |
+| GHG Protocol, ISO 14064, Reference Framework for Sustainable Cities  |
 |  B-3.2.2: Indicator Metadata  |   |
 | --- | --- |
 |  (For each indicator selected)  |   |
@@ -3066,7 +3064,7 @@ CCC Action plan A-1.1col for Cities (GPC)"  |
 |  Indicator Unit | t CO2eq  |
 |  Definition | Greenhouse gas emissions from the operations of vehicles.  |
 |  Calculation | Calculation formulae for Transport indicators can be found in the GHG Protocol for Cities (2020).
-Deriving energy consumptions requires modelling of mobility of persons and frights within the city territory.  |
+| Deriving energy consumptions requires modelling of mobility of persons and frights within the city territory.  |
 |  Indicator Context | This indicator monitors the second most important source of GHG emissions in the city.  |
 |  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | Yes  |
 |  If yes, which emission source sectors does it measure? | Mobility & transport  |
@@ -3112,7 +3110,7 @@ Plan
 |  If yes, which action and impact pathway is it relevant for? | Technology/infrastructure  |
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | Yes  |
 |  Data requirements | ·Person-kilometres and ton-kilometres by individual transport modes
-·Specific energy consumptions for typical vehicles of each transport mode  |
+| ·Specific energy consumptions for typical vehicles of each transport mode  |
 |  Expected data source | ·Nationwide Traffic Census (RSD – Directorate of Roads and Highways)
 ·Own modelling
 ·DMMLJ (Transport Company of Cities Liberec and Jablonec)  |
@@ -3165,8 +3163,7 @@ Plan
 #
 
 |  Definition | IPCC guidelines divide AFOLU emission activities into three categories: Livestock, Land, Aggregate sources, and non-CO2 emissions sources on land. The cumulative of these emissions forms the sectoral emissions. It requires identifying which categories of the AFOLU sector are relevant for reporting purposes.
-
-Cities should keep in mind that when a source/sink of emissions is included in the CCC Action Plan (either for emissions reduction or emissions compensation) both positive and negative emissions should be accounted for and monitored.  |
+| Cities should keep in mind that when a source/sink of emissions is included in the CCC Action Plan (either for emissions reduction or emissions compensation) both positive and negative emissions should be accounted for and monitored.  |
 | --- | --- |
 |  Calculation | Detailed calculation and scoping methodology described in GPC pages 121- 137  |
 |  Indicator Context | This indicator is intended for monitoring CO2 sinks in the city forests  |
@@ -3178,7 +3175,7 @@ Cities should keep in mind that when a source/sink of emissions is included in t
 |  If yes, which action and impact pathway is it relevant for? | Technology/infrastructure  |
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | Yes  |
 |  Data requirements | • Changes in land use
-• Reforested area  |
+| • Reforested area  |
 |  Expected data source | • Municipality
 • Municipal Forests Liberec
 • Forests of the Czech Republic  |
@@ -3217,7 +3214,7 @@ When a city is not able to report this value due to the non-existence of monitor
 |  If yes, which co-benefit does it measure? | Air quality  |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
 |  If yes, which action and impact pathway is it relevant for? | • Mobility & transport
-• Built environment  |
+| • Built environment  |
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | Yes  |
 |  Data requirements | Annual averages from PM2,5 concentration measurements  |
 |  Expected data source | Czech Hydrometeorological Institute  |
@@ -3246,7 +3243,7 @@ C
 It can be inferred that this indicator will prove useful for tracking the impact of the installation and operation of renewable energy projects over time. It will allow for the analysis of the before and after situation, as following the installation and operation of renewable energy projects (or as the difference between the annual renewable energy generation related to the project compared to the BAU case.
 It is possible to divide the annual total energy consumption compared to a previous baseline or inventory, and then multiply by it by 100 to express the difference/result as a percentage.  |
 |  Calculation | Annual local renewable energy production is calculated by acquiring the total renewable energy generation within the city each year.
-Relevant unit conversions are 1 J = 1 Ws; 1 kWh = 3,600,000 J; and 1 TOE = 41.868 GJ, 11,630 kWh, or 11.63 MWh (ITU-T L.1430: 2013)  |
+| Relevant unit conversions are 1 J = 1 Ws; 1 kWh = 3,600,000 J; and 1 TOE = 41.868 GJ, 11,630 kWh, or 11.63 MWh (ITU-T L.1430: 2013)  |
 |  Indicator Context | Local energy generation from RES represents by far the largest potential for GHG emissions reduction  |
 |  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | No  |
 |  If yes, which emission source sectors does it measure? | -  |
@@ -3254,7 +3251,7 @@ Relevant unit conversions are 1 J = 1 Ws; 1 kWh = 3,600,000 J; and 1 TOE = 41.86
 |  If yes, which co-benefit does it measure? | Local energy production from RES leading to lower GHG emissions  |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
 |  If yes, which action and impact pathway is it relevant for? | • Mobility & transport
-• Built environment  |
+| • Built environment  |
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | Yes  |
 |  Data requirements | Energy production from RES  |
 |  Expected data source | Energy Regulatory Authority  |
@@ -3430,7 +3427,7 @@ C
 |  If yes, which action and impact pathway is it relevant for? | Revitalisation of city forests after bark beetle calamity  |
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | Yes  |
 |  Data requirements | • New green areas, new forests planted in the cadastral area of the city.
-• Emission factors  |
+| • Emission factors  |
 |  Expected data source | • Municipality
 • Regional Office
 • Forests of the Czech Republic
@@ -3676,34 +3673,10 @@ Climate Neutrality Action Plan Guidance
 | --- | --- | --- | --- | --- | --- |
 |  Intervention name | Description | Systemic barriers / opportunities addressed | Leadership and stakeholders involved | Enabling impact | Co-benefits  |
 |  Commission for Climate Neutral City | Advisory body of city board (selected city counsellors) established after Liberec joined the EU Mission | 1.2
-1
-2
-4
-1
-2
-3
-
-2
-6
-8
-8
-8
-5
-6
-8
-9
-0
-4
-5
 | • Commission consisting of 9 members representing following stakeholders: Teplárna Liberec, Regional Office of the Liberec Region, civic society, non-profit organisation aiming at climate neutrality, of business sector, representative of research in the field of the environment (anthropogenic pollution).
 • Since Commission is advisory body, city board, city counsellors are stakeholders involved.
 • In the end, citizens are important stakeholders involved since city counsellor make decision directly influencing citizens of Liberec. | This intervention reinforced the city commitment and importance within the city council, this is first advisory (professional) body established for the city council so far, improved decision-making processes in this field and improved knowledge background of the city council |   |
 |  Coordinator for mitigation/Climate specialist | Within the Department of strategic development and subsidies is a position of a climate specialist who is a worker dedicated for the CCC work first, the focus will be | 1.1
-2
-3
-4
-5
-5
 | • City council, mainly deputy mayor responsible for climate and SMART agenda in the city, politicians who have decision-making power. | Climate specialist is major employee at operational level in the city who is responsible for climate agenda, because of this municipal dedicated capacity, there |   |
 A
 
@@ -3716,24 +3689,6 @@ C.1.2: Sample Table: Relations between governance innovations, systems, and impa
 |  Intervention name | Description | Systemic barriers / opportunities addressed | Leadership and stakeholders involved | Enabling impact | Co-benefits  |
 | --- | --- | --- | --- | --- | --- |
 |   | paid on coordination of mitigation activities in the area of the city, on fundraising and on communication with (both on vertical and horizontal line). This coordinator works closely with Adaptation coordinator and Finance expert. This is a new position responsible for coordinating the climate agenda in the city which is a kind of governance innovation enabling strengthening the commitment across the city and building internal capacities for this agenda as well. | 8.1
-2
-3
-4
-1
-2
-1
-2
-3
-2
-8
-9
-5
-6
-0
-1
-7
-4
-5
 | • Commission for Climate Neutral City as a body responsible for discussing all measures and activities related to climate agenda of the city before they are approved by the city councillors.
 • Adaptation coordinator works together with climate expert to coordinate adaptation and mitigation activities in the city.
 • Finance expert, who works closely with climate specialist in the field of finance, fundraising for climate projects.
@@ -3750,27 +3705,9 @@ C.
 |  Intervention name | Description | Systemic barriers / opportunities addressed | Leadership and stakeholders involved | Enabling impact | Co-benefits  |
 |   |  |  | coordinates mitigation activities in the field of citizens' engagement, co-creation process etc. |  |   |
 |  Coordinator of Adaptation Activities | New position improving successful realization of adaptation activities in accordance with municipal strategic documents (Adaptation Strategy above all) and improving coordination and synergies with mitigation activities (measures) in the city. This position will be established within the city hall organisational structure or within the Regional Office organisational structure. | 1.1
-2
-3
-1
-3
-2
-4
-8
-5
-6
-0
-4
 | • Involved stakeholder should be the Regional Office of the Liberec Region since there could be shared position of adaptation both for city and the region.
-• At the municipal level, within the city hall, in the field of adaptation activities are important workers from the Architecture Office of the City who have the main responsibility for adaptation activities, in cooperation with the Department of the Environment | This intervention shall lead to improvement of coordination between adaptation and mitigation activities and improve green-blue infrastructure in the city | New jobs creation  |
+| • At the municipal level, within the city hall, in the field of adaptation activities are important workers from the Architecture Office of the City who have the main responsibility for adaptation activities, in cooperation with the Department of the Environment | This intervention shall lead to improvement of coordination between adaptation and mitigation activities and improve green-blue infrastructure in the city | New jobs creation  |
 |  Finance and Investment expert | For the implementation of this CCC Action Plan, crucial is to overcome the finance-gap. Currently, the city hall is undersized in the field of capacity, both in terms of finance and employees. We plan to hire new person that will cooperate with | 1.1
-2
-3
-4
-5
-1
-2
-5
 | • Coordinator for mitigation
 • Coordinator for adaptation
 • City council
@@ -3786,7 +3723,6 @@ C.
 | --- | --- | --- | --- | --- | --- |
 |  Intervention name | Description | Systemic barriers / opportunities addressed | Leadership and stakeholders involved | Enabling impact | Co-benefits  |
 |   | coordinator for mitigation and coordinator for adaptation and contributes to increase in capacities in terms of finance. We need to focus on public money as subsidies, to help to search for relevant subsidy titles and write proposals. Furthermore, what is more important, is focus on private capital, we need to learn how to attract private investors, to develop bankable investment concepts and plans. We will be able to use knowledge and synergies from relevant Horizon projects (TURNAROUNDMONEY, CLIMATEFIT), and to use experience from the NZC Capital Hub which we plan to use as well. As a professional can discuss this topic with city council properly. We expect that this governance innovation | 1.7
-8
 |  | opportunities and possibilities, both coordinators will test some pilot projects in the field of financial innovation and learn how overcome finance-gap and involve more private capital in mitigation activities finance. |   |
 A
 
@@ -3810,27 +3746,9 @@ Climate Neutrality Action Plan
 |  Intervention name | Description | Systemic barriers / opportunities addressed | Leadership and stakeholders involved | Enabling impact | Co-benefits  |
 |   |  |  |  |  | knowledge related to climate change  |
 |  Municipal energy management department | New department established in 2022, focused on continual improvement of municipal energy management leading to the ISO EU 50 001 certification. City keeps developing energy management, currently mainly in line with community energy development. City needs to raise money to enable further development in this field. We submitted proposal on energy savings (buildings refurbishment and energy management of the city) to the EUCF programme for this reason. | 1.2
-6
-1
-2
-3
-1
-2
-6
-7
-8
-9
-0
-1
-3
-5
 | • Municipal organisations and institutions including public benefit organisations that are managed and influenced by the city in the field of energy (consumption, monitoring, smart solutions etc.).
-• Community Energy service and management organisation that will be responsible for community energy development in Liberec which will be in line with municipal energy management development | This intervention leads to energy consumption reduction which means the GHG reduction. In case of successful certification city need no energy, audits which means budget savings in projects' documentation preparation | New jobs creation, smart solution, contribution to improving innovative environment in the city, contribution to the project of community energy development, less air-pollution  |
+| • Community Energy service and management organisation that will be responsible for community energy development in Liberec which will be in line with municipal energy management development | This intervention leads to energy consumption reduction which means the GHG reduction. In case of successful certification city need no energy, audits which means budget savings in projects' documentation preparation | New jobs creation, smart solution, contribution to improving innovative environment in the city, contribution to the project of community energy development, less air-pollution  |
 |  Community energy service and management organisation | The umbrella organisation managing energy community/communities in Liberec and serving as advisory body/on-stop-shop for citizens. Main | 1.2
-3
-1
-2
-3
 | • Pilot City Project consortium: heating plant Teplárna Liberec, Technical University in Liberec, housing cooperatives in Liberec, | Organisation will be responsible for management and further sustainable development of community energy in Liberec which will lead to higher share of | New jobs creation, air quality increase, energy poverty cut, decrease in energy prices, increase in renewables construction,  |
 A
 
@@ -3842,26 +3760,11 @@ Climate Neutrality Action Plan
 | --- | --- | --- | --- | --- | --- |
 |  Intervention name | Description | Systemic barriers / opportunities addressed | Leadership and stakeholders involved | Enabling impact | Co-benefits  |
 |   | goal of this organization will be to cover all activities as administration, management of energy flows, service, etc.). Such organizations needs to have specific know-how, competences, and appropriate technical equipment. Following special analysis, it seems to be best option to establish a community for renewable resources which would take the legal form for of a cooperative. | 4.7
-8
-9
-0
-1
-2
-6
-5
-6
-7
-1
 | • citizens (households),
 • business, industry sector. Development of community energy in Liberec has a few phases where there actually everyone from the city can benefit from the community energy.
 • Specific stakeholders involved are vulnerable groups of citizens – low-income households facing energy poverty.
 • Liberec as a Czech pilot city in the field of energy community can share best-practice with other Czech cities. | renewables in energy mix and energy savings in the city and thus, to GHG reduction | community energy concepts as a tangible project for initiating communication about climate-neutrality awareness with vulnerable groups of citizens and business sector, i.e. project with clear benefits.  |
 |  Mediator for the city (community energy service and management organisation) and housing cooperatives | This mediator has a crucial role in raising awareness about energy community concepts, about climate-neutrality and about RES construction and in case of housing cooperatives. The aim is to activate housing cooperatives to become members of energy community. There is important the | 8.1
-2
-3
-4
-5
-6
 | • Housing cooperatives in Liberec
 • Community energy service and management organization
 • The Regional Development Agency (Energy Platform under the ARR) that will cooperate with the city in the field of workshops | There are two points how this mediator shall enable climate neutrality. First, it should increase the number of community energy members which is crucial for the success of the energy community concepts (leading to the GHG reduction). Secondly, the mediator's role is to raise awareness about climate-neutrality | Improved air quality
@@ -3880,10 +3783,6 @@ C.
 |  Intervention name | Description | Systemic barriers / opportunities addressed | Leadership and stakeholders involved | Enabling impact | Co-benefits  |
 |   | connection, relationship, between the mediator and the chairpersons of housing cooperatives. For communication, raising awareness and sharing background information and knowledge serves also the online platform. |  |  | as such which should lead to change in decision-making patterns and lead to GHG reduction in the end. | pedestrians, in line with adaptation actions (blue-green infrastructure, greening the city)Contribution to liveability of city centre, city centre more attractive for livingParticipatory approach (strengthened commitment/vision across the city), focus on acceptance of suggested solution both by politicians and residents.Increased investments in R&IImproved movement in the city  |
 |  Gender Equality Plan and its regular monitoring and evaluation | After Liberec became a mission city and decided to take new approaches in capital planning and funding, we developed the Gender Equality Plan, including its monitoring and evaluation. It occurred to be a good opportunity to | 8.1
-4
-2
-0
-4
 | • Municipal employees are influenced by the GEP directly since this should lead to overall change in organisational culture. In the context of the mission, such culture should be more innovative and changes-friendly/opened, which is crucial | Successful GEP implementation leads to improved and diversified organisational culture towards the environment providing employees with positive motivation, openness to their opinions, environment enabling shared values |   |
 A
 
@@ -3895,8 +3794,8 @@ C.
 | --- | --- | --- | --- | --- | --- |
 |  Intervention name | Description | Systemic barriers / opportunities addressed | Leadership and stakeholders involved | Enabling impact | Co-benefits  |
 |   | reflect the gender perspective in Liberec and it pushes things forward since the city has committed to report relevant statistics annually. The GEP's content is work-life balance and organisational culture, gender balance in leadership and decision-making, gender equality in recruitment and career progression and measures against gender-based violence. There have been dedicated specific sources to its implementation and training across the city hall, responsibilities for data collection and monitoring as well. |  | governance change across the city hall. Wide range of employees and clerks are trained in this field and the issue of equality in wages/career progression is even more openly discussed topic.
-• Personnel Department is responsible for the data collection and monitoring, for selection of possible training courses for all employees/for employees in leadership of departments ; personnel department also participates in various projects related to the issue of work-life balance, gender-based violence including sexual harassment, which should lead to increase in their expertise in this field and learning how to deal with these issues. | and vision across the city hall, also employee retention, etc.
-In the end, it leads to better position to innovative processes, to openness to test new approaches, technologies, to boost innovations internally, that all shall lead in GHG reduction in the end. |   |
+| • Personnel Department is responsible for the data collection and monitoring, for selection of possible training courses for all employees/for employees in leadership of departments ; personnel department also participates in various projects related to the issue of work-life balance, gender-based violence including sexual harassment, which should lead to increase in their expertise in this field and learning how to deal with these issues. | and vision across the city hall, also employee retention, etc. |
+| In the end, it leads to better position to innovative processes, to openness to test new approaches, technologies, to boost innovations internally, that all shall lead in GHG reduction in the end. |   |
 |  Citizens' Portal for communication | This portal/platform, launched in 2022, plays the important role in the public administration | 10.2
 | • Citizens, this governance innovation leads to their better comfort, it saves their time and money (for | In general, such innovation leads to perception of digitalisation, innovative |   |
 A
@@ -3925,25 +3824,6 @@ Climate Neutrality Action Plan Guidance
 | --- | --- | --- | --- | --- | --- |
 |  Intervention name | Description | Systemic barriers / opportunities addressed | Leadership and stakeholders involved | Enabling impact | Co-benefits  |
 |  Online platform related to energy community development and raising climate neutrality awareness | Online space bringing together. all stakeholders sharing interests towards reducing city emissions and related topics. Possibility for interaction, organisation of the events, potential for personal log in of the energy community members in order to have an overview of energy efficiency within community, car sharing potential. There will be many functionalities, beside sharing information, documents, municipal activities, there will be calculation module determining the effectiveness of measures (insulation, windows replacement, accumulation of heat in water etc.). Currently, there is basic setting of this platform but there is intended to extend it, there will be private section for community members enabling online monitoring of energy consumption, management of energy consumption based on current production (solar and wind | 8.1
-2
-3
-4
-1
-2
-3
-2
-6
-7
-7
-8
-9
-1
-5
-6
-5
-6
-8
-0
 | • Community energy members which means (in last phase of community energy development) municipal and regional organisation and institutions, citizens/households (family houses), housing cooperatives, businesses
 • Teplárna Liberec (Pilot City project consortium partner and crucial stakeholder and frontrunner in the field of energy in Liberec), as the user of the platform
 • Transport company of the City (DPMLJ, transport company will be important stakeholder as consumer of energy (electricity from RES and biogas from the biogas station), as the user of the platform
@@ -3965,14 +3845,6 @@ C
 • Professional public at local, regional, national and EU level: Liberec already shares its experience with professionals in the field of energy, SMART solutions, etc., the online platform is intended to be online public space for sharing.
 • Other cities: as mentioned above, Liberec already shares its best practice in the field of energy and the platform serves as the online space – online knowledge repository for other cities |  |   |
 |  City as the innovation focal point | Liberec as innovation focal point (cooperation with innovative companies, testing new technologies, pilot projects based on peer learning from abroad, for example in cooperation with the Ministry of Industry and Trade. Working and co-creating with start-ups, networking, in this field Liberec plans to cooperate with regional | 1.1
-3
-1
-3
-1
-2
-3
-1
-8
 | • Ministry of Industry and Trade, we started cooperation in the field of innovation and SMART solutions, Liberec should become one of pilot projects/cities in the Czech Republic, ministry also shares its contacts (at the international level) | Technologies leading to energy savings and thus to GHG reduction and technologies in the field of carbon capture and storage | Other social innovations, possibility of new jobs creation, contribution to innovative environment development, development of financial innovations in Liberec (new ways of funding new  |
 A
 
@@ -3984,17 +3856,6 @@ Climate Neutrality Action Plan
 | --- | --- | --- | --- | --- | --- |
 |  Intervention name | Description | Systemic barriers / opportunities addressed | Leadership and stakeholders involved | Enabling impact | Co-benefits  |
 |   | CzechInvest, TAČR, ARR and industry enterprises in Liberec | 1.12
-8
-5
-6
-7
-7
-8
-0
-5
-7
-4
-5
 | • CzechInvest, this agency is a good contact point for testing new approaches and to connect with start-ups.
 • TAČR, this technological agency is important stakeholder in the field of research and development.
 • Regional Development Agency: is municipal connection to the Liberec Region and regional businesses.
@@ -4062,18 +3923,6 @@ C.
 | --- | --- | --- | --- | --- | --- |
 |  Intervention name | Description | Systemic barriers / opportunities addressed | Leadership and stakeholders involved | Enabling impact | Co-benefits  |
 |   | together with regional office, aimed at various groups of public, including wide public (children, youth, adults, elderly, vulnerable groups of citizens) and professional public including business sector (focus on energy market and sustainable mobility), including politicians (counsellors) and city hall officials/employees. The aim is to raise knowledge, understanding, trust and commitment of public to share the ambition towards climate neutrality. Important part of it will be unified visual identity connecting municipal climate actions. This will include municipal organisations, mainly public transport provider (utilisation of bus stops and city lights for communicating the most important projects), unified visualisation of low-emission public transport fleet, in close connection to community energy concept. The aim of the identity is to share clear information to public in a way that is attractive, unified, clear, and comprehensible | 10.2
-3
-1
-2
-5
-3
-5
-6
-7
-8
-0
-1
-7
 | engagement as private investors in various actions.
 • Politicians: there will be education focused on city councillors to strengthen their political commitment and comprehensive understanding necessary for them as decision-makers
 • City hall officials/employees: leading officials of departments and employees of relevant departments need to increase their skills and expertise linked to the climate-neutrality ambition (as operational level at the city, responsible for municipal property management, strategic planning etc.)
@@ -4111,16 +3960,6 @@ C.
 |  Intervention name | Description | Systemic barriers / opportunities addressed | Leadership and stakeholders involved | Enabling impact | Co-benefits  |
 |   | innovations, NZC Capital Hub. We expect that many smaller steps and pilot activities should accelerate the overall municipal development in the city and the overall change within the municipal capital planning |  | • Citizens, where there in this case they represent important stakeholder with their savings (citizen capital – crowdfunding in municipal district) |  |   |
 |  Commitment between municipality and industrial zones in Liberec | In following months, we want to move this city climate contract forward and to develop a specific commitment between municipality and industry in Liberec. There are two industrial zones in Liberec, and we want to enhance close mutual support and coordination (with help of facilitator) and to develop specific commitment between municipality and enterprises from industrial zones | 1.2
-3
-2
-1
-1
-3
-0
-5
-7
-8
-5
 | • Industrial zones
 • Denso Manufacturing Czech (as an example of good practice, helping the city to approach other industrial enterprises)
 • Politicians

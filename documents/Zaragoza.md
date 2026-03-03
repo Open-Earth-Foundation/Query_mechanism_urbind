@@ -829,7 +829,7 @@ This module represents the core of the Climate Neutral Action Plan 2030, consist
 |  Sector | Portfolio description  |   |
 |   |  List of actions | Descriptions  |
 |  Transport | Reduction in the need for motorised transport | SECAP 2030 includes measure AM12 Curb urban sprawl, which involves a 10% reduction in transport demand. This would avoid emitting 43 kton CO2e and save 174 GWh per year.
-Regarding BAU 2030, the reduction would need to be increased to 35%, to mitigate 94 kton CO2e per year.  |
+| Regarding BAU 2030, the reduction would need to be increased to 35%, to mitigate 94 kton CO2e per year.  |
 |   |  Bus electrification | The Zaragoza SUMP proposes measures that would reduce 186 kton CO2e and save 120 GWh annually.  |
 |   |  Car electrification | Based on the SUMP, the SECAP 2030 includes measure AM13 'Low Emission and Electric Mobility Plan'.
 In terms of the Economic Model, it is required:
@@ -838,7 +838,7 @@ Electrify 100% of the public transport vehicle fleet by 2030 to mitigate 21 kton
 Electrify 15% of <3.5 ton trucks by 2040 to mitigate 21 kton CO2e and electrify 40% of >3.5 ton trucks by 2040 to mitigate 21 kton CO2e  |
 |   |  Electrification of trucks |   |
 |   |  Modal shift: shift to public and non-motorised transport | The Zaragoza SUMP proposes measures that would reduce 186 kton CO2e and save 120 GWh annually.
-Based on the SUMP, the SECAP 2030 includes measures AM14 'Develop mobility actions aimed at improving citizens' health'; AM15 'Promote intermodality between modes of transport' and AM16 'Ensure accessibility to all mobility spaces and services'.  |
+| Based on the SUMP, the SECAP 2030 includes measures AM14 'Develop mobility actions aimed at improving citizens' health'; AM15 'Promote intermodality between modes of transport' and AM16 'Ensure accessibility to all mobility spaces and services'.  |
 |   |  Shared transport |   |
 
 Climate City Contract - Zaragoza
@@ -859,7 +859,7 @@ Climate City Contract - Zaragoza
 |  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
 |  Action plan | Action name | PILLAR 1: SUSTAINABLE AND SMART MOBILITY
-Reduction in the need for motorised transport  |
+| Reduction in the need for motorised transport  |
 |   |  Action type | Technical interventions  |
 |   |  Action Description | SECAP 2030 includes measure AM12 Curb urban sprawl, which involves a 10% reduction in transport demand. This would avoid emitting 43 kton CO2e and save 174 GWh per year.
 
@@ -882,7 +882,7 @@ Climate City Contract - Zaragoza
 |  Impacts & costs | Generated renewable energy (if applicable) |   |
 |   |  Removed/substituted energy, volume or fuel type | Included in SECAP 2030: 174 GWh/year  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | Included in SECAP 2030: 43 tonnes GHG/year.
-Result of the EMCD: 94 kton CO2e / year  |
+| Result of the EMCD: 94 kton CO2e / year  |
 |   |  Total costs and costs by CO2e unit |   |
 
 Climate City Contract - Zaragoza
@@ -891,7 +891,7 @@ T
 # B-2.2: Individual Action Schemes
 
 |  Action plan | Action name | PILLAR 1: SUSTAINABLE AND SMART MOBILITY
-Vehicle electrification  |
+| Vehicle electrification  |
 | --- | --- | --- |
 |   |  Action type | Technical interventions  |
 |   |  Action Description | The Zaragoza SUMP proposes measures that would reduce 186 kton CO2e and save 120 GWh annually.
@@ -948,7 +948,7 @@ T
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
 |  Action plan | Action name | PILLAR 1: SUSTAINABLE AND SMART MOBILITY
-Modal shift and car sharing  |
+| Modal shift and car sharing  |
 |   | Action type |   |
 |   | Action Description | The Zaragoza SUMP proposes measures that would reduce 186 kton CO2e and save 120 GWh annually.
 
@@ -973,15 +973,15 @@ Climate City Contract - Zaragoza
 |  |   |   |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Modal shift: shift to public and non-motorised transport
-Shared transport  |
+| Shared transport  |
 |   |  Systemic lever | Technology / Infrastructure; Financing;
-Learning and skills  |
+| Learning and skills  |
 |   |  Short and medium-term changes | Articulate all the necessary infrastructure: green ring, cycle lanes, electric fleets, vehicle chargers, tram, etc., Generalise the availability of sustainable alternatives in a multimodal transport system.  |
 |  Implementation | Responsible bodies/person for implementation | Urban Mobility Service.  |
 |   |  Action scale & addressed entities | Municipal  |
 |   |  Involved stakeholders | National government or agencies; sub-national governments or agencies; business and the private sector; NGOs and civil society  |
 |   |  Comments on implementation | In terms of items implemented in 2002 for decarbonisation:
-• 200,000 for the adaptation of the cycling network.  |
+| • 200,000 for the adaptation of the cycling network.  |
 |  Impacts & costs | Generated renewable energy (if applicable) |   |
 |   |  Removed/substituted energy, volume or fuel type | The Zaragoza SUMP proposes measures that would save 120 GWh per year (total SUMP contribution, not just modal shift).  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | The Zaragoza SUMP proposes measures that would reduce 186 kton CO2e per year (Total contribution of the SUMP, not only by modal shift).
@@ -992,7 +992,7 @@ Carpooling: 16 kton CO2e per year.  |
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
 |  Action plan | Action name | PILLAR 1: SUSTAINABLE AND SMART MOBILITY
-Optimisation of freight transport logistics  |
+| Optimisation of freight transport logistics  |
 |   |  Action type |   |
 |   |  Action Description | The Zaragoza SUMP proposes measures that would reduce 186 kton CO2e and save 120 GWh annually.
 In urban logistics, a 10% reduction in travel distance through route optimisation is required to contribute to a mitigation of 63 kton CO2e compared to BAU 2030.  |
@@ -1037,7 +1037,7 @@ Climate City Contract - Zaragoza
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
 |  Action plan | Action name | PILLAR 2: ENERGY AND EFFICIENCY
-Efficient lighting and appliances  |
+| Efficient lighting and appliances  |
 |   |  Action type | Technical interventions  |
 |   |  Action Description | Within the SECAP 2030, for municipal buildings and public lighting, measure AM6 (Strategy 2020 - (block I): optimisation of contracts and improvement of supply conditions) and measure AM7 (Strategy 2020 - (block II): energy savings, reduction of consumption and improvement of energy efficiency of electrical equipment) are considered.  |
 
@@ -1055,14 +1055,14 @@ PPA: bilateral 100% renewable energy contracting or Power Purchase Agreement  | 
 |   |  Systemic lever | Technology / Infrastructure; Financing  |
 |   |  Short and medium-term changes | Implementation of mechanisms to save energy, avoiding losses. Efficient and solidarity-based use of available energy sources. Fight against energy poverty by incorporating vulnerable participants free of charge. Municipal aid for housing rehabilitation.  |
 |  Implementation | Responsible bodies/person for implementation | Zaragoza Housing
-Town planning  |
+| Town planning  |
 |   |  Action scale & addressed entities | Urban scale  |
 |   |  Involved stakeholders | Government or national agencies; citizenship  |
 |   |  Comments on implementation | -  |
 |  Impacts & costs | Generated renewable energy (if applicable) |   |
 |   |  Removed/substituted energy, volume or fuel type |   |
 |   |  GHG emissions reduction estimate (total) per emission source sector | Included in SECAP 2030: 32 kton CO2e / year
-ME result:48 kton CO2e / year  |
+| ME result:48 kton CO2e / year  |
 |   |  Total costs and costs by CO2e unit |   |
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
@@ -1098,13 +1098,13 @@ Climate City Contract - Zaragoza
 Climate City Contract - Zaragoza
 
 |   | GHG emissions reduction estimate (total) per emission source sector | Included in SECAP 2030: 27.7 kton CO2e / year
-Result of the EMCD: 631 kton CO2e / year  |
+| Result of the EMCD: 631 kton CO2e / year  |
 | --- | --- | --- |
 |   | Total costs and costs by CO2e unit |   |
 |  **B-2.2: Individual Action Schemes**  |   |   |
 | --- | --- | --- |
 |  Action plan | Action name | PILLAR 2: ENERGY AND EFFICIENCY
-Low-emission electricity generation  |
+| Low-emission electricity generation  |
 |   |  Action type | Technical interventions  |
 |   |  Action Description | The SECAP 2030 includes measures AM4 (Promotion of electricity generation systems using renewable sources in housing), AM8 (Installation of electricity generation systems using renewable sources in municipal buildings) and AM10 (Promotion of electricity generation systems using renewable sources in the tertiary sector). A mitigation of 6.8 kton CO2e/year and a production of 74 GWh/year is estimated.
 
@@ -1126,7 +1126,7 @@ Solar energy community in MERCAZARAGOZA: The objective of the project is the imp
 |   |  Systemic lever | Technology / Infrastructure; Governance and Policy; Social Innovation; Democracy and Participation; Finance; Learning and Skills; Democracy and Participation.  |
 |   |  Short and medium-term changes | Installing local renewable energy generation infrastructure; Encouraging the creation of local energy communities through the legal instrument of collective self-consumption; Implementing mechanisms to save energy, avoiding losses; Efficient and solidarity-based use of available energy sources; Fighting energy poverty by incorporating vulnerable participants free of charge; Creating a "Barrio Solar" office to raise awareness, inform and advise neighbours on energy issues; Creating a "Barrio Solar" office to raise awareness, inform and advise neighbours on energy issues.  |
 |  Implementation | Responsible bodies/person for implementation | Solar neighbourhoods: EDP Solar, Zaragoza City Council and ECODES will form a consortium or similar legal entity to enable public-private collaboration and the constitution of an energy community.
-Others: City Council, companies.  |
+| Others: City Council, companies.  |
 |   |  Action scale & addressed entities | Neighbourhood / urban scale.  |
 |   |  Involved stakeholders | Business and private sector; NGOs, civil society.  |
 |   |  Comments on implementation | First pilot pilot Barrio Solar Actur: is the first renewable and solidarity-based solar neighbourhood in Spain, with a PV installation for shared self-consumption in residential buildings. Neighbours and businesses within 500 m of the installation participate and benefit from energy savings of around 30% on their bills.  |
@@ -1139,7 +1139,7 @@ Climate City Contract - Zaragoza
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
 |  Action plan | Action name | PILLAR 3: RENATURALISATION AND CIRCULAR ECONOMY
-Waste recycling  |
+| Waste recycling  |
 |   |  Action type | Technical interventions  |
 |   |  Action Description | ECAZ 3.0 includes measures 30 "Reducing food waste"; 31 "Collection, reuse and recycling of clothing"; 32 "Collection and reuse of electrical and electronic equipment"; and 33 "Use of organic waste for energy production and/or composting".
 
@@ -1165,11 +1165,11 @@ Circular Biocarbon: Urbaser  |
 |   |  Action scale & addressed entities | Urban scale  |
 |   |  Involved stakeholders | Business and private sector  |
 |   |  Comments on implementation | The biorefinery will begin construction in 2022 on the premises of Urbaser's "Alfonso Maillo" R&D&I Centre and the Zaragoza Urban Waste Treatment Complex (CTRUZ) in the Recycling Technology Park (PTR).
-The project will have a duration of 5 years and an overall budget of 123 million, of which the European Commission will finance a total of 15 million in the form of a grant.  |
+| The project will have a duration of 5 years and an overall budget of 123 million, of which the European Commission will finance a total of 15 million in the form of a grant.  |
 |  Impacts & costs | Generated renewable energy (if applicable) |   |
 |   |  Removed/substituted energy, volume or fuel type |   |
 |   |  GHG emissions reduction estimate (total) per emission source sector | From ECAZ 3.0: 340 kton CO2e / year
-Result of the EMCD: 10 kton CO2e / year  |
+| Result of the EMCD: 10 kton CO2e / year  |
 |   |  Total costs and costs by CO2e unit |   |
 
 Climate City Contract - Zaragoza
@@ -1415,7 +1415,7 @@ Summary table listing social and other innovation actions and describing their i
 | --- | --- | --- | --- | --- | --- |
 |  Intervention name | Description | Responsible entity/ dept./ person | Involved stakeholder | Enabling impact | Co-benefits  |
 |  #1 Right to energy | Concrete measures against fuel poverty, including an energy advice point. | Community Social Services
-Zaragoza Housing | First Attention Programme; Zaragoza Housing; City Council; Citizenship | Citizens' energy advice through audits of habits, installations and characteristics of the home | Increased public awareness and expert advice on energy-saving measures  |
+| Zaragoza Housing | First Attention Programme; Zaragoza Housing; City Council; Citizenship | Citizens' energy advice through audits of habits, installations and characteristics of the home | Increased public awareness and expert advice on energy-saving measures  |
 |  #2 Zaragoza Activa | Fostering an entrepreneurial, innovative, creative and collaborative ecosystem | ZAC Network City Council | City Council, ZAC companies | Supports initiatives that generate economic activity, including some that promote neutrality. | New initiatives from local companies committed to climate neutrality and awareness raising  |
 |  #3 Climate empowerment | Social tools: education, communication, awareness-raising, training, capacity building and climate participation | City Council | City Council Technical Office for Participation and Transparency Environment and Sustainability Service
 European project participants

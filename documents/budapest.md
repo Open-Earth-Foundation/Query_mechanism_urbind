@@ -121,28 +121,28 @@ O
 
 The list of abbreviations and acronyms identifies the abbreviations (a shortened form of a word used in place of the full word) and acronyms (a word formed from the first letters of each of the words in a phrase of name) used in the CCC Action Plan.
 
-|  Abbreviations and acronyms | Definition  |
+| Abbreviations and acronyms | Definition |
 | --- | --- |
-|  GHG | greenhouse gas  |
-|  SEAP | Sustainable Energy Action Plan  |
-|  SECAP | Sustainable Energy and Climate Action Plan  |
-|  CCC | Climate City Contract  |
-|  ETS | Emission Trading System  |
-|  CNG | compressed natural gas  |
-|  LPG | liquefied petroleum gas  |
-|  IPPU | Industrial Process and Product Use  |
-|  AFOLU | Agricultural, Forestry and Land Use  |
-|  BAU | Business as Usual  |
-|  COP | Conference of the Parties  |
-|  NECP | National Energy and Climate Plan  |
-|  SUMP | Sustainable Urban Mobility Plan  |
-|  TIH | Townscape Image Handbook  |
-|  IUDS | Integrated Urban Development Strategy  |
-|  LEZ | Low Emission Zone  |
-|  ULEZ | Ultra Low Emission Zone  |
-|  PED | positive energy district  |
-|  EoL | End-of-life  |
-|  NZC | Net Zero Cities  |
+| GHG | greenhouse gas |
+| SEAP | Sustainable Energy Action Plan |
+| SECAP | Sustainable Energy and Climate Action Plan |
+| CCC | Climate City Contract |
+| ETS | Emission Trading System |
+| CNG | compressed natural gas |
+| LPG | liquefied petroleum gas |
+| IPPU | Industrial Process and Product Use |
+| AFOLU | Agricultural, Forestry and Land Use |
+| BAU | Business as Usual |
+| COP | Conference of the Parties |
+| NECP | National Energy and Climate Plan |
+| SUMP | Sustainable Urban Mobility Plan |
+| TIH | Townscape Image Handbook |
+| IUDS | Integrated Urban Development Strategy |
+| LEZ | Low Emission Zone |
+| ULEZ | Ultra Low Emission Zone |
+| PED | positive energy district |
+| EoL | End-of-life |
+| NZC | Net Zero Cities |
 BUDAPEST
 Climate Neutrality Action Plan
 
@@ -219,20 +219,20 @@ Open Budapest: proactive municipal governance, where cooperation and innovation 
 
 Figure: Strategic thematic goals of the Municipality (Source: IUDS, 2021)
 
-|  OVERALL GOAL LIVEABLE BUDAPEST FOR ALL!  |   |   |   |
+| OVERALL GOAL LIVEABLE BUDAPEST FOR ALL! |  |  |  |
 | --- | --- | --- | --- |
-|  STRATEGIC THEMATIC GOALS | EMPOWERING BUDAPEST | GREEN BUDAPEST | OPEN BUDAPEST  |
-|   |  Accessible housing, improving the health and living conditions of the people of Budapest. | A liveable and healthy, value-conserving and value-creating, climate-conscious city | Proactive municipal governance, where cooperation and innovation have a key role  |
-|  OPERATIONAL GOALS | I.A Expanding affordable and good quality housing conditions | II.A City of short distances | III.A Urban development based on cooperation  |
-|   |   |  II.B Development of sustainable transport | III.B Renewal of communication and city marketing  |
-|   |  I.B Improving health maintenance conditions | II.C Healthy streets and urban spaces | III.C Customer-centric municipal service development  |
-|   |  I.C Providing quality social service | II.D Conserving natural assets and improving green cover | III.D Modern data management and accelerating the digital transition  |
-|   |  I.D Reducing poverty and social inequalities | II.E Improving energy efficiency, climate protection | III.E Innovation and organisational development in municipal services  |
-|   |  I.E The accessible and safe use of public spaces and services  |   |   |
-|   |  I.F Building an inclusive and cooperative Budapest community | II.F Sustainable municipal management | III.F Sustainable tourism, renewed cultural and recreational services  |
-|  PRINCIPLES | SERVICE-FOCUSED AND HUMAN-SCALE DEVELOPMENTS!  |   |   |
-|   |  SYNERGETIC DEVELOPMENTS THAT ARE USEFUL FOR RESIDENTS!  |   |   |
-|   |  FLEXIBLE DEVELOPMENTS BASED ON ASSESSING LESSONS LEARNT!  |   |   |
+| STRATEGIC THEMATIC GOALS | EMPOWERING BUDAPEST | GREEN BUDAPEST | OPEN BUDAPEST |
+|  | Accessible housing, improving the health and living conditions of the people of Budapest. | A liveable and healthy, value-conserving and value-creating, climate-conscious city | Proactive municipal governance, where cooperation and innovation have a key role |
+| OPERATIONAL GOALS | I.A Expanding affordable and good quality housing conditions | II.A City of short distances | III.A Urban development based on cooperation |
+|  |  | II.B Development of sustainable transport | III.B Renewal of communication and city marketing |
+|  | I.B Improving health maintenance conditions | II.C Healthy streets and urban spaces | III.C Customer-centric municipal service development |
+|  | I.C Providing quality social service | II.D Conserving natural assets and improving green cover | III.D Modern data management and accelerating the digital transition |
+|  | I.D Reducing poverty and social inequalities | II.E Improving energy efficiency, climate protection | III.E Innovation and organisational development in municipal services |
+|  | I.E The accessible and safe use of public spaces and services |  |  |
+|  | I.F Building an inclusive and cooperative Budapest community | II.F Sustainable municipal management | III.F Sustainable tourism, renewed cultural and recreational services |
+| PRINCIPLES | SERVICE-FOCUSED AND HUMAN-SCALE DEVELOPMENTS! |  |  |
+|  | SYNERGETIC DEVELOPMENTS THAT ARE USEFUL FOR RESIDENTS! |  |  |
+|  | FLEXIBLE DEVELOPMENTS BASED ON ASSESSING LESSONS LEARNT! |  |  |
 
 The transition of Budapest towards a climate-neutral future is a complex challenge, however, that requires stakeholders from the entire local ecosystem to collaborate. The Action Plan was developed by the Mission Team, an internal core group of people within the Municipality supported by the Mission Group – a governance structure involving the Municipality, private and public companies, academia, and the civil sector. A more detailed description of the work of the City's Mission Team and Mission Group can be found in Module C-1 Governance Innovation Interventions.
 
@@ -274,24 +274,24 @@ Climate Neutrality Action Plan
 
 Table: Climate Neutrality Target by 2030
 
-|  Table I-1.1: Climate Neutrality Target by 2030  |   |   |   |
+| Table I-1.1: Climate Neutrality Target by 2030 |  |  |  |
 | --- | --- | --- | --- |
-|  Sectors | Scope 1 | Scope 2^{3} | Scope 3  |
-|  Stationary energy | Included | Included | Optional information  |
-|   |  Exclusions: CH_{4}, N_{2}O | Exclusions: CH_{4}, N_{2}O | Optional information  |
-|  Transport | Included | Included | Optional information  |
-|   |  Exclusions: Aviation, national railways, water-borne transport CH_{4}, N_{2}O | Exclusions: Aviation, national railways, water-borne transport CH_{4}, N_{2}O | Optional information  |
-|  Waste/wastewater | Included^{4} | Not applicable | Included^{5}  |
-|   |  Exclusions: CH_{4}, N_{2}O | Not applicable | Exclusion: CH_{4}, N_{2}O  |
-|  IPPU | Included | Not applicable | Optional information  |
-|   |  Exclusions: CH_{4}, N_{2}O, HFCs, PFCs, SF_{6}, NF_{3} | Not applicable | Optional information  |
-|  AFOLU | Included | Not applicable | Optional information  |
-|   |  Exclusions: CH_{4}, N_{2}O | Not applicable | Optional information  |
-|  Other | Insignificant | Insignificant | Insignificant  |
-|  Geographical boundary | Same as city administrative boundary | Smaller than city administrative boundary | Larger than city administrative boundary  |
-|  (Tick correct option) | x |  |   |
-|  Specify excluded/additional areas | Everything is included, there are no added areas. |  |   |
-|  Map  |   |   |   |
+| Sectors | Scope 1 | Scope 2^{3} | Scope 3 |
+| Stationary energy | Included | Included | Optional information |
+|  | Exclusions: CH_{4}, N_{2}O | Exclusions: CH_{4}, N_{2}O | Optional information |
+| Transport | Included | Included | Optional information |
+|  | Exclusions: Aviation, national railways, water-borne transport CH_{4}, N_{2}O | Exclusions: Aviation, national railways, water-borne transport CH_{4}, N_{2}O | Optional information |
+| Waste/wastewater | Included^{4} | Not applicable | Included^{5} |
+|  | Exclusions: CH_{4}, N_{2}O | Not applicable | Exclusion: CH_{4}, N_{2}O |
+| IPPU | Included | Not applicable | Optional information |
+|  | Exclusions: CH_{4}, N_{2}O, HFCs, PFCs, SF_{6}, NF_{3} | Not applicable | Optional information |
+| AFOLU | Included | Not applicable | Optional information |
+|  | Exclusions: CH_{4}, N_{2}O | Not applicable | Optional information |
+| Other | Insignificant | Insignificant | Insignificant |
+| Geographical boundary | Same as city administrative boundary | Smaller than city administrative boundary | Larger than city administrative boundary |
+| (Tick correct option) | x |  |  |
+| Specify excluded/additional areas | Everything is included, there are no added areas. |  |  |
+| Map |  |  |  |
 
 Scope 2 energy use and emissions are shown under Electricity in Tables 2-1., 2-3., 2-4., and 2-5.
 Emissions from waste generated and managed/sent to landfill within the city boundary.
@@ -321,33 +321,33 @@ Part A “Current State of Climate Action” describes the point of departure of
 
 Table: Final energy use by source sectors
 
-|  A-1.1: Final energy use by source sectors  |   |   |   |
+| A-1.1: Final energy use by source sectors |  |  |  |
 | --- | --- | --- | --- |
-|  Base year | 2022  |   |   |
-|  Unit | MWh  |   |   |
-|   | Scope 1 | Scope 2 | Scope 3  |
-|  Transport | 6 914 217 |  |   |
-|  CNG | 21 965 |  |   |
-|  LPG | 26 697 |  |   |
-|  Diesel | 3 698 934 |  |   |
-|  Gasoline | 3 166 621 |  |   |
-|  Biofuel | 11 |  |   |
-|  Buildings & Heating | 14 533 288 |  |   |
-|  District heating/cooling | 2 674 285 |  |   |
-|  Natural gas | 11 577 003 |  |   |
-|  Liquid gas | 226 |  |   |
-|  Heating oil | 11 091 |  |   |
-|  Gasoline | 613 |  |   |
-|  Coal | 81 960 |  |   |
-|  Other biomass | 163 947 |  |   |
-|  Solar thermal | 1 594 |  |   |
-|  Geothermal | 22 569 |  |   |
-|  Electricity |  | 7 123 268 |   |
-|  Waste6 |  |  |   |
-|  Industrial Process and Product Use (IPPU) | 35 033 |  |   |
-|  Liquid gas | 35 033 |  |   |
-|  Agricultural, Forestry and Land Use (AFOLU) | 5 407 |  |   |
-|  Natural gas | 5 407 |  |   |
+| Base year | 2022 |  |  |
+| Unit | MWh |  |  |
+|  | Scope 1 | Scope 2 | Scope 3 |
+| Transport | 6 914 217 |  |  |
+| CNG | 21 965 |  |  |
+| LPG | 26 697 |  |  |
+| Diesel | 3 698 934 |  |  |
+| Gasoline | 3 166 621 |  |  |
+| Biofuel | 11 |  |  |
+| Buildings & Heating | 14 533 288 |  |  |
+| District heating/cooling | 2 674 285 |  |  |
+| Natural gas | 11 577 003 |  |  |
+| Liquid gas | 226 |  |  |
+| Heating oil | 11 091 |  |  |
+| Gasoline | 613 |  |  |
+| Coal | 81 960 |  |  |
+| Other biomass | 163 947 |  |  |
+| Solar thermal | 1 594 |  |  |
+| Geothermal | 22 569 |  |  |
+| Electricity |  | 7 123 268 |  |
+| Waste6 |  |  |  |
+| Industrial Process and Product Use (IPPU) | 35 033 |  |  |
+| Liquid gas | 35 033 |  |  |
+| Agricultural, Forestry and Land Use (AFOLU) | 5 407 |  |  |
+| Natural gas | 5 407 |  |  |
 
 Final energy use for waste management is included in Buildings &amp; Heating as waste heat is utilized in buildings. Emissions from waste are shown separately in Tables 2-4. and 2-5.
 BUDAPEST
@@ -358,22 +358,22 @@ Table: Emission factors
 
 A-1.2: Emission factors applied
 
-|  For calculation in MWh and t of primary energy  |   |   |   |   |   |   |
+| For calculation in MWh and t of primary energy |  |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- |
-|  The emission factors were given using the IPCC methodology, but some factors, such as the one for district heating/ cooling and incineration were based on calculations of Budapest Public Utilities.  |   |   |   |   |   |   |
-|  Primary energy/ energy source | Carbon Dioxide (CO2) | Methane (CH4) | Nitrous Oxide (N2O) | F-gases | Sulphur hexafluoride (SF6) | Nitrogen trifluoride (NF3)  |
-|  Electricity (not primary energy) | 0,23 t/MWh |  |  |  |  |   |
-|  District heating/cooling | 0,167 t/MWh |  |  |  |  |   |
-|  Natural gas | 0,202 t/MWh |  |  |  |  |   |
-|  Liquid gas | 0,231 t/MWh |  |  |  |  |   |
-|  Heating oil | 0,267 t/MWh |  |  |  |  |   |
-|  Diesel | 0,267 t/MWh |  |  |  |  |   |
-|  Gasoline | 0,249 t/MWh |  |  |  |  |   |
-|  Lignite | 0,364 t/MWh |  |  |  |  |   |
-|  Coal | 0,346 t/MWh |  |  |  |  |   |
-|  Other fossil fuels | 0,403 t/MWh |  |  |  |  |   |
-|  Renewable sources | 0,0 t/MWh |  |  |  |  |   |
-|  Incineration | 0,883 t/t incinerated |  |  |  |  |   |
+| The emission factors were given using the IPCC methodology, but some factors, such as the one for district heating/ cooling and incineration were based on calculations of Budapest Public Utilities. |  |  |  |  |  |  |
+| Primary energy/ energy source | Carbon Dioxide (CO2) | Methane (CH4) | Nitrous Oxide (N2O) | F-gases | Sulphur hexafluoride (SF6) | Nitrogen trifluoride (NF3) |
+| Electricity (not primary energy) | 0,23 t/MWh |  |  |  |  |  |
+| District heating/cooling | 0,167 t/MWh |  |  |  |  |  |
+| Natural gas | 0,202 t/MWh |  |  |  |  |  |
+| Liquid gas | 0,231 t/MWh |  |  |  |  |  |
+| Heating oil | 0,267 t/MWh |  |  |  |  |  |
+| Diesel | 0,267 t/MWh |  |  |  |  |  |
+| Gasoline | 0,249 t/MWh |  |  |  |  |  |
+| Lignite | 0,364 t/MWh |  |  |  |  |  |
+| Coal | 0,346 t/MWh |  |  |  |  |  |
+| Other fossil fuels | 0,403 t/MWh |  |  |  |  |  |
+| Renewable sources | 0,0 t/MWh |  |  |  |  |  |
+| Incineration | 0,883 t/t incinerated |  |  |  |  |  |
 
 GHG Emissions Baseline inventory
 
@@ -388,18 +388,18 @@ Climate Neutrality Action Plan
 
 Table: GHG Emissions by Source Sector - Baseline Year
 
-|  A-1.3a: GHG Emissions by Source Sector - Baseline Year  |   |   |   |   |   |
+| A-1.3a: GHG Emissions by Source Sector - Baseline Year |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- |
-|  Base year | 2022  |   |   |   |   |
-|  Unit | t CO2 equivalent/year  |   |   |   |   |
-|   | Scope 1 | Scope 2 | Scope 3 | Total | % of Total  |
-|  Transport | 1 617 327 |  |  | 1 617 327 | 25%  |
-|  Buildings & Heating | 2 737 593 |  |  | 2 737 593 | 43%  |
-|  Electricity |  | 1 675 587 |  | 1 675 587 | 26%  |
-|  Waste |  |  | 311 700 | 311 700 | 5%  |
-|  IPPU | 8145 |  |  | 8145 | 0%  |
-|  AFOLU | 1092 |  |  | 1092 | 0%  |
-|  Total | 4 364 156 | 1 675 587 | 311 700 | 6 351 443 | 100%  |
+| Base year | 2022 |  |  |  |  |
+| Unit | t CO2 equivalent/year |  |  |  |  |
+|  | Scope 1 | Scope 2 | Scope 3 | Total | % of Total |
+| Transport | 1 617 327 |  |  | 1 617 327 | 25% |
+| Buildings & Heating | 2 737 593 |  |  | 2 737 593 | 43% |
+| Electricity |  | 1 675 587 |  | 1 675 587 | 26% |
+| Waste |  |  | 311 700 | 311 700 | 5% |
+| IPPU | 8145 |  |  | 8145 | 0% |
+| AFOLU | 1092 |  |  | 1092 | 0% |
+| Total | 4 364 156 | 1 675 587 | 311 700 | 6 351 443 | 100% |
 
 For the Action Plan, the BAU scenario is used to define the emission gap. The Economic Model utilizes a number of assumptions for the establishment of the BAU inventory. Some of the assumptions include:
 
@@ -418,18 +418,18 @@ https://netzerocities.app/group-capabilitybuildingprogrammebuildingastrongeconom
 
 Table: GHG Emissions by Source Sector - Business as Usual (BAU) 2030
 
-|  A-1.3b: GHG Emissions by Source Sector - Business as Usual (BAU) 2030  |   |   |   |   |   |
+| A-1.3b: GHG Emissions by Source Sector - Business as Usual (BAU) 2030 |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- |
-|  Base year | 2022  |   |   |   |   |
-|  Unit | t CO2 equivalent/year  |   |   |   |   |
-|   | Scope 1 | Scope 2 | Scope 3 | Total | % of Total  |
-|  Transport | 1 193 708 |  |  | 1 193 708 | 22%  |
-|  Buildings & Heating | 2 411 060 |  |  | 2 411 060 | 44%  |
-|  Electricity |  | 1 734 753 |  | 1 734 753 | 32%  |
-|  Waste |  |  | 134 417 | 134 417 | 2%  |
-|  IPPU | 8145 |  |  | 8145 | 0%  |
-|  AFOLU | 1092 |  |  | 1092 | 0%  |
-|  Total | 3 616 910 | 1 734 753 | 134 417 | 5 483 175 | 100%  |
+| Base year | 2022 |  |  |  |  |
+| Unit | t CO2 equivalent/year |  |  |  |  |
+|  | Scope 1 | Scope 2 | Scope 3 | Total | % of Total |
+| Transport | 1 193 708 |  |  | 1 193 708 | 22% |
+| Buildings & Heating | 2 411 060 |  |  | 2 411 060 | 44% |
+| Electricity |  | 1 734 753 |  | 1 734 753 | 32% |
+| Waste |  |  | 134 417 | 134 417 | 2% |
+| IPPU | 8145 |  |  | 8145 | 0% |
+| AFOLU | 1092 |  |  | 1092 | 0% |
+| Total | 3 616 910 | 1 734 753 | 134 417 | 5 483 175 | 100% |
 米
 
 BUDAPEST
@@ -440,23 +440,23 @@ Climate Neutrality Action Plan
 
 Table: Activity by Source Sector (from economic model data inputs)
 
-|  A-1.4: Activity by Source Sector (from economic model data inputs)  |   |   |   |
+| A-1.4: Activity by Source Sector (from economic model data inputs) |  |  |  |
 | --- | --- | --- | --- |
-|  Base Year |   | 2022  |   |
-|   | Scope 1 | Scope 2 | Scope 3  |
-|  Transport |  |  |   |
-|  Transport need - passenger cars + motorcycles (M km/year) | 4 446 |  |   |
-|  Transport need - buses (M km/year) | 64 |  |   |
-|  Transport need - trains/metro (M km/year) | 13 |  |   |
-|  Transport need - light duty trucks (<3.5 t) (M km/year) | 475 |  |   |
-|  Transport need - heavy duty trucks (>3.5 t) (M km/year) | 1 140 |  |   |
-|  Buildings & Heating |  |  |   |
-|  Heating demand (space heating + domestic hot water)(GWh/year) | 14 533 |  |   |
-|  Electricity |  |  |   |
-|  Electricity demand within city boundaries (GWh/year) |  | 7 123 |   |
-|  Waste |  |  |   |
-|  Collected waste within city boundaries (tonnes) |  |  | 722 423  |
-|  Other (incl. IPPU & AFOLU) |  |  |   |
+| Base Year |  | 2022 |  |
+|  | Scope 1 | Scope 2 | Scope 3 |
+| Transport |  |  |  |
+| Transport need - passenger cars + motorcycles (M km/year) | 4 446 |  |  |
+| Transport need - buses (M km/year) | 64 |  |  |
+| Transport need - trains/metro (M km/year) | 13 |  |  |
+| Transport need - light duty trucks (<3.5 t) (M km/year) | 475 |  |  |
+| Transport need - heavy duty trucks (>3.5 t) (M km/year) | 1 140 |  |  |
+| Buildings & Heating |  |  |  |
+| Heating demand (space heating + domestic hot water)(GWh/year) | 14 533 |  |  |
+| Electricity |  |  |  |
+| Electricity demand within city boundaries (GWh/year) |  | 7 123 |  |
+| Waste |  |  |  |
+| Collected waste within city boundaries (tonnes) |  |  | 722 423 |
+| Other (incl. IPPU & AFOLU) |  |  |  |
 
 ![img-7.jpeg](img-7.jpeg)
 Figure: Sectoral distribution of  $\mathrm{CO}_{2}$  emissions (BAU 2030)
@@ -603,60 +603,43 @@ The table below summarizes all the relevant programmes, strategies and policies 
 
 Table: List of relevant policies, strategies &amp; regulations
 
-|  List of relevant policies, strategies & regulations  |   |   |   |   |
+| List of relevant policies, strategies & regulations |  |  |  |  |
 | --- | --- | --- | --- | --- |
-|  Type | Level | Name & Title | Description | Relevance  |
-|  Agreement and action plan | EU | Paris Agreement | EU countries agreed to set the EU on a path to become the first climate-neutral economy and society by 2050. | The long-term plan is to keep the global average annual temperature increase well below 2°C above pre-industrial levels and to work towards a temperature rise of only 1,5°C.  |
-|  Policy framework | EU | 2030 Framework for Climate and Energy | The 2030 framework includes targets and actions to make the EU economy and energy system more competitive, secure and sustainable. It sets targets for reducing GHG emissions and increasing the use of renewable energy sources and proposes a new governance framework and performance indicators. | Related objectives:
+| Type | Level | Name & Title | Description | Relevance |
+| Agreement and action plan | EU | Paris Agreement | EU countries agreed to set the EU on a path to become the first climate-neutral economy and society by 2050. | The long-term plan is to keep the global average annual temperature increase well below 2°C above pre-industrial levels and to work towards a temperature rise of only 1,5°C. |
+| Policy framework | EU | 2030 Framework for Climate and Energy | The 2030 framework includes targets and actions to make the EU economy and energy system more competitive, secure and sustainable. It sets targets for reducing GHG emissions and increasing the use of renewable energy sources and proposes a new governance framework and performance indicators. | Related objectives: |
 To reduce EU GHG emissions by at least 40% by 2030 compared to 1990 levels
 at least 27% of energy used should come from renewable energy sources
 an EU target to improve energy efficiency by 27% compared to projected energy consumption in 2030  |
-|  Roadmap | EU | Energy Roadmap 2050 | The paper on the transition to a low-carbon economy presents several different scenarios to achieve the environmental targets set for 2050. | According to the Energy Roadmap 2050, decarbonisation can be achieved by transforming the energy system.  |
-|  Strategy | National | Second National Climate Change Strategy | The highest-level domestic policy document on climate change is the Second National Climate Change Strategy, which has two main objectives: 'Survival and sustainable development in a changing world' and 'Understanding our capabilities, opportunities and constraints'. | The strategy includes the National Decarbonisation Roadmap with targets, priorities and actions for reducing GHG emissions up to 2050.  |
-|  Strategy | National | National Energy and Climate Plan (NECP) | In line with the objectives of the National Energy Strategy, the main objectives of the NECP are to strengthen energy sovereignty and security and to decarbonise. | The NECP sets a target to reduce gross GHG emissions by at least 50% by 2030 compared to 1990. It also aims to further reduce the GHG intensity of the Hungarian economy (i.e. the GHG emissions per unit of GDP).  |
-|  Strategy | National | National Environmental | Its task is to define the country's environmental objectives and the actions and | The NEPP is a policy strategy, which primarily covers the period up to  |
-BUDAPEST
-
-Climate Neutrality Action Plan
-
-8
-
-|   |  | Protection Programme | means required to achieve them, taking into account the country's environmental status, the development objectives of society and the obligations arising from international cooperation and EU membership. | 2026, but also looks beyond, contributing to the achievement of the targets up to 2030 (e.g. 73% reduction of sulphur dioxide emissions by 2030 compared to 2005) and 2050 (making Hungary climate neutral by 2050). One of the strategic areas of the NEPP is to reduce GHG emissions and prepare for the impacts of climate change.  |
+| Roadmap | EU | Energy Roadmap 2050 | The paper on the transition to a low-carbon economy presents several different scenarios to achieve the environmental targets set for 2050. | According to the Energy Roadmap 2050, decarbonisation can be achieved by transforming the energy system. |
 | --- | --- | --- | --- | --- |
-|  Strategy | National | National Sustainable Development Framework Strategy | The Framework Strategy aims to contribute to building a national consensus on sustainability. It summarises the challenges arising from international and EU programmes and the state of our national resources. | It defines indicators for measuring sustainability that provide information on quantitative and qualitative changes in factors that are important for our future well-being. It includes the quantity of GHG emissions as an indicator.  |
-|  Strategy | National | 3rd National Biodiversity Strategy | The 3rd National Biodiversity Strategy provides a comprehensive framework for the long-term survival of domestic wildlife and natural resources and defines the objectives to be achieved by 2030, as well as the measures to achieve them. | Healthy, well-managed habitats and ecosystems play a key role in global climate regulation, such as CO_{2} sequestration, carbon storage and microclimate regulation, filtration, flood risk reduction, and water retention. These are also essential for climate change prevention and adaptation activities.  |
-|  Strategy | National | National Building Energetics Strategy | In order to achieve the goals set out in the National Energy Strategy, the NBES sets out the objectives and main directions that will enable the modernisation of the Hungarian building stock and a significant reduction in energy consumption in the period up to 2020, with a view to 2030. | According to the NBES, primary energy use in buildings accounts for about 40% of the national primary energy use. Residential buildings account for the largest share of energy use in buildings, with almost 60%. One of the overarching objectives of the strategy is to reduce GHG emissions.  |
-|  Concept | National | National Development and Regional Development Concept | The concept sets out a long-term vision, development policy objectives and principles, based on the country's social, economic, sectoral and territorial development needs. These national policy priorities for the 2014-2020 development | The Concept is aligned with national strategic planning documents, provides a common direction for policies in terms of development and spatial development, and provides the basis for the design and implementation of policy programmes for  |
-BUDAPEST
-
-Climate Neutrality Action Plan
-
-9
-
-|   |  |  | period. It sets out a vision and a set of objectives up to 2030. | development purposes to achieve national climate protection objectives.  |
+| Strategy | National | Second National Climate Change Strategy | The highest-level domestic policy document on climate change is the Second National Climate Change Strategy, which has two main objectives: 'Survival and sustainable development in a changing world' and 'Understanding our capabilities, opportunities and constraints'. | The strategy includes the National Decarbonisation Roadmap with targets, priorities and actions for reducing GHG emissions up to 2050. |
+| Strategy | National | National Energy and Climate Plan (NECP) | In line with the objectives of the National Energy Strategy, the main objectives of the NECP are to strengthen energy sovereignty and security and to decarbonise. | The NECP sets a target to reduce gross GHG emissions by at least 50% by 2030 compared to 1990. It also aims to further reduce the GHG intensity of the Hungarian economy (i.e. the GHG emissions per unit of GDP). |
+| Strategy | National | National Environmental | Its task is to define the country's environmental objectives and the actions and | The NEPP is a policy strategy, which primarily covers the period up to |
+|  |  | Protection Programme | means required to achieve them, taking into account the country's environmental status, the development objectives of society and the obligations arising from international cooperation and EU membership. | 2026, but also looks beyond, contributing to the achievement of the targets up to 2030 (e.g. 73% reduction of sulphur dioxide emissions by 2030 compared to 2005) and 2050 (making Hungary climate neutral by 2050). One of the strategic areas of the NEPP is to reduce GHG emissions and prepare for the impacts of climate change. |
 | --- | --- | --- | --- | --- |
-|  Programme | Local | Environmental Protection Program of Budapest for 2021-2027 | The programme sets out objectives and tasks to protect the environment. | The programme’s aims include climate protection and energy efficiency.  |
-|  Action Plan | Local | Green Infrastructure Development and Maintenance Action Plan | The Action Plan provides a comprehensive description of the tasks related to the development and maintenance of green infrastructure, guided by the principles of sustainability and liveability. | The objectives of the Action Plan contribute primarily to adaptation and not to emission reductions, however, as green infrastructure is a considerable carbon sink, the concept contributes to the residual emission strategy of the city.  |
-|  Action Plan | Local | Budapest Mobility Plan | The SUMP is a comprehensive development plan for Budapest's transport until 2030, with the main objectives of ensuring a climate-neutral and liveable urban environment, safe, inclusive and integrated transport, and open and cooperative regional connections. | The plan aims to create a climate-neutral and liveable urban environment. It will contribute to reducing emissions by promoting climate-friendly transport improvements and less environmentally damaging modes of transport.  |
-|  Action Plan | Local | Noise Attenuation Action Plan | The aim of the plan is to reduce noise pollution by reducing noise from road, rail, air and industrial operations and by protecting against noise generated. | The plan will indirectly contribute to reducing congestion by reducing road traffic.  |
-|  Action Plan | Local | Sustainable Energy and Climate Action Plan | The Action Plan includes actions needed for a 40% emission reduction, adaptation to climate change and awareness raising. | The action plan aims to help reduce emissions and adapt to climate change.  |
-|  Programme | Local | Budapest 2030 Long-Term Urban Development Concept | The concept sets out the directions for urban development for 10 years, in response to expected challenges, by defining 17 development objectives. | The objectives of the concept include climate protection and energy efficiency, as well as other indirect objectives (e.g. sustainable transport).  |
-|  Strategy | Local | Budapest 2027 Urban Development Strategy | The strategy is based on the Budapest 2030 concept and defines the strategic development directions for the short term, which form the basis for further sectoral and territorial strategies, programmes, action plans and projects. | The objectives of the strategy include climate protection and energy efficiency, as well as other indirect objectives (e.g. developing sustainable transport).  |
-BUDAPEST
-
-Climate Neutrality Action Plan
-
-0
-
-|   | Baseline emissions | Emissions Reduction Target 2030 |   | Emissions reduction through the CCC Action Plan to address the Gap |   | Remaining Emissions |   | Residual Emissions Offsetting |   | Emissions Gap (amount necessary to achieve net-zero)  |   |
+| Strategy | National | National Sustainable Development Framework Strategy | The Framework Strategy aims to contribute to building a national consensus on sustainability. It summarises the challenges arising from international and EU programmes and the state of our national resources. | It defines indicators for measuring sustainability that provide information on quantitative and qualitative changes in factors that are important for our future well-being. It includes the quantity of GHG emissions as an indicator. |
+| Strategy | National | 3rd National Biodiversity Strategy | The 3rd National Biodiversity Strategy provides a comprehensive framework for the long-term survival of domestic wildlife and natural resources and defines the objectives to be achieved by 2030, as well as the measures to achieve them. | Healthy, well-managed habitats and ecosystems play a key role in global climate regulation, such as CO_{2} sequestration, carbon storage and microclimate regulation, filtration, flood risk reduction, and water retention. These are also essential for climate change prevention and adaptation activities. |
+| Strategy | National | National Building Energetics Strategy | In order to achieve the goals set out in the National Energy Strategy, the NBES sets out the objectives and main directions that will enable the modernisation of the Hungarian building stock and a significant reduction in energy consumption in the period up to 2020, with a view to 2030. | According to the NBES, primary energy use in buildings accounts for about 40% of the national primary energy use. Residential buildings account for the largest share of energy use in buildings, with almost 60%. One of the overarching objectives of the strategy is to reduce GHG emissions. |
+| Concept | National | National Development and Regional Development Concept | The concept sets out a long-term vision, development policy objectives and principles, based on the country's social, economic, sectoral and territorial development needs. These national policy priorities for the 2014-2020 development | The Concept is aligned with national strategic planning documents, provides a common direction for policies in terms of development and spatial development, and provides the basis for the design and implementation of policy programmes for |
+|  |  |  | period. It sets out a vision and a set of objectives up to 2030. | development purposes to achieve national climate protection objectives. |
+| --- | --- | --- | --- | --- |
+| Programme | Local | Environmental Protection Program of Budapest for 2021-2027 | The programme sets out objectives and tasks to protect the environment. | The programme’s aims include climate protection and energy efficiency. |
+| Action Plan | Local | Green Infrastructure Development and Maintenance Action Plan | The Action Plan provides a comprehensive description of the tasks related to the development and maintenance of green infrastructure, guided by the principles of sustainability and liveability. | The objectives of the Action Plan contribute primarily to adaptation and not to emission reductions, however, as green infrastructure is a considerable carbon sink, the concept contributes to the residual emission strategy of the city. |
+| Action Plan | Local | Budapest Mobility Plan | The SUMP is a comprehensive development plan for Budapest's transport until 2030, with the main objectives of ensuring a climate-neutral and liveable urban environment, safe, inclusive and integrated transport, and open and cooperative regional connections. | The plan aims to create a climate-neutral and liveable urban environment. It will contribute to reducing emissions by promoting climate-friendly transport improvements and less environmentally damaging modes of transport. |
+| Action Plan | Local | Noise Attenuation Action Plan | The aim of the plan is to reduce noise pollution by reducing noise from road, rail, air and industrial operations and by protecting against noise generated. | The plan will indirectly contribute to reducing congestion by reducing road traffic. |
+| Action Plan | Local | Sustainable Energy and Climate Action Plan | The Action Plan includes actions needed for a 40% emission reduction, adaptation to climate change and awareness raising. | The action plan aims to help reduce emissions and adapt to climate change. |
+| Programme | Local | Budapest 2030 Long-Term Urban Development Concept | The concept sets out the directions for urban development for 10 years, in response to expected challenges, by defining 17 development objectives. | The objectives of the concept include climate protection and energy efficiency, as well as other indirect objectives (e.g. sustainable transport). |
+| Strategy | Local | Budapest 2027 Urban Development Strategy | The strategy is based on the Budapest 2030 concept and defines the strategic development directions for the short term, which form the basis for further sectoral and territorial strategies, programmes, action plans and projects. | The objectives of the strategy include climate protection and energy efficiency, as well as other indirect objectives (e.g. developing sustainable transport). |
+|  | Baseline emissions | Emissions Reduction Target 2030 |  | Emissions reduction through the CCC Action Plan to address the Gap |  | Remaining Emissions |  | Residual Emissions Offsetting |  | Emissions Gap (amount necessary to achieve net-zero) |  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|   | (absolute) (specify units) | (absolute) | (% of BAU 2030) | (absolute) | (%) | (absolute) | (%) | (absolute) | (%) | (absolute) | (%)  |
-|  Transport | 1194 | 886 | 74% | 886 | 74% | 307 | 26% | 307 | 26% | 0 | 0%  |
-|  Buildings & Heating | 2411 | 1766 | 73% | 1766 | 73% | 645 | 27% | 645 | 27% | 0 | 0%  |
-|  Electricity | 1735 | 1648 | 95% | 1648 | 95% | 87 | 5% | 87 | 5% | 0 | 0%  |
-|  Waste | 134 | 84 | 62% | 84 | 62% | 50 | 38% | 50 | 38% | 0 | 0%  |
-|  Other (incl. IPPU & AFOLU) | 9 | 7 | 80% | 7 | 80% | 2 | 20% | 2 | 20% | 0 | 0%  |
-|  Total | 5483 | 4392 | 80% | 4392 | 80% | 1092 | 20% | 1092 | 20% | 0 | 0%  |
+|  | (absolute) (specify units) | (absolute) | (% of BAU 2030) | (absolute) | (%) | (absolute) | (%) | (absolute) | (%) | (absolute) | (%) |
+| Transport | 1194 | 886 | 74% | 886 | 74% | 307 | 26% | 307 | 26% | 0 | 0% |
+| Buildings & Heating | 2411 | 1766 | 73% | 1766 | 73% | 645 | 27% | 645 | 27% | 0 | 0% |
+| Electricity | 1735 | 1648 | 95% | 1648 | 95% | 87 | 5% | 87 | 5% | 0 | 0% |
+| Waste | 134 | 84 | 62% | 84 | 62% | 50 | 38% | 50 | 38% | 0 | 0% |
+| Other (incl. IPPU & AFOLU) | 9 | 7 | 80% | 7 | 80% | 2 | 20% | 2 | 20% | 0 | 0% |
+| Total | 5483 | 4392 | 80% | 4392 | 80% | 1092 | 20% | 1092 | 20% | 0 | 0% |
 Climate Neutrality Action Plan Guidance
 
 1
@@ -779,75 +762,80 @@ Figure: Prevalence of environmentally conscious behaviours in Budapest in 2021
 
 The transition towards climate neutrality is a complex challenge that requires the coordinated action of relevant local actors. The following table illustrates the stakeholder groups of Budapest's climate neutrality target that populate the urban systems described in the previous section. These are the local actors that have a considerable influence on and interest in the city's climate-neutrality ambition and hence, should be an integral part of the mission process.
 
-|  List of stakeholders in Budapest's climate neutrality ambition  |   |   |   |   |
+| List of stakeholders in Budapest's climate neutrality ambition |  |  |  |  |
 | --- | --- | --- | --- | --- |
-|  Emission domains | Stakeholders | Systems | Influence on the city's climate neutrality ambition | Interest in the city's climate neutrality ambition  |
-|  City-wide | The European Union | Institutional/ regulatory Political Financial | Regulatory, political, and financial influence | The reduction of GHG emissions in Europe, and the acceleration of the carbon neutral transition across member states.  |
+| Emission domains | Stakeholders | Systems | Influence on the city's climate neutrality ambition | Interest in the city's climate neutrality ambition |
+| City-wide | The European Union | Institutional/ regulatory Political Financial | Regulatory, political, and financial influence | The reduction of GHG emissions in Europe, and the acceleration of the carbon neutral transition across member states. |
 BUDAPEST
 
 Climate Neutrality Action Plan
 
 7
 
-|   | The Government of Hungary | Institutional/ regulatory
+The Government of Hungary | Institutional/ regulatory
 Technological/ infrastructural
 Political
 Financial | Regulatory, infrastructural, political, and financial influence on a national level | Transitioning towards a low carbon economy, and reducing GHG emissions  |
 | --- | --- | --- | --- | --- |
-|   |  The Municipality of Budapest | Institutional/ regulatory
+| --- | --- | --- |
+|  | The Municipality of Budapest | Institutional/ regulatory |
 Organizational
 Political
 Financial | Regulatory, organizational, political, and financial influence on a city level | Making Budapest a greener, more liveable place for everyone.  |
-|   |  District local governments | Institutional/ regulatory
+District local governments | Institutional/ regulatory
 Political
 Financial | Regulatory, political, and financial influence on a district level | Making districts greener and more liveable for residents.  |
-|   |  Financial institutions and commercial banks | Financial | Influence on the funding of projects and the loans issued for climate-protection measures. | Investing in technologies and projects that will be an integral part of the future.  |
-|   |  Local private companies and chambers of commerce | Behavioural/ social
+|  | Financial institutions and commercial banks | Financial | Influence on the funding of projects and the loans issued for climate-protection measures. | Investing in technologies and projects that will be an integral part of the future. |
+| --- | --- | --- | --- | --- |
+|  | Local private companies and chambers of commerce | Behavioural/ social |  |  |
 Technological/ infrastructural
 Financial | Influence on consumer behaviour, employees, innovation and investments | Mitigating climate change-related risks, lowering long-term costs and maintaining a positive public perception  |
-|   |  Higher education institutions | Technological/ infrastructural | Research on urban problems and challenges, developing innovative solutions, partnering in international tenders. | Accumulation and transfer of knowledge  |
-|   |  Residents and civil society | Behavioural/ social | Individual actions, influence on public discourse | Living in a greener, more liveable city  |
-|   |  BKK Centre for Budapest Transport (the city's transport management authority) | Technological/ infrastructural
+|  | Higher education institutions | Technological/ infrastructural | Research on urban problems and challenges, developing innovative solutions, partnering in international tenders. | Accumulation and transfer of knowledge |
+| --- | --- | --- | --- | --- |
+|  | Residents and civil society | Behavioural/ social | Individual actions, influence on public discourse | Living in a greener, more liveable city |
+|  | BKK Centre for Budapest Transport (the city's transport management authority) | Technological/ infrastructural |  |  |
 Organizational | Responsibility for the operation and development of public transport in Budapest. | The spread of active mobility, modal shift, and the decarbonisation of public transport  |
-|   |  Budapest Public Roads Ltd. (public road maintenance company) | Technological/ infrastructural | Maintenance and development of public road infrastructure | Adapting to changing needs and conditions.  |
+Budapest Public Roads Ltd. (public road maintenance company) | Technological/ infrastructural | Maintenance and development of public road infrastructure | Adapting to changing needs and conditions.
 BUDAPEST
 
 Climate Neutrality Action Plan
 
 8
 
-|  | MÁV-VOLÁN
+MÁV-VOLÁN
 (national transport company) | Technological/
 infrastructural
 Organizational | Infrastructural and organizational influence on regional and suburban transport | Making mobility in Budapest and the agglomeration more efficient and convenient |
 | --- | --- | --- | --- | --- |
-| Sharing economy actors | Technological/
+| --- | --- |
+| Sharing economy actors | Technological/ |
 infrastructural | Technological, and infrastructural influence on the sharing economy | The spread and development of sharing services |
-| Logistics companies | Technological/
+Logistics companies | Technological/
 infrastructural | Technological, and infrastructural influence on city logistics | The optimization of their own operations and city logistics |
-| Buildings, heating and electricity | Budapest Public Utilities Ltd. - FÖTÁV (district heating division) | Technological/
+Buildings, heating and electricity | Budapest Public Utilities Ltd. - FÖTÁV (district heating division) | Technological/
 infrastructural | Infrastructural influence on district heating | Construction of inner-city district heating pipelines, connection of island district heating systems, geothermal projects, energy upgrading of sites. |
-| Hungarian Energy and Public Utility Regulatory Authority | Institutional/
+Hungarian Energy and Public Utility Regulatory Authority | Institutional/
 regulatory | Regulatory influence on energy and public utilities | The development of the energy market and utilities and the spread of environmentally friendly technologies |
-| Energy providers (e.g. DSO) | Technological/
+Energy providers (e.g. DSO) | Technological/
 infrastructural
 Financial | Investing in energy related and energy efficiency projects. | Complying with the Energy Efficiency Obligation Scheme. |
-| Budapest Climate Agency | Technological/
+Budapest Climate Agency | Technological/
 infrastructural
 Financial | Providing back office support for energy efficiency renovations. | Buildings in the city becoming more energy efficient |
-| Hungarian Energy Efficiency Institute | Political
+Hungarian Energy Efficiency Institute | Political
 Behavioural/
 social | Research on energy efficiency used for awareness-raising, education, policy proposals and to introduce issues into the public debate | The reduction of energy use in buildings. |
 | Representatives of condominiums | Organizational | Education and consensus building among residents | Making condominiums more energy-efficient and comfortable for residents |
-| Energy Club (an NGO) | Political
+| --- | --- | --- | --- |
+| Energy Club (an NGO) | Political |  |  |
 Behavioural/
 social | Education and knowledge transfer on energy efficiency, renewables and climate protection | The rational use of resources, and an economy standing on diverse, local resources |
-| Waste | Budapest Public Utilities Ltd. - FKF (waste management division) | Technological/
+Waste | Budapest Public Utilities Ltd. - FKF (waste management division) | Technological/
 infrastructural
 Organizational
 Behavioural/
 social | Infrastructural, organizational, and educational influence on waste management | The spread of circular economy and making Budapest a cleaner city |
-| MOHU (waste management company) | Technological/
+MOHU (waste management company) | Technological/
 infrastructural
 Organizational | Infrastructural, organizational, financial and educational | Establishing HUHA2 (the second waste recovery plant in Budapest) as well as |
 BUDAPEST
@@ -856,13 +844,14 @@ Climate Neutrality Action Plan
 
 9
 
-|   |  | Financial
+Financial
 Behavioural/
 social | influence on waste
 management | further developing and
 spreading recycling.  |
 | --- | --- | --- | --- | --- |
-|   |  Reuse schemes
+| --- | --- |
+|  | Reuse schemes |
 (e.g. Cseriti,
 Rakun) | Behavioural/
 social | Promoting the
@@ -871,7 +860,7 @@ products instead of
 producing more and
 more waste | The spread of circular
 economy  |
-|  Green
+Green
 infrastructure
 & nature-
 based
@@ -883,7 +872,7 @@ Organizational | Green space
 maintenance and
 development work | Making Budapest a greener,
 more liveable place  |
-|   |  Community
+Community
 gardens | Behavioural/
 social | Individual actions,
 advocacy for a circular
@@ -944,83 +933,81 @@ Figure: Indicator set of the Degrowth Donut of Budapest
 
 # 3-1. Table: Impact Pathways
 
-|  B-1.1: Impact Pathways  |   |   |   |   |   |   |
+| B-1.1: Impact Pathways |  |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- |
-|  Fields of action | Actions | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Year 2030 Emission Reductions - kt CO2e) | Indirect impacts (co-benefits)  |
-|  Transport | Reduced motorized passenger transportation need | Technological/ infrastructural | Creation of multifunctional neighbourhoods | Reduced travelling times due to short distances | 171 | Less congestion, air and noise pollution  |
-BUDAPEST
-
-Climate Neutrality Action Plan
-
-3
-
-|   |  | Organizational /financial | Projects aimed at creating affordable housing | Less people moving to the agglomeration and commuting daily |  | Health benefits
-Function change of freed up parking and road spaces  |
+| Fields of action | Actions | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Year 2030 Emission Reductions - kt CO2e) | Indirect impacts (co-benefits) |
+| Transport | Reduced motorized passenger transportation need | Technological/ infrastructural | Creation of multifunctional neighbourhoods | Reduced travelling times due to short distances | 171 | Less congestion, air and noise pollution |
+| Organizational /financial | Projects aimed at creating affordable housing | Less people moving to the agglomeration and commuting daily | Health benefits |
+| Function change of freed up parking and road spaces  |
 | --- | --- | --- | --- | --- | --- | --- |
-|   |   |  Behavioural/ social | Promotion of flexible working hours and home office | Home office becoming the norm for most companies  |   |   |
-|   |   |  Institutional/ regulatory | Regulations aimed at restricting motorized transport | Reduced motorized transportation  |   |   |
-|   |  Shift to public & non-motorized transport | Technological/ infrastructural | Developing public transport and active mobility infrastructure and services | More people opting for non-motorized and public transport | 188 | Less congestion, air and noise pollution
+| --- | --- | --- | --- | --- | --- | --- |
+|  |  | Behavioural/ social | Promotion of flexible working hours and home office | Home office becoming the norm for most companies |  |  |
+|  |  | Institutional/ regulatory | Regulations aimed at restricting motorized transport | Reduced motorized transportation |  |  |
+|  | Shift to public & non-motorized transport | Technological/ infrastructural | Developing public transport and active mobility infrastructure and services | More people opting for non-motorized and public transport | 188 | Less congestion, air and noise pollution |
 Health benefits
 Function change of freed up parking and road spaces  |
-|   |   |  Institutional/ regulatory | Regulations aimed at making non-motorized and public transportation more convenient options  |   |   |   |
-|   |   |  Behavioural/ social | Awareness raising to promote alternative transport modes | The spread of alternative transport modes  |   |   |
-|   |  Increased carpooling | Institutional/ regulatory | Conversations with the Government about the review of the regulatory environment | Favourable changes in the regulatory environment that support the spread of car-pooling | 84 | Less congestion, air and noise pollution
-Function change of freed up parking and road spaces  |
-|   |   |  Organizational | Bigger companies introducing car-pooling schemes | People being more familiar with the concept of car-pooling  |   |   |
-|   |  Electrification of cars + motorcycles | Technological/ infrastructural | Development of charging infrastructure and user experience | Increased rate of electric vehicles due to more favourable conditions | 115 | Less air and noise pollution
-Health benefits  |
-|   |   |  Institutional/ regulatory | Regulations favouring electric vehicles  |   |   |   |
-|   |  Electrification of buses | Technological/ infrastructural | Change of buses with combustion engines to electric ones and | Increased rate of electric buses | 31 | Less air and noise pollution
-Health benefits  |
-BUDAPEST
-
-Climate Neutrality Action Plan
-
-4
-
-|   |  |  | increasing the trolley fleet |  |  |   |
+|  |  | Institutional/ regulatory | Regulations aimed at making non-motorized and public transportation more convenient options |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- |
-|   |  Optimized logistics | Technological/ infrastructural | Development of an integrated urban loading area network | An integrated and more efficient city logistics loading system | 257 | Less congestion, air and noise pollution
-Health benefits  |
-|   |   |  Institutional/ regulatory | Introduction of policy proposals based on data analysis | A more predictable city logistics policy framework  |   |   |
-|   |  Electrification of trucks | Organizational | Transfer to electric vehicles through minihubs | Increased rate of electric trucks | 41 | Less air and noise pollution
-Health benefits  |
-|   |   |  Institutional/ regulatory | Introducing gradual restrictions regarding the entry of non-electric trucks into the city  |   |   |   |
-|   |   |  Organizational | Conversation with freight transport companies | Better understanding of private sector needs  |   |   |
-|  Buildings & heating | Building renovations (envelope) | Organizational /financial | Provision of technical, managerial and financial support to residents to carry out renovations | Increased rate of residential building renovations | 431 | Cost savings
+|  |  | Behavioural/ social | Awareness raising to promote alternative transport modes | The spread of alternative transport modes |  |  |
+|  | Increased carpooling | Institutional/ regulatory | Conversations with the Government about the review of the regulatory environment | Favourable changes in the regulatory environment that support the spread of car-pooling | 84 | Less congestion, air and noise pollution |
+| Function change of freed up parking and road spaces  |
+|  |  | Organizational | Bigger companies introducing car-pooling schemes | People being more familiar with the concept of car-pooling |  |  |
+| --- | --- | --- | --- | --- | --- | --- |
+|  | Electrification of cars + motorcycles | Technological/ infrastructural | Development of charging infrastructure and user experience | Increased rate of electric vehicles due to more favourable conditions | 115 | Less air and noise pollution |
+| Health benefits  |
+|  |  | Institutional/ regulatory | Regulations favouring electric vehicles |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- |
+|  | Electrification of buses | Technological/ infrastructural | Change of buses with combustion engines to electric ones and | Increased rate of electric buses | 31 | Less air and noise pollution |
+| Health benefits  |
+|  |  |  | increasing the trolley fleet |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- |
+|  | Optimized logistics | Technological/ infrastructural | Development of an integrated urban loading area network | An integrated and more efficient city logistics loading system | 257 | Less congestion, air and noise pollution |
+| Health benefits  |
+|  |  | Institutional/ regulatory | Introduction of policy proposals based on data analysis | A more predictable city logistics policy framework |  |  |
+| --- | --- | --- | --- | --- | --- | --- |
+|  | Electrification of trucks | Organizational | Transfer to electric vehicles through minihubs | Increased rate of electric trucks | 41 | Less air and noise pollution |
+| Health benefits  |
+|  |  | Institutional/ regulatory | Introducing gradual restrictions regarding the entry of non-electric trucks into the city |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- |
+|  |  | Organizational | Conversation with freight transport companies | Better understanding of private sector needs |  |  |
+| Buildings & heating | Building renovations (envelope) | Organizational /financial | Provision of technical, managerial and financial support to residents to carry out renovations | Increased rate of residential building renovations | 431 | Cost savings |
 Health benefits
 Increased property value
 Job creation  |
-|   |   |  Behavioural/ social | Awareness raising about the importance of energy upgrading homes  |   |   |   |
-|   |   |  Technological/ infrastructural | Public building renovations | Increased energy efficiency of public buildings  |   |   |
-|   |  New energy-efficient buildings | Organizational | Conversation and cooperation with the private sector to facilitate knowledge sharing | Know-how and technology regarding smart technologies are shared among local actors | 12 | Increased cooperation
+|  |  | Behavioural/ social | Awareness raising about the importance of energy upgrading homes |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- |
+|  |  | Technological/ infrastructural | Public building renovations | Increased energy efficiency of public buildings |  |  |
+|  | New energy-efficient buildings | Organizational | Conversation and cooperation with the private sector to facilitate knowledge sharing | Know-how and technology regarding smart technologies are shared among local actors | 12 | Increased cooperation |
 Cost savings
 Health benefits  |
-|   |   |  Technological/ infrastructural | Pilot projects testing Positive | The spread of PEDs  |   |   |
+Technological/ infrastructural | Pilot projects testing Positive | The spread of PEDs
 BUDAPEST
 
 Climate Neutrality Action Plan
 
 5
 
-|   |  |  | Energy Districts (PED) |  |  |   |
+|  |  |  | Energy Districts (PED) |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- |
-|   |  Efficient lighting & appliances | Technological/ infrastructural | Reconstruction and energy upgrading of the public lighting system | Increased efficiency of public lighting and appliances | 221 | Increased cooperation
-Cost savings  |
-|   |   |   |  Lighting upgrade of the buildings and facilities of the Municipality  |   |   |   |
-|   |  Decarbonizing heating generation | Organizational / financial | Provision of technical, managerial and financial support to residents to modernise and decarbonise their heating system | More residents switching to more energy efficient or renewable heating generation technologies | 1101 | Better air quality
+|  | Efficient lighting & appliances | Technological/ infrastructural | Reconstruction and energy upgrading of the public lighting system | Increased efficiency of public lighting and appliances | 221 | Increased cooperation |
+| Cost savings  |
+|  |  |  | Lighting upgrade of the buildings and facilities of the Municipality |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- |
+|  | Decarbonizing heating generation | Organizational / financial | Provision of technical, managerial and financial support to residents to modernise and decarbonise their heating system | More residents switching to more energy efficient or renewable heating generation technologies | 1101 | Better air quality |
 Health benefits
 Stable energy prices
 Energy independence
 Job creation  |
-|   |   |  Behavioural/ social | Awareness raising about the importance of modernising and decarbonising heating systems  |   |   |   |
-|   |   |  Technological/ infrastructural | Development and decarbonisation of the district heating system | More energy efficient and less fossil fuel-dependent district heating system  |   |   |
-|  Electricity | Decarbonizing electricity generation | Technological/ infrastructural | Exploration of opportunities to utilize renewable energy in electricity generation | Increased rate of renewables in private electricity generation | 1648 | Long-term cost savings
+|  |  | Behavioural/ social | Awareness raising about the importance of modernising and decarbonising heating systems |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- |
+|  |  | Technological/ infrastructural | Development and decarbonisation of the district heating system | More energy efficient and less fossil fuel-dependent district heating system |  |  |
+| Electricity | Decarbonizing electricity generation | Technological/ infrastructural | Exploration of opportunities to utilize renewable energy in electricity generation | Increased rate of renewables in private electricity generation | 1648 | Long-term cost savings |
 Energy independence
 Job creation  |
-|   |   |  Technological/ infrastructural | Public investment in renewable energy developments | Increased rate of renewables in municipal electricity generation  |   |   |
-|   |   |  Organizational | Conversation with the private sector about the opportunities of renewable electricity generation | Increased rate of solar energy generated on roofs and car parks owned by private companies  |   |   |
-|   |   |  Technological/ infrastructural | Exploring opportunities to facilitate the creation of energy communities and implement large- | The emergence of energy communities  |   |   |
+|  |  | Technological/ infrastructural | Public investment in renewable energy developments | Increased rate of renewables in municipal electricity generation |  |  |
+| --- | --- | --- | --- | --- | --- | --- |
+|  |  | Organizational | Conversation with the private sector about the opportunities of renewable electricity generation | Increased rate of solar energy generated on roofs and car parks owned by private companies |  |  |
+|  |  | Technological/ infrastructural | Exploring opportunities to facilitate the creation of energy communities and implement large- | The emergence of energy communities |  |  |
 BUDAPEST
 
 Climate Neutrality Action Plan
@@ -1033,127 +1020,100 @@ The table below includes the specific actions of Budapest's Climate Neutrality A
 
 # 3-2. Table: Description of action portfolios
 
-|  B-2.1: Description of action portfolios  |   |   |   |   |   |
+| B-2.1: Description of action portfolios |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- |
-|  Fields of Action | List of Actions | Description  |   |   |   |
-|  All29 | Developing a Budapest Energy Strategy | The strategy will focus on enhancing energy efficiency, switching to renewables, increasing energy independence; reducing energy costs per m² of municipal buildings, as well as identifying and optimizing municipal-owned networks of local  |   |   |   |
-|   | developing a new energy system | 29 The content of the actions overlaps with a lot of other interventions. Hence, a separate detailed action description will not be provided. |  |  |   |
-|   |   |  30 The energy needs to be delivered in a new location will be provided. |  |   |   |
-|  Plan | Developing a new energy system | 31 The energy needs to be delivered in a new location will be provided. |  |  |   |
-|   |  Developing a new energy system | 32 The energy needs to be delivered in a new location will be provided. |  |  |   |
-BUDAPEST
-Climate Neutrality Action Plan
-7
-
-|   |  | interest and other synergies; so as to ensure the steady growth of renewable electricity generation, and the increase of current storage capacities. This will be preceded by basic surveys and research on the subject of the feasibility and application of sustainable energy management.  |
+| Fields of Action | List of Actions | Description |  |  |  |
+| All29 | Developing a Budapest Energy Strategy | The strategy will focus on enhancing energy efficiency, switching to renewables, increasing energy independence; reducing energy costs per m² of municipal buildings, as well as identifying and optimizing municipal-owned networks of local |  |  |  |
+|  | developing a new energy system | 29 The content of the actions overlaps with a lot of other interventions. Hence, a separate detailed action description will not be provided. |  |  |  |
+|  |  | 30 The energy needs to be delivered in a new location will be provided. |  |  |  |
+| Plan | Developing a new energy system | 31 The energy needs to be delivered in a new location will be provided. |  |  |  |
+|  | Developing a new energy system | 32 The energy needs to be delivered in a new location will be provided. |  |  |  |
+|  |  | interest and other synergies; so as to ensure the steady growth of renewable electricity generation, and the increase of current storage capacities. This will be preceded by basic surveys and research on the subject of the feasibility and application of sustainable energy management. |
 | --- | --- | --- |
-|   |  Raising knowledge and awareness | Collaborating with businesses and districts to mobilize public activity in climate actions  |
-|   |  Building government relations, raising funds and policy making | Working together with the Government of Hungary to develop and implement urban regulations and mitigation proposals, and support climate-conscious policy-making by sharing information, experience and knowledge on the urban aspects of climate change.  |
-|  Transport | Reduced motorized passenger transportation need  |   |
-|   |  Developing compact neighbourhoods | Creating mixed-function neighbourhoods by strengthening existing and potential centres in the city, and developing a network of sub-centres, which also operate as easily accessible transport nodes.  |
-|   |  Providing affordable housing to stop suburbanization | Currently, Budapest has the highest rents relative to wages of any capital city in the European Union. The aim of the action is to tackle this issue and provide secure, affordable housing to those in need in Budapest, thereby also stopping the increasing outflow of people from the city to the suburbs.  |
-|   |  Supporting flexible working hours and home office | To respond to the growing demand for flexible working arrangements, the Municipality offers its employees the option to work from home and actively encourages this initiative across its companies and institutions. This aligns with broader efforts to reduce urban congestion, lower carbon emissions, and improve overall quality of life by decreasing the need for daily commuting.  |
-|   |  Introducing stricter rules regarding the movement and parking of tourist coaches | Considerable reduction in motorized transport needs requires to some extent restrictive measures such as introducing stricter rules regarding the movement and parking of tourist coaches.  |
-|   |  Shift to public & non-motorized transport  |   |
-|   |  Public transport network developments | The action involves improving modal split by reducing walking distances and transfers, improving inter-regional connections, and integrating new and underserved areas into the public transport system.  |
-|   |  New vehicles | The action involves the continuous renewal of the suburban train, tram, and metro fleet.  |
-|   |  Prioritizing public transport vehicles with traffic management solutions | The measure mainly involves the designation of bus lanes on busy urban road sections where regular congestion hinders the movement of buses.  |
-|   |  Bicycle infrastructure and bike sharing developments | The action focuses on creating a coherent network of new pedestrian and cycle-friendly public spaces in Budapest and the improvement of the city's bike-sharing system, MOL Bubi.  |
-|   |  Prioritizing active and micro-mobility in road and public space developments | The action includes the introduction of LEZ, ULEZ, traffic calming initiatives, reallocating public spaces, improving walking comfort and safety, applying the Healthy Street approach, and developing modal shift options.  |
-|   |  Parking regulation, P+R tariff integration with public transport | The action involves changes in parking and P+R regulations to encourage a shift from passenger cars to public transport and active or micromobility.  |
-BUDAPEST
-
-Climate Neutrality Action Plan
-
-8
-
-|   | BudapestGO app further developments | With the further development of the BudapestGO app, additional features will be added, mainly customer and user experience improvement and MaaS initiatives. These developments will stabilise the current user base, while the inclusion of new transport tools and services (e.g. shared mobility) will broaden the target group of the app.  |
+|  | Raising knowledge and awareness | Collaborating with businesses and districts to mobilize public activity in climate actions |
+|  | Building government relations, raising funds and policy making | Working together with the Government of Hungary to develop and implement urban regulations and mitigation proposals, and support climate-conscious policy-making by sharing information, experience and knowledge on the urban aspects of climate change. |
+| Transport | Reduced motorized passenger transportation need |  |
+|  | Developing compact neighbourhoods | Creating mixed-function neighbourhoods by strengthening existing and potential centres in the city, and developing a network of sub-centres, which also operate as easily accessible transport nodes. |
+|  | Providing affordable housing to stop suburbanization | Currently, Budapest has the highest rents relative to wages of any capital city in the European Union. The aim of the action is to tackle this issue and provide secure, affordable housing to those in need in Budapest, thereby also stopping the increasing outflow of people from the city to the suburbs. |
+|  | Supporting flexible working hours and home office | To respond to the growing demand for flexible working arrangements, the Municipality offers its employees the option to work from home and actively encourages this initiative across its companies and institutions. This aligns with broader efforts to reduce urban congestion, lower carbon emissions, and improve overall quality of life by decreasing the need for daily commuting. |
+|  | Introducing stricter rules regarding the movement and parking of tourist coaches | Considerable reduction in motorized transport needs requires to some extent restrictive measures such as introducing stricter rules regarding the movement and parking of tourist coaches. |
+|  | Shift to public & non-motorized transport |  |
+|  | Public transport network developments | The action involves improving modal split by reducing walking distances and transfers, improving inter-regional connections, and integrating new and underserved areas into the public transport system. |
+|  | New vehicles | The action involves the continuous renewal of the suburban train, tram, and metro fleet. |
+|  | Prioritizing public transport vehicles with traffic management solutions | The measure mainly involves the designation of bus lanes on busy urban road sections where regular congestion hinders the movement of buses. |
+|  | Bicycle infrastructure and bike sharing developments | The action focuses on creating a coherent network of new pedestrian and cycle-friendly public spaces in Budapest and the improvement of the city's bike-sharing system, MOL Bubi. |
+|  | Prioritizing active and micro-mobility in road and public space developments | The action includes the introduction of LEZ, ULEZ, traffic calming initiatives, reallocating public spaces, improving walking comfort and safety, applying the Healthy Street approach, and developing modal shift options. |
+|  | Parking regulation, P+R tariff integration with public transport | The action involves changes in parking and P+R regulations to encourage a shift from passenger cars to public transport and active or micromobility. |
+|  | BudapestGO app further developments | With the further development of the BudapestGO app, additional features will be added, mainly customer and user experience improvement and MaaS initiatives. These developments will stabilise the current user base, while the inclusion of new transport tools and services (e.g. shared mobility) will broaden the target group of the app. |
 | --- | --- | --- |
-|   | Raising awareness to promote sustainable transport | The action includes organising awareness-raising and educational campaigns, events, and workshops.  |
-|   | Workplace Mobility Plan | The Municipality has developed a Workplace Mobility Plan that can be adopted by other companies to their employees' transportation habits and needs and to develop an action plan to encourage more sustainable modes of transport.  |
-|  Increased car-pooling  |   |   |
-|   | Creating a favourable environment for car-pooling | For car-pooling to spread, it's essential to create a supportive environment, for example, by revising liability rules in the event of an accident and allowing for charging mechanisms to incentivize participation.  |
-|   | Conversation with companies about introducing car-pooling at the workplace. | Bigger companies can lead the way in promoting car-pooling by introducing car-pooling schemes for their employees.  |
-|  Electrification of cars + motorcycles  |   |   |
-|   | Creating new mobility stations | The Municipality has created a mobility point concept, which defines three types of service levels. The highest service level, mobility station includes the installation of charging stations at high-frequented public places.  |
-|   | Introducing smart charging tools to facilitate electrification | The action involves creating smart charging tools (e.g. web application) that provide smart grid integration (e.g. with solar panels) and demand management.  |
-|   | Free parking for residents with green license plates | The action promotes the electrification of the residential, and car-sharing fleet by offering free parking for EVs with green license plates.  |
-|   | Creating an e-mobility strategy for Budapest | The strategy will comprehensively cover the promotion of electric vehicles for different purposes and uses, the transport and energy infrastructure associated with their use, and relevant regulations, increasing the understanding of the state of electromobility in the city and exploring new areas of intervention.  |
-|  Electrification of buses  |   |   |
-|   | Procurement of trolleys and electric buses | The action includes the procurement of electric buses and trolleys and the development of related charging infrastructure.  |
-|  Optimized logistics  |   |   |
-|   | Developing a city logistics loading area network | The action focuses on developing a network of designated loading areas and introducing a loading area booking system.  |
-|   | Developing a sustainable city logistics policy framework | The introduction of a predictable policy framework could provide the basis for additional measures in the field of urban freight transport that could reduce congestion, unwanted land use, pollution and noise emissions resulting from the current unpredictability and disorder.  |
-|  Electrification of trucks  |   |   |
-|   | Transfer to electric vehicles through mini hubs | The aim of the action is to decrease the use of heavy and light-duty trucks with combustion engines in the city and replace them with smaller, electric or active mobility vehicles through micro-consolidation centres.  |
-BUDAPEST
-
-Climate Neutrality Action Plan
-
-9
-
-|   | Exploring policy interventions | Through the review of the Freight Transport Access Regulation, the Municipality will introduce new policies on protected and restricted zones.  |
+|  | Raising awareness to promote sustainable transport | The action includes organising awareness-raising and educational campaigns, events, and workshops. |
+|  | Workplace Mobility Plan | The Municipality has developed a Workplace Mobility Plan that can be adopted by other companies to their employees' transportation habits and needs and to develop an action plan to encourage more sustainable modes of transport. |
+| Increased car-pooling |  |  |
+|  | Creating a favourable environment for car-pooling | For car-pooling to spread, it's essential to create a supportive environment, for example, by revising liability rules in the event of an accident and allowing for charging mechanisms to incentivize participation. |
+|  | Conversation with companies about introducing car-pooling at the workplace. | Bigger companies can lead the way in promoting car-pooling by introducing car-pooling schemes for their employees. |
+| Electrification of cars + motorcycles |  |  |
+|  | Creating new mobility stations | The Municipality has created a mobility point concept, which defines three types of service levels. The highest service level, mobility station includes the installation of charging stations at high-frequented public places. |
+|  | Introducing smart charging tools to facilitate electrification | The action involves creating smart charging tools (e.g. web application) that provide smart grid integration (e.g. with solar panels) and demand management. |
+|  | Free parking for residents with green license plates | The action promotes the electrification of the residential, and car-sharing fleet by offering free parking for EVs with green license plates. |
+|  | Creating an e-mobility strategy for Budapest | The strategy will comprehensively cover the promotion of electric vehicles for different purposes and uses, the transport and energy infrastructure associated with their use, and relevant regulations, increasing the understanding of the state of electromobility in the city and exploring new areas of intervention. |
+| Electrification of buses |  |  |
+|  | Procurement of trolleys and electric buses | The action includes the procurement of electric buses and trolleys and the development of related charging infrastructure. |
+| Optimized logistics |  |  |
+|  | Developing a city logistics loading area network | The action focuses on developing a network of designated loading areas and introducing a loading area booking system. |
+|  | Developing a sustainable city logistics policy framework | The introduction of a predictable policy framework could provide the basis for additional measures in the field of urban freight transport that could reduce congestion, unwanted land use, pollution and noise emissions resulting from the current unpredictability and disorder. |
+| Electrification of trucks |  |  |
+|  | Transfer to electric vehicles through mini hubs | The aim of the action is to decrease the use of heavy and light-duty trucks with combustion engines in the city and replace them with smaller, electric or active mobility vehicles through micro-consolidation centres. |
+|  | Exploring policy interventions | Through the review of the Freight Transport Access Regulation, the Municipality will introduce new policies on protected and restricted zones. |
 | --- | --- | --- |
-|   |  Conversation with freight transport companies | The action aims to encourage electrification by engaging in active conversation with private actors to explore their needs, barriers and potential collaboration opportunities.  |
-|  Buildings & Heating | **Building renovations (envelope)**  |   |
-|   |  Providing support for residential energy retrofits by developing tailored funding schemes and with technical expertise | The Budapest Climate Agency plays a significant role in achieving the capital's 2030 decarbonisation targets in the field of building energy. The Agency will manage the development of funding schemes, organise actors in the sector, develop and implement large-scale projects, as well as provide a one-stop-shop service covering the whole process of residential renovation through a customer service network.  |
-|   |  Awareness-raising activities about energy efficiency | The action includes thematic awareness-raising campaigns and informational activities coordinated by the Municipality with special regard to reducing the volume of household energy consumption.  |
-|   |  Refurbishment and energy conscious operation of the buildings and facilities of the Municipality and of its companies | The Municipality of Budapest maintains numerous institutions and companies, thus operating a large number of buildings and facilities and may directly influence their energy consumption and energy-efficient renovation and operation. Provisions have been made for the refurbishment of several buildings maintained by the Municipality and its companies.  |
-|   |  **New energy-efficient buildings**  |   |
-|   |  Creating Positive (and Clean) Energy Districts (PCEDs) | The new zoning and planning policy papers will designate development (action) areas for PCEDs.
-The action is aimed at gathering energy data (demand, potential, grid capacity, etc.) and developing positive energy districts in mixed (new and existing) built areas. The action also overlaps with Shift to public & non-motorized transport, Decarbonizing heating generation and Decarbonizing electricity generation.  |
-|   |  Breaking silos to enable knowledge-sharing in both the private and the public sector | Facilitating the conversation and knowledge transfer between different actors, paying special focus to the private sphere who developed smart energy systems.  |
-|   |  Advancing stricter energy efficiency standards in national planning and building requirements (national planning and building requirements - OTÉK, new Urban Plan) | The Municipality will strive to ensure that mandatory compliance with energy requirements (regulated by a separate decree in Hungary) is emphasised in the national urban planning and building regulations under review (Government Decree 253/1997 (XII. 20.)).  |
-|   |  **Efficient lighting & appliances**  |   |
-|   |  Reconstructing and energy upgrading the public lighting system | Out of the 183 thousand luminaires used in Budapest for public lighting, about 110 thousand are worn-out and technically outdated and of high energy consumption and operating cost and will need to be replaced in the next 5 years. The action also involves the use of smart technologies in public lighting.  |
-|   |  Lighting upgrade of the buildings and facilities of the Municipality | The action includes the lighting modernisation of the municipal building stock.  |
-BUDAPEST
-
-Climate Neutrality Action Plan
-
-0
-
-|   | Decarbonizing heating generation  |   |
+|  | Conversation with freight transport companies | The action aims to encourage electrification by engaging in active conversation with private actors to explore their needs, barriers and potential collaboration opportunities. |
+| Buildings & Heating | **Building renovations (envelope)** |  |
+|  | Providing support for residential energy retrofits by developing tailored funding schemes and with technical expertise | The Budapest Climate Agency plays a significant role in achieving the capital's 2030 decarbonisation targets in the field of building energy. The Agency will manage the development of funding schemes, organise actors in the sector, develop and implement large-scale projects, as well as provide a one-stop-shop service covering the whole process of residential renovation through a customer service network. |
+|  | Awareness-raising activities about energy efficiency | The action includes thematic awareness-raising campaigns and informational activities coordinated by the Municipality with special regard to reducing the volume of household energy consumption. |
+|  | Refurbishment and energy conscious operation of the buildings and facilities of the Municipality and of its companies | The Municipality of Budapest maintains numerous institutions and companies, thus operating a large number of buildings and facilities and may directly influence their energy consumption and energy-efficient renovation and operation. Provisions have been made for the refurbishment of several buildings maintained by the Municipality and its companies. |
+|  | **New energy-efficient buildings** |  |
+|  | Creating Positive (and Clean) Energy Districts (PCEDs) | The new zoning and planning policy papers will designate development (action) areas for PCEDs. |
+| The action is aimed at gathering energy data (demand, potential, grid capacity, etc.) and developing positive energy districts in mixed (new and existing) built areas. The action also overlaps with Shift to public & non-motorized transport, Decarbonizing heating generation and Decarbonizing electricity generation.  |
+|  | Breaking silos to enable knowledge-sharing in both the private and the public sector | Facilitating the conversation and knowledge transfer between different actors, paying special focus to the private sphere who developed smart energy systems. |
 | --- | --- | --- |
-|   |  Budapest Climate Agency: Individual retrofits to decarbonize heating of buildings | In addition to insulating buildings, the Budapest Climate Agency also facilitates heating upgrades. The Agency will offer recommendations on the most technologically and economically efficient ways to transition from gas to alternative heating solutions. Additionally, the Agency's front office service provides personalized advice on sizing, design, and installation.  |
-|   |  Awareness raising to promote connecting to sustainable heating methods and opting out of burning wood or waste for heat. | The action includes thematic awareness-raising campaigns and informational activities coordinated by the Municipality with special regard to reducing the volume of household energy consumption.  |
-|   |  District heating: installation of geothermal capacities in several district heating zones | The public utilities company is exploring the possibility of connecting geothermal heat to district heating in several district heating zones.  |
-|   |  District heating: replacing the steam turbine and reconstructing furnaces at the waste recovery plant | According to the plans, replacing the steam turbine and reconstructing the boilers at the waste recovery plant will lead to an additional 50 GWh of electricity generation.  |
-|   |  District heating: the expansion and development of the infrastructure and the energy efficiency reconstruction of the pipelines. | The action includes a number of energy efficiency and infrastructural investments that will contribute to the spread and decarbonization of district heating.  |
-|   |  Connecting new consumers to the district heating system. | Connection of new consumers to the district heating system.  |
-|  Electricity | Decarbonizing electricity generation  |   |
-|   |  Facilitating solar panel development projects on buildings owned by the municipality or its companies | According to the data available, buildings and roofs in Budapest are sufficient for the installation of solar panels with a total installed capacity of 1500 MW (1750 MWp). The Municipality of Budapest intends to promote solar panel development in both non-municipal and municipal buildings and facilities.  |
-|   |  Establishing cooperation with the corporate sector to support renewable electricity generation | The purpose of the measure is to establish cooperation between the Municipality and the private sector, encouraging companies to take part in the expansion and development of solar panel installations.  |
-|   |  Promoting the establishment of energy communities and the implementation of large-scale storage capacities | The establishment of energy communities represents a new opportunity for Budapest regarding renewable electricity generation and consumption. However, if the city wants to ensure the steady growth of renewables, the increase of current storage capacities is also necessary.  |
-|  Waste | Increased waste recycling and waste reduction  |   |
-|   |  Mandatory bottle return system | From 2024, glass, metal, and plastic bottles be returned to collection points all over Budapest.  |
-BUDAPEST
-
-Climate Neutrality Action Plan
-
-1
-
-|   | Separate waste collection in well-frequented public spaces | The action involves modernising waste yards, increasing the range of waste types they can accept, and thereby increasing the share of waste collected separately.  |
+|  | Advancing stricter energy efficiency standards in national planning and building requirements (national planning and building requirements - OTÉK, new Urban Plan) | The Municipality will strive to ensure that mandatory compliance with energy requirements (regulated by a separate decree in Hungary) is emphasised in the national urban planning and building regulations under review (Government Decree 253/1997 (XII. 20.)). |
+|  | **Efficient lighting & appliances** |  |
+|  | Reconstructing and energy upgrading the public lighting system | Out of the 183 thousand luminaires used in Budapest for public lighting, about 110 thousand are worn-out and technically outdated and of high energy consumption and operating cost and will need to be replaced in the next 5 years. The action also involves the use of smart technologies in public lighting. |
+|  | Lighting upgrade of the buildings and facilities of the Municipality | The action includes the lighting modernisation of the municipal building stock. |
+|  | Decarbonizing heating generation |  |
 | --- | --- | --- |
-|   |  Biowaste treatment | The action aims to increase the amount of biowaste treated by introducing a household bio waste collection system.  |
-|   |  Awareness raising to promote composting and recycling | The Municipality is creating a network of community compost stations and organising various awareness-raising activities.  |
-|   |  Creating a city-wide network of reuse centres and schemes | The action involves developing existing Awareness-raising and Reuse Centres and creating a city-wide network of communal repair shops and reuse schemes such as Cseriti, Rakun, and Munch in collaboration with civil organizations and private companies.  |
-|   |  Reducing food waste | The action involves creating an Integrated City Food Strategy, which envisions providing residents with access to healthy and affordable food that benefits both people and the planet by fostering sustainable food chains, thereby contributing to decarbonization efforts.  |
-|  Other | Decarbonizing IPPU and AFOLU  |   |
-|   |  Enhancing mitigation and decarbonisation activities of industrial production and facilities of the tertiary sector | The municipality helps businesses by providing information on state-of-the-art technologies and assisting them in finding optimal sources for financing.  |
+|  | Budapest Climate Agency: Individual retrofits to decarbonize heating of buildings | In addition to insulating buildings, the Budapest Climate Agency also facilitates heating upgrades. The Agency will offer recommendations on the most technologically and economically efficient ways to transition from gas to alternative heating solutions. Additionally, the Agency's front office service provides personalized advice on sizing, design, and installation. |
+|  | Awareness raising to promote connecting to sustainable heating methods and opting out of burning wood or waste for heat. | The action includes thematic awareness-raising campaigns and informational activities coordinated by the Municipality with special regard to reducing the volume of household energy consumption. |
+|  | District heating: installation of geothermal capacities in several district heating zones | The public utilities company is exploring the possibility of connecting geothermal heat to district heating in several district heating zones. |
+|  | District heating: replacing the steam turbine and reconstructing furnaces at the waste recovery plant | According to the plans, replacing the steam turbine and reconstructing the boilers at the waste recovery plant will lead to an additional 50 GWh of electricity generation. |
+|  | District heating: the expansion and development of the infrastructure and the energy efficiency reconstruction of the pipelines. | The action includes a number of energy efficiency and infrastructural investments that will contribute to the spread and decarbonization of district heating. |
+|  | Connecting new consumers to the district heating system. | Connection of new consumers to the district heating system. |
+| Electricity | Decarbonizing electricity generation |  |
+|  | Facilitating solar panel development projects on buildings owned by the municipality or its companies | According to the data available, buildings and roofs in Budapest are sufficient for the installation of solar panels with a total installed capacity of 1500 MW (1750 MWp). The Municipality of Budapest intends to promote solar panel development in both non-municipal and municipal buildings and facilities. |
+|  | Establishing cooperation with the corporate sector to support renewable electricity generation | The purpose of the measure is to establish cooperation between the Municipality and the private sector, encouraging companies to take part in the expansion and development of solar panel installations. |
+|  | Promoting the establishment of energy communities and the implementation of large-scale storage capacities | The establishment of energy communities represents a new opportunity for Budapest regarding renewable electricity generation and consumption. However, if the city wants to ensure the steady growth of renewables, the increase of current storage capacities is also necessary. |
+| Waste | Increased waste recycling and waste reduction |  |
+|  | Mandatory bottle return system | From 2024, glass, metal, and plastic bottles be returned to collection points all over Budapest. |
+|  | Separate waste collection in well-frequented public spaces | The action involves modernising waste yards, increasing the range of waste types they can accept, and thereby increasing the share of waste collected separately. |
+| --- | --- | --- |
+|  | Biowaste treatment | The action aims to increase the amount of biowaste treated by introducing a household bio waste collection system. |
+|  | Awareness raising to promote composting and recycling | The Municipality is creating a network of community compost stations and organising various awareness-raising activities. |
+|  | Creating a city-wide network of reuse centres and schemes | The action involves developing existing Awareness-raising and Reuse Centres and creating a city-wide network of communal repair shops and reuse schemes such as Cseriti, Rakun, and Munch in collaboration with civil organizations and private companies. |
+|  | Reducing food waste | The action involves creating an Integrated City Food Strategy, which envisions providing residents with access to healthy and affordable food that benefits both people and the planet by fostering sustainable food chains, thereby contributing to decarbonization efforts. |
+| Other | Decarbonizing IPPU and AFOLU |  |
+|  | Enhancing mitigation and decarbonisation activities of industrial production and facilities of the tertiary sector | The municipality helps businesses by providing information on state-of-the-art technologies and assisting them in finding optimal sources for financing. |
 
 # 3-3. Table: Individual action outlines
 
-|  B-2.2: Individual action outlines (Fill out one sheet per intervention/project)  |   |   |
+| B-2.2: Individual action outlines (Fill out one sheet per intervention/project) |  |  |
 | --- | --- | --- |
-|  Action outline | Action name | Reduced motorized passenger transportation need  |
-|   |  Action type | Physical/ spatial interventions Social participation and awareness campaigns Business models Regulatory interventions  |
-|   |  Action description | The city is planning to implement various measures to reduce traffic demand, with the most prominent and important being the creation of compact urban neighbourhoods to eventually materialize a 15-minute city vision. In 2021, a study was commissioned by the Municipality to assess and evaluate the compactness of Budapest and explore actions to achieve the "compact city" objective. This study includes a list of 13 tools and interventions, including the development of Budapest's valuable brownfield sites. The city currently has nearly 8,000 hectares with significant development potential, of which nearly 3,500 hectares can be used for residential development under the capital's urban development plan.  |
+| Action outline | Action name | Reduced motorized passenger transportation need |
+|  | Action type | Physical/ spatial interventions Social participation and awareness campaigns Business models Regulatory interventions |
+|  | Action description | The city is planning to implement various measures to reduce traffic demand, with the most prominent and important being the creation of compact urban neighbourhoods to eventually materialize a 15-minute city vision. In 2021, a study was commissioned by the Municipality to assess and evaluate the compactness of Budapest and explore actions to achieve the "compact city" objective. This study includes a list of 13 tools and interventions, including the development of Budapest's valuable brownfield sites. The city currently has nearly 8,000 hectares with significant development potential, of which nearly 3,500 hectares can be used for residential development under the capital's urban development plan. |
 BUDAPEST
 Climate Neutrality Action Plan
 2
 
-|   |  | Other interventions to make the city more compact include launching a digital twin pilot project, organizing awareness-raising programmes and designing and managing so-called thematic streets. Thematic street initiatives are designed to enhance streets where local businesses operate by making them more attractive, expanding their range of functions through events, and ensuring coordinated operation with residential areas. There is also growing emphasis on the support for the use of empty shops on the district level. Such initiatives have so far included a website (kiberelem.hu) that aims to make vacant commercial premises known and attractive to those who want to start a new business or want to place their business on the map of Budapest. A long-term goal of the initiative is the realization of sustainable real estate management, which allows for the utilization of hard-to-use, empty municipal and private properties. The platform also features an interactive map where residents can suggest desired businesses or services for their neighbourhoods.
+Other interventions to make the city more compact include launching a digital twin pilot project, organizing awareness-raising programmes and designing and managing so-called thematic streets. Thematic street initiatives are designed to enhance streets where local businesses operate by making them more attractive, expanding their range of functions through events, and ensuring coordinated operation with residential areas. There is also growing emphasis on the support for the use of empty shops on the district level. Such initiatives have so far included a website (kiberelem.hu) that aims to make vacant commercial premises known and attractive to those who want to start a new business or want to place their business on the map of Budapest. A long-term goal of the initiative is the realization of sustainable real estate management, which allows for the utilization of hard-to-use, empty municipal and private properties. The platform also features an interactive map where residents can suggest desired businesses or services for their neighbourhoods.
 
 As transport need is also largely driven by the ongoing suburbanization of Budapest due to its rising living costs and rents, another key intervention of reducing motorized transport is ensuring the affordability of housing. For this reason, the Budapest Housing Agency was founded, which offers to take over rental management tasks from landlords in return for lower rents for tenants. Under the umbrella of the Agency, the Municipality will also renovate its disused, non-residential buildings to create additional municipal housing and gain more control over the cost of living in the city.
 
@@ -1161,35 +1121,36 @@ To reduce motorized traffic need and respond to the growing demand for flexible 
 
 Finally, to achieve a considerable reduction in motorized transport, besides improving the walkability of the city, additional measures are needed such as introducing stricter rules regarding the movement and parking of tourist coaches.  |
 | --- | --- | --- |
-|  Reference to impact pathway | Field of action | Transport  |
-|   | Systemic lever | Technological/ infrastructural, organizational/ financial, behavioural/ social, institutional/ regulatory  |
+| --- | --- | --- |
+| Reference to impact pathway | Field of action | Transport |
+|  | Systemic lever | Technological/ infrastructural, organizational/ financial, behavioural/ social, institutional/ regulatory |
 BUDAPEST
 
 Climate Neutrality Action Plan
 
 3
 
-|   | Outcome (according to module B-1.1) | Reduced travelling times due to short distances
+Outcome (according to module B-1.1) | Reduced travelling times due to short distances
 Less people moving to the agglomeration and commuting daily
 Home office becoming the norm for most companies
 Reduced motorized transportation  |
 | --- | --- | --- |
-|  Implementation | Responsible bodies/person for implementation | Municipality of Budapest  |
-|   |  Action scale & addressed entities | City-wide  |
-|   |  Involved stakeholders | Budapest Public Roads, BKK Centre for Budapest Transport, Government of Hungary, district municipalities, Budapest Chamber of Commerce and Industry  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | Plans of compact neighbourhoods and improving housing have already been prepared and projects of smaller scales are being implemented. However, upscaling these actions requires significant government support that the city leadership is trying to achieve through negotiations and by getting the support of residents.
-
-Housing Agency: The plan is for the Budapest Housing Agency to manage 2500-9000 dwellings by 2027, contingent on financing possibilities.  |
-|  Impact & cost | Generated renewable energy (if applicable) | N/A  |
-|   |  Removed/substituted energy, volume, or fuel type | Gasoline and diesel  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 171 kt CO2e from Transport  |
-|   |  GHG emissions compensated (natural or technological sinks) | N/A  |
-|   |  Total costs and costs by CO2e unit | Upfront investment costs assumed to be near-zero, as this lever is assumed to be driven mainly by digitalisation and primarily involves behavioural change.^{30}  |
-|  **B-2.2: Individual action outlines**  |   |   |
 | --- | --- | --- |
-|  (Fill out one sheet per intervention/project)  |   |   |
-|  Action outline | Action name | Shift to public & non-motorized transport  |
-|   |  Action type | Physical/ spatial interventions
+| Implementation | Responsible bodies/person for implementation | Municipality of Budapest |
+|  | Action scale & addressed entities | City-wide |
+|  | Involved stakeholders | Budapest Public Roads, BKK Centre for Budapest Transport, Government of Hungary, district municipalities, Budapest Chamber of Commerce and Industry |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | Plans of compact neighbourhoods and improving housing have already been prepared and projects of smaller scales are being implemented. However, upscaling these actions requires significant government support that the city leadership is trying to achieve through negotiations and by getting the support of residents. |
+| Housing Agency: The plan is for the Budapest Housing Agency to manage 2500-9000 dwellings by 2027, contingent on financing possibilities.  |
+| Impact & cost | Generated renewable energy (if applicable) | N/A |
+| --- | --- | --- |
+|  | Removed/substituted energy, volume, or fuel type | Gasoline and diesel |
+|  | GHG emissions reduction estimate (total) per emission source sector | 171 kt CO2e from Transport |
+|  | GHG emissions compensated (natural or technological sinks) | N/A |
+|  | Total costs and costs by CO2e unit | Upfront investment costs assumed to be near-zero, as this lever is assumed to be driven mainly by digitalisation and primarily involves behavioural change.^{30} |
+| **B-2.2: Individual action outlines** |  |  |
+| (Fill out one sheet per intervention/project) |  |  |
+| Action outline | Action name | Shift to public & non-motorized transport |
+|  | Action type | Physical/ spatial interventions |
 Technical interventions
 Regulatory interventions
 Social participation and awareness campaigns  |
@@ -1199,21 +1160,20 @@ BUDAPEST
 Climate Neutrality Action Plan
 4
 
-|   | Action description | To facilitate the shift from motorized to public and non-motorized transport, a number of initiatives are being planned and implemented in the city. A major focus is on developing the public transport network by integrating new and underserved areas and making transfers easier and distances shorter. This includes improving transport links between the city and its surrounding areas, including rail service to the airport. In line with EU directives, future developments will also aim to reduce the environmental impact of public transport vehicles in Budapest, in particular by purchasing a new fleet of climate-neutral, state-of-the-art vehicles. The suburban public transport fleet will also be upgraded similarly, and diesel operation in Budapest's suburban rail transport will be phased out. It is also important that public transport is given priority, which involves the designation of bus lanes on busy urban road sections where regular congestion hinders the movement of buses.
+Action description | To facilitate the shift from motorized to public and non-motorized transport, a number of initiatives are being planned and implemented in the city. A major focus is on developing the public transport network by integrating new and underserved areas and making transfers easier and distances shorter. This includes improving transport links between the city and its surrounding areas, including rail service to the airport. In line with EU directives, future developments will also aim to reduce the environmental impact of public transport vehicles in Budapest, in particular by purchasing a new fleet of climate-neutral, state-of-the-art vehicles. The suburban public transport fleet will also be upgraded similarly, and diesel operation in Budapest's suburban rail transport will be phased out. It is also important that public transport is given priority, which involves the designation of bus lanes on busy urban road sections where regular congestion hinders the movement of buses.
 
 Another important objective of the Municipality is to encourage cycling in Budapest. The aim is to create a coherent, clearly designed, easy-to-use main cycling network connecting the city's districts, ensuring safe and convenient access for cyclists. Additionally, a key goal is to develop the public bike-sharing system (MOL Bubi), by increasing accessibility, providing additional collection points in new and existing service areas, expanding and diversifying (electric-assisted and specialised bicycles) the fleet by 1500-3500 bicycles, increasing inclusiveness, and improving service management.
 
 In addition to developing the cycling infrastructure, giving priority to pedestrian traffic is also crucial. Recent developments have established a new architectural standard, gaining social support for further public space reconstruction and traffic calming. The goal is to prioritize pedestrians in the central parts of the outer districts and to organise pedestrian and cycle-friendly public spaces in the inner districts into a cohesive, liveable urban fabric.
 
 A major project by the Municipality is the renewal of the Pest quay, which is regularly closed to cars on summer weekends. This project aims for a complete transformation to make the area greener and more pedestrian- and bike-friendly. The project includes the improvement of active pedestrian-cycle transport conditions, the diversification of accessibility to the Danube bank, the development of 800 m of new community facilities, the regeneration of a World Heritage site, traffic calming along 3,2 km, rethinking road links and the development of 3,2 km of bike lanes along the Lower Quay of Pest.  |
-| --- | --- | --- |
 BUDAPEST
 
 Climate Neutrality Action Plan
 
 5
 
-|   |  | Another leading public space renewal initiative is the Healthy Streets programme, which was launched as part of a 300 billion HUF EU development package recently announced by the Mayor. As part of the programme, district municipalities can apply for non-repayable grants ranging from HUF 250 million to HUF 2,5 billion, out of a total budget of HUF 24,16 billion.
+Another leading public space renewal initiative is the Healthy Streets programme, which was launched as part of a 300 billion HUF EU development package recently announced by the Mayor. As part of the programme, district municipalities can apply for non-repayable grants ranging from HUF 250 million to HUF 2,5 billion, out of a total budget of HUF 24,16 billion.
 
 A similarly key measure is the gradual expansion of paid/controlled parking zones in the city. First, in areas that can reasonably be covered by the current ticket machine network meaning about 30 % of the city's residential area, and then in a further stage with regulation allowing for a lower ticket machine density. Under the current legal framework, the plan includes the introduction of free but time-limited waiting zones across the entire city, eliminating currently non-paying areas used as "quasi-P+R" parking by drivers from the agglomeration. Another effective measure would be increasing parking charges and reducing resident discounts. In addition to parking regulation changes, all P+R car parks would be subject to a fee, and the current fee of HUF 350 for P+R car parks would be linked to the use of public transport.
 
@@ -1221,23 +1181,17 @@ To further curb motorization in the densely built-up areas of the inner and tran
 
 Less impactful but still important measures include developing the BudapestGO app (new transport tools and services e.g. shared mobility), encouraging companies to develop Workplace Mobility Plans and organising awareness-raising campaigns. Carrying out pedestrian and cycling awareness campaigns in schools and organising workshops with drivers and cycling organisations are especially important for the Municipality to mobilize residents.  |
 | --- | --- | --- |
-|  Reference to impact pathway | Field of action | Transport  |
-|   | Systemic lever | Technological/ infrastructural,
-institutional/regulatory, behavioural/ social  |
-|   | Outcome (according to module B-1.1) | More people opting for non-motorized and public transport
-
-The spread of alternative transport modes  |
-|  Implementation | Responsible bodies/person for implementation | BKK Centre for Budapest Transport, Municipality of Budapest, Budapest Public Roads  |
-BUDAPEST
-
-Climate Neutrality Action Plan
-
-6
-
-|   | Action scale & addressed entities | City-wide and the agglomeration  |
 | --- | --- | --- |
-|   |  Involved stakeholders | Government of Hungary, district municipalities, civil organizations, municipalities in the agglomeration  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | Plans for the mentioned initiatives have already been prepared, and some are already under implementation. However, for the complete implementation of plans, changes in regulations and more funding are needed, which depend on securing government support.
+| Reference to impact pathway | Field of action | Transport |
+|  | Systemic lever | Technological/ infrastructural, |
+| institutional/regulatory, behavioural/ social  |
+| Outcome (according to module B-1.1) | More people opting for non-motorized and public transport |
+| The spread of alternative transport modes  |
+| Implementation | Responsible bodies/person for implementation | BKK Centre for Budapest Transport, Municipality of Budapest, Budapest Public Roads |
+|  | Action scale & addressed entities | City-wide and the agglomeration |
+| --- | --- | --- |
+|  | Involved stakeholders | Government of Hungary, district municipalities, civil organizations, municipalities in the agglomeration |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | Plans for the mentioned initiatives have already been prepared, and some are already under implementation. However, for the complete implementation of plans, changes in regulations and more funding are needed, which depend on securing government support. |
 
 Public transport improvements: A 50-60% public transport share is planned with frequent express bus services, good metro coverage in the wider metro area and strong tram connections.
 
@@ -1250,47 +1204,43 @@ Renewal of the Pest quay: Design and construction by the end 2029.
 Healthy Streets programme: Design and construction of about 30 km by the end of 2027.
 
 Traffic calming: By 2030, we would increase the number of roads in Budapest with a 30 km/h speed limit from the current 2200 km to 3200 km, accounting for 60% of the total 5200 km of Budapest road network.  |
-|  Impact & cost | Generated renewable energy (if applicable) | N/A  |
-|   |  Removed/substituted energy, volume, or fuel type | Gasoline and diesel  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 188 kt CO2e from Transport  |
-|   |  GHG emissions compensated (natural or technological sinks) | N/A  |
-|   |  Total costs and costs by CO2e unit | € 218m
-€ 1,16m /kt CO2e  |
-|  B-2.2: Individual action outlines  |   |   |
+| Impact & cost | Generated renewable energy (if applicable) | N/A |
 | --- | --- | --- |
-|  (Fill out one sheet per intervention/project)  |   |   |
-|  Action outline | Action name | Increased car-pooling  |
-|   |  Action type | Regulatory interventions
-Business models  |
-BUDAPEST
-
-Climate Neutrality Action Plan
-
-7
-
-|   | Action description | For car-pooling to spread and average passengers per car and motorcycles to increase by 25% by 2030, changes in the current regulations are necessary, such as revising liability rules in the event of an accident and allowing for charging mechanisms to incentivize participation.
-Car-pooling could also be encouraged by promoting the use of dedicated platforms among private companies and the wider public. The aim of the Municipality is to facilitate conversations around car-pooling and explore possible avenues for the change in regulations.  |
+|  | Removed/substituted energy, volume, or fuel type | Gasoline and diesel |
+|  | GHG emissions reduction estimate (total) per emission source sector | 188 kt CO2e from Transport |
+|  | GHG emissions compensated (natural or technological sinks) | N/A |
+|  | Total costs and costs by CO2e unit | € 218m |
+| € 1,16m /kt CO2e  |
+| B-2.2: Individual action outlines |  |  |
 | --- | --- | --- |
-|  Reference to impact pathway | Field of action | Transport  |
-|   |  Systemic lever | Institutional/regulatory, organizational  |
-|   |  Outcome (according to module B-1.1) | Favourable changes in the regulatory environment that support the spread of car-pooling
-People being more familiar with the concept of car-pooling  |
-|  Implementation | Responsible bodies/person for implementation | Municipality of Budapest  |
-|   |  Action scale & addressed entities | City-wide  |
-|   |  Involved stakeholders | Government of Hungary, BKK Centre for Budapest Transport Budapest, Public Roads  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | Currently, conversations are ongoing within professional circles, but the timing of specific policy proposals has not yet been determined.  |
-|  Impact & cost | Generated renewable energy (if applicable) | N/A  |
-|   |  Removed/substituted energy, volume, or fuel type | Gasoline and diesel  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 84 kt CO2e from Transport  |
-|   |  GHG emissions compensated (natural or technological sinks) | N/A  |
-|   |  Total costs and costs by CO2e unit | Assumed to be near zero, as increased car-pooling makes use of existing infrastructure and assets.^{31}  |
-|  B-2.2: Individual action outlines  |   |   |
+| (Fill out one sheet per intervention/project) |  |  |
+| Action outline | Action name | Increased car-pooling |
+|  | Action type | Regulatory interventions |
+| Business models  |
+| Action description | For car-pooling to spread and average passengers per car and motorcycles to increase by 25% by 2030, changes in the current regulations are necessary, such as revising liability rules in the event of an accident and allowing for charging mechanisms to incentivize participation. |
+| Car-pooling could also be encouraged by promoting the use of dedicated platforms among private companies and the wider public. The aim of the Municipality is to facilitate conversations around car-pooling and explore possible avenues for the change in regulations.  |
 | --- | --- | --- |
-|  (Fill out one sheet per intervention/project)  |   |   |
-|  Action outline | Action name | Electrification of cars + motorcycles  |
-|   |  Action type | Technical interventions
+| --- | --- | --- |
+| Reference to impact pathway | Field of action | Transport |
+|  | Systemic lever | Institutional/regulatory, organizational |
+|  | Outcome (according to module B-1.1) | Favourable changes in the regulatory environment that support the spread of car-pooling |
+| People being more familiar with the concept of car-pooling  |
+| Implementation | Responsible bodies/person for implementation | Municipality of Budapest |
+| --- | --- | --- |
+|  | Action scale & addressed entities | City-wide |
+|  | Involved stakeholders | Government of Hungary, BKK Centre for Budapest Transport Budapest, Public Roads |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | Currently, conversations are ongoing within professional circles, but the timing of specific policy proposals has not yet been determined. |
+| Impact & cost | Generated renewable energy (if applicable) | N/A |
+|  | Removed/substituted energy, volume, or fuel type | Gasoline and diesel |
+|  | GHG emissions reduction estimate (total) per emission source sector | 84 kt CO2e from Transport |
+|  | GHG emissions compensated (natural or technological sinks) | N/A |
+|  | Total costs and costs by CO2e unit | Assumed to be near zero, as increased car-pooling makes use of existing infrastructure and assets.^{31} |
+| B-2.2: Individual action outlines |  |  |
+| (Fill out one sheet per intervention/project) |  |  |
+| Action outline | Action name | Electrification of cars + motorcycles |
+|  | Action type | Technical interventions |
 Physical/spatial interventions  |
-|   |  Action description | Budapest is supporting the electrification of cars and motorcycles through various initiatives, including developing the necessary infrastructure. The city has created a mobility point concept with three service levels. The highest level, known as mobility station, offers a high number of functions and services  |
+Action description | Budapest is supporting the electrification of cars and motorcycles through various initiatives, including developing the necessary infrastructure. The city has created a mobility point concept with three service levels. The highest level, known as mobility station, offers a high number of functions and services
 
 The methodology for calculating costs can be found through the following link: NetZeroCities
 BUDAPEST
@@ -1299,7 +1249,7 @@ Climate Neutrality Action Plan
 
 8
 
-|   |  | including lockers, taxi stands, car sharing and charging stations. The charging network needs to be established with consideration to the infrastructure at home and in facilities attracting traffic, and the establishment and operation of further charging stations in public places must be supported.
+including lockers, taxi stands, car sharing and charging stations. The charging network needs to be established with consideration to the infrastructure at home and in facilities attracting traffic, and the establishment and operation of further charging stations in public places must be supported.
 
 Additionally, the city is developing smart charging tools, providing smart grid integration (e.g. with solar panels) and demand management.
 
@@ -1307,13 +1257,14 @@ Budapest is also promoting the electrification of the residential and car-sharin
 
 Finally, the city is also developing a comprehensive electromobility strategy. Preparation of the strategy started in June 2024 and will be completed in September.  |
 | --- | --- | --- |
-|  Reference to impact pathway | Field of action | Transport  |
-|   | Systemic lever | Technological/infrastructural, institutional/ regulatory  |
-|   | Outcome (according to module B-1.1) | Increased rate of electric vehicles due to more favourable conditions  |
-|  Implementation | Responsible bodies/person for implementation | Municipality of Budapest  |
-|   | Action scale & addressed entities | City-wide  |
-|   | Involved stakeholders | BKK Centre for Budapest Transport, Budapest Public Roads  |
-|   | Comments on implementation – consider mentioning resources, timelines, milestones | Plans for the mentioned initiatives have already been prepared, and some are already under implementation. However, for the complete implementation of plans, more funding is needed, which depends on securing government support.
+| --- | --- | --- |
+| Reference to impact pathway | Field of action | Transport |
+|  | Systemic lever | Technological/infrastructural, institutional/ regulatory |
+|  | Outcome (according to module B-1.1) | Increased rate of electric vehicles due to more favourable conditions |
+| Implementation | Responsible bodies/person for implementation | Municipality of Budapest |
+|  | Action scale & addressed entities | City-wide |
+|  | Involved stakeholders | BKK Centre for Budapest Transport, Budapest Public Roads |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | Plans for the mentioned initiatives have already been prepared, and some are already under implementation. However, for the complete implementation of plans, more funding is needed, which depends on securing government support. |
 
 New mobility stations with charging stations: The first mobility stations were put into use in June 2024. The establishment of a further 20-25 stations are planned until 2030.
 
@@ -1329,22 +1280,24 @@ C
 | B-2.2: Individual action outlines |
 | --- |
 | (Fill out one sheet per intervention/project) |
-| Action outline | Action name | Electrification of buses |
+| Action outline | Action name Electrification of buses |
+| --- | --- |
 | Action type | Technical interventions |
-| Physical/spatial interventions |
+| Physical/spatial interventions |  |
 | Action description | The action includes the procurement of new electric buses and the development of charging infrastructure in the city. |
-| Reference to impact pathway | Field of action | Transport |
+| Reference to impact pathway | Field of action Transport |
+| --- | --- |
 | Systemic lever | Technological/ infrastructural |
 | Outcome (according to module B-1.1) | Increased rate of electric buses |
-| Implementation | Responsible bodies/person for implementation | Municipality of Budapest, BKK Centre for Budapest Transport Budapest Transport Company |
+| Implementation | Responsible bodies/person for implementation Municipality of Budapest, BKK Centre for Budapest Transport Budapest Transport Company |
 | Action scale & addressed entities | City-wide |
 | Involved stakeholders | Ministry of Transport and Construction |
 | Comments on implementation – consider mentioning resources, timelines, milestones | In 2024, a conditional procurement for 160 new trolleybuses will begin. To integrate these into the network, minor overhead lines will need to be built on Kőbányai út, Pongrácz út and Fogarasi út. Additionally, a service procurement contract for 90 electric buses was launched in 2024. These buses are expected to enter into service in 2026. Based on operational experience, the procurement of an additional 200-250 electric buses could commence in 2026-2027. |
-| Impact & cost | Generated renewable energy (if applicable) | N/A |
+| Impact & cost | Generated renewable energy (if applicable) N/A |
 | Removed/substituted energy, volume, or fuel type | Gasoline and diesel |
 | GHG emissions reduction estimate (total) per emission source sector | 31 kt CO2e from Transport |
 | GHG emissions compensated (natural or technological sinks) | N/A |
-| Total costs and costs by CO2e unit | € 31m
+| Total costs and costs by CO2e unit | € 31m |
 € 1m / kt CO2e |
 
 9
@@ -1356,12 +1309,12 @@ Climate Neutrality Action Plan
 
 B-2.2: Individual action outlines
 
-|  (Fill out one sheet per intervention/project)  |   |   |
+| (Fill out one sheet per intervention/project) |  |  |
 | --- | --- | --- |
-|  Action outline | Action name | Optimized logistics  |
-|   |  Action type | Physical/spatial interventions
+| Action outline | Action name | Optimized logistics |
+|  | Action type | Physical/spatial interventions |
 Regulatory interventions  |
-|   |  Action description | To optimize logistics, the Municipality is planning a series of initiatives to make more efficient use of scarce public spaces. The flagship project focuses on developing a network of designated loading areas and introducing a loading area booking system. The elements of the project are:
+Action description | To optimize logistics, the Municipality is planning a series of initiatives to make more efficient use of scarce public spaces. The flagship project focuses on developing a network of designated loading areas and introducing a loading area booking system. The elements of the project are:
 • Conducting a survey of current public space functions and the existing loading area network in Budapest
 • Developing a city-wide loading area network to support freight flows
 • Creating multifunctional service areas, which combine loading areas with facilities such as electric vehicle charging
@@ -1383,24 +1336,26 @@ Climate Neutrality Action Plan
 
 1
 
-|   |  | transport in the city. The Municipality is planning various events and workshops to bring these actors together and create platforms for conversations.  |
+|  |  | transport in the city. The Municipality is planning various events and workshops to bring these actors together and create platforms for conversations. |
 | --- | --- | --- |
-|  Reference to impact pathway | Field of action | Transport  |
-|   |  Systemic lever | Technological/ infrastructural, institutional/regulatory  |
-|   |  Outcome (according to module B-1.1) | An integrated and more efficient city logistics loading system
-A more predictable city logistics policy framework  |
-|  Implementation | Responsible bodies/person for implementation | Municipality of Budapest, BKK Centre for Budapest Transport  |
-|   |  Action scale & addressed entities | City-wide  |
-|   |  Involved stakeholders | Budapest Public Roads, freight transport companies  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | The targets and milestones of the city logistics projects are:
+| Reference to impact pathway | Field of action | Transport |
+|  | Systemic lever | Technological/ infrastructural, institutional/regulatory |
+|  | Outcome (according to module B-1.1) | An integrated and more efficient city logistics loading system |
+| A more predictable city logistics policy framework  |
+| Implementation | Responsible bodies/person for implementation | Municipality of Budapest, BKK Centre for Budapest Transport |
+| --- | --- | --- |
+|  | Action scale & addressed entities | City-wide |
+|  | Involved stakeholders | Budapest Public Roads, freight transport companies |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | The targets and milestones of the city logistics projects are: |
 • Loading spaces taking up max. 5% of the paying parking spaces by 2030, i.e. about 3,000 loading areas
 • 2 pilot mini hubs in the next few years that will be increased to a minimum of 10 freight transfer points by 2030
 Loading bay reservations will be introduced initially at 15-20 sites. The system will be extended to the whole city by 2030.  |
-|  Impact & cost | Generated renewable energy (if applicable) | N/A  |
-|   |  Removed/substituted energy, volume, or fuel type | Gasoline and diesel  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 257 kt CO2e from Transport  |
-|   |  GHG emissions compensated (natural or technological sinks) | N/A  |
-|   |  Total costs and costs by CO2e unit | Assuming near zero upfront investments, however such an initiative requires a lot of coordination, but no big infrastructure investments^{33}  |
+| Impact & cost | Generated renewable energy (if applicable) | N/A |
+| --- | --- | --- |
+|  | Removed/substituted energy, volume, or fuel type | Gasoline and diesel |
+|  | GHG emissions reduction estimate (total) per emission source sector | 257 kt CO2e from Transport |
+|  | GHG emissions compensated (natural or technological sinks) | N/A |
+|  | Total costs and costs by CO2e unit | Assuming near zero upfront investments, however such an initiative requires a lot of coordination, but no big infrastructure investments^{33} |
 
 The methodology for calculating costs can be found through the following link: NetZeroCities
 BUDAPEST
@@ -1413,38 +1368,42 @@ Climate Neutrality Action Plan
 | --- |
 | (Fill out one sheet per intervention/project) |
 | Action outline | Action name | Electrification of trucks |
-|  | Action type | Technical interventions
-Physical/spatial interventions |
+| --- | --- | --- |
+|  | Action type | Technical interventions |
+| Physical/spatial interventions |
 | Action description | The Municipality will facilitate the electrification of trucks by establishing mini hubs (consolidation centres), where freight transport companies can transfer to smaller electric vehicles and by engaging in active conversation with private actors to explore their needs, barriers and potential collaboration opportunities. Through the review of the Freight Transport Access Regulation, the Municipality will also introduce new policies on protected and restricted zones and offer entry to protected zones and discounts to restricted zones conditional on electrification. The development of charging infrastructure will also be encouraged, with efforts to streamline and optimize the authorisation process. |
-| Reference to impact pathway | Field of action | Transport |
+| Reference to impact pathway | Field of action Transport |
+| --- | --- |
 | Systemic lever | Organizational, institutional/ regulatory |
-| Outcome (according to module B-1.1) | Increased rate of electric trucks
-Better understanding of private sector needs |
-| Implementation | Responsible bodies/person for implementation | Municipality of Budapest |
+| Outcome (according to module B-1.1) | Increased rate of electric trucks |
+| Better understanding of private sector needs |
+| Implementation | Responsible bodies/person for implementation Municipality of Budapest |
+| --- | --- |
 | Action scale & addressed entities | City-wide |
 | Involved stakeholders | Budapest Centre for Transport, Budapest Public Roads (BK), freight transport companies |
 | Comments on implementation – consider mentioning resources, timelines, milestones | The establishment of two mini hubs is expected in 2025. The schedule and funding of further measures is not yet finalized. |
-| Impact & cost | Generated renewable energy (if applicable) | N/A |
+| Impact & cost | Generated renewable energy (if applicable) N/A |
 | Removed/substituted energy, volume, or fuel type | Gasoline and diesel |
 | GHG emissions reduction estimate (total) per emission source sector | 41 kt CO₂e from Transport |
 | GHG emissions compensated (natural or technological sinks) | N/A |
-| Total costs and costs by CO₂e unit | € 336m
-€ 8,19m / kt CO₂e |
-|  B-2.2: Individual action outlines  |   |   |
+| Total costs and costs by CO₂e unit | € 336m |
+| € 8,19m / kt CO₂e |
+| B-2.2: Individual action outlines |  |  |
 | --- | --- | --- |
-|  (Fill out one sheet per intervention/project)  |   |   |
-|  Action outline | Action name | Building renovations (envelope)  |
+| (Fill out one sheet per intervention/project) |  |  |
+| Action outline | Action name | Building renovations (envelope) |
 BUDAPEST
 
 Climate Neutrality Action Plan
 
 3
 
-|   | Action type | Technical interventions
+Action type | Technical interventions
 Business models
 Social participation and awareness campaigns  |
 | --- | --- | --- |
-|   |  Action description | Established in June 2024, the Budapest Climate Agency, a municipality-owned non-profit company, will be responsible for achieving the capital's 2030 decarbonisation targets (and beyond) in the building sector.
+| --- | --- | --- |
+|  | Action description | Established in June 2024, the Budapest Climate Agency, a municipality-owned non-profit company, will be responsible for achieving the capital's 2030 decarbonisation targets (and beyond) in the building sector. |
 
 The Budapest Climate Agency will manage the development of funding schemes relying on various EU, national budgetary or market resources, organise actors in the sector, and develop and implement large-scale projects. In addition to designing and managing targeted programmes, taking into account social, financial and technical aspects, the Budapest Climate Agency will provide a one-stop-shop service covering the whole process of residential renovation (assessment, planning, financing, construction) through a customer service network. This network will be coordinated by the Agency with the help of district authorities and NGOs. This front office service will be provided by the RenoPONT network, launched under the Horizon-funded RenoHUB project. The Agency will also contribute to the radical reduction of CO_{2} emissions from buildings by testing innovative solutions and, in case of successful pilot projects, scaling them up, e.g. by creating PED districts based on the results of the Horizon projects already underway (ATELIER, ASCEND).
 
@@ -1454,21 +1413,17 @@ Recognizing the relatively low awareness among residents about the energy effici
 • awareness-raising related to specific projects (targeted campaigns and activities).
 
 Besides facilitating residential renovations, the Municipality is also facilitating renovations in municipally owned buildings and facilities. Plans are also underway to modernise the building energy database, which will enable the Municipality to launch digital twin projects.  |
-|  Reference to impact pathway | Field of action | Buildings & heating  |
-|   | Systemic lever | Organizational/financial, behavioural/social, technological/infrastructural  |
-BUDAPEST
-
-Climate Neutrality Action Plan
-
-4
-
-|   | Outcome (according to module B-1.1) | Increased rate of residential building renovations
-Increased energy efficiency of public buildings  |
+| Reference to impact pathway | Field of action | Buildings & heating |
 | --- | --- | --- |
-|  Implementation | Responsible bodies/person for implementation | Municipality of Budapest  |
-|   |  Action scale & addressed entities | City-wide  |
-|   |  Involved stakeholders | Commercial banks, international FIs, NGOs, district municipalities, national government, residents  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | The priority of the Municipality is to facilitate residential building retrofitting in order to achieve an annual renovation rate of 4%.
+|  | Systemic lever | Organizational/financial, behavioural/social, technological/infrastructural |
+| Outcome (according to module B-1.1) | Increased rate of residential building renovations |
+| Increased energy efficiency of public buildings  |
+| --- | --- | --- |
+| --- | --- | --- |
+| Implementation | Responsible bodies/person for implementation | Municipality of Budapest |
+|  | Action scale & addressed entities | City-wide |
+|  | Involved stakeholders | Commercial banks, international FIs, NGOs, district municipalities, national government, residents |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | The priority of the Municipality is to facilitate residential building retrofitting in order to achieve an annual renovation rate of 4%. |
 
 As part of its Budapest CARES project, which received €1.5 million in direct EU funding, the Budapest Climate Agency was developed to support and speed up residential building energy efficiency projects both scientifically and institutionally. Until June 2025, in the framework of the Budapest CARES project the following tasks will be done:
 • Comprehensive database on the energy performance of the building stock in the capital, the savings that can be achieved through renovation, and the willingness of the population to renovate.
@@ -1478,76 +1433,61 @@ As part of its Budapest CARES project, which received €1.5 million in direct E
 Following the Budapest CARES project, the Budapest Climate Agency will launch comprehensive investment programmes by scaling up the Budapest CARES pilot projects, make PED developments, and reinvest the savings revenues (Energy Efficiency Obligation Scheme) in the available funds.
 
 The Municipality and business associations providing public services are also planning to carry out extensive energy efficiency renovations. A list of completed and planned interventions can be found in the Monitoring the implementation of the Environment Programme chapter of the Environmental Status Assessment Report of Budapest.  |
-|  Impact & cost | Generated renewable energy (if applicable) | N/A  |
-|   |  Removed/substituted energy, volume, or fuel type | Natural gas, liquid gas, heating oil, coal  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 431 kt CO₂e from Buildings & heating  |
-BUDAPEST
-
-Climate Neutrality Action Plan
-
-#
-
-|  GHG emissions compensated (natural or technological sinks) | N/A  |
-| --- | --- |
-|  Total costs and costs by CO2e unit | € 4829m
-€ 11,20m / kt CO2e  |
-|  B-2.2: Individual action outlines  |   |   |
+| Impact & cost | Generated renewable energy (if applicable) | N/A |
 | --- | --- | --- |
-|  (Fill out one sheet per intervention/project)  |   |   |
-|  Action outline | Action name | New energy-efficient buildings  |
-|   |  Action type | Technical interventions  |
-|   |  Action description | The project aims to bring together local stakeholders in order to map the technical, legal and social aspects of developing a positive energy district and creating energy communities in Budapest. In a follow-up pilot project called ASCEND, the Municipality, in partnership with District 4, commits to developing a positive energy district along with solar PV installation, mobility decarbonization and public space development.
+|  | Removed/substituted energy, volume, or fuel type | Natural gas, liquid gas, heating oil, coal |
+|  | GHG emissions reduction estimate (total) per emission source sector | 431 kt CO₂e from Buildings & heating |
+| GHG emissions compensated (natural or technological sinks) | N/A |
+| --- | --- |
+| Total costs and costs by CO2e unit | € 4829m |
+| € 11,20m / kt CO2e  |
+| B-2.2: Individual action outlines |  |  |
+| --- | --- | --- |
+| (Fill out one sheet per intervention/project) |  |  |
+| Action outline | Action name | New energy-efficient buildings |
+|  | Action type | Technical interventions |
+|  | Action description | The project aims to bring together local stakeholders in order to map the technical, legal and social aspects of developing a positive energy district and creating energy communities in Budapest. In a follow-up pilot project called ASCEND, the Municipality, in partnership with District 4, commits to developing a positive energy district along with solar PV installation, mobility decarbonization and public space development. |
 
 The Municipality also plans to hold several workshops for relevant stakeholders to facilitate the conversation and knowledge transfer between different actors, paying special focus to the private sphere who developed smart energy systems.
 
 Moreover, while national regulations are beyond the control of the Municipality, it will strive to ensure that mandatory compliance with energy requirements (regulated by a separate decree in Hungary) is emphasised in the national urban planning and building regulations under review (Government Decree 253/1997 (XII. 20.)).  |
-|  Reference to impact pathway | Field of action | Buildings & heating  |
-|   |  Systemic lever | Technological/infrastructural, organizational/financial, behavioural/social  |
-|   |  Outcome (according to module B-1.1) | The spread of PEDs
-Know-how and technology regarding smart technologies are shared among local actors  |
-|  Implementation | Responsible bodies/person for implementation | Municipality of Budapest  |
-|   |  Action scale & addressed entities | City-wide  |
-|   |  Involved stakeholders | District municipalities, private companies, property investors  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | Plans for the mentioned initiatives have already been prepared, and some are already under implementation. However, for the complete implementation of plans, changes in regulations and more funding are needed, which depend on securing government support.  |
-|  Impact & cost | Generated renewable energy (if applicable) | Geothermal and solar energy  |
-BUDAPEST
-
-Climate Neutrality Action Plan
-
-|   | Removed/substituted energy, volume, or fuel type | Natural gas, liquid gas, heating oil, coal  |
+| Reference to impact pathway | Field of action | Buildings & heating |
 | --- | --- | --- |
-|   | GHG emissions reduction estimate (total) per emission source sector | 12 kt CO_{2e} from Buildings & heating  |
-|   | GHG emissions compensated (natural or technological sinks) | N/A  |
-|   | Total costs and costs by CO_{2e} unit | € 22m
-€ 1,78m / kt CO_{2e}  |
-
-6
-BUDAPEST
-
-Climate Neutrality Action Plan
-
-7
-
-|  B-2.2: Individual action outlines  |   |   |
+|  | Systemic lever | Technological/infrastructural, organizational/financial, behavioural/social |
+|  | Outcome (according to module B-1.1) | The spread of PEDs |
+| Know-how and technology regarding smart technologies are shared among local actors  |
+| Implementation | Responsible bodies/person for implementation | Municipality of Budapest |
 | --- | --- | --- |
-|  (Fill out one sheet per intervention/project)  |   |   |
-|  Action outline | Action name | Efficient lighting & appliances  |
-|   | Action type | Technical interventions  |
-|   | Action description | In response to the energy and climate crisis, the Capital has adopted the first Budapest Energy Package. As an immediate measure, the Municipality decided to shorten decorative lighting by 2 hours a day and to accelerate the LED modernisation programme for street lighting, which has been underway since 2020. In the period 2022-2024, 19,000 luminaires will be replaced, with an additional 5,100 replacements already planned. To optimize energy resources and reduce costs for the Municipality, the use of smart technologies in public lighting will also be explored.
-
-Moreover, under the KEHOP-5.2.2-16-2017-00116 project on the energy modernisation of the buildings of the Municipality of Budapest and its institutions, further lighting modernisations will be undertaken. The Municipality will also collaborate with private companies to introduce smart technologies into the public sphere and facilitate know-how sharing between different actors.  |
-|  Reference to impact pathway | Field of action | Buildings & heating  |
-|   | Systemic lever | Technological/ infrastructural  |
-|   | Outcome (according to module B-1.1) | Increased efficiency of public lighting and appliances  |
-|   |  | Lower household energy consumption  |
-|  Implementation | Responsible bodies/person for implementation | Municipality of Budapest  |
-|   | Action scale & addressed entities | City-wide  |
-|   | Involved stakeholders | Budapest Decorative and Street Lighting Ltd, residents  |
-|   | Comments on implementation – consider mentioning resources, timelines, milestones | Of the 110 thousand luminaires, the City can finance and implement on its own the replacement of 4,000 luminaires per annum, i.e. 20,000 in total. For any additional replacement, external funding and capacity need to be involved. For the complete implementation of plans, residential incentives are needed, which relies on securing government support.  |
-|  Impact & cost | Generated renewable energy (if applicable) | N/A  |
-|   | Removed/substituted energy, volume, or fuel type | Electricity, diesel  |
-|   | GHG emissions reduction estimate (total) per emission source sector | 221 kt CO₂e from Buildings & heating  |
-|   | GHG emissions compensated (natural or technological sinks) | N/A  |
+|  | Action scale & addressed entities | City-wide |
+|  | Involved stakeholders | District municipalities, private companies, property investors |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | Plans for the mentioned initiatives have already been prepared, and some are already under implementation. However, for the complete implementation of plans, changes in regulations and more funding are needed, which depend on securing government support. |
+| Impact & cost | Generated renewable energy (if applicable) | Geothermal and solar energy |
+|  | Removed/substituted energy, volume, or fuel type | Natural gas, liquid gas, heating oil, coal |
+| --- | --- | --- |
+|  | GHG emissions reduction estimate (total) per emission source sector | 12 kt CO_{2e} from Buildings & heating |
+|  | GHG emissions compensated (natural or technological sinks) | N/A |
+|  | Total costs and costs by CO_{2e} unit | € 22m |
+| € 1,78m / kt CO_{2e}  |
+| B-2.2: Individual action outlines |  |  |
+| --- | --- | --- |
+| (Fill out one sheet per intervention/project) |  |  |
+| Action outline | Action name | Efficient lighting & appliances |
+|  | Action type | Technical interventions |
+|  | Action description | In response to the energy and climate crisis, the Capital has adopted the first Budapest Energy Package. As an immediate measure, the Municipality decided to shorten decorative lighting by 2 hours a day and to accelerate the LED modernisation programme for street lighting, which has been underway since 2020. In the period 2022-2024, 19,000 luminaires will be replaced, with an additional 5,100 replacements already planned. To optimize energy resources and reduce costs for the Municipality, the use of smart technologies in public lighting will also be explored. |
+| Moreover, under the KEHOP-5.2.2-16-2017-00116 project on the energy modernisation of the buildings of the Municipality of Budapest and its institutions, further lighting modernisations will be undertaken. The Municipality will also collaborate with private companies to introduce smart technologies into the public sphere and facilitate know-how sharing between different actors.  |
+| Reference to impact pathway | Field of action | Buildings & heating |
+| --- | --- | --- |
+|  | Systemic lever | Technological/ infrastructural |
+|  | Outcome (according to module B-1.1) | Increased efficiency of public lighting and appliances |
+|  |  | Lower household energy consumption |
+| Implementation | Responsible bodies/person for implementation | Municipality of Budapest |
+|  | Action scale & addressed entities | City-wide |
+|  | Involved stakeholders | Budapest Decorative and Street Lighting Ltd, residents |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | Of the 110 thousand luminaires, the City can finance and implement on its own the replacement of 4,000 luminaires per annum, i.e. 20,000 in total. For any additional replacement, external funding and capacity need to be involved. For the complete implementation of plans, residential incentives are needed, which relies on securing government support. |
+| Impact & cost | Generated renewable energy (if applicable) | N/A |
+|  | Removed/substituted energy, volume, or fuel type | Electricity, diesel |
+|  | GHG emissions reduction estimate (total) per emission source sector | 221 kt CO₂e from Buildings & heating |
+|  | GHG emissions compensated (natural or technological sinks) | N/A |
 BUDAPEST
 
 Climate Neutrality Action Plan
@@ -1556,13 +1496,13 @@ Climate Neutrality Action Plan
 
 B-2.2: Individual action outlines
 
-|  (Fill out one sheet per intervention/project)  |   |   |
+| (Fill out one sheet per intervention/project) |  |  |
 | --- | --- | --- |
-|  Action outline | Action name | Decarbonizing heating generation  |
-|   |  Action type | Technical interventions
+| Action outline | Action name | Decarbonizing heating generation |
+|  | Action type | Technical interventions |
 Business models
 Social participation and awareness campaigns  |
-|   |  Action description | The interventions mentioned under Building renovations (envelope) also apply here, as facilitation programmes of renovations and retrofitting of municipal buildings do not only include envelope renovations but the modernisation of the heating system as well. In particular, the Budapest Climate Agency will play a crucial role in facilitating these heating upgrades. The Agency will offer recommendations on the most technologically and economically efficient ways to transition from gas to alternative heating solutions. Additionally, its front office service will provide personalized advice on sizing, design, and installation to ensure the successful implementation of heating upgrades.
+Action description | The interventions mentioned under Building renovations (envelope) also apply here, as facilitation programmes of renovations and retrofitting of municipal buildings do not only include envelope renovations but the modernisation of the heating system as well. In particular, the Budapest Climate Agency will play a crucial role in facilitating these heating upgrades. The Agency will offer recommendations on the most technologically and economically efficient ways to transition from gas to alternative heating solutions. Additionally, its front office service will provide personalized advice on sizing, design, and installation to ensure the successful implementation of heating upgrades.
 
 Recognizing the relatively low awareness among residents about their energy consumption, awareness-raising programmes will also be launched, including thematic campaigns and informational activities coordinated by the Municipality with special regard to reducing the volume of household energy consumption.
 
@@ -1575,22 +1515,23 @@ Climate Neutrality Action Plan
 
 9
 
-|   |  | • Installing electric boilers with a total thermal capacity of 20-40 MW
+• Installing electric boilers with a total thermal capacity of 20-40 MW
 • Connecting district heating zones: As a result of the initiative, the City expects to achieve annual primary energy savings of 240,000 MWh. This initiative will also reduce CO₂ emissions by 58,000 tonnes annually.
 • Expanding and developing the district heating infrastructure
 • Energy efficiency reconstructions of transmission lines, energy efficiency reconstructions of heat exchanges: As a result of the reconstructions, an additional 3,264 (2,529+735) MWh of primary energy savings and 704 (546+158) tCO₂ savings can be realised on the district heating system.
 
 As district heating becomes more efficient and increasingly reliant on renewables, efforts are underway to connect new consumers to the network, saving about 137,000 MWh/year of energy and 32,200 tonnes of carbon dioxide emissions by 2030.  |
 | --- | --- | --- |
-|  Reference to impact pathway | Field of action | Buildings & heating  |
-|   |  Systemic lever | Organizational/financial, behavioural/social, technological/infrastructural  |
-|   |  Outcome (according to module B-1.1) | More residents switching to more energy efficient or renewable heating generation technologies
-
-More energy efficient and less fossil fuel-dependent district heating system  |
-|  Implementation | Responsible bodies/person for implementation | Municipality of Budapest  |
-|   |  Action scale & addressed entities | City-wide  |
-|   |  Involved stakeholders | Commercial banks, international FIs, NGOs, district municipalities, national government, residents, Budapest Public Utilities Plc  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | Plans for the mentioned initiatives have already been prepared, and some are already under implementation. However, the complete implementation of plans relies on additional funding and in the case of district heating, market expansion opportunities.
+| --- | --- | --- |
+| Reference to impact pathway | Field of action | Buildings & heating |
+|  | Systemic lever | Organizational/financial, behavioural/social, technological/infrastructural |
+|  | Outcome (according to module B-1.1) | More residents switching to more energy efficient or renewable heating generation technologies |
+| More energy efficient and less fossil fuel-dependent district heating system  |
+| Implementation | Responsible bodies/person for implementation | Municipality of Budapest |
+| --- | --- | --- |
+|  | Action scale & addressed entities | City-wide |
+|  | Involved stakeholders | Commercial banks, international FIs, NGOs, district municipalities, national government, residents, Budapest Public Utilities Plc |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | Plans for the mentioned initiatives have already been prepared, and some are already under implementation. However, the complete implementation of plans relies on additional funding and in the case of district heating, market expansion opportunities. |
 
 The interventions mentioned under Building renovations (envelope) also apply here. Please see the implementation details there.
 
@@ -1602,30 +1543,28 @@ Climate Neutrality Action Plan
 
 0
 
-|   |  | tender in June 2024, which is also currently under evaluation. Implementation is planned for 2025-2030
+tender in June 2024, which is also currently under evaluation. Implementation is planned for 2025-2030
 • Connecting district heating zones: It is important that planning and implementation can only start if new grant opportunities arise and market expansion is available for district heating.
 • Replacing the waste recovery plant’s steam turbine and reconstructing the boilers: The design of the project is scheduled for 2024-2025, and the implementation for 2025-2026.
 • Installing electric boilers with a total thermal capacity of 20-40 MW: The installation of an electric boiler is conditional on the availability of green electricity only and on the availability of grants. Mapping of the installation site is ongoing.
 • Expanding and developing the district heating infrastructure: continuous implementation conditional on the availability of grants.
 • Energy efficiency reconstructions of transmission lines, energy efficiency reconstructions of heat exchanges: continuous implementation.  |
 | --- | --- | --- |
-|  Impact & cost | Generated renewable energy (if applicable) | Geothermal and solar energy  |
-|   |  Removed/substituted energy, volume, or fuel type | Natural gas, liquid gas, heating oil, coal  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 1101 kt CO₂e from Buildings & heating  |
-|   |  GHG emissions compensated (natural or technological sinks) | N/A  |
-|   |  Total costs and costs by CO₂e unit | € 1585m
-€ 1,44m / kt CO₂e  |
-|  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
-|  (Fill out one sheet per intervention/project)  |   |   |
-|  Action outline | Action name | Decarbonizing electricity generation  |
-|   |  Action type | Technical interventions
-Social participation and awareness campaigns  |
-|   |  Action description | Out of all renewable sources, solar energy is the most accessible in the urban context. The Budapest – Solar Powered project therefore concentrates on the city’s solar potential. The aim of the work is to explore ways of promoting and supporting the uptake of solar panels. The project also explores administrative and legal barriers, technical as well as economic issues, and social and community attitudes and involvement.  |
-BUDAPEST
-Climate Neutrality Action Plan
-
-|   | The Municipality has collected and analysed the district and city-level regulations for the installation of solar panels. The detailed legal analysis helps professionals, municipalities and the general public to navigate through the wide range of rules. Three expert working groups have been set up, involving municipalities, civil society organisations, academics, students and some of the companies involved, to think together and identify solutions to promote the use and uptake of solar panels: By integrating different databases and using geographic information software, the Solar Map of Budapest has been produced. Files containing the buildings and urban planning units of the city and digital surface models of the buildings were imported into the programme and used to build the Budapest Solar Map through various modelling and geodatabase building processes. The final output consists of several output layers, including the results of simulated irradiance modelling for the whole year, the irradiance and estimated electricity generation potential of building roofs, etc. The map aims to provide information to property owners and decision-makers to support the implementation of different solar PV investments. Building on the Budapest – Solar Powered project, a follow-up project is underway, whose main objective is to create a guide to help other cities promote the use of solar energy in urban areas. The project will also carry out benchmarking analysis and, on the basis of the results, propose steps for the integration of solar energy into the energy supply chain. While this can help facilitate residential and commercial investments in solar energy, the Municipality and its business associations are also investing in decarbonizing their own electricity generation by installing solar panels. Furthermore, the roofs of shopping centres and office blocks provide excellent surfaces for the installation of solar panel systems, just like outdoor car parks, where solar panels could be mounted on stands, also providing shade against strong sunshine. This is invaluable in a densely built city, lacking usable space. Hence, it is necessary to establish cooperation with the corporate sector and encourage knowledge sharing in this regard. There are also plans to promote the establishment of energy communities, by facilitating cooperation between condominiums, the electricity provider and offices. The initiative would enable residential buildings with solar panels to sell surplus electricity generated throughout the day. In exchange, offices  |
+| Impact & cost | Generated renewable energy (if applicable) | Geothermal and solar energy |
+|  | Removed/substituted energy, volume, or fuel type | Natural gas, liquid gas, heating oil, coal |
+|  | GHG emissions reduction estimate (total) per emission source sector | 1101 kt CO₂e from Buildings & heating |
+|  | GHG emissions compensated (natural or technological sinks) | N/A |
+|  | Total costs and costs by CO₂e unit | € 1585m |
+| € 1,44m / kt CO₂e  |
+| B-2.2: Individual action outlines |  |  |
+| --- | --- | --- |
+| (Fill out one sheet per intervention/project) |  |  |
+| Action outline | Action name | Decarbonizing electricity generation |
+|  | Action type | Technical interventions |
+| Social participation and awareness campaigns  |
+| Action description | Out of all renewable sources, solar energy is the most accessible in the urban context. The Budapest – Solar Powered project therefore concentrates on the city’s solar potential. The aim of the work is to explore ways of promoting and supporting the uptake of solar panels. The project also explores administrative and legal barriers, technical as well as economic issues, and social and community attitudes and involvement. |
+|  | The Municipality has collected and analysed the district and city-level regulations for the installation of solar panels. The detailed legal analysis helps professionals, municipalities and the general public to navigate through the wide range of rules. Three expert working groups have been set up, involving municipalities, civil society organisations, academics, students and some of the companies involved, to think together and identify solutions to promote the use and uptake of solar panels: By integrating different databases and using geographic information software, the Solar Map of Budapest has been produced. Files containing the buildings and urban planning units of the city and digital surface models of the buildings were imported into the programme and used to build the Budapest Solar Map through various modelling and geodatabase building processes. The final output consists of several output layers, including the results of simulated irradiance modelling for the whole year, the irradiance and estimated electricity generation potential of building roofs, etc. The map aims to provide information to property owners and decision-makers to support the implementation of different solar PV investments. Building on the Budapest – Solar Powered project, a follow-up project is underway, whose main objective is to create a guide to help other cities promote the use of solar energy in urban areas. The project will also carry out benchmarking analysis and, on the basis of the results, propose steps for the integration of solar energy into the energy supply chain. While this can help facilitate residential and commercial investments in solar energy, the Municipality and its business associations are also investing in decarbonizing their own electricity generation by installing solar panels. Furthermore, the roofs of shopping centres and office blocks provide excellent surfaces for the installation of solar panel systems, just like outdoor car parks, where solar panels could be mounted on stands, also providing shade against strong sunshine. This is invaluable in a densely built city, lacking usable space. Hence, it is necessary to establish cooperation with the corporate sector and encourage knowledge sharing in this regard. There are also plans to promote the establishment of energy communities, by facilitating cooperation between condominiums, the electricity provider and offices. The initiative would enable residential buildings with solar panels to sell surplus electricity generated throughout the day. In exchange, offices |
 | --- | --- |
 
 1
@@ -1635,38 +1574,40 @@ Climate Neutrality Action Plan
 
 2
 
-|   |  | would have access to affordable, green energy, while the electricity provider could prevent network overloads.
+would have access to affordable, green energy, while the electricity provider could prevent network overloads.
 Finally, if the city wants to ensure the steady growth of renewable electricity generation, the increase of current storage capacities is necessary.  |
 | --- | --- | --- |
-|  Reference to impact pathway | Field of action | Buildings & heating  |
-|   |  Systemic lever | Technological/infrastructural, organizational/financial, behavioural/social  |
-|   |  Outcome (according to module B-1.1) | Increased rate of renewables in private electricity generation
+| --- | --- | --- |
+| Reference to impact pathway | Field of action | Buildings & heating |
+|  | Systemic lever | Technological/infrastructural, organizational/financial, behavioural/social |
+|  | Outcome (according to module B-1.1) | Increased rate of renewables in private electricity generation |
 Increased rate of renewables in municipal electricity generation
 Increased rate of solar energy generated on roofs and car parks owned by private companies
 The emergence of energy communities
 Increased storage capacities  |
-|  Implementation | Responsible bodies/person for implementation | Municipality of Budapest  |
-|   |  Action scale & addressed entities | City-wide  |
-|   |  Involved stakeholders | Energy providers, national government, private companies, residents  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | Plans for the mentioned initiatives have already been prepared, and some are already under implementation. However, for the complete implementation of plans, changes in regulations and more funding are needed, which depend on securing government support.  |
-|  Impact & cost | Generated renewable energy (if applicable) | Geothermal, solar and wind energy  |
-|   |  Removed/substituted energy, volume, or fuel type | Natural gas  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 1648 kt CO2e  |
-|   |  GHG emissions compensated (natural or technological sinks) | N/A  |
-|   |  Total costs and costs by CO2e unit | € 2794m from electricity
-€ 1,70m / kt CO2e  |
-|  B-2.2: Individual action outlines  |   |   |
+| Implementation | Responsible bodies/person for implementation | Municipality of Budapest |
 | --- | --- | --- |
-|  (Fill out one sheet per intervention/project)  |   |   |
-|  Action outline | Action name | Increased waste recycling  |
-|   |  Action type | Technical interventions
+|  | Action scale & addressed entities | City-wide |
+|  | Involved stakeholders | Energy providers, national government, private companies, residents |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | Plans for the mentioned initiatives have already been prepared, and some are already under implementation. However, for the complete implementation of plans, changes in regulations and more funding are needed, which depend on securing government support. |
+| Impact & cost | Generated renewable energy (if applicable) | Geothermal, solar and wind energy |
+|  | Removed/substituted energy, volume, or fuel type | Natural gas |
+|  | GHG emissions reduction estimate (total) per emission source sector | 1648 kt CO2e |
+|  | GHG emissions compensated (natural or technological sinks) | N/A |
+|  | Total costs and costs by CO2e unit | € 2794m from electricity |
+| € 1,70m / kt CO2e  |
+| B-2.2: Individual action outlines |  |  |
+| --- | --- | --- |
+| (Fill out one sheet per intervention/project) |  |  |
+| Action outline | Action name | Increased waste recycling |
+|  | Action type | Technical interventions |
 Social participation and awareness campaigns
 Procurement actions  |
 BUDAPEST
 Climate Neutrality Action Plan
 3
 
-|   | Action description | From 1st July 2023, the concession company, MOHU took over the municipal waste management services for solid waste in Hungary. Over the next 35 years, MOHU will be responsible for providing domestic waste management services including the handling and treatment of waste as well as undertaking related investments.
+Action description | From 1st July 2023, the concession company, MOHU took over the municipal waste management services for solid waste in Hungary. Over the next 35 years, MOHU will be responsible for providing domestic waste management services including the handling and treatment of waste as well as undertaking related investments.
 
 As part of initiatives to increase recycling rates, a mandatory bottle return system was launched in 2024, allowing metal, plastic and glass bottles and containers to be returned to designated collection points in return for a HUF 50 return fee. The aim of the return system is to radically reduce the environmental pollution caused by plastic bottles, aluminium cans, and glass bottles and to reuse as much of them as possible. This is supported by an extensive communication campaign and by MOHU's app, featuring return points across Budapest.
 
@@ -1680,63 +1621,59 @@ The Municipality of Budapest is also exploring other ways with the help of the P
 
 The Municipality is also developing an Integrated City Food Strategy, which envisions providing residents with access to healthy and affordable food that benefits both people and the planet by fostering sustainable food chains, thereby contributing to decarbonization efforts. To achieve this, the Municipality will:
 • Help build **short food chains** by strengthening urban-rural links (farmers' markets, shopping  |
-| --- | --- | --- |
 BUDAPEST
 
 Climate Neutrality Action Plan
 
 4
 
-|   |  | communities, community-supported agriculture, etc.)
+communities, community-supported agriculture, etc.)
 ○ Help **reduce food waste** at retail, commercial and public levels, with particular attention to supporting socially vulnerable groups
 ○ Promote the uptake of **urban agriculture** (e.g. community gardens, small gardens, other innovative solutions)
 ○ Provide **sustainable and healthy public catering** in its own facilities
 ○ Organize **awareness-raising** activities and set an example to other cities  |
 | --- | --- | --- |
-|  Reference to impact pathway | Field of action | Waste  |
-|   |  Systemic lever | Technological/infrastructural, behavioural/social, organizational  |
-|   |  Outcome (according to module B-1.1) | Increased rate of recycling and composting
+| --- | --- | --- |
+| Reference to impact pathway | Field of action | Waste |
+|  | Systemic lever | Technological/infrastructural, behavioural/social, organizational |
+|  | Outcome (according to module B-1.1) | Increased rate of recycling and composting |
 The reduction in household waste and the spread of recycling and composting
 The spread of reuse schemes
 Sustainable food systems  |
-|  Implementation | Responsible bodies/person for implementation | MOHU, Municipality of Budapest  |
-|   |  Action scale & addressed entities | City-wide  |
-|   |  Involved stakeholders | Beverage container distributors, Budapest Public Utilities Ltd, residents  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | Plans for the mentioned initiatives have already been prepared, and some are already under implementation.
+| Implementation | Responsible bodies/person for implementation | MOHU, Municipality of Budapest |
+| --- | --- | --- |
+|  | Action scale & addressed entities | City-wide |
+|  | Involved stakeholders | Beverage container distributors, Budapest Public Utilities Ltd, residents |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | Plans for the mentioned initiatives have already been prepared, and some are already under implementation. |
 Mandatory bottle return: Continuous introduction from 1 January 2024
 Modernising waste yards: Implementation will start in 2024
 Household bio waste collection: Continuous introduction from 1 January 2024. In the first phase of implementation, 15,000 residents, representing about 6,000 households will participate in the collection of households biowaste along designated streets of Budapest's XI, XX and XXI districts.  |
-|  Impact & cost | Generated renewable energy (if applicable) | N/A  |
-|   |  Removed/substituted energy, volume, or fuel type | Municipal solid waste  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 84 kt CO_{2}e from Waste  |
-BUDAPEST
-
-Climate Neutrality Action Plan
-
-5
-
-|   | GHG emissions compensated (natural or technological sinks) | N/A  |
+| Impact & cost | Generated renewable energy (if applicable) | N/A |
 | --- | --- | --- |
-|   | Total costs and costs by CO2e unit | € 16m
-€ 0,20m / kt CO2e  |
-|  **B-2.2: Individual action outlines**  |   |   |
+|  | Removed/substituted energy, volume, or fuel type | Municipal solid waste |
+|  | GHG emissions reduction estimate (total) per emission source sector | 84 kt CO_{2}e from Waste |
+|  | GHG emissions compensated (natural or technological sinks) | N/A |
 | --- | --- | --- |
-|  (Fill out one sheet per intervention/project)  |   |   |
-|  Action outline | Action name | Other  |
-|   |  Action type | Social participation and awareness campaigns  |
-|   |  Action description | The energy demand of premises and buildings of businesses is also quite substantial, the reduction of which could improve their competitiveness by means of the direct reduction of costs. The energy demand of production technologies is also quite high compared to the available standard of technology: the energy intensity of the Hungarian economy is nearly double the EU 28 average. The municipality helps businesses by providing information on state-of-the-art technologies and assisting them in finding optimal sources of financing.  |
-|  Reference to impact pathway | Field of action | Other  |
-|   |  Systemic lever | Organizational  |
-|   |  Outcome (according to module B-1.1) | Best practices for technologies and financing structures are shared among actors  |
-|  Implementation | Responsible bodies/person for implementation | Municipality of Budapest  |
-|   |  Action scale & addressed entities | City-wide  |
-|   |  Involved stakeholders | Local companies  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | Cooperation with the tertiary sector is ongoing.  |
-|  Impact & cost | Generated renewable energy (if applicable) | N/A  |
-|   |  Removed/substituted energy, volume, or fuel type | Natural and liquid gas  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 7 kt CO2e from Other  |
-|   |  GHG emissions compensated (natural or technological sinks) | N/A  |
-|   |  Total costs and costs by CO2e unit | N/A^{34}  |
+|  | Total costs and costs by CO2e unit | € 16m |
+| € 0,20m / kt CO2e  |
+| **B-2.2: Individual action outlines** |  |  |
+| --- | --- | --- |
+| (Fill out one sheet per intervention/project) |  |  |
+| Action outline | Action name | Other |
+|  | Action type | Social participation and awareness campaigns |
+|  | Action description | The energy demand of premises and buildings of businesses is also quite substantial, the reduction of which could improve their competitiveness by means of the direct reduction of costs. The energy demand of production technologies is also quite high compared to the available standard of technology: the energy intensity of the Hungarian economy is nearly double the EU 28 average. The municipality helps businesses by providing information on state-of-the-art technologies and assisting them in finding optimal sources of financing. |
+| Reference to impact pathway | Field of action | Other |
+|  | Systemic lever | Organizational |
+|  | Outcome (according to module B-1.1) | Best practices for technologies and financing structures are shared among actors |
+| Implementation | Responsible bodies/person for implementation | Municipality of Budapest |
+|  | Action scale & addressed entities | City-wide |
+|  | Involved stakeholders | Local companies |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | Cooperation with the tertiary sector is ongoing. |
+| Impact & cost | Generated renewable energy (if applicable) | N/A |
+|  | Removed/substituted energy, volume, or fuel type | Natural and liquid gas |
+|  | GHG emissions reduction estimate (total) per emission source sector | 7 kt CO2e from Other |
+|  | GHG emissions compensated (natural or technological sinks) | N/A |
+|  | Total costs and costs by CO2e unit | N/A^{34} |
 
 ## B-2.3: Summary strategy for residual emissions
 
@@ -1753,27 +1690,27 @@ Brownfield areas present an excellent opportunity to create new green spaces, th
 
 The Municipality has several prepared plans for the integrated recreational and green space development of the city. These are collected and summarized in the Radó Dezső Plan, the city's Green Infrastructure and Maintenance Plan. The plan includes projects in 10 action areas that are summarized below.
 
-|  Action Area | Development goals | Main tasks  |
+| Action Area | Development goals | Main tasks |
 | --- | --- | --- |
-|  URBAN PARKS IN PEST | The protection, renewal and development of existing and planned urban park elements should be prepared by reviewing urban green infrastructure and involving the public; simultaneous implementation of related green space developments | • Improvement of basic infrastructures
+| URBAN PARKS IN PEST | The protection, renewal and development of existing and planned urban park elements should be prepared by reviewing urban green infrastructure and involving the public; simultaneous implementation of related green space developments | • Improvement of basic infrastructures |
 • Strategic development plans for urban parks
 • Regulation of public space use  |
-|  BUDA PARK AXIS | Protecting, renewing and improving elements of the parks axis; strengthening cohesion between the green space elements of the axis; improving functional links between some urban parks and related public facilities | • Renewal of walking and cycling infrastructure
+BUDA PARK AXIS | Protecting, renewing and improving elements of the parks axis; strengthening cohesion between the green space elements of the axis; improving functional links between some urban parks and related public facilities | • Renewal of walking and cycling infrastructure
 • Improvement of basic infrastructures
 • Strategic development plans for urban parks
 • Regulation of public space use
 • Improving the cohesion of the park axis  |
-|  DANUBE RIVERSIDE | Strengthening the public use of riverside areas, their role in the green network and ensuring their accessibility; protecting existing riverside vegetation and gallery forests; enhancing natural functions and improving the intensity of green spaces | • Floodplain forest regeneration, rehabilitation, protection of floodplain woodland habitats
+DANUBE RIVERSIDE | Strengthening the public use of riverside areas, their role in the green network and ensuring their accessibility; protecting existing riverside vegetation and gallery forests; enhancing natural functions and improving the intensity of green spaces | • Floodplain forest regeneration, rehabilitation, protection of floodplain woodland habitats
 • Protection and enhancement of natural and cultural heritage
 • Provision of public spaces and green areas for riverside developments
 • Reconstruction and improvement of flood protection structures  |
-|  URBAN SMALL WATERCOURSES | Improving the ecological function of small watercourses (wetland revitalisation, species conservation), improving water connectivity, coordinated ecological and recreational regeneration of riparian areas and the preservation of the natural assets of stream valleys in complex revitalisation | • Stream revitalisation, water management, development of a complex revitalisation protocol
+URBAN SMALL WATERCOURSES | Improving the ecological function of small watercourses (wetland revitalisation, species conservation), improving water connectivity, coordinated ecological and recreational regeneration of riparian areas and the preservation of the natural assets of stream valleys in complex revitalisation | • Stream revitalisation, water management, development of a complex revitalisation protocol
 • Conservation and reconstruction of natural habitats
 • Feasibility studies and master plans  |
-|  DOWNTOWN | Improving the functionality and urban ecology of existing green spaces; promoting and supporting the creation of alternative green spaces | • Renewal and replacement of public trees, creation of new tree planting opportunities
+DOWNTOWN | Improving the functionality and urban ecology of existing green spaces; promoting and supporting the creation of alternative green spaces | • Renewal and replacement of public trees, creation of new tree planting opportunities
 • Courtyard, roof and fire wall greening programme
 • Preparation of a publication on the possibilities for transitional greening  |
-|  FORESTS | Preventing the loss of forest areas, increasing forest areas; ensuring public welfare functions and sustainable management; ensuring the maintenance of forest and other semi-natural ecosystems and habitats, preserving and, where possible, improving biodiversity; developing the outer Pest green ring. | • Preservation of existing forest areas, qualitative and quantitative improvement
+FORESTS | Preventing the loss of forest areas, increasing forest areas; ensuring public welfare functions and sustainable management; ensuring the maintenance of forest and other semi-natural ecosystems and habitats, preserving and, where possible, improving biodiversity; developing the outer Pest green ring. | • Preservation of existing forest areas, qualitative and quantitative improvement
 • Maintaining a complex approach to forest management to ensure continuous forest cover
 • Continuous monitoring of forest health
 • Recreational development of forests taking into account natural aspects  |
@@ -1783,27 +1720,27 @@ BUDAPEST
 Climate Neutrality Action Plan
 7
 
-|   |  | • Suitability assessment of areas classified as forest but without afforestation, development of a reforestation programme  |
+|  |  | • Suitability assessment of areas classified as forest but without afforestation, development of a reforestation programme |
 | --- | --- | --- |
-|  SEMI NATURAL AREAS | Ensuring the preservation and improvement of natural areas and valuable habitat, strengthening the role of semi-natural areas in the green infrastructure of the city: recreational development taking into account nature conservation aspects | • Conservation and reconstruction of natural habitats
+| SEMI NATURAL AREAS | Ensuring the preservation and improvement of natural areas and valuable habitat, strengthening the role of semi-natural areas in the green infrastructure of the city: recreational development taking into account nature conservation aspects | • Conservation and reconstruction of natural habitats |
 • Continuous monitoring of semi-natural areas
 • Protection of valuable natural areas
 • Preparation of a biodiversity strategy
 • Mapping ecosystem services
 • Development of ecotourism infrastructure and services  |
-|  TREE-LINES, GREEN STRIPS AND GREEN WALKWAYS | Increasing the number of trees in public spaces, and improving their living conditions in order to achieve the best possible conditioning effect | • Creation of a unified Budapest tree register
+TREE-LINES, GREEN STRIPS AND GREEN WALKWAYS | Increasing the number of trees in public spaces, and improving their living conditions in order to achieve the best possible conditioning effect | • Creation of a unified Budapest tree register
 • Initiating amendments to higher level legislation to better protect trees
 • Harmonisation of district municipalities' green space and tree protection/compensation ordinances
 • Updating the relevant regulations of the Municipality for better protection of trees
 • Developing a 2030 timeframe for afforestation, with an annual timetable
 • Introduction and dissemination of quality, modern urban afforestation solutions  |
-|  APARTMENT BLOCKS | The qualitative renewal of their recreational functions and the infrastructure that serves them, adapting to changing environmental factors and the recreational needs of the local population; creating diversity; implementing sustainability principles | • High quality renewal and professional maintenance of green spaces and infrastructure in residential areas
+APARTMENT BLOCKS | The qualitative renewal of their recreational functions and the infrastructure that serves them, adapting to changing environmental factors and the recreational needs of the local population; creating diversity; implementing sustainability principles | • High quality renewal and professional maintenance of green spaces and infrastructure in residential areas
 • Model project for the complex rehabilitation of a housing estate
 • Protection of green spaces, enhancement of ecosystem services
 • Enhancing recreational functions
 • Encouraging the construction of community gardens
 • Production of a publication on green space design and maintenance in residential areas as part of the Green Infrastructure booklet series  |
-|  CEMETERIES | Protection, qualitative renewal and ongoing professional maintenance of green infrastructure; development of an ecological approach to cemeteries; development and co-designing of public cemeteries; recreational use of operational cemeteries; public use of closed cemeteries; temporary green space use of disused cemeteries | • Development of a plan of measures for the development of green infrastructure and the use of green networks in cemeteries
+CEMETERIES | Protection, qualitative renewal and ongoing professional maintenance of green infrastructure; development of an ecological approach to cemeteries; development and co-designing of public cemeteries; recreational use of operational cemeteries; public use of closed cemeteries; temporary green space use of disused cemeteries | • Development of a plan of measures for the development of green infrastructure and the use of green networks in cemeteries
 • Protection, quality renewal and professional maintenance of green infrastructure
 • Better use of the recreational potential of existing cemeteries, public use of closed cemeteries, temporary use of disused cemeteries for green infrastructure
 • Survey and inventory of cemetery infrastructure
@@ -1835,231 +1772,191 @@ completely eliminate their emissions within the city border, the use of carbon c
 
 Table: Indicators
 
-|  B-3.1: Indicators  |   |   |   |   |   |   |   |
+| B-3.1: Indicators |  |  |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Outcomes/impacts addressed | Action/ project | Indicator No.(unique identified) | Indicator name |  | Target values  |   |   |
-|   |   |   |   |   | 2025 | 2027 | 2030  |
-|  (List early changes/ late outcomes and impacts to be evaluated by indicator) | (List action/ pilot project if applicable) | (Indicate unique identifier) | (Insert indicator name) |  | (List one value per indicator) | (List one value per indicator) | (List one value per indicator)  |
-|  Because of the extensive list of outcomes, please see under Buildings and heating on pages 41-42 | Building renovations (envelope) | 1 | GHG emission from stationary energy including district heating/cooling (kt CO2e/year) |  | 1822 | 1234 | 645  |
-|   |  New energy-efficient buildings |   |   |   |   |   |   |
-|   |  Efficient lighting & appliances |   |   |   |   |   |   |
-|   |  Decarbonising heating generation |   |   |   |   |   |   |
-|  Because of the extensive list of outcomes, please see under Transport on pages 39-41 | Reduced motorized passenger transportation need | 2 | GHG emission from transport (kt CO2e/year) |  | 898 | 602 | 307  |
-|   |  Shift to public & non-motorized transport |   |   |   |   |   |   |
-|   |  Increased car-pooling |   |   |   |   |   |   |
-|   |  Electrification of cars + motorcycles |   |   |   |   |   |   |
-|   |  Electrification of buses |   |   |   |   |   |   |
-|   |  Optimized logistics |   |   |   |   |   |   |
-BUDAPEST
-
-Climate Neutrality Action Plan
-
-0
-
-|  Electrification of trucks |  |  |  |  |  |   |
+| Outcomes/impacts addressed | Action/ project | Indicator No.(unique identified) | Indicator name |  | Target values |  |  |
+|  |  |  |  |  | 2025 | 2027 | 2030 |
+| (List early changes/ late outcomes and impacts to be evaluated by indicator) | (List action/ pilot project if applicable) | (Indicate unique identifier) | (Insert indicator name) |  | (List one value per indicator) | (List one value per indicator) | (List one value per indicator) |
+| Because of the extensive list of outcomes, please see under Buildings and heating on pages 41-42 | Building renovations (envelope) | 1 | GHG emission from stationary energy including district heating/cooling (kt CO2e/year) |  | 1822 | 1234 | 645 |
+|  | New energy-efficient buildings |  |  |  |  |  |  |
+|  | Efficient lighting & appliances |  |  |  |  |  |  |
+|  | Decarbonising heating generation |  |  |  |  |  |  |
+| Because of the extensive list of outcomes, please see under Transport on pages 39-41 | Reduced motorized passenger transportation need | 2 | GHG emission from transport (kt CO2e/year) |  | 898 | 602 | 307 |
+|  | Shift to public & non-motorized transport |  |  |  |  |  |  |
+|  | Increased car-pooling |  |  |  |  |  |  |
+|  | Electrification of cars + motorcycles |  |  |  |  |  |  |
+|  | Electrification of buses |  |  |  |  |  |  |
+|  | Optimized logistics |  |  |  |  |  |  |
+| Electrification of trucks |  |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- |
-|  Because of the extensive list of outcomes, please see under Waste on page 42 | Increased waste recycling | 3 | GHG emission from waste (kt CO₂e/year) | 106 | 78 | 50  |
-|  Because of the extensive list of outcomes, please see under Other on page 42 |  | 4 | GHG emission from IPPU (kt CO₂e/year) | 5,9 | 3,7 | 1,6  |
-|  Because of the extensive list of outcomes, please see under Other on page 42 |  | 5 | GHG emissions from AFOLU (kt CO₂e/year) | 0,8 | 0,5 | 0,2  |
-|  Because of the extensive list of outcomes, please see under Electricity on page 41 | Decarbonising electricity generation | 6 | GHG emission from electricity (kt CO₂e/year) | 1186 | 636 | 87  |
-|  Overall development of the climate neutrality work | All actions | 7 | Residual emissions (% of baseline BAU 2030 emissions) | 73% | 47% | 20%  |
+| Because of the extensive list of outcomes, please see under Waste on page 42 | Increased waste recycling | 3 | GHG emission from waste (kt CO₂e/year) | 106 | 78 | 50 |
+| Because of the extensive list of outcomes, please see under Other on page 42 |  | 4 | GHG emission from IPPU (kt CO₂e/year) | 5,9 | 3,7 | 1,6 |
+| Because of the extensive list of outcomes, please see under Other on page 42 |  | 5 | GHG emissions from AFOLU (kt CO₂e/year) | 0,8 | 0,5 | 0,2 |
+| Because of the extensive list of outcomes, please see under Electricity on page 41 | Decarbonising electricity generation | 6 | GHG emission from electricity (kt CO₂e/year) | 1186 | 636 | 87 |
+| Overall development of the climate neutrality work | All actions | 7 | Residual emissions (% of baseline BAU 2030 emissions) | 73% | 47% | 20% |
 
 ## 3-5. Table: Indicator Metadata
 
-|  B-3.2: Indicator Metadata  |   |
+| B-3.2: Indicator Metadata |  |
 | --- | --- |
-|  1  |   |
-|  Indicator Name | GHG emission from stationary energy  |
-|  Indicator Unit | t CO₂ equivalent  |
-|  Definition | Greenhouse gas emissions from the operations of buildings and facilities.  |
-|  Calculation | The cumulative amount of GHG emissions from the operations of buildings including district heating/cooling, excluding electricity.  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | yes  |
-|  If yes, which emission source sectors does it measure? | Buildings and heating  |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | no  |
-|  If yes, which co-benefit does it measure? | -  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | yes  |
-|  If yes, which action and impact pathway is it relevant for? | Buildings & heating  |
-BUDAPEST
-
-Climate Neutrality Action Plan
-
-1
-
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | yes  |
+| 1 |  |
+| Indicator Name | GHG emission from stationary energy |
+| Indicator Unit | t CO₂ equivalent |
+| Definition | Greenhouse gas emissions from the operations of buildings and facilities. |
+| Calculation | The cumulative amount of GHG emissions from the operations of buildings including district heating/cooling, excluding electricity. |
+| Indicator Context |  |
+| Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | yes |
+| If yes, which emission source sectors does it measure? | Buildings and heating |
+| Does the indicator measure indirect impacts (i.e., co-benefits)? | no |
+| If yes, which co-benefit does it measure? | - |
+| Is the indicator useful for monitoring the output/impact of action(s)? | yes |
+| If yes, which action and impact pathway is it relevant for? | Buildings & heating |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | yes |
 | --- | --- |
-|  Data requirements |   |
-|  Expected data source | Municipal institutions, municipal companies, MVM Főgáz Natural Gas Network Ltd., National Tax and Customs Administration of Hungary  |
-|  Is the data source local or regional/national? | local  |
-|  Expected availability | available  |
-|  Suggested collection interval | annually  |
-|  References |   |
-|  Deliverables describing the indicator | SECAP emissions inventory  |
-|  Other indicator systems using this indicator | -  |
-|  B-3.2: Indicator Metadata  |   |
+| Data requirements |  |
+| Expected data source | Municipal institutions, municipal companies, MVM Főgáz Natural Gas Network Ltd., National Tax and Customs Administration of Hungary |
+| Is the data source local or regional/national? | local |
+| Expected availability | available |
+| Suggested collection interval | annually |
+| References |  |
+| Deliverables describing the indicator | SECAP emissions inventory |
+| Other indicator systems using this indicator | - |
+| B-3.2: Indicator Metadata |  |
+| 2 |  |
+| Indicator Name | GHG emission from transport |
+| Indicator Unit | t CO2 equivalent |
+| Definition | Greenhouse gas emissions from the operations of on-road vehicles. |
+| Calculation | The cumulative amount of GHG emissions from transport minus electricity |
+| Indicator Context |  |
+| Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | yes |
+| If yes, which emission source sectors does it measure? | Transport |
+| Does the indicator measure indirect impacts (i.e., co-benefits)? | no |
+| If yes, which co-benefit does it measure? | - |
+| Is the indicator useful for monitoring the output/impact of action(s)? | yes |
+| If yes, which action and impact pathway is it relevant for? | Transport |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | yes |
+| Data requirements |  |
+| Expected data source | National Tax and Customs Administration of Hungary |
+| Is the data source local or regional/national? | national |
+| Expected availability | available |
+| Suggested collection interval | annually |
+| References |  |
+| Deliverables describing the indicator | SECAP emissions inventory |
+| Other indicator systems using this indicator | - |
+| B-3.2: Indicator Metadata |  |
 | --- | --- |
-|  2  |   |
-|  Indicator Name | GHG emission from transport  |
-|  Indicator Unit | t CO2 equivalent  |
-|  Definition | Greenhouse gas emissions from the operations of on-road vehicles.  |
-|  Calculation | The cumulative amount of GHG emissions from transport minus electricity  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | yes  |
-|  If yes, which emission source sectors does it measure? | Transport  |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | no  |
-|  If yes, which co-benefit does it measure? | -  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | yes  |
-|  If yes, which action and impact pathway is it relevant for? | Transport  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | yes  |
-|  Data requirements |   |
-|  Expected data source | National Tax and Customs Administration of Hungary  |
-|  Is the data source local or regional/national? | national  |
-|  Expected availability | available  |
-|  Suggested collection interval | annually  |
-|  References |   |
-|  Deliverables describing the indicator | SECAP emissions inventory  |
-|  Other indicator systems using this indicator | -  |
-BUDAPEST
-
-Climate Neutrality Action Plan
-
-2
-
-|  B-3.2: Indicator Metadata  |   |
+| 3 |  |
+| Indicator Name | GHG emission from waste |
+| Indicator Unit | t CO₂ equivalent |
+| Definition | Greenhouse gas emissions from waste treatment, waste incineration and landfills |
+| Calculation | Quantity of waste per End-of-life (EoL) treatment type x emission factors per EoL treatment |
+| Indicator Context |  |
+| Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | yes |
+| If yes, which emission source sectors does it measure? | Waste |
+| Does the indicator measure indirect impacts (i.e., co-benefits)? | no |
+| If yes, which co-benefit does it measure? | - |
+| Is the indicator useful for monitoring the output/impact of action(s)? | yes |
+| If yes, which action and impact pathway is it relevant for? | Waste |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | no |
+| Data requirements |  |
+| Expected data source | MOHU |
+| Is the data source local or regional/national? | local |
+| Expected availability | available |
+| Suggested collection interval | annually |
+| References |  |
+| Deliverables describing the indicator | - |
+| Other indicator systems using this indicator | - |
+| B-3.2: Indicator Metadata |  |
+| 4 |  |
+| Indicator Name | GHG emission from IPPU |
+| Indicator Unit | t CO₂ equivalent |
+| Definition | Greenhouse gas emissions from use of energy sources related to industrial processes |
+| Calculation | The cumulative amount of GHG emissions from the use of liquid gas in industrial processes. |
+| Indicator Context |  |
+| Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | yes |
+| If yes, which emission source sectors does it measure? | Other |
+| Does the indicator measure indirect impacts (i.e., co-benefits)? | no |
+| If yes, which co-benefit does it measure? |  |
 | --- | --- |
-|  3  |   |
-|  Indicator Name | GHG emission from waste  |
-|  Indicator Unit | t CO₂ equivalent  |
-|  Definition | Greenhouse gas emissions from waste treatment, waste incineration and landfills  |
-|  Calculation | Quantity of waste per End-of-life (EoL) treatment type x emission factors per EoL treatment  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | yes  |
-|  If yes, which emission source sectors does it measure? | Waste  |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | no  |
-|  If yes, which co-benefit does it measure? | -  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | yes  |
-|  If yes, which action and impact pathway is it relevant for? | Waste  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | no  |
-|  Data requirements |   |
-|  Expected data source | MOHU  |
-|  Is the data source local or regional/national? | local  |
-|  Expected availability | available  |
-|  Suggested collection interval | annually  |
-|  References |   |
-|  Deliverables describing the indicator | -  |
-|  Other indicator systems using this indicator | -  |
-|  B-3.2: Indicator Metadata  |   |
+| Is the indicator useful for monitoring the output/impact of action(s)? | yes |
+| If yes, which action and impact pathway is it relevant for? | Other |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | yes |
+| Data requirements |  |
+| Expected data source | National Tax and Customs Administration of Hungary |
+| Is the data source local or regional/national? | national |
+| Expected availability | available |
+| Suggested collection interval | annually |
+| References |  |
+| Deliverables describing the indicator | SECAP emissions inventory |
+| Other indicator systems using this indicator | - |
+| B-3.2: Indicator Metadata |  |
+| 5 |  |
+| Indicator Name | GHG emission from AFOLU |
+| Indicator Unit | t CO2 equivalent |
+| Definition | Greenhouse gas emissions from the use of energy sources related to agriculture |
+| Calculation | The cumulative amount of GHG emissions from the use of natural gas in agriculture and land use |
+| Indicator Context |  |
+| Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | yes |
+| If yes, which emission source sectors does it measure? | Other |
+| Does the indicator measure indirect impacts (i.e., co-benefits)? | no |
+| If yes, which co-benefit does it measure? | - |
+| Is the indicator useful for monitoring the output/impact of action(s)? | yes |
+| If yes, which action and impact pathway is it relevant for? | Other |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | yes |
+| Data requirements |  |
+| Expected data source | MVM Főgáz Natural Gas Network Ltd. |
+| Is the data source local or regional/national? | national |
+| Expected availability | available |
+| Suggested collection interval | annually |
+| References |  |
+| Deliverables describing the indicator | SECAP emissions inventory |
 | --- | --- |
-|  4  |   |
-|  Indicator Name | GHG emission from IPPU  |
-|  Indicator Unit | t CO₂ equivalent  |
-|  Definition | Greenhouse gas emissions from use of energy sources related to industrial processes  |
-|  Calculation | The cumulative amount of GHG emissions from the use of liquid gas in industrial processes.  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | yes  |
-|  If yes, which emission source sectors does it measure? | Other  |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | no  |
-BUDAPEST
-
-Climate Neutrality Action Plan
-
-3
-
-|  If yes, which co-benefit does it measure? |   |
+| Other indicator systems using this indicator | - |
+| B-3.2: Indicator Metadata |  |
+| 6 |  |
+| Indicator Name | GHG emission from grid supplied energy - electricity |
+| Indicator Unit | t CO2 equivalent |
+| Definition | GHG emissions occurring as a consequence of the use of grid-supplied electricity within the city boundary |
+| Calculation | The cumulative amount of GHG emissions from electricity |
+| Indicator Context |  |
+| Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | yes |
+| If yes, which emission source sectors does it measure? | Electricity |
+| Does the indicator measure indirect impacts (i.e., co-benefits)? | no |
+| If yes, which co-benefit does it measure? | - |
+| Is the indicator useful for monitoring the output/impact of action(s)? | yes |
+| If yes, which action and impact pathway is it relevant for? | Electricity, Transport, Buildings and heating, Other |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | yes |
+| Data requirements |  |
+| Expected data source | ELMÜ Power Distribution |
+| Is the data source local or regional/national? | local |
+| Expected availability | available |
+| Suggested collection interval | annually |
+| References |  |
+| Deliverables describing the indicator | SECAP emissions inventory |
+| Other indicator systems using this indicator | - |
+| B-3.2: Indicator Metadata |  |
 | --- | --- |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | yes  |
-|  If yes, which action and impact pathway is it relevant for? | Other  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | yes  |
-|  Data requirements |   |
-|  Expected data source | National Tax and Customs Administration of Hungary  |
-|  Is the data source local or regional/national? | national  |
-|  Expected availability | available  |
-|  Suggested collection interval | annually  |
-|  References |   |
-|  Deliverables describing the indicator | SECAP emissions inventory  |
-|  Other indicator systems using this indicator | -  |
-|  B-3.2: Indicator Metadata  |   |
-| --- | --- |
-|  5  |   |
-|  Indicator Name | GHG emission from AFOLU  |
-|  Indicator Unit | t CO2 equivalent  |
-|  Definition | Greenhouse gas emissions from the use of energy sources related to agriculture  |
-|  Calculation | The cumulative amount of GHG emissions from the use of natural gas in agriculture and land use  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | yes  |
-|  If yes, which emission source sectors does it measure? | Other  |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | no  |
-|  If yes, which co-benefit does it measure? | -  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | yes  |
-|  If yes, which action and impact pathway is it relevant for? | Other  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | yes  |
-|  Data requirements |   |
-|  Expected data source | MVM Főgáz Natural Gas Network Ltd.  |
-|  Is the data source local or regional/national? | national  |
-|  Expected availability | available  |
-|  Suggested collection interval | annually  |
-|  References |   |
-BUDAPEST
-
-Climate Neutrality Action Plan
-
-4
-
-|  Deliverables describing the indicator | SECAP emissions inventory  |
-| --- | --- |
-|  Other indicator systems using this indicator | -  |
-|  B-3.2: Indicator Metadata  |   |
-| --- | --- |
-|  6  |   |
-|  Indicator Name | GHG emission from grid supplied energy - electricity  |
-|  Indicator Unit | t CO2 equivalent  |
-|  Definition | GHG emissions occurring as a consequence of the use of grid-supplied electricity within the city boundary  |
-|  Calculation | The cumulative amount of GHG emissions from electricity  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | yes  |
-|  If yes, which emission source sectors does it measure? | Electricity  |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | no  |
-|  If yes, which co-benefit does it measure? | -  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | yes  |
-|  If yes, which action and impact pathway is it relevant for? | Electricity, Transport, Buildings and heating, Other  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | yes  |
-|  Data requirements |   |
-|  Expected data source | ELMÜ Power Distribution  |
-|  Is the data source local or regional/national? | local  |
-|  Expected availability | available  |
-|  Suggested collection interval | annually  |
-|  References |   |
-|  Deliverables describing the indicator | SECAP emissions inventory  |
-|  Other indicator systems using this indicator | -  |
-BUDAPEST
-
-Climate Neutrality Action Plan
-
-5
-
-|  B-3.2: Indicator Metadata  |   |
-| --- | --- |
-|  7 |   |
-|  Indicator Name | Residual emissions  |
-|  Indicator Unit | %  |
-|  Definition | The difference between the city’s GHG emissions inventory and their 2030 climate neutrality target.  |
-|  Calculation | The city’s annual GHG emissions divided by GHG emissions in the baseline inventory.  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | yes  |
-|  If yes, which emission source sectors does it measure? | all  |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | no  |
-|  If yes, which co-benefit does it measure? | -  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | yes  |
-|  If yes, which action and impact pathway is it relevant for? | all  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | no  |
-|  Data requirements |   |
-|  Expected data source | GHG inventory  |
-|  Is the data source local or regional/national? | local  |
-|  Expected availability | available  |
-|  Suggested collection interval | annually  |
-|  References |   |
-|  Deliverables describing the indicator | Action Plan Guidance  |
-|  Other indicator systems using this indicator | -  |
+| 7 |  |
+| Indicator Name | Residual emissions |
+| Indicator Unit | % |
+| Definition | The difference between the city’s GHG emissions inventory and their 2030 climate neutrality target. |
+| Calculation | The city’s annual GHG emissions divided by GHG emissions in the baseline inventory. |
+| Indicator Context |  |
+| Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | yes |
+| If yes, which emission source sectors does it measure? | all |
+| Does the indicator measure indirect impacts (i.e., co-benefits)? | no |
+| If yes, which co-benefit does it measure? | - |
+| Is the indicator useful for monitoring the output/impact of action(s)? | yes |
+| If yes, which action and impact pathway is it relevant for? | all |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | no |
+| Data requirements |  |
+| Expected data source | GHG inventory |
+| Is the data source local or regional/national? | local |
+| Expected availability | available |
+| Suggested collection interval | annually |
+| References |  |
+| Deliverables describing the indicator | Action Plan Guidance |
+| Other indicator systems using this indicator | - |
 BUDAPEST
 
 Climate Neutrality Action Plan
@@ -2127,35 +2024,30 @@ The table below summarizes the key governance innovation planned or already in p
 
 C.1.2: Relations between governance innovations, systems, and impact pathways
 
-|  Intervention name | Description | Systemic barriers / opportunities addressed | Leadership and stakeholders involved | Enabling impact | Co-benefits  |
+| Intervention name | Description | Systemic barriers / opportunities addressed | Leadership and stakeholders involved | Enabling impact | Co-benefits |
 | --- | --- | --- | --- | --- | --- |
-|  Budapest Global | A network of local private companies dedicated to take an active role in driving change in the city including transitioning towards climate neutrality. | High degree of fragmentation Lack of information | Municipality of Budapest Private companies | Knowledge and information sharing Synergies between the companies' and the municipality's climate neutrality target | Relationship building with local stakeholders  |
-|  Climate Platform | A collaborative platform led by the city administration. It engages external partners from the public sphere, academia, and the civil sector on climate issues. | High degree of fragmentation Lack of information | Municipality of Budapest Academia Civil organizations Public companies | Knowledge and information sharing | Relationship building with local stakeholders  |
-|  Green Budapest Working Group | A collaborative coordination group of civil organizations and the municipality working together on making the city greener and sustainable. | High degree of fragmentation Lack of information | Municipality of Budapest Civil organizations | Knowledge and information sharing Synergies between organizations | Relationship building with local stakeholders  |
-|  Sustainable City Logistics Group | A forum where stakeholders have the opportunity to learn about planned development directions and regulatory aspects affecting city logistics, and freight traffic restrictions, and to discuss and formulate | High degree of fragmentation Lack of information | BKK Centre for Budapest Transport Academia Private companies | Knowledge and information sharing Synergies between organizations | Relationship building with local stakeholders  |
-BUDAPEST
-
-Climate Neutrality Action Plan
-
-0
-
-|   | proposals in a collaborative way. |  |  |  |   |
+| Budapest Global | A network of local private companies dedicated to take an active role in driving change in the city including transitioning towards climate neutrality. | High degree of fragmentation Lack of information | Municipality of Budapest Private companies | Knowledge and information sharing Synergies between the companies' and the municipality's climate neutrality target | Relationship building with local stakeholders |
+| Climate Platform | A collaborative platform led by the city administration. It engages external partners from the public sphere, academia, and the civil sector on climate issues. | High degree of fragmentation Lack of information | Municipality of Budapest Academia Civil organizations Public companies | Knowledge and information sharing | Relationship building with local stakeholders |
+| Green Budapest Working Group | A collaborative coordination group of civil organizations and the municipality working together on making the city greener and sustainable. | High degree of fragmentation Lack of information | Municipality of Budapest Civil organizations | Knowledge and information sharing Synergies between organizations | Relationship building with local stakeholders |
+| Sustainable City Logistics Group | A forum where stakeholders have the opportunity to learn about planned development directions and regulatory aspects affecting city logistics, and freight traffic restrictions, and to discuss and formulate | High degree of fragmentation Lack of information | BKK Centre for Budapest Transport Academia Private companies | Knowledge and information sharing Synergies between organizations | Relationship building with local stakeholders |
+|  | proposals in a collaborative way. |  |  |  |  |
 | --- | --- | --- | --- | --- | --- |
-|  Balázs Mór Committee | The committee has been a key forum for institutional and professional consultation during the development of the SUMP. Its members include the Budapest Municipality, the Budapest Transport Centre and delegates from the public and private sector. | High degree of fragmentation
+
+Balázs Mór Committee | The committee has been a key forum for institutional and professional consultation during the development of the SUMP. Its members include the Budapest Municipality, the Budapest Transport Centre and delegates from the public and private sector. | High degree of fragmentation
 Lack of information | BKK Centre for Budapest Transport
 Municipality of Budapest
 Private companies | Knowledge and information sharing | Enhanced internal awareness
 Relationship building with local stakeholders  |
-|  Sustainability reporting | A universal reporting scheme developed by the municipality for public companies to track their progress towards climate neutrality and create motivation for the transition. | High degree of fragmentation
+Sustainability reporting | A universal reporting scheme developed by the municipality for public companies to track their progress towards climate neutrality and create motivation for the transition. | High degree of fragmentation
 Lack of information | Municipality of Budapest
 Public companies | The reporting helps the municipality and its companies to track their progress towards climate neutrality. | Enhanced internal awareness  |
-|  nvironmental Status Assessment Report of Budapest | An annual report describing the environmental status of Budapest with special focus on green surfaces, waters, soil condition, air quality, and climatic conditions | Lack of information | Municipality of Budapest
+Environmental Status Assessment Report of Budapest | An annual report describing the environmental status of Budapest with special focus on green surfaces, waters, soil condition, air quality, and climatic conditions | Lack of information | Municipality of Budapest
 Public companies
 Wider City | It provides information about the status of the environment that can guide prioritizing and decision-making. | Enhanced public awareness
 Increased transparency and accountability  |
-|  Proposal review based on adherence to SECAP | To integrate climate protection measures during the preparation and review of urban development and thematic sectoral strategies, the Department for Climate and Environmental Affairs can review and advise on relevant proposals and measures. | High degree of fragmentation | Municipality of Budapest | The measure formalizes a higher municipal commitment to climate protection and makes sure environmental aspects are considered where relevant. | Increased accountability
+Proposal review based on adherence to SECAP | To integrate climate protection measures during the preparation and review of urban development and thematic sectoral strategies, the Department for Climate and Environmental Affairs can review and advise on relevant proposals and measures. | High degree of fragmentation | Municipality of Budapest | The measure formalizes a higher municipal commitment to climate protection and makes sure environmental aspects are considered where relevant. | Increased accountability
 Enhanced internal awareness  |
-|  Green budgeting | A budgeting tool currently in development to track green spending and support decision-making. | Lack of information
+Green budgeting | A budgeting tool currently in development to track green spending and support decision-making. | Lack of information
 Financial barriers | Municipality of Budapest | The tool will enable climate investment tracking and support decision-making | Enhanced public awareness
 Increased transparency and accountability  |
 BUDAPEST
@@ -2164,13 +2056,14 @@ Climate Neutrality Action Plan
 
 1
 
-|  Environment Protection Fund | A fund financed by fines and donations that civil organizations, schools and kindergartens can apply for to implement green projects. | Financial barriers | Municipality of Budapest
+Environment Protection Fund | A fund financed by fines and donations that civil organizations, schools and kindergartens can apply for to implement green projects. | Financial barriers | Municipality of Budapest
 Civil organizations
 Public institutions | The fund can only be spent on green projects | Community engagement  |
 | --- | --- | --- | --- | --- | --- |
-|  Green Budapest Foundation | The goal of the foundation is to channel private funding into green projects and developments of the City. | Financial barriers | Municipality of Budapest
+| --- | --- | --- | --- |
+| Green Budapest Foundation | The goal of the foundation is to channel private funding into green projects and developments of the City. | Financial barriers | Municipality of Budapest |
 Private companies | Donations are spent on greening projects and interventions. | Stronger cooperation with the private sector  |
-|  Green Budapest Label | The Municipality developed the label as part of its green brand, in appreciation of organizations' actions and targets towards climate neutrality. The 'Green Budapest – We're doing our part' label is provided to organisations that are contributing to the transition. The label recognises the quality of efforts and contributions of signatories and can be used for communications and PR purposes in line with the Mission and activities defined in the individual MoUs. | Lack of information
+Green Budapest Label | The Municipality developed the label as part of its green brand, in appreciation of organizations' actions and targets towards climate neutrality. The 'Green Budapest – We're doing our part' label is provided to organisations that are contributing to the transition. The label recognises the quality of efforts and contributions of signatories and can be used for communications and PR purposes in line with the Mission and activities defined in the individual MoUs. | Lack of information
 Financial barriers
 Environmental consciousness of society | Municipality of Budapest
 Private companies
@@ -2197,13 +2090,13 @@ The barriers and opportunities listed in Table 4-2. go beyond the description of
 
 Table: Relations between social innovations, systems, and impact pathways
 
-|  C.2.1 Table: Relations between social innovations, systems, and impact pathways  |   |   |   |   |   |
+| C.2.1 Table: Relations between social innovations, systems, and impact pathways |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- |
-|  |   |   |   |   |   |
-|  Intervention name | Description | Systemic barriers / opportunities addressed | Leadership and stakeholders involved | Enabling impact | Co-benefits  |
-|  (Indicate name of intervention) | (Describe the substance of the intervention) | (Refer to barriers and opportunities identified in Module A-3) | (List leaders and all stakeholder involved and affected, referring to the stakeholders mapped in Module A3) | (Describe how intervention enables climate neutrality) | (Indicate how intervention helps achieve the impact listed in Module B-1)  |
-|  Transportation  |   |   |   |   |   |
-|  Bike-sharing program & micromobility points | MOL Bubi is BKK Centre for Budapest Transport's public transport service with 24/7 availability. Bikes can be picked and dropped off at the MOL Bubi stations. There are 197 stations with 2460 bikes. The public bikes can be used with the MOL Bubi app with a monthly or annual pass or at a pay-as-you-go rate. The MOL Bubi can be easily combined with other modes of transport. | Barriers
+| Intervention name | Description | Systemic barriers / opportunities addressed | Leadership and stakeholders involved | Enabling impact | Co-benefits |
+| (Indicate name of intervention) | (Describe the substance of the intervention) | (Refer to barriers and opportunities identified in Module A-3) | (List leaders and all stakeholder involved and affected, referring to the stakeholders mapped in Module A3) | (Describe how intervention enables climate neutrality) | (Indicate how intervention helps achieve the impact listed in Module B-1) |
+| Transportation |  |  |  |  |  |
+
+Bike-sharing program & micromobility points | MOL Bubi is BKK Centre for Budapest Transport's public transport service with 24/7 availability. Bikes can be picked and dropped off at the MOL Bubi stations. There are 197 stations with 2460 bikes. The public bikes can be used with the MOL Bubi app with a monthly or annual pass or at a pay-as-you-go rate. The MOL Bubi can be easily combined with other modes of transport. | Barriers
 Spread of individual motorisation
 Opportunities
 Strategic growth of micro- and e-mobility infrastructure | BKK Centre for Budapest Transport, Sharing economy actors, The Municipality of Budapest, District governments | Promotes active mobility and the sharing economy over the use of passenger cars. Shared vehicles complement the public transport system especially by offering active and electric | Shift to public & non-motorized transport
@@ -2215,9 +2108,10 @@ Climate Neutrality Action Plan
 
 3
 
-|   | BKK Centre for Budapest Transport have installed micromobility stations (Mobi points) for private and shared bikes and scooters, aiming to provide an organised parking solution for shared vehicles. The micromobility points are also able to host Mol Bubi bikes temporarily. Mobi points contribute to a more well-ordered cityscape, promotes more sustainable mobility and a liveable city. | Increasing popularity of active and environmentally friendly mobility |  | mobility solutions for first mile/last mile transports. | Improved cityscape – a more organised and well-ordered urban landscape  |
+|  | BKK Centre for Budapest Transport have installed micromobility stations (Mobi points) for private and shared bikes and scooters, aiming to provide an organised parking solution for shared vehicles. The micromobility points are also able to host Mol Bubi bikes temporarily. Mobi points contribute to a more well-ordered cityscape, promotes more sustainable mobility and a liveable city. | Increasing popularity of active and environmentally friendly mobility |  | mobility solutions for first mile/last mile transports. | Improved cityscape – a more organised and well-ordered urban landscape |
 | --- | --- | --- | --- | --- | --- |
-|  BudapestGO | BudapestGO is the BKK Centre for Budapest Transport's mobility app bringing together various elements of public transport use into one service. Journey planning is based on real-time data, push notifications inform the passenger in case of traffic changes. Tickets and passes can also be purchased in the app. The MOL Bubi public bike-sharing system is included in route planning function. | **Barriers**
+
+BudapestGO | BudapestGO is the BKK Centre for Budapest Transport's mobility app bringing together various elements of public transport use into one service. Journey planning is based on real-time data, push notifications inform the passenger in case of traffic changes. Tickets and passes can also be purchased in the app. The MOL Bubi public bike-sharing system is included in route planning function. | **Barriers**
 Spread of individual motorisation
 
 **Opportunities**
@@ -2227,7 +2121,7 @@ The BudapestGO makes public transportation more popular as ticket purchase, trav
 Reduced motorised transportation need
 Less congestion, air and noise pollution
 Health benefits – improved air quality  |
-|  Bikebus and Bike to work initiatives to promote cycling | Hungarian Cyclists' Club as a civil organisation, promotes cycling as an active mode of transport. Both initiatives strengthen this endeavour.
+Bikebus and Bike to work initiatives to promote cycling | Hungarian Cyclists' Club as a civil organisation, promotes cycling as an active mode of transport. Both initiatives strengthen this endeavour.
 The 'Bicibusz' (bike bus) initiative is based on the well-known example from Barcelona. With the Bicibusz (bikebus) initiative, the Hungarian Cyclists' Club aims to implement the bikebus framework nationally to support children travel to school by bicycle or scooter in organised groups, on a predetermined route and at a predetermined time. The rides, led by adult volunteers, are fun and effective in promoting a positive image of the neighbourhood and a cleaner environment.
 The 'Bike to Work' initiative promotes cycling to work amongst employees and companies. By | **Barriers**
 Spread of individual motorisation
@@ -2245,9 +2139,10 @@ BUDAPEST
 
 Climate Neutrality Action Plan
 
-|   | highlighting the benefits of cycling, the initiative targets both employees through awareness-raising campaigns (e.g. bike breakfasts, challenges and games through the dedicated app, etc.) and employers through establishing B2B partnerships to support the uptake of cycling. |  |  |  |   |
+|  | highlighting the benefits of cycling, the initiative targets both employees through awareness-raising campaigns (e.g. bike breakfasts, challenges and games through the dedicated app, etc.) and employers through establishing B2B partnerships to support the uptake of cycling. |  |  |  |  |
 | --- | --- | --- | --- | --- | --- |
-|  Cargo-bike courier services | As part of the **HungAiry** project’s city logistic actions, the Municipality of Budapest plans to purchase two cargo bikes to demonstrate the advantages and potential uses of cargo bikes. The purchase of cargo bicycles serves awareness-raising endeavours to introduce alternatives to institutional, corporate, family and general users of passenger and goods transport by private vehicles.
+
+Cargo-bike courier services | As part of the **HungAiry** project’s city logistic actions, the Municipality of Budapest plans to purchase two cargo bikes to demonstrate the advantages and potential uses of cargo bikes. The purchase of cargo bicycles serves awareness-raising endeavours to introduce alternatives to institutional, corporate, family and general users of passenger and goods transport by private vehicles.
 
 **Cargonomia** promotes sustainable urban living and a resilient urban environment by integrating sustainable transportation with local food systems. They offer solutions for environmentally friendly urban freight transport. It is also a logistics centre for sustainable urban transport solutions where community members can borrow, rent and buy our locally manufactured cargo bikes. Additionally, the organisation aims to integrate eco-friendly transportation solutions with local food distribution by directly connecting producers with customers. Cargonomia also offers community space for events, workshops, etc.
 
@@ -2271,7 +2166,7 @@ Climate Neutrality Action Plan
 
 5
 
-|  Renopont | The RenoPont (organised by the Hungarian Energy Efficiency Institute) aims to support home renovations in a one-stop-shop model. It provides technical assistance during the renovations: consultations on the home renovation process, preparation of energy assessments and energy efficiency certificates, development of the renovation plan, information on financial possibilities, official matters (e.g. permits), referral of professionals, project management, technical inspections, etc. | Barriers
+Renopont | The RenoPont (organised by the Hungarian Energy Efficiency Institute) aims to support home renovations in a one-stop-shop model. It provides technical assistance during the renovations: consultations on the home renovation process, preparation of energy assessments and energy efficiency certificates, development of the renovation plan, information on financial possibilities, official matters (e.g. permits), referral of professionals, project management, technical inspections, etc. | Barriers
 Low willingness of renovation
 Financial barriers
 Opportunities
@@ -2282,7 +2177,8 @@ Reduced energy demand
 Lowered utility costs
 Enhanced living comfort  |
 | --- | --- | --- | --- | --- | --- |
-|  Kazán Energy Community | The energy community was created in a building co-habited by multiple NGOs (Kazán Community House) and the Gólya Cooperative. A solar panel system has been installed on the roof of the building. The income generated by its energy production will be used to form an energy community fund to make energy-efficiency improvements in the building. | Barriers
+| --- | --- | --- |
+| Kazán Energy Community | The energy community was created in a building co-habited by multiple NGOs (Kazán Community House) and the Gólya Cooperative. A solar panel system has been installed on the roof of the building. The income generated by its energy production will be used to form an energy community fund to make energy-efficiency improvements in the building. | Barriers |
 Policy and administrative barriers
 Low willingness of investments
 Financial barriers
@@ -2293,7 +2189,7 @@ Stronger local communities
 Know-how exchange
 Pilot of innovative solutions and best practices
 Climate resilient energy production  |
-|  Budapest Climate Agency | As part of the Budapest CARES project, the Budapest Climate Agency was developed to support and speed up residential building energy efficiency projects. With the aim of accelerating residential building renovations, the Agency will create a comprehensive database on the energy performance of the building stock in the capital; develop a metropolitan building strategy, create a network of residential advisors, develop building energy efficiency pilot programs, identify and evaluate blended financing opportunities and launch comprehensive investment programmes. | Barriers
+Budapest Climate Agency | As part of the Budapest CARES project, the Budapest Climate Agency was developed to support and speed up residential building energy efficiency projects. With the aim of accelerating residential building renovations, the Agency will create a comprehensive database on the energy performance of the building stock in the capital; develop a metropolitan building strategy, create a network of residential advisors, develop building energy efficiency pilot programs, identify and evaluate blended financing opportunities and launch comprehensive investment programmes. | Barriers
 Low willingness of renovation.
 Financial barriers.
 Diversity of the housing stock.
@@ -2310,12 +2206,14 @@ BUDAPEST
 Climate Neutrality Action Plan
 6
 
-|   |  | homeowners of renovations.
+homeowners of renovations.
 Available incentives and subsidies.
 Awareness-raising activities |  |  |   |
 | --- | --- | --- | --- | --- | --- |
-|  **Environment**  |   |   |   |   |   |
-|  Placemaking | Placemaking initiatives in Budapest aim to renew and utilise urban spaces according to the needs of the community. The initiatives are often initiated by civil organisations such as the *Valyo* with the support of the municipality, but the **Municipality of Budapest** also launched a placemaking call to support local initiatives. Placemaking promotes the reinterpretation of underused areas, showcases alternative potentials for sustainable land uses with temporary facilities and leisure activities, makes urban areas more open, attractive and liveable, and supports community building and implementation of events and programmes initiated by citizens. In Budapest, these initiatives take form in initiatives such as Valyo Harbor, LibBridge, QUAY~2023, or parklets established in the VII. district. | **Barriers**
+| --- | --- | --- | --- | --- | --- |
+| **Environment** |  |  |  |  |  |
+
+Placemaking | Placemaking initiatives in Budapest aim to renew and utilise urban spaces according to the needs of the community. The initiatives are often initiated by civil organisations such as the *Valyo* with the support of the municipality, but the **Municipality of Budapest** also launched a placemaking call to support local initiatives. Placemaking promotes the reinterpretation of underused areas, showcases alternative potentials for sustainable land uses with temporary facilities and leisure activities, makes urban areas more open, attractive and liveable, and supports community building and implementation of events and programmes initiated by citizens. In Budapest, these initiatives take form in initiatives such as Valyo Harbor, LibBridge, QUAY~2023, or parklets established in the VII. district. | **Barriers**
 Conflicts with current urban land use (often takes space from motorised transport).
 Administrative hurdles.
 
@@ -2327,7 +2225,7 @@ Stronger communities
 Improved liveability of the city
 Improved well-being of citizens
 Improved green infrastructure and urban biodiversity  |
-|  Grants and tenders | The Municipality of Budapest supports civil and public initiatives for a greener Budapest through various **grant and tender** opportunities. Aimed at supporting project to increase environmental sustainability of the city in several areas – e.g. to support greening of courtyards and facades in densely-built areas to combat urban heat islands, promoting urban gardening and improving quality of green spaces through adoption of neglected areas, or promoting environmentally sustainable end eco-friendly lifestyles such as composting and gardening. | **Barriers**
+Grants and tenders | The Municipality of Budapest supports civil and public initiatives for a greener Budapest through various **grant and tender** opportunities. Aimed at supporting project to increase environmental sustainability of the city in several areas – e.g. to support greening of courtyards and facades in densely-built areas to combat urban heat islands, promoting urban gardening and improving quality of green spaces through adoption of neglected areas, or promoting environmentally sustainable end eco-friendly lifestyles such as composting and gardening. | **Barriers**
 Lack of available financial resources
 Fragmentation of the local administrative system
 
@@ -2344,7 +2242,7 @@ Climate Neutrality Action Plan
 
 7
 
-|  Green Budapest Foundation | The Green Budapest Foundation aims to improve the environmental condition of the capital, to protect, maintain and develop the green spaces of the capital. The Foundation supports local environmental and nature conservation initiatives, the protection of natural values, the maintenance and expansion of green infrastructure and the implementation of social development projects. Through the Foundation, companies interested in reducing their carbon footprint and other investors can support Budapest's sustainability efforts and projects. | Barriers
+Green Budapest Foundation | The Green Budapest Foundation aims to improve the environmental condition of the capital, to protect, maintain and develop the green spaces of the capital. The Foundation supports local environmental and nature conservation initiatives, the protection of natural values, the maintenance and expansion of green infrastructure and the implementation of social development projects. Through the Foundation, companies interested in reducing their carbon footprint and other investors can support Budapest's sustainability efforts and projects. | Barriers
 Lack of available financial resources
 
 Opportunities
@@ -2354,7 +2252,8 @@ Stronger communities
 Improved liveability of the city
 Improved well-being of citizens  |
 | --- | --- | --- | --- | --- | --- |
-|  Transition Communities /Towns | The aim of the Transition Communities - such as the Transition Wekerle - movement is to make local communities resilient and adaptable - able to cope with the challenges of climate change and energy scarcity. The Transition Wekerle initiative aims to strengthen communities and community relations, through the creation of local sources of food and energy; gardening, economical use of resources, promoting environmentally friendly household and transport practices; strengthening the local economy, local producers and small businesses, and the exchange of second-hand goods. | Barriers
+| --- | --- | --- |
+| Transition Communities /Towns | The aim of the Transition Communities - such as the Transition Wekerle - movement is to make local communities resilient and adaptable - able to cope with the challenges of climate change and energy scarcity. The Transition Wekerle initiative aims to strengthen communities and community relations, through the creation of local sources of food and energy; gardening, economical use of resources, promoting environmentally friendly household and transport practices; strengthening the local economy, local producers and small businesses, and the exchange of second-hand goods. | Barriers |
 Administrative hurdles
 Economic challenges
 
@@ -2367,7 +2266,7 @@ Improved liveability of the city
 Improved well-being of citizens
 Strong local economy
 Independence and resilience  |
-|  Community gardens | Organised by KÉK (Hungarian Contemporary Architecture Centre) and supported by the Municipality of Budapest, community gardens provide opportunities and space for residents to practice urban gardening. The gardens provide gardening opportunities for nearly 800 city dwellers, they act as a meeting point, a cultural and community space, and an innovation platform to test and showcase sustainable urban solutions and tools. In addition to their community-building and | Barriers
+Community gardens | Organised by KÉK (Hungarian Contemporary Architecture Centre) and supported by the Municipality of Budapest, community gardens provide opportunities and space for residents to practice urban gardening. The gardens provide gardening opportunities for nearly 800 city dwellers, they act as a meeting point, a cultural and community space, and an innovation platform to test and showcase sustainable urban solutions and tools. In addition to their community-building and | Barriers
 Lack of urban space
 
 Opportunities
@@ -2380,9 +2279,10 @@ BUDAPEST
 Climate Neutrality Action Plan
 8
 
-|   | educational functions, the gardens provide fresh vegetables, fruit and herbs for residents. Community gardens are an example of environmentally conscious and sustainable living, highlight the need for behavioural change, and provide an alternative for urban space use, community development and sustainability education. |  |  |  |   |
+|  | educational functions, the gardens provide fresh vegetables, fruit and herbs for residents. Community gardens are an example of environmentally conscious and sustainable living, highlight the need for behavioural change, and provide an alternative for urban space use, community development and sustainability education. |  |  |  |  |
 | --- | --- | --- | --- | --- | --- |
-|  Community Composting | Community composting – offered by initiatives such as the Humusz Association or the Auróra climate garden - utilises organic waste from several households to make compost. A community works together to set up composting sites. The finished compost is used collectively or according to their own needs, for example under flowerbeds or in balcony boxes. Community composting supports the building of local communities, introduces and promotes sustainable and environment-friendly lifestyles, useful for educational and awareness-raising activities. | **Barriers**
+
+Community Composting | Community composting – offered by initiatives such as the Humusz Association or the Auróra climate garden - utilises organic waste from several households to make compost. A community works together to set up composting sites. The finished compost is used collectively or according to their own needs, for example under flowerbeds or in balcony boxes. Community composting supports the building of local communities, introduces and promotes sustainable and environment-friendly lifestyles, useful for educational and awareness-raising activities. | **Barriers**
 Awareness on benefits of composing
 Different public perception on composting
 Conflicts between urban land uses
@@ -2393,28 +2293,30 @@ Improved waste management
 Improved liveability of the city
 Improved well-being of citizens
 Promotes organic farming  |
-|  **Circular economy**  |   |   |   |   |   |
-|  Repair Café | The community repair shop was initiated by Para-fitt SE and was funded by the participatory budget of Budapest. Repair Café is a place for residents to meet and jointly repair things such as clothes, furniture, electrical household appliances, bicycles, toys, etc. with the support of professionals. The repair shop operates as a community space, and provides the experience of repairing objects with your own hands while also promoting a circular economy by extending the life cycle and promoting the re-use of products. | **Barriers**
+**Circular economy** |  |  |  |  |
+
+Repair Café | The community repair shop was initiated by Para-fitt SE and was funded by the participatory budget of Budapest. Repair Café is a place for residents to meet and jointly repair things such as clothes, furniture, electrical household appliances, bicycles, toys, etc. with the support of professionals. The repair shop operates as a community space, and provides the experience of repairing objects with your own hands while also promoting a circular economy by extending the life cycle and promoting the re-use of products. | **Barriers**
 Financial barriers – funding and low revenue
 **Opportunities**
 Grants and tenders
 Synergies with corporate ESG targets | The Municipality of Budapest, District municipalities, Para-fitt SE & NGOs, technicians, residents | Promotes circular economy – extended life cycle of product, increases re-use and recycle of materials, reduces; fosters sustainable consumption. | Stronger communities
 Promotes sustainable consumption
 Technical skill development  |
-|  Shopping and thematic street management cooperative | BUM – based on the example of Vienna – aims to create harmony between residents, tourists and local businesses. The initiative brings businesses together, promotes local businesses and | **Barriers**
+Shopping and thematic street management cooperative | BUM – based on the example of Vienna – aims to create harmony between residents, tourists and local businesses. The initiative brings businesses together, promotes local businesses and | **Barriers**
 Coordination between many actors | District municipalities, Companies, BUM & other NGOs, residents | Promotes sustainable business strategies, walkable and friendly streets, | Stronger communities
 Strong local economy  |
 BUDAPEST
 Climate Neutrality Action Plan
 9
 
-|   | initiatives, and supports the organisation of programmes and events to get residents actively involved in the life of the city, Thematic street initiatives are designed to enhance the liveability of streets and local businesses' operations by making them more attractive, expanding the range of functions, and ensuring coordinated operation with residential areas. There is also a growing emphasis on the support for the use of empty shops and business premises. | Lack of experience
+initiatives, and supports the organisation of programmes and events to get residents actively involved in the life of the city, Thematic street initiatives are designed to enhance the liveability of streets and local businesses' operations by making them more attractive, expanding the range of functions, and ensuring coordinated operation with residential areas. There is also a growing emphasis on the support for the use of empty shops and business premises. | Lack of experience
 **Opportunities**
 Implementation of good practices
 Financial benefits for companies |  | supports local economy, supports adaptive business models. | Improved liveability of the city
 Improved well-being of citizens  |
 | --- | --- | --- | --- | --- | --- |
-|  Sustainable public catering projects | Facilitated by the Municipality of Budapest, food projects aim to involve sustainability aspects in public catering. As part of this endeavour, an integrated urban food policy for a sustainable food system and a strategy will be developed (FOODCLIC project), healthy and sustainable eating options are to be incorporated in the procurement and preparation practices, and awareness-raising activities for students are carried out (SCHOOLFOOD4CHANGE). Additionally, the DIVINFOOD project aims to increase the usage of neglected and underutilized crops in food chains to support healthier diets and more sustainable food systems. | **Barriers**
+| --- | --- | --- |
+| Sustainable public catering projects | Facilitated by the Municipality of Budapest, food projects aim to involve sustainability aspects in public catering. As part of this endeavour, an integrated urban food policy for a sustainable food system and a strategy will be developed (FOODCLIC project), healthy and sustainable eating options are to be incorporated in the procurement and preparation practices, and awareness-raising activities for students are carried out (SCHOOLFOOD4CHANGE). Additionally, the DIVINFOOD project aims to increase the usage of neglected and underutilized crops in food chains to support healthier diets and more sustainable food systems. | **Barriers** |
 Lack of financial resources
 Fragmentation of the administrative system
 **Opportunities**
@@ -2424,7 +2326,7 @@ Better social interactions
 Awareness-raising and education
 Local partnerships
 More sustainable and nutritious ingredients.  |
-|  Community buying groups | Community buying groups (also known as basket communities) are voluntary groups that bring together local food producers with consumers. Producers, consumers and volunteers work together as a community to organise the delivery of food from the producer to the customer. The goal of the initiative is to provide a market for locally produced food, provide consumers with healthy products, support local economies, support community building, and raise awareness of sustainable and eco-friendly lifestyles. Several basket groups were established in Budapest such as Budafoki Kosár | **Barriers**
+Community buying groups | Community buying groups (also known as basket communities) are voluntary groups that bring together local food producers with consumers. Producers, consumers and volunteers work together as a community to organise the delivery of food from the producer to the customer. The goal of the initiative is to provide a market for locally produced food, provide consumers with healthy products, support local economies, support community building, and raise awareness of sustainable and eco-friendly lifestyles. Several basket groups were established in Budapest such as Budafoki Kosár | **Barriers**
 Administrative hurdles
 Coordination between many actors
 Financial barriers
@@ -2440,9 +2342,10 @@ BUDAPEST
 
 Climate Neutrality Action Plan
 
-|   | Közösség, Végtelen Kosár-Budapest and the Szatyor Shopping Community. |  |  |  |   |
+|  | Közösség, Végtelen Kosár-Budapest and the Szatyor Shopping Community. |  |  |  |  |
 | --- | --- | --- | --- | --- | --- |
-|  Cargonomia | In addition to its cargo-bike courier services, Cargonomia is also a distribution centre for local and regional organic food. Its aim is to directly connect producers with customers by creating a community point where food can be picked up or delivered in an environmentally friendly way. Cargonomia connects its partner, Zsamboki Biogarden with the consumers, providing high-quality, seasonable and organic products to support shifting to more sustainable eating practices. | **Barriers**
+
+Cargonomia | In addition to its cargo-bike courier services, Cargonomia is also a distribution centre for local and regional organic food. Its aim is to directly connect producers with customers by creating a community point where food can be picked up or delivered in an environmentally friendly way. Cargonomia connects its partner, Zsamboki Biogarden with the consumers, providing high-quality, seasonable and organic products to support shifting to more sustainable eating practices. | **Barriers**
 Administrative hurdles
 Coordination between many actors
 Financial barriers
@@ -2454,8 +2357,9 @@ Awareness-raising and education
 Local partnerships
 Health benefits – healthy and organic products
 Supports urban logistics  |
-|  Governance |  |  |  |  |   |
-|  Participatory Budgeting | The Municipality of Budapest has launched its participatory in 2020 to allow residents to propose ideas on how to spend a certain amount of the municipal budget. Under the Participatory Budget initiative, the municipality allocates over 1 billion HUF to implement the most popular ideas submitted by residents. The municipality expects citizens to propose smaller investment projects to improve the liveability of the city keeping in mind the principles of equality, community approach, functional adequacy, safety and sustainability. | **Barriers**
+Governance |  |  |  |  |
+
+Participatory Budgeting | The Municipality of Budapest has launched its participatory in 2020 to allow residents to propose ideas on how to spend a certain amount of the municipal budget. Under the Participatory Budget initiative, the municipality allocates over 1 billion HUF to implement the most popular ideas submitted by residents. The municipality expects citizens to propose smaller investment projects to improve the liveability of the city keeping in mind the principles of equality, community approach, functional adequacy, safety and sustainability. | **Barriers**
 Financial barriers – lack of funds
 
 **Opportunities**
@@ -2464,7 +2368,7 @@ Cooperation with companies | The Municipality of Budapest, District municipaliti
 Opportunity for marginalized groups to contribute to decision-making processes.
 Stronger communities
 Awareness-raising and education  |
-|  Budapest Resident's Assembly | The Residents' Assembly gives the people of Budapest the right, opportunity and means to have their say. Citizens above 14 years old, who have an address or residency in Budapest is eligible to vote. Voting is possible online or in person at the City Hall. The Assembly aims to involve citizens and decide on matters that affect the majority of the residents – e.g which means of transport are allowed on the Chain Bridge, on investment matters on a brownfield area (Rákosrendező), or regarding the operation and | **Barriers**
+Budapest Resident's Assembly | The Residents' Assembly gives the people of Budapest the right, opportunity and means to have their say. Citizens above 14 years old, who have an address or residency in Budapest is eligible to vote. Voting is possible online or in person at the City Hall. The Assembly aims to involve citizens and decide on matters that affect the majority of the residents – e.g which means of transport are allowed on the Chain Bridge, on investment matters on a brownfield area (Rákosrendező), or regarding the operation and | **Barriers**
 Administrative hurdles
 Coordination between many actors
 Financial barriers
@@ -2481,9 +2385,10 @@ Climate Neutrality Action Plan
 
 1
 
-|   | development of the district’s health clinics. |  |  |  | Awareness-raising and education  |
+|  | development of the district’s health clinics. |  |  |  | Awareness-raising and education |
 | --- | --- | --- | --- | --- | --- |
-|  Budapest Community Meeting | The Community Meetings brings together people from Budapest from all walks of life to talk about important issues. At the meeting, participants gain new, accurate knowledge about the issue, share their thoughts with each other, and finally make recommendations on how to address the problem. Community meetings are used to support decision-making in governments, parliaments and local authorities. So far, the Municipality have organised three community meetings: in 2020 on climate emergency, at the end of 2021 on the European Union and in 2022 on reducing air pollution in Budapest. | **Barriers**
+
+Budapest Community Meeting | The Community Meetings brings together people from Budapest from all walks of life to talk about important issues. At the meeting, participants gain new, accurate knowledge about the issue, share their thoughts with each other, and finally make recommendations on how to address the problem. Community meetings are used to support decision-making in governments, parliaments and local authorities. So far, the Municipality have organised three community meetings: in 2020 on climate emergency, at the end of 2021 on the European Union and in 2022 on reducing air pollution in Budapest. | **Barriers**
 Administrative hurdles
 Coordination between many actors
 Financial barriers
@@ -2514,20 +2419,21 @@ The annexes contain any textual or visual material to the 2030 Climate Neutralit
 
 Emissions source specific barriers and opportunities:
 
-|  Emission domains | Systems | Systemic barriers | Systemic opportunities  |
+| Emission domains | Systems | Systemic barriers | Systemic opportunities |
 | --- | --- | --- | --- |
-|  Energy systems | Technological/infrastructural | Because of the uncoordinated and uneven installation of solar panels, in some areas, distribution grids are under excessive load.
+| Energy systems | Technological/infrastructural | Because of the uncoordinated and uneven installation of solar panels, in some areas, distribution grids are under excessive load. |  |
 Lack of expansion and maintenance of the electricity network limits capacity, refeeding and hence, the proliferation of solar panels.
 No detailed, up-to-date, and real data available concerning the energy performance of buildings or the use of renewables. | Favourable irradiation conditions for solar panel installation.
 Budapest is rich in thermal water, which creates potential for establishing geothermal heat generation capacities.
 Potential for increasing waste-based heat generation.
 Positive energy district projects can serve as example.
 Energy Efficiency Obligation Scheme  |
-|   |  Institutional/regulatory | Cityscape protection makes the mass installation of PVs in Budapest controversial. | Regulatory framework for creating renewable energy communities could be improved.  |
-|   |  Organizational | Legal and financial regulatory environment does currently not facilitate the implementation of energy communities | Energy communities are still a novel phenomenon in the city presenting an opportunity for more efficient energy-use.  |
-|   |  Behavioural/social | Intensive suburbanization creates higher energy and water use as people move into energy intensive detached houses. | Energy-saving trainings in schools.
+|  | Institutional/regulatory | Cityscape protection makes the mass installation of PVs in Budapest controversial. | Regulatory framework for creating renewable energy communities could be improved. |
+| --- | --- | --- | --- |
+|  | Organizational | Legal and financial regulatory environment does currently not facilitate the implementation of energy communities | Energy communities are still a novel phenomenon in the city presenting an opportunity for more efficient energy-use. |
+|  | Behavioural/social | Intensive suburbanization creates higher energy and water use as people move into energy intensive detached houses. | Energy-saving trainings in schools. |
 Solar and heat pump systems are spreading gradually.  |
-|  Mobility and Transport | Technological/infrastructural | Road network is tailored to cars instead of public transport and micromobility users.
+Mobility and Transport | Technological/infrastructural | Road network is tailored to cars instead of public transport and micromobility users.
 The persistent neglect of maintenance of both the infrastructure and the vehicle fleet of public transport due to mainly budgetary reasons
 Budapest is centre of a radial transport network with significant transit traffic.
 Little and neglected spaces for pedestrians. | Strategic growth of micro- and e-mobility infrastructure allowing for easy transfer.
@@ -2540,48 +2446,51 @@ Climate Neutrality Action Plan
 
 3
 
-|  |  | Average age of cars is well above the EU average. | Creation of more car-free streets.
+Average age of cars is well above the EU average. | Creation of more car-free streets.
 Developing and increasing the capacity of the P+R and B+R network. |
 | --- | --- | --- | --- |
-| Institutional/ regulatory | The legal, institutional, and regulatory context does not support meaningful cooperation especially as regards transit transport end transport from and to the agglomeration.
-There is a need for more effective enforcement of regulations related to speeding and parking. | The introduction of low emission zones and traffic calming regulations.
-Parking regulations could free up space for city logistics, pedestrians and cyclists and contribute to modal split. |
-| Organizational | Railways and especially Suburban railways under the control of the state, not the municipality.
-No existing platform for coordination on the metropolitan level (functional urban area of Budapest). | Housing Agency model can contribute to urban sprawl mitigation. |
-| Financial | State aid is available for purchasing cars, whose number has been growing continuously since 2013.
-Parking subsidy is very high offered by districts for their residents and businesses. | Public transport is free for pensioners, people under 14 and subsidized for students as well as people with disability.
-State aid is available for companies for purchasing electric cars. |
+| --- | --- |
+| Institutional/ regulatory | The legal, institutional, and regulatory context does not support meaningful cooperation especially as regards transit transport end transport from and to the agglomeration. |
+| There is a need for more effective enforcement of regulations related to speeding and parking. | The introduction of low emission zones and traffic calming regulations. |
+| Parking regulations could free up space for city logistics, pedestrians and cyclists and contribute to modal split. |
+| Organizational | Railways and especially Suburban railways under the control of the state, not the municipality. |
+| No existing platform for coordination on the metropolitan level (functional urban area of Budapest). | Housing Agency model can contribute to urban sprawl mitigation. |
+| Financial | State aid is available for purchasing cars, whose number has been growing continuously since 2013. |
+| Parking subsidy is very high offered by districts for their residents and businesses. | Public transport is free for pensioners, people under 14 and subsidized for students as well as people with disability. |
+| State aid is available for companies for purchasing electric cars. |
 | Political | Developments are focused on meeting the needs of car traffic and increasing its capacity. | Prioritizing social welfare and the improvement of housing in Budapest could put a stop to suburbanization. |
-| Behavioural/ social | Increasing suburbanization and the uncoordinated sprawling of the city drive further spreading of individual motorisation.
+| --- | --- | --- |
+| Behavioural/ social | Increasing suburbanization and the uncoordinated sprawling of the city drive further spreading of individual motorisation. |  |
 Comfort diminishes motivation for people to opt for alternative modes of transport over cars.
 Since the COVID19 pandemic, a big portion of people have opted out of public transport. | There is an ever-growing demand for electric and hybrid vehicles.
 People are more and more open to using sharing services (e.g. car renting, car sharing, bike sharing)
 Due to changing behaviours e.g. the spread of home office, mobility needs can be reduced |
-| Waste & Circular Economy | Technological/ infrastructural | Limited capacity and capability of recycling centres | Growing network of re-use centres, selective waste collection points and community gardens. |
+Waste & Circular Economy | Technological/ infrastructural | Limited capacity and capability of recycling centres | Growing network of re-use centres, selective waste collection points and community gardens.
 BUDAPEST
 
 Climate Neutrality Action Plan
 
 4
 
-|   |  | Biowaste collection is not yet introduced, only small scale tests has been done | New bottle return and biological waste collection system.  |
+|  |  | Biowaste collection is not yet introduced, only small scale tests has been done | New bottle return and biological waste collection system. |
 | --- | --- | --- | --- |
-|   |  Institutional/ regulatory | Food hygiene regulations
-Budapest has very limited impact on waste management strategy | Recycling embedded in public space use permits  |
-|   |  Political | There is a conflict of interest between GDP growth and consumption reduction. | Creating support schemes and policies that encourage green transition.  |
-|   |  Behavioural/ social | The wasteful lifestyle of a consumer society encouraged by the media. | Eco schools and kindergartens in the forefront of educating children about recycling and composting.
+|  | Institutional/ regulatory | Food hygiene regulations |  |
+| Budapest has very limited impact on waste management strategy | Recycling embedded in public space use permits  |
+|  | Political | There is a conflict of interest between GDP growth and consumption reduction. | Creating support schemes and policies that encourage green transition. |
+| --- | --- | --- | --- |
+|  | Behavioural/ social | The wasteful lifestyle of a consumer society encouraged by the media. | Eco schools and kindergartens in the forefront of educating children about recycling and composting. |
 Community composting and "model parks" with information boards  |
-|  Green infrastructure and nature-based solutions | Technological/ infrastructural | The high infrastructural density of the city makes it hard to create new large green spaces.
+Green infrastructure and nature-based solutions | Technological/ infrastructural | The high infrastructural density of the city makes it hard to create new large green spaces.
 Without a unified and up-to-date inventory of green assets for the entire territory of the capital, green space management is difficult.
 Breaking up pavement and revitalizing green spaces can cause flooding of basements, leading to tension around such interventions | Green walls and roofs are relatively underutilized tools.
 Greening of underused land.
 Creating bee pastures and community gardens.
 Revitalization, regreening of public spaces e.g. Pünkösdfürdő.  |
-|   |  Institutional/ regulatory | Enforcement of green infrastructure maintenance standards is not effective and not uniform across the capital and its districts.
+Institutional/ regulatory | Enforcement of green infrastructure maintenance standards is not effective and not uniform across the capital and its districts.
 Operation of separate rainwater management systems lack funding as costs cannot be integrated into sewage fee according to law.
 Implementation of complex rainwater management and harvesting projects require unprecedented cooperation of designers and new paradigms in planning, which are not supported by prevailing methodologies and standards. | Environmental criteria for public procurement
 Reclassification of non-protected green areas  |
-|   |  Organizational | Public utilities and private developers are not always aware of and consider ecological aspects during interventions.
+Organizational | Public utilities and private developers are not always aware of and consider ecological aspects during interventions.
 Share of responsibilities between districts and Budapest of maintenance | The city's Green Infrastructure Development and Maintenance Action Plan outlines the main areas of intervention and the green infrastructure vision for the city.  |
 BUDAPEST
 
@@ -2589,19 +2498,20 @@ Climate Neutrality Action Plan
 
 5
 
-|   |  | and development of rainwater management is unclear. |   |
+|  |  | and development of rainwater management is unclear. |  |
 | --- | --- | --- | --- |
-|   |  Financial | In some European cities, 4-5% of the total budget is spent on maintaining and improving green infrastructure. In Budapest this figure is around 1-1.5%. | There is great potential in attracting more private capital (green roofs and walls, park instead of parking space)  |
-|   |  Behavioural/social | Green spaces both private and public are often paved increasing heat island effect in the city. | Growing commitment in society to nature conservation and environmental protection  |
-|  Built environment | Technological/infrastructural | There is a high rate of old, energy-obsolete buildings.
-Uncontrolled district heating results in overheating and wasteful energy use. | Expansion of district heating and heat pumps.  |
-|   |  Institutional/regulatory | Heritage protection makes the insulation of old, downtown buildings challenging.
-Regulation and control of building activities is within the power of central government | The application of more stringent energy requirements for buildings.  |
-|   |  Organizational | The municipality owns a very small proportion of buildings making it difficult to influence retrofitting and rental market. | Professional organizations could be better involved in the decision-making process before the amendment of legal rules governing energy.  |
-|   |  Financial | Owners of buildings most in need of energy-efficiency retrofitting, have no financial or technical capacity to invest in deep renovations.
+|  | Financial | In some European cities, 4-5% of the total budget is spent on maintaining and improving green infrastructure. In Budapest this figure is around 1-1.5%. | There is great potential in attracting more private capital (green roofs and walls, park instead of parking space) |
+|  | Behavioural/social | Green spaces both private and public are often paved increasing heat island effect in the city. | Growing commitment in society to nature conservation and environmental protection |
+| Built environment | Technological/infrastructural | There is a high rate of old, energy-obsolete buildings. |  |
+| Uncontrolled district heating results in overheating and wasteful energy use. | Expansion of district heating and heat pumps.  |
+| Institutional/regulatory | Heritage protection makes the insulation of old, downtown buildings challenging. |
+| Regulation and control of building activities is within the power of central government | The application of more stringent energy requirements for buildings.  |
+|  | Organizational | The municipality owns a very small proportion of buildings making it difficult to influence retrofitting and rental market. | Professional organizations could be better involved in the decision-making process before the amendment of legal rules governing energy. |
+| --- | --- | --- | --- |
+|  | Financial | Owners of buildings most in need of energy-efficiency retrofitting, have no financial or technical capacity to invest in deep renovations. |  |
 Public utility charge reduction removes incentive for citizens to invest in energy-efficiency renovations and investment in renewables. | Diversifying utility subsidies by giving more support to energy poor households
 Establishing a more stable regulatory and subsidy framework could reduce hesitations and encourage investment in renewable energy.  |
-|   |  Behavioural/social | Retrofitting in many condominiums requires the consensus of residents.
+Behavioural/social | Retrofitting in many condominiums requires the consensus of residents.
 Energy poverty and the lack of incentives is preventing renovation of condominiums in poverty stricken areas of the city.
 A significant proportion of people do not prioritize home renovations in their plans even if they can afford them. | Citizens are generally open to renewables, with special regard to solar panels.  |
 NET ZERO CITIES
@@ -2686,9 +2596,9 @@ Without meeting them, the city will not be able to reduce GHGs enough to make cl
 
 The climate neutrality portfolio was designed with the involvement of Transition Teams - actions were identified during multiple consultations and ambitious targets were defined. The most important actions of the CCC, organized by sector, are summarized in the table below. The action portfolio builds on and is in line with sectoral plans and development strategies (Sustainable Urban Mobility Plan, Integrated Urban Development Strategy, Sustainable Energy and Climate Action Plan), and includes both ongoing and future interventions. As part of the Action Plan, the Budapest Energy Strategy will also be developed that will encompass the cross-sectoral vision of the city and actions related to all fields of action.
 
-|  Transport | Buildings & heating | Electricity, waste & other  |
+| Transport | Buildings & heating | Electricity, waste & other |
 | --- | --- | --- |
-|  • Public transport network developments.
+| • Public transport network developments. |  |  |
 • Developing city logistics loading area network.
 • Developing compact neighbourhoods.
 • Creating a multilevel network of mobility stations.
@@ -2698,7 +2608,7 @@ The climate neutrality portfolio was designed with the involvement of Transition
 • Reconstructing and energy upgrading the public lighting system. | • Facilitating solar panel development projects on buildings and sites owned by the municipality or its companies.
 • Improving urban waste management, especially bio waste, inert waste and sewage.
 • Enhancing mitigation and decarbonisation activities of industrial production and facilities of the tertiary sector.  |
-|  • Raising knowledge and awareness of climate change through joint actions and sensitisation with civil society, businesses and districts.
+• Raising knowledge and awareness of climate change through joint actions and sensitisation with civil society, businesses and districts.
 • Working together with the Government of Hungary to develop and implement urban regulations and mitigation proposals, and support climate conscious policy-making by sharing information, experience and knowledge on the urban aspects of climate change.  |   |   |
 BUDAPEST
 
@@ -2763,47 +2673,42 @@ O
 
 The table below enlists the signatories³ who are committing to this CCC, and thereby to help the city achieve its goal to reach climate neutrality by 2030.
 
-|  Name of the signatory (organisation) | Sector / Domain / Level of operation⁴ | Legal form | Name of the responsible person | Position of the responsible person  |
+| Name of the signatory (organisation) | Sector / Domain / Level of operation⁴ | Legal form | Name of the responsible person | Position of the responsible person |
 | --- | --- | --- | --- | --- |
-|  The Municipality of Budapest | Local | Local government | Gergely Karácsony | Mayor  |
-|  BKK - Centre for Budapest Transport Plc. | Local | Closed Joint-stock company | Katalin Walter | chief executive officer  |
-|  BKV - Budapest Transport Company Plc. | Local | Closed Joint-stock company | Tibor Bolla | chief executive officer  |
-|  BKM - Budapest Public Utilities Nonprofit Plc. | Local | Private limited company | Imre Mártha | chief executive officer  |
-|  Budapest Public Roads Plc. | Local | Closed Joint-stock company | Gábor Szőke | chief executive officer  |
-|  Budapest Waterworks Plc. | Local | Closed Joint-stock company | Géza Csörnyei | chief executive officer  |
+| The Municipality of Budapest | Local | Local government | Gergely Karácsony | Mayor |
+| BKK - Centre for Budapest Transport Plc. | Local | Closed Joint-stock company | Katalin Walter | chief executive officer |
+| BKV - Budapest Transport Company Plc. | Local | Closed Joint-stock company | Tibor Bolla | chief executive officer |
+| BKM - Budapest Public Utilities Nonprofit Plc. | Local | Private limited company | Imre Mártha | chief executive officer |
+| Budapest Public Roads Plc. | Local | Closed Joint-stock company | Gábor Szőke | chief executive officer |
+| Budapest Waterworks Plc. | Local | Closed Joint-stock company | Géza Csörnyei | chief executive officer |
 
 ³ Climate City Contract signatories may be individuals or organisations. They ideally include national and/or regional governments, for example concrete agreements/ commitments made through the multi-level governance engagement processes supported by NetZeroCities, CapaCities, and other emerging national level initiatives.
 
 ⁴ Please mention if the organisation is active at local, regional, national, or international level.
 2
 
-|  BFVK - Capital City of Budapest Public Asset Management Center cPlc | Local | Closed Joint-stock company | Balázs Barts J. | chief executive officer  |
+| BFVK - Capital City of Budapest Public Asset Management Center cPlc | Local | Closed Joint-stock company | Balázs Barts J. | chief executive officer |
 | --- | --- | --- | --- | --- |
-|  BDK Budapest Decorative and Public Lighting Ltd | Local | Limited Liability Company | Zoltán Pap Zoltán | chief executive officer  |
-|  BGYH - Budapest Spas cPlc | Local | Closed Joint-stock company | Ildikó Borosné Szűts | chief executive officer  |
-|  WALLIS AUTÓMEGOSZTÓ cPlc | Regional | Closed Joint-stock company | Márk Vilmos Koralewsky
-Erika Kovács | chief executive officer  |
-|  Nestlé Hungária Ltd | International | Limited Liability Company | Gábor Tompa, dr.
-Judit Kocsisné Papp | director of corporate communications and government relations
-director of finance and controlling  |
-|  ALTEO Plc. | Regional | Public Limited Company | Anita Simon
-Beatrix Szabó | deputy chief executive officer
-director  |
-|  Kinnarps Hungary Kft. | International | Limited Liability Company | Ildikó Dr. Lászlóné Turóczi
-Diána Ódorné Sebestyén | person(s) with powers of representation  |
-|  Rakun Ltd | Regional | Limited Liability Company | Sarolta dr. Horváth | executive director  |
-|  Energiaklub | Regional | Association | András Kéri | executive director  |
-|  MTVSZ | Regional | Association | Ákos Éger | president  |
-|  Zöld Jövő Egyesület | Local | Association | Péter Mészáros | president  |
-BUDAPEST
-
-Climate-Neutrality Commitments
-
-3
-
-|  Hungarian Energy Efficiency Institute nLtd | Regional | Nonprofit Limited Liability Company | Dr. Horváth Áron Botond | executive director  |
+| BDK Budapest Decorative and Public Lighting Ltd | Local | Limited Liability Company | Zoltán Pap Zoltán | chief executive officer |
+| BGYH - Budapest Spas cPlc | Local | Closed Joint-stock company | Ildikó Borosné Szűts | chief executive officer |
+| WALLIS AUTÓMEGOSZTÓ cPlc | Regional | Closed Joint-stock company | Márk Vilmos Koralewsky |  |
+| Erika Kovács | chief executive officer  |
+| Nestlé Hungária Ltd | International | Limited Liability Company | Gábor Tompa, dr. |
+| Judit Kocsisné Papp | director of corporate communications and government relations |
+| director of finance and controlling  |
+| ALTEO Plc. | Regional | Public Limited Company | Anita Simon |
+| Beatrix Szabó | deputy chief executive officer |
+| director  |
+| Kinnarps Hungary Kft. | International | Limited Liability Company | Ildikó Dr. Lászlóné Turóczi |
+| Diána Ódorné Sebestyén | person(s) with powers of representation  |
+| Rakun Ltd | Regional | Limited Liability Company | Sarolta dr. Horváth | executive director |
 | --- | --- | --- | --- | --- |
-|  KÖVET Association for Sustainable Economies | Regional | Association | Katalin Herner | executive director  |
+| Energiaklub | Regional | Association | András Kéri | executive director |
+| MTVSZ | Regional | Association | Ákos Éger | president |
+| Zöld Jövő Egyesület | Local | Association | Péter Mészáros | president |
+| Hungarian Energy Efficiency Institute nLtd | Regional | Nonprofit Limited Liability Company | Dr. Horváth Áron Botond | executive director |
+| --- | --- | --- | --- | --- |
+| KÖVET Association for Sustainable Economies | Regional | Association | Katalin Herner | executive director |
 
 The Department for Climate and Environmental Affairs is in ongoing consultations with actors from both the public and private sector, and with district municipalities. The table above includes signatories with whom the cooperation has been formalised by signing the Memorandum of Understanding by the time of submission. Additional signatories will continue to sign the Cooperation Agreement through the mechanism established under the Mission, signature procedures are already underway with a number of actors. Moreover, the Municipality of Budapest is in regular consultations with further organisations to leverage synergies between our climate-neutrality targets and to define the frameworks of the cooperation.
 BUDAPEST

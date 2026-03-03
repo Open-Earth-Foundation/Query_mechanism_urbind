@@ -276,7 +276,6 @@ It also includes scope 1-3 emissions of all goods and services consumed in the c
 |  Other | Included in territorial target | Included in consumption-based target for products and services consumed within Gothenburg | Included in consumption-based target for products and services consumed within Gothenburg  |
 |  Geographical boundary | Same as city administrative boundary | Smaller than city administrative boundary | Larger than city administrative boundary  |
 |  (Tick correct option) | YES |  |   |
-|  |   |   |   |
 City of Gothenburg
 Climate Neutrality Action Plan
 5
@@ -591,6 +590,7 @@ Activity data is presented according to the GPC structure, with all subcategorie
 |  A-1.1: Final energy use by source sectors
 Source
 : Statistical database, regional and municipal energy use  |   |   |   |
+| Metric | Scope 1 | Scope 2 | Scope 3 |
 | --- | --- | --- | --- |
 |  Base year | 2020  |   |   |
 |  Unit | MWh  |   |   |
@@ -601,11 +601,8 @@ Source
 |  Electricity4 |  | 4,155,506 |   |
 |  District heating5 |  | 2,893,493 |   |
 |  Biodiesel6 | 573 |  |   |
-|  |   |   |   |
 |  Transport | No activity data, only emission data |  |   |
-|  |   |   |   |
 |  Waste | No activity data, only emission data |  |   |
-|  |   |   |   |
 |  Industrial Process and | No activity data, only emission data |  |   |
 
 3
@@ -615,9 +612,7 @@ Climate Neutrality Action Plan
 
 |  ProductUse (IPPU) |  |  |   |
 | --- | --- | --- | --- |
-|  |   |   |   |
 |  Agricultural, Forestry and Land Use (AFOLU) | No activity data, only emission data |  |   |
-|  |   |   |   |
 
 ## A-1.2: Emission factors applied
 
@@ -696,19 +691,18 @@ Climate Neutrality Action Plan
 |  Transport need - light duty trucks (<3.5 t) (M km/year) | 57 | N/A | N/A  |
 |  Transport need - heavy-duty trucks (>3.5 t) (M km/year) | 914 | N/A | N/A  |
 |  **Electricity**
-Electricity demand within city boundaries (GWh/year) | N/A | 4,156 | N/A  |
+| Electricity demand within city boundaries (GWh/year) | N/A | 4,156 | N/A |
 |  **Waste**
-Collected waste within city boundaries (tonnes) | N/A | N/A | 443,573  |
+| Collected waste within city boundaries (tonnes) | N/A | N/A | 443,573 |
 |  **Other**
-(incl. IPPU & AFOLU) | ? | ? | ?  |
-|  A-1.5: Activity data - Stationary  |   |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- | --- |
-|  Fuel | Residential | Commercial and institutional | Manufacturing industries and construction | Energy industries | Agriculture, forestry and fishing | TOTAL  |
-|  Wood | 41,983 |  | no activity data | no activity data |  | 41,983  |
-|  Oil | 2,665 | 691,558 | no activity data | no activity data | 4,100 | 698,323  |
-|  Electricity | 1,145,706 | 2,369,914 | 633,739 | no activity data | 6,147 | 4,155,506  |
-|  District heating | 2,036,790 | 719,778 | 136,925 | no activity data |  | 2,893,493  |
-|  Biomass |  |  |  |  |  |   |
+(incl. IPPU & AFOLU) | ? | ? | ?
+A-1.5: Activity data - Stationary
+Fuel | Residential | Commercial and institutional | Manufacturing industries and construction | Energy industries | Agriculture, forestry and fishing | TOTAL
+Wood | 41,983 | no activity data | no activity data | 41,983
+Oil | 2,665 | 691,558 | no activity data | no activity data | 4,100 | 698,323
+Electricity | 1,145,706 | 2,369,914 | 633,739 | no activity data | 6,147 | 4,155,506
+District heating | 2,036,790 | 719,778 | 136,925 | no activity data | 2,893,493
+Biomass
 City of Gothenburg
 Climate Neutrality Action Plan
 8
@@ -811,7 +805,7 @@ O
 |  Name | Type | Level | Description/scope/relevance | Impact | Limitations/gaps/need for action  |
 | --- | --- | --- | --- | --- | --- |
 |  Budget 2024 Gothenburg City
-(Budget 2024 Göteborgs Stad) | Highest governing document | Local | Describes the City's political ambitions. | Outlines the goals and objectives the City has for climate neutrality. | Aims to give an overarching description of the political ambitions and therefore does not include concrete action plans on how to realize them.  |
+| (Budget 2024 Göteborgs Stad) | Highest governing document | Local | Describes the City's political ambitions. | Outlines the goals and objectives the City has for climate neutrality. | Aims to give an overarching description of the political ambitions and therefore does not include concrete action plans on how to realize them. |
 |  Environment and Climate Programme for the City of Gothenburg 2021-2030
 (Göteborgs stads miljö- och klimatprogram 2021-2030) | Programme | Local | The programme is the steering document and the shared platform for the City's strategic long-term work for the environment.
 Contains the City's goals related to climate mitigation and lays the foundation for the transition to an environmentally sustainable city by 2030 and it is the City's comprehensive governing document for work within the environmental dimension of sustainable development | Contains concrete targets for the reduction of GHG emissions.
@@ -824,12 +818,11 @@ Requirements contained in legislation or other regulations that motivate change 
 6
 
 |   |  |  | The Programme describes seven cross-cutting strategies for working towards the goals.
-Refers to the City's Environment Management System as a way of working towards the goals. | evaluated and revised during its period of validity
-Identifies gaps that need to be addressed. | as goals or target values for indicators in the programme.  |
-| --- | --- | --- | --- | --- | --- |
+| Refers to the City's Environment Management System as a way of working towards the goals. | evaluated and revised during its period of validity |
+| Identifies gaps that need to be addressed. | as goals or target values for indicators in the programme. |
 |  City-wide Environment Management System
-(Anvisning för systematiskt miljöarbete) | Instruction | Local | Supports the City's committees and boards' systematic work with the ecological dimension of sustainability.
-Cyclic work of planning, implementing, follow-up and improving the environmental work. | Identifies gaps in the City's environmental work that need to be addressed. | A tool for continuous improvement rather than transformative measures.  |
+| (Anvisning för systematiskt miljöarbete) | Instruction | Local | Supports the City's committees and boards' systematic work with the ecological dimension of sustainability. |
+| Cyclic work of planning, implementing, follow-up and improving the environmental work. | Identifies gaps in the City's environmental work that need to be addressed. | A tool for continuous improvement rather than transformative measures. |
 |  Energy Plan 2022-2030
 (Göteborgs Stads energiplan 2022-2030) | Plan | Local | Outlines the City's energy system and defines various measures that the City will take to transform its energy system towards sustainability by 2030.
 The plan describes how the City is to achieve the energy goals described in the environmental and climate program and at the same time maintain a continued stable energy system with good access to electricity and sustainable fuels, without interruptions and disruptions. | Contains concrete targets for the reduction of GHG emissions.
@@ -845,7 +838,6 @@ Climate Neutrality Action Plan
 |   |  |  | Contributes to the City reaching its goals related to climate and energy, and that the City's energy supply should be secured. This is a successor to the Sustainable Energy Action Plan – the energy-efficient City which was produced as a part of the Covenant of Mayors. | the City of Gothenburg's work with energy issues
 Fulfill the requirements of the act on municipal energy planning
 Evaluation in 2023 with the results being implemented in 2024 |   |
-| --- | --- | --- | --- | --- | --- |
 |  Transport Strategy for a close-knit city 2035
 (Trafikstrategi för en nära storstad)
 Sustainable Urban Mobility Plan/SUMP | Strategy | Local | The Transport Strategy is the governing document for how the transport system and streetscape in Gothenburg are to be developed in order to achieve set objectives and meet the challenges facing the City.
@@ -894,9 +886,8 @@ Plan | Local | The programme provides direction for the City's work for strength
 To enable the City to reach the programme's objectives, there are six mission-oriented strategies. | The strategies are connected to certain global sustainable development goals. Three of the strategies target the challenge of decoupling increased economic growth and climate impact.
 
 Ambition to increase decoupling and decrease CO2 emissions in absolute values per capita, using indicators that are followed-up. | Lacks concrete action plans. The strategies do not describe the operative work needed to realize the objectives.  |
-| --- | --- | --- | --- | --- | --- |
 |  Bicycle programme for a close-knit city 2015-2025
-(Cykelprogram för en nära storstad 2015–2025) | Programme | Local | Provides a direction for the City to act to increase cycling | Increasing the number of bicycle rides implies that other modes of transportation are used less, which leads to less climate impact since bicycles generally contribute to less climate impact than e.g. cars. | Implementation  |
+| (Cykelprogram för en nära storstad 2015–2025) | Programme | Local | Provides a direction for the City to act to increase cycling | Increasing the number of bicycle rides implies that other modes of transportation are used less, which leads to less climate impact since bicycles generally contribute to less climate impact than e.g. cars. | Implementation |
 |  City of Gothenburg's programme for an equal city 2018–2026.
 (Göteborgs Stads program för en jämlik stad 2018–2026) | Programme | Local | Provides direction for the City's work to enhance equality, by describing areas that need to be addressed by stakeholders through joint efforts.
 
@@ -919,11 +910,11 @@ Climate Neutrality Action Plan
 | --- | --- | --- | --- | --- | --- |
 |  Public Transport Strategy
 (Målbild Koll2035) | Programme | Local, Regional | Guides how public transport in Gothenburg and its nearest cities should be developed in the long-term to achieve the objectives of the transport strategy. | Plan for the development of a sustainable transport system, where transport by car decreases in favour of public transport, cycling and walking, which in general contribute to less climate impact. | Implementation.
-Certain aspects of the transport system which could have effect on the possibilities for implementation as well as the total climate impact of the proposed system.  |
+Certain aspects of the transport system which could have effect on the possibilities for implementation as well as the total climate impact of the proposed system.
 |  Urban greening plan – for a close, cohesive and robust city 2022-2030
-*(Grönplan för en nära, sammanhållen och robust stad 2022-2030)* | Plan | Local | Describes measures to develop Gothenburg in several areas through strengthening green infrastructure and ecosystem services. | There is often a positive correlation between green infrastructure and climate mitigation, hence measures to implement such measures also have a positive effect on climate mitigation | Implementation.  |
-|  Programme for Destination Development 2023-2030 |  | Local | Promotes the development of Gothenburg as a sustainable destination. | Strategies for achieving an environmentally and climate-smart destination with a climate footprint close to zero, where destination stakeholders and visitors contribute to an ecologically sustainable destination. | Recently adopted, yet no analysis on gaps.  |
-|  Parking policy for Gothenburg City | Policy | Local | Aims to increase the availability of Gothenburg city and encourage | Measures facilitating public transport and/or cycling instead of using cars which | Implementation.  |
+*(Grönplan för en nära, sammanhållen och robust stad 2022-2030)* | Plan | Local | Describes measures to develop Gothenburg in several areas through strengthening green infrastructure and ecosystem services. | There is often a positive correlation between green infrastructure and climate mitigation, hence measures to implement such measures also have a positive effect on climate mitigation | Implementation.
+Programme for Destination Development 2023-2030 | Local | Promotes the development of Gothenburg as a sustainable destination. | Strategies for achieving an environmentally and climate-smart destination with a climate footprint close to zero, where destination stakeholders and visitors contribute to an ecologically sustainable destination. | Recently adopted, yet no analysis on gaps.
+Parking policy for Gothenburg City | Policy | Local | Aims to increase the availability of Gothenburg city and encourage | Measures facilitating public transport and/or cycling instead of using cars which | Implementation.
 City of Gothenburg
 Climate Neutrality Action Plan
 2
@@ -931,25 +922,20 @@ Climate Neutrality Action Plan
 |  (Riktlinjer för mobilitet och parkering i Göteborg Stad 2018) |  |  | choosing public transport or cycling instead of car. | correlates with a positive impact on climate mitigation. | Policy focusing on central parts of Gothenburg.  |
 | --- | --- | --- | --- | --- | --- |
 |  Environment Policy for the City of Gothenburg
-(Göteborgs Stads policy för den ekologiska dimensionen av hållbar utveckling) | Policy | Local | Declares common responsibilities for and governing principles for the City. | Clarifies the City’s approach to work with sustainable development, where connection to the other sustainability dimensions is highlighted. | Lacks concrete measures for coordinating the work for sustainable development.  |
+| (Göteborgs Stads policy för den ekologiska dimensionen av hållbar utveckling) | Policy | Local | Declares common responsibilities for and governing principles for the City. | Clarifies the City’s approach to work with sustainable development, where connection to the other sustainability dimensions is highlighted. | Lacks concrete measures for coordinating the work for sustainable development. |
 |  City of Gothenburg’s Policy for Forest Management
 (Göteborgs Stads skogspolicy) | Policy | Local | Policy for forest management in Gothenburg. | Forests provide ecosystem services that can help reduce negative climate impact, e.g. by acting as carbon sink or support biodiversity which is crucial to further maintain ecosystems. | The policy is valid for the forest areas managed by a certain committee (Urban Property Administration). There are larger forest areas managed by another committee (Urban Environment Administration).
-
-The policy does not cover management of forests that are part of ongoing plans for exploitation.  |
-|  Guideline for compensatory measures and ecosystem services in | Guidelines | Local | A tool that aims to prevent natural and recreational values from being negatively affected by planning and exploration. | There often is a positive correlation between ecosystem services and climate mitigation, hence | Implementation.  |
-3
-
+The policy does not cover management of forests that are part of ongoing plans for exploitation.
+Guideline for compensatory measures and ecosystem services in | Guidelines | Local | A tool that aims to prevent natural and recreational values from being negatively affected by planning and exploration. | There often is a positive correlation between ecosystem services and climate mitigation, hence | Implementation.
 |  planning- and development projects
-(Kompensationsåtgärder för ekosystemtjänster i plan- och exploateringsprojekt) |  |  |  | measures to implement ecosystem services also have a positive effect on climate mitigation. |   |
+| (Kompensationsåtgärder för ekosystemtjänster i plan- och exploateringsprojekt) |  |  |  | measures to implement ecosystem services also have a positive effect on climate mitigation. |   |
 | --- | --- | --- | --- | --- | --- |
 |  Green area factors
-(Grönytefaktorer och kompensationsåtgärder) - Göteborgs Stad (goteborg.se) | Guideline | Local | A tool that implies that the planning process should use nature-based solutions to address various environmental challenges. | There often is a positive correlation between nature-based solutions and climate mitigation, hence measures to implement nature-based solutions also have a positive effect on climate mitigation. | The implementation of the tool is limited, due to overlap with legislation.  |
+| (Grönytefaktorer och kompensationsåtgärder) - Göteborgs Stad (goteborg.se) | Guideline | Local | A tool that implies that the planning process should use nature-based solutions to address various environmental challenges. | There often is a positive correlation between nature-based solutions and climate mitigation, hence measures to implement nature-based solutions also have a positive effect on climate mitigation. | The implementation of the tool is limited, due to overlap with legislation. |
 |  Congestion Tax
 (Trängselskatt) | Policy instrument | Regional | Economic policy instrument aiming to regulate road traffic to reduce congestion. | Reduced congestion may lead to less usage of vehicles, thereby decreasing emissions of GHGs.
-
 The tax revenues are used for infrastructure investments for development of public transport. | Does not differentiate between types of vehicles, e.g. fuels used.
-
-The tax revenues are partly invested in infrastructure facilitating car use.  |
+The tax revenues are partly invested in infrastructure facilitating car use.
 |  Regional Development Strategy for Västra Götaland 2021-2030
 (Regional utvecklingsstrategi | Strategy | Regional | Outlines the direction for the development of the Västra Götaland region to become more sustainable and competitive. | Has objective of becoming fossil-free and circular.
 
@@ -1143,7 +1129,7 @@ Personal interest/alignment of values.
 
 Possible synergies with well-being. |
 | Traditional and social media actors | High | Medium.
-Local media may have interest in the Gothenburg ambitions, addressing both synergies and conflicts. |
+Local media may have interest in the Gothenburg ambitions, addressing both synergies and conflicts.
 | Local, national and global industry and business | High | Medium.
 Potential resistance, aiming for high consumption and extrinsic values.
 
@@ -1153,30 +1139,29 @@ Constitutes a field of research and demonstration.
 
 Synergies with the well-being of, and possibilities to attract, students and employees. |
 | Civil society organisations, NGOs | Medium | Medium.
-Depending on the organization’s agenda; the ambition and implemented measures might align with the values of the organization, or there might arise goal conflicts. |
+Depending on the organization’s agenda; the ambition and implemented measures might align with the values of the organization, or there might arise goal conflicts.
 | Energy, Industry & Commerce | Refineries | High | High.
-Interest in green positioning and legitimacy for operation. And a city that attracts qualified workforce. |
+Interest in green positioning and legitimacy for operation. And a city that attracts qualified workforce.
 | Port of Gothenburg | High | High.
-The Port aims to have 70% lower CO2 emissions by 2030. |
+The Port aims to have 70% lower CO2 emissions by 2030.
 | Göteborg Energi | High | High.
 Provides Gothenburg with electricity, gas, broadband fibre, district heating and cooling, hence the company’s activities are |
 City of Gothenburg
 Climate Neutrality Action Plan
 3
 
-|  |  |  | affected by the climate neutrality ambition. |
-| --- | --- | --- | --- |
-| Business Region Gothenburg | Medium | High. Responsible for the City's strategic business program as well as the linked action plans. |
+affected by the climate neutrality ambition.
+Business Region Gothenburg | Medium | High. Responsible for the City's strategic business program as well as the linked action plans.
 | Local companies (non-manufacturing/processing) | Medium | Medium. Measures for climate neutrality may affect the ability to pursue or maintain certain businesses, as well as new opportunities for existing and new businesses.
-Customers of Göteborg Energi. |
-| Local industries | High | High. Interest in green positioning and legitimacy for operation. Possible actors for utilising CCSU. |
+Customers of Göteborg Energi.
+Local industries | High | High. Interest in green positioning and legitimacy for operation. Possible actors for utilising CCSU.
 | Citizens | Medium | High. Green and affordable energy. (Customers of Göteborg Energi.)
-Recipients of encouragement (from e.g. the City) to behavioural change regarding energy use. |
-| Mobility and Transport | Public transport operators (local, regional and national) | High | Medium. The climate neutrality ambition implies a dependency on the public transport system as well as development of the current system. |
-|  | Research institutes and Science parks | High | High. Partner for case studies, test beds, and demonstrations. |
+Recipients of encouragement (from e.g. the City) to behavioural change regarding energy use.
+Mobility and Transport | Public transport operators (local, regional and national) | High | Medium. The climate neutrality ambition implies a dependency on the public transport system as well as development of the current system.
+Research institutes and Science parks | High | High. Partner for case studies, test beds, and demonstrations.
 |  | Port of Gothenburg | High | High. The Port aims to have 70% lower CO2 emissions by 2030.
-Constitutes an important role in transforming the transport system for northern Europe. |
-|  | Companies in the automotive industry and mobility sector | High | Medium. Gothenburg as important niche market, (first) |
+Constitutes an important role in transforming the transport system for northern Europe.
+Companies in the automotive industry and mobility sector | High | Medium. Gothenburg as important niche market, (first)
 City of Gothenburg
 Climate Neutrality Action Plan
 4
@@ -1197,19 +1182,19 @@ Climate Neutrality Action Plan
 |   | Private landowners | Low | High. Affected by regulations regarding land use.  |
 | --- | --- | --- | --- |
 |  Waste and circular economy | Local, national and global industry and business | High | Medium. Potential resistance, aiming for high consumption and extrinsic values.
-Potential for circular business model innovation and test markets. Sharing services etc.  |
+Potential for circular business model innovation and test markets. Sharing services etc.
 |   |  Waste and wastewater administrations and companies | Medium | High. Responsible for recycling and waste management.
 Connected to the district heating system.
 Rationales for behavioural change  |
-|   |  Business Region Göteborg | Medium | High. Encourage local businesses to green transition  |
+Business Region Göteborg | Medium | High. Encourage local businesses to green transition
 |   |  Citizens | High | High. Interest in ways of living and consuming more sustainably.
 Interest in cheap products and fast fashion.
 Recipients of encouragement (from e.g. the City) to behavioural change regarding waste prevention and - management.  |
 |  Food sector | Producers, grocery stores, restaurants & cafés | Medium | Medium. Affected by regulations and goals regarding procurement.
-Possibilities for market positioning and industrial symbiosis.  |
+Possibilities for market positioning and industrial symbiosis.
 |   |  Welfare sector (schools, elderly care) | Medium | High. Ambition to reach the target.
-Goal conflicts with economy, nutrition density, secure delivery, etc.  |
-|   |  Citizens | High | High. Willingness to live a healthy and sustainable life.  |
+Goal conflicts with economy, nutrition density, secure delivery, etc.
+Citizens | High | High. Willingness to live a healthy and sustainable life.
 City of Gothenburg
 Climate Neutrality Action Plan
 Habits, lack of time, economic priorities.
@@ -1312,10 +1297,7 @@ Climate Neutrality Action Plan
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Built environment | The City works with densification by building on already hardened surfaces (especially car parks freed up by mobility measures). | Technology and infrastructure, Governance and policy | Reduced climate impact due to land use change. Better conditions for the 15-minute city. | Reduced climate impact due to land use change. Better conditions for the 15-minute city. | Reduced climate impact due to land use change. Better conditions for the 15-minute city. | Ongoing examinations | Increased greenery and resiliency in the City.  |
 |  Green infrastructure and nature-based solutions | The City works, in collaboration with many actors, to increase urban farming and security of food supply. | Technology and infrastructure, Governance and policy, Learning and capabilities, Social Innovation, Democracy and participation | Increased knowledge about farming and an increasing number of local farmers. More connection between food consumers and the food they eat, eg. pupils in local schools. Shortening of food supply chains and as a result better margins for producers and less food waste. This is in line with the EU food and fork strategy. | Increased knowledge about farming and an increasing number of local farmers. More connection between food consumers and the food they eat, eg. pupils in local schools. Shortening of food supply chains and as a result better margins for producers and less food waste. This is in line with the EU food and fork strategy. | Increased knowledge about farming and an increasing number of local farmers. More connection between food consumers and the food they eat, eg. pupils in local schools. Shortening of food supply chains and as a result better margins for producers and less food waste. This is in line with the EU food and fork strategy. | 75,000 ton CO2 (if 40% of the food is produced locally) | More local jobs. Biodiversity, Ecosystem services. Greenery in the city  |
-2
-
 |  Green infrastructure and nature-based solutions | The City implements a focus on ecosystem services and nature-based solutions in city steering urban planning documents and guidelines. | Governance and policy | Focus on ecosystem services and nature-based solutions in the urban planning process. Solutions are chosen from ecological, social as well as economic perspectives. | Focus on ecosystem services and nature-based solutions in the urban planning process. Solutions are chosen from ecological, social as well as economic perspectives. | The City's ecosystem services remain or have been compensated for within or in close proximity to the plan area. The municipality knows how to work with ecosystem services in urban planning and the expertise is spread across several administrations, both among specialists and planning administrations. |  | More greenery, more multifunctional solutions for biodiversity, climate adaptation and climate mitigation. Better air quality, more recreational space, less noise, increased well-being, better protection against heat stress and flooding.  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
 #
 
 City of Gothenburg
@@ -1732,16 +1714,15 @@ We provide one example of individual action outline per fields of action to illu
 |   |  GHG emissions compensated (natural or technological sinks) | There are ongoing discussions and investigations planned to look at the technical and economic possibility to apply CCS at this plant after 2025. If possible, the captured CO2 will result in negative emissions (BECCS).  |
 |   |  Total costs and costs by CO2e unit | 2.53 billion SEK (220,000 million Euros) or 25 SEK/ reduced kilo of CO2 (2.5 Euro/ reduced kilo of CO2)  |
 |  B-2.2: Example Mobility & transport Individual action outlines  |   |   |
-| --- | --- | --- |
 |  Action outline | Action name | Developing mobility facility concept  |
 |   |  Action type | Technology & infrastructure
 Social innovation
 Learning & capabilities  |
-|   |  Action description | Developing mobility facility concept  |
-|  Reference to impact pathway | Field of action | Mobility & transport  |
+Action description | Developing mobility facility concept
+Reference to impact pathway | Field of action | Mobility & transport
 |   |  Systemic lever | • Measures to reduce car traffic in the city
-• Expanded and improved infrastructure for walking and cycling  |
-|   |  Outcome (according to module B-1.1) | • Reduced speed, parking measures, redistribution of space from cars to sustainable modes of transport.  |
+• Expanded and improved infrastructure for walking and cycling
+Outcome (according to module B-1.1) | • Reduced speed, parking measures, redistribution of space from cars to sustainable modes of transport.
 City of Gothenburg
 Climate Neutrality Action Plan
 3
@@ -1751,6 +1732,7 @@ Climate Neutrality Action Plan
 • Increased road safety for pedestrians and cyclists.
 • Reduced noise and air pollution.
 • Areas that have been used for cars can instead be used for sustainable travel, greenery, ecosystem services and social spaces.  |
+| Section | Item | Details |
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | The parking company (Göteborgs Stads Parkerings AB) in collaboration with the Urban Planning Administration and the Administration for Land Development.  |
 |   | Action scale & addressed entities | The geographical area of Gothenburg.  |
@@ -1762,42 +1744,39 @@ Climate Neutrality Action Plan
 |   | GHG emissions compensated (natural or technological sinks) | NA  |
 |   | Total costs and costs by CO2e unit | Too early to say, since the concept is still under development.  |
 |  B-2.2: Example Waste and circular economy Individual action outlines  |   |   |
-| --- | --- | --- |
 |  Action outline | Action name | Tage  |
 |   |  Action type | Learning & capabilities
-Technology and infrastructure  |
-|   |  Action description | Tage is the City of Gothenburg's internal reuse and sharing system for furniture and furnishings. The sharing system was founded in 2013 and since 2019 there is a framework agreement for reused furniture and related architectural and renovation services. Since 2021, the digital reuse site has been supplemented with a physical intermediate intermediate storage and free transport for the City of  |
+Technology and infrastructure
+Action description | Tage is the City of Gothenburg's internal reuse and sharing system for furniture and furnishings. The sharing system was founded in 2013 and since 2019 there is a framework agreement for reused furniture and related architectural and renovation services. Since 2021, the digital reuse site has been supplemented with a physical intermediate intermediate storage and free transport for the City of
 City of Gothenburg
 Climate Neutrality Action Plan
 4
 
 |   |  | Gothenburg's administrations and companies.
-Supported by the Circular economy strategy, the responsible company (Göteborgs Stads Leasing) is now looking at what capacity Tage needs to fulfilment of targets for 2030.  |
-| --- | --- | --- |
-|  Reference to impact pathway | Field of action | **Waste and circular economy**  |
-|   |  Systemic lever | Building capacity for action and mobilizing key actors within the City.  |
+Supported by the Circular economy strategy, the responsible company (Göteborgs Stads Leasing) is now looking at what capacity Tage needs to fulfillment of targets for 2030.
+Reference to impact pathway | Field of action | **Waste and circular economy**
+Systemic lever | Building capacity for action and mobilizing key actors within the City.
 |   |  Outcome (according to module B-1.1) | Reduced climate impact (-90% until 2030)
 Shift in norms among employees and in society in favour of circular economy
 Less impact on biodiversity
 Less toxicity  |
-|  Implementation | Responsible bodies/person for implementation | Göteborgs Stads Leasing.  |
-|   |  Action scale & addressed entities | City of Gothenburg's all administrations and companies.  |
-|   |  Involved stakeholders | City of Gothenburg's administrations and companies.  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | The system was founded in 2013 and is a key component for how the City will work with its internal reuse and sharing for furniture and furnishings, and by doing so reach its target in terms of reduced climate impact and waste.  |
-|  Impact & cost | Generated renewable energy (if applicable) | Not applicable (NA).  |
-|   |  Removed/substituted energy, volume, or fuel type | 40,000 products have been re-circulated via Tage.  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | About 2,000 ton of carbon dioxide equivalents has been reduced.  |
-|   |  GHG emissions compensated (natural or technological sinks) | NA  |
-|   |  Total costs and costs by CO2e unit | The cost of purchases decreased with 17 MSEK in 2023, the cost of Tage is 4.5 MSEK. Thus, thanks to Tage the City has saved 12.5 MSEK.  |
-|  **B-2.2: Example Green infrastructure & nature-based solutions Individual action outlines**  |   |   |
-| --- | --- | --- |
-|  Action outline | Action name | Pilot area for city green areas.  |
+Implementation | Responsible bodies/person for implementation | Göteborgs Stads Leasing.
+Action scale & addressed entities | City of Gothenburg's all administrations and companies.
+Involved stakeholders | City of Gothenburg's administrations and companies.
+Comments on implementation – consider mentioning resources, timelines, milestones | The system was founded in 2013 and is a key component for how the City will work with its internal reuse and sharing for furniture and furnishings, and by doing so reach its target in terms of reduced climate impact and waste.
+Impact & cost | Generated renewable energy (if applicable) | Not applicable (NA).
+Removed/substituted energy, volume, or fuel type | 40,000 products have been re-circulated via Tage.
+GHG emissions reduction estimate (total) per emission source sector | About 2,000 ton of carbon dioxide equivalents has been reduced.
+GHG emissions compensated (natural or technological sinks) | NA
+Total costs and costs by CO2e unit | The cost of purchases decreased with 17 MSEK in 2023, the cost of Tage is 4.5 MSEK. Thus, thanks to Tage the City has saved 12.5 MSEK.
+**B-2.2: Example Green infrastructure & nature-based solutions Individual action outlines**
+Action outline | Action name | Pilot area for city green areas.
 |   |  Action type | Governance and policy
-Learning & capabilities  |
-|   |  Action description | The pilot area for whole city greenery provides tools and ways of working to increase biodiversity and ecosystem services.  |
-|  Reference to impact pathway | Field of action | **Green infrastructure & nature-based solutions**  |
-|   |  Systemic lever | Strategic work with green and blue structures and ecosystem service  |
-|   |  Outcome (according to module B-1.1) | The pilot area for whole city greenery leads to more greenery and the creation of a city-wide blue-green infrastructure. Methods and lessons learnt will be spread to other parts of the City. This will contribute to create an overall blue-green infrastructure in the city, resulting in increased biodiversity and new ecosystem services. As a result, blue-green structures are given  |
+Learning & capabilities
+Action description | The pilot area for whole city greenery provides tools and ways of working to increase biodiversity and ecosystem services.
+Reference to impact pathway | Field of action | **Green infrastructure & nature-based solutions**
+Systemic lever | Strategic work with green and blue structures and ecosystem service
+Outcome (according to module B-1.1) | The pilot area for whole city greenery leads to more greenery and the creation of a city-wide blue-green infrastructure. Methods and lessons learnt will be spread to other parts of the City. This will contribute to create an overall blue-green infrastructure in the city, resulting in increased biodiversity and new ecosystem services. As a result, blue-green structures are given
 City of Gothenburg
 Climate Neutrality Action Plan
 5
@@ -1814,11 +1793,10 @@ Climate Neutrality Action Plan
 |   |  GHG emissions compensated (natural or technological sinks) | Too early to say, since the pilot area is still under development.  |
 |   |  Total costs and costs by CO2e unit | Too early to say, since the pilot area is still under development.  |
 |  B-2.2: Example Built environment Individual action outlines  |   |   |
-| --- | --- | --- |
 |  Action outline | Action name | Hoppet (eng. Hope/Leap/Jump)  |
 |   |  Action type | Learning & capabilities
-Technology and infrastructure  |
-|   |  Action description | In 2017, the City Council commissioned Sweden’s first fossil free construction project: a pre-school whose entire value chain is fossil-free, including upstream raw materials, transport, production, construction, and the finished building. The pre-school named Hoppet, completed in December 2021, was the first building using a methodology developed by the City which challenges the construction industry to raise their sustainability standards, which is now incorporated in the City’s innovation program for fossil-free new construction. Hoppet managed to reduce its CO2 emissions by 60%. Hoppet helps the City achieving its goal of becoming climate neutral by 2030 and challenge cities and stakeholders to make more sustainable choices. By mapping the LCA CO2 emissions, the City knows where to direct innovation efforts to push the forefront of materials research. The fossil-free ideals enshrined in the construction process have been included in the pedagogical mission of Hoppet. At the  |
+Technology and infrastructure
+Action description | In 2017, the City Council commissioned Sweden’s first fossil free construction project: a pre-school whose entire value chain is fossil-free, including upstream raw materials, transport, production, construction, and the finished building. The pre-school named Hoppet, completed in December 2021, was the first building using a methodology developed by the City which challenges the construction industry to raise their sustainability standards, which is now incorporated in the City’s innovation program for fossil-free new construction. Hoppet managed to reduce its CO2 emissions by 60%. Hoppet helps the City achieving its goal of becoming climate neutral by 2030 and challenge cities and stakeholders to make more sustainable choices. By mapping the LCA CO2 emissions, the City knows where to direct innovation efforts to push the forefront of materials research. The fossil-free ideals enshrined in the construction process have been included in the pedagogical mission of Hoppet. At the
 City of Gothenburg
 Climate Neutrality Action Plan
 6
@@ -1901,25 +1879,25 @@ Climate Neutrality Action Plan
 |  Indicator Name | Emissions of greenhouse gases per inhabitant and year within the geographical area of Gothenburg (includes emissions from both traded and nontraded sectors)  |
 |  Indicator Unit | Tons of carbon dioxide equivalents per inhabitant and year  |
 |  Definition | Target value 2030 is 1.1 tons of carbon dioxide equivalents per inhabitant and year
-Status as of 2018 is 4.3 tons of carbon dioxide equivalents per inhabitant and year  |
-|  Calculation | National data source  |
-|  Indicator Context  |   |
-|  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | Yes  |
-|  If yes, which emission source sectors does it measure? | Stationary energy, Transportation, Waste, Industrial processes and product use, Agriculture, forestry, and fishing activities  |
-|  Does the indicator measure indirect impacts (i.e., co- benefits)? | No  |
-|  If yes, which co-benefit does it measure? | -  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-|  If yes, which action and impact pathway is it relevant for? | All impact pathways  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No  |
-|  Data requirements  |   |
-|  Expected data source | Kolada  |
-|  Is the data source local or regional/national? | National  |
-|  Expected availability | The national data is updated once a year with data from two years ago  |
-|  Suggested collection interval | Revision every second year (2023, 2025...)  |
-|  References  |   |
+Status as of 2018 is 4.3 tons of carbon dioxide equivalents per inhabitant and year
+Calculation | National data source
+Indicator Context
+Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | Yes
+If yes, which emission source sectors does it measure? | Stationary energy, Transportation, Waste, Industrial processes and product use, Agriculture, forestry, and fishing activities
+Does the indicator measure indirect impacts (i.e., co- benefits)? | No
+If yes, which co-benefit does it measure? | -
+Is the indicator useful for monitoring the output/impact of action(s)? | Yes
+If yes, which action and impact pathway is it relevant for? | All impact pathways
+Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No
+Data requirements
+Expected data source | Kolada
+Is the data source local or regional/national? | National
+Expected availability | The national data is updated once a year with data from two years ago
+Suggested collection interval | Revision every second year (2023, 2025...)
+References
 |  Deliverables describing the indicator | Environmental
-goal: Gothenburg's climate footprint is close to zero  |
-|  Other indicator systems using this indicator | -  |
+goal: Gothenburg's climate footprint is close to zero
+Other indicator systems using this indicator | -
 City of Gothenburg
 
 Climate Neutrality Action Plan
@@ -1982,26 +1960,26 @@ Climate Neutrality Action Plan
 | --- | --- |
 |  Indicator Name | Average primary energy consumption per square meter in the City of Gothenburg's facilities and residential buildings where the operation can be related to surface area  |
 |  Indicator Unit | Facilities: kWh/m2
-Residential buildings: kWh/m2  |
+Residential buildings: kWh/m2
 |  Definition | Status: Facilities: 186 kWh/m2 (2010), Residential buildings: 120 kWh/m2 (2010)
-Target value 2030: Facilities: 130 kWh/m2, Residential buildings: 84 kWh/m  |
-|  Calculation | A local method based on national principles  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | No  |
-|  If yes, which emission source sectors does it measure? | -  |
-|  Does the indicator measure indirect impacts (i.e., co- benefits)? | Yes  |
-|  If yes, which co-benefit does it measure? | Energy efficiency in buildings and facilities  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-|  If yes, which action and impact pathway is it relevant for? | Built environment  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No  |
-|  Data requirements |   |
-|  Expected data source | From a local calculation method based on national principles  |
-|  Is the data source local or regional/national? | Local  |
-|  Expected availability | Every year in February  |
-|  Suggested collection interval | Revision every second year (2023, 2025...)  |
-|  References |   |
-|  Deliverables describing the indicator | Environment and Climate Programme for the City of Gothenburg 2021–2030 (goteborg.se), Sub-goal 1: The City of Gothenburg reduces energy use in residential buildings and facilities  |
-|  Other indicator systems using this indicator | -  |
+Target value 2030: Facilities: 130 kWh/m2, Residential buildings: 84 kWh/m
+Calculation | A local method based on national principles
+Indicator Context
+Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | No
+If yes, which emission source sectors does it measure? | -
+Does the indicator measure indirect impacts (i.e., co- benefits)? | Yes
+If yes, which co-benefit does it measure? | Energy efficiency in buildings and facilities
+Is the indicator useful for monitoring the output/impact of action(s)? | Yes
+If yes, which action and impact pathway is it relevant for? | Built environment
+Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No
+Data requirements
+Expected data source | From a local calculation method based on national principles
+Is the data source local or regional/national? | Local
+Expected availability | Every year in February
+Suggested collection interval | Revision every second year (2023, 2025...)
+References
+Deliverables describing the indicator | Environment and Climate Programme for the City of Gothenburg 2021–2030 (goteborg.se), Sub-goal 1: The City of Gothenburg reduces energy use in residential buildings and facilities
+Other indicator systems using this indicator | -
 City of Gothenburg
 Climate Neutrality Action Plan
 5
@@ -2410,12 +2388,12 @@ Climate Neutrality Action Plan
 |  Intervention name | Description | Systemic barriers / opportunities addressed | Leadership and stakeholders involved | Enabling impact | Co-benefits  |
 |  **Overarching governance innovation interventions**  |   |   |   |   |   |
 |  Climate Transition Function | To create the conditions for effective decision-making within the City's management and governance that are required to achieve the City's climate targets. | **Barriers:** Silo organisation, multi-actor impact, Knowledge, Skills and leadership, Uncertainty.
-**Opportunities:** Degree of City control, cross-sector collaboration. | The City.
-**Environmental Administration**, all municipal administrations and companies, whereof key organisations listed in C1.1. | Enables city-wide bridging governance required to achieve the climate transition. Processing of new development pathways based on systemic change perspectives. | Intervention of an overarching character. Supports several co-benefits indirectly.  |
+| **Opportunities:** Degree of City control, cross-sector collaboration. | The City. |
+| **Environmental Administration**, all municipal administrations and companies, whereof key organisations listed in C1.1. | Enables city-wide bridging governance required to achieve the climate transition. Processing of new development pathways based on systemic change perspectives. | Intervention of an overarching character. Supports several co-benefits indirectly. |
 |  Climate Budget | A methodology underway aiming for a city-wide framework to link climate mitigation measures to the climate targets, effective management of emissions data and visualisation of the progress of the climate action plan. | **Barriers:** Silo organisation, Knowledge, Skills and leadership.
 **Opportunities:** Digitalisation and visualisation, Degree of City control. | The City.
 **Environmental Administration**, all municipal administrations and companies. | Contributes to raising awareness of the City's carbon footprint and required actions for achieving climate targets. Follow-up and planning instrument for implementing the right measures. | Contributes to efficient measures (economic perspective).
-Intervention of an overarching character. Supports several co-benefits indirectly.  |
+Intervention of an overarching character. Supports several co-benefits indirectly.
 |  The seven cross-cutting strategies | New working structure for areas within the climate and environmental transition that require a high degree of collaboration and new cross-cutting solutions. | **Barriers:** Silo organisation, Knowledge, Skills and leadership, multi-actor impact.
 **Opportunities:** Degree of City control, Co-benefits, | The City.
 **Environmental Administration**, all municipal administrations and companies. Each strategy has a different responsible | The strategies aim to bring about change-driven development to accelerate the transition to a sustainable city. | Intervention of an overarching character. Supports several co-benefits indirectly.  |
@@ -2432,8 +2410,8 @@ collaboration
 influence | **Barriers:** Silo organisation, Knowledge, Skills and leadership, multi-actor impact, multi-level governance
 **Opportunities:** Degree of City control, citizen inclusion, innovative culture and portfolio thinking, cross-sector multi-actor collaboration | **Environmental Administration**, all municipal administrations and companies. | Aiming to level up climate mitigation measures and increase transition pace. | Intervention of an overarching character. Supports several co-benefits indirectly.  |
 |  Strategy: We work strategically on financing to accelerate the transition | New working structure addressing improved financial knowledge and capacity, innovative approaches and investment priorities. | **Barriers:** Silo organisation, Financing and business models, Fragmented innovation.
-**Opportunities:** Degree of City control, Green bonds and financial mechanisms. | The City.
-**Environmental Administration**, all municipal administrations and companies. | To finance climate mitigation measures and prioritise investments to maximise positive impact. | Sound decisions from socio-economic and municipal economic perspectives.  |
+| **Opportunities:** Degree of City control, Green bonds and financial mechanisms. | The City. |
+| **Environmental Administration**, all municipal administrations and companies. | To finance climate mitigation measures and prioritise investments to maximise positive impact. | Sound decisions from socio-economic and municipal economic perspectives. |
 |  The Climate Council | A council of seven researchers from different disciplines supporting the City with proposals in further measures on climate mitigation. | **Barriers:** Knowledge, Skills and leadership, Uncertainty.
 **Opportunities:** Degree of City control, Co-benefits, | Seven researchers from Chalmers University of Technology, Gothenburg University and Halmstad University. | Independent expertise to support the City’s transition with proposals of feasible and specific measures. | Intervention of an overarching character. Supports several co-benefits indirectly.  |
 City of Gothenburg
@@ -2444,22 +2422,21 @@ Climate Neutrality Action Plan
 | --- | --- | --- | --- | --- | --- |
 |  Testbed Gothenburg | An inclusive initiative to inspire and discuss test beds: development, business models and collaboration opportunities. Based on existing testbeds with the aim of raising the level further and opening up to new actors. | **Barriers:** Multi-actor impact, Fragmented innovation.
 **Opportunities:** Innovative culture and portfolio thinking. | **Johanneberg Science Park**, City of Gothenburg, Business Region Gothenburg, RISE, Chalmers, Gothenburg University | Through collaboration at a completely new level, this initiative aims to accelerate development, build unique, world-leading knowledge and utilise the region's innovative power to meet tomorrow's challenges. | Contributes to job creation and a growing economy, raising knowledge level among involved stakeholders.
-Intervention of an overarching character. Supports several co-benefits indirectly.  |
+Intervention of an overarching character. Supports several co-benefits indirectly.
 |  Virtual Gothenburg | A digital twin is being developed to address the increasing societal challenges of climate change, segregation and the complexity of society at large. | **Barriers:** Knowledge, Skills and leadership, Uncertainty
-**Opportunities:** Digitalisation and visualisation, Citizen inclusion, Social innovation. | **Urban Planning Administration**, Lindholmen Science Park. | Creates new opportunities to better describe, understand, plan and manage the City. Enables better basis for decision-making and understanding of the challenges and solutions related to climate neutrality. | More efficient decision making and knowledge sharing.  |
+| **Opportunities:** Digitalisation and visualisation, Citizen inclusion, Social innovation. | **Urban Planning Administration**, Lindholmen Science Park. | Creates new opportunities to better describe, understand, plan and manage the City. Enables better basis for decision-making and understanding of the challenges and solutions related to climate neutrality. | More efficient decision making and knowledge sharing. |
 |  The Knowledge Arena | An innovation and digitalisation initiative to enhance innovation capacity within the City, a digital platform, courses and seminars | **Barriers:** Fragmented innovation, Skills and leadership.
-**Opportunities:** Digitalisation and visualisation, Innovative culture and portfolio thinking. | **City Management Office**, all City administrations and Companies |  | A more efficient organisation (economic dimensions of City governance).
-Intervention of an overarching character. Supports several co-benefits indirectly.  |
-|  **Multi-level governance innovation interventions**  |   |   |   |   |   |
+**Opportunities:** Digitalisation and visualisation, Innovative culture and portfolio thinking. | **City Management Office**, all City administrations and Companies | A more efficient organisation (economic dimensions of City governance).
+Intervention of an overarching character. Supports several co-benefits indirectly.
+**Multi-level governance innovation interventions**
 City of Gothenburg
 Climate Neutrality Action Plan
 2
 
 |  Viable Cities | A national strategic innovation programme for climate-neutral cities. | **Barriers:** Multi-actor impact, Multi-level governance, Geographical spread, Knowledge, Skills and leadership.
-**Opportunities:** Cross-sector multi-actor collaboration, Innovative culture and portfolio thinking. | **KTH Royal Institute of Technology**, 6 national authorities, 23 cities, many more members and partners from across sectors. | Develop common working methods, multi-level governance, collaboration within and between cities and actors. | The aim of the innovation programme is to support climate neutrality of cities by having a holistic approach where synergies and co-benefits are important parts of the theory of change.  |
-| --- | --- | --- | --- | --- | --- |
+| **Opportunities:** Cross-sector multi-actor collaboration, Innovative culture and portfolio thinking. | **KTH Royal Institute of Technology**, 6 national authorities, 23 cities, many more members and partners from across sectors. | Develop common working methods, multi-level governance, collaboration within and between cities and actors. | The aim of the innovation programme is to support climate neutrality of cities by having a holistic approach where synergies and co-benefits are important parts of the theory of change. |
 |  Net Zero Cities | Project within Horizon 2020 designed to help cities overcome the current structural, institutional and cultural barriers they face in order to achieve climate neutrality by 2030. | **Barriers:** Multi-actor impact, Multi-level governance, Geographical spread, Knowledge, Skills and leadership.
-**Opportunities:** Cross-sector multi-actor collaboration, Innovative culture and portfolio thinking. | **EIT Climate-KIC**, 34 organisations, 112 Mission cities. | Building capabilities, forging a platform with tools, resources and expertise for rapid learning. | The aim of the innovation programme is to support climate neutrality of cities by having a holistic approach where synergies and co-benefits are important parts of the theory of change.  |
+| **Opportunities:** Cross-sector multi-actor collaboration, Innovative culture and portfolio thinking. | **EIT Climate-KIC**, 34 organisations, 112 Mission cities. | Building capabilities, forging a platform with tools, resources and expertise for rapid learning. | The aim of the innovation programme is to support climate neutrality of cities by having a holistic approach where synergies and co-benefits are important parts of the theory of change. |
 |  Orchestrate climate transition through collaboration and networks | The City will contribute to and use networks and collaborations on local, regional, national and international levels in a more coordinated way aiming to orchestrate a higher transition speed. | **Barriers:** Multi-actor impact, Multi-level governance, Geographical spread, Knowledge, Skills and leadership.
 **Opportunities:** | **Environmental Administration**, Climate-KIC, Intelligent Cities Challenge, Covenant of Mayors, Green City Accord, EuroCities, ICLEI, FossilFree Sweden, RUS, | Using the city’s networks and collaborations in a coordinated and intentional way will increase learning, influence, resources and pace of transition. | A more efficient use of resources when aggregated. Use of other organisations resources (economic dimensions of City governance).
 Intervention of an overarching character.  |
@@ -2471,7 +2448,7 @@ Climate Neutrality Action Plan
 | --- | --- | --- | --- | --- | --- |
 |  West-Sweden regional mobilisation | An ambition to regionalise efforts and building alliances to cities and organisations striving for net zero. | **Barriers:** Multi-actor impact, Multi-level governance, Geographical spread, Knowledge, Skills and leadership.
 **Opportunities:** Cross-sector multi-actor collaboration, Innovative culture and portfolio thinking. | **City of Gothenburg**, The Gothenburg Region (13 municipalities), Region Västra Götaland, City of Borås, Trollhättan Municipality, Mariestad Municipality. County Administrative Board of Västra Götaland. | Stronger influence, more resources, broader learning, collaboration in measures with regional scope for greater implementation. | A more efficient use of resources when aggregated. Use of other organisations resources (economic dimensions of City governance).
-Intervention of an overarching character. Supports several co-benefits indirectly.  |
+Intervention of an overarching character. Supports several co-benefits indirectly.
 |  Municipalities’ 30 climate pledges | An initiative within the ‘Climate 2030 - Västra Götaland is changing’ The municipalities have a strategically important role in achieving the climate goals. The municipalities' climate pledges consist of 30 concrete measures over which the municipality has control, which are tried and tested, and |  | **Region Västra Götaland, County Administrative Board Västra Götaland**, 50+ municipalities. | In 2021 and 2022, the municipalities in Västra Götaland have together implemented climate pledges that are estimated to reduce emissions by more than 75,000 tonnes of carbon dioxide equivalents. For 2024-2026, most of the municipalities in Västra Götaland have now submitted their climate pledges, with a total of around 800 pledges being adopted. | A more efficient use of resources when aggregated. Use of other organisations resources (economic dimensions of City governance).
 Intervention of an overarching character. Supports several co-benefits indirectly.  |
 City of Gothenburg
@@ -2482,15 +2459,14 @@ Climate Neutrality Action Plan
 | --- | --- | --- | --- | --- | --- |
 |  **Multi-actor governance innovation interventions**  |   |   |   |   |   |
 |  The Gothenburg Platform for Climate-Neutral Construction | Platform to gather actors throughout the value chain around ten concrete commitments, which are based on the five key factors in the roadmap for a fossil-free building and construction sector. | **Barriers:** Multi-actor impact, Knowledge, Skills and leadership, Degree of City control, Fragmented innovation, Financing and business models, Societal norms and behaviours.
-**Opportunities:** Cross-sector multi-actor collaboration, Innovative culture and portfolio thinking, Societal norms and behavioural change, Co-benefits, Degree of City control. | 130 organisations in the collaboration throughout value chain. | Together and action-oriented, the actors quickly and powerfully reduce climate impact in practice, in a learning and inclusive environment. Plans to scale regionally and to more key stakeholders in the area. | Job creation, new businesses and new branches of industry, economic advantages, less and more sustainable resource use.  |
-|  The Handshake | Building a new market for reuse of construction materials through a signed declaration of intent in which they promise to scale up their work and efforts in circular construction. | **Barriers:** Multi-actor impact, Knowledge, Skills and leadership, Degree of City control, Fragmented innovation, Financing and business models, | 50 private and public organisations from four stakeholder groups; the City's property and facility owners, private and other property owners, the industry organization The Property Owners, | Rapid emission reductions through circular construction requires a systemic shift in business models, pricing, procurement, collaboration between actors and change of norms and regulations. | Job creation, new businesses and new branches of industry, economic advantages, less and more sustainable resource use.  |
+**Opportunities:** Cross-sector multi-actor collaboration, Innovative culture and portfolio thinking, Societal norms and behavioural change, Co-benefits, Degree of City control. | 130 organisations in the collaboration throughout value chain. | Together and action-oriented, the actors quickly and powerfully reduce climate impact in practice, in a learning and inclusive environment. Plans to scale regionally and to more key stakeholders in the area. | Job creation, new businesses and new branches of industry, economic advantages, less and more sustainable resource use.
+The Handshake | Building a new market for reuse of construction materials through a signed declaration of intent in which they promise to scale up their work and efforts in circular construction. | **Barriers:** Multi-actor impact, Knowledge, Skills and leadership, Degree of City control, Fragmented innovation, Financing and business models, | 50 private and public organisations from four stakeholder groups; the City's property and facility owners, private and other property owners, the industry organization The Property Owners, | Rapid emission reductions through circular construction requires a systemic shift in business models, pricing, procurement, collaboration between actors and change of norms and regulations. | Job creation, new businesses and new branches of industry, economic advantages, less and more sustainable resource use.
 City of Gothenburg
 Climate Neutrality Action Plan
 5
 
 |   |  | Societal norms and behaviours.
-**Opportunities:** Cross-sector multi-actor collaboration, Innovative culture and portfolio thinking, Societal norms and behavioural change, Co-benefits, Degree of City control. | **Business Region Gothenburg.** |  |   |
-| --- | --- | --- | --- | --- | --- |
+| **Opportunities:** Cross-sector multi-actor collaboration, Innovative culture and portfolio thinking, Societal norms and behavioural change, Co-benefits, Degree of City control. | **Business Region Gothenburg.** |
 |  Gothenburg Green City Zone | Within three different geographical areas the focus is on testing, evaluating and implementing new solutions, methods and processes, generating knowledge on emission free transportation | **Barriers:** Multi-actor impact, Knowledge, Skills and leadership, Degree of City control, Fragmented innovation, Financing and business models, Societal norms and behaviours.
 **Opportunities:** Cross-sector multi-actor collaboration, Innovative culture and portfolio thinking, Societal norms and behavioural change, Co-benefits, Degree of City control. | **Business Region Gothenburg, Volvo Cars, RISE, Research Institutes of Sweden**
 Chalmers University of Technology, Gothenburg University, Johanneberg Science Park, Swedish Exhibition & Congress Center, City of Mölndal. | Driving change in all parts of the transport system and in the entire Gothenburg region to accelerate transition. | Job creation, new businesses and new branches of industry, economic advantages, less and more sustainable resource use, decrease of noise and air pollution, less congestion, more efficient use of urban areas, enabling greening of urban areas.  |
@@ -2501,9 +2477,8 @@ Climate Neutrality Action Plan
 6
 
 |  Fashion, Facts and Fun | Platform for collaboration with the fashion industry to contribute to more sustainable and competitive business models. | **Barriers:** Multi-actor impact, Knowledge, Skills and leadership, Degree of City control, Fragmented innovation, Financing and business models, Societal norms and behaviours.
-**Opportunities:** Cross-sector multi-actor collaboration, Innovative culture and portfolio thinking, Societal norms and behavioural change, Co-benefits, Degree of City control. | **Business Region**
-**Gothenburg, Region Västra Götaland,** Science Park Borås, TEKO – Swedish trade and employers’ association for companies working in the textile and fashion industry, Nordic Textile Academy, Swedish Fashion Council, Swedish Commerce, RISE, City of Borås, Tillskärar-akademin in Gothenburg, West Sweden Tourist Board, Wargön Innovation, Borås University, Region Borås. | Transition of an industrial sector, having implications on sustainable clothing consumption and consumption-based emissions in Gothenburg and elsewhere. | Contributes to maintained or increased competitiveness of the local fashion industry, job creation/maintenance.  |
-| --- | --- | --- | --- | --- | --- |
+| **Opportunities:** Cross-sector multi-actor collaboration, Innovative culture and portfolio thinking, Societal norms and behavioural change, Co-benefits, Degree of City control. | **Business Region** |
+| **Gothenburg, Region Västra Götaland,** Science Park Borås, TEKO – Swedish trade and employers’ association for companies working in the textile and fashion industry, Nordic Textile Academy, Swedish Fashion Council, Swedish Commerce, RISE, City of Borås, Tillskärar-akademin in Gothenburg, West Sweden Tourist Board, Wargön Innovation, Borås University, Region Borås. | Transition of an industrial sector, having implications on sustainable clothing consumption and consumption-based emissions in Gothenburg and elsewhere. | Contributes to maintained or increased competitiveness of the local fashion industry, job creation/maintenance. |
 |  Public transport for the future | A portfolio of initiatives and projects in collaboration between actors to develop public transport at the intersection with for example micro-mobility, car sharing and new approaches for public transportation. | **Barriers:** Multi-actor impact, Knowledge, Skills and leadership, Degree of City control, Fragmented innovation, Financing and business models, Societal norms and behaviours.
 **Opportunities:** Cross-sector multi-actor collaboration | **Västtrafik,** Keolis, GoMore_Urban planning administrations in Gothenburg and other municipalities in the region. | Enabling collaboration and outside-the-box solutions for a seamless and more attractive public transportation – to gain market shares from unsustainable travel. | Job creation, new businesses and new branches of industry, economic advantages, less and more sustainable resource use, decrease of noise and air pollution, less congestion, more efficient use of urban areas.  |
 City of Gothenburg
@@ -2528,9 +2503,8 @@ Climate Neutrality Action Plan
 |   |  | benefits, Degree of City control. |  |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  The Green Connection | A portfolio of linked initiatives together with numerous actors with the ambition to become the world’s most sustainable port and lower carbon emissions by 70% by 2030. Includes the port itself and the entire logistics chain. | **Barriers:** Multi-actor impact, Knowledge, Skills and leadership, Degree of City control, Fragmented innovation, Financing and business models, Societal norms and behaviours.
-
-**Opportunities:** Cross-sector multi-actor collaboration, Innovative culture and portfolio thinking, Societal norms and behavioural change, Co-benefits, Degree of City control. | **Port of Gothenburg**, Göteborg Energi, AB Volvo, Scania, Swedish Transport Administration, APM Terminals, Stena Line, shipping companies, logistics companies, combi-terminals in Sweden and Norway, other international ports with similar ambitions, and more. | Enables large efficiency measures of the logistics chain, infrastructural and technical shifts as well as new business models and collaboration across the logistics chains. | Economic advantages, higher efficiency, lower resource use, reduced environmental impact on land and sea, maintained or increased competitiveness.  |
-|  The world’s most sustainable destination | To keep this leading position requires even more developed and broad efforts engaging key actors across the City organisation as well as the tourism sector, accommodation, restaurants, events, etc. | **Barriers:** Multi-actor impact, Knowledge, Skills and leadership, Degree of City control, Fragmented innovation, Financing and business models, Societal norms and behaviours. | **Gothenburg & Co.**, Got Event, Sustainable Waste and Water, Business Region Gothenburg, a broad network of local actors and companies within the destination/tourism/leisure industry. | Enabling emission reduction across emission impact domains. Reducing emissions from transportation and mobility, energy, waste and buildings by working with the tools connected to destination development. | Economic growth of companies within destination and tourism, maintained or increased competitiveness, diverse positive environmental impact, less waste, decreased resource use, less chemical use, more attractive and livable city/neighborhoods, less noise and air pollution.  |
+**Opportunities:** Cross-sector multi-actor collaboration, Innovative culture and portfolio thinking, Societal norms and behavioural change, Co-benefits, Degree of City control. | **Port of Gothenburg**, Göteborg Energi, AB Volvo, Scania, Swedish Transport Administration, APM Terminals, Stena Line, shipping companies, logistics companies, combi-terminals in Sweden and Norway, other international ports with similar ambitions, and more. | Enables large efficiency measures of the logistics chain, infrastructural and technical shifts as well as new business models and collaboration across the logistics chains. | Economic advantages, higher efficiency, lower resource use, reduced environmental impact on land and sea, maintained or increased competitiveness.
+The world’s most sustainable destination | To keep this leading position requires even more developed and broad efforts engaging key actors across the City organisation as well as the tourism sector, accommodation, restaurants, events, etc. | **Barriers:** Multi-actor impact, Knowledge, Skills and leadership, Degree of City control, Fragmented innovation, Financing and business models, Societal norms and behaviours. | **Gothenburg & Co.**, Got Event, Sustainable Waste and Water, Business Region Gothenburg, a broad network of local actors and companies within the destination/tourism/leisure industry. | Enabling emission reduction across emission impact domains. Reducing emissions from transportation and mobility, energy, waste and buildings by working with the tools connected to destination development. | Economic growth of companies within destination and tourism, maintained or increased competitiveness, diverse positive environmental impact, less waste, decreased resource use, less chemical use, more attractive and livable city/neighborhoods, less noise and air pollution.
 City of Gothenburg
 Climate Neutrality Action Plan
 0
@@ -2549,10 +2523,10 @@ O
 | --- | --- | --- | --- | --- | --- |
 |  Infrastructure for democratic action and participation | A package of infrastructure, tools, policy, cross-sectoral networks within the City being developed to increase participation of citizens in the City's processes. | **Barriers:** Knowledge, Skills and leadership, Societal norms and behaviours.
 **Opportunities:** Co-benefits, Just transition, Citizen inclusion, Social innovation. | **Democracy and Citizen Service Administration**, all City Administrations and Companies. | Enhance skills and capacity among politicians, leaders and employees across the City's organisation in order to ensure an inclusive pathway towards climate neutrality. | Informed decisions for more efficient governance, acceptance of measures with diverse positive environmental impact.
-Intervention of an overarching character. Supports several co-benefits indirectly.  |
+Intervention of an overarching character. Supports several co-benefits indirectly.
 |  Citizen assembly | Citizen assembly focused on environmental and climate transition. | **Barriers:** Multi-actor impact, Knowledge, Societal norms and behaviours, Political implications, Degree of City control.
 **Opportunities:** Cross-sector multi-actor collaboration, Co-benefits, Just transition, Citizen inclusion, Social innovation, Mission orientation. | **Environmental Administration**, Democracy and Citizen Service Administration | An inclusive method to reflect the entire population in Gothenburg, enabling new ideas and solutions with higher receptiveness | Informed decisions for more efficient governance, acceptance of measures with diverse positive environmental impact.
-Intervention of an overarching character. Supports several co-benefits indirectly.  |
+Intervention of an overarching character. Supports several co-benefits indirectly.
 |  Civil society platform for climate and environmental transition | A platform under development to gather interested CSO:s for collaboration and co-creation of measures for climate neutrality. | **Barriers:** Multi-actor impact, Knowledge, Societal norms and behaviours, Political implications, Degree of City control. | **Environmental Administration**, Democracy and Citizen Service Administration, all City administrations and City companies, CSO:s of Gothenburg. | Enables action-focused collaboration through participatory governance, building a movement of different actors towards the mission. | Informed decisions for more efficient governance, acceptance of measures with diverse positive environmental impact.
 Intervention of an overarching character.  |
 
@@ -2565,7 +2539,7 @@ Climate Neutrality Action Plan
 | --- | --- | --- | --- | --- | --- |
 |  “The Transition City” | A cohesive initiative from the City under development aiming to communicate, support, inspire to and enable climate neutrality initiatives and social innovation through citizen involvement and City–citizen collaboration. | Barriers: Multi-actor impact, Knowledge, Skills and leadership, Societal norms and behaviours, Political implications, Degree of City control.
 Opportunities: Cross-sector multi-actor collaboration, Co-benefits, Just transition, Citizen inclusion, Social innovation, Mission orientation. | Environmental Administration, Democracy and Citizen Service Administration, all other City administrations and City companies. | Enables action-focused collaboration through participatory governance, building a movement of different actors towards the mission. | Informed decisions for more efficient governance, acceptance of measures with diverse positive environmental impact.
-Intervention of an overarching character. Supports several co-benefits indirectly.  |
+Intervention of an overarching character. Supports several co-benefits indirectly.
 |  “The Futureable City” | An ambulant concept for dialogue open to different city stakeholders and citizens to discuss and gain deeper knowledge and understanding about solutions for a futureproofed city. | Barriers: Multi-actor impact, Knowledge, Skills and leadership, Societal norms and behaviours, Political implications, Degree of City control.
 Opportunities: Cross-sector multi-actor collaboration, | Democracy and Citizen Service Administration | Enables an arena for action-focused collaboration through participatory governance, building a movement of different actors towards the mission. | Informed decisions for more efficient governance, acceptance of measures with diverse positive environmental impact.
 Intervention of an overarching character. Supports several co-benefits indirectly.  |
@@ -2577,7 +2551,7 @@ Climate Neutrality Action Plan
 | --- | --- | --- | --- | --- | --- |
 |  Frihamnsdagarna (The Frihamn Days) | An annual democracy festival and Sweden's new arena for change, sustainability, and democracy. | **Barriers:** Multi-actor impact, Knowledge, Skills and leadership, Societal norms and behaviours, Political implications, Degree of City control.
 **Opportunities:** Cross-sector multi-actor collaboration, Co-benefits, Just transition, Citizen inclusion, Social innovation, Mission orientation. | *The economic association Frihamnsdagarna*, and different partners each year. | Enables an arena for action-focused collaboration through participatory governance, building a movement of different actors towards the mission. | Informed decisions for more efficient governance, acceptance of measures with diverse positive environmental impact.
-Intervention of an overarching character. Supports several co-benefits indirectly.  |
+Intervention of an overarching character. Supports several co-benefits indirectly.
 |  Virtual Gothenburg | A digital twin is being developed to address the increasing societal challenges of climate change, segregation, and the complexity of society at large. | **Barriers:** Knowledge, Skills and leadership, Uncertainty
 **Opportunities:** Digitalisation and visualisation, Citizen inclusion, Social innovation, Mission orientation. | Urban Planning Administration, Lindholmen Science Park. | In addition to the description in C.1.2, the digital twin will be essential to provide tools for citizen involvement and shared understanding of challenges and solutions related to climate neutrality. | Informed decisions for more efficient governance, acceptance of measures with diverse positive environmental impact.
 Intervention of an overarching character. Supports several co-benefits indirectly.  |
@@ -2601,8 +2575,7 @@ Climate Neutrality Action Plan
 5
 
 |   | develop organisational and personal skills to better form solutions by and for the users, often citizens. | and behaviours.
-**Opportunities:** Co-benefits, Just transition, Citizen inclusion, Social innovation. |  | climate neutrality, a key is to put people in the center of solutions. | Intervention of an overarching character. Supports several co-benefits indirectly.  |
-| --- | --- | --- | --- | --- | --- |
+| **Opportunities:** Co-benefits, Just transition, Citizen inclusion, Social innovation. | climate neutrality, a key is to put people in the center of solutions. | Intervention of an overarching character. Supports several co-benefits indirectly. |
 |  Just Transitions Graduate School | The positioning of the graduate school at the intersection of a number of different but interconnected fields of research and practices relating to governance, climate change, urban justice, and transdisciplinary and cross-border cooperation, marks an important step in linking together past knowledge and experience in all these fields. In this way, an integrated perspective on management and governance is developed to address the challenges society faces in achieving a just climate transition. | **Barriers:** Knowledge, Skills and leadership.
 **Opportunities:** Co-benefits, Just transition. | University of Linköping, Urban Futures – Centre for Sustainable Urban Development, Chalmers University of Technology, University of Gothenburg, City of Gothenburg, Region Västra Götaland, City of Linköping, Norrköping Municipality, the County Administrative Board of Östergötland | The aim of the Just Transitions graduate school is to build knowledge and competence about how a just climate transition can be implemented in a local context, including eight PhD students. | Enables more efficient governance, cross-fertilization of issues.  |
 City of Gothenburg
@@ -2619,8 +2592,7 @@ Climate Neutrality Action Plan
 |   |  | Mission orientation. |  |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  Reallocate | Living labs to find interventions that catalyse change in mobility practices, focusing on school children’s active travel in peri-urban areas as well as seamless travel, citizen engagement and nudging tools in Korsvägen, a complex mobility hub. | **Barriers:** Multi-actor impact, Knowledge, Skills and leadership, Societal norms and behaviours, Degree of City control.
-
-**Opportunities:** Cross-sector multi-actor collaboration, Co-benefits, Just transition, Citizen inclusion, Social innovation. | **Urban Environment Administration** | Finding social innovation solutions to challenges connected to mobility and greenhouse gas emissions. | Improved health, more attractive and liveable neighbourhoods, reduced noise and air pollution, less congestion, increased road safety.  |
+| **Opportunities:** Cross-sector multi-actor collaboration, Co-benefits, Just transition, Citizen inclusion, Social innovation. | **Urban Environment Administration** | Finding social innovation solutions to challenges connected to mobility and greenhouse gas emissions. | Improved health, more attractive and liveable neighbourhoods, reduced noise and air pollution, less congestion, increased road safety. |
 |  Green City Zone - Social innovation | Develop the concept as described in C.1.1-2, adding the citizen inclusion and behavioural change to a larger degree | **Barriers:** Multi-actor impact, Knowledge, Skills and leadership, Societal norms and behaviours, Degree of City control, Fragmented innovation.
 
 **Opportunities:** Cross-sector multi-actor collaboration, Co-benefits, Just transition, Citizen inclusion, Social innovation, | *Business Region Gothenburg, Volvo Cars, RISE, Research Institutes of Sweden, Chalmers University of Technology, Gothenburg University, Johanneberg Science Park, Swedish Exhibition & Congress Center, City of Mölndal.* | Adding citizen inclusion and behavioural change creates better conditions for systemic change. | Improved health, more attractive and liveable neighbourhoods, reduced noise and air pollution, less congestion, increased road safety.  |
@@ -2631,8 +2603,8 @@ Climate Neutrality Action Plan
 |   |  | Mission orientation. |  |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  Sustainable destination and climate smart events | The pathway towards the most sustainable destination described in C.1.1-2 is a catalyser for behavioural change inspiring citizens and visitors towards climate neutrality. | **Barriers:** Multi-actor impact, Knowledge, Skills and leadership, Degree of City control, Fragmented innovation, Societal norms and behaviours.
-**Opportunities:** Cross-sector multi-actor collaboration, Innovative culture and portfolio thinking, Societal norms and behavioural change, Co-benefits, Degree of City control, Social innovation, Mission orientation. | **Gothenburg&Co.** Got Event, Sustainable Waste and Water, Business Region Gothenburg, Greentopia, a broad network of local actors and companies within the destination/tourism/leisure industry. | Understanding that events and tourism pose a window of opportunity for a higher receptiveness to behavioural change, an explorative work in this field can contribute to lasting changes in behaviour for both citizens of Gothenburg and people elsewhere. | Economic growth of companies within destination and tourism, maintained or increased competitiveness, diverse positive environmental impact, less waste, decreased resource use, less chemical use, more attractive and lievable city/neighborhoods, less noise and air pollution.  |
-|  Single-use free city | An initiative paving the way for the elimination of single -use food and drink packaging by being ahead of regulation, testing and scaling up solutions. | **Barriers:** Multi-actor impact, Knowledge, Degree of City control, Fragmented innovation, Societal norms and behaviours. | **Gothenburg&Co.** Got Event, Sustainable Waste and Water, Innerstaden Göteborg Association, Avenyföreningen Association, Urban Environment Administration, TINT. | Enables a shift within behavioural change connected to emissions from waste and resource use. | Less resource use, less littering, lower costs for city cleaning, attractive city/neighbourhoods, increased competitiveness and less costs by being ahead of legislation.  |
+**Opportunities:** Cross-sector multi-actor collaboration, Innovative culture and portfolio thinking, Societal norms and behavioural change, Co-benefits, Degree of City control, Social innovation, Mission orientation. | **Gothenburg&Co.** Got Event, Sustainable Waste and Water, Business Region Gothenburg, Greentopia, a broad network of local actors and companies within the destination/tourism/leisure industry. | Understanding that events and tourism pose a window of opportunity for a higher receptiveness to behavioural change, an explorative work in this field can contribute to lasting changes in behaviour for both citizens of Gothenburg and people elsewhere. | Economic growth of companies within destination and tourism, maintained or increased competitiveness, diverse positive environmental impact, less waste, decreased resource use, less chemical use, more attractive and liveable city/neighborhoods, less noise and air pollution.
+Single-use free city | An initiative paving the way for the elimination of single -use food and drink packaging by being ahead of regulation, testing and scaling up solutions. | **Barriers:** Multi-actor impact, Knowledge, Degree of City control, Fragmented innovation, Societal norms and behaviours. | **Gothenburg&Co.** Got Event, Sustainable Waste and Water, Innerstaden Göteborg Association, Avenyföreningen Association, Urban Environment Administration, TINT. | Enables a shift within behavioural change connected to emissions from waste and resource use. | Less resource use, less littering, lower costs for city cleaning, attractive city/neighbourhoods, increased competitiveness and less costs by being ahead of legislation.
 City of Gothenburg
 Climate Neutrality Action Plan
 9
@@ -2647,7 +2619,7 @@ Climate Neutrality Action Plan
 |   |  | of City control, Social innovation, Mission orientation. |  |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  Private consumption & Consumption-based emission tools | Integration of consumption-based emissions in map planning tool and awareness raising | **Barriers:** Multi-actor impact, Knowledge, Skills and leadership, Degree of City control, Societal norms and behaviours.
-**Opportunities:** Cross-sector multi-actor collaboration, Societal norms and behavioural change, Co-benefits, Degree of City control, Social innovation, Mission orientation. | **Democracy and Citizen Service Administration**, other City administrations and companies. | Enables new ways of working with emission reductions, especially relevant from a citizen point of view. | Better informed decisions, more efficient governance/measures, social cohesion.  |
+| **Opportunities:** Cross-sector multi-actor collaboration, Societal norms and behavioural change, Co-benefits, Degree of City control, Social innovation, Mission orientation. | **Democracy and Citizen Service Administration**, other City administrations and companies. | Enables new ways of working with emission reductions, especially relevant from a citizen point of view. | Better informed decisions, more efficient governance/measures, social cohesion. |
 |  Way out West | Gothenburg’s most famous annual music festival has a focus to inspire visitors and exchange ideas on greener lifestyles. The City has collaborated dedicatedly with the | **Barriers:** Multi-actor impact, Degree of City control, Fragmented innovation, Societal norms and behaviours.
 **Opportunities:** Cross-sector multi-actor collaboration | **Luger**, Göteborg&Co, Greentopia. | Enables behavioural change and a meeting point to spur social innovation and interaction between citizens, businesses and public authorities with a | Diverse positive environmental impact, less resource use, improved health, social cohesion.  |
 City of Gothenburg
@@ -2805,7 +2777,6 @@ Governing documents should clarify for the organisation, as well as the city’s
 |  Municipal Directives |   | Planning and Regulatory Documents  |   |
 |  Setting standards for individuals | Targeted documents | Planning-related documents | Regulatory documents  |
 |  Document name: Environment and Climate Programme for the City of Gothenburg 2021–2030  |   |   |   |
-| --- | --- | --- | --- |
 |  Passed by: | Applies to: | Reference number: | Decision date and reference:  |
 |  City Council | All committees and boards of the City of Gothenburg | 0409/19 | 2021-03-25 § 18  |
 |  Document type: | Validity period: | Most recent review: | Document controller:  |
@@ -3067,8 +3038,7 @@ Environment and Climate Programme for the City of Gothenburg 2021–2030
 (52)
 
 |  Indicators | Current situation 2019
-(average value 2015–2019) | Target value 2030  |
-| --- | --- | --- |
+| (average value 2015–2019) | Target value 2030 |
 |  Amount of wastewater overflows and discharges of nitrogen and phosphorus to recipients other than Göta Älv | 42 500 cubic meters
 Nitrogen: 6,6 tons
 Phosphorous: 1 ton | Reduction of the average value over a five-year period, with a minimum reduction of 25 percent.  |
@@ -3220,7 +3190,7 @@ Environment and Climate Programme for the City of Gothenburg 2021–2030
 |  Indicators | Current situation | Target value 2030  |
 | --- | --- | --- |
 |  Primary energy consumption per inhabitant within the municipality | 18 MWh per inhabitant (2010)
-MWh per inhabitant (2018) | 12 MWh per inhabitant  |
+| MWh per inhabitant (2018) | 12 MWh per inhabitant |
 |  Average primary energy consumption per square meter in the City of Gothenburg's facilities and residential buildings where the operation can be related to surface area | Facilities: 182 kWh/m² (2009)
 kWh/m² (2019)
 Residential buildings: 123 kWh/m² (2009)
@@ -3254,9 +3224,9 @@ Reaching the sub-target will require a shift from car travel to walking, cycling
 |  Indicators | Current situation | Target value 2023 | Target value 2030  |
 | --- | --- | --- | --- |
 |  Greenhouse gas emissions from transportation in Gothenburg | 999,900 tons of carbon dioxide equivalents per year (2010)
-,600 tons of carbon dioxide equivalents per year (2017) | - | At least 90 percent less compared to 2010  |
-|  Volume of traffic, i.e. the number of kilometers driven by all types of motorized road vehicles per weekday, in Gothenburg | Requires development | - | 25 percent less compared to 2020  |
-|  Proportion of the City of Gothenburg’s vehicles that are fossil-free | 55 percent (2019) | 100 percent | -  |
+,600 tons of carbon dioxide equivalents per year (2017) | - | At least 90 percent less compared to 2010
+Volume of traffic, i.e. the number of kilometers driven by all types of motorized road vehicles per weekday, in Gothenburg | Requires development | - | 25 percent less compared to 2020
+Proportion of the City of Gothenburg’s vehicles that are fossil-free | 55 percent (2019) | 100 percent | -
 
 # 4. The City of Gothenburg reduces the climate impact from purchases
 
@@ -3375,10 +3345,10 @@ The challenges to ensure good air quality are mainly connected to reducing the e
 |  Indicators | Current situation | Target value 2030  |
 | --- | --- | --- |
 |  Proportion of pre-school playgrounds and residential houses with a nitrogen dioxide (NO₂) concentration of less than 20 micrograms per cubic meter | Pre-school playgrounds: 85 percent (2015)
-Residential houses: 73 percent (2015) | 100 percent  |
-|  Proportion of pre-school playgrounds and residential houses with a particulate matter (PM₁₀) concentration of less than 15 micrograms per cubic meter | Requires development | Annual increase  |
-|  Proportion of area in coherent urban development (or equivalent designation in future comprehensive plans) with a nitrogen dioxide (NO₂) concentration of less than 20 micrograms per cubic meter | 70 percent (2015) | Annual increase  |
-|  Proportion of area in coherent urban development (or equivalent designation in future comprehensive plans) with a particulate matter (PM₁₀) concentration of less than 15 micrograms per cubic meter | Requires development | Annual increase  |
+Residential houses: 73 percent (2015) | 100 percent
+Proportion of pre-school playgrounds and residential houses with a particulate matter (PM₁₀) concentration of less than 15 micrograms per cubic meter | Requires development | Annual increase
+Proportion of area in coherent urban development (or equivalent designation in future comprehensive plans) with a nitrogen dioxide (NO₂) concentration of less than 20 micrograms per cubic meter | 70 percent (2015) | Annual increase
+Proportion of area in coherent urban development (or equivalent designation in future comprehensive plans) with a particulate matter (PM₁₀) concentration of less than 15 micrograms per cubic meter | Requires development | Annual increase
 
 # 3. The City of Gothenburg ensures a good sound environment for the people of Gothenburg
 
@@ -3637,20 +3607,18 @@ Environment and Climate Programme for the City of Gothenburg 2021–2030
 (52)
 # List of all indicators for the environmental goals and sub-goals
 
-|  Environmental goal: Gothenburg has a high level of biodiversity | Current situation | Target value 2030  |
-| --- | --- | --- |
-|  Proportion of well-maintained meadows and pastures | 55 percent (2017) | More than 90 percent  |
-|  Area of protected nature | 13,230 hectares (2019) | At least 16,200 hectares  |
-|  Number of municipal biotope protection areas and natural monuments | 0 (2019) | 10 and 15 respectively  |
-|  Area of natural grasslands | 2,112 hectares (2018) | Has not decreased compared to current situation  |
-|  Area of deciduous forests | 1,734 hectares (2011) | Has not decreased compared to current situation  |
-|  Proportion of surface water bodies with good ecological status | 17 percent (2019) | 100 percent  |
-|  Sub-goal 1: The City of Gothenburg protects and manages the habitats of species to ensure the development of natural values | Current situation 2020 | Target value 2025 | Target value 2030  |
-| --- | --- | --- | --- |
-|  Proportion of inventoried categories of responsibility biotopes (23 in total) | 80 percent | 100 percent | -  |
-|  Proportion of categories of responsibility biotopes determined to require protection | 0 percent | 100 percent | -  |
-|  Area of responsibility biotopes, total and on municipal land | Total 11,165 hectares of which 2,787 hectares is municipal land | - | To be completed by 2025 at the latest based on inventories  |
-|  Proportion of responsibility biotopes with nature conservation management and proportion with formal protection, total and on municipal land | Nature conservation management: Requires development Proportion with formal protection: 53 percent in total municipal 31 percent | - | To be completed by 2025 at the latest based on inventories  |
+Environmental goal: Gothenburg has a high level of biodiversity | Current situation | Target value 2030
+Proportion of well-maintained meadows and pastures | 55 percent (2017) | More than 90 percent
+Area of protected nature | 13,230 hectares (2019) | At least 16,200 hectares
+Number of municipal biotope protection areas and natural monuments | 0 (2019) | 10 and 15 respectively
+Area of natural grasslands | 2,112 hectares (2018) | Has not decreased compared to current situation
+Area of deciduous forests | 1,734 hectares (2011) | Has not decreased compared to current situation
+Proportion of surface water bodies with good ecological status | 17 percent (2019) | 100 percent
+Sub-goal 1: The City of Gothenburg protects and manages the habitats of species to ensure the development of natural values | Current situation 2020 | Target value 2025 | Target value 2030
+Proportion of inventoried categories of responsibility biotopes (23 in total) | 80 percent | 100 percent | -
+Proportion of categories of responsibility biotopes determined to require protection | 0 percent | 100 percent | -
+Area of responsibility biotopes, total and on municipal land | Total 11,165 hectares of which 2,787 hectares is municipal land | - | To be completed by 2025 at the latest based on inventories
+Proportion of responsibility biotopes with nature conservation management and proportion with formal protection, total and on municipal land | Nature conservation management: Requires development Proportion with formal protection: 53 percent in total municipal 31 percent | - | To be completed by 2025 at the latest based on inventories
 
 Environment and Climate Programme for the City of Gothenburg 2021–2030
 (52)
@@ -3660,19 +3628,17 @@ Environment and Climate Programme for the City of Gothenburg 2021–2030
 Nitrogen: 6.6 tons
 Phosphorous: 1 ton | Reduction of the average value over a five-year period, with a minimum reduction of 25 percent.  |
 |  Discharge of nitrogen and phosphorous from the sewage system (Ryaverket and overflow of wastewater) to Göta Ålv | Nitrogen: 1002 tons
-Phosphorous: 31 tons | Reduction of the average value over a five-year period  |
-|  Sub-goal 3: The City of Gothenburg increases biodiversity in the urban environment | Current situation | Target value 2030  |
-| --- | --- | --- |
-|  Proportion of public space with land usage “Nature” of the total planned area | 3.7 percent (2020) | Has not decreased compared to 2020  |
-|  Proportion of green spaces according to established criteria that the City of Gothenburg owns within "Coherent urban development" (or equivalent designation in future comprehensive plans) that have management goals for biodiversity (broken down by nature, park, and developed area) | Requires development | 100 percent  |
-|  Proportion of green spaces within “Coherent urban development” managed in a manner that increases biodiversity (broken down by nature, park, and developed area) – random sample | Requires development | 100 percent  |
-|  Area of wetlands (in urban areas) | Requires development | Annual increase  |
-|  Sub-goal 4: The City of Gothenburg’s purchases help promote biodiversity | Current situation | Target value 2030  |
-| --- | --- | --- |
+| Phosphorous: 31 tons | Reduction of the average value over a five-year period |
+| Sub-goal 3: The City of Gothenburg increases biodiversity in the urban environment | Current situation | Target value 2030 |
+| Proportion of public space with land usage “Nature” of the total planned area | 3.7 percent (2020) | Has not decreased compared to 2020 |
+| Proportion of green spaces according to established criteria that the City of Gothenburg owns within "Coherent urban development" (or equivalent designation in future comprehensive plans) that have management goals for biodiversity (broken down by nature, park, and developed area) | Requires development | 100 percent |
+| Proportion of green spaces within “Coherent urban development” managed in a manner that increases biodiversity (broken down by nature, park, and developed area) – random sample | Requires development | 100 percent |
+| Area of wetlands (in urban areas) | Requires development | Annual increase |
+| Sub-goal 4: The City of Gothenburg’s purchases help promote biodiversity | Current situation | Target value 2030 |
 |  Proportion of purchases of eco-certified products and services where such options are available.
-Does not apply to purchases covered by the organic food indicator | Requires development | Annual increase  |
-|  Proportion of organic food purchases | 48 percent (2019) | 80 percent  |
-|  Proportion of purchased construction and civil engineering contracts according to criteria regarding meaningful impact promoting biodiversity | Requires development | Annual increase  |
+Does not apply to purchases covered by the organic food indicator | Requires development | Annual increase
+Proportion of organic food purchases | 48 percent (2019) | 80 percent
+Proportion of purchased construction and civil engineering contracts according to criteria regarding meaningful impact promoting biodiversity | Requires development | Annual increase
 
 Environment and Climate Programme for the City of Gothenburg 2021–2030
 (52)
@@ -3681,9 +3647,8 @@ Environment and Climate Programme for the City of Gothenburg 2021–2030
 |  Emissions of greenhouse gases per inhabitant and year within the geographical area of Gothenburg (includes emissions from both traded and non-traded sectors) | 4.2 tons of carbon dioxide equivalents per inhabitant and year (2018) | 1.1 tons of carbon dioxide equivalents per inhabitant and year  |
 |  Consumption-based greenhouse gas emissions per inhabitant in Sweden | 8.9 tons of carbon dioxide equivalents per inhabitant and year (2017) | 3.3 tons of carbon dioxide equivalents per inhabitant and year  |
 |  Sub-goal 1: The City of Gothenburg reduces energy use in residential buildings and facilities | Current situation | Target value 2030  |
-| --- | --- | --- |
 |  Primary energy consumption per inhabitant within the municipality | 18 MWh per inhabitant (2010)
-MWh per inhabitant (2018) | 12 MWh per inhabitant  |
+| MWh per inhabitant (2018) | 12 MWh per inhabitant |
 |  Average primary energy consumption per square meter in the City of Gothenburg's facilities and residential buildings where the operation can be related to surface area | Facilities:
 kWh/m² (2009)
 kWh/m² (2019)
@@ -3709,15 +3674,14 @@ Environment and Climate Programme for the City of Gothenburg 2021-2030
 |  Sub-goal 3: The City of Gothenburg reduces the climate impact from transportation | Current situation | Target value 2023 | Target value 2030  |
 | --- | --- | --- | --- |
 |  Greenhouse gas emissions from transportation in Gothenburg | 999,900 tons of carbon dioxide equivalents per year (2010)
-,600 tons of carbon dioxide equivalents per year (2017) | - | At least 90 percent less compared to 2010  |
-|  Volume of traffic, i.e. the number of kilometers driven by all types of motorized road vehicles per weekday, in Gothenburg | Requires development | - | 25 percent less compared to 2020  |
-|  Proportion of the City of Gothenburg's vehicles that are fossil-free | 55 percent (2019) | 100 percent | -  |
-|  Sub-goal 4: The City of Gothenburg reduces the climate impact from purchases | Current situation | Target value 2025 | Target value 2030  |
-| --- | --- | --- | --- |
-|  Greenhouse gas emissions from purchased inventories, products, materials, and services from a life cycle perspective (Does not apply to purchases covered by other indicators of the sub-goal) | Requires development | - | At least 90 percent less compared to 2020  |
-|  Greenhouse gas emissions from new and renovated buildings under own management and from new development on land with land allocations | Requires development | At least 50 percent less compared to 2020 | At least 90 percent less compared to 2020  |
-|  Greenhouse gas emissions from facilities under own management and from new development on land with land allocations | Requires development | At least 50 percent less compared to 2020 | At least 90 percent less compared to 2020  |
-|  Greenhouse gas emissions from purchased foods from a life cycle perspective | 1.9 kg carbon dioxide equivalents/kg food (2019) | - | 1.3 kg carbon dioxide equivalents/kg food  |
+,600 tons of carbon dioxide equivalents per year (2017) | - | At least 90 percent less compared to 2010
+Volume of traffic, i.e. the number of kilometers driven by all types of motorized road vehicles per weekday, in Gothenburg | Requires development | - | 25 percent less compared to 2020
+Proportion of the City of Gothenburg's vehicles that are fossil-free | 55 percent (2019) | 100 percent | -
+Sub-goal 4: The City of Gothenburg reduces the climate impact from purchases | Current situation | Target value 2025 | Target value 2030
+Greenhouse gas emissions from purchased inventories, products, materials, and services from a life cycle perspective (Does not apply to purchases covered by other indicators of the sub-goal) | Requires development | - | At least 90 percent less compared to 2020
+Greenhouse gas emissions from new and renovated buildings under own management and from new development on land with land allocations | Requires development | At least 50 percent less compared to 2020 | At least 90 percent less compared to 2020
+Greenhouse gas emissions from facilities under own management and from new development on land with land allocations | Requires development | At least 50 percent less compared to 2020 | At least 90 percent less compared to 2020
+Greenhouse gas emissions from purchased foods from a life cycle perspective | 1.9 kg carbon dioxide equivalents/kg food (2019) | - | 1.3 kg carbon dioxide equivalents/kg food
 
 Environment and Climate Programme for the City of Gothenburg 2021-2030
 (52)
@@ -3728,12 +3692,10 @@ Environment and Climate Programme for the City of Gothenburg 2021-2030
 |  Access to “urban cold islands” | Requires development | Annual increase  |
 |  Percentage of detailed plans on municipal land where green space factors are set in the consultation (percent/year) | 3 percent (2019) | 100 percent  |
 |  Sub-goal 1: The City of Gothenburg reduces the use of harmful substances | Current situation 2020 | Target value 2030  |
-| --- | --- | --- |
 |  Number of chemical products containing phase-out substances used in the city's services | 154 unique products | Close to zero  |
 |  Number of chemical products containing priority risk reduction substances used in the city's services | 711 unique products | Reduction by 50 percent  |
 |  Percentage of construction materials and products in the city's logbooks in “Byggvarubedömningen” that have the overall assessment recommended or accepted | Requires development | Annual increase  |
 |  Sub-goal 2: The City of Gothenburg ensures good air quality for the people of Gothenburg | Current situation | Target value 2030  |
-| --- | --- | --- |
 |  Proportion of pre-school playgrounds and residential houses with a nitrogen dioxide (NO2) concentration of less than 20 micrograms per cubic meter | Pre-school playgrounds: 85 percent (2015) Residential houses: 73 percent (2015) | 100 percent  |
 |  Proportion of pre-school playgrounds and residential houses with a particulate matter (PM10) concentration of less than 15 micrograms per cubic meter | Requires development | Annual increase  |
 |  Proportion of area in coherent urban development (or equivalent designation in future comprehensive plans) with a nitrogen dioxide (NO2) concentration of less than 20 micrograms per cubic meter | 70 percent (2015) | Annual increase  |
@@ -3748,7 +3710,6 @@ Environment and Climate Programme for the City of Gothenburg 2021-2030
 |  Proportion of residential buildings with a noise-exposed residential façade exceeding 60 dBA equivalent noise level that have access to a quieter side below 50 dBA equivalent noise level | 60 percent (2020) | Annual increase  |
 |  Proportion of inhabitants with access to green spaces larger than 0.2 hectares and within 300 meters, with an equivalent noise level below 50 dBA | 75 percent (2018) | Annual increase  |
 |  Sub-goal 4: The City of Gothenburg ensures access to green spaces and uses ecosystem services | Current situation | Target value 2030  |
-| --- | --- | --- |
 |  Proportion of pre-school playgrounds with a green space factor above 0.45 | 21 percent (2015) | Annual increase  |
 |  Proportion of inhabitants with access to green spaces larger than 0.2 hectares and within 300 meters | 93 percent (2018) | 100 percent  |
 
@@ -4172,7 +4133,6 @@ The table below enlists the signatories¹ who are committing to this CCC, and th
 |  AB Framtiden | Municipal, Built environment, Local | Municipal company | Anna-Karen Trixe | Head of Development, Förvaltnings AB Framtiden  |
 |  The Swedish Church Parish of Gothenburg | Civil society, All domains, Local | Religious body | Stefan Hiller | Dean  |
 |  ABF Worker's Educational Association Gothenburg | Civil society, All domains, Local | Non-governmental organisation | Maria Wångersjö | Assistant Ombudsman, Chief of Operations  |
-| --- | --- | --- | --- | --- |
 |  PRO Swedish National Pensioner's Organisation Gothenburg | Civil Society, All domains, Local | Non-governmental organisation | Lars Skoglund | Chair of Sustainability committee of the District Board  |
 |  Volvo Cars | Business, Transportation and mobility, Local-International | Company | Vanessa Butani | Head of Global Sustainability  |
 GÖTEBORGS REGIONEN

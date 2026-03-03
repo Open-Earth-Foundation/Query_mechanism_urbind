@@ -1073,20 +1073,17 @@ Action Plan
 9
 
 |   |  |  | reduction target of 1.9% for the public sector as a whole and the annual 3% buildings renovation obligation is being extended to all levels of public administration.
-
-Relevant areas: Energy systems  |
+| Relevant areas: Energy systems  |
 | --- | --- | --- | --- |
 |  EU hydrogen strategy (EU LEVEL) | Enacted | The EU strategy on hydrogen (COM/2020/301) was adopted in 2020 and suggested policy action points in 5 areas: investment support; support production and demand; creating a hydrogen market and infrastructure; research and cooperation and international cooperation. | While the direct impact of the EU's hydrogen strategy on Zagreb's emissions reduction targets may vary based on the city's specific implementation plans and adoption of hydrogen technologies, integrating hydrogen into the energy mix (included in this Action plan)presents opportunities to  |
 Climate Neutrality
 Action Plan
 
 |   |  |  | transition towards cleaner energy sources, contributing to the city's emissions reduction objectives already for 2030.
-
-Relevant areas: Energy systems, mobility  |
+| Relevant areas: Energy systems, mobility  |
 | --- | --- | --- | --- |
 |  National energy and climate plan of the Republic of Croatia (NECP) (National level) | Enacted | Action plan sets key objectives measures and targets by 2030 through five defined dimensions: decarbonisation, energy efficiency, energy security, internal energy market, R&D and competitiveness. | Croatia aims to decrease emissions by 50,2% (ETS) 16,7 (Non - ETS), Increase the RES production by 42,5%
-
-Relevant areas: Energy systems, Mobility & transport, Built environment.  |
+| Relevant areas: Energy systems, Mobility & transport, Built environment.  |
 |  Climate Change Adaptation Strategy | Enacted | This strategy aims to prepare Croatia to cope with and adapt to the impacts of climate change. It includes measures | Enhancing Croatia's ability to cope with climate-related hazards, reducing potential economic losses  |
 
 0
@@ -1482,10 +1479,6 @@ Table 6 Projections of selected climate parameters for the City of Zagreb accord
 |   |  Minimum | Annual increase 1.5 – 1.6 °C; seasonal increase: DJF 1.6 – 1.8 °C; MAM 1.1 – 1.2 °C; JJA 1.8 – 2.0 °C; SON 1.5 – 1.6 °C  |
 |  Extreme weather events | Cold days (Annual number of days with maximum temperature < 10th percentile of daily maximum temperature) | A reduction in the number of days by 4-4.5% compared to the reference period  |
 |   |  Cold spell duration (Annual count of days with at least 6 consecutive days when minimum < 10th percentile) | A reduction of 3 to 4 days on an annual basis  |
-Climate Neutrality Action Plan
-
-#
-
 |  Warm days (Annual number of days with maximum temperature > 90th percentile of daily maximum temperature.) | Increasing by 10-11% compared to the reference period  |
 | --- | --- |
 |  Warm nights (Annual number of days with minimum temperature > 90th percentile of daily minimum temperature) | Increasing by 13-14% compared to the reference period  |
@@ -2560,15 +2553,15 @@ B) Introduction of Building Standards Above National Level for Renovation, Recon
 | --- | --- | --- |
 |  Programme Components  |   |   |
 |  Regulatory Framework | • Develop regulations that mandate higher building standards
-• Provide guidelines for renovation, reconstruction of existing buildings, and construction of new buildings  |   |
+| • Provide guidelines for renovation, reconstruction of existing buildings, and construction of new buildings  |   |
 |  Incentives and Subsidies | • Offer financial incentives, grants, and tax benefits to encourage compliance
-• Develop subsidy programs for and renovation of existing buildings  |   |
+| • Develop subsidy programs for and renovation of existing buildings  |   |
 |  Technical Support and Guidance | • Provide technical support to architects, engineers, builders, and developers
-• Develop detailed guidelines for implementing new standards  |   |
+| • Develop detailed guidelines for implementing new standards  |   |
 |  Certification and Compliance | • Establish a certification process to ensure compliance
-• Conduct regular inspections and audits  |   |
+| • Conduct regular inspections and audits  |   |
 |  Public Awareness Campaign | • Launch a campaign to educate the public about the benefits of higher standards
-• Encourage acceptance and support through community outreach  |   |
+| • Encourage acceptance and support through community outreach  |   |
 |  Timeline | Year 1: Develop a regulatory framework, establish incentives, and start a public awareness campaign
 Year 2: Roll out technical support and certification processes  |   |
 
@@ -2583,14 +2576,14 @@ Climate Neutrality
 Action Plan
 
 |  Stakeholder Collaboration | • Work with industry expert, policymakers, professionals from the construction sector (architects, engineers, designers, etc.) and community representatives
-• Ensure that guidelines are comprehensive and practical  |
+| • Ensure that guidelines are comprehensive and practical  |
 | --- | --- |
 |  Training Programs | • Conduct training sessions for builders, architects, engineers and local authorities
-• Develop online resources and toolkits  |
+| • Develop online resources and toolkits  |
 |  Pilot Projects | • Implement pilot projects using the Green Deal Project Guidelines
-• Monitor and evaluate benefits and gather insights  |
+| • Monitor and evaluate benefits and gather insights  |
 |  Feedback and Revision | • Collect feedback from pilot projects and stakeholders
-• Refine and improve the Green Deal Project Guidelines  |
+| • Refine and improve the Green Deal Project Guidelines  |
 |  Timeline | Year 1: Develop guidelines, initiate stakeholder collaboration, and start training programs
 Year 1/2: Implement pilot projects and gather feedback  |
 
@@ -2600,13 +2593,13 @@ D) Developed and Implemented Climate-Proofing Methodology for Infrastructure Pro
 | --- | --- |
 |  Programme Components  |   |
 |  Methodology Development | • Develop a comprehensive climate-proofing methodology
-• Include risk assessments, design standards, and resilience measures  |
+| • Include risk assessments, design standards, and resilience measures  |
 |  Capacity Building | • Provide training for engineers, architects, and planners
-• Develop online training modules and resources  |
+| • Develop online training modules and resources  |
 |  Integration into Planning | • Embed the climate-proofing methodology into planning and approval processes
-• Ensure all infrastructure projects follow the methodology  |
+| • Ensure all infrastructure projects follow the methodology  |
 |  Demonstration Projects | • Implement demonstration projects to showcase climate-proofing measures.
-• Monitor and document outcomes.  |
+| • Monitor and document outcomes.  |
 |  Monitoring and Evaluation | • Develop KPIs to measure resilience and compliance.
 • Regularly review and adjust the methodology based on outcomes.  |
 
@@ -4849,25 +4842,25 @@ To increase the climate hazards resilience of a network, whether it's transporta
 |  Vulnerability Assessment | • Conduct a comprehensive assessment to identify vulnerable points in the network concerning climate hazards such as floods, extreme temperatures and storms, as those are the greatest risks in the City of Zagreb  |
 | --- | --- |
 |  Risk Management and Planning | • Develop risk management plans that include strategies for mitigating identified vulnerabilities and adapting to potential climate impacts
-• Integrate climate resilience ideas into long-term planning processes, infrastructure development projects, and policy frameworks  |
+| • Integrate climate resilience ideas into long-term planning processes, infrastructure development projects, and policy frameworks  |
 |  Infrastructure Resilience Enhancements | • Renovate existing infrastructure to withstand climate hazards, such as reinforcing bridges and embankments against floods or improving drainage systems to manage increased precipitation
-• Utilise climate-resilient construction materials and designs for new infrastructure projects  |
+| • Utilise climate-resilient construction materials and designs for new infrastructure projects  |
 |  Adaptive Capacity Building | • Enhance the adaptive capacity of the network's operators and stakeholders through training, workshops, and simulation exercises
-• Foster partnerships with emergency response agencies, local communities, and relevant stakeholders to coordinate responses to climate-related events  |
+| • Foster partnerships with emergency response agencies, local communities, and relevant stakeholders to coordinate responses to climate-related events  |
 |  Early Warning Systems | • Implement and enhance early warning systems for climate hazards to provide timely alerts and enable proactive responses
-• Integrate weather forecasting technologies and climate monitoring systems into network operations and decision-making processes  |
+| • Integrate weather forecasting technologies and climate monitoring systems into network operations and decision-making processes  |
 |  Natural Infrastructure and Green Solutions | • Incorporate natural infrastructure and green solutions into network resilience strategies, such as green roofs, urban green spaces, and permeable pavements to mitigate flood risks and heat island effects to the traffic related infrastructure
 • Restore and protect natural buffers like wetlands and forests that can provide natural resilience against climate impacts  |
 Climate Neutrality
 Action Plan
 
 |  Community Engagement and Awareness | • Engage with local communities and stakeholders to raise awareness about climate hazards and resilience measures
-• Foster community involvement in resilience planning, emergency preparedness, and response efforts  |
+| • Foster community involvement in resilience planning, emergency preparedness, and response efforts  |
 | --- | --- |
 |  Investment in Technology and Innovation | • Invest in innovative technologies such as smart sensors, predictive analytics, and remote monitoring systems to enhance network resilience and improve real-time decision-making capabilities
-• Explore sustainable energy solutions like renewable energy integration and energy storage to enhance network reliability during climate events  |
+| • Explore sustainable energy solutions like renewable energy integration and energy storage to enhance network reliability during climate events  |
 |  Policy and Regulatory Frameworks | • Develop and enforce policies and regulations that promote climate resilience in infrastructure planning, design, and maintenance
-• Incentivise private sector investment in climate-resilient infrastructure through regulatory measures and financial incentives  |
+| • Incentivise private sector investment in climate-resilient infrastructure through regulatory measures and financial incentives  |
 |  Monitoring and Evaluation | • Establish robust monitoring and evaluation mechanisms to assess the effectiveness of resilience measures
 • Regularly review and update resilience strategies based on acquired knowledge, evolving climate risks, and technological advancements  |
 
@@ -4878,22 +4871,22 @@ K) Further Expansion of Electrified Public Transport Fleet
 Further expansion of an electrified public transport fleet involves several key components and strategies to ensure successful implementation:
 
 |  Needs Assessment and Planning | • Conduct a comprehensive assessment of current public transport demand, routes, and fleet conditions to determine the scope and scale of electrification needed – will be assessed in the spatial planning documents as well as in the study of modernisation of public transport of the City of Zagreb, currently supported by the EIB
-• Develop a strategic plan outlining goals, targets, and timelines for expanding the electrified fleet  |
+| • Develop a strategic plan outlining goals, targets, and timelines for expanding the electrified fleet  |
 | --- | --- |
 Climate Neutrality
 Action Plan
 
 |  Technology Selection and Procurement | - Evaluate available EV technologies as well as hydrogen ones, including buses and trams, based on performance, range, charging infrastructure compatibility, and operational requirements
-Procure electric and/or hydrogen vehicles through competitive bidding processes or partnerships with manufacturers, ensuring compliance with local regulations and emission standards  |
+| Procure electric and/or hydrogen vehicles through competitive bidding processes or partnerships with manufacturers, ensuring compliance with local regulations and emission standards  |
 | --- | --- |
 |  Charging Infrastructure Deployment | - Establish a network of charging infrastructure to support the expanded fleet, including depot charging stations and on-route fast chargers
-Coordinate with utility providers and local authorities to optimise charging infrastructure locations and grid capacity  |
+| Coordinate with utility providers and local authorities to optimise charging infrastructure locations and grid capacity  |
 |  Fleet Deployment and Integration | - Integrate new electric buses or trams as well as hydrogen fuelled vehicles into existing transport operations, ensuring seamless transition and minimal disruption to service
-Provide training for drivers, maintenance personnel, and operational staff on electric vehicle operation, charging protocols, and safety procedures  |
+| Provide training for drivers, maintenance personnel, and operational staff on electric vehicle operation, charging protocols, and safety procedures  |
 |  Financial and Regulatory Support | - Secure funding sources and financial incentives, such as grants, subsidies, or low-interest loans, to support the acquisition and deployment of electric and/or hydrogen powered vehicles
-Advocate for supportive policies and regulatory frameworks that promote electrification, including incentives for renewable energy use and emissions reductions  |
+| Advocate for supportive policies and regulatory frameworks that promote electrification, including incentives for renewable energy use and emissions reductions  |
 |  Performance Monitoring and Optimisation | - Monitor the performance and efficiency of electrified and/or hydrogen powered vehicles and charging infrastructure through data collection and analysis
-Implement maintenance protocols and predictive analytics to optimise vehicle uptime, battery life, and overall fleet efficiency  |
+| Implement maintenance protocols and predictive analytics to optimise vehicle uptime, battery life, and overall fleet efficiency  |
 |  Public Awareness and Stakeholder Engagement | - Engage with stakeholders, including transit riders, local communities, and environmental groups, to build support for alternative fuels powered public transport
 Educate the public about the benefits of electric and hydrogen vehicles, such as reduced emissions, improved air quality, and noise reduction  |
 
@@ -4902,10 +4895,10 @@ Climate Neutrality
 Action Plan
 
 |  Scaling Up and Expansion | - Plan for future expansion of the electrified and hydrogen fleet based on demand growth projections and technological advancements
-Continuously assess and update fleet decarbonisation strategies to incorporate new innovations and best practices in sustainable transportation  |
+| Continuously assess and update fleet decarbonisation strategies to incorporate new innovations and best practices in sustainable transportation  |
 | --- | --- |
 |  Environmental Impact and Sustainability | - Measure and report on the environmental benefits of electrified and or hydrogen powered public transport, including reductions in greenhouse gas emissions and contributions to local air quality improvement
-Incorporate life-cycle assessments and sustainability criteria into fleet procurement and operations  |
+| Incorporate life-cycle assessments and sustainability criteria into fleet procurement and operations  |
 |  Collaboration and Knowledge Sharing | - Foster partnerships with industry stakeholders, research institutions, and peer cities to share the acquired knowledge, best practices, and innovative solutions in electrified and/or hydrogen powered public transport  |
 
 L) Implementation of Integrated Ticketing Systems
@@ -5821,8 +5814,8 @@ Climate-Neutrality Commitments - City of Zagreb
 |  Development Agency Zagreb for Coordination and Encouragement of Regional Development | National level development agency | Development agency | Kornelija Mlinarević | Director  |
 |  Zagreb fair, Ltd | Business/Fair | Fair | Renata Suša | Director  |
 |  Zagrebački električni tramvaj, d.o.o. | Transport | Transport operator | Luka Matošić
-Marko Bogdanović | Member of the Management board
-President of the Management board  |
+| Marko Bogdanović | Member of the Management board |
+| President of the Management board  |
 |  Zagreb Innovation Centre, Ltd | Business/Startup | Innovation centre/business support | Frane Šesnić | Director  |
 |  WWF Adria | Nature conservation | Fund | Nataša Kalauz | Director  |
 |  Zagrebački sunčani krovovi, d.o.o. | Energy/PV | Business | Velimir Šegon | Director  |

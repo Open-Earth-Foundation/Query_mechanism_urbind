@@ -136,49 +136,40 @@ Table 17. The primary stakeholder focus of some engagement and involvement activ
 
 # Abbreviations and acronyms
 
-|  Abbreviations and acronyms | Definition  |
+| Abbreviations and acronyms | Definition |
 | --- | --- |
-|  ARC | ARC manages everything to do with waste and helps the public and companies to dispose of their waste in a way that's best for the environment and climate. ARC manages waste for our five owner municipalities including Copenhagen.  |
-|  AI | Artificial intelligence  |
-|  |   |
-|  BBR | Building's register (Danish Property Assessment Agency)  |
-|  BIOFOS | BIOFOS is Denmark's largest wastewater utility, treating the wastewater from 1.2 million inhabitants in the Copenhagen metropolitan area at our three treatment plants.  |
-|  Building Energy Management Systems (BEMS) | Building Energy Management Systems are used by building owners, operators, and end-users to improve the energy performance of buildings. This is achieved by providing users with measurement, recording, trending, and alarming capabilities, and diagnosis of unnecessary energy use.  |
-|  |   |
-|  C40 | C40 is a global network of nearly 100 mayors of the world's leading cities that are united in action to confront the climate crisis. Mayors of C40 cities are committed to using an inclusive, science-based and collaborative approach to cut their fair share of emissions in half by 2030, help the world limit global heating to 1.5°C, and build healthy, equitable and resilient communities.  |
-|  Capital Region of Denmark | Capital Region of Denmark [Hovedstadsregionen] organises municipalities located on the eastern part Zealand and around Copenhagen.  |
-|  Cerius | Distributor of electricity outside Copenhagen.  |
-|  Citizen's Climate Assembly | The citizens' Climate Assembly [Klimaborgertinget] consists of 36 representatively selected Copenhageners who, based on expert presentations and debates, make recommendations on climate change to the City Council.  |
-|  Climate Alliance | The Climate Alliance [Klimaalliancen] is a partnership established by the Local Government Denmark (KL), Danish Regions, and RealDania and constitutes a common framework for the implementation of municipalities' climate action plans.  |
-|  C4 (Copenhagen Carbon Capture Cluster) | C4 is a cluster cooperation project in the capital that collaborates on carbon capture and storage. The collaboration was established in February 2021. Altogether, there is a potential to reduce carbon emissions by 3 million tonnes a year using carbon capture and storage. The members represent the entire value chain from energy production to the procurement of surplus heat in the district heating network and the shipping of captured carbon to a storage site. The participating members of the C4 cluster: ARC, ARGO, BIOFOS, Copenhagen Malmö Port, CTR, HOFOR, Vestforbrænding, VEKS and Ørsted.  |
-Climate Neutrality Action Plan
-
-|  CMP (Copenhagen Malmö port) | Copenhagen Malmö Port (CMP) is one of Scandinavia’s largest port operators, and a full-service port in the Oresund region. We receive a vast variety of goods and have an infrastructure customised for all types of vessels.  |
+| ARC | ARC manages everything to do with waste and helps the public and companies to dispose of their waste in a way that's best for the environment and climate. ARC manages waste for our five owner municipalities including Copenhagen. |
+| AI | Artificial intelligence |
+| BBR | Building's register (Danish Property Assessment Agency) |
+| BIOFOS | BIOFOS is Denmark's largest wastewater utility, treating the wastewater from 1.2 million inhabitants in the Copenhagen metropolitan area at our three treatment plants. |
+| Building Energy Management Systems (BEMS) | Building Energy Management Systems are used by building owners, operators, and end-users to improve the energy performance of buildings. This is achieved by providing users with measurement, recording, trending, and alarming capabilities, and diagnosis of unnecessary energy use. |
+| C40 | C40 is a global network of nearly 100 mayors of the world's leading cities that are united in action to confront the climate crisis. Mayors of C40 cities are committed to using an inclusive, science-based and collaborative approach to cut their fair share of emissions in half by 2030, help the world limit global heating to 1.5°C, and build healthy, equitable and resilient communities. |
+| Capital Region of Denmark | Capital Region of Denmark [Hovedstadsregionen] organises municipalities located on the eastern part Zealand and around Copenhagen. |
+| Cerius | Distributor of electricity outside Copenhagen. |
+| Citizen's Climate Assembly | The citizens' Climate Assembly [Klimaborgertinget] consists of 36 representatively selected Copenhageners who, based on expert presentations and debates, make recommendations on climate change to the City Council. |
+| Climate Alliance | The Climate Alliance [Klimaalliancen] is a partnership established by the Local Government Denmark (KL), Danish Regions, and RealDania and constitutes a common framework for the implementation of municipalities' climate action plans. |
+| C4 (Copenhagen Carbon Capture Cluster) | C4 is a cluster cooperation project in the capital that collaborates on carbon capture and storage. The collaboration was established in February 2021. Altogether, there is a potential to reduce carbon emissions by 3 million tonnes a year using carbon capture and storage. The members represent the entire value chain from energy production to the procurement of surplus heat in the district heating network and the shipping of captured carbon to a storage site. The participating members of the C4 cluster: ARC, ARGO, BIOFOS, Copenhagen Malmö Port, CTR, HOFOR, Vestforbrænding, VEKS and Ørsted. |
+| CMP (Copenhagen Malmö port) | Copenhagen Malmö Port (CMP) is one of Scandinavia’s largest port operators, and a full-service port in the Oresund region. We receive a vast variety of goods and have an infrastructure customised for all types of vessels. |
 | --- | --- |
-|  CONCITO | CONCITO is Denmark’s green think tank aiming to translate relevant knowledge into climate action and thereby accelerate the green transition. Through scientific and knowledge-based analyses and information, the aim is to show how it is possible to create a climate-neutral and climate-resilient society.  |
-|  CO-PI | The Centre for Public-Private Innovation (CO-PI) is a national centre created by the government, The Local Government Denmark, and Danish Regions.  |
-|  CPH City & Port | CPH City & Port is a development and operating company that delivers long-term and holistic urban development and takes responsibility for creating coherent and well-functioning urban neighbourhoods. CPH City & Port Development is 95% owned by the City of Copenhagen and 5% by the Danish state. As an urban development company, landowner, and port authority, CPH City & Port Development has a special position and responsibility in Copenhagen.  |
-|  CTR | In the Greater Copenhagen Area five municipalities have joined forces to implement and operate a common district heating system. The Metropolitan Copenhagen Heating Transmission company - known as CTR – was formed in 1984.  |
-|  Danish Energy Agency | [Energistyrelsen]. The Danish Energy Agency is responsible for tasks linked to energy production, supply and consumption, as well as Danish efforts to reduce carbon emissions. The Agency is also responsible for supporting the economical optimisation of utilities that in addition to energy includes water, waste and telecommunication. The Danish Energy Agency is an agency under the Ministry of Climate, Energy & Utilities.  |
-|  Danish Intelligent Energy Alliance | The mission of the Danish Intelligent Energy Alliance: is to establish the Danish platform for key players among DSOs, industry, research institutions, advisors and municipalities (including the City of Copenhagen) which are all essential to effectively roll-out an intelligent energy system. From the Alliance’ perspective an intelligent energy system includes everything from a smart grid to the full integration of energy systems (electricity, gas, heating, water, and waste).  |
-|  DCE | Danish Centre for Environment and Energy. DCE is Aarhus University’s central unit for knowledge exchange within the areas of nature, environment, climate and energy. DCE delivers science-based consultancy and solutions that help greening of the economy and promote sustainable growth at both local, national and international scale.  |
-|  |   |
-|  DI | DI is a private business and employers’ organisation representing approximately 20,000 companies in Denmark.  |
-|  District Committees | Members of the District Committees [Lokalråd] are elected every four years. There are 12 of these district committees in Copenhagen. The District Committees support and develop the local environment by inspiring and engaging Copenhageners, companies, and organisations in the district to actively participate in environmental projects.  |
-|  DSB | DSB is an independent public railroad corporation owned by the Danish Ministry of Transport.  |
-|  DSO | Distribution system operators are the operating managers (and sometimes owners) of energy distribution networks, operating at low, medium and, in some member states, high voltage levels.  |
-|  |   |
-|  Energinet | Energinet is an independent public enterprise owned by the Danish Ministry of Climate, Energy and Utilities. Energinet owns, operates, and develops the transmission systems for electricity and gas in Denmark  |
-|  |   |
-|  Energy Leap partnership | The Energy Leap partnership [Energispring] focuses on energy savings in buildings and represents 56 real estate companies and organizations and almost 40% of the building stock in Copenhagen. It addresses energy challenges in  |
-Climate Neutrality Action Plan
-
+| CONCITO | CONCITO is Denmark’s green think tank aiming to translate relevant knowledge into climate action and thereby accelerate the green transition. Through scientific and knowledge-based analyses and information, the aim is to show how it is possible to create a climate-neutral and climate-resilient society. |
+| CO-PI | The Centre for Public-Private Innovation (CO-PI) is a national centre created by the government, The Local Government Denmark, and Danish Regions. |
+| CPH City & Port | CPH City & Port is a development and operating company that delivers long-term and holistic urban development and takes responsibility for creating coherent and well-functioning urban neighbourhoods. CPH City & Port Development is 95% owned by the City of Copenhagen and 5% by the Danish state. As an urban development company, landowner, and port authority, CPH City & Port Development has a special position and responsibility in Copenhagen. |
+| CTR | In the Greater Copenhagen Area five municipalities have joined forces to implement and operate a common district heating system. The Metropolitan Copenhagen Heating Transmission company - known as CTR – was formed in 1984. |
+| Danish Energy Agency | [Energistyrelsen]. The Danish Energy Agency is responsible for tasks linked to energy production, supply and consumption, as well as Danish efforts to reduce carbon emissions. The Agency is also responsible for supporting the economical optimisation of utilities that in addition to energy includes water, waste and telecommunication. The Danish Energy Agency is an agency under the Ministry of Climate, Energy & Utilities. |
+| Danish Intelligent Energy Alliance | The mission of the Danish Intelligent Energy Alliance: is to establish the Danish platform for key players among DSOs, industry, research institutions, advisors and municipalities (including the City of Copenhagen) which are all essential to effectively roll-out an intelligent energy system. From the Alliance’ perspective an intelligent energy system includes everything from a smart grid to the full integration of energy systems (electricity, gas, heating, water, and waste). |
+| DCE | Danish Centre for Environment and Energy. DCE is Aarhus University’s central unit for knowledge exchange within the areas of nature, environment, climate and energy. DCE delivers science-based consultancy and solutions that help greening of the economy and promote sustainable growth at both local, national and international scale. |
+| DI | DI is a private business and employers’ organisation representing approximately 20,000 companies in Denmark. |
+| District Committees | Members of the District Committees [Lokalråd] are elected every four years. There are 12 of these district committees in Copenhagen. The District Committees support and develop the local environment by inspiring and engaging Copenhageners, companies, and organisations in the district to actively participate in environmental projects. |
+| DSB | DSB is an independent public railroad corporation owned by the Danish Ministry of Transport. |
+| DSO | Distribution system operators are the operating managers (and sometimes owners) of energy distribution networks, operating at low, medium and, in some member states, high voltage levels. |
+| Energinet | Energinet is an independent public enterprise owned by the Danish Ministry of Climate, Energy and Utilities. Energinet owns, operates, and develops the transmission systems for electricity and gas in Denmark |
+| Energy Leap partnership | The Energy Leap partnership [Energispring] focuses on energy savings in buildings and represents 56 real estate companies and organizations and almost 40% of the building stock in Copenhagen. It addresses energy challenges in |
 |  | buildings collectively, share valuable insights and experiences, and develop innovative solutions thereby reducing energy consumption, lowering carbon emissions, and creating a more sustainable future for Copenhagen. Energy Leap | Energispring (kk.dk). |
 | --- | --- | --- |
-| Fit-for-55 package | The Fit-for-55 package includes the following adopted or agreed proposals: reform of the EU Emissions Trading System (ETS) and the Market Stability Reserve (MSR); a new, self-standing ETS for buildings, road transport and fuels for additional sectors (ETS2); revised Effort Sharing Regulation (ESR); the Carbon Border Adjustment Mechanism (CBAM); the Social a revised Land Use, Land-Use Change and Forestry (LULUCF) Regulation; updated CO2 emission standards for cars and vans; the Alternative Fuel Infrastructure Regulation (AFIR); FuelEU Maritime; ReFuelEU Aviation; the Energy Efficiency Directive (EED); Renewable Energy Directive (RED); the Regulation on methane emissions reduction in the energy sector; and the associated revision of the Regulation on Fluorinated Greenhouse Gases.
-
-The Fit-for-55 and associated proposals that are still under negotiation with the co-legislators at the time of drafting this report are: the Energy Performance of Buildings Directive (EPBD); the hydrogen and decarbonised gas market package; the proposal for a revised Energy Taxation Directive; and the revision of the Regulation on CO2 emission standards for heavy-duty vehicles. |
+| Fit-for-55 package | The Fit-for-55 package includes the following adopted or agreed proposals: reform of the EU Emissions Trading System (ETS) and the Market Stability Reserve (MSR); a new, self-standing ETS for buildings, road transport and fuels for additional sectors (ETS2); revised Effort Sharing Regulation (ESR); the Carbon Border Adjustment Mechanism (CBAM); the Social a revised Land Use, Land-Use Change and Forestry (LULUCF) Regulation; updated CO2 emission standards for cars and vans; the Alternative Fuel Infrastructure Regulation (AFIR); FuelEU Maritime; ReFuelEU Aviation; the Energy Efficiency Directive (EED); Renewable Energy Directive (RED); the Regulation on methane emissions reduction in the energy sector; and the associated revision of the Regulation on Fluorinated Greenhouse Gases. |  |
+| The Fit-for-55 and associated proposals that are still under negotiation with the co-legislators at the time of drafting this report are: the Energy Performance of Buildings Directive (EPBD); the hydrogen and decarbonised gas market package; the proposal for a revised Energy Taxation Directive; and the revision of the Regulation on CO2 emission standards for heavy-duty vehicles. |
 | Green Power Denmark | Green Power Denmark is a non-commercial business organization gathering around 1,500 members from across the green energy value chain. Green Power Denmark represents companies in the renewable energy industry, owners and developers of renewable energy systems, electricity companies, distribution system operators (DSOs), energy trading companies, and companies that work to refine, convert, and store green electricity. |
+| --- | --- |
 | HOFOR | Greater Copenhagen Utility. HOFOR is supplying 1.1 million customers in the Copenhagen metropolitan area with: Drinking water, district heating, district cooling, town gas, and disposal of wastewater. |
 | KEJD | KEJD manages the City of Copenhagen’s property portfolio with a focus on long-term needs for the benefit of citizens, companies, and employees. KEJD manages and rents 2.6 million m² spread over approx. 3500 buildings and is responsible for approx. 830 properties, including: Administration buildings, Copenhagen City Hall, cultural centres, libraries, institutions, nursing homes, schools, and sports facilities. |
 | KL (Local Government Denmark) | The Local Government Denmark [Kommunernes Landsforening] is an association and interest organization of the 98 Danish municipalities, safeguards common interests of the municipalities, assist individual municipalities with consultancy services, and ensure that the local authorities are provided with up-to-date and relevant information. |
@@ -188,13 +179,10 @@ The Fit-for-55 and associated proposals that are still under negotiation with th
 | NZC | The NetZeroCities project supports Europe and in particular European cities to drastically cut down greenhouse gas emissions through climate action to achieve ‘climate neutrality’, one of the biggest challenges our societies face today. |
 Climate Neutrality Action Plan
 
-|  |   |
-| --- | --- |
-|  Radius | Radius operates the electricity grid that supplies 1 million homes and businesses in the Copenhagen area, in North Zealand and in parts of Central Zealand.  |
-|  RealDania | Is a non-profitmaking, charitable association that supports large and small projects that contribute to creating quality of life for all through the built environment, i.e. large and small towns and cities, villages as well as urban spaces, parks, buildings and built heritage.  |
-|  |   |
-|  VEKS | VEKS delivers secure, efficient, and environmentally sound district heating to local district heating systems.  |
-|  Vestforbrænding | Denmark's largest waste and energy company. Vestforbrænding wants to mitigate climate change with CO₂ capture, expansion of the district heating network, recycling and more and better waste sorting.  |
+Radius | Radius operates the electricity grid that supplies 1 million homes and businesses in the Copenhagen area, in North Zealand and in parts of Central Zealand.
+RealDania | Is a non-profitmaking, charitable association that supports large and small projects that contribute to creating quality of life for all through the built environment, i.e. large and small towns and cities, villages as well as urban spaces, parks, buildings and built heritage.
+VEKS | VEKS delivers secure, efficient, and environmentally sound district heating to local district heating systems.
+Vestforbrænding | Denmark's largest waste and energy company. Vestforbrænding wants to mitigate climate change with CO₂ capture, expansion of the district heating network, recycling and more and better waste sorting.
 Climate Neutrality Action Plan
 
 # 1 Introduction
@@ -209,16 +197,16 @@ The CPH 2025 Climate Action plan has an overall goal of reaching climate neutral
 
 For simplicity and to support a seamless transition from the current to the new climate action plan, the Climate City Contract is organised around four main fields of action i.e., reducing energy consumption, fostering green mobility, building a green energy system, and carbon capture activities. These four fields of action will provide the structure for part 2 and 3.
 
-|  Table I-1.1: Climate Neutrality Target by 2030  |   |   |   |
+| Table I-1.1: Climate Neutrality Target by 2030 |  |  |  |
 | --- | --- | --- | --- |
-|  Sectors | Scope 1 | Scope 2 | Scope 3  |
-|  Stationary energy | X | X | -  |
-|  Transport | X | X | -  |
-|  Wastewater Waste | X | Not applicable | X  |
-|  IPPU | X | Not applicable | -  |
-|  AFOLU | X | Not applicable | -  |
-|  Geographical boundary | Same as city administrative boundary | Smaller than city administrative boundary | Larger than city administrative boundary  |
-|   | X |  |   |
+| Sectors | Scope 1 | Scope 2 | Scope 3 |
+| Stationary energy | X | X | - |
+| Transport | X | X | - |
+| Wastewater Waste | X | Not applicable | X |
+| IPPU | X | Not applicable | - |
+| AFOLU | X | Not applicable | - |
+| Geographical boundary | Same as city administrative boundary | Smaller than city administrative boundary | Larger than city administrative boundary |
+|  | X |  |  |
 
 Table 1. Climate neutrality target by 2030
 
@@ -279,25 +267,25 @@ Climate Neutrality Action Plan
 
 A-1.1: Final energy use by source sectors
 
-|  Base year |   | 2021  |   |   |
+| Base year |  | 2021 |  |  |
 | --- | --- | --- | --- | --- |
-|  Unit |   | MWh/year  |   |   |
-|   |   | Scope 1 | Scope 2 | Scope 3  |
-|  Buildings |   | 130.840 | 6.360.443 | -  |
-|  Transport |   | - | 98.049 | -  |
-|  Waste |   | - | - | -  |
-|  Industrial Process and Product Use (IPPU) |   | - | 254 | -  |
-|  Agricultural, Forestry and Land Use (AFOLU) |   | - | - | -  |
+| Unit |  | MWh/year |  |  |
+|  |  | Scope 1 | Scope 2 | Scope 3 |
+| Buildings |  | 130.840 | 6.360.443 | - |
+| Transport |  | - | 98.049 | - |
+| Waste |  | - | - | - |
+| Industrial Process and Product Use (IPPU) |  | - | 254 | - |
+| Agricultural, Forestry and Land Use (AFOLU) |  | - | - | - |
 
 Table 2. Final energy use by source sector.
 
-|  A-1.2: Emission factors applied  |   |   |   |   |   |
+| A-1.2: Emission factors applied |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- |
-|  Data from the 2021 inventory.  |   |   |   |   |   |
-|  Electricity: District heating: Individual heating: Town-gas: Road traffic: Trains (fossil fuel): Trains (electric): | 163,0 kg CO2e/MWh. 35,2 kg CO2e/GWh. 205 kg CO2e/MWh (natural gas); 267 kg CO2e/MWh (fossil fuel). 81 tons CO2e/GWh. 184,4 g CO2e/km (cars); 258,8 g CO2e/km (vans); 969,6 g CO2e/km; (trucks); 604,0 g CO2e/km (busses); 917,6 g CO2e/km (other busses); 97,0 g CO2e/km (motor bikes). 3.161 g CO2e/km (passenger trains); 11.293 g CO2e/km (cargo trains). 163 g CO2e/kWh.  |   |   |   |   |
-|  The City of Copenhagen uses the CO2 calculator, developed jointly in 2008 by the Ministry of Climate and Energy and Local Government Denmark and is based on IPCC guidelines.  |   |   |   |   |   |
-|  Carbon Dioxide (CO2) | Methane (CH4) | Nitrous Oxide (N2O) | F-gases (hydrofluorocarbons and perfluorocarbons) | Sulphur hexafluoride (SF6) | Nitrogen trifluoride (NF3)  |
-|  X | X | X | X* | X* | X*  |
+| Data from the 2021 inventory. |  |  |  |  |  |
+| Electricity: District heating: Individual heating: Town-gas: Road traffic: Trains (fossil fuel): Trains (electric): | 163,0 kg CO2e/MWh. 35,2 kg CO2e/GWh. 205 kg CO2e/MWh (natural gas); 267 kg CO2e/MWh (fossil fuel). 81 tons CO2e/GWh. 184,4 g CO2e/km (cars); 258,8 g CO2e/km (vans); 969,6 g CO2e/km; (trucks); 604,0 g CO2e/km (busses); 917,6 g CO2e/km (other busses); 97,0 g CO2e/km (motor bikes). 3.161 g CO2e/km (passenger trains); 11.293 g CO2e/km (cargo trains). 163 g CO2e/kWh. |  |  |  |  |
+| The City of Copenhagen uses the CO2 calculator, developed jointly in 2008 by the Ministry of Climate and Energy and Local Government Denmark and is based on IPCC guidelines. |  |  |  |  |  |
+| Carbon Dioxide (CO2) | Methane (CH4) | Nitrous Oxide (N2O) | F-gases (hydrofluorocarbons and perfluorocarbons) | Sulphur hexafluoride (SF6) | Nitrogen trifluoride (NF3) |
+| X | X | X | X* | X* | X* |
 
 Table 3. Emission factors applied. *) when applicable.
 4
@@ -315,77 +303,77 @@ Figure 5. Copenhagen's  $\mathrm{CO}_{2}\mathrm{e}$  emissions per capita for 20
 ![img-6.jpeg](img-6.jpeg)
 Figure 6. Per cent reduction obtained vs the 2010 baseline.
 
-|  A-1.3: GHG emissions by source sectors  |   |   |   |   |   |   |
+| A-1.3: GHG emissions by source sectors |  |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- |
-|  Base year |   | 2021  |   |   |   |   |
-|  Unit |   | Tons CO2e/year  |   |   |   |   |
-|   |   | Scope 1 | Scope 2 | Scope 3 | Total | %  |
-|  Buildings |   | 11.592 | 493.156 |  | 504.748 | 53,2  |
-|  Transport |   | 396.273 | 15.982 | 8.600 | 420.855 | 44,3  |
-|  Waste |   | 3.810 |  | 750 | 4.560 | 0,4  |
-|  Industrial Process and Product Use (IPPU) |   | 18.500 |  |  | 18.500 | 1,8  |
-|  Agricultural, Forestry and Land Use (AFOLU) | Sources (positive emissions) | 70 |  |  | 70 | 0,3  |
-|   |  Sinks (negative emissions) | -1683 |  |  | -1683 |   |
-|  Total |  | 428.562 | 509.138 | 9.350 | 947.050 | 100,00  |
+| Base year |  | 2021 |  |  |  |  |
+| Unit |  | Tons CO2e/year |  |  |  |  |
+|  |  | Scope 1 | Scope 2 | Scope 3 | Total | % |
+| Buildings |  | 11.592 | 493.156 |  | 504.748 | 53,2 |
+| Transport |  | 396.273 | 15.982 | 8.600 | 420.855 | 44,3 |
+| Waste |  | 3.810 |  | 750 | 4.560 | 0,4 |
+| Industrial Process and Product Use (IPPU) |  | 18.500 |  |  | 18.500 | 1,8 |
+| Agricultural, Forestry and Land Use (AFOLU) | Sources (positive emissions) | 70 |  |  | 70 | 0,3 |
+|  | Sinks (negative emissions) | -1683 |  |  | -1683 |  |
+| Total |  | 428.562 | 509.138 | 9.350 | 947.050 | 100,00 |
 
 Table 4. GHG emissions by source sector.
 Climate Neutrality Action Plan
 
 A-1.4: Activity by source sectors
 
-|  Year: 2021 |   |   |   |
+| Year: 2021 |  |  |  |
 | --- | --- | --- | --- |
-|   | Scope 1 | Scope 2 | Scope 3  |
-|  Buildings (electricity consumption)  |   |   |   |
-|  Residential building |  | 371.833 MWh/y |   |
-|  Commercial and institutional buildings and facilities |  | 1.430.719 MWh/y |   |
-|  Manufacturing industries and construction |  | 200.197 MWh/y |   |
-|  Energy industries |  | 101.441 MWh/y |   |
-|  Buildings (heat consumption)  |   |   |   |
-|  Residential buildings | 34.342 MWh/y | 2.900.000 MWh/y |   |
-|  Commercial and institutional buildings and facilities | 41.000 MWh/y | 366.000 MWh/y |   |
-|  Manufacturing industries and construction | 55.000 MWh/y | 990.000 MWh/y |   |
-|  Transport  |   |   |   |
-|  Passenger cars |  | 1.214,0 million km/y |   |
-|  Delivery vans |  | 217,0 million km/y |   |
-|  Trucks |  | 27,6 million km/y |   |
-|  Busses |  | 20,7 million km/y |   |
-|  Motor bikes |  | 10,5 million km/y |   |
-|  Passenger trains |  | 750.591 km/y |   |
-|  Freight trains |  | 4.019 km/y |   |
-|  S-trains |  | 40.621,8 MWh/y |   |
-|  Metro |  | 32.406,3 MWh/y |   |
-|  Passenger trains |  | 23.081,5 MWh/y |   |
-|  Freight trains |  | 1.639,6 MWh/y |   |
-|  Waste |  |  | 481.857 tons  |
-|  Industrial Process and Product Use (IPPU) |  | 254 MWh/y |   |
-|  Agricultural, Forestry and Land Use (AFOLU) | - | - | 168 hectares  |
+|  | Scope 1 | Scope 2 | Scope 3 |
+| Buildings (electricity consumption) |  |  |  |
+| Residential building |  | 371.833 MWh/y |  |
+| Commercial and institutional buildings and facilities |  | 1.430.719 MWh/y |  |
+| Manufacturing industries and construction |  | 200.197 MWh/y |  |
+| Energy industries |  | 101.441 MWh/y |  |
+| Buildings (heat consumption) |  |  |  |
+| Residential buildings | 34.342 MWh/y | 2.900.000 MWh/y |  |
+| Commercial and institutional buildings and facilities | 41.000 MWh/y | 366.000 MWh/y |  |
+| Manufacturing industries and construction | 55.000 MWh/y | 990.000 MWh/y |  |
+| Transport |  |  |  |
+| Passenger cars |  | 1.214,0 million km/y |  |
+| Delivery vans |  | 217,0 million km/y |  |
+| Trucks |  | 27,6 million km/y |  |
+| Busses |  | 20,7 million km/y |  |
+| Motor bikes |  | 10,5 million km/y |  |
+| Passenger trains |  | 750.591 km/y |  |
+| Freight trains |  | 4.019 km/y |  |
+| S-trains |  | 40.621,8 MWh/y |  |
+| Metro |  | 32.406,3 MWh/y |  |
+| Passenger trains |  | 23.081,5 MWh/y |  |
+| Freight trains |  | 1.639,6 MWh/y |  |
+| Waste |  |  | 481.857 tons |
+| Industrial Process and Product Use (IPPU) |  | 254 MWh/y |  |
+| Agricultural, Forestry and Land Use (AFOLU) | - | - | 168 hectares |
 
 Table 5. Activity by source sector.
 
-|  Source of energy | (%) |   |
+| Source of energy | (%) |  |
 | --- | --- | --- |
-|  Coal | 11,2 |   |
-|  Gas | 5,2 |   |
-|  Oil | 0,8 |   |
-|  Nuclear | 2,3 |   |
-|  Hydropower | 11,7 |   |
-|  Bioenergy (biomass and biofuels) | 18,6 |   |
-|  Wind | 41,8 |   |
-|  Solar | 3,9 |   |
-|  Waste to energy (excluding biomass component) | 2,1 |   |
-|  Other renewable sources | 2,5 |   |
+| Coal | 11,2 |  |
+| Gas | 5,2 |  |
+| Oil | 0,8 |  |
+| Nuclear | 2,3 |  |
+| Hydropower | 11,7 |  |
+| Bioenergy (biomass and biofuels) | 18,6 |  |
+| Wind | 41,8 |  |
+| Solar | 3,9 |  |
+| Waste to energy (excluding biomass component) | 2,1 |  |
+| Other renewable sources | 2,5 |  |
 
 Table 6. Energy mix used for electricity consumption.
 
-|  Source of energy | (%)  |
+| Source of energy | (%) |
 | --- | --- |
-|  Coal | 0,2  |
-|  Gas | 6,6  |
-|  Oil | 1,3  |
-|  Bioenergy (inc. biomass and biofuels) | 70,3  |
-|  Waste to energy (solid waste excluding biomass) | 7,1  |
-|  Other renewable sources | 14,3  |
+| Coal | 0,2 |
+| Gas | 6,6 |
+| Oil | 1,3 |
+| Bioenergy (inc. biomass and biofuels) | 70,3 |
+| Waste to energy (solid waste excluding biomass) | 7,1 |
+| Other renewable sources | 14,3 |
 
 Table 7. Energy mix used for thermal (heating/cooling) consumption.
 1
@@ -514,15 +502,15 @@ The inclusion (last column of Table 8) of the effect of these and other addition
 
 However, it may be concluded that the frozen policy scenario in combination with the foreseen CCS initiative will lead to climate neutrality by 2030.
 
-|   | 2021 CO2 inventory | 2025 estimated emissions (current plan) |   | 2030 estimated emissions (Frozen policy scenario) |   | Estimated residual emissions  |   |
+|  | 2021 CO2 inventory | 2025 estimated emissions (current plan) |  | 2030 estimated emissions (Frozen policy scenario) |  | Estimated residual emissions |  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-|   | tCO2e/year | tCO2e/year | (%) | tCO2e/year | (%) | tCO2e/year | (%)  |
-|  Buildings | 425.448 | 282.813 | 42,5 | 128.951 | 29,4 | TBD |   |
-|  Transport | 341.939 | 322.056 | 48,4 | 258.723 | 59,1 | TBD |   |
-|  Waste | 4.560 | 3.273 | 0,5 | 1.432 | 0,3 | TBD |   |
-|  IPPU | 53.610 | 59.522 | 8,9 | 50.689 | 11,6 | TBD |   |
-|  AFOLU | -1.220 | -1.811 | 0,3 | -1.858 | 0,4 | TBD |   |
-|  Total | 824.337 | 665.854 | 100,0 | 437.938 | 100,0 | TBD |   |
+|  | tCO2e/year | tCO2e/year | (%) | tCO2e/year | (%) | tCO2e/year | (%) |
+| Buildings | 425.448 | 282.813 | 42,5 | 128.951 | 29,4 | TBD |  |
+| Transport | 341.939 | 322.056 | 48,4 | 258.723 | 59,1 | TBD |  |
+| Waste | 4.560 | 3.273 | 0,5 | 1.432 | 0,3 | TBD |  |
+| IPPU | 53.610 | 59.522 | 8,9 | 50.689 | 11,6 | TBD |  |
+| AFOLU | -1.220 | -1.811 | 0,3 | -1.858 | 0,4 | TBD |  |
+| Total | 824.337 | 665.854 | 100,0 | 437.938 | 100,0 | TBD |  |
 
 Table 8. CO2 inventory for 2021 and estimated emissions for 2025 and 2030.
 
@@ -912,22 +900,21 @@ The activities are closely related to the four pillars in the CPH 2025 Climate A
 
 In the tables below an overview of the portfolio and four selected examples of ongoing actions are given. These actions will be completed and evaluated by the end of 2025. The continuation or amendment of selected actions included in the CPH 2025 Climate Action plan is being considered in the frame of the preparations of the Climate Action 2035 plan.
 
-|  B-2.1: Description of action portfolios  |   |   |
+| B-2.1: Description of action portfolios |  |  |
 | --- | --- | --- |
-|  Fields of action | Portfolio description  |   |
-|   |  List of actions | Descriptions  |
-|  Reducing energy consumption | Energy efficient buildings. Renovation of existing buildings. Proliferation of photovoltaic solar panels. Sustainable public procurement. Intelligent energy control. | The following initiatives are included: • Funds for energy screening, • Energy efficiency improvement through data, • Energy efficiency improvement through data, • Efficient operation of district heating in single-family houses, • ‘Energy optimization of 500 E-, F- and G-energy rated buildings,  |
-|   |  | and energy production, • Energy efficiency improvement through data, • Energy efficiency improvement through data, • Efficient operation of district heating in single-family houses, • Energy optimization of 500 E-, F- and G-energy rated buildings,  |
-|  Efficient energy production | Efficient energy production • Energy efficiency improvement through data, • Energy efficiency improvement through data, • Energy efficiency improvement through data, • Energy efficiency improvement through data, • Energy efficiency improvement through data, • Energy efficiency improvement through data, • Energy efficiency improvement through data, • Energy efficiency improvement through data, | • Energy efficiency improvement through data, Energy efficiency improvement through data, Energy efficiency improvement through data, Energy efficiency improvement through data, Energy efficiency improvement through data, Energy efficiency improvement through data, Energy efficiency improvement through data, Energy efficiency improvement through data, Energy efficiency improvement through data, Energy efficiency improvement through data, Energy efficiency of 500 E- and F- and G-energy rated buildings, Energy efficiency of 500 E- and F- and G-energy rated buildings, Energy efficiency of 500 E- and F- and G-energy rated buildings, Energy efficiency of 500 E- and F- and G-energy rated buildings, Energy efficiency of 500 E- and G- energy  |
+| Fields of action | Portfolio description |  |
+|  | List of actions | Descriptions |
+| Reducing energy consumption | Energy efficient buildings. Renovation of existing buildings. Proliferation of photovoltaic solar panels. Sustainable public procurement. Intelligent energy control. | The following initiatives are included: • Funds for energy screening, • Energy efficiency improvement through data, • Energy efficiency improvement through data, • Efficient operation of district heating in single-family houses, • ‘Energy optimization of 500 E-, F- and G-energy rated buildings, |
+|  |  | and energy production, • Energy efficiency improvement through data, • Energy efficiency improvement through data, • Efficient operation of district heating in single-family houses, • Energy optimization of 500 E-, F- and G-energy rated buildings, |
+| Efficient energy production | Efficient energy production • Energy efficiency improvement through data, • Energy efficiency improvement through data, • Energy efficiency improvement through data, • Energy efficiency improvement through data, • Energy efficiency improvement through data, • Energy efficiency improvement through data, • Energy efficiency improvement through data, • Energy efficiency improvement through data, | • Energy efficiency improvement through data, Energy efficiency improvement through data, Energy efficiency improvement through data, Energy efficiency improvement through data, Energy efficiency improvement through data, Energy efficiency improvement through data, Energy efficiency improvement through data, Energy efficiency improvement through data, Energy efficiency improvement through data, Energy efficiency improvement through data, Energy efficiency of 500 E- and F- and G-energy rated buildings, Energy efficiency of 500 E- and F- and G-energy rated buildings, Energy efficiency of 500 E- and F- and G-energy rated buildings, Energy efficiency of 500 E- and F- and G-energy rated buildings, Energy efficiency of 500 E- and G- energy |
 Climate Neutrality Action Plan
 
 Plan
 
-|   |  | • Life Cycle Assessments in the public housing sector,
+• Life Cycle Assessments in the public housing sector,
 • Funds for energy efficiency projects in district refurbishment projects,
 • LED street lighting  |
-| --- | --- | --- |
-|  Fostering green mobility | Road traffic.
+Fostering green mobility | Road traffic.
 Public transportation.
 Ship traffic.
 Construction machines. | The following initiatives are included:
@@ -935,7 +922,7 @@ Construction machines. | The following initiatives are included:
 • Reduce carbon emissions from road traffic by 10,000 tonnes*,
 • Shore-side power for cruise ships,
 • Conversion of non-road machinery used in the city to low emissions fuels.  |
-|  Building a green energy system | CO_{2} neutral district heating.
+Building a green energy system | CO_{2} neutral district heating.
 CO_{2} neutral power generation.
 Separation of plastic waste. | The following initiatives are included:
 • Continued securing of sustainable biomass,
@@ -947,11 +934,11 @@ Separation of plastic waste. | The following initiatives are included:
 • Wind power expansion,
 • Establishment of a waste sorting plant (Dirty MRF),
 • Increased waste sorting in households and retail.  |
-|  Carbon capture activities | Carbon Capture & Storage.
+Carbon capture activities | Carbon Capture & Storage.
 Tree planting. | The following initiatives are included:
 • Establishment of a carbon capture facility at ARC (on hold due to lack of sufficient funding).
 • Planting of 100,000 trees within Copenhagen.  |
-|  Cross-cutting activities | Energy Leap partnership.
+Cross-cutting activities | Energy Leap partnership.
 Awareness raising & education.
 Climate Task Force. | The following initiatives are included:
 • The Climate Task Force aims to help four vulnerable urban areas get started with the green transition through dialogue and networking,
@@ -963,106 +950,100 @@ Climate Neutrality Action Plan
 
 #
 
-|   |  | · The Energy & Water Science Centre of Copenhagen is an innovative and experimental environmental school, which offers teaching courses within the themes of sustainable energy and water supply in the past, present and future.  |
+|  |  | · The Energy & Water Science Centre of Copenhagen is an innovative and experimental environmental school, which offers teaching courses within the themes of sustainable energy and water supply in the past, present and future. |
 | --- | --- | --- |
 
 Table 9. Description of the CPH 2025 Action plan portfolios.
 
-|  B-2.2a: Individual action outlines  |   |   |
+| B-2.2a: Individual action outlines |  |  |
 | --- | --- | --- |
-|  Action outline | Action name | Reducing emissions from road traffic  |
-|   |  Action description | The goal is to introduce 100% zero-emission busses in Copenhagen by 2025 (including harbour buses).Initiatives to promote a shift away from fossil-fuelled vehicles, e.g., generally reducing the speed limit throughout the road network, is estimated to reduce carbon emissions by approximately 10,000 tons.  |
-|  Reference to impact pathway | Field of action | Fostering green mobility  |
-|   |  Systemic lever | Technology /infrastructure.Governance & Policy.Democracy / participation.  |
-|   |  Outcome (according to module B-1.1) | Road traffic: 16.500 tons CO2e (Emission free buses) 10.000 tons CO2e (speed limits).  |
-|  Implementation | Responsible bodies/person for implementation | City of Copenhagen, Technical and Environmental Administration.  |
-|   |  Action scale & addressed entities | Private cars and public transportation at city level.  |
-|   |  Involved stakeholders | Neighbouring municipalities, Movia, car owners driving in Copenhagen, and citizens.  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | This action is part of the CPH 2025 Climate Action plan and will end by end of 2025. The City of Copenhagen considers if parts of this action shall be included in the Climate Action 2035 plan.  |
-|  Impact & cost | Generated renewable energy | N/A  |
-|   |  Removed/substituted energy, volume, or fuel type | Fossil fuel  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 26.500 tons CO2e (Total)16.500 tons CO2e (Emission free buses)10.000 tons CO2e (speed limits)  |
-|   |  GHG emissions compensated (natural or technological sinks) | N/A  |
-|   |  Total costs and costs by CO2e unit | Please consult the Investment Plan.  |
+| Action outline | Action name | Reducing emissions from road traffic |
+|  | Action description | The goal is to introduce 100% zero-emission busses in Copenhagen by 2025 (including harbour buses).Initiatives to promote a shift away from fossil-fuelled vehicles, e.g., generally reducing the speed limit throughout the road network, is estimated to reduce carbon emissions by approximately 10,000 tons. |
+| Reference to impact pathway | Field of action | Fostering green mobility |
+|  | Systemic lever | Technology /infrastructure.Governance & Policy.Democracy / participation. |
+|  | Outcome (according to module B-1.1) | Road traffic: 16.500 tons CO2e (Emission free buses) 10.000 tons CO2e (speed limits). |
+| Implementation | Responsible bodies/person for implementation | City of Copenhagen, Technical and Environmental Administration. |
+|  | Action scale & addressed entities | Private cars and public transportation at city level. |
+|  | Involved stakeholders | Neighbouring municipalities, Movia, car owners driving in Copenhagen, and citizens. |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | This action is part of the CPH 2025 Climate Action plan and will end by end of 2025. The City of Copenhagen considers if parts of this action shall be included in the Climate Action 2035 plan. |
+| Impact & cost | Generated renewable energy | N/A |
+|  | Removed/substituted energy, volume, or fuel type | Fossil fuel |
+|  | GHG emissions reduction estimate (total) per emission source sector | 26.500 tons CO2e (Total)16.500 tons CO2e (Emission free buses)10.000 tons CO2e (speed limits) |
+|  | GHG emissions compensated (natural or technological sinks) | N/A |
+|  | Total costs and costs by CO2e unit | Please consult the Investment Plan. |
 
 Table 10. Action outline: Reducing emissions from road traffic.
 Climate Neutrality Action Plan
 
 B-2.2b: Individual action outlines
 
-|  Action outline | Action name | CO_{2} neutral district heating  |
+| Action outline | Action name | CO_{2} neutral district heating |
 | --- | --- | --- |
-|  Reference to impact pathway | Action description | • Continued supply of sustainable biomass,
+| Reference to impact pathway | Action description | • Continued supply of sustainable biomass, |
 • Development of the future district heating system with reduced need for peak load production and development of production technologies.
 
 The CPH 2025 Climate Action plan includes initiatives that will help reduce emissions and facilitate the transition to carbon neutral district heating and carbon neutral utilities.
 
 Efforts to ensure a sustainable, carbon-neutral district heating are focused on reducing, and ultimately phasing out, the use of fossil fuels in the supply of district heating, at the same time as new initiatives are developed and deployed in the district heating system, such as heat pumps, electric boilers, geothermal solutions, low-temperature district heating, heat storage and flexible consumption.  |
-|   |  Field of action | Building a green energy system.  |
-|   |  Systemic lever | Technology /infrastructure.
-Governance & Policy.  |
-|  Implementation | Outcome (according to module B-1.1) | 9.000 tons CO_{2}e.  |
-|   |  Responsible bodies/person for implementation | HOFOR.  |
-|   |  Action scale & addressed entities | Energy production and transmission systems at city level.  |
-|   |  Involved stakeholders | Neighbouring municipalities, utilities, and transmission companies such as ARC, HOFOR, and CTR.  |
-|  Impact & cost | Comments on implementation – consider mentioning resources, timelines, milestones | This action is part of the CPH 2025 Climate Action plan and will end by end of 2025. The City of Copenhagen considers if elements of this action shall be continued as part of the Climate Action 2035 plan.  |
-|   |  Generated renewable energy | N/A  |
-|   |  Removed/substituted energy, volume, or fuel type | Fossil fuel.  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 9.000 tons CO_{2}e  |
-|   |  GHG emissions compensated (natural or technological sinks) | N/A  |
-|   | Total costs and costs by CO2e unit | Please consult the Investment Plan.  |
+|  | Field of action | Building a green energy system. |
+| --- | --- | --- |
+|  | Systemic lever | Technology /infrastructure. |
+| Governance & Policy.  |
+| Implementation | Outcome (according to module B-1.1) | 9.000 tons CO_{2}e. |
+| --- | --- | --- |
+|  | Responsible bodies/person for implementation | HOFOR. |
+|  | Action scale & addressed entities | Energy production and transmission systems at city level. |
+|  | Involved stakeholders | Neighbouring municipalities, utilities, and transmission companies such as ARC, HOFOR, and CTR. |
+| Impact & cost | Comments on implementation – consider mentioning resources, timelines, milestones | This action is part of the CPH 2025 Climate Action plan and will end by end of 2025. The City of Copenhagen considers if elements of this action shall be continued as part of the Climate Action 2035 plan. |
+|  | Generated renewable energy | N/A |
+|  | Removed/substituted energy, volume, or fuel type | Fossil fuel. |
+|  | GHG emissions reduction estimate (total) per emission source sector | 9.000 tons CO_{2}e |
+|  | GHG emissions compensated (natural or technological sinks) | N/A |
+|  | Total costs and costs by CO2e unit | Please consult the Investment Plan. |
 
 Table 11. Action outline: CO2 neutral district heating.
 
-|  B-2.2c: Individual action outlines  |   |   |
+| B-2.2c: Individual action outlines |  |  |
 | --- | --- | --- |
-|  Action outline | Action name | CO_{2} neutral power generation.  |
-Climate Neutrality Action Plan
-
-#
-
-|   | Action description | The installation of photovoltaic modules and installation of wind turbines contributes to the green transition of the electricity system and to achieving a production of electricity based on biomass and wind that exceeds the city's total electricity consumption. The current target for the wind power programme is to reach 560 MW installed capacity by 2025.HOFOR is working to install wind turbines and photovoltaic modules both within and outside the city limits of Copenhagen. HOFOR intends to achieve the target through a series of projects aimed at establishing both onshore and offshore wind power and photovoltaic power stations.  |
+| Action outline | Action name | CO_{2} neutral power generation. |
+|  | Action description | The installation of photovoltaic modules and installation of wind turbines contributes to the green transition of the electricity system and to achieving a production of electricity based on biomass and wind that exceeds the city's total electricity consumption. The current target for the wind power programme is to reach 560 MW installed capacity by 2025.HOFOR is working to install wind turbines and photovoltaic modules both within and outside the city limits of Copenhagen. HOFOR intends to achieve the target through a series of projects aimed at establishing both onshore and offshore wind power and photovoltaic power stations. |
 | --- | --- | --- |
-|  Reference to impact pathway | Field of action | Building a green energy system.  |
-|   |  Systemic lever | Technology /infrastructure.Governance & Policy.  |
-|   |  Outcome (according to module B-1.1) | -  |
-|  Implementation | Responsible bodies/person for implementation | HOFOR.  |
-|   |  Action scale & addressed entities | Energy production and transmission systems at city level.  |
-|   |  Involved stakeholders | Neighbouring municipalities, utilities, and transmission companies.  |
-|   |  Comments on implementation - consider mentioning resources, timelines, milestones | This action is part of the CPH 2025 Climate Action plan and will end by end of 2025. The City of Copenhagen considers if elements of this action, e.g., delayed wind farm projects, should be continued as part of the Climate Action 2035 plan.  |
-|  Impact & cost | Generated renewable energy | N/A  |
-|   |  Removed/substituted energy, volume, or fuel type | Natural-gas and fossil fuel.  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | CO2neutral power generation:15.000 tons CO2e (for 370 MW Wind + Solar which is the current expectation for 2025)  |
-|   |  GHG emissions compensated (natural or technological sinks) | N/A  |
-|   |  Total costs and costs by CO2e unit | Please consult the Investment Plan.  |
+| Reference to impact pathway | Field of action | Building a green energy system. |
+|  | Systemic lever | Technology /infrastructure.Governance & Policy. |
+|  | Outcome (according to module B-1.1) | - |
+| Implementation | Responsible bodies/person for implementation | HOFOR. |
+|  | Action scale & addressed entities | Energy production and transmission systems at city level. |
+|  | Involved stakeholders | Neighbouring municipalities, utilities, and transmission companies. |
+|  | Comments on implementation - consider mentioning resources, timelines, milestones | This action is part of the CPH 2025 Climate Action plan and will end by end of 2025. The City of Copenhagen considers if elements of this action, e.g., delayed wind farm projects, should be continued as part of the Climate Action 2035 plan. |
+| Impact & cost | Generated renewable energy | N/A |
+|  | Removed/substituted energy, volume, or fuel type | Natural-gas and fossil fuel. |
+|  | GHG emissions reduction estimate (total) per emission source sector | CO2neutral power generation:15.000 tons CO2e (for 370 MW Wind + Solar which is the current expectation for 2025) |
+|  | GHG emissions compensated (natural or technological sinks) | N/A |
+|  | Total costs and costs by CO2e unit | Please consult the Investment Plan. |
 
 Table 12. CO2 neutral power generation.
 
-|  B-2.2c: Individual action outlines  |   |   |
+| B-2.2c: Individual action outlines |  |  |
 | --- | --- | --- |
-|  Action outline | Action name | Energy Leap partnership  |
-|   | Action description | The City of Copenhagen has set ambitious climate goals with its CPH 2025 Climate Action plan, and one crucial area of focus is energy consumption in buildings. Buildings  |
-|   | Action description | to be implemented in the City of Copenhagen.  |
-|  Action plan | Action plan | to be implemented in the City of Copenhagen.  |
-|   |  Action plan | to be implemented in the City of Copenhagen.  |
-Climate Neutrality Action Plan
-
-#
-
-|   |  | play a significant role in achieving these goals, as they account for approximately 70 % of total energy consumption. As the municipality owns and operates about 5 % of the building stock, it cannot meet the targets alone. That's why partnerships like Energy Leap are crucial, bringing together key stakeholders in the real estate sector to lead the way in the green transition. The Energy Leap partnership addresses energy challenges in buildings collectively, share valuable insights and experiences, and develop innovative solutions thereby reducing energy consumption, lowering carbon emissions, and creating a more sustainable future for Copenhagen. The Energy Leap partners achieved a 9 % reduction in heat consumption from 2021 to 2022.  |
+| Action outline | Action name | Energy Leap partnership |
+|  | Action description | The City of Copenhagen has set ambitious climate goals with its CPH 2025 Climate Action plan, and one crucial area of focus is energy consumption in buildings. Buildings |
+|  | Action description | to be implemented in the City of Copenhagen. |
+| Action plan | Action plan | to be implemented in the City of Copenhagen. |
+|  | Action plan | to be implemented in the City of Copenhagen. |
+|  |  | play a significant role in achieving these goals, as they account for approximately 70 % of total energy consumption. As the municipality owns and operates about 5 % of the building stock, it cannot meet the targets alone. That's why partnerships like Energy Leap are crucial, bringing together key stakeholders in the real estate sector to lead the way in the green transition. The Energy Leap partnership addresses energy challenges in buildings collectively, share valuable insights and experiences, and develop innovative solutions thereby reducing energy consumption, lowering carbon emissions, and creating a more sustainable future for Copenhagen. The Energy Leap partners achieved a 9 % reduction in heat consumption from 2021 to 2022. |
 | --- | --- | --- |
-|  Reference to impact pathway | Field of action | Building a green energy system.  |
-|   |  Systemic lever | Technology /infrastructure. Governance & Policy.  |
-|   |  Outcome (according to module B-1.1) | -  |
-|  Implementation | Responsible bodies/person for implementation | City of Copenhagen, Technical and Environmental Administration.  |
-|   |  Action scale & addressed entities | Reduction of energy consumption in buildings at city level.  |
-|   |  Involved stakeholders | Energy Leap is a partnership between 56 real estate companies and organizations in Copenhagen representing almost 40 % of the building stock in Copenhagen.  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | This action is part of the CPH 2025 Climate Action plan and will end by end of 2025. The Energy Leap partnership will be continued as an important part of the Climate Action 2035 plan.  |
-|  Impact & cost | Generated renewable energy | N/A  |
-|   |  Removed/substituted energy, volume, or fuel type | Natural-gas and fossil fuel.  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 1100 tons CO2e.  |
-|   |  GHG emissions compensated (natural or technological sinks) | N/A  |
-|   |  Total costs and costs by CO2e unit | Please consult the Investment Plan.  |
+| Reference to impact pathway | Field of action | Building a green energy system. |
+|  | Systemic lever | Technology /infrastructure. Governance & Policy. |
+|  | Outcome (according to module B-1.1) | - |
+| Implementation | Responsible bodies/person for implementation | City of Copenhagen, Technical and Environmental Administration. |
+|  | Action scale & addressed entities | Reduction of energy consumption in buildings at city level. |
+|  | Involved stakeholders | Energy Leap is a partnership between 56 real estate companies and organizations in Copenhagen representing almost 40 % of the building stock in Copenhagen. |
+|  | Comments on implementation – consider mentioning resources, timelines, milestones | This action is part of the CPH 2025 Climate Action plan and will end by end of 2025. The Energy Leap partnership will be continued as an important part of the Climate Action 2035 plan. |
+| Impact & cost | Generated renewable energy | N/A |
+|  | Removed/substituted energy, volume, or fuel type | Natural-gas and fossil fuel. |
+|  | GHG emissions reduction estimate (total) per emission source sector | 1100 tons CO2e. |
+|  | GHG emissions compensated (natural or technological sinks) | N/A |
+|  | Total costs and costs by CO2e unit | Please consult the Investment Plan. |
 
 Table 13. Action outline: Energy Leap partnership.
 Climate Neutrality Action Plan
@@ -1166,372 +1147,329 @@ In Table 14 target values are compared to the 2010 baseline. The monitoring meth
 
 B-3.1a: Impact Pathways
 
-|  Fields of action | Indicator No. | Sub-target | Sub-target values 2025 | Status per 2022  |
+| Fields of action | Indicator No. | Sub-target | Sub-target values 2025 | Status per 2022 |
 | --- | --- | --- | --- | --- |
-|  Reducing energy consumption | CPH2025-1 | Reduction of heat consumption. | -20% | Consumption in 2022 was identical to 2010 despite a population increase of 22%  |
-|   |  CHP2025-2 | Reduction of electricity consumption by service and commerce. | -20% | Consumption is 17% higher (partly due to change of data source)  |
-|   |  CPH2025-3 | Reduction of electricity consumption by households. | -10% | As planned.  |
-|   |  CPH2025-16 | City of Copenhagen's buildings built according to low-energy rating from 2015 and building code from 2020 |  | Goal is achieved. New building code supersedes subtarget.  |
-|   |  CPH2025-15 | Reduce energy consumption in the City of Copenhagen's buildings. | -40% | 23% lower.  |
-|   |  CPH2025-18 | Reduction of energy consumption – streetlights. | -50% | Goal is achieved.  |
-|  Building a green energy system | CHP2025-6 | Energy production generated by photovoltaic solar panels. | 3% of electricity consumption in 2010 | Production reached 0,7%.  |
-|   |  CPH2025-7 | Installation of photovoltaic solar panels on the City of Copenhagen's buildings. | 60.000 M² | 10.862 m².  |
-|   |  CPH2025-5 | Energy status of district heating. | Climate neutral | 85% climate neutral  |
-|   |  CPH2025-6 | Electricity production based on biomass and wind. | Larger than Copenhagen's total electricity consumption | Renewable energy accounted for 69%  |
-|   |  CHP2025-7 | Separation of plastic waste from households. | - | 33% of household plastic separated in 2022  |
-|   |  CPH2025-8 | Bio gasification of organic waste. | - | 26% of organic fraction separated in 2022  |
-|  Fostering green mobility | CPH2025-9 | Fraction of trips carried out by walking, bike, or public transportation. | 75% of all trips | 74%.  |
-|   |  CPH2025-10 | Fraction of trips to work or education carried out by bike. | 50% of all trips | 45%.  |
-|   |  CPH2025-11 | Number of passengers using public transportation. | 20% more | 9% increase.  |
+| Reducing energy consumption | CPH2025-1 | Reduction of heat consumption. | -20% | Consumption in 2022 was identical to 2010 despite a population increase of 22% |
+|  | CHP2025-2 | Reduction of electricity consumption by service and commerce. | -20% | Consumption is 17% higher (partly due to change of data source) |
+|  | CPH2025-3 | Reduction of electricity consumption by households. | -10% | As planned. |
+|  | CPH2025-16 | City of Copenhagen's buildings built according to low-energy rating from 2015 and building code from 2020 |  | Goal is achieved. New building code supersedes subtarget. |
+|  | CPH2025-15 | Reduce energy consumption in the City of Copenhagen's buildings. | -40% | 23% lower. |
+|  | CPH2025-18 | Reduction of energy consumption – streetlights. | -50% | Goal is achieved. |
+| Building a green energy system | CHP2025-6 | Energy production generated by photovoltaic solar panels. | 3% of electricity consumption in 2010 | Production reached 0,7%. |
+|  | CPH2025-7 | Installation of photovoltaic solar panels on the City of Copenhagen's buildings. | 60.000 M² | 10.862 m². |
+|  | CPH2025-5 | Energy status of district heating. | Climate neutral | 85% climate neutral |
+|  | CPH2025-6 | Electricity production based on biomass and wind. | Larger than Copenhagen's total electricity consumption | Renewable energy accounted for 69% |
+|  | CHP2025-7 | Separation of plastic waste from households. | - | 33% of household plastic separated in 2022 |
+|  | CPH2025-8 | Bio gasification of organic waste. | - | 26% of organic fraction separated in 2022 |
+| Fostering green mobility | CPH2025-9 | Fraction of trips carried out by walking, bike, or public transportation. | 75% of all trips | 74%. |
+|  | CPH2025-10 | Fraction of trips to work or education carried out by bike. | 50% of all trips | 45%. |
+|  | CPH2025-11 | Number of passengers using public transportation. | 20% more | 9% increase. |
 Climate Neutrality Action Plan
 
 #
 
 Table 14. Status of CPH 2025 Climate Action plan indicators.
 
-|  B-3.2: Indicator Metadata  |   |   |
+| B-3.2: Indicator Metadata |  |  |
 | --- | --- | --- |
-|  Indicator Name | CPH2025-1. Reduction of heat consumption.  |   |
-|  Indicator Unit | GWh  |   |
-|  Definition | 20% reduction compared to 2010. Target annual consumption in 2025: 3.384,093 GWh  |   |
-|  Calculation | Monitoring of district heating consumption.  |   |
-|  Indicator Context |   |   |
-|  Does the indicator measure direct impacts | Yes  |   |
-|  If yes, which emission source sectors does it measure? | Buildings  |   |
-|  Does the indicator measure indirect impacts | No  |   |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |   |
-|  If yes, which action and impact pathway is it relevant for? | Reducing energy consumption.  |   |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | Yes  |   |
-|  Data requirements |   |   |
-|  Expected data source | Data delivered by HOFOR.  |   |
-|  Is the data source local or regional/national? | Local  |   |
-|  Expected availability | Good  |   |
-|  Suggested collection interval | Annual  |   |
-|  References |   |   |
-|  Deliverables describing the indicator | CDP reports, Publikationsdatabase (itera.dk)  |   |
-|  Other indicator systems using this indicator. | No  |   |
-|  |   |   |
-|  Indicator Name | CPH2025-2. Reduction of electricity consumption by service and commerce.  |   |
-|  Indicator Unit | MWh  |   |
-|  Definition | 20% reduction in electricity consumption in commercial and trade sectors relative to base year 2010.  |   |
-|  Calculation | Monitoring of electricity consumption.  |   |
-|  Indicator Context |   |   |
-|  Does the indicator measure direct impacts | Yes  |   |
-|  If yes, which emission source sectors does it measure? | Buildings  |   |
-|  Does the indicator measure indirect impacts | No  |   |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |   |
-Climate Neutrality Action Plan
-
-|  If yes, which action and impact pathway is it relevant for? | Reducing energy consumption  |
+| Indicator Name | CPH2025-1. Reduction of heat consumption. |  |
+| Indicator Unit | GWh |  |
+| Definition | 20% reduction compared to 2010. Target annual consumption in 2025: 3.384,093 GWh |  |
+| Calculation | Monitoring of district heating consumption. |  |
+| Indicator Context |  |  |
+| Does the indicator measure direct impacts | Yes |  |
+| If yes, which emission source sectors does it measure? | Buildings |  |
+| Does the indicator measure indirect impacts | No |  |
+| Is the indicator useful for monitoring the output/impact of action(s)? | Yes |  |
+| If yes, which action and impact pathway is it relevant for? | Reducing energy consumption. |  |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | Yes |  |
+| Data requirements |  |  |
+| Expected data source | Data delivered by HOFOR. |  |
+| Is the data source local or regional/national? | Local |  |
+| Expected availability | Good |  |
+| Suggested collection interval | Annual |  |
+| References |  |  |
+| Deliverables describing the indicator | CDP reports, Publikationsdatabase (itera.dk) |  |
+| Other indicator systems using this indicator. | No |  |
+| Indicator Name | CPH2025-2. Reduction of electricity consumption by service and commerce. |  |
+| Indicator Unit | MWh |  |
+| Definition | 20% reduction in electricity consumption in commercial and trade sectors relative to base year 2010. |  |
+| Calculation | Monitoring of electricity consumption. |  |
+| Indicator Context |  |  |
+| Does the indicator measure direct impacts | Yes |  |
+| If yes, which emission source sectors does it measure? | Buildings |  |
+| Does the indicator measure indirect impacts | No |  |
+| Is the indicator useful for monitoring the output/impact of action(s)? | Yes |  |
+| If yes, which action and impact pathway is it relevant for? | Reducing energy consumption |
 | --- | --- |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | Yes  |
-|  Data requirements |   |
-|  Expected data source | Data delivered by Energinet.  |
-|  Is the data source local or regional/national? | Local  |
-|  Expected availability | Good  |
-|  Suggested collection interval | Annual  |
-|  References |   |
-|  Deliverables describing the indicator | CDP reports, Publikationsdatabase (itera.dk)  |
-|  Other indicator systems using this indicator. | No  |
-|  |   |
-|  Indicator Name | CPH2025-3. Reduction of electricity consumption by households.  |
-|  Indicator Unit | MWh  |
-|  Definition | 10% reduction in electricity consumption in households relative to base year 2010.  |
-|  Calculation | Monitoring of electricity consumption.  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts | Yes  |
-|  If yes, which emission source sectors does it measure? | Buildings  |
-|  Does the indicator measure indirect impacts | No  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-|  If yes, which action and impact pathway is it relevant for? | Reducing energy consumption  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | Yes  |
-|  Data requirements |   |
-|  Expected data source | Data delivered by Energinet.  |
-|  Is the data source local or regional/national? | Local  |
-|  Expected availability | Good  |
-|  Suggested collection interval | Annual  |
-|  References |   |
-|  Deliverables describing the indicator | CDP reports, Publikationsdatabase (itera.dk)  |
-|  Other indicator systems using this indicator. | No  |
-|  |   |
-|  Indicator Name | CPH2025-15. Reduce energy consumption in the City of Copenhagen’s buildings.  |
-|  Indicator Unit | MWh  |
-|  Definition | Total energy consumption in the City of Copenhagen is reduced with 40% or more in 2025 compared to the base year 2010.  |
-|  Calculation | Monitoring of total energy consumption.  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts | Yes  |
-|  If yes, which emission source sectors does it measure? | Buildings  |
-|  Does the indicator measure indirect impacts | No  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-
-6
-Climate Neutrality Action Plan
-
-|  If yes, which action and impact pathway is it relevant for? | Reducing energy consumption  |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | Yes |
+| Data requirements |  |
+| Expected data source | Data delivered by Energinet. |
+| Is the data source local or regional/national? | Local |
+| Expected availability | Good |
+| Suggested collection interval | Annual |
+| References |  |
+| Deliverables describing the indicator | CDP reports, Publikationsdatabase (itera.dk) |
+| Other indicator systems using this indicator. | No |
+| Indicator Name | CPH2025-3. Reduction of electricity consumption by households. |
+| Indicator Unit | MWh |
+| Definition | 10% reduction in electricity consumption in households relative to base year 2010. |
+| Calculation | Monitoring of electricity consumption. |
+| Indicator Context |  |
+| Does the indicator measure direct impacts | Yes |
+| If yes, which emission source sectors does it measure? | Buildings |
+| Does the indicator measure indirect impacts | No |
+| Is the indicator useful for monitoring the output/impact of action(s)? | Yes |
+| If yes, which action and impact pathway is it relevant for? | Reducing energy consumption |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | Yes |
+| Data requirements |  |
+| Expected data source | Data delivered by Energinet. |
+| Is the data source local or regional/national? | Local |
+| Expected availability | Good |
+| Suggested collection interval | Annual |
+| References |  |
+| Deliverables describing the indicator | CDP reports, Publikationsdatabase (itera.dk) |
+| Other indicator systems using this indicator. | No |
+| Indicator Name | CPH2025-15. Reduce energy consumption in the City of Copenhagen’s buildings. |
+| Indicator Unit | MWh |
+| Definition | Total energy consumption in the City of Copenhagen is reduced with 40% or more in 2025 compared to the base year 2010. |
+| Calculation | Monitoring of total energy consumption. |
+| Indicator Context |  |
+| Does the indicator measure direct impacts | Yes |
+| If yes, which emission source sectors does it measure? | Buildings |
+| Does the indicator measure indirect impacts | No |
+| Is the indicator useful for monitoring the output/impact of action(s)? | Yes |
+| If yes, which action and impact pathway is it relevant for? | Reducing energy consumption |
 | --- | --- |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No  |
-|  Data requirements |   |
-|  Expected data source | Data compiled by the City of Copenhagen Finance Administration.  |
-|  Is the data source local or regional/national? | Local  |
-|  Expected availability | Good  |
-|  Suggested collection interval | Annual  |
-|  References |   |
-|  Deliverables describing the indicator | Publikationsdatabase (itera.dk)  |
-|  Other indicator systems using this indicator. | No  |
-|  |   |
-|  Indicator Name | CPH2025-18. Reduction of energy consumption – city lights.  |
-|  Indicator Unit | MWh  |
-|  Definition | 50 % reduction of energy consumed by city lights in 2025 compared to the base year 2010.  |
-|  Calculation | Monitoring of total city lights energy consumption.  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts | Yes  |
-|  If yes, which emission source sectors does it measure? | Buildings  |
-|  Does the indicator measure indirect impacts | No  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-|  If yes, which action and impact pathway is it relevant for? | Reducing energy consumption  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No  |
-|  Data requirements |   |
-|  Expected data source | Data from the City of Copenhagen.  |
-|  Is the data source local or regional/national? | Local  |
-|  Expected availability | Good  |
-|  Suggested collection interval | Annual  |
-|  References |   |
-|  Deliverables describing the indicator | Publikationsdatabase (itera.dk)  |
-|  Other indicator systems using this indicator. | No  |
-|  |   |
-|  Indicator Name | CPH2025-4. Energy production generated by photovoltaic solar panels.  |
-|  Indicator Unit | MWh  |
-|  Definition | Solar power installations in the city corresponding to 3% of 2010-electricity consumption.  |
-|  Calculation | Monitoring of energy produced by photovoltaic solar panels in Copenhagen.  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts | Yes  |
-|  If yes, which emission source sectors does it measure? | Buildings  |
-|  Does the indicator measure indirect impacts | No  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-
-7
-Climate Neutrality Action Plan
-
-|  If yes, which action and impact pathway is it relevant for? | Building a green energy system  |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No |
+| Data requirements |  |
+| Expected data source | Data compiled by the City of Copenhagen Finance Administration. |
+| Is the data source local or regional/national? | Local |
+| Expected availability | Good |
+| Suggested collection interval | Annual |
+| References |  |
+| Deliverables describing the indicator | Publikationsdatabase (itera.dk) |
+| Other indicator systems using this indicator. | No |
+| Indicator Name | CPH2025-18. Reduction of energy consumption – city lights. |
+| Indicator Unit | MWh |
+| Definition | 50 % reduction of energy consumed by city lights in 2025 compared to the base year 2010. |
+| Calculation | Monitoring of total city lights energy consumption. |
+| Indicator Context |  |
+| Does the indicator measure direct impacts | Yes |
+| If yes, which emission source sectors does it measure? | Buildings |
+| Does the indicator measure indirect impacts | No |
+| Is the indicator useful for monitoring the output/impact of action(s)? | Yes |
+| If yes, which action and impact pathway is it relevant for? | Reducing energy consumption |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No |
+| Data requirements |  |
+| Expected data source | Data from the City of Copenhagen. |
+| Is the data source local or regional/national? | Local |
+| Expected availability | Good |
+| Suggested collection interval | Annual |
+| References |  |
+| Deliverables describing the indicator | Publikationsdatabase (itera.dk) |
+| Other indicator systems using this indicator. | No |
+| Indicator Name | CPH2025-4. Energy production generated by photovoltaic solar panels. |
+| Indicator Unit | MWh |
+| Definition | Solar power installations in the city corresponding to 3% of 2010-electricity consumption. |
+| Calculation | Monitoring of energy produced by photovoltaic solar panels in Copenhagen. |
+| Indicator Context |  |
+| Does the indicator measure direct impacts | Yes |
+| If yes, which emission source sectors does it measure? | Buildings |
+| Does the indicator measure indirect impacts | No |
+| Is the indicator useful for monitoring the output/impact of action(s)? | Yes |
+| If yes, which action and impact pathway is it relevant for? | Building a green energy system |
 | --- | --- |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | Yes  |
-|  Data requirements |   |
-|  Expected data source | Data delivered by Energinet.  |
-|  Is the data source local or regional/national? | Local  |
-|  Expected availability | Good  |
-|  Suggested collection interval | Annual  |
-|  References |   |
-|  Deliverables describing the indicator | CDP reports, Publikationsdatabase (itera.dk)  |
-|  Other indicator systems using this indicator. | No  |
-|  |   |
-|  Indicator Name | CPH2025-19. Installation of photovoltaic solar panels on the City of Copenhagen’s buildings.  |
-|  Indicator Unit | m²  |
-|  Definition | Photovoltaic solar panels cover an area equal to 60.000 m² in 2025.  |
-|  Calculation | m² of photovoltaic solar panels installed.  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts | Yes  |
-|  If yes, which emission source sectors does it measure? | Buildings  |
-|  Does the indicator measure indirect impacts | No  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-|  If yes, which action and impact pathway is it relevant for? | Reducing energy consumption  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No  |
-|  Data requirements |   |
-|  Expected data source | Data from the City of Copenhagen.  |
-|  Is the data source local or regional/national? | Local  |
-|  Expected availability | Good  |
-|  Suggested collection interval | Annual  |
-|  References |   |
-|  Deliverables describing the indicator | Publikationsdatabase (itera.dk)  |
-|  Other indicator systems using this indicator. | No  |
-|  |   |
-|  Indicator Name | CPH2025-5. District heating in Copenhagen is CO2-neutral  |
-|  Indicator Unit | MWh  |
-|  Definition | Percentage of CO2-neutral heat production in 2025: 100%  |
-|  Calculation | Monitoring of district heating consumption.  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts | Yes  |
-|  If yes, which emission source sectors does it measure? | Buildings  |
-|  Does the indicator measure indirect impacts | No  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-|  If yes, which action and impact pathway is it relevant for? | Building a green energy system  |
-
-8
-Climate Neutrality Action Plan
-
-#
-
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | Yes  |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | Yes |
+| Data requirements |  |
+| Expected data source | Data delivered by Energinet. |
+| Is the data source local or regional/national? | Local |
+| Expected availability | Good |
+| Suggested collection interval | Annual |
+| References |  |
+| Deliverables describing the indicator | CDP reports, Publikationsdatabase (itera.dk) |
+| Other indicator systems using this indicator. | No |
+| Indicator Name | CPH2025-19. Installation of photovoltaic solar panels on the City of Copenhagen’s buildings. |
+| Indicator Unit | m² |
+| Definition | Photovoltaic solar panels cover an area equal to 60.000 m² in 2025. |
+| Calculation | m² of photovoltaic solar panels installed. |
+| Indicator Context |  |
+| Does the indicator measure direct impacts | Yes |
+| If yes, which emission source sectors does it measure? | Buildings |
+| Does the indicator measure indirect impacts | No |
+| Is the indicator useful for monitoring the output/impact of action(s)? | Yes |
+| If yes, which action and impact pathway is it relevant for? | Reducing energy consumption |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No |
+| Data requirements |  |
+| Expected data source | Data from the City of Copenhagen. |
+| Is the data source local or regional/national? | Local |
+| Expected availability | Good |
+| Suggested collection interval | Annual |
+| References |  |
+| Deliverables describing the indicator | Publikationsdatabase (itera.dk) |
+| Other indicator systems using this indicator. | No |
+| Indicator Name | CPH2025-5. District heating in Copenhagen is CO2-neutral |
+| Indicator Unit | MWh |
+| Definition | Percentage of CO2-neutral heat production in 2025: 100% |
+| Calculation | Monitoring of district heating consumption. |
+| Indicator Context |  |
+| Does the indicator measure direct impacts | Yes |
+| If yes, which emission source sectors does it measure? | Buildings |
+| Does the indicator measure indirect impacts | No |
+| Is the indicator useful for monitoring the output/impact of action(s)? | Yes |
+| If yes, which action and impact pathway is it relevant for? | Building a green energy system |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | Yes |
 | --- | --- |
-|  Data requirements |   |
-|  Expected data source | Data delivered by HOFOR  |
-|  Is the data source local or regional/national? | Local  |
-|  Expected availability | Good  |
-|  Suggested collection interval | Annual  |
-|  References |   |
-|  Deliverables describing the indicator | CDP reports, Publikationsdatabase (itera.dk)  |
-|  Other indicator systems using this indicator. | -  |
-|  |   |
-|  Indicator Name | CPH2025-6. Electricity production based on biomass and wind  |
-|  Indicator Unit | MWh  |
-|  Definition | Electricity production is based on wind and biomass and exceeds total electricity consumption in 2025  |
-|  Calculation | Monitoring of renewable energy produced.  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts | Yes  |
-|  If yes, which emission source sectors does it measure? | Buildings  |
-|  Does the indicator measure indirect impacts | No  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-|  If yes, which action and impact pathway is it relevant for? | Building a green energy system  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | Yes  |
-|  Data requirements |   |
-|  Expected data source | Data delivered by Energinet.  |
-|  Is the data source local or regional / national? | Local  |
-|  Expected availability | Good  |
-|  Suggested collection interval | Annual  |
-|  References |   |
-|  Deliverables describing the indicator | CDP reports, Publikationsdatabase (itera.dk)  |
-|  Other indicator systems using this indicator. | No  |
-|  |   |
-|  Indicator Name | CPH2025-7. Separation of plastic waste from households.  |
-|  Indicator Unit | Tons of plastic waste  |
-|  Definition | 86% of potential plastic waste from households in 2025 is sorted out.  |
-|  Calculation | Plastic waste collected, then percentage of collected plastic relative to total estimated potential for collection in 2025.  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts | Yes  |
-|  If yes, which emission source sectors does it measure? | Waste  |
-|  Does the indicator measure indirect impacts | No  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-|  If yes, which action and impact pathway is it relevant for? | Building a green energy system  |
-Climate Neutrality Action Plan
-
-0
-
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | Yes  |
+| Data requirements |  |
+| Expected data source | Data delivered by HOFOR |
+| Is the data source local or regional/national? | Local |
+| Expected availability | Good |
+| Suggested collection interval | Annual |
+| References |  |
+| Deliverables describing the indicator | CDP reports, Publikationsdatabase (itera.dk) |
+| Other indicator systems using this indicator. | - |
+| Indicator Name | CPH2025-6. Electricity production based on biomass and wind |
+| Indicator Unit | MWh |
+| Definition | Electricity production is based on wind and biomass and exceeds total electricity consumption in 2025 |
+| Calculation | Monitoring of renewable energy produced. |
+| Indicator Context |  |
+| Does the indicator measure direct impacts | Yes |
+| If yes, which emission source sectors does it measure? | Buildings |
+| Does the indicator measure indirect impacts | No |
+| Is the indicator useful for monitoring the output/impact of action(s)? | Yes |
+| If yes, which action and impact pathway is it relevant for? | Building a green energy system |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | Yes |
+| Data requirements |  |
+| Expected data source | Data delivered by Energinet. |
+| Is the data source local or regional / national? | Local |
+| Expected availability | Good |
+| Suggested collection interval | Annual |
+| References |  |
+| Deliverables describing the indicator | CDP reports, Publikationsdatabase (itera.dk) |
+| Other indicator systems using this indicator. | No |
+| Indicator Name | CPH2025-7. Separation of plastic waste from households. |
+| Indicator Unit | Tons of plastic waste |
+| Definition | 86% of potential plastic waste from households in 2025 is sorted out. |
+| Calculation | Plastic waste collected, then percentage of collected plastic relative to total estimated potential for collection in 2025. |
+| Indicator Context |  |
+| Does the indicator measure direct impacts | Yes |
+| If yes, which emission source sectors does it measure? | Waste |
+| Does the indicator measure indirect impacts | No |
+| Is the indicator useful for monitoring the output/impact of action(s)? | Yes |
+| If yes, which action and impact pathway is it relevant for? | Building a green energy system |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | Yes |
 | --- | --- |
-|  Data requirements |   |
-|  Expected data source | Data delivered by ARC.  |
-|  Is the data source local or regional/national? | Local  |
-|  Expected availability | Good  |
-|  Suggested collection interval | Annual  |
-|  References |   |
-|  Deliverables describing the indicator | CDP reports, Publikationsdatabase (itera.dk)  |
-|  Other indicator systems using this indicator. | No  |
-|  |   |
-|  Indicator Name | CPH2025-8. Bio gasification of organic waste.  |
-|  Indicator Unit | Tons of organic waste  |
-|  Definition | 70% of organic waste out of the total estimated organic waste in 2025 is turned into biogas.  |
-|  Calculation | Tons organic waste collected, then percentage of collected organic waste relative to total estimated potential for collection in 2025.  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts | Yes  |
-|  If yes, which emission source sectors does it measure? | Waste  |
-|  Does the indicator measure indirect impacts | No  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-|  If yes, which action and impact pathway is it relevant for? | Building a green energy system  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | Yes  |
-|  Data requirements |   |
-|  Expected data source | Data delivered by ARC.  |
-|  Is the data source local or regional/national? | Local  |
-|  Expected availability | Good  |
-|  Suggested collection interval | Annual  |
-|  References |   |
-|  Deliverables describing the indicator | CDP reports, Publikationsdatabase (itera.dk)  |
-|  Other indicator systems using this indicator. | No  |
-|  |   |
-|  Indicator Name | CPH2025-9. Fraction of trips carried out by walking, bike, or public transportation.  |
-|  Indicator Unit | Km  |
-|  Definition | Car traffic in 2025 must make up a maximum of 25% of all trips made in Copenhagen. In addition, the number of trips will be distributed between at least 25% walking, 25% cycling and 25% public transport by 2025. Applies to all trips to, from, and within the geographical delimitation of the City of Copenhagen in one year calendar year.  |
-|  Calculation | Number of km travelled based on data from transport habit surveys.  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts | Yes  |
-|  If yes, which emission source sectors does it measure? | Transport  |
-|  Does the indicator measure indirect impacts | No  |
-Climate Neutrality Action Plan
-
-1
-
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
+| Data requirements |  |
+| Expected data source | Data delivered by ARC. |
+| Is the data source local or regional/national? | Local |
+| Expected availability | Good |
+| Suggested collection interval | Annual |
+| References |  |
+| Deliverables describing the indicator | CDP reports, Publikationsdatabase (itera.dk) |
+| Other indicator systems using this indicator. | No |
+| Indicator Name | CPH2025-8. Bio gasification of organic waste. |
+| Indicator Unit | Tons of organic waste |
+| Definition | 70% of organic waste out of the total estimated organic waste in 2025 is turned into biogas. |
+| Calculation | Tons organic waste collected, then percentage of collected organic waste relative to total estimated potential for collection in 2025. |
+| Indicator Context |  |
+| Does the indicator measure direct impacts | Yes |
+| If yes, which emission source sectors does it measure? | Waste |
+| Does the indicator measure indirect impacts | No |
+| Is the indicator useful for monitoring the output/impact of action(s)? | Yes |
+| If yes, which action and impact pathway is it relevant for? | Building a green energy system |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | Yes |
+| Data requirements |  |
+| Expected data source | Data delivered by ARC. |
+| Is the data source local or regional/national? | Local |
+| Expected availability | Good |
+| Suggested collection interval | Annual |
+| References |  |
+| Deliverables describing the indicator | CDP reports, Publikationsdatabase (itera.dk) |
+| Other indicator systems using this indicator. | No |
+| Indicator Name | CPH2025-9. Fraction of trips carried out by walking, bike, or public transportation. |
+| Indicator Unit | Km |
+| Definition | Car traffic in 2025 must make up a maximum of 25% of all trips made in Copenhagen. In addition, the number of trips will be distributed between at least 25% walking, 25% cycling and 25% public transport by 2025. Applies to all trips to, from, and within the geographical delimitation of the City of Copenhagen in one year calendar year. |
+| Calculation | Number of km travelled based on data from transport habit surveys. |
+| Indicator Context |  |
+| Does the indicator measure direct impacts | Yes |
+| If yes, which emission source sectors does it measure? | Transport |
+| Does the indicator measure indirect impacts | No |
+| Is the indicator useful for monitoring the output/impact of action(s)? | Yes |
 | --- | --- |
-|  If yes, which action and impact pathway is it relevant for? | Fostering green mobility  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No  |
-|  Data requirements |   |
-|  Expected data source | The City of Copenhagen. Annual mobility report and data from transport habit surveys to calculate trip shares.  |
-|  Is the data source local or regional/national? | Local  |
-|  Expected availability | Good  |
-|  Suggested collection interval | Annual  |
-|  References |   |
-|  Deliverables describing the indicator | Publikationsdatabase (itera.dk)  |
-|  Other indicator systems using this indicator. | No  |
-|  |   |
-|  Indicator Name | CPH2025-10. Fraction of trips to work or education carried out by bike.  |
-|  Indicator Unit | Number of trips  |
-|  Definition | 50 % of all trips to work or educational institutions in Copenhagen are made by bicycle.  |
-|  Calculation | Number of km travelled based on data from transport habit surveys  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts | Yes  |
-|  If yes, which emission source sectors does it measure? | Transport  |
-|  Does the indicator measure indirect impacts | No  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-|  If yes, which action and impact pathway is it relevant for? | Fostering green mobility  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No  |
-|  Data requirements |   |
-|  Expected data source | The City of Copenhagen. Annual mobility report and data from transport habit surveys to calculate trip shares.  |
-|  Is the data source local or regional/national? | Local  |
-|  Expected availability | Good  |
-|  Suggested collection interval | Annual  |
-|  References |   |
-|  Deliverables describing the indicator | Publikationsdatabase (itera.dk)  |
-|  Other indicator systems using this indicator. | No  |
-|  |   |
-|  Indicator Name | CPH2025-11. Number of passengers using public transportation.  |
-|  Indicator Unit | Number of passengers  |
-|  Definition | 20% more passengers use public transportation in 2025 compared to 2009.  |
-|  Calculation | Number of passengers using public transportation (Busses, metro, and trains) on workdays.  |
-|  Indicator Context |   |
-Climate Neutrality Action Plan
-
-2
-
-|  Does the indicator measure direct impacts | Yes  |
+| If yes, which action and impact pathway is it relevant for? | Fostering green mobility |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No |
+| Data requirements |  |
+| Expected data source | The City of Copenhagen. Annual mobility report and data from transport habit surveys to calculate trip shares. |
+| Is the data source local or regional/national? | Local |
+| Expected availability | Good |
+| Suggested collection interval | Annual |
+| References |  |
+| Deliverables describing the indicator | Publikationsdatabase (itera.dk) |
+| Other indicator systems using this indicator. | No |
+| Indicator Name | CPH2025-10. Fraction of trips to work or education carried out by bike. |
+| Indicator Unit | Number of trips |
+| Definition | 50 % of all trips to work or educational institutions in Copenhagen are made by bicycle. |
+| Calculation | Number of km travelled based on data from transport habit surveys |
+| Indicator Context |  |
+| Does the indicator measure direct impacts | Yes |
+| If yes, which emission source sectors does it measure? | Transport |
+| Does the indicator measure indirect impacts | No |
+| Is the indicator useful for monitoring the output/impact of action(s)? | Yes |
+| If yes, which action and impact pathway is it relevant for? | Fostering green mobility |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No |
+| Data requirements |  |
+| Expected data source | The City of Copenhagen. Annual mobility report and data from transport habit surveys to calculate trip shares. |
+| Is the data source local or regional/national? | Local |
+| Expected availability | Good |
+| Suggested collection interval | Annual |
+| References |  |
+| Deliverables describing the indicator | Publikationsdatabase (itera.dk) |
+| Other indicator systems using this indicator. | No |
+| Indicator Name | CPH2025-11. Number of passengers using public transportation. |
+| Indicator Unit | Number of passengers |
+| Definition | 20% more passengers use public transportation in 2025 compared to 2009. |
+| Calculation | Number of passengers using public transportation (Busses, metro, and trains) on workdays. |
+| Indicator Context |  |
+| Does the indicator measure direct impacts | Yes |
 | --- | --- |
-|  If yes, which emission source sectors does it measure? | Transport  |
-|  Does the indicator measure indirect impacts | No  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-|  If yes, which action and impact pathway is it relevant for? | Fostering green mobility  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No  |
-|  Data requirements |   |
-|  Expected data source | Passenger data are delivered by DSB, Movia, and the Copenhagen Metro.  |
-|  Is the data source local or regional/national? | Local  |
-|  Expected availability | Good  |
-|  Suggested collection interval | Annual  |
-|  References |   |
-|  Deliverables describing the indicator | Publikationsdatabase (itera.dk)  |
-|  Other indicator systems using this indicator. | No  |
-|  |   |
-|  Indicator Name | CPH2025-12. Energy status of public transportation  |
-|  Indicator Unit | Number of hours  |
-|  Definition | Public transportation (busses and harbour busses) is CO2-neutral in 2025.  |
-|  Calculation | Number of hours according to Movia’s time schedule.  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts | Yes  |
-|  If yes, which emission source sectors does it measure? | Transport  |
-|  Does the indicator measure indirect impacts | No  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-|  If yes, which action and impact pathway is it relevant for? | Fostering green mobility  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No  |
-|  Data requirements |   |
-|  Expected data source | Movia’s environmental reports.  |
-|  Is the data source local or regional/national? | Local  |
-|  Expected availability | Good  |
-|  Suggested collection interval | Annual  |
-|  References |   |
-|  Deliverables describing the indicator | Publikationsdatabase (itera.dk)  |
-|  Other indicator systems using this indicator. | No  |
-|  |   |
-|  Indicator Name | CPH2025-13. Use of new sustainable types of fuel by light vehicles.  |
-|  Indicator Unit | Number of vehicles.  |
-|  Definition | 20-30% of light vehicles are powered by electricity or hydrogen.  |
-|  Calculation | An absolute target for 2025, covering registered light vehicles in Copenhagen. New fuels are defined here as vehicles powered by electricity and hydrogen..  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts | Yes  |
+| If yes, which emission source sectors does it measure? | Transport |
+| Does the indicator measure indirect impacts | No |
+| Is the indicator useful for monitoring the output/impact of action(s)? | Yes |
+| If yes, which action and impact pathway is it relevant for? | Fostering green mobility |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No |
+| Data requirements |  |
+| Expected data source | Passenger data are delivered by DSB, Movia, and the Copenhagen Metro. |
+| Is the data source local or regional/national? | Local |
+| Expected availability | Good |
+| Suggested collection interval | Annual |
+| References |  |
+| Deliverables describing the indicator | Publikationsdatabase (itera.dk) |
+| Other indicator systems using this indicator. | No |
+| Indicator Name | CPH2025-12. Energy status of public transportation |
+| Indicator Unit | Number of hours |
+| Definition | Public transportation (busses and harbour busses) is CO2-neutral in 2025. |
+| Calculation | Number of hours according to Movia’s time schedule. |
+| Indicator Context |  |
+| Does the indicator measure direct impacts | Yes |
+| If yes, which emission source sectors does it measure? | Transport |
+| Does the indicator measure indirect impacts | No |
+| Is the indicator useful for monitoring the output/impact of action(s)? | Yes |
+| If yes, which action and impact pathway is it relevant for? | Fostering green mobility |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No |
+| Data requirements |  |
+| Expected data source | Movia’s environmental reports. |
+| Is the data source local or regional/national? | Local |
+| Expected availability | Good |
+| Suggested collection interval | Annual |
+| References |  |
+| Deliverables describing the indicator | Publikationsdatabase (itera.dk) |
+| Other indicator systems using this indicator. | No |
+| Indicator Name | CPH2025-13. Use of new sustainable types of fuel by light vehicles. |
+| Indicator Unit | Number of vehicles. |
+| Definition | 20-30% of light vehicles are powered by electricity or hydrogen. |
+| Calculation | An absolute target for 2025, covering registered light vehicles in Copenhagen. New fuels are defined here as vehicles powered by electricity and hydrogen.. |
+| Indicator Context |  |
+| Does the indicator measure direct impacts | Yes |
 a
 
 Climate Neutrality Action
@@ -1540,63 +1478,59 @@ Plan
 
 #
 
-|  If yes, which emission source sectors does it measure? | Transport  |
+| If yes, which emission source sectors does it measure? | Transport |
 | --- | --- |
-|  Does the indicator measure indirect impacts | No  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-|  If yes, which action and impact pathway is it relevant for? | Fostering green mobility  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No  |
-|  Data requirements |   |
-|  Expected data source | Statistics Denmark. Local data.  |
-|  Is the data source local or regional/national? | National  |
-|  Expected availability | Good  |
-|  Suggested collection interval | Annual  |
-|  References |   |
-|  Deliverables describing the indicator | Publikationsdatabase (itera.dk)  |
-|  Other indicator systems using this indicator. | No  |
-|  |   |
-|  Indicator Name | CPH2025-14. Use of new sustainable types of fuel by heavy vehicles.  |
-|  Indicator Unit | Number of vehicles.  |
-|  Definition | 30-40% of heavy vehicles are powered by electricity or hydrogen.  |
-|  Calculation | An absolute target for 2025, covering registered heavy vehicles in Copenhagen. New fuels are defined here as vehicles powered by electricity and hydrogen.  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts | Yes  |
-|  If yes, which emission source sectors does it measure? | Transport  |
-|  Does the indicator measure indirect impacts | No  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-|  If yes, which action and impact pathway is it relevant for? | Fostering green mobility  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No  |
-|  Data requirements |   |
-|  Expected data source | Statistics Denmark. Local data.  |
-|  Is the data source local or regional/national? | National  |
-|  Expected availability | Good  |
-|  Suggested collection interval | Annual  |
-|  References |   |
-|  Deliverables describing the indicator | Publikationsdatabase (itera.dk)  |
-|  Other indicator systems using this indicator. | No  |
-|  |   |
-|  Indicator Name | CPH2025-17. Number of the municipality’s vehicles using electricity, hydrogen, or biofuels.  |
-|  Indicator Unit | Number of vehicles.  |
-|  Definition | 100% of heavy vehicles are powered by electricity or hydrogen.  |
-Climate Neutrality Action Plan
-
-|  Calculation | An absolute goal for 2025. Applies only to the municipality's cars, vans, and small buses, but not trucks, buses, and off-road vehicles.  |
+| Does the indicator measure indirect impacts | No |
+| Is the indicator useful for monitoring the output/impact of action(s)? | Yes |
+| If yes, which action and impact pathway is it relevant for? | Fostering green mobility |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No |
+| Data requirements |  |
+| Expected data source | Statistics Denmark. Local data. |
+| Is the data source local or regional/national? | National |
+| Expected availability | Good |
+| Suggested collection interval | Annual |
+| References |  |
+| Deliverables describing the indicator | Publikationsdatabase (itera.dk) |
+| Other indicator systems using this indicator. | No |
+| Indicator Name | CPH2025-14. Use of new sustainable types of fuel by heavy vehicles. |
+| Indicator Unit | Number of vehicles. |
+| Definition | 30-40% of heavy vehicles are powered by electricity or hydrogen. |
+| Calculation | An absolute target for 2025, covering registered heavy vehicles in Copenhagen. New fuels are defined here as vehicles powered by electricity and hydrogen. |
+| Indicator Context |  |
+| Does the indicator measure direct impacts | Yes |
+| If yes, which emission source sectors does it measure? | Transport |
+| Does the indicator measure indirect impacts | No |
+| Is the indicator useful for monitoring the output/impact of action(s)? | Yes |
+| If yes, which action and impact pathway is it relevant for? | Fostering green mobility |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No |
+| Data requirements |  |
+| Expected data source | Statistics Denmark. Local data. |
+| Is the data source local or regional/national? | National |
+| Expected availability | Good |
+| Suggested collection interval | Annual |
+| References |  |
+| Deliverables describing the indicator | Publikationsdatabase (itera.dk) |
+| Other indicator systems using this indicator. | No |
+| Indicator Name | CPH2025-17. Number of the municipality’s vehicles using electricity, hydrogen, or biofuels. |
+| Indicator Unit | Number of vehicles. |
+| Definition | 100% of heavy vehicles are powered by electricity or hydrogen. |
+| Calculation | An absolute goal for 2025. Applies only to the municipality's cars, vans, and small buses, but not trucks, buses, and off-road vehicles. |
 | --- | --- |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts | Yes  |
-|  If yes, which emission source sectors does it measure? | Transport  |
-|  Does the indicator measure indirect impacts | No  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-|  If yes, which action and impact pathway is it relevant for? | Fostering green mobility  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No  |
-|  Data requirements |   |
-|  Expected data source | Data from the City of Copenhagen.  |
-|  Is the data source local or regional/national? | Local  |
-|  Expected availability | Good  |
-|  Suggested collection interval | Annual  |
-|  References |   |
-|  Deliverables describing the indicator | Publikationsdatabase (itera.dk)  |
-|  Other indicator systems using this indicator. | No  |
+| Indicator Context |  |
+| Does the indicator measure direct impacts | Yes |
+| If yes, which emission source sectors does it measure? | Transport |
+| Does the indicator measure indirect impacts | No |
+| Is the indicator useful for monitoring the output/impact of action(s)? | Yes |
+| If yes, which action and impact pathway is it relevant for? | Fostering green mobility |
+| Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No |
+| Data requirements |  |
+| Expected data source | Data from the City of Copenhagen. |
+| Is the data source local or regional/national? | Local |
+| Expected availability | Good |
+| Suggested collection interval | Annual |
+| References |  |
+| Deliverables describing the indicator | Publikationsdatabase (itera.dk) |
+| Other indicator systems using this indicator. | No |
 
 Table 15. CPH 2025 Climate Action plan indicators' metadata.
 
@@ -1659,30 +1593,30 @@ The CPH 2025 Climate Action plan aims at strengthening the quality of life for t
 
 Similarly, as part of an overall strategic goal to directly involve and engage key stakeholders, the City of Copenhagen has developed a suite of dedicated initiatives involving citizens, associations, and the private sector among others in a meaningful and inclusive way with the aim of preparing and subsequently implementing the Climate Action 2035 plan. Each of these initiatives has a particular purpose and stakeholder focus (see Table 16 and Table 17), but collectively they form a strong basis and prerequisite for fulfilling Copenhagen's ambitious climate goals for 2035. These key initiatives will be presented in the sections below.
 
-|  Primary purpose | Provide input and recommendations to the climate action plan | Engage stakeholders | Facilitate and enable local action | Compile and transfer knowledge  |
+| Primary purpose | Provide input and recommendations to the climate action plan | Engage stakeholders | Facilitate and enable local action | Compile and transfer knowledge |
 | --- | --- | --- | --- | --- |
-|  Citizens' Climate Assembly | X | X |  | X  |
-|  District Climate Summits | X | X | X | X  |
-|  Value Chain Cooperation | X | X |  | X  |
-|  Climate Ambassadors | X | X |  | X  |
-|  Climate Task Force (Integrated Urban Renewal) | X | X | X | X  |
-|  Energy Leap Partnership | X | X | X | X  |
-|  District Committees | X | X | X |   |
+| Citizens' Climate Assembly | X | X |  | X |
+| District Climate Summits | X | X | X | X |
+| Value Chain Cooperation | X | X |  | X |
+| Climate Ambassadors | X | X |  | X |
+| Climate Task Force (Integrated Urban Renewal) | X | X | X | X |
+| Energy Leap Partnership | X | X | X | X |
+| District Committees | X | X | X |  |
 
 Table 16. The primary purpose of some engagement and involvement activities.
 Climate Neutrality Action Plan
 
 #
 
-|  Primary stakeholder focus | Citizens | Young citizens | Private sector Commerce Business associations | Housing, cultural, and sports associations | Educational and R&D institutions  |
+| Primary stakeholder focus | Citizens | Young citizens | Private sector Commerce Business associations | Housing, cultural, and sports associations | Educational and R&D institutions |
 | --- | --- | --- | --- | --- | --- |
-|  Citizens' Climate Assembly | X | X |  |  |   |
-|  District Climate Summits | X | X | X | X | X  |
-|  Value Chain Cooperation |  |  | X |  | X  |
-|  Climate Ambassadors |  | X |  |  | X  |
-|  Climate Task Force (Integrated Urban Renewal) | X |  | X | X |   |
-|  Energy Leap Partnership |  |  | X | X |   |
-|  District Committees | X |  | X | X |   |
+| Citizens' Climate Assembly | X | X |  |  |  |
+| District Climate Summits | X | X | X | X | X |
+| Value Chain Cooperation |  |  | X |  | X |
+| Climate Ambassadors |  | X |  |  | X |
+| Climate Task Force (Integrated Urban Renewal) | X |  | X | X |  |
+| Energy Leap Partnership |  |  | X | X |  |
+| District Committees | X |  | X | X |  |
 
 Table 17. The primary stakeholder focus of some engagement and involvement activities.
 
@@ -2384,18 +2318,16 @@ O
 
 The table below enlists the signatories who are committing to this CCC, and thereby to help the city achieve its goal to reach climate neutrality by 2030. Specific agreements that articulate the details of the climate action(s) between the municipality and signatories are added to the individual contracts in Appendix 1.
 
-|  Name of the signatory (organisation) | Domain | Legal form | Name of the responsible person | Position of the responsible person  |
+| Name of the signatory (organisation) | Domain | Legal form | Name of the responsible person | Position of the responsible person |
 | --- | --- | --- | --- | --- |
-|  City of Copenhagen | Local | Municipality | Line Barfod | Mayor of Technical and Environmental Affairs  |
-|  City of Copenhagen | Local | Municipality | Karsten Biering Nielsen | Deputy Director, Technical and Environmental Administration  |
-|  City of Copenhagen | Local | Municipality | Charlotte Korsgaard | Head of Division, Technical and Environmental Administration  |
-|  HOFOR – Greater Copenhagen Utility | Regional | Municipally owned utility company | Henrik Plougmann Olsen | CEO  |
-|  BIOFOS – Wastewater Utility | Regional | Municipally owned utility company | John Buur Christiansen | CEO  |
-|  CTR – Metropolitan Copenhagen Heating Transmission Company | Regional | Municipally owned utility company | Randi Skogstad | CEO  |
-|  ARC – Amager Resource Centre | Regional | Municipally owned utility company | Jacob H. Simonsen
-Andreas Keil | CEO
-Chairman of the Board, City of Copenhagen  |
-Climate-Neutrality Commitments
-
-|  Energy Leap partnership | Local | Partnership | Mette Skovbjerg | Steering Committee Chair. Head of Division, Technical and Environmental Administration  |
+| City of Copenhagen | Local | Municipality | Line Barfod | Mayor of Technical and Environmental Affairs |
+| City of Copenhagen | Local | Municipality | Karsten Biering Nielsen | Deputy Director, Technical and Environmental Administration |
+| City of Copenhagen | Local | Municipality | Charlotte Korsgaard | Head of Division, Technical and Environmental Administration |
+| HOFOR – Greater Copenhagen Utility | Regional | Municipally owned utility company | Henrik Plougmann Olsen | CEO |
+| BIOFOS – Wastewater Utility | Regional | Municipally owned utility company | John Buur Christiansen | CEO |
+| CTR – Metropolitan Copenhagen Heating Transmission Company | Regional | Municipally owned utility company | Randi Skogstad | CEO |
+| ARC – Amager Resource Centre | Regional | Municipally owned utility company | Jacob H. Simonsen |  |
+| Andreas Keil | CEO |
+| Chairman of the Board, City of Copenhagen  |
+| Energy Leap partnership | Local | Partnership | Mette Skovbjerg | Steering Committee Chair. Head of Division, Technical and Environmental Administration |
 | --- | --- | --- | --- | --- |

@@ -1,3 +1,4 @@
+import json
 from pathlib import Path
 
 import pytest
@@ -74,7 +75,42 @@ def test_system_prompt_header_avoids_inline_allowed_ref_list() -> None:
     )
     assert "Allowed references for this turn:" not in header
     assert "present in that catalog" in header
-    assert "calculator tool is available" in header
+    assert "calculator tools are available" in header
+
+
+def test_chat_tool_definitions_include_all_calculator_tools() -> None:
+    expected_names = {
+        "sum_numbers",
+        "subtract_numbers",
+        "multiply_numbers",
+        "divide_numbers",
+    }
+    actual_names: set[str] = set()
+    for definition in context_chat.CHAT_TOOL_DEFINITIONS:
+        function_definition = definition.get("function")
+        if not isinstance(function_definition, dict):
+            continue
+        name = function_definition.get("name")
+        if isinstance(name, str):
+            actual_names.add(name)
+    assert actual_names == expected_names
+
+
+def test_normalize_subtract_numbers_args_returns_numeric_operands() -> None:
+    result = context_chat._normalize_subtract_numbers_args(
+        '{"minuend": 10, "subtrahend": "3.5"}'
+    )
+    assert result == (10.0, 3.5)
+
+
+def test_normalize_divide_numbers_args_rejects_missing_divisor() -> None:
+    with pytest.raises(ValueError, match="`divisor`"):
+        context_chat._normalize_divide_numbers_args('{"dividend": 12}')
+
+
+def test_normalize_multiply_numbers_args_rejects_malformed_json() -> None:
+    with pytest.raises(ValueError, match="valid JSON"):
+        context_chat._normalize_multiply_numbers_args("{bad-json")
 
 
 def test_generate_context_chat_reply_forwards_reasoning_effort(
@@ -195,3 +231,65 @@ def test_generate_context_chat_reply_rejects_citation_path_over_token_cap(
             api_key_override="sk-or-v1-test",
             citation_catalog=citation_catalog,
         )
+
+
+def test_run_chat_completion_with_tools_preserves_unsupported_tool_behavior() -> None:
+    class _DummyCompletions:
+        def __init__(self) -> None:
+            """Initialize counter and captured message buffer."""
+            self.call_count = 0
+            self.last_messages: list[dict[str, object]] = []
+
+        def create(
+            self,
+            messages: list[dict[str, object]],
+            **kwargs: object,
+        ) -> object:
+            """Return a tool-call response first, then a final response."""
+            _ = kwargs
+            self.call_count += 1
+            self.last_messages = list(messages)
+            if self.call_count == 1:
+                tool_call = type(
+                    "ToolCall",
+                    (),
+                    {
+                        "id": "call-1",
+                        "function": type(
+                            "Function",
+                            (),
+                            {"name": "unknown_tool", "arguments": "{}"},
+                        )(),
+                    },
+                )()
+                message = type("Message", (), {"content": "", "tool_calls": [tool_call]})()
+                choice = type("Choice", (), {"message": message})()
+                return type("Response", (), {"choices": [choice]})()
+            message = type("Message", (), {"content": "done", "tool_calls": []})()
+            choice = type("Choice", (), {"message": message})()
+            return type("Response", (), {"choices": [choice]})()
+
+    completions = _DummyCompletions()
+    client = type(
+        "DummyClient",
+        (),
+        {"chat": type("DummyChat", (), {"completions": completions})()},
+    )()
+
+    response = context_chat._run_chat_completion_with_tools(
+        client=client,
+        messages=[{"role": "user", "content": "test"}],
+        request_kwargs={},
+        max_tool_rounds=3,
+    )
+
+    assert completions.call_count == 2
+    assert response.choices[0].message.content == "done"
+    tool_messages = [
+        message
+        for message in completions.last_messages
+        if isinstance(message, dict) and message.get("role") == "tool"
+    ]
+    assert tool_messages
+    tool_payload = json.loads(str(tool_messages[-1]["content"]))
+    assert tool_payload == {"error": "Unsupported tool: unknown_tool"}

@@ -732,13 +732,13 @@ Climate Neutrality Action Plan
 1
 
 |   |  |  |  | 4. Increased knowledge for informed decisions
-Innovative partnerships that make a difference |   |
+| Innovative partnerships that make a difference |   |
 | --- | --- | --- | --- | --- | --- |
 |  Strategy | Regional | A Climate-neutral and fossil-free Skåne: Climate and energy strategy for Skåne
-(Ett klimatneutralt och fossilbränslefritt Skåne: Klimat- och energistrategi för Skåne) | Regional strategy with climate goals concerning energy, transport, construction industry, agriculture, | Supports development targets in Malmö, and provides framework for increased regional co-operation | Close practical working not least on regional mobility and electricity supply, but more action needed  |
+| (Ett klimatneutralt och fossilbränslefritt Skåne: Klimat- och energistrategi för Skåne) | Regional strategy with climate goals concerning energy, transport, construction industry, agriculture, | Supports development targets in Malmö, and provides framework for increased regional co-operation | Close practical working not least on regional mobility and electricity supply, but more action needed  |
 |   | Regional | Skåne’s Innovation Strategy | Identifies sustainable urban development and climate change as key areas for innovation and economic development | Links climate transition into regional economic development |   |
 |   | Regional | Regional transportation infrastructure for Skåne 2022-2033
-(Regional Transportinfrastruktur för Skåne 2022-2033) | Regional transport planning document for major infrastructure investment | Important strategic document for development of a coherent regional public transport and cycling infrastructure and to address road transport challenges |   |
+| (Regional Transportinfrastruktur för Skåne 2022-2033) | Regional transport planning document for major infrastructure investment | Important strategic document for development of a coherent regional public transport and cycling infrastructure and to address road transport challenges |   |
 |   | National | Environmental objectives
 (Regeringens 16 nationella miljökvalitetsmål) | The environmental objectives describe the quality of the environment that Sweden wishes to achieve. There are 16 objectives from unpolluted air and lakes free from eutrophication and acidification, to functioning forest and | Supports development targets in Malmö, and provides framework for increased national co-operation |   |
 2
@@ -1112,10 +1112,6 @@ C
 |   |  | # 4 Options appraisal, business plan development for enhance CHP capacity with replacement of one furnace in waste cogeneration plant | # 4 Planning and procurement | No data available, but will be by Oct 15th | # 4 If incinerated plastics are replaced with biofuels it creates possibilities for larger carbon sink in CCS plant  |
 |  Field of action | Systemic lever | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions | Indirect impacts (co-benefits)  |
 |  Mobility | Technology and infrastructure | # 1 In 2023 150 out of 210 city buses in Malmö are already electrified. Malmö Expressen's buses will be fully electrified and will | # 1 90% of the busses in Malmö are electrified | # 1 7 KT CO2e 0,6 g CO2-ekv/MJ | # 1 Less noise, possibility to drive busses in other areas than today due to the decrease of noise, less operational costs, higher efficiency  |
-Climate Neutrality Action Plan
-
-#
-
 |   |  | replace non-electric city buses as the lines are introduced |  |  |   |
 | --- | --- | --- | --- | --- | --- |
 |   | Technology and infrastructure | # 2 Increased travel via foot, bicycle and public transport |  | # 2 Reduced carbon dioxide emissions from transport | # 2 Increased accessibility to public transport  |
@@ -1126,8 +1122,6 @@ Climate Neutrality Action Plan
 |   | Technology and infrastructure |  | # 2 65% electric vehicles in 2027 | # Reduced carbon dioxide emissions | # Improved air quality  |
 |   | Governance & policy |  | # New standards for urban streetscapes established | Supports wider measures |   |
 |  ' | Governance & policy, Learning & capabilities | Designed concept for public awareness raising work to | # Increased take-up and use of new bus routes, cycleways etc | Supports wider measures | Improved public health, improved air quality, savings in fuel costs for citizens  |
-Climate Neutrality Action Plan
-
 |   |  | support behavioural change |  |  |   |
 | --- | --- | --- | --- | --- | --- |
 |   | Governance & policy, Democracy/participation | #1 Contribute to increased travel via foot, bicycle and public transport from mobility management campaigns |  | Supports wider measures |   |
@@ -1280,11 +1274,11 @@ C
 |   |  | 3) Influence how the revenue framework for the network companies works in order to indirectly control network investments/design of the local network.  |
 | --- | --- | --- |
 |   | Develop resilient energy system in Northern Harbour | 1) Feasibility study for a resilient and sustainable energy supply for industry in Malmö's port area.
-) Mapping as basis for a larger project application to create a system demonstrator.  |
+| ) Mapping as basis for a larger project application to create a system demonstrator.  |
 |   | Establish energy storage capacity | 1) Feasibility study identifying location options
-) initiating pilots with industry to expand knowledge of, for example, capacity-enhancing opportunities by utilising energy storage.  |
+| ) initiating pilots with industry to expand knowledge of, for example, capacity-enhancing opportunities by utilising energy storage.  |
 |   | Four place-based system demonstrators for flexible electricity systems | 1) Sege Park as first demonstrator for flexible electricity systems.
-) Test smart control using solar cells, batteries and a control system to cut power peaks and reduce emissions.  |
+| ) Test smart control using solar cells, batteries and a control system to cut power peaks and reduce emissions.  |
 |   | Cross-cutting costs development and management | Develop and co-ordinate activity with key partners and city departments  |
 |   | Climate Transition Roadmap co-ordination | Central management function for roadmap in Climate Transition Malmö  |
 |  Heating | Separation of plastics to remove fossil oil-based plastic from energy recovery system | Mechanical separation technology for plastics removal and recycling  |
@@ -1360,7 +1354,7 @@ C
 | --- | --- | --- |
 |   | Climate Transition Roadmap co-ordination | Central management function for roadmap in Climate Transition Malmö  |
 |  Low-carbon consumption | Design of support systems and services for low carbon lifestyles | 1) Development of lifestyle tool for raising knowledge and inspiration for behavioural change, implementation partnerships on thematic areas such as food, fashion, travel.
-) Neighbourhood-based sustainable action programme.  |
+| ) Neighbourhood-based sustainable action programme.  |
 |   | Cross-cutting costs development and management | Develop and co-ordinate activity with key partners and city departments.  |
 |   | Climate Transition Roadmap co-ordination | Central management function for roadmap in Climate Transition Malmö  |
 |  Net Zero Organisation | Net Zero Public Procurement | 1) Analysis of procurement and planned coming procurement to identify key areas with high climate impact, large volume and potential for change.
@@ -1402,7 +1396,7 @@ years: Increased local production of renewable electricity.  |
 |   |  Involved stakeholders | E.ON, the County Administrative Board (Länsstyrelsen)  |
 |   |  Comments on implementation | The Service Committee has submitted the application to the municipal council  |
 |  Impact & cost | Generated renewable energy (if applicable) | Solar energy: up to 300 GWh
-Wind energy: up to 149 GWh  |
+| Wind energy: up to 149 GWh  |
 |   |  Removed/substituted energy, volume or fuel type | 50 000 MWh/year  |
 |   | GHG emissions reduction estimate (total) per emission source sector |   |
 |   | Total costs and costs by CO2e unit | 232 MSEK for solar energy, batteries and smart control devices on 50% of the roofs owned by Stadsfastigheter.  |
@@ -1441,7 +1435,7 @@ C
 | --- | --- | --- |
 |   |  Action type | Technical development  |
 |   |  Action description | 1) Feasibility study for a resilient and sustainable energy supply for industry in Malmö's port area.
-) Mapping as basis for a larger project application to create a system demonstrator.  |
+| ) Mapping as basis for a larger project application to create a system demonstrator.  |
 |  Reference to impact pathway | Field of action | Electrical supply  |
 |   |  Systemic lever | Technology/infrastructure  |
 |   |  Outcome (according to module B-1.1) | Early outcomes: Full-scale project on a system demonstrator for a sustainable energy supply for industrial production in Malmö underway by end 2024.
@@ -1491,7 +1485,7 @@ C
 | --- | --- | --- |
 |   |  Action type | Technical development  |
 |   |  Action description | 1) Sege Park as first demonstrator for flexible electricity systems.
-) Test smart control using solar cells, batteries and a control system to cut power peaks and reduce emissions  |
+| ) Test smart control using solar cells, batteries and a control system to cut power peaks and reduce emissions  |
 |  Reference to impact pathway | Field of action | Electrical supply  |
 |   |  Systemic lever | Technology/infrastructure  |
 |   |  Outcome (according to module B-1.1) | Early outcomes:
@@ -1559,7 +1553,7 @@ Malmö stad
 |  Reference to impact pathway | Field of action | Heating  |
 |   |  Systemic lever | Technology/infrastructure  |
 |   |  Outcome (according to module B-1.1) | Early outcomes: #1 Options appraisal, business plan development and project planning
-Later outcomes: #1 Procurement complete  |
+| Later outcomes: #1 Procurement complete  |
 |  Implementation | Responsible bodies/person for implementation | SYSAV  |
 |   |  Action scale & addressed entities | Point emission intervention  |
 |   |  Involved stakeholders | SYSAV, Avfall Sverige, Malmö stad, CNetSS  |
@@ -1575,9 +1569,7 @@ Later outcomes: #1 Procurement complete  |
 |  Reference to impact pathway | Field of action | Heating  |
 |   |  Systemic lever | Technology/infrastructure  |
 |   |  Outcome (according to module B-1.1) | Early outcomes: #1 Market analysis and development of proposed solution
-Later outcomes: #1 Planning and procurement  |
-Climate Neutrality Action Plan
-
+| Later outcomes: #1 Planning and procurement  |
 |  Implementation | Responsible bodies/person for implementation | SYSAV  |
 | --- | --- | --- |
 |   |  Action scale & addressed entities | City-wide impact  |
@@ -1618,7 +1610,7 @@ Climate Neutrality Action Plan
 |  Reference to impact pathway | Field of action | Heating  |
 |   |  Systemic lever | Technology/infrastructure  |
 |   |  Outcome (according to module B-1.1) | Early outcomes: # 1 Options appraisal, business plan development
-Later outcomes: #1 Planning and procurement  |
+| Later outcomes: #1 Planning and procurement  |
 |  Implementation | Responsible bodies/person for implementation | SYSAV  |
 |   |  Action scale & addressed entities | Local  |
 |   |  Involved stakeholders | N/A  |
@@ -1634,7 +1626,7 @@ Later outcomes: #1 Planning and procurement  |
 |  Reference to impact pathway | Field of action | Mobility  |
 |   |  Systemic lever | Technology/infrastructure, Finance & funding  |
 |   |  Outcome (according to module B-1.1) | Early outcomes: #1 In 2023 150 out of 210 city buses in Malmö are already electrified. Malmö Expressen's buses will be fully electrified and will replace non-electric city buses as the lines are introduced.
-Later outcomes: #1 90% of the busses electrified  |
+| Later outcomes: #1 90% of the busses electrified  |
 |  Implementation | Responsible bodies/person for implementation | City of Malmö Property Management Department and Streets and Parks Department  |
 |   |  Action scale & addressed entities | City-wide  |
 |   |  Involved stakeholders | Skånetrafiken, Nobina  |
@@ -1905,10 +1897,6 @@ Later outcomes:
 # 1. Shared use contracts trialed and scaled  |
 |  Implementation | Responsible bodies/person for implementation | City of Malmö, Service Department  |
 |   |  Action scale & addressed entities | Buildings  |
-
-1
-Climate Neutrality Action Plan
-
 |   | Involved stakeholders | Real estate industry, real estate owners, Boverket (the Swedish National Board of Housing, Building and Planning)  |
 | --- | --- | --- |
 |   |  Comments on implementation | On-going  |
@@ -1970,10 +1958,6 @@ TBD, work in progress  |
 |  Action outline | Action name | Enabling urban development process  |
 | --- | --- | --- |
 |   |  Action type | Policy/strategy, digital solution  |
-
-3
-Climate Neutrality Action Plan
-
 |   | Action description | 1) Standardise and apply climate calculations at detailed plan level,
 ) Develop and apply requirements for climate neutrality in land transactions,
 ) Introduce requirements for re-use inventory before demolition permit and
@@ -1998,7 +1982,7 @@ Climate Neutrality Action Plan
 | --- | --- | --- |
 |   |  Action type | Business development, competence development and communication  |
 |   |  Action description | 1) Develop a plan for competence provision and
-) Increase competence and learning within the transition area throughout the organisation, exchange knowledge with other municipalities and regions  |
+| ) Increase competence and learning within the transition area throughout the organisation, exchange knowledge with other municipalities and regions  |
 |  Reference to impact pathway | Field of action | Climate-neutral building  |
 |   |  Systemic lever | Learning & capabilities  |
 |   |  Outcome (according to module B-1.1) | *Early outcomes:*
@@ -2028,17 +2012,13 @@ C
 |  Reference to impact pathway | Field of action | Circular economy  |
 |   |  Systemic lever | Technology/infrastructure  |
 |   |  Outcome (according to module B-1.1) | Early outcomes: # 1 Concept for local hub in national network developed
-Later outcomes: # 1 Pilot local hub in operation  |
+| Later outcomes: # 1 Pilot local hub in operation  |
 |  Implementation | Responsible bodies/person for implementation | City of Malmö, Environment Dept, RISE  |
 |   |  Action scale & addressed entities | Regional part of national system  |
 |   |  Involved stakeholders | City of Malmö, RISE, SYSAV, universities, SME (small and medium-sized enterprises), system owners (VA Syd, E.ON, waste companies) etc  |
 |   |  Comments on implementation | Concept development is ongoing  |
 |  Impact & cost | Generated renewable energy (if applicable) | N/A  |
 |   |  Removed/substituted energy, volume or fuel type | TBD  |
-
-5
-Climate Neutrality Action Plan
-
 |   | GHG emissions reduction estimate (total) per emission source sector | TBD  |
 | --- | --- | --- |
 |   | Total costs and costs by CO2e unit | Appr. 900 000 SEK for prestudy  |
@@ -2068,8 +2048,6 @@ Climate Neutrality Action Plan
 |   |  Involved stakeholders | Viable cities, Centre for Industrial symbiosis  |
 |   |  Comments on implementation | Early stage  |
 |  Impact & cost | Generated renewable energy (if applicable) | N/A  |
-Climate Neutrality Action Plan
-
 |   | Removed/substituted energy, volume or fuel type | TBD  |
 | --- | --- | --- |
 |   | GHG emissions reduction estimate (total) per emission source sector | TBD  |
@@ -2131,12 +2109,8 @@ C
 |  Action outline | Action name | Design of support systems and services for low carbon lifestyles  |
 | --- | --- | --- |
 |   |  Action type | Method development  |
-
-8
-Climate Neutrality Action Plan
-
 |   | Action description | 1) Development of lifestyle tool for raising knowledge and inspiration for behavioural change, implementation partnerships on thematic areas such as food, fashion, travel.
-) Neighbourhood based sustainable action programme.  |
+| ) Neighbourhood based sustainable action programme.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Low carbon consumption  |
 |   | Systemic lever | Democracy/participation, Technology/infrastructure  |
@@ -2268,8 +2242,6 @@ Module B-3 "Indicators for Monitoring, Evaluation and Learning" should contain a
 |   |   |   |   |   | 2025 | 2027 | 2030  |
 |  Increased local production of renewable electricity | Increase solar and wind production | 01.01 | % of the municipality's electricity use |  | 20% | 30% | 46%  |
 |  Balanced electrical system, Development | Establish energy storage capacity | 01.04 | Installed storage capacity gWh |  | TBD | TBD | TBD  |
-Climate Neutrality Action Plan
-
 |  strategy for energy storage adopted |  |  |  |  |  |  |   |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  More circular waste/resource management, System ready to be installed and tested | Separation of plastics to remove fossil oil based plastic from energy recovery system | 02.09 | % oil-based plastics as fuel (by weight) in waste-to-energy plant |  | 43% | 43% | 0%  |
@@ -2309,7 +2281,7 @@ C
 |  Indicator Context |   |
 |  Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | Yes  |
 |  If yes, which emission source sectors does it impact? | Fields of action according to GHG inventory format – Module A-1
-Electricity  |
+| Electricity  |
 |  Does the indicator measure indirect impacts (i.e. co-benefits)? | Yes  |
 |  If yes, which co-benefit does it measure? | Co-Benefits
 # 1 Increased energy balance  |
@@ -2320,7 +2292,7 @@ Climate Neutrality Action Plan
 6
 
 |   | # 2 Renewable electricity leads to lower electricity prices and financial savings
-# 3 Local renewable electricity supply frees up capacity for new industries and creates jobs  |
+| # 3 Local renewable electricity supply frees up capacity for new industries and creates jobs  |
 | --- | --- |
 |  Can the indicator be used for monitoring impact pathways? | Yes  |
 |  If yes, which NZC impact pathway is it relevant for? | Impact Pathways according to Module B-1 Electricity supply  |
@@ -2434,16 +2406,6 @@ Plan
 |  If yes, which co-benefit does it measure? | Co-Benefits: Increased accessibility to public transport  |
 |  Can the indicator be used for monitoring impact pathways? | Yes  |
 |  If yes, which NZC impact pathway is it relevant for? | Impact Pathways according to Module B-1 Mobility  |
-#
-
-Malmo
-
-Climate Neutrality Action
-
-Plan
-
-#
-
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No  |
 | --- | --- |
 |  Data requirements |   |
@@ -3183,8 +3145,6 @@ For private business purposes only. Not for public use.
 |  MKB Fastigeter | Public Housing Company | Limited company owned by the City of Malmö | Marie Thelander Dellhag | CEO  |
 |  Granitor Properties | Property development and management/develop and manage properties | Private Sector | Peter Syrén | CEO  |
 |  RISE | Independent state-owned Research Institute and innovation partner | Limited company owned by the Swedish state | Marco Lucisano | Division Manager  |
-9
-
 |  City of Malmö | 2030 Climate-Neutrality Commitments | NET ZERO CITIES  |
 | --- | --- | --- |
 |  E.ON | Energy Company/Smart grid/Innovating energy solutions | Private Sector

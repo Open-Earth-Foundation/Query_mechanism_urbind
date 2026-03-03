@@ -783,27 +783,26 @@ This Climate Change Risk Assessment (CCRA) report has been developed on the basi
 
 The CCRA report focuses on the direct risks posed by climate change for Dublin City and the implications of these for Dublin City Council. It is important to note that climate change will also pose indirect risks for Dublin City as a result of changes in climate conditions at international and global scales. These include amongst others forced migration of populations, increase in vector-borne disease and disruption of supply chains, Resulting in economic shocks with social consequences
 
-|  Table II A- 1.1: Final energy use by source sectors  |   |   |   |
-| --- | --- | --- | --- |
-|  Base year | 2018  |   |   |
-|  Unit | MWh  |   |   |
-|   | Scope 1 | Scope 2 | Scope 3  |
-|  Municipal Buildings | 56732.421 MWh | 50950.72 MWh | Will be reporting on by 2027  |
-|  (Fuel type/energy used) | Natural Gas - 55912.376 MWh
+Table II A- 1.1: Final energy use by source sectors
+Base year | 2018
+Unit | MWh
+Scope 1 | Scope 2 | Scope 3
+Municipal Buildings | 56732.421 MWh | 50950.72 MWh | Will be reporting on by 2027
+(Fuel type/energy used) | Natural Gas - 55912.376 MWh
 Heating Oil - 433.715 MWh
 Diesel - 386.33 MWh | Electricity - 50950.72 MWh |   |
-|  Non-Municipal Buildings | 1149581.9 MWh | 794197.51 MWh | NA  |
-|   |  | Electricity - 794197.51 MWh |   |
-|  Residential Buildings | 2722139.7503 | 65982.5347 | NA  |
-|   | Natural Gas - 11810207.276
+Non-Municipal Buildings | 1149581.9 MWh | 794197.51 MWh | NA
+Electricity - 794197.51 MWh
+Residential Buildings | 2722139.7503 | 65982.5347 | NA
+Natural Gas - 11810207.276
 Heating Oil - 215078.5468
 Coal - 109913.9275 | Electricity - 652982.5347 |   |
-|  Transport | 2024399 | 55983 |   |
-|  (Fuel type/energy used) | Diesel - 1184568
+Transport | 2024399 | 55983
+(Fuel type/energy used) | Diesel - 1184568
 Gasoline - 839832 | Electricity 55983 |   |
-|  Waste | NA |  |   |
-|  (Fuel type/energy used) |  |  |   |
-|  Industrial Process and |  | 401238.95 MWh |   |
+Waste | NA
+(Fuel type/energy used)
+Industrial Process and | 401238.95 MWh
 Comhalvia Cathrach
 Shalia Atha Clash
 Dublin City Council
@@ -881,17 +880,16 @@ Dublin City Council
 
 Climate Neutrality Action Plan
 
-|   |  |  | Statement on the Bioeconomy; Food Vision 2030 |  |   |
-| --- | --- | --- | --- | --- | --- |
-|  Transport | Dublin City Transport Plan 2023 | Greater Dublin Transport Study | Transport Sectoral Adaptation Plan;
+Statement on the Bioeconomy; Food Vision 2030
+Transport | Dublin City Transport Plan 2023 | Greater Dublin Transport Study | Transport Sectoral Adaptation Plan;
 National Sustainable Mobility Policy; Moving Together: A strategic approach to the improved efficiency of the transport system in Ireland (DRAFT)
 Smarter Travel – A Sustainable Transport Future
 Vehicle Registration Tax | Biofuels Obligation Scheme |   |
-|  Housing | Local Area Plans | Regional Spatial Economic Strategy | Housing for All; National Retrofit Plan | Energy Performance in Buildings Directive |   |
-|  Biodiversity | Biodiversity Action Plan; Greening Strategies |  | National Biodiversity Action Plan
+Housing | Local Area Plans | Regional Spatial Economic Strategy | Housing for All; National Retrofit Plan | Energy Performance in Buildings Directive
+Biodiversity | Biodiversity Action Plan; Greening Strategies | National Biodiversity Action Plan
 All Island Pollinator Plan | Nature Restoration Law ; EU Soil Mission, EU Oceans Missions | UN CBD  |
-|  Health | Active Cities – Sports Strategy | Regional Air Quality Plan; Regional Noise Plan | Health Sectoral Adaptation Plan | EU Cancer Mission | WHO Breath Life Campaign  |
-|  Cross-Sectoral | DCC Corporate Plan |  | CAP24; Ireland’s GHG Emissions Inventory 1990-2022; CCAC Annual Report; National Carbon Budget; LA CAP Guidelines; Ireland’s Long-term Strategy on Greenhouse Gas Emission Reduction |  | IPCC AR6; Global Stocktake; UN SDGs, UNCRD  |
+Health | Active Cities – Sports Strategy | Regional Air Quality Plan; Regional Noise Plan | Health Sectoral Adaptation Plan | EU Cancer Mission | WHO Breath Life Campaign
+Cross-Sectoral | DCC Corporate Plan | CAP24; Ireland’s GHG Emissions Inventory 1990-2022; CCAC Annual Report; National Carbon Budget; LA CAP Guidelines; Ireland’s Long-term Strategy on Greenhouse Gas Emission Reduction | IPCC AR6; Global Stocktake; UN SDGs, UNCRD
 #
 ComhaVia Cathrach
 Shalia Aihu Clash
@@ -2339,19 +2337,18 @@ Climate Neutrality Action
 Plan
 #
 
-|  |  | professional training body for surgery. | interdependencies between healthy environments and healthy people. |
-| --- | --- | --- | --- |
-| Mental Health Ireland, | MHI is the longest established | In the HSE Climate Action Strategy 2023-2050 the organisation makes clear their awareness of the health-related risks of climate change, as well as their plans to reduce operational emissions where possible through retrofitting suitable buildings, upgrading their fleet and delivery of greener models of healthcare. |
-| National Youth Council of Ireland | An Ireland where young people in every community are empowered through excellent youth work to realise their potential and actively participate in an inclusive society. |
-| Healthy Ireland | Healthy Ireland focuses on improving people's health and wellbeing. Its goal is to prevent chronic disease by encouraging healthy lifestyle behaviours and creating healthier environments. | The RCSI directly contribute to Dublin's Net Zero objectives by pledging to reach Net Zero themselves and also training healthcare professionals in manner which recognises the connection between sustainability and the environment and health and wellbeing. In addition, they contribute research and education in support of the SDGs, and through their Centre for Positive Health Sciences offer a free introductory course The Science of Health and Happiness. Sharing knowledge like this supports Net Zero ambitions through the social determinants of health approach. |
-| Irish Doctors for the Environment. | Irish Doctors for Environment is an NGO and registered charity consisting of doctors, medical students and allied healthcare professionals in Ireland who aim to create awareness, interest and implement action around environment health and the impact it has on our patients' health. |
-| Irish Heart Foundation | The Irish Heart Foundation supports and campaigns for people who have been affected by heart and strokes throughout their lives. |
-| Irish Medical Office | The role of the IMO is to represent doctors in Ireland and to provide them with all relevant services. It is committed to the development of a caring, efficient and effective Health Service. |
-| Energy | ESB | The ESB are responsible for the generation and distribution of energy in Ireland. | These organisations have responsibility for delivery of energy to homes and businesses across the city, as well as the decarbonisation of these systems. Meeting their obligations to provide renewable energy, and utilising the opportunity to upgrade infrastructure and introduce maintenance regimes that ensure the grid is future proofed, improve energy security and reduce energy poverty. |
-| Eirgrid | EirGrid's primary purposes are the daily management of the Irish national grid, the operation of the wholesale power market, and the development of high voltage infrastructure to serve Ireland's economy. They are the Transmission operator and responsible for projects over 40MW |
-| Commission for Regulation of Utilities (CRU) | The CRU regulates utilities such as the energy and water sectors |
-| Gas Networks Ireland (GNI) | GNI are responsible for the ownership and operation of the Gas Networks across the state. |
-| Bord Gais | Bord Gáis Energy is one of Ireland's leading energy supply and services providers, BGE have been serving Irish |
+professional training body for surgery. | interdependencies between healthy environments and healthy people.
+Mental Health Ireland, | MHI is the longest established | In the HSE Climate Action Strategy 2023-2050 the organisation makes clear their awareness of the health-related risks of climate change, as well as their plans to reduce operational emissions where possible through retrofitting suitable buildings, upgrading their fleet and delivery of greener models of healthcare.
+National Youth Council of Ireland | An Ireland where young people in every community are empowered through excellent youth work to realise their potential and actively participate in an inclusive society.
+Healthy Ireland | Healthy Ireland focuses on improving people's health and wellbeing. Its goal is to prevent chronic disease by encouraging healthy lifestyle behaviours and creating healthier environments. | The RCSI directly contribute to Dublin's Net Zero objectives by pledging to reach Net Zero themselves and also training healthcare professionals in manner which recognises the connection between sustainability and the environment and health and wellbeing. In addition, they contribute research and education in support of the SDGs, and through their Centre for Positive Health Sciences offer a free introductory course The Science of Health and Happiness. Sharing knowledge like this supports Net Zero ambitions through the social determinants of health approach.
+Irish Doctors for the Environment. | Irish Doctors for Environment is an NGO and registered charity consisting of doctors, medical students and allied healthcare professionals in Ireland who aim to create awareness, interest and implement action around environment health and the impact it has on our patients' health.
+Irish Heart Foundation | The Irish Heart Foundation supports and campaigns for people who have been affected by heart and strokes throughout their lives.
+Irish Medical Office | The role of the IMO is to represent doctors in Ireland and to provide them with all relevant services. It is committed to the development of a caring, efficient and effective Health Service.
+Energy | ESB | The ESB are responsible for the generation and distribution of energy in Ireland. | These organisations have responsibility for delivery of energy to homes and businesses across the city, as well as the decarbonisation of these systems. Meeting their obligations to provide renewable energy, and utilising the opportunity to upgrade infrastructure and introduce maintenance regimes that ensure the grid is future proofed, improve energy security and reduce energy poverty.
+Eirgrid | EirGrid's primary purposes are the daily management of the Irish national grid, the operation of the wholesale power market, and the development of high voltage infrastructure to serve Ireland's economy. They are the Transmission operator and responsible for projects over 40MW
+Commission for Regulation of Utilities (CRU) | The CRU regulates utilities such as the energy and water sectors
+Gas Networks Ireland (GNI) | GNI are responsible for the ownership and operation of the Gas Networks across the state.
+Bord Gais | Bord Gáis Energy is one of Ireland's leading energy supply and services providers, BGE have been serving Irish
 3
 
 ComhaVra Cathrach
@@ -2361,17 +2358,16 @@ Dublin City Council
 Climate Neutrality Action
 Plan
 
-|   |  | families and businesses for almost 50 years.
+families and businesses for almost 50 years.
 Today, as an integrated energy company, BGE is playing a leading role in Ireland's energy transition, committed to achieving net zero by 2045 and helping 700,000 customers reach net zero by 2050.
 BGE are doing this by investing in and developing net zero energy solutions across three core pillars: infrastructure; trading and retail. |   |
-| --- | --- | --- | --- |
-|   |  Large Industry Energy Users Network | LIEN members are companies with an annual energy spend of €1 million or more. SEAI work with these companies to improve their energy performance. We hope Ireland's larger companies will lead on the transition and inspire others to take action. LIEN members report annually on energy consumption and projects undertaken to help increase efficiency.  |   |
-|   |  Energy Associations | Renewable energy associations in Ireland include Wind Energy Ireland, Irish Solar Energy Association, Irish Bioenergy Association, Irish District Heating Association  |   |
-|   |  Encyclis (Waste Energy) | Encyclis is the operator of the Dublin Waste to Energy Facility and key part of Dublin District Heating Project  |   |
-|  Transport | NTA, | The NTA is responsible for developing and implementing strategies to provide high quality, accessible, sustainable transport across Ireland. | These bodies have responsibility for delivery of safe, connected and sustainable transport infrastructure and services across the city. Achieving vision zero, the national programme to reduce road fatalities; and creating a robust, reliable, and efficient public transport network. A sustainable transport system with less private cars and more public and active transport users is recognised as key component to reducing traffic congestion and associated issues in the city.  |
-|   |  Transport Infrastructure Ireland | The TII is a state agency dealing with road and public transport infrastructure  |   |
-|   |  Department of Transport | The DoT sets transport policy nationally.  |   |
-|   |  Roads Management Office | The RMO, provides Local Authorities in Ireland centralised supports, forums, guidelines and technology to support and foster:
+Large Industry Energy Users Network | LIEN members are companies with an annual energy spend of €1 million or more. SEAI work with these companies to improve their energy performance. We hope Ireland's larger companies will lead on the transition and inspire others to take action. LIEN members report annually on energy consumption and projects undertaken to help increase efficiency.
+Energy Associations | Renewable energy associations in Ireland include Wind Energy Ireland, Irish Solar Energy Association, Irish Bioenergy Association, Irish District Heating Association
+Encyclis (Waste Energy) | Encyclis is the operator of the Dublin Waste to Energy Facility and key part of Dublin District Heating Project
+Transport | NTA, | The NTA is responsible for developing and implementing strategies to provide high quality, accessible, sustainable transport across Ireland. | These bodies have responsibility for delivery of safe, connected and sustainable transport infrastructure and services across the city. Achieving vision zero, the national programme to reduce road fatalities; and creating a robust, reliable, and efficient public transport network. A sustainable transport system with less private cars and more public and active transport users is recognised as key component to reducing traffic congestion and associated issues in the city.
+Transport Infrastructure Ireland | The TII is a state agency dealing with road and public transport infrastructure
+Department of Transport | The DoT sets transport policy nationally.
+Roads Management Office | The RMO, provides Local Authorities in Ireland centralised supports, forums, guidelines and technology to support and foster:
 • improved roads asset management outcomes
 • best practice and capacity in Local Authorities
 • efficient management of road licensing activities
@@ -2438,18 +2434,17 @@ Climate Neutrality Action
 Plan
 #
 
-|  |  | policy.
+policy.
 The OPR also implement planning research, training and public awareness in order to promote the public's engagement in the planning process and to enhance knowledge and public information about planning in Ireland. |  |
-| --- | --- | --- | --- |
-| Irish Planning Institute | The Irish Planning Institute's mission is to advance planning in the interest of the common good by serving, improving and promoting the planning profession. |
-| Dublin Community Growers/Allotments Association | Supporting the expansion of community gardens in the city. A citywide support network for the development of community spaces for growing and sharing |
-| NPWS | The role of National Parks and Wildlife Service (NPWS) is:
+Irish Planning Institute | The Irish Planning Institute's mission is to advance planning in the interest of the common good by serving, improving and promoting the planning profession.
+Dublin Community Growers/Allotments Association | Supporting the expansion of community gardens in the city. A citywide support network for the development of community spaces for growing and sharing
+NPWS | The role of National Parks and Wildlife Service (NPWS) is:
 To secure the conservation of a representative range of ecosystems to maintain and enhance populations of flora and fauna in Ireland.
 To designate and advise on the protection of habitats and species identified for nature conservation (Natural Heritage Areas (NHA), Special Areas of Conservation (SAC) and Special Protection Areas (SPA) having particular regard to the need to consult with interested parties.
 To make the necessary arrangements for the implementation of National and EU legislation and policies for nature conservation and biodiversity including the EU Habitats and Birds Directives, and for the ratification and implementation of the range of international Conventions and Agreements relating to the natural heritage.
 To manage, maintain and develop State-owned National Parks and Nature Reserves.
 To promote awareness of natural heritage and biodiversity issues through education, outreach to schools and engaging with stakeholders. |
-| Cross Sectoral | OPW | The OPW is a government agency, which manages most of the Irish State's property portfolio, including hundreds of owned and rented Government offices and police properties, oversees National Monuments and directly manages some heritage properties, and is the lead State | All the stakeholders here have a vested interest in taking a systems approach to climate action both, mitigation and adaptation. Further each stakeholder brings with them expertise that is diverse and |
+Cross Sectoral | OPW | The OPW is a government agency, which manages most of the Irish State's property portfolio, including hundreds of owned and rented Government offices and police properties, oversees National Monuments and directly manages some heritage properties, and is the lead State | All the stakeholders here have a vested interest in taking a systems approach to climate action both, mitigation and adaptation. Further each stakeholder brings with them expertise that is diverse and
 
 7
 8
@@ -2487,16 +2482,9 @@ C
 |  Irish University Association | The Irish Universities Association is the representative voice of Ireland's research intensive, enterprise engaged, public universities.  |
 |  Digital Hub | The Digital Hub is a cluster of technology, digital media and internet companies in The Liberties area of Dublin, Ireland. The hub consists of almost 75 companies located in eight buildings, collectively employing 700 people.  |
 |  Dog Patch Labs | Dogpatch Labs is a startup hub, located in the historic chq Building and in the heart of Dublin's Digital Docklands. Dog Patch Lab's mission is to accelerate the development of Ireland's startup ecosystem by providing a valuable  |
-9
-Climate Neutrality Action Plan
-
 |   |  | community from where you can grow, share knowledge and form connections. |   |
 | --- | --- | --- | --- |
 |   |  Dublin City Education and Training Board | CETB provides, supports and coordinates education, training and youth services in Dublin City. Through the CETB services, there is a pathway for every learner. CETB promote Climate Action across a number of initiatives including Green Skills micro qualifications. |   |
-
-0
-Climate Neutrality Action Plan
-
 |  Domain | Energy Systems |   |   |   |   |   | Mobility & Transport |   |   |   |   |   | Waste & Circular Economy |   |   |   |   |   | NSS and Green Infrastructure |   |   |   |   |   | Built Environment  |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Levers | TI | GP | SI | DP | FF | LC | TI | GP | SI | DP | FF | LC | TI | GP | SI | DP | FF | LC | TI | GP | SI | DP | FF | LC | TI | GP | SI | DP | FF | LC  |
@@ -2579,13 +2567,12 @@ Dublin City Council
 Climate Neutrality Action
 Plan
 C
-|  |  |  | benefits of co-location of key critical infrastructure (Water treatment, Waste to Energy, and Energy Generation and Port) | electricity generation; | households |  |  |  |  |  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Learning & Capabilities | Increased opportunities to learn repair skills, cooking skills through Edible Dublin Food strategy | Emergence of social and circular businesses in | Reduction emissions at household level and food businesses | Employment and social cohesion; community wealth |  |  | X | X | X |
-| Increased opportunities to upskill in construction sector - Apprenticeships | Increased employment in retrofit sector | Reduction in emissions in household and commercial building sector | Employment; community wealth; social cohesion |  |  | X | X | X |
-| Democracy & participation | Community engagement in energy projects | Development and implementation of Community Energy project s with GAA and FSAI | Reduction in carbon intensity of energy system | Local employment; improved health outcomes | X |  |  |  |  |
-| Community engagement in retrofit projects | Menu of best practices for engaging communities in regeneration projects for social housing | Reduction in emissions built environment evidence through reduced energy use | Local employment; improved health outcomes; Improved social cohesion Increased biodiversity | X |  |  |  |  |
-| Resource-Full City | Governance & Policy | Policy prioritising investment in biodiversity | Create a comprehensive research and management plan | Increased sequestration potential | Reduce tidal action resulting in coastal protection from erosion |  |  |  | X |  |
+benefits of co-location of key critical infrastructure (Water treatment, Waste to Energy, and Energy Generation and Port) | electricity generation; | households
+Learning & Capabilities | Increased opportunities to learn repair skills, cooking skills through Edible Dublin Food strategy | Emergence of social and circular businesses in | Reduction emissions at household level and food businesses | Employment and social cohesion; community wealth | X | X | X
+Increased opportunities to upskill in construction sector - Apprenticeships | Increased employment in retrofit sector | Reduction in emissions in household and commercial building sector | Employment; community wealth; social cohesion | X | X | X
+Democracy & participation | Community engagement in energy projects | Development and implementation of Community Energy project s with GAA and FSAI | Reduction in carbon intensity of energy system | Local employment; improved health outcomes | X
+Community engagement in retrofit projects | Menu of best practices for engaging communities in regeneration projects for social housing | Reduction in emissions built environment evidence through reduced energy use | Local employment; improved health outcomes; Improved social cohesion Increased biodiversity | X
+Resource-Full City | Governance & Policy | Policy prioritising investment in biodiversity | Create a comprehensive research and management plan | Increased sequestration potential | Reduce tidal action resulting in coastal protection from erosion | X
 6
 #
 Comhatile Cathrach
@@ -2626,15 +2613,13 @@ Dublin City Council
 Climate Neutrality Action
 Plan
 C
-|   |  |  | supports citizen science | domains, and increase in sequestration | opportunities; reduced traffic and associated risks; improved air quality; water quality and noise levels; improved ecosystem health |  |  |  |  |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|   |  Learning & Capabilities | Establishment of community hubs in libraries that support repair skills development | Network of maker spaces; library of things | Reduction in emissions from waste | Improve economic opportunities, social cohesion |  |  | X |  |   |
-|   |   | Network for knowledge exchange established with IUA universities | Network expanded to include non IUA third level institutions |  | Improve economic opportunities, social cohesion |  |  |  |  |   |
-|   |  Democracy & participation | Co-creation workshops with citizens to create solutions for decarbonisation | Toolkit for co-creation created |  | Social cohesion; improved health and well-being; increased volunteering rates | X | X | X | X | X  |
-|  |   |   |   |   |   |   |   |   |   |   |
-|  Social City | Governance & Policy | Health in all policies through consideration of costs to human health | Normalised use of social determinants of health to assess policy impact (Climate readiness toolkit) | Increased sequestration of emissions, reduction of emissions in health sector | Improved health and well-being ; social cohesion |  |  |  |  |   |
-|   |   | Policy to allow red light cameras | Vulnerable Road user laws | Reduction in emissions from private cars on the road; | Increased safety and improved health and well-being; improved air quality |  |  |  |  |   |
-|   |  Finance & Funding | Investigation of finance mechanisms through insurance to support the | Increased funding for the delivery of high quality public realm, parks, and green spaces | Sequestration of emissions; reduce emissions from transport; | Increased safety and improved health and well-being; improved air quality; improved water quality; social cohesion; improved |  | X | X | X | X  |
+supports citizen science | domains, and increase in sequestration | opportunities; reduced traffic and associated risks; improved air quality; water quality and noise levels; improved ecosystem health
+Learning & Capabilities | Establishment of community hubs in libraries that support repair skills development | Network of maker spaces; library of things | Reduction in emissions from waste | Improve economic opportunities, social cohesion | X
+Network for knowledge exchange established with IUA universities | Network expanded to include non IUA third level institutions | Improve economic opportunities, social cohesion
+Democracy & participation | Co-creation workshops with citizens to create solutions for decarbonisation | Toolkit for co-creation created | Social cohesion; improved health and well-being; increased volunteering rates | X | X | X | X | X
+Social City | Governance & Policy | Health in all policies through consideration of costs to human health | Normalised use of social determinants of health to assess policy impact (Climate readiness toolkit) | Increased sequestration of emissions, reduction of emissions in health sector | Improved health and well-being ; social cohesion
+Policy to allow red light cameras | Vulnerable Road user laws | Reduction in emissions from private cars on the road; | Increased safety and improved health and well-being; improved air quality
+Finance & Funding | Investigation of finance mechanisms through insurance to support the | Increased funding for the delivery of high quality public realm, parks, and green spaces | Sequestration of emissions; reduce emissions from transport; | Increased safety and improved health and well-being; improved air quality; improved water quality; social cohesion; improved | X | X | X | X
 9
 #
 Comhatile Cathrach
@@ -2643,16 +2628,14 @@ Dublin City Council
 Climate Neutrality Action
 Plan
 C
-|   |  | delivery of high quality public realm, parks and greenspaces |  |  | economy |  |  |  |  |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|   |  Social Innovation | Development of best practice guidelines for re-use of materials in public realm and parks projects | Development of a material re-use database for street furniture | Reduction in emissions from construction waste | New economic opportunities – emergence of SMEs |  |  | X | X |   |
-|   |  Technology/ Infrastructure | Introduction of red-light cameras | Automated ticketing for road infractions | Reduced emissions from Transport | Increased safety; reduced traffic related risks |  | X |  |  |   |
-|   |  Learning & Capabilities | Pilot learning about climate action through play | Established programme linking play and climate action. | Reduced emissions from transport and the built environment | Improved health and well-being; social cohesion |  | X |  |  | X  |
-|   |  Democracy & participation | Establishment of a citizen led network for emergency preparedness | Embedded in emergency response plans |  | Improved health and well-being; social cohesion |  |  |  |  |   |
-|  |   |   |   |   |   |   |   |   |   |   |
-|  CNAP Actions | Governance & Policy | Improved communication of policy | Whole of society approach to climate action | Sequestration of emissions; reduce emissions from transport, built environment etc | Improved health and well-being; social cohesion | X | X | X | X | X  |
-|   |  Finance & Funding | Investigation of barriers to financing of climate action projects | Development of recommendations for unlocking barriers to climate finance | Sequestration of emissions; reduce emissions from transport, built environment etc |  | X | X | X | X | X  |
-|   |  Social Innovation | Deployment of EV ambulances | Transition of ambulance fleet | Reduced emissions from | Improved health and well-being; social |  |  |  |  |   |
+delivery of high quality public realm, parks and greenspaces | economy
+Social Innovation | Development of best practice guidelines for re-use of materials in public realm and parks projects | Development of a material re-use database for street furniture | Reduction in emissions from construction waste | New economic opportunities – emergence of SMEs | X | X
+Technology/ Infrastructure | Introduction of red-light cameras | Automated ticketing for road infractions | Reduced emissions from Transport | Increased safety; reduced traffic related risks | X
+Learning & Capabilities | Pilot learning about climate action through play | Established programme linking play and climate action. | Reduced emissions from transport and the built environment | Improved health and well-being; social cohesion | X | X
+Democracy & participation | Establishment of a citizen led network for emergency preparedness | Embedded in emergency response plans | Improved health and well-being; social cohesion
+CNAP Actions | Governance & Policy | Improved communication of policy | Whole of society approach to climate action | Sequestration of emissions; reduce emissions from transport, built environment etc | Improved health and well-being; social cohesion | X | X | X | X | X
+Finance & Funding | Investigation of barriers to financing of climate action projects | Development of recommendations for unlocking barriers to climate finance | Sequestration of emissions; reduce emissions from transport, built environment etc | X | X | X | X | X
+Social Innovation | Deployment of EV ambulances | Transition of ambulance fleet | Reduced emissions from | Improved health and well-being; social
 0
 #
 Comhatile Cathrach
@@ -2864,17 +2847,16 @@ Dublin City Council
 Climate Neutrality Action
 Plan
 C
-|  climate action plans | the Mission. Recognising their leadership in research and innovation collaboration and co-creation to accelerate the city’s transition if vital. |  |  |  |  |   |
-| --- | --- | --- | --- | --- | --- | --- |
-|  CCC6 - BUMBLEance Fleet Transition to EV | BUMBLEance is a unique service in the Irish Healthcare sector. It is a community ambulance serving disadvantaged communities, providing a transport service for sick children. The transition of their fleet of vehicle is an opportunity to demonstrate that emergency vehicles can be electrified and still deliver a high standard of reliable care. | No | Yes | No | No | No  |
-|  CCC7 - Exploration of Systemic Finance Architecture to achieve a robust circular Economy | Partnership with Centre for Public Impacts to deep dive into the challenge of attracting finance in various forms to support the delivering of housing projects that embed circular economy principles. | Yes | No | Yes | Yes | Yes  |
-|  CCC8 - Codling Wind Park | Codling Wind Park will be located approximately 13 – 22 kilometres off the coast of County Wicklow, between Greystones and Wicklow Town. The overall size of the array site is 125 km2.
+climate action plans | the Mission. Recognising their leadership in research and innovation collaboration and co-creation to accelerate the city’s transition if vital.
+CCC6 - BUMBLEance Fleet Transition to EV | BUMBLEance is a unique service in the Irish Healthcare sector. It is a community ambulance serving disadvantaged communities, providing a transport service for sick children. The transition of their fleet of vehicle is an opportunity to demonstrate that emergency vehicles can be electrified and still deliver a high standard of reliable care. | No | Yes | No | No | No
+CCC7 - Exploration of Systemic Finance Architecture to achieve a robust circular Economy | Partnership with Centre for Public Impacts to deep dive into the challenge of attracting finance in various forms to support the delivering of housing projects that embed circular economy principles. | Yes | No | Yes | Yes | Yes
+CCC8 - Codling Wind Park | Codling Wind Park will be located approximately 13 – 22 kilometres off the coast of County Wicklow, between Greystones and Wicklow Town. The overall size of the array site is 125 km2.
 
 Previously it had been had thought around 100 turbines would need to be constructed but, in April 2024, the project confirmed a maximum of 75 and a minimum of 60 turbines would now be required.
 
 Although this is a significant reduction in wind turbines, the development will still generate 1,300 megawatts (MW) of clean electricity, enough to power over one million Irish homes. | Yes | No | No | No | No  |
-|  CCC9 – Bus Connects: Dublin Network Redesign | The overall network represents a major investment in enhanced bus services, delivering a 35% increase in annual “in-service” kilometres, a significant increase in overall capacity and frequency for customers, as well as more evening and weekend services. This new bus network plan took into account issues raised by over 72,000 submissions at the various stages of public consultation. The implementation of the new network, known as the Dublin Network Redesign Project, is being delivered in phases over a number of years, and commenced in 2021. | No | Yes | No | No | No  |
-|  CCC10 – Dart Plus | DART+ is the transformative programme that will ensure train travel is at the heart of Ireland’s sustainable transport network. Funded under the National Development Plan by the National Transport Authority, DART+ is an investment that will double the capacity and treble the electrification of the Greater Dublin Area network, facilitating sustainable mobility and development to enhance quality of life in our capital and its surrounding counties. The overall programme will provide electrification of lines on DART+ West to Maynooth/M3 Parkway, on DART+ South-West to Hazelhatch and DART+ Coastal North to Drogheda. DART+ Coastal South will also see key infrastructure works as far as Greystones to allow more | No | Yes | No | No | No  |
+CCC9 – Bus Connects: Dublin Network Redesign | The overall network represents a major investment in enhanced bus services, delivering a 35% increase in annual “in-service” kilometres, a significant increase in overall capacity and frequency for customers, as well as more evening and weekend services. This new bus network plan took into account issues raised by over 72,000 submissions at the various stages of public consultation. The implementation of the new network, known as the Dublin Network Redesign Project, is being delivered in phases over a number of years, and commenced in 2021. | No | Yes | No | No | No
+CCC10 – Dart Plus | DART+ is the transformative programme that will ensure train travel is at the heart of Ireland’s sustainable transport network. Funded under the National Development Plan by the National Transport Authority, DART+ is an investment that will double the capacity and treble the electrification of the Greater Dublin Area network, facilitating sustainable mobility and development to enhance quality of life in our capital and its surrounding counties. The overall programme will provide electrification of lines on DART+ West to Maynooth/M3 Parkway, on DART+ South-West to Hazelhatch and DART+ Coastal North to Drogheda. DART+ Coastal South will also see key infrastructure works as far as Greystones to allow more | No | Yes | No | No | No
 2
 #
 Comhatile Cathrach
@@ -2996,16 +2978,15 @@ Dublin City Council
 Climate Neutrality Action
 Plan
 C
-|
-| EP27 EU Funding | Apply for EU funding to undertake innovative climate action projects and build partnerships. | Yes | Yes | Yes | Yes | Yes |
-| EP28 City Partnerships | Build partnerships with cities internationally to exchange best practice for climate action and implement learnings into all future plans and projects. | Yes | Yes | Yes | Yes | Yes |
-| EP29 UNESCO Biosphere | Implement and promote the objectives of the Dublin Bay UNESCO Biosphere Partnership and promote the work of the Biosphere | No | No | No | Yes | No |
-| EP30 Dublin Mountains Partnership | Work with the Dublin Mountains Partnership on implementing strategic plans and activities for Climate Change mitigation and biodiversity enhancement. | No | No | No | Yes | No |
-| EP31 Public Service Innovation Week | Public Service Innovation Week, host annual | Yes | Yes | Yes | Yes | Yes |
-| EP32 SuDS Retrofit events | Promote and encourage community involvement in the retrofit of SuDS in existing developments; having due regard to environmental sensitivities such as Archaeology, European sites, biodiversity and amenity value etc. | Yes | Yes | Yes | Yes | Yes |
-| Implementation Actions | IM1 – Oversight by Steering Group | Proactive collaboration across internal departments, and with external agencies and organisations to implement and monitor the impacts of this climate action plan requires strong leadership from senior management. A Steering Group chaired by the Chief Executive to oversee the overall direction of progress and ensure that Dublin City Council, as an organisation is a leading light in decarbonisation, embedding climate resilience, facilitating co-benefits for climate and other environmental factors, and principles of equity in our operations and service delivery has been established. The Steering Group will ensure that internal structures are in place to foster ownership, accountability, and delivery of actions and projects are resourced; and provide quarterly reports to elected members via Strategic Policy Committees, and annually to the full Council. | Yes | Yes | Yes | Yes | Yes |
-| IM2 – Challenge Led Approach | Recognising the limitations of “change-as-usual”, our Plan is taking a challenge led approach to foster better coordination and increased engagement; and to unleash the collective intelligence of a variety of actors impacted by, and responsible for the change to be realised by our plan. | Yes | Yes | Yes | Yes | Yes |
-| IM3 – Monitoring | Without monitoring we will not know how we are progressing, what is working or not, and who we need to engage to implement changes necessary for climate neutrality. The actions in our plan are linked to headline indicators and sub indicators as well as our targets. Together the data from these indicators and targets provide a picture and a story of the | Yes | Yes | Yes | Yes | Yes |
+EP27 EU Funding | Apply for EU funding to undertake innovative climate action projects and build partnerships. | Yes | Yes | Yes | Yes | Yes
+EP28 City Partnerships | Build partnerships with cities internationally to exchange best practice for climate action and implement learnings into all future plans and projects. | Yes | Yes | Yes | Yes | Yes
+EP29 UNESCO Biosphere | Implement and promote the objectives of the Dublin Bay UNESCO Biosphere Partnership and promote the work of the Biosphere | No | No | No | Yes | No
+EP30 Dublin Mountains Partnership | Work with the Dublin Mountains Partnership on implementing strategic plans and activities for Climate Change mitigation and biodiversity enhancement. | No | No | No | Yes | No
+EP31 Public Service Innovation Week | Public Service Innovation Week, host annual | Yes | Yes | Yes | Yes | Yes
+EP32 SuDS Retrofit events | Promote and encourage community involvement in the retrofit of SuDS in existing developments; having due regard to environmental sensitivities such as Archaeology, European sites, biodiversity and amenity value etc. | Yes | Yes | Yes | Yes | Yes
+Implementation Actions | IM1 – Oversight by Steering Group | Proactive collaboration across internal departments, and with external agencies and organisations to implement and monitor the impacts of this climate action plan requires strong leadership from senior management. A Steering Group chaired by the Chief Executive to oversee the overall direction of progress and ensure that Dublin City Council, as an organisation is a leading light in decarbonisation, embedding climate resilience, facilitating co-benefits for climate and other environmental factors, and principles of equity in our operations and service delivery has been established. The Steering Group will ensure that internal structures are in place to foster ownership, accountability, and delivery of actions and projects are resourced; and provide quarterly reports to elected members via Strategic Policy Committees, and annually to the full Council. | Yes | Yes | Yes | Yes | Yes
+IM2 – Challenge Led Approach | Recognising the limitations of “change-as-usual”, our Plan is taking a challenge led approach to foster better coordination and increased engagement; and to unleash the collective intelligence of a variety of actors impacted by, and responsible for the change to be realised by our plan. | Yes | Yes | Yes | Yes | Yes
+IM3 – Monitoring | Without monitoring we will not know how we are progressing, what is working or not, and who we need to engage to implement changes necessary for climate neutrality. The actions in our plan are linked to headline indicators and sub indicators as well as our targets. Together the data from these indicators and targets provide a picture and a story of the | Yes | Yes | Yes | Yes | Yes
 8
 #
 Comhatile Cathrach
@@ -3588,34 +3569,32 @@ Plan
 
 #
 
-|  Action outline | Action name | RF2.2 Camac River Restoration  |
-| --- | --- | --- |
-|   |  Action type |   |
-|   |  Action description | To meet the Water Framework Directive (WFD) obligation of achieving ‘good’ status for all rivers, DCC has a number of ongoing projects to address both water quality and flood risk; these include a project to de-culvert the River Camac, restoring the river to a more natural state over time is beneficial. The project will also involve identifying and remedying urban pollution sources. This is also being done in conjunction with an existing Greenway proposal, in tandem with Urban Regeneration and Development Fund (URDF) funded projects in the area.  |
-|  Reference to impact pathway | Field of action | Nature Based Solutions, Built Environment  |
-|   |  Systemic lever | Technology/Infrastructure, Governance and Policy  |
-|   |  Outcome (according to module B-1.1) | Holistic restoration of Camac, in order to alleviate flooding and restore historical features, with the aim of reducing flooding and urban heat effects. Stronger finance commitments for adaptation projects using NBS.  |
-|  Implementation | Responsible bodies/person for implementation | Dublin City Council, South Dublin County Council, OPW,  |
-|   |  Action scale & addressed entities | Camac River Catchment  |
-|   |  Involved stakeholders | Community, Academia, LAWPRO, Irish Rail, Failte Ireland,  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | Silo'd departments at national level, project finance  |
-|  Impact & cost | Generated renewable energy (if applicable) | NA  |
-|   |  Removed/substituted energy, volume, or fuel type | NA  |
-|   | GHG emissions reduction estimate (total) per emission source sector | Conservation will reduce AFOLU emissions  |
-|   |  GHG emissions compensated (natural or technological sinks) | Natural Sinks ; CDR  |
-|   |  Total costs and costs by CO2e unit | €4,200,000  |
-|  B-2.2.18: Individual action outlines  |   |   |
-| --- | --- | --- |
-|  Action outline | Action name | RF2.3 The Liffey a Place for Leisure  |
-|   |  Action type |   |
-|   |  Action description | Improvement of River Liffey to create social opportunities and to reduce flooding and heat risk.  |
-|  Reference to impact pathway | Field of action | Nature Based Solutions, Built Environment  |
-|   |  Systemic lever | Technology/Infrastructure, Governance and Policy  |
-|   |  Outcome (according to module B-1.1) | Improved water quality, return of biodiversity to the river.  |
-|  Implementation | Responsible bodies/person for implementation | Dublin City Council, OPW, DHLGH, Dublin Port, Sports Clubs, NPWS  |
-|   |  Action scale & addressed entities | River Liffey Catchment  |
-|   |  Involved stakeholders | Community, Academia, LAWPRO, Irish Nautical Trust.  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | Built environment and heritage considerations. Finance.  |
+Action outline | Action name | RF2.2 Camac River Restoration
+Action type
+Action description | To meet the Water Framework Directive (WFD) obligation of achieving ‘good’ status for all rivers, DCC has a number of ongoing projects to address both water quality and flood risk; these include a project to de-culvert the River Camac, restoring the river to a more natural state over time is beneficial. The project will also involve identifying and remedying urban pollution sources. This is also being done in conjunction with an existing Greenway proposal, in tandem with Urban Regeneration and Development Fund (URDF) funded projects in the area.
+Reference to impact pathway | Field of action | Nature Based Solutions, Built Environment
+Systemic lever | Technology/Infrastructure, Governance and Policy
+Outcome (according to module B-1.1) | Holistic restoration of Camac, in order to alleviate flooding and restore historical features, with the aim of reducing flooding and urban heat effects. Stronger finance commitments for adaptation projects using NBS.
+Implementation | Responsible bodies/person for implementation | Dublin City Council, South Dublin County Council, OPW,
+Action scale & addressed entities | Camac River Catchment
+Involved stakeholders | Community, Academia, LAWPRO, Irish Rail, Failte Ireland,
+Comments on implementation – consider mentioning resources, timelines, milestones | Silo'd departments at national level, project finance
+Impact & cost | Generated renewable energy (if applicable) | NA
+Removed/substituted energy, volume, or fuel type | NA
+GHG emissions reduction estimate (total) per emission source sector | Conservation will reduce AFOLU emissions
+GHG emissions compensated (natural or technological sinks) | Natural Sinks ; CDR
+Total costs and costs by CO2e unit | €4,200,000
+B-2.2.18: Individual action outlines
+Action outline | Action name | RF2.3 The Liffey a Place for Leisure
+Action type
+Action description | Improvement of River Liffey to create social opportunities and to reduce flooding and heat risk.
+Reference to impact pathway | Field of action | Nature Based Solutions, Built Environment
+Systemic lever | Technology/Infrastructure, Governance and Policy
+Outcome (according to module B-1.1) | Improved water quality, return of biodiversity to the river.
+Implementation | Responsible bodies/person for implementation | Dublin City Council, OPW, DHLGH, Dublin Port, Sports Clubs, NPWS
+Action scale & addressed entities | River Liffey Catchment
+Involved stakeholders | Community, Academia, LAWPRO, Irish Nautical Trust.
+Comments on implementation – consider mentioning resources, timelines, milestones | Built environment and heritage considerations. Finance.
 #
 
 Comhainia Cathrach
@@ -3692,24 +3671,23 @@ Climate Neutrality Action
 Plan
 C
 
-|  Action outline | Action name | C1.1 Parnell Square Cultural Quarter  |
-| --- | --- | --- |
-|   | Action type |   |
-|   | Action description | Development of a dynamic cultural space that will contribute to a vibrant and inclusive city centre, including a City Library. The project will deliver 5,500 square metres of modern, bright open spaces for reading and lending, as well as a variety of spaces for studying, working, meeting, creating and performing. Facilities will include a welcoming library for children and young adults, a makerspace, meeting rooms and study spaces, as well as a multi-purpose conference centre, a café and exhibition areas.
+Action outline | Action name | C1.1 Parnell Square Cultural Quarter
+Action type
+Action description | Development of a dynamic cultural space that will contribute to a vibrant and inclusive city centre, including a City Library. The project will deliver 5,500 square metres of modern, bright open spaces for reading and lending, as well as a variety of spaces for studying, working, meeting, creating and performing. Facilities will include a welcoming library for children and young adults, a makerspace, meeting rooms and study spaces, as well as a multi-purpose conference centre, a café and exhibition areas.
 
 The proposed development also includes the initial redevelopment of one of the Georgian houses at Number 27 Parnell Square West, and a new public plaza created in front of the city library buildings and the Hugh Lane Gallery.  |
-|  Reference to impact pathway | Field of action | Built Environment  |
-|   | Systemic lever | Technology/Infrastructure, Policy & Governance, Learning & Capabilities  |
-|   | Outcome (according to module B-1.1) |   |
-|  Implementation | Responsible bodies/person for implementation | Dublin City Council, DTCAGSM  |
-|   | Action scale & addressed entities | North East Inner City.  |
-|   | Involved stakeholders | Parnell Square Foundation, Architects, Utility networks.  |
-|   | Comments on implementation – consider mentioning resources, timelines, milestones | Funding due to rising costs of construction.  |
-|  Impact & cost | Generated renewable energy (if applicable) | Building will be to NZEB standard; Solar PV and other micro generation to be considered  |
-|   | Removed/substituted energy, volume, or fuel type | Renewables  |
-|   | GHG emissions reduction estimate (total) per emission source sector | TBD  |
-|   | GHG emissions compensated (natural or technological sinks) | Greening will sequester carbon.  |
-|   | Total costs and costs by CO2e unit | €105,000,000 (2024-2026)  |
+Reference to impact pathway | Field of action | Built Environment
+Systemic lever | Technology/Infrastructure, Policy & Governance, Learning & Capabilities
+Outcome (according to module B-1.1)
+Implementation | Responsible bodies/person for implementation | Dublin City Council, DTCAGSM
+Action scale & addressed entities | North East Inner City.
+Involved stakeholders | Parnell Square Foundation, Architects, Utility networks.
+Comments on implementation – consider mentioning resources, timelines, milestones | Funding due to rising costs of construction.
+Impact & cost | Generated renewable energy (if applicable) | Building will be to NZEB standard; Solar PV and other micro generation to be considered
+Removed/substituted energy, volume, or fuel type | Renewables
+GHG emissions reduction estimate (total) per emission source sector | TBD
+GHG emissions compensated (natural or technological sinks) | Greening will sequester carbon.
+Total costs and costs by CO2e unit | €105,000,000 (2024-2026)
 
 B-2.2.21: Individual action outlines
 
@@ -3847,22 +3825,20 @@ Plan
 
 B-2.2.26: Individual action outlines
 
-|  |   |   |
-| --- | --- | --- |
-|  Action outline | Action name | C3.2 Climate Smart Districts  |
-|   |  Action type |   |
-|   |  Action description | • Smart Dublin ‘Districts’ are strategically selected locations where innovation projects are fast-tracked. Smart Districts are designed collaboratively with citizens, industry, academia and the Local Authority. • In 2018 Dublin City Council launched the first ever Smart Dublin District ‘Smart Docklands’. • Smart Docklands is an award-winning smart city test-bed that provides a unique platform for innovators and entrepreneurs to develop new and innovative solutions.  |
-|  Reference to impact pathway | Field of action | Mobility & Transport, Green Industry  |
-|   |  Systemic lever | Technology & Infrastructure, Policy & Governance, Democracy/Participation, Finance & Funding  |
-|   |  Outcome (according to module B-1.1) | Supporting increased resilience through technological innovation, include monitoring of climate measurements such as air quality, biodiversity, etc.  |
-|  Implementation | Responsible bodies/person for implementation | Dublin City Council, Smart Dublin, Technology Companies, Academia  |
-|   |  Action scale & addressed entities | City Wide  |
-|   |  Involved stakeholders |   |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | Key challenge has been the scaling up of projects due to procurement and lack of investment  |
-|  Impact & cost | Generated renewable energy (if applicable) | Where feasible Solar PV, heat pumps  |
-|   |  Removed/substituted energy, volume, or fuel type | Reduced demand on the grid  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 80% reduction in emissions from all sectors  |
-|   |  GHG emissions compensated (natural or technological sinks) | Increased greening in the area will contribute to carbon dioxide removal  |
+Action outline | Action name | C3.2 Climate Smart Districts
+Action type
+Action description | • Smart Dublin ‘Districts’ are strategically selected locations where innovation projects are fast-tracked. Smart Districts are designed collaboratively with citizens, industry, academia and the Local Authority. • In 2018 Dublin City Council launched the first ever Smart Dublin District ‘Smart Docklands’. • Smart Docklands is an award-winning smart city test-bed that provides a unique platform for innovators and entrepreneurs to develop new and innovative solutions.
+Reference to impact pathway | Field of action | Mobility & Transport, Green Industry
+Systemic lever | Technology & Infrastructure, Policy & Governance, Democracy/Participation, Finance & Funding
+Outcome (according to module B-1.1) | Supporting increased resilience through technological innovation, include monitoring of climate measurements such as air quality, biodiversity, etc.
+Implementation | Responsible bodies/person for implementation | Dublin City Council, Smart Dublin, Technology Companies, Academia
+Action scale & addressed entities | City Wide
+Involved stakeholders
+Comments on implementation – consider mentioning resources, timelines, milestones | Key challenge has been the scaling up of projects due to procurement and lack of investment
+Impact & cost | Generated renewable energy (if applicable) | Where feasible Solar PV, heat pumps
+Removed/substituted energy, volume, or fuel type | Reduced demand on the grid
+GHG emissions reduction estimate (total) per emission source sector | 80% reduction in emissions from all sectors
+GHG emissions compensated (natural or technological sinks) | Increased greening in the area will contribute to carbon dioxide removal
 #
 
 Comhainia Cathrach
@@ -3912,20 +3888,19 @@ Plan
 
 #
 
-|  B-2.2.30: Individual action outlines  |   |   |
-| --- | --- | --- |
-|  Action outline | Action name | S2.1 Sustainable Energy Communities  |
-|   |  Action type |   |
-|   |  Action description | Dublin City Council administers funds from the Sustainable Energy Authority of Ireland to provide support to communities in developing a sustainable energy community plan that includes actions addressing energy, transport, biodiversity, circular economy and just transition. Communities are supported by an energy consultant to learn about what they can do, and to develop an energy master plan, from which to apply for additional grant funding.  |
-|  Reference to impact pathway | Field of action | Mobility and Transport; Energy  |
-|   |  Systemic lever | Finance & Funding
+B-2.2.30: Individual action outlines
+Action outline | Action name | S2.1 Sustainable Energy Communities
+Action type
+Action description | Dublin City Council administers funds from the Sustainable Energy Authority of Ireland to provide support to communities in developing a sustainable energy community plan that includes actions addressing energy, transport, biodiversity, circular economy and just transition. Communities are supported by an energy consultant to learn about what they can do, and to develop an energy master plan, from which to apply for additional grant funding.
+Reference to impact pathway | Field of action | Mobility and Transport; Energy
+Systemic lever | Finance & Funding
 Democracy/ Participation
 Social Innovation  |
-|   |  Outcome (according to module B-1.1) |   |
-|  Implementation | Responsible bodies/person for implementation | Dublin City Council  |
-|   |  Action scale & addressed entities | City wide  |
-|   |  Involved stakeholders | Sustainable Energy Authority of Ireland, Communities, Codema  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | A challenge for communities is moving from plan phase to do phase. Acknowledging that this a challenge DCC is supporting a service design projected funded by Creative Ireland to identify the barriers and generate solutions to empower and enable communities to enact their plans.  |
+Outcome (according to module B-1.1)
+Implementation | Responsible bodies/person for implementation | Dublin City Council
+Action scale & addressed entities | City wide
+Involved stakeholders | Sustainable Energy Authority of Ireland, Communities, Codema
+Comments on implementation – consider mentioning resources, timelines, milestones | A challenge for communities is moving from plan phase to do phase. Acknowledging that this a challenge DCC is supporting a service design projected funded by Creative Ireland to identify the barriers and generate solutions to empower and enable communities to enact their plans.
 #
 
 Comhainia Cathrach
@@ -3940,36 +3915,32 @@ Plan
 
 #
 
-|  |   |   |
-| --- | --- | --- |
-|  Impact & cost | Generated renewable energy (if applicable) | Likely Solar PV, as this is technology supported by grants  |
-|   |  Removed/substituted energy, volume, or fuel type | Reduced demand on the grid  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | Reduced emissions from all sectors  |
-|   |  GHG emissions compensated (natural or technological sinks) | Increased greening in the area will contribute to carbon dioxide removal  |
-|   |  Total costs and costs by CO2e unit | €400,000  |
-|  B-2.2.31 Individual action outlines  |   |   |
-| --- | --- | --- |
-|  Action outline | Action name | S2.2 Quiet Areas  |
-|   |  Action type |   |
-|   |  Action description | Quiet Areas in an urban agglomeration context are not necessarily areas without or with reduced noise. They may have a range of other qualifying characteristics which when combined with their low environmental sound levels (as identified by the noise mapping process) mean they can provide people with a more tranquil space to visit, away from the noisier areas of the city. Through our noise action plan, Dublin City Council will be increasing the number of quiet areas in the city. At present we have 8, where residents have noted improved quality of life due to reduce noise levels stemming from traffic and construction.  |
-|  Reference to impact pathway | Field of action | Mobility and Transport; Greening  |
-|   |  Systemic lever | Governance & Policy  |
-|   |  Outcome (according to module B-1.1) | Improved quality of life for city residents.  |
-|  Implementation | Responsible bodies/person for implementation | Dublin City Council, Environmental Protection Agency, Health Service Executive,  |
-|   |  Action scale & addressed entities | Citywide  |
-|   |  Involved stakeholders | Residence Associations, Schools, construction companies, NTA  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | Dependent on council approval  |
-|  Impact & cost | Generated renewable energy (if applicable) | Possible  |
-|   |  Removed/substituted energy, volume, or fuel type | NA  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 80% reduction in emissions from all sectors  |
-|   |  GHG emissions compensated (natural or technological sinks) | Greening  |
-|   |  Total costs and costs by CO2e unit | NA  |
-|  B-2.2.32: Individual action outlines  |   |   |
-| --- | --- | --- |
-|  Action outline | Action name | S2.3 Low carbon mobility hubs (EV charging infrastructure)  |
-|   |  Action type |   |
-|   | Action description | Quiet Areas in an urban agglomeration context are not necessarily areas without or with reduced noise. They may have a range of other qualifying characteristics which when combined with their low environmental sound levels (as identified by the noise mapping process) mean they can provide people with a more tranquil space to visit, away from the noisier areas of the city. Through our noise action plan, Dublin City Council will be increasing the number of quiet areas in the city. At present we have 8, where residents have noted improved quality of life due to reduce noise levels stemming from traffic and construction.  |
-|   |  Total costs and costs by CO2e unit | NA  |
+Impact & cost | Generated renewable energy (if applicable) | Likely Solar PV, as this is technology supported by grants
+Removed/substituted energy, volume, or fuel type | Reduced demand on the grid
+GHG emissions reduction estimate (total) per emission source sector | Reduced emissions from all sectors
+GHG emissions compensated (natural or technological sinks) | Increased greening in the area will contribute to carbon dioxide removal
+Total costs and costs by CO2e unit | €400,000
+B-2.2.31 Individual action outlines
+Action outline | Action name | S2.2 Quiet Areas
+Action type
+Action description | Quiet Areas in an urban agglomeration context are not necessarily areas without or with reduced noise. They may have a range of other qualifying characteristics which when combined with their low environmental sound levels (as identified by the noise mapping process) mean they can provide people with a more tranquil space to visit, away from the noisier areas of the city. Through our noise action plan, Dublin City Council will be increasing the number of quiet areas in the city. At present we have 8, where residents have noted improved quality of life due to reduce noise levels stemming from traffic and construction.
+Reference to impact pathway | Field of action | Mobility and Transport; Greening
+Systemic lever | Governance & Policy
+Outcome (according to module B-1.1) | Improved quality of life for city residents.
+Implementation | Responsible bodies/person for implementation | Dublin City Council, Environmental Protection Agency, Health Service Executive,
+Action scale & addressed entities | Citywide
+Involved stakeholders | Residence Associations, Schools, construction companies, NTA
+Comments on implementation – consider mentioning resources, timelines, milestones | Dependent on council approval
+Impact & cost | Generated renewable energy (if applicable) | Possible
+Removed/substituted energy, volume, or fuel type | NA
+GHG emissions reduction estimate (total) per emission source sector | 80% reduction in emissions from all sectors
+GHG emissions compensated (natural or technological sinks) | Greening
+Total costs and costs by CO2e unit | NA
+B-2.2.32: Individual action outlines
+Action outline | Action name | S2.3 Low carbon mobility hubs (EV charging infrastructure)
+Action type
+Action description | Quiet Areas in an urban agglomeration context are not necessarily areas without or with reduced noise. They may have a range of other qualifying characteristics which when combined with their low environmental sound levels (as identified by the noise mapping process) mean they can provide people with a more tranquil space to visit, away from the noisier areas of the city. Through our noise action plan, Dublin City Council will be increasing the number of quiet areas in the city. At present we have 8, where residents have noted improved quality of life due to reduce noise levels stemming from traffic and construction.
+Total costs and costs by CO2e unit | NA
 #
 
 Comhainia Cathrach
@@ -4179,36 +4150,34 @@ Plan
 
 #
 
-| B-2.2.40: Individual action outlines |
-| --- |
-| Action outline | Action name | CCC 3 Support Non Residential Retrofit |
-| Action type |  |
-| Action description | Retrofit of non residential buildings in the city |
-| Reference to impact pathway | Field of action | Built Environment |
-| Systemic lever | Governance and Policy |
-| Outcome (according to module B-1.1) | Reduce energy use, improved social and economic environment, |
-| Implementation | Responsible bodies/person for implementation | Commercial building owners and companies, public sector bodies, semi states |
-| Action scale & addressed entities | City wide |
-| Involved stakeholders | DCC |
-| Comments on implementation – consider mentioning resources, timelines, milestones | Dublin is home to 15% of Ireland's Commercial Buildings (109,000), the resources required to retrofit is estimated based on an assumption of €130/sqm. A further challenge to this is identifying owners of vacant buildings. The majority of public buildings are also heritage buildings that can present their own challenges. |
-| Impact & cost | Generated renewable energy (if applicable) |  |
-| Removed/substituted energy, volume, or fuel type |  |
-| GHG emissions reduction estimate (total) per emission source sector | 80% reduction in emissions from all sectors |
-| GHG emissions compensated (natural or technological sinks) | Carbon dioxide removal will be achieved through inclusion of nature-based solutions as part of retrofit; green roofs, green walls |
-| Total costs and costs by CO2e unit | €106,275,000,000 |
-|  B-2.2.41: Individual action outlines  |   |   |
-| --- | --- | --- |
-|  Action outline | Action name | CCC4 - Public Transport promotion with Dublin Bus and Luas  |
-|   |  Action type |   |
-|   |  Action description | Work with Dublin Bus and Transdev to encourage use of public transport, as part of multi-modal commuting for work, school and play, through campaigns and activations  |
-|  Reference to impact pathway | Field of action | Transport  |
-|   |  Systemic lever |   |
-|   |  Outcome (according to module B-1.1) | Reduced transport emissions, improved air quality, improved health and well-being  |
-|  Implementation | Responsible bodies/person for implementation | Dublin Bus, TransDev, DCC  |
-|   |  Action scale & addressed entities | City wide  |
-|   |  Involved stakeholders | Citizens  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | Public perception of public transport, and preference cars due to their cultural status  |
-|  Impact & cost | Generated renewable energy (if applicable) | NA  |
+B-2.2.40: Individual action outlines
+Action outline | Action name | CCC 3 Support Non Residential Retrofit
+Action type
+Action description | Retrofit of non residential buildings in the city
+Reference to impact pathway | Field of action | Built Environment
+Systemic lever | Governance and Policy
+Outcome (according to module B-1.1) | Reduce energy use, improved social and economic environment,
+Implementation | Responsible bodies/person for implementation | Commercial building owners and companies, public sector bodies, semi states
+Action scale & addressed entities | City wide
+Involved stakeholders | DCC
+Comments on implementation – consider mentioning resources, timelines, milestones | Dublin is home to 15% of Ireland's Commercial Buildings (109,000), the resources required to retrofit is estimated based on an assumption of €130/sqm. A further challenge to this is identifying owners of vacant buildings. The majority of public buildings are also heritage buildings that can present their own challenges.
+Impact & cost | Generated renewable energy (if applicable)
+Removed/substituted energy, volume, or fuel type
+GHG emissions reduction estimate (total) per emission source sector | 80% reduction in emissions from all sectors
+GHG emissions compensated (natural or technological sinks) | Carbon dioxide removal will be achieved through inclusion of nature-based solutions as part of retrofit; green roofs, green walls
+Total costs and costs by CO2e unit | €106,275,000,000
+B-2.2.41: Individual action outlines
+Action outline | Action name | CCC4 - Public Transport promotion with Dublin Bus and Luas
+Action type
+Action description | Work with Dublin Bus and Transdev to encourage use of public transport, as part of multi-modal commuting for work, school and play, through campaigns and activations
+Reference to impact pathway | Field of action | Transport
+Systemic lever
+Outcome (according to module B-1.1) | Reduced transport emissions, improved air quality, improved health and well-being
+Implementation | Responsible bodies/person for implementation | Dublin Bus, TransDev, DCC
+Action scale & addressed entities | City wide
+Involved stakeholders | Citizens
+Comments on implementation – consider mentioning resources, timelines, milestones | Public perception of public transport, and preference cars due to their cultural status
+Impact & cost | Generated renewable energy (if applicable) | NA
 #
 
 Comhainia Cathrach
@@ -4231,22 +4200,21 @@ Plan
 
 B-2.2.42: Individual action outlines
 
-| Action outline | Action name | CCC5 - Support third level institutions in the city in accelerating the delivering of their climate action plans |
-| --- | --- | --- |
-| Action type |  |
-| Action description | Recognising their leadership in research and innovation collaboration and co-creation to accelerate the city's transition is vital, working to support the acceleration of their climate plans will ensuring that knowledge exchange into the private and commercial sectors is accelerated too. |
-| Reference to impact pathway | Field of action | All |
-| Systemic lever |  |
-| Outcome (according to module B-1.1) |  |
-| Implementation | Responsible bodies/person for implementation | Third Level Institutions |
-| Action scale & addressed entities | City Wide |
-| Involved stakeholders | DCC, NTA, ESB, |
-| Comments on implementation – consider mentioning resources, timelines, milestones | As public sector bodies third level institutions are required to achieve a 51% reduction in emissions. Beyond these institutions, recognising their role as leaders Trinity College Dublin, University College Dublin, Technical University Dublin and Dublin City University are supportive of Dublin City in the Mission. Recognising their leadership in research and innovation collaboration and co-creation to accelerate the city's transition if vital. |
-| Impact & cost | Generated renewable energy (if applicable) | TBD; renewable energy sources are a priority, TUDublin is partnered with DCC to introduce Geothermal on campus. |
-| Removed/substituted energy, volume, or fuel type | Fossil fuel systems |
-| GHG emissions reduction estimate (total) per emission source sector | 80% reduction in emissions from all sectors |
-| GHG emissions compensated (natural or technological sinks) |  |
-| Total costs and costs by CO2e unit | Varies per institution; costs need to be separated from |
+Action outline | Action name | CCC5 - Support third level institutions in the city in accelerating the delivering of their climate action plans
+Action type
+Action description | Recognising their leadership in research and innovation collaboration and co-creation to accelerate the city's transition is vital, working to support the acceleration of their climate plans will ensuring that knowledge exchange into the private and commercial sectors is accelerated too.
+Reference to impact pathway | Field of action | All
+Systemic lever
+Outcome (according to module B-1.1)
+Implementation | Responsible bodies/person for implementation | Third Level Institutions
+Action scale & addressed entities | City Wide
+Involved stakeholders | DCC, NTA, ESB,
+Comments on implementation – consider mentioning resources, timelines, milestones | As public sector bodies third level institutions are required to achieve a 51% reduction in emissions. Beyond these institutions, recognising their role as leaders Trinity College Dublin, University College Dublin, Technical University Dublin and Dublin City University are supportive of Dublin City in the Mission. Recognising their leadership in research and innovation collaboration and co-creation to accelerate the city's transition if vital.
+Impact & cost | Generated renewable energy (if applicable) | TBD; renewable energy sources are a priority, TUDublin is partnered with DCC to introduce Geothermal on campus.
+Removed/substituted energy, volume, or fuel type | Fossil fuel systems
+GHG emissions reduction estimate (total) per emission source sector | 80% reduction in emissions from all sectors
+GHG emissions compensated (natural or technological sinks)
+Total costs and costs by CO2e unit | Varies per institution; costs need to be separated from
 
 B-2.2.43: Individual action outlines
 
@@ -4270,20 +4238,18 @@ Plan
 
 B-2.2.44: Individual action outlines
 
-|  |   |   |
-| --- | --- | --- |
-|  Action outline | Action name | CCC 7 Exploration of Systemic Finance Architecture to achieve a robust connected circular economy on the island of Ireland  |
-|   |  Action type |   |
-|   |  Action description | Progressing our work in supporting an ecosystem of social and circular SMEs, we know we need to understand deeply the finance architecture to enable scaling out and up; and that this will benefit our partners along the Dublin Belfast Economic Corridor and how we work to create the conditions for investment in SMEs.  |
-|  Reference to impact pathway | Field of action | Circular Economy, Green Industry  |
-|   |  Systemic lever | Finance & Funding  |
-|   |  Outcome (according to module B-1.1) | Finance options and recommendations  |
-|  Implementation | Responsible bodies/person for implementation | Dublin City Council, Centre for Policy Impacts  |
-|   |  Action scale & addressed entities |   |
-|   |  Involved stakeholders | Private business owners, Planning authority, Social Enterprise Organisations Belfast City Council, Dublin Belfast Economic Corridor, Department of Taoiseach, Dublin Port, Rediscovery Centre, Dublin  |
-|   |  | Department of Social and Cultural Development, Dublin City Council, Dublin Belfast Economic Corridor, Department of Social and Cultural Development, Dublin Port, Rediscovery Centre, Dublin  |
-|  Implementations | Action plan | Circular Economy, Green Industry  |
-|   |  Outcome (according to module B-1.1) | Finance options and recommendations  |
+Action outline | Action name | CCC 7 Exploration of Systemic Finance Architecture to achieve a robust connected circular economy on the island of Ireland
+Action type
+Action description | Progressing our work in supporting an ecosystem of social and circular SMEs, we know we need to understand deeply the finance architecture to enable scaling out and up; and that this will benefit our partners along the Dublin Belfast Economic Corridor and how we work to create the conditions for investment in SMEs.
+Reference to impact pathway | Field of action | Circular Economy, Green Industry
+Systemic lever | Finance & Funding
+Outcome (according to module B-1.1) | Finance options and recommendations
+Implementation | Responsible bodies/person for implementation | Dublin City Council, Centre for Policy Impacts
+Action scale & addressed entities
+Involved stakeholders | Private business owners, Planning authority, Social Enterprise Organisations Belfast City Council, Dublin Belfast Economic Corridor, Department of Taoiseach, Dublin Port, Rediscovery Centre, Dublin
+Department of Social and Cultural Development, Dublin City Council, Dublin Belfast Economic Corridor, Department of Social and Cultural Development, Dublin Port, Rediscovery Centre, Dublin
+Implementations | Action plan | Circular Economy, Green Industry
+Outcome (according to module B-1.1) | Finance options and recommendations
 #
 
 Comhainia Cathrach
@@ -4298,29 +4264,25 @@ Plan
 
 #
 
-|  B-2.2: Individual action outlines  |   |   |
-| --- | --- | --- |
-|  (Fill out one sheet per intervention/project)  |   |   |
-|  Action outline | Action name | CCC8 Codling Wind Park Offshore Wind Energy  |
-|   |  Action type |   |
-|   |  Action description | Codling Wind Park will be located approximately 13 - 22 kilometres off the coast of County Wicklow, between Greystones and Wicklow Town. The overall size of the array site is 125 km2.  |
-|   |   |  Previously it had been had thought around 100 turbines would need to be constructed but, in April 2024, the project confirmed a maximum of 75 and a minimum of 60 turbines would now be required.  |
-|   |   |  Although this is a significant reduction in wind turbines, the development will still generate 1,300 megawatts (MW) of clean electricity, enough to power over one million Irish homes.  |
-|   |   |  |
-|  Reference to impact pathway | Field of action | Energy  |
-|   |  Systemic lever | Technology/ Infrastructure  |
-|   |  Outcome (according to module B-1.1) | Increased renewables on the grid  |
-|  Implementation | Responsible bodies/person for implementation | 50/50 joint venture between Fred. Olsen Seawind and EDF Renewables EirGrid/ESB  |
-|   |  Action scale & addressed entities | County wide  |
-|   |  Involved stakeholders | DECC, Dublin City Council,  |
-|   |  Comments on implementation - consider mentioning resources, timelines, milestones | Transmitting electricity from Codling Wind Park into the national grid requires a new onshore substation. This 220kv substation will be built on a site adjacent to Pigeon House Harbour, on the west side of the Poolbeg peninsula. The substation will prepare the electricity to the appropriate specifications for delivery to EirGrid's substation at Poolbeg.  |
-|   |  |   |
-|  Impact & cost | Generated renewable energy (if applicable) | 1300 MW  |
-|   |  Removed/substituted energy, volume, or fuel type | Substitution of fossil fuels on grid  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | 1.7 Million tonnes of CO2e/ year  |
-|   |  GHG emissions compensated (natural or technological sinks) | NA  |
-|   |  Total costs and costs by CO2e unit | €2,000,000,000 (between 2024-2026)  |
-|   |  |   |
+B-2.2: Individual action outlines
+(Fill out one sheet per intervention/project)
+Action outline | Action name | CCC8 Codling Wind Park Offshore Wind Energy
+Action type
+Action description | Codling Wind Park will be located approximately 13 - 22 kilometres off the coast of County Wicklow, between Greystones and Wicklow Town. The overall size of the array site is 125 km2.
+Previously it had been had thought around 100 turbines would need to be constructed but, in April 2024, the project confirmed a maximum of 75 and a minimum of 60 turbines would now be required.
+Although this is a significant reduction in wind turbines, the development will still generate 1,300 megawatts (MW) of clean electricity, enough to power over one million Irish homes.
+Reference to impact pathway | Field of action | Energy
+Systemic lever | Technology/ Infrastructure
+Outcome (according to module B-1.1) | Increased renewables on the grid
+Implementation | Responsible bodies/person for implementation | 50/50 joint venture between Fred. Olsen Seawind and EDF Renewables EirGrid/ESB
+Action scale & addressed entities | County wide
+Involved stakeholders | DECC, Dublin City Council,
+Comments on implementation - consider mentioning resources, timelines, milestones | Transmitting electricity from Codling Wind Park into the national grid requires a new onshore substation. This 220kv substation will be built on a site adjacent to Pigeon House Harbour, on the west side of the Poolbeg peninsula. The substation will prepare the electricity to the appropriate specifications for delivery to EirGrid's substation at Poolbeg.
+Impact & cost | Generated renewable energy (if applicable) | 1300 MW
+Removed/substituted energy, volume, or fuel type | Substitution of fossil fuels on grid
+GHG emissions reduction estimate (total) per emission source sector | 1.7 Million tonnes of CO2e/ year
+GHG emissions compensated (natural or technological sinks) | NA
+Total costs and costs by CO2e unit | €2,000,000,000 (between 2024-2026)
 #
 
 Comhainia Cathrach
@@ -4374,30 +4336,26 @@ Plan
 
 #
 
-|  |   |   |
-| --- | --- | --- |
-|  Reference to impact pathway | Field of action | Transport  |
-|   |  Systemic lever | Technical, Governance and Policy, Democracy and Participation  |
-|   |  Outcome (according to module B-1.1) | Improved mobility, social cohesion, improved health and wellbeing.  |
-|  Implementation | Responsible bodies/person for implementation | TII, NTA, Irish Rail  |
-|   |  Action scale & addressed entities | County Wide  |
-|   |  Involved stakeholders | DCC,  |
-|   |  Comments on implementation – consider mentioning resources, timelines, milestones | DART+ is estimated to bring an increase in rail passengers in the region of 100-150,000 passenger boarding per day or 25-30 million per annum.  |
-|  Impact & cost | Generated renewable energy (if applicable) |   |
-|   |  Removed/substituted energy, volume, or fuel type | Private car usage will be reduced along these rail lines bring a reduction in petrol and diesel consumption. In addition to an increase in electric train journeys over diesel train journeys. However, the modelling undertaken as part of the project appraisal has not provided estimated on the replacement of these fuels.  |
-|   |  GHG emissions reduction estimate (total) per emission source sector | Reduction in transport emissions as an electric train typically emits 20-35% less carbon per passenger mile than a diesel train and this will be further reduced as grid decarbonisation continues. DART+ will result in estimated reduction of 16,000 tonnes of CO2 per annum once fully implemented and total CO2 savings over the 60-year appraisal timeframe of 653,000 tonnes of CO2 (source: DART+ preliminary business case).  |
-|   |  GHG emissions compensated (natural or technological sinks) |   |
-|   |  Total costs and costs by CO2e unit |   |
-|  B-2.2.44: Individual action outlines  |   |   |
-| --- | --- | --- |
-|  |   |   |
-|  Action outline | Action name | CCC11 MetroLink  |
-|   |  Action type |   |
-|   |  Action description | MetroLink is a transformative piece of new public transport infrastructure, the first of its kind in Ireland. It will comprise a high-capacity, high-frequency, modern and efficient metro railway, with 16 new stations running from Swords to Charlemont. The alignment will link Dublin Airport, Irish Rail, DART, Dublin Bus and Luas services and create a fully integrated public transport network for the Greater Dublin Area (GDA). The MetroLink alignment is shown in adjacent map.  |
-|  Reference to impact pathway | Field of action | Transport  |
-|   |  Systemic lever | Technical, Governance and Policy, Democracy and Participation  |
-|   |  Outcome (according to module B-1.1) | Improved mobility, social cohesion, improved health and wellbeing.  |
-|  Implementation | Responsible bodies/person for | TII, NTA  |
+Reference to impact pathway | Field of action | Transport
+Systemic lever | Technical, Governance and Policy, Democracy and Participation
+Outcome (according to module B-1.1) | Improved mobility, social cohesion, improved health and wellbeing.
+Implementation | Responsible bodies/person for implementation | TII, NTA, Irish Rail
+Action scale & addressed entities | County Wide
+Involved stakeholders | DCC,
+Comments on implementation – consider mentioning resources, timelines, milestones | DART+ is estimated to bring an increase in rail passengers in the region of 100-150,000 passenger boarding per day or 25-30 million per annum.
+Impact & cost | Generated renewable energy (if applicable)
+Removed/substituted energy, volume, or fuel type | Private car usage will be reduced along these rail lines bring a reduction in petrol and diesel consumption. In addition to an increase in electric train journeys over diesel train journeys. However, the modelling undertaken as part of the project appraisal has not provided estimated on the replacement of these fuels.
+GHG emissions reduction estimate (total) per emission source sector | Reduction in transport emissions as an electric train typically emits 20-35% less carbon per passenger mile than a diesel train and this will be further reduced as grid decarbonisation continues. DART+ will result in estimated reduction of 16,000 tonnes of CO2 per annum once fully implemented and total CO2 savings over the 60-year appraisal timeframe of 653,000 tonnes of CO2 (source: DART+ preliminary business case).
+GHG emissions compensated (natural or technological sinks)
+Total costs and costs by CO2e unit
+B-2.2.44: Individual action outlines
+Action outline | Action name | CCC11 MetroLink
+Action type
+Action description | MetroLink is a transformative piece of new public transport infrastructure, the first of its kind in Ireland. It will comprise a high-capacity, high-frequency, modern and efficient metro railway, with 16 new stations running from Swords to Charlemont. The alignment will link Dublin Airport, Irish Rail, DART, Dublin Bus and Luas services and create a fully integrated public transport network for the Greater Dublin Area (GDA). The MetroLink alignment is shown in adjacent map.
+Reference to impact pathway | Field of action | Transport
+Systemic lever | Technical, Governance and Policy, Democracy and Participation
+Outcome (according to module B-1.1) | Improved mobility, social cohesion, improved health and wellbeing.
+Implementation | Responsible bodies/person for | TII, NTA
 #
 
 Comhainia Cathrach
@@ -4577,22 +4535,21 @@ Plan
 
 B-2.2: Individual action outlines
 
-|
-| Action outline | Action name | IM2 Challenge Led Approach: |
-| Action type |  |
-| Action description | Recognising the limitations of “change-as-usual”, our Plan is taking a challenge led approach to foster better coordination and increased engagement; and to unleash the collective intelligence of a variety of actors impacted by, and responsible for the change to be realised by our plan |
-| Reference to impact pathway | Field of action | All |
-| Systemic lever | Learning and capability, Policy and governance, Democracy and Participation |
-| Outcome (according to module B-1.1) | Widespread adoption of a challenge led approach to embed systems thinking. |
-| Implementation | Responsible bodies/person for implementation | Dublin City Council |
-| Action scale & addressed entities | Various |
-| Involved stakeholders | Challenge dependent |
-| Comments on implementation – consider mentioning resources, timelines, milestones | Time scales, resources, capacity and political will |
-| Impact & cost | Generated renewable energy (if applicable) | Challenge dependent |
-| Removed/substituted energy, volume, or fuel type | Challenge dependent |
-| GHG emissions reduction estimate (total) per emission source sector | Challenge dependent |
-| GHG emissions compensated (natural or technological sinks) | Challenge dependent |
-| Total costs and costs by CO2e unit | Challenge dependent |
+Action outline | Action name | IM2 Challenge Led Approach:
+Action type
+Action description | Recognising the limitations of “change-as-usual”, our Plan is taking a challenge led approach to foster better coordination and increased engagement; and to unleash the collective intelligence of a variety of actors impacted by, and responsible for the change to be realised by our plan
+Reference to impact pathway | Field of action | All
+Systemic lever | Learning and capability, Policy and governance, Democracy and Participation
+Outcome (according to module B-1.1) | Widespread adoption of a challenge led approach to embed systems thinking.
+Implementation | Responsible bodies/person for implementation | Dublin City Council
+Action scale & addressed entities | Various
+Involved stakeholders | Challenge dependent
+Comments on implementation – consider mentioning resources, timelines, milestones | Time scales, resources, capacity and political will
+Impact & cost | Generated renewable energy (if applicable) | Challenge dependent
+Removed/substituted energy, volume, or fuel type | Challenge dependent
+GHG emissions reduction estimate (total) per emission source sector | Challenge dependent
+GHG emissions compensated (natural or technological sinks) | Challenge dependent
+Total costs and costs by CO2e unit | Challenge dependent
 
 B-2.2: Individual action outlines
 
@@ -4985,44 +4942,43 @@ Climate Neutrality Action
 Plan
 O
 
-|   |  | CV 13 | Monitoring of Disease Vectors |  |  |   |
-| --- | --- | --- | --- | --- | --- | --- |
-|  Reduced Household spend on energy | R1, R3, CCC1, CCC2, CCC8, B1, B2, B3, B8 | GHG 1
+CV 13 | Monitoring of Disease Vectors
+Reduced Household spend on energy | R1, R3, CCC1, CCC2, CCC8, B1, B2, B3, B8 | GHG 1
 GHG 2 | Stationary Energy
 Transport |  | 50% | 80%  |
-|   |  | CV 7 | Population Health and Well-being |  |  |   |
-|  Energy security and reduction in energy poverty | R1, R3, CCC1, CCC2, CCC8, B1, B2, B3, B8 | GHG 1 | Stationary Energy |  | 50% | 80%  |
-|   |  | CV 7 | Population Health and Well-being |  |  |   |
-|   |  | CV 8 | Social Cohesion |  |  |   |
-|  Improved air quality | R1, R3, CCC1, CCC2, CCC8, CCC9, CCC10, CCC11, B4, B5, OS14 | GHG 2 | Transport |  | 50% | 80%  |
-|   |  | CV 1 | Weather patterns |  |  |   |
-|   |  | CV 2 | Air Quality | Maintain Good Status |  |   |
-|   |  | CV 4 | Soil Health |  |  |   |
-|   |  | CV 6 | Noise | Maintain Good Status |  |   |
-|   |  | CV 7 | Population Health and Well-being |  |  |   |
-|  Reduced noise pollution | RF1.2, RF1.3, CCC9, CCC10, CCC11, OS14 | GHG 2 | Transport |  | 50% | 80%  |
-|   |  | CV 2 | Air Quality | Maintain Good Status |  |   |
-|   |  | CV 3 | Noise |  |  |   |
-|  Improved water quality | RF1.2, RF1.3, OS13 | GHG 2
+CV 7 | Population Health and Well-being
+Energy security and reduction in energy poverty | R1, R3, CCC1, CCC2, CCC8, B1, B2, B3, B8 | GHG 1 | Stationary Energy | 50% | 80%
+CV 7 | Population Health and Well-being
+CV 8 | Social Cohesion
+Improved air quality | R1, R3, CCC1, CCC2, CCC8, CCC9, CCC10, CCC11, B4, B5, OS14 | GHG 2 | Transport | 50% | 80%
+CV 1 | Weather patterns
+CV 2 | Air Quality | Maintain Good Status
+CV 4 | Soil Health
+CV 6 | Noise | Maintain Good Status
+CV 7 | Population Health and Well-being
+Reduced noise pollution | RF1.2, RF1.3, CCC9, CCC10, CCC11, OS14 | GHG 2 | Transport | 50% | 80%
+CV 2 | Air Quality | Maintain Good Status
+CV 3 | Noise
+Improved water quality | RF1.2, RF1.3, OS13 | GHG 2
 GHG 3
 GHG 5 | Transport
 Waste and Waste Water
 AFOLU |  | 50% | 80%  |
-|   |  | CV 1 | Weather patterns |  |  |   |
-|   |  | CV 2 | Air Quality | Maintain Good Status |  |   |
-|   |  | CV 3 | Water Quality | Maintain Good Status |  |   |
-|   |  | CV 4 | Soil Health |  |  |   |
-|   |  | CV 7 | Population Health and Well-being |  |  |   |
-|   |  | CV 13 | Monitoring of Disease Vectors |  |  |   |
-|  Local employment opportunities | R1, R3, CCC1, CCC2, CCC8, CCC9, CCC10, CCC11 | CV 7 | Population Health and Well-being |  |  |   |
-|   |  | CV 8 | Social Cohesion |  |  |   |
-|   |  | CV 9 | Economic Performance |  |  |   |
-|  Community wealth increases | R1, R3, CCC1, CCC2, CCC8, CCC9, CCC10, CCC11 | CV 7 | Population Health and Well-being |  |  |   |
-|   |  | CV 8 | Social Cohesion |  |  |   |
-|   |  | CV 9 | Economic Performance |  |  |   |
-|  Social cohesion | S1.4, S1.5, S3.1, S4.1, S4.2, S4.3, CCC1, CCC2, | CV 6 | Noise | Maintain Good Status |  |   |
-|   |  | CV 8 | Social Cohesion |  |  |   |
-|   |  | CV 9 | Economic Performance |  |  |   |
+CV 1 | Weather patterns
+CV 2 | Air Quality | Maintain Good Status
+CV 3 | Water Quality | Maintain Good Status
+CV 4 | Soil Health
+CV 7 | Population Health and Well-being
+CV 13 | Monitoring of Disease Vectors
+Local employment opportunities | R1, R3, CCC1, CCC2, CCC8, CCC9, CCC10, CCC11 | CV 7 | Population Health and Well-being
+CV 8 | Social Cohesion
+CV 9 | Economic Performance
+Community wealth increases | R1, R3, CCC1, CCC2, CCC8, CCC9, CCC10, CCC11 | CV 7 | Population Health and Well-being
+CV 8 | Social Cohesion
+CV 9 | Economic Performance
+Social cohesion | S1.4, S1.5, S3.1, S4.1, S4.2, S4.3, CCC1, CCC2, | CV 6 | Noise | Maintain Good Status
+CV 8 | Social Cohesion
+CV 9 | Economic Performance
 
 1
 #
@@ -5083,48 +5039,45 @@ Shailie Acha Cloth
 Dublin City Council
 Climate Neutrality Action
 Plan
-|   | OS6, OS7, CCC9, CCC10, CCC11 | CV 6 | Noise | Maintain Good Status  |   |   |
-| --- | --- | --- | --- | --- | --- | --- |
-|   |   |  CV 7 | Population Health and Well-being |  |  |   |
-|   |   |  CV 10 | Traffic Volume |  |  |   |
-|  COMMENT  |   |   |   |   |   |   |
-|  To support systems thinking, and to briefly explain why actions are associated with multiple indicators, building on the experience of our first climate action plan we moved monitoring away from one action and one KPI to groups of actions monitored by a headline indicator and cross cutting indicators. See Climate Neutral Dublin 2030. This is further supported by the Climate Readiness Toolkit.  |   |   |   |   |   |   |
-|  B-3.2.1: Indicator Metadata – GHG1  |   |
-| --- | --- |
-|  (For each indicator selected)  |   |
-|  Indicator Name | GHG Stationary Energy  |
-|  Indicator Unit | tCO2e  |
-|  Definition | GHGs stemming from operations of buildings  |
-|  Calculation | GHG emissions = Activity data × Emission factor  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | Yes  |
-|  If yes, which emission source sectors does it measure? | Built Environment, IPPU, Transport, Waste  |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | No  |
-|  If yes, which co-benefit does it measure? | Specify co-benefit  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-|  If yes, which action and impact pathway is it relevant for? | Impact Pathways according to Module B-1 Resilient City and Resource-Full City actions primarily, but it is anticipated that there will be some evidence of stationary energy emissions reducing in relation to Creative city actions, specifically those related to decarbonisation zones, and innovation districts.  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | Covenant of Mayors  |
-|  Data requirements |   |
-|  Expected data source | Own energy monitoring system, CSO, ESB  |
-|  Is the data source local or regional/national? | Combination of local and national  |
-|  Expected availability | Yearly  |
-|  Suggested collection interval | DCC’s data is available monthly,  |
-|  References |   |
-|  Deliverables describing the indicator | Reductions in energy use; and increase in composition of energy coming from renewable sources  |
-|  Other indicator systems using this indicator | MW/h – Usage, MW  |
-|  B-3.2.2: Indicator Metadata – GHG 2  |   |
-| --- | --- |
-|  (For each indicator selected)  |   |
-|  Indicator Name | GHG Transport  |
-|  Indicator Unit | tCO2e  |
-|  Definition | GHGs emissions stemming from operation of vehicles  |
-|  Calculation | GHG emissions = Activity data × mode share x intensity x fuel type  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | Yes  |
-|  If yes, which emission source sectors does it measure? | Transport  |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | No  |
-|  If yes, which co-benefit does it measure? | NA  |
-|  Is the indicator useful for monitoring the | Yes  |
+OS6, OS7, CCC9, CCC10, CCC11 | CV 6 | Noise | Maintain Good Status
+CV 7 | Population Health and Well-being
+CV 10 | Traffic Volume
+COMMENT
+To support systems thinking, and to briefly explain why actions are associated with multiple indicators, building on the experience of our first climate action plan we moved monitoring away from one action and one KPI to groups of actions monitored by a headline indicator and cross cutting indicators. See Climate Neutral Dublin 2030. This is further supported by the Climate Readiness Toolkit.
+B-3.2.1: Indicator Metadata – GHG1
+(For each indicator selected)
+Indicator Name | GHG Stationary Energy
+Indicator Unit | tCO2e
+Definition | GHGs stemming from operations of buildings
+Calculation | GHG emissions = Activity data × Emission factor
+Indicator Context
+Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | Yes
+If yes, which emission source sectors does it measure? | Built Environment, IPPU, Transport, Waste
+Does the indicator measure indirect impacts (i.e., co-benefits)? | No
+If yes, which co-benefit does it measure? | Specify co-benefit
+Is the indicator useful for monitoring the output/impact of action(s)? | Yes
+If yes, which action and impact pathway is it relevant for? | Impact Pathways according to Module B-1 Resilient City and Resource-Full City actions primarily, but it is anticipated that there will be some evidence of stationary energy emissions reducing in relation to Creative city actions, specifically those related to decarbonisation zones, and innovation districts.
+Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | Covenant of Mayors
+Data requirements
+Expected data source | Own energy monitoring system, CSO, ESB
+Is the data source local or regional/national? | Combination of local and national
+Expected availability | Yearly
+Suggested collection interval | DCC’s data is available monthly,
+References
+Deliverables describing the indicator | Reductions in energy use; and increase in composition of energy coming from renewable sources
+Other indicator systems using this indicator | MW/h – Usage, MW
+B-3.2.2: Indicator Metadata – GHG 2
+(For each indicator selected)
+Indicator Name | GHG Transport
+Indicator Unit | tCO2e
+Definition | GHGs emissions stemming from operation of vehicles
+Calculation | GHG emissions = Activity data × mode share x intensity x fuel type
+Indicator Context
+Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | Yes
+If yes, which emission source sectors does it measure? | Transport
+Does the indicator measure indirect impacts (i.e., co-benefits)? | No
+If yes, which co-benefit does it measure? | NA
+Is the indicator useful for monitoring the | Yes
 #
 Comhajra Cathrach
 Shalai Aihu Clash
@@ -5133,38 +5086,36 @@ Climate Neutrality Action
 Plan
 C
 
-|  output/impact of action(s)? |   |
-| --- | --- |
-|  If yes, which action and impact pathway is it relevant for? | Impact Pathways according to Module B-1
+output/impact of action(s)?
+If yes, which action and impact pathway is it relevant for? | Impact Pathways according to Module B-1
 Resilient City and Social City actions primarily, but it is anticipated that there will be some evidence of transport emissions reducing in relation to Creative city actions, specifically those related to decarbonisation zones, and innovation districts.  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | Covenant of Mayors  |
-|  Data requirements |   |
-|  Expected data source | Traffic asset management system, NTA, car sales and fuel sales data  |
-|  Is the data source local or regional/national? | Combination of local and national  |
-|  Expected availability | Yearly  |
-|  Suggested collection interval | Preferred monthly  |
-|  References |   |
-|  Deliverables describing the indicator | Reductions in vehicle miles travelled and decrease in private car use, with an increased public transport and active modes. Reduction in traffic accidents.  |
-|  Other indicator systems using this indicator | MW/h – Usage, MW  |
-|  B-3.2: Indicator Metadata - GHG3  |   |
-| --- | --- |
-|  (For each indicator selected)  |   |
-|  Indicator Name | GHG Waste and Waste Water  |
-|  Indicator Unit | tCO2e  |
-|  Definition | GHGs emissions from waste treatment, waste incineration and landfills  |
-|  Calculation | GHG emissions based on volume of waste produced type and volume and treatment – incineration etc.
+Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | Covenant of Mayors
+Data requirements
+Expected data source | Traffic asset management system, NTA, car sales and fuel sales data
+Is the data source local or regional/national? | Combination of local and national
+Expected availability | Yearly
+Suggested collection interval | Preferred monthly
+References
+Deliverables describing the indicator | Reductions in vehicle miles travelled and decrease in private car use, with an increased public transport and active modes. Reduction in traffic accidents.
+Other indicator systems using this indicator | MW/h – Usage, MW
+B-3.2: Indicator Metadata - GHG3
+(For each indicator selected)
+Indicator Name | GHG Waste and Waste Water
+Indicator Unit | tCO2e
+Definition | GHGs emissions from waste treatment, waste incineration and landfills
+Calculation | GHG emissions based on volume of waste produced type and volume and treatment – incineration etc.
 Emissions= Vol of Waste * emission factor + biologically treated waste + Incineration of waste + waste water treatment + industrial waste water  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | Yes  |
-|  If yes, which emission source sectors does it measure? | Waste; Waste and Waste Water  |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | No  |
-|  If yes, which co-benefit does it measure? | NA  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-|  If yes, which action and impact pathway is it relevant for? | Impact Pathways according to Module B-1
+Indicator Context
+Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | Yes
+If yes, which emission source sectors does it measure? | Waste; Waste and Waste Water
+Does the indicator measure indirect impacts (i.e., co-benefits)? | No
+If yes, which co-benefit does it measure? | NA
+Is the indicator useful for monitoring the output/impact of action(s)? | Yes
+If yes, which action and impact pathway is it relevant for? | Impact Pathways according to Module B-1
 Resource -Full actions primarily, but it is anticipated that there will be some evidence of transport emissions reducing in relation to Creative city actions, specifically those related to decarbonisation zones, and innovation districts.  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | Covenant of Mayors  |
-|  Data requirements |   |
-|  Expected data | Waste Prevention Office, Waste Providers, and  |
+Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | Covenant of Mayors
+Data requirements
+Expected data | Waste Prevention Office, Waste Providers, and
 
 5
 #
@@ -5175,44 +5126,41 @@ Climate Neutrality Action
 Plan
 C
 
-|  source | Encyclis (WtE) and EPA  |
-| --- | --- |
-|  Is the data source local or regional/national? | Combination of local and national  |
-|  Expected availability | Yearly  |
-|  Suggested collection interval | Preferred monthly  |
-|  References |   |
-|  Deliverables describing the indicator | Reductions in waste produced  |
-|  Other indicator systems using this indicator |   |
-|  B-3.2: Indicator Metadata - GHG4  |   |
-| --- | --- |
-|  (For each indicator selected)  |   |
-|  Indicator Name | GHG emission from IPPU  |
-|  Indicator Unit | tCO2e  |
-|  Definition | GHGs emissions from industrial processes and product use within city boundary.  |
-|  Calculation | GHG emissions = Carbon intensity (Cement Production) * total production volume/Mass  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | Yes  |
-|  If yes, which emission source sectors does it measure? | IPPU  |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | No  |
-|  If yes, which co-benefit does it measure? | NA  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-|  If yes, which action and impact pathway is it relevant for? | Impact Pathways according to Module B-1
+source | Encyclis (WtE) and EPA
+Is the data source local or regional/national? | Combination of local and national
+Expected availability | Yearly
+Suggested collection interval | Preferred monthly
+References
+Deliverables describing the indicator | Reductions in waste produced
+Other indicator systems using this indicator
+B-3.2: Indicator Metadata - GHG4
+(For each indicator selected)
+Indicator Name | GHG emission from IPPU
+Indicator Unit | tCO2e
+Definition | GHGs emissions from industrial processes and product use within city boundary.
+Calculation | GHG emissions = Carbon intensity (Cement Production) * total production volume/Mass
+Indicator Context
+Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | Yes
+If yes, which emission source sectors does it measure? | IPPU
+Does the indicator measure indirect impacts (i.e., co-benefits)? | No
+If yes, which co-benefit does it measure? | NA
+Is the indicator useful for monitoring the output/impact of action(s)? | Yes
+If yes, which action and impact pathway is it relevant for? | Impact Pathways according to Module B-1
 Resilient City but it is anticipated that there will be some evidence of transport emissions reducing in relation to Creative city actions, specifically those related to the Ringsend Poolbeg decarbonisation zone.  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | Covenant of Mayors  |
-|  Data requirements |   |
-|  Expected data source | Company – ECOCEM  |
-|  Is the data source local or regional/national? | Company  |
-|  Expected availability | Yearly  |
-|  Suggested collection interval | Preferred monthly  |
-|  References |   |
-|  Deliverables describing the indicator | Reduction in clinker content of cement resulting in reduced emission  |
-|  Other indicator systems using this indicator |   |
-|  B-3.2: Indicator Metadata – GHG 5  |   |
-| --- | --- |
-|  (For each indicator selected)  |   |
-|  Indicator Name | GHG emission from AFOLU  |
-|  Indicator Unit | tCO2e  |
-|  Definition | GHGs emissions from land-use activities  |
+Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | Covenant of Mayors
+Data requirements
+Expected data source | Company – ECOCEM
+Is the data source local or regional/national? | Company
+Expected availability | Yearly
+Suggested collection interval | Preferred monthly
+References
+Deliverables describing the indicator | Reduction in clinker content of cement resulting in reduced emission
+Other indicator systems using this indicator
+B-3.2: Indicator Metadata – GHG 5
+(For each indicator selected)
+Indicator Name | GHG emission from AFOLU
+Indicator Unit | tCO2e
+Definition | GHGs emissions from land-use activities
 #
 Comhalyria Cathrach
 Shalia Aihla Clash
@@ -5263,47 +5211,44 @@ Climate Neutrality Action
 Plan
 C
 
-|  output/impact of action(s)? |   |
-| --- | --- |
-|  If yes, which action and impact pathway is it relevant for? | Impact Pathways according to Module B-1
+output/impact of action(s)?
+If yes, which action and impact pathway is it relevant for? | Impact Pathways according to Module B-1
 All actions  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? |   |
-|  Data requirements |   |
-|  Expected data source | Met Eireann  |
-|  Is the data source local or regional/national? | National  |
-|  Expected availability | Monthly  |
-|  Suggested collection interval | Monthly  |
-|  References |   |
-|  Deliverables describing the indicator |   |
-|  Other indicator systems using this indicator |   |
-|  B-3.2: Indicator Metadata - CV2  |   |
-| --- | --- |
-|  (For each indicator selected)  |   |
-|  Indicator Name | CV 2 – Air Quality (CV 2.1 – PM2.5, CV 2.2 – PM10, CV2.3 – NOX)  |
-|  Indicator Unit | μg/ m3 and # of days  |
-|  Definition | Air quality is the measurement of air pollutants.  |
-|  Calculation | NA  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | No  |
-|  If yes, which emission source sectors does it measure? |   |
-|  Does the indicator measure indirect impacts (i.e., co- benefits)? | Yes  |
-|  If yes, which co-benefit does it measure? | Improved health and well-being, reduced traffic.  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-|  If yes, which action and impact pathway is it relevant for? | Impact Pathways according to Module B-1
+Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms?
+Data requirements
+Expected data source | Met Eireann
+Is the data source local or regional/national? | National
+Expected availability | Monthly
+Suggested collection interval | Monthly
+References
+Deliverables describing the indicator
+Other indicator systems using this indicator
+B-3.2: Indicator Metadata - CV2
+(For each indicator selected)
+Indicator Name | CV 2 – Air Quality (CV 2.1 – PM2.5, CV 2.2 – PM10, CV2.3 – NOX)
+Indicator Unit | μg/ m3 and # of days
+Definition | Air quality is the measurement of air pollutants.
+Calculation | NA
+Indicator Context
+Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | No
+If yes, which emission source sectors does it measure?
+Does the indicator measure indirect impacts (i.e., co- benefits)? | Yes
+If yes, which co-benefit does it measure? | Improved health and well-being, reduced traffic.
+Is the indicator useful for monitoring the output/impact of action(s)? | Yes
+If yes, which action and impact pathway is it relevant for? | Impact Pathways according to Module B-1
 Resilient City, Resource- Full City and Social City actions primarily,  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | NA – Dublin City is a signatory of the WHO Breathe Life Campaign  |
-|  Data requirements |   |
-|  Expected data source | Dublin City Air and Noise and EPA  |
-|  Is the data source local or regional/national? | Combination of local and national  |
-|  Expected availability | Daily  |
-|  Suggested collection interval | Daily  |
-|  References |   |
-|  Deliverables describing the indicator |   |
-|  Other indicator systems using this indicator |   |
-|  B-3.2: Indicator Metadata - CV3  |   |
-| --- | --- |
-|  (For each indicator selected)  |   |
-|  Indicator Name | CV 3 – Water Quality  |
+Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | NA – Dublin City is a signatory of the WHO Breathe Life Campaign
+Data requirements
+Expected data source | Dublin City Air and Noise and EPA
+Is the data source local or regional/national? | Combination of local and national
+Expected availability | Daily
+Suggested collection interval | Daily
+References
+Deliverables describing the indicator
+Other indicator systems using this indicator
+B-3.2: Indicator Metadata - CV3
+(For each indicator selected)
+Indicator Name | CV 3 – Water Quality
 #
 ComhaVra Cathrach
 Shalia Aihu Clash
@@ -5312,41 +5257,39 @@ Climate Neutrality Action
 Plan
 C
 
-|  Indicator Unit | Surveys- Testing presence of Ecoli, nitrates  |
-| --- | --- |
-|  Definition | Insuring the health of waterbodies.  |
-|  Calculation | NA  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | Yes  |
-|  If yes, which emission source sectors does it measure? | Resilient City and Resource Full City – AFOLU – Blue Carbon  |
-|  Does the indicator measure indirect impacts (i.e., co- benefits)? | Yes  |
-|  If yes, which co-benefit does it measure? | Ecosystem Health  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-|  If yes, which action and impact pathway is it relevant for? | Impact Pathways according to Module B-1
+Indicator Unit | Surveys- Testing presence of Ecoli, nitrates
+Definition | Insuring the health of waterbodies.
+Calculation | NA
+Indicator Context
+Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | Yes
+If yes, which emission source sectors does it measure? | Resilient City and Resource Full City – AFOLU – Blue Carbon
+Does the indicator measure indirect impacts (i.e., co- benefits)? | Yes
+If yes, which co-benefit does it measure? | Ecosystem Health
+Is the indicator useful for monitoring the output/impact of action(s)? | Yes
+If yes, which action and impact pathway is it relevant for? | Impact Pathways according to Module B-1
 Resilient City, Resource- Full City and Social City actions primarily, but it is anticipated that there will be some evidence of transport emissions reducing in relation to Creative city actions, specifically those related to decarbonisation zones, and innovation districts.  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? |   |
-|  Data requirements |   |
-|  Expected data source | LAWPRO,  |
-|  Is the data source local or regional/national? | Local  |
-|  Expected availability | Monthly  |
-|  Suggested collection interval | Monthly  |
-|  References |   |
-|  Deliverables describing the indicator | Reduction in pollution in water courses  |
-|  Other indicator systems using this indicator |   |
-|  B-3.2: Indicator Metadata – CV4  |   |
-| --- | --- |
-|  (For each indicator selected)  |   |
-|  Indicator Name | CV 4 – Soil Health  |
-|  Indicator Unit |   |
-|  Definition | As an urban area soil sealing is a significant problem, determining soil health and monitoring is essential  |
-|  Calculation | NA  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | Yes  |
-|  If yes, which emission source sectors does it measure? | Resilient City and Resource-Full City AFOLU  |
-|  Does the indicator measure indirect impacts (i.e., co- benefits)? | Yes  |
-|  If yes, which co-benefit does it measure? | Ecosystem health  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-|  If yes, which action and impact pathway is it relevant for? | Impact Pathways according to Module B-1
+Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms?
+Data requirements
+Expected data source | LAWPRO,
+Is the data source local or regional/national? | Local
+Expected availability | Monthly
+Suggested collection interval | Monthly
+References
+Deliverables describing the indicator | Reduction in pollution in water courses
+Other indicator systems using this indicator
+B-3.2: Indicator Metadata – CV4
+(For each indicator selected)
+Indicator Name | CV 4 – Soil Health
+Indicator Unit
+Definition | As an urban area soil sealing is a significant problem, determining soil health and monitoring is essential
+Calculation | NA
+Indicator Context
+Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | Yes
+If yes, which emission source sectors does it measure? | Resilient City and Resource-Full City AFOLU
+Does the indicator measure indirect impacts (i.e., co- benefits)? | Yes
+If yes, which co-benefit does it measure? | Ecosystem health
+Is the indicator useful for monitoring the output/impact of action(s)? | Yes
+If yes, which action and impact pathway is it relevant for? | Impact Pathways according to Module B-1
 Resilient City, Resource- Full City and Social City actions primarily, but it is anticipated that there will be some evidence of transport emissions reducing in relation to Creative city actions, specifically those related to decarbonisation zones, and innovation districts.  |
 
 9
@@ -5358,40 +5301,38 @@ Climate Neutrality Action
 Plan
 O
 
-|   | districts.  |
-| --- | --- |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? |   |
-|  Data requirements |   |
-|  Expected data source | Geological Survey Ireland, Terrain AI, Academia; NPWS, Teagasc  |
-|  Is the data source local or regional/national? | Local National  |
-|  Expected availability | Yearly  |
-|  Suggested collection interval | Yearly  |
-|  References |   |
-|  Deliverables describing the indicator | Reduction in soil sealing across the city  |
-|  Other indicator systems using this indicator |   |
-|  B-3.2: Indicator Metadata – CV5  |   |
-| --- | --- |
-|  (For each indicator selected)  |   |
-|  Indicator Name | CV 5 – Biodiversity Counts  |
-|  Indicator Unit | Counts of fauna and flora  |
-|  Definition | Fauna population increases are indicators of improved flora health which is essential for carbon sequestration  |
-|  Calculation | NA  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | Yes  |
-|  If yes, which emission source sectors does it measure? | Resource Full City/ AFOLU  |
-|  Does the indicator measure indirect impacts (i.e., co- benefits)? | Yes  |
-|  If yes, which co-benefit does it measure? | Improved ecosystem health  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-|  If yes, which action and impact pathway is it relevant for? | Impact Pathways according to Module B-1 Resilient City, Resource- Full City and Social City actions primarily, but it is anticipated that there will be some evidence of transport emissions reducing in relation to Creative city actions, specifically those related to decarbonisation zones, and innovation districts.  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No  |
-|  Data requirements |   |
-|  Expected data source | NPWS, OPW, Dublin Bay Biosphere Partnership; Academia  |
-|  Is the data source local or regional/national? | Local and National  |
-|  Expected availability | Yearly  |
-|  Suggested collection interval | Yearly  |
-|  References |   |
-|  Deliverables describing the indicator | Improved biodiversity health  |
-|  Other indicator systems using this indicator |   |
+districts.
+Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms?
+Data requirements
+Expected data source | Geological Survey Ireland, Terrain AI, Academia; NPWS, Teagasc
+Is the data source local or regional/national? | Local National
+Expected availability | Yearly
+Suggested collection interval | Yearly
+References
+Deliverables describing the indicator | Reduction in soil sealing across the city
+Other indicator systems using this indicator
+B-3.2: Indicator Metadata – CV5
+(For each indicator selected)
+Indicator Name | CV 5 – Biodiversity Counts
+Indicator Unit | Counts of fauna and flora
+Definition | Fauna population increases are indicators of improved flora health which is essential for carbon sequestration
+Calculation | NA
+Indicator Context
+Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | Yes
+If yes, which emission source sectors does it measure? | Resource Full City/ AFOLU
+Does the indicator measure indirect impacts (i.e., co- benefits)? | Yes
+If yes, which co-benefit does it measure? | Improved ecosystem health
+Is the indicator useful for monitoring the output/impact of action(s)? | Yes
+If yes, which action and impact pathway is it relevant for? | Impact Pathways according to Module B-1 Resilient City, Resource- Full City and Social City actions primarily, but it is anticipated that there will be some evidence of transport emissions reducing in relation to Creative city actions, specifically those related to decarbonisation zones, and innovation districts.
+Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No
+Data requirements
+Expected data source | NPWS, OPW, Dublin Bay Biosphere Partnership; Academia
+Is the data source local or regional/national? | Local and National
+Expected availability | Yearly
+Suggested collection interval | Yearly
+References
+Deliverables describing the indicator | Improved biodiversity health
+Other indicator systems using this indicator
 
 B-3.2: Indicator Metadata – CV6
 #
@@ -5403,41 +5344,39 @@ Plan
 C
 1
 
-|  (For each indicator selected)  |   |
-| --- | --- |
-|  Indicator Name | CV 6 – Noise  |
-|  Indicator Unit | Day time Lden .>/ 50dB and Nighttime >/ 25dB  |
-|  Definition | Noise is the silent killer as noise pollution from traffic and construction can result in disrupted sleep and other health issues  |
-|  Calculation | NA  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | No  |
-|  If yes, which emission source sectors does it measure? |   |
-|  Does the indicator measure indirect impacts (i.e., co- benefits)? | Yes  |
-|  If yes, which co-benefit does it measure? | Improved health and well-being; improved social cohesion through the presence of positive noises such as children playing  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-|  If yes, which action and impact pathway is it relevant for? | Impact Pathways according to Module B-1 Resilient City, Resource- Full City and Social City actions primarily,  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No  |
-|  Data requirements |   |
-|  Expected data source | Dublin City Air and Noise, EPA  |
-|  Is the data source local or regional/national? | Local and National  |
-|  Expected availability | Daily  |
-|  Suggested collection interval | Daily  |
-|  References |   |
-|  Deliverables describing the indicator | Increased areas of the city that are designated as quiet zones – low traffic and increased green cover  |
-|  Other indicator systems using this indicator |   |
-|  B-3.2: Indicator Metadata – CV7  |   |
-| --- | --- |
-|  (For each indicator selected)  |   |
-|  Indicator Name | CV 7 – Population Health and Well-being  |
-|  Indicator Unit | Survey and disease rates; obesity rates  |
-|  Definition | Perception of well being, alongside metrics of health outcomes  |
-|  Calculation | NA  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | no  |
-|  If yes, which emission source sectors does it measure? |   |
-|  Does the indicator measure indirect impacts (i.e., co- benefits)? | Yes  |
-|  If yes, which co-benefit does it measure? | Improved health and well-being  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
+(For each indicator selected)
+Indicator Name | CV 6 – Noise
+Indicator Unit | Day time Lden .>/ 50dB and Nighttime >/ 25dB
+Definition | Noise is the silent killer as noise pollution from traffic and construction can result in disrupted sleep and other health issues
+Calculation | NA
+Indicator Context
+Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | No
+If yes, which emission source sectors does it measure?
+Does the indicator measure indirect impacts (i.e., co- benefits)? | Yes
+If yes, which co-benefit does it measure? | Improved health and well-being; improved social cohesion through the presence of positive noises such as children playing
+Is the indicator useful for monitoring the output/impact of action(s)? | Yes
+If yes, which action and impact pathway is it relevant for? | Impact Pathways according to Module B-1 Resilient City, Resource- Full City and Social City actions primarily,
+Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No
+Data requirements
+Expected data source | Dublin City Air and Noise, EPA
+Is the data source local or regional/national? | Local and National
+Expected availability | Daily
+Suggested collection interval | Daily
+References
+Deliverables describing the indicator | Increased areas of the city that are designated as quiet zones – low traffic and increased green cover
+Other indicator systems using this indicator
+B-3.2: Indicator Metadata – CV7
+(For each indicator selected)
+Indicator Name | CV 7 – Population Health and Well-being
+Indicator Unit | Survey and disease rates; obesity rates
+Definition | Perception of well being, alongside metrics of health outcomes
+Calculation | NA
+Indicator Context
+Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | no
+If yes, which emission source sectors does it measure?
+Does the indicator measure indirect impacts (i.e., co- benefits)? | Yes
+If yes, which co-benefit does it measure? | Improved health and well-being
+Is the indicator useful for monitoring the output/impact of action(s)? | Yes
 #
 ComhaVela Cathrach
 Shalia Acha Clash
@@ -5448,42 +5387,40 @@ C
 O
 O
 
-|  If yes, which action and impact pathway is it relevant for? | Impact Pathways according to Module B-1
+If yes, which action and impact pathway is it relevant for? | Impact Pathways according to Module B-1
 Resilient City, Resource- Full City and Social City actions primarily, but it is anticipated that there will be some evidence of transport emissions reducing in relation to Creative city actions, specifically those related to decarbonisation zones, and innovation districts.  |
-| --- | --- |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? |   |
-|  Data requirements |   |
-|  Expected data source | HSE, CSO and Citizens  |
-|  Is the data source local or regional/national? | National  |
-|  Expected availability | Quarterly  |
-|  Suggested collection interval | Monthly  |
-|  References |   |
-|  Deliverables describing the indicator | Reduction in hospital visits, wait times and hospital bed usage.  |
-|  Other indicator systems using this indicator |   |
-|  B-3.2: Indicator Metadata - CV8  |   |
-| --- | --- |
-|  (For each indicator selected)  |   |
-|  Indicator Name | CV 8 Social Cohesion  |
-|  Indicator Unit | Rates of volunteerism and survey of perceptions; reductions in crime; knowing your neighbour  |
-|  Definition | Social cohesion  |
-|  Calculation | NA  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | No  |
-|  If yes, which emission source sectors does it measure? |   |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | Yes  |
-|  If yes, which co-benefit does it measure? | Improvements in public spaces, streets, parks; delivery of services  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-|  If yes, which action and impact pathway is it relevant for? | Impact Pathways according to Module B-1
+Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms?
+Data requirements
+Expected data source | HSE, CSO and Citizens
+Is the data source local or regional/national? | National
+Expected availability | Quarterly
+Suggested collection interval | Monthly
+References
+Deliverables describing the indicator | Reduction in hospital visits, wait times and hospital bed usage.
+Other indicator systems using this indicator
+B-3.2: Indicator Metadata - CV8
+(For each indicator selected)
+Indicator Name | CV 8 Social Cohesion
+Indicator Unit | Rates of volunteerism and survey of perceptions; reductions in crime; knowing your neighbour
+Definition | Social cohesion
+Calculation | NA
+Indicator Context
+Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | No
+If yes, which emission source sectors does it measure?
+Does the indicator measure indirect impacts (i.e., co-benefits)? | Yes
+If yes, which co-benefit does it measure? | Improvements in public spaces, streets, parks; delivery of services
+Is the indicator useful for monitoring the output/impact of action(s)? | Yes
+If yes, which action and impact pathway is it relevant for? | Impact Pathways according to Module B-1
 A Creative City and Social City actions primarily,  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? |   |
-|  Data requirements |   |
-|  Expected data source | Surveys; your Dublin your Voice; CSO  |
-|  Is the data source local or regional/national? | Local  |
-|  Expected availability | Quarterly  |
-|  Suggested collection interval | Quarterly  |
-|  References |   |
-|  Deliverables describing the indicator | Reduction in crime  |
-|  Other indicator systems using this indicator |   |
+Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms?
+Data requirements
+Expected data source | Surveys; your Dublin your Voice; CSO
+Is the data source local or regional/national? | Local
+Expected availability | Quarterly
+Suggested collection interval | Quarterly
+References
+Deliverables describing the indicator | Reduction in crime
+Other indicator systems using this indicator
 
 2
 #
@@ -5494,39 +5431,37 @@ Climate Neutrality Action
 Plan
 C
 
-|  B-3.2: Indicator Metadata – CV9  |   |
-| --- | --- |
-|  (For each indicator selected)  |   |
-|  Indicator Name | CV 9 Economic Performance (CV 9.1 Affordability CV 9.2 SME performance  |
-|  Indicator Unit | Purchasing power parity/ Affordability % of income spent on rent/ groceries/ transport; # of SMEs and % of SMEs that are social innovation  |
-|  Definition | The ability of households and individuals to afford basic goods while saving.
+B-3.2: Indicator Metadata – CV9
+(For each indicator selected)
+Indicator Name | CV 9 Economic Performance (CV 9.1 Affordability CV 9.2 SME performance
+Indicator Unit | Purchasing power parity/ Affordability % of income spent on rent/ groceries/ transport; # of SMEs and % of SMEs that are social innovation
+Definition | The ability of households and individuals to afford basic goods while saving.
 The Performance of SMEs is an indicator of a healthy innovation economy.  |
-|  Calculation | NA  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | No  |
-|  If yes, which emission source sectors does it measure? |   |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | Yes  |
-|  If yes, which co-benefit does it measure? | NA  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-|  If yes, which action and impact pathway is it relevant for? | Impact Pathways according to Module B-1
+Calculation | NA
+Indicator Context
+Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | No
+If yes, which emission source sectors does it measure?
+Does the indicator measure indirect impacts (i.e., co-benefits)? | Yes
+If yes, which co-benefit does it measure? | NA
+Is the indicator useful for monitoring the output/impact of action(s)? | Yes
+If yes, which action and impact pathway is it relevant for? | Impact Pathways according to Module B-1
 All actions  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No  |
-|  Data requirements |   |
-|  Expected data source | Dublin Economic Monitor, Daft, CSO, ESRI  |
-|  Is the data source local or regional/national? | Local and National  |
-|  Expected availability | Monthly  |
-|  Suggested collection interval | Monthly  |
-|  References |   |
-|  Deliverables describing the indicator | Full employment  |
-|  Other indicator systems using this indicator |   |
-|  B-3.2: Indicator Metadata – CV10  |   |
-| --- | --- |
-|  (For each indicator selected)  |   |
-|  Indicator Name | CV 10 – Traffic Volume (C10.1 Near Misses C10.2 Accidents)  |
-|  Indicator Unit | Number of vehicles during rush hour; # of near misses/ per day; # of Accidents per week, # of deaths/ per month  |
-|  Definition | This indicator is primarily focused on traffic volumes, recognising that traffic volumes are correlated with near misses, accidents and deaths, these are included as sub indicators. The objective of this indicator is a downward trajectory  |
-|  Calculation | NA  |
-|  Indicator Context |   |
+Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No
+Data requirements
+Expected data source | Dublin Economic Monitor, Daft, CSO, ESRI
+Is the data source local or regional/national? | Local and National
+Expected availability | Monthly
+Suggested collection interval | Monthly
+References
+Deliverables describing the indicator | Full employment
+Other indicator systems using this indicator
+B-3.2: Indicator Metadata – CV10
+(For each indicator selected)
+Indicator Name | CV 10 – Traffic Volume (C10.1 Near Misses C10.2 Accidents)
+Indicator Unit | Number of vehicles during rush hour; # of near misses/ per day; # of Accidents per week, # of deaths/ per month
+Definition | This indicator is primarily focused on traffic volumes, recognising that traffic volumes are correlated with near misses, accidents and deaths, these are included as sub indicators. The objective of this indicator is a downward trajectory
+Calculation | NA
+Indicator Context
 #
 ComhaVra Cathrach
 Shalai Aihai Clash
@@ -5535,37 +5470,35 @@ Climate Neutrality Action
 Plan
 C
 
-|  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | No  |
-| --- | --- |
-|  If yes, which emission source sectors does it measure? |   |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | Yes  |
-|  If yes, which co-benefit does it measure? | Improved road safety;  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-|  If yes, which action and impact pathway is it relevant for? | Impact Pathways according to Module B-1
+Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | No
+If yes, which emission source sectors does it measure?
+Does the indicator measure indirect impacts (i.e., co-benefits)? | Yes
+If yes, which co-benefit does it measure? | Improved road safety;
+Is the indicator useful for monitoring the output/impact of action(s)? | Yes
+If yes, which action and impact pathway is it relevant for? | Impact Pathways according to Module B-1
 Resilient City, Resource- Full City and Social City actions primarily, but it is anticipated that there will be some evidence of transport emissions reducing in relation to Creative city actions, specifically those related to decarbonisation zones, and innovation districts.  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? |   |
-|  Data requirements |   |
-|  Expected data source | Met Eireann  |
-|  Is the data source local or regional/national? | National  |
-|  Expected availability | Monthly  |
-|  Suggested collection interval | Monthly  |
-|  References |   |
-|  Deliverables describing the indicator | Improved active travel infrastructure, increased use of active travel infrastructure.  |
-|  Other indicator systems using this indicator |   |
-|  B-3.2: Indicator Metadata – CV11  |   |
-| --- | --- |
-|  (For each indicator selected)  |   |
-|  Indicator Name | CV 11 Ground Level Ozone  |
-|  Indicator Unit | μg/ m3 and # of days  |
-|  Definition | Ground level ozone on hot days poses a health risk. It is created when VOCs and NOx react  |
-|  Calculation | NA  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | Yes  |
-|  If yes, which emission source sectors does it measure? | Transport  |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | Yes  |
-|  If yes, which co-benefit does it measure? | Potential impacts on health; cascading and compound impacts of pollutants and UHI on human health  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-|  If yes, which action and impact pathway is it relevant for? | Impact Pathways according to Module B-1
+Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms?
+Data requirements
+Expected data source | Met Eireann
+Is the data source local or regional/national? | National
+Expected availability | Monthly
+Suggested collection interval | Monthly
+References
+Deliverables describing the indicator | Improved active travel infrastructure, increased use of active travel infrastructure.
+Other indicator systems using this indicator
+B-3.2: Indicator Metadata – CV11
+(For each indicator selected)
+Indicator Name | CV 11 Ground Level Ozone
+Indicator Unit | μg/ m3 and # of days
+Definition | Ground level ozone on hot days poses a health risk. It is created when VOCs and NOx react
+Calculation | NA
+Indicator Context
+Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | Yes
+If yes, which emission source sectors does it measure? | Transport
+Does the indicator measure indirect impacts (i.e., co-benefits)? | Yes
+If yes, which co-benefit does it measure? | Potential impacts on health; cascading and compound impacts of pollutants and UHI on human health
+Is the indicator useful for monitoring the output/impact of action(s)? | Yes
+If yes, which action and impact pathway is it relevant for? | Impact Pathways according to Module B-1
 Resilient City, Resource- Full City and Social City actions primarily, but it is anticipated that there will be some evidence of transport emissions reducing in relation to Creative city actions, specifically those related to decarbonisation zones, and innovation districts.  |
 
 4
@@ -5576,40 +5509,38 @@ Dublin City Council
 Climate Neutrality Action
 Plan
 C
-|   | related to decarbonisation zones, and innovation districts.  |
-| --- | --- |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? |   |
-|  Data requirements |   |
-|  Expected data source | Dublin City Air and Noise, Met Eireann,  |
-|  Is the data source local or regional/national? | National  |
-|  Expected availability | Monthly  |
-|  Suggested collection interval | Monthly  |
-|  References |   |
-|  Deliverables describing the indicator |   |
-|  Other indicator systems using this indicator |   |
-|  B-3.2: Indicator Metadata – CV12  |   |
-| --- | --- |
-|  (For each indicator selected)  |   |
-|  Indicator Name | CV 12 Aero Allergens  |
-|  Indicator Unit | μg/ m3  |
-|  Definition | Presence of pollen and other allergens in high concentrations that can exasperate respiratory conditions.  |
-|  Calculation | NA  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | No  |
-|  If yes, which emission source sectors does it measure? |   |
-|  Does the indicator measure indirect impacts (i.e., co-benefits)? | No  |
-|  If yes, which co-benefit does it measure? | NA  |
-|  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
-|  If yes, which action and impact pathway is it relevant for? | Impact Pathways according to Module B-1 Resilient City, Resource- Full City and Social City actions primarily, but it is anticipated that there will be some evidence of transport emissions reducing in relation to Creative city actions, specifically those related to decarbonisation zones, and innovation districts.  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? |   |
-|  Data requirements |   |
-|  Expected data source | Met Eireann  |
-|  Is the data source local or regional/national? | National  |
-|  Expected availability | Monthly  |
-|  Suggested collection interval | Monthly  |
-|  References |   |
-|  Deliverables describing the indicator |   |
-|  Other indicator systems using this indicator |   |
+related to decarbonisation zones, and innovation districts.
+Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms?
+Data requirements
+Expected data source | Dublin City Air and Noise, Met Eireann,
+Is the data source local or regional/national? | National
+Expected availability | Monthly
+Suggested collection interval | Monthly
+References
+Deliverables describing the indicator
+Other indicator systems using this indicator
+B-3.2: Indicator Metadata – CV12
+(For each indicator selected)
+Indicator Name | CV 12 Aero Allergens
+Indicator Unit | μg/ m3
+Definition | Presence of pollen and other allergens in high concentrations that can exasperate respiratory conditions.
+Calculation | NA
+Indicator Context
+Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | No
+If yes, which emission source sectors does it measure?
+Does the indicator measure indirect impacts (i.e., co-benefits)? | No
+If yes, which co-benefit does it measure? | NA
+Is the indicator useful for monitoring the output/impact of action(s)? | Yes
+If yes, which action and impact pathway is it relevant for? | Impact Pathways according to Module B-1 Resilient City, Resource- Full City and Social City actions primarily, but it is anticipated that there will be some evidence of transport emissions reducing in relation to Creative city actions, specifically those related to decarbonisation zones, and innovation districts.
+Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms?
+Data requirements
+Expected data source | Met Eireann
+Is the data source local or regional/national? | National
+Expected availability | Monthly
+Suggested collection interval | Monthly
+References
+Deliverables describing the indicator
+Other indicator systems using this indicator
 5
 #
 Comhajria Cathrach
@@ -5873,8 +5804,6 @@ Total Project Cost (Capex + Opex)
 
 ## Describe:
 
-|  |
-| --- |
 
 8
 2
@@ -6117,11 +6046,10 @@ Ensure resources (staff and finance) are adequate and available.
 
 Procedures:
 
-|   | Ordinary meeting | Extraordinary meeting | Agenda & Reports  |
-| --- | --- | --- | --- |
-|  ACE Steering Group | Every Quarter
+Ordinary meeting | Extraordinary meeting | Agenda & Reports
+ACE Steering Group | Every Quarter
 Second Wednesday of January, April, July and October | At any time upon request of the Chief Executive | Agenda and Reports received 7 days in advance of meetings outline progress and challenges to be addressed  |
-|  Executive Managers Group. | Every Quarter
+Executive Managers Group. | Every Quarter
 Third Wednesday of December, March, June and September | At any time upon request of any member of the group | Agenda and updates for report to be submitted to ACE Steering Group  |
 
 # Executive Managers Group Members
@@ -6243,14 +6171,13 @@ Plan
 C
 5
 
-|   | agency of the four Dublin Local Authorities. They are tasked with supporting Dublin City with reducing energy use through various programmes | research and analysis to identify possible energy solutions for Dublin | profit limited by liability company owned by Dublin City Council, Dun Laoghaire Rathdown County Council, South Dublin County Council and Fingal County Council. They liaise with the Sustainable energy authority of Ireland on our behalf. | supporting the City Council in reducing energy use and decarbonising our buildings. They provide community engagement supports through their Home Energy Savings Kits. | in Built Environment and Energy Sectors.  |
-| --- | --- | --- | --- | --- | --- |
-|  Dublin Belfast Economic Corridor | The Dublin Belfast Economic Corridor (DBEC) is a key economic region for both Northern Ireland and Ireland, stretching 100 miles between the two largest cities on the island: Ireland's capital city, Dublin and Northern Ireland's capital city, Belfast.
+agency of the four Dublin Local Authorities. They are tasked with supporting Dublin City with reducing energy use through various programmes | research and analysis to identify possible energy solutions for Dublin | profit limited by liability company owned by Dublin City Council, Dun Laoghaire Rathdown County Council, South Dublin County Council and Fingal County Council. They liaise with the Sustainable energy authority of Ireland on our behalf. | supporting the City Council in reducing energy use and decarbonising our buildings. They provide community engagement supports through their Home Energy Savings Kits. | in Built Environment and Energy Sectors.
+Dublin Belfast Economic Corridor | The Dublin Belfast Economic Corridor (DBEC) is a key economic region for both Northern Ireland and Ireland, stretching 100 miles between the two largest cities on the island: Ireland's capital city, Dublin and Northern Ireland's capital city, Belfast.
 
 As a gateway for Northern Irish, UK, Irish, EU and international markets, the corridor is a key strategic location for cross-border trade. | DBEC provides an opportunity to partner and develop solutions that support the transition to low carbon economy. | The Dublin Belfast Economic Corridor partnership is a strategic collaboration between eight councils and two universities.
 
 The Area also includes 6 seaports and 2 airports | Currently Dublin City Council and Belfast City Council have partnered on a feasibility study and are now seeking to identify further funding to progress a business case for the Connected Circular Economy. This will support the growth SMEs and innovation in the social and circular economy across the construction and food sectors. | Reduction in emissions in Built Environment, AFOLU, waste. Co benefits will be social cohesion on the island, new economic opportunities.  |
-|  Dublin.ie | Dublin.ie is the place brand for County Dublin. Dublin.ie was designed to celebrate | Dublin.ie communicates what is happening in the city, and show cases | An initiative of the four Dublins, Dublin.ie is focused on celebrating the best of Dublin and | Dublin.ie communicates to a broad audience what is happening in the City. | Attention on what's happening in Dublin that leads to investment and innovation.  |
+Dublin.ie | Dublin.ie is the place brand for County Dublin. Dublin.ie was designed to celebrate | Dublin.ie communicates what is happening in the city, and show cases | An initiative of the four Dublins, Dublin.ie is focused on celebrating the best of Dublin and | Dublin.ie communicates to a broad audience what is happening in the City. | Attention on what's happening in Dublin that leads to investment and innovation.
 #
 
 Comhatite Cathrach
@@ -6294,11 +6221,9 @@ Plan
 
 #
 
-|  |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- |
-|  Dublin Public Participation Network | Network of over 700 Community Groups comprising of Voluntary, Social Inclusion and Environmental Pillars. | Improved social cohesion.Amplification of participatory initiatives. Opportunity to diminish policy silos.Knowledge and resource sharing. | Dublin City Council Dept. Of Rural and Community Development 700 Member Organisations | Input from PPN Pillars to Dublin City Council SPCs via PPN Representative roles. Capacity building at local level. Access to grant funding for climate initiatives. | Improved health outcomes.Reduction in emissions (built environment) due to energy saving projects.Increased social cohesion.Increased volunteering rates.  |
-|  Dublin Cycling Campaign | Dublin Cycling Campaign is an independent, voluntary group lobbying local and national government to bring about improved conditions for cyclists and greater recognition of the benefits of cycling | Dublin Cycling Campaign has been and continues to be instrumental in supporting measures to encourage cycling including Dublin Bikes, and reduced speed limits. They were key in bringing VeloCity to Dublin. | DCC, European Cycling Federation, Irish Doctors for the Environment, NTA, TII, An Taisce, | Dublin Cycling Campaign engage with Dublin City Council as a member of the Transport Strategic Policy Committee | Improved uptake of active travel modes, advocating for safer routes, drawing attention to the gender gap in cycling  |
-|  Irish Environmental Network | The Irish Environmental Network is a network of individual environmental Non-Government Organisations (NGOs) that work individually and, as appropriate, jointly to protect and enhance the environment, and to place environmental issues centre stage in Ireland and internationally. The IEN | The IEN supports our members in their valuable work by distributing core funding and providing help through training and advice | Membership of IEN is diverse and include advocacy groups involved in active travel, heritage, biodiversity conservation, to waste and circular economy | IEN, represents to government the capacity building and funding needs of its member organisations, all of whom are involved in one way or another in the well-being, protection and enhancement of the environment | Improved environmental health, reduction in emissions in all sectors.  |
+Dublin Public Participation Network | Network of over 700 Community Groups comprising of Voluntary, Social Inclusion and Environmental Pillars. | Improved social cohesion.Amplification of participatory initiatives. Opportunity to diminish policy silos.Knowledge and resource sharing. | Dublin City Council Dept. Of Rural and Community Development 700 Member Organisations | Input from PPN Pillars to Dublin City Council SPCs via PPN Representative roles. Capacity building at local level. Access to grant funding for climate initiatives. | Improved health outcomes.Reduction in emissions (built environment) due to energy saving projects.Increased social cohesion.Increased volunteering rates.
+Dublin Cycling Campaign | Dublin Cycling Campaign is an independent, voluntary group lobbying local and national government to bring about improved conditions for cyclists and greater recognition of the benefits of cycling | Dublin Cycling Campaign has been and continues to be instrumental in supporting measures to encourage cycling including Dublin Bikes, and reduced speed limits. They were key in bringing VeloCity to Dublin. | DCC, European Cycling Federation, Irish Doctors for the Environment, NTA, TII, An Taisce, | Dublin Cycling Campaign engage with Dublin City Council as a member of the Transport Strategic Policy Committee | Improved uptake of active travel modes, advocating for safer routes, drawing attention to the gender gap in cycling
+Irish Environmental Network | The Irish Environmental Network is a network of individual environmental Non-Government Organisations (NGOs) that work individually and, as appropriate, jointly to protect and enhance the environment, and to place environmental issues centre stage in Ireland and internationally. The IEN | The IEN supports our members in their valuable work by distributing core funding and providing help through training and advice | Membership of IEN is diverse and include advocacy groups involved in active travel, heritage, biodiversity conservation, to waste and circular economy | IEN, represents to government the capacity building and funding needs of its member organisations, all of whom are involved in one way or another in the well-being, protection and enhancement of the environment | Improved environmental health, reduction in emissions in all sectors.
 #
 Comhatile Cathrach
 Shaila Atha Cliath
@@ -6306,12 +6231,11 @@ Dublin City Council
 Climate Neutrality Action
 Plan
 C
-|   | works to promote the interlinked principles of environmental, social and economic sustainability. In representing the environment its Members represent a common good and not self-interest. |  |  |  |   |
-| --- | --- | --- | --- | --- | --- |
-|  Irish Doctors for the Environment | Irish Doctors for Environment is an NGO and registered charity consisting of doctors, medical students and allied healthcare professionals in Ireland who aim to create awareness, interest and implement action around environment health and the impact it has on our patients' health. | IDE works alongside various NGOs, environmentalists, the government, scientists and other organisations both nationally and internationally to ensure full co-operation and education regarding the global issues of climate change which affect local, national and international health.
+works to promote the interlinked principles of environmental, social and economic sustainability. In representing the environment its Members represent a common good and not self-interest.
+Irish Doctors for the Environment | Irish Doctors for Environment is an NGO and registered charity consisting of doctors, medical students and allied healthcare professionals in Ireland who aim to create awareness, interest and implement action around environment health and the impact it has on our patients' health. | IDE works alongside various NGOs, environmentalists, the government, scientists and other organisations both nationally and internationally to ensure full co-operation and education regarding the global issues of climate change which affect local, national and international health.
 
 IDE strives to support initiatives from local community level to policy change and implementation at a national and international level. | Planetary Health Alliance, Irish Forum on Global Health, Health Care Without Harm, Clinicians for Planetary health, Stop Climate Chaos, Plant Based Doctors Ireland; Association of Medical Students Ireland | IDE is committed to educating doctors and the public on the climate crisis and its health effects. IDE aim to be a conduit through which those interested can learn more about the issues facing us and how healthcare and climate interact. | Improved environmental health, reduction in emissions in all sectors.  |
-|  An Taisce | An Taisce is Ireland's National Trust, and the mission of An Taisce is to protect and celebrate Ireland's natural and | An Taisce's work falls into six strategic pillars under three broad categories. The shared nature of the pillars and | Dublin City Council, Schools, Universities, Irish Environmental Network, Clean Coasts | An Taisce is committed protecting Ireland's nature environment through education and engagement | Improved environmental health, reduction in emissions in all sectors.  |
+An Taisce | An Taisce is Ireland's National Trust, and the mission of An Taisce is to protect and celebrate Ireland's natural and | An Taisce's work falls into six strategic pillars under three broad categories. The shared nature of the pillars and | Dublin City Council, Schools, Universities, Irish Environmental Network, Clean Coasts | An Taisce is committed protecting Ireland's nature environment through education and engagement | Improved environmental health, reduction in emissions in all sectors.
 9
 #
 Comhatile Cathrach
@@ -6321,12 +6245,11 @@ Climate Neutrality Action
 Plan
 #
 
-|   | built environment for present and future generations, and to ensure Ireland leads the way in defending a liveable planet. | their goals reflects the increasingly integrated nature of how An Taisce operates. The work of the education and advocacy teams, for example, is in service of strategic goals that fall under multiple pillars.
+built environment for present and future generations, and to ensure Ireland leads the way in defending a liveable planet. | their goals reflects the increasingly integrated nature of how An Taisce operates. The work of the education and advocacy teams, for example, is in service of strategic goals that fall under multiple pillars.
 
 The six strategic pillars are grouped under three broad categories: Nature, Built Environment and People. |  | programmes that foster care of the natural and built environment. |   |
-| --- | --- | --- | --- | --- | --- |
-|  ECO UNESCO | ECO-UNESCO is Ireland's Environmental Education and Youth Organisation that works to conserve the environment and empower young people. | ECO-UNESCO aims to support the personal development of young people and raise environmental awareness through practical environmental projects, such as ECO Dens, Young Environmentalist Awards | Dublin City Council, UNESCO, Department of Foreign Affairs, EPA, Department of Environment Climate and Communications | ECO-UNESCO is committed promoting the voice of young people in the policy dialogue. Further the grounding their work in the SDGs ensures that the next generation of policy leaders have a deep understanding of the SDGs that is second nature. | Social Cohesion, Just transition, Equity, Improved environmental health.  |
-|  Eat the Streets | Eat the Streets is Dublin City Council's annual food and climate change festival, that brings together chefs, urban growers, and communities to | Eat the Streets aims to create a meaningful conversation around food and climate change and empower people to start taking action at home in the | Dublin City Council, SPADE Enterprise, Failte Ireland, Third Level, Chefs, Food writers, Dublin Food Chain | Eat the Streets is about celebrating Ireland's food history and empowering people to take action and support Ireland's agricultural sector to transition to a | Social Cohesion, improved health and well-being, Reduced emissions from waste and AFOLU, increased greening.  |
+ECO UNESCO | ECO-UNESCO is Ireland's Environmental Education and Youth Organisation that works to conserve the environment and empower young people. | ECO-UNESCO aims to support the personal development of young people and raise environmental awareness through practical environmental projects, such as ECO Dens, Young Environmentalist Awards | Dublin City Council, UNESCO, Department of Foreign Affairs, EPA, Department of Environment Climate and Communications | ECO-UNESCO is committed promoting the voice of young people in the policy dialogue. Further the grounding their work in the SDGs ensures that the next generation of policy leaders have a deep understanding of the SDGs that is second nature. | Social Cohesion, Just transition, Equity, Improved environmental health.
+Eat the Streets | Eat the Streets is Dublin City Council's annual food and climate change festival, that brings together chefs, urban growers, and communities to | Eat the Streets aims to create a meaningful conversation around food and climate change and empower people to start taking action at home in the | Dublin City Council, SPADE Enterprise, Failte Ireland, Third Level, Chefs, Food writers, Dublin Food Chain | Eat the Streets is about celebrating Ireland's food history and empowering people to take action and support Ireland's agricultural sector to transition to a | Social Cohesion, improved health and well-being, Reduced emissions from waste and AFOLU, increased greening.
 
 0
 #

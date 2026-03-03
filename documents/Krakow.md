@@ -1478,7 +1478,7 @@ Roadmap for climate neutrality by 2030
 O
 
 |   |  | • Poland's Energy Policy until 2040.
-• European Geen Deal. |  |  |  | tonnes) from an average of 23% to 30% and heavy trucks (>3.5 tonnes) from 45% to 60%.  |
+| • European Geen Deal. |  |  |  | tonnes) from an average of 23% to 30% and heavy trucks (>3.5 tonnes) from 45% to 60%.  |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  Electrification of trucks | • City of Kraków Climate Change Adaptation Plan.
 • Sustainable mobility plan for Krakow Metropolis.
@@ -2232,7 +2232,7 @@ Table B-1.1: Impact paths
 |  Sector and system leverage | Early changes (1-2 years) | Late results (3-4 years) | Direct effects (emission reductions) | Indirect effects (co-benefits)  |
 | --- | --- | --- | --- | --- |
 |  Sector: Buildings and heating.
-System leverage: Technology/Infrastructure. | Measures to decarbonise the district heating system (heat pumps, biogas, etc.). | Continued and stable growth of RES in the city's energy mix. | 671 thousand tonnes of CO2e | Increase in the number of jobs in the RES sector.  |
+| System leverage: Technology/Infrastructure. | Measures to decarbonise the district heating system (heat pumps, biogas, etc.). | Continued and stable growth of RES in the city's energy mix. | 671 thousand tonnes of CO2e | Increase in the number of jobs in the RES sector.  |
 |   |  Promoting the modernisation of technology and infrastructure used in buildings (e.g. lighting, replacement of valves). | Reducing energy consumption in buildings by replacing appliances with more efficient ones. |   | Lower energy charges for residents.  |
 |   |  Thermo-modernisation of buildings to improve energy efficiency. | Raising the energy efficiency standard of buildings. |   | Lower energy bills for residents.
 Job creation.
@@ -2249,12 +2249,12 @@ O
 |   | the rising costs of exploiting coal from Polish mines and cutting off gas imports from Russia. | actions taken earlier. |  |   |
 | --- | --- | --- | --- | --- |
 |   |  Generation of system solutions for building thermo-modernisation schemes at local, regional and national level. | Implementation of building retrofit schemes involving multiple stakeholder groups (local authorities, businesses, cooperatives, residents, etc.). |   | Decline in fuel poverty.
-Engaging citizens in co-creating climate neutrality measures.  |
+| Engaging citizens in co-creating climate neutrality measures.  |
 |   |  Work to implement energy standards for new buildings. | Construction of new buildings with a baseline high energy standard. |   | Job creation.
-Reducing the urban heat island.  |
+| Reducing the urban heat island.  |
 |   |  Developing recommendations and recommendations to the national level to invest in energy companies due to the need to meet EU obligations and ensure national energy security. | Thanks to the increasing share of new technologies, energy generation should become increasingly cheaper, allowing energy companies to allocate more of their own capital to investment. |   | Increase in capital invested in climate projects and activities.  |
 |  Sector: Buildings and heating.
-System leverage: Education and Skills. | Educational campaigns targeting different social groups to raise awareness of energy savings. | Reducing energy demand in buildings. |   | Lower energy charges for residents.  |
+| System leverage: Education and Skills. | Educational campaigns targeting different social groups to raise awareness of energy savings. | Reducing energy demand in buildings. |   | Lower energy charges for residents.  |
 |   |  Develop schemes and models for thermal modernisation with the participation of multiple stakeholder groups. | Scaling up and replicating the solutions developed. |   | Development of public participation processes.  |
 
 0
@@ -2270,15 +2270,15 @@ Lower energy charges for residents.
 Reducing the urban heat island.  |
 | --- | --- | --- | --- | --- |
 |   |  Development of schemes and financing models for thermal modernisation with the participation of multiple stakeholder groups. | Scaling up and replicating the solutions developed. |   | Development of public participation processes.
-Engaging citizens in co-creating climate neutrality measures.  |
+| Engaging citizens in co-creating climate neutrality measures.  |
 |  Sector: Buildings and heating.
-System leverage: Democracy and Participation | Continue to support citizens with energy advice. | Increasing interest in RES solutions among citizens. |   | Job creation.  |
+| System leverage: Democracy and Participation | Continue to support citizens with energy advice. | Increasing interest in RES solutions among citizens. |   | Job creation.  |
 |  Sector: Buildings and heating.
-System leverage: Social innovation. | Developing district and community energy model solutions with significant citizen involvement. | Developing sustainable urbanism. |   | Development of public participation processes.
-Engaging citizens in co-creating climate neutrality measures.  |
+| System leverage: Social innovation. | Developing district and community energy model solutions with significant citizen involvement. | Developing sustainable urbanism. |   | Development of public participation processes. |
+| Engaging citizens in co-creating climate neutrality measures.  |
 |  Sector: Transport.
-System leverage: Technology/Infrastructure. | Development of a network of electric car chargers. | The growing popularity of electric cars. | 135 thousand tonnes of CO2e | Less air pollution.
-Reducing the urban heat island.  |
+| System leverage: Technology/Infrastructure. | Development of a network of electric car chargers. | The growing popularity of electric cars. | 135 thousand tonnes of CO2e | Less air pollution. |
+| Reducing the urban heat island.  |
 |   |  Expansion of the public transport fleet towards zero-emission. | Decrease in emissions from the public transport sector. |   | Less air pollution.
 Reducing the urban heat island.  |
 
@@ -2297,13 +2297,13 @@ Less air pollution.
 Less noise pollution.  |
 |   |  Energy storage acquisition and cost-effective distribution programmes. | Reduced aggregate energy consumption in transport. |   | Decrease in the cost of maintaining public transport.  |
 |  Sector: Transport.
-System leverage: Governance and Policy. | Creation of a Clean Transport Zone. | Displacement of old and carbon-intensive modes of transport and optimisation of freight logistics. |   | Less air pollution.
-Less noise pollution.  |
+| System leverage: Governance and Policy. | Creation of a Clean Transport Zone. | Displacement of old and carbon-intensive modes of transport and optimisation of freight logistics. |   | Less air pollution. |
+| Less noise pollution.  |
 |   |  Development of the functioning of the public transport system. | A greater proportion of people using public transport. |   | Increased road safety.
 Reducing the urban heat island.
 Increase in improved well-being.  |
 |   |  Popularisation of "car-pooling" and alternative modes of transport through regulation. | Increasing popularity of alternative modes of transport. |   | Less air pollution.
-Less noise pollution.  |
+| Less noise pollution.  |
 |   |  Change of use of public spaces e.g. fewer parking spaces, pedestrian streets. | Reduce car transport to the city centre. |   | Less air pollution.
 Less noise pollution.  |
 
@@ -2313,10 +2313,10 @@ Roadmap for climate neutrality by 2030
 O
 
 |   |  |  |  | Reducing the urban heat island.
-Development of green spaces.  |
+| Development of green spaces.  |
 | --- | --- | --- | --- | --- |
 |   |  Regulation of freight transport requirements. | Increasing the loading of lorries. |   | Less air pollution.
-Less noise pollution.  |
+| Less noise pollution.  |
 |  Sector: Transport.
 System leverage: Education and Skills. | Popularise alternative means of transport (e.g. scooters). | Reduce the need for private cars for city centre residents. |   | Less air pollution.
 Improving the fitness and health of residents.
@@ -2326,8 +2326,8 @@ System leverage: Democracy and Social Participation. | The popularisation of hyb
 Less noise pollution.
 Increase in improved wellbeing.  |
 |  Sector: Electricity.
-System leverage: Technology/Infrastructure. | Development of RES-based solutions (photovoltaics, etc.). | Increase of RES in the energy mix of the city. | 559 thousand tonnes of CO2e | Lower energy charges for residents.
-Job creation.  |
+| System leverage: Technology/Infrastructure. | Development of RES-based solutions (photovoltaics, etc.). | Increase of RES in the energy mix of the city. | 559 thousand tonnes of CO2e | Lower energy charges for residents. |
+| Job creation.  |
 |   |  Design of new photovoltaic farms. | Increase of RES in the energy mix of the city. |   | Job creation.  |
 |  Sector: Electricity.
 System leverage: Governance and Policy. | There is strong support for a change in the structure of electricity generation at plants in the city due to EU commitments, the | The high level of commitment should remain high because of the irreversible actions taken earlier. |   | Increase in capital invested in climate projects and activities.  |
@@ -2342,11 +2342,11 @@ O
 |   |  Developing recommendations and recommendations to the national level to invest in energy companies due to the need to meet EU obligations and ensure national energy security. | Thanks to the increasing share of new technologies, power generation should become increasingly cheaper, allowing energy companies to allocate more of their own capital to investment. |   | Increase in capital invested in climate projects and activities.  |
 |   |  Purchasing green energy. | This measure will reduce the carbon footprint generated by the city and allow the development of energy companies. |   | Increase in capital invested in climate projects and activities.  |
 |  Sector: Electricity.
-System leverage: Education and Skills. | Educational campaigns targeting different social groups to raise awareness of energy savings. | Reducing energy demand in buildings. |   | Lower energy charges for residents.  |
+| System leverage: Education and Skills. | Educational campaigns targeting different social groups to raise awareness of energy savings. | Reducing energy demand in buildings. |   | Lower energy charges for residents.  |
 |  Sector: Electricity.
-System leverage: Finance. | Financial support for those interested in investing in RES. | Increase of RES in the energy mix of the city. |   | Lower energy charges for residents.  |
+| System leverage: Finance. | Financial support for those interested in investing in RES. | Increase of RES in the energy mix of the city. |   | Lower energy charges for residents.  |
 |  Sector: Electricity.
-System leverage: Democracy and Social Participation. | Continue to support citizens with energy advice. | Increasing interest in RES solutions among citizens. |   | Job creation.  |
+| System leverage: Democracy and Social Participation. | Continue to support citizens with energy advice. | Increasing interest in RES solutions among citizens. |   | Job creation.  |
 |  Sector: Electricity.
 System leverage: Social Innovation. | Developing district and community energy model solutions with strong citizen involvement. | Developing sustainable urbanism. |   | Engaging citizens in co-creating climate neutrality measures.
 Development of public participation processes  |
@@ -2613,14 +2613,14 @@ The maximum total subsidy for the aforementioned elements may not exceed 50% of 
 |   |   |  |
 |  Reference to impact pathways | Impact sector | Buildings and heating.  |
 |   |  System lever | Technology/Infrastructure.
-Finance.  |
+| Finance.  |
 |   |  Impact (with reference to module B-1.1) | Thermo-modernisation of buildings to improve energy efficiency.
-Support for investment in thermal modernisation and RES programmes.  |
+| Support for investment in thermal modernisation and RES programmes.  |
 |  Implementation | Units/persons responsible for implementation | City of Krakow – Department of Air Quality.  |
 |   |  Scale of action and entities covered | Local action within the administrative boundaries of the city of Krakow.  |
 |   |  Stakeholders involved | City residents, construction companies, contractors, energy auditors.  |
 |   |  Comments on implementation - resources needed, timetable and milestones | This action addresses the emissions gap.
-The planned timeframe for the task runs from 2018 to 2030.  |
+| The planned timeframe for the task runs from 2018 to 2030.  |
 |  Receipts & costs | Renewable energy generated (if applicable) | -  |
 |   |  Energy removed/replaced, amount or type of fuel | -  |
 |   |  Estimated greenhouse gas emission reductions for each emission source sector | Estimated reduction in the Buildings and heating sector - 1 255 tCO₂e.  |
@@ -2783,8 +2783,7 @@ O
 |  Description of operation | Name of the action | Project NEEST - NetZero Emission and Environmentally Sustainable Territories  |
 |  Reference to impact pathways | Type of action | Innovation and technology action.  |
 |   |  Description of operation | The anticipated outcome of the project will be schemes of practical solutions on how to improve the energy efficiency of buildings, which can be replicated throughout Poland. Through well-planned thermo-modernisation measures and organisational changes, the amount of electricity and heat supplied to buildings will be reduced. Lower energy demand will in turn translate into lower greenhouse gas emissions.
-
-The NEEST project will also produce guidelines on how to thermally upgrade different types of urban quarters to reduce emissions to almost zero and guidance on how to finance their implementation. More on the NEEST project can be found in Module A-2 Evaluation of current strategies, policies and strategic management instruments.  |
+| The NEEST project will also produce guidelines on how to thermally upgrade different types of urban quarters to reduce emissions to almost zero and guidance on how to finance their implementation. More on the NEEST project can be found in Module A-2 Evaluation of current strategies, policies and strategic management instruments.  |
 |   |  Impact sector | Buildings and heating and Electricity.  |
 |  Implementation | System lever | Social innovation.
 Governance and policy.
@@ -2932,8 +2931,7 @@ Roadmap for climate neutrality by 2030
 O
 
 |   |  | The campaign intends to introduce new governance models for housing communities and their integration into the local climate neutrality ecosystem.
-
-Through these measures, the local authority will contribute to the creation of a more sustainable, greener urban environment, which contributes to the overall reduction of emissions in the building sector and the promotion of zero-emission construction.  |
+| Through these measures, the local authority will contribute to the creation of a more sustainable, greener urban environment, which contributes to the overall reduction of emissions in the building sector and the promotion of zero-emission construction.  |
 | --- | --- | --- |
 |  Reference to impact pathways | Impact sector | Buildings and heating.  |
 |   |  System lever | Technology/Infrastructure.
@@ -2948,7 +2946,7 @@ Developing district and community energy model solutions with strong citizen inv
 |   |  Scale of action and entities covered | City-wide action.  |
 |   |  Stakeholders involved | Municipal companies, private companies, developers, residents, construction companies, scientific institutes, ngo.  |
 |   |  Comments on implementation - resources needed, timetable and milestones | This action addresses the emissions gap.
-The planned timeframe for the task is between 2024 and 2030.  |
+| The planned timeframe for the task is between 2024 and 2030.  |
 |  Receipts and costs | Renewable energy generated (if applicable) | -  |
 |   |  Energy removed/replaced, amount or type of fuel | -  |
 |   |  Estimated greenhouse gas emission reductions for each emission source sector | Estimated reduction in the Buildings and heating sector - 42 472 tCO_{2e}.  |
@@ -3032,9 +3030,9 @@ PLN 6,000 gross for the purchase and installation of vehicle charging stations.
 The call for applications has not yet taken place due to a lack of adequate funding.  |
 | --- | --- | --- |
 |  Reference to impact pathways | Impact sector | Buildings and heating.
-Electricity.  |
+| Electricity.  |
 |   | System lever | Technology/Infrastructure.
-Finance.  |
+| Finance.  |
 |   | Impact (with reference to module B-1.1) | Support for investment in thermal modernisation and RES programmes.
 Investment in energy storage technologies.
 Development of RES-based solutions.  |
@@ -3302,7 +3300,7 @@ increasing the involvement of residents and stakeholders;
 Developing a 'City Vision 2050' as a pathway to achieving climate neutrality.  |
 |  Reference to impact pathways | Impact sector | Electricity.  |
 |   |  System lever | Social innovation.
-Education and skills.  |
+| Education and skills.  |
 |   |  Impact (with reference to module B-1.1) | Developing district and community energy model solutions with strong citizen involvement.  |
 2
 
@@ -3335,8 +3333,7 @@ Roadmap for climate neutrality by 2030
 O
 
 |   |  | ensure that energy community projects that have already been established can operate and grow in the medium to long term; to encourage and stimulate the creation of new energy projects implemented by energy communities. To this end, the project will operationalise a transnational network of knowledge and competence providers and mobilise and engage key stakeholders around three Operational Integrated Service Centres. These will be established in three pilot areas, represented in the consortium by the Metropolis of Barcelona in Spain, the Association of Krakow Metropolis in Poland, the National Association of Lazio Italian Municipalities in Italy.
-
-Objectives and outcomes: development of an energy community management toolkit; piloting within the HUB; creation of an e-learning toolkit; holistic energy community framework and collaborative methodology; energy community needs and best practice analysis; energy community management toolkit - prototype and update; HUB stakeholder engagement and mobilisation plan; pilot implementation plans for HUB; e-learning platform with training materials; testing and implementation of energy community management toolkit; development, maintenance and mapping plan communication and dissemination plan.  |
+| Objectives and outcomes: development of an energy community management toolkit; piloting within the HUB; creation of an e-learning toolkit; holistic energy community framework and collaborative methodology; energy community needs and best practice analysis; energy community management toolkit - prototype and update; HUB stakeholder engagement and mobilisation plan; pilot implementation plans for HUB; e-learning platform with training materials; testing and implementation of energy community management toolkit; development, maintenance and mapping plan communication and dissemination plan.  |
 | --- | --- | --- |
 |  Reference to impact pathways | Impact sector | Electricity.  |
 |   |  System lever | Social innovation.
@@ -3536,7 +3533,7 @@ end - Mogila housing estate (Nowa Huta) or Kocmyrzowska street (Wzgórza Krzesł
 Depending on which option is chosen, the length of the route is about 25 km and about 20 interchange stops. |
 | Reference to impact pathways | Impact sector | Transport. |
 | System lever | Technology/Infrastructure.
-Governance and policy. |
+| Governance and policy. |
 | Impact (with reference to module B-1.1) | Expansion of public transport infrastructure.
 Expansion of the public transport fleet towards zero-emission.
 Development of the functioning of the public transport system. |
@@ -3659,8 +3656,7 @@ B-2.2: Outline of individual activities - TR-6
 | --- | --- | --- |
 |   |  Type of action | Technical and infrastructural action.  |
 |   |  Description of operation | The project will see the purchase of 30 new low-floor tram cars, including 10 two-way 32-34m tram cars, 10 one-way 32-34m tram cars and 10 one-way 42-45m tram cars, equipped with an overhead powerless running system and overrun platforms for the disabled, air conditioning, a monitoring system, and other amenities.
-
-The development of Intelligent Transport Systems (ITS) in Krakow includes the installation of Dynamic Passenger Information (DIP) boards at bus and tram stops, purchase and installation of auto-computers for vehicles, installation of Variable Message Signs (VMS) at entrances to the city and detectors, expansion of the transport network, access control in designated areas, installation of number plate recognition devices, and informative parking signs in the inner city. These initiatives will have a positive impact on the area of urban transport through better passenger information, smoother traffic, punctuality, shorter travel times, and better connections to neighbouring municipalities, which will encourage the use of public transport and alternative means of transport.  |
+| The development of Intelligent Transport Systems (ITS) in Krakow includes the installation of Dynamic Passenger Information (DIP) boards at bus and tram stops, purchase and installation of auto-computers for vehicles, installation of Variable Message Signs (VMS) at entrances to the city and detectors, expansion of the transport network, access control in designated areas, installation of number plate recognition devices, and informative parking signs in the inner city. These initiatives will have a positive impact on the area of urban transport through better passenger information, smoother traffic, punctuality, shorter travel times, and better connections to neighbouring municipalities, which will encourage the use of public transport and alternative means of transport.  |
 |  Reference to impact pathways | Impact sector | Transport.  |
 |   |  System lever | Technology/Infrastructure.
 Governance and policy.
@@ -3705,8 +3701,7 @@ Roadmap for climate neutrality by 2030
 O
 
 |   |  | the works planned include those related to the overhead line, lighting and drainage, as well as the reconstruction of the road system. In Straszewskiego Street, on the other hand, modernisation of the Piłsudskiego junction at the Jagiellonian University, the overhead line, lighting and drainage are planned. The entire project is located in the city centre, where there is a restricted traffic zone and traffic organisation.
-
-The measure also includes work on the track and road system in the section from the junction with Dietla Street to Powstańców Śląskich Bridge, with the replacement of tram tracks and modernisation of the overhead catenary network, as well as the construction of pavements and cycle paths.  |
+| The measure also includes work on the track and road system in the section from the junction with Dietla Street to Powstańców Śląskich Bridge, with the replacement of tram tracks and modernisation of the overhead catenary network, as well as the construction of pavements and cycle paths.  |
 | --- | --- | --- |
 |  Reference to impact pathways | Impact sector | Transport.  |
 |   |  System lever | Technology/Infrastructure.
@@ -3845,17 +3840,17 @@ B-2.2: Outline of individual activities - TR-12
 | --- | --- | --- |
 |   |  Type of action | Organisational action.  |
 |   |  Description of operation | The SUM project primarily aims to create more sustainable and efficient urban transport solutions. The project aims to reduce transport emissions, reduce traffic congestion and make the city of Krakow friendlier for all its inhabitants. The project aims to introduce innovative and novel shared mobility systems in 15 European cities by 2026, with plans to cover 30 cities in Europe by 2030.
-Krakow, as a city participating in the SUM project, intends to pilot the new shared mobility system in selected areas of the city.  |
+| Krakow, as a city participating in the SUM project, intends to pilot the new shared mobility system in selected areas of the city.  |
 |  Reference to impact pathways | Impact sector | Transport.  |
 |   |  System lever | Governance and policy.
-Education and skills.  |
+| Education and skills.  |
 |   |  Impact (with reference to module B-1.1) | Popularise 'car-pooling' and alternative modes of transport through regulation.
-Popularise alternative means of transport (e.g. scooters).  |
+| Popularise alternative means of transport (e.g. scooters).  |
 |  Implementation | Units/persons responsible for implementation | Public Transport Board.  |
 |   |  Scale of action and entities covered | Action based on the development of ready-to-implement solutions.  |
 |   |  Stakeholders involved | Project partner cities.  |
 |   |  Comments on implementation - resources needed, timetable and milestones | This action addresses the emissions gap.
-The planned timeframe for the task is 2023-2026.  |
+| The planned timeframe for the task is 2023-2026.  |
 |  Receipts and costs | Renewable energy generated (if applicable) | -  |
 |   |  Energy removed/replaced, amount or type of fuel | -  |
 4
@@ -3921,7 +3916,7 @@ Roadmap for climate neutrality by 2030
 O
 
 |   |  | Education and Skills.
-Democracy and Social Participation.  |
+| Democracy and Social Participation.  |
 | --- | --- | --- |
 |   |  Impact (with reference to module B-1.1) | Extension of pedestrian and cycle infrastructure.
 Popularise 'car-pooling' and alternative modes of transport through regulation.
@@ -3933,7 +3928,7 @@ The popularisation of hybrid and remote working reduces the need to commute to w
 |   |  Scale of action and entities covered | Operating within the administrative boundaries of the city of Krakow.  |
 |   |  Stakeholders involved | Residents, motor businesses, cyclists, ngo, business.  |
 |   |  Comments on implementation - resources needed, timetable and milestones | This action addresses the emissions gap.
-The planned timeframe for the task is between 2024 and 2030.  |
+| The planned timeframe for the task is between 2024 and 2030.  |
 |  Receipts and costs | Renewable energy generated (if applicable) | -  |
 |   |  Energy removed/replaced, amount or type of fuel | -  |
 |   |  Estimated greenhouse gas emission reductions for each emission source sector | Estimated reduction in the Transport sector - 28 090 tCO2e.  |
@@ -4073,7 +4068,7 @@ Popularise 'car-pooling' and alternative modes of transport through regulation. 
 |   |  Scale of action and entities covered | Operating within the administrative boundaries of the city of Krakow.  |
 |   |  Stakeholders involved | Residents, car companies.  |
 |   |  Comments on implementation - resources needed, timetable and milestones | This action addresses the emissions gap.
-The planned timeframe for the task is 2024-2030.  |
+| The planned timeframe for the task is 2024-2030.  |
 |  Receipts and costs | Renewable energy generated (if applicable) | -  |
 |   |  Energy removed/replaced, amount or type of fuel | -  |
 |   |  Estimated greenhouse gas emission reductions for each emission source sector | Estimated reduction in the Transport sector - 56 180 tCO2e.  |
@@ -4130,18 +4125,18 @@ Roadmap for climate neutrality by 2030
 #
 
 |   |  | Climate Change as part of the INTERREG EUROPE Programme.
-The main objective of the project is to explore the possibilities for cities and implement measures to prevent/minimise waste generation when organising events, making them more sustainable and environmentally friendly. Identification of good practices will take place for different types of events, including closed/open, sports, business, cultural, scientific, religious, etc.  |
+| The main objective of the project is to explore the possibilities for cities and implement measures to prevent/minimise waste generation when organising events, making them more sustainable and environmentally friendly. Identification of good practices will take place for different types of events, including closed/open, sports, business, cultural, scientific, religious, etc.  |
 | --- | --- | --- |
 |  Reference to impact pathways | Impact sector | Waste management and CE.  |
 |   |  System lever | Social innovation.
-Education and skills.  |
+| Education and skills.  |
 |   |  Impact (with reference to module B-1.1) | Local initiatives to implement recycling and ecology ininitiatives.
-Informing people about the benefits of recycling and how to recycle.  |
+| Informing people about the benefits of recycling and how to recycle.  |
 |  Implementation | Units/persons responsible for implementation | Municipality of Krakow - Department of Municipal Economy and Climate.  |
 |   |  Scale of action and entities covered | City-wide action.  |
 |   |  Stakeholders involved | Numerous stakeholders linked to the project theme, residents.  |
 |   |  Comments on implementation - resources needed, timetable and milestones | This action addresses the emissions gap.
-The planned timeframe for the task is 2023-2027.  |
+| The planned timeframe for the task is 2023-2027.  |
 |  Receipts and costs | Renewable energy generated (if applicable) | -  |
 |   |  Energy removed/replaced, amount or type of fuel | -  |
 |   |  Estimated greenhouse gas emission reductions for each emission source sector | Estimated reduction in the Waste Management and CE sector - 1 872 tCO2e.  |
@@ -4182,8 +4177,7 @@ Roadmap for climate neutrality by 2030
 O
 
 |   |  | — implementation of a series of interviews and strategic meetings with representatives of local, regional and national administration, on instruments and support mechanisms that successfully use modern technologies when implementing the principles of the circular economy - pilot implementation of CE in an industrial plant.
-
-KPT's strategic partner is the Malopolska Voivodeship and the technology partner is Ergo Design. The project builds Kraków's position as one of the of the most important centres for pro-climate activities, characterised by a strong business, innovation and academic base.  |
+| KPT's strategic partner is the Malopolska Voivodeship and the technology partner is Ergo Design. The project builds Kraków's position as one of the of the most important centres for pro-climate activities, characterised by a strong business, innovation and academic base.  |
 | --- | --- | --- |
 |  Receipts and costs | Renewable energy generated (if applicable) | -  |
 |   |  Energy removed/replaced, amount or type of fuel | -  |
@@ -4480,9 +4474,9 @@ As part of the project two reports were prepared for Krakow Municipal Holding. V
 The report highlights that the comprehensive operation of such technology could start as early as 2030.  |
 |  Reference to impact pathways | Impact sector | Other.  |
 |  System lever | Impact (with reference to module B-1.1) | Technology/Infrastructure.
-Governance and Policy.  |
+| Governance and Policy.  |
 |   |   |  Displacement of carbon-intensive emission and pollution sources.
-Replacing heavy, carbon-intensive industry with activities based on new technologies.  |
+| Replacing heavy, carbon-intensive industry with activities based on new technologies.  |
 |  Implementation | Units/persons responsible for implementation | Municipality of Krakow (as monitoring entity)  |
 9
 
@@ -4840,7 +4834,7 @@ Roadmap for climate neutrality by 2030
 O
 
 |   | M25_T - number of P&R parking spaces
-M26_T - number of parking spaces planned for the P&R system  |
+| M26_T - number of parking spaces planned for the P&R system  |
 | --- | --- |
 |  Context of the indicator |   |
 |  Does the indicator measure direct impacts (reduction of greenhouse gas emissions)? | Not  |
@@ -4986,24 +4980,24 @@ Kraków  |
 | --- | --- |
 |  Context of the indicator |   |
 |  Does the indicator measure direct impacts
-(reduction of greenhouse gas emissions)? | Not  |
+| (reduction of greenhouse gas emissions)? | Not  |
 |  If so, which emission source sectors does it
-measure? | -  |
+| measure? | -  |
 |  Does the indicator measure indirect impacts
-(e.g. co-benefits)? | Not  |
+| (e.g. co-benefits)? | Not  |
 |  If so, what co-benefits does this indicator
-measure? | -  |
+| measure? | -  |
 |  Is the indicator useful for monitoring the
-results/impact of activities? | Yes  |
+| results/impact of activities? | Yes  |
 |  If so, for which activities and impact
-pathways is it useful? | Technology/Infrastructure, Governance and Policy,
-Education and Skills  |
+| pathways is it useful? | Technology/Infrastructure, Governance and Policy, |
+| Education and Skills  |
 |  Is the indicator taken into account by
 existing methodologies -
 CDP/SCIS/Covenant of Mayors? | -  |
 |  Data required |   |
 |  Data source | Database of the Environmental Management
-Department of the City of Kraków  |
+| Department of the City of Kraków  |
 |  Is the data source local or national? | Local  |
 |  Expected availability | Easy  |
 |  Suggested data collection interval | 2 years  |
@@ -5136,11 +5130,11 @@ Kraków Transport Assembly. | The Mayor of Krakow accepts for implementation the
 Lack of citizens' sense of empowerment and participation in city management and pro-climate measures. | Local government (City of Kraków) and a randomly selected cross-section of residents. | Genuine participation in the management of the city, increasing the sense of responsibility, involvement, agency.  |
 | --- | --- | --- | --- | --- |
 |  Strong support of the Civic Budget. | Residents prepare projects which, if voted on, are implemented by the City. | Barrier: Too little involvement of residents.
-Lack of pro-climate initiatives among residents, lack of sense of agency, responsibility. | Local government (departments, units, companies) Residents (including minors!). | Growing commitment to ongoing pro-climate activities, creativity and awareness.  |
+| Lack of pro-climate initiatives among residents, lack of sense of agency, responsibility. | Local government (departments, units, companies) Residents (including minors!). | Growing commitment to ongoing pro-climate activities, creativity and awareness.  |
 |  Eliminating the siloed approach to managing the City. | Creating extensive but transparent urban structures ready for large-scale climate projects. | Barrier: Organisational weakness.
-Fragmented governance by area, siloed, insufficient proclimatic measures. | Local government (departments, units, companies). | Increased capacity, better and faster management, greater decision-making, modern management tools.  |
+| Fragmented governance by area, siloed, insufficient proclimatic measures. | Local government (departments, units, companies). | Increased capacity, better and faster management, greater decision-making, modern management tools.  |
 |  Recommendation to implement the change of climate zones for energy design for Krakow and increase the temperature from -20 to -16 deg C. | This measure will allow the energy demand of buildings within the administrative boundaries of the city to be made more realistic. | Barrier: Organisational weakness.
-Legislative provisions that are outdated to modern standards, making it difficult to introduce innovative solutions. | Local government, municipal entities and companies, private entrepreneurs, private energy companies. | Facilitate the modelling process of the city's energy system and increase the potential to introduce low-carbon solutions.  |
+| Legislative provisions that are outdated to modern standards, making it difficult to introduce innovative solutions. | Local government, municipal entities and companies, private entrepreneurs, private energy companies. | Facilitate the modelling process of the city's energy system and increase the potential to introduce low-carbon solutions.  |
 |  Recommendations for legislative changes to facilitate low-carbon solutions. | The implementation of the recommended 23 legislative changes will facilitate the implementation of the measures proposed to achieve the city's zero carbon footprint (for a description of the proposed legislative | Barrier: Insufficient cooperation between government and local authorities.
 Some legislative provisions have not changed with the with the progressive implementation of new technologies and are a hindrance | Local government, municipal entities and companies, private entrepreneurs, private energy companies, residents, national administration. | Dependent on enrolment - facilitating the implementation of climate, water, waste and energy. Facilitate the introduction of new technologies into the city's operating system.  |
 Krako

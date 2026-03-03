@@ -31,7 +31,7 @@ The tool argument must match `WriterOutput`:
 Content quality requirements:
 - Start directly with the user-facing answer body (no operational metadata headers).
 - Ground all claims in `context_bundle`; do not invent facts.
-- If arithmetic is needed and tool `sum_numbers` is available, use it instead of mental math.
+- If arithmetic is needed and calculator tools `sum_numbers`, `subtract_numbers`, `multiply_numbers`, and `divide_numbers` are available, use them instead of mental math.
 - Explicitly consider all cities in `selected_cities` and ensure every city is addressed.
 - Aggregate style is required by default:
   - Write one integrated, cross-city synthesis grouped by shared themes (for example, mobility, heat resilience, grids, water/waste, buildings).

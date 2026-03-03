@@ -273,8 +273,6 @@ Table 1. Number of buildings and usable area of all buildings located in Wroclaw
 |  hospital and other health care buildings | 339 | 511,109.31 | 1.6%  |
 |  transportation and communications buildings | 1,571 | 428,540.23 | 1.3%  |
 |  other non-residential buildings | 1,134 | 830,955.12 | 2.6%  |
-Climate Neutrality Action Plan
-
 |  tanks, silos and storage buildings | 1,635 | 1 065 856,23 | 3.3%  |
 | --- | --- | --- | --- |
 |  TOTAL | 68,094 | 31,918,438.14 | 100%  |
@@ -832,10 +830,6 @@ Table 10. Economic Indicators by Sector.
 |   |  Efficient lighting and appliances | % annual renovation rate | 1.0% | 3.8%  |
 |   |  Heating technologies | share of heating as district heating | 55% | 55%  |
 |   |  Decarbonising district heating | share of district heating produced using fossil fuels | 96% | 40%  |
-Climate Neutrality Action Plan
-
-4
-
 |   | Decarbonizing district heating | share of district heating produced using electric heat pumps | 0% | 60%  |
 | --- | --- | --- | --- | --- |
 |   |  Decarbonising district heating | share of district heating produced using bio fuels | 4% | 0%  |
@@ -902,10 +896,6 @@ Table 13. List of relevant policies, strategies and regulations (Municipality of
 |  Water |   |   |   |   |   |   |
 |  TOTAL |   |   |   |   |   |   |
 |  % of Total |   |   |   |   |   |   |
-Climate Neutrality Action Plan
-
-7
-
 |  Wroclaw (2019) | to reduce emissions.  |
 | --- | --- |
 |  Sustainable urban mobility plan - SUMP (2019) | Focuses on improving transportation efficiency and reducing emissions from transport, crucial for achieving sustainable urban development and climate goals.  |
@@ -931,7 +921,7 @@ Climate Neutrality Action Plan
 |   | to the level of strategic goals, which will mean the need to monitor the progress of implementation of the set objectives on an annual basis.  |
 | --- | --- |
 |  City Masterplan (2018) | Guides spatial and urban development in Wroclaw, integrating sustainability principles and climate considerations into urban planning.
-There is new document under development – General Plan that will replace City Masterplan  |
+| There is new document under development – General Plan that will replace City Masterplan  |
 |  Resolution^{15} regarding the principles of granting targeted subsidies to individuals for tasks aimed at improving energy efficiency through the replacement of external windows (2024) | Provides subsidies for improving energy efficiency through window replacements, contributing to reduced energy consumption and emissions.  |
 |  Resolution^{16} regarding the principles of granting targeted subsidies for tasks aimed at air protection, involving the permanent change from solid fuel-based heating to low-emission heating (2024) | Provides subsidies to transition from solid fuel-based heating to low-emission heating, crucial for reducing local air pollution and emissions.  |
 |  Resolution^{17} regarding the principles of granting targeted subsidies for tasks involving the installation of systems utilising renewable energy sources for electricity generation and energy storage systems (2024) | Provides subsidies for renewable energy systems, promoting clean energy generation and reducing reliance on fossil fuels in Wroclaw.  |
@@ -960,10 +950,6 @@ Climate Neutrality Action Plan
 |  Integrated Territorial Investment Strategy of the Wroclaw Functional Area for 2021-2027 (2023) | This strategy outlines priority areas and investment projects aimed at sustainable development and economic growth within the Wroclaw Functional Area from 2021 to 2027. It integrates environmental sustainability, climate resilience, and socio-economic development goals, guiding strategic investments to enhance infrastructure, energy efficiency, and environmental quality. Crucial for fostering integrated and sustainable territorial development aligned with regional and EU policies.  |
 |  **Regional level**  |   |
 |  Energy strategy of Lower Silesia - directions of support for the energy sector (2022) | This strategy outlines the priorities and measures to support the energy sector in Lower Silesia. It focuses on promoting renewable energy sources, improving energy efficiency, and reducing carbon emissions. Crucial for achieving regional energy security, sustainability, and climate goals.  |
-
-9
-Climate Neutrality Action Plan
-
 |  Transport infrastructure development plan in the Lower Silesian Voivodeship with a perspective until 2030 (2023) | The plan details investments and developments in transport infrastructure across Lower Silesia until 2030. It aims to enhance connectivity, reduce transport emissions, and improve mobility efficiency. Essential for sustainable regional development and meeting EU transport and climate targets.  |
 | --- | --- |
 |  Development Strategy of the Lower Silesian Voivodeship 2030 (2023) | Sets out long-term goals and development priorities for Lower Silesia until 2030. It integrates economic, social, and environmental objectives, guiding policy and investment decisions to foster sustainable growth and improve quality of life.  |
@@ -987,10 +973,6 @@ Climate Neutrality Action Plan
 |  National Environmental Policy 2030 (2022) | Defines Poland's environmental protection priorities and strategies until 2030. It addresses air, water, and soil quality, biodiversity conservation, and sustainable use of natural resources, aiming to achieve environmental sustainability and resilience to climate change impacts.  |
 |  Strategic adaptation plan for sectors and areas sensitive to climate change until 2020 with a perspective until 2030 (2013) | Focuses on adapting key sectors and vulnerable areas in Poland to climate change impacts. It includes measures for water management, agriculture, forestry, and infrastructure resilience, aiming to reduce climate vulnerability and enhance adaptive capacity.  |
 |  Long-Term Building Renovation Strategy (2022) | Sets objectives and measures to improve energy efficiency and sustainability of buildings in Poland. It promotes renovation of existing building stock to reduce energy consumption, lower emissions, and enhance  |
-
-1
-Climate Neutrality Action Plan
-
 |   | indoor comfort and health.  |
 | --- | --- |
 |  National Recovery and Resilience Plan | Details investments and reforms funded through EU recovery funds to support Poland's economic recovery and resilience post-COVID-19. It includes measures for green transition, digital transformation, and social resilience, aligning with EU's green and digital priorities.  |
@@ -1002,10 +984,6 @@ Climate Neutrality Action Plan
 |  Directive (EU) 2024/1275 of the European Parliament and of the Council of 24 April 2024 on the energy performance of buildings | EU directive setting out requirements for improving the energy performance of buildings. It promotes energy efficiency measures, renewable energy use in buildings, and contributes to reducing energy consumption and emissions in the building sector.  |
 |  EU Biodiversity Strategy for 2030 | Strategy to halt biodiversity loss and restore ecosystems across the EU by 2030. It aims to protect and restore biodiversity, promote nature-based solutions, and ensure sustainable use of natural resources, contributing to climate resilience and sustainability.  |
 |  EU energy policy | Framework guiding EU's energy transition towards a secure, sustainable, and affordable energy system. It promotes renewable energy deployment, energy efficiency improvements, and innovation in clean technologies to reduce greenhouse gas emissions and  |
-
-2
-Climate Neutrality Action Plan
-
 |   | enhance energy security.  |
 | --- | --- |
 |  REPowerEU | Initiative to accelerate the deployment of renewable energy across the EU, aiming for 40% of EU energy consumption to come from renewable sources by 2030. It supports investments in renewable energy projects and infrastructure, contributing to EU's climate and energy goals.  |
@@ -1099,10 +1077,6 @@ Table 14. Emission gap based od existing policies
 |  Buildings/Heating/Electricity | 2,478,830 | 1,983,064 | 80 | 728,715 | 29 | 1,254,349 | 51 |  |  | 495,766 | 20  |
 |  Transport | 1,483,345 | 1,186,676 | 80 | 137,438 | 9 | 1,049,238 | 71 |  |  | 296,669 | 20  |
 |  Waste / water and sewage management | 24,595 | 19,676 | 80 | - | 0 | 19,676 | 80 |  |  | 4,919 | 20  |
-Climate Neutrality Action Plan
-
-8
-
 |  Industrial Process and Product Use (IPPU) | 591,091 | 472,873 | 80 | 80,559 | 14 | 392,314 | 66 |  |  | 118,218 | 20  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Agricultural, Forestry and Land Use (AFOLU) | 3,277* | 2,622 | 80 | 2,156 | 66 | 466 | 34 |  |  | 655 | 20  |
@@ -1175,20 +1149,12 @@ Table 16. Main stakeholder categories (Own evaluation on the basis of Analiza in
 
 |  Public sector at national and international level: ·EU administration ·ministries ·fund operators at national level ·national research and development centres ·State companies (Polish Waters, State Forests | Public sector at provincial, district and city level: ·voivodship offices ·district offices ·voivodeship conservator of monuments ·fund operators at voivodship level ·railway and road network managers ·municipal offices and bureaus responsible for topics related to climate change ·Strategy and Sustainable Development Department | Public services: ·education ·social welfare ·culture ·housing ·public safety ·public transport ·telecommunications ·energy management ·Water management ·Waste management ·Greenery Management ·Environmental protection  |
 | --- | --- | --- |
-Climate Neutrality Action Plan
-
-#
-
 |   | · Wroclaw Urban Functional Area |   |
 | --- | --- | --- |
 |  Private sector: · industry (manufacturing companies and industrial parks) · services (including industry associations) · banks and financial services · large corporations · Shopping centres and large retail shops · large sports and cultural facilities (stadiums, concert halls, sports tracks, etc.) · companies with data centres, large servers · logistics companies · courier companies) · transport companies, including railways · energy, heat, gas and water suppliers · oil companies · building managers, communities, cooperatives and their associations · developers · manufacturers and suppliers of building materials and technologies · Business organisations (trade unions and associations) · Associations of small businesses |  | Academia: · universities · Institute of the Polish Academy of Sciences (PAN) · research and development institutions · research stations and centres · scientists - specialists in various fields · student research clubs  |
 |  Third sector: · organisations working for the protection of the environment and nature in the city · organisations promoting heritage and historical monuments · organisations promoting social or technological innovation | Residents' representatives: · District Councils · Local Activity Centres · Local leaders | Media: · radio · television · press · internet portals · Social media groups and profiles  |
-Climate Neutrality Action Plan
-
-3
-
 |  • organisations promoting specialised knowledge - SARP^{22}, TUP^{23}, SAK^{24}
-• local organisations working for the benefit of the local community |  |   |
+| • local organisations working for the benefit of the local community |  |   |
 | --- | --- | --- |
 
 The work on the CCC, as well as its subsequent implementation, involves continuous monitoring of progress and updating of actions. Regular stocktaking and monitoring of progress towards targets will allow actions to be adjusted in response to changing circumstances.
@@ -1310,8 +1276,6 @@ Table 17. Systems and Stakeholder Mapping.
 |  Governance and policy | Ministry of Climate and Environment | very high – introduces regulations and has at its disposal funds aimed at environmental and climate protection | It joins the activities of cities for climate neutrality and undertakes a number of activities to support cities and declares further systemic cooperation within the national platform, which manifests itself through an open dialogue on, m.in, barriers to achieving the pro-climate goals of cities. It provides support for programmes such as the Clean Air Programme, the Warm Apartment Programme, the Stop Smog Programme - financing the thermal modernisation of buildings and the replacement of heat sources.  |
 |   |  Ministry of Technology | high - introduces regulations and has at its disposal funds directed to climate projects | • National Recovery and Resilience Plan - new low-emission construction according to eco standards • Department of Spatial Planning - spatial planning, densification of buildings • Thermal Modernisation and Renovation Fund (FTiR) (financial instruments supporting thermal modernisation)  |
 |   |  Ministry of Infrastructure | high – introduces regulations and has funds directed at infrastructure and systemic tasks in the field of pro-climate projects; develops plans, e.g. to counteract | It joins the operation of the platform for cooperation between the government and the local government.  |
-Climate Neutrality Action Plan
-
 |   |  | water shortages or the effects of drought |   |
 | --- | --- | --- | --- |
 |   |  Ministry responsible for regional policy | very high – introduces regulations and has at its disposal funds directed towards climate tasks | It affects the possibilities of implementing pro-climate projects and investments.
@@ -1321,12 +1285,6 @@ Climate Neutrality Action Plan
 |  **National level - fund operators:**  |   |   |   |
 |  Finance | Centre for EU Transport Projects | high – has at its disposal funds from the European Union, intended to support infrastructure investments, including pro-climate ones in the area of road, rail, air and urban transport | It affects the development of public transport and the sustainable development of transport.  |
 |   |  National Fund for Environmental Protection and Water Management | very high | It provides funding to various entities for activities in the field of environmental and climate protection – in this way, it really supports both local governments and the private sector, the science sector. It participates in an open dialogue with local governments on supporting them in the implementation of tasks related to achieving climate  |
-
-9
-Climate Neutrality Action Plan
-
-0
-
 |   |  |  | neutrality. It conducts thematic programmes, e.g. thermal modernisation, renewable energy sources, environmental education, obtaining funds from the EU, energy-efficient construction.  |
 | --- | --- | --- | --- |
 |  **National level - entities specialised in specific thematic areas and thematic research institutes:**  |   |   |   |
@@ -1335,15 +1293,13 @@ Climate Neutrality Action Plan
 |   |  Railway Research Institute | **low** - for emission reductions | Conducting research on the digitization and processing of railway traffic parameters; reducing the negative impact of rail transport on the environment.  |
 |  Science | Institute of Environmental Protection - National Research Institute | **high** - in the field of know-how, expert opinions and high-quality climate analyses | Central scientific institution in the field of environmental and climate protection - a center for climate research and adaptation, subordinate to the Ministry of Climate and Environment. It cooperates with the city of Wroclaw in the field of counteracting the climate crisis.  |
 |  Governance and policy | General Directorate for National Roads and Motorways (GDDKiA) | **moderate** | When implementing investment tasks, GDDKiA undertakes a number of activities related to environmental protection, which, m.in others, are aimed at counteracting climate change. When implementing investment tasks, GDDKiA undertakes a number of activities related to environmental protection, which, m.in others, are aimed at counteracting climate change.  |
-Climate Neutrality Action Plan
-
 |   | Polish Waters | very high | Polish Waters are developing planning documents, m.in. flood risk management plans and a plan for counteracting the effects of drought, which is the first such plan in Poland to include measures to increase the national water retention rate. Polish Waters prepare flood hazard and flood risk maps from flowing waters, specifying areas of special flood risk, which should also be taken into account in local spatial development plans.  |
 | --- | --- | --- | --- |
 <h2>National level - large enterprises and concerns and entities that associate them:</h2>
 |  Technology and infrastructure | TAURON^{25} | high - emissions from heat and electricity production, emissions from buildings | A Polish company grouping companies from the energy sector. The goals that the group wants to meet are a significant increase in the share of low- and zero-emission sources in the TAURON Group's installed capacity by 2030 and a decrease in emissions for energy generation by nearly 80% and climate neutrality in 2050. Modernisation of the network in the direction supporting climate transformation.  |
 | --- | --- | --- | --- |
 |   |  Polish Energy Group | high - emissions from heat and electricity production, emissions from buildings | • Transition plan and path to decarbonise generation and achieve climate neutrality by 2050
-• Implementation of investments in low- and zero-emission energy sources and grid infrastructure.  |
+| • Implementation of investments in low- and zero-emission energy sources and grid infrastructure.  |
 |   |  Polish Railway Lines | high - to reduce emissions from transport | On a city scale, it provides long-distance rail transport connections regionally, nationally and abroad. It contributes to the construction of the metropolitan railway network and is part of the city's transport network, improving the comfort and accessibility of public transport for residents. It pursues a policy of sustainable transport.  |
 
 Responsible for generation and distribution of electricity
@@ -1360,10 +1316,6 @@ Climate Neutrality Action Plan
 |  **Regional level:**  |   |   |   |
 |  Technology and infrastructure | Lower Silesian Railways | **moderate** - mainly for the implementation of emission reductions | It is taking actions that will contribute to achieving the goal of increasing the comfort and accessibility of low-emission long-distance transport.  |
 |  Governance and policy | Marshal's Office of the Lower Silesian Voivodeship | **moderate** – introduces regulations and has in its disposal funds directed to climate tasks | It affects the possibility of implementing pro-climate projects and investments in Wroclaw and reducing it in all emission sectors.  |
-
-2
-Climate Neutrality Action Plan
-
 |   | Institute of Territorial Development | high – has funds directed towards climate tasks | It affects the possibility of implementing pro-climate projects and investments in Wroclaw and reducing it in all emission sectors.  |
 | --- | --- | --- | --- |
 |  Finance | Regional Fund for Environmental Protection and Water Management | very high | It participates in dialogues with local governments on supporting them in the implementation of tasks related to achieving climate neutrality, which may give the potential to adapt financial tools and support programmes to the real needs of local governments.  |
@@ -1398,10 +1350,6 @@ Climate Neutrality Action Plan
 |  Wroclaw Strategy Office | very high | Impact on provisions in strategic documents, strategy, socio-economic assumptions.  |
 |  Department of Real Estate and Operation of the Municipal Office | high | Impact on projects related to the modernisation of buildings and the shaping and design of inter-block interiors.  |
 |  Communal Resources Management | high | It deals with the activities of thermal modernisation of buildings and the possibility of shaping the interiors between blocks. It conducts activities dealing with the modernisation of buildings and connection to the heating network or replacement of furnaces in the municipal stock.  |
-
-5
-Climate Neutrality Action Plan
-
 |   | Municipal Company Wroclaw Housing | low | She conducts activities related to the organisation of green areas during the preparation of the concept of courtyard interiors. It is revitalizing the courtyards between the blocks, where green recreation zones are being created.  |
 | --- | --- | --- | --- |
 |  Science | Wroclaw University of Environmental and Life Sciences | moderate – one of the 11 largest universities in Wroclaw | The University of Life Sciences conducts activities related to the promotion of projects related to biodiversity and the popularization of activities and issues related to ecology and climate neutrality. Projects such as a) Promotion of "green roofs" – through the organisation of a scientific conference "Greening the roofs of Polish cities" are undertaken.  |
@@ -1409,12 +1357,6 @@ Climate Neutrality Action Plan
 |   |  University of Wroclaw | moderate - one of the 11 largest universities in Wroclaw | The University of Wroclaw undertakes activities related to neutralizing the negative impact of humans on the climate and conducts classes where discussions on ecology and climate neutrality are undertaken. It undertakes activities such as the organisation of educational activities.  |
 |  Social | Wroclaw Climate Protection Coalition | low – tries to influence raising public awareness | Through their activities, they support residents and other climate activists in their initiatives.  |
 |   |  Polish Ecological Club branch in Wroclaw | moderate | The Lower Silesian Ecological Club deals with the protection of the environment and natural heritage, the promotion of ecology, environmental education and the promotion of the idea of sustainable development. It conducts activities such as educational projects, organizing lectures, seminars, conferences, trainings and workshops, and conducting local actions and campaigns for climate neutrality.  |
-
-6
-Climate Neutrality Action Plan
-
-#
-
 |   | Lower Silesian Smog Alert | moderate - mainly for the implementation of emission reductions | The Lower Silesian Smog Alert measures air pollution in towns in the region.  |
 | --- | --- | --- | --- |
 |   |  Local Activity Centres | low | They are used to strengthen and integrate local communities.  |
@@ -1438,18 +1380,14 @@ Climate Neutrality Action Plan
 8
 
 |   | Lack of audience interest | Social/Organisational | Despite the improvement in the quality of public transport, people may not be interested in it (too high ticket prices, development of alternative ways of traveling such as Uber, Blablacar or bicycle transport). | Transport and public transport sector Municipal Transport Company | • Changes should be introduced at the level of organisation and synchronization of bus and tram traffic. Efficient transfers between means of transport will optimize the travel time between work and home, which will translate into greater attractiveness of public transport and a lower share of passenger cars in transport in the city
-• Applying various types of incentives in the form of discounts or passes  |
+| • Applying various types of incentives in the form of discounts or passes  |
 | --- | --- | --- | --- | --- | --- |
 |   |  Residents' resistance to change | Social | Due to the nature of the city's transport network, the development of public transport sometimes has to take place at the expense of other types of transport, especially car transport (e.g. the issue of converting lanes into bus lanes), which may cause resistance or even a boycott. | Transport and public transport sector Municipal Transport Company | • Organizing open public debates to raise public awareness of GHG emissions reduction and trying to resolve the conflict for the benefit of both parties
-• Promoting the benefits of a wider range of urban infrastructure (fewer road accidents, more child- and age-friendly urban environment)  |
+| • Promoting the benefits of a wider range of urban infrastructure (fewer road accidents, more child- and age-friendly urban environment)  |
 |   |  Strong attachment to the use of the car | Social/Sociological | Most people are used to moving around by car and to the so-called door-to-door movement, which can cause outrage and resistance among residents to the proposed changes and regulations introduced by the city. | Transport and public transport sector Municipal Transport Company , Municipal authorities | • Promoting the use of electric vehicles, encouraging residents to switch from an internal combustion car to an electric one in order to reduce CO2 emissions
-• Promoting the benefits of changing cars and highlighting their value for the quality of life of residents  |
-Climate Neutrality Action Plan
-
-9
-
+| • Promoting the benefits of changing cars and highlighting their value for the quality of life of residents  |
 |   | Technological limitations – alternative fuels | Technology/Financial | The problem may be insufficient funding for the implementation of all projects, but also insufficient understanding and mastery of the use of some alternative fuels. | Transport and public transport sector Municipal authorities, local carriers | • Operating and operating costs should be estimated conservatively on the basis of current data
-• Signing longer contracts for the purchase of electricity, hydrogen fuel  |
+| • Signing longer contracts for the purchase of electricity, hydrogen fuel  |
 | --- | --- | --- | --- | --- | --- |
 |   |  Urban sprawl and the process of suburbanization | Financial | The excessive growth of suburban areas puts pressure on the municipality to plan and implement transport solutions convenient for residents. However, this is often associated with high investment costs or a complicated process of rebuilding road infrastructure. | Transport and public transport sector Commune authorities | • Creating free parking zones in front of the city center in order to make the city unsealed and encourage people to use public transport
 • Introduction of changes at the organisational and logistical level to improve the already existing communication
@@ -1462,17 +1400,13 @@ Climate Neutrality Action Plan
 |   |  |  |  |  | • Encourage regional partnerships with municipal associations to support investments on a supra-municipal scale. This could be particularly helpful for peripheral municipalities that do not have the capacity to conclude such agreements themselves.  |
 | --- | --- | --- | --- | --- | --- |
 |  Buildings and building infrastructure | Shortages in materials and workmanship | Economic | Limited number of specialists and business entities. This can lead to monopolies on the market, which can keep the cost of services and materials rising. | Construction sector
-Local businesses | • Analysis of the current market situation
-• Comparison of prices in Poland and abroad - sometimes greater profitability of importing material from abroad due to lower costs  |
+| Local businesses | • Analysis of the current market situation |
+| • Comparison of prices in Poland and abroad - sometimes greater profitability of importing material from abroad due to lower costs  |
 |   |  Limited interest in building renovation by private and municipal actors | Legal/Financial | The low interest in building renovation may result from unclear thermo-modernisation policies, unclear conditions that must be met by entities applying for them, and concerns related to the uncertainty of access to financing. Complicated processes of submitting applications and applying for funding can also be discouraging. | Construction sector
-Local businesses, private entities | • Application of incentives and tax reliefs for entities carrying out thermal modernisation of buildings
-• Use of mixed tools such as budget incentives and a set of town planning rules  |
+| Local businesses, private entities | • Application of incentives and tax reliefs for entities carrying out thermal modernisation of buildings |
+| • Use of mixed tools such as budget incentives and a set of town planning rules  |
 |   |  Renovation options at a rate significantly lower than would be required to achieve climate neutrality | Financial | High costs of project implementation, e.g. expensive building materials or professional services | Construction sector
-Local businesses | • Employment of qualified staff to prepare specific investments, who will take care of the calculation of project costs and optimization of the work carried out  |
-
-0
-Climate Neutrality Action Plan
-
+| Local businesses | • Employment of qualified staff to prepare specific investments, who will take care of the calculation of project costs and optimization of the work carried out  |
 |   |  |  |  |  | • Conducting market analyses in order to minimize difficulties related to project financing  |
 | --- | --- | --- | --- | --- | --- |
 |   |  Limited or no appropriate support policies/programmes – fiscal, financial, excessive criteria for allocating funds, complicated application process | Financial | A big problem is the lack of ability of the municipality to raise capital. Another problem is complicated application documentation, often inadequate to a given type of project, and difficult and expensive "environmental" criteria to meet, which call into question the possibility of applying for funds for projects that generally have a positive impact on the environment. | Construction sector
@@ -1480,56 +1414,38 @@ Local businesses, Municipal authorities | • Conducting diagnoses of problems, 
 • Regulating changes related to climate and environmental aspects
 • Regulation and universalization of "environmental" criteria that call into question the possibility of applying for funds for projects that generally have a positive impact on the environment  |
 |   |  Fragmentation of ownership – individual, combined, a multitude of entities and organisational structures (communities, cooperatives, municipal mix) | Structural/Organisational | Problems with the implementation of projects are related to obtaining the appropriate licenses and permits. | Construction sector
-Local businesses, municipalities, companies and private entities | • Organisation of meetings and conferences with communities, urban cooperatives in order to develop common goals for the sake of climate neutrality
-• Promotion of ecological projects and solutions and the use of budget and urban planning incentives  |
+| Local businesses, municipalities, companies and private entities | • Organisation of meetings and conferences with communities, urban cooperatives in order to develop common goals for the sake of climate neutrality |
+| • Promotion of ecological projects and solutions and the use of budget and urban planning incentives  |
 |   |  High costs and unknown scale of needs related to increasing the energy efficiency of buildings. | Financial/Legal | The biggest challenge to the climate transition are buildings with an unregulated ownership status, buildings in poor technical condition, buildings entered into the register of monuments or under conservation protection. The problem arises in the issue of acquiring the appropriate | Construction sector
-Local businesses, municipalities, companies and private entities | • Launching (at the national and EU level) systemic financial support programmes for deep thermal modernisation of buildings and a consulting system facilitating the use of programmes and increasing their availability  |
-
-1
-Climate Neutrality Action Plan
-
+| Local businesses, municipalities, companies and private entities | • Launching (at the national and EU level) systemic financial support programmes for deep thermal modernisation of buildings and a consulting system facilitating the use of programmes and increasing their availability  |
 |   |  |  | licenses and permits. This may translate into additional investment costs and often not all the required conditions for obtaining subsidies may be met, without which it is difficult to find potential investors to carry out a given project. Another problem is the low interest of potential investors in introducing changes to projects and already finished buildings in terms of their energy efficiency due to additional costs. |  | • Introduce blending tools such as budgetary incentives and a set of urban planning rules that will increase the success rate of the actions  |
 | --- | --- | --- | --- | --- | --- |
 |  Energy system | High investment costs | Financial | Price fluctuations due to inflation can have an impact on the investment budget | **Energy sector** Municipal authorities, local companies | • Providing adequate budget resources
-• Using hybrid methods and solutions consisting in combining several types of installations generating energy from renewable energy sources in order to achieve maximum efficiency and reduce the risk of investment failure  |
+| • Using hybrid methods and solutions consisting in combining several types of installations generating energy from renewable energy sources in order to achieve maximum efficiency and reduce the risk of investment failure  |
 |   |  Lack of stable legal regulations and a long-term strategy for the development of renewable energy sources in the city | Systemic/Legal | The problem arises in the issue of legal regulations regarding investment uncertainty, the so-called "distance criterion" in the Act on investments in wind farms, which prevents the construction of wind turbines in more densely built-up areas and the lack of legal possibilities to establish energy | **Energy sector** Municipal authorities, private investors, local companies | • Creation, at the national level, of stable legal regulations and a long-term strategy for the development of renewable energy sources
-• Legislative changes at the national level that will allow for the reduction of the so-called "distance criterion" in the Act on investments in wind farms  |
-
-2
-Climate Neutrality Action Plan
-
+| • Legislative changes at the national level that will allow for the reduction of the so-called "distance criterion" in the Act on investments in wind farms  |
 |   |  |  | cooperatives in urban municipalities. |  |   |
 | --- | --- | --- | --- | --- | --- |
 |   |  Restrictions for prosumers related to the possibility of access to connection capacity | Infrastructure | Due to the lack of appropriate infrastructure, especially in the field of transmission networks, investments in RES may be discouraged or even unprofitable. | **Energy sector**
-Municipal authorities, private entities, local companies | • Introduction of more advantageous energy settlement systems for prosumers  |
+| Municipal authorities, private entities, local companies | • Introduction of more advantageous energy settlement systems for prosumers  |
 |  Blue and green infrastructure | Urbanization pressure of private investors to develop new areas, increasingly difficult habitat conditions for plants in the city | Infrastructure/Finance | The main problem is high temperatures and the decreasing cyclical nature of rainfall. More and more often, the city is affected by drought and water shortage. This may translate into increased costs of maintaining greenery and may slow down the implementation of new projects and the implementation of more greenery in the city. | **Green infrastructure sector**
-Municipal authorities, private entities, local companies | • Introduction of uniform standards for the development and care of greenery for all entities responsible for the maintenance of urban green areas
-• Selection of plant species with increased resistance to high temperatures, droughts and other threats  |
+| Municipal authorities, private entities, local companies | • Introduction of uniform standards for the development and care of greenery for all entities responsible for the maintenance of urban green areas |
+| • Selection of plant species with increased resistance to high temperatures, droughts and other threats  |
 |   |  Social support – conflicting groups | Social | The problem of adapting to the changes, restrictions and regulations introduced for climate neutrality. Complicated application documentation, often inadequate to a given type of project, is also a problem, which can discourage people and exacerbate conflicts. | **Green infrastructure sector**
-Municipal authorities, private entities, local companies | • Employing qualified staff to mediate in environmental conflicts in order to reach mutually beneficial agreements
-• Introduction of legal regulations and generalizations when complementing application documentation in order to minimize the occurrence of problems with accepting applications, which has a more positive impact on the relations between individual parties  |
+| Municipal authorities, private entities, local companies | • Employing qualified staff to mediate in environmental conflicts in order to reach mutually beneficial agreements |
+| • Introduction of legal regulations and generalizations when complementing application documentation in order to minimize the occurrence of problems with accepting applications, which has a more positive impact on the relations between individual parties  |
 |   |  Lack of calculation of environmental costs | Financial | Lack of allocated substantive resources in the financial | **Green infrastructure sector** | • A special section in the municipal budget for the  |
-
-3
-Climate Neutrality Action Plan
-
-4
-
 |   | and ecosystem services |  | sections to assess the nature of the investment; regulatory restrictions. No designated climate budget for blue-green infrastructure activities and projects. | Municipal authorities, private entities, local companies | climate budget to implement all pro-climate projects
-• Keeping appropriate documentation and statistics in order to select the appropriate nature of current and future investments  |
+| • Keeping appropriate documentation and statistics in order to select the appropriate nature of current and future investments  |
 | --- | --- | --- | --- | --- | --- |
 |   |  Complicated ownership structure of the land | Structural | Open areas, valuable in terms of nature, are often outside the property of the city and are not protected from development. | Green infrastructure sector
-Municipal authorities, private entities | • Legislative changes at the national level, which will allow local governments to more effectively protect valuable areas against urbanization pressure and will introduce quality standards for investors regarding the development of the investment environment  |
+| Municipal authorities, private entities | • Legislative changes at the national level, which will allow local governments to more effectively protect valuable areas against urbanization pressure and will introduce quality standards for investors regarding the development of the investment environment  |
 |  Waste management and circular economy | Infrastructure and logistics – no municipal waste management company | Infrastructure | Companies with private capital account for almost 2/3 of companies operating in the waste management industry. Some of them are domestic companies dealing primarily with the collection and transport of waste. The problem is the high fragmentation of responsibility for waste collection due to the large number of private companies. The problem may be insufficient funds of the municipality to cover the costs of waste disposal, which may result in interruptions in waste collection and, consequently, its accumulation on the streets. | Waste management sector
-Municipal authorities, private entities | • Signing longer contracts for a fixed period of time by the city with companies dealing with waste collection and transport, this will allow for setting fixed prices for waste disposal and the risk of price increases will be lower
-• Engaging more than one company to collect waste in the city, thanks to which it will be possible to prevent the creation of a monopoly and a drastic increase in the prices of services. It can also contribute to covering a larger urban area and making it easier to transport waste -  |
-Climate Neutrality Action Plan
-
-5
-
+| Municipal authorities, private entities | • Signing longer contracts for a fixed period of time by the city with companies dealing with waste collection and transport, this will allow for setting fixed prices for waste disposal and the risk of price increases will be lower |
+| • Engaging more than one company to collect waste in the city, thanks to which it will be possible to prevent the creation of a monopoly and a drastic increase in the prices of services. It can also contribute to covering a larger urban area and making it easier to transport waste -  |
 |   | National regulations on recycling – difficult to achieve in the current conditions | Legal | No or low consequences drawn from not using waste selection, so the society does not feel the need to segregate waste. Lack of appropriate legal regulations. | Waste management sector
-Municipal authorities, private entities, local companies | • Introduce step-by-step regulation at national level to improve policy delivery and reduce public loopholes abuse
-• Introduction of higher penalties for failure to segregate waste  |
+| Municipal authorities, private entities, local companies | • Introduce step-by-step regulation at national level to improve policy delivery and reduce public loopholes abuse |
+| • Introduction of higher penalties for failure to segregate waste  |
 | --- | --- | --- | --- | --- | --- |
 Climate Neutrality Action Plan
 
@@ -1655,12 +1571,8 @@ Table 19. Impact pathways
 |  Impact sector | System levers | Actions | Early changes (1-2 years) | Late outcomes (3-7 years) | Emission reduction [kt CO2] | Indirect impacts (co-benefits)  |
 | --- | --- | --- | --- | --- | --- | --- |
 |  Energy and district heating system | Technology/ Infrastructure Governance and Policy Science/ Finance Social behaviour/ Education | E.1 – Changing the generation of electricity and district heating using low- and zero-carbon technologies | Continuing and accelerating the connection of buildings to the district heating network as a part of the Clean Energy for Wroclaw programme | Modernisation of a combined heat and power plant in Wroclaw using heat pumps, cogeneration and gas boilers, heat storage and Power to Heat (P2H) Modernisation of the Zawidawie heat and power plant with heat pumps, cogeneration and gas boilers, heat storage and P2H Supplying the Wroclaw district heating system from renewable energy sources using P2H technology Utilisation of waste heat from sewage at the Wroclaw Sewage Treatment Plant Janowek Use of waste heat from other diffuse sources for their own use or for the district heating system Improving the efficiency of the existing network (modernisation of the network, district heat substation) Development of a district heating system in the city to cover the demand of new development | 750,000 | Reduction of CO2e emissions Improving air quality Strengthening the city's energy security Reducing energy poverty Increased pro-climate awareness among residents  |
-Climate Neutrality Action Plan
-
-2
-
 |   |  |  |  | District heating prosumer:
-development of low-carbon sources cooperating with the city's district heating system. Supporting district heating with heat pumps on buildings powered by photovoltaic panels- in municipal as well as private and cooperative properties |  |   |
+| development of low-carbon sources cooperating with the city's district heating system. Supporting district heating with heat pumps on buildings powered by photovoltaic panels- in municipal as well as private and cooperative properties |  |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |   |  E.2 – Local electricity generation from renewable sources | Continuation of the Small-scale RES programme for public facilities
 Continuation of the tax exemption programme for renewable energy installations
@@ -1707,10 +1619,6 @@ Construction and development of energy autonomous in the city-PEDs based on pros
 Reducing energy poverty
 Improving the quality of life and health of residents  |
 | --- | --- | --- | --- | --- | --- | --- |
-
-4
-Climate Neutrality Action Plan
-
 |   |  | B.2 – Energy advice, education, information and promotion activities for residents and businesses | Cooperation with private building administrators within homeowner associations
 Cooperation with housing cooperatives
 Conducting action and information campaigns to promote energy efficiency in households as well as passive and plus-energy housing
@@ -1768,8 +1676,6 @@ Infrastructure development-charging stations (public and commercial) | 192,200 |
 Walking in Wroclaw – educational and promotional activities
 Electromobility education |  | n/a  |   |
 |  Total |   |   |   |   | 531,1020 |   |
-Climate Neutrality Action Plan
-
 |  Waste and water and sewage management | Technology/ Infrastructure Governance and policy Science/ Finance | W.1 – Climate neutrality and energy security of waste and water and sewage management | Research and development to optimize water treatment and sewage treatment processes
 Application of intelligent solutions in terms of equipment, software and management of the city's water and sewage management
 Improving the efficiency of separate collection of all waste fractions
@@ -1827,8 +1733,6 @@ Supporting the growth of biodiveristy
 Integration of Climate Change Adaptation
 Mission activities into the CCC  |
 | --- | --- | --- | --- | --- |
-Climate Neutrality Action Plan
-
 |   |  | G.2 – Education, information, organisational climate action | Continuation of activities within I Like Rain, Catch Rain, Wroclaw Doesn’t Waste, Bookcrossing |  |  |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |  Total |   |   |   |   | 2,100 |   |
@@ -1863,8 +1767,6 @@ Table 20. The amount of emission reductions as a result of carrying out the acti
 |  Transport | 1,483,345 | 1,186,676 | 80 | 137,438 | 9 | 1,049,238 | 71 | 531,102 | 50.6 | 296,669 | 20  |
 |  Waste / water and sewage management | 24,595 | 19,676 | 80 | - | 0 | 19,676 | 80 | 29,690 | 150.9 | 4,919 | 20  |
 |  Industrial Process and Product Use (IPPU) | 591,091 | 472,873 | 80 | 80,559 | 14 | 392,314 | 66 | 295,545 | 75.3 | 118,218 | 20  |
-Climate Neutrality Action Plan
-
 |  Agricultural, Forestry and Land Use (AFOLU) | 3,277 | 2,622 | 80 | 2,156 | 66 | 466 | 34 | 2,100 | 450.6 | 655 | 20  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Total | 4,581,138 | 3,664,911 | 80 | 948,868 | 21 | 2,716,043 | 79 | 2,526,437 | 93 | 916,227 | 20  |
@@ -1884,8 +1786,6 @@ B-2.2: Individual action outlines
 | Action description | Examples of activities will include: 1. Modernisation of the combined heat and power plant in Wroclaw using heat pumps, cogeneration and gas boilers, heat storage and P2H and using them in a cogeneration system to produce electricity and heat 2. Construction of an installation for the use of waste heat from sewage at the Wroclaw Janowek Sewage Treatment Plant 3. Analyses of the possibilities of using waste heat from other distributed sources for own needs or the heating system 4. Investments in improving the efficiency of the existing heating network (modernisation of the network, heat substations) 5. Expansion of the heating system in the city to cover the demand of new development and existing development (where justified and economically possible) 6. Implementation by stakeholders of projects in the field of supporting district heating with heat pumps on buildings powered by photovoltaic panels (e.g. in municipal and private resources or cooperative) It is also important to continue and accelerate the connection of buildings to the municipal heating network under the “Clean Energy for Wroclaw” programme. |
 | Reference to impact pathway | Field of action | Energy and heating system, built environment |
 | Systemic lever | Technology/Infrastructure, Governance and Policy, Science/Finance, Social Behaviour/Education |
-Climate Neutrality Action Plan
-
 |  | Outcome | Taking decarbonisation actions in cooperation with energy and heating companies will enable a move away from or significant reduction of fossil fuels currently used in the city's energy and heating system, and consequently a significant reduction of emissions within the city boundaries. |
 | --- | --- | --- |
 | Implementation | Responsible bodies/person for implementation | Wroclaw Municipality, energy and heating companies |
@@ -1907,7 +1807,7 @@ Climate Neutrality Action Plan
 # B-2.2: Individual action outlines
 
 |  Action outline | Action name | Action E -2
-Local RES generation of electricity  |
+| Local RES generation of electricity  |
 | --- | --- | --- |
 |   |  Action type | Infrastructure activities, analysis, support, financing, education  |
 |   |  Action description | Examples of activities will include:
@@ -1920,8 +1820,6 @@ Local RES generation of electricity  |
 |   |  Systemic lever | Technology/Infrastructure, Governance and Policy, Science/Finance, Social Behaviour/Education  |
 |   |  Outcome | Generating RES energy is important for reducing local emissions from energy and heat production, which has a direct impact on reducing CO2 emissions.  |
 |  Implementation | Responsible bodies/person for implementation | Wroclaw Municipality, municipal units and companies, residents, private and public entities  |
-Climate Neutrality Action Plan
-
 |   | Action scale & addressed entities | Covers the entire project area. Activities carried out by municipal units, municipal companies, large industrial plants, private entrepreneurs. This activity will be carried out at the citywide level and outside the contract area, but will have a direct impact on it.  |
 | --- | --- | --- |
 |   | Involved stakeholders | Wroclaw Municipality, municipal companies and entities, private entrepreneurs, residents, universities  |
@@ -1945,10 +1843,6 @@ Climate Neutrality Action Plan
 |   |  Field of action | Energy and heating system  |
 |  Reference to impact pathway | Systemic lever | Technology/Infrastructure, Governance and Policy, Science/Finance, Social Behaviour/Education  |
 |   |  Action type | Infrastructure activities, financing  |
-Climate Neutrality Action Plan
-
-#
-
 |   | Outcome | Lower energy consumption in the city's lighting infrastructure  |
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | Wroclaw Municipality, municipal units, private enterprises  |
@@ -1963,8 +1857,6 @@ Climate Neutrality Action Plan
 |  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | Action E-4 Active educational, organisational, promotional and planning activities in the field of Decarbonisation of electricity and heat production  |
-Climate Neutrality Action Plan
-
 |   | Action type | Educational, support and financing activities  |
 | --- | --- | --- |
 |   |  Action description | The action will consist of:
@@ -1992,7 +1884,7 @@ Climate Neutrality Action Plan
 |  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | Action B - 1
-Energy efficient buildings  |
+| Energy efficient buildings  |
 |   |  Action type | Buildings, direct reduction of emission  |
 Climate Neutrality Action Plan
 
@@ -2066,10 +1958,6 @@ B-2.2: Individual action outlines
 | --- | --- | --- |
 |   |  Action type | Education, information, consulting, participation  |
 |   |  Action description | The action aims to cooperate with private building managers within housing communities and with housing cooperatives in the context of the renovation wave and implementation of the building directive. It is also very important to conduct information campaigns and actions aimed at promoting efficient energy management in households as well as passive and energy-plus construction. Experience from the “Change the stove” campaign (replacement of heat sources) will be used, including social participation (consultations, social campaigns). Information activities will include comprehensive support in the field of building modernisation in the One Stop Shop (OSS) formula aimed at accelerating and facilitating the modernisation process (coordination of activities between local and national programmes, energy and financial consulting, among others, using models developed from the pilot project).  |
-Climate Neutrality Action Plan
-
-5
-
 |  Reference to impact pathway | Field of action | Built enviromnet  |
 | --- | --- | --- |
 |   |  Systemic lever | Technology/Infrastructure, Governance and Policy, Science/Finance, Social Behaviour/Education  |
@@ -2096,10 +1984,6 @@ B-2.2: Individual action outlines
 |   |  Action description | Examples of activities to be implemented: a) increasing accessibility to public mass transportation and counteracting transportation exclusion, especially for the elderly, children and people with disabilities, b) expansion of the public transport network (zero-emission buses, streetcars, including, among others, implementation of investments from the Wroclaw Tram and Bus Programme for 2024 - 2032 (including streetcar lines to Swojczyce district, Jagodno district, Borowska Hospital, Mašice, Klecina, Nowe Žerniki, Oltaszyn – Wysoka Street, Gądów Południowy, Muchobór Wielki, Księże Wielkie, Gajowice, Borowska Centrum, Psie Pole district, Sucha Street). c) purchase of modern, energy-efficient low-floor streetcars, replacement of bus fleets with electric/hydrogen ones,  |
 |   |  |   |
 |   |  |   |
-Climate Neutrality Action Plan
-
-7
-
 |   |  | d) construction of a streetcar and bus depot in connection with the development of the network and electrification of the rolling stock
 e) support the use of public transportation, improving passenger comfort,
 f) Continued development of Park&Ride system at transportation hubs,
@@ -2118,10 +2002,6 @@ l) Moving toward the designation of a clean transportation zone.  |
 |   |  Action scale & addressed entities | Actions carried out by city units, transport companies (local and national government), the entire city area and within the Wroclaw Functional Area  |
 |   |  Involved stakeholders | Wroclaw Municipality, transport companies of the city and provincial government, residents, national and regional authorities  |
 |   |  Comments on implementation – consider mentioning | The most important measure is to reduce the scale of individual car transport combined with the development of public transport. Transportation is the  |
-Climate Neutrality Action Plan
-
-#
-
 |   | resources, timelines, milestones | second largest source of greenhouse gas emissions in the Wroclaw area, after construction and stationary energy - it accounts for almost 31% of all emissions and a source of air pollution. These emissions are mainly generated by road transport, with individual car transport accounting for the largest share. Therefore, the key actions should concern the development of low-emission public transportation and other alternative ways of getting around the city that will be attractive, comfortable, physically accessible and affordable, safe for people moving around the city by individual car transport. Wroclaw is systematically and consistently developing public transportation based on tramway, bus and rail transportation. This includes both improving travel conditions on the existing network through its modernization and building new transport corridors. Transportation work is also being increased in cooperation with the agglomeration rail operator, which is a company under the management of the province's local government). The use of public transport on a wider scale is also to be encouraged by new P+R parking lots in created interchanges, an increase in the number of safe and accessible stops, and the development of environmentally friendly (green tracks and green stops) transport infrastructure. The measure assumes the continuation of these activities in accordance with the adopted sector documents at the urban level.  |
 | --- | --- | --- |
 |  Impact & cost | Generated renewable energy (if applicable) | Not applicable  |
@@ -2134,8 +2014,6 @@ B-2.2: Individual action outlines
 
 |  Action outline | Action name | Action T-2  |
 | --- | --- | --- |
-Climate Neutrality Action Plan
-
 |   |  | Implementation of the Bicycle Action Programme until 2030 for Wroclaw  |
 | --- | --- | --- |
 |   |  Action type | Infrastructural, educational, support activities  |
@@ -2167,10 +2045,6 @@ Climate Neutrality Action Plan
 |   |  Action date to be completed | Action date to be completed  |
 |  Action plan to be completed | Action date to be completed | 1 month  |
 |   |  Action date to be completed | 1 month  |
-Climate Neutrality Action Plan
-
-C
-
 |   |  | c) Construction of new safe accesses and crossings  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Transportation and mobility  |
@@ -2188,12 +2062,6 @@ C
 |  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | Action T-4  |
-
-1
-Climate Neutrality Action Plan
-
-2
-
 |   |  | Measures for the dissemination of electric cars in individual, collective and freight transportation  |
 | --- | --- | --- |
 |   |  Action type | Infrastructural, educational, supportive, financial activities  |
@@ -2220,14 +2088,14 @@ Climate Neutrality Action Plan
 |   |  | station operators and alternative fuel development organisations, neighbourhood fleet companies.  |
 | --- | --- | --- |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Wroclaw is systematically and consistently replacing its rolling stock with more energy-efficient and low- or zero-emission vehicles. Hydrogen-powered buses are also being tested.
-A measure affecting the reduction of emissions from individual car transport will be the development of electromobility. This means building, together with private partners, appropriate infrastructure for charging electric vehicle.  |
+| A measure affecting the reduction of emissions from individual car transport will be the development of electromobility. This means building, together with private partners, appropriate infrastructure for charging electric vehicle.  |
 |  Impact & cost | Generated renewable energy (if applicable) | Not applicable  |
 |   |  Removed/substituted energy, volume, or fuel type | Fossil fuels  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 192,200 t CO2e  |
 |   |  GHG emissions compensated (natural or technological sinks) | Not applicable  |
 |   |  Total costs and costs by CO2e unit | 3,355.17 EUR / t CO2e  |
 |  Action outline | Action name | Action T-5
-Education, promotion and information activities in transportation  |
+| Education, promotion and information activities in transportation  |
 | --- | --- | --- |
 |   |  Action type | Educational, support activities  |
 |   |  Action description | Examples of activities to be implemented:
@@ -2262,8 +2130,6 @@ B-2.2: Individual action outlines
 | --- | --- | --- |
 |   |  Action type | Infrastructural, supportive, strategic actions  |
 |   |  Action description | Adoption of an ambitious greening plan, and within it: implementation of programmes - Green Lungs of Wroclaw, Park on every estate, striving for the 3-30-300 rule; Afforestation of the city, creation of green roofs and facades on public buildings and support for private buildings (continuation of tax exemptions), revitalization of courtyard interiors, rehabilitation and expansion of existing parks and other green areas, creation of new parks and other green areas, implementation of pocket parks in highly urbanized areas, greening of streets, greening of block interiors, continuation and development of urban farms, family allotment gardens as biodiversity areas. Protection of valuable green areas and other valuable natural areas from urbanization pressures by enacting appropriate forms of protection by the City Council, appropriate provisions in strategic documents and local plans. These actions may include, among others, the establishment of ecological uses and natural and landscape complexes by the City Council, the creation of a nature reserve on the Irrigation Fields, the protection of the Sleza River ecosystem, the protection of allotment gardens in local plans, the amendment of local plans for wooded areas previously earmarked for development, and the introduction of provisions in local plans to protect and develop BZI. In this context, it is also important to provide funds in the city budget for the purchase of land with natural values so as to protect it from urban pressure. A Stormwater Management Strategy involving, among other things, the unsealing of concreted surfaces, retention of rainwater and prevention of flooding, elimination of rain and drought hot spots, improvement of the functioning of water reservoirs (e.g. Pilczycki Pond).  |
-Climate Neutrality Action Plan
-
 |   |  | Development of a spatial database on the city, in particular smart solutions for the inventory of greenery in the city and assessment of ecosystem services, biodiversity (inventory of naturally valuable areas and their condition) in conjunction with the ongoing LifeCoolCity project from the LIFE programme, which will provide a management system for blue-green infrastructure in the city area.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Blue-green infrastructure and nature-based solutions  |
@@ -2273,14 +2139,7 @@ Climate Neutrality Action Plan
 |   |  Action scale & addressed entities | Activities throughout the city  |
 |   |  Involved stakeholders | Wroclaw Municipality, city units and companies, residents, NGOs, private sector  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | Green areas account for nearly 41% of the area of Wroclaw, which gives great potential for maintaining and developing a coherent system of blue-green infrastructure in the city. They perform important environmental functions and provide residents with a range of sustaining, regulatory, cultural and provisioning services, determining the quality of life in the city and its adaptation to climate change. There are deficiencies in the city's greenery continuity, which should be remedied through the various measures taken, just as the quality of the greenery should be systematically improved.
-
-These measures will be implemented both through direct investments by the city, such as the continuation of the street modernisation and greening programme, the planting of trees as part of the existing Wro programme, the expansion of green tracks and other activities. There will also be a continuation and expansion of activities in the de-paving of backyards and squares. Supporting activities are the implementation and enforcement of greenery management standards (standards for protection of greenery in investment processes,  |
-
-6
-Climate Neutrality Action Plan
-
-7
-
+| These measures will be implemented both through direct investments by the city, such as the continuation of the street modernisation and greening programme, the planting of trees as part of the existing Wro programme, the expansion of green tracks and other activities. There will also be a continuation and expansion of activities in the de-paving of backyards and squares. Supporting activities are the implementation and enforcement of greenery management standards (standards for protection of greenery in investment processes,  |
 |   |  | standards for maintenance of green areas). It is planned to prepare an ambitious plan for greening the city. The Stormwater Management Strategy (2023), which also includes blue-green projects, will also be implemented.  |
 | --- | --- | --- |
 |  Impact & cost | Generated renewable energy (if applicable) | Not applicable  |
@@ -2291,15 +2150,12 @@ Climate Neutrality Action Plan
 |  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | Action G-2
-Educational, informational, organisational climate action  |
+| Educational, informational, organisational climate action  |
 |   |  Action type | Information, education, subsidy, support activities  |
 |   |  Action description | Continuation and strengthening of activities under the programmes I like rain (education facilities), Catch the rain (residents, communities, housing cooperatives, grants), Wroclaw does not waste, bookcrossing.
-
-Expand educational activities on blue-green infrastructure and ecosystem services, sustainable development goals, food policy, climate change challenges.  |
+| Expand educational activities on blue-green infrastructure and ecosystem services, sustainable development goals, food policy, climate change challenges.  |
 |  Reference to impact pathway | Field of action | Blue-green infrastructure and nature-based solutions  |
 |   |  Systemic lever | Governance and policy, science, finance and financing, education and communication  |
-Climate Neutrality Action Plan
-
 |  | Outcome | Development of blue-green infrastructure in the city.
 Protection of biodiversity.
 Increasing the living comfort of residents, health levels and tourist attractiveness of Wroclaw and the surrounding area, through the expansion and diversification of the urban ecosystem and the creation of friendly places for recreation and relaxation. |
@@ -2308,21 +2164,11 @@ Increasing the living comfort of residents, health levels and tourist attractive
 | Action scale & addressed entities | City-wide activities |
 | Involved stakeholders | Wroclaw Municipality of Wroclaw, city units and companies, residents, private sector, NGOs, universities, education units |
 | Comments on implementation – consider mentioning resources, timelines, milestones | Activities in the field of blue-green infrastructure and climate change adaptation have less impact on direct emission reduction but are important from the point of view of reducing energy consumption, quality of life, climate change adaptation, and can influence transport behaviour variables.
-As part of education and outreach activities, the city encourages residents, cooperatives, housing communities, and businesses to deconstruct pavement, plant greenery, and establish small retention facilities on land owned by them, through education (e.g., Good Practice Guides for Stormwater Management in Urbanized and Road Areas) and support programmes - expert advice from city entities and grant programmes for small retention facilities, as well as civic budgeting. |
+| As part of education and outreach activities, the city encourages residents, cooperatives, housing communities, and businesses to deconstruct pavement, plant greenery, and establish small retention facilities on land owned by them, through education (e.g., Good Practice Guides for Stormwater Management in Urbanized and Road Areas) and support programmes - expert advice from city entities and grant programmes for small retention facilities, as well as civic budgeting. |
 | Impact & cost | Generated renewable energy (if applicable) | Not applicable |
 | Removed/substituted energy, volume, or fuel type | Not applicable |
 | GHG emissions reduction estimate (total) per emission source sector | Not applicable |
 | GHG emissions compensated (natural or technological sinks) | Not applicable |
-
-8
-C
-
-Climate Neutrality Action
-
-Plan
-
-#
-
 |  Total costs and costs by CO2e unit | Not applicable  |
 | --- | --- |
 
@@ -2333,10 +2179,6 @@ Waste and water and sewage management
 |  Action outline | Action name | Action W-1 Climate neutrality and energy security of water, wastewater and waste management  |
 |   |  Action type | Infrastructure actions  |
 |   | Action description | Examples of activities to be implemented: a. construction of Selective Collection Points for municipal waste, b. information and education campaigns for residents about the operation of Selective Collection Points for Municipal Waste, c. support for entrepreneurs in the field of selective waste collection, e.g. development of information materials on the principles of municipal waste management for entrepreneurs; d. Implementation of a smart waste collection and transportation management system e. Use of innovative technologies for recycling and recovery of individual material fractions of waste f. Educational activities in the area of closed-loop economy Wroclaw does not waste g. Improving the efficiency of selective collection of all waste fractions h. R&D projects for construction of installations for mechanical and/or biological transformation of municipal waste with energy recovery i. R&D work to optimize water treatment and wastewater treatment processes  |
-Climate Neutrality Action Plan
-
-0
-
 |   |  | j. Application of intelligent solutions in hardware, software and management of urban water and wastewater management
 k. Optimization of the operation of the aeration system for activated sludge at the Wroclaw Wastewater Treatment Plant.
 l. Programme to improve energy efficiency in the city's water and wastewater management
@@ -2361,10 +2203,6 @@ Industry
 |  Action outline | Action name | ActionI-1 Decarbonisation of industry  |
 |   |  Action type | Infrastructure, information activities  |
 |   | Action description | Examples of actions to be taken: a) Increase energy efficiency of industrial and production processes b) Self-sufficiency / autonomy / energy security (captive power and heat production) c) Reduction of thermal energy demand and production of heat from RES d) Improvement of energy efficiency of electricity consumption of technological processes  |
-Climate Neutrality Action Plan
-
-#
-
 |   |  | e) Utilisation of waste heat for heating buildings and process heat needs
 f) Application of cogeneration systems based on natural gas
 g) Installation of photovoltaic systems on/near industrial buildings
@@ -2452,10 +2290,6 @@ Table 21. Economic Indicators by Sector
 |  Energy and district heating system | E.1, E.2 | 3 | Emission factors for electricity in the National Energy System (NES) | National Centre for Emissions Management (KOBiZE) | kg CO2/MWh | 68531 | 400 – 60032  |
 |   |  B.1, E.1, E.2, E.3, T.4 | 4 | Electricity consumption in the city | Emission inventory/ update of assumptions for the plan of supply with heat, electrical energy and gas fuel for the area of the Municipality of Wroclaw | MWh | 2,481,576 | TBD (3,201,000 in 203733)  |
 |   |  E.2, E.1, | 5 | Local electricity emissions factor in the city area | Emission inventory | kg CO2/MWh | TBD | TBD  |
-Climate Neutrality Action Plan
-
-7
-
 |   | E.2 | 6 | Power of photovoltaic installations installed in the city | Data from the Municipality of Wroclaw in consultation with the NES operator | MWh | 58.3 | increase  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |   |  E.2 | 7 | Share of renewable energy sources in energy production | Update of assumptions for the plan of supply with heat, electrical energy and gas fuel for the area of the Municipality of Wroclaw | % | 5 | increase  |
@@ -2465,10 +2299,6 @@ Climate Neutrality Action Plan
 |   |  E.1 | 11 | Emission factor for district heating | Emission inventory | kg CO₂/GJ | 99.6 | decrease  |
 |   |  B.1 | 12 | Number of buildings thermally modernised in the municipal stock | Data of the Municipality of Wroclaw | pcs/year | 8 | increase  |
 |   |  B.1 | 13 | Heat energy consumption | Update of assumptions for the plan of supply with heat, electrical energy and gas fuels for | TJ | 15,619 | decrease  |
-Climate Neutrality Action Plan
-
-8
-
 |   |  |  |  | the area of the Municipality of Wroclaw/Emission inventory |  |  |   |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Transportation and mobility | T.1 – T.4, E.1, E.2 | 14 | Transport emissions | Emission inventory | kg CO₂/MWh | 1,483,345 |   |
@@ -2477,13 +2307,9 @@ Climate Neutrality Action Plan
 |   |  T.4 | 17 | Share/number of electric buses in public transport | Wroclaw Strategy for the Development of Electromobility | pcs/% | 13 | increase  |
 |   |  T.1 | 18 | Number of vehicle kilometres of inter-municipal transport ordered by the organiser (Local Government Unit) | Monitoring SUMP | carriage km/y | Communication inter-municipal - 4,535,382 / Public transport - 29,507,442 | increase  |
 |   |  T.1, T.2, T.3 | 19 | Number of passengers on public transport | Data of Municipal Transport Company | pcs/y | Municipal Transport Company – 194,490,000
-xx lines - 1,193,000 | increase  |
+| xx lines - 1,193,000 | increase  |
 |   |  T.1, T.2, T.3 | 20 | Total number of kilometres travelled in the city by vehicles | Environmental Insights Explorer – Google tool | km/y | 4,780,000,000 | decrease  |
 |   |  T.1 | 21 | Number of parking spaces in the park & ride system |  | pcs | 2,751 | increase  |
-Climate Neutrality Action Plan
-
-9
-
 |  | T.1 | 22 | Share of the population of the Wroclaw Functional Area residing within 800 m of railway stations and stops or 500 m of a public transport stop (regarding the number of people registered for permanent residence) | SUMP for Wroclaw Functional Area (37 municipalities) | % | 90.3 (2020) | increase |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Green infrastructure and nature-based solutions | G.1 | 23 | Surface and share of paved land in the city (planned) | Monitoring of the MPA | %/ha | TBD | TBD |
@@ -2642,10 +2468,6 @@ Table 22. Relations between governance innovations, systems, and impact pathways
 |  Strategy and Sustainable Development Department (former Sustainable Development Department) | Department coordinates the work of the Municipality in the field of environmental protection and ecology. In the department, ecological approach meets with the existing Municipal activity, so as to further change the actions of officials in matters of sustainable development. A special part of the activity is to educate and involve residents in the process of building a resilient city. One of the tasks is the city's neutrality activities. Also adaptation measures, new greenery standards and water management. | Siloed nature of work in the office, dispersion and poor coordination of activities and communication. Weak monitoring and evaluation of local strategies – lack of adequate communication at all levels of cooperating departments disorganization between departments Building awareness among residents about the importance of reducing emissions and how they can get involved will be crucial to the success of the effort. | Leaders: Divisions within the Green Department. Stakeholders: all groups of internal and external stakeholders. | Department is responsible for coordination the 100 Climate Neutral and Smart Cities Mission, including management of Transition Team works. | Institutional impact: 1. establishing regulations and laws at the local level; 2. setting standards or guidelines for areas of operation; 3. developing strategies and action plans, e.g. strategies and action plans to achieve zero-emission status; 4. promoting partnerships and cooperation, e.g. public-private, cross-sector partnerships; 5. monitoring and evaluating progress, e.g., collecting data and assessing achievement of goals.  |
 |  Smart City Wroclaw | Implementation of Smart City objectives | Engaging partners: Collaboration with external partners, | Smart City Wroclaw is | Supporting activities that improve the | Institutional impact:  |
 |   |  | importance of the new environment and the new environment. | sustainable development. | institutional and environmental impact. |   |
-Climate Neutrality Action Plan
-
-8
-
 |   |  | such as NGOs, academic institutions or businesses, can contribute to the exchange of knowledge and experience and the joint implementation of projects. | led by Smart City Unit
 Stakeholders: all groups, according to 6 pillars | quality of life of residents, pro-environment and pro-innovation, as well as investments related to supporting mobility and public transportation. | 1. setting standards or guidelines for areas of operation;
 developing strategies and action plans, e.g., strategies and action plans to achieve zero-emission status;
@@ -2661,12 +2483,12 @@ monitoring and evaluating progress, e.g., collecting data and assessing achievem
 Climate Neutrality Action Plan
 
 |  Open Data
-Wroclaw | It is Internet service that allows all interested parties, including residents of Wroclaw, to quickly and easily access public information collected by the Wroclaw Municipality and other city units. | Monitoring and updating: Taking regular inventories and monitoring progress against targets will allow actions to be adjusted in response to changing circumstances | Leader: IT service centre, one of the municipal units
-Users: academic institutions, enterprises, start ups, residents | Data could be used in research or for startups | Institutional impact: monitoring and evaluating progress, e.g., collecting data and assessing achievement of goals  |
+| Wroclaw | It is Internet service that allows all interested parties, including residents of Wroclaw, to quickly and easily access public information collected by the Wroclaw Municipality and other city units. | Monitoring and updating: Taking regular inventories and monitoring progress against targets will allow actions to be adjusted in response to changing circumstances | Leader: IT service centre, one of the municipal units |
+| Users: academic institutions, enterprises, start ups, residents | Data could be used in research or for startups | Institutional impact: monitoring and evaluating progress, e.g., collecting data and assessing achievement of goals  |
 | --- | --- | --- | --- | --- | --- |
 |  Bicycle Officer | Coordinating all matters related to bicycles | Attachment to car use - a sociological factor difficult to change
-Lack of interest from the public | Leader: the Bicycle Officer
-Users: mainly bicyclists (current and future) | Increase in use of bicycle; reduction of use of cars | Promotion of “clean” transportation: Given the significant contribution of transportation to emissions, it is recommended to invest in the expansion of clean transportation and to promote its use and reduce individual car transportation.  |
+| Lack of interest from the public | Leader: the Bicycle Officer |
+| Users: mainly bicyclists (current and future) | Increase in use of bicycle; reduction of use of cars | Promotion of “clean” transportation: Given the significant contribution of transportation to emissions, it is recommended to invest in the expansion of clean transportation and to promote its use and reduce individual car transportation.  |
 |  Wroclaw City Bicycle | Bicycle rental system | Attachment to car use - a sociological factor difficult to change
 Lack of interest from the public
 Residents' resistance to change | Leader: the Bicycle Officer/
@@ -2679,23 +2501,19 @@ Climate Neutrality Action Plan
 0
 
 |  Pedestrian Officer | Coordinating all matters related to pedestrians | Attachment to car use - a sociological factor difficult to change
-Residents' resistance to change | Leader: the Pedestrian Officer/ Department of Infrastructure and Transportation
-Stakeholders: all groups of stakeholders | Encouraging walking instead of using the car, especially for short distances | Reducing car traffic over short distances, e.g. walking children to school instead of dropping them off by car  |
+| Residents' resistance to change | Leader: the Pedestrian Officer/ Department of Infrastructure and Transportation |
+| Stakeholders: all groups of stakeholders | Encouraging walking instead of using the car, especially for short distances | Reducing car traffic over short distances, e.g. walking children to school instead of dropping them off by car  |
 | --- | --- | --- | --- | --- | --- |
 |  Free tickets for public transport | Resolution No. LIII/1271/18 of the Wroclaw City Council dated April 5, 2018 on the establishment of prices for transport services provided by means of public transport | Attachment to car use - a sociological factor difficult to change
-Lack of interest from the public | Free public transport tickets for selected groups of residents including students till 21 years old and seniors | Increase the use of public transport, decrease the use of cars | Promotion of “clean” transportation: Given the significant contribution of transportation to emissions, it is recommended to invest in the expansion of clean transportation and to promote its use and reduce individual car transportation.  |
+| Lack of interest from the public | Free public transport tickets for selected groups of residents including students till 21 years old and seniors | Increase the use of public transport, decrease the use of cars | Promotion of “clean” transportation: Given the significant contribution of transportation to emissions, it is recommended to invest in the expansion of clean transportation and to promote its use and reduce individual car transportation.  |
 |  Change the stove | Support system connected with the implementation of the “anti-smog resolutions”, it consists of municipal Energy Advisors, dedicated funds and cooperation of many groups of stakeholders. | Lack of ability to build programmes with complex organisational structure - financial weakness of local governments, dependence on grants, lack of business experience
-Increasing energy efficiency: Investing in projects to improve the energy efficiency of public and private buildings can yield significant benefits in terms of both emissions reductions and cost savings. | Leader: Strategy and Sustainable Development Department in cooperation with various divisions;
-Recipients: residents of the city | This programme had big impact on improving air quality due to replacing stoves | Reducing the carbon footprint of individual heat sources - replacing stoves related to improving air quality; unfortunately, much of the replacement consisted of installing gas stoves, which will require further measures in the future (such as installing heat pumps).  |
-Climate Neutrality Action Plan
-
-1
-
+| Increasing energy efficiency: Investing in projects to improve the energy efficiency of public and private buildings can yield significant benefits in terms of both emissions reductions and cost savings. | Leader: Strategy and Sustainable Development Department in cooperation with various divisions; |
+| Recipients: residents of the city | This programme had big impact on improving air quality due to replacing stoves | Reducing the carbon footprint of individual heat sources - replacing stoves related to improving air quality; unfortunately, much of the replacement consisted of installing gas stoves, which will require further measures in the future (such as installing heat pumps).  |
 |   |  | Shortages in materials and workmanship - limited number of specialists and business entities. |  |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  KAWKA Plus | Target subsidy from the municipal budget granted for the implementation of investment tasks in the field of environmental protection in dwellings and properties used for residential purposes, involving the permanent liquidation of the fixed heating system based on coal fuel and its change to environmen-tally friendly heating | Lack of ability to build programmes with complex organisational structure - financial weakness of local governments, dependence on grants, lack of business experience
-Shortages in materials and workmanship - limited number of specialists and business entities. | Leader: Strategy and Sustainable Development Department in cooperation with various divisions;
-Recipients: residents of the city | This programme had big impact on improving air quality due to replacing stoves | Reducing the carbon footprint of individual heat sources - replacing stoves related to improving air quality; unfortunately, much of the replacement consisted of installing gas stoves, which will require further measures in the future (such as installing heat pumps).  |
+| Shortages in materials and workmanship - limited number of specialists and business entities. | Leader: Strategy and Sustainable Development Department in cooperation with various divisions; |
+| Recipients: residents of the city | This programme had big impact on improving air quality due to replacing stoves | Reducing the carbon footprint of individual heat sources - replacing stoves related to improving air quality; unfortunately, much of the replacement consisted of installing gas stoves, which will require further measures in the future (such as installing heat pumps).  |
 |  Local Shield Programme | It is a system of subsidies for heating bills for those who replaced a coal stove with an environmen-tally friendly heat source: electric, gas, oil or district heating. It targeted the poorest social groups, as these were the groups hit the most by the obligation to replace stoves. | Increasing energy efficiency: Investing in projects to improve the energy efficiency of public and private buildings can yield significant benefits in terms of both emissions reductions and cost savings.
 Lack of ability to build programmes with complex organisational structure - financial weakness of local governments, dependence on grants, lack of business experience
 Limited or no appropriate support policies/programmes – fiscal, financial, excessive criteria for | Leader: Strategy and Sustainable Development Department in cooperation with various divisions;
@@ -2705,33 +2523,18 @@ Climate Neutrality Action Plan
 |   |  | allocating funds, complicated application process |  |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  reTURN of the tenements | New municipal programme, renovation of city-owned tenements together with their surroundings - greenery and courtyards.
-
-This programme complements the ‘Change the Stove’ programme, the next step after replacing the cookers will be to thermo-modernise them, combined with other necessary works, such as replacing woodwork and electrical installations | Limited or no appropriate support policies/programmes - fiscal, financial, exorbitant award criteria, complicated application process | Leader: municipal real estate management companies
-Stakeholders: residents, entrepreneurs | This programme reinforces the effects of the ‘Change the Stove’ programme, by thermally upgrading buildings and landscaping courtyards with greenery | Reducing the carbon footprint of individual heat sources - replacing stoves related to improving air quality; unfortunately, much of the replacement consisted of installing gas stoves, which will require further measures in the future (such as installing heat pumps).  |
+| This programme complements the ‘Change the Stove’ programme, the next step after replacing the cookers will be to thermo-modernise them, combined with other necessary works, such as replacing woodwork and electrical installations | Limited or no appropriate support policies/programmes - fiscal, financial, exorbitant award criteria, complicated application process | Leader: municipal real estate management companies |
+| Stakeholders: residents, entrepreneurs | This programme reinforces the effects of the ‘Change the Stove’ programme, by thermally upgrading buildings and landscaping courtyards with greenery | Reducing the carbon footprint of individual heat sources - replacing stoves related to improving air quality; unfortunately, much of the replacement consisted of installing gas stoves, which will require further measures in the future (such as installing heat pumps).  |
 |  Property tax exemption | Resolution No. XIII/316/19 of the Wroclaw City Council dated September 5, 2019, regarding exemptions from property tax for buildings or their parts connected to photovoltaic installations, solar collectors, heat pumps, heat recovery systems, or ground heat exchangers as amended | Limited or no appropriate support policies/programmes - fiscal, financial, exorbitant award criteria, complicated application process | Building owners – residents and companies | Support for renewable energy sources: Encouraging businesses and residents to invest in renewable energy sources, such as solar panels and wind turbines, will help reduce emissions associated with energy production. | Reducing the carbon footprint of individual heat sources - replacing stoves related to improving air quality; unfortunately, much of the replacement consisted of installing gas stoves, which will require further measures in the future (such as installing heat pumps).  |
-
-2
-Climate Neutrality Action Plan
-
 |  Purchasing Groups | the joint purchase of electricity and gas for municipal entities, i.e. schools, kindergartens and cultural institutions, municipal companies | Organisational weakness - lack of specialised staff, poor prioritisation, ineffective management of horizontal processes, insufficient budget. | Leader: Municipality, Stakeholders: municipal companies, schools and kindergartens | Energy and gas savings, monitoring of use the energy; | Institutional impact: 1. setting standards or guidelines for areas of operation; 2. promoting partnerships and cooperation, 3. monitoring and evaluating progress, e.g., collecting data and assessing achievement of goals  |
 | --- | --- | --- | --- | --- | --- |
 |  Energy Saving Register | This is an electronic application for the recording of planned and incurred costs and consumption of utilities | Organisational weakness - lack of specialised staff, poor prioritisation, ineffective management of horizontal processes, insufficient budget. | Leader: Municipality, Stakeholders: municipal companies, municipal entities, including schools and kindergartens |  | Institutional impact: 1. establishing regulations and laws at the local level; 2. setting standards or guidelines for areas of operation 3. monitoring and evaluating progress, e.g., collecting data and assessing achievement of goals  |
 |  RES installations | Implementation of RES on selected buildings of city units – e.g. educational facilities. | High investment costs - price fluctuations Restrictions for prosumers related to the possibility of access to connection capacity Lack of stable legal regulations and a long-term strategy for the development | Leader: Municipality Stakeholders: schools, kindergartens and other municipal facilities users | In 2022, 8 RES installations were completed along with the necessary renovations, with a total capacity of 140.745 kWp. In 2023, 8 project documentations were prepared. | Institutional impact: 1. setting standards or guidelines for areas of operation; 2. promoting partnerships and cooperation, e.g. public-  |
-
-3
-Climate Neutrality Action Plan
-
-4
-
 |   |  | of renewable energy sources in the city
-Support for renewable energy sources. |  | 6 RES installations were completed (the remaining 2 were carried forward to 2024) together with the necessary roof renovations. The total capacity of the installations is 205.49 kWp. In 2024, 6 design dossiers have been prepared for RES installations on public facilities owned by the city, which will be implemented (planned capacity of 204.36 kWp). | private, cross-sector partnerships; 3. monitoring and evaluating progress, e.g., collecting data and assessing achievement of goals  |
+| Support for renewable energy sources. |  | 6 RES installations were completed (the remaining 2 were carried forward to 2024) together with the necessary roof renovations. The total capacity of the installations is 205.49 kWp. In 2024, 6 design dossiers have been prepared for RES installations on public facilities owned by the city, which will be implemented (planned capacity of 204.36 kWp). | private, cross-sector partnerships; 3. monitoring and evaluating progress, e.g., collecting data and assessing achievement of goals  |
 | --- | --- | --- | --- | --- | --- |
 |  Community Council | It is a body, composed of representatives of various professional and creative circles, non-governmental organisations, city institutions, private business, but also the public sector and universities, who decide to socially interact as a consultative and advisory body to the mayor of the city. | Engaging partners: collaboration with external partners, such as NGOs, academic institutions or businesses, can contribute to the exchange of knowledge and experience; Social support - conflicted groups; | Leader: municipal units, depending on the council, Strategy and Sustainable Development Department is responsible for works of Council for ecology and greenery | Influencing/supporting ecological solutions | Institutional impact: 1. setting standards or guidelines for areas of operation; 2. developing strategies and action plans, e.g. strategies and action plans to achieve zero-emission status; 3. promoting partnerships and cooperation;  |
 |  Transition Team | Interdepartmental Team, Decarbonisation Team and there was Air Quality and Energy Efficiency Team | Siloed nature of work in the office, dispersion and poor coordination of activities and communication | Leader: Sustainable Development Department | Better allocation of resources and coordination of activities, communication, ability to use different | Institutional impact: 1. setting standards, rules, guidelines for areas of  |
-Climate Neutrality Action Plan
-
-5
-
 |   | Team is established to facilitate cooperation between departments, units, companies and institutions | Building awareness among residents about the importance of reducing emissions and how they can get involved will be crucial to the success of the effort |  | sources of expertise.
 Cooperation on the development of system solutions. | operation;
 developing strategies and action plans, e.g., strategies and action plans to achieve zero-emission status;
@@ -2813,51 +2616,32 @@ Table 23. Relations between social innovations, systems, and impact pathways
 |  Intervention name | Description | Systemic barriers / opportunities addressed | Leadership and stakeholders involved | Enabling impact | Co-benefits  |
 |  Public Participatory Division (former Public Participatory Office) | Interventions: conducts public consultations; coordinates activities related to the civic budget; cooperates with NGOs; CALs;Coordination of the website dedicated to participatory processes “Wroclaw talks” | Too little involvement of residents/neighbours and stakeholders/schools - limited powers of the authorities/neighbours, lack of a platform for continuous cooperation and effective engagement tools. | Public Participation Division works with all types of stakeholders – internal (municipal workers) and external (including residents, NGOs, academia), depending on the topic that is consulted | The Division informs and engages residents in municipal actions in many ways, through consulting municipal policy documents, investments. This helps to: increase stakeholders motivation and commitment to climate transformation; understand mutual expectations and interdependencies among stakeholder groups; build trust; | Educating, capacity building, Engaging residents in co-creation process  |
 |  Local Activity Center (CAL) | CALs are places co-financed by Municipality, operated by local NGOs, working with the residents. CALs are places and activities co-created together with Wroclaw residents, open to diversity and in solidarity with those who need help or support. at the local level. | Insufficient cooperation between the government and local governments - undervaluing the role of urban centres, limiting decision-making authority and financial self-reliance, organisational weakness - lack of male and female leaders of change, lack of specialised staff, poor prioritisation, ineffective management of horizontal | Leader : Third sector CALs are led by local NGOs, they cooperate with local stakeholders: residents, schools, kindergartens, local leaders, local businesses, District Councils and Municipality | Canters are a strong link between municipality and residents, supporting the process of positive social change on the district level; Centres educate and initiate changes. These actions results in: Increasing stakeholders motivation and commitment to climate transformation; understand | Educating, capacity building  |
-Climate Neutrality Action Plan
-
-0
-
 |   |  | processes, insufficient budget. |  | mutual expectations and interdependencies among stakeholder groups; build trust and sectoral and trans-sectoral partnerships; |   |
 | --- | --- | --- | --- | --- | --- |
 |  District Council | It represents its residents to the bodies and organisational units of the Municipality. It carries out its tasks, cooperating with the bodies of the local government and institutions and organisations operating in the district. There are 48 District Councils in the city | Insufficient cooperation between the government and local governments - undervaluing the role of urban centres, limiting decision-making authority and financial self-reliance, Organisational weakness - lack of male and female leaders of change, lack of specialised staff, poor prioritisation, ineffective management of horizontal processes, insufficient budget. | Leaders – local activists and politicians create District Councils, they are selected during elections and represent the district before the municipality, close cooperation with City Council, CALs and local residents, local businesses | Through close cooperation between municipality and residents Councils have a huge influence on local residents, business and they are the ones who often initiate changes - for example, by passing an extension of the paid parking zone, supporting environmental projects, initiatives. These actions results in: Increasing stakeholders motivation and commitment to climate transformation; understand mutual expectations and interdependencies among stakeholder groups; build trust and sectoral and trans-sectoral partnerships. | Educating, capacity building, supporting environmental projects, initiatives  |
 |  The Youth City Council | The Council has a consultative, advisory and initiative character. The purpose of the Council is: 1) disseminate | Organisational weakness - lack of young male and female leaders of change, lack of specialised staff. | Leader: council members who were selected during the elections; Recipients: young people. | Education and community involvement: Building awareness among residents about the importance of reducing emissions and | Initiating/ supporting ecological solutions Educating, capacity building, supporting environmental  |
-Climate Neutrality Action Plan
-
-1
-
 |   | the idea of self-government; 2) to create civic attitudes among young people; 3) to develop student self-government; 4) organizing a youth forum for expression on public issues; 5) representing youth and student self-governments of Wroclaw schools before the authorities of Wroclaw and other institutions and organisations. |  |  | how they can get involved will be crucial to the success of the effort. | projects, initiatives.  |
 | --- | --- | --- | --- | --- | --- |
 |  Wroclaw Participatory Budget | It is a part of the city's budget, the allocation of which is decided by residents themselves through direct voting. It is one of three participatory budgets implemented by Wroclaw. | Too little involvement of residents/neighbours and stakeholders/schools - limited powers of the authorities/neighbours, lack of a platform for continuous cooperation and effective engagement tools. | Leader : Public sector
-Led by Public Participatory Division in cooperation with various divisions responsible for reviewing projects and the municipal companies responsible for implementing projects; the real hero of each project is a leader responsible for submission the idea/proposal and residents voting for the proposal. | The civic budget includes many green investments - not only parks, squares but also bicycle and pedestrian paths, promoting NBS;
-This results in: building trust and sectoral and trans-sectoral partnerships; deepening knowledge and awareness of the climate transition; building shared ownership of the climate transition and the responsibilities and commitments of individual stakeholders. | capacity building, supporting environmental projects, initiatives – especially in terms of NBS, clean transportation, educating, counteracting light pollution.  |
+| Led by Public Participatory Division in cooperation with various divisions responsible for reviewing projects and the municipal companies responsible for implementing projects; the real hero of each project is a leader responsible for submission the idea/proposal and residents voting for the proposal. | The civic budget includes many green investments - not only parks, squares but also bicycle and pedestrian paths, promoting NBS; |
+| This results in: building trust and sectoral and trans-sectoral partnerships; deepening knowledge and awareness of the climate transition; building shared ownership of the climate transition and the responsibilities and commitments of individual stakeholders. | capacity building, supporting environmental projects, initiatives – especially in terms of NBS, clean transportation, educating, counteracting light pollution.  |
 |  Microgrants | Part of the city's budget supporting grassroots local initiatives, within the framework of | Too little involvement of residents/neighbours and stakeholders/schools - limited powers of the authorities/ | Leader : public sector - municipality
-The call is open to: individuals, informal groups, young people, NGO's; | Through supporting grassroots initiatives, it helps building more | Education, capacity building ; supporting environmental  |
-Climate Neutrality Action Plan
-
-2
-
+| The call is open to: individuals, informal groups, young people, NGO's; | Through supporting grassroots initiatives, it helps building more | Education, capacity building ; supporting environmental  |
 |   | which residents can implement their own ideas for creative ventures aimed at spreading culture in the city. | neighbours, lack of a platform for continuous cooperation and effective engagement tools. | coordinated by municipality. | aware and open society. | projects, initiatives.  |
 | --- | --- | --- | --- | --- | --- |
 |  District Fund | These are separate funds allocated for the implementation of district investments submitted by the District Councils according to the rules and procedures set forth herein. | Too little involvement of residents/ neighbours and stakeholders/schools - limited powers of the authorities/ neighbours, lack of a platform for continuous cooperation and effective engagement tools. | Leader : public sector - municipality
-District Councils get the funds and decide together with residents how to use them; projects are implemented under supervision of municipal companies. | The district fund are used for many green investments - not only parks, squares but also bicycle and pedestrian paths and streets with NBS.
-This results in: building trust and sectoral and trans-sectoral partnerships; deepening knowledge and awareness of the climate transition; building shared ownership of the climate transition and the responsibilities and commitments of individual stakeholders. | capacity building, supporting environmental projects, initiatives – especially in terms of NBS, clean transportation, educating, counteracting light pollution.  |
+| District Councils get the funds and decide together with residents how to use them; projects are implemented under supervision of municipal companies. | The district fund are used for many green investments - not only parks, squares but also bicycle and pedestrian paths and streets with NBS. |
+| This results in: building trust and sectoral and trans-sectoral partnerships; deepening knowledge and awareness of the climate transition; building shared ownership of the climate transition and the responsibilities and commitments of individual stakeholders. | capacity building, supporting environmental projects, initiatives – especially in terms of NBS, clean transportation, educating, counteracting light pollution.  |
 |  Small steps, big changes | Education campaign which inspired residents to change their small daily habits regarding choices that affect air quality or the protection of biodiversity in the immediate area. | Lack of a template for climate transformation of cities - a strategic concept demonstrating that transformation is possible, profitable, and even a condition for successful city operations in the future. | Leader : public sector - municipality
-Campaign was coordinated by Sustainable Development Department, it was directed to all residents of the city and Lower Silesia region. | Campaign helped to inspire residents to change their small daily habits regarding choices that affect air quality or the protection of biodiversity;
-Results: increasing stakeholders motivation and commitment to climate transformation; understanding mutual expectations and interdependencies | Education, capacity building
-Initiating/supporting ecological solutions.  |
-Climate Neutrality Action Plan
-
-3
-
+| Campaign was coordinated by Sustainable Development Department, it was directed to all residents of the city and Lower Silesia region. | Campaign helped to inspire residents to change their small daily habits regarding choices that affect air quality or the protection of biodiversity; |
+| Results: increasing stakeholders motivation and commitment to climate transformation; understanding mutual expectations and interdependencies | Education, capacity building |
+| Initiating/supporting ecological solutions.  |
 |   |  |  |  | among stakeholder groups. |   |
 | --- | --- | --- | --- | --- | --- |
 |  C-Change | Urbact funds financed project in which arts and culture inspired climate action in cities. | Lack of a template for climate transformation of cities - a strategic concept demonstrating that transformation is possible, profitable, and even a condition for successful city operations in the future.
-
-Organisational weakness - lack of male and female leaders of change, lack of specialised staff, poor prioritisation, ineffective management of horizontal processes, insufficient budget. | Leader : public sector - municipality
-
-Project was led by Sustainable Development Department, it was dedicated to Cultural and art institutions working with citizens and NGOs. | Changing the behaviour of residents, their daily habits regarding choices that affect air quality;
-
-Results: increasing stakeholders motivation and commitment to climate transformation; understanding mutual expectations and interdependencies among stakeholder groups. | Education through art and culture, capacity building.  |
+| Organisational weakness - lack of male and female leaders of change, lack of specialised staff, poor prioritisation, ineffective management of horizontal processes, insufficient budget. | Leader : public sector - municipality |
+| Project was led by Sustainable Development Department, it was dedicated to Cultural and art institutions working with citizens and NGOs. | Changing the behaviour of residents, their daily habits regarding choices that affect air quality; |
+| Results: increasing stakeholders motivation and commitment to climate transformation; understanding mutual expectations and interdependencies among stakeholder groups. | Education through art and culture, capacity building.  |
 |  Change the stove | Support system consisting of municipal Energy Advisors, dedicated funds and cooperation of many groups of stakeholders. | Fragmentation of ownership - individual, combined, multiplicity of entities and organisational structures (communities, cooperatives, municipal mix)
 
 Limited interest in renovation of buildings by private and municipal entities due to other conditions
@@ -2878,21 +2662,13 @@ Lack of ability to build programmes with complex organisational structure - fina
 Shortages in materials and workmanship - limited number of specialists and business entities |  |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  Civic panel | Represented demographic structure of the city, it was chosen to analyze the topic “How to improve the movement of people around Wroclaw, with a view to | Too little involvement of residents/neighbours and stakeholders/schools - limited powers of the authorities/neighbours, lack of a platform for continuous cooperation and | Leader : Public sector at the city level
-Coordinated by Public Participatory Office in cooperation with Department of Infrastructure and Transportation and various divisions; | Promoting solutions that have positive impact on air quality and increasing biodiversity.
-This results in: building trust and sectoral and trans-sectoral | Capacity building, education
-Initiating/supporting ecological solutions  |
-Climate Neutrality Action Plan
-
+| Coordinated by Public Participatory Office in cooperation with Department of Infrastructure and Transportation and various divisions; | Promoting solutions that have positive impact on air quality and increasing biodiversity. |
+| This results in: building trust and sectoral and trans-sectoral | Capacity building, education |
+| Initiating/supporting ecological solutions  |
 |   | improving the quality of life and protecting the climate?" | effective engagement tools. Organisational weakness - lack of male and female leaders of change, lack of specialised staff, poor prioritisation, ineffective management of horizontal processes, insufficient budget. | dedicated to vast group of stakeholders, represented by participants selected by lottery. | partnerships; deepening knowledge and awareness of the climate transition; building shared ownership of the climate transition and the responsibilities and commitments of individual stakeholders. |   |
 | --- | --- | --- | --- | --- | --- |
 |  Civic meeting | Each group of stakeholders has its representative, in order to achieve balance between different groups of stakeholders. The topic was the future development of Ruska Street. | Too little involvement of residents/ neighbours and stakeholders/schools - limited powers of the authorities/ neighbours, lack of a platform for continuous cooperation and effective engagement tools. Organisational weakness - lack of male and female leaders of change, lack of specialised staff, poor prioritisation, ineffective management of horizontal processes, insufficient budget. | Public sector at the city level Coordinated by Public Participatory Office in cooperation with Sustainable Mobility Office and municipal company; dedicated to vast group of stakeholders, represented by participants selected by lottery. | Promoting solutions that have positive impact on air quality and increasing biodiversity; This results in: building trust and sectoral and trans-sectoral partnerships; deepening knowledge and awareness of the climate transition; building shared ownership of the climate transition and the responsibilities and commitments of individual stakeholders. | Capacity building, education Initiating/supporting ecological solutions  |
 |  NEEST (on-going) | Project focuses on solutions that will enable comprehensive retrofitting of buildings and neighbourhoods to improve their energy efficiency. | Fragmentation of ownership - individual, combined, multiplicity of entities and organisational structures (communities, cooperatives, municipal mix); Limited interest in renovation of buildings by private and municipal | Leader : public sector at city level Led by Sustainable Development Department in cooperation with Transition Team (described in Governance Innovations); dedicated to all groups related to improving building energy efficiency - building managers, | Results of this project will have big impact on improving air quality due to indicating the most beneficial ways of effective, and socially acceptable modernisation of the housing stock for different types of residential and | The project is expected to indicate the most beneficial ways of effective, economically efficient and socially acceptable modernisation of the housing stock for different types of residential and non-residential buildings, these  |
-
-5
-Climate Neutrality Action Plan
-
-6
-
 |   |  | entities due to other conditions ;
 Limited number or lack of adequate support policies/programmes - fiscal, financial, exorbitant criteria for awarding funds, complicated application process ;
 Need for tailor-made solutions - non-standard, comprehensive ;
@@ -2911,18 +2687,12 @@ Climate Neutrality Action Plan
 |   |  | Fragmentation of responsibility - road managers, municipal, private, cooperatives, business. |  |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  GROWin WROclaw | It involves planting trees with newborns and young children as patrons of the trees. | Too little involvement of residents/neighbours and stakeholders/schools - limited powers of the authorities/neighbours, lack of a platform for continuous cooperation and effective engagement tools ; Social support - conflicted groups. | Leader : public sector at city level
-Led by Municipal Greenery Management Company in cooperation with various Divisions; dedicated to parents and their children | Increasing the area of green spaces
-Results: increasing stakeholders motivation and commitment to climate transformation; understanding mutual expectations and interdependencies among stakeholder groups. | Increasing area of green space; capacity building – including children.  |
+| Led by Municipal Greenery Management Company in cooperation with various Divisions; dedicated to parents and their children | Increasing the area of green spaces |
+| Results: increasing stakeholders motivation and commitment to climate transformation; understanding mutual expectations and interdependencies among stakeholder groups. | Increasing area of green space; capacity building – including children.  |
 |  WroCHEF | It is a competition aimed at elementary school children, promoting a plant-based diet, based on local and seasonal products. | Too little involvement of residents/neighbours and stakeholders/schools - limited powers of the authorities/neighbours, lack of a platform for continuous cooperation and effective engagement tools.
-Lack of a template for climate transformation of cities - a strategic concept demonstrating that transformation is possible, profitable, and even a condition for successful city operations in the future. | Leader : public sector at city level
-Led by Sustainable Development Department in cooperation with various Divisions and restaurants; dedicated to school children and their parents. | Plant-based food production uses less water, uses less land, results in less air pollution and fewer greenhouse gas emissions. | Capacity building, supporting green projects.  |
+| Lack of a template for climate transformation of cities - a strategic concept demonstrating that transformation is possible, profitable, and even a condition for successful city operations in the future. | Leader : public sector at city level |
+| Led by Sustainable Development Department in cooperation with various Divisions and restaurants; dedicated to school children and their parents. | Plant-based food production uses less water, uses less land, results in less air pollution and fewer greenhouse gas emissions. | Capacity building, supporting green projects.  |
 |  Wroclaw Magnolia | It is competition is aimed at graduates of Wroclaw universities | Lack of a template for climate transformation of cities - a strategic concept | Leader : Public sector at municipal level in cooperation with Academia | Promoting innovating projects/solutions that have positive impact on air | Promoting young scientists, looking for new/smart solutions.  |
-
-7
-Climate Neutrality Action Plan
-
-8
-
 |   | who, have defended a master's thesis addressing issues in the field of environmental protection. | demonstrating that transformation is possible, profitable, and even a condition for successful city operations in the future. | Stakholders involved : Academia/Students; due to the interdisciplinary nature of topics related to the zero-carbon city, specialists/ future specialists are sought from various fields - those involved in the development of new technologies, energy, construction, but also specialists in natural sciences (biologists, hydrologists) and social sciences (social and environmental psychologists, sociologists, educators). | quality and increasing biodiversity. |   |
 | --- | --- | --- | --- | --- | --- |
 |  Saturday with Green Wroclaw | A family picnic; picnic is an opportunity to introduce residents to the activities of the city in the sustainability field. | Too little involvement of residents/ neighbours and stakeholders/schools - limited powers of the authorities/ neighbours, lack of a platform for continuous cooperation and effective engagement tools; Lack of a template for climate transformation of cities - a strategic concept demonstrating that transformation is possible, profitable, and even a condition for successful city operations in the future. | Leader : public sector at municipal level Led by Sustainable Development Department, in cooperation with Municipal Greenery Management Company and various divisions, dedicated to all groups stakeholders, but mainly families | Promoting solutions that have positive impact on air quality and increasing biodiversity. | Capacity building, education.  |
@@ -3149,8 +2919,6 @@ Table 1. Strategic documents and resolutions of the Wroclaw City Council regardi
 |  Low-Emission Economy Plan for Integrated Territorial Investments of the Wroclaw Functional Area (2015) | This plan outlines strategies to transition the Wroclaw Functional Area to a low-emission economy through integrated territorial investments. It focuses on reducing carbon emissions, promoting renewable energy, and enhancing energy efficiency across the functional area. Crucial for achieving regional climate goals and sustainability targets.  |
 |  Resolution No. XXXI/637/16 of the Wroclaw City Council dated October 20, 2016, agreement for joining Covenant of Mayors for Climate and Energy (2016) | Declaration of reducing GHG emission by 40% to 2030 and enforcing actions towards adapt City of Wroclaw to the climate change.  |
 |  Resolution No. XLI/1405/17 of the Lower Silesian Voivodeship Assembly dated November 30, 2017, regarding the introduction of restrictions and prohibitions on the operation of installations involving fuel combustion | Introduces restrictions on fuel combustion installations in Wroclaw, crucial for improving air quality and reducing emissions.  |
-Climate-Neutrality Commitments
-
 |  within the Municipality of Wroclaw (2017) |   |
 | --- | --- |
 |  Wroclaw City Strategy by 2030 (2018) | Sets long-term development goals and strategies for sustainable growth and climate action in Wroclaw by 2030.  |
@@ -3163,8 +2931,6 @@ Climate-Neutrality Commitments
 |  Wroclaw Strategy for the Development of Electromobility (2020) | Aims to promote the adoption of electric vehicles and charging infrastructure, reducing emissions from the transport sector in Wroclaw.  |
 |  Environmental Protection Program for years 2021-2025, with perspective to 2030 (2021) | Focuses on protecting the environment and reducing pollution in Wroclaw, contributing to climate goals and sustainability.  |
 |  The Sustainable Development Plan for Public Mass Transport in Wroclaw (2021) | Focuses on enhancing the efficiency and sustainability of public transport systems, reducing reliance on private  |
-Climate-Neutrality Commitments
-
 |   | vehicles and lowering emissions.  |
 | --- | --- |
 |  Master Plan for Urban Space in the City Centre (2021) | Guides sustainable development and urban planning in Wroclaw's city centre, integrating green infrastructure and reducing urban heat island effect.  |
@@ -3175,12 +2941,6 @@ Climate-Neutrality Commitments
 |  Assumptions to the Plan for Supply of Heat, Electricity and Gaseous Fuels in the Area of City of Wroclaw (2023) | Ensures energy supply plans align with climate goals, focusing on sustainable heat, electricity, and fuel sources to reduce emissions.  |
 |  The Wroclaw Tram Program for the years 2024-2032 (2023) | Focuses on expanding and modernising tram infrastructure, aiming to reduce traffic congestion and emissions in Wroclaw.  |
 |  Integrated Territorial Investment Strategy of the Wroclaw Functional Area for 2021-2027 (2023) | This strategy outlines priority areas and investment projects aimed at sustainable development and economic growth within the Wroclaw Functional Area from 2021 to 2027. It integrates environmental sustainability, climate resilience, and socio-economic development goals, guiding strategic investments to enhance infrastructure, energy efficiency, and environmental quality. Crucial for fostering integrated  |
-
-6
-Climate-Neutrality Commitments
-
-7
-
 |   | and sustainable territorial development aligned with regional and EU policies.  |
 | --- | --- |
 |  Resolution No. LXXX/2093/24 of the Wroclaw City Council dated April 18, 2024, regarding the principles of granting targeted subsidies to individuals for tasks aimed at improving energy efficiency through the replacement of external windows (2024) | Provides subsidies for improving energy efficiency through window replacements, contributing to reduced energy consumption and emissions.  |
@@ -3570,7 +3330,7 @@ Table 2. List of stakeholders declaring to cooperate in the Climate-Neutral and 
 |  SM Wroclaw Poludnie | Housing association  |
 |  FOTA4Climate | NGO - Foundation  |
 |  Institute of Territorial Development
-[Memorandum of cooperation on projects and actions bringing European cities and regions closer to climate neutrality] | Lower Silesia Voivodship  |
+| [Memorandum of cooperation on projects and actions bringing European cities and regions closer to climate neutrality] | Lower Silesia Voivodship  |
 |  Wroclaw University of Environmental and Life Sciences | University  |
 |  General Tadeusz Kościuszko Military University of Land Forces in Wroclaw | University  |
 |  AST National Academy of Theatre Arts in Krakow/ Branch in Wroclaw | University  |

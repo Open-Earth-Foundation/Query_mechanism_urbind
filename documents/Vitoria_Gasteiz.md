@@ -459,8 +459,6 @@ Current policies and strategies assessment
 |  Regulations | Local | Energy Transition and Renewable Energy Ordinance (under preparation) | Local regulations to promote a just energy transition, energy efficiency in urban sectors (building, mobility, urban services), as well as renewable energies, regulating their installation conditions. | Basic local regulations to establish conditions and obligations regarding energy efficiency and renewable energies. | A working team has been established to develop this new ordinance and support external legal-technical assistance. This work should be continued and coordinated with the UDCP team.  |
 |  Policy | Local | Declaration of climate emergency by the City Council of Vitoria-Gasteiz (27 September 2019) | The AVG commits to put in place the necessary policy, regulatory and resource commitments to ensure greenhouse gas reductions reach net zero by 2040 and ideally by 2035. |  |   |
 |  Action Plan | Local / Province of Alava | Araba Klima Strategy 2050 | It comprises more than 70 multi-sectoral actions, developed through 24 lines of action, aimed at achieving 10 goals, including the decarbonisation of the economic and energy model in Alava, the promotion of sustainable mobility and public transport and making the foral public administration an exemplary entity in terms of energy efficiency and sustainability. | Significant in that it will affect the province's energy and economic model as a whole. | Coordinate the Araba 2050 Klima Strategy with the Climate City Contract Action Plan. Adhesions to the Vitoria-Gasteiz Climate City Contract must also be sought from the institutional agencies in charge of drawing up, implementing and monitoring these strategies, reflecting commitments between both parties. This work will be carried out in successive iterations of this Action Plan.  |
-2
-
 |  A-2.1: List of relevant policies, strategies and regulations  |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- |
 |  Type | Level | Name and/or title | Description | Relevance | Need for action  |
@@ -577,46 +575,44 @@ Systemic barriers and opportunities to 2030 climate neutrality
 | --- | --- | --- | --- | --- |
 |  System description | Stakeholders | Network | Influence | Interest  |
 |  Public Sector - Institutional | European municipalities (and cities) | NZC - European Platform of Climate Neutral Cities. | Driving Agent / Facilitator
-Its participation is necessary | High.
-Development of urban public policies for safe, sustainable and inclusive energy transition, mitigation of emissions and increasing resilience to climate change.  |
+| Its participation is necessary | High. |
+| Development of urban public policies for safe, sustainable and inclusive energy transition, mitigation of emissions and increasing resilience to climate change.  |
 |   |  National government and General Government Administration | Ministries
-IDAE (Institute for Energy Diversification and Saving), Fundación Biodiversidad (Biodiversity Foundation), Spanish Climate Change Office (OECC), etc. | Driving Agent / Facilitator
-Its participation is necessary | High.
-Compliance with local, regional, national, European and international regulations, commitments and agendas.  |
+| IDAE (Institute for Energy Diversification and Saving), Fundación Biodiversidad (Biodiversity Foundation), Spanish Climate Change Office (OECC), etc. | Driving Agent / Facilitator |
+| Its participation is necessary | High. |
+| Compliance with local, regional, national, European and international regulations, commitments and agendas.  |
 |   |  Spanish municipalities | FEMP - Federación de Española de Municipios y Provincias (Spanish Federation of Municipalities and Provinces)
-National Platform of Cities for Climate Neutrality | Driving Agent / Facilitator
-Its participation is necessary | High.
-Development of urban public policies for safe, sustainable and inclusive energy transition, mitigation of emissions and increasing resilience to climate change.  |
+| National Platform of Cities for Climate Neutrality | Driving Agent / Facilitator |
+| Its participation is necessary | High. |
+| Development of urban public policies for safe, sustainable and inclusive energy transition, mitigation of emissions and increasing resilience to climate change.  |
 |   |  Regional government and Basque institutional sector | Basque Government Departments.
-EVE (Basque Energy Agency), IHOBE (Basque Government Environmental Management Company), SPRI (Basque Business Development Agency), URA (Basque Water Agency), VISESA (Basque Housing and Land Public Company), ETS (Euskal Trenbide Sarea), Parke Araba - Alava Technology Park, CTV Intermodal Transport and Logistics Centre of Vitoria-Gasteiz, etc. | Facilitator/ Facilitating Agent
-Its participation is necessary | High.
-Compliance with local, regional, national, European and international regulations, commitments and agendas.  |
+| EVE (Basque Energy Agency), IHOBE (Basque Government Environmental Management Company), SPRI (Basque Business Development Agency), URA (Basque Water Agency), VISESA (Basque Housing and Land Public Company), ETS (Euskal Trenbide Sarea), Parke Araba - Alava Technology Park, CTV Intermodal Transport and Logistics Centre of Vitoria-Gasteiz, etc. | Facilitator/ Facilitating Agent |
+| Its participation is necessary | High. |
+| Compliance with local, regional, national, European and international regulations, commitments and agendas.  |
 |   |  Basque Town Councils | EUDEL - Association of Basque Municipalities | Driving Agent / Facilitator
-Its participation is necessary | High.
-Development of urban public policies for safe, sustainable and inclusive energy transition, mitigation of emissions and increasing resilience to climate change.  |
+| Its participation is necessary | High. |
+| Development of urban public policies for safe, sustainable and inclusive energy transition, mitigation of emissions and increasing resilience to climate change.  |
 |  A-3.1: System and stakeholder mapping  |   |   |   |   |
 | --- | --- | --- | --- | --- |
 |  System description | Stakeholders | Network | Influence | Interest  |
 |   | Alava Provincial Council | Departments of Alava Provincial Council
-ENARGI Araba S.A., ARABA Development Agency | Driving Agent / Facilitator
-Its participation is necessary | High.
-Development of urban public policies for safe, sustainable and inclusive energy transition, mitigation of emissions and increasing resilience to climate change.  |
+| ENARGI Araba S.A., ARABA Development Agency | Driving Agent / Facilitator |
+| Its participation is necessary | High. |
+| Development of urban public policies for safe, sustainable and inclusive energy transition, mitigation of emissions and increasing resilience to climate change.  |
 |   |  Vitoria-Gasteiz City Council, agencies, companies and public companies | Municipal Departments, Public Companies, Autonomous Agencies and companies: (Ensanche 21-Zabalgunea: Rehabilitation Society, (CEA: Environmental Studies Centre, TUVISA (Urban Buses), AMVISA (Municipal Water of Vitoria), GILSA (Industrial Land Management), etc.). | Driving Agent
-Its participation is necessary | High.
-Development of urban public policies for safe, sustainable and inclusive energy transition, mitigation of emissions and increasing resilience to climate change.  |
+| Its participation is necessary | High. |
+| Development of urban public policies for safe, sustainable and inclusive energy transition, mitigation of emissions and increasing resilience to climate change.  |
 |  Economic-financial sector | Business and trade union associations | Alava Chamber of Commerce and Industry,
 SEA - Alava Business-owners, Ajekask- Alava Young Business Owner Association, AENKOMER-Alava Trade and Services Business Owners, AMPEA-Alava Association of Female Professional and Business Owner, Sectoral business associations (Gasteiz on, ADEADA (Alava automotive business association), ..., Workers’ Trade Unions, Hiru (Basque haulage company trade union) | Driving Agent
 Its participation is necessary | High.
 Sustainable (local) economic development and quality employment.
 Attracting innovative private investment  |
 |   |  Labour cooperatives and foundations | Mondragón Group, Irizar e-mobility (Irizar Group), Orbea, Eroski, S-Coop., Goiener (Cooperative for the management and production of renewable energy), KREAN S.Coop., UDAPA (Production and marketing of potatoes from Alava), Konfekoop - Confederation of Basque Cooperatives, San Prudencio Labour Foundation, ASLE Association of Basque Labour Foundations, etc. | Driving Agent
-Its participation is necessary | High.
-Development of decarbonisation and awareness-raising projects for cooperative members.  |
+| Its participation is necessary | High. |
+| Development of decarbonisation and awareness-raising projects for cooperative members.  |
 |  Economic-financial sector | Financial Institutions | Kutxabank, Laboral Kutxa, CaixaBank, BBVA, etc. | Driving Agent
-Its participation is necessary | High.
-Financing decarbonisation and sustainability projects.  |
-4
-
+| Its participation is necessary | High. |
+| Financing decarbonisation and sustainability projects.  |
 |  A-3.1: System and stakeholder mapping  |   |   |   |   |
 | --- | --- | --- | --- | --- |
 |  System description | Stakeholders | Network | Influence | Interest  |
@@ -626,25 +622,23 @@ Construction companies (Grupo Basalde, Pérez-San Román, Construcciones Urrutia
 Its participation is necessary | High.
 Development of decarbonisation projects in the private industrial sector, construction, services, ...  |
 |   |  Urban services and infrastructure companies | Concessionary companies for the management of urban services and infrastructures (waste management, water treatment, energy services, etc.). Utilities | Driving agent
-Its participation is necessary | High
-Development of decarbonisation projects for public utilities and infrastructures  |
+| Its participation is necessary | High |
+| Development of decarbonisation projects for public utilities and infrastructures  |
 |   |  Entrepreneurs / Star-ups, Innovation Centres | BIC- CEIA (Centro de Empresas e Innovación de Álava, S.A.),
-Hibridalab - Centre for Open Innovation and Creative Transfer of Alava Lehendakari Agirre Center (LAC) | Driving Agent
-Its participation is necessary | High.
-Promotion of innovative entrepreneurial initiatives and generation of innovative culture in business and society  |
+| Hibridalab - Centre for Open Innovation and Creative Transfer of Alava Lehendakari Agirre Center (LAC) | Driving Agent |
+| Its participation is necessary | High. |
+| Promotion of innovative entrepreneurial initiatives and generation of innovative culture in business and society  |
 |   |  Logistics and distribution operators | Companies located in the CTV (DHL, ID Logistics, NACEX, SEUR, etc.).
-EROSKI S.Coop., MERCADONA S.A., etc. | Driving Agent
-Its participation is necessary | High.
-Development of decarbonisation projects in the logistics and distribution sector.  |
+| EROSKI S.Coop., MERCADONA S.A., etc. | Driving Agent |
+| Its participation is necessary | High. |
+| Development of decarbonisation projects in the logistics and distribution sector.  |
 |   |  Clusters and Associations
-Professions | Aclima (Environment Cluster), Energy Cluster of the Basque Country, Eraikune (Construction Industry Cluster of the Basque Country), Mobility and Logistics Cluster of the Basque Country, UNEF (Spanish Photovoltaic Union), etc. | Facilitating Agent
-Its participation is desirable | Medium.
-Collaboration and partnership between companies to increase innovation capacity and develop more profitable and sustainable projects.  |
+| Professions | Aclima (Environment Cluster), Energy Cluster of the Basque Country, Eraikune (Construction Industry Cluster of the Basque Country), Mobility and Logistics Cluster of the Basque Country, UNEF (Spanish Photovoltaic Union), etc. | Facilitating Agent |
+| Its participation is desirable | Medium. |
+| Collaboration and partnership between companies to increase innovation capacity and develop more profitable and sustainable projects.  |
 |   |  Professional Associations | COAVN (Basque-Navarre Association of Architects), COITA (Association of Technical Agricultural Engineers), Official Association of Forestry Engineers, Official Association of Agricultural Engineers, Association of Industrial Engineers, Association of Doctors, Association of Economists, etc. | Facilitating Agent
-Its participation is necessary | Medium
-Training and awareness-raising on sustainability and decarbonisation for professionals working in different sectors of urban activity.  |
-5
-
+| Its participation is necessary | Medium |
+| Training and awareness-raising on sustainability and decarbonisation for professionals working in different sectors of urban activity.  |
 |  A-3.1: System and stakeholder mapping  |   |   |   |   |
 | --- | --- | --- | --- | --- |
 |  System description | Stakeholders | Network | Influence | Interest  |
@@ -665,8 +659,6 @@ Training and awareness-raising on sustainability and decarbonisation for profess
 |  Cultural Sector | Culture, Sports, etc. | Jazz Vitoria Festival, Fundación Estadio, Baskonia Alavés Group, Artium Museoa, Museo de Bellas Artes, BIBAT Museoa, Ortzai theatre school and company, etc. | Facilitating Agent Its participation is desirable | Medium Development of decarbonisation projects in their sectors.  |
 |  Communication sector | Media | Radio, television, written and digital press and social media (EFE Agencia, Radio Vitoria. Onda Vasca, Ser Vitoria. EITB, Diario de Noticias de Álava (newspaper), Hamaika Telebista, Gara, Gasteiz Berri, etc.). | Disseminating Agent Its participation is necessary | High Sensitisation and social awareness  |
 |  City Networks | Regional level | UDALSAREA 2030 (Network of Basque Municipalities for Sustainability), Alavesa Alliance for Sustainable Development 2030 | Disseminating Agent Its participation is desirable | High. Facilitating the exchange of experiences and good practices in decarbonisation Support for developing collaborative projects between cities.  |
-
-6
 |  A-3.1: System and stakeholder mapping  |   |   |   |   |
 | --- | --- | --- | --- | --- |
 |  System description | Stakeholders | Network | Influence | Interest  |
@@ -894,8 +886,6 @@ Health improvement.  |
 | --- | --- | --- | --- | --- | --- |
 |  Sector and sub-sector | Systemic levers | Short-term changes (1-2 years) | Long-term changes (3-4 years) | Direct impacts (emission reductions) | Indirect impacts (co-benefits)  |
 |   | Technology / Infrastructure Learning / Skills | Promoting decarbonisation of the economy by obtaining hydrogen from the recovery of rejected fractions of urban waste. | Introduction of the hydrogen vector in energy-intensive sectors or processes that are difficult to electrify. |  | Technological innovation in the local industrial sectorLocal job creationIncrease in waste recoveryReduction of landfill disposal and reduction of landfill investments.Reduction of air pollution.Enhancing quality of life.  |
-6
-
 |  B-1.1: Impact pathways  |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- |
 |  Sector and sub-sector | Systemic levers | Short-term changes (1-2 years) | Long-term changes (3-4 years) | Direct impacts (emission reductions) | Indirect impacts (co-benefits)  |
@@ -1001,7 +991,7 @@ Climate Neutrality Portfolio Design
 |  Sector and sub-sector | Description of the portfolio of transformative actions  |   |
 |   | List of actions | General description  |
 |   |  | Promoting collective transport to schools and universities.
-Programme to promote and develop safe school roads.  |
+| Programme to promote and develop safe school roads.  |
 |  Transport - Car Sharing | TR-10: Shared Mobility Services Programme, accompanied by an awareness-raising and training plan. | Development of a car-share pilot project, incorporating feasibility analysis, dissemination campaigns, project implementation and evaluation.  |
 |  Transport - Electrification of passenger cars | TR-11: Deployment of an electric vehicle charging infrastructure. | Programme to fit charging points to promote and use electric vehicles (cars, bicycles, micro-mobility) in both residential and industrial areas. Creating a favourable environment to embrace electric mobility.  |
 |   |  TR-12: Electrification of the municipal vehicle fleet | Technological improvements in the municipal vehicle fleet and promotion of electric mobility. Rationalisation of the fleet.  |
@@ -1011,8 +1001,6 @@ Programme to promote and develop safe school roads.  |
 |  Transport - Electrification of Buses | TR-16: Electrification of the urban transport bus fleet. | Increase of high-capacity lines and progressive incorporation of electric buses in the urban transport bus fleet.  |
 |   |  TR-17: Installation of charging infrastructure for electric buses. | Putting into service of the new Functional Charging Unit and transit recharging infrastructures.  |
 |  Transport - Optimisation of | TR-18: Optimising urban logistics | Logistics node pilot project to assess urban micro-logistics and subsequent establishment of Urban Distribution Centres (UDCs) for goods in other locations in the city.  |
-
-1
 |  B-2.1: Description of the portfolios of transformative actions  |   |   |
 | --- | --- | --- |
 |  Sector and sub-sector | Description of the portfolio of transformative actions  |   |
@@ -1026,8 +1014,6 @@ Programme to promote and develop safe school roads.  |
 |   | EC-05: Plan to lower energy consumption in the Tertiary Sector | Energy refurbishment of tertiary buildings including the improvement of the building envelope, replacement of installations and infrastructures.  |
 |   | EC-06: Plan for Energy Renovation of Municipal Buildings | Progressive energy refurbishment of the municipal building stock.  |
 |   | EC-07: DIN: Industrial District North Vitoria-Gasteiz | Project for the transformation and urban revitalisation of the industrial areas of Arriaga, Gamarra  |
-
-2
 |  B-2.1: Description of the portfolios of transformative actions  |   |   |
 | --- | --- | --- |
 |  Sector and sub-sector | Description of the portfolio of transformative actions  |   |
@@ -1042,8 +1028,6 @@ Programme to promote and develop safe school roads.  |
 |  Buildings and heating: Decarbonising heating | EC-14: Demand-side electrification programme. | Changeover to very high efficiency heat pump systems.  |
 |   |  EC-15: Design and implementation of a decarbonised thermal network for the city | Currently, heating of residential buildings in the city is mostly based on natural gas and to a lesser extent on other sources (oil, LPG): a city-wide heat network would greatly accelerate and facilitate the process of energy transition to renewable sources.  |
 |  Energy | EE-01: Projects to implement renewable generation in municipal buildings and infrastructures and public spaces. | Promoting deployment of renewable energy generation projects, mainly through fitting photovoltaic solar panels in municipal infrastructures.  |
-
-3
 |  B-2.1: Description of the portfolios of transformative actions  |   |   |
 | --- | --- | --- |
 |  Sector and sub-sector | Description of the portfolio of transformative actions  |   |
@@ -1059,8 +1043,6 @@ Programme to promote and develop safe school roads.  |
 |  Waste | RE-01: Elaboration and implementation of a City-wide Circularity Strategy | Accelerating the transition from the local linear economy to a local circular model for the city.  |
 |   |  RE-02: Basque Circular Hub in Vitoria-Gasteiz | Progress in the circular economy through developing technical circular economy projects in the Alava business world with participation from young professionals trained in the Hub itself.  |
 |   |  RE-03: Improved municipal waste management | Increased prevention and recycling of urban waste. Electrification of waste management and increase  |
-
-4
 |  B-2.1: Description of the portfolios of transformative actions  |   |   |
 | --- | --- | --- |
 |  Sector and sub-sector | Description of the portfolio of transformative actions  |   |
@@ -1076,8 +1058,6 @@ Programme to promote and develop safe school roads.  |
 |  Other | OTI-01: Industry Support Plan 2021-2024 | Promotion of industrial activity in the city and its decarbonisation. Local entrepreneurship plan.  |
 |   |  OTI-02: Energy transition plan in the industrial sector | Technical support to companies to diagnose and define solutions to reduce energy consumption.  |
 |   |  OTA-03: Reducing emissions from agricultural production | Harnessing the capacity of regenerative agriculture and organic fertilisation to improve pastures and crops as carbon sinks and increase the energy efficiency of the agricultural sector in terms of emissions (bioenergy use).  |
-
-5
 |  B-2.1: Description of the portfolios of transformative actions  |   |   |
 | --- | --- | --- |
 |  Sector and sub-sector | Description of the portfolio of transformative actions  |   |
@@ -1096,10 +1076,10 @@ The investment costs presented throughout the Vitoria-Gasteiz Climate City Contr
 | --- | --- | --- |
 |  TR-01: Implementation of the Superblock model.  |   |   |
 |  Action plan | Name of the action | Implementation of the Superblock model.
-Generation of Low Emission Zones (LEZs) and new traffic calming zones  |
+| Generation of Low Emission Zones (LEZs) and new traffic calming zones  |
 |   |  Type of action | Strategic  |
 |   |  Description of the action | Generating compatibility of urban functionality and universal accessibility and favouring and promoting more efficient, sustainable and safer mobility.
-To declare new Low Emission Zones (LEZ), in which traffic restrictions are defined, with the aim of reducing polluting emissions, improving air quality and reducing noise levels, and increasing the safety and quality of life of citizens. To promote more efficient, sustainable and safe mobility by reorganising the road hierarchy and establishing a series of urban cells (superblocks), plus integration of a wide range of actions on the urban mobility system as a whole (traffic calming, pedestrian routes, cycling network, reorganisation of regulated parking, access control, micro-logistics, etc.).  |
+| To declare new Low Emission Zones (LEZ), in which traffic restrictions are defined, with the aim of reducing polluting emissions, improving air quality and reducing noise levels, and increasing the safety and quality of life of citizens. To promote more efficient, sustainable and safe mobility by reorganising the road hierarchy and establishing a series of urban cells (superblocks), plus integration of a wide range of actions on the urban mobility system as a whole (traffic calming, pedestrian routes, cycling network, reorganisation of regulated parking, access control, micro-logistics, etc.).  |
 |  Reference to the impact pathway | Sector-Subsector | Transport - Reducing the need for motorised passenger transport  |
 |   |  Systemic lever | Technology / Infrastructure  |
 |   |  Result (according to module B-1.1) short- and medium-term changes | Change in mobility through urban redevelopment using the superblock model. Setting up Low Emission Zones (LEZ) and new limited traffic zones. Compatibility of urban functionality and universal accessibility and favouring and promoting more efficient, sustainable and safer mobility.  |
@@ -1127,8 +1107,6 @@ Municipal stakeholders: Vitoria-Gasteiz City Council - Sustainability, Climate a
 |  Reference to the impact pathway | Sector-Subsector | Transport - Reducing the need for motorised passenger transport  |
 |   |  Systemic lever | Technology / Infrastructure  |
 |   |  Result (according to | Improving and extending the network of cycle lanes, extending the bike rack  |
-9
-
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
 |   | module B-1.1) short- and medium-term changes | network, improving the bicycle registration system. Facilitating cycling, increasing safety between different modes of travel.  |
@@ -1155,7 +1133,7 @@ Democracy / Participation
 Technology / infrastructure
 Finance / Financing  |
 |   |  Result (according to module B-1.1) short- and medium-term changes | Reduction of surface parking spaces through implementing a regularisation plan and an increase in the number of regulated parking spaces and their fees.
-Increase of the regulated surface and its fees, which entails fewer parking spaces, access and circulation limitations by zones, transport typology and fuel. Possibility of using new income for policies and actions directly related to reducing GHG emissions and achieving climate neutrality.  |
+| Increase of the regulated surface and its fees, which entails fewer parking spaces, access and circulation limitations by zones, transport typology and fuel. Possibility of using new income for policies and actions directly related to reducing GHG emissions and achieving climate neutrality.  |
 |  Implementation | Agencies/Department responsible for implementation | AVG - Department of Mobility and Public Space / Municipal stakeholders: TUVISA  |
 |   |  Scale of action and target entities | Municipal - citizenship  |
 |   |  Stakeholders | Vitoria-Gasteiz City Council (AVG), Citizenship, Elkargune for Mobility  |
@@ -1163,9 +1141,9 @@ Increase of the regulated surface and its fees, which entails fewer parking spac
 |  Impacts and costs | Renewable energy generated (if applicable) | Not applicable  |
 |   |  Energy removed/replaced, fuel volume or fuel type | *  |
 |   |  Estimated GHG emission reductions (total) | This action is one included in the Transport Sector, Subsector: Reduction of the need for Motorised passenger transport, which as a whole is expected to reduce emissions by: 32 ktCO .
-e  |
+| e  |
 |   |  Total costs and costs per unit of CO
-e | This action is included in the Transport Sector, Subsector: Reducing the need for motorised passenger transport, which has a total cost of €21 million, of which the incremental cost is €0 million.  |
+| e | This action is included in the Transport Sector, Subsector: Reducing the need for motorised passenger transport, which has a total cost of €21 million, of which the incremental cost is €0 million.  |
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
 |  TR-04: Training and Awareness Plans to avoid journeys using Motorised Transport.  |   |   |
@@ -1181,8 +1159,6 @@ e | This action is included in the Transport Sector, Subsector: Reducing the nee
 |   |  Comments on implementation | Action within the SECAP that has been identified as requiring further work and expansion to achieve the Mission's objective. The aim is to complement and extend this action, as the SECAP only focuses on cycling. Social innovation should also be included, seeking the necessary support and designing actions with new approaches in successive iterations of this Climate City Contract (CCC).  |
 |  Impacts and costs | Renewable energy generated (if applicable) | Not applicable  |
 |   |  Energy removed/replaced, fuel volume or fuel | *  |
-2
-
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
 |   | type |   |
@@ -1200,8 +1176,6 @@ e | This action is included in the Transport Sector, Subsector: Reducing the nee
 |  Implementation | Agencies/Department responsible for implementation | AVG - Mayor's Office and Institutional Relations Department, Human Resources Department Stakeholders: Public Sector - Institutional, Economic and Financial Sector, Social Sector.  |
 |   |  Scale of action and target entities | Municipal, Regional, National. Public Entities, Companies, Citizenship.  |
 |   |  Stakeholders | AVG: Department of the Mayor's Office and Institutional Relations, Human Resources Department Public Sector - Institutional, Economic and Financial Sector, Social Sector.  |
-3
-
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
 |   | Comments on implementation | This is a new action that has been considered necessary to achieve the Mission's objective. This type of action should be cross-cutting with an innovative vision. Support will be sought from the NetZeroCities and CitiES2030 platforms and entities such as the Aguirre Lehendakari Center, both to design new actions and consider the best way to implement them.  |
@@ -1218,8 +1192,6 @@ e | This action is included in the Transport Sector, Subsector: Reducing the nee
 |  Reference to the impact pathway | Sector-Subsector | Transport - Reducing the need for motorised passenger transport  |
 |   |  Systemic lever | Governance / Policy  |
 |   |  Result (according to module B-1.1) short- | Adapting urban planning and regulatory instruments related to reducing the need for motorised passenger transport.  |
-4
-
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
 |   | and medium-term changes | Regulatory development to enable all actions related to reducing the need for motorised passenger transport. Regulation of Personal Mobility Vehicles (PMV).  |
@@ -1237,8 +1209,6 @@ e | This action is included in the Transport Sector, Subsector: Reducing the nee
 |  Action plan | Name of the action | Extension of tram lines.  |
 |   |  Type of action | Strategic (Technological)  |
 |   |  Description of the | Construction and putting into service of new tram lines that will reinforce the  |
-5
-
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
 |   | action | connection between the Salburúa and Zabalgana neighbourhoods.  |
@@ -1246,7 +1216,7 @@ e | This action is included in the Transport Sector, Subsector: Reducing the nee
 |   |  Systemic lever | Technology / Infrastructure  |
 |   |  Result (according to module B-1.1) short-and medium-term changes | Promoting use of public transport by extending tram lines. Promotion of high-capacity public transport.  |
 |  Implementation | Agencies/Department responsible for implementation | Basque Government
-ETS: Euskal Trenbide Sarea  |
+| ETS: Euskal Trenbide Sarea  |
 |   |  Scale of action and target entities | Municipal, Citizens, especially residents in the Salburúa and Zabalgana neighbourhoods. AVG / ETS: Euskal Trenbide Sarea  |
 |   |  Stakeholders | Vitoria-Gasteiz City Council  |
 |   |  Comments on implementation | Action within SECAP that has been identified as requiring acceleration to achieve Mission's objective.  |
@@ -1260,8 +1230,6 @@ ETS: Euskal Trenbide Sarea  |
 |  Action plan | Name of the action | Improvement and modernisation of public transport in Vitoria-Gasteiz  |
 |   |  Type of action | Strategic  |
 |   |  Description of the | Optimisation of the operation of the TUVISA (Vitoria Urban Transport) bus  |
-6
-
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
 |   | action | network. Reorganisation of the offer of urban bus lines. Improvement of intermodality between new public transport network lines. Review of the public transport service to rural areas.  |
@@ -1269,7 +1237,7 @@ ETS: Euskal Trenbide Sarea  |
 |   |  Systemic lever | Technology / Infrastructure  |
 |   |  Result (according to module B-1.1) short-and medium-term changes | Optimisation of the public transport service on city buses. Improvement and modernisation of public transport in Vitoria-Gasteiz, increasing supply and optimising demand. Increase in the number of public transport network users.  |
 |  Implementation | Agencies/Department responsible for implementation | TUVISA - Transportes Uurbanos de Vitoria (Vitoria Urban Transport) - Municipal Company
-AVG: Department of Mobility and Public Space  |
+| AVG: Department of Mobility and Public Space  |
 |   |  Scale of action and target entities | Municipal, Citizenship  |
 |   |  Stakeholders | Vitoria-Gasteiz City Council / TUVISA - Transportes Urbanos de Vitoria-Empresa Municipal / Elkargune Movilidad / Economic Sector - companies supplying elements related to public transport.  |
 |   |  Comments on implementation | Action within SECAP that has been identified as requiring acceleration to achieve the Mission's objective.  |
@@ -1293,8 +1261,6 @@ AVG: Department of Mobility and Public Space  |
 |   |  Stakeholders | Parties involved: Basque Government - Dept. of Education Education Sector Economic-Financial Sector  |
 |   |  Comments on implementation | Action within SECAP that has been identified as requiring acceleration to achieve Mission's objective.  |
 |  Impacts and costs | Renewable energy generated (if applicable) | Not applicable  |
-8
-
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
 |  TR-10: Shared Mobility Services Programme  |   |   |
@@ -1308,8 +1274,6 @@ AVG: Department of Mobility and Public Space  |
 |   |  Scale of action and target entities | Municipal, Citizenship.  |
 |   |  Stakeholders | AVG- Department of Territory and Climate Action, Department of Finance / Basque Government - EVE (Ente Vasco de la Energía) / Citizenship / Economic Sector - Automotive companies / Financial Sector  |
 |   |  Comments on implementation | Action within the SECAP that has been identified as requiring acceleration, further work and expansion to achieve the Mission's objective. The aim is to  |
-9
-
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
 |   |  | complement and expand this action, as the training and awareness-raising part was not considered in the SECAP. Furthermore, implementation of the pilot project and the corresponding awareness and training campaigns should be accelerated, working on the issue of social innovation, for which the necessary support will be sought for innovative design of new actions to be developed in successive iterations of this CCC.  |
@@ -1327,8 +1291,6 @@ AVG: Department of Mobility and Public Space  |
 |   |  Systemic lever | Technology / Infrastructure  |
 |   |  Result (according to module B-1.1) short- and medium-term changes | Deployment of an electric vehicle charging infrastructure. Progressive increase of private electric mobility and public service vehicles, such as taxis.  |
 |  Implementation | Agencies/Department | AVG -Department of Mobility and Public Space  |
-0
-
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
 |   | responsible for implementation |   |
@@ -1348,8 +1310,6 @@ AVG: Department of Mobility and Public Space  |
 |  Reference to the impact pathway | Sector-Subsector | Transport: Electrification of passenger cars  |
 |   |  Systemic lever | Technology / Infrastructure  |
 |   |  Result (according to module B-1.1) short- and medium-term changes | Progressive electrification of the municipal vehicle fleet, including a reduction in the number of motorised journeys. Creation of a favourable environment to adopt electric mobility, especially in municipal services as an exemplary action.  |
-1
-
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
 |  Implementation | Agencies/Department responsible for implementation | AVG - Department of Contracting and Purchasing / Basque Government - EVE (Basque Energy Agency)  |
@@ -1369,12 +1329,10 @@ AVG: Department of Mobility and Public Space  |
 |  Reference to the impact pathway | Sector-Subsector | Transport: Electrification of passenger cars  |
 |   |  Systemic lever | Learning / Skills  |
 |   |  Result (according to | Promoting use of electric cars through awareness-raising and training plans  |
-2
-
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
 |   | module B-1.1) short- and medium-term changes | and programmes.
-Progressive increase in the electric vehicle fleet.  |
+| Progressive increase in the electric vehicle fleet.  |
 |  Implementation | Agencies/Department responsible for implementation | AVG -Department of Mobility and Public Space
 CEA (Centre for Environmental Studies)
 Parties involved: Basque Government - EVE (Basque Energy Agency)  |
@@ -1387,9 +1345,9 @@ Economic sector - automotive companies  |
 |  Impacts and costs | Renewable energy generated (if applicable) | Not applicable  |
 |   |  Energy removed/replaced, fuel volume or fuel type |   |
 |   |  Estimated GHG emission reductions (total) | This action is included in the Transport Sector, Subsector: Electrification of Passenger Cars, which as a whole has an expected emission reduction of: 10 ktCO .
-e  |
+| e  |
 |   |  Total costs and costs per unit of CO
-e | This action is included in the Transport Sector, Subsector: Electrification of Passenger Cars, which has a total cost of €274 million, of which the incremental cost is €19 million.  |
+| e | This action is included in the Transport Sector, Subsector: Electrification of Passenger Cars, which has a total cost of €274 million, of which the incremental cost is €19 million.  |
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
 |  TR-14: Financing and/or subsidy models to purchase electric vehicles  |   |   |
@@ -1427,8 +1385,6 @@ e | This action is included in the Transport Sector, Subsector: Electrification 
 |   |  Energy removed/replaced, fuel volume or fuel type |   |
 |   |  Estimated GHG emission reductions (total) | This action is included in the Transport Sector, Subsector: Electrification of Passenger Cars, which as a whole is expected to reduce emissions by: 10 ktCO . 2e  |
 |   |  Total costs and costs | This action is included in the Transport Sector, Subsector: Electrification of  |
-5
-
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
 |   | per unit of CO2e | Passenger Cars, which has a total cost of €274 million, of which the incremental cost is €19 million.  |
@@ -1448,8 +1404,6 @@ e | This action is included in the Transport Sector, Subsector: Electrification 
 |  Impacts and costs | Renewable energy generated (if applicable) | Not applicable  |
 |   |  Energy removed/replaced, fuel volume or fuel type |   |
 |   |  Estimated GHG emission reductions (total) | This action is included in the Transport Sector, Subsector: Electrification of Buses, which as a whole has an expected emissions reduction of: 9 ktCO2e  |
-6
-
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
 |  TR-17: Installation of charging infrastructure for electric buses.  |   |   |
@@ -1466,8 +1420,6 @@ e | This action is included in the Transport Sector, Subsector: Electrification 
 |  Impacts and costs | Renewable energy generated (if applicable) | Not applicable  |
 |   |  Energy removed/replaced, fuel volume or fuel type | 。  |
 |   |  Estimated GHG emission reductions (total) | This action is included in the Transport Sector, Subsector: Electrification of Buses, which as a whole has an expected emissions reduction of: 9 ktCO . 2e  |
-7
-
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
 |  TR-18: Optimising urban logistics  |   |   |
@@ -1484,8 +1436,6 @@ e | This action is included in the Transport Sector, Subsector: Electrification 
 |  Impacts and costs | Renewable energy generated (if applicable) | Not applicable  |
 |   |  Energy removed/replaced, fuel volume or fuel type | -  |
 |   |  Estimated GHG emission reductions | This action is included in the Transport Sector, Subsector: Optimisation of logistics, which as a whole has an expected emissions reduction of: 21  |
-8
-
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
 |   | (total) | ktCO . 2e  |
@@ -1506,8 +1456,6 @@ Learning / Skills  |
 |   |  Stakeholders involved | Vitoria-Gasteiz City Council / Economic-Business Sector / Citizenship Logistics and transport companies.  |
 |   |  Comments on implementation | Action within SECAP that has been identified as requiring acceleration to achieve Mission's objective.  |
 |  Impacts and costs | Renewable energy generated (if applicable) | Not applicable  |
-9
-
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
 |  TR-20: Launch of the "Vitoria-Gasteiz Araba Mobility Lab".  |   |   |
@@ -1522,8 +1470,6 @@ Governance / Policy  |
 |  Implementation | Agencies/Department responsible for implementation | Vitoria-Gasteiz City Council / Provincial Council of Alava  |
 |   |  Scale of action and target entities | Municipal, Citizenship  |
 |   |  Stakeholders | Vitoria-Gasteiz City Council / Provincial Council of Alava / Mercedes-Benz / Michelin / Talgo / CIC energiGUNE / Tecnalia / Mobility and Logistics Cluster of the Basque Country / Alava Technology Park / UPV/EHU / Basque Government / Sernauto  |
-0
-
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
 |   | Comments on implementation |   |
@@ -1541,8 +1487,6 @@ Governance / Policy  |
 |   |  Systemic lever | Technology / Infrastructure Learning / Skills Governance / Policy  |
 |   |  Result (according to module B-1.1) short- and medium-term changes | Promotion of electric vans and trucks for the progressive electrification of freight vehicles. Progressive reduction in the use of light and heavy vehicles powered by fossil fuels.  |
 |  Implementation | Agencies/Department responsible for implementation | Vitoria-Gasteiz City Council / Basque Government / Provincial Council of Álava / Companies in the Transport and Logistics Sector  |
-1
-
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
 |   | Scale of action and target entities | Municipal / Regional  |
@@ -1572,8 +1516,6 @@ Governance / Policy  |
 |   |  Energy removed/replaced, fuel volume or fuel type | *  |
 |   |  Estimated GHG emission reductions (total) | This action is included in the Buildings/Heating Sector, Subsector: Renovation of Buildings, which as a whole has an expected emission reduction of: 32 ktCO . 2e  |
 |   |  Total costs and costs per unit of CO 2e | This action is included in the Buildings/Heating Sector, Subsector: Building Renovation which has a total cost of €859 million, of which the incremental cost is €631 million.  |
-3
-
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
 |  EC-02: Zaramaga Urban Regeneration Project: "Zaramaga's Mission".  |   |   |
@@ -1591,8 +1533,6 @@ Learning / Skills  |
 |   |  Stakeholders | Vitoria-Gasteiz City Council / Citizens - preferably from areas declared Degraded Areas / Economic-Business Sector: Construction and renovation sector.  |
 |   |  Comments on implementation | Action within SECAP that has been identified as requiring acceleration to achieve Mission's objective.  |
 |  Impacts and costs | Renewable energy generated (if applicable) | Not applicable  |
-4
-
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
 |  EC-03: Integral Master Plan for Housing Renovation  |   |   |
@@ -1602,8 +1542,6 @@ Learning / Skills  |
 |  Reference to the impact pathway | Sector- Subsector | Buildings / Heating: Building renovation  |
 |   |  Systemic lever | Governance / Policy Social innovation Technology / Infrastructure Learning / Skills  |
 |   |  Result (according to module B-1.1) short- and medium-term | Progressive rehabilitation of the building stock through implementing the Integral Housing Rehabilitation Plan. Improvement of the thermal performance of buildings.  |
-5
-
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
 |  EC-03: Integral Master Plan for Housing Renovation  |   |   |
@@ -1622,8 +1560,6 @@ Learning / Skills  |
 |  Action plan | Name of the action | Ensanche XIX: Entrepreneurial Eco District  |
 |   |  Type of action | Management  |
 |   |  Description of the action | Integrated revitalisation of the city centre district, the Ensanche Furthermore, the whole project has been generated with the New European Bauhaus values in mind: quality of experience, including style/aesthetics and health and safety of living environments, sustainability, including circularity and inclusivity, including accessibility and affordability.  |
-6
-
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
 |  Reference to the impact pathway | Sector- Subsector | Buildings/Heating: Building Renovation  |
@@ -1659,8 +1595,6 @@ Learning / Skills  |
 |   |  Energy removed/replaced, fuel volume or fuel type | *  |
 |   |  Estimated GHG emission reductions (total) | This action is included in the Buildings/Heating Sector, Subsector: Renovation of Buildings, which as a whole has an expected emission reduction of: 32 ktCO . 2e  |
 |   |  Total costs and costs per unit of CO 2e | This action is included in the Buildings/Heating Sector, Subsector: Building Renovation, which has total costs of €859 million, of which the incremental cost is €631 million.  |
-8
-
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
 |  EC-06: Energy Renovation Plan for Municipal Buildings  |   |   |
@@ -1681,8 +1615,6 @@ Learning / Skills  |
 |   |  Energy removed/replaced, fuel volume or fuel type | *  |
 |   |  Estimated GHG emission reductions (total) | This action is part of those included in the Buildings/Heating Sector, Subsector: Renovation of Buildings, which as a whole has an expected emission reduction of: 32 ktCO . 2e  |
 |   |  Total costs and costs per unit of CO 2e | This action is included in the Buildings/Heating Sector, Subsector: Building Renovation, which has a total cost of €859 million of which the incremental cost is € 631 million.  |
-9
-
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
 |  EC-07: DIN: North Industrial District of Vitoria-Gasteiz  |   |   |
@@ -1695,7 +1627,7 @@ Social innovation
 Technology / Infrastructure
 Learning / Skills  |
 |   |  Result (according to module B-1.1) short-and medium-term changes | Progressive renovation of the industrial building stock through implementing urban plans such as the Northern Industrial District.
-Lowering energy consumption and promoting implementation of renewable energies on industrial areas.  |
+| Lowering energy consumption and promoting implementation of renewable energies on industrial areas.  |
 |  Implementation | Agencies/Department responsible for implementation | Vitoria-Gasteiz City Council  |
 |   |  Scale of action and target entities | Municipal, Arriaga, Gamarra and Betoño-Larragana industrial areas / Vitoria-Gasteiz City Council  |
 |   |  Stakeholders | Vitoria-Gasteiz City Council / Companies located in the industrial areas of Arriaga, Gamarra and Betoño-Larragana.  |
@@ -1703,8 +1635,6 @@ Lowering energy consumption and promoting implementation of renewable energies o
 |  Impacts and costs | Renewable energy generated (if applicable) |   |
 |   |  Energy removed/replaced, fuel volume or fuel type | "  |
 |   |  Estimated GHG | This action is included in the Buildings/Heating Sector, Subsector: Building  |
-0
-
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
 |  EC-08: Adapting urban planning and regulatory instruments.  |   |   |
@@ -1747,8 +1677,6 @@ Lowering energy consumption and promoting implementation of renewable energies o
 |  Reference to the impact pathway | Sector-Subsector | Buildings/Heating: Energy efficient new buildings  |
 |   |  Systemic lever | Governance / Policy Learning / Skills Technology / Infrastructure  |
 |   |  Result (according to module B-1.1) short-and medium-term changes | Boosting construction of new buildings with an energy efficiency certificate that exceeds the standards proposed by the Technical Building Code through the necessary regulatory development to construct buildings with low or zero energy consumption. Promoting the construction of buildings with low or zero energy consumption.  |
-3
-
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
 |  Implementation | Agencies/Department responsible for implementation | AVG - Department of Territory and Climate Action / Ensanche 21 / Basque Government  |
@@ -1767,8 +1695,6 @@ Lowering energy consumption and promoting implementation of renewable energies o
 |   |  Description of the action | Carry out an analysis of the current availability of energy demand meters in buildings (public and private). Define strategy to cover shortfalls in public buildings in the short term. Define strategy and possibilities for subsidies or incentives in the case of private building. This project/action intends to cover both new buildings and the existing building stock.  |
 |  Reference to the impact pathway | Sector-Subsector | Buildings / Heating: Energy efficient new buildings  |
 |   |  Systemic lever | Technology / Infrastructure  |
-4
-
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
 |   |  | Financing / Finance  |
@@ -1806,16 +1732,14 @@ Lowering energy consumption and promoting implementation of renewable energies o
 |  EC-13: Encouraging replacing incandescent and halogen bulbs with LED technology  |   |   |
 |  Action plan | Name of the action | Encouraging replacing incandescent bulbs with energy-saving bulbs (LED technology).  |
 |   |  Type of action | Technological  |
-6
-
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
 |   | Description of the action | Encouraging replacing residential and tertiary lighting with LEDs  |
 |  Reference to the impact pathway | Sector-Subsector | Buildings and heating: Efficient lighting and appliances  |
 |   |  Systemic lever | Technology / Infrastructure
-Financing / Finance  |
+| Financing / Finance  |
 |   |  Result (according to module B-1.1) short-and medium-term changes | Modernisation of the domestic appliance fleet and installation of efficient lighting in the residential and tertiary sector by promoting replacement of domestic appliances with energy-efficient ones and LED technology.
-Progressive replacement of current appliances (low energy efficiency) with high efficiency ones. Replacement of lighting with LEDs.  |
+| Progressive replacement of current appliances (low energy efficiency) with high efficiency ones. Replacement of lighting with LEDs.  |
 |  Implementation | Agencies/Department responsible for implementation | Basque Government  |
 |   |  Scale of action and target entities | Municipal / Citizenship  |
 |   |  Stakeholders | Vitoria-Gasteiz City Council / Basque Government  |
@@ -1823,7 +1747,7 @@ Progressive replacement of current appliances (low energy efficiency) with high 
 |  Impacts and costs | Renewable energy generated (if applicable) |   |
 |   |  Energy removed/replaced, fuel volume or fuel type |   |
 |   |  Estimated GHG emission reductions (total) | This action is included in the Buildings/Heating Sector, Subsector: Lighting and efficient household appliances, which as a whole has an expected emission reduction of: 24 ktCO .
-e  |
+| e  |
 |   |  Total costs and costs per unit of CO 2e | This action is included in the Buildings/Heating Sector, Subsector: Lighting and efficient household appliances, which has a total cost of €201 million of which the incremental cost is €175 million.  |
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
@@ -1855,7 +1779,7 @@ e  |
 Governance / Policy
 Financing / Finance  |
 |   |  Result (according to module B-1.1) short-and medium-term changes | Development of a decarbonised heat network for the city.
-Progressive change of the city's energy model through dwellings and residential, tertiary, industrial buildings, etc. joining the decarbonised heat network.  |
+| Progressive change of the city's energy model through dwellings and residential, tertiary, industrial buildings, etc. joining the decarbonised heat network.  |
 |  Implementation | Agencies/Department responsible for implementation | AVG - Sustainability, Climate and Energy Service, Department of Finance, Department of Mobility and Public Space, etc.  |
 |   |  Scale of action and target entities | Municipal / Citizenship  |
 |   |  Stakeholders | Vitoria-Gasteiz City Council / Basque Government - EVE / IDAE / Energy services companies  |
@@ -1864,8 +1788,6 @@ Progressive change of the city's energy model through dwellings and residential,
 |   |  Energy removed/replaced, fuel volume or fuel type |   |
 |   |  Estimated GHG emission reductions (total) | This action is included in the Buildings/Heating Sector, Subsector: Decarbonise heating, which as a whole has an expected emission reduction of 143 ktCO . 2e  |
 |   |  Total costs and costs | This action is included in the Buildings/Heating Sector, Subsector: Decarbonising heating which has total costs of €548 million of which the  |
-9
-
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
 |   | per unit of CO 2e | incremental cost is €548 million.  |
@@ -1885,8 +1807,6 @@ Progressive change of the city's energy model through dwellings and residential,
 |  Impacts and costs | Renewable energy generated (if applicable) |   |
 |   |  Energy removed/replaced, fuel volume or fuel type |   |
 |   |  Estimated GHG | This action is included in the Energy Sector, Subsector: Electricity, which as a  |
-0
-
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
 |   | emission reductions (total) | whole is expected to reduce emissions by 275 ktCO . 2e  |
@@ -1900,15 +1820,13 @@ Progressive change of the city's energy model through dwellings and residential,
 |  Reference to the impact pathway | Sector-Subsector | Energy: Electricity  |
 |   |  Systemic lever | Governance / Policy  |
 |   |  Result (according to module B-1.1) short-and medium-term changes | Progressive increase of renewable-energy power generation installations in municipal buildings and public space, residential, tertiary and industrial buildings.
-Deployment of renewable energy generation projects mainly with photovoltaic solar panel installations in municipal infrastructures, residential, tertiary and industrial buildings.  |
+| Deployment of renewable energy generation projects mainly with photovoltaic solar panel installations in municipal infrastructures, residential, tertiary and industrial buildings.  |
 |  Implementation | Agencies/Department responsible for implementation | AVG / Communities of Owners /EVE / Tertiary Sector / Industrial Sector / Renewable Energy Installers  |
 |   |  Scale of action and target entities | Municipal / Citizens / Economic and business sector  |
 |   |  Stakeholders | Citizens / Economic-business sector / City Council of Vitoria-Gasteiz  |
 |   |  Comments on implementation | Action within SECAP that has been identified as requiring acceleration to achieve Mission's objective.  |
 |  Impacts and costs | Renewable energy generated (if applicable) |   |
 |   |  Energy removed/replaced, fuel volume or fuel type | *  |
-1
-
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
 |   | Estimated GHG emission reductions (total) | This action is included in the Energy Sector, Subsector: Electricity, which as a whole is expected to reduce emissions by 275 ktCO . 2e  |
@@ -1973,8 +1891,6 @@ Deployment of renewable energy generation projects mainly with photovoltaic sola
 |  Reference to the impact pathway | Sector-Subsector | Energy: Electricity  |
 |   |  Systemic lever | Learning / Skills  |
 |   |  Result (according to module B-1.1) short-and medium-term changes | Increasing citizens' energy culture by developing a programme of training, education, dissemination and citizen involvement in the energy transition. Greater citizen involvement and awareness in energy transition issues.  |
-5
-
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
 |  Implementation | Agencies/Department responsible for implementation | AVG - Sustainability, Climate and Energy Service / Department of Citizen Participation and Civic Centres  |
@@ -1991,8 +1907,6 @@ Deployment of renewable energy generation projects mainly with photovoltaic sola
 |  Action plan | Name of the action | Awareness-raising of municipal workers  |
 |   |  Type of action | Training  |
 |   |  Description of the action | Development of a training and awareness-raising plan for a fair energy transition. Energy awareness within organisations is an effective tool to change attitudes towards a responsible use of resources, aware of the negative impact of inefficient use and how energy efficiency improves performance for administrations. The training plan will provide the necessary  |
-6
-
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
 |   |  | competences for people working in areas that affect energy performance, with the aim of eradicating bad practices, unnecessary consumption and inefficiencies in energy consumption.  |
@@ -2012,8 +1926,6 @@ Deployment of renewable energy generation projects mainly with photovoltaic sola
 |  EE-08: Adapting urban planning and regulatory instruments.  |   |   |
 |  Action plan | Name of the action | Adapting urban planning and regulatory instruments.  |
 |   |  Type of action | Regulations  |
-7
-
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
 |   | Description of the action | Regulatory development to enable all actions related to implementing renewable energy installations and creating Energy Communities.  |
@@ -2067,8 +1979,6 @@ Learning / Skills  |
 |   |  Energy removed/replaced, fuel volume or fuel type |   |
 |   |  Estimated GHG emission reductions (total) | This action is included in the Waste Sector, Subsector: Increased waste recycling, which as a whole has an expected emission reduction of: 18 ktCO . 2e  |
 |   |  Total costs and costs | This action is included in the Waste Sector, Subsector: Increased waste  |
-0
-
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
 |  RE-02: Basque Circular Hub in Vitoria-Gasteiz  |   |   |
@@ -2080,17 +1990,15 @@ Learning / Skills  |
 Social innovation
 Learning / Skills  |
 |   |  Result (according to module B-1.1) short-and medium-term changes | Progress in the circular economy through the Basque Circular Hub in Vitoria-Gasteiz.
-Development of technical circular economy projects in the Alava business environment with participation from young professionals trained in the Hub itself.  |
+| Development of technical circular economy projects in the Alava business environment with participation from young professionals trained in the Hub itself.  |
 |  Implementation | Agencies/Department responsible for implementation | Vitoria-Gasteiz City Council
-IHOBE  |
+| IHOBE  |
 |   |  Scale of action and target entities | Municipal  |
 |   |  Stakeholders | Vitoria-Gasteiz City Council / IHOBE Basque Government Department of Economic Development, Sustainability and Environment / Universities of Deusto, Basque Country UPV/EHU and Mondragón, plus the Euskadi -Tknika VET Applied Research Centre, and the Novia Salcedo Foundation.
-Citizenship.  |
+| Citizenship.  |
 |   |  Comments on implementation | Action within SECAP that has been identified as requiring acceleration to achieve Mission's objective.  |
 |  Impacts and costs | Renewable energy generated (if applicable) |   |
 |   |  Energy removed/replaced, | *  |
-1
-
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
 |  RE-03: Improving Urban Waste Management  |   |   |
@@ -2104,8 +2012,6 @@ Citizenship.  |
 |   |  Scale of action and target entities | Municipal, Vitoria-Gasteiz City Council, Environmental Management Service  |
 |   |  Stakeholders | Municipal, Vitoria-Gasteiz City Council, Environmental Management Service  |
 |   | Comments on | Action within SECAP that has been identified as requiring acceleration to  |
-2
-
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
 |   | implementation | achieve Mission's objective.  |
@@ -2142,8 +2048,6 @@ Citizenship.  |
 |   |  Systemic lever | Technology / Infrastructure Learning / Skills  |
 |   |  Result (according to module B-1.1)short-and medium-term changes | Improvement of the city's energy self-sufficiency using local biomass (waste and forest cleanings). Development of projects to use waste and clean local biomass forestry to help make the city's energy demand self-sufficient.  |
 |  Implementation | Agencies/Department responsible for implementation | AVG - Department of Territory and Climate Action, Councils of Vitoria-Gasteiz.  |
-4
-
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
 |  RE-06: Production of hydrogen from recovery of urban waste.  |   |   |
@@ -2243,7 +2147,7 @@ Learning / Skills
 Social Innovation  |
 |   |  Result (according to module B-1.1) short- and medium-term changes | Increasing capacity to adapt to climate change and its capacity as a carbon sink through developing urban greening action plans. Transformation and naturalisation of urban spaces for increased climate resilience and emission absorption.  |
 |  Implementation | Agencies/Department responsible for implementation | AVG - Mobility and Public Space Department
-CEA: Centre for Environmental Studies  |
+| CEA: Centre for Environmental Studies  |
 |   |  Scale of action and target entities | Municipal, Citizenship, specifically the residents of the city's Old Town Quarter.  |
 |   |  Stakeholders | AVG - Department of Mobility and Public Space / CEA: Centre for Environmental Studies / Citizens, residents of the city's Historic Centre  |
 |   |  Comments on implementation | Action within SECAP that has been identified as requiring acceleration to achieve Mission's objective.  |
@@ -2251,19 +2155,17 @@ CEA: Centre for Environmental Studies  |
 |   |  Energy removed/replaced, fuel volume or fuel type | *  |
 |   |  Estimated GHG emission reductions (total) |   |
 |   |  Total costs and costs | This action is included in the Forestation Sector, which has a total cost of €72 million.  |
-0
-
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
 |  OTI-01: Industry Support Plan 2021-2024  |   |   |
 |  Action plan | Name of the action | Industry Support Plan 2021-2024  |
 |   |  Type of action | Strategic  |
 |   |  Description of the action | Boosting industrial activity in the city. The transition towards the circular economy will involve a change in the production model for all sectors (industry and services) based on servitisation, eco-design, introduction of new reused materials, minimising consumption of raw materials, etc. Support will be sought for the other sectors to avoid creating gaps between them and types of companies, seeking the necessary public-private alliances to develop the new economic model.
-Entrepreneurship Plan. Support these new business models, both in terms of entrepreneurship and intra-entrepreneurship.  |
+| Entrepreneurship Plan. Support these new business models, both in terms of entrepreneurship and intra-entrepreneurship.  |
 |  Reference to the impact pathway | Sector-Subsector | Industry (Other)  |
 |   |  Systemic lever | Governance/Policy  |
 |   |  Result (according to module B-1.1) short-and medium-term changes | Boosting the energy-climate transformation of the city's industrial sector to adopt carbon neutrality as a basic criterion for competitiveness through the II Industry Support Plan 2021-2024.
-Making the industrial sector more competitive by reducing its dependence on fossil fuel energy through efficiency measures and use of renewable energies.  |
+| Making the industrial sector more competitive by reducing its dependence on fossil fuel energy through efficiency measures and use of renewable energies.  |
 |  Implementation | Agencies/Department responsible for implementation | AVG - Department of Economic Promotion, Employment, Trade and Tourism.  |
 |   |  Scale of action and target entities | Municipal, Economic - industrial sector.  |
 |   |  Stakeholders | AVG - Department of Economic Promotion, Employment, Trade and Tourism, Economic - industrial sector.  |
@@ -2275,8 +2177,6 @@ Making the industrial sector more competitive by reducing its dependence on foss
 |   | fuel volume or fuel type |   |
 |   |  Estimated GHG emission reductions (total) |   |
 |   |  Total costs and costs per unit of CO 2e | This action is included in the Other Sector with total costs of €0.4 million.  |
-
-1
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
 |  OTI-02: Energy transition plan in the industrial sector  |   |   |
@@ -2322,7 +2222,7 @@ An initial scenario is suggested which consists of reducing tillage in the city'
 A second scenario is proposed, which consists of moving from minimum tillage to direct sowing of the city's major crops. Direct seeding consists of reducing actions to a minimum, the soil is not worked from the crop harvest until the next crop is sown, weed control is carried out by applying herbicides with low environmental impact.  |
 |  Reference to the impact pathway | Sector-Subsector | Agri-food (Other)  |
 |   |  Systemic lever | Technology / infrastructure
-Learning / Skills  |
+| Learning / Skills  |
 |   |  Result (according to module B-1.1) short-and medium-term changes | Promotion of conservation agriculture by reducing tillage to reduce emissions in the largest crops in the city. Direct sowing in the largest crops.  |
 |  Implementation | Agencies/Department responsible for implementation | AVG - Department of Economic Promotion, Employment, Trade and Tourism, Department of Territory and Climate Action, Rural Area Service, CEA (Centre for Environmental Studies), Agri-food Sector.  |
 |   |  Scale of action and target entities | Municipal, Agri-food sector  |
@@ -2330,8 +2230,6 @@ Learning / Skills  |
 |   |  Comments on implementation | Action within the Climate Plan that has been identified that should be accelerated to achieve Mission's objective.  |
 |  Impacts and costs | Renewable energy generated (if applicable) |   |
 |   |  Energy | *  |
-5
-
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
 |  OTA-05: Promotion of biodiesel in agricultural machinery  |   |   |
@@ -2362,8 +2260,6 @@ Learning / Skills  |
 |   |  Result (according to module B-1.1) short-and medium-term changes | Promoting organic farming through optimisation of fertiliser use. Widespread increased use of livestock waste as organic fertiliser and optimisation of fertiliser use.  |
 |  Implementation | Agencies/Department responsible for implementation | ACG - Department of Economic Promotion, Employment, Trade and Tourism, Department of Territory and Climate Action, Rural Area Service, CEA (Centre for Environmental Studies), agri-food sector.  |
 |   |  Scale of action and target entities | Municipal, Agri-food sector  |
-7
-
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
 |   | Stakeholders | AVG - Department of Economic Promotion, Employment, Trade and Tourism, Department of Territory and Climate Action, Rural Area Service, CEA (Centre for Environmental Studies), Agri-food sector.  |
@@ -2382,8 +2278,6 @@ Learning / Skills  |
 |   |  Systemic lever | Technology / infrastructure Learning / Skills  |
 |   |  Result (according to module B-1.1) short- and medium-term changes | Promotion of extensive livestock farming and silvopastoral systems. Decrease in annual feed requirements.  |
 |  Implementation | Agencies/Department responsible for | Vitoria-Gasteiz City Council, Department of Economic Promotion, Employment, Trade and Tourism, Department of Territory and Climate  |
-8
-
 |  B-2.2: Individual Action Schemes  |   |   |
 | --- | --- | --- |
 |   | implementation | Action, Rural Area Service, CEA (Centre for Environmental Studies), Agri-food Sector.  |
@@ -2508,7 +2402,7 @@ In the next iteration of the Climate City Contract, the Comprehensive Indicator 
 |  B-3.1: Impact pathways  |   |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |  Outcomes / impacts addressed
-Changes (short and long term) | Actions | Indicator no. | Indicator name | Target values  |   |   |
+| Changes (short and long term) | Actions | Indicator no. | Indicator name | Target values  |   |   |
 |   |   |   |   | 2025 | 2027 | 2030  |
 |   | All | 25 | GHG emissions for the city per inhabitant per year |  |  | 0.62  |
 |   | TR-08 / TR-12 / TR-16 / TR-17 / EC-05 / EE-01 / EE-04 / EE-07/ RE-03/ RE-04 / RE-06 | 26 | GHG emissions from the City Council per inhabitant per year |  |  | 0.02  |
@@ -3054,8 +2948,8 @@ Urban Agenda 2030
 Political Facilitation Committee | All political areas, as well as all departments, autonomous agencies and municipal companies. | Alignment with the SDGs and the Climate Neutrality and Adaptation Missions
 Encouraging internal mainstreaming. | The cross-cutting nature of this new governance structure of the City Strategy brings it into line with the strategic priorities and interventions set out in this Climate City Contract and with the portfolio of transformative actions. It also encourages use of existing governance structures without the need to create new ones. It also encourages multi-level and multi-stakeholder organisation.  |
 |  Sustainable Energy and Climate Action Plan (SECAP VG 2030) | SECAP governance structure, aligned with compliance with the Basque Energy Sustainability Law. | City Hall
-Commission on Energy Sustainability (CSE) | Councillors of the Local Government Board (JGL) and Energy Action Units (UAE) of the different departments, autonomous agencies and municipal companies. | Promoting sustainable energy policies.
-Encouraging internal mainstreaming. |   |
+| Commission on Energy Sustainability (CSE) | Councillors of the Local Government Board (JGL) and Energy Action Units (UAE) of the different departments, autonomous agencies and municipal companies. | Promoting sustainable energy policies. |
+| Encouraging internal mainstreaming. |   |
 |  Multi-level platform / Multi-stakeholder space Missions | A space to contrast strategies, cooperate in the implementation and creation of actions, and share experiences in relation to the goal of achieving climate neutrality. All relevant stakeholders in the city will be represented on this platform. | AVG - Department of Territory and Climate Action. | All relevant actors in the city in the following areas:
 Institutional (technical and political)
 Education sector (universities, educational centres, technology centres, etc.)
@@ -3066,8 +2960,6 @@ Media
 City Networks | Promoting climate neutrality and climate change adaptation policies in all sectors of society. | Materialisation of the multi-stakeholder collaboration required by the Mission. The platform will share both climate neutrality and climate change adaptation issues.  |
 |  Participatory budgeting | Vitoria-Gasteiz Hobetuz: this is a participatory programme through which citizens directly decide how part of the municipal budget is spent. | AVG- Department of Citizen Participation, Transparency and Civic Centres | Citizenship | Involving citizens directly in decision-making in a fully transparent manner and with public monitoring of projects. | Increasing the culture of citizen participation.  |
 |  Climate Neutrality Office | An office to bring together, coordinate and provide technical support to the political governance, technical-administrative and socio-economic governance, academia and media of | AVG - Department of Territory and Climate Action. | Technical-administrative and socio-economic governance. | Create the focal point of the Mission, the body that all citizens, organisations, stakeholders, etc., are aware of | Shared and comprehensive vision of climate change issues.  |
-5
-
 |  C.1.1: Organisational and Governance Interventions  |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- |
 |  Action number and name | Description | Responsible person and entity/body | Stakeholders | Impact | Co-benefits  |

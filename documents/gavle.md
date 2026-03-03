@@ -108,7 +108,7 @@ Gävle has pledged to achieve climate neutrality for the city by 2030. This comm
 
 ## Strategies, plans &amp; iterations
 
-This chapter serves as a starting point to get an overview of the strategies and plans already in place. By identifying the gaps in current implementations, the municipality aim to understand where adjustments are required to align with our 2030 climate neutrality ambition. Through a careful analysis of our existing framework, we can formulate robust strategies, adapt plans, and engage in iterative processes that bridge the implementation gap and leads Gävle towards a sustainable and climate-neutral future.
+This chapter serves as a starting point to get an overview of the strategies and plans already in place. By identifying the gaps in current implementations, the municipality aims to understand where adjustments are required to align with our 2030 climate neutrality ambition. Through a careful analysis of our existing framework, we can formulate robust strategies, adapt plans, and engage in iterative processes that bridge the implementation gap and lead Gävle towards a sustainable and climate-neutral future.
 
 ## The Environmental Strategic Program, MSP 2.0
 
@@ -133,22 +133,20 @@ Table 1. Goals, indicators, and responsibilities from MSP 2.0.
 |  The Gävle municipal group shall create conditions contributing to ensuring that the journeys and transports taking place within the geographical area of Gävle municipality are fossil-free by the year 2030. | 2030 | 1. Percentage share of CO2 emissions from travel and transportation. 2. Percentage of fossil-independent vehicles in traffic. 3. Percentage of environmentally friendly vehicles according to the national definition in the geographical area, in %. 4. Percentage of renewable fuels in public transportation. | Planning and Building Committee, Municipal Executive Board  |
 |  The fuel consumption of the Gävle municipal group, including procurements involving transportation, shall be 100% fossil-free by 2025.1 | 2025 | This includes cars, light trucks, including work machinery, and heavy vehicles. 1. Share of renewable/fossil-free fuels of total consumption by Gävle Municipal Group. 2. Cost of fuel for Gävle Municipal Group. 3. Mapping of fuel usage from heavy vehicles and work machinery, as well as mapping of contracted transport. | All committees and boards  |
 |  The Gävle municipal group shall create conditions contributing to a 30% reduction in residents' and businesses' carbon dioxide emissions from air travel by 2030. | 2030 | 1. Statistics at the national level divided per respective municipality per capita. 2. CO2 equivalents per capita in Gävle from air travel | The Municipal Executive Board.  |
-|  Goal | Target year | Indicators | Responsible for implementation  |
-| --- | --- | --- | --- |
 |  The carbon dioxide emissions from air travel for Gävle municipality's employees shall decrease by 30% during the period 2018-2025. | 2025 | CO2 equivalents from air travel total/year. | All committees and boards  |
 |  The business sector's and residents' energy consumption in buildings and facilities shall be fossil-free by 2030. | 2030 | 1. Emissions to air of CO2.
 CO2 tons from industry.
 CO2 tons other than consumption. | Gävle Energi, Gavlegårdarna, Municipality Board  |
 |  The energy consumption in Gävle municipality's properties with premises and housing shall be 30% more efficient by 2030 compared to 2009. | 2030 | 1. Electricity use per m2 heated indoor space (Atemp refers to the sum of indoor area for each floor, attic, and basement heated to more than 10 °C)
-District heating use per m2 heated indoor space | Planning and Building Committee, Municipal Executive Board  |
-|  The capacity for the production of renewable electricity for Gävle Energi's power grid shall be expanded by 200% by the year 2035. | 2035 | Newly installed capacity of renewable electricity production (MW) | The Municipal Executive Board, Gävle Energi, The Urban Planning Committee  |
-|  Of Gävle Municipality's electricity consumption, at least 10% shall be produced^{2} from solar panels by the year 2035. | 2035 | Installed capacity * performance ratio (900 kWh/kWp) | The Municipal Executive Board, Gävle Energi, Gavlegårdarna, Gavlefastigheter  |
-|  The sale of locally produced biogas for fuel has increased by 35% from 2020 to 2025. | 2025 | Sales of locally produced biogas in kilograms | Eco gas and the Planning and Building Committee  |
+| District heating use per m2 heated indoor space | Planning and Building Committee, Municipal Executive Board  |
+| The capacity for the production of renewable electricity for Gävle Energi's power grid shall be expanded by 200% by the year 2035. | 2035 | Newly installed capacity of renewable electricity production (MW) | The Municipal Executive Board, Gävle Energi, The Urban Planning Committee |
+| Of Gävle Municipality's electricity consumption, at least 10% shall be produced^{2} from solar panels by the year 2035. | 2035 | Installed capacity * performance ratio (900 kWh/kWp) | The Municipal Executive Board, Gävle Energi, Gavlegårdarna, Gavlefastigheter |
+| The sale of locally produced biogas for fuel has increased by 35% from 2020 to 2025. | 2025 | Sales of locally produced biogas in kilograms | Eco gas and the Planning and Building Committee |
 |  The consumption and energy usage of residents and businesses (both within and outside Sweden's borders) should be resource-efficient and environmentally sustainable. | 2035 | 1. Carbon dioxide equivalents per resident in Gävle based on consumption-based emissions^{3}, tons/year per resident.
 Total energy consumption in Gävle municipality as a geographical area in MWh.
 Electricity consumption per resident within Gävle Energi's grid area, excluding activities connected to the regional electricity grid.
 Business sector - Total electricity consumption | All committees and boards  |
-|  In Gävle, construction and landscaping are carried out in an environmentally and climate-friendly manner, creating conditions for residents and businesses to live sustainably. | 2035 | The climate policy action plan^{4} | All committees and boards  |
+In Gävle, construction and landscaping are carried out in an environmentally and climate-friendly manner, creating conditions for residents and businesses to live sustainably. | 2035 | The climate policy action plan^{4} | All committees and boards
 
 For example, through municipality-wide solar parks or on buildings, etc., with the caveat that laws and regulations regarding solar panels may change.
 
@@ -173,8 +171,6 @@ Table 2. Relevant policies, strategies and regulations.
 |  Plan | Municipal | Energy plan 2024-2028 | The Energy plan that describes the supply, distribution, and use of energy. Gävle municipality's energy plan also complements the municipality's environmental strategic program. | The energy plan includes an action plan for more efficient energy usage, increased share of fossil-free energy, and increased production of renewable energy. The energy plan addresses aspects of the transportation sector related to renewable fuel production and infrastructure for refuelling stations and charging points for renewable fuels. | To be decided in 2024  |
 |  Strategy | Municipal | Traffic strategy (SUMP) | To form a cohesive strategy for how the traffic should develop so that | Road traffic is the main source of greenhouse gas emissions. To change travel habits, strong investments | Implementation  |
 |   |  |  | expenditure of energy is not to be achieved by the road. | the road is the main source of greenhouse gas emissions. To change travel habits, strong investments |   |
-|  Type | Level | Name & Title | Description | Relevance | Need for action  |
-| --- | --- | --- | --- | --- | --- |
 |   |  |  | must achieve a sustainable, attractive society based on the three aspects of sustainability | in public transportation, walking, and cycling, as well as information and influence measures, are needed. |   |
 |  Master plan | Municipal | Master plan | The Master plan shows Gävle municipality's will direction for how the municipality should develop in the direction of long-term sustainable land and water use up to the year 2030 and with an outlook towards the year 2050 | The masterplan also relates to the climate goal and the technical infrastructure that is needed like fossil free energy production, efficient land use, nature reserves etc | that the principles of the masterplan is followed in every decision. The master plan is soon to be updated.  |
 |  Policy | Municipal | Parking policy | Setting Parking targets for an attractive and accessible city and sustainable transport system | The policy aims to set parking targets to promote the transition of private car journeys to walking, cycling, or public transport. | To be decided in 2024  |
@@ -183,21 +179,21 @@ Table 2. Relevant policies, strategies and regulations.
 |  Plan | Municipal | Circuit plan 2021-2025 for Gävle municipality | of new natural resources and instead uses materials in a circuit. The plan must create a clear direction and good prerequisites for a sustainable use of resources and thereby contribute to fulfilling national and global sustainability goals. It should lead to clear improvements when it is about preventing waste, reducing toxins in the cycle, reuse, recycle and keep clean and tidy. Encompasses all types of waste and the measures needed to manage the waste in an environmentally and resource appropriate manner. | Contribute to a circular economy where we reduce withdrawals of new natural resources and instead uses materials in a circuit. The plan must create a clear direction and good prerequisites for a sustainable use of resources and thereby contribute to fulfilling national and global sustainability goals. It should lead to clear improvements when it is about preventing waste, reducing toxins in the cycle, reuse, recycle and keep clean and tidy. | Implementation  |
 GOVERNANCE AND SUPPORT GÄVLE
 
-Gävle has a broad set of climate relevant policy that builds on the goals in the Environment Strategic programme. From that perspective nothing is missing to reach our goals. We now have to go from strategy to action. The environment strategic programme has a clear steering model where it is the managers who are responsible for the implementation and that measures contribute to the achievement of the goals. However, we have experienced that it can be difficult to handle these goals without knowledge and recourses to do so. Even if the steering model says that managers should request funding for measures, it is difficult to do so if you are not aware of exactly what measures are needed. Many actions in this plan demands new knowledge and working methods which can be difficult to develop within existing operation.
+Gävle has a broad set of climate relevant policy that builds on the goals in the Environment Strategic programme. From that perspective nothing is missing to reach our goals. We now have to go from strategy to action. The environment strategic programme has a clear steering model where it is the managers who are responsible for the implementation and that measures contribute to the achievement of the goals. However, we have experienced that it can be difficult to handle these goals without knowledge and resources to do so. Even if the steering model says that managers should request funding for measures, it is difficult to do so if you are not aware of exactly what measures are needed. Many actions in this plan demands new knowledge and working methods which can be difficult to develop within existing operation.
 
 The politicians have given the organisation a mission to improve the steering model for our leading strategic programmes during 2024. Also, a portfolio-based working practice has been developed for development projects and will also be applied at the climate action plan, starting 2024.
 
 ## Stakeholder engagement
 
-While the action plan does not cover actions that other stakeholders need to undertake, the CCC has been based on the action plan adopted in 2021. The plan was developed broadly with the sectors and municipal companies to identify the actions that the municipal group can undertake, both to reduce the emissions from our activities and support the transition of civil society and business. In addition, the CCC is viewed as a governance tool through which Gävle will attempt to mobilise a broader group of stakeholders that can greatly support in the enacting the actions and expected outcomes. The action plan was open for consultation during three month and many of the suggestions from civil society where added to the plan.
+While the action plan does not cover actions that other stakeholders need to undertake, the CCC has been based on the action plan adopted in 2021. The plan was developed broadly with the sectors and municipal companies to identify the actions that the municipal group can undertake, both to reduce the emissions from our activities and support the transition of civil society and business. In addition, the CCC is viewed as a governance tool through which Gävle will attempt to mobilise a broader group of stakeholders that can greatly support in the enacting the actions and expected outcomes. The action plan was open for consultation during three months and many of the suggestions from civil society were added to the plan.
 
-When we joined Viable Cities in 2021 we applied for external funding to develop a local climate agreement since stakeholder engagement was something we needed to develop to enable us to reach our goals. Our local climate agreement, se next section, is our first attempt to a larger collaboration platform with business, associations, university and public entities. Gävle has a large number of associations, these are platforms which we want to use to engage with citizens.
+When we joined Viable Cities in 2021 we applied for external funding to develop a local climate agreement since stakeholder engagement was something we needed to develop to enable us to reach our goals. Our local climate agreement, see next section, is our first attempt to a larger collaboration platform with business, associations, university and public entities. Gävle has a large number of associations, these are platforms which we want to use to engage with citizens.
 
-A hurdle working with citizen engagement in climate issues is finding the right format and recourses. We are eager to follow and get inspired from other cities embarking on this journey. Citizens engagement is a typical area we would gratefully collaborate on within the NZC.
+A hurdle working with citizen engagement in climate issues is finding the right format and resources. We are eager to follow and get inspired from other cities embarking on this journey. Citizens engagement is a typical area we would gratefully collaborate on within the NZC.
 
 ## Governance innovation interventions
 
-Achieving climate neutrality by 2030 requires more than just strategic plans; it demands innovative organizational and governance interventions. By focusing on organizational innovation, Gävle municipality aim to adapt our internal frameworks, enhance collaboration, and foster a culture of sustainability.
+Achieving climate neutrality by 2030 requires more than just strategic plans; it demands innovative organizational and governance interventions. By focusing on organizational innovation, Gävle municipality aims to adapt our internal frameworks, enhance collaboration, and foster a culture of sustainability.
 Gävle Climate Agreement.
 
 The Gävle Climate Agreement is a mobilization where local businesses, associations, university, and public entities come together in a transformation arena for concrete collaboration in climate-driven business and operational development. All organizations operating in Gävle municipality and can sign and become a part of the Gävle Climate Agreement. The organizations that sign the agreement commit to working towards a climate neutral and attractive Gävle and support the goal of climate neutrality by addressing their organization's climate challenges. Additionally, the organizations are expected to contribute to spreading experiences, knowledge, and good practices to help other organizations in their transition efforts.
@@ -229,7 +225,7 @@ At the Furniture Pool, the municipality's operations can find used and refurbish
 
 ## Energy and climate consultancy
 
-A difficulty lies in reaching all small and medium-sized companies where there is no internal environmental work or end customers setting demands. In those cases, Gävle municipality aim to enhance energy and climate consultancy to actively support these businesses. The municipality also plan to explore the possibility of working on a sector-specific basis, addressing the challenges within industries such as construction, transportation, or the food sector.
+A difficulty lies in reaching all small and medium-sized companies where there is no internal environmental work or end customers setting demands. In those cases, Gävle municipality aims to enhance energy and climate consultancy to actively support these businesses. The municipality also plan to explore the possibility of working on a sector-specific basis, addressing the challenges within industries such as construction, transportation, or the food sector.
 
 ## Gavlegårdarna environmental work
 
@@ -237,7 +233,7 @@ The municipal housing company Gavlegårdarna is continually working on initiativ
 
 ## Social innovation interventions
 
-Another important part is to engage our community to contribute. Social innovation means using the smart thinking, creativity, and dedication of our residents. By fostering a culture of sustainability and inclusivity, Gävle municipality aim to inspire behavioural changes, encourage community participation, and build a shared commitment to climate action.
+Another important part is to engage our community to contribute. Social innovation means using the smart thinking, creativity, and dedication of our residents. By fostering a culture of sustainability and inclusivity, Gävle municipality aims to inspire behavioural changes, encourage community participation, and build a shared commitment to climate action.
 
 ## Learning for Sustainable Development (LHU)
 
@@ -281,7 +277,7 @@ Table 3. Final energy use by source sectors.
 
 |  2020 | District heating | Electricity | Oil products | Coal and coke | LPG/natural gas | Biofuels | Biofuels | Wood | Beckoil | Methanol | Total consumer category  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Fial energy use by source sectors MWh | District heating | Electricity | liquid(non-renewable) |  | gas | Liquid | Solid |  |  |  | Total consumer category  |
+|  Final energy use by source sectors MWh | District heating | Electricity | liquid(non-renewable) |  | gas | Liquid | Solid |  |  |  | Total consumer category  |
 |  Agriculture, forestry ,fishing | 0 | 6 530 | 24 021 | 0 | 0 | 814 | 0 |  |  |  | 31 365  |
 |  Industry, construction | 779 892 | 861 582 | 38 469 | 0 | 49 667 | 0 | 34 056 | 3 025 720 | 229 000 | 18 000 | 5 036 386  |
 |  Public sector | 94 736 | 92 966 | 84 642 | 0 | 0 | 0 | 0 |  |  |  | 94 736  |
@@ -303,17 +299,15 @@ District heating Production in Gävle 2020 MWh
 
 Electricity production in Gävle 2020 MWh
 
-|  solar cells | 4 066 |  |  |  |  |  |  |  |  |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  industrial back pressure | 404 322 |  |  | 8 862 |  |  | 66 498 | 388 131 |  |  | 463 491  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  cogeneration plants | 45 880 |  |  |  |  |  |  |  |  |  |   |
-|  Hydropower | 82 932 |  |  |  |  |  |  |  |  |  |   |
-|  total fuel type | 537 200 |  |  | 8 862 |  |  | 66 498 | 388 131 |  |  | 463 491  |
-|  Emission factors |  |  |  |  |  |  |  |  |  |  |   |
-|  Electricity (Nordic mix) | 31.6 tonnes CO2e/GWh |   |   |  |  |  |  |  |  |  |   |
-|  Road transport (mean value per vehicle-kilometre) | 148 g CO2e/vehicle-kilometre |   |   |  |  |  |  |  |  |  |   |
-|  Oil products | 268.2 tonnes CO2e/GWh |   |   |  |  |  |  |  |  |  |   |
+solar cells | 4 066
+industrial back pressure | 404 322 | 8 862 | 66 498 | 388 131 | 463 491
+cogeneration plants | 45 880
+Hydropower | 82 932
+total fuel type | 537 200 | 8 862 | 66 498 | 388 131 | 463 491
+Emission factors
+Electricity (Nordic mix) | 31.6 tonnes CO2e/GWh
+Road transport (mean value per vehicle-kilometre) | 148 g CO2e/vehicle-kilometre
+Oil products | 268.2 tonnes CO2e/GWh
 GOVERNANCE AND SUPPORT GÄVLE
 
 The emissions Gävle needs to reduce over the next years are displayed in Table 4 below. It contains territorial emissions from 2021.
@@ -332,7 +326,7 @@ Table 4. Baseline for greenhouse gas emissions.
 |  Product use | 12 kt | 9%  |
 |  Total | 273 kt | 100%  |
 
-In assessing the greenhouse gas emission baseline for a municipality, it is crucial to look in to the contributions from various sectors.
+In assessing the greenhouse gas emission baseline for a municipality, it is crucial to look into the contributions from various sectors.
 
 The transport sector emerges as a dominant contributor, responsible for a substantial 64% of the municipality's greenhouse gas emissions. This encompasses emissions from vehicles, both public and private, as well as other modes of transportation. Addressing this sector requires comprehensive initiatives such as promoting public transportation, incentivizing electric vehicles, and developing sustainable urban planning to minimize reliance on traditional fossil fuel-powered transport.
 
@@ -391,7 +385,7 @@ National efforts are also underway to determine how to work on this in the futur
 
 ## Systemic barriers and opportunities
 
-Embarking on the path toward climate neutrality by 2030 requires a comprehensive understanding of both systemic barriers and opportunities within Gävle Municipality. Identifying and overcoming these barriers is crucial for the successful realization of our ambitious climate goals. By strategically addressing systemic barriers and leveraging opportunities, Gävle municipality aim to create a resilient and sustainable community that leads the way towards a climate-neutral future.
+Embarking on the path toward climate neutrality by 2030 requires a comprehensive understanding of both systemic barriers and opportunities within Gävle Municipality. Identifying and overcoming these barriers is crucial for the successful realization of our ambitious climate goals. By strategically addressing systemic barriers and leveraging opportunities, Gävle municipality aims to create a resilient and sustainable community that leads the way towards a climate-neutral future.
 GOVERNANCE AND SUPPORT GÄVLE
 
 Table 6 illustrates the systemic barriers, opportunities, and involved stakeholders for each Field of Action.
@@ -402,8 +396,6 @@ Table 6. Systemic barriers and opportunities for each Field of Action.
 |  Fields of action | Systemic barriers | Opportunities | Stakeholders  |
 | --- | --- | --- | --- |
 |  Transport & Mobility | Municipal level: • Behavioural changes are needed for several transitions in personal mobility. • Local resistance towards traffic measures to decrease demand for private transportation. • Many individual users that either need to change behaviour or invest in clean technology. • There are limited tools and instruments for the municipality to regulate transportation. • Multipolicy dependency- building cycling lanes does not in itself provide more bikers, accessibility, and price for parking for cars are also important factors, but the municipality tend to want to please all modes of travelling. • Multi actor dependency- Public transportation is organised on a regional and national level. • Lack of resources for infrastructure and communication measures for sustainable transportation modes and higher capacity in the public transportation network. • Investment in soft traffic measures is given lower priority and it is easy to de-prioritize when finances are limited. • To weak collaboration with regional public transportation provider (the region). • Lack of feasibility studies for developments. What is not identified in the order, there will also be no money for. It becomes more expensive to fix things afterwards and it takes longer before we get to the transition needed to reach climate goals and the 2030 agenda. | By promoting sustainable modes of transportation such as cycling, walking, and public transport, as well as electrifying transportation fleets and improving transport infrastructure, several opportunities arise for society to reduce its climate impact and enhance the quality of life for residents. Opportunities include promoting the use of sustainable transportation through infrastructure investments, creating incentives for the use of these alternatives, and raising public awareness of their benefits. To overcome obstacles, we need to offer attractive alternatives for car users, collaborate with various stakeholders for infrastructure development, and invest in charging infrastructure while providing economic incentives to promote the transition to electric propulsion. | Gävle municipality, Region Gävleborg, The Swedish Transport Administration, regional collaborations towards fossil free transportation  |
-|  Fields of action | Systemic barriers | Opportunities | Stakeholders  |
-| --- | --- | --- | --- |
 |   | National level:
 • A development towards increased transport efficiency is required.
 • Sweden's infrastructure expansion is driven by predictions indicating a rise in car traffic, resulting in investments that contribute to heightened emissions.
@@ -438,7 +430,7 @@ The Municipality  |
 |  Fields of action | Systemic barriers | Opportunities | Stakeholders  |
 | --- | --- | --- | --- |
 |  Energy Systems | • The incineration tax on waste needs improvement, as evaluations indicate it has a limited effect in minimizing greenhouse gas emissions from waste incineration.
-• Needs higher political priority. The EU has by far the most power to address consumption based emissions by legislation on how products can be produced and recycled. This cannot be pushed down to the local level and individual responsibility. |  |   |
+| • Needs higher political priority. The EU has by far the most power to address consumption based emissions by legislation on how products can be produced and recycled. This cannot be pushed down to the local level and individual responsibility. |  |   |
 |   |  Municipal level:
 • Lack of organisational capacity to address energy question on an overall level to address climate change.
 • Regional and national dependence to increased local transmission capacity. Installing Charging infrastructure for heavy duty vehicles will be a problem until 2032
@@ -551,7 +543,7 @@ To reach climate neutrality by 2030, an acceleration is needed both for private 
 ![img-0.jpeg](img-0.jpeg)
 Figure 1. Illustrates how the transition elements can reduce the carbon footprint from mobility and transport.
 
-The different transition element for private and freight transport are displayed in table X below with also describes the planned action costs, potential emission reduction and co-benefits.
+The different transition elements for private and freight transport are displayed in table X below with also describes the planned action costs, potential emission reduction and co-benefits.
 Table 7. Transition element for transport
 
 |  Field of actions: Transition Element | Indicator | Target Potential | Direct impacts (emission reductions compared to business-as-usual year 2030) | Co-benefits  |
@@ -563,9 +555,7 @@ Table 7. Transition element for transport
 |  Increased proportion of commuting by electric bus | The percentage of trips (passenger km) done by public transport by bus 2030. | 8 % | 9 kt | Reduced noise Reduce accidents Less congestion Air quality  |
 |  Hydrogen for heavy trucks | The percentage of kilometres driven by hydrogen trucks instead of diesel trucks | 30% | 12 kt | Air quality Reduced noise  |
 |  Electric light trucks | The percentage of kilometres driven by battery electric trucks instead of diesel trucks | 45% | 8 kt | Air quality Reduced noise  |
-|  Transfer from heavy truck to electric railroad | The percentage of kilometres that's shifted from using heavy diesel trucks to using transport by railway | 15% | 6 kt | Air quality Reduced noise Less congestion  |
-|  Field of actions: Transition Element | Indicator | Target Potential | Direct impacts (emission reductions compared to business-as-usual year 2030) | Co-benefits  |
-| --- | --- | --- | --- | --- |
+|  Transfer from heavy truck to electric railroad | The percentage of kilometres shifted from heavy diesel truck transport to railway transport | 15% | 6 kt | Air quality Reduced noise Less congestion  |
 |   | The percentage of trips (passenger km) done by railroad 2030. | 8% | 9 kt | Reduced noise
 Reduce accidents
 Less congestion
@@ -589,39 +579,27 @@ Table 8. Actions for transport and mobility.
 |  Decided | Mobility assessment | All municipal developments and constructions must have a prepared mobility assessment. | Governance & policy | 2021 | Increased proportion of walking and cycling, Increased proportion of commuting by electric bus, Improved urban planning | Strategic urban planning department Urban development department | Pilots are built according to recommendations in assessment | Reduced traffic growth in all our exploitations in comparisons with BAU  |
 |   |  Bicycle plan | Bicycle plan is implemented to achieve improved infrastructure and conditions for cyclists | Technology/ infrastructure | 2020-2030 | Increased proportion of walking and cycling | Strategic urban planning department Urban development department Citizens polls Citizens advisory board on biking | The net is step by step improved according to priority list | Bicycle net is coherent and safe in the whole municipality  |
 |   |  School transportation | Map out and implement measures for sustainable school transportation | Governance & policy | Ongoing | Increased proportion of walking and cycling, Increased proportion of commuting by electric bus, | Urban development department Education administration | A couple of schools are involved in projects at a time. Reduced traffic around involved schools. | New schools continuously involved in projects. Reduced traffic around involved schools.  |
-|   |  Creating conditions for renewable fuels and charging infrastructure | study to defined suitable places for renewable fuels and charging infrastructure. Guidelines for charging infrastructure | Technology/ infrastructure | 2022 2022 | Shift to electric vehicles (or biofuels) | Strategic urban planning Business consulting Urban development department Municipal companies | 5 plots made suitable for renewable energy sales | 10 plots made suitable for renewable energy sales  |
+|   |  Creating conditions for renewable fuels and charging infrastructure | study to define suitable places for renewable fuels and charging infrastructure. Guidelines for charging infrastructure | Technology/ infrastructure | 2022 2022 | Shift to electric vehicles (or biofuels) | Strategic urban planning Business consulting Urban development department Municipal companies | 5 plots made suitable for renewable energy sales | 10 plots made suitable for renewable energy sales  |
 |   |  Fossil free fuels in all municipal vehicles | implement measures and follow-up to ensure that municipal vehicles run on fossil-free fuel. | Technology/ infrastructure | 2020 | Shift to electric vehicles (or biofuels) | Municipal group | 60% by 2023 | Fossil free fuels in all municipal vehicles in 2025  |
-|   | Action name | Description | Systemic levers | Implementation | Concerns Transition Element/target | Stakeholders/stakeholder engagement | Early outcome | Late outcome  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |   | Bicycle campaign "winter cyclist" | Initiated in 2010 and is run by Gävle Municipality in collaboration with Region Gävleborg and other municipalities in the region. "Vintercyklisten" is aimed at businesses that want to provide employees with the opportunity to bike during the winter. The purpose is to improve participants' health and reduce the climate impact in Gävle. | Democracy/participation Social innovation | 2010- no end date | Increased proportion of walking and cycling | Urban development department Business life engagement to attract bikers to the campaign and business challenges | Increased number of participants each year | Normalize winter biking, that the difference between the winter and summer is not so substantial.  |
 |   |  Bike pool for the Gävle Municipality Group | In 2021, the project "Hojja Gävle" was initiated, which is an internal bike pool for the employees of Gävle Municipality. The aim of the project is to provide bicycles as an alternative to cars and thereby reduce the number of car journeys made for work purposes. | Democracy/participation | 2021 | Increased proportion of walking and cycling | Gävle Municipal | Conditions are set and booking system steer towards sustainable travelling. | Bike is the most common means of transportation for employees when travelling within the city.  |
 |   |  Bicycle-Friendly Workplace Award | "Bicycle-Friendly Workplace" is an award for all workplaces that make it easy for employees to bike to and during work. | Democracy/participation Social innovation | 2020 | Increased proportion of walking and cycling | Urban development department Business life engagement to attract business to implement measures to become a bicycle friendly workplace. | Reach out to the companies in the local CCC. | It is normalized that employers provide conditions for employees to commute by bike.  |
-|   | Action name | Description | Systemic levers | Implementation | Concerns Transition Element/target | Stakeholders/stakeholder engagement | Early outcome | Late outcome  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |   | Digitization of municipal services | The digitization of municipal services is a way to reduce costs for the municipality, including reducing the travel requirements for both staff and citizens. This consequently contributes to reduced carbon emissions. The municipality is working systematically on the digitization of its services, but there is still much to be done. | Technology/infrastructure | 2021- ongoing | Increased proportion of non-travel (remote) meetings and services | Gävle municipality Citizens surveys | CO2 reduction is part of the digitalisation process. | Digitalisation of services are made where CO2 reduction is the main target.  |
 |   |  Mobility hubs | The municipality actively engages in the concept of mobility hubs in major residential construction projects. The purpose of the mobility hub is multifaceted, including reducing car traffic and parking in the area, making walking, cycling, and public transportation more attractive, decreasing overall parking spaces, and providing mobility services such as shared bicycles, cars, etc | Technology/infrastructure | 2020 | Increased proportion of walking and cycling, Increased proportion of commuting by electric bus, shift to electric vehicles, Improved urban planning | Gävle parking service Gävle housing company Private housing companies | First mobility hub is built (2023) | Mobility hubs are standard when new areas are exploited.  |
 |   |  Climate and environmental requirement in procurements | Create conditions for climate and environmental requirements to be specified and monitored in the municipality's procurements. The purchasing department is actively involved in addressing environmental criteria in | Democracy/participation | 2021- ongoing | Transfer to railway, Transition to electric cars, Route optimization for freight transport, Increased load factor, Electrification of light trucks, Electrification of heavy trucks | Procurement department Regular Business dialogue | Overview of procured transports needs to be done in 2024. Measuring method is missing for the goal. | Procured transports are fossilfree in 2025 according to target  |
-|   | Action name | Description | Systemic levers | Implementation | Concerns Transition Element/target | Stakeholders/stakeholder engagement | Early outcome | Late outcome  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |   |  | procurement, such as when it comes to fossil-free fuels |  |  |  |  |  |   |
 |   |  Innovation procurement around Mobility as a Service (MaaS) | Mobility as a Service means that multiple modes of transportation and providers are integrated into a digital platform, such as an app, to offer an optimal range of services that promote mobility, making it easier to navigate around the city. | Democracy/participation Social innovation | 2023 | Increased proportion of walking and cycling, | Urban development department Providers of Maas services | First mobility Service is available (2022) | Mobility services continue to develop and connect to each other.  |
 |   |  Checklist | Develop a checklist for requirements for all land allocation and development projects aimed at achieving climate neutrality. | Democracy/participation |  | Increased proportion of walking and cycling, Increased proportion of commuting by electric bus, | Strategic urban planning department Urban development department Municipal companies Business via local CCC building portfolio | Checklist requirements are tested in new exploitations. | Checklist improves the possibilities to sustainable travelling in all our exploitation projects.  |
 |   |  New traffic strategy | Develop a new traffic strategy aiming towards climate neutrality | Governance & policy | 2025 | Increased proportion of walking and cycling, Increased proportion of commuting by electric bus, Improved urban planning | Strategic urban planning department Urban development department Municipal companies Civil society | Plan is developed and adopted. | Plan is implemented.  |
 |   |  Investment process | Climate neutrality shall be weighted as part of the infrastructure investment process. | Finance & funding | n.d | All targets | Strategic urban planning department Urban development department Municipal companies | Model is developed. | Model is implemented.  |
-|   | Action name | Description | Systemic levers | Implementation | Concerns Transition Element/target | Stakeholders/stakeholder engagement | Early outcome | Late outcome  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Under investigation | Knowledge and behavioural change | Information campaigns targeting citizens for increased knowledge and changed behaviour | Social innovation |  | Increased proportion of walking and cycling, Increased proportion of commuting by electric bus, | Municipal group | This needs to be combined with other actions that gives incentives to changed behaviour like fees or improved infrastructure for biking. | Shift in behaviour  |
 |   |  Logistics centre | A construction material logistics centre is to be established and utilized by all major development projects | Technology/infrastructure |  | Route optimization for light trucks, improved load factor light trucks | Strategic urban planning department Private sector | Create conditions | Launch when market is uprising again.  |
 |   |  Model for the management of materials. | Implement a model for the management of excavation materials to reduce transportation needs and increase reuse | Democracy/participation, Technology/infrastructure |  | Route optimization for light trucks | Strategic urban planning department Private sector | Create conditions | operating  |
 |   |  Coordinated goods distribution | Coordinated goods distribution is introduced, along with requirements for fossil-free final transportation. | Democracy/participation |  | Route optimization for light trucks, Improved load factor light trucks, Electric light trucks, Improved vehicle technology, light trucks, Ecodriving of light trucks | Procurement department The Municipal organisation Private sector by trying to get more local products on offer, | Create conditions | operating  |
 |   |  Parking fees and the availability of parking | The availability of parking and the level of parking fees are crucial factors when it comes to the choice of transportation mode. In Gävle, parking fees and parking zones have remained unchanged for about 20 years, making it progressively cheaper to park in | Democracy/participation, Technology/infrastructure |  | Transfer from car to work from home, Increased the proportion of non-traveling (remote) meetings and services, Increased proportion of walking and cycling, Increased proportion of commuting by electric | Urban development department Gävle parking company Gävle city cooperation (association for centrally located business) | Implemented 2024 | Reduced travelling by car in the centre  |
-|   | Action name | Description | Systemic levers | Implementation | Concerns Transition Element/target | Stakeholders/stakeholder engagement | Early outcome | Late outcome  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |   |  | the city over time. This significantly undermines the competitiveness of sustainable transportation modes and contributes to unnecessary traffic in the city center. In 2023, work will commence to review parking zones and fees to align them more closely with the municipality's overall goals. |  |  | bus, Transfer from car to railroad |  |  |   |
-|   | Collaborate with employers and property owners to develop green travel plans | The green action plan is based on the premise that journeys can become more sustainable by creating conditions for more people to walk, cycle, or use public transportation for work-related travel as well as commuting to and from the workplace. Gävle Municipality has, until now, used Hemlingborg in Hemlingby as a pilot project for green travel plans, which includes a preschool, school, and care facility | Democracy/participation, | 2021 | Transfer from car to work from home, Increased the proportion of non-traveling (remote) meetings and services, Increased proportion of walking and cycling, Increased proportion of commuting by electric bus, | Urban development department Employees Property owners | Plan is launched at our flagship project Hemlingborg | Inspirate and collaborate with business to develop green travel plans  |
+|   | Collaborate with employers and property owners to develop green travel plans | The green action plan is based on the premise that journeys can become more sustainable by creating conditions for more people to walk, cycle, or use public transportation for work-related travel as well as commuting to and from the workplace. Gävle Municipality has, until now, used Hemlingborg in Hemlingby as a pilot project for green travel plans, which includes a preschool, school, and care facility | Democracy/participation, | 2021 | Transfer from car to work from home, Increased the proportion of non-traveling (remote) meetings and services, Increased proportion of walking and cycling, Increased proportion of commuting by electric bus, | Urban development department Employees Property owners | Plan is launched at our flagship project Hemlingborg | Inspire and collaborate with business to develop green travel plans  |
 |   | Develop an action plan to make the municipality group's and municipal employees' transports climate-neutral. | Develop a model for internal climate compensation for air travel. Commuter travel cards with salary deductions are introduced within the Gävle Municipality group. | Democracy/participation | n.d | Transfer from car to work from home, Increased the proportion of non-traveling (remote) meetings and services, Increased proportion of walking and cycling, Increased | n.d | Model is developed and implemented | Air and car travel is reduced within municipal group.  |
-|   | Action name | Description | Systemic levers | Implementation | Concerns Transition Element/target | Stakeholders/stakeholder engagement | Early outcome | Late outcome  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |   |  |  |  |  | proportion of commuting by electric bus, Transfer from car to railroad |  |  |   |
 |   | Fully implement the four-step principle in infrastructure planning | The four-step principle is applied to ensure effective resource management and to ensure that measures contribute to sustainable societal development.
 **Rethink:** The first step involves considering measures that primarily address the need for transportation and travel, as well as the choice of mode of transportation.
@@ -637,14 +615,14 @@ Region Gävleborg | Work process for how the model can be handled internally | T
 |   |  Route optimization | Route optimization of the municipality's transports, home care, special transportation, school transportation, waste collection, etc. Some Route optimization exists, like waste collection, but it could be used in more areas. | Technology/infrastructure | n.d | Route optimization | n.d | Overview of transports that are suitable for route optimization | Route optimisation executed.  |
 STYRNING OCH STÖD GÄVLE
 
-The private transport accounts for approximately 65% of the emissions from transport and mobility and is an important key to reach the goal of carbon footprint reduction. To reach the goal there are numerous of action that needs to take place. For example, is the mobility shifting from car to bicycle or public transportation an important step for the citizens to contribute to the goal.
+The private transport accounts for approximately 65% of the emissions from transport and mobility and is an important key to reach the goal of carbon footprint reduction. To reach the goal there are numerous actions that need to take place. For example, is the mobility shifting from car to bicycle or public transportation an important step for the citizens to contribute to the goal.
 
 Figure 2 below illustrate the scenario for the private transport and how the Transition Element could contribute to reducing emissions by 2030.
 
 ![img-0.jpeg](img-0.jpeg)
 Figure 2. Illustrates how the transition elements can reduce the carbon footprint from private transport.
 
-Regarding the freight transport Gävle municipality plan to work on reducing emissions by renewable fuels and electricity vehicles. Additionally, the municipality aim to optimize transport routes by coordinating logistical flows.
+Regarding the freight transport Gävle municipality plans to work on reducing emissions by renewable fuels and electricity vehicles. Additionally, the municipality aims to optimize transport routes by coordinating logistical flows.
 
 Figure 3 below illustrate the scenario for the freight transport and how the Transition Element could contribute to reducing emissions by 2030.
 
@@ -711,12 +689,12 @@ Gävle is growing, and the construction needs are not easily reconciled with the
 
 According to the industry's own roadmap to achieve fossil freedom, the climate impact potential of the construction and civil engineering sector can be roughly halved by 2030 with existing technology. However, to achieve net-zero or beyond, technological shifts and the commercialization of innovations are needed.
 
-It is challenging to reduce the emissions by 2030 from a life cycle perspective when the municipality need to continue to upgrade housing and infrastructure as the city grows and the population increases. Figure 4 illustrates how the transition elements for buildings energy consumption can be reduced over the years while the business-as-usual emissions is increases.
+It is challenging to reduce the emissions by 2030 from a life cycle perspective when the municipality need to continue to upgrade housing and infrastructure as the city grows and the population increases. Figure 4 illustrates how the transition elements for buildings energy consumption can be reduced over the years while the business-as-usual emissions are increasing.
 
 ![img-0.jpeg](img-0.jpeg)
 Figure 4. Illustrates how the transition elements can reduce the carbon footprint from buildings energy consumption.
 
-The different transition element for the built environment and real estate sector are displayed in Table 9 below. Due to the difficulty in assessing emissions from the construction, no indicator has been set for that transition element.
+The different transition elements for the built environment and real estate sector are displayed in Table 9 below. Due to the difficulty in assessing emissions from the construction, no indicator has been set for that transition element.
 Table 9. Transition element for built environment and real estate sector
 
 |  Field of actions: Transition Element | Indicator | Target Potential | Direct impacts (emission reductions compared to business-as-usual year 2030) | Co-benefits  |
@@ -729,8 +707,6 @@ Table 9. Transition element for built environment and real estate sector
 |  Heating of commercial buildings with renewable solid biofuels | Proportion of commercial buildings heated with direct electricity, oil or natural gas converted to renewable biofuels year 2030. | 37% | 1 kt | Air quality, Energy efficiency  |
 |  Heat pumps in commercial buildings | Proportion of commercial buildings heated with direct electricity, oil or natural gas converted to heat pumps year 2030. | 45% | 1 kt | Air quality, Energy efficiency  |
 |  Shift to district heating in commercial buildings | Proportion commercial buildings heated with oil, natural gas or direct electricity converted to district heating year 2030. | 15% | 527 t | Air quality, Energy efficiency  |
-|  Field of actions: Transition Element | Indicator | Target Potential | Direct impacts (emission reductions compared to business-as-usual year 2030) | Co-benefits  |
-| --- | --- | --- | --- | --- |
 |   | Proportion of single-family housing achieving efficiency target 30% year 2030. | 20% | 470 t | Air quality, Energy efficiency  |
 |   | Proportion of commercial buildings achieving efficiency target year 2030. | 15% | 36 t | Air quality, Energy efficiency  |
 
@@ -754,13 +730,9 @@ Table 10. Actions for built environment and real estate sector.
 |   |  Climate calculation mode | Implement that a climate calculation model is used in all development projects undertaken by the municipality. | Technology/infrastructure | 2023 | Reduce carbon footprint from construction. | Strategic urban planning department Urban development department | Develop and implement model | The model is applied to all development projects.  |
 |   |  Energy efficiency in existing buildings | Gävle municipality is reviewing an updated energy plan for Gavle properties | Technology/infrastructure | Continuously | Retrofitting of single-family residential buildings for energy efficient heating, | Gävle municipal companies | Continuous energy efficiency measures in housing stock | Energy efficiency goal is reached  |
 |   |  Sustainable heat supply | Densify and expand the district heating network and investigate potential regional interconnections. | Technology/infrastructure | continuously | Shift to district heating in single-family houses | Gävle energy company | Continuous expansion of district heating | Reduced electricity use for heating or other sources of heating  |
-|   | Action name | Description | Systemic levers | Implementation | Concerns Transition Element/target | Stakeholders/stakeholder engagement | Early outcome | Late outcome  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Under investigation | Energy performance, requirements for district heating as a heating option | Investigate the possibility of imposing requirements on the choice of heating system for new construction and possible renovations in properties not owned by the Gävle Municipality Group. Requirement for district heating in new construction if possible. | Technology/ infrastructure | n.d | Heating single-family residential buildings with renewable solid biofuels, Heat pumps in single-family residential buildings, Shift to district heating in single-family houses, Heating of commercial buildings with renewable solid biofuels, Heat pumps in commercial buildings, Shift to district heating in commercial buildings | Gävle energy company Strategic urban planning department | Continuous expansion of district heating | Reduced electricity use for heating or other sources of heating  |
 |   |  Requirements for machinery | To impose requirements for reducing climate impact in construction work. | Organisational | 2024 | Electrification of mobile machinery | Urban development department Municipal companies Market dialogue | Requirements are developed and tested | All machinery is subject to the requirements  |
 |  Under investigation | Calculate the climate impact of all new construction projects | The choice of materials for new construction and refurbishment | Organisational | For some of the materials 2023 | Electrification of mobile machinery, | Strategic urban planning department Urban development department | materials are being calculated | Choices are based on life cycle assessment  |
-|   | Action name | Description | Systemic levers | Implementation | Concerns Transition Element/target | Stakeholders/stakeholder engagement | Early outcome | Late outcome  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |   | and aim for climate-neutral buildings by 2035. | should be based on life cycle analysis. |  |  | Reduce carbon footprint from construction | IVL Swedish Environmental Research Institute |  |   |
 |   |  Gävle municipality builds and sets requirements for passive houses. | Requirements are based on operational energy but should be supplemented with calculations for construction. | Organisational | n.d | Electrification of mobile machinery, Reduce carbon footprint from construction | Municipal housing and real estate companies | The Municipal housing company builds its first passive. (due to economic downfall no projects will start in the coming years) | More passive houses are built  |
 |   |  Reuse of construction materials and plan for future dismantling and reuse | Investigate increased use of reused building materials after renovation or demolition. | Technology/ infrastructure | 2024-2025 | Reduce carbon footprint from construction | Municipal housing and real estate companies
@@ -803,8 +775,6 @@ Table 11. Transition element for energy systems.
 |  Increased proportion of solar power | The percentage of Gävle Municipality's electricity consumption should be produced from solar cells by the year 2035. | 10% * | Not evaluated | Air quality Economy  |
 |  Locally produced biogas | The percentage of the sale of locally produced biogas for fuel has increased from 2020 to 2025 | 35% * | Not evaluated | Air quality Economy  |
 |  Increased proportion of wind power | No indicator has been set | - | Not evaluated | Air quality  |
-|  Field of actions: Transition Element | Indicator | Target Potential | Direct impacts (emission reductions compared to business-as-usual year 2030) | Co-benefits  |
-| --- | --- | --- | --- | --- |
 |  Increased production of district heating | No indicator has been set | - | Not evaluated | Air quality Economy  |
 
 * Not a transition target in Climate View. This target is set internal.
@@ -817,7 +787,7 @@ Table 12. Actions for energy systems.
 |   | Action name | Description | Systemic levers | Implementation | Concerns Transition Element | Stakeholders /stakeholder engagement | Early outcome | Late outcome  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Decided | Investigate solar panel park or rooftop panels to reach 10% goal. | Investigate the possibility of building a solar panel park together within the companies Gävle Energi and Gavlegårdarna. This is done within the framework of the work related to the Law on Energy Mapping in Large Enterprises (EKL) that GEAB must adhere to. | Technology/ infrastructure | 2024 | Increased proportion of solar power | Gävle housing and real estate companies
-Gävle energy company | Investment plan is developed | 10% goal is reached  |
+| Gävle energy company | Investment plan is developed | 10% goal is reached  |
 |   |  Creating conditions for new energy solutions in urban planning | Collaboration in early planning processes with Energy company and university | Technology/ infrastructure | 2021 | Increased proportion of solar power | Strategic urban planning department
 Gävle housing and real estate companies
 Gävle energy company
@@ -837,10 +807,8 @@ consultation with citizens | Pilot studies to determine how energy issues should
 |   | Increased biogas production | Investigate the possibility of expanding biogas production at the Ekogas facility in Forsbacka through facility expansion | Democracy/ participation Technology/ infrastructure | n.d | Locally produced biogas | Gästrike Ekogas The five municipalities who owns Gästrike ekogas | Feasibility studies conducted | A decision is made to build a second gas bell  |
 |   | Losses in the electricity grid | Reduce losses in the transmission of electricity in the grid. Some examples include the design and sizing of overhead lines, underground cables, and transformers, reactive power levels, operational changes, and the location of production facilities. | Technology/ infrastructure | ongoing | Adequate Capacity in Power Grids | Gävle energy company | Long term plan for reduction of losses | Investments are continually made in the grid to reduce losses in the transmission.  |
 |   | Resilience in the electricity grid | Gävle Energi annually establishes a risk and vulnerability analysis as well as an action plan for the security of supply in the electricity grid. Based on all the risks that need to be addressed within 8 years, an action plan is then created. This work is carried out because society is heavily dependent on a reliable electricity grid. | Democracy/ participation | ongoing | Adequate Capacity in Power Grids | Gävle energy company | Established risk and vulnerability analysis and action plan | Action plan executed  |
-|   | Action name | Description | Systemic levers | Implementation | Concerns Transition Element | Stakeholders /stakeholder engagement | Early outcome | Late outcome  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |   | Develop systems | Develop a systems perspective for future energy production, distribution, and consumption. Worked into the energy plan | Governance & policy | 2024 | Adequate Capacity in Power Grids | Municipal group referral procedure with business, civil society, academia | Plan is adopted in 2024 | A working structure to execute plan is developed.  |
-|   |  Create conditions for establishment of windpower | Create planning conditions for the establishment of (offshore) wind power in the municipal. A new plan for wind power needs to develop due to changed market conditions where wind turbines hight has increased significant since the last plan. This creates conditions for more places to establish wind turbines. | Technology/ infrastructure | 2025 | Adequate Capacity in Power Grids | Strategic urban planning department Urban development department Local authority Citizens dialogue | Plan is developed together with stakeholders | A thematic supplement to the master plan for wind power is adopted  |
+|   |  Create conditions for establishment of wind power | Create planning conditions for the establishment of (offshore) wind power in the municipality. A new plan for wind power needs to develop due to changed market conditions where wind turbine height has increased significantly since the last plan. This creates conditions for more places to establish wind turbines. | Technology/ infrastructure | 2025 | Adequate Capacity in Power Grids | Strategic urban planning department Urban development department Local authority Citizens dialogue | Plan is developed together with stakeholders | A thematic supplement to the master plan for wind power is adopted  |
 |   |  Introduce requirements for the use of waste heat | Examine if it's possible to impose requirements for the use of waste heat according to the law | Governance & policy | 2025 | Adequate Capacity in Power Grids | Strategic urban planning department Gävle energy company University of Gävle | Pilot study with stakeholders | Introduce requirements if possible  |
 |   |  Development of the district heating and cooling system | The municipality continues its work to develop the district heating and cooling system in the municipality. | Technology/ infrastructure | ongoing | Adequate Capacity in Power Grids | Strategic urban planning department Gävle energy company University of Gävle | Long term plan Pilot studies | District heating and cooling continues to be feasible for heating in new and established areas.  |
 STYRNING OCH STÖD GÄVLE
@@ -916,7 +884,6 @@ replaced with reusable items, compared to
 the year 2020.
 År 2025 har hushållsavfallet minskat med
 procent jämfört med 2015.  |
-| --- | --- | --- |
 |  REDUCE TOXINS IN
 THE NATURAL
 CYCLE | No hazardous waste in residual waste
@@ -952,8 +919,6 @@ Table 14. Transition element for waste.
 |  Increased recycling | Proportion of waste going to landfill or incineration recycled year 2030. | 20% | 3 kt | Reduced littering, improved natural environments, increased economy.  |
 |  Reduced littering | Proportion of waste going to landfill or incineration recycled year 2030. | 20% | 3 kt | Reduced littering, improved natural environments, increased economy.  |
 |  Increased water supply | Proportion of waste going to landfill or incineration recycled year 2030. | 20% | 3 kt | Reduced littering, improved natural environments, increased economy.  |
-|  Field of actions: Transition Element | Indicator | Target Potential (compared to business-as-usual year 2030) | Direct impacts (emission reductions compared to business-as-usual year 2030) | Co-benefits  |
-| --- | --- | --- | --- | --- |
 |  Decreased proportion of household waste | The amount of household waste per inhabitant in Gävle Municipality (food waste, residual waste, newspapers, packaging, and bulky waste) should decrease from the year 2015 to the year 2025. * | 20% * | Not evaluated | Reduced littering, improved natural environments, increased economy.  |
 |  Decreased proportion of food waste | The total amount of food waste discarded within healthcare, elderly care, preschool, and school facilities within the Gävle Municipality group is to be reduced from the year 2020 to the year 2025. * | 15% * | Not evaluated | Reduced littering, improved natural environments, increased economy.  |
 
@@ -973,7 +938,7 @@ Urban development department
 Municipal companies
 Private companies through local CCC | Checklist requirements are tested in new exploitations. | Checklist contributes to reduced emissions from waste handling in all our exploitation projects.  |
 |   |  Environmental requirements in procurement | Create conditions for climate requirements to be specified and monitored in all procurement processes | Democracy/ participation | Continuously | Increased recycling | The municipal group
-Business dialogue | Knowledge is developed how to reduce waste through procurements | Our procurements contribute to waste reduction  |
+| Business dialogue | Knowledge is developed how to reduce waste through procurements | Our procurements contribute to waste reduction  |
 |   |  Gävle Municipality will continue to be an annual member of "Håll Sverige Rent" (Keep Sweden Tidy). | Membership in "Håll Sverige Rent" enables all target groups in the Environmental Strategic Program to participate in the annual litter-picking days and access educational materials. Gävle's preschools and schools can use the Green Flag. | Democracy/ participation
 Social innovation | Continuously | Increased recycling, decreased proportion of household waste, Decreased the amount of food waste | The municipal group
 Associations
@@ -997,7 +962,7 @@ The following table provides more specific information on what household consump
 
 ![img-0.jpeg](img-0.jpeg)
 
-There are no transition elements set for consumption and circular economy. Gävle Municipality has nevertheless developed various actions to implement to reduce climate impact, as presented below in Table X. These action are not included in the investment plan due to that the costs are insignificant.
+There are no transition elements set for consumption and circular economy. Gävle Municipality has nevertheless developed various actions to implement to reduce climate impact, as presented below in Table X. These actions are not included in the investment plan due to that the costs are insignificant.
 STYRNING OCH STÖD GÄVLE
 
 Table 16. Actions for Consumption and circular economy.
@@ -1006,16 +971,14 @@ Table 16. Actions for Consumption and circular economy.
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Decided | Create conditions for climate requirements to be set and followed up in all procurements | The municipality shall allocate personnel resources to drive this and ensure that there is competence within the procurement unit to set environmental requirements for circular economy and functional procurements | Governance & policy | n.d | - | Procurement unit Environmental Strategy Unit | Develop a requirement model for climate performance in procurement
 We set climate requirements and follow up on all prioritized procurements | We set climate requirements and follow up in all procurements  |
-|   |  Climate-smart food | Serving climate-smart food in municipal operations. | Social innovation | 2020 | - | Meal service | Introduce meal planning organization. Project to develop menus that align with the goals of the Environmental and Health Policy Program (MSP) and the food policy. Explore the possibilities of collaborating with Sodexo to encourage them to serve more climate-smart food. | Develop stringent requirements for climate-smart food ahead of new procurement or bringing meal services back into municipal operation.  |
-|  Action name | Description | Systemic levers | Implementation | Concerns Transition Element | Stakeholders/stakeholder engagement | Early outcome | Late outcome  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  Climate requirements on invested capital | Make sure that invested capital doesn't have a negative effect on climate | Finance & funding | n.d | - | Financial department Environment strategic department | Examine the invested capital available and whether it aligns with the municipality's sustainability ambitions | Implement model for climate requirements on investments, divestments  |
-|  Continue developing education for sustainable development (LHU) | The LHU aims to provide our children and students with better knowledge for sustainable societal development. To develop this knowledge, children and students should have the opportunity to act for sustainable development in real terms, in collaboration with the surrounding society, here and now. | Social innovation | 2014 | - | Education department | Continue to develop and improve our work in teaching our 17,700 pupils competences for Sustainable development. | Continue to develop and improve our work in teaching our 17,700 pupils competences for Sustainable development.  |
-|  Circular business models | In collaboration with the business sector, create conditions for circular business models in the municipality. | Democracy & participation | 2021 | - | Environmental Strategy department Strategic urban planning department Business via CCC | Explore the role the municipality can play in the development of circular business models, in collaboration with HIG (University of Gävle) and the business sector. | Initiate an investigation and develop concepts regarding a more advanced circular economy, such as a reuse gallery, and identify existing and potential pools for development  |
-|  Action name | Description | Systemic levers | Implementation | Concerns Transition Element | Stakeholders/stakeholder engagement | Early outcome | Late outcome  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  Reduce consumption-based emissions | Develop knowledge and application of methods for behaviour change. | Learning & capabilities | n.d | - | Environmental Strategy department | Identify when, where, and how the municipality can work on behaviour change to reduce consumption-based emissions | The municipality's advisory services are developed to address consumption-based emissions  |
-|  Reduce consumption-based emissions | Reduce consumption-based emissions by developing employees' ability to consider the climate perspective in their service provision, especially in their interactions with citizens and businesses. | Governance & policy | n.d | - | Municipal group | Conduct climate inventories in each operation to identify opportunities to inform/influence businesses and residents towards more climate-friendly behaviour. | Initiate the implementation of measures identified in the climate inventory  |
+Climate-smart food | Serving climate-smart food in municipal operations. | Social innovation | 2020 | - | Meal service | Introduce meal planning organization. Project to develop menus that align with the goals of the Environmental and Health Policy Program (MSP) and the food policy. Explore the possibilities of collaborating with Sodexo to encourage them to serve more climate-smart food. | Develop stringent requirements for climate-smart food ahead of new procurement or bringing meal services back into municipal operation.
+Action name | Description | Systemic levers | Implementation | Concerns Transition Element | Stakeholders/stakeholder engagement | Early outcome | Late outcome
+Climate requirements on invested capital | Make sure that invested capital doesn't have a negative effect on climate | Finance & funding | n.d | - | Financial department Environment strategic department | Examine the invested capital available and whether it aligns with the municipality's sustainability ambitions | Implement model for climate requirements on investments, divestments
+Continue developing education for sustainable development (LHU) | The LHU aims to provide our children and students with better knowledge for sustainable societal development. To develop this knowledge, children and students should have the opportunity to act for sustainable development in real terms, in collaboration with the surrounding society, here and now. | Social innovation | 2014 | - | Education department | Continue to develop and improve our work in teaching our 17,700 pupils competences for Sustainable development. | Continue to develop and improve our work in teaching our 17,700 pupils competences for Sustainable development.
+Circular business models | In collaboration with the business sector, create conditions for circular business models in the municipality. | Democracy & participation | 2021 | - | Environmental Strategy department Strategic urban planning department Business via CCC | Explore the role the municipality can play in the development of circular business models, in collaboration with HIG (University of Gävle) and the business sector. | Initiate an investigation and develop concepts regarding a more advanced circular economy, such as a reuse gallery, and identify existing and potential pools for development
+Action name | Description | Systemic levers | Implementation | Concerns Transition Element | Stakeholders/stakeholder engagement | Early outcome | Late outcome
+Reduce consumption-based emissions | Develop knowledge and application of methods for behaviour change. | Learning & capabilities | n.d | - | Environmental Strategy department | Identify when, where, and how the municipality can work on behaviour change to reduce consumption-based emissions | The municipality's advisory services are developed to address consumption-based emissions
+Reduce consumption-based emissions | Reduce consumption-based emissions by developing employees' ability to consider the climate perspective in their service provision, especially in their interactions with citizens and businesses. | Governance & policy | n.d | - | Municipal group | Conduct climate inventories in each operation to identify opportunities to inform/influence businesses and residents towards more climate-friendly behaviour. | Initiate the implementation of measures identified in the climate inventory
 STYRNING OCH STÖD GÄVLE
 
 ## Procurement
@@ -1281,15 +1244,15 @@ The table below enlists the signatories¹ who are committing to this CCC, and th
 |  Byggkonstruktören AB | Construction / Regional | Corporation | Hasse Hemlin | CEO  |
 |   |   |   |  Dijar Ismail | Project manager
 Construction  |
-|  Knowit Gävleborg AB | Consulting, digitisation / IT / Europe | Corporation | Hans Reinikainen | CEO  |
-|  Gävle Hamn AB | Logistics, harbour / Transportation / Local | Corporation, owned by Gävle municipality | Fredrik Svanbom | CEO  |
-|   |   |   |  Linda Astner | Head of Sustainability  |
-|   |   |   |  Elin Frisk | Environmental specialist  |
-|  Sh bygg, sten och anläggning AB | Construction / Regional | Corporation | Dalia Ramzi | CEO  |
-|   |   |   |  Jens Malm | Contracting Manager  |
-|   |   |   |  Magnus Lohe | Project manager  |
-|  SEB | Bank / Finance / Northern Europe | Bank corporation | Josefin Lindström | Office manager  |
-|  Arkitektgruppen i Gävle AB |  | Corporation | Christin Carlsson | Office manager  |
+Knowit Gävleborg AB | Consulting, digitisation / IT / Europe | Corporation | Hans Reinikainen | CEO
+Gävle Hamn AB | Logistics, harbour / Transportation / Local | Corporation, owned by Gävle municipality | Fredrik Svanbom | CEO
+Linda Astner | Head of Sustainability
+Elin Frisk | Environmental specialist
+Sh bygg, sten och anläggning AB | Construction / Regional | Corporation | Dalia Ramzi | CEO
+Jens Malm | Contracting Manager
+Magnus Lohe | Project manager
+SEB | Bank / Finance / Northern Europe | Bank corporation | Josefin Lindström | Office manager
+Arkitektgruppen i Gävle AB | Corporation | Christin Carlsson | Office manager
 
 ¹ Climate City Contract signatories may be individuals or organisations. They ideally include national and/or regional governments, for example concrete agreements/ commitments made through the multi-level governance engagement processes supported by NetZeroCities, CapaCities, and other emerging national level initiatives.
 
@@ -1304,7 +1267,7 @@ C
 | --- | --- | --- | --- | --- |
 |   |   |   |  Felicia Minicz | Architect  |
 |  Gavlefastigheter | Properties & buildings / Local | Corporation, owned by Gävle municipality | Per-Arne Vahlund | CEO  |
-|   |   |   |  Lina Bornegrim | Dep.manager Property Development  |
+|   |   |   |  Lina Bornegrim | Dep. manager Property Development  |
 |   |   |   |  Sanna Jägbrant | Environmental coordinator  |
 |  Gävle parkeringsservice | Parking facilities / Transportation / Local | Corporation, owned by Gävle municipality | Stephan Carlbaum Jonsson | CEO  |
 |   |   |   |  Maria Stikå | Business developer  |
@@ -1347,7 +1310,7 @@ Climate-Neutrality Commitments
 |   |   |   |  Clara Bergel Jansson | Vice-chairman  |
 |   |   |   |  Jenny Lundberg Fröjd | Organisation developer  |
 |  Länsstyrelsen Gävleborg | Governmental authority/ Regional | State-owned | Per Bill | Governor  |
-|   |   |   |  Christoffer Carstens | Dep.manager Sustainable Development  |
+|   |   |   |  Christoffer Carstens | Dep. manager Sustainable Development  |
 |   |   |   |  Karin Perman | Coordinator energy & climate  |
 Gävle
 

@@ -206,10 +206,6 @@ Module A-1 "Greenhouse Gas Emissions Baseline Inventory" should detail and descr
 |  Base year | 2019  |   |   |   |
 |  Unit | MWh/year  |   |   |   |
 |   | Scope 1 | Scope 2 | Scope 3 | Total  |
-Heidelberg
-Climate Neutrality Action Plan
-O
-
 |  Buildings | 767.219 | 1.388.341 | - | 2.155.559  |
 | --- | --- | --- | --- | --- |
 |  Electricity | - | 649.959 | - | 649.959  |
@@ -267,12 +263,6 @@ For the year 2030 0.270 t CO2 equivalent per MWh final energy is assumed (https:
 |  Waste |  |  |   |
 |  Collected waste within city boundaries (tonnes) |  |  | 71.000  |
 |  Other |  |  |   |
-Heidelberg
-
-Climate Neutrality Action Plan
-
-2
-
 |  A-1.4b: GHG emissions by source sector (from economic model inputs)  |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- |
 |  Base year | 2019  |   |   |   |   |
@@ -359,80 +349,19 @@ Module A-2 "Current Policies and Strategies" should list relevant policies, stra
 |  Type | Level | Name & Title | Description | Relevance | Need for action  |
 |  (regulation/policy/strategy/action plan) | (Local, regional, national, EU) | (Name of policy/strategy/plans) | (Description of policy/strategy/plans) | (Describe relevance/impact on climate neutrality ambition) | (List any suggested action in relation – to be further picked in Module C-1)  |
 |  law | Regional | Climate Protection Act Baden-Württemberg | Cities with more than 100,000 inhabitants are obliged to submit the first municipal heating plan by 31.12.2023 and to update it regularly. | The heating plan forms the basis for the climate-neutral heating supply of a city. The focus is on phasing out fossil fuels. | Expansion of the district heating network, increase in the share of green district heating, network densification  |
-|  law | Regional | Climate Protection Act Baden-Württemberg | Municipalities are obliged to enter the energy consumption data of their properties in a central database. | Energy controlling, is the basis for prioritising refurbishments | Establishment of an energy controlling system  |
-|  Action plan | local | Climate Protection Action Plan | At the municipal council meeting on 9 May 2019, Mayor Lord Mayor Prof. Dr. Eckart Würzner declared the climate emergency for Heidelberg. In doing so, he | These 30 measures in conjunction with the strategies of the strategies of the "100 % Climate Protection Master Plan", Heidelberg should Heidelberg should achieve its climate | Participation of the entire urban society  |
-Heidelberg
-Climate Neutrality Action Plan
-7
-
-|   |  |  | emphasised the necessity and urgency of committed and concrete action to limit the climate crisis. action to limit the climate crisis. As a result, discussions were held within the administration and with with key social and economic actors in a climate action and economic key players in a climate action group, how climate protection in Heidelberg can be advanced more quickly and ambitiously. At the same time, the municipal council adopted a The 30-point plan, the Climate Action Plan, contains the targets, priorities for action and concrete measures that have been collected since the declaration of the climate emergency. | neutrality goals more quickly.  |
-| --- | --- | --- | --- | --- |
-8
-
-Heidelberg
-
-Climate Neutrality Action Plan
-
-|   |  |  | since the declaration of the climate emergency, as well as from the ranks of the Heidelberg City Council. |  |   |
-| --- | --- | --- | --- | --- | --- |
-|  law | national | Climate Protection Act Germany | Germany is to be greenhouse gas neutral by 2045. | Target is too unambitious compared to the EU mission's goal | Are defined in the accompanying climate protection programme. Laws must now be drafted and adopted  |
-|  law | nationalnational | wind on land law | The law enables the accelerated expansion of wind energy | Expansion of renewable energies | By the end of 2032, 2% of the federal territory must be designated for wind energy.  |
-|  law | nationalnational | Renewable Energies Act |  | the share of renewable energies in gross electricity consumption is to increase to at least 80 percent by 2030. |   |
-|  law | regional | Climate Protection Act Baden-Württemberg | PV obligation for new buildings and roof renovations | Accelerated expansion of renewable energies | PV Obligation Ordinance  |
-|   | regional | Targets for transport turnaround by 2030 in Baden-Württemberg | By 2030, transport should produce significantly less CO2. To achieve this, the Ministry of Transport has set concrete targets. | In concrete terms, the targets should make it possible to reduce emissions in the transport sector by at least 55 percent by 2030 compared to 1990. | By 2030  |
-|   | regional Voluntary | Climate Mobility Plan | Climate mobility |  | Plan für Heidelberg  |
-Heidelberg
-
-Climate Neutrality Action Plan
-
-9
-
-|   | instrument of the Baden-Württemberg Climate Protection Act |  | plans define specific projects in the mobility sector at the municipal level to achieve a lasting and significant reduction in greenhouse gas emissions. The measures defined in these plans must be the responsibility of the municipality or coordinated with the other public authorities involved. The measures, which must also take into account the mobility needs of the population and the economy and be oriented toward the goals of regional planning. |  | ist gerade in der Bearbeitung  |
-| --- | --- | --- | --- | --- | --- |
-|  Strategy | Regional | Modell Räumliche Ordnung Model Spatial order 2035+ model of special order (MRO) | The MRO is the spatial strategy for Heidelberg and aims to develop a model for urban development that coordinates the various usage requirements in the | The MRO is being developed by the City Planning Office with the support of planners from landscape architecture and urban planning as well as other specialized offices of the | In particular, the chapters on climate and mobility are relevant for EU mission. The previous concept from 1999 is currently being  |
-Heidelberg
-
-Climate Neutrality Action Plan
-
-0
-
-|   |  |  | urban space in such a way as to ensure sustainable and resource-saving settlement development. | City of Heidelberg. The interdependencies are shown, which are of importance for spatial development due to population growth, new mobility needs and climate change, among others. | updated with the participation of the citizens, among other things because of the population development. The aspects and goals of climate neutrality will be included in the update.  |
-| --- | --- | --- | --- | --- | --- |
+|  law | Regional | Climate Protection Act Baden-Württemberg | Municipalities are obliged to enter the energy consumption data of their properties in a central database. | Energy controlling is the basis for prioritising refurbishments. | Establishment of an energy controlling system  |
+|  Action plan | Local | Climate Protection Action Plan | At the municipal council meeting on 9 May 2019, Lord Mayor Prof. Dr. Eckart Würzner declared the climate emergency for Heidelberg. He emphasised the necessity and urgency of committed and concrete action to limit the climate crisis. As a result, discussions were held within the administration and with key social and economic actors in a climate action group on how climate protection in Heidelberg can be advanced more quickly and ambitiously. At the same time, the municipal council adopted the 30-point Climate Action Plan with targets, priorities for action and concrete measures collected since the declaration of the climate emergency and from the Heidelberg City Council. | These 30 measures in conjunction with the strategies of the "100 % Climate Protection Master Plan" should help Heidelberg achieve its climate neutrality goals more quickly. | Participation of the entire urban society  |
+|  law | National | Climate Protection Act Germany | Germany is to be greenhouse gas neutral by 2045. | Target is too unambitious compared to the EU mission's goal. | Measures are defined in the accompanying climate protection programme. Laws must now be drafted and adopted.  |
+|  law | National | Wind on Land Law | The law enables the accelerated expansion of wind energy. | Expansion of renewable energies. | By the end of 2032, 2% of the federal territory must be designated for wind energy.  |
+|  law | National | Renewable Energies Act | The share of renewable energies in gross electricity consumption is to increase to at least 80 percent by 2030. | Expansion of renewable energies. |   |
+|  law | Regional | Climate Protection Act Baden-Württemberg | PV obligation for new buildings and roof renovations. | Accelerated expansion of renewable energies. | PV Obligation Ordinance  |
+|  strategy | Regional | Targets for transport turnaround by 2030 in Baden-Württemberg | By 2030, transport should produce significantly less CO2. To achieve this, the Ministry of Transport has set concrete targets. | In concrete terms, the targets should make it possible to reduce emissions in the transport sector by at least 55 percent by 2030 compared to 1990. | By 2030  |
+|  strategy | Regional (voluntary) | Climate Mobility Plan | Climate mobility instrument of the Baden-Württemberg Climate Protection Act. The plans define specific projects in the mobility sector at the municipal level to achieve a lasting and significant reduction in greenhouse gas emissions. The measures defined in these plans must be the responsibility of the municipality or coordinated with other public authorities involved and account for the mobility needs of the population and the economy while aligning with regional planning goals. |   | Plan für Heidelberg (ist gerade in der Bearbeitung)  |
+|  Strategy | Regional | Modell Räumliche Ordnung (MRO) / Model Spatial Order 2035+ | The MRO is the spatial strategy for Heidelberg and aims to develop a model for urban development that coordinates the various usage requirements in the urban space to ensure sustainable and resource-saving settlement development. | The MRO is being developed by the City Planning Office with support from landscape architecture and urban planning planners as well as other specialized offices of the City of Heidelberg. Interdependencies relevant to spatial development due to population growth, new mobility needs and climate change are being considered. | In particular, the chapters on climate and mobility are relevant for the EU mission. The previous concept from 1999 is currently being updated with citizen participation, and climate neutrality goals will be included in the update.  |
 |  Strategy | Local | Stadtentwicklungskonzept – city development concept (STEK) | The Urban Development Concept (STEK) sees itself as a guide for the sustainable development of Heidelberg up to the year 2035. In the STEK, the goals of urban development are worked out together with the urban community and their implementation is initiated. | The central point is to keep all topics of urban development in view. Thus, the STEK pays particular attention to considering ecological, social and economic developments in equal measure and to thinking about the diverse topics together. | In the update of the STEK, the concerns of climate protection and climate change adaptation were included and integratively linked with all other fields of action. Finalization will take place in 2023 and adoption by the municipal council in 2024.  |
-|  Strategy/action plan | local | Biodiversity Strategie - | In 2019, the objectives and measures of the strategy were developed in seven key points with municipal offices, nature conservation | Healthy and resilient ecosystems are essential to our well-being because they provide food, clean water, protection from natural disasters, and are carbon sinks. | The Climate Protection Action Plan and the Climate Neutrality Concept include the planting of CO2-absorbing trees as important  |
-Heidelberg
-
-Climate Neutrality Action Plan
-
-1
-
-|   |  |  | associations and other institutions. The Heidelberg City Council unanimously adopted the goals and measures of the Heidelberg Biodiversity Strategy on Thursday, March 18, 2021. Financing for the individual building blocks is to be generated primarily through funding from the state, the federal government and calls for tenders as part of nature conservation projects. In this way, the city joins many other municipalities in supporting the goals of the federal government's national biodiversity strategy and the nature conservation strategy of the state of Baden-Württemberg. The city's goal is to permanently preserve and promote species and habitats. The | The crises in climate protection and biodiversity (also known as the twin crisis) are among the major challenges for preserving the Earth as a habitat. They must be thought of together. | measures. Likewise, the preservation of green belts and fresh air corridors as well as open spaces as climate change adaptation measures.  |
-| --- | --- | --- | --- | --- | --- |
-Heidelberg
-Climate Neutrality Action Plan
-2
-
-|   |  |  | implementation of the biodiversity strategy will extend over at least the next 20 years. |  |   |
-| --- | --- | --- | --- | --- | --- |
-|  policy | Regional and national | Deutscher Städtetag und Städtag Baden-Württemberg | The German Association of Cities is the largest association of municipalities in Germany. It represents the interests of all independent cities and most cities belonging to a district. It brings together over 5,700 cities and municipalities with a total of 51 million inhabitants.
-
-The Association of Cities of Baden-Württemberg is a municipal state association based in Stuttgart[1], to which 198 cities of the state of Baden-Württemberg with a total of about 6.6 million inhabitants belong. | Representatives of the city of Heidelberg (mayor, deputy mayor) are represented on the board and the environmental committees of the German Association of Cities and the Association of Cities in Baden-Württemberg. As a result, Heidelberg has a not inconsiderable influence on the programs of German cities and the municipalities in Baden-Württemberg. | Current climate neutrality issues are discussed at all levels in the meetings and committees. The expertise of the cities plays a major role. Active influence is exerted on environmental and climate protection policy decisions by the German and regional governments.  |
-|  Strategy | Local | Cycling strategy 2030 | The Cycling Strategy 2030 will focus on |  |   |
-Heidelberg
-Climate Neutrality Action Plan
-3
-
-|   |  |  | individual areas of action. On the basis of these individual sub-concepts, a list of concrete measures is to be drawn up after evaluation on the basis of key figures (CO2 reduction), backed up with a rough cost estimate and necessary personnel resources. These measures are then to be implemented according to the developed priority. The sub-concepts:
-
-Definition of standards and key objectives
-Cycle path network: Planning of the main and secondary axes, type of cycle routing (separate cycle path, sidewalk/cycle path, cycle lane), integration of the cycle fast connections, dimensionin |  |   |
-| --- | --- | --- | --- | --- | --- |
-Heidelberg
-Climate Neutrality Action Plan
-4
-
-|   |  |  | g of the cycle paths to meet demand, and upgrading of field paths on commuter routes, among other things (already decided by the municipal council). Bicycle parking facilities: Determine demand and define locations Interchanges between cycling and public transport: identify needs and determine locations Review and adapt signage systems Communication and public relations Plan service offerings, for example pump and repair stations, (e-bike) charging stations, drinking water taps  |
-| --- | --- | --- | --- |
+|  Strategy/action plan | Local | Biodiversity Strategie | In 2019, the objectives and measures of the strategy were developed in seven key points with municipal offices, nature conservation associations and other institutions. The Heidelberg City Council unanimously adopted the goals and measures of the Heidelberg Biodiversity Strategy on 18 March 2021. Financing for the individual building blocks is to be generated primarily through funding from the state, the federal government and calls for tenders as part of nature conservation projects. In this way, the city joins many other municipalities in supporting the goals of the federal government's national biodiversity strategy and the nature conservation strategy of the state of Baden-Württemberg. The city's goal is to permanently preserve and promote species and habitats. The implementation of the biodiversity strategy will extend over at least the next 20 years. | Healthy and resilient ecosystems are essential to well-being because they provide food, clean water, protection from natural disasters, and are carbon sinks. The crises in climate protection and biodiversity (also known as the twin crisis) are among the major challenges for preserving the Earth as a habitat and must be addressed together. | The Climate Protection Action Plan and the Climate Neutrality Concept include the planting of CO2-absorbing trees, the preservation of green belts and fresh air corridors, and open spaces as climate change adaptation measures.  |
+|  policy | Regional and national | Deutscher Städtetag und Städtetag Baden-Württemberg | The German Association of Cities is the largest association of municipalities in Germany. It represents the interests of all independent cities and most cities belonging to a district, bringing together over 5,700 cities and municipalities with a total of 51 million inhabitants. The Association of Cities of Baden-Württemberg is a municipal state association based in Stuttgart, to which 198 cities in Baden-Württemberg with a total of about 6.6 million inhabitants belong. | Representatives of the city of Heidelberg (mayor, deputy mayor) are represented on the board and environmental committees of both associations. As a result, Heidelberg has a not inconsiderable influence on programmes of German cities and municipalities in Baden-Württemberg. | Current climate neutrality issues are discussed at all levels in meetings and committees. Active influence is exerted on environmental and climate policy decisions by the German and regional governments.  |
+|  Strategy | Local | Cycling strategy 2030 | The Cycling Strategy 2030 will focus on individual areas of action. On the basis of these sub-concepts, a list of concrete measures is to be drawn up after evaluation against key figures (CO2 reduction), backed with rough cost estimates and required personnel resources. These measures are then to be implemented according to priority. Sub-concepts include: definition of standards and key objectives; cycle path network planning of main and secondary axes, cycle routing types (separate cycle path, sidewalk/cycle path, cycle lane), integration of cycle fast connections, dimensioning of cycle paths to meet demand, upgrading of field paths on commuter routes; bicycle parking facilities (determine demand and define locations); interchanges between cycling and public transport (identify needs and determine locations); review and adaptation of signage systems; communication and public relations; and service offerings such as pump and repair stations, (e-bike) charging stations, and drinking water taps. |   |   |
 
 ## A-2.2: Description &amp; assessment of policies
 
@@ -488,12 +417,6 @@ Module A-3 "Systemic Barriers and Opportunities to 2030 Climate Neutrality" shou
 |  System description | Stakeholder s involved | Network | Influence | Interes t  |
 |  Nachhaltiges Wirtschaften | ... Craftsmen unions and energy agencies | ... Several hundred enterprises are already part of the Network "Sustainable management in Small and Medium sized Enterprises". The aim of the network, which has been coordinated by the Office of Environmental Protection, Trade Supervision and Energy since 2001, is to support small and medium-sized enterprises with 5 to 250 employees in implementing an environmental management system. This includes the investigation of internal processes and optimization potentials, in particular with regard to resource consumption and disposal as well as occupational safety for the protection of employees and the environment. Questions of social sustainability, such as new forms of personnel management or corporate social responsibility are also adressed. With about 200 involved companies and around 10.000 employees this network is one of the largest sustainability networks of companies in Germany. | Business Industrials: Emissions reduction Energy Transport (Mobility) Waste Water | ... Entrep reneur ship support programmes  |
 |  HD Kreis | Regional government Academia Climate initiatives/n etworks Residents/ community groups NGO and associations Education sector | The "Heidelberg-circle climate protection and energy" has been supporting climate protection projects for years from conception to implementation. It is made up of representatives from administration, science, business, NGOs, education and experts from various disciplines in the energy industry. | Civil society Climate initiatives/networks Collaborative initiative: Emissions reduction | Collab orative initiativ e  |
-Heidelberg
-
-Climate Neutrality Action Plan
-
-8
-
 |   | Consumer Staples Energy Industrials Real Estate Utilities |  |  |   |
 | --- | --- | --- | --- | --- |
 |  Expertenrat/Klimaschutz-Aktionsgruppe | Academia Climate initiatives/networks NGO and associations Energy Financials | In the Climate Protection Advisory Board headed by the Lord Mayor key players of Heidelbergs energy and emission related institutions reflect and discuss their strategies for climate protection. These are i.a. the rector of the university, the managing directors of the municipal utilities and the student union as well as the responsible deputy mayors and scientists. At the request of the municipal council, this group was recently supplemented by other groups, e.g. Klimaentscheid Heidelberg. | Academia Climate initiatives/networks NGO and associations Energy Financials | develop and adjust climate neutrality targets  |
@@ -501,12 +424,6 @@ Climate Neutrality Action Plan
 |  Regionalmarketing | Regional government Climate initiatives/networks Consumer Discretionary | With the label "Genial Regional", regionally produced and processed products will be labelled. Regional marketing is intended to make consumers aware of regionally produced food, which results in shorter transport distances and support for local producers. The network of farmers, winegrowers and vegetable and fruit growers implemented a common trading platform, new marketing channels and ist own pick-up and delivery system. | Business Consumer Staples Climate initiatives/networks Consumer Discretionary | Food  |
 |  Bildung für nachhaltige Entwicklung | Climate initiatives/networks Residents/community groups Vulnerable population groups NGO and associations Education sector Health Care | With the program "education for sustainable development" the city of Heidelberg cooperates with kindergartens, schools, universities and sport clubs to educate people in different age groups. In the juncture it shows citizens how important responsible consumption and economical consumption of ressources is. The program includes many projects like workshops for teachers, lectures or excursions for students. | Civil society Education sector | Collaborative initiative Knowledge or data sharing  |
 |  Städtetag Baden-Württemberg |  | Representatives of the city of Heidelberg (mayor, deputy mayor) are represented on the board and the environmental committees of the German Association of Cities and the Association of Cities in Baden-Württemberg. | Policy and regulation development/ implementation Nationally Determined Contribution (NDC) | Adaptation Agriculture Ecosystem restoration  |
-Heidelberg
-
-Climate Neutrality Action Plan
-
-9
-
 |   |  | As a result, Heidelberg has a not inconsiderable influence on the programs of German cities and the municipalities in Baden-Württemberg | development/implementation Development of local/regional adaptation plans, National Adaptation Plans and/or National Adaptation Programmes of Action (NAPAs) | Emissions reduction Energy for Forestry Natural environment Public health Resilience Transport (Mobility) Waste  |
 | --- | --- | --- | --- | --- |
 |  ICLEI Include Projekt |  | In 2023 in Heidelberg, a cooperation has been set up at the district level to analyse the effects of the Rational Use of Energy funding programme on low-income households. The Framework is the ICLEI-project INCLUDE, which is financed by the Mercator Foundation. For example, opportunities for improvement in the promotion of solar balcony modules for low-income households were identified | In the municipal health conference (annual conference), all stakeholders from the climate change and health sector are networked and develop strategies for municipal implementation in the region (county). The aim is to derive strategies and measures for the cities and municipalities. For more information see the link below: https://www.rhein-neckar-kreis.de/site/Rhein-Neckar-Kreis-2016/get/params_E-1119474999/3139208/Veranstaltungs%C3%BCbersicht%202012.KGK%202023.pdf |   |
@@ -710,23 +627,11 @@ The STEK is being developed in two phases: First, the status report will be prep
 
 |  Inhalte | Analyse, Wesentliche Zukunftsthemen, Synergien und Konflikte, Handlungserfordernisse |   | Zieldefinition (Konfliktlösungen), Handlungsmöglichkeiten, Modellpro Monitoring  |
 | --- | --- | --- | --- |
-|   |  Format: STEKbriefe und Statusbericht |   | Format: Stadtentwicklungskonzept, Nachhaltig  |
-|  Beteiligung | 5 Verwaltungsrunden | Sep/Okt 2022 | - Arbeitskreis STEK 2035
-Aufsuchende Formate
-Öffentliche Veranstaltungen
-Kinder- und Jugendbeteiligung
-Onlinebeteiligung  |
-|   |  5 Workshops
-Interessensvertretungen Zivilgesellschaft
-Zufallsbürger*innen
-Verwaltung | Jan / Feb 2023  |   |
-|   |  1 Öffentliche Veranstaltung | Mär / Apr 2023  |   |
-|   |  Overview urban development concept 2035 with timeline  |   |   |
-Heidelberg
-
-Climate Neutrality Action Plan
-
-7
+|   | Format: STEKbriefe und Statusbericht |   | Format: Stadtentwicklungskonzept, Nachhaltig  |
+|  Beteiligung | 5 Verwaltungsrunden<br>- Arbeitskreis STEK 2035<br>Aufsuchende Formate<br>Öffentliche Veranstaltungen<br>Kinder- und Jugendbeteiligung<br>Onlinebeteiligung | Sep/Okt 2022 |   |
+|   | 5 Workshops<br>Interessensvertretungen Zivilgesellschaft<br>Zufallsbürger*innen<br>Verwaltung | Jan / Feb 2023 |   |
+|   | 1 Öffentliche Veranstaltung | Mär / Apr 2023 |   |
+|   | Overview urban development concept 2035 with timeline |   |   |
 
 # 4 Part B – Pathways towards Climate Neutrality by 2030
 
@@ -739,87 +644,36 @@ Module B-1 “Climate Neutrality Scenarios and Impact Pathways” should list im
 |  B-1.1: Impact Pathways  |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- |
 |  Fields of action | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions) | Indirect impacts (co-benefits)  |
-|  Energy systems | Technology infrastructure
-Energy supply heat; Power supply electricity and renewables; energy efficiency | long planning process | CO2 neutral heat and power supply | CO2 Reduction | Creation/securing of jobs  |
-|   |  | High costs |  |  |   |
-|   |  | Major construction work/ Traffic obstructions | Displacement of fossil fuels
-Expansion of renewable energies;
-Cost resilience | supply security - CO2-Reduction; | Prevention of energy poverty  |
-|   | Governance and policy (z.B. Municipal heat planning, climate protection law ; PV obligation ; energy conception) | Short-term planning start
-Data preparation
-Provision of funds and support,
-Provision of personnel | Systematic and updatable concepts | Determination of CO2 reduction potentials | Strengthening local municipal utilities and energy cooperatives  |
-|   | Social innovation (z.B. Funding programs) | incentive to implement climate protection measures more quickly, | Long-term CO2 savings | CO2 reduction | Promotion of the local economy, knowledge of the economy of innovative solutions  |
-|   | Democracy/ participation z.B. Energy properties | Information and sensitization of the population | Local value creation | CO2 reduction Reduction of final energy | Energy self-sufficiency in residential projects  |
-Heidelberg
-
-Climate Neutrality Action Plan
-
-8
-
-|   |  |  |  | consumptio n |   |
-| --- | --- | --- | --- | --- | --- |
-|   | Learning & capabilities | Energy supply with renewable energies is possible | Promoting research on new technologies ; Thinking in global contexts | Reduction of the energy consumption of fossil fuels | Climate justice ; responsibility for sustainable energy supply.  |
-|   | Finance and funding | High costs, federal, state, EU funding required | High maintenance costs | Burden on municipal budgets | Less funds for other investments  |
-|  |   |   |   |   |   |
+|  Energy systems | Technology infrastructure: energy supply heat; power supply electricity and renewables; energy efficiency | Long planning process; high costs; major construction work/traffic obstructions | CO2-neutral heat and power supply; displacement of fossil fuels; expansion of renewable energies; cost resilience | CO2 reduction; supply security | Creation/securing of jobs; prevention of energy poverty  |
+|   | Governance and policy (z.B. municipal heat planning, climate protection law, PV obligation, energy conception) | Short-term planning start; data preparation; provision of funds and support; provision of personnel | Systematic and updatable concepts | Determination of CO2 reduction potentials | Strengthening local municipal utilities and energy cooperatives  |
+|   | Social innovation (z.B. funding programs) | Incentive to implement climate protection measures more quickly | Long-term CO2 savings | CO2 reduction | Promotion of the local economy and awareness of innovative solutions  |
+|   | Democracy/participation (z.B. energy properties) | Information and sensitization of the population | Local value creation | CO2 reduction and reduction of final energy consumption | Energy self-sufficiency in residential projects  |
+|   | Learning & capabilities | Energy supply with renewable energies is possible | Promoting research on new technologies; thinking in global contexts | Reduction of fossil-fuel energy consumption | Climate justice and responsibility for sustainable energy supply  |
+|   | Finance and funding | High costs; federal, state and EU funding required | High maintenance costs | Burden on municipal budgets | Less funds for other investments  |
 |  (Apply structure above for each emission domain)  |   |   |   |   |   |
-|  Mobility & transport | Technology and Infrastructure: Expanding the environmental alliance; limiting private transport; alternative drives; city of short distances | Higher number of passengers in public transport; Reduction of parking space; High proportion of citizens on bicycles; | Increase in infrastructure (cycle paths, railways); equal distribution of transport space for all road users; increase in vehicles with alternative drive systems and expansion of the charging infrastructure. | Emissions reduction; redistribution of land in urban areas; | Health promotion; road redesign as a climate change adaptation measure; inclusive access to climate-neutral mobility.  |
-|   | Governance &policy: Parking space management; public transport pricing; traffic regulation | Shifting and avoiding traffic flows | Permanent avoidance of MIV; Reduced registration of vehicles | Emission reduction; cost fairness in transport; | Health promotion; traffic safety  |
-|   | Social Innovation : funding program | Facilitating the switch to environmental transport | Behavior change | Emissions reduction | Cost reduction with changed mobility behavior  |
-|   | Democracy /participation | Increased mobility offer | More mobility justice | Relief for households | Increased acceptance of forms of mobility ; transformation of mobility behavior.  |
-|   | Finance & funding | High funding requirement of public funds | More revenue through parking space management | Redistribution of funds for different modes of transport | Less maintenance costs for roads  |
-|   | Learning& capability | Frontrunners are required | Cities are role models for rural areas | More traffic safety, deceleration | Creation of a livable city  |
-Heidelberg
-
-Climate Neutrality Action Plan
-
-9
-
-|  Waste & circular economy | Technology/infrastructure: Waste management concept; biogas utilization; Green waste utilization; urban mining | Avoidance of resource consumption; Creating a digital material building Database | Qualitative and quantitative reduction of waste flows; Reduction of landfill and treatment areas | Making the construction industry more climate-friendly; Reduce dependence on imported raw materials Substitution of pollutants with less hazardous substances | Change in consumer behavior; transport routes of waste are reduced  |
-| --- | --- | --- | --- | --- | --- |
-|   | Governance &policy | New fee schedule | Introduction of material-saving services and efficient product service systems ; Development, production and use of resource-efficient and durable products that can be easily repaired. | Reduction of raw material consumption Cleaner Production ; Production of durable products | Awareness raising. Other composition of materials in construction  |
-|   | Social innovation | Behavioral change in consumption and construction | Establishment of new building materials/materials | Steering of consumer behavior via disposal costs/strategies | No transport of waste to third world countries  |
-|   | Democracy & participation | Waste consulting, education for sustainable development ; campaigns | Awareness | Steering of consumer behavior | Community cleaning actions  |
-|   | Finance and funding | Support the establishment of new drop-in centers such as Repair Cafe. | Promotion of a sustainable lifestyle | Waste prevention | Less littering of the environm  |
-|   | Learning & capability | Repair and Re-use Containment dre littering of the environment |  |  |   |
-|  |   |   |   |   |   |
-|  Green infrastructure & | Technology & infrastructure: | Immediate expansion of the online | Places shading | improved quality of stay | Contribution to biodiversity  |
-Heidelberg
-Climate Neutrality Action Plan
-0
-
-|  nature-based solutions | Cool map ( digital city map which identifies cool places)
-Klimakompass( bio climatical data available for the public)
-Heal project (navigation system only for heat protection)
-Blue and green infrastructure | information offering on climate-adapted behavior. |  |  | and health care  |
-| --- | --- | --- | --- | --- | --- |
-|   | Governance & policy
-Climate Protection Act (climate change adaptation) | Fulfillment of the duty to inform | Precautionary adaptation measures in urban planning and urban land use planning | Improved quality of stay | Health care  |
-|   | Social innovation | General availability of data
-All city districts are surveyed/surveyed across the board | Changed housing behavior (ventilation behavior, consideration of shading possibilities when looking for housing)) | Improved quality of living and stay | Reducing disparities in access to recreation areas.  |
-|   | Democracy &participations
-Involvement of citizens in tree care/sponsorship, development of measures | Simple measures can be quickly implemented | Unsealing and redesign of public areas with the participation of the population | Improved quality of living and s | Strengthening of local responsibility, participation in the community  |
-|   | Learning & capabilities | Simple measures such as tree planting have a quick and noticeable effect | Rethinking urban planning/architecture | Higher importance of green spaces and ventilation in the city | Involvement of schools and kindergartens in tree planting campaigns  |
-|  |   |   |   |   |   |
-|  Built environment | Technology/infrastructure
-Energy-efficient building and retrofit, Investment in renewable energies (solar energy use in buildings) | Fast realization of PV plants
-Long planning phase for new construction and renovation | Reduction of energy consumption and emissions | Improvement of energy standards in construction | Promotion of new forms of housing e.g. housing projects for community building  |
-|   | Governance & policy
-PV obligation, energy concept, | Binding specifications for energy-efficient construction | Permanent energy saving | Less energy consumption (electricity and heat) | Dissolution of renovation backlog  |
-Heidelberg
-
-Climate Neutrality Action Plan
-
-1
-
-|   | urban development contracts |  |  |  |   |
-| --- | --- | --- | --- | --- | --- |
-|   | Social innovation
-Ffunding program | Financial support for building owners and thus investment incentive | Faster increase in refurbishment rate and proportion of energy-efficient new buildings | Resource Conservation | Strengthening of local crafts  |
-|   | Democracy & participation | Involvement of the skilled trades to provide better advice to builders | Networking of the actors | Public relations and knowledge transfer | Strengthening of local crafts  |
-|   | Finance & funding
-Local Climate protection and consulting agency | Free consultation offer | Faster increase in refurbishment rate and proportion of energy-efficient new buildings | Resource Conservation | Strengthening of local crafts  |
-|   | Learning & capabilities | Best practice and benchmarking | New urban planning co | Motivation of the builders and architects | Behavioral change in the use of energy  |
+|  Mobility & transport | Technology and infrastructure: expanding the environmental alliance; limiting private transport; alternative drives; city of short distances | Higher number of passengers in public transport; reduction of parking space; high proportion of citizens on bicycles | Increase in infrastructure (cycle paths, railways); equal distribution of transport space for all road users; increase in vehicles with alternative drive systems and expansion of charging infrastructure | Emissions reduction; redistribution of land in urban areas | Health promotion; road redesign as a climate change adaptation measure; inclusive access to climate-neutral mobility  |
+|   | Governance and policy: parking space management; public transport pricing; traffic regulation | Shifting and avoiding traffic flows | Permanent avoidance of MIV; reduced registration of vehicles | Emission reduction; cost fairness in transport | Health promotion; traffic safety  |
+|   | Social innovation: funding program | Facilitating the switch to environmentally friendly transport | Behavior change | Emissions reduction | Cost reduction with changed mobility behavior  |
+|   | Democracy/participation | Increased mobility offer | More mobility justice | Relief for households | Increased acceptance of forms of mobility; transformation of mobility behavior  |
+|   | Finance and funding | High funding requirement of public funds | More revenue through parking space management | Redistribution of funds for different modes of transport | Less maintenance costs for roads  |
+|   | Learning and capability | Frontrunners are required | Cities are role models for rural areas | More traffic safety and deceleration | Creation of a livable city  |
+|  Waste & circular economy | Technology/infrastructure: waste management concept; biogas utilization; green waste utilization; urban mining | Avoidance of resource consumption; creating a digital material building database | Qualitative and quantitative reduction of waste flows; reduction of landfill and treatment areas | Making the construction industry more climate-friendly; reducing dependence on imported raw materials; substitution of pollutants with less hazardous substances | Change in consumer behavior; reduced transport routes for waste  |
+|   | Governance and policy | New fee schedule | Introduction of material-saving services and efficient product service systems; development, production and use of resource-efficient and durable products that can be easily repaired | Reduction of raw material consumption; cleaner production; production of durable products | Awareness raising; different material composition in construction  |
+|   | Social innovation | Behavioral change in consumption and construction | Establishment of new building materials | Steering consumer behavior via disposal costs/strategies | No transport of waste to third world countries  |
+|   | Democracy and participation | Waste consulting, education for sustainable development, campaigns | Awareness | Steering of consumer behavior | Community cleaning actions  |
+|   | Finance and funding | Support the establishment of new drop-in centers such as Repair Cafe | Promotion of a sustainable lifestyle | Waste prevention | Less littering of the environment  |
+|   | Learning and capability | Repair and reuse | Containment of littering |   |   |
+|  Green infrastructure & nature-based solutions | Technology and infrastructure: cool map (digital city map identifying cool places); Klimakompass (bioclimatic data available for the public); Heal project (navigation system for heat protection); blue and green infrastructure | Immediate expansion of online information offerings on climate-adapted behavior | Places with shading | Improved quality of stay | Contribution to biodiversity and health care  |
+|   | Governance and policy: Climate Protection Act (climate change adaptation) | Fulfillment of the duty to inform | Precautionary adaptation measures in urban planning and urban land-use planning | Improved quality of stay | Health care  |
+|   | Social innovation | General availability of data; all city districts are surveyed across the board | Changed housing behavior (ventilation behavior, consideration of shading possibilities when looking for housing) | Improved quality of living and stay | Reducing disparities in access to recreation areas  |
+|   | Democracy and participation | Involvement of citizens in tree care/sponsorship and development of measures | Simple measures can be quickly implemented | Unsealing and redesign of public areas with participation of the population | Improved quality of living and strengthened local responsibility/community participation  |
+|   | Learning and capabilities | Simple measures such as tree planting have a quick and noticeable effect | Rethinking urban planning/architecture | Higher importance of green spaces and ventilation in the city | Involvement of schools and kindergartens in tree planting campaigns  |
+|  Built environment | Technology/infrastructure: energy-efficient building and retrofit; investment in renewable energies (solar energy use in buildings) | Fast realization of PV plants; long planning phase for new construction and renovation | Reduction of energy consumption and emissions | Improvement of energy standards in construction | Promotion of new forms of housing, e.g. housing projects for community building  |
+|   | Governance and policy: PV obligation, energy concept, urban development contracts | Binding specifications for energy-efficient construction | Permanent energy saving | Less energy consumption (electricity and heat) | Dissolution of renovation backlog  |
+|   | Social innovation: funding program | Financial support for building owners and thus investment incentive | Faster increase in refurbishment rate and proportion of energy-efficient new buildings | Resource conservation | Strengthening of local crafts  |
+|   | Democracy and participation | Involvement of the skilled trades to provide better advice to builders | Networking of actors | Public relations and knowledge transfer | Strengthening of local crafts  |
+|   | Finance and funding: local climate protection and consulting agency | Free consultation offer | Faster increase in refurbishment rate and proportion of energy-efficient new buildings | Resource conservation | Strengthening of local crafts  |
+|   | Learning and capabilities | Best practice and benchmarking | New urban planning concepts | Motivation of builders and architects | Behavioral change in energy use  |
 
 ## B-1.2: Description of impact pathways– textual and visual elements
 
@@ -838,14 +692,6 @@ Module B-2 “Climate Neutrality Portfolio Design” should contain a project de
 |   | Conversion of heat supply to renewable energies (biomass, environmental heat, waste heat, deep geothermal energy) | Contribution to climate-neutral heat supply  |
 |   | Testing us exploitation of the geothermal potential | Expansion of renewable energies,  |
 |   |  | Expansion of renewable energies to increase the share of green district heating  |
-Heidelberg
-
-Climate Neutrality Action
-
-Plan
-
-2
-
 |   | Abwärmenutzung aus Müllverbrennung und Identifizierung weiterer Quellen aus Industrie und Gewerbe |   |
 | --- | --- | --- |
 |   | Erection of wind turbines in the Heidelberg area | Expansion of renewable energies,  |
@@ -864,21 +710,9 @@ Plan
 |  |   |   |
 |  Waste & circular economy | Participation in the InnoReduX research project | Research, development and implementation of innovative packaging solutions in online and stationary retail. Within the framework of a "real laboratory", a practical implementation of packaging solutions in retail was developed with stakeholders. The project was funded by the German Federal Ministry of Education and Research (BMBF) under the research priority "Plastics in the environment - sources, sinks, solutions".  |
 |   | Development of a concept for the reduction of packaging in the retail sector |   |
-|   | Fermentation | The existing biowaste composting plant in Heidelberg already recycles biowaste from the cities of Mannheim and Heidelberg. In the future, the plant is to be expanded to include a fermentation stage for  |
-Heidelberg
-
-Climate Neutrality Action
-
-Plan
-
-3
-
-|   |  | additional energy recovery from the biowaste, and a "biowaste utilization" special-purpose association is to be founded jointly with the city of Mannheim. The biogas obtained in a fermentation process will be used in a combined heat and power plant to produce electricity and heat. This high-quality utilization of biowaste improves the energy balance and CO2 emissions  |
-| --- | --- | --- |
+|   | Fermentation | The existing biowaste composting plant in Heidelberg already recycles biowaste from the cities of Mannheim and Heidelberg. In the future, the plant is to be expanded to include a fermentation stage for additional energy recovery from the biowaste, and a "biowaste utilization" special-purpose association is to be founded jointly with the city of Mannheim. The biogas obtained in a fermentation process will be used in a combined heat and power plant to produce electricity and heat. This high-quality utilization of biowaste improves the energy balance and CO2 emissions.  |
 |   | Digitalisierung | Introduction of the electronic file, goal paperless office. Digitalisation of complaints management. Digitalisation of all orders to the garbage crews. Online portals. Permanent offer of home office to reduce investments, resources and travel, appointments only in hybrid. Introduction of an employee app for all corporate communications. Fee notices, waste calendar online in the future.  |
-|  Green infrastructure & nature-based solutions | creation of pocket parks | Small parks and horticulturally designed green spaces
-Diversity of green spaces
-Improvement of the quality of stay in summer  |
+|  Green infrastructure & nature-based solutions | creation of pocket parks | Small parks and horticulturally designed green spaces<br>Diversity of green spaces<br>Improvement of the quality of stay in summer  |
 |   | Shading in public space | Trees, shrubs or canopy  |
 |   | Shading of parking spaces | Trees, shrubs or canopy  |
 |   | Shading of buildings | Facade greening, trees, structural measures  |
@@ -900,18 +734,7 @@ Improvement of the quality of stay in summer  |
 |   | Tenant energy consulting | Consulting, contribution to climate justice  |
 |   | Rational use of energy" support program | Incentive for energy refurbishment with high ENergy standards  |
 |   | New construction quarters become plus-energy quarters | Energy concepts with high energy standards  |
-5
-
-Heidelberg
-
-Climate Neutrality Action
-
-Plan
-
-#
-
 |   | Promotion of a craft initiative | Craftsmen can thus implement higher energy standards in their consulting services  |
-| --- | --- | --- |
 |   | Promotion of area- and resource-saving construction | Increase energy efficiency  |
 |   | Cost-saving building refurbishment through serial refurbishment | Increases the speed of remediation and reduces costs  |
 |   | Neighborhood concepts | Development of measures within a neighborhood  |
@@ -949,14 +772,6 @@ B-2.2: Individual action outlines
 |  Reference to impact pathway | Field of action | Energy Systems  |
 |   |  Systemic lever | Technology /infrastructure  |
 |   |  Outcome (according to module B-1.1) | Implementation of a CO2 neutral heat supply  |
-5
-
-Heidelberg
-
-Climate Neutrality Action Plan
-
-#
-
 |  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
 |  (Fill out one sheet per intervention/project)  |   |   |
@@ -982,12 +797,6 @@ Climate Neutrality Action Plan
 |   |  Action description | Deep geothermal energy contributes to green district heating  |
 |  Reference to impact pathway | Field of action | Energy Systems  |
 |   |  Systemic lever | Technology and infrastructure  |
-Heidelberg
-
-Climate Neutrality Action Plan
-
-6
-
 |   | Outcome (according to module B-1.1) | Local value creation  |
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | GeoHardt, EnBW, Mannheim VV  |
@@ -1015,16 +824,6 @@ Climate Neutrality Action Plan
 |   |  Removed/substituted energy, volume, or fuel type |   |
 |   |  GHG emissions reduction estimate (total) per emission source sector | Heidelberg heat st 51.3 percent CO2-free and consists of 27.5 percent renewable energies  |
 |   |  Total costs and costs by CO2e unit |   |
-3
-
-Heidelberg
-
-Climate Neutrality Action
-
-Plan
-
-#
-
 |  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
 |  (Fill out one sheet per intervention/project)  |   |   |
@@ -1042,12 +841,6 @@ Plan
 |   |  Removed/substituted energy, volume, or fuel type | Renewable electricity, improves the emission factor for electricity  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | a wind turbine with 7 MW capacity and 2200 full load hours can produce 15.400 MWh of electricity.  |
 |   |  Total costs and costs by CO2e unit |   |
-Heidelberg
-
-Climate Neutrality Action Plan
-
-8
-
 |  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
 |  (Fill out one sheet per intervention/project)  |   |   |
@@ -1163,12 +956,6 @@ Climate Neutrality Action Plan
 |   |  Involved stakeholders | Car sharing providers  |
 |   |  Comments on implementation |   |
 |  Impact & cost | Generated renewable energy (if applicable) |   |
-Heidelberg
-
-Climate Neutrality Action Plan
-
-1
-
 |   | Removed/substituted energy, volume, or fuel type | Reduction of trips with combustion engine,  |
 | --- | --- | --- |
 |   |  GHG emissions reduction estimate (total) per emission source sector |   |
@@ -1207,12 +994,6 @@ Climate Neutrality Action Plan
 |   |  Action scale & addressed entities | All road users  |
 |   |  Involved stakeholders | All planning levels  |
 |   |  Comments on implementation | Continuous but protracted  |
-Heidelberg
-
-Climate Neutrality Action Plan
-
-2
-
 | B-2.2: Individual action outlines |
 | --- |
 | (Fill out one sheet per intervention/project) |
@@ -1236,12 +1017,6 @@ Climate Neutrality Action Plan
 |  Action outline | Action name | Fermentation  |
 |   |  Action type | Waste and circular economy  |
 |   |  Action description | The existing biowaste composting plant in Heidelberg already recycles biowaste from the cities of Mannheim and Heidelberg. In the future, the plant is to be expanded to include a fermentation stage for additional energy recovery from the biowaste, and a "biowaste utilization" special-purpose association is to be  |
-Heidelberg
-
-Climate Neutrality Action Plan
-
-3
-
 |   |  | founded jointly with the city of Mannheim. The biogas obtained in a fermentation process will be used in a combined heat and power plant to produce electricity and heat. This high-quality utilization of biowaste improves the energy balance and CO2 emissions.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Waste and circular economy  |
@@ -1439,12 +1214,6 @@ Climate Neutrality Action Plan
 |   |  Removed/substituted energy, volume, or fuel type |   |
 |   |  GHG emissions reduction estimate (total) per emission source sector |   |
 |   |  Total costs and costs by CO2e unit |   |
-Heidelberg
-
-Climate Neutrality Action Plan
-
-8
-
 |  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
 |  (Fill out one sheet per intervention/project)  |   |   |
@@ -1482,12 +1251,6 @@ Climate Neutrality Action Plan
 |  B-2.2: Individual action outlines  |
 | --- |
 |  (Fill out one sheet per intervention/project)  |
-Heidelberg
-
-Climate Neutrality Action Plan
-
-9
-
 |  Action outline | Action name | Replanting concept  |
 | --- | --- | --- |
 |   |  Action type | Adaptation  |
@@ -1525,12 +1288,6 @@ Climate Neutrality Action Plan
 |  (Fill out one sheet per intervention/project)  |   |   |
 |  Action outline | Action name | Optimization of building orientation and density  |
 |   |  Action type | Built environment  |
-Heidelberg
-
-Climate Neutrality Action Plan
-
-0
-
 |   | Action description | Determination in development plans  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Built environment  |
@@ -1567,16 +1324,6 @@ Climate Neutrality Action Plan
 |  Action outline | Action name | Tenant energy adviceadvice  |
 |   |  Action type |   |
 |   |  Action description | Project Electricity Saving Check: The Electricity Saving Check is a free offer for  |
-3
-
-Heidelberg
-
-Climate Neutrality Action
-
-Plan
-
-#
-
 |   |  | recipients of social benefits and low incomes. Trained electricity savers visit households, replace energy guzzlers and thus reduce energy costs.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Built environment  |
@@ -1641,12 +1388,6 @@ Climate Neutrality Action Plan
 |   |  Systemic lever | learning  |
 |   |  Outcome (according to module B-1.1) | Area-wide implementation of high energy standards  |
 |  Implementation | Responsible bodies/person for implementation | Municipality  |
-Heidelberg
-
-Climate Neutrality Action Plan
-
-3
-
 |   | Action scale & addressed entities | Trades, guilds  |
 | --- | --- | --- |
 |   |  Involved stakeholders | Craftsmen, business development, climate protection agency Kliba  |
@@ -1678,12 +1419,6 @@ Climate Neutrality Action Plan
 |  Action outline | Action name | Serial refurbishment  |
 |   |  Action type |   |
 |   |  Action description | A model project for serial refurbishment is launched together with actors from the building industry. A cost-saving building refurbishment is implemented by standardized refurbishment  |
-Heidelberg
-
-Climate Neutrality Action Plan
-
-4
-
 |   |  | elements on one or more buildings of the same type.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Built environment  |
@@ -1706,12 +1441,6 @@ Climate Neutrality Action Plan
 |  Reference to impact pathway | Field of action | This is where integrated neighborhood concepts come in, which are developed and implemented to increase the energy efficiency of buildings and infrastructure, especially for heat supply. They are derived from the municipal climate protection concept of the city of Heidelberg, taking into account the municipal energy targets. Ideally, neighborhood concepts take into account all other relevant urban planning, monument preservation, building culture, housing, and social aspects to show what technical and economic energy-saving potential exists in the neighborhood and what concrete measures can be taken or standards formulated to reduce CO2 emissions in the short, medium, and long term.  |
 |   |  Systemic lever | Built environment  |
 |   |  Outcome (according to module B-1.1) | governance  |
-Heidelberg
-
-Climate Neutrality Action Plan
-
-5
-
 |  Implementation | Responsible bodies/person for implementation | Increasing energy efficiency  |
 | --- | --- | --- |
 |   |  Action scale & addressed entities | Quatier management, Kliba, city administration  |
@@ -1732,12 +1461,6 @@ Climate Neutrality Action Plan
 |   |  Outcome (according to module B-1.1) | governance  |
 |  Implementation | Responsible bodies/person for implementation | Increasing energy efficiency  |
 |   |  Action scale & addressed entities | Building law office, housing associations GGH, neighborhood management, KLiBA, environmental office  |
-Heidelberg
-
-Climate Neutrality Action Plan
-
-6
-
 |   | Involved stakeholders | Local, residents, homeowners of a neighborhood  |
 | --- | --- | --- |
 |   |  Comments on implementation | Kliiba  |
@@ -1815,10 +1538,6 @@ Module B-3 “Indicators for Monitoring, Evaluation and Learning” should conta
 |  Energy consumption reduction | Funding programme | (2) | Share of subsidised properties in new construction in m2 |  |  |  |  |   |
 |  Energy efficiency | Testing space-saving, ecological and energy-efficient housing models in new buildings | (3) | Living space per person in new buildings |  |  |  |  |   |
 |  Motivation and support of retrofitting | Achieving synergy effects: Linking climate protection, climate adaptation, health and urban development in energy-related neighbourhood concepts | (4) | Number of neighbourhood concepts per year; Inhabitants reached via neighbourhood concepts; Number of building screenings; Proportion of initial applications per inhabitant; Energy consumption per inhabitant |  |  |  |  |   |
-Heidelberg
-Climate Neutrality Action Plan
-9
-
 |  Energy consumption reduction | Make more intensive use of housing potential: Promote flexibility of use at neighbourhood level | (5) | Reduced living space per capita after consultation; Changed living situation per consultation |  |  |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |  Energy efficiency | Energy consulting | (6) | Number of consultations per institution per inhabitant |  |  |   |
@@ -1828,21 +1547,13 @@ Climate Neutrality Action Plan
 |  Raise share of renewable Energy | Expansion of photovoltaics | (10) | Share of own generation/power consumption; share of PV coverage on possible roofs |  |  |   |
 |  Rais share of renewable Energy | Green heat" - expansion of renewable energies in heat supply | (11) | Share of RE in the city's heat consumption; number of buildings converted |  |  |   |
 |  Connect and motivate local stakeholders in retrofitting | Cooperatively advancing building-specific priority topics in new construction and the renovation of old buildings | (12) | Documentation of network activities (meetings, number of participants, addressed); enquiry about satisfaction and wishes of participants (--> monitoring); approaching and developing new working groups |  |  |   |
-Heidelberg
-
-Climate Neutrality Action Plan
-
-0
-
 |  B-3.2: Indicator Metadata  |   |
 | --- | --- |
 |  (For each indicator selected – take from Comprehensive Indicator Sets)  |   |
 |  Indicator Name | (1)Share of passive houses  |
 |  Indicator Unit | m2  |
 |  Definition | Share of passive houses compared to non-passive houses m2 per unit (quarter, district, city as a whole)  |
-|  Calculation | Compared to legal standards: Saved
-Energy; Saved
-GHG; Saved energy costs  |
+|  Calculation | Compared to legal standards: Saved energy; Saved GHG; Saved energy costs  |
 |  Indicator Context |   |
 |  Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | yes  |
 |  If yes, which emission source sectors does it impact? | buildings  |
@@ -1871,14 +1582,6 @@ GHG; Saved energy costs  |
 |  Does the indicator measure indirect impacts (i.e., co- benefits)? | no  |
 |  If yes, which co-benefit does it measure? | -  |
 |  Can the indicator be used for monitoring impact pathways? | yes  |
-1
-
-Heidelberg
-
-Climate Neutrality Action Plan
-
-#
-
 |  B-3.2: Indicator Metadata  |   |
 | --- | --- |
 |  (For each indicator selected – take from Comprehensive Indicator Sets)  |   |
@@ -1905,12 +1608,6 @@ Climate Neutrality Action Plan
 | --- | --- |
 |  (For each indicator selected – take from Comprehensive Indicator Sets)  |   |
 |  Indicator Name | (4)Number of neighborhood concepts per year; Inhabitants reached via neighborhood concepts; Number of building screenings; Proportion of initial approaches/EW; Energy consumption per inhabitant  |
-Heidelberg
-
-Climate Neutrality Action Plan
-
-2
-
 |  Indicator Unit | Number of concepts, number of reached citizens or households, number of buildingscreening, number of consultations/inhabitants  |
 | --- | --- |
 |  Definition | Neighborhood concepts to increase the renovation rate  |
@@ -1945,14 +1642,6 @@ Climate Neutrality Action Plan
 |  Can the indicator be used for monitoring impact pathways? | no  |
 |  If yes, which NZC impact pathway is it relevant for? |   |
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | no  |
-3
-
-Heidelberg
-
-Climate Neutrality Action Plan
-
-#
-
 |  Data requirements |   |
 | --- | --- |
 |  Expected data source | Energy Agency, Förderanträge, Quartiersmanagement, surveys  |
@@ -1991,12 +1680,6 @@ Climate Neutrality Action Plan
 |  Definition | Subsidies for refurbishment of existing buildings  |
 |  Calculation | Number of refurbished houses/parts of buildings, number of savings achieved  |
 |  Indicator Context |   |
-Heidelberg
-
-Climate Neutrality Action Plan
-
-4
-
 |  Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | yes  |
 | --- | --- |
 |  If yes, which emission source sectors does it impact? | buildings  |
@@ -2034,12 +1717,6 @@ Climate Neutrality Action Plan
 |  References |   |
 |  Deliverables describing the indicator |   |
 |  Other indicator systems using this indicator |   |
-Heidelberg
-
-Climate Neutrality Action Plan
-
-5
-
 |  B-3.2: Indicator Metadata  |   |
 | --- | --- |
 |  (For each indicator selected – take from Comprehensive Indicator Sets)  |   |
@@ -2074,14 +1751,6 @@ Climate Neutrality Action Plan
 |  If yes, which emission source sectors does it impact? | Buildings/electricity  |
 |  Does the indicator measure indirect impacts (i.e., co- benefits)? | no  |
 |  If yes, which co-benefit does it measure? | -  |
-6
-
-Heidelberg
-
-Climate Neutrality Action Plan
-
-#
-
 |  B-3.2: Indicator Metadata  |   |
 | --- | --- |
 |  (For each indicator selected – take from Comprehensive Indicator Sets)  |   |
@@ -2109,12 +1778,6 @@ Climate Neutrality Action Plan
 |  (For each indicator selected – take from Comprehensive Indicator Sets)  |   |
 |  Indicator Name | (12Documentation of network activities  |
 |  Indicator Unit | Number  |
-Heidelberg
-
-Climate Neutrality Action Plan
-
-7
-
 |  Definition | Energy consultations with the aim of reducing energy consumption  |
 | --- | --- |
 |  Calculation | Number of meetings, number of participants, satisfaction survey (monitoring)  |
@@ -2148,12 +1811,6 @@ Module C-1 “Organisational and Governance Innovation Interventions” consists
 |  (Indicate name of intervention) | (Describe the substance of the intervention) | (Indicate responsible) | (List all stakeholder involved and affected) | (Describe how intervention enables climate neutrality) | (Indicate how intervention helps achieve impact listed  |
 |   |  |  |  |  | investigations)  |
 |   |  |  |  |  | investigations)  |
-Heidelberg
-
-Climate Neutrality Action Plan
-
-O
-
 |   |  |  |  |  | in Module B-1)  |
 | --- | --- | --- | --- | --- | --- |
 |  Climate protection as a cross-sectional task | Climate protection must have top priority in all areas of responsibility in the administration and be implemented independently | The entire city administration, municipal council. | All employees of the administration, members of the municipal council. | If climate protection is the top priority in all decisions, measures can be implemented at the required speed. | CO2 savings  |
@@ -2179,82 +1836,21 @@ Module C-2 “Social and Other Innovation Interventions” consists of a summary
 | --- | --- | --- | --- | --- | --- |
 |  Intervention name | Description | Responsible entity/ dept./ person | Involved stakeholder | Enabling impact | Co-benefits  |
 |  (Indicate name of intervention) | (Describe the substance of the intervention) | (Indicate responsible) | (List all stakeholder involved and affected) | (Describe how intervention enables climate neutrality) | (Indicate how intervention helps achieve impact listed in Module B-1)  |
-|  Mayoral action group (OB-Aktionsgruppe) | Climate protection group under the leadership of the Lord Mayor with stakeholders from science and business as well as society. | Environmental Office, Energy and Climate Protection Section | Lord Mayor and all deputy Mayors, university, municipal utility, housing associations, science (ifeu, EMBL, Max-Plank, HCE...), transportation company, Friday for Future, City departments which are important for climate neutrality | This group is the political and administrative core of the EU mission project. Here, strategies and big points are discussed and the course is set. The predecessor of this group was the Heidelberg Climate Protection & Energy Group, which accompanied the entire process of the "Masterplan 100 % Climate Protection". | Almost all of the members of this group are signatories to the Climate city contract and are multipliers for attracting other partners.  |
-|  Municipal Working Group for EU-Mission | A working group consisting of members | Office for the Environment – Energy Section | City offices out of all departments relevant to climate neutrality | Coordination of internal administrative processes, | Avoidance of conflicting goals, coordination  |
-Heidelberg
-
-Climate Neutrality Action Plan
-
-0
-
-|   | of all important offices and departments was set up to monitor the EU mission process within the administration. |  |  | joint approach | of finances and processes  |
-| --- | --- | --- | --- | --- | --- |
-|  Working group for the development of the new City Development plan (STEK) (STEK-Arbeitsgruppe) | For Heidelberg, the previous urban development plan is being completely revised and adapted to the 17 SDGs. A participation process within the administration will be supplemented by citizen participation, including with regard to climate neutrality. | Office for Urban Development and Statistics | For each of the 6 topics there was a participation process with stakeholders. A list would be too extensive. Documentation can be submitted later. | There are 6 topic areas, all of which are correlated with climate neutrality: - Climate and energy - Environment and nature conservation - Work, economy, science - Housing - Social, living together, education - Culture | Analysis of effects of climate neutrality in all fields of action of the urban society.  |
-|  Roundtable Education for sustainable development (Runder Tische BNE) | Heidelberg has a wide range of projects in the field of education for sustainable development (ESD). In order to give the multitude of actors an opportunity for direct exchange, the Heidelberg | Environmental office, Agenda section | 80 stakeholders like Kindergarten, Schools, University, college of education, enterprises, sport associations, NGOs and municipal offices | The Heidelberg ESD Network brings together the many individual institutions, initiatives and groups that are committed to sustainable development. Education for sustainable | Climate neutrality is communicated as a goal in the overall context of sustainable development and is taught from an early age as well as being considered in many social contexts.  |
-Heidelberg
-
-Climate Neutrality Action Plan
-
-1
-
-|   | network was founded under the title "Round Table ESD". |  |  | development runs like a thread through all areas of education and can be experienced at formal and informal educational venues for all age groups and includes the targets of climate neutrality. |   |
-| --- | --- | --- | --- | --- | --- |
-|  The "Network for Sustainable Management for Small and Medium-Sized Enterprises (NAWI) | The aim of the project is to provide small and medium-sized companies with 5 to 250 employees with assistance in introducing an environmental and sustainability management system. This involves examining operating processes, identifying potential for optimization - particularly in resource efficiency and occupational health and safety - and introducing | Environmental Office, Technical Environmental protection section | A commission accompanies the project under the leadership of the environmental office and acts as a jury to decide whether the companies are worthy of an award. In addition to associations (IHK, Kreishandwerkerschaft, BUND) and the Heidelberg municipal utilities, globally active companies in the region that operate certified environmental management systems in accordance with EMAS or ISO 14.001 ff (ABB-Stotz Kontakt GmbH, Henkel KGaA, ADM WILD Europe GmbH & Co. KG) are represented. | Since the project began in 2001, 146 companies with a combined workforce of around 10,800 have taken part. The most recent data collection revealed annual CO2 savings of more than 2,400 tons. This is equivalent to the amount of CO2 generated for the electricity consumption of around 840 four-person households. Operating costs were reduced by a total of 1.3 million euros per year. | Securing jobs, promoting the local economy, supporting small businesses in climate neutrality efforts, companies from this network also participate in the climate city contract.  |
-Heidelberg
-
-Climate Neutrality Action Plan
-
-2
-
-|   | new ways of working that save resources and costs. |  |  |  |   |
-| --- | --- | --- | --- | --- | --- |
-|  Energy Agency (KliBA) | The energy agency advises citizens, municipalities and companies on energy efficiency and energy saving. It is an important player in the energy transition and maintains a large network of politics, business and stakeholders. | Klimaschutz- und Energieberatungsa gentur Heidelberg Rhein-Neckar-Kreis | 28 Municipalities Chambers of Crafts, Tenants' Association, Housing Associations, Heidelberg Municipal Utilities, Junior Businessmen, NGOs | The goal is to counteract man-made global warming and to contribute to an environmentally and climate compatible, energy-efficient and sustainable world. It is therefore important to raise people's awareness of a responsible approach to nature and the environment and of climate-neutral lifestyles, to inspire them to actively protect the climate, and to motivate them to rethink their approach toward sustainability and sufficiency. | Networking of all customers and stakeholders, emission reduction on a larger and smaller scale, knowledge collection and trans  |
-|  Center for environmentally conscious mobility Bottom-up (ZUM) | Climate-neutral mobility is at the heart of ZUM's educationa I and sharing offerings. It also serves | Vereinen Allgemeiner Deutscher Fahrradclub (ADFC) Rhein-Neckar, Ökostadt Rhein-Neckar sowie dem Verkehrsclub Deutschland (VCD) | Allgemeiner Deutscher Fahrrad-Club (ADFC) Rhein-Neckar Ökostadt Rhein-Neckar | Climate change, air pollution and increasing fragmentati on of the landscape by private motorized | Creation of a central point of contact in Heidelberg where citizens, companies and institutions  |
-Heidelberg
-
-Climate Neutrality Action Plan
-
-3
-
-|   | the networking together with Ökostadt Rhein-Neckar of all NGOs in the transport sector of the environmental network. | Regionalverband Rhein-Neckar | Verkehrsclub Deutschland (VCD) Regionalverband Rhein-Neckar | transport require a rethink of mobility behavior. Yet many people do not know of any alternative to their own car or do not perceive other means of transport as a real alternative. ZUM wants to change that. | can obtain individual advice on sustainable mobility issues.  |
-| --- | --- | --- | --- | --- | --- |
-|  One World Center Bottom-up (Eine-Welt-Zentrum) | The One World Center networks initiatives that approach global issues at the local level, including climate neutrality. With educational offers, public relations work and expertise, they are an important networker of NGOs. | Eine-Welt-Zentrum Heidelberg e. V. | 49 One World groups, initiatives and organizations | Climate neutrality is communicated as part of the sustainability strategy and is taken to a wider audience in practical projects. Global connections are made clear. | Contribution to climate justice and North-South exchange.  |
-|  Top-down funding programs | Rational use of Energy Environmental friendly mobility | Office for environmental protection Office of Mobility | Energy agency Municipal utility Energy Co-operatives Transport company | Emission reduction, Reduction of fossil energy consumption, | Raising the share of renewable energy production, Just mobility,  |
-Heidelberg
-
-Climate Neutrality Action Plan
-
-4
-
-|   | hd4mobility (subsidies ticketing) |  | Enterprises in the construction and mobility sector | Support environmental friendly modes of transport | Just access to PV-energy production  |
-| --- | --- | --- | --- | --- | --- |
-|  ICLUDE-ICLEI Project | In 2023 in Heidelberg, a cooperation has been set up at the district level to analyse the effects of the Rational Use of Energy funding programme on low-income households. The Framework is the ICLEI-project INCLUDE, which is financed by the Mercator Foundation. For example, opportunities for improvement in the promotion of solar balcony modules for low-income households were identified. | Office for environmental protection – energy section
-Office for city development and statistics
-Office for social welfare and senior citizens | various municipal offices
-Housing association
-Tenants' association
-district management | Reduction of energy consumption and increase of energy efficiency. | Access to renewable energies also for low-income households  |
-|  Network genial regional | With the label "Genial Regional", regionally produced and processed products | Genial Regional Heidelberg Rhein-Neckar e. V. | farmers, winegrowers and vegetable and fruit growers | Reduction of emissions through sustainable consumption | less waste, less transport, ecological agriculture (Clean production with fewer chemical  |
-Heidelberg
-
-Climate Neutrality Action Plan
-
-5
-
-|   | will be labelled. Regional marketing is intended to make consumers aware of regionally produced food, which results in shorter transport distances and support for local producers. |  |  |  | ingredients and thus soil and water protection) Awareness and education for climate neutrality  |
-| --- | --- | --- | --- | --- | --- |
-|  Climate-neutral procurement | Instruction and training on climate-neutral procurement and event management; Organic catering and increasing vegetarian meals in public institutions | Office for Environmental protection, Agenda-office section | Office for School and Education, Children and Youth office, Pocurement section, Student services for the university dining halls | Reduction of emissions caused by procurement, especially in the food sector | Health promotion  |
-|  StromSparC heck plus | Consulting offer for socially disadvantaged households for energy savings | Welfare association Caritas | Employment agency Public utility Energy agency | Reduction of the energy consumption of the consulting households and thus emission reduction | More environmentally conscious behavior in general in the households concerned, with corresponding savings successes  |
-|  Corporate mobility management | To support companies in establishing corporate mobility management, the city of | Office of Mobility | Enterprises Transport Company | Reduction of emissions and energy consumption caused by commuter traffic | Air improvement, health promotion  |
-Heidelberg
-
-Climate Neutrality Action Plan
-
-C
-
-|   | Heidelberg has initiated a municipal funding program that contributes to climate neutrality. |  |  |  |   |
-| --- | --- | --- | --- | --- | --- |
-|  Promoting employee mobility at the City of Heidelberg | An incentive program was developed to motivate city employees to switch to buses, trains and bicycles. This includes bicycle vouchers but also making parking spaces for cars more expensive. | Operating Council | Bicycle dealer Transport company | Reduction of emissions and energy consumption caused by commuter traffic | Air improvement, health promotion  |
+|  Mayoral action group (OB-Aktionsgruppe) | Climate protection group under the leadership of the Lord Mayor with stakeholders from science and business as well as society. | Environmental Office, Energy and Climate Protection Section | Lord Mayor and all deputy mayors, university, municipal utility, housing associations, science (ifeu, EMBL, Max-Planck, HCE...), transportation company, Fridays for Future, city departments important for climate neutrality | This group is the political and administrative core of the EU mission project. Here, strategies and major points are discussed and the course is set. The predecessor of this group was the Heidelberg Climate Protection & Energy Group, which accompanied the entire process of the "Masterplan 100 % Climate Protection". | Almost all members of this group are signatories to the Climate City Contract and are multipliers for attracting other partners.  |
+|  Municipal Working Group for EU-Mission | A working group consisting of members of all important offices and departments was set up to monitor the EU mission process within the administration. | Office for the Environment - Energy Section | City offices from all departments relevant to climate neutrality | Coordination of internal administrative processes; joint approach | Avoidance of conflicting goals; coordination of finances and processes  |
+|  Working group for the development of the new City Development plan (STEK) (STEK-Arbeitsgruppe) | For Heidelberg, the previous urban development plan is being completely revised and adapted to the 17 SDGs. A participation process within the administration is supplemented by citizen participation, including with regard to climate neutrality. | Office for Urban Development and Statistics | For each of the 6 topics there was a participation process with stakeholders. A full list is extensive and can be submitted later. | There are 6 topic areas, all correlated with climate neutrality: climate and energy; environment and nature conservation; work, economy, science; housing; social, living together, education; culture. | Analysis of climate-neutrality effects across all fields of action in urban society.  |
+|  Roundtable Education for Sustainable Development (Runder Tisch BNE) | Heidelberg has a wide range of projects in the field of education for sustainable development (ESD). To give the multitude of actors an opportunity for direct exchange, the Heidelberg network was founded under the title "Round Table ESD". | Environmental Office, Agenda section | Around 80 stakeholders such as kindergartens, schools, university, college of education, enterprises, sport associations, NGOs and municipal offices | The Heidelberg ESD Network brings together many institutions, initiatives and groups committed to sustainable development. Education for sustainable development runs through all areas of education and can be experienced at formal and informal educational venues for all age groups, including climate neutrality targets. | Climate neutrality is communicated as a goal in the overall context of sustainable development and is taught from an early age while being considered in many social contexts.  |
+|  Network for Sustainable Management for Small and Medium-Sized Enterprises (NAWI) | The project supports small and medium-sized companies (5 to 250 employees) in introducing an environmental and sustainability management system. This includes examining operating processes, identifying optimization potential (especially resource efficiency and occupational health and safety), and introducing new ways of working that save resources and costs. | Environmental Office, Technical Environmental Protection section | A commission under the environmental office acts as a jury for awards. In addition to associations (IHK, Kreishandwerkerschaft, BUND) and municipal utilities, globally active companies in the region with EMAS/ISO 14001ff systems are represented. | Since 2001, 146 companies with around 10,800 employees have taken part. Recent data collection showed annual CO2 savings of more than 2,400 tons and annual operating cost reductions of about EUR 1.3 million. | Securing jobs, promoting the local economy, supporting SMEs in climate neutrality efforts; companies from this network also participate in the Climate City Contract.  |
+|  Energy Agency (KliBA) | The energy agency advises citizens, municipalities and companies on energy efficiency and energy saving. It is an important player in the energy transition and maintains a broad network in politics, business and civil society. | Klimaschutz- und Energieberatungsagentur Heidelberg Rhein-Neckar-Kreis | 28 municipalities, Chambers of Crafts, tenants' association, housing associations, municipal utilities, junior business representatives, NGOs | The goal is to counteract man-made global warming and contribute to an environmentally and climate-compatible, energy-efficient and sustainable world by raising awareness and motivating action. | Networking of customers and stakeholders, emission reduction at multiple scales, and knowledge transfer.  |
+|  Center for environmentally conscious mobility Bottom-up (ZUM) | Climate-neutral mobility is at the heart of ZUM's educational and sharing offerings. It also serves the networking of NGOs in the transport sector together with Ökostadt Rhein-Neckar. | Vereine: ADFC Rhein-Neckar, Ökostadt Rhein-Neckar, VCD Regionalverband Rhein-Neckar | ADFC Rhein-Neckar; Ökostadt Rhein-Neckar; VCD Regionalverband Rhein-Neckar | Climate change, air pollution and landscape fragmentation by private motorized transport require a rethink of mobility behavior. ZUM addresses this by making alternatives visible. | Creation of a central point of contact in Heidelberg where citizens, companies and institutions can obtain individual advice on sustainable mobility issues.  |
+|  One World Center Bottom-up (Eine-Welt-Zentrum) | The One World Center networks initiatives that approach global issues at the local level, including climate neutrality. Through educational offers, public relations work and expertise, it is an important NGO networker. | Eine-Welt-Zentrum Heidelberg e. V. | 49 One World groups, initiatives and organizations | Climate neutrality is communicated as part of the sustainability strategy and brought to a broader audience through practical projects. Global interdependencies become visible. | Contribution to climate justice and North-South exchange.  |
+|  Top-down funding programs | Rational use of energy; environmentally friendly mobility; hd4mobility (subsidies/ticketing). | Office for environmental protection; Office of mobility | Energy agency, municipal utility, energy cooperatives, transport company, enterprises in construction and mobility sectors | Emission reduction; reduction of fossil energy consumption; support for environmentally friendly transport modes | Raising the share of renewable energy production; just mobility; improved access to PV-based energy use.  |
+|  INCLUDE-ICLEI Project | In 2023 in Heidelberg, a district-level cooperation was established to analyse effects of the Rational Use of Energy funding program on low-income households. The framework is the ICLEI project INCLUDE, financed by the Mercator Foundation. Improvement opportunities were identified, e.g. for solar balcony modules for low-income households. | Office for environmental protection - energy section<br>Office for city development and statistics<br>Office for social welfare and senior citizens | Various municipal offices<br>Housing association<br>Tenants' association<br>District management | Reduction of energy consumption and increase of energy efficiency | Access to renewable energies also for low-income households  |
+|  Network genial regional | With the label "Genial Regional", regionally produced and processed products are labelled. Regional marketing aims to increase consumer awareness of regional food, resulting in shorter transport distances and support for local producers. | Genial Regional Heidelberg Rhein-Neckar e. V. | Farmers, winegrowers, vegetable and fruit growers | Reduction of emissions through sustainable consumption | Less waste, less transport, ecological agriculture (clean production with fewer chemicals and better soil/water protection), awareness and education for climate neutrality  |
+|  Climate-neutral procurement | Instruction and training on climate-neutral procurement and event management; organic catering; increased vegetarian meals in public institutions | Office for Environmental Protection, Agenda Office section | Office for School and Education, Children and Youth Office, Procurement section, student services for university dining halls | Reduction of emissions caused by procurement, especially in the food sector | Health promotion  |
+|  StromSparCheck plus | Consulting offer for socially disadvantaged households for energy savings | Welfare association Caritas | Employment agency, public utility, energy agency | Reduction of energy consumption in participating households and corresponding emission reduction | More environmentally conscious behavior in participating households with measurable cost savings  |
+|  Corporate mobility management | To support companies in establishing corporate mobility management, the city of Heidelberg has initiated a municipal funding program that contributes to climate neutrality. | Office of Mobility | Enterprises, transport company | Reduction of emissions and energy consumption caused by commuter traffic | Air quality improvement and health promotion  |
+|  Promoting employee mobility at the City of Heidelberg | An incentive program was developed to motivate city employees to switch to buses, trains and bicycles, including bicycle vouchers and higher car parking fees. | Operating Council | Bicycle dealers, transport company | Reduction of emissions and energy consumption caused by commuter traffic | Air quality improvement and health promotion  |
 
 # C-2.2: Description of social innovation interventions – textual and visual elements
 
@@ -2708,25 +2304,13 @@ Non-governmental organizations have joined forces under the leadership of the On
 
 The STEK is being developed in two phases: First, the status report will be prepared (phase 1). This is followed by the development of a catalog of objectives (phase 2). Citizens and other key stakeholders are involved in both phases, both in the preparation of the status report and in the formulation of goals for the urban development concept. The participation format was adopted by the municipal council in May 2020 and is currently being implemented.
 
-|  Inhalte | Analyse, Wesentliche Zukunftsthemen, Synergien und Konflikte, Handlungserfordernisse |   | Zieldefinition (Konfliktlösungen), Handlungsmöglichkeiten, Modellp Monitoring  |
+|  Inhalte | Analyse, Wesentliche Zukunftsthemen, Synergien und Konflikte, Handlungserfordernisse |   | Zieldefinition (Konfliktlösungen), Handlungsmöglichkeiten, Modellpro Monitoring  |
 | --- | --- | --- | --- |
-|   |  Format: STEKbriefe und Statusbericht |   | Format: Stadtentwicklungskonzept, Nachh  |
-|  Beteiligung | 5 Verwaltungsrunden | Sep/Okt 2022 | - Arbeitskreis STEK 2035
-Aufsuchende Formate
-Öffentliche Veranstaltungen
-Kinder- und Jugendbeteiligung
-Onlinebeteiligung  |
-|   |  5 Workshops
-Interessensvertretungen Zivilgesellschaft
-Zufallsbürger*innen
-Verwaltung | Jan / Feb 2023  |   |
-|   |  1 Öffentliche Veranstaltung | Mär / Apr 2023  |   |
-|   |  Overview urban development concept 2035 with timeline  |   |   |
-Heidelberg
-
-Climate-Neutrality Commitments
-
-6
+|   | Format: STEKbriefe und Statusbericht |   | Format: Stadtentwicklungskonzept, Nachhaltig  |
+|  Beteiligung | 5 Verwaltungsrunden<br>- Arbeitskreis STEK 2035<br>Aufsuchende Formate<br>Öffentliche Veranstaltungen<br>Kinder- und Jugendbeteiligung<br>Onlinebeteiligung | Sep/Okt 2022 |   |
+|   | 5 Workshops<br>Interessensvertretungen Zivilgesellschaft<br>Zufallsbürger*innen<br>Verwaltung | Jan / Feb 2023 |   |
+|   | 1 Öffentliche Veranstaltung | Mär / Apr 2023 |   |
+|   | Overview urban development concept 2035 with timeline |   |   |
 
 # 5 Signatories
 
@@ -2743,86 +2327,32 @@ Include a list of stakeholders who have committed to help your city achieve its 
 |  7. | Rhein-Neckar-Verkehr GmbH | Private Sector | Ltd. | Christian Volz | Financial management  |
 |  8. | Rockwell Collins Deutschland GmbH | Private Sector | Ltd. | Florian Adam | Team Lead Facility  |
 |  9. | Stadtmobil Rhein-Neckar AG | Private Sector | Public limited company | Miriam Caroli | Principal  |
-7
-
-Heidelberg
-
-Climate-Neutrality Commitments
-
 |  10. | Wetzel GmbH + Co.KG Garten und Landschaftsbau | Private Sector | Ltd + Co.KG | Frederick Wetzel | Managing director  |
-| --- | --- | --- | --- | --- | --- |
-|  11. | Deutsches Krebsforschungszentrum (DKFZ) | Science | public-law foundation | Ursula Weyrich
-Prof. Dr. med. Dr. h.c. Michael Baumann | Financial management
-Chairman  |
+|  11. | Deutsches Krebsforschungszentrum (DKFZ) | Science | public-law foundation | Ursula Weyrich<br>Prof. Dr. med. Dr. h.c. Michael Baumann | Financial management<br>Chairman  |
 |  12. | Ifeu – Institut für Energie- und Umweltforschung Heidelberg gGmbH | Science | gGmbH | Lothar Eisenmann | Managing director  |
 |  13. | IUWA – Institut für Umweltwirtschaftsanalysen Heidelberg e.V. | Science | Registered association (e.V.) | Sha Xia | Principal  |
 |  14. | Krankenhaus Salem / Evangelische Stadtmission Heidelberg gGmbH | Health | gGmbH | Florian Kesberger | Managing director  |
-|  15. | Rehaklinik Heidelberg-Königstuhl | Health |  | Stephan Hörl | Financial manager  |
-|  16. | Universitätsklinikum Heidelberg | Health | Institution under public law | Prof. Dr. Ingo Autenrieth
-Kathrin Erk | Chairman
-Deputy chairman  |
+|  15. | Rehaklinik Heidelberg-Königstuhl | Health |   | Stephan Hörl | Financial manager  |
+|  16. | Universitätsklinikum Heidelberg | Health | Institution under public law | Prof. Dr. Ingo Autenrieth<br>Kathrin Erk | Chairman<br>Deputy chairman  |
 |  17. | Max-Planck-Institut für Kernphysik e.V. | Science | Registered association (e.V.) | PD Dr. Günter Sparn | Representative of council  |
 |  18. | SRH Fachschulen GmbH | Science | Ltd. | Dr. Daniela Ernestus | Management business development  |
-8
-
-Heidelberg
-
-Climate-Neutrality
-
-Commitments
-
-|  19. | Technologieförderung
-Heidleberg GmbH | Science | Ltd. | Dr. André H.R. Domin | Managing director  |
-| --- | --- | --- | --- | --- | --- |
-|  20. | BUND Heidelberg e.V. | NGO | Registered association
-(e.V.) | Regina Schmidt | Chairwoman  |
-|  21. | NABU Heidleberg e.V. | NGO | Registered association
-(e.V.) | Konstanze Läufer-Wiest | Chairwoman  |
-|  22. | Ökostadt Rhein-Neckar
-e.V. | NGO | Registered association
-(e.V.) | Dr. Christina Reinl
-Sebastian Klassen | Principal
-Principal  |
-|  23. | Studierendenwerk
-Heidelberg Anstalt
-öffentlichen Rechts | Public-law institution | Public-law institution | Tanja Modrow | Managing director  |
-|  24. | Baugenossenschaft
-Familienheim Heidelberg
-eG | Housing cooperative | European Community | Holger Meid
-Karin Heil | Principal
-Principal  |
-|  25. | Bauhütte Heidelberg
-Baugenossenschaft eG | Housing cooperative | European Community | Stefanie Höhl
-Christian Grau | Principal
-General Manager  |
-|  26. | die bauwirtschaft baden-
-Württemberg e.V. | Housing cooperative | Ltd. | Wiebke Zuschlag | Managing director department
-climate protection and construction  |
-|  27. | Gesellschaft für Grund-
-und Hausbesitz mbH | Housing cooperative | Ltd. | Peter Bresinski | Managing Director  |
-|  28. | Pfälzer Katholische
-Kirchenschaffnei in
-Heidelberg | Housing cooperative | Foundation | Fred Wittmann | Principal  |
-9
-
-Heidelberg
-
-Climate-Neutrality
-
-Commitments
-
+|  19. | Technologieförderung Heidelberg GmbH | Science | Ltd. | Dr. André H.R. Domin | Managing director  |
+|  20. | BUND Heidelberg e.V. | NGO | Registered association (e.V.) | Regina Schmidt | Chairwoman  |
+|  21. | NABU Heidelberg e.V. | NGO | Registered association (e.V.) | Konstanze Läufer-Wiest | Chairwoman  |
+|  22. | Ökostadt Rhein-Neckar e.V. | NGO | Registered association (e.V.) | Dr. Christina Reinl<br>Sebastian Klassen | Principal<br>Principal  |
+|  23. | Studierendenwerk Heidelberg Anstalt öffentlichen Rechts | Public-law institution | Public-law institution | Tanja Modrow | Managing director  |
+|  24. | Baugenossenschaft Familienheim Heidelberg eG | Housing cooperative | European Community | Holger Meid<br>Karin Heil | Principal<br>Principal  |
+|  25. | Bauhütte Heidelberg Baugenossenschaft eG | Housing cooperative | European Community | Stefanie Höhl<br>Christian Grau | Principal<br>General Manager  |
+|  26. | die bauwirtschaft Baden-Württemberg e.V. | Housing cooperative | Ltd. | Wiebke Zuschlag | Managing director department climate protection and construction  |
+|  27. | Gesellschaft für Grund- und Hausbesitz mbH | Housing cooperative | Ltd. | Peter Bresinski | Managing Director  |
+|  28. | Pfälzer Katholische Kirchenschaffnei in Heidelberg | Housing cooperative | Foundation | Fred Wittmann | Principal  |
 |  29. | Heidelberger Dienste gGmbH | Municipal subsidiary company | gGmbH | Nadine Hülden | Managing director  |
-| --- | --- | --- | --- | --- | --- |
 |  30. | Heidelberger Frühling gGmbH | Municipal subsidiary company | gGmbH | Christian Eckhardt | Business manager  |
 |  31. | Heidelberg Marketing GmbH | Municipal subsidiary company | Ltd. | Mathias Schiemer | Managing director  |
-|   | Theater und Orchester Heidelberg | Municipal subsidiary company | public corporation | Holger Schultze
-Thomas Eisenträger | Director
-Administration manager  |
+|   | Theater und Orchester Heidelberg | Municipal subsidiary company | public corporation | Holger Schultze<br>Thomas Eisenträger | Director<br>Administration manager  |
 |  32. | Stadtwerke Heidelberg | Municipal subsidiary company | Ltd. | Rudolf Irmscher | Managing director  |
 |  33. | Tiergarten Heidelberg | Municipal subsidiary company | gGmbH | Thomas Pöschko | Financial manager  |
-|  34. | Heidelberger Volksbank eG | Bank | European Community | Toralf Weimer
-Christian Murr | Principal
-General manager  |
+|  34. | Heidelberger Volksbank eG | Bank | European Community | Toralf Weimer<br>Christian Murr | Principal<br>General manager  |
 |  35. | Sparkasse Heidelberg | Bank | Public-law institution | Heidi Oestringer | Sustainability manager  |
 |  36. | Evangelische Kirche Heidelberg | Church | Church | Martina Kleinbauer | Head of the Building and Real Estate Department  |
 |  37. | Vermögen und Bau Baden-Württemberg Amt Mannheim und Heidelberg | State of Baden-Württemberg | State of Baden-Württemberg | Marco Grübbel | Manager of the Department  |

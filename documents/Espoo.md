@@ -124,7 +124,7 @@ Module A-1 "Greenhouse Gas Emissions Baseline Inventory" should detail and descr
 |  Unit | GWh/year, including housing and other buildings  |   |   |   |
 |   | Scope 1 | Scope 2 | Scope 3 | Total  |
 |  Buildings, heating  |   |   |   |   |
-|  Distric heating, incl. Coal, natural gas, oil, bio and heat pumps |  | 1958 |  | 1958  |
+|  District heating, incl. Coal, natural gas, oil, bio and heat pumps |  | 1958 |  | 1958  |
 |  Oil heating | 166 |  |  | 166  |
 |  Electricity heating |  | 394 |  | 394  |
 |  Electricity consumed |  | 1701 |  | 1701  |
@@ -155,7 +155,7 @@ The emissions calculation takes into account the three main greenhouse gases: ca
 
 More detailed methodology is described in section A-1.6: Description and assessment of GHG baseline inventory and emissions gap calculations.
 
-|  Primary energy/ energy source | Carbon Dioxide (CO2) | Methane (CH4) | Nitrous Oxide (N2O) | F-gases (hydrofluorocarbons and perfluorocarbons) | Sulphur hexafluoride e (SF6) | Nitrogen trifluoride (NF3)  |
+|  Primary energy/ energy source | Carbon Dioxide (CO2) | Methane (CH4) | Nitrous Oxide (N2O) | F-gases (hydrofluorocarbons and perfluorocarbons) | Sulphur hexafluoride (SF6) | Nitrogen trifluoride (NF3)  |
 | --- | --- | --- | --- | --- | --- | --- |
 
 # A-1.3: Activity by source sectors, metric tonnes CO2e based on CDP-ICLEI and GWh based on local calculation
@@ -189,38 +189,36 @@ Climate Neutrality Action Plan
 
 #
 
-|  Landfill | Services |  |  | 1  |
-| --- | --- | --- | --- | --- |
-|  Landfill | Industry |  |  | 1  |
-|  Biowaste composting | Housing | 1 |  |   |
-|  Biowaste composting | Services | 1 |  |   |
-|  Biowaste composting | Industry | 1 |  |   |
-|  Waste water treatment | Housing | 6 |  |   |
-|  Waste water treatment | Services | 4 |  |   |
-|  Waste water treatment | Industry | 2 |  |   |
-|  sewage sludge treatment | Housing | 2 |  |   |
-|  sewage sludge treatment | Services | 1 |  |   |
-|  sewage sludge treatment | Industry | 1 |  |   |
-|  Industrial Process and Product Use (IPPU)
+Landfill | Services | 1
+Landfill | Industry | 1
+Biowaste composting | Housing | 1
+Biowaste composting | Services | 1
+Biowaste composting | Industry | 1
+Waste water treatment | Housing | 6
+Waste water treatment | Services | 4
+Waste water treatment | Industry | 2
+sewage sludge treatment | Housing | 2
+sewage sludge treatment | Services | 1
+sewage sludge treatment | Industry | 1
+Industrial Process and Product Use (IPPU)
 There is no significant manufacturing industry
 in city of Espoo |  |  |  |   |
-|  Agricultural, Forestry and Land Use (AFOLU)
+Agricultural, Forestry and Land Use (AFOLU)
 (metric tonnes CO2e) (In Espoo there is no
 significant agriculture) |  | 1 |  |   |
-|  Fields |  | 1 |  |   |
-|  Domestical animals |  | 0 |  |   |
-|  A-1.4: GHG emissions by source sectors, based on CDP-ICLEI.  |   |   |   |   |
-| --- | --- | --- | --- | --- |
-|  Base year | 2022  |   |   |   |
-|  Unit | 1000t CO2equivalent/year  |   |   |   |
-|   | Scope 1 | Scope 2 | Scope 3 | Total  |
-|  Buildings/Heating and electricity | 62 | 516 |  | 578  |
-|  Transport (electric vehicles electricity use is in electricity) | 300 | 3 |  | 303  |
-|  Waste | 19 |  | 3 | 22  |
-|  Industrial Process and Product Use (IPPU) |  |  |  |   |
-|  F-gases | 34 |  |  | 34  |
-|  Agricultural, Forestry and Land Use (AFOLU) | 1 |  |  | 1  |
-|  Total | 416 | 519 | 3 | 938  |
+Fields | 1
+Domestic animals | 0
+A-1.4: GHG emissions by source sectors, based on CDP-ICLEI.
+Base year | 2022
+Unit | 1000t CO2equivalent/year
+Scope 1 | Scope 2 | Scope 3 | Total
+Buildings/Heating and electricity | 62 | 516 | 578
+Transport (electric vehicles electricity use is in electricity) | 300 | 3 | 303
+Waste | 19 | 3 | 22
+Industrial Process and Product Use (IPPU)
+F-gases | 34 | 34
+Agricultural, Forestry and Land Use (AFOLU) | 1 | 1
+Total | 416 | 519 | 3 | 938
 Climate Neutrality Action Plan
 
 #
@@ -492,13 +490,12 @@ Plan
 |  Plan | EU | RePowerEU | In response to the hardships and global energy market disruption caused by Russia's invasion of Ukraine, the European Commission is implementing its REPowerEU Plan. | Cities have a significant role in accelerating the energy transition described in the RePowerEU plan. REPowerEU Plan entails additional public and private sector investment by 2027. |   |
 Climate Neutrality Action Plan
 
-|   |  |  | Launched in May 2022, REPowerEU is helping the EU to save energy, produce clean energy and diversify its energy supplies. |  |   |
-| --- | --- | --- | --- | --- | --- |
-|  Iniative | EU | New European Bauhaus | The New European Bauhaus is a creative and interdisciplinary initiative that connects the European Green Deal to our living spaces and experiences. | Espoo is part of CrAFt Cities Network that supports New European Bauhaus (NEB) ambition of co-creating inclusive, aesthetic and sustainable cities. | Sharing models and building capacities in making the cities' climate-neutral transformations beautiful, inclusive and sustainable.  |
-|  Iniatives | EU | New European Innovation Agenda; 100 Intelligent Cities Challenge & Digital Cities Challenge; European Capital of Innovation | Espoo is one of Europe's leading innovation cities, ICC mentor city and three-time iCapital finalist (2019, 2020, 2022). Espoo is committed to using innovation and digitalisation to better the lives of its citizens. | Espoo's climate activities build upon these successes in fostering collaborative innovation ecosystems that support the green and digital transition. | Developing Espoo's city districts as innovation hubs for low-carbon and smart solutions.
+Launched in May 2022, REPowerEU is helping the EU to save energy, produce clean energy and diversify its energy supplies.
+Iniative | EU | New European Bauhaus | The New European Bauhaus is a creative and interdisciplinary initiative that connects the European Green Deal to our living spaces and experiences. | Espoo is part of CrAFt Cities Network that supports New European Bauhaus (NEB) ambition of co-creating inclusive, aesthetic and sustainable cities. | Sharing models and building capacities in making the cities' climate-neutral transformations beautiful, inclusive and sustainable.
+Initiatives | EU | New European Innovation Agenda; 100 Intelligent Cities Challenge & Digital Cities Challenge; European Capital of Innovation | Espoo is one of Europe's leading innovation cities, ICC mentor city and three-time iCapital finalist (2019, 2020, 2022). Espoo is committed to using innovation and digitalisation to better the lives of its citizens. | Espoo's climate activities build upon these successes in fostering collaborative innovation ecosystems that support the green and digital transition. | Developing Espoo's city districts as innovation hubs for low-carbon and smart solutions.
 Developing Espoo 3D city model and digital platforms to support climate action.  |
-|  Declaration | EU | Circular Cities Declaration (since 2020) | The Circular Cities Declaration is a commitment from European cities and regions to use the levers at our disposal coherently across the organisation to transition from a linear to a circular economy. Espoo signed the commitment in 2020 and follows its ten objectives to promote systemic development of circular solutions. | Circular Cities Declaration provides a systemic framework to promoting circular economy in the city with residents and stakeholders. Circular transition is one of the key way to reach climate goals in sectors that have large environmental impact and resource demand. | Guidelines, tools, support, and yearly reporting to support transition to circular economy.  |
-|  Policy and regulation | National | Climate-neutral Finland by 2035
+Declaration | EU | Circular Cities Declaration (since 2020) | The Circular Cities Declaration is a commitment from European cities and regions to use the levers at our disposal coherently across the organisation to transition from a linear to a circular economy. Espoo signed the commitment in 2020 and follows its ten objectives to promote systemic development of circular solutions. | Circular Cities Declaration provides a systemic framework to promoting circular economy in the city with residents and stakeholders. Circular transition is one of the key way to reach climate goals in sectors that have large environmental impact and resource demand. | Guidelines, tools, support, and yearly reporting to support transition to circular economy.
+Policy and regulation | National | Climate-neutral Finland by 2035
 National Climate Act | The national emission reduction targets are -60% by 2030, -80% by 2040 and -90 % but aiming at -95 % by 2050, compared to the levels in 1990. | The Act enables the development of a stable investment environment towards net zero cities. As Finland's second largest city, Espoo community plays a key role in delivering the national climate goal. |   |
 Climate Neutrality Action Plan
 
@@ -506,21 +503,20 @@ Climate Neutrality Action Plan
 | --- | --- | --- | --- | --- | --- |
 |  Government programme | National | A strong and committed Finland: Programme of Prime Minister Petteri Orpo's Government | Petteri Orpo's government is committed to the objectives of the Climate Act. The Government will focus its climate action on generating cost-effectiveness, technology neutrality and sustainable business while recognising the importance of a long-term approach across parliamentary terms for attracting investments. Finland will be a leader in clean energy: A stable and predictable operating conditions for business will be offered to promote cleantech investments. | The programme is expected to promote sustainable private investments, particularly large-scale energy projects.
 However, renewable fuel distribution obligation is planned not to rise as fast as expected thus affecting emissions of car traffic. | Need to identify other ways to cut down transport related emissions to reach the goal of climate-neutrality.  |
-|  Strategy | National | Carbon neutral Finland 2035 – national climate and energy strategy | The National Climate and Energy Strategy outlines measures by which Finland will meet the EU's climate commitments for 2030 and achieve the targets set in the Climate Change Act for reducing greenhouse gas emissions by 60 per cent by 2030 and being carbon neutral by 2035. | The strategy focuses on the green transition and the phasing-out of Russian fossil energy. It is estimated that the share of renewable energy will rise above Finland's indicative minimum target presented in the EU's Fit for 55 Package by 2030. On the other hand, Finland will exceed the indicative final maximum energy consumption laid out in the Fit for 55 Package. The electrification of the energy system and the use of system integration are vital topics. |   |
-|  Roadmap | National | Roadmap to fossil-free transport (2021) | National roadmap to align with the goal of carbon neutral Finland by 2035. According to roadmap, by 2030, Finland will reduce emissions from domestic transport by at least 50 per cent compared to the 2005 level. The aim is to achieve an entirely fossil-free transport sector by 2045. | Cutting down emissions from transport is Espoo's key challenge in achieving climate-neutrality. National measures, such as renewable fuel distribution obligation and reforming the transport system towards more sustainable transport modes are needed to reach the goal. |   |
-|  Commitment | National | Sustainable development Commitment 2050 | The Society's commitment is a national strategy for sustainable development | Organizations, companies and individuals can make operational commitments for sustainable development. In Espoo city | Personal commitments by citizen on  |
+Strategy | National | Carbon neutral Finland 2035 – national climate and energy strategy | The National Climate and Energy Strategy outlines measures by which Finland will meet the EU's climate commitments for 2030 and achieve the targets set in the Climate Change Act for reducing greenhouse gas emissions by 60 per cent by 2030 and being carbon neutral by 2035. | The strategy focuses on the green transition and the phasing-out of Russian fossil energy. It is estimated that the share of renewable energy will rise above Finland's indicative minimum target presented in the EU's Fit for 55 Package by 2030. On the other hand, Finland will exceed the indicative final maximum energy consumption laid out in the Fit for 55 Package. The electrification of the energy system and the use of system integration are vital topics.
+Roadmap | National | Roadmap to fossil-free transport (2021) | National roadmap to align with the goal of carbon neutral Finland by 2035. According to roadmap, by 2030, Finland will reduce emissions from domestic transport by at least 50 per cent compared to the 2005 level. The aim is to achieve an entirely fossil-free transport sector by 2045. | Cutting down emissions from transport is Espoo's key challenge in achieving climate-neutrality. National measures, such as renewable fuel distribution obligation and reforming the transport system towards more sustainable transport modes are needed to reach the goal.
+Commitment | National | Sustainable development Commitment 2050 | The Society's commitment is a national strategy for sustainable development | Organizations, companies and individuals can make operational commitments for sustainable development. In Espoo city | Personal commitments by citizen on
 
 1
 Climate Neutrality Action Plan
 
-|   |  |  |  | organisation, more than 200 commitments have been made by city departments and in schools, sustainability commitment is an integral part of each school's curriculum. | sustainable lifestyle can be encouraged for further impact.  |
-| --- | --- | --- | --- | --- | --- |
-|  Agreement | National | Municipalities' Energy Efficiency Agreement (2017-2025)
+organisation, more than 200 commitments have been made by city departments and in schools, sustainability commitment is an integral part of each school's curriculum. | sustainable lifestyle can be encouraged for further impact.
+Agreement | National | Municipalities' Energy Efficiency Agreement (2017-2025)
 Property and Building Sector Energy Efficiency Agreement (2017-2025) | In Finland, energy conservation and energy efficiency has been promoted with agreements between the government and municipalities since 1990s. The voluntary Energy Efficiency Agreements are key instruments for Finland to achieve the targets set by the Energy Efficiency Directive (EED). | Espoo is committed to the Energy Efficiency Agreement for Municipal Sector (KETS) between the years 2017 and 2025. The agreement supports the achievement of Finland's energy and climate strategy goals by promoting energy efficiency and measures related to the use of renewable energy. The key objective of the agreement is to reduce total energy consumption by 7.5% by the end of 2025 in comparison to the 2015 level.
 
 In addition, city-owned rental housing company Espoon Asunnot has joined energy efficiency agreement for rental housing companies and also aims to reduce total energy consumption by 7.5 per cent by the end of 2025 compared to 2015. |   |
-|  Regulation | National | Land Use and Building Act (927/2021), (132/1999) | New construction and large-scale renovations will be subject to a minimum requirement of renewable energy. In construction projects, it must be ensured that at least 38 percent of the calculated purchase energy used in the energy calculation in a new building or a building undergoing large-scale repair is renewable energy, if it is technically, functionally and economically feasible. | These requirements ensure investments in renewable energy in new construction and large-scale renovations. |   |
-|  Agreement | National | National Green Deals on Emission-free worksites and | National Green Deals are voluntary fixed-term agreements by which solutions are sought to climate challenges, loss of biodiversity, | Emission-free worksites – Green Deal on sustainable procurements 2020-2030
+Regulation | National | Land Use and Building Act (927/2021), (132/1999) | New construction and large-scale renovations will be subject to a minimum requirement of renewable energy. In construction projects, it must be ensured that at least 38 percent of the calculated purchase energy used in the energy calculation in a new building or a building undergoing large-scale repair is renewable energy, if it is technically, functionally and economically feasible. | These requirements ensure investments in renewable energy in new construction and large-scale renovations.
+Agreement | National | National Green Deals on Emission-free worksites and | National Green Deals are voluntary fixed-term agreements by which solutions are sought to climate challenges, loss of biodiversity, | Emission-free worksites – Green Deal on sustainable procurements 2020-2030
 The objective of the agreement is to reduce emissions generated in the worksites | Implementing the goals of the green deals through public procurement  |
 
 2
@@ -532,36 +528,33 @@ ESBO
 Climate Neutrality Action
 Plan
 
-|   |  | sustainable demolition | overconsumption of natural resources and promotion of a circular economy in Finland. The agreements are concluded between the State and the business sector. Agreements can also be concluded with public bodies such as government agencies and local governments. Green Deals bring together parties that have a key role in achieving the desired change. | through public procurements on a long-term basis. The aim is also to boost the introduction of new low-emission technologies. By 2025, all new worksites of the contracting entities should be fossil-free and 100% of the non-road mobile machinery used in the worksites powered by fossil-free fuels.
+sustainable demolition | overconsumption of natural resources and promotion of a circular economy in Finland. The agreements are concluded between the State and the business sector. Agreements can also be concluded with public bodies such as government agencies and local governments. Green Deals bring together parties that have a key role in achieving the desired change. | through public procurements on a long-term basis. The aim is also to boost the introduction of new low-emission technologies. By 2025, all new worksites of the contracting entities should be fossil-free and 100% of the non-road mobile machinery used in the worksites powered by fossil-free fuels.
 
 **Green Deal on sustainable demolition, 2020–2025** The main objective of the agreement is to increase the reuse and recycling of demolition materials by promoting the functioning of the markets for demolition materials from repair and demolition projects. |   |
-| --- | --- | --- | --- | --- | --- |
-|  Roadmap | Regional | Helsinki-Uusimaa Regional Climate Roadmap | Helsinki-Uusimaa is aiming at climate neutrality by the year of 2030, in line with the forerunner cities such as Espoo, of the region. The urgent goal of climate neutrality is done in cooperation on a wide scale in all sectors; public, private and RDI and furthering shared projects. The climate actions are based on local strengths and the sharing of best practices. | Five climate spearheads for mitigation in Helsinki-Uusimaa are chosen as the most vital and urgent themes for climate neutrality:
+Roadmap | Regional | Helsinki-Uusimaa Regional Climate Roadmap | Helsinki-Uusimaa is aiming at climate neutrality by the year of 2030, in line with the forerunner cities such as Espoo, of the region. The urgent goal of climate neutrality is done in cooperation on a wide scale in all sectors; public, private and RDI and furthering shared projects. The climate actions are based on local strengths and the sharing of best practices. | Five climate spearheads for mitigation in Helsinki-Uusimaa are chosen as the most vital and urgent themes for climate neutrality:
 
 Climate smart land use and construction
 Smart and emission-free mobility
 Fast and fair energy transition
 Climate neutral circular economy
 Together with sustainable consumption and production. |   |
-|  Agreement | Regional | Helsinki Region Land Use, Housing and Transport Plan (2019) | The agreements concerning land use, housing and transport are concluded by the State with the largest urban regions. The purpose is to facilitate and support the cooperation between municipalities in urban regions and between municipalities and the State in the guidance related to the urban | The main goal of the MAL 2023 planning is a climate-neutral, prosperous and successful Helsinki region. The MAL 2023 plan aims to build a region where current and future residents can live good lives and enjoy smooth everyday travel. The plan will also provide a sustainable solution to the region’s growth and ensure good conditions for |   |
+Agreement | Regional | Helsinki Region Land Use, Housing and Transport Plan (2019) | The agreements concerning land use, housing and transport are concluded by the State with the largest urban regions. The purpose is to facilitate and support the cooperation between municipalities in urban regions and between municipalities and the State in the guidance related to the urban | The main goal of the MAL 2023 planning is a climate-neutral, prosperous and successful Helsinki region. The MAL 2023 plan aims to build a region where current and future residents can live good lives and enjoy smooth everyday travel. The plan will also provide a sustainable solution to the region’s growth and ensure good conditions for
 Climate Neutrality Action Plan
 
-|   |  |  | structure and coordination of land use, housing and transport. | business and other activities. A sustainable transport system and the associated measures are essential to the plan. |   |
-| --- | --- | --- | --- | --- | --- |
-|  Strategy | Regional | Smart specialisation strategy for Helsinki-Uusimaa Region (2020) | Smart Specialisation is an innovation policy, enabling the region to recognize its strengths and to emphasize them in efforts and investments. Sustainable development goals, ambitious climate targets and a sustainable growth are the basis for research and innovation activities in the region. | Climate neutrality by 2030 is one of three strategic priorities of the strategy. Areas covered by the theme include, circular economy solutions, new sources of energy, bioeconomy innovations and new materials. |   |
-|  City strategy | Local | Espoo Story 2021-2025 | Espoo Story is the city strategy, a narrative created together with city employees, citizens, communities, and companies. This tool for strategic and participatory leadership was introduced in 2012 by the mayor and has since evolved and expanded.
+structure and coordination of land use, housing and transport. | business and other activities. A sustainable transport system and the associated measures are essential to the plan.
+Strategy | Regional | Smart specialisation strategy for Helsinki-Uusimaa Region (2020) | Smart Specialisation is an innovation policy, enabling the region to recognize its strengths and to emphasize them in efforts and investments. Sustainable development goals, ambitious climate targets and a sustainable growth are the basis for research and innovation activities in the region. | Climate neutrality by 2030 is one of three strategic priorities of the strategy. Areas covered by the theme include, circular economy solutions, new sources of energy, bioeconomy innovations and new materials.
+City strategy | Local | Espoo Story 2021-2025 | Espoo Story is the city strategy, a narrative created together with city employees, citizens, communities, and companies. This tool for strategic and participatory leadership was introduced in 2012 by the mayor and has since evolved and expanded.
 Espoo Story is based on a holistic understanding of sustainable development and outlines climate-neutrality by 2030 as one of the seven key targets for the city organisation. | Strategic commitment to climate-neutrality by 2030 approved City Council. Climate-neutrality as one of key targets for the whole city organisation. These targets guide the preparation of annual city budget and operational plans. Espoo Story highlights collaboration and working together with the whole community as a key strength and attribute of the city. |   |
-|  Development programme | Local | Sustainable Espoo programme 2021-2025 | Cross-sectoral development programmes are Espoo’s key instrument of breaking financial, administrative, and political silos to implement Espoo Story in tackling systemic issues such as climate change. Sustainable Espoo is the longest running of the four programmes (in operation since 2013). It is owned by the Mayor. The programme’s steering group has representation from all the political groups represented in | The programme has its own yearly budget that is used as a seed funding to bring multiple times more resources from EU level, national, and private funding to support the climate and sustainability goals. The Steering Group is responsible for the good alignment of the project portfolio to steer systemic change. It also provides a place to discuss and tackle any potential political and practical controversies of the activities as well as a platform where rapid learnings are | Steering group and action portfolio for delivering Climate City Contract  |
+Development programme | Local | Sustainable Espoo programme 2021-2025 | Cross-sectoral development programmes are Espoo’s key instrument of breaking financial, administrative, and political silos to implement Espoo Story in tackling systemic issues such as climate change. Sustainable Espoo is the longest running of the four programmes (in operation since 2013). It is owned by the Mayor. The programme’s steering group has representation from all the political groups represented in | The programme has its own yearly budget that is used as a seed funding to bring multiple times more resources from EU level, national, and private funding to support the climate and sustainability goals. The Steering Group is responsible for the good alignment of the project portfolio to steer systemic change. It also provides a place to discuss and tackle any potential political and practical controversies of the activities as well as a platform where rapid learnings are | Steering group and action portfolio for delivering Climate City Contract
 
 4
 Climate Neutrality Action Plan
 
-|   |  |  | the city council, the youth council and city officials from different city sectors. | gathered to inform and affect future policy making. |   |
-| --- | --- | --- | --- | --- | --- |
-|  Action plan | Local | Sustainable Energy and Climate Action Plan (SECAP) 2019-2030 | Espoo joined the Covenant of Mayors in 2010. In 2019, Espoo prepared a Sustainable Energy and Climate Action Plan, SECAP where it identified 60+ actions leading to the climate-neutrality target in 2030. | SECAP identified measures aimed at reducing electricity consumption, district heating and traffic emissions that are particularly significant for the realisation of the emission reduction target. With the identified mitigation measures, Espoo’s emissions were estimated to be reduced by approximately 75% from the 1990 level by 2030. As part of the CCC process in 2023, additional measures have been identified and emission reduction scenarios updated. |   |
-|  Voluntary Local Review | Local | Espoo VLR 2020 | The Voluntary Local Review assesses the city’s operations, cross-administrative programmes and projects in relation to the 17 sustainable development goals of the UN’s Agenda 2030 programme. | Builds capacity in the city organisations and stakeholders to understand the interconnected nature of sustainability and climate targets. | Integrating climate targets and co-creation to VLR 2025 process with different departments and stakeholders.  |
-|  Commitment and roadmap | Local | Espoo Clean Heat | Espoo Clean Heat, provides a flagship example of efficient decarbonization and a transition to local self-sufficient heating on a large scale. Fortum and the City of Espoo have prepared a roadmap and signed a joint commitment to transformation that will result in carbon-neutral district heating by 2030. | Espoo’s district heating system is undergoing a major transformation to replace fossil fuels with smart and flexible solutions that are largely based on renewable electricity. The use of coal will be discontinued in 2025. |   |
-|  Local plans and policies to be developed to further support the transition to net zero :
+the city council, the youth council and city officials from different city sectors. | gathered to inform and affect future policy making.
+Action plan | Local | Sustainable Energy and Climate Action Plan (SECAP) 2019-2030 | Espoo joined the Covenant of Mayors in 2010. In 2019, Espoo prepared a Sustainable Energy and Climate Action Plan, SECAP where it identified 60+ actions leading to the climate-neutrality target in 2030. | SECAP identified measures aimed at reducing electricity consumption, district heating and traffic emissions that are particularly significant for the realisation of the emission reduction target. With the identified mitigation measures, Espoo’s emissions were estimated to be reduced by approximately 75% from the 1990 level by 2030. As part of the CCC process in 2023, additional measures have been identified and emission reduction scenarios updated.
+Voluntary Local Review | Local | Espoo VLR 2020 | The Voluntary Local Review assesses the city’s operations, cross-administrative programmes and projects in relation to the 17 sustainable development goals of the UN’s Agenda 2030 programme. | Builds capacity in the city organisations and stakeholders to understand the interconnected nature of sustainability and climate targets. | Integrating climate targets and co-creation to VLR 2025 process with different departments and stakeholders.
+Commitment and roadmap | Local | Espoo Clean Heat | Espoo Clean Heat, provides a flagship example of efficient decarbonization and a transition to local self-sufficient heating on a large scale. Fortum and the City of Espoo have prepared a roadmap and signed a joint commitment to transformation that will result in carbon-neutral district heating by 2030. | Espoo’s district heating system is undergoing a major transformation to replace fossil fuels with smart and flexible solutions that are largely based on renewable electricity. The use of coal will be discontinued in 2025.
+Local plans and policies to be developed to further support the transition to net zero :
 Climate-neutral Espoo 2030 Roadmap (2023)
 Climate budget 2024 (2023)
 Sustainable Urban Mobility Plan (SUMP) and Sustainable Urban Logistics Plan (SULP) (2024)
@@ -612,53 +605,46 @@ ESPOO ESBO
 
 A-2.3: Emissions gap. Our Action Plan addresses all emission reductions from 1990 level. Added baseline 2022 and target (from Scope 1 and 2 emission + waste from scope 3)
 
-|   | 1990 Baseline emissions
+1990 Baseline emissions
 “The climate-neutrality goal approved by the city council has 1990 as baseline | 2022 Baseline emissions |   | Residual emissions offsetting^{1} |   | Baseline emissions reduction target from 2022^{2} |   | 2030 Emission forecast based on Climate-neutral Espoo Scenario (1/2023) |   |   |   | Emissions gap |   |   | Additional actions identified for further emission reductions (8/2023)
 NOTE: The execution of additional actions has not yet been decided in city decision-making process  |   |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|   | (absolute) kt CO2e | (absolute) kt CO2e | (% from 1990) | (absolute) kt CO2e | (%) | (absolute) kt CO2e | (%) | (absolute) kt CO2e from 1990 | (%) from 1990 | (absolute) kt CO2e from 2022 | % from 2022 | (absolute kt CO2 in 2030 from 1990) kt CO2e | (absolute kt CO2 in 2030 from 2022) kt CO2e | 2022 (emission gap from target) | (absolute)kt CO2e | total emissions % from 2022 | emissions reductions from 2022 | emissions % from 2022  |
-|  Buildings (energy) total | 616 | 573 | 93 % | 115 | 20 % | 458 | 80 % | 498 | 81 % | 454 | 79 % | 119 | 4 | 1 % | 32 | 87 | 85 % | 15 %  |
-|  District heating | 316 | 332 | 105 % | 66 | 20 % | 265 | 80 % | 304 | 96 % | 319 | 96 % | 13 | -54 | -20 % |  |  |  |   |
-|  Oil heating | 78 | 56 | 72 % | 11 | 20 % | 45 | 80 % | 76 | 98 % | 55 | 98 % | 1 | -10 | -22 % |  |  |  |   |
-|  Electric heating | 65 | 56 | 87 % | 11 | 20 % | 45 | 80 % | 42 | 66 % | 34 | 60 % | 22 | 11 | 25 % |  |  |  |   |
-|  Electricity consumption | 158 | 129 | 82 % | 26 | 20 % | 103 | 80 % | 75 | 48 % | 46 | 36 % | 83 | 57 | 55 % |  |  |  |   |
-|  Transport (incl. traffic from working machinery) | 340 | 314 | 92 % | 63 | 20 % | 251 | 80 % | 172 | 51 % | 147 | 47 % | 168 | 105 | 42 % | 56 | 112 | 64 % | 36 %  |
-|  Waste | 101 | 22 | 22 % | 4 | 20 % | 17 | 80 % | 93 | 92 % | 14 | 65 % | 8 | 3 | 19 % |  | 8 | 65 % | 35 %  |
-|  Industrial Process and Product Use (IPPU) | There is no significant manufacturing industry in the city of Espoo.  |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|  F-gases | NA | 34 | NA | 7 | 20 % | 27 | 80 % | NA | NA |  | 0 % | NA |  | 0 % | NA | NA |  |   |
-|  Agricultural, Forestry and Land Use (AFOLU) Skenaarioissa maatalous | 3 | 1 | 37 % | 0 | 20 % | 1 | 80 % | 2 | 69 % | 0 | 16 % | 0,9 | 1 | 80 % |  | 1 |  |   |
-|  Total | 1 060 | 944 | 89 % | 303 | 20 % | 755 | 80 % | 765 | 72 % | 615 | 65 % | 295 | 117 | 16 % | 88 | 207 | 78 % | 22 %  |
+(absolute) kt CO2e | (absolute) kt CO2e | (% from 1990) | (absolute) kt CO2e | (%) | (absolute) kt CO2e | (%) | (absolute) kt CO2e from 1990 | (%) from 1990 | (absolute) kt CO2e from 2022 | % from 2022 | (absolute kt CO2 in 2030 from 1990) kt CO2e | (absolute kt CO2 in 2030 from 2022) kt CO2e | 2022 (emission gap from target) | (absolute)kt CO2e | total emissions % from 2022 | emissions reductions from 2022 | emissions % from 2022
+Buildings (energy) total | 616 | 573 | 93 % | 115 | 20 % | 458 | 80 % | 498 | 81 % | 454 | 79 % | 119 | 4 | 1 % | 32 | 87 | 85 % | 15 %
+District heating | 316 | 332 | 105 % | 66 | 20 % | 265 | 80 % | 304 | 96 % | 319 | 96 % | 13 | -54 | -20 %
+Oil heating | 78 | 56 | 72 % | 11 | 20 % | 45 | 80 % | 76 | 98 % | 55 | 98 % | 1 | -10 | -22 %
+Electric heating | 65 | 56 | 87 % | 11 | 20 % | 45 | 80 % | 42 | 66 % | 34 | 60 % | 22 | 11 | 25 %
+Electricity consumption | 158 | 129 | 82 % | 26 | 20 % | 103 | 80 % | 75 | 48 % | 46 | 36 % | 83 | 57 | 55 %
+Transport (incl. traffic from working machinery) | 340 | 314 | 92 % | 63 | 20 % | 251 | 80 % | 172 | 51 % | 147 | 47 % | 168 | 105 | 42 % | 56 | 112 | 64 % | 36 %
+Waste | 101 | 22 | 22 % | 4 | 20 % | 17 | 80 % | 93 | 92 % | 14 | 65 % | 8 | 3 | 19 % | 8 | 65 % | 35 %
+Industrial Process and Product Use (IPPU) | There is no significant manufacturing industry in the city of Espoo.
+F-gases | NA | 34 | NA | 7 | 20 % | 27 | 80 % | NA | NA | 0 % | NA | 0 % | NA | NA
+Agricultural, Forestry and Land Use (AFOLU) Skenaarioissa maatalous | 3 | 1 | 37 % | 0 | 20 % | 1 | 80 % | 2 | 69 % | 0 | 16 % | 0,9 | 1 | 80 % | 1
+Total | 1 060 | 944 | 89 % | 303 | 20 % | 755 | 80 % | 765 | 72 % | 615 | 65 % | 295 | 117 | 16 % | 88 | 207 | 78 % | 22 %
 Climate Neutrality Action Plan
 
 ESPOO ESBO
 
 # 3.3 Module A-3 Systemic Barriers and Opportunities to 2030 Climate Neutrality
 
-|  A-3.1: Systems & stakeholder mapping  |   |   |
-| --- | --- | --- |
-|  (Fill out according to AP Guidance) – e.g.  |   |   |
-|  System description | Stakeholders and networks involved | Influence and interest  |
-|  Energy systems: Espoo Clean Heat | Fortum, waste heat providers (e.g. data centre providers, HSY), consumers | Transition to carbon-free district heating. New business opportunities  |
-|  Energy systems: housing, industry and services | Consultation companies, HOA's, construction sector, land-owners, citizens, R&D sector | New business opportunities, innovation, reduction of energy costs  |
-|  Energy systems: energy optimization and savings in city-owned buildings | Caruna, Fortum, Caverion | New business opportunities, innovation, reduction of energy costs, new services towards energy grids  |
-|  Energy systems: enabling electrification | Caruna, Fortum, e-mobility and charging service providers, R&D sector | New business models, carbon-free district heating and transport, innovation and new technologies  |
-|  |   |   |
-|  Mobility and transport: walking and cycling | Helsinki Regional Transport HSL, local bike shop business, Mobility services (City Bikes, Scooters, Car Share etc.) | Transition to active transport modes New business opportunities, innovation and co-creation  |
-|  Mobility and transport: public transport | Helsinki Regional Transport HSL, Mobility Services Companies | Transition to public transport, Fossil free public transport  |
-|  Mobility and transport: e-mobility and biofuels | ITS Finland, Caruna, Fortum, Virta, Plug It, Parking operators (Aimo Park and Finn Park) ST1, Neste, Gasum, ProAgria Infra services in mobility transition | New business opportunities, innovation and co-creation. Promoting new sustainable fuels.  |
-|  |   |   |
-|  Built environment: sustainable city districts | Real estate and construction sector, other cities (capital region) | Competitiveness, exchange of best practises  |
-|  Built environment: low-carbon construction and emission-free worksites | Ministry of the Environment, NGOs (e.g. Green Building Council, Finnish Property Owners Rakli etc.), educational institutions, R&D sector | Directive role & getting input, new services and products  |
-|  |   |   |
-|  Waste and circular economy: waste treatment | HSY, waste management companies, energy companies | Transition to move waste treatment towards a circular economy that retains value by reusing materials over and over.  |
-|  Waste and circular economy: circular solutions | start-ups, new service providers for shared ownership, companies and research organisations within | New business opportunities, innovation and co-creation  |
+A-3.1: Systems & stakeholder mapping
+(Fill out according to AP Guidance) – e.g.
+System description | Stakeholders and networks involved | Influence and interest
+Energy systems: Espoo Clean Heat | Fortum, waste heat providers (e.g. data centre providers, HSY), consumers | Transition to carbon-free district heating. New business opportunities
+Energy systems: housing, industry and services | Consultation companies, HOA's, construction sector, land-owners, citizens, R&D sector | New business opportunities, innovation, reduction of energy costs
+Energy systems: energy optimization and savings in city-owned buildings | Caruna, Fortum, Caverion | New business opportunities, innovation, reduction of energy costs, new services towards energy grids
+Energy systems: enabling electrification | Caruna, Fortum, e-mobility and charging service providers, R&D sector | New business models, carbon-free district heating and transport, innovation and new technologies
+Mobility and transport: walking and cycling | Helsinki Regional Transport HSL, local bike shop business, Mobility services (City Bikes, Scooters, Car Share etc.) | Transition to active transport modes New business opportunities, innovation and co-creation
+Mobility and transport: public transport | Helsinki Regional Transport HSL, Mobility Services Companies | Transition to public transport, Fossil free public transport
+Mobility and transport: e-mobility and biofuels | ITS Finland, Caruna, Fortum, Virta, Plug It, Parking operators (Aimo Park and Finn Park) ST1, Neste, Gasum, ProAgria Infra services in mobility transition | New business opportunities, innovation and co-creation. Promoting new sustainable fuels.
+Built environment: sustainable city districts | Real estate and construction sector, other cities (capital region) | Competitiveness, exchange of best practises
+Built environment: low-carbon construction and emission-free worksites | Ministry of the Environment, NGOs (e.g. Green Building Council, Finnish Property Owners Rakli etc.), educational institutions, R&D sector | Directive role & getting input, new services and products
+Waste and circular economy: waste treatment | HSY, waste management companies, energy companies | Transition to move waste treatment towards a circular economy that retains value by reusing materials over and over.
+Waste and circular economy: circular solutions | start-ups, new service providers for shared ownership, companies and research organisations within | New business opportunities, innovation and co-creation
 Climate Neutrality Action Plan
 
-|   | different material ecosystems (value chains) such as plastics or concrete. |   |
-| --- | --- | --- |
-|  |   |   |
-|  Green infrastructure & nature-based solutions: preserving carbon sinks | Public and private landowners, construction and development companies, HSY, SYKE, LUKE | Preservation of carbon sinks, climate change adaptation and preservation of ecosystem services  |
-|  Green infrastructure & nature-based solutions: biodiversity and nature-based solutions in urban environment | Public and private landowners, construction and development companies, SYKE, LUKE, local nature organizations | New business opportunities, attractiveness and comfort of the living environment  |
+different material ecosystems (value chains) such as plastics or concrete.
+Green infrastructure & nature-based solutions: preserving carbon sinks | Public and private landowners, construction and development companies, HSY, SYKE, LUKE | Preservation of carbon sinks, climate change adaptation and preservation of ecosystem services
+Green infrastructure & nature-based solutions: biodiversity and nature-based solutions in urban environment | Public and private landowners, construction and development companies, SYKE, LUKE, local nature organizations | New business opportunities, attractiveness and comfort of the living environment
 
 RAKKE – a solution path to sustainable growth ecosystems is a project hosted by the city of Espoo in 2021-23 to strengthen cooperation between the public and private sectors and promote innovation and business activities in fields crucial to the city's climate and sustainability targets. During the project the city has developed ecosystems in low-carbon transport, renewable energy, circular economy and smart and clean urban solutions together with 104 companies and organisations creating foundation for increasingly efficient climate and sustainability actions. The learnings and the concrete next steps identified in the project are integrated in the section 4.2. Climate Action Portfolio.
 
@@ -923,7 +909,7 @@ ESBO
 
 Climate Neutrality Action Plan
 
-|  | Zoning regulations, regional energy assessments and stakeholder cooperation to guide land-use planning towards energy efficiency and sustainable energy solutions
+Zoning regulations, regional energy assessments and stakeholder cooperation to guide land-use planning towards energy efficiency and sustainable energy solutions
 
 The City of Espoo is committed to the energy efficiency agreement for municipalities for the 2017-2025 term
 
@@ -950,8 +936,7 @@ Adoption of climate-friendly lifestyle
 Increased understanding of energy
 
 Active citizenship |
-| --- | --- | --- | --- | --- |
-| Technology and infrastructure | District heating production
+Technology and infrastructure | District heating production
 • Industrial-scale air-to-water heat pumps and additional electric boilers
 • Additional electric boilers (testing the use of dynamic connection, first in Finland)
 • Microsoft data center construction and operations begin
@@ -966,7 +951,7 @@ Collaboration around Espoo Clean Heat is enhanced
 District-level energy systems planned in wider collaboration with different stakeholders for new and existing city districts, land-use planning as enabler for sustainable energy systems. |  |  |
 1
 
-|   | energy use in Espoo, supports electric mobility solutions actualization and sustainable built environment development.
+energy use in Espoo, supports electric mobility solutions actualization and sustainable built environment development.
 
 The City of Espoo and Espoon Asunnot Oy are participating in the demand side management (DSM) of the local district heating grid.
 
@@ -993,7 +978,6 @@ Increasing the production of local renewable electricity (solar, wind etc) and e
 Energy storage solutions for both electricity and heat are increasingly implemented in the city by different stakeholders.
 
 City-owned buildings testbeds for new solutions. |  |   |
-| --- | --- | --- | --- | --- |
 2
 
 ESPOO
@@ -1004,10 +988,9 @@ Plan
 
 a
 
-|   |  | supporter and enabler, current topics include SMRs and hydrogen.
+supporter and enabler, current topics include SMRs and hydrogen.
 Energy storage solutions for both electricity and heat are piloted in the city by different stakeholders. |  |  |   |
-| --- | --- | --- | --- | --- | --- |
-|   |  Culture, social innovation, citizen engagement and participation | Sustainable Espoo resident participation group strengthens the resident-based approach and their inclusion in Espoo's sustainable development work.
+Culture, social innovation, citizen engagement and participation | Sustainable Espoo resident participation group strengthens the resident-based approach and their inclusion in Espoo's sustainable development work.
 Energy plays an increasingly visible role in residents' daily lives and public interest on the topic is highlighted by energy crises and rising prices.
 Energy transition creates opportunities for new roles for residents and the forming of energy communities.
 Providing understandable and accessible advice, support, and information to citizens on:
@@ -1028,16 +1011,15 @@ ESBO
 Climate Neutrality Action
 Plan
 
-|   |  | Sustainable Espoo Programme projects include citizen engagement activities focusing on energy systems (SPARCS, KETO)
+Sustainable Espoo Programme projects include citizen engagement activities focusing on energy systems (SPARCS, KETO)
 Schools teaching students about energy citizenship and energy saving energy.
 *Encouraging residents to buy certified green electricity.* | *Demand for certified green electricity has risen.* |  |   |
-| --- | --- | --- | --- | --- | --- |
-|   |  Capacity and capability building | Multi-stakeholder development projects leveraging wide-ranging partner cooperation for innovative, local and sustainable energy solutions.
+Capacity and capability building | Multi-stakeholder development projects leveraging wide-ranging partner cooperation for innovative, local and sustainable energy solutions.
 Interior eco-support network empowering and building capacity of city officials to promote energy savings at city workplaces.
 New capacities needed as building owners become electricity producers and charging points for vehicles move from filling stations to homes. | New operating models and services tested and implemented promoting renewable energy production and energy efficiency.
 City employees implement energy-saving measures in workplaces.
 Citizens have gained new capacities as local energy producers (prosumers).  |   |   |
-|   |  Finance, public procurement and business models | Investments by Fortum to implement Espoo Clean Heat roadmap towards carbon neutral district heating by 2030.
+Finance, public procurement and business models | Investments by Fortum to implement Espoo Clean Heat roadmap towards carbon neutral district heating by 2030.
 The City of Espoo purchases renewable district heating and carbon-free electricity for city-owned buildings.
 Joint “solution path” to renewable energy identified with key local stakeholders (RAKKE ecosystems) | Implementation of Espoo Clean Heat roadmap continues and is completed by 2030.
 Implementation of accompanying power grid investments by Caruna to facilitate increased electricity use.
@@ -1050,15 +1032,14 @@ ESBO
 Climate Neutrality Action
 Plan
 
-|   |  | Energy efficiency and sustainable energy solutions included in public procurement criteria for new buildings and refurbishments of city building stock.
+Energy efficiency and sustainable energy solutions included in public procurement criteria for new buildings and refurbishments of city building stock.
 
 Households' and businesses' investments in sustainable energy solutions such as solar panels and geothermal energy encouraged by sharing information highlighting both economic and environmental benefits.
 
 Business Finland Decarbonized Cities Programme encourages companies to develop solutions to selected challenges in the energy sector. | sustainable energy modes help to save energy and cut energy bills.
 
 Decarbonized Cities Programme has funded the creation of new low-carbon solutions with Espoo as testing and reference platform. |  |   |
-| --- | --- | --- | --- | --- | --- |
-|  Mobility & transport | Governance, policy, regulation, and local development strategies | Helsinki Region Land use, housing and transport agreements (MAL) 2023 plan guides the regional development of sustainable transport system.
+Mobility & transport | Governance, policy, regulation, and local development strategies | Helsinki Region Land use, housing and transport agreements (MAL) 2023 plan guides the regional development of sustainable transport system.
 
 Sustainable Espoo Programme 2021-2025 defines transport as one of five focus areas setting joint targets
 
@@ -1095,7 +1076,7 @@ Green & digital transition of local economy
 Business opportunities for SMEs  |
 5
 
-|   |  | Low emission lane on the main highway
+Low emission lane on the main highway
 Strategic collaboration agreement with local electricity distribution company Caruna to prepare the network for increased electrification of mobility | Setting an environmental zone for lorries e.g. on 60 % of streets and collaborating with companies to create sufficient market to meet the need of no CO2 emission lorries. | Increased uptake on walking, cycling, public transport and e-mobility
 Reduced emissions of road transport | Reduced dependency on imported fossil fuels.
 Reduced economic susceptibility to fluctuations in prices of fossil fuels.
@@ -1103,8 +1084,7 @@ Adoption of climate-friendly lifestyle
 Increased understanding of mobility choices.
 Active citizenship
 Increased private investment  |
-| --- | --- | --- | --- | --- | --- |
-|   |  Technology and infrastructure | New subway and light rail lines opening 2022/2024 in south/east Espoo
+Technology and infrastructure | New subway and light rail lines opening 2022/2024 in south/east Espoo
 Park&ride facilities for cars and bikes along public transport routes
 Development of walking and cycling network. Cycle corridors target network identified and guides the development.
 Renovations and improvement of traffic safety on existing cycle lanes.
@@ -1127,7 +1107,7 @@ ESBO
 Climate Neutrality Action
 Plan
 
-|   | Culture, social innovation, citizen engagement and participation | Sustainable Espoo resident participation group strengthens the resident-based approach and their inclusion in Espoo's sustainable development work.
+Culture, social innovation, citizen engagement and participation | Sustainable Espoo resident participation group strengthens the resident-based approach and their inclusion in Espoo's sustainable development work.
 
 Compiling a map of special accessibility areas to share information with city planners.
 
@@ -1150,18 +1130,16 @@ Horizon-funded MOBILITIES project engages citizens in the SUMP process.
 More citizens, including children and adults representing marginalized groups, have the practical skills and knowledge to make sustainable mobility choices
 
 Built environment and public transport are accessible for all, including the disabled and the elderly. |  |   |
-| --- | --- | --- | --- | --- | --- |
 7
 
-|   | Capacity and capability building | Building knowledge of the elements of walkability and liveability of urban space for city planners.
+Capacity and capability building | Building knowledge of the elements of walkability and liveability of urban space for city planners.
 Interior eco-support network empowering and building capacity of city officials on how to promote sustainable mobility choices at workplaces
 Capacity building of housing associations on how to install electric car charging infrastructure and the national subsidies available.
 *Building the capacities needed set an environmental zone for lorries.*
 *Collaborating with other cities and businesses to develop solutions to meet the future need of CO2 emission free lorries.* | Better knowledge and capacities by city officials to promote sustainable transport, walkability, and liveability in their work.
 Housing associations are aware of benefits on installing EV charging infrastructure.
 Horizon-funded MOBILITIES project aiming to develop a more advanced SUMP/SULP including future automated transport and UAVs |   |
-| --- | --- | --- | --- | --- |
-|   |  Finance, public procurement and business models | Guidelines for EV charging points in the city
+Finance, public procurement and business models | Guidelines for EV charging points in the city
 Promotion of e-mobility uptake through procurement practices, permitting processes, urban planning, and land use solutions
 Promotion of biofuels by strengthening the conditions for the production and distribution of biogas and public procurement.
 Close co-operation with grid operators and charging infra providers. | Increased number of EV charging points and electric vehicles
@@ -1177,7 +1155,7 @@ ESBO
 Climate Neutrality Action
 Plan
 
-|   |  | Low emission city fleet
+Low emission city fleet
 Electrification of city buses (50% by 2025)
 % discount on parking fees for full electric cars
 Affordable city bike system to complement public transport
@@ -1185,15 +1163,14 @@ Supporting local bike shops by communications and offering facilities.
 Joint “solution path” to fossil-free fuels identified with key local stakeholders (RAKKE ecosystems)
 OPULI platform, innovation environment and living lab for clean (professional) transport and energy business
 Business Finland Decarbonized Cities Programme encourages companies to develop solutions to selected challenges in transport and mobility. | Decarbonized Cities Programme has funded the creation of new low-carbon solutions with Espoo as testing and reference platform. |  |   |
-| --- | --- | --- | --- | --- | --- |
-|  Built environment | Governance, policy, regulation, and local development strategies | Sustainable Espoo Programme 2021-2025 defines sustainable land use and construction as one of five focus areas setting joint targets.
+Built environment | Governance, policy, regulation, and local development strategies | Sustainable Espoo Programme 2021-2025 defines sustainable land use and construction as one of five focus areas setting joint targets.
 Preparation of new Espoo Master Plan 2060 begins with City Board agreeing its goals emphasizing sustainable city growth, climate smartness, improvement of transport connections, | Joint systemic understanding, vision and shared goals by the city and stakeholders.
 New Master Plan 2060 guides the development of climate-smart city of networks.
 Regulation on low carbon construction is established. In Espoo, guidance is | Built environment, project portfolio affects other emission sources, no direct emission reductions on scope 2 emissions. | New and innovative solutions for the construction sector
 Sustainably built and maintained high-quality streets, parks, homes, workplaces, schools, and kindergartens are at  |
 9
 
-|  | liveability and attractive city environments, and proximity to nature.
+liveability and attractive city environments, and proximity to nature.
 Espoo’s principles for land use and housing 2022-2025 adopted to further promote climate-friendly land use policies.
 New national Building Act to steer low carbon construction systemically from 2025 onwards.
 Decrees on the climate declaration, declaration of building products and limit values for the carbon footprint of construction to be included in the National Building Code.
@@ -1212,8 +1189,7 @@ Active citizenship
 Improved community spirit
 Increased private investments to low-carbon solutions.
 Improved accessibility of built environment |
-| --- | --- | --- | --- | --- |
-| Technology and infrastructure | Piloting and demonstrating new low-carbon construction solutions.
+Technology and infrastructure | Piloting and demonstrating new low-carbon construction solutions.
 Emission calculation tools in zoning, regional construction and infrastructure construction. | Buildings have carbon footprint limits and new buildings have smaller carbon footprints.
 Concentration of construction and infrastructure in local centres and brownfield areas. |
 0
@@ -1222,13 +1198,12 @@ ESPOO ESBO
 
 Climate Neutrality Action Plan
 
-|   |  | Espoo 3D city model and digital platforms supporting holistic planning and management.
+Espoo 3D city model and digital platforms supporting holistic planning and management.
 The possibilities of heat recovery of geothermal, solar energy and waste energy as well as wooden construction are evaluated on a site-by-site basis. | 10 % of the new buildings’ energy consumption is produced with renewable energy produced on site (solar electricity, geothermal heat, wind power).
 No fossil fuels are used on city’s own construction sites after 2025.
 Promoting lower-emission construction equipment and transport vehicles. |  | More beautiful, inclusive and sustainable built environment
 Increased understanding of low-carbon construction and urban environment  |
-| --- | --- | --- | --- | --- | --- |
-|   |  Culture, social innovation, citizen engagement and participation | Sustainable Espoo resident participation group strengthens the resident-based approach and their inclusion in Espoo’s sustainable development work.
+Culture, social innovation, citizen engagement and participation | Sustainable Espoo resident participation group strengthens the resident-based approach and their inclusion in Espoo’s sustainable development work.
 Co-creation of city districts with different stakeholders; city as an orchestrator and platform.
 SPARCS co-creation model toolkit to facilitate co-creation of a sustainable and smart urban area developed and piloted in Kera.
 G urban network built by Nokia — the global 5G leader headquartered in Kera — enables the use of advanced circular economy, mobility, and IoT solutions in the district.
@@ -1240,13 +1215,12 @@ My Espoo on the Map survey becomes an established part of the initial data for u
 Espoo Master Plan planners gather information through studies and surveys by hearing experts in various fields discussing matters with residents and  |   |   |
 1
 
-|   |  | My Espoo on the Map survey for residents and use of the experience-based data in city planning.
+My Espoo on the Map survey for residents and use of the experience-based data in city planning.
 Residents, NGOs, companies and other Espoo-based parties provided with opportunities to participate in the preparation of the new Espoo Master Plan 2060.
 Espoo Disability Council has a special working group to work on issues related to accessibility in built environment and public transport.
 Espoo Elderly Council influences the planning, preparation and monitoring of the city's activities important to older people's well-being, health, inclusion, living environment, housing, mobility or coping with daily activities. | stakeholders, such as business representatives and the operators in charge of the City's technical maintenance to develop a comprehensive, data-based and holistic plan.
 Built environment and public transport are accessible for all, including the disabled and the elderly. |   |
-| --- | --- | --- | --- | --- |
-|   |  Capacity and capability building | Capacity building on the effects of new national Building Act on local level.
+Capacity and capability building | Capacity building on the effects of new national Building Act on local level.
 Capacities and tools developed to facilitate co-creation of a sustainable and smart urban areas; requiring new systemic thinking by both city officials and stakeholders.
 Espoo takes part in CrAFt reference cities network learning and sharing ideas on how to develop climate-neutral, beautiful and inclusive cities in line with the New European Bauhaus (NEB) initiative | Systemic participation of citizens in city planning and services through Espoo participation model
 Guidance on low-carbon building provided to citizens and developers.
@@ -1258,9 +1232,8 @@ ESPOO ESBO
 
 Climate Neutrality Action Plan
 
-|   |  | Internal eco-support network empowering and building capacity of city officials. | City officials promoting more sustainable choices in their work. |  |   |
-| --- | --- | --- | --- | --- | --- |
-|   |  Finance, public procurement and business models | Multi-organizational development projects promote the creation of development and innovation environments, where companies and research institutes create climate-neutral urban solutions and develop sustainable scalable business models.
+Internal eco-support network empowering and building capacity of city officials. | City officials promoting more sustainable choices in their work.
+Finance, public procurement and business models | Multi-organizational development projects promote the creation of development and innovation environments, where companies and research institutes create climate-neutral urban solutions and develop sustainable scalable business models.
 Joint “solution pathways” to sustainable city districts identified with key local stakeholders (RAKKE ecosystems)
 Business Finland Decarbonized Cities Programme encourages companies to develop solutions to selected challenges in the built environment sector.
 Climate-wise control of construction - multi-objective optimization - the carbon footprint and total costs during the entire life cycle of the buildings are assessed and affect the planning phase.
@@ -1276,7 +1249,7 @@ ESBO
 Climate Neutrality Action
 Plan
 
-|  Waste & circular economy | Governance, policy, regulation, and local development strategies | Sustainable Espoo Programme defines circular economy as one of five focus areas setting joint targets.
+Waste & circular economy | Governance, policy, regulation, and local development strategies | Sustainable Espoo Programme defines circular economy as one of five focus areas setting joint targets.
 Circular Cities Declaration provides a systemic framework to promoting circular economy in the city with residents and stakeholders
 Waste management regulations improve sorting opportunities:
 • Biowaste sorting expanded to properties with 1–4 households.
@@ -1296,8 +1269,7 @@ Resource efficiency
 Reduced need of virgin raw materials
 Liveable and resilient way of life
 Products, services and infrastructure that is durable and adaptable  |
-| --- | --- | --- | --- | --- | --- |
-|   |  Technology and infrastructure | Cooperation with partners in development projects to create new solutions and pilot new innovations.
+Technology and infrastructure | Cooperation with partners in development projects to create new solutions and pilot new innovations.
 Building the knowledge-base for the collection and processing of significant local material flows. | Improved sorting opportunities at schools and other city facilities and private households.
 Reduce the amount of plastic in mixed household waste by half compared to 2018. |  | Adoption of climate-friendly lifestyles
 Increased understanding of circular economy  |
@@ -1320,17 +1292,16 @@ ESBO
 Climate Neutrality Action
 Plan
 
-|   |  | appealing by e.g. placing vegetarian option first in line.
+appealing by e.g. placing vegetarian option first in line.
 Collaboration with education sector, for example involving students to follow-up the plastic waste in their own school in real-time in a sensor pilot.
 Sustainability in cultural and sports events promoted through guidelines and funding criteria for event organizers.
 Sustainable Espoo Programme projects include citizen engagement activities focusing on circular and sharing economy. |  |   |
-| --- | --- | --- | --- | --- |
-|   |  Capacity and capability building | Promoting sustainable consumption and circular economy thinking with children and young people as part of the early childhood education, schools and youth work in reducing waste, learning recycling and circular economy.
+Capacity and capability building | Promoting sustainable consumption and circular economy thinking with children and young people as part of the early childhood education, schools and youth work in reducing waste, learning recycling and circular economy.
 Lessons and materials to support environmental education at schools.
 Interior eco-support network empowering and building capacity of city officials | Children and youth growing up with circularity mindset.
 Recycling and the use of circular solutions increased in the city's own premises.
 City officials promoting circular economy and sustainable consumption in their work (eg. reusing office furniture)  |   |
-|   |  Finance, public procurement and business models | City districts of Kera and Kiviruukki developed with circularity principles, bringing together circular economy actors and serving as piloting platforms. | Learnings from Kera and Kiviruukki used in the development of other city districts.
+Finance, public procurement and business models | City districts of Kera and Kiviruukki developed with circularity principles, bringing together circular economy actors and serving as piloting platforms. | Learnings from Kera and Kiviruukki used in the development of other city districts.
 New circular business models.  |   |
 6
 
@@ -1338,15 +1309,14 @@ ESPOO ESBO
 
 Climate Neutrality Action Plan
 
-|   |  | Ekomo platform for circular economy businesses.
+Ekomo platform for circular economy businesses.
 Joint “solution path” to circular economy identified with key local stakeholders (RAKKE ecosystems)
 National Voluntary Green deals as a tool to commit to the circular economy in public procurement. eg. to reduce plastic waste.
 Espoo procurement IT system update to improve assessment of sustainability in procurement
 Sustainability and climate requirements discussed with the vendors already in the pre-tender phase. | Improved contract management and follow-up of sustainability requirements and metrics of the contracts.
 Implementing sanctions where relevant.
 Increase the number of sustainable purchase criterias and shared also with other public organizations to make them a market standard. |  |   |
-| --- | --- | --- | --- | --- | --- |
-|  Green infrastructure & nature-based solutions | Governance, policy, regulation, and local development strategies | Nature conservation measures 2021–2030 promoting the support of existing protected areas and supplement the nature conservation network regionally and qualitatively
+Green infrastructure & nature-based solutions | Governance, policy, regulation, and local development strategies | Nature conservation measures 2021–2030 promoting the support of existing protected areas and supplement the nature conservation network regionally and qualitatively
 Espoo has identified 23 sites to become nature reserves by 2030, at the rate of three new sites per year
 Nature-wise Espoo project: roadmap to biodiversity recovery and the achievement of no net loss by 2035, including development of ecological offsetting | Nature-wise Espoo roadmap defines biodiversity preservation methods and actions. Including established pathways for no net loss and greenspace preservation and recovery.
 A total of about 390 hectares of new nature reserves by 2030 (23 new sites)
@@ -1355,7 +1325,7 @@ Sufficient ecosystem services
 Environments better adapted to and combating adverse effects of climate change (e.g. floods, drought, urban heat island effect)  |
 7
 
-|   |  | Assessment of carbon sink impacts in planning significant new construction areas |  |  | More attractive and pleasant urban environments
+Assessment of carbon sink impacts in planning significant new construction areas | More attractive and pleasant urban environments
 Reduced air and noise pollution
 Habitats for local wildlife, including many endangered species
 Ecological connectivity
@@ -1363,12 +1333,11 @@ Liveable and resilient way of life
 Adoption of nature- and climate-friendly lifestyles
 Benefits to physical and mental health
 Improved resiliency  |
-| --- | --- | --- | --- | --- | --- |
-|   |  Technology and infrastructure | Integrating and developing the green factor tool in land use planning to increase greenery in construction and infrastructure projects
+Technology and infrastructure | Integrating and developing the green factor tool in land use planning to increase greenery in construction and infrastructure projects
 Steering construction to existing centres to conserve carbon sinks in zoning regulation
 Recreational visions for major districts | Possible technological solutions for carbon sequestration
 Introducing more technical green structures such as green roofs, decks and green walls in urban environments  |   |   |
-|   |  Culture, social innovation, citizen engagement and participation | Protection of green areas and infrastructure to prevent deforestation and to save carbon sinks and storages
+Culture, social innovation, citizen engagement and participation | Protection of green areas and infrastructure to prevent deforestation and to save carbon sinks and storages
 Promoting permeable surfaces in infrastructure construction and using impermeable surfaces in a diverse manner to maximize the use of urban space and reduce the amount of used materials (e.g. centralized parking to free up space for green infrastructure, utilization of roof surfaces as suggested in Espoo’s storm water program and green roof vision) | Sustainable Espoo resident participation group strengthens the resident-based approach and their inclusion in Espoo’s sustainable development work.
 Promoting citizens to take care of their environment and biodiversity that  |   |   |
 8
@@ -1379,15 +1348,14 @@ ESBO
 Climate Neutrality Action
 Plan
 
-|   |  | supports healthier ecosystems and carbon sinks (eg. the “Our Park” initiative, community effort for invasive species eradication, allotments for urban agriculture, gardening food plants in daycares and schools)
+supports healthier ecosystems and carbon sinks (eg. the “Our Park” initiative, community effort for invasive species eradication, allotments for urban agriculture, gardening food plants in daycares and schools)
 Supporting local nature associations | and landowners – to participate in preparation and implementation of Nature-wise Espoo Roadmap |  |   |
-| --- | --- | --- | --- | --- | --- |
-|   |  Capacity and capability building | Developing data, knowledge, and future-forecasting methods on carbon sinks
+Capacity and capability building | Developing data, knowledge, and future-forecasting methods on carbon sinks
 Providing children, families, and residents of all age possibilities to learn about nature, its conservation and sustainable lifestyle at city-owned Nature House Villa Elfvik
 Internal eco-support network empowering and building capacity of city officials | Better understanding and knowledge on carbon sinks enables the city to plan holistically sustainable carbon measures that take into account the values of different green spaces and green structures, as well as the role of vegetation and soils in the carbon balance
 Increased environmental awareness of residents
 City officials making more sustainable choices in their work  |   |   |
-|   |  Finance, public procurement and business models | Supporting businesses in their nature work integrating science-based targets for nature through a nature-themed business and research network | Private sector's increased contribution towards the restoration and conservation of biodiversity  |   |   |
+Finance, public procurement and business models | Supporting businesses in their nature work integrating science-based targets for nature through a nature-themed business and research network | Private sector's increased contribution towards the restoration and conservation of biodiversity
 O
 
 ESPOO
@@ -1433,7 +1401,7 @@ The energy sector currently produces the largest share of the city's climate emi
 Developing a smarter and more flexible power grid through cooperation will provide the basis for achieving carbon neutrality in both district heating and transport. The city group's building stock has and will continue to set an example in the adoption of new energy solutions and the promotion of energy efficiency. Energy efficiency and energy saving play an important role in reducing the need for energy production, while bringing economic savings.  |
 1
 
-|  Mobility & transport | M1: Promoting walking and cycling
+Mobility & transport | M1: Promoting walking and cycling
 M2: Promoting the shift to and reducing emissions of public transport
 M3: Reducing emission of car traffic | In Espoo, as in other Finnish cities, emissions from transport are a persistent challenge. To achieve the climate neutrality target, total transport emissions in Espoo must start to fall and solutions will be sought for sustainable mobility and transport throughout the city area. This requires both an increase in the share of sustainable transport modes (walking, cycling and public transport) and a shift from fossil fuels to fossil-free fuels. The increase of remote working helps to reduce the need to travel.
 
@@ -1449,7 +1417,6 @@ Espoo is Finland's leading city in the uptake of e-mobility and electrification 
 The use of biofuels is promoted by strengthening the conditions for the production and distribution of biogas. Espoo will also support the market with its own procurements.
 
 The aim of the city is for all is for all residents to be able to make smooth and low-emission everyday journeys supported by well-functioning, low-carbon urban logistics. Developing Sustainable Urban Mobility Plan (SUMP) and Sustainable Urban Logistics Plan (SULP) in co-operation with stakeholders and citizens creates a traffic system that better addresses their needs  |
-| --- | --- | --- |
 2
 
 ESPOO
@@ -1458,7 +1425,7 @@ ESBO
 Climate Neutrality Action
 Plan
 
-|  Built environment | B1: Developing Espoo's city districts as innovation hubs for low-carbon and smart solutions
+Built environment | B1: Developing Espoo's city districts as innovation hubs for low-carbon and smart solutions
 
 B2: Promoting low-carbon construction and emission-free work sites | Espoo uses land-use planning to direct construction to centres and along good public transport connections in a way that is environmentally friendly and sustainable, to preserve carbon sinks and promote the use of public transport. Climate impact assessments are carried out in planning projects to assess the effects on climate emissions, carbon sequestration and adaptation to climate change.
 
@@ -1471,21 +1438,19 @@ Resource wisdom and overall sustainability of construction will be achieved by p
 Emissions and other environmental impacts throughout the construction life cycle will be reduced, from the manufacture of building materials to the construction phase itself, from the use of the building to the recycling and reuse of materials and parts of the building once it has reached the end of its life cycle.
 
 We are implementing the national green deal agreement towards emission-free construction sites. Its aim is to ensure that no fossil fuels are used on city's own construction sites after 2025. In addition, we will gradually move to lower-emission construction equipment and transport vehicles. We also promote emission-free construction sites on private developments through land use steering.  |
-| --- | --- | --- |
-|  Waste and circular economy | W1: Reducing emissions from waste treatment
+Waste and circular economy | W1: Reducing emissions from waste treatment
 
 W2: Promoting circular solutions | Of the household waste generated in the capital region, 47 % in recycled. The rest is incinerated with energy recovery. Household waste do no longer end up in landfills. The goal is to increase the recycling of household waste to 60 % by 2025. This requires more effective and better sorting of the waste where is it is generated, so that more waste goes to recycling. By 2030, Helsinki Region Environmental Services HSY, the regional provider of waste management and water supply services, is committed to providing carbon-neutral water services and waste management.
 
 In addition, Espoo is working to realise the circular economy by developing its own operations and the cooperation with companies and partners. The city is setting an example through its own actions, providing residents with services and guiding decision-making.  |
 3
 
-|   |  | Espoo promotes circular economy both through the development of its own processes and services, as well as working in cooperation with multiple partners to promote the shift to circular solutions in industry and providing better shared and circular services to residents.
+Espoo promotes circular economy both through the development of its own processes and services, as well as working in cooperation with multiple partners to promote the shift to circular solutions in industry and providing better shared and circular services to residents.
 
 In the city's own operations, circular economy is promoted in construction and demolition, efficient use of space, reuse of materials and promoting sustainable procurement practices. In construction, circular solutions include the reuse of wooden elements and metal structures. In the food system, nutrient cycling is important and can be improved, for example, through agricultural land regeneration. In transport, circular solutions include the recycling of batteries for electric cars, biogas from bio-waste and car sharing. Climate friendly meals and food wastage reduction in city's food services promoted in order to reduce consumption-related emissions.
 
 City districts of Kera and Kiviruukki act as circular economy development zones, bringing together circular economy actors and serving as piloting platform for future-proof solutions. Espoo strives to be an appealing area for circular economy business as well as collaboration related to research, development and innovation (RDI).  |
-| --- | --- | --- |
-|  Green infrastructure & nature-based solutions | G1: Directing city growth to built-up areas and preserving carbon sinks
+Green infrastructure & nature-based solutions | G1: Directing city growth to built-up areas and preserving carbon sinks
 
 G2: Fostering biodiversity and nature-based solutions in urban development | Espoo is an exceptionally green city, where forests cover nearly 60 % of the city's surface area. The goal is to preserve carbon sinks when possible, to offset the residual CO2 emissions in 2030. In addition, Espoo's goal is to be a pioneer in reconciling the needs of a growing city and protection of biodiversity. We are finding ways for the urban development to foster, revitalize and increase biodiversity to achieve not only our climate goals, but also the ambitious goal of no net loss by 2035. Espoo's nature conservation measures include a plan to support existing protected areas and supplement the nature conservation network regionally and qualitatively.
 
@@ -1506,11 +1471,10 @@ design and implementation as a part of town planning, plot conveyance and buildi
 
 # ENERGY SYSTEMS
 
-|  B-2.2: Individual action outlines  |   |   |
-| --- | --- | --- |
-|  Action outline | Action name | E1: Espoo Clean Heat - replacing fossil fuels in district heating  |
-|   |  Action type | Technical intervention  |
-|   |  Action description | The production of district heat generates the biggest share of Espoo's current emissions. The joint Espoo Clean Heat goal of Espoo and the district heating provider Fortum involves transitioning to fully carbon-neutral district heat production during the 2020s. The use of coal for energy production will be discontinued in 2025.
+B-2.2: Individual action outlines
+Action outline | Action name | E1: Espoo Clean Heat - replacing fossil fuels in district heating
+Action type | Technical intervention
+Action description | The production of district heat generates the biggest share of Espoo's current emissions. The joint Espoo Clean Heat goal of Espoo and the district heating provider Fortum involves transitioning to fully carbon-neutral district heat production during the 2020s. The use of coal for energy production will be discontinued in 2025.
 
 The district heating system is undergoing a major transformation to replace fossil fuels with smart and flexible solutions that are largely based on waste heat utilization, renewable electricity, heat pumps and electric boilers, and heat storage solutions such as accumulators. Artificial intelligence optimizes the operations of the entire system.
 
@@ -1545,33 +1509,31 @@ ESBO
 Climate Neutrality Action
 Plan
 
-|   | Action scale & addressed entities | Espoo and neighboring communities
+Action scale & addressed entities | Espoo and neighboring communities
 Energy production facilities and houses, flats and buildings connected to district heating system (250,000 end users)  |
-| --- | --- | --- |
-|   |  Involved stakeholders | City of Espoo
+Involved stakeholders | City of Espoo
 Microsoft
 Caruna
 End-users  |
-|  Impact & cost | Generated renewable energy (if applicable) | By 2030->
+Impact & cost | Generated renewable energy (if applicable) | By 2030->
 GWh of yearly generation via biofuels, assuming that future investments focus on non-burning methods and production doesn't decrease between 2023-2030.
 
 GWh of total yearly carbon-free generation, assuming 5% compensation and no change in production need.  |
-|   | Removed/substituted energy, volume or fuel type | By 2030->
+Removed/substituted energy, volume or fuel type | By 2030->
 GWh of yearly fossil-based generation to be substituted by carbon-free means, assuming 5% compensation and no change in production need.  |
-|   | GHG emissions reduction estimate (total) per emission source sector | Emissions 2030 compared to 2022
+GHG emissions reduction estimate (total) per emission source sector | Emissions 2030 compared to 2022
 kt  |
-|   | Total costs and costs by CO2e unit | Total costs: 229 674 k€
+Total costs and costs by CO2e unit | Total costs: 229 674 k€
 Costs by t CO2e unit: 720 €
 (In addition, total cross-cutting costs for energy systems : 7 417 k€)  |
-|  B-2.2: Individual action outlines  |   |   |
-| --- | --- | --- |
-|  Action outline | Action name | E2: Reducing emissions from electricity consumption and oil heating in housing, industry, and services  |
-|   |  Action type | Technical intervention
+B-2.2: Individual action outlines
+Action outline | Action name | E2: Reducing emissions from electricity consumption and oil heating in housing, industry, and services
+Action type | Technical intervention
 Physical / spatial intervention  |
-|   |  Action description | Energy efficiency will be improved, and the use of renewable energy increased in different types of city districts considering their special characteristics. This includes residential areas, commercial areas, industrial areas and workplace areas that differ from one another by building type, functions and density, among other factors.  |
+Action description | Energy efficiency will be improved, and the use of renewable energy increased in different types of city districts considering their special characteristics. This includes residential areas, commercial areas, industrial areas and workplace areas that differ from one another by building type, functions and density, among other factors.
 7
 
-|   |  | In the climate-neutral Espoo scenario it is expected that oil-heated buildings will switch to other forms of heating as follows: single-family and terraced houses mainly to heat pumps and blocks of flats, service buildings and industrial buildings, about half to heat pumps and half to district heating.
+In the climate-neutral Espoo scenario it is expected that oil-heated buildings will switch to other forms of heating as follows: single-family and terraced houses mainly to heat pumps and blocks of flats, service buildings and industrial buildings, about half to heat pumps and half to district heating.
 
 The city will promote this systemic change with the development of district-level energy solutions combined with energy guidance and steering. District development will involve extensive cooperation between different sectors. The action considers Espoo's different district types, the collaboration of various energy forms, and the promotion of the usage and sharing of data.
 
@@ -1583,9 +1545,8 @@ Additional actions identified during the CCC process (potential future actions o
 • Large operators utilizing certified green electricity: The City of Espoo does not own an energy company, so the most significant opportunity to influence the electricity market is to purchase certified emission-free electricity. Espoo City Group uses CO2 certified electricity. However, this is not currently reflected in the emissions calculation, but the share of electricity consumed is calculated according to the national average. Additional action scenario takes into account the actual emissions from the Espoo City Group's electricity consumption making visible the impact of city's commitment to purchasing certified green electricity.
 • Encouraging residents to buy certified green electricity. The scenario estimates that 10% of people in Espoo would buy green electricity in 2030. City's role is to promote this by providing information and communication.
 • Increasing the production of solar electricity. It is estimated that 0.6 GWh of solar electricity will be added in Espoo by 2030.  |
-| --- | --- | --- |
-|  Reference to impact pathway | Field of action | Energy systems  |
-|   |  Systemic lever | Regulation
+Reference to impact pathway | Field of action | Energy systems
+Systemic lever | Regulation
 Technology and infrastructure
 Capacity and capability development  |
 8
@@ -1596,10 +1557,9 @@ ESBO
 Climate Neutrality Action
 Plan
 
-|   |  | Citizen engagement and participation
+Citizen engagement and participation
 Business models  |
-| --- | --- | --- |
-|   |  Outcome
+Outcome
 (according to module B-1.1) | District-level guidelines, zoning regulations and/or regional energy assessments to promote local energy production and energy efficiency.
 
 Active energy citizenship is increased. Citizens are aware of their household’s energy issues, motivated to save energy and invest in sustainable energy.
@@ -1609,16 +1569,16 @@ More energy and solar communities that produce their own energy and feed surplus
 More renewable and circular energy sources (e.g. solar and geothermal energy, excess heat) are used by households and companies.
 
 Increased investments by households and businesses to solar panels, geothermal energy and other sustainable energy modes help to save energy and cut energy bills.  |
-|  Implementation | Responsible bodies for implementation | Citizens and housing associations
+Implementation | Responsible bodies for implementation | Citizens and housing associations
 Industry and service companies
 Timeline: 2023-2030  |
-|   | Action scale & addressed entities | City-wide
+Action scale & addressed entities | City-wide
 Citizens, housing associations, companies  |
-|   | Involved stakeholders | City of Espoo
+Involved stakeholders | City of Espoo
 Energy companies
 Private businesses, citizens, housing associations  |
-|  Impact & cost | Generated renewable energy (if applicable) | 51 GWh per year of generated energy from heat pumps.  |
-|   | Removed/substituted energy, volume or fuel type | Substituted oil heating from 2022 -> 160 GWh of yearly consumption substituted to heat pumps and carbon-free district heating. Assuming 95% reduction in buildings utilizing oil heating.
+Impact & cost | Generated renewable energy (if applicable) | 51 GWh per year of generated energy from heat pumps.
+Removed/substituted energy, volume or fuel type | Substituted oil heating from 2022 -> 160 GWh of yearly consumption substituted to heat pumps and carbon-free district heating. Assuming 95% reduction in buildings utilizing oil heating.
 
 Substituted fossil-based electrical energy is dependent on national changes. The percentage of carbon-free electrical production should be 100% by 2035.  |
 9
@@ -1631,7 +1591,7 @@ Plan
 
 #
 
-|  GHG emissions reduction estimate (total) per emission source sector | Oil heating
+GHG emissions reduction estimate (total) per emission source sector | Oil heating
 Emissions 2030 compared to 2022 -55 kt
 
 Reducing emissions from electricity consumption
@@ -1641,8 +1601,7 @@ Electric heating
 Emissions 2030 compared to 2022 -34 kt
 
 Additional actions emissions 2030 compared to 2022. -32 kt  |
-| --- | --- |
-|   |  Total costs and costs by CO2e unit
+Total costs and costs by CO2e unit
 
 Total costs : 19 359 k€ inside borders city of Espoo.
 Costs by t CO2e unit : 143 €
@@ -1665,7 +1624,7 @@ ESBO
 Climate Neutrality Action
 Plan
 
-|   |  | In addition, city-owned rental housing company Espoon Asunnot has joined energy efficiency agreement for rental housing companies and also aims to reduce total energy consumption by 7.5 per cent by the end of 2025 compared to 2015.
+In addition, city-owned rental housing company Espoon Asunnot has joined energy efficiency agreement for rental housing companies and also aims to reduce total energy consumption by 7.5 per cent by the end of 2025 compared to 2015.
 
 Energy savings are also achieved by modernising city premises and street lighting and by replacing old light sources with led technology. This has reduced the energy consumption of lighting on city premises by around 4 %.
 
@@ -1674,12 +1633,11 @@ Espoo and Espoon Asunnot will continue to use zero-emission electricity in all o
 In addition, Fortum is implementing a heating optimisation service (Smart Living) in approximately 116 properties, which aims to ensure continuously stable conditions in the buildings and optimise the control and energy efficiency of the heating systems and equipment in the buildings. In addition, the aim is to facilitate building maintenance and technical service, for example through remote management, proactive alarms and automated data analysis, and to enable users to monitor and report on the electricity, heat and space conditions in the building. To launch the service, more than 4,000 temperature and humidity sensors were installed in mainly around 110 day-care centres and schools in 2020. The information from the sensors and the weather forecast will be used to control the heating of the property. The service will help to improve indoor temperature uniformity, improve the energy efficiency of the buildings and reduce heating costs and emissions.
 
 Espoon Asunnot builds the capacity and knowhow of active residents through annual trainings. The energy expert trainings focus on the basics of energy and water consumption in properties and how to save energy. The aim is to highlight aspects through which residents themselves can influence the reduction of energy consumption.  |
-| --- | --- | --- |
-|  Reference to impact pathway | Field of action | Energy systems  |
-|   | Systemic lever | Technology and infrastructure
+Reference to impact pathway | Field of action | Energy systems
+Systemic lever | Technology and infrastructure
 Local development strategies
 Public procurement  |
-|   | Outcome (according to module B-1.1) | Heating in city's building stock is fossil-free. 10% of the energy consumption of new buildings is covered with locally produced renewable energy generated on site (solar, geothermal, wind).
+Outcome (according to module B-1.1) | Heating in city's building stock is fossil-free. 10% of the energy consumption of new buildings is covered with locally produced renewable energy generated on site (solar, geothermal, wind).
 
 Energy manager and building monitoring service use in city-owned buildings continues and expands.
 
@@ -1694,17 +1652,16 @@ Plan
 
 #
 
-|   |  | City employees implement energy-saving measures in workplaces.  |
-| --- | --- | --- |
-|   | Responsible bodies/person for implementation | City of Espoo
+City employees implement energy-saving measures in workplaces.
+Responsible bodies/person for implementation | City of Espoo
 Espoon Asunnot rental housing company
 Timeline: 2023-2030  |
-|   |  Action scale & addressed entities | City-wide
+Action scale & addressed entities | City-wide
 City-owned buildings  |
-|   |  Involved stakeholders | Fortum
+Involved stakeholders | Fortum
 Gasum
 End-users  |
-|  Impact & cost | GHG emissions reduction estimate (total) per emission source sector | Optimization of heating of city buildings
+Impact & cost | GHG emissions reduction estimate (total) per emission source sector | Optimization of heating of city buildings
 Emissions 2030 compared to 2022 -0,4 kt
 
 Heating oil blending obligation
@@ -1717,7 +1674,7 @@ Improvement in energy consumption in the old building stock
 Emissions 2030 compared to 2022 -3,3 kt.
 
 NOTE: Emission reductions listed above are also included in E1 and E2 city-wide emission reduction calculations.  |
-|   | Total costs and costs by CO2e unit | Total costs : 12 513 k€
+Total costs and costs by CO2e unit | Total costs : 12 513 k€
 (In addition, total cross-cutting costs for energy systems : 7 417 k€)  |
 
 B-2.2: Individual action outlines
@@ -1729,29 +1686,28 @@ Climate Neutrality Action
 
 Plan
 
-|  Action outline | Action name | E4: Enabling the increased electrification  |
-| --- | --- | --- |
-|   |  Action type | Technical intervention
+Action outline | Action name | E4: Enabling the increased electrification
+Action type | Technical intervention
 Physical / spatial intervention  |
-|   |  Action description | Espoo aims to phase out fossil fuels for district heating by 2029. The resulting increased electrification of Espoo's district heat production, combined with an increase in electric mobility and other electricity consumption, will also require the development of Espoo's electricity distribution network. This will ensure that the network will remain reliable for Espoo's residents in the future as the energy transition progresses.
+Action description | Espoo aims to phase out fossil fuels for district heating by 2029. The resulting increased electrification of Espoo's district heat production, combined with an increase in electric mobility and other electricity consumption, will also require the development of Espoo's electricity distribution network. This will ensure that the network will remain reliable for Espoo's residents in the future as the energy transition progresses.
 
 To this aim, City of Espoo has signed a strategic cooperation agreement with the electricity distribution company Caruna. The aim of the cooperation is to support Espoo's growth and carbon neutrality goals with a strong electricity network that meets the energy needs of the future and enables clean energy solutions for Espoo's residents and businesses. The co-operation includes promoting energy storages, electric transport, and the use of renewable energy.  |
-|  Reference to impact pathway | Field of action | Energy systems  |
-|   |  Systemic lever | Governance and policy
+Reference to impact pathway | Field of action | Energy systems
+Systemic lever | Governance and policy
 Technology and infrastructure
 Local development strategies  |
-|   |  Outcome (according to module B-1.1) | Implementation of required power grid investments to facilitate increased electricity use enabling carbon-neutral district heating and large-scale shift to e-mobility.  |
-|  Implementation | Responsible bodies/person for implementation | Caruna
+Outcome (according to module B-1.1) | Implementation of required power grid investments to facilitate increased electricity use enabling carbon-neutral district heating and large-scale shift to e-mobility.
+Implementation | Responsible bodies/person for implementation | Caruna
 City of Espoo
 Timeline: 2023-2030  |
-|   |  Action scale & addressed entities | City-wide
+Action scale & addressed entities | City-wide
 Electric grid
 Buildings, streets
 Charging infrastructure  |
-|   |  Involved stakeholders | Fortum
+Involved stakeholders | Fortum
 E-mobility charging operators  |
-|  Impact & cost | GHG emissions reduction estimate (total) per emission source sector | No direct emission reductions. Contributes towards / enables actions E1 and M3.  |
-|   |  Total costs and costs by CO2e unit | Total Costs : 109 000 k€  |
+Impact & cost | GHG emissions reduction estimate (total) per emission source sector | No direct emission reductions. Contributes towards / enables actions E1 and M3.
+Total costs and costs by CO2e unit | Total Costs : 109 000 k€
 3
 
 ESPOO
@@ -1764,16 +1720,15 @@ Plan
 
 # MOBILITY &amp; TRANSPORT
 
-|  B-2.2: Individual action outlines  |   |   |
-| --- | --- | --- |
-|  Action outline | Action name | M1: Promoting walking and cycling  |
-|   |  Action type | Physical / spatial intervention
+B-2.2: Individual action outlines
+Action outline | Action name | M1: Promoting walking and cycling
+Action type | Physical / spatial intervention
 Other intervention  |
-|   |  Action description | Espoo is developing a more walkable urban environment. We bring together the knowledge of the elements of walkability and livability of urban space for planners. We will identify the characteristics of urban space that influence walkability, so that they can be used in the design and construction of a walkable city. We will identify target areas for pedestrianisation in urban centres, where we will focus on pedestrianisation. We will compile a map of special accessibility areas, i.e. areas where accessibility is particularly important, to share information with planners.  |
-|   |   |  We are constantly developing our walking and cycling route network. When building a new street network, our aim is to include the necessary walking and cycling routes and grade separations. Missing routes are being constructed along existing streets. The existing routes are constantly being renovated and their traffic safety is enhanced.  |
-|   |   |  We will improve the flow and safety of cycling by converting cycle paths into one-way cycle lanes and improving cycle parking. We will equip all new cycle parking facilities with secure frame-locking racks.  |
-|   |  | We have identified 2050 target network for cycling, with an intermediate goal of half of the target network to be ready by 2030. It describes the key cycling routes in Espoo and includes the high-quality routes, called ‘bicycle corridors’ and regional routes defined at regional level. The network is complemented by the main routes serving Espoo’s internal cycling traffic.  |
-|   |  | The construction is a long-term effort. Most of the target network is existing combined pedestrian and cycling routes. For many parts, the routes in the target network already exist, but their quality level does not meet the targets set. The target network also presents entirely new connections or connection needs to be studied during further planning. Some of the target network will be constructed in connection with other street, road and traffic projects, and part will be carried out as independent cycling projects. Half of the target network (60 km) is estimated to be ready by 2030.  |
+Action description | Espoo is developing a more walkable urban environment. We bring together the knowledge of the elements of walkability and livability of urban space for planners. We will identify the characteristics of urban space that influence walkability, so that they can be used in the design and construction of a walkable city. We will identify target areas for pedestrianisation in urban centres, where we will focus on pedestrianisation. We will compile a map of special accessibility areas, i.e. areas where accessibility is particularly important, to share information with planners.
+We are constantly developing our walking and cycling route network. When building a new street network, our aim is to include the necessary walking and cycling routes and grade separations. Missing routes are being constructed along existing streets. The existing routes are constantly being renovated and their traffic safety is enhanced.
+We will improve the flow and safety of cycling by converting cycle paths into one-way cycle lanes and improving cycle parking. We will equip all new cycle parking facilities with secure frame-locking racks.
+We have identified 2050 target network for cycling, with an intermediate goal of half of the target network to be ready by 2030. It describes the key cycling routes in Espoo and includes the high-quality routes, called ‘bicycle corridors’ and regional routes defined at regional level. The network is complemented by the main routes serving Espoo’s internal cycling traffic.
+The construction is a long-term effort. Most of the target network is existing combined pedestrian and cycling routes. For many parts, the routes in the target network already exist, but their quality level does not meet the targets set. The target network also presents entirely new connections or connection needs to be studied during further planning. Some of the target network will be constructed in connection with other street, road and traffic projects, and part will be carried out as independent cycling projects. Half of the target network (60 km) is estimated to be ready by 2030.
 4
 
 ESPOO
@@ -1782,17 +1737,16 @@ ESBO
 Climate Neutrality Action
 Plan
 
-|   |  | The city bikes in Espoo and Helsinki are in use from early April to late October. The city bike network shared by the two cities includes almost 4,600 bikes and 460 bike stations. In Espoo, there are 110 stations. The all-season pass (seven months) costs 35 euros making it a very affordable option for most citizens. Also daily and weekly passes are available.
+The city bikes in Espoo and Helsinki are in use from early April to late October. The city bike network shared by the two cities includes almost 4,600 bikes and 460 bike stations. In Espoo, there are 110 stations. The all-season pass (seven months) costs 35 euros making it a very affordable option for most citizens. Also daily and weekly passes are available.
 
 To further promote walking and cycling, we communicate to residents, partners and the Espoo community about sustainable transport and the impact of personal mobility choices on climate emissions. We offer cycling courses for adults who did not learn to ride a bicycle as a child. Our communication aims to provide information on the opportunities to make sustainable mobility choices in everyday life. We are testing ways to support companies that provide bicycle maintenance and repair services.  |
-| --- | --- | --- |
-|  Reference to impact pathway | Field of action | Transport and mobility  |
-|   | Systemic lever | Technology and infrastructure
+Reference to impact pathway | Field of action | Transport and mobility
+Systemic lever | Technology and infrastructure
 Citizen engagement and participation
 Capacity and capability development
 Local development strategies
 Business models  |
-|   | Outcome (according to module B-1.1) | Urban centres design and construction promotes a walkable city.
+Outcome (according to module B-1.1) | Urban centres design and construction promotes a walkable city.
 
 Renovations and improvement of traffic safety on existing cycle lanes. Half of 2050 high-quality target network for cycling ready by 2030 (60 km). High-quality cycle parking at rail stations. Popularity and accessibility of walking and cycling has grown.
 
@@ -1801,7 +1755,7 @@ More citizens, including children and adults representing marginalized groups, h
 Better knowledge and capacities by city officials to promote sustainable transport, walkability, and liveability in their work.
 
 New bicycle-related business models.  |
-|  Implementation | Responsible bodies/person for implementation | City of Espoo Departments:
+Implementation | Responsible bodies/person for implementation | City of Espoo Departments:
 Public works department
 Traffic planning department
 Centre of Excellence for Sustainable Development
@@ -1819,18 +1773,17 @@ Plan
 
 B-2.2: Individual action outlines
 
-|  Action outline | Action name | M2: Promoting the shift to and reducing emissions of public transport  |
-| --- | --- | --- |
-|   |  Action type | Physical / spatial intervention
+Action outline | Action name | M2: Promoting the shift to and reducing emissions of public transport
+Action type | Physical / spatial intervention
 Technical intervention  |
-|  Action description | Espoo is steering new construction towards district centres to create a more unified urban structure that relies on public transport. In recent years, the city has invested heavily in public transportation infrastructure and investments will continue during the 2020s. The extension of the Western Metro (2022), the opening of the Jokeri Light Trail (2024), and Espoo City Rail Link (2028) are significant improvements to the capital region public transport system.
+Action description | Espoo is steering new construction towards district centres to create a more unified urban structure that relies on public transport. In recent years, the city has invested heavily in public transportation infrastructure and investments will continue during the 2020s. The extension of the Western Metro (2022), the opening of the Jokeri Light Trail (2024), and Espoo City Rail Link (2028) are significant improvements to the capital region public transport system.
 
 Western Metro (2022)
 
 An extension to subway system has been one of the biggest investments in public transport in the Helsinki capital area during the 2010s and 2020s. West Metro construction project (21 km) was completed and commuter traffic began on phase II, the Matinkylä–Kivenlahti section, in December 2022. Phase I consisted of constructing the Ruoholahti–Matinkylä section, on which commuter traffic began in November 2017.
 
 Länsimetro Oy is a limited liability company that is jointly owned by the cities of Espoo and Helsinki. Länsimetro Oy’s task is to build, own, maintain and develop the West Metro system, tracks and stations. After the construction project ended, the focus of Länsimetro’s operations shifted from construction to metro infrastructure ownership. As the owner of the metro infrastructure,  |   |
-|   |  Action description | A new construction to the West Metro system has been developed and implemented in the Helsinki capital area during the 2010s and 2020s. The new construction to the Metro system has been done in the Helsinki region and has been implemented in the region's main capital. The new construction to the Metro system has been done in the region's main capital. The new construction to the Metro system has been done in the region's main capital. The new construction to the Metro system has been done in the region's main capital. The new construction to the Metro system has been done in the region's main capital. The new construction to the Metro system has been done in the region's main capital. The new construction to the Metro system has been done in the region's main capital. The new construction to the Metro system has been in the region's main capital. The new construction to the Metro system has been in the region's main capital. The new construction to the Metro system has been in the region's main capital. The new construction to the Metro system has been in the region's main capital. The new construction to the Metro system has been in the region's main capital. The new construction to the Metro system has been in the region's main capital. The new construction to the Metro system. The main construction to the Metro system. The main construction to the Metro system. The main construction to the Metro system. The main construction to the Metro system. The main construction to the Metro system. The main construction to the Metro system. The main construction to the Metro system. The main construction to the Metro. The main construction to the Metro. The main construction to the Metro. The main construction to the Metro. The main construction to the Metro. The main construction to the Metro. The main construction to the Metro. The main construction to the Metro. The main construction to the Metro. The main construction to the Metro. The main construction to the Metro. The main construction to the  |
+Action description | A new construction to the West Metro system has been developed and implemented in the Helsinki capital area during the 2010s and 2020s. The new construction to the Metro system has been done in the Helsinki region and has been implemented in the region's main capital. The new construction to the Metro system has been done in the region's main capital. The new construction to the Metro system has been done in the region's main capital. The new construction to the Metro system has been done in the region's main capital. The new construction to the Metro system has been done in the region's main capital. The new construction to the Metro system has been done in the region's main capital. The new construction to the Metro system has been done in the region's main capital. The new construction to the Metro system has been in the region's main capital. The new construction to the Metro system has been in the region's main capital. The new construction to the Metro system has been in the region's main capital. The new construction to the Metro system has been in the region's main capital. The new construction to the Metro system has been in the region's main capital. The new construction to the Metro system has been in the region's main capital. The new construction to the Metro system. The main construction to the Metro system. The main construction to the Metro system. The main construction to the Metro system. The main construction to the Metro system. The main construction to the Metro system. The main construction to the Metro system. The main construction to the Metro system. The main construction to the Metro. The main construction to the Metro. The main construction to the Metro. The main construction to the Metro. The main construction to the Metro. The main construction to the Metro. The main construction to the Metro. The main construction to the Metro. The main construction to the Metro. The main construction to the Metro. The main construction to the Metro. The main construction to the
 6
 
 ESPOO
@@ -1839,7 +1792,7 @@ ESBO
 Climate Neutrality Action
 Plan
 
-|   | Länsimetro Oy contributes to ensuring that the metro remains an attractive transport option and serves customers for decades to come.
+Länsimetro Oy contributes to ensuring that the metro remains an attractive transport option and serves customers for decades to come.
 
 Jokeri Light Rail (2024)
 
@@ -1854,7 +1807,6 @@ City Rail Link (2028)
 The City Rail Link and the Turku rail yard project will be the first phases of the new high-speed rail link between Helsinki and Turku. The City Rail Link will further improve public transport connections in the capital region, especially in the developing Espoon keskus and the rapidly growing Leppävaara, also supporting the transformation of the Kera area. The objective is to have the final, legally valid plans at the beginning of 2025.
 
 The railway line’s construction planning, construction, and commissioning will take place in 2025–2031. Once completed, the high-speed rail link between Helsinki and Turku will create a common commuting area for 1.5 million people. The City Rail Link will considerably promote the sustainable development of Espoo’s five urban centres and be an important step towards emission-free transport.  |
-| --- | --- |
 #
 
 ESPOO
@@ -1880,7 +1832,7 @@ ESBO
 Climate Neutrality Action
 Plan
 
-|   |  | In 2023, there will be 316 electric buses in the Helsinki Region. In 2025, about half of the buses HSL orders will be electric, which means about 650 buses.
+In 2023, there will be 316 electric buses in the Helsinki Region. In 2025, about half of the buses HSL orders will be electric, which means about 650 buses.
 
 The City of Espoo is responsible for the construction and maintenance of public transport infrastructure, such as terminals and stops. The city will design park&ride facilities for cars and bikes along public transport routes. The customer experience of intermodal parking will be improved by investing in guidance and information on intermodal parking.
 
@@ -1892,12 +1844,11 @@ Espoo Disability Council has a special working group to work on issues related t
 
 **Additional potential future actions not yet decided:**
 • **Construction of Matinkylä-Leppävaara express tramway:** The Espoo Master Plan 2060 will define a public transport implementation programme, one part of which may be the construction of Matinkylä-Leppävaara tramway. The magnitude of the carbon dioxide equivalent emissions of the Matinkylä-Leppävaara tramway can be estimated from the project appraisal of the Jokeri Light Rail tramway currently under construction. Jokeri Light Rail will increase the number of public transport trips by about 4 900 per day in 2030. The modal shift from diesel buses to trams is projected to reduce carbon dioxide emissions from transport by 4 kt per year in 2030. The length of the Jokeri Light Rail is estimated to be about twice as long as the Matinkylä-Leppävaara tramway, which means that the maximum magnitude of the carbon dioxide equivalent emissions reduction of the Matinkylä-Leppävaara tramway could be about 2 kt per year, or about 2 kt CO2 eq.  |
-| --- | --- | --- |
-|  Reference to impact pathway | Field of action | Mobility & transport  |
-|   | Systemic lever | Technology and infrastructure
+Reference to impact pathway | Field of action | Mobility & transport
+Systemic lever | Technology and infrastructure
 Regulation
 Public procurement  |
-|   | Outcome (according to module B-1.1) | City planning around newly opened public transport services (subway, light rail) improving accessibility of public transport.
+Outcome (according to module B-1.1) | City planning around newly opened public transport services (subway, light rail) improving accessibility of public transport.
 
 New subway and light rail lines opening 2022/2024 in south/east Espoo. City rail expansion 2031 improving accessibility of public transport in central Espoo.  |
 9
@@ -1908,20 +1859,19 @@ Climate Neutrality Action
 
 Plan
 
-|   |  | Park&ride facilities for cars and bikes along public transport routes. Popularity and accessibility of public transport has grown.
+Park&ride facilities for cars and bikes along public transport routes. Popularity and accessibility of public transport has grown.
 Low emission city fleet. Electrification of city buses (50% by 2025)
 Built environment and public transport are accessible for all, including the disabled and the elderly.  |
-| --- | --- | --- |
-|  Implementation | Responsible bodies/person for implementation | Helsinki Region Transport (HSL)
+Implementation | Responsible bodies/person for implementation | Helsinki Region Transport (HSL)
 Länsimetro Oy
 City of Espoo
 Timeline: 2023-2030  |
-|   |  Action scale & addressed entities | Regional
+Action scale & addressed entities | Regional
 Public transport infrastructure and operations  |
-|   |  Involved stakeholders | Helsinki, Vantaa, other cities and municipalities in the metropolitan area
+Involved stakeholders | Helsinki, Vantaa, other cities and municipalities in the metropolitan area
 Investors
 Citizens / customers  |
-|  Impact & cost | GHG emissions reduction estimate (total) per emission source sector | Emissions 2030 compared to 2022
+Impact & cost | GHG emissions reduction estimate (total) per emission source sector | Emissions 2030 compared to 2022
 ,12kt/year
 
 Additional potential future actions not yet decided:
@@ -1930,7 +1880,7 @@ Emissions 2030 compared to 2022
 kt
 
 In addition, promoting the shift to public transport contributes towards emission reductions of car traffic (M3).  |
-|   |  Total costs and costs by CO2e unit | Total costs
+Total costs and costs by CO2e unit | Total costs
 062 936 k€
 
 Costs by t CO2e unit
@@ -1949,11 +1899,10 @@ Climate Neutrality Action Plan
 
 B-2.2: Individual action outlines
 
-|  Action outline | Action name | M3: Reducing emission of car traffic  |
-| --- | --- | --- |
-|   |  Action type | Technical intervention
+Action outline | Action name | M3: Reducing emission of car traffic
+Action type | Technical intervention
 Other intervention  |
-|   |  Action description | The emissions of car traffic (private cars and logistics) are reduced by investing in the distribution infrastructure of alternative energy sources and streamlining transport and parking arrangements. We enable renewable fuel distribution stations in land-use planning. We develop park-and-ride facilities and services for public transport and develop and expand parking facilities for shared cars in public areas.
+Action description | The emissions of car traffic (private cars and logistics) are reduced by investing in the distribution infrastructure of alternative energy sources and streamlining transport and parking arrangements. We enable renewable fuel distribution stations in land-use planning. We develop park-and-ride facilities and services for public transport and develop and expand parking facilities for shared cars in public areas.
 
 Espoo is Finland’s leading city in the uptake of e-mobility and electrification of transport is estimated to have great potential for future emission reductions. The number of electric vehicles is constantly increasing. In the future, electric vehicles will enable energy storage and the optimisation of energy supply and demand. The shift to e-mobility requires close co-operation with the grid operators and charging infra providers as well as improvements in city procurement, permitting processes, urban planning, and land use solutions.
 
@@ -1989,15 +1938,14 @@ Ban the use of fossil fuel trucks on parts of Espoo's streets. Diesel trucks wou
 
 New scenario calculations also take into account the negative effect on emission reductions of lowering the renewable fuel distribution obligation in national regulation. In the new calculation it is assumed that the share of renewable fuels in 2028-30 will remain the same as now planned for 2027, i.e. 22.5%, compared to 34% as was previously forecasted.
 
-|  Reference to impact pathway | Field of action | Transport and mobility  |
-| --- | --- | --- |
-|   | Systemic lever | Technology and infrastructure
+Reference to impact pathway | Field of action | Transport and mobility
+Systemic lever | Technology and infrastructure
 Regulation
 Governance and policy
 Capacity and capability development
 Business models
 Public procurement  |
-|   | Outcome (according to module B-1.1) | Reduced need for citizens to use private car in daily trips due to improvements of accessibility of public transport (M2), walking and cycling (M1).  |
+Outcome (according to module B-1.1) | Reduced need for citizens to use private car in daily trips due to improvements of accessibility of public transport (M2), walking and cycling (M1).
 2
 
 ESPOO
@@ -2006,24 +1954,23 @@ Climate Neutrality Action
 
 Plan
 
-|   |  | Improved EV charging infrastructure in city-owned buildings, housing companies and other public and private buildings encourages the uptake of e-mobility. Increased number of EV charging points and electric vehicles. Parking concessions for EVs
+Improved EV charging infrastructure in city-owned buildings, housing companies and other public and private buildings encourages the uptake of e-mobility. Increased number of EV charging points and electric vehicles. Parking concessions for EVs
 Joint solution path to fossil-free fuels implemented with key local stakeholders.
 New research, design, innovation, and business models in sector integration of energy and mobility.  |
-| --- | --- | --- |
-|  Implementation | Responsible bodies for implementation | City of Espoo
+Implementation | Responsible bodies for implementation | City of Espoo
 Ministry of Transport and Communications
 Espoon Asunnot
 VTT
 Aalto University
 Timeline: 2023-2030  |
-|   |  Action scale & addressed entities | National / regional / local
+Action scale & addressed entities | National / regional / local
 Charging infrastructure
 Biofuel distribution
 Parking facilities  |
-|   |  Involved stakeholders | Charging operators
+Involved stakeholders | Charging operators
 Biofuel providers
 Car-owners  |
-|  Impact & cost | GHG emissions reduction estimate (total) per emission source sector | Emissions 2030 compared to 2022
+Impact & cost | GHG emissions reduction estimate (total) per emission source sector | Emissions 2030 compared to 2022
 kt
 Additional actions:
 Reducing speed limits on motorways from 120->100 km/h and 100->80 km/h
@@ -2044,18 +1991,16 @@ Plan
 
 # BUILT ENVIRONMENT
 
-|  B-2.2: Individual action outlines  |   |   |
-| --- | --- | --- |
-|  Action outline | Action name | B1: Developing Espoo's city districts as innovation hubs for low-carbon and smart solutions  |
-|   |  Action type | Technical intervention
+B-2.2: Individual action outlines
+Action outline | Action name | B1: Developing Espoo's city districts as innovation hubs for low-carbon and smart solutions
+Action type | Technical intervention
 Other intervention  |
-|   |  Action description | Espoo's districts will be used as pilot environments for companies and research institutes to develop sustainable smart, and scalable urban solutions. Districts will be used as development and pilot environments for companies and research institutes developing sustainable solutions.
+Action description | Espoo's districts will be used as pilot environments for companies and research institutes to develop sustainable smart, and scalable urban solutions. Districts will be used as development and pilot environments for companies and research institutes developing sustainable solutions.
 
 The city acts as an orchestrator bringing together actors from small start-ups to global companies, universities, and research institutions to find the most impactful solutions. The role of the city is to enable the development and ensure that the work is targeted at the most important development challenges of each diverse district from densely built-up urban areas to smaller village-like centres and areas that are undergoing urban transformation.
 
 The focus area for green transition in Espoo and example of an area under major urban transformation is Kera, a former industrial and logistic district that will be developed into a new city center and forerunner in sustainable city development, circular economy, and digitalization through multi-stakeholder co-operation. The City of Espoo and private investors are constructing services and homes for 14,000 future inhabitants. District development is aimed towards resource-wise construction, innovative and low-emission energy solutions, and new digital services and applications such as a Nokia-led unique network of smart street poles, which provide a platform for new data-driven services. The city acts as a facilitator as well as an ecosystem orchestrator and brings the area's residents, landowners, companies, and other development partners around the same table to develop the area together. A commitment for close cooperation, reaching carbon neutrality by 2030, and the use of significant circular economy solutions has been made between the stakeholders. First pilots in Kera started already in 2019, and construction will begin by 2024.  |
-|   |   |  |
-|   | Total costs and costs by CO2e unit | Total costs: 56 063 k€
+Total costs and costs by CO2e unit | Total costs: 56 063 k€
 Costs by t CO2e unit: 395 €
 (In addition, total cross-cutting costs for mobility & transport: 6 864 k€)  |
 4
@@ -2066,26 +2011,25 @@ ESBO
 Climate Neutrality Action
 Plan
 
-|   |  | In the rapidly growing City of Espoo, multiple regional development projects are taking place simultaneously. The learnings from Kera will be used to benefit the development of other parts of the city as well, such as Leppävaara, Espoo Centre, Finnoo, Kivenlahti, Keilaniemi, and Viiskorpi. Without sophisticated digital design tools, such as BIM (building information modelling) solutions, and harmonised information management practices, it would be nearly impossible to carry out complex and evolving urban development projects like those in the Kera district.
+In the rapidly growing City of Espoo, multiple regional development projects are taking place simultaneously. The learnings from Kera will be used to benefit the development of other parts of the city as well, such as Leppävaara, Espoo Centre, Finnoo, Kivenlahti, Keilaniemi, and Viiskorpi. Without sophisticated digital design tools, such as BIM (building information modelling) solutions, and harmonised information management practices, it would be nearly impossible to carry out complex and evolving urban development projects like those in the Kera district.
 
 Espoo 3D city model and digital platforms enable local project managers to integrate diverse stakeholders using shared virtual environments. These virtual platforms enable stakeholders to observe and analyse alternative design solutions for supporting the requirements of functional and sustainable urban districts. Furthermore, the digital platforms allow project managers to engage in dialogue with residents to understand specific needs. These may include the requirements of individuals with reduced mobility or insights into designing and locating services within developing city districts.  |
-| --- | --- | --- |
-|  Reference to impact pathway | Field of action | Built Environment  |
-|   | Systemic lever | Local development strategies
+Reference to impact pathway | Field of action | Built Environment
+Systemic lever | Local development strategies
 Business models
 Technology and infrastructure
 Governance and policy
 Social innovation
 Citizen engagement and participation  |
-|   | Outcome (according to module B-1.1) | Kera and Finnoo districts developing as forerunners of smart, low-carbon and circular city development. Similar innovative incentives and commitments applied to other Espoo city districts under development.
+Outcome (according to module B-1.1) | Kera and Finnoo districts developing as forerunners of smart, low-carbon and circular city development. Similar innovative incentives and commitments applied to other Espoo city districts under development.
 
 Virtual platforms enable stakeholders to observe and analyse alternative design solutions contributing towards sustainable urban districts.
 Digital platforms enable dialogue with residents to understand specific needs such as requirements of individuals with reduced mobility when developing city districts.  |
-|  Implementation | Responsible bodies for implementation | City of Espoo
+Implementation | Responsible bodies for implementation | City of Espoo
 Timeline: 2023-2030  |
-|   | Action scale & addressed entities | District and/or local scale
+Action scale & addressed entities | District and/or local scale
 Buildings and city infrastructure  |
-|   | Involved stakeholders | Aalto University
+Involved stakeholders | Aalto University
 VTT Technical Research Centre of Finland
 Nokia
 SOK
@@ -2100,11 +2044,10 @@ Climate Neutrality Action Plan
 
 B-2.2: Individual action outlines
 
-|  Action outline | Action name | B2: Promoting low-carbon construction and emission-free work sites  |
-| --- | --- | --- |
-|   |  Action type | Technical intervention
+Action outline | Action name | B2: Promoting low-carbon construction and emission-free work sites
+Action type | Technical intervention
 Physical / spatial intervention  |
-|   | Action description | Espoo uses land-use planning to direct construction to centres and along good public transport connections. The city also finding ways to reduce the adverse climate effects of its own construction of buildings and infrastructure, by refurbishing existing building stock, and through construction management.
+Action description | Espoo uses land-use planning to direct construction to centres and along good public transport connections. The city also finding ways to reduce the adverse climate effects of its own construction of buildings and infrastructure, by refurbishing existing building stock, and through construction management.
 
 Goals of new construction and renovation:
 • New construction and renovation guidance take into account sustainable development and CO2 emissions.
@@ -2124,7 +2067,7 @@ ESBO
 Climate Neutrality Action
 Plan
 
-|   |  | • Developing emission calculations as part of the assessment of the effectiveness and costs of infrastructure construction
+• Developing emission calculations as part of the assessment of the effectiveness and costs of infrastructure construction
 • Promoting circular economy of infrastructure construction with more sustainable procurement criteria for materials
 • Implementing the national green deal agreement towards emission-free construction sites. Its aim is to ensure that no fossil fuels are used on city’s own construction sites after 2025. In addition, we will gradually move to lower-emission construction equipment and transport vehicles.
 • Paying attention and compensating the effects that large impermeable surfaces such as roofs, streets and parking facilities have in the natural circulation of water and their retention or absorption capacity.
@@ -2132,17 +2075,16 @@ Plan
 • Developing circulation of construction and demolition materials
 
 The city is also preparing for the new national construction law that will enter into force in 2025 and bring numerous new obligations to promote low carbon and circular solutions. These include, for example, the calculation of the carbon footprint and the emission limit values for buildings, the preparation of a material passport and statement, mandatory demolition mapping in all demolition sites, as well as digitization of building information and an information model-based building permit.  |
-| --- | --- | --- |
-|  Reference to impact pathway | Field of action | Built environment  |
-|   |  Systemic lever | Technology and infrastructure
+Reference to impact pathway | Field of action | Built environment
+Systemic lever | Technology and infrastructure
 Regulation
 Public procurement  |
-|   |  Outcome (according to module B-1.1) | Concentration of construction and infrastructure in local centres and brownfield areas.
+Outcome (according to module B-1.1) | Concentration of construction and infrastructure in local centres and brownfield areas.
 % of the new buildings’ energy consumption is produced with renewable energy produced on site (solar electricity, geothermal heat, wind power).
 
 Buildings have carbon footprint limits and new buildings have smaller carbon footprints. Costs and carbon footprint of construction projects assessed considering entire life cycle of buildings leading to more climate-wise and cost-effective solutions.
 No fossil fuels are used on city’s own construction sites after 2025. Promoting lower-emission construction equipment and transport vehicles.  |
-|  Implementation | Responsible bodies for implementation | City of Espoo
+Implementation | Responsible bodies for implementation | City of Espoo
 Espoon Asunnot
 
 Timeline: 2023-2030  |
@@ -2156,24 +2098,22 @@ Plan
 
 #
 
-|   | Action scale & addressed entities | Local
+Action scale & addressed entities | Local
 Buildings and city infrastructure  |
-| --- | --- | --- |
-|   |  Involved stakeholders | Real estate and construction companies
+Involved stakeholders | Real estate and construction companies
 Construction industry networks and organisations
 Other municipalities of the capital region
 Ministry of the Environment  |
-|  Impact & cost | GHG emissions reduction estimate (total) per emission source sector | Emissions from construction are not included in scope 2 emission calculations. Espoo has not yet developed emission reduction scenarios for scope 3 emissions so estimated reductions are not available. Traffic emissions are included in Mobility and Transport actions.  |
-|   | Total costs and costs by CO2e unit | Total Costs : 379 992 k€
+Impact & cost | GHG emissions reduction estimate (total) per emission source sector | Emissions from construction are not included in scope 2 emission calculations. Espoo has not yet developed emission reduction scenarios for scope 3 emissions so estimated reductions are not available. Traffic emissions are included in Mobility and Transport actions.
+Total costs and costs by CO2e unit | Total Costs : 379 992 k€
 (In addition, total cross-cutting costs for built environment : 3 336 k€)  |
 
 # WASTE &amp; CIRCULAR ECONOMY
 
-|  B-2.2: Individual action outlines  |   |   |
-| --- | --- | --- |
-|  Action outline | Action name | W1: Reducing emissions from waste treatment  |
-|   |  Action type | Technical intervention  |
-|   |  Action description | Helsinki Region Environmental Services HSY is responsible of the waste management and water supply services including the treatment of wastewater in Espoo. Reducing the climate impact of waste treatment operations is a part of HSY's environmental targets for several years. As a result, the total ghg-emissions from HSY's operating activities has already been reduced nearly 50 % since 2016 and nearly 77 % since 2014. HSY's latest carbon neutrality programme aims to carbon neutrality by 2030.
+B-2.2: Individual action outlines
+Action outline | Action name | W1: Reducing emissions from waste treatment
+Action type | Technical intervention
+Action description | Helsinki Region Environmental Services HSY is responsible of the waste management and water supply services including the treatment of wastewater in Espoo. Reducing the climate impact of waste treatment operations is a part of HSY's environmental targets for several years. As a result, the total ghg-emissions from HSY's operating activities has already been reduced nearly 50 % since 2016 and nearly 77 % since 2014. HSY's latest carbon neutrality programme aims to carbon neutrality by 2030.
 
 Action plan includes activities related to:
 • reduce the ghg-emissions related to waste treatment processes and energy use
@@ -2188,14 +2128,13 @@ ESPOO ESBO
 
 Climate Neutrality Action Plan
 
-|   |  | The emission level indicator includes company-owned and controlled ghg-emissions (Scope 1 and 2) and emissions from main outsourced activities (selected scope 3 emission sources.) Scope 1 and 2 sources include the emissions from landfills (CH4), wastewater treatment (CH4, N2O) and composting plants (CH4, N2O) as well as the emissions from fossil fuels and energy use (CO2). Emissions from outsourced activities are mainly related to energy use in various material handling and transport tasks. Approx. 85 % of these total emissions are related to waste and wastewater treatment -tasks, only 15 % are energy related ghg-emissions.
+The emission level indicator includes company-owned and controlled ghg-emissions (Scope 1 and 2) and emissions from main outsourced activities (selected scope 3 emission sources.) Scope 1 and 2 sources include the emissions from landfills (CH4), wastewater treatment (CH4, N2O) and composting plants (CH4, N2O) as well as the emissions from fossil fuels and energy use (CO2). Emissions from outsourced activities are mainly related to energy use in various material handling and transport tasks. Approx. 85 % of these total emissions are related to waste and wastewater treatment -tasks, only 15 % are energy related ghg-emissions.
 
 Landfill operation activities such as surface structure and gas collection design as well as the energy recovery from landfill gas is one of the key elements to reduce the climate impact in waste handling. In addition, developing the biological treatment of biowaste (digestion & composting operation) in future will increase the energy recovery from biowaste and reduce the ghg-emissions from the treatment. Research on nitrous oxide in waste water treatment (N2O)-occurrence, reduction methods and process optimization possibilities is also one main focus areas in carbon neutrality programme. The energy use of HSY’s facilities and company owned vehicles relies strongly on renewable energy sources (biogas, biofuels, green electricity). HSY has been using EKOenergy labelled, 100 % renewable electricity since 2015.  |
-| --- | --- | --- |
-|  Reference to impact pathway | Field of action | Waste & circular economy  |
-|   | Systemic lever | Technology and infrastructure
+Reference to impact pathway | Field of action | Waste & circular economy
+Systemic lever | Technology and infrastructure
 Local development strategies  |
-|   | Outcome (according to module B-1.1) | HSY’s strategic goals
+Outcome (according to module B-1.1) | HSY’s strategic goals
 • Carbon-neutral water services and waste management by 2030
 • Climate resilient Helsinki Metropolitan Area
 
@@ -2204,9 +2143,9 @@ Targeted emission levels
 : carbon neutrality (-67 % compared to 2016 level, 64,000 t CO2/year)
 
 Indicator: HSY’s total emissions, t CO2eq/year (Company-owned and controlled ghg-emissions and emissions from main outsourced activities)  |
-|  Implementation | Responsible bodies/person for implementation | Helsinki Region Environmental Services (HSY)
+Implementation | Responsible bodies/person for implementation | Helsinki Region Environmental Services (HSY)
 Timeline: 2023-2030  |
-|   | Action scale & addressed entities | Regional
+Action scale & addressed entities | Regional
 Citizens, companies and industries  |
 9
 
@@ -2216,20 +2155,18 @@ ESBO
 Climate Neutrality Action
 Plan
 
-|   | Involved stakeholders | Espoo and other municipalities
+Involved stakeholders | Espoo and other municipalities
 Companies  |
-| --- | --- | --- |
-|  Impact & cost | GHG emissions reduction estimate (total) per emission source sector | Emissions 2030 compared to 2022
+Impact & cost | GHG emissions reduction estimate (total) per emission source sector | Emissions 2030 compared to 2022
 kt  |
-|   | Total costs and costs by CO2e unit | Total costs : 3 708 k€
+Total costs and costs by CO2e unit | Total costs : 3 708 k€
 Costs by t CO2e unit : 265 €
 (In addition, total cross-cutting costs for waste and circular economy : 3 688 k€)  |
-|  B-2.2: Individual action outlines  |   |   |
-| --- | --- | --- |
-|  Action outline | Action name | W2: Promoting circular solutions  |
-|   |  Action type | Technical intervention
+B-2.2: Individual action outlines
+Action outline | Action name | W2: Promoting circular solutions
+Action type | Technical intervention
 Other intervention  |
-|   |  Action description | Espoo promotes circular economy both through the development of its own processes and services, as well as working in cooperation with multiple partners to promote the shift to circular solutions in industry and providing better shared and circular services to residents.
+Action description | Espoo promotes circular economy both through the development of its own processes and services, as well as working in cooperation with multiple partners to promote the shift to circular solutions in industry and providing better shared and circular services to residents.
 
 The main goal of circular economy is to use natural resources in a sustainable way, generating as little waste as is possible. In addition to daily products and services, the entire city, including its services and districts, operates in a sustainable manner. Products and materials remain in circulation for as long as possible, when goods and their components are reused and materials are recycled into raw materials for new products. For example sharing, repairing, reusing and reuse of materials are means of the circular economy to prolong the service life of products and materials.
 
@@ -2249,7 +2186,7 @@ ESBO
 Climate Neutrality Action
 Plan
 
-|   |  | 8. Collaborating with national governments and European institutions
+8. Collaborating with national governments and European institutions
 Monitoring the progress made
 Reporting on progress
 
@@ -2268,8 +2205,7 @@ HSY's goal is to promote the circular economy of the Helsinki Metropolitan Area.
 HSY's goal is to increase the household recycling rate up to 60% by 2025 and reduce the amount of mixed waste in the Helsinki Metropolitan Area and Kirkkonummi. Increasing the sorting of biowaste is of central importance to achieving the goal. In practice this means, that:
 • HSY will enhance the collection and treatment of biowaste, and develop new recycling services to residents.
 • HSY will encourage and advise residents to sort household waste.  |
-| --- | --- | --- |
-|   | Field of action | Waste & circular economy  |
+Field of action | Waste & circular economy
 1
 
 ESPOO
@@ -2278,35 +2214,34 @@ ESBO
 Climate Neutrality Action
 Plan
 
-|  Reference to impact pathway | Systemic lever | Business models
+Reference to impact pathway | Systemic lever | Business models
 Public procurement
 Governance and policy
 Capacity and capability development
 Social innovation
 Citizen engagement and participation  |
-| --- | --- | --- |
-|  Implementation | Outcome (according to module B-1.1) | Recycling and the use of circular solutions increased in the city’s own premises. Improved sorting opportunities at private households. Citizens sorting their waste more efficiently (e.g. biowaste, plastic and textiles). Reduce the amount of plastic in mixed household waste by half compared to 2018.
+Implementation | Outcome (according to module B-1.1) | Recycling and the use of circular solutions increased in the city’s own premises. Improved sorting opportunities at private households. Citizens sorting their waste more efficiently (e.g. biowaste, plastic and textiles). Reduce the amount of plastic in mixed household waste by half compared to 2018.
 
 City districts of Kera and Kiviruukki developed with circularity principles. Learnings used in the development of other city distrits.
 
 Increased number of sustainable purchase criterias in city procurement. Affecting the market standard. New circular business models.  |
-|   |  Responsible bodies for implementation | City of Espoo
+Responsible bodies for implementation | City of Espoo
 Helsinki Region Environmental Services HSY
 
 Timeline: 2023-2030  |
-|  Implementing | Action scale & addressed entities | Local / regional / national
+Implementing | Action scale & addressed entities | Local / regional / national
 
 Citizens, companies and industries  |
-|   |  Involved stakeholders | Research and educational institutions
+Involved stakeholders | Research and educational institutions
 Companies particularly in the construction, plastic, textile, food and waste sectors
 Circular and sharing economy startups
 Land owners and operators of development areas
 Helsinki Uusimaa Regional Council
 Ministry of the Environment  |
-|  Impact & cost | GHG emissions reduction estimate (total) per emission source sector | Small direct emission reductions on scope 1 and 2 emission.
+Impact & cost | GHG emissions reduction estimate (total) per emission source sector | Small direct emission reductions on scope 1 and 2 emission.
 Contributes towards emission reductions in other sectors such as energy and transport.
 Greater effect on scope3 emission reductions. Espoo has not yet developed emission reduction scenarios for scope 3 emissions, so it is not yet possible to provide an estimated number of emission reductions.  |
-|   |  Total costs and costs by CO2e unit | Included in total cross-cutting costs for waste and circular economy : 3 688 k€  |
+Total costs and costs by CO2e unit | Included in total cross-cutting costs for waste and circular economy : 3 688 k€
 2
 
 ESPOO ESBO
@@ -2315,17 +2250,16 @@ Climate Neutrality Action Plan
 
 GREEN INFRASTRUCTURE &amp; NATURE BASED SOLUTIONS
 
-| B-2.2: Individual action outlines |
-| --- |
-| Action outline | Action name | G1: Directing city growth to built-up areas and preserving carbon sinks |
-| Action type | Nature-based solution |
-| Action description | Espoo is a green city, where forests cover nearly 60 % of the city's surface area. The city's goal is to preserve carbon sinks when possible, to offset the residual CO2 emissions in 2030. According to latest study on the subject, Espoo's carbon sinks were in 2021 large enough to offset CO2 emissions in 2030, if the emissions can be brought down according to target of 80 % reduction from 1990. Preserving this level of carbon sinks in a rapidly growing city is however a challenge that requires holistic solutions. The knowledge base on the amount and development of carbon sinks is constantly being refined and Espoo is actively involved in the development work. Carbon sinks are being addressed as part of Espoo's master plan, which aims for 2060. Carbon sinks will be considered in land use planning as part of the overall climate impact of land use.
+B-2.2: Individual action outlines
+Action outline | Action name | G1: Directing city growth to built-up areas and preserving carbon sinks
+Action type | Nature-based solution
+Action description | Espoo is a green city, where forests cover nearly 60 % of the city's surface area. The city's goal is to preserve carbon sinks when possible, to offset the residual CO2 emissions in 2030. According to latest study on the subject, Espoo's carbon sinks were in 2021 large enough to offset CO2 emissions in 2030, if the emissions can be brought down according to target of 80 % reduction from 1990. Preserving this level of carbon sinks in a rapidly growing city is however a challenge that requires holistic solutions. The knowledge base on the amount and development of carbon sinks is constantly being refined and Espoo is actively involved in the development work. Carbon sinks are being addressed as part of Espoo's master plan, which aims for 2060. Carbon sinks will be considered in land use planning as part of the overall climate impact of land use.
 
 Developing the data on carbon sinks is key enabler required for the city to plan holistically sustainable carbon measures that take into account the values of different green spaces and green structures, as well as the role of vegetation and soils in the carbon balance. For forest areas, the natural dynamics of forests and the decline in growth of ageing forests and the natural increase in carbon sequestration need to be recognised. At the same time, however, ageing forests serve their natural and recreational values. By steering measures in a direction that has a positive impact on the carbon balance, effectiveness in the built environment can be achieved quickly. To preserve forested areas that are important as carbon sinks, for biodiversity, and also as recreational areas, Espoo is investing in infill development and steering construction towards district centres and already built-up areas.
 
 However, as the city grows, some new development will inevitably take place on existing green spaces. When planning for new development, especially in forested or marsh area, we assess the impact of the plan on carbon sinks and stocks. We are also actively developing emission calculation tools and methods for land use planning to get a better understanding of the impact of land use on our climate goals. In addition, we promote the deployment of the green factor tool that increases the greenery in zoning projects. |
-| Reference to impact pathway | Field of action | Green infrastructure and nature-based solutions |
-| Systemic lever | Governance and policy
+Reference to impact pathway | Field of action | Green infrastructure and nature-based solutions
+Systemic lever | Governance and policy
 Regulation
 Technology and infrastructure
 Citizen engagement and participation
@@ -2338,31 +2272,29 @@ ESBO
 Climate Neutrality Action
 Plan
 
-|   | Outcome (according to module B-1.1) | Nature conservation measures 2021–2030 promoting the support of existing protected areas and supplement the nature conservation network regionally and qualitatively.
+Outcome (according to module B-1.1) | Nature conservation measures 2021–2030 promoting the support of existing protected areas and supplement the nature conservation network regionally and qualitatively.
 
 A total of about 390 hectares of new nature reserves by 2030 (23 new sites)
 
 Better understanding and knowledge on carbon sinks enables the city to plan holistically sustainable carbon measures that take into account the values of different green spaces and green structures, as well as the role of vegetation and soils in the carbon balance.
 
 Green factor tool promoted in all major land use planning projects  |
-| --- | --- | --- |
-|  Implementation | Responsible bodies for implementation | City of Espoo
+Implementation | Responsible bodies for implementation | City of Espoo
 Timeline: 2023-2030  |
-|   | Action scale & addressed entities | Local / regional
+Action scale & addressed entities | Local / regional
 Natural and built areas  |
-|   | Involved stakeholders | Universities and research institutions
+Involved stakeholders | Universities and research institutions
 Residents, associations and landowners
 Businesses
 Ministry of the Environment  |
-|  Impact & cost | GHG emissions reduction estimate (total) per emission source sector | No direct emission reductions on scope 1 and 2 emissions.
+Impact & cost | GHG emissions reduction estimate (total) per emission source sector | No direct emission reductions on scope 1 and 2 emissions.
 
 However, directing city growth to built-up areas helps to preserve carbon sinks to offset the residual CO2 emissions in 2030. In addition, it contributes towards emission reductions in other emission sectors, particularly transport enabling efficient public transportation for citizens.  |
-|   | Total costs and costs by CO2e unit | Total costs : 9 380 €  |
-|  B-2.2: Individual action outlines  |   |   |
-| --- | --- | --- |
-|  (fill out one sheet per intervention/project)  |   |   |
-|  Action outline | Action name | G2: Fostering biodiversity and nature-based solutions in urban development  |
-|   |  Action type | Nature-based solution  |
+Total costs and costs by CO2e unit | Total costs : 9 380 €
+B-2.2: Individual action outlines
+(fill out one sheet per intervention/project)
+Action outline | Action name | G2: Fostering biodiversity and nature-based solutions in urban development
+Action type | Nature-based solution
 4
 
 ESPOO
@@ -2381,30 +2313,29 @@ ESBO
 Climate Neutrality Action
 Plan
 
-|   |  | Espoo is supporting businesses in integrating science-based targets for nature through building a new nature-themed business and research network with the aim of increasing the private sector's contribution towards the restoration and conservation of biodiversity.  |
-| --- | --- | --- |
-|  Reference to impact pathway | Field of action | Green infrastructure and nature-based solutions  |
-|   |  Systemic lever | Governance and policy
+Espoo is supporting businesses in integrating science-based targets for nature through building a new nature-themed business and research network with the aim of increasing the private sector's contribution towards the restoration and conservation of biodiversity.
+Reference to impact pathway | Field of action | Green infrastructure and nature-based solutions
+Systemic lever | Governance and policy
 Regulation
 Technology and infrastructure
 Citizen engagement and participation
 Capacity and capability development
 Local development strategies  |
-|   |  Outcome (according to module B-1.1) | Nature-wise Espoo roadmap defines biodiversity preservation methods and actions. Including established pathways for no net loss and greenspace preservation and recovery.
+Outcome (according to module B-1.1) | Nature-wise Espoo roadmap defines biodiversity preservation methods and actions. Including established pathways for no net loss and greenspace preservation and recovery.
 
 The city organisation, residents, associations, businesses and landowners increased contribution towards the restoration and conservation of biodiversity.
 
 Introducing more technical green structures such as green roofs, decks and green walls in urban environments  |
-|  Implementation | Responsible bodies for implementation | City of Espoo
+Implementation | Responsible bodies for implementation | City of Espoo
 Timeline: 2023-2030  |
-|   |  Action scale & addressed entities | Local / regional
+Action scale & addressed entities | Local / regional
 Natural and built areas  |
-|   |  Involved stakeholders | Universities and research institutions
+Involved stakeholders | Universities and research institutions
 Residents, associations and landowners
 Businesses
 Ministry of the Environment  |
-|  Impact & cost | GHG emissions reduction estimate (total) per emission source sector | Affects other emission sources, no direct emission reductions on scope 1 and 2 emissions.  |
-|   |  Total costs and costs by CO2e unit | Total costs : 2 0124 k€  |
+Impact & cost | GHG emissions reduction estimate (total) per emission source sector | Affects other emission sources, no direct emission reductions on scope 1 and 2 emissions.
+Total costs and costs by CO2e unit | Total costs : 2 0124 k€
 ESPOO ESBO
 
 Climate Neutrality Action Plan
@@ -2463,13 +2394,12 @@ ESBO
 Climate Neutrality Action
 Plan
 
-|  Guidance on low-carbon building provided to citizens and developers.
+Guidance on low-carbon building provided to citizens and developers.
 Espoo implements the voluntary National green deal agreement towards emission-free construction sites. No fossil fuels are used on city's own construction sites after 2025.
 Food served at schools, daycare centres and other city facilities increasingly climate-friendly encouraging citizens to also make sustainable food choices in their daily lives.
 Children and youth growing up with circularity mindset.
 Increased number of sustainable purchase criterias in public procurement. New circular business models. |  |  |  |  |   |
-| --- | --- | --- | --- | --- | --- |
-|  Implementation of Espoo Clean Heat roadmap continues and is completed by 2030.
+Implementation of Espoo Clean Heat roadmap continues and is completed by 2030.
 District heating production by Fortum:
 • Industrial-scale air-to-water heat pumps and additional electric boilers
 • Additional electric boilers
@@ -2480,23 +2410,22 @@ Developing a smarter and more flexible power grid to enable increased electricit
 E4: Enabling the increased electrification | 3 | Non-fossil fuels in district heating | 85 % (2026)
 % (2029)
 Due to security of supply, there will be some natural gas capacity left. This share will be compensated by Fortum. | 48 % (2022)  |
-|  Increased number of EV charging points and electric vehicles. Guidelines for EV charging points in the city
+Increased number of EV charging points and electric vehicles. Guidelines for EV charging points in the city
 Parking concessions for EVs. Low emission lane on the main highway | M3: Reducing emission of car traffic
 E4: Enabling the increased electrification | 4 | Electric and hybrid cars (total share / new registrations) | Total share: 25 % (2025)
 New registrations: 80 % (2025) | Total share: 14,8 % (2023)
 New registrations: 60 % (2023)  |
 9
 
-|  EV charging available in Espoon Asunnot housing. Housing associations are aware of benefits on installing EV charging infrastructure.
+EV charging available in Espoon Asunnot housing. Housing associations are aware of benefits on installing EV charging infrastructure.
 Developing a smarter and more flexible power grid to enable increased uptake of e-mobility (Caruna) |  |  |  |  |   |
-| --- | --- | --- | --- | --- | --- |
-|  Increasing the production of solar electricity
+Increasing the production of solar electricity
 Households' and businesses' investments in sustainable energy solutions such as solar panels and geothermal energy encouraged by sharing information highlighting both economic and environmental benefits.
 Establishing a solar community in Espoo is made easy by online portal. More energy and solar communities that produce their own energy and feed surplus energy into the electricity grid.
 % of the city's new buildings' energy consumption is produced with renewable energy produced on site (solar electricity, geothermal heat, wind power). | E2: Reducing emissions in electricity consumption, oil heating and industrial fuels of housing, industry, and services
 E3: Energy optimization and energy savings in city-owned buildings
 E4: Enabling the increased electrification | 5 | Solar panel systems | 2015 solar panel systems (2025) | 1910 systems (2022)  |
-|  Recycling rates for municipal and household waste reach 60 % by 2025.
+Recycling rates for municipal and household waste reach 60 % by 2025.
 Reduce the amount of mixed waste down to 100 kg per capita by 2025 and 85 kg per capita by 2030.
 Waste management regulations improve sorting opportunities:
 • Biowaste sorting expanded to properties with 1-4 households.
@@ -2514,17 +2443,16 @@ Climate Neutrality Action
 
 Plan
 
-|  Improved sorting opportunities at schools and other city facilities and private households. |  |  |  |  |   |
-| --- | --- | --- | --- | --- | --- |
-|  New circular business models.
+Improved sorting opportunities at schools and other city facilities and private households.
+New circular business models.
 Circular economy green deal identifies and implements common goals, common rules, common criteria and most impactful actions.
 Increased number of sustainable purchase criterias in public procurement.
 Co-creation of city districts with different stakeholders; city as an orchestrator and platform.
 Kera and Finnoo districts developing as forerunners of smart, low-carbon and circular city development. Similar innovative incentives and commitments applied to other Espoo city districts under development.
 Joint solution pathways in four RAKKE ecosystems implemented and developed further with 100 local business and research partners. | W2: Promoting circular solutions
 B1: Developing Espoo’s city districts as innovation hubs for low-carbon and smart solutions | 7 | Circular and sharing economy companies in Espoo | 1500 companies (2030) | 142 companies (2022)  |
-|  Carbon-neutral water services and waste management by 2030 | W1: Reducing emissions from waste treatment | 8 | Household water consumption | Target value will be identified in the later steps of CCC process. | 130 litres/day/capita  |
-|  Espoo has identified 23 sites to become nature reserves by 2030, at the rate of three new sites per year.
+Carbon-neutral water services and waste management by 2030 | W1: Reducing emissions from waste treatment | 8 | Household water consumption | Target value will be identified in the later steps of CCC process. | 130 litres/day/capita
+Espoo has identified 23 sites to become nature reserves by 2030, at the rate of three new sites per year.
 A total of about 390 hectares of new nature reserves by 2030 (23 new sites)
 Steering construction to existing centres to conserve carbon sinks | G2: Fostering biodiversity and nature-based solutions in urban development | 9 | Protected natural areas | 8,7 % (2030) | 7,5 % (2022)  |
 1
@@ -2540,13 +2468,12 @@ Steering construction to existing centres to conserve carbon sinks | G2: Fosteri
 |  Better understanding and knowledge on carbon sinks enables the city to plan holistically sustainable carbon measures that take into account the values of different green |  |  |  |  |   |
 2
 
-|  spaces and green structures, as well as the role of vegetation and soils in the carbon balance
+spaces and green structures, as well as the role of vegetation and soils in the carbon balance
 
 Sufficient and accessible recreational green areas and services. Sufficient ecosystem services
 
 Environments better adapted to and combating adverse effects of climate change (e.g. floods, drought, urban heat island effect). |  |  |  |  |   |
-| --- | --- | --- | --- | --- | --- |
-|  Active energy citizenship is increased. Citizens are aware of their household's energy issues, motivated to save energy and invest in sustainable energy.
+Active energy citizenship is increased. Citizens are aware of their household's energy issues, motivated to save energy and invest in sustainable energy.
 
 Energy transition creates opportunities for new roles for residents and the forming of energy communities. Energy communities create a forum for knowledge-sharing and help in forming new habits that promote a more sustainable lifestyle.
 
@@ -2575,13 +2502,12 @@ W2: Promoting circular solutions
 G1: Directing city growth to built-up areas and preserving carbon sinks | 11 | Pro environmental identity | Target value will be identified in the later steps of CCC process. | 60 % (2023)  |
 3
 
-|  Promoting citizens to take care of their environment and biodiversity that supports healthier ecosystems and carbon sinks. | G2: Fostering biodiversity and nature-based solutions in urban development |  |  |  |   |
-| --- | --- | --- | --- | --- | --- |
-|  Systemic participation of citizens in city planning and services through Espoo participation model
+Promoting citizens to take care of their environment and biodiversity that supports healthier ecosystems and carbon sinks. | G2: Fostering biodiversity and nature-based solutions in urban development
+Systemic participation of citizens in city planning and services through Espoo participation model
 Sustainable Espoo resident participation group strengthens the resident-based approach and their inclusion in Espoo's sustainable development work.
 Active energy citizenship is increased. Active citizen promotion of biodiversity. Children and youth growing up with circularity mindset.
 Virtual platforms enable observing alternative design solutions contributing towards sustainable urban districts. Digital platforms enable dialogue with residents to understand specific needs such as requirements of individuals with reduced mobility when developing city districts. My Espoo on the Map survey becomes an established part of the initial data for urban planning and is updated regularly. | Cross-cutting topic | 12 | Voter participation | Target value will be identified in the later steps of CCC process. | 58,2 % (2021)  |
-|  Popularity and accessibility of public transport, walking and cycling grown
+Popularity and accessibility of public transport, walking and cycling grown
 Compiling a map of special accessibility areas to share information with city planners.
 Collaboration with NGO's and cycling community.
 Teaching adults bicycling and maintenance skills and boosting bicycle-related business.
@@ -2589,14 +2515,13 @@ Schools encouraging students to use sustainable mobility modes. | M1: Promoting 
 M2: Promoting the shift to and reducing emissions of public transport | 13 | Share of sustainable transport modes | 60 % (2025) | 53 % (2021)  |
 4
 
-|  Communication to diverse target groups to encourage sustainable mobility choices in everyday life. |  |  |  |  |   |
-| --- | --- | --- | --- | --- | --- |
-|  More energy and solar communities that produce their own energy and feed surplus energy into the electricity grid.
+Communication to diverse target groups to encourage sustainable mobility choices in everyday life.
+More energy and solar communities that produce their own energy and feed surplus energy into the electricity grid.
 Energy transition creates opportunities for new roles for residents and the forming of energy communities. Active energy citizenship is increased. Establishing a solar community in Espoo is made easy by online portal.
 National regulation on energy communities developed to enable decentralised energy communities to participate in the energy market.
 More renewable and circular energy sources (e.g. solar and geothermal energy, excess heat) are used by households and companies.
 Energy communities create a forum for knowledge-sharing and help in forming new habits that promote a more sustainable lifestyle. | E2: Reducing emissions in electricity consumption, oil heating and industrial fuels of housing, industry, and services | 14 | Energy communities in Espoo | 15 (2025) | 9 (2023)  |
-|  Protection of green areas and infrastructure to prevent deforestation and to save carbon sinks and storages. Sufficient and accessible recreational green areas and services.
+Protection of green areas and infrastructure to prevent deforestation and to save carbon sinks and storages. Sufficient and accessible recreational green areas and services.
 Better understanding and knowledge on carbon sinks enables the city to plan holistically sustainable carbon measures that take into account the values of different green spaces and green structures.
 New Master Plan 2060 guides the development of climate-smart city of networks.
 Nature-wise Espoo roadmap defines biodiversity preservation methods and actions. Including established | G1: Directing city growth to built-up areas and preserving carbon sinks
@@ -2605,11 +2530,10 @@ B1: Developing Espoo’s city districts as innovation hubs for low-carbon and sm
 % of Espoo residents live within 700 metres of a green/recreational  |
 5
 
-|  pathways for no net loss and greenspace preservation and recovery.
+pathways for no net loss and greenspace preservation and recovery.
 Built environment and public transport are accessible for all, including the disabled and the elderly. |  |  |  |  | area of at least 1 ha
 (2021)  |
-| --- | --- | --- | --- | --- | --- |
-|  Improved accessibility of public transport and sustainable mobility modes. Urban centres design and construction promotes a walkable city.
+Improved accessibility of public transport and sustainable mobility modes. Urban centres design and construction promotes a walkable city.
 Better infrastructure for sustainable transport modes and EV's.
 Protection of green areas and infrastructure to prevent deforestation and to save carbon sinks and storages. | M1: Promoting walking and cycling
 M2: Promoting the shift to and reducing emissions of public transport
@@ -2620,37 +2544,35 @@ Climate Neutrality Action Plan
 
 ESPOO ESBO
 
-|  B-3.2: Indicator Metadata  |   |
-| --- | --- |
-|  Indicator Name | GHG emission per capita in Espoo area  |
-|  Indicator Unit | CO2 equivalent tons  |
-|  Definition | Amount of greenhouse gas emissions per capita within city boundary  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | Yes  |
-|  If yes, which emission source sectors does it impact? | Heating, consumer electricity, transport, waste treatment, agriculture, industry and work machinery  |
-|  Does the indicator measure indirect impacts (i.e. co-benefits)? | No  |
-|  Can the indicator be used for monitoring impact pathways? | Yes  |
-|  If yes, which NZC impact pathway is it relevant for? | Energy systems
+B-3.2: Indicator Metadata
+Indicator Name | GHG emission per capita in Espoo area
+Indicator Unit | CO2 equivalent tons
+Definition | Amount of greenhouse gas emissions per capita within city boundary
+Indicator Context
+Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | Yes
+If yes, which emission source sectors does it impact? | Heating, consumer electricity, transport, waste treatment, agriculture, industry and work machinery
+Does the indicator measure indirect impacts (i.e. co-benefits)? | No
+Can the indicator be used for monitoring impact pathways? | Yes
+If yes, which NZC impact pathway is it relevant for? | Energy systems
 Transport and mobility
 Waste and circular economy  |
-|  Is the indicator captured by the existing CDP/SCIS/ Covenant of Mayors platforms? | Yes  |
-|  Data requirements |   |
-|  Expected data source | Helsinki Region Environmental Services HSY  |
-|  Expected availability | Good  |
-|  Suggested collection interval | Yearly  |
-|  References |   |
-|  Other indicator systems using this indicator | VLR, Sustainable Espoo development programme  |
-|  B-3.2: Indicator Metadata  |   |
-| --- | --- |
-|  Indicator Name | GHG consumption based (scope 3) emissions per capita in Espoo  |
-|  Indicator Unit | CO2 equivalent tons  |
-|  Definition | Amount of consumption based (scope 3) greenhouse gas emissions per capita in Espoo  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | Yes  |
-|  If yes, which emission source sectors does it impact? | Energy consumption, construction, transportation, food, goods and services  |
-|  Does the indicator measure indirect impacts (i.e. co-benefits)? | No  |
-|  Can the indicator be used for monitoring impact pathways? | Yes  |
-|  If yes, which NZC impact pathway is it relevant for? | Energy systems
+Is the indicator captured by the existing CDP/SCIS/ Covenant of Mayors platforms? | Yes
+Data requirements
+Expected data source | Helsinki Region Environmental Services HSY
+Expected availability | Good
+Suggested collection interval | Yearly
+References
+Other indicator systems using this indicator | VLR, Sustainable Espoo development programme
+B-3.2: Indicator Metadata
+Indicator Name | GHG consumption based (scope 3) emissions per capita in Espoo
+Indicator Unit | CO2 equivalent tons
+Definition | Amount of consumption based (scope 3) greenhouse gas emissions per capita in Espoo
+Indicator Context
+Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | Yes
+If yes, which emission source sectors does it impact? | Energy consumption, construction, transportation, food, goods and services
+Does the indicator measure indirect impacts (i.e. co-benefits)? | No
+Can the indicator be used for monitoring impact pathways? | Yes
+If yes, which NZC impact pathway is it relevant for? | Energy systems
 Transport and mobility
 Built environment
 Waste and circular economy  |
@@ -2666,39 +2588,36 @@ Plan
 
 #
 
-|  Is the indicator captured by the existing CDP/SCIS/ Covenant of Mayors platforms? | No  |
-| --- | --- |
-|  Data requirements |   |
-|  Expected data source | Sitowise Oy together with the Natural Resources Institute Finland (KULMA)  |
-|  Expected availability | Good  |
-|  Suggested collection interval | Bi-yearly  |
-|  References |   |
-|  Other indicator systems using this indicator | VLR, Kulma-project  |
-|  B-3.2: Indicator Metadata  |   |
-| --- | --- |
-|  Indicator Name | Non-fossil fuels in district heating  |
-|  Indicator Unit | Percentage  |
-|  Definition | Use of non-fossil fuels compared to all used fuels in district heating in Espoo-Kauniainen-Kirkkonummi area  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | Yes  |
-|  If yes, which emission source sectors does it impact? | Energy / district heating  |
-|  Does the indicator measure indirect impacts (i.e. co-benefits)? | No  |
-|  Can the indicator be used for monitoring impact pathways? | Yes  |
-|  If yes, which NZC impact pathway is it relevant for? | Energy solutions  |
-|  Is the indicator captured by the existing CDP/SCIS/ Covenant of Mayors platforms? | N/A  |
-|  Data requirements |   |
-|  Expected data source | Fortum Oyj  |
-|  Expected availability | Good  |
-|  Suggested collection interval | Yearly  |
-|  References |   |
-|  Other indicator systems using this indicator | Espoo Clean Heat  |
-|  B-3.2: Indicator Metadata  |   |
-| --- | --- |
-|  Indicator Name | Electric and hybrid cars (total share /new registrations)  |
-|  Indicator Unit | Percentage (of all vehicles / new registrations)  |
-|  Definition | Total share of electric and hybrid cars and share of new registrations of electric and hybrid cars compared to total registrations in Espoo area  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | Yes  |
+Is the indicator captured by the existing CDP/SCIS/ Covenant of Mayors platforms? | No
+Data requirements
+Expected data source | Sitowise Oy together with the Natural Resources Institute Finland (KULMA)
+Expected availability | Good
+Suggested collection interval | Bi-yearly
+References
+Other indicator systems using this indicator | VLR, Kulma-project
+B-3.2: Indicator Metadata
+Indicator Name | Non-fossil fuels in district heating
+Indicator Unit | Percentage
+Definition | Use of non-fossil fuels compared to all used fuels in district heating in Espoo-Kauniainen-Kirkkonummi area
+Indicator Context
+Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | Yes
+If yes, which emission source sectors does it impact? | Energy / district heating
+Does the indicator measure indirect impacts (i.e. co-benefits)? | No
+Can the indicator be used for monitoring impact pathways? | Yes
+If yes, which NZC impact pathway is it relevant for? | Energy solutions
+Is the indicator captured by the existing CDP/SCIS/ Covenant of Mayors platforms? | N/A
+Data requirements
+Expected data source | Fortum Oyj
+Expected availability | Good
+Suggested collection interval | Yearly
+References
+Other indicator systems using this indicator | Espoo Clean Heat
+B-3.2: Indicator Metadata
+Indicator Name | Electric and hybrid cars (total share /new registrations)
+Indicator Unit | Percentage (of all vehicles / new registrations)
+Definition | Total share of electric and hybrid cars and share of new registrations of electric and hybrid cars compared to total registrations in Espoo area
+Indicator Context
+Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | Yes
 8
 
 ESPOO
@@ -2736,38 +2655,36 @@ ESPOO ESBO
 
 Plan
 
-|  B-3.2: Indicator Metadata  |   |
-| --- | --- |
-|  Indicator Name | Household waste recycling  |
-|  Indicator Unit | Percentage  |
-|  Definition | Amount of household waste recycled compared to total amount of household waste  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | Yes  |
-|  If yes, which emission source sectors does it impact? | Waste treatment  |
-|  Does the indicator measure indirect impacts (i.e. co-benefits)? | No  |
-|  Can the indicator be used for monitoring impact pathways? | Yes  |
-|  If yes, which NZC impact pathway is it relevant for? | Waste & circular economy  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | N/A  |
-|  Data requirements |   |
-|  Expected data source | Helsinki Region Environmental Services HSY  |
-|  Expected availability | Good  |
-|  Suggested collection interval | Yearly  |
-|  References |   |
-|  Other indicator systems using this indicator | VLR, Sustainable Espoo development programme  |
-|  B-3.2: Indicator Metadata  |   |
-| --- | --- |
-|  Indicator Name | Circular and sharing economy companies in Espoo  |
-|  Indicator Unit | Number #  |
-|  Definition | Number of companies situated in Espoo whose business is at least partly based on circular and sharing economy  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | No  |
-|  Does the indicator measure indirect impacts (i.e. co-benefits)? | Yes  |
-|  If yes, which co-benefit does it measure? | Local job and value creation  |
-|   |  Green & digital transition of local economy  |
-|   |  Business opportunities for SMEs  |
-|  Can the indicator be used for monitoring impact pathways? | Yes  |
-|  If yes, which NZC impact pathway is it relevant for? | Circular economy & waste  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No  |
+B-3.2: Indicator Metadata
+Indicator Name | Household waste recycling
+Indicator Unit | Percentage
+Definition | Amount of household waste recycled compared to total amount of household waste
+Indicator Context
+Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | Yes
+If yes, which emission source sectors does it impact? | Waste treatment
+Does the indicator measure indirect impacts (i.e. co-benefits)? | No
+Can the indicator be used for monitoring impact pathways? | Yes
+If yes, which NZC impact pathway is it relevant for? | Waste & circular economy
+Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | N/A
+Data requirements
+Expected data source | Helsinki Region Environmental Services HSY
+Expected availability | Good
+Suggested collection interval | Yearly
+References
+Other indicator systems using this indicator | VLR, Sustainable Espoo development programme
+B-3.2: Indicator Metadata
+Indicator Name | Circular and sharing economy companies in Espoo
+Indicator Unit | Number #
+Definition | Number of companies situated in Espoo whose business is at least partly based on circular and sharing economy
+Indicator Context
+Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | No
+Does the indicator measure indirect impacts (i.e. co-benefits)? | Yes
+If yes, which co-benefit does it measure? | Local job and value creation
+Green & digital transition of local economy
+Business opportunities for SMEs
+Can the indicator be used for monitoring impact pathways? | Yes
+If yes, which NZC impact pathway is it relevant for? | Circular economy & waste
+Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | No
 0
 
 ESPOO
@@ -2780,81 +2697,76 @@ Plan
 
 #
 
-|  Data requirements |   |
-| --- | --- |
-|  Expected data source | City of Espoo / Centre of Excellence for Sustainable development  |
-|  Expected availability | Moderate  |
-|  Suggested collection interval | Yearly / bi-annually  |
-|  References |   |
-|  Other indicator systems using this indicator | VLR, Sustainable Espoo development programme  |
-|  B-3.2: Indicator Metadata  |   |
-| --- | --- |
-|  Indicator Name | Household water consumption  |
-|  Indicator Unit | Liters/capita/day  |
-|  Definition | How many liters in average one person uses water per day  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | No  |
-|  Does the indicator measure indirect impacts (i.e. co-benefits)? | Yes  |
-|  If yes, which co-benefit does it measure? | Resource efficiency  |
-|  Can the indicator be used for monitoring impact pathways? | Yes  |
-|  If yes, which NZC impact pathway is it relevant for? | Waste & circular economy  |
-|  Is the indicator captured by the existing CDP/SCIS/ Covenant of Mayors platforms? | N/A  |
-|  Data requirements |   |
-|  Expected data source | Helsinki Region Environmental Services HSY  |
-|  Expected availability | Good  |
-|  Suggested collection interval | Yearly  |
-|  References |   |
-|  Other indicator systems using this indicator | VLR  |
-|  B-3.2: Indicator Metadata  |   |
-| --- | --- |
-|  Indicator Name | Protected natural areas  |
-|  Indicator Unit | Percentage  |
-|  Definition | Area of protected areas compared to total area in Espoo, including sea area  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | No  |
-|  Does the indicator measure indirect impacts (i.e. co-benefits)? | Yes  |
-|  If yes, which co-benefit does it measure? | Sufficient and accessible recreational green areas and services  |
+Data requirements
+Expected data source | City of Espoo / Centre of Excellence for Sustainable development
+Expected availability | Moderate
+Suggested collection interval | Yearly / bi-annually
+References
+Other indicator systems using this indicator | VLR, Sustainable Espoo development programme
+B-3.2: Indicator Metadata
+Indicator Name | Household water consumption
+Indicator Unit | Liters/capita/day
+Definition | How many liters in average one person uses water per day
+Indicator Context
+Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | No
+Does the indicator measure indirect impacts (i.e. co-benefits)? | Yes
+If yes, which co-benefit does it measure? | Resource efficiency
+Can the indicator be used for monitoring impact pathways? | Yes
+If yes, which NZC impact pathway is it relevant for? | Waste & circular economy
+Is the indicator captured by the existing CDP/SCIS/ Covenant of Mayors platforms? | N/A
+Data requirements
+Expected data source | Helsinki Region Environmental Services HSY
+Expected availability | Good
+Suggested collection interval | Yearly
+References
+Other indicator systems using this indicator | VLR
+B-3.2: Indicator Metadata
+Indicator Name | Protected natural areas
+Indicator Unit | Percentage
+Definition | Area of protected areas compared to total area in Espoo, including sea area
+Indicator Context
+Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | No
+Does the indicator measure indirect impacts (i.e. co-benefits)? | Yes
+If yes, which co-benefit does it measure? | Sufficient and accessible recreational green areas and services
 Climate Neutrality Action Plan
 
 ESPOO ESBO
 
-|  Sufficient ecosystem services
+Sufficient ecosystem services
 Habitats for local wildlife, including many endangered species
 Ecological connectivity
 
 **Additional co-benefits:**
 Benefits to physical and mental health
 Improved resiliency  |   |
-| --- | --- |
-|  Can the indicator be used for monitoring impact pathways? | Yes  |
-|  If yes, which NZC impact pathway is it relevant for? | Green infrastructure and nature-based solutions  |
-|  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | N/A  |
-|  Data requirements |   |
-|  Expected data source | City of Espoo  |
-|  Expected availability | Good  |
-|  Suggested collection interval | Yearly  |
-|  References |   |
-|  Other indicator systems using this indicator | VLR  |
-|  B-3.2: Indicator Metadata  |   |
-| --- | --- |
-|  Indicator Name | Quality of life  |
-|  Indicator Unit | Percentage  |
-|  Definition | Percentage of adult people in Espoo who rate their quality of life (EuroHIS-8) as good  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | No  |
-|  Does the indicator measure indirect impacts (i.e. co-benefits)? | Yes  |
-|  If yes, which co-benefit does it measure? | Quality of life  |
-|  Can the indicator be used for monitoring impact pathways? | Yes  |
-|  If yes, which NZC impact pathway is it relevant for? | Energy systems
+Can the indicator be used for monitoring impact pathways? | Yes
+If yes, which NZC impact pathway is it relevant for? | Green infrastructure and nature-based solutions
+Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | N/A
+Data requirements
+Expected data source | City of Espoo
+Expected availability | Good
+Suggested collection interval | Yearly
+References
+Other indicator systems using this indicator | VLR
+B-3.2: Indicator Metadata
+Indicator Name | Quality of life
+Indicator Unit | Percentage
+Definition | Percentage of adult people in Espoo who rate their quality of life (EuroHIS-8) as good
+Indicator Context
+Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | No
+Does the indicator measure indirect impacts (i.e. co-benefits)? | Yes
+If yes, which co-benefit does it measure? | Quality of life
+Can the indicator be used for monitoring impact pathways? | Yes
+If yes, which NZC impact pathway is it relevant for? | Energy systems
 Mobility & transport
 Built environment
 Green infrastructure and nature-based solutions  |
-|  Data requirements |   |
-|  Expected data source | The Finnish Institute for Health and Welfare  |
-|  Expected availability | Good  |
-|  Suggested collection interval | Bi-yearly  |
-|  References |   |
-|  Other indicator systems using this indicator | VLR  |
+Data requirements
+Expected data source | The Finnish Institute for Health and Welfare
+Expected availability | Good
+Suggested collection interval | Bi-yearly
+References
+Other indicator systems using this indicator | VLR
 
 1
 Climate Neutrality Action Plan
@@ -2863,75 +2775,70 @@ ESPOO ESBO
 
 Plan
 
-|  B-3.2: Indicator Metadata  |   |
-| --- | --- |
-|  Indicator Name | Pro environmental identity  |
-|  Indicator Unit | Percentage  |
-|  Definition | Percentage of people in Espoo who agree with the following statement: In my everyday life I try to act as environmentally friendly as possible  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | No  |
-|  Does the indicator measure indirect impacts (i.e. co-benefits)? | Yes  |
-|  If yes, which co-benefit does it measure? | Adoption of climate-friendly lifestyle  |
-|  Can the indicator be used for monitoring impact pathways? | Yes  |
-|  If yes, which NZC impact pathway is it relevant for? | Energy systems
+B-3.2: Indicator Metadata
+Indicator Name | Pro environmental identity
+Indicator Unit | Percentage
+Definition | Percentage of people in Espoo who agree with the following statement: In my everyday life I try to act as environmentally friendly as possible
+Indicator Context
+Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | No
+Does the indicator measure indirect impacts (i.e. co-benefits)? | Yes
+If yes, which co-benefit does it measure? | Adoption of climate-friendly lifestyle
+Can the indicator be used for monitoring impact pathways? | Yes
+If yes, which NZC impact pathway is it relevant for? | Energy systems
 Mobility & transport
 Waste & circular economy
 Built environment
 Green infrastructure and nature-based solutions  |
-|  Is the indicator captured by the existing CDP/SCIS/ Covenant of Mayors platforms? | No  |
-|  Data requirements |   |
-|  Expected data source | Attitudes towards environment in Helsinki region research.  |
-|  Expected availability | Moderate  |
-|  Suggested collection interval | Every four years  |
-|  References |   |
-|  Other indicator systems using this indicator |   |
-|  B-3.2: Indicator Metadata  |   |
-| --- | --- |
-|  Indicator Name | Voter participation  |
-|  Indicator Unit | Percentage  |
-|  Definition | Percentage of people voting in municipal election  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | No  |
-|  Does the indicator measure indirect impacts (i.e. co-benefits)? | Yes  |
-|  If yes, which co-benefit does it measure? | Democracy and active citizenship  |
-|  Can the indicator be used for monitoring impact pathways? | No  |
-|  Is the indicator captured by the existing CDP/SCIS/ Covenant of Mayors platforms? | No  |
-|  Data requirements |   |
-|  Expected data | Ministry of Justice  |
+Is the indicator captured by the existing CDP/SCIS/ Covenant of Mayors platforms? | No
+Data requirements
+Expected data source | Attitudes towards environment in Helsinki region research.
+Expected availability | Moderate
+Suggested collection interval | Every four years
+References
+Other indicator systems using this indicator
+B-3.2: Indicator Metadata
+Indicator Name | Voter participation
+Indicator Unit | Percentage
+Definition | Percentage of people voting in municipal election
+Indicator Context
+Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | No
+Does the indicator measure indirect impacts (i.e. co-benefits)? | Yes
+If yes, which co-benefit does it measure? | Democracy and active citizenship
+Can the indicator be used for monitoring impact pathways? | No
+Is the indicator captured by the existing CDP/SCIS/ Covenant of Mayors platforms? | No
+Data requirements
+Expected data | Ministry of Justice
 Climate Neutrality Action Plan
 
 ESPOO ESBO
 
-|  source |   |
-| --- | --- |
-|  Expected availability | Good  |
-|  Suggested collection interval | Every four years  |
-|  B-3.2: Indicator Metadata  |   |
-| --- | --- |
-|  Indicator Name | Share of sustainable transport modes  |
-|  Indicator Unit | Percentage  |
-|  Definition | Percentage of travels made by inhabitants of Espoo with sustainable means of transport (walking, bicycle, public transport) compared to all travels made by inhabitants of Espoo  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | Yes, indirect component in transport emissions calculations  |
-|  If yes, which emission source sectors does it impact? | Transport  |
-|  Does the indicator measure indirect impacts (i.e. co-benefits)? | Yes  |
-|  If yes, which co-benefit does it measure? | Adoption of climate friendly lifestyle  |
-|  Can the indicator be used for monitoring impact pathways? | Yes  |
-|  If yes, which NZC impact pathway is it relevant for? | Mobility and transport: M1 Promoting walking and cycling M2: Promoting the shift to and reducing emissions of public transport  |
-|  Is the indicator captured by the existing CDP/SCIS/ Covenant of Mayors platforms? | No  |
-|  Data requirements |   |
-|  Expected data source | Helsinki Region Transport Travel Survey  |
-|  Expected availability | Good  |
-|  Suggested collection interval | Every sixth year (whenever the research is conducted)  |
-|  References |   |
-|  Other indicator systems using this indicator | Sustainable Espoo development programme, VLR  |
-|  B-3.2: Indicator Metadata  |   |
-| --- | --- |
-|  Indicator Name | Energy communities in Espoo  |
-|  Indicator Unit | Number #  |
-|  Definition | Number of energy communities in Espoo. An energy community allows the electricity produced (e.g. by housing company with solar panels) to be used for the benefit of dwellings and commercial premises as well.  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | No  |
+source
+Expected availability | Good
+Suggested collection interval | Every four years
+B-3.2: Indicator Metadata
+Indicator Name | Share of sustainable transport modes
+Indicator Unit | Percentage
+Definition | Percentage of travels made by inhabitants of Espoo with sustainable means of transport (walking, bicycle, public transport) compared to all travels made by inhabitants of Espoo
+Indicator Context
+Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | Yes, indirect component in transport emissions calculations
+If yes, which emission source sectors does it impact? | Transport
+Does the indicator measure indirect impacts (i.e. co-benefits)? | Yes
+If yes, which co-benefit does it measure? | Adoption of climate friendly lifestyle
+Can the indicator be used for monitoring impact pathways? | Yes
+If yes, which NZC impact pathway is it relevant for? | Mobility and transport: M1 Promoting walking and cycling M2: Promoting the shift to and reducing emissions of public transport
+Is the indicator captured by the existing CDP/SCIS/ Covenant of Mayors platforms? | No
+Data requirements
+Expected data source | Helsinki Region Transport Travel Survey
+Expected availability | Good
+Suggested collection interval | Every sixth year (whenever the research is conducted)
+References
+Other indicator systems using this indicator | Sustainable Espoo development programme, VLR
+B-3.2: Indicator Metadata
+Indicator Name | Energy communities in Espoo
+Indicator Unit | Number #
+Definition | Number of energy communities in Espoo. An energy community allows the electricity produced (e.g. by housing company with solar panels) to be used for the benefit of dwellings and commercial premises as well.
+Indicator Context
+Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | No
 4
 
 ESPOO
@@ -2942,60 +2849,57 @@ Plan
 
 #
 
-|  Does the indicator measure indirect impacts (i.e. co-benefits)? | Yes  |
-| --- | --- |
-|  If yes, which co-benefit does it measure? | Active citizenship
+Does the indicator measure indirect impacts (i.e. co-benefits)? | Yes
+If yes, which co-benefit does it measure? | Active citizenship
 Increased understanding of energy
 Improved sense of community
 Reduced dependency on energy imports
 Reduction in energy bills of households and industry
 Green & digital transition of local economy  |
-|  Can the indicator be used for monitoring impact pathways? | Yes  |
-|  If yes, which NZC impact pathway is it relevant for? | Energy Systems:
+Can the indicator be used for monitoring impact pathways? | Yes
+If yes, which NZC impact pathway is it relevant for? | Energy Systems:
 E2 Reducing emissions in electricity consumption, oil heating and industrial fuels of housing, industry, and services  |
-|  Is the indicator captured by the existing CDP/SCIS/ Covenant of Mayors platforms? | No  |
-|  Data requirements |   |
-|  Expected data source | Caruna Oy  |
-|  Expected availability | Good  |
-|  Suggested collection interval | yearly  |
-|  References |   |
-|  Other indicator systems using this indicator | Sustainable Espoo development programme  |
-|  B-3.2: Indicator Metadata  |   |
-| --- | --- |
-|  Indicator Name | Reachability of green area or recreation area  |
-|  Indicator Unit | Percentage  |
-|  Definition | Percentage of inhabitants of Espoo living in max 300-meter distance from green/recreation area with an area at least 1 hectare.  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | No  |
-|  Does the indicator measure indirect impacts (i.e. co-benefits)? | Yes  |
-|  If yes, which co-benefit does it measure? | Sufficient and accessible recreational green areas and services
+Is the indicator captured by the existing CDP/SCIS/ Covenant of Mayors platforms? | No
+Data requirements
+Expected data source | Caruna Oy
+Expected availability | Good
+Suggested collection interval | yearly
+References
+Other indicator systems using this indicator | Sustainable Espoo development programme
+B-3.2: Indicator Metadata
+Indicator Name | Reachability of green area or recreation area
+Indicator Unit | Percentage
+Definition | Percentage of inhabitants of Espoo living in max 300-meter distance from green/recreation area with an area at least 1 hectare.
+Indicator Context
+Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | No
+Does the indicator measure indirect impacts (i.e. co-benefits)? | Yes
+If yes, which co-benefit does it measure? | Sufficient and accessible recreational green areas and services
 **Additional co-benefits:**
 More attractive and pleasant urban environments
 Liveable and resilient way of life
 Adoption of nature- and climate-friendly lifestyles
 Benefits to physical and mental health  |
-|  Can the indicator be used for monitoring impact pathways? | Yes  |
+Can the indicator be used for monitoring impact pathways? | Yes
 Climate Neutrality Action Plan
 
 ESPOO ESBO
 
-|  B-3.2: Indicator Metadata  |   |
-| --- | --- |
-|  Indicator Name | Percentage of yearly approved floor square metres for residential use in (MAL housing and transport agreements) primary land use zone.  |
-|  Indicator Unit | %  |
-|  Definition | Yearly approved detailed plans in City of Espoo. Percentage of yearly approved floor square metres for residential use in primary land use zone. Primary land use zones are defined in The Helsinki region land use, housing and transport plan MAL, which is a strategic plan for the 14 municipalities in the Helsinki region.  |
-|  Indicator Context |   |
-|  Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | No  |
-|  Does the indicator measure indirect impacts (i.e. co-benefits)? | Yes  |
-|  If yes, which co-benefit does it measure? | More liveable city
+B-3.2: Indicator Metadata
+Indicator Name | Percentage of yearly approved floor square metres for residential use in (MAL housing and transport agreements) primary land use zone.
+Indicator Unit | %
+Definition | Yearly approved detailed plans in City of Espoo. Percentage of yearly approved floor square metres for residential use in primary land use zone. Primary land use zones are defined in The Helsinki region land use, housing and transport plan MAL, which is a strategic plan for the 14 municipalities in the Helsinki region.
+Indicator Context
+Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | No
+Does the indicator measure indirect impacts (i.e. co-benefits)? | Yes
+If yes, which co-benefit does it measure? | More liveable city
 Sufficient and accessible recreational green areas and services  |
-|  Can the indicator be used for monitoring impact pathways? | Yes  |
-|  If yes, which NZC impact pathway is it relevant for? | Built environment
+Can the indicator be used for monitoring impact pathways? | Yes
+If yes, which NZC impact pathway is it relevant for? | Built environment
 Transport and mobility
 Green infrastructure & nature-based solutions  |
-|  Is the indicator captured by the existing CDP/SCIS/ Covenant of Mayors platforms? | No  |
-|  Data requirements |   |
-|  Expected data source | Approved detailed plans from City of Espoo  |
+Is the indicator captured by the existing CDP/SCIS/ Covenant of Mayors platforms? | No
+Data requirements
+Expected data source | Approved detailed plans from City of Espoo
 6
 
 ESPOO
@@ -3032,8 +2936,6 @@ Module C-1 "Organisational and Governance Innovation Interventions" consists of 
 |  EU level  |   |   |   |   |   |
 |  Cities for Sustainability Governance (CSG) Network (Urbact) | A network of 9 European cities led by the City of Espoo and reaching for the better integration and mainstreaming of the holistic sustainability framework of UN's Agenda 2030 and its 17 Sustainable Development Goals to the work of cities. | Lead partner City of Espoo; Centre of Excellence for Sustainable Development (Mayor's Office) | City administration, citizens, private sector, 3rd sector, academia | Builds capacity in the city organisations and stakeholders of taking sustainability into account in a holistic and integrated manner. Helps to integrate sustainability to the city structures, processes, working culture and mindsets. | Empowered people are motivated to develop their work to be more sustainable. Increased understanding of co-benefits of climate action within the city organisation  |
 |  Intelligent Cities Challenge | Espoo is a mentor city in ICC 2023-25 supporting European cities towards the green and digital | European Commission | ICC core cities Local experts | Sharing city best practices and co-learning with the EU community. Espoo's | Green & digital transition of local economy  |
-8
-
 |   | transition of their local economies, through Local Green Deals. | In Espoo: Centre of Excellence for Sustainable Development (Mayor's Office) |  | focus in 2023-25 challenge is the mobility and transport sector, where new green and digital solutions are still needed to speed up the low-carbon transition. | Sustainable competitiveness Quality of life  |
 | --- | --- | --- | --- | --- | --- |
 |  CrAFt Cities supporting New European Bauhaus (NEB) | Espoo is part of CrAFt reference cities network and will benefit and learn from the project's guidance and pathways in developing climate neutral, beautiful and inclusive cities in line with the New European Bauhaus (NEB) iniative. | CrAFt project 8 lead partners across Europe In Espoo: Centre of Excellence for Sustainable Development (Mayor's Office) | Citizens, policymakers, arts and academia | Sharing models and building capacities in making the cities' climate-neutral transformations beautiful, inclusive and sustainable. | Accessibility Liveable and resilient way of life Spatial quality More beautiful, inclusive and sustainable built environment  |
@@ -3041,20 +2943,19 @@ Module C-1 "Organisational and Governance Innovation Interventions" consists of 
 |  Circular Cities Declaration | The Circular Cities Declaration is a commitment from European cities and regions to use the levers at our disposal coherently across the organisation to transition from a linear to a circular economy. Espoo signed the commitment in 2020 and follows its ten objectives | ICLEI Europe In Espoo: Centre of Excellence for Sustainability, Mayor's Office | City units, schools, libraries Circular businesses Research, development and innovation actors | Circular Cities Declaration provides a systemic framework to promoting circular economy in the city with residents and stakeholders. Circular transition is one of the key way to reach climate goals | Green & digital transition of local economy Local job and value creation Resource efficiency  |
 9
 
-|   | to promote systemic development of circular solutions. |  |  | in sectors that have large environmental impact and resource demand. | Reduced need of virgin raw materials  |
-| --- | --- | --- | --- | --- | --- |
-|  Partnership for Regional Innovation (PRI) Pilot Action | Partnerships for Regional Innovation (PRI) builds on positive experiences with smart specialisation strategies (S3). The ambition is to test tools for better coordination and directionality of regional, national and EU innovation policies towards implementation of the twin transition and tackling the innovation divide in the EU. | The European Committee of the Regions (CoR) and European Commission's Joint Research Centre (JRC)
+to promote systemic development of circular solutions. | in sectors that have large environmental impact and resource demand. | Reduced need of virgin raw materials
+Partnership for Regional Innovation (PRI) Pilot Action | Partnerships for Regional Innovation (PRI) builds on positive experiences with smart specialisation strategies (S3). The ambition is to test tools for better coordination and directionality of regional, national and EU innovation policies towards implementation of the twin transition and tackling the innovation divide in the EU. | The European Committee of the Regions (CoR) and European Commission's Joint Research Centre (JRC)
 In Espoo: Strategy and Development Unit (Mayor's Office) | Research, development and innovation actors
 Other European cities | Developing and sharing local strategic policy framework dealing with innovation, industrial development, sustainability transitions and broader economic and social development. | Green & digital transition of local economy  |
-|  National level  |   |   |   |   |   |
-|  Climate Mission Finland 2030 national network | National network that brings together six Finnish Mission Cities, national government, and key institutions to identify joint challenges and solutions. | Espoo, Helsinki, Tampere, Turku, Lahti and Lappeenranta
+National level
+Climate Mission Finland 2030 national network | National network that brings together six Finnish Mission Cities, national government, and key institutions to identify joint challenges and solutions. | Espoo, Helsinki, Tampere, Turku, Lahti and Lappeenranta
 Ministry of the Environment
 Ministry of Economic Affairs and Employment
 Ministry of Transport and Communications | Business Finland
 Association of Finnish Local and Regional Authorities
 Other Finnish cities with high climate ambition | National coordination, support and co-learning for climate-neutral and smart cities by 2030. | Inter-organisational collaboration and co-creation
 Shared understanding of challenges and opportunities  |
-|  Decarbonized Cities Programme | Encouraging companies to develop internationally successful solutions for the carbon-neutrality challenges of selected partner cities. The largest challenges in urban environments are related to | Business Finland
+Decarbonized Cities Programme | Encouraging companies to develop internationally successful solutions for the carbon-neutrality challenges of selected partner cities. The largest challenges in urban environments are related to | Business Finland
 In Espoo: Centre of Excellence for Sustainable | Finnish start-ups, SMEs, and large companies
 Finnish and non-Finnish partner cities | The program will enhance and fund the creation of cross-sectoral solutions and offerings that cities need to reduce their CO2 emissions and to speed- | Local job and value creation
 Increased private investment  |
@@ -3068,11 +2969,10 @@ Climate Neutrality Action
 
 Plan
 
-|   | the built environment, energy, and traffic. | Development (Mayor's Office) | Finnish research institutes, universities, and universities of applied sciences
+the built environment, energy, and traffic. | Development (Mayor's Office) | Finnish research institutes, universities, and universities of applied sciences
 Finnish organizations in the field of public administration
 International financiers of large projects | up their energy transition. Cities in Finland and abroad can have a role as testing and reference platforms. | Green & digital transition of local economy  |
-| --- | --- | --- | --- | --- | --- |
-|  Circular Economy Green Deal | The Circular Economy Green Deal boosts society's transition to circular economy. It identifies key measures to promote a low-carbon circular economy consisting of common frameworks, criteria, and commitments. It is currently constructed in multilevel co-operation and will be based on scientific scenarios that are unique in terms of scope and coverage. The City of Espoo is one of 76 actors involved in the preparation of joint action and scenarios. Implementation will begin in 2024. | Ministry of the Environment, Ministry of Economic Affairs and Employment
+Circular Economy Green Deal | The Circular Economy Green Deal boosts society's transition to circular economy. It identifies key measures to promote a low-carbon circular economy consisting of common frameworks, criteria, and commitments. It is currently constructed in multilevel co-operation and will be based on scientific scenarios that are unique in terms of scope and coverage. The City of Espoo is one of 76 actors involved in the preparation of joint action and scenarios. Implementation will begin in 2024. | Ministry of the Environment, Ministry of Economic Affairs and Employment
 In Espoo: Centre of Excellence for Sustainable Development (Mayor's Office) | Industries and companies
 Regions, cities, municipalities
 Research institutions | Identify common goals, common rules, common criteria and most impactful actions in six areas:
@@ -3087,23 +2987,22 @@ Resource efficiency
 Reduced need of virgin raw materials
 Liveable and resilient way of life
 Shared understanding of challenges and opportunities  |
-|  Climate Leadership Coalition (CLC) | Climate Leadership Coalition is the largest non-profit climate business network in Europe. Espoo as well as many key companies, universities and research centers | Climate Leadership Coalition (CLC) | CLC has 96 organizational members: 66 companies, 9 universities, 5 trade organizations, 7 cities, 6 | Together the network aims to make a significant positive climate impact through business solutions. The members | Green & digital transition of local economy  |
+Climate Leadership Coalition (CLC) | Climate Leadership Coalition is the largest non-profit climate business network in Europe. Espoo as well as many key companies, universities and research centers | Climate Leadership Coalition (CLC) | CLC has 96 organizational members: 66 companies, 9 universities, 5 trade organizations, 7 cities, 6 | Together the network aims to make a significant positive climate impact through business solutions. The members | Green & digital transition of local economy
 1
 
 ESPOO ESBO
 
 Climate Neutrality Action Plan
 
-|   | based in the city are active members of the network.
+based in the city are active members of the network.
 CLC believes that profound transition to a sustainable world can be economically beneficial, viable and financeable. The network organizes regular theme group meetings for its members and makes policy proposals for governments and other stakeholders. |  | research institutions, 2 foundations and 1 trade union confederation. | strive to be among the leaders of their respective fields in terms of climate change mitigation ambition. Protecting the climate
 CLC encourages decision-makers to speed up the green transition and the green recovery by attracting investments via predictable and ambitious policies and systemic market-driven solutions. | Inter-organisational collaboration and co-creation
 Shared understanding of challenges and opportunities
 Business opportunities
 Local job and value creation
 Increased private investment to low-carbon solutions  |
-| --- | --- | --- | --- | --- | --- |
-|  Regional level  |   |   |   |   |   |
-|  Helsinki Region Land use, housing and transport agreements (MAL) | The agreements concerning land use, housing and transport are concluded by the State of Finland with the largest urban regions. The purpose of the agreements is to facilitate and support the cooperation between municipalities in urban regions and between municipalities and the State in the guidance related to the urban structure and coordination of land use, housing and transport. | Ministry of the Environment
+Regional level
+Helsinki Region Land use, housing and transport agreements (MAL) | The agreements concerning land use, housing and transport are concluded by the State of Finland with the largest urban regions. The purpose of the agreements is to facilitate and support the cooperation between municipalities in urban regions and between municipalities and the State in the guidance related to the urban structure and coordination of land use, housing and transport. | Ministry of the Environment
 In Espoo: Urban Environment Sector | Cities and municipalities
 Ministry of Transport and Communications, Ministry of Economic Affairs and Employment, Ministry of Finance, Housing
 Finance and Development Centre of Finland (ARA), Finnish Transport Infrastructure Agency, Finnish Transport and Communications Agency Traficom, and the Centre for Economic | The main goal of the MAL 2023 planning is a climate-neutral, prosperous and successful Helsinki region. The MAL 2023 plan aims to build a region where current and future residents can live good lives and enjoy smooth everyday travel. The plan will also provide a sustainable solution to the region's growth and ensure good conditions for business and other activities. A sustainable transport system and the associated measures are essential to the plan. | Liveable and resilient way of life
@@ -3117,9 +3016,8 @@ ESPOO ESBO
 
 Climate Neutrality Action Plan
 
-|   |  |  | Development, Transport and the Environment |  |   |
-| --- | --- | --- | --- | --- | --- |
-|  Climate-neutral Helsinki-Uusimaa Region 2030 | Helsinki-Uusimaa is aiming at climate neutrality by the year of 2030, in line with the forerunner cities such as Espoo, of the region. The urgent goal of climate neutrality is done in cooperation on a wide scale in all sectors; public, private and RDI and furthering shared projects. The climate actions are based on local strengths and the sharing of best practices. | Helsinki-Uusimaa Regional Council | Cities and municipalities
+Development, Transport and the Environment
+Climate-neutral Helsinki-Uusimaa Region 2030 | Helsinki-Uusimaa is aiming at climate neutrality by the year of 2030, in line with the forerunner cities such as Espoo, of the region. The urgent goal of climate neutrality is done in cooperation on a wide scale in all sectors; public, private and RDI and furthering shared projects. The climate actions are based on local strengths and the sharing of best practices. | Helsinki-Uusimaa Regional Council | Cities and municipalities
 Industries and companies
 Universities and research | Five climate spearheads for mitigation in Helsinki-Uusimaa are chosen as the most vital and urgent themes for climate neutrality:
 Climate smart land use and construction
@@ -3130,8 +3028,8 @@ Together with sustainable consumption and production. | Green & digital transiti
 Inter-organisational collaboration and co-creation
 Shared understanding of challenges and opportunities
 Local job and value creation  |
-|  **Local level**  |   |   |   |   |   |
-|  Espoo Story | Espoo Story is the city strategy, a narrative created together with city employees, citizens, communities, and companies. This tool for strategic and participatory leadership was introduced in 2012 by the mayor and has since evolved and expanded.
+**Local level**
+Espoo Story | Espoo Story is the city strategy, a narrative created together with city employees, citizens, communities, and companies. This tool for strategic and participatory leadership was introduced in 2012 by the mayor and has since evolved and expanded.
 
 Espoo Story is based on a holistic understanding of sustainable development and outlines climate-neutrality by 2030 as one of the | Strategy and Development Unit (Mayor's Office) | Political leadership and elected members of city council
 
@@ -3157,27 +3055,25 @@ ESPOO ESBO
 
 Climate Neutrality Action Plan
 
-|   | development solutions in a long-term and collaborative manner aiming at climate-neutrality by 2030 and onwards. | Excellence for Sustainable Development, Building Control and City Planning. |  | area. Kera's carbon-neutrality roadmap supports the implementation of the commitment. The roadmap is a collection of impactful measures that fit with the themes of construction, energy and transport. | Sustainable competitiveness
+development solutions in a long-term and collaborative manner aiming at climate-neutrality by 2030 and onwards. | Excellence for Sustainable Development, Building Control and City Planning. | area. Kera's carbon-neutrality roadmap supports the implementation of the commitment. The roadmap is a collection of impactful measures that fit with the themes of construction, energy and transport. | Sustainable competitiveness
 Attractive, liveable neighborhood
 Local job and value creation
 Increased private investments to low-carbon solutions  |
-| --- | --- | --- | --- | --- | --- |
-|  Voluntary Local Review (VLR) | The Voluntary Local Review assesses the city's operations, cross-administrative programmes and projects in relation to the 17 sustainable development goals of the UN's Agenda 2030 programme. Espoo's first VLR was conducted in 2020, next one in 2023 and the city is starting to plan for preparing VLR 2025 in a participatory process with different départements and stakeholders. | Centre of Excellence for Sustainable Development (Mayor's Office) | City departments, academia, businesses, NGOs, citizens
+Voluntary Local Review (VLR) | The Voluntary Local Review assesses the city's operations, cross-administrative programmes and projects in relation to the 17 sustainable development goals of the UN's Agenda 2030 programme. Espoo's first VLR was conducted in 2020, next one in 2023 and the city is starting to plan for preparing VLR 2025 in a participatory process with different départements and stakeholders. | Centre of Excellence for Sustainable Development (Mayor's Office) | City departments, academia, businesses, NGOs, citizens
 Prime Minister's Office, tther cities in Finland and abroad, URBACT, UN Habitat | Builds capacity in the city organisations and stakeholders to understand the interconnected nature of sustainability targets. | Holistic understanding of sustainability
 Interconnectedness of local action to global goals  |
-|  RAKKE – a solution path to sustainable growth ecosystems | Strengthens cooperation between the public and private sectors and promotes innovation and business activities in four key sectors: 1. low-carbon transport 2. energy 3. circular economy and 4. smart and clean urban solutions. Develops an ecosystem with shared targets and values with 100 companies and RDI actors. | Centre of Excellence for Sustainable Development (Mayor's Office) | Businesses and RDI actors
+RAKKE – a solution path to sustainable growth ecosystems | Strengthens cooperation between the public and private sectors and promotes innovation and business activities in four key sectors: 1. low-carbon transport 2. energy 3. circular economy and 4. smart and clean urban solutions. Develops an ecosystem with shared targets and values with 100 companies and RDI actors. | Centre of Excellence for Sustainable Development (Mayor's Office) | Businesses and RDI actors
 City departments in Economic Development and Urban Environment Sector | With the help of a network-based approach, functional ecosystems are built promoting new business and growth. Joint “solution paths” are identified together with 100 companies and developers. | Green & digital transition of local economy
 Innovative and scalable solutions
 Sustainable competitiveness  |
 5
 
-|  SPARCS co-creation model toolkit for smart and sustainable city | A toolkit to facilitate co-creation of a sustainable and smart urban area in cooperation with urban development stakeholders. Provides practical tools to develop regions to achieve sustainability goals and to mobilise a broad range of stakeholders in a systemic societal change. Developed in Espoo in 2022 as part of EU Horizon2020 SPARCS project. | Centre of Excellence for Sustainable Development (Mayor's Office) | City Planning Unit; Urban Environment Sector
+SPARCS co-creation model toolkit for smart and sustainable city | A toolkit to facilitate co-creation of a sustainable and smart urban area in cooperation with urban development stakeholders. Provides practical tools to develop regions to achieve sustainability goals and to mobilise a broad range of stakeholders in a systemic societal change. Developed in Espoo in 2022 as part of EU Horizon2020 SPARCS project. | Centre of Excellence for Sustainable Development (Mayor's Office) | City Planning Unit; Urban Environment Sector
 Land-owners, businesses, universities, RDI actors, citizens | A networked, multilateral way of working enables processing complex issues, such as sustainability and climate targets with a large number of stakeholders and vast scope of issues. Co-creation helps to develop user-oriented urban structures that are flexible during the regional lifecycle and better able to withstand the shocks in the operational environment. | Co-creation can produce not only ecologically sustainable and smart, but also community-based and active urban areas.
 
 Co-creation can also optimise public and private sector resources and act as a catalyst for the development of solutions by providing testbeds for innovation.  |
-| --- | --- | --- | --- | --- | --- |
-|  Internal  |   |   |   |   |   |
-|  Sustainable Espoo Programme | Cross-sectoral development programmes are Espoo's key instrument of breaking financial, administrative, and political silos to implement Espoo Story in tackling systemic issues such as climate change that no city department can solve alone. Sustainable Espoo is the longest running of the four programmes (in operation since 2013). It is owned by the Mayor. The programme's steering group has representation from all the political groups represented in the city council (9 people), the youth council and city officials from different city sectors (9 people). | Centre of Excellence for Sustainable Development (Mayor's Office) | The programme has developed collaborative methods between the city and different stakeholders, including companies, organizations, research institutions and universities, and citizens towards shared and common goals.
+Internal
+Sustainable Espoo Programme | Cross-sectoral development programmes are Espoo's key instrument of breaking financial, administrative, and political silos to implement Espoo Story in tackling systemic issues such as climate change that no city department can solve alone. Sustainable Espoo is the longest running of the four programmes (in operation since 2013). It is owned by the Mayor. The programme's steering group has representation from all the political groups represented in the city council (9 people), the youth council and city officials from different city sectors (9 people). | Centre of Excellence for Sustainable Development (Mayor's Office) | The programme has developed collaborative methods between the city and different stakeholders, including companies, organizations, research institutions and universities, and citizens towards shared and common goals.
 
 Key partners have been actively involved in the preparation of programme planning. 200+ people participated in preparing the | The programme has its own yearly budget that is used as a seed funding to bring multiple times more resources from EU level, national, and private funding to support the climate and sustainability goals. The Steering Group is responsible for the good alignment of the project portfolio to steer systemic change. It also provides a place to discuss and tackle any potential political and practical controversies of the activities as well as a platform where rapid | The broad and representative composition aims to ensure consideration of the different perspectives of sustainable development and a comprehensive commitment to shared goals and their implementation.  |
 6
@@ -3232,15 +3128,14 @@ Climate Neutrality Action
 
 Plan
 
-|  (indicate name of intervention) | (describe the substance of the intervention) | (indicate responsible) | (list all stakeholder involved and affected) | (describe how intervention enables climate neutrality) | (indicate how intervention helps achieve impact listed in Module B-1)  |
-| --- | --- | --- | --- | --- | --- |
-|  Empowerment and inclusion  |   |   |   |   |   |
-|  Systemic participation of citizens in city planning and services through Espoo participation model | From consultation to partnership is the slogan that guides Espoo's approach and model to citizen participation. It describes the shift towards a more inclusive and participatory governance. Partnership-based participation gives residents a more active role as experts, partners and decision-makers. | Strategy and Development Unit (Mayor's Office) | All city departments and units
+(indicate name of intervention) | (describe the substance of the intervention) | (indicate responsible) | (list all stakeholder involved and affected) | (describe how intervention enables climate neutrality) | (indicate how intervention helps achieve impact listed in Module B-1)
+Empowerment and inclusion
+Systemic participation of citizens in city planning and services through Espoo participation model | From consultation to partnership is the slogan that guides Espoo's approach and model to citizen participation. It describes the shift towards a more inclusive and participatory governance. Partnership-based participation gives residents a more active role as experts, partners and decision-makers. | Strategy and Development Unit (Mayor's Office) | All city departments and units
 Citizens, including groups such as youth and children, immigrant groups, elderly, and the disabled
 Third sector, NGOs | Participation is based on the Espoo story and its targets, including that of climate-neutrality. Resident participation is strengthened by moving away from one-off consultations towards ongoing and planned involvement and interaction in all city operations. | Increase citizens' confidence and ability to influence the development of the city and make better choices for climate in their daily lives
 Better well-being, health and functional capacity
 Social sustainability and democracy  |
-|  Sustainable Espoo Resident Participation Group | In 2022, a new resident participation group was introduced to strengthen the direct links between residents and Sustainable Espoo Programme. Partner group that consists of 25 residents from diverse backgrounds meets regularly in facilitated co-design workshops focusing on different aspects of the city's sustainability work, including climate. The results of each discussion are brought to the steering group of Sustainable Espoo Programme. | Centre of Excellence for Sustainable Development (Mayor's Office) | Sustainable Espoo steering group
+Sustainable Espoo Resident Participation Group | In 2022, a new resident participation group was introduced to strengthen the direct links between residents and Sustainable Espoo Programme. Partner group that consists of 25 residents from diverse backgrounds meets regularly in facilitated co-design workshops focusing on different aspects of the city's sustainability work, including climate. The results of each discussion are brought to the steering group of Sustainable Espoo Programme. | Centre of Excellence for Sustainable Development (Mayor's Office) | Sustainable Espoo steering group
 Citizens, including groups such as youth and children, immigrant groups, elderly, and the disabled
 Other city sectors and units
 Private and third sector, NGOs | Strengthens the resident-based approach and their inclusion in Espoo's sustainable development work.
@@ -3253,7 +3148,7 @@ ESPOO ESBO
 
 Climate Neutrality Action Plan
 
-|  MyEspoo on the Map | My Espoo on the Map survey gathers experience-based data from citizens to be used in future city planning. First map-based survey carried out in autumn 2020 received responses from about 6,600 Espoo residents. Almost 70,000 marks of meaningful places and development ideas were made in total. The survey was conducted in collaboration with Aalto University's research team
+MyEspoo on the Map | My Espoo on the Map survey gathers experience-based data from citizens to be used in future city planning. First map-based survey carried out in autumn 2020 received responses from about 6,600 Espoo residents. Almost 70,000 marks of meaningful places and development ideas were made in total. The survey was conducted in collaboration with Aalto University's research team
 
 The aim is that the My Espoo on the Map survey will become an established part of the initial data for urban planning and that it will be updated regularly. | City Planning (Urban Environment Sector)
 Aalto University | Citizens, schools
@@ -3261,8 +3156,7 @@ Other city sectors and units | Based on data by citizens, researchers will be ab
 Social sustainability and democracy
 Accessibility
 Liveable and resilient way of life  |
-| --- | --- | --- | --- | --- | --- |
-|  Espoo Youth council | The Espoo Youth Council consists of 40 young people aged 13 to 18. The Youth Council participates in the decision-making of the City of Espoo promoting young people's issues, bringing forward requests and expressing opinions on current issues. The Youth Council has the right to speak at and attend meetings of the City Board, the City Council and all city committees, including Sustainable Espoo Steering Group. | The activities of the Youth Council are coordinated by youth work coordinators from Espoo's Youth Services (Growth and Learning Sector)
+Espoo Youth council | The Espoo Youth Council consists of 40 young people aged 13 to 18. The Youth Council participates in the decision-making of the City of Espoo promoting young people's issues, bringing forward requests and expressing opinions on current issues. The Youth Council has the right to speak at and attend meetings of the City Board, the City Council and all city committees, including Sustainable Espoo Steering Group. | The activities of the Youth Council are coordinated by youth work coordinators from Espoo's Youth Services (Growth and Learning Sector)
 
 The members of the Youth Council are elected through an election every two years. | Youth, schools
 Decision-makers
@@ -3276,9 +3170,8 @@ ESPOO ESBO
 
 Climate Neutrality Action Plan
 
-|   |  |  |  | have affect the future of young generations. |   |
-| --- | --- | --- | --- | --- | --- |
-|  Espoo Disability and Elderly Councils | Espoo's Disability Council monitors and takes measures to promote the rights and opportunities of people with disabilities and long-term illnesses in Espoo. The council makes initiatives and proposals and issues statements and opinions.
+have affect the future of young generations.
+Espoo Disability and Elderly Councils | Espoo's Disability Council monitors and takes measures to promote the rights and opportunities of people with disabilities and long-term illnesses in Espoo. The council makes initiatives and proposals and issues statements and opinions.
 
 The Elderly Council serves as a guardian and advocate of the elderly in Espoo in municipal decision-making. The Elderly Council brings the perspective of the elderly Espoo residents to the city's services and city planning. | The activities of the Disability Council in Espoo are guided and monitored by the Disability Council Advisory Board, whose members include all disability and patient organisations in Espoo, 57 organisations in total.
 
@@ -3292,8 +3185,8 @@ The Disability Council has established a special working group to ensure that th
 Accessibility
 
 Liveable and resilient way of life  |
-|  Regulation and support  |   |   |   |   |   |
-|  Supporting capacity building of sports clubs, NGOs, and community groups in the field of sustainability and climate | Supporting capacity building of sports clubs, NGOs, and community groups to help identifying and integration sustainability and climate actions.
+Regulation and support
+Supporting capacity building of sports clubs, NGOs, and community groups in the field of sustainability and climate | Supporting capacity building of sports clubs, NGOs, and community groups to help identifying and integration sustainability and climate actions.
 
 Concrete examples include Agenda 2030 Sustainable Development Goals (SDG) sense-making workshops for NGOs and working with sports clubs in their effort to become climate neutral (for | Sustainable Espoo Programme
 Centre of Excellence for Sustainability, Mayor's Office | Residents
@@ -3309,30 +3202,28 @@ ESPOO ESBO
 
 Climate Neutrality Action Plan
 
-|   | example Carbon Neutral Basket Ball team Honka). |  |  |  | Inter-organisational collaboration and co-creation
+example Carbon Neutral Basket Ball team Honka). | Inter-organisational collaboration and co-creation
 Shared understanding of challenges and opportunities  |
-| --- | --- | --- | --- | --- | --- |
-|  Supporting voluntary action of residents | City supporting residents' voluntary action. For example, Our Park concept, where resident groups or housing associations make an agreement with the city to take care of their local environment, community effort to stop invasive species, supporting garbage collection of resident groups and individuals by providing equipment and supporting planting events or flowers and trees with resident's and NGOs. | Urban Environment Sector | Residents
+Supporting voluntary action of residents | City supporting residents' voluntary action. For example, Our Park concept, where resident groups or housing associations make an agreement with the city to take care of their local environment, community effort to stop invasive species, supporting garbage collection of resident groups and individuals by providing equipment and supporting planting events or flowers and trees with resident's and NGOs. | Urban Environment Sector | Residents
 Community and neighborhood groups, housing associations | Having agency creates hope and empowerment in the sense that it gives people the possibility to affect their own future. That can reduce the climate anxiety. The more hands-on the activity is, the more it usually gives a sense of having an impact. Residents can build a feeling of ownership and responsibility to actively take care of their local environment. | Sense of community and well-being benefits brought by the social interaction (eg. reducing loneliness).
 Working to protect the local nature helps to grow the connectedness to nature that correlates positively to environmentally friendly behaviour.
 Liveable and resilient way of life  |
-|  **Systemic initiatives, plans and projects**  |   |   |   |   |   |
-|  New City of Espoo Master Plan 2060 | Espoo Master Plan 2060 is a citywide general plan that directs the city's growth and the key questions in land use. The master plan directs transport, mobility and the placement of housing, services, workplaces, and recreational areas. At the moment, Espoo has several master plans that form an inconsistent whole. The | City Planning Unit (Urban Environment Sector) | Residents, NGOs, companies
+**Systemic initiatives, plans and projects**
+New City of Espoo Master Plan 2060 | Espoo Master Plan 2060 is a citywide general plan that directs the city's growth and the key questions in land use. The master plan directs transport, mobility and the placement of housing, services, workplaces, and recreational areas. At the moment, Espoo has several master plans that form an inconsistent whole. The | City Planning Unit (Urban Environment Sector) | Residents, NGOs, companies
 City sectors and units
 The planners gather all kinds of information through studies and surveys by hearing experts in | The new City of Espoo Master Plan covers the entire city, and its goals, agreed by City Board in 2023, are set for 2060. The goals emphasise sustainable city growth, climate smartness, improvement of transport connections, general pleasantness, and proximity to nature. Espoo | Sustainable and resilient urban environments
 Liveable and resilient way of life
 Sustainable, smooth, and accessible mobility choices  |
 3
 
-|   | partial master plans will be compiled into a consistent and up-to-date full master plan. The preparation started in 2022 and are expected to last until 2027.
+partial master plans will be compiled into a consistent and up-to-date full master plan. The preparation started in 2022 and are expected to last until 2027.
 
 Residents, NGOs, companies and other Espoo-based parties will be provided with opportunities to participate in the preparation of the master plan.
 
 Climate change will be tackled by supporting carbon-neutral energy solutions and protecting the city's carbon sinks and reservoirs. |  | various fields discussing matters with residents and stakeholders, such as business representatives and the operators in charge of the city's technical maintenance. The planners also cooperate with the various sectors of the city. | will be developed as climate-smart city of networks.
 
 Sufficient carbon sinks will be ensured by marking our most important sinks and reservoirs as green areas. Green transition towards low emission forms of transport is supported by connecting the city's central locations with efficient public transport. One goal is to enhance the city's internal, east-west public transport network. Bicycling opportunities will also be enhanced by developing the city's main bicycle route network. | Participation and democracy  |
-| --- | --- | --- | --- | --- | --- |
-|  Increasing the carbon handprint of Espoo community | Espoo acts as a test lab for learning how cities and regions can contribute to the development of the carbon handprint. While bringing local emissions down, Espoo's goal is to simultaneously increase the size of the urban community's carbon handprint. In other words, this means contributing to the reduction in global emissions with the help of innovations developed in Espoo. Businesses in Espoo will first pilot solutions locally | City of Espoo
+Increasing the carbon handprint of Espoo community | Espoo acts as a test lab for learning how cities and regions can contribute to the development of the carbon handprint. While bringing local emissions down, Espoo's goal is to simultaneously increase the size of the urban community's carbon handprint. In other words, this means contributing to the reduction in global emissions with the help of innovations developed in Espoo. Businesses in Espoo will first pilot solutions locally | City of Espoo
 Climate Leadership Coalition (CLC) | Businesses, start-ups
 Research and innovation actors | To promote the carbon handprint Espoo can offer assets – for example buildings, infrastructure, land – for use as pilot facilities for new solutions. In addition, Espoo can accelerate demand for new products and services via public procurement and other services and help innovators analyse problems and develop solutions using open data. New concepts and solutions can then be | Green & digital transition of local economy
 Local job and value creation
@@ -3344,9 +3235,8 @@ ESPOO ESBO
 
 Climate Neutrality Action Plan
 
-|   | and then export the best solutions globally. This way, Espoo’s impact can exceed its physical size |  |  | shared effectively via city and regional networks. |   |
-| --- | --- | --- | --- | --- | --- |
-|  Sustainable Future Districts | The Sustainable Future Districts project (2023-2026) creates development and innovation environments in city districts, where companies and research institutes can test and create climate-neutral urban solutions and develop sustainable scalable business models. The main development environments in project are Kera, Leppävaara, Espoon keskus, Kivenlahti, Keilaniemi, Finnoo and Viiskorpi. | Centre of Excellence for Sustainability (Mayor’s Office) in collaboration with the Urban Environment Sector. | City sectors and units
+and then export the best solutions globally. This way, Espoo’s impact can exceed its physical size | shared effectively via city and regional networks.
+Sustainable Future Districts | The Sustainable Future Districts project (2023-2026) creates development and innovation environments in city districts, where companies and research institutes can test and create climate-neutral urban solutions and develop sustainable scalable business models. The main development environments in project are Kera, Leppävaara, Espoon keskus, Kivenlahti, Keilaniemi, Finnoo and Viiskorpi. | Centre of Excellence for Sustainability (Mayor’s Office) in collaboration with the Urban Environment Sector. | City sectors and units
 Companies, land-owners
 Research and innovation actors
 Residents | Espoo aims to be carbon-neutral by 2030, and the Kera area has a big role to play in achieving this goal as a district where new solutions can first be developed and tested.
@@ -3356,7 +3246,7 @@ In the project, solutions will be developed within four urban environment themes
 References and competitiveness for companies operating in the field of green transition
 
 Increased understanding and knowledge for the city organization of the possible and available solutions, e.g. for defining procurements.  |
-|  Energy service model for regions (ENPA) | The ENPA project (2023-2026) promotes collaboration between municipalities and private entities through the procurement of energy service models for city regions. Espoo aims to assess the suitability of energy service models for different types of city districts, the profitability of service | Centre of excellence for sustainable development, Mayor’s Office
+Energy service model for regions (ENPA) | The ENPA project (2023-2026) promotes collaboration between municipalities and private entities through the procurement of energy service models for city regions. Espoo aims to assess the suitability of energy service models for different types of city districts, the profitability of service | Centre of excellence for sustainable development, Mayor’s Office
 City of Helsinki
 City of Vantaa
 Metropolia University of Applied Sciences | Private sector, NGO’s, research institutes | The assessment and implementation of energy service models aids in the achievement of climate goals related to energy.
@@ -3372,11 +3262,10 @@ Climate Neutrality Action
 
 Plan
 
-|   | models, and their strengths and weaknesses. |  |  | opportunities within the field of sustainable energy | supporting sustainable lifestyles.  |
-| --- | --- | --- | --- | --- | --- |
-|  BalticSeaH2 hydrogen valley | BalticSeaH2 project is partly EU funded project, which pioneers an innovative initiative, establishing a significant hydrogen valley spanning across the Baltic Sea region. | CLIC Innovation, Gas Grid Finland | The consortium includes 40 partners (incl. private companies) from nine Baltic Sea region countries: Finland, Estonia, Latvia, Lithuania, Poland, Germany, Denmark, Norway, and Sweden. | Focused on southern Finland and Estonia, BalticSeaH2 strives to build an integrated, interregional hydrogen economy. Demonstration and investment cases will showcase the diverse applications of hydrogen across multiple sectors, attracting a total investment of over 4 billion euros. The role Espoo is central as we need all the possible partners onboard to enable the necessary changes and allowing favourable investment opportunities and environment for new green hydrogen solutions and use cases. | Excellent opportunity for the city to learn and assess its own role in hydrogen development.  |
-|  Skills and capacity building  |   |   |   |   |   |
-|  Eco-support network | The internal Eco-support network helps to develop the city functions, processes, services and mindsets to be more climate-friendly and sustainable. The network helps also to facilitate cross-administrative cooperation in the city organization. There is also an interior network of educators on sustainability | Centre of Excellence for Sustainable Development (Mayor's Office) | City departments Schools | Capacity and capability building within the city organization to better integrate climate action and sustainability in the city operations. | Holistic understanding of sustainability
+models, and their strengths and weaknesses. | opportunities within the field of sustainable energy | supporting sustainable lifestyles.
+BalticSeaH2 hydrogen valley | BalticSeaH2 project is partly EU funded project, which pioneers an innovative initiative, establishing a significant hydrogen valley spanning across the Baltic Sea region. | CLIC Innovation, Gas Grid Finland | The consortium includes 40 partners (incl. private companies) from nine Baltic Sea region countries: Finland, Estonia, Latvia, Lithuania, Poland, Germany, Denmark, Norway, and Sweden. | Focused on southern Finland and Estonia, BalticSeaH2 strives to build an integrated, interregional hydrogen economy. Demonstration and investment cases will showcase the diverse applications of hydrogen across multiple sectors, attracting a total investment of over 4 billion euros. The role Espoo is central as we need all the possible partners onboard to enable the necessary changes and allowing favourable investment opportunities and environment for new green hydrogen solutions and use cases. | Excellent opportunity for the city to learn and assess its own role in hydrogen development.
+Skills and capacity building
+Eco-support network | The internal Eco-support network helps to develop the city functions, processes, services and mindsets to be more climate-friendly and sustainable. The network helps also to facilitate cross-administrative cooperation in the city organization. There is also an interior network of educators on sustainability | Centre of Excellence for Sustainable Development (Mayor's Office) | City departments Schools | Capacity and capability building within the city organization to better integrate climate action and sustainability in the city operations. | Holistic understanding of sustainability
 Improved capacities and capabilities to promote climate action
 Shared understanding of challenges and opportunities  |
 6
@@ -3385,32 +3274,30 @@ ESPOO ESBO
 
 Climate Neutrality Action Plan
 
-|   | themes that promotes also climate work in teaching. |  |  |  |   |
-| --- | --- | --- | --- | --- | --- |
-|  Integrating climate and sustainability in trainings offered to city personnel and management | Capacity building of city personnel and managers by integrating sustainability and climate topics in trainings offered to different personnel groups: new personnel, unit and department managers, teachers etc. | HR Unit with the support of Centre of Excellence for Sustainable Development (Mayor's Office) | City personnel and managers | Capacity and capability building within the city organization to better integrate climate action and sustainability in the city operations. | Improved capacities and capabilities to promote climate action
+themes that promotes also climate work in teaching.
+Integrating climate and sustainability in trainings offered to city personnel and management | Capacity building of city personnel and managers by integrating sustainability and climate topics in trainings offered to different personnel groups: new personnel, unit and department managers, teachers etc. | HR Unit with the support of Centre of Excellence for Sustainable Development (Mayor's Office) | City personnel and managers | Capacity and capability building within the city organization to better integrate climate action and sustainability in the city operations. | Improved capacities and capabilities to promote climate action
 Shared understanding of challenges and opportunities  |
-|  Citizen engagement network | The internal citizen engagement network is open to all city employees interested in shares best practices, challenges and experiences on issues related to citizen engagement, participation and inclusion of vulnerable groups. The network organises meetings and trainings and has a network of facilitators to support facilitating events. | Strategy and Development Unit (Mayor's Office) | City departments and units
+Citizen engagement network | The internal citizen engagement network is open to all city employees interested in shares best practices, challenges and experiences on issues related to citizen engagement, participation and inclusion of vulnerable groups. The network organises meetings and trainings and has a network of facilitators to support facilitating events. | Strategy and Development Unit (Mayor's Office) | City departments and units
 City personnel
 Citizens, including vulnerable groups | Climate action becomes inclusive by engaging a wide range of stakeholders, designing policies that are fair and accessible, and equitably distributing policy impacts. Internal capacity building and sharing of best practices in how to include citizens and different citizen groups is a key element of ensuring just transition. | Participation and democracy
 Sense of community
 Social sustainability
 Accessibility  |
-|  Change in social behavior |  |  |  |  |   |
-|  Education for sustainable development | Promoting sustainable mobility for children and young people through attitude education and encouraging cycling and sustainable mobility at kindergartens and schools.
+Change in social behavior
+Education for sustainable development | Promoting sustainable mobility for children and young people through attitude education and encouraging cycling and sustainable mobility at kindergartens and schools.
 
 Learning about waste reduction, new recycling methods, circular economy and sustainable consumption | Growth and learning sector | Children and youth | The sustainability education aims at empowering children and youth with the knowledge, skills, values and attitudes needed to act as agents of change and make sustainable choices in their daily life. With the youth, these attitudes are carried to homes. | Improved capacities and capabilities to promote climate action
 Active youth
 Adoption of nature- and climate-friendly lifestyles  |
 7
 
-|   | as part of education at all levels. Improving sorting facilities at schools to enable learning by doing. |  |  | Democracy education is an integral part of Espoo's early childhood education, basic education, general upper secondary education and youth services, as it seeks to promote our values and foster a deeper understanding of democratic principles, participation, justice and civic responsibilities to enable just transition through the whole society. |   |
-| --- | --- | --- | --- | --- | --- |
-|  Climate friendly meals | Climate friendly meals and food wastage reduction in city's food services. "Nudging" used to make vegetarian food choices more appealing by e.g. placing vegetarian option first in line. | Food services
+as part of education at all levels. Improving sorting facilities at schools to enable learning by doing. | Democracy education is an integral part of Espoo's early childhood education, basic education, general upper secondary education and youth services, as it seeks to promote our values and foster a deeper understanding of democratic principles, participation, justice and civic responsibilities to enable just transition through the whole society.
+Climate friendly meals | Climate friendly meals and food wastage reduction in city's food services. "Nudging" used to make vegetarian food choices more appealing by e.g. placing vegetarian option first in line. | Food services
 Espoo Catering | Customers of food services
 Food producers | Food served at schools, daycare centres and other city facilities increasingly climate-friendly encouraging citizens to also make sustainable food choices in their daily lives. | Reduction of waste management costs
 Resource efficiency
 Adoption of climate-friendly lifestyles  |
-|  Advice and guidance that supports sustainable energy and mobility choices and promote energy citizenship | Advice and guidance to residents promoting sustainable choices energy and mobility. An active resident in energy matters, i.e. an energy citizen, takes responsibility for their energy consumption and its impacts. New capacities are needed as building owners become electricity producers and charging points for vehicles | Centre of Excellence for Sustainable Development (Mayor's Office) | Citizens, housing associations
+Advice and guidance that supports sustainable energy and mobility choices and promote energy citizenship | Advice and guidance to residents promoting sustainable choices energy and mobility. An active resident in energy matters, i.e. an energy citizen, takes responsibility for their energy consumption and its impacts. New capacities are needed as building owners become electricity producers and charging points for vehicles | Centre of Excellence for Sustainable Development (Mayor's Office) | Citizens, housing associations
 City sectors and units in Urban Environment Sector | Citizens have gained new capacities as local energy producers.
 Housing associations are aware of benefits on installing EV charging infrastructure. | Improved capacities and capabilities to promote climate action
 Improved energy and resource efficiency
@@ -3440,19 +3327,18 @@ Climate Neutrality Action
 
 Plan
 
-|  E3: Energy optimization and energy savings in city-owned buildings | City of Espoo
+E3: Energy optimization and energy savings in city-owned buildings | City of Espoo
 Espoon
 Asunnot
 rental housing company | Started - 2030 | Energy systems | No direct emission reductions.
 Contributes towards / enables actions E2 and E1. | 12 513  |
-| --- | --- | --- | --- | --- | --- |
-|  E4: Enabling the increased electrification, network investments required to energy and mobility actions to be implemented | Caruna
+E4: Enabling the increased electrification, network investments required to energy and mobility actions to be implemented | Caruna
 City of Espoo
 City-wide Electric grid Buildings, streets Charging infrastructure | Started - 2030 | Energy systems | No direct emission reductions.
 Contributes towards / enables actions E1 and M3. | 109 000  |
-|  All Energy systems actions development, Cross Cutting Costs | City of Espoo, Fortum and Caruna | Started - 2030 | Energy systems | No direct emission reductions.
+All Energy systems actions development, Cross Cutting Costs | City of Espoo, Fortum and Caruna | Started - 2030 | Energy systems | No direct emission reductions.
 Contributes towards / enables actions E1-E4. | 7 417  |
-|  M1: Promoting walking and cycling | City of Espoo: Public works department
+M1: Promoting walking and cycling | City of Espoo: Public works department
 Traffic planning department
 Centre of Excellence for Sustainable Development | Started - 2030 | Mobility & transport | No direct emission reductions.
 Contributes towards / enables emission reductions in car traffic (M3) and shift to public transport (M2). | 25 550  |
@@ -3475,19 +3361,18 @@ ESPOO ESBO
 
 Climate Neutrality Action Plan
 
-|  B1b : Developing Espoo's city districts as innovation hubs for low-carbon and smart solutions | City of Espoo | Started - 2030 | Built environment | emissions are included in Mobility and Transport actions. | Included in cross-cutting costs  |
-| --- | --- | --- | --- | --- | --- |
-|  B2a: Promoting low-carbon construction | City of Espoo
+B1b : Developing Espoo's city districts as innovation hubs for low-carbon and smart solutions | City of Espoo | Started - 2030 | Built environment | emissions are included in Mobility and Transport actions. | Included in cross-cutting costs
+B2a: Promoting low-carbon construction | City of Espoo
 Espoon Asunnot | Started - 2030 | Built environment |  | 379 992  |
-|  B2b: Emission-free work sites | City of Espoo
+B2b: Emission-free work sites | City of Espoo
 Espoon Asunnot | Started - 2030 | Built environment |  | Included in cross-cutting costs  |
-|  All Built Environment Actions, Cross Cutting Costs | City of Espoo
+All Built Environment Actions, Cross Cutting Costs | City of Espoo
 Espoon Asunnot | Started - 2030 | Built environment |  | 3 336  |
-|  W1: Reducing emissions from waste treatment | Helsinki Region Environmental Services (HSY) | Started - 2030 | Waste and circular economy | Emissions 2030 compared to 2022 -14 kt | 3 708  |
-|  W2: Promoting circular solutions | City of Espoo
+W1: Reducing emissions from waste treatment | Helsinki Region Environmental Services (HSY) | Started - 2030 | Waste and circular economy | Emissions 2030 compared to 2022 -14 kt | 3 708
+W2: Promoting circular solutions | City of Espoo
 Helsinki Region Environmental Services HSY | Started - 2030 | Waste and circular economy | Small direct emission reductions on scope 1 and 2 emission. Contributes towards emission reductions in other sectors such as energy and transport.
 Greater effect on scope3 emission reductions. Espoo has not yet developed emission reduction scenarios for scope 3 emissions, so it is not yet possible to provide an estimated number of emission reductions. | Included in cross-cutting costs  |
-|  All Waste and Circular Economy Actions | City of Espoo
+All Waste and Circular Economy Actions | City of Espoo
 Helsinki Region Environmental Services HSY | Started - 2030 | Waste and circular economy | Included in W1 and scope 3. | 3 688  |
 2
 
@@ -3790,18 +3675,17 @@ ESPOO ESBO
 
 Climate-Neutrality Commitments
 
-|  *NCC Building Finland, *
+*NCC Building Finland, *
 NCC Property development Finland
 *NCC Industry Oy | construction | Limited company, Limited company, Limited company | Kati Tauriainen, Petri Bergström, Pertti Peltomaa | Head of NCC Building Finland, Head of NCC Property development Finland
 Head of department, stone materials Finland, NCC Industry Oy  |
-| --- | --- | --- | --- | --- |
-|  Ramboll Finland Oy | consulting, built environment | Limited company | Maija Jokela | Managing director  |
-|  *Ramirent Finland Oy | construction | Limited company | Mikael Kämpe | CEO  |
-|  Siemens Osakeyhtiö | Electrical and electronic products and services | Limited company | Harald Schnur | Head of Smart Infrastructure, Finland and Baltic countries  |
-|  Sitowise Group Oyj | consulting, built environment | Public limited company | Heikki Haasmaa | CEO  |
-|  *SRV Group | construction | Public limited company | Saku Sipola | President and CEO  |
-|  *VTT Technical Research Centre of Finland Ltd | research | Limited company | Antti Vasara | CEO  |
-|  YIT corporation | construction | Public limited company | Heikki Vuorenmaa | President and CEO  |
+Ramboll Finland Oy | consulting, built environment | Limited company | Maija Jokela | Managing director
+*Ramirent Finland Oy | construction | Limited company | Mikael Kämpe | CEO
+Siemens Osakeyhtiö | Electrical and electronic products and services | Limited company | Harald Schnur | Head of Smart Infrastructure, Finland and Baltic countries
+Sitowise Group Oyj | consulting, built environment | Public limited company | Heikki Haasmaa | CEO
+*SRV Group | construction | Public limited company | Saku Sipola | President and CEO
+*VTT Technical Research Centre of Finland Ltd | research | Limited company | Antti Vasara | CEO
+YIT corporation | construction | Public limited company | Heikki Vuorenmaa | President and CEO
 
 * Individual Signatory Commitments included in this Climate city contract
 
@@ -3898,12 +3782,7 @@ List and describe shortly main climate actions your organization is committed to
 ESPOO ESBO
 Climate-Neutrality Commitments
 
-|  At the moment we cannot give exact numbers for these reductions and how much that would cost. |  |   |
-| --- | --- | --- |
-|  |   |   |
-|  |   |   |
-|  |   |   |
-|  |   |   |
+At the moment we cannot give exact numbers for these reductions and how much that would cost.
 NET ZERO CITIES
 EU MISSION PLATFORM | CLIMATE NEUTRAL AND SMART CITIES
 
@@ -4074,13 +3953,10 @@ Climate-Neutrality Commitments
 
 #
 
-|  Climate action | Estimated yearly CO2 reductions (kt CO2-ekv) and the reduction year (if applicable) | Estimated need of investments (€) and year (if applicable)  |
-| --- | --- | --- |
-|  Calculating annually Betolar's CO2 emissions from Scope 1,2,3. Calculation will be based on GHG Protocol. | N/A | N/A  |
-|  Supporting sustainable practices at Betolar's Espoo premises and lab. Betolar is ISO (9001; 14001; 45001) certified and committed to the continuous development, including our practices in our laboratory. | N/A | N/A  |
-|  Building capabilities to calculate product-based Life-cycle Assessment (LCA). This will help Betolar's clients and the end-users with assessing the impact, not just CO2 emissions but also regarding other impact categories (natural resources, etc) |  |   |
-|  |   |   |
-|  |   |   |
+Climate action | Estimated yearly CO2 reductions (kt CO2-ekv) and the reduction year (if applicable) | Estimated need of investments (€) and year (if applicable)
+Calculating annually Betolar's CO2 emissions from Scope 1,2,3. Calculation will be based on GHG Protocol. | N/A | N/A
+Supporting sustainable practices at Betolar's Espoo premises and lab. Betolar is ISO (9001; 14001; 45001) certified and committed to the continuous development, including our practices in our laboratory. | N/A | N/A
+Building capabilities to calculate product-based Life-cycle Assessment (LCA). This will help Betolar's clients and the end-users with assessing the impact, not just CO2 emissions but also regarding other impact categories (natural resources, etc)
 NET ZERO CITIES
 EU MISSION PLATFORM | CLIMATE NEUTRAL AND SMART CITIES
 
@@ -4169,13 +4045,10 @@ Climate-Neutrality Commitments
 
 List and describe shortly main climate actions your organization is committed to that contribute to the goal of climate-neutral Espoo by 2030. If applicable, list also the estimated yearly CO2 reductions and the estimated need of investment.
 
-|  Climate action | Estimated yearly CO2 reductions (lit CO2-ekv) and the reduction year (if applicable) | Estimated need of investments (€) and year (if applicable)  |
-| --- | --- | --- |
-|  Network investment: The Kivenlahti power line capacity increment in southern Espoo |  | ~4 M€  |
-|  Network investment: Hepokorpi-Finnoo power line, capacity increment from Northern to Southern Espoo |  | ~35 M€  |
-|  Continuous network investments in Espoo: Caruna will improve the network to enable new CO2-neutral electricity production and use for customers, today and in the future. |  | ~10 M€/yr  |
-|  |   |   |
-|  |   |   |
+Climate action | Estimated yearly CO2 reductions (lit CO2-ekv) and the reduction year (if applicable) | Estimated need of investments (€) and year (if applicable)
+Network investment: The Kivenlahti power line capacity increment in southern Espoo | ~4 M€
+Network investment: Hepokorpi-Finnoo power line, capacity increment from Northern to Southern Espoo | ~35 M€
+Continuous network investments in Espoo: Caruna will improve the network to enable new CO2-neutral electricity production and use for customers, today and in the future. | ~10 M€/yr
 NET ZERO CITIES
 EU MISSION PLATFORM | CLIMATE NEUTRAL AND SMART CITIES
 
@@ -4266,7 +4139,7 @@ List and describe shortly main climate actions your organization is committed to
 ESP00 ESBO
 Climate-Neutrality Commitments
 
-|   | scalability depending on
+scalability depending on
 the number of users.
 However, based on
 preliminary calculations,
@@ -4284,11 +4157,6 @@ In this model, there is
 also the potential to
 implement carbon
 emissions trading |   |
-| --- | --- | --- |
-|  |   |   |
-|  |   |   |
-|  |   |   |
-|  |   |   |
 NET ZERO CITIES
 EU MISSION PLATFORM | CLIMATE NEUTRAL AND SMART CITIES
 
@@ -4358,7 +4226,7 @@ Circular Solutions: Circular Solutions is responsible for operating, maintaining
 
 **Operations related to climate action:** Fortum is committed to carbon neutrality and protecting biodiversity.
 
-|  **SBTi 1.5 °C**
+**SBTi 1.5 °C**
 Emission reduction according to SBTi 1.5 °C trajectory
 Specific emissions of <20 gCO₂/kWh for total energy production and < 10 gCO₂/kWh for power generation by 2028
 **Carbon neutrality**
@@ -4368,7 +4236,6 @@ Coal exit in own operations by the end of year 2027 | **Biodiversity**
 No net loss of biodiversity from existing and new operations in Scopes 1 and 2 from 2030 onwards, excluding all aquatic impacts
 % reduction in dynamic terrestrial impacts in upstream Scope 3 by 2030 compared to 2021
 Commitment to continue local initiatives and develop science-based methodology with partners to assess the aquatic impacts of hydropower during 2023  |
-| --- | --- |
 
 With our Espoo Clean heat project, we are committed to be carbon neutral by 2030
 
@@ -4409,13 +4276,10 @@ List and describe shortly main climate actions your organization is committed to
 
 Table filled by Fortum Power and heat and focusing on decarbonizing heating. However, it is essential to notice that Fortum group level climate actions / targets can be seen above.
 
-|  Climate action | Estimated yearly CO2 reductions (kt CO2-ekv) and the reduction year (if applicable) | Estimated need of investments (€) and year (if applicable)  |
-| --- | --- | --- |
-|  Stop using coal on district heating latest by 2025 | See our website: https://www.fortum.fi/yrityksille-ja-yhteisoille/lammittys-ja-jaahdytys/kaukolampo/kaukolampoa-yha-puhtaammin/kaukolammon-tuotantoluvut |   |
-|  Have CO2 neutral district heating available by end of 2029 | See our website: https://www.fortum.fi/yrityksille-ja-yhteisoille/lammittys-ja-jaahdytys/kaukolampo/kaukolampoa-yha-puhtaammin/kaukolammon-tuotantoluvut |   |
-|  Investments on reusing Microsoft's DCs' excess heat |  | 225 million Euros  |
-|  |   |   |
-|  |   |   |
+Climate action | Estimated yearly CO2 reductions (kt CO2-ekv) and the reduction year (if applicable) | Estimated need of investments (€) and year (if applicable)
+Stop using coal on district heating latest by 2025 | See our website: https://www.fortum.fi/yrityksille-ja-yhteisoille/lammittys-ja-jaahdytys/kaukolampo/kaukolampoa-yha-puhtaammin/kaukolammon-tuotantoluvut
+Have CO2 neutral district heating available by end of 2029 | See our website: https://www.fortum.fi/yrityksille-ja-yhteisoille/lammittys-ja-jaahdytys/kaukolampo/kaukolampoa-yha-puhtaammin/kaukolammon-tuotantoluvut
+Investments on reusing Microsoft's DCs' excess heat | 225 million Euros
 NET ZERO CITIES
 EU MISSION PLATFORM | CLIMATE NEUTRAL AND SMART CITIES
 
@@ -4493,12 +4357,11 @@ Climate-Neutrality Commitments
 
 #
 
-|  CO2 reductions elsewhere) |  |  | Laurea's Circular Economy Living Lab serves as a collaborative platform, a learning and development environment.
+CO2 reductions elsewhere) | Laurea's Circular Economy Living Lab serves as a collaborative platform, a learning and development environment.
 through its RDI activities, Laurea produces knowledge and creates operating models which support SDG achievement
 Laurea shares this competence widely in society through its business activities, including continuing education.
 Sustainable development policies and objectives are aligned with our fields of expertise through continuous SDG evaluation of our research projects and programmes and cross-cutting RDI themes.
 Laurea disseminates actively the sustainable delvelopent outcomes and findings of its RDI activities |   |
-| --- | --- | --- | --- | --- |
 O
 
 ESPOO ESBO
@@ -4528,13 +4391,12 @@ Climate-Neutrality Commitments
 
 #
 
-|   |  |  | and development projects.
+and development projects.
 We define sustainability targets for development projects annually and monitor progress made in them as part of the operational and financial plan
 We challenge our enthusiastic higher education community to co-create sustainable development solutions and innovations that support the achievement of our goals
 Our sustainable development activities are student-centred and conducted in cooperation with the entire higher education community.
 Our teaching personnel's sustainable development expertise is developed systematically
 The development of expertise takes place as part of national universities of applied sciences cooperation but  |
-| --- | --- | --- | --- |
 C
 
 ESPOO ESBO
@@ -4543,14 +4405,13 @@ Climate-Neutrality Commitments
 
 #
 
-|   |  |  | also through Laurea's own training at Laurea
+also through Laurea's own training at Laurea
 The personnel's sustainable development expertise is included in each employee's personal goals.
 Personnel's sustainable development expertise is measured through regular national (UAS) survey
 Students' sustainable development initiatives are promoted in a dialogue with the student union
 We centralise our communication related to promoting sustainable development goals and make it transparent with the help of a new website
 We ensure that our resources are used responsibly in investment activities
 We look after the well-being of the higher education community's members and, as a responsible employer,  |
-| --- | --- | --- | --- |
 C
 
 ESPOO ESBO
@@ -4563,10 +4424,9 @@ Climate-Neutrality Commitments
 
 List and describe shortly main climate actions your organization is committed to that contribute to the goal of climate-neutral Espoo by 2030. If applicable, list also the estimated yearly CO2 reductions and the estimated need of investment.
 
-|  Climate action | Estimated yearly CO2 reductions (kt CO2-ekv) and the reduction year (if applicable) | Estimated need of investments (€) and year (if applicable)  |
-| --- | --- | --- |
-|  Laurea aims at being carbon-neutral higher education institution 2030. To achieve this Laurea calculates its carbon footprint annually and uses this information to develop facilities management and for new facilities. |  |   |
-|  Sustainable catering
+Climate action | Estimated yearly CO2 reductions (kt CO2-ekv) and the reduction year (if applicable) | Estimated need of investments (€) and year (if applicable)
+Laurea aims at being carbon-neutral higher education institution 2030. To achieve this Laurea calculates its carbon footprint annually and uses this information to develop facilities management and for new facilities.
+Sustainable catering
 We influence our carbon footprint by choosing sustainable catering services
 
 We exert influence by sharing information and good practices related to responsible catering services
@@ -4574,22 +4434,20 @@ We exert influence by sharing information and good practices related to responsi
 The food served at the campus restaurants is mainly locally produced and plant-based
 
 We reduce food losses by improving our ability to predict the customer numbers at our campus restaurants |  |   |
-|  Sustainable Mobility
+Sustainable Mobility
 The size of the carbon footprint create by our mobility supports our goal of We favour public transport in our travel practices |  |   |
-|  When planning trips abroad, we ensure through reporting that the trip promotes the Laurea's strategic goals.
+When planning trips abroad, we ensure through reporting that the trip promotes the Laurea's strategic goals.
 
 We use digitalisation, virtual environments and telework appropriately in the activities of the higher education community and in our cooperation with regional and international partners the campuses, as well as between the different campuses, to support the reduction of the carbon footprint
 
 We create new solutions for sustainable mobility in cooperation with students and the UAS network in order to reduce climate impacts |  |   |
-| --- | --- | --- |
-|  **Sustainable Facilities**
+**Sustainable Facilities**
 
 Our campuses are energy-efficient, and we utilise renewable energy sources. Proper maintenance and regular services as well as sustainable procurements ensure that our campuses have a long and efficient life cycle. Sustainable development goals and measures have been specified for property maintenance services, and we monitor their achievement together with our service partners
 
 Rather than procuring new items, we primarily use repair and renovation services when furniture and equipment reach the end of their life cycle. As far as possible, we recycle responsibly any furniture and equipment that Laurea can no longer use.
 
 We improve the at-source sorting of wastes by means of enabling and guidance, set requirements for further treatment, and take various measures to prevent the generation of waste |  |   |
-|  |   |   |
 NET ZERO CITIES
 EU MISSION PLATFORM | CLIMATE NEUTRAL AND SMART CITIES
 
@@ -4656,13 +4514,10 @@ Climate-Neutrality Commitments
 
 List and describe shortly main climate actions your organization is committed to that contribute to the goal of climate-neutral Espoo by 2030. If applicable, list also the estimated yearly CO2 reductions and the estimated need of investment.
 
-|  Climate action | Estimated yearly CO2 reductions (kt CO2-ekv) and the reduction year (if applicable) | Estimated need of investments (€) and year (if applicable)  |
-| --- | --- | --- |
-|  NCC's competence centre for low-carbon and resource-efficient construction |  |   |
-|  Development and realization of low-carbon office buildings |  |   |
-|  Development and realization of low-carbon residential buildings |  |   |
-|  |   |   |
-|  |   |   |
+Climate action | Estimated yearly CO2 reductions (kt CO2-ekv) and the reduction year (if applicable) | Estimated need of investments (€) and year (if applicable)
+NCC's competence centre for low-carbon and resource-efficient construction
+Development and realization of low-carbon office buildings
+Development and realization of low-carbon residential buildings
 NET ZERO CITIES
 EU MISSION PLATFORM | CLIMATE NEUTRAL AND SMART CITIES
 
@@ -4723,13 +4578,10 @@ Information classification: Ramirent Standard
 
 List and describe shortly main climate actions your organization is committed to that contribute to the goal of climate-neutral Espoo by 2030. If applicable, list also the estimated yearly CO2 reductions and the estimated need of investment.
 
-|  Climate action | Estimated yearly CO2 reductions (Kt CO2-ekv) and the reduction year (if applicable) | Estimated need of investments (€) and year (if applicable)  |
-| --- | --- | --- |
-|  Reduction of our direct emissions between 2019 and 2030 -50 % (SBTi) |  |   |
-|  Reduction of our indirect emissions between 2019 and 2030 -30 % (SBTi) |  |   |
-|  Ramirent has signed and committed to European commission Green Deal agreement (Climate Neutral EU 2050) |  |   |
-|  |   |   |
-|  |   |   |
+Climate action | Estimated yearly CO2 reductions (Kt CO2-ekv) and the reduction year (if applicable) | Estimated need of investments (€) and year (if applicable)
+Reduction of our direct emissions between 2019 and 2030 -50 % (SBTi)
+Reduction of our indirect emissions between 2019 and 2030 -30 % (SBTi)
+Ramirent has signed and committed to European commission Green Deal agreement (Climate Neutral EU 2050)
 NET ZERO CITIES
 EU MISSION PLATFORM | CLIMATE NEUTRAL AND SMART CITIES
 
@@ -4814,13 +4666,7 @@ Climate-Neutrality Commitments
 
 List and describe shortly main climate actions your organization is committed to that contribute to the goal of climate-neutral Espoo by 2030. If applicable, list also the estimated yearly CO2 reductions and the estimated need of investment.
 
-|  Climate action | Estimated yearly CO2 reductions (kt CO2-ekv) and the reduction year (if applicable) | Estimated need of investments (€) and year (if applicable)  |
-| --- | --- | --- |
-|  |   |   |
-|  |   |   |
-|  |   |   |
-|  |   |   |
-|  |   |   |
+Climate action | Estimated yearly CO2 reductions (kt CO2-ekv) and the reduction year (if applicable) | Estimated need of investments (€) and year (if applicable)
 NET ZERO CITIES
 EU MISSION PLATFORM | CLIMATE NEUTRAL AND SMART CITIES
 
@@ -4879,10 +4725,9 @@ Espoo and VTT have partnered in several large European and Finnish research proj
 
 Please describe shortly on Table 1 your organization's role in the key areas of climate work in Espoo. You may fill in information only in the domains that are relevant to your organization.
 
-|   | Energy systems | Mobility and Transport | Waste and circular economy | Built environment | Nature-based solutions  |
-| --- | --- | --- | --- | --- | --- |
-|  Carbon footprint (CO2 reductions in Espoo) | Continuous research collaborations on technical development, innovation and demonstration projects in various fields in the area of Espoo city.  |   |   |   |   |
-|  Carbon handprint (new innovations, research, products, and services that contribute to CO2 reductions elsewhere) | Research on Integrated and smart low carbon energy systems, focusing on:
+Energy systems | Mobility and Transport | Waste and circular economy | Built environment | Nature-based solutions
+Carbon footprint (CO2 reductions in Espoo) | Continuous research collaborations on technical development, innovation and demonstration projects in various fields in the area of Espoo city.
+Carbon handprint (new innovations, research, products, and services that contribute to CO2 reductions elsewhere) | Research on Integrated and smart low carbon energy systems, focusing on:
 ) Sector integration enabling flexibility, resiliency and new business in energy
 ) Energy management in districts and buildings
 ) Intelligent grids with distributed | Research on Smart and sustainable mobility and transport systems and services, focusing on:
@@ -4908,9 +4753,8 @@ List and describe shortly main climate actions your organization is committed to
 |  VTT's target is to become carbon neutral by 2030. Main GHG sources include electricity and heat consumption at our facilities as well as travelling. The actions for reducing our emissions include improvement of energy efficiency and supply of renewable heat and | In 2022 VTT's GHG emissions were :
 scope 1: 0,17 kt CO2 eq
 scope 2: 1,8 kt CO2 eq |   |
-|  electricity. Other actions are under evaluation. | scope 3: 3,8 kt CO2 eq
+electricity. Other actions are under evaluation. | scope 3: 3,8 kt CO2 eq
 Target is to become carbon neutral by 2030. |   |
-| --- | --- | --- |
 NET ZERO CITIES
 EU MISSION PLATFORM | CLIMATE NEUTRAL AND SMART CITIES
 
@@ -6199,16 +6043,15 @@ ESPOO ESBO
 2
 Taulukko 10: Kustannusvaikutusarviot liikenteen lisatoimenpiteiden osalta.
 
-|  Lisatoimenpide | Investointikustannus | Selite | Käyttökustannus | Selite  |
-| --- | --- | --- | --- | --- |
-|  Nopeusrajoitusten alentaminen
+Lisatoimenpide | Investointikustannus | Selite | Käyttökustannus | Selite
+Nopeusrajoitusten alentaminen
 Espoon alueen maanteilla | 1 | Toimenpiteen investointikustannukset ovat matalat ja toimenpiteen toteutumisessa on kyse poliittisesta päätöksestä. | 0 | Toimenpiteellä on pieni tai vähäinen vaikutus käyttöökustannuksiin. Käyttökustannukset voivat laskea, kun polttoaineenkulutus nopeusrajoituksen alenemisen myötä laskee.  |
-|  Sähköhenkilöautojen määrän nopeampi kasvu | 2 | Sähköautojen hankintapäätökseen vaikuttaa espoolaisten ostovoima ja muutokset siinä. Sähköautojen latausinfran ja päästöttömien polttoaineiden jakeluinfran kustannukset eivät kuitenkaan ole valtavia suhteessa esimerkiksi raidehankkeisiin. | -2 | Sähköllä ja päästöttömillä polttoaineilla kulkevien ajoneuvojen käyttökustannukset tulevat olemaan bensa-autoja pienemmät.  |
-|  Ympäristövyöhykkeen asettaminen
+Sähköhenkilöautojen määrän nopeampi kasvu | 2 | Sähköautojen hankintapäätökseen vaikuttaa espoolaisten ostovoima ja muutokset siinä. Sähköautojen latausinfran ja päästöttömien polttoaineiden jakeluinfran kustannukset eivät kuitenkaan ole valtavia suhteessa esimerkiksi raidehankkeisiin. | -2 | Sähköllä ja päästöttömillä polttoaineilla kulkevien ajoneuvojen käyttökustannukset tulevat olemaan bensa-autoja pienemmät.
+Ympäristövyöhykkeen asettaminen
 kuorma-autoille | 1 | Toimenpiteen investointikustannukset ovat matalat ja toimenpiteen toteutumisessa on kyse poliittisesta päätöksestä. | -2 | Sähköllä ja päästöttömillä polttoaineilla kulkevien ajoneuvojen käyttökustannukset tulevat olemaan bensa-autoja pienemmät.  |
-|  Matinkylä-Leppävaara
+Matinkylä-Leppävaara
 pikaraitiotien rakentaminen | 3 | Raidehankkeiden investointikustannukset ovat suuret. | -2 | Kokonaisvaltaisesti tarkasteltuna raideliikenteen käyttökustannukset ovat yksityisautoilun kustannuksia pienemmät. Pienemmällä infran ja kaluston määrällä pystytään kuljettamaan enemmän ihmisiä kuin henkilöautoilla. Raitiotien käyttökustannus on myös bussiliikennettä pienempi.  |
-|  Jakeluvelvoitelain muutosesityksen toteutuminen | 1 | Toimenpiteen investointikustannukset ovat matalat ja toimenpiteen toteutumisessa on kyse poliittisesta päätöksestä. | 0 | Toimenpiteellä tavoitellaan yksityisautoilun käyttökustannusten laskua mutta vaikutuksista ei ole pidemmällä aikavälillä taetta.  |
+Jakeluvelvoitelain muutosesityksen toteutuminen | 1 | Toimenpiteen investointikustannukset ovat matalat ja toimenpiteen toteutumisessa on kyse poliittisesta päätöksestä. | 0 | Toimenpiteellä tavoitellaan yksityisautoilun käyttökustannusten laskua mutta vaikutuksista ei ole pidemmällä aikavälillä taetta.
 
 SITOWISE
 

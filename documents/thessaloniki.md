@@ -935,10 +935,10 @@ The development of the Impact Pathways was based on the Net Zero Cities (NZC The
 | --- | --- | --- | --- | --- | --- |
 |  Fields of action | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions) | Indirect impacts (co-benefits)  |
 |  1. Electricity (energy systems) | A:Technology and infrastructure | Local/distributed electricity generation from RES | Increasing the share of renewables in electricity generation | Demilitarisation of the electricity network | Energy security
-Energy system electrification  |
+| Energy system electrification  |
 |   |   |  Technical interventions to upgrade the electricity network | Increased network flexibility |   | Stability of the electricity network  |
 |   |  C: Social innovation | Social awareness and information actions for citizens | Increase in own energy production | Changing the role of Citizens from passive to active consumers (prosumers) | Economic benefits
-Creating green jobs  |
+| Creating green jobs  |
 |   |  D: Democratic participation | Establishment of working groups, memoranda of understanding and a | Involvement of citizens and stakeholders in decision-making |  | • Fair energy transition  |
 CITY OF THESSALONIKI
 Climate Neutrality Action Plan
@@ -1075,7 +1075,7 @@ areas | Shift to Public
 Transport &
 active mobility  |   |   |
 |   |   |   |  Buses fleet
-electrification  |   |   |
+| electrification  |   |   |
 |   |   |  New mobility
 services based
 on public
@@ -1094,7 +1094,7 @@ motorised
 passenger
 transport  |   |   |
 |   |   |   |  Increasing car
-pooling  |   |   |
+| pooling  |   |   |
 |   |   |   |  Transition to full
 digitalisation of
 transport &
@@ -1153,7 +1153,7 @@ Climate Neutrality Action Plan
 • Reduction in the use of private vehicles |   |   |
 |   |   |  Reducing the need for motorised passenger transport |   |   |   |
 |  Q: Funding | Development of new business models | Facilitate access to financial instruments for the implementation of actions by individuals | Reducing greenhouse gas emissions from transport & logistics | • New investments
-• Improved operation of urban freight transport |   |
+| • Improved operation of urban freight transport |   |
 |   |   |  Optimisation of urban freight transport |   |   |   |
 |   |   |  Transition to full digitalisation of transport & logistics |   |   |   |
 |   |  Incentives for adopting active mobility and switching to electric vehicles | Contribute to change the mindset of the citizen | • Increasing the use of low-carbon technology vehicles |   |   |
@@ -1167,7 +1167,7 @@ Climate Neutrality Action Plan
 |   |   |   |  Electrification of buses |   |   |
 |   |   |   |  Shift to Public Transport & active mobility | Facilitate shift to alternative means of transport and services  |   |
 |   |  F: Learning and competences | Seminars on the safe use of mobility vehicles and bicycles | Shift to Public Transport & active mobility | Facilitate shift to the use of alternative means of transport and services | • Improving citizens' health
-• Road safety  |
+| • Road safety  |
 |  |   |   |   |   |   |
 |  4. Water & Waste Management | A: Technology and infrastructure | Introduction of separate collection of bio-waste | Increasing the composting rate of bio-waste | Reducing the environmental footprint by improving bio-waste management | Improving the quality of the environment  |
 |   |   |  Development of the necessary bio-waste treatment infrastructure | Reduction of the volume of waste to be landfilled |  | Strengthening the circular economy  |
@@ -1237,7 +1237,7 @@ Resources | Strategic benefit of promoting an environment that encourages innova
 • Increased transparency
 • Involvement of citizens and stakeholders in decision making |   |   |
 |   |  C: Social innovation | Integration of social awareness and information actions for citizens | • Increased transparency
-• Involvement of citizens and stakeholders in decision-making | Increased acceptance of strategies - actions related to the de-carbonisation of the energy network | Fair energy transition  |
+| • Involvement of citizens and stakeholders in decision-making | Increased acceptance of strategies - actions related to the de-carbonisation of the energy network | Fair energy transition  |
 |   |  D: Democratic participation | Design of collaboration platforms (collaboration platform) | Involvement of citizens and stakeholders in decision-making  |   |   |
 |   |  F. Learning and competences | Informing citizens about environmental sustainability and | • Increased transparency
 • Involvement of citizens and | • Increasing private initiatives for environmental | Attracting new investments - businesses  |
@@ -1542,7 +1542,7 @@ Climate Neutrality Action Plan
 6
 
 |   |  | a high load factor in off-peak time windows
-Installation of intelligent infrastructure to monitor unloading points and provide a booking tool with preferential status for vehicles with a high load factor  |
+| Installation of intelligent infrastructure to monitor unloading points and provide a booking tool with preferential status for vehicles with a high load factor  |
 | --- | --- | --- |
 |   |  3.13 Planning, monitoring and supporting the transition to climate neutrality of the urban distribution system | It includes the package of actions that is considered necessary initially for planning and then monitoring the transition of the urban distribution system to climate neutrality. It concerns regulatory, policy and governance actions between the urban distribution ecosystem in the Municipality of Thessaloniki.
 Development of a Sustainable Urban Freight Transport Plan for the entire Municipality of Thessaloniki
@@ -1652,8 +1652,7 @@ Climate Neutrality Action Plan
 |   |  Removed/substituted energy, volume, or fuel type | 1,483.23 Tonne of Oil Equivalent/ year  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | With emissions of 452 gCO2/KWh) of electricity produced the reduction of GHG/CO2 from the project is estimated at 7,919 tonnes per year (17,250,000 kWh * 0.452 kg/kWh / 1,000kg/tn)  |
 |   |  Total costs and costs by CO2e unit | Wind farm cost estimates available online estimate the cost of installation at $1.3 million per megawatt (MW) of electrical power generation. In addition are maintenance costs estimated at 1-2 cents (USD) per kWh generated or 1.2 to 1.5 euro cents (c€) per kWh of wind energy produced. With these data, a 10MW wind farm requires an investment of 12 million euros.
-
-With a carbon intensity for Greece of 0.452 kg CO2/kWh, the amount of CO2 avoided is 17,520,000 kWh * 0.452 kg CO2/kWh = 7,919,040 kg CO2. The investment cost per tonne of CO2 avoided, based on the total cost of the wind farm, is EUR 1,515/tonne.  |
+| With a carbon intensity for Greece of 0.452 kg CO2/kWh, the amount of CO2 avoided is 17,520,000 kWh * 0.452 kg CO2/kWh = 7,919,040 kg CO2. The investment cost per tonne of CO2 avoided, based on the total cost of the wind farm, is EUR 1,515/tonne.  |
 |  B-2.2: Individual action outlines - Production of electricity from RES  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | Production of electricity from RES  |
@@ -1676,7 +1675,7 @@ Climate Neutrality Action Plan
 |   |  Removed/substituted energy, volume, or fuel type | ≈475 GWh (in line with the projected reduction of the contribution of fossil fuels to electricity generation from 62% to 14%).  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 330 kt CO_{2eq} /year  |
 |   |  Total costs and costs by CO2e unit | 170 million €
-million €/kt CO_{2eq}  |
+| million €/kt CO_{2eq}  |
 |  B-2.2: Individual action outlines - Renovation of building stock  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | Renovation of building stock  |
@@ -1699,7 +1698,7 @@ Climate Neutrality Action Plan
 |   |  Removed/substituted energy, volume, or fuel type | >100GWh/year (assuming the annual renovation rate (3.5%), the existing thermal needs (1,332 GWh/year), and an average saving of 35%). The calculations do not take into account the savings from the penetration of heat pumps.  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 35 kt CO_{2eq} /year  |
 |   |  Total costs and costs by CO2e unit | 559 million €
-million €/kt CO_{2eq}  |
+| million €/kt CO_{2eq}  |
 |  B-2.2: Individual action outlines - New buildings with high energy efficiency standards  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | New buildings with high energy efficiency standards  |
@@ -1749,7 +1748,7 @@ Climate Neutrality Action Plan
 |   | GHG emissions reduction estimate (total) per emission source sector | 57 kt CO_{2eq} /year  |
 | --- | --- | --- |
 |   | Total costs and costs by CO_{2}e unit | 183 million €
-million €/kt CO_{2eq}  |
+| million €/kt CO_{2eq}  |
 |  B-2.2: Individual action outlines - More efficient heat generation from electricity  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | More efficient heat generation from electricity  |
@@ -1790,8 +1789,7 @@ Climate Neutrality Action Plan
 9
 
 |   |  | the SDC proposes the redevelopment of Dodekanissou Street, Vafopoulou Street, 26th October, and the redevelopment study of Vass. olgas, as well as one-way and two-way streets, reconfiguration of signalised intersections, and widening (Ag. Dimitriou Street) and the undergrounding study of Vass. George. In addition to the SBAK proposals, it is proposed to extend the measure of converting roads into low-traffic, low-speed and pedestrianised roads throughout the central area of the Municipality of Thessaloniki.
-
-The result of the implementation of all these projects will have a positive impact on the functioning of the central area and its role in the new era of multimodality envisaged with the operation of the Metro.  |
+| The result of the implementation of all these projects will have a positive impact on the functioning of the central area and its role in the new era of multimodality envisaged with the operation of the Metro.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | **3. Transport & Logistics**  |
 |   | Systemic lever | Technology and Infrastructure  |
@@ -1811,10 +1809,10 @@ Climate Neutrality Action Plan
 0
 
 |  Action outline | Action name | 3.1.2 Low emission zones. Climate neutral districts and restricted access by conventional vehicles
-and 3.1.3 Interventions and promotion to citizens and businesses, intervention of the AUTH (study - campaigns - organisation/government)  |
+| and 3.1.3 Interventions and promotion to citizens and businesses, intervention of the AUTH (study - campaigns - organisation/government)  |
 | --- | --- | --- |
 |  Action type | Action description | A comprehensive programme of actions to transform the Rotunda area into a low emission zone including interventions to deter the entry of private vehicles, while increasing accessibility by bicycles and electric vehicles (shared micro-mobility vehicles), removing on-street parking through subsidised off-street parking, supporting electrification for residents through and servicing deliveries within the zone exclusively by electric vehicles. Finally, they include interventions for public space regeneration, climate upgrading of buildings and protection against climate change impacts (for example shading and air renewal canopies in electricity generation contributing to the production of solar energy for municipal lighting, etc.). The programme is also interlinked with interventions outside the narrow area of Rotonda in adjacent and neighbouring areas such as interventions in the Egnatia road and in the area of the AUTH (described in the Thessaloniki City Council's SDS).
-Beyond the technical urban design and road infrastructure projects, there are a number of governance, social innovation and participation interventions related to the active involvement and support of citizens and businesses in the area as well as the cooperation with the University of Thessaloniki.  |
+| Beyond the technical urban design and road infrastructure projects, there are a number of governance, social innovation and participation interventions related to the active involvement and support of citizens and businesses in the area as well as the cooperation with the University of Thessaloniki.  |
 |   |  Field of action | 3. Transport & Logistics  |
 |   |  Systemic lever | Technology and infrastructure  |
 |  Outcome (according to module B-1.1) | Reducing the need for motorised passenger transport  |   |
@@ -1837,7 +1835,7 @@ Action 3.1.3: 5.000.000 €  |
 |  B-2.2: Individual action outlines – 3.1.4 &3.1.5  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | 3.1.4 Construction and operation of a bypass road to divert through traffic (Fly over road infrastructure)
-and 3.1.5 Overall interventions, studies and projects to reduce traffic, improve traffic flow and avoid congestion in the area of the Flyover construction works.  |
+| and 3.1.5 Overall interventions, studies and projects to reduce traffic, improve traffic flow and avoid congestion in the area of the Flyover construction works.  |
 |   |  Action type | Technical Interventions  |
 |   |  Action description | The action concerns the construction and operation of a new road infrastructure "New Eastern Regional Road of Thessaloniki (fly  |
 CITY OF THESSALONIKI
@@ -1845,8 +1843,7 @@ Climate Neutrality Action Plan
 2
 
 |   |  | over)" which is intended to decongest the main roads of the Municipality of Thessaloniki and in particular the main area of the Municipality of Thessaloniki. The action also includes interventions for the wide implementation of Intelligent Transport Systems in the area of the Regional Road.
-
-In addition to the construction of the road infrastructure, a series of interventions such as studies, traffic regulations, traffic management applications and others are also envisaged in order to reduce congestion due to the construction works and the smooth operation of the overall road network.  |
+| In addition to the construction of the road infrastructure, a series of interventions such as studies, traffic regulations, traffic management applications and others are also envisaged in order to reduce congestion due to the construction works and the smooth operation of the overall road network.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | **3. Transport & Logistics**  |
 |   | Systemic lever | Technology and Infrastructure  |
@@ -1859,7 +1856,7 @@ In addition to the construction of the road infrastructure, a series of interven
 |   | Removed/substituted energy, volume, or fuel type |   |
 |   | GHG emissions reduction estimate (total) per emission source sector | Actions 3.1.4 and 3.1.5 contribute to the Indicator Reduced motorized passenger transportation need (21% reduction compared to BAU or 26 CO2e reduction according to the Economic Model).  |
 |   | Total costs and costs by CO2e unit | Action 3.1.4: 478.000.000 € (Not included in the cost of the Action Plan as funding has been secured)
-Action 3.1.5: 10.000.000 €  |
+| Action 3.1.5: 10.000.000 €  |
 |  B-2.2: Individual action outlines – 3.1.6  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | **3.1.6** Parking management by electronic and other means: expansion and upgrading of the electronic controlled parking system, and dynamic parking pricing  |
@@ -1870,8 +1867,7 @@ Climate Neutrality Action Plan
 3
 
 |   | Action description | Expansion of the existing controlled parking system both geographically and technologically, with the installation of forklifts to detect illegal vehicles for the policing of loading bays and disabled ramps.
-
-Introduce a regulatory framework for dynamic pricing of on-street parking based on actual parking demand. Implementation of a digital system for dynamic demand-based charging.  |
+| Introduce a regulatory framework for dynamic pricing of on-street parking based on actual parking demand. Implementation of a digital system for dynamic demand-based charging.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | **3. Transport & Logistics**  |
 |   |  Systemic lever | Technology and Infrastructure, Governance and Policies  |
@@ -1906,12 +1902,11 @@ This Action 3.2.1 includes the implementation of the mobile application and the 
 |   | Action scale & addressed entities | Municipality of Thessaloniki  |
 |   | Involved stakeholders | Competent departments of the Municipality of Thessaloniki,  |
 |   | Comments on implementation | Action 3.2.1 is linked to Actions 3.3.4 and 3.9.5 as an integrated intervention.
-
-It is also directly related to Actions 3.9.2 and 3.4.4  |
+| It is also directly related to Actions 3.9.2 and 3.4.4  |
 |  Impact & cost | Generated renewable energy (if applicable) |   |
 |   | Removed/substituted energy, volume, or fuel type |   |
 |   | GHG emissions reduction estimate (total) per emission source sector | Action 3.2.1 contributes to the Indicator
-Reduced motorized passenger transportation need (21% reduction compared to BAU or 26 CO2e reduction according to the Economic Model)  |
+| Reduced motorized passenger transportation need (21% reduction compared to BAU or 26 CO2e reduction according to the Economic Model)  |
 |   | Total costs and costs by CO2e unit | 150.000,00€  |
 |  B-2.2: Individual action outlines – 3.2.2  |   |   |
 | --- | --- | --- |
@@ -1981,8 +1976,7 @@ Climate Neutrality Action Plan
 | --- | --- | --- |
 |   |  Action type | Technical Interventions  |
 |   |  Action description | The action includes the proposed network of sidewalks and redevelopments of the Sustainable Urban Mobility Plan with emphasis on the functional interconnection of sidewalks and redevelopments to support green travel. Through the action, the Municipality of Thessaloniki wishes to enable pedestrian mobility from the different regeneration areas to the rest of the areas, providing a unified experience of environmentally friendly mobility that supports sustainable mobility.
-
-Along the routes, it is proposed to use smart technologies and in particular the creation of smart crossings in order to increase the level of safety provided to travellers. The pedestrian routes are extended in the eastern part of the municipality in order to connect neighbourhoods outside the central area.  |
+| Along the routes, it is proposed to use smart technologies and in particular the creation of smart crossings in order to increase the level of safety provided to travellers. The pedestrian routes are extended in the eastern part of the municipality in order to connect neighbourhoods outside the central area.  |
 |  Reference to impact pathway | Field of action | **3. Transport & Logistics**  |
 |   |  Systemic lever | Technology and Infrastructure  |
 |   |  Outcome (according to module B-1.1) | Shift to Public Transport & active mobility  |
@@ -2010,7 +2004,7 @@ Increasing the road safety level of critical junctions in the Municipality of Th
 | --- | --- | --- |
 |  Action outline | Action name | 3.3.3 Shared Micromobility services (Shared Micromobility services)  |
 |   |  Action type | Technical interventions
-Other interventions  |
+| Other interventions  |
 |   |  Action description | The Action concerns the implementation and operation of competitive shared mobility vehicle services by different private providers of the relevant services. The shared vehicles will be available in different parts of the city (private off-street areas operating as rental and drop-off stations or virtual stations on pavements where the allocation of public space is required). The development of the services will be open to private investors but will need to follow the regulatory framework for the use of public space, and security set by the City. If there is a concession of public space (mainly parking spaces on pavements or other public spaces) there should be a clear framework of reciprocity to the municipality. In the same context, the Municipality will take the initiative to establish and maintain a relevant cooperation network, which is part of the relevant Mobility as a Service (MaaS) network.
 Beyond the buffer, the City will be responsible  |
 CITY OF THESSALONIKI
@@ -2052,7 +2046,7 @@ Climate Neutrality Action Plan
 |   |  Action scale & addressed entities | Municipality of Thessaloniki  |
 |   |  Involved stakeholders | Competent departments of the Municipality of Thessaloniki,  |
 |   |  Comments on implementation | Action 3.3.4 is linked to Actions 3.2.1 and 3.9.5 as an integrated intervention (at least in relation to the use of the integrated travel information system).
-It is also directly related to Actions 3.9.2 and 3.4.4  |
+| It is also directly related to Actions 3.9.2 and 3.4.4  |
 |  Impact & cost | Generated renewable energy (if applicable) |   |
 |   |  Removed/substituted energy, volume, or fuel type |   |
 |   |  GHG emissions reduction estimate (total) per emission source sector | Action 3.3.4 **contributes** to Indicator Shift to public & non-motorized transport (40% reduction of car passenger kilometres compared to BAU or 24 CO2e reduction according to the Economic Model)  |
@@ -2067,8 +2061,7 @@ Climate Neutrality Action Plan
 2
 
 |   |  | the creation of new bus lines to complement the Public Transport network.
-
-In addition, the action includes the creation of express lines that will cross the Municipality without many intermediate stops, serving residents mainly during peak hours. An indicative example is the creation of a bus line that passes through the Regional Road. These routes will be particularly useful during Flyover construction.  |
+| In addition, the action includes the creation of express lines that will cross the Municipality without many intermediate stops, serving residents mainly during peak hours. An indicative example is the creation of a bus line that passes through the Regional Road. These routes will be particularly useful during Flyover construction.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | **3. Transport & Logistics**  |
 |   | Systemic lever | Technology and Infrastructure  |
@@ -2077,8 +2070,7 @@ In addition, the action includes the creation of express lines that will cross t
 |   | Action scale & addressed entities | Municipality of Thessaloniki  |
 |   | Involved stakeholders | TheTA, Municipality of Thessaloniki, Region of Central Macedonia, bus lines operator (OASTH), neighbouring municipalities, shop owners, civil society, HIT/ CERTH  |
 |   | Comments on implementation | The proposed network involves modifications to route layouts, and/or transfer of starting points/terminals or the abolition of some of the existing lines of OASTH, as well as the creation of new bus lines, with the aim of creating a feeder network to the Thessaloniki Metro and other means of transport that will be implemented in the city.
-
-The restructuring of the Public Transport system designed and studied by HIT/ CERTH included: - 4 trunk lines (high frequency lines connecting points of significant demand for Public Transport) - 10 vertical feeder lines (lines connecting areas with the coastal front and with vertical direction, which at some point of their route are connected, directly or in close proximity, with one or more Metro stations) - 21 local feeder lines (local lines which at some point of their route are connected, 8 regional feeder lines (regional feeder lines (regional lines that, on the one hand, provide interconnection between the external areas of the Regional Unit of Thessaloniki and the central municipalities of Greater Thessaloniki) - 6 local lines (local lines (local lines not interconnected with Metro stations)).  |
+| The restructuring of the Public Transport system designed and studied by HIT/ CERTH included: - 4 trunk lines (high frequency lines connecting points of significant demand for Public Transport) - 10 vertical feeder lines (lines connecting areas with the coastal front and with vertical direction, which at some point of their route are connected, directly or in close proximity, with one or more Metro stations) - 21 local feeder lines (local lines which at some point of their route are connected, 8 regional feeder lines (regional feeder lines (regional lines that, on the one hand, provide interconnection between the external areas of the Regional Unit of Thessaloniki and the central municipalities of Greater Thessaloniki) - 6 local lines (local lines (local lines not interconnected with Metro stations)).  |
 |  Impact & cost | Generated renewable energy (if applicable) |   |
 |   | Removed/substituted energy, volume, or fuel type |   |
 CITY OF THESSALONIKI
@@ -2136,7 +2128,7 @@ Climate Neutrality Action Plan
 |   |  | and creating a neutral platform to support the system  |
 | --- | --- | --- |
 |   |  Action type | Technical interventions
-Other interventions  |
+| Other interventions  |
 |   |  Action description | The Action concerns the implementation of the basic requirements for the operation of an integrated Mobility as a Service (MaaS) system for Thessaloniki.
 
 The MaaS of Thessaloniki will include competitive carpooling and co-passenger services combined with public transport. The Action foresees firstly the preparation of a plan for the implementation of the integrated Mobility as a Service system in Thessaloniki...
@@ -2182,8 +2174,7 @@ Climate Neutrality Action Plan
 7
 
 |   |  | Transport (DRT) services/solutions. This action will connect remote areas inside and outside the municipality with its central area, feeding into the main public transport lines.
-
-Given the reduced demand for travel in remote areas and having as a first priority to serve the residents of these areas, the proposed possibility of on demand public transport action will increase the efficiency of public transport while reducing the environmental impact.  |
+| Given the reduced demand for travel in remote areas and having as a first priority to serve the residents of these areas, the proposed possibility of on demand public transport action will increase the efficiency of public transport while reducing the environmental impact.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | **3. Transport & Logistics**  |
 |   | Systemic lever | Technology and Infrastructure  |
@@ -2261,8 +2252,7 @@ Redevelopment of the streets where markets are held  |
 |   | Action scale & addressed entities | Municipality of Thessaloniki  |
 |   | Involved stakeholders | Competent departments of the Municipality of Thessaloniki,  |
 |   | Comments on implementation | Implementation in the proposed areas will be a good practice for expansion to other areas/neighborhoods in the Municipality.
-
-As an Action it is interlinked with other actions in the Transport sector concerning electromobility, the promotion of multimodality, shared micromobility and Mobility as a Service as well as with actions in the built environment and energy sectors.  |
+| As an Action it is interlinked with other actions in the Transport sector concerning electromobility, the promotion of multimodality, shared micromobility and Mobility as a Service as well as with actions in the built environment and energy sectors.  |
 |  Impact & cost | Generated renewable energy (if applicable) |   |
 |   | Removed/substituted energy, volume, or fuel type |   |
 |   | GHG emissions reduction estimate (total) per emission source sector | Action 3.5.2 contributes to Indicator Shift to public & non-motorized transport (40% reduction of car passenger-kilometres compared to BAU or 24 CO2e reduction according to the Economic Model) (Calculation  |
@@ -2287,7 +2277,7 @@ Operation of the on demand ridesharing service
 Campaign, incentives and measures to promote co-passage in organised ecosystems (for example students of AUTH/UoM)  |
 | --- | --- | --- |
 |   |  Action type | Technical interventions
-Other interventions  |
+| Other interventions  |
 |   |  Action description | This includes all actions relating to the promotion of co-passage.
 The car pooling application is a digital mobile application to support co-pooling with privately owned cars and will be interconnected with the Mobility as a Service platform. The application will prioritise emission avoidance and prioritise available electric vehicles. In addition to implementation costs, the action includes start-  |
 CITY OF THESSALONIKI
@@ -2321,7 +2311,7 @@ Operation of the on demand ridesharing service
 Campaign, incentives and measures to promote co-passage in organised ecosystems (for example students of AUTH/UoM)  |
 | --- | --- | --- |
 |   |  Action type | Technical interventions
-Other interventions  |
+| Other interventions  |
 |   |  Action description | This includes all actions relating to the promotion of co-passage.
 
 The car pooling application is a digital mobile application to support co-pooling with privately owned cars and will be interconnected with the Mobility as a Service platform. The application will prioritise emission avoidance and prioritise available electric vehicles. In addition to implementation costs, the action includes start-up support costs.
@@ -2370,11 +2360,11 @@ Climate Neutrality Action Plan
 |   |  Removed/substituted energy, volume, or fuel type |   |
 |   |  GHG emissions reduction estimate (total) per emission source sector | Action 3.3.1 contributes to the Indicator Electrification of buses (100% increase of the electric fleet compared to BAU or 26 CO2e reduction according to the Economic Model)  |
 |   |  Total costs and costs by CO2e unit | 227.000.000,00€
-,76 € per kg CO2 eq  |
+| ,76 € per kg CO2 eq  |
 |  B-2.2: Individual action outlines – 3.7.2. 3.7.3  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | 3.8.1 Incentives for the widespread adoption of electromobility by individuals and businesses
-and 3.8.2 Implementation of all Electric Vehicle Charging Plan actions & Expansion of the necessary charger infrastructure  |
+| and 3.8.2 Implementation of all Electric Vehicle Charging Plan actions & Expansion of the necessary charger infrastructure  |
 |   |  Action type | Technical Interventions, Other Interventions  |
 CITY OF THESSALONIKI
 Climate Neutrality Action Plan
@@ -2405,14 +2395,14 @@ Climate Neutrality Action Plan
 |   |  Removed/substituted energy, volume, or fuel type |   |
 |   |  GHG emissions reduction estimate (total) per emission source sector | Action 3.8.1 contributes to the Indicator Electrification of cars + motorcycles (Increase in electrification 36% compared to BAU or 15 CO2e reduction according to the Economic Model)  |
 |   |  Total costs and costs by CO2e unit | Action 3.8.1: €63.000.000
-Action 3.8.2: 1.052.000€  |
+| Action 3.8.2: 1.052.000€  |
 |  B-2.2: Individual action outlines – 3.8.3  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | 2.8.3 Promoting electric car sharing mobility  |
 |   |  Action type | Technical interventions
-Other interventions  |
+| Other interventions  |
 |   |  Action description | The Action concerns the creation of competitive car sharing services by different private providers of electric car mobility services. The shared vehicles will be available at various locations in the city (private off-street areas operating as rental and drop-off stations or virtual roadside stations, in which case the allocation of public space is required) equipped with fast chargers. The development of the services will be open to private investors but will need to follow the regulatory framework for the use of public space, charging and security set by the City. Where there is a public space concession (particularly alongside on-street parking) there should be a clear framework for reciprocity to the City. In the same context, the Municipality will take the initiative to set up and maintain a network of cooperation, which is a sub-network of the relevant Mobility as a Service (MaaS) network.
-Beyond the buffer, the City will be responsible for the zoning and striping of the shared vehicle parking spaces.  |
+| Beyond the buffer, the City will be responsible for the zoning and striping of the shared vehicle parking spaces.  |
 |  Reference to impact pathway | Field of action | 3. Transport & Logistics  |
 |   |  Systemic lever | Technology and Infrastructure  |
 CITY OF THESSALONIKI
@@ -2475,8 +2465,7 @@ Climate Neutrality Action Plan
 |   |  Action scale & addressed entities | Municipality of Thessaloniki  |
 |   |  Involved stakeholders | Region of Central Macedonia  |
 |   |  Comments on implementation | The Action will contribute to the indicator of private car travel avoidance as there is no corresponding indicator in the economic model proposed by the Call for Proposals and finally used, which expresses the reduction of emissions from vehicle traffic management actions.
-
-Action 3.9.1 can be combined with Action 3.4.4 (Mobility as a Service) so that the two systems together contribute to multimodal traffic management  |
+| Action 3.9.1 can be combined with Action 3.4.4 (Mobility as a Service) so that the two systems together contribute to multimodal traffic management  |
 |  Impact & cost | Generated renewable energy (if applicable) |   |
 |   |  Removed/substituted energy, volume, or fuel type |   |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 5% in total emissions from the transport sector  |
@@ -2484,7 +2473,7 @@ Action 3.9.1 can be combined with Action 3.4.4 (Mobility as a Service) so that t
 |  **B-2.2: Individual action outlines – 3.9.2, 3.9.3.**  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | **3.9.2** Creation of Mobility & climate data space and digital services to the Ecosystem
-**3.9.3** Digital twin for impact assessment of alternative climate neutrality policy and action scenarios  |
+| **3.9.3** Digital twin for impact assessment of alternative climate neutrality policy and action scenarios  |
 |   |  Action type | Technical Interventions  |
 |   |  Action description | The collection and integration of different digital data related to mobility, logistics and other related areas (for example energy) will support the successful transition of the sector to digitalisation.
 
@@ -2494,8 +2483,7 @@ Climate Neutrality Action Plan
 1
 
 |   |  | data space for Transport and Logistics, along the lines of the European Community data spaces, which will be interconnected through federation with other existing or under construction data spaces of other sectors/operators. The data collected in the data space will come from the participants in the Transport and Logistics Network, i.e. from existing systems and observatories. This primary data will be processed to produce useful knowledge that will be fed back to the Ecosystem to support the decision making of the entities and enterprises that are part of it (Digital Services to the Ecosystem). In the same framework, a digital twin will be developed for the impact assessment of alternative scenarios of climate neutrality policies and actions, but this is a separate Action due to the complexity of its implementation.
-
-The basis for the implementation of Actions 3.9.2-3.9.3 is the existing Mobility Living Lab operated by HIT/ CERTH, which will be expanded to include more data and interfaces with other data spaces. The Living Lab will support a fourfold helix, i.e. interaction with Government/Agencies, Business, Research Institutions and Citizens.  |
+| The basis for the implementation of Actions 3.9.2-3.9.3 is the existing Mobility Living Lab operated by HIT/ CERTH, which will be expanded to include more data and interfaces with other data spaces. The Living Lab will support a fourfold helix, i.e. interaction with Government/Agencies, Business, Research Institutions and Citizens.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | **3. Transport & Logistics**  |
 |   | Systemic lever | Technology and Infrastructure  |
@@ -2518,7 +2506,7 @@ B-2.2: Individual action outlines – 3.9.4
 | --- | --- | --- |
 |   |  Action type | Other Interventions - Technological Interventions  |
 |   |  Action description | The platform is a multifunctional tool for monitoring and assessing energy consumption and pollutant production in the city of Thessaloniki. It enables the creation and analysis of scenarios to support decision-making on proposed environmental footprint reduction interventions. It brings together multiple public and private sector data sources (buildings, vehicles, green spaces, etc.) and includes detailed methodologies for estimating energy consumption and pollutant production from these primary data.
-The flexible spatio-temporal visualisation of indicators, graphs and maps on the platform provides comprehensive information on progress towards achieving climate neutrality targets and assessing the impacts of environmental actions and projects.  |
+| The flexible spatio-temporal visualisation of indicators, graphs and maps on the platform provides comprehensive information on progress towards achieving climate neutrality targets and assessing the impacts of environmental actions and projects.  |
 |  Reference to impact pathway | Field of action | 3. Transport & Logistics  |
 |   |  Systemic lever | Technology and Infrastructure  |
 |   |  Outcome (according to module B-1.1) | Transition to full digitalisation of transport & logistics  |
@@ -2558,7 +2546,7 @@ Climate Neutrality Action Plan
 4
 
 |   | Comments on implementation | Action 3.9.5 is directly linked to actions 3.2.1 and 3.3.4.
-The Action 3.9.5 application is the backoffice of the single sign-on system but can also feed other relevant applications owned and operated by private operators as well as provide input for the operation of Mobility as a Service applications  |
+| The Action 3.9.5 application is the backoffice of the single sign-on system but can also feed other relevant applications owned and operated by private operators as well as provide input for the operation of Mobility as a Service applications  |
 | --- | --- | --- |
 |  Impact & cost | Generated renewable energy (if applicable) |   |
 |   | Removed/substituted energy, volume, or fuel type |   |
@@ -2585,7 +2573,7 @@ Climate Neutrality Action Plan
 |  Impact & cost | Generated renewable energy (if applicable) |   |
 |   |  Removed/substituted energy, volume, or fuel type |   |
 |   |  GHG emissions reduction estimate (total) per emission source sector | The Action contributes to the indicator "Reduction of total distance travelled through route optimisation" by 25% compared to BAU, to the indicator "% of max load weight of heavy duty trucks" 60%, "% of max load weight of light duty trucks" 45% and to the overall reduction of 48 CO2e according to the Economic Model .
-The Action contributes to the indicator "electrification of light duty trucks" 40% "electrification of heavy duty trucks" 12% and to the overall reduction of 9 CO2 e according to the Economic Model.  |
+| The Action contributes to the indicator "electrification of light duty trucks" 40% "electrification of heavy duty trucks" 12% and to the overall reduction of 9 CO2 e according to the Economic Model.  |
 |   |  Total costs and costs by CO2e unit | 9.500.000 €  |
 |  B-2.2: Individual action outlines – 3.10.2  |   |   |
 | --- | --- | --- |
@@ -2624,16 +2612,14 @@ Climate Neutrality Action Plan
 | --- | --- | --- |
 |   |  Removed/substituted energy, volume, or fuel type |   |
 |   |  GHG emissions reduction estimate (total) per emission source sector | The Action contributes to the indicator "Reduction of total distance travelled through route optimisation" by 25% compared to BAU, to the indicator "% of max load weight of heavy duty trucks" 60%, "% of max load weight of light duty trucks" 45% and to the overall reduction of 48 CO2e according to the Economic Model.
-
-The Action contributes to the indicator "electrification of light duty trucks" 40% "electrification of heavy duty trucks" 12% and to the overall reduction of 9 CO2e according to the Economic Model.  |
+| The Action contributes to the indicator "electrification of light duty trucks" 40% "electrification of heavy duty trucks" 12% and to the overall reduction of 9 CO2e according to the Economic Model.  |
 |   |  Total costs and costs by CO2e unit | 200.000 €  |
 |  B-2.2: Individual action outlines – 3.10.3  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | 3.10.3 Development of lockers (regulatory framework, selection of locations and cooperation model) in public spaces of the Municipality of Thessaloniki  |
 |   |  Action type | Technical Interventions  |
 |   |  Action description | The action concerns the design and installation of lockers for last mile deliveries in public spaces in the Municipality of Thessaloniki. In a first stage, a study will be carried out to select the most suitable locations according to the requirements of both consumers and the needs of transport and courier companies.
-
-Subsequently, and following the development of an appropriate regulatory framework for the allocation of public space, models of cooperation between the Municipality and courier companies will be examined and defined. The Municipality of Thessaloniki as coordinator will provide the space and the companies will install the equipment, while at the same time the framework for cooperation between the various companies will be established in order to manage and use the Lockers.  |
+| Subsequently, and following the development of an appropriate regulatory framework for the allocation of public space, models of cooperation between the Municipality and courier companies will be examined and defined. The Municipality of Thessaloniki as coordinator will provide the space and the companies will install the equipment, while at the same time the framework for cooperation between the various companies will be established in order to manage and use the Lockers.  |
 |  Reference to impact pathway | Field of action | 3. Transport & Logistics  |
 |   |  Systemic lever | Technology and Infrastructure, Finance  |
 |   |  Outcome (according to module B-1.1) | Optimisation of urban freight transport, Easier access to financial instruments for the  |
@@ -2650,8 +2636,7 @@ Climate Neutrality Action Plan
 |  Impact & cost | Generated renewable energy (if applicable) |   |
 |   |  Removed/substituted energy, volume, or fuel type |   |
 |   |  GHG emissions reduction estimate (total) per emission source sector | The Action contributes to the indicator "Reduction of total distance travelled through route optimisation" by 25% compared to BAU, to the indicator "% of max load weight of heavy duty trucks" 60%, "% of max load weight of light duty trucks" 45% and to the overall reduction of 48 CO2e according to the Economic Model.
-
-The Action contributes to the indicator "electrification of light duty trucks" 40% "electrification of heavy duty trucks" 12% and to the overall reduction of 9 CO2 e according to the Economic Model.  |
+| The Action contributes to the indicator "electrification of light duty trucks" 40% "electrification of heavy duty trucks" 12% and to the overall reduction of 9 CO2 e according to the Economic Model.  |
 |   |  Total costs and costs by CO2e unit | 1.600.000 €  |
 |  B-2.2: Individual action outlines – 3.10.4  |   |   |
 | --- | --- | --- |
@@ -2676,8 +2661,7 @@ Climate Neutrality Action Plan
 |  Impact & cost | Generated renewable energy (if applicable) |   |
 |   |  Removed/substituted energy, volume, or fuel type |   |
 |   |  GHG emissions reduction estimate (total) per emission source sector | The Action **contributes to** the indicator "Reduction of total distance travelled through route optimisation" by 25% compared to BAU, to the indicator "% of max load weight of heavy duty trucks" 60%, "% of max load weight of light duty trucks" 45% and to the overall reduction of 48 CO2e according to the Economic Model.
-
-The Action **contributes to** the indicator "electrification of light duty trucks" 40% "electrification of heavy duty trucks" 12% and to the overall reduction of 9 CO2 e according to the Economic Model.  |
+| The Action **contributes to** the indicator "electrification of light duty trucks" 40% "electrification of heavy duty trucks" 12% and to the overall reduction of 9 CO2 e according to the Economic Model.  |
 |   |  Total costs and costs by CO2e unit | 1.000.000 €  |
 |  **B-2.2: Individual action outlines – 3.11.1**  |   |   |
 | --- | --- | --- |
@@ -2689,8 +2673,7 @@ Climate Neutrality Action Plan
 0
 
 |   |  | benefits such as reducing the number of vehicles in circulation, freeing up space and improving safety, reducing fuel and CO_{2} emissions to protect the environment, reducing transport costs and improving access to destinations due to the flexibility of cargo bikes.
-
-This action will be implemented on two levels, firstly the identification of the city and the available public spaces that can become parking spaces. Then, once an appropriate legal framework for the use of public space has been established, the ways of cooperation between the municipality and courier companies will be evaluated and defined. The Municipality of Thessaloniki, as the responsible party, will provide the space and the companies will install the equipment, while the framework for cooperation between the various companies will be defined so that they can manage and use the cargo bike parking spaces.  |
+| This action will be implemented on two levels, firstly the identification of the city and the available public spaces that can become parking spaces. Then, once an appropriate legal framework for the use of public space has been established, the ways of cooperation between the municipality and courier companies will be evaluated and defined. The Municipality of Thessaloniki, as the responsible party, will provide the space and the companies will install the equipment, while the framework for cooperation between the various companies will be defined so that they can manage and use the cargo bike parking spaces.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | **3. Transport & Logistics**  |
 |   | Systemic lever | Technology and Infrastructure  |
@@ -2707,7 +2690,7 @@ Climate Neutrality Action Plan
 1
 
 |   |  | duty trucks" 45% and to the overall reduction of 48 CO2e according to the Economic Model.
-The Action contributes to the indicator "electrification of light duty trucks" 40% "electrification of heavy duty trucks" 12% and to the overall reduction of 9 CO2 e according to the Economic Model.  |
+| The Action contributes to the indicator "electrification of light duty trucks" 40% "electrification of heavy duty trucks" 12% and to the overall reduction of 9 CO2 e according to the Economic Model.  |
 | --- | --- | --- |
 |   | Total costs and costs by CO2e unit | 1.500.000 €  |
 |  B-2.2: Individual action outlines – 3.11.2  |   |   |
@@ -2715,8 +2698,7 @@ The Action contributes to the indicator "electrification of light duty trucks" 4
 |  Action outline | Action name | 3.11.2 Incentives for the acquisition of green and electric urban delivery vehicles  |
 |   |  Action type | Technical Interventions  |
 |   |  Action description | This action aims to provide incentives for the acquisition of green and electric urban delivery vehicles. Through this action, the Municipality of Thessaloniki wants to achieve the conversion of the fleet of companies operating in the city to electric. In this way it will achieve a significant reduction of carbon dioxide emissions in the city.
-
-The Municipality of Thessaloniki can in various ways provide incentives for the acquisition of electric vehicles such as the installation of electric vehicle chargers and the creation of public parking spaces for cargo bikes.  |
+| The Municipality of Thessaloniki can in various ways provide incentives for the acquisition of electric vehicles such as the installation of electric vehicle chargers and the creation of public parking spaces for cargo bikes.  |
 |  Reference to impact pathway | Field of action | 3. Transport & Logistics  |
 |   |  Systemic lever | Funding and Governance and Policies  |
 |   |  Outcome (according to module B-1.1) | Optimisation of urban freight transport, Facilitate access to financial instruments for the implementation of actions by private individuals, Electrification of trucks  |
@@ -2733,12 +2715,12 @@ Climate Neutrality Action Plan
 |  Impact & cost | Generated renewable energy (if applicable) |   |
 |   |  Removed/substituted energy, volume, or fuel type |   |
 |   |  GHG emissions reduction estimate (total) per emission source sector | The Action contributes to the indicator "Reduction of total distance travelled through route optimisation" by 25% compared to BAU, to the indicator "% of max load weight of heavy duty trucks" 60%, "% of max load weight of light duty trucks" 45% and to the overall reduction of 48 CO2e according to the Economic Model.
-The Action contributes to the indicator "electrification of light duty trucks" 40% "electrification of heavy duty trucks" 12% and to the overall reduction of 9 CO2e according to the Economic Model.  |
+| The Action contributes to the indicator "electrification of light duty trucks" 40% "electrification of heavy duty trucks" 12% and to the overall reduction of 9 CO2e according to the Economic Model.  |
 |   |  Total costs and costs by CO2e unit | 35.000.000 €  |
 |  B-2.2: Individual action outlines – 3.12.1, 3.12.2.  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | 3.12.1 Night-time distribution in the central area, application of service windows for specific sectors (e.g. Supermarkets), restrictions on the load factor for vehicles approaching the centre
-and 3.12.2 Shared lanes for urban delivery vehicles and urban buses for use by delivery vehicles with high load occupancy during off-peak time windows.  |
+| and 3.12.2 Shared lanes for urban delivery vehicles and urban buses for use by delivery vehicles with high load occupancy during off-peak time windows.  |
 |   |  Action type | Technical Interventions  |
 |   |  Action description | This package of actions includes actions that benefit delivery vehicles with a high occupancy rate by giving them access to the central area as well as the possibility to use the bus lanes.
 Night-time dispensing with the appropriate buffer will be implemented in the central area and will end at 7:00. This central area will be accessible to delivery vehicles with a high load factor of more than 70%. At the same time, specific time windows will be established for unloading in specific sectors, mainly in the catering sector. In all cases, unloading will take place at specific locations and in accordance with the framework established.
@@ -2756,8 +2738,7 @@ Climate Neutrality Action Plan
 |   | Action scale & addressed entities | The implementation of night-time delivery is a process that will benefit both the Municipality and its residents, as well as the companies, as it will enable them to optimise their operations. However, an appropriate regulatory framework is required  |
 |   | Involved stakeholders | Region of Central Macedonia, Municipality of Thessaloniki, Thessaloniki Chamber of Commerce, bussiness, 3pl companies, transport companies, technology suppliers, HIT/ CERTH, OSEΘ, Police, Municipal Police  |
 |   | Comments on implementation | Initially, the implementation of the action will involve an inventory of the shops and their needs for the loading and unloading of goods and then an appropriate plan will be developed. An important factor for the success of this action is the continuous policing of the measures to be imposed in order to ensure compliance with them and ultimately the achievement of their objectives.
-
-This action is also in full correlation with action 3.10.4 which provides incentives for the conversion of ground floor shops into loading/unloading or increased storage areas. These spaces will be used for unloading operations carried out under the conditions described above.  |
+| This action is also in full correlation with action 3.10.4 which provides incentives for the conversion of ground floor shops into loading/unloading or increased storage areas. These spaces will be used for unloading operations carried out under the conditions described above.  |
 |  Impact & cost | Generated renewable energy (if applicable) | -  |
 |   | Removed/substituted energy, volume, or fuel type | -  |
 |   | GHG emissions reduction estimate (total) per emission source sector | The Action **contributes to** the indicator "Reduction of total distance travelled through route optimisation" by 25% compared to BAU, to the indicator "% of max load weight of heavy duty trucks" 60%, "% of max load weight of light duty trucks" 45% and to the overall reduction of  |
@@ -2766,7 +2747,7 @@ Climate Neutrality Action Plan
 4
 
 |   | 48 CO2e according to the Economic Model.
-The Action contributes to the indicator "electrification of light duty trucks" 40% "electrification of heavy duty trucks" 12% and to the overall reduction of 9 CO2 e according to the Economic Model.  |
+| The Action contributes to the indicator "electrification of light duty trucks" 40% "electrification of heavy duty trucks" 12% and to the overall reduction of 9 CO2 e according to the Economic Model.  |
 | --- | --- |
 |  Total costs and costs by CO2e unit | Total: 300.000 €
 Action 3.12.1: 150.000 €
@@ -2776,8 +2757,7 @@ Action 3.12.2: 150.000 €  |
 | --- | --- | --- |
 |   |  Action type | Technical Interventions  |
 |   |  Action description | This action concerns the installation of a smart infrastructure to monitor the unloading points and provide a booking tool with preferential status to the Municipality of Thessaloniki. It will achieve a reduction in the total number of kilometres covered by vehicles, thus improving traffic congestion in the city and reducing emissions. At the same time, it will achieve a reduction in the incidents of illegal parking which has been identified and is a major problem.
-
-For this particular action, the number of parking spaces to be converted into smart parking spaces and the business plan under which the action will operate should be decided. At the next level, the Municipality of Thessaloniki will supervise the installation of the necessary equipment and the electronic service.  |
+| For this particular action, the number of parking spaces to be converted into smart parking spaces and the business plan under which the action will operate should be decided. At the next level, the Municipality of Thessaloniki will supervise the installation of the necessary equipment and the electronic service.  |
 |  Reference to impact pathway | Field of action | **3. Transport & Logistics**  |
 |   |  Systemic lever | Technology and Infrastructure  |
 |   |  Outcome (according to module B-1.1) | Optimisation of urban freight transport, Truck electrification  |
@@ -2793,7 +2773,7 @@ Climate Neutrality Action Plan
 |  Impact & cost | Generated renewable energy (if applicable) | -  |
 |   |  Removed/substituted energy, volume, or fuel type | -  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | The Action contributes to the indicator "Reduction of total distance travelled through route optimisation" by 25% compared to BAU, to the indicator "% of max load weight of heavy duty trucks" 60%, "% of max load weight of light duty trucks" 45% and to the overall reduction of 48 CO2e according to the Economic Model.
-The Action contributes to the indicator "electrification of light duty trucks" 40% "electrification of heavy duty trucks" 12% and to the overall reduction of 9 CO2 e according to the Economic Model.  |
+| The Action contributes to the indicator "electrification of light duty trucks" 40% "electrification of heavy duty trucks" 12% and to the overall reduction of 9 CO2 e according to the Economic Model.  |
 |   |  Total costs and costs by CO2e unit | 2.000.000 €  |
 |  B-2.2: Individual action outlines – 3.13.1.  |   |   |
 | --- | --- | --- |
@@ -2816,20 +2796,19 @@ Climate Neutrality Action Plan
 |  Impact & cost | Generated renewable energy (if applicable) | -  |
 |   |  Removed/substituted energy, volume, or fuel type | -  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | The Action contributes to the indicator "Reduction of total distance travelled through route optimisation" by 25% compared to BAU, to the indicator "% of max load weight of heavy duty trucks" 60%, "% of max load weight of light duty trucks" 45% and to the overall reduction of 48 CO2e according to the Economic Model.
-The Action contributes to the indicator "electrification of light duty trucks" 40% "electrification of heavy duty trucks" 12% and to the overall reduction of 9 CO2e according to the Economic Model.  |
+| The Action contributes to the indicator "electrification of light duty trucks" 40% "electrification of heavy duty trucks" 12% and to the overall reduction of 9 CO2e according to the Economic Model.  |
 |   |  Total costs and costs by CO2e unit | 350.000 €  |
 |  B-2.2: Individual action outlines – 3.13.2, 3.13.3  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | 3.13.2 Regulatory framework and incentives for the collection and provision of digital urban freight data by private parties to the Municipality of Thessaloniki
-and 3.13.3 Observatory to monitor urban freight transport and its impact on the environment and the local economy  |
+| and 3.13.3 Observatory to monitor urban freight transport and its impact on the environment and the local economy  |
 |   |  Action type | Technical Interventions  |
 CITY OF THESSALONIKI
 Climate Neutrality Action Plan
 7
 
 |   | Action description | The action includes the development of a regulatory framework and incentives for the collection and provision of digital urban freight data by private parties (action C.10). This will facilitate the monitoring of transport activities and the analysis of data to improve the transport of goods. The mapping of transport companies and stakeholders collecting data will lead to the mapping of the ecosystem in which they will be given appropriate incentives to link up with observatories and living labs.
-
-The observatory will then be developed to monitor urban freight transport and its impact on the environment and the local economy. The observatory will collect data through appropriate interfaces, process it and provide support to decision makers through appropriate artificial intelligence tools. The observatory will evaluate the results and through appropriate interfaces feed the monitoring of environmental footprint reduction indicators and their impact on traffic, which will be carried out in the tool to be developed in Action 3.6.9 Carbon Progress Indicator Monitoring System and Climate Transition Observatory.  |
+| The observatory will then be developed to monitor urban freight transport and its impact on the environment and the local economy. The observatory will collect data through appropriate interfaces, process it and provide support to decision makers through appropriate artificial intelligence tools. The observatory will evaluate the results and through appropriate interfaces feed the monitoring of environmental footprint reduction indicators and their impact on traffic, which will be carried out in the tool to be developed in Action 3.6.9 Carbon Progress Indicator Monitoring System and Climate Transition Observatory.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | **3. Transport & Logistics**  |
 |   | Systemic lever | Governance and Policies  |
@@ -2838,8 +2817,7 @@ The observatory will then be developed to monitor urban freight transport and it
 |   | Action scale & addressed entities | Municipality of Thessaloniki  |
 |   | Involved stakeholders | Municipality of Thessaloniki, HIT/ CERTH, Thessaloniki Chamber of Commerce, Region of Central Macedonia, transport companies, technology providers, last mile companies, operators of urban distribution systems  |
 |   | Comments on implementation | This action will contribute both to increasing freight data and to increasing cooperation between the various stakeholders.
-
-This action is linked to action "3.13.4 Incentives and installation of a telematics system for monitoring freight flows" which will increase the data contained in the freight observatory.  |
+| This action is linked to action "3.13.4 Incentives and installation of a telematics system for monitoring freight flows" which will increase the data contained in the freight observatory.  |
 |  Impact & cost | Generated renewable energy (if applicable) | -  |
 |   | Removed/substituted energy, | -  |
 CITY OF THESSALONIKI
@@ -2874,13 +2852,11 @@ Climate Neutrality Action Plan
 |   | Action scale & addressed entities | Municipality of Thessaloniki  |
 |   | Involved stakeholders | Ministry of Environment, Region of Central Macedonia, Municipality of Thessaloniki, HIT/CERTH, Thessaloniki Chamber of Commerce, Region of Central Macedonia, transport companies, technology providers, last mile companies, operators of urban distribution systems  |
 |   | Comments on implementation | This action is linked to action "3.13.3 Observatory for monitoring urban freight transport and its impact on the environment and the local economy", as the data collected from the in-vehicle devices will feed into the Urban Freight Observatory.
-
-The Municipality of Thessaloniki should initially hold meetings with various courier providers to analyse the benefits they can derive from a telematics system. It should then guide them on the telematics data they should collect and how to link them to the observatory through appropriate incentives.  |
+| The Municipality of Thessaloniki should initially hold meetings with various courier providers to analyse the benefits they can derive from a telematics system. It should then guide them on the telematics data they should collect and how to link them to the observatory through appropriate incentives.  |
 |  Impact & cost | Generated renewable energy (if applicable) | -  |
 |   | Removed/substituted energy, volume, or fuel type | -  |
 |   | GHG emissions reduction estimate (total) per emission source sector | The Action contributes to the indicator "Reduction of total distance travelled through route optimisation" by 25% compared to BAU, to the indicator "% of max load weight of heavy duty trucks" 60%, "% of max load weight of light duty trucks" 45% and to the overall reduction of 48 CO2_{e} according to the Economic Model.
-
-The Action contributes to the indicator "electrification of light duty trucks" 40% "electrification of heavy duty trucks" 12% and to the overall reduction of 9 CO_{2} e according to the Economic Model.  |
+| The Action contributes to the indicator "electrification of light duty trucks" 40% "electrification of heavy duty trucks" 12% and to the overall reduction of 9 CO_{2} e according to the Economic Model.  |
 |   | Total costs and costs by CO2e unit | 2.400.000 €  |
 CITY OF THESSALONIKI
 Climate Neutrality Action Plan
@@ -2933,8 +2909,7 @@ Climate Neutrality Action Plan
 2
 
 |   | Action description | This action includes both the design and operation of Green Spots (GSPs). The Municipality of Thessaloniki has applied for European funding from the EU LIFE-IP Programme for the construction of one of the two planned central Green Spots, which will start operating in 2025, while 25 additional small-scale neighbourhood Green Spots will be developed. The purpose of the Green Spaces is to separately collect different categories of recyclable municipal waste in order to promote reuse and recycling.
-
-The Municipality of Thessaloniki, in the context of upgrading the recycling infrastructure and strengthening waste recycling, through the "Antonis Tritsis" programme, will proceed with the development of a network of Recycling Corners. Recycling polycentres will be installed at 48 points in the city, where residents will be able to dispose of four different materials (metal, plastic, glass, paper).  |
+| The Municipality of Thessaloniki, in the context of upgrading the recycling infrastructure and strengthening waste recycling, through the "Antonis Tritsis" programme, will proceed with the development of a network of Recycling Corners. Recycling polycentres will be installed at 48 points in the city, where residents will be able to dispose of four different materials (metal, plastic, glass, paper).  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | 4. Water & waste management  |
 |   | Systemic lever | Technology and infrastructure, Social innovation  |
@@ -2943,8 +2918,7 @@ The Municipality of Thessaloniki, in the context of upgrading the recycling infr
 |   | Action scale & addressed entities | It concerns selected points in the region of Central Thessaloniki, Citizens  |
 |   | Involved stakeholders | Recycling and Municipal Waste Management Department of the Municipality of Thessaloniki, Citizens, Environmental organisations and social organisations (NGOs)  |
 |   | Comments on implementation | One of the two planned central green points has a surface area of ~2,000 m² and is expected to have a temporary storage capacity of 200 tn, serving approximately 30,000 inhabitants.
-
-In addition, it is foreseen that 48 recycling corners will be developed and put into use by the year 2025.  |
+| In addition, it is foreseen that 48 recycling corners will be developed and put into use by the year 2025.  |
 |  Impact & cost | Generated renewable energy (if applicable) | -  |
 |   | Removed/substituted energy, volume, or fuel type | -  |
 |   | GHG emissions reduction estimate (total) per emission source sector | It contributes to the overall achievement of the target to increase recycling.  |
@@ -2961,7 +2935,7 @@ B-2.2: Individual action outlines – 4.2
 |  Reference to impact pathway | Field of action | 4. Water & waste management  |
 |   |  Systemic lever | Technology and infrastructure, Social innovation  |
 |   |  Outcome (according to module B-1.1) | Increase the proportion of recyclable materials and reduce the environmental footprint of solid waste.
-Reduction of co-mingled materials and reduction of the environmental footprint of solid waste.  |
+| Reduction of co-mingled materials and reduction of the environmental footprint of solid waste.  |
 |  Implementation | Responsible bodies/person for implementation | Municipality of Thessaloniki  |
 |   |  Action scale & addressed entities | It is addressed to all citizens residing in the municipality of Thessaloniki, the municipal services and their employees.  |
 |   |  Involved stakeholders | Municipality of Thessaloniki, FODSA KM, Citizens  |
@@ -3062,8 +3036,7 @@ Total cost: 5,420,000 €  |
 |  Action outline | Action name | 4.7 Implementation of separate collection and recovery of bio-waste  |
 |   |  Action type | Technical Interventions  |
 |   |  Action description | This action includes the implementation of the system of separate collection of bio-waste from targeted producers through the supply/distribution of bio-waste collection bins (660L) and the separate collection of bio-waste from households through the supply/distribution of bio-waste collection bins (240lt). The supply of waste collection vehicles (5 and 14 m³) and branch shredders In addition, through the household composting programme, the supply and distribution of household composting bins to Children's Centres, School Units and private communal areas is foreseen. Since the full development of the system requires the operation of a composting facility in the Regional Unit of Thessaloniki, which is not planned before 2024-2025, the plan foresees the start of collection from mass production points of bio-waste and schools (2% of the final target in 2022, 2023 and 5% of the final target in 2024).
-
-The cooperation of FODSA with private biowaste treatment plants and subsequently with the operation of the MBW, the plan provides for collection through the network of brown bins and household composting, with the aim of diverting from landfill the pre-sorted biowaste and achieving the 47% Source Separation target for household biowaste.  |
+| The cooperation of FODSA with private biowaste treatment plants and subsequently with the operation of the MBW, the plan provides for collection through the network of brown bins and household composting, with the aim of diverting from landfill the pre-sorted biowaste and achieving the 47% Source Separation target for household biowaste.  |
 |  Reference to impact pathway | Field of action | 4. Water & waste management  |
 |   |  Systemic lever | Technology and infrastructure, social innovation  |
 |   |  Outcome (according to module B-1.1) | Reducing the environmental footprint by improving bio-waste management  |
@@ -3076,8 +3049,7 @@ Climate Neutrality Action Plan
 | --- | --- | --- |
 |   |  Involved stakeholders | Municipality of Thessaloniki, FODSA, Citizens, Producers  |
 |   |  Comments on implementation | The collection of bio-waste will start from schools and large producers and will be extended in 2024 to all large producers of bio-waste. At the same time, from 2024, it is planned to make household composting equipment available.
-
-Completion of the separately collected biowaste treatment will be carried out at the Biowaste Treatment Facilities of the actions requires the cooperation of the CMWF and until the construction and operation of the plants, the CMWF will enter into partnerships with private biowaste treatment plants.  |
+| Completion of the separately collected biowaste treatment will be carried out at the Biowaste Treatment Facilities of the actions requires the cooperation of the CMWF and until the construction and operation of the plants, the CMWF will enter into partnerships with private biowaste treatment plants.  |
 |  Impact & cost | Generated renewable energy (if applicable) | -  |
 |   |  Removed/substituted energy, volume, or fuel type | -  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | It contributes to the overall achievement of the target to increase recycling.  |
@@ -3104,7 +3076,7 @@ Climate Neutrality Action Plan
 |   |  Removed/substituted energy, volume, or fuel type | -  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | As described in the Annex HkP3, in total, the existing and future capacity to remove CO2 from the atmosphere from urban and peri-urban greenery (trees) amounts to 3,531 + 480 = 4,011 tn CO2/year  |
 |   |  Total costs and costs by CO2e unit | The total cost is estimated at 150 € per planting site (100 Euro for the supply of a 10-year old tree and 50 € for planting costs). The total cost of the project is 7,500,000 (50,000 planting places * 150 €/place).
-The cost per unit of CO2 is 15,000 Euro/tonne (7,500,000 € / 500 tn CO2 reduction from new tree plantations).  |
+| The cost per unit of CO2 is 15,000 Euro/tonne (7,500,000 € / 500 tn CO2 reduction from new tree plantations).  |
 |  B-2.2: Individual action outlines – 5.2  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | 5.2. Addressing heat islands in a district of Thessaloniki  |
@@ -3117,16 +3089,14 @@ Climate Neutrality Action Plan
 0
 
 |   |  | permeable floors in public spaces, artificial water bodies, water mirrors, etc.) help to cool the air, unlike asphalt and concrete which absorb heat, causing a rise in temperature.
-
-The aim of the action is to mitigate the heat island in a specific area of the city centre (the urban district of Diokitirio) with solutions that will increase the green cover and water permeable surfaces of the district to 40% of its total surface area.  |
+| The aim of the action is to mitigate the heat island in a specific area of the city centre (the urban district of Diokitirio) with solutions that will increase the green cover and water permeable surfaces of the district to 40% of its total surface area.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | **5. Land use and Green Infrastructure**  |
 |   |  Systemic lever | Technology and Infrastructure  |
 |   |  Outcome (according to module B-1.1) | The action indirectly affects energy consumption in buildings, as it has been shown that a 25% increase in urban green cover and waterproof floors can save residents 40% of their annual energy needs for cooling.  |
 |  Implementation | Responsible bodies/person for implementation | Municipality of Thessaloniki  |
 |   |  Action scale & addressed entities | Pilot implementation of action in an urban district
-
-It is addressed to residents of the pilot area. Results and implementation monitoring in the pilot will be replicable for other districts and the entire municipality  |
+| It is addressed to residents of the pilot area. Results and implementation monitoring in the pilot will be replicable for other districts and the entire municipality  |
 |   |  Involved stakeholders | Municipality of Thessaloniki  |
 |   |  Comments on implementation | The implementation of the action in this pilot district will make use of the know-how acquired through the municipality's participation in the UP2030 project, a Horizon Europe / Mission project on "Urban planning and design for just, sustainable, resilient and climate-neutral cities by 2030", as well as the partnerships developed with relevant institutions and citizens / residents of this urban district.  |
 |  Impact & cost | Generated renewable energy (if applicable) | -  |
@@ -3155,8 +3125,7 @@ Climate Neutrality Action Plan
 2
 
 |   |  | The master plan provides for the implementation of the sustainability, mitigation and climate change adaptation objectives of the urban island through continuous monitoring and proper management of the project at all stages of development.
-
-The operational strategy provided includes key performance indicators to continuously monitor and manage the sustainability performance of the project and all infrastructure to identify opportunities for improvement and adaptation.  |
+| The operational strategy provided includes key performance indicators to continuously monitor and manage the sustainability performance of the project and all infrastructure to identify opportunities for improvement and adaptation.  |
 | --- | --- | --- |
 |  Impact & cost | Generated renewable energy (if applicable) | -  |
 |   |  Removed/substituted energy, volume, or fuel type | -  |
@@ -3186,7 +3155,7 @@ B-2.2: Individual action outlines – 6.3, 6.4
 |  Action outline | Action name | Citizen Services and Social Participation (Relates to Actions 6.3- 6.4).  |
 | --- | --- | --- |
 |   | Action type | Technical Interventions
-Other interventions (social participation and awareness raising)  |
+| Other interventions (social participation and awareness raising)  |
 |   |  Action description | It includes all digital infrastructure interventions aimed at environmental sustainability: Action 6.5. Development of Energy Optimisation Software for Municipal Buildings. The software can provide real-time information on energy consumption, identify inefficiencies, or make recommendations for energy saving practices. The goal of the action is to identify energy saving opportunities to reduce energy waste and ultimately save costs for the municipality. Action 6.6. Includes first of all two ongoing projects of the Municipality of Thessaloniki: MUNICIPALITY OF THESSALONIKI - Subproject 1 - Greek Smart Cities: Investments in infrastructure and SSC systems for a sustainable & green urban future. Funded by TAA. Includes actions:
 • Smart pedestrian crossing & Sensor-based vehicle counting and categorisation system (correlation with Action 3.3.2)
 • Intelligent supervision of public spaces
@@ -3212,7 +3181,7 @@ Finally, the Action includes a new intervention to upgrade the operation of the 
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | **6.Smart City - Governance**  |
 |   | Systemic lever | Technology and infrastructure
-Democratic participation  |
+| Democratic participation  |
 |   | Outcome (according to module B-1.1) | Increased transparency, Involvement of citizens and stakeholders in decision making, Improved Urban Green Management  |
 |  Implementation | Responsible bodies/person for implementation | Municipality of Thessaloniki  |
 |   | Action scale & addressed entities | It is addressed to all citizens residing in the municipality of Thessaloniki, the municipal services and their employees.  |
@@ -3233,7 +3202,7 @@ B-2.2: Individual action outlines – 6.7, 6.8
 |  Action outline | Action name | Climate Footprint Monitoring (Relates to Actions 6.7 - 6.8).  |
 | --- | --- | --- |
 |   |  Action type | Technical Interventions
-Other interventions (social participation and awareness raising)  |
+| Other interventions (social participation and awareness raising)  |
 |   |  Action description | This action involves upgrading sensors to collect data on air quality, specifically targeting air pollution and meteorological parameters. The existing sensor network, Municipal IoT Sensor Network (AIRTHINGS), will be upgraded with IoT technology to enhance its capabilities. This network was initially created under the AIRTHINGS project and is now operated with the municipality's own resources. The upgraded network will help identify air pollution mitigation strategies in the region, helping to improve air quality.
 
 Replacement of the 6 Network Stations with energy autonomous, powered by photovoltaic panels and equipped with new generation pollution measurement analyzers, which do not require continuous use of air conditioning for their operation. In addition, the network for measuring air pollution and meteorological parameters will be upgraded by replacing six stations with energy-autonomous stations powered by photovoltaic panels. These upgraded stations will be equipped with new generation pollution measurement analysers that operate without continuous air conditioning, reducing energy consumption.
@@ -3246,7 +3215,7 @@ Climate Neutrality Action Plan
 6
 
 |   |  | Governance and policies
-Democratic participation  |
+| Democratic participation  |
 | --- | --- | --- |
 |   |  Outcome (according to module B-1.1) | Improved response of equipment systems, Improved service delivery, Improved data accessibility, Increased transparency, Involvement of citizens and stakeholders in decision making, Improved management of natural resources, Improved service delivery  |
 |  Implementation | Responsible bodies/person for implementation | Municipality of Thessaloniki  |
@@ -3260,7 +3229,7 @@ Democratic participation  |
 |  B-2.2: Individual action outlines – 6.9  |   |   |
 | --- | --- | --- |
 |  Action outline | Action name | 6.9 Carbonation Progress Indicator
-Monitoring System and Climate Transition Observatory  |
+| Monitoring System and Climate Transition Observatory  |
 |   |  Action type | Technical Interventions  |
 |   |  Action description | The action concerns the development of a methodology and tool that aims to support the Municipality of Thessaloniki in monitoring progress towards the climate transition and providing information on progress reports to the EU Mission Agency, as well as in taking  |
 CITY OF THESSALONIKI
@@ -3356,7 +3325,7 @@ B-3.1: Impact Pathways
 |   |   |  D7 | Electrification of cars |  | 5% | 15% | 36% (2035)  |
 |   |   |  D8 | Electrification of buses |  | 28% | 28% | 100%  |
 |  Fragmentation of the Transport & Logistics sector
-Optimisation of urban freight transport | Transport & Logistics actions 3.10.1 - 3.15 | D9 | Average use of maximum load weight for light trucks (< 3.5t) |  | 23% | 35% | 45%  |
+| Optimisation of urban freight transport | Transport & Logistics actions 3.10.1 - 3.15 | D9 | Average use of maximum load weight for light trucks (< 3.5t) |  | 23% | 35% | 45%  |
 |   |   |  D10 | Average use of maximum load weight for heavy trucks (> 3.5t) |  | 45% | 50% | 60%  |
 |   |   |  D11 | Reduction of the total distance travelled |  | 5% | 10% | 25%  |
 |   |   |  D12 | Light trucks (< 3.5t) |  | 10% | 20% | 40%  |
@@ -3411,7 +3380,7 @@ Climate Neutrality Action Plan
 |  If yes, which co-benefit does it measure? | -  |
 |  Can the indicator be used for monitoring impact pathways? | Yes  |
 |  If yes, which NZC impact pathway is it relevant for? | Impact pathways according to Module B-1
-Energy systems A. Technology and infrastructure  |
+| Energy systems A. Technology and infrastructure  |
 |  Is the indicator captured by the existing CDP/ SCIS/Covenant of Mayors platforms? | Yes  |
 |  Data requirements |   |
 |  Expected data source | Energy Providers, RAE, Hellenic Statistical Service, Municipality of Thessaloniki, European Directives (for extraction of emission factors)  |
@@ -3530,7 +3499,7 @@ Indicators D12 and D13 refer to the electrification of light trucks (< 3.5t) and
 |  If yes, which emission source sectors does it impact? | -  |
 |  Does the indicator measure indirect impacts (i.e., co- benefits)? | Yes  |
 |  If yes, which co-benefit does it measure? | Reduction of traffic congestion
-Economic efficiency of freight transport  |
+| Economic efficiency of freight transport  |
 |  Can the indicator be used for monitoring impact pathways? | Yes  |
 |  If yes, which NZC impact pathway is it relevant for? | 3. Transport & Logistics  |
 |  Is the indicator captured by the existing CDP/ SCIS/Covenant of Mayors platforms? | -  |
@@ -3651,7 +3620,7 @@ Climate Neutrality Action Plan
 |  If yes, which co-benefit does it measure? | -  |
 |  Can the indicator be used for monitoring impact pathways? | Yes  |
 |  If yes, which NZC impact pathway is it relevant for? | Impact pathways according to Modulo B-1
-Built environment A. Technology and infrastructure  |
+| Built environment A. Technology and infrastructure  |
 |  Is the indicator captured by the existing CDP/ SCIS/Covenant of Mayors platforms? | Yes  |
 |  Data requirements |   |
 |  Expected data source | Energy Providers, Hellenic Statistical Service, Municipality of Thessaloniki, European Directives (for extraction of emission factors)  |
@@ -3988,7 +3957,7 @@ Climate Neutrality Action Plan
 1
 
 |   |  | and Entrepreneurship Support Office | Thessaloniki
-• Other bodies with autonomous areas within the municipality | offered by the Municipality. | creating green jobs.  |
+| • Other bodies with autonomous areas within the municipality | offered by the Municipality. | creating green jobs.  |
 | --- | --- | --- | --- | --- | --- |
 |  Digitisation of documents and processes | Upgrading of the Electronic Document Circulation System (EDCS) | • Municipality of Thessaloniki
 • Electronic Governance Directorate
@@ -4664,9 +4633,9 @@ Below is the list of Local Ecosystem Entities that are committed to assist the M
 |  Municipality of Thessaloniki | Intersectoral | Local authority | Konstantinos Zervas | Mayor  |
 |  Ministry of the Environment and Energy | Intersectoral | Central government authority | Thodoros Skylakakis | Minister  |
 |  Ministry of Digital Governance | Intersectoral
-Smart City - Governance | Central government authority | Dimitris Papastergiou | Minister  |
+| Smart City - Governance | Central government authority | Dimitris Papastergiou | Minister  |
 |  General Secretary of Spatial Planning and Urban Environment
-Ministry of Environment and Energy | Intersectoral | Central government authority | Efthimios Mpakogiannis | General Secretariat  |
+| Ministry of Environment and Energy | Intersectoral | Central government authority | Efthimios Mpakogiannis | General Secretariat  |
 |  Region of Central Macedonia (RCM) | Intersectoral | Regional authority | Konstantinos Youtikas | Vice-Regional Head of Development and Environment  |
 |  Aristotle University of Thessaloniki (AUTh) | Intersectoral
 Buildings & Electricity | Research Organisation (Universities, Research Centres, Institutes) | Dimitrios koveos | Rector  |
@@ -4675,7 +4644,7 @@ Climate-Neutrality Commitments
 4
 
 |   | Land Use &Green Infrastructure
-Transport &Logistics |  |  |   |
+| Transport &Logistics |  |  |   |
 | --- | --- | --- | --- | --- |
 |  University of Macedonia (UoM) | Intersectoral
 Buildings &Electricity
@@ -4693,7 +4662,7 @@ Climate-Neutrality Commitments
 |  Thessaloniki Water Supply & Sewerage Co S.A. (EYATH S.A.) | Waste&water management | Public limited company | Anthimos Amanatidis | CEO  |
 | --- | --- | --- | --- | --- |
 |  Regional Association of Solid Waste Management Agencies of Central Macedonia (FODSAKM) | Waste& water management
-Transport & Logistics | Regional Solid Waste Management Agency | Michalis Geranis | President  |
+| Transport & Logistics | Regional Solid Waste Management Agency | Michalis Geranis | President  |
 |  Transport Authority of Thessaloniki (TheTA) S.A. | Transport &Logistics | Public limited company | Ioannis Toskas | CEO  |
 |  Thessaloniki International Fair (TIF)-HELEXPO SA | Buildings &Electricity
 Land Use &Green Infrastructure
@@ -4702,9 +4671,9 @@ Alexander Tsaxirlis | Managing Director
 Chief Executive Officer  |
 |  Major Development Agency Thessaloniki (MDAT) S.A. | Intersectoral | Development organization for the local development | Maria Karagianni | President  |
 |  Technical Chamber of Greece
-Section of Central Macedonia | Intersectoral | Legal Entity of Public Law | Michael Papastergiou | Representative- Vice President  |
+| Section of Central Macedonia | Intersectoral | Legal Entity of Public Law | Michael Papastergiou | Representative- Vice President  |
 |  Thessaloniki Chamber of Commerce and Industry (TCCI) | Buildings
-Transport &Logistics | Legal Entity of Public Law | Ioannis Masoutis | President  |
+| Transport &Logistics | Legal Entity of Public Law | Ioannis Masoutis | President  |
 |  Professional Chamber of Thessaloniki | Buildings
 Land Use &Green Infrastructure | Legal Entity of Public Law | Akis Poulakas | Representative- President of the Youth Entrepreneurship & Start Up Committee  |
 CITY OF THESSALONIKI

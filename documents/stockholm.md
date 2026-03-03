@@ -294,7 +294,7 @@ In 1990, the GHG emissions were 3,400,000 tonnes of CO₂e, and 1990 is used as 
 |  A-1.1: Final energy use by source sectors  |   |   |   |   |
 | --- | --- | --- | --- | --- |
 |  2020 | *Transport: GHG emissions from road transport are based on data for vehicle-kilometre (see A-1.3: Activity by source sectors) and emission factors for different vehicles. GHG emissions for waterborne navigation, construction machines, aviation (landing and take-off) and railways emissions data (CO₂e) are based on national statics from RUS¹ and data from the local airport and harbor (see A-1.4: GHG emissions by source sectors).
-**Waste: GHG emission from sewage sludge is based on data for local waste company (see A-1.4: GHG emissions by source sectors), and emission from waste incineration for district heat production is included in the emission factor for district heat (buildings)  |   |   |   |
+| **Waste: GHG emission from sewage sludge is based on data for local waste company (see A-1.4: GHG emissions by source sectors), and emission from waste incineration for district heat production is included in the emission factor for district heat (buildings)  |   |   |   |
 |  Unit | MWh/year  |   |   |   |
 |   | Scope 1 | Scope 2 | Scope 3 | Total  |
 |  Buildings |  |  |  |   |
@@ -424,8 +424,6 @@ A-2.1: List of relevant policies, strategies &amp; regulations
 |  Strategy | Local | The Food Strategy 2019- | Contributes to better public health and reduced environmental and climate impact through the food and meals purchased, produced, and served in the City's operations. | Aims to collect by 2021, 70% of the City's food waste through the reduction and resource efficiency of food waste in the City's operations. Increasing the share of vegetables and organic food also contributes to reducing environmental and climate impacts. | Implementati on  |
 |  Plan | Local | Bicycle Action Plan 2022- | Provides a direction for the City to act to increase cycling. | Increasing both the number and proportion of cyclists by making it easier and safer to cycle (for existing and new cyclists) will help meet air quality and carbon dioxide emission targets. | Implementati on  |
 |  Plan | Local | Waste Plan 2021-2024 | Describes current waste management in Stockholm as well | Conscious production and consumption results in less waste, which contributes, among other | Implementati on  |
-9
-
 |   |  |  | as future plans and presents objectives and needs for action. | things, to the objectives of limited climate impact, but also, through energy efficiency and sustainable transport, to the objectives of sustainable cities and fresh air. |   |
 | --- | --- | --- | --- | --- | --- |
 |  Plan | Local | Stockholm Freight Plan - Part of Stockholm's Urban Mobility Strategy 2018-2022 | Identifies challenges and formulates directions and activities to meet the objectives of the Accessibility Strategy. The City also has other programmes and strategies related to freight transport (Environmental Programme, Climate Action Plan, Quay Strategy for Stockholm Ports, Waste Plan, World Class Business Areas) | Swedish emissions from the transport sector are to be reduced by 70% by 2030, compared to 2010. Traditional freight transport has a negative impact on the environment and climate in the form of noise, deteriorating air quality and carbon dioxide emissions. Well-functioning freight transport is a prerequisite for an attractive city by supplying goods and services and ensuring that waste and recyclable materials are transported away. | An up-date is ongoing  |
@@ -497,7 +495,7 @@ government agencies
 Viable Cities | The Viable Cities programme. Climate City Contract 2030 – a concentrated effort from Swedish cities and the national level to speed up the work on reaching climate neutral cities. This includes transition labs, workshops and an annual signing event with City mayors. | A long-term commitment that ensures cooperation between cities and the state-level, further assuming multilevel governance through quadruple helix collaboration, not least with civil society. Revised annually. | Accelerate the transition toward Climate neutral cities with a good life for all.  |
 |   |  Local and national politicians, academia, private sector and civil society | Agenda 2030 Council 17 Commissioners (9 political and 8 nominated by civil society, private sector and academia) | Supports the City to implement Agenda 2030 targets |   |
 |   |  City staff | IPHS: Innovation Platform Sustainable Stockholm
-One of six Swedish cities at the forefront of research relating to multilevel governance. | Strengthen the innovation system by clarifying the City's need for innovation, ongoing innovation processes as well as the City's functions, | The objective is to further develop the innovation capacity and strengthen internal and external collaboration.  |
+| One of six Swedish cities at the forefront of research relating to multilevel governance. | Strengthen the innovation system by clarifying the City's need for innovation, ongoing innovation processes as well as the City's functions, | The objective is to further develop the innovation capacity and strengthen internal and external collaboration.  |
 |   |  |  | methods and tools for innovation. |   |
 | --- | --- | --- | --- | --- |
 |  Regional climate collaboration | Stockholm Region
@@ -513,15 +511,15 @@ Organisations | Fossil Free Sweden
 Stockholm is participating in Zero Emission goods Delivery group working on guidelines for sustainable procurement. | National initiative to increase the pace of climate transition.
 Goal: to build a strong industrial sector and to create more jobs and export opportunities by going fossil-free. | Accelerate the climate transition. Roadmaps for 22 different sectors has been developed describing actions needed to reach climate neutrality or to become fossil-free.  |
 |  Business collaboration | Private sector
-Civil society organisations | The Environment and Climate Pact
-members, two working groups focusing on sustainable plastic use and reducing transportation. | Collaboration with the city to reach a fossil-free Stockholm 2040. | Accelerate the reduction of GHG emissions.  |
+| Civil society organisations | The Environment and Climate Pact |
+| members, two working groups focusing on sustainable plastic use and reducing transportation. | Collaboration with the city to reach a fossil-free Stockholm 2040. | Accelerate the reduction of GHG emissions.  |
 |   |  Mobility, transportation and energy companies and public organisations | The Electrification Pact
-organisations, with groups focusing on charging, infrastructure for EVs, electrification of heavy vehicles and electric power distribution. | Collaboration to implement measures necessary to reach an emission-free traffic in Stockholm 2030. | Accelerate the transition towards electrification of the transport sector in the Stockholm region  |
+| organisations, with groups focusing on charging, infrastructure for EVs, electrification of heavy vehicles and electric power distribution. | Collaboration to implement measures necessary to reach an emission-free traffic in Stockholm 2030. | Accelerate the transition towards electrification of the transport sector in the Stockholm region  |
 |   |  Transport authorities, research and businesses | The "Closer"
 Roundtable on Urban Freight
 TripleF | Research collaboration | Support to efficient and emission free freight  |
 |   |  Founding partners: ABB, Ericsson, IBM, KTH, Region Stockholm, RISE, City of Stockholm and Stockholm University | Urban ICT Arena
-Collaboration between academia, public sector and Business to create smart solutions for tomorrow's cities. | An arena in Kista Science City for creating, testing and showing the solutions for tomorrow's sustainable cities. A testbed where innovations can be evaluated in a real urban environment | To develop new smart sustainability solutions to accelerate the transition.  |
+| Collaboration between academia, public sector and Business to create smart solutions for tomorrow's cities. | An arena in Kista Science City for creating, testing and showing the solutions for tomorrow's sustainable cities. A testbed where innovations can be evaluated in a real urban environment | To develop new smart sustainability solutions to accelerate the transition.  |
 |   |  Private sector
 Academia
 City of Stockholm | Green pilot
@@ -760,8 +758,6 @@ More space for pedestrians and green infrastructure  |
 |   |   |  An agreement on a congestion charge expansion and differentiation | Reduced traffic volumes and increased uptake of EVs |  |   |
 |   |   |  Investigation of parking regulations and more efficient use of urban space | Reduced traffic volumes |  |   |
 |   |   |  Requirements in public procurements | Increased supply and use of electric |  |   |
-
-1
 |   |  |  | trucks and machines |  |   |
 | --- | --- | --- | --- | --- | --- |
 |   |   |  Mass Excavation Management Plan | Increased circularity, waterborne transport of construction material |   |   |
@@ -774,7 +770,7 @@ More space for pedestrians and green infrastructure  |
 |   |  Governance & policy | Mandatory food waste collection | Increased biogas production |   |   |
 |   |  Social innovation | Development of re-use centres | Potential for job creation |   |   |
 |  Green infrastructure & nature based solutions | Technology/infrastructure | Increased demand for biochar as soil improver and carbon sink | Increased production of biochar from green waste | tbd | Heat source from biochar production
-Improved climate adaptation  |
+| Improved climate adaptation  |
 |   |  Governance & policy | New tree policy | Increased carbon stock in green infrastructure |   |   |
 |  Built environment | Technology/infrastructure | Decreased use of direct electricity for heating | Decreased peak power demand | Included in Energy systems | Reduced energy costs  |
 |   |   |  Energy retrofitting using LED lighting and AI control |  |   |   |
@@ -825,26 +821,23 @@ Module B-2 "Climate Neutrality Portfolio Design" should contain a project descri
 |   |  List of actions | Descriptions  |
 |  Energy systems | Heating # Phase out fossil fuels in district heating # Phase out oil burners in buildings | To a limited extent, fossil oil is used on very cold days and as a back-up. This will be replaced by bio-oil.  |
 |   | Waste treatment
-# Reduce the amount of fossil plastic in incineration (for district heating) | A limited number of houses still use oil-burners. The city aims to phase these out.
-
-Includes actions along the value chain of plastics: Prevent plastic waste from occurring, Increase sorting of fractions, Increase collection of plastic waste for recycling. Plastic waste is the main fossil contributor in Stockholm’s district heating. Hence, the main focus is on reducing the amount of plastics in the combustion plants.  |
+| # Reduce the amount of fossil plastic in incineration (for district heating) | A limited number of houses still use oil-burners. The city aims to phase these out. |
+| Includes actions along the value chain of plastics: Prevent plastic waste from occurring, Increase sorting of fractions, Increase collection of plastic waste for recycling. Plastic waste is the main fossil contributor in Stockholm’s district heating. Hence, the main focus is on reducing the amount of plastics in the combustion plants.  |
 | --- | --- | --- |
 |   | Electricity use
-# Reinforcements in the electricity grid | Investments are planned to double the capacity by strengthening the grid and using digitalization. Flexible market mechanisms are being tested.  |
+| # Reinforcements in the electricity grid | Investments are planned to double the capacity by strengthening the grid and using digitalization. Flexible market mechanisms are being tested.  |
 |   | # Phase out fossil fuels in the Nordic electricity production | Increase renewable energy production in the Nordic Region, and phase out oil, natural gas and coal from electricity production.  |
 |   | City gas
-# Phase out natural gas | When the bus fleet is electrified, the demand for gas will decrease. The production of biogas is expected to increase as sorting of bio-waste becomes mandatory. New applications for biogas will be investigated.  |
+| # Phase out natural gas | When the bus fleet is electrified, the demand for gas will decrease. The production of biogas is expected to increase as sorting of bio-waste becomes mandatory. New applications for biogas will be investigated.  |
 |   | # Reduce leakage from the city gas distribution network | Investments in the network will be coordinated with other infrastructure investments to cut costs and effort.  |
 |   | Negative emissions
-# Establish negative emissions using carbon capture and storage in connection to the KVV6 bio-CHP plant (BECCS) | Combining CO_{2} capture with heat recovery, the BECCS Stockholm-project will capture and permanently store large quantities of biogenic CO_{2}.  |
+| # Establish negative emissions using carbon capture and storage in connection to the KVV6 bio-CHP plant (BECCS) | Combining CO_{2} capture with heat recovery, the BECCS Stockholm-project will capture and permanently store large quantities of biogenic CO_{2}.  |
 |  Mobility & transport | Road transport
-# Improve infrastructure for walking and cycling | A new cycle plan was adopted in 2022 to develop the cycle lanes.  |
+| # Improve infrastructure for walking and cycling | A new cycle plan was adopted in 2022 to develop the cycle lanes.  |
 |   | # Increase availability of public transport | Extension of the metro network is underway.  |
 |   | # Introducing smart mobility services | A network of strategically-placed mobility services would complement existing public transport, cycling, and walking and provide alternatives to car transport.  |
 |   | # Advocate for an expansion and differentiation of the congestion charges | Could have a significant impact on reducing car traffic. Congestion charges are regulated by national law.  |
 |   | # Improve regulation of parking spaces and increase parking fees | As part of the city’s mobility strategy, which promotes the use of non-car modes of transport.  |
-
-5
 |   | # Zero emission zone (Environmental zone 3) in Old Town and parts of inner City
 # Reduction of freight transport
 # Charging infrastructure along streets
@@ -868,11 +861,10 @@ The City is responsible for investments in the infrastructure in the ports, whil
 Investments are needed in new vessels or adjustments in existing vessels. Both local public waterborne transport and long-distance ferries and cruisers are affected.  |
 | --- | --- | --- |
 |  Waste & circular economy | **Wastewater treatment**
-# Reduce emissions from sewage sludge | Decrease methane and nitrous oxide emissions through continuous measurement at the wastewater treatment plants to identify opportunities for emission reductions.  |
+| # Reduce emissions from sewage sludge | Decrease methane and nitrous oxide emissions through continuous measurement at the wastewater treatment plants to identify opportunities for emission reductions.  |
 |  Green infrastructure & nature-based solutions | # Increase the carbon stock in vegetation and soil
-# Increase biochar production and use | Investigate methods for increasing the green space carbon stock in urban development processes.
-
-Investigate the demand for biochar and aim for large-scale production from green waste. Biochar has multiple benefits as soil improver, carbon sink, heat source etc.  |
+| # Increase biochar production and use | Investigate methods for increasing the green space carbon stock in urban development processes. |
+| Investigate the demand for biochar and aim for large-scale production from green waste. Biochar has multiple benefits as soil improver, carbon sink, heat source etc.  |
 |  Built environment | # Decrease the amount of houses with direct electricity for heating.
 # Decrease electricity usage in e.g. lighting, elevators, fans.
 # Energy efficiency measures e.g LED lighting and AI control | In both new and existing building stock. Retrofitting of existing buildings. Strict energy requirements for new builds on municipal land. Reduce peak electricity demand. Use solar power to cut energy costs and meet the increased demand for charging of EVs.  |
@@ -961,7 +953,7 @@ B-3.1: Impact Pathways
 B-3.2: Indicator Metadata
 
 |  (for each indicator selected – take from Comprehensive Indicator Sets)
-This is an example. All indicators are followed up in the integrated management system (ILS).  |   |
+| This is an example. All indicators are followed up in the integrated management system (ILS).  |   |
 | --- | --- |
 |  Indicator Name | Emissions from transport per capita  |
 |  Indicator Unit | Tonnes CO2e/capita  |
@@ -1043,8 +1035,6 @@ Module C-3 "Financing of Action Portfolio" should contain the list of action por
 |  Electricity use | Power grid owner, power companies, City etc | 2024-2030 | Energy systems | 65 000 | 1 740  |
 |  Green Infrastructure & | City | 2024-2030 | Green Infrastructure & | nd | nd  |
 |  Green infrastructure | City | 2024-2030 | Green infrastructure | 10000 | 10000  |
-5
-
 |  Nature-Based Solutions |  |  | Nature-Based Solutions |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  Wastewater treatment | City water and waste company | 2024-2030 | Waste and circular economy | 12 000 | 450  |

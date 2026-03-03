@@ -183,7 +183,7 @@ MUNICIPALITY
 |  Work Process  |   |
 | --- | --- |
 |   | • Prioritizing interventions based on feasibility, impact, and alignment with the city's goals.
-■ Opportunities report  |
+| ■ Opportunities report  |
 |  2024-10 → 2025-03 | **Action Plan Development**
 **Identification Climate Neutrality Scenarios and Impact Pathways**
 • Developing and modeling different scenarios outlining potential pathways to achieve climate neutrality by 2030.
@@ -221,7 +221,7 @@ MUNICIPALITY
 |  Work Process  |   |
 | --- | --- |
 |   | • Developing a robust financing strategy that ensures the availability of funds for the successful execution of the portfolio.
-■ **Action Plan**  |
+| ■ **Action Plan**  |
 |  2025-01 → 2030-12 | **Public Consultation and Feedback**
 • Engaging the public through workshops, meetings, and online platforms to gather feedback and ensure inclusivity.
 • Incorporating public input into the Action Plan to enhance its relevance and acceptance.
@@ -569,7 +569,7 @@ A-2.1: List of relevant policies, strategies &amp; regulations
 |  Type | Level | Name & Title | Description | Relevance | Need for action  |
 | --- | --- | --- | --- | --- | --- |
 |   |  |  |  | waste management.
-• It reflects Türkiye's national commitment to international climate agreements. |   |
+| • It reflects Türkiye's national commitment to international climate agreements. |   |
 |  Action Plan | National | National Action Plan for Waste Management (2016-2023) | The action plan is a national policy with a multi-sectoral approach that aims to achieve a sound and sustainable waste management system in Türkiye. | • supports the Mission's goal of achieving climate neutrality by 2050.
 • aligned with the Mission's focus on smart cities by using technologies to improve the efficiency of waste management operations and services.
 • consistent with the Mission's emphasis on citizen engagement. | • Strategies to reduce waste generation at the source and promoting recycling.
@@ -1334,7 +1334,7 @@ B-1.1: Impact Pathways
 |  Fields of action | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions) | Indirect impacts (co-benefits)  |
 | --- | --- | --- | --- | --- | --- |
 |   | Learning & Capabilities | ■ Establishing a training program on sustainable transportation for transportation planners and engineers. | ■ İzmir could have a more knowledgeable and skilled workforce in sustainable transportation.
-■ İzmir could attract more investment in sustainable transportation. | ■ The more skilled workforce could help to develop and implement more effective transportation planning and engineering solutions in İzmir that reduce emissions. | ■ The creation of new jobs in the sustainable transportation sector could boost the economy.  |
+| ■ İzmir could attract more investment in sustainable transportation. | ■ The more skilled workforce could help to develop and implement more effective transportation planning and engineering solutions in İzmir that reduce emissions. | ■ The creation of new jobs in the sustainable transportation sector could boost the economy.  |
 |  Waste & circular economy | Technology & Innovation | ■ Development of a smart waste collection and transport system by using sensors, data analytics and spatial optimization.
 ■ The implementation of new / innovative recycling and disposal technologies.
 ■ The city could work with businesses to create zero-waste operations. | ■ Shifting to separate waste collection scheme in metropolitan districts of the city.
@@ -1367,8 +1367,8 @@ B-1.1: Impact Pathways
 |  Fields of action | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions) | Indirect impacts (co-benefits)  |
 | --- | --- | --- | --- | --- | --- |
 |   | Social Innovation | ■ The creation of platforms for dialogue, citizen-led projects, and the promotion of behavior change campaigns that encourage waste reduction, reuse, and recycling.
-■ Promoting circular economy practices at the city level by raising awareness about the benefits of circular economy models, encouraging businesses and residents to adopt circular practices. | ■ An increase in the number of residents who are aware of and participate waste reduction and recycling practices.
-■ An increase in the number of community-based waste collection and recycling programs. | ■ The increase in the number of community-based waste collection and recycling programs could lead to direct emission reductions, as these programs can help to reduce the amount of waste sent to landfills. | ■ Development of sustainable consumer behavior among the people living in the city.  |
+| ■ Promoting circular economy practices at the city level by raising awareness about the benefits of circular economy models, encouraging businesses and residents to adopt circular practices. | ■ An increase in the number of residents who are aware of and participate waste reduction and recycling practices. |
+| ■ An increase in the number of community-based waste collection and recycling programs. | ■ The increase in the number of community-based waste collection and recycling programs could lead to direct emission reductions, as these programs can help to reduce the amount of waste sent to landfills. | ■ Development of sustainable consumer behavior among the people living in the city.  |
 |   |  Democracy / Participation | ■ Establishment of a citizens' panel to advise on waste management policies.
 ■ Public meetings to discuss waste management issues.
 ■ Creation a website or social media page where citizens can share their ideas about waste management. | ■ An increase in public awareness of waste management issues.
@@ -1392,10 +1392,10 @@ B-1.1: Impact Pathways
 ■ The increase in the number of businesses and organizations that adopt sustainable waste management practices could lead to direct emission reductions, as these practices may reduce the amount of waste sent to landfills. | ■ The increase in investment in waste reduction and recycling infrastructure could create jobs and stimulate the economy.
 ■ The increase in the number of businesses and organizations that adopt sustainable waste management practices could improve public health and quality of life.  |
 |   |  Learning & Capabilities | ■ Establishing a training program for waste management professionals.
-■ The city could offer scholarships to students who want to study waste management. | ■ A more knowledgeable and skilled workforce in waste management.
-■ The city could attract more investment in waste management. | ■ The more knowledgeable and skilled workforce could help to develop and implement more efficient and less polluting waste management practices.
-■ The more innovative waste management technologies could help to reduce the amount of waste sent to landfills. | ■ The more knowledgeable and skilled workforce could improve public health and safety.
-■ The more innovative waste management technologies could create jobs and stimulate the economy.  |
+| ■ The city could offer scholarships to students who want to study waste management. | ■ A more knowledgeable and skilled workforce in waste management. |
+| ■ The city could attract more investment in waste management. | ■ The more knowledgeable and skilled workforce could help to develop and implement more efficient and less polluting waste management practices. |
+| ■ The more innovative waste management technologies could help to reduce the amount of waste sent to landfills. | ■ The more knowledgeable and skilled workforce could improve public health and safety. |
+| ■ The more innovative waste management technologies could create jobs and stimulate the economy.  |
 |  Green infrastructure & nature-based solutions | Technology & Innovation | ■ Adoption of low carbon farming technologies and precision agriculture practices. | ■ Increased utilization of renewable energy solutions in farming operations. | ■ Reduced greenhouse gas emissions from agriculture due to improved practices.
 ■ Lower energy consumption | ■ Enhanced agricultural productivity and profitability for local farmers.
 ■ Job creation and economic growth in the agriculture sector.
@@ -1410,25 +1410,25 @@ B-1.1: Impact Pathways
 |  Fields of action | Systemic levers | Early changes (1-2 years) | Late outcomes (3-4 years) | Direct impacts (Emission reductions) | Indirect impacts (co-benefits)  |
 | --- | --- | --- | --- | --- | --- |
 |   | Governance & Policy | ■ Development of specific programs promoting climate-smart agriculture.
-■ Formation of inter-agency working groups to coordinate climate action efforts. | ■ Full implementation of climate-resilient agriculture policies and regulations.
-■ Establishment of a dedicated department for monitoring and enforcing climate-smart practices. | ■ Clear guidelines and incentives for farmers to adopt low carbon farming techniques.
-■ Improved enforcement of emissions-related regulations in agriculture. | ■ Strengthened governance structures for sustainable agriculture.
-■ Increased trust and cooperation among stakeholders in the agriculture sector.  |
+| ■ Formation of inter-agency working groups to coordinate climate action efforts. | ■ Full implementation of climate-resilient agriculture policies and regulations. |
+| ■ Establishment of a dedicated department for monitoring and enforcing climate-smart practices. | ■ Clear guidelines and incentives for farmers to adopt low carbon farming techniques. |
+| ■ Improved enforcement of emissions-related regulations in agriculture. | ■ Strengthened governance structures for sustainable agriculture. |
+| ■ Increased trust and cooperation among stakeholders in the agriculture sector.  |
 |   |  Social Innovation | ■ Farmer awareness campaigns and training programs on climate-smart agriculture.
-■ Formation of farmer cooperatives for knowledge sharing and resource pooling. | ■ Increased adoption of sustainable farming practices among a wider group of farmers.
-■ Enhanced social networks and collaborations among farmers and agricultural communities. | ■ Reduced emissions through the widespread adoption of sustainable agricultural practices.
-■ Improved local food security and resilience to climate-induced shocks. | ■ Stronger social cohesion and sense of community among farmers.
-■ Increased access to markets and fair pricing for agricultural products.  |
+| ■ Formation of farmer cooperatives for knowledge sharing and resource pooling. | ■ Increased adoption of sustainable farming practices among a wider group of farmers. |
+| ■ Enhanced social networks and collaborations among farmers and agricultural communities. | ■ Reduced emissions through the widespread adoption of sustainable agricultural practices. |
+| ■ Improved local food security and resilience to climate-induced shocks. | ■ Stronger social cohesion and sense of community among farmers. |
+| ■ Increased access to markets and fair pricing for agricultural products.  |
 |   |  Democracy / Participation | ■ Establishment of farmer advisory groups for climate action planning.
-■ Inclusion of farmers' voices in decision-making processes. | ■ Strengthened participation of farmers in shaping agricultural policies.
-■ Enhanced transparency in the allocation of resources for climate-smart agriculture. | ■ Tailored climate action plans reflecting the needs and perspectives of farmers.
-■ More effective implementation of emission reduction measures due to farmer engagement. | ■ Increased trust between the local government and farming communities.
-■ Greater civic engagement and awareness of climate change issues.  |
+| ■ Inclusion of farmers' voices in decision-making processes. | ■ Strengthened participation of farmers in shaping agricultural policies. |
+| ■ Enhanced transparency in the allocation of resources for climate-smart agriculture. | ■ Tailored climate action plans reflecting the needs and perspectives of farmers. |
+| ■ More effective implementation of emission reduction measures due to farmer engagement. | ■ Increased trust between the local government and farming communities. |
+| ■ Greater civic engagement and awareness of climate change issues.  |
 |   |  Finance & Funding | ■ Mobilization of initial funding for climate-smart agriculture projects.
-■ Development of financing mechanisms to support farmers in adopting sustainable practices. | ■ Attraction of additional investments from public and private sectors.
-■ Expanded access to affordable loans and grants for farmers. | ■ Investment in emission reduction technologies and infrastructure in agriculture.
-■ Financial incentives for farmers to transition to low carbon farming. | ■ Improved livelihoods for farmers through increased financial support.
-■ Enhanced local economic development through agricultural investments.  |
+| ■ Development of financing mechanisms to support farmers in adopting sustainable practices. | ■ Attraction of additional investments from public and private sectors. |
+| ■ Expanded access to affordable loans and grants for farmers. | ■ Investment in emission reduction technologies and infrastructure in agriculture. |
+| ■ Financial incentives for farmers to transition to low carbon farming. | ■ Improved livelihoods for farmers through increased financial support. |
+| ■ Enhanced local economic development through agricultural investments.  |
 |   |  Learning & Capabilities | ■ Capacity-building programs for farmers and agricultural extension services.
 ■ Development of educational resources and training materials. | ■ Enhanced skills and knowledge among farmers in climate-smart agriculture.
 ■ Integration of climate resilience and sustainability into agricultural education. | ■ Improved implementation of emission reduction techniques due to increased knowledge.
@@ -1777,8 +1777,7 @@ Options to support retrofitting could include:
 
 This action should be coordinated with Action 1 (on top), which includes research and surveys aimed at assessing the existing energy performance of the building stock, in order to target areas currently exhibiting poor performance.  |
 |  Rationale | Due to the age of the building stock of Izmir (46% having been built prior to 1990 and therefore prior to the introduction of thermal standards) there is likely to be poor building performance across the City, although there is currently no reliable data about the existing building stock in regard to age, household composition, heating systems, energy performance, etc. The energy efficiency and quality of housing stock not only dictates the emissions and cost associated with space heating and cooling, but if poor, it can expose the residents to a higher level of risk to extreme temperatures due to its heightened sensitivity to overheating. Furthermore, opportunities for improving the efficiency of water fixtures and fittings will help to reduce water demands and help remove dated plumbing (often cited as a reason for residents not drinking from the potable water network with dependency on bottled water).
-
-By retrofitting residential buildings, operational energy costs can be reduced, decreasing the resident’s vulnerability to overheating, improve water efficiency and quality to reduce water stress and help to reduce GHG emissions.  |
+| By retrofitting residential buildings, operational energy costs can be reduced, decreasing the resident’s vulnerability to overheating, improve water efficiency and quality to reduce water stress and help to reduce GHG emissions.  |
 |  Steps for Implementation | 1. Undertake analysis of housing stock to identify those areas that are poorly performing, not set for urban transformation and where improvement would reduce energy poverty.
 Create a suite of home energy retrofit options that target the most cost-effective carbon reduction and water efficiency opportunities.
 Conduct Life Cycle analysis for green energy standards proposed to further investigate how buildings should be designed, constructed/retrofitted and operated.
@@ -1806,7 +1805,7 @@ Climate Neutrality Action Plan
 |   |  Financing options | Municipal budget, IFIs, Bank of Provinces, Private banks  |
 |   |  Revenue /savings opportunities | Savings opportunities will come from reduced energy costs, decreased pressure on energy networks, and public health benefits from more comfortable homes.  |
 |  Impact measures | • Electricity consumption in residential buildings.
-• Heating / cooling consumption in residential buildings  |   |
+| • Heating / cooling consumption in residential buildings  |   |
 |  Estimated cost | CAPEX:
 OPEX: €2,081,250
 Design/development costs: €312,188  |   |
@@ -1814,11 +1813,11 @@ Design/development costs: €312,188  |   |
 Economic Development: increased economic efficiency; economic growth
 Environment: Mitigation of GHG Emissions  |   |
 |  1/25,000 scaled IMM
-Environmental Plan Alignment | Not spatially dependent.  |   |
+| Environmental Plan Alignment | Not spatially dependent.  |   |
 |  3) More sustainable urban mobility: mass transit and local mobility  |   |
 | --- | --- |
 |  Strategic Plan Objectives: | Public Transport Will Be Affordable, Energy Efficient, Fair, Comfortable, Available to and Accessible for all residents.
-A Sustainable Transport System Will Be Created with a Harmonious Interaction Between Different Modes of Transport, Offering Different Options  |
+| A Sustainable Transport System Will Be Created with a Harmonious Interaction Between Different Modes of Transport, Offering Different Options  |
 |  Description | Develop and enhance the Municipalities urban mobility to enable the implementation of more diverse modes of low carbon transportation alternatives whilst reducing traffic congestions, by:
 **Mass transit schemes**
 By 2030, the rail system network will total 664.1 km including tramway, metro and IZBAN line
@@ -1909,7 +1908,7 @@ Additionally, 3.365.588,5 tCO2e is addressed for this Action Plan related to ren
 | --- | --- | --- |
 |  Plan for delivery | Action owner | IMM  |
 |   |  Stakeholders | District Municipalities and MoENR – General Directorate of Energy Affairs
-Academics, consultancy firms and other knowledge institutions that can inform or conduct the study  |
+| Academics, consultancy firms and other knowledge institutions that can inform or conduct the study  |
 |   |  Financing options | IMM would likely need to provide funding for the initial study but there may be potential to collaborate with an industrial or academic partner organization. ESCOs or similar financing mechanisms can also be considered as an option for project delivery.  |
 |   |  Revenue /savings opportunities | If a micro grid is implemented, this could offer reduced exposure to energy price hikes, reduced exposure to damage from blackouts, etc. along with potential revenue from the sale of surplus power.  |
 |  Impact measures | A proportion of total energy demand derived from RES as a share of total city energy consumption.
@@ -1928,7 +1927,7 @@ Urban / Rural Periphery  |   |
 |  Strategic Plan Objectives: | Access to reliable, sustainable and affordable energy by everyone will be promoted  |
 |  Description | Investments for 15 MW solar energy in buildings owned by municipalities and their subsidiaries by 2030.  |
 |  Rationale / Purpose | Izmir already had plans to invest in solar energy with the motivation to be a good example for its citizens. Increasing energy prices is another motivation for IMM to save and use the excess resources to promote other types of low carbon technologies in the city, especially technologies related to its own operations. With the rapid increase in exchange rates, the prices have inflated significantly in the previous years. Within the IMM strategic plan (2020-2024) there are 10 solar energy plants planned until the end of 2024.
-There are 4 different solar energy investments planned with a total of 0.2 MW capacity within the short term. We can easily assume that IMM will develop more projects after the year 2024. By increasing the municipality's renewable energy generation capacity, it diversifies the energy supply, reducing the exposure of the municipality buildings and key infrastructure to the risk of power shortages and blackouts as a result of a climate hazard.  |
+| There are 4 different solar energy investments planned with a total of 0.2 MW capacity within the short term. We can easily assume that IMM will develop more projects after the year 2024. By increasing the municipality's renewable energy generation capacity, it diversifies the energy supply, reducing the exposure of the municipality buildings and key infrastructure to the risk of power shortages and blackouts as a result of a climate hazard.  |
 |  Steps for Implementation | Most of the implementation steps mentioned below are in progress especially on the agenda of Directorate of Climate Change and Clean Energy Department.
 Analysis of legislations and potential of buildings, lands, bus stops etc
 Analysis of possible financing methods; revenue sharing, unlicensed energy production rights of municipalities, public and private collaboration  |
@@ -1948,7 +1947,7 @@ Expand the plans for the next Strategic Plan period.
 |  Field of action | Energy Systems  |
 |  Systemic lever | Finance and funding  |
 |  Risk and/or vulnerabilities addressed | Risks: IM5, IM6
-Opportunity: IM7:  |
+| Opportunity: IM7:  |
 |  Potential Emission Reductions | 12,168 tCO_{2e} in 2030 with 15 MW installation  |
 |  Potential Barriers | Frequently changing legislation
 Complex permission processes from DSOs
@@ -1956,13 +1955,13 @@ DSOs doubts about sufficient infrastructure for additional RE sources High initi
 Lack of cooperation between institutions  |
 |  Action Owner | IMM  |
 |  Stakeholders | District Municipalities Manufacturers
-Finance institutions  |
+| Finance institutions  |
 |  Financing Options | Municipal Budget, PPP, IFI’s, Bank of Province  |
 
 ) Support the implementation of low carbon farming techniques and climate-smart agriculture across the province.
 
 |  Strategic Plan Objectives: | Food Safety Will Be Provided, Nutrition Will Be Improved, and Sustainable Agriculture Will Be Supported.
-In Order to Adapt to Climate Change and its Impacts, Actions Will Be Taken in All Areas, Primarily in Agriculture and Energy  |
+| In Order to Adapt to Climate Change and its Impacts, Actions Will Be Taken in All Areas, Primarily in Agriculture and Energy  |
 | --- | --- |
 |  Description | Development of resources and training schemes for farmers to support the transition to more sustainable agriculture that is more resilient to climate change, reduces greenhouse gas emissions and increases carbon sequestration rates. This would include the consideration of techniques that help address the “five pillars” of carbon farming. These are:
 Nutrient Management: which looks at ways to improve storage and application of fertilizers and manures, which would increase efficiency and decrease emissions.
@@ -2012,8 +2011,7 @@ Agricultural Basins
 | --- | --- |
 |  Strategic Plan Objectives: | A Sustainable Urban Infrastructure Will Be Built to Contribute to the Urban Economy  |
 |  Rationale / Purpose | As per LU1.16 this action would involve collaboration with relevant bodies to review and update the appropriate planning regulation and guidelines to ensure that water efficient fixtures and fittings are considered in all new public buildings.
-
-This would involve considering the following water-consuming components: WC’s, Urinals, Taps (wash- hand basins and, where specified kitchen taps and waste disposal unit), showers, baths, dishwashers and washing machines.  |
+| This would involve considering the following water-consuming components: WC’s, Urinals, Taps (wash- hand basins and, where specified kitchen taps and waste disposal unit), showers, baths, dishwashers and washing machines.  |
 |  Steps for Implementation | 1. Establish a working group to review local level policies.
 Conduct a study on energy efficiency design and materials to use taking into consideration future climatic conditions changing climate conditions and flexibility and adaptability in future use.
 District Municipalities are important partners as they are the authority to grant licenses to new buildings.
@@ -2211,7 +2209,7 @@ Climate Neutrality Action Plan
 ) Municipal Fleet and Service Vehicles: Electric and Low-carbon Vehicles
 
 |  Strategic Plan Objectives | A Sustainable Transport System Will Be Created with a Harmonious Interaction Between Different Modes of Transport, Offering Different Options
-Access to Reliable, Sustainable and Affordable Energy by Everyone Will be Promoted  |
+| Access to Reliable, Sustainable and Affordable Energy by Everyone Will be Promoted  |
 | --- | --- |
 |  Description | This action can be split into two parts, renewal of IMM's bus fleet by purchasing e-buses and the procurement of low carbon service vehicles.
 
@@ -2268,15 +2266,15 @@ Prepare the procurement documents and release the invitation for tender.  |
 |  Field of action | Mobility & transport  |
 |  Systemic lever | Finance & Funding  |
 |  Potential Emission Savings | 55% of emission reduction targeted in 80% of all vehicle fleet.
-tCO2e savings in 2030.  |
+| tCO2e savings in 2030.  |
 |  Plan for delivery | Action owner
-ESHOT  |
+| ESHOT  |
 |   |  Stakeholders
-IMM  |
+| IMM  |
 |   |  Financing options
-Municipal budget, IFIs, Bank of Provinces, PPP, private operators  |
+| Municipal budget, IFIs, Bank of Provinces, PPP, private operators  |
 |   | Revenue /savings opportunities
-After the initial outlay, the operating costs of electric vehicles will be lower than for the existing fleet. It will be possible to save EUR 14,500 from fuel cost and EUR 3,900 from maintenance cost for one bus per year. Increased revenue may also be generated through higher public transport patronage. Air quality benefits may also lead to avoided healthcare costs.  |
+| After the initial outlay, the operating costs of electric vehicles will be lower than for the existing fleet. It will be possible to save EUR 14,500 from fuel cost and EUR 3,900 from maintenance cost for one bus per year. Increased revenue may also be generated through higher public transport patronage. Air quality benefits may also lead to avoided healthcare costs.  |
 |  Impact measures | - The proportion of fleet that is electrified.
 Public transport CO2 emissions
 Number of EV passengers
@@ -2295,7 +2293,7 @@ Climate Neutrality Action Plan
 3
 
 |  Strategic Plan Objectives | A Sustainable Transport System Will Be Created with a Harmonious Interaction Between Different Modes of Transport, Offering Different Options
-Access to Reliable, Sustainable and Affordable Energy by Everyone Will be Promoted  |
+| Access to Reliable, Sustainable and Affordable Energy by Everyone Will be Promoted  |
 | --- | --- |
 |  Description | This action will help Izmir take advantage from being at the forefront of the transition to electrified mobility through measures to that support electric vehicle use including:
 • priority parking for electric vehicles.
@@ -2304,8 +2302,7 @@ Access to Reliable, Sustainable and Affordable Energy by Everyone Will be Promot
 • Install EV charging stations for all municipal buildings and municipal parking areas.
 • Introduction of an all-electric / hybrid car club pool  |
 |  Rationale | Emissions from fossil fuel degrade Izmir's air quality, which is significantly poorer in the city center, and contribute to climate change. EV have several advantages, including lower emissions, noise and vibration levels. The environmental impact of fossil fuel vehicles is leading to stricter EU emissions standards leading to several major automotive producers have announcing they will stop working on diesel engines and concentrate on hybrid and electrical vehicle engines in the first half of the next decade. A local brand of e-vehicle is under development. Mass production will start in the next 3-5 years. Furthermore, EVs typically have lower the operating costs of the municipal fleet over time, with generally lower maintenance costs, and EVs will not be dependent on the volatile prices of oil.
-
-Promoting hybrid and electric vehicles in the city is also one of the actions planned in Izmir Transportation Master Plan (2019). Supporting the uptake of EVs will help improve Izmir's environment and benefit from being at the forefront of the transition.  |
+| Promoting hybrid and electric vehicles in the city is also one of the actions planned in Izmir Transportation Master Plan (2019). Supporting the uptake of EVs will help improve Izmir's environment and benefit from being at the forefront of the transition.  |
 |  Steps for Implementation | **Priority parking and EV charging infrastructure:**
 Undertake mapping of dedicated parking areas and street parking
 Develop provision standards for EV charging sites (including catchment / distribution density, charging capacity (speed), type of charging connections.
@@ -2358,11 +2355,11 @@ Economic Development: Increased economic efficiency; economic growth; employment
 Social Inclusion: Access to basic services
 Environment: reduced pollution, mitigation of GHG emissions. .  |
 |  1/25,000 scaled IMM Environmental Plan Alignment | 1. Gulf of Izmir
-Central City  |
+| Central City  |
 |  19) Develop more sustainable logistical practices  |   |
 | --- | --- |
 |  Strategic Plan Objectives: | Gulf of Izmir and All the Coastal and Marine Areas Will Be Protected and Used Sustainably
-A Sustainable Transport System Will Be Created with a Harmonious Interaction Between Different Modes of Transport, Offering Different Options  |
+| A Sustainable Transport System Will Be Created with a Harmonious Interaction Between Different Modes of Transport, Offering Different Options  |
 |  Description | A baseline study will be undertaken with a view of informing policy development around the uptake of more sustainable practices and the adoption of environmental and cultural factors in port operations (international and national logistics) and the development of coastal structures. The basic aims of this these studies will focus on:
 • An understanding of current port infrastructure, assets, and management structure / protocols.
 • Identify operation and smart-infrastructure improvements that can be made that improve the emissions and reduce the environmental impacts associated with port operations, enhancing their sustainability practices.
@@ -2491,7 +2488,7 @@ IMM has targets since 2014 and planned to start the implementation in 2020.  |
 |  Field of action | Energy systems  |
 |  Systemic lever | Learning and Capabilities Finance and Funding  |
 |  Potential Emission Reductions | Reductions for IMM: 10,980 tCO2e in 2030
-Reductions from other institutions' consumptions: 111,102 tCO2e in 2030  |
+| Reductions from other institutions' consumptions: 111,102 tCO2e in 2030  |
 |  Potential Barriers | Lack of human resources to conduct studies
 Lack of cooperation between institutions
 Lack of finance  |
@@ -2520,14 +2517,14 @@ Climate Neutrality Action Plan
 |  Systemic lever | Finance and Funding, Learning and capabilities  |
 |  Potential Emission Savings | There would be positive mitigation effects if, for instance, energy labelling of appliances resulted in significant increases in efficiency and a net decrease in fuel consumption.  |
 |  Plan for delivery | Action owner
-IMM  |
+| IMM  |
 |   |  Stakeholders
 District Municipalities within the Metropolitan Area
 Private Sector companies, cooperatives, and NGOs Finance institutions  |
 |   |  Financing options
-Municipal budget  |
+| Municipal budget  |
 |   |  Revenue /savings opportunities
-Potential increase in product value (for more environmentally friendly products)  |
+| Potential increase in product value (for more environmentally friendly products)  |
 |  Impact measures | Qualitative market research survey to understand any shift in customer decision making around responsible purchasing.  |
 |  Estimated cost | CAPEX: N/A
 OPEX: €500, - €700
@@ -2571,7 +2568,7 @@ Lobbying to establish incentive mechanisms at national level  |
 |  Field of action | Energy systems  |
 |  Systemic lever | Learning and Capabilities, Finance and Funding  |
 |  Potential Emission Reductions | 895 MW of installation of solar pv
-,024 tCO2e reduction in 2030  |
+| ,024 tCO2e reduction in 2030  |
 |  Potential Barriers | Unwilling to change habits.
 Lack of human resources to conduct studies.
 Lack of cooperation between institutions
@@ -2654,7 +2651,7 @@ Develop implementation plan to include infrastructure investment and revisions t
 |   |  Financing options | Municipal budget  |
 |   |  Revenue /savings opportunities | Revenue could be generated from the key dry recycled materials  |
 |  Impact measures | • Share of the population with weekly municipal solid waste (MSW) collection
-• Proportion of MSW that is sorted and recycled total and by type of waste e.g., paper glass batteries PVC bottles metals  |   |
+| • Proportion of MSW that is sorted and recycled total and by type of waste e.g., paper glass batteries PVC bottles metals  |   |
 |  Estimated cost | CAPEX: Collection asset set-up cost: €980,000 - €1,230,000
 OPEX: Public Information Campaign: €1,300 – 1,600, Collection asset cost per year: €1,600,000 - €2,400,000.
 Design/development costs: Studies and Information Campaign: €23,000 - 29,000  |   |
@@ -2692,7 +2689,7 @@ Complete the investment of waste collection systems to facilitate the separation
 |   |  Financing options | Municipal budget, IFIs, Bank of Provinces, PPP, private banks  |
 |   |  Revenue/savings opportunities | Revenue could be generated from reuse of dry recyclables  |
 |  Impact measures | • Share of the population with weekly MSW collection
-• Proportion of MSW that is sorted and recycled total and by type of waste e.g., paper glass batteries PVC bottles metals  |   |
+| • Proportion of MSW that is sorted and recycled total and by type of waste e.g., paper glass batteries PVC bottles metals  |   |
 |  Estimated cost | CAPEX: €8 / tone for a clean materials facility and €18 / tone for a composting facility.
 OPEX: N/A
 Design/development costs: N/A  |   |
@@ -2761,7 +2758,7 @@ Climate Neutrality Action Plan
 |  Field of action | Waste & circular economy  |
 |  Systemic lever | Learning and Capabilities  |
 |  Potential Emission Reductions | Reductions from all landfills: 667,279 tCO2e in 2030
-Electricity generation from biogas in Harmandal: 136,890 tCO2e in 2030 when the facility reaches full capacity of 45MW.  |
+| Electricity generation from biogas in Harmandal: 136,890 tCO2e in 2030 when the facility reaches full capacity of 45MW.  |
 |  Potential Barriers | Lack of financial resources
 Inapplicability due to low capacities of landfills other than Harmandal
 Landfill gas decreases over time, eventually becoming a non-viable source of energy.
@@ -2815,7 +2812,7 @@ Monitoring of uptake.  |   |
 • Reduce GHG emissions.  |   |
 |  Plan for delivery | Action owner | IMM  |
 |   |  Stakeholders | Local Businesses NGOs
-Citizens  |
+| Citizens  |
 |   |  Financing options | Municipal budget  |
 |   |  Revenue /savings opportunities | Savings opportunities will come from public health benefits  |
 |  Impact measures | • Annual CO2 equivalent emissions per capita
@@ -2866,7 +2863,7 @@ Undertaking awareness raising campaign’s and provide guidance / instruction on
 • Undertake a study about smart systems including benchmarks from the world and Türkiye.  |
 |  Potential Emission Reductions | Supporting actions for B-2.2.29, emission reductions cumulated.  |
 |  Potential Barriers | Resistance to change habits.
-Lack of cooperation with District Municipalities Lack of human resources to conduct studies  |
+| Lack of cooperation with District Municipalities Lack of human resources to conduct studies  |
 |  Action Owner | IMM  |
 |  Stakeholders | District municipalities Izmir citizens Restaurants, food industry CEVKO Foundation Ministry of Environment and Urbanization  |
 |  Financing Options | Municipal Budget, PPP, Private Investment, Bank of Provinces, IFIs.  |
@@ -2947,8 +2944,6 @@ Table 5.3.2: Indicator Metadata
 | --- | --- |
 |  Indicator Name | Annual amount of greenhouse gas  |
 |  Indicator Unit | tCO2e/y  |
-Climate Neutrality Action Plan
-
 |  Definition | Monitoring the amount of greenhouse gases to be calculated for all sectors  |
 | --- | --- |
 |  Calculation | The relevant fuel type or energy quantity multiplied by the emission factor for that fuel  |
@@ -3049,10 +3044,6 @@ MUNICIPALITY
 |  B-3.2.5: Indicator Metadata  |   |
 |  Indicator Name | Greenhouse gas reduction from photovoltaic systems  |
 |  Indicator Unit | tCO2e/y  |
-
-2
-Climate Neutrality Action Plan
-
 |  Definition | The contribution of the annual electrical energy produced by the photovoltaic power system to GHG mitigation is measured and monitored.  |
 | --- | --- |
 |  Calculation | For GHG mitigation calculation, the electrical energy produced by the photovoltaic system is multiplied by the emission factor of the national electricity grid  |
@@ -3079,10 +3070,6 @@ Climate Neutrality Action Plan
 |  Indicator Context |   |
 |  Does the indicator measure direct impacts (i.e., reduction in greenhouse gas emissions?) | Yes  |
 |  If yes, which emission source sectors does it impact? | Transport-Road  |
-
-3
-Climate Neutrality Action Plan
-
 |  Does the indicator measure indirect impacts (i.e., co- benefits)? | Yes  |
 | --- | --- |
 |  If yes, which co-benefit does it measure? | a healthier population and a reduction in air pollutants  |
@@ -3383,11 +3370,11 @@ for the Mission Action Plan | ~ € 0.7 billion  |
 tCO2e
 for the Mission Action Plan  |   |
 |  Eco driving training (driving more economically) for IBB employees (As per SEAP Action - in lieu of EV / hybrid vehicles) |   |   |   | 128.649 tCO2e
-in the existing strategy (SECAP 2020).  |   |
+| in the existing strategy (SECAP 2020).  |   |
 |  Municipal Fleet and Service Vehicles: electric and Low-carbon vehicles. |   |   |   | 127.494 tCO2e
-in the existing strategy (SECAP 2020).  |   |
+| in the existing strategy (SECAP 2020).  |   |
 |  More sustainable urban mobility: mass transit and local mobility. |   |   |   | 1.215.689 tCO2e
-in the existing strategy (SECAP 2020). | ~ € 10.24 billion  |
+| in the existing strategy (SECAP 2020). | ~ € 10.24 billion  |
 |  Review and update the local-level policies, planning regulations and guidelines for future and new municipality development around energy efficiency. | IMM | 2023-2030 |  | 85,806 tCO2e
 in the existing strategy (SECAP 2020). | ~ € 3.4 billion  |
 6
@@ -3436,7 +3423,7 @@ in the existing strategy
 in the existing strategy
 (SECAP 2020). | ~ € 0.4 billion  |
 |  Reduce the IPPU emissions. | IMM & Industry |   | Industrial Process and Product Use (IPPU) | 1.519.992 tCO2e
-for the Mission Action Plan | ~ € 0.1 billion  |
+| for the Mission Action Plan | ~ € 0.1 billion  |
 |   |   |   | TOTAL | 7.717.485 tCO2e
 in the existing strategy
 (SECAP 2020).
@@ -3727,8 +3714,6 @@ Signatories
 |  Izmir Chamber of Commerce | Policy and Governance Economic and Financial Systems | Professional organization as a public institution | Mahmut ÖZGENER | Chairman of the Board  |
 |  İzmir City Council | Policy and Governance Social and Cultural Systems | Civil Initiative | Nilay KÖKKILINÇ | President of Izmir City Council  |
 |  Izmir Development Agency | Policy and Governance Urban Planning and Infrastructure Waste Management System Economic and Financial Systems | Public | Mehmet YAVUZ | İzmir Development Agency General Secretary  |
-Climate-Neutrality Commitments
-
 |  Chamber of Architects and Engineers of Türkiye (TMMOB) Izmir Provincial Coordination Board Secretary | Social and Cultural Systems Energy System | Professional organization as a public institution | Aykut AKDEMİR | TMMOB Izmir Provincial Coordination Board Secretary  |
 | --- | --- | --- | --- | --- |
 |  Aegean Exporters' Associations | Economic and Financial Systems | Professional organization as a public institution | Jak ESKİNAZİ | Coordinator President  |

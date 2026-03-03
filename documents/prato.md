@@ -806,10 +806,6 @@ A-1.3: Activity by source sectors
 |  Trasporti privati e commerciali | 8.370,78 | 0,00 | 2.695,75  |
 |  Industrial Process and Product Use (IPPU) |  |  |   |
 |  Industrie (escluse le industrie contemplate nel Sistema europeo di scambio delle quote di emissione – ETS) | 593.685,41 | 257.747,09 |   |
-Climate-Neutrality Commitments
-
-#
-
 |  Agricultural, Forestry and Land Use (AFOLU) |  |  |   |
 | --- | --- | --- | --- |
 |  Agricoltura,pesca, silvicoltura | 10.311,36 | 3.457,22 |   |
@@ -1276,14 +1272,8 @@ Climate-Neutrality Commitments
 |   |  |  | 2. "Green Revolution and Ecological Transition": allocates a total of EUR 68.6 billion (EUR 59.5 billion from the RRF Facility and EUR 9.1 billion from the Fund) with the main objectives of improving the sustainability and resilience of the economic system and ensuring an equitable and inclusive environmental transition. 3. "Infrastructure for Sustainable Mobility": for a total amount of EUR 31.5 billion (EUR 25.4 billion from the RRF Facility and EUR 6.1 billion from the Fund). Its primary objective is the development of a modern, sustainable transport infrastructure covering all areas of the country. The Plan also includes an ambitious programme of reforms, to facilitate the implementation phase and more generally contribute to the modernisation of the country and make the economic environment more favourable to development of business activity |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  Action Plan | Regio nal | Environmental Plan and Energetic or Regional (Paer) | The Regional Environmental and Energy Plan (Paer) of the Region of Tuscany, established by Regional Law 14/2007, was approved in 2015 and represents the planning tool for the environment and energy in the region. It incorporates previous regional strategies such as the Pier (Regional Energy Plan), the Praa | Identify regional strategic guidelines, through the identification of areas unsuitable for wind, biomass and photovoltaic power plants, |   |
-Climate-Neutrality Commitments
-
-#
-
 |   |  |  | (Regional Environmental Action Plan) and the Regional Programme for Protected Areas. The main objectives of the Paer are: Combating climate change and promoting energy efficiency and renewable energy. This focuses on research and technological innovation to develop new businesses in the green economy, from energy renewable energy to energy efficiency energy efficiency, promoting a transition to a low-carbon economy. Protecting and enhancing land resources, nature and biodiversity. The Paer aims to balance urban and infrastructural development with conservation of natural resources, turning them into a driver of economic, tourism and cultural development. Promoting the integration of environment, health and quality of life. The aim is to ensure a healthy environment and reduce health risks for citizens, recognising the strong connection between human health and the natural environment. Promoting the sustainable use of natural resources, with a particular focus on the protection of water resources, in line with European policies policies for a resource-efficient efficient use of resources. | e providing an overview of the region's renewable sources in the region and the criteria for access to administrative simplifications for energy installations  |
 | --- | --- | --- | --- | --- |
-Climate-Neutrality Commitments
-
 |   |  |  | The Paer is based on constituent documents, including the Plan Specifications and various annexes covering several thematic areas, such as wind, biomass and photovoltaic energy production, geothermal energy, renewable energy sources, criteria for access to administrative simplifications for energy installations, and biodiversity, coastal defence, security seismic, lighting systems, and the extraordinary programme of strategic interventions for water resources. |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  Action Plan | Local | PAESC PRATO | The Municipality of Prato joined the Covenant of Mayors in April 2014, sharing with the European Commission the commitment to reach a reduction of at least 20% of CO2 emissions by 2020. After adhering to the Covenant, a path was followed that led to the approval of the Sustainable Energy Action Plan (SEAP) in 2015 and the monitoring of the achievement of the Plan's objectives. The Municipality of Prato joined the Covenant of Mayors in April 2014, sharing with the European Commission the commitment to achieve at least 20 per cent reduction |  |   |
@@ -1314,29 +1304,17 @@ Climate-Neutrality Commitments
 |   |  |  | correlated to the broader policies of territorial development: cultural, social and economic development. A medium- to long-term vision based on a 171 idea of sustainable development, identifying the strategic themes on which to focus planning and towards which to converge the actions of both the public than the private one. |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  Action Plan | Local | The Smart City Plan | The Plan was approved in 2017 and is valid for three years. In 2018, an update of the Plan was carried out, a survey of online services was conducted and evaluated, and a number of Smart Living Labs were activated as required by the guidelines. In order to gather and structure the trends already underway in the area into a more general and integrated proposal, the Administration has begun drafting an organic development plan called 'Prato Smart City', based on two cornerstones: - Survey on the state of development of the Smart City in Prato: carried out by PIN s.c.r.l. - Polo Universitario Città di Prato, in cooperation with Confservizi CISPEL Toscana, concerning the projects launched or recently concluded by the municipal administration and the investee companies. - Guidelines for the organic development of the Smart City in Prato: drawn up to define the actions necessary to give rise to the organic |  |   |
-0
-
 |   |  |  | development of a new Smart City plan in Prato. |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  **Action Plan** | Local | Structural Plan | The Prato Structural Plan represents a key territorial planning tool, drawn up in compliance with the regional law on territorial government (L.R. 65/2014), flanked by the Operational Plan in replacement of the previous Plan. 2013 Structural Plan and Urban Regulations. This document, characterised by indefinite duration, plays a crucial role in guiding the sustainable development of the Prato territory. The newly adopted Structural Plan defines an overall framework for the sustainable development of the city in which urban planning, environmental planning and health prevention strategies are harmonised with a view to climate neutrality. urban planning, environmental planning and health prevention strategies are harmonised with a view to climate neutrality. In this framework, the Structural Plan and the PAESC become strategic documents of a single organic vision that projects the city towards its environmental transition, with a view to social inclusion and adaptation to the climate emergency. |  |   |
 |  **Action Plan** | Local | Next Generation Prato | The 'Next Generation Prato' strategic-operational document represents a significant step in the Municipality's journey, |  |   |
-1
-
-Climate-Neutrality
-
-Commitments
-
 |   |  |  | resulting from a collaborative and participatory approach with key actors in the economic fabric. This plan was developed to capitalise on the opportunities offered by the National Recovery and Resilience Plan (NRRP), a crucial initiative to promote a green and digital transition in Italy, favouring equity and inclusiveness. The NRRP, structured in 6 missions ranging from digitisation to green transition, provides the framework on which the 'Next Generation Prato' strategy document is based. The latter is designed to respond to the challenges and opportunities presented by the NRRP, helping to prepare the territory and production system of Prato to face future challenges. The document represents the result of an in-depth reflection process, involving key stakeholders in defining the city's future strategy. It outlines guidelines for the ecological transition and the adoption of new models economic, with the aim of generating positive impacts on the territory. At the same time, it serves as a starting point to guide the city's future activities. Co-design was conducted in cooperation with local stakeholders, such as trade associations, trade unions, public and private entities, in the context of the Prato Circular City governance table. The technical work was coordinated by the Prato Municipality's Europe  |
 | --- | --- | --- | --- |
-2
-
 |   |  |  | office, with the scientific supervision of ARCO of the Prato PIN.
 Starting from the policies already active in the area, initiatives and commitments have been systematised to promote local sustainable development, focusing on the needs and potential of the textile district. The result is the definition of 24 project files, constituting a portfolio that complements existing paths and suggests new directions for innovation, cohesion and regeneration of the city.
 For Prato, this represents a crucial moment to face and overcome the economic and social challenges caused by the Covid-19 pandemic. Thanks to the NRRP resources, the city becomes a context in which innovative projects contribute significantly to the narrative of its evolution and the surrounding area. |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  Action Plan | Local | Three-year Public Works Programme | The Public Works Programme represents a strategic synthesis of the administration's objectives and needs, based on in-depth feasibility studies and analyses of the entity's needs. Its elaboration implies the identification and description of the works to be realised in the medium term, outlining specific characteristics for each of them. The Three-Year Programme of Public Works constitutes the reference framework for the planning and execution of major infrastructure projects, with a |  |   |
-3
-
 |   |  |  | special focus on works of an amount equal to or exceeding 150,000 euro, threshold defined with the entry into force of the Legislative Decree 36/2023. In accordance with Article 37 of Legislative Decree 36/2023, the approval of the Three-Year Programme takes place in compliance with _ of planning documents, consistent with the budget and according to the rules of the economic economic and financial programming, as well as the accounting principles. The annual list, which is an integral part of the programme, details the works to be started during the first year, specifying for each work the source of financing, indicated in the estimate, in the budget or otherwise available. It is important to emphasise that the non-inclusion of a work in the annual list does not preclude its implementation. In fact, unforeseeable situations, calamitous events or new legal or regulatory provisions may make it necessary to implement works not originally planned. The flexibility of the Public Works Programme thus makes it possible to respond in a timely and adequate manner to circumstances that require immediate and not previously planned interventions.  |
 | --- | --- | --- | --- |
 4
@@ -2362,7 +2340,7 @@ O
 Enhanced livability in the home environment
 Increased technological readiness & rate of adoption  |
 |   |  1.1 bis | **Finance and Funding:** The aim is to support those who carry out energy requalification interventions through the economic and tax incentive mechanisms of the Conto Termico and Ecobonus provided by the State. The total estimated financing at national level is about 460,000,000 € by 2030. The Municipality of Prato will encourage this action with measures such as the energy desk, information and awareness campaigns, building regulations, energy planning and bureaucratic simplification.
-The management costs of the information retrieval measure borne by the Municipality are those related to internal staff and the cost of modifying the data collection platform. The total cost of the action €777.850.000. |  |  |  |   |
+| The management costs of the information retrieval measure borne by the Municipality are those related to internal staff and the cost of modifying the data collection platform. The total cost of the action €777.850.000. |  |  |  |   |
 |   |  1.1 ter | **Learning & Capabilities:** The Municipality of Prato will encourage this action with measures such as the energy desk, information and |  |  |  |   |
 CERMANI DI PRATO
 
@@ -2421,7 +2399,7 @@ Commitments
 O
 
 |   | 1.5 | Technology/Infrastructure: Replacement of fluorescent lamps with LED lamps for 10% of the approximately 78,000 private households. An average of eight light bulbs per home was considered. | 10.000 fluorescent bulbs replaced | 27.000 fluorescent bulbs replaced | 450,72 | - Reduced energy demand, needs, or consumption
-Increased technological readiness & rate of adoption  |
+| Increased technological readiness & rate of adoption  |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  1.5bis | Finance and Funding: The total cost of the intervention is €374.386  |   |   |   |   |
 |   |  1.5 ter | Learning & Capabilities: The Municipality of Prato will encourage this action with measures such as the energy desk and information and awareness-raising campaigns.  |   |   |   |   |
@@ -2443,10 +2421,10 @@ Commitments
 O
 
 |   |  | implementation of the ordinance.
-In addition, the cost of this action is linked to the cost of internal staff within the administration who will be involved in the drafting of the regulation and verification. |  |  |  |   |
+| In addition, the cost of this action is linked to the cost of internal staff within the administration who will be involved in the drafting of the regulation and verification. |  |  |  |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  1.6 ter | Learning & Capabilities:
-Finally, special attention will be given to the issue of controls and sanctions, a necessary condition to ensure the operability of the instrument  |   |   |   |   |
+| Finally, special attention will be given to the issue of controls and sanctions, a necessary condition to ensure the operability of the instrument  |   |   |   |   |
 |   |  1.7 | Technology/Infrastructure
 It is planned to install photovoltaic panels on the useful surfaces of residential roofs with a total capacity of about 58 MWp and an expected output of 68.776 MWh.
 
@@ -2480,7 +2458,7 @@ Climate-Neutrality Commitments
 1
 
 |   |  | • raising awareness among stakeholders for change
-In order to achieve the above objectives, it will be important to promote the development of Energy Communities in the municipal territory. It should be noted that the Municipality has already committed itself, with Municipal Council Resolution No. 306 of 03/10/2023, to support and promote initiatives that may lead to the development of Renewable Energy Communities with a view to a concrete and effective sustainable development at local level in implementation of Legislative Decree 199/2021 and Tuscan Regional Law 42/2022. |  |  |  |   |
+| In order to achieve the above objectives, it will be important to promote the development of Energy Communities in the municipal territory. It should be noted that the Municipality has already committed itself, with Municipal Council Resolution No. 306 of 03/10/2023, to support and promote initiatives that may lead to the development of Renewable Energy Communities with a view to a concrete and effective sustainable development at local level in implementation of Legislative Decree 199/2021 and Tuscan Regional Law 42/2022. |  |  |  |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  1.8 | Energy Procurements:
 Certified green electricity with Guarantees of Origin (GO) is expected to cover 80% of the sector's energy needs by 2030 (estimated as described in Action 1.7).
@@ -2501,7 +2479,7 @@ Commitments
 O
 
 |   |  | eventual achievement of the 2030 target.
-The total cost for the purchase of green electricity is €180 million. |  |  |  |   |
+| The total cost for the purchase of green electricity is €180 million. |  |  |  |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  1.8 ter | Learning & Capabilities:
 The Municipality will provide for an obligation to purchase certified green electricity for all entities that access incentive programmes for energy efficiency measures or the construction of energy production plants from renewable sources.
@@ -2556,8 +2534,7 @@ Commitments
 O
 
 |   |  | Several two-year calls for tenders are expected to be issued for the financing of energy efficiency measures aimed at reducing electrical and thermal consumption, in addition to the ministerial call already prepared for the Prato textile district (DM 5/8/22). Total funding to 2030 is expected to be around 8 million Euro
-
-In addition to the costs for financing the interventions, there will be additional costs for drafting and managing the call for funding. |  |  |  |   |
+| In addition to the costs for financing the interventions, there will be additional costs for drafting and managing the call for funding. |  |  |  |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  2.3 ter | **Learning & Capabilities:**
 The Municipality of Prato will also promote the implementation of this action with measures such as energy desks and information and awareness campaigns.
@@ -2627,7 +2604,7 @@ New Energy Service (annual fee) € 1.740 million
 The value of the total investment is € 3.490 million |  |  |  |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  3.1. ter | Learning & Capabilities:
-The Municipality, for the duration of the contract, pays the ESCo a share of the energy savings generated by the efficiency measures. In this way the ESCo recovers the initial investment.  |   |   |   |   |
+| The Municipality, for the duration of the contract, pays the ESCo a share of the energy savings generated by the efficiency measures. In this way the ESCo recovers the initial investment.  |   |   |   |   |
 |   |  3.2 | Technology/Infrastructure:
 Replacement of old thermal energy production systems with more efficient systems in sports facilities.
 In this case, interventions have been planned to improve thermal consumption efficiency by replacing obsolete thermal energy production plants with more efficient systems.
@@ -2635,7 +2612,7 @@ In particular, the targets set for 2030 include the replacement of systems used 
 The gradual replacement of systems is assumed in order to favor more efficient systems, functional for different uses, aiming at electrification (e.g. replacement of boilers with heat pumps). | about -35% on the assumed annual consumption of heat and electricity | approximately -70% on the assumed annual consumption of heat and electricity | 225,00 | - Increased energy efficiency or rate of retrofit (including district heating)
 Reduced energy demand, needs, or consumption  |
 |   |  3.2bis | Finance and Funding
-The total cost of the intervention is € 2 million |  |  |  |   |
+| The total cost of the intervention is € 2 million |  |  |  |   |
 |   |  3.2 ter | Learning & Capabilities:
 The Municipality will undertake to look for contributions at both regional/national and European level or It may choose to finance interventions directly. |  |  |  |   |
 
@@ -2718,9 +2695,9 @@ At the same time, in the context of the 110% Superbonus programme, energy effici
 The savings of this action were accounted for within the residential buildings. |  |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- |
 | 3.6.2-bis | **Finance and Funding:**
-The total cost of the intervention is € 4.5 million |
+| The total cost of the intervention is € 4.5 million |
 | 3.6.2 ter | **Learning & Capabilities:**
-The Municipality will undertake to look for contributions at both regional/national and European level or It may choose to finance interventions directly. |  |  |  |
+| The Municipality will undertake to look for contributions at both regional/national and European level or It may choose to finance interventions directly. |  |  |  |
 | 3.7 | **Technology/Infrastructure:**
 It is planned to install photovoltaic panels with a total capacity of about 3 MWp, of which about 1,990 kWp at a depleted landfill site.
 The reduction of emissions is limited to the share necessary to meet the needs of the municipal sector. | 0.5 MWp installed | 1 MWp installed | 1.386,00 | - Increased access to clean, stable, affordable energy
@@ -2755,9 +2732,9 @@ O
 |   | 3.8 ter | Learning & Capabilities: The Municipality will enter into negotiations with the ESCo to supplement the contract and immediately provide for the purchase of certified green electricity for all public lighting utilities. |  |  |  |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |  4.Tertiary (non-municipal) buildings, equipment/facilities | 4.1 | Technology/Infrastrutture: It is planned to replace boilers with heat pumps, with the aim of involving energy-intensive activities responsible for about 50% of the thermal consumption for heating in the tertiary sector. For the calculation, 80% of the thermal consumption for heating was considered, with an expected saving of 18.828 MWh. | Replacement of boilers in activities responsible for a total of at least 2,500 MWh of heat | Replacement of boilers of activities responsible for a total of at least 7,200 thermal MWh | 3.803,48 | - Increased energy efficiency or rate of retrofit (including district heating)
-Reduced energy demand, needs, or consumption  |
+| Reduced energy demand, needs, or consumption  |
 |   | 4.1bis | Finance and Funding: The aim is to support those who replace boilers with heat pumps with the economic and tax incentive mechanisms of the Conto Termico and Ecobonus provided by the state. The total cost of the intervention is € 225 million
-The management costs of the information retrieval measure borne by the Municipality are those related to internal staff and the cost of modifying the data collection platform. |  |  |  |   |
+| The management costs of the information retrieval measure borne by the Municipality are those related to internal staff and the cost of modifying the data collection platform. |  |  |  |   |
 |   | 4.1 ter | Learning & Capabilities: The Municipality of Prato will encourage this action with indirect measures such as the energy desk, energy annex, energy planning and bureaucratic simplification. |  |  |  |   |
 
 6
@@ -2826,7 +2803,7 @@ Climate-Neutrality Commitments
 O
 
 |   | 5.2 | Technology/Infrastrutture: It is planned to modernize agricultural machinery and the vehicle fleet with conversion of obsolete vehicles to more efficient ones (excluding tractors considered in action 5.1), of farms responsible for a total thermal consumption of at least 3,000 MWh thermal | farms responsible for a total heat consumption of at least 500 MWh thermal | farms responsible for a total heat consumption of at least 1,250 MWh thermal | 759,9 | - Improved access to information, awareness & behavior change
-Enhanced citizen & communities participation & social capacities for participation/ engagement  |
+| Enhanced citizen & communities participation & social capacities for participation/ engagement  |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  5.2bis | Finance and Funding: Incentives for the purchase of more efficient agricultural machinery (e.g. National Institute for Insurance against Accidents at Work national call for tender for agriculture: 50% non-repayable fund for the purchase of agricultural tractors with a ceiling of 42 million allocated in 2023). The total cost of the action is €2.3 million  |   |   |   |   |
 |   |  5.2 ter | Learning & Capabilities: The action will be promoted through indirect measures by the Municipality, both through activities carried out by the energy desk in favor of local agricultural entrepreneurs, and through the dissemination of information on existing calls for tenders in the agricultural sphere, including on Agriculture 5.0, and with specific support activities for joining them.  |   |   |   |   |
@@ -2915,7 +2892,7 @@ Investment costs amounted to € 245 million
 Operating costs amounted to € 45 million € per year. |  |  |   |
 | --- | --- | --- | --- | --- | --- |
 |   |  6.1 ter | Learning & Capabilities:
-The Municipality of Prato undertakes to carry out awareness campaigns to encourage an increase in the use of public transport.  |   |   |   |
+| The Municipality of Prato undertakes to carry out awareness campaigns to encourage an increase in the use of public transport.  |   |   |   |
 |   |  6.2 | Technology/Infrastructure
 The objective of the action is therefore to strengthen the main road network in order to limit the improper use of the local road network by reducing, within the latter, the so-called 'through traffic', i.e. that component that has crossed the dense city to reach a destination outside it. In quantitative terms, the purpose is to reduce local traffic using private vehicles with internal combustion engines (car/motorbike/van), with the goal of reducing its use from the current 82% to 26% by 2030.
 By improving the practicability of the main road system, access to the interchange car parks for the car-Local Public Transport modal exchange is also favored.
@@ -2945,7 +2922,7 @@ Commitments
 • completion of second ring road: €15.000.000 |  |  |  |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  6.2 ter | Learning & Capabilities:
-The Municipality of Prato undertakes to draw up a feasibility study and obtain the necessary resources to upgrade the road infrastructure by initiating talks with the region and ministries.  |   |   |   |   |
+| The Municipality of Prato undertakes to draw up a feasibility study and obtain the necessary resources to upgrade the road infrastructure by initiating talks with the region and ministries.  |   |   |   |   |
 |   |  6.3 | Technology/Infrastructure
 In order to reduce the use of private cars with internal combustion engines, the Municipality plans to act on school transport, with the following measures:
 • Strengthen the pedibus service, to increase from 500 to 5.0000 trips per day;
@@ -2967,13 +2944,13 @@ The investment costs of urban school transport €4 million
 The operating costs of urban school transport amount to € 1.25 million |  |  |  |
 | --- | --- | --- | --- | --- | --- |
 | 6.3 ter | Learning & Capabilities:
-The Municipality will adapt the signage to make the service safer and will provide suitable staff to manage it. |
+| The Municipality will adapt the signage to make the service safer and will provide suitable staff to manage it. |
 | 6.4 | Technology/Infrastructure
-Aiming to reduce the use of private cars with internal combustion engines, the Municipality plans to introduce carpooling, car and bike sharing and electric scooters with the goal of reaching 5.000 trips per day by 2030. | 1.400 daily trips through carpooling and car sharing services | 2.800 daily trips via carpooling and car sharing services | 937,50 |
+| Aiming to reduce the use of private cars with internal combustion engines, the Municipality plans to introduce carpooling, car and bike sharing and electric scooters with the goal of reaching 5.000 trips per day by 2030. | 1.400 daily trips through carpooling and car sharing services | 2.800 daily trips via carpooling and car sharing services | 937,50 |
 | 6.4 bis | Finance and Funding:
-The Municipality will allocate funds, approximately € 2.000.000, for the implementation of intervention 6.4. |
+| The Municipality will allocate funds, approximately € 2.000.000, for the implementation of intervention 6.4. |
 | 6.4 ter | Learning & Capabilities:
-The Municipality will enter into agreements with car sharing and bike sharing companies to implement the service in the area and may encourage the use of carpooling apps. In addition, the Municipality will provide benefits for companies that adopt carpooling, such as free permits to circulate in the Limit Traffic Zone. |
+| The Municipality will enter into agreements with car sharing and bike sharing companies to implement the service in the area and may encourage the use of carpooling apps. In addition, the Municipality will provide benefits for companies that adopt carpooling, such as free permits to circulate in the Limit Traffic Zone. |
 | 6.5 | Technology/Infrastructure
 As a further action aimed at reducing the use of private cars with internal combustion engines, the Municipality plans to upgrade the Florence-Prato line | - 2.800 Daily travel by rail on the Florence-Prato line
 5.600 Daily travel by rail on the Florence-Prato line
@@ -2988,7 +2965,7 @@ Climate-Neutrality Commitments
 The cost for the Florence-Prato rail transport investment is estimated at €12 million and the cost for operating the service at €5 million per year.
 In terms of investment costs for rail transport Valbisenzio €16 million. |
 | 6.5 ter | Learning & Capabilities:
-The Municipality, in agreement with the Region and the Municipality of Florence and Ferrovie dello Stato, will undertake to find the necessary resources, also by activating national and European contributions, to upgrade the necessary infrastructure. |
+| The Municipality, in agreement with the Region and the Municipality of Florence and Ferrovie dello Stato, will undertake to find the necessary resources, also by activating national and European contributions, to upgrade the necessary infrastructure. |
 | 6.6 | Technology/Infrastructure
 A series of actions focused on out-of-town transport are planned. In particular, one of the planned actions aims at reducing the number of daily trips by private internal combustion vehicles through the expansion of extra-urban public road transport services, with the goal of achieving a 20% increase in use by 2030 (compared to current values).
 The other action, on the other hand, focuses on out-of-town school transport and also targets an expansion of the current service with a target of a 20% increase in use by 2030. | 885.000 Daily extra-urban travel | 169.000 Daily extra-urban travel | 23.375,00 |
@@ -3055,7 +3032,7 @@ Commitments
 O
 
 |   | 6.10 | Technology/Infrastructure
-In the context of the electrification strategy for internal combustion vehicles remaining until 2030, a specific action on the municipal car fleet has also been planned. The action envisages a gradual replacement of internal combustion vehicles, in order to achieve total conversion of the entire fleet to electric by 2030. | 15% replacement of municipal fleet | 40% replacement of municipal fleet | 118,00 | - Increased uptake of low-carbon technology vehicles for private, freight, public transport (EVs, e-bikes, hydrogen-fuelled etc.)  |
+| In the context of the electrification strategy for internal combustion vehicles remaining until 2030, a specific action on the municipal car fleet has also been planned. The action envisages a gradual replacement of internal combustion vehicles, in order to achieve total conversion of the entire fleet to electric by 2030. | 15% replacement of municipal fleet | 40% replacement of municipal fleet | 118,00 | - Increased uptake of low-carbon technology vehicles for private, freight, public transport (EVs, e-bikes, hydrogen-fuelled etc.)  |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |  6.10 bis | Finance and Funding:
 The costs of the intervention will be borne either by internal municipal resources or by taking advantage of supra-municipal incentives.
@@ -3106,7 +3083,7 @@ The analysis showed an actual potential for the installation of photovoltaic sys
 Reduced energy poverty
 Enhanced citizen & communities, participation & social capacities for participation/engagement  |
 |   |  6.13 bis | Finance and Funding:
-The total cost of the intervention is € 15 million |  |  |   |   |
+| The total cost of the intervention is € 15 million |  |  |   |   |
 |   |  6.14 | Energy Procurements:
 By 2030, it is planned to purchase certified green electricity with Guarantees of Origin (GO) to cover 80% of the mobility sector's energy needs by 2030 (estimated as described in Action 6.15), totalling 55,260 MWh.
 The Municipality is assessing the feasibility of purchasing | 55,000 MWh of green energy purchased | 19.000 MWh of green energy purchased | 21.275,10  |   |
@@ -3417,31 +3394,21 @@ O
 |   |  | Municipality also plans a targeted action in the other industrial areas in the Prato territory, aimed at the installation of photovoltaic modules for production from RES.  |
 | --- | --- | --- |
 |   |  2.3 Energy efficiency of textile district companies | It is planned to improve the energy consumption of companies in the Prato textile district through energy efficiency measures.
-In the possible interventions, self-producing energy plants were excluded (since they are accounted for in a specific action).  |
+| In the possible interventions, self-producing energy plants were excluded (since they are accounted for in a specific action).  |
 |   |  2.4 Textile District's adhesion to specific programmes in line with Net Zero initiatives to reduce thermal consumption | The Science-Based Target Initiatives (SBTI) initiative, a collaboration between CDP, the UN Global Compact, the World Resources Institute (WRI) and the World Wide Fund for Nature (WWF), involves energy-intensive companies with a current electricity consumption of at least 138.000 MWh electrical and a thermal consumption of 322.000 MWh thermal.
-The company path defined by the SBTI Standard Companies that have already implemented energy efficiency actions through energy efficiency bonuses are excluded from the sample.  |
+| The company path defined by the SBTI Standard Companies that have already implemented energy efficiency actions through energy efficiency bonuses are excluded from the sample.  |
 |   |  2.5 Feasibility studies for the realization of the Positive Energy District | Feasibility studies are planned in order to assess the potential and necessary actions to realise "Positive Energy District" at consortium level  |
 |   |  2.6 Purchasing green electricity in the industrial sector | Certified green electricity with Guarantees of Origin (GO) is expected to cover 80% of the sector's energy needs by 2030  |
 |  Public Buildings | 3.1 New energy service | Entrusting the management and maintenance service of the thermal power plants of municipal buildings with technological improvements and building and plant energy upgrading  |
 |   |  3.2 More efficient systems in sports facilities | It is planned to replace old thermal energy production systems with more efficient systems in sports facilities  |
 |   |  3.3 Re-lamping of outdoor and outdoor sports field lighting systems | The action envisaged in the plan, in particular, involves the gradual re-lamping of the lighting systems of outdoor sports grounds with the introduction of dimming or dimming systems  |
 |   |  3.4 Efficiency enhancement / re-lamping of lighting systems in swimming pools and indoor rooms | Efficiency enhancement / re-lamping of lighting systems in swimming pools and indoor rooms  |
-
-2
-Climate-Neutrality Commitments
-
-#
-
 |   | 3.5.1 Energy requalification of ordinary lighting installations: Palazzo Benassai and Municipal Palace | The Action envisages the replacement of existing old lighting fixtures (fluorescent tubes) serving municipal buildings with high-efficiency LED luminaires.  |
 | --- | --- | --- |
 |   |  3.5.2 Energy requalification of ordinary lighting installations serving other public buildings | In the Prato area, several schools, office districts and municipal buildings are still equipped with fluorescent tubes, and a plan has been drawn up for the gradual replacement of the current lighting fixtures with LEDs.  |
 |   |  3.6.1 Redevelopment of Public Residential Housing for Housing Assistance (ERP) 1st Intervention Blocki | As part of the energy reduction plan, specific strategies were implemented to improve the efficiency of Public Residential Housing. Between 2014 and 2020, 498 pre-existing boilers were replaced with condensing models, showing a significant reduction in consumption in the following two years. In addition, targeted work was carried out on three buildings in Via del Girasole, with the replacement of single-glazed wooden window frames with new high-performance PVC frames. Similar improvements were made in three other buildings in Via del Malfante, involving a total of 20 ERP dwellings, with the replacement of wooden window frames with new energy-efficient white PVC frames  |
 |   |  3.6.2 Redevelopment of Public Residential Housing for Housing Assistance (ERP) 2nd Intervention Blocks | Future energy efficiency actions are planned at the Public Residential Housing buildings at Via del Girasole 26/1-2-3 and Via del Malfante 71 between 2022 and 2026, with similar interventions such as thermal insulation, roof insulation, thermoregulation systems and replacement of boilers. These interventions will lead to an advancement of three energy classes from F to C. In the period 2022-2026, interventions are planned on two buildings at Via Rubieri 49-55 and Via Zipoli 23/29, involving 48 Public Residential Housing dwellings, upgrading from energy class G to E. Other interventions have been started in the context of the 110% Superbonus, with works on Via Capitini 1-13 and Via Parini 16-18, involving 54 and 24 dwellings, upgrading from class G to E. A further intervention on Via Rondine 16, involving 6 dwellings, took the building from energy class G to E. The reductions in consumption and emissions are accounted for in the residential buildings sector  |
 |   |  3.7 Photovoltaic Panel Installation | It is planned to install photovoltaic panels with a total capacity of about 3 MWp, of which about 1.990 kWp at a depleted landfill site  |
-Climate-Neutrality Commitments
-
-#
-
 |   | 3.8 Purchases of green electricity to cover the electricity needs of municipal buildings and public lighting | A contractual change is envisaged with the addition of specific criteria for the purchase of electricity, with the aim of reaching the target of 100% green energy purchases with Guarantees of Origin (GO) covering 80% of the value of the EIB, net of the efficiency and photovoltaic interventions installed under SBTI  |
 | --- | --- | --- |
 |  Buildings, equipment/tertiary installations | 4.1 Replacing boilers with heat pumps in tertiary buildings | Replacement of boilers with heat pumps, with the aim of involving large enterprises and energy-intensive businesses, which are responsible for about 50 per cent of the heating consumption in the tertiary sector  |
@@ -3453,14 +3420,6 @@ Climate-Neutrality Commitments
 |   |  5.3 Agri-Voltaic Installation | The specific intervention involves the installation of 350W agri-voltaic modules for a total of about 190 MWp. This power would use about 7% of the agricultural area of the Prato territory.  |
 |   |  5.4 Purchases of green electricity to cover the electricity needs of the agricultural sector | A contractual change is planned with the addition of specific criteria for electricity purchases, in order to reach the target of 100% green energy purchases with Guarantees of Origin (GO) covering 80%.  |
 |  Transport | 6.1 Strengthening the local public transport system | One of the most important strategies envisaged to reduce the use of private vehicles within the Municipality of Prato is based on the strengthening of the local public transport (LPT) system, with the aim of increasing LPT use from the current 6% to 50% by 2030  |
-1
-
-Climate-Neutrality
-
-Commitments
-
-#
-
 |   | 6.2 Infrastructure enhancement to facilitate access to LPT | The objective of the action is therefore to strengthen the main road network in order to limit the improper use of the local road network by reducing, within the latter, the so-called 'through traffic', i.e. that component that has crossed the dense city to reach a destination outside it. In quantitative terms, the purpose is to reduce local traffic using private vehicles with internal combustion engines (car/motorbike/vans), with the goal of reducing its use from the current 82% to 26% by 2030.  |
 | --- | --- | --- |
 |   |  6.3 Strengthening the pedibus and enhancing urban school transport | It is planned to enhance: pedibus service, to increase from 500 to 5 thousand trips per day; School transport from 1.600 to 5.000 trips per day  |
@@ -3471,14 +3430,6 @@ Commitments
 |   |  6.8 Replacing combustion cars with electric cars. | The action envisages the replacement of 50% of local daily trips made by private cars assessed as residual after all the actions planned with reference to the strengthening of Local Public Transport and the improvement of urban roads  |
 |   |  6.9 Construction of electricity columns | Around 4.000 electric columns are planned for the territory of the Municipality of Prato  |
 |   |  6.10 Modernisation of the municipal fleet | Modernisation of the municipal fleet  |
-1
-
-Climate-Neutrality
-
-Commitments
-
-#
-
 |   | 6.11 Increasing soft mobility by expanding and improving the city's cycle network in accordance with the provisions of the municipal cycle plan and by incentivising the purchase of bicycles | Expansion and improvement of the city's cycle network according to the municipal cycle plan and purchase of bicycles  |
 | --- | --- | --- |
 |   |  6.12 Prato Hub | With regards to local public transport, the PUMS scenario proposes interventions of particular relevance to the transport offer aimed at integrating the urban and extra-urban dimensions of public mobility services and networks  |
@@ -3515,11 +3466,10 @@ raise awareness among stakeholders for change  |
 |  Reference to impact pathway | Field of action | Residential Buildings (Built Environment)  |
 |   | Systemic lever | Technology/Infrastructure  |
 |   | Outcome (according to module B-1.1) | 450 apartment blocks involved by 2025
-condominiums involved by 2027  |
+| condominiums involved by 2027  |
 |  Implementation | Responsible bodies/person for implementation | Energy Policy Office, Private Building Office  |
 |   | Action scale & addressed entities | The entities that will be most affected will be the apartment blocks selected as target groups for the action, the owners or occupants of the private buildings subject to the efficiency measures for the building envelope and heating/air conditioning systems.
-
-In addition to apartment blocks, institutions that collaborate or support the implementation of the initiative will be involved, as well as companies specializing in energy and construction, suppliers of efficient materials and technologies, and energy consultants.  |
+| In addition to apartment blocks, institutions that collaborate or support the implementation of the initiative will be involved, as well as companies specializing in energy and construction, suppliers of efficient materials and technologies, and energy consultants.  |
 |   | Involved stakeholders | Municipality of Prato
 Citizenship
 Companies specializing in building renovation
@@ -3561,14 +3511,6 @@ Commitments
 |   |  Systemic lever | Technology/Infrastructure  |
 |   |  Outcome (according to module B-1.1) | 5.000 boilers replaced by 2025 15.000 boilers replaced by 2027  |
 |  Implementation | Responsible bodies/person for implementation | Energy Policy Office, Private Building Office  |
-1
-
-Climate-Neutrality
-
-Commitments
-
-#
-
 |   | Action scale & addressed entities | Residential building owners are the main actors involved in this operation. They are joined by heat pump suppliers and installers, i.e. those physically replacing existing boilers with heat pumps. In Italy there is an incentive system that allows access to tax deductions for such interventions or alternatively to the Conto Termico.  |
 | --- | --- | --- |
 |   |  Involved stakeholders | Municipality of Prato Citizenship Companies specializing in building renovation Estra  |
@@ -3634,16 +3576,8 @@ These annual calls for tenders offer continuity in assisting households, promoti
 |  Reference to impact pathway | Field of action | Residential Buildings (Built Environment)  |
 |   | Systemic lever | Technology/Infrastructure  |
 |   | Outcome (according to module B-1.1) | 1.000 household appliances replaced by 2025
-appliances replaced by 2027  |
+| appliances replaced by 2027  |
 |  Implementation | Responsible bodies/person for implementation | Energy Policy Office, Private Building Office  |
-1
-
-Climate-Neutrality
-
-Commitments
-
-#
-
 |   | Action scale & addressed entities | Municipality of Prato
 Citizenship
 Companies specializing in the sale of household appliances  |
@@ -3679,36 +3613,20 @@ The Municipality of Prato will encourage this action with measures such as the e
 |  Reference to impact pathway | Field of action | Residential Buildings (Built Environment)  |
 |   |  Systemic lever | Technology/Infrastructure  |
 |   |  Outcome (according to module B-1.1) | 10.000 light bulbs replaced by 2025
-bulbs replaced by 2027  |
+| bulbs replaced by 2027  |
 |  Implementation | Responsible bodies/person for implementation | Energy Policy Office, Private Building Office  |
-1
-
-Climate-Neutrality
-
-Commitments
-
-#
-
 |   | Action scale & addressed entities | Municipality of Prato
 Citizenship
 Companies selling electrical equipment  |
 | --- | --- | --- |
 |   |  Involved stakeholders | The citizens of the Municipality of Prato are the main actors involved in this operation. They are joined by the suppliers of LED bulbs and the Municipality of Prato for the provision of incentives  |
 |   |  Comments on implementation | Replacement of fluorescent lamps with LED lamps for 10% of the approximately 78.000 private households. An average of eight light bulbs per home was considered.
-number of total households. Savings of 50% due to replacement of light bulbs taken into account. Replacement carried out on 10% of households.  |
+| number of total households. Savings of 50% due to replacement of light bulbs taken into account. Replacement carried out on 10% of households.  |
 |  Impact & cost | Generated renewable energy (if applicable) |   |
 |   |  Removed/substituted energy, volume or fuel type | 1,170 MWh of electricity saved  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 451 tCO2  |
 |   |  Total costs and costs by CO2e unit | € 374.386
-€/tCO2  |
-1
-
-Climate-Neutrality
-
-Commitments
-
-#
-
+| €/tCO2  |
 |  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
 |  (fill out one sheet per intervention/project)  |   |   |
@@ -3724,7 +3642,7 @@ Commitments
 |   |  Comments on implementation | During the period of the energy crisis, intervention was implemented by the Italian state  |
 |  Impact & cost | Generated renewable energy (if applicable) |   |
 |   |  Removed/substituted energy, volume or fuel type | 47.592 thermal MWh saved by 2030
-MWh of electricity saved by 2030  |
+| MWh of electricity saved by 2030  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 10.445 tCO2  |
 |   |  Total costs and costs by CO2e unit | 50.000 €
 €/tCO2  |
@@ -3754,7 +3672,7 @@ raise awareness among stakeholders for change  |
 |  Reference to impact pathway | Field of action | Residential Buildings  |
 |   |  Systemic lever | Technology  |
 |   |  Outcome (according to module B-1.1) | 10 MWp installed by 2025
-MWp installed by 2027  |
+| MWp installed by 2027  |
 |  Implementation | Responsible bodies/person for implementation | Energy Policy Office  |
 |   |  Action scale & addressed entities | Municipality of Prato
 Citizenship
@@ -3797,7 +3715,7 @@ Finally, the Municipality will undertake to launch an awareness campaign and thr
 |  Reference to impact pathway | Field of action | Residential Buildings  |
 |   |  Systemic lever | Technology  |
 |   |  Outcome (according to module B-1.1) | 50.000 MWh by 2025
-MWh to 2027  |
+| MWh to 2027  |
 |  Implementation | Responsible bodies/person for implementation | Energy Policy Office  |
 |   |  Action scale & addressed entities | Municipality of Prato Citizenship  |
 |   |  Involved stakeholders | Citizens  |
@@ -3856,10 +3774,6 @@ Climate-Neutrality Commitments
 
 |   |  | The environmental rebalancing of open spaces and urban areas, through: • Urban reforestation interventions; • Modification of road sections for the insertion of bioswales, technological-environmental systems capable of regulating and managing the stormwater cycle; • Transformation of road surfaces through the adoption of strategies and design solutions aimed at reducing the road cross-section by favoring the introduction of alternative mobility systems (public mobility and bicycle and pedestrian mobility). In view of the volume bonus, the University of Rome 'La Sapienza' carried out a study on Macrolotto 1 proposing a scenario of redevelopment and extension of industrial buildings with minimal transformation and 26% enlargement. In particular, a minimal intervention is proposed, non-invasive with respect to the existing building, with a 26% enlargement of the gross usable surface area with respect to the existing one. The intervention modalities refer to sheds with prefabricated or reinforced concrete frame structure (added together they make up 94.5% of the total) and aim at not interfering with the continuation of the activities present on site, not going to affect the inside of the buildings except punctually. The main variables taken into account when defining the interventions are the type of roofing and the length of one of the sides, less than 30 m. Two main types of interventions are proposed: • façade extensions, raised above ground level, to ensure access to the structure by vehicles and goods and not to increase land occupation, leading in some cases to the need for small portions of demolition; • bridge elevations for buildings with a side of less than 30 m, with a structure independent of the main hall and elevated approximately 2 m above the existing roof or for those greater than 30 m with the need to drill holes in the roof to insert structural pillars. The demolitions are partial, referring to the connecting sheds or to part of the office areas. In addition, existing photovoltaics are retained, when present. However, photovoltaic canopies are only to be installed on extensions, flat roofs or on the sloping part of sheds. It is proposed to install green roofs on roofs that do not accommodate photovoltaics or sheds. Starting from the energy consumption outlined above, the introduction of a photovoltaic energy grid was planned on canopies strategically positioned above the new building  |
 | --- | --- | --- |
-Climate-Neutrality Commitments
-
-#
-
 |   | elevations, strategically positioned above the industrial buildings and largely above the new extension volumes built on top, using 500 Wp panels for a total surface area of 400,062 square meters, 37.4% of the total roof surface area. The total installed power is 119,779 kWp. Only the benefits in terms of emission reduction linked to the installation of new photovoltaic systems have been accounted for in this sheet, while, due to the absence of specific data, the potential benefits linked to the reduction of the building's energy demand (mainly linked to an improvement in the thermal insulation of the existing parts considering that the extensions will have to be zero emission net of the photovoltaic installation) have been neglected. The effects of heat island reduction fall under the specific adaptation section. Potential absorptions related to urban reforestation interventions, on the other hand, have been considered separately in the offsetting section. The effects of heat island reduction fall under the specific adaptation section. Potential absorptions related to urban reforestation interventions, on the other hand, have been considered separately in the offsetting section. In addition to the redevelopment in Macrolotto 1, similar projects are also planned for the district companies in Macrolotto 2 and the Artisan Areas from 2025. From the analysis conducted on the 2nd Macrolotto in Prato, it represents a vast industrial development area that was created in the 1980s thanks to private initiative. It extends over about 150 hectares in the southern district of the Municipality of Prato and hosts more than 400 micro and small enterprises, providing employment for about 3.000 employees. The figure below shows the boundaries of the production buildings within Macrolotto 2. The figure below shows the boundaries of the production buildings within Macrolotto 2.  |
 | --- | --- |
 CENTRO DI PRATO
@@ -3912,7 +3826,7 @@ O
 |   |   |  Reference to impact pathway | Field of action | Industrial sector  |   |   |
 |   |   |   |  Systemic lever | Technology/Infrastructure  |   |   |
 |   |   |   |  Outcome (according to module B-1.1) | 34 MWp installed by 2025
-MWp installed by 2027  |   |   |
+| MWp installed by 2027  |   |   |
 |  Implementation | Responsible bodies/person for implementation | Economic Development Office  |   |   |   |   |
 |   |  Action scale & addressed entities | Municipality of Prato
 Ministry of Economic Development (now Ministry of Enterprise and Made in Italy) and the Ministry of Economy and Finance  |   |   |   |   |
@@ -4000,7 +3914,7 @@ The Municipality of Prato will also promote the implementation of this action wi
 |  Reference to impact pathway | Field of action | Industrial sector  |
 |   | Systemic lever | Technology/Infrastructure  |
 |   | Outcome (according to module B-1.1) | 85 projects funded to 2025
-projects financed to 2027  |
+| projects financed to 2027  |
 |  Implementation | Responsible bodies/person for implementation | Economic Development Office  |
 |   | Action scale & addressed entities | Companies in the Prato Textile District Municipality of Prato
 Pistoia-Prato Chamber of Commerce
@@ -4008,7 +3922,7 @@ Chinese Community  |
 |   | Involved stakeholders | The companies of the Prato Textile District are the main actors involved in this operation. They are joined by the Ministries and the Municipality of Prato for the definition and management of the incentive tenders.  |
 |   | Comments on implementation | It should be noted that, with the previous call for tenders implemented by the Municipality, 38 companies have been financed to date.  |
 |  Impact & cost | Generated renewable energy (if applicable) | 48,748 MWh electricity
-,970 thermal MWh  |
+| ,970 thermal MWh  |
 |   | Removed/substituted energy, volume or fuel type | /  |
 |   | GHG emissions reduction estimate (total) per emission source sector | 63.002 tCO2  |
 |   | Total costs and costs by CO2e unit | € 105 million
@@ -4055,15 +3969,14 @@ The Municipality of Prato will also promote the implementation of this action wi
 |  Reference to impact pathway | Field of action | Industrial sector  |
 |   |  Systemic lever | Technology/Infrastructure  |
 |   |  Outcome (according to module B-1.1) | Involvement of companies with a total consumption of at least 50.000 MWh thermal and 25.000 MWh electrical
-
-Involvement of companies with a total consumption of at least 135.000 MWh thermal and 60.000 MWh electrical  |
+| Involvement of companies with a total consumption of at least 135.000 MWh thermal and 60.000 MWh electrical  |
 |  Implementation | Responsible bodies/person for implementation | Economic Development Office  |
 |   |  Action scale & addressed entities | Companies in the Prato Textile District Municipality of Prato  |
 |   |  Involved stakeholders | The companies of the Prato Textile District are the main actors involved in this operation. They are joined by the Municipality of Prato, for the definition and management of incentive calls and awareness-raising activities, and energy consultants who will support the companies in calculating their emissions.  |
 |   |  Comments on implementation | For the calculation of costs, the tCO2/€ ratio was used  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | 12,041 MWh electricity
-,322 thermal MWh  |
+| ,322 thermal MWh  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 38.233 tCO2  |
 
 4
@@ -4071,7 +3984,7 @@ commune di PRATO
 Climate-Neutrality Commitments
 
 |   | Total costs and costs by CO2e unit | € 64 million
-€/tCO2  |
+| €/tCO2  |
 | --- | --- | --- |
 
 5
@@ -4097,7 +4010,7 @@ Entities eligible for funding will be consortia or clusters of companies in a sp
 |  Reference to impact pathway | Field of action | Industrial sector  |
 |   |  Systemic lever | Governance and Policy  |
 |   |  Outcome (according to module B-1.1) | Started in 2025
-Realised to 2027  |
+| Realised to 2027  |
 |  Implementation | Responsible bodies/person for implementation | Economic Development Office  |
 |   |  Action scale & addressed entities | Companies in the Prato Textile District Municipality of Prato  |
 |   |  Involved stakeholders | The companies of the Prato Textile District are the main actors involved in this operation. They are joined by the Municipality of Prato, for the definition and management of incentive calls and awareness-raising activities, and energy consultants who will support the companies in calculating their emission.s  |
@@ -4127,8 +4040,6 @@ Commitments
 |  2.6 Action outline | Action name | Purchasing green electricity in the industrial sector  |
 |   |  Action type | Technical interventions  |
 |   |  Action description | In addition to the electricity produced in the interventions described in Sheets 2.1 and 2.2, as a further strategy with a view to neutralizing residual emissions linked to the consumption of electricity in the industrial sector, specific action is planned on the type of supply contracts. Specifically, the action envisages the purchase of certified green electricity with Guarantees of Origin (GO) to cover 80% of the industrial sector's energy needs by 2030, totalling about 160,000 MWh. From this point of view, the Municipality of Prato will commit itself to: - introduce an obligation to purchase certified green electricity for all entities that will access incentive programmes for energy efficiency measures or the construction of renewable energy production plants; - initiate discussions with specialized operators to assess the feasibility of purchasing Guarantees of Origin to cover electricity used by third parties in order to guarantee the eventual achievement of the 2030 target; - stimulate this action with information and awareness-raising measures such as energy desks and communication campaigns.  |
-9
-
 |  Reference to impact pathway | Field of action | Industry/Industrial sector  |
 | --- | --- | --- |
 |   |  Systemic lever | Industrial sector  |
@@ -4161,7 +4072,7 @@ MUNICIPAL BUILDINGS, EQUIPMENT/MUNICIPAL FACILITIES &amp; PUBLIC LIGHTING
 |  Reference to impact pathway | Field of action | Public Buildings and Public Lighting  |
 |   |  Systemic lever | Technology  |
 |   |  Outcome (according to module B-1.1) | 1,500 thermal MWh of methane gas saved by 2025
-,000 thermal MWh of methane gas saved by 2027  |
+| ,000 thermal MWh of methane gas saved by 2027  |
 |  Implementation | Responsible bodies/person for implementation | Energy Policy Office  |
 |   |  Action scale & addressed entities | Among the actors involved in the intervention are the Municipality, the contracting company and the users of the buildings affected by the upgrading work.  |
 |   |  Involved stakeholders | Contracting Company (ESCo).
@@ -4219,7 +4130,7 @@ O
 |  Reference to impact pathway | Field of action | Public Buildings and Public Lighting  |
 |   |  Systemic lever | Technology  |
 |   |  Outcome (according to module B-1.1) | - about -35% on the assumed annual consumption of heat and electricity by 2025
-approximately -70% on the assumed annual consumption of heat and electricity by 2027  |
+| approximately -70% on the assumed annual consumption of heat and electricity by 2027  |
 |  Implementation | Responsible bodies/person for implementation | Sports Building Office  |
 |   |  Action scale & addressed entities | The actors involved in the intervention include sports clubs and private citizens who use the facilities' services.  |
 |   |  Involved stakeholders | Municipality of Prato
@@ -4300,10 +4211,6 @@ Climate-Neutrality Commitments
 |   |  Removed/substituted energy, volume or fuel type | 6.000 MWh electricity  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 2.310 tCO2  |
 |   |  Total costs and costs by CO2e unit | € 500.000 216 €/tCO2  |
-Climate-Neutrality Commitments
-
-#
-
 |  B-2.2: Individual action outlines (fill out one sheet per intervention/project)  |   |   |
 | --- | --- | --- |
 |  3.5.1 Action outline | Action name | Energy requalification of ordinary lighting systems serving public buildings: PALAZZO BENASSAI and PALAZZO COMUNAL  |
@@ -4425,7 +4332,7 @@ Climate-Neutrality Commitments
 |  Reference to impact pathway | Field of action | Public Buildings and Public Lighting  |
 |   |  Systemic lever | Technology  |
 |   |  Outcome (according to module B-1.1) | Started in 2025
-Realised to 2027  |
+| Realised to 2027  |
 |  Implementation | Responsible bodies/person for implementation | Building Office  |
 |   |  Action scale & addressed entities | /  |
 |   |  Involved stakeholders | Municipality of Prato  |
@@ -4456,13 +4363,13 @@ In particular, the sizing of the systems was based on the 20% coverage of energy
 According to a study carried out in the Prato area, this intervention would require the installation of panels on an area corresponding to about 4% of the total potential useful area of the public sector.
 The Municipality will undertake to find the funds to finance the interventions directly, also thanks to contributions obtained at national or European level.  |
 |  Reference to impact pathway | Field of action | 0.5 MWp installed by 2025
-MWp installed by 2027  |
+| MWp installed by 2027  |
 |   |  Systemic lever | Energy Policy Office  |
 |   |  Outcome (according to module B-1.1) |   |
 |  Implementation | Responsible bodies/person for implementation | Municipality of Prato
-Alia  |
+| Alia  |
 |   |  Action scale & addressed entities | 0.5 MWp installed by 2025
-MWp installed by 2027  |
+| MWp installed by 2027  |
 |   |  Involved stakeholders | Energy Policy Office  |
 |   |  Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | 3,600MWh electricity  |
@@ -4493,8 +4400,6 @@ O
 |   |  Action scale & addressed entities | /  |
 |   |  Involved stakeholders | Municipality of Prato Estra  |
 |   |  Comments on implementation | To date, the Municipality purchases certified green electricity for all municipal Points of Delivery except public lighting. The electricity used for street lighting is not certified green because the concession contract with a performance guarantee concluded with an ESCo at the time of signing did not provide for this service. The Municipality will enter into negotiations with the ESCo to supplement the contract and immediately provide for the purchase of certified green electricity for all public lighting utilities.  |
-Climate-Neutrality Commitments
-
 |  Impact & cost | Generated renewable energy (if applicable) | 7.374 MWh  |
 | --- | --- | --- |
 |   |  Removed/substituted energy, volume or fuel type | /  |
@@ -4532,11 +4437,11 @@ O
 |  Reference to impact pathway | Field of action | Tertiary Sector  |
 |   |  Systemic lever | Technology  |
 |   |  Outcome (according to module B-1.1) | - Replacement of boilers in activities responsible for a total of at least 2,500 MWh of heat
-Replacement of boilers of activities responsible for a total of at least 7,200 thermal MWh by 2027  |
+| Replacement of boilers of activities responsible for a total of at least 7,200 thermal MWh by 2027  |
 |  Implementation | Responsible bodies/person for implementation | Energy Policy Office
-Private building office  |
+| Private building office  |
 |   |  Action scale & addressed entities | The actors involved in the initiative are the companies in the tertiary sector, the Municipality of Prato and all the companies that will carry out the interventions.
-The management costs of the information retrieval measure borne by the Municipality are those related to internal staff or any outsourcing of services and the cost of modifying the data collection platform  |
+| The management costs of the information retrieval measure borne by the Municipality are those related to internal staff or any outsourcing of services and the cost of modifying the data collection platform  |
 |   |  Involved stakeholders | Municipality of Prato
 Companies in the tertiary sector
 Control room  |
@@ -4576,14 +4481,14 @@ Climate-Neutrality Commitments
 |   |  Systemic lever | Governance & Policy  |
 |   |  Outcome (according to module B-1.1) | Made  |
 |  Implementation | Responsible bodies/person for implementation | Energy Policy Office
-Private building office  |
+| Private building office  |
 |   |  Action scale & addressed entities | The companies in the tertiary sector are the main actors involved in this operation together with the internal staff of the Comune di Prato administration that will be involved in the drafting of the regulation and in the verifications.  |
 |   |  Involved stakeholders | Companies in the tertiary sector
-Municipality of Prato  |
+| Municipality of Prato  |
 |   |  Comments on implementation | During the period of the energy crisis, intervention was implemented by the Italian state  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | 2.069 thermal MWh
-MWh electricity  |
+| MWh electricity  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 836,76 tCO2  |
 |   |  Total costs and costs by CO2e unit | € 50.000
 ,75€/tCO2  |
@@ -4623,7 +4528,7 @@ Climate-Neutrality Commitments
 |  Reference to impact pathway | Field of action | Tertiary Sector  |
 |   |  Systemic lever | Technology  |
 |   |  Outcome (according to module B-1.1) | 10 MWp installed by 2025
-MWp installed by 2027  |
+| MWp installed by 2027  |
 |  Implementation | Responsible bodies/person for implementation | Energy Policy Office, Private Building Office  |
 |   |  Action scale & addressed entities | Companies in the tertiary sector are the main actors involved in this operation.  |
 |   |  Involved stakeholders | Companies in the tertiary sector Municipality of Prato  |
@@ -4683,7 +4588,7 @@ AGRICULTURE, FISHERIES AND FORESTRY
 |  Reference to impact pathway | Field of action | Agricultural Sector  |
 |   |  Systemic lever | Technology  |
 |   |  Outcome (according to module B-1.1) | 90 diesel tractors replaced by 2025
-diesel tractors replaced by 2027  |
+| diesel tractors replaced by 2027  |
 |  Implementation | Responsible bodies/person for implementation | Municipality of Prato  |
 |   |  Action scale & addressed entities | The relevant actors involved in the intervention are the local farms and the Municipality of Prato.  |
 |   |  Involved stakeholders | Farms in the Municipality of Prato  |
@@ -4739,7 +4644,7 @@ Climate-Neutrality Commitments
 |  Reference to impact pathway | Field of action | Agriculture  |
 |   |  Systemic lever | Technology  |
 |   |  Outcome (according to module B-1.1) | farms responsible for a total heat consumption of at least 500 MWh thermal by 2025
-farms responsible for a total heat consumption of at least 1,250 MWh thermal by 2025  |
+| farms responsible for a total heat consumption of at least 1,250 MWh thermal by 2025  |
 |  Implementation | Responsible bodies/person for implementation | Municipality of Prato  |
 |   |  Action scale & addressed entities | The relevant actors involved in the intervention are the local farms and the Municipality of Prato  |
 |   |  Involved stakeholders | Farms in the Municipality of Prato  |
@@ -4794,7 +4699,7 @@ O
 |  Reference to impact pathway | Field of action | Agriculture  |
 |   |  Systemic lever | Technology  |
 |   |  Outcome (according to module B-1.1) | 55 MWp of installed agri-voltaics by 2025
-MWp of installed agri-voltaics by 2027  |
+| MWp of installed agri-voltaics by 2027  |
 |  Implementation | Responsible bodies/person for implementation | Municipality of Prato  |
 |   |  Action scale & addressed entities | The relevant actors involved in the intervention are the farms in the area and the Municipality of Prato, which will encourage this action with indirect measures such as energy desks and awareness campaigns  |
 |   |  Involved stakeholders | Farms in the Municipality of Prato  |
@@ -4828,7 +4733,7 @@ The Municipality undertakes, through dialogue with specialised operators, to ass
 |  Reference to impact pathway | Field of action | Agricultural sector  |
 |   |  Systemic lever | Technology  |
 |   |  Outcome (according to module B-1.1) | 500 MWh of electricity purchased from green energy
-,250 MWh of electricity purchased from green energy  |
+| ,250 MWh of electricity purchased from green energy  |
 |  Implementation | Responsible bodies/person for implementation | Municipality of Prato  |
 |   |  Action scale & addressed entities | The relevant actors involved in the intervention are the farms in the area and the Municipality of Prato, which will encourage this action with indirect measures such as energy desks and awareness campaigns  |
 |   |  Involved stakeholders | Farms in the Municipality of Prato  |
@@ -4873,12 +4778,12 @@ The Municipality will endeavour to find the funds to finance the interventions d
 |  Reference to impact pathway | Field of action | Mobility & Transport  |
 |   | Systemic lever | Technology/Infrastructure  |
 |   | Outcome (according to module B-1.1) | 18.2% of daily travel by LPT (91,000 daily trips by 2025
-% of daily travel by LPT (154,000 daily trips) to 2027  |
+| % of daily travel by LPT (154,000 daily trips) to 2027  |
 |  Implementation | Responsible bodies/person for implementation | Municipality Mobility Office
-Urban Planning Office  |
+| Urban Planning Office  |
 |   | Action scale & addressed entities | Citizens are the main actors involved in this operation. They are joined by the Municipality of Prato, for the purchase of electric transporter vehicles and awareness-raising activities for the use of LPT  |
 |   | Involved stakeholders | Municipality of Prato
-Citizenship  |
+| Citizenship  |
 |   | Comments on implementation | An agreement has been reached between the Municipality, Autolinee Toscane Spa and the Region of Tuscany for the purchase of new electric and hybrid vehicles and related infrastructure. The agreement provides for  |
 CERREO DE PADRICA
 
@@ -4900,8 +4805,6 @@ Commitments
 |  6.2 Action outline | Action name | Infrastructure enhancement to facilitate access to LPT  |
 |   |  Action type | Physical/ spatial interventions  |
 |   |  Action description | In order to further reduce the share of journeys by private vehicles in the most densely populated urban area (a necessary objective not only for reducing emissions but also for increasing road safety and the usability of public spaces), in addition to the strengthening of the LPT (sheet 6.1), the strategy envisages increasing the attractiveness of the main road network in such a way as to allow for greater traffic fluidity. In particular, through the enhancement of some particularly congested infrastructural nodes it is possible to considerably reduce CO2 emissions into the atmosphere due to stationary vehicles in traffic jams, as well as to save time for users. The objective of the action is therefore to strengthen the main road network in order to limit the improper use of the local road network by reducing, within the latter, the so-called 'through traffic', i.e. that component that has crossed the dense city to reach a destination outside it. In quantitative terms, the aim is to reduce local traffic using private vehicles with internal combustion engines (car/motorbike/van), with the goal of reducing its use from the current 82% to 26% by 2030. By improving the practicability of the main road system, access to the interchange car parks for the car-LPT modal exchange is also favoured. These car parks, in fact, as provided for by the recently adopted Structural Plan, are located right on the main road system and connected to the public transport system. With regard to the main road network, the infrastructure, upgrading and safety measures included in the assumed scenario include in detail • Completion of the Second West Ring Road (Lots 3 and 6): the intervention is aimed at giving continuity to the alternative route to the west,  |
-Climate-Neutrality Commitments
-
 |   |  | mending the relations between Nuova Montalese, Via Pistoiese and the roundabout in Viale Unione Europea; in addition, the southern section, already almost completely completed, of the second ring road between Via Ponte dei Bini and the 'Declassata' is to be opened to traffic. • Redevelopment of the 'Declassata' (viale Leonardo da Vinci): the intervention is on the municipal, regional and national agenda thanks to the recent agreement between the parties for the development of the detailed design of the doubling of V.le Leonardo da Vinci in the area between via Nenni and via Marx (the so-called 'Soccorso' subway, see next box). To the west of the city, the 'Declassata' axis will be affected by the widening to four lanes Urban Plan of Sustainable Mobility of Prato Plan Document 41 (two in each direction) in the short stretch near the junction with the second western ring road. An intervention of a completely different calibre concerns the arrangement of the most central part of the infrastructure, near the 'Soccorso' (first aid station), with the provision of a separation of transit vehicle flows from those at destination, to be realised by means of a subway. Subway of the "Soccorso" The doubling of the "Declassata" between Via Nenni and Via Marx envisages the construction of a tunnel approximately 500 metres long with two lanes in each direction. The estimated cost of the work is approximately 60 million euro, completely financed with ministerial funds. • Roads in the hamlets: this category includes the new road connection between the hamlets of Tobbiana and Iolo connected to the three-lane widening of the A11 motorway. • Safety and redevelopment works: the redevelopment of the system of squares to the north of the historic centre (Piazza Mercatale, Piazza Ciardi and Piazza del Mercato Nuovo) is part of the broader strategy of enhancing and promoting the public spaces that hinge on the Serraglio station and the University. The redevelopment of the three squares, included in the Reference Scenario, is the first step in this strategy. On the road system front, the redevelopment of Via Foscolo is planned through the realignment of the road layout between the New Hospital roundabout and the Via Ciulli roundabout.  |
 | --- | --- | --- |
 
@@ -4914,14 +4817,6 @@ Climate-Neutrality Commitments
 
 |   | There are also a number of interventions aimed at upgrading the road infrastructure, which include: • SS325 - bottleneck s. Lucia. • Tangenziale Nord-Sud - adaptation of the v.le Cervi section, via L.Rossi subway, Prato Borgonuovo railway station connection and Capezzana overpass • Adaptation of industrial axis (via |Paronese) • Completion of industry axis connections East (connection to Campi Bisenzio) and West (connection to second ring road) • Completion of Via della Pace and connection to second ring road • Completion of second ring road With regard to the interchange car parks and car parks connecting to the central area, several interventions are planned. Some of them are aimed at completing the parking offer at the attractive poles of public mobility and favouring interchange with LPT, such as • Prato Centrale, realisation of the interchange hub for public and private mobility and inclusion of 300 parking spaces; • Prato Borgonuovo, rearrangement of accesses to the current parking area and planned completion with approximately 130 additional parking spaces; • Redevelopment of police headquarters car park • Via Nenni car park • Parking Capezzana • Ciliani car park (western bypass) • San Martino car park for Galceti (western bypass) • Parking Baciacavallo (Inductive axis) • Parking Maliseti Other interventions, on the other hand, are aimed at optimising the (main) car parks around the central area: -Piazza Ebensee, redevelopment of the routes between the car park and the city centre, with minimum hourly rates in relation to the area and incentive conditions for long-term parking (over 2 hours); -Piazza del Mercato Nuovo, redevelopment of routes, parking pricing, minimum value in relation to the area to which it belongs, but discouraging long-term parking (over 2 hours); -Piazza Mercatale, redevelopment of the square and reduction of the number of parking spaces, maximum tariff in relation to the area and discouraging long-term parking (over 2 hours). Possible experimentation with dynamic parking pricing systems according to the time of day (maximum in the morning, to be reduced in the afternoon and evening).  |
 | --- | --- | --- |
-C
-
-Climate-Neutrality
-
-Commitments
-
-#
-
 |   |  | In addition, parking management tools (ITS) will be optimised with the inclusion of addressing systems to the parking areas with (real time) signalling of the relative availability of parking spaces. The system will have to intercept all flows entering the urban area and will have to relate the main parking facilities subject to charging both at ground level and in structure. Introduction of parking collection and control systems, already foreseen in the reference scenario and which may be further developed as the parking pricing system is progressively extended.  |
 | --- | --- | --- |
 comune di PRATO
@@ -4937,15 +4832,13 @@ O
 |  Reference to impact pathway | Field of action | Mobility & Transport  |
 |   |  Systemic lever | Technology/Infrastructure  |
 |   |  Outcome (according to module B-1.1) | 16% of daily trips by LPT (91,000 daily trips) to 2025  |
-Climate-Neutrality Commitments
-
 |   |  | 31.0% of daily travel by LPT
-(154,000 daily trips) to 2027  |
+| (154,000 daily trips) to 2027  |
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | Municipality Mobility Office
-Urban Planning Office  |
+| Urban Planning Office  |
 |   |  Action scale & addressed entities | Citizens are the main actors involved in this operation.
-They are joined by the Municipality of Prato, for the construction and extension of main roads  |
+| They are joined by the Municipality of Prato, for the construction and extension of main roads  |
 |   |  Involved stakeholders | Municipality of Prato
 Citizenship
 Road infrastructure companies  |
@@ -5103,11 +4996,11 @@ The Municipality, in agreement with the Region and the Municipality of Florence 
 Climate-Neutrality Commitments
 
 |  Implementation | Responsible bodies/person for implementation | Municipality Mobility Office
-Urban Planning Office  |
+| Urban Planning Office  |
 | --- | --- | --- |
 |   |  Action scale & addressed entities | itizens are the main actors involved in this operation. They are joined by the Municipality of Prato, for awareness-raising activities on the use of rail transport lines and adaptation of the structure.  |
 |   |  Involved stakeholders | Municipality of Prato
-Citizenship  |
+| Citizenship  |
 |   |  Comments on implementation | This action is included in the Regional Development Plan of Tuscany, which introduces the concept of 'integrated urban areas', relating to the mobility of this integrated area, Florence, Piana and Prato, which will give a greater impetus to the realisation of a sustainable mobility model within the integrated area.  |
 |  Impact & cost | Generated renewable energy (if applicable) |   |
 |   |  Removed/substituted energy, volume or fuel type | 80,357 thermal MWh  |
@@ -5146,17 +5039,15 @@ From this point of view, the Municipality of Prato undertakes to revise the agre
 |  Reference to impact pathway | Field of action | Mobility & Transport  |
 |   |  Systemic lever | Technology/Infrastructure  |
 |   |  Outcome (according to module B-1.1) | 85,000 Daily trips by suburban transport to 2025
-,000 Daily trips by suburban transport to 2027  |
-Climate-Neutrality Commitments
-
+| ,000 Daily trips by suburban transport to 2027  |
 |  Implementation | Responsible bodies/person for implementation | Municipality Mobility Office
-Urban Planning Office  |
+| Urban Planning Office  |
 | --- | --- | --- |
 |   |  Action scale & addressed entities | Citizens are the main actors involved in this operation. They are joined by the Municipality of Prato, for the purchase of the vehicles and the management of the service.  |
 |   |  Involved stakeholders | Municipality of Prato
-Citizenship  |
+| Citizenship  |
 |   |  Comments on implementation | By the end of the year 2022, six new extra-urban buses will be in service: four planned to boost service on the regional direttissima
-Prato-Florence (LAM PO-FI) line, which, starting from the city of Prato and after serving an urban area, joins the A11 motorway to Florence in the Vittorio Veneto and Porta al Prato areas; and two to boost service on Line V, which connects Prato with the Bisenzio Valley.  |
+| Prato-Florence (LAM PO-FI) line, which, starting from the city of Prato and after serving an urban area, joins the A11 motorway to Florence in the Vittorio Veneto and Porta al Prato areas; and two to boost service on Line V, which connects Prato with the Bisenzio Valley.  |
 |  Impact & cost | Generated renewable energy (if applicable) |   |
 |   |  Removed/substituted energy, volume or fuel type | About 10 million liters of fuel  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 23.375 tCO2  |
@@ -5199,14 +5090,14 @@ Commitments
 O
 
 |   |  | plant that can transform the energy produced by the 3 MW photovoltaic plant, currently under construction, into hydrogen to be used for the 'zero impact' operation of the vehicles used in the warehouses and storage centres located in the area.
-N.B. The potential benefits of green hydrogen fuelled vehicles were not taken into account in the emissions calculation.  |
+| N.B. The potential benefits of green hydrogen fuelled vehicles were not taken into account in the emissions calculation.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Field of action | Mobility & Transport  |
 |   |  Systemic lever | Technology/Infrastructure  |
 |   |  Outcome (according to module B-1.1) | 29% reduction in logistical trips (from 84,000 trips in 2023 to 60,000 remaining trips)
-% reduction in logistics trips (from 84,000 trips in 2023 to 47,700 remaining trips)  |
+| % reduction in logistics trips (from 84,000 trips in 2023 to 47,700 remaining trips)  |
 |  Implementation | Responsible bodies/person for implementation | Municipality Mobility Office
-Urban Planning Office  |
+| Urban Planning Office  |
 |   |  Action scale & addressed entities | Logistics companies are the main actors involved in this operation. In addition to them, the internal staff of the administration of the Municipality of Prato will be involved in the drafting of the regulations and in the verifications through the agreement with external entities, such as Interporto, to guarantee a service for the optimisation of goods and the recharging of vehicles that will be obliged to enter the city.  |
 |   |  Involved stakeholders | Municipality of Prato
 Citizenship
@@ -5240,9 +5131,9 @@ In addition, in addition to local travel within the Municipality, by 2030 it is 
 |  Reference to impact pathway | Field of action | Mobility & Transport  |
 |   |  Systemic lever | Technology/Infrastructure  |
 |   |  Outcome (according to module B-1.1) | Around 1,500 electric vehicles for urban and suburban travel
-Approximately 11,500 electric vehicles circulating in the Municipality for urban and extra-urban travel  |
+| Approximately 11,500 electric vehicles circulating in the Municipality for urban and extra-urban travel  |
 |  Implementation | Responsible bodies/person for implementation | Municipality Mobility Office
-Urban Planning Office  |
+| Urban Planning Office  |
 |   |  Action scale & addressed entities | Citizens are the main actors involved in this operation. They are joined by the Municipality of Prato, for the definition and management of incentive calls and awareness-raising activities, and the car companies that produce electric vehicles  |
 |   |  Involved stakeholders | Municipality of Prato  |
 
@@ -5380,11 +5271,11 @@ Climate-Neutrality Commitments
 | --- | --- | --- |
 |   |  Systemic lever | Technology/Infrastructure  |
 |   |  Outcome (according to module B-1.1) | 3,000 bicycles financed by 2025
-,000 bicycles financed to 2027  |
+| ,000 bicycles financed to 2027  |
 |  Implementation | Responsible bodies/person for implementation | Municipality Mobility Office  |
 |   |  Action scale & addressed entities | The main stakeholder will be the Municipality of Prato  |
 |   |  Involved stakeholders | Municipality of Prato
-Citizenship  |
+| Citizenship  |
 |   |  Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | 20,569 thermal MWh  |
@@ -5430,7 +5321,7 @@ bike sharing service stations. An outline and dimensioning of the public transpo
 |  Reference to impact pathway | Field of action | Mobility & Transport  |
 |   |  Systemic lever | Technology/Infrastructure  |
 |   |  Outcome (according to module B-1.1) | Started in 2025
-Realised to 2027  |
+| Realised to 2027  |
 |  Implementation | Responsible bodies/person for implementation | Municipality Mobility Office  |
 CENTRO DI PRATO
 
@@ -5441,7 +5332,7 @@ Climate-Neutrality Commitments
 |   | Action scale & addressed entities | The main stakeholder will be the Municipality of Prato  |
 | --- | --- | --- |
 |   |  Involved stakeholders | Municipality of Prato
-Citizenship  |
+| Citizenship  |
 |   |  Comments on implementation | /  |
 |  Impact & cost | Generated renewable energy (if applicable) | /  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
@@ -5474,17 +5365,15 @@ Some examples of potential areas identified for the installation of modules incl
 In addition, it is planned to extend this initiative to the new car parks that are being planned.  |
 |  Reference to impact pathway | Field of action | Mobility & Transport  |
 |   |  Systemic lever | Technology/Infrastructure  |
-Climate-Neutrality Commitments
-
 |   | Outcome (according to module B-1.1) | 2 MWp installed by 2025
-MWp installed by 2027  |
+| MWp installed by 2027  |
 | --- | --- | --- |
 |  Implementation | Responsible bodies/person for implementation | Municipality Mobility Office
-Urban Planning Office  |
+| Urban Planning Office  |
 |   |  Action scale & addressed entities | The main actor involved is the Municipality of Prato, which will encourage this action with indirect measures such as the energy desk, energy annex, energy planning and bureaucratic simplification.
-The Municipality will also promote the establishment of energy communities in the area.  |
+| The Municipality will also promote the establishment of energy communities in the area.  |
 |   |  Involved stakeholders | Municipality of Prato
-Citizenship  |
+| Citizenship  |
 |   |  Comments on implementation | The Ministry for the Environment and Energy Security is currently defining an incentive system for energy communities. In addition, there are national incentives for the construction of photovoltaic plants in Italy through funds provided by the NRRP.  |
 |  Impact & cost | Generated renewable energy (if applicable) | 7,200 MWh  |
 |   |  Removed/substituted energy, volume or fuel type | /  |
@@ -5516,17 +5405,13 @@ The Municipality undertakes, through dialogue with specialised operators, to ass
 |  Reference to impact pathway | Field of action | Mobility & Transport  |
 |   |  Systemic lever | Technology/Infrastructure  |
 |   |  Outcome (according to module B-1.1) | 5,000 MWh of purchases from green energy
-,000 MWh of purchases from green energy  |
+| ,000 MWh of purchases from green energy  |
 |  Implementation | Responsible bodies/person for implementation | Municipality Mobility Office
-Urban Planning Office  |
+| Urban Planning Office  |
 |   |  Action scale & addressed entities | The main actor involved will be the Municipality of Prato will encourage this action with indirect measures such as programme agreements with the companies managing the electric recharging service. The concession will include an obligation on the part of the concessionaire to supply customers only with green energy.  |
 |   |  Involved stakeholders | Municipality of Prato
-Citizenship  |
+| Citizenship  |
 |   |  Comments on implementation | After consulting an energy supplier in the area, it was found that by 2022, green electricity out of the total energy sold by the supplier was about 50 per cent.  |
-
-8
-Climate-Neutrality Commitments
-
 |  Impact & cost | Generated renewable energy (if applicable) | 55.260 MWh  |
 | --- | --- | --- |
 |   |  Removed/substituted energy, volume or fuel type | /  |
@@ -5558,7 +5443,7 @@ The Municipality of Prato will encourage the implementation of these actions by 
 |  Reference to impact pathway | Field of action | Waste  |
 |   |  Systemic lever | Technology/Infrastructure  |
 |   |  Outcome (according to module B-1.1) | 0.5 MWp to 2025
-MWp to 2027  |
+| MWp to 2027  |
 |  Implementation | Responsible bodies/person for implementation | Municipality Office
 Urban Planning Office
 Agreements with investee companies  |
@@ -5806,14 +5691,10 @@ O
 |  Is the indicator captured by the existing CDP/SCIS/ Covenant of Mayors platforms? | yes  |
 |  Data requirements |   |
 |  Expected data source | • Source Istat for the demographic trend of the inhabitants of the Municipality of Prato;
-• CO2 emissions for the residential sector calculated from consumption data collected by: municipal electricity distributor 'e-distribuzione S.p.A.'; municipal natural gas distributor 'Toscana Energia'; oil bulletin of the Ministry of Economic Development.  |
+| • CO2 emissions for the residential sector calculated from consumption data collected by: municipal electricity distributor 'e-distribuzione S.p.A.'; municipal natural gas distributor 'Toscana Energia'; oil bulletin of the Ministry of Economic Development.  |
 |  Expected availability | Expected annual availability of data  |
 |  Suggested collection interval | 2023-2030  |
 |  References |   |
-Climate-Neutrality Commitments
-
-#
-
 |  B-3.2: Indicator Metadata  |   |
 | --- | --- |
 |  (for each indicator selected – take from Comprehensive Indicator Sets)  |   |
@@ -6129,7 +6010,7 @@ O
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | yes  |
 |  Data requirements |   |
 |  Expected data source | • Prato Municipal Structural Plan
-• Study University of Rome 'La Sapienza'  |
+| • Study University of Rome 'La Sapienza'  |
 |  Expected availability | Expected annual availability of data  |
 |  Suggested collection interval | 2023-2030  |
 |  References |   |
@@ -6142,10 +6023,6 @@ O
 |  Indicator Unit | MWp installed by photovoltaic panels to cover the electricity needs of the industrial sector in other industrial areas in the Prato area  |
 |  Definition | Production from RES under the two-year ministerial call for energy efficiency.  |
 |  Calculation | The indicator is calculated from the MWp of photovoltaics installed in the textile sector  |
-Climate-Neutrality Commitments
-
-#
-
 |  Indicator Context |   |
 | --- | --- |
 |  Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | yes  |
@@ -6333,10 +6210,6 @@ Climate-Neutrality Commitments
 |  (for each indicator selected – take from Comprehensive Indicator Sets)  |   |
 |  Indicator Name | IN.3.2 % reduction in thermal energy consumption  |
 |  Indicator Unit | % reduction in thermal energy consumption in sports facilities  |
-Climate-Neutrality Commitments
-
-#
-
 |  Definition | Thermal energy saved through the replacement of old thermal energy production systems with more efficient systems in sports facilities  |
 | --- | --- |
 |  Calculation | Replacement of old thermal energy production systems with more efficient systems in sports facilities  |
@@ -6456,7 +6329,7 @@ Commitments
 |  Is the indicator captured by the existing CDP/SCIS/ Covenant of Mayors platforms? | yes  |
 |  Data requirements |   |
 |  Expected data source | • Energy Manager of the Municipality of Prato
-• Competent offices  |
+| • Competent offices  |
 |  Expected availability | Expected annual availability of data  |
 |  Suggested collection interval | 2023-2030  |
 |  References |   |
@@ -6468,10 +6341,6 @@ Commitments
 |  Indicator Name | IN.3.6.1 No. of boilers replaced  |
 |  Indicator Unit | Number of efficiency measures carried out Number of gas boilers replaced with heat pumps in residential buildings through measures already carried out  |
 |  Definition | The aim is to monitor the number of efficiency interventions carried out and the number of boilers replaced with condensing boilers in Public Residential Housing (ERP) through interventions already implemented  |
-Climate-Neutrality Commitments
-
-#
-
 |  Calculation | Number of efficiency measures carried out Number of boilers replaced as a result of measures already carried out through Public Residential Energy Housing (ERP) strategies.  |
 | --- | --- |
 |  Indicator Context |   |
@@ -6517,7 +6386,7 @@ Commitments
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | yes  |
 |  Data requirements |   |
 |  Expected data source | • Energy Manager of the Municipality of Prato
-• Competent offices  |
+| • Competent offices  |
 |  Expected availability | Expected annual availability of data  |
 |  Suggested collection interval | 2023-2030  |
 |  References |   |
@@ -6552,7 +6421,7 @@ Commitments
 O
 
 |  Expected data source | • MWp installed in the Municipality of Prato Source Atlaimpianti GSE
-• Requests from the Municipality to the energy distributor  |
+| • Requests from the Municipality to the energy distributor  |
 | --- | --- |
 |  Expected availability | Expected annual availability of data  |
 |  Suggested collection interval | 2023-2030  |
@@ -6576,7 +6445,7 @@ O
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | yes  |
 |  Data requirements |   |
 |  Expected data source | Municipality of Prato
-GSE/GME or Arera suppliers  |
+| GSE/GME or Arera suppliers  |
 |  Expected availability | Expected annual availability of data  |
 |  Suggested collection interval | 2023-2030  |
 |  References |   |
@@ -6647,10 +6516,6 @@ Climate-Neutrality Commitments
 |  References |   |
 |  Deliverables describing the indicator | The indicator monitors progress in terms of emission reductions in the tertiary sector, as a result of the implementation of actions in the Climate Neutrality Plan  |
 |  Other indicator systems using this indicator | PAESC  |
-Climate-Neutrality Commitments
-
-#
-
 |  B-3.2: Indicator Metadata  |   |
 | --- | --- |
 |  (for each indicator selected – take from Comprehensive Indicator Sets)  |   |
@@ -6679,10 +6544,6 @@ Climate-Neutrality Commitments
 |  Indicator Name | IN.4.2 Realised/ initiated/ not realised  |
 |  Indicator Unit | Introduction of a municipal ordinance  |
 |  Definition | Introduction of a municipal ordinance aimed at the optimal management of air conditioning systems in tertiary activities  |
-Climate-Neutrality Commitments
-
-#
-
 |  Calculation | The indicator is calculated according to the level of progress of the activity in three possible scenarios; started, realised and not realised.  |
 | --- | --- |
 |  Indicator Context |   |
@@ -6728,7 +6589,7 @@ Commitments
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | yes  |
 |  Data requirements |   |
 |  Expected data source | • MWp installed in the Municipality of Prato Source Atlaimpianti GSE
-• Requests from the Municipality to the energy distributor  |
+| • Requests from the Municipality to the energy distributor  |
 |  Expected availability | Expected annual availability of data  |
 |  Suggested collection interval | 2023-2030  |
 |  References |   |
@@ -6890,7 +6751,7 @@ O
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | yes  |
 |  Data requirements |   |
 |  Expected data source | • MWp installed in the Municipality of Prato Source Atlaimpianti GSE
-• Requests from the Municipality to the energy distributor  |
+| • Requests from the Municipality to the energy distributor  |
 |  Expected availability | Expected annual availability of data  |
 |  Suggested collection interval | 2023-2030  |
 |  References |   |
@@ -6926,7 +6787,7 @@ Commitments
 | --- | --- |
 |  Data requirements |   |
 |  Expected data source | Municipality of Prato
-GSE/GME or Arera suppliers  |
+| GSE/GME or Arera suppliers  |
 |  Expected availability | Expected annual availability of data  |
 |  Suggested collection interval | 2023-2030  |
 |  References |   |
@@ -6994,10 +6855,6 @@ Commitments
 |  Indicator Name | IN.6.2 Percentage of reduction in travel by private vehicles with internal combustion engine  |
 |  Indicator Unit | % reduction in travel by private vehicles with internal combustion engine  |
 |  Definition | Upgrading of urban road infrastructure related to the main road system  |
-Climate-Neutrality Commitments
-
-#
-
 |  Calculation | Reduction in % of journeys by private vehicles with internal combustion engine  |
 | --- | --- |
 |  Indicator Context |   |
@@ -7158,7 +7015,7 @@ O
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | yes  |
 |  Data requirements |   |
 |  Expected data source | Municipality data
-Aci data  |
+| Aci data  |
 |  Expected availability | Expected annual availability of data  |
 |  Suggested collection interval | 2023-2030  |
 |  References |   |
@@ -7188,7 +7045,7 @@ Climate-Neutrality Commitments
 O
 
 |  source | Municipal data: incentive for the purchase of electric citycars or electric scooters
-Aci data  |
+| Aci data  |
 | --- | --- |
 |  Expected availability | Expected annual availability of data  |
 |  Suggested collection interval | 2023-2030  |
@@ -7212,7 +7069,7 @@ Aci data  |
 |  Is the indicator captured by the existing CDP/SCIS/ Covenant of Mayors platforms? | yes  |
 |  Data requirements |   |
 |  Expected data source | Data Municipality
-Data from the electricity column operator  |
+| Data from the electricity column operator  |
 |  Expected availability | Expected annual availability of data  |
 |  Suggested collection interval | 2023-2030  |
 |  References |   |
@@ -7387,7 +7244,7 @@ Commitments
 |  Is the indicator captured by the existing CDP/SCIS/ Covenant of Mayors platforms? | yes  |
 |  Data requirements |   |
 |  Expected data source | • MWp installed in the Municipality of Prato Source Atlaimpianti GSE
-• Requests from the Municipality to the energy distributor  |
+| • Requests from the Municipality to the energy distributor  |
 |  Expected availability | Expected annual availability of data  |
 |  Suggested collection interval | 2023-2030  |
 |  References |   |
@@ -7421,7 +7278,7 @@ O
 |  Is the indicator captured by the existing CDP/SCIS/ Covenant of Mayors platforms? | yes  |
 |  Data requirements |   |
 |  Expected data source | Municipality of Prato
-GSE/GME or Arera suppliers  |
+| GSE/GME or Arera suppliers  |
 |  Expected availability | Expected annual availability of data  |
 |  Suggested collection interval | 2023-2030  |
 |  References |   |
@@ -7532,12 +7389,6 @@ O
 Energy distributors in the Municipality of Prato
 Energy consultants | The drafting of the Plan, in order to define the potential of the electricity network, is fundamental for the implementation of the Municipality of Prato's Climate Neutrality Plan, since, in line with the National and European strategic guidelines, it identifies the electrification of consumption as one of the fundamental strategic pillars. This makes it possible to overcome the infrastructural barriers related to the electricity distribution network. |   |
 |  Public awareness and education events | Education events, both physical and online, will also be organised in schools to raise awareness among citizens about adopting a more sustainable lifestyle with less impact on the environment | Energy Policy Office | Municipality Citizenship Companies | Cultural change is a fundamental and necessary lever for the implementation of the actions envisaged in the Municipality of Prato's Neutrality Plan. |   |
-
-5
-Climate-Neutrality Commitments
-
-#
-
 |  Mobility Management | Mobility management actions in medium-sized cities like Prato are generally managed by the mobility manager identified in three professional figures:
 Mobility managers for companies with more than 300 employees or employing more than 800 people;
 Area mobility managers, for local authorities, with coordination functions supporting company mobility managers;
@@ -8076,14 +7927,6 @@ Include a list of stakeholders who have committed to help your city achieve its 
 |  PARSEC Foundation - Natural Science Centre | Environment | Public company | Antonella Fioravanti | President  |
 |  Prato Hospital - S. Stefano | Health | Public company | Maria Teresa Mechi | Director  |
 |  Confartigianato Imprese Prato | Business | Business representation organisation | Luca Giusti | President  |
-1
-
-Climate-Neutrality
-
-Commitments
-
-#
-
 |  Name of the institution | Sector/Area | Legal form | Name of the responsible person | Position of the responsible person  |
 | --- | --- | --- | --- | --- |
 |  Prato Province Authority | Local institution | Public authority | Simone Calamai | President  |
@@ -8105,14 +7948,6 @@ Commitments
 |  Abitare Toscana srl | Social | Social housing company | Stefano Tossani | Legal representative  |
 |  Alice Società Cooperativa Sociale | Social | Social cooperative | Gianna Mura | President  |
 |  AMI Foundation | Social | Association | Claudio Sarti | President  |
-4
-
-Climate-Neutrality
-
-Commitments
-
-#
-
 |  Name of the institution | Sector/Area | Legal form | Name of the responsible person | Position of the responsible person  |
 | --- | --- | --- | --- | --- |
 |  Prato Province Authority | Local institution | Public authority | Simone Calamai | President  |

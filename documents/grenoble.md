@@ -77,7 +77,7 @@ By joining the Cities Mission, the metropole has committed to go further and acc
 Direct greenhouse gas (GHG) emissions were estimated in 2021 at 1,700 ktCO2eq (decrease of 33% since 2005), energy consumption fell by 17% between 2005 and 2019 (-25% in 2021 but still affected by the COVID crisis), alongside continued improvement in air quality in the region.
 
 The process of developing the City Climate Contract and the use of the NetZeroCities economic model made it possible to explore pathways for accelerating towards carbon neutrality by 2030. It has served as a tool for challenging current SECAP actions, modelling new national objectives and their expected impact on local emissions and integrating exploratory levers and new innovations available. The impact pathways towards carbon neutrality described in the Climate City Contract will be specified
-GREENOBLE ALPES METROPOLE
+GRENOBLE ALPES METROPOLE
 
 Climate Neutrality Action Plan
 
@@ -130,7 +130,7 @@ The metropole has set up a governance framework based on a multi-stakeholder str
 Lately the metropole carried out a GHG Assessment of its buildings, processes and activities, enabling prioritization of climate actions between the industrial public services (heating, waste, water and sanitation) and its administration.
 
 In terms of external governance, the metropole works with a multitude of governance and mobilization tools to create a partner ecosystem for carbon neutrality. Some important tools are the monitoring committee of the SECAP, the Municipality Commitment Charter and the Partner Commitment Charter,
-GREENOBLE ALPES METROPOLE
+GRENOBLE ALPES METROPOLE
 
 Climate Neutrality Action Plan
 
@@ -153,7 +153,7 @@ A previous modelling to estimate the investment costs necessary to achieve carbo
 The main sectors where investment is needed are electrification of vehicles, building renovations and decarbonizing of the heating generation. The costs of the industrial sector and nature-based solutions are not quantified. More information is provided in the Investment Plan.
 
 This document constitutes the first version of the City Climate Contract of Grenoble-Alpes Metropole. Since the development of the Climate City Contract took place a few months before
-GREENOBLE ALPES MÉTROPOLE
+GRENOBLE ALPES MÉTROPOLE
 
 Climate Neutrality Action Plan
 
@@ -217,7 +217,7 @@ Abbreviations and acronyms
 |  ADEME | French Agency for Ecological Transition | Agence de la transition écologique  |
 |  AFOLU | Agriculture, Forestry and Other Land Use | Agriculture, forêt et autres occupations des sols  |
 |  ANCT | National Agency for Territorial Coherence | Agence nationale pour la cohésion des territoires  |
-|  BAU | Business as Usual – statu quo | Tendenciel  |
+|  BAU | Business as Usual - status quo | Tendenciel  |
 |  CAPEX | Capital expenditure | Coûts d'investissements  |
 |  CNAP | Climate neutral action plan |   |
 |  CRTE | Contract for a successful ecological transition | Contrat pour la réussite de la transition écologique  |
@@ -230,7 +230,7 @@ Abbreviations and acronyms
 |  PCAET | Territorial climate, air and energy plan | Plan climat-air-énergie territorial  |
 |  PLH | Local housing plan | Plan Local Habitat  |
 |  PLUI | Intercommunal local urban development plan | Plan local d'urbanisme intercommunal  |
-|  PNACC | National climate change adaptation change | Plan national d'adaptation au changement climatique :  |
+|  PNACC | National climate change adaptation plan | Plan national d'adaptation au changement climatique :  |
 |  PPE | Multi-annual energy planning | Programmation pluriannuelle de l'énergie  |
 |  SCoT | Territorial coherence plan | Schéma de cohérence territorial :  |
 |  SECAP | Sustainable Energy and Climate Action Plan | Plan climat / SECAP / Plan Climat Air Energie Métropolitain  |
@@ -238,7 +238,7 @@ Abbreviations and acronyms
 |  SRADDET | Regional scheme for planning and sustainable development of territories | Schéma régional d'aménagement, de développement durable et d'égalité des territoires  |
 |  SUMP | Sustainable urban mobility plan | Plan de mobilité  |
 |  TETE | Territory committed to ecological transition | Territoire engagé pour la transition écologique  |
-GREENOBLE ALPES METROPOLE
+GRENOBLE ALPES METROPOLE
 
 Climate Neutrality Action Plan
 
@@ -254,7 +254,7 @@ The Grenoble metropolitan area has developed around the city of Grenoble, in the
 
 ![img-1.jpeg](img-1.jpeg)
 Figure 1 Map of the municipalities of Grenoble Alpes Metropole
-GREENOBLE ALPES METROPOLE
+GRENOBLE ALPES METROPOLE
 
 Climate Neutrality Action Plan
 
@@ -279,7 +279,7 @@ Industry now represents about 40% of direct emissions and therefore represents a
 # The fight against global warming and the Metropolitan Air Energy Climate Plan
 
 Grenoble Alpes Metropole has long been committed to the fight against global warming. In 2005, it was the first French urban area to adopt a Climate Plan, a SECAP. The ambition to significantly accelerate the energy and ecological transition is now expressed in the commitments made in all of
-GREENOBLE ALPES METROPOLE
+GRENOBLE ALPES METROPOLE
 
 Climate Neutrality Action Plan
 
@@ -300,7 +300,7 @@ The metropole is acting firmly within the framework of its competences and has m
 For example, for its electricity supply, the metropole is dependent on the French national grid. Even if the French mix is already highly decarbonized, in particular due to the importance of nuclear and hydraulic production, the metropole has very little influence on this area. Also for the industrial sector, the regulations are under national or European influence and sometimes the decision-making centers are even beyond Europe for large international industrial companies.
 
 Finally, according to the Carbon Neutrality Scenario Study by Enerdata, ~70% of the carbon footprint is imported (50% from abroad and 20% from France), these emissions coming from purchasing
-GREENOBLE ALPES METROPOLE
+GRENOBLE ALPES METROPOLE
 
 Climate Neutrality Action Plan
 
@@ -325,7 +325,7 @@ By joining the Cities Mission and the European dynamic of 100 climate-neutral an
 Act with all the levers at its disposal and mobilize all the stakeholders to drastically reduce greenhouse gas emissions by 2030 and accelerate the systemic transformation of its territory towards carbon neutrality;
 Contribute to exploring all pathways of acceleration towards carbon neutrality by 2030;
 Actively collaborate with other French and European cities and communities, as well as the structures and representatives of the State and the European Union, in order to identify the regulatory, financial, legal, behavioral and operational obstacles and levers to achieve carbon neutrality;
-GREENOBLE ALPES METROPOLE
+GRENOBLE ALPES METROPOLE
 
 Climate Neutrality Action Plan
 
@@ -388,7 +388,7 @@ Grenoble has been committed to climate transition for many years. The key milest
 
 ![img-3.jpeg](img-3.jpeg)
 Figure 3. Key milestones of building a strong mandate
-GREENOBLE ALPES METROPOLE
+GRENOBLE ALPES METROPOLE
 
 Climate Neutrality Action Plan
 
@@ -413,7 +413,7 @@ https://planclimat.grenoblealpesmetropole.fr/37-charte-d-engagement.htm
 Also, in line with the partnership charter of the previous climate plan and in complementarity with the Municipality Engagement Charter, a Partner Engagement Charter is being put in place at the moment. https://planclimat.grenoblealpesmetropole.fr/25-des-acteurs-engages.htm
 
 For many years, the territory of Grenoble has been marked by its democratic vitality, its solidarity mechanisms and its citizen participation. To achieve carbon neutrality, it is necessary to collaborate, to work with all perspectives of sustainability and to be open to other stakeholders and people's ways
-GREENOBLE ALPES METROPOLE
+GRENOBLE ALPES METROPOLE
 
 Climate Neutrality Action Plan
 
@@ -438,7 +438,7 @@ Each SECAP was developed from a territorial analysis including, in particular fo
 ## Co-create an action portfolio
 
 Based on previous experiences in climate strategies, innovation projects and sustained partnership policy, the metropole has shown a great capacity to provide sustainable solutions. To go further, it is necessary to develop the organization and collaboration to be able to scale up the tested solutions.
-GREENOBLE ALPES MÉTROPOLE
+GRENOBLE ALPES MÉTROPOLE
 
 Climate Neutrality Action Plan
 
@@ -459,7 +459,7 @@ The mobilization of the metropole through its competences has thus been chosen a
 Implementation involves a significant number of stakeholders both internally and externally to the metropole. The ALEC (Local Energy and Climate Agency), operated as a SPL (local public company), aims to raise awareness, advise and support different audiences (individuals, businesses, municipalities), through its various mechanisms (Espace Info Energie, general public events, Métroénergies, etc.). Highlighted during the citizens' consultation, the exemplary nature of the Grenoble Metropole is an important dimension in the perspective of engaging the population and all stakeholders in the environmental transition. In this sense, the actions in the Exemplary Administration Plan are implemented to reduce the carbon impact of the metropole' activities and agents. The ambition for the revision of the SECAP will be to extend this exemplary commitment to all stakeholders in the public sector in the territory.
 
 Finally, monitoring of the implementation of the climate plan is also ensured through the Territoire Engagé Climat-Air-Energie (ex-Cit'ergie) label, the French version of the "European Energy Award"
-GREENOBLE ALPES METROPOLE
+GRENOBLE ALPES METROPOLE
 
 Climate Neutrality Action Plan
 
@@ -514,7 +514,7 @@ The metropole relies on all the socio-economic actors of the territory, mobilize
 |  AFOLU | Included | - | -  |
 Climate Neutrality Action Plan
 
-GRENDALE ALPES MÉTROPOLE
+GRENOBLE ALPES MÉTROPOLE
 
 |   | Includes agricultural emissions only, no change in land use | - | -  |
 | --- | --- | --- | --- |
@@ -557,7 +557,7 @@ The category "Others" in the economic model of NetZeroCities includes emissions 
 ¹ https://www.lcsqa.org/system/files/rapport/MTES_Guide_methodo_elaboration_inventories_PCIT_mar s2019.pdf
 #
 
-GREENBULE ALPIS METROPOLE
+GRENOBLE ALPIS METROPOLE
 
 Climate Neutrality Action Plan
 
@@ -597,11 +597,11 @@ Table 3: Emission factors applied
 |  Natural gas | 56,3 | 5 | 0,1  |
 |  Coal (PCS>23 865 kJ/kg) | 94,6 | 300 | 1,5  |
 |  Gas | 72,3 | 77,1 | 2  |
-|  Diesel (not for vehicules) | 74,7 | 7 | 2  |
+|  Diesel (not for vehicles) | 74,7 | 7 | 2  |
 |  Electricity | 33,8 (gCO2/kWh) |  |   |
 #
 
-GREENEAL &amp; HES
+GRENOBLE ALPES
 
 MÉTROPOLE
 
@@ -658,8 +658,6 @@ Table 6: Activity by source sectors
 |  Transport need - heavy duty trucks (>3.5 t) (M km/year) | 108 |  |   |
 |  Buildings & Heating |  |  |   |
 |  Heating demand (space heating + domestic hot water) (GWh/year) | 3893 |  |   |
-Climate Neutrality Action Plan
-
 |  Electricity |  |  |   |
 | --- | --- | --- | --- |
 |  Electricity demand within city boundaries (GWh/year) |  | 3458 |   |
@@ -672,7 +670,7 @@ Climate Neutrality Action Plan
 6
 #
 
-GREENOBLE ALPES METROPOLE
+GRENOBLE ALPES METROPOLE
 
 Climate Neutrality Action Plan
 
@@ -698,7 +696,7 @@ In 2021, the territory consumed 10.1 TWh of energy, of which  $33\%$  was electr
 LOCAL RENEWABLE ENERGY PRODUCTION
 #
 
-GREENOBLE ALPES METROPOLE
+GRENOBLE ALPES METROPOLE
 
 Climate Neutrality Action Plan
 
@@ -751,7 +749,7 @@ Industry currently represents around 40 % of direct emissions and therefore repr
 In the territory of the Metropole, ten sites are subject to the EU Emissions Trading Scheme (EU ETS), of which four sites are for heat production and six are industrial companies (Vicat Saint-Egrève, Arkema Jarrie, Pont de Claix Chemical Platform, AirLiquide Hydrogene etc.). According to the NetZeroCities Info Kit for Cities, these industries can be excluded from the greenhouse gas emissions inventory.
 
 These industries are major emitters, but the decrease in emissions in the territory since 1990 is mainly due to decarbonization and the cessation of these activities. Even if the Metropole has no direct influence on industrial emissions, we have chosen to include large industry in the Climate City Contract to shed light on these emissions and develop more collaborations to reduce them. The main levers for the industrial sector are of national or even European competence.
-GREENBULE ALPES METROPOLE
+GRENOBLE ALPES METROPOLE
 
 Climate Neutrality Action Plan
 
@@ -869,7 +867,7 @@ The intercommunal local urban development plan is a local document for urban pla
 The following table lists the policies, strategies and regulations relevant to the development of the Climate City Contract. The table describes the strategy/plan in question, its impact on the climate neutrality ambition as well as the revisions in progress or need for revision. The list goes from the top to the bottom hierarchical level (European to local) as well as mandatory to political (regulatory to voluntary).
 #
 
-GREENBULB ALPES
+GRENOBLE ALPES
 
 MÉTROPOLE
 
@@ -888,28 +886,21 @@ O
 |  Regulation | National 2015 | Energy Transition Law for Green Growth (Loi de transition énergétique pour la croissance verte) | Aims to ensure that France contributes more effectively to the fight against climate change, to the preservation of the environment and to strengthening its energy independence. | EPCI coordinators of the TEE at the local level |   |
 |  Steering tool | National 2015 | Multi-annual energy programming (Programmations pluri-annuelles de l'énergie) | Energy policy management tools, created by the law on energy transition for green growth | 43 monitoring indicators on the themes of energy efficiency, primary energy consumption, particularly fossil fuels, renewable and recovery energies, etc. | Currently under revision (PPE 3)  |
 |  Plan | Regional 2020 | Regional development plan for sustainable development and territorial equality SRADDET | Land use planning document which merges several existing documents or plans. | 30% direct GHG in 2030 vs 2015 Carbon neutrality target 2050 | Currently under revision  |
-Climate Neutrality Action Plan
-
 |   |  | (Schéma régional d’aménagement, de développement durable et d’égalité des territoires SRADDET) |  |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  Plan | Local | Territorial coherence plan for the Grenoble region (Schéma de cohérence territoriale de la région grenobloise (SCoT)) | Urban planning document which establishes the major options for land use and development over a 20-year period: environment, housing, commerce, services, economy, agriculture, travel. |  | Revision started during the summer of 2024  |
 |  Plan | Local 2020 | Metropolitan Energy Climate Air Plan (Plan climat Air Energie Métropolitain) (Annex 4) | Local SECAP with climate objectives and actions from 2020-2030. The Plan also provides for the initiation of a “carbon neutrality 2050” study with a view to a mid-term revision of the Climate Plan. | 50% direct GHG in 2030 vs 2005 (-54% vs 1990) Striving for carbon neutrality by 2050 Reduce energy consumption by 40%, achieve a % of renewable and recovered energy of 30% Reduce air pollution (WHO thresholds 2005) Adapting the territory to climate change | Revision started with adoption in 2026  |
 |  Plan | Local 2019 | Land Use Regulation Plan (Plan Local d’Urbanisme Intercommunal, PLUi) | Land use regulation plan which defines the rules for construction and land use in the 49 communes of the territory. | Reduction of land consumption More sustainable urban planning, ambitious energy targets for new construction and renovation Better management of agricultural land and natural areas Adaptation to climate change, enhancement of landscapes, taking into account natural and technological risks. | Strengthening the environmental performance objectives of buildings (amendment 2 of the PLUI) – currently undergoing regulatory procedure Provisions for adapting the territory to climate change (amendment 3 of the PLUI, OAP “bioclimatization”)  |
 |  Plan | Inter-territorial 2018 | SUMP or Mobility Plan 2030 (Plan de Mobilité | Aims to anticipate developments in travel patterns and | Favor walking/ cycling (Chronovélo, parking, etc.) Bike travel x3. | Revision in progress, adoption  |
-
-6
-Climate Neutrality Action Plan
-
-|   |  | 2030)
-(Annex 18) | to promote the transition to active mobility and public transport. | Strengthening public transport (extension of the tramway network and an commuter train, etc.)
-" Peaceful metropole" , speed at 30 km/h. | planned for 2026  |
+|  |  | 2030) |  |  |  |
+| (Annex 18) | to promote the transition to active mobility and public transport. | Strengthening public transport (extension of the tramway network and a commuter train, etc.) |  |  |  |
+| " Peaceful metropole" , speed at 30 km/h. | planned for 2026 |  |  |  |  |
 | --- | --- | --- | --- | --- | --- |
-|  Program | Local | Local Housing Program (PLH)
-2
-(Programme Local Habitat) | Document for the observation, definition and programming of investments and actions in terms of housing policy on the scale of the 49 municipalities of the metropolitan territory. | Focuses on the production of public and private housing, on the improvement of the existing stock, and on the needs of specific populations (students, elderly people, travellers, etc.).
-Thermal renovation objectives | PLH 2017-2022 extended until 2024.
-Consultation phase of the next PLH 2025-2030  |
-|  Master plan | Local 2017 | Energy Master Plan
+| Program | Local | Local Housing Program (PLH) |  |  |  |
+| (Programme Local Habitat) | Document for the observation, definition and programming of investments and actions in terms of housing policy on the scale of the 49 municipalities of the metropolitan territory. | Focuses on the production of public and private housing, on the improvement of the existing stock, and on the needs of specific populations (students, elderly people, travellers, etc.). |  |  |  |
+| Thermal renovation objectives | PLH 2017-2022 extended until 2024. |  |  |  |  |
+| Consultation phase of the next PLH 2025-2030 |  |  |  |  |  |
+| Master plan | Local 2017 | Energy Master Plan |  |  |  |
 0
 (Schéma Directeur Energie)
 (Annex 17) | Roadmap for metropolitan policies for:
@@ -927,7 +918,7 @@ Promote renewable and recovery energies:
 /3 of waste recycled + 25,000 t of raw materials saved per year
 Benefit of - 29% GHG / year |   |
 |  Master plans | Local | Drinking water and sanitation master plans
-(Schémas directeurs eau potable et assainissement) | Multiple objectives with sanitation guidelines by 2030. | Technical objectives above all. | The next version will take climate issues more into account, for example Aquapole (water purification plant), responsible for a significant portion of the metropoles' emissions.  |
+| (Schémas directeurs eau potable et assainissement) | Multiple objectives with sanitation guidelines by 2030. | Technical objectives above all. The next version will take climate issues more into account, for example Aquapole (water purification plant), responsible for a significant portion of the metropole's emissions. |
 |  Strategy | Local updated in 2022 | Grenoble Alpes Economic Strategy 2030
 (Stratégie économique de Grenoble Alpes | 80 actions brought together in a project to develop and support companies in their | 4 Strategic axes:
 Support for innovation
@@ -937,17 +928,17 @@ Resilience, mobilization of economic actors in favor of |   |
 7
 8
 
-GÉNÉRALISATION MÉTROPOLE
+GRENOBLE ALPES MÉTROPOLE
 
 Climate Neutrality Action Plan
 
 O
 
-|   |  | 2030)
-(Annex 16) | environmental responsibility. | transitions
-Supporting economic players through responsible developments. |   |
+|  |  | 2030) |  |  |  |
+| (Annex 16) | environmental responsibility. | transitions |  |  |  |
+| Supporting economic players through responsible developments. |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- |
-|  Strategy | Local 2022 | Development Strategy of circular economy among businesses 2023-2026 (Stratégie de Développement de l'économie circulaire auprès des entreprises) | Combining Economy and Ecology, and stimulating the social and solidarity economy (SSE), which offers inspiring models for producing a good or service as well as governance processes, collective intelligence and general interest. | - 20% waste produced on the territory (2030)
+| Strategy | Local 2022 | Development Strategy of circular economy among businesses 2023-2026 (Stratégie de Développement de l'économie circulaire auprès des entreprises) | Combining Economy and Ecology, and stimulating the social and solidarity economy (SSE), which offers inspiring models for producing a good or service as well as governance processes, collective intelligence and general interest. | - 20% waste produced on the territory (2030) |  |
 t of waste redirected for reuse/repair
 , +200 jobs, the majority of which are in the ESS
 % reuse rate on collected deposits (objective of the Reuse Repair Master Plan – SD2R)
@@ -960,15 +951,13 @@ Moving differently
 Reducing our digital impact
 Adapting to climate change and promoting biodiversity
 Inform, raise awareness and train, to enable everyone to be an actor at their own level | Revision in progress with a PAE2 for 2024  |
-|  Plan | Local 2022 | Canopy plan (Plan canopée) | Sets an ambitious framework for action to plant, revegetate and de-impermeabilize towns and villages in the region. | Cover urban areas with 30% canopy by 2030 and 40% by 2050.
-trees planted since 2019 in metropolitan areas |   |
-|  Master plan | Local 2023 | Master plan for electric vehicle charging infrastructure and the development opportunity plan for NGV charging infrastructure Schéma directeur des infrastructures de recharge de véhicules électriques (SDIRVE) et du | Accelerate the deployment of electric vehicle charging infrastructure open to the public and ensure their territorial coherence. | 1875 charging points for electric vehicles (including around 1000 in the metropole) by 2030
-NGV stations in the region by 2030 |   |
-Climate Neutrality Action Plan
-
+| Plan | Local 2022 | Canopy plan (Plan canopée) | Sets an ambitious framework for action to plant, revegetate and de-impermeabilize towns and villages in the region. | Cover urban areas with 30% canopy by 2030 and 40% by 2050. |  |
+| trees planted since 2019 in metropolitan areas |  |  |  |  |  |
+| Master plan | Local 2023 | Master plan for electric vehicle charging infrastructure and the development opportunity plan for NGV charging infrastructure Schéma directeur des infrastructures de recharge de véhicules électriques (SDIRVE) et du | Accelerate the deployment of electric vehicle charging infrastructure open to the public and ensure their territorial coherence. | 1875 charging points for electric vehicles (including around 1000 in the metropole) by 2030 |  |
+| NGV stations in the region by 2030 |  |  |  |  |  |
 |   |  | schéma d'opportunité de développement des infrastructures de recharge GNV |  |  |   |
 | --- | --- | --- | --- | --- | --- |
-|  Strategy | Interterritorial 2019 | Interterritorial forest and wood strategy “Forest horizon 2030” and dedicated cooperation agreement (Stratégie interterritoriale forêt bois « Forêt horizon 2030 ») | Strategy aimed at meeting the objectives of adapting forests and wood industries to climate change, by 2030. | Promotion and maintenance of the carbon storage capacities of forests. Sequestration capacity of 148,000 tonnes of CO2 | Roadmap 2019-2023 then renewed for 2023-2030. 2022 cooperation agreement signed by the pinhabitants of the structures involved in the strategy: strengthening mobilization on the issue.  |
+|  Strategy | Interterritorial 2019 | Interterritorial forest and wood strategy “Forest horizon 2030” and dedicated cooperation agreement (Stratégie interterritoriale forêt bois « Forêt horizon 2030 ») | Strategy aimed at meeting the objectives of adapting forests and wood industries to climate change, by 2030. | Promotion and maintenance of the carbon storage capacities of forests. Sequestration capacity of 148,000 tonnes of CO2 | Roadmap 2019-2023 then renewed for 2023-2030. 2022 cooperation agreement signed by the representatives of the structures involved in the strategy: strengthening mobilization on the issue.  |
 |  Plan | Local 2022 | SPASER Scheme for promoting socially and environmentally responsible purchasing 2022-2026 (Schéma de promotion des achats socialement et écologiquement responsables) (Annex 20) | Roadmap for responsible public procurement (improving consideration of environmental, social and economic performance of purchases). | 100% of markets will include environmental clauses or criteria by 2025 Strengthening consideration of ecological transition issues |   |
 |  Plan | Local 2021 | Bicycle plan (Plan vélo) | 2021-2025 action plan to promote the development of cycling in metropolitan France. | Development of the cycle path network. Resorption of major blackheads. Maintenance of the cycle network. Secure cycle parking solutions Practical promotion of cycling. |   |
 |  Strategy | Local 2024 | Strategy for adapting buildings to summer heat (Stratégie d'adaptation du bâti à la chaleur estivale) | Adaptation to climate change. Cooling objectives for metropolitan buildings. | Support for energy renovation. Promote certain technological solutions compatible with SECAP objectives. Communication around summer comfort: sobriety, efficiency and development of solutions using renewable energies. | In progress, note to the Metropolitan Council of 02/09/24  |
@@ -1019,7 +1008,7 @@ Reduce final energy consumption by 40% compared to 2005;
 Achieve 30% of renewable and recovered energy in the territory's final energy consumption
 Reduce emissions of major pollutants to meet the 2005 WHO reference thresholds for population exposure.
 
-In Grenoble-Alpes Metropole, The SECAP has taken on the role of an umbrella plan for metropolitan policies, with the aim of being applied across all areas of competence and thus integrating other local strategies and plans (Energy Master Plan, Waster Master Plan, etc).
+In Grenoble-Alpes Metropole, The SECAP has taken on the role of an umbrella plan for metropolitan policies, with the aim of being applied across all areas of competence and thus integrating other local strategies and plans (Energy Master Plan, Waste Master Plan, etc).
 
 # SECAP mid-term assessment and associated action plans
 
@@ -1036,7 +1025,7 @@ These data, so far consistent with the 2030 GHG reduction targets, do not allow 
 / Mid-term review: transversal lessons
 
 The beginning of the SECAP's implementation was particularly marked by major changes outside the local context. The COVID epidemic resulted in the postponement of worksites and projects, the freezing of investment decisions by households and businesses, impacting schemes such as MurMur
-GREENBULE ALPES MÉTROPOLE
+GRENOBLE ALPES MÉTROPOLE
 
 Climate Neutrality Action Plan
 
@@ -1055,7 +1044,7 @@ The ambition of the region's climate action is recognized on a national scale (A
 However, despite the scale of the actions undertaken, they do not always achieve the results expected or necessary to reach our objectives, particularly when these actions are based on investments for individuals and economic players, or on a significant change in behavior or practices (e.g. waste sorting, reduction in kilometers traveled, change of heating system, energy renovation...). The new actions undertaken in recent years to better support changes in behavior, in conjunction with experts, must be pursued and amplified in line with the commitments of the Citizens' Climate Convention.
 
 / Mid-term review: thematic review (adaptation sections are not reproduced here)
-GREENBULE ALPES MÉTROPOLE
+GRENOBLE ALPES MÉTROPOLE
 
 Climate Neutrality Action Plan
 
@@ -1076,7 +1065,7 @@ Lastly, beyond energy efficiency, the challenge is to support the evolution of u
 While the potential for developing renewable energy in the region is limited by its geographical context, the Climate Air Energy Plan sets the objective of developing renewable and recovered energy (ENR&amp;R) and increasing their share to 30% of the region's energy consumption.
 
 To achieve this, the Metropole is relying on the second largest linear urban heating network (RCU) in France, whose energy mix it has continued to green to reach 82% renewable and recovered energy in 2022-2023, thanks to the commissioning of the Biomax wood-fired power plant. This effort will continue in the coming years with the transformation of the Villeneuve and Poterne power plants with
-GREENBULE ALPES METROPOLE
+GRENOBLE ALPES METROPOLE
 
 Climate Neutrality Action Plan
 
@@ -1179,7 +1168,7 @@ Mobilization of stakeholders and inhabitants
 Faced with the climate emergency, the Climate Air Energy Plan calls for an unprecedented mobilization of all stakeholders and inhabitants in the territory.
 
 To this end, the Metropole has endeavored to pursue partnerships with neighboring territories (SMMAG, SCOT, Positive Energy Territory project, Interterritorial Agricultural Project, structuring projects for shared waste treatment across southern Isère, partnership with the CAPV and the CC Grésivaudan on the Air Wood Bonus, etc.), to sustain the partnership dynamics initiated in the territory during previous climate plans (Annual Climate Plan Partners Forum, partners' website and dedicated
-GREENOBLE ALPES MÉTROPOLE
+GRENOBLE ALPES MÉTROPOLE
 
 Climate Neutrality Action Plan
 
@@ -1257,7 +1246,7 @@ Digital responsibility: participation in the GreenIT network and diagnosis since
 Awareness and training: communication campaigns, promotion of good practices, events, conferences, challenges with 4 annual highlights (Spring festival, May by bike, Sustainable Development week, Waste Reduction week), training: eco-driving, taking into account transition issues in the different professions, and more than 800 agents trained in the climate fresco (100% objective).
 
 Steering: the "climate" assessment of the Metropole budget in 2023 on the 2022 CA, renewed in 2024 and the development of the Greenhouse Gas report relating to the heritage and skills of the community
-GREENOBLE ALPES METROPOLE
+GRENOBLE ALPES METROPOLE
 
 Climate Neutrality Action Plan
 
@@ -1370,7 +1359,7 @@ The results in this column are based on running the model with the SECAP scenari
 Residual emissions consist of those emissions which can't be reduced through climate action and are being offset. Residual emissions may amount to a maximum of  $20\%$  as stated by the Mission Info Kit.
 #
 
-GREENOBLEALPES
+GRENOBLEALPES
 
 METROPOLE
 
@@ -1388,16 +1377,16 @@ In conjunction with the GHG inventory (A-1) and current policy analysis (A-2 Cur
 | --- | --- | --- | --- | --- |
 |  Description of the system | Stakeholders/actors involved | Network | Influence on the city's climate neutrality ambition | Interest in the city's climate neutrality ambition  |
 |  Technology/infrastructure | - Grenoble Alpes Metropole - Auvergne-Rhône-Alpes Region - Department of Isère - French state - neighboring territories and cities - Public companies (SMMAG, The Heating Company, Grenoble Alpes Water, EDF, etc.) - The Grenoble region urban planning agency - Private companies (Industry, Construction sector, etc.) | Road network, rail network, tram-and bus network, electricity network, digital network, urban heating system, waste management system, water treatment system... | Grenoble Alpes Metropole, SMMAG and its public or private companies influence services (waste, water, urban heating), urban planning and mobility services and therefore the city's carbon emissions. For technological innovation: academia | French state, Department of Isère, Grenoble Alpes Metropole, and its public/private companies globally have a strong interest in developing technological and infrastructural solutions that strive towards climate neutrality, although with a pace that can be considered insufficient. The region has a withdrawn role.  |
-GRENDBLEADES METROPOLE
+GRENOBLE ALPES METROPOLE
 
 Climate Neutrality Action Plan
 
 8
 
-|   | - Universities, research centers and technological institutes
-(Grenoble-Alpes University, Grenoble Polytechnic Institute, CEREMA, CSTB Grenoble, INRAE, INRIA, CNRS, CEA, IMT, UGA Foundation) |  |  |   |
+|  | - Universities, research centers and technological institutes |  |  |  |
+| (Grenoble-Alpes University, Grenoble Polytechnic Institute, CEREMA, CSTB Grenoble, INRAE, INRIA, CNRS, CEA, IMT, UGA Foundation) |  |  |  |  |
 | --- | --- | --- | --- | --- |
-|  Regulatory/Policy | - EU
+| Regulatory/Policy | - EU |  |  |  |
 French National Parliament
 Region (SRADDET)
 Departmental Prefect (SCOT)
@@ -1461,14 +1450,14 @@ Photovoltaic solar: structural: and insurance problems (capacity of building str
 Solar panels: land and urban planning constraints | energy for monitoring the consumption of green energy on the territory (requests to national state services) | because to low financial profitability
 Thermal solar panels, photovoltaic and micro-hydropower development projects still not attractive enough in actual economic conditions |   |
 | --- | --- | --- | --- | --- | --- |
-|  Mobility & transport | A large territory and partly in the mountains, difficult to cover with efficient and sustainable public transport and difficult to access by bike and on foot.
+| Mobility & transport | A large territory and partly in the mountains, difficult to cover with efficient and sustainable public transport and difficult to access by bike and on foot. |  |  |  |  |
 Physical or land constraints (crossing rivers, highway, railtrain,...) delaying the rapid deployment of certain dedicated cycle paths and increase their cost | Rail network maintenance, modernization and development insufficient nationwide.
 Air Vehicle Fund ZFE Light and Heavy Goods Vehicles: conversion bonus, blockage linked to the scrapping obligation | Multiple decision-makers involved in mobility: SMMAG for urban transport, bicycle and car-sharing services, multimodal exchange hubs;
 Metropole: cycle lanes and parking, parking structures, Region: intercity bus and regional train services, State: rail | High investment and maintenance costs for the railways. Under-investment for over 20 years by the State (SNCF réseau) in financing the maintenance and development of rail infrastructure and a lack/ageing of rolling stock (Region). | The culture of the car, which has long been a symbol of freedom, progress and social status.
 Difficulty changing behavior, particularly regarding abandoning the car as a mode of transport.  |
 
 0
-GREENOBLEAU PEST MOTOROLE
+GRENOBLEAU PEST MOTOROLE
 
 Climate Neutrality Action Plan
 
@@ -1490,23 +1479,23 @@ Very little impact of local communication tools
 
 Car-sharing: many more offers from drivers than from passengers, the social norm of car-sharing has yet to be developed..  |
 | --- | --- | --- | --- | --- | --- |
-|  Waste & circular economy | Very limited levers for reducing the amount of waste and especially plastic waste, generated by consumerism, over-packaging and programmed obsolescence.
+| Waste & circular economy | Very limited levers for reducing the amount of waste and especially plastic waste, generated by consumerism, over-packaging and programmed obsolescence. |  |  |  |  |
 
 Difficulty in finding recyclers for certain types of waste (plastic. Wood waste,...)
 
 Recycling is technically very difficult for certain sectors (example: electrical, electronic). | There is no possibility in France of imposing fines for poor sorting (unlike in other countries) | 80% of housing on the scale of the metropole is collective. Numerous intermediaries between the resident and the waste collector, rendering ineffective the refusal of poorly sorted garbage cans, or the Household Waste Collection Tax incentive (TEOMi), [tested on 36,000 inhabitants but the result is not conclusive |  | Difficulty in getting people to change their behavior and adopt the right sorting habits. Still high rate of sorting refusals :
 
 Difficulty in changing social norms to reduce waste at source, fight against food waste, change consumption practices : repair and reuse, make things last  |
-GREENOBLEAURCS METROPOLE
+GRENOBLEAURCS METROPOLE
 
 Climate Neutrality Action Plan
 
 2
 
 |   | Lack of space in some apartment blocks/neighborhoods for waste sorting. |  | in collective housing due to the impossibility of individualizing the tax.] |  | longer, buy second-hand, rather than throwing away and buying new
-Very little impact of local communication tools.  |
+| Very little impact of local communication tools. |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- |
-|  Green infrastructure & nature-based solutions | Lack of space in urban areas for vegetation, competition between different uses of space (cycle, walk, car (road and parking), housing, vegetation,...)
+| Green infrastructure & nature-based solutions | Lack of space in urban areas for vegetation, competition between different uses of space (cycle, walk, car (road and parking), housing, vegetation,...) |  |  |  |  |
 Greening and waterproofing projects still too small, a change in the scale of the projects is necessary in view of the adaptation challenge (e.g. in 10 years).
 Sequestration : Increased dieback and fire risk in the context of global warming
 Fragmentation of private forests is an obstacle to the structuring of a collective vision | PLUI regulations apply only to new projects or major renovations: No obligation for vegetation and waterproofing on existing buildings
@@ -1515,7 +1504,7 @@ Issues of maintenance of green spaces are the responsibility of the municipaliti
 Impermeable areas (e.g. parking lots) are more fragile, and therefore more difficult and costly to maintain: and this is the responsibility of the municipalities.
 Financial brake concerning protection projects to be carried out in private forests | Complexity of mobilizing stakeholders, particularly the log wood sector (very high demand which does not encourage commitment to more virtuous approaches)
 Greening spaces require changes in design and management practices meaning a new culture and new skills for public space planning professionals, and Acceptance of risk and collective responsibility for overflows in the event of extreme weather events (e.g. flooding of private properties, cellars).  |
-GREENOBLEALPES METROPOLE
+GRENOBLEALPES METROPOLE
 
 Climate Neutrality Action Plan
 
@@ -1523,16 +1512,16 @@ Climate Neutrality Action Plan
 
 |  Built environment | Thermal renovation: Not enough manpower (facade workers, waterproofers, etc.), and qualified professionals to meet the demand for renovation works. Need to strengthen the renovation sector and support skills development., (subject treated in the upcoming Call Enabling City Transformation) For companies, with MurMur TPE PME, the average time observed is significant (from 1 to 2 years) between entry into the system and the actual completion of the work. New construction: Lack of knowledge in the use of decarbonized materials (bio-sourced, geo-sourced, reused or recycled) | No controls associated with the implementation of the tertiary decree. | Multiplicity and regular evolution of schemes and interlocutors, which doesn't make it easy for the owner to understand. MurMur, has been constantly adapted, with a strong challenge of coordination and readability with State systems. | Effect of inflation which weighs heavily: increase in costs, and limit access to credits. Lack of self-financing and/or access to credit/debt capacity for households or public players. No economic profitability for renovation of private tertiary sector / no impact on rental prices. Lack of new economic models for building with biomaterials and renovating rather than building new. | Decision-making slowed by uncertainties: COVID, changes in prices and systems, despite an acceleration in 2022 (rise in energy prices) and after a strong recovery linked to the energy crisis, an inflation effect. Sobriety: Support for behavior change is difficult to mass and is closely linked to the energy context. Very little impact of local communication tools compared to National communication (which was a key factor in the success of the 2022 sobriety plan.) Risk of rebound effect following renovations, (increase in interior temperature)  |
 | --- | --- | --- | --- | --- | --- |
-GREENOBLEALPES METROPOLE
+GRENOBLEALPES METROPOLE
 
 Climate Neutrality Action Plan
 
 4
 
-|  Industry | Several industries with a large impact in terms of direct carbon emissions (cement, chemicals) | No local leverage / National/European regulations and tax mechanisms to be strengthened | Grenoble's "big industrialists" are small global players > international headquarters. Difficulties in reaching major transmitters despite numerous projects (local eco pact, economic strategy, partner charter, etc.)
-Desire to boost the local economy and welcome new industries, especially from local transition startups, without increasing emissions | Economic difficulties for the industrial sector in the agglomeration / no incentive to make long-term investments |   |
+| Industry | Several industries with a large impact in terms of direct carbon emissions (cement, chemicals) | No local leverage / National/European regulations and tax mechanisms to be strengthened | Grenoble's "big industrialists" are small global players > international headquarters. Difficulties in reaching major transmitters despite numerous projects (local eco pact, economic strategy, partner charter, etc.) |  |  |
+| Desire to boost the local economy and welcome new industries, especially from local transition startups, without increasing emissions | Economic difficulties for the industrial sector in the agglomeration / no incentive to make long-term investments |  |  |  |  |
 | --- | --- | --- | --- | --- | --- |
-|  Transversal subjects | Lack of land
+| Transversal subjects | Lack of land |  |  |  |  |
 Urban/rural territory, very diverse urbanization (barrier to mobility, heat networks, etc.) | Supportive policy at EU/Member State to be strengthened
 length and complexity of regulatory procedures | The monitoring and reporting tools of the various partners are not completely convergent (100 climate-neutral cities/covenant of mayors, TETE-CAE/EMT EEA reference framework) and the periods covered are rarely superimposable (climate plan 2020-2026 | Lack of financial resources for communities in a context of inflation, recession, etc.? | Difficulty to change
 Social norms and behavior with contradictory injunctions between an ecological discourse but an ever-present consumerist society (need to change benchmarks, uses, for example, on car).  |
@@ -1545,7 +1534,7 @@ Climate Neutrality Action Plan
 |   |  |  | then 2026-2032, COT 2022-2026, Citergie 2020-2024 then TETE-CAE 2024-2028, Climate City Contract 2024-2030, etc.). |  | Sobriety: Support for behavior change is difficult to mass and is closely linked to the energy context.  |
 | --- | --- | --- | --- | --- | --- |
 |   |  |  | These juxtapositions of plans and programs considerably complicate the reporting of the Metropole' climate policy, to the detriment of the conduct of operational projects. |  | Very little impact of local communication tools compared to National communication (which was a key factor in the success of the 2022 sobriety plan.)  |
-GREENOBLEAUPCS METROPOLE
+GRENOBLEAUPCS METROPOLE
 
 Climate Neutrality Action Plan
 
@@ -1554,7 +1543,7 @@ Climate Neutrality Action Plan
 |  Table 11: Opportunities and unexploited resources  |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- |
 |  System | Technology/infrastructure (technological/infrastructural) | Regulatory/Policy | Governance/Organizational | Financial (financial) | Behavior  |
-|  Energy systems | Development of peripheral district heating networks: Continue feasibility studies for the construction of new heat networks in its territory and put 6 new heat networks into service by 2030.
+| Energy systems | Development of peripheral district heating networks: Continue feasibility studies for the construction of new heat networks in its territory and put 6 new heat networks into service by 2030. |  |  |  |  |
 Possibilities to increase usage of the fatal heat produced by the industrial sector in the district heating network | Facilitate the installation of PV solar panels (PLUi relaxation and discussions with the Architecte des batiments de France)
 The development of heat pumps must be supported to avoid the associated risks (noise, urban landscape, neighbourhood conflicts, reinforcement of heat islands) | Launch of the update of the Energy Master Plan (EMP) to study heat and gaz network-évolution scenarios / in progress-
 Deliberation of the Metropolitan Cold Strategy in early 2024
@@ -1573,7 +1562,7 @@ Climate Neutrality Action Plan
 |  Mobility & transport | Active modes: Continued development of Chronovélô routes: 8 routes and 141 km ultimately Expansion of carpooling: offer | Strengthening policies favourable to the development of the train at European and French level | Revision of the PDM on the scale of the greater Grenoble region and the PCAEM. | At national level, Establishment of new financial or fiscal resources / a viable economic model for public transport services | Business travel plan, management of nearby bicycle parking.  |
 | --- | --- | --- | --- | --- | --- |
 |   |  Reliability and modernisation of interurban and Lyon train lines (RER project) Electrification of buses Alternative energy charging infrastructure: Upcoming opening of the Pont de Claix 2024 (GEG) and Eybens (2024) GNV stations | Strengthening the European and national framework for the decarbonisation of freight transport Implementation of the next stages of the 2 low-emission zones, Controls for ZFE Reduction of parking spaces by employers and businesses National ; include vehicle weight in the definition of vignettes for entry into low-emission zones (proposed by the citizens' convention) | Consolidation of SMMAG's perimeter as AOM for 3 neighboring communities (in progress) Delegation by the Region to SMMAG of intercity express bus routes on its territory (achieved in September) Urban logistics: implementing the roadmap with logistics players, Drawing up a master plan for underground parking lots Complete, shared parking observatory | Finding new external financing for significant investment Vehicle fleets of public and private companies: reducing vehicle fleets while greening them Extension of the pay-per-use parking. Call for expressions of interest for the deployment of IRVEs by private players (programmed) | Exemplarity of the Metropolis and other public players Work with expert researchers in behavior change and service design At a national level, promotion of sobriety in transport, including lighter vehicles  |
-GREENOBLEAURCS METROPOLE
+GRENOBLEAURCS METROPOLE
 
 Climate Neutrality Action Plan
 
@@ -1581,7 +1570,7 @@ Climate Neutrality Action Plan
 
 |   |  | Experience regulatory framework for congestion charging |  |  |   |
 | --- | --- | --- | --- | --- | --- |
-|  Waste & circular economy | Increase in the capacity of the sorting center (completed in 2024)
+| Waste & circular economy | Increase in the capacity of the sorting center (completed in 2024) |  |  |  |  |
 modernization of the waste incinerator (Athan or) with new technologies (optimized heat production and cogeneration)
 Better knowledge of the GHG impact will make it possible to prioritize action and investments.
 Optimization of tours in relation to collection frequency, Elimination of downgraded tours: and continued replacement of refuse collection vehicles with CNG engines planned
@@ -1597,7 +1586,7 @@ Development of the ESS players network
 REP sport: partnership with sports and leisure structures |  | Strengthen support for waste sorting in order to reduce sorting refusals (36%)
 Raise awareness of more sustainable consumption, reuse, reparation, zero waste : new animations/events – planned-, communication
 Bring together all the players in the area (e.g. second-hand shops, sports recycling centres) and make them known to local residents (transition guide).  |
-GREENOBLEAURCS METROPOLE
+GRENOBLEAURCS METROPOLE
 
 Climate Neutrality Action Plan
 
@@ -1605,14 +1594,11 @@ Climate Neutrality Action Plan
 
 |   | 2025). This depends on the mobilization of the actors. |  |  |  |   |
 | --- | --- | --- | --- | --- | --- |
-|  Industry | Industrial and territorial ecology (EIT) roadmap currently being developed. Relying on the southern industrial park for the various sectors, in particular the hydrogen sector
-
-New innovations for transitions, driven by the region's research and innovation ecosystem and start-ups | Strengthening of the European Emissions Trading System
-
-Local implementation of national ecological planning with major industries | climate plan review: a working group on major industries to be integrated into the local eco pact
-
-define a strategy for attracting new industries that is compatible with achieving carbon neutrality |  |   |
-|  Green infrastructure & nature-based solutions | Continue the planting and desilting initiatives launched as part of the canopy plan and the training of the city's services concerned
+| Industry | Industrial and territorial ecology (EIT) roadmap currently being developed. Relying on the southern industrial park for the various sectors, in particular the hydrogen sector |  |  |  |  |
+| New innovations for transitions, driven by the region's research and innovation ecosystem and start-ups | Strengthening of the European Emissions Trading System |  |  |  |  |
+| Local implementation of national ecological planning with major industries | climate plan review: a working group on major industries to be integrated into the local eco pact |  |  |  |  |
+| define a strategy for attracting new industries that is compatible with achieving carbon neutrality |  |  |  |  |  |
+| Green infrastructure & nature-based solutions | Continue the planting and desilting initiatives launched as part of the canopy plan and the training of the city's services concerned |  |  |  |  |
 
 Implementation of tools for measuring and monitoring artificialization (AURG – MOS)
 
@@ -1629,16 +1615,16 @@ Ensure the development of low-carbon constructions with the inclusion of strong 
 publicize successful examples
 
 Work with design offices, the construction federation and companies that operate in public spaces to encourage changes in practices et raise skills for greening and desilting.  |
-GREENOBLEAURS'S METROPOLE
+GRENOBLEAURS'S METROPOLE
 
 Climate Neutrality Action Plan
 
 0
 
-|   |  | the regulatory thresholds of RE2020.
-New agricultural and environmental protection zones (PAEN) being studied for 12,000 ha, to be implemented |  |  |   |
+|  |  | the regulatory thresholds of RE2020. |  |  |  |
+| New agricultural and environmental protection zones (PAEN) being studied for 12,000 ha, to be implemented |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- |
-|  Built environment | Strengthening the renovation industry and supporting the improvement of professionals' skills ('Enabling City transformation' call on the theme 'Professions to enable climate transition')
+| Built environment | Strengthening the renovation industry and supporting the improvement of professionals' skills ('Enabling City transformation' call on the theme 'Professions to enable climate transition') |  |  |  |  |
 Partnership with Ecowatt and Voltalis to work on shifting electricity consumption (sobriety) and mitigating peaks
 Promote the use of bio-sourced and decarbonized materials, / publish an educational document for project owners
 Test the reuse of existing premises, (study) in 2023 - 2024 the feasibility of an experiment on two weakened co-ownerships of the Olympic Village in Grenoble)
@@ -1656,24 +1642,23 @@ Continuation of Métroénergies and development of collective sobriety support i
 Communicate on renovation needs to adapt to high temperatures
 New national communication campaigns on sobriety and the need for building renovation
 Continuation of action taken on public lighting and awareness-raising among private stakeholders for the  |
-GREENOBLEALPES METROPOLE
+GRENOBLEALPES METROPOLE
 
 Climate Neutrality Action Plan
 
 1
 
 |   | metropolitan heat networks and by continuing to support the use of renewable thermal energy on existing buildings |  | renovating private office tertiary real estate. | Study with stakeholders new economic models to rebuild the city on the city and renovate/reorient existing buildings instead of building new ones, (national and European calls for projects) | application of lightning regulations (signs, windows, etc.)
-
-The challenge is to invent solutions with stakeholders, in order to work as much on the intrinsic obstacles and motivations (specific to each) as on the systemic obstacles and motivations (for the entire chain and its physical, legal, institutional environment, etc.)  |
+| The challenge is to invent solutions with stakeholders, in order to work as much on the intrinsic obstacles and motivations (specific to each) as on the systemic obstacles and motivations (for the entire chain and its physical, legal, institutional environment, etc.) |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- |
-|  Transversal subjects | Mass action for energy sobriety and efficiency and energy decarbonization/Multiplying projects
+| Transversal subjects | Mass action for energy sobriety and efficiency and energy decarbonization/Multiplying projects |  |  |  |  |
 Technical and social innovations | Strengthening and Convergence of Climate Objectives and Priorities of Decision-Makers at Different Scales
 Allow the experimentation of new devices that are not currently provided for by regulation
 Facilitate the implementation of control mechanisms, or even fines for the | Better coordination of the different levels of governance
 Simplification of the distribution of the roles of the various public actors
 Mobilization of stakeholders for the revision of the climate plan | Estimation of the financing needs for the decarbonization of the territory in the context of the revision of the climate plan
 Empowerment of private actors | National communication campaigns  |
-GREENOBLEAURS'S METROPOLE
+GRENOBLEAURS'S METROPOLE
 
 Climate Neutrality Action Plan
 
@@ -1700,7 +1685,7 @@ The increase in project costs could slow down the deployment of high-performance
 Waste &amp; circular economy: major projects to modernize equipment have been completed or are underway (sorting, incineration, collection centers, waste collection centers), now the main obstacles in this area are linked to the difficulties of changing practices to improve waste sorting and above all to reduce the production of waste at source, particularly plastic waste. Actions to raise awareness among residents will be continued and accentuated to promote reuse, repair, fight against food waste and plastic packaging, but local action remains ineffective in a context of society largely dominated by the consumer society. The metropolis acts by structuring the territory's stakeholders around the cluster and the circular economy network. In this respect, national regulations (circular economy law) allow for real change and must continue to be strengthened.
 
 Green infrastructure &amp; nature-based solutions: On this aspect, obstacles are identified in all the systems analyzed (technological, regulatory, financial, etc.). The revegetation and de-waterproofing of public spaces must be accelerated to meet the challenge of adapting the territory to climate change.
-GREENOBLE ALPES MÉTROPOLE
+GRENOBLE ALPES MÉTROPOLE
 
 Climate Neutrality Action Plan
 
@@ -1715,7 +1700,7 @@ A significant effort must be made on the renovation of public and private tertia
 Another important aspect in this sector is linked to the lack of qualified professionals working with building retrofitting, which is currently insufficient to meet the demand: a partnership is being set up with the building and public works sector to act quickly on this issue (the Metropole is developing a proposition based on this subject for the ongoing Mission Call Enabling City Transformation). It is also an objectif to work with the sector to build in a less emitting way (biosourced/decarbonized materials) and also built new economic models to rebuild the city on the city and renovate/reorient existing buildings instead of building new ones.
 
 Industry: Major decarbonization efforts have been made in the industrial sector, but emissions remain important. A few industries in the chemical and cement sectors are established in the region and these players have a major impact in terms of energy consumption and direct greenhouse gas emissions. Today, the industrial sector is weakened and changing in Grenoble, which makes it difficult to mobilize companies and invest in virtuous projects. These players are all the more difficult to reach since on a global scale they are small local branches, attached to large international groups, with little local autonomy. At the same time, the metropole's competence is limited, despite numerous projects to mobilize economic stakeholders (Local Economic Pact, Economic Strategy, Climate Plan Partner Charter, CEC Alpes, etc.), the metropole has no direct leverage over these players and as a result we are dependent on French and European regulations. The metropole's desire is to develop industry in the region while aiming for carbon neutrality major emitters remain difficult to reach. The implementation of ecological planning will be an opportunity to work on the subject with the State services in the territory
-GREENOBLE ALPES MÉTROPOLE
+GRENOBLE ALPES MÉTROPOLE
 
 Climate Neutrality Action Plan
 
@@ -1743,7 +1728,7 @@ Located at the crossroads of several alpine valleys, the territory is affected b
 Climate Neutrality Action Plan
 
 aspirations to live outside the urban area that have increased with the pandemic. Forests (55% of the territory), essential for carbon sequestration, are weakened by climate change (warming and extreme episodes) and the emergence of diseases.
-GREENBULE ALFES MÉTROPOLE
+GRENOBLE ALFES MÉTROPOLE
 
 Climate Neutrality Action Plan
 
@@ -1790,7 +1775,7 @@ Climate Neutrality Action Plan
 |   |  Shift to public & non-motorized transport | Integration of Pays Voironnais into SMMAGDeployment of constraints on parkingApproval of new SECAP | Deployment of constraints on employer parking (MPro)Improved accessibility to public transportReduced parking spaces in commercial areas | 26 | Reduced air pollutionImproved healthFree up public space for active mobility and greeningImproved quality of lifeReduced congestion, better accessibilityReduced noiseImproved physical activity and the health of citizensReduced road accidentsMore livable neighborhoods  |
 |   |  Increased car pooling |  |  | 0 |   |
 |   |  Electrification of cars + motorcycles | Reduction of fossil car use thanks to the implementation of Low emission zone and charging stations | New goal on electrification in the new Mobility Plan, new actions | 56 | Reduced air pollutionImproved healthReduced noise  |
-GREENOBLEAURS'S METROPOLE
+GRENOBLEAURS'S METROPOLE
 
 Climate Neutrality Action Plan
 
@@ -1821,7 +1806,7 @@ Improved indoor comfort  |
 |   |  Efficient lighting & appliances | General evolution towards energy efficient appliances
 Deployment of LED lighting |  | 1 | Reduced air pollution
 Improved health  |
-GREENOBLEAURCS METROPOLE
+GRENOBLEAURCS METROPOLE
 
 Climate Neutrality Action Plan
 
@@ -1836,7 +1821,7 @@ Densification/extension on main network | 409 | Reduced air pollution
 Improved health
 Improved indoor comfort  |
 | --- | --- | --- | --- | --- | --- |
-|  Electricity | Decarbonizing electricity generation | Approval of new Energy Master Plan
+| Electricity | Decarbonizing electricity generation | Approval of new Energy Master Plan |  |  |  |
 Accelerated implementation of photovoltaic panels on metropolitan buildings
 Continued metropolitan ENR purchase for internal needs
 Implementation of a monitoring system for ENR purchases (subject to State support) | National relaunch of nuclear power, doubling of photovoltaic, onshore wind | 83 | Reduced air pollution
@@ -1847,16 +1832,16 @@ Delivery of the new sorting center in 2024 | Continued implementation of the was
 Delivery of rebuilt incineration plant | 2 | Less need for new materials
 Improved circularity
 Improved air quality  |
-GREENOBLEALPES METROPOLE
+GRENOBLEALPES METROPOLE
 
 Climate Neutrality Action Plan
 
 1
 
-|   |  | Improved waste sorting
-Increased biogas production |  |  |   |
+|  |  | Improved waste sorting |  |  |  |
+| Increased biogas production |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- |
-|  Industry | Decarbonizing industrial processes | Implementation of the Local Economic Pact and Grenoble Alpes 2030 Economic Strategy
+| Industry | Decarbonizing industrial processes | Implementation of the Local Economic Pact and Grenoble Alpes 2030 Economic Strategy |  |  |  |
 New industrial strategies in SECAP 2026 | Less industrial emissions
 Increased attraction of companies in green tech | 285 | Improved air quality
 Less need for new materials
@@ -1880,7 +1865,7 @@ More livable neighborhoods  |
 |  Total |  |  |  | 997 |   |
 0
 
-GREENBULE ALPES METROPOLE
+GRENOBLE ALPES METROPOLE
 
 Climate Neutrality Action Plan
 
@@ -1903,7 +1888,7 @@ At the same time, although its territory has limited development potential, the 
 # → Impact pathway 2: Renovate residential and commercial buildings to reduce heating needs and increase the resilience of the territory
 
 The Metropole guides and financially supports the renovation of social housing and private apartment buildings since 2010 through the MurMur platform. Nearly 9 000 social housing units and more than 10 000 collective housing units have been supported. The support has been adjusted and expanded to include individual housing and VSEs/SMEs and the platform is now provided by a recognized Public Energy Efficiency Service. Carbon neutrality requires at least doubling the renovation rate of housing,
-GREENOBLE ALPES MÉTROPOLE
+GRENOBLE ALPES MÉTROPOLE
 
 Climate Neutrality Action Plan
 
@@ -1926,7 +1911,7 @@ To support this development, the Land Use Regulation Plan includes energy perfor
 Mobility is an important systemic factor in reducing greenhouse gas emissions, but also air pollutants, which are a real challenge in Grenoble. Transport represents 23% of the territory's emissions. For many years, the Metropole has been encouraging the reduction of private car use in favor of public transport, active mobility and shared cars through numerous projects (development of a tram network since 1987, cycle paths and bicycle rental services, speed limit of 30 km/h in urban centers, self-service bicycles and scooters, reserved carpooling lanes, carpooling services, deployment of park and ride facilities, etc.). Despite its actions, the reduction in kilometers traveled by car between 2005 and 2020 remains low and the drop in emissions in this sector is mainly driven by the improvement of the efficiency of the engines.
 
 Given the size and diversity of the territory, both urban and rural, geographically in the valley or in the mountains, mobility solutions must be adapted accordingly and strategies adjusted to the different typologies of users. In the dense urban area, the priority is to reduce car use over short distances in favor of active mobility (walking, cycling, etc.) and public transport, and to reduce the space for cars,
-GREENOBLE ALPES MÉTROPOLE
+GRENOBLE ALPES MÉTROPOLE
 
 Climate Neutrality Action Plan
 
@@ -1945,7 +1930,7 @@ A key issue for the territory remains strengthening the transport operator (SMMA
 → Impact pathway 4: Decarbonizing Industry
 
 The territory has six companies subject to the European Emissions Trading System (EU ETS) (including a chemical platform, a cement plant), new transition industries (new generation batteries and LEDs), small industries and research and innovation centers in the fields of health, energy and microelectronics. Although the metropole has little leverage to directly influence the decision makers of the large industries, we have chosen to include this sector, which represents 40% of the territory's emissions, in our Climate City Contract. The aim of this is to continue to stimulate the economic ecosystem (already started with the European Green Capital 2022, the Local Economic Pact, the Grenoble Alpes 2030 Economic Strategy, the Convention of Businesses for the Climate) in a dynamic
-GREENOBLE ALPES METROPOLE
+GRENOBLE ALPES METROPOLE
 
 Climate Neutrality Action Plan
 
@@ -2041,7 +2026,7 @@ Climate Neutrality Action Plan
 |  25. Decarbonize the industrial sector |  |  |  |  |  |  |  |  |  | X |  |  |  |  |  | X  |
 #
 
-GREENBULE ALPES
+GRENOBLE ALPES
 
 METROPOLE
 
@@ -2066,8 +2051,6 @@ Climate Neutrality Action Plan
 |   |  Possible barriers and measures to address them | Decision-making slowed down by uncertainties: COVID, price inflation (which weighs heavily : increase in costs, access to credit) The local System « Murmur » is in constant adaptation with a strong challenge of coordination and readability with State systems  |
 |   |   | In the future, the new state system will be more effective and more effective in reducing the impact of climate change on the economy.  |
 |   |  Inclusion criteria | 1.1 Building and structure 2.2 Building and structure 2.3 Building and structure 2.4 Building and structure 2.5 Building and structure 2.6 Building and structure 2.7 Building and structure 2.8 Building and structure 2.9 Building and structure 3.1 Building and structure 3.2 Building and structure 3.3 Building and structure 3.4 Building and structure 3.5 Building and structure 3.6 Building and structure 3.7 Building and structure 3.8 Building and structure 3.9 Building and structure 4.1 Building and structure 4.2 Building and structure 4.3 Building and structure 4.4 Building and structure  |
-Climate Neutrality Action Plan
-
 |   |  | Lack of professionals in certain renovation sectors (facade workers, waterproofers, etc.) and a decline in qualified professionals  |
 | --- | --- | --- |
 |   |  Exploratory actions | Reinforce thermal renovation action. Target : 750 individual houses, 2500 collective housing units, 1 000 social housing units per year.  |
@@ -2084,7 +2067,7 @@ A part of subsector 3.3 : 46 M€
 A part of subsector 3.4 : 669 M€  |
 
 9
-GREENBULE ALPES
+GRENOBLE ALPES
 MÉTROPOLE
 Climate Neutrality Action Plan
 0
@@ -2098,12 +2081,12 @@ Lead the network of local energy stakeholders
 Engage with inhabitants in energy savings
 Supporting companies in their energy transition  |
 |  Reference to impact pathway | Impact pathway | Impact pathway 2: Renovate residential and commercial buildings to reduce heating needs and increase the resilience of the territory
-Impact pathway 1: Decarbonize heating, relying primarily on 100% decarbonized and extended urban heating networks  |
+| Impact pathway 1: Decarbonize heating, relying primarily on 100% decarbonized and extended urban heating networks |  |  |
 |  Systemic lever |  | 3.3 Efficient lighting & appliances
 Decarbonizing heating
 Planning, governance and mobilization  |
 |   |  Outcome (according to module B-1.1) | A part of subsector 3.3 : 1 ktCO2eq
-A part of subsector 3.4 : 409 ktCO2eq  |
+| A part of subsector 3.4 : 409 ktCO2eq |  |  |
 |  Implementation | Responsible bodies/person for implementation | Grenoble Alpes Metropole, cities  |
 |  Action scale & addressed entities | Action scale | All citizens, public actors and companies  |
 |   |  Involved stakeholders | Grenoble Alpes Metropole, associations (local agence of energy), citizens  |
@@ -2113,8 +2096,6 @@ A part of subsector 3.4 : 409 ktCO2eq  |
 Partnerships with Ecowatt (electricity weather application) and Voltalis (connected energy management solution) will be established to promote the shift in electricity consumption and the mitigation of peaks (shedding). A metropolitan “cold strategy” is implemented since 2024. It will improve summer comfort and direct the different building typologies towards the most suitable solutions for cooling.  |
 |   |  Possible barriers and measures to address them | Support for behavior change is difficult to scale and it depends on the energy context (national communication is predominant). However, it would seem that the sobriety measures (notably the set temperatures) put in place in the winter of 2022-2023 are lasting over time.  |
 |  Exploratory actions |  | None  |
-Climate Neutrality Action Plan
-
 |  Impact & cost | Generated renewable energy (if applicable) | Not applicable  |
 | --- | --- | --- |
 |   |  Removed/substituted energy, volume, or fuel type | Not available  |
@@ -2127,7 +2108,7 @@ A part of subsector 3.3 : 46 M€
 A part of subsector 3.4 : 669 M€  |
 
 1
-GREENOBLE ALPES METROPOLE
+GRENOBLE ALPES METROPOLE
 
 Climate Neutrality Action Plan
 
@@ -2135,18 +2116,18 @@ Climate Neutrality Action Plan
 
 | Action outline | Action name | 3/ Building the city differently : Local urban planning scheme (PLUi) and bioclimatic buildings |
 | --- | --- | --- |
-| Action type | I/ Less energy consumption |
-| Action description | - Make health a strategic axis of the Local Intercommunal Urban Planning document (PLUi)
+| Action type | I/ Less energy consumption |  |
+| Action description | - Make health a strategic axis of the Local Intercommunal Urban Planning document (PLUi) |  |
 Build a resilient territory
 Design bioclimatic neighborhoods and buildings
 Impose energy performance requirements in new construction |
 | Reference to impact pathway | Impact pathway | Impact pathway 2: Renovate residential and commercial buildings to reduce heating needs and increase the resilience of the territory |
-| Systemic lever | 3.1 Buildings renovations (envelope)
+| Systemic lever | 3.1 Buildings renovations (envelope) |  |
 Energy efficient new buildings
 Urbanism |
 | Outcome (according to module B-1.1) | A part of subsector 3.1 : 32 ktCO2eq
-A part of subsector 3.2 : 5 ktCO2eq |
-| Implementation | Responsible bodies/person for implementation | Grenoble Alpes Metropole, municipalities |
+| A part of subsector 3.2 : 5 ktCO2eq |  |
+| Implementation | Responsible bodies/person for implementation: Grenoble Alpes Metropole, municipalities |
 | Action scale & addressed entities | Municipalities, all citizens, city developers |
 | Involved stakeholders | Grenoble Alpes Metropole, cities, city developers, citizens |
 | Comments on implementation – consider mentioning resources, timelines, milestones | The local intercommunal town planning plan (PLUi) is the reference document which sets rules for all the cities. It sets strong requirements in terms of tree protection, urban greening or energy performances for buildings and renewable energies (better than the French standard « RE2020 »). This ambition is reinforced through successive modifications.
@@ -2157,11 +2138,9 @@ Urban projects specifically carried out by Grenoble Alpes Metropole include exem
 PLUi will soon include a bioclimatic orientation, in order to fight against urban heat islands in each project.
 An issue is to accelerate the low carbon construction and the rehabilitation of existing buildings such as the production of social housing in the existing stock. |
 | Possible barriers and measures to address them | ➢ High construction costs slow down operations and sometimes the environmental ambition
-➢ The district heating network, due to its low carbon energy mix, does not encourage builders to fully invest in the decarbonization of construction. |
+| ➢ The district heating network, due to its low carbon energy mix, does not encourage builders to fully invest in the decarbonization of construction. |  |
 | Exploratory actions | Application for the Mission City Call : Enabling City Transformation together with several other French cities. The proposal on the topic of “Transition professions” includes the development of a centre for learning, job matching and resources concerning sustainable construction and buildings. |
-| Impact & cost | Generated renewable energy (if applicable) | Not applicable |
-Climate Neutrality Action Plan
-
+| Impact & cost | Generated renewable energy (if applicable): Not applicable |
 |  Removed/substituted energy, volume, or fuel type | Not available  |
 | --- | --- |
 |  GHG emissions reduction estimate (total) per emission source sector | Building & Heating :
@@ -2175,7 +2154,7 @@ A part of subsector 3.2 : 134 M€  |
 3
 #
 
-GREENBULE ALPES
+GRENOBLE ALPES
 
 METROPOLE
 
@@ -2203,7 +2182,7 @@ Climate Neutrality Action Plan
 |   |  Total costs | Not applicable  |
 5
 
-GREENBULE ALPES
+GRENOBLE ALPES
 
 METROPOLE
 
@@ -2230,19 +2209,17 @@ Densification of the main district heating network
 Development of new secondary district heating networks
 Updating of the Energy Master Plan (SDE) in 2024 (new ambition, goals)  |
 |   |  Exploratory actions | Extension of the main district heating system to serve 30 % of the households.  |
-Climate Neutrality Action Plan
-
 |  Impact & cost | Generated renewable energy (if applicable) | Not available  |
 | --- | --- | --- |
 |   |  Removed/substituted energy, volume, or fuel type | Not available  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | Building & Heating :
-A part of subsector 3.4 : 409 ktCO2eq  |
+| A part of subsector 3.4 : 409 ktCO2eq |  |  |
 |   |  GHG emissions compensated (natural or technological sinks) | Not applicable  |
 |   |  Total costs | CAPEX (2020-2030) :
 A part of subsector 3.4 : 669 M€  |
 
 6
-GREENBULEN JESS METROPOLE
+GRENOBLEN JESS METROPOLE
 
 Climate Neutrality Action Plan
 
@@ -2250,23 +2227,21 @@ Climate Neutrality Action Plan
 
 | Action outline | Action name | 6/ Increase the production of renewable electricity and biogas |
 | --- | --- | --- |
-| Action type | II/ More renewables |
-| Action description | - Produce renewable gas locally - Support the production of renewable electricity - Make the production of renewable energy mandatory for new constructions - Develop the purchase of renewable energy |
+| Action type | II/ More renewables |  |
+| Action description | - Produce renewable gas locally - Support the production of renewable electricity - Make the production of renewable energy mandatory for new constructions - Develop the purchase of renewable energy |  |
 | Reference to impact pathway | Impact pathway | Impact pathway 1: Decarbonize heating, relying primarily on 100% decarbonized and extended urban heating networks |
-| Systemic lever | 3.4. Decarbonizing heating 4.1. Shift to renewable electricity |
-| Outcome (according to module B-1.1) | A part of subsector 3.4 : 409 ktCO2eq A part of subsector 4.1 : 83 ktCO2eq |
+| Systemic lever | 3.4. Decarbonizing heating 4.1. Shift to renewable electricity |  |
+| Outcome (according to module B-1.1) | A part of subsector 3.4 : 409 ktCO2eq A part of subsector 4.1 : 83 ktCO2eq |  |
 | Implementation | Responsible bodies/person for implementation | Grenoble Alpes Metropole ; public authorities, companies, cities, citizens |
-| Action scale & addressed entities | Grenoble Alpes Metropole, cities, companies, citizens |
-| Involved stakeholders | Grenoble Alpes Metropole, cities, companies, citizens, entreprises developing renewables |
-| Comments on implementation – consider mentioning resources, timelines, milestones | Grenoble Alpes Metropole supports the development of photovoltaic solar power on its territory through several actions: ➢ Creation of a solar cadastre in 2021 (free online tool addressed to citizens) ➢ Installation of solar panels on metropolitan buildings and facilities (goal of installing 4.5 MWp of capacity by 2030) ➢ Support for civic companies producing RE&R: Energy Citoyenne, SCIC Enercoop Grenoble Alpes Metropole developed in 2016 a methanisation plant on wastewater (20 GWh of biogas produced per year) and is developing a similar unit on a composting site (production of 7 GWh from organic waste) Coming soon : ➢ Facilitate the installation of photovoltaic solar panels (targeting already artificialized areas and in particular parking lots, experimentation with agrivoltaics, etc.) ➢ Facilitate energy production by citizen communities. |
-| Possible barriers and measures to address them | For solar photovoltaic : classic constraints in the sector such as land, town planning and geographical (protection perimeters), insurance, structural roofing (phasing problem with work programs such as waterproofing, insulation). For biogas, few agricultural inputs in the territory (main input to supply the methanizer) which leads to a low potential (beyond wastewater and organic waste) |
-| Exploratory actions | Although not under direct metropolitan influence, a new national goal of reducing by 50 % the fossil content of the electricity mix by 2030 also supports this action. |
+| Action scale & addressed entities | Grenoble Alpes Metropole, cities, companies, citizens |  |
+| Involved stakeholders | Grenoble Alpes Metropole, cities, companies, citizens, entreprises developing renewables |  |
+| Comments on implementation – consider mentioning resources, timelines, milestones | Grenoble Alpes Metropole supports the development of photovoltaic solar power on its territory through several actions: ➢ Creation of a solar cadastre in 2021 (free online tool addressed to citizens) ➢ Installation of solar panels on metropolitan buildings and facilities (goal of installing 4.5 MWp of capacity by 2030) ➢ Support for civic companies producing RE&R: Energy Citoyenne, SCIC Enercoop Grenoble Alpes Metropole developed in 2016 a methanisation plant on wastewater (20 GWh of biogas produced per year) and is developing a similar unit on a composting site (production of 7 GWh from organic waste) Coming soon : ➢ Facilitate the installation of photovoltaic solar panels (targeting already artificialized areas and in particular parking lots, experimentation with agrivoltaics, etc.) ➢ Facilitate energy production by citizen communities. |  |
+| Possible barriers and measures to address them | For solar photovoltaic : classic constraints in the sector such as land, town planning and geographical (protection perimeters), insurance, structural roofing (phasing problem with work programs such as waterproofing, insulation). For biogas, few agricultural inputs in the territory (main input to supply the methanizer) which leads to a low potential (beyond wastewater and organic waste) |  |
+| Exploratory actions | Although not under direct metropolitan influence, a new national goal of reducing by 50 % the fossil content of the electricity mix by 2030 also supports this action. |  |
 | Impact & cost | Generated renewable energy (if applicable) | Not available |
-| Removed/substituted energy, volume, or fuel type | Not available |
-Climate Neutrality Action Plan
-
+| Removed/substituted energy, volume, or fuel type | Not available |  |
 |   | GHG emissions reduction estimate (total) per emission source sector | Building & Heating : A part of subsector 3.4 : 409 ktCO2eq
-Electricity : A part of subsector 4.1 : 83 ktCO2eq  |
+| Electricity : A part of subsector 4.1 : 83 ktCO2eq |  |  |
 | --- | --- | --- |
 |   | GHG emissions compensated (natural or technological sinks) | Not applicable  |
 |   | Total costs | CAPEX (2020-2030) :
@@ -2274,7 +2249,7 @@ A part of subsector 3.4 : 669 M€
 A part of subsector 4.1 : 49 M€  |
 
 8
-GREENOBLE ALPES METROPOLE
+GRENOBLE ALPES METROPOLE
 
 Climate Neutrality Action Plan
 
@@ -2307,8 +2282,6 @@ Development and improvement of the Prime Air Bois system and continuation of the
 ➢ Costs of efficient wood heating systems or vehicles with little or no polluting engines.
 ➢ Electric motorization is still very expensive and with little autonomy, which is problematic for heavy vehicles. Abandonment by many constructors of gas vehicle models, to adapt to the requirements of the European Union favoring electric vehicles.  |
 |   |  Exploratory levers | None  |
-Climate Neutrality Action Plan
-
 |  Impact & cost | Generated renewable energy (if applicable) | Not applicable  |
 | --- | --- | --- |
 |   |  Removed/substituted energy, volume, or fuel type | Not applicable  |
@@ -2317,7 +2290,7 @@ Climate Neutrality Action Plan
 |   |  Total costs | Not applicable  |
 1
 
-GREENBULE ALPES
+GRENOBLE ALPES
 
 MÉTROPOLE
 
@@ -2325,16 +2298,16 @@ Climate Neutrality Action Plan
 
 | Action outline | Action name | 8. Promote active mobility (cycling, walking) |
 | --- | --- | --- |
-| Action type | IV. Sustainable mobility |
-| Action description | - Continue implementing the cycling plan
-Implement the pedestrian plan |
+| Action type | IV. Sustainable mobility |  |
+| Action description | - Continue implementing the cycling plan |  |
+| Implement the pedestrian plan |  |  |
 | Reference to impact pathway | Impact pathway | Impact pathway 3: Accelerate the transition towards low-carbon mobility |
-| Systemic lever | 1.1. Reduced motorised passenger transportation need
+| Systemic lever | 1.1. Reduced motorised passenger transportation need |  |
 Shift to public and non-motorised transport
 Air quality |
 | Outcome (according to module B-1.1) | A part of subsector 1.1 : 22 ktCO2eq
-A part of subsector 1.2 : 26 ktCO2eq |
-| Implementation | Responsible bodies/person for implementation | Grenoble Alpes Metropole, Mobility Union (SMMAG), Cities, |
+| A part of subsector 1.2 : 26 ktCO2eq |  |
+| Implementation | Responsible bodies/person for implementation: Grenoble Alpes Metropole, Mobility Union (SMMAG), cities |
 | Action scale & addressed entities | Grenoble Alpes Metropole, cities |
 | Involved stakeholders | Grenoble Alpes Metropole, cities, urban planers, citizens |
 | Comments on implementation – consider mentioning resources, timelines, milestones | The modal share of cycling continues to increase in the city, with a strong acceleration since 2019. Grenoble Alpes Metropole has implemented an ambitious “bicycle plan” [2021 - 2025] (€5M/year) to support the action carried by the SMMAG :
@@ -2348,18 +2321,18 @@ metropolitan funds for the purchase of a bicycle
 Continued development of the Chronovélo axes: 8 axes and 141 km in the long term. |
 | Possible barriers and measures to address them | Physical or land constraints delaying the rapid deployment of certain cycle paths (example: Combe de Gières) |
 | Exploratory levers | None |
-| Impact & cost | Generated renewable energy (if applicable) | Not applicable |
+| Impact & cost | Generated renewable energy (if applicable): Not applicable |
 | Removed/substituted energy, volume, or fuel type | Not available |
 | GHG emissions reduction estimate (total) per emission source sector | Transport :
 • A part of subsector 1.1 : 22 ktCO2eq
 • A part of subsector 1.2 : 26 ktCO2eq |
 | GHG emissions compensated (natural or technological sinks) | Not applicable |
-|  | Total costs and costs by CO2e unit | CAPEX (2020-2030) :
+|  | Total costs and costs by CO2e unit: CAPEX (2020-2030) |
 A part of subsector 1.1 : 0 M€ (just operational costs)
 A part of subsector 1.2 : 45 M€ |
 2
 
-GREENBULE ALPES
+GRENOBLE ALPES
 
 METROPOLE
 
@@ -2369,10 +2342,10 @@ Climate Neutrality Action Plan
 | --- | --- | --- |
 |   |  Action type | IV. Sustainable mobility  |
 |   |  Action description | - Develop the public transport offer and improve the quality of service
-Improve intermodality and complementarities with the structuring public transport network  |
+| Improve intermodality and complementarities with the structuring public transport network |  |  |
 |  Reference to impact pathway | Impact pathway | Impact pathway 3: Accelerate the transition towards low-carbon mobility  |
 |   |  Systemic lever | 1.2. Shift to public and non-motorised transport
-Air quality  |
+| Air quality |  |  |
 |   |  Outcome (according to module B-1.1) | A part of subsector 1.2 : 26 ktCO2eq  |
 |  Implementation | Responsible bodies/person for implementation | Mobility Union (SMMAG), Cities,  |
 |   |  Action scale & addressed entities | Grenoble Alpes Metropole, cities, citizens  |
@@ -2390,22 +2363,20 @@ Renewal of rolling stock (tramway) and extension of the depot  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | Transport : A part of subsector 1.2 : 26 ktCO2eq  |
 |   |  GHG emissions compensated (natural or technological sinks) | Not applicable  |
 |   |  Total costs | CAPEX (2020-2030) : A part of subsector 1.2 : 45 M€  |
-Climate Neutrality Action Plan
-
 |  Action outline | Action name | 10. Improve carpooling and car sharing  |
 | --- | --- | --- |
 |   | Action type | IV. Sustainable mobility  |
 |   | Action description | - Encourage the shift from individual cars to shared cars  |
 |  Reference to impact pathway | Impact pathway | Impact pathway 3: Accelerate the transition towards low-carbon mobility  |
 |   | Systemic lever | 1.3 Car pooling
-Air quality  |
+| Air quality |  |  |
 |   | Outcome (according to module B-1.1) | Subsector 1.3 : 0,2 ktCO2eq  |
 |  Implementation | Responsible bodies/person for implementation | Mobility Union (SMMAG), employers (companies), citizens  |
 |   | Action scale & addressed entities | Grenoble Alpes Metropole, companies, citizens  |
 |   | Involved stakeholders | Mobility Union (SMMAG), Grenoble Alpes Metropole, companies, citizens  |
 |   | Comments on implementation – consider mentioning resources, timelines, milestones | Car sharing is an effective solution to reduce the solo driving and thus the overall kilometers traveled by cars (58% of home-work trips are today by car). The SMMAG (local public authority for mobility ) developps a dedicated carpooling services « M’Covoit », dedicated lane for carpooling on the highway or carsharing (with the existing service « Citiz »)  |
 |   |  | **Coming soon :**
-Strengthening the carpooling offer by opening new lines (Vizille-Eybens line to Inovallée)  |
+| Strengthening the carpooling offer by opening new lines (Vizille-Eybens line to Inovallée) |  |  |
 |   | Possible barriers and measures to address them | There is significantly more drivers compared to passengers being interested in carpooling. The socials norms around carpooling needs to shift. A main barrier is that using a private car is simpler and more comfortable.  |
 |   | Exploratory levers | None  |
 |  Impact & cost | Generated renewable energy (if applicable) | Not applicable  |
@@ -2415,7 +2386,7 @@ Strengthening the carpooling offer by opening new lines (Vizille-Eybens line to 
 |   | Total costs | CAPEX (2020-2030) : subsector 1.3 : 0 M€ (just operational costs)  |
 
 3
-GREENBULE ALPES METROPOLE
+GRENOBLE ALPES METROPOLE
 
 Climate Neutrality Action Plan
 
@@ -2423,10 +2394,10 @@ Climate Neutrality Action Plan
 
 | Action outline | Action name | 11. Develop the use of electric vehicles and charging infrastructure |
 | --- | --- | --- |
-| Action type | IV. Sustainable mobility |
-| Action description | - Develop electric charging stations and natural gas stations for vehicles |
+| Action type | IV. Sustainable mobility |  |
+| Action description | - Develop electric charging stations and natural gas stations for vehicles |  |
 | Reference to impact pathway | Impact pathway | Impact pathway 3: Accelerate the transition towards low-carbon mobility |
-| Systemic lever | 1.1 Reduced motorised passenger transportation need
+| Systemic lever | 1.1 Reduced motorised passenger transportation need |  |
 Shift to public and non-motorised transport
 Electrification of passenger cars and motorcycles
 Electrification of buses
@@ -2438,9 +2409,9 @@ Subsector 1.4.1 : 56 ktCO2eq
 Subsector 1.4.2 : 4 ktCO2eq
 A part of subsector 2.2 : 7 ktCO2eq |
 | Implementation | Responsible bodies/person for implementation | Grenoble Alpes Metropole, cities, companies, citizens |
-| Action scale & addressed entities | Grenoble Alpes Metropole, cities, companies, citizens |
-| Involved stakeholders | Grenoble Alpes Metropole, cities, companies, citizens |
-| Comments on implementation – consider mentioning resources, timelines, milestones | Grenoble Alpes Metropole has a strategy for developing electric charging stations in public spaces in order to encourage the use of electric vehicles by individuals or businesses. Despite EU policy favoring electric mobility, there is also a challenge in maintaining NGV charging stations because electric mobility is not yet adapted for some heavy vehicles (trucks).
+| Action scale & addressed entities | Grenoble Alpes Metropole, cities, companies, citizens |  |
+| Involved stakeholders | Grenoble Alpes Metropole, cities, companies, citizens |  |
+| Comments on implementation – consider mentioning resources, timelines, milestones | Grenoble Alpes Metropole has a strategy for developing electric charging stations in public spaces in order to encourage the use of electric vehicles by individuals or businesses. Despite EU policy favoring electric mobility, there is also a challenge in maintaining NGV charging stations because electric mobility is not yet adapted for some heavy vehicles (trucks). |  |
 The public transport operator (SMMAG) has 7 electric buses today in its fleet and plan to develop it in the future. One solution being studied is electric trolley buses, using fixed electric lines instead of batteries in the vehicles.
 
 Coming soon :
@@ -2448,7 +2419,7 @@ Upcoming opening of new NGV stations
 Deployment of more than 260 new charging points for electric vehicles in existing car parks in 2024 |
 | Possible barriers and measures to address them | There is a lack of proposals for heavy electric vehicles from car manufacturers. |
 | Exploratory levers | Accelerated electrification of buses |
-| Impact & cost | Generated renewable energy (if applicable) | Not applicable |
+| Impact & cost | Generated renewable energy (if applicable): Not applicable |
 | Removed/substituted energy, volume, or fuel type | Not available |
 | GHG emissions reduction estimate (total) per emission source sector | Transport :
 A part of subsector 1.1 : 22 ktCO2eq
@@ -2470,22 +2441,20 @@ Subsector 1.4.1 : 218 M€
 Subsector 1.4.2 : 17 M€
 A part of subsector 2.2 : 71 M€  |
 | --- | --- | --- |
-Climate Neutrality Action Plan
-
 | Action outline | Action name | 12. Reduce the impact of professional mobility and promote carbon-free logistics |
 | --- | --- | --- |
-| Action type | IV. Sustainable mobility |
-| Action description | - Promote sustainable urban logistics and encourage experimentation
+| Action type | IV. Sustainable mobility |  |
+| Action description | - Promote sustainable urban logistics and encourage experimentation |  |
 Implement the Low Emission Zone for light commercial vehicles and heavy goods vehicles
 Mobilize professionals
 Supporting companies in their energy transition |
 | Reference to impact pathway | Impact pathway | Impact pathway 3: Accelerate the transition towards low-carbon mobility |
-| Systemic lever | 2.1 Optimisation of logistics
+| Systemic lever | 2.1 Optimisation of logistics |  |
 Electrification of trucks
 Air quality |
 | Outcome (according to module B-1.1) | Subsector 2.1 : 65 ktCO2eq
-A part of subsector 2.2 : 7 ktCO2eq |
-| Implementation | Responsible bodies/person for implementation | Grenoble Alpes Metropole, logistic companies |
+| A part of subsector 2.2 : 7 ktCO2eq |  |
+| Implementation | Responsible bodies/person for implementation: Grenoble Alpes Metropole, logistic companies |
 | Action scale & addressed entities | Grenoble Alpes Metropole, companies |
 | Involved stakeholders | Grenoble Alpes Metropole, companies |
 | Comments on implementation – consider mentioning resources, timelines, milestones | Goods transport contributes to 35% of GHG emissions from the transport sector on the territory. Although the metropole does not have concrete levers of action across the entire logistics chain, it focuses its action on encouraging low-carbon mobility for the last kilometers, in urban areas :
@@ -2498,20 +2467,20 @@ pooling of flows,
 support for professionals towards low-carbon logistics. |
 | Possible barriers and measures to address them | Not identified |
 | Exploratory levers | None |
-| Impact & cost | Generated renewable energy (if applicable) | Not applicable |
+| Impact & cost | Generated renewable energy (if applicable): Not applicable |
 | Removed/substituted energy, volume, or fuel type | Not available |
 | GHG emissions reduction estimate (total) per emission source sector | Transport :
 • Subsector 2.1 : 65 ktCO2eq
 • A part of subsector 2.2 : 7 ktCO2eq |
 | GHG emissions compensated (natural or technological sinks) | Not applicable |
-|  | Total costs | CAPEX (2020-2030) :
+|  | Total costs: CAPEX (2020-2030) |
 Subsector 2.1 : 0 M€ (just OPEX)
 A part of subsector 2.2 : 71 M€ |
 
 6
 7
 
-GREENBULE ALPES
+GRENOBLE ALPES
 
 METROPOLE
 
@@ -2519,17 +2488,17 @@ Climate Neutrality Action Plan
 
 | Action outline | Action name | 13. Focus on the circular economy and reuse |
 | --- | --- | --- |
-| Action type | V. Waste, circular economy |
-| Action description | - Develop the circular economy and reuse
+| Action type | V. Waste, circular economy |  |
+| Action description | - Develop the circular economy and reuse |  |
 Strengthen the role of the social and solidarity economy in the ecological and energy transition
 Support the development of the local currency |
 | Reference to impact pathway | Impact pathway | Impact pathway 5: Strengthen waste management, reduce the quantities of waste produced and develop the circular economy |
-| Systemic lever | 12. Planning, governance and mobilization |
-| Outcome (according to module B-1.1) | Not applicable |
+| Systemic lever | 12. Planning, governance and mobilization |  |
+| Outcome (according to module B-1.1) | Not applicable |  |
 | Implementation | Responsible bodies/person for implementation | Grenoble Alpes Metropole, companies, citizens |
-| Action scale & addressed entities | Grenoble Alpes Metropole, companies, citizens |
-| Involved stakeholders | Grenoble Alpes Metropole, companies, citizens |
-| Comments on implementation – consider mentioning resources, timelines, milestones | Beyond waste management, Grenoble Alpes Metropole tries to promote a global reflection on “throwing less, consuming better”:
+| Action scale & addressed entities | Grenoble Alpes Metropole, companies, citizens |  |
+| Involved stakeholders | Grenoble Alpes Metropole, companies, citizens |  |
+| Comments on implementation – consider mentioning resources, timelines, milestones | Beyond waste management, Grenoble Alpes Metropole tries to promote a global reflection on “throwing less, consuming better”: |  |
 Creation of « Pôle R » in 2023, a place dedicated to circular economy activities
 Support for the opening of new recycling centers
 Support for projects in the field of reuse, sustainable food and mobility
@@ -2539,14 +2508,14 @@ Coming soon :
 Strengthened awareness of more sustainable consumption |
 | Possible barriers and measures to address them | Obstacles to changing consumption practices and behavior : “repair and reuse” rather than “throwing away and replace” |
 | Exploratory levers | None |
-| Impact & cost | Generated renewable energy (if applicable) | Not applicable |
+| Impact & cost | Generated renewable energy (if applicable): Not applicable |
 | Removed/substituted energy, volume, or fuel type | Not applicable |
 | GHG emissions reduction estimate (total) per emission source sector | Not applicable |
 | GHG emissions compensated (natural or technological sinks) | Not applicable |
 | Total costs | Not applicable |
 8
 
-GREENBULE ALPES
+GRENOBLE ALPES
 
 METROPOLE
 
@@ -2554,17 +2523,17 @@ Climate Neutrality Action Plan
 
 | Action outline | Action name | 14. Reduce and prevent waste |
 | --- | --- | --- |
-| Action type | V. Waste, circular economy |
-| Action description | - Strengthen the incentive for sorting
+| Action type | V. Waste, circular economy |  |
+| Action description | - Strengthen the incentive for sorting |  |
 Reduce waste
 Support the reduction, sorting and recovery of professional waste |
 | Reference to impact pathway | Impact pathway | Impact pathway 5: Strengthen waste management, reduce the quantities of waste produced and develop the circular economy |
-| Systemic lever | 12. Planning, governance and mobilization |
-| Outcome (according to module B-1.1) | Not applicable |
+| Systemic lever | 12. Planning, governance and mobilization |  |
+| Outcome (according to module B-1.1) | Not applicable |  |
 | Implementation | Responsible bodies/person for implementation | Grenoble Alpes Metropole, companies, citizens |
-| Action scale & addressed entities | Grenoble Alpes Metropole, companies, citizens |
-| Involved stakeholders | Grenoble Alpes Metropole, companies, citizens |
-| Comments on implementation – consider mentioning resources, timelines, milestones | Grenoble Alpes Metropole adopted a 2020-2030 Waste Master Plan, which strongly encourages users to change their behavior, with the objective of reducing the quantity of annual waste generated by 20%. Here are some actions carried out by the metropole:
+| Action scale & addressed entities | Grenoble Alpes Metropole, companies, citizens |  |
+| Involved stakeholders | Grenoble Alpes Metropole, companies, citizens |  |
+| Comments on implementation – consider mentioning resources, timelines, milestones | Grenoble Alpes Metropole adopted a 2020-2030 Waste Master Plan, which strongly encourages users to change their behavior, with the objective of reducing the quantity of annual waste generated by 20%. Here are some actions carried out by the metropole: |  |
 Avoid the use of single-use plastics
 Creation of a “Packaging-free purchasing guide for consumers”
 Support for the call for projects “waste reduction and circular economy”
@@ -2575,14 +2544,14 @@ Provision of composter for local inhabitants
 Deployment in 2024 of an action plan for the textile sector |
 | Possible barriers and measures to address them | Not identified |
 | Exploratory levers | None |
-| Impact & cost | Generated renewable energy (if applicable) | Not applicable |
+| Impact & cost | Generated renewable energy (if applicable): Not applicable |
 | Removed/substituted energy, volume, or fuel type | Not applicable |
 | GHG emissions reduction estimate (total) per emission source sector | Not applicable |
 | GHG emissions compensated (natural or technological sinks) | Not applicable |
 | Total costs | Not applicable |
 9
 
-GREENBULE ALPES
+GRENOBLE ALPES
 
 METROPOLE
 
@@ -2611,11 +2580,9 @@ New composting center in 2024
 New incinerator in 2028
 Strengthen support for waste sorting  |
 |   | Possible barriers and measures to address them | Recycling is still technically very difficult in certain domains (e.g. plastics, electronics)
-
-The sorting refusal rate is still high, particularly for food waste.  |
+| The sorting refusal rate is still high, particularly for food waste. |  |  |
 |   | Exploratory levers | Experiment with carbon capture on the site emitting the most direct CO2 “the Athanor incineration plant”. According to initial estimates, there would be a possibility beyond 2030 of capturing up to 90% of GHG emissions.
-
-A feasibility assessment is necessary before considering this solution, in particular to estimate the induced energy consumption.  |
+| A feasibility assessment is necessary before considering this solution, in particular to estimate the induced energy consumption. |  |  |
 |  Impact & cost | Generated renewable energy (if applicable) | Not applicable  |
 |   | Removed/substituted energy, volume, or fuel type | Not available  |
 |   | GHG emissions reduction estimate (total) per emission source sector | Waste : Subsector 5.1 : 2 ktCO2eq  |
@@ -2663,8 +2630,6 @@ Launch of citizen debates for the climate on the theme of sustainable food.  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | Not applicable  |
 |   |  GHG emissions compensated (natural or technological sinks) | Not applicable  |
 |   |  Total costs | Not applicable  |
-Climate Neutrality Action Plan
-
 |  Action outline | Action name | 17. Manage and monitor the implementation of the climate plan  |
 | --- | --- | --- |
 |   |  Action type | VII. Mobilization of stakeholders and inhabitants  |
@@ -2681,7 +2646,7 @@ Monitor the implementation of the action plan with the CIT’ERGIE framework  |
 |   |  Action scale & addressed entities | Grenoble Alpes Metropole, cities, companies, citizens  |
 |   |  Involved stakeholders | Grenoble Alpes Metropole, cities, companies, citizens  |
 |   |  Comments on implementation – consider mentioning resources, timelines, milestones | This action is detailed in the part 4.1 Module C-1 Governance Innovation Interventions
-The « Grenoble Alpes 2030 Economic Strategy » is a new action not scheduled in the 2020’s Climate Plan.  |
+| The « Grenoble Alpes 2030 Economic Strategy » is a new action not scheduled in the 2020’s Climate Plan. |  |  |
 |   |  Possible barriers and measures to address them |   |
 |   |  Exploratory levers | None  |
 |  Impact & cost | Generated renewable energy (if applicable) | None  |
@@ -2689,15 +2654,11 @@ The « Grenoble Alpes 2030 Economic Strategy » is a new action not scheduled in
 |   |  GHG emissions reduction estimate (total) per emission source sector | Not applicable  |
 |   |  GHG emissions compensated (natural or technological sinks) | Not applicable  |
 |   |  Total costs | Not applicable  |
-
-2
-Climate Neutrality Action Plan
-
 |  Action outline | Action name | 18. Mobilize and promote the engagement of the municipalities  |
 | --- | --- | --- |
 |   |  Action type | VII. Mobilization of stakeholders and inhabitants  |
 |   |  Action description | - Strengthen and promote the commitment of municipalities
-Share and disseminate good municipal practices  |
+| Share and disseminate good municipal practices |  |  |
 |  Reference to impact pathway | Impact pathway | Other (out of impact pathways on direct emissions)  |
 |   |  Systemic lever | 12. Planning, governance and mobilization  |
 |   |  Outcome (according to module B-1.1) | Not applicable  |
@@ -2749,7 +2710,7 @@ A transitions barometer in partnership with Grenoble Management School  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | Not applicable  |
 |   |  GHG emissions compensated (natural or technological sinks) | Not applicable  |
 |   |  Total costs | Not applicable  |
-GREENOBLE ALPES METROPOLE
+GRENOBLE ALPES METROPOLE
 
 Climate Neutrality Action Plan
 
@@ -2782,12 +2743,10 @@ Adapted vehicle models with new engines (NGV, electric) are not always present o
 |   |  GHG emissions reduction estimate (total) per emission source sector | Not applicable  |
 |   |  GHG emissions compensated (natural or technological sinks) | Not applicable  |
 |   |  Total costs | Not applicable  |
-Climate Neutrality Action Plan
-
 | Action outline | Action name | 21. Better understand and anticipate the consequences of global warming on health and natural risks |
 | --- | --- | --- |
 | Reference to impact pathway | Action type | IX. Adapt to climate change |
-| Action description | - Deepen knowledge of the impacts of climate change on our health
+| Action description | - Deepen knowledge of the impacts of climate change on our health |  |
 Develop a strategy to make the environment a beneficial factor in health
 Deepen and disseminate our knowledge of natural risks
 Anticipate the risks linked to global warming
@@ -2795,7 +2754,7 @@ Strengthen our systems in the face of extreme weather events |
 | Impact pathway | Impact pathway 6: Promote carbon sequestration and nature-based solutions |
 | Systemic lever | 6. Climate change adaptation) |
 | Outcome (according to module B-1.1) | Not applicable |
-| Implementation | Responsible bodies/person for implementation | Grenoble Alpes Metropole, cities, universities and other public actors (example: town planning agency, regional health agency, regional health observatory) |
+| Implementation | Responsible bodies/person for implementation: Grenoble Alpes Metropole, cities, universities and other public actors (example: town planning agency, regional health agency, regional health observatory) |
 | Action scale & addressed entities | City wide, all citizens |
 | Involved stakeholders | Metropole, municipalities, citizens, public actors |
 | Comments on implementation – consider mentioning resources, timelines, milestones | The Climate Plan initiated studies to better understand and anticipate the consequences of global warming on health, natural risks and resources :
@@ -2803,17 +2762,13 @@ Strengthen our systems in the face of extreme weather events |
 ➤ Studies and work relating to knowledge of risks, prevention and reduction of vulnerability and the strengthening of crisis management
 
 It leads to a proactive approach to metropolitan resilience in the face of natural and technological risks (Risk and Resilience Strategy) |
-| Possible barriers and measures to address them |  |
-| Exploratory levers | None |
+| Possible barriers and measures to address them |  |  |
+| Exploratory levers | None |  |
 | Impact & cost | Generated renewable energy (if applicable) | None |
-| Removed/substituted energy, volume, or fuel type | Not applicable |
-| GHG emissions reduction estimate (total) per emission source sector | Not applicable |
-| GHG emissions compensated (natural or technological sinks) | Not applicable |
-| Total costs | Not applicable |
-
-6
-Climate Neutrality Action Plan
-
+| Removed/substituted energy, volume, or fuel type | Not applicable |  |
+| GHG emissions reduction estimate (total) per emission source sector | Not applicable |  |
+| GHG emissions compensated (natural or technological sinks) | Not applicable |  |
+| Total costs | Not applicable |  |
 |  Action outline | Action name | 22. Plant trees, infiltrate rain water, investigate and reduce urban heat islands  |
 | --- | --- | --- |
 |   | Action type | IX. Adapt to climate change  |
@@ -2822,7 +2777,7 @@ Work on urban greening of towns and villages
 Create wells and freshness paths  |
 |  Reference to impact pathway | Impact pathway | Impact pathway 6: Promote carbon sequestration and nature-based solutions  |
 |   | Systemic lever | 6. Climate change adaptation
-Urbanism  |
+| Urbanism |  |  |
 |   |  Outcome (according to module B-1.1) | Not applicable  |
 |  Implementation | Responsible bodies/person for implementation | Grenoble Alpes Metropole, cities, companies, city developers  |
 |   | Action scale & addressed entities | Grenoble Alpes Metropole, cities, neighborhood, companies, citizens  |
@@ -2843,7 +2798,7 @@ Urbanism  |
 |   |  Total costs | Not applicable  |
 
 7
-GREENOBLE ALPES METROPOLE
+GRENOBLE ALPES METROPOLE
 
 Climate Neutrality Action Plan
 
@@ -2861,7 +2816,7 @@ Preserve our water resources
 Commit to a policy adapted to preserve biodiversity  |
 |  Reference to impact pathway | Impact pathway | Impact pathway 6: Promote carbon sequestration and nature-based solutions  |
 |   |  Systemic lever | 7. Biodiversity and natural resources
-Urbanism  |
+| Urbanism |  |  |
 |   |  Outcome (according to module B-1.1) | Not applicable  |
 |  Implementation | Responsible bodies/person for implementation | French Government, Grenoble Alpes Metropole, cities, city developers  |
 |   |  Action scale & addressed entities | Grenoble Alpes Metropole, cities, agricultural sphere  |
@@ -2878,8 +2833,6 @@ Coming soon : Development of a new biodiversity preservation strategy  |
 ➢ Land control is complex for the restoration of wetlands  |
 |   |  Exploratory levers | None  |
 |  Impact & cost | Generated renewable energy (if applicable) | None  |
-Climate Neutrality Action Plan
-
 |   | Removed/substituted energy, volume, or fuel type | Not applicable  |
 | --- | --- | --- |
 |   | GHG emissions reduction estimate (total) per emission source sector | Not applicable  |
@@ -2889,7 +2842,7 @@ Climate Neutrality Action Plan
 9
 0
 
-GREENBULE ALPES
+GRENOBLE ALPES
 
 METROPOLE
 
@@ -2924,7 +2877,7 @@ Implement the forest sector framework deliberation adopted in 2023, to focus on 
 |   | GHG emissions reduction estimate (total) per emission source sector | Not applicable  |
 |   | GHG emissions compensated (natural or technological sinks) | Natural sink : 148 ktCO2 sequestered in forest soils and in wood products  |
 |   | Total costs | Not applicable  |
-GREENOBLE ALPES METROPOLE
+GRENOBLE ALPES METROPOLE
 
 Climate Neutrality Action Plan
 
@@ -2954,7 +2907,7 @@ New industrial activities (Verkor, ALEDIA), innovations, CEC Alpes Convention of
 |   |  GHG emissions reduction estimate (total) per emission source sector | 285  |
 |   |  GHG emissions compensated (natural or technological sinks) | Not applicable  |
 |   |  Total costs | Not applicable, the economic model does not calculate costs for this lever  |
-GREENOBLE ALPES METROPOLE
+GRENOBLE ALPES METROPOLE
 
 Climate Neutrality Action Plan
 
@@ -2977,7 +2930,7 @@ The challenge is to maintain the region's sequestration capacity, and to avoid d
 The metropolitan GHG Assessment estimated the carbon sequestration of metropolitan forests and natural lands at around 4,000 tCO2e/year. The study shows that trees along roads and isolated trees, spread across the whole territory, contribute around 60% to the carbon sequestration of the metropole's assets, while forest plots (almost 300 ha) account for the remaining 40%.
 
 The Canopy Plan, launched in February 2022, aims to help the urban areas of the 49 communes of the territory to adapt to climate change, but also to green the metropole by increasing the number of trees and thus contribute to carbon sequestration. Almost 27% of the metropole's urban area is covered by canopy (in other words, the shade provided by the foliage of trees). The aim is to reach 30% canopy cover by 2030 and 40% by 2050, to enable trees to have a cooling effect on the city. What's more, today all parking lots must be at least 30% permeable.
-GREENOBLE ALPES METROPOLE
+GRENOBLE ALPES METROPOLE
 
 Climate Neutrality Action Plan
 
@@ -3022,21 +2975,19 @@ In this first iteration of the Climate City Contract we only provide the target 
 |  Transport | 3 | GHG emission from transport | 433 | 281 | 230 | 156  |
 |   |  4 | Fuel consumption for in-boundary transportation per fuel type |  |  |  |   |
 |  Waste | 5 | GHG emission from waste | 92 | 64 | 54 | 41  |
-Climate Neutrality Action Plan
-
 |  | 6 | Mass of waste processed per end-of-life treatment type within city boundary |  |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- |
-| 7 | Mass of waste processed per end-of-life treatment type outside city boundary |  |  |  |  |
+| 7 | Mass of waste processed per end-of-life treatment type outside city boundary |  |  |  |  |  |
 | Industry | 8 | GHG emission from IPPU | 700 | 545 | 493 | 416 |
-| 9 | Emission generation potential per unit of input/output for industrial processes within the city boundary |  |  |  |  |
-| 10 | Emissions from non-energy product use |  |  |  |  |
+| 9 | Emission generation potential per unit of input/output for industrial processes within the city boundary |  |  |  |  |  |
+| 10 | Emissions from non-energy product use |  |  |  |  |  |
 | Agriculture, forestry, land use | 11 | GHG emission from AFOLU | 10 | 10 | 10 | 10 |
-| 12 | Net annual rate of change in carbon stocks per hectare of land |  |  |  |  |
-| 13 | Local RES energy production |  |  |  |  |
-| 14 | Energy Autonomy |  |  |  |  |
+| 12 | Net annual rate of change in carbon stocks per hectare of land |  |  |  |  |  |
+| 13 | Local RES energy production |  |  |  |  |  |
+| 14 | Energy Autonomy |  |  |  |  |  |
 | Energy | 15 | GHG emission from grid supplied energy | 150 | 115 | 103 | 86 |
-| 16 | Grid specific emission factor |  |  |  |  |
-| 17 | Transmission and distribution loss factor for grid supplied energy |  |  |  |  |
+| 16 | Grid specific emission factor |  |  |  |  |  |
+| 17 | Transmission and distribution loss factor for grid supplied energy |  |  |  |  |  |
 | Sequestration | 18 | Amount of permanent sequestration of GHG within city boundary | - |  |  |  |
 | Negative emissions | 19 | Negative emissions through natural sinks | 123,7 ktCO2e/year |  |  |  |
 |  |  | TOTAL (without sequestration) | 1852 | 1231 | 1020 | 712 |
@@ -3044,7 +2995,7 @@ Climate Neutrality Action Plan
 5
 #
 
-GREENOBLE ALPES
+GRENOBLE ALPES
 
 METROPOLE
 
@@ -3085,7 +3036,7 @@ Climate Neutrality Action Plan
 |  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | Yes  |
 7
 
-GREENBULE ALPES
+GRENOBLE ALPES
 
 METROPOLE
 
@@ -3099,7 +3050,7 @@ Climate Neutrality Action Plan
 |  If yes, which co-benefit does it measure? |   |
 |  Is the indicator useful for monitoring the output/impact of action(s)? | Yes  |
 |  If yes, which action and impact pathway is it relevant for? | Systemic priority 1 : Renovate residential and commercial buildings to reduce the need of heating and improve territorial resilience
-Systemic priority 2 : Decarbonize heating, relying primarily on extended 100% carbon-free urban heating networks and renewable resources  |
+| Systemic priority 2 : Decarbonize heating, relying primarily on extended 100% carbon-free urban heating networks and renewable resources |  |
 |  Is the indicator captured by the existing CDP/SCIS/ Covenant of Mayors platforms? | No  |
 |  Data requirements |   |
 |  Expected data source | ATMO  |
@@ -3126,10 +3077,6 @@ Systemic priority 2 : Decarbonize heating, relying primarily on extended 100% ca
 |  Data requirements |   |
 |  Expected data source | ATMO  |
 |  Is the data source local or regional/national? | local  |
-Climate Neutrality Action Plan
-
-#
-
 |  Expected availability | Yes  |
 | --- | --- |
 |  Suggested collection interval | Yearly  |
@@ -3166,12 +3113,6 @@ Climate Neutrality Action Plan
 |  Calculation | Quantity of waste per End-of-life (EoL) treatment type x emission factors per EoL treatment. Detailed methods for different waste types are defined under GPC, pages 89 - 107  |
 |  Indicator Context |   |
 |  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | Yes  |
-9
-
-Climate Neutrality Action Plan
-
-#
-
 |  If yes, which emission source sectors does it measure? | Waste and Water  |
 | --- | --- |
 |  Does the indicator measure indirect impacts (i.e., co-benefits)? | No  |
@@ -3207,12 +3148,6 @@ Climate Neutrality Action Plan
 |  Expected availability | Yes  |
 |  Suggested collection interval | Yearly  |
 |  References |   |
-1
-
-Climate Neutrality Action Plan
-
-#
-
 |  7  |   |
 | --- | --- |
 |  Indicator Name | Mass of waste processed per end-of-life treatment type outside city boundary  |
@@ -3245,7 +3180,7 @@ Climate Neutrality Action Plan
 |  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | Yes  |
 #
 
-GREENBULE ALPES
+GRENOBLE ALPES
 
 METROPOLE
 
@@ -3321,12 +3256,6 @@ Climate Neutrality Action Plan
 |  Indicator Name | GHG emission from AFOLU  |
 |  Indicator Unit | t CO2 equivalent  |
 |  Definition | IPCC guidelines divides AFOLU emission activities into three categories: Livestock, Land, Aggregate sources and non-CO2 emissions sources on land. The cumulative of  |
-1
-
-Climate Neutrality Action Plan
-
-#
-
 |  Indicator Context | these emissions forms the sectoral emissions. It requires identifying which categories of the AFOLU sector are relevant for reporting purposes.  |
 | --- | --- |
 |  Does the indicator measure direct impacts (reduction in greenhouse gas emissions?) | Yes  |
@@ -3355,7 +3284,7 @@ Climate Neutrality Action Plan
 |  If yes, which emission source sectors does it measure? | Agriculture, Forestry and other Land Use (AFOLU)  |
 4
 
-GREENBULE ALPES
+GRENOBLE ALPES
 
 METROPOLE
 
@@ -3438,7 +3367,7 @@ Climate Neutrality Action Plan
 |  Indicator Unit | t CO2 equivalent  |
 6
 
-GREENOBLE ALPES
+GRENOBLE ALPES
 
 METROPOLE
 
@@ -3480,10 +3409,6 @@ Climate Neutrality Action Plan
 |  If yes, which action and impact pathway is it relevant for? | Systemic priority 2 : Decarbonize heating, relying primarily on extended 100% carbon-free urban heating networks and renewable resources  |
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | Yes  |
 |  Data requirements |   |
-Climate Neutrality Action Plan
-
-#
-
 |  17  |   |
 | --- | --- |
 |  Indicator Name | Transmission and distribution loss factor for grid supplied energy  |
@@ -3506,7 +3431,7 @@ Climate Neutrality Action Plan
 |  References |   |
 #
 
-GREENBULE ALPES
+GRENOBLE ALPES
 
 METROPOLE
 
@@ -3542,7 +3467,7 @@ Climate Neutrality Action Plan
 |  Indicator Unit | t CO2 equivalent  |
 9
 
-GREENOBLE ALPES
+GRENOBLE ALPES
 
 METROPOLE
 
@@ -3595,7 +3520,7 @@ Figure 11: Multi-stakeholder governance framework
 Grenoble Alpes Metropole has multiple working methods to integrate each actor in the fight against climate change. This chapter will explain the main governance model and the main processes for mobilizing actors to facilitate joint climate action.
 
 A notable event, to be highlighted above all, was the nomination of Grenoble as European Green Capital in 2022 (the evaluation is to be found in annex 15). This label is given by the European Commission to highlight the exemplary nature of a city in terms of ecological transition, encourage
-GREENOBLE ALPES METROPOLE
+GRENOBLE ALPES METROPOLE
 
 Climate Neutrality Action Plan
 
@@ -3633,7 +3558,7 @@ Contribute to metropolitan construction in conjunction with local stakeholders �
 ## An exemplary metropole
 
 Grenoble-Alpes Metropole has set itself the goal of becoming an exemplary administration in terms of climate and environmental impact. Numerous actions have been undertaken in this direction in recent years as part of its successive Climate Plans and the Territoires en Transitions (ex Cit'ergie) label. In order to structure and strengthen the momentum underway, Grenoble-Alpes Metropole initiated the development of an exemplary administration plan (PAE) in 2020.
-GREENOBLE ALPES METROPOLE
+GRENOBLE ALPES METROPOLE
 
 Climate Neutrality Action Plan
 
@@ -3658,7 +3583,7 @@ All buildings are subject to complete energy and technical monitoring via the De
 A Real Estate and Energy Master Plan (SDIE), linked to the Exemplary Administration Plan, is underway to establish a work program, strengthen the energy efficiency of its assets and reflect on uses. The objectives selected are those of the tertiary decree (reference year chosen for Grenoble Alpes Metropole, 2019): -40% energy savings by 2030, -50% by 2040 and -60% by 2050.
 
 According to the results of the Metropolitan GHG Assessment Report, "BEGES Patrimoine et Compétences", energy consumption in buildings does not represent the main challenge for the Metropole to reduce its GHG emissions. On the one hand, the energy consumed in buildings is largely decarbonized (district heating and electricity, no more fuel heating). On the other hand, fixed assets is responsible for the majority of the carbon emitted. However, the Metropole is carrying out an
-GREENOBLE ALPES METROPOLE
+GRENOBLE ALPES METROPOLE
 
 Climate Neutrality Action Plan
 
@@ -3695,7 +3620,7 @@ Figure 12: Partnership ecosystem
 As part of its SECAP, the metropole works with "charters" to involve stakeholders (municipalities and external partners). While the Metropole has significant levers for action in the exercise of its powers, achieving these territorial objectives requires strong mobilization of citizens and all public, private and associative stakeholders. As such, the municipalities are essential partners of the SECAP, not only through the actions they are likely to undertake in the implementation of their powers on their assets (built, land, vehicle fleet, etc.), but also through the role of relay and information that they can play, as a local actor, with citizens and businesses in their municipality.
 
 In this perspective, with the SECAP adopted in 2020, a new framework for the commitment of municipalities for the period 2020-2026 was developed in close consultation with them, called the "Municipalities Commitment Charter". 31 municipalities representing  $94\%$  of the territory's inhabitants are today signatories to the charter (each individual charter and action plan can be found here https://planclimat.grenoblealpesmetropole.fr/295-les-communes.htm). Each signatory is invited to develop a specific action plan, at the municipal level, with the individual and collective support of ALEC (technical and financial support through the provision of guides, facilitation of thematic workshops allowing stakeholders to improve their skills, with a dedicated website: Partners of the Climate Plan). To develop the charters, the municipalities choose the actions to be implemented within their scope (basic, regulatory, voluntary actions). https://planclimat.grenoblealpesmetropole.fr/37-charte-d-engagement.htm
-GREENOBLE ALPES METROPOLE
+GRENOBLE ALPES METROPOLE
 
 Climate Neutrality Action Plan
 
@@ -3718,7 +3643,7 @@ M'Tag (local public company): On July 2, 2021, elected officials of the Grenoble
 The Heating Company (Companie de Chauffage or CCHIAG, mixed economy company): The Metropole is the majority shareholder of this mixed economy company which operates in the energy sector and carries out numerous investments, especially the district heating networks and renewable energy production projects.
 
 Local Energy and Climate Agency (ALEC, local public company), created under associative status in 1998 at the initiative of Grenoble Alpes Metropole, ALEC has been a Local Public Company since 2020. ALEC implements the climate and energy transition policies of its shareholder communities: Grenoble Alpes Metropole (majority shareholder), the Department of Isère, 45 municipalities, the SMMAG and
-GREENOBLE ALPES METROPOLE
+GRENOBLE ALPES METROPOLE
 
 Climate Neutrality Action Plan
 
@@ -3766,7 +3691,7 @@ In 2022, a metropolitan experimental strategy was launched with the following ob
 The first year, a call for experimentation was launched to stimulate innovation within the framework of the European Green Capital. This targeted traditional VSEs/SMEs, social and solidarity economy structures as well as project leaders from technology transfer wishing to test an innovative project at the product prototype stage (i.e. from a Technology readiness level (TRL) or technological maturity level equal to 7) or service. Thus, 10 projects were selected after the feasibility phase. 3 projects were able to be tested.
 
 In 2023, a partnership with Air Liquide and the Solar Impulse Foundation was concluded to organize the Climate and Solutions Day, the objective of which was to accelerate transitions and provide concrete solutions to environmental issues. This day brought together public and private donors looking for solutions to the climate emergency and start-ups and SMEs providing solutions. The latter were found among the solutions labelled by the Foundation as well as locally. This event welcomed 130 participants and more than 175 BtoB meetings were organized. The metropolitan financial participation amounted to €20,500.
-GREENOBLE ALPES MÉTROPOLE
+GRENOBLE ALPES MÉTROPOLE
 
 Climate Neutrality Action Plan
 
@@ -3819,7 +3744,7 @@ This favorable environment, marked by the entry of the University of Grenoble-Al
 Grenoble-Alpes Metropole also contributes to various research projects in the region (QAMECS Mobil'air, Predict'air Chair) as well as to university chairs ("territories in transition" with Grenoble-école de management, "energy insecurity" HOPE with Institut Polytechnique de Grenoble and "Public innovation" on issues of behavioral change with ENA). Behavioral change is a fundamental aspect of the path towards carbon neutrality and the stakeholders of the territory have an essential role to play. Since several years, the metropole has been experimenting, together with researchers in cognitive sciences, on the subject of behavioral change. For example, the waste management policies (recycling,
 1
 
-GREENBULE ALPES METROPOLE
+GRENOBLE ALPES METROPOLE
 
 Climate Neutrality Action Plan
 
@@ -3842,7 +3767,7 @@ At the national level, the metropole has been heavily involved in the Future Inv
 Grenoble-Alpes Metropole is a member of European and national associations, places of exchange and qualification on climate issues:
 
 At the European level, it is an active member of Eurocities and participates in the "environment" forum, where it hosted the annual meeting on the theme of changing behaviors in April 2022. It participates in the activities of EnergyCities. Finally, the title "European Green Capital 2022" provided access to the eponymous network,
-GREENOBLE ALPES METROPOLE
+GRENOBLE ALPES METROPOLE
 
 Climate Neutrality Action Plan
 
@@ -3870,7 +3795,7 @@ College of Economic Actors: professional branch unions, consular chambers, etc.
 College of Civil Society, the exact composition of which remains to be finalized
 #
 
-GREENBULENJESS METROPOLE
+GRENOBLENJESS METROPOLE
 
 Climate Neutrality Action Plan
 
@@ -3886,7 +3811,7 @@ Table 17. Relations between governance innovations, systems, and impact pathways
 |  Exemplary Administration Plan (Plan Administration Exemplaire) | Guidelines and action plan to become an exemplary administration in terms of climate and environmental impact. The objective is to have a “common culture” on the subject of transition. | Interventions in various domains related to public buildings, mobility and emissions related to the services provided by the metropole (water, waste, etc.). | Metropole, employees of the Metropole, citizens | Technical, policy, learning and capabilities, behavior change | Better understandin g of carbon emissions related to metropolitan activities and so an incentive for the employees to act in their daily tasks. Indefinitely also a source of inspiration for civil society.  |
 |  Climate Plan Partners Website (Site web Partenaires du plan climat) | Website grouping information about the SECAP, Letter from the observatory, actions and ways of contributing | Mobilizing external partners to embrace the objectives of the Climate Plan | Public and private companies, municipalities, other actors | Technical, policy/ regulatory, democracy/ participatory, fiscal/ financial; learning and capabilities, | Better understandin g of GHG emissions and air pollution and therefore an incentive to act.  |
 |   | economical, environmental, and social impacts. |  |  | behavior change |   |
-GREENEALNESS MÉTROPOLE
+GRENOBLE ALPES MÉTROPOLE
 
 Climate Neutrality Action Plan
 
@@ -3901,7 +3826,7 @@ Climate Neutrality Action Plan
 |  Interservice circle (Cercle interservice) | Transversal collaboration meetings internally in the metropolitan organization | Help to collaborate on various climate actions, monitoring, feedback, information, learnings. | Different services of the metropole |  |   |
 5
 
-GREENBULE ALPES
+GRENOBLE ALPES
 
 METROPOLE
 
@@ -3927,8 +3852,6 @@ Climate Neutrality Action Plan
 |  Metropolitan experimentation strategy (Stratégie d'expérimentation métropolitaine) | Partnership between Air Liquide and the Solar Impulse Foundation set up for the organization of the Climate and Solutions Day, the objective of which was to accelerate transitions and to provide concrete solutions to environmental issues. | Mobilizing private sector, industrial sector | Private enterprises, B2B, financial participation from the Metropole | Infrastructural, technical, participatory, financial, learning and capabilities, behavior change | Economic attraction, resilient companies  |
 |  Circular Economy Business Network (Réseau des entreprises de l'économie circulaire ) | This network designed by and for local companies aims to raise awareness, develop inter-company exchanges and facilitate cooperation to bring about new projects. | Accelerate reuse, recycling etc and mobilizing private companies | Private companies, metropole | Technical, participatory, financial; learning and capabilities, behavior change | Less resources used, changed consumer behavior, innovation  |
 |  Sustainable Construction Guide (Guide de la construction durable ) | Guide to sustainable construction and planning produced by the building project management services. For internal and external implementation and shared with other development | Transitioning the construction sector | For all internal and external partners of the construction and planning sector | Technical, learning and capabilities, behavior change |   |
-Climate Neutrality Action Plan
-
 |   | stakeholders in the region. |  |  |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  1^{st} Forum for Careers in Ecological Transition (1^{er} Forum des métiers de la transition écologique) | Event in June 2022 to support the emergence of new professions and the evolution of many traditional professions. 6 key sectors of activity / 1,200 visitors / 1 job dating / 10 conferences. | Transitioning the construction sector | Businesses, metropole, professionals, students, young graduates, parents, people retraining, job seekers... | Technical, learning and capabilities, behavior change | Economic attraction of the region, increased employment, economic boost for companies  |
@@ -3956,7 +3879,7 @@ Climate Neutrality Action Plan
 |   | governance and planning in this domain. | and natural areas in peri-urban spaces. |  |  | and ecosystem services.  |
 | --- | --- | --- | --- | --- | --- |
 |  Climaborough | Horizon Europe Project on the subject of new forms of urban planning (design, livability, participation...) to create a sustainable and climate resilient city. The urban renewal project GrandAlp will act as a demonstrator area for Climaborough. | Developing and testing innovative solutions, tools and methods on themes such as urban heat islands, daytime thermal comfort, CO2 sequestration , geographical data, public procurement processes . | Metropole, companies, startups, development actors (general contractors, constructors, architects); elected representatives; citizens | Technical capabilities, democracy, participatory, learning and capabilities, raising awareness, behavior change | Citizen engagement , attractive and resilient neighborhoods , improved summer comfort, better health for inhabitants...  |
-GREENOBLE ALPES METROPOLE
+GRENOBLE ALPES METROPOLE
 
 Climate Neutrality Action Plan
 
@@ -4035,7 +3958,7 @@ On Friday, April 28, 2023, during a dedicated Metropolitan Council, the communit
 56 actions were identified as being outside the metropolitan area of competence and will therefore be transmitted to the competent institutions; 190 were therefore within the area of competence of the Metropole.
 144 actions, or 76% of these proposals, were identified as in progress, sometimes simply initiated or programmed, sometimes well-sized. More precisely, 88 actions, or 46% of the total, are indicated as needing to be strengthened. It is then appropriate to question the means of going further and/or removing the obstacles encountered.
 5 actions were indicated as "not to be retained" because they were not relevant with regard to the actions already undertaken elsewhere or the political or technical orientations chosen.
-GREENOBLE ALPES MÉTROPOLE
+GRENOBLE ALPES MÉTROPOLE
 
 Climate Neutrality Action Plan
 
@@ -4066,7 +3989,7 @@ The State: which plays a major role in climate action at the national and intern
 The Auvergne Rhône Alpes Region: which has an important role to play in this mobilization through the implementation of its skills, particularly in terms of economic development and innovation (notably through the SRDEII), professional training, regional planning and the environment (notably through the development of the SRADDET), as a transport organizing authority, manager of high schools and owner of numerous buildings and cultural facilities. It is also expected, like all public administrations, to set an example through its practices. Finally, it can concretely act to accelerate and intensify transitions, as a financier and manager of European funds.
 
 The Department of Isère: these include proposals that challenge the Department in terms of aid for agriculture and forest management, actions in colleges, health and social action, actions within the framework of its policy in favor of the mountains, and as owner of the Grenoble Alpes Isère airport.
-GREENOBLE ALPES METROPOLE
+GRENOBLE ALPES METROPOLE
 
 Climate Neutrality Action Plan
 
@@ -4146,7 +4069,7 @@ The territory is already rich in many resources and active public, associative o
 ## Behavior change roadmap
 
 Following the citizens' convention for the climate, the metropole has committed to building a roadmap to accelerate awareness, training and support for behavior change. The development of this roadmap is underway (2024-2026), it is co-piloted by the Climate, Transition and Contractualization Department, the Strategy Innovation Citizen Relations Department and the Communication Department. Other stakeholders involved; relay actors and resources of the territory, experts.
-GREENOBLE ALPES MÉTROPOLE
+GRENOBLE ALPES MÉTROPOLE
 
 Climate Neutrality Action Plan
 
@@ -4203,7 +4126,7 @@ The circular economy at Cadran Solaire, an urban transformation project organize
 The European Green Capital 2022 challenges are an opportunity to accelerate the mobilization of local stakeholders and inhabitants through challenges launched to local stakeholders and inhabitants on 12 themes (climate, energy, mobility, waste, food, etc.).
 9
 
-GREENOBLE ALPES
+GRENOBLE ALPES
 
 METROPOLE
 
@@ -4234,7 +4157,7 @@ social pricing of water as part of a national experiment with two components: fr
 In line with Grenoble-Alpes Metropole's commitment to excluding no one from the ecological transition, a "FAST" fund (Social Support Fund for the Ecological Transition) was set up in 2022. €3 million is planned in investment to support ecological and climate transition projects aimed at the most vulnerable groups, supported by solidarity association structures and social landlords across all 49 metropolitan municipalities.
 
 The implementation of FAST required the Social Development Directorate to work with a range of services and partners. The political will is to make this fund the social pillar of the climate air energy plan. It requires cross-functional work to understand, on the one hand, the changes underway on different subjects (transport, mobility, waste, insulation, etc.) and, on the other hand, to grasp the
-GREENOBLE ALPES MÉTROPOLE
+GRENOBLE ALPES MÉTROPOLE
 
 Climate Neutrality Action Plan
 
@@ -4331,7 +4254,7 @@ it has undertaken numerous actions in this area, such as the establishment of a 
 From 2015 and on, Grenoble Alpes Metropole used the opportunity of its new status as a Metropole (and additional responsibilities transferred on this occasion from the municipalities in key missions - energy distribution, urban planning, public spaces and roads, economic development,...) to strengthen its climate action. Major actions undertaken since then are the development and decarbonisation of its district heating network, integration of climate issues into the economic development strategy and the Land Use Regulation Plan, agricultural and food policy,...
 
 In the successive Climate Plans since 2005, the Metropole's climate objectives have been strengthened. The ambition to significantly accelerate the energy and ecological transition is expressed today in all of our public policies through master plans and strategic plans for 2030 (energy, waste, mobility, water and sanitation, housing, urban planning, agriculture and food policy etc.), articulated within a 2020-2030 Climate Air Energy Plan (SECAP, annex 4), acting as cornerstone of the metropolitan vision. This SECAP sets ambitious objectives and an action plan to reduce the territory's
-GREENBULE ALPES METROPOLE
+GRENOBLE ALPES METROPOLE
 
 Climate-Neutrality Commitments
 
@@ -4363,7 +4286,7 @@ Climate-Neutrality Commitments
 Joining the mission today represents a new step for Grenoble Alpes Metropole in the fight against climate change, to be part of an ambitious collective drive at national and European level, which is the only way to achieve carbon neutrality. The visual below shows the key steps of the past, present and future engagement and action for the climate.
 
 ![img-15.jpeg](img-15.jpeg)
-GREENOBLE ALPES METROPOLE
+GRENOBLE ALPES METROPOLE
 
 Climate-Neutrality Commitments
 
@@ -4387,7 +4310,7 @@ By joining the Cities Mission and the European dynamic of 100 climate-neutral an
 
 Act with all the levers at its disposal and mobilize all the stakeholders to drastically reduce greenhouse gas emissions by 2030 and accelerate the systemic transformation of its territory towards carbon neutrality;
 Contribute to exploring all pathways of acceleration towards carbon neutrality by 2030;
-GREENOBLE ALPES METROPOLE
+GRENOBLE ALPES METROPOLE
 
 Climate-Neutrality Commitments
 
@@ -4427,7 +4350,7 @@ In addition to the Climate City Contract's objective of reducing territorial emi
 For the implementation of its climate actions, the Metropole aims to find the conditions for a just transition. To this end, we have set up social pricing mechanisms, investment support mechanisms for the most vulnerable citizens and small businesses, and since 2022 a Social Support Fund for Transition, and will continue to put emphasis on a just transition for all.
 
 Finally, the Metropole pays particular attention to prioritizing action levers that provide positive co-benefits in terms of health, quality of life, resources and biodiversity preservation, local jobs as well as reducing the carbon footprint of the territory. Furthermore, also those that present the least risks for their implementation (availability of materials, strong dependence on the evolution of national or European policies or the price of energy, etc.). The development of cycling in the urban and suburban area, carpooling or reducing the space for cars in the city to allow planting and permeable soils have thus been identified as no-regret action levers with strong co-benefits.
-GREENOBLE ALPES METROPOLE
+GRENOBLE ALPES METROPOLE
 
 Climate-Neutrality Commitments
 
@@ -4471,7 +4394,7 @@ A significant effort must be made on the renovation of public and private tertia
 To support this development, the Land Use Regulation Plan includes energy performance and decarbonisation obligations for new buildings, ahead of national regulations (RE2020), solar panel installation on car parks and roofs and permeable soil measures. It includes, as part of its amendment no. 3, a "bioclimatic OAP", which aims to integrate new provisions in favor of adaptation to climate change and its mitigation. The new Local Housing Plan 2025-2030, known as "transition plan" currently being finalized, addresses the challenges of retrofitting and new methods of housing production, more focused on densifying the existing city, not only renovating existing buildings. The challenge is to mobilize all the actors of the construction sector, create a dynamic of shared transition and to build new economic models associated to this.
 
 # → Impact pathway 3: Accelerate the transition towards low-carbon mobility
-GREENOBLE ALLIES METROPOLE
+GRENOBLE ALLIES METROPOLE
 
 Climate-Neutrality Commitments
 
@@ -4488,7 +4411,7 @@ In the medium term perspective, the reliability and modernization of the interur
 Finally, on the subject of logistics and freight transport, the Low Emission Zone for heavy and light trucks has been in place since 2019 and the Sustainable Urban Logistics Roadmap outlines a trajectory for decarbonizing freight transport. Although, still today the decarbonisation is delayed due to the lack of suitable electric vehicles and affordable prices.
 
 A key issue for the territory remains strengthening the transport operator (SMMAG) which manages a dense and efficient urban transport network, but whose economic model has been seriously weakened since COVID. The operator faces a challenge as major investments for the renewal of its infrastructure, fleet and electrification are coming up. In the absence of new resources, its ability to finance the decarbonization of buses, express buses and multimodal interchange hub projects, tramway
-GREENOBLE ALPES MÉTROPOLE
+GRENOBLE ALPES MÉTROPOLE
 
 Climate-Neutrality Commitments
 
@@ -4509,7 +4432,7 @@ Because industrial strategies are not locally driven, this pathway need a strong
 The extraction of materials, the production of raw materials, the manufacturing and transport of the objects and foods we consume, as well as the collection and incineration of waste, consumes energy and emits greenhouse gases. To reduce this, an ambitious waste prevention and collection policy has been deployed within the metropolitan area and the surrounding cities/villages as part of the 2020-2030 Waste Master Plan. This plan aims to reduce the quantity of waste generated annually by 20%, to improve sorting, and to reduce by 50% the weight of the residual incinerated waste.
 
 Since three years, the collection of food waste has become generalized, with a solution offered to all inhabitants of the territory. Existing metropolitan equipment and devices for waste treatment and collection have also improved, with the increase in the capacity of the sorting center, the modernization of the biowaste composting unit and the installation of a new methanization unit, and the launch of the reconstruction of the Athanor incineration and energy recovery plant (completion planned 2028). Beyond waste management, a more global reflection on "throw less, consume better" is being strengthened, in particular thanks to the third Local Program for the Prevention of Household Waste and the Circular Economy Development Strategy launched in 2022. This strategy is based in particular on the "Pôle R" inaugurated in December 2023, a totem place of the circular economy, open to all economic actors in the reuse sector, which helps to consolidate their
-GREENOBLE ALPES METROPOLE
+GRENOBLE ALPES METROPOLE
 
 Climate-Neutrality Commitments
 
@@ -4555,7 +4478,7 @@ The Climate City Contract Action Plan will allow us to test new actions and ways
 In parallel, the Metropole has started the work on the revision of its SECAP, scheduled for approval by 2026. This revision of the SECAP will be developed in collaboration with local stakeholders, and is closely connected to the ongoing revision of the Energy Master Plan and the Mobility Plan. We will therefore use the Climate City Contract as an acceleration tool that nurtures the revision of the SECAP and later on the Multi-Year Investment Program for the climate investment planning. The cost efficiency analysis of the economic model have raised the internal competences on investment planning and is already being integrated into the revision process of the SECAP.
 
 On the territory of the Metropole, several large industrial companies are subject to the EU Emissions Trading System. These industries are major emitters whose emission reductions since 1990 has significantly contributed to the total reduction of emissions of the territory. But their evolution will
-GREENOBLE ALPES MÉTROPOLE
+GRENOBLE ALPES MÉTROPOLE
 
 Climate-Neutrality Commitments
 
@@ -4574,7 +4497,7 @@ Inspired by the "Transition Map" proposed by NetZeroCities, the following text e
 ## A long-standing commitment to climate action with a strong ambition
 
 Since its first climate plan in 2005, Grenoble-Alpes Metropole has shown its awareness of climate risk and its pioneering desire to act. We have built a strong mandate for action, reaffirming the ambition by signing the Covenant of Mayors' in 2008 and 2021, by strengthening the climate objectives in its successive climate plans and by establishing the climate emergency as a priority for the metropolitan council in 2020. Finally, by committing to the Cities Mission, the Metropole confirms its engagement
-GREENOBLE ALPES METROPOLE
+GRENOBLE ALPES METROPOLE
 
 Climate-Neutrality Commitments
 
@@ -4597,7 +4520,7 @@ Because carbon neutrality is an unprecedented collective challenge, each iterati
 Collective mobilization constitutes one of the five axes of the current SECAP. In 2020, as a continuation of the SECAP, in close collaboration with the municipalities, a new commitment framework was developed called the Municipality Commitment Charter. The charter includes an action plan developed and approved by each municipality, supported by the metropole, and acting as a local municipal climate plan (the plans can be downloaded at https://planclimat.grenoblealpesmetropole.fr/295-les-communes.htm). 34 municipalities (out of 49) representing 94% of the population of the Metropole has already approved a charter. In each of their charters, the municipalities establish not only the actions that they are likely to undertake in the implementation of their competences (buildings, real estate, vehicle fleet, etc.), but also the "relay role" that they can have, as a local actor, with the inhabitants and businesses of their community, in a "bottom-up" spirit. The mobilization of the region's economic actors has also been strengthened in recent years through; the Local Economic Pact which brings together the region's 31 main employers; the co-construction of the Economic Strategy Grenoble Alpes 2030 and the Circular Economy Strategy; the coordination of an Industrial Ecology Project on the southern industrial platform; the support for the deployment of the Convention of Enterprises for the Climate and through the signature of the new charter committing stakeholders to the 2020-2030 SECAP.
 
 Because getting people involved is all about setting an example, an Exemplary Administration Plan has been implemented to raise awareness and train all staff of the Metropole and adopt best practices in all areas of the local authority's activities (administration, purchasing, mobility, building management, etc.). The first Exemplary Administration Plan has recently been evaluated to build a second action plan.
-GREENOBLE ALPES METROPOLE
+GRENOBLE ALPES METROPOLE
 
 Climate-Neutrality Commitments
 
@@ -4648,7 +4571,7 @@ Promote innovation, experimentation and collaboration within the framework of na
 Monitor and evaluate the actions implemented and their results
 Continue to work in an iterative, continuous improvement process, to identify the obstacles to decarbonisation and the levers for change, in increasingly close collaboration with other local authorities involved in transitions, and regional, national and European actors.
 Each 2-3 years, capitalize on the lessons learned and test exploratory levers to challenge further SECAP and neutrality carbon trajectory
-GREENOBLE ALPES METROPOLE
+GRENOBLE ALPES METROPOLE
 
 Climate-Neutrality Commitments
 
@@ -4665,7 +4588,7 @@ In turn, the drafting of the Climate City Contract made it possible to capitaliz
 Following adoption of the new SECAP, a new iteration of the Climate City Contract will be drafted, to integrate new objectives and actions to accelerate towards carbon neutrality, in an iterative, systemic transformation and citizen-inclusive approach. The exploratory work will continue, in close collaboration with the other cities and partners of NetZeroCities, in a logic of continuous improvement. The Partner Commitment Charter of the next SECAP will include the partners' commitment to the 2nd Climate City Contract.
 
 The SECAP, revised every 6 years, will remain the regulatory and main plan to move towards carbon neutrality but the Climate City Contract may be revised more often to include exploratory work and experimentation, in order to challenge the acceleration of carbon neutrality in addition to the defined regulatory framework of French climate plans, within the collaborative framework of the 100 climate neutral and smart cities.
-GREENOBLE ALPES METROPOLE
+GRENOBLE ALPES METROPOLE
 
 Climate-Neutrality Commitments
 

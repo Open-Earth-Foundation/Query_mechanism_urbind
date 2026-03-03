@@ -290,8 +290,8 @@ Module A-3 “Systemic Barriers to 2030 Climate Neutrality” should document th
 |  System description | Stakeholders involved | Influence  |
 | --- | --- | --- |
 |  Technology | - BABEG (Kärntner Betriebsansiedlungs- und Beteiligungsgesellschaft)
-Lakeside Science & Technology Park | Support the establishment of climate-friendly, technology-driven businesses. The main technology for the transition towards climate neutrality however needs to be acquired at the world market (e.g. e-cars, e-buses)
-Openness of these stakeholders towards new technologies and their acknowledgment for climate protection may foster the 2030 goal; stubbornness instead may slow down the process.  |
+| Lakeside Science & Technology Park | Support the establishment of climate-friendly, technology-driven businesses. The main technology for the transition towards climate neutrality however needs to be acquired at the world market (e.g. e-cars, e-buses) |
+| Openness of these stakeholders towards new technologies and their acknowledgment for climate protection may foster the 2030 goal; stubbornness instead may slow down the process.  |
 |  Finance and business models | - Chamber of commerce (Carinthia / Austria)
 Banks
 FI, EIP | Strong influence as the city of Klagenfurt as well as companies and organizations need capital for the implementation of climate actions. Besides having a strong direct influence, banks etc. may take a leading role towards climate neutrality and hereby encourage others to follow the same path. New approaches to financing, e.g. such as climate bonds will create opportunities for climate actions; their absence instead may slow down the process.  |
@@ -482,7 +482,7 @@ Module B-2 "Climate Neutrality Portfolio Design" should contain a project descri
 ) Change of mobility behavior including bike and e-car sharing within the city
 ) Change of mobility behavior in the central area of Carinthia (commuters) | All mobility and transport actions strive towards an emission-free mobility. On one hand, by the electrification of the entire bus fleet, Klagenfurt will be one of the first cities offering completely GHG emission-free public transport. Together with measures aiming to intensify the use of public transport, a strong lever is targeted. On the other hand, when public transport is not possible, there will be a strong focus on fostering emission-free mobility (e.g. electric cars). Furthermore, several measures fostering bike usage are planned. These do not only include the construction of bike trails, but also priorities at busy intersections and safe parking facilities. For people not having their own bike at hand (e.g. as they arrive by public transport), the existing bike sharing system (nextbike) will be further extended  |
 |  Built environment and housing | 11) Thermal building renovation
-) Use of renewable raw materials (wood) in the building industry | Poorly insulated buildings and/or outdated heating systems are responsible for a large share of GHG emissions. Therefore, a thermal renovation campaign is needed. Where possible, in the course of this campaign, more houses will be connected to the city's district heating system. Furthermore, innovative measures for the usage of renewable raw materials (wood) in the building industry will lead to a reduction of emissions in the built environment  |
+| ) Use of renewable raw materials (wood) in the building industry | Poorly insulated buildings and/or outdated heating systems are responsible for a large share of GHG emissions. Therefore, a thermal renovation campaign is needed. Where possible, in the course of this campaign, more houses will be connected to the city's district heating system. Furthermore, innovative measures for the usage of renewable raw materials (wood) in the building industry will lead to a reduction of emissions in the built environment  |
 |  Nature-based and other innovative solutions | 13) Smart City offensive with economy and private developers
 ) Implementation of Smart City Measures
 ) Forestation of open spaces
@@ -501,7 +501,7 @@ B-2.2: Individual action outlines
 |  Action outline | Action name | Implementation of district cooling system  |
 | --- | --- | --- |
 |   |  Action type | Hard (infrastructure)
-Direct GHG emissions reduction measure  |
+| Direct GHG emissions reduction measure  |
 |   |  Action description | A district cooling system will be implemented in the center of Klagenfurt, providing a GHG emission-friendly cooling possibility on hot summer days.  |
 |  Reference to impact pathway | Field of action | Energy systems  |
 |   |  Systemic lever | Technology /infrastructure, governance & policy, finance & funding  |
@@ -521,7 +521,7 @@ B-2.2: Individual action outlines
 |  Action outline | Action name | Expansion of district heating system  |
 | --- | --- | --- |
 |   |  Action type | Hard (infrastructure)
-Direct GHG emissions reduction  |
+| Direct GHG emissions reduction  |
 |   |  Action description | Klagenfurt already has a well-functioning district heating system. For reaching climate neutrality by 2030 this system will be further extended.  |
 |  Reference to impact pathway | Field of action | Energy systems  |
 |   |  Systemic lever | Technology /infrastructure, governance & policy, finance & funding,  |
@@ -552,10 +552,10 @@ O
 |  Action outline | Action name | Replacement of natural gas by green synthetic gas  |
 | --- | --- | --- |
 |   |  Action type | Hard (infrastructure)
-Direct GHG emission reduction  |
+| Direct GHG emission reduction  |
 |   |  Action description | Conversion of natural gas in the gas supply of the city towards green synthetic gas. The focus is primarily on the residential and commercial sectors, where the greatest potential for savings lies in the first few years. With a conversion to 100% green gas supply by 2030, the potential GHG emissions savings amount to 30,000t GHG emissions per year.  |
 |  amount to 15,000t GHG emissions per year.
-Reference to impact pathway | Field of action | Energy systems  |
+| Reference to impact pathway | Field of action | Energy systems  |
 |   | Systemic lever | Technology /infrastructure, governance & policy, finance & funding, learning and capabilities  |
 |  Implementation | Outcome (according to module B-1.1) | Conversion from natural gas towards green synthetic gas.  |
 |   |  Responsible bodies/person for implementation | Bioenergie Kärnten  |
@@ -574,7 +574,7 @@ Reference to impact pathway | Field of action | Energy systems  |
 |  Action outline | Action name | Photovoltaic projects on municipality buildings  |
 | --- | --- | --- |
 |   |  Action type | Hard (infrastructure)
-Compensation measures  |
+| Compensation measures  |
 |   |  Action description | For the expansion of PV-systems in the city area, the city and the public utility provider founded the Klagenfurt Dachstrom GmbH. By 2030, there will be a continuous expansion of PV systems on municipal buildings and other potential areas. A total of EUR 30 million will be realized for photovoltaic systems on the roof areas of Klagenfurt will be invested. Further potential is explored.  |
 |  Reference to impact pathway | Field of action | Energy systems  |
 |   | Systemic lever | Governance & policy, finance & funding  |
@@ -595,13 +595,13 @@ AM WÖRTHERSEE
 |   |  Removed/substituted energy, volume or fuel type | Details to be elaborated  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 30000t GHG  |
 |   |  Total costs and costs by GHG unit | 30 Mio €
-€/t GHG  |
+| €/t GHG  |
 |  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
 |  (fill out one sheet per intervention/project)  |   |   |
 |  Action outline | Action name | Energy storage  |
 |   |  Action type | Hard (infrastructure)
-Compensation measure  |
+| Compensation measure  |
 |   |  Action description | The increasing number of photovoltaic systems leads to higher energy fluctuations. Tu buffer these fluctuations, it will be necessary to store some of the energy when there is a surplus and provide it when there is a shortage. Energy storage systems in form of batteries can be in small, medium and large sizes. While the first category (small sizes) is primarily relevant for single houses, the city of Klagenfurt mainly focuses on medium and large-size batteries (e.g. for apartment buildings or office buildings).  |
 |  Reference to impact pathway | Field of action | Energy systems  |
 |   |  Systemic lever | Technology /infrastructure, governance & policy, democracy/participation, finance & funding,  |
@@ -674,7 +674,7 @@ B-2.2: Individual action outlines
 |  Action outline | Action name | Expansion of e-mobility (individual and delivery traffic)  |
 | --- | --- | --- |
 |   |  Action type | Hard (infrastructure)
-Direct GHG emissions reduction  |
+| Direct GHG emissions reduction  |
 |   |  Action description | For more than 10 years Klagenfurt has been promoting the switch toward e-mobility. Various projects (e.g. CEMOBIL) have already been initiated, through which for example the charging infrastructure has been expanded, e-car sharing services created and electric vehicles purchased (for the municipal fleet and public transport). Through further measures (e.g. installation of e-car charging stations), the attractiveness of e-cars will be further increased.  |
 |  Reference to impact pathway | Field of action | Mobility & transport  |
 |   |  Systemic lever | Technology /infrastructure, governance & policy, social innovation, democracy/participation, finance & funding, learning and capabilities  |
@@ -703,7 +703,7 @@ B-2.2: Individual action outlines
 |  Action outline | Action name | Change of mobility behavior including bike and e-car sharing within the city  |
 | --- | --- | --- |
 |   |  Action type | Soft (behavior change) and hard (infrastructure)
-Direct GHG emissions reductions  |
+| Direct GHG emissions reductions  |
 |   |  Action description | For reaching the envisaged climate neutrality, a fundamental change in mobility behavior is necessary. This primarily means, a switch from private individual mobility with cars towards public transport. Additionally, bike usage needs to be intensified. Even though the bike trail system in Klagenfurt was recently extended, to fully unfold its potential further extensions and renewals are necessary. At busy car intersections, a safe crossing for bikes must be guaranteed and generally, bikes must have priority over individual car traffic. Further measures to enhance the attractiveness of bike usage regard safe and practical parking positions. For people not having their own bike at hand (e.g. as they arrive by public transport), the well-functioning bike sharing system (nextbike) will be further extended.  |
 |  Reference to impact pathway | Field of action | Mobility & transport  |
 |   |  Systemic lever | Technology /infrastructure, governance & policy, social innovation, democracy/participation, finance & funding, learning and capabilities  |
@@ -775,13 +775,13 @@ AM WÖRTHERSEE
 |   |  Removed/substituted energy, volume or fuel type | Details to be elaborated  |
 |   |  GHG emissions reduction estimate (total) per emission source sector | 54000t GHG  |
 |   |  Total costs and costs by GHG unit | 170 Mio €
-€/t GHG  |
+| €/t GHG  |
 |  B-2.2: Individual action outlines  |   |   |
 | --- | --- | --- |
 |  (fill out one sheet per intervention/project)  |   |   |
 |  Action outline | Action name | Use of renewable raw materials (wood) in building industry  |
 |   |  Action type | Soft (raising awareness) and hard (practical assistance for pilot projects)
-Compensation measure  |
+| Compensation measure  |
 |   |  Action description | The building sector is one of the most relevant GHG emissions emitter. Through innovative projects renewable raw materials will be applied and the GHG emissions reduced  |
 |  Reference to impact pathway | Field of action | Built environment and housing  |
 |   |  Systemic lever | governance & policy, finance & funding  |
@@ -856,7 +856,7 @@ AM WÖRTHERSEE
 |  Action outline | Action name | Forestation of open spaces  |
 | --- | --- | --- |
 |   |  Action type | Hard (natural rehabilitation) and soft (raising awareness)
-Compensation measure  |
+| Compensation measure  |
 |   |  Action description | Forestation projects of open spaces will compensate GHG emissions. Additionally, this measure will lead to many positive side-effects (e.g. improvement of urban biodiversity).  |
 |  Reference to impact pathway | Field of action | Nature-based and other innovative solutions  |
 |   |  Systemic lever | governance & policy, finance & funding  |
@@ -876,7 +876,7 @@ Compensation measure  |
 |  Action outline | Action name | Climate projects in the central area of Carinthia  |
 | --- | --- | --- |
 |   |  Action type | Soft (raising awareness) and hard (infrastructure, natural rehabilitation)
-Compensation measure  |
+| Compensation measure  |
 |   |  Action description | This climate action includes several climate projects in Klagenfurt's neighboring communities and the central area of Carinthia. The primary focus is the bonding of GHG emissions, however, also several  |
 
 6
@@ -974,8 +974,8 @@ Action field: nature-based and other innovative solutions
 |  Targets | Indicators | Target value  |
 | --- | --- | --- |
 |  Cooperations with Carinthian companies for business transformation towards sustainability | • Number of cooperations with companies
-• Number of supported pilot projects on sustainability measures in companies | • 100 cooperations by 2030
-• 15 pilot projects by 2030  |
+| • Number of supported pilot projects on sustainability measures in companies | • 100 cooperations by 2030 |
+| • 15 pilot projects by 2030  |
 |  Supported cooperative climate action projects outside of the city of Klagenfurt | • Number of climate action projects outside from the city of Klagenfurt | • 10 projects by 2030  |
 Climate Neutrality Action Plan
 
@@ -1439,13 +1439,13 @@ Overview: Letters of Intent (LOIs, received or requested)
 | --- | --- |
 |  CEO Bioenergie Kärnten | Ing. Johann Moser  |
 |  Board of directors Diakonie de La Tour Kärnten | Mag. Walter Pansi (board of directors)
-MMag.a. Susanne Prentner-Vitek (board of directors)  |
+| MMag.a. Susanne Prentner-Vitek (board of directors)  |
 |  Director Caritas Kärnten | Mag. Ernst Sandriesser  |
 |  Rector Universität Klagenfurt | Univ.-Prof. Mag. Dr. Oliver Vitouch  |
 |  Managing director University of Applied science Carinthia | DI Siegfried Spanz  |
 |  Managing Director Lakeside Science & Technology Park Klagenfurt | Mag. (FH) Bernhard Lamprecht  |
 |  Managing Director KMG – Klagenfurt Mobil GmbH | Dipl. Ing. Erwin Smole
-Dr. Wolfgang Hafner  |
+| Dr. Wolfgang Hafner  |
 |  Managing Director Minimundus Klagenfurt | Mag. (FH) Hannes Guggenberger  |
 |  Association of Carinthian Industries |   |
 Climate-Neutrality Commitments
@@ -1454,7 +1454,7 @@ KLAGENFURT
 AM WÖRTHERSEE
 
 |  Chamber of Commerce Carinthia | Jürgen Mandl, MBA (Präsident)
-MMag. Dr. Meinrad Höfferer  |
+| MMag. Dr. Meinrad Höfferer  |
 | --- | --- |
 |  Managing Director Joanneum Research | DI Dr. Heinz Mayer  |
 

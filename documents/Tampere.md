@@ -525,19 +525,11 @@ C
 |  Action plan | Local | Carbon Neutral Tampere 2030 Roadmap | The roadmap aggregates the actions that the city plans to take in order to achieve climate neutrality by 2030. | Engages the city organisation in the climate neutrality target. Includes impact assessments of the planned actions. | Capacity building about systems thinking in both the city organisation and among stakeholders while updating the plan in 2024  |
 |  Policy | Local | Strategic Local Master plan for main city area | The plan seeks solutions for the urban and natural environment that support adaptation to and mitigation of climate change. | Promotes sustainable land use in a growing city. | Studying future energy systems while making the city urban plan  |
 |  Policy | Local | City of Tampere housing and land policy guidelines 2022-2025 | A lot of new housing has been built in Tampere, mainly along public transport routes and by densifying existing residential areas. Efficient public transport and high quality walking and cycling routes move people quickly and with low emissions from one area to another. The need to move around in everyday life is reduced by the proximity of services and jobs to homes. Energy is renewable and increasingly produced by non-combustion | Climate-neutrality and sustainability are mainstreamed and integrated in the daily workings of the city. Developing a holistic approach to housing and land use. | Ensuring new holistic ways of working and innovations are taken up widely in the city. This requires resources, planning and follow-up.  |
-1
-
-TAMPERE
-
-Climate Neutrality Action
-
-Plan
-
 |   |  |  | technologies, nearby or self-produced. The principles of the circular economy are widely applied to all activities, including construction. Recycled materials and building components are used in buildings. Buildings are designed to be flexible, durable and ultimately demountable and recyclable. Construction and renovation will minimise the carbon footprint of buildings throughout their life cycle. |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  Policy | Local | Tampere City Strategy | The City Strategy lays the foundation for the city's management. It represents city's long-term goals from the present to 2030. | One of the four priorities of the strategy is carbon neutral actions. | Ensuring continuity of climate action over the course of time.  |
 |  Strategic plan | Local (and city region dimension) | Sustainable Urban Mobility Plan (SUMP) | SUMP is a strategic plan that reviews people's mobility needs from the perspective of better quality of life. | Transport and mobility are a key emission area for Tampere to work on in order to reach the 2030 target. SUMP promotes a transition into more sustainable modes of transport required by traffic climate targets. | Making sure the political will and resources continue to match the objectives set in SUMP.
-Pilot project for boosting the modal shift and producing information that supports the change and communicates co-benefits well to different actors.  |
+| Pilot project for boosting the modal shift and producing information that supports the change and communicates co-benefits well to different actors.  |
 |  Action Plan | Local | Cycling Development Programme 2030 | The programme puts together actions to achieve a minimum 15% modal share of cycling in Tampere by 2030. | Promoting bicycle traffic plays a significant role in achieving carbon neutrality. | Ensuring the programme is matched with the required resources.  |
 |  Action Plan | Local | Walking and Urban Life Programme 2030 | The programme intends to improve the walking conditions in the city to make walking a more attractive modal choice while also developing the city centre. | Promotion of walking in the city centre and more widely has an important role in the toolbox as the city works towards climate neutrality. | Coordination with the Cycling Development Programme and collaboration across service areas.  |
 |  Action Plan | Local | Biodiversity Programme 2021-2030 | The programme sets the ambition to improve biodiversity in the city – from the city centre to protected areas. Biodiversity is seen as a key component of urban development. The programme has six main goals that are complemented with 112 actions. | Climate change and biodiversity are closely linked to each other. Biodiversity has value as such but can also help with adaptation to climate change. | Growing city and its landuse needs are a challenge for biodiversity. Cross-sector coordination of different objectives and interests requires continuous work as defined in the programme.  |
@@ -558,76 +550,36 @@ Plan
 |  Regulation | National | Climate Act | Finland aims to be carbon neutral by 2035. The Climate Act was recently reformed to reach the target. | Obliges municipalities to draw up climate plans and set emission reduction targets. | Making sure the state financially supports the cities to the degree that is necessary in order to reach the target.  |
 |  Policy | National | The Government Programme 2023 | Finland aims to be a leader in clean energy: Businesses will be offered stable and predictable operating conditions in order to promote the green transition and cleantech investments and attract new business to Finland. The Government will explore the need and possibilities for the central government to participate in financing solutions for strategic investments (guarantees or capital investments). E.g., Clean Energy Finland projects. | Financial support for major energy and infrastructure investments of the cities could significantly promote climate neutrality. | The policy is expected to promote investments related to large-scale energy projects in the city. Making sure the city benefits these opportunities.  |
 |  Regulation | National | The Government Programme 2023 | The Government will ensure that the regulatory and permit processes for solar power parks are uniform, flexible and predictable throughout the country. The up-to-dateness of the determination of the tax values of the structures of solar power plants is checked, ensuring that the solar power plant is not subject to a disproportionately | Will reduce red tape and accelerate increasing the share of solar power in the city and surrounding region of Tampere. | Improving preparedness in the city for when constructing more solar power becomes easier.  |
-3
-
-TAMPERE
-
-Climate Neutrality Action
-
-Plan
-
-#
-
 |   |  |  | higher property tax than wind power.
-Solar power parks are expected to become more common due to improved profitability and accelerated permit processes also in the cities |  |   |
+| Solar power parks are expected to become more common due to improved profitability and accelerated permit processes also in the cities |  |   |
 | --- | --- | --- | --- | --- | --- |
 |   | National | The Government Programme 2023 | The link between meeting the objectives of MAL agreements and financing the investments will be strengthened. The Government Programme 2023 includes investment support to MAL agreements. |  |   |
 |  Policy | National | The Government Programme 2023 | Development of main Helsinki-Tampere rail-link, Liminka-Oulu twin track. The Government will make substantial investments in developing the railway network in various parts of Finland. In addition to the State the municipalities may be shareholders in the companies that execute infrastructure projects. Linked to use of CEF funds which will also be used to fund Tampere related projects. | Will enable Tampere to be more sustainably accessible hence reducing emissions. | Continuous lobbying to ensure adequate funding for major railway projects related to Tampere.  |
 |  Policy | National | The Government Programme 2019 | The municipalities, residents and communities have been able to apply for ARA grants (energy-efficiency improving subsidies) and ELY grants (e.g. replacing oil heating) to switch to low-emission forms of heating since 2020. | The financial support to public authorities and citizens to make climate-neutral changes in their real estates promotes climate-neutrality. | Continue to utilise the mentioned grants.  |
 |  Regulatio n | National | The act banning the use of coal for energy generation in 2029 | Coal-fired power and heating generation will be banned as of 1 May 2029.
-Programme of Prime Minister Sanna Marin's Government 2019 included supporting investments to replace coal, EUR 90 million during the budget planning period. | Directly promotes decarbonisation. | Applying for available funding.  |
+| Programme of Prime Minister Sanna Marin's Government 2019 included supporting investments to replace coal, EUR 90 million during the budget planning period. | Directly promotes decarbonisation. | Applying for available funding.  |
 |  Regulatio n | National | Land Use and | New construction and large-scale renovations | Incread use of renewable energy | Making sure city's construction and  |
-4
-
-TAMPERE
-
-Climate Neutrality Action Plan
-
 |   |  | Building Act (927/2021), (132/1999) | will be subject to a minimum requirement of renewable energy. In construction projects, it must be ensured that at least 38 percent of the calculated purchase energy used in the energy calculation in a new building or a building undergoing large-scale repair is renewable energy, if it is technically, functionally and economically feasible.
-
-These requirements ensure investments in renewable energy in new construction and large-scale renovations. | sources will reduce use of fossil sources hence promoting carbon-neutrality. | renovation projects fulfill the requirements.  |
+| These requirements ensure investments in renewable energy in new construction and large-scale renovations. | sources will reduce use of fossil sources hence promoting carbon-neutrality. | renovation projects fulfill the requirements.  |
 | --- | --- | --- | --- | --- | --- |
 |  Programme | National | KIRA, The programme on a low-carbon built environment | The programme on a low-carbon built environment offers a total of EUR 40 million in funding in 2021–2023 to support Finnish companies and other organisations in developing low-carbon solutions related to the built environment. Municipalities and other public procurement entities can receive funding for innovative public procurement.
-
-Funded projects have concerned, e.g., development of climate and energy impact assessment and solutions for low-carbon suburban development. | Promotes climate-neutrality in the field of built environment, a major emission sector. | City should apply for funding available.  |
+| Funded projects have concerned, e.g., development of climate and energy impact assessment and solutions for low-carbon suburban development. | Promotes climate-neutrality in the field of built environment, a major emission sector. | City should apply for funding available.  |
 |  European policies, strategies, initiatives and regulation  |   |   |   |   |   |
 |  Regulation | European | EU Directive on Energy Efficiency and Energy Efficiency Act | The Energy Efficiency Directive (EU/27/2012 & amendment (EU/2018/2002). The directive lays down energy efficiency targets at the EU and national level, the national energy saving obligation and measures and obligations to promote energy efficiency. As part of the recast of Fit for 55 Package in 2021 | The directive will reduce emissions by pushing member states to improve energy efficiency. | Ensuring cities have the needed tools such as funding and financing instruments to do their share of the work.  |
-5
-
-TAMPERE
-
-Climate Neutrality Action Plan
-
 |   |  |  | the target to reduce energy consumption by 32.5% in the EU will be tightened to 36–39%. The target will become binding. Finland would need to limit final energy consumption to 255 TWh by 2030. These requirements encourage investments to be directed to improving energy efficiency and, e.g., energy-efficient construction. |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  Regulatio n | European | The Renewable Energy Directive, (RED II; 2018/2001). EU emission trading system (ETS) | Finland has announced that it aims for a renewable energy share of at least 51 percent in 2030. The RED II directive also requires that 14 percent of the energy used by transport in the member states is renewable energy by 2030. The Directive encourages directing investments to renewables and stabilizes the investment environment. A cap, or limit, is set on the total amount of certain GHGs that can be emitted by the factories, power plants and other installations in the system. The cap is reduced over time so that total emissions reduce. The system allows trading of emission allowances so that the total emissions of the installations stays within the cap and the least-cost measures can be taken to reduce emissions. (Directive 2003/87/EC, Delegated Decision (EU) 2020/1071 and Delegated Regulation (EU) 2021/1416.) The Fit for 55 package aims to reform the EU ETS by making it more ambitious. | Power plants and installations which the city owns (or a share of them) or transport systems run by cities are affected. More significant incentive to invest in climate-neutrality. | Collaboration with the organisations affected. Supporting them in making more sustainable investment decisions. Once the Social Climate Fund starts to operate, the city should see if it can benefit of its funds.  |
-6
-
-TAMPERE
-
-Climate Neutrality Action
-
-Plan
-
 |   |  |  | The system can bring investments in low-carbon technologies to ETS power plants and other installations.
 
 Revenues from the sale of the allowances are put into the social fund.
 The Social Climate Fund will provide support to vulnerable groups. |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  Regulatio n | European | Europea n Climate Law | The European Climate Law - as part of the Fit for 55 package - makes reaching the EU's climate goal of reducing EU emissions by at least 55% by 2030 a legal obligation.
-The Innovation Fund (IF) and Modernisation Fund (MF) already existing in the EU ETS are retained in the Fit for 55 package and increased, while a new Social Climate Fund (SCF) is introduced. | Directly tightens the emission reduction target contributing to climate-neutrality. | The city needs to act with the binding target in mind.
-However, city's own target of 80 % for 2030 is already more ambitious than that of the EU's.  |
+| The Innovation Fund (IF) and Modernisation Fund (MF) already existing in the EU ETS are retained in the Fit for 55 package and increased, while a new Social Climate Fund (SCF) is introduced. | Directly tightens the emission reduction target contributing to climate-neutrality. | The city needs to act with the binding target in mind. |
+| However, city's own target of 80 % for 2030 is already more ambitious than that of the EU's.  |
 |  Regulatio n | European | EU Clean Vehicles Directive | Clean Vehicles Directive (CVD) 2019/1161 is aimed at promoting the adoption of low and zero-emission vehicles in the EU. It sets mandatory procurement targets for clean vehicles in the public sector, including electric and hydrogen-powered vehicles, with the goal of reducing GHGs, air pollution, and energy consumption in transportation.
-The directive stimulates investments in clean vehicle technologies and related infrastructure. | Growing number of clean vehicles and public procurement will inevitably reduce GHGs and hence promote climate-neutrality. | City's transport and mobility investments need to aligned with the directive in the context of public procurement. The city's infrastructure and planning also need to be adjusted to the changing clean vehicle environment.  |
+| The directive stimulates investments in clean vehicle technologies and related infrastructure. | Growing number of clean vehicles and public procurement will inevitably reduce GHGs and hence promote climate-neutrality. | City's transport and mobility investments need to aligned with the directive in the context of public procurement. The city's infrastructure and planning also need to be adjusted to the changing clean vehicle environment.  |
 |  Regulatio n | European | EU legisla tio n on buildings and construc tion | The Energy Performance of Buildings Directive EPBD; 2010/31, 2018/44. Construction-related matters such as construction product approvals, the environmental impacts of buildings and the energy efficiency of | The renewal of building stock is expected to reduce energy bills and help curb climate change. | Making sure the city's procurement, investment, installation and maintenance plans are ready for 2027+.  |
-7
-
-TAMPERE
-
-Climate Neutrality Action Plan
-
-#
-
 |   |  |  | buildings and construction products. The legislation contains, e.g., regulations for urban buildings to utilize solar energy. From 2027, each new government building or private office building larger than 250 square meters must have solar panels. Legislation guides investments for more environmentally friendly buildings and construction. |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  Regulatio n | European | Revision of the Energy Union Governance | Original plan consists of five dimensions: - decarbonisation (GHG reduction and renewables) - energy security - energy efficiency - internal energy market - research, innovation and competitiveness | Direct impact on climate-neutrality. To be confirmed later one. | Upcoming (situation in 9/2023)  |
@@ -700,7 +652,7 @@ Sustainability
 Climate change mitigation | Sustainable and smooth mobility, transport, housing and living in the region.
 Key policy maker and influencer among smaller towns in Tampere central region.  |
 |   | Council of Tampere region | Sustainability
-Climate change | Strategy work for the whole region. Local provider of EU structural funds.  |
+| Climate change | Strategy work for the whole region. Local provider of EU structural funds.  |
 |   | Centre for Economic Development, Transport and the Environment (ELY Centres) | Mobility & transport
 Waste & circular economy
 Climate change mitigation | Sustainable solutions for mobility, climate change and circular economy in the region. Key policy maker in climate change related actions and an additional channel for us to national government  |
@@ -722,12 +674,6 @@ C
 |   | EcoPartners Ltd (non-profit) | Citizen engagement in sustainable actions from energy to circular economy and citizen engagement. Broad European networks. | Promoting sustainable lifestyle and business. Project engine.  |
 |  Private sector | Companies (over 800 firms in clean-tech and circular economy ecosystems) | Green industry Mobility & transport Energy Clean-tech in manufacturing Consumer behavior, circular economy | Sources of industrial emissions. Employee, customer and logistic mobility and transport emissions. Procurements. Reaching their own climate targets, due diligence and brand.  |
 |   | Climate Partners, a network of over 100 firms committed to climate actions. | Green industry, Mobility & transport, Energy Consumer behavior, circular economy | Sources of industrial emissions. Employee, customer and logistic mobility and transport emissions. Procurements. Reaching actively their own climate targets, due diligence and brand. Brand, pioneering  |
-
-0
-Climate Neutrality Action Plan
-
-C
-
 |   | Development partners, e.g. Kausal | Green industry, Mobility & transport, Energy | Developing through knowledge; developing tools for monitoring climate neutrality  |
 | --- | --- | --- | --- |
 |  Citizens | Carbon Neutral Actions development programme
@@ -741,7 +687,7 @@ Housing
 Consumer behavior | Citizen participation within organizations having some other unifying factor than carbon neutrality.
 Get publicity and more members, brand, influence.  |
 |   | Public opinion | Social impact
-Consumer behavior | Have on influence on what is taken as normal or expected in e.g. consumption or mobility.  |
+| Consumer behavior | Have on influence on what is taken as normal or expected in e.g. consumption or mobility.  |
 |  University/research | Tampere University
 Tampere University of Applied Sciences
 Students
@@ -749,8 +695,8 @@ VTT Research Center | Research, innovation, education, mobility & transport, cir
 One of the key stakeholders from the city point of view. Source of new knowledge. | New research and innovations in all aspects of sustainability; city plays the role of partner and platform for Uni’s.
 Students as future experts, employee and students mobility and transport emissions, procurements, Research funding, education, brand.  |
 |  Media | Local newspapers
-Tv, radio (Yle) | Social impact, education | Influence the way sustainability issues are discussed locally, educating and keeping citizens up to date,
-Get more customers, be the first to publish articles and stories.  |
+| Tv, radio (Yle) | Social impact, education | Influence the way sustainability issues are discussed locally, educating and keeping citizens up to date, |
+| Get more customers, be the first to publish articles and stories.  |
 |   | Tampere.fi | Social impact, education | Influence the way sustainability issues are discussed locally, educating and keeping citizens up to date.  |
 |   | Social media | Social impact | Influence the way sustainability issues are discussed locally  |
 
@@ -874,24 +820,18 @@ Local CHP electricity production decreases significantly | Regional biofuels str
 More stable energy prices for consumers
 Non-combustion heat production units can participate in the demand response market  |
 |   |   |  Investment in solar panels increases due to more volatile energy prices | Local renewable energy production replaces grid-provided energy | Reduction in need of grid-provided electricity, 1 500 t CO2e | Self-sufficiency in electricity production increases
-Consumers are less vulnerable to electricity prices  |
+| Consumers are less vulnerable to electricity prices  |
 |   |   |  Adding storage capacity and demand side management to public and private facilities that have a significant peak power demand during the day | Electricity demand adapts better to growing variable renewable energy production | Less need for fossil peak load production -> national electricity system can decarbonise efficiently | Electricity prices become more stable  |
 |   |   |  Applying solutions to heat demand side management | District heating and electricity peaks loads become smaller | Less need for fossil peak load production -> district heating emissions | District heating prices are less dependent on imported fossil fuels  |
-7
-
-TAMPERE
-
-Climate Neutrality Action Plan
-
 |   |  |  |  | reduce further |   |
 | --- | --- | --- | --- | --- | --- |
 |   |   |  Feasibility studies for CCS/U implementation | Carbon capture and use/storage in biomass CHP and waste CHP | Reliable carbon removals produced locally 300-400 000 t CO2e
-Potential for producing hydrogen and synthetic fuels | Opportunities for local economy to grow from using captured carbon in ways that permanently store it
-Hydrogen production can add to flexible electricity capacity  |
+| Potential for producing hydrogen and synthetic fuels | Opportunities for local economy to grow from using captured carbon in ways that permanently store it |
+| Hydrogen production can add to flexible electricity capacity  |
 |   |  Learning and capabilities | City planning takes local energy production into account | Local renewable energy production increases | Local renewable energy production replaces grid-provided energy | Consumers are less vulnerable to electricity prices  |
 |   |   |  City provides energy advice to citizens, housing companies and targets especially those in danger of energy poverty | Citizens can identify the most affordable energy efficiency actions | Energy use becomes more efficient in residential buildings
-Oil heating is changed to renewable energy or district heating | Risk of energy poverty decreased
-Dependence on imported fossil oil reduces  |
+| Oil heating is changed to renewable energy or district heating | Risk of energy poverty decreased |
+| Dependence on imported fossil oil reduces  |
 |  Mobility & transport | Technology/infrastructure | Expand the tramway after phase 2
 More local trains
 Improvements in walking and cycling infrastructure and bike parking
@@ -899,10 +839,6 @@ Enhanced winter maintenance of the cycling and walking paths | Public transport 
 Urban structure supports walking, cycling and the use of public transport
 Cycling is smooth, attractive and safe | Reduced private car use and number of vehicles in the city, | Less traffic noise, health benefits (more walking), accessible public transport, more jobs, improved safety for all travellers, more space in the city for city life, economic benefits to citizens as well as the public and private sectors  |
 |   |  Finance and funding | Ensuring sufficient funding for sustainable mobility infrastructure and public transport services in local | Sustainable mobility growth |  | See Figure 4.1 for details  |
-Climate Neutrality Action Plan
-
-TAMPERE
-
 |  |  | and national context |  |  |  |
 | --- | --- | --- | --- | --- | --- |
 | Social innovation | Mobility management: Co-operation between city units Nudging Communication Stakeholders promoting sustainable transport choices | Changing attitudes about sustainable transport and reaching a social tipping point in growth of sustainable transport |
@@ -911,31 +847,17 @@ TAMPERE
 |  | Sustainable mobility and travel chain improvements a common practise in urban planning |  |
 | Capabilities and capacities | Data platform on transport system situation created | More knowledge provided on the impacts of sustainable mobility to city planners, decision makers and citizens |
 | Governance & policy | Find ways to regulate city logistics to favor light vehicles and cleaner propulsion | Less heavy fossil fuel vehicles used in city logistics | Less transport emissions from city logistics | Traffic safety increases Cycling and walking becomes smoother in the center areas |
-
-8
-Climate Neutrality Action Plan
-
-C
-
 |  |  | Taking a convenient EV charging network and biofuel stations into account in urban planning | The share of electric vehicles and biofuel use increases | Average emission from car travel output decreases, impact included in roadmap projection | Less noise and air pollution in center areas
-Health benefits from improved air quality |
+| Health benefits from improved air quality |
 | --- | --- | --- | --- | --- | --- |
 | Waste & circular economy | Technology & Infrastructure | Ensuring that existing landfills capture as much of the methane emissions as possible |  | Emissions from existing landfills are under control, 50 000 t CO2e | Increased amount of renewable energy available from biogas |
 | Governance & Policy | Implement Tampere’s Circular Economy plan
-Improve availability of material flow data in the city | Awareness of material flows and co-creation of actions with stakeholders to optimize the reuse and use of materials | Use of primary materials decreases, scope 3 impact | Material prices remain more stable |
+| Improve availability of material flow data in the city | Awareness of material flows and co-creation of actions with stakeholders to optimize the reuse and use of materials | Use of primary materials decreases, scope 3 impact | Material prices remain more stable |
 | Green Industry | Technology & Infrastructure |  | Electrifying industry that currently uses fossil gas/biogas as energy source | Emissions from industrial process will go down about 50 000 t CO2e | Adding capacity to the demand side management market |
 | Governance & policy | Joining the National Green Deal for zero-emission construction sites forces the city to develop ways for procuring emission-free construction jobs | Zero-emission construction sites start becoming the norm | Emissions from construction work machines will be reduced 5 000 t CO2e | Less noise and air pollution in the city despite inevitable construction sites from densifying city structure and traffic infrastructure changes |
 | Built environment | Governance & policy | Urban planning of new residential buildings focused in public transport zones and district centres | More people have the opportunity to use sustainable modes of transport in their everyday lives
-The need to travel long distances for | Less transport emissions from reduced mileage with private cars
-Less need to build new infrastructure for new residents | Less need to disturb natural areas and disrupt biodiversity |
-
-9
-0
-
-TAMPERE
-
-Climate Neutrality Action Plan
-
+| The need to travel long distances for | Less transport emissions from reduced mileage with private cars |
+| Less need to build new infrastructure for new residents | Less need to disturb natural areas and disrupt biodiversity |
 |   |  | everyday needs decreases | Less need to build new greenfield areas |   |
 | --- | --- | --- | --- | --- |
 |   |  Demanding readiness for data collection and demand side management of energy in new buildings | New buildings don't add as much to peak load demand of energy | Less need for peak load fossil production | Energy prices are more stable  |
@@ -1118,14 +1040,6 @@ Table B-2.2.4: Individual action 4 outlines
 |   |  Involved stakeholders | Companies with big logistics needs  |
 |   |  Comments on implementation |   |
 |  Impact & cost | Generated renewable energy (if applicable) | N/A  |
-6
-
-TAMPERE
-
-Climate Neutrality Action Plan
-
-C
-
 |   | Removed/substituted energy, volume or fuel type | Transport fuels  |
 | --- | --- | --- |
 |   |  GHG emissions reduction estimate (total) per emission source sector | Less transport emissions from city logistics  |
@@ -1231,12 +1145,6 @@ Table B-3.1: Indicators
 |  Green Industry | Actions 5 & 6 | 1.5 | Emissions from Industry and work machines |  |  | 39 kt CO2-e/a  |
 |  Green Industry |  | 1.6 | Emissions from industrial electricity |  |  | 7 kt CO2-e/a  |
 |  AFOLU |  | 1.7 | Emissions from agriculture |  |  | 4 kt CO2-e/a  |
-9
-
-TAMPERE
-
-Climate Neutrality Action Plan
-
 |  Built environment |  | 2 | Residential floor area planned for the public transport zones and for the district centres |  | 85 % | 90 %  |
 | --- | --- | --- | --- | --- | --- | --- |
 |  Mobility & transport : modal shift | Action 1 & 2 | 3 | Share of sustainable modes of transport on an autumn weekday |  | 63 % | 69 %  |
@@ -1248,10 +1156,6 @@ Climate Neutrality Action Plan
 |  Mobility & transport: alternative propulsion |  | 4.1 | Percentage of vehicles using alternative propulsion systems of the city organisation's passenger car fleet |  | 40% | 100 %  |
 |  Mobility & transport: alternative propulsion |  | 4.2 | Percentage of vehicles using alternative propulsion systems of the city organisation's all vans |  | 20 % | 100 %  |
 |  Mobility & transport: alternative propulsion |  | 5 | Share of outsourced low-emission propulsion transport services (bus and tramway) |  | 35 % | 100%  |
-Climate Neutrality Action Plan
-
-C
-
 |   |  |  | line kilometres) |  |  |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |  Built Environment: Wood construction |  | 6 | Percentage of wooden apartment block construction from all new apartment blocks on plots allocated by the city |  | 15 % | 20 %  |
@@ -1262,16 +1166,6 @@ C
 |  Waste & circular economy |  | 11 | Percentage of procurements involving environmental criteria of city's all procurements |  | Targets are yet to be determined |   |
 |  Waste & circular economy |  | 12 | Percentage of meals served by the municipal company Voimia that are climate friendly (includes meals in schools and daycare) |  | 70 | 90  |
 |  Green infrastructure & nature based solutions |  | 13 | Amount of inner-city green area in town plans and master plans |  | Targets are yet to be determined |   |
-
-0
-1
-
-TAMPERE
-
-Climate Neutrality Action Plan
-
-C
-
 |   |  |  | per (m2/resident) |  |  |   |
 | --- | --- | --- | --- | --- | --- | --- |
 |  Financing |  | 14 | Percentage of climate investments in climate budget of city's total investments (5 % in 2022) |  | No official targets | No official targets  |
@@ -1305,16 +1199,6 @@ C
 |  Definition | Percentage of residential floor area planned for the public transport zones and for the regional centres  |
 |  Calculation |   |
 |  Indicator Context |   |
-2
-
-TAMPERE
-
-Climate Neutrality Action
-
-Plan
-
-#
-
 |  Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | yes  |
 | --- | --- |
 |  If yes, which emission source sectors does it impact? | Mobility & transport, built environment  |
@@ -1390,14 +1274,6 @@ Table B-3.2.5: Indicator 4.1 Metadata
 |  If yes, which emission source sectors does it impact? | Mobility & transport  |
 |  Does the indicator measure indirect impacts (i.e. co-benefits)? | no  |
 |  If yes, which co-benefit does it measure? | Co-Benefits  |
-4
-
-TAMPERE
-
-Climate Neutrality Action Plan
-
-C
-
 |  Can the indicator be used for monitoring impact pathways? | Yes  |
 | --- | --- |
 |  If yes, which NZC impact pathway is it relevant for? | Mobility & Transport, alternative propulsion  |
@@ -1430,14 +1306,6 @@ C
 |  References |   |
 |  Deliverables describing the indicator |   |
 |  Other indicator systems using this indicator |   |
-5
-
-TAMPERE
-
-Climate Neutrality Action Plan
-
-C
-
 |  Table B-3.2.7: Indicator 5 Metadata  |   |
 | --- | --- |
 |  Indicator Name | Share of outsourced low-emission propulsion transport services (bus and tramway line kilometres)  |
@@ -1470,14 +1338,6 @@ C
 |  If yes, which emission source sectors does it impact? | Built environment  |
 |  Does the indicator measure indirect impacts (i.e. co-benefits)? | no  |
 |  If yes, which co-benefit does it measure? | Co-Benefits  |
-6
-
-TAMPERE
-
-Climate Neutrality Action Plan
-
-C
-
 |  Table B-3.2.9: Indicator 7 Metadata  |   |
 | --- | --- |
 |  Indicator Name | Percentage of renewable energy of local heat and power company's production  |
@@ -1499,10 +1359,6 @@ C
 |  References |   |
 |  Deliverables describing the indicator |   |
 |  Other indicator systems using this indicator |   |
-Climate Neutrality Action Plan
-
-C
-
 |  Table B-3.2.10: Indicator 8 Metadata  |   |
 | --- | --- |
 |  Indicator Name | Reduction of greenhouse gas emissions from Tampereen Energia production as compared to 2010  |
@@ -1536,16 +1392,6 @@ C
 |  Does the indicator measure indirect impacts (i.e. co-benefits)? | no  |
 |  If yes, which co-benefit does it measure? | Co-Benefits  |
 |  Can the indicator be used for monitoring impact pathways? | Yes  |
-
-7
-8
-
-TAMPERE
-
-Climate Neutrality Action Plan
-
-#
-
 |  If yes, which NZC impact pathway is it relevant for? | Energy, Investments in solar panels increases  |
 | --- | --- |
 |  Is the indicator captured by the existing CDP/ SCIS/ Covenant of Mayors platforms? | yes  |
@@ -1583,10 +1429,6 @@ Climate Neutrality Action Plan
 |  Indicator Unit | %  |
 |  Definition | Percentage of procurements involving environmental criteria of city's all procurements  |
 |  Calculation | The number of procurements taken place in the city compared to the number of total procurements  |
-Climate Neutrality Action Plan
-
-C
-
 |  Indicator Context |   |
 | --- | --- |
 |  Does the indicator measure direct impacts (i.e. reduction in greenhouse gas emissions?) | yes  |
@@ -1622,16 +1464,6 @@ C
 |  Expected availability | Available  |
 |  Suggested collection interval | annually  |
 |  References |   |
-
-9
-0
-
-TAMPERE
-
-Climate Neutrality Action Plan
-
-C
-
 |  Deliverables describing the indicator |   |
 | --- | --- |
 |  Other indicator systems using this indicator |   |
@@ -1667,14 +1499,6 @@ C
 |  If yes, which emission source sectors does it impact? | Financing  |
 |  Does the indicator measure indirect impacts (i.e. co-benefits)? | no  |
 |  If yes, which co-benefit does it measure? | Co-Benefits  |
-1
-
-TAMPERE
-
-Climate Neutrality Action Plan
-
-C
-
 |  Can the indicator be used for monitoring impact pathways? | No  |
 | --- | --- |
 |  If yes, which NZC impact pathway is it relevant for? |   |
@@ -1728,25 +1552,11 @@ Module C-1 “Organisational and Governance Innovation Interventions” consists
 |  Carbon Neutral Tampere 2030 Roadmap | The roadmap aggregates the actions that the city plans to take in order to achieve climate neutrality by 2030. | Climate and Environmental Policy unit/City of Tampere | All city units and subsidiaries | Engages the city organization in the climate neutrality target. Includes impact assessments of the planned actions. | Increases cooperation, increases transparency on the city's climate work.  |
 |  Climate Budget | Monitors the progress towards the climate neutrality target. | Climate and Environmental Policy unit/City of Tampere, Economic unit/City of Tampere | All city units and subsidiaries | Monitors the adequacy of implemented actions and provides input for future budget negotiations. | Increases transparency on the city's spending.  |
 |  Climate Partners | Tampere region's climate partnership model involves companies and communities in the region in pursuing a carbon-neutral Tampere. The Climate Partnership | Business Tampere, Climate and Environmental Policy unit/City of Tampere, Ekokumppanit Oy | A total of 116 companies, associations and communities | Climate partners are committed to continuously developing their operations to be more responsible in accordance with the principles of sustainable development | Increasing cooperation, accelerating climate action by the private sector.  |
-3
-
-TAMPERE
-
-Climate Neutrality Action Plan
-
-#
-
 |   | is, as the name implies, a partnership; it is intended to benefit both parties to the partnership agreement. |  |  |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  Advisory Board on Circular Economy | To guide and steer up the circular economy within the Tampere Region | Climate and Environmental Policy Unit/ City of Tampere |  | Public-private dialogue on circular economy actions | Implementing Tampere's Circular Economy plan. Material prices remain more stable  |
 |  School meals working group | Brings together all those involved in school meals and food education in Tampere. The working group will propose measures to promote school meals and food education, which will be incorporated into, for example, school year plans, service contracts and student councils. | Climate and Environmental Policy unit and primary education/The City of Tampere. FUSILLI-project (until 2024) | Politicians, primary education administration and development, Voimia (the city's own company that organises the city's food service procurement), experts (climate and environmental policy, health and well-being), headmasters, teachers, pupils, parents | The development of school meals and food education is an essential part of eco-social education in primary education in Tampere. Increasing food literacy is an important part of the city's efforts to make a long-term impact on the consumption-based emissions of its residents. | Promoting children's well-being and health  |
 |  Vulnerability analysis | The City of Tampere wants to adapt to climate change in the best possible way. In its adaptation work, the city wants to take into account groups that are particularly | Climate and Environmental Policy Unit/The City of Tampere | Children and young people, Elderly and older people, People with disabilities, People on low incomes, The long-term sick and mentally ill, Immigrants and refugees, People who earn their | In climate work, it is important to identify marginalised groups so that the future is equal for all, regardless of their socio-economic background and where they live. | Equality  |
-4
-
-TAMPERE
-
-Climate Neutrality Action Plan
-
 |   | vulnerable to climate change. Therefore, measures to adapt and prepare for climate change will be designed in cooperation with vulnerable groups. |  | living from agriculture and forestry, Tourism entrepreneurs and event producers, Businesses dependent on international logistics chains and foreign raw materials |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  Energy strategy | Co-creating a common energy strategy for all stakeholders addressing a just energy transition in the city/region and local economic development | Climate and environmental policy unit | Energy companies, city planning units, private companies | Creating a common vision and actions related to energy the different stakeholders can work together towards the same goals and thus further the energy transition, make it just and make the most of it in terms local economy | Just transition  |
@@ -1811,35 +1621,15 @@ Module C-2 “Social and Other Innovation Interventions” consists of a summary
 |  Intervention name | Description | Responsible entity/ dept./ person | Involved stakeholder | Enabling impact | Co-benefits  |
 |  (indicate name of intervention) | (describe the substance of the intervention) | (indicate responsible) | (list all stakeholder involved and affected) | (describe how intervention enables climate neutrality) | (indicate how intervention helps achieve impact listed in Module B-1)  |
 |  Climate neutral actions | The Carbon Neutral Actions is a strategic development programme of City on Tampere. The key aim is to support residents in changing their own consumption and mobility habits and ensure fair | Climate and Environmental Policy Unit/ City of Tampere | Citizens, Communities, Residents' associations, Tampere University, Businesses. | The goal is to identify and develop approaches that support citizens' own capability and motivation to change their consumption and mobility habits to make them more sustainable. | Public acceptance of climate action increases when it is co-created. Sustainable mobility and consuming increases overall health, well-  |
-7
-
 |   | and equitable transition to a climate resilient society. |  |  |  | being, safety and equality.  |
 | --- | --- | --- | --- | --- | --- |
 |  We Make Transition! (2023-2025) | The project aims to strengthen societal resilience and eco-social sustainability by learning, adapting and piloting transition management methodology for engaging civil society and other innovation actors to co-create solutions for sustainability. | The Baltic Institute of Finland | Council of Tampere Region, The Helsinki-Uusimaa Regional Council, Regional Council of Southwest Finland, Foundation for Science and Liberal Arts Domus Dorpatensis, Social Innovation Centre, Vidzeme Planning Region. Baltic Institute for Regional Affairs BISER, City of Gdynia, Trøndelag County Authority, University of Bremen | The main output of the project will be a manual on practical utilisation of Transition Arena method at regional and local administrations. The purpose of the manual is to provide local and regional authorities inspiration for a new way of thinking, concrete cases and understanding on the benefits of involving all levels of society in the strategy and development work to enhance societal resilience and eco-social sustainability. | Public acceptance of climate action increases when it is co-created and take into account all groups, which increases equality.  |
 |  Climate Justice Discussion Forum | A discussion forum bringing together residents and other stakeholders will be set up to support the Carbon Neutral Actions development programme, with the aim of ensuring that the programme's interventions are fair and take account of the different opportunities for | Climate and Environmental Policy Unit/ City of Tampere | Commissions and advisory boards of the citizens (e.g. The youth council, elder people's council, disability council), local NGOs, University of Tampere | The Forum supports the citizen participation in climate action and promotes their empowerment. | Increased public acceptance, equality and safety in the city.  |
-8
-
-TAMPERE
-
-Climate Neutrality Action Plan
-
-#
-
 |   | different types of people in Tampere to take carbon neutral actions. |  |  |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  The Mobility Carbon Footprint Calculator | The mobility carbon footprint calculator in the Tampere.Finland application encourages Tampere residents to move greener. The calculator shows, for example, user's most common Mode of Transport and monthly carbon footprint. | Climate and Environmental Policy Unit/ City of Tampere | Tampere. Finland - application, Kausal Oy, Geniem Oy. | The city of Tampere receives valuable statistical information and an understanding of where and how the citizens move. In this way, services can be developed to meet the needs of residents. An individual user cannot be identified from the data. | Sustainable mobility increases overall health, well-being, safety and equality.  |
 |  Keli - Promoting more sustainable mobility with the help of a carbon footprint calculator (2022-2023) | This study project examined whether people could be encouraged to choose walking or cycling instead of driving by appealing to the health benefits of physical activity. The study did an intervention using the mobility carbon footprint calculator. | Climate and Environmental Policy Unit/ City of Tampere | The University of Helsinki, VATT Institute for Economic Research, Kausal Oy, Geniem Oy, Citizens | The project, activated citizens to move more sustainably and participate in the implementation of the city's climate targets, implement the city's strategy and develop the technical implementation of the calculator using open source code. | Sustainable mobility increases overall health, well-being, safety and equality.  |
 |  Tampere Cycles Project (2022) | The project aimed to improve cycling in Tampere opportunities and a visible campaign year for city bikes 2022. This increased the acceptance of cycling in the city. | Traffic System Planning Unit/ City of Tampere | Public Transport Unit, Nysse/The City of Tampere, Ekokumppanit Oy | As public acceptance and awareness of improved cycling conditions increases, the number of cyclists will also increase. | Sustainable mobility increases overall health, well-being, safety and equality.  |
-#
-
-TAMPERE
-
-Climate Neutrality Action
-
-Plan
-
-#
-
 |  City Blues (Bluegreen nature-based solutions for climate change adaptation and citizen wellbeing) Interreg project 2023-2026 | In the project integrated nature-based solutions (NBS) are developed for urban flooding and stormwater management. Project involves local residents and stakeholders in planning, implementation, monitoring and maintenance of the selected area in Tampere, near lake lidesjärvi. The goal is to make the living environment for the inhabitants more inclusive, healthy, and attractive and to reduce pollution. | Green Areas and Stormwater Unit/ City of Tampere | NGOs, citizens, companies | The overall project aim is to support adaptation to negative effects of climate change and to improve green and blue infrastructure of densifying cities through integrated nature-based solutions (NBS) for urban flooding and stormwater management. |   |
 | --- | --- | --- | --- | --- | --- |
 
@@ -1912,14 +1702,6 @@ Module C-3 "Financing of Action Portfolio" should contain the list of action por
 | --- | --- | --- | --- | --- | --- |
 |  Action/ intervention name | Responsible entity | Start/end date | Field of action | Impact | Total cost estimated  |
 |  Existing planned actions of the city organisation related to transportation | Responsibilities stated in Carbon Neutral Tampere 2030 Roadmap | Timetable for implementation stated in Carbon Neutral Tampere 2030 Roadmap and in Investment Plan (Annex) | Transportation | 1 tCO2 | 147,1 M€  |
-2
-
-TAMPERE
-
-Climate Neutrality Action Plan
-
-C
-
 |  Existing planned actions of the city organisation related to built environment | Responsibilities stated in Carbon Neutral Tampere 2030 Roadmap | Timetable for implementation stated in Carbon Neutral Tampere 2030 Roadmap and in Investment Plan (Annex) | Built Environment | 26 tCO2 | 38,28 M€  |
 | --- | --- | --- | --- | --- | --- |
 |  Existing planned actions of the city organisation related to energy systems | Responsibilities stated in Carbon Neutral Tampere 2030 Roadmap | Timetable for implementation stated in Carbon Neutral Tampere 2030 Roadmap and in Investment Plan (Annex) | Energy Systems | N/A: No Emission Impact Assessment | 1,5 M€  |
@@ -1927,14 +1709,6 @@ C
 |  Existing planned actions of the city organisation related to waste and circular economy | Responsibilities stated in Carbon Neutral Tampere 2030 Roadmap | Timetable for implementation stated in Carbon Neutral Tampere 2030 Roadmap and in Investment Plan (Annex) | Waste and Circular Economy | N/A: No Emission Impact Assessment | N/A No Investments Planned  |
 |  Existing planned actions of city's subsidiaries organisation related to transportation | Responsibilities stated in Carbon Neutral Tampere 2030 Roadmap and in Investment Plant Table 6 | Timetable for implementation stated in Carbon Neutral Tampere 2030 Roadmap and in Investment Plan (Annex) | Transportation | 1270 tCO2 | 269,6 M€  |
 |  Existing planned actions of city's subsidiaries organisation | Responsibilities stated in Carbon Neutral Tampere 2030 Roadmap and | Timetable for implementation stated in Carbon Neutral Tampere 2030 | Built Environment | 16 797 tCO2 | 110,9 M€  |
-3
-
-TAMPERE
-
-Climate Neutrality Action Plan
-
-C
-
 |  related to built environment | in Investment Plant Table 6 | Roadmap and in Investment Plan (Annex) |  |  |   |
 | --- | --- | --- | --- | --- | --- |
 |  Existing planned actions of city's subsidiaries organisation related to energy systems | Responsibilities stated in Carbon Neutral Tampere 2030 Roadmap and in Investment Plant Table 6 | Timetable for implementation stated in Carbon Neutral Tampere 2030 Roadmap and in Investment Plan (Annex) | Energy Systems | 65 608 tCO2 | 117,9 M€  |
@@ -2207,8 +1981,6 @@ Include a list of stakeholders who have committed to help your city achieve its 
 |  Pirkan Opiskelija-asunnot Ltd | Rental apartments | Limited company | Timo Jokinen | CEO  |
 |  Pirkanmaan Jätehuolto Ltd | Waste management services | Limited company | Jari Romo; Pasi Muurinen | Accounting Manager; CEO  |
 |  Pirkanmaan Voimia Ltd | Catering and cleaning services | Limited company | Piia Saarenoja; Esa Sairanen | Business Controller; CEO  |
-8
-
 |  Tampereen Infra Ltd | Infrastructure construction and maintenance services | Limited company | Joonas Huhtanen; Lauri Niemi | Safety and Environment Manager; CEO  |
 | --- | --- | --- | --- | --- |
 |  Tampereen Messu- ja Urheilukeskus Ltd | Exhibition services | Limited company | Olli Tokoi | CEO  |
@@ -2222,8 +1994,6 @@ Include a list of stakeholders who have committed to help your city achieve its 
 |  Tampereen Virastotalo Ltd | Property service | Limited company | Terhi Karhumaa; Petri Mölsä | Financial Planner; CEO  |
 |  Tampereen Vuokra-asunnot Ltd | Rental apartments | Limited company | Tero Huhtanen; Marko Salonen | Building Services Engineering Expert; CEO  |
 |  Tampereen Vuokratalosäätiö | Rental apartments | Foundation | Ville Salo; Eskelinen Satu | Financial Manager; CEO  |
-9
-
 |  Tampere-Talo Ltd | Meeting facilities, Conference rooms | Limited company | Heidi Rehakka; Pauliina Ahokas | Chief Financial Officer; CEO  |
 | --- | --- | --- | --- | --- |
 |  TREDU-kiinteistöt Ltd | Property management | Limited company | Aija Puustelli; Lance Cagle; Marko Tulokas | Head of Administration; Property Manager; CEO  |
@@ -2400,10 +2170,8 @@ This column includes a non-exhaustive list of research projects focusing on the 
 7
 
 |  Waste and circular economy | Tampere Universities Community facility management has EcoCompass Environmental Management System (EMS) and Certificate and is committed to reduce waste and promote circular economy. | WASTE MATTERS aims to analyse how various change agents engage in transformation toward Circular Economy (CE) business ecosystems
-
-CICAT2025 project aim to accelerate the transition from a linear economy to a circular economy | Research Centre for Managing Circular Economy (ManCE) brings together and consolidates circular economy expertise and strengthens the specialized research on circular economy
-
-University Platform for Circular Economy promotes the implementation of circular economy solutions.  |
+| CICAT2025 project aim to accelerate the transition from a linear economy to a circular economy | Research Centre for Managing Circular Economy (ManCE) brings together and consolidates circular economy expertise and strengthens the specialized research on circular economy |
+| University Platform for Circular Economy promotes the implementation of circular economy solutions.  |
 | --- | --- | --- | --- |
 |  Built environment | Tampere Universities Community facility management has EcoCompass Environmental Management System (EMS), guiding the building maintenance | ReCreate-project (coordinated by Tampere University) develops solutions for reuse of precast concrete structures and circular economy within the construction sector around Europe.
 
@@ -2900,12 +2668,12 @@ Themes, benefit goals and measure packages
 |  9. Coordination and monitoring of the city's climate efforts  |   |   |   |   |   |
 | --- | --- | --- | --- | --- | --- |
 |  1. Sustainable urban planning
-Benefit goal 2030: The city will grow primarily into public transport zones and regional centres. | 2. Sustainable mobility
-Benefit goal 2030: The modal share of sustainable mobility modes will be 69%. | 3. Sustainable construction
-Benefit goal 2030: New construction will be at zero-energy level and the carbon footprint of housing will be small. | 4. Sustainable energy
-Benefit goal 2030: Renewable energy will amount to 80%. | 5. Sustainable consumption
-Benefit goal 2030: Consumption will be sustainable and the circular economy functional. | 6. Sustainable urban nature
-Benefit goal 2030: Urban nature and urban structures will bind carbon and preparations have been made for climate change.  |
+| Benefit goal 2030: The city will grow primarily into public transport zones and regional centres. | 2. Sustainable mobility |
+| Benefit goal 2030: The modal share of sustainable mobility modes will be 69%. | 3. Sustainable construction |
+| Benefit goal 2030: New construction will be at zero-energy level and the carbon footprint of housing will be small. | 4. Sustainable energy |
+| Benefit goal 2030: Renewable energy will amount to 80%. | 5. Sustainable consumption |
+| Benefit goal 2030: Consumption will be sustainable and the circular economy functional. | 6. Sustainable urban nature |
+| Benefit goal 2030: Urban nature and urban structures will bind carbon and preparations have been made for climate change.  |
 |  1.1. Climate impact assessment | 2.1. Tram transport | 2.6. Road transport | 3.1. New construction of city properties | 4.1. Centralised renewable energy | 5.1. Waste management  |
 |  1.2. Conditions for sustainable mobility | 2.2. Local train transport | 2.7. Transport equipment and work machines | 3.2. Guidance of private new construction | 4.2. Smart energy networks and services | 5.2. Circular economy  |
 |  1.3. Strengthening green belts | 2.3. Bus transport | 2.8. New mobility services | 3.3. Renovation construction at city properties | 4.3. Decentralised renewable energy and energy efficiency | 5.3. Sustainable consumption  |
@@ -2926,7 +2694,7 @@ THEME 0. COORDINATION AND MONITORING OF CLIMATE EFFORTS
 ![img-0.jpeg](img-0.jpeg)
 
 |  Benefit goal: | Tampere will be climate neutral in 2030.
-Tampere will take climate risks and change adaptation seriously.  |
+| Tampere will take climate risks and change adaptation seriously.  |
 | --- | --- |
 |  Description: | Global warming is a crisis that affects people all around the world. Cities represent some 80 per cent of all consumption of energy and natural resources. In their everyday work, cities continuously make decisions that can either decrease or increase emissions.
 
@@ -4079,7 +3847,7 @@ Demolition sites will step up the recycling of concrete
 |  3.7.5. | For asphalt procurement, the technical and economic conditions and effects of transitioning to lower emission production methods (including green asphalt) will be investigated. | 2022–2025 | Construction and Maintenance of Urban Environment | ●○○○○ | M  |
 |  3.7.6. | The use of recycled material will be facilitated at applicable sites in private construction on the city's rental plots. | 2022–2025 | Real Estate and Housing | ●○○○○ | M  |
 |  OTHER BENEFITS: |   | • Improved resource efficiency
-• Life-cycle cost savings  |   |   |   |
+| • Life-cycle cost savings  |   |   |   |
 |  EMISSION REDUCTION |   | ●●○○○  |   |   |   |
 
 ![img-1.jpeg](img-1.jpeg)
@@ -4142,13 +3910,13 @@ Between 2010 and 2030, carbon dioxide emissions from Tampereen Sähkölaitos's p
 |  2010 | 2015 | 2020 | 2025 | 2030  |
 | --- | --- | --- | --- | --- |
 |  983
-kt CO2 | 562
-kt CO2 | 468
-kt CO2 | 191
-kt CO2 | 53
-kt CO2  |
+| kt CO2 | 562 |
+| kt CO2 | 468 |
+| kt CO2 | 191 |
+| kt CO2 | 53 |
+| kt CO2  |
 |  Rehabilitation of hydroelectric power plants | Tammervoima Waste-to-Energy Plant | Kaupinoja District Cooling Plant | New technologies
-New products and energy savings | Carbon offsetting  |
+| New products and energy savings | Carbon offsetting  |
 |  Sarankulma Pellet Heating Plant | Hervanta Woodchip Heating Plant | Naistenlahti 3 | Waste heat, and heat pumps | Geothermal plant  |
 |   | Flue gas scrubbers | Electric boiler | Traditional and virtual district heat battery | Shutdown of Lielahti Gas Power Plant  |
 

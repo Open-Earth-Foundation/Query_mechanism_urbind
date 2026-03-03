@@ -829,9 +829,9 @@ The EU Solar energy strategy (May 2022) is a relevant part of the REPowerEU plan
 In addition to the Green Deal strategies and regulations, other important European initiatives include:
 
 |  **Smart Cities and Communities Initiative**
-Promotes the development of smart sustainable urban areas by integrating technology and data to enhance efficiency and reduce environmental impact. | **Covenant of Mayors for Climate and Energy**
-A valuation commitment by local and regional authorities to exceed the EU's climate and energy targets. | **European Climate Pact**
-Engages citizens, communities, and organizations in climate action, fostering collaboration and sharing best practices.  |
+| Promotes the development of smart sustainable urban areas by integrating technology and data to enhance efficiency and reduce environmental impact. | **Covenant of Mayors for Climate and Energy** |
+| A valuation commitment by local and regional authorities to exceed the EU's climate and energy targets. | **European Climate Pact** |
+| Engages citizens, communities, and organizations in climate action, fostering collaboration and sharing best practices.  |
 | --- | --- | --- |
 
 At the national level, Portugal has declared a state of climate emergency and has set objectives for the adoption of a mature and assertive climate policy, strengthening the principles of sustainability, cooperation, information, participation, prevention, and accountability, with the right to climate balance being enshrined as a constitutional right, where everyone has the right to a human, healthy and ecologically balanced living environment. The National Spatial Planning Policy Program (PNPOT) 2020 identifies climate change and risks as one of the 18 land-use planning problems.
@@ -1029,32 +1029,32 @@ A-3.2: Systems &amp; stakeholder mapping
 | --- | --- | --- | --- |
 |  Technological/ Infrastructural | Public transport companies (STCP, Metro do Porto, CP - Comboios de Portugal, Transportes Intermodais do Porto, etc.) | Decarbonization of public transport. | Better service and less congested city.  |
 |   |   |  Level of influence
-Low Medium High | Level of interest
-Low Medium High  |
+| Low Medium High | Level of interest |
+| Low Medium High  |
 |   |  E-REDES (Portuguese electric DSO), Portgás (natural gas DSO) and ICT companies | Smart metering infrastructure and digital transition. | Data and digitalization of the energy systems. Optimization of energy flows and reduction of energy losses.  |
 |   |   |  Level of influence
-Low Medium High | Level of interest
-Low Medium High  |
+| Low Medium High | Level of interest |
+| Low Medium High  |
 |   |  Electricity and gas retailers and renewable energy technology providers | Decarbonization of energy supply (electricity and gas). | Supply of renewable electricity and renewable energy technologies. Supply of decarbonized natural gas.  |
 |   |   |  Level of influence
-Low Medium High | Level of interest
-Low Medium High  |
+| Low Medium High | Level of interest |
+| Low Medium High  |
 |   |  Construction companies | Decarbonization and increased thermal comfort in buildings. | Extensive buildings' renovation market and improved services.  |
 |   |   |  Level of influence
-Low Medium High | Level of interest
-Low Medium High  |
+| Low Medium High | Level of interest |
+| Low Medium High  |
 |   |  Waste management companies (e.g., LIPOR) | Reduction of GHG emissions related to waste. | Develop new services and products related with waste management.  |
 |   |   |  Level of influence
-Low Medium High | Level of interest
-Low Medium High  |
+| Low Medium High | Level of interest |
+| Low Medium High  |
 |   |  Municipal companies (Porto Ambiente, Águas e Energia do Porto, GoPorto, etc.). | Implementation of decarbonization measures. | Optimization of processes and 'sense of belonging'.  |
 |   |   |  Level of influence
-Low Medium High | Level of interest
-Low Medium High  |
+| Low Medium High | Level of interest |
+| Low Medium High  |
 |  Institutional/ regulatory/ political | Porto Municipality | Decision on local policies. | Create guidelines and regulations for local projects to be implemented and achieve local targets.  |
 |   |   |  Level of influence
-Low Medium High | Level of interest
-Low Medium High  |
+| Low Medium High | Level of interest |
+| Low Medium High  |
 |   |  Porto Metropolitan Area | Decision on metropolitan policies. | Create guidelines and regulations for metropolitan projects to be implemented and achieve regional targets.  |
 |   |   |  Level of influence
 Low Medium High | Level of interest
@@ -1069,24 +1069,24 @@ C
 | --- | --- | --- | --- |
 |   |  Portuguese Government | Decision on national policies and on public procurement rules. | Create guidelines and regulations for national projects to be implemented and achieve national targets.  |
 |   |   |  Level of influence
-Low Medium High | Level of interest
-Low Medium High  |
+| Low Medium High | Level of interest |
+| Low Medium High  |
 |   |  DGEG (Energy Directorate) and ERSE (Portuguese Energy Regulator) | Decision on key licencing processes (e.g., renewable production). | Optimize and facilitate licencing processes and rules.  |
 |  Level of influence
-Low Medium High |   | Level of interest
-Low Medium High  |   |
+| Low Medium High |   | Level of interest |
+| Low Medium High  |   |
 |  Financial | Porto Municipality | Decision on municipal budget to allocate to carbon neutrality. | Facilitate and speed-up investment while leading by example.  |
 |   |   |  Level of influence
-Low Medium High | Level of interest
-Low Medium High  |
+| Low Medium High | Level of interest |
+| Low Medium High  |
 |   |  Energy Service Companies (ESCOs) and banks | Leverage of non-municipal investment. | Interesting and high IRR investment opportunities.  |
 |   |   |  Level of influence
-Low Medium High | Level of interest
-Low Medium High  |
+| Low Medium High | Level of interest |
+| Low Medium High  |
 |   |  Privates (citizens and companies) | Leverage of private investment. | Opportunity to participate in the city transition and take advantage of economic savings.  |
 |  Organisational, behavioural, and social | Citizens, companies, and Porto Climate Pact subscribers | Level of influence
-Low Medium High | Level of interest
-Low Medium High  |
+| Low Medium High | Level of interest |
+| Low Medium High  |
 |   |  Research/ Academia | To explore innovative solutions of smart cities, mobility, energy production and efficiency, environmental surveillance, water and waste handling, public health, and governance models. | To access real-world data to perform better research and to test in a real-world testbed.  |
 |   |   |  Level of influence
 Low Medium High | Level of influence
@@ -1631,7 +1631,7 @@ Climate Neutrality Action Plan
 C
 
 |  • Priority: High
-• Chronogram of implementation: 2023-2030 | • Chronogram of implementation: 2023-2030 |   |
+| • Chronogram of implementation: 2023-2030 | • Chronogram of implementation: 2023-2030 |   |
 | --- | --- | --- |
 |  ES.04 100% LED street lighting equipped with control and monitoring system enhances energy efficiency, reducing carbon emissions from street lighting.
 • Short-term effect: Immediate reduction of carbon emissions, energy consumption and costs.
@@ -1893,7 +1893,7 @@ B-2.1: Description of action portfolios
 |   |  List of actions | Descriptions  |
 |   |  | same time, the city also participates in the FABULOS project, which, by using Public Procurement Innovation approaches, aims to find market solutions for the supply and management of automated public transport for the last-mile journey, as part of the existing transport system. The Porto pilot, to be implemented in the Asprela area, will test new vehicles that should improve the level of service and bring substantial cost savings. Also noteworthy is the “USHARE by AEFEP” app, a carpooling mobile application, which could reach 40 thousand users from the entire academic community in Porto.  |
 |   |  MT.04 Electrification of vehicles (cars and motorcycles) | MT.04.A Network of recharging points for electric vehicles and electrification of private fleet: To promote the adoption of electric vehicles and motorcycles at the private level, the Municipality has several projects in the pipeline associated with, for example, the expansion of charging stations across the city. Since January 2021, electric charging stations operating on public spaces are available. This measure results from a decision by Porto City Council which, by the end of 2019, announced the installation of electric vehicle charging stations on municipal property. These charging points are now spread in car parks across the city and the executive enforced the mandatory installation of charging infrastructure in new and renovated parking facilities. Also, to facilitate electric vehicles' users to identify charging points, a digital map of the locations displaying their availability was created by the city and made available in its website. In turn, the municipal company Águas e Energia do Porto currently has a park of 68 charging points installed on its facilities for its own fleet of electric and hybrid vehicles. In total, the Municipality of Porto currently has around 300 electric charging stations, for the exclusive use of municipal entities that are managed by this company.
-MT.04.B Electrification of the municipal vehicle fleet: As a way of leading by example, since 2018, 70% of the light diesel vehicles in the municipal fleet have been replaced by electric or plug-in hybrid ones, totalizing 390 vehicles. Currently it accounts with 75%. The municipal fleet, operated under the first and largest leasing contract in the country, had covered more than 4 million kilometres in electric mode by the end of 2020, contributing to a significant reduction in its carbon footprint. More recently, the fleet of urban solid waste collection vehicles (from the Porto Ambiente company) was also renewed through the acquisition of 26 new natural gas-powered vehicles. Currently, new electric sweepers are at the beginning of their duties, and soon some more vehicles will arrive to reinforce the waste collection more sustainable fleet.  |
+| MT.04.B Electrification of the municipal vehicle fleet: As a way of leading by example, since 2018, 70% of the light diesel vehicles in the municipal fleet have been replaced by electric or plug-in hybrid ones, totalizing 390 vehicles. Currently it accounts with 75%. The municipal fleet, operated under the first and largest leasing contract in the country, had covered more than 4 million kilometres in electric mode by the end of 2020, contributing to a significant reduction in its carbon footprint. More recently, the fleet of urban solid waste collection vehicles (from the Porto Ambiente company) was also renewed through the acquisition of 26 new natural gas-powered vehicles. Currently, new electric sweepers are at the beginning of their duties, and soon some more vehicles will arrive to reinforce the waste collection more sustainable fleet.  |
 |   | MT.05 Optimized logistics | Based on the National Carbon Neutrality Roadmap, a significant shift in the logistics transport is required so that the carbon neutrality goal is possible. In this sector, the increased digitalization of supply chains (more online shopping, more reverse logistics) increases the demand for the mobility of goods, also increasing the pressure exerted on this sector. Thus, in order to improve its efficiency, it is necessary to: 1) increase the load factor of heavy and light goods vehicles; 2) increase the fleet autonomy and 3) foster the replacement rate of vehicles. The decarbonization of short and long-distance freight transport, promoting a logistics chain with a modal distribution that minimizes the carbon and energy intensity of the transport system is, therefore, a priority especially in a highly tertiary context such as Porto.
 With a view to reducing pollution caused by vehicle traffic associated with urban logistics, reducing the level of CO2 emissions associated with urban logistics  |
 Porto.
@@ -1909,10 +1909,10 @@ B-2.1: Description of action portfolios
 |   |  List of actions | Descriptions  |
 |   |  | through increasing the efficiency of loading and unloading operations and mitigating mobility constraints caused by operations and the circulation of logistic vehicles, Porto developed in 2021 its Plan for Sustainable Logistics (PLUS). This plan introduces a set of 15 recommendations that aim to improve logistical transport in the city. To support the implementation of an ambitious plan such as PLUS, the Municipality of Porto, supported by Porto Digital, has a detailed digital mapping on the location of municipal car parks, loading and unloading spaces, soft mode sharing points, among others. This data is made available through the city's Urban Platform and its Open Data Portal. This work was made under the scope of the C-Streets initiative whose main objectives are the sharing of data, the development of MaaS solutions, the promotion of effective and accessible public intermodal transport, the reduction of accidents, as well as the evolution of the concept of sustainability and decarbonization in transport.  |
 |   |  MT.06
-Electrification of light and heavy freight vehicles | Still at the freight transport level, the National Carbon Neutrality Roadmap global narrative regarding mobility foresees the emergence of new energy vectors, such as the green hydrogen - identified as an important decarbonization vector in sectors with limited alternative technological options, such as heavy passenger and freight transport. According to estimates of this structural document, it is expected that in the 2030s, green hydrogen and electricity will ensure 70% and 88% of the demand for heavy goods mobility in the country, respectively. The implementation of these solutions will depend on the development of structural infrastructure, whose investment and operating costs are still subject to a high degree of uncertainty given the limited pilot projects underway. However, the electrification of heavy transport is already a reality for passenger vehicles (electric buses) and is also beginning to be an option for the freight transport. As an example, reference is made to the experience of the transport companies DHL Express and DPD,, with a great presence in the city and which are electrifying their logistic fleets.  |
+| Electrification of light and heavy freight vehicles | Still at the freight transport level, the National Carbon Neutrality Roadmap global narrative regarding mobility foresees the emergence of new energy vectors, such as the green hydrogen - identified as an important decarbonization vector in sectors with limited alternative technological options, such as heavy passenger and freight transport. According to estimates of this structural document, it is expected that in the 2030s, green hydrogen and electricity will ensure 70% and 88% of the demand for heavy goods mobility in the country, respectively. The implementation of these solutions will depend on the development of structural infrastructure, whose investment and operating costs are still subject to a high degree of uncertainty given the limited pilot projects underway. However, the electrification of heavy transport is already a reality for passenger vehicles (electric buses) and is also beginning to be an option for the freight transport. As an example, reference is made to the experience of the transport companies DHL Express and DPD,, with a great presence in the city and which are electrifying their logistic fleets.  |
 |  Waste & circular economy
-(WCE) | WCE.01
-Increased waste recycling | The Urban Waste Strategic Plan, with a time horizon until 2030 (PERSU 2030), and the National Waste Management Plan (PNGR 2030) establish a national urban waste management policy which promotes the prevention of waste production, the reuse, recycling, and other forms of recovery, encouraging the reduction of consumption of raw materials, and contributing, in a generic way, to a more sustainable lifestyle. The targets defined for the reuse and recycling of waste are set at 55%, 60% and 65% for 2025, 2030 and 2035, respectively. Additionally, the prevention target is set at a reduction of 5% and 15%, in 2025 and 2030, respectively, compared to the production of solid waste in 2019, whose production per inhabitant reached 511 kg/inhabitant.year at national level. In Porto, in 2022, around 42% of solid waste resulted from selective collection (multimaterial and biowaste), with each resident separating, on average, about 80 kg/inhabitant.year of selective waste. Therefore, municipal action should continue this path to achieve even better results.  |
+| (WCE) | WCE.01 |
+| Increased waste recycling | The Urban Waste Strategic Plan, with a time horizon until 2030 (PERSU 2030), and the National Waste Management Plan (PNGR 2030) establish a national urban waste management policy which promotes the prevention of waste production, the reuse, recycling, and other forms of recovery, encouraging the reduction of consumption of raw materials, and contributing, in a generic way, to a more sustainable lifestyle. The targets defined for the reuse and recycling of waste are set at 55%, 60% and 65% for 2025, 2030 and 2035, respectively. Additionally, the prevention target is set at a reduction of 5% and 15%, in 2025 and 2030, respectively, compared to the production of solid waste in 2019, whose production per inhabitant reached 511 kg/inhabitant.year at national level. In Porto, in 2022, around 42% of solid waste resulted from selective collection (multimaterial and biowaste), with each resident separating, on average, about 80 kg/inhabitant.year of selective waste. Therefore, municipal action should continue this path to achieve even better results.  |
 |   |  WCE.02
 Optimized processes and efficiency in wastewater treatment facilities | An important contribution to GHG emissions in the Municipality comes from the operation of the Freixo and Sobreiras wastewater treatment plants (WWTP). The Aqualitrans cross-border project, in which Águas e Energia do Porto is a partner, aims to develop an efficient and sustainable energy model for the WWTPs in the Municipality, but also for some other municipalities in the north of Portugal and Galicia. Within the scope of this project, the municipal company  |
 Porto.
@@ -1927,7 +1927,7 @@ B-2.1: Description of action portfolios
 | --- | --- | --- |
 |   |  List of actions | Descriptions  |
 |   |  | implemented several measures with a positive impact in the city wastewater network.
-Another contribution is the SUPREMAS project, currently under development - modular gasification units for renewable energy production from multiple wastes and for different applications. The goal is to promote the development of decentralized synthesis gas production systems from by-products of various origins, thus contributing to the energy transition and environmental sustainability. It aims to provide circular value chains, in which different types of waste can be used to produce electricity, thermal energy, and new materials. Porto will test this technology through the installation of a mobile modular unit at the Freixo WWTP. This unit will use the sludge produced in the anaerobic digestion stage for gasification (either alone or in combination with other raw materials), producing synthesis gas (syngas), which will be valorised through a cogeneration system. The system will also include a gas purification module for use in solid oxide fuel cells (SOFC), allowing the highly efficient generation of electric power and heat with zero emissions to the atmosphere.  |
+| Another contribution is the SUPREMAS project, currently under development - modular gasification units for renewable energy production from multiple wastes and for different applications. The goal is to promote the development of decentralized synthesis gas production systems from by-products of various origins, thus contributing to the energy transition and environmental sustainability. It aims to provide circular value chains, in which different types of waste can be used to produce electricity, thermal energy, and new materials. Porto will test this technology through the installation of a mobile modular unit at the Freixo WWTP. This unit will use the sludge produced in the anaerobic digestion stage for gasification (either alone or in combination with other raw materials), producing synthesis gas (syngas), which will be valorised through a cogeneration system. The system will also include a gas purification module for use in solid oxide fuel cells (SOFC), allowing the highly efficient generation of electric power and heat with zero emissions to the atmosphere.  |
 |  Green infrastructure & reduce-based solutions (GI) | GI.01 Increased green infrastructure (carbon sink) | Porto's Master Plan sets the goal of doubling the Municipality's green areas by 2030, with the aim of not only combating climate change and fostering sustainability, but also contributing to a better quality of life of the citizens. Therefore, a set of interventions have been planned and implemented as a way of meeting the objective outlined in the PDM, with an estimated total investment of over 11,6 M€.  |
 |  Built environment (BE) | BE.01 Renovation of existing buildings (envelope) | According to the latest available data (2021), of the approximately 39 thousand buildings in Porto, around 4 800 require medium repairs and more than 2 100 are in urgent need of renovation. Of the existing buildings, only 16% were built after 1990, the date of the first buildings' thermal performance regulation in Portugal, which allows to foresee a poor thermal quality of the building stock. In fact, of the more than 87 thousand energy certificates issued in buildings in the Municipality, only 44% have a performance level higher than C (on a scale from A+ to F, where A+ represents superior energy performance). In this context, Porto has several actions in place.
 BE.01.A Private buildings: This action foresees the renovation of the existing residential building stock, at a rate of 2,5%/year until 2030. The renovation focuses on deep interventions (needed in 70% of the building stock), capable of reducing up to 60% of the heating needs.
@@ -1946,11 +1946,11 @@ B-2.1: Description of action portfolios
 |   |  List of actions | Descriptions  |
 |   |  | and savings are the direct results of this commitment, which was recognized by the European Commission (EC) as a good practice in the application of EC funds.  |
 |   | BE.02
-Construction of new energy-efficient buildings (NZEB standards) | In terms of new construction, the Municipality has been developing the Environmental Index, a composite index that assesses the performance and energy-environmental impact of new construction projects in the city. In addition to strict energy requirements (NZEB requirements), this index also assesses the expected impact of a new building in terms of water efficiency, existence of green areas, energy efficiency, circularity of materials used, etc. The index has been discussed with bioclimatology, landscaping, water management, energy, noise, designs, refurbishment, and real estate players and is expected to establish the criteria for new buildings in the city by imposing standards for more sustainable and energy-efficient construction, serving as a guidebook for urban developers which, in turn, may benefit from appealing construction exemptions and incentives fostered by the city.  |
+| Construction of new energy-efficient buildings (NZEB standards) | In terms of new construction, the Municipality has been developing the Environmental Index, a composite index that assesses the performance and energy-environmental impact of new construction projects in the city. In addition to strict energy requirements (NZEB requirements), this index also assesses the expected impact of a new building in terms of water efficiency, existence of green areas, energy efficiency, circularity of materials used, etc. The index has been discussed with bioclimatology, landscaping, water management, energy, noise, designs, refurbishment, and real estate players and is expected to establish the criteria for new buildings in the city by imposing standards for more sustainable and energy-efficient construction, serving as a guidebook for urban developers which, in turn, may benefit from appealing construction exemptions and incentives fostered by the city.  |
 |   | BE.03
-Efficient lighting and appliances | In a residential environment, lighting and electric equipment spend a significant amount of electricity (20% and 35%, respectively). In this sense, during home renovation or simply due to equipment natural wear, appliances and bulbs will tend to be replaced by more efficient technologies (class A+ or higher and LED technology). In this scope, this measure considers the replacement of lighting technology and appliances in residential dwellings, with energy savings of around 40%.  |
+| Efficient lighting and appliances | In a residential environment, lighting and electric equipment spend a significant amount of electricity (20% and 35%, respectively). In this sense, during home renovation or simply due to equipment natural wear, appliances and bulbs will tend to be replaced by more efficient technologies (class A+ or higher and LED technology). In this scope, this measure considers the replacement of lighting technology and appliances in residential dwellings, with energy savings of around 40%.  |
 |   | BE.04
-Digitalization, literacy and awareness | For Porto, education for sustainability is a crucial tool to involve people in the transition process to a greener and carbon-free city and change energy behaviours. The Municipality understands that environmental and energy problems persist because there is still a gap between the way nature (and the city) works and the way people think (and consequently act). This alignment is therefore fundamental. In this scope, Porto has a long-lasting experience in developing environmental education activities so that citizens can: 1) understand environmental and energy processes; 2) develop collective environmental awareness; 3) know solutions and options; 4) acquire skills that are important in their daily life; and 5) can collaborate in concrete actions with positive consequences. Also, the digital transition is expected to follow the energy transition in order to support the development of value-added services and products.  |
+| Digitalization, literacy and awareness | For Porto, education for sustainability is a crucial tool to involve people in the transition process to a greener and carbon-free city and change energy behaviours. The Municipality understands that environmental and energy problems persist because there is still a gap between the way nature (and the city) works and the way people think (and consequently act). This alignment is therefore fundamental. In this scope, Porto has a long-lasting experience in developing environmental education activities so that citizens can: 1) understand environmental and energy processes; 2) develop collective environmental awareness; 3) know solutions and options; 4) acquire skills that are important in their daily life; and 5) can collaborate in concrete actions with positive consequences. Also, the digital transition is expected to follow the energy transition in order to support the development of value-added services and products.  |
 |   | BE.05
 Decarbonized space and water heating generation | According to the 2021 Domestic Energy Consumption Survey (ICESD 2021), space heating corresponds to the second largest domestic use of energy in the residential setting. The main source of energy used for heating purposes is biomass (81,2%), followed by electricity (7,6%), heating diesel (4,6%), LPG (Liquefied petroleum gas) (3,2%) and natural gas (2,7%). In what concerns water heating, gas (both natural gas and LPG) is used in around 3/4 of homes: natural gas is used in 35,6% of homes, followed by bottled LPG (32,9%) and piped LPG (7,0%). As there is no detailed characterization at the municipal level, it is assumed that Porto follows the national trend in terms of energy use for space and water heating, and therefore, there is still a long improvement journey until decarbonized space and water heating services.  |
 
@@ -2004,7 +2004,7 @@ Climate Neutrality Action Plan
 • Governance & policy.
 • Learning & capabilities.  |
 |   |  Outcome | • Improved air quality, human health, and quality of life.
-• Attraction of investments for innovative sustainable projects.  |
+| • Attraction of investments for innovative sustainable projects.  |
 |   | MT.02.B Encouraging the use of public transport through new and better offer | 3 923 | 113 087 | 3%  |
 | --- | --- | --- | --- | --- |
 |   |  MT.03 Increased shared mobility and MaaS options | 0 | 7080 | 100%  |
@@ -2207,7 +2207,7 @@ C
 • Knowledge transfer to urban planners.
 • Savings for the city budget.  |
 |  Implementation | Responsible bodies/person for implementation | • Águas e Energia do Porto
-• Municipal Department of Information Systems of Porto Municipality  |
+| • Municipal Department of Information Systems of Porto Municipality  |
 |   |  Action scale & addressed entities | City scale  |
 |   |  Involved stakeholders | Águas e Energia do Porto, AdEPorto, Porto Digital and Municipal Department of Information Systems of Porto Municipality.  |
 |   |  Comments on implementation | The project is already in implementation.  |
@@ -2286,7 +2286,7 @@ In the 2019/2020 academic year, the cost was 718,9 thousand euros and more than 
 Additionally, in January 2024 a new measure was announced: all Porto Card users will be entitled to 22 free trips per year, either on the city's public buses or on the metro. The application of this measure was possible due to the entry into force, at the beginning of the year, of intermodal passes for students up to the age of 23 covered by the Government, meaning that the Porto City Council no longer had an annual expenditure of around three million of euros with the under-18 pass, being able to use this money to generate the creation of new public transport demand. Furthermore, the Municipality is studying the possibility of extending the existing on-demand transport model to the general population, reaching areas where public transport is not yet effective.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Systemic lever | • Technology/ infrastructure.
-• Governance & policy.  |
+| • Governance & policy.  |
 |   |  Outcome | • Time savings by avoiding traffic jams.
 • Improved air quality, human health, and well-being through sustainable urban lifestyle adoption.
 • Noise reduction.
@@ -2342,10 +2342,10 @@ Climate Neutrality Action Plan
 O
 
 |   |  | • The new Ruby Line will connect Casa da Música, in Porto, to Santo Ovídio, in Vila Nova de Gaia. In between, six stations and a bridge over Douro River, on a route of more than six kilometres that adds quality and alternatives to the mobility of citizens in the Porto Metropolitan Area. The Ruby line starts in Porto, connecting to the Blue (A), Red (B), Green (C), Violet (E), Orange (F) and Pink (G) lines. From there, the Metro makes its way in a tunnel to the very popular Campo Alegre area, from where it then heads towards the surface, crossing the Ferreirinha Bridge which provides the connection to the city of Gaia. In Gaia, the first stronghold in this new connection takes place in Arrábida. Immediately afterwards, the metro heads towards VL8, traveling along this avenue until they reach Candal station. The next stopping point is what, perhaps, also promises to be one of the most iconic on the Ruby Line: the Rotunda station, also located on the VL8 and which includes an underground car park, with capacity for 500 vehicles and a green park intended for culture and leisure. For the last part of this journey, a buried route is reserved to the Devesas and Soares dos Reis stations, located in a very residential area, in the parish of Mafamude. The journey ends one kilometre further south, in Santo Ovídio, where an underground station will be built parallel to the current one and which serves the Yellow Line (D). According to estimates by the company Metro do Porto, one million people will be directly covered on this route between the main entrance to Porto and the coastal area of Gaia, which should attract more than 12 million new customers per year and 1,7 thousand million euros in benefits of various types. The consignment contract for the project was signed in January 2024 for more than 379,5 million euros. The global investment value of the new line is 435 million, an investment financed by the Recovery and Resilience Funds (RRF).
-In total, these investments are expected to provoke a shift in the number of people using private vehicles in a daily basis, by reducing 35% of the passenger kilometres travelled by car and which shift to electric public transport.  |
+| In total, these investments are expected to provoke a shift in the number of people using private vehicles in a daily basis, by reducing 35% of the passenger kilometres travelled by car and which shift to electric public transport.  |
 | --- | --- | --- |
 |  Reference to impact pathway | Systemic lever | • Technology/ infrastructure.
-• Governance & policy.  |
+| • Governance & policy.  |
 |   |  Outcome | • Time savings by avoiding traffic jams.
 • Improved air quality, human health, and well-being through sustainable urban lifestyle adoption.
 • Noise reduction.
@@ -2386,7 +2386,7 @@ Climate Neutrality Action Plan
 |  |  | search for and/or provide rides to a specific destination. After finding a viable option for the driver and passenger, contact is established to arrange route details: time, departure location, costs, etc. The app is available for download on the Google Play Store and the App Store. |
 | --- | --- | --- |
 | Reference to impact and | Systemic lever | Technology/ infrastructure.
-Social innovation. |
+| Social innovation. |
 | Outcome | Improved air quality, health, and well-being.
 Noise reduction.
 (Academic) community building.
@@ -2436,7 +2436,7 @@ Climate Neutrality Action Plan
 |   | Action description | In 2018, 70% of light vehicles in the municipal fleet (diesel) were replaced by electric or plug-in hybrid vehicles, for a total of 390 vehicles. It is estimated that these vehicles have covered more than 4 million kilometres in electric mode by the end of 2020, contributing to a significant reduction in their carbon footprint, due to the reduction in the consumption of fossil fuels. In addition to the advantages related to the reduction of GHG emissions, there was an important contribution to improving air quality in the city, as well as reducing noise pollution. At stake is the acquisition of 390 vehicles, 241 of which are targeted to the Municipality and the rest for municipal companies, from housing to public works, environment, and leisure. The vehicles will replace existing diesel vehicles at the end of the lease contract, in areas such as urban cleaning, municipal works, policing, employee transport, etc. Nowadays, the municipal fleet accounts with 75% of electric or plug-in hybrid vehicles.Additionally, Porto invested around 10 million euros in the acquisition of more sustainable equipment and vehicles, at the service of Porto Ambiente, to be used in daily urban cleaning and waste collection activities in the city. In total, more than six million are allocated to new solutions, mostly electrical, to support the activity of cleaning public spaces, namely sweeping equipment. Regarding waste collection, the value exceeds three million euros allocated to modernizing the fleet, replacing old trucks with new vehicles powered by natural gas.  |
 | --- | --- | --- |
 |  Reference to impact action | Systemic lever | • Technology/ infrastructure.
-• Governance & policy.  |
+| • Governance & policy.  |
 |   |  Outcome | • Improved air quality, health, and well-being.
 • Noise reduction.
 • Shift in societal norms towards sustainable transportation choices.
@@ -2487,7 +2487,7 @@ The freight transport and logistics sectors are intrinsically related to the reg
 It is estimated that the implementation of the measures proposed in this plan will allow a 10% reduction in the distance (kilometres) covered by logistical (trucking) vehicles in and due to city action. |
 | --- | --- | --- |
 | Reference | Systemic lever | • Technology/ infrastructure.
-• Governance & policy. |
+| • Governance & policy. |
 | Outcome | • Improved air quality, health, and quality of life.
 • Noise reduction.
 • Emergence of innovative business models in the logistics sector. |
@@ -2706,9 +2706,9 @@ C
 Interventions in the city's different theatres and cultural spaces (Teatro Campo Alegre, Campus Paulo Cunha e Silva, Teatro Rivoli and Teatro Municipal do Porto), as well as in some administrative (Ágora - Cultura e Desporto headquarters) and sports buildings (municipal swimming pools, with the replacement of sand filters, implementation of centralized technical management systems, lighting replacement, etc.), are also planned for the coming years, as a result of the availability of funds through the NORTE 2030 Program. This action is complemented by a wide-range energy audits program carried out by the Municipality covering 200 municipal buildings and facilities.  |
 | --- | --- | --- |
 |  Referen ce to | Systemic lever | • Technology/ infrastructure.
-• Governance & policy.  |
+| • Governance & policy.  |
 |   |  Outcome | • Increased property values.
-• Reduction of local budget energy costs.  |
+| • Reduction of local budget energy costs.  |
 |  Implement tion | Responsible bodies for implementation | • GO Porto  |
 |   |  Action scale | City scale  |
 |   |  Involved stakeholders | Porto City Council, GO Porto, Ágora, Porto Ambiente, Águas e Energia do Porto  |
@@ -2731,9 +2731,9 @@ C
 | --- | --- | --- | --- |
 | Action type | Technical intervention |
 | Action description | Energy efficiency interventions in social housing focus mainly on thermal insulation of external walls and roofs, installation of more suitable glazing and, in some cases, the installation of solar thermal collectors or photovoltaic technologies. Of the total of 50 neighbourhoods in Porto, since 2019, 16 have been intervened (3 947 dwellings) and the Master Plan continues to allocate a significant share of its budget to the Municipal Social Housing Renovation Program, to be invested in the coming years.
-Energy audits reveal that these interventions produced reductions in energy consumption of around 47%, and emissions, of approximately 50%. Also, the implementation of LiderA certification will be applied in some pilots (e.g., renovation of the Lomba housing), with the aim of fostering sustainable construction by reducing the impact of the used materials, promoting the reuse of rainwater for irrigation, the production of renewable energy and the increase of biodiversity by planting native species. |
+| Energy audits reveal that these interventions produced reductions in energy consumption of around 47%, and emissions, of approximately 50%. Also, the implementation of LiderA certification will be applied in some pilots (e.g., renovation of the Lomba housing), with the aim of fostering sustainable construction by reducing the impact of the used materials, promoting the reuse of rainwater for irrigation, the production of renewable energy and the increase of biodiversity by planting native species. |
 | Reference to impact | Systemic lever | • Technology/ infrastructure.
-• Governance & policy. |
+| • Governance & policy. |
 | Outcome | • Improved (indoor) air quality, human health, and well-being, because of increased comfort.
 • Reduced energy poverty.
 • Emergence of new business models and creation of jobs. |
@@ -2807,8 +2807,7 @@ Climate Neutrality Action Plan
 0
 
 |  |  | Wider Approach to Keep Engaged citizens on sustainable Urban Policies pilot initiative which has a strong focus on citizen participation through engaging advice provided by an app that uses gamification to encourage widespread adoption of sustainable practices.
-
-Together, these activities are expected to boost a behavioural chance in how citizens and local companies use energy and resources, producing an increased awareness and long-lasting sustainable practices. |
+| Together, these activities are expected to boost a behavioural chance in how citizens and local companies use energy and resources, producing an increased awareness and long-lasting sustainable practices. |
 | --- | --- | --- |
 | Reference to impact pathway | Systemic lever | • Technology/ infrastructure.
 • Social innovation.
@@ -2829,10 +2828,9 @@ Together, these activities are expected to boost a behavioural chance in how cit
 | Action outline | Action name | BE.05 Decarbonized space and water heating generation |
 | Action type | Technical intervention |
 | Action description | Besides lighting and appliances, space and water heating efficiency must also improve so that the decarbonization objectives of the buildings sector are possible. The Porto Energy Hub one-stop shop has also been playing an important role in advising citizens on energy efficiency, particularly in space and water heating solutions. Indeed, a considerable number of technical meetings held under the OSS are related with the acquisition of highly efficient heat pumps, used cumulatively for space and water heating.
-
-In this setting, and in line with national policies, this action foresees the installation of heat pumps in 75% of Porto's dwellings by 2030, being the remaining space and water heating demand supplied by biomass-based systems. |
+| In this setting, and in line with national policies, this action foresees the installation of heat pumps in 75% of Porto's dwellings by 2030, being the remaining space and water heating demand supplied by biomass-based systems. |
 | Reference to impact | Systemic lever | • Technology/ infrastructure.
-• Learning & capabilities. |
+| • Learning & capabilities. |
 | Outcome | • Improved air quality, human health and well-being.
 • Emergence of new business models (e.g., decarbonized heating) and creation of jobs. |
 Porto.
@@ -2975,7 +2973,7 @@ Climate Neutrality Action Plan
 7
 
 |   |  | BE.04 Digitalization, literacy and awareness
-BE.05 Decarbonized space and water heating generation |  |  |  |  |   |
+| BE.05 Decarbonized space and water heating generation |  |  |  |  |   |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  Economy | Jobs creation | All actions in Action Plan | IND.13 | Number of jobs created | 960 | 1 150 | 1 450  |
 |   |  Adoption of renewable technologies | ES.02.A Renewable generation in municipal buildings
